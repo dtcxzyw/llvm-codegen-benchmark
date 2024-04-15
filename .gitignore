@@ -1,0 +1,6 @@
+llvm-build
+CHANGELOGS
+test.log
+patch.diff
+*.bench_tmp.S
+dataset/*.s
