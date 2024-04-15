@@ -4,7 +4,7 @@ func0000000000000003:                   # @func0000000000000003
 	neg	a2, a2
 	and	a1, a1, a2
 	li	a2, 93
-	bltu	a1, a2, .LBB0_2
+	blt	a1, a2, .LBB0_2
 	li	a1, 93
 .LBB0_2:                                # %entry
 	slli	a1, a1, 3

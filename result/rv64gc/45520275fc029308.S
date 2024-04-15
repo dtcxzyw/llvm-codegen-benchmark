@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	bge	a1, a0, .LBB0_3
 	lui	a1, 1
 	addiw	a1, a1, -1023
-	bgeu	a0, a1, .LBB0_4
+	bge	a0, a1, .LBB0_4
 .LBB0_2:                                # %entry
 	addiw	a0, a0, -16
 	ret
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 16
 	lui	a1, 1
 	addiw	a1, a1, -1023
-	bltu	a0, a1, .LBB0_2
+	blt	a0, a1, .LBB0_2
 .LBB0_4:                                # %entry
 	addiw	a0, a1, -16
 	ret
@@ -22,7 +22,7 @@ func0000000000000003:                   # @func0000000000000003
 	bge	a1, a0, .LBB1_3
 	lui	a1, 1
 	addiw	a1, a1, -1023
-	bgeu	a0, a1, .LBB1_4
+	bge	a0, a1, .LBB1_4
 .LBB1_2:                                # %entry
 	addi	a0, a0, 47
 	ret
@@ -30,7 +30,7 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 16
 	lui	a1, 1
 	addiw	a1, a1, -1023
-	bltu	a0, a1, .LBB1_2
+	blt	a0, a1, .LBB1_2
 .LBB1_4:                                # %entry
 	addi	a0, a1, 47
 	ret

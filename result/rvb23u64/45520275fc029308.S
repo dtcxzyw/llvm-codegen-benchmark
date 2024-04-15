@@ -4,8 +4,8 @@ func0000000000000001:                   # @func0000000000000001
 	max	a0, a0, a1
 	lui	a1, 1
 	addiw	a1, a1, -1023
-	minu	a0, a0, a1
-	addiw	a0, a0, -16
+	min	a0, a0, a1
+	addi	a0, a0, -16
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a0, a0
@@ -13,6 +13,6 @@ func0000000000000003:                   # @func0000000000000003
 	max	a0, a0, a1
 	lui	a1, 1
 	addiw	a1, a1, -1023
-	minu	a0, a0, a1
+	min	a0, a0, a1
 	addi	a0, a0, 47
 	ret
