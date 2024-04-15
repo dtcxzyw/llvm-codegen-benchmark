@@ -1,0 +1,40 @@
+name: Pre-Commit CI
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    paths:
+      - 'scripts/setup_pre_commit_patch.sh'
+
+jobs:
+  build:
+    runs-on: self-hosted
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{github.event.pull_request.head.ref}}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C llvm/llvm-project checkout .
+          git -C llvm/llvm-project clean -fdx
+
+      - name: Setup patch
+        run: ${{ github.workspace }}/scripts/setup_pre_commit_patch.sh
+
+      - name: Update optimized IR
+        id: update
+        run: ${{ github.workspace }}/scripts/update_optimized.sh
+
+      - name: Report
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          filePath: scripts/pr-comment.md
