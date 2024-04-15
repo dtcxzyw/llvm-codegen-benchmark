@@ -1,0 +1,91 @@
+
+; 25 occurrences:
+; folly/optimized/EventBaseLocal.cpp.ll
+; folly/optimized/FunctionScheduler.cpp.ll
+; folly/optimized/Request.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/PersistentQuicPskCache.cpp.ll
+; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
+; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LambdaExpr.cpp.ll
+; velox/optimized/PlanNode.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/ScanTracker.cpp.ll
+; velox/optimized/SsdFile.cpp.ll
+; velox/optimized/StringIdMap.cpp.ll
+; velox/optimized/TimeZoneMap.cpp.ll
+; velox/optimized/Type.cpp.ll
+; velox/optimized/VectorEncoding.cpp.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -8
+  %3 = sub i64 %0, %2
+  %4 = add i64 %3, 15
+  %5 = icmp slt i64 %4, 0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; icu/optimized/package.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 536870911
+  %3 = sub i32 %0, %2
+  %4 = add i32 %3, 8
+  %5 = icmp sgt i32 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/gen6_ppgtt.ll
+; velox/optimized/Split.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = sub i64 %0, %2
+  %4 = add i64 %3, 1
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; spike/optimized/s_addMagsF128.ll
+; spike/optimized/s_subMagsF128.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 32767
+  %3 = sub nsw i64 %0, %2
+  %4 = add nsw i64 %3, 1
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; openmpi/optimized/btl_sm_component.ll
+; openmpi/optimized/btl_sm_send.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 2147483647
+  %3 = sub i32 %0, %2
+  %4 = add i32 %3, -1
+  %5 = icmp ult i32 %4, 31
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

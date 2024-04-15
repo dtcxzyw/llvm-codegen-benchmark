@@ -1,0 +1,301 @@
+
+; 192 occurrences:
+; abc/optimized/abcGen.c.ll
+; abc/optimized/ac_wrapper.cpp.ll
+; abc/optimized/aigRet.c.ll
+; abc/optimized/cbaWriteVer.c.ll
+; abc/optimized/cuddCache.c.ll
+; abc/optimized/cuddLCache.c.ll
+; abc/optimized/cuddLevelQ.c.ll
+; abc/optimized/cuddTable.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/decompress.c.ll
+; abc/optimized/extraBddCas.c.ll
+; abc/optimized/extraUtilMisc.c.ll
+; abc/optimized/lucky.c.ll
+; abc/optimized/luckyFast16.c.ll
+; abc/optimized/luckyFast6.c.ll
+; abc/optimized/plaMan.c.ll
+; abseil-cpp/optimized/fastmath_test.cc.ll
+; arrow/optimized/compare.cc.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; cmake/optimized/decompress.c.ll
+; cmake/optimized/lzma_encoder.c.ll
+; cpython/optimized/binascii.ll
+; cpython/optimized/dtoa.ll
+; draco/optimized/symbol_encoding.cc.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; flac/optimized/stream_encoder.c.ll
+; graphviz/optimized/graph_generator.c.ll
+; grpc/optimized/bin_encoder.cc.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/Base64.cpp.ll
+; hermes/optimized/dtoa.c.ll
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/init.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/multibit_build.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/stream.c.ll
+; icu/optimized/decNumber.ll
+; jq/optimized/decNumber.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/bio.c.ll
+; libquic/optimized/cbs.c.ll
+; libquic/optimized/dtoa.cc.ll
+; libquic/optimized/exponentiation.c.ll
+; libzmq/optimized/ws_engine.cpp.ll
+; lief/optimized/bignum.c.ll
+; linux/optimized/base64.ll
+; linux/optimized/ehci-dbgp.ll
+; linux/optimized/extents.ll
+; linux/optimized/mlme.ll
+; linux/optimized/nls_base.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; miniaudio/optimized/unity.c.ll
+; mitsuba3/optimized/x86instapi.cpp.ll
+; nix/optimized/util.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; openexr/optimized/ImfTimeCode.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openexr/optimized/internal_huf.c.ll
+; openssl/optimized/libcrypto-lib-bn_exp.ll
+; openssl/optimized/libcrypto-lib-bn_exp2.ll
+; openssl/optimized/libcrypto-lib-ec_mult.ll
+; openssl/optimized/libcrypto-lib-ofb_enc.ll
+; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; openssl/optimized/libcrypto-shlib-bn_exp2.ll
+; openssl/optimized/libcrypto-shlib-ec_mult.ll
+; openssl/optimized/libcrypto-shlib-ofb_enc.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; php/optimized/zend_strtod.ll
+; postgres/optimized/hashutil.ll
+; postgres/optimized/varbit.ll
+; proxygen/optimized/Huffman.cpp.ll
+; qemu/optimized/hw_nvram_eeprom93xx.c.ll
+; qemu/optimized/hw_pci_pci.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; raylib/optimized/raudio.c.ll
+; redis/optimized/geo.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/util.ll
+; spike/optimized/mmu.ll
+; spike/optimized/srl16_u.ll
+; spike/optimized/srl32_u.ll
+; spike/optimized/srl8_u.ll
+; spike/optimized/srli16_u.ll
+; spike/optimized/srli32_u.ll
+; spike/optimized/srli8_u.ll
+; wireshark/optimized/packet-csn1.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-mtp2.c.ll
+; wireshark/optimized/text_import.c.ll
+; wireshark/optimized/tvbuff_lz77huff.c.ll
+; wolfssl/optimized/asn.c.ll
+; yaml-cpp/optimized/emitterutils.cpp.ll
+; zfp/optimized/encode1d.c.ll
+; zfp/optimized/encode1f.c.ll
+; zfp/optimized/encode1i.c.ll
+; zfp/optimized/encode1l.c.ll
+; zfp/optimized/encode2d.c.ll
+; zfp/optimized/encode2f.c.ll
+; zfp/optimized/encode2i.c.ll
+; zfp/optimized/encode2l.c.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3f.c.ll
+; zfp/optimized/encode3i.c.ll
+; zfp/optimized/encode3l.c.ll
+; zfp/optimized/encode4d.c.ll
+; zfp/optimized/encode4f.c.ll
+; zfp/optimized/encode4i.c.ll
+; zfp/optimized/encode4l.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -20
+  %3 = lshr i32 %0, %2
+  ret i32 %3
+}
+
+; 44 occurrences:
+; abc/optimized/giaIf.c.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/ioWriteBlif.c.ll
+; abc/optimized/ioWriteEdgelist.c.ll
+; abseil-cpp/optimized/charconv.cc.ll
+; abseil-cpp/optimized/hash_test.cc.ll
+; arrow/optimized/value_parsing.cc.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
+; linux/optimized/core.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/gss_krb5_keys.ll
+; linux/optimized/intel_ppgtt.ll
+; linux/optimized/radix-tree.ll
+; llama.cpp/optimized/ggml.c.ll
+; meshlab/optimized/save_project.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
+; oiio/optimized/Codec.cpp.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-lib-mem_sec.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-mem_sec.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; pcg-cpp/optimized/make-partytrick.cpp.ll
+; pcg-cpp/optimized/spew.cpp.ll
+; pcg-cpp/optimized/use-partytrick.cpp.ll
+; php/optimized/ir_ra.ll
+; php/optimized/string.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
+; qemu/optimized/hw_sd_sd.c.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
+; simdjson/optimized/simdjson.cpp.ll
+; stb/optimized/stb_voxel_render.c.ll
+; yosys/optimized/ice40_braminit.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 9
+  %3 = lshr i64 %0, %2
+  ret i64 %3
+}
+
+; 36 occurrences:
+; abc/optimized/ifDec08.c.ll
+; abc/optimized/ifDec10.c.ll
+; brotli/optimized/bit_reader.c.ll
+; cmake/optimized/zdict.c.ll
+; darktable/optimized/introspection_equalizer.c.ll
+; flac/optimized/bitwriter.c.ll
+; grpc/optimized/bin_encoder.cc.ll
+; icu/optimized/icuexportdata.ll
+; jq/optimized/builtin.ll
+; libquic/optimized/hpack_output_stream.cc.ll
+; libquic/optimized/wnaf.c.ll
+; lief/optimized/rsa.c.ll
+; linux/optimized/base64.ll
+; linux/optimized/cacheinfo.ll
+; linux/optimized/dm-kcopyd.ll
+; linux/optimized/intel_ddi.ll
+; linux/optimized/ntp.ll
+; linux/optimized/sidtab.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/snapshot.ll
+; llama.cpp/optimized/ggml-quants.c.ll
+; lodepng/optimized/lodepng.cpp.ll
+; luajit/optimized/lj_str.ll
+; luajit/optimized/lj_str_dyn.ll
+; openmpi/optimized/tm_malloc.ll
+; openssl/optimized/libcrypto-lib-ec_mult.ll
+; openssl/optimized/libcrypto-shlib-ec_mult.ll
+; postgres/optimized/varbit.ll
+; proxygen/optimized/Huffman.cpp.ll
+; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
+; raylib/optimized/rmodels.c.ll
+; slurm/optimized/xhash.ll
+; wireshark/optimized/frame_data_sequence.c.ll
+; wireshark/optimized/tvbuff_rdp.c.ll
+; zstd/optimized/zdict.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -1
+  %3 = lshr i64 %0, %2
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

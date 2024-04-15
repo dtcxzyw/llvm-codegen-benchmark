@@ -1,0 +1,24 @@
+func000000000000000e:                   # @func000000000000000e
+	li	a2, 64
+	subw	a2, a2, a1
+	li	a1, -1
+	srl	a1, a1, a2
+	and	a0, a0, a1
+	ret
+func0000000000000006:                   # @func0000000000000006
+	li	a2, 64
+	subw	a2, a2, a1
+	li	a1, -1
+	srl	a1, a1, a2
+	and	a0, a0, a1
+	ret
+.LCPI2_0:
+	.quad	5856171918474036807             # 0x51454d5520434647
+func0000000000000002:                   # @func0000000000000002
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
+	li	a3, 64
+	subw	a3, a3, a1
+	srl	a1, a2, a3
+	and	a0, a0, a1
+	ret

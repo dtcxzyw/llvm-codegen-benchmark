@@ -1,0 +1,87 @@
+
+; 2 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; php/optimized/zend_hash.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = sub i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_hotpixels.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = sub nsw i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_hotpixels.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = sub nsw i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = sub nuw nsw i32 -2, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 2
+  %3 = sub nuw nsw i32 -3, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = sub nsw i32 1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; cpython/optimized/ceval.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = sub i32 1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+attributes #0 = { nounwind }

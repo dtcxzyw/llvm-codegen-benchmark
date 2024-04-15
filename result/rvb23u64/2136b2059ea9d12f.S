@@ -1,0 +1,16 @@
+func000000000000001f:                   # @func000000000000001f
+	andi	a0, a0, 255
+	slli	a0, a0, 2
+	addi	a0, a0, 32
+	ret
+func000000000000001b:                   # @func000000000000001b
+	andi	a0, a0, 255
+	slli	a0, a0, 1
+	addi	a0, a0, -200
+	ret
+func000000000000001a:                   # @func000000000000001a
+	andi	a0, a0, 255
+	slli	a0, a0, 1
+	addi	a0, a0, -2
+	zext.w	a0, a0
+	ret

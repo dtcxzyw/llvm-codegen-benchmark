@@ -1,0 +1,12 @@
+func0000000000000008:                   # @func0000000000000008
+	mul	a1, a2, a3
+	xor	a0, a0, a1
+	ret
+func000000000000001c:                   # @func000000000000001c
+	mul	a1, a2, a3
+	xor	a0, a0, a1
+	ret
+func000000000000000c:                   # @func000000000000000c
+	mul	a1, a2, a3
+	xor	a0, a0, a1
+	ret

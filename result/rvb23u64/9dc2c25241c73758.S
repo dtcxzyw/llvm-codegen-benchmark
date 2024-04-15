@@ -1,0 +1,18 @@
+func00000000000000c7:                   # @func00000000000000c7
+	sext.w	a0, a0
+	snez	a0, a0
+	andi	a1, a1, 1
+	li	a2, 16
+	czero.nez	a1, a2, a1
+	sh1add	a0, a0, a1
+	addi	a0, a0, 14
+	ret
+func0000000000000045:                   # @func0000000000000045
+	andi	a1, a1, 1
+	li	a2, 32
+	czero.eqz	a1, a2, a1
+	li	a2, -16
+	czero.eqz	a0, a2, a0
+	add	a0, a0, a1
+	addi	a0, a0, 23
+	ret

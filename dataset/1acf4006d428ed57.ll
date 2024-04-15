@@ -1,0 +1,24 @@
+
+; 3 occurrences:
+; qemu/optimized/util_readline.c.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_write.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 80)
+  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 10)
+  %3 = trunc i32 %2 to i8
+  %4 = udiv i8 80, %3
+  %5 = zext nneg i8 %4 to i32
+  ret i32 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -1,0 +1,51 @@
+
+; 8 occurrences:
+; cpython/optimized/bytearrayobject.ll
+; minetest/optimized/CImageLoaderJPG.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = icmp ne i32 %3, 0
+  %5 = icmp ne ptr %0, null
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; luajit/optimized/lj_gc.ll
+; luajit/optimized/lj_gc_dyn.ll
+; oiio/optimized/exif.cpp.ll
+; redis/optimized/lmem.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = icmp eq i64 %3, 4
+  %5 = icmp ne ptr %0, null
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 4 occurrences:
+; graphviz/optimized/node_distinct_coloring.c.ll
+; graphviz/optimized/sfdpinit.c.ll
+; graphviz/optimized/stuff.c.ll
+; lua/optimized/lmem.ll
+; Function Attrs: nounwind
+define i1 @func000000000000011c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = icmp ne i64 %3, 0
+  %5 = icmp eq ptr %0, null
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

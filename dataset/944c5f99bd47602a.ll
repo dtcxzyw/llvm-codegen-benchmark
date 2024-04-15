@@ -1,0 +1,211 @@
+
+; 119 occurrences:
+; abseil-cpp/optimized/duration.cc.ll
+; assimp/optimized/AMFImporter_Material.cpp.ll
+; assimp/optimized/AssbinLoader.cpp.ll
+; assimp/optimized/B3DImporter.cpp.ll
+; assimp/optimized/BlenderLoader.cpp.ll
+; assimp/optimized/IFCLoader.cpp.ll
+; assimp/optimized/Importer.cpp.ll
+; assimp/optimized/OgreBinarySerializer.cpp.ll
+; assimp/optimized/XGLLoader.cpp.ll
+; assimp/optimized/ZipArchiveIOSystem.cpp.ll
+; bdwgc/optimized/gc.c.ll
+; bullet3/optimized/btGenericPoolAllocator.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; cmake/optimized/frm_driver.c.ll
+; cmake/optimized/idna.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; cpython/optimized/obmalloc.ll
+; draco/optimized/ply_reader.cc.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
+; duckdb/optimized/ub_duckdb_func_list.cpp.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; faiss/optimized/io.cpp.ll
+; faiss/optimized/lattice_Zn.cpp.ll
+; folly/optimized/DeterministicSchedule.cpp.ll
+; git/optimized/column.ll
+; graphviz/optimized/pack.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/Passes.cpp.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libevent/optimized/bufferevent_ratelim.c.ll
+; libquic/optimized/rsa_impl.c.ll
+; libquic/optimized/tls_cbc.c.ll
+; libuv/optimized/idna.c.ll
+; linux/optimized/af_packet.ll
+; linux/optimized/balloc.ll
+; linux/optimized/blk-iocost.ll
+; linux/optimized/dm-stats.ll
+; linux/optimized/dm-stripe.ll
+; linux/optimized/drm_rect.ll
+; linux/optimized/hrtimer.ll
+; linux/optimized/kprobes.ll
+; linux/optimized/libata-sff.ll
+; linux/optimized/md.ll
+; linux/optimized/mpih-div.ll
+; linux/optimized/percpu.ll
+; linux/optimized/rational.ll
+; linux/optimized/regcache-rbtree.ll
+; linux/optimized/regcache.ll
+; linux/optimized/regmap.ll
+; linux/optimized/relay.ll
+; linux/optimized/setup-bus.ll
+; linux/optimized/tcp_input.ll
+; linux/optimized/timekeeping.ll
+; linux/optimized/tsc.ll
+; linux/optimized/vt.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; lua/optimized/lvm.ll
+; mimalloc/optimized/heap.c.ll
+; minetest/optimized/CGUISpriteBank.cpp.ll
+; minetest/optimized/guiOpenURL.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; mitsuba3/optimized/sdfgrid.cpp.ll
+; node/optimized/idna.ll
+; node/optimized/libnode.node_http2.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; nuttx/optimized/mempool_multiple.c.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; openmpi/optimized/coll_base_bcast.ll
+; openmpi/optimized/group.ll
+; openmpi/optimized/onesided_aggregation.ll
+; openmpi/optimized/opal_datatype_position.ll
+; openssl/optimized/libcrypto-lib-mem_sec.ll
+; openssl/optimized/libcrypto-shlib-mem_sec.ll
+; php/optimized/array.ll
+; php/optimized/string.ll
+; php/optimized/zend_sort.ll
+; postgres/optimized/dsa.ll
+; postgres/optimized/qsort.ll
+; postgres/optimized/qsort_arg.ll
+; postgres/optimized/qsort_arg_shlib.ll
+; postgres/optimized/qsort_arg_srv.ll
+; postgres/optimized/qsort_interruptible.ll
+; postgres/optimized/qsort_shlib.ll
+; postgres/optimized/qsort_srv.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
+; qemu/optimized/block_vvfat.c.ll
+; qemu/optimized/hw_intc_sifive_plic.c.ll
+; qemu/optimized/hw_timer_cadence_ttc.c.ll
+; qemu/optimized/region.c.ll
+; raylib/optimized/raudio.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; redis/optimized/pqsort.ll
+; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
+; rocksdb/optimized/clock_cache.cc.ll
+; rocksdb/optimized/seqno_to_time_mapping.cc.ll
+; rocksdb/optimized/version_set.cc.ll
+; ruby/optimized/addr2line.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/gc.ll
+; ruby/optimized/io_buffer.ll
+; slurm/optimized/job_mgr.ll
+; slurm/optimized/job_test.ll
+; slurm/optimized/slurm_step_layout.ll
+; slurm/optimized/step_mgr.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_divide.c.ll
+; stb/optimized/stb_truetype.c.ll
+; stb/optimized/stb_vorbis.c.ll
+; typst-rs/optimized/ef603zin5qw49hb.ll
+; velox/optimized/MmapAllocator.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; wireshark/optimized/packet-rpcrdma.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; z3/optimized/smt_context.cpp.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = sub i8 %1, %2
+  %4 = udiv i8 %3, %0
+  ret i8 %4
+}
+
+; 72 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cpython/optimized/obmalloc.ll
+; darktable/optimized/PanasonicV6Decompressor.cpp.ll
+; darktable/optimized/UncompressedDecompressor.cpp.ll
+; folly/optimized/HHWheelTimer.cpp.ll
+; linux/optimized/isoch.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
+; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/ImfInputFile.cpp.ll
+; openexr/optimized/ImfMisc.cpp.ll
+; openexr/optimized/ImfOutputFile.cpp.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
+; openmpi/optimized/sharedfp_lockedfile_iread.ll
+; openmpi/optimized/sharedfp_lockedfile_iwrite.ll
+; openmpi/optimized/sharedfp_lockedfile_read.ll
+; openmpi/optimized/sharedfp_lockedfile_write.ll
+; openmpi/optimized/sharedfp_sm_iread.ll
+; openmpi/optimized/sharedfp_sm_iwrite.ll
+; openmpi/optimized/sharedfp_sm_read.ll
+; openmpi/optimized/sharedfp_sm_write.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; qemu/optimized/hw_net_pcnet.c.ll
+; velox/optimized/MmapAllocator.cpp.ll
+; yosys/optimized/sta.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = udiv i64 %3, %0
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

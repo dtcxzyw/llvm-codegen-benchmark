@@ -1,0 +1,8 @@
+func000000000000007f:                   # @func000000000000007f
+	clzw	a1, a1
+	xori	a1, a1, 31
+	slli	a1, a1, 8
+	lui	a2, 1
+	add	a0, a0, a2
+	addw	a0, a0, a1
+	ret

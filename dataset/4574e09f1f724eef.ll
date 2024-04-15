@@ -1,0 +1,34 @@
+
+; 3 occurrences:
+; openssl/optimized/libcrypto-lib-rsa_oaep.ll
+; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
+; wolfssl/optimized/internal.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = sub nsw i32 %3, %0
+  %5 = xor i32 %1, -1
+  %6 = add i32 %4, %5
+  ret i32 %6
+}
+
+; 7 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; libquic/optimized/padding.c.ll
+; meshlab/optimized/glarea.cpp.ll
+; verilator/optimized/V3Inst.cpp.ll
+; wireshark/optimized/capture_filter_edit.cpp.ll
+; wireshark/optimized/display_filter_edit.cpp.ll
+; wireshark/optimized/syntax_line_edit.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = sub i32 %3, %0
+  %5 = xor i32 %1, -1
+  %6 = add i32 %4, %5
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

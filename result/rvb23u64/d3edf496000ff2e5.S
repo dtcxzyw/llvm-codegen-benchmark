@@ -1,0 +1,42 @@
+func0000000000000078:                   # @func0000000000000078
+	sh3add	a1, a1, a1
+	addi	a1, a1, 73
+	srliw	a1, a1, 6
+	addw	a0, a0, a1
+	ret
+func000000000000007b:                   # @func000000000000007b
+	sh3add	a1, a1, a1
+	addi	a1, a1, 73
+	srliw	a1, a1, 6
+	addw	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	addi	a1, a1, 5
+	lui	a2, 2
+	addi	a2, a2, -1638
+	mul	a1, a1, a2
+	srliw	a1, a1, 16
+	addw	a0, a0, a1
+	ret
+func0000000000000079:                   # @func0000000000000079
+	addi	a1, a1, 3
+	lui	a2, 718
+	addiw	a2, a2, -1183
+	mul	a1, a1, a2
+	srli	a1, a1, 32
+	add	a0, a0, a1
+	ret
+func0000000000000000:                   # @func0000000000000000
+	lui	a2, 15
+	addi	a2, a2, 1279
+	mul	a1, a1, a2
+	addi	a1, a1, 769
+	srliw	a1, a1, 11
+	addw	a0, a0, a1
+	ret
+func000000000000007a:                   # @func000000000000007a
+	sh3add	a1, a1, a1
+	addi	a1, a1, 73
+	srliw	a1, a1, 6
+	addw	a0, a0, a1
+	ret

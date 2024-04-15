@@ -1,0 +1,23 @@
+
+; 5 occurrences:
+; assimp/optimized/MMDImporter.cpp.ll
+; linux/optimized/xhci-hub.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; wireshark/optimized/packet-per.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 64
+  %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
+  %4 = zext i32 %3 to i64
+  %5 = add nuw nsw i64 %0, 1
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umax.i32(i32, i32) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

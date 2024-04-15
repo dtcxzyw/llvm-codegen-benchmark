@@ -1,0 +1,28 @@
+
+; 3 occurrences:
+; assimp/optimized/IFCOpenings.cpp.ll
+; assimp/optimized/SkeletonMeshBuilder.cpp.ll
+; hyperscan/optimized/shengcompile.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 24
+  %5 = sub nsw i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 1 occurrences:
+; meshlab/optimized/packing.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 24
+  %5 = sub i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

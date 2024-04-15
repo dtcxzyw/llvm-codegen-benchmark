@@ -1,0 +1,11 @@
+func0000000000000004:                   # @func0000000000000004
+	xori	a1, a1, 63
+	sext.w	a1, a1
+	sltiu	a1, a1, 15
+	not	a0, a0
+	czero.nez	a0, a0, a1
+	lui	a2, 1
+	addiw	a2, a2, -1
+	czero.eqz	a1, a2, a1
+	or	a0, a0, a1
+	ret

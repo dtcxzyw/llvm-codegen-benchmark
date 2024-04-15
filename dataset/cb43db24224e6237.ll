@@ -1,0 +1,49 @@
+
+; 8 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; cpython/optimized/basearith.ll
+; cpython/optimized/crt.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
+; quickjs/optimized/libbf.ll
+; simdjson/optimized/simdjson.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000082(i128 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = icmp ult i64 %3, %1
+  %5 = zext i1 %4 to i64
+  %6 = trunc i128 %0 to i64
+  %7 = add nuw i64 %5, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; qemu/optimized/hw_vfio_common.c.ll
+; qemu/optimized/hw_virtio_vhost.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000080(i128 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, %1
+  %4 = icmp ult i64 %3, %1
+  %5 = zext i1 %4 to i64
+  %6 = trunc i128 %0 to i64
+  %7 = add i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; cpython/optimized/mpdecimal.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000092(i128 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = icmp ult i64 %3, %1
+  %5 = zext i1 %4 to i64
+  %6 = trunc nuw i128 %0 to i64
+  %7 = add nuw i64 %5, %6
+  ret i64 %7
+}
+
+attributes #0 = { nounwind }

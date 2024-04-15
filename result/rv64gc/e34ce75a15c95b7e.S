@@ -1,0 +1,35 @@
+func0000000000000003:                   # @func0000000000000003
+	addiw	a0, a0, -2
+	ret
+func0000000000000001:                   # @func0000000000000001
+	addiw	a0, a0, -1
+	ret
+func0000000000000000:                   # @func0000000000000000
+	addi	a0, a0, -48
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func0000000000000002:                   # @func0000000000000002
+	addi	a0, a0, -48
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func0000000000000007:                   # @func0000000000000007
+	addiw	a0, a0, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	addi	a0, a0, 1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LCPI6_0:
+	.quad	-7046029288634856825            # 0x9e3779b185ebca87
+func0000000000000006:                   # @func0000000000000006
+	lui	a1, %hi(.LCPI6_0)
+	ld	a1, %lo(.LCPI6_0)(a1)
+	add	a0, a0, a1
+	li	a1, 0
+	ret
+func0000000000000005:                   # @func0000000000000005
+	addiw	a0, a0, 1
+	ret

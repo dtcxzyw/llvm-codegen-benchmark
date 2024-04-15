@@ -1,0 +1,52 @@
+
+; 1 occurrences:
+; ruby/optimized/bignum.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 15
+  %5 = or disjoint i64 %0, %4
+  %6 = or disjoint i64 %5, 16384
+  ret i64 %6
+}
+
+; 3 occurrences:
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; rocksdb/optimized/clock_cache.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 8
+  %5 = or i64 %0, %4
+  %6 = or i64 %5, 192
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/r8169_main.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 15
+  %5 = or i32 %4, %0
+  %6 = or i32 %5, -2147483648
+  ret i32 %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = shl i32 %3, 4
+  %5 = or disjoint i32 %4, %0
+  %6 = or i32 %5, 2
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

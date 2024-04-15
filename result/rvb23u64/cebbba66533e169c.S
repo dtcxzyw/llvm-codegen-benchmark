@@ -1,0 +1,12 @@
+func0000000000000020:                   # @func0000000000000020
+	or	a0, a0, a1
+	add.uw	a0, a2, a0
+	srli	a0, a0, 32
+	ret
+func0000000000000018:                   # @func0000000000000018
+	slli	a2, a2, 20
+	srli	a2, a2, 20
+	or	a0, a0, a1
+	add	a0, a0, a2
+	srli	a0, a0, 8
+	ret

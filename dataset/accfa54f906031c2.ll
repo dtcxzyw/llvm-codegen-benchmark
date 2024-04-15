@@ -1,0 +1,16 @@
+
+; 2 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; minetest/optimized/mapblock.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i1 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = trunc i32 %2 to i16
+  %4 = icmp eq i16 %3, 127
+  %5 = icmp eq i16 %1, 127
+  %6 = select i1 %4, i1 true, i1 %5
+  %7 = select i1 %6, i1 true, i1 %0
+  ret i1 %7
+}
+
+attributes #0 = { nounwind }

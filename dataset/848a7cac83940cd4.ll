@@ -1,0 +1,22 @@
+
+; 8 occurrences:
+; linux/optimized/intel_display.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/bitmap.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; slurm/optimized/eval_nodes.ll
+; stb/optimized/stb_dxt.c.ll
+; stb/optimized/stb_image_write.c.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = zext i16 %1 to i32
+  %5 = sub nsw i32 %4, %3
+  %6 = zext i16 %0 to i32
+  %7 = mul nsw i32 %5, %6
+  ret i32 %7
+}
+
+attributes #0 = { nounwind }

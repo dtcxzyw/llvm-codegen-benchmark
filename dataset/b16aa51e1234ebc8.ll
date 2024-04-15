@@ -1,0 +1,19 @@
+
+; 2 occurrences:
+; node/optimized/libnode.heap_utils.ll
+; node/optimized/libnode.js_stream.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = call i64 @llvm.smin.i64(i64 %1, i64 %2)
+  %4 = trunc i64 %3 to i32
+  %5 = sub nsw i32 %0, %4
+  %6 = icmp eq i32 %5, 0
+  ret i1 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -1,0 +1,34 @@
+
+; 5 occurrences:
+; linux/optimized/mcast_snoop.ll
+; meshlab/optimized/miniz.c.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; php/optimized/pcre2_compile.ll
+; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, -2
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+; 5 occurrences:
+; abc/optimized/compress.c.ll
+; php/optimized/pcre2_compile.ll
+; recastnavigation/optimized/fastlz.c.ll
+; snappy/optimized/snappy.cc.ll
+; yosys/optimized/fastlz.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = trunc i64 %2 to i32
+  %4 = add nsw i32 %3, -1
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+attributes #0 = { nounwind }

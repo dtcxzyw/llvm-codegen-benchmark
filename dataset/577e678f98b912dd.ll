@@ -1,0 +1,125 @@
+
+; 114 occurrences:
+; abc/optimized/giaDup.c.ll
+; abc/optimized/mioRead.c.ll
+; abseil-cpp/optimized/charconv_bigint.cc.ll
+; arrow/optimized/bit_block_counter.cc.ll
+; bullet3/optimized/b3ConvexHullComputer.ll
+; bullet3/optimized/btBoxShape.ll
+; bullet3/optimized/btConvexHullComputer.ll
+; bullet3/optimized/btCylinderShape.ll
+; bullet3/optimized/btSoftBodyHelpers.ll
+; cmake/optimized/cmInstallCommand.cxx.ll
+; cvc5/optimized/arith_entail.cpp.ll
+; cvc5/optimized/arith_rewriter.cpp.ll
+; cvc5/optimized/congruence_manager.cpp.ll
+; cvc5/optimized/constraint.cpp.ll
+; cvc5/optimized/cvc5.cpp.ll
+; cvc5/optimized/fc_simplex.cpp.ll
+; cvc5/optimized/integer_gmp_imp.cpp.ll
+; cvc5/optimized/learned_rewrite.cpp.ll
+; cvc5/optimized/linear_equality.cpp.ll
+; cvc5/optimized/monomial_bounds_check.cpp.ll
+; cvc5/optimized/monomial_check.cpp.ll
+; cvc5/optimized/nl_model.cpp.ll
+; cvc5/optimized/pseudo_boolean_processor.cpp.ll
+; cvc5/optimized/rational_gmp_imp.cpp.ll
+; cvc5/optimized/real_algebraic_number_poly_imp.cpp.ll
+; cvc5/optimized/simplex.cpp.ll
+; cvc5/optimized/simplex_update.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; cvc5/optimized/transcendental_solver.cpp.ll
+; cvc5/optimized/transcendental_state.cpp.ll
+; darktable/optimized/FujiDecompressor.cpp.ll
+; git/optimized/pack-bitmap.ll
+; git/optimized/rebase.ll
+; git/optimized/revision.ll
+; graphviz/optimized/gmlparse.c.ll
+; graphviz/optimized/ortho.c.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; hyperscan/optimized/rose_build_matchers.cpp.ll
+; icu/optimized/numrange_impl.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; libquic/optimized/cmp.c.ll
+; libquic/optimized/file_path.cc.ll
+; linux/optimized/blk-mq-sched.ll
+; linux/optimized/blk-mq-tag.ll
+; linux/optimized/blk-mq.ll
+; linux/optimized/button.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/kyber-iosched.ll
+; linux/optimized/libata-sff.ll
+; linux/optimized/md.ll
+; linux/optimized/phy_device.ll
+; linux/optimized/property.ll
+; linux/optimized/synaptics.ll
+; meshlab/optimized/balltree.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; mitsuba3/optimized/builder.cpp.ll
+; mitsuba3/optimized/compiler.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/roughdielectric.cpp.ll
+; node/optimized/libnode.node_sockaddr.ll
+; nuttx/optimized/lib_qsort.c.ll
+; openssl/optimized/libapps-lib-opt.ll
+; openssl/optimized/libcrypto-lib-bn_lib.ll
+; openssl/optimized/libcrypto-lib-decoder_pkey.ll
+; openssl/optimized/libcrypto-lib-x509_cmp.ll
+; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; openssl/optimized/libcrypto-shlib-decoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-x509_cmp.ll
+; openssl/optimized/libtestutil-lib-opt.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; php/optimized/dfa_pass.ll
+; php/optimized/pcre2_compile.ll
+; php/optimized/streams.ll
+; postgres/optimized/arrayfuncs.ll
+; proxygen/optimized/HTTPSession.cpp.ll
+; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
+; qemu/optimized/hw_virtio_vhost.c.ll
+; qemu/optimized/util_userfaultfd.c.ll
+; quickjs/optimized/libbf.ll
+; redis/optimized/pqsort.ll
+; redis/optimized/sentinel.ll
+; redis/optimized/server.ll
+; rocksdb/optimized/cache_simulator.cc.ll
+; rocksdb/optimized/rate_limiter.cc.ll
+; ruby/optimized/date_core.ll
+; ruby/optimized/dir.ll
+; ruby/optimized/parse.ll
+; ruby/optimized/ripper.ll
+; slurm/optimized/common.ll
+; slurm/optimized/read_config.ll
+; slurm/optimized/slurm_protocol_defs.ll
+; sundials/optimized/sundials_profiler.c.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; vcpkg/optimized/versions.cpp.ll
+; wireshark/optimized/file.c.ll
+; wireshark/optimized/packet-ieee802154.c.ll
+; wolfssl/optimized/ssl.c.ll
+; yosys/optimized/btor.ll
+; yosys/optimized/calc.ll
+; yosys/optimized/eval.ll
+; yosys/optimized/firrtl.ll
+; yosys/optimized/opt_expr.ll
+; z3/optimized/seq_decl_plugin.cpp.ll
+; z3/optimized/seq_skolem.cpp.ll
+; z3/optimized/subpaving_hwf.cpp.ll
+; z3/optimized/subpaving_mpf.cpp.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; z3/optimized/subpaving_mpq.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = select i1 %0, i32 %2, i32 2
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

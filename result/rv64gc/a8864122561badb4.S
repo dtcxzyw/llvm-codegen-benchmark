@@ -1,0 +1,28 @@
+func0000000000000023:                   # @func0000000000000023
+	sext.w	a2, a2
+	sext.w	a1, a1
+	xor	a1, a1, a2
+	snez	a1, a1
+	slli	a1, a1, 6
+	or	a0, a0, a1
+	ori	a0, a0, 32
+	ret
+func0000000000000002:                   # @func0000000000000002
+	andi	a2, a2, 255
+	andi	a1, a1, 255
+	xor	a1, a1, a2
+	snez	a1, a1
+	slli	a1, a1, 24
+	lui	a2, 8304
+	or	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func0000000000000035:                   # @func0000000000000035
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 4
+	or	a0, a0, a1
+	ori	a0, a0, 8
+	ret

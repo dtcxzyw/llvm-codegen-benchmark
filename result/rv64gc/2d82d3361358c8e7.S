@@ -1,0 +1,17 @@
+func0000000000000028:                   # @func0000000000000028
+	slli	a1, a1, 32
+	lui	a2, 1024256
+	addi	a2, a2, 1949
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	slli	a0, a0, 36
+	srli	a0, a0, 36
+	add	a0, a0, a1
+	ret
+func000000000000003c:                   # @func000000000000003c
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	sub	a0, a0, a2
+	ret

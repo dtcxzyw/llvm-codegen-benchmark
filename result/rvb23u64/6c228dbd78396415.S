@@ -1,0 +1,15 @@
+func0000000000000000:                   # @func0000000000000000
+	sext.w	a1, a1
+	sext.w	a2, a2
+	min	a1, a2, a1
+	li	a2, 5
+	slli	a2, a2, 9
+	min	a1, a1, a2
+	subw	a0, a1, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	min	a1, a2, a1
+	li	a2, 8
+	min	a1, a1, a2
+	sub	a0, a1, a0
+	ret

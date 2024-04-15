@@ -1,0 +1,27 @@
+.LCPI0_0:
+	.quad	696103549951303835              # 0x9a90e7d95bc609b
+func00000000000000b1:                   # @func00000000000000b1
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
+	sub	a2, a2, a1
+	srli	a2, a2, 5
+	mulhu	a1, a2, a3
+	srli	a1, a1, 1
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	seqz	a0, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	sub	a2, a2, a1
+	lui	a1, 838861
+	addiw	a1, a1, -819
+	slli	a3, a1, 32
+	add	a1, a1, a3
+	mulhu	a1, a2, a1
+	srli	a1, a1, 3
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
+.LBB1_2:                                # %entry
+	seqz	a0, a0
+	ret

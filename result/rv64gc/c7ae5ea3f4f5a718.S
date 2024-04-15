@@ -1,0 +1,11 @@
+.LCPI0_0:
+	.word	0x3b808081                      # float 0.00392156886
+func0000000000000002:                   # @func0000000000000002
+	lui	a2, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a2)
+	fcvt.s.wu	fa4, a1
+	fmul.s	fa4, fa4, fa5
+	fcvt.s.wu	fa3, a0
+	fmul.s	fa5, fa3, fa5
+	flt.s	a0, fa5, fa4
+	ret

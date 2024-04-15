@@ -1,0 +1,70 @@
+
+; 1 occurrences:
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; Function Attrs: nounwind
+define i128 @func000000000000001e(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = mul nuw nsw i128 %2, 486662
+  %4 = lshr i128 %0, 51
+  %5 = add nuw nsw i128 %3, %4
+  %6 = lshr i128 %5, 51
+  ret i128 %6
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000036(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = mul nuw nsw i128 %2, 486662
+  %4 = lshr i128 %0, 51
+  %5 = add nuw nsw i128 %4, %3
+  %6 = lshr i128 %5, 51
+  ret i128 %6
+}
+
+; 1 occurrences:
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; Function Attrs: nounwind
+define i128 @func000000000000005e(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext nneg i64 %1 to i128
+  %3 = mul nuw nsw i128 %2, 486662
+  %4 = lshr i128 %0, 51
+  %5 = add nuw nsw i128 %3, %4
+  %6 = lshr i128 %5, 51
+  ret i128 %6
+}
+
+; 3 occurrences:
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libsodium/optimized/libsodium_la-x25519_ref10.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000076(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext nneg i64 %1 to i128
+  %3 = mul nuw nsw i128 %2, 486662
+  %4 = lshr i128 %0, 51
+  %5 = add nuw nsw i128 %4, %3
+  %6 = lshr i128 %5, 51
+  ret i128 %6
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000024(i128 %0, i64 %1) #0 {
+entry:
+  %2 = zext i64 %1 to i128
+  %3 = mul nuw i128 %2, 11392378155556871081
+  %4 = lshr i128 %0, 64
+  %5 = add nuw i128 %4, %3
+  %6 = lshr i128 %5, 64
+  ret i128 %6
+}
+
+attributes #0 = { nounwind }

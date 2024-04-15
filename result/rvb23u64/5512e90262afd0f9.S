@@ -1,0 +1,14 @@
+func000000000000001f:                   # @func000000000000001f
+	andi	a2, a2, 255
+	or	a0, a0, a1
+	or	a0, a0, a2
+	sext.w	a0, a0
+	addi	a0, a0, 3
+	ret
+func000000000000001b:                   # @func000000000000001b
+	andi	a2, a2, 255
+	or	a0, a0, a1
+	or	a0, a0, a2
+	zext.w	a0, a0
+	addi	a0, a0, 4
+	ret

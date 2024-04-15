@@ -1,0 +1,43 @@
+func0000000000000101:                   # @func0000000000000101
+	slli	a2, a2, 6
+	add	a0, a0, a1
+	add	a0, a0, a2
+	slli	a0, a0, 49
+	srli	a0, a0, 49
+	lui	a1, 4
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	slli	a2, a2, 4
+	add	a0, a0, a1
+	add	a0, a0, a2
+	srliw	a0, a0, 11
+	addi	a0, a0, -27
+	seqz	a0, a0
+	ret
+func0000000000000148:                   # @func0000000000000148
+	slli	a2, a2, 3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	li	a1, -1
+	slli	a1, a1, 63
+	addi	a2, a1, 63
+	and	a0, a0, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000151:                   # @func0000000000000151
+	add	a0, a0, a1
+	andi	a0, a0, 1
+	seqz	a0, a0
+	ret
+func0000000000000118:                   # @func0000000000000118
+	slli	a2, a2, 3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	li	a1, -1
+	slli	a1, a1, 63
+	addi	a2, a1, 63
+	and	a0, a0, a2
+	sltu	a0, a1, a0
+	ret

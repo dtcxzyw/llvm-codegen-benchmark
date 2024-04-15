@@ -1,0 +1,6 @@
+func0000000000000002:                   # @func0000000000000002
+	srai	a0, a0, 2
+	fcvt.s.lu	fa5, a0
+	fdiv.s	fa5, fa1, fa5
+	fadd.s	fa0, fa0, fa5
+	ret

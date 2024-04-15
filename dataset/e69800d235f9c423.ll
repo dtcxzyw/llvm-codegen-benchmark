@@ -1,0 +1,32 @@
+
+; 4 occurrences:
+; abseil-cpp/optimized/city.cc.ll
+; folly/optimized/farmhash.cpp.ll
+; linux/optimized/avtab.ll
+; oiio/optimized/xxhash.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = mul i32 %3, 461845907
+  %5 = mul i32 %0, 5
+  %6 = add i32 %5, -430675100
+  %7 = xor i32 %6, %4
+  ret i32 %7
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/city.cc.ll
+; folly/optimized/farmhash.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %2, 5
+  %4 = add i32 %3, -430675100
+  %5 = or disjoint i32 %0, %1
+  %6 = mul i32 %5, 461845907
+  %7 = xor i32 %6, %4
+  ret i32 %7
+}
+
+attributes #0 = { nounwind }

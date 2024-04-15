@@ -1,0 +1,16 @@
+func00000000000001a6:                   # @func00000000000001a6
+	addi	a2, a2, -1
+	max	a0, a0, a1
+	slt	a0, a0, a2
+	ret
+func0000000000000368:                   # @func0000000000000368
+	addi	a2, a2, 1
+	sltu	a0, a2, a0
+	slt	a1, a2, a1
+	and	a0, a0, a1
+	ret
+func0000000000000148:                   # @func0000000000000148
+	addi	a2, a2, 1
+	minu	a0, a0, a1
+	sltu	a0, a2, a0
+	ret

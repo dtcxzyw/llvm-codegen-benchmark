@@ -1,0 +1,46 @@
+
+; 3 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; lief/optimized/pem.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %5 = getelementptr inbounds i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 19 occurrences:
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

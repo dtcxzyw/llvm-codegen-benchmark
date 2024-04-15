@@ -1,0 +1,18 @@
+
+; 5 occurrences:
+; cmake/optimized/archive_read_support_format_tar.c.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rtext.c.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %2, %1
+  %4 = or i32 %3, %1
+  %5 = icmp slt i32 %4, 0
+  %6 = select i1 %5, i1 true, i1 %0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

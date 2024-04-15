@@ -1,0 +1,12 @@
+func0000000000000001:                   # @func0000000000000001
+	fcvt.d.wu	fa5, a1
+	fmv.x.d	a1, fa5
+	lui	a2, 524288
+	addi	a2, a2, -1
+	slli	a2, a2, 32
+	and	a1, a1, a2
+	li	a2, -31
+	slli	a2, a2, 52
+	add	a1, a1, a2
+	or	a0, a0, a1
+	ret

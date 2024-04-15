@@ -1,0 +1,48 @@
+func0000000000000001:                   # @func0000000000000001
+	addiw	a0, a0, -2
+	snez	a1, a0
+	addi	a1, a1, -1
+	or	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	addi	a0, a0, 1
+	sltiu	a1, a0, 12
+	neg	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000031:                   # @func0000000000000031
+	addi	a0, a0, 1
+	addi	a1, a0, -624
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	addiw	a0, a0, 1
+	li	a1, 3
+	bge	a1, a0, .LBB3_2
+	li	a0, 1
+.LBB3_2:                                # %entry
+	ret
+func0000000000000006:                   # @func0000000000000006
+	addi	a0, a0, 1
+	slli	a1, a0, 56
+	bgez	a1, .LBB4_2
+	li	a0, 1
+.LBB4_2:                                # %entry
+	ret
+func0000000000000011:                   # @func0000000000000011
+	addiw	a0, a0, -10
+	li	a1, 5
+	bne	a0, a1, .LBB5_2
+	li	a0, 4
+.LBB5_2:                                # %entry
+	ret
+func0000000000000004:                   # @func0000000000000004
+	addi	a0, a0, 1
+	lui	a1, 1
+	addiw	a1, a1, 1
+	bgeu	a0, a1, .LBB6_2
+	lui	a0, 1
+.LBB6_2:                                # %entry
+	ret

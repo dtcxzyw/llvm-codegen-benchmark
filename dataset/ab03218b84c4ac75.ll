@@ -1,0 +1,38 @@
+
+; 13 occurrences:
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_clahe.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; redis/optimized/lcode.ll
+; redis/optimized/lparser.ll
+; redis/optimized/ltable.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 %3, %1
+  %5 = and i64 %4, -16
+  %6 = icmp eq i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_invert.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = and i64 %4, -8
+  %6 = icmp eq i64 %0, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

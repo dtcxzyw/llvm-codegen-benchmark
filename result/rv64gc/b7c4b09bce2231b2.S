@@ -1,0 +1,31 @@
+func0000000000000060:                   # @func0000000000000060
+	sext.w	a1, a1
+	snez	a1, a1
+	srli	a0, a0, 7
+	or	a0, a0, a1
+	andi	a0, a0, 1
+	ret
+func0000000000000009:                   # @func0000000000000009
+	sext.w	a1, a1
+	seqz	a1, a1
+	srliw	a0, a0, 16
+	slli	a0, a0, 1
+	or	a0, a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
+	sext.w	a1, a1
+	snez	a1, a1
+	srli	a0, a0, 3
+	andi	a0, a0, 2
+	or	a0, a0, a1
+	ret
+func0000000000000051:                   # @func0000000000000051
+	sext.w	a1, a1
+	lui	a2, 16
+	addiw	a3, a2, -1
+	slt	a1, a3, a1
+	srli	a0, a0, 2
+	addiw	a2, a2, -2
+	and	a0, a0, a2
+	or	a0, a0, a1
+	ret

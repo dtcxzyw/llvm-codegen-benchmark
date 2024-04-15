@@ -1,0 +1,33 @@
+func0000000000000019:                   # @func0000000000000019
+	add	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 12
+	ret
+func0000000000000000:                   # @func0000000000000000
+	add	a1, a1, a2
+	addw	a0, a0, a1
+	ori	a0, a0, 1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	add	a1, a1, a2
+	addw	a0, a0, a1
+	ori	a0, a0, 1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	add	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 8
+	ret
+func000000000000001e:                   # @func000000000000001e
+	add	a1, a1, a2
+	add	a0, a0, a1
+	li	a1, 1
+	slli	a1, a1, 49
+	or	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	add	a1, a1, a2
+	addw	a0, a0, a1
+	lui	a1, 24576
+	or	a0, a0, a1
+	ret

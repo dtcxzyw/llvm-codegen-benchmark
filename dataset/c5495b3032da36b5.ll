@@ -1,0 +1,124 @@
+
+; 113 occurrences:
+; arrow/optimized/message.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; arrow/optimized/reader.cc.ll
+; casadi/optimized/cvodes_band.c.ll
+; casadi/optimized/cvodes_dense.c.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; clap-rs/optimized/gk6w3l154s6ch7z.ll
+; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cpython/optimized/preconfig.ll
+; csmith/optimized/Lhs.cpp.ll
+; duckdb/optimized/ub_duckdb_func_list.cpp.ll
+; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
+; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; git/optimized/rev-parse.ll
+; hermes/optimized/JSParserImpl.cpp.ll
+; hermes/optimized/Path.cpp.ll
+; hermes/optimized/RegAlloc.cpp.ll
+; icu/optimized/ucnv.ll
+; icu/optimized/unames.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; libevent/optimized/http.c.ll
+; linux/optimized/extents_status.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/printk_ringbuffer.ll
+; linux/optimized/ptp_chardev.ll
+; linux/optimized/rwsem.ll
+; linux/optimized/uncore.ll
+; linux/optimized/vmscan.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/seams.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; minetest/optimized/nodedef.cpp.ll
+; mitsuba3/optimized/path.cpp.ll
+; nuklear/optimized/unity.c.ll
+; openblas/optimized/dgbbrd.c.ll
+; openblas/optimized/dgesdd.c.ll
+; openblas/optimized/dgesvd.c.ll
+; openblas/optimized/dgesvdq.c.ll
+; openblas/optimized/dhsein.c.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; openblas/optimized/dtrevc.c.ll
+; openblas/optimized/dtrsna.c.ll
+; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
+; php/optimized/zend_inference.ll
+; postgres/optimized/heapam.ll
+; postgres/optimized/interval.ll
+; postgres/optimized/nbtpage.ll
+; postgres/optimized/timestamp.ll
+; qemu/optimized/hw_nvme_dif.c.ll
+; redis/optimized/geohash_helper.ll
+; ripgrep-rs/optimized/3u4pg0yvyxjednfa.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; ruby/optimized/regcomp.ll
+; slurm/optimized/filter.ll
+; slurm/optimized/reservation.ll
+; spike/optimized/f128_to_i32.ll
+; spike/optimized/f128_to_i64.ll
+; spike/optimized/f128_to_ui32.ll
+; spike/optimized/f128_to_ui32_r_minMag.ll
+; sqlite/optimized/sqlite3.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/3ze8abiqj6g8qouh.ll
+; typst-rs/optimized/5e0rue5wyvshgkgw.ll
+; verilator/optimized/V3AssertPre.cpp.ll
+; wireshark/optimized/packet-bthci_evt.c.ll
+; wireshark/optimized/packet-cdma2k.c.ll
+; wireshark/optimized/packet-memcache.c.ll
+; wireshark/optimized/packet-tcp.c.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; wireshark/optimized/tap-sctp-analysis.c.ll
+; wolfssl/optimized/server.c.ll
+; yaml-cpp/optimized/emitter.cpp.ll
+; yosys/optimized/firrtl.ll
+; z3/optimized/dep_intervals.cpp.ll
+; z3/optimized/interval_mpq.cpp.ll
+; z3/optimized/linear_equation.cpp.ll
+; z3/optimized/mbp_arith.cpp.ll
+; z3/optimized/nla_intervals.cpp.ll
+; z3/optimized/realclosure.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; z3/optimized/upolynomial.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %1, i1 true, i1 %2
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

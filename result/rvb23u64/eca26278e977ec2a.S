@@ -1,0 +1,18 @@
+func0000000000000005:                   # @func0000000000000005
+	addi	sp, sp, -16
+	sd	ra, 8(sp)                       # 8-byte Folded Spill
+	mv	a6, a1
+	mv	a5, a0
+	or	a1, a4, a3
+	mv	a0, a2
+	mv	a2, a5
+	mv	a3, a6
+	call	__modti3
+	ld	ra, 8(sp)                       # 8-byte Folded Reload
+	addi	sp, sp, 16
+	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a2, a2, 15
+	or	a1, a1, a2
+	remw	a0, a1, a0
+	ret

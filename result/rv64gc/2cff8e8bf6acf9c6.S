@@ -1,0 +1,59 @@
+func0000000000000141:                   # @func0000000000000141
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, -1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func00000000000003c8:                   # @func00000000000003c8
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, 1
+	sltu	a0, a1, a0
+	ret
+func0000000000000348:                   # @func0000000000000348
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, 1
+	sltu	a0, a1, a0
+	ret
+func0000000000000148:                   # @func0000000000000148
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, 1
+	sltu	a0, a1, a0
+	ret
+func000000000000038a:                   # @func000000000000038a
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, 1
+	slt	a0, a1, a0
+	ret
+func000000000000014a:                   # @func000000000000014a
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, -48
+	slt	a0, a1, a0
+	ret
+func0000000000000281:                   # @func0000000000000281
+	lui	a3, 16
+	addiw	a3, a3, -1
+	and	a0, a0, a3
+	add	a1, a1, a2
+	addi	a1, a1, 2
+	and	a1, a1, a3
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000146:                   # @func0000000000000146
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, 120
+	slt	a0, a0, a1
+	ret
+func0000000000000144:                   # @func0000000000000144
+	sext.w	a0, a0
+	add	a1, a1, a2
+	addiw	a1, a1, -48
+	sltu	a0, a0, a1
+	ret

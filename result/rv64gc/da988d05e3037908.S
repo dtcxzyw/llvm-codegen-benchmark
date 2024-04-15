@@ -1,0 +1,9 @@
+func0000000000000000:                   # @func0000000000000000
+	fcvt.s.w	fa5, a1
+	lui	a1, 260096
+	fmv.w.x	fa4, a1
+	fadd.s	fa5, fa5, fa4
+	fsub.s	fa5, fa5, fa0
+	fcvt.s.w	fa4, a0
+	fdiv.s	fa0, fa5, fa4
+	ret

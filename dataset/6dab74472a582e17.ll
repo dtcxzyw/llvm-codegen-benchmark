@@ -1,0 +1,16 @@
+
+; 3 occurrences:
+; cpython/optimized/setobject.ll
+; folly/optimized/farmhash.cpp.ll
+; oiio/optimized/farmhash.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 5
+  %3 = add i32 %2, -430675100
+  %4 = xor i32 %3, %0
+  %5 = lshr i32 %4, 16
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

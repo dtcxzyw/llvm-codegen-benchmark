@@ -1,0 +1,79 @@
+
+; 4 occurrences:
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; php/optimized/zend_strtod.ll
+; Function Attrs: nounwind
+define i1 @func000000000000007a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = add nuw nsw i32 %0, %4
+  %6 = icmp sgt i32 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; flac/optimized/decode.c.ll
+; wireshark/optimized/packet-rpc.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 8, %2
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = add i32 %4, %0
+  %6 = icmp eq i32 %5, 16
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-3g-a11.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = select i1 %1, i32 -1, i32 %3
+  %5 = add i32 %4, %0
+  %6 = icmp eq i32 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; cpython/optimized/pegen_errors.ll
+; wireshark/optimized/packet-radius.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 16, %2
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = add i32 %4, %0
+  %6 = icmp sgt i32 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/EADateTime.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 1, %2
+  %4 = select i1 %1, i32 -6, i32 %3
+  %5 = add i32 %0, %4
+  %6 = icmp sgt i32 %5, 6
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cpython/optimized/dtoa.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 0, %2
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = add nuw i32 %0, %4
+  %6 = icmp sgt i32 %5, 0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

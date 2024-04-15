@@ -1,0 +1,93 @@
+
+; 4 occurrences:
+; mitsuba3/optimized/multijitter.cpp.ll
+; mitsuba3/optimized/orthogonal.cpp.ll
+; mitsuba3/optimized/qmc.cpp.ll
+; mitsuba3/optimized/stratified.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i32 %0) #0 {
+entry:
+  %1 = call i32 @llvm.ctlz.i32(i32 %0, i1 false), !range !0
+  %2 = trunc i32 %1 to i8
+  %3 = sub nsw i8 31, %2
+  %4 = zext nneg i8 %3 to i32
+  %5 = shl nuw i32 1, %4
+  ret i32 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
+
+; 1 occurrences:
+; mitsuba3/optimized/roughplastic.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0) #0 {
+entry:
+  %1 = tail call i32 @llvm.ctlz.i32(i32 %0, i1 false), !range !0
+  %2 = trunc i32 %1 to i8
+  %3 = sub nsw i8 31, %2
+  %4 = zext i8 %3 to i32
+  %5 = shl nuw i32 1, %4
+  ret i32 %5
+}
+
+; 26 occurrences:
+; cpython/optimized/dictobject.ll
+; folly/optimized/EventBaseLocal.cpp.ll
+; folly/optimized/FunctionScheduler.cpp.ll
+; folly/optimized/Request.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/PersistentQuicPskCache.cpp.ll
+; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
+; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/ExprCompiler.cpp.ll
+; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/LambdaExpr.cpp.ll
+; velox/optimized/PlanNode.cpp.ll
+; velox/optimized/ScanTracker.cpp.ll
+; velox/optimized/SsdFile.cpp.ll
+; velox/optimized/StringIdMap.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/TimeZoneMap.cpp.ll
+; velox/optimized/Type.cpp.ll
+; velox/optimized/VectorEncoding.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000009f(i64 %0) #0 {
+entry:
+  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
+  %2 = trunc i64 %1 to i32
+  %3 = sub nuw nsw i32 64, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 1, %4
+  ret i64 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
+
+; 2 occurrences:
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ff(i64 %0) #0 {
+entry:
+  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = sub nuw nsw i32 64, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 1, %4
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
+
+!0 = !{i32 0, i32 33}
+!1 = !{i64 0, i64 65}

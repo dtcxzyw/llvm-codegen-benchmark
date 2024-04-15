@@ -1,0 +1,22 @@
+
+; 10 occurrences:
+; assimp/optimized/glTFExporter.cpp.ll
+; curl/optimized/libcurl_la-url.ll
+; icu/optimized/measunit_extra.ll
+; ipopt/optimized/IpPiecewisePenalty.ll
+; minetest/optimized/localplayer.cpp.ll
+; mitsuba3/optimized/roughdielectric.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; wireshark/optimized/packet-openvpn.c.ll
+; yosys/optimized/mem.ll
+; yosys/optimized/register.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = or i1 %1, %2
+  %4 = xor i1 %3, true
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

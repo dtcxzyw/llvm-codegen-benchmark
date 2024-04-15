@@ -1,0 +1,17 @@
+
+; 4 occurrences:
+; casadi/optimized/cvodes.c.ll
+; mitsuba3/optimized/sensor.cpp.ll
+; sundials/optimized/cvode.c.ll
+; sundials/optimized/cvodes.c.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ogt double %1, 1.000000e+00
+  %3 = select i1 %2, double %1, double 1.000000e+00
+  %4 = fdiv double %0, %3
+  %5 = fmul double %4, %4
+  ret double %5
+}
+
+attributes #0 = { nounwind }

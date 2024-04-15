@@ -1,0 +1,8 @@
+func000000000000001b:                   # @func000000000000001b
+	slli	a2, a2, 48
+	srli	a2, a2, 48
+	or	a1, a1, a2
+	srli	a1, a1, 3
+	sext.w	a0, a0
+	mul	a0, a1, a0
+	ret

@@ -1,0 +1,29 @@
+
+%"struct.folly::HugePageSize.1640421" = type { i64, %"class.boost::filesystem::path.1640344", i64 }
+%"class.boost::filesystem::path.1640344" = type { %"class.std::__cxx11::basic_string.1640286" }
+%"class.std::__cxx11::basic_string.1640286" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1640287", i64, %union.anon.1640288 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1640287" = type { ptr }
+%union.anon.1640288 = type { i64, [8 x i8] }
+
+; 10 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
+; duckdb/optimized/ub_duckdb_main.cpp.ll
+; folly/optimized/HugePages.cpp.ll
+; minetest/optimized/craftdef.cpp.ll
+; minetest/optimized/l_server.cpp.ll
+; minetest/optimized/sound.cpp.ll
+; minetest/optimized/test_authdatabase.cpp.ll
+; nix/optimized/buildenv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 1
+  %4 = getelementptr inbounds %"struct.folly::HugePageSize.1640421", ptr %1, i64 %3
+  %5 = getelementptr inbounds i8, ptr %4, i64 24
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

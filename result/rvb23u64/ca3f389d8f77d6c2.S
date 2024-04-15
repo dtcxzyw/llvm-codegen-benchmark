@@ -1,0 +1,38 @@
+func000000000000003f:                   # @func000000000000003f
+	add	a1, a1, a2
+	add.uw	a0, a1, a0
+	addi	a0, a0, 1
+	ret
+func0000000000000000:                   # @func0000000000000000
+	add	a1, a1, a2
+	andi	a1, a1, -64
+	add	a0, a0, a1
+	addiw	a0, a0, 64
+	ret
+func0000000000000010:                   # @func0000000000000010
+	add	a1, a1, a2
+	andi	a1, a1, 255
+	add	a0, a0, a1
+	addiw	a0, a0, -1
+	ret
+func000000000000003d:                   # @func000000000000003d
+	add	a1, a1, a2
+	andi	a1, a1, 31
+	add	a0, a0, a1
+	addiw	a0, a0, -7
+	ret
+func000000000000000d:                   # @func000000000000000d
+	add	a1, a1, a2
+	slli	a1, a1, 22
+	srli	a1, a1, 22
+	li	a2, -1
+	slli	a2, a2, 42
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func0000000000000035:                   # @func0000000000000035
+	add	a1, a1, a2
+	andi	a1, a1, 504
+	add	a0, a0, a1
+	addiw	a0, a0, -2
+	ret

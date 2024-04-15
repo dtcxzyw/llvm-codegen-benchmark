@@ -1,0 +1,6 @@
+func000000000000000a:                   # @func000000000000000a
+	sext.w	a0, a0
+	subw	a2, a2, a1
+	andi	a2, a2, -16
+	slt	a0, a2, a0
+	ret

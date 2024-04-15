@@ -1,0 +1,32 @@
+
+; 2 occurrences:
+; cpython/optimized/dtoa.ll
+; ruby/optimized/util.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 0, %2
+  %4 = icmp sgt i32 %2, -1
+  %5 = select i1 %4, i32 0, i32 %3
+  %6 = add nuw i32 %1, %5
+  %7 = sub i32 %6, %0
+  ret i32 %7
+}
+
+; 4 occurrences:
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; php/optimized/zend_strtod.ll
+; Function Attrs: nounwind
+define i32 @func00000000000001ad(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = icmp sgt i32 %2, -1
+  %5 = select i1 %4, i32 0, i32 %3
+  %6 = add nuw nsw i32 %1, %5
+  %7 = sub nsw i32 %6, %0
+  ret i32 %7
+}
+
+attributes #0 = { nounwind }

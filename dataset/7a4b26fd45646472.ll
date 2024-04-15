@@ -1,0 +1,123 @@
+
+; 112 occurrences:
+; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/dchSim.c.ll
+; abc/optimized/sswSim.c.ll
+; arrow/optimized/bit_block_counter.cc.ll
+; cjson/optimized/cJSON_Utils.c.ll
+; cvc5/optimized/extended_rewrite.cpp.ll
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
+; cvc5/optimized/nl_model.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; cvc5/optimized/rewrite_atom.cpp.ll
+; cvc5/optimized/sygus_invariance.cpp.ll
+; darktable/optimized/NefDecoder.cpp.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_invert.c.ll
+; darktable/optimized/introspection_temperature.c.ll
+; duckdb/optimized/is_distinct_from.cpp.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/meta_any.cpp.ll
+; entt/optimized/meta_context.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/meta_handle.cpp.ll
+; entt/optimized/meta_type.cpp.ll
+; folly/optimized/HugePages.cpp.ll
+; folly/optimized/IOBuf.cpp.ll
+; folly/optimized/JSONSchema.cpp.ll
+; folly/optimized/TestUtil.cpp.ll
+; folly/optimized/Uri.cpp.ll
+; graphviz/optimized/hedges.c.ll
+; grpc/optimized/grpc_authorization_engine.cc.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/APInt.cpp.ll
+; hermes/optimized/JSProxy.cpp.ll
+; hwloc/optimized/bitmap.ll
+; linux/optimized/addrconf.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/dm-stats.ll
+; linux/optimized/mballoc.ll
+; linux/optimized/trace_events_filter.ll
+; linux/optimized/xt_addrtype.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; ms-gsl/optimized/notnull_tests.cpp.ll
+; nlohmann_json/optimized/unit-bjdata.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-class_parser.cpp.ll
+; nlohmann_json/optimized/unit-disabled_exceptions.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; nlohmann_json/optimized/unit-regression2.cpp.ll
+; nlohmann_json/optimized/unit-ubjson.cpp.ll
+; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; openmpi/optimized/op_base_functions.ll
+; openssl/optimized/libdefault-lib-decode_der2key.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_jit_compile.ll
+; postgres/optimized/bool.ll
+; postgres/optimized/jsonb_gin.ll
+; protobuf/optimized/field_comparator.cc.ll
+; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/net_can_can_core.c.ll
+; qemu/optimized/tcg.c.ll
+; quickjs/optimized/quickjs.ll
+; rocksdb/optimized/rate_limiter.cc.ll
+; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/IsNull.cpp.ll
+; velox/optimized/Not.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3PreProc.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; wireshark/optimized/packet-http2.c.ll
+; wireshark/optimized/packet-protobuf.c.ll
+; wireshark/optimized/packet-tcp.c.ll
+; yosys/optimized/cellaigs.ll
+; yosys/optimized/eval.ll
+; yosys/optimized/extract_fa.ll
+; yosys/optimized/flowmap.ll
+; yosys/optimized/fsm_detect.ll
+; yosys/optimized/fsm_extract.ll
+; yosys/optimized/memlib.ll
+; yosys/optimized/memory_libmap.ll
+; yosys/optimized/opt_expr.ll
+; yosys/optimized/peepopt.ll
+; yosys/optimized/proc_dff.ll
+; yosys/optimized/qbfsat.ll
+; yosys/optimized/recover_names.ll
+; yosys/optimized/test_cell.ll
+; z3/optimized/dd_bdd.cpp.ll
+; z3/optimized/emonics.cpp.ll
+; z3/optimized/factorization.cpp.ll
+; z3/optimized/mpfx.cpp.ll
+; z3/optimized/nla_core.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/sat_aig_cuts.cpp.ll
+; z3/optimized/sat_gc.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %0, %1
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

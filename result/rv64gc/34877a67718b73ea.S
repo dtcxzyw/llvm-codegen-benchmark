@@ -1,0 +1,22 @@
+func0000000000000000:                   # @func0000000000000000
+	negw	a2, a2
+	subw	a0, a0, a1
+	srlw	a0, a0, a2
+	ret
+func0000000000000018:                   # @func0000000000000018
+	negw	a2, a2
+	subw	a0, a0, a1
+	srlw	a0, a0, a2
+	ret
+func0000000000000008:                   # @func0000000000000008
+	li	a3, 24
+	subw	a3, a3, a2
+	subw	a0, a0, a1
+	srlw	a0, a0, a3
+	ret
+func000000000000001a:                   # @func000000000000001a
+	li	a3, 4
+	subw	a3, a3, a2
+	subw	a0, a0, a1
+	srlw	a0, a0, a3
+	ret

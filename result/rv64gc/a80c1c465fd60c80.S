@@ -1,0 +1,54 @@
+func0000000000000002:                   # @func0000000000000002
+	fadd.s	fa5, fa1, fa2
+	fmul.s	fa5, fa5, fa0
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa5, fa4
+	ret
+func0000000000000004:                   # @func0000000000000004
+	fadd.d	fa5, fa1, fa2
+	fmul.d	fa5, fa0, fa5
+	fmv.d.x	fa4, zero
+	flt.d	a0, fa4, fa5
+	ret
+func0000000000000008:                   # @func0000000000000008
+	fadd.s	fa5, fa1, fa2
+	fmul.s	fa5, fa0, fa5
+	fmv.w.x	fa4, zero
+	feq.s	a0, fa5, fa4
+	ret
+func000000000000000a:                   # @func000000000000000a
+	fadd.s	fa5, fa1, fa2
+	fmul.s	fa5, fa0, fa5
+	fmv.w.x	fa4, zero
+	fle.s	a0, fa5, fa4
+	ret
+func000000000000000c:                   # @func000000000000000c
+	fadd.s	fa5, fa1, fa2
+	fmul.s	fa5, fa0, fa5
+	fmv.w.x	fa4, zero
+	fle.s	a0, fa4, fa5
+	ret
+func0000000000000003:                   # @func0000000000000003
+	fadd.d	fa5, fa1, fa2
+	fmul.d	fa5, fa5, fa0
+	fmv.d.x	fa4, zero
+	fle.d	a0, fa4, fa5
+	xori	a0, a0, 1
+	ret
+.LCPI6_0:
+	.quad	0x40226b851eb851ec              # double 9.2100000000000008
+func000000000000000b:                   # @func000000000000000b
+	lui	a0, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a0)
+	fadd.d	fa4, fa1, fa2
+	fmul.d	fa4, fa0, fa4
+	flt.d	a0, fa5, fa4
+	xori	a0, a0, 1
+	ret
+func0000000000000005:                   # @func0000000000000005
+	fadd.d	fa5, fa1, fa2
+	fmul.d	fa5, fa5, fa0
+	fmv.d.x	fa4, zero
+	fle.d	a0, fa5, fa4
+	xori	a0, a0, 1
+	ret

@@ -1,0 +1,88 @@
+func0000000000000074:                   # @func0000000000000074
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addi	a1, a1, 5
+	sltu	a0, a0, a1
+	ret
+func0000000000000076:                   # @func0000000000000076
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, 13
+	slt	a0, a0, a1
+	ret
+func0000000000000078:                   # @func0000000000000078
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, 13
+	sltu	a0, a1, a0
+	ret
+func0000000000000071:                   # @func0000000000000071
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addi	a1, a1, 3
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000058:                   # @func0000000000000058
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addi	a1, a1, -1
+	sltu	a0, a1, a0
+	ret
+func0000000000000046:                   # @func0000000000000046
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, 3
+	slt	a0, a0, a1
+	ret
+func0000000000000056:                   # @func0000000000000056
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, -2
+	slt	a0, a0, a1
+	ret
+func0000000000000051:                   # @func0000000000000051
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, -2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000044:                   # @func0000000000000044
+	or	a2, a2, a4
+	addi	a2, a2, 1
+	seqz	a4, a2
+	add	a3, a3, a4
+	beq	a1, a3, .LBB8_2
+	sltu	a0, a1, a3
+	ret
+.LBB8_2:
+	sltu	a0, a0, a2
+	ret
+func0000000000000048:                   # @func0000000000000048
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	or	a1, a1, a2
+	addi	a1, a1, -1
+	sltu	a0, a1, a0
+	ret
+func0000000000000059:                   # @func0000000000000059
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, -1
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func0000000000000054:                   # @func0000000000000054
+	sext.w	a0, a0
+	andi	a2, a2, 255
+	or	a1, a1, a2
+	addiw	a1, a1, -1
+	sltu	a0, a0, a1
+	ret

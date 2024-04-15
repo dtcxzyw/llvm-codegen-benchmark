@@ -1,0 +1,18 @@
+func0000000000000042:                   # @func0000000000000042
+	flt.d	a0, fa1, fa0
+	beqz	a0, .LBB0_3
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa0, fa5
+	beqz	a0, .LBB0_4
+.LBB0_2:                                # %entry
+	fmv.d	fa0, fa5
+	ret
+.LBB0_3:                                # %entry
+	fmv.d	fa1, fa0
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa0, fa5
+	bnez	a0, .LBB0_2
+.LBB0_4:                                # %entry
+	fmv.d	fa5, fa1
+	fmv.d	fa0, fa5
+	ret

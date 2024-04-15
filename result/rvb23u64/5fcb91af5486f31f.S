@@ -1,0 +1,51 @@
+func000000000000001f:                   # @func000000000000001f
+	srli	a0, a0, 2
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	zext.w	a0, a0
+	ret
+func0000000000000000:                   # @func0000000000000000
+	srli	a1, a1, 4
+	add	a0, a0, a1
+	addi	a0, a0, -6
+	andi	a0, a0, 63
+	ret
+func000000000000000f:                   # @func000000000000000f
+	srli	a1, a1, 5
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	andi	a0, a0, 127
+	ret
+func000000000000001b:                   # @func000000000000001b
+	srli	a0, a0, 51
+	add	a0, a0, a1
+	lui	a1, 1048574
+	srli	a1, a1, 12
+	add	a0, a0, a1
+	slli	a0, a0, 13
+	srli	a0, a0, 13
+	ret
+func0000000000000007:                   # @func0000000000000007
+	srli	a1, a1, 51
+	add	a0, a0, a1
+	lui	a1, 1048574
+	srli	a1, a1, 12
+	add	a0, a0, a1
+	slli	a0, a0, 13
+	srli	a0, a0, 13
+	ret
+func000000000000000b:                   # @func000000000000000b
+	srli	a0, a0, 51
+	add	a0, a0, a1
+	lui	a1, 1048574
+	srli	a1, a1, 12
+	add	a0, a0, a1
+	slli	a0, a0, 13
+	srli	a0, a0, 13
+	ret
+func0000000000000005:                   # @func0000000000000005
+	srli	a1, a1, 12
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	andi	a0, a0, 63
+	ret

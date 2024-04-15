@@ -1,0 +1,35 @@
+
+; 1 occurrences:
+; php/optimized/ir_emit.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw i64 %3, 32
+  %5 = or disjoint i64 %4, %1
+  %6 = sub i64 %0, %5
+  %7 = shl i64 %6, 2
+  ret i64 %7
+}
+
+; 8 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000075(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = shl nuw nsw i32 %3, 8
+  %5 = or disjoint i32 %4, %1
+  %6 = sub nsw i32 %0, %5
+  %7 = shl nsw i32 %6, 1
+  ret i32 %7
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,24 @@
+
+; 11 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; tls-rs/optimized/526n7g8rwc65lc9b.ll
+; tls-rs/optimized/7y9936vu35zt2sp.ll
+; z3/optimized/euf_egraph.cpp.ll
+; z3/optimized/euf_etable.cpp.ll
+; z3/optimized/polynomial.cpp.ll
+; z3/optimized/polynomial_cache.cpp.ll
+; z3/optimized/smt_cg_table.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/smt_enode.cpp.ll
+; z3/optimized/smt_model_generator.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 5
+  %2 = add i32 %0, 374761393
+  %3 = add i32 %2, %1
+  %4 = add i32 %3, -744332180
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

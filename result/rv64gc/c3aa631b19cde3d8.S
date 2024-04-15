@@ -1,0 +1,44 @@
+func0000000000000000:                   # @func0000000000000000
+	sext.w	a1, a1
+	sext.w	a0, a0
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	seqz	a1, a0
+	add	a0, a0, a1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
+.LBB1_2:                                # %entry
+	seqz	a1, a0
+	add	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	sext.w	a1, a1
+	sext.w	a0, a0
+	bgeu	a0, a1, .LBB2_3
+	lui	a1, 16
+	bgeu	a1, a0, .LBB2_4
+.LBB2_2:                                # %entry
+	ret
+.LBB2_3:                                # %entry
+	mv	a0, a1
+	lui	a1, 16
+	bltu	a1, a0, .LBB2_2
+.LBB2_4:                                # %entry
+	lui	a0, 16
+	ret
+func0000000000000003:                   # @func0000000000000003
+	bgeu	a0, a1, .LBB3_3
+	li	a1, 254
+	bgeu	a1, a0, .LBB3_4
+.LBB3_2:                                # %entry
+	ret
+.LBB3_3:                                # %entry
+	mv	a0, a1
+	li	a1, 254
+	bltu	a1, a0, .LBB3_2
+.LBB3_4:                                # %entry
+	li	a0, 254
+	ret

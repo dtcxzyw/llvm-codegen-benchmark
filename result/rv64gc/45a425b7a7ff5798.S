@@ -1,0 +1,59 @@
+func0000000000000002:                   # @func0000000000000002
+	subw	a0, a0, a1
+	slli	a1, a0, 32
+	lui	a2, 149797
+	addi	a2, a2, -1755
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	srli	a1, a1, 32
+	subw	a0, a0, a1
+	srliw	a0, a0, 1
+	add	a0, a0, a1
+	srli	a0, a0, 2
+	ret
+.LCPI1_0:
+	.quad	-6914713590511394805            # 0xa00a00a00a00a00b
+func0000000000000000:                   # @func0000000000000000
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	sub	a0, a0, a1
+	srli	a0, a0, 1
+	mulhu	a0, a0, a2
+	srli	a0, a0, 9
+	ret
+func0000000000000001:                   # @func0000000000000001
+	sub	a0, a0, a1
+	lui	a1, 838861
+	addiw	a1, a1, -819
+	slli	a2, a1, 32
+	add	a1, a1, a2
+	mulhu	a0, a0, a1
+	srli	a0, a0, 5
+	ret
+func0000000000000004:                   # @func0000000000000004
+	sub	a0, a0, a1
+	lui	a1, 699051
+	addiw	a1, a1, -1365
+	slli	a2, a1, 32
+	add	a1, a1, a2
+	mulhu	a0, a0, a1
+	srli	a0, a0, 4
+	ret
+.LCPI4_0:
+	.quad	-2912643801112034465            # 0xd79435e50d79435f
+func0000000000000005:                   # @func0000000000000005
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
+	sub	a0, a0, a1
+	mulhu	a0, a0, a2
+	srli	a0, a0, 7
+	ret
+.LCPI5_0:
+	.quad	-2912643801112034465            # 0xd79435e50d79435f
+func0000000000000006:                   # @func0000000000000006
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
+	sub	a0, a0, a1
+	mulhu	a0, a0, a2
+	srli	a0, a0, 4
+	ret

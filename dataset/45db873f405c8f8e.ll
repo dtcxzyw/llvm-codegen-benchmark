@@ -1,0 +1,31 @@
+
+; 1 occurrences:
+; linux/optimized/intel_dpll.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 9
+  %3 = add i32 %2, -512
+  %4 = icmp eq i64 %0, 0
+  %5 = select i1 %4, i32 67108864, i32 134217728
+  %6 = or i32 %5, %3
+  ret i32 %6
+}
+
+; 4 occurrences:
+; luajit/optimized/lib_bit.ll
+; luajit/optimized/lib_bit_dyn.ll
+; luajit/optimized/lj_crecord.ll
+; luajit/optimized/lj_crecord_dyn.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000d5(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 0
+  %3 = select i1 %2, i32 8212, i32 20
+  %4 = shl nuw i32 %0, 24
+  %5 = add nuw i32 %4, 16777216
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

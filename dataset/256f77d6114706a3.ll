@@ -1,0 +1,255 @@
+
+; 206 occurrences:
+; arrow/optimized/builder_adaptive.cc.ll
+; casadi/optimized/nlpsol.cpp.ll
+; cmake/optimized/cmGeneratorTarget.cxx.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; cxxopts/optimized/example.cpp.ll
+; diesel-rs/optimized/2gwia6lwj254vbd7.ll
+; diesel-rs/optimized/6cb7zukciz78xvw.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; grpc/optimized/xds_bootstrap_grpc.cc.ll
+; imgui/optimized/imgui.cpp.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; libzmq/optimized/socket_base.cpp.ll
+; meshlab/optimized/mesh_document.cpp.ll
+; mini-lsm-rs/optimized/a97dpb4syxv4ifo.ll
+; nix/optimized/add-to-store.ll
+; nix/optimized/app.ll
+; nix/optimized/archive.ll
+; nix/optimized/attr-path.ll
+; nix/optimized/attr-set.ll
+; nix/optimized/attrs.ll
+; nix/optimized/binary-cache-store.ll
+; nix/optimized/build-remote.ll
+; nix/optimized/build.ll
+; nix/optimized/buildenv.ll
+; nix/optimized/built-path.ll
+; nix/optimized/bundle.ll
+; nix/optimized/cache.ll
+; nix/optimized/cat.ll
+; nix/optimized/cgroup.ll
+; nix/optimized/child.ll
+; nix/optimized/command.ll
+; nix/optimized/common-args.ll
+; nix/optimized/config-check.ll
+; nix/optimized/current-process.ll
+; nix/optimized/daemon.ll
+; nix/optimized/derivation-add.ll
+; nix/optimized/derivation-goal.ll
+; nix/optimized/derivations.ll
+; nix/optimized/develop.ll
+; nix/optimized/diff-closures.ll
+; nix/optimized/dotgraph.ll
+; nix/optimized/drv-output-substitution-goal.ll
+; nix/optimized/dummy-store.ll
+; nix/optimized/edit.ll
+; nix/optimized/editor-for.ll
+; nix/optimized/entry-points.ll
+; nix/optimized/error.ll
+; nix/optimized/error_traces.ll
+; nix/optimized/eval-cache.ll
+; nix/optimized/eval-error.ll
+; nix/optimized/experimental-features.ll
+; nix/optimized/export-import.ll
+; nix/optimized/fetch-to-store.ll
+; nix/optimized/fetchClosure.ll
+; nix/optimized/fetchMercurial.ll
+; nix/optimized/fetchTree.ll
+; nix/optimized/fetchers.ll
+; nix/optimized/fetchurl.ll
+; nix/optimized/file-descriptor.ll
+; nix/optimized/file-system.ll
+; nix/optimized/filetransfer.ll
+; nix/optimized/filtering-input-accessor.ll
+; nix/optimized/flake.ll
+; nix/optimized/fromTOML.ll
+; nix/optimized/fs-sink.ll
+; nix/optimized/function-trace.ll
+; nix/optimized/gc.ll
+; nix/optimized/get-drvs.ll
+; nix/optimized/git-utils.ll
+; nix/optimized/github.ll
+; nix/optimized/globals.ll
+; nix/optimized/goal.ll
+; nix/optimized/graphml.ll
+; nix/optimized/hook-instance.ll
+; nix/optimized/http-binary-cache-store.ll
+; nix/optimized/indirect.ll
+; nix/optimized/installable-attr-path.ll
+; nix/optimized/installable-derived-path.ll
+; nix/optimized/installable-flake.ll
+; nix/optimized/installable-value.ll
+; nix/optimized/installables.ll
+; nix/optimized/json-to-value.ll
+; nix/optimized/legacy-ssh-store.ll
+; nix/optimized/lexer-tab.ll
+; nix/optimized/local-binary-cache-store.ll
+; nix/optimized/local-derivation-goal.ll
+; nix/optimized/local-fs-store.ll
+; nix/optimized/local-keys.ll
+; nix/optimized/local-store.ll
+; nix/optimized/lock.ll
+; nix/optimized/lockfile.ll
+; nix/optimized/log.ll
+; nix/optimized/loggers.ll
+; nix/optimized/ls.ll
+; nix/optimized/make-content-addressed.ll
+; nix/optimized/memory-source-accessor.ll
+; nix/optimized/mercurial.ll
+; nix/optimized/misc.ll
+; nix/optimized/namespaces.ll
+; nix/optimized/nar-accessor.ll
+; nix/optimized/nix-build.ll
+; nix/optimized/nix-channel.ll
+; nix/optimized/nix-collect-garbage.ll
+; nix/optimized/nix-copy-closure.ll
+; nix/optimized/nix-env.ll
+; nix/optimized/nix-instantiate.ll
+; nix/optimized/nix-store.ll
+; nix/optimized/nixexpr.ll
+; nix/optimized/parsed-derivations.ll
+; nix/optimized/parser-tab.ll
+; nix/optimized/path-from-hash-part.ll
+; nix/optimized/pathlocks.ll
+; nix/optimized/personality.ll
+; nix/optimized/posix-fs-canonicalise.ll
+; nix/optimized/posix-source-accessor.ll
+; nix/optimized/prefetch.ll
+; nix/optimized/primops.ll
+; nix/optimized/processes.ll
+; nix/optimized/profile.ll
+; nix/optimized/profiles.ll
+; nix/optimized/progress-bar.ll
+; nix/optimized/realisation.ll
+; nix/optimized/registry.ll
+; nix/optimized/remote-fs-accessor.ll
+; nix/optimized/remote-store.ll
+; nix/optimized/run.ll
+; nix/optimized/search.ll
+; nix/optimized/serialise.ll
+; nix/optimized/serve-protocol-impl.ll
+; nix/optimized/shared.ll
+; nix/optimized/signals.ll
+; nix/optimized/sigs.ll
+; nix/optimized/source-accessor.ll
+; nix/optimized/source-path.ll
+; nix/optimized/sqlite.ll
+; nix/optimized/ssh-store.ll
+; nix/optimized/ssh.ll
+; nix/optimized/stack.ll
+; nix/optimized/store-api.ll
+; nix/optimized/store-copy-log.ll
+; nix/optimized/store-delete.ll
+; nix/optimized/store-gc.ll
+; nix/optimized/store-info.ll
+; nix/optimized/substitution-goal.ll
+; nix/optimized/tarball.ll
+; nix/optimized/tarfile.ll
+; nix/optimized/thread-pool.ll
+; nix/optimized/trivial.ll
+; nix/optimized/uds-remote-store.ll
+; nix/optimized/unix-domain-socket.ll
+; nix/optimized/unpack-channel.ll
+; nix/optimized/upgrade-nix.ll
+; nix/optimized/user-env.ll
+; nix/optimized/users.ll
+; nix/optimized/util.ll
+; nix/optimized/value-to-json.ll
+; nix/optimized/value-to-xml.ll
+; nix/optimized/verify.ll
+; nix/optimized/why-depends.ll
+; nix/optimized/worker.ll
+; node/optimized/libnode.embed_helpers.ll
+; node/optimized/libnode.node_snapshotable.ll
+; oiio/optimized/imagebuf.cpp.ll
+; openmpi/optimized/iof_base_output.ll
+; openmpi/optimized/iof_hnp.ll
+; openmpi/optimized/iof_hnp_read.ll
+; openmpi/optimized/iof_prted.ll
+; openmpi/optimized/iof_prted_read.ll
+; openmpi/optimized/libprrte_la-pmix_server_gen.ll
+; openmpi/optimized/pfexec_base_default_fns.ll
+; openmpi/optimized/pmix_iof.ll
+; php/optimized/zend_jit.ll
+; postgres/optimized/autovacuum.ll
+; postgres/optimized/expandedrecord.ll
+; postgres/optimized/vacuumparallel.ll
+; protobuf/optimized/descriptor.cc.ll
+; proxygen/optimized/HTTPSessionObserverInterface.cpp.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; rocksdb/optimized/block_based_table_reader.cc.ll
+; rocksdb/optimized/compaction_job.cc.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
+; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
+; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; vcpkg/optimized/binarycaching.cpp.ll
+; vcpkg/optimized/cgroup-parser.cpp.ll
+; vcpkg/optimized/commands.add-version.cpp.ll
+; vcpkg/optimized/commands.download.cpp.ll
+; vcpkg/optimized/commands.find.cpp.ll
+; vcpkg/optimized/commands.package-info.cpp.ll
+; vcpkg/optimized/commands.set-installed.cpp.ll
+; vcpkg/optimized/configuration.cpp.ll
+; vcpkg/optimized/dependencies.cpp.ll
+; vcpkg/optimized/packagespec.cpp.ll
+; vcpkg/optimized/paragraphs.cpp.ll
+; vcpkg/optimized/portfileprovider.cpp.ll
+; vcpkg/optimized/registries.cpp.ll
+; vcpkg/optimized/system.cpp.ll
+; vcpkg/optimized/vcpkgpaths.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; yosys/optimized/preproc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(i8 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr inbounds i8, ptr %1, i64 8
+  %3 = trunc i8 %0 to i1
+  %4 = select i1 %3, ptr %2, ptr null
+  ret ptr %4
+}
+
+; 13 occurrences:
+; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/57e1zo682pgyyw8m.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr inbounds i8, ptr %1, i64 8
+  %3 = trunc nuw i64 %0 to i1
+  %4 = select i1 %3, ptr %2, ptr null
+  ret ptr %4
+}
+
+; 4 occurrences:
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 24
+  %3 = trunc nuw i64 %0 to i1
+  %4 = select i1 %3, ptr %2, ptr null
+  ret ptr %4
+}
+
+attributes #0 = { nounwind }

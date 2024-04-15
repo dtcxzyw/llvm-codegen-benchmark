@@ -1,0 +1,111 @@
+.LCPI0_0:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000015:                   # @func0000000000000015
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	srai	a1, a1, 3
+	mul	a1, a1, a2
+	slli	a2, a0, 3
+	sub	a0, a2, a0
+	add	a0, a0, a1
+	ret
+.LCPI1_0:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000010:                   # @func0000000000000010
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	srai	a1, a1, 3
+	mul	a1, a1, a2
+	slli	a2, a0, 3
+	sub	a0, a2, a0
+	add	a0, a0, a1
+	ret
+.LCPI2_0:
+	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
+func0000000000000005:                   # @func0000000000000005
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
+	mulh	a1, a1, a2
+	srli	a2, a1, 63
+	srai	a1, a1, 7
+	add	a1, a1, a2
+	lui	a2, 1048332
+	addiw	a2, a2, -576
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
+.LCPI3_0:
+	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
+func0000000000000000:                   # @func0000000000000000
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
+	li	a3, 1000
+	mul	a1, a1, a3
+	mulh	a0, a0, a2
+	srli	a2, a0, 63
+	srai	a0, a0, 7
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+.LCPI4_0:
+	.quad	4835703278458516699             # 0x431bde82d7b634db
+func0000000000000019:                   # @func0000000000000019
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
+	li	a3, 1000
+	mul	a1, a1, a3
+	mulh	a0, a0, a2
+	srli	a2, a0, 63
+	srai	a0, a0, 18
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+.LCPI5_0:
+	.quad	4835703278458516699             # 0x431bde82d7b634db
+func000000000000000d:                   # @func000000000000000d
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
+	mulh	a1, a1, a2
+	srli	a2, a1, 63
+	srai	a1, a1, 18
+	add	a1, a1, a2
+	li	a2, 1000
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
+.LCPI6_0:
+	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
+func0000000000000009:                   # @func0000000000000009
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
+	li	a3, 1000
+	mul	a1, a1, a3
+	mulh	a0, a0, a2
+	srli	a2, a0, 63
+	srai	a0, a0, 7
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	sext.w	a1, a1
+	lui	a2, 419430
+	addiw	a2, a2, 1639
+	mul	a1, a1, a2
+	srli	a2, a1, 63
+	srai	a1, a1, 34
+	add	a1, a1, a2
+	li	a2, 10
+	mul	a0, a0, a2
+	addw	a0, a0, a1
+	ret
+func000000000000001d:                   # @func000000000000001d
+	slli	a2, a1, 1
+	add	a1, a1, a2
+	srai	a0, a0, 3
+	lui	a2, 699051
+	addiw	a2, a2, -1365
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret

@@ -1,0 +1,37 @@
+
+; 13 occurrences:
+; abseil-cpp/optimized/duration_test.cc.ll
+; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
+; abseil-cpp/optimized/hash_generator_testing.cc.ll
+; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/rose_build_anchored.cpp.ll
+; hyperscan/optimized/shufticompile.cpp.ll
+; hyperscan/optimized/smallwrite_build.cpp.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; wolfssl/optimized/ecc.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr inbounds [0 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 8
+  %4 = or disjoint i64 %3, %1
+  %5 = getelementptr inbounds [0 x { ptr, i64 }], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+attributes #0 = { nounwind }

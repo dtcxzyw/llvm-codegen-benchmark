@@ -1,0 +1,160 @@
+
+; 145 occurrences:
+; arrow/optimized/UriMemory.c.ll
+; clap-rs/optimized/1rbie63mhpvpjak.ll
+; cmake/optimized/gzread.c.ll
+; cmake/optimized/gzwrite.c.ll
+; cpython/optimized/mpalloc.ll
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/obmalloc.ll
+; cpython/optimized/transpose.ll
+; diesel-rs/optimized/1d6yrclfdvavot4r.ll
+; diesel-rs/optimized/1d8pgoqwu3bzfya4.ll
+; diesel-rs/optimized/1hskzwx2vflsavf7.ll
+; diesel-rs/optimized/1pu1gypvn16sk7jj.ll
+; diesel-rs/optimized/1zhqdyjorbzdhypm.ll
+; diesel-rs/optimized/2sf6u3r7os1bcdld.ll
+; diesel-rs/optimized/3hbywg7swws1iy6v.ll
+; diesel-rs/optimized/3iqa5s4rcitpn2nv.ll
+; diesel-rs/optimized/3nv3xphjbq527f6u.ll
+; diesel-rs/optimized/3nydn42x30kj4j9q.ll
+; diesel-rs/optimized/3rjno8am3tsn5qrm.ll
+; diesel-rs/optimized/46661qc4yjpbja0f.ll
+; diesel-rs/optimized/gepqftqgym352s.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/249ukonr3l56u09i.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; image-rs/optimized/34r8dryqmufipcqz.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; image-rs/optimized/5oy2v8fghrh79s8.ll
+; image-rs/optimized/8143hfqbwzfmz2f.ll
+; image-rs/optimized/fyek6fuqg0ocunt.ll
+; image-rs/optimized/ptscn4jakoj4p9m.ll
+; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
+; influxdb-rs/optimized/20e6y40qoje898dk.ll
+; influxdb-rs/optimized/2du585cd6kvsz0m5.ll
+; influxdb-rs/optimized/34vmrh0qyn6415sj.ll
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; influxdb-rs/optimized/xf9idvr5og46ibq.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; libquic/optimized/exponentiation.c.ll
+; linux/optimized/aperfmperf.ll
+; linux/optimized/buffer.ll
+; linux/optimized/kfifo.ll
+; linux/optimized/selection.ll
+; linux/optimized/skl_watermark.ll
+; linux/optimized/uncore_snbep.ll
+; mimalloc/optimized/alloc-aligned.c.ll
+; mimalloc/optimized/alloc.c.ll
+; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
+; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
+; mini-lsm-rs/optimized/2ysi1cyianhw3g5t.ll
+; mitsuba3/optimized/assembler.cpp.ll
+; mitsuba3/optimized/builder.cpp.ll
+; node/optimized/libnode.bindingdata.ll
+; node/optimized/libnode.node_http2.ll
+; node/optimized/libnode.node_wasi.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_exp.ll
+; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; openssl/optimized/libssl-lib-cc_newreno.ll
+; openssl/optimized/libssl-lib-quic_ackm.ll
+; openssl/optimized/libssl-lib-quic_fc.ll
+; openssl/optimized/libssl-lib-quic_wire.ll
+; openssl/optimized/libssl-shlib-cc_newreno.ll
+; openssl/optimized/libssl-shlib-quic_ackm.ll
+; openssl/optimized/libssl-shlib-quic_fc.ll
+; openssl/optimized/libssl-shlib-quic_wire.ll
+; openssl/optimized/safe_math_test-bin-safe_math_test.ll
+; php/optimized/ir.ll
+; postgres/optimized/shmem.ll
+; qdrant-rs/optimized/14hho85eanhsaepf.ll
+; qdrant-rs/optimized/1604xuzoa424d8h4.ll
+; qdrant-rs/optimized/5df3kwa3vgb8d75f.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; regex-rs/optimized/11vfjke4utuj478u.ll
+; regex-rs/optimized/154fzydpihuymjog.ll
+; regex-rs/optimized/1ri0nxve2ijarfwj.ll
+; regex-rs/optimized/33whcn8n29l9c6ys.ll
+; regex-rs/optimized/3bb5ih3626n2er1d.ll
+; regex-rs/optimized/4c1ya9idnqcg8t0f.ll
+; regex-rs/optimized/4dth5ncaqumdqgby.ll
+; regex-rs/optimized/4sqmacerw61c696o.ll
+; ring-rs/optimized/2y22w349mvmovez2.ll
+; ripgrep-rs/optimized/24qzgyq9sz17vf3i.ll
+; ripgrep-rs/optimized/522ioybdaj4myg5i.ll
+; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
+; ripgrep-rs/optimized/kiwlvuwlry6renb.ll
+; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
+; ruby/optimized/gc.ll
+; ruby/optimized/regexec.ll
+; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
+; rustfmt-rs/optimized/llbxf4pclolbp5s.ll
+; syn/optimized/3e28wvtnspuupgei.ll
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; tokio-rs/optimized/18r5vqnw0wlric57.ll
+; tokio-rs/optimized/58zica37k9qw0rn.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/2xun21ofbsn7p9xn.ll
+; tree-sitter-rs/optimized/2yfsyc10m67buedj.ll
+; tree-sitter-rs/optimized/3cmrhtrctm3afl2k.ll
+; tree-sitter-rs/optimized/3iovi93q4avxr89k.ll
+; tree-sitter-rs/optimized/3mifzft8vhnozxv0.ll
+; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; typst-rs/optimized/31vebs4z0lpwpjgn.ll
+; typst-rs/optimized/3efk6odw6ecl29p.ll
+; typst-rs/optimized/3gfld5k3k43fgjtj.ll
+; typst-rs/optimized/3iyzbobgjl2g1nyh.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/3zt5lgc0v7piaijw.ll
+; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; velox/optimized/Bridge.cpp.ll
+; wireshark/optimized/ftype-integer.c.ll
+; z3/optimized/datalog_frontend.cpp.ll
+; z3/optimized/fm_tactic.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/qe_lite_tactic.cpp.ll
+; z3/optimized/rel_context.cpp.ll
+; z3/optimized/seq_decl_plugin.cpp.ll
+; z3/optimized/theory_str_regex.cpp.ll
+; zlib/optimized/gzread.c.ll
+; zlib/optimized/gzwrite.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 %1)
+  %3 = extractvalue { i64, i1 } %2, 0
+  ret i64 %3
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

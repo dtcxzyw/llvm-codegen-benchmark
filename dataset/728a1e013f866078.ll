@@ -1,0 +1,63 @@
+
+; 5 occurrences:
+; php/optimized/php_reflection.ll
+; php/optimized/spl_directory.ll
+; php/optimized/var_unserializer.ll
+; php/optimized/zend_compile.ll
+; php/optimized/zend_execute.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = add i64 %1, %3
+  %5 = getelementptr inbounds i8, ptr %0, i64 24
+  %6 = getelementptr inbounds [1 x i8], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; abc/optimized/ifDec16.c.ll
+; darktable/optimized/introspection_denoiseprofile.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = add nsw i64 %3, %1
+  %5 = getelementptr inbounds i8, ptr %0, i64 228
+  %6 = getelementptr inbounds [7 x float], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/sock_reuseport.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = add nsw i64 %3, %1
+  %5 = getelementptr inbounds i8, ptr %0, i64 48
+  %6 = getelementptr [0 x ptr], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 9 occurrences:
+; cvc5/optimized/extended_rewrite.cpp.ll
+; cvc5/optimized/inst_match_generator.cpp.ll
+; cvc5/optimized/model_blocker.cpp.ll
+; cvc5/optimized/oracle_engine.cpp.ll
+; cvc5/optimized/pattern_term_selector.cpp.ll
+; cvc5/optimized/relational_match_generator.cpp.ll
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; cvc5/optimized/trigger_term_info.cpp.ll
+; cvc5/optimized/zero_level_learner.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, 1
+  %4 = add nuw nsw i64 %3, %1
+  %5 = getelementptr inbounds i8, ptr %0, i64 16
+  %6 = getelementptr inbounds [0 x ptr], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+attributes #0 = { nounwind }

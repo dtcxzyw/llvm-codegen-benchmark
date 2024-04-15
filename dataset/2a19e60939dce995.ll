@@ -1,0 +1,64 @@
+
+; 26 occurrences:
+; folly/optimized/EventBaseLocal.cpp.ll
+; folly/optimized/FunctionScheduler.cpp.ll
+; folly/optimized/Request.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/PersistentQuicPskCache.cpp.ll
+; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
+; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LambdaExpr.cpp.ll
+; velox/optimized/PlanNode.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/ScanTracker.cpp.ll
+; velox/optimized/SsdFile.cpp.ll
+; velox/optimized/StringIdMap.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/TimeZoneMap.cpp.ll
+; velox/optimized/Type.cpp.ll
+; velox/optimized/VectorEncoding.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c4(i32 %0) #0 {
+entry:
+  %1 = sub nuw nsw i32 64, %0
+  %2 = shl i32 10, %1
+  %3 = icmp ult i32 %0, 53
+  %4 = select i1 %3, i32 40960, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; hermes/optimized/Passes.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000e1(i32 %0) #0 {
+entry:
+  %1 = sub nuw nsw i32 33, %0
+  %2 = shl nuw i32 1, %1
+  %3 = icmp eq i32 %0, 28
+  %4 = select i1 %3, i32 64, i32 %2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_opt.c.ll
+; zstd/optimized/zstd_opt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000021(i32 %0) #0 {
+entry:
+  %1 = sub i32 11, %0
+  %2 = shl nuw i32 1, %1
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i32 1, i32 %2
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

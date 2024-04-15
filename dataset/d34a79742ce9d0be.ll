@@ -1,0 +1,503 @@
+
+; 59 occurrences:
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/plaCom.c.ll
+; abc/optimized/plaMan.c.ll
+; abseil-cpp/optimized/charset_test.cc.ll
+; assimp/optimized/DeboneProcess.cpp.ll
+; cvc5/optimized/env.cpp.ll
+; cvc5/optimized/logic_info.cpp.ll
+; cvc5/optimized/sygus_unif_io.cpp.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; eastl/optimized/BenchmarkBitset.cpp.ll
+; eastl/optimized/Int128_t.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/APInt.cpp.ll
+; hermes/optimized/RegAlloc.cpp.ll
+; hwloc/optimized/bitmap.ll
+; linux/optimized/ebitmap.ll
+; linux/optimized/mpi-bit.ll
+; openmpi/optimized/opal_bitmap.ll
+; openmpi/optimized/pmix_bitmap.ll
+; openvdb/optimized/ChangeBackground.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/FindActiveValues.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/ValueTransformer.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; php/optimized/zend_jit.ll
+; postgres/optimized/bitmapset.ll
+; qemu/optimized/pci.c.ll
+; rand-rs/optimized/qpqwmytuo9t2y51.ll
+; regex-rs/optimized/11vfjke4utuj478u.ll
+; regex-rs/optimized/1x04d8372kemp7hd.ll
+; ruby/optimized/gc.ll
+; verilator/optimized/V3Undriven.cpp.ll
+; z3/optimized/bit_matrix.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = zext nneg i16 %2 to i64
+  %4 = shl nuw i64 1, %3
+  %5 = and i64 %0, %4
+  %6 = icmp ne i64 %5, 0
+  ret i1 %6
+}
+
+; 331 occurrences:
+; abc/optimized/abcExact.c.ll
+; abc/optimized/acbFunc.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cuddEssent.c.ll
+; abc/optimized/dauNpn2.c.ll
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaExist.c.ll
+; abc/optimized/giaGen.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaResub6.c.ll
+; abc/optimized/giaSim.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSupps.c.ll
+; abc/optimized/giaTransduction.cpp.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/plaSimple.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdCore.c.ll
+; abc/optimized/utilIsop.c.ll
+; abc/optimized/wlcBlast.c.ll
+; abseil-cpp/optimized/charset_test.cc.ll
+; arrow/optimized/array_dict.cc.ll
+; arrow/optimized/reader.cc.ll
+; assimp/optimized/DeboneProcess.cpp.ll
+; assimp/optimized/LWOLoader.cpp.ll
+; assimp/optimized/SplitByBoneCountProcess.cpp.ll
+; assimp/optimized/ValidateDataStructure.cpp.ll
+; casadi/optimized/dae_builder_internal.cpp.ll
+; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
+; clap-rs/optimized/5651dp9k16h53y8x.ll
+; cmake/optimized/ProcessUNIX.c.ll
+; cpython/optimized/bytearrayobject.ll
+; cpython/optimized/bytes_methods.ll
+; cpython/optimized/bytesobject.ll
+; cpython/optimized/unicodeobject.ll
+; cvc5/optimized/env.cpp.ll
+; cvc5/optimized/equality_engine.cpp.ll
+; cvc5/optimized/equality_engine_iterator.cpp.ll
+; cvc5/optimized/logic_info.cpp.ll
+; diesel-rs/optimized/6cb7zukciz78xvw.ll
+; draco/optimized/corner_table.cc.ll
+; draco/optimized/mesh_attribute_corner_table.cc.ll
+; draco/optimized/mesh_cleanup.cc.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; draco/optimized/mesh_stripifier.cc.ll
+; draco/optimized/sequential_integer_attribute_decoder.cc.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_decoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; eastl/optimized/TestBitset.cpp.ll
+; folly/optimized/json.cpp.ll
+; graphviz/optimized/gvdevice_xlib.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/APFloat.cpp.ll
+; hermes/optimized/APInt.cpp.ll
+; hermes/optimized/RegAlloc.cpp.ll
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/stream.c.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
+; linux/optimized/ebitmap.ll
+; linux/optimized/input.ll
+; linux/optimized/libata-sata.ll
+; linux/optimized/pci-quirks.ll
+; linux/optimized/rx.ll
+; linux/optimized/sem.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; minetest/optimized/clouds.cpp.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; nix/optimized/add-to-store.ll
+; nix/optimized/app.ll
+; nix/optimized/archive.ll
+; nix/optimized/attr-path.ll
+; nix/optimized/attr-set.ll
+; nix/optimized/attrs.ll
+; nix/optimized/binary-cache-store.ll
+; nix/optimized/build-remote.ll
+; nix/optimized/build.ll
+; nix/optimized/buildenv.ll
+; nix/optimized/built-path.ll
+; nix/optimized/bundle.ll
+; nix/optimized/cache.ll
+; nix/optimized/cat.ll
+; nix/optimized/cgroup.ll
+; nix/optimized/child.ll
+; nix/optimized/command.ll
+; nix/optimized/common-args.ll
+; nix/optimized/config-check.ll
+; nix/optimized/current-process.ll
+; nix/optimized/daemon.ll
+; nix/optimized/derivation-add.ll
+; nix/optimized/derivation-goal.ll
+; nix/optimized/derivations.ll
+; nix/optimized/develop.ll
+; nix/optimized/diff-closures.ll
+; nix/optimized/dotgraph.ll
+; nix/optimized/drv-output-substitution-goal.ll
+; nix/optimized/dummy-store.ll
+; nix/optimized/edit.ll
+; nix/optimized/editor-for.ll
+; nix/optimized/entry-points.ll
+; nix/optimized/error.ll
+; nix/optimized/error_traces.ll
+; nix/optimized/eval-cache.ll
+; nix/optimized/eval-error.ll
+; nix/optimized/experimental-features.ll
+; nix/optimized/export-import.ll
+; nix/optimized/fetch-to-store.ll
+; nix/optimized/fetchClosure.ll
+; nix/optimized/fetchMercurial.ll
+; nix/optimized/fetchTree.ll
+; nix/optimized/fetchers.ll
+; nix/optimized/fetchurl.ll
+; nix/optimized/file-descriptor.ll
+; nix/optimized/file-system.ll
+; nix/optimized/filetransfer.ll
+; nix/optimized/filtering-input-accessor.ll
+; nix/optimized/flake.ll
+; nix/optimized/fromTOML.ll
+; nix/optimized/fs-sink.ll
+; nix/optimized/function-trace.ll
+; nix/optimized/gc.ll
+; nix/optimized/get-drvs.ll
+; nix/optimized/git-utils.ll
+; nix/optimized/github.ll
+; nix/optimized/globals.ll
+; nix/optimized/goal.ll
+; nix/optimized/graphml.ll
+; nix/optimized/hook-instance.ll
+; nix/optimized/http-binary-cache-store.ll
+; nix/optimized/indirect.ll
+; nix/optimized/installable-attr-path.ll
+; nix/optimized/installable-derived-path.ll
+; nix/optimized/installable-flake.ll
+; nix/optimized/installable-value.ll
+; nix/optimized/installables.ll
+; nix/optimized/json-to-value.ll
+; nix/optimized/legacy-ssh-store.ll
+; nix/optimized/lexer-tab.ll
+; nix/optimized/local-binary-cache-store.ll
+; nix/optimized/local-derivation-goal.ll
+; nix/optimized/local-fs-store.ll
+; nix/optimized/local-keys.ll
+; nix/optimized/local-store.ll
+; nix/optimized/lock.ll
+; nix/optimized/lockfile.ll
+; nix/optimized/log.ll
+; nix/optimized/loggers.ll
+; nix/optimized/ls.ll
+; nix/optimized/make-content-addressed.ll
+; nix/optimized/memory-source-accessor.ll
+; nix/optimized/mercurial.ll
+; nix/optimized/misc.ll
+; nix/optimized/namespaces.ll
+; nix/optimized/nar-accessor.ll
+; nix/optimized/nix-build.ll
+; nix/optimized/nix-channel.ll
+; nix/optimized/nix-collect-garbage.ll
+; nix/optimized/nix-copy-closure.ll
+; nix/optimized/nix-env.ll
+; nix/optimized/nix-instantiate.ll
+; nix/optimized/nix-store.ll
+; nix/optimized/nixexpr.ll
+; nix/optimized/parsed-derivations.ll
+; nix/optimized/parser-tab.ll
+; nix/optimized/path-from-hash-part.ll
+; nix/optimized/pathlocks.ll
+; nix/optimized/personality.ll
+; nix/optimized/posix-fs-canonicalise.ll
+; nix/optimized/posix-source-accessor.ll
+; nix/optimized/prefetch.ll
+; nix/optimized/primops.ll
+; nix/optimized/processes.ll
+; nix/optimized/profile.ll
+; nix/optimized/profiles.ll
+; nix/optimized/progress-bar.ll
+; nix/optimized/realisation.ll
+; nix/optimized/registry.ll
+; nix/optimized/remote-fs-accessor.ll
+; nix/optimized/remote-store.ll
+; nix/optimized/run.ll
+; nix/optimized/search.ll
+; nix/optimized/serialise.ll
+; nix/optimized/serve-protocol-impl.ll
+; nix/optimized/shared.ll
+; nix/optimized/signals.ll
+; nix/optimized/sigs.ll
+; nix/optimized/source-accessor.ll
+; nix/optimized/source-path.ll
+; nix/optimized/sqlite.ll
+; nix/optimized/ssh-store.ll
+; nix/optimized/ssh.ll
+; nix/optimized/stack.ll
+; nix/optimized/store-api.ll
+; nix/optimized/store-copy-log.ll
+; nix/optimized/store-delete.ll
+; nix/optimized/store-gc.ll
+; nix/optimized/store-info.ll
+; nix/optimized/substitution-goal.ll
+; nix/optimized/tarball.ll
+; nix/optimized/tarfile.ll
+; nix/optimized/thread-pool.ll
+; nix/optimized/trivial.ll
+; nix/optimized/uds-remote-store.ll
+; nix/optimized/unix-domain-socket.ll
+; nix/optimized/unpack-channel.ll
+; nix/optimized/upgrade-nix.ll
+; nix/optimized/user-env.ll
+; nix/optimized/users.ll
+; nix/optimized/util.ll
+; nix/optimized/value-to-json.ll
+; nix/optimized/value-to-xml.ll
+; nix/optimized/verify.ll
+; nix/optimized/why-depends.ll
+; nix/optimized/worker.ll
+; oiio/optimized/imagecache.cpp.ll
+; openmpi/optimized/osc_sm_active_target.ll
+; openssl/optimized/libssl-lib-t1_lib.ll
+; openssl/optimized/libssl-shlib-t1_lib.ll
+; openvdb/optimized/Activate.cc.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/ChangeBackground.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/FindActiveValues.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/Prune.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/SignedFloodFill.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/ValueTransformer.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/media.cpp.ll
+; php/optimized/array.ll
+; php/optimized/ir_cfg.ll
+; php/optimized/ir_emit.ll
+; php/optimized/ir_ra.ll
+; php/optimized/ir_sccp.ll
+; php/optimized/json_encoder.ll
+; php/optimized/php_cli_server.ll
+; php/optimized/zend_execute_API.ll
+; postgres/optimized/bitmapset.ll
+; postgres/optimized/parallel_slot.ll
+; postgres/optimized/receivelog.ll
+; postgres/optimized/tidbitmap.ll
+; qdrant-rs/optimized/1sx1pjpbst7gikiv.ll
+; qemu/optimized/target_riscv_vcrypto_helper.c.ll
+; re2/optimized/bitstate.cc.ll
+; re2/optimized/prog.cc.ll
+; regex-rs/optimized/11vfjke4utuj478u.ll
+; regex-rs/optimized/1rguw48xrsv49k4z.ll
+; regex-rs/optimized/1x04d8372kemp7hd.ll
+; regex-rs/optimized/6f4i3c8223u3bmw.ll
+; ring-rs/optimized/33m8pf8xuidn6qk2.ll
+; ripgrep-rs/optimized/3aycb5gygqxgk68e.ll
+; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
+; ruby/optimized/gc.ll
+; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
+; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
+; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
+; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
+; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; rustfmt-rs/optimized/5genfix4t5066ss.ll
+; serde-rs-json/optimized/4vnl4vg8ssbe8wb6.ll
+; serde-rs-json/optimized/z04ynry3c9ovbu1.ll
+; spike/optimized/vnclipu_wv.ll
+; stockfish/optimized/movepick.ll
+; stockfish/optimized/position.ll
+; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/2ihg39n1dg1po2l8.ll
+; tree-sitter-rs/optimized/51rc99d4jdw1knkd.ll
+; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; verilator/optimized/V3Undriven.cpp.ll
+; wireshark/optimized/sharkd_session.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; yosys/optimized/BigIntegerAlgorithms.ll
+; yosys/optimized/fsm_opt.ll
+; yosys/optimized/mem.ll
+; yosys/optimized/memory_bram.ll
+; yosys/optimized/memory_dff.ll
+; yosys/optimized/memory_libmap.ll
+; yosys/optimized/opt_mem.ll
+; yosys/optimized/opt_mem_feedback.ll
+; yosys/optimized/share.ll
+; yosys/optimized/verilog_backend.ll
+; z3/optimized/bit_matrix.cpp.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
+; z3/optimized/smt_enode.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = zext nneg i16 %2 to i64
+  %4 = shl nuw i64 1, %3
+  %5 = and i64 %0, %4
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 18 occurrences:
+; icu/optimized/ucnv_u8.ll
+; icu/optimized/utf_impl.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; linux/optimized/fs_context.ll
+; linux/optimized/fsopen.ll
+; linux/optimized/idr.ll
+; linux/optimized/rx.ll
+; linux/optimized/wme.ll
+; qemu/optimized/hw_net_igb_core.c.ll
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_pci_pci.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; spike/optimized/vghsh_vv.ll
+; spike/optimized/vgmul_vv.ll
+; verilator/optimized/V3AssertPre.cpp.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Number.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 1, %3
+  %5 = and i64 %4, %0
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 27 occurrences:
+; openvdb/optimized/Activate.cc.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/ChangeBackground.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/FindActiveValues.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/Prune.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/SignedFloodFill.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/ValueTransformer.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 63
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nsw i64 -1, %3
+  %5 = and i64 %0, %4
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 6 occurrences:
+; eastl/optimized/BenchmarkBitset.cpp.ll
+; php/optimized/zend_jit.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Number.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; z3/optimized/mpz.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000007c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 31
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 1, %3
+  %5 = and i64 %4, %0
+  %6 = icmp ne i64 %5, 0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

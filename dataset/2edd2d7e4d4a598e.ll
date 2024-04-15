@@ -1,0 +1,35 @@
+
+; 2 occurrences:
+; spike/optimized/clrs32.ll
+; spike/optimized/clz32.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000a3(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %0, 2
+  %4 = icmp ult i32 %2, 1073741824
+  %5 = select i1 %4, i32 %3, i32 %0
+  %6 = zext i1 %1 to i32
+  %7 = add nuw nsw i32 %5, %6
+  ret i32 %7
+}
+
+; 7 occurrences:
+; icu/optimized/scrptrun.ll
+; lodepng/optimized/lodepng.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/array_selfuncs.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000c3(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %0, 2
+  %4 = icmp ugt i64 %2, 3
+  %5 = select i1 %4, i64 %3, i64 %0
+  %6 = zext i1 %1 to i64
+  %7 = add nuw nsw i64 %5, %6
+  ret i64 %7
+}
+
+attributes #0 = { nounwind }

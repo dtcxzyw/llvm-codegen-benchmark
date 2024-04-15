@@ -1,0 +1,5 @@
+func0000000000000000:                   # @func0000000000000000
+	fmv.x.w	a1, fa0
+	or	a0, a0, a1
+	fmv.w.x	fa0, a0
+	ret

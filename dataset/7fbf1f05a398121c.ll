@@ -1,0 +1,39 @@
+
+; 4 occurrences:
+; assimp/optimized/3DSConverter.cpp.ll
+; assimp/optimized/ASELoader.cpp.ll
+; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; node/optimized/libnode.node_http2.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = sdiv exact i64 %3, 720
+  %5 = shl nsw i64 %4, 1
+  %6 = icmp ugt i64 %5, 1152921504606846975
+  ret i1 %6
+}
+
+; 9 occurrences:
+; ceres/optimized/cuda_block_structure.cc.ll
+; hyperscan/optimized/rose_build_engine_blob.cpp.ll
+; llama.cpp/optimized/llama.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; yosys/optimized/flowmap.ll
+; yosys/optimized/opt_muxtree.ll
+; yosys/optimized/pmux2shiftx.ll
+; yosys/optimized/proc_dlatch.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = sdiv exact i64 %3, 48
+  %5 = shl i64 %4, 32
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,7 @@
+func0000000000000001:                   # @func0000000000000001
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	li	a1, -1
+	sll	a0, a1, a0
+	ret

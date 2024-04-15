@@ -1,0 +1,54 @@
+func0000000000000000:                   # @func0000000000000000
+	subw	a1, a1, a0
+	li	a0, 1200
+	sh2add	a0, a0, a1
+	sraiw	a1, a0, 31
+	srliw	a1, a1, 30
+	add	a0, a0, a1
+	sraiw	a0, a0, 2
+	ret
+func000000000000001a:                   # @func000000000000001a
+	subw	a1, a1, a0
+	addi	a1, a1, 6
+	sext.h	a1, a1
+	lui	a0, 5
+	addiw	a0, a0, -1755
+	mul	a0, a0, a1
+	srliw	a1, a0, 31
+	srai	a0, a0, 17
+	add	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	subw	a1, a1, a0
+	addiw	a1, a1, 7
+	lui	a0, 599186
+	addiw	a0, a0, 1171
+	mul	a0, a0, a1
+	srli	a0, a0, 32
+	add	a0, a0, a1
+	srliw	a1, a0, 31
+	sraiw	a0, a0, 2
+	add	a0, a0, a1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	subw	a1, a1, a0
+	addi	a0, a1, 63
+	sraiw	a1, a0, 31
+	srliw	a1, a1, 29
+	add	a0, a0, a1
+	sraiw	a0, a0, 3
+	ret
+func000000000000000a:                   # @func000000000000000a
+	not	a0, a0
+	add	a0, a0, a1
+	srli	a1, a0, 63
+	add	a0, a0, a1
+	srai	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	subw	a1, a1, a0
+	addi	a1, a1, 1
+	srliw	a0, a1, 31
+	add	a0, a0, a1
+	sraiw	a0, a0, 1
+	ret

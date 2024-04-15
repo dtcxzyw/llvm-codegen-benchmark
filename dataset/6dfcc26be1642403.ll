@@ -1,0 +1,33 @@
+
+; 20 occurrences:
+; darktable/optimized/KdcDecoder.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
+; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; postgres/optimized/network.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/packet-obd-ii.c.ll
+; wireshark/optimized/packet-solaredge.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000001(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = sitofp i32 %3 to float
+  %5 = fmul float %4, 3.906250e-03
+  ret float %5
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,46 @@
+func00000000000000a4:                   # @func00000000000000a4
+	sext.w	a1, a1
+	addi	a1, a1, -1
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	sltiu	a0, a0, 8
+	ret
+func0000000000000024:                   # @func0000000000000024
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	addi	a1, a1, -1
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
+.LBB1_2:                                # %entry
+	sltiu	a0, a0, 32
+	ret
+func0000000000000021:                   # @func0000000000000021
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	addi	a1, a1, -1
+	bltu	a1, a0, .LBB2_2
+	mv	a1, a0
+.LBB2_2:                                # %entry
+	seqz	a0, a1
+	ret
+func00000000000000a1:                   # @func00000000000000a1
+	sext.w	a0, a0
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	addi	a1, a1, -16
+	bltu	a1, a0, .LBB3_2
+	mv	a1, a0
+.LBB3_2:                                # %entry
+	seqz	a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	addi	a1, a1, 8
+	bltu	a1, a0, .LBB4_2
+	mv	a1, a0
+.LBB4_2:                                # %entry
+	addi	a1, a1, -13
+	seqz	a0, a1
+	ret

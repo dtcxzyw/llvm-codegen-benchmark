@@ -1,0 +1,100 @@
+
+; 13 occurrences:
+; abc/optimized/FxchDiv.c.ll
+; abc/optimized/abcFx.c.ll
+; abc/optimized/aigJust.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/pdrUtil.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; linux/optimized/pci-acpi.ll
+; openssl/optimized/libcrypto-lib-bss_dgram_pair.ll
+; openssl/optimized/libcrypto-shlib-bss_dgram_pair.ll
+; php/optimized/zend_jit.ll
+; raylib/optimized/rcore.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 1
+  %4 = and i8 %1, 1
+  %5 = icmp eq i8 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 8 occurrences:
+; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
+; lief/optimized/psa_crypto.c.ll
+; linux/optimized/acpi_pm.ll
+; linux/optimized/cap_audit.ll
+; linux/optimized/mlme.ll
+; linux/optimized/xhci-ring.ll
+; php/optimized/zend_inheritance.ll
+; postgres/optimized/bufpage.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 64
+  %4 = and i32 %1, 64
+  %5 = icmp ugt i32 %4, %3
+  %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 16 occurrences:
+; abc/optimized/abcHieGia.c.ll
+; abc/optimized/amapRule.c.ll
+; abc/optimized/dauGia.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/giaBound.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/giaScl.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaTim.c.ll
+; abc/optimized/giaUtil.c.ll
+; abc/optimized/wlnRead.c.ll
+; wireshark/optimized/enabled_protocols_model.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7
+  %4 = and i32 %1, 7
+  %5 = icmp ne i32 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMuxes.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 536870911
+  %4 = and i32 %1, 536870911
+  %5 = icmp uge i32 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; linux/optimized/acpi_pm.ll
+; linux/optimized/mlme.ll
+; linux/optimized/vht.ll
+; linux/optimized/xhci-ring.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 3
+  %4 = and i32 %1, 3
+  %5 = icmp ult i32 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

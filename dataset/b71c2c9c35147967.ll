@@ -1,0 +1,424 @@
+
+; 355 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; abseil-cpp/optimized/parse.cc.ll
+; abseil-cpp/optimized/reflection.cc.ll
+; abseil-cpp/optimized/str_replace_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
+; abseil-cpp/optimized/string_view_test.cc.ll
+; abseil-cpp/optimized/usage.cc.ll
+; arrow/optimized/tz.cpp.ll
+; cmake/optimized/cmArgumentParser.cxx.ll
+; cmake/optimized/cmCMakePathCommand.cxx.ll
+; cmake/optimized/cmCTestHandlerCommand.cxx.ll
+; cmake/optimized/cmConfigureFileCommand.cxx.ll
+; cmake/optimized/cmFileInstaller.cxx.ll
+; cmake/optimized/cmGeneratorTarget.cxx.ll
+; cmake/optimized/cmOutputConverter.cxx.ll
+; cmake/optimized/cmParseArgumentsCommand.cxx.ll
+; cmake/optimized/cmSubcommandTable.cxx.ll
+; cmake/optimized/cmValue.cxx.ll
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/Camera.cpp.ll
+; darktable/optimized/CameraMetaData.cpp.ll
+; darktable/optimized/Cr2Decoder.cpp.ll
+; darktable/optimized/CrwDecoder.cpp.ll
+; darktable/optimized/KdcDecoder.cpp.ll
+; darktable/optimized/MrwDecoder.cpp.ll
+; darktable/optimized/NakedDecoder.cpp.ll
+; darktable/optimized/NefDecoder.cpp.ll
+; darktable/optimized/RafDecoder.cpp.ll
+; darktable/optimized/RawDecoder.cpp.ll
+; darktable/optimized/Rw2Decoder.cpp.ll
+; darktable/optimized/SrwDecoder.cpp.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_aggr_nested.cpp.ll
+; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
+; duckdb/optimized/ub_duckdb_catalog.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_main.cpp.ll
+; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
+; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
+; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
+; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; entt/optimized/version.cpp.ll
+; folly/optimized/HugePages.cpp.ll
+; folly/optimized/JSONSchema.cpp.ll
+; folly/optimized/NestedCommandLineApp.cpp.ll
+; folly/optimized/Settings.cpp.ll
+; folly/optimized/TestUtil.cpp.ll
+; folly/optimized/Uri.cpp.ll
+; folly/optimized/dynamic.cpp.ll
+; grpc/optimized/address_filtering.cc.ll
+; grpc/optimized/audit_logging.cc.ll
+; grpc/optimized/backend_metric.cc.ll
+; grpc/optimized/certificate_provider_registry.cc.ll
+; grpc/optimized/certificate_provider_store.cc.ll
+; grpc/optimized/channel_args.cc.ll
+; grpc/optimized/channel_creds_registry_init.cc.ll
+; grpc/optimized/config.cc.ll
+; grpc/optimized/lb_policy_registry.cc.ll
+; grpc/optimized/pick_first.cc.ll
+; grpc/optimized/priority.cc.ll
+; grpc/optimized/resolver_registry.cc.ll
+; grpc/optimized/rls.cc.ll
+; grpc/optimized/ssl_utils.cc.ll
+; grpc/optimized/uri_parser.cc.ll
+; grpc/optimized/weighted_target.cc.ll
+; grpc/optimized/xds_audit_logger_registry.cc.ll
+; grpc/optimized/xds_bootstrap_grpc.cc.ll
+; grpc/optimized/xds_client.cc.ll
+; grpc/optimized/xds_cluster_manager.cc.ll
+; grpc/optimized/xds_cluster_specifier_plugin.cc.ll
+; grpc/optimized/xds_http_filters.cc.ll
+; grpc/optimized/xds_lb_policy_registry.cc.ll
+; grpc/optimized/xds_listener.cc.ll
+; grpc/optimized/xds_override_host.cc.ll
+; grpc/optimized/xds_resolver.cc.ll
+; grpc/optimized/xds_route_config.cc.ll
+; grpc/optimized/xds_transport_grpc.cc.ll
+; hyperscan/optimized/gtest-all.cc.ll
+; hyperscan/optimized/ng_corpus_generator.cpp.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; libquic/optimized/string16.cc.ll
+; linux/optimized/intel_color.ll
+; minetest/optimized/CGUIEnvironment.cpp.ll
+; minetest/optimized/CGUITTFont.cpp.ll
+; minetest/optimized/CMeshCache.cpp.ll
+; minetest/optimized/CNullDriver.cpp.ll
+; minetest/optimized/client.cpp.ll
+; minetest/optimized/clientmedia.cpp.ll
+; minetest/optimized/clientpackethandler.cpp.ll
+; minetest/optimized/connection.cpp.ll
+; minetest/optimized/connectionthreads.cpp.ll
+; minetest/optimized/craftdef.cpp.ll
+; minetest/optimized/database-dummy.cpp.ll
+; minetest/optimized/game.cpp.ll
+; minetest/optimized/guiFormSpecMenu.cpp.ll
+; minetest/optimized/guiTable.cpp.ll
+; minetest/optimized/guiscalingfilter.cpp.ll
+; minetest/optimized/itemdef.cpp.ll
+; minetest/optimized/l_mapgen.cpp.ll
+; minetest/optimized/l_server.cpp.ll
+; minetest/optimized/main.cpp.ll
+; minetest/optimized/mapgen.cpp.ll
+; minetest/optimized/mod_configuration.cpp.ll
+; minetest/optimized/mods.cpp.ll
+; minetest/optimized/player_sao.cpp.ll
+; minetest/optimized/profiler.cpp.ll
+; minetest/optimized/profilergraph.cpp.ll
+; minetest/optimized/quicktune.cpp.ll
+; minetest/optimized/s_env.cpp.ll
+; minetest/optimized/s_server.cpp.ll
+; minetest/optimized/server.cpp.ll
+; minetest/optimized/settings.cpp.ll
+; minetest/optimized/shader.cpp.ll
+; minetest/optimized/sound.cpp.ll
+; minetest/optimized/subgames.cpp.ll
+; minetest/optimized/terminal_chat_console.cpp.ll
+; minetest/optimized/test_authdatabase.cpp.ll
+; minetest/optimized/texture_override.cpp.ll
+; minetest/optimized/texturepaths.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
+; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
+; mold/optimized/cmdline.cc.ALPHA.cc.ll
+; mold/optimized/cmdline.cc.ARM32.cc.ll
+; mold/optimized/cmdline.cc.ARM64.cc.ll
+; mold/optimized/cmdline.cc.I386.cc.ll
+; mold/optimized/cmdline.cc.LOONGARCH32.cc.ll
+; mold/optimized/cmdline.cc.LOONGARCH64.cc.ll
+; mold/optimized/cmdline.cc.M68K.cc.ll
+; mold/optimized/cmdline.cc.PPC32.cc.ll
+; mold/optimized/cmdline.cc.PPC64V1.cc.ll
+; mold/optimized/cmdline.cc.PPC64V2.cc.ll
+; mold/optimized/cmdline.cc.RV32BE.cc.ll
+; mold/optimized/cmdline.cc.RV32LE.cc.ll
+; mold/optimized/cmdline.cc.RV64BE.cc.ll
+; mold/optimized/cmdline.cc.RV64LE.cc.ll
+; mold/optimized/cmdline.cc.S390X.cc.ll
+; mold/optimized/cmdline.cc.SH4.cc.ll
+; mold/optimized/cmdline.cc.SPARC64.cc.ll
+; mold/optimized/cmdline.cc.X86_64.cc.ll
+; mold/optimized/multi-glob.cc.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; nix/optimized/add-to-store.ll
+; nix/optimized/app.ll
+; nix/optimized/archive.ll
+; nix/optimized/attr-path.ll
+; nix/optimized/attrs.ll
+; nix/optimized/build-remote.ll
+; nix/optimized/build-result.ll
+; nix/optimized/build.ll
+; nix/optimized/buildenv.ll
+; nix/optimized/built-path.ll
+; nix/optimized/bundle.ll
+; nix/optimized/cache.ll
+; nix/optimized/cat.ll
+; nix/optimized/cgroup.ll
+; nix/optimized/closure.ll
+; nix/optimized/command.ll
+; nix/optimized/common-args.ll
+; nix/optimized/common-eval-args.ll
+; nix/optimized/common-protocol.ll
+; nix/optimized/compute-levels.ll
+; nix/optimized/config-check.ll
+; nix/optimized/config.ll
+; nix/optimized/copy.ll
+; nix/optimized/current-process.ll
+; nix/optimized/daemon.ll
+; nix/optimized/derivation-add.ll
+; nix/optimized/derivation.ll
+; nix/optimized/derived-path-map.ll
+; nix/optimized/diff-closures.ll
+; nix/optimized/dotgraph.ll
+; nix/optimized/dummy-store.ll
+; nix/optimized/dump-path.ll
+; nix/optimized/edit.ll
+; nix/optimized/entry-points.ll
+; nix/optimized/environment-variables.ll
+; nix/optimized/error.ll
+; nix/optimized/eval-cache.ll
+; nix/optimized/experimental-features.ll
+; nix/optimized/export-import.ll
+; nix/optimized/fetch-to-store.ll
+; nix/optimized/fetchClosure.ll
+; nix/optimized/fetchMercurial.ll
+; nix/optimized/fetchTree.ll
+; nix/optimized/fetchurl.ll
+; nix/optimized/filetransfer.ll
+; nix/optimized/filtering-input-accessor.ll
+; nix/optimized/flake.ll
+; nix/optimized/fmt.ll
+; nix/optimized/gc.ll
+; nix/optimized/get-drvs.ll
+; nix/optimized/git-utils.ll
+; nix/optimized/git.ll
+; nix/optimized/github.ll
+; nix/optimized/globals.ll
+; nix/optimized/goal.ll
+; nix/optimized/graphml.ll
+; nix/optimized/hilite.ll
+; nix/optimized/http-binary-cache-store.ll
+; nix/optimized/indirect.ll
+; nix/optimized/installable-attr-path.ll
+; nix/optimized/installable-flake.ll
+; nix/optimized/installables.ll
+; nix/optimized/keys.ll
+; nix/optimized/legacy-ssh-store.ll
+; nix/optimized/local-binary-cache-store.ll
+; nix/optimized/local-derivation-goal.ll
+; nix/optimized/local-keys.ll
+; nix/optimized/local-store.ll
+; nix/optimized/log.ll
+; nix/optimized/lru-cache.ll
+; nix/optimized/ls.ll
+; nix/optimized/main.ll
+; nix/optimized/memory-source-accessor.ll
+; nix/optimized/mercurial.ll
+; nix/optimized/misc.ll
+; nix/optimized/names.ll
+; nix/optimized/nar-info.ll
+; nix/optimized/nar.ll
+; nix/optimized/nix-build.ll
+; nix/optimized/nix-channel.ll
+; nix/optimized/nix-collect-garbage.ll
+; nix/optimized/nix-copy-closure.ll
+; nix/optimized/nix-instantiate.ll
+; nix/optimized/nix-store.ll
+; nix/optimized/nixexpr.ll
+; nix/optimized/optimise-store.ll
+; nix/optimized/outputs-spec.ll
+; nix/optimized/parsed-derivations.ll
+; nix/optimized/path-from-hash-part.ll
+; nix/optimized/path-info.ll
+; nix/optimized/path-references.ll
+; nix/optimized/position.ll
+; nix/optimized/posix-fs-canonicalise.ll
+; nix/optimized/posix-source-accessor.ll
+; nix/optimized/primops.ll
+; nix/optimized/print-ambiguous.ll
+; nix/optimized/profiles.ll
+; nix/optimized/realisation.ll
+; nix/optimized/references.ll
+; nix/optimized/registry.ll
+; nix/optimized/remote-fs-accessor.ll
+; nix/optimized/remote-store.ll
+; nix/optimized/repl.ll
+; nix/optimized/run.ll
+; nix/optimized/serialise.ll
+; nix/optimized/serve-protocol-impl.ll
+; nix/optimized/serve-protocol.ll
+; nix/optimized/shared.ll
+; nix/optimized/sigs.ll
+; nix/optimized/ssh-store.ll
+; nix/optimized/store-api.ll
+; nix/optimized/store-copy-log.ll
+; nix/optimized/store-delete.ll
+; nix/optimized/store-gc.ll
+; nix/optimized/store-info.ll
+; nix/optimized/store-repair.ll
+; nix/optimized/store.ll
+; nix/optimized/suggestions.ll
+; nix/optimized/tarball.ll
+; nix/optimized/tests.ll
+; nix/optimized/trivial.ll
+; nix/optimized/uds-remote-store.ll
+; nix/optimized/unpack-channel.ll
+; nix/optimized/upgrade-nix.ll
+; nix/optimized/url.ll
+; nix/optimized/user-env.ll
+; nix/optimized/util.ll
+; nix/optimized/value-to-xml.ll
+; nix/optimized/verify.ll
+; nix/optimized/why-depends.ll
+; nix/optimized/worker-protocol.ll
+; nix/optimized/worker.ll
+; nix/optimized/xml-writer.ll
+; node/optimized/libnode.node_process_object.ll
+; node/optimized/libnode.node_report.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/empty_package.cc.ll
+; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/generated_enum_util.cc.ll
+; protobuf/optimized/open_enum.cc.ll
+; ruby/optimized/thread.ll
+; spike/optimized/clint.ll
+; spike/optimized/elfloader.ll
+; spike/optimized/extensions.ll
+; spike/optimized/htif.ll
+; spike/optimized/interactive.ll
+; spike/optimized/isa_parser.ll
+; spike/optimized/ns16550.ll
+; spike/optimized/plic.ll
+; spike/optimized/spike-log-parser.ll
+; spike/optimized/spike.ll
+; tomlplusplus/optimized/toml.cpp.ll
+; velox/optimized/tz.cpp.ll
+; yalantinglibs/optimized/EnumFieldGenerator.cpp.ll
+; yalantinglibs/optimized/EnumGenerator.cpp.ll
+; yalantinglibs/optimized/FieldGenerator.cpp.ll
+; yalantinglibs/optimized/FileGenerator.cpp.ll
+; yalantinglibs/optimized/MapFieldGenerator.cpp.ll
+; yalantinglibs/optimized/MessageFieldGenerator.cpp.ll
+; yalantinglibs/optimized/MessageGenerator.cpp.ll
+; yalantinglibs/optimized/OneofFieldGenerator.cpp.ll
+; yalantinglibs/optimized/PrimitiveFieldGenerator.cpp.ll
+; yalantinglibs/optimized/StringFieldGenerator.cpp.ll
+; yalantinglibs/optimized/StructGenerator.cpp.ll
+; yalantinglibs/optimized/chat_room.cpp.ll
+; yalantinglibs/optimized/conformance_test.cc.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/struct.struct_pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = tail call i32 @llvm.smax.i32(i32 %0, i32 -3)
+  %2 = tail call i32 @llvm.smin.i32(i32 %1, i32 3)
+  %3 = trunc i32 %2 to i8
+  ret i8 %3
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 3 occurrences:
+; minetest/optimized/l_mapgen.cpp.ll
+; minetest/optimized/settings.cpp.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i32 %0) #0 {
+entry:
+  %1 = tail call i32 @llvm.smax.i32(i32 %0, i32 -32768)
+  %2 = tail call noundef i32 @llvm.smin.i32(i32 %1, i32 32767)
+  %3 = trunc i32 %2 to i16
+  ret i16 %3
+}
+
+; 21 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; hyperscan/optimized/rose_build_matchers.cpp.ll
+; nix/optimized/binary-cache-store.ll
+; nix/optimized/derivation-goal.ll
+; nix/optimized/derivation-show.ll
+; nix/optimized/derivations.ll
+; nix/optimized/develop.ll
+; nix/optimized/fetchers.ll
+; nix/optimized/json-utils.ll
+; nix/optimized/lockfile.ll
+; nix/optimized/make-content-addressed.ll
+; nix/optimized/nar-accessor.ll
+; nix/optimized/nix-env.ll
+; nix/optimized/prefetch.ll
+; nix/optimized/profile.ll
+; nix/optimized/search.ll
+; nix/optimized/value-to-json.ll
+; nlohmann_json/optimized/unit-comparison.cpp.ll
+; nlohmann_json/optimized/unit-regression2.cpp.ll
+; protobuf/optimized/descriptor.cc.ll
+; spike/optimized/socketif.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = tail call i64 @llvm.smax.i64(i64 %0, i64 -2147483648)
+  %2 = tail call i64 @llvm.smin.i64(i64 %1, i64 2147483647)
+  %3 = trunc nsw i64 %2 to i32
+  ret i32 %3
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smax.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

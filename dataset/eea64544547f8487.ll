@@ -1,0 +1,15 @@
+
+; 3 occurrences:
+; hyperscan/optimized/ng_som.cpp.ll
+; postgres/optimized/execute.ll
+; qemu/optimized/execlog.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = select i1 %1, i8 %2, i8 0
+  %4 = trunc i8 %3 to i1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

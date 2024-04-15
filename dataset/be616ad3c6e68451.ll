@@ -1,0 +1,20 @@
+
+; 6 occurrences:
+; abseil-cpp/optimized/log_severity_test.cc.ll
+; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
+; abseil-cpp/optimized/mutex_test.cc.ll
+; abseil-cpp/optimized/time_zone_info.cc.ll
+; pbrt-v4/optimized/scene.cpp.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = freeze i64 %2
+  %4 = add i64 %3, -40
+  %5 = sub nuw i64 %4, %1
+  %6 = add i64 %5, 40
+  %7 = getelementptr i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

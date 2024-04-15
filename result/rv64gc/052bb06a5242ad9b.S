@@ -1,0 +1,39 @@
+func0000000000000016:                   # @func0000000000000016
+	slli	a1, a1, 1
+	or	a0, a0, a1
+	srli	a0, a0, 63
+	ret
+.LCPI1_0:
+	.quad	96076792050570581               # 0x155555555555555
+func0000000000000018:                   # @func0000000000000018
+	slli	a1, a1, 1
+	bltu	a0, a1, .LBB1_2
+	mv	a1, a0
+.LBB1_2:                                # %entry
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	sltu	a0, a0, a1
+	ret
+func0000000000000058:                   # @func0000000000000058
+	slli	a1, a1, 1
+	bltu	a0, a1, .LBB2_2
+	mv	a1, a0
+.LBB2_2:                                # %entry
+	srli	a1, a1, 61
+	snez	a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	slli	a1, a1, 1
+	bltu	a0, a1, .LBB3_2
+	mv	a1, a0
+.LBB3_2:                                # %entry
+	srli	a1, a1, 62
+	snez	a0, a1
+	ret
+func0000000000000044:                   # @func0000000000000044
+	slli	a1, a1, 1
+	bltu	a1, a0, .LBB4_2
+	mv	a0, a1
+.LBB4_2:                                # %entry
+	sltiu	a0, a0, 23
+	ret

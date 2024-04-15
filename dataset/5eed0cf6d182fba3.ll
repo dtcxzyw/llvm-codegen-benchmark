@@ -1,0 +1,173 @@
+
+; 9 occurrences:
+; linux/optimized/badblocks.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
+; recastnavigation/optimized/DetourTileCache.cpp.ll
+; ruby/optimized/pm_constant_pool.ll
+; z3/optimized/smt2parser.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = or i32 %0, %2
+  %4 = lshr i32 %3, 2
+  ret i32 %4
+}
+
+; 78 occurrences:
+; cmake/optimized/alone_decoder.c.ll
+; cmake/optimized/alone_encoder.c.ll
+; cmake/optimized/core.c.ll
+; cmake/optimized/lz_encoder.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; entt/optimized/adjacency_matrix.cpp.ll
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/custom_identifier.cpp.ll
+; entt/optimized/dense_map.cpp.ll
+; entt/optimized/dense_set.cpp.ll
+; entt/optimized/dispatcher.cpp.ll
+; entt/optimized/emitter.cpp.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/flow.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/handle.cpp.ll
+; entt/optimized/helper.cpp.ll
+; entt/optimized/memory.cpp.ll
+; entt/optimized/meta_any.cpp.ll
+; entt/optimized/meta_base.cpp.ll
+; entt/optimized/meta_container.cpp.ll
+; entt/optimized/meta_context.cpp.ll
+; entt/optimized/meta_conv.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/meta_data.cpp.ll
+; entt/optimized/meta_dtor.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/meta_handle.cpp.ll
+; entt/optimized/meta_pointer.cpp.ll
+; entt/optimized/meta_prop.cpp.ll
+; entt/optimized/meta_range.cpp.ll
+; entt/optimized/meta_template.cpp.ll
+; entt/optimized/meta_type.cpp.ll
+; entt/optimized/meta_utility.cpp.ll
+; entt/optimized/observer.cpp.ll
+; entt/optimized/organizer.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/resource_cache.cpp.ll
+; entt/optimized/runtime_view.cpp.ll
+; entt/optimized/sigh_mixin.cpp.ll
+; entt/optimized/signal_less.cpp.ll
+; entt/optimized/snapshot.cpp.ll
+; entt/optimized/sparse_set.cpp.ll
+; entt/optimized/storage.cpp.ll
+; entt/optimized/view.cpp.ll
+; git/optimized/delta-islands.ll
+; git/optimized/object-file.ll
+; git/optimized/oidset.ll
+; git/optimized/pack-objects.ll
+; grpc/optimized/flow_control.cc.ll
+; libuv/optimized/core.c.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; mitsuba3/optimized/multijitter.cpp.ll
+; mitsuba3/optimized/orthogonal.cpp.ll
+; mitsuba3/optimized/stratified.cpp.ll
+; node/optimized/core.ll
+; nuklear/optimized/unity.c.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; php/optimized/ir.ll
+; php/optimized/ir_strtab.ll
+; php/optimized/randomizer.ll
+; raylib/optimized/raudio.c.ll
+; readerwriterqueue/optimized/bench.cpp.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; recastnavigation/optimized/DetourNode.cpp.ll
+; recastnavigation/optimized/DetourProximityGrid.cpp.ll
+; recastnavigation/optimized/DetourTileCache.cpp.ll
+; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
+; recastnavigation/optimized/Sample_TileMesh.cpp.ll
+; z3/optimized/dl_sparse_table.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = or i32 %0, %2
+  %4 = lshr i32 %3, 2
+  ret i32 %4
+}
+
+; 16 occurrences:
+; hermes/optimized/Allocator.cpp.ll
+; hermes/optimized/CompilerDriver.cpp.ll
+; hermes/optimized/ISel.cpp.ll
+; hermes/optimized/JSParserImpl.cpp.ll
+; hermes/optimized/Object.cpp.ll
+; hermes/optimized/RegAlloc.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hermes/optimized/SimpleDiagHandler.cpp.ll
+; hermes/optimized/SourceMgr.cpp.ll
+; hermes/optimized/StackPromotion.cpp.ll
+; hermes/optimized/hbc-deltaprep.cpp.ll
+; hermes/optimized/hbcdump.cpp.ll
+; hermes/optimized/hermes.cpp.ll
+; hermes/optimized/rust-api.cpp.ll
+; hermes/optimized/synth.cpp.ll
+; lief/optimized/constant_time.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 65510
+  %3 = or i32 %2, %0
+  %4 = lshr i32 %3, 8
+  ret i32 %4
+}
+
+; 2 occurrences:
+; oiio/optimized/formatspec.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 67043328
+  %3 = or disjoint i32 %2, %0
+  %4 = lshr exact i32 %3, 10
+  ret i32 %4
+}
+
+; 5 occurrences:
+; node/optimized/simdutf.ll
+; qdrant-rs/optimized/49gep1elv33vxlrq.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; wireshark/optimized/msg_ulmap.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = or disjoint i32 %2, %0
+  %4 = lshr i32 %3, 1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/qspinlock.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 262144
+  %3 = or i32 %2, %0
+  %4 = lshr exact i32 %3, 16
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

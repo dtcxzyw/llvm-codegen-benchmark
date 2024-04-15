@@ -1,0 +1,33 @@
+
+; 4 occurrences:
+; image-rs/optimized/5oy2v8fghrh79s8.ll
+; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; typst-rs/optimized/42n69x09j7wzwnay.ll
+; typst-rs/optimized/4p30esqzpn2o5olu.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %0, 15
+  %3 = sub i64 0, %0
+  %4 = and i64 %1, %3
+  %5 = add i64 %2, %4
+  %6 = and i64 %5, %3
+  ret i64 %6
+}
+
+; 3 occurrences:
+; diesel-rs/optimized/cwp363aavze1xs0.ll
+; diesel-rs/optimized/ivb4nc5xs1gnmkx.ll
+; syn/optimized/4llvvcm7ykus6q9g.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, -1
+  %3 = sub i64 0, %0
+  %4 = and i64 %1, %3
+  %5 = add i64 %4, %2
+  %6 = and i64 %5, %3
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,17 @@
+
+; 3 occurrences:
+; qemu/optimized/source_s_approxRecip32_1.c.ll
+; raylib/optimized/rtextures.c.ll
+; spike/optimized/s_approxRecip32_1.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, 4294967295
+  %4 = mul nuw nsw i64 %3, %1
+  %5 = lshr i64 %4, 24
+  %6 = add nuw nsw i64 %5, %0
+  %7 = and i64 %6, 4294967295
+  ret i64 %7
+}
+
+attributes #0 = { nounwind }

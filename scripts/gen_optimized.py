@@ -27,17 +27,19 @@ def run_llc(input_file):
             ret = subprocess.run([llc_exec, '-O3', '--frame-pointer=none', '-mtriple=' + triple, '-mattr=' + attr, input_file, '-o', tmp_output],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL, timeout=10.0)
             if ret.returncode != 0:
                 return (input_file, 'fail')
+            subprocess.check_call(['sed', '-i', """/^[ \t]*\(\.globl\|\.size\|\.type\|\.p2align\|\.text\|\.attribute\|\.file\|\.Lfunc_end\|\.section\|\#\)/d""", tmp_output],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
             if copy_if_different:
                 ret2 = subprocess.run(['diff', '-q', output_file , tmp_output],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
                 if ret2.returncode != 0:
                     os.system('mv ' + tmp_output + ' ' + output_file)
                 else:
                     os.remove(tmp_output)
-            return (input_file, 'success')
         except subprocess.TimeoutExpired:
             return (input_file, 'timeout')
         except Exception:
             return (input_file, 'crash')
+        
+    return (input_file, 'success')
 
 if __name__ == '__main__':
     for name, triple, attr in variants:

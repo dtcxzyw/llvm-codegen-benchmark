@@ -1,0 +1,19 @@
+
+; 3 occurrences:
+; minetest/optimized/game.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000002(float %0, float %1) #0 {
+entry:
+  %2 = tail call float @llvm.fmuladd.f32(float %1, float 6.400000e+01, float 9.500000e+01)
+  %3 = fadd float %0, %2
+  %4 = fcmp olt float %3, 1.270000e+02
+  ret i1 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fmuladd.f32(float, float, float) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

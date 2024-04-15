@@ -1,0 +1,120 @@
+
+; 109 occurrences:
+; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
+; assimp/optimized/IFCOpenings.cpp.ll
+; assimp/optimized/IRRLoader.cpp.ll
+; bullet3/optimized/btConvexHull.ll
+; casadi/optimized/convexify.cpp.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
+; casadi/optimized/idas_ic.c.ll
+; casadi/optimized/sqpmethod.cpp.ll
+; casadi/optimized/sundials_dense.c.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colormapping.c.ll
+; darktable/optimized/introspection_colorreconstruction.c.ll
+; darktable/optimized/introspection_denoiseprofile.c.ll
+; darktable/optimized/introspection_diffuse.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_graduatednd.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_lowpass.c.ll
+; darktable/optimized/introspection_monochrome.c.ll
+; darktable/optimized/introspection_rawdenoise.c.ll
+; darktable/optimized/introspection_sharpen.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; flac/optimized/window.c.ll
+; graphviz/optimized/poly.c.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; ipopt/optimized/IpPenaltyLSAcceptor.ll
+; meshlab/optimized/Factor.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; minetest/optimized/light.cpp.ll
+; minetest/optimized/mesh.cpp.ll
+; mitsuba3/optimized/blackbody.cpp.ll
+; mitsuba3/optimized/bsplinecurve.cpp.ll
+; mitsuba3/optimized/catmullrom.cpp.ll
+; mitsuba3/optimized/constant.cpp.ll
+; mitsuba3/optimized/envmap.cpp.ll
+; mitsuba3/optimized/hair.cpp.ll
+; mitsuba3/optimized/measured_polarized.cpp.ll
+; mitsuba3/optimized/microfacet.cpp.ll
+; mitsuba3/optimized/pplastic.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
+; mitsuba3/optimized/principledthin.cpp.ll
+; mitsuba3/optimized/roughconductor.cpp.ll
+; mitsuba3/optimized/roughdielectric.cpp.ll
+; mitsuba3/optimized/roughplastic.cpp.ll
+; mitsuba3/optimized/sggx.cpp.ll
+; mitsuba3/optimized/sphere.cpp.ll
+; mitsuba3/optimized/thinlens.cpp.ll
+; nuttx/optimized/__cos.c.ll
+; ocio/optimized/Lut3DOpCPU_AVX.cpp.ll
+; ocio/optimized/Lut3DOpCPU_AVX2.cpp.ll
+; ocio/optimized/Lut3DOpCPU_SSE2.cpp.ll
+; oiio/optimized/filter.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; openblas/optimized/dggbal.c.ll
+; openblas/optimized/dlamch.c.ll
+; openblas/optimized/slamch.c.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; pbrt-v4/optimized/ArHosekSkyModel.c.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/mipmap.cpp.ll
+; pbrt-v4/optimized/noise.cpp.ll
+; pbrt-v4/optimized/scattering.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; postgres/optimized/geo_ops.ll
+; raylib/optimized/rshapes.c.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; sundials/optimized/arkode.c.ll
+; sundials/optimized/arkode_interp.c.ll
+; sundials/optimized/ida_ic.c.ll
+; sundials/optimized/idas_ic.c.ll
+; sundials/optimized/sundials_dense.c.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0) #0 {
+entry:
+  %1 = fmul float %0, %0
+  %2 = fmul float %1, 0x3FB61980A0000000
+  ret float %2
+}
+
+attributes #0 = { nounwind }

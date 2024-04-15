@@ -1,0 +1,80 @@
+
+; 4 occurrences:
+; abc/optimized/ifDec07.c.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; linux/optimized/fork.ll
+; mitsuba3/optimized/x86assembler.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 4
+  %4 = and i32 %1, 1
+  %5 = or disjoint i32 %4, %3
+  %6 = or i32 %5, %0
+  %7 = and i32 %6, 127
+  ret i32 %7
+}
+
+; 36 occurrences:
+; abc/optimized/acecRe.c.ll
+; abc/optimized/giaClp.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaPf.c.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/mpmDsd.c.ll
+; abc/optimized/mpmPre.c.ll
+; abc/optimized/wlcBlast.c.ll
+; linux/optimized/tg3.ll
+; openssl/optimized/padlock-dso-e_padlock.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/FindActiveValues.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/ValueTransformer.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/media.cpp.ll
+; qemu/optimized/target_riscv_bitmanip_helper.c.ll
+; spike/optimized/shfli.ll
+; spike/optimized/unshfli.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = and i16 %2, 15
+  %4 = and i16 %1, 3072
+  %5 = or disjoint i16 %4, %3
+  %6 = or disjoint i16 %5, %0
+  %7 = and i16 %6, -129
+  ret i16 %7
+}
+
+; 2 occurrences:
+; php/optimized/zend_inference.ll
+; qemu/optimized/hw_net_rtl8139.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 33554432
+  %4 = and i32 %1, 2147475456
+  %5 = or i32 %4, %3
+  %6 = or i32 %5, %0
+  %7 = and i32 %6, 1073741824
+  ret i32 %7
+}
+
+attributes #0 = { nounwind }

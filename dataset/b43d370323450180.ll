@@ -1,0 +1,41 @@
+
+; 30 occurrences:
+; darktable/optimized/DngDecoder.cpp.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; llama.cpp/optimized/ggml.c.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_embree.cpp.ll
+; meshlab/optimized/filter_func.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/parameters.cpp.ll
+; minetest/optimized/mapgen_valleys.cpp.ll
+; nori/optimized/chi2test.cpp.ll
+; nori/optimized/ttest.cpp.ll
+; nori/optimized/warptest.cpp.ll
+; ocio/optimized/ColorMatrixHelpers.cpp.ll
+; openexr/optimized/ImfRgbaYca.cpp.ll
+; pbrt-v4/optimized/colorspace.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, double %1) #0 {
+entry:
+  %2 = fsub double %1, %0
+  %3 = fdiv double %2, %0
+  ret double %3
+}
+
+attributes #0 = { nounwind }

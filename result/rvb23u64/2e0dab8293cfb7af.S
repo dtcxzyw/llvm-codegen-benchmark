@@ -1,0 +1,13 @@
+func0000000000000001:                   # @func0000000000000001
+	zext.w	a0, a0
+	rev8	a0, a0
+	ret
+func0000000000000000:                   # @func0000000000000000
+	zext.w	a0, a0
+	rev8	a0, a0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	zext.h	a0, a0
+	rev8	a0, a0
+	srli	a0, a0, 32
+	ret

@@ -1,0 +1,19 @@
+func0000000000000000:                   # @func0000000000000000
+	andi	a2, a2, 1
+	andi	a0, a0, 1
+	bnez	a2, .LBB0_2
+	lui	a2, 26
+	addiw	a2, a2, 1024
+	beqz	a0, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	lui	a2, 10
+	addiw	a2, a2, 1024
+	bnez	a0, .LBB0_4
+.LBB0_3:                                # %entry
+	mv	a1, a2
+.LBB0_4:                                # %entry
+	lui	a0, 24
+	addiw	a0, a0, 1024
+	and	a0, a0, a1
+	ret

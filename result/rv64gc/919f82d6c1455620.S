@@ -1,0 +1,17 @@
+func0000000000000000:                   # @func0000000000000000
+	slli	a1, a1, 9
+	li	a2, 1
+	slli	a2, a2, 61
+	or	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func0000000000000010:                   # @func0000000000000010
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, 8
+	ret
+func0000000000000005:                   # @func0000000000000005
+	slli	a1, a1, 2
+	ori	a1, a1, 4
+	addw	a0, a0, a1
+	ret

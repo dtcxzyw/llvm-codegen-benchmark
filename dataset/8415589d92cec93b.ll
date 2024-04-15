@@ -1,0 +1,20 @@
+
+; 6 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000006f(i32 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = or disjoint i32 %3, %0
+  %5 = zext i16 %1 to i32
+  %6 = or disjoint i32 %5, 1
+  %7 = add nuw nsw i32 %6, %4
+  ret i32 %7
+}
+
+attributes #0 = { nounwind }

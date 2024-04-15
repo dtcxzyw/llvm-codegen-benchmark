@@ -1,0 +1,17 @@
+func0000000000000058:                   # @func0000000000000058
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	srlw	a0, a1, a0
+	andi	a0, a0, 1
+	ret
+func0000000000000078:                   # @func0000000000000078
+	andi	a1, a1, 255
+	srlw	a0, a1, a0
+	andi	a0, a0, 1
+	ret
+func0000000000000062:                   # @func0000000000000062
+	andi	a1, a1, 255
+	srlw	a0, a1, a0
+	andi	a0, a0, 1
+	seqz	a0, a0
+	ret

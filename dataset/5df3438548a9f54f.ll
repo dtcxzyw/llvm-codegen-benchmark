@@ -1,0 +1,20 @@
+
+; 2 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; msdfgen/optimized/edge-coloring.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add nsw i32 %2, -1
+  %4 = call i32 @llvm.smax.i32(i32 %3, i32 1)
+  %5 = zext nneg i32 %4 to i64
+  %6 = icmp eq i64 %0, %5
+  ret i1 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

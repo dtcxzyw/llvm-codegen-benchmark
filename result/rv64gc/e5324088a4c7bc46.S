@@ -1,0 +1,27 @@
+func0000000000000025:                   # @func0000000000000025
+	mv	a1, a0
+	fle.s	a2, fa0, fa1
+	srliw	a0, a0, 1
+	beqz	a2, .LBB0_2
+	not	a0, a0
+	addw	a0, a0, a1
+.LBB0_2:                                # %entry
+	ret
+func0000000000000022:                   # @func0000000000000022
+	mv	a1, a0
+	flt.d	a2, fa0, fa1
+	srli	a0, a0, 1
+	bnez	a2, .LBB1_2
+	not	a0, a0
+	add	a0, a0, a1
+.LBB1_2:                                # %entry
+	ret
+func0000000000000024:                   # @func0000000000000024
+	mv	a1, a0
+	flt.d	a2, fa1, fa0
+	srli	a0, a0, 1
+	bnez	a2, .LBB2_2
+	not	a0, a0
+	add	a0, a0, a1
+.LBB2_2:                                # %entry
+	ret

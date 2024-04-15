@@ -1,0 +1,28 @@
+
+; 1 occurrences:
+; php/optimized/dtoa.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; raylib/optimized/raudio.c.ll
+; redis/optimized/ziplist.ll
+; stb/optimized/stb_vorbis.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

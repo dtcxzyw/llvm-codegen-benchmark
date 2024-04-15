@@ -1,0 +1,12 @@
+func0000000000000000:                   # @func0000000000000000
+	xor	a0, a0, a1
+	srli	a1, a0, 48
+	slli	a0, a0, 16
+	or	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	xor	a0, a0, a1
+	srliw	a1, a0, 17
+	slliw	a0, a0, 15
+	or	a0, a0, a1
+	ret

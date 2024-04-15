@@ -1,0 +1,10 @@
+func00000000000000a6:                   # @func00000000000000a6
+	sext.w	a2, a2
+	li	a3, -1086
+	bge	a3, a2, .LBB0_2
+	li	a1, 53
+.LBB0_2:                                # %entry
+	li	a2, 4
+	subw	a2, a2, a1
+	srl	a0, a0, a2
+	ret

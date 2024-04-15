@@ -1,0 +1,34 @@
+
+; 17 occurrences:
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_embree.cpp.ll
+; meshlab/optimized/filter_func.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; minetest/optimized/environment.cpp.ll
+; minetest/optimized/l_env.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fsub float 1.000000e+00, %0
+  %4 = fmul float %2, %3
+  %5 = tail call float @llvm.fmuladd.f32(float %0, float %1, float %4)
+  %6 = fptoui float %5 to i32
+  ret i32 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fmuladd.f32(float, float, float) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

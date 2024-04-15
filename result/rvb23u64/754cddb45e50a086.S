@@ -1,0 +1,41 @@
+func000000000000000a:                   # @func000000000000000a
+	fmul.s	fa5, fa0, fa1
+	fmv.w.x	fa4, zero
+	fle.s	a1, fa5, fa4
+	or	a0, a0, a1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	fmul.s	fa5, fa0, fa1
+	fli.s	fa4, 1.0
+	flt.s	a1, fa5, fa4
+	or	a0, a0, a1
+	ret
+func000000000000000b:                   # @func000000000000000b
+	fmul.s	fa5, fa0, fa1
+	fmv.w.x	fa4, zero
+	flt.s	a1, fa4, fa5
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+.LCPI3_0:
+	.quad	0x4014000000000000              # double 5
+func0000000000000004:                   # @func0000000000000004
+	lui	a1, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a1)
+	fmul.d	fa4, fa0, fa1
+	flt.d	a1, fa5, fa4
+	or	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	fmul.s	fa5, fa0, fa1
+	fmv.w.x	fa4, zero
+	feq.s	a1, fa5, fa4
+	or	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	fmul.d	fa5, fa0, fa1
+	fmv.d.x	fa4, zero
+	flt.d	a1, fa5, fa4
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret

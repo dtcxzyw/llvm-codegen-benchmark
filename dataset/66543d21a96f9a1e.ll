@@ -1,0 +1,210 @@
+
+; 179 occurrences:
+; abc/optimized/abcExtract.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/cbaNtk.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauNpn.c.ll
+; abc/optimized/giaAgi.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/sfmTim.c.ll
+; abc/optimized/sscSim.c.ll
+; abc/optimized/utilIsop.c.ll
+; abc/optimized/utilSort.c.ll
+; abc/optimized/wlcNtk.c.ll
+; abseil-cpp/optimized/symbolize.cc.ll
+; bullet3/optimized/b3VoronoiSimplexSolver.ll
+; bullet3/optimized/btVoronoiSimplexSolver.ll
+; cmake/optimized/byte_order.c.ll
+; cmake/optimized/strcase.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; coremark/optimized/core_main.c.ll
+; cpython/optimized/_ssl.ll
+; curl/optimized/libcurl_la-strcase.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; draco/optimized/hash_utils.cc.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; faiss/optimized/IndexAdditiveQuantizer.cpp.ll
+; git/optimized/bloom.ll
+; git/optimized/color.ll
+; git/optimized/combine-diff.ll
+; git/optimized/hex-ll.ll
+; git/optimized/hex.ll
+; git/optimized/pkt-line.ll
+; git/optimized/read-cache.ll
+; git/optimized/receive-pack.ll
+; git/optimized/ref-filter.ll
+; git/optimized/strbuf.ll
+; git/optimized/url.ll
+; git/optimized/urlmatch.ll
+; git/optimized/writer.ll
+; icu/optimized/bytestriebuilder.ll
+; icu/optimized/collationbuilder.ll
+; icu/optimized/collationdatabuilder.ll
+; icu/optimized/number_decimalquantity.ll
+; icu/optimized/ucnv_u7.ll
+; icu/optimized/ucptrie.ll
+; libevent/optimized/event.c.ll
+; libquic/optimized/lhash.c.ll
+; libquic/optimized/quic_protocol.cc.ll
+; libquic/optimized/string_util.cc.ll
+; lief/optimized/base64.c.ll
+; linux/optimized/autoprobe.ll
+; linux/optimized/blk-mq.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/fs-writeback.ll
+; linux/optimized/gro.ll
+; linux/optimized/hw_breakpoint.ll
+; linux/optimized/interface.ll
+; linux/optimized/lbr.ll
+; linux/optimized/libata-sff.ll
+; linux/optimized/mempolicy.ll
+; linux/optimized/nfsacl.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/ptrace.ll
+; linux/optimized/select.ll
+; linux/optimized/virtgpu_kms.ll
+; linux/optimized/workingset.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; minetest/optimized/pathfinder.cpp.ll
+; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
+; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
+; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
+; mold/optimized/gdb-index.cc.ALPHA.cc.ll
+; mold/optimized/gdb-index.cc.ARM32.cc.ll
+; mold/optimized/gdb-index.cc.ARM64.cc.ll
+; mold/optimized/gdb-index.cc.I386.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH32.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH64.cc.ll
+; mold/optimized/gdb-index.cc.M68K.cc.ll
+; mold/optimized/gdb-index.cc.PPC32.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V1.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V2.cc.ll
+; mold/optimized/gdb-index.cc.RV32BE.cc.ll
+; mold/optimized/gdb-index.cc.RV32LE.cc.ll
+; mold/optimized/gdb-index.cc.RV64BE.cc.ll
+; mold/optimized/gdb-index.cc.RV64LE.cc.ll
+; mold/optimized/gdb-index.cc.S390X.cc.ll
+; mold/optimized/gdb-index.cc.SH4.cc.ll
+; mold/optimized/gdb-index.cc.SPARC64.cc.ll
+; mold/optimized/gdb-index.cc.X86_64.cc.ll
+; mold/optimized/input-files.cc.RV32BE.cc.ll
+; mold/optimized/input-files.cc.RV32LE.cc.ll
+; mold/optimized/input-files.cc.RV64BE.cc.ll
+; mold/optimized/input-files.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; nix/optimized/util.ll
+; nuttx/optimized/intel64_map_region.c.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; openexr/optimized/internal_huf.c.ll
+; openmpi/optimized/comm_cid.ll
+; openmpi/optimized/libmpi_c_profile_la-type_create_f90_complex.ll
+; openmpi/optimized/libmpi_c_profile_la-type_create_f90_real.ll
+; openssl/optimized/libcrypto-lib-bn_div.ll
+; openssl/optimized/libcrypto-lib-evp_lib.ll
+; openssl/optimized/libcrypto-lib-lhash.ll
+; openssl/optimized/libcrypto-lib-sparse_array.ll
+; openssl/optimized/libcrypto-lib-v3_addr.ll
+; openssl/optimized/libcrypto-shlib-bn_div.ll
+; openssl/optimized/libcrypto-shlib-evp_lib.ll
+; openssl/optimized/libcrypto-shlib-lhash.ll
+; openssl/optimized/libcrypto-shlib-sparse_array.ll
+; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; php/optimized/PMurHash128.ll
+; php/optimized/crypt_blowfish.ll
+; postgres/optimized/ginget.ll
+; postgres/optimized/namespace.ll
+; postgres/optimized/pg_receivewal.ll
+; postgres/optimized/pgstat_shmem.ll
+; postgres/optimized/regcomp.ll
+; protobuf/optimized/parser.cc.ll
+; qemu/optimized/accel_tcg_cpu-exec.c.ll
+; qemu/optimized/block_qcow.c.ll
+; qemu/optimized/hw_scsi_megasas.c.ll
+; qemu/optimized/hw_scsi_mptsas.c.ll
+; qemu/optimized/hwprofile.ll
+; qemu/optimized/util_filemonitor-inotify.c.ll
+; quickjs/optimized/quickjs.ll
+; raylib/optimized/raudio.c.ll
+; redis/optimized/acl.ll
+; redis/optimized/hyperloglog.ll
+; redis/optimized/networking.ll
+; rocksdb/optimized/clock_cache.cc.ll
+; ruby/optimized/date_core.ll
+; ruby/optimized/pack.ll
+; ruby/optimized/symbol.ll
+; ruby/optimized/time.ll
+; simdjson/optimized/simdjson.cpp.ll
+; spike/optimized/csrs.ll
+; spike/optimized/interactive.ll
+; spike/optimized/processor.ll
+; spike/optimized/vnclip_wi.ll
+; spike/optimized/vnclip_wv.ll
+; spike/optimized/vnclip_wx.ll
+; spike/optimized/vssra_vi.ll
+; spike/optimized/vssra_vv.ll
+; spike/optimized/vssra_vx.ll
+; stb/optimized/stb_ds.c.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/UnsafeRowFast.cpp.ll
+; wireshark/optimized/addr_resolv.c.ll
+; wireshark/optimized/mac_hd_generic_decoder.c.ll
+; wireshark/optimized/packet-snmp.c.ll
+; wireshark/optimized/text_import.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i32
+  %3 = or i32 %0, %2
+  ret i32 %3
+}
+
+; 11 occurrences:
+; abc/optimized/abcExact.c.ll
+; arrow/optimized/trie.cc.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; redis/optimized/lua_cmsgpack.ll
+; slurm/optimized/priority_multifactor.ll
+; stb/optimized/stb_connected_components.c.ll
+; wireshark/optimized/packet-radius.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = or disjoint i64 %0, %2
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

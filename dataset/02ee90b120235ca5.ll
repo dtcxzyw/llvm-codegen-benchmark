@@ -1,0 +1,19 @@
+
+; 7 occurrences:
+; icu/optimized/msgfmt.ll
+; openblas/optimized/cblas_dgemm.c.ll
+; openblas/optimized/cblas_dsymm.c.ll
+; openblas/optimized/cblas_dsyrk.c.ll
+; openblas/optimized/dgemm.c.ll
+; openblas/optimized/dsymm.c.ll
+; openblas/optimized/dsyrk.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i32
+  %3 = select i1 %0, i32 %2, i32 0
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

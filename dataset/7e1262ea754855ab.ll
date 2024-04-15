@@ -1,0 +1,65 @@
+
+; 3 occurrences:
+; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; abseil-cpp/optimized/distributions_test.cc.ll
+; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ba(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ugt double %2, 1.200000e+00
+  %4 = fcmp uge double %1, 1.000000e+00
+  %5 = or i1 %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001aa(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp uge double %2, 1.000000e+00
+  %4 = fcmp ugt double %1, 1.200000e+00
+  %5 = or i1 %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 26 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ee(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp une double %2, 0.000000e+00
+  %4 = fcmp une double %1, 1.000000e+00
+  %5 = or i1 %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

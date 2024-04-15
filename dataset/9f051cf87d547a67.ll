@@ -1,0 +1,95 @@
+
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; linux/optimized/mbcache.ll
+; quickjs/optimized/libbf.ll
+; rocksdb/optimized/lru_cache.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a1(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 1, %2
+  %4 = add nuw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
+; hyperscan/optimized/stream.c.ll
+; lua/optimized/ltable.ll
+; memcached/optimized/memcached-assoc.ll
+; memcached/optimized/memcached_debug-assoc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 1, %2
+  %4 = add i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; stb/optimized/stb_ds.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000108(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl i64 512, %2
+  %4 = add i64 %0, 1
+  %5 = icmp ugt i64 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl i64 4, %2
+  %4 = add i64 %0, 64
+  %5 = icmp ult i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/aset.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl i64 8, %2
+  %4 = add i64 %0, -8
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000121(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl i64 2, %2
+  %4 = add nuw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cpython/optimized/dictobject.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001b1(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw i64 1, %2
+  %4 = add nuw nsw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

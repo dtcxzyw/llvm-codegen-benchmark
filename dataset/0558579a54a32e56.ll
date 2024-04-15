@@ -1,0 +1,215 @@
+
+; 82 occurrences:
+; cmake/optimized/epoll.c.ll
+; cpython/optimized/_decimal.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; git/optimized/archive-tar.ll
+; git/optimized/commit-reach.ll
+; git/optimized/ewah_bitmap.ll
+; git/optimized/merge-ort.ll
+; git/optimized/ubc_check.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/CompilerDriver.cpp.ll
+; jq/optimized/compile.ll
+; libquic/optimized/p224-64.c.ll
+; libuv/optimized/linux.c.ll
+; linux/optimized/algapi.ll
+; linux/optimized/apic.ll
+; linux/optimized/core.ll
+; linux/optimized/e1000_hw.ll
+; linux/optimized/ehci-dbgp.ll
+; linux/optimized/gso.ll
+; linux/optimized/gup.ll
+; linux/optimized/ht.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/hwregs.ll
+; linux/optimized/init_64.ll
+; linux/optimized/init_ohci1394_dma.ll
+; linux/optimized/intel_gmbus.ll
+; linux/optimized/intel_lvds.ll
+; linux/optimized/io_apic.ll
+; linux/optimized/keyboard.ll
+; linux/optimized/memory.ll
+; linux/optimized/mii.ll
+; linux/optimized/pci.ll
+; linux/optimized/pcmcia_resource.ll
+; linux/optimized/posix_acl.ll
+; linux/optimized/setup-bus.ll
+; linux/optimized/task_mmu.ll
+; linux/optimized/tcp_offload.ll
+; linux/optimized/tcp_output.ll
+; linux/optimized/vt.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luajit/optimized/lj_opt_dce.ll
+; luajit/optimized/lj_opt_dce_dyn.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; node/optimized/linux.ll
+; nuttx/optimized/fs_poll.c.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-lib-ssl_ciph.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
+; openssl/optimized/libssl-shlib-ssl_ciph.ll
+; php/optimized/ir_emit.ll
+; php/optimized/zend_ssa.ll
+; proxygen/optimized/HTTP1xCodec.cpp.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/hw_display_ati.c.ll
+; qemu/optimized/hw_net_can_can_sja1000.c.ll
+; qemu/optimized/hw_net_eepro100.c.ll
+; qemu/optimized/hw_net_ne2000.c.ll
+; qemu/optimized/hw_net_rtl8139.c.ll
+; qemu/optimized/hw_scsi_lsi53c895a.c.ll
+; qemu/optimized/hw_usb_hcd-ohci.c.ll
+; ruby/optimized/regparse.ll
+; spike/optimized/csrs.ll
+; spike/optimized/socketif.ll
+; sqlite/optimized/sqlite3.ll
+; stockfish/optimized/bitboard.ll
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/chat_room.cpp.ll
+; yalantinglibs/optimized/client.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
+; yalantinglibs/optimized/concurrent_clients.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/file_client.cpp.ll
+; yalantinglibs/optimized/file_server.cpp.ll
+; yalantinglibs/optimized/rpc_service.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %1, -67108865
+  %3 = and i32 %0, %2
+  ret i32 %3
+}
+
+; 113 occurrences:
+; abc/optimized/saigIsoFast.c.ll
+; abseil-cpp/optimized/mutex.cc.ll
+; bdwgc/optimized/cordxtra.c.ll
+; cpython/optimized/cfield.ll
+; darktable/optimized/introspection_lens.cc.ll
+; entt/optimized/dense_map.cpp.ll
+; entt/optimized/dense_set.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
+; git/optimized/commit-reach.ll
+; git/optimized/ewah_bitmap.ll
+; git/optimized/object.ll
+; hermes/optimized/APInt.cpp.ll
+; jq/optimized/compile.ll
+; linux/optimized/cdrom.ll
+; linux/optimized/e1000_hw.ll
+; linux/optimized/hugetlb_cgroup.ll
+; linux/optimized/intel_opregion.ll
+; linux/optimized/intel_uc.ll
+; linux/optimized/mprotect.ll
+; linux/optimized/pgtable.ll
+; linux/optimized/rtc-cmos.ll
+; linux/optimized/xfrm_policy.ll
+; linux/optimized/xfrm_state.ll
+; linux/optimized/xhci.ll
+; mold/optimized/input-files.cc.ALPHA.cc.ll
+; mold/optimized/input-files.cc.ARM32.cc.ll
+; mold/optimized/input-files.cc.ARM64.cc.ll
+; mold/optimized/input-files.cc.I386.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-files.cc.M68K.cc.ll
+; mold/optimized/input-files.cc.PPC32.cc.ll
+; mold/optimized/input-files.cc.PPC64V1.cc.ll
+; mold/optimized/input-files.cc.PPC64V2.cc.ll
+; mold/optimized/input-files.cc.RV32BE.cc.ll
+; mold/optimized/input-files.cc.RV32LE.cc.ll
+; mold/optimized/input-files.cc.RV64BE.cc.ll
+; mold/optimized/input-files.cc.RV64LE.cc.ll
+; mold/optimized/input-files.cc.S390X.cc.ll
+; mold/optimized/input-files.cc.SH4.cc.ll
+; mold/optimized/input-files.cc.SPARC64.cc.ll
+; mold/optimized/input-files.cc.X86_64.cc.ll
+; mold/optimized/input-sections.cc.ALPHA.cc.ll
+; mold/optimized/input-sections.cc.ARM32.cc.ll
+; mold/optimized/input-sections.cc.ARM64.cc.ll
+; mold/optimized/input-sections.cc.I386.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-sections.cc.M68K.cc.ll
+; mold/optimized/input-sections.cc.PPC32.cc.ll
+; mold/optimized/input-sections.cc.PPC64V1.cc.ll
+; mold/optimized/input-sections.cc.PPC64V2.cc.ll
+; mold/optimized/input-sections.cc.RV32BE.cc.ll
+; mold/optimized/input-sections.cc.RV32LE.cc.ll
+; mold/optimized/input-sections.cc.RV64BE.cc.ll
+; mold/optimized/input-sections.cc.RV64LE.cc.ll
+; mold/optimized/input-sections.cc.S390X.cc.ll
+; mold/optimized/input-sections.cc.SH4.cc.ll
+; mold/optimized/input-sections.cc.SPARC64.cc.ll
+; mold/optimized/input-sections.cc.X86_64.cc.ll
+; mold/optimized/mapfile.cc.ALPHA.cc.ll
+; mold/optimized/mapfile.cc.ARM32.cc.ll
+; mold/optimized/mapfile.cc.ARM64.cc.ll
+; mold/optimized/mapfile.cc.I386.cc.ll
+; mold/optimized/mapfile.cc.LOONGARCH32.cc.ll
+; mold/optimized/mapfile.cc.LOONGARCH64.cc.ll
+; mold/optimized/mapfile.cc.M68K.cc.ll
+; mold/optimized/mapfile.cc.PPC32.cc.ll
+; mold/optimized/mapfile.cc.PPC64V1.cc.ll
+; mold/optimized/mapfile.cc.PPC64V2.cc.ll
+; mold/optimized/mapfile.cc.RV32BE.cc.ll
+; mold/optimized/mapfile.cc.RV32LE.cc.ll
+; mold/optimized/mapfile.cc.RV64BE.cc.ll
+; mold/optimized/mapfile.cc.RV64LE.cc.ll
+; mold/optimized/mapfile.cc.S390X.cc.ll
+; mold/optimized/mapfile.cc.SH4.cc.ll
+; mold/optimized/mapfile.cc.SPARC64.cc.ll
+; mold/optimized/mapfile.cc.X86_64.cc.ll
+; oiio/optimized/ustring.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/Queue.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; php/optimized/zend_jit.ll
+; postgres/optimized/trigger.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/unparser.cc.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/hw_scsi_lsi53c895a.c.ll
+; qemu/optimized/hw_sd_sdhci.c.ll
+; qemu/optimized/hw_usb_hcd-ohci.c.ll
+; re2/optimized/prog.cc.ll
+; redis/optimized/hyperloglog.ll
+; ruby/optimized/ruby.ll
+; spike/optimized/f32_to_i64_r_minMag.ll
+; spike/optimized/f32_to_ui64_r_minMag.ll
+; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; verilator/optimized/V3Number.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 128
+  %3 = and i32 %2, %0
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

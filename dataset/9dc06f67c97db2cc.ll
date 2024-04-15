@@ -1,0 +1,100 @@
+
+; 7 occurrences:
+; cpython/optimized/_decimal.ll
+; cpython/optimized/abstract.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; graphviz/optimized/emit.c.ll
+; linux/optimized/workqueue.ll
+; postgres/optimized/ginxlog.ll
+; ruby/optimized/compile.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 16 occurrences:
+; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/flat_hash_map_test.cc.ll
+; abseil-cpp/optimized/flat_hash_set_test.cc.ll
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; abseil-cpp/optimized/node_hash_map_test.cc.ll
+; abseil-cpp/optimized/node_hash_set_test.cc.ll
+; entt/optimized/meta_any.cpp.ll
+; entt/optimized/meta_handle.cpp.ll
+; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
+; rocksdb/optimized/filter_block_reader_common.cc.ll
+; rocksdb/optimized/index_reader_common.cc.ll
+; rocksdb/optimized/partitioned_filter_block.cc.ll
+; rocksdb/optimized/uncompression_dict_reader.cc.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Table.cpp.ll
+; verilator/optimized/V3Unroll.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = icmp eq ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 9 occurrences:
+; cmake/optimized/cmInstallCommand.cxx.ll
+; cpython/optimized/_collectionsmodule.ll
+; cpython/optimized/unicodeobject.ll
+; darktable/optimized/modulegroups.c.ll
+; graphviz/optimized/sameport.c.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/nl80211.ll
+; nanobind/optimized/trampoline.cpp.ll
+; php/optimized/node.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = icmp eq ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; yosys/optimized/equiv_miter.ll
+; z3/optimized/dominator_simplifier.cpp.ll
+; z3/optimized/lia2card_tactic.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_err.ll
+; luajit/optimized/lj_err_dyn.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c8(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = icmp ugt ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; graphviz/optimized/dthash.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = icmp ult ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

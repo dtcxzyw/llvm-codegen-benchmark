@@ -1,0 +1,20 @@
+
+; 8 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/saigSimMv.c.ll
+; linux/optimized/acct.ll
+; linux/optimized/i915_cmd_parser.ll
+; mitsuba3/optimized/x86assembler.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-ethertype.c.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 24
+  %3 = icmp eq i32 %2, 8
+  %4 = select i1 %3, i32 1, i32 %0
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

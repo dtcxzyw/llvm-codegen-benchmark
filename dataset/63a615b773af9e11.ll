@@ -1,0 +1,21 @@
+
+; 7 occurrences:
+; assimp/optimized/AssbinFileWriter.cpp.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/scene.cpp.ll
+; pbrt-v4/optimized/materials.cpp.ll
+; typst-rs/optimized/377uk5tkmxagdt0q.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0, float %1) #0 {
+entry:
+  %2 = bitcast float %1 to i32
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw i64 %3, 32
+  %5 = zext i32 %0 to i64
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

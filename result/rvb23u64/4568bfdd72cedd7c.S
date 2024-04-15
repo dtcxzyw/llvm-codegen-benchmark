@@ -1,0 +1,6 @@
+func000000000000000e:                   # @func000000000000000e
+	not	a1, a1
+	sext.w	a1, a1
+	add	a0, a0, a1
+	addi	a0, a0, 3
+	ret

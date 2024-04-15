@@ -1,0 +1,26 @@
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; linux/optimized/ip6_flowlabel.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 14, %1
+  %3 = icmp ult i64 %2, 8
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; icu/optimized/simpletz.ll
+; linux/optimized/errseq.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 0, %1
+  %3 = icmp ugt i32 %2, 4095
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

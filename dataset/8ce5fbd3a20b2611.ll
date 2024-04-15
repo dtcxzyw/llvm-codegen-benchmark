@@ -1,0 +1,108 @@
+
+; 8 occurrences:
+; arrow/optimized/bignum.cc.ll
+; darktable/optimized/introspection_highlights.c.ll
+; double_conversion/optimized/bignum.cc.ll
+; icu/optimized/double-conversion-bignum.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; minetest/optimized/mg_decoration.cpp.ll
+; minetest/optimized/mg_ore.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000005a(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = sext i16 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = add nsw i32 %4, %0
+  %6 = icmp sgt i32 %5, -1
+  ret i1 %6
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; icu/optimized/ucnvmbcs.ll
+; linux/optimized/inotify_user.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 %1, %3
+  %5 = add i64 %4, %0
+  %6 = icmp sgt i64 %5, -1
+  ret i1 %6
+}
+
+; 2 occurrences:
+; cpython/optimized/mpdecimal.ll
+; git/optimized/diffcore-pickaxe.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = add i64 %4, %0
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; postgres/optimized/ruleutils.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000046(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = sext i16 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = add i32 %0, %4
+  %6 = icmp slt i32 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; icu/optimized/ucnvmbcs.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = add i32 %4, %0
+  %6 = icmp ne i32 %5, 1
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = add i64 %0, %4
+  %6 = icmp slt i64 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = add i64 %0, %4
+  %6 = icmp sgt i64 %5, -1
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cpython/optimized/mpdecimal.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = add i64 %0, %4
+  %6 = icmp ne i64 %5, 0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

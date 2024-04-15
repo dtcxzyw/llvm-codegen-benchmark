@@ -1,0 +1,36 @@
+
+; 9 occurrences:
+; icu/optimized/collationkeys.ll
+; linux/optimized/blk-mq.ll
+; linux/optimized/sd.ll
+; php/optimized/zend_inference.ll
+; postgres/optimized/parsexlog.ll
+; spike/optimized/mmu.ll
+; z3/optimized/array_solver.cpp.ll
+; z3/optimized/probe_arith.cpp.ll
+; z3/optimized/theory_opt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 568
+  %4 = icmp eq i32 %3, 0
+  %5 = or i1 %4, %1
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; linux/optimized/blk-mq.ll
+; linux/optimized/skbuff.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = icmp ne i64 %3, 0
+  %5 = or i1 %4, %1
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

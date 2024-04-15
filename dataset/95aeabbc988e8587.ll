@@ -1,0 +1,17 @@
+
+; 3 occurrences:
+; cvc5/optimized/proof_node_updater.cpp.ll
+; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
+; nlohmann_json/optimized/unit-ordered_map.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = ashr exact i64 %4, 3
+  %6 = sub nsw i64 %0, %5
+  %7 = icmp ugt i64 %0, %6
+  ret i1 %7
+}
+
+attributes #0 = { nounwind }

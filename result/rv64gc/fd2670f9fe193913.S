@@ -1,0 +1,22 @@
+func0000000000000005:                   # @func0000000000000005
+	andi	a2, a2, 1
+	beqz	a2, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	negw	a0, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a2, a2, 32
+	beqz	a2, .LBB1_2
+	mv	a0, a1
+.LBB1_2:                                # %entry
+	negw	a0, a0
+	ret
+func0000000000000007:                   # @func0000000000000007
+	andi	a2, a2, 2
+	beqz	a2, .LBB2_2
+	mv	a0, a1
+.LBB2_2:                                # %entry
+	li	a1, 36
+	subw	a0, a1, a0
+	ret

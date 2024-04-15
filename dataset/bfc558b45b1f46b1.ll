@@ -1,0 +1,134 @@
+
+; 122 occurrences:
+; abc/optimized/giaSweeper.c.ll
+; bullet3/optimized/b3QuantizedBvh.ll
+; bullet3/optimized/btCollisionWorld.ll
+; bullet3/optimized/btConvexHull.ll
+; bullet3/optimized/btGImpactBvh.ll
+; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btGjkPairDetector.ll
+; bullet3/optimized/btPolarDecomposition.ll
+; bullet3/optimized/btQuantizedBvh.ll
+; bullet3/optimized/btReducedDeformableBody.ll
+; bullet3/optimized/btSoftBody.ll
+; bullet3/optimized/btSoftBodyHelpers.ll
+; bullet3/optimized/gim_box_set.ll
+; bullet3/optimized/poly34.ll
+; ceres/optimized/covariance_impl.cc.ll
+; darktable/optimized/amaze.cc.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_clipping.c.ll
+; darktable/optimized/introspection_colorbalance.c.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colorin.c.ll
+; darktable/optimized/introspection_colorize.c.ll
+; darktable/optimized/introspection_colorreconstruction.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_exposure.c.ll
+; darktable/optimized/introspection_filmic.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_gamma.c.ll
+; darktable/optimized/introspection_graduatednd.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_lowlight.c.ll
+; darktable/optimized/introspection_retouch.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_splittoning.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/introspection_tonemap.cc.ll
+; graphviz/optimized/adjust.c.ll
+; graphviz/optimized/constrained_majorization.c.ll
+; graphviz/optimized/constrained_majorization_ipsep.c.ll
+; graphviz/optimized/dotsplines.c.ll
+; graphviz/optimized/htmltable.c.ll
+; graphviz/optimized/pack.c.ll
+; graphviz/optimized/stress.c.ll
+; icu/optimized/calendar.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_ao.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/parameters.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
+; minetest/optimized/CBillboardSceneNode.cpp.ll
+; minetest/optimized/CBoneSceneNode.cpp.ll
+; minetest/optimized/CCameraSceneNode.cpp.ll
+; minetest/optimized/CDummyTransformationSceneNode.cpp.ll
+; minetest/optimized/CEmptySceneNode.cpp.ll
+; minetest/optimized/CMeshSceneNode.cpp.ll
+; minetest/optimized/CNullDriver.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/CSceneManager.cpp.ll
+; minetest/optimized/activeobjectmgr.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; minetest/optimized/clouds.cpp.ll
+; minetest/optimized/localplayer.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; minetest/optimized/wieldmesh.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; mitsuba3/optimized/hair.cpp.ll
+; mitsuba3/optimized/sggx.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuttx/optimized/lib_sqrtf.c.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; openblas/optimized/dlahqr.c.ll
+; openblas/optimized/dlasq2.c.ll
+; openblas/optimized/dlasq3.c.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/internal_dwa.c.ll
+; openvdb/optimized/Transform.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/lightsamplers.cpp.ll
+; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/primitive.cpp.ll
+; pbrt-v4/optimized/render.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
+; postgres/optimized/brin_minmax_multi.ll
+; raylib/optimized/raudio.c.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_hexwave.c.ll
+; stb/optimized/stb_image_write.c.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; z3/optimized/sat_lookahead.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fadd float %1, %2
+  %4 = fmul float %3, 5.000000e-01
+  %5 = fadd float %4, %0
+  ret float %5
+}
+
+attributes #0 = { nounwind }

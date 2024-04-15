@@ -1,0 +1,14 @@
+func0000000000000016:                   # @func0000000000000016
+	li	a3, 4
+	blt	a3, a2, .LBB0_2
+	li	a2, 4
+.LBB0_2:                                # %entry
+	blt	a2, a1, .LBB0_4
+	mv	a2, a1
+.LBB0_4:                                # %entry
+	srai	a1, a2, 63
+	srli	a1, a1, 62
+	add	a1, a1, a2
+	andi	a1, a1, -4
+	slt	a0, a0, a1
+	ret

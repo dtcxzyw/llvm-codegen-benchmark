@@ -1,0 +1,42 @@
+
+; 30 occurrences:
+; abseil-cpp/optimized/ascii_test.cc.ll
+; abseil-cpp/optimized/cleanup_test.cc.ll
+; abseil-cpp/optimized/cord_test.cc.ll
+; abseil-cpp/optimized/cordz_handle_test.cc.ll
+; abseil-cpp/optimized/cordz_info_test.cc.ll
+; abseil-cpp/optimized/flat_hash_map_test.cc.ll
+; abseil-cpp/optimized/flat_hash_set_test.cc.ll
+; abseil-cpp/optimized/kernel_timeout_test.cc.ll
+; abseil-cpp/optimized/marshalling_test.cc.ll
+; abseil-cpp/optimized/node_hash_map_test.cc.ll
+; abseil-cpp/optimized/node_hash_set_test.cc.ll
+; abseil-cpp/optimized/notification_test.cc.ll
+; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; abseil-cpp/optimized/status_test.cc.ll
+; abseil-cpp/optimized/unordered_map_test.cc.ll
+; abseil-cpp/optimized/unordered_set_test.cc.ll
+; glog/optimized/logging_unittest.cc.ll
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; imgui/optimized/imgui.cpp.ll
+; libphonenumber/optimized/phonenumberutil_test.cc.ll
+; meshlab/optimized/edit_manipulators.cpp.ll
+; ninja/optimized/build_test.cc.ll
+; ninja/optimized/disk_interface_test.cc.ll
+; ninja/optimized/graph_test.cc.ll
+; ninja/optimized/state_test.cc.ll
+; nix/optimized/config.ll
+; postgres/optimized/pgc.ll
+; postgres/optimized/spi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000000(i8 %0) #0 {
+entry:
+  %1 = and i8 %0, 1
+  %2 = xor i8 %1, 1
+  %3 = trunc i8 %2 to i1
+  ret i1 %3
+}
+
+attributes #0 = { nounwind }

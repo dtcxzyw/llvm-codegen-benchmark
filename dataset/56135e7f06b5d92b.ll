@@ -1,0 +1,51 @@
+
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-curve448.ll
+; openssl/optimized/libcrypto-shlib-curve448.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001cc(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = icmp ne i32 %2, %0
+  %4 = icmp ne i32 %2, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; git/optimized/fast-import.ll
+; Function Attrs: nounwind
+define i1 @func000000000000009c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -1
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp uge i64 %2, %0
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-sip.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000016c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1
+  %3 = icmp ne i32 %2, -1
+  %4 = icmp slt i32 %2, %0
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/numeric.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = icmp sgt i32 %2, -1
+  %4 = icmp slt i32 %2, %0
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

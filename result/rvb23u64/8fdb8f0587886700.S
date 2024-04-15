@@ -1,0 +1,31 @@
+func0000000000000001:                   # @func0000000000000001
+	fcvt.d.l	fa5, a0
+	fsub.d	fa5, fa0, fa5
+	feq.d	a0, fa5, fa5
+	fli.d	fa0, nan
+	beqz	a0, .LBB0_2
+	fmv.d	fa0, fa5
+.LBB0_2:                                # %entry
+	ret
+func0000000000000002:                   # @func0000000000000002
+	fcvt.d.l	fa5, a0
+	fsub.d	fa5, fa0, fa5
+	fli.d	fa0, 1.0
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB1_2
+	fmv.d	fa0, fa5
+.LBB1_2:                                # %entry
+	ret
+.LCPI2_0:
+	.word	0x3f7fffff                      # float 0.99999994
+func0000000000000004:                   # @func0000000000000004
+	lui	a1, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a1)
+	fcvt.s.w	fa4, a0
+	fsub.s	fa4, fa0, fa4
+	flt.s	a0, fa5, fa4
+	bnez	a0, .LBB2_2
+	fmv.s	fa5, fa4
+.LBB2_2:                                # %entry
+	fmv.s	fa0, fa5
+	ret

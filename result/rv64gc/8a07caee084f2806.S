@@ -1,0 +1,10 @@
+func000000000000000c:                   # @func000000000000000c
+	fle.s	a0, fa2, fa1
+	bnez	a0, .LBB0_2
+	fmv.s	fa1, fa2
+.LBB0_2:                                # %entry
+	fdiv.s	fa5, fa0, fa1
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
+	fsub.s	fa0, fa4, fa5
+	ret

@@ -1,0 +1,21 @@
+func0000000000000001:                   # @func0000000000000001
+	srliw	a1, a0, 11
+	slli	a1, a1, 11
+	li	a2, 27
+	slli	a2, a2, 11
+	bne	a1, a2, .LBB0_2
+	lui	a0, 16
+	addiw	a0, a0, -3
+	ret
+.LBB0_2:
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sext.w	a0, a0
+	slli	a1, a0, 48
+	srli	a1, a1, 48
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret

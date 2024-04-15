@@ -1,0 +1,58 @@
+
+; 1 occurrences:
+; postgres/optimized/nodeHash.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = add i64 %3, 96
+  %5 = mul i64 %4, %1
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; arrow/optimized/coo_converter.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = add nuw nsw i64 %3, 1
+  %5 = mul nsw i64 %4, %1
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 8 occurrences:
+; openblas/optimized/dtrmv_thread_NLN.c.ll
+; openblas/optimized/dtrmv_thread_NLU.c.ll
+; openblas/optimized/dtrmv_thread_NUN.c.ll
+; openblas/optimized/dtrmv_thread_NUU.c.ll
+; openblas/optimized/dtrmv_thread_TLN.c.ll
+; openblas/optimized/dtrmv_thread_TLU.c.ll
+; openblas/optimized/dtrmv_thread_TUN.c.ll
+; openblas/optimized/dtrmv_thread_TUU.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 9223372036854775804
+  %4 = add nuw nsw i64 %3, 16
+  %5 = mul nsw i64 %1, %4
+  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dtrsm_kernel_LN.c.ll
+; openblas/optimized/strsm_kernel_LN.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = add nsw i64 %3, -16
+  %5 = mul nsw i64 %4, %1
+  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  ret ptr %6
+}
+
+attributes #0 = { nounwind }

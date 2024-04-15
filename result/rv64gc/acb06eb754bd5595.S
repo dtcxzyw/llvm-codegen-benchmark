@@ -1,0 +1,26 @@
+func0000000000000003:                   # @func0000000000000003
+	andi	a2, a0, 1
+	li	a0, 53
+	bnez	a2, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	li	a1, 4
+	subw	a0, a1, a0
+	ret
+func0000000000000007:                   # @func0000000000000007
+	andi	a2, a0, 1
+	li	a0, -1074
+	bnez	a2, .LBB1_2
+	mv	a0, a1
+.LBB1_2:                                # %entry
+	li	a1, 17
+	subw	a0, a1, a0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	andi	a0, a0, 1
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	negw	a0, a0
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret

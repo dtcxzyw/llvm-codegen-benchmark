@@ -1,0 +1,19 @@
+
+; 5 occurrences:
+; ceres/optimized/cuda_block_structure.cc.ll
+; tev/optimized/Ipc.cpp.ll
+; yosys/optimized/opt_muxtree.ll
+; yosys/optimized/pmux2shiftx.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = sdiv exact i64 %2, 48
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = icmp ugt i64 %5, 2305843009213693951
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

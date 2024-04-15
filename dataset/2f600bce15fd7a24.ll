@@ -1,0 +1,188 @@
+
+; 5 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; lief/optimized/ssl_tls.c.ll
+; openssl/optimized/libcrypto-lib-wrap128.ll
+; openssl/optimized/libcrypto-shlib-wrap128.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %0, %3
+  %5 = add nsw i64 %1, -8
+  %6 = icmp ugt i64 %4, %5
+  ret i1 %6
+}
+
+; 9 occurrences:
+; assimp/optimized/zip.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/miniz.c.ll
+; openssl/optimized/libssl-lib-tls_common.ll
+; openssl/optimized/libssl-shlib-tls_common.ll
+; qemu/optimized/crypto_der.c.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %0, %3
+  %5 = add i64 %1, -2
+  %6 = icmp ugt i64 %4, %5
+  ret i1 %6
+}
+
+; 10 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; lief/optimized/ssl_tls12_client.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openssl/optimized/libcrypto-lib-ct_oct.ll
+; openssl/optimized/libcrypto-shlib-ct_oct.ll
+; openssl/optimized/libssl-lib-ssl_rsa.ll
+; openssl/optimized/libssl-shlib-ssl_rsa.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000031(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %0, %3
+  %5 = add nsw i64 %1, -8
+  %6 = icmp eq i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; flac/optimized/metadata_iterators.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add i32 %1, 4
+  %6 = icmp ult i32 %4, %5
+  ret i1 %6
+}
+
+; 4 occurrences:
+; lief/optimized/ssl_msg.c.ll
+; linux/optimized/alps.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nuw nsw i32 %1, 1
+  %6 = icmp eq i32 %4, %5
+  ret i1 %6
+}
+
+; 5 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libquic/optimized/convert.c.ll
+; lief/optimized/ssl_msg.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add i32 %1, -1
+  %6 = icmp eq i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000003c(i128 %0, i128 %1, i64 %2) #0 {
+entry:
+  %3 = zext i64 %2 to i128
+  %4 = or disjoint i128 %0, %3
+  %5 = add nsw i128 %1, -1
+  %6 = icmp ne i128 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nsw i32 %1, -8
+  %6 = icmp ult i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nuw nsw i32 %1, 3
+  %6 = icmp ugt i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000003a(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nsw i32 %1, -4
+  %6 = icmp sgt i32 %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nuw nsw i32 %1, 4
+  %6 = icmp ult i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nuw i32 %1, 1
+  %6 = icmp ugt i32 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000079(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = add nuw nsw i32 %1, 6
+  %6 = icmp uge i32 %4, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

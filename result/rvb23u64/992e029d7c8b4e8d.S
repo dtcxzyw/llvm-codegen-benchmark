@@ -1,0 +1,24 @@
+func0000000000000000:                   # @func0000000000000000
+	sh2add	a0, a1, a0
+	addi	a0, a0, 2
+	zext.w	a0, a0
+	ret
+func0000000000000003:                   # @func0000000000000003
+	sh3add	a0, a1, a0
+	addiw	a0, a0, 64
+	ret
+func0000000000000023:                   # @func0000000000000023
+	sh1add	a0, a1, a0
+	li	a1, 1250
+	sh3add	a0, a1, a0
+	sext.w	a0, a0
+	ret
+func000000000000007a:                   # @func000000000000007a
+	sh1add	a0, a1, a0
+	addi	a0, a0, -1
+	zext.w	a0, a0
+	ret
+func000000000000002b:                   # @func000000000000002b
+	sh1add	a0, a1, a0
+	addiw	a0, a0, -2
+	ret

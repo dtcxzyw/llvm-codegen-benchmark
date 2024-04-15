@@ -1,0 +1,15 @@
+func0000000000000000:                   # @func0000000000000000
+	srli	a2, a2, 32
+	lui	a1, 1046192
+	addiw	a1, a1, -761
+	slli	a1, a1, 10
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func00000000000000c0:                   # @func00000000000000c0
+	srli	a2, a2, 7
+	li	a1, -1000
+	zext.w	a1, a1
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret

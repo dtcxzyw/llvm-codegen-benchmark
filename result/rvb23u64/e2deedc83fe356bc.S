@@ -1,0 +1,34 @@
+func0000000000000032:                   # @func0000000000000032
+	sext.w	a2, a2
+	mul	a0, a0, a2
+	bset	a1, zero, a1
+	and	a0, a0, a1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sext.w	a2, a2
+	mul	a0, a0, a2
+	li	a2, -1
+	srli	a2, a2, 32
+	sll	a1, a2, a1
+	and	a0, a0, a1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	bset	a2, zero, a2
+	zext.w	a1, a1
+	mul	a0, a0, a1
+	and	a0, a0, a2
+	ret
+func0000000000000020:                   # @func0000000000000020
+	li	a3, -1
+	srli	a3, a3, 32
+	sll	a2, a3, a2
+	zext.w	a1, a1
+	mul	a0, a0, a1
+	and	a0, a0, a2
+	ret
+func000000000000003b:                   # @func000000000000003b
+	bset	a2, zero, a2
+	andi	a1, a1, 255
+	mul	a0, a0, a1
+	and	a0, a0, a2
+	ret

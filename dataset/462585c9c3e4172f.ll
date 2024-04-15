@@ -1,0 +1,38 @@
+
+; 9 occurrences:
+; abc/optimized/acec2Mult.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/sbdCut.c.ll
+; darktable/optimized/amaze.cc.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; openblas/optimized/dgbtrf.c.ll
+; openblas/optimized/dpbstf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 160
+  %3 = trunc i64 %2 to i32
+  %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %0)
+  ret i32 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 3 occurrences:
+; darktable/optimized/introspection_defringe.c.ll
+; openblas/optimized/dgbtrf.c.ll
+; openblas/optimized/dlanhs.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %3)
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -1,0 +1,7 @@
+func0000000000000013:                   # @func0000000000000013
+	andi	a0, a0, 1
+	beqz	a0, .LBB0_2
+	addi	a1, a2, -1
+.LBB0_2:                                # %entry
+	addiw	a0, a1, 1
+	ret

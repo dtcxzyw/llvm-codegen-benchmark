@@ -1,0 +1,28 @@
+func00000000000000cc:                   # @func00000000000000cc
+	andi	a2, a2, 255
+	add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh1add	a0, a0, a0
+	addw	a0, a0, a1
+	ret
+func00000000000001dd:                   # @func00000000000001dd
+	andi	a2, a2, 255
+	add	a1, a1, a2
+	li	a2, 60
+	mul	a1, a1, a2
+	lui	a2, 21
+	addiw	a2, a2, 384
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func0000000000000055:                   # @func0000000000000055
+	zext.h	a2, a2
+	add	a1, a1, a2
+	lui	a2, 21
+	addiw	a2, a2, 384
+	mul	a1, a1, a2
+	lui	a2, 1
+	addiw	a2, a2, -496
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret

@@ -1,0 +1,24 @@
+func0000000000000000:                   # @func0000000000000000
+	srliw	a1, a1, 2
+	mul	a0, a0, a1
+	zext.w	a0, a0
+	ret
+func0000000000000007:                   # @func0000000000000007
+	slli	a1, a1, 56
+	srli	a1, a1, 59
+	mul	a0, a0, a1
+	andi	a0, a0, 255
+	ret
+func0000000000000008:                   # @func0000000000000008
+	srliw	a1, a1, 3
+	mul	a0, a0, a1
+	zext.w	a0, a0
+	ret
+func0000000000000003:                   # @func0000000000000003
+	srliw	a1, a1, 3
+	mulw	a0, a1, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	srliw	a1, a1, 3
+	mulw	a0, a0, a1
+	ret

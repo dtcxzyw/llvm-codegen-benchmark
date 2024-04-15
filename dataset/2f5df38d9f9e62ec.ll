@@ -1,0 +1,22 @@
+
+%struct.Nf_Mat_t_.1770555 = type { i32, %struct.Nf_Cfg_t_.1770556, i32, float }
+%struct.Nf_Cfg_t_.1770556 = type { i32 }
+
+; 5 occurrences:
+; abc/optimized/giaNf.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %1, %2
+  %4 = and i32 %3, 1
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr inbounds [2 x [2 x %struct.Nf_Mat_t_.1770555]], ptr %0, i64 0, i64 %5
+  %7 = getelementptr inbounds i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

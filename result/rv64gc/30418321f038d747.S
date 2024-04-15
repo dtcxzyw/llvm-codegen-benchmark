@@ -1,0 +1,38 @@
+func000000000000000a:                   # @func000000000000000a
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	slli	a1, a1, 32
+	or	a1, a1, a2
+	srl	a0, a1, a0
+	ret
+func000000000000000e:                   # @func000000000000000e
+	andi	a2, a2, 255
+	slli	a1, a1, 8
+	or	a1, a1, a2
+	srlw	a0, a1, a0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	andi	a2, a2, 255
+	slli	a1, a1, 8
+	or	a1, a1, a2
+	srl	a0, a1, a0
+	ret
+func0000000000000012:                   # @func0000000000000012
+	andi	a2, a2, 255
+	slli	a1, a1, 6
+	or	a1, a1, a2
+	srlw	a0, a1, a0
+	ret
+func0000000000000010:                   # @func0000000000000010
+	sext.w	a2, a2
+	slli	a1, a1, 6
+	or	a1, a1, a2
+	srl	a0, a1, a0
+	ret
+func000000000000000c:                   # @func000000000000000c
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	slli	a1, a1, 30
+	or	a1, a1, a2
+	srl	a0, a1, a0
+	ret

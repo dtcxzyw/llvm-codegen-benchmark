@@ -1,0 +1,7 @@
+func0000000000000007:                   # @func0000000000000007
+	bexti	a1, a1, 20
+	li	a2, -25
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 1121
+	ret

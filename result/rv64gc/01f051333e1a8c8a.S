@@ -1,0 +1,16 @@
+func0000000000000003:                   # @func0000000000000003
+	sext.w	a0, a0
+	sext.w	a1, a1
+	bltu	a1, a0, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	lui	a1, 2
+	addiw	a1, a1, 1808
+	bltu	a1, a0, .LBB0_4
+	mv	a0, a1
+.LBB0_4:                                # %entry
+	slli	a0, a0, 32
+	li	a1, 3
+	slli	a1, a1, 34
+	mulhu	a0, a0, a1
+	ret

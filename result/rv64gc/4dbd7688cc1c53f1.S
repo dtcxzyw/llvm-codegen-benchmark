@@ -1,0 +1,23 @@
+func0000000000000180:                   # @func0000000000000180
+	slti	a2, a2, 0
+	addi	a2, a2, -1
+	ori	a2, a2, 1
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret
+func0000000000000040:                   # @func0000000000000040
+	sext.w	a3, a2
+	li	a4, 1
+	li	a2, 98
+	beq	a3, a4, .LBB1_2
+	li	a2, 88
+.LBB1_2:                                # %entry
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret
+func0000000000000280:                   # @func0000000000000280
+	sraiw	a2, a2, 31
+	ori	a2, a2, 1
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret

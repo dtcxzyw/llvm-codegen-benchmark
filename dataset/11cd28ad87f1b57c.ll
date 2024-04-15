@@ -1,0 +1,54 @@
+
+; 1 occurrences:
+; php/optimized/ir_emit.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 33
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  %6 = sext i32 %1 to i64
+  %7 = getelementptr inbounds i32, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/vwr.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 20
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = sext i32 %1 to i64
+  %7 = getelementptr i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 123
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %6 = sext i32 %1 to i64
+  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; icu/optimized/bytestriebuilder.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %6 = sext i32 %1 to i64
+  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

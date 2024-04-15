@@ -1,0 +1,9 @@
+func0000000000000009:                   # @func0000000000000009
+	bgtz	a2, .LBB0_2
+	li	a2, 1
+.LBB0_2:                                # %entry
+	add	a0, a0, a2
+	addi	a1, a1, 8
+	div	a0, a0, a1
+	slli	a0, a0, 3
+	ret

@@ -1,0 +1,27 @@
+
+; 2 occurrences:
+; icu/optimized/decNumber.ll
+; jq/optimized/decNumber.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000016(i8 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = xor i32 %1, -1
+  %4 = icmp slt i8 %0, 0
+  %5 = select i1 %4, i32 %3, i32 %2
+  ret i32 %5
+}
+
+; 1 occurrences:
+; flac/optimized/util.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 0, %1
+  %3 = xor i64 %1, -1
+  %4 = icmp slt i64 %0, 0
+  %5 = select i1 %4, i64 %3, i64 %2
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

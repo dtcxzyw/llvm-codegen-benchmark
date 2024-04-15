@@ -1,0 +1,30 @@
+func0000000000000044:                   # @func0000000000000044
+	addiw	a1, a1, -4
+	sltiu	a1, a1, 13
+	sext.w	a0, a0
+	sltiu	a0, a0, 13
+	and	a0, a0, a1
+	ret
+func0000000000000444:                   # @func0000000000000444
+	addiw	a1, a1, -5
+	sltiu	a1, a1, 2
+	sext.w	a0, a0
+	sltiu	a0, a0, 64
+	and	a0, a0, a1
+	ret
+func0000000000000448:                   # @func0000000000000448
+	addiw	a1, a1, -5
+	sltiu	a1, a1, 2
+	srliw	a0, a0, 6
+	sltiu	a0, a0, 1001
+	not	a0, a0
+	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
+	addi	a1, a1, 1
+	seqz	a1, a1
+	addiw	a0, a0, -4
+	sltiu	a0, a0, -2
+	and	a0, a0, a1
+	ret

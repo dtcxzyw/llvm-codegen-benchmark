@@ -1,0 +1,16 @@
+func0000000000000044:                   # @func0000000000000044
+	srliw	a3, a1, 16
+	bnez	a3, .LBB0_3
+	sext.w	a1, a1
+	li	a2, 256
+	bltu	a1, a2, .LBB0_4
+.LBB0_2:                                # %entry
+	ret
+.LBB0_3:                                # %entry
+	sext.w	a1, a2
+	li	a2, 256
+	bgeu	a1, a2, .LBB0_2
+.LBB0_4:
+	snez	a0, a3
+	slli	a0, a0, 4
+	ret

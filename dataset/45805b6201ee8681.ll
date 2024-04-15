@@ -1,0 +1,45 @@
+
+; 3 occurrences:
+; linux/optimized/indirect.ll
+; qemu/optimized/crypto_der.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  %4 = lshr i64 %0, %3
+  %5 = trunc i64 %4 to i8
+  ret i8 %5
+}
+
+; 6 occurrences:
+; abc/optimized/wlcNdr.c.ll
+; abc/optimized/wlnWlc.c.ll
+; cpython/optimized/unicodeobject.ll
+; linux/optimized/generic-radix-tree.ll
+; php/optimized/phpdbg_btree.ll
+; wireshark/optimized/text_import.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = and i64 %2, 4294967295
+  %4 = lshr i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/p256-64.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 4
+  %3 = and i32 %2, 7
+  %4 = lshr i32 %0, %3
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
+}
+
+attributes #0 = { nounwind }

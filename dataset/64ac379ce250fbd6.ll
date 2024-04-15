@@ -1,0 +1,15 @@
+
+; 2 occurrences:
+; hermes/optimized/raw_ostream.cpp.ll
+; linux/optimized/intel_tv.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 %3, %1
+  %5 = sub i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

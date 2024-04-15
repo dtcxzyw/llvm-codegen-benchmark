@@ -1,0 +1,13 @@
+func0000000000000003:                   # @func0000000000000003
+	slli	a1, a1, 60
+	srli	a1, a1, 58
+	slli	a0, a0, 56
+	srli	a0, a0, 62
+	or	a0, a0, a1
+	ret
+func000000000000001b:                   # @func000000000000001b
+	slli	a1, a1, 62
+	srli	a1, a1, 58
+	srliw	a0, a0, 4
+	or	a0, a0, a1
+	ret

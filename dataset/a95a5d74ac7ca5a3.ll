@@ -1,0 +1,33 @@
+
+; 3 occurrences:
+; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
+; ripgrep-rs/optimized/1fbennvriruc2bmt.ll
+; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %0, i64 %1, i64 %3
+  %5 = icmp sgt i64 %4, -1
+  %6 = sext i1 %5 to i64
+  ret i64 %6
+}
+
+; 6 occurrences:
+; openblas/optimized/dlauu2.c.ll
+; openblas/optimized/dlauum.c.ll
+; openblas/optimized/dpotf2.c.ll
+; openblas/optimized/dpotrf.c.ll
+; openblas/optimized/dtrti2.c.ll
+; openblas/optimized/dtrtri.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i32
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp ne i32 %4, 85
+  %6 = sext i1 %5 to i32
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,142 @@
+func0000000000000008:                   # @func0000000000000008
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addi	a0, a0, 4
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func0000000000000000:                   # @func0000000000000000
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addi	a0, a0, -2
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func000000000000000f:                   # @func000000000000000f
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addiw	a0, a0, 1
+	ret
+func000000000000000c:                   # @func000000000000000c
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addi	a0, a0, 1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func000000000000000b:                   # @func000000000000000b
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addiw	a0, a0, -1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	slli	a1, a0, 8
+	slli	a0, a0, 48
+	srli	a0, a0, 56
+	or	a0, a0, a1
+	addi	a0, a0, 1
+	lui	a1, 16
+	addiw	a1, a1, -1
+	and	a0, a0, a1
+	ret
+func0000000000000007:                   # @func0000000000000007
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addiw	a0, a0, 4
+	ret
+func0000000000000004:                   # @func0000000000000004
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addi	a0, a0, 12
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+func0000000000000003:                   # @func0000000000000003
+	srli	a1, a0, 8
+	lui	a2, 16
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	srliw	a3, a0, 24
+	or	a1, a1, a3
+	and	a2, a2, a0
+	slli	a2, a2, 8
+	slli	a0, a0, 24
+	or	a0, a0, a2
+	or	a0, a0, a1
+	addiw	a0, a0, -3
+	ret
+func0000000000000009:                   # @func0000000000000009
+	slli	a1, a0, 8
+	slli	a0, a0, 48
+	srli	a0, a0, 56
+	or	a0, a0, a1
+	li	a1, 9
+	slli	a1, a1, 10
+	add	a0, a0, a1
+	lui	a1, 16
+	addiw	a1, a1, -1
+	and	a0, a0, a1
+	ret

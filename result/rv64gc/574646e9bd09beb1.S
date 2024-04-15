@@ -1,0 +1,42 @@
+func0000000000000078:                   # @func0000000000000078
+	li	a3, 100
+	mul	a2, a2, a3
+	xor	a1, a1, a2
+	snez	a1, a1
+	or	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	slli	a3, a2, 1
+	slli	a2, a2, 31
+	sub	a2, a2, a3
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000010:                   # @func0000000000000010
+	sext.w	a1, a1
+	li	a3, 11
+	mulw	a2, a2, a3
+	sltu	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	slli	a3, a2, 1
+	slli	a2, a2, 31
+	sub	a2, a2, a3
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000012:                   # @func0000000000000012
+	li	a3, 10
+	mul	a2, a2, a3
+	sltu	a1, a1, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+func0000000000000068:                   # @func0000000000000068
+	slli	a3, a2, 1
+	slli	a2, a2, 31
+	sub	a2, a2, a3
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret

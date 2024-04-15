@@ -1,0 +1,12 @@
+func0000000000000040:                   # @func0000000000000040
+	rev8	a2, a2
+	srli	a2, a2, 32
+	add.uw	a0, a1, a0
+	add	a0, a0, a2
+	ret
+func0000000000000041:                   # @func0000000000000041
+	rev8	a2, a2
+	srli	a2, a2, 32
+	add.uw	a0, a1, a0
+	add	a0, a0, a2
+	ret

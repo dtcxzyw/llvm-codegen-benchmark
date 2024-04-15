@@ -1,0 +1,31 @@
+
+; 19 occurrences:
+; linux/optimized/hub.ll
+; openmpi/optimized/comm_ishrink.ll
+; openmpi/optimized/pcomm_ishrink.ll
+; php/optimized/ps_title.ll
+; ruby/optimized/iseq.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(ptr %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 0, i64 4
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %3, i64 4, i64 %2
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,75 @@
+
+; 50 occurrences:
+; cpython/optimized/_ssl.ll
+; hermes/optimized/HiddenClass.cpp.ll
+; icu/optimized/collationcompare.ll
+; icu/optimized/collationkeys.ll
+; linux/optimized/intel_cdclk.ll
+; linux/optimized/nf_nat_core.ll
+; node/optimized/libnode.crypto_context.ll
+; node/optimized/libnode.node.ll
+; openssl/optimized/cipherlist_test-bin-cipherlist_test.ll
+; openssl/optimized/d2i_test-bin-d2i_test.ll
+; openssl/optimized/dtlstest-bin-dtlstest.ll
+; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll
+; openssl/optimized/errtest-bin-errtest.ll
+; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
+; openssl/optimized/evp_extra_test2-bin-evp_extra_test2.ll
+; openssl/optimized/evp_pkey_dhkem_test-bin-evp_pkey_dhkem_test.ll
+; openssl/optimized/evp_test-bin-evp_test.ll
+; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
+; openssl/optimized/libcrypto-lib-by_file.ll
+; openssl/optimized/libcrypto-lib-cmp_util.ll
+; openssl/optimized/libcrypto-lib-cmp_vfy.ll
+; openssl/optimized/libcrypto-lib-conf_def.ll
+; openssl/optimized/libcrypto-lib-conf_mod.ll
+; openssl/optimized/libcrypto-lib-err.ll
+; openssl/optimized/libcrypto-lib-http_client.ll
+; openssl/optimized/libcrypto-lib-p12_kiss.ll
+; openssl/optimized/libcrypto-lib-pem_info.ll
+; openssl/optimized/libcrypto-lib-pem_lib.ll
+; openssl/optimized/libcrypto-lib-pem_pkey.ll
+; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
+; openssl/optimized/libcrypto-shlib-by_file.ll
+; openssl/optimized/libcrypto-shlib-cmp_util.ll
+; openssl/optimized/libcrypto-shlib-cmp_vfy.ll
+; openssl/optimized/libcrypto-shlib-conf_def.ll
+; openssl/optimized/libcrypto-shlib-conf_mod.ll
+; openssl/optimized/libcrypto-shlib-err.ll
+; openssl/optimized/libcrypto-shlib-http_client.ll
+; openssl/optimized/libcrypto-shlib-p12_kiss.ll
+; openssl/optimized/libcrypto-shlib-pem_info.ll
+; openssl/optimized/libcrypto-shlib-pem_lib.ll
+; openssl/optimized/libcrypto-shlib-pem_pkey.ll
+; openssl/optimized/openssl-bin-req.ll
+; openssl/optimized/ossl_store_test-bin-ossl_store_test.ll
+; openssl/optimized/provider_test-bin-provider_test.ll
+; openssl/optimized/quicfaultstest-bin-quicfaultstest.ll
+; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
+; openssl/optimized/sslcorrupttest-bin-sslcorrupttest.ll
+; openssl/optimized/x509aux-bin-x509aux.ll
+; ruby/optimized/ossl_x509cert.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i32 8388607, i32 2147483647
+  %4 = trunc i64 %0 to i32
+  %5 = and i32 %3, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ne i64 %1, 0
+  %3 = select i1 %2, i32 2147483647, i32 8388607
+  %4 = trunc i64 %0 to i32
+  %5 = and i32 %3, %4
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

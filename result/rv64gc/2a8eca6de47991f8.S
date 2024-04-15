@@ -1,0 +1,38 @@
+func0000000000000424:                   # @func0000000000000424
+	lui	a0, 260096
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa1
+	beqz	a0, .LBB0_3
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa1, fa4
+	beqz	a0, .LBB0_4
+.LBB0_2:                                # %entry
+	flt.s	a0, fa0, fa4
+	ret
+.LBB0_3:                                # %entry
+	fmv.s	fa5, fa1
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa1, fa4
+	bnez	a0, .LBB0_2
+.LBB0_4:                                # %entry
+	flt.s	a0, fa0, fa5
+	ret
+func0000000000000422:                   # @func0000000000000422
+	lui	a0, 260096
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa1
+	beqz	a0, .LBB1_3
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa1, fa4
+	beqz	a0, .LBB1_4
+.LBB1_2:                                # %entry
+	flt.s	a0, fa4, fa0
+	ret
+.LBB1_3:                                # %entry
+	fmv.s	fa5, fa1
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa1, fa4
+	bnez	a0, .LBB1_2
+.LBB1_4:                                # %entry
+	flt.s	a0, fa5, fa0
+	ret

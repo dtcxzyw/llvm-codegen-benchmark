@@ -1,0 +1,7 @@
+func0000000000000021:                   # @func0000000000000021
+	andi	a1, a1, 512
+	bnez	a1, .LBB0_2
+	sext.w	a0, a0
+	seqz	a0, a0
+.LBB0_2:                                # %entry
+	ret

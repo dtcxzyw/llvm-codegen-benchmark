@@ -1,0 +1,55 @@
+
+; 7 occurrences:
+; cpython/optimized/longobject.ll
+; darktable/optimized/FujiDecompressor.cpp.ll
+; hermes/optimized/APInt.cpp.ll
+; libquic/optimized/exponentiation.c.ll
+; openssl/optimized/libcrypto-lib-bn_exp.ll
+; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 5, i32 %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 -1074, i32 %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw i64 %0, %4
+  ret i64 %5
+}
+
+; 3 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 -1074, i32 %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 32, i32 %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nsw i64 %0, %4
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

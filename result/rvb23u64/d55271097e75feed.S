@@ -1,0 +1,23 @@
+.LCPI0_0:
+	.quad	1403534266930087369             # 0x137a5afac274c5c9
+func0000000000000024:                   # @func0000000000000024
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
+	mulh	a1, a1, a2
+	srli	a2, a1, 63
+	srai	a1, a1, 11
+	add	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func0000000000000025:                   # @func0000000000000025
+	lui	a2, 19
+	addi	a2, a2, 1089
+	mul	a1, a1, a2
+	sraiw	a2, a1, 31
+	srliw	a2, a2, 14
+	add	a1, a1, a2
+	sraiw	a1, a1, 18
+	addw	a0, a0, a1
+	ret

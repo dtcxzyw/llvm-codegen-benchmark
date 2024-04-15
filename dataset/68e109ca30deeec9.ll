@@ -1,0 +1,214 @@
+
+; 182 occurrences:
+; abseil-cpp/optimized/civil_time.cc.ll
+; abseil-cpp/optimized/civil_time_test.cc.ll
+; abseil-cpp/optimized/kernel_timeout.cc.ll
+; abseil-cpp/optimized/time.cc.ll
+; abseil-cpp/optimized/time_test.cc.ll
+; abseil-cpp/optimized/time_zone_format.cc.ll
+; abseil-cpp/optimized/time_zone_info.cc.ll
+; abseil-cpp/optimized/time_zone_libc.cc.ll
+; arrow/optimized/key_map_avx2.cc.ll
+; arrow/optimized/light_array.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/writer.cc.ll
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; chibicc/optimized/codegen.ll
+; cmake/optimized/fs.c.ll
+; cpython/optimized/timemodule.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/timeline.c.ll
+; duckdb/optimized/ub_duckdb_func_date.cpp.ll
+; glog/optimized/logging.cc.ll
+; icu/optimized/collationkeys.ll
+; icu/optimized/utext.ll
+; libuv/optimized/fs.c.ll
+; linux/optimized/drm_modes.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; minetest/optimized/camera.cpp.ll
+; node/optimized/fs.ll
+; oiio/optimized/Writer.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nt.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nt.c.ll
+; openblas/optimized/dlaqr0.c.ll
+; openblas/optimized/dlaqr4.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nt.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nt.c.ll
+; openmpi/optimized/mpl_timer_clock_gettime.ll
+; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
+; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
+; postgres/optimized/findtimezone.ll
+; postgres/optimized/localtime.ll
+; postgres/optimized/pgbench.ll
+; postgres/optimized/slru.ll
+; protobuf/optimized/dynamic_message.cc.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; qemu/optimized/ui_vnc-enc-tight.c.ll
+; qemu/optimized/ui_vnc.c.ll
+; qemu/optimized/util_cutils.c.ll
+; quickjs/optimized/quickjs.ll
+; rocksdb/optimized/offpeak_time_info.cc.ll
+; sqlite/optimized/sqlite3.ll
+; velox/optimized/ArrayAndMapMatch.cpp.ll
+; velox/optimized/ArrayConstructor.cpp.ll
+; velox/optimized/ArrayContains.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; velox/optimized/ArrayPosition.cpp.ll
+; velox/optimized/ArrayShuffle.cpp.ll
+; velox/optimized/ArraySort.cpp.ll
+; velox/optimized/ArraySum.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/BooleanMix.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/ByteStream.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/CheckDuplicateKeys.cpp.ll
+; velox/optimized/CoalesceExpr.cpp.ll
+; velox/optimized/Comparisons.cpp.ll
+; velox/optimized/ComplexVector.cpp.ll
+; velox/optimized/ConjunctExpr.cpp.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/DecimalVectorFunctions.cpp.ll
+; velox/optimized/DecodedVector.cpp.ll
+; velox/optimized/ElementAt.cpp.ll
+; velox/optimized/EvalCtx.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/FieldReference.cpp.ll
+; velox/optimized/FilterFunctions.cpp.ll
+; velox/optimized/FindFirst.cpp.ll
+; velox/optimized/FirstLastValue.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUnixTime.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/GreatestLeast.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/IsNull.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LambdaExpr.cpp.ll
+; velox/optimized/LambdaFunctionUtil.cpp.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/Map.cpp.ll
+; velox/optimized/MapConcat.cpp.ll
+; velox/optimized/MapEntries.cpp.ll
+; velox/optimized/MapFromEntries.cpp.ll
+; velox/optimized/MapKeysAndValues.cpp.ll
+; velox/optimized/MapZipWith.cpp.ll
+; velox/optimized/Not.cpp.ll
+; velox/optimized/NthValue.cpp.ll
+; velox/optimized/Ntile.cpp.ll
+; velox/optimized/PeeledEncoding.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/Reduce.cpp.ll
+; velox/optimized/Repeat.cpp.ll
+; velox/optimized/Reverse.cpp.ll
+; velox/optimized/RowFunction.cpp.ll
+; velox/optimized/RowsTranslationUtil.cpp.ll
+; velox/optimized/SelectivityVector.cpp.ll
+; velox/optimized/Sequence.cpp.ll
+; velox/optimized/SequenceVector.cpp.ll
+; velox/optimized/Slice.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/StringFunctions.cpp.ll
+; velox/optimized/Subscript.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/SwitchExpr.cpp.ll
+; velox/optimized/TimestampWithTimeZoneType.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/Transform.cpp.ll
+; velox/optimized/TransformKeys.cpp.ll
+; velox/optimized/TransformValues.cpp.ll
+; velox/optimized/TryExpr.cpp.ll
+; velox/optimized/UnsafeRowFast.cpp.ll
+; velox/optimized/UnsafeRowSerializer.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorPool.cpp.ll
+; velox/optimized/VectorPrinter.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
+; velox/optimized/WidthBucketArray.cpp.ll
+; velox/optimized/Zip.cpp.ll
+; velox/optimized/ZipWith.cpp.ll
+; wireshark/optimized/netmon.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = srem i32 %0, 60
+  %2 = sub nsw i32 %0, %1
+  ret i32 %2
+}
+
+; 12 occurrences:
+; duckdb/optimized/ub_duckdb_func_date.cpp.ll
+; linux/optimized/ebitmap.ll
+; linux/optimized/intel_dp.ll
+; linux/optimized/intel_fdi.ll
+; linux/optimized/xhci-ring.ll
+; postgres/optimized/async.ll
+; postgres/optimized/findtimezone.ll
+; postgres/optimized/slru.ll
+; qemu/optimized/ui_console-vc.c.ll
+; quickjs/optimized/quickjs.ll
+; wireshark/optimized/packet-saphdb.c.ll
+; yosys/optimized/test_autotb.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = srem i32 %0, 8
+  %2 = sub i32 %0, %1
+  ret i32 %2
+}
+
+attributes #0 = { nounwind }

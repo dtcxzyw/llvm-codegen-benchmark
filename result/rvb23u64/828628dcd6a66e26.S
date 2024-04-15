@@ -1,0 +1,41 @@
+func00000000000000cc:                   # @func00000000000000cc
+	sext.w	a0, a0
+	addi	a2, a0, -32
+	snez	a2, a2
+	and	a1, a1, a2
+	addi	a0, a0, -64
+	snez	a0, a0
+	and	a0, a0, a1
+	ret
+func00000000000000c6:                   # @func00000000000000c6
+	sext.w	a0, a0
+	sltiu	a2, a0, -1
+	and	a1, a1, a2
+	slti	a0, a0, 21
+	and	a0, a0, a1
+	ret
+func000000000000006c:                   # @func000000000000006c
+	andi	a2, a0, 255
+	sext.b	a0, a0
+	slti	a0, a0, 33
+	and	a0, a0, a1
+	addi	a2, a2, -10
+	snez	a1, a2
+	and	a0, a0, a1
+	ret
+func00000000000000ac:                   # @func00000000000000ac
+	slti	a2, a0, 0
+	xori	a2, a2, 1
+	snez	a0, a0
+	and	a0, a0, a1
+	and	a0, a0, a2
+	ret
+func00000000000000ca:                   # @func00000000000000ca
+	sext.b	a2, a0
+	andi	a0, a0, 255
+	addi	a0, a0, -95
+	snez	a0, a0
+	and	a0, a0, a1
+	slti	a1, a2, 0
+	andn	a0, a0, a1
+	ret

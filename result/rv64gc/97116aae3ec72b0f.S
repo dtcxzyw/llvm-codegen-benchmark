@@ -1,0 +1,25 @@
+func0000000000000010:                   # @func0000000000000010
+	sub	a1, a1, a2
+	srli	a1, a1, 3
+	mul	a0, a1, a0
+	lui	a1, 233017
+	addi	a1, a1, -455
+	mulw	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sub	a1, a1, a2
+	srli	a1, a1, 3
+	mul	a0, a1, a0
+	lui	a1, 748983
+	addi	a1, a1, -585
+	mulw	a0, a0, a1
+	ret
+func0000000000000020:                   # @func0000000000000020
+	subw	a1, a1, a2
+	sraiw	a2, a1, 31
+	srliw	a2, a2, 29
+	add	a1, a1, a2
+	srliw	a1, a1, 3
+	neg	a1, a1
+	mul	a0, a0, a1
+	ret

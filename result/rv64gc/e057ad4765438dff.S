@@ -1,0 +1,11 @@
+func0000000000000008:                   # @func0000000000000008
+	andi	a3, a2, 1
+	li	a2, 56
+	bnez	a3, .LBB0_2
+	li	a2, 120
+.LBB0_2:                                # %entry
+	subw	a2, a2, a1
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	sub	a0, a2, a0
+	ret

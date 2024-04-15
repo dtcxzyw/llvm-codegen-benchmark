@@ -1,0 +1,52 @@
+func0000000000000007:                   # @func0000000000000007
+	lui	a2, 262161
+	slli	a2, a2, 20
+	slli	a3, a1, 32
+	mulhu	a2, a3, a2
+	srli	a2, a2, 32
+	subw	a3, a1, a2
+	srliw	a3, a3, 1
+	add	a2, a2, a3
+	srli	a2, a2, 13
+	slli	a3, a2, 14
+	add	a1, a1, a2
+	subw	a1, a1, a3
+	slli	a1, a1, 32
+	srli	a1, a1, 27
+	add	a0, a0, a1
+	addi	a0, a0, 8
+	ret
+func0000000000000005:                   # @func0000000000000005
+	slli	a2, a1, 32
+	lui	a3, 789516
+	addi	a3, a3, 193
+	slli	a3, a3, 32
+	mulhu	a2, a2, a3
+	srli	a2, a2, 42
+	li	a3, 1360
+	mul	a2, a2, a3
+	subw	a1, a1, a2
+	slli	a1, a1, 32
+	li	a2, 3
+	slli	a2, a2, 33
+	mulhu	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	ret
+func0000000000000004:                   # @func0000000000000004
+	slli	a2, a1, 32
+	lui	a3, 789516
+	addi	a3, a3, 193
+	slli	a3, a3, 32
+	mulhu	a2, a2, a3
+	srli	a2, a2, 42
+	li	a3, 1360
+	mul	a2, a2, a3
+	subw	a1, a1, a2
+	slli	a1, a1, 32
+	li	a2, 3
+	slli	a2, a2, 33
+	mulhu	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 4
+	ret

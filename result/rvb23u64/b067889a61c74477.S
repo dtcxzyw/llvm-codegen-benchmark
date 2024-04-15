@@ -1,0 +1,104 @@
+func00000000000000f5:                   # @func00000000000000f5
+	sh1add.uw	a0, a2, a0
+	sh1add	a0, a1, a0
+	ret
+func00000000000000ff:                   # @func00000000000000ff
+	andi	a2, a2, 255
+	slli	a2, a2, 8
+	slli	a1, a1, 16
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func00000000000001f0:                   # @func00000000000001f0
+	andi	a2, a2, 255
+	slli	a2, a2, 15
+	slli	a1, a1, 10
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func00000000000000ec:                   # @func00000000000000ec
+	slli.uw	a2, a2, 4
+	add	a0, a0, a2
+	slli	a1, a1, 32
+	add	a0, a0, a1
+	ret
+func00000000000000f0:                   # @func00000000000000f0
+	slli.uw	a2, a2, 4
+	add	a0, a0, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	ret
+func00000000000000fa:                   # @func00000000000000fa
+	andi	a2, a2, 255
+	slli	a2, a2, 4
+	add	a0, a0, a2
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
+	ret
+func00000000000001ff:                   # @func00000000000001ff
+	sext.w	a2, a2
+	sh2add	a0, a2, a0
+	sh3add	a0, a1, a0
+	ret
+func00000000000001d0:                   # @func00000000000001d0
+	sext.w	a2, a2
+	sh2add	a1, a2, a1
+	sh2add	a0, a1, a0
+	ret
+func00000000000000e0:                   # @func00000000000000e0
+	andi	a2, a2, 255
+	slli	a2, a2, 16
+	slli	a1, a1, 24
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func00000000000001b0:                   # @func00000000000001b0
+	slli	a2, a2, 63
+	add	a0, a0, a2
+	slli	a1, a1, 48
+	add	a0, a0, a1
+	ret
+func00000000000000c0:                   # @func00000000000000c0
+	zext.h	a2, a2
+	slli	a2, a2, 8
+	add	a1, a1, a2
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
+	ret
+func00000000000000cc:                   # @func00000000000000cc
+	andi	a2, a2, 255
+	slli	a2, a2, 8
+	slli	a0, a0, 8
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func00000000000000b0:                   # @func00000000000000b0
+	slli	a2, a2, 24
+	add	a0, a0, a2
+	slli	a1, a1, 16
+	addw	a0, a0, a1
+	ret
+func00000000000000d0:                   # @func00000000000000d0
+	sh1add.uw	a0, a2, a0
+	sh2add	a0, a1, a0
+	ret
+func00000000000001cc:                   # @func00000000000001cc
+	andi	a2, a2, 255
+	slli	a2, a2, 7
+	slli	a0, a0, 14
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func00000000000001c8:                   # @func00000000000001c8
+	andi	a2, a2, 255
+	slli	a2, a2, 21
+	slli	a0, a0, 28
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func00000000000001fb:                   # @func00000000000001fb
+	slli	a2, a2, 43
+	add	a0, a0, a2
+	slli	a1, a1, 42
+	add	a0, a0, a1
+	ret

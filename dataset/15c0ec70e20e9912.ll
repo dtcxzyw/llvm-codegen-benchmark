@@ -1,0 +1,73 @@
+
+; 7 occurrences:
+; cmake/optimized/cookie.c.ll
+; curl/optimized/libcurl_la-cookie.ll
+; hermes/optimized/IdentifierTable.cpp.ll
+; php/optimized/zend_execute_API.ll
+; postgres/optimized/print.ll
+; rocksdb/optimized/memtable.cc.ll
+; verilator/optimized/V3Slice.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(ptr %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 44 occurrences:
+; openvdb/optimized/Activate.cc.ll
+; openvdb/optimized/ChangeBackground.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/Prune.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; verilator/optimized/V3AstNodes.cpp.ll
+; verilator/optimized/V3Coverage.cpp.ll
+; verilator/optimized/V3EmitCSyms.cpp.ll
+; verilator/optimized/V3EmitXml.cpp.ll
+; verilator/optimized/V3Force.cpp.ll
+; verilator/optimized/V3Param.cpp.ll
+; verilator/optimized/V3ParseGrammar.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; verilator/optimized/V3WidthSel.cpp.ll
+; z3/optimized/arith_eq_adapter.cpp.ll
+; z3/optimized/seq_ne_solver.cpp.ll
+; z3/optimized/smt_context_pp.cpp.ll
+; z3/optimized/smt_kernel.cpp.ll
+; z3/optimized/smt_lookahead.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; z3/optimized/theory_bv.cpp.ll
+; z3/optimized/theory_diff_logic.cpp.ll
+; z3/optimized/theory_lra.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; z3/optimized/theory_recfun.cpp.ll
+; z3/optimized/theory_seq.cpp.ll
+; z3/optimized/theory_special_relations.cpp.ll
+; z3/optimized/theory_user_propagator.cpp.ll
+; z3/optimized/theory_utvpi.cpp.ll
+; z3/optimized/unit_subsumption_tactic.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(ptr %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

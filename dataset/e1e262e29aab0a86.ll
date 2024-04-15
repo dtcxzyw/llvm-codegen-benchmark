@@ -1,0 +1,44 @@
+
+; 2 occurrences:
+; folly/optimized/SimpleSimdStringUtils.cpp.ll
+; folly/optimized/SplitStringSimd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i16 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 15
+  %3 = shl nsw i64 -1, %2
+  %4 = trunc i64 %3 to i16
+  %5 = and i16 %0, %4
+  %6 = icmp eq i16 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; linux/optimized/coalesce.ll
+; qemu/optimized/hw_pci_msix.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i8 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = shl nuw nsw i32 1, %2
+  %4 = trunc i32 %3 to i8
+  %5 = and i8 %0, %4
+  %6 = icmp eq i8 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; linux/optimized/coalesce.ll
+; linux/optimized/hid-lg4ff.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = shl nuw i64 1, %2
+  %4 = trunc i64 %3 to i32
+  %5 = and i32 %0, %4
+  %6 = icmp eq i32 %5, 0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,36 @@
+
+; 11 occurrences:
+; abc/optimized/abcHieGia.c.ll
+; assimp/optimized/ACLoader.cpp.ll
+; assimp/optimized/ASELoader.cpp.ll
+; assimp/optimized/HL1MDLLoader.cpp.ll
+; assimp/optimized/ObjFileImporter.cpp.ll
+; assimp/optimized/RawLoader.cpp.ll
+; assimp/optimized/SkeletonMeshBuilder.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; re2/optimized/prefilter_tree.cc.ll
+; yosys/optimized/jsonparse.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = sdiv exact i64 %2, 56
+  %4 = and i64 %3, 2147483647
+  %5 = shl nuw nsw i64 %4, 2
+  ret i64 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = sdiv i32 %2, 4
+  %4 = and i32 %3, 65535
+  %5 = shl nuw nsw i32 %4, 2
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,56 @@
+
+; 3 occurrences:
+; rocksdb/optimized/readahead_raf.cc.ll
+; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
+; tokio-rs/optimized/26wlg4yx86ilo6a1.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 0, %2
+  %4 = and i64 %0, %3
+  %5 = add i64 %1, %4
+  %6 = icmp ugt i64 %5, %0
+  ret i1 %6
+}
+
+; 8 occurrences:
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = and i64 %0, %3
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 10 occurrences:
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 0, %2
+  %4 = and i64 %0, %3
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

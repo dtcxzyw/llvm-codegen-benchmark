@@ -1,0 +1,21 @@
+
+; 9 occurrences:
+; abc/optimized/cutMan.c.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
+; darktable/optimized/tethering.c.ll
+; graphviz/optimized/smart_ini_x.c.ll
+; llama.cpp/optimized/ggml.c.ll
+; raylib/optimized/raudio.c.ll
+; stb/optimized/stb_vorbis.c.ll
+; wireshark/optimized/stats_tree.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(double %0, i32 %1) #0 {
+entry:
+  %2 = sitofp i32 %1 to float
+  %3 = fptrunc double %0 to float
+  %4 = fdiv float %3, %2
+  ret float %4
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,45 @@
+
+; 19 occurrences:
+; assimp/optimized/zip.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; folly/optimized/Zlib.cpp.ll
+; hermes/optimized/Bytecode.cpp.ll
+; hermes/optimized/zip.c.ll
+; linux/optimized/vsprintf.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; proxygen/optimized/ParseURL.cpp.ll
+; rocksdb/optimized/agg_merge.cc.ll
+; rocksdb/optimized/blob_file_addition.cc.ll
+; rocksdb/optimized/blob_file_garbage.cc.ll
+; rocksdb/optimized/block_cache_tracer.cc.ll
+; rocksdb/optimized/cache_dump_load_impl.cc.ll
+; rocksdb/optimized/get_context.cc.ll
+; rocksdb/optimized/io_tracer.cc.ll
+; rocksdb/optimized/trace_replay.cc.ll
+; rocksdb/optimized/version_edit.cc.ll
+; rocksdb/optimized/wide_column_serialization.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = zext i32 %1 to i64
+  %6 = sub i64 %4, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; lz4/optimized/lz4.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = zext i32 %1 to i64
+  %6 = sub nsw i64 %4, %5
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

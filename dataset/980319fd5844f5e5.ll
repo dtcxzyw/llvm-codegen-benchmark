@@ -1,0 +1,22 @@
+
+; 4 occurrences:
+; abc/optimized/deflate.c.ll
+; cmake/optimized/deflate.c.ll
+; libquic/optimized/deflate.c.ll
+; zlib/optimized/deflate.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
+  %5 = sub i64 %1, %4
+  %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 258)
+  %7 = add nuw nsw i64 %6, %4
+  ret i64 %7
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

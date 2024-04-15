@@ -1,0 +1,89 @@
+
+; 24 occurrences:
+; abc/optimized/casDec.c.ll
+; abc/optimized/cecChoice.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaResub.c.ll
+; graphviz/optimized/actions.c.ll
+; graphviz/optimized/timing.c.ll
+; icu/optimized/calendar.ll
+; meshlab/optimized/AlignPairWidget.cpp.ll
+; meshlab/optimized/coordinateframe.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/edit_measure.cpp.ll
+; meshlab/optimized/edit_mutualcorrs.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/edit_sample.cpp.ll
+; meshlab/optimized/editpickpoints.cpp.ll
+; meshlab/optimized/ml_default_decorators.cpp.ll
+; minetest/optimized/map.cpp.ll
+; nori/optimized/tabwidget.cpp.ll
+; openblas/optimized/dgetrf_parallel.c.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/date_core.ll
+; wireshark/optimized/overlay_scroll_bar.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; wireshark/optimized/sparkline_delegate.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sub i32 %3, %0
+  %5 = sitofp i32 %4 to double
+  ret double %5
+}
+
+; 7 occurrences:
+; abc/optimized/cecCore.c.ll
+; abc/optimized/cecCorr.c.ll
+; abc/optimized/giaMan.c.ll
+; openblas/optimized/dlaran.c.ll
+; openblas/optimized/dlaruv.c.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/qbfsat.ll
+; Function Attrs: nounwind
+define double @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sub nsw i32 %3, %0
+  %5 = sitofp i32 %4 to double
+  ret double %5
+}
+
+; 11 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/aigMan.c.ll
+; abc/optimized/casDec.c.ll
+; abc/optimized/cswMan.c.ll
+; abc/optimized/giaMan.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; nori/optimized/popup.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sub nsw i32 %3, %0
+  %5 = sitofp i32 %4 to double
+  ret double %5
+}
+
+; 5 occurrences:
+; graphviz/optimized/sgd.c.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sub i32 %3, %0
+  %5 = sitofp i32 %4 to float
+  ret float %5
+}
+
+attributes #0 = { nounwind }

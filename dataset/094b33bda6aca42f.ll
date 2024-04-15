@@ -1,0 +1,67 @@
+
+; 20 occurrences:
+; cpython/optimized/unicodeobject.ll
+; git/optimized/reader.ll
+; grpc/optimized/alts_zero_copy_grpc_protector.cc.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; minetest/optimized/dungeongen.cpp.ll
+; minetest/optimized/mapgen_singlenode.cpp.ll
+; minetest/optimized/servermap.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_mpi.ll
+; openssl/optimized/libcrypto-shlib-bn_mpi.ll
+; openssl/optimized/libssl-lib-extensions_clnt.ll
+; openssl/optimized/libssl-lib-quic_wire_pkt.ll
+; openssl/optimized/libssl-lib-ssl_rsa.ll
+; openssl/optimized/libssl-lib-t1_trce.ll
+; openssl/optimized/libssl-shlib-extensions_clnt.ll
+; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
+; openssl/optimized/libssl-shlib-ssl_rsa.ll
+; openssl/optimized/libssl-shlib-t1_trce.ll
+; velox/optimized/Timestamp.cpp.ll
+; velox/optimized/tz.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %0, %1
+  %5 = or disjoint i64 %4, %3
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 11 occurrences:
+; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; icu/optimized/ustrtrns.ll
+; minetest/optimized/map.cpp.ll
+; minetest/optimized/mapgen_v6.cpp.ll
+; node/optimized/simdutf.ll
+; openexr/optimized/internal_dwa.c.ll
+; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_stream_map.ll
+; wireshark/optimized/packet-atm.c.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = or disjoint i64 %0, %1
+  %5 = or disjoint i64 %4, %3
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 1 occurrences:
+; icu/optimized/ustrtrns.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = or i32 %0, %1
+  %5 = or disjoint i32 %4, %3
+  %6 = trunc i32 %5 to i16
+  ret i16 %6
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,75 @@
+
+; 2 occurrences:
+; rocksdb/optimized/point_lock_manager.cc.ll
+; rocksdb/optimized/version_set.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = add nuw nsw i64 %0, 1
+  %7 = icmp slt i64 %6, %5
+  ret i1 %7
+}
+
+; 2 occurrences:
+; velox/optimized/MmapAllocator.cpp.ll
+; yosys/optimized/fmt.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = add nsw i64 %0, 1
+  %7 = icmp slt i64 %6, %5
+  ret i1 %7
+}
+
+; 3 occurrences:
+; git/optimized/range-diff.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = add nsw i64 %0, 1
+  %7 = icmp eq i64 %6, %5
+  ret i1 %7
+}
+
+; 4 occurrences:
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000451(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = add nsw i64 %0, 1
+  %7 = icmp eq i64 %6, %5
+  ret i1 %7
+}
+
+; 2 occurrences:
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = add nuw nsw i64 %0, 1
+  %7 = icmp eq i64 %6, %5
+  ret i1 %7
+}
+
+attributes #0 = { nounwind }

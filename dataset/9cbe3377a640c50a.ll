@@ -1,0 +1,34 @@
+
+; 3 occurrences:
+; folly/optimized/NestedCommandLineApp.cpp.ll
+; folly/optimized/ProgramOptions.cpp.ll
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i32 %0) #0 {
+entry:
+  %1 = sext i32 %0 to i64
+  %2 = shl nsw i64 %1, 3
+  %3 = add nsw i64 %2, -8
+  %4 = ashr exact i64 %3, 3
+  ret i64 %4
+}
+
+; 7 occurrences:
+; abc/optimized/cmdPlugin.c.ll
+; abseil-cpp/optimized/sequence_lock_test.cc.ll
+; linux/optimized/sock.ll
+; linux/optimized/tg3.ll
+; spike/optimized/f16_sqrt.ll
+; spike/optimized/sra32_u.ll
+; spike/optimized/srai32_u.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i8 %0) #0 {
+entry:
+  %1 = sext i8 %0 to i32
+  %2 = shl nsw i32 %1, 22
+  %3 = add nsw i32 %2, -201326592
+  %4 = ashr i32 %3, 24
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,30 @@
+
+; 4 occurrences:
+; openssl/optimized/libcrypto-lib-err_mark.ll
+; openssl/optimized/libcrypto-lib-err_save.ll
+; openssl/optimized/libcrypto-shlib-err_mark.ll
+; openssl/optimized/libcrypto-shlib-err_save.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = icmp sgt i32 %1, 0
+  %4 = select i1 %3, i32 %2, i32 15
+  %5 = icmp eq i32 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; ripgrep-rs/optimized/53g857orueoqngx4.ll
+; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -9223372036854775807
+  %3 = icmp slt i64 %1, -9223372036854775803
+  %4 = select i1 %3, i64 %2, i64 0
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

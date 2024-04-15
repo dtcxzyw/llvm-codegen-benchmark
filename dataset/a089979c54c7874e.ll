@@ -1,0 +1,233 @@
+
+; 118 occurrences:
+; bdwgc/optimized/gc.c.ll
+; cpython/optimized/obmalloc.ll
+; folly/optimized/CPUThreadPoolExecutor.cpp.ll
+; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
+; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
+; folly/optimized/ObserverManager.cpp.ll
+; folly/optimized/Request.cpp.ll
+; folly/optimized/StrandExecutor.cpp.ll
+; folly/optimized/ThreadedExecutor.cpp.ll
+; folly/optimized/TimedDrivableExecutor.cpp.ll
+; hermes/optimized/APFloat.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; image-rs/optimized/8143hfqbwzfmz2f.ll
+; jemalloc/optimized/background_thread.ll
+; jemalloc/optimized/background_thread.pic.ll
+; jemalloc/optimized/background_thread.sym.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; jemalloc/optimized/jemalloc_cpp.ll
+; jemalloc/optimized/jemalloc_cpp.pic.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
+; linux/optimized/audit_tree.ll
+; linux/optimized/buffered_write.ll
+; linux/optimized/filemap.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/maple_tree.ll
+; linux/optimized/swap_state.ll
+; linux/optimized/vmalloc.ll
+; linux/optimized/workingset.ll
+; linux/optimized/xarray.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; luajit/optimized/lj_trace.ll
+; luajit/optimized/lj_trace_dyn.ll
+; mimalloc/optimized/segment-map.c.ll
+; openmpi/optimized/coll_base_alltoall.ll
+; openmpi/optimized/coll_base_alltoallv.ll
+; openmpi/optimized/coll_basic_alltoallw.ll
+; openmpi/optimized/coll_ftagree_earlyreturning.ll
+; openmpi/optimized/coll_monitoring_allgather.ll
+; openmpi/optimized/coll_monitoring_allgatherv.ll
+; openmpi/optimized/coll_monitoring_allreduce.ll
+; openmpi/optimized/coll_monitoring_alltoall.ll
+; openmpi/optimized/coll_monitoring_alltoallv.ll
+; openmpi/optimized/coll_monitoring_alltoallw.ll
+; openmpi/optimized/coll_monitoring_barrier.ll
+; openmpi/optimized/coll_monitoring_bcast.ll
+; openmpi/optimized/coll_monitoring_exscan.ll
+; openmpi/optimized/coll_monitoring_gather.ll
+; openmpi/optimized/coll_monitoring_gatherv.ll
+; openmpi/optimized/coll_monitoring_neighbor_allgather.ll
+; openmpi/optimized/coll_monitoring_neighbor_allgatherv.ll
+; openmpi/optimized/coll_monitoring_neighbor_alltoall.ll
+; openmpi/optimized/coll_monitoring_neighbor_alltoallv.ll
+; openmpi/optimized/coll_monitoring_neighbor_alltoallw.ll
+; openmpi/optimized/coll_monitoring_reduce.ll
+; openmpi/optimized/coll_monitoring_reduce_scatter.ll
+; openmpi/optimized/coll_monitoring_reduce_scatter_block.ll
+; openmpi/optimized/coll_monitoring_scan.ll
+; openmpi/optimized/coll_monitoring_scatter.ll
+; openmpi/optimized/coll_monitoring_scatterv.ll
+; openmpi/optimized/coll_sm_module.ll
+; openmpi/optimized/comm.ll
+; openmpi/optimized/comm_ft_detector.ll
+; openmpi/optimized/comm_ft_reliable_bcast.ll
+; openmpi/optimized/common_monitoring.ll
+; openmpi/optimized/common_monitoring_coll.ll
+; openmpi/optimized/dpm.ll
+; openmpi/optimized/errhandler.ll
+; openmpi/optimized/group.ll
+; openmpi/optimized/group_init.ll
+; openmpi/optimized/group_plist.ll
+; openmpi/optimized/libmpi_c_profile_la-isendrecv_replace.ll
+; openmpi/optimized/libmpi_c_profile_la-sendrecv_replace.ll
+; openmpi/optimized/ompi_mpi_abort.ll
+; openmpi/optimized/osc_monitoring_component.ll
+; openmpi/optimized/osc_rdma_component.ll
+; openmpi/optimized/osc_rdma_peer.ll
+; openmpi/optimized/pml_cm.ll
+; openmpi/optimized/pml_monitoring_isend.ll
+; openmpi/optimized/pml_monitoring_start.ll
+; openmpi/optimized/pml_ob1_comm.ll
+; openmpi/optimized/pml_ob1_isend.ll
+; openmpi/optimized/proc.ll
+; openmpi/optimized/sharedfp_lockedfile_file_open.ll
+; openmpi/optimized/sharedfp_sm.ll
+; openmpi/optimized/topo_treematch_dist_graph_create.ll
+; php/optimized/zend_alloc.ll
+; redis/optimized/background_thread.ll
+; redis/optimized/background_thread.sym.ll
+; redis/optimized/emap.ll
+; redis/optimized/emap.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
+; ruby/optimized/compile.ll
+; ruby/optimized/iseq.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; wireshark/optimized/resolved_addresses_models.cpp.ll
+; z3/optimized/cmd_context.cpp.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
+; z3/optimized/seq_decl_plugin.cpp.ll
+; z3/optimized/smt_conflict_resolution.cpp.ll
+; z3/optimized/smt_quantifier.cpp.ll
+; z3/optimized/subpaving_hwf.cpp.ll
+; z3/optimized/subpaving_mpf.cpp.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; z3/optimized/subpaving_mpq.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = lshr i64 %1, 15
+  %3 = and i64 %2, 131070
+  ret i64 %3
+}
+
+; 93 occurrences:
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/block_sparse_matrix.cc.ll
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/conditioned_cost_function.cc.ll
+; ceres/optimized/corrector.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dense_qr_solver.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
+; ceres/optimized/evaluator.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/gradient_checking_cost_function.cc.ll
+; ceres/optimized/gradient_problem.cc.ll
+; ceres/optimized/gradient_problem_solver.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/iterative_refiner.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/levenberg_marquardt_strategy.cc.ll
+; ceres/optimized/line_search_direction.cc.ll
+; ceres/optimized/line_search_minimizer.cc.ll
+; ceres/optimized/low_rank_inverse_hessian.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/normal_prior.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/problem_impl.cc.ll
+; ceres/optimized/program.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; ceres/optimized/sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/triplet_sparse_matrix.cc.ll
+; ceres/optimized/trust_region_minimizer.cc.ll
+; ceres/optimized/visibility_based_preconditioner.cc.ll
+; linux/optimized/vmalloc.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/normalize_unitbox.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = lshr exact i64 %1, 3
+  %3 = and i64 %2, 1
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,21 @@
+func0000000000000002:                   # @func0000000000000002
+	andi	a0, a0, 1
+	bnez	a0, .LBB0_2
+	fmv.s	fa5, fa0
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa0, fa4
+	beqz	a0, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	lui	a0, 260096
+	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
+	flt.s	a0, fa0, fa4
+	bnez	a0, .LBB0_4
+.LBB0_3:                                # %entry
+	lui	a0, 276480
+	fmv.w.x	fa4, a0
+	fmul.s	fa4, fa5, fa4
+.LBB0_4:                                # %entry
+	fcvt.w.s	a0, fa4, rtz
+	ret

@@ -1,0 +1,145 @@
+
+; 1 occurrences:
+; ruby/optimized/bignum.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = getelementptr i32, ptr %0, i64 %3
+  %5 = shl i64 %1, 2
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1096
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = shl nuw nsw i64 %1, 2
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; libsodium/optimized/libaesni_la-aead_aes256gcm_aesni.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 112
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = shl nuw nsw i64 %1, 4
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
+; entt/optimized/registry.cpp.ll
+; entt/optimized/sparse_set.cpp.ll
+; entt/optimized/storage_entity.cpp.ll
+; entt/optimized/storage_no_instance.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -4
+  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %5 = shl nuw nsw i64 %1, 2
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
+; entt/optimized/registry.cpp.ll
+; entt/optimized/sparse_set.cpp.ll
+; entt/optimized/storage_entity.cpp.ll
+; entt/optimized/storage_no_instance.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -4
+  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %5 = shl i64 %1, 2
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 16 occurrences:
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; meshlab/optimized/matching.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -1
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  %5 = shl nsw i64 %1, 2
+  %6 = getelementptr inbounds double, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 19 occurrences:
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  %5 = shl nsw i64 %1, 2
+  %6 = getelementptr inbounds double, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 1
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  %5 = shl nsw i64 %1, 2
+  %6 = getelementptr inbounds double, ptr %4, i64 %5
+  ret ptr %6
+}
+
+attributes #0 = { nounwind }

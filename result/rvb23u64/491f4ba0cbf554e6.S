@@ -1,0 +1,7 @@
+func0000000000000000:                   # @func0000000000000000
+	li	a2, 1
+	max	a1, a1, a2
+	divu	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 8
+	ret

@@ -1,0 +1,88 @@
+
+; 22 occurrences:
+; diesel-rs/optimized/1d6yrclfdvavot4r.ll
+; diesel-rs/optimized/1d8pgoqwu3bzfya4.ll
+; diesel-rs/optimized/1zhqdyjorbzdhypm.ll
+; diesel-rs/optimized/2sf6u3r7os1bcdld.ll
+; diesel-rs/optimized/3hbywg7swws1iy6v.ll
+; diesel-rs/optimized/3iqa5s4rcitpn2nv.ll
+; diesel-rs/optimized/3nv3xphjbq527f6u.ll
+; diesel-rs/optimized/3nydn42x30kj4j9q.ll
+; diesel-rs/optimized/gepqftqgym352s.ll
+; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
+; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
+; qdrant-rs/optimized/14hho85eanhsaepf.ll
+; qdrant-rs/optimized/5df3kwa3vgb8d75f.ll
+; regex-rs/optimized/4dth5ncaqumdqgby.ll
+; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
+; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; tree-sitter-rs/optimized/3iovi93q4avxr89k.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; typst-rs/optimized/3efk6odw6ecl29p.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/3zt5lgc0v7piaijw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0) #0 {
+entry:
+  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 24)
+  %2 = extractvalue { i64, i1 } %1, 0
+  %3 = add nuw i64 %2, 15
+  ret i64 %3
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
+
+; 26 occurrences:
+; assimp/optimized/BlenderLoader.cpp.ll
+; assimp/optimized/COBLoader.cpp.ll
+; assimp/optimized/ColladaLoader.cpp.ll
+; assimp/optimized/ProcessHelper.cpp.ll
+; assimp/optimized/Q3BSPFileImporter.cpp.ll
+; assimp/optimized/X3DGeoHelper.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_tonemap.cc.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; grpc/optimized/call.cc.ll
+; grpc/optimized/call_combiner.cc.ll
+; grpc/optimized/channel.cc.ll
+; grpc/optimized/chttp2_transport.cc.ll
+; grpc/optimized/completion_queue.cc.ll
+; grpc/optimized/hpack_parser.cc.ll
+; grpc/optimized/security_handshaker.cc.ll
+; grpc/optimized/stats.cc.ll
+; grpc/optimized/subchannel.cc.ll
+; grpc/optimized/tcp_posix.cc.ll
+; grpc/optimized/weighted_round_robin.cc.ll
+; grpc/optimized/work_serializer.cc.ll
+; grpc/optimized/writing.cc.ll
+; linux/optimized/swiotlb.ll
+; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 12)
+  %2 = extractvalue { i64, i1 } %1, 0
+  %3 = add i64 %2, -12
+  ret i64 %3
+}
+
+; 4 occurrences:
+; assimp/optimized/ASELoader.cpp.ll
+; assimp/optimized/HMPLoader.cpp.ll
+; linux/optimized/swiotlb.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 24)
+  %2 = extractvalue { i64, i1 } %1, 0
+  %3 = add nsw i64 %2, -24
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

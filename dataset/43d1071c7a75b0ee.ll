@@ -1,0 +1,23 @@
+
+; 9 occurrences:
+; abc/optimized/abcHieGia.c.ll
+; abc/optimized/solver.c.ll
+; abc/optimized/xsatSolver.c.ll
+; linux/optimized/xhci-hub.ll
+; meshoptimizer/optimized/spatialorder.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; mold/optimized/arch-arm64.cc.ll
+; qemu/optimized/hw_display_cirrus_vga.c.ll
+; qemu/optimized/hw_display_vga.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 4193280
+  %3 = and i32 %0, 31
+  %4 = shl nuw nsw i32 %3, 5
+  %5 = or disjoint i32 %4, %2
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

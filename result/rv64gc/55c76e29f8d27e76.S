@@ -1,0 +1,43 @@
+func0000000000000002:                   # @func0000000000000002
+	li	a3, -1
+	srli	a3, a3, 1
+	andi	a0, a0, 1
+	bgeu	a2, a3, .LBB0_3
+	beqz	a0, .LBB0_4
+.LBB0_2:                                # %entry
+	addi	a0, a2, 1
+	ret
+.LBB0_3:                                # %entry
+	mv	a2, a3
+	bnez	a0, .LBB0_2
+.LBB0_4:                                # %entry
+	addi	a0, a1, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	li	a3, 256
+	andi	a0, a0, 1
+	bgeu	a2, a3, .LBB1_3
+	beqz	a0, .LBB1_4
+.LBB1_2:                                # %entry
+	addi	a0, a2, 15
+	ret
+.LBB1_3:                                # %entry
+	li	a2, 256
+	bnez	a0, .LBB1_2
+.LBB1_4:                                # %entry
+	addi	a0, a1, 15
+	ret
+func0000000000000000:                   # @func0000000000000000
+	li	a3, 255
+	andi	a0, a0, 1
+	bgeu	a2, a3, .LBB2_3
+	beqz	a0, .LBB2_4
+.LBB2_2:                                # %entry
+	addi	a0, a2, 1
+	ret
+.LBB2_3:                                # %entry
+	li	a2, 255
+	bnez	a0, .LBB2_2
+.LBB2_4:                                # %entry
+	addi	a0, a1, 1
+	ret

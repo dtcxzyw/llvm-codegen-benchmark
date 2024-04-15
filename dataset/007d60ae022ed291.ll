@@ -1,0 +1,122 @@
+
+; 2 occurrences:
+; qemu/optimized/fdt_overlay.c.ll
+; wireshark/optimized/packet-http.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp eq i32 %5, 0
+  ret i1 %6
+}
+
+; 9 occurrences:
+; git/optimized/apply.ll
+; git/optimized/fast-import.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; icu/optimized/gensprep.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; qemu/optimized/chardev_wctablet.c.ll
+; raylib/optimized/rmodels.c.ll
+; spike/optimized/fdt_overlay.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr inbounds i8, ptr %1, i64 160
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp eq i32 %5, 2
+  ret i1 %6
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/charconv_parse.cc.ll
+; icu/optimized/gensprep.ll
+; qemu/optimized/chardev_testdev.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010a(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr inbounds i8, ptr %1, i64 152
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp sgt i32 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; linux/optimized/skbuff.ll
+; qemu/optimized/migration_qemu-file.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 4
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp slt i32 %5, 0
+  ret i1 %6
+}
+
+; 5 occurrences:
+; libquic/optimized/prtime.cc.ll
+; luajit/optimized/lj_strscan.ll
+; luajit/optimized/lj_strscan_dyn.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000106(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr inbounds i8, ptr %1, i64 4
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp slt i32 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/nettrace_3gpp_32_423.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 10
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp sgt i32 %5, 64
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ieee80211-radiotap.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 4
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp ult i32 %5, 4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr inbounds i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = icmp ult i32 %5, 9
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

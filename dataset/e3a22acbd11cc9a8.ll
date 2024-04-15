@@ -1,0 +1,33 @@
+
+; 6 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; hermes/optimized/APFloat.cpp.ll
+; hermes/optimized/IR.cpp.ll
+; hermes/optimized/Instrs.cpp.ll
+; hermes/optimized/Process.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = sub i64 0, %4
+  %6 = getelementptr inbounds i8, ptr %0, i64 %1
+  %7 = getelementptr inbounds i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/uat_model.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = sub i64 0, %4
+  %6 = getelementptr i8, ptr %0, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

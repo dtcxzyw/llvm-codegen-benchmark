@@ -1,0 +1,135 @@
+
+; 123 occurrences:
+; assimp/optimized/IFCBoolean.cpp.ll
+; assimp/optimized/IFCGeometry.cpp.ll
+; assimp/optimized/IFCOpenings.cpp.ll
+; assimp/optimized/sweep.cc.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; box2d/optimized/b2_contact_solver.cpp.ll
+; box2d/optimized/b2_distance.cpp.ll
+; box2d/optimized/b2_distance_joint.cpp.ll
+; box2d/optimized/b2_prismatic_joint.cpp.ll
+; box2d/optimized/b2_rope.cpp.ll
+; box2d/optimized/b2_weld_joint.cpp.ll
+; box2d/optimized/b2_wheel_joint.cpp.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3ConvexUtility.ll
+; bullet3/optimized/b3CpuNarrowPhase.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/b3GjkEpa.ll
+; bullet3/optimized/b3GpuNarrowPhase.ll
+; bullet3/optimized/b3GpuRaycast.ll
+; bullet3/optimized/b3VoronoiSimplexSolver.ll
+; bullet3/optimized/btConeTwistConstraint.ll
+; bullet3/optimized/btContactConstraint.ll
+; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
+; bullet3/optimized/btConvexHull.ll
+; bullet3/optimized/btConvexPolyhedron.ll
+; bullet3/optimized/btConvexTriangleMeshShape.ll
+; bullet3/optimized/btGImpactBvh.ll
+; bullet3/optimized/btGImpactCollisionAlgorithm.ll
+; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
+; bullet3/optimized/btGjkEpa2.ll
+; bullet3/optimized/btGjkPairDetector.ll
+; bullet3/optimized/btHingeConstraint.ll
+; bullet3/optimized/btInternalEdgeUtility.ll
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyGearConstraint.ll
+; bullet3/optimized/btPersistentManifold.ll
+; bullet3/optimized/btRaycastCallback.ll
+; bullet3/optimized/btRaycastVehicle.ll
+; bullet3/optimized/btSliderConstraint.ll
+; bullet3/optimized/btSoftBody.ll
+; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
+; bullet3/optimized/btTriangleShapeEx.ll
+; bullet3/optimized/btVoronoiSimplexSolver.ll
+; bullet3/optimized/btWheelInfo.ll
+; graphviz/optimized/geom.c.ll
+; graphviz/optimized/geometry.c.ll
+; graphviz/optimized/partition.c.ll
+; graphviz/optimized/spring_electrical.c.ll
+; graphviz/optimized/trapezoid.c.ll
+; graphviz/optimized/triang.c.ll
+; graphviz/optimized/visibility.c.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/edit_sample.cpp.ll
+; meshlab/optimized/edit_select.cpp.ll
+; meshlab/optimized/editpickpoints.cpp.ll
+; meshlab/optimized/eigen_mesh_conversions.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_embree.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/intersection.cpp.ll
+; meshlab/optimized/mesh.cpp.ll
+; meshlab/optimized/mesh_graph.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/pickpointsDialog.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/seam_remover.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; meshlab/optimized/texture_optimization.cpp.ll
+; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
+; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
+; meshoptimizer/optimized/simplifier.cpp.ll
+; minetest/optimized/mapblock_mesh.cpp.ll
+; mitsuba3/optimized/sggx.cpp.ll
+; msdfgen/optimized/edge-segments.cpp.ll
+; msdfgen/optimized/edge-selectors.cpp.ll
+; msdfgen/optimized/import-font.cpp.ll
+; nori/optimized/colorwheel.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; ocio/optimized/GradingTone.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; raylib/optimized/rcore.c.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rshapes.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
+; recastnavigation/optimized/CrowdTool.cpp.ll
+; recastnavigation/optimized/DetourCommon.cpp.ll
+; recastnavigation/optimized/DetourCrowd.cpp.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
+; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; recastnavigation/optimized/InputGeom.cpp.ll
+; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fneg float %2
+  %4 = fsub float %0, %1
+  %5 = fmul float %4, %3
+  ret float %5
+}
+
+attributes #0 = { nounwind }

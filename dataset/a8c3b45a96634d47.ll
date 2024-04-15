@@ -1,0 +1,67 @@
+
+; 8 occurrences:
+; arrow/optimized/message.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; arrow/optimized/reader.cc.ll
+; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
+; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = add i64 %4, %0
+  %6 = and i64 %5, 3
+  %7 = icmp ne i64 %6, 0
+  ret i1 %7
+}
+
+; 6 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; git/optimized/get-tar-commit-id.ll
+; hyperscan/optimized/crc32.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = add i64 %4, %0
+  %6 = and i64 %5, 1
+  %7 = icmp eq i64 %6, 0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; arrow/optimized/diff.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = add nsw i64 %4, %0
+  %6 = and i64 %5, -9223372036854775745
+  %7 = icmp ugt i64 %6, -9223372036854775808
+  ret i1 %7
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = add nsw i64 %0, %4
+  %6 = and i64 %5, 4294967295
+  %7 = icmp eq i64 %6, 0
+  ret i1 %7
+}
+
+attributes #0 = { nounwind }

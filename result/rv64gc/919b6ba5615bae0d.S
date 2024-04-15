@@ -1,0 +1,19 @@
+func0000000000000007:                   # @func0000000000000007
+	andi	a1, a1, 255
+	slli	a1, a1, 8
+	or	a0, a0, a1
+	fcvt.s.w	fa5, a0
+	lui	a0, 243712
+	fmv.w.x	fa4, a0
+	fmul.s	fa0, fa5, fa4
+	ret
+func0000000000000005:                   # @func0000000000000005
+	slli	a0, a0, 48
+	slli	a1, a1, 56
+	or	a0, a0, a1
+	srai	a0, a0, 48
+	fcvt.s.w	fa5, a0
+	lui	a0, 231424
+	fmv.w.x	fa4, a0
+	fmul.s	fa0, fa5, fa4
+	ret

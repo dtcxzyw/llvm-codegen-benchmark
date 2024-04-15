@@ -1,0 +1,12 @@
+.LCPI0_0:
+	.quad	6364136223846793005             # 0x5851f42d4c957f2d
+func0000000000000001:                   # @func0000000000000001
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	add	a2, a2, a3
+	xor	a1, a1, a2
+	negw	a2, a0
+	sll	a2, a1, a2
+	srl	a0, a1, a0
+	or	a0, a0, a2
+	ret

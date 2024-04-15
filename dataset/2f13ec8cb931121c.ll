@@ -1,0 +1,479 @@
+
+; 10 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; eastl/optimized/TestSort.cpp.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; linux/optimized/extents.ll
+; linux/optimized/zstd_decompress_block.ll
+; lz4/optimized/lz4hc.c.ll
+; postgres/optimized/multirangetypes.ll
+; ruby/optimized/file.ll
+; ruby/optimized/parse.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 1
+  %7 = getelementptr i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 13 occurrences:
+; cpython/optimized/bytesobject.ll
+; cpython/optimized/codeobject.ll
+; cpython/optimized/marshal.ll
+; cpython/optimized/multibytecodec.ll
+; cpython/optimized/unicodeobject.ll
+; cpython/optimized/xmlparse.ll
+; lodepng/optimized/lodepng.cpp.ll
+; nuttx/optimized/lib_realpath.c.ll
+; php/optimized/fopen_wrappers.ll
+; php/optimized/zend_ini_scanner.ll
+; postgres/optimized/heapam.ll
+; ruby/optimized/gc.ll
+; ruby/optimized/regcomp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr inbounds i8, ptr %0, i64 32
+  %7 = getelementptr i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 16 occurrences:
+; arrow/optimized/chunk_resolver.cc.ll
+; casadi/optimized/dae_builder_internal.cpp.ll
+; casadi/optimized/mx_function.cpp.ll
+; casadi/optimized/polynomial.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
+; hermes/optimized/gtest-all.cc.ll
+; protobuf/optimized/message_differencer.cc.ll
+; ruby/optimized/printf.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000001(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 1
+  %7 = getelementptr inbounds i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 390 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; abc/optimized/inflate.c.ll
+; abseil-cpp/optimized/container_test.cc.ll
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; assimp/optimized/3DSLoader.cpp.ll
+; assimp/optimized/ColladaExporter.cpp.ll
+; assimp/optimized/IRRLoader.cpp.ll
+; assimp/optimized/MD5Loader.cpp.ll
+; assimp/optimized/SplitLargeMeshes.cpp.ll
+; assimp/optimized/X3DGeoHelper.cpp.ll
+; assimp/optimized/mesh_splitter.cpp.ll
+; casadi/optimized/collocation.cpp.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/implicit_runge-kutta.cpp.ll
+; casadi/optimized/integration_tools.cpp.ll
+; casadi/optimized/sparsity.cpp.ll
+; ceres/optimized/gradient_problem_solver.cc.ll
+; ceres/optimized/parameter_block_ordering.cc.ll
+; ceres/optimized/preprocessor.cc.ll
+; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
+; cmake/optimized/inflate.c.ll
+; cmake/optimized/xmlparse.c.ll
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; csmith/optimized/Probabilities.cpp.ll
+; csmith/optimized/StatementGoto.cpp.ll
+; csmith/optimized/VariableSelector.cpp.ll
+; cvc5/optimized/cadical.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
+; cvc5/optimized/inst_match_generator_multi.cpp.ll
+; cvc5/optimized/regexp_operation.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; draco/optimized/symbol_encoding.cc.ll
+; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
+; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/BenchmarkVector.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; eastl/optimized/TestFixedString.cpp.ll
+; eastl/optimized/TestFixedVector.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; entt/optimized/meta_container.cpp.ll
+; entt/optimized/meta_context.cpp.ll
+; entt/optimized/meta_type.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; faiss/optimized/IndexPreTransform.cpp.ll
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; folly/optimized/SplitStringSimd.cpp.ll
+; git/optimized/name-hash.ll
+; glog/optimized/stl_logging_unittest.cc.ll
+; grpc/optimized/channel_stack_builder.cc.ll
+; grpc/optimized/event_log.cc.ll
+; grpc/optimized/load_balancer_api.cc.ll
+; grpc/optimized/xds_channel_stack_modifier.cc.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/ASTBuilder.cpp.ll
+; hermes/optimized/CharacterProperties.cpp.ll
+; hermes/optimized/CompilerDriver.cpp.ll
+; hermes/optimized/DependencyExtractor.cpp.ll
+; hermes/optimized/JSLibInternal.cpp.ll
+; hermes/optimized/JSRegExp.cpp.ll
+; hermes/optimized/ProfileAnalyzer.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/SourceMapParser.cpp.ll
+; hermes/optimized/Statistic.cpp.ll
+; hermes/optimized/SynthTraceParser.cpp.ll
+; hermes/optimized/UniquingStringLiteralTable.cpp.ll
+; hermes/optimized/gtest-all.cc.ll
+; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
+; hyperscan/optimized/buildstate.cpp.ll
+; hyperscan/optimized/castlecompile.cpp.ll
+; hyperscan/optimized/dfa_min.cpp.ll
+; hyperscan/optimized/goughcompile.cpp.ll
+; hyperscan/optimized/goughcompile_reg.cpp.ll
+; hyperscan/optimized/gtest-all.cc.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; hyperscan/optimized/mcsheng_compile.cpp.ll
+; hyperscan/optimized/ng_corpus_editor.cpp.ll
+; hyperscan/optimized/ng_cyclic_redundancy.cpp.ll
+; hyperscan/optimized/ng_edge_redundancy.cpp.ll
+; hyperscan/optimized/ng_equivalence.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
+; hyperscan/optimized/ng_fuzzy.cpp.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/ng_limex.cpp.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/ng_misc_opt.cpp.ll
+; hyperscan/optimized/ng_prefilter.cpp.ll
+; hyperscan/optimized/ng_puff.cpp.ll
+; hyperscan/optimized/ng_redundancy.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/ng_som.cpp.ll
+; hyperscan/optimized/ng_uncalc_components.cpp.ll
+; hyperscan/optimized/ng_utf8.cpp.ll
+; hyperscan/optimized/ng_util.cpp.ll
+; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/rdfa_graph.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
+; hyperscan/optimized/rose_build_add.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
+; hyperscan/optimized/rose_build_anchored.cpp.ll
+; hyperscan/optimized/rose_build_compile.cpp.ll
+; hyperscan/optimized/rose_build_exclusive.cpp.ll
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; hyperscan/optimized/rose_build_infix.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_matchers.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; hyperscan/optimized/smallwrite_build.cpp.ll
+; hyperscan/optimized/tamaramacompile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; icu/optimized/icuexportdata.ll
+; libquic/optimized/inflate.c.ll
+; libquic/optimized/quic_crypto_client_config.cc.ll
+; lief/optimized/DynamicEntryArray.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; lz4/optimized/lz4.c.ll
+; meshlab/optimized/load_project.cpp.ll
+; meshlab/optimized/transferfunction.cpp.ll
+; minetest/optimized/CGUITabControl.cpp.ll
+; minetest/optimized/guiFormSpecMenu.cpp.ll
+; mold/optimized/arch-alpha.cc.ll
+; mold/optimized/arch-ppc64v1.cc.ll
+; mold/optimized/gdb-index.cc.ALPHA.cc.ll
+; mold/optimized/gdb-index.cc.ARM32.cc.ll
+; mold/optimized/gdb-index.cc.ARM64.cc.ll
+; mold/optimized/gdb-index.cc.I386.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH32.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH64.cc.ll
+; mold/optimized/gdb-index.cc.M68K.cc.ll
+; mold/optimized/gdb-index.cc.PPC32.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V1.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V2.cc.ll
+; mold/optimized/gdb-index.cc.RV32BE.cc.ll
+; mold/optimized/gdb-index.cc.RV32LE.cc.ll
+; mold/optimized/gdb-index.cc.RV64BE.cc.ll
+; mold/optimized/gdb-index.cc.RV64LE.cc.ll
+; mold/optimized/gdb-index.cc.S390X.cc.ll
+; mold/optimized/gdb-index.cc.SH4.cc.ll
+; mold/optimized/gdb-index.cc.SPARC64.cc.ll
+; mold/optimized/gdb-index.cc.X86_64.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-files.cc.RV32BE.cc.ll
+; mold/optimized/input-files.cc.RV32LE.cc.ll
+; mold/optimized/input-files.cc.RV64BE.cc.ll
+; mold/optimized/input-files.cc.RV64LE.cc.ll
+; mold/optimized/mapfile.cc.ALPHA.cc.ll
+; mold/optimized/mapfile.cc.ARM32.cc.ll
+; mold/optimized/mapfile.cc.ARM64.cc.ll
+; mold/optimized/mapfile.cc.I386.cc.ll
+; mold/optimized/mapfile.cc.LOONGARCH32.cc.ll
+; mold/optimized/mapfile.cc.LOONGARCH64.cc.ll
+; mold/optimized/mapfile.cc.M68K.cc.ll
+; mold/optimized/mapfile.cc.PPC32.cc.ll
+; mold/optimized/mapfile.cc.PPC64V1.cc.ll
+; mold/optimized/mapfile.cc.PPC64V2.cc.ll
+; mold/optimized/mapfile.cc.RV32BE.cc.ll
+; mold/optimized/mapfile.cc.RV32LE.cc.ll
+; mold/optimized/mapfile.cc.RV64BE.cc.ll
+; mold/optimized/mapfile.cc.RV64LE.cc.ll
+; mold/optimized/mapfile.cc.S390X.cc.ll
+; mold/optimized/mapfile.cc.SH4.cc.ll
+; mold/optimized/mapfile.cc.SPARC64.cc.ll
+; mold/optimized/mapfile.cc.X86_64.cc.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; mold/optimized/perf.cc.ll
+; mold/optimized/thunks.cc.ARM32.cc.ll
+; mold/optimized/thunks.cc.ARM64.cc.ll
+; mold/optimized/thunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/thunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/thunks.cc.PPC32.cc.ll
+; mold/optimized/thunks.cc.PPC64V1.cc.ll
+; mold/optimized/thunks.cc.PPC64V2.cc.ll
+; nlohmann_json/optimized/unit-bjdata.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-constructor1.cpp.ll
+; nlohmann_json/optimized/unit-conversions.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; nlohmann_json/optimized/unit-ubjson.cpp.ll
+; nlohmann_json/optimized/unit.cpp.ll
+; nori/optimized/layout.cpp.ll
+; nori/optimized/tabwidget.cpp.ll
+; nori/optimized/widget.cpp.ll
+; php/optimized/mime_sniff.ll
+; php/optimized/rfc1867.ll
+; php/optimized/string.ll
+; php/optimized/var.ll
+; php/optimized/zend_API.ll
+; php/optimized/zend_objects.ll
+; php/optimized/zend_operators.ll
+; protobuf/optimized/generated_enum_util.cc.ll
+; protobuf/optimized/text_format.cc.ll
+; protobuf/optimized/wire_format.cc.ll
+; proxygen/optimized/HPACKCodec.cpp.ll
+; proxygen/optimized/HPACKDecoderBase.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
+; pybind11/optimized/cross_module_gil_utils.cpp.ll
+; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
+; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
+; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
+; pybind11/optimized/pybind11_tests.cpp.ll
+; pybind11/optimized/test_async.cpp.ll
+; pybind11/optimized/test_buffers.cpp.ll
+; pybind11/optimized/test_builtin_casters.cpp.ll
+; pybind11/optimized/test_call_policies.cpp.ll
+; pybind11/optimized/test_callbacks.cpp.ll
+; pybind11/optimized/test_chrono.cpp.ll
+; pybind11/optimized/test_class.cpp.ll
+; pybind11/optimized/test_const_name.cpp.ll
+; pybind11/optimized/test_constants_and_functions.cpp.ll
+; pybind11/optimized/test_copy_move.cpp.ll
+; pybind11/optimized/test_custom_type_casters.cpp.ll
+; pybind11/optimized/test_custom_type_setup.cpp.ll
+; pybind11/optimized/test_docstring_options.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; pybind11/optimized/test_eigen_tensor.cpp.ll
+; pybind11/optimized/test_enum.cpp.ll
+; pybind11/optimized/test_eval.cpp.ll
+; pybind11/optimized/test_exceptions.cpp.ll
+; pybind11/optimized/test_factory_constructors.cpp.ll
+; pybind11/optimized/test_gil_scoped.cpp.ll
+; pybind11/optimized/test_iostream.cpp.ll
+; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
+; pybind11/optimized/test_local_bindings.cpp.ll
+; pybind11/optimized/test_methods_and_attributes.cpp.ll
+; pybind11/optimized/test_modules.cpp.ll
+; pybind11/optimized/test_multiple_inheritance.cpp.ll
+; pybind11/optimized/test_numpy_array.cpp.ll
+; pybind11/optimized/test_numpy_dtypes.cpp.ll
+; pybind11/optimized/test_numpy_vectorize.cpp.ll
+; pybind11/optimized/test_opaque_types.cpp.ll
+; pybind11/optimized/test_operator_overloading.cpp.ll
+; pybind11/optimized/test_pickling.cpp.ll
+; pybind11/optimized/test_python_multiple_inheritance.cpp.ll
+; pybind11/optimized/test_pytypes.cpp.ll
+; pybind11/optimized/test_sequences_and_iterators.cpp.ll
+; pybind11/optimized/test_smart_ptr.cpp.ll
+; pybind11/optimized/test_stl.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
+; pybind11/optimized/test_thread.cpp.ll
+; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
+; pybind11/optimized/test_union.cpp.ll
+; pybind11/optimized/test_unnamed_namespace_a.cpp.ll
+; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
+; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
+; pybind11/optimized/test_virtual_functions.cpp.ll
+; rocksdb/optimized/compaction_picker_level.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/logs_with_prep_tracker.cc.ll
+; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
+; rocksdb/optimized/write_prepared_txn_db.cc.ll
+; stockfish/optimized/tbprobe.ll
+; vcpkg/optimized/registries.cpp.ll
+; vcpkg/optimized/statusparagraphs.cpp.ll
+; velox/optimized/ComplexVector.cpp.ll
+; velox/optimized/LzoDecompressor.cpp.ll
+; verilator/optimized/V3Active.cpp.ll
+; verilator/optimized/V3ActiveTop.cpp.ll
+; verilator/optimized/V3AssertPre.cpp.ll
+; verilator/optimized/V3AstNodes.cpp.ll
+; verilator/optimized/V3Begin.cpp.ll
+; verilator/optimized/V3Broken.cpp.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Dead.cpp.ll
+; verilator/optimized/V3DfgAstToDfg.cpp.ll
+; verilator/optimized/V3DfgOptimizer.cpp.ll
+; verilator/optimized/V3DfgPasses.cpp.ll
+; verilator/optimized/V3DfgRegularize.cpp.ll
+; verilator/optimized/V3EmitCConstPool.cpp.ll
+; verilator/optimized/V3EmitCHeaders.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3EmitCModel.cpp.ll
+; verilator/optimized/V3EmitCSyms.cpp.ll
+; verilator/optimized/V3ExecGraph.cpp.ll
+; verilator/optimized/V3Force.cpp.ll
+; verilator/optimized/V3Fork.cpp.ll
+; verilator/optimized/V3Gate.cpp.ll
+; verilator/optimized/V3GraphAcyc.cpp.ll
+; verilator/optimized/V3GraphAlg.cpp.ll
+; verilator/optimized/V3Inline.cpp.ll
+; verilator/optimized/V3LinkLevel.cpp.ll
+; verilator/optimized/V3LinkResolve.cpp.ll
+; verilator/optimized/V3MergeCond.cpp.ll
+; verilator/optimized/V3OrderGraphBuilder.cpp.ll
+; verilator/optimized/V3OrderParallel.cpp.ll
+; verilator/optimized/V3OrderSerial.cpp.ll
+; verilator/optimized/V3Param.cpp.ll
+; verilator/optimized/V3Premit.cpp.ll
+; verilator/optimized/V3Sched.cpp.ll
+; verilator/optimized/V3SchedAcyclic.cpp.ll
+; verilator/optimized/V3SchedPartition.cpp.ll
+; verilator/optimized/V3SchedReplicate.cpp.ll
+; verilator/optimized/V3SchedTiming.cpp.ll
+; verilator/optimized/V3SchedVirtIface.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; verilator/optimized/V3Timing.cpp.ll
+; verilator/optimized/V3Trace.cpp.ll
+; verilator/optimized/V3TraceDecl.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
+; yoga/optimized/Node.cpp.ll
+; yosys/optimized/ast.ll
+; yosys/optimized/genrtlil.ll
+; yosys/optimized/lz4.ll
+; yosys/optimized/simplify.ll
+; yosys/optimized/verilog_parser.tab.ll
+; z3/optimized/algebraic_numbers.cpp.ll
+; z3/optimized/clp_context.cpp.ll
+; z3/optimized/dyn_ack.cpp.ll
+; z3/optimized/grobner.cpp.ll
+; z3/optimized/intblast_solver.cpp.ll
+; z3/optimized/pattern_inference.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/pdd_simplifier.cpp.ll
+; z3/optimized/sat_asymm_branch.cpp.ll
+; z3/optimized/sat_gc.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/spacer_cluster_util.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; z3/optimized/spacer_proof_utils.cpp.ll
+; z3/optimized/spacer_util.cpp.ll
+; z3/optimized/subpaving_hwf.cpp.ll
+; z3/optimized/subpaving_mpf.cpp.ll
+; z3/optimized/subpaving_mpff.cpp.ll
+; z3/optimized/subpaving_mpfx.cpp.ll
+; z3/optimized/subpaving_mpq.cpp.ll
+; zlib/optimized/inflate.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr inbounds i8, ptr %0, i64 8
+  %7 = getelementptr inbounds i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

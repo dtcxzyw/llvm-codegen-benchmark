@@ -1,0 +1,435 @@
+
+; 55 occurrences:
+; abc/optimized/Fxch.c.ll
+; abc/optimized/FxchMan.c.ll
+; abc/optimized/FxchSCHashTable.c.ll
+; abc/optimized/abcLut.c.ll
+; abc/optimized/abcNpnSave.c.ll
+; abc/optimized/abcOdc.c.ll
+; abc/optimized/abcSpeedup.c.ll
+; abc/optimized/aigCanon.c.ll
+; abc/optimized/aigCuts.c.ll
+; abc/optimized/aigPack.c.ll
+; abc/optimized/bdcDec.c.ll
+; abc/optimized/bdcSpfd.c.ll
+; abc/optimized/cswCut.c.ll
+; abc/optimized/darCut.c.ll
+; abc/optimized/extraUtilMisc.c.ll
+; abc/optimized/extraUtilTruth.c.ll
+; abc/optimized/fraClaus.c.ll
+; abc/optimized/fraHot.c.ll
+; abc/optimized/fraImp.c.ll
+; abc/optimized/fraSim.c.ll
+; abc/optimized/giaEra2.c.ll
+; abc/optimized/giaMan.c.ll
+; abc/optimized/giaSpeedup.c.ll
+; abc/optimized/giaSwitch.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/ivyMulti.c.ll
+; abc/optimized/kitDsd.c.ll
+; abc/optimized/kitTruth.c.ll
+; abc/optimized/lpkAbcDsd.c.ll
+; abc/optimized/lpkAbcUtil.c.ll
+; abc/optimized/mfsInter.c.ll
+; abc/optimized/nwkSpeedup.c.ll
+; abc/optimized/saigConstr2.c.ll
+; abc/optimized/saigSimFast.c.ll
+; abc/optimized/saigSwitch.c.ll
+; abc/optimized/sswSim.c.ll
+; abc/optimized/wlcAbs.c.ll
+; brotli/optimized/encode.c.ll
+; git/optimized/bitmap.ll
+; git/optimized/pack-bitmap.ll
+; hermes/optimized/StringPrimitive.cpp.ll
+; luajit/optimized/lj_cconv.ll
+; luajit/optimized/lj_cconv_dyn.ll
+; luajit/optimized/lj_crecord.ll
+; luajit/optimized/lj_crecord_dyn.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/regparse.ll
+; stb/optimized/stb_dxt.c.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1431655765
+  %3 = and i32 %0, 1431655765
+  %4 = add nuw i32 %3, %2
+  ret i32 %4
+}
+
+; 262 occurrences:
+; abc/optimized/Fxch.c.ll
+; abc/optimized/FxchMan.c.ll
+; abc/optimized/FxchSCHashTable.c.ll
+; abc/optimized/abcCascade.c.ll
+; abc/optimized/abcLut.c.ll
+; abc/optimized/abcNpnSave.c.ll
+; abc/optimized/abcOdc.c.ll
+; abc/optimized/abcSpeedup.c.ll
+; abc/optimized/acbFunc.c.ll
+; abc/optimized/acbTest.c.ll
+; abc/optimized/acecBo.c.ll
+; abc/optimized/acecXor.c.ll
+; abc/optimized/aigCanon.c.ll
+; abc/optimized/aigCuts.c.ll
+; abc/optimized/aigPack.c.ll
+; abc/optimized/bdcDec.c.ll
+; abc/optimized/bdcSpfd.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cecSatG2.c.ll
+; abc/optimized/cecSatG3.c.ll
+; abc/optimized/cecSim.c.ll
+; abc/optimized/cswCut.c.ll
+; abc/optimized/darCut.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/extraUtilMisc.c.ll
+; abc/optimized/extraUtilTruth.c.ll
+; abc/optimized/fraClaus.c.ll
+; abc/optimized/fraHot.c.ll
+; abc/optimized/fraImp.c.ll
+; abc/optimized/fraSim.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaEra2.c.ll
+; abc/optimized/giaIso3.c.ll
+; abc/optimized/giaMan.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaPat2.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaResub6.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSpeedup.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/giaSupps.c.ll
+; abc/optimized/giaSwitch.c.ll
+; abc/optimized/giaUtil.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/ioReadPlaMo.c.ll
+; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/ivyMulti.c.ll
+; abc/optimized/kitDsd.c.ll
+; abc/optimized/kitTruth.c.ll
+; abc/optimized/lpkAbcDsd.c.ll
+; abc/optimized/lpkAbcMux.c.ll
+; abc/optimized/lpkAbcUtil.c.ll
+; abc/optimized/lpkSets.c.ll
+; abc/optimized/luckySwap.c.ll
+; abc/optimized/mfsInter.c.ll
+; abc/optimized/mpmMap.c.ll
+; abc/optimized/mpmPre.c.ll
+; abc/optimized/nwkSpeedup.c.ll
+; abc/optimized/plaSimple.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/rwrLib.c.ll
+; abc/optimized/saigConstr2.c.ll
+; abc/optimized/saigIsoFast.c.ll
+; abc/optimized/saigSimFast.c.ll
+; abc/optimized/saigSwitch.c.ll
+; abc/optimized/sbdCore.c.ll
+; abc/optimized/sfmDec.c.ll
+; abc/optimized/sscSim.c.ll
+; abc/optimized/sswSim.c.ll
+; abc/optimized/wlcAbs.c.ll
+; abc/optimized/wlcGraft.c.ll
+; arrow/optimized/float16.cc.ll
+; assimp/optimized/DXFLoader.cpp.ll
+; assimp/optimized/IFCBoolean.cpp.ll
+; assimp/optimized/SortByPTypeProcess.cpp.ll
+; brotli/optimized/backward_references_hq.c.ll
+; bullet3/optimized/b3ConvexHullComputer.ll
+; bullet3/optimized/btConvexHullComputer.ll
+; cmake/optimized/cmFileInstaller.cxx.ll
+; csmith/optimized/CGOptions.cpp.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
+; diesel-rs/optimized/2zzzvc1em6im74h3.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; git/optimized/add-patch.ll
+; git/optimized/bitmap.ll
+; git/optimized/pack-bitmap.ll
+; grpc/optimized/call.cc.ll
+; grpc/optimized/writing.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/APFloat.cpp.ll
+; hyperscan/optimized/accelcompile.cpp.ll
+; hyperscan/optimized/hs.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; icu/optimized/ucmstate.ll
+; icu/optimized/ucnvmbcs.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; libquic/optimized/p224-64.c.ll
+; libquic/optimized/p256-64.c.ll
+; libquic/optimized/poly1305_vec.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libsodium/optimized/libsodium_la-x25519_ref10.ll
+; linux/optimized/badblocks.ll
+; linux/optimized/dm-raid1.ll
+; linux/optimized/drm_modes.ll
+; linux/optimized/e100.ll
+; linux/optimized/filter.ll
+; linux/optimized/gen6_ppgtt.ll
+; linux/optimized/intel_bw.ll
+; linux/optimized/intel_display.ll
+; linux/optimized/intel_dp_link_training.ll
+; linux/optimized/intel_engine_cs.ll
+; linux/optimized/intel_pstate.ll
+; linux/optimized/interrupt.ll
+; linux/optimized/nf_reject_ipv4.ll
+; linux/optimized/nfs3xdr.ll
+; linux/optimized/skl_scaler.ll
+; linux/optimized/tcp_ipv6.ll
+; linux/optimized/xprtsock.ll
+; lua/optimized/lcode.ll
+; lua/optimized/ldebug.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luajit/optimized/lj_cconv.ll
+; luajit/optimized/lj_cconv_dyn.ll
+; luajit/optimized/lj_trace.ll
+; luajit/optimized/lj_trace_dyn.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; minetest/optimized/c_converter.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; nori/optimized/nanovg.c.ll
+; ocio/optimized/CPUInfo.cpp.ll
+; openblas/optimized/blas_l1_thread.c.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/points.cc.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/pcre2_jit_compile.ll
+; php/optimized/php_date.ll
+; php/optimized/spl_iterators.ll
+; php/optimized/zend_jit.ll
+; postgres/optimized/trigger.ll
+; protobuf/optimized/descriptor.pb.cc.ll
+; pybind11/optimized/cross_module_gil_utils.cpp.ll
+; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
+; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
+; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
+; pybind11/optimized/pybind11_tests.cpp.ll
+; pybind11/optimized/test_async.cpp.ll
+; pybind11/optimized/test_buffers.cpp.ll
+; pybind11/optimized/test_builtin_casters.cpp.ll
+; pybind11/optimized/test_call_policies.cpp.ll
+; pybind11/optimized/test_callbacks.cpp.ll
+; pybind11/optimized/test_chrono.cpp.ll
+; pybind11/optimized/test_class.cpp.ll
+; pybind11/optimized/test_const_name.cpp.ll
+; pybind11/optimized/test_constants_and_functions.cpp.ll
+; pybind11/optimized/test_copy_move.cpp.ll
+; pybind11/optimized/test_custom_type_casters.cpp.ll
+; pybind11/optimized/test_custom_type_setup.cpp.ll
+; pybind11/optimized/test_docstring_options.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; pybind11/optimized/test_eigen_tensor.cpp.ll
+; pybind11/optimized/test_enum.cpp.ll
+; pybind11/optimized/test_eval.cpp.ll
+; pybind11/optimized/test_exceptions.cpp.ll
+; pybind11/optimized/test_factory_constructors.cpp.ll
+; pybind11/optimized/test_gil_scoped.cpp.ll
+; pybind11/optimized/test_iostream.cpp.ll
+; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
+; pybind11/optimized/test_local_bindings.cpp.ll
+; pybind11/optimized/test_methods_and_attributes.cpp.ll
+; pybind11/optimized/test_modules.cpp.ll
+; pybind11/optimized/test_multiple_inheritance.cpp.ll
+; pybind11/optimized/test_numpy_array.cpp.ll
+; pybind11/optimized/test_numpy_dtypes.cpp.ll
+; pybind11/optimized/test_numpy_vectorize.cpp.ll
+; pybind11/optimized/test_opaque_types.cpp.ll
+; pybind11/optimized/test_operator_overloading.cpp.ll
+; pybind11/optimized/test_pickling.cpp.ll
+; pybind11/optimized/test_python_multiple_inheritance.cpp.ll
+; pybind11/optimized/test_pytypes.cpp.ll
+; pybind11/optimized/test_sequences_and_iterators.cpp.ll
+; pybind11/optimized/test_smart_ptr.cpp.ll
+; pybind11/optimized/test_stl.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
+; pybind11/optimized/test_thread.cpp.ll
+; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
+; pybind11/optimized/test_union.cpp.ll
+; pybind11/optimized/test_unnamed_namespace_a.cpp.ll
+; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
+; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
+; pybind11/optimized/test_virtual_functions.cpp.ll
+; qemu/optimized/optimize.c.ll
+; qemu/optimized/tcg.c.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; raylib/optimized/raudio.c.ll
+; recastnavigation/optimized/RecastArea.cpp.ll
+; recastnavigation/optimized/RecastContour.cpp.ll
+; recastnavigation/optimized/RecastLayers.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; recastnavigation/optimized/RecastRegion.cpp.ll
+; redis/optimized/bitops.ll
+; redis/optimized/hyperloglog.ll
+; redis/optimized/quicklist.ll
+; redis/optimized/rand.ll
+; ruby/optimized/regparse.ll
+; slurm/optimized/reservation.ll
+; slurm/optimized/slurm_opt.ll
+; spike/optimized/i32_to_f16.ll
+; spike/optimized/s_addMagsF128.ll
+; spike/optimized/ukaddh.ll
+; spike/optimized/ukaddw.ll
+; spike/optimized/uradd16.ll
+; spike/optimized/uradd32.ll
+; spike/optimized/uradd8.ll
+; spike/optimized/uraddw.ll
+; spike/optimized/urcras16.ll
+; spike/optimized/urcrsa16.ll
+; spike/optimized/urstas16.ll
+; spike/optimized/urstsa16.ll
+; spike/optimized/urstsa32.ll
+; spike/optimized/vadc_vim.ll
+; spike/optimized/vwaddu_vv.ll
+; spike/optimized/vwaddu_vx.ll
+; stb/optimized/stb_dxt.c.ll
+; stb/optimized/stb_image.c.ll
+; stb/optimized/stb_voxel_render.c.ll
+; velox/optimized/DecimalVectorFunctions.cpp.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; velox/optimized/StringFunctions.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; wireshark/optimized/packet-afp.c.ll
+; wireshark/optimized/packet-ieee1905.c.ll
+; wireshark/optimized/packet-vrt.c.ll
+; wireshark/optimized/packet-x25.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yosys/optimized/dfflibmap.ll
+; yosys/optimized/ezsat.ll
+; yosys/optimized/glift.ll
+; yosys/optimized/sat.ll
+; yosys/optimized/select.ll
+; z3/optimized/array_internalize.cpp.ll
+; z3/optimized/fm_tactic.cpp.ll
+; z3/optimized/fpa_rewriter.cpp.ll
+; z3/optimized/qe_lite_tactic.cpp.ll
+; z3/optimized/smt_clause.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 858993459
+  %3 = and i32 %0, 858993459
+  %4 = add nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 8 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; icu/optimized/ucptrie.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; luajit/optimized/lj_mcode.ll
+; luajit/optimized/lj_mcode_dyn.ll
+; minetest/optimized/clientmap.cpp.ll
+; php/optimized/zend_cfg.ll
+; php/optimized/zend_jit.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = and i64 %0, -8
+  %4 = add nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 68 occurrences:
+; abc/optimized/huffman.c.ll
+; cmake/optimized/huffman.c.ll
+; cpython/optimized/typeobject.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/match.c.ll
+; jemalloc/optimized/extent.ll
+; jemalloc/optimized/extent.pic.ll
+; jemalloc/optimized/extent.sym.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; linux/optimized/assoc_array.ll
+; linux/optimized/intel_atomic_plane.ll
+; linux/optimized/intel_guc_ads.ll
+; linux/optimized/mballoc.ll
+; linux/optimized/memfd.ll
+; llama.cpp/optimized/ggml.c.ll
+; nuttx/optimized/mm_free.c.ll
+; postgres/optimized/heapam_handler.ll
+; qemu/optimized/block_qed-table.c.ll
+; qemu/optimized/disas_riscv.c.ll
+; qemu/optimized/hw_net_e1000e_core.c.ll
+; qemu/optimized/hw_net_igb_core.c.ll
+; qemu/optimized/hw_net_rocker_rocker.c.ll
+; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
+; raylib/optimized/rcore.c.ll
+; redis/optimized/eset.ll
+; redis/optimized/eset.sym.ll
+; redis/optimized/extent.ll
+; redis/optimized/extent.sym.ll
+; redis/optimized/san.ll
+; redis/optimized/san.sym.ll
+; taskflow/optimized/async.cpp.ll
+; taskflow/optimized/attach_data.cpp.ll
+; taskflow/optimized/cancel.cpp.ll
+; taskflow/optimized/composition.cpp.ll
+; taskflow/optimized/condition.cpp.ll
+; taskflow/optimized/corun.cpp.ll
+; taskflow/optimized/dependent_async.cpp.ll
+; taskflow/optimized/dependent_async_algorithm.cpp.ll
+; taskflow/optimized/do_while_loop.cpp.ll
+; taskflow/optimized/exception.cpp.ll
+; taskflow/optimized/exclusive_scan.cpp.ll
+; taskflow/optimized/fibonacci.cpp.ll
+; taskflow/optimized/if_else.cpp.ll
+; taskflow/optimized/inclusive_scan.cpp.ll
+; taskflow/optimized/limited_concurrency.cpp.ll
+; taskflow/optimized/multi_condition.cpp.ll
+; taskflow/optimized/nested_if_else.cpp.ll
+; taskflow/optimized/observer.cpp.ll
+; taskflow/optimized/parallel_data_pipeline.cpp.ll
+; taskflow/optimized/parallel_for.cpp.ll
+; taskflow/optimized/parallel_graph_pipeline.cpp.ll
+; taskflow/optimized/parallel_sort.cpp.ll
+; taskflow/optimized/pipeline.cpp.ll
+; taskflow/optimized/pipeline_with_deferred_tokens.cpp.ll
+; taskflow/optimized/priority.cpp.ll
+; taskflow/optimized/reduce.cpp.ll
+; taskflow/optimized/run.cpp.ll
+; taskflow/optimized/runtime.cpp.ll
+; taskflow/optimized/scalable_pipeline.cpp.ll
+; taskflow/optimized/scalable_pipeline_with_deferred_tokens.cpp.ll
+; taskflow/optimized/simple.cpp.ll
+; taskflow/optimized/subflow.cpp.ll
+; taskflow/optimized/subflow_async.cpp.ll
+; taskflow/optimized/switch_case.cpp.ll
+; taskflow/optimized/taskflow_pipeline.cpp.ll
+; taskflow/optimized/text_pipeline.cpp.ll
+; taskflow/optimized/visualization.cpp.ll
+; taskflow/optimized/while_loop.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 32767
+  %3 = and i16 %0, -2
+  %4 = add i16 %3, %2
+  ret i16 %4
+}
+
+attributes #0 = { nounwind }
