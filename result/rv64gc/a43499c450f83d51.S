@@ -3,8 +3,8 @@
 func000000000000001f:                   # @func000000000000001f
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	add	a0, a0, a1
 	sext.w	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	mulhu	a1, a0, a3
 	srli	a1, a1, 5

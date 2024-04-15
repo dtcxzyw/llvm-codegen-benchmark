@@ -2,13 +2,13 @@
 	.quad	18040924479227903               # 0x4018200f0107ff
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2
-	or	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
 	snez	a2, a2
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 57
-	or	a0, a0, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
+	or	a0, a0, a3
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a2, a2, 255

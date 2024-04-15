@@ -3,12 +3,12 @@
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 1044464
 	addiw	a3, a3, -257
+	slli	a4, a3, 32
+	lui	a5, %hi(.LCPI0_0)
+	ld	a5, %lo(.LCPI0_0)(a5)
 	add	a2, a2, a3
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
-	slli	a3, a3, 32
-	add	a2, a2, a3
+	add	a2, a2, a4
 	or	a0, a0, a2
-	xor	a1, a1, a4
+	xor	a1, a1, a5
 	and	a0, a0, a1
 	ret

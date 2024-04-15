@@ -13,9 +13,9 @@ func0000000000000001:                   # @func0000000000000001
 	.word	0x3b23d70a                      # float 0.00249999994
 func0000000000000005:                   # @func0000000000000005
 	fcvt.s.w	fa5, a0
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
 	lui	a0, 778240
+	lui	a1, %hi(.LCPI1_0)
+	flw	fa4, %lo(.LCPI1_0)(a1)
 	fmv.w.x	fa3, a0
 	fmul.s	fa5, fa5, fa3
 	fadd.s	fa5, fa0, fa5

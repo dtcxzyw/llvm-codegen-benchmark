@@ -58,8 +58,8 @@ func00000000000000d4:                   # @func00000000000000d4
 func00000000000001ef:                   # @func00000000000001ef
 	lui	a3, %hi(.LCPI7_0)
 	ld	a3, %lo(.LCPI7_0)(a3)
-	add	a0, a0, a1
 	slli	a2, a2, 42
+	add	a0, a0, a1
 	add	a0, a0, a2
 	add	a0, a0, a3
 	ret

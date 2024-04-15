@@ -41,8 +41,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ld	a2, %lo(.LCPI3_0)(a2)
 	lui	a3, %hi(.LCPI3_1)
 	ld	a3, %lo(.LCPI3_1)(a3)
-	mul	a1, a1, a2
 	sext.w	a0, a0
+	mul	a1, a1, a2
 	rori	a1, a1, 2
 	sltu	a1, a3, a1
 	snez	a0, a0

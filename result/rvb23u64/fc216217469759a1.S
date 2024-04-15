@@ -7,9 +7,9 @@ func0000000000000015:                   # @func0000000000000015
 	fmv.w.x	fa5, a0
 	fadd.s	fa0, fa0, fa5
 .LBB0_2:                                # %entry
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, 799552
+	lui	a1, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a1)
 	fmv.w.x	fa4, a0
 	fadd.s	fa4, fa0, fa4
 	fabs.s	fa4, fa4

@@ -41,8 +41,8 @@ func000000000000007d:                   # @func000000000000007d
 func000000000000007b:                   # @func000000000000007b
 	lui	a3, %hi(.LCPI4_0)
 	ld	a3, %lo(.LCPI4_0)(a3)
-	add	a0, a0, a1
 	slli	a2, a2, 43
+	add	a0, a0, a1
 	add	a0, a0, a2
 	add	a0, a0, a3
 	ret

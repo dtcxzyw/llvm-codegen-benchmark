@@ -4,9 +4,9 @@ func0000000000000300:                   # @func0000000000000300
 	xor	a2, a0, a1
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
+	snez	a2, a2
 	sub	a0, a0, a1
-	snez	a1, a2
-	sub	a0, a0, a1
+	sub	a0, a0, a2
 	mulhu	a0, a0, a3
 	srli	a0, a0, 16
 	ret

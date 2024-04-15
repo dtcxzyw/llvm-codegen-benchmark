@@ -3,9 +3,9 @@
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	fcvt.l.d	a3, fa0, rtz
 	add	a0, a0, a1
-	fcvt.l.d	a1, fa0, rtz
-	add	a0, a0, a1
+	add	a0, a0, a3
 	mulh	a0, a0, a2
 	srli	a1, a0, 63
 	srai	a0, a0, 18

@@ -36,13 +36,13 @@ func000000000000000a:                   # @func000000000000000a
 .LCPI4_0:
 	.quad	128102389400760775              # 0x1c71c71c71c71c7
 func0000000000000151:                   # @func0000000000000151
-	sub	a1, a2, a1
-	lui	a3, %hi(.LCPI4_0)
-	ld	a3, %lo(.LCPI4_0)(a3)
-	slli	a2, a2, 3
+	slli	a3, a2, 3
+	lui	a4, %hi(.LCPI4_0)
+	ld	a4, %lo(.LCPI4_0)(a4)
 	sub	a2, a2, a1
-	add	a0, a0, a2
-	xor	a0, a0, a3
+	sub	a3, a3, a2
+	add	a0, a0, a3
+	xor	a0, a0, a4
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001

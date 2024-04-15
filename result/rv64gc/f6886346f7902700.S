@@ -7,27 +7,27 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000006:                   # @func0000000000000006
 	li	a5, 127
 	subw	a5, a5, a4
+	not	a6, a4
+	slli	a4, a5, 32
+	srli	a4, a4, 32
+	addi	a5, a4, -64
 	or	a1, a1, a3
-	slli	a5, a5, 32
-	srli	a5, a5, 32
-	addi	a3, a5, -64
-	not	a4, a4
-	bltz	a3, .LBB1_2
-	srl	a0, a1, a5
-	srl	a1, a1, a4
-	srai	a3, a3, 63
-	and	a1, a1, a3
+	bltz	a5, .LBB1_2
+	srl	a0, a1, a4
+	srl	a1, a1, a6
+	srai	a5, a5, 63
+	and	a1, a1, a5
 	ret
 .LBB1_2:
 	or	a0, a0, a2
 	slli	a2, a1, 1
-	not	a5, a5
-	sll	a2, a2, a5
-	srl	a0, a0, a4
+	not	a3, a4
+	sll	a2, a2, a3
+	srl	a0, a0, a6
 	or	a0, a0, a2
-	srl	a1, a1, a4
-	srai	a3, a3, 63
-	and	a1, a1, a3
+	srl	a1, a1, a6
+	srai	a5, a5, 63
+	and	a1, a1, a5
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a3, 1

@@ -20,13 +20,13 @@ func0000000000001044:                   # @func0000000000001044
 	.quad	0xc0554345b1a57f00              # double -85.051128779999999
 func0000000000001104:                   # @func0000000000001104
 	lui	a0, %hi(.LCPI1_0)
-	lui	a1, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_1)(a1)
-	fld	fa4, %lo(.LCPI1_0)(a0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
 	fld	fa3, %lo(.LCPI1_2)(a0)
-	flt.d	a0, fa5, fa1
-	flt.d	a1, fa4, fa0
+	flt.d	a0, fa5, fa0
+	flt.d	a1, fa4, fa1
 	or	a0, a0, a1
 	flt.d	a1, fa0, fa3
 	or	a0, a0, a1

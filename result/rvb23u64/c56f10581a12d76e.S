@@ -12,8 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
-	sub	a2, a2, a1
 	sext.w	a0, a0
+	sub	a2, a2, a1
 	mulh	a1, a2, a3
 	srli	a2, a1, 63
 	addw	a1, a1, a2

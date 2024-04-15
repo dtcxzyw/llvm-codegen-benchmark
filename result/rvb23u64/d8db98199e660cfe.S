@@ -19,9 +19,8 @@ func000000000000000d:                   # @func000000000000000d
 	addw	a0, a0, a1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	slli	a0, a0, 1
 	slli	a1, a1, 9
-	or	a0, a0, a1
+	sh1add	a0, a0, a1
 	li	a1, 1
 	slli	a1, a1, 33
 	addi	a1, a1, -2

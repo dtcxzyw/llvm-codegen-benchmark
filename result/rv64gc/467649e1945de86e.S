@@ -85,13 +85,13 @@ func00000000000001fa:                   # @func00000000000001fa
 .LCPI9_0:
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000084:                   # @func0000000000000084
-	li	a2, 10
-	lui	a3, %hi(.LCPI9_0)
-	ld	a3, %lo(.LCPI9_0)(a3)
-	mul	a0, a0, a2
 	andi	a1, a1, 255
+	lui	a2, %hi(.LCPI9_0)
+	ld	a2, %lo(.LCPI9_0)(a2)
+	li	a3, 10
+	mul	a0, a0, a3
 	add	a0, a0, a1
-	sltu	a0, a0, a3
+	sltu	a0, a0, a2
 	ret
 func0000000000000101:                   # @func0000000000000101
 	andi	a1, a1, 255
@@ -217,13 +217,13 @@ func00000000000001fc:                   # @func00000000000001fc
 .LCPI24_0:
 	.quad	1844674407370955161             # 0x1999999999999999
 func00000000000001a8:                   # @func00000000000001a8
-	li	a2, 10
-	lui	a3, %hi(.LCPI24_0)
-	ld	a3, %lo(.LCPI24_0)(a3)
-	mul	a0, a0, a2
 	andi	a1, a1, 255
+	lui	a2, %hi(.LCPI24_0)
+	ld	a2, %lo(.LCPI24_0)(a2)
+	li	a3, 10
+	mul	a0, a0, a3
 	add	a0, a0, a1
-	sltu	a0, a3, a0
+	sltu	a0, a2, a0
 	ret
 func000000000000015a:                   # @func000000000000015a
 	sext.w	a1, a1

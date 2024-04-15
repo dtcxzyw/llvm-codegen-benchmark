@@ -147,8 +147,8 @@ func00000000000000fd:                   # @func00000000000000fd
 func00000000000000ef:                   # @func00000000000000ef
 	lui	a3, %hi(.LCPI20_0)
 	ld	a3, %lo(.LCPI20_0)(a3)
-	add	a0, a0, a1
 	slli	a2, a2, 43
+	add	a0, a0, a1
 	add	a0, a0, a2
 	add	a0, a0, a3
 	ret

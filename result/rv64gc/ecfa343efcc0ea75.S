@@ -43,12 +43,12 @@ func0000000000000548:                   # @func0000000000000548
 func0000000000000441:                   # @func0000000000000441
 	lui	a3, %hi(.LCPI5_0)
 	ld	a3, %lo(.LCPI5_0)(a3)
+	addi	a2, a2, -48
+	sltiu	a2, a2, 6
 	add	a0, a0, a1
-	addi	a1, a2, -48
-	sltiu	a1, a1, 6
 	xor	a0, a0, a3
 	seqz	a0, a0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000446:                   # @func0000000000000446
 	addiw	a2, a2, -10

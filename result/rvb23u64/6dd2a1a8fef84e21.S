@@ -1,16 +1,16 @@
 .LCPI0_0:
 	.quad	307445734561825861              # 0x444444444444445
 func0000000000000001:                   # @func0000000000000001
+	zext.h	a0, a0
 	lui	a1, 978671
 	addiw	a1, a1, -273
 	slli	a2, a1, 32
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	zext.h	a0, a0
 	mul	a0, a0, a1
 	rori	a0, a0, 2
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	ret
 func0000000000000004:                   # @func0000000000000004
 	zext.w	a1, a0
@@ -26,15 +26,15 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI2_0:
 	.quad	595056260442243601              # 0x842108421084211
 func0000000000000021:                   # @func0000000000000021
+	zext.h	a0, a0
 	lui	a1, 777976
 	addiw	a1, a1, -1057
-	slli	a2, a1, 35
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
-	add	a1, a1, a2
-	zext.h	a0, a0
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
+	slli	a3, a1, 35
+	add	a1, a1, a3
 	mul	a0, a0, a1
-	sltu	a0, a0, a3
+	sltu	a0, a0, a2
 	ret
 .LCPI3_0:
 	.quad	2635249153387078803             # 0x2492492492492493

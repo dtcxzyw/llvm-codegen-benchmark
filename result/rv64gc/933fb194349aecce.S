@@ -37,9 +37,9 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI3_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000012:                   # @func0000000000000012
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, 786432
+	lui	a1, %hi(.LCPI3_0)
+	flw	fa5, %lo(.LCPI3_0)(a1)
 	fmv.w.x	fa4, a0
 	fmadd.s	fa4, fa0, fa4, fa1
 	fabs.s	fa4, fa4

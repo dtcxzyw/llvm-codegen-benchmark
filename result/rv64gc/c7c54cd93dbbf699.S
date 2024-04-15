@@ -51,8 +51,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000020:                   # @func0000000000000020
 	lui	a3, %hi(.LCPI8_0)
 	ld	a3, %lo(.LCPI8_0)(a3)
-	add	a0, a0, a1
 	andi	a2, a2, 1
+	add	a0, a0, a1
 	add	a0, a0, a2
 	add	a0, a0, a3
 	ret
@@ -61,8 +61,8 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000001:                   # @func0000000000000001
 	lui	a3, %hi(.LCPI9_0)
 	ld	a3, %lo(.LCPI9_0)(a3)
-	add	a0, a0, a1
 	andi	a2, a2, 1
+	add	a0, a0, a1
 	add	a0, a0, a2
 	add	a0, a0, a3
 	ret

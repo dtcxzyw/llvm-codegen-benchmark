@@ -21,8 +21,8 @@ func0000000000000021:                   # @func0000000000000021
 func000000000000005a:                   # @func000000000000005a
 	lui	a1, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a1)
-	fsub.s	fa4, fa0, fa1
 	sext.w	a0, a0
+	fsub.s	fa4, fa0, fa1
 	fle.s	a1, fa4, fa5
 	slti	a0, a0, 0
 	or	a0, a0, a1
@@ -33,8 +33,8 @@ func000000000000005a:                   # @func000000000000005a
 func000000000000008c:                   # @func000000000000008c
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	fsub.d	fa4, fa0, fa1
 	sext.w	a0, a0
+	fsub.d	fa4, fa0, fa1
 	feq.d	a1, fa4, fa5
 	snez	a0, a0
 	and	a0, a0, a1

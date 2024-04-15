@@ -3,8 +3,8 @@
 func000000000000000b:                   # @func000000000000000b
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	or	a0, a0, a1
 	slli	a2, a2, 56
+	or	a0, a0, a1
 	or	a0, a0, a2
 	xor	a0, a0, a3
 	ret

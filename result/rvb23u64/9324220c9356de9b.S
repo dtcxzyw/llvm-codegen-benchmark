@@ -2,9 +2,9 @@
 	.quad	0x4059000000000000              # double 100
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1
-	lui	a2, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a2)
 	li	a2, 1
+	lui	a3, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a3)
 	max	a1, a1, a2
 	fcvt.d.w	fa4, a1
 	fcvt.d.w	fa3, a0
@@ -14,9 +14,9 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_0:
 	.quad	0x3fcae147ae147ae1              # double 0.20999999999999999
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a2)
 	li	a2, 1
+	lui	a3, %hi(.LCPI1_0)
+	fld	fa5, %lo(.LCPI1_0)(a3)
 	max	a1, a1, a2
 	fcvt.d.l	fa4, a1
 	fcvt.d.l	fa3, a0

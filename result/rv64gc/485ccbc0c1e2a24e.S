@@ -20,8 +20,8 @@ func0000000000000000:                   # @func0000000000000000
 	flw	fa5, %lo(.LCPI1_0)(a1)
 	lui	a1, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a1)
-	fmadd.s	fa5, fa0, fa5, fa1
 	andi	a0, a0, 255
+	fmadd.s	fa5, fa0, fa5, fa1
 	fcvt.s.wu	fa3, a0
 	fmadd.s	fa0, fa3, fa4, fa5
 	ret

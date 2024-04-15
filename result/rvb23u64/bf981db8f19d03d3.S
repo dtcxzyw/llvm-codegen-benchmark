@@ -9,14 +9,12 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slli	a0, a0, 1
 	slli	a1, a1, 33
-	or	a0, a0, a1
+	sh1add	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
-	slli	a0, a0, 1
 	slli	a1, a1, 33
-	or	a0, a0, a1
+	sh1add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slliw	a0, a0, 24
@@ -74,7 +72,6 @@ func0000000000000016:                   # @func0000000000000016
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a0, a0, 1
 	slli	a1, a1, 33
-	or	a0, a0, a1
+	sh1add	a0, a0, a1
 	ret

@@ -2,9 +2,9 @@
 	.word	0x1e3ce508                      # float 9.99999968E-21
 func0000000000000002:                   # @func0000000000000002
 	fmv.s	fa5, fa0
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa0, %lo(.LCPI0_0)(a0)
 	lui	a0, 260096
+	lui	a1, %hi(.LCPI0_0)
+	flw	fa0, %lo(.LCPI0_0)(a1)
 	fmv.w.x	fa4, a0
 	fdiv.s	fa4, fa4, fa1
 	fmul.s	fa5, fa4, fa5
@@ -17,9 +17,9 @@ func0000000000000002:                   # @func0000000000000002
 	.word	0x3f7fffff                      # float 0.99999994
 func0000000000000004:                   # @func0000000000000004
 	fmv.s	fa5, fa0
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa0, %lo(.LCPI1_0)(a0)
 	lui	a0, 260096
+	lui	a1, %hi(.LCPI1_0)
+	flw	fa0, %lo(.LCPI1_0)(a1)
 	fmv.w.x	fa4, a0
 	fdiv.s	fa4, fa4, fa1
 	fmul.s	fa5, fa5, fa4
