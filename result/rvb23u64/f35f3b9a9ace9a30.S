@@ -13,14 +13,14 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000013:                   # @func0000000000000013
 	sh2add	a0, a0, a0
-	slli	a0, a0, 59
-	srli	a0, a0, 56
+	slli	a0, a0, 3
+	andi	a0, a0, 248
 	addi	a0, a0, 19
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sh1add	a0, a0, a0
-	slli	a0, a0, 33
-	srli	a0, a0, 32
+	slli	a0, a0, 1
+	zext.w	a0, a0
 	addi	a0, a0, 3
 	ret
 func000000000000000f:                   # @func000000000000000f

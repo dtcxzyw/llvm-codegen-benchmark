@@ -29,9 +29,8 @@ func0000000000000038:                   # @func0000000000000038
 	sltu	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	zext.w	a2, a1
-	sh3add.uw	a1, a1, a2
-	slli	a1, a1, 1
+	slli.uw	a1, a1, 1
+	sh3add	a1, a1, a1
 	sltu	a0, a1, a0
 	ret
 func0000000000000079:                   # @func0000000000000079

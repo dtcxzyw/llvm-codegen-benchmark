@@ -49,9 +49,9 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000148:                   # @func0000000000000148
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
-	sh1add	a2, a2, a2
 	add	a0, a0, a1
-	sh2add	a0, a2, a0
+	sh1add	a1, a2, a2
+	sh2add	a0, a1, a0
 	sltu	a0, a3, a0
 	ret
 func0000000000000141:                   # @func0000000000000141
@@ -121,9 +121,9 @@ func0000000000000156:                   # @func0000000000000156
 	slti	a0, a0, -4
 	ret
 func0000000000000354:                   # @func0000000000000354
-	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh2add	a1, a2, a2
+	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
 	ret

@@ -10,8 +10,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sh1add	a2, a2, a2
-	sh1add	a0, a1, a0
 	slli	a2, a2, 1
+	sh1add	a0, a1, a0
 	sh1add.uw	a0, a2, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

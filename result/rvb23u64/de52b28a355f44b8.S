@@ -38,8 +38,8 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sh1add	a2, a2, a2
-	slli	a2, a2, 33
-	srli	a2, a2, 32
+	slli	a2, a2, 1
+	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

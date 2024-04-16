@@ -26,8 +26,8 @@ func00000000000001e5:                   # @func00000000000001e5
 func00000000000001ff:                   # @func00000000000001ff
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sh2add	a1, a1, a1
 	andi	a0, a0, 255
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret
@@ -50,36 +50,36 @@ func00000000000001a5:                   # @func00000000000001a5
 func00000000000000b0:                   # @func00000000000000b0
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sh2add	a1, a1, a1
 	sext.w	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sh2add	a1, a1, a1
 	sext.w	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
 func00000000000001e8:                   # @func00000000000001e8
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sh2add	a1, a1, a1
 	andi	a0, a0, 255
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret
 func00000000000001fa:                   # @func00000000000001fa
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sh2add	a1, a1, a1
 	andi	a0, a0, 255
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
 func0000000000000148:                   # @func0000000000000148
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sh2add	a1, a1, a1
 	andi	a0, a0, 255
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret

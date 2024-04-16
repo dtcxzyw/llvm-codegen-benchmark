@@ -9,8 +9,8 @@ func0000000000000065:                   # @func0000000000000065
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sh2add	a1, a0, a0
-	slli	a1, a1, 33
-	srli	a1, a1, 41
+	slli	a1, a1, 1
+	srliw	a1, a1, 9
 	li	a2, -48
 	mul	a1, a1, a2
 	addw	a0, a0, a1

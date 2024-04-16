@@ -1,7 +1,7 @@
 func000000000000007f:                   # @func000000000000007f
-	sh2add	a1, a1, a1
 	li	a2, 100
 	mul	a0, a0, a2
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

@@ -46,9 +46,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000013:                   # @func0000000000000013
 	addi	a0, a0, 2
-	zext.w	a1, a0
-	sh2add.uw	a0, a0, a1
-	slli	a0, a0, 3
+	slli.uw	a0, a0, 3
+	sh2add	a0, a0, a0
 	ret
 .LCPI8_0:
 	.quad	-4265267296055464877            # 0xc4ceb9fe1a85ec53

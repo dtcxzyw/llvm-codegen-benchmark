@@ -82,11 +82,11 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000003:                   # @func0000000000000003
 	zext.w	a2, a2
-	zext.w	a3, a0
-	sh1add.uw	a0, a0, a3
+	zext.w	a0, a0
 	li	a3, 344
 	mul	a2, a2, a3
 	add	a1, a1, a2
+	sh1add	a0, a0, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 104
 	ret

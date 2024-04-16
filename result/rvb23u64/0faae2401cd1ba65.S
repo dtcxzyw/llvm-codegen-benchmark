@@ -4,11 +4,10 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	srli	a1, a0, 1
-	andi	a0, a0, -2
-	add	a0, a0, a1
-	slli	a0, a0, 1
-	addi	a0, a0, 6
+	srli	a0, a0, 1
+	sh1add	a0, a0, a0
+	li	a1, 6
+	sh1add	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	lui	a1, 524296
@@ -29,8 +28,9 @@ func0000000000000005:                   # @func0000000000000005
 	mulhu	a0, a0, a1
 	srli	a0, a0, 34
 	sh1add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -6
+	li	a1, -6
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
 	zext.w	a0, a0

@@ -27,8 +27,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	addw	a0, a0, a1
 	ret
 func00000000000000c0:                   # @func00000000000000c0
-	zext.w	a3, a2
-	sh1add.uw	a2, a2, a3
+	zext.w	a2, a2
+	sh1add	a2, a2, a2
 	sh2add	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 4

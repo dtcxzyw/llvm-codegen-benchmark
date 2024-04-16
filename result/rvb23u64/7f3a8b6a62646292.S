@@ -36,8 +36,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	sh1add	a1, a1, a1
-	slli	a1, a1, 3
-	addi	a1, a1, 24
+	li	a2, 24
+	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -56,15 +56,16 @@ func00000000000000f5:                   # @func00000000000000f5
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	sh1add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, 3
+	li	a2, 3
+	sh1add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000075:                   # @func0000000000000075
 	sext.w	a0, a0
 	sh1add	a1, a1, a1
-	slli	a1, a1, 1
-	addiw	a1, a1, 6
+	li	a2, 6
+	sh1add	a1, a1, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -106,8 +107,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	sh1add	a1, a1, a1
-	slli	a1, a1, 2
-	addi	a1, a1, 132
+	li	a2, 132
+	sh2add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
@@ -121,8 +122,9 @@ func00000000000000f1:                   # @func00000000000000f1
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	sh2add	a1, a1, a1
-	slli	a1, a1, 2
-	addiw	a1, a1, 10
+	li	a2, 10
+	sh2add	a1, a1, a2
+	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

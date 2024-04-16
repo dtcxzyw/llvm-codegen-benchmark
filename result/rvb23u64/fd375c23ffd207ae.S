@@ -6,8 +6,8 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	a2, a2, 1
-	zext.w	a3, a2
-	sh1add.uw	a2, a2, a3
+	zext.w	a2, a2
+	sh1add	a2, a2, a2
 	sh3add	a1, a2, a1
 	addi	a1, a1, 24
 	sltu	a0, a1, a0

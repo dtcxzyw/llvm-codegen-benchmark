@@ -31,8 +31,8 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	sh1add	a2, a2, a2
-	slli	a2, a2, 1
-	addi	a2, a2, 6
+	li	a3, 6
+	sh1add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

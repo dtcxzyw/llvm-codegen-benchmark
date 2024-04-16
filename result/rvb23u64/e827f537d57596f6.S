@@ -30,8 +30,8 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a0, a0, 4
 	addi	a0, a0, -349
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -19
+	li	a1, -19
+	sh3add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	zext.w	a0, a0
@@ -52,8 +52,8 @@ func0000000000000008:                   # @func0000000000000008
 	mulhu	a0, a0, a1
 	srli	a0, a0, 5
 	sh2add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -40
+	li	a1, -40
+	sh3add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	zext.w	a0, a0

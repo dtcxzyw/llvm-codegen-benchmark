@@ -5,8 +5,7 @@ func0000000000000046:                   # @func0000000000000046
 	addiw	a2, a2, -1365
 	mul	a1, a1, a2
 	srliw	a2, a1, 31
-	srai	a1, a1, 16
-	srli	a1, a1, 1
+	srli	a1, a1, 17
 	add	a1, a1, a2
 	sh1add	a1, a1, a1
 	slli	a1, a1, 2

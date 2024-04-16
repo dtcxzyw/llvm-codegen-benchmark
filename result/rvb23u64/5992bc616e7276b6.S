@@ -17,6 +17,7 @@ func0000000000000151:                   # @func0000000000000151
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
-	addiw	a0, a0, 48
+	li	a1, 48
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
 	ret

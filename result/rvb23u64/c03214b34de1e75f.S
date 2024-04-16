@@ -10,16 +10,16 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a1, 33
 	ret
 func0000000000000000:                   # @func0000000000000000
-	srli	a0, a0, 1
+	srliw	a0, a0, 1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 8
+	li	a1, 8
+	sh3add	a0, a0, a1
 	zext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	srliw	a1, a0, 3
-	srli	a0, a0, 3
-	sh1add	a0, a0, a1
-	slli	a0, a0, 2
-	addiw	a0, a0, 2000
+	srliw	a0, a0, 3
+	sh1add	a0, a0, a0
+	li	a1, 2000
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
 	ret

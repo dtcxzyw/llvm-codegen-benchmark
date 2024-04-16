@@ -39,15 +39,15 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a0, a3, 1
 	ret
 func00000000000000d5:                   # @func00000000000000d5
-	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh2add	a1, a2, a2
+	sh1add	a0, a1, a0
 	slliw	a0, a0, 6
 	ret
 func00000000000000d7:                   # @func00000000000000d7
-	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh2add	a1, a2, a2
+	sh1add	a0, a1, a0
 	slliw	a0, a0, 4
 	ret
 func0000000000000010:                   # @func0000000000000010

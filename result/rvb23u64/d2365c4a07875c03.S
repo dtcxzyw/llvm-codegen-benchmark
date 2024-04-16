@@ -1,5 +1,5 @@
 func0000000000000002:                   # @func0000000000000002
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 39
+	li	a1, 39
+	sh3add	a0, a0, a1
 	ret

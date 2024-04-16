@@ -4,8 +4,8 @@ func0000000000000104:                   # @func0000000000000104
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	sh2add	a1, a1, a1
 	sext.w	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sltu	a0, a0, a2
 	ret
@@ -15,16 +15,16 @@ func0000000000000101:                   # @func0000000000000101
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	sh2add	a1, a1, a1
 	sext.w	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000108:                   # @func0000000000000108
 	add	a1, a1, a2
-	sh2add	a1, a1, a1
 	sext.w	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
@@ -47,8 +47,8 @@ func00000000000007f1:                   # @func00000000000007f1
 	ret
 func00000000000007f8:                   # @func00000000000007f8
 	add	a1, a1, a2
-	sh2add	a1, a1, a1
 	andi	a0, a0, 255
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	lui	a1, 104858
@@ -61,8 +61,8 @@ func00000000000007a8:                   # @func00000000000007a8
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI6_0)
 	ld	a2, %lo(.LCPI6_0)(a2)
-	sh2add	a1, a1, a1
 	andi	a0, a0, 255
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sltu	a0, a2, a0
 	ret

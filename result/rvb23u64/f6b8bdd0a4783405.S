@@ -49,6 +49,6 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000f:                   # @func000000000000000f
 	sh2add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 80
+	li	a1, 80
+	sh3add	a0, a0, a1
 	ret

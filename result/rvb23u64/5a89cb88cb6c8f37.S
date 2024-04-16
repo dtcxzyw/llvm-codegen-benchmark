@@ -18,12 +18,12 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a3, a1, 63
 	srai	a1, a1, 34
 	add	a1, a1, a3
-	sh2add	a1, a1, a1
 	sext.w	a0, a0
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 34
 	add	a0, a0, a2
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

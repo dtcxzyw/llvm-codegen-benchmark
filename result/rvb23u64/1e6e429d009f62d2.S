@@ -9,16 +9,18 @@ func000000000000015d:                   # @func000000000000015d
 	andi	a1, a1, 255
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -528
+	li	a1, -528
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000017d:                   # @func000000000000017d
 	andi	a1, a1, 255
 	add	a0, a0, a1
 	addi	a0, a0, -722
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -8
+	li	a1, -8
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000017f:                   # @func000000000000017f
 	andi	a1, a1, 255

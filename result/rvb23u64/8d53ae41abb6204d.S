@@ -37,15 +37,15 @@ func000000000000001e:                   # @func000000000000001e
 	and	a0, a0, a1
 	ret
 func0000000000000037:                   # @func0000000000000037
-	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh2add	a1, a2, a2
+	sh1add	a0, a1, a0
 	andi	a0, a0, 63
 	ret
 func0000000000000035:                   # @func0000000000000035
-	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh2add	a1, a2, a2
+	sh1add	a0, a1, a0
 	andi	a0, a0, 63
 	ret
 func000000000000000c:                   # @func000000000000000c

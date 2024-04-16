@@ -20,20 +20,23 @@ func000000000000035d:                   # @func000000000000035d
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -528
+	li	a1, -528
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func0000000000000104:                   # @func0000000000000104
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -528
+	li	a1, -528
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func0000000000000155:                   # @func0000000000000155
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -528
+	li	a1, -528
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret

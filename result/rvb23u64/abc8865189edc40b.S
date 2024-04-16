@@ -7,8 +7,8 @@ func000000000000001f:                   # @func000000000000001f
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 24
+	li	a1, 24
+	sh3add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -24
@@ -19,8 +19,8 @@ func000000000000000a:                   # @func000000000000000a
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 24
+	li	a1, 24
+	sh3add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -24
@@ -31,8 +31,8 @@ func0000000000000008:                   # @func0000000000000008
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 24
+	li	a1, 24
+	sh3add	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	addi	a0, a0, -24
@@ -43,8 +43,8 @@ func000000000000001d:                   # @func000000000000001d
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 24
+	li	a1, 24
+	sh3add	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
 	addi	a0, a0, 2
@@ -66,8 +66,8 @@ func0000000000000015:                   # @func0000000000000015
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 24
+	li	a1, 24
+	sh3add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -12
@@ -78,8 +78,8 @@ func0000000000000000:                   # @func0000000000000000
 	mulhu	a0, a0, a1
 	srli	a0, a0, 3
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
-	addi	a0, a0, 12
+	li	a1, 12
+	sh2add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, -24
@@ -90,6 +90,6 @@ func0000000000000018:                   # @func0000000000000018
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 24
+	li	a1, 24
+	sh3add	a0, a0, a1
 	ret

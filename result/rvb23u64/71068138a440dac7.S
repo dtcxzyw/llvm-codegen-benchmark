@@ -1,9 +1,7 @@
 func0000000000000019:                   # @func0000000000000019
-	neg	a3, a2
-	slli	a3, a3, 5
-	slli	a2, a2, 3
-	sub	a1, a1, a2
-	add	a1, a1, a3
+	neg	a2, a2
+	sh2add	a2, a2, a2
+	sh3add	a1, a2, a1
 	sub	a1, a1, a0
 	lui	a0, 838861
 	addiw	a0, a0, -819
@@ -13,11 +11,9 @@ func0000000000000019:                   # @func0000000000000019
 	srli	a0, a0, 5
 	ret
 func0000000000000009:                   # @func0000000000000009
-	neg	a3, a2
-	slli	a3, a3, 4
-	slli	a2, a2, 3
-	sub	a1, a1, a2
-	add	a1, a1, a3
+	neg	a2, a2
+	sh1add	a2, a2, a2
+	sh3add	a1, a2, a1
 	sub	a1, a1, a0
 	lui	a0, 699051
 	addiw	a0, a0, -1365
@@ -27,11 +23,9 @@ func0000000000000009:                   # @func0000000000000009
 	srli	a0, a0, 4
 	ret
 func0000000000000011:                   # @func0000000000000011
-	neg	a3, a2
-	slli	a3, a3, 4
-	slli	a2, a2, 3
-	sub	a1, a1, a2
-	add	a1, a1, a3
+	neg	a2, a2
+	sh1add	a2, a2, a2
+	sh3add	a1, a2, a1
 	sub	a1, a1, a0
 	lui	a0, 699051
 	addiw	a0, a0, -1365
@@ -41,11 +35,9 @@ func0000000000000011:                   # @func0000000000000011
 	srli	a0, a0, 4
 	ret
 func0000000000000001:                   # @func0000000000000001
-	neg	a3, a2
-	slli	a3, a3, 3
-	slli	a2, a2, 2
-	sub	a1, a1, a2
-	add	a1, a1, a3
+	neg	a2, a2
+	sh1add	a2, a2, a2
+	sh2add	a1, a2, a1
 	sub	a1, a1, a0
 	lui	a0, 699051
 	addiw	a0, a0, -1365

@@ -18,14 +18,16 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, 15
+	li	a1, 15
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	andi	a0, a0, -16
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 2
-	addiw	a0, a0, 35
+	li	a1, 35
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
 	andi	a0, a0, -16
 	ret

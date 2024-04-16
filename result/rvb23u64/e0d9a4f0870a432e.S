@@ -19,7 +19,6 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sh1add	a0, a0, a0
-	zext.w	a1, a0
-	sh1add.uw	a0, a0, a1
-	slli	a0, a0, 2
+	slli.uw	a0, a0, 2
+	sh1add	a0, a0, a0
 	ret

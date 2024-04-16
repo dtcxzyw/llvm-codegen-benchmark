@@ -76,8 +76,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000053:                   # @func0000000000000053
 	sext.w	a2, a2
 	sgtz	a2, a2
-	zext.w	a3, a1
-	sh1add.uw	a1, a1, a3
+	zext.w	a1, a1
+	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
 	ret

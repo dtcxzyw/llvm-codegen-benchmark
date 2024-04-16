@@ -13,9 +13,8 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
-	slli	a1, a1, 3
+	slli.uw	a1, a1, 3
+	sh1add	a1, a1, a1
 	sltu	a0, a1, a0
 	ret
 func000000000000003a:                   # @func000000000000003a

@@ -1,5 +1,5 @@
 func00000000000000a0:                   # @func00000000000000a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
 	divw	a0, a1, a0

@@ -1,7 +1,8 @@
 func0000000000000006:                   # @func0000000000000006
 	sh3add	a2, a2, a2
-	slli	a2, a2, 1
-	addiw	a2, a2, 4
+	li	a3, 4
+	sh1add	a2, a2, a3
+	sext.w	a2, a2
 	addw	a0, a0, a1
 	slt	a0, a0, a2
 	ret

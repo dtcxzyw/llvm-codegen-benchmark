@@ -1,8 +1,8 @@
 func000000000000002d:                   # @func000000000000002d
-	zext.w	a1, a0
-	sh1add.uw	a0, a0, a1
-	slli	a0, a0, 2
-	addi	a0, a0, -12
+	zext.w	a0, a0
+	sh1add	a0, a0, a0
+	li	a1, -12
+	sh2add	a0, a0, a1
 	lui	a1, 699051
 	addiw	a1, a1, -1365
 	slli	a2, a1, 32
@@ -10,14 +10,14 @@ func000000000000002d:                   # @func000000000000002d
 	mulhu	a0, a0, a1
 	srli	a0, a0, 3
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
-	addi	a0, a0, 12
+	li	a1, 12
+	sh2add	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
-	zext.w	a1, a0
-	sh1add.uw	a0, a0, a1
-	slli	a0, a0, 2
-	addi	a0, a0, -12
+	zext.w	a0, a0
+	sh1add	a0, a0, a0
+	li	a1, -12
+	sh2add	a0, a0, a1
 	lui	a1, 699051
 	addiw	a1, a1, -1365
 	slli	a2, a1, 32
@@ -25,8 +25,8 @@ func000000000000002f:                   # @func000000000000002f
 	mulhu	a0, a0, a1
 	srli	a0, a0, 3
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
-	addi	a0, a0, 12
+	li	a1, 12
+	sh2add	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	-7515340178177965473            # 0x97b425ed097b425f

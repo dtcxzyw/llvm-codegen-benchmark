@@ -6,8 +6,8 @@ func000000000000000b:                   # @func000000000000000b
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a1, a1, -1
-	zext.w	a2, a1
-	sh2add.uw	a1, a1, a2
+	zext.w	a1, a1
+	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

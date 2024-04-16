@@ -19,7 +19,7 @@ func000000000000005c:                   # @func000000000000005c
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a0, a0
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -1017
+	li	a1, -1017
+	sh3add	a0, a0, a1
 	sltiu	a0, a0, -1025
 	ret

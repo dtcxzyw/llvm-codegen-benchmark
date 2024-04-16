@@ -47,8 +47,8 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a0, a0, a0
-	slli	a0, a0, 33
-	srli	a0, a0, 41
+	slli	a0, a0, 1
+	srliw	a0, a0, 9
 	li	a1, -48
 	mul	a0, a0, a1
 	ret

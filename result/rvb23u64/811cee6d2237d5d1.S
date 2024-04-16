@@ -29,10 +29,10 @@ func000000000000001d:                   # @func000000000000001d
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mul	a0, a0, a1
-	zext.w	a1, a0
-	sh1add.uw	a0, a0, a1
-	slli	a0, a0, 2
-	addi	a0, a0, -12
+	zext.w	a0, a0
+	sh1add	a0, a0, a0
+	li	a1, -12
+	sh2add	a0, a0, a1
 	ret
 .LCPI3_0:
 	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
@@ -43,8 +43,8 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a1, a0, 63
 	srli	a0, a0, 1
 	add	a0, a0, a1
-	zext.w	a1, a0
-	sh1add.uw	a0, a0, a1
-	slli	a0, a0, 2
-	addi	a0, a0, -12
+	zext.w	a0, a0
+	sh1add	a0, a0, a0
+	li	a1, -12
+	sh2add	a0, a0, a1
 	ret

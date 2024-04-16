@@ -17,14 +17,14 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, -1
+	li	a2, -1
+	sh1add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
 	sh2add	a1, a1, a1
-	slli	a1, a1, 3
-	addi	a1, a1, 120
+	li	a2, 120
+	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
@@ -55,8 +55,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addiw	a1, a1, 10
+	li	a2, 10
+	sh1add	a1, a1, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
@@ -77,8 +78,9 @@ func0000000000000051:                   # @func0000000000000051
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
 	sh2add	a1, a1, a1
-	slli	a1, a1, 2
-	addiw	a1, a1, 16
+	li	a2, 16
+	sh2add	a1, a1, a2
+	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
 func00000000000000f6:                   # @func00000000000000f6
@@ -111,29 +113,30 @@ func00000000000000fb:                   # @func00000000000000fb
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	sh1add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, 2
+	li	a2, 2
+	sh1add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000089:                   # @func0000000000000089
 	sh2add	a1, a1, a1
-	slli	a1, a1, 3
-	addi	a1, a1, 40
+	li	a2, 40
+	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func00000000000000f9:                   # @func00000000000000f9
 	sh2add	a1, a1, a1
-	slli	a1, a1, 3
-	addi	a1, a1, 40
+	li	a2, 40
+	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func000000000000007b:                   # @func000000000000007b
 	sext.w	a0, a0
 	sh1add	a1, a1, a1
-	slli	a1, a1, 1
-	addiw	a1, a1, 16
+	li	a2, 16
+	sh1add	a1, a1, a2
+	sext.w	a1, a1
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret

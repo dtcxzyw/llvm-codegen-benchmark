@@ -45,9 +45,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	sltu	a0, a2, a0
 	ret
 func00000000000000c5:                   # @func00000000000000c5
-	zext.w	a3, a2
-	sh1add.uw	a2, a2, a3
-	slli	a2, a2, 3
+	slli.uw	a2, a2, 3
+	sh1add	a2, a2, a2
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
 	xori	a0, a0, 1

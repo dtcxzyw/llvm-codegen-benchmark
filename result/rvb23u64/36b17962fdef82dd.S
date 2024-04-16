@@ -5,9 +5,9 @@ func000000000000001c:                   # @func000000000000001c
 	slli	a3, a3, 24
 	addi	a3, a3, 15
 	and	a2, a2, a3
-	sh1add	a2, a2, a2
 	or	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh1add	a1, a2, a2
+	sh1add	a0, a1, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
 	srli	a2, a2, 11
@@ -16,9 +16,9 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a3, a3, 24
 	addi	a3, a3, 15
 	and	a2, a2, a3
-	sh1add	a2, a2, a2
 	or	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh1add	a1, a2, a2
+	sh1add	a0, a1, a0
 	ret
 func0000000000000015:                   # @func0000000000000015
 	srli	a2, a2, 20

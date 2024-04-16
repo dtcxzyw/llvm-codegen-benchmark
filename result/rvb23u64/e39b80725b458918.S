@@ -19,8 +19,8 @@ func000000000000006f:                   # @func000000000000006f
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 365
+	li	a1, 365
+	sh3add	a0, a0, a1
 	ret
 func000000000000006d:                   # @func000000000000006d
 	addi	a0, a0, 12
@@ -32,8 +32,8 @@ func000000000000006d:                   # @func000000000000006d
 	srli	a0, a0, 4
 	addi	a0, a0, -349
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -19
+	li	a1, -19
+	sh3add	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
 	lui	a1, 1048540

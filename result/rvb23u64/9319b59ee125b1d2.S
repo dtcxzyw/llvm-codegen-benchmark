@@ -42,8 +42,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, -48
+	li	a2, -48
+	sh1add	a1, a1, a2
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -67,8 +67,9 @@ func0000000000000358:                   # @func0000000000000358
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addiw	a1, a1, -48
+	li	a2, -48
+	sh1add	a1, a1, a2
+	sext.w	a1, a1
 	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -117,8 +118,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000201:                   # @func0000000000000201
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, -48
+	li	a2, -48
+	sh1add	a1, a1, a2
 	zext.h	a1, a1
 	negw	a0, a0
 	zext.h	a0, a0
@@ -127,8 +128,8 @@ func0000000000000201:                   # @func0000000000000201
 	ret
 func000000000000020c:                   # @func000000000000020c
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, -48
+	li	a2, -48
+	sh1add	a1, a1, a2
 	zext.h	a1, a1
 	negw	a0, a0
 	zext.h	a0, a0

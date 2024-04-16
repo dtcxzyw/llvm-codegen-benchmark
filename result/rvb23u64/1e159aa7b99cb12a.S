@@ -39,8 +39,9 @@ func000000000000005d:                   # @func000000000000005d
 	andi	a1, a1, 255
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -48
+	li	a1, -48
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func0000000000000055:                   # @func0000000000000055
 	sext.w	a1, a1
@@ -53,15 +54,17 @@ func000000000000007d:                   # @func000000000000007d
 	andi	a1, a1, 255
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -480
+	li	a1, -480
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000003f:                   # @func000000000000003f
 	zext.h	a1, a1
 	add	a0, a0, a1
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addiw	a0, a0, 72
+	li	a1, 72
+	sh3add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000007f:                   # @func000000000000007f
 	zext.h	a1, a1

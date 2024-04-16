@@ -17,8 +17,7 @@ func0000000000000033:                   # @func0000000000000033
 func000000000000003b:                   # @func000000000000003b
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	andi	a1, a0, -2
-	srli	a0, a0, 1
-	add	a0, a0, a1
+	srliw	a0, a0, 1
+	sh1add	a0, a0, a0
 	slliw	a0, a0, 1
 	ret

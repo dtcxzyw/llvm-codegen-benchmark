@@ -13,6 +13,7 @@ func00000000000001d7:                   # @func00000000000001d7
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	addiw	a0, a0, -480
+	li	a1, -480
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret

@@ -1,6 +1,6 @@
 func0000000000000030:                   # @func0000000000000030
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
+	zext.w	a1, a1
+	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 24
 	ret
@@ -12,8 +12,8 @@ func000000000000003f:                   # @func000000000000003f
 	addi	a0, a0, 64
 	ret
 func0000000000000035:                   # @func0000000000000035
-	zext.w	a2, a1
-	sh3add.uw	a1, a1, a2
+	zext.w	a1, a1
+	sh3add	a1, a1, a1
 	sh1add	a0, a1, a0
 	addi	a0, a0, 5
 	ret

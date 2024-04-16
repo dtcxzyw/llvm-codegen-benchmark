@@ -42,8 +42,7 @@ func0000000000000016:                   # @func0000000000000016
 	li	a2, 43
 	mul	a1, a1, a2
 	bexti	a2, a1, 15
-	srai	a1, a1, 8
-	srli	a1, a1, 2
+	srli	a1, a1, 10
 	add	a1, a1, a2
 	sh1add	a1, a1, a1
 	slli	a1, a1, 3
