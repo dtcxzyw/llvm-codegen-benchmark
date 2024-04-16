@@ -1,9 +1,9 @@
 func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
-	sh2add	a1, a1, a1
 	lui	a2, 211
 	addi	a2, a2, -256
 	czero.eqz	a0, a2, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	lui	a1, 9
 	addi	a1, a1, -864

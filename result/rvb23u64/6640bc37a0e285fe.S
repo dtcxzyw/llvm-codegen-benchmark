@@ -28,8 +28,7 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a4, a4, 1639
 	mul	a3, a3, a4
 	srliw	a4, a3, 31
-	srai	a3, a3, 16
-	srli	a3, a3, 2
+	srli	a3, a3, 18
 	add	a3, a3, a4
 	sh2add	a3, a3, a3
 	slli	a3, a3, 1

@@ -36,8 +36,8 @@ func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 50
 	srli	a0, a0, 50
 	sh1add	a0, a0, a0
-	slli	a0, a0, 1
-	addi	a0, a0, -1260
+	li	a1, -1260
+	sh1add	a0, a0, a1
 	zext.w	a1, a0
 	lui	a2, 149797
 	addiw	a2, a2, -1755

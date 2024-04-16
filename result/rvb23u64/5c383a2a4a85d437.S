@@ -14,7 +14,7 @@ func0000000000000011:                   # @func0000000000000011
 	mulw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 1
 	ret

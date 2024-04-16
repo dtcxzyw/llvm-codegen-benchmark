@@ -13,8 +13,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	andi	a0, a0, 255
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, 32
+	li	a2, 32
+	sh1add	a1, a1, a2
 	andi	a1, a1, 254
 	sltu	a0, a0, a1
 	ret

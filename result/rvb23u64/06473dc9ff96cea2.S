@@ -41,8 +41,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	ret
 func0000000000000025:                   # @func0000000000000025
-	sh2add	a2, a2, a2
 	srliw	a1, a1, 16
+	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
 	addw	a0, a0, a1
 	ret
@@ -77,8 +77,8 @@ func0000000000000015:                   # @func0000000000000015
 	addw	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
-	sh2add	a2, a2, a2
 	srli	a1, a1, 32
+	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
 	add	a0, a0, a1
 	ret

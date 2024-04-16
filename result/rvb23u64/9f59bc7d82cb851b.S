@@ -33,7 +33,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000026:                   # @func0000000000000026
 	sh1add	a0, a0, a0
-	bexti	a0, a0, 61
+	slli	a0, a0, 2
+	srli	a0, a0, 63
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slliw	a0, a0, 1
