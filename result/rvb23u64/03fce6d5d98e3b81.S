@@ -11,15 +11,17 @@ func0000000000000035:                   # @func0000000000000035
 	slli	a2, a2, 21
 	add	a1, a1, a2
 	xor	a0, a0, a1
-	li	a1, 265
-	mul	a0, a0, a1
+	sh3add	a1, a0, a0
+	slli	a0, a0, 8
+	add	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 21
 	add	a1, a1, a2
 	xor	a0, a0, a1
-	li	a1, 265
-	mul	a0, a0, a1
+	sh3add	a1, a0, a0
+	slli	a0, a0, 8
+	add	a0, a0, a1
 	ret
 .LCPI3_0:
 	.quad	-7070675565921424023            # 0x9ddfea08eb382d69

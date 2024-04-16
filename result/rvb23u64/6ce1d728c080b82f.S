@@ -13,14 +13,16 @@ func0000000000000069:                   # @func0000000000000069
 	add	a0, a0, a1
 	srli	a1, a0, 24
 	xor	a0, a0, a1
-	li	a1, 265
-	mul	a0, a0, a1
+	sh3add	a1, a0, a0
+	slli	a0, a0, 8
+	add	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
 	slli	a1, a1, 21
 	add	a0, a0, a1
 	srli	a1, a0, 24
 	xor	a0, a0, a1
-	li	a1, 265
-	mul	a0, a0, a1
+	sh3add	a1, a0, a0
+	slli	a0, a0, 8
+	add	a0, a0, a1
 	ret

@@ -52,8 +52,9 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a2, a2, -917
 	mul	a0, a0, a2
 	srli	a0, a0, 33
-	li	a2, 67
-	mul	a0, a0, a2
+	sh1add	a2, a0, a0
+	slli	a0, a0, 6
+	add	a0, a0, a2
 	subw	a1, a1, a0
 	sltiu	a0, a1, 34
 	ret

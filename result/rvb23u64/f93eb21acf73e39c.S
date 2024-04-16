@@ -16,8 +16,9 @@ func000000000000001d:                   # @func000000000000001d
 	sh2add.uw	a0, a1, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
-	li	a3, 67
-	mul	a2, a2, a3
+	sh1add	a3, a2, a2
+	slli	a2, a2, 6
+	add	a2, a2, a3
 	add	a1, a1, a2
 	andi	a1, a1, 255
 	sh1add	a0, a1, a0

@@ -13,8 +13,9 @@ func0000000000000009:                   # @func0000000000000009
 	add	a1, a1, a2
 	srli	a2, a1, 24
 	xor	a1, a1, a2
-	li	a2, 265
-	mul	a1, a1, a2
+	sh3add	a2, a1, a1
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	xor	a0, a0, a1
 	ret
 .LCPI2_0:
