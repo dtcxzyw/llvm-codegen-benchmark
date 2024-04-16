@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1
-  %2 = mul nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 1
-  %4 = and i32 %3, 63
-  ret i32 %4
+  %1 = mul i32 %0, 3
+  %2 = add i32 %1, 62
+  %3 = and i32 %2, 63
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -17,11 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = mul nuw nsw i64 %1, 9
-  %3 = add nuw nsw i64 %2, 12
-  %4 = and i64 %3, 4294967295
-  ret i64 %4
+  %1 = mul i64 %0, 9
+  %2 = add i64 %1, 3
+  %3 = and i64 %2, 4294967295
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -29,11 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = mul i64 %1, 9
-  %3 = add i64 %2, 12
-  %4 = and i64 %3, 4294967295
-  ret i64 %4
+  %1 = mul i64 %0, 9
+  %2 = add i64 %1, 3
+  %3 = and i64 %2, 4294967295
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -41,11 +38,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = mul nsw i64 %1, 9
-  %3 = add nsw i64 %2, 12
-  %4 = and i64 %3, 4294967295
-  ret i64 %4
+  %1 = mul i64 %0, 9
+  %2 = add i64 %1, 3
+  %3 = and i64 %2, 4294967295
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -53,11 +49,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 2531011
-  %2 = mul i32 %1, 214013
-  %3 = add i32 %2, 2531011
-  %4 = and i32 %3, 2147418112
-  ret i32 %4
+  %1 = mul i32 %0, 214013
+  %2 = add i32 %1, 505908858
+  %3 = and i32 %2, 2147418112
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -65,11 +60,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = mul nuw i64 %1, 9
-  %3 = add i64 %2, 7
-  %4 = and i64 %3, -8
-  ret i64 %4
+  %1 = mul i64 %0, 9
+  %2 = and i64 %1, -8
+  %3 = add i64 %2, 16
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

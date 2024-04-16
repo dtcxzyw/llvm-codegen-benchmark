@@ -7,8 +7,8 @@ define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = add i32 %0, %3
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -20,8 +20,8 @@ define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = shl nuw i64 1, %2
-  %4 = add i64 %0, %3
-  %5 = icmp ne i64 %4, 0
+  %4 = sub i64 0, %0
+  %5 = icmp ne i64 %3, %4
   ret i1 %5
 }
 
@@ -33,7 +33,7 @@ define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = icmp ult i32 %4, 17
   ret i1 %5
 }

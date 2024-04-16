@@ -29,9 +29,9 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = call i64 @llvm.ctpop.i64(i64 %3), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ declare i64 @llvm.ctpop.i64(i64) #1
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = tail call i64 @llvm.ctpop.i64(i64 %3), !range !1
   %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5

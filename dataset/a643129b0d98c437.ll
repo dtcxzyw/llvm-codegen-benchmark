@@ -68,9 +68,8 @@ entry:
   %3 = select i1 %2, i64 4, i64 0
   %4 = getelementptr inbounds %struct.CPpmd_See.2267365, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr inbounds %struct.CPpmd_See.2267365, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 2
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.CPpmd_See.2267365, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

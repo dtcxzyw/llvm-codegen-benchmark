@@ -17,9 +17,8 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.V3NumberData::ValueAndX.1690342", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.V3NumberData::ValueAndX.1690342", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -31,9 +30,8 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.V3NumberData::ValueAndX.1690342", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.V3NumberData::ValueAndX.1690342", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -44,9 +42,8 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.b3Int4.1743034, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct.b3Int4.1743034, ptr %0, i64 %5, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -72,9 +69,8 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.memblock_region.2001240, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.memblock_region.2001240, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -114,9 +110,8 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.OT::BaseGlyphRecord.2273145", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 2
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.OT::BaseGlyphRecord.2273145", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -66,9 +66,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000196(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 2
-  %3 = trunc i64 %2 to i32
-  %4 = or disjoint i32 %3, 1
+  %2 = trunc i64 %1 to i32
+  %3 = or i32 %2, 1
+  %4 = add i32 %3, 2
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -78,9 +78,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000186(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 4
-  %3 = trunc i64 %2 to i32
-  %4 = or i32 %3, 3
+  %2 = trunc i64 %1 to i32
+  %3 = or i32 %2, 3
+  %4 = add i32 %3, 4
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }

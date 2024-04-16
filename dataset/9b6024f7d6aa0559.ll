@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 10000000
-  %3 = add i64 %2, 116444736000000000
+  %2 = mul i64 %1, 38528
+  %3 = xor i64 %2, 32768
   %4 = add i64 %3, %0
   %5 = lshr i64 %4, 8
   %6 = trunc i64 %5 to i8

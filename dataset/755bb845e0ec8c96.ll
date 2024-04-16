@@ -28,7 +28,7 @@ entry:
   %4 = icmp ult i16 %3, 47
   %5 = trunc i47 %1 to i1
   %6 = select i1 %4, i1 %5, i1 false
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

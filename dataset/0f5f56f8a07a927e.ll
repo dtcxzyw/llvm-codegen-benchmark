@@ -18,10 +18,9 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
-  %5 = ashr exact i64 %4, 3
-  %6 = add i64 %5, %1
-  %7 = getelementptr ptr, ptr %0, i64 %6
-  ret ptr %7
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr ptr, ptr %5, i64 %1
+  ret ptr %6
 }
 
 ; 16 occurrences:
@@ -46,10 +45,9 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
-  %5 = ashr exact i64 %4, 5
-  %6 = add i64 %1, %5
-  %7 = getelementptr inbounds %"struct.mold::elf::ElfPhdr.1620309", ptr %0, i64 %6
-  ret ptr %7
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr %"struct.mold::elf::ElfPhdr.1620309", ptr %5, i64 %1
+  ret ptr %6
 }
 
 ; 7 occurrences:
@@ -65,10 +63,9 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
-  %5 = ashr exact i64 %4, 2
-  %6 = add nsw i64 %5, %1
-  %7 = getelementptr inbounds %"class.testing::ThrowingValue.1938478", ptr %0, i64 %6
-  ret ptr %7
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr %"class.testing::ThrowingValue.1938478", ptr %5, i64 %1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

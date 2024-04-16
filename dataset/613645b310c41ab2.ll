@@ -7,10 +7,9 @@
 define i1 @func0000000000000118(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 769
-  %3 = select i1 %2, i64 16, i64 0
-  %4 = or disjoint i64 %3, 33
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
+  %3 = select i1 %2, i64 49, i64 33
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -19,10 +18,9 @@ entry:
 define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 1
-  %3 = select i1 %2, i64 12, i64 4
-  %4 = or disjoint i64 %3, 2
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
+  %3 = select i1 %2, i64 14, i64 6
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -31,10 +29,9 @@ entry:
 define i1 @func0000000000000034(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 772
-  %3 = select i1 %2, i32 256, i32 2048
-  %4 = or disjoint i32 %3, 16384
-  %5 = icmp ult i32 %4, %0
-  ret i1 %5
+  %3 = select i1 %2, i32 16640, i32 18432
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -45,11 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000114(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 3
-  %3 = select i1 %2, i64 4, i64 0
-  %4 = or disjoint i64 %3, 1
-  %5 = icmp ult i64 %4, %0
-  ret i1 %5
+  %.inv = icmp ult i64 %1, 4
+  %2 = select i1 %.inv, i64 1, i64 5
+  %3 = icmp ult i64 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

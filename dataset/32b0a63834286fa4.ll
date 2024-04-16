@@ -22,7 +22,7 @@ define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = lshr i64 %0, 12
-  %4 = add nuw nsw i64 %3, %2
+  %4 = or i64 %3, %2
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }

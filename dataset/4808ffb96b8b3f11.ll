@@ -53,7 +53,7 @@ entry:
 define i8 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 348
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp slt i32 %3, 1
   %5 = select i1 %4, i8 45, i8 43
   ret i8 %5

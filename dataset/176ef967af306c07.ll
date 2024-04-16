@@ -12,7 +12,7 @@ entry:
   %3 = add i64 %2, -3
   %4 = sub i64 %3, %1
   %5 = call i64 @llvm.umax.i64(i64 %4, i64 1)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

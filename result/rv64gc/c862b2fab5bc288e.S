@@ -7,25 +7,26 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 3
-	addi	a1, a1, -32
 	lui	a2, 4096
 	addiw	a2, a2, -32
+	add	a1, a1, a2
 	and	a1, a1, a2
 	lui	a2, 393216
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	addi	a1, a1, -1
-	slli	a1, a1, 60
-	srli	a1, a1, 36
+	slli	a1, a1, 24
+	lui	a2, 61440
+	add	a1, a1, a2
+	and	a1, a1, a2
 	srli	a0, a0, 33
 	slli	a0, a0, 33
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 1
-	addi	a1, a1, -2
+	addi	a1, a1, 14
 	andi	a1, a1, 14
 	andi	a0, a0, 1
 	or	a0, a0, a1
@@ -45,8 +46,10 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addi	a1, a1, -1
-	slli	a1, a1, 54
+	slli	a1, a1, 22
+	lui	a2, 1047552
+	add	a1, a1, a2
+	slli	a1, a1, 32
 	srli	a1, a1, 32
 	slli	a0, a0, 42
 	srli	a0, a0, 42
@@ -63,9 +66,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 1
-	addi	a1, a1, -8
 	lui	a2, 1
-	addiw	a2, a2, -2
+	addiw	a2, a2, -8
+	add	a1, a1, a2
+	addi	a2, a2, 6
 	and	a1, a1, a2
 	lui	a2, 1048575
 	and	a0, a0, a2

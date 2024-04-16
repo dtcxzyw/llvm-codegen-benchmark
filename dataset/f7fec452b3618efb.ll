@@ -13,7 +13,7 @@
 define double @func0000000000000014(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call noundef double @llvm.fabs.f64(double %1)
-  %4 = fcmp ogt double %2, %3
+  %4 = fcmp olt double %3, %2
   %5 = select i1 %4, double %0, double %1
   ret double %5
 }

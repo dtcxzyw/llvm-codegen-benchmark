@@ -9,7 +9,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = xor i32 %1, -1
   %5 = udiv i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

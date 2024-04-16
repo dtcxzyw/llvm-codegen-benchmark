@@ -10,7 +10,7 @@
 define i128 @func0000000000000005(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl nuw i128 %2, 64
-  %4 = and i128 %1, %3
+  %4 = and i128 %3, %1
   %5 = or disjoint i128 %4, %0
   ret i128 %5
 }
@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 7
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -32,7 +32,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nsw i16 %2, 8
-  %4 = and i16 %1, %3
+  %4 = and i16 %3, %1
   %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
@@ -56,7 +56,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 31
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -70,7 +70,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, %1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -81,8 +81,8 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 2
-  %4 = and i8 %1, %3
-  %5 = or i8 %0, %4
+  %4 = and i8 %3, %1
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -92,8 +92,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
-  %4 = and i32 %1, %3
-  %5 = or i32 %0, %4
+  %4 = and i32 %3, %1
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

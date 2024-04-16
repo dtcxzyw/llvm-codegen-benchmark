@@ -18,8 +18,8 @@
 define i1 @func000000000000000a(i8 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i8
-  %4 = xor i8 %1, %3
-  %5 = and i8 %0, %4
+  %4 = xor i8 %3, %1
+  %5 = and i8 %4, %0
   %6 = icmp sgt i8 %5, -1
   ret i1 %6
 }
@@ -38,8 +38,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = xor i32 %1, %3
-  %5 = and i32 %0, %4
+  %4 = xor i32 %3, %1
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -63,7 +63,7 @@ entry:
 define i1 @func0000000000000006(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i16
-  %4 = xor i16 %1, %3
+  %4 = xor i16 %3, %1
   %5 = and i16 %4, %0
   %6 = icmp slt i16 %5, 0
   ret i1 %6

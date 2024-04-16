@@ -19,10 +19,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
-  %2 = bitcast i32 %1 to float
-  %3 = fcmp oeq float %2, 0.000000e+00
-  %4 = bitcast i32 %0 to float
-  %5 = fcmp oeq float %4, 0.000000e+00
+  %2 = and i32 %1, 2147483647
+  %3 = icmp eq i32 %2, 0
+  %4 = and i32 %0, 2147483647
+  %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }

@@ -24,8 +24,8 @@
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = and i64 %2, -16
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, 15
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -74,8 +74,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = and i64 %2, -128
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, 127
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -85,8 +85,8 @@ entry:
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %0, %1
-  %3 = and i64 %2, 504
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, -505
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 

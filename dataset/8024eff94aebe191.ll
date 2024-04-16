@@ -9,8 +9,8 @@ entry:
   %2 = ashr exact i64 %1, 3
   %3 = icmp ult i64 %2, %0
   %4 = call i64 @llvm.umin.i64(i64 %2, i64 576460752303423487)
-  %5 = select i1 %3, i64 576460752303423487, i64 %4
-  %6 = shl nuw nsw i64 %5, 4
+  %5 = shl nuw nsw i64 %4, 4
+  %6 = select i1 %3, i64 9223372036854775792, i64 %5
   ret i64 %6
 }
 

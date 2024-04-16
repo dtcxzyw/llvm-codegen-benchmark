@@ -17,9 +17,9 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a0, 15
-	bnez	a2, .LBB2_2
-	mv	a0, a1
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	andi	a0, a0, 3
-	snez	a0, a0
+	andi	a1, a1, 3
+	snez	a0, a1
 	ret

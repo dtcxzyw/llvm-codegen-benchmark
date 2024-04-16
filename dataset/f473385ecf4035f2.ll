@@ -204,7 +204,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 64
   %5 = and i32 %1, 1024
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -229,7 +229,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 2097152
   %5 = and i32 %1, 524288
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -256,7 +256,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 268435456
   %5 = and i32 %1, 2097152
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -271,7 +271,7 @@ entry:
   %3 = lshr exact i32 %2, 10
   %4 = and i32 %3, 992
   %5 = and i32 %1, 32768
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -284,7 +284,7 @@ entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1048576
   %5 = and i32 %1, 2097152
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -297,7 +297,7 @@ entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1024
   %5 = and i32 %1, 2048
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }

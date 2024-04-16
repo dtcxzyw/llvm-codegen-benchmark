@@ -27,11 +27,10 @@ declare i8 @llvm.umax.i8(i8, i8) #1
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, -16
-  %4 = icmp eq i8 %3, 0
-  %5 = select i1 %4, i8 0, i8 %1
-  %6 = tail call i8 @llvm.umax.i8(i8 %5, i8 %0)
-  ret i8 %6
+  %3 = icmp ult i8 %2, 16
+  %4 = select i1 %3, i8 0, i8 %1
+  %5 = tail call i8 @llvm.umax.i8(i8 %4, i8 %0)
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

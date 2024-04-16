@@ -42,7 +42,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 100
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   ret i64 %3
 }
 
@@ -56,7 +56,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 48
-  %3 = mul nuw nsw i64 %0, %2
+  %3 = mul nuw nsw i64 %2, %0
   ret i64 %3
 }
 
@@ -67,7 +67,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 6
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   ret i32 %3
 }
 

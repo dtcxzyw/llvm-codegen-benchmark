@@ -11,7 +11,6 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000004:                   # @func0000000000000004
 	fmul.d	fa5, fa0, fa1
 	fcvt.s.d	fa5, fa5
-	fcvt.d.s	fa5, fa5
-	fli.d	fa4, 1.0
-	flt.d	a0, fa4, fa5
+	fli.s	fa4, 1.0
+	flt.s	a0, fa4, fa5
 	ret

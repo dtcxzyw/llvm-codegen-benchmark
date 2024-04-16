@@ -8,8 +8,8 @@
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 1, i32 %0
-  %5 = add i32 %4, -1
+  %4 = add i32 %0, -1
+  %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
 
@@ -20,8 +20,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 63, i32 %0
-  %5 = add nsw i32 %4, 1
+  %4 = add nsw i32 %0, 1
+  %5 = select i1 %3, i32 64, i32 %4
   ret i32 %5
 }
 
@@ -34,8 +34,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 20, i32 %0
-  %5 = add nuw nsw i32 %4, 32
+  %4 = add nuw nsw i32 %0, 32
+  %5 = select i1 %3, i32 52, i32 %4
   ret i32 %5
 }
 
@@ -45,8 +45,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 18, i32 %0
-  %5 = add nuw i32 %4, 1
+  %4 = add nuw i32 %0, 1
+  %5 = select i1 %3, i32 19, i32 %4
   ret i32 %5
 }
 

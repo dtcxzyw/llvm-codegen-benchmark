@@ -9,9 +9,8 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	srli	a1, a0, 32
 	or	a0, a0, a1
-	addi	a0, a0, 1
-	sltiu	a0, a0, 34
-	xori	a0, a0, 1
+	addi	a0, a0, -33
+	sltiu	a0, a0, -34
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1

@@ -21,8 +21,8 @@ entry:
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = and i32 %1, 67108848
-  %3 = or i32 %2, 8192
+  %2 = and i32 %1, 67100656
+  %3 = or disjoint i32 %2, 8192
   ret i32 %3
 }
 

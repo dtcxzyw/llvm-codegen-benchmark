@@ -28,8 +28,7 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a4, a3, 32
 	add.uw	a3, a3, a4
 	sub	a2, a3, a2
-	and	a2, a2, a3
+	or	a1, a1, a2
 	and	a1, a1, a3
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret

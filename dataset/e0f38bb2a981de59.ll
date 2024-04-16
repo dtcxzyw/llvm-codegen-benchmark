@@ -28,7 +28,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = xor i1 %1, %3
+  %4 = xor i1 %3, %1
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
@@ -40,7 +40,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
-  %4 = xor i1 %1, %3
+  %4 = xor i1 %3, %1
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }

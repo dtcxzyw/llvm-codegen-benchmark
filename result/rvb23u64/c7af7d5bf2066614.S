@@ -10,7 +10,7 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000038:                   # @func0000000000000038
 	mul	a1, a1, a3
-	mulhu	a4, a0, a3
+	mulhu	a4, a3, a0
 	add	a1, a1, a4
 	mul	a0, a0, a3
 	zext.w	a3, a2

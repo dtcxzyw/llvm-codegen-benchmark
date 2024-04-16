@@ -80,11 +80,10 @@
 define i32 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, 4294967295
-  %5 = mul nuw i64 %4, %3
-  %6 = add nuw i64 %5, %0
-  %7 = trunc i64 %6 to i32
-  ret i32 %7
+  %4 = mul i64 %3, %1
+  %5 = add i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
 }
 
 ; 105 occurrences:
@@ -197,11 +196,10 @@ entry:
 define i32 @func000000000000003c(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = and i128 %1, 18446744073709551615
-  %5 = mul nuw nsw i128 %4, %3
-  %6 = add nuw nsw i128 %5, %0
-  %7 = trunc i128 %6 to i32
-  ret i32 %7
+  %4 = mul i128 %3, %1
+  %5 = add i128 %4, %0
+  %6 = trunc i128 %5 to i32
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

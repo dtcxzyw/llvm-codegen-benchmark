@@ -3,9 +3,7 @@ func000000000000001d:                   # @func000000000000001d
 	bnez	a0, .LBB0_2
 	mv	a1, a2
 .LBB0_2:                                # %entry
-	slli	a1, a1, 1
-	addi	a1, a1, 1
-	slli	a1, a1, 11
+	slli	a1, a1, 12
 	srli	a1, a1, 11
 	srli	a0, a1, 1
 	or	a0, a0, a1
@@ -26,6 +24,7 @@ func000000000000001d:                   # @func000000000000001d
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	and	a1, a1, a2
+	andi	a0, a0, -2
 	sub	a0, a0, a1
 	lui	a1, 209715
 	addiw	a1, a1, 819

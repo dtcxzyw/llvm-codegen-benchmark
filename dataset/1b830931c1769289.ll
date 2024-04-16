@@ -10,10 +10,8 @@
 define i64 @func000000000000000f(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 0
-  %2 = select i1 %1, i32 8, i32 4
-  %3 = sub nuw nsw i32 64, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %2 = select i1 %1, i64 56, i64 60
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

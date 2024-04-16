@@ -11,7 +11,7 @@ define i32 @func0000000000000000(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %3, -1640531527
   ret i32 %4
 }

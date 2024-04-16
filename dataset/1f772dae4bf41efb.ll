@@ -67,10 +67,9 @@ define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp eq i32 %3, -1
-  %5 = add i32 %0, 1
-  %6 = icmp eq i32 %5, 0
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %5 = icmp eq i32 %0, -1
+  %6 = or i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -80,10 +79,9 @@ define i1 @func000000000000028c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -3
   %4 = icmp ult i8 %3, -2
-  %5 = sub nsw i32 %0, %1
-  %6 = icmp slt i32 %5, 0
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %5 = icmp slt i32 %0, %1
+  %6 = or i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -104,12 +102,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  %5 = sub i32 %0, %1
-  %6 = icmp slt i32 %5, 2
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %3 = icmp eq i32 %2, 1
+  %4 = sub i32 %0, %1
+  %5 = icmp slt i32 %4, 2
+  %6 = or i1 %5, %3
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

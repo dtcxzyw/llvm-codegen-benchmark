@@ -1,11 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a1, 269413
-	addi	a1, a1, -403
+	lui	a1, 797226
+	addi	a1, a1, -1431
 	mul	a0, a0, a1
-	mul	a0, a0, a1
-	lui	a2, 867774
-	addi	a2, a2, 1605
-	mul	a1, a1, a2
-	add	a1, a1, a2
+	lui	a1, 684095
+	addi	a1, a1, 1958
 	addw	a0, a0, a1
 	ret

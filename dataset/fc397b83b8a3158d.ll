@@ -31,7 +31,7 @@
 define float @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %0, %2
+  %3 = or disjoint i128 %2, %0
   %4 = sitofp i128 %3 to float
   ret float %4
 }
@@ -43,7 +43,7 @@ entry:
 define double @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = sitofp i32 %3 to double
   ret double %4
 }
@@ -54,7 +54,7 @@ entry:
 define double @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = sitofp i64 %3 to double
   ret double %4
 }

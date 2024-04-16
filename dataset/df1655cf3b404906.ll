@@ -6,7 +6,7 @@
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = shl nsw i64 %1, 2
   %6 = add nsw i64 %4, %5
   %7 = and i64 %6, -4096
@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = shl nsw i64 %1, 3
   %6 = add i64 %4, %5
   %7 = and i64 %6, -9223372036854775745

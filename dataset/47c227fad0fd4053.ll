@@ -8,7 +8,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp ugt ptr %0, %6
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = sub nsw i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = sub nsw i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp ugt ptr %0, %6
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 
@@ -49,7 +49,7 @@ entry:
   %4 = sub i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

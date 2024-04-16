@@ -13,10 +13,9 @@
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nsw i64 %2, -2
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr i32, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 429 occurrences:
@@ -453,10 +452,8 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds ptr, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 -8
-  ret ptr %5
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -466,10 +463,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -479,10 +475,9 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 12
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -492,10 +487,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds %"class.(anonymous namespace)::NotTriviallyDestructible.1952568", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.1952568", ptr %0, i64 %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -1,9 +1,10 @@
 func00000000000000ef:                   # @func00000000000000ef
-	addi	a1, a1, -161
 	li	a2, 94
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a0, a0, -161
+	lui	a1, 1048572
+	addi	a1, a1, 1089
+	addw	a0, a0, a1
 	ret
 func0000000000000067:                   # @func0000000000000067
 	sh2add	a1, a1, a1

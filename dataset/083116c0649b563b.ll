@@ -41,9 +41,8 @@ entry:
 define ptr @func0000000000000001(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr %struct.PagetableEntry.2121611, ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.PagetableEntry.2121611, ptr %3, i64 %0, i32 4
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

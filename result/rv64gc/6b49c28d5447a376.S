@@ -29,7 +29,7 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a2, a2, 32
 	srli	a3, a2, 32
 	li	a2, 688
-	beq	a1, a3, .LBB3_2
+	beq	a3, a1, .LBB3_2
 	li	a2, 592
 .LBB3_2:                                # %entry
 	add	a0, a0, a2

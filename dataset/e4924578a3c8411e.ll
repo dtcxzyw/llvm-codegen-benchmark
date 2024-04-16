@@ -72,7 +72,7 @@
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %0, %3
+  %4 = fcmp ogt double %3, %0
   ret i1 %4
 }
 
@@ -93,7 +93,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp oge float %0, %3
+  %4 = fcmp ole float %3, %0
   ret i1 %4
 }
 
@@ -115,7 +115,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ole double %0, %3
+  %4 = fcmp oge double %3, %0
   ret i1 %4
 }
 
@@ -128,7 +128,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp uge float %0, %3
+  %4 = fcmp ule float %3, %0
   ret i1 %4
 }
 
@@ -217,7 +217,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   ret i1 %4
 }
 
@@ -242,7 +242,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ugt float %0, %3
+  %4 = fcmp ult float %3, %0
   ret i1 %4
 }
 
@@ -254,7 +254,7 @@ entry:
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp une float %0, %3
+  %4 = fcmp une float %3, %0
   ret i1 %4
 }
 
@@ -281,7 +281,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ult float %0, %3
+  %4 = fcmp ugt float %3, %0
   ret i1 %4
 }
 
@@ -294,7 +294,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp oeq float %0, %3
+  %4 = fcmp oeq float %3, %0
   ret i1 %4
 }
 
@@ -304,7 +304,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ule double %0, %3
+  %4 = fcmp uge double %3, %0
   ret i1 %4
 }
 

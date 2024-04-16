@@ -2,14 +2,16 @@ func00000000000000b1:                   # @func00000000000000b1
 	sext.w	a1, a1
 	addi	a1, a1, -133
 	snez	a1, a1
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000201:                   # @func0000000000000201
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
 	xori	a1, a1, 1
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000b4:                   # @func00000000000000b4

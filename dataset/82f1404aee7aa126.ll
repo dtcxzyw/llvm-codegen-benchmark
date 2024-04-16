@@ -64,9 +64,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
-  %3 = add i64 %2, %0
-  ret i64 %3
+  %reass.add = shl i64 %0, 1
+  %2 = add i64 %reass.add, %1
+  ret i64 %2
 }
 
 ; 152 occurrences:
@@ -225,9 +225,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, %0
-  %3 = add nsw i32 %2, %0
-  ret i32 %3
+  %reass.add = shl i32 %0, 1
+  %2 = add i32 %reass.add, %1
+  ret i32 %2
 }
 
 ; 13 occurrences:
@@ -247,9 +247,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, %0
-  %3 = add nuw nsw i32 %2, %0
-  ret i32 %3
+  %reass.add = shl i32 %0, 1
+  %2 = add i32 %reass.add, %1
+  ret i32 %2
 }
 
 ; 6 occurrences:
@@ -262,9 +262,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %0, %1
-  %3 = add i32 %0, %2
-  ret i32 %3
+  %reass.add = shl i32 %0, 1
+  %2 = add i32 %reass.add, %1
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -272,9 +272,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
-  %3 = add nsw i64 %2, %0
-  ret i64 %3
+  %reass.add = shl i64 %0, 1
+  %2 = add i64 %reass.add, %1
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

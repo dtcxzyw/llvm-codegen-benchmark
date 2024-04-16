@@ -193,8 +193,8 @@ entry:
 define i32 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = icmp sgt i16 %1, -1
-  %4 = select i1 %3, i32 %0, i32 %2
+  %3 = icmp slt i16 %1, 0
+  %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 

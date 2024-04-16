@@ -46,7 +46,7 @@ entry:
   %4 = icmp ult i64 %1, 8
   %5 = select i1 %4, i64 %1, i64 %3
   %6 = lshr i64 %5, 1
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

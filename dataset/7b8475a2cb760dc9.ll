@@ -22,8 +22,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0) #0 {
 entry:
-  %1 = sext i8 %0 to i32
-  %2 = or i32 %1, 32
+  %1 = or i8 %0, 32
+  %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -97
   %4 = icmp ult i32 %3, 6
   ret i1 %4

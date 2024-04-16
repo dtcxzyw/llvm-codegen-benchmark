@@ -41,7 +41,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
+  %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 34
   %5 = or disjoint i64 %0, %1
   %6 = or disjoint i64 %5, %4

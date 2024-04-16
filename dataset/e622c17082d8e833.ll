@@ -80,8 +80,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 113
-  %2 = mul i64 %1, -7286425919675154353
+  %1 = mul i64 %0, -7286425919675154353
+  %2 = add i64 %1, 6737354393637380831
   %3 = lshr i64 %2, 47
   ret i64 %3
 }
@@ -91,8 +91,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1
-  %2 = mul nsw i32 %1, 3
+  %1 = mul i32 %0, 3
+  %2 = add i32 %1, -3
   %3 = lshr i32 %2, 6
   ret i32 %3
 }
@@ -104,8 +104,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = mul nuw nsw i64 %1, 5
+  %1 = mul i64 %0, 5
+  %2 = add i64 %1, 5
   %3 = lshr i64 %2, 2
   ret i64 %3
 }
@@ -115,8 +115,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = mul i64 %1, 7109453100751455733
+  %1 = mul i64 %0, 7109453100751455733
+  %2 = add i64 %1, 7109453100751455733
   %3 = lshr i64 %2, 28
   ret i64 %3
 }
@@ -126,8 +126,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 248
-  %2 = mul nuw nsw i32 %1, 3
+  %1 = mul nuw i32 %0, 3
+  %2 = add nuw i32 %1, 744
   %3 = lshr exact i32 %2, 2
   ret i32 %3
 }
@@ -138,8 +138,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 248
-  %2 = mul nuw nsw i32 %1, 9
+  %1 = mul nuw i32 %0, 9
+  %2 = add nuw i32 %1, 2232
   %3 = lshr i32 %2, 4
   ret i32 %3
 }
@@ -150,8 +150,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 1
-  %2 = mul i32 %1, 5
+  %1 = mul i32 %0, 5
+  %2 = add i32 %1, 5
   %3 = lshr exact i32 %2, 2
   ret i32 %3
 }
@@ -163,8 +163,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = mul nsw i32 %1, 1217359
+  %1 = mul i32 %0, 1217359
+  %2 = add i32 %1, -1217359
   %3 = lshr i32 %2, 19
   ret i32 %3
 }

@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = ashr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %1 = lshr i64 %0, 32
+  %2 = trunc nuw i64 %1 to i32
   %3 = sdiv i32 %2, 64
   ret i32 %3
 }
@@ -23,7 +23,7 @@ entry:
 define i8 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = ashr exact i32 %0, 28
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nsw i32 %1 to i8
   %3 = sdiv i8 %2, 2
   ret i8 %3
 }

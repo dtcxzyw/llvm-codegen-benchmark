@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = shl i64 %2, 32
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
@@ -16,8 +16,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 16
-  %3 = shl i64 %2, 32
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 68719476736
   %4 = ashr exact i64 %3, 30
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -48,8 +48,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = shl i64 %2, 32
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
@@ -61,8 +61,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = shl i64 %2, 32
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -75,8 +75,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = shl i64 %2, 32
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i32, ptr %0, i64 %4
   ret ptr %5
@@ -87,8 +87,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 17592186040353
-  %3 = shl i64 %2, 20
+  %2 = shl i64 %1, 20
+  %3 = add i64 %2, -4260364288
   %4 = ashr i64 %3, 32
   %5 = getelementptr inbounds ptr, ptr %0, i64 %4
   ret ptr %5
@@ -99,8 +99,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = shl i64 %2, 32
+  %2 = shl i64 %1, 32
+  %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5

@@ -11,6 +11,7 @@ func0000000000000009:                   # @func0000000000000009
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	srliw	a0, a2, 16
+	slli	a0, a0, 16
 	seqz	a1, a0
 	slli	a1, a1, 4
 .LBB1_2:                                # %entry

@@ -7,7 +7,7 @@ define double @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -20,7 +20,7 @@ define double @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2113929216
   %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }

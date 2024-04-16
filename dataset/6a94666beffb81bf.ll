@@ -201,7 +201,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = mul i64 %6, 100
   ret i64 %7
 }

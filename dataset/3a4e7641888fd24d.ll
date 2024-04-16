@@ -23,9 +23,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 5
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 5
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -51,9 +51,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -4
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

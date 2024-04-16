@@ -21,11 +21,9 @@
 define ptr @func0000000000000016(i16 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.NodeInfo.1661113, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 22
-  %6 = zext nneg i16 %0 to i64
-  %7 = getelementptr [128 x i8], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext nneg i16 %0 to i64
+  %5 = getelementptr %struct.NodeInfo.1661113, ptr %1, i64 %3, i32 6, i64 %4
+  ret ptr %5
 }
 
 ; 18 occurrences:
@@ -51,11 +49,9 @@ entry:
 define ptr @func000000000000000f(i32 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 58
-  %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr inbounds [3 x i16], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext nneg i32 %0 to i64
+  %5 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %3, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 23 occurrences:
@@ -86,11 +82,9 @@ entry:
 define ptr @func000000000000000b(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.aiString.1746084, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  %6 = zext i32 %0 to i64
-  %7 = getelementptr inbounds [1024 x i8], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext i32 %0 to i64
+  %5 = getelementptr inbounds %struct.aiString.1746084, ptr %1, i64 %3, i32 1, i64 %4
+  ret ptr %5
 }
 
 ; 9 occurrences:
@@ -125,11 +119,9 @@ entry:
 define ptr @func000000000000001b(i8 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr inbounds %struct.stbi__huffman.1870818, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1024
-  %6 = zext i8 %0 to i64
-  %7 = getelementptr inbounds [256 x i8], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext i8 %0 to i64
+  %5 = getelementptr inbounds %struct.stbi__huffman.1870818, ptr %1, i64 %3, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -144,11 +136,9 @@ entry:
 define ptr @func0000000000000006(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.nbap_dch_channel_info_t.1925421, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 268
-  %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr [64 x i32], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext nneg i32 %0 to i64
+  %5 = getelementptr %struct.nbap_dch_channel_info_t.1925421, ptr %1, i64 %3, i32 4, i64 %4
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -214,11 +204,9 @@ entry:
 define ptr @func0000000000000003(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.mq.2238993, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 104
-  %6 = zext i32 %0 to i64
-  %7 = getelementptr inbounds [10 x %struct.mq_item.2238994], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext i32 %0 to i64
+  %5 = getelementptr %struct.mq.2238993, ptr %1, i64 %3, i32 14, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:

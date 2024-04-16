@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = xor i8 %1, %2
-  %4 = icmp eq i8 %3, 0
-  %5 = xor i1 %4, %0
-  ret i1 %5
+  %3 = icmp eq i8 %1, %2
+  %4 = xor i1 %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -31,7 +30,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = icmp ult i32 %3, 1048575
-  %5 = xor i1 %0, %4
+  %5 = xor i1 %4, %0
   ret i1 %5
 }
 

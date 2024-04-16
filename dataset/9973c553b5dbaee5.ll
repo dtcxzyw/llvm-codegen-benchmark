@@ -25,7 +25,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = ashr i64 %3, 2
   ret i64 %4
 }
@@ -37,7 +37,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = ashr i64 %3, 4
   ret i64 %4
 }
@@ -79,7 +79,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 33
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = ashr exact i64 %3, 32
   ret i64 %4
 }

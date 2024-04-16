@@ -6,7 +6,7 @@ define i1 @func0000000000000032(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = icmp uge i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -29,7 +29,7 @@ define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 80
   %4 = icmp ule i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -40,7 +40,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 1000000000
   %4 = icmp ne i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

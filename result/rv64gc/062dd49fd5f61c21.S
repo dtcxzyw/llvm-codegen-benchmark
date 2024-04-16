@@ -30,19 +30,22 @@ func000000000000000a:                   # @func000000000000000a
 .LBB4_2:                                # %entry
 	ret
 func0000000000000009:                   # @func0000000000000009
-	bgeu	a1, a2, .LBB5_2
-	mv	a0, a1
+	bltu	a1, a2, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
+	mv	a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
 	sext.w	a3, a1
-	bne	a3, a2, .LBB6_2
-	mv	a0, a1
+	beq	a3, a2, .LBB6_2
+	mv	a1, a0
 .LBB6_2:                                # %entry
+	mv	a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	bge	a1, a2, .LBB7_2
-	mv	a0, a1
+	blt	a1, a2, .LBB7_2
+	mv	a1, a0
 .LBB7_2:                                # %entry
+	mv	a0, a1
 	ret

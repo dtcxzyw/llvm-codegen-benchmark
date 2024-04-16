@@ -15,14 +15,14 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a0, a0, 6
 	ret
 func0000000000000020:                   # @func0000000000000020
-	mul	a4, a2, a3
-	mulhu	a2, a2, a3
+	mulhu	a4, a2, a3
+	mul	a2, a2, a3
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a4
 	add	a1, a1, a2
-	add	a4, a4, a0
-	sltu	a0, a4, a0
-	add	a0, a0, a1
+	slli	a1, a1, 40
+	srli	a2, a0, 24
+	or	a1, a1, a2
 	slli	a0, a0, 40
-	srli	a1, a4, 24
-	or	a1, a1, a0
-	slli	a0, a4, 40
 	ret

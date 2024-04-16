@@ -4,6 +4,6 @@ func0000000000000000:                   # @func0000000000000000
 	fli.s	fa0, 1.0
 	beqz	a0, .LBB0_2
 	fdiv.s	fa4, fa0, fa1
-	fmul.s	fa0, fa5, fa4
+	fmul.s	fa0, fa4, fa5
 .LBB0_2:                                # %entry
 	ret

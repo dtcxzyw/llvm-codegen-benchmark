@@ -16,7 +16,7 @@ entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i64
   %4 = shl nsw i64 %3, 3
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = and i64 %5, -8
   ret i64 %6
 }

@@ -29,7 +29,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func0000000000000044:                   # @func0000000000000044
 	zext.h	a1, a0
-	andi	a0, a0, 255
+	andi	a0, a0, 252
 	sltiu	a0, a0, 100
 	li	a2, -1280
 	sh2add	a1, a2, a1

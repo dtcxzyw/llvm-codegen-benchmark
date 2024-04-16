@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = icmp eq i64 %1, -1
-  %4 = select i1 %3, i64 -1, i64 %2
-  %5 = sub i64 %0, %4
-  ret i64 %5
+  %.neg = xor i64 %1, -1
+  %2 = icmp eq i64 %1, -1
+  %.neg1 = select i1 %2, i64 1, i64 %.neg
+  %3 = add i64 %.neg1, %0
+  ret i64 %3
 }
 
 ; 6 occurrences:
@@ -34,11 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000059(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = icmp slt i32 %1, -1
-  %4 = select i1 %3, i32 0, i32 %2
-  %5 = sub nsw i32 %0, %4
-  ret i32 %5
+  %2 = call i32 @llvm.smax.i32(i32 %1, i32 -1)
+  %.neg1 = xor i32 %2, -1
+  %3 = add i32 %.neg1, %0
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -48,11 +47,18 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = icmp slt i32 %1, 2
-  %4 = select i1 %3, i32 2, i32 %2
-  %5 = sub i32 %0, %4
-  ret i32 %5
+  %.neg = xor i32 %1, -1
+  %2 = icmp slt i32 %1, 2
+  %.neg1 = select i1 %2, i32 -2, i32 %.neg
+  %3 = add i32 %.neg1, %0
+  ret i32 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

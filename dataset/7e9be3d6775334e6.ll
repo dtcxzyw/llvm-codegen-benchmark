@@ -22,8 +22,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = add nsw i64 %4, %0
-  %6 = and i64 %5, 4294967295
-  %7 = icmp ult i64 %6, 4
+  %6 = and i64 %5, 4294967292
+  %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
 

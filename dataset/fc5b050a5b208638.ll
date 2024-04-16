@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000155(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, 365
-  %3 = add nsw i64 %1, %2
+  %3 = add nsw i64 %2, %1
   %4 = mul nsw i64 %3, 86400
   %5 = mul nsw i64 %0, 21600
   %6 = add nsw i64 %4, %5

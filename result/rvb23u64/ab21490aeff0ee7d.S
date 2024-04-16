@@ -1,9 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	fmul.s	fa5, fa0, fa1
-	fmv.x.w	a0, fa5
-	lui	a1, 522240
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	fclass.s	a0, fa5
+	andi	a0, a0, 126
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001

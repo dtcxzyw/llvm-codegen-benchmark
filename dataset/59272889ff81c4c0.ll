@@ -8,7 +8,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = icmp ugt i64 %4, 8
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

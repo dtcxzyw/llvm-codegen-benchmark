@@ -24,7 +24,7 @@ entry:
   %3 = udiv i32 %2, 12
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds %"struct.mold::elf::ElfRel.1594691", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = ashr i32 %4, 6
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %3, %1
   %5 = ashr i32 %4, 6
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

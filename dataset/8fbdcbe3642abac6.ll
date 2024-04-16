@@ -12,7 +12,7 @@ entry:
   %3 = zext i8 %0 to i32
   %4 = add nuw nsw i32 %3, %2
   %5 = tail call i32 @llvm.umin.i32(i32 %4, i32 255)
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
 

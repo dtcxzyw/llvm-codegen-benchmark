@@ -40,7 +40,7 @@ entry:
   %2 = and i8 %1, 7
   %3 = xor i8 %2, 7
   %4 = shl nuw i8 1, %3
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 

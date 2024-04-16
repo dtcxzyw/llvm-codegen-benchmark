@@ -7,11 +7,7 @@ func00000000000000d4:                   # @func00000000000000d4
 	sltiu	a0, a0, 384
 	ret
 func00000000000000d1:                   # @func00000000000000d1
-	andi	a0, a0, 255
-	slli	a1, a0, 4
-	sub	a1, a1, a0
-	addi	a0, a1, -388
-	seqz	a0, a0
+	li	a0, 0
 	ret
 func0000000000000054:                   # @func0000000000000054
 	slli	a0, a0, 48

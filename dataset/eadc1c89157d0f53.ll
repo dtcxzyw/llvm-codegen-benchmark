@@ -883,9 +883,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 32
-  %2 = icmp eq i64 %1, 0
-  ret i1 %2
+  %.mask = and i64 %0, 4294967295
+  %1 = icmp eq i64 %.mask, 0
+  ret i1 %1
 }
 
 ; 204 occurrences:
@@ -1096,8 +1096,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 5
-  %2 = icmp ult i64 %1, 4611686018427387904
+  %1 = and i64 %0, 432345564227567616
+  %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
@@ -1215,8 +1215,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 1
-  %2 = icmp ugt i64 %1, 4611686018427387903
+  %1 = and i64 %0, 6917529027641081856
+  %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 
@@ -1699,9 +1699,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 %0, 1
-  %2 = icmp slt i32 %1, 0
-  ret i1 %2
+  %.mask = and i32 %0, 1073741824
+  %1 = icmp ne i32 %.mask, 0
+  ret i1 %1
 }
 
 ; 33 occurrences:
@@ -1741,8 +1741,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = shl nsw i64 %0, 3
-  %2 = icmp ult i64 %1, 32
+  %1 = and i64 %0, 2305843009213693948
+  %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
@@ -1828,9 +1828,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 1
-  %2 = icmp sgt i64 %1, -1
-  ret i1 %2
+  %.mask = and i64 %0, 4611686018427387904
+  %1 = icmp eq i64 %.mask, 0
+  ret i1 %1
 }
 
 ; 49 occurrences:
@@ -1886,9 +1886,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 3
-  %2 = icmp ne i32 %1, 0
-  ret i1 %2
+  %.mask = and i32 %0, 536870911
+  %1 = icmp ne i32 %.mask, 0
+  ret i1 %1
 }
 
 ; 102 occurrences:
@@ -1997,9 +1997,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i64 %0) #0 {
 entry:
-  %1 = shl nuw i64 %0, 1
-  %2 = icmp sgt i64 %1, -1
-  ret i1 %2
+  %.mask = and i64 %0, 4611686018427387904
+  %1 = icmp eq i64 %.mask, 0
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

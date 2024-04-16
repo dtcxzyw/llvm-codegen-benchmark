@@ -29,16 +29,14 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000008:                   # @func0000000000000008
 	or	a1, a1, a2
 	or	a0, a0, a1
-	addi	a0, a0, 1
-	sltiu	a0, a0, 34
-	xori	a0, a0, 1
+	addi	a0, a0, -33
+	sltiu	a0, a0, -34
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	or	a1, a1, a2
 	or	a0, a0, a1
-	addiw	a0, a0, 4
-	sltiu	a0, a0, 8
-	xori	a0, a0, 1
+	addiw	a0, a0, -4
+	sltiu	a0, a0, -8
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	or	a1, a1, a2

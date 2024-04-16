@@ -11,7 +11,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = sub nsw i32 1597463007, %3
   %5 = bitcast i32 %4 to float
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

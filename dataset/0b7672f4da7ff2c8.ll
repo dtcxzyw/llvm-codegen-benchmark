@@ -59,11 +59,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = and i64 %2, -4
-  %4 = add nuw i64 %0, 4
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
+  %2 = and i64 %1, -4
+  %3 = add nuw i64 %0, 4
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -99,11 +98,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = and i64 %2, -2
-  %4 = add i64 %0, 2
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
+  %2 = and i64 %1, -2
+  %3 = add i64 %0, 2
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

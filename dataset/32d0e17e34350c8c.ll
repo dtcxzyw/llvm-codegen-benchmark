@@ -66,7 +66,7 @@ entry:
   %3 = add i32 %2, 768
   %4 = and i32 %3, 768
   %5 = select i1 %1, i32 512, i32 %4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = add nuw nsw i16 %2, 4
   %4 = and i16 %3, 4088
   %5 = select i1 %1, i16 4088, i16 %4
-  %6 = or disjoint i16 %0, %5
+  %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 

@@ -10,7 +10,7 @@ entry:
   %3 = icmp ult i16 %2, 25
   %4 = select i1 %3, i16 0, i16 %1
   %5 = freeze i16 %4
-  %6 = icmp ult i16 %0, %5
+  %6 = icmp ugt i16 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = icmp ult i16 %2, 25
   %4 = select i1 %3, i16 0, i16 %1
   %5 = freeze i16 %4
-  %6 = icmp ugt i16 %0, %5
+  %6 = icmp ult i16 %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = icmp eq i16 %2, 24
   %4 = select i1 %3, i16 0, i16 %1
   %5 = freeze i16 %4
-  %6 = icmp ult i16 %0, %5
+  %6 = icmp ugt i16 %5, %0
   ret i1 %6
 }
 

@@ -24,7 +24,7 @@ entry:
   %3 = select i1 %2, i64 60, i64 36
   %4 = icmp eq i32 %1, 1
   %5 = select i1 %4, i64 44, i64 %3
-  %6 = mul nuw nsw i64 %0, %5
+  %6 = mul nuw nsw i64 %5, %0
   ret i64 %6
 }
 

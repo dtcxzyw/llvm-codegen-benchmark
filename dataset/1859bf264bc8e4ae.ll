@@ -8,7 +8,7 @@
 define i32 @func0000000000000022(i1 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq i8 %1, 10
   %6 = select i1 %4, i1 %5, i1 false
   %7 = zext i1 %6 to i32
@@ -51,7 +51,7 @@ entry:
 define i64 @func0000000000000198(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne i64 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   %7 = zext i1 %6 to i64
@@ -91,7 +91,7 @@ entry:
 define i8 @func0000000000000158(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne i8 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   %7 = zext i1 %6 to i8

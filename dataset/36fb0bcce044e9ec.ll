@@ -9,7 +9,7 @@ define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 8, %1
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %2, i64 4)
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

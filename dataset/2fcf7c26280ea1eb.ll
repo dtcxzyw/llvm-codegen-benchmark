@@ -31,7 +31,7 @@ entry:
   %3 = add nuw nsw i16 %2, 6
   %4 = zext nneg i16 %3 to i32
   %5 = sub i32 %1, %4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

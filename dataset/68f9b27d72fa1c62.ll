@@ -13,7 +13,7 @@
 define i64 @func0000000000000018(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 -5
-  %3 = icmp ugt ptr %0, %2
+  %3 = icmp ult ptr %2, %0
   %4 = select i1 %3, ptr %2, ptr %0
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

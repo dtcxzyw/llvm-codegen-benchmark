@@ -11,10 +11,9 @@
 define i1 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = lshr i8 %2, 3
-  %4 = lshr i8 %0, 3
-  %5 = icmp eq i8 %3, %4
-  ret i1 %5
+  %.unshifted = xor i8 %2, %0
+  %3 = icmp ult i8 %.unshifted, 8
+  ret i1 %3
 }
 
 ; 2 occurrences:

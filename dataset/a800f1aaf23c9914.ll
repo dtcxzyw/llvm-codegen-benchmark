@@ -6,7 +6,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   ret i1 %4
 }
 
@@ -20,7 +20,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -32,7 +32,7 @@ define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = call i16 @llvm.abs.i16(i16 %1, i1 false)
   %3 = zext i16 %2 to i32
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -46,7 +46,7 @@ define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -57,7 +57,7 @@ define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -82,7 +82,7 @@ define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = tail call i8 @llvm.abs.i8(i8 %1, i1 false)
   %3 = zext i8 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -98,7 +98,7 @@ define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -110,7 +110,7 @@ define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -123,7 +123,7 @@ define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 

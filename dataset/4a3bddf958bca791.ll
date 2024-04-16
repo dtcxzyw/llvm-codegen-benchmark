@@ -47,7 +47,7 @@ entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = icmp ne ptr %1, null
   %4 = icmp ult ptr %1, %2
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

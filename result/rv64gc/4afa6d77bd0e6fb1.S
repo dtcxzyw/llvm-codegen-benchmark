@@ -1,13 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
-	lui	a1, 400520
-	addi	a1, a1, 1607
-	add	a0, a0, a1
+	addi	a0, a0, 71
 	andi	a0, a0, 255
 	ret
 func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
-	addi	a0, a0, -7
+	addi	a0, a0, 25
 	andi	a0, a0, 31
 	ret
 func000000000000001f:                   # @func000000000000001f

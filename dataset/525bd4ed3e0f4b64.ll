@@ -22,9 +22,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr [16 x %struct.XHCIInterrupter.1662572], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr [16 x %struct.XHCIInterrupter.1662572], ptr %0, i64 0, i64 %2, i32 6
+  ret ptr %3
 }
 
 ; 7 occurrences:
@@ -39,9 +38,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr [16 x %struct.XHCIInterrupter.1662572], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr [16 x %struct.XHCIInterrupter.1662572], ptr %0, i64 0, i64 %2, i32 6
+  ret ptr %3
 }
 
 ; 41 occurrences:
@@ -90,9 +88,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr inbounds [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.1833275"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.1833275"], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

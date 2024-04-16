@@ -8,10 +8,10 @@
 define i64 @func0000000000000009(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -24,10 +24,10 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -37,10 +37,10 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

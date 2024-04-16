@@ -30,8 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %1, i32 %2, i32 %3
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i32
+  %4 = add nuw nsw i32 %3, %2
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -54,8 +55,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %1, i32 %2, i32 %3
+  %not. = xor i1 %1, true
+  %3 = sext i1 %not. to i32
+  %4 = add nsw i32 %3, %2
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -66,8 +68,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %1, i32 %2, i32 %3
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i32
+  %4 = add nuw nsw i32 %3, %2
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

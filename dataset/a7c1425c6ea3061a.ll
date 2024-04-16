@@ -9,7 +9,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = sub nuw nsw i64 64, %2
   %4 = lshr i64 -1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

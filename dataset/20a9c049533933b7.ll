@@ -9,9 +9,9 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
-  %3 = sub i64 %2, %0
-  %4 = sub i64 64, %3
-  ret i64 %4
+  %.neg = sub i64 %0, %2
+  %3 = add i64 %.neg, 64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

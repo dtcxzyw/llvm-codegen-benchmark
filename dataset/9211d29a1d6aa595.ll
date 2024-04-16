@@ -8,7 +8,7 @@ define double @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }

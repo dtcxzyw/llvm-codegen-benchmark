@@ -103,7 +103,7 @@ entry:
   %3 = tail call i64 @llvm.fshl.i64(i64 %1, i64 %2, i64 63)
   %4 = icmp ult i64 %3, 1844674407370955162
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

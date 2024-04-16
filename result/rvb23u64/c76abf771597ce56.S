@@ -22,7 +22,7 @@ func000000000000002c:                   # @func000000000000002c
 	bnez	a0, .LBB2_2
 	fmv.s	fa1, fa2
 .LBB2_2:                                # %entry
-	fadd.s	fa5, fa0, fa1
+	fadd.s	fa5, fa1, fa0
 	fmv.w.x	fa4, zero
 	fle.s	a0, fa4, fa5
 	ret

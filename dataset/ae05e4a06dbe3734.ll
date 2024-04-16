@@ -9,8 +9,8 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %1, %4
-  %6 = or i64 %0, %5
+  %5 = and i64 %4, %1
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -24,7 +24,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -285,10 +285,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %1, %4
-  %6 = or i64 %0, %5
+  %5 = and i64 %4, %1
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -327,8 +327,8 @@ define i64 @func000000000000000b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %1, %4
-  %6 = or disjoint i64 %0, %5
+  %5 = and i64 %4, %1
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -342,7 +342,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 65535, %3
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
@@ -358,8 +358,8 @@ define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 65535, %3
-  %5 = and i64 %1, %4
-  %6 = or disjoint i64 %0, %5
+  %5 = and i64 %4, %1
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -383,7 +383,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 65535, %3
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -395,7 +395,7 @@ define i128 @func0000000000000009(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i128
   %4 = shl i128 15, %3
-  %5 = and i128 %1, %4
+  %5 = and i128 %4, %1
   %6 = or disjoint i128 %5, %0
   ret i128 %6
 }

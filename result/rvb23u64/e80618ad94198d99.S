@@ -25,10 +25,10 @@ func0000000000000035:                   # @func0000000000000035
 	snez	a3, a2
 	sub	a4, a4, a3
 	neg	a2, a2
-	mulhu	a3, a0, a2
-	mul	a4, a4, a0
 	mul	a1, a1, a2
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
+	mul	a4, a4, a0
 	add	a1, a1, a4
 	mul	a0, a0, a2
 	ret

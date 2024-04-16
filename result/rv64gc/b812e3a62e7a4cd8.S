@@ -24,7 +24,7 @@ func0000000000000002:                   # @func0000000000000002
 	beqz	a0, .LBB1_4
 .LBB1_2:                                # %entry
 	fsub.s	fa5, fa5, fa3
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LBB1_3:                                # %entry
 	fmv.s	fa4, fa1
@@ -33,5 +33,5 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
 	fsub.s	fa5, fa5, fa4
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret

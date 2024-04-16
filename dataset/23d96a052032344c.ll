@@ -39,9 +39,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds [1 x %struct.niels_s.1589597], ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 64
-  ret ptr %5
+  %4 = getelementptr inbounds [1 x %struct.niels_s.1589597], ptr %0, i64 %3, i64 0, i32 1
+  ret ptr %4
 }
 
 ; 8 occurrences:
@@ -58,9 +57,8 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.Vec_Int_t_.1770734, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %struct.Vec_Int_t_.1770734, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -70,9 +68,8 @@ define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.Vec_Int_t_.1771123, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.Vec_Int_t_.1771123, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 10 occurrences:
@@ -120,9 +117,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.ImGuiKeyRoutingData.1931704, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 2
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.ImGuiKeyRoutingData.1931704, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:

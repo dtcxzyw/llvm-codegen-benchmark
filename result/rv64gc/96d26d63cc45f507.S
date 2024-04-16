@@ -3,10 +3,8 @@ func0000000000000001:                   # @func0000000000000001
 	bnez	a0, .LBB0_2
 	mv	a1, a2
 .LBB0_2:                                # %entry
-	slli	a1, a1, 32
-	li	a0, -17
-	slli	a0, a0, 33
-	xor	a0, a0, a1
+	sext.w	a1, a1
+	addi	a0, a1, 34
 	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -22,9 +20,9 @@ func000000000000002a:                   # @func000000000000002a
 	bnez	a0, .LBB2_2
 	mv	a1, a2
 .LBB2_2:                                # %entry
-	slliw	a0, a1, 3
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	lui	a0, 65536
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1

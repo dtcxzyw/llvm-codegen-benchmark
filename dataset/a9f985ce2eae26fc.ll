@@ -20,7 +20,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = lshr i64 %4, 3
   ret i64 %5
 }

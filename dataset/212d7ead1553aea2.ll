@@ -9,11 +9,10 @@
 define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds %"struct.std::pair.1693351", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = or i64 %2, 1
+  %4 = getelementptr %"struct.std::pair.1693351", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -24
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

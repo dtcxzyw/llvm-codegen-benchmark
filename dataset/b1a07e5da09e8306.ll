@@ -30,7 +30,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 6
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i16, ptr %0, i64 %6
   ret ptr %7

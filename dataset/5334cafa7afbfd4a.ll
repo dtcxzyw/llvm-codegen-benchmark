@@ -6,7 +6,7 @@ define i1 @func00000000000000c1(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048064
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp eq i8 %1, 0
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
@@ -34,7 +34,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp ult i32 %1, 2
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7

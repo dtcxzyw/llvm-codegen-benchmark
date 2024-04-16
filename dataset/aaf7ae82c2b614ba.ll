@@ -54,7 +54,7 @@ entry:
   %3 = sdiv i64 %2, 4
   %4 = shl nsw i64 %3, 2
   %5 = shl nsw i64 %1, 2
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = icmp slt i64 %6, %4
   ret i1 %7
 }

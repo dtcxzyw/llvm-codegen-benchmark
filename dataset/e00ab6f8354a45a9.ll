@@ -1655,7 +1655,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 -32768, i16 0
-  %3 = add nuw i16 %0, %2
+  %3 = add nuw i16 %2, %0
   ret i16 %3
 }
 

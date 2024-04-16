@@ -13,7 +13,7 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func0000000000000171:                   # @func0000000000000171
 	srli	a1, a1, 3
-	li	a2, -3
+	li	a2, 1
 	subw	a2, a2, a1
 	andi	a2, a2, 3
 	addi	a0, a0, 1

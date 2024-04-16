@@ -57,8 +57,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
-  %6 = add nsw i64 %5, -1
-  %7 = sub i64 %6, %0
+  %6 = xor i64 %0, -1
+  %7 = add i64 %5, %6
   ret i64 %7
 }
 

@@ -63,7 +63,7 @@ entry:
   %2 = shl i64 %0, 1
   %3 = call noundef i64 @llvm.umax.i64(i64 %2, i64 %1)
   %4 = call noundef i64 @llvm.umax.i64(i64 %3, i64 4)
-  %5 = icmp ule i64 %0, %4
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 

@@ -8,7 +8,7 @@ define i1 @func0000000000000036(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = tail call i8 @llvm.abs.i8(i8 %2, i1 false)
   %4 = zext i8 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = icmp slt i32 %5, %0
   ret i1 %6
 }

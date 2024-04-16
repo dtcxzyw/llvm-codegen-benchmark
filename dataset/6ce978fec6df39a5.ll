@@ -9,7 +9,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = uitofp i32 %3 to float
   %5 = fdiv float %4, 1.000000e+03
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

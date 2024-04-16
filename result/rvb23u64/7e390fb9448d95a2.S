@@ -1,22 +1,25 @@
 func00000000000000b1:                   # @func00000000000000b1
-	slli	a1, a1, 1
-	addi	a1, a1, -2
-	srli	a1, a1, 1
+	addi	a1, a1, -1
+	bclri	a1, a1, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a1, 3
-	addi	a1, a1, -9
-	srli	a1, a1, 3
+	li	a2, -9
+	srli	a2, a2, 3
+	add	a1, a1, a2
+	addi	a2, a2, 1
+	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001a1:                   # @func00000000000001a1
 	sext.w	a0, a0
-	slli	a1, a1, 2
-	addi	a1, a1, -9
-	srliw	a1, a1, 2
+	lui	a2, 262144
+	addiw	a2, a2, -3
+	add	a1, a1, a2
+	addi	a2, a2, 2
+	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -39,9 +42,9 @@ func00000000000001e1:                   # @func00000000000001e1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	slli	a1, a1, 5
-	addi	a1, a1, -32
-	srliw	a1, a1, 5
+	addi	a1, a1, -1
+	slli	a1, a1, 37
+	srli	a1, a1, 37
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

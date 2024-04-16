@@ -59,7 +59,8 @@ func00000000000000d7:                   # @func00000000000000d7
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a1, a1, a2
-	li	a2, -100
+	lui	a2, 524288
+	addi	a2, a2, -100
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	slliw	a0, a0, 1

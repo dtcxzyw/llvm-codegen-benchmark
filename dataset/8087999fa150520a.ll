@@ -20,7 +20,7 @@ entry:
   %2 = add nuw nsw i128 %1, 1442695040888963407
   %3 = add i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   %6 = add i64 %5, 6364136223846793005
   ret i64 %6
 }

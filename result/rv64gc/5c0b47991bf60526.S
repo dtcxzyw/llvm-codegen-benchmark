@@ -5,18 +5,20 @@
 func000000000000002a:                   # @func000000000000002a
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	mulh	a2, a2, a3
-	srli	a3, a2, 63
-	srai	a2, a2, 15
-	add	a2, a2, a3
-	lui	a3, 1048540
-	addiw	a3, a3, 1359
-	mul	a2, a2, a3
-	lui	a3, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_1)(a3)
+	mulh	a3, a2, a3
+	srli	a4, a3, 63
+	srai	a3, a3, 15
+	add	a3, a3, a4
+	lui	a4, 36
+	addiw	a4, a4, -1359
+	mul	a3, a3, a4
+	sub	a2, a2, a2
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI0_1)
+	ld	a1, %lo(.LCPI0_1)(a1)
 	add	a0, a0, a2
+	sub	a0, a0, a3
 	srli	a0, a0, 2
-	mulhu	a0, a0, a3
+	mulhu	a0, a0, a1
 	srli	a0, a0, 6
 	ret

@@ -31,9 +31,8 @@ entry:
 define i1 @func0000000000000001(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i64
-  %2 = add i64 %1, 1
-  %3 = icmp eq i64 %2, 9223372036854775807
-  ret i1 %3
+  %2 = icmp eq i64 %1, 9223372036854775806
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

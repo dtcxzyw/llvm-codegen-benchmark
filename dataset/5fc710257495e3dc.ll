@@ -29,7 +29,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = and i64 %6, 4294967295
   ret i64 %7
 }

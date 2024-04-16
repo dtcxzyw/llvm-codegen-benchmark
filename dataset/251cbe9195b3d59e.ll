@@ -1829,10 +1829,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = icmp ne i16 %2, 0
-  %4 = select i1 %3, i16 %0, i16 %1
-  %5 = icmp eq i16 %4, 0
-  ret i1 %5
+  %.not = icmp eq i16 %2, 0
+  %3 = select i1 %.not, i16 %1, i16 %0
+  %4 = icmp eq i16 %3, 0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -2057,8 +2057,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000a8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = icmp sgt i8 %2, -1
-  %4 = select i1 %3, i32 %0, i32 %1
+  %3 = icmp slt i8 %2, 0
+  %4 = select i1 %3, i32 %1, i32 %0
   %5 = icmp ugt i32 %4, 24
   ret i1 %5
 }
@@ -2068,10 +2068,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = icmp sgt i32 %3, -1
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -2080,10 +2080,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp ult i32 %4, 7
-  ret i1 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = icmp ult i32 %3, 7
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -2091,10 +2091,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp ne i32 %4, -1
-  ret i1 %5
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = icmp ne i32 %3, -1
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -2103,10 +2103,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp slt i32 %4, 262144
-  ret i1 %5
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = icmp slt i32 %3, 262144
+  ret i1 %4
 }
 
 ; 6 occurrences:

@@ -1133,9 +1133,8 @@ entry:
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
-  %3 = and i64 %2, -65536
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp ult i64 %2, 65536
+  ret i1 %3
 }
 
 ; 307 occurrences:
@@ -1557,8 +1556,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, 1023
+  %3 = and i64 %2, 4294966272
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

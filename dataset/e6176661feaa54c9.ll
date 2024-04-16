@@ -17,7 +17,7 @@ entry:
   %1 = sext i16 %0 to i32
   %2 = add nsw i32 %1, 1
   %3 = srem i32 %2, 6
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nsw i32 %3 to i16
   ret i16 %4
 }
 

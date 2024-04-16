@@ -33,11 +33,10 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = zext i64 %1 to i128
-  %3 = zext i64 %0 to i128
-  %4 = add nuw nsw i128 %3, %2
-  %5 = lshr i128 %4, 64
-  ret i128 %5
+  %2 = xor i64 %0, -1
+  %add.narrowed.overflow = icmp ult i64 %2, %1
+  %3 = zext i1 %add.narrowed.overflow to i128
+  ret i128 %3
 }
 
 ; 4 occurrences:

@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i1 %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, null
-  %3 = select i1 %2, i16 25, i16 0
-  %4 = select i1 %0, i16 12, i16 0
-  %5 = or i16 %4, %3
-  ret i16 %5
+  %.not = icmp eq ptr %1, null
+  %2 = select i1 %.not, i16 0, i16 25
+  %3 = select i1 %0, i16 12, i16 0
+  %4 = or i16 %3, %2
+  ret i16 %4
 }
 
 ; 4 occurrences:
@@ -32,11 +32,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000019(i1 %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, null
-  %3 = select i1 %2, i8 8, i8 0
-  %4 = select i1 %0, i8 16, i8 0
-  %5 = or disjoint i8 %4, %3
-  ret i8 %5
+  %.not = icmp eq ptr %1, null
+  %2 = select i1 %.not, i8 0, i8 8
+  %3 = select i1 %0, i8 16, i8 0
+  %4 = or disjoint i8 %3, %2
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

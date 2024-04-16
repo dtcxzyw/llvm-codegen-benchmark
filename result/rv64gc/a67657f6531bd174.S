@@ -6,6 +6,6 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 11
-	andi	a0, a0, -2
-	sext.w	a0, a0
+	srliw	a0, a0, 1
+	slli	a0, a0, 1
 	ret

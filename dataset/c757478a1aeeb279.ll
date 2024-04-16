@@ -9,7 +9,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = xor i32 %3, 31
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %1, %5
+  %6 = or disjoint i64 %5, %1
   %7 = icmp ult i64 %6, %0
   ret i1 %7
 }

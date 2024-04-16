@@ -10,7 +10,7 @@ entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 4294967295
   %5 = sub nsw i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
   %5 = sub nuw nsw i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
   %5 = sub nsw i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 2147483647
   %5 = sub nsw i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 524287
   %5 = sub nsw i32 %4, %1
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 
@@ -72,7 +72,7 @@ entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 524287
   %5 = sub nsw i32 %4, %1
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 

@@ -9,11 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 1
-  %3 = icmp eq i64 %2, -1
-  %4 = icmp eq i64 %0, -4611686018427387904
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %2 = icmp ugt i64 %1, -3
+  %3 = icmp eq i64 %0, -4611686018427387904
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -21,11 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 1
-  %3 = icmp slt i64 %2, 0
-  %4 = icmp ne i64 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %2 = icmp slt i64 %1, 0
+  %3 = icmp ne i64 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -33,11 +31,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 1
-  %3 = icmp sgt i64 %2, -1
-  %4 = icmp eq i32 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %2 = icmp sgt i64 %1, -1
+  %3 = icmp eq i32 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -45,11 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 1
-  %3 = icmp slt i64 %2, 0
-  %4 = icmp ne i32 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %2 = icmp slt i64 %1, 0
+  %3 = icmp ne i32 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -57,11 +53,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 4
-  %3 = icmp ugt i64 %2, 1
-  %4 = icmp ne i64 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %2 = icmp ugt i64 %1, 16
+  %3 = icmp ne i64 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 ; 9 occurrences:
@@ -77,11 +72,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 16
-  %3 = icmp sgt i32 %2, 0
-  %4 = icmp sgt i32 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %2 = icmp sgt i32 %1, 0
+  %3 = icmp sgt i32 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -90,11 +84,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
-  %2 = ashr i32 %1, 16
-  %3 = icmp sgt i32 %2, 0
-  %4 = icmp sgt i32 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %2 = icmp sgt i32 %1, 65535
+  %3 = icmp sgt i32 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -103,11 +96,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 7
-  %3 = icmp eq i64 %2, -1
-  %4 = icmp ne i64 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %2 = icmp ugt i64 %1, -129
+  %3 = icmp ne i64 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -115,11 +107,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000ca(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 8
-  %3 = icmp sgt i64 %2, 1
-  %4 = icmp ne i64 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %2 = icmp sgt i64 %1, 511
+  %3 = icmp ne i64 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -127,11 +118,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000114(i32 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 2
-  %3 = icmp ult i64 %2, 3
-  %4 = icmp eq i32 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %2 = icmp ult i64 %1, 12
+  %3 = icmp eq i32 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -140,11 +130,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 2
-  %3 = icmp ugt i64 %2, 2
-  %4 = icmp eq i32 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %2 = icmp ugt i64 %1, 8
+  %3 = icmp eq i32 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -152,11 +141,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 2
-  %3 = icmp sgt i64 %2, 28
-  %4 = icmp ugt i64 %0, 1
-  %5 = and i1 %4, %3
-  ret i1 %5
+  %2 = icmp sgt i64 %1, 112
+  %3 = icmp ugt i64 %0, 1
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

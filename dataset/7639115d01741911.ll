@@ -148,11 +148,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = icmp sgt i64 %0, %1
-  %4 = select i1 %3, i64 %2, i64 0
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %2 = icmp sgt i64 %0, %1
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -162,9 +159,9 @@ entry:
 define i1 @func00000000000000a4(i128 %0, i128 %1) #0 {
 entry:
   %2 = sub i128 %0, %1
-  %3 = icmp sgt i128 %0, %1
-  %4 = select i1 %3, i128 %2, i128 0
-  %5 = icmp ult i128 %4, 18446744073709551616
+  %3 = icmp sle i128 %0, %1
+  %4 = icmp ult i128 %2, 18446744073709551616
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -173,11 +170,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001ac(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = icmp sgt i32 %0, %1
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %2 = icmp sgt i32 %0, %1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

@@ -583,7 +583,7 @@
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -623,7 +623,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 

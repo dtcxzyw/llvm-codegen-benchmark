@@ -7,17 +7,15 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000160:                   # @func0000000000000160
 	andi	a2, a2, 255
-	addi	a2, a2, -1
-	srli	a2, a2, 32
-	snez	a2, a2
+	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000060:                   # @func0000000000000060
-	zext.w	a2, a2
-	addi	a2, a2, -1
-	srli	a2, a2, 31
-	snez	a2, a2
+	lui	a3, 524288
+	addi	a4, a3, -1
+	add.uw	a2, a2, a4
+	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

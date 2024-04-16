@@ -5,12 +5,12 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000100(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 10
-  %4 = select i1 %3, i32 0, i32 9
-  %5 = add i32 %1, %4
-  %6 = shl i32 %5, 4
-  %7 = add i32 %0, %6
-  ret i32 %7
+  %.inv = icmp ugt i32 %2, 9
+  %3 = select i1 %.inv, i32 9, i32 0
+  %4 = add i32 %3, %1
+  %5 = shl i32 %4, 4
+  %6 = add i32 %5, %0
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -22,7 +22,7 @@ entry:
   %4 = select i1 %3, i32 -55, i32 -48
   %5 = add nsw i32 %4, %1
   %6 = shl nsw i32 %5, 4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 2
   %5 = add i32 %4, %1
   %6 = shl i32 %5, 3
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = select i1 %3, i32 -87, i32 -48
   %5 = add nsw i32 %4, %1
   %6 = shl nsw i32 %5, 4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

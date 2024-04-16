@@ -94,11 +94,10 @@
 define i64 @func0000000000000083(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = lshr i64 %4, 32
-  %6 = mul nuw nsw i64 %5, 1374389535
-  ret i64 %6
+  %sum.shift = lshr i128 %2, 96
+  %3 = trunc nuw nsw i128 %sum.shift to i64
+  %4 = mul nuw nsw i64 %3, 1374389535
+  ret i64 %4
 }
 
 ; 7 occurrences:
@@ -113,11 +112,10 @@ entry:
 define i64 @func0000000000000093(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc nuw i128 %3 to i64
-  %5 = lshr i64 %4, 32
-  %6 = mul nuw nsw i64 %5, 1374389535
-  ret i64 %6
+  %sum.shift = lshr i128 %2, 96
+  %3 = trunc nuw nsw i128 %sum.shift to i64
+  %4 = mul nuw nsw i64 %3, 1374389535
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

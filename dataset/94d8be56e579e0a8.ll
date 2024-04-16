@@ -105,7 +105,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctpop.i64(i64 %0), !range !0
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   ret i32 %2
 }
 
@@ -171,7 +171,7 @@ entry:
 define i8 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = tail call noundef i64 @llvm.ctpop.i64(i64 %0), !range !0
-  %2 = trunc i64 %1 to i8
+  %2 = trunc nuw nsw i64 %1 to i8
   ret i8 %2
 }
 

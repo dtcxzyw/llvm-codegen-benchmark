@@ -1,6 +1,5 @@
 func0000000000000016:                   # @func0000000000000016
-	sub	a2, a0, a1
-	bltz	a2, .LBB0_2
+	blt	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret
@@ -32,8 +31,9 @@ func000000000000000a:                   # @func000000000000000a
 .LBB4_2:                                # %entry
 	ret
 func000000000000001a:                   # @func000000000000001a
-	subw	a2, a1, a0
-	bgtz	a2, .LBB5_2
-	mv	a0, a1
+	sext.w	a2, a0
+	sext.w	a0, a1
+	blt	a0, a2, .LBB5_2
+	mv	a0, a2
 .LBB5_2:                                # %entry
 	ret

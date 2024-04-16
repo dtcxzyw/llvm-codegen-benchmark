@@ -13,7 +13,7 @@ entry:
   %2 = and i32 %1, 31
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -30,7 +30,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -44,7 +44,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

@@ -7,7 +7,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw nsw i64 %1, 256
   %5 = sub nsw i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = ashr exact i64 %2, 1
   %4 = add nsw i64 %1, 1
   %5 = sub nsw i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %1, 1
   %5 = sub nsw i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = add i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

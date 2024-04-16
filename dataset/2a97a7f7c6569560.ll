@@ -9,7 +9,7 @@
 define i1 @func0000000000000022(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = icmp eq i8 %0, %2
+  %3 = icmp eq i8 %2, %0
   %4 = icmp eq i8 %0, 10
   %5 = or i1 %3, %4
   ret i1 %5

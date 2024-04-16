@@ -5,7 +5,7 @@
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   %5 = call float @llvm.fabs.f32(float %4)
   %6 = fcmp ule float %5, 0x3E45798EE0000000
   ret i1 %6
@@ -20,7 +20,7 @@ declare float @llvm.fabs.f32(float) #1
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = tail call double @llvm.fabs.f64(double %4)
   %6 = fcmp olt double %5, 0x3E80000000000000
   ret i1 %6
@@ -35,7 +35,7 @@ declare double @llvm.fabs.f64(double) #1
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   %5 = call float @llvm.fabs.f32(float %4)
   %6 = fcmp uge float %5, 0x3DDB7CDFE0000000
   ret i1 %6
@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = tail call double @llvm.fabs.f64(double %4)
   %6 = fcmp une double %5, 0x7FF0000000000000
   ret i1 %6

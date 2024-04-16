@@ -21,8 +21,8 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 15
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp eq i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -36,8 +36,8 @@ define i1 @func0000000000000018(i1 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc i64 %3 to i16
-  %5 = icmp ne i16 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp ne i16 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -49,8 +49,8 @@ define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp sgt i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -61,8 +61,8 @@ define i1 @func0000000000000016(i1 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = lshr i48 %2, 16
   %4 = trunc i48 %3 to i16
-  %5 = icmp sge i16 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp sle i16 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ define i1 @func000000000000000c(i1 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = lshr i48 %2, 16
   %4 = trunc i48 %3 to i16
-  %5 = icmp slt i16 %1, %4
+  %5 = icmp sgt i16 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -90,8 +90,8 @@ define i1 @func0000000000000010(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp ult i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -112,7 +112,7 @@ define i1 @func000000000000008e(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp sle i32 %1, %4
+  %5 = icmp sge i32 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -124,8 +124,8 @@ define i1 @func0000000000000088(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp ugt i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -136,8 +136,8 @@ define i1 @func0000000000000054(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp sgt i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp slt i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -148,8 +148,8 @@ define i1 @func0000000000000056(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp sge i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp sle i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -162,8 +162,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i31 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = trunc i32 %3 to i31
-  %5 = icmp ult i31 %1, %4
+  %4 = trunc nuw i32 %3 to i31
+  %5 = icmp ugt i31 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -174,9 +174,9 @@ entry:
 define i1 @func000000000000000e(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
-  %5 = icmp sle i32 %1, %4
-  %6 = or i1 %0, %5
+  %4 = trunc nuw i64 %3 to i32
+  %5 = icmp sge i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -189,8 +189,8 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i96 %2) #0 {
 entry:
   %3 = lshr i96 %2, 32
   %4 = trunc i96 %3 to i32
-  %5 = icmp sgt i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp slt i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -202,8 +202,8 @@ define i1 @func0000000000000082(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp eq i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -214,8 +214,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ule i32 %1, %4
+  %4 = trunc nuw i64 %3 to i32
+  %5 = icmp uge i32 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -227,8 +227,8 @@ define i1 @func0000000000000094(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %1, %4
-  %6 = or i1 %0, %5
+  %5 = icmp slt i32 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

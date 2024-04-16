@@ -7,7 +7,7 @@ entry:
   %2 = freeze i64 %1
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = icmp eq i32 %5, 2
   ret i1 %6
 }
@@ -20,7 +20,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 5
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

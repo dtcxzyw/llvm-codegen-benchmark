@@ -9,7 +9,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = mul nsw i64 %2, 208
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 28
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -54,7 +54,7 @@ entry:
   %3 = mul nsw i64 %2, -8
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 6
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -79,7 +79,7 @@ entry:
   %3 = mul nsw i64 %2, 80
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 264
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

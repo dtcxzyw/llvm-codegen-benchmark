@@ -12,8 +12,8 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 7
   %5 = shl nuw nsw i64 1, %4
-  %6 = trunc i64 %5 to i8
-  %7 = or i8 %0, %6
+  %6 = trunc nuw i64 %5 to i8
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 
@@ -38,8 +38,8 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 7
   %5 = shl nuw nsw i32 1, %4
-  %6 = trunc i32 %5 to i8
-  %7 = or i8 %0, %6
+  %6 = trunc nuw i32 %5 to i8
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 

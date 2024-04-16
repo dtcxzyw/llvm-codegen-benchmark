@@ -19,14 +19,14 @@ func0000000000000007:                   # @func0000000000000007
 	addiw	a0, a0, 16
 	ret
 func0000000000000033:                   # @func0000000000000033
-	bexti	a1, a1, 8
-	li	a2, -10
-	czero.nez	a1, a2, a1
+	andi	a1, a1, 256
+	li	a2, 10
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, 20
+	addiw	a0, a0, 10
 	ret
 func0000000000000013:                   # @func0000000000000013
-	andi	a1, a1, 15
+	andi	a1, a1, 14
 	sltiu	a1, a1, 10
 	li	a2, 7
 	czero.nez	a1, a2, a1
@@ -34,7 +34,7 @@ func0000000000000013:                   # @func0000000000000013
 	addi	a0, a0, 48
 	ret
 func0000000000000020:                   # @func0000000000000020
-	andi	a1, a1, 255
+	andi	a1, a1, 252
 	sltiu	a1, a1, 36
 	li	a2, 2
 	czero.eqz	a1, a2, a1
@@ -42,9 +42,10 @@ func0000000000000020:                   # @func0000000000000020
 	addi	a0, a0, 13
 	ret
 func0000000000000023:                   # @func0000000000000023
-	slli	a1, a1, 49
-	srli	a1, a1, 59
-	sltiu	a1, a1, 31
+	li	a2, 31
+	slli	a2, a2, 10
+	and	a1, a1, a2
+	xor	a1, a1, a2
 	lui	a2, 229376
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
@@ -60,9 +61,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 28
 	addi	a1, a1, -28
-	snez	a1, a1
-	subw	a0, a0, a1
-	addiw	a0, a0, 2
+	seqz	a1, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a2, 16
@@ -80,7 +81,7 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	bexti	a1, a1, 8
+	andi	a1, a1, 256
 	li	a2, -8
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1

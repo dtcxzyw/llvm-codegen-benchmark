@@ -21,10 +21,11 @@ func0000000000000a90:                   # @func0000000000000a90
 	lui	a2, 37
 	addiw	a2, a2, -1971
 	sltu	a1, a1, a2
-	addiw	a0, a0, -48
-	lui	a2, 302
-	addiw	a2, a2, 583
-	sltu	a0, a2, a0
+	lui	a2, 1048274
+	addi	a3, a2, -632
+	addw	a0, a0, a3
+	addiw	a2, a2, -584
+	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000288:                   # @func0000000000000288

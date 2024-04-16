@@ -11,7 +11,7 @@ entry:
   %2 = ashr exact i64 %1, 5
   %3 = add nsw i64 %2, -2
   %4 = icmp ult i64 %3, 87
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = ashr i32 %1, 8
   %3 = add nsw i32 %2, -4547
   %4 = icmp ult i32 %3, -27
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

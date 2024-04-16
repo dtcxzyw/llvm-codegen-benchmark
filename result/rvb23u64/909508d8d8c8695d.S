@@ -8,12 +8,13 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	add.uw	a1, a2, a1
-	lui	a2, 1015809
-	slli	a2, a2, 20
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	zext.w	a2, a2
+	lui	a3, 1015809
+	slli	a3, a3, 20
+	addi	a3, a3, -1
+	and	a1, a1, a3
 	slli	a0, a0, 32
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

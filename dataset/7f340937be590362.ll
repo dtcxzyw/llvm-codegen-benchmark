@@ -7,7 +7,7 @@ entry:
   %3 = shl nuw nsw i128 %2, 1
   %4 = shl i128 %1, 65
   %5 = or disjoint i128 %4, %3
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = shl i64 %2, 42
   %4 = shl nuw nsw i64 %1, 21
   %5 = or i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 9
   %4 = shl nuw nsw i64 %1, 1
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 9
   %4 = shl nuw nsw i64 %1, 1
   %5 = or disjoint i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

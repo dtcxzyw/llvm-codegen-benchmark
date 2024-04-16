@@ -12,7 +12,7 @@ entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 400, i64 0
   %4 = add nsw i64 %3, %1
-  %5 = trunc i64 %4 to i16
+  %5 = trunc nsw i64 %4 to i16
   ret i16 %5
 }
 

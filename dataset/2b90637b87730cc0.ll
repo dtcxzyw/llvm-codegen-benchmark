@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub i64 %3, %0
+  %3 = add i64 %2, %0
+  %4 = sub i64 %1, %3
   %5 = call i64 @llvm.umax.i64(i64 %0, i64 %4)
   %6 = add nuw i64 %5, %0
   %7 = call i64 @llvm.umin.i64(i64 %6, i64 9223372036854775807)

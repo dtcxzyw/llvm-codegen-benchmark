@@ -14,10 +14,11 @@ func0000000000000108:                   # @func0000000000000108
 	bltu	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	addi	a0, a0, 16
 	lui	a1, 524288
-	addiw	a1, a1, -17
-	sltu	a0, a1, a0
+	addiw	a2, a1, 32
+	add	a0, a0, a2
+	addiw	a1, a1, 16
+	sltu	a0, a0, a1
 	ret
 func0000000000000104:                   # @func0000000000000104
 	andi	a1, a1, 255

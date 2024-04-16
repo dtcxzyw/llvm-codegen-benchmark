@@ -103,8 +103,8 @@ entry:
   %1 = bitcast float %0 to i32
   %2 = lshr i32 %1, 23
   %3 = and i32 %2, 255
-  %4 = add nsw i32 %3, -150
-  %5 = mul nsw i32 %4, 631305
+  %4 = mul nuw nsw i32 %3, 631305
+  %5 = add nsw i32 %4, -94695750
   ret i32 %5
 }
 

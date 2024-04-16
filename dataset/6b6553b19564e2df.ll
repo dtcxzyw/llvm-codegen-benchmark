@@ -22,9 +22,8 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr inbounds [12 x %"class.std::map.1650140"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr inbounds [12 x %"class.std::map.1650140"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 1, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -34,9 +33,8 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 6
-  ret ptr %5
+  %4 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 13 occurrences:
@@ -57,9 +55,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr inbounds [0 x { i8, i8, i8, [16 x i8], [9 x i8], i8 }], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 2
-  ret ptr %5
+  %4 = getelementptr inbounds [0 x { i8, i8, i8, [16 x i8], [9 x i8], i8 }], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -78,9 +75,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr inbounds [0 x { i32, i16 }], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds [0 x { i32, i16 }], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -91,9 +87,8 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr [512 x %struct.anon.1.1915151], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [512 x %struct.anon.1.1915151], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -102,9 +97,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -113,9 +107,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

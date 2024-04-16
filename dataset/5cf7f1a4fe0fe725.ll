@@ -23,7 +23,7 @@ entry:
   %3 = icmp eq i16 %2, 2048
   %4 = icmp eq i16 %2, 204
   %5 = or i1 %3, %4
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

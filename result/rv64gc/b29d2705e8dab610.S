@@ -23,9 +23,9 @@ func0000000000000016:                   # @func0000000000000016
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a2, a1
-	li	a1, 48
-	bnez	a2, .LBB2_2
 	li	a1, 16
+	beqz	a2, .LBB2_2
+	li	a1, 48
 .LBB2_2:                                # %entry
 	addi	a0, a0, -6
 	snez	a0, a0

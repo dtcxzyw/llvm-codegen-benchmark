@@ -7,11 +7,10 @@
 define i16 @func0000000000000004(i16 %0) #0 {
 entry:
   %1 = freeze i16 %0
-  %2 = lshr i16 %1, 6
-  %3 = and i16 %2, 7
-  %4 = icmp ult i16 %3, 6
-  %5 = select i1 %4, i16 1, i16 -6
-  ret i16 %5
+  %2 = and i16 %1, 384
+  %.not = icmp eq i16 %2, 384
+  %3 = select i1 %.not, i16 -6, i16 1
+  ret i16 %3
 }
 
 ; 1 occurrences:
@@ -20,11 +19,10 @@ entry:
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = lshr i32 %1, 14
-  %3 = and i32 %2, 7
-  %4 = icmp eq i32 %3, 1
-  %5 = select i1 %4, i32 8, i32 30
-  ret i32 %5
+  %2 = and i32 %1, 114688
+  %3 = icmp eq i32 %2, 16384
+  %4 = select i1 %3, i32 8, i32 30
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

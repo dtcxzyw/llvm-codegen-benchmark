@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -32768
+  %2 = add i64 %1, 4294934528
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 4294967295
   %5 = icmp eq i32 %0, -1
@@ -18,7 +18,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000011c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967280
   %4 = icmp ne i64 %3, 0
   %5 = icmp eq i64 %0, 0

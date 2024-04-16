@@ -205,8 +205,8 @@ define i1 @func0000000000000031(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 3
   %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 4611686018427387900
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, 3
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -229,8 +229,8 @@ define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 1
   %2 = add nuw i64 %1, 1
-  %3 = and i64 %2, -16
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, 15
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -242,8 +242,8 @@ define i1 @func0000000000000071(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 1
   %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 131008
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, 9223372036854644799
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -254,8 +254,8 @@ define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 1
   %2 = add nuw i64 %1, 1
-  %3 = and i64 %2, -16
-  %4 = icmp eq i64 %2, %3
+  %3 = and i64 %2, 15
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -266,9 +266,9 @@ entry:
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 3
-  %2 = add nsw i64 %1, -1
-  %3 = and i64 %2, -32
-  %4 = icmp eq i64 %2, %3
+  %2 = add nuw nsw i64 %1, 31
+  %3 = and i64 %2, 31
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 

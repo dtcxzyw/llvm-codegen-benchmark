@@ -41,10 +41,9 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
-  %5 = getelementptr inbounds %"struct.rocksdb::ConcurrentArena::Shard.1578609", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr inbounds %"struct.rocksdb::ConcurrentArena::Shard.1578609", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -54,10 +53,9 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
-  %5 = getelementptr %struct.ZSTD_seqSymbol.2017025, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr %struct.ZSTD_seqSymbol.2017025, ptr %0, i64 %4, i32 3
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

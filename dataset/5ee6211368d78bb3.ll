@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
-  %3 = add i32 %2, -48
+  %3 = add i32 %2, 2147483600
   %4 = add i32 %3, %0
   %5 = shl i32 %4, 1
   %6 = or disjoint i32 %5, 1

@@ -2,7 +2,7 @@ func0000000000000014:                   # @func0000000000000014
 	fabs.d	fa5, fa1
 	fli.d	fa4, 1.0
 	fmax.d	fa5, fa5, fa4
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308

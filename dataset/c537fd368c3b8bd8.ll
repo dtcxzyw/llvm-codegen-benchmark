@@ -8,7 +8,7 @@
 define ptr @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr inbounds i8, ptr %5, i64 %0
   ret ptr %6
@@ -101,7 +101,7 @@ entry:
 define ptr @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 12
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
@@ -114,7 +114,7 @@ entry:
 define ptr @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr inbounds i8, ptr %5, i64 %0
   ret ptr %6

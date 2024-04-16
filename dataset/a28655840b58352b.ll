@@ -37,7 +37,7 @@ entry:
 define ptr @func0000000000000002(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
@@ -51,7 +51,7 @@ entry:
 define ptr @func0000000000000003(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr inbounds %struct.bin_s.2126897, ptr %5, i64 %6

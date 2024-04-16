@@ -13,7 +13,7 @@
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ult i64 %3, 8
   ret i1 %4
 }
@@ -29,7 +29,7 @@ entry:
 define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
@@ -47,7 +47,7 @@ entry:
 define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp ult i64 %3, 32
   ret i1 %4
 }
@@ -59,7 +59,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ugt i64 %3, 2305843009213693952
   ret i1 %4
 }
@@ -106,7 +106,7 @@ entry:
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 63
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp sgt i32 %3, 4096
   ret i1 %4
 }

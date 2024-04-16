@@ -42,7 +42,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   %5 = sext i32 %1 to i64
   %6 = icmp ne i64 %4, %5
   ret i1 %6

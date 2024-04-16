@@ -5,12 +5,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %1, %3
-  %5 = xor i32 %0, %4
-  %6 = and i32 %5, 15
-  %7 = zext nneg i32 %6 to i64
-  ret i64 %7
+  %3 = xor i32 %1, %0
+  %4 = and i32 %3, 15
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -18,12 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = shl nuw i16 %2, 8
-  %4 = or disjoint i16 %3, %1
-  %5 = xor i16 %4, %0
-  %6 = and i16 %5, 255
-  %7 = zext nneg i16 %6 to i64
-  ret i64 %7
+  %3 = xor i16 %1, %0
+  %4 = and i16 %3, 255
+  %5 = zext nneg i16 %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

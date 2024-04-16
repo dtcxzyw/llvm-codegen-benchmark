@@ -1,7 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
-	bgez	a2, .LBB0_2
-	mv	a0, a4
+	bltz	a2, .LBB0_2
+	mv	a4, a0
 .LBB0_2:                                # %entry
+	mv	a0, a4
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1

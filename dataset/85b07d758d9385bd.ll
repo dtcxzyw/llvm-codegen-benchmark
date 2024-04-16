@@ -8,11 +8,11 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %class.btVector3.1742160, ptr %0, i64 %4
-  %6 = add nuw nsw i64 %1, 1
-  %7 = getelementptr inbounds %struct.btSpatialForceVector.1742166, ptr %5, i64 %6
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %class.btVector3.1742160, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 32
+  %6 = getelementptr %struct.btSpatialForceVector.1742166, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 32
   ret ptr %7
 }
 
@@ -21,11 +21,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %class.btVector3.1742160, ptr %0, i64 %4
-  %6 = add nsw i64 %1, -1
-  %7 = getelementptr inbounds %struct.btSpatialMotionVector.1742162, ptr %5, i64 %6
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %class.btVector3.1742160, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 32
+  %6 = getelementptr %struct.btSpatialMotionVector.1742162, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }
 
@@ -37,8 +37,8 @@ entry:
   %3 = add i32 %2, -122
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %0, i64 %4
-  %6 = add nuw i64 %1, 13
-  %7 = getelementptr inbounds float, ptr %5, i64 %6
+  %6 = getelementptr float, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 52
   ret ptr %7
 }
 
@@ -50,8 +50,8 @@ entry:
   %3 = add i32 %2, 8
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %0, i64 %4
-  %6 = add nuw nsw i64 %1, 1
-  %7 = getelementptr inbounds float, ptr %5, i64 %6
+  %6 = getelementptr float, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -60,11 +60,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = add nsw i64 %1, -1
-  %7 = getelementptr ptr, ptr %5, i64 %6
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr ptr, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
+  %6 = getelementptr ptr, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 
@@ -76,8 +76,8 @@ entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = add nuw nsw i64 %1, 2
-  %7 = getelementptr i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 2
   ret ptr %7
 }
 

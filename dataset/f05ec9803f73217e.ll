@@ -38,11 +38,17 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, float %1) #0 {
 entry:
-  %2 = bitcast float %1 to i32
-  %3 = and i32 %2, 2139095040
-  %4 = icmp ne i32 %3, 2139095040
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %2 = call float @llvm.fabs.f32(float %1)
+  %3 = fcmp one float %2, 0x7FF0000000000000
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i1 @llvm.is.fpclass.f32(float, i32 immarg) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fabs.f32(float) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

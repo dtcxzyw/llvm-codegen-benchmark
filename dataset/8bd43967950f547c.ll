@@ -5,7 +5,7 @@
 define i32 @func0000000000000198(i64 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, -3584
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = icmp ne i64 %0, -4080
   %5 = and i1 %4, %3
   %6 = zext i1 %5 to i32

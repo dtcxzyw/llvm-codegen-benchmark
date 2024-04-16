@@ -1,9 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	srli	a1, a1, 8
-	bltu	a0, a1, .LBB0_2
-	mv	a1, a0
-.LBB0_2:                                # %entry
-	seqz	a0, a1
+	or	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srli	a1, a1, 8
@@ -21,12 +19,10 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a0, a0, 255
 	slli	a1, a1, 56
 	srli	a1, a1, 60
-	bltu	a1, a0, .LBB3_2
-	mv	a0, a1
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
+	andi	a0, a0, 255
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018

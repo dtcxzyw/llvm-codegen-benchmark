@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1048575
-  %3 = or disjoint i32 %2, 1048576
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 %2, i32 %3
-  %6 = lshr exact i32 %5, 1
+  %2 = icmp eq i32 %0, 0
+  %3 = lshr i32 %1, 1
+  %4 = and i32 %3, 524287
+  %5 = or disjoint i32 %4, 524288
+  %6 = select i1 %2, i32 %4, i32 %5
   ret i32 %6
 }
 
@@ -17,11 +17,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 8388607
-  %3 = or disjoint i32 %2, 8388608
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 %2, i32 %3
-  %6 = lshr i32 %5, 20
+  %2 = icmp eq i32 %0, 0
+  %3 = lshr i32 %1, 20
+  %4 = and i32 %3, 7
+  %5 = or disjoint i32 %4, 8
+  %6 = select i1 %2, i32 %4, i32 %5
   ret i32 %6
 }
 
@@ -34,11 +34,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1048575
-  %3 = or disjoint i32 %2, 1048576
-  %4 = icmp ult i32 %0, 1048576
-  %5 = select i1 %4, i32 %2, i32 %3
-  %6 = lshr exact i32 %5, 1
+  %2 = icmp ult i32 %0, 1048576
+  %3 = lshr i32 %1, 1
+  %4 = and i32 %3, 524287
+  %5 = or disjoint i32 %4, 524288
+  %6 = select i1 %2, i32 %4, i32 %5
   ret i32 %6
 }
 

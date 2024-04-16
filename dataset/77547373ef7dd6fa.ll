@@ -78,7 +78,7 @@ entry:
   %4 = and i32 %1, 2147483646
   %5 = or disjoint i32 %4, %3
   %6 = lshr exact i32 %5, 1
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

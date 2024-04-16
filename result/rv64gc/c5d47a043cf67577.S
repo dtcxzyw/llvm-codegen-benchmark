@@ -1,9 +1,6 @@
 func0000000000000011:                   # @func0000000000000011
-	beq	a0, a1, .LBB0_2
-	li	a0, 1024
-	seqz	a0, a0
-	ret
-.LBB0_2:
-	andi	a0, a2, 1023
+	andi	a2, a2, 1023
+	xor	a0, a0, a1
+	or	a0, a0, a2
 	seqz	a0, a0
 	ret

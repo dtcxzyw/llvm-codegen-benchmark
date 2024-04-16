@@ -11,7 +11,7 @@
 define i64 @func000000000000000b(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = lshr i64 %3, 1
   %5 = and i64 %4, 2097151
   %6 = mul nuw nsw i64 %5, 666643
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = lshr i64 %3, 1
   %5 = and i64 %4, 2097151
   %6 = mul nsw i64 %5, -997805

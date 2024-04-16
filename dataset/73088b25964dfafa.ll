@@ -8,10 +8,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 0, i32 2
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [32 x ptr], ptr %0, i64 0, i64 %3
-  ret ptr %4
+  %2 = select i1 %1, i64 0, i64 2
+  %3 = getelementptr [32 x ptr], ptr %0, i64 0, i64 %2
+  ret ptr %3
 }
 
 ; 11 occurrences:
@@ -29,10 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 6, i32 14
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [22 x i8], ptr %0, i64 0, i64 %3
-  ret ptr %4
+  %2 = select i1 %1, i64 6, i64 14
+  %3 = getelementptr inbounds [22 x i8], ptr %0, i64 0, i64 %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

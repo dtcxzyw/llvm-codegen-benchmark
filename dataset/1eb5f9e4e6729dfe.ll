@@ -24,9 +24,8 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr inbounds %struct.Str_Mux_t_.1771693, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr inbounds %struct.Str_Mux_t_.1771693, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 32
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.Str_Mux_t_.1771693, ptr %4, i64 %5, i32 4, i64 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

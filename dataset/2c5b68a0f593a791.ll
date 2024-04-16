@@ -23,7 +23,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = xor i32 %3, %1
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   %6 = shl i32 %5, 24
   ret i32 %6
 }
@@ -35,7 +35,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = xor i32 %3, %1
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   %6 = shl nuw nsw i32 %5, 16
   ret i32 %6
 }

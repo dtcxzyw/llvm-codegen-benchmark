@@ -18,7 +18,7 @@ define float @func0000000000000000(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fmul float %2, 2.000000e+00
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   ret float %4
 }
 

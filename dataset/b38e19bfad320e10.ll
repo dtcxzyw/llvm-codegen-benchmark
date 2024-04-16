@@ -9,7 +9,7 @@
 define ptr @func0000000000000009(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = lshr i64 %4, 32
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -21,7 +21,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -33,7 +33,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -71,7 +71,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = lshr i64 %4, 32
   %6 = getelementptr %struct.hlist_head.1999645, ptr %0, i64 %5
   ret ptr %6

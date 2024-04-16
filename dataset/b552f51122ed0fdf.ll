@@ -8,9 +8,9 @@
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = shl nuw nsw i32 %4, 8
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = or disjoint i32 %3, %1
   %5 = shl i32 %4, 4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

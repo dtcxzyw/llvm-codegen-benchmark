@@ -12,10 +12,10 @@
 define i1 @func0000000000000158(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = sub nsw i32 %4, %3
+  %4 = shl nuw nsw i32 %3, 1
+  %5 = sub i32 %1, %4
   %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 

@@ -65,7 +65,7 @@ entry:
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = insertvalue { i64, i64 } poison, i64 %4, 0
   %6 = insertvalue { i64, i64 } %5, i64 %0, 1
   ret { i64, i64 } %6

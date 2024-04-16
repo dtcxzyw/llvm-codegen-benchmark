@@ -14,7 +14,7 @@ define i32 @func0000000000000023(i64 %0) #0 {
 entry:
   %1 = or i64 %0, 1
   %2 = call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = lshr i32 %3, 2
   %5 = sub nuw nsw i32 16, %4
   ret i32 %5

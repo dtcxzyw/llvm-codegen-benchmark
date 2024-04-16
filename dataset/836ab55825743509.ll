@@ -20,7 +20,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = add i32 %3, -2
   %5 = sub i32 %4, %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

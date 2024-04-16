@@ -42,10 +42,10 @@ define i1 @func0000000000000404(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add i64 %3, -8
-  %5 = sub i64 %0, %1
-  %6 = sub i64 %4, %5
-  %7 = icmp ult i64 %6, 24
-  ret i1 %7
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  %6 = icmp ult i64 %5, 24
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

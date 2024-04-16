@@ -39,9 +39,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %2, 3
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i32 %1, i32 %0
+  ret i32 %4
 }
 
 ; 3 occurrences:

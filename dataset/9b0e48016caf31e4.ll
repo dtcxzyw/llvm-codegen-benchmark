@@ -52,10 +52,10 @@ entry:
 define i16 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %0, 192
-  %3 = icmp ne i16 %2, 0
-  %4 = select i1 %3, i16 %0, i16 %1
-  %5 = and i16 %4, 8
-  ret i16 %5
+  %.not = icmp eq i16 %2, 0
+  %3 = select i1 %.not, i16 %1, i16 %0
+  %4 = and i16 %3, 8
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

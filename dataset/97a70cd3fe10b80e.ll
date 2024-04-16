@@ -82,8 +82,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl nuw nsw i64 %2, 4
+  %2 = shl nuw nsw i64 %1, 3
+  %3 = and i64 %2, 9223372036854775792
   %4 = getelementptr inbounds i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -106,8 +106,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 6
-  %3 = shl nuw nsw i64 %2, 3
+  %2 = lshr i64 %1, 3
+  %3 = and i64 %2, 2305843009213693944
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -141,8 +141,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl i64 %2, 3
+  %2 = shl i64 %1, 2
+  %3 = and i64 %2, -8
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -155,8 +155,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl i64 %2, 2
+  %2 = shl i64 %1, 1
+  %3 = and i64 %2, -4
   %4 = getelementptr inbounds float, ptr %0, i64 %3
   ret ptr %4
 }
@@ -168,8 +168,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl nsw i64 %2, 2
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = and i64 %2, 9223372036854775804
   %4 = getelementptr inbounds i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -180,8 +180,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl nsw i64 %2, 2
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = and i64 %2, 9223372036854775804
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -191,8 +191,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl nuw i64 %2, 2
+  %2 = shl nuw i64 %1, 1
+  %3 = and i64 %2, -4
   %4 = getelementptr inbounds i8, ptr %0, i64 %3
   ret ptr %4
 }

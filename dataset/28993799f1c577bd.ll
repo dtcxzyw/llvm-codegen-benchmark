@@ -23,7 +23,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 127
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 20
   %4 = and i32 %3, 15
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -63,7 +63,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 7
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -75,7 +75,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
-  %5 = icmp uge i32 %0, %4
+  %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
 
@@ -94,7 +94,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 29
   %4 = and i32 %3, 1
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 
@@ -106,7 +106,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 1048575
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 

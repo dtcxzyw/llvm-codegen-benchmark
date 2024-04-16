@@ -60,7 +60,7 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = udiv i32 2147483645, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   ret i64 %4
 }
 

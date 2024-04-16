@@ -6,7 +6,7 @@
 define i32 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 65280, i32 %2
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 -1, i32 %2
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -29,7 +29,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 4294967295, i64 %2
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

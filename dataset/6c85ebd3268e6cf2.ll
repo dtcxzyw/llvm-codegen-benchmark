@@ -171,12 +171,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 4611686018427387900
-  %5 = shl i64 %4, 3
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 8
+  %3 = and i64 %2, -32
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -184,12 +182,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 4611686018427387900
-  %5 = shl nuw i64 %4, 3
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 8
+  %3 = and i64 %2, -32
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 10 occurrences:
@@ -206,12 +202,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, 1
-  %4 = and i64 %3, -16
-  %5 = shl i64 %4, 1
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 2
+  %3 = and i64 %2, -32
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -219,12 +213,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 131008
-  %5 = shl nuw nsw i64 %4, 1
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 2
+  %3 = and i64 %2, 262016
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -232,12 +224,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = add nuw i64 %2, 1
-  %4 = and i64 %3, -16
-  %5 = shl i64 %4, 1
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 2
+  %3 = and i64 %2, -32
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -245,12 +235,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 9223372036854775800
-  %5 = shl i64 %4, 2
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 4
+  %3 = and i64 %2, -32
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -258,12 +246,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 6
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 576460752303423484
-  %5 = shl nuw nsw i64 %4, 3
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = lshr i64 %1, 3
+  %3 = add nuw nsw i64 %2, 8
+  %4 = and i64 %3, 4611686018427387872
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

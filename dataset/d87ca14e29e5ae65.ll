@@ -1,9 +1,4 @@
 
-%"struct.rocksdb::BlockCacheLookupContext.1565963" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.1565877", i64, i64, %"class.std::__cxx11::basic_string.1565877", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.1565877" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1565878", i64, %union.anon.1565879 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1565878" = type { ptr }
-%union.anon.1565879 = type { i64, [8 x i8] }
-
 ; 10 occurrences:
 ; cpython/optimized/listobject.ll
 ; linux/optimized/bitset.ll
@@ -19,8 +14,8 @@
 define i1 @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = select i1 %0, ptr null, ptr %3
-  %5 = icmp eq ptr %4, null
+  %4 = icmp eq ptr %3, null
+  %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -45,10 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"struct.rocksdb::BlockCacheLookupContext.1565963", ptr %1, i64 %2
-  %4 = select i1 %0, ptr null, ptr %3
-  %5 = icmp eq ptr %4, null
-  ret i1 %5
+  %3 = icmp eq ptr %1, null
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -59,10 +53,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = select i1 %0, ptr null, ptr %3
-  %5 = icmp ne ptr %4, null
-  ret i1 %5
+  %3 = icmp ne ptr %1, null
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -73,8 +67,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = select i1 %0, ptr null, ptr %3
-  %5 = icmp ne ptr %4, null
+  %4 = icmp ne ptr %3, null
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 

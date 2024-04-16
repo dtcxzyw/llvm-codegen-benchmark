@@ -6,11 +6,12 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:                                # %entry
 	ret
 func000000000000000d:                   # @func000000000000000d
-	addiw	a0, a0, 1
-	li	a1, 11
+	sext.w	a0, a0
+	li	a1, 10
 	bltu	a0, a1, .LBB1_2
-	li	a0, 11
+	li	a0, 10
 .LBB1_2:                                # %entry
+	addi	a0, a0, 1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	addiw	a0, a0, -1

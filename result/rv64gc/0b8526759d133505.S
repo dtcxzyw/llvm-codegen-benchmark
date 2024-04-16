@@ -50,7 +50,7 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a3, 16
 	addiw	a3, a3, -512
 	beq	a1, a3, .LBB5_2
-	andi	a0, a2, 255
+	andi	a0, a2, 248
 .LBB5_2:                                # %entry
 	sext.w	a0, a0
 	sltiu	a0, a0, 8

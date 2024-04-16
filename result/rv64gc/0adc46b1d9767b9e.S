@@ -9,7 +9,8 @@ func0000000000000007:                   # @func0000000000000007
 	sext.w	a3, a0
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	bge	a2, a3, .LBB1_2
-	mv	a0, a1
+	blt	a2, a3, .LBB1_2
+	mv	a1, a0
 .LBB1_2:                                # %entry
+	mv	a0, a1
 	ret

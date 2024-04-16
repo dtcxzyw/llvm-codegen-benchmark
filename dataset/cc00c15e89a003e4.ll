@@ -12,7 +12,7 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = icmp ne ptr %1, null
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = icmp ne ptr %1, null
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = icmp eq i16 %3, 0
   %5 = icmp ne ptr %1, null
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -61,7 +61,7 @@ entry:
   %4 = icmp eq i16 %3, 0
   %5 = icmp eq ptr %1, null
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

@@ -22,9 +22,9 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 64)
-  %2 = shl i64 %1, 4
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %.mask = and i64 %1, 1152921504606846975
+  %2 = icmp eq i64 %.mask, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

@@ -7,11 +7,9 @@ func0000000000000020:                   # @func0000000000000020
 	xor	a1, a1, a2
 	add	a0, a0, a1
 	ret
-.LCPI1_0:
-	.quad	-4132994306676758123            # 0xc6a4a7935bd1e995
 func0000000000000000:                   # @func0000000000000000
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
+	lui	a3, 376095
+	addi	a3, a3, -1643
 	mul	a2, a2, a3
 	xor	a1, a1, a2
 	addw	a0, a0, a1

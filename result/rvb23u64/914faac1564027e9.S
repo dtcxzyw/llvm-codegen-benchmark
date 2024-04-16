@@ -1,6 +1,6 @@
 func000000000000007a:                   # @func000000000000007a
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
 	mul	a4, a4, a2
 	sub	a5, a0, a4
@@ -19,7 +19,7 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func0000000000000020:                   # @func0000000000000020
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
 	mul	a4, a4, a2
 	sub	a5, a0, a4

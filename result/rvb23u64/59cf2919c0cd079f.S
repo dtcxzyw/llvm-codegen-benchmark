@@ -1,7 +1,8 @@
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a1
 	max	a1, a1, zero
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
@@ -18,7 +19,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	max	a1, a1, zero
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000002a:                   # @func000000000000002a

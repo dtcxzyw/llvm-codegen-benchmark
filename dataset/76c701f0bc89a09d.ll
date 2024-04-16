@@ -17,8 +17,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = ptrtoint ptr %2 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 %5, %1
+  %5 = add i64 %3, %1
+  %6 = sub i64 %4, %5
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
 }

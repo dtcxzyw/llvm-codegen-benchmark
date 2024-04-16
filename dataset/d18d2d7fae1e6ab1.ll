@@ -18,7 +18,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -9
   %3 = icmp ult i32 %2, 5
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -30,7 +30,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp slt i32 %2, 2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -44,7 +44,7 @@ define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -39
   %3 = icmp ult i16 %2, -2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 

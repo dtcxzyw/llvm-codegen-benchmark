@@ -5,12 +5,11 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 48
-  %3 = add i32 %1, 49
-  %4 = icmp sgt i32 %0, 0
-  %5 = select i1 %4, i32 %3, i32 %2
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %2 = icmp sgt i32 %0, 0
+  %.v = select i1 %2, i32 49, i32 48
+  %3 = add i32 %.v, %1
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
 }
 
 ; 4 occurrences:
@@ -21,12 +20,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000168(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 48
-  %3 = add nsw i32 %1, 49
-  %4 = icmp sgt i32 %0, 0
-  %5 = select i1 %4, i32 %3, i32 %2
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %2 = icmp sgt i32 %0, 0
+  %.v = select i1 %2, i32 49, i32 48
+  %3 = add nsw i32 %.v, %1
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

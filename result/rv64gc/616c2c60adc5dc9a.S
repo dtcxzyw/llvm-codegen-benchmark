@@ -5,7 +5,7 @@ func00000000000000f0:                   # @func00000000000000f0
 	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 1
 	add	a2, a2, a3
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -17,7 +17,7 @@ func000000000000001c:                   # @func000000000000001c
 func00000000000000d0:                   # @func00000000000000d0
 	slli	a2, a2, 1
 	addi	a2, a2, -1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func0000000000000050:                   # @func0000000000000050
@@ -29,7 +29,7 @@ func0000000000000050:                   # @func0000000000000050
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 2
 	addi	a2, a2, 64
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -47,7 +47,7 @@ func00000000000000fc:                   # @func00000000000000fc
 func0000000000000044:                   # @func0000000000000044
 	slli	a2, a2, 1
 	addi	a2, a2, 14
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000095:                   # @func0000000000000095

@@ -7,12 +7,12 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = zext i64 %1 to i128
-  %3 = shl nuw i128 %2, 64
-  %4 = zext i64 %0 to i128
-  %5 = or disjoint i128 %3, %4
-  %6 = sub i128 0, %5
-  ret i128 %6
+  %.neg2 = sub i64 0, %1
+  %.neg2.z = zext i64 %.neg2 to i128
+  %.neg = shl nuw i128 %.neg2.z, 64
+  %2 = zext i64 %0 to i128
+  %.neg1 = sub i128 %.neg, %2
+  ret i128 %.neg1
 }
 
 ; 5 occurrences:
@@ -39,11 +39,10 @@ entry:
 define i64 @func000000000000001d(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = shl nuw nsw i64 %2, 8
-  %4 = zext i8 %0 to i64
-  %5 = or disjoint i64 %3, %4
-  %6 = sub nsw i64 0, %5
-  ret i64 %6
+  %.neg = mul nsw i64 %2, -256
+  %3 = zext i8 %0 to i64
+  %.neg1 = sub nsw i64 %.neg, %3
+  ret i64 %.neg1
 }
 
 ; 2 occurrences:
@@ -52,12 +51,12 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
-  %2 = zext i64 %1 to i128
-  %3 = shl nuw i128 %2, 64
-  %4 = zext i64 %0 to i128
-  %5 = or disjoint i128 %3, %4
-  %6 = sub nsw i128 0, %5
-  ret i128 %6
+  %.neg2 = sub i64 0, %1
+  %.neg2.z = zext i64 %.neg2 to i128
+  %.neg = shl nuw i128 %.neg2.z, 64
+  %2 = zext i64 %0 to i128
+  %.neg1 = sub i128 %.neg, %2
+  ret i128 %.neg1
 }
 
 ; 1 occurrences:

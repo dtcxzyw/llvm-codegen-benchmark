@@ -22,7 +22,7 @@ define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 2
   %3 = getelementptr inbounds i16, ptr %2, i64 %1
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -35,7 +35,7 @@ define i1 @func0000000000000031(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 20
   %3 = getelementptr inbounds %"struct.Assimp::Unreal::Triangle.1747200", ptr %2, i64 %1
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -49,7 +49,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 16
   %3 = getelementptr i8, ptr %2, i64 %1
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 

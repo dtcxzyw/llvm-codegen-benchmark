@@ -66,11 +66,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 56
-  %4 = getelementptr inbounds %"class.std::__1::tuple.1555545", ptr %0, i64 %3
-  %5 = sdiv exact i64 %1, -56
-  %6 = getelementptr inbounds %"class.std::__1::tuple.1555545", ptr %4, i64 %5
-  ret ptr %6
+  %3 = getelementptr inbounds i8, ptr %0, i64 %2
+  %4 = sdiv exact i64 %1, -56
+  %5 = getelementptr inbounds %"class.std::__1::tuple.1555545", ptr %3, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -78,11 +77,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = getelementptr inbounds %"class.std::__1::vector.113.1561841", ptr %0, i64 %3
-  %5 = sdiv exact i64 %1, -24
-  %6 = getelementptr %"class.std::__1::vector.113.1561841", ptr %4, i64 %5
-  ret ptr %6
+  %3 = getelementptr inbounds i8, ptr %0, i64 %2
+  %4 = sdiv exact i64 %1, -24
+  %5 = getelementptr %"class.std::__1::vector.113.1561841", ptr %3, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:

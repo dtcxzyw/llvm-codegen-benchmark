@@ -61,8 +61,8 @@ define i1 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 17
   %2 = xor i32 %1, %0
-  %3 = and i32 %2, 7
-  %4 = icmp ult i32 %3, 2
+  %3 = and i32 %2, 6
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 

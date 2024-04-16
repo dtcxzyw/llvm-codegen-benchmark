@@ -20,12 +20,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000088(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -40
-  %4 = icmp ugt i64 %2, 39
-  %5 = select i1 %4, i64 %3, i64 %2
-  %6 = icmp ugt i64 %5, 39
-  %7 = select i1 %6, i32 %0, i32 %1
-  ret i32 %7
+  %3 = icmp ugt i64 %2, 79
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

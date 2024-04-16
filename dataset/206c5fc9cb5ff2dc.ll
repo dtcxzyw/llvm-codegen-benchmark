@@ -891,7 +891,7 @@ entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 63
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

@@ -36,7 +36,7 @@ func0000000000000144:                   # @func0000000000000144
 	addi	a2, a2, 1
 	seqz	a4, a2
 	add	a3, a3, a4
-	beq	a1, a3, .LBB5_2
+	beq	a3, a1, .LBB5_2
 	sltu	a0, a1, a3
 	ret
 .LBB5_2:

@@ -8,7 +8,7 @@ entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
   %5 = zext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }

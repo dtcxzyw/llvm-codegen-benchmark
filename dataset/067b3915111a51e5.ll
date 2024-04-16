@@ -7,9 +7,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = zext i32 %0 to i64
   %4 = mul nuw i64 %3, %2
-  %5 = add i64 %4, -1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, 1
+  ret i1 %5
 }
 
 ; 1 occurrences:

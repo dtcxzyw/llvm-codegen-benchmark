@@ -79,10 +79,9 @@
 define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 3
-  %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 17179869184
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 419 occurrences:
@@ -805,10 +804,8 @@ entry:
 define i1 @func0000000000000081(i128 %0, i128 %1) #0 {
 entry:
   %2 = sub nsw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = icmp ult i128 %2, 18446744073709551616
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -877,10 +874,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr i64 %2, 8
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, 65535
-  ret i1 %5
+  %3 = and i64 %2, 1099494850560
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

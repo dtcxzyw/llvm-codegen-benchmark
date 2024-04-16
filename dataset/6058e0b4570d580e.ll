@@ -60,9 +60,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
-  %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 33 occurrences:
@@ -264,9 +263,8 @@ entry:
 define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
-  %3 = sub nsw i8 %0, %2
-  %4 = icmp slt i8 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i8 %2, %0
+  ret i1 %3
 }
 
 ; 9 occurrences:
@@ -283,9 +281,8 @@ entry:
 define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
-  %3 = sub nsw i8 %0, %2
-  %4 = icmp eq i8 %3, 0
-  ret i1 %4
+  %3 = icmp eq i8 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -297,9 +294,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = sub i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %3 = icmp ne i64 %2, %0
+  ret i1 %3
 }
 
 ; 20 occurrences:

@@ -7,7 +7,7 @@ entry:
   %3 = lshr i8 %2, 1
   %4 = icmp ult i8 %3, %1
   %5 = zext i1 %4 to i8
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 

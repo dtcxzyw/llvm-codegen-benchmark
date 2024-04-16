@@ -5,11 +5,10 @@
 define i1 @func0000000000000a11(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = sdiv i32 %0, %1
-  %6 = add nsw i32 %5, %4
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %.neg = sext i1 %3 to i32
+  %4 = sdiv i32 %0, %1
+  %5 = icmp eq i32 %4, %.neg
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -18,11 +17,10 @@ entry:
 define i1 @func0000000000000a01(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = sdiv i32 %0, %1
-  %6 = add i32 %5, %4
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %.neg = sext i1 %3 to i32
+  %4 = sdiv i32 %0, %1
+  %5 = icmp eq i32 %4, %.neg
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -65,11 +63,10 @@ entry:
 define i1 @func0000000000000c11(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = sdiv i32 %0, %1
-  %6 = add nsw i32 %5, %4
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %.neg = sext i1 %3 to i32
+  %4 = sdiv i32 %0, %1
+  %5 = icmp eq i32 %4, %.neg
+  ret i1 %5
 }
 
 ; 1 occurrences:

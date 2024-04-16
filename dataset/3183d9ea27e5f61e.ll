@@ -18,7 +18,7 @@ entry:
 define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, %2
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

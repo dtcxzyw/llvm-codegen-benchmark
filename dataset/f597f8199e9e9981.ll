@@ -34,10 +34,10 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = tail call i32 @llvm.umax.i32(i32 %4, i32 %0)
-  ret i32 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 0, i32 %1
+  %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 %0)
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

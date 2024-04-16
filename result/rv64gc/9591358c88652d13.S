@@ -41,11 +41,6 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
-	srliw	a2, a1, 31
-	add	a2, a2, a1
-	andi	a2, a2, -2
-	subw	a1, a1, a2
-	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -85,11 +80,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
-	sraiw	a2, a1, 31
-	srliw	a2, a2, 30
-	add	a2, a2, a1
-	andi	a2, a2, -4
-	subw	a1, a1, a2
+	lui	a2, 524288
+	addi	a2, a2, 3
+	and	a1, a1, a2
+	sext.w	a1, a1
 	sgtz	a1, a1
 	slti	a0, a0, 5
 	xori	a0, a0, 1

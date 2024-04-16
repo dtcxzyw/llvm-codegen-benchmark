@@ -93,9 +93,8 @@ entry:
 define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
-  %3 = sub nsw i8 %2, %0
-  %4 = icmp slt i8 %3, 0
-  ret i1 %4
+  %3 = icmp slt i8 %2, %0
+  ret i1 %3
 }
 
 ; 7 occurrences:

@@ -7,7 +7,7 @@ define i32 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = fptoui double %4 to i32
   ret i32 %5
 }
@@ -19,7 +19,7 @@ define i32 @func0000000000000006(double %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = fptoui double %4 to i32
   ret i32 %5
 }

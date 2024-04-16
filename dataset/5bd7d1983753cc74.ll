@@ -81,10 +81,9 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds %struct.Aig_VSig_t_.1772197, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  %6 = getelementptr inbounds i32, ptr %5, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds %struct.Aig_VSig_t_.1772197, ptr %1, i64 %3, i32 1
+  %5 = getelementptr inbounds i32, ptr %4, i64 %0
+  ret ptr %5
 }
 
 ; 5 occurrences:

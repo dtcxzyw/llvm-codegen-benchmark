@@ -78,7 +78,7 @@ define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -90,7 +90,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
   %4 = or disjoint i64 %3, 255
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }

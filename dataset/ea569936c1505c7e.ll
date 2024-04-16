@@ -815,7 +815,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
   %6 = xor i64 %5, 1152921504606846975
-  %7 = icmp ule i64 %0, %6
+  %7 = icmp uge i64 %6, %0
   ret i1 %7
 }
 

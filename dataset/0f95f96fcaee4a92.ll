@@ -123,9 +123,9 @@ entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i32 9, i32 8
   %4 = or disjoint i32 %3, 2
-  %5 = icmp ne i32 %0, 4
-  %6 = select i1 %5, i32 %4, i32 %3
-  ret i32 %6
+  %.not = icmp eq i32 %0, 4
+  %5 = select i1 %.not, i32 %3, i32 %4
+  ret i32 %5
 }
 
 ; 9 occurrences:
@@ -185,9 +185,9 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 3
   %4 = or disjoint i32 %3, 32
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i32 %4, i32 %3
-  ret i32 %6
+  %.not = icmp eq i32 %0, 0
+  %5 = select i1 %.not, i32 %3, i32 %4
+  ret i32 %5
 }
 
 ; 2 occurrences:

@@ -8,7 +8,7 @@ entry:
   %3 = and i16 %2, 255
   %4 = add nuw nsw i16 %3, 1
   %5 = zext nneg i16 %4 to i32
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = and i16 %2, 4095
   %4 = add nsw i16 %3, -24
   %5 = zext i16 %4 to i32
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -34,7 +34,7 @@ entry:
   %3 = and i32 %2, 12
   %4 = add nuw nsw i32 %3, 1132
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %1, %5
+  %6 = add nsw i64 %5, %1
   %7 = add nsw i64 %6, %0
   ret i64 %7
 }

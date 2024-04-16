@@ -23,7 +23,7 @@ entry:
   %4 = shl i64 %3, 28
   %5 = ashr i64 %4, 32
   %6 = call i64 @llvm.smax.i64(i64 %5, i64 1)
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

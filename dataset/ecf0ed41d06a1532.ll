@@ -28,7 +28,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i16 %1) #0 {
 entry:
-  %2 = tail call i16 @llvm.bswap.i16(i16 %1)
+  %2 = shl i16 %1, 8
   %3 = select i1 %0, i16 %1, i16 %2
   %4 = icmp slt i16 %3, 0
   ret i1 %4
@@ -62,7 +62,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.bswap.i32(i32 %1)
+  %2 = shl i32 %1, 24
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4

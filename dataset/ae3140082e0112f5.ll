@@ -20,10 +20,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = tail call i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 30)
-  %4 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 30)
-  %5 = xor i32 %4, %3
-  %6 = and i32 %0, %5
+  %3 = xor i32 %1, %2
+  %4 = xor i32 %1, %2
+  %5 = call i32 @llvm.fshl.i32(i32 %3, i32 %4, i32 30)
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = call noundef i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 3)
   %4 = call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 7)
   %5 = xor i32 %4, %3
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

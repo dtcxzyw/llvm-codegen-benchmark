@@ -74,9 +74,9 @@
 define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 63
-  %2 = lshr i64 %1, 6
-  %3 = icmp eq i64 %2, 1
-  ret i1 %3
+  %.mask = and i64 %1, -64
+  %2 = icmp eq i64 %.mask, 64
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -86,9 +86,9 @@ entry:
 define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 63
-  %2 = lshr i64 %1, 6
-  %3 = icmp eq i64 %2, 1
-  ret i1 %3
+  %.mask = and i64 %1, -64
+  %2 = icmp eq i64 %.mask, 64
+  ret i1 %2
 }
 
 ; 12 occurrences:
@@ -108,9 +108,9 @@ entry:
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 63
-  %2 = lshr i64 %1, 6
-  %3 = icmp eq i64 %2, 1
-  ret i1 %3
+  %.mask = and i64 %1, -64
+  %2 = icmp eq i64 %.mask, 64
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

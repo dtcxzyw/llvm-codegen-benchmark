@@ -9,7 +9,7 @@ entry:
   %3 = add nuw nsw i64 %1, 1
   %4 = add nuw nsw i64 %3, %2
   %5 = sub nsw i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add nsw i64 %1, 1
   %4 = add nsw i64 %3, %2
   %5 = sub nsw i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = add i64 %1, -1
   %4 = add i64 %3, %2
   %5 = sub i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

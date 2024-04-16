@@ -1,11 +1,13 @@
 func0000000000000016:                   # @func0000000000000016
+	sext.w	a0, a0
 	andi	a3, a1, 1
 	li	a1, 1
 	bnez	a3, .LBB0_2
 	mv	a1, a2
 .LBB0_2:                                # %entry
-	subw	a1, a1, a0
-	slti	a0, a1, 1
+	sext.w	a1, a1
+	slt	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 1
@@ -16,20 +18,23 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func000000000000001a:                   # @func000000000000001a
+	sext.w	a0, a0
 	andi	a3, a1, 1
 	li	a1, 1
 	bnez	a3, .LBB2_2
 	mv	a1, a2
 .LBB2_2:                                # %entry
-	subw	a1, a1, a0
-	sgtz	a0, a1
+	sext.w	a1, a1
+	slt	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
+	sext.w	a0, a0
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	subw	a1, a1, a0
-	seqz	a0, a1
+	sext.w	a1, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
@@ -39,13 +44,15 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 63
 	ret
 func0000000000000001:                   # @func0000000000000001
+	sext.w	a0, a0
 	andi	a3, a1, 1
 	lui	a1, 1
 	bnez	a3, .LBB5_2
 	mv	a1, a2
 .LBB5_2:                                # %entry
-	subw	a1, a1, a0
-	seqz	a0, a1
+	sext.w	a1, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1

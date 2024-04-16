@@ -31,9 +31,9 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 1, %3
-  %5 = add nsw i64 %4, -1
-  ret i64 %5
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -45,9 +45,9 @@ entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 1, %3
-  %5 = add nsw i64 %4, -1
-  ret i64 %5
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

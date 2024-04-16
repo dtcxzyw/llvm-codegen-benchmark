@@ -85,7 +85,7 @@ entry:
   %4 = zext i32 %1 to i64
   %5 = mul nuw i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = add nuw i64 %0, %6
+  %7 = add nuw i64 %6, %0
   ret i64 %7
 }
 
@@ -98,7 +98,7 @@ entry:
   %4 = zext nneg i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
   %6 = lshr i128 %5, 16
-  %7 = add nuw nsw i128 %0, %6
+  %7 = add nuw nsw i128 %6, %0
   ret i128 %7
 }
 
@@ -113,7 +113,7 @@ entry:
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
   %6 = lshr i128 %5, 16
-  %7 = add i128 %0, %6
+  %7 = add i128 %6, %0
   ret i128 %7
 }
 
@@ -127,7 +127,7 @@ entry:
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = add nuw nsw i128 %0, %6
+  %7 = add nuw nsw i128 %6, %0
   ret i128 %7
 }
 

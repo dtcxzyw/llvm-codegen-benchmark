@@ -62,11 +62,10 @@
 define i64 @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %0, i64 %5
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
+  %.neg = sdiv exact i64 %3, -40
+  %4 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %0, i64 %.neg
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 ; 37 occurrences:
@@ -111,11 +110,10 @@ entry:
 define i64 @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %0, i64 %5
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
+  %.neg = sdiv exact i64 %3, -40
+  %4 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %0, i64 %.neg
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

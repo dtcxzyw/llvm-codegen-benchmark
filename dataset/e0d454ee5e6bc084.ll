@@ -10,7 +10,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 20)
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -24,7 +24,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %2, i64 10)
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 

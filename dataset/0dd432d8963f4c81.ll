@@ -15,7 +15,7 @@ entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = tail call double @llvm.fabs.f64(double %1)
   %5 = fadd double %4, %3
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

@@ -7,10 +7,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = select i1 %1, ptr %3, ptr %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 %0
-  ret ptr %5
+  %.idx = zext i1 %1 to i64
+  %3 = getelementptr inbounds i8, ptr %2, i64 %.idx
+  %4 = getelementptr inbounds i8, ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -18,10 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = select i1 %1, ptr %3, ptr %2
-  %5 = getelementptr i8, ptr %4, i64 %0
-  ret ptr %5
+  %.idx = sext i1 %1 to i64
+  %3 = getelementptr i8, ptr %2, i64 %.idx
+  %4 = getelementptr i8, ptr %3, i64 %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

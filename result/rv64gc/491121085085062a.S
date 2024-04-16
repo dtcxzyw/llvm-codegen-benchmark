@@ -9,7 +9,7 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000051:                   # @func0000000000000051
 	andi	a2, a1, 1
-	li	a1, 9
+	li	a1, 1
 	bnez	a2, .LBB1_2
 	li	a1, 4
 .LBB1_2:                                # %entry
@@ -21,13 +21,13 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000058:                   # @func0000000000000058
 	andi	a2, a1, 1
-	li	a1, 9
+	li	a1, 1
 	bnez	a2, .LBB2_2
 	li	a1, 4
 .LBB2_2:                                # %entry
 	add	a0, a0, a1
-	addi	a0, a0, 14
-	andi	a0, a0, 7
-	sltiu	a0, a0, 6
-	xori	a0, a0, 1
+	addi	a0, a0, 6
+	andi	a0, a0, 6
+	addi	a0, a0, -6
+	seqz	a0, a0
 	ret

@@ -2,6 +2,7 @@ func0000000000000044:                   # @func0000000000000044
 	srliw	a1, a1, 24
 	beqz	a1, .LBB0_2
 	srliw	a0, a2, 16
+	slli	a0, a0, 16
 	seqz	a0, a0
 	slli	a0, a0, 4
 .LBB0_2:                                # %entry

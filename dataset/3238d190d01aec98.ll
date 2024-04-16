@@ -3691,7 +3691,7 @@
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = select i1 %4, i64 1152921504606846975, i64 %0
   ret i64 %5
 }
@@ -3703,7 +3703,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = icmp sgt i64 %1, %3
+  %4 = icmp slt i64 %3, %1
   %5 = select i1 %4, i32 -2, i32 %0
   ret i32 %5
 }
@@ -3715,7 +3715,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = ashr i128 %2, 1
-  %4 = icmp slt i128 %1, %3
+  %4 = icmp sgt i128 %3, %1
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -3726,7 +3726,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 3
-  %4 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %1
   %5 = select i1 %4, i32 1, i32 %0
   ret i32 %5
 }
@@ -3737,9 +3737,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 10
-  %4 = icmp ne i32 %1, %3
-  %5 = select i1 %4, i32 1024, i32 %0
-  ret i32 %5
+  %.not = icmp eq i32 %3, %1
+  %4 = select i1 %.not, i32 %0, i32 1024
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -3749,7 +3749,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sgt i64 %1, %3
+  %4 = icmp slt i64 %3, %1
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -3762,7 +3762,7 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = icmp slt i64 %1, %3
+  %4 = icmp sgt i64 %3, %1
   %5 = select i1 %4, i64 1, i64 %0
   ret i64 %5
 }
@@ -3773,7 +3773,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 2, i64 %0
   ret i64 %5
 }

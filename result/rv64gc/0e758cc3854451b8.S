@@ -41,17 +41,17 @@ func000000000000008a:                   # @func000000000000008a
 	sgtz	a0, a0
 	ret
 func0000000000000098:                   # @func0000000000000098
-	bgeu	a2, a0, .LBB5_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
-	sltiu	a0, a0, 2
+	sltiu	a0, a1, 2
 	xori	a0, a0, 1
 	ret
 func0000000000000091:                   # @func0000000000000091
-	bgeu	a2, a0, .LBB6_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB6_2
+	mv	a1, a0
 .LBB6_2:                                # %entry
-	seqz	a0, a0
+	seqz	a0, a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a2, a2

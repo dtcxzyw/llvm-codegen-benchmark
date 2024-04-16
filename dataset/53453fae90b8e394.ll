@@ -6,9 +6,9 @@
 define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = and i64 %4, -2
-  %6 = icmp eq i64 %0, %5
+  %4 = and i32 %3, -2
+  %5 = sext i32 %4 to i64
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = and i64 %4, 2305843009213693948
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

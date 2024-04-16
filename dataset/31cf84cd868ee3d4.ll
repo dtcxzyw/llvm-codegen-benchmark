@@ -24,12 +24,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = zext i16 %2 to i32
-  %4 = shl nuw i32 %1, 16
-  %5 = or disjoint i32 %4, %3
-  %6 = or i32 %0, %5
-  %7 = lshr i32 %6, 16
-  ret i32 %7
+  %3 = shl nuw i32 %1, 16
+  %4 = or i32 %3, %0
+  %5 = lshr i32 %4, 16
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -38,12 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %1, 6
-  %5 = or i32 %4, %3
-  %6 = or i32 %5, %0
-  %7 = lshr i32 %6, 9
-  ret i32 %7
+  %3 = shl nuw nsw i32 %1, 6
+  %4 = or i32 %3, %0
+  %5 = lshr i32 %4, 9
+  ret i32 %5
 }
 
 ; 1 occurrences:

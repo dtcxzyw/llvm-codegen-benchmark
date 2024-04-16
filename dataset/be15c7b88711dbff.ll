@@ -47,7 +47,7 @@ entry:
   %2 = lshr i24 %1, 1
   %3 = and i24 %2, 8355840
   %4 = and i24 %1, 255
-  %5 = add nuw nsw i24 %0, %4
+  %5 = add nuw nsw i24 %4, %0
   %6 = add nuw i24 %5, %3
   ret i24 %6
 }

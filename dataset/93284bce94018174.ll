@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 7
-  %2 = trunc i64 %1 to i8
+  %1 = trunc i64 %0 to i8
+  %2 = and i8 %1, 7
   %3 = shl nuw i8 1, %2
   %4 = xor i8 %3, -1
   ret i8 %4
@@ -29,8 +29,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 7
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, 7
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, 255
   ret i32 %4
@@ -41,8 +41,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 6
-  %2 = trunc i64 %1 to i8
+  %1 = trunc i64 %0 to i8
+  %2 = and i8 %1, 6
   %3 = shl i8 63, %2
   %4 = xor i8 %3, -1
   ret i8 %4

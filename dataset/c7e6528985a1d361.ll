@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 21
-  %4 = add nuw nsw i64 %3, 16
-  %5 = getelementptr inbounds [357 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = mul nuw i64 %1, 21
+  %3 = add nuw i64 %2, 37
+  %4 = getelementptr inbounds [357 x i8], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -18,11 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 65
-  %4 = add nsw i64 %3, -65
-  %5 = getelementptr inbounds [4160 x double], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = mul nuw i64 %1, 65
+  %3 = getelementptr inbounds [4160 x double], ptr %0, i64 0, i64 %2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -30,11 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = mul nsw i64 %2, 65
-  %4 = add nsw i64 %3, -65
-  %5 = getelementptr inbounds [4160 x double], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = mul i64 %1, 65
+  %3 = getelementptr inbounds [4160 x double], ptr %0, i64 0, i64 %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -9,7 +9,7 @@
 define i16 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.umin.i32(i32 %0, i32 255)
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nuw nsw i32 %1 to i16
   %3 = icmp slt i32 %0, 0
   %4 = select i1 %3, i16 0, i16 %2
   ret i16 %4
@@ -44,7 +44,7 @@ declare i16 @llvm.umin.i16(i16, i16) #1
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.umin.i64(i64 %0, i64 2048)
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i64 %0, 0
   %4 = select i1 %3, i32 1, i32 %2
   ret i32 %4

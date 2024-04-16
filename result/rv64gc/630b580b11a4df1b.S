@@ -1,14 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a1, 14
-	addi	a1, a1, -1024
-	or	a0, a0, a1
 	srliw	a0, a0, 6
+	ori	a0, a0, 112
 	ret
-.LCPI1_0:
-	.quad	3472339291344613376             # 0x30303a30303a3000
 func0000000000000008:                   # @func0000000000000008
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
-	or	a0, a0, a1
 	srli	a0, a0, 8
+	ori	a0, a0, 48
 	ret

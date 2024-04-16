@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw i32 %2, 1
-  %4 = add i32 %2, 2
-  %5 = select i1 %1, i32 %4, i32 %3
-  %6 = icmp ult i32 %5, %0
-  ret i1 %6
+  %.v = select i1 %1, i32 2, i32 1
+  %3 = add i32 %.v, %2
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
 }
 
 ; 7 occurrences:
@@ -23,11 +22,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw i32 %2, 1
-  %4 = add i32 %2, -2
-  %5 = select i1 %1, i32 %4, i32 %3
-  %6 = icmp eq i32 %5, %0
-  ret i1 %6
+  %.v = select i1 %1, i32 -2, i32 1
+  %3 = add i32 %.v, %2
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -35,11 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw i32 %2, 1
-  %4 = add i32 %2, -2
-  %5 = select i1 %1, i32 %4, i32 %3
-  %6 = icmp ne i32 %5, %0
-  ret i1 %6
+  %.v = select i1 %1, i32 -2, i32 1
+  %3 = add i32 %.v, %2
+  %4 = icmp ne i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -47,11 +44,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 3
-  %4 = add i32 %2, 2
-  %5 = select i1 %1, i32 %4, i32 %3
-  %6 = icmp eq i32 %5, %0
-  ret i1 %6
+  %.v = select i1 %1, i32 2, i32 3
+  %3 = add i32 %.v, %2
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -59,11 +55,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = add i32 %2, -2
-  %5 = select i1 %1, i32 %4, i32 %3
-  %6 = icmp ult i32 %5, %0
-  ret i1 %6
+  %.v = select i1 %1, i32 -2, i32 -1
+  %3 = add i32 %.v, %2
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -71,11 +66,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -2
-  %4 = add nsw i32 %2, -1
-  %5 = select i1 %1, i32 %4, i32 %3
-  %6 = icmp slt i32 %5, %0
-  ret i1 %6
+  %.v = select i1 %1, i32 -1, i32 -2
+  %3 = add i32 %.v, %2
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

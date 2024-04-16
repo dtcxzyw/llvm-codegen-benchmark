@@ -18,7 +18,7 @@ define ptr @func0000000000000001(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 37
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.1850178", ptr %0, i64 %6
   ret ptr %7
@@ -31,7 +31,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 3163
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr i32, ptr %0, i64 %6
   ret ptr %7
@@ -44,7 +44,7 @@ define ptr @func0000000000000005(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %3, 41
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i32, ptr %0, i64 %6
   ret ptr %7

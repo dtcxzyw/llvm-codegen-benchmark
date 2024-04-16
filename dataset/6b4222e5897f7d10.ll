@@ -9,7 +9,7 @@ entry:
   %3 = and i64 %2, 31
   %4 = and i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   %7 = select i1 %0, i32 64, i32 %6
   ret i32 %7
 }

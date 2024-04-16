@@ -11,7 +11,7 @@ define i32 @func0000000000000019(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = icmp ne i16 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = or disjoint i32 %0, 32
   %7 = select i1 %5, i32 %6, i32 %0
   ret i32 %7
@@ -25,7 +25,7 @@ define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 248
   %4 = icmp ugt i32 %3, 8
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = or disjoint i32 %0, 4096
   %7 = select i1 %5, i32 %6, i32 %0
   ret i32 %7
@@ -70,7 +70,7 @@ define i32 @func0000000000000018(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 2
   %4 = icmp ne i16 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = or i32 %0, 1073741824
   %7 = select i1 %5, i32 %6, i32 %0
   ret i32 %7

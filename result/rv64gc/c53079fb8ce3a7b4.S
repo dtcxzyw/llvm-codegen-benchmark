@@ -5,14 +5,14 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
-	not	a0, a0
+	xori	a0, a0, 1
 	sext.w	a1, a1
 	addi	a1, a1, -2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	not	a0, a0
+	xori	a0, a0, 1
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1

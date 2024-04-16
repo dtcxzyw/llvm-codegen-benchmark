@@ -8,7 +8,9 @@ func0000000000000063:                   # @func0000000000000063
 	ret
 func0000000000000023:                   # @func0000000000000023
 	bnez	a0, .LBB1_2
-	li	a0, -1074
+	li	a0, 1
+	slli	a0, a0, 32
+	addi	a0, a0, -1074
 	ret
 .LBB1_2:
 	addiw	a0, a1, -1075
@@ -88,8 +90,7 @@ func0000000000000030:                   # @func0000000000000030
 	srli	a0, a0, 48
 	li	a2, 7
 	bgeu	a2, a0, .LBB10_2
-	li	a1, 12
-	andi	a0, a1, 255
+	li	a0, 12
 	ret
 .LBB10_2:
 	addi	a1, a1, -2

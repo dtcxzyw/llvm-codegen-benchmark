@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	fcvt.s.l	fa4, a0
 	fdiv.s	fa5, fa4, fa5
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.quad	0x40c3880000000000              # double 1.0E+4

@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 .LBB0_2:                                # %entry
 	fmv.d.x	fa5, zero
 	fmax.d	fa5, fa1, fa5
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.word	0x3e4ccccd                      # float 0.200000003

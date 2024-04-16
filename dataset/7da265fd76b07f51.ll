@@ -9,7 +9,7 @@ entry:
   %2 = or disjoint i128 %0, %1
   %3 = xor i128 %2, -1
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 

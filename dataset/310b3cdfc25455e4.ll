@@ -14,10 +14,9 @@
 define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, %3
-  %5 = getelementptr %struct.qht_bucket.1664925, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr %struct.qht_bucket.1664925, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 21 occurrences:
@@ -46,10 +45,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, %3
-  %5 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -59,10 +57,9 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %1, %3
-  %5 = getelementptr inbounds %struct.code.1828641, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr inbounds %struct.code.1828641, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -72,10 +69,9 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %1, %3
-  %5 = getelementptr %struct.code.2004654, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 2
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr %struct.code.2004654, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

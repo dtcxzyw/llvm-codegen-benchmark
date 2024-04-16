@@ -13,7 +13,7 @@
 define i1 @func0000000000000222(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [256 x %"class.boost::intrusive::list.1638619"], ptr %1, i64 0, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [2 x %struct.list_head.2013312], ptr %1, i64 0, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6

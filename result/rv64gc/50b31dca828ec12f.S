@@ -8,6 +8,6 @@ func0000000000000001:                   # @func0000000000000001
 	fld	fa5, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
 	fmv.d.x	fa4, a0
-	fmul.d	fa4, fa0, fa4
+	fmul.d	fa4, fa4, fa0
 	fsub.d	fa0, fa5, fa4
 	ret

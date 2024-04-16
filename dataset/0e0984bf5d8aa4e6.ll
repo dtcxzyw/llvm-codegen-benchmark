@@ -10,7 +10,7 @@ entry:
   %4 = add nuw i32 %1, 1542
   %5 = sub i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

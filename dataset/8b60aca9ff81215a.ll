@@ -10,7 +10,7 @@ entry:
   %3 = fneg float %2
   %4 = fmul float %3, %1
   %5 = fmul float %4, %4
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

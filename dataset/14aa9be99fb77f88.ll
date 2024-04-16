@@ -10,8 +10,8 @@
 define i1 @func0000000000000055(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fcmp ugt float %0, %3
-  %5 = fcmp ugt float %1, %3
+  %4 = fcmp ult float %3, %0
+  %5 = fcmp ult float %3, %1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
@@ -27,8 +27,8 @@ entry:
 define i1 @func0000000000000033(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fcmp ult float %0, %3
-  %5 = fcmp ult float %1, %3
+  %4 = fcmp ugt float %3, %0
+  %5 = fcmp ugt float %3, %1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
@@ -39,8 +39,8 @@ entry:
 define i1 @func0000000000000035(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ugt double %0, %3
-  %5 = fcmp ult double %1, %3
+  %4 = fcmp ult double %3, %0
+  %5 = fcmp ugt double %3, %1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }

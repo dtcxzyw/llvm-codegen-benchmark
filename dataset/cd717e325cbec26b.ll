@@ -11,7 +11,7 @@ entry:
   %4 = icmp ne i8 %3, 0
   %5 = icmp ne i16 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = icmp eq i8 %3, 0
   %5 = icmp ne i8 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -53,7 +53,7 @@ entry:
   %4 = icmp ne i8 %3, 0
   %5 = icmp ult i32 %1, 10
   %6 = select i1 %4, i1 true, i1 %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -66,7 +66,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = icmp eq i32 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

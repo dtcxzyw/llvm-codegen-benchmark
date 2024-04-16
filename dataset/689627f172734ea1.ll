@@ -73,11 +73,10 @@ entry:
 define i1 @func0000000000000198(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -16
-  %4 = icmp ne i32 %3, 44
-  %5 = icmp ne i32 %0, 44
-  %6 = or i1 %4, %5
-  ret i1 %6
+  %3 = icmp ne i32 %2, 60
+  %4 = icmp ne i32 %0, 44
+  %5 = or i1 %3, %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -86,11 +85,10 @@ entry:
 define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -7
-  %4 = icmp eq i32 %3, 31
-  %5 = icmp eq i64 %0, 31
-  %6 = or i1 %5, %4
-  ret i1 %6
+  %3 = icmp eq i32 %2, 38
+  %4 = icmp eq i64 %0, 31
+  %5 = or i1 %4, %3
+  ret i1 %5
 }
 
 ; 3 occurrences:

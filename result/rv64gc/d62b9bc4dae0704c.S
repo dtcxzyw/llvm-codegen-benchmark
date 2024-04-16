@@ -12,12 +12,11 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	slli	a2, a2, 63
-	srai	a2, a2, 63
-	andi	a2, a2, -6
+	andi	a2, a2, 1
+	addi	a2, a2, -1
+	andi	a2, a2, 6
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, 6
+	addw	a0, a0, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a3, a2, 1

@@ -8,7 +8,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 15
   %4 = select i1 %3, i32 16, i32 %1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = add nsw i32 %1, -15
   %3 = icmp ult i32 %2, 5
   %4 = select i1 %3, i32 19, i32 %1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = add i32 %1, -128
   %3 = icmp ult i32 %2, -127
   %4 = select i1 %3, i32 127, i32 %1
-  %5 = icmp sge i32 %0, %4
+  %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
 

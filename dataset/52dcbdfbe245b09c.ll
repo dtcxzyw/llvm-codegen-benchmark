@@ -8,8 +8,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 8
-  %6 = add nuw nsw i64 %5, 1
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 

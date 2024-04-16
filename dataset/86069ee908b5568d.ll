@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %2, 3.000000e+00
-  %4 = fadd double %1, %3
+  %4 = fadd double %3, %1
   %5 = fcmp ult double %4, %0
   ret i1 %5
 }

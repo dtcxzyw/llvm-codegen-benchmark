@@ -10,7 +10,7 @@ entry:
   %2 = add nsw i32 %1, 1900
   %3 = srem i32 %2, 100
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4
-  %3 = srem i32 %2, 4
+  %3 = and i32 %2, -2147483645
   %4 = icmp sgt i32 %3, 0
   %5 = and i1 %4, %0
   ret i1 %5

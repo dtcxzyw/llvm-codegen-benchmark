@@ -7,7 +7,7 @@
 define i32 @func0000000000000010(i32 %0, i8 %1, i96 %2) #0 {
 entry:
   %3 = trunc i96 %2 to i8
-  %4 = or i8 %1, %3
+  %4 = or i8 %3, %1
   %5 = zext nneg i8 %4 to i32
   %6 = add i32 %0, 3
   %7 = add i32 %6, %5

@@ -7,7 +7,7 @@ entry:
   %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2)
   %4 = extractvalue { i64, i1 } %3, 1
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2)
   %4 = extractvalue { i64, i1 } %3, 1
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2)
   %4 = extractvalue { i64, i1 } %3, 1
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -151,7 +151,7 @@ entry:
   %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2)
   %4 = extractvalue { i64, i1 } %3, 1
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 

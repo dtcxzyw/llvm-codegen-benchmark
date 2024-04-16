@@ -7,7 +7,7 @@
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }

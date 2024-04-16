@@ -7,7 +7,7 @@ entry:
   %3 = shl nuw i8 %1, 4
   %4 = icmp eq i64 %2, 0
   %5 = select i1 %4, i8 %3, i8 %1
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 

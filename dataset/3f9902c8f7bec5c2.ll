@@ -28,7 +28,7 @@ define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp ult i64 %3, 63
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -222,9 +222,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = icmp ne i64 %3, 0
-  %5 = and i1 %0, %4
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -276,8 +276,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp ne i64 %3, 0
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -556,7 +556,7 @@ define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ult i64 %3, 81
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -575,7 +575,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 33
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -592,8 +592,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %1, %2
-  %4 = icmp eq i32 %3, 0
+  %3 = sub i32 0, %2
+  %4 = icmp eq i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -640,7 +640,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp eq i32 %3, 2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -664,7 +664,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ugt i32 %3, 11
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -678,7 +678,7 @@ define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -724,7 +724,7 @@ define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 10803
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -735,9 +735,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %1, %2
+  %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -765,7 +765,7 @@ define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %3, 1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -776,7 +776,7 @@ define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = icmp ugt i64 %3, 4294967295
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -798,7 +798,7 @@ define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = icmp ult i64 %3, 10
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

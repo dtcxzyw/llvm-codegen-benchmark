@@ -12,7 +12,7 @@
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

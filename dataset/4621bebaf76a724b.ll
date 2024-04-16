@@ -114,7 +114,7 @@ entry:
 define i1 @func00000000000003b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %4, %5
   %7 = icmp ult i32 %6, 18

@@ -9,7 +9,7 @@ entry:
   %2 = sitofp i64 %1 to float
   %3 = fmul float %2, 0x3EB0C6F7A0000000
   %4 = fpext float %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

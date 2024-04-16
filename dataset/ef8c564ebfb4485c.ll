@@ -17,9 +17,9 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = lshr i64 %3, 63
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

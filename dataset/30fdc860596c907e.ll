@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 2816
-  %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i64 0, i64 %2, !prof !0
-  %5 = trunc i64 %4 to i32
+  %2 = icmp eq i64 %0, 0
+  %3 = trunc i64 %1 to i32
+  %4 = add i32 %3, 2816
+  %5 = select i1 %2, i32 0, i32 %4, !prof !0
   ret i32 %5
 }
 
@@ -18,10 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i64 0, i64 %2
-  %5 = trunc i64 %4 to i32
+  %2 = icmp eq i32 %0, 0
+  %3 = trunc i64 %1 to i32
+  %4 = add i32 %3, -1
+  %5 = select i1 %2, i32 0, i32 %4
   ret i32 %5
 }
 

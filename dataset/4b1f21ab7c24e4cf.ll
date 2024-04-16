@@ -8,7 +8,7 @@ entry:
   %3 = and i8 %2, -2
   %4 = or i8 %3, %1
   %5 = zext i8 %4 to i32
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

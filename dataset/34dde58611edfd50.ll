@@ -13,8 +13,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i1 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 65536
+  %2 = and i64 %1, 4294901760
+  %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i8 16, i8 0
   %5 = or disjoint i8 %4, 8
   %6 = select i1 %0, i8 %5, i8 %4

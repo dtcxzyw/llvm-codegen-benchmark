@@ -17,7 +17,7 @@ define i64 @func0000000000000003(i64 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = or disjoint i64 %4, 4294967296
   ret i64 %5
 }

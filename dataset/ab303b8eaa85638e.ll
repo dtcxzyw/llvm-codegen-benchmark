@@ -183,7 +183,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -381,7 +381,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -397,7 +397,7 @@ define i1 @func000000000000000b(i16 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = trunc i48 %2 to i16
   %4 = tail call i16 @llvm.smin.i16(i16 %1, i16 %3)
-  %5 = icmp sge i16 %0, %4
+  %5 = icmp sle i16 %4, %0
   ret i1 %5
 }
 
@@ -591,7 +591,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -610,7 +610,7 @@ define i1 @func000000000000004a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -624,7 +624,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -635,7 +635,7 @@ define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

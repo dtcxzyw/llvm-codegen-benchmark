@@ -15,7 +15,7 @@ define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = icmp uge i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -45,7 +45,7 @@ define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = icmp slt i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -67,7 +67,7 @@ define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = icmp sgt i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -118,7 +118,7 @@ define i1 @func0000000000000052(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 2
   %4 = icmp uge i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -141,7 +141,7 @@ define i1 @func0000000000000070(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -175,7 +175,7 @@ define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = icmp ne i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -199,7 +199,7 @@ define i1 @func000000000000004a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = icmp ule i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

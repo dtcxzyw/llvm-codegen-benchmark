@@ -9,7 +9,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = sub nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

@@ -11,11 +11,10 @@
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 100
-  %6 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 6
-  ret ptr %7
+  %6 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %5, i64 0, i64 %4, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -24,11 +23,10 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 16
-  %6 = getelementptr inbounds [0 x %struct.jv.1745422], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [0 x %struct.jv.1745422], ptr %5, i64 0, i64 %4, i32 4
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -38,11 +36,10 @@ entry:
 define ptr @func000000000000001d(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 824
-  %6 = getelementptr [512 x %struct.anon.1.1915151], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr [512 x %struct.anon.1.1915151], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

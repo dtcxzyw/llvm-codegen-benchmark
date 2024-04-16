@@ -10,7 +10,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = sdiv i32 %1, 4
   %5 = add nsw i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

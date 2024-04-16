@@ -10,8 +10,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a0, 192
-	bnez	a2, .LBB1_2
-	mv	a0, a1
+	beqz	a2, .LBB1_2
+	mv	a1, a0
 .LBB1_2:                                # %entry
-	andi	a0, a0, 8
+	andi	a0, a1, 8
 	ret

@@ -7,7 +7,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, -4
   %5 = zext i32 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 65535
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 2251799813685247
   %5 = zext nneg i64 %4 to i128
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 2251799813685247
   %5 = zext nneg i64 %4 to i128
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, -8
   %5 = zext i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

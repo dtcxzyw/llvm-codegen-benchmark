@@ -12,8 +12,8 @@
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = and i32 %1, 2
-  %3 = lshr exact i32 %2, 1
+  %2 = lshr i32 %1, 1
+  %3 = and i32 %2, 1
   ret i32 %3
 }
 
@@ -23,8 +23,8 @@ entry:
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = and i64 %1, 4294967295
-  %3 = lshr i64 %2, 2
+  %2 = lshr i64 %1, 2
+  %3 = and i64 %2, 1073741823
   ret i64 %3
 }
 

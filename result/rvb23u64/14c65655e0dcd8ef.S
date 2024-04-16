@@ -15,9 +15,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000108:                   # @func0000000000000108
 	srli	a0, a0, 2
-	addiw	a0, a0, -1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	addiw	a0, a0, -3
+	sltiu	a0, a0, -2
 	ret
 func0000000000000101:                   # @func0000000000000101
 	srli	a0, a0, 3
@@ -89,7 +88,6 @@ func000000000000011c:                   # @func000000000000011c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 32
-	addiw	a0, a0, 1
-	sltiu	a0, a0, 64
-	xori	a0, a0, 1
+	addiw	a0, a0, -63
+	sltiu	a0, a0, -64
 	ret

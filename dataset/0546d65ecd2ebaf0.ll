@@ -7,7 +7,7 @@
 define i1 @func0000000000000622(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %0
-  %3 = and i64 %1, %2
+  %3 = and i64 %2, %1
   %4 = icmp eq i64 %3, 0
   %5 = icmp eq i64 %0, 9
   %6 = or i1 %5, %4
@@ -52,7 +52,7 @@ entry:
 define i1 @func0000000000000582(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %0
-  %3 = and i32 %1, %2
+  %3 = and i32 %2, %1
   %4 = icmp ne i32 %3, 0
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
@@ -65,7 +65,7 @@ entry:
 define i1 @func0000000000000782(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %0
-  %3 = and i64 %1, %2
+  %3 = and i64 %2, %1
   %4 = icmp ne i64 %3, 0
   %5 = icmp eq i64 %0, 7
   %6 = or i1 %5, %4

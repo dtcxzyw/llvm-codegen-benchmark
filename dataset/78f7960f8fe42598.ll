@@ -12,7 +12,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 19)
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

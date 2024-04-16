@@ -25,8 +25,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = call i64 @llvm.smax.i64(i64 %1, i64 0)
-  %3 = call i64 @llvm.smax.i64(i64 %0, i64 %2)
+  %2 = call i64 @llvm.smax.i64(i64 %1, i64 %0)
+  %3 = call i64 @llvm.smax.i64(i64 %2, i64 0)
   ret i64 %3
 }
 

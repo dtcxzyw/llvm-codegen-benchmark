@@ -26,8 +26,8 @@ func000000000000007c:                   # @func000000000000007c
 	ret
 func000000000000006c:                   # @func000000000000006c
 	slli	a1, a1, 3
-	add	a0, a0, a1
-	addiw	a0, a0, -8
+	addiw	a1, a1, 248
+	or	a0, a0, a1
 	ret
 func0000000000000078:                   # @func0000000000000078
 	slli	a1, a1, 27

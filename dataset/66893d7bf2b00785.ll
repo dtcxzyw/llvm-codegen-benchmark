@@ -10,7 +10,7 @@ entry:
   %4 = fcmp une float %3, 0x7FF0000000000000
   %5 = fcmp oeq float %1, 0x7FF0000000000000
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = fcmp ogt double %3, 1.800000e+02
   %5 = fcmp ogt double %1, 0x40554345B1A57F00
   %6 = or i1 %4, %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

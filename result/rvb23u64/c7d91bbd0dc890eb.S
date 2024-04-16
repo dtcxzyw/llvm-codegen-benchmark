@@ -10,6 +10,6 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fdiv.d	fa5, fa1, fa2
-	fmul.d	fa5, fa0, fa5
+	fmul.d	fa5, fa5, fa0
 	fle.d	a0, fa0, fa5
 	ret

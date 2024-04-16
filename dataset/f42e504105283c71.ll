@@ -17,7 +17,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -275,7 +275,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i64 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -291,7 +291,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp slt i32 %1, 1
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -340,7 +340,7 @@ entry:
   %3 = icmp ugt i32 %2, 1
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -371,7 +371,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ugt i64 %1, 255
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -383,7 +383,7 @@ entry:
   %3 = icmp ult i32 %2, 3
   %4 = icmp ne ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -395,7 +395,7 @@ entry:
   %3 = icmp slt i32 %2, 1
   %4 = icmp ne ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -410,7 +410,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

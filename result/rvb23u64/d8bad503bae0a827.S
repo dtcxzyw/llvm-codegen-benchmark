@@ -1,13 +1,11 @@
 func0000000000000002:                   # @func0000000000000002
 	andi	a2, a2, 1024
-	lui	a3, 921600
-	addiw	a3, a3, -1026
-	czero.eqz	a3, a3, a2
+	lui	a3, 262144
+	czero.eqz	a4, a3, a2
 	czero.nez	a1, a1, a2
+	or	a1, a1, a4
 	or	a0, a0, a1
-	or	a0, a0, a3
-	lui	a1, 262144
-	and	a0, a0, a1
+	and	a0, a0, a3
 	ret
 func0000000000000010:                   # @func0000000000000010
 	bclri	a2, a2, 63

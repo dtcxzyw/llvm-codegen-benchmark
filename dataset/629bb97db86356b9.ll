@@ -8,8 +8,8 @@
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = add nsw i32 %2, -48
-  %4 = mul nsw i32 %3, 100
+  %3 = mul i32 %2, 100
+  %4 = add i32 %3, -4800
   ret i32 %4
 }
 
@@ -24,8 +24,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = add i64 %2, 1
-  %4 = mul nsw i64 %3, 3
+  %3 = mul i64 %2, 3
+  %4 = add i64 %3, 3
   ret i64 %4
 }
 

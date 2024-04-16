@@ -1,7 +1,6 @@
 func0000000000000074:                   # @func0000000000000074
-	slli	a0, a0, 40
-	srli	a0, a0, 44
-	seqz	a0, a0
+	sext.w	a0, a0
+	sltiu	a0, a0, 16
 	ret
 func0000000000000078:                   # @func0000000000000078
 	andi	a1, a1, 240
@@ -12,10 +11,10 @@ func0000000000000078:                   # @func0000000000000078
 	xori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	andi	a1, a1, 63
-	slliw	a0, a0, 6
-	or	a0, a0, a1
-	sltiu	a0, a0, 128
+	lui	a1, 16384
+	addiw	a1, a1, -2
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a0, a0, 38

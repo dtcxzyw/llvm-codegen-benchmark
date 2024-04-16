@@ -31,10 +31,10 @@ func0000000000000044:                   # @func0000000000000044
 	addi	a0, a0, -1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	slli	a1, a1, 57
-	srli	a1, a1, 56
-	add	a0, a0, a1
-	addiw	a0, a0, 2
+	slli	a1, a1, 1
+	addi	a1, a1, 2
+	andi	a1, a1, 254
+	addw	a0, a0, a1
 	ret
 func000000000000004f:                   # @func000000000000004f
 	slli	a1, a1, 49

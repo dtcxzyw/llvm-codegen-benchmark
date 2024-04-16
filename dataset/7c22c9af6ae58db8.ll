@@ -32,7 +32,7 @@ entry:
   %3 = lshr i64 %2, 12
   %4 = add nuw nsw i64 %3, 1
   %5 = mul i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

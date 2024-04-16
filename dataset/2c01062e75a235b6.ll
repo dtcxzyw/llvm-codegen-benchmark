@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp slt i32 %1, 2
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
+  %2 = icmp sgt i32 %1, 1
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -72,9 +72,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
+  %2 = icmp ne i8 %1, 0
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -100,8 +100,8 @@ entry:
 define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp ne ptr %3, null
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 
@@ -118,9 +118,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 4
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
+  %2 = icmp ugt i32 %1, 3
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -133,9 +133,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp sgt i32 %1, -1
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
+  %2 = icmp slt i32 %1, 0
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -145,8 +145,8 @@ entry:
 define i1 @func00000000000000ac(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp ne ptr %3, null
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 
@@ -155,10 +155,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %1, 0
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
-  ret i1 %4
+  %.not = icmp eq i8 %1, 0
+  %2 = icmp eq ptr %0, null
+  %3 = select i1 %.not, i1 true, i1 %2
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

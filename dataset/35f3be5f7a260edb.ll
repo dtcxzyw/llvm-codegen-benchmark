@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 128
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 128
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %0)
   %5 = add nsw i32 %4, -3
   ret i32 %5

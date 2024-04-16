@@ -32,7 +32,7 @@ func0000000000000027:                   # @func0000000000000027
 	bnez	a0, .LBB3_2
 	fmv.d	fa1, fa2
 .LBB3_2:                                # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000024:                   # @func0000000000000024
@@ -67,7 +67,7 @@ func0000000000000028:                   # @func0000000000000028
 	bnez	a0, .LBB7_2
 	fmv.d	fa1, fa2
 .LBB7_2:                                # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	ret
 func0000000000000034:                   # @func0000000000000034
 	fmv.d.x	fa5, zero

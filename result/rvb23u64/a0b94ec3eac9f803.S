@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
 	zext.h	a0, a0
 	sext.h	a2, a2
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1

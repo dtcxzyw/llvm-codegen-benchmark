@@ -105,7 +105,7 @@ define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -133,7 +133,7 @@ define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = call i8 @llvm.umax.i8(i8 %1, i8 97)
   %3 = zext i8 %2 to i32
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -344,7 +344,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -357,7 +357,7 @@ define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 2)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -368,7 +368,7 @@ define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   ret i1 %4
 }
 
@@ -391,7 +391,7 @@ define i1 @func0000000000000019(i32 %0, i8 %1) #0 {
 entry:
   %2 = tail call i8 @llvm.umax.i8(i8 %1, i8 1)
   %3 = zext nneg i8 %2 to i32
-  %4 = icmp uge i32 %0, %3
+  %4 = icmp ule i32 %3, %0
   ret i1 %4
 }
 
@@ -402,7 +402,7 @@ define i1 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.umax.i16(i16 %1, i16 1)
   %3 = zext i16 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -416,7 +416,7 @@ define i1 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = tail call i8 @llvm.umax.i8(i8 %1, i8 1)
   %3 = zext i8 %2 to i64
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 
@@ -427,7 +427,7 @@ define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

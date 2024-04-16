@@ -15,8 +15,8 @@ define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = trunc i128 %0 to i64
-  %4 = add i64 %3, %2
-  %5 = icmp ult i64 %4, %3
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %2
   %6 = zext i1 %5 to i64
   ret i64 %6
 }

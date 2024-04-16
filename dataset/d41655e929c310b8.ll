@@ -6,12 +6,11 @@
 ; Function Attrs: nounwind
 define i8 @func00000000000000ce(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -48
-  %3 = mul nuw nsw i8 %2, 10
-  %4 = add i8 %0, -48
-  %5 = add nuw nsw i8 %4, %3
-  %6 = mul nuw i8 %5, 10
-  ret i8 %6
+  %2 = mul i8 %1, 10
+  %3 = add i8 %2, %0
+  %4 = mul i8 %3, 10
+  %5 = add i8 %4, 96
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

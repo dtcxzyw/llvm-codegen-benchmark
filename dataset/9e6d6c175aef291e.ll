@@ -64,8 +64,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = lshr i64 %1, 60
+  %1 = lshr i64 %0, 4
+  %2 = and i64 %1, 15
   ret i64 %2
 }
 

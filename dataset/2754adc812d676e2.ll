@@ -19,9 +19,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 3
+  %2 = lshr i64 %1, 3
   %3 = and i64 %2, 2147483647
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -79,9 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 2
+  %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 1152921504606846972
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -93,7 +93,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = and i64 %2, -2
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -104,9 +104,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 3
+  %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -117,7 +117,7 @@ define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = and i64 %2, -32
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 
@@ -126,9 +126,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 1
+  %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 65535
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

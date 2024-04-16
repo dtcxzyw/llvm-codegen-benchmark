@@ -301,8 +301,8 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = or i32 %0, %3
+  %3 = trunc nuw i64 %2 to i32
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -323,7 +323,7 @@ define i64 @func0000000000000004(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 
@@ -339,7 +339,7 @@ define i16 @func0000000000000007(i16 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
   %3 = trunc nuw nsw i64 %2 to i16
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
 
@@ -351,7 +351,7 @@ define i8 @func0000000000000009(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = trunc i32 %2 to i8
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   ret i8 %4
 }
 
@@ -382,8 +382,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
-  %3 = trunc i64 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -398,7 +398,7 @@ define i8 @func0000000000000008(i8 %0, i96 %1) #0 {
 entry:
   %2 = lshr exact i96 %1, 2
   %3 = trunc i96 %2 to i8
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 
@@ -409,7 +409,7 @@ define i8 @func000000000000000e(i8 %0, i96 %1) #0 {
 entry:
   %2 = lshr exact i96 %1, 2
   %3 = trunc nuw nsw i96 %2 to i8
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 
@@ -423,7 +423,7 @@ define i8 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 
@@ -435,7 +435,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 

@@ -18,15 +18,17 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a2, a0, 255
-	sltiu	a2, a2, 17
-	not	a2, a2
-	or	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 16
-	bnez	a2, .LBB2_2
-	mv	a1, a0
+	li	a0, 16
+	andi	a1, a1, 1
+	bgeu	a2, a0, .LBB2_3
+	beqz	a1, .LBB2_4
 .LBB2_2:                                # %entry
-	mv	a0, a1
+	ret
+.LBB2_3:                                # %entry
+	li	a2, 16
+	bnez	a1, .LBB2_2
+.LBB2_4:                                # %entry
+	mv	a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a0

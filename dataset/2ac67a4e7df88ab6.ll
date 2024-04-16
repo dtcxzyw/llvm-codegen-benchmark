@@ -49,10 +49,8 @@
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = sdiv i64 %2, 2048
-  %4 = shl nsw i64 %3, 11
-  %5 = sub i64 %2, %4
-  ret i64 %5
+  %3 = srem i64 %2, 2048
+  ret i64 %3
 }
 
 ; 62 occurrences:
@@ -122,10 +120,8 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = sdiv i64 %2, 2
-  %4 = shl nsw i64 %3, 1
-  %5 = sub i64 %2, %4
-  ret i64 %5
+  %3 = srem i64 %2, 2
+  ret i64 %3
 }
 
 ; 46 occurrences:
@@ -179,10 +175,8 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = sdiv i64 %2, 4
-  %4 = shl nsw i64 %3, 2
-  %5 = sub nsw i64 %2, %4
-  ret i64 %5
+  %3 = srem i64 %2, 4
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

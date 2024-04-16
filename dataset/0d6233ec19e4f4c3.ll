@@ -8,11 +8,8 @@
 define i1 @func0000000000000d88(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = icmp ugt i64 %2, 65520
-  %4 = add nsw i64 %2, -65521
-  %5 = select i1 %3, i64 %4, i64 65520
-  %6 = icmp ugt i64 %5, 65520
-  ret i1 %6
+  %3 = icmp ugt i64 %2, 131041
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

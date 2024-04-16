@@ -182,7 +182,7 @@ entry:
   %3 = shl nuw i128 %2, 64
   %4 = sub nuw i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -197,7 +197,7 @@ entry:
   %3 = shl nuw i128 %2, 64
   %4 = sub i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 

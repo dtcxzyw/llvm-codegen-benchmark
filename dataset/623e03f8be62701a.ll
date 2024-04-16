@@ -19,8 +19,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds %struct.Gia_Obj_t_.1770802, ptr %1, i64 %3
+  %3 = getelementptr %struct.Gia_Obj_t_.1770802, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -12
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 12
@@ -32,8 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr %struct.zone.1998945, ptr %1, i64 %3
+  %3 = getelementptr %struct.zone.1998945, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1216
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 1216

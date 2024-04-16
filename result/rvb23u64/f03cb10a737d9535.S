@@ -17,8 +17,8 @@ func000000000000001d:                   # @func000000000000001d
 func00000000000000af:                   # @func00000000000000af
 	sext.b	a2, a2
 	slti	a2, a2, 0
-	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, 2
@@ -41,8 +41,8 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func00000000000000c5:                   # @func00000000000000c5
 	zext.h	a2, a2
-	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 8
 	lui	a1, 100

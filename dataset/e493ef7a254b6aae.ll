@@ -32,8 +32,8 @@ entry:
   %1 = tail call float @llvm.fabs.f32(float %0)
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 13
-  %4 = and i32 %3, 1023
-  %5 = trunc i32 %4 to i16
+  %4 = trunc i32 %3 to i16
+  %5 = and i16 %4, 1023
   ret i16 %5
 }
 
@@ -48,8 +48,8 @@ entry:
   %1 = tail call float @llvm.fabs.f32(float %0)
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 13
-  %4 = and i32 %3, 1023
-  %5 = trunc nuw nsw i32 %4 to i16
+  %4 = trunc i32 %3 to i16
+  %5 = and i16 %4, 1023
   ret i16 %5
 }
 

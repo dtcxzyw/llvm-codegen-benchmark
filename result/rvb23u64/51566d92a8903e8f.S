@@ -23,7 +23,7 @@ func0000000000000011:                   # @func0000000000000011
 	sub	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a1, a1, 127
+	andi	a1, a1, 126
 	sltiu	a1, a1, 70
 	li	a2, 100
 	czero.eqz	a1, a2, a1
@@ -48,15 +48,14 @@ func0000000000000014:                   # @func0000000000000014
 	addw	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	bexti	a1, a1, 8
+	andi	a1, a1, 256
 	li	a2, -6
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a1, a1, 15
-	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	andi	a1, a1, 12
+	snez	a1, a1
 	slli	a1, a1, 16
 	addw	a0, a0, a1
 	ret

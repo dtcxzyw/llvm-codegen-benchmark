@@ -2421,7 +2421,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   ret i32 %3
 }
 
@@ -2940,7 +2940,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -3540,7 +3540,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 16
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   ret i64 %3
 }
 
@@ -3695,7 +3695,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   ret i64 %3
 }
 
@@ -5023,7 +5023,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -5220,7 +5220,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 4
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   ret i64 %3
 }
 
@@ -5241,7 +5241,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 10
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   ret i64 %3
 }
 
@@ -5548,7 +5548,7 @@ entry:
 define i16 @func000000000000000b(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 12
-  %3 = add nuw nsw i16 %0, %2
+  %3 = add nuw nsw i16 %2, %0
   ret i16 %3
 }
 
@@ -5608,7 +5608,7 @@ entry:
 define i8 @func000000000000000e(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 1
-  %3 = add nuw i8 %0, %2
+  %3 = add nuw i8 %2, %0
   ret i8 %3
 }
 
@@ -5626,7 +5626,7 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   ret i32 %3
 }
 

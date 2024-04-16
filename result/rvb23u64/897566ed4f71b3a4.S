@@ -48,9 +48,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000308:                   # @func0000000000000308
 	andi	a1, a1, 255
-	li	a2, -3
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 6
+	li	a2, 3
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 3
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret

@@ -80,8 +80,9 @@ entry:
 define i1 @func0000000000000005(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = select i1 %0, i32 %1, i32 0
-  %5 = icmp ule i32 %4, %3
+  %4 = icmp uge i32 %3, %1
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 

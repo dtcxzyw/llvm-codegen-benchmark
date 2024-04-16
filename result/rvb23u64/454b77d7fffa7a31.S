@@ -21,7 +21,7 @@ func0000000000000011:                   # @func0000000000000011
 	czero.eqz	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a1, a1, 15
+	andi	a1, a1, 14
 	sltiu	a1, a1, 6
 	bset	a0, zero, a0
 	czero.nez	a0, a0, a1
@@ -30,7 +30,7 @@ func0000000000000034:                   # @func0000000000000034
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
-	andi	a1, a1, 63
+	andi	a1, a1, 62
 	sltiu	a1, a1, 6
 	bset	a0, zero, a0
 	czero.nez	a0, a0, a1

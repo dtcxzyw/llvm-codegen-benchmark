@@ -20,6 +20,6 @@ func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, 2
 	ret
 func000000000000000c:                   # @func000000000000000c
-	add	a0, a0, a1
-	addiw	a0, a0, -8
+	addiw	a1, a1, 248
+	or	a0, a0, a1
 	ret

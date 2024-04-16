@@ -46,7 +46,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.bswap.i32(i32 %1)
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }

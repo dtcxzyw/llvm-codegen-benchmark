@@ -120,10 +120,10 @@ entry:
 define i1 @func0000000000000111(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
-  %4 = select i1 %3, i16 %1, i16 %2
-  %5 = icmp eq i16 %4, 0
-  %6 = select i1 %5, i16 %0, i16 %4
-  %7 = icmp eq i16 %6, 0
+  %4 = icmp eq i16 %1, 0
+  %5 = select i1 %3, i1 %4, i1 false
+  %6 = icmp eq i16 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 

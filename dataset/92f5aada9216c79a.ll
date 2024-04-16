@@ -51,12 +51,12 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -7378697629483820647
-  %4 = or disjoint i64 %0, %3
-  %5 = and i64 %1, 4919131752989213764
-  %6 = or disjoint i64 %4, %5
-  %7 = and i64 %6, -4340410370284600381
-  ret i64 %7
+  %3 = and i64 %2, -9114861777597660799
+  %4 = and i64 %1, 4629771061636907072
+  %.masked1 = and i64 %0, -4340410370284600381
+  %.masked = or i64 %3, %.masked1
+  %5 = or i64 %.masked, %4
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -66,11 +66,11 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 32
-  %4 = or i8 %3, %0
-  %5 = and i8 %1, 64
-  %6 = or i8 %4, %5
-  %7 = and i8 %6, 96
-  ret i8 %7
+  %4 = and i8 %1, 64
+  %.masked1 = and i8 %0, 96
+  %.masked = or i8 %3, %.masked1
+  %5 = or i8 %.masked, %4
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

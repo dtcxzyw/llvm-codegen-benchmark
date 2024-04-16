@@ -8,9 +8,8 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = sub i32 %3, %0
-  %5 = add i32 %4, 8
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, -8
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -35,9 +35,9 @@ func000000000000002a:                   # @func000000000000002a
 	addi	a0, a0, -2
 	ret
 func000000000000002b:                   # @func000000000000002b
-	sext.w	a2, a2
 	not	a2, a2
-	add	a1, a1, a2
+	sext.w	a2, a2
+	sh2add	a0, a2, a0
 	sh2add	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

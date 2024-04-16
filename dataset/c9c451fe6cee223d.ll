@@ -9,7 +9,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 33554431
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = tail call i32 @llvm.umin.i32(i32 %6, i32 255)
   ret i32 %7
 }

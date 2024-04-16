@@ -43,11 +43,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000048(i64 %0) #0 {
 entry:
-  %1 = shl nsw i64 %0, 3
-  %2 = icmp ugt i64 %1, 2305843009213693951
-  %3 = shl i64 %0, 6
-  %4 = select i1 %2, i64 -1, i64 %3
-  ret i64 %4
+  %1 = and i64 %0, 2017612633061982208
+  %.not = icmp eq i64 %1, 0
+  %2 = shl i64 %0, 6
+  %3 = select i1 %.not, i64 %2, i64 -1
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -58,11 +58,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 1
-  %2 = icmp ugt i64 %1, 4611686018427387903
-  %3 = shl i64 %0, 3
-  %4 = select i1 %2, i64 -1, i64 %3
-  ret i64 %4
+  %1 = and i64 %0, 6917529027641081856
+  %.not = icmp eq i64 %1, 0
+  %2 = shl i64 %0, 3
+  %3 = select i1 %.not, i64 %2, i64 -1
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

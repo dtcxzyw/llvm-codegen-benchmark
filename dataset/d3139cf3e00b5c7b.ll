@@ -13,8 +13,8 @@ define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = lshr i32 %0, %2
-  %4 = and i32 %3, 1
-  %5 = trunc i32 %4 to i8
+  %4 = trunc i32 %3 to i8
+  %5 = and i8 %4, 1
   ret i8 %5
 }
 

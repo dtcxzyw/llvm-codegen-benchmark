@@ -21,7 +21,7 @@ entry:
   %3 = icmp eq i32 %2, -1525678080
   %4 = icmp eq i32 %1, 1
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = zext i1 %6 to i8
   ret i8 %7
 }
@@ -34,7 +34,7 @@ entry:
   %3 = icmp ult i32 %2, 26
   %4 = icmp ult i32 %1, 10
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }
@@ -47,7 +47,7 @@ entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp eq i32 %1, 18
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = zext i1 %6 to i8
   ret i8 %7
 }

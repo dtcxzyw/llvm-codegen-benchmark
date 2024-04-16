@@ -10,7 +10,7 @@
 define i16 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 65530, i32 %2
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -33,7 +33,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = trunc i64 %4 to i8
   ret i8 %5
 }
@@ -62,9 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 -1, i64 %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = trunc nuw i64 %4 to i32
+  %3 = select i1 %1, i64 4294967295, i64 %2
+  %4 = add i64 %3, %0
+  %5 = trunc i64 %4 to i32
   ret i32 %5
 }
 

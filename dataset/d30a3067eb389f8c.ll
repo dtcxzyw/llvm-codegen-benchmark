@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = trunc i32 %1 to i1
+  %1 = trunc i32 %0 to i1
+  %2 = xor i1 %1, true
   ret i1 %2
 }
 

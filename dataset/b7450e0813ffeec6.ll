@@ -24,8 +24,8 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fdiv float %3, %0
-  %5 = fneg float %4
+  %4 = fneg float %3
+  %5 = fdiv float %4, %0
   ret float %5
 }
 

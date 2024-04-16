@@ -1,10 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
-	clz	a0, a0
-	seqz	a0, a0
+	srli	a0, a0, 63
 	ret
 func0000000000000041:                   # @func0000000000000041
-	addi	a0, a0, -1
-	clz	a0, a0
-	seqz	a0, a0
+	slti	a0, a0, 1
 	ret

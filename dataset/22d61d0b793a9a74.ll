@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = icmp uge ptr %1, %2
-  %4 = select i1 %3, ptr %0, ptr %1
-  ret ptr %4
+  %.not = icmp ult ptr %1, %2
+  %3 = select i1 %.not, ptr %1, ptr %0
+  ret ptr %3
 }
 
 ; 229 occurrences:

@@ -5,7 +5,7 @@
 define i1 @func000000000000011c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 -16
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = icmp ne ptr %0, null
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -18,7 +18,7 @@ entry:
 define i1 @func000000000000014c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 -1
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   %4 = icmp ne ptr %0, null
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -94,7 +94,7 @@ entry:
 define i1 @func00000000000001cc(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 16
-  %3 = icmp ne ptr %0, %2
+  %3 = icmp ne ptr %2, %0
   %4 = icmp ne ptr %0, null
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

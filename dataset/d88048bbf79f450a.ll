@@ -111,9 +111,8 @@ define i64 @func0000000000000010(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64
-  %5 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %4)
-  %6 = extractvalue { i64, i1 } %5, 0
-  ret i64 %6
+  %5 = add i64 %4, %0
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

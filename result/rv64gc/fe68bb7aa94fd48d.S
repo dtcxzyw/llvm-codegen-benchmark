@@ -1,12 +1,11 @@
 func0000000000000002:                   # @func0000000000000002
-	sext.w	a2, a2
-	beqz	a2, .LBB0_2
-	lui	a1, 921600
-	addiw	a1, a1, -1026
+	sext.w	a3, a2
+	lui	a2, 262144
+	beqz	a3, .LBB0_2
+	lui	a1, 262144
 .LBB0_2:                                # %entry
 	or	a0, a0, a1
-	lui	a1, 262144
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a2, a2, 48
@@ -21,9 +20,9 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a3, 524288
 	addi	a3, a3, -1
 	slli	a3, a3, 32
-	sltu	a2, a3, a2
-	negw	a2, a2
-	and	a1, a1, a2
+	bltu	a3, a2, .LBB2_2
+	mv	a1, a3
+.LBB2_2:                                # %entry
 	or	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -38,7 +37,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000014:                   # @func0000000000000014
 	slli	a2, a2, 56
 	bgez	a2, .LBB4_2
-	li	a1, 68
+	li	a1, 4
 .LBB4_2:                                # %entry
 	or	a0, a0, a1
 	andi	a0, a0, 4

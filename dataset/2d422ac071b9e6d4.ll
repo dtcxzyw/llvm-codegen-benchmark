@@ -25,9 +25,8 @@ define i1 @func0000000000000001(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 1
-  ret i1 %4
+  %3 = icmp eq i32 %2, 2
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

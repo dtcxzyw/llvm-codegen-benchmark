@@ -29,9 +29,8 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 56
-  %3 = getelementptr inbounds [256 x { i16, i8 }], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 2
-  ret ptr %4
+  %3 = getelementptr inbounds [256 x { i16, i8 }], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -41,9 +40,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = getelementptr inbounds [17 x [3 x [4 x i64]]], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 32
-  ret ptr %4
+  %3 = getelementptr inbounds [17 x [3 x [4 x i64]]], ptr %0, i64 0, i64 %2, i64 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -53,9 +51,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 40
-  %3 = getelementptr [1024 x %struct.dsa_segment_map.2121340], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [1024 x %struct.dsa_segment_map.2121340], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

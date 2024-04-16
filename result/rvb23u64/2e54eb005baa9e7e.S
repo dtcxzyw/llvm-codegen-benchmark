@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.l	fa5, a1
-	feq.d	a1, fa0, fa5
+	feq.d	a1, fa5, fa0
 	czero.nez	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

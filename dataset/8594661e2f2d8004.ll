@@ -8,7 +8,7 @@ define i8 @func0000000000000500(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = zext i1 %2 to i16
-  %4 = add i16 %0, %3
+  %4 = add i16 %3, %0
   %5 = trunc i16 %4 to i8
   %6 = add i8 %5, 48
   ret i8 %6
@@ -72,7 +72,7 @@ define i16 @func0000000000000515(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = trunc nsw i32 %4 to i16
   %6 = add nsw i16 %5, 307
   ret i16 %6
@@ -111,7 +111,7 @@ define i16 @func0000000000000511(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = trunc i32 %4 to i16
   %6 = add nsw i16 %5, 307
   ret i16 %6

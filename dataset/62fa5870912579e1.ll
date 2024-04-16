@@ -21,7 +21,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
   %6 = select i1 %1, i64 %5, i64 0
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

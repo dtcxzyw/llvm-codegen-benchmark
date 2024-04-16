@@ -14,7 +14,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 72
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 40
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }

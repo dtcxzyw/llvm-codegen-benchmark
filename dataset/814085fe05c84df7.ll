@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 63
-  %2 = sub nuw nsw i32 64, %1
-  %3 = shl nuw nsw i32 %2, 3
+  %1 = shl i32 %0, 3
+  %2 = and i32 %1, 504
+  %3 = sub nuw nsw i32 512, %2
   ret i32 %3
 }
 
@@ -20,9 +20,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 1
-  %2 = sub nsw i64 0, %1
-  %3 = shl nsw i64 %2, 16
+  %1 = shl i64 %0, 16
+  %2 = and i64 %1, 65536
+  %3 = sub nsw i64 0, %2
   ret i64 %3
 }
 

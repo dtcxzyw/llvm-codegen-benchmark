@@ -13,7 +13,7 @@ define i8 @func0000000000000000(i16 %0) #0 {
 entry:
   %1 = sext i16 %0 to i32
   %2 = lshr i32 %1, 30
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   ret i8 %3
 }
 

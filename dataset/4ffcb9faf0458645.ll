@@ -10,9 +10,8 @@
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
-  %3 = getelementptr inbounds [3 x %"struct.drjit::divisor.1555281"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds [3 x %"struct.drjit::divisor.1555281"], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -22,9 +21,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1, %1
-  %3 = getelementptr inbounds [3 x %class.Polynomial.17.2210387], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds [3 x %class.Polynomial.17.2210387], ptr %0, i64 0, i64 %2, i32 0, i64 1
+  ret ptr %3
 }
 
 ; 1 occurrences:

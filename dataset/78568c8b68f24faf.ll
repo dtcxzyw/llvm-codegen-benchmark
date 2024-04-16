@@ -19,7 +19,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %3, 4
   %5 = select i1 %1, i32 %3, i32 %4
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 9
   %4 = add nuw nsw i32 %3, 3584
   %5 = select i1 %1, i32 %3, i32 %4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = shl i32 %2, 2
   %4 = add nsw i32 %3, 256
   %5 = select i1 %1, i32 %3, i32 %4
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

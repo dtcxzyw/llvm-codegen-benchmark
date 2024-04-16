@@ -14,10 +14,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = or disjoint i64 %1, 1
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i64, ptr %0, i64 %3
-  ret ptr %4
+  %.neg = xor i64 %1, -1
+  %2 = getelementptr i64, ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 ; 9 occurrences:
@@ -33,10 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = or disjoint i64 %1, 1
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr inbounds i64, ptr %0, i64 %3
-  ret ptr %4
+  %.neg = xor i64 %1, -1
+  %2 = getelementptr inbounds i64, ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

@@ -14,9 +14,8 @@ func0000000000000114:                   # @func0000000000000114
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	sub	a1, a1, a0
-	addi	a1, a1, -15
-	sltiu	a0, a1, 255
-	xori	a0, a0, 1
+	addi	a0, a1, -270
+	sltiu	a0, a0, -255
 	ret
 func0000000000000104:                   # @func0000000000000104
 	add	a1, a1, a2
@@ -27,16 +26,14 @@ func0000000000000104:                   # @func0000000000000104
 func0000000000000118:                   # @func0000000000000118
 	add	a1, a1, a2
 	sub	a1, a1, a0
-	addi	a1, a1, -2
-	sltiu	a0, a1, 17
-	xori	a0, a0, 1
+	addi	a1, a1, -19
+	sltiu	a0, a1, -17
 	ret
 func0000000000000108:                   # @func0000000000000108
 	add	a1, a1, a2
 	sub	a1, a1, a0
-	addi	a1, a1, -15
-	sltiu	a0, a1, 255
-	xori	a0, a0, 1
+	addi	a0, a1, -270
+	sltiu	a0, a0, -255
 	ret
 func0000000000000126:                   # @func0000000000000126
 	add	a1, a1, a2

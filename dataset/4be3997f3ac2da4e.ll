@@ -31,8 +31,8 @@ define i16 @func0000000000000000(i16 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 13
-  %4 = and i32 %3, 1023
-  %5 = trunc i32 %4 to i16
+  %4 = trunc i32 %3 to i16
+  %5 = and i16 %4, 1023
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -44,8 +44,8 @@ define i16 @func0000000000000006(i16 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 13
-  %4 = and i32 %3, 1023
-  %5 = trunc nuw nsw i32 %4 to i16
+  %4 = trunc i32 %3 to i16
+  %5 = and i16 %4, 1023
   %6 = or i16 %5, %0
   ret i16 %6
 }

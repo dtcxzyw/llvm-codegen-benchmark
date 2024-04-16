@@ -44,9 +44,9 @@ func0000000000000a22:                   # @func0000000000000a22
 func0000000000000b10:                   # @func0000000000000b10
 	andi	a0, a0, 255
 	subw	a1, a1, a2
-	addiw	a1, a1, 1
-	sltiu	a1, a1, 17
+	addiw	a1, a1, -16
+	sltiu	a1, a1, -17
 	sltiu	a0, a0, 9
-	and	a0, a0, a1
 	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret

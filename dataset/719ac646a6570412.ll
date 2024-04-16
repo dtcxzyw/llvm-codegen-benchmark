@@ -26,7 +26,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 8
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -39,7 +39,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 11
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7
 }

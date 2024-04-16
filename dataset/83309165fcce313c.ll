@@ -8,7 +8,7 @@ entry:
   %3 = xor i8 %2, -128
   %4 = zext i8 %3 to i32
   %5 = and i32 %1, 61440
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -40,7 +40,7 @@ entry:
   %3 = xor i8 %2, 32
   %4 = zext nneg i8 %3 to i32
   %5 = and i32 %1, 64
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

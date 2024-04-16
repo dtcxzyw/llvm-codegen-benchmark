@@ -8,7 +8,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 false)
   ret i32 %3
 }
@@ -23,7 +23,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = call noundef i32 @llvm.abs.i32(i32 %2, i1 false)
   ret i32 %3
 }

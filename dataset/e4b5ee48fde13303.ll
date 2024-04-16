@@ -13,10 +13,10 @@
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = lshr i32 %3, 16
-  %5 = xor i32 %0, %4
-  %6 = shl nuw i32 %5, 16
-  ret i32 %6
+  %4 = shl i32 %0, 16
+  %.masked = and i32 %3, -65536
+  %5 = xor i32 %.masked, %4
+  ret i32 %5
 }
 
 ; 52 occurrences:
@@ -76,10 +76,10 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = lshr i32 %3, 16
-  %5 = xor i32 %4, %0
-  %6 = shl i32 %5, 16
-  ret i32 %6
+  %4 = shl i32 %0, 16
+  %.masked = and i32 %3, -65536
+  %5 = xor i32 %.masked, %4
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -90,7 +90,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   %6 = shl nuw nsw i64 %5, 32
   ret i64 %6
 }

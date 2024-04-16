@@ -18,7 +18,7 @@ entry:
   %3 = fneg float %2
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = select i1 %4, float %2, float %3
-  %6 = fadd float %1, %5
+  %6 = fadd float %5, %1
   %7 = fdiv float %0, %6
   ret float %7
 }

@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = and i64 %1, 3
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i32 364, i32 365
-  ret i32 %4
+  %1 = and i32 %0, 3
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 365, i32 364
+  ret i32 %2
 }
 
 ; 161 occurrences:
@@ -177,11 +176,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i32
-  %2 = and i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 332, i64 336
-  ret i64 %4
+  %1 = and i16 %0, 1
+  %2 = icmp eq i16 %1, 0
+  %3 = select i1 %2, i64 332, i64 336
+  ret i64 %3
 }
 
 ; 12 occurrences:
@@ -200,11 +198,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000011(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = and i32 %1, 3
-  %3 = icmp eq i32 %2, 3
-  %4 = select i1 %3, i8 3, i8 0
-  ret i8 %4
+  %1 = and i8 %0, 3
+  %2 = icmp eq i8 %1, 3
+  %3 = select i1 %2, i8 3, i8 0
+  ret i8 %3
 }
 
 ; 5 occurrences:
@@ -216,11 +213,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i32
-  %2 = and i32 %1, 256
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 20, i32 10
-  ret i32 %4
+  %1 = and i16 %0, 256
+  %.not = icmp eq i16 %1, 0
+  %2 = select i1 %.not, i32 10, i32 20
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -230,11 +226,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 10
-  %4 = select i1 %3, i16 48, i16 55
-  ret i16 %4
+  %1 = and i8 %0, 14
+  %2 = icmp ult i8 %1, 10
+  %3 = select i1 %2, i16 48, i16 55
+  ret i16 %3
 }
 
 ; 2 occurrences:
@@ -243,11 +238,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 15
-  %3 = icmp ugt i32 %2, 9
-  %4 = select i1 %3, i32 16000, i32 8000
-  ret i32 %4
+  %1 = and i8 %0, 14
+  %2 = icmp ugt i8 %1, 9
+  %3 = select i1 %2, i32 16000, i32 8000
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

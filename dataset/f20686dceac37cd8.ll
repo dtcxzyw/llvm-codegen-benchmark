@@ -5,9 +5,9 @@
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, -54
-  %3 = and i32 %2, 511
-  %4 = icmp ult i32 %3, 64
+  %2 = add i32 %1, 458
+  %3 = and i32 %2, 448
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
@@ -17,9 +17,9 @@ entry:
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, -55
-  %3 = and i32 %2, 511
-  %4 = icmp ult i32 %3, 64
+  %2 = add i32 %1, 457
+  %3 = and i32 %2, 448
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
@@ -61,7 +61,7 @@ entry:
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, -1
+  %2 = add i32 %1, 31
   %3 = and i32 %2, 31
   %4 = icmp ne i32 %3, 0
   ret i1 %4
@@ -88,7 +88,7 @@ define i1 @func0000000000000008(i40 %0) #0 {
 entry:
   %1 = trunc i40 %0 to i32
   %2 = add i32 %1, 1
-  %3 = and i32 %2, 65535
+  %3 = and i32 %2, 65532
   %4 = icmp ugt i32 %3, 99
   ret i1 %4
 }

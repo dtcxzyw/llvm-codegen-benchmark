@@ -25,7 +25,7 @@ entry:
   %3 = udiv i64 %2, 192
   %4 = add nuw nsw i64 %3, %1
   %5 = mul i64 %4, 192
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add nsw i64 %6, -192
   ret i64 %7
 }

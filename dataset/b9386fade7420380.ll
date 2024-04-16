@@ -26,9 +26,8 @@ entry:
   %2 = add nsw i32 %1, 5
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 248
-  %5 = getelementptr inbounds [12 x %"class.irr::video::SMaterial.1646452"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 128
-  ret ptr %6
+  %5 = getelementptr inbounds [12 x %"class.irr::video::SMaterial.1646452"], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 37 occurrences:
@@ -75,9 +74,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 12496
-  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 14 occurrences:
@@ -101,9 +99,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 160
-  %5 = getelementptr [127 x %struct.NVMeRequest.1663713], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [127 x %struct.NVMeRequest.1663713], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -128,9 +125,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr [0 x %struct.ItemPointerData.2120393], ptr %4, i64 0, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 2
-  ret ptr %6
+  %5 = getelementptr [0 x %struct.ItemPointerData.2120393], ptr %4, i64 0, i64 %3, i32 0, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

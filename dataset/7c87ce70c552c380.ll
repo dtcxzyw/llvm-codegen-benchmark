@@ -9,8 +9,8 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 15
   %4 = xor i32 %3, 15
-  %5 = select i1 %0, i32 16, i32 %4
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %4 to i64
+  %6 = select i1 %0, i64 16, i64 %5
   ret i64 %6
 }
 

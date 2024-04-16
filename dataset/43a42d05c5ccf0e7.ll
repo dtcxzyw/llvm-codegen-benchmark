@@ -477,8 +477,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = and i64 %2, 8960
-  %4 = icmp ult i64 %3, 8192
+  %3 = and i64 %2, 8192
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -508,7 +508,7 @@ entry:
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = and i64 %2, 4294967295
+  %3 = and i64 %2, 4294967288
   %4 = icmp ult i64 %3, 200
   ret i1 %4
 }
@@ -519,8 +519,8 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
-  %3 = and i32 %2, 65535
-  %4 = icmp ugt i32 %3, 2047
+  %3 = and i32 %2, 63488
+  %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 

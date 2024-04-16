@@ -19,9 +19,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a1, a1
-	czero.nez	a0, a0, a1
 	andi	a0, a0, 255
 	slli	a0, a0, 32
+	czero.nez	a0, a0, a1
 	ret
 func0000000000000026:                   # @func0000000000000026
 	srliw	a1, a1, 16
@@ -29,9 +29,9 @@ func0000000000000026:                   # @func0000000000000026
 	slli	a0, a0, 32
 	ret
 func0000000000000033:                   # @func0000000000000033
+	slli.uw	a0, a0, 3
 	srai	a1, a1, 63
 	and	a0, a0, a1
-	slli.uw	a0, a0, 3
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255

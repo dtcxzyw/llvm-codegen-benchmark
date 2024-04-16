@@ -67,7 +67,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = sub i64 0, %1
   %5 = and i64 %3, %4
   %6 = icmp ne i64 %5, 0

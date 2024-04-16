@@ -1,11 +1,4 @@
 
-%"class.std::unique_ptr.49.1566239" = type { %"struct.std::__uniq_ptr_data.50.1566240" }
-%"struct.std::__uniq_ptr_data.50.1566240" = type { %"class.std::__uniq_ptr_impl.51.1566241" }
-%"class.std::__uniq_ptr_impl.51.1566241" = type { %"class.std::tuple.52.1566242" }
-%"class.std::tuple.52.1566242" = type { %"struct.std::_Tuple_impl.53.1566243" }
-%"struct.std::_Tuple_impl.53.1566243" = type { %"struct.std::_Head_base.56.1566244" }
-%"struct.std::_Head_base.56.1566244" = type { ptr }
-
 ; 23 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; arrow/optimized/caching.cc.ll
@@ -33,11 +26,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 3
-  %4 = ashr exact i64 %1, 3
-  %5 = add nsw i64 %4, %3
-  %6 = getelementptr inbounds %"class.std::unique_ptr.49.1566239", ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

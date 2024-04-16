@@ -9,8 +9,8 @@ entry:
   %1 = fmul double %0, 1.000000e+01
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fsub double %1, %3
-  %5 = fsub double 1.000000e+00, %4
+  %4 = fsub double %3, %1
+  %5 = fadd double %4, 1.000000e+00
   ret double %5
 }
 

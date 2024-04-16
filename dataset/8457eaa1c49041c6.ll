@@ -66,9 +66,9 @@ entry:
 define i8 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = add nsw i8 %2, -1
-  %4 = trunc i32 %0 to i8
-  %5 = sub i8 %3, %4
+  %3 = trunc i32 %0 to i8
+  %4 = xor i8 %3, -1
+  %5 = add i8 %4, %2
   ret i8 %5
 }
 

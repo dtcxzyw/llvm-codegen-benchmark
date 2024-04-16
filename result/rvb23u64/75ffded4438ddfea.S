@@ -40,9 +40,10 @@ func0000000000000042:                   # @func0000000000000042
 	addi	a0, a0, 2
 	ret
 func0000000000000062:                   # @func0000000000000062
-	andi	a0, a0, 255
-	slli	a1, a0, 8
-	subw	a1, a1, a0
-	srliw	a0, a1, 8
+	andi	a1, a0, 255
+	slli	a0, a0, 8
+	subw	a0, a0, a1
+	slli	a0, a0, 48
+	srli	a0, a0, 56
 	addi	a0, a0, 1
 	ret

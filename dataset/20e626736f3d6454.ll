@@ -7,7 +7,7 @@ entry:
   %3 = icmp sgt i32 %1, %2
   %4 = icmp eq i32 %1, -1
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = icmp sge i64 %1, %2
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

@@ -27,9 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ne i64 %1, %0
-  %3 = select i1 %2, i64 %0, i64 0
-  ret i64 %3
+  %.not = icmp eq i64 %1, %0
+  %2 = select i1 %.not, i64 0, i64 %0
+  ret i64 %2
 }
 
 ; 30 occurrences:
@@ -79,9 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp sge i32 %1, %0
-  %3 = select i1 %2, i32 %0, i32 0
-  ret i32 %3
+  %.not = icmp slt i32 %1, %0
+  %2 = select i1 %.not, i32 0, i32 %0
+  ret i32 %2
 }
 
 ; 15 occurrences:
@@ -121,9 +121,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp uge i64 %1, %0
-  %3 = select i1 %2, i64 %0, i64 0
-  ret i64 %3
+  %.not = icmp ult i64 %1, %0
+  %2 = select i1 %.not, i64 0, i64 %0
+  ret i64 %2
 }
 
 ; 4 occurrences:

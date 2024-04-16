@@ -10,10 +10,9 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr i64 %2, 3
-  %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %4, 1
-  ret i1 %5
+  %3 = and i64 %2, 34359738360
+  %4 = icmp eq i64 %3, 8
+  ret i1 %4
 }
 
 ; 12 occurrences:
@@ -33,10 +32,9 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 3
-  %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 34359738360
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -46,10 +44,9 @@ entry:
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 3
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, 4
-  ret i1 %5
+  %3 = and i64 %2, 34359738336
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -59,10 +56,9 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr i64 %2, 3
-  %4 = and i64 %3, 2147483647
-  %5 = icmp ne i64 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 17179869176
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -71,10 +67,9 @@ entry:
 define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 3
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ne i64 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 34359738360
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

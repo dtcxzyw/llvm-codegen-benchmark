@@ -19,10 +19,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %struct.ssl_mac_buf_st.1586960, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = select i1 %0, ptr null, ptr %4
-  ret ptr %5
+  %3 = getelementptr inbounds %struct.ssl_mac_buf_st.1586960, ptr %1, i64 %2, i32 1
+  %4 = select i1 %0, ptr null, ptr %3
+  ret ptr %4
 }
 
 ; 16 occurrences:

@@ -26,10 +26,9 @@ entry:
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr i8, ptr %3, i64 16
-  %5 = getelementptr i8, ptr %1, i64 16
-  %6 = select i1 %0, ptr %4, ptr %5
-  ret ptr %6
+  %.v = select i1 %0, ptr %3, ptr %1
+  %4 = getelementptr i8, ptr %.v, i64 16
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

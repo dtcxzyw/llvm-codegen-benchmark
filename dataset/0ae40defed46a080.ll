@@ -27,7 +27,7 @@ define i16 @func0000000000000000(i16 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i16
   %4 = select i1 %1, i16 0, i16 %3
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   ret i16 %5
 }
 

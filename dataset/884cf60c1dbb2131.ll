@@ -21,7 +21,7 @@ define i32 @func0000000000000002(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 89
   %4 = select i1 %3, i32 3, i32 0
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = select i1 %0, i32 7, i32 %5
   ret i32 %6
 }

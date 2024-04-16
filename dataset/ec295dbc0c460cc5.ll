@@ -14,9 +14,9 @@
 define i64 @func000000000000003d(i64 %0) #0 {
 entry:
   %1 = sub nuw nsw i64 64, %0
-  %2 = shl nuw nsw i64 1, %1
-  %3 = add nsw i64 %2, -1
-  ret i64 %3
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  ret i64 %2
 }
 
 ; 1 occurrences:

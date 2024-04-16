@@ -233,8 +233,8 @@ entry:
 define i8 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %0, -100
-  %5 = add nsw i32 %4, %3
+  %4 = mul i32 %0, 156
+  %5 = add i32 %4, %3
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }

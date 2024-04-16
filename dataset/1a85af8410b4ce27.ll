@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sub nsw i32 %3, %1
+  %3 = xor i32 %1, -1
+  %4 = add i32 %3, %2
   %5 = and i32 %4, -4096
   %6 = icmp slt i32 %5, %0
   ret i1 %6
@@ -30,8 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sub nsw i32 %3, %1
+  %3 = xor i32 %1, -1
+  %4 = add i32 %3, %2
   %5 = and i32 %4, -4096
   %6 = icmp sgt i32 %5, %0
   ret i1 %6

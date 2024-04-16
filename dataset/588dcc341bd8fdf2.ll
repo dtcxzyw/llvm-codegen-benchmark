@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp ne i64 %3, 0
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -81,8 +81,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp ne i64 %3, 0
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
   %5 = icmp eq ptr %0, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -93,7 +93,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000003cc(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %1, %2
+  %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
@@ -117,8 +117,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001cc(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %1, %2
-  %4 = icmp ne i32 %3, 0
+  %3 = sub i32 0, %2
+  %4 = icmp ne i32 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6

@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
-  %3 = select i1 %0, i32 0, i32 %2
-  %4 = mul nuw nsw i32 %3, 3
+  %2 = mul i32 %1, 3
+  %3 = add i32 %2, 3
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -20,9 +20,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -152
-  %3 = select i1 %0, i32 -151, i32 %2
-  %4 = mul nsw i32 %3, -732923
+  %2 = mul i32 %1, -732923
+  %3 = add i32 %2, 111404296
+  %4 = select i1 %0, i32 110671373, i32 %3
   ret i32 %4
 }
 
@@ -36,9 +36,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -152
-  %3 = select i1 %0, i32 -151, i32 %2
-  %4 = mul nuw nsw i32 %3, 78913
+  %2 = mul i32 %1, 78913
+  %3 = add i32 %2, -11994776
+  %4 = select i1 %0, i32 -11915863, i32 %3
   ret i32 %4
 }
 
@@ -47,9 +47,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = mul i32 %3, 30
+  %2 = mul i32 %1, 30
+  %3 = add i32 %2, 30
+  %4 = select i1 %0, i32 30, i32 %3
   ret i32 %4
 }
 
@@ -70,9 +70,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1442695040888963407
-  %3 = select i1 %0, i64 7039644732281083381, i64 %2
-  %4 = mul i64 %3, 6364136223846793005
+  %2 = mul i64 %1, 6364136223846793005
+  %3 = add i64 %2, 433315962919513059
+  %4 = select i1 %0, i64 8278028596847355665, i64 %3
   ret i64 %4
 }
 

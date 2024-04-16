@@ -3,7 +3,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	snez	a5, a2
 	neg	a4, a3
 	sub	a4, a4, a5
-	xor	a5, a1, a4
+	xor	a5, a4, a1
 	slt	a4, a4, a1
 	czero.eqz	a7, a4, a5
 	sltu	a4, a6, a0

@@ -8,7 +8,7 @@ entry:
   %2 = sitofp i32 %1 to double
   %3 = fmul double %2, 2.000000e-01
   %4 = fptosi double %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3FFD9999A0000000
   %4 = fptosi float %3 to i32
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

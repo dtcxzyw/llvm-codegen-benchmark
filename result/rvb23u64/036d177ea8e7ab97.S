@@ -16,22 +16,24 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000029:                   # @func0000000000000029
 	subw	a1, a1, a2
 	sltiu	a1, a1, 2
-	li	a2, 3
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 1
+	li	a2, -3
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 4
 	or	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
-	subw	a1, a1, a2
-	sgtz	a1, a1
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
 	li	a2, -16
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 18
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	subw	a1, a1, a2
-	sgtz	a1, a1
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
 	li	a2, 32
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

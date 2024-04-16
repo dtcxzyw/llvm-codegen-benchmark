@@ -27,8 +27,8 @@ define i1 @func0000000000000444(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = icmp ult i32 %2, 2
-  %4 = trunc i64 %0 to i32
-  %5 = icmp ult i32 %4, 64
+  %4 = and i64 %0, 4294967232
+  %5 = icmp eq i64 %4, 0
   %6 = and i1 %5, %3
   ret i1 %6
 }

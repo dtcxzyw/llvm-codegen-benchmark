@@ -33,7 +33,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = mul nuw nsw i128 %3, 38
   %5 = mul nuw nsw i128 %4, %1
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 

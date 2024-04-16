@@ -10,7 +10,7 @@ entry:
   %3 = trunc i48 %2 to i32
   %4 = and i32 %3, 65280
   %5 = trunc i48 %1 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

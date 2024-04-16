@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
-	beq	a0, a1, .LBB1_2
+	beq	a1, a0, .LBB1_2
 	lui	a0, 395272
 	addiw	a0, a0, 128
 	ret

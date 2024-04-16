@@ -116,8 +116,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000004c:                   # @func000000000000004c
 	zext.h	a1, a1
-	andi	a2, a2, 15
-	sltiu	a2, a2, 12
+	andi	a2, a2, 12
+	addi	a2, a2, -12
+	snez	a2, a2
 	and	a0, a0, a2
 	addi	a1, a1, -3
 	snez	a1, a1
@@ -137,10 +138,9 @@ func0000000000000048:                   # @func0000000000000048
 	and	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
+	andi	a2, a2, 2
+	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a2, a2, 3
-	sltiu	a2, a2, 2
-	and	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

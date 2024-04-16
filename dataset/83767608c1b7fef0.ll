@@ -10,7 +10,7 @@ entry:
   %2 = add nsw i32 %1, 28
   %3 = and i32 %2, 31
   %4 = tail call i32 @llvm.smax.i32(i32 %0, i32 0)
-  %5 = add nuw nsw i32 %3, %4
+  %5 = or i32 %3, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

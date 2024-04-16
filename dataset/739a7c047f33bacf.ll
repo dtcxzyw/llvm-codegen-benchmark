@@ -77,8 +77,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 9223372036854775800
-  %6 = select i1 %5, i64 %0, i64 2305843009213693951
-  %7 = shl nuw i64 %6, 3
+  %6 = shl nuw i64 %0, 3
+  %7 = select i1 %5, i64 %6, i64 -8
   ret i64 %7
 }
 
@@ -90,8 +90,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ugt i64 %4, 8
-  %6 = select i1 %5, i64 %0, i64 4
-  %7 = shl i64 %6, 3
+  %6 = shl i64 %0, 3
+  %7 = select i1 %5, i64 %6, i64 32
   ret i64 %7
 }
 

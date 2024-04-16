@@ -134,9 +134,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = freeze i64 %3
-  %5 = ashr exact i64 %4, 2
-  %6 = icmp slt i64 %5, 2
-  ret i1 %6
+  %5 = icmp slt i64 %4, 8
+  ret i1 %5
 }
 
 ; 5 occurrences:
@@ -151,9 +150,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = freeze i64 %3
-  %5 = ashr exact i64 %4, 4
-  %6 = icmp sgt i64 %5, 16
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 256
+  ret i1 %5
 }
 
 ; 64 occurrences:
@@ -227,9 +225,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = freeze i64 %3
-  %5 = ashr i64 %4, 3
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 7
+  ret i1 %5
 }
 
 ; 19 occurrences:
@@ -258,9 +255,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = freeze i64 %3
-  %5 = ashr i64 %4, 4
-  %6 = icmp slt i64 %5, 2
-  ret i1 %6
+  %5 = icmp slt i64 %4, 32
+  ret i1 %5
 }
 
 ; 13 occurrences:
@@ -283,9 +279,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = freeze i64 %3
-  %5 = ashr i64 %4, 4
-  %6 = icmp ugt i64 %5, 1
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 31
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

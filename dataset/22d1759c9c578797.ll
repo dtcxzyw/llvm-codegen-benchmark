@@ -10,7 +10,7 @@ define i1 @func0000000000000601(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = and i32 %4, 7
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -23,7 +23,7 @@ define i1 @func0000000000000211(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = and i32 %4, 3
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -36,7 +36,7 @@ define i1 @func0000000000000534(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = and i32 %4, 63
   %6 = icmp ult i32 %5, 31
   ret i1 %6
@@ -49,12 +49,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000631(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ne i64 %1, 0
-  %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
-  %5 = and i64 %4, 1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %.tr = trunc i64 %0 to i1
+  %2 = icmp eq i64 %1, 0
+  %3 = xor i1 %2, %.tr
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -65,7 +63,7 @@ define i1 @func0000000000000611(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = and i32 %4, 65535
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -84,7 +82,7 @@ define i1 @func0000000000000511(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = and i64 %4, 3
   %6 = icmp eq i64 %5, 0
   ret i1 %6
@@ -103,7 +101,7 @@ define i1 @func0000000000000501(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = and i64 %4, 3
   %6 = icmp eq i64 %5, 0
   ret i1 %6
@@ -116,7 +114,7 @@ define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, -8193
   %3 = zext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = and i64 %4, 3
   %6 = icmp eq i64 %5, 0
   ret i1 %6

@@ -9,12 +9,12 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 20
 	ret
 func000000000000000e:                   # @func000000000000000e
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	sh1add	a0, a1, a0
 	addi	a0, a0, 2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret

@@ -8,12 +8,12 @@ func0000000000000000:                   # @func0000000000000000
 	and	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
-	li	a2, -19
-	mul	a1, a1, a2
+	lui	a2, 1048500
+	srli	a2, a2, 13
+	addi	a3, a2, 19
+	mul	a1, a1, a3
+	sub	a0, a0, a2
 	sub	a1, a1, a0
-	lui	a0, 1048538
-	srli	a0, a0, 12
-	add	a0, a0, a1
-	slli	a0, a0, 13
-	srli	a0, a0, 13
+	addi	a0, a2, 37
+	and	a0, a0, a1
 	ret

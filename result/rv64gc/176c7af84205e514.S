@@ -25,7 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	sraiw	a0, a0, 6
 	add	a1, a1, a0
 	li	a0, -7
-	beq	a2, a1, .LBB1_2
+	beq	a1, a2, .LBB1_2
 	li	a0, -9
 .LBB1_2:                                # %entry
 	ret

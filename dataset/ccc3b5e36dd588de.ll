@@ -67,7 +67,7 @@ entry:
   %3 = shl i32 %2, 16
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -83,10 +83,10 @@ entry:
 define i32 @func0000000000000038(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = icmp ne i8 %1, 76
-  %5 = select i1 %4, i32 %3, i32 2
-  %6 = or i32 %0, %5
-  ret i32 %6
+  %.not = icmp eq i8 %1, 76
+  %4 = select i1 %.not, i32 2, i32 %3
+  %5 = or i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -10,7 +10,7 @@ entry:
   %3 = shl i32 %1, %2
   %4 = and i32 %3, 65535
   %5 = lshr i32 %4, %0
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }
 

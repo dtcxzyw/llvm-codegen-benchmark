@@ -168,7 +168,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = sub i64 %3, %0
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

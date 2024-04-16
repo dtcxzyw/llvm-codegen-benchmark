@@ -12,7 +12,7 @@ entry:
   %4 = icmp ult i32 %3, -26
   %5 = icmp ult i32 %1, -10
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -138,7 +138,7 @@ entry:
   %4 = icmp ult i32 %3, -10
   %5 = icmp ult i32 %1, -26
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -156,7 +156,7 @@ entry:
   %4 = icmp ult i32 %3, 17
   %5 = icmp eq i32 %1, 1
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -300,7 +300,7 @@ entry:
   %4 = icmp ult i32 %3, 3
   %5 = icmp eq i8 %1, 6
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -348,12 +348,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = icmp ne i32 %3, 0
-  %5 = icmp eq i8 %1, 115
-  %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
-  ret i1 %7
+  %3 = icmp ne i32 %2, 1
+  %4 = icmp eq i8 %1, 115
+  %5 = and i1 %3, %4
+  %6 = and i1 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

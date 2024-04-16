@@ -21,7 +21,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 256, %1
-  %3 = mul nuw i32 %0, %2
+  %3 = mul nuw i32 %2, %0
   %4 = lshr i32 %3, 8
   ret i32 %4
 }

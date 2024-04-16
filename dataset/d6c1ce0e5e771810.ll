@@ -75,8 +75,8 @@ entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = or disjoint i32 %0, %1
   %5 = or i32 %4, %3
-  %6 = and i32 %5, 65535
-  %7 = icmp ugt i32 %6, 2047
+  %6 = and i32 %5, 63488
+  %7 = icmp ne i32 %6, 0
   ret i1 %7
 }
 

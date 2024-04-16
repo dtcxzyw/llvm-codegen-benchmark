@@ -15,7 +15,7 @@
 define i1 @func0000000000000014(float %0, float %1, float %2) #0 {
 entry:
   %3 = call noundef float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   ret i1 %4
 }
 
@@ -43,7 +43,7 @@ declare float @llvm.fmuladd.f32(float, float, float) #1
 define i1 @func0000000000000012(float %0, float %1, float %2) #0 {
 entry:
   %3 = call noundef float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   ret i1 %4
 }
 
@@ -60,7 +60,7 @@ entry:
 define i1 @func0000000000000013(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call noundef double @llvm.fmuladd.f64(double %1, double %1, double %2)
-  %4 = fcmp ult double %0, %3
+  %4 = fcmp ugt double %3, %0
   ret i1 %4
 }
 
@@ -73,7 +73,7 @@ declare double @llvm.fmuladd.f64(double, double, double) #1
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp une float %0, %3
+  %4 = fcmp une float %3, %0
   ret i1 %4
 }
 
@@ -83,7 +83,7 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   ret i1 %4
 }
 
@@ -93,7 +93,7 @@ entry:
 define i1 @func0000000000000017(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp une float %0, %3
+  %4 = fcmp une float %3, %0
   ret i1 %4
 }
 
@@ -109,7 +109,7 @@ entry:
 define i1 @func0000000000000015(float %0, float %1, float %2) #0 {
 entry:
   %3 = call noundef float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp ugt float %0, %3
+  %4 = fcmp ult float %3, %0
   ret i1 %4
 }
 
@@ -121,7 +121,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   ret i1 %4
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %1, 2
   %5 = icmp ugt i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = lshr i32 %1, 28
   %5 = icmp ne i32 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %1, 2
   %5 = icmp uge i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a1, 12
 	czero.eqz	a0, a1, a0
 	fcvt.s.w	fa5, a0
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
@@ -11,5 +11,5 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	fcvt.s.w	fa5, a0
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret

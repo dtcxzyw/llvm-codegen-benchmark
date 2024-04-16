@@ -28,15 +28,17 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000054:                   # @func0000000000000054
 	slli	a2, a2, 56
-	bltz	a2, .LBB2_3
-	li	a1, 6
-	bgeu	a0, a1, .LBB2_4
+	bgez	a2, .LBB2_3
+	li	a0, 6
+	bgeu	a1, a0, .LBB2_4
 .LBB2_2:                                # %entry
+	mv	a0, a1
 	ret
 .LBB2_3:                                # %entry
-	mv	a0, a1
-	li	a1, 6
-	bltu	a0, a1, .LBB2_2
-.LBB2_4:                                # %entry
+	mv	a1, a0
 	li	a0, 6
+	bltu	a1, a0, .LBB2_2
+.LBB2_4:                                # %entry
+	li	a1, 6
+	mv	a0, a1
 	ret

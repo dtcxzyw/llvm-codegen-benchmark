@@ -8,8 +8,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add i64 %2, %1
-  %4 = getelementptr %struct.yyjson_val.2186815, ptr %0, i64 %3
+  %3 = getelementptr %struct.yyjson_val.2186815, ptr %0, i64 %2
+  %4 = getelementptr %struct.yyjson_val.2186815, ptr %3, i64 %1
   ret ptr %4
 }
 

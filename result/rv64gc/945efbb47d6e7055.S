@@ -114,8 +114,9 @@ func000000000000004a:                   # @func000000000000004a
 	slt	a0, a1, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	addw	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a1, a1, 1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
@@ -187,13 +188,15 @@ func0000000000000078:                   # @func0000000000000078
 	sltu	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addw	a0, a0, a1
-	addi	a0, a0, -48
+	addiw	a1, a1, -48
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	addw	a0, a0, a1
-	addi	a0, a0, -2
+	addiw	a1, a1, -2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000d6:                   # @func00000000000000d6
@@ -224,15 +227,19 @@ func0000000000000066:                   # @func0000000000000066
 	slti	a0, a0, 0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
-	addw	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a1, a1, 1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	add	a0, a0, a1
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	addi	a0, a0, -48
+	addi	a1, a1, -48
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	neg	a0, a0
+	and	a0, a0, a2
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000c6:                   # @func00000000000000c6

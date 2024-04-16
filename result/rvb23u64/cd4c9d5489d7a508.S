@@ -1,6 +1,5 @@
 func00000000000000f0:                   # @func00000000000000f0
 	sh3add	a0, a0, a1
-	sext.w	a0, a0
 	addi	a0, a0, 64
 	ret
 func00000000000000f1:                   # @func00000000000000f1

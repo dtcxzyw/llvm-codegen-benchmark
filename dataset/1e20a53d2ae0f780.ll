@@ -10,7 +10,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = and i64 %2, 15
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

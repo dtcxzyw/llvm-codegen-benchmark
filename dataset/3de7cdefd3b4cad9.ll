@@ -26,7 +26,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 80
   %5 = tail call i64 @llvm.umax.i64(i64 %1, i64 %4)
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

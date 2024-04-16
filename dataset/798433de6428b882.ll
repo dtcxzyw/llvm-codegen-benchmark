@@ -221,7 +221,7 @@
 define i32 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5
@@ -250,7 +250,7 @@ entry:
 define i32 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp eq i64 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5
@@ -295,11 +295,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 1, %1
-  %3 = and i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i64
-  ret i64 %5
+  %2 = lshr i64 %0, %1
+  %3 = and i64 %2, 1
+  ret i64 %3
 }
 
 ; 8 occurrences:
@@ -314,11 +312,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = and i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i32
-  ret i32 %5
+  %2 = xor i32 %0, -1
+  %3 = lshr i32 %2, %1
+  %4 = and i32 %3, 1
+  ret i32 %4
 }
 
 ; 3 occurrences:

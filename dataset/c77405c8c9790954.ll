@@ -8,9 +8,9 @@
 define i8 @func0000000000000040(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1114111
-  %2 = select i1 %1, i32 65533, i32 %0
-  %3 = lshr i32 %2, 18
-  %4 = trunc i32 %3 to i8
+  %2 = lshr i32 %0, 18
+  %3 = trunc i32 %2 to i8
+  %4 = select i1 %1, i8 0, i8 %3
   ret i8 %4
 }
 
@@ -21,11 +21,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = icmp eq i32 %0, 65536
-  %2 = select i1 %1, i32 0, i32 %0
-  %3 = lshr i32 %2, 8
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
+  %1 = lshr i32 %0, 8
+  %2 = trunc i32 %1 to i8
+  ret i8 %2
 }
 
 attributes #0 = { nounwind }

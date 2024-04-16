@@ -330,7 +330,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -8, i64 0
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -345,7 +345,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 8, i64 11
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -357,7 +357,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 2
   %4 = getelementptr %struct.ata_device.1994654, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -370,7 +370,7 @@ define i1 @func0000000000000018(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 1
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -381,7 +381,7 @@ define i1 @func000000000000000c(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 256
   %4 = getelementptr %struct.BackwardMatch.2233540, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 

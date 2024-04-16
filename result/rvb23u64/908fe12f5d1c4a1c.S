@@ -14,13 +14,12 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func000000000000001a:                   # @func000000000000001a
 	zext.w	a2, a2
-	sub	a1, a1, a2
-	sgtz	a1, a1
+	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	zext.w	a2, a2
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -32,7 +31,6 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000016:                   # @func0000000000000016
 	zext.w	a2, a2
-	sub	a1, a1, a2
-	slti	a1, a1, 0
+	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

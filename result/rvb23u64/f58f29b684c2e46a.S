@@ -18,7 +18,9 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
 	srliw	a2, a2, 27
-	addi	a2, a2, -1
+	lui	a3, 16
+	addiw	a3, a3, -1
+	add	a2, a2, a3
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

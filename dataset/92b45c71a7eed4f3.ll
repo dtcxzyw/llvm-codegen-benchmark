@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 5
-  %4 = sub nsw i32 %0, %1
-  %5 = add i32 %4, %3
-  %6 = shl i32 %5, 20
+  %3 = sub nsw i32 %0, %1
+  %4 = shl i32 %2, 25
+  %5 = shl i32 %3, 20
+  %6 = add i32 %4, %5
   ret i32 %6
 }
 
@@ -21,9 +21,9 @@ entry:
 define i32 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = shl nsw i32 %0, 5
-  %5 = add nsw i32 %4, %3
-  %6 = shl i32 %5, 20
+  %4 = shl i32 %0, 25
+  %5 = shl i32 %3, 20
+  %6 = add i32 %4, %5
   ret i32 %6
 }
 
@@ -36,9 +36,9 @@ entry:
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = shl nsw i32 %0, 5
-  %5 = add nsw i32 %4, %3
-  %6 = shl nsw i32 %5, 20
+  %4 = shl i32 %0, 25
+  %5 = shl i32 %3, 20
+  %6 = add i32 %4, %5
   ret i32 %6
 }
 
@@ -48,9 +48,9 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = sub i128 %1, %2
-  %4 = shl i128 %0, 33
-  %5 = add i128 %4, %3
-  %6 = shl i128 %5, 1
+  %4 = shl i128 %0, 34
+  %5 = shl i128 %3, 1
+  %6 = add i128 %4, %5
   ret i128 %6
 }
 

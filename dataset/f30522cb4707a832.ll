@@ -7,7 +7,7 @@ entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = urem i32 %2, 3600
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

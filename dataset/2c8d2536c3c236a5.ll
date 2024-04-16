@@ -24,11 +24,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Edge.1742909", ptr %0, i64 %4
-  ret ptr %5
+  %2 = zext i16 %1 to i64
+  %3 = getelementptr %"class.btAxisSweep3Internal<unsigned short>::Edge.1742909", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -36,11 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, -16
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  ret ptr %5
+  %2 = zext i16 %1 to i64
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -128
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -49,11 +47,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -6
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = zext i8 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -6
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@
 define i64 @func000000000000000b(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
   %7 = mul nuw nsw i64 %6, %0
@@ -21,7 +21,7 @@ entry:
 define i128 @func000000000000000a(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %1, %3
+  %4 = or disjoint i128 %3, %1
   %5 = lshr i128 %4, 61
   %6 = and i128 %5, 18446744073709551615
   %7 = mul nuw i128 %6, %0

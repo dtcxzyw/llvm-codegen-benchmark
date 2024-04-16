@@ -18,10 +18,10 @@ define i16 @func0000000000000080(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, %0
-  %5 = shl nuw i32 1, %1
-  %6 = sub i32 %4, %5
-  %7 = trunc i32 %6 to i16
-  ret i16 %7
+  %.neg = shl nsw i32 -1, %1
+  %5 = add i32 %.neg, %4
+  %6 = trunc i32 %5 to i16
+  ret i16 %6
 }
 
 ; 3 occurrences:
@@ -33,10 +33,10 @@ define i16 @func00000000000000c0(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, %0
-  %5 = shl nuw nsw i32 1, %1
-  %6 = sub i32 %4, %5
-  %7 = trunc i32 %6 to i16
-  ret i16 %7
+  %.neg = shl nsw i32 -1, %1
+  %5 = add i32 %.neg, %4
+  %6 = trunc i32 %5 to i16
+  ret i16 %6
 }
 
 attributes #0 = { nounwind }

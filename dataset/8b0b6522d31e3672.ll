@@ -8,7 +8,7 @@
 define i64 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 48
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = select i1 %3, i64 72, i64 40
   ret i64 %4
 }
@@ -37,7 +37,7 @@ entry:
 define i64 @func0000000000000011(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 40
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000014(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 64
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -80,9 +80,9 @@ entry:
 define i32 @func000000000000001c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 56
-  %3 = icmp ne ptr %0, %2
-  %4 = select i1 %3, i32 2, i32 1
-  ret i32 %4
+  %.not = icmp eq ptr %2, %0
+  %3 = select i1 %.not, i32 1, i32 2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

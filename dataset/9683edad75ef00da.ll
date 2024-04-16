@@ -6,12 +6,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000046(i64 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 53
-  %4 = add i32 %3, %1
-  %5 = sub nsw i32 0, %4
-  %6 = zext nneg i32 %5 to i64
-  %7 = lshr i64 %0, %6
-  ret i64 %7
+  %3 = add i32 %2, %1
+  %.neg1 = sub i32 -53, %3
+  %4 = zext nneg i32 %.neg1 to i64
+  %5 = lshr i64 %0, %4
+  ret i64 %5
 }
 
 ; 169 occurrences:
@@ -188,7 +187,7 @@ entry:
 define i64 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -150
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sub nsw i32 40, %4
   %6 = zext nneg i32 %5 to i64
   %7 = lshr i64 %0, %6

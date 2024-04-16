@@ -30,11 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 %1, 32
-  %3 = or disjoint i64 %2, 32
-  %4 = add i64 %3, %0
-  %5 = and i64 %4, 504
-  ret i64 %5
+  %2 = add i64 %0, 32
+  %3 = and i64 %2, 504
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -58,7 +56,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = or disjoint i32 %2, 4
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = and i32 %4, 15
   ret i32 %5
 }

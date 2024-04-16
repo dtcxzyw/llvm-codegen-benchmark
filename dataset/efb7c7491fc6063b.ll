@@ -8,7 +8,7 @@ entry:
   %3 = fsub float 1.000000e+00, %2
   %4 = fsub float %3, %1
   %5 = fcmp ole float %4, 1.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = fsub float 1.000000e+00, %2
   %4 = fsub float %3, %1
   %5 = fcmp ogt float %4, 0.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

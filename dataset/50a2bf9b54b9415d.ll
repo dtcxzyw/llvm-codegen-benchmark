@@ -29,7 +29,7 @@ entry:
   %2 = and i64 %1, 15
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 16, i64 %2
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i32 2, i32 %2
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 

@@ -20,7 +20,7 @@ func0000000000000074:                   # @func0000000000000074
 	lui	a2, 16
 	addi	a2, a2, -1000
 	mul	a0, a0, a2
-	lui	a2, 244
+	lui	a2, 4
 	addi	a2, a2, 576
 	add	a1, a1, a2
 	addw	a0, a0, a1
@@ -49,19 +49,18 @@ func0000000000000014:                   # @func0000000000000014
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, -48
+	li	a1, 1
+	slli	a1, a1, 32
+	addi	a1, a1, -48
+	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, 262083
 	slli	a2, a2, 2
 	addi	a2, a2, -576
 	mul	a0, a0, a2
-	add	a0, a0, a1
-	lui	a1, 774
-	addiw	a1, a1, 711
-	slli	a1, a1, 13
-	addi	a1, a1, -1755
-	slli	a1, a1, 13
+	lui	a2, 111178
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func00000000000000c0:                   # @func00000000000000c0
@@ -74,11 +73,11 @@ func00000000000000d4:                   # @func00000000000000d4
 	li	a2, 75
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a0, a0, -150
+	addiw	a0, a0, 106
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a0, a0, -48
+	addiw	a0, a0, 208
 	ret

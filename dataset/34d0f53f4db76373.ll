@@ -8,7 +8,7 @@ define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fmul float %3, 2.000000e+00
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   %6 = fcmp olt float %5, 0.000000e+00
   ret i1 %6
 }
@@ -36,7 +36,7 @@ define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fmul float %3, 0x3FD64AE7E0000000
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   %6 = fcmp oeq float %5, 0.000000e+00
   ret i1 %6
 }

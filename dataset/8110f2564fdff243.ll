@@ -15,7 +15,7 @@
 define { i64, i64 } @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = insertvalue { i64, i64 } poison, i64 %0, 0
   %5 = insertvalue { i64, i64 } %4, i64 %3, 1
   ret { i64, i64 } %5

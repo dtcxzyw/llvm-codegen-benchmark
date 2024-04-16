@@ -7,10 +7,9 @@ define i64 @func0000000000000182(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
-  %4 = trunc i64 %2 to i32
-  %5 = select i1 %3, i32 0, i32 %4
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %4 = and i64 %2, 4294967295
+  %5 = select i1 %3, i64 0, i64 %4
+  ret i64 %5
 }
 
 ; 4 occurrences:
@@ -23,10 +22,9 @@ define i64 @func0000000000000183(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
-  %4 = trunc i64 %2 to i32
-  %5 = select i1 %3, i32 0, i32 %4
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %4 = and i64 %2, 4294967295
+  %5 = select i1 %3, i64 0, i64 %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

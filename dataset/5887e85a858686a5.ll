@@ -15,8 +15,8 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fdiv double %3, %0
-  %5 = fneg double %4
+  %4 = fneg double %3
+  %5 = fdiv double %4, %0
   ret double %5
 }
 

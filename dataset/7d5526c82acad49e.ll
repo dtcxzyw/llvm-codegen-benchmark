@@ -25,7 +25,7 @@
 define i64 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -253,7 +253,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -264,7 +264,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -368,7 +368,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

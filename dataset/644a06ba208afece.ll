@@ -9,9 +9,9 @@
 define i64 @func0000000000000020(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = or disjoint i128 %1, %2
-  %4 = mul i128 %0, %3
+  %4 = mul i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -21,9 +21,9 @@ entry:
 define i64 @func0000000000000028(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = or disjoint i128 %1, %2
-  %4 = mul nsw i128 %0, %3
+  %4 = mul nsw i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = or disjoint i128 %1, %2
   %4 = mul nsw i128 %3, %0
   %5 = lshr exact i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 

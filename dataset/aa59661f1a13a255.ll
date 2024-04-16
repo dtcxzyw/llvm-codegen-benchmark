@@ -85,8 +85,8 @@
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.smin.i64(i64 %0, i64 2147483647)
-  %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, 0
+  %2 = and i64 %1, 2147483648
+  %3 = icmp ne i64 %2, 0
   ret i1 %3
 }
 
@@ -263,8 +263,8 @@ entry:
 define i1 @func0000000000000016(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.smin.i64(i64 %0, i64 2147483647)
-  %2 = trunc nsw i64 %1 to i32
-  %3 = icmp slt i32 %2, 0
+  %2 = and i64 %1, 2147483648
+  %3 = icmp ne i64 %2, 0
   ret i1 %3
 }
 

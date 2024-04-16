@@ -9,7 +9,7 @@ entry:
   %2 = add nsw i64 %1, 1900
   %3 = srem i64 %2, 100
   %4 = icmp eq i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = add i16 %1, -1
   %3 = srem i16 %2, 100
   %4 = icmp eq i16 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

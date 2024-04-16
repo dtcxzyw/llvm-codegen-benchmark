@@ -6,9 +6,7 @@ func000000000000005a:                   # @func000000000000005a
 	slt	a0, a1, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
-	sext.w	a1, a1
-	slli	a1, a1, 3
 	sext.w	a0, a0
-	slli	a0, a0, 3
+	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret

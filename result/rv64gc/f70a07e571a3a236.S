@@ -39,14 +39,14 @@ func000000000000018a:                   # @func000000000000018a
 	bge	a2, a3, .LBB4_2
 	li	a1, 1
 .LBB4_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func0000000000000046:                   # @func0000000000000046
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 63
 	ret
 func0000000000000064:                   # @func0000000000000064
@@ -55,7 +55,7 @@ func0000000000000064:                   # @func0000000000000064
 	lui	a1, 268352
 	addiw	a1, a1, 1170
 .LBB6_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 32
 	seqz	a0, a0
 	ret

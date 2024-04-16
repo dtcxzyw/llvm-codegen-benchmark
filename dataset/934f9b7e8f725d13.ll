@@ -8,11 +8,11 @@
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, 5
-  %4 = and i64 %1, %3
-  %5 = ashr i64 %2, 63
-  %6 = and i64 %5, %0
-  %7 = or i64 %6, %4
-  ret i64 %7
+  %4 = and i64 %3, %1
+  %isneg = icmp slt i64 %2, 0
+  %5 = select i1 %isneg, i64 %0, i64 0
+  %6 = or i64 %5, %4
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

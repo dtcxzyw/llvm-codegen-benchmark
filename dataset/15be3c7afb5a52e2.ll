@@ -11,7 +11,7 @@ entry:
   %4 = icmp ult i8 %3, 26
   %5 = sext i8 %2 to i32
   %6 = select i1 %4, i32 %1, i32 %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

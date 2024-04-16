@@ -9,7 +9,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -59,7 +59,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

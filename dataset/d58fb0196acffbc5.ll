@@ -8,10 +8,8 @@ define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.bswap.i64(i64 %1)
   %3 = xor i64 %2, %0
-  %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, 14029467366897019727
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %4 = mul i64 %3, -4417276706812531889
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

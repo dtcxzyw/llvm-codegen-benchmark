@@ -33,7 +33,7 @@ define i32 @func000000000000003c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 30
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp ne i32 %4, 0
   %6 = sext i1 %5 to i32
   ret i32 %6

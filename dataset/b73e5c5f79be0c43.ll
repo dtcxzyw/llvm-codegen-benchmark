@@ -9,7 +9,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = sext i1 %3 to i64
   %5 = sext i1 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = sext i1 %3 to i32
   %5 = sext i1 %1 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

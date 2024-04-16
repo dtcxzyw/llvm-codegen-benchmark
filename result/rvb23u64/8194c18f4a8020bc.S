@@ -1,8 +1,5 @@
 func0000000000000081:                   # @func0000000000000081
-	bset	a0, zero, a0
-	sext.w	a0, a0
-	addi	a0, a0, -3
-	seqz	a0, a0
+	li	a0, 0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a1, 64

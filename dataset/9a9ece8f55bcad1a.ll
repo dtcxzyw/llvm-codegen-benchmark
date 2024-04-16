@@ -11,7 +11,7 @@ entry:
   %4 = trunc i16 %3 to i1
   %5 = icmp ult i32 %1, 16
   %6 = select i1 %5, i1 %4, i1 false
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

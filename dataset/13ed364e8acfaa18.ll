@@ -60,10 +60,9 @@ define i1 @func000000000000058c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -1
   %4 = icmp ugt ptr %3, %0
-  %5 = add nsw i32 %1, -1
-  %6 = icmp ne i32 %5, 0
-  %7 = and i1 %6, %4
-  ret i1 %7
+  %5 = icmp ne i32 %1, 1
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

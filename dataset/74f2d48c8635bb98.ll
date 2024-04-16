@@ -10,10 +10,8 @@
 define i64 @func000000000000000b(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 0
-  %2 = select i1 %1, i32 8, i32 4
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %2 = select i1 %1, i64 7, i64 3
+  ret i64 %2
 }
 
 ; 10 occurrences:
@@ -31,10 +29,8 @@ entry:
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 2147483648
-  %2 = select i1 %1, i32 10, i32 9
-  %3 = add nuw nsw i32 %2, 9
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %2 = select i1 %1, i64 19, i64 18
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -44,10 +40,9 @@ entry:
 define i64 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
-  %2 = select i1 %1, i32 -12, i32 -17
-  %3 = add nsw i32 %2, -1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %2 = select i1 %1, i32 -13, i32 -18
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

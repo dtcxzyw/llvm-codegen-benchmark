@@ -39,9 +39,9 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
-  %4 = add nsw i32 %3, 2
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 

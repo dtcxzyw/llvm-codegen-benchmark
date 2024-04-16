@@ -264,7 +264,7 @@
 define i32 @func0000000000000007(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 6
-  %4 = or disjoint i8 %1, %3
+  %4 = or disjoint i8 %3, %1
   %5 = zext nneg i8 %4 to i32
   %6 = select i1 %0, i32 64, i32 0
   %7 = or disjoint i32 %6, %5

@@ -6,7 +6,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 255
-	addw	a1, a1, a2
+	negw	a1, a1
+	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -51,7 +52,9 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	add.uw	a1, a2, a1
+	zext.w	a2, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

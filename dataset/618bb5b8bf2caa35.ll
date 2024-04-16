@@ -70,8 +70,8 @@ entry:
 define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 152, %2
-  %4 = select i1 %1, i32 %3, i32 0
-  %5 = icmp ugt i32 %4, %0
+  %4 = icmp ugt i32 %3, %0
+  %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -81,8 +81,8 @@ entry:
 define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 1000000, %2
-  %4 = select i1 %1, i64 %3, i64 0
-  %5 = icmp ugt i64 %4, %0
+  %4 = icmp ugt i64 %3, %0
+  %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }
 

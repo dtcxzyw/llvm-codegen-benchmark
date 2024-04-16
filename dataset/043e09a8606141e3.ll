@@ -10,8 +10,8 @@ entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 128
   %4 = and i32 %0, 7
-  %5 = or disjoint i32 %4, 8
-  %6 = or disjoint i32 %5, %3
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, 8
   ret i32 %6
 }
 

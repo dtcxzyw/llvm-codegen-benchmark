@@ -26,9 +26,8 @@ define i1 @func0000000000000001(i16 %0, i48 %1) #0 {
 entry:
   %2 = trunc i48 %1 to i16
   %3 = sub i16 %2, %0
-  %4 = add i16 %3, 1
-  %5 = icmp eq i16 %4, 0
-  ret i1 %5
+  %4 = icmp eq i16 %3, -1
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -70,9 +69,8 @@ define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
-  %4 = add i32 %3, -24
-  %5 = icmp ne i32 %4, -2
-  ret i1 %5
+  %4 = icmp ne i32 %3, 22
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

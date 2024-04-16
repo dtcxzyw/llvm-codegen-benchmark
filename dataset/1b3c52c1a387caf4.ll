@@ -262,7 +262,7 @@
 define i1 @func00000000000000f8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = icmp ugt i64 %4, 2147483647
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -275,7 +275,7 @@ entry:
 define i1 @func000000000000005a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = icmp sgt i32 %4, 12
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6

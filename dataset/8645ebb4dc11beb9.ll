@@ -47,7 +47,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 30, %2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
   %6 = sub i64 %0, %5
   ret i64 %6

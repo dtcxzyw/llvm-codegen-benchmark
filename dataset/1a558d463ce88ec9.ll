@@ -10,11 +10,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = ashr exact i64 %1, 3
-  %5 = add i64 %4, %3
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -24,11 +23,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = ashr exact i64 %1, 3
-  %5 = add i64 %4, %3
-  %6 = getelementptr ptr, ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -42,11 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 3
-  %4 = add i64 %1, -1
-  %5 = add i64 %4, %3
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr ptr, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %5 = getelementptr i8, ptr %4, i64 %2
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -60,11 +57,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 3
-  %4 = add i64 %1, -1
-  %5 = add i64 %4, %3
-  %6 = getelementptr ptr, ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr ptr, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %5 = getelementptr i8, ptr %4, i64 %2
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -77,9 +73,9 @@ entry:
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %1, 1
-  %5 = add nsw i64 %4, %3
-  %6 = getelementptr inbounds %"class.std::__cxx11::basic_string.1735447", ptr %0, i64 %5
+  %4 = getelementptr %"class.std::__cxx11::basic_string.1735447", ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 32
+  %6 = getelementptr %"class.std::__cxx11::basic_string.1735447", ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -89,9 +85,9 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = add nuw nsw i64 %1, 6
-  %5 = add nsw i64 %4, %3
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  %4 = getelementptr double, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 48
+  %6 = getelementptr double, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -101,9 +97,9 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 27
-  %4 = add nuw nsw i64 %1, 40
-  %5 = add nsw i64 %4, %3
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 40
+  %6 = getelementptr i8, ptr %5, i64 %3
   ret ptr %6
 }
 

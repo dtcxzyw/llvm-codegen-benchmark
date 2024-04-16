@@ -43,7 +43,7 @@ entry:
   %3 = icmp ult i8 %2, 91
   %4 = select i1 %3, i32 218103808, i32 234881024
   %5 = select i1 %1, i32 201326592, i32 %4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = icmp eq i32 %2, 8
   %4 = select i1 %3, i32 64, i32 2
   %5 = select i1 %1, i32 8, i32 %4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -89,11 +89,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 127
-  %4 = select i1 %3, i32 128, i32 64
-  %5 = select i1 %1, i32 0, i32 %4
-  %6 = or disjoint i32 %0, %5
-  ret i32 %6
+  %.inv = icmp ult i32 %2, 128
+  %3 = select i1 %.inv, i32 64, i32 128
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -106,7 +106,7 @@ entry:
   %3 = icmp sgt i32 %2, 4
   %4 = select i1 %3, i64 64, i64 0
   %5 = select i1 %1, i64 128, i64 %4
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

@@ -98,19 +98,18 @@ func0000000000000041:                   # @func0000000000000041
 .LBB6_4:                                # %entry
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	sext.w	a1, a1
-	li	a3, 99
 	sext.w	a2, a0
-	bne	a1, a3, .LBB7_2
+	sext.w	a3, a1
+	li	a4, 99
 	li	a1, 1
-	bnez	a2, .LBB7_3
-	j	.LBB7_4
-.LBB7_2:
+	bne	a3, a4, .LBB7_3
+	bnez	a2, .LBB7_4
+.LBB7_2:                                # %entry
+	mv	a0, a1
+	ret
+.LBB7_3:                                # %entry
 	lui	a1, 524288
 	addiw	a1, a1, -1
-	beqz	a2, .LBB7_4
-.LBB7_3:                                # %entry
-	mv	a1, a0
+	beqz	a2, .LBB7_2
 .LBB7_4:                                # %entry
-	mv	a0, a1
 	ret

@@ -47,7 +47,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -132,7 +132,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -145,7 +145,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -158,7 +158,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 1
   %6 = trunc i64 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -171,7 +171,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 1
   %6 = trunc i64 %5 to i32
-  %7 = add nuw i32 %0, %6
+  %7 = add nuw i32 %6, %0
   ret i32 %7
 }
 
@@ -186,7 +186,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

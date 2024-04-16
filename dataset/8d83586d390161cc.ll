@@ -91,8 +91,8 @@ define i1 @func00000000000000c8(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = icmp ne i16 %2, 0
-  %4 = trunc i32 %0 to i8
-  %5 = icmp ugt i8 %4, 1
+  %4 = and i32 %0, 254
+  %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

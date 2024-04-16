@@ -7,7 +7,7 @@ entry:
   %2 = mul nsw i32 %1, 6
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	andi	a3, a2, 1
-	li	a2, 9
+	li	a2, 1
 	bnez	a3, .LBB0_2
 	li	a2, 4
 .LBB0_2:                                # %entry

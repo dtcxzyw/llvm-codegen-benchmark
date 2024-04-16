@@ -6,9 +6,9 @@
 define i32 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = icmp eq i16 %0, 0
-  %5 = select i1 %4, i32 %2, i32 %3
+  %3 = icmp ne i16 %0, 0
+  %4 = sext i1 %3 to i32
+  %5 = add nsw i32 %2, %4
   ret i32 %5
 }
 

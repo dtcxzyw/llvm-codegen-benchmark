@@ -96,9 +96,8 @@ entry:
   %2 = sdiv exact i64 %1, 12
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr inbounds %struct.Vec_Int_t_.1771135, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.Vec_Int_t_.1771135, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -109,9 +108,8 @@ entry:
   %2 = sdiv exact i64 %1, 12
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr inbounds %struct.Vec_Int_t_.1771278, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.Vec_Int_t_.1771278, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:

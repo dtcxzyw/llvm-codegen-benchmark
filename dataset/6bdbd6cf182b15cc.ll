@@ -176,7 +176,7 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -202,7 +202,7 @@ entry:
   %2 = sub nuw nsw i32 48, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 8, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -415,9 +415,9 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 64, %1
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -431,7 +431,7 @@ entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -443,7 +443,7 @@ entry:
   %2 = sub i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -456,7 +456,7 @@ entry:
   %2 = sub nuw nsw i32 -1075, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 -2, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

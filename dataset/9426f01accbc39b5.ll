@@ -25,9 +25,8 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8589934584
   %3 = add i64 %0, -8
-  %4 = sub i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -51,10 +50,9 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = add i32 %0, -1
-  %4 = sub i32 %3, %2
-  %5 = icmp ugt i32 %4, 1
-  ret i1 %5
+  %3 = sub i32 %2, %0
+  %4 = icmp ult i32 %3, -2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -64,9 +62,8 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = add i32 %0, -4
-  %4 = sub i32 %3, %2
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %4 = icmp ne i32 %3, %2
+  ret i1 %4
 }
 
 ; 2 occurrences:

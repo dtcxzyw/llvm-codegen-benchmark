@@ -35,12 +35,12 @@ func0000000000000183:                   # @func0000000000000183
 	sext.w	a1, a1
 	sext.w	a3, a2
 	lui	a2, 2
-	bnez	a3, .LBB2_2
-	addiw	a3, a2, 392
+	beqz	a3, .LBB2_2
+	addiw	a3, a2, 400
 	bnez	a1, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	addiw	a3, a2, 400
+	addiw	a3, a2, 392
 	beqz	a1, .LBB2_4
 .LBB2_3:                                # %entry
 	addiw	a3, a2, 396

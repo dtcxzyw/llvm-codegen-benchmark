@@ -23,7 +23,7 @@ define i64 @func000000000000008a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 127
   %4 = select i1 %3, i32 -20253, i32 -20351
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -36,7 +36,7 @@ define i64 @func000000000000009f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 8
   %4 = select i1 %3, i32 62, i32 60
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = add nuw nsw i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
@@ -50,7 +50,7 @@ entry:
   %3 = icmp eq i32 %2, 8
   %4 = select i1 %3, i32 4, i32 3
   %5 = add nuw i32 %4, %1
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -63,7 +63,7 @@ define i128 @func0000000000000020(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 1099511627776, i64 0
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = add i64 %5, %0
   %7 = zext i64 %6 to i128
   ret i128 %7
@@ -76,8 +76,8 @@ define i64 @func0000000000000100(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 5
   %4 = select i1 %3, i32 1048576, i32 12288
-  %5 = add i32 %1, %4
-  %6 = add i32 %0, %5
+  %5 = add i32 %4, %1
+  %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -102,7 +102,7 @@ define i64 @func000000000000008f(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -32
   %4 = select i1 %3, i8 78, i8 105
-  %5 = add nsw i8 %1, %4
+  %5 = add nsw i8 %4, %1
   %6 = add nuw nsw i8 %5, %0
   %7 = zext nneg i8 %6 to i64
   ret i64 %7

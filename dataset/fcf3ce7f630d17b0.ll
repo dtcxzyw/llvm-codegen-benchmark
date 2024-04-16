@@ -8,10 +8,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 112
-  %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %.neg = sdiv exact i64 %1, -112
+  %.neg1 = trunc i64 %.neg to i32
+  %2 = add i32 %.neg1, %0
+  ret i32 %2
 }
 
 ; 8 occurrences:
@@ -26,10 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %1, 26
-  %3 = trunc i64 %2 to i32
-  %4 = sub i32 %0, %3
-  ret i32 %4
+  %.neg = sdiv i64 %1, -26
+  %.neg1 = trunc i64 %.neg to i32
+  %2 = add i32 %.neg1, %0
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -37,10 +37,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %1, 3600000000
-  %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %.neg = sdiv i64 %1, -3600000000
+  %.neg1 = trunc i64 %.neg to i32
+  %2 = add i32 %.neg1, %0
+  ret i32 %2
 }
 
 ; 4 occurrences:
@@ -51,10 +51,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 12
-  %3 = trunc i64 %2 to i32
-  %4 = sub i32 %0, %3
-  ret i32 %4
+  %.neg = sdiv exact i64 %1, -12
+  %.neg1 = trunc i64 %.neg to i32
+  %2 = add i32 %.neg1, %0
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

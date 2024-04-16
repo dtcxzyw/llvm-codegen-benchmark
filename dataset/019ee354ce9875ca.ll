@@ -2017,10 +2017,10 @@
 define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 384307168202282325, i64 %0
-  %7 = icmp eq i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp uge i64 %4, %1
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -2042,10 +2042,10 @@ entry:
 define i1 @func000000000000054c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 192
-  %4 = add nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 48038396025285290, i64 %0
-  %7 = icmp ne i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = icmp ne i64 %0, 0
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -2085,10 +2085,10 @@ entry:
 define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 80
-  %4 = add i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 115292150460684697, i64 %0
-  %7 = icmp eq i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp uge i64 %4, %1
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -2099,10 +2099,10 @@ entry:
 define i1 @func000000000000044c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
-  %4 = add i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 768614336404564650, i64 %0
-  %7 = icmp ne i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = icmp ne i64 %0, 0
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 

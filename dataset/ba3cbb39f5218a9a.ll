@@ -369,7 +369,7 @@ entry:
 define i32 @func000000000000000a(i8 %0) #0 {
 entry:
   %1 = sub nsw i8 31, %0
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   ret i32 %3
 }
@@ -583,7 +583,7 @@ entry:
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = sub i32 -54, %0
-  %2 = zext i32 %1 to i64
+  %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   ret i64 %3
 }
@@ -637,7 +637,7 @@ entry:
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:
   %1 = sub i8 1, %0
-  %2 = zext i8 %1 to i64
+  %2 = zext nneg i8 %1 to i64
   %3 = shl nsw i64 -1, %2
   ret i64 %3
 }

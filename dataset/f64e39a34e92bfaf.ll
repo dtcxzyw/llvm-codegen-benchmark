@@ -29,12 +29,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(i16 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i16
-  %3 = shl nuw i16 %0, 8
-  %4 = or disjoint i16 %3, %2
-  %5 = and i16 %4, -2
-  %6 = icmp eq i16 %5, 12
-  ret i1 %6
+  %2 = shl nuw i16 %0, 8
+  %3 = and i8 %1, -2
+  %.masked = zext i8 %3 to i16
+  %4 = or disjoint i16 %2, %.masked
+  %5 = icmp eq i16 %4, 12
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -58,10 +58,10 @@ define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = and i32 %4, 65535
-  %6 = icmp eq i32 %5, 57677
-  ret i1 %6
+  %.masked = and i32 %3, 65280
+  %4 = or disjoint i32 %.masked, %2
+  %5 = icmp eq i32 %4, 57677
+  ret i1 %5
 }
 
 ; 1 occurrences:

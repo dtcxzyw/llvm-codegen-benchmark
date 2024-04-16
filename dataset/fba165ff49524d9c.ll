@@ -22,7 +22,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

@@ -7,7 +7,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

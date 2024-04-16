@@ -8,10 +8,10 @@ define i64 @func000000000000008c(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, %2
   %4 = lshr i64 %3, %1
-  %5 = icmp ne i64 %4, 0
-  %6 = zext i16 %0 to i64
-  %7 = select i1 %5, i64 1, i64 %6
-  ret i64 %7
+  %.not = icmp eq i64 %4, 0
+  %5 = zext i16 %0 to i64
+  %6 = select i1 %.not, i64 %5, i64 1
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

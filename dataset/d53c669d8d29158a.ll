@@ -38,8 +38,8 @@ define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i64 135, i64 0
-  %5 = xor i64 %1, %4
-  %6 = xor i64 %0, %5
+  %5 = xor i64 %4, %1
+  %6 = xor i64 %5, %0
   ret i64 %6
 }
 
@@ -56,8 +56,8 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
   %4 = select i1 %3, i32 0, i32 27
-  %5 = xor i32 %1, %4
-  %6 = xor i32 %0, %5
+  %5 = xor i32 %4, %1
+  %6 = xor i32 %5, %0
   ret i32 %6
 }
 

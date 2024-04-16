@@ -33,9 +33,9 @@ define i128 @func0000000000000007(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 %1, 96
   %3 = shl nuw nsw i128 %0, 32
-  %4 = or disjoint i128 %3, %2
-  %5 = and i128 %4, -18446744073709551616
-  ret i128 %5
+  %.masked = and i128 %3, 170141183460469231713240559642174554112
+  %4 = or i128 %.masked, %2
+  ret i128 %4
 }
 
 ; 1 occurrences:
@@ -45,9 +45,9 @@ define i128 @func0000000000000019(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 32
   %3 = shl i128 %0, 96
-  %4 = or disjoint i128 %3, %2
-  %5 = and i128 %4, -18446744073709551616
-  ret i128 %5
+  %.masked = and i128 %2, 170141183460469231713240559642174554112
+  %4 = or i128 %3, %.masked
+  ret i128 %4
 }
 
 ; 3 occurrences:

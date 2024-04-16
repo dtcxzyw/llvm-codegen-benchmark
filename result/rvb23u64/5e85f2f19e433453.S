@@ -1,7 +1,7 @@
 func0000000000000065:                   # @func0000000000000065
 	sext.w	a2, a2
-	slti	a2, a2, 1
-	czero.eqz	a1, a1, a2
+	sgtz	a2, a2
+	czero.nez	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1461
 	mulw	a0, a0, a1

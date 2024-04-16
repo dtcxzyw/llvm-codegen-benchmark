@@ -7,9 +7,9 @@ define i8 @func0000000000000019(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 56, i8 48
   %4 = or disjoint i8 %3, 4
-  %5 = icmp uge i32 %0, %1
-  %6 = select i1 %5, i8 %4, i8 %3
-  ret i8 %6
+  %.not = icmp ult i32 %0, %1
+  %5 = select i1 %.not, i8 %3, i8 %4
+  ret i8 %5
 }
 
 ; 2 occurrences:

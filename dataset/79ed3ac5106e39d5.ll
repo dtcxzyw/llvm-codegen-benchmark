@@ -7,7 +7,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fpext float %4 to double
-  %6 = fcmp ugt double %0, %5
+  %6 = fcmp ult double %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fpext float %4 to double
-  %6 = fcmp ult double %0, %5
+  %6 = fcmp ugt double %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fpext float %4 to double
-  %6 = fcmp ole double %0, %5
+  %6 = fcmp oge double %5, %0
   ret i1 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fpext float %4 to double
-  %6 = fcmp oge double %0, %5
+  %6 = fcmp ole double %5, %0
   ret i1 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fpext float %4 to double
-  %6 = fcmp ule double %0, %5
+  %6 = fcmp uge double %5, %0
   ret i1 %6
 }
 

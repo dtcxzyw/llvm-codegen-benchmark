@@ -4,15 +4,15 @@ func0000000000000301:                   # @func0000000000000301
 	slli	a2, a2, 33
 	addi	a2, a2, -8
 	and	a1, a1, a2
-	sub	a0, a0, a1
 	addi	a0, a0, -8
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a1, a1, 3
+	addiw	a1, a1, 3
 	andi	a1, a1, -4
-	subw	a0, a0, a1
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000024a:                   # @func000000000000024a

@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, i64 40, i64 64
   %5 = add nuw nsw i64 %1, 12
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = select i1 %3, i64 12, i64 4
   %5 = add nuw nsw i64 %1, 39
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = select i1 %3, i64 11, i64 0
   %5 = add i64 %1, 102
   %6 = add i64 %5, %4
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = select i1 %3, i64 24, i64 20
   %5 = add nuw nsw i64 %1, 8
   %6 = add nuw nsw i64 %5, %4
-  %7 = icmp uge i64 %0, %6
+  %7 = icmp ule i64 %6, %0
   ret i1 %7
 }
 

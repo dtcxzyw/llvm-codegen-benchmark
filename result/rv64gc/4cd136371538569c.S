@@ -29,10 +29,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
-	bgez	a1, .LBB4_2
-	mv	a1, a0
-.LBB4_2:                                # %entry
+	bltz	a1, .LBB4_2
 	mv	a0, a1
+.LBB4_2:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 48

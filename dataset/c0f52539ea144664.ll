@@ -15,9 +15,8 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %0, i64 0, i64 %4, i32 5
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -29,9 +28,8 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.erf_if_info.1912320], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr [8 x %struct.erf_if_info.1912320], ptr %0, i64 0, i64 %4, i32 3
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

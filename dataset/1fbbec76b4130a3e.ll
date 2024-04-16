@@ -22,7 +22,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = ashr exact i32 %1, 16
   %5 = icmp sgt i32 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = ashr i32 %1, 16
   %5 = icmp sgt i32 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = ashr exact i32 %1, 24
   %5 = icmp ne i32 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

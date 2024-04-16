@@ -6,9 +6,8 @@ define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add i64 %2, %0
-  %4 = ashr i64 %3, 2
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp sgt i64 %3, 3
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -19,10 +18,9 @@ entry:
 define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
-  %3 = add nsw i64 %0, %2
-  %4 = ashr i64 %3, 2
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %3 = add nsw i64 %2, %0
+  %4 = icmp sgt i64 %3, 3
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

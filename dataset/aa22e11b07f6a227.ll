@@ -399,7 +399,7 @@
 define i1 @func0000000000000222(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 32
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, null
   %5 = or i1 %3, %4
   ret i1 %5
@@ -424,7 +424,7 @@ entry:
 define i1 @func0000000000000022(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -120
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, null
   %5 = or i1 %3, %4
   ret i1 %5

@@ -1,7 +1,6 @@
 func000000000000001d:                   # @func000000000000001d
-	li	a2, 2000
+	li	a2, 1000
 	mul	a1, a1, a2
-	srli	a1, a1, 1
 	add	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b
@@ -120,10 +119,9 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	lui	a2, 2
-	addiw	a2, a2, 1808
+	lui	a2, 1
+	addiw	a2, a2, 904
 	mul	a1, a1, a2
-	srli	a1, a1, 1
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

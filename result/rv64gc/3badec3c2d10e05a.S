@@ -5,10 +5,11 @@ func0000000000000000:                   # @func0000000000000000
 	slliw	a0, a0, 1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	srli	a2, a2, 17
 	add	a0, a0, a1
-	add	a0, a0, a2
-	slliw	a0, a0, 17
+	slli	a0, a0, 17
+	addw	a0, a0, a2
+	lui	a1, 1048544
+	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a6, a5, 48

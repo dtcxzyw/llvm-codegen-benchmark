@@ -9,7 +9,7 @@ entry:
   %2 = icmp eq i32 %1, 127
   %3 = icmp ult i32 %1, 32
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -52,7 +52,7 @@ entry:
   %2 = icmp eq i8 %1, 35
   %3 = icmp eq i8 %1, 92
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -69,7 +69,7 @@ entry:
   %2 = icmp eq i32 %1, 65536
   %3 = icmp slt i32 %1, 772
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -94,7 +94,7 @@ entry:
   %2 = icmp sgt i32 %1, 128
   %3 = icmp eq i32 %1, 0
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -120,7 +120,7 @@ entry:
   %2 = icmp eq i32 %1, 5
   %3 = icmp ugt i32 %1, 121
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

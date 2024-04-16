@@ -35,7 +35,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp slt i64 %1, 0
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i64 8, i64 0
   ret i64 %7
 }
@@ -50,7 +50,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i64 %1, 9218868437227405312
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i64 256, i64 0
   ret i64 %7
 }
@@ -63,7 +63,7 @@ entry:
   %3 = icmp ugt i32 %2, 1
   %4 = icmp ugt i32 %1, 1
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i32 3, i32 1
   ret i32 %7
 }

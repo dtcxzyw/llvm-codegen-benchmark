@@ -8,7 +8,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = call float @llvm.fabs.f32(float %3)
   %5 = fcmp olt float %4, 0x4066833340000000
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = fsub double %1, %2
   %4 = tail call double @llvm.fabs.f64(double %3)
   %5 = fcmp one double %4, 0x7FF0000000000000
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

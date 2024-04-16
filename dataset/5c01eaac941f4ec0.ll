@@ -42,7 +42,7 @@ entry:
   %4 = sdiv i32 %3, 64
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i64, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -55,7 +55,7 @@ entry:
   %4 = sdiv i32 %3, 64
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i64, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -68,7 +68,7 @@ entry:
   %4 = sdiv i32 %3, 8
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

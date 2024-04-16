@@ -11,7 +11,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = udiv i32 %2, 100
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

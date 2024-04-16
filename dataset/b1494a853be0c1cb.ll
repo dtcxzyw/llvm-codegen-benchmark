@@ -8,7 +8,7 @@ entry:
   %4 = icmp ne i32 %3, 9
   %5 = icmp ult i32 %1, -2
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = icmp ne i8 %3, 18
   %5 = icmp ne i8 %1, 18
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = icmp slt i32 %3, 4
   %5 = icmp ne i64 %1, -9999999
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -58,7 +58,7 @@ entry:
   %4 = icmp ult i32 %3, 13
   %5 = icmp ult i32 %1, 13
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -86,7 +86,7 @@ entry:
   %4 = icmp sgt i32 %3, 2
   %5 = icmp ugt i96 %1, 64
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -99,7 +99,7 @@ entry:
   %4 = icmp ne i16 %3, 0
   %5 = icmp eq i16 %1, 0
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -113,7 +113,7 @@ entry:
   %4 = icmp eq i8 %3, 1
   %5 = icmp eq i8 %1, 3
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -127,7 +127,7 @@ entry:
   %4 = icmp slt i32 %3, 2
   %5 = icmp eq i64 %1, 4294967296
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

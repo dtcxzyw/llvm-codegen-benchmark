@@ -1,10 +1,10 @@
 func000000000000001c:                   # @func000000000000001c
-	srliw	a1, a1, 18
-	slli	a1, a1, 3
+	srli	a1, a1, 15
+	andi	a1, a1, 248
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	slliw	a1, a1, 5
-	andi	a1, a1, -256
+	andi	a1, a1, 2040
+	slli	a1, a1, 5
 	or	a0, a0, a1
 	ret

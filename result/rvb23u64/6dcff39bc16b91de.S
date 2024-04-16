@@ -3,6 +3,7 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a2, a2, -1075
 	czero.nez	a2, a2, a1
 	li	a3, -1074
+	zext.w	a3, a3
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
 	sll	a0, a0, a1

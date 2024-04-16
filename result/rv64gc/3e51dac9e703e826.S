@@ -9,10 +9,10 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a2, a1, 63
 	srai	a1, a1, 14
 	add	a1, a1, a2
-	lui	a2, 1048561
-	addiw	a2, a2, 1440
+	lui	a2, 15
+	addiw	a2, a2, -1440
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
@@ -58,10 +58,10 @@ func0000000000000095:                   # @func0000000000000095
 	srli	a2, a1, 63
 	srai	a1, a1, 18
 	add	a1, a1, a2
-	lui	a2, 1048332
-	addiw	a2, a2, -576
+	lui	a2, 244
+	addiw	a2, a2, 576
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 .LCPI4_0:
 	.quad	1237940039285380275             # 0x112e0be826d694b3
@@ -74,8 +74,8 @@ func0000000000000084:                   # @func0000000000000084
 	srli	a2, a1, 63
 	srai	a1, a1, 26
 	add	a1, a1, a2
-	lui	a2, 804435
-	addiw	a2, a2, 1536
+	lui	a2, 244141
+	addiw	a2, a2, -1536
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret

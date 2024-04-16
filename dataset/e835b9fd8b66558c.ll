@@ -16,10 +16,8 @@ define ptr @func000000000000000f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %1, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 32
-  %7 = getelementptr inbounds [32 x i8], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %1, i64 0, i64 %4, i32 9, i64 %0
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -30,10 +28,8 @@ define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [16 x %struct.CPUTLBDesc.1662950], ptr %1, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 48
-  %7 = getelementptr [8 x %union.CPUTLBEntry.1662951], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr [16 x %struct.CPUTLBDesc.1662950], ptr %1, i64 0, i64 %4, i32 6, i64 %0
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000060(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
+  %3 = shl i32 %2, 24
   %4 = icmp ugt i32 %3, -536870913
   %5 = or i1 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -22,8 +22,8 @@ define i1 @func0000000000000020(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.bswap.i16(i16 %2)
   %4 = icmp ugt i16 %3, 3280
-  %5 = or i1 %1, %4
-  %6 = or i1 %0, %5
+  %5 = or i1 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

@@ -19,7 +19,7 @@ define i48 @func0000000000000001(i48 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = tail call i16 @llvm.smax.i16(i16 %1, i16 %2)
   %4 = zext i16 %3 to i48
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 
@@ -34,7 +34,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

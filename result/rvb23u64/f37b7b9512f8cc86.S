@@ -1,7 +1,7 @@
 func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a0, a0
 	addi	a2, a2, -2
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	lui	a2, 174763
 	addiw	a2, a2, -1365
 	mul	a1, a1, a2

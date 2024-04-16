@@ -15,7 +15,7 @@ define i1 @func000000000000004a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 3
+  %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
   %7 = icmp sgt i32 %6, %0
   ret i1 %7

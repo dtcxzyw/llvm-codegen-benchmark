@@ -17,9 +17,9 @@ define i16 @func0000000000000006(i16 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i16 0, i16 256
-  %4 = and i16 %0, -257
+  %4 = and i16 %0, -321
   %5 = or disjoint i16 %3, %4
-  %6 = or i16 %5, 64
+  %6 = or disjoint i16 %5, 64
   ret i16 %6
 }
 
@@ -65,9 +65,9 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 6657, i32 6721
-  %4 = and i32 %0, -6914
+  %4 = and i32 %0, -7042
   %5 = or i32 %3, %4
-  %6 = or i32 %5, 128
+  %6 = or disjoint i32 %5, 128
   ret i32 %6
 }
 

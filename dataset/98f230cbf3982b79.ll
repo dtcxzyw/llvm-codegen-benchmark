@@ -7,8 +7,8 @@
 define ptr @func0000000000000044(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 7
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
@@ -48,11 +48,10 @@ entry:
 define ptr @func0000000000000047(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 1
-  %4 = select i1 %3, i32 %1, i32 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.WherePath.2129445, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 22
-  ret ptr %7
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 1
+  %6 = getelementptr inbounds %struct.WherePath.2129445, ptr %0, i64 %5, i32 5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -12,7 +12,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = and i32 %0, 15
   %4 = shl nuw nsw i32 %3, %2
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 

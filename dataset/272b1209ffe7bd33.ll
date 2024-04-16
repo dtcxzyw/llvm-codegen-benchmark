@@ -32,7 +32,7 @@ entry:
   %1 = lshr i64 %0, 32
   %2 = and i64 %1, 15
   %3 = shl nsw i64 -1, %2
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
 

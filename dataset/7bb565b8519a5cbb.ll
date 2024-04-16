@@ -120,7 +120,7 @@ define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 16)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -165,7 +165,7 @@ define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 2147483647)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -184,7 +184,7 @@ define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 2147483647)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -195,7 +195,7 @@ define i1 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.umin.i16(i16 %1, i16 -2)
   %3 = zext i16 %2 to i32
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -209,7 +209,7 @@ define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = tail call i8 @llvm.umin.i8(i8 %1, i8 -128)
   %3 = zext i8 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -224,7 +224,7 @@ define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 8)
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 

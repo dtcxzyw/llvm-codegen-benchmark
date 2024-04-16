@@ -1,6 +1,8 @@
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a2, a2
+	negw	a1, a1
+	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 4
 	not	a0, a0
@@ -8,7 +10,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a2, a2
+	negw	a1, a1
+	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -40,7 +44,9 @@ func000000000000004c:                   # @func000000000000004c
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addw	a1, a1, a2
+	negw	a1, a1
+	xor	a1, a1, a2
+	sext.w	a1, a1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

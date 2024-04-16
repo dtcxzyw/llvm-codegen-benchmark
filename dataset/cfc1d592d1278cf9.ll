@@ -22,11 +22,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %0, -8193
-  %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, -245761
-  ret i64 %5
+  %2 = and i64 %0, -253953
+  %3 = and i32 %1, 2147237887
+  %.masked = zext nneg i32 %3 to i64
+  %4 = or i64 %2, %.masked
+  ret i64 %4
 }
 
 ; 4 occurrences:
@@ -38,10 +38,9 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = and i64 %0, -4294836225
-  %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, -140733193388033
-  ret i64 %5
+  %3 = and i64 %0, -140737488224257
+  %4 = or i64 %3, %2
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -49,11 +48,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %0, 4294901760
-  %4 = or i64 %3, %2
-  %5 = and i64 %4, 4294574079
-  ret i64 %5
+  %2 = and i64 %0, 4294508544
+  %3 = and i32 %1, -393217
+  %.masked = zext i32 %3 to i64
+  %4 = or i64 %2, %.masked
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -62,10 +61,9 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %0, -256
-  %4 = or i64 %3, %2
-  %5 = and i64 %4, -256
-  ret i64 %5
+  %3 = or i64 %2, %0
+  %4 = and i64 %3, -256
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

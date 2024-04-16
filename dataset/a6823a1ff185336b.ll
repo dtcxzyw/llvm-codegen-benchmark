@@ -9,7 +9,7 @@
 define i48 @func0000000000000000(i16 %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i16
+  %3 = trunc nuw i48 %2 to i16
   %4 = shl i16 %0, 4
   %5 = sub i16 %3, %4
   %6 = zext i16 %5 to i48

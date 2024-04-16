@@ -19,13 +19,15 @@ func000000000000005c:                   # @func000000000000005c
 	lui	a3, 244
 	addiw	a3, a3, 576
 	mul	a2, a2, a3
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	sh1add	a2, a2, a2
-	sh3add	a1, a2, a1
+	slli	a2, a2, 3
+	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
 	and	a0, a0, a1

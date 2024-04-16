@@ -10,7 +10,8 @@ func0000000000000101:                   # @func0000000000000101
 	andi	a1, a1, 15
 	li	a2, 10
 	mul	a0, a0, a2
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
@@ -24,8 +25,8 @@ func00000000000001f8:                   # @func00000000000001f8
 func00000000000001fc:                   # @func00000000000001fc
 	andi	a1, a1, 3
 	slli	a2, a0, 1
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	addw	a0, a0, a2
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000001f1:                   # @func00000000000001f1

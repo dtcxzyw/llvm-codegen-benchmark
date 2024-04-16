@@ -15,10 +15,10 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
-	sext.w	a2, a2
-	li	a3, 64
+	srliw	a2, a2, 6
+	slli	a2, a2, 6
 	sext.w	a0, a0
-	bltu	a2, a3, .LBB1_3
+	beqz	a2, .LBB1_3
 	sext.w	a1, a1
 	bgeu	a0, a1, .LBB1_4
 .LBB1_2:                                # %entry
@@ -31,10 +31,10 @@ func0000000000000048:                   # @func0000000000000048
 	mv	a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068
-	sext.w	a2, a2
-	li	a3, 64
+	srliw	a2, a2, 6
+	slli	a2, a2, 6
 	sext.w	a0, a0
-	bltu	a2, a3, .LBB2_3
+	beqz	a2, .LBB2_3
 	sext.w	a1, a1
 	bgeu	a0, a1, .LBB2_4
 .LBB2_2:                                # %entry

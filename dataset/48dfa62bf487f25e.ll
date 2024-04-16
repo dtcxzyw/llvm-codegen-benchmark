@@ -939,9 +939,9 @@ entry:
 define i64 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 771, i64 0
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i64 770, i64 %2
-  ret i64 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i64 %2, i64 770
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

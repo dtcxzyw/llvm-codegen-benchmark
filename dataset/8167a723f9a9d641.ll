@@ -119,9 +119,9 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
-  %3 = icmp ne i64 %2, 27
-  %4 = select i1 %3, i64 %0, i64 %1
-  ret i64 %4
+  %.not = icmp eq i64 %2, 27
+  %3 = select i1 %.not, i64 %1, i64 %0
+  ret i64 %3
 }
 
 ; 1 occurrences:

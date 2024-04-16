@@ -7,10 +7,9 @@ func0000000000000206:                   # @func0000000000000206
 	slti	a0, a0, 107
 	ret
 func0000000000000001:                   # @func0000000000000001
-	not	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -4
-	seqz	a0, a0
+	subw	a1, a1, a0
+	addi	a1, a1, 5
+	seqz	a0, a1
 	ret
 func0000000000000144:                   # @func0000000000000144
 	sub	a0, a0, a1

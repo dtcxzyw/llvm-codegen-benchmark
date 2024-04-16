@@ -70,9 +70,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr inbounds %"class.std::basic_string_view.1947899", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.std::basic_string_view.1947899", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 25 occurrences:
@@ -106,9 +105,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 12
-  %5 = getelementptr %struct.page.1996635, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.page.1996635, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

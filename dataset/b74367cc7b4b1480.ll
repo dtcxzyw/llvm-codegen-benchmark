@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 9
-  %4 = add i64 %1, %3
-  %5 = sub i64 0, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = mul i64 %2, -512
+  %.neg1 = sub i64 %.neg, %1
+  %3 = getelementptr inbounds i8, ptr %0, i64 %.neg1
+  ret ptr %3
 }
 
 ; 8 occurrences:
@@ -26,11 +25,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 6
-  %4 = add i64 %1, %3
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds i64, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = mul i64 %2, -64
+  %.neg1 = sub i64 %.neg, %1
+  %3 = getelementptr inbounds i64, ptr %0, i64 %.neg1
+  ret ptr %3
 }
 
 ; 6 occurrences:
@@ -43,11 +41,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 2
-  %4 = add i64 %1, %3
-  %5 = sub i64 0, %4
-  %6 = getelementptr inbounds %"struct.eastl::pair.0.2276569", ptr %0, i64 %5
-  ret ptr %6
+  %.neg = mul i64 %2, -4
+  %.neg1 = sub i64 %.neg, %1
+  %3 = getelementptr inbounds %"struct.eastl::pair.0.2276569", ptr %0, i64 %.neg1
+  ret ptr %3
 }
 
 ; 5 occurrences:
@@ -59,11 +56,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 2
-  %4 = add i64 %1, %3
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds %"struct.eastl::pair.0.2276569", ptr %0, i64 %5
-  ret ptr %6
+  %.neg = mul i64 %2, -4
+  %.neg1 = sub i64 %.neg, %1
+  %3 = getelementptr inbounds %"struct.eastl::pair.0.2276569", ptr %0, i64 %.neg1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

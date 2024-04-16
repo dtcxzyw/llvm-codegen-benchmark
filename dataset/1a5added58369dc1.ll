@@ -11,7 +11,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = lshr i64 %1, 1
   %5 = xor i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

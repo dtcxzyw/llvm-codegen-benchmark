@@ -11,7 +11,7 @@ define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
@@ -26,7 +26,7 @@ define ptr @func0000000000000011(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds %struct.aiFace.1749366, ptr %0, i64 %6
   ret ptr %7
@@ -39,7 +39,7 @@ define ptr @func0000000000000017(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 93
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
@@ -59,7 +59,7 @@ define ptr @func0000000000000015(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds %"class.cvc5::internal::NodeTemplate.2030150", ptr %0, i64 %6
   ret ptr %7
@@ -72,7 +72,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 59
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7

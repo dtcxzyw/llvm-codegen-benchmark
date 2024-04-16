@@ -6,11 +6,10 @@
 define i64 @func0000000000000082(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp eq i64 %0, %2
-  %4 = trunc i64 %0 to i32
-  %5 = select i1 %3, i32 0, i32 %4
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %3 = icmp eq i64 %2, %0
+  %4 = and i64 %0, 4294967295
+  %5 = select i1 %3, i64 0, i64 %4
+  ret i64 %5
 }
 
 ; 4 occurrences:
@@ -22,11 +21,10 @@ entry:
 define i64 @func0000000000000083(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = icmp eq i64 %0, %2
-  %4 = trunc i64 %0 to i32
-  %5 = select i1 %3, i32 0, i32 %4
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %3 = icmp eq i64 %2, %0
+  %4 = and i64 %0, 4294967295
+  %5 = select i1 %3, i64 0, i64 %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

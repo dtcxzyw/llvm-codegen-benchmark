@@ -5,9 +5,9 @@
 define i1 @func0000000000000102(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp eq i64 %4, -1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
   %5 = icmp ult i64 %4, 20
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000188(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 32
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ult i64 %4, 4294967296
   %6 = or i1 %5, %0
   ret i1 %6
@@ -82,7 +82,7 @@ entry:
   %3 = add i64 %2, -1
   %4 = add i64 %3, %1
   %5 = icmp ugt i64 %4, 4294967294
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -96,7 +96,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = add i64 %3, %1
   %5 = icmp eq i64 %4, -1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -122,7 +122,7 @@ entry:
   %3 = add i64 %2, 2
   %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -134,7 +134,7 @@ entry:
   %3 = add nuw nsw i64 %2, 2
   %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -147,7 +147,7 @@ entry:
   %3 = add nsw i32 %2, -35
   %4 = add i32 %3, %1
   %5 = icmp eq i32 %4, 16383
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -159,7 +159,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
   %5 = icmp ugt i32 %4, 32
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -171,7 +171,7 @@ entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -183,7 +183,7 @@ entry:
   %3 = add nsw i64 %2, -4
   %4 = add nsw i64 %3, %1
   %5 = icmp slt i64 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

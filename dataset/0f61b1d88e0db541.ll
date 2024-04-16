@@ -22,9 +22,9 @@ define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %0, %3
-  %5 = and i64 %4, 3
-  %6 = icmp ugt i64 %5, 1
+  %4 = shl i64 2, %3
+  %5 = and i64 %4, %0
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 
@@ -39,8 +39,8 @@ define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %0, %3
-  %5 = and i64 %4, 3
+  %4 = shl i64 3, %3
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -52,8 +52,8 @@ define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %0, %3
-  %5 = and i64 %4, 3
+  %4 = shl i64 3, %3
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

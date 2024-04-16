@@ -34,7 +34,7 @@
 define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = sext i64 %1 to i128
-  %3 = mul nsw i128 %0, %2
+  %3 = mul nsw i128 %2, %0
   %4 = lshr i128 %3, 64
   ret i128 %4
 }
@@ -50,7 +50,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = lshr i64 %3, 2
   ret i64 %4
 }
@@ -61,7 +61,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = lshr exact i64 %3, 8
   ret i64 %4
 }
@@ -72,7 +72,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = lshr exact i64 %3, 1
   ret i64 %4
 }

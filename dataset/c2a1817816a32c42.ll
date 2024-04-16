@@ -9,9 +9,9 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = sub i64 %3, %0
-  %5 = sub i64 1152921504606846975, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  %4 = add i64 %.neg, 1152921504606846975
+  ret i64 %4
 }
 
 ; 3 occurrences:
@@ -22,9 +22,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = sub nsw i64 %3, %0
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  ret i64 %.neg
 }
 
 ; 1 occurrences:
@@ -33,9 +32,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = sub nsw i32 %3, %0
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = sub nsw i32 %0, %3
+  ret i32 %.neg
 }
 
 ; 1 occurrences:
@@ -44,9 +42,8 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = sub nsw i64 %3, %0
-  %5 = sub nsw i64 0, %4
-  ret i64 %5
+  %.neg = sub nsw i64 %0, %3
+  ret i64 %.neg
 }
 
 ; 19 occurrences:
@@ -73,9 +70,8 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = sub i64 %3, %0
-  %5 = sub nsw i64 0, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  ret i64 %.neg
 }
 
 ; 2 occurrences:
@@ -85,9 +81,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = sub i32 %3, %0
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = sub i32 %0, %3
+  ret i32 %.neg
 }
 
 ; 1 occurrences:
@@ -96,9 +91,9 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = sub nsw i32 %3, %0
-  %5 = sub nuw nsw i32 -1085, %4
-  ret i32 %5
+  %.neg = sub i32 %0, %3
+  %4 = add i32 %.neg, -1085
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -107,9 +102,8 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = sub i64 %3, %0
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

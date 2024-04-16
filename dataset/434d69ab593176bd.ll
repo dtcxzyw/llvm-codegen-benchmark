@@ -17,7 +17,7 @@
 define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, 63
   %4 = icmp ult i32 %3, 15
   ret i1 %4

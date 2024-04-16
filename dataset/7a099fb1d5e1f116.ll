@@ -100,9 +100,9 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 61
   %4 = or disjoint i64 %0, %1
-  %5 = or disjoint i64 %4, %3
-  %6 = and i64 %5, -1073741824
-  ret i64 %6
+  %.masked = and i64 %4, -1073741824
+  %5 = or i64 %.masked, %3
+  ret i64 %5
 }
 
 ; 1 occurrences:

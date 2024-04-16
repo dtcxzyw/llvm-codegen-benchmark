@@ -7,9 +7,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, double %1) #0 {
 entry:
-  %2 = select i1 %0, double 0.000000e+00, double %1
-  %3 = fptosi double %2 to i64
-  %4 = icmp slt i64 %3, 0
+  %2 = fptosi double %1 to i64
+  %3 = icmp slt i64 %2, 0
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -20,9 +21,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, float %1) #0 {
 entry:
-  %2 = select i1 %0, float 1.200000e+01, float %1
-  %3 = fptosi float %2 to i32
-  %4 = icmp eq i32 %3, 0
+  %2 = fptosi float %1 to i32
+  %3 = icmp eq i32 %2, 0
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -31,9 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
-  %2 = select i1 %0, float 1.200000e+01, float %1
-  %3 = fptosi float %2 to i32
-  %4 = icmp ult i32 %3, 4
+  %2 = fptosi float %1 to i32
+  %3 = icmp ult i32 %2, 4
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 

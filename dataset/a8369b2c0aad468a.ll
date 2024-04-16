@@ -45,7 +45,7 @@ entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 12
   %4 = icmp eq i8 %1, 9
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }
@@ -74,7 +74,7 @@ entry:
   %2 = and i64 %1, 2095104
   %3 = icmp eq i64 %2, 55296
   %4 = icmp ugt i64 %1, 1114111
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }
@@ -88,7 +88,7 @@ entry:
   %2 = and i32 %1, -2048
   %3 = icmp eq i32 %2, 55296
   %4 = icmp sgt i32 %1, 1114111
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }

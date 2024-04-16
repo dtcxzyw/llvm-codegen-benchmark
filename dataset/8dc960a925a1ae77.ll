@@ -13,7 +13,7 @@ define i16 @func000000000000000a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = and i16 %0, %4
+  %5 = and i16 %4, %0
   %6 = lshr i16 %5, 8
   ret i16 %6
 }

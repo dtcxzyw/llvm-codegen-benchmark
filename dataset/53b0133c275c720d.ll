@@ -47,7 +47,7 @@ define i32 @func000000000000001a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sdiv i32 %4, %2
   ret i32 %5
 }

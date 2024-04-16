@@ -68,8 +68,8 @@ entry:
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 1000000000
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 2
+  %2 = and i64 %1, 4294967294
+  %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 

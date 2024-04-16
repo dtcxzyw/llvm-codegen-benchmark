@@ -32,7 +32,7 @@ define float @func0000000000000064(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp one float %2, 0x7FF0000000000000
   %4 = select i1 %3, float %1, float 0.000000e+00
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   %6 = fcmp ogt float %5, 1.000000e+08
   %7 = select i1 %6, float 1.000000e+08, float %5
   ret float %7

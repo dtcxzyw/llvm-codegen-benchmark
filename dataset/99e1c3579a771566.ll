@@ -21,7 +21,7 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = tail call noundef i64 @llvm.fshl.i64(i64 %3, i64 %3, i64 61)
   ret i64 %4
 }
@@ -35,7 +35,7 @@ declare i64 @llvm.fshl.i64(i64, i64, i64) #1
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = tail call i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 6)
   ret i32 %4
 }

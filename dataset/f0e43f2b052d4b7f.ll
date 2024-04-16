@@ -17,9 +17,9 @@ define i16 @func0000000000000000(i32 %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 16
   %3 = trunc i48 %2 to i16
-  %4 = add i16 %3, -1
-  %5 = trunc i32 %0 to i16
-  %6 = sub i16 %4, %5
+  %4 = trunc i32 %0 to i16
+  %5 = xor i16 %4, -1
+  %6 = add i16 %5, %3
   ret i16 %6
 }
 

@@ -16,8 +16,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084
-	andi	a2, a2, 255
-	sltiu	a2, a2, 64
+	andi	a2, a2, 192
+	seqz	a2, a2
 	sltiu	a1, a1, 21
 	xori	a1, a1, 1
 	and	a1, a1, a2

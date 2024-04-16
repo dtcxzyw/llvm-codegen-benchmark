@@ -12,7 +12,7 @@ entry:
   %2 = uitofp i32 %1 to double
   %3 = bitcast double %2 to i64
   %4 = and i64 %3, 4294967295
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

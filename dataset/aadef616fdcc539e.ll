@@ -28,11 +28,11 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = call i16 @llvm.bswap.i16(i16 %0)
-  %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, 4
-  %4 = and i32 %3, 31
-  ret i32 %4
+  %1 = lshr i16 %0, 8
+  %narrow = add nuw nsw i16 %1, 4
+  %2 = and i16 %narrow, 31
+  %3 = zext nneg i16 %2 to i32
+  ret i32 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -44,7 +44,7 @@ define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, -128
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }

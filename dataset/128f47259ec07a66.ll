@@ -16,11 +16,11 @@
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 24
-  %5 = sdiv exact i64 %0, 48
-  %6 = add nsw i64 %5, 1
-  %7 = sub nsw i64 %6, %4
-  ret i64 %7
+  %.neg = sdiv exact i64 %3, -24
+  %4 = sdiv exact i64 %0, 48
+  %5 = add nsw i64 %4, 1
+  %6 = add i64 %.neg, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

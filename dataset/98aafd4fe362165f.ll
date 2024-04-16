@@ -10,7 +10,7 @@ define float @func0000000000000001(float %0, float %1) #0 {
 entry:
   %2 = tail call noundef float @llvm.fabs.f32(float %1)
   %3 = fsub float 1.000000e+00, %2
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 

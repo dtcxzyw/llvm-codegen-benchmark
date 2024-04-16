@@ -89,11 +89,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %struct.Au_Obj_t_.1772682, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = ashr exact i64 %0, 32
-  %6 = getelementptr inbounds [2 x i32], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = ashr exact i64 %0, 32
+  %4 = getelementptr inbounds %struct.Au_Obj_t_.1772682, ptr %1, i64 %2, i32 1, i64 %3
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -103,11 +101,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %class.CFaceO.2214301, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = ashr i64 %0, 32
-  %6 = getelementptr inbounds [3 x ptr], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = ashr i64 %0, 32
+  %4 = getelementptr inbounds %class.CFaceO.2214301, ptr %1, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

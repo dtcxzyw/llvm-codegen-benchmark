@@ -10,10 +10,10 @@
 define i32 @func000000000000004f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 1
-  %4 = zext i16 %3 to i32
-  %5 = or disjoint i32 %4, 1
+  %4 = or disjoint i16 %3, 1
+  %5 = zext i16 %4 to i32
   %6 = or disjoint i32 %0, %1
-  %7 = add nuw nsw i32 %5, %6
+  %7 = add nuw nsw i32 %6, %5
   ret i32 %7
 }
 

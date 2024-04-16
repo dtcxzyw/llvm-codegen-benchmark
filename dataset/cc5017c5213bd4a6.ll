@@ -231,12 +231,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 15
-  %3 = and i64 %2, -16
-  %4 = icmp ugt i64 %3, 63
-  %5 = icmp ugt i64 %0, 95
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
+  %2 = add i64 %1, -49
+  %3 = icmp ult i64 %2, -64
+  %4 = icmp ugt i64 %0, 95
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 6 occurrences:

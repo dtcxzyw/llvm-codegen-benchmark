@@ -34,9 +34,8 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds %class.btVector3.1742160, ptr %1, i64 %4
-  %6 = getelementptr inbounds %struct.btSpatialMotionVector.1742162, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.btSpatialMotionVector.1742162, ptr %5, i64 %0, i32 0, i32 0, i64 2
+  ret ptr %6
 }
 
 ; 2 occurrences:

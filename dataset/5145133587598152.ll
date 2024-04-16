@@ -39,7 +39,7 @@ define i8 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = srem i32 %1, 16
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   ret i8 %3
 }
 
@@ -58,7 +58,7 @@ define i8 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 150
   %2 = srem i32 %1, 75
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   ret i8 %3
 }
 

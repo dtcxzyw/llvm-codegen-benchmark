@@ -8,8 +8,8 @@ define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %1
   %3 = lshr i32 255, %2
-  %4 = trunc i32 %3 to i8
-  %5 = and i8 %0, %4
+  %4 = trunc nuw i32 %3 to i8
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = sub i64 64, %1
   %3 = lshr i64 -1, %2
   %4 = trunc i64 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 

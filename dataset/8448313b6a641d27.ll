@@ -21,11 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 32
-  %2 = ashr exact i64 %1, 17
-  %3 = lshr exact i64 %2, 15
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %1 = trunc i64 %0 to i32
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

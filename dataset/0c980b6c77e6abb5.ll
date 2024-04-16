@@ -32,7 +32,7 @@ entry:
 define i16 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = trunc i64 %4 to i16
   ret i16 %5
 }

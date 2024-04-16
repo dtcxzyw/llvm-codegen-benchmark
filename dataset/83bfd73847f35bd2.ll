@@ -10,9 +10,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = freeze i64 %2
   %4 = ashr i64 %3, 3
-  %5 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %4, i64 48)
-  %6 = extractvalue { i64, i1 } %5, 0
-  ret i64 %6
+  %5 = mul i64 %4, 48
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

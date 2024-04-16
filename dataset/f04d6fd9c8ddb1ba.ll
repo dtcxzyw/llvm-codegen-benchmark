@@ -43,10 +43,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 858993459
-  %4 = and i32 %1, 858993459
+  %3 = and i32 %2, 53687091
+  %4 = and i32 %1, 53687091
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = and i32 %6, 252645135
   ret i32 %7
 }

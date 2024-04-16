@@ -24,11 +24,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 3, i32 %1
-  %3 = icmp eq i32 %2, 1029
-  %4 = select i1 %3, i32 4, i32 %2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %2 = icmp eq i32 %1, 0
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -36,11 +35,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = icmp eq i32 %2, 4
-  %4 = select i1 %3, i32 6, i32 %2
-  %5 = icmp ne i32 %4, 7
-  ret i1 %5
+  %2 = icmp ne i32 %1, 7
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -48,11 +45,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 -1, i8 %1
-  %3 = icmp eq i8 %2, -2
-  %4 = select i1 %3, i8 -128, i8 %2
-  %5 = icmp sgt i8 %4, -1
-  ret i1 %5
+  %2 = icmp sgt i8 %1, -1
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

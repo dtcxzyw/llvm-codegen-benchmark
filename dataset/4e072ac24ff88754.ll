@@ -23,7 +23,7 @@
 define i8 @func0000000000000003(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 4, i8 0
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = zext i1 %1 to i8
   %6 = or disjoint i8 %4, %5
   ret i8 %6
@@ -36,7 +36,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 4, i8 0
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = zext i1 %1 to i8
   %6 = or i8 %4, %5
   ret i8 %6

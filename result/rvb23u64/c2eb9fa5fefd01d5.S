@@ -7,10 +7,7 @@ func0000000000000056:                   # @func0000000000000056
 	addiw	a0, a0, 52
 	ret
 func000000000000002a:                   # @func000000000000002a
-	sext.b	a1, a0
-	slti	a1, a1, 0
-	li	a2, -128
-	czero.eqz	a1, a2, a1
+	andi	a1, a0, -128
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret

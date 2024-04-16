@@ -1,15 +1,10 @@
 func0000000000000121:                   # @func0000000000000121
-	li	a1, 8
-	sll	a0, a1, a0
-	addi	a0, a0, 63
-	andi	a0, a0, -64
-	seqz	a0, a0
+	sext.w	a0, a0
+	sltiu	a0, a0, 61
+	xori	a0, a0, 1
 	ret
 func00000000000001a1:                   # @func00000000000001a1
-	bset	a0, zero, a0
-	addi	a0, a0, 63
-	andi	a0, a0, -64
-	seqz	a0, a0
+	li	a0, 0
 	ret
 func0000000000000034:                   # @func0000000000000034
 	li	a1, 16

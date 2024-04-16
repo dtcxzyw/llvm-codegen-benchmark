@@ -48,15 +48,15 @@ func00000000000000a6:                   # @func00000000000000a6
 	mulhu	a5, a4, a6
 	add	a5, a5, a7
 	mul	a4, a4, a6
+	add	a2, a2, a4
+	sltu	a2, a2, a4
 	add	a3, a3, a5
-	add	a4, a4, a2
-	sltu	a2, a4, a2
 	add	a2, a2, a3
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	srli	a2, a2, 62
-	slli	a0, a1, 2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
+	slli	a2, a1, 2
+	srli	a0, a0, 62
 	or	a0, a0, a2
 	srli	a1, a1, 62
 	ret

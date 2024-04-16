@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000038(i1 %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne i8 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
@@ -70,7 +70,7 @@ entry:
 define i1 @func0000000000000022(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -111,7 +111,7 @@ entry:
 define i1 @func000000000000002c(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -152,7 +152,7 @@ entry:
 define i1 @func0000000000000198(i1 %0, i16 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne i16 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6

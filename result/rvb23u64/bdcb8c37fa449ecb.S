@@ -24,7 +24,7 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a0, a0
-	li	a1, 200
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 824
+	li	a1, -200
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 1024
 	ret

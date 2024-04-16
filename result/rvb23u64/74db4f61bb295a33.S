@@ -5,7 +5,7 @@ func0000000000000022:                   # @func0000000000000022
 .LBB0_2:                                # %entry
 	fli.s	fa5, 1.0
 	fmin.s	fa5, fa1, fa5
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 func0000000000000042:                   # @func0000000000000042
 	flt.d	a0, fa2, fa1
@@ -14,7 +14,7 @@ func0000000000000042:                   # @func0000000000000042
 .LBB1_2:                                # %entry
 	fli.d	fa5, 1.0
 	fmin.d	fa5, fa1, fa5
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret
 func0000000000000024:                   # @func0000000000000024
 	flt.d	a0, fa1, fa2
@@ -23,5 +23,5 @@ func0000000000000024:                   # @func0000000000000024
 .LBB2_2:                                # %entry
 	fli.d	fa5, 0.5
 	fmax.d	fa5, fa1, fa5
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret

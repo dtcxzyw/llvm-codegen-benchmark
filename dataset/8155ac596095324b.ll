@@ -11,7 +11,7 @@ entry:
   %4 = sitofp i32 %1 to float
   %5 = fdiv float %4, %3
   %6 = fsub float 1.000000e+00, %5
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

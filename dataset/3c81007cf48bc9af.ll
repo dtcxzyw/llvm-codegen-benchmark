@@ -6,8 +6,8 @@
 define i32 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i32 9, i32 4
-  %4 = add nsw i32 %0, %3
+  %3 = select i1 %2, i32 1, i32 4
+  %4 = add i32 %3, %0
   %5 = and i32 %4, 7
   %6 = lshr i32 255, %5
   ret i32 %6

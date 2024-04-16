@@ -19,9 +19,9 @@
 define i16 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 6
-  %2 = and i32 %1, 2097088
+  %2 = and i32 %1, 2096128
   %3 = add nuw nsw i32 %2, 67043328
-  %4 = lshr i32 %3, 10
+  %4 = lshr exact i32 %3, 10
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

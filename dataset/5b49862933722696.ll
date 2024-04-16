@@ -18,7 +18,7 @@ entry:
   %4 = xor i64 %3, -1
   %5 = icmp ult i32 %1, 64
   %6 = select i1 %5, i64 %4, i64 -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 
@@ -29,10 +29,10 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = icmp ne i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 0
-  %7 = and i32 %6, %0
-  ret i32 %7
+  %.not = icmp eq i32 %1, 0
+  %5 = select i1 %.not, i32 0, i32 %4
+  %6 = and i32 %5, %0
+  ret i32 %6
 }
 
 ; 3 occurrences:

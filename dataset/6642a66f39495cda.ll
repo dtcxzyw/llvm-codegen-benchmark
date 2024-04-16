@@ -77,11 +77,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nsw i32 %1, 10
-  %3 = add i32 %2, -48
-  %4 = add i32 %3, %0
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %1, -10
+  %.neg1 = add i32 %.neg, 48
+  %.neg2 = sub i32 %.neg1, %0
+  ret i32 %.neg2
 }
 
 ; 2 occurrences:
@@ -90,11 +89,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 10
-  %3 = add i32 %2, -48
-  %4 = add i32 %3, %0
-  %5 = sub i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %1, -10
+  %.neg1 = add i32 %.neg, 48
+  %.neg2 = sub i32 %.neg1, %0
+  ret i32 %.neg2
 }
 
 attributes #0 = { nounwind }

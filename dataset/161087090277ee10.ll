@@ -7,7 +7,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 7
   %5 = shl nuw i8 %1, %4
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 65535
   %5 = shl i32 %1, %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

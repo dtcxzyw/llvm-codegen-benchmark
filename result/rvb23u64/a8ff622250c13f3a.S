@@ -14,10 +14,9 @@ func000000000000003b:                   # @func000000000000003b
 	slli	a2, a2, 13
 	srli	a4, a4, 51
 	or	a2, a2, a4
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 .LCPI2_0:
 	.quad	7784369436827535058             # 0x6c07a2c26a8346d2

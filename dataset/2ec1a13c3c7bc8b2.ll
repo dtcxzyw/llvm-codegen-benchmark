@@ -6,7 +6,7 @@ define i1 @func00000000000000c4(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp ult i32 %1, 2
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
@@ -25,7 +25,7 @@ define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 134
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp eq i32 %1, 1
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
@@ -51,7 +51,7 @@ define i1 @func0000000000000014(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = icmp eq i8 %3, 110
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp ult i8 %1, 2
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7

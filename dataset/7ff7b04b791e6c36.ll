@@ -33,9 +33,8 @@ define ptr @func0000000000000005(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr %struct.PagetableEntry.2121611, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.PagetableEntry.2121611, ptr %4, i64 %0, i32 4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

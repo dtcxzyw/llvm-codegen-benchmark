@@ -1,9 +1,9 @@
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a2, a2
 	sext.w	a3, a1
-	bnez	a2, .LBB0_3
-	lui	a1, 49
-	addiw	a1, a1, -704
+	beqz	a2, .LBB0_3
+	lui	a1, 65
+	addiw	a1, a1, 427
 	andi	a2, a0, 1
 	bnez	a3, .LBB0_4
 .LBB0_2:
@@ -12,8 +12,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	beqz	a2, .LBB0_5
 	j	.LBB0_6
 .LBB0_3:
-	lui	a1, 65
-	addiw	a1, a1, 427
+	lui	a1, 49
+	addiw	a1, a1, -704
 	andi	a2, a0, 1
 	beqz	a3, .LBB0_2
 .LBB0_4:                                # %entry

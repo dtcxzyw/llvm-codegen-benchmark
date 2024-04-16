@@ -20,7 +20,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp uge i64 %0, %4
+  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 

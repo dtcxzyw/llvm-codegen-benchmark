@@ -12,9 +12,8 @@
 define i32 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl nuw i32 1, %1
-  %3 = sub i32 0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  ret i32 %.neg
 }
 
 ; 1 occurrences:
@@ -23,9 +22,8 @@ entry:
 define i32 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl nuw i32 1, %1
-  %3 = sub nsw i32 0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  ret i32 %.neg
 }
 
 ; 2 occurrences:
@@ -35,9 +33,8 @@ entry:
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl i32 2, %1
-  %3 = sub i32 0, %2
-  ret i32 %3
+  %.neg = shl i32 -2, %1
+  ret i32 %.neg
 }
 
 attributes #0 = { nounwind }

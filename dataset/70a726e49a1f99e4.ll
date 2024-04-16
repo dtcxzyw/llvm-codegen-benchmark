@@ -32,16 +32,16 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.cttz.i16(i16 %0, i1 true), !range !0
-  %2 = shl nuw i16 1, %1
-  %3 = xor i16 %2, -1
-  %4 = and i16 %0, %3
-  %5 = icmp eq i16 %4, 0
-  ret i1 %5
+  %1 = call i16 @llvm.ctpop.i16(i16 %0), !range !0
+  %2 = icmp ult i16 %1, 2
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i16 @llvm.cttz.i16(i16, i1 immarg) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i16 @llvm.ctpop.i16(i16) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

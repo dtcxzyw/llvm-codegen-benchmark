@@ -21,10 +21,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 16
-  %2 = shl nuw i32 %1, 27
-  %3 = ashr exact i32 %2, 31
-  ret i32 %3
+  %1 = shl i32 %0, 27
+  %2 = ashr i32 %1, 31
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -33,9 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, -8
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
+  %1 = shl i64 %0, 32
+  %2 = ashr exact i64 %1, 32
+  %3 = and i64 %2, -8
   ret i64 %3
 }
 
@@ -44,10 +43,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 4294967295
-  %2 = shl nuw i64 %1, 32
-  %3 = ashr i64 %2, 56
-  ret i64 %3
+  %1 = shl i64 %0, 32
+  %2 = ashr i64 %1, 56
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

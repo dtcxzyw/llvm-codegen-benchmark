@@ -7,7 +7,7 @@
 define i64 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   %4 = icmp ugt i64 %3, 4611686018427387903
   %5 = shl i64 %3, 2
   %6 = select i1 %4, i64 -1, i64 %5
@@ -34,7 +34,7 @@ entry:
 define i64 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   %4 = icmp ugt i64 %3, 2305843009213693951
   %5 = shl nuw i64 %3, 3
   %6 = select i1 %4, i64 -1, i64 %5
@@ -47,7 +47,7 @@ entry:
 define i64 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = icmp ugt i64 %3, 1152921504606846975
   %5 = shl i64 %3, 4
   %6 = select i1 %4, i64 -1, i64 %5
@@ -60,7 +60,7 @@ entry:
 define i64 @func00000000000000c8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %0, %2
+  %3 = mul nuw nsw i64 %2, %0
   %4 = icmp ugt i64 %3, 2305843009213693951
   %5 = shl i64 %3, 3
   %6 = select i1 %4, i64 -1, i64 %5

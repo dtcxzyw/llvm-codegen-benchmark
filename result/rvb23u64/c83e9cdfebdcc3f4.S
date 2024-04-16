@@ -5,12 +5,12 @@ func0000000000000030:                   # @func0000000000000030
 	sub	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	sltu	a1, a3, a2
-	sub	a1, a0, a1
-	sub	a0, a3, a2
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	sltu	a3, a0, a2
+	sub	a1, a1, a3
+	sub	a0, a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
 	add.uw	a0, a2, a0
@@ -38,12 +38,12 @@ func000000000000001d:                   # @func000000000000001d
 	sub	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	sltu	a1, a3, a2
-	sub	a1, a0, a1
-	sub	a0, a3, a2
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	sltu	a3, a0, a2
+	sub	a1, a1, a3
+	sub	a0, a0, a2
 	ret
 func000000000000002d:                   # @func000000000000002d
 	zext.h	a2, a2

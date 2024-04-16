@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = and i32 %1, 2147483584
-  %3 = icmp eq i32 %2, %1
-  ret i1 %3
+  %1 = and i64 %0, 2147483711
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:

@@ -5,28 +5,28 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	andi	a0, a0, 63
 	slliw	a1, a1, 12
-	slliw	a0, a0, 6
+	slli	a0, a0, 58
+	srli	a0, a0, 52
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a1, 1
 	slliw	a0, a0, 3
-	slliw	a1, a1, 2
+	slli	a1, a1, 2
+	andi	a1, a1, 4
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a1, a1, 1
 	slli	a0, a0, 2
 	slli	a1, a1, 1
+	andi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	lui	a2, 508
-	addi	a2, a2, 127
-	and	a0, a0, a2
-	slliw	a0, a0, 4
 	slliw	a1, a1, 11
+	slli	a0, a0, 4
+	lui	a2, 8128
+	addiw	a2, a2, 2032
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

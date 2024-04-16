@@ -9,7 +9,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 

@@ -7,7 +7,7 @@ entry:
   %3 = mul nsw i32 %2, 1741647
   %4 = ashr i32 %3, 19
   %5 = sub i32 %4, %1
-  %6 = zext i32 %5 to i64
+  %6 = zext nneg i32 %5 to i64
   %7 = lshr i64 %0, %6
   ret i64 %7
 }
@@ -295,7 +295,7 @@ entry:
   %3 = mul nsw i32 %2, 1741647
   %4 = ashr i32 %3, 19
   %5 = sub nsw i32 %4, %1
-  %6 = zext i32 %5 to i64
+  %6 = zext nneg i32 %5 to i64
   %7 = lshr i64 %0, %6
   ret i64 %7
 }

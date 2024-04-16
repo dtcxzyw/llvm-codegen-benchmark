@@ -7,7 +7,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }

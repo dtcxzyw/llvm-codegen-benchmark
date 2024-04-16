@@ -69,7 +69,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr %struct.pm_constant_pool_bucket_t.1553413, ptr %0, i64 %5
   ret ptr %6
@@ -610,7 +610,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -629,7 +629,7 @@ entry:
 define ptr @func0000000000000005(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -642,7 +642,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 9638941
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds %struct.Abc_ZddEnt_.1772341, ptr %0, i64 %5
   ret ptr %6
@@ -706,7 +706,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.607.1844498", ptr %0, i64 %5
   ret ptr %6
@@ -724,7 +724,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i16, ptr %0, i64 %5
   ret ptr %6
@@ -739,7 +739,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i16, ptr %0, i64 %5
   ret ptr %6
@@ -751,7 +751,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw nsw i16 %2, 1
-  %4 = and i16 %1, %3
+  %4 = and i16 %3, %1
   %5 = zext nneg i16 %4 to i64
   %6 = getelementptr ptr, ptr %0, i64 %5
   ret ptr %6

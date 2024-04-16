@@ -8,11 +8,10 @@
 define i1 @func0000000000000181(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 63
-  %2 = add nuw nsw i64 %1, 9
-  %3 = lshr i64 %0, %2
-  %4 = shl i64 %3, %2
-  %5 = icmp eq i64 %4, %0
-  ret i1 %5
+  %2 = shl nsw i64 -512, %1
+  %3 = and i64 %2, %0
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -6,9 +6,9 @@ define i1 @func0000000000000001(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 7
   %4 = and i16 %3, 4096
-  %5 = or i16 %1, %4
+  %5 = or i16 %4, %1
   %6 = zext i16 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = and i32 %3, 3840
   %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = and i32 %3, 32512
   %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = and i32 %3, 32512
   %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

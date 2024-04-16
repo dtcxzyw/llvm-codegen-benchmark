@@ -25,8 +25,8 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = add i32 %2, %0
-  %4 = icmp ult i32 %3, %0
+  %3 = xor i32 %0, -1
+  %4 = icmp ugt i32 %2, %3
   ret i1 %4
 }
 

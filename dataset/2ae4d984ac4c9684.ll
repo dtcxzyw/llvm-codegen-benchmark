@@ -43,9 +43,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %struct.HistogramLiteral.2233478, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1032
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.HistogramLiteral.2233478, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:

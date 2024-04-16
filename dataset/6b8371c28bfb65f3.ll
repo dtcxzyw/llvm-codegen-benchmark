@@ -19,11 +19,10 @@ entry:
 define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, -520094722
-  %5 = select i1 %0, i32 %3, i32 %4
-  %6 = and i32 %5, 1073741824
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %4 = and i32 %3, 1073741824
+  %5 = icmp eq i32 %4, 0
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -32,11 +31,9 @@ entry:
 define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, 256
-  %5 = select i1 %0, i32 %3, i32 %4
-  %6 = and i32 %5, 64
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %4 = and i32 %3, 64
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

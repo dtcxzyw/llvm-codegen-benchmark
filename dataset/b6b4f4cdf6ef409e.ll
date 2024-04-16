@@ -7,8 +7,8 @@
 define i64 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = add nsw i32 %3, %0
   %5 = sub nsw i32 1, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

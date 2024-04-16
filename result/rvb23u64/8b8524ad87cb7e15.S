@@ -21,22 +21,22 @@ func0000000000000571:                   # @func0000000000000571
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	andi	a2, a2, 255
+	sext.w	a1, a1
 	czero.eqz	a1, a1, a2
 	li	a3, 9
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000271:                   # @func0000000000000271
 	sltiu	a2, a2, 7
+	sext.w	a1, a1
 	czero.nez	a1, a1, a2
 	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -124,22 +124,19 @@ func0000000000000244:                   # @func0000000000000244
 func0000000000000474:                   # @func0000000000000474
 	andi	a2, a2, 255
 	sltiu	a2, a2, 12
-	czero.eqz	a1, a1, a2
-	li	a3, 1
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000471:                   # @func0000000000000471
 	andi	a2, a2, 255
 	sltiu	a2, a2, 12
+	sext.w	a1, a1
 	czero.eqz	a1, a1, a2
 	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

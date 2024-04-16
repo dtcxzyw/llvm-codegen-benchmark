@@ -1,8 +1,9 @@
 func0000000000000027:                   # @func0000000000000027
-	slli	a1, a1, 49
+	slli	a1, a1, 1
+	addi	a1, a1, 1
+	slli	a1, a1, 48
 	srli	a1, a1, 48
-	add	a0, a0, a1
-	addiw	a0, a0, 1
+	addw	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	4629700417037541376             # 0x4040000006002000

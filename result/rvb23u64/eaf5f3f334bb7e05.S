@@ -1,10 +1,11 @@
 func0000000000000051:                   # @func0000000000000051
+	andi	a0, a0, 255
 	bseti	a3, zero, 63
 	xor	a2, a2, a3
 	czero.nez	a1, a1, a2
-	subw	a1, a1, a0
 	andi	a1, a1, 255
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
 	andi	a2, a2, 255

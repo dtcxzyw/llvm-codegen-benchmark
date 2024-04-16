@@ -7,7 +7,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 4294967295
   %5 = zext i1 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 4294967295
   %5 = zext i1 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -28,10 +28,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %1, %2
+  %3 = or i64 %1, %2
   %4 = icmp eq i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -40,10 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000000c5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %1, %2
+  %3 = or i64 %1, %2
   %4 = icmp eq i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -52,10 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp eq i64 %3, 0
+  %3 = sub i64 0, %2
+  %4 = icmp eq i64 %3, %1
   %5 = zext i1 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = add i8 %1, %2
   %4 = icmp ugt i8 %3, 93
   %5 = zext i1 %4 to i8
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 

@@ -6,7 +6,7 @@
 define i64 @func0000000000000028(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, %1
-  %3 = add nuw i128 %0, %2
+  %3 = add nuw i128 %2, %0
   %4 = trunc i128 %3 to i64
   %5 = and i64 %4, 17592186044415
   ret i64 %5
@@ -19,7 +19,7 @@ entry:
 define i64 @func000000000000003c(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, %1
-  %3 = add nuw nsw i128 %0, %2
+  %3 = add nuw nsw i128 %2, %0
   %4 = trunc i128 %3 to i64
   %5 = and i64 %4, 2251799813685247
   ret i64 %5

@@ -11,8 +11,10 @@ func0000000000000000:                   # @func0000000000000000
 	bnez	a0, .LBB1_2
 	mv	a1, a2
 .LBB1_2:                                # %entry
-	addi	a0, a1, 17
-	slli	a0, a0, 32
+	slli	a0, a1, 32
+	li	a1, 17
+	slli	a1, a1, 32
+	add	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
 	andi	a0, a0, 1

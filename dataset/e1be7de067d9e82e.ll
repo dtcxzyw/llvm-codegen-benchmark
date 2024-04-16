@@ -174,7 +174,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }

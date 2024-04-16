@@ -8,7 +8,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -5
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 65535)
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

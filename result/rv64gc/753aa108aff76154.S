@@ -7,9 +7,10 @@ func0000000000000044:                   # @func0000000000000044
 	and	a0, a0, a2
 	ret
 func0000000000000384:                   # @func0000000000000384
-	addiw	a2, a2, -16
-	sltiu	a2, a2, 16
-	xori	a2, a2, 1
+	andi	a2, a2, -16
+	sext.w	a2, a2
+	addi	a2, a2, -16
+	snez	a2, a2
 	addi	a1, a1, 1
 	sltu	a0, a1, a0
 	and	a0, a0, a2
@@ -41,9 +42,9 @@ func00000000000003c4:                   # @func00000000000003c4
 	and	a0, a0, a2
 	ret
 func0000000000000084:                   # @func0000000000000084
+	andi	a2, a2, -4
 	addi	a2, a2, -4
-	sltiu	a2, a2, 4
-	xori	a2, a2, 1
+	snez	a2, a2
 	addi	a1, a1, 4
 	sltu	a0, a1, a0
 	and	a0, a0, a2

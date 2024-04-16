@@ -20,9 +20,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.HashTablePermutohedralValue.1768235, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.HashTablePermutohedralValue.1768235, ptr %0, i64 %3, i32 0, i64 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -33,9 +32,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSVarDef.1908877, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 12
-  ret ptr %5
+  %4 = getelementptr %struct.JSVarDef.1908877, ptr %0, i64 %3, i32 3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -45,9 +43,8 @@ define ptr @func0000000000000001(ptr %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %struct.sk_buff_head.2013655, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.sk_buff_head.2013655, ptr %0, i64 %3, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:

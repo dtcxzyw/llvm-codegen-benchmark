@@ -6,7 +6,7 @@
 define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = srem i32 %1, 400
   %6 = icmp eq i32 %5, 0
   %7 = or i1 %6, %4

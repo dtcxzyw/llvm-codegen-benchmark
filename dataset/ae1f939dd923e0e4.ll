@@ -10,7 +10,7 @@ entry:
   %2 = fmul float %1, 0x3FC5555560000000
   %3 = fptosi float %2 to i32
   %4 = and i32 %3, 3
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

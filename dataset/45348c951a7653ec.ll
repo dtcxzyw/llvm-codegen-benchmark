@@ -45,7 +45,7 @@
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }
@@ -56,7 +56,7 @@ entry:
 define { i64, i64 } @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = insertvalue { i64, i64 } poison, i64 %3, 0
   ret { i64, i64 } %4
 }

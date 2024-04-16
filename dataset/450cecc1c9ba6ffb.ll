@@ -23,7 +23,7 @@
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = mul i64 %3, -7070675565921424023
   %5 = lshr i64 %4, 47
   ret i64 %5

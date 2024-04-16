@@ -6,10 +6,10 @@
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
-  %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
-  %5 = and i32 %4, 1
-  ret i32 %5
+  %.tr = trunc i32 %0 to i1
+  %.narrow = xor i1 %2, %.tr
+  %3 = zext i1 %.narrow to i32
+  ret i32 %3
 }
 
 ; 9 occurrences:
@@ -26,10 +26,10 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 92
-  %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
-  %5 = and i32 %4, 1
-  ret i32 %5
+  %.tr = trunc i32 %0 to i1
+  %.narrow = xor i1 %2, %.tr
+  %3 = zext i1 %.narrow to i32
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@ define i1 @func000000000000006a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = shl nuw i32 1, %3
-  %5 = icmp sgt i32 %1, %4
+  %5 = icmp slt i32 %4, %1
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

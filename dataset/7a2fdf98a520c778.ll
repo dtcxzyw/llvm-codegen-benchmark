@@ -22,7 +22,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
   %5 = fmul double %4, 0x3FE62E42FEFA39EF
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

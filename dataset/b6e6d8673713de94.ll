@@ -59,7 +59,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = shl nuw i32 1, %2
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   ret i32 %4
 }
 
@@ -84,7 +84,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = shl nuw nsw i64 1, %2
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 

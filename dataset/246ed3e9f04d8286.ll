@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub i32 %1, %2
-  %4 = freeze i32 %3
-  %5 = sub i32 %0, %4
-  ret i32 %5
+  %.neg = sub i32 %2, %1
+  %.neg1 = freeze i32 %.neg
+  %3 = add i32 %.neg1, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

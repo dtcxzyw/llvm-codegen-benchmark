@@ -22,7 +22,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 86400
   %4 = add i64 %3, -41212800
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = sext i32 %1 to i64
   %7 = add nsw i64 %5, %6
   ret i64 %7

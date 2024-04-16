@@ -61,8 +61,8 @@ entry:
 define i64 @func000000000000002a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw i16 %2, 32767
-  %4 = icmp sgt i16 %1, -1
-  %5 = select i1 %4, i16 %3, i16 %0
+  %4 = icmp slt i16 %1, 0
+  %5 = select i1 %4, i16 %0, i16 %3
   %6 = sext i16 %5 to i64
   ret i64 %6
 }

@@ -6,8 +6,8 @@ define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 12
   %3 = add nuw nsw i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, 63
+  %4 = and i32 %3, 63
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
@@ -24,8 +24,8 @@ define i128 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 51
   %3 = add nuw nsw i64 %2, %0
-  %4 = zext nneg i64 %3 to i128
-  %5 = and i128 %4, 2251799813685247
+  %4 = and i64 %3, 2251799813685247
+  %5 = zext nneg i64 %4 to i128
   ret i128 %5
 }
 

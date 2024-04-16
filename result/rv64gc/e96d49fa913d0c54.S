@@ -1,9 +1,9 @@
 func0000000000000054:                   # @func0000000000000054
-	not	a1, a1
-	add	a0, a0, a1
-	sltu	a1, a0, a1
-	sltiu	a0, a0, 15
-	and	a0, a0, a1
+	sltu	a2, a1, a0
+	sub	a1, a1, a0
+	sltiu	a0, a1, -15
+	xori	a0, a0, 1
+	and	a0, a0, a2
 	ret
 func0000000000000051:                   # @func0000000000000051
 	lui	a2, 16

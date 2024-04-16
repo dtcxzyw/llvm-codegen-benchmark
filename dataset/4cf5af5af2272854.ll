@@ -18,10 +18,9 @@
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr i64, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 8 occurrences:
@@ -37,10 +36,9 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr i64, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 9 occurrences:
@@ -57,10 +55,9 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr inbounds i64, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -69,10 +66,9 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds %"struct.std::pair.272.1976453", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr inbounds %"struct.std::pair.272.1976453", ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

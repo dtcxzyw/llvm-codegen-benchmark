@@ -8,7 +8,7 @@ entry:
   %3 = and i64 %2, 576460748142673919
   %4 = icmp eq i64 %3, 0
   %5 = lshr i64 %1, 59
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = and i16 %2, -9216
   %4 = icmp eq i16 %3, -10240
   %5 = lshr i64 %1, 1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

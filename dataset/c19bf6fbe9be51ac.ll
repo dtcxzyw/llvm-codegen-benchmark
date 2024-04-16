@@ -8,7 +8,7 @@ define i64 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -43,7 +43,7 @@ define i64 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
@@ -93,7 +93,7 @@ define i64 @func000000000000001e(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -106,7 +106,7 @@ define i64 @func0000000000000036(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 %3, 31
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -136,7 +136,7 @@ define i64 @func000000000000003c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -150,7 +150,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   %7 = zext i16 %6 to i32
   ret i32 %7
 }
@@ -162,7 +162,7 @@ define i64 @func0000000000000019(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = or i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7

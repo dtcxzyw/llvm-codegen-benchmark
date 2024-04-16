@@ -6,8 +6,6 @@ func000000000000003a:                   # @func000000000000003a
 	srliw	a0, a0, 8
 	ret
 func000000000000003e:                   # @func000000000000003e
-	zext.h	a1, a1
-	sh2add	a0, a1, a0
 	lui	a1, 4096
 	add	a0, a0, a1
 	srli	a0, a0, 25

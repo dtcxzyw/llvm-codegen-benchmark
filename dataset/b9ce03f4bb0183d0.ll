@@ -11,10 +11,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = and i32 %3, 1
-  ret i32 %4
+  %.tr = trunc i32 %0 to i1
+  %.narrow = xor i1 %.tr, %1
+  %2 = zext i1 %.narrow to i32
+  ret i32 %2
 }
 
 ; 36 occurrences:
@@ -57,10 +57,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i32
-  %3 = add i32 %0, %2
-  %4 = and i32 %3, 1
-  ret i32 %4
+  %.tr = trunc i32 %0 to i1
+  %.narrow = xor i1 %.tr, %1
+  %2 = zext i1 %.narrow to i32
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

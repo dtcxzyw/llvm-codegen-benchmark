@@ -222,9 +222,8 @@ func00000000000000ce:                   # @func00000000000000ce
 	or	a0, a0, a2
 	ret
 func0000000000000098:                   # @func0000000000000098
-	sltu	a1, a1, a0
+	and	a0, a0, a1
 	sltiu	a0, a0, -1
-	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a0, a0

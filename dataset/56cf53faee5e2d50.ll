@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %1, %0
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 0, i32 %0
-  ret i32 %4
+  %.not = icmp sgt i32 %1, %0
+  %2 = select i1 %.not, i32 %0, i32 0
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -19,9 +18,9 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 0, i32 %0
-  ret i32 %4
+  %.inv = icmp sgt i32 %2, 0
+  %3 = select i1 %.inv, i32 %0, i32 0
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -31,10 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %1, %0
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %0
-  ret i32 %4
+  %2 = icmp eq i32 %1, %0
+  %3 = select i1 %2, i32 0, i32 %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

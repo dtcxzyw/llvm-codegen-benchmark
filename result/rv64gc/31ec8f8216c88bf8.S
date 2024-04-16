@@ -1,18 +1,17 @@
 func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
-	slli	a0, a0, 33
-	srli	a0, a0, 57
+	lui	a1, 520192
+	and	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
-	slli	a0, a0, 57
-	srli	a0, a0, 58
+	andi	a0, a0, 126
 	seqz	a0, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
 	or	a0, a0, a1
-	slli	a0, a0, 40
-	srli	a0, a0, 56
+	lui	a1, 4080
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret

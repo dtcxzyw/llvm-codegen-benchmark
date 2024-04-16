@@ -8,7 +8,7 @@ entry:
   %3 = shl i32 %2, 16
   %4 = or disjoint i32 %3, %1
   %5 = and i32 %4, 1431655765
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   %7 = lshr i32 %6, 2
   ret i32 %7
 }
@@ -32,11 +32,11 @@ entry:
 define i128 @func0000000000000008(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl i128 %2, 96
-  %4 = or disjoint i128 %1, %3
-  %5 = and i128 %4, -18446744073709551616
-  %6 = add i128 %0, %5
-  %7 = lshr i128 %6, 64
-  ret i128 %7
+  %.masked = and i128 %1, -18446744073709551616
+  %4 = or i128 %3, %.masked
+  %5 = add i128 %4, %0
+  %6 = lshr i128 %5, 64
+  ret i128 %6
 }
 
 ; 14 occurrences:
@@ -60,7 +60,7 @@ entry:
   %3 = shl nuw nsw i128 %2, 32
   %4 = or disjoint i128 %3, %1
   %5 = and i128 %4, -18446744073709551616
-  %6 = add i128 %0, %5
+  %6 = add i128 %5, %0
   %7 = lshr i128 %6, 64
   ret i128 %7
 }

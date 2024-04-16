@@ -8,9 +8,8 @@ define i1 @func0000000000000001(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, 1
-  %3 = icmp eq i64 %2, 0
-  %4 = xor i1 %3, true
-  ret i1 %4
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -370,9 +370,8 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3
-  %3 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr { i32, i16 }, ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 43 occurrences:

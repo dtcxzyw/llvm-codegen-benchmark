@@ -6,7 +6,7 @@
 define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 0, i8 64
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   %5 = add i8 %1, -1
   %6 = or i8 %4, %5
   ret i8 %6

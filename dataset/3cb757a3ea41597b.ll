@@ -97,7 +97,7 @@ entry:
   %2 = zext i1 %1 to i32
   %3 = sdiv i32 %0, 262144
   %4 = add nsw i32 %3, %2
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nsw i32 %4 to i16
   %6 = add nsw i16 %5, 307
   ret i16 %6
 }

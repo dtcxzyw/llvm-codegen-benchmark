@@ -12,9 +12,8 @@ define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %2, i64 0, i64 %1
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:

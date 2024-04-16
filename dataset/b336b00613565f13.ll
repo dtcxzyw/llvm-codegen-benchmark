@@ -9,7 +9,7 @@ define i1 @func0000000000000011(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 20, i64 4
   %4 = select i1 %1, i64 36, i64 %3
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = icmp eq i64 %5, 44
   ret i1 %6
 }

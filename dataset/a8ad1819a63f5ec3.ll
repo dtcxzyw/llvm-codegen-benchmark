@@ -7,7 +7,7 @@ entry:
   %2 = bitcast i64 %1 to double
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp ueq double %3, 0x7FF0000000000000
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

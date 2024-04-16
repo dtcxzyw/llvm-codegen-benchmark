@@ -16,14 +16,8 @@ func000000000000000c:                   # @func000000000000000c
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa1
 	bnez	a0, .LBB1_2
-	lui	a0, 784384
-	fmv.w.x	fa5, a0
-	fmul.s	fa0, fa5, fa0
-	ret
-.LBB1_2:
-	lui	a0, 260096
-	fmv.w.x	fa5, a0
-	fmul.s	fa0, fa5, fa0
+	fneg.s	fa0, fa0
+.LBB1_2:                                # %entry
 	ret
 .LCPI2_0:
 	.quad	0x3feff7ced916872b              # double 0.99899999999999999

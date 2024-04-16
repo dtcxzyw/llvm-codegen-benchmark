@@ -23,8 +23,6 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	ori	a1, a1, 128
-	and	a0, a0, a1
 	sext.b	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1

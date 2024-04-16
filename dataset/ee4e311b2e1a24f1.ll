@@ -14,10 +14,9 @@
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
-  %2 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 112)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = or disjoint i64 %3, 8
-  ret i64 %4
+  %2 = mul nsw i64 %1, 112
+  %3 = or disjoint i64 %2, 8
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

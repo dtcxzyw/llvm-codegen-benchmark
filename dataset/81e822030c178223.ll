@@ -163,7 +163,7 @@
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = ashr i32 %0, 21
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nsw i32 %1 to i16
   %3 = sub nsw i16 292, %2
   %4 = udiv i16 %3, 27
   %5 = zext nneg i16 %4 to i32

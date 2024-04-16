@@ -39,7 +39,8 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000020:                   # @func0000000000000020
 	lui	a3, 136
 	bgeu	a3, a1, .LBB6_2
-	lui	a0, 1048440
+	lui	a0, 131055
+	slli	a0, a0, 3
 	add	a0, a0, a2
 .LBB6_2:                                # %entry
 	ret

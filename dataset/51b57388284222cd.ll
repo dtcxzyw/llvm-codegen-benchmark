@@ -39,8 +39,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -8
-  %4 = shl nuw nsw i32 %3, 23
+  %3 = shl i32 %2, 23
+  %4 = add i32 %3, -67108864
   %5 = or i32 %0, %1
   %6 = or i32 %5, 947912704
   %7 = sub nuw i32 %6, %4

@@ -14,7 +14,7 @@
 define ptr @func0000000000000015(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = lshr i64 %4, 1
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -48,7 +48,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 6
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
@@ -65,7 +65,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -77,7 +77,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -90,7 +90,7 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 19
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -102,7 +102,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = lshr i64 %4, 12
   %6 = getelementptr %struct.page.1995717, ptr %0, i64 %5
   ret ptr %6
@@ -118,7 +118,7 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -130,7 +130,7 @@ entry:
 define ptr @func0000000000000011(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

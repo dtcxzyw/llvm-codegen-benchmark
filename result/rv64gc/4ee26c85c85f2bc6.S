@@ -64,7 +64,7 @@ func0000000000000f14:                   # @func0000000000000f14
 	andi	a0, a0, 255
 	li	a3, 10
 	mul	a2, a2, a3
-	add	a1, a1, a2
+	or	a1, a1, a2
 	andi	a1, a1, 255
 	seqz	a1, a1
 	sltiu	a0, a0, 244

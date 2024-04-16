@@ -9,7 +9,7 @@ entry:
   %3 = mul i32 %2, 2531011
   %4 = add i32 %3, %1
   %5 = mul i32 %4, 2531011
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 10
   %4 = add nuw nsw i32 %3, %1
   %5 = mul nuw i32 %4, 10
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -42,7 +42,7 @@ entry:
   %3 = mul nuw i64 %2, 10
   %4 = add nuw i64 %3, %1
   %5 = mul nuw i64 %4, 10
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

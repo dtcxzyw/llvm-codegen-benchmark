@@ -8,7 +8,7 @@ define i1 @func0000000000000002(double %0, float %1) #0 {
 entry:
   %2 = call float @llvm.fabs.f32(float %1)
   %3 = fpext float %2 to double
-  %4 = fcmp olt double %0, %3
+  %4 = fcmp ogt double %3, %0
   ret i1 %4
 }
 
@@ -24,7 +24,7 @@ define i1 @func0000000000000014(double %0, float %1) #0 {
 entry:
   %2 = tail call noundef float @llvm.fabs.f32(float %1)
   %3 = fpext float %2 to double
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   ret i1 %4
 }
 
@@ -35,7 +35,7 @@ define i1 @func0000000000000013(double %0, float %1) #0 {
 entry:
   %2 = call noundef float @llvm.fabs.f32(float %1)
   %3 = fpext float %2 to double
-  %4 = fcmp ult double %0, %3
+  %4 = fcmp ugt double %3, %0
   ret i1 %4
 }
 
@@ -47,7 +47,7 @@ define i1 @func0000000000000012(double %0, float %1) #0 {
 entry:
   %2 = call noundef float @llvm.fabs.f32(float %1)
   %3 = fpext float %2 to double
-  %4 = fcmp olt double %0, %3
+  %4 = fcmp ogt double %3, %0
   ret i1 %4
 }
 

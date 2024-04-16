@@ -78,7 +78,7 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000045:                   # @func0000000000000045
 	sext.w	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	andi	a2, a2, 224
 	sltiu	a2, a2, 96
 	sltu	a0, a1, a0
 	not	a0, a0
@@ -87,8 +87,9 @@ func0000000000000045:                   # @func0000000000000045
 func0000000000000089:                   # @func0000000000000089
 	sext.w	a1, a1
 	sext.w	a0, a0
-	slli	a2, a2, 51
-	srli	a2, a2, 51
+	lui	a3, 2
+	addiw	a3, a3, -2
+	and	a2, a2, a3
 	sltiu	a2, a2, 6
 	sltu	a0, a0, a1
 	or	a0, a0, a2

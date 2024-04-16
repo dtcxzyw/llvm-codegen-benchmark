@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 917504
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = select i1 %1, i32 65536, i32 0
   %6 = or disjoint i32 %4, %5
   %7 = or i32 %6, 102

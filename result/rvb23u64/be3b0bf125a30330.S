@@ -16,9 +16,9 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a0
 	sltiu	a1, a1, 2
-	li	a2, 3
-	czero.nez	a1, a2, a1
+	li	a2, -3
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 4
 	slliw	a0, a0, 3
 	or	a0, a0, a1
-	addi	a0, a0, 1
 	ret

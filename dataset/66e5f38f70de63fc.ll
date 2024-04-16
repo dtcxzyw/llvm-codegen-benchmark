@@ -8,7 +8,7 @@
 define i8 @func0000000000000010(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000028(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %1, %2
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -41,7 +41,7 @@ entry:
 define i64 @func0000000000000030(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %1, %2
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

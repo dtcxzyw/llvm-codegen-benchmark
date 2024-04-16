@@ -35,7 +35,7 @@ define double @func0000000000000000(double %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fpext float %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

@@ -9,7 +9,7 @@ entry:
   %4 = mul i32 %3, 3
   %5 = add nsw i32 %1, -30
   %6 = add i32 %5, %4
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 

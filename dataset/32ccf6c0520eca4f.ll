@@ -594,10 +594,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 4
-  %3 = getelementptr inbounds i8, ptr %1, i64 5
-  %4 = select i1 %0, ptr %3, ptr %2
-  ret ptr %4
+  %.v = select i1 %0, i64 5, i64 4
+  %2 = getelementptr inbounds i8, ptr %1, i64 %.v
+  ret ptr %2
 }
 
 ; 41 occurrences:
@@ -645,10 +644,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %1, i64 -1
-  %3 = getelementptr i8, ptr %1, i64 -2
-  %4 = select i1 %0, ptr %3, ptr %2
-  ret ptr %4
+  %.v = select i1 %0, i64 -2, i64 -1
+  %2 = getelementptr i8, ptr %1, i64 %.v
+  ret ptr %2
 }
 
 ; 3 occurrences:
@@ -658,10 +656,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 252
-  %3 = getelementptr i8, ptr %1, i64 248
-  %4 = select i1 %0, ptr %3, ptr %2
-  ret ptr %4
+  %.v = select i1 %0, i64 248, i64 252
+  %2 = getelementptr i8, ptr %1, i64 %.v
+  ret ptr %2
 }
 
 ; 4 occurrences:
@@ -672,10 +669,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %1, i64 312
-  %3 = getelementptr inbounds i8, ptr %1, i64 24
-  %4 = select i1 %0, ptr %3, ptr %2
-  ret ptr %4
+  %.v = select i1 %0, i64 24, i64 312
+  %2 = getelementptr i8, ptr %1, i64 %.v
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

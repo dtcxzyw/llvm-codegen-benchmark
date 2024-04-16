@@ -9,7 +9,7 @@ entry:
   %3 = add nuw nsw i32 %2, 15
   %4 = and i32 %3, 4194288
   %5 = add nuw nsw i32 %4, 16
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,10 +19,10 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
+  %3 = add i32 %2, 1023
   %4 = and i32 %3, 1023
   %5 = add nuw nsw i32 %4, 1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

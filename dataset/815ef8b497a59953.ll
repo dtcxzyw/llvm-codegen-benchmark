@@ -7,7 +7,7 @@ define i1 @func00000000000000c1(i1 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483648
   %4 = icmp ne i64 %3, 0
-  %5 = xor i1 %0, %4
+  %5 = xor i1 %4, %0
   %6 = icmp eq i8 %1, 2
   %7 = xor i1 %5, %6
   ret i1 %7
@@ -33,7 +33,7 @@ define i1 @func000000000000001c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 256
   %4 = icmp eq i32 %3, 0
-  %5 = xor i1 %0, %4
+  %5 = xor i1 %4, %0
   %6 = icmp ne i8 %1, -1
   %7 = xor i1 %5, %6
   ret i1 %7

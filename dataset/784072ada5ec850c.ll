@@ -7,7 +7,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = srem i32 %2, 128
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -19,7 +19,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = srem i32 %2, 7
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 

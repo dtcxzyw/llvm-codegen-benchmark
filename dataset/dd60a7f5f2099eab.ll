@@ -6,7 +6,7 @@ define i1 @func0000000000000011(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -18,7 +18,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

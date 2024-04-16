@@ -38,7 +38,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.fshl.i64(i64 %0, i64 %0, i64 62)
+  %1 = lshr i64 %0, 2
   %2 = trunc i64 %1 to i16
   ret i16 %2
 }

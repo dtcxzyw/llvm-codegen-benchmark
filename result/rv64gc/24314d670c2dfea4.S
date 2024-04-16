@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	beqz	a0, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	lui	a2, 921600
+	lui	a2, 135168
 	addiw	a2, a2, -1
 	bnez	a0, .LBB0_4
 .LBB0_3:                                # %entry

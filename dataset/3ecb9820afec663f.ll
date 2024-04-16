@@ -7,7 +7,7 @@ entry:
   %3 = fcmp ule float %2, 0.000000e+00
   %4 = fcmp olt float %1, 0.000000e+00
   %5 = xor i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = fcmp olt double %1, 0.000000e+00
   %5 = xor i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

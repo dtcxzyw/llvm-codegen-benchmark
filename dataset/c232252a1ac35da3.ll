@@ -171,9 +171,9 @@ entry:
   %3 = add i64 %0, -1
   %4 = mul i64 %2, 10
   %5 = and i64 %4, %3
-  %6 = sub i64 %5, %1
-  %7 = sub i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %1, %5
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

@@ -17,12 +17,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 16
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 524288, i32 524864
-  %6 = select i1 %0, i32 %5, i32 524352
-  ret i32 %6
+  %2 = and i8 %1, 16
+  %3 = icmp eq i8 %2, 0
+  %4 = select i1 %3, i32 524288, i32 524864
+  %5 = select i1 %0, i32 %4, i32 524352
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

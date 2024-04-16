@@ -9,7 +9,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = urem i8 %1, %2
   %4 = zext i8 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

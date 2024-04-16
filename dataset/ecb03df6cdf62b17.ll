@@ -14,7 +14,7 @@ define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 24, i64 16
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -25,8 +25,9 @@ entry:
 define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i1
-  %3 = select i1 %2, i64 0, i64 7
-  %4 = icmp ult i64 %0, %3
+  %3 = icmp ult i64 %0, 7
+  %not. = xor i1 %2, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -45,7 +46,7 @@ define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 3, i64 1
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -56,7 +57,7 @@ define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
   %3 = select i1 %2, i16 5, i16 4
-  %4 = icmp eq i16 %0, %3
+  %4 = icmp eq i16 %3, %0
   ret i1 %4
 }
 
@@ -67,7 +68,7 @@ define i1 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 3, i64 2
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 

@@ -1,15 +1,15 @@
 func00000000000000d1:                   # @func00000000000000d1
-	bset	a2, zero, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	li	a3, -1
+	sll	a2, a3, a2
+	andn	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
-	bset	a2, zero, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	li	a3, -1
+	sll	a2, a3, a2
+	andn	a1, a1, a2
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
 	and	a0, a0, a1

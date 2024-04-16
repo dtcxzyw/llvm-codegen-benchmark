@@ -16,9 +16,8 @@
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -32,9 +31,8 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %3 = icmp slt i32 %2, %0
+  ret i1 %3
 }
 
 ; 10 occurrences:
@@ -102,9 +100,8 @@ entry:
 define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:

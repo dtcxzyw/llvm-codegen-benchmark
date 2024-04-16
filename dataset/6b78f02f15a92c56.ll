@@ -8,7 +8,7 @@ entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = icmp eq i32 %1, 2
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = fcmp ogt double %2, 0.000000e+00
   %4 = icmp eq i32 %1, 2
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

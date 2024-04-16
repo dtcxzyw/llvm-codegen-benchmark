@@ -48,10 +48,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = bitcast i32 %1 to float
-  %3 = fcmp oeq float %2, 0.000000e+00
-  ret i1 %3
+  %1 = and i64 %0, 2147483647
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -74,10 +73,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = bitcast i32 %1 to float
-  %3 = fcmp une float %2, 0.000000e+00
-  ret i1 %3
+  %1 = and i64 %0, 2147483647
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
 }
 
 ; 4 occurrences:

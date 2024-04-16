@@ -8,9 +8,8 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
-  %3 = and i64 %2, 65535
-  %4 = shl nuw i64 %3, 48
-  ret i64 %4
+  %3 = shl i64 %2, 48
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

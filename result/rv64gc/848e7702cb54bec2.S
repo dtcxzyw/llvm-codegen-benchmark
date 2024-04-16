@@ -12,17 +12,11 @@ func0000000000000061:                   # @func0000000000000061
 	li	a0, 6
 	ret
 func0000000000000044:                   # @func0000000000000044
-	srliw	a3, a2, 30
-	bnez	a3, .LBB1_3
+	or	a1, a1, a2
 	srliw	a1, a1, 30
-	beqz	a1, .LBB1_4
-.LBB1_2:                                # %entry
-	ret
-.LBB1_3:                                # %entry
-	srliw	a1, a2, 30
 	bnez	a1, .LBB1_2
-.LBB1_4:                                # %entry
 	li	a0, 32
+.LBB1_2:                                # %entry
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a3, a2

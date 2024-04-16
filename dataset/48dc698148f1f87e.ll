@@ -8,7 +8,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = sub nuw nsw i64 %1, %3
   %5 = and i64 %4, 9223372036854775552
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

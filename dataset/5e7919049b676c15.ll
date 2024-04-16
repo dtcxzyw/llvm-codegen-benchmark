@@ -104,7 +104,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = or i32 %4, 4
   ret i32 %5
 }
@@ -155,7 +155,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 256
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = or disjoint i32 %4, 128
   ret i32 %5
 }

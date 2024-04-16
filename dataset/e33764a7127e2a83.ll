@@ -8,10 +8,9 @@
 define i8 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, -219
-  %3 = select i1 %2, i32 37097, i32 0
-  %4 = select i1 %0, i32 37096, i32 %3
-  %5 = trunc i32 %4 to i8
-  ret i8 %5
+  %3 = select i1 %2, i8 -23, i8 0
+  %4 = select i1 %0, i8 -24, i8 %3
+  ret i8 %4
 }
 
 ; 2 occurrences:
@@ -21,10 +20,9 @@ entry:
 define i8 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 32768
-  %3 = select i1 %2, i32 1, i32 2
-  %4 = select i1 %0, i32 0, i32 %3
-  %5 = trunc i32 %4 to i8
-  ret i8 %5
+  %3 = select i1 %2, i8 1, i8 2
+  %4 = select i1 %0, i8 0, i8 %3
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

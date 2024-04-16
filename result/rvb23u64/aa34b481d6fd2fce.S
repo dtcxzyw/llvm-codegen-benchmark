@@ -1,6 +1,6 @@
 func0000000000000007:                   # @func0000000000000007
 	addi	a2, a2, 4
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
@@ -18,7 +18,7 @@ func0000000000000017:                   # @func0000000000000017
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a2, a2, 1
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
 	ret

@@ -7,7 +7,7 @@
 define i32 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i32 %0, i32 0
   ret i32 %6
@@ -20,10 +20,10 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = and i32 %1, %3
-  %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 -1
-  ret i32 %6
+  %4 = and i32 %3, %1
+  %.not = icmp eq i32 %4, 0
+  %5 = select i1 %.not, i32 -1, i32 %0
+  ret i32 %5
 }
 
 ; 4 occurrences:
@@ -35,7 +35,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i16 %0, i16 0
   ret i16 %6

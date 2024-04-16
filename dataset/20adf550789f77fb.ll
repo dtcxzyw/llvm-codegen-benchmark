@@ -6,12 +6,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000058(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp ugt ptr %6, %0
-  ret i1 %7
+  %3 = icmp eq i32 %2, 1
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %1, i64 %4
+  %6 = icmp ugt ptr %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -19,12 +18,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = icmp eq i64 %3, 8
-  %5 = zext i1 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp ne ptr %6, %0
-  ret i1 %7
+  %3 = icmp eq i64 %2, 7
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %1, i64 %4
+  %6 = icmp ne ptr %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

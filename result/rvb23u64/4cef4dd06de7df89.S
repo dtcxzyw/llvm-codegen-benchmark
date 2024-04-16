@@ -12,7 +12,7 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, %lo(.LCPI0_1)
 	sh3add	a0, a0, a1
 	fld	fa5, 0(a0)
-	fadd.d	fa0, fa0, fa5
+	fadd.d	fa0, fa5, fa0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fmv.d.x	fa5, zero
@@ -21,7 +21,7 @@ func0000000000000004:                   # @func0000000000000004
 	bnez	a0, .LBB1_2
 	fli.d	fa5, 1.0
 .LBB1_2:                                # %entry
-	fadd.d	fa0, fa0, fa5
+	fadd.d	fa0, fa5, fa0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fli.s	fa5, 0.5
@@ -37,5 +37,5 @@ func0000000000000003:                   # @func0000000000000003
 	beqz	a0, .LBB3_2
 	fli.d	fa5, 1.0
 .LBB3_2:                                # %entry
-	fadd.d	fa0, fa0, fa5
+	fadd.d	fa0, fa5, fa0
 	ret

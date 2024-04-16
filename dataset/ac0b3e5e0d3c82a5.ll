@@ -11,7 +11,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = xor i32 %3, %0
   %5 = lshr i32 %4, 24
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
 

@@ -338,9 +338,8 @@ entry:
   %3 = getelementptr inbounds %"struct.std::pair.28.1554679", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 4
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 0
+  ret i1 %6
 }
 
 ; 80 occurrences:
@@ -430,9 +429,8 @@ entry:
   %3 = getelementptr %"struct.std::pair.70.1693773", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 4
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 0
+  ret i1 %6
 }
 
 ; 30 occurrences:
@@ -472,9 +470,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr i64 %5, 2
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 3
+  ret i1 %6
 }
 
 ; 6 occurrences:
@@ -490,9 +487,8 @@ entry:
   %3 = getelementptr inbounds i16, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 1
-  %7 = icmp ult i64 %6, 8
-  ret i1 %7
+  %6 = icmp ult i64 %5, 16
+  ret i1 %6
 }
 
 ; 34 occurrences:
@@ -536,9 +532,8 @@ entry:
   %3 = getelementptr inbounds ptr, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 3
-  %7 = icmp ugt i64 %6, 288230376151711743
-  ret i1 %7
+  %6 = icmp ugt i64 %5, 2305843009213693944
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -549,9 +544,8 @@ entry:
   %3 = getelementptr inbounds %"class.ue2::graph_detail::vertex_descriptor.2241344", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 4
-  %7 = icmp slt i64 %6, 0
-  ret i1 %7
+  %6 = icmp slt i64 %5, 0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -562,9 +556,8 @@ entry:
   %3 = getelementptr i16, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 1
-  %7 = icmp slt i64 %6, 1
-  ret i1 %7
+  %6 = icmp slt i64 %5, 2
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -575,9 +568,8 @@ entry:
   %3 = getelementptr i16, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = ashr exact i64 %5, 1
-  %7 = icmp ugt i64 %6, 40
-  ret i1 %7
+  %6 = icmp ugt i64 %5, 80
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

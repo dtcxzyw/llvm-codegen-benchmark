@@ -34,7 +34,7 @@ entry:
   %3 = fadd float %1, %2
   %4 = fptosi float %3 to i16
   %5 = zext i16 %4 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 

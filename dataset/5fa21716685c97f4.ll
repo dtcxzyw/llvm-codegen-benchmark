@@ -7,9 +7,9 @@ entry:
   %3 = or i64 %2, 4096
   %4 = select i1 %1, i64 %3, i64 %2
   %5 = and i64 %4, 31
-  %6 = icmp ne i64 %5, 27
-  %7 = select i1 %6, i64 %0, i64 %4
-  ret i64 %7
+  %.not = icmp eq i64 %5, 27
+  %6 = select i1 %.not, i64 %4, i64 %0
+  ret i64 %6
 }
 
 ; 5 occurrences:

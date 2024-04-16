@@ -14,6 +14,6 @@ func0000000000000000:                   # @func0000000000000000
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	ori	a0, a0, 227
-	andi	a0, a0, -5
+	andi	a0, a0, -232
+	addi	a0, a0, 227
 	ret

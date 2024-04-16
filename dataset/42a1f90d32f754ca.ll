@@ -370,9 +370,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 1, %0
-  %2 = add i32 %1, -1
-  ret i32 %2
+  %notmask = shl nsw i32 -1, %0
+  %1 = xor i32 %notmask, -1
+  ret i32 %1
 }
 
 ; 94 occurrences:
@@ -473,9 +473,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 1, %0
-  %2 = add nsw i64 %1, -1
-  ret i64 %2
+  %notmask = shl nsw i64 -1, %0
+  %1 = xor i64 %notmask, -1
+  ret i64 %1
 }
 
 ; 18 occurrences:
@@ -820,9 +820,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 1, %0
-  %2 = add nsw i32 %1, -1
-  ret i32 %2
+  %notmask = shl nsw i32 -1, %0
+  %1 = xor i32 %notmask, -1
+  ret i32 %1
 }
 
 ; 8 occurrences:

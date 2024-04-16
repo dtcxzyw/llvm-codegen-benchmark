@@ -7,10 +7,9 @@ define i1 @func00000000000000b8(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 3
-  %3 = add nsw i64 %2, -8
-  %4 = ashr exact i64 %3, 3
-  %5 = icmp ugt i64 %4, 288230376151711743
-  ret i1 %5
+  %3 = add nsw i64 %2, -288230376151711752
+  %4 = icmp ult i64 %3, -288230376151711744
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -18,12 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000a8(i32 %0) #0 {
 entry:
-  %1 = sext i32 %0 to i64
-  %2 = shl nsw i64 %1, 29
-  %3 = add nsw i64 %2, 3758096384
-  %4 = ashr i64 %3, 32
-  %5 = icmp ugt i64 %4, 1152921504606846975
-  ret i1 %5
+  %1 = icmp slt i32 %0, -7
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

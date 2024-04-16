@@ -26,7 +26,7 @@ func0000000000000004:                   # @func0000000000000004
 	flt.s	a0, fa5, fa1
 	beqz	a0, .LBB1_4
 .LBB1_2:                                # %entry
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret
 .LBB1_3:                                # %entry
 	fmv.w.x	fa1, zero
@@ -35,5 +35,5 @@ func0000000000000004:                   # @func0000000000000004
 	flt.s	a0, fa5, fa1
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	fadd.s	fa0, fa0, fa1
+	fadd.s	fa0, fa1, fa0
 	ret

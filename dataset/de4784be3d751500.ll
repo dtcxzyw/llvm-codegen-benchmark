@@ -1843,9 +1843,8 @@
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr inbounds %struct.NSVGpoint.1553122, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 28
-  ret ptr %4
+  %3 = getelementptr inbounds %struct.NSVGpoint.1553122, ptr %0, i64 %2, i32 7
+  ret ptr %3
 }
 
 ; 1401 occurrences:
@@ -3699,9 +3698,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.rb_econv_elem_t.1553238, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr %struct.rb_econv_elem_t.1553238, ptr %0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 690 occurrences:

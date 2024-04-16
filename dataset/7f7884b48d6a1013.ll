@@ -25,7 +25,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = icmp sgt i32 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -36,7 +36,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = icmp slt i32 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

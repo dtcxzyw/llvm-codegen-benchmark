@@ -24,7 +24,7 @@ entry:
   %3 = sub i16 %1, %2
   %4 = sdiv i16 %3, 8
   %5 = sext i16 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = sdiv i32 %3, 1000000
   %5 = sext i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

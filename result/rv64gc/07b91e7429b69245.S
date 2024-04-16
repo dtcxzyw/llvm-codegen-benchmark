@@ -26,7 +26,6 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000008:                   # @func0000000000000008
 	subw	a1, a1, a0
-	addiw	a1, a1, -7
-	sltiu	a0, a1, 255
-	xori	a0, a0, 1
+	addiw	a0, a1, -262
+	sltiu	a0, a0, -255
 	ret

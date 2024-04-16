@@ -5,7 +5,7 @@
 define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, -1000
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul i64 %1, 1000
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 500
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, -1000
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul i64 %1, 1000
   %6 = add i64 %4, %5
   %7 = icmp ult i64 %6, 100
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000548(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul nsw i64 %1, 12
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 230584300921369395
@@ -44,11 +44,10 @@ entry:
 define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
-  %4 = add nsw i64 %0, %3
-  %5 = mul nsw i64 %1, 12
-  %6 = add i64 %4, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %4 = add nsw i64 %3, %0
+  %.neg = mul i64 %1, -12
+  %5 = icmp eq i64 %4, %.neg
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -57,7 +56,7 @@ entry:
 define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, -1460970000
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = mul nsw i64 %1, -365
   %6 = add i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -70,7 +69,7 @@ entry:
 define i1 @func0000000000000556(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 136
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul nsw i64 %1, 3
   %6 = add nsw i64 %4, %5
   %7 = icmp slt i64 %6, 2
@@ -83,7 +82,7 @@ entry:
 define i1 @func000000000000055a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 136
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul nsw i64 %1, 3
   %6 = add nsw i64 %4, %5
   %7 = icmp sgt i64 %6, 1
@@ -96,7 +95,7 @@ entry:
 define i1 @func0000000000000558(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 88
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul nsw i64 %1, 5
   %6 = add nsw i64 %4, %5
   %7 = icmp ugt i64 %6, 2305843009213693951
@@ -109,11 +108,10 @@ entry:
 define i1 @func0000000000000551(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 88
-  %4 = add nsw i64 %0, %3
-  %5 = mul nsw i64 %1, 5
-  %6 = add nsw i64 %4, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %4 = add nsw i64 %3, %0
+  %.neg = mul i64 %1, -5
+  %5 = icmp eq i64 %4, %.neg
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -135,7 +133,7 @@ entry:
 define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 60
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %0, -60
   %6 = add nsw i32 %5, %4
   %7 = icmp slt i32 %6, 0

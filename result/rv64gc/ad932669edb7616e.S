@@ -55,11 +55,6 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000098:                   # @func0000000000000098
 	sext.w	a0, a0
-	srliw	a2, a1, 31
-	add	a2, a2, a1
-	andi	a2, a2, -2
-	subw	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret

@@ -11,7 +11,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = urem i16 %2, 100
   %4 = icmp eq i16 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

@@ -23,10 +23,10 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func0000000000000030:                   # @func0000000000000030
 	andi	a2, a0, 255
-	bnez	a2, .LBB3_2
-	mv	a0, a1
+	beqz	a2, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
-	addi	a0, a0, -47
+	addi	a0, a1, -47
 	ret
 func0000000000000029:                   # @func0000000000000029
 	sext.w	a2, a0

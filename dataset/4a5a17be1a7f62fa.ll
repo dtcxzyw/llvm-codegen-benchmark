@@ -29,9 +29,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 5
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds [12 x %"class.irr::video::SMaterial.1646452"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 128
-  ret ptr %5
+  %4 = getelementptr inbounds [12 x %"class.irr::video::SMaterial.1646452"], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 39 occurrences:
@@ -79,9 +78,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %4 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 14 occurrences:
@@ -104,9 +102,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [127 x %struct.NVMeRequest.1663713], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [127 x %struct.NVMeRequest.1663713], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:

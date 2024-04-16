@@ -152,7 +152,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = call i32 @llvm.umax.i32(i32 %0, i32 %1)
+  %2 = or i32 %0, %1
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i16 4112, i16 4096
   ret i16 %4

@@ -37,8 +37,8 @@ entry:
 define i1 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %2, -1
-  %4 = icmp ugt i64 %3, 4294967295
+  %3 = add i64 %2, -4294967297
+  %4 = icmp ult i64 %3, -4294967296
   %5 = icmp eq i64 %0, 4294967295
   %6 = or i1 %4, %5
   ret i1 %6

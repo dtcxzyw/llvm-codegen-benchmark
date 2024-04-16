@@ -11,8 +11,8 @@ define i64 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = add nsw i64 %3, 1
-  %5 = shl i64 %4, 4
+  %4 = shl i64 %3, 4
+  %5 = add i64 %4, 16
   ret i64 %5
 }
 
@@ -22,8 +22,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = add nsw i64 %3, -1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %3, %0
   %5 = shl nsw i64 %4, 2
   ret i64 %5
 }
@@ -40,8 +40,8 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = add i64 %3, 1
-  %5 = shl i64 %4, 3
+  %4 = shl i64 %3, 3
+  %5 = add i64 %4, 8
   ret i64 %5
 }
 

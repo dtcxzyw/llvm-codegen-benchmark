@@ -6,7 +6,7 @@
 define i8 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   %4 = or disjoint i8 %3, 6
   %5 = select i1 %0, i8 %4, i8 %3
   ret i8 %5

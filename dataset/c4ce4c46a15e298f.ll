@@ -40,7 +40,7 @@ entry:
 define i32 @func0000000000000081(i1 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 10
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq i8 %1, 1
   %6 = select i1 %4, i1 %5, i1 false
   %7 = select i1 %6, i32 256, i32 512

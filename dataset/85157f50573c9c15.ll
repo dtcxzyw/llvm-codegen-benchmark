@@ -10,10 +10,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 65533, i32 %1
-  %3 = lshr i32 %2, 12
-  %4 = trunc i32 %3 to i8
-  %5 = and i8 %4, 63
+  %2 = lshr i32 %1, 12
+  %3 = trunc i32 %2 to i8
+  %4 = and i8 %3, 63
+  %5 = select i1 %0, i8 15, i8 %4
   ret i8 %5
 }
 

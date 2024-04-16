@@ -7,10 +7,10 @@ func0000000000000040:                   # @func0000000000000040
 	srli	a4, a3, 63
 	srai	a3, a3, 25
 	add	a3, a3, a4
-	lui	a4, 1027482
-	addiw	a4, a4, 1024
+	lui	a4, 21094
+	addiw	a4, a4, -1024
 	mul	a3, a3, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a3
+	sub	a0, a0, a3
 	ret

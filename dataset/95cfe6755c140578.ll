@@ -23,9 +23,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = sub nsw i32 0, %2
-  %4 = and i32 %3, 31
+  %2 = sub i8 0, %1
+  %3 = and i8 %2, 31
+  %4 = zext nneg i8 %3 to i32
   %5 = shl i32 %0, %4
   ret i32 %5
 }

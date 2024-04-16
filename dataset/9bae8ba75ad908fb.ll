@@ -10,7 +10,7 @@ entry:
   %3 = lshr i16 -14335, %2
   %4 = trunc i16 %3 to i1
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

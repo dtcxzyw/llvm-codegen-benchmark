@@ -9,7 +9,7 @@ define double @func0000000000000000(double %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, double 2.000000e+02, double -2.000000e+02
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 

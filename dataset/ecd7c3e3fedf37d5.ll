@@ -60,7 +60,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %0
-  %3 = and i64 %1, %2
+  %3 = and i64 %2, %1
   %4 = lshr i64 %3, %0
   ret i64 %4
 }
@@ -86,7 +86,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 15, %0
-  %3 = and i32 %1, %2
+  %3 = and i32 %2, %1
   %4 = lshr i32 %3, %0
   ret i32 %4
 }

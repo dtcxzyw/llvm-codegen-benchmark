@@ -1,18 +1,6 @@
 
 %"class.std::thread.1572728" = type { %"class.std::thread::id.1572729" }
 %"class.std::thread::id.1572729" = type { i64 }
-%"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.1669898" = type { ptr, %"class.std::map.1366.1669899", %"class.std::vector.481.1669900" }
-%"class.std::map.1366.1669899" = type { %"class.std::_Rb_tree.1367.1669901" }
-%"class.std::_Rb_tree.1367.1669901" = type { %"struct.std::_Rb_tree<long, std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>, std::_Select1st<std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>>, std::less<long>>::_Rb_tree_impl.1669902" }
-%"struct.std::_Rb_tree<long, std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>, std::_Select1st<std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>>, std::less<long>>::_Rb_tree_impl.1669902" = type { %"struct.std::_Rb_tree_key_compare.1371.1669903", %"struct.std::_Rb_tree_header.1669107" }
-%"struct.std::_Rb_tree_key_compare.1371.1669903" = type { %"struct.std::less.1372.1669904" }
-%"struct.std::less.1372.1669904" = type { i8 }
-%"struct.std::_Rb_tree_header.1669107" = type { %"struct.std::_Rb_tree_node_base.1669109", i64 }
-%"struct.std::_Rb_tree_node_base.1669109" = type { i32, ptr, ptr, ptr }
-%"class.std::vector.481.1669900" = type { %"struct.std::_Vector_base.482.1669905" }
-%"struct.std::_Vector_base.482.1669905" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.1669906" }
-%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.1669906" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.1669907" }
-%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.1669907" = type { ptr, ptr, ptr }
 
 ; 63 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
@@ -84,8 +72,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 1056
-  %6 = add nsw i64 %5, -1
-  %7 = getelementptr inbounds %"class.std::thread.1572728", ptr %0, i64 %6
+  %6 = getelementptr %"class.std::thread.1572728", ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 
@@ -97,10 +85,9 @@ define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 80
-  %6 = add nsw i64 %5, 1
-  %7 = getelementptr %"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.1669898", ptr %0, i64 %6
-  ret ptr %7
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 80
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -111,8 +98,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv i64 %4, 2
-  %6 = add nsw i64 %5, -1
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -1
   ret ptr %7
 }
 

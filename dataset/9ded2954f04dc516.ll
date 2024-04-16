@@ -25,7 +25,7 @@ entry:
   %3 = mul i16 %1, %2
   %4 = zext i16 %3 to i48
   %5 = shl nuw nsw i48 %4, 16
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 

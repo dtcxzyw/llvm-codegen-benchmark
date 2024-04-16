@@ -32,7 +32,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
   %5 = mul i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

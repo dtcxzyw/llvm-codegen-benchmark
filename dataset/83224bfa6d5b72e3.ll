@@ -8,7 +8,7 @@
 define double @func0000000000000001(double %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sitofp i32 %4 to double
   %6 = fsub double %5, %0
   ret double %6

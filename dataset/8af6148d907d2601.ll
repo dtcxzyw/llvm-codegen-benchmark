@@ -13,7 +13,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add nuw nsw i32 %1, 2
   %6 = icmp slt i32 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -31,7 +31,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %1, 2
   %6 = icmp slt i32 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

@@ -10,7 +10,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 
@@ -21,7 +21,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
   %3 = sext i32 %2 to i64
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 

@@ -8,7 +8,7 @@
 define i1 @func00000000000000d4(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = xor i32 %3, 55296
   %5 = add nsw i32 %4, -1114112
   %6 = icmp ult i32 %5, -1112064

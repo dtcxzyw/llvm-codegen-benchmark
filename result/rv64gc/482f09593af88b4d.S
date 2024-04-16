@@ -21,7 +21,10 @@ func0000000000000031:                   # @func0000000000000031
 	andi	a2, a2, 255
 	bnez	a2, .LBB2_2
 	li	a1, 9
-.LBB2_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB2_2:
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -84,7 +87,10 @@ func0000000000000091:                   # @func0000000000000091
 	li	a3, 7
 	bgeu	a2, a3, .LBB9_2
 	li	a1, 1
-.LBB9_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB9_2:
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -189,7 +195,9 @@ func0000000000000114:                   # @func0000000000000114
 	li	a3, 11
 	bgeu	a3, a2, .LBB20_2
 	li	a1, 1
-.LBB20_2:                               # %entry
+	sltu	a0, a0, a1
+	ret
+.LBB20_2:
 	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
@@ -198,7 +206,10 @@ func0000000000000111:                   # @func0000000000000111
 	li	a3, 11
 	bgeu	a3, a2, .LBB21_2
 	li	a1, 1
-.LBB21_2:                               # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB21_2:
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -209,7 +220,9 @@ func0000000000000096:                   # @func0000000000000096
 	li	a3, 1000
 	bgeu	a2, a3, .LBB22_2
 	li	a1, 3
-.LBB22_2:                               # %entry
+	slt	a0, a0, a1
+	ret
+.LBB22_2:
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret

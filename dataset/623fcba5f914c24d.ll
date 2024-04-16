@@ -11,7 +11,7 @@ entry:
   %4 = xor i64 %3, -1
   %5 = tail call i64 @llvm.fshl.i64(i64 %1, i64 %1, i64 18)
   %6 = and i64 %5, %4
-  %7 = xor i64 %0, %6
+  %7 = xor i64 %6, %0
   ret i64 %7
 }
 

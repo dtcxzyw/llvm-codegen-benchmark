@@ -729,11 +729,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 16777216, i32 0
-  %5 = or disjoint i32 %0, %1
-  %6 = or disjoint i32 %5, %4
-  ret i32 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 0, i32 16777216
+  %4 = or disjoint i32 %0, %1
+  %5 = or disjoint i32 %4, %3
+  ret i32 %5
 }
 
 ; 10 occurrences:

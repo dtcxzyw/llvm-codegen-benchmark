@@ -11,7 +11,7 @@
 define i1 @func00000000000000f4(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp ult i32 %6, 13

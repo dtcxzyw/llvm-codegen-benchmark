@@ -44,7 +44,7 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = call noundef i32 @llvm.ctlz.i32(i32 %2, i1 false), !range !0
   ret i32 %3
 }
@@ -55,7 +55,7 @@ entry:
 define i64 @func0000000000000000(i128 %0) #0 {
 entry:
   %1 = lshr i128 %0, 64
-  %2 = trunc i128 %1 to i64
+  %2 = trunc nuw i128 %1 to i64
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 false), !range !1
   ret i64 %3
 }

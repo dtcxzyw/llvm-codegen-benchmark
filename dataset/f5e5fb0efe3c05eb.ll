@@ -182,8 +182,8 @@ define i32 @func0000000000000029(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, -1
   %3 = select i1 %2, i1 true, i1 %1
-  %4 = select i1 %3, i32 %0, i32 6
-  %5 = add nsw i32 %4, 1
+  %4 = add nsw i32 %0, 1
+  %5 = select i1 %3, i32 %4, i32 7
   ret i32 %5
 }
 

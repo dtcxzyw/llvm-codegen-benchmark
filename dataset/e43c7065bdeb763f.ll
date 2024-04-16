@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000010(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %1, 8193
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = sub i16 %1, %2
   %6 = select i1 %4, i16 %5, i16 0
   ret i16 %6

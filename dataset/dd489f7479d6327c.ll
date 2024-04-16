@@ -25,9 +25,9 @@
 define i8 @func0000000000000040(i8 %0, i64 %1) #0 {
 entry:
   %2 = zext i8 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = zext i1 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 

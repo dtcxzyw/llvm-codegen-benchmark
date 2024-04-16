@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f1(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %1, i32 %3, i32 %2
+  %3 = sext i1 %1 to i32
+  %4 = add nsw i32 %3, %2
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5

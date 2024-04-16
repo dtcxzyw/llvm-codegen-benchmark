@@ -48,10 +48,9 @@ entry:
 define i16 @func000000000000001a(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i16
-  %2 = shl nuw nsw i16 %1, 3
-  %3 = add nsw i16 %2, -5
-  %4 = lshr i16 %3, 3
-  ret i16 %4
+  %2 = add nuw nsw i16 %1, 8191
+  %3 = and i16 %2, 8191
+  ret i16 %3
 }
 
 ; 1 occurrences:
@@ -60,10 +59,9 @@ entry:
 define i32 @func000000000000001b(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = add nsw i32 %2, -4
-  %4 = lshr exact i32 %3, 2
-  ret i32 %4
+  %2 = add nuw nsw i32 %1, 1073741823
+  %3 = and i32 %2, 1073741823
+  ret i32 %3
 }
 
 ; 4 occurrences:

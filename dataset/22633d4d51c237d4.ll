@@ -19,7 +19,7 @@
 define i32 @func0000000000000010(i48 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i48
-  %3 = or disjoint i48 %0, %2
+  %3 = or disjoint i48 %2, %0
   %4 = trunc i48 %3 to i32
   %5 = shl i32 %4, 16
   ret i32 %5

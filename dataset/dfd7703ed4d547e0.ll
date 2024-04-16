@@ -39,10 +39,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = add i64 %1, 4096
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = icmp eq ptr %0, inttoptr (i64 -4096 to ptr)
+  ret i1 %1
 }
 
 ; 5 occurrences:
@@ -65,10 +63,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0) #0 {
 entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = add i64 %1, -88
-  %3 = icmp ne i64 %2, 0
-  ret i1 %3
+  %1 = icmp ne ptr %0, inttoptr (i64 88 to ptr)
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

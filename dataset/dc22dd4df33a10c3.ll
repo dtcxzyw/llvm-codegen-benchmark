@@ -9,7 +9,7 @@ define float @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1597463007, %1
   %3 = bitcast i32 %2 to float
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   %5 = tail call float @llvm.fmuladd.f32(float %4, float %3, float 1.500000e+00)
   %6 = fmul float %5, %3
   ret float %6

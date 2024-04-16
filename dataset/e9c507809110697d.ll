@@ -7,7 +7,7 @@
 define i32 @func00000000000000b1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i32
   %6 = or disjoint i32 %5, 2

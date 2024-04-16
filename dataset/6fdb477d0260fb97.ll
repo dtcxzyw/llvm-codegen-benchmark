@@ -8,7 +8,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 16, i32 8
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = shl nuw nsw i32 %5, 16
   %7 = or disjoint i32 %6, %0
   ret i32 %7
@@ -23,7 +23,7 @@ entry:
   %4 = select i1 %3, i32 -48, i32 -55
   %5 = add nsw i32 %4, %1
   %6 = shl nuw nsw i32 %5, 4
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -50,12 +50,12 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000080(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 10
-  %4 = select i1 %3, i8 0, i8 9
-  %5 = add i8 %4, %1
-  %6 = shl i8 %5, 4
-  %7 = or i8 %0, %6
-  ret i8 %7
+  %.inv = icmp ugt i8 %2, 9
+  %3 = select i1 %.inv, i8 9, i8 0
+  %4 = add i8 %3, %1
+  %5 = shl i8 %4, 4
+  %6 = or i8 %5, %0
+  ret i8 %6
 }
 
 ; 1 occurrences:
@@ -65,7 +65,7 @@ define i32 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 6
   %4 = select i1 %3, i32 2, i32 1
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = shl i32 %5, 11
   %7 = or disjoint i32 %6, %0
   ret i32 %7
@@ -80,7 +80,7 @@ entry:
   %4 = select i1 %3, i32 -48, i32 -87
   %5 = add nsw i32 %4, %1
   %6 = shl nsw i32 %5, 4
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

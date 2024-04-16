@@ -35,10 +35,9 @@
 define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sdiv exact i64 %1, 24
-  %5 = add nsw i64 %4, %3
-  %6 = getelementptr inbounds %"struct.ClientMap::DrawDescriptor.1649137", ptr %0, i64 %5
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr %"struct.ClientMap::DrawDescriptor.1649137", ptr %4, i64 %3
+  ret ptr %5
 }
 
 ; 9 occurrences:
@@ -55,10 +54,9 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sdiv exact i64 %1, 88
-  %5 = add nsw i64 %4, %3
-  %6 = getelementptr %"struct.ue2::rose_literal_info.2238268", ptr %0, i64 %5
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = getelementptr %"struct.ue2::rose_literal_info.2238268", ptr %4, i64 %3
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

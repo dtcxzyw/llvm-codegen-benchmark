@@ -6,10 +6,10 @@
 define i1 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = sub i32 %1, %3
-  %5 = sub i32 %0, %4
-  %6 = icmp ult i32 %5, 65536
-  ret i1 %6
+  %.neg = sub i32 %3, %1
+  %4 = add i32 %.neg, %0
+  %5 = icmp ult i32 %4, 65536
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -18,10 +18,10 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = sub i64 %0, %4
-  %6 = icmp eq i64 %5, 16
-  ret i1 %6
+  %.neg = sub i64 %3, %1
+  %4 = add i64 %.neg, %0
+  %5 = icmp eq i64 %4, 16
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -30,10 +30,10 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = sub i64 %0, %4
-  %6 = icmp ult i64 %5, 16
-  ret i1 %6
+  %.neg = sub i64 %3, %1
+  %4 = add i64 %.neg, %0
+  %5 = icmp ult i64 %4, 16
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -42,10 +42,10 @@ entry:
 define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = sub i64 %0, %4
-  %6 = icmp eq i64 %5, 16
-  ret i1 %6
+  %.neg = sub i64 %3, %1
+  %4 = add i64 %.neg, %0
+  %5 = icmp eq i64 %4, 16
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

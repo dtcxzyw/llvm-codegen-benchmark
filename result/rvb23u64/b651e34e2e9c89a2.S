@@ -16,7 +16,6 @@ func00000000000000f8:                   # @func00000000000000f8
 	srliw	a0, a0, 18
 	ret
 func0000000000000040:                   # @func0000000000000040
-	slli	a1, a1, 32
-	add	a0, a0, a1
 	srli	a0, a0, 32
+	addw	a0, a0, a1
 	ret

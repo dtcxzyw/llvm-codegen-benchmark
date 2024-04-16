@@ -39,8 +39,8 @@
 define i1 @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ult ptr %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp ugt ptr %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

@@ -9,7 +9,7 @@ entry:
   %2 = shl i32 %1, 12
   %3 = and i32 %2, 4190208
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = shl i32 %1, 12
   %3 = and i32 %2, 4190208
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, 2147483640
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, -32
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

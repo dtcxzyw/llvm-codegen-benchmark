@@ -70,10 +70,10 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000c:                   # @func000000000000000c
 	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
-	mul	a0, a0, a2
 	slli	a1, a1, 40
+	mul	a0, a0, a2
 	srli	a2, a0, 24
 	or	a1, a1, a2
 	slli	a0, a0, 40

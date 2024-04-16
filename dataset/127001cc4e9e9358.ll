@@ -22,8 +22,8 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = sub i64 %0, %3
-  %5 = add i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

@@ -23,7 +23,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 510
   %5 = xor i32 %4, %1
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   ret i32 %6
 }
 

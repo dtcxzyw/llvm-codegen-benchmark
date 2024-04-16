@@ -21,7 +21,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = add i64 %2, %0
   %4 = sub nsw i64 0, %0
   %5 = and i64 %3, %4
@@ -34,7 +34,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = add i64 %2, %0
   %4 = sub i64 0, %0
   %5 = and i64 %3, %4

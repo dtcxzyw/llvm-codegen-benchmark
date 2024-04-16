@@ -53,7 +53,7 @@ entry:
   %2 = shl i16 %1, 4
   %3 = zext i16 %2 to i48
   %4 = shl nuw i48 %3, 32
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 

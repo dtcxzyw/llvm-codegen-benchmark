@@ -241,7 +241,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.1561402", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -260,7 +260,7 @@ entry:
   %3 = and i32 %2, 32
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -285,7 +285,7 @@ entry:
   %3 = and i32 %2, 2147483647
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i16, ptr %1, i64 %4
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -300,7 +300,7 @@ entry:
   %3 = and i32 %2, -8
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -325,7 +325,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -337,7 +337,7 @@ entry:
   %3 = and i16 %2, -16
   %4 = zext i16 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -349,7 +349,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr %union.LWLockPadded.2119241, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -361,7 +361,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr %union.LWLockPadded.2119241, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

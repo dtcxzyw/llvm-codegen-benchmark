@@ -7,7 +7,7 @@
 define i1 @func0000000000000008(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 65535)
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6

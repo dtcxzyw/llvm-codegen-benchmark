@@ -24,8 +24,8 @@ entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp eq i64 %2, 0
   %4 = add nsw i32 %0, -1075
-  %5 = select i1 %3, i32 -1074, i32 %4
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %4 to i64
+  %6 = select i1 %3, i64 4294966222, i64 %5
   ret i64 %6
 }
 

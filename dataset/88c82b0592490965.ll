@@ -25,9 +25,8 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 4611686018427387902)
   %4 = add i64 %3, %1
-  %5 = sub i64 %4, %0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

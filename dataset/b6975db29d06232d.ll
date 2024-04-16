@@ -31,9 +31,8 @@
 define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr inbounds [2 x %struct.pollfd.1586733], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds [2 x %struct.pollfd.1586733], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 12 occurrences:
@@ -53,9 +52,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr [2 x %struct.TimedAverageWindow.1666295], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr [2 x %struct.TimedAverageWindow.1666295], ptr %0, i64 0, i64 %2, i32 3
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -64,9 +62,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr inbounds [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -76,9 +73,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr [2 x %struct.ssh_peer_data.1930667], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 72
-  ret ptr %4
+  %3 = getelementptr [2 x %struct.ssh_peer_data.1930667], ptr %0, i64 0, i64 %2, i32 10, i64 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

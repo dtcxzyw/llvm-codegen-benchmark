@@ -6,9 +6,9 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
-  %3 = zext i32 %2 to i64
-  %4 = lshr i64 %3, 2
-  %5 = and i64 %4, 1073741792
+  %3 = lshr i32 %2, 2
+  %4 = and i32 %3, 1073741792
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

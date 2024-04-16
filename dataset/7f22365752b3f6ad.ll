@@ -12,7 +12,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = tail call double @llvm.fabs.f64(double %3)
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 
@@ -33,7 +33,7 @@ define float @func0000000000000001(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
   %4 = tail call noundef float @llvm.fabs.f32(float %3)
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

@@ -16,9 +16,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, 5791343
-  %2 = lshr i32 %1, 18
-  %3 = and i32 %2, 63
+  %1 = lshr i32 %0, 18
+  %2 = and i32 %1, 63
+  %3 = xor i32 %2, 22
   ret i32 %3
 }
 

@@ -2,7 +2,10 @@ func0000000000000008:                   # @func0000000000000008
 	seqz	a1, a0
 	add	a0, a0, a0
 	add	a0, a0, a1
-	addi	a0, a0, 2
+	li	a1, -1
+	slli	a1, a1, 60
+	addi	a1, a1, 2
+	add	a0, a0, a1
 	srli	a0, a0, 60
-	snez	a0, a0
+	sltiu	a0, a0, 15
 	ret

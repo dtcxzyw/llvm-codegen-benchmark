@@ -7,7 +7,7 @@ entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = add nuw nsw i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw i64 %0, %4
+  %5 = mul nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 1)
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw i64 %0, %4
+  %5 = mul nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 2)
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -70,7 +70,7 @@ entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -82,7 +82,7 @@ entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 -1)
   %3 = add nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -96,7 +96,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 3)
   %3 = add nuw nsw i32 %2, 10
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 

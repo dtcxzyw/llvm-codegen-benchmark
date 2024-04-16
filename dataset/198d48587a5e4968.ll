@@ -12,7 +12,7 @@ define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %2, %0
   %4 = fsub double %3, %1
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   %6 = fcmp ogt double %5, 0.000000e+00
   ret i1 %6
 }

@@ -13,9 +13,9 @@ define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %0
-  %6 = sub i64 65536, %5
-  ret i64 %6
+  %.neg = sub i64 %0, %4
+  %5 = add i64 %.neg, 65536
+  ret i64 %5
 }
 
 ; 153 occurrences:
@@ -177,9 +177,8 @@ define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %0
-  %6 = sub i64 0, %5
-  ret i64 %6
+  %.neg = sub i64 %0, %4
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

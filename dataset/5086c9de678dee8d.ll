@@ -37,8 +37,8 @@ entry:
   %3 = mul nsw i32 %2, 10000
   %4 = mul nsw i32 %1, 100
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
-  %7 = icmp ne i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp ne i32 %5, %6
   ret i1 %7
 }
 

@@ -26,9 +26,6 @@ func0000000000000038:                   # @func0000000000000038
 	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
-	or	a1, a1, a2
-	andi	a1, a1, 127
-	or	a0, a0, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	slti	a0, a0, 0

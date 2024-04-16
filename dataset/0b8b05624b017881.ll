@@ -12,9 +12,8 @@ entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
   %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %struct.ImGuiKeyRoutingData.1931704, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 2
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.ImGuiKeyRoutingData.1931704, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:

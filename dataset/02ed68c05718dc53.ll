@@ -111,9 +111,9 @@ define i8 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 1
   %3 = or i8 %2, -99
-  %4 = icmp ne i64 %0, 0
-  %5 = select i1 %4, i8 -1, i8 %3
-  ret i8 %5
+  %.not = icmp eq i64 %0, 0
+  %4 = select i1 %.not, i8 %3, i8 -1
+  ret i8 %4
 }
 
 ; 2 occurrences:

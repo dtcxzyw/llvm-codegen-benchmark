@@ -10,7 +10,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 -1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = tail call i64 @llvm.ctpop.i64(i64 %4), !range !0
   %6 = add i64 %5, %0
   ret i64 %6

@@ -26,7 +26,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = shl i32 16, %1
   %6 = select i1 %4, i32 0, i32 %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

@@ -8,10 +8,9 @@
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 7
-  %4 = sub nuw nsw i32 8, %3
-  %5 = sub i32 %0, %4
-  ret i32 %5
+  %.neg = or i32 %2, -8
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 ; 10 occurrences:
@@ -29,10 +28,9 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 7
-  %4 = sub nuw nsw i32 8, %3
-  %5 = sub nsw i32 %0, %4
-  ret i32 %5
+  %.neg = or i32 %2, -8
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

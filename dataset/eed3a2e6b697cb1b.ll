@@ -9,7 +9,7 @@ entry:
   %4 = tail call double @llvm.fmuladd.f64(double %3, double 0x3FD287A7636F4361, double 0x3FC68A288B60C8B3)
   %5 = tail call double @llvm.fmuladd.f64(double %1, double 0x3FD34413509F79FB, double %4)
   %6 = fptosi double %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = tail call double @llvm.fmuladd.f64(double %3, double 0x3FD287A7636F4361, double 0x3FC68A288B60C8B3)
   %5 = tail call double @llvm.fmuladd.f64(double %1, double 0x3FD34413509F79FB, double %4)
   %6 = fptosi double %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

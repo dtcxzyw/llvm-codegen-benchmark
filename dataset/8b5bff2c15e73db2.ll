@@ -6,7 +6,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -19,7 +19,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 
@@ -30,7 +30,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 512
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -43,7 +43,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -57,7 +57,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 65520
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

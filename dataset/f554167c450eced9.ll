@@ -25,7 +25,7 @@
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1792
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = shl nuw i64 %3, 48
   %5 = ashr exact i64 %4, 48
   ret i64 %5
@@ -36,8 +36,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -6148914691236517206
-  %3 = or disjoint i64 %0, %2
+  %2 = and i64 %1, 2863311530
+  %3 = or i64 %2, %0
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   ret i64 %5

@@ -17,8 +17,8 @@
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = xor i32 %2, -1
-  %4 = icmp eq i32 %0, %3
+  %3 = xor i32 %2, %0
+  %4 = icmp eq i32 %3, -1
   ret i1 %4
 }
 
@@ -30,7 +30,7 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -41,7 +41,7 @@ define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -56,10 +56,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 -1, %1
-  %3 = xor i64 %2, -1
-  %4 = icmp ugt i64 %0, %3
-  ret i1 %4
+  %.highbits = lshr i64 %0, %1
+  %2 = icmp ne i64 %.highbits, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -69,7 +68,7 @@ define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 
@@ -80,7 +79,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -90,8 +89,8 @@ entry:
 define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = xor i64 %2, -1
-  %4 = icmp ne i64 %0, %3
+  %3 = xor i64 %2, %0
+  %4 = icmp ne i64 %3, -1
   ret i1 %4
 }
 

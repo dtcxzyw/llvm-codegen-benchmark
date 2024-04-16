@@ -9,9 +9,8 @@ entry:
   %3 = fadd float %1, %2
   %4 = fneg float %3
   %5 = fsub float %4, %0
-  %6 = fmul float %5, 5.000000e-01
-  %7 = fneg float %6
-  ret float %7
+  %6 = fmul float %5, -5.000000e-01
+  ret float %6
 }
 
 attributes #0 = { nounwind }

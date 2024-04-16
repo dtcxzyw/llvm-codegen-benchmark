@@ -33,7 +33,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 536870911
   %5 = icmp sge i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 536870911
   %5 = icmp slt i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -74,7 +74,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 536870911
   %5 = icmp ult i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -86,7 +86,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2147483647
   %5 = icmp sgt i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -98,7 +98,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 15
   %5 = icmp uge i8 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -110,7 +110,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 16777215
   %5 = icmp ugt i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

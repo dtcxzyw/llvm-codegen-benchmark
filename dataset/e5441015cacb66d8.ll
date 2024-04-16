@@ -10,7 +10,7 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = icmp slt i32 %2, 0
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = icmp slt i32 %6, 0
   ret i1 %7
 }

@@ -55,10 +55,8 @@ entry:
 define ptr @func000000000000000f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 28
-  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  %6 = getelementptr inbounds [32 x i8], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %3, i64 0, i64 %1, i32 9, i64 %0
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -69,10 +67,8 @@ entry:
 define ptr @func0000000000000002(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 12336
-  %4 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  %6 = getelementptr [31 x ptr], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %3, i64 0, i64 %1, i32 5, i64 %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

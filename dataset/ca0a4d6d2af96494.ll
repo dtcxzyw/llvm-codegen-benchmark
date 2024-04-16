@@ -9,8 +9,8 @@ define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = icmp ult i64 %0, 4
-  %4 = select i1 %3, i32 0, i32 %2
-  %5 = tail call i32 @llvm.umin.i32(i32 %4, i32 10)
+  %4 = tail call i32 @llvm.umin.i32(i32 %2, i32 10)
+  %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
 

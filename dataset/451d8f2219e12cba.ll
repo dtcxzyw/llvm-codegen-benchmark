@@ -30,8 +30,8 @@ define i32 @func0000000000000019(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, -1
-  %6 = select i1 %0, i32 %5, i32 %4
+  %5 = sext i1 %0 to i32
+  %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 

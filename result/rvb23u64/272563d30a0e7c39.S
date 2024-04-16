@@ -59,10 +59,12 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000018:                   # @func0000000000000018
 	zext.h	a0, a0
 	subw	a1, a1, a2
-	sltiu	a1, a1, 4
+	srliw	a1, a1, 2
+	slli	a1, a1, 2
+	snez	a1, a1
 	lui	a2, 14
 	addiw	a2, a2, -1024
 	xor	a0, a0, a2
 	seqz	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret

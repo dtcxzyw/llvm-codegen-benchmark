@@ -17,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
-  %2 = bitcast i32 %1 to float
-  %3 = fcmp oeq float %2, 0.000000e+00
+  %2 = and i32 %1, 2147483647
+  %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

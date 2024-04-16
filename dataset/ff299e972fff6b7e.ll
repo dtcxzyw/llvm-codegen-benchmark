@@ -10,9 +10,9 @@ define i8 @func0000000000000028(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = and i16 %0, %4
+  %5 = and i16 %4, %0
   %6 = lshr i16 %5, 8
-  %7 = trunc i16 %6 to i8
+  %7 = trunc nuw i16 %6 to i8
   ret i8 %7
 }
 
@@ -24,7 +24,7 @@ define i8 @func000000000000002a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = and i16 %0, %4
+  %5 = and i16 %4, %0
   %6 = lshr i16 %5, 8
   %7 = trunc nuw i16 %6 to i8
   ret i8 %7
@@ -53,7 +53,7 @@ entry:
   %4 = or i64 %3, %1
   %5 = and i64 %4, %0
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

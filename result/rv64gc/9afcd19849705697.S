@@ -10,8 +10,10 @@ func0000000000000003:                   # @func0000000000000003
 	ori	a0, a1, 4
 	ret
 func0000000000000002:                   # @func0000000000000002
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	and	a0, a0, a1
-	ori	a0, a0, 2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
+	li	a0, 2
+	ret
+.LBB1_2:
+	ori	a0, a1, 2
 	ret

@@ -1,11 +1,11 @@
 func0000000000000024:                   # @func0000000000000024
-	slli	a0, a0, 43
-	srli	a0, a0, 59
+	lui	a1, 496
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 255
-	andi	a0, a0, 1984
+	andi	a0, a0, 1920
 	or	a0, a0, a1
 	sltiu	a0, a0, 128
 	ret
@@ -31,25 +31,17 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	andi	a1, a1, 255
-	andi	a0, a0, -256
-	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	andi	a1, a1, 255
-	andi	a0, a0, -256
-	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a1, a1, 255
-	andi	a0, a0, 1984
-	or	a0, a0, a1
-	sltiu	a0, a0, 128
+	andi	a0, a0, 1920
+	seqz	a0, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a1, a1, 255
@@ -58,8 +50,6 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	sext.w	a1, a1
-	or	a0, a0, a1
 	srli	a0, a0, 59
 	snez	a0, a0
 	ret
@@ -76,11 +66,8 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, 255
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a0, a0, a2
-	or	a0, a0, a1
-	sltiu	a0, a0, 256
-	xori	a0, a0, 1
+	lui	a1, 16
+	addiw	a1, a1, -256
+	and	a0, a0, a1
+	snez	a0, a0
 	ret

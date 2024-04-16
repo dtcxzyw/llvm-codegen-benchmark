@@ -5,10 +5,9 @@
 define i32 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 11 occurrences:
@@ -27,10 +26,9 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -40,10 +38,9 @@ entry:
 define i32 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -52,10 +49,9 @@ entry:
 define i32 @func0000000000000050(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -67,7 +63,7 @@ define i16 @func0000000000000070(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i16
   ret i16 %6
 }
@@ -78,10 +74,9 @@ entry:
 define i8 @func0000000000000004(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
-  %4 = zext i8 %3 to i32
-  %5 = add nsw i32 %0, %4
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %4 = trunc i32 %0 to i8
+  %5 = add i8 %3, %4
+  ret i8 %5
 }
 
 ; 4 occurrences:
@@ -93,10 +88,9 @@ entry:
 define i32 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -106,7 +100,7 @@ define i16 @func000000000000002c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i16
   ret i16 %6
 }
@@ -117,10 +111,9 @@ entry:
 define i32 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

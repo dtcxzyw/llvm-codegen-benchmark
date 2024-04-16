@@ -23,8 +23,8 @@ define i64 @func000000000000001b(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 12
   %2 = add nuw nsw i64 %1, 2097151
-  %3 = lshr i64 %2, 21
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = lshr i64 %2, 18
+  %4 = and i64 %3, 34359738360
   ret i64 %4
 }
 

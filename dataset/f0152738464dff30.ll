@@ -14,7 +14,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = call i64 @llvm.ctpop.i64(i64 %5), !range !0
   ret i64 %6
 }

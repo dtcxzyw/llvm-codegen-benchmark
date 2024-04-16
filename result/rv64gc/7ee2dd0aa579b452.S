@@ -4,7 +4,7 @@ func00000000000003f1:                   # @func00000000000003f1
 	add	a1, a1, a2
 	srliw	a1, a1, 5
 	slli	a1, a1, 5
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000158:                   # @func0000000000000158

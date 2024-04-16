@@ -265,7 +265,7 @@
 define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 128, i32 0
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = xor i32 %4, 42
   %6 = lshr i32 %5, %0
   %7 = icmp eq i32 %6, 0

@@ -10,7 +10,7 @@ entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

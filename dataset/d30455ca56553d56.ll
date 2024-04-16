@@ -9,7 +9,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = xor i64 %4, -1
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = getelementptr inbounds [8192 x i8], ptr %0, i64 0, i64 %6
   ret ptr %7
 }

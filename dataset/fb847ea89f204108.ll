@@ -9,7 +9,7 @@ entry:
   %2 = fcmp olt float %1, 1.000000e+00
   %3 = select i1 %2, float %1, float 1.000000e+00
   %4 = fsub float 1.000000e+00, %3
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

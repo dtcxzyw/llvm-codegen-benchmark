@@ -1,6 +1,4 @@
 func0000000000000038:                   # @func0000000000000038
-	andi	a1, a1, 1023
-	or	a0, a0, a1
 	lui	a1, 16
 	add	a0, a0, a1
 	srliw	a0, a0, 18

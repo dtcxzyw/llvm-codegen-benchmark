@@ -9,8 +9,8 @@ define i32 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
   %2 = icmp sgt i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
+  %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -24,8 +24,8 @@ define i32 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
   %2 = icmp sgt i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
+  %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 

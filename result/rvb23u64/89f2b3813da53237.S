@@ -32,14 +32,16 @@ func0000000000000106:                   # @func0000000000000106
 func0000000000000101:                   # @func0000000000000101
 	srli	a2, a2, 17
 	czero.nez	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000201:                   # @func0000000000000201
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
 	czero.eqz	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000216:                   # @func0000000000000216
@@ -55,7 +57,9 @@ func0000000000000181:                   # @func0000000000000181
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
-	addw	a0, a0, a1
+	sext.w	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
@@ -129,7 +133,8 @@ func0000000000000041:                   # @func0000000000000041
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000021a:                   # @func000000000000021a
@@ -152,6 +157,8 @@ func0000000000000051:                   # @func0000000000000051
 	sext.w	a2, a2
 	addi	a2, a2, -2
 	czero.nez	a1, a1, a2
-	addw	a0, a0, a1
+	sext.w	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
   %5 = shl i32 %1, %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

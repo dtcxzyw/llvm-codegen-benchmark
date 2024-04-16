@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %0, %1
-  %3 = mul i64 %2, %1
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
+  %.fr = freeze i64 %0
+  %2 = srem i64 %.fr, %1
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -18,10 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %0, %1
-  %3 = mul nsw i32 %2, %1
-  %4 = icmp eq i32 %3, %0
-  ret i1 %4
+  %.fr = freeze i32 %0
+  %2 = srem i32 %.fr, %1
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -31,10 +31,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %0, %1
-  %3 = mul nsw i32 %2, %1
-  %4 = icmp ne i32 %3, %0
-  ret i1 %4
+  %.fr = freeze i32 %0
+  %2 = srem i32 %.fr, %1
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

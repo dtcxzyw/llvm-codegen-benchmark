@@ -8,12 +8,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000f6(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = sext i32 %0 to i64
-  %6 = icmp slt i64 %4, %5
-  ret i1 %6
+  %2 = shl i64 %1, 1
+  %3 = add i64 %2, -1
+  %4 = sext i32 %0 to i64
+  %5 = icmp slt i64 %3, %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

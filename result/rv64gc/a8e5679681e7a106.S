@@ -11,8 +11,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a3, a0, 255
-	andi	a0, a2, 240
-	seqz	a0, a0
+	andi	a0, a2, 255
+	sltiu	a0, a0, 16
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	andi	a0, a0, 255

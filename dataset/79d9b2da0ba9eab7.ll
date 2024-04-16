@@ -21,12 +21,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.lua_TValue.2145648, ptr %1, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -16
-  %7 = icmp ult ptr %6, %0
-  ret i1 %7
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %struct.lua_TValue.2145648, ptr %1, i64 %3
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:

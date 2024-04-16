@@ -10,7 +10,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40
   %5 = trunc i64 %4 to i32
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
 }

@@ -22,10 +22,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.smin.i32(i32 %0, i32 128)
-  %2 = sub nsw i32 %0, %1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp slt i32 %0, 129
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -39,10 +37,8 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.smin.i32(i32 %0, i32 4096)
-  %2 = sub i32 %0, %1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp slt i32 %0, 4097
+  ret i1 %1
 }
 
 ; 24 occurrences:
@@ -73,10 +69,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.smin.i64(i64 %0, i64 4)
-  %2 = sub nsw i64 %0, %1
-  %3 = icmp sgt i64 %2, 0
-  ret i1 %3
+  %1 = icmp sgt i64 %0, 4
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

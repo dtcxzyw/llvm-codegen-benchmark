@@ -172,10 +172,10 @@ define i32 @func0000000000000075(i32 %0, i16 %1) #0 {
 entry:
   %2 = udiv i16 %1, 27
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, 27
-  %5 = add nsw i32 %4, -292
-  %6 = sub nsw i32 %0, %5
-  ret i32 %6
+  %.neg = mul nsw i32 %3, -27
+  %.neg1 = add nsw i32 %.neg, 292
+  %4 = add i32 %.neg1, %0
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

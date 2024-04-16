@@ -37,7 +37,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
   %6 = mul i64 %5, -7286425919675154353
-  %7 = xor i64 %0, %6
+  %7 = xor i64 %6, %0
   ret i64 %7
 }
 
@@ -54,7 +54,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
   %6 = mul i64 %5, -4132994306676758123
-  %7 = xor i64 %0, %6
+  %7 = xor i64 %6, %0
   ret i64 %7
 }
 

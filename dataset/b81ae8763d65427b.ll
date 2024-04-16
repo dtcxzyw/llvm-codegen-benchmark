@@ -38,7 +38,7 @@ entry:
   %2 = and i32 %1, 255
   %3 = add nuw nsw i32 %2, 7
   %4 = lshr i32 %3, 3
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 
@@ -48,8 +48,8 @@ entry:
 define i16 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 25
-  %2 = and i32 %1, -8
-  %3 = add i32 %2, -8
+  %2 = and i32 %1, 262136
+  %3 = add nuw nsw i32 %2, 262136
   %4 = lshr exact i32 %3, 2
   %5 = trunc i32 %4 to i16
   ret i16 %5

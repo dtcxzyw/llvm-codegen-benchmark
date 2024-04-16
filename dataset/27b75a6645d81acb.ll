@@ -10,9 +10,8 @@ entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.be128.2027289, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.be128.2027289, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:

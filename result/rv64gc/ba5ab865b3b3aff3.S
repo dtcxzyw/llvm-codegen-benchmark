@@ -12,9 +12,9 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000033:                   # @func0000000000000033
 	andi	a0, a0, 1
 	sext.w	a2, a1
-	li	a1, 2
-	bnez	a2, .LBB1_2
 	li	a1, 98
+	beqz	a2, .LBB1_2
+	li	a1, 2
 .LBB1_2:                                # %entry
 	addi	a0, a0, -1
 	andi	a0, a0, 8

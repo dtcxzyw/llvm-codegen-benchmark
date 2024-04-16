@@ -102,10 +102,9 @@ define i32 @func0000000000000001(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = lshr i32 %1, 23
-  %3 = and i32 %2, 255
+  %3 = and i32 %2, 254
   %4 = add nsw i32 %3, -150
-  %5 = and i32 %4, -2
-  ret i32 %5
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

@@ -59,7 +59,7 @@ define i1 @func00000000000000aa(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp sgt i32 %1, 0
   %7 = and i1 %5, %6
   ret i1 %7
@@ -73,7 +73,7 @@ define i1 @func00000000000000ac(i96 %0, i1 %1, i96 %2) #0 {
 entry:
   %3 = trunc i96 %2 to i32
   %4 = icmp sgt i32 %3, 2
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = icmp ne i96 %0, 0
   %7 = and i1 %6, %5
   ret i1 %7

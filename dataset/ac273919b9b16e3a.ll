@@ -7,7 +7,7 @@
 define i1 @func0000000000000001(i16 %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i32
+  %3 = trunc nuw nsw i48 %2 to i32
   %4 = zext i16 %0 to i32
   %5 = icmp eq i32 %4, %3
   ret i1 %5

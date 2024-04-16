@@ -22,10 +22,9 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
-  %3 = and i64 %2, 65535
-  %4 = mul nuw nsw i64 %3, %0
-  %5 = and i64 %4, 65535
-  ret i64 %5
+  %3 = mul i64 %2, %0
+  %4 = and i64 %3, 65535
+  ret i64 %4
 }
 
 ; 3 occurrences:
@@ -37,7 +36,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 65280
-  %4 = mul nuw i32 %0, %3
+  %4 = mul nuw i32 %3, %0
   %5 = and i32 %4, -16777216
   ret i32 %5
 }

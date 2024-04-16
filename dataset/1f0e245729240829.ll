@@ -100,11 +100,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -4
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp ugt ptr %0, %1
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
+  %3 = icmp ugt i64 %2, 3
+  %4 = icmp ugt ptr %0, %1
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 13 occurrences:

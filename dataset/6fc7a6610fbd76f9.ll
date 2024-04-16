@@ -33,7 +33,7 @@ define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -52,7 +52,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 88
   %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -114,7 +114,7 @@ define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 88
   %3 = add nsw i64 %2, -1
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -127,7 +127,7 @@ define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = add nsw i32 %2, 8
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -146,7 +146,7 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = add nsw i32 %2, 3
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -181,7 +181,7 @@ define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = add nsw i64 %2, 1
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -196,7 +196,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 16
   %3 = add nsw i32 %2, -3
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -207,7 +207,7 @@ define i1 @func0000000000000055(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = add nsw i64 %2, -1
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 
@@ -218,7 +218,7 @@ define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = add nsw i32 %2, -1
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 

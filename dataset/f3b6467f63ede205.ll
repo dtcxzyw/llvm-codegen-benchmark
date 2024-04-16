@@ -10,10 +10,10 @@ define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = shl nsw i32 %2, 6
-  %4 = and i32 %3, 4032
-  %5 = or disjoint i32 %4, %0
-  %6 = and i32 %5, 63488
-  ret i32 %6
+  %4 = and i32 %3, 2048
+  %.masked = and i32 %0, 63488
+  %5 = or i32 %4, %.masked
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

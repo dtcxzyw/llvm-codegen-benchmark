@@ -6,11 +6,10 @@
 define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  %4 = add nsw i32 %0, -1
-  %5 = select i1 %3, i32 %4, i32 %0
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %sext = add nsw i32 %2, -1
+  %3 = add nsw i32 %sext, %0
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
 }
 
 ; 3 occurrences:

@@ -181,7 +181,7 @@ entry:
 define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4398046511103
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nsw i64 %3, -4398046511104
   %5 = ashr i64 %4, 63
   ret i64 %5

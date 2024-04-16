@@ -31,7 +31,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul nsw i32 %1, %3
+  %4 = mul nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds ptr, ptr %0, i64 %5
   ret ptr %6
@@ -46,7 +46,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -59,7 +59,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %1, %3
+  %4 = mul nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -74,7 +74,7 @@ entry:
 define ptr @func0000000000000011(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds %"struct.Assimp::MDC::CompressedVertex.1748935", ptr %0, i64 %5
   ret ptr %6
@@ -86,7 +86,7 @@ entry:
 define ptr @func0000000000000015(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = mul nsw i32 %1, %3
+  %4 = mul nsw i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -104,7 +104,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %1, %3
+  %4 = mul nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -133,7 +133,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %1, %3
+  %4 = mul nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

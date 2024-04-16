@@ -17,10 +17,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i8 %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %0, i64 -1
-  %3 = icmp eq i8 %1, 13
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
+  %2 = icmp eq i8 %1, 13
+  %.idx = sext i1 %2 to i64
+  %3 = getelementptr i8, ptr %0, i64 %.idx
+  ret ptr %3
 }
 
 ; 81 occurrences:
@@ -108,10 +108,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(ptr %0, i32 %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %0, i64 8
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
+  %2 = icmp eq i32 %1, 0
+  %.idx = select i1 %2, i64 8, i64 0
+  %3 = getelementptr inbounds i8, ptr %0, i64 %.idx
+  ret ptr %3
 }
 
 ; 8 occurrences:
@@ -126,10 +126,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %0, i64 320
-  %3 = icmp ult i64 %1, 3776
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
+  %2 = icmp ult i64 %1, 3776
+  %.idx = select i1 %2, i64 320, i64 0
+  %3 = getelementptr inbounds i8, ptr %0, i64 %.idx
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -139,10 +139,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %0, i64 4
-  %3 = icmp ugt i64 %1, 3
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
+  %.inv = icmp ult i64 %1, 4
+  %.idx = select i1 %.inv, i64 0, i64 4
+  %2 = getelementptr inbounds i8, ptr %0, i64 %.idx
+  ret ptr %2
 }
 
 ; 1 occurrences:
@@ -150,10 +150,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %0, i64 1
-  %3 = icmp ne i8 %1, 43
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
+  %.not = icmp ne i8 %1, 43
+  %.idx = zext i1 %.not to i64
+  %2 = getelementptr inbounds i8, ptr %0, i64 %.idx
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

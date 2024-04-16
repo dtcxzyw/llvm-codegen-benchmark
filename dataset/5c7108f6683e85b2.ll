@@ -7,9 +7,9 @@ define i1 @func0000000000000008(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = add i64 %4, -4294967293
-  %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 3
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -25,9 +25,9 @@ define i1 @func0000000000000006(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = add i64 %4, 1
-  %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %0, %6
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 1
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 

@@ -12,6 +12,6 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a1, 268352
 	addiw	a1, a1, 1170
 .LBB1_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 32
 	ret

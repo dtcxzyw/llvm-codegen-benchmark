@@ -1,7 +1,7 @@
 func0000000000000023:                   # @func0000000000000023
 	andi	a1, a1, 1
-	seqz	a1, a1
-	subw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	ret
 func0000000000000022:                   # @func0000000000000022
 	bexti	a1, a1, 43

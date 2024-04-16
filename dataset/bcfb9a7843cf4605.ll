@@ -8,7 +8,7 @@ define i32 @func0000000000000011(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i16 10, i16 50
-  %4 = icmp eq i16 %0, %3
+  %4 = icmp eq i16 %3, %0
   %5 = select i1 %4, i32 0, i32 -22
   ret i32 %5
 }
@@ -20,9 +20,9 @@ define i32 @func0000000000000019(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i64 64, i64 128
-  %4 = icmp uge i64 %0, %3
-  %5 = select i1 %4, i32 9, i32 0
-  ret i32 %5
+  %.not = icmp ugt i64 %3, %0
+  %4 = select i1 %.not, i32 0, i32 9
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -32,7 +32,7 @@ define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 3
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   %5 = select i1 %4, i32 10002, i32 0
   ret i32 %5
 }

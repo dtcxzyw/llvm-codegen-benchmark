@@ -18,7 +18,7 @@ entry:
   %2 = tail call noundef i16 @llvm.bswap.i16(i16 %1)
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = lshr exact i32 %5, 6
   ret i32 %6
 }

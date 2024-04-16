@@ -50,10 +50,9 @@ define i64 @func00000000000000d7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
-  %5 = lshr i32 %4, 3
-  %6 = zext nneg i32 %5 to i64
-  %7 = shl nuw nsw i64 %6, 3
-  ret i64 %7
+  %5 = and i32 %4, -8
+  %6 = zext i32 %5 to i64
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

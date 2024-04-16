@@ -16,12 +16,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = icmp ne i64 %5, 0
-  %7 = and i1 %0, %6
-  ret i1 %7
+  %3 = icmp ne ptr %1, %2
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 23 occurrences:
@@ -55,7 +52,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = icmp sgt i64 %5, 16
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -109,7 +106,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = icmp eq i64 %5, 2
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -165,7 +162,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = icmp ugt i64 %5, 16
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -205,7 +202,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = icmp ult i64 %5, 10
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

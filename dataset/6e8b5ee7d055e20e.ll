@@ -12,7 +12,7 @@ define i64 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -24,7 +24,7 @@ define i32 @func0000000000000028(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = mul i16 %0, %4
+  %5 = mul i16 %4, %0
   %6 = zext i16 %5 to i32
   ret i32 %6
 }

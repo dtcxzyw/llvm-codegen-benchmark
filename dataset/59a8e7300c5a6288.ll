@@ -8,9 +8,9 @@
 define i8 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
-  %3 = add nsw i32 %2, -40
+  %3 = add nuw nsw i32 %2, 216
   %4 = and i32 %0, 15
-  %5 = add nsw i32 %4, %3
+  %5 = add nuw nsw i32 %4, %3
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }

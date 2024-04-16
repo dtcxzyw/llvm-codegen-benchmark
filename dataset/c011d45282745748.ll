@@ -21,7 +21,7 @@ entry:
   %3 = tail call i8 @llvm.umax.i8(i8 %2, i8 1)
   %4 = zext nneg i8 %3 to i32
   %5 = sub nsw i32 %1, %4
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 

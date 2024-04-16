@@ -21,7 +21,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = add nuw nsw i32 %3, 196624
   %5 = add i32 %4, %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = icmp sgt i32 %6, 49155
   ret i1 %7
 }

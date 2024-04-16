@@ -23,9 +23,8 @@ entry:
   %2 = lshr exact i64 %1, 5
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr inbounds %struct._zend_ssa_op.1713136, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr inbounds %struct._zend_ssa_op.1713136, ptr %0, i64 %4, i32 3
+  ret ptr %5
 }
 
 ; 1 occurrences:

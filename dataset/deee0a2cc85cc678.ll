@@ -21,9 +21,8 @@ define ptr @func0000000000000009(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 133200
   %4 = getelementptr [16 x %struct.igb_tx.1661144], ptr %3, i64 0, i64 %1
-  %5 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.1661145], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.1661145], ptr %4, i64 0, i64 %0, i32 2
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -39,9 +38,8 @@ define ptr @func000000000000000f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 232
   %4 = getelementptr inbounds [4 x %"struct.rawspeed::VC5Decompressor::Channel.1766465"], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %5 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %4, i64 0, i64 %0, i32 5
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

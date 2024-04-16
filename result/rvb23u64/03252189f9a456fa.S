@@ -13,12 +13,12 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
-	li	a2, -256
-	orn	a1, a2, a1
-	slli	a1, a1, 32
+	not	a1, a1
+	sext.b	a1, a1
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a2, a2, 32
+	slli	a1, a1, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 35
 	sltu	a0, a1, a0

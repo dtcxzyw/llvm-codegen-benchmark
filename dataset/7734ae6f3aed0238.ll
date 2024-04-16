@@ -78,8 +78,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 0, %0
-  %2 = ashr i32 %1, 31
+  %1 = icmp sgt i32 %0, 0
+  %2 = sext i1 %1 to i32
   ret i32 %2
 }
 

@@ -7,7 +7,7 @@
 define i16 @func000000000000001e(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 1
-  %3 = add nuw nsw i16 %0, %2
+  %3 = add nuw nsw i16 %2, %0
   %4 = udiv i16 %3, 3
   ret i16 %4
 }
@@ -40,7 +40,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 7
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = udiv i32 %3, 255
   ret i32 %4
 }

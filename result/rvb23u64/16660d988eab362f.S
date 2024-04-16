@@ -1,12 +1,12 @@
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 64
+	lui	a2, 262144
+	and	a0, a0, a2
 	czero.eqz	a0, a0, a1
-	lui	a1, 262144
-	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	slli	a2, a1, 33
-	srli	a2, a2, 53
+	lui	a2, 524032
+	and	a2, a2, a1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1

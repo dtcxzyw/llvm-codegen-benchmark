@@ -215,9 +215,8 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.xSAT_WatchList_t_.1770951, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.xSAT_WatchList_t_.1770951, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 9 occurrences:
@@ -235,9 +234,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.xSAT_WatchList_t_.1770951, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.xSAT_WatchList_t_.1770951, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -247,9 +245,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:

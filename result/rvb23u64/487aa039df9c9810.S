@@ -8,8 +8,6 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a2, a2, 7
-	or	a0, a0, a2
 	andi	a1, a1, 448
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -17,12 +15,6 @@ func0000000000000038:                   # @func0000000000000038
 	xori	a0, a0, 1
 	ret
 func0000000000000036:                   # @func0000000000000036
-	lui	a3, 16
-	addi	a3, a3, -256
-	and	a2, a2, a3
-	andi	a1, a1, 255
-	or	a0, a0, a1
-	or	a0, a0, a2
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret

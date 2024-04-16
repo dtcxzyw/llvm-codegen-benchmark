@@ -48,7 +48,7 @@ entry:
 define i1 @func000000000000006c(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i8 %0, 33
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = icmp ne i8 %0, 10
   %5 = and i1 %4, %3
   ret i1 %5
@@ -60,11 +60,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000ac(i64 %0, i1 %1) #0 {
 entry:
-  %2 = icmp sgt i64 %0, -1
+  %2 = icmp sgt i64 %0, 0
   %3 = and i1 %2, %1
-  %4 = icmp ne i64 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
+  ret i1 %3
 }
 
 ; 1 occurrences:

@@ -619,8 +619,8 @@ define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131072
   %3 = icmp ne i32 %2, 0
-  %4 = and i32 %0, 255
-  %5 = icmp ugt i32 %4, 127
+  %4 = and i32 %0, 128
+  %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }
@@ -644,9 +644,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2147483647
+  %2 = and i32 %1, 2147482624
   %3 = icmp ugt i32 %2, 86399999
-  %4 = and i32 %0, 2147483647
+  %4 = and i32 %0, 2147482624
   %5 = icmp ult i32 %4, 86400000
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
@@ -658,7 +658,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
+  %2 = and i32 %1, 65520
   %3 = icmp ult i32 %2, 80
   %4 = and i64 %0, 16
   %5 = icmp ne i64 %4, 0
@@ -673,8 +673,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = icmp ult i32 %2, 8
+  %2 = and i32 %1, 65528
+  %3 = icmp eq i32 %2, 0
   %4 = and i16 %0, 1023
   %5 = icmp eq i16 %4, 0
   %6 = select i1 %5, i1 %3, i1 false

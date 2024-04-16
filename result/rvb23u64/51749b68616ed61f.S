@@ -3,7 +3,7 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, 293941
 	fmv.w.x	fa4, a0
 	fdiv.s	fa5, fa5, fa4
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 255

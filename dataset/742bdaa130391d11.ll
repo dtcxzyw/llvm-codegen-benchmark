@@ -44,7 +44,7 @@ entry:
 define i1 @func000000000000040a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 719162
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = mul i32 %0, -36524
   %6 = add i32 %5, %4
   %7 = icmp sgt i32 %6, -1

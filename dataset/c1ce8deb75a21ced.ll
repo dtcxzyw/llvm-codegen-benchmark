@@ -6,7 +6,7 @@
 define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
+  %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
   %5 = icmp ugt i32 %4, 9
   ret i1 %5
@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 5
+  %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -70,7 +70,7 @@ entry:
 define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 3
+  %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
   %5 = icmp sgt i32 %4, 0
   ret i1 %5
@@ -83,10 +83,9 @@ entry:
 define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 4
-  %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 34359738368
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -96,10 +95,9 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, 65536
-  ret i1 %5
+  %3 = and i64 %2, 17179607040
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

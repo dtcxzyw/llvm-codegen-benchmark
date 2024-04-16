@@ -20,7 +20,7 @@ entry:
   %3 = or disjoint i64 %2, 127
   %4 = or disjoint i64 %1, 2097151
   %5 = and i64 %4, %3
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

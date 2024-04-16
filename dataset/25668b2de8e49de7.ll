@@ -98,7 +98,7 @@
 define i64 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = select i1 %3, i64 0, i64 %1
   %5 = sub nsw i64 %2, %4
   ret i64 %5
@@ -110,7 +110,7 @@ entry:
 define i32 @func0000000000000050(i16 %0, i32 %1) #0 {
 entry:
   %2 = zext i16 %0 to i32
-  %3 = icmp sgt i32 %1, %2
+  %3 = icmp slt i32 %2, %1
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sub i32 %2, %4
   ret i32 %5
@@ -122,7 +122,7 @@ entry:
 define i64 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = select i1 %3, i64 0, i64 %1
   %5 = sub i64 %2, %4
   ret i64 %5

@@ -9,7 +9,7 @@ entry:
   %4 = and i32 %3, 16128
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = and i32 %3, 983040
   %5 = zext i16 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = and i16 %3, 256
   %5 = zext i8 %1 to i16
   %6 = or disjoint i16 %4, %5
-  %7 = icmp ne i16 %0, %6
+  %7 = icmp ne i16 %6, %0
   ret i1 %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = and i32 %3, 983040
   %5 = zext i16 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -63,7 +63,7 @@ entry:
   %4 = and i32 %3, 16776960
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -76,7 +76,7 @@ entry:
   %4 = and i32 %3, 16776960
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -91,7 +91,7 @@ entry:
   %4 = and i32 %3, 3840
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = icmp uge i32 %0, %6
+  %7 = icmp ule i32 %6, %0
   ret i1 %7
 }
 

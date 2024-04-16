@@ -101,7 +101,7 @@ define i64 @func0000000000000050(i128 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub nsw i32 64, %3
-  %5 = zext i32 %4 to i64
+  %5 = zext nneg i32 %4 to i64
   %6 = trunc i128 %0 to i64
   %7 = lshr i64 %6, %5
   ret i64 %7

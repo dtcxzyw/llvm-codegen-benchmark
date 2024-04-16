@@ -14,9 +14,8 @@ entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [127 x %struct.NVMeRequest.1663713], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [127 x %struct.NVMeRequest.1663713], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

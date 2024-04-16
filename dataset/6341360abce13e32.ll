@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %3, 65535
   %5 = zext nneg i32 %4 to i48
   %6 = shl nuw i48 %5, 32
-  %7 = or disjoint i48 %0, %6
+  %7 = or disjoint i48 %6, %0
   ret i48 %7
 }
 

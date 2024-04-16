@@ -20,7 +20,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
-  %4 = mul nuw i32 %1, %3
+  %4 = mul nuw i32 %3, %1
   %5 = and i32 %4, -16777216
   %6 = and i32 %0, 65280
   %7 = or disjoint i32 %5, %6

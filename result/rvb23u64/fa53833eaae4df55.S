@@ -11,13 +11,14 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	ret
 func000000000000007f:                   # @func000000000000007f
-	sh1add	a4, a4, a2
-	sltu	a2, a4, a2
-	add	a0, a0, a4
-	sltu	a4, a0, a4
+	slli	a5, a4, 1
+	sh1add	a2, a4, a2
+	sltu	a4, a2, a5
+	add	a0, a0, a2
+	sltu	a2, a0, a2
 	add	a1, a1, a3
-	add	a1, a1, a2
 	add	a1, a1, a4
+	add	a1, a1, a2
 	ret
 func000000000000003d:                   # @func000000000000003d
 	slliw	a2, a2, 5

@@ -10,11 +10,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000a8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 1
-  %4 = add nsw i64 %3, 1
-  %5 = getelementptr i16, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
-  ret i1 %6
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 2
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
 }
 
 ; 16 occurrences:
@@ -38,9 +37,9 @@ entry:
 define i1 @func00000000000000b1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -16
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -52,9 +51,9 @@ entry:
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds %"struct.rawspeed::Spline<>::Segment.1768005", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %4 = getelementptr %"struct.rawspeed::Spline<>::Segment.1768005", ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -32
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -65,9 +64,9 @@ entry:
 define i1 @func00000000000000b4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = add nsw i64 %3, 16
-  %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

@@ -27,7 +27,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 8)
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
@@ -46,7 +46,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, %0
   %6 = icmp ult i64 %5, 4097
   ret i1 %6
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, %0
   %6 = icmp ugt i64 %5, 8070450532247928832
   ret i1 %6

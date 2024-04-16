@@ -7,7 +7,7 @@ entry:
   %2 = and i64 %0, 7
   %3 = icmp ne i64 %2, 7
   %4 = add nsw i64 %1, -1
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }
@@ -24,7 +24,7 @@ entry:
   %2 = and i64 %0, 1073737728
   %3 = icmp eq i64 %2, 0
   %4 = add i64 %1, 4096
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }

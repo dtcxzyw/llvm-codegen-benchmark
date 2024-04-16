@@ -9,10 +9,9 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = icmp ne i64 %0, 0
-  %2 = xor i1 %1, true
-  %3 = sext i1 %2 to i64
-  ret i64 %3
+  %.not = icmp eq i64 %0, 0
+  %1 = sext i1 %.not to i64
+  ret i64 %1
 }
 
 ; 79 occurrences:
@@ -98,10 +97,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = icmp eq i8 %0, 0
-  %2 = xor i1 %1, true
-  %3 = sext i1 %2 to i32
-  ret i32 %3
+  %1 = icmp ne i8 %0, 0
+  %2 = sext i1 %1 to i32
+  ret i32 %2
 }
 
 ; 6 occurrences:
@@ -114,10 +112,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = icmp sgt i32 %0, -1
-  %2 = xor i1 %1, true
-  %3 = sext i1 %2 to i32
-  ret i32 %3
+  %.lobit = ashr i32 %0, 31
+  ret i32 %.lobit
 }
 
 ; 2 occurrences:
@@ -126,10 +122,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = icmp ugt i64 %0, 1
-  %2 = xor i1 %1, true
-  %3 = sext i1 %2 to i64
-  ret i64 %3
+  %1 = icmp ult i64 %0, 2
+  %2 = sext i1 %1 to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

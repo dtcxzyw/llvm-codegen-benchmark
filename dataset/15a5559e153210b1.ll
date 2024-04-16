@@ -8,7 +8,7 @@ entry:
   %4 = zext i8 %1 to i32
   %5 = lshr i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

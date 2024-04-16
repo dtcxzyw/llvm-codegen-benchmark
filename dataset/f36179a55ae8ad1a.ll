@@ -10,7 +10,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 8, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

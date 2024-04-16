@@ -34,10 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i64 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i64 0, i64 %0
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp ugt i64 %4, %5
+  %3 = icmp ne i8 %2, 0
+  %4 = zext nneg i32 %1 to i64
+  %5 = icmp ult i64 %4, %0
+  %6 = select i1 %3, i1 %5, i1 false
   ret i1 %6
 }
 

@@ -96,7 +96,7 @@ entry:
 define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp ne i64 %3, 0
   %5 = sext i1 %4 to i64
   ret i64 %5

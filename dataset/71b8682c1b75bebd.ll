@@ -91,12 +91,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = shl i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = add i32 %4, -56320
-  %6 = icmp ult i32 %5, 1024
-  ret i1 %6
+  %2 = and i32 %0, 16777212
+  %3 = icmp eq i32 %2, 220
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -120,9 +117,8 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %0, 8
   %4 = or disjoint i16 %3, %2
-  %5 = add i16 %4, -2
-  %6 = icmp eq i16 %5, 0
-  ret i1 %6
+  %5 = icmp eq i16 %4, 2
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -136,8 +132,8 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 8
   %4 = or disjoint i32 %3, %2
-  %5 = add nsw i32 %4, -20
-  %6 = icmp ugt i32 %5, 262144
+  %5 = add nsw i32 %4, -262165
+  %6 = icmp ult i32 %5, -262145
   ret i1 %6
 }
 
@@ -188,9 +184,8 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %0, 8
   %4 = or disjoint i16 %3, %2
-  %5 = add i16 %4, -1
-  %6 = icmp ne i16 %5, 0
-  ret i1 %6
+  %5 = icmp ne i16 %4, 1
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -202,9 +197,8 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 8
   %4 = or disjoint i32 %3, %2
-  %5 = add nsw i32 %4, -1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, 1
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

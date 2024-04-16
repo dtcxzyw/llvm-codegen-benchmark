@@ -13,9 +13,9 @@
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:
   %1 = srem i16 %0, 512
-  %2 = sext i16 %1 to i32
-  %3 = add nsw i32 %2, -256
-  ret i32 %3
+  %narrow = add nsw i16 %1, -256
+  %2 = sext i16 %narrow to i32
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

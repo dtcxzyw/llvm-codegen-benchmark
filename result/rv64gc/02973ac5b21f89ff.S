@@ -25,5 +25,5 @@ func0000000000000000:                   # @func0000000000000000
 	beqz	a1, .LBB2_2
 	neg	a2, a2
 .LBB2_2:                                # %entry
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	ret

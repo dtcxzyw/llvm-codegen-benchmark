@@ -48,9 +48,9 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = xor i64 %2, %0
-  %4 = and i64 %3, 4611686018427387903
-  ret i64 %4
+  %.masked = and i64 %0, 4611686018427387903
+  %3 = xor i64 %2, %.masked
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

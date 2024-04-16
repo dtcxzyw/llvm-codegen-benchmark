@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a1, 1
 	li	a1, 2
 	bnez	a2, .LBB1_2
-	mv	a1, a0
+	andi	a1, a0, 2
 .LBB1_2:                                # %entry
-	andi	a0, a1, 2
+	mv	a0, a1
 	ret

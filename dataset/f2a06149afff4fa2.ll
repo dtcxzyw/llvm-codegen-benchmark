@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = sub i64 0, %1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   %7 = lshr i64 %6, %4
   ret i64 %7
 }

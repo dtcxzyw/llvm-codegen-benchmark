@@ -8,7 +8,7 @@ entry:
   %3 = lshr i32 %2, 30
   %4 = and i32 %3, 1
   %5 = select i1 %1, i32 1, i32 %4
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

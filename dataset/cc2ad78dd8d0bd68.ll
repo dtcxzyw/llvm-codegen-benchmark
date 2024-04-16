@@ -8,7 +8,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = urem i32 %2, 3
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = add nuw nsw i16 %1, 1980
   %3 = urem i16 %2, 400
   %4 = icmp eq i16 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

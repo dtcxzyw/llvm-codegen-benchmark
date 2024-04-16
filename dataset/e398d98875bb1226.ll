@@ -70,7 +70,7 @@ entry:
   %3 = select i1 %2, i64 5, i64 6
   %4 = icmp ugt i64 %1, 255
   %5 = select i1 %4, i64 7, i64 %3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -227,7 +227,7 @@ entry:
   %3 = select i1 %2, i32 3, i32 6
   %4 = icmp ugt i32 %1, 1
   %5 = select i1 %4, i32 1, i32 %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -239,7 +239,7 @@ entry:
   %3 = select i1 %2, i32 3, i32 4
   %4 = icmp slt i32 %1, 10
   %5 = select i1 %4, i32 2, i32 %3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -251,7 +251,7 @@ entry:
   %3 = select i1 %2, i32 2, i32 3
   %4 = icmp slt i32 %1, 256
   %5 = select i1 %4, i32 1, i32 %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -263,7 +263,7 @@ entry:
   %3 = select i1 %2, i8 31, i8 32
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, i8 126, i8 %3
-  %6 = add nuw i8 %0, %5
+  %6 = add nuw i8 %5, %0
   ret i8 %6
 }
 

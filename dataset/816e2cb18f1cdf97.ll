@@ -9,7 +9,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = icmp ult i32 %3, 10
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = freeze i1 %5
   ret i1 %6
 }

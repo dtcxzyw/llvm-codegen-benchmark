@@ -12,8 +12,8 @@
 define float @func0000000000000003(float %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %1, 0.000000e+00
-  %3 = select i1 %2, float 0xFFFFFFFFE0000000, float %0
-  %4 = fsub float -2.500000e+00, %3
+  %3 = fsub float -2.500000e+00, %0
+  %4 = select i1 %2, float 0xFFFFFFFFE0000000, float %3
   ret float %4
 }
 
@@ -29,8 +29,8 @@ entry:
 define float @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 1.000000e+00
-  %3 = select i1 %2, float 0.000000e+00, float %0
-  %4 = fsub float 1.000000e+00, %3
+  %3 = fsub float 1.000000e+00, %0
+  %4 = select i1 %2, float 1.000000e+00, float %3
   ret float %4
 }
 
@@ -45,8 +45,8 @@ entry:
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
-  %3 = select i1 %2, float 0.000000e+00, float %0
-  %4 = fsub float 1.000000e+00, %3
+  %3 = fsub float 1.000000e+00, %0
+  %4 = select i1 %2, float 1.000000e+00, float %3
   ret float %4
 }
 

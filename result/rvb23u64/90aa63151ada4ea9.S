@@ -13,9 +13,8 @@ func0000000000000035:                   # @func0000000000000035
 func0000000000000005:                   # @func0000000000000005
 	slli	a1, a1, 10
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addiw	a1, a1, 1024
-	add	a0, a0, a1
+	li	a1, 1152
+	sh3add	a0, a1, a0
 	lui	a1, 16
 	addiw	a1, a1, -2
 	and	a0, a0, a1

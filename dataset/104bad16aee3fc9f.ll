@@ -89,11 +89,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 40
-  %3 = sub nsw i64 230584300921369395, %2
-  %4 = sdiv exact i64 %0, 40
-  %5 = icmp ult i64 %3, %4
-  ret i1 %5
+  %.neg = sdiv exact i64 %1, -40
+  %2 = add nsw i64 %.neg, 230584300921369395
+  %3 = sdiv exact i64 %0, 40
+  %4 = icmp ult i64 %2, %3
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

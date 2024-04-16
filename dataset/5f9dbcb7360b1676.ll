@@ -103,7 +103,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -1658038656
+  %2 = and i32 %1, 22144
   %3 = xor i32 %2, %0
   %4 = shl i32 %3, 15
   %5 = and i32 %4, -272236544

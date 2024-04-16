@@ -16,9 +16,8 @@ entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr inbounds i8, ptr %3, i64 28
   %5 = zext i32 %0 to i64
-  %6 = getelementptr inbounds %"struct.std::pair.177.1844680", ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.std::pair.177.1844680", ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

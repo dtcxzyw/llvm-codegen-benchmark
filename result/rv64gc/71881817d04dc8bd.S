@@ -9,11 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 33
 	srli	a0, a0, 33
 	ret
-.LCPI2_0:
-	.quad	-7046029254386353133            # 0x9e3779b97f4a7c13
 func0000000000000000:                   # @func0000000000000000
-	lui	a1, %hi(.LCPI2_0)
-	ld	a1, %lo(.LCPI2_0)(a1)
+	li	a1, 19
 	mul	a0, a0, a1
 	andi	a0, a0, 63
 	ret

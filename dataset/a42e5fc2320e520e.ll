@@ -9,7 +9,7 @@ entry:
   %4 = shl nuw nsw i32 1, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 0, i32 %4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

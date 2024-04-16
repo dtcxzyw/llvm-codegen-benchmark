@@ -13,7 +13,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = select i1 %1, i32 56, i32 120
   %5 = sub nsw i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

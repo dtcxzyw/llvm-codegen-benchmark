@@ -50,8 +50,8 @@ entry:
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i64 %1, -1
-  %4 = select i1 %3, i32 %2, i32 %0
+  %3 = icmp slt i64 %1, 0
+  %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
 

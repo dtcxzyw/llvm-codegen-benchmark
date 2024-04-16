@@ -19,13 +19,13 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sub	a0, a0, a1
-	srli	a0, a0, 4
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	slli	a0, a0, 28
+	srli	a0, a0, 63
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sub	a0, a0, a1
-	slli	a0, a0, 30
-	srli	a0, a0, 48
+	lui	a1, 65535
+	slli	a1, a1, 6
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret

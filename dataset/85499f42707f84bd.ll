@@ -167,11 +167,11 @@
 define i32 @func0000000000000094(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 347
-  %3 = sdiv i32 %2, 8
-  %4 = add nsw i32 %3, 1
-  %5 = shl nsw i32 %4, 3
-  %6 = sub i32 %0, %5
-  ret i32 %6
+  %.neg = sdiv i32 %2, -8
+  %.neg1 = shl i32 %.neg, 3
+  %.neg2 = add i32 %.neg1, -8
+  %3 = add i32 %.neg2, %0
+  ret i32 %3
 }
 
 ; 7 occurrences:
@@ -186,11 +186,11 @@ entry:
 define i64 @func0000000000000095(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 16777215
-  %3 = sdiv i64 %2, 32
-  %4 = add nsw i64 %3, -524288
-  %5 = shl nsw i64 %4, 5
-  %6 = sub nsw i64 %0, %5
-  ret i64 %6
+  %.neg = sdiv i64 %2, -32
+  %.neg1 = shl i64 %.neg, 5
+  %.neg2 = add i64 %.neg1, 16777216
+  %3 = add i64 %.neg2, %0
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

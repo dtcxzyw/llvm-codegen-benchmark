@@ -151,9 +151,9 @@ entry:
 define i64 @func000000000000000c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i64 1, i64 %2
-  ret i64 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i64 %2, i64 1
+  ret i64 %3
 }
 
 ; 7 occurrences:
@@ -204,10 +204,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = icmp ult i8 %0, 16
-  %4 = select i1 %3, i32 6, i32 %2
-  ret i32 %4
+  %2 = icmp ult i8 %0, 16
+  %narrow = select i1 %2, i8 6, i8 %1
+  %3 = zext i8 %narrow to i32
+  ret i32 %3
 }
 
 ; 7 occurrences:

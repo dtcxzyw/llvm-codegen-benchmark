@@ -1,15 +1,12 @@
 func0000000000000001:                   # @func0000000000000001
 	sub	a1, a1, a2
-	slli	a0, a0, 63
-	srai	a0, a0, 63
+	addi	a1, a1, 1
+	seqz	a1, a1
 	or	a0, a0, a1
-	addi	a0, a0, 1
-	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a0, a0, 1
 	sub	a1, a1, a2
-	addi	a0, a0, -1
+	sgtz	a1, a1
+	not	a0, a0
 	and	a0, a0, a1
-	sgtz	a0, a0
 	ret

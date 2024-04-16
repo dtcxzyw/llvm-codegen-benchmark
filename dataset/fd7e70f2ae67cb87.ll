@@ -9,9 +9,9 @@
 define i32 @func0000000000000005(i32 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = trunc i16 %2 to i8
-  %4 = icmp eq i8 %1, %3
+  %4 = icmp eq i8 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

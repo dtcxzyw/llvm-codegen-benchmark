@@ -18,8 +18,6 @@ func0000000000000011:                   # @func0000000000000011
 .LBB1_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a2, a2, 63
-	or	a1, a1, a2
 	sext.w	a1, a1
 	li	a2, 255
 	bgeu	a2, a1, .LBB2_2

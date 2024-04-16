@@ -4,16 +4,14 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	andi	a0, a0, 1
-	bgeu	a1, a2, .LBB0_3
-	beqz	a0, .LBB0_4
-.LBB0_2:                                # %entry
-	li	a0, 24
-	mul	a0, a2, a0
-	ret
-.LBB0_3:                                # %entry
+	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
-	bnez	a0, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_2:                                # %entry
+	bnez	a0, .LBB0_4
 	li	a0, 24
 	mul	a0, a1, a0
+	ret
+.LBB0_4:
+	li	a0, -15
+	srli	a0, a0, 1
 	ret

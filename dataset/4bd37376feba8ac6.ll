@@ -10,8 +10,8 @@
 define i1 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = select i1 %3, i32 %0, i32 1
-  %5 = icmp eq i32 %4, 0
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -22,8 +22,9 @@ entry:
 define i1 @func000000000000000c(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = select i1 %3, i64 %0, i64 1
-  %5 = icmp ne i64 %4, 0
+  %4 = icmp ne i64 %0, 0
+  %not. = xor i1 %3, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 

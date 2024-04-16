@@ -7,8 +7,8 @@
 define i64 @func000000000000003e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
-  %3 = and i64 %0, 33292288
-  %4 = or disjoint i64 %3, %2
+  %3 = and i64 %0, 16777216
+  %4 = or i64 %3, %2
   %5 = add nuw nsw i64 %4, 16777216
   %6 = lshr i64 %5, 25
   ret i64 %6

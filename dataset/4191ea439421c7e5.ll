@@ -30,11 +30,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i32 %0, ptr %1) #0 {
 entry:
-  %2 = icmp eq ptr %1, null
-  %3 = xor i1 %2, true
-  %4 = icmp ne i32 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %2 = icmp ne ptr %1, null
+  %3 = icmp ne i32 %0, 0
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -43,11 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000198(i32 %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, null
-  %3 = xor i1 %2, true
-  %4 = icmp ne i32 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %.not = icmp eq ptr %1, null
+  %2 = icmp ne i32 %0, 0
+  %3 = or i1 %2, %.not
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

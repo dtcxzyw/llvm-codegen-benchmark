@@ -7,10 +7,9 @@ define i64 @func0000000000000150(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, %1
-  %5 = shl nsw i64 %4, 9
-  %6 = add i64 %0, %5
-  %7 = sub i64 0, %6
-  ret i64 %7
+  %.neg = mul i64 %4, -512
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 8 occurrences:
@@ -27,10 +26,9 @@ define i64 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, %1
-  %5 = shl nsw i64 %4, 6
-  %6 = add i64 %0, %5
-  %7 = sub nsw i64 0, %6
-  ret i64 %7
+  %.neg = mul i64 %4, -64
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 attributes #0 = { nounwind }

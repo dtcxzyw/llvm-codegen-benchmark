@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	lui	a1, 4096
-	and	a0, a0, a1
 	srli	a0, a0, 13
+	bseti	a1, zero, 11
+	and	a0, a0, a1
 	ret

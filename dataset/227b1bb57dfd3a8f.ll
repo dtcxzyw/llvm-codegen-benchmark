@@ -185,9 +185,8 @@
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr inbounds [3 x i32], ptr %2, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds [3 x i32], ptr %2, i64 %0, i64 1
+  ret ptr %3
 }
 
 ; 55 occurrences:
@@ -311,9 +310,8 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %struct.scatterlist.1993498, ptr %2, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.scatterlist.1993498, ptr %2, i64 %0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

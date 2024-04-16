@@ -8,9 +8,9 @@
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.smax.i32(i32 %0, i32 16)
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, 4
-  ret i64 %3
+  %narrow = add nuw i32 %1, 4
+  %2 = zext i32 %narrow to i64
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

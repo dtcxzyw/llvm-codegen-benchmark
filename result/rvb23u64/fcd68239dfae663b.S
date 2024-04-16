@@ -105,9 +105,9 @@ func000000000000002c:                   # @func000000000000002c
 func0000000000000191:                   # @func0000000000000191
 	andi	a1, a1, 255
 	addi	a1, a1, -39
-	li	a2, 5
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 34
+	li	a2, -5
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 39
 	andi	a0, a0, 255
 	xor	a0, a0, a1
 	seqz	a0, a0

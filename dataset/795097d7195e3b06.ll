@@ -8,9 +8,9 @@
 define double @func0000000000000002(double %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = uitofp i32 %4 to double
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

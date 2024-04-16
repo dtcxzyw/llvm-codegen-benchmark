@@ -9,7 +9,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw nsw i64 %2, -7046029288634856825
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
@@ -188,7 +188,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nsw i64 %2, -1
   %4 = zext nneg i64 %3 to i128
-  %5 = mul nuw nsw i128 %0, %4
+  %5 = mul nuw nsw i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }

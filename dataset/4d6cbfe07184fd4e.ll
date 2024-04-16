@@ -462,9 +462,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 29
-  %2 = sub i32 0, %1
-  ret i32 %2
+  %.neg = mul i32 %0, -536870912
+  ret i32 %.neg
 }
 
 ; 188 occurrences:
@@ -659,9 +658,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = shl nsw i64 %0, 1
-  %2 = sub nsw i64 0, %1
-  ret i64 %2
+  %.neg = mul nsw i64 %0, -2
+  ret i64 %.neg
 }
 
 ; 36 occurrences:
@@ -941,9 +939,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 %0, 1
-  %2 = sub i32 0, %1
-  ret i32 %2
+  %.neg = mul i32 %0, -2
+  ret i32 %.neg
 }
 
 ; 2 occurrences:

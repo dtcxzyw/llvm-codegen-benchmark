@@ -230,10 +230,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, -4294967296
-  %2 = add i64 %1, -238690780250636288
-  %3 = and i64 %2, 9218868437227405312
-  ret i64 %3
+  %1 = add i64 %0, 8984681256604139520
+  %2 = and i64 %1, 9218868437227405312
+  ret i64 %2
 }
 
 ; 131 occurrences:
@@ -371,10 +370,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 2305843009213693951
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 3
-  ret i64 %3
+  %1 = add i64 %0, 1
+  %2 = and i64 %1, 3
+  ret i64 %2
 }
 
 ; 10 occurrences:

@@ -6,10 +6,10 @@
 define i16 @func0000000000000007(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 4096
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = or disjoint i16 %4, %0
-  %6 = or disjoint i16 %5, 453
-  %7 = and i16 %6, 32223
+  %6 = and i16 %5, 31770
+  %7 = or disjoint i16 %6, 453
   ret i16 %7
 }
 
@@ -20,9 +20,9 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4161536
   %4 = or i32 %3, %1
-  %5 = or disjoint i32 %0, %4
-  %6 = or i32 %5, -1073741824
-  %7 = and i32 %6, 2147483520
+  %5 = or disjoint i32 %4, %0
+  %6 = and i32 %5, 1073741696
+  %7 = or disjoint i32 %6, 1073741824
   ret i32 %7
 }
 

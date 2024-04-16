@@ -35,9 +35,9 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	li	a3, -6
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 18
+	li	a3, 6
+	czero.eqz	a2, a3, a2
+	addi	a2, a2, 12
 	li	a3, 3
 	czero.nez	a1, a3, a1
 	addi	a1, a1, 15

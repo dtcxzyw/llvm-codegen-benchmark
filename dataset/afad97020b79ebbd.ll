@@ -52,7 +52,7 @@
 define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 72340172838076673
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = lshr i64 %3, 16
   %5 = add nuw nsw i64 %4, %3
   ret i64 %5
@@ -64,7 +64,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 983055
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = lshr i32 %3, 16
   %5 = add nuw nsw i32 %3, %4
   ret i32 %5

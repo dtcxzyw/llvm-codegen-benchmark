@@ -8,7 +8,7 @@ entry:
   %3 = icmp ugt i32 %1, 536870910
   %4 = select i1 %3, i32 4194303, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

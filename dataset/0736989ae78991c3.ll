@@ -83,7 +83,7 @@ entry:
   %3 = tail call i64 @llvm.fshl.i64(i64 %2, i64 %2, i64 11)
   %4 = add i64 %3, %1
   %5 = zext i64 %4 to i128
-  %6 = mul nuw i128 %0, %5
+  %6 = mul nuw i128 %5, %0
   ret i128 %6
 }
 

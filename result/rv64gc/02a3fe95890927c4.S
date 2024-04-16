@@ -6,7 +6,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	addiw	a1, a1, -1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001c8:                   # @func00000000000001c8
@@ -77,8 +78,8 @@ func00000000000000d6:                   # @func00000000000000d6
 	addi	a2, a2, -48
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a0, a0, a2
+	sltu	a0, a0, a2
 	add	a0, a0, a1
 	srli	a0, a0, 63
 	ret
@@ -99,7 +100,7 @@ func0000000000000031:                   # @func0000000000000031
 	addi	a1, a1, 4
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000c4:                   # @func00000000000000c4
@@ -177,7 +178,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	addi	a1, a1, 12
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001f4:                   # @func00000000000001f4

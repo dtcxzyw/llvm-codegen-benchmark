@@ -7,7 +7,7 @@
 define double @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = call noundef i64 @llvm.ctpop.i64(i64 %1), !range !0
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }

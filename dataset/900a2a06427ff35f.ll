@@ -24,7 +24,7 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
   ret i64 %4
 }
@@ -35,7 +35,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 3)
   ret i32 %4
 }

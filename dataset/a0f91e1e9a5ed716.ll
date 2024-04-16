@@ -14,7 +14,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 2)
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 
@@ -47,7 +47,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 
@@ -59,7 +59,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %0, %3
+  %4 = mul nuw i64 %3, %0
   ret i64 %4
 }
 
@@ -70,7 +70,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %0, %3
+  %4 = mul nsw i64 %3, %0
   ret i64 %4
 }
 

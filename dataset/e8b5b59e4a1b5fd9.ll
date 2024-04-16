@@ -70,7 +70,7 @@ entry:
   %3 = ashr i64 %2, 2
   %4 = add nsw i64 %3, -1
   %5 = sdiv i64 %4, 2
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 

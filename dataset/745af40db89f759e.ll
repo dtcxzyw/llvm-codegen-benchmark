@@ -9,8 +9,8 @@
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = xor i32 %3, -1
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   ret i32 %4
 }
 

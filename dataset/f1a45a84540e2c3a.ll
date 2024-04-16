@@ -11,8 +11,8 @@ define i1 @func0000000000000004(i1 %0, float %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ogt float %1, %4
-  %6 = and i1 %0, %5
+  %5 = fcmp olt float %4, %1
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -28,7 +28,7 @@ define i1 @func0000000000000002(i1 %0, float %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fcmp olt float %1, %4
+  %5 = fcmp ogt float %4, %1
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -42,7 +42,7 @@ define i1 @func0000000000000008(i1 %0, float %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fcmp oeq float %1, %4
+  %5 = fcmp oeq float %4, %1
   %6 = and i1 %5, %0
   ret i1 %6
 }

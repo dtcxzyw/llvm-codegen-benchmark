@@ -9,7 +9,7 @@ entry:
   %3 = select i1 %2, i64 3, i64 2
   %4 = zext i32 %1 to i64
   %5 = shl nuw nsw i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

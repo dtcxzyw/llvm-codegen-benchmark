@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %3, 65535
   %5 = sub i32 16, %0
   %6 = lshr i32 %4, %5
-  %7 = trunc i32 %6 to i16
+  %7 = trunc nuw i32 %6 to i16
   ret i16 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = and i32 %3, 65535
   %5 = sub i32 16, %0
   %6 = lshr i32 %4, %5
-  %7 = trunc i32 %6 to i16
+  %7 = trunc nuw i32 %6 to i16
   ret i16 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = and i32 %3, 65535
   %5 = sub nsw i32 16, %0
   %6 = lshr i32 %4, %5
-  %7 = trunc i32 %6 to i16
+  %7 = trunc nuw i32 %6 to i16
   ret i16 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = and i32 %3, 65535
   %5 = sub nsw i32 16, %0
   %6 = lshr i32 %4, %5
-  %7 = trunc i32 %6 to i16
+  %7 = trunc nuw i32 %6 to i16
   ret i16 %7
 }
 

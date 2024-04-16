@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %2, -256
   %4 = and i32 %1, -256
   %5 = add i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = and i32 %2, 2147483647
   %4 = and i32 %1, 2147483647
   %5 = add nuw i32 %4, %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

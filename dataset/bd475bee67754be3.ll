@@ -7,7 +7,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = lshr exact i32 %3, 3
   ret i32 %4
 }
@@ -53,7 +53,7 @@ entry:
 define i128 @func0000000000000013(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 %1, 64
-  %3 = mul nsw i128 %0, %2
+  %3 = mul nsw i128 %2, %0
   %4 = lshr exact i128 %3, 64
   ret i128 %4
 }
@@ -64,7 +64,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = lshr i64 %3, 47
   ret i64 %4
 }

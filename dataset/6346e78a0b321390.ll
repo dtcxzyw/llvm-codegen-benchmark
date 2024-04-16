@@ -8,7 +8,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %1, -1
   %5 = icmp sgt i32 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp sge i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
   %5 = icmp sge i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, 1
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -76,7 +76,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp slt i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add i64 %1, 88
   %5 = icmp ugt i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

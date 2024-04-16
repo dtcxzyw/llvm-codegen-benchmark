@@ -6,7 +6,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 8)
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 

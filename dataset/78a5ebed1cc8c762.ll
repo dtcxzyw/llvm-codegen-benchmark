@@ -24,7 +24,7 @@ entry:
 define i32 @func0000000000000003(i48 %0) #0 {
 entry:
   %1 = lshr i48 %0, 32
-  %2 = trunc i48 %1 to i32
+  %2 = trunc nuw nsw i48 %1 to i32
   %3 = add nuw nsw i32 %2, 65535
   %4 = and i32 %3, 65535
   ret i32 %4
@@ -38,7 +38,7 @@ entry:
 define i16 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 49
-  %2 = trunc i64 %1 to i16
+  %2 = trunc nuw nsw i64 %1 to i16
   %3 = add nuw i16 %2, 1
   %4 = and i16 %3, 32767
   ret i16 %4
@@ -51,7 +51,7 @@ entry:
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 57
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, -2
   ret i32 %4

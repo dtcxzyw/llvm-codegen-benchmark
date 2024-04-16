@@ -18,7 +18,7 @@ entry:
   %3 = fneg double %2
   %4 = fdiv double %3, %1
   %5 = fcmp olt double %4, 0.000000e+00
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

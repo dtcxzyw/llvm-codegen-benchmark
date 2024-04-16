@@ -29,8 +29,8 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = and i64 %2, 65535
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, 65535
   ret i32 %4
 }
 
@@ -40,8 +40,8 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = and i64 %2, 255
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, 255
   ret i32 %4
 }
 
@@ -51,8 +51,8 @@ entry:
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = and i64 %2, 3
-  %4 = trunc nuw nsw i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, 3
   ret i32 %4
 }
 
@@ -66,8 +66,8 @@ entry:
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
-  %3 = and i64 %2, 17179865088
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, -4096
   ret i32 %4
 }
 
@@ -78,8 +78,8 @@ entry:
 define i8 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
-  %3 = and i32 %2, 63
-  %4 = trunc nuw nsw i32 %3 to i8
+  %3 = trunc i32 %2 to i8
+  %4 = and i8 %3, 63
   ret i8 %4
 }
 
@@ -89,8 +89,8 @@ entry:
 define i16 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %0, %1
-  %3 = and i32 %2, -8
-  %4 = trunc i32 %3 to i16
+  %3 = trunc i32 %2 to i16
+  %4 = and i16 %3, -8
   ret i16 %4
 }
 

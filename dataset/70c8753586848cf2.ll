@@ -91,9 +91,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:
-  %1 = fdiv float 1.000000e+00, %0
-  %2 = fneg float %1
-  ret float %2
+  %1 = fdiv float -1.000000e+00, %0
+  ret float %1
 }
 
 attributes #0 = { nounwind }

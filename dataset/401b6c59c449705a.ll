@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = icmp eq i64 %3, 0
-  %5 = getelementptr i8, ptr %1, i64 -152
-  %6 = select i1 %4, ptr %0, ptr %5
-  ret ptr %6
+  %3 = icmp eq i64 %2, 1
+  %4 = getelementptr i8, ptr %1, i64 -152
+  %5 = select i1 %3, ptr %0, ptr %4
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -90,11 +89,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  %5 = getelementptr inbounds i8, ptr %1, i64 1
-  %6 = select i1 %4, ptr %0, ptr %5
-  ret ptr %6
+  %3 = icmp eq i32 %2, 1
+  %4 = getelementptr inbounds i8, ptr %1, i64 1
+  %5 = select i1 %3, ptr %0, ptr %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -102,11 +100,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  %5 = getelementptr i8, ptr %1, i64 -16
-  %6 = select i1 %4, ptr %0, ptr %5
-  ret ptr %6
+  %3 = icmp eq i32 %2, 1
+  %4 = getelementptr i8, ptr %1, i64 -16
+  %5 = select i1 %3, ptr %0, ptr %4
+  ret ptr %5
 }
 
 ; 3 occurrences:

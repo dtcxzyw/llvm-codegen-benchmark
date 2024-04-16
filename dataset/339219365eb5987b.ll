@@ -12,7 +12,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i64
   %5 = shl nuw i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i64
   %5 = shl nuw i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = icmp slt i32 %2, 1
   %4 = zext i1 %3 to i64
   %5 = shl nuw i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = icmp ult i32 %2, 2
   %4 = zext i1 %3 to i64
   %5 = shl nuw i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = icmp sgt i32 %2, -1
   %4 = zext i1 %3 to i32
   %5 = shl nuw i32 %4, %1
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

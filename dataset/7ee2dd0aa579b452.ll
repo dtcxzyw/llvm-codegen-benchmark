@@ -9,7 +9,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 4294905856
   %4 = and i64 %3, 4294967264
-  %5 = add nuw nsw i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -39,7 +39,7 @@ entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, 15
   %4 = and i32 %3, -16
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp sgt i32 %5, 96000
   ret i1 %6
 }

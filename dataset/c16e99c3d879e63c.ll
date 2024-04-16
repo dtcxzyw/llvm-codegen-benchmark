@@ -13,10 +13,10 @@
 define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
-  %3 = zext i1 %2 to i64
-  %4 = sext i32 %0 to i64
-  %5 = sub nsw i64 %4, %3
-  ret i64 %5
+  %.neg = sext i1 %2 to i64
+  %3 = sext i32 %0 to i64
+  %4 = add nsw i64 %.neg, %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

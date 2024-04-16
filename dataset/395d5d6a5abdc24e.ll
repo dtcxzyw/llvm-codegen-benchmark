@@ -13,9 +13,9 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = lshr i32 %1, 28
-  %3 = icmp eq i32 %2, 7
-  ret i1 %3
+  %.mask = and i32 %1, -268435456
+  %2 = icmp eq i32 %.mask, 1879048192
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

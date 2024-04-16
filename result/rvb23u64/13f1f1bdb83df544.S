@@ -11,5 +11,5 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000004c:                   # @func000000000000004c
 	sub	a1, a1, a2
 	srli	a1, a1, 3
-	add.uw	a0, a0, a1
+	addw	a0, a0, a1
 	ret

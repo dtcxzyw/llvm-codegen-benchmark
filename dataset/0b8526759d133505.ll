@@ -66,7 +66,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
+  %3 = and i32 %2, 248
   %4 = icmp eq i32 %1, 65024
   %5 = select i1 %4, i32 %0, i32 %3
   %6 = icmp ult i32 %5, 8

@@ -9,7 +9,7 @@
 define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ult i64 %3, 128
   ret i1 %4
 }
@@ -30,9 +30,8 @@ entry:
 define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = xor i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 13 occurrences:
@@ -53,7 +52,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp eq i32 %3, 32
   ret i1 %4
 }
@@ -64,9 +63,8 @@ entry:
 define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = xor i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %3 = icmp ne i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -75,7 +73,7 @@ entry:
 define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ult i64 %3, 2
   ret i1 %4
 }

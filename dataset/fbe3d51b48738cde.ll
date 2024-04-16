@@ -5,7 +5,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.usub.sat.i64(i64 8, i64 %0)
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   ret i32 %2
 }
 

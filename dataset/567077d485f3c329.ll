@@ -17,8 +17,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -1
   ret ptr %5
 }
 
@@ -33,8 +33,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  %4 = getelementptr ptr, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -45,8 +45,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = add nsw i64 %3, 2
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
   ret ptr %5
 }
 

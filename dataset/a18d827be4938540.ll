@@ -7,7 +7,7 @@
 define i1 @func00000000000000a5(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %2, 1.200000e+00
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = fcmp ugt double %0, 0x3F571547652B82FE
   %6 = and i1 %5, %4
   ret i1 %6

@@ -12,7 +12,7 @@ entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = and i16 %2, 30
   %4 = icmp ne i16 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
-  %3 = and i64 %2, 4294967295
+  %3 = and i64 %2, 4294967280
   %4 = icmp ult i64 %3, 48
   %5 = and i1 %4, %0
   ret i1 %5
@@ -42,7 +42,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 254
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -152,7 +152,7 @@ entry:
   %2 = add i32 %1, 32770
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -163,11 +163,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = and i64 %2, 1
-  %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
-  ret i1 %5
+  %2 = and i64 %1, 1
+  %3 = icmp eq i64 %2, 0
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -178,10 +177,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -194,10 +193,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
+  %2 = add i64 %1, 63
   %3 = and i64 %2, 63
   %4 = icmp eq i64 %3, 63
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -209,7 +208,7 @@ entry:
   %2 = add nsw i64 %1, 1
   %3 = and i64 %2, -9223372036854775801
   %4 = icmp sgt i64 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -221,7 +220,7 @@ entry:
   %2 = add nuw i32 %1, 511
   %3 = and i32 %2, -512
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -233,7 +232,7 @@ entry:
   %2 = add i32 %1, 63
   %3 = and i32 %2, -64
   %4 = icmp ult i32 %3, 321
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

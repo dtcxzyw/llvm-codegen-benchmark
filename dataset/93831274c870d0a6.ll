@@ -9,8 +9,8 @@ define i1 @func0000000000000291(i64 %0) #0 {
 entry:
   %1 = icmp sgt i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %0, %2
-  %4 = icmp eq i64 %3, 0
+  %3 = sub i64 0, %0
+  %4 = icmp eq i64 %2, %3
   ret i1 %4
 }
 
@@ -37,8 +37,8 @@ define i1 @func0000000000000301(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
-  %4 = icmp eq i64 %3, 0
+  %3 = sub i64 0, %0
+  %4 = icmp eq i64 %2, %3
   ret i1 %4
 }
 
@@ -50,8 +50,8 @@ define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 256
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
-  %4 = icmp eq i32 %3, 0
+  %3 = sub i32 0, %0
+  %4 = icmp eq i32 %2, %3
   ret i1 %4
 }
 
@@ -62,7 +62,7 @@ define i1 @func0000000000000304(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ult i64 %3, 100
   ret i1 %4
 }

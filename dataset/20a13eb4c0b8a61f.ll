@@ -18,9 +18,8 @@
 define ptr @func0000000000000003(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = getelementptr inbounds %struct.ssl_mac_buf_st.1586580, ptr %2, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds %struct.ssl_mac_buf_st.1586580, ptr %2, i64 %0, i32 1
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -42,9 +41,8 @@ entry:
 define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = getelementptr inbounds %"struct.(anonymous namespace)::ValuePair.2279768", ptr %2, i64 %0
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr %"struct.(anonymous namespace)::ValuePair.2279768", ptr %2, i64 %0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

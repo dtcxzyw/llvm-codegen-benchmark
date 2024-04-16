@@ -295,10 +295,9 @@ entry:
 define ptr @func0000000000000007(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8488
-  %4 = getelementptr inbounds %struct.Kf_Cut_t_.1772221, ptr %3, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  %6 = getelementptr inbounds i32, ptr %5, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds %struct.Kf_Cut_t_.1772221, ptr %3, i64 %1, i32 7
+  %5 = getelementptr inbounds i32, ptr %4, i64 %0
+  ret ptr %5
 }
 
 ; 3 occurrences:

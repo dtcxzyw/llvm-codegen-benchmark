@@ -43,10 +43,13 @@ func0000000000000081:                   # @func0000000000000081
 	and	a0, a0, a2
 	ret
 func0000000000000061:                   # @func0000000000000061
-	slti	a2, a1, 0
-	and	a0, a0, a2
-	slli	a1, a1, 12
-	srli	a1, a1, 12
+	li	a2, -2047
+	slli	a2, a2, 52
+	addi	a2, a2, -1
+	and	a1, a1, a2
+	li	a2, -1
+	slli	a2, a2, 63
+	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

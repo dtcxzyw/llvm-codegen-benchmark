@@ -20,20 +20,16 @@ func00000000000003f4:                   # @func00000000000003f4
 	sltiu	a0, a0, 2
 	ret
 func00000000000003b6:                   # @func00000000000003b6
-	slli	a2, a2, 16
-	slli	a1, a1, 32
-	or	a1, a1, a2
-	or	a0, a0, a1
 	slli	a0, a0, 16
+	slli	a1, a1, 48
+	or	a0, a0, a1
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret
 func00000000000002f6:                   # @func00000000000002f6
-	slli	a2, a2, 32
-	slli	a1, a1, 16
-	or	a1, a1, a2
-	or	a0, a0, a1
 	slli	a0, a0, 16
+	slli	a2, a2, 48
+	or	a0, a0, a2
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret

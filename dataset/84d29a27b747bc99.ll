@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = zext i16 %2 to i32
-  %4 = lshr i32 %3, 8
+  %3 = lshr i16 %2, 8
+  %4 = zext nneg i16 %3 to i32
   %5 = icmp eq i32 %1, 100
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6

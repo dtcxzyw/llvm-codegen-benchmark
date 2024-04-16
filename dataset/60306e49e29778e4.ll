@@ -390,7 +390,7 @@ define i32 @func00000000000000d0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = add nsw i32 %3, -7936
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }

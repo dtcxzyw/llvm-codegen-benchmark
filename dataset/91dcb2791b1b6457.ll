@@ -8594,9 +8594,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds %struct.NSVGpoint.1553122, ptr %0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 28
-  ret ptr %3
+  %2 = getelementptr inbounds %struct.NSVGpoint.1553122, ptr %0, i64 %1, i32 7
+  ret ptr %2
 }
 
 ; 5285 occurrences:
@@ -17735,9 +17734,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.rb_code_location_struct.1553153, ptr %0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 4
-  ret ptr %3
+  %2 = getelementptr %struct.rb_code_location_struct.1553153, ptr %0, i64 %1, i32 0, i32 1
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

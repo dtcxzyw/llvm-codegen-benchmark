@@ -9,7 +9,7 @@ define i1 @func0000000000000088(i16 %0, i32 %1) #0 {
 entry:
   %2 = sext i16 %0 to i32
   %3 = lshr i32 %2, 9
-  %4 = icmp ult i32 %1, %3
+  %4 = icmp ugt i32 %3, %1
   %5 = icmp ult i16 %0, 512
   %6 = or i1 %5, %4
   ret i1 %6

@@ -249,9 +249,9 @@ entry:
 define i64 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i64 0, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -260,9 +260,9 @@ entry:
 define i8 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub i8 0, %1
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i8 %2, i8 3
-  ret i8 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i8 3, i8 %2
+  ret i8 %3
 }
 
 ; 1 occurrences:

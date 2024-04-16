@@ -8,7 +8,7 @@ entry:
   %2 = and i32 %1, 65536
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i16 10, i16 50
-  %5 = icmp eq i16 %0, %4
+  %5 = icmp eq i16 %4, %0
   %6 = select i1 %5, i32 0, i32 -22
   ret i32 %6
 }
@@ -21,7 +21,7 @@ entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 3
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   %6 = select i1 %5, i32 10002, i32 0
   ret i32 %6
 }

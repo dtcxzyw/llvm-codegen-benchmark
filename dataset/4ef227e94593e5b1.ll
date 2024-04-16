@@ -8,7 +8,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i32 262144, i32 %1
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

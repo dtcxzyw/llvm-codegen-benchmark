@@ -14,9 +14,8 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
-  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %5)
-  %7 = extractvalue { i64, i1 } %6, 0
-  ret i64 %7
+  %6 = add i64 %5, %0
+  ret i64 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -126,10 +125,9 @@ define i64 @func0000000000000020(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %5)
-  %7 = extractvalue { i64, i1 } %6, 0
-  ret i64 %7
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add i64 %5, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

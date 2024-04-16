@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -16
-  %2 = add i32 %1, 64
-  %3 = lshr i32 %2, 8
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
+  %1 = add i32 %0, 64
+  %2 = lshr i32 %1, 8
+  %3 = trunc i32 %2 to i8
+  ret i8 %3
 }
 
 ; 1 occurrences:
@@ -22,7 +21,7 @@ entry:
   %1 = and i128 %0, 18446744073709551615
   %2 = add nsw i128 %1, -1
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   ret i64 %4
 }
 
@@ -37,7 +36,7 @@ entry:
   %1 = and i32 %0, 251658240
   %2 = add nsw i32 %1, -16777216
   %3 = lshr exact i32 %2, 24
-  %4 = trunc i32 %3 to i8
+  %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
 
@@ -70,7 +69,7 @@ entry:
   %1 = and i128 %0, 18446744073709551615
   %2 = add nuw nsw i128 %1, 117397592171526113268558934119004209487
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw nsw i128 %3 to i64
   ret i64 %4
 }
 
@@ -85,7 +84,7 @@ entry:
   %1 = and i16 %0, 768
   %2 = add nuw nsw i16 %1, 256
   %3 = lshr exact i16 %2, 8
-  %4 = trunc i16 %3 to i8
+  %4 = trunc nuw nsw i16 %3 to i8
   ret i8 %4
 }
 
@@ -94,8 +93,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -8
-  %2 = add i32 %1, -8
+  %1 = and i32 %0, 262136
+  %2 = add nuw nsw i32 %1, 262136
   %3 = lshr exact i32 %2, 2
   %4 = trunc i32 %3 to i16
   ret i16 %4

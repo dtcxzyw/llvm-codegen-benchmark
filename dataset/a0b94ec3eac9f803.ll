@@ -5,7 +5,7 @@
 define i1 @func0000000000000018(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp ugt i16 %0, 1
   %7 = select i1 %6, i1 true, i1 %5
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000116(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp slt i32 %0, 1
   %7 = select i1 %6, i1 true, i1 %5
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000046(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = icmp ult i64 %4, 65536
   %6 = icmp slt i32 %0, 4
   %7 = select i1 %6, i1 true, i1 %5
@@ -49,7 +49,7 @@ entry:
 define i1 @func000000000000004a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = icmp ult i64 %4, 65536
   %6 = icmp sgt i32 %0, 4
   %7 = select i1 %6, i1 true, i1 %5
@@ -62,7 +62,7 @@ entry:
 define i1 @func000000000000004c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = icmp ult i64 %4, 512
   %6 = icmp ne i32 %0, 128
   %7 = select i1 %6, i1 true, i1 %5

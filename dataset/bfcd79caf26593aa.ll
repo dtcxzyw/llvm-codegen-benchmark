@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = sub i64 0, %2
-  %4 = getelementptr inbounds i8, ptr %0, i64 4096
-  %5 = getelementptr inbounds i64, ptr %4, i64 %3
-  ret ptr %5
+  %.neg = mul i64 %1, -2
+  %2 = getelementptr inbounds i8, ptr %0, i64 4096
+  %3 = getelementptr inbounds i64, ptr %2, i64 %.neg
+  ret ptr %3
 }
 
 ; 11 occurrences:

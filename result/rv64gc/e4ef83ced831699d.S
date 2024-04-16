@@ -10,20 +10,18 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	andi	a3, a0, 1
 	lui	a0, 1
+	addiw	a0, a0, -16
 	beqz	a3, .LBB1_2
-	addi	a2, a2, 19
-	addiw	a1, a0, -16
-	and	a1, a1, a2
+	addi	a1, a2, 19
+	and	a1, a1, a0
 .LBB1_2:                                # %entry
-	addiw	a0, a0, -4
+	addi	a0, a0, 12
 	and	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
-	beqz	a0, .LBB2_2
-	lui	a0, 13
-	addi	a1, a0, 1984
-	add	a1, a1, a2
+	bnez	a0, .LBB2_2
+	mv	a2, a1
 .LBB2_2:                                # %entry
-	andi	a0, a1, 31
+	andi	a0, a2, 31
 	ret

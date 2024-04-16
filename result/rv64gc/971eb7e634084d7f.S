@@ -6,10 +6,11 @@ func000000000000001d:                   # @func000000000000001d
 	addw	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d
-	sext.w	a2, a2
+	ori	a2, a2, 2
+	slli	a2, a2, 32
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 2
 	ret
 .LCPI2_0:
 	.quad	4629700417037541376             # 0x4040000006002000

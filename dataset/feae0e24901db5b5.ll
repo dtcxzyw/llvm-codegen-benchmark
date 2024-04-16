@@ -162,9 +162,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 128
-  %6 = getelementptr %struct.ahci_sg.1994846, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct.ahci_sg.1994846, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 5 occurrences:
@@ -193,9 +192,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 48
-  %6 = getelementptr %struct.bio_vec.2016814, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.bio_vec.2016814, ptr %5, i64 %0, i32 2
+  ret ptr %6
 }
 
 ; 3 occurrences:

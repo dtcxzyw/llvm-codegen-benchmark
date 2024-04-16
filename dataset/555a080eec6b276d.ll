@@ -7,7 +7,7 @@ entry:
   %2 = and i64 %1, 255
   %3 = mul nuw nsw i64 %2, 3
   %4 = add nsw i64 %3, -3
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = and i32 %1, 2047
   %3 = mul nuw nsw i32 %2, 315653
   %4 = add nsw i32 %3, -339326975
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

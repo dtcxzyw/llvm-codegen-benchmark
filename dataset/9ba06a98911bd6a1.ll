@@ -20,8 +20,8 @@ entry:
 define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %1, %3
-  %5 = icmp ne i64 %4, 0
+  %4 = sub i64 0, %1
+  %5 = icmp ne i64 %3, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

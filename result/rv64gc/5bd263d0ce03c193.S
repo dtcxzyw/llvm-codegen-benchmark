@@ -42,8 +42,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 328
 	ret
 func000000000000000a:                   # @func000000000000000a
-	slli	a1, a1, 56
-	bltz	a1, .LBB3_2
+	andi	a1, a1, 128
+	bnez	a1, .LBB3_2
 	li	a0, 1
 	ret
 .LBB3_2:
@@ -68,8 +68,7 @@ func0000000000000021:                   # @func0000000000000021
 	li	a0, 32
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	andi	a0, a0, 1
 	li	a2, 2
 	sub	a2, a2, a0

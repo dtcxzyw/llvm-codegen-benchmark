@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = select i1 %1, ptr null, ptr %2
-  %4 = select i1 %0, ptr null, ptr %3
+  %3 = select i1 %0, i1 true, i1 %1
+  %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
 }
 

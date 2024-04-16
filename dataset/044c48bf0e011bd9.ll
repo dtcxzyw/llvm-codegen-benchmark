@@ -9,9 +9,8 @@ entry:
   %2 = and i32 %1, 64
   %3 = and i32 %2, %0
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 524288, i32 526336
-  %6 = and i32 %5, 2048
-  ret i32 %6
+  %5 = select i1 %4, i32 0, i32 2048
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

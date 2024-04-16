@@ -80,7 +80,7 @@
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   %6 = add nuw nsw i64 %5, 4
@@ -104,7 +104,7 @@ entry:
 define i64 @func000000000000002f(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
   %6 = add nuw nsw i64 %5, 16

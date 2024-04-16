@@ -8,7 +8,7 @@
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.umax.i64(i64 %2, i64 1000)
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -31,7 +31,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = icmp ne i64 %1, %3
+  %4 = icmp ne i64 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umax.i32(i32 %2, i32 1)
-  %4 = icmp uge i32 %1, %3
+  %4 = icmp ule i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

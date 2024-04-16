@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011

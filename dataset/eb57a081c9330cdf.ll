@@ -33,8 +33,8 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add nuw nsw i64 %3, 13
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 13
   ret ptr %5
 }
 
@@ -45,8 +45,8 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add nsw i64 %3, -32
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
 
@@ -56,8 +56,8 @@ entry:
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add i64 %3, 4
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -106,8 +106,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = add i64 %3, 1
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -118,8 +118,8 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add i64 %3, 53
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 53
   ret ptr %5
 }
 
@@ -129,8 +129,8 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add nuw nsw i64 %3, 4
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -140,8 +140,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = add nsw i64 %3, 1
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 

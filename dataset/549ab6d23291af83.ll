@@ -6,9 +6,8 @@
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %3 = icmp slt i32 %2, %0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -22,9 +21,8 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:

@@ -16,8 +16,8 @@ func000000000000001c:                   # @func000000000000001c
 	sll	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	addi	a1, a1, 4
 	andi	a1, a1, 7
+	xori	a1, a1, 4
 	sext.w	a0, a0
 	sll	a0, a0, a1
 	ret

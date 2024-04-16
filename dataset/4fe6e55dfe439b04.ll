@@ -278,8 +278,8 @@ define i1 @func0000000000000184(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp ugt i16 %3, 127
-  %5 = and i8 %0, 31
-  %6 = icmp ult i8 %5, 4
+  %5 = and i8 %0, 28
+  %6 = icmp eq i8 %5, 0
   %7 = and i1 %6, %4
   ret i1 %7
 }

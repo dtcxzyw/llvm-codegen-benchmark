@@ -150,9 +150,9 @@ define ptr @func0000000000000011(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 176
   %4 = icmp eq i32 %3, 32
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = select i1 %4, ptr %5, ptr %0
-  ret ptr %6
+  %.idx = select i1 %4, i64 %1, i64 0
+  %5 = getelementptr inbounds i8, ptr %0, i64 %.idx
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

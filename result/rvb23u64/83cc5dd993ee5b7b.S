@@ -25,14 +25,14 @@ func0000000000000016:                   # @func0000000000000016
 	sh3add	a0, a1, a0
 	ret
 func000000000000003f:                   # @func000000000000003f
-	add	a1, a1, a2
-	addiw	a1, a1, 4
+	addw	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 4
 	ret
 func000000000000000f:                   # @func000000000000000f
-	add	a1, a1, a2
-	addiw	a1, a1, 1
+	addw	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	addw	a1, a1, a2
@@ -40,9 +40,9 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, 4
 	ret
 func000000000000002f:                   # @func000000000000002f
-	add	a1, a1, a2
-	addiw	a1, a1, 4
+	addw	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 4
 	ret
 func0000000000000035:                   # @func0000000000000035
 	add	a1, a1, a2
@@ -60,9 +60,9 @@ func0000000000000014:                   # @func0000000000000014
 	add.uw	a0, a1, a0
 	ret
 func0000000000000036:                   # @func0000000000000036
-	add	a1, a1, a2
-	addiw	a1, a1, -1
+	addw	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, -1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	add	a1, a1, a2

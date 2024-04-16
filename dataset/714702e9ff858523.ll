@@ -11,10 +11,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
-  %2 = trunc i8 %1 to i1
-  %3 = trunc i8 %0 to i1
-  %4 = and i1 %3, %2
-  ret i1 %4
+  %2 = and i8 %0, %1
+  %3 = trunc i8 %2 to i1
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -22,10 +21,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = trunc nuw i32 %1 to i1
-  %3 = trunc nuw i32 %0 to i1
-  %4 = and i1 %3, %2
-  ret i1 %4
+  %2 = and i32 %0, %1
+  %3 = trunc i32 %2 to i1
+  ret i1 %3
 }
 
 ; 2 occurrences:

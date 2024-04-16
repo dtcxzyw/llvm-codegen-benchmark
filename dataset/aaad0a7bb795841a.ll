@@ -19,7 +19,7 @@ define i1 @func0000000000000401(i64 %0, i64 %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 0.000000e+00
   %4 = zext i1 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -31,7 +31,7 @@ define i1 @func000000000000039a(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
@@ -43,7 +43,7 @@ define i1 @func0000000000000591(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %2, 0.000000e+00
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = icmp eq i32 %5, %0
   ret i1 %6
 }

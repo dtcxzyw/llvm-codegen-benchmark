@@ -319,7 +319,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
+  %2 = add i32 %1, 7
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds [8 x i64], ptr %0, i64 0, i64 %4
@@ -343,8 +343,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw i32 %1, 1
-  %3 = and i32 %2, 1
+  %2 = and i32 %1, 1
+  %3 = xor i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds [2 x %class.u_map.335.2104009], ptr %0, i64 0, i64 %4
   ret ptr %5

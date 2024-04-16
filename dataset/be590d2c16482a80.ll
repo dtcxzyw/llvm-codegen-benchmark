@@ -31,10 +31,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
-  %4 = freeze ptr %0
-  %5 = getelementptr inbounds ptr, ptr %4, i64 %3
+  %2 = or i64 %1, 1
+  %3 = freeze ptr %0
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 
@@ -43,10 +43,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
-  %4 = freeze ptr %0
-  %5 = getelementptr ptr, ptr %4, i64 %3
+  %2 = or i64 %1, 1
+  %3 = freeze ptr %0
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 

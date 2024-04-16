@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define double @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = sub nsw i64 3, %2
-  %4 = sitofp i64 %3 to double
-  ret double %4
+  %.neg = sub i64 %1, %0
+  %2 = add i64 %.neg, 3
+  %3 = sitofp i64 %2 to double
+  ret double %3
 }
 
 ; 9 occurrences:
@@ -23,10 +23,9 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = sub nsw i32 0, %2
-  %4 = sitofp i32 %3 to double
-  ret double %4
+  %.neg = sub nsw i32 %1, %0
+  %2 = sitofp i32 %.neg to double
+  ret double %2
 }
 
 ; 1 occurrences:
@@ -34,10 +33,9 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %0, %1
-  %3 = sub i32 0, %2
-  %4 = sitofp i32 %3 to double
-  ret double %4
+  %.neg = sub i32 %1, %0
+  %2 = sitofp i32 %.neg to double
+  ret double %2
 }
 
 attributes #0 = { nounwind }

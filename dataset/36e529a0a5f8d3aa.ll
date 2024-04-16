@@ -18,7 +18,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %2, 12
-  %4 = trunc i16 %3 to i8
+  %4 = trunc nuw nsw i16 %3 to i8
   %5 = and i8 %4, 3
   %6 = select i1 %1, i8 2, i8 %5
   %7 = or disjoint i8 %6, %0
@@ -30,11 +30,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i40 %2) #0 {
 entry:
-  %3 = lshr i40 %2, 8
-  %4 = trunc nuw i40 %3 to i32
+  %3 = trunc i40 %2 to i32
+  %4 = lshr i32 %3, 8
   %5 = and i32 %4, 1
   %6 = select i1 %1, i32 1, i32 %5
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

@@ -6,7 +6,7 @@ define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fmul float %3, %1
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   %6 = fcmp ole float %5, 1.000000e+00
   ret i1 %6
 }
@@ -20,8 +20,8 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.000000e+00, %2
-  %4 = fmul float %1, %3
-  %5 = fadd float %0, %4
+  %4 = fmul float %3, %1
+  %5 = fadd float %4, %0
   %6 = fcmp olt float %5, 0.000000e+00
   ret i1 %6
 }

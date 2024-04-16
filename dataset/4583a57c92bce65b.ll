@@ -37,9 +37,9 @@ entry:
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 0, i32 %1
-  ret i32 %3
+  %.inv = icmp slt i32 %0, 0
+  %2 = select i1 %.inv, i32 %1, i32 0
+  ret i32 %2
 }
 
 ; 45 occurrences:
@@ -191,9 +191,9 @@ entry:
 define i32 @func000000000000001a(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 0, i32 %1
-  ret i32 %3
+  %.inv = icmp slt i32 %0, 0
+  %2 = select i1 %.inv, i32 %1, i32 0
+  ret i32 %2
 }
 
 ; 2 occurrences:

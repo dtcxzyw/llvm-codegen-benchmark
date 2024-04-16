@@ -23,7 +23,7 @@ entry:
   %4 = lshr i32 %3, 1
   %5 = lshr i32 %1, 1
   %6 = add nuw i32 %5, %4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

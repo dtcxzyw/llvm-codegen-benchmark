@@ -14,7 +14,8 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	not	a1, a1
-	ori	a1, a1, -256
+	slli	a1, a1, 56
+	srai	a1, a1, 56
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a2, a2, 32

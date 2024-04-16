@@ -10,7 +10,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = fmul double %3, 5.000000e-01
   %5 = fadd double %4, 1.000000e+00
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

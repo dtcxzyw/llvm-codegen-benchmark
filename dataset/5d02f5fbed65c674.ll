@@ -11,7 +11,7 @@ entry:
   %4 = mul nsw i64 %1, 666643
   %5 = add nsw i64 %4, %3
   %6 = ashr i64 %5, 21
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

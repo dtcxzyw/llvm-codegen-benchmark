@@ -13,7 +13,7 @@
 define i1 @func0000000000000034(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 8, i64 64
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = select i1 %1, i64 -8, i64 -64
   %5 = and i64 %3, %4
   %6 = icmp ult i64 %5, 513

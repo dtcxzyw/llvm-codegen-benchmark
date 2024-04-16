@@ -15,7 +15,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
   %4 = and i64 %3, 1016
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = trunc i64 %5 to i16
   ret i16 %6
 }
@@ -40,10 +40,9 @@ define i8 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 6
-  %4 = and i32 %3, 1984
-  %5 = or disjoint i32 %0, %4
-  %6 = trunc nuw i32 %5 to i8
-  ret i8 %6
+  %4 = or i32 %3, %0
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
 }
 
 ; 1 occurrences:
@@ -54,7 +53,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 6
   %4 = and i32 %3, 4032
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
 }

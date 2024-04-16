@@ -32,10 +32,9 @@ define i1 @func000000000000031c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = icmp eq i32 %3, 31
-  %5 = add nuw nsw i32 %1, 1
-  %6 = select i1 %4, i32 %5, i32 %0
-  %7 = icmp ne i32 %6, 0
-  ret i1 %7
+  %5 = icmp ne i32 %0, 0
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
 }
 
 ; 1 occurrences:

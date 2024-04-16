@@ -20,7 +20,7 @@ entry:
 define i128 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   %5 = zext i64 %4 to i128
   %6 = mul nuw nsw i128 %5, 95
   ret i128 %6

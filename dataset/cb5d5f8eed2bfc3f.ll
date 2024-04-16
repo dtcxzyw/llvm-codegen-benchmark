@@ -10,7 +10,7 @@ entry:
   %2 = and i32 %1, 248
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 7, i32 0
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -34,12 +34,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 128
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 18, i32 2
-  %5 = or disjoint i32 %4, %0
-  %6 = icmp ult i32 %5, 32
-  ret i1 %6
+  %2 = icmp ult i32 %0, 32
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

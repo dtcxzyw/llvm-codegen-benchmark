@@ -6,7 +6,7 @@
 define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 4294967284
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, -1
   ret i32 %5
@@ -84,7 +84,7 @@ entry:
 define i32 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 4294967284
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, -1
   ret i32 %5

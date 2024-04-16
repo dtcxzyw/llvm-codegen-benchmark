@@ -35,11 +35,11 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a0, a0
 	blt	a2, a1, .LBB3_2
 	mv	a1, a2
 .LBB3_2:                                # %entry
-	subw	a1, a1, a0
-	sgtz	a0, a1
+	slt	a0, a0, a1
 	ret
 func000000000000004a:                   # @func000000000000004a
 	blt	a2, a1, .LBB4_2

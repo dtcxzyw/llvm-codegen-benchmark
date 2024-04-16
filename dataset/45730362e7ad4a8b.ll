@@ -20,7 +20,7 @@
 define i64 @func000000000000000c(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %2, -1
-  %4 = and i8 %1, %3
+  %4 = and i8 %3, %1
   %5 = zext nneg i8 %4 to i64
   %6 = zext nneg i32 %0 to i64
   %7 = shl i64 %5, %6

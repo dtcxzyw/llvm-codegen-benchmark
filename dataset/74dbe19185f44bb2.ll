@@ -6,10 +6,10 @@ define i64 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = and i64 %3, 31
-  %5 = icmp ne i64 %4, 27
-  %6 = or i64 %3, 32768
-  %7 = select i1 %5, i64 %6, i64 %3
-  ret i64 %7
+  %.not = icmp eq i64 %4, 27
+  %5 = or i64 %3, 32768
+  %6 = select i1 %.not, i64 %3, i64 %5
+  ret i64 %6
 }
 
 ; 6 occurrences:

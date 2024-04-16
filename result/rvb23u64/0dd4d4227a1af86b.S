@@ -14,11 +14,9 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa1
-	fli.s	fa5, 1.0
 	bnez	a0, .LBB1_2
-	fli.s	fa5, -1.0
+	fneg.s	fa0, fa0
 .LBB1_2:                                # %entry
-	fmul.s	fa0, fa5, fa0
 	ret
 .LCPI2_0:
 	.quad	0x3feff7ced916872b              # double 0.99899999999999999

@@ -5,7 +5,7 @@
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8388608
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 8585216
   %6 = or i32 %4, %5
   %7 = xor i32 %6, 142405730
@@ -34,7 +34,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32768
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = and i64 %1, 1023
   %6 = or disjoint i64 %4, %5
   %7 = xor i64 %6, 32768

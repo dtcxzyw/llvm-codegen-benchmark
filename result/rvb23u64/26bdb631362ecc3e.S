@@ -55,9 +55,10 @@ func0000000000000148:                   # @func0000000000000148
 	sltu	a0, a3, a0
 	ret
 func0000000000000141:                   # @func0000000000000141
-	sh1add	a2, a2, a2
+	li	a3, -12
+	mul	a2, a2, a3
 	add	a0, a0, a1
-	sh2add	a0, a2, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000106:                   # @func0000000000000106
@@ -150,8 +151,9 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000041:                   # @func0000000000000041
 	add	a1, a1, a2
 	li	a2, -100
-	mul	a0, a0, a2
-	addw	a0, a0, a1
+	mulw	a0, a0, a2
+	negw	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000158:                   # @func0000000000000158

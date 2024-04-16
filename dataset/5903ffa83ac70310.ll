@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
+  %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %1
-  %5 = add nsw i64 %4, %3
+  %5 = add i64 %4, %3
   %6 = trunc i64 %5 to i8
   ret i8 %6
 }
@@ -32,11 +32,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %3 = sub i64 %0, %1
+  %4 = trunc i64 %3 to i32
+  %5 = add i32 %4, %2
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

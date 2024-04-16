@@ -50,7 +50,7 @@
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -132,7 +132,7 @@ entry:
 define i32 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

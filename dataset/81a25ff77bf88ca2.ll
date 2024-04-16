@@ -8,7 +8,7 @@ define i1 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = select i1 %1, i32 65280, i32 %3
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

@@ -1,8 +1,8 @@
 func000000000000003a:                   # @func000000000000003a
 	andi	a1, a1, 255
 	addi	a1, a1, 1
-	srai	a0, a0, 63
-	andn	a0, a1, a0
+	slti	a0, a0, 0
+	czero.nez	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0

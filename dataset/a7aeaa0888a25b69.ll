@@ -21,7 +21,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.ctpop.i64(i64 %1), !range !0
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   ret i64 %3
 }
 

@@ -1,5 +1,4 @@
 func0000000000000000:                   # @func0000000000000000
-	beqz	a2, .LBB0_2
 	srli	a3, a2, 1
 	or	a2, a2, a3
 	srli	a3, a2, 2
@@ -41,11 +40,6 @@ func0000000000000000:                   # @func0000000000000000
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	srli	a2, a2, 56
-	add	a0, a0, a1
-	sll	a0, a0, a2
-	ret
-.LBB0_2:
-	li	a2, 64
 	add	a0, a0, a1
 	sll	a0, a0, a2
 	ret

@@ -15,8 +15,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 0
-  %5 = select i1 %4, i8 %0, i8 1
-  %6 = and i8 %5, 1
+  %5 = and i8 %0, 1
+  %6 = select i1 %4, i8 %5, i8 1
   ret i8 %6
 }
 

@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i16 @func000000000000011a(i16 %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 16
-  %3 = trunc nsw i32 %2 to i16
+  %2 = lshr exact i32 %1, 16
+  %3 = trunc nuw i32 %2 to i16
   %4 = sub i16 0, %3
   %5 = icmp sgt i16 %0, 0
   %6 = select i1 %5, i16 %3, i16 %4

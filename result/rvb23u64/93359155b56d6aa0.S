@@ -71,7 +71,8 @@ func0000000000000081:                   # @func0000000000000081
 	and	a0, a0, a2
 	ret
 func0000000000000044:                   # @func0000000000000044
-	zext.w	a2, a2
+	srliw	a2, a2, 4
+	slli	a2, a2, 4
 	sltiu	a2, a2, 48
 	sltu	a0, a0, a1
 	and	a0, a0, a2

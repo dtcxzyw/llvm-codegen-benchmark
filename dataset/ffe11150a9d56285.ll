@@ -7,11 +7,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 16
-  %3 = select i1 %0, i32 %2, i32 %1
-  %4 = shl i32 %3, 4
-  %5 = and i32 %4, 524288
-  ret i32 %5
+  %2 = shl i32 %1, 4
+  %3 = and i32 %2, 524288
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -20,9 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %1, 224
-  %3 = select i1 %0, i32 %2, i32 %1
-  %4 = shl i32 %3, 4
+  %2 = shl i32 %1, 4
+  %3 = or i32 %2, 3584
+  %4 = select i1 %0, i32 %3, i32 %2
   %5 = and i32 %4, -208
   ret i32 %5
 }

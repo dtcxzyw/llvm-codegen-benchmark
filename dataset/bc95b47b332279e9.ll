@@ -173,7 +173,7 @@ entry:
   %2 = add nsw i32 %1, -261663
   %3 = ashr i32 %2, 21
   %4 = sub nsw i32 0, %3
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

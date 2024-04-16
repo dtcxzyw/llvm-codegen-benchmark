@@ -6,7 +6,7 @@ func0000000000000007:                   # @func0000000000000007
 	srliw	a0, a0, 12
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a0, a0, 255
+	andi	a0, a0, 252
 	addi	a0, a0, -32
 	srliw	a0, a0, 2
 	ret
@@ -22,7 +22,6 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 2
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a0, a0, -32
 	addi	a0, a0, -32
 	srliw	a0, a0, 5
 	ret

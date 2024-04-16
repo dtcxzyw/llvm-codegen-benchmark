@@ -1,8 +1,8 @@
 func0000000000000005:                   # @func0000000000000005
-	srli	a2, a2, 62
+	slli	a1, a1, 62
 	or	a1, a1, a2
-	slli	a1, a1, 63
-	srli	a1, a1, 1
+	bseti	a2, zero, 62
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

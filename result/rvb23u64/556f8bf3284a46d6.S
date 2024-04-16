@@ -24,7 +24,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000341:                   # @func0000000000000341
 	addi	a1, a1, -1
-	andi	a1, a1, 255
+	andi	a1, a1, 254
 	sltiu	a1, a1, 6
 	addi	a0, a0, -1
 	seqz	a0, a0
@@ -32,9 +32,9 @@ func0000000000000341:                   # @func0000000000000341
 	ret
 func000000000000011c:                   # @func000000000000011c
 	sext.w	a0, a0
-	addi	a1, a1, 1
+	andi	a1, a1, 1
+	or	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	negw	a1, a1
@@ -44,9 +44,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000001c4:                   # @func00000000000001c4
 	sext.w	a0, a0
-	lui	a2, 1034754
-	addiw	a2, a2, 1024
-	add	a1, a1, a2
+	li	a2, 1152
+	sh3add	a1, a2, a1
 	lui	a2, 16
 	addiw	a2, a2, -2
 	and	a1, a1, a2
@@ -67,12 +66,10 @@ func0000000000000381:                   # @func0000000000000381
 	and	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
-	lui	a2, 1048572
-	add	a1, a1, a2
 	lui	a2, 4
 	addiw	a2, a2, 63
 	and	a1, a1, a2
-	xor	a1, a1, a2
+	addi	a1, a1, -63
 	seqz	a1, a1
 	sltiu	a0, a0, 4
 	and	a0, a0, a1

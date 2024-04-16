@@ -23,10 +23,9 @@ define ptr @func0000000000000000(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 0, %5
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr i8, ptr %0, i64 %.neg
+  ret ptr %5
 }
 
 ; 179 occurrences:
@@ -214,10 +213,9 @@ define ptr @func0000000000000001(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 0, %5
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -229,10 +227,10 @@ define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub nuw nsw i64 8, %5
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr i8, ptr %0, i64 %.neg
+  %6 = getelementptr i8, ptr %5, i64 8
+  ret ptr %6
 }
 
 ; 7 occurrences:
@@ -248,10 +246,9 @@ define ptr @func0000000000000003(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub nsw i64 0, %5
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -261,10 +258,10 @@ define ptr @func0000000000000004(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub nuw i64 -8, %5
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr i8, ptr %0, i64 %.neg
+  %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -274,10 +271,10 @@ define ptr @func0000000000000002(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub nsw i64 8, %5
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sub i64 %3, %4
+  %5 = getelementptr i8, ptr %0, i64 %.neg
+  %6 = getelementptr i8, ptr %5, i64 8
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -33,7 +33,7 @@ entry:
   %4 = add nuw nsw i64 %3, 1
   %5 = zext i16 %1 to i64
   %6 = mul i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

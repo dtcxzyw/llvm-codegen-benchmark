@@ -893,11 +893,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.QHashPrivate::Span.1914746", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 128
-  %5 = getelementptr i8, ptr %0, i64 1
-  %6 = icmp eq ptr %5, %4
-  ret i1 %6
+  %3 = getelementptr %"struct.QHashPrivate::Span.1914746", ptr %1, i64 %2, i32 1
+  %4 = getelementptr i8, ptr %0, i64 1
+  %5 = icmp eq ptr %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:

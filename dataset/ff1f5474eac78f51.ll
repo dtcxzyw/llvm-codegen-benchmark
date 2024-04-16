@@ -8,7 +8,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }
@@ -24,7 +24,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 46
   %4 = sext i1 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = sub i64 %5, %0
   ret i64 %6
 }
@@ -181,7 +181,7 @@ define i64 @func00000000000000c5(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = sub nsw i64 %5, %0
   ret i64 %6
 }
@@ -193,7 +193,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }

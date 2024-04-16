@@ -24,7 +24,7 @@ entry:
   %3 = or disjoint i8 %1, 8
   %4 = icmp ult i32 %2, 16777216
   %5 = select i1 %4, i8 %3, i8 %1
-  %6 = add i8 %0, %5
+  %6 = add i8 %5, %0
   %7 = add nsw i8 %6, -17
   ret i8 %7
 }

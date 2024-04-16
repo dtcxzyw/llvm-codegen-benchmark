@@ -107,7 +107,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 2
   %5 = and i32 %4, 56
-  %6 = or disjoint i32 %1, %5
+  %6 = or disjoint i32 %5, %1
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -120,7 +120,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = and i32 %4, -2147483648
-  %6 = or disjoint i32 %1, %5
+  %6 = or disjoint i32 %5, %1
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -133,7 +133,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = shl i16 %3, 3
   %5 = and i16 %4, 8
-  %6 = or i16 %1, %5
+  %6 = or i16 %5, %1
   %7 = or i16 %6, %0
   ret i16 %7
 }
@@ -146,7 +146,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = shl i16 %3, 12
   %5 = and i16 %4, 4096
-  %6 = or i16 %1, %5
+  %6 = or i16 %5, %1
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }

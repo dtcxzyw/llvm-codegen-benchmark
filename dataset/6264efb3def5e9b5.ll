@@ -717,9 +717,9 @@ entry:
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
-  %2 = icmp slt i32 %0, 0
-  %3 = select i1 %2, i32 -1, i32 %1
-  ret i32 %3
+  %.inv = icmp sgt i32 %0, -1
+  %2 = select i1 %.inv, i32 %1, i32 -1
+  ret i32 %2
 }
 
 ; 1 occurrences:

@@ -27,7 +27,7 @@ entry:
 define i1 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -158,7 +158,7 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 8
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -680,7 +680,7 @@ entry:
 define i1 @func0000000000000048(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 11
-  %4 = or i16 %1, %3
+  %4 = or i16 %3, %1
   %5 = icmp ugt i16 %4, %0
   ret i1 %5
 }
@@ -780,7 +780,7 @@ entry:
 define i1 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
@@ -792,7 +792,7 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -807,7 +807,7 @@ entry:
 define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -819,7 +819,7 @@ entry:
 define i1 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
@@ -830,7 +830,7 @@ entry:
 define i1 @func0000000000000037(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
@@ -883,7 +883,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 12
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }

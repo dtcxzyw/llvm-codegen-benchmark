@@ -9,8 +9,8 @@ entry:
   %3 = mul nuw i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = mul nuw i64 %0, %1
-  %6 = add i64 %4, %5
-  %7 = icmp ult i64 %6, %5
+  %6 = xor i64 %5, -1
+  %7 = icmp ugt i64 %4, %6
   ret i1 %7
 }
 

@@ -11,7 +11,7 @@
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = fmul float %4, 1.000000e+03
   %6 = fdiv float %5, %0
   ret float %6

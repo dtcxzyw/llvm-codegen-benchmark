@@ -9,8 +9,8 @@ define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %0, 2
-  %5 = or disjoint i64 %4, 1
+  %4 = or i64 %0, 1
+  %5 = add nuw nsw i64 %4, 2
   %6 = icmp ult i64 %5, %3
   ret i1 %6
 }

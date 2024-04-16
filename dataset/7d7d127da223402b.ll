@@ -5,12 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = zext i32 %0 to i64
-  %5 = shl nuw nsw i64 %4, 4
-  %6 = icmp ult i64 %5, %3
-  ret i1 %6
+  %2 = icmp ult i32 %0, %1
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -18,12 +14,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = zext i32 %0 to i64
-  %5 = shl nuw nsw i64 %4, 4
-  %6 = icmp ugt i64 %5, %3
-  ret i1 %6
+  %2 = zext i8 %1 to i32
+  %3 = icmp ult i32 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

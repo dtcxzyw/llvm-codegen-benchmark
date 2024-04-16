@@ -10,10 +10,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000047(i64 %0, i64 %1) #0 {
 entry:
-  %2 = or disjoint i64 %0, 4503599627370496
-  %3 = icmp eq i64 %1, 0
-  %4 = select i1 %3, i64 %0, i64 %2
-  %5 = shl nuw nsw i64 %4, 1
+  %2 = icmp eq i64 %1, 0
+  %3 = shl i64 %0, 1
+  %4 = or i64 %3, 9007199254740992
+  %5 = select i1 %2, i64 %3, i64 %4
   ret i64 %5
 }
 
@@ -22,10 +22,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %0, 5
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = shl nsw i32 %4, 1
+  %2 = icmp eq i32 %1, 0
+  %3 = shl i32 %0, 1
+  %4 = or i32 %3, 10
+  %5 = select i1 %2, i32 %3, i32 %4
   ret i32 %5
 }
 
@@ -34,10 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = or i64 %0, 66048
-  %3 = icmp eq i64 %1, 0
-  %4 = select i1 %3, i64 %0, i64 %2
-  %5 = shl i64 %4, 3
+  %2 = icmp eq i64 %1, 0
+  %3 = shl i64 %0, 3
+  %4 = or i64 %3, 528384
+  %5 = select i1 %2, i64 %3, i64 %4
   ret i64 %5
 }
 

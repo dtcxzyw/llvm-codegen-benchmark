@@ -7,11 +7,11 @@
 define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
-  %3 = select i1 %0, i32 36, i32 37
-  %4 = or disjoint i32 %3, %2
-  %5 = and i32 %4, 3
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %not. = xor i1 %0, true
+  %3 = zext i1 %not. to i32
+  %4 = or disjoint i32 %2, %3
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -19,12 +19,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1
-  %3 = select i1 %0, i32 0, i32 3
-  %4 = or i32 %3, %2
-  %5 = and i32 %4, 1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %.tr = trunc i32 %1 to i1
+  %.tr.not = xor i1 %.tr, true
+  %2 = and i1 %.tr.not, %0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

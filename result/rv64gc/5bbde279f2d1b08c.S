@@ -1,8 +1,7 @@
 func0000000000000046:                   # @func0000000000000046
 	sub	a0, a0, a1
-	srli	a0, a0, 3
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	slli	a0, a0, 29
+	srli	a0, a0, 63
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sub	a0, a0, a1
@@ -75,7 +74,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1
-	slli	a0, a0, 24
-	srli	a0, a0, 48
+	lui	a1, 65535
+	slli	a1, a1, 12
+	and	a0, a0, a1
 	snez	a0, a0
 	ret

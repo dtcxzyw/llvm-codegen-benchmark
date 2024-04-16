@@ -16,10 +16,10 @@ define i1 @func0000000000000022(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -48
   %2 = icmp eq i8 %1, -128
-  %3 = lshr i8 %0, 4
-  %4 = icmp eq i8 %3, 6
-  %5 = or i1 %4, %2
-  ret i1 %5
+  %.mask = and i8 %0, -16
+  %3 = icmp eq i8 %.mask, 96
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

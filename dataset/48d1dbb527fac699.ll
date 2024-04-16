@@ -7,7 +7,7 @@ entry:
   %3 = icmp slt i128 %2, 0
   %4 = select i1 %3, i128 %1, i128 %2
   %5 = and i128 %4, 18446744073709551615
-  %6 = or disjoint i128 %0, %5
+  %6 = or disjoint i128 %5, %0
   ret i128 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = icmp ugt i32 %2, -1048577
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = and i32 %4, -1048576
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

@@ -16,11 +16,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr %union.yyalloc.1553162, ptr %0, i64 %1
-  %5 = getelementptr %union.YYSTYPE.1553161, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 -8
-  ret ptr %6
+  %3 = getelementptr %union.yyalloc.1553162, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.1553161, ptr %3, i64 %2
+  ret ptr %4
 }
 
 ; 21 occurrences:
@@ -48,11 +46,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr inbounds %union.yyalloc.1554246, ptr %0, i64 %1
-  %5 = getelementptr inbounds %union.YYSTYPE.1554245, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 -8
-  ret ptr %6
+  %3 = getelementptr inbounds %union.yyalloc.1554246, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.1554245, ptr %3, i64 %2
+  ret ptr %4
 }
 
 ; 480 occurrences:
@@ -539,11 +535,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds ptr, ptr %0, i64 %1
-  %5 = getelementptr inbounds ptr, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 -8
-  ret ptr %6
+  %3 = getelementptr inbounds ptr, ptr %0, i64 %1
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -555,11 +549,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds { i64, i64 }, ptr %0, i64 %1
-  %5 = getelementptr inbounds { i64, i64 }, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = getelementptr inbounds { i64, i64 }, ptr %0, i64 %1
+  %4 = getelementptr { i64, i64 }, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -567,11 +560,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 3
-  %4 = getelementptr inbounds i16, ptr %0, i64 %1
-  %5 = getelementptr i16, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 2
-  ret ptr %6
+  %3 = getelementptr inbounds i16, ptr %0, i64 %1
+  %4 = getelementptr i16, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -579,11 +571,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr inbounds float, ptr %0, i64 %1
-  %5 = getelementptr inbounds float, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 4
-  ret ptr %6
+  %3 = getelementptr inbounds float, ptr %0, i64 %1
+  %4 = getelementptr float, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -591,11 +582,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 13
-  %4 = getelementptr inbounds float, ptr %0, i64 %1
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 -4
-  ret ptr %6
+  %3 = getelementptr inbounds float, ptr %0, i64 %1
+  %4 = getelementptr float, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 48
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -603,11 +593,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
+  %3 = getelementptr inbounds i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -621,11 +610,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds { { { { { i64, ptr }, i64 } } }, i64, ptr }, ptr %0, i64 %1
-  %5 = getelementptr inbounds { { { { { i64, ptr }, i64 } } }, i64, ptr }, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = getelementptr inbounds { { { { { i64, ptr }, i64 } } }, i64, ptr }, ptr %0, i64 %1
+  %4 = getelementptr { { { { { i64, ptr }, i64 } } }, i64, ptr }, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -32
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -633,11 +621,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 4
-  %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 16
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -645,11 +632,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds double, ptr %0, i64 %1
-  %5 = getelementptr inbounds double, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 48
-  ret ptr %6
+  %3 = getelementptr inbounds double, ptr %0, i64 %1
+  %4 = getelementptr double, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 40
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -662,11 +648,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = getelementptr %union.yyalloc.2119336, ptr %0, i64 %1
-  %5 = getelementptr %union.YYSTYPE.2119335, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 -8
-  ret ptr %6
+  %3 = getelementptr %union.yyalloc.2119336, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.2119335, ptr %3, i64 %2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -674,11 +658,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000019(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr %struct.Color.2186947, ptr %0, i64 %1
-  %5 = getelementptr %struct.Color.2186947, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %3 = getelementptr %struct.Color.2186947, ptr %0, i64 %1
+  %4 = getelementptr %struct.Color.2186947, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 5
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

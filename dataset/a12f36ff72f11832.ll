@@ -10,7 +10,7 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = icmp ult i32 %1, -9
   %6 = or i1 %4, %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -61,7 +61,7 @@ entry:
   %4 = icmp eq i32 %3, 27
   %5 = icmp eq i64 %1, 20
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -99,7 +99,7 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = icmp eq i64 %1, 27
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -122,7 +122,7 @@ entry:
   %4 = icmp ne i32 %3, 67108864
   %5 = icmp ne i32 %1, 102
   %6 = or i1 %4, %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -203,7 +203,7 @@ entry:
   %4 = icmp eq i32 %3, 1600
   %5 = icmp ult i32 %1, 3
   %6 = or i1 %4, %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -291,7 +291,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = icmp ugt i32 %1, 4992
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -307,7 +307,7 @@ entry:
   %4 = icmp eq i64 %3, 2047
   %5 = icmp slt i64 %1, 0
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -320,7 +320,7 @@ entry:
   %4 = icmp eq i8 %3, 24
   %5 = icmp slt i32 %1, 0
   %6 = or i1 %4, %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -333,7 +333,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = icmp slt i8 %1, 0
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -359,7 +359,7 @@ entry:
   %4 = icmp eq i32 %3, 128
   %5 = icmp sgt i8 %1, -1
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

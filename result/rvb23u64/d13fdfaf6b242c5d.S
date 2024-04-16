@@ -14,9 +14,8 @@ func0000000000000001:                   # @func0000000000000001
 func00000000000000d6:                   # @func00000000000000d6
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	subw	a0, a0, a2
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	slt	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	zext.w	a2, a2
@@ -33,8 +32,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000101:                   # @func0000000000000101
 	zext.h	a2, a2
-	add	a0, a0, a1
-	subw	a0, a0, a2
+	addw	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func00000000000000d8:                   # @func00000000000000d8

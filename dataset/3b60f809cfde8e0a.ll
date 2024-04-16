@@ -7,7 +7,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp ult i64 %4, 1024
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp ugt i64 %4, 2047
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -65,10 +65,9 @@ entry:
 define i1 @func0000000000000056(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = sub nsw i32 %3, %1
-  %5 = icmp slt i32 %4, 1
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %4 = icmp sle i32 %3, %1
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -80,7 +79,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = icmp sgt i32 %4, 10
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -91,10 +90,9 @@ entry:
 define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %3, %1
-  %5 = icmp slt i32 %4, 0
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %4 = icmp slt i32 %3, %1
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

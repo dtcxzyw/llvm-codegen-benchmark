@@ -7,10 +7,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = tail call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %5 = sub nsw i32 %4, %3
-  ret i32 %5
+  %.neg = xor i32 %2, -1
+  %3 = tail call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %4 = add i32 %3, %.neg
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

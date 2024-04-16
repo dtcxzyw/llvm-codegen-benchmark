@@ -23,7 +23,7 @@ func0000000000000007:                   # @func0000000000000007
 func000000000000000f:                   # @func000000000000000f
 	max	a2, a2, zero
 	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
 	mul	a0, a0, a2
 	ret

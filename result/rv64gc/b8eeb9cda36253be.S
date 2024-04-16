@@ -19,5 +19,5 @@ func0000000000000003:                   # @func0000000000000003
 	bgtz	a1, .LBB2_2
 	li	a1, 1
 .LBB2_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret

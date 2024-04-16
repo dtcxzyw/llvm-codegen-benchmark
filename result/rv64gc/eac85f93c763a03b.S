@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000006:                   # @func0000000000000006
 	fcvt.d.l	fa5, a1
-	fmul.d	fa5, fa0, fa5
+	fmul.d	fa5, fa5, fa0
 	fcvt.l.d	a2, fa5, rtz
 	blt	a1, a2, .LBB1_2
 	mv	a2, a0

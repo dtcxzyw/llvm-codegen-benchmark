@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
-	beq	a1, a2, .LBB1_2
+	beq	a2, a1, .LBB1_2
 	mv	a2, a0
 .LBB1_2:                                # %entry
 	mv	a0, a2

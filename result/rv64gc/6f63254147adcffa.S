@@ -1,11 +1,13 @@
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a2, a1
 	bnez	a2, .LBB0_2
-	li	a1, 11
-.LBB0_2:                                # %entry
+	li	a1, 51
+	sll	a0, a0, a1
+	ret
+.LBB0_2:
 	li	a2, 62
-	subw	a2, a2, a1
-	sll	a0, a0, a2
+	subw	a1, a2, a1
+	sll	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
 	sext.w	a2, a1

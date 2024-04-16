@@ -20,7 +20,7 @@
 define i64 @func0000000000000004(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %2, -1
-  %4 = and i8 %1, %3
+  %4 = and i8 %3, %1
   %5 = zext nneg i8 %4 to i64
   %6 = shl i64 %5, %0
   ret i64 %6
@@ -45,7 +45,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %2, 43
-  %4 = and i8 %1, %3
+  %4 = and i8 %3, %1
   %5 = zext i8 %4 to i32
   %6 = shl nuw nsw i32 %5, %0
   ret i32 %6

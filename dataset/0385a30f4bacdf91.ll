@@ -41,9 +41,8 @@ entry:
   %2 = and i64 %1, -32
   %3 = inttoptr i64 %2 to ptr
   %4 = shl nuw nsw i64 %0, 1
-  %5 = getelementptr %struct.be128.2027289, ptr %3, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.be128.2027289, ptr %3, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:

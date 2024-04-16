@@ -108,7 +108,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

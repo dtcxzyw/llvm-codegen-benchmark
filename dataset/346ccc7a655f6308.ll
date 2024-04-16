@@ -11,7 +11,7 @@
 define ptr @func0000000000000001(ptr %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fptoui double %4 to i64
   %6 = getelementptr inbounds %"class.std::shared_ptr.227.1580897", ptr %0, i64 %5
   ret ptr %6

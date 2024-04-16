@@ -173,7 +173,7 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 false)
   %4 = zext i32 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = ashr i64 %5, 32
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7

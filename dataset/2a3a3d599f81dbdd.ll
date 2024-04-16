@@ -9,7 +9,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
   %5 = call i64 @llvm.umax.i64(i64 %4, i64 1)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

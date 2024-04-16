@@ -24,7 +24,7 @@ entry:
   %4 = icmp ult i32 %3, 10
   %5 = icmp ult i8 %1, 64
   %6 = and i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = icmp ult i8 %3, 2
   %5 = icmp eq i8 %1, 113
   %6 = and i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

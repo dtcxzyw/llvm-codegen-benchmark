@@ -6,7 +6,7 @@
 define i1 @func0000000000000241(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp ult i32 %0, -10
   %7 = select i1 %5, i1 %6, i1 false
@@ -27,7 +27,7 @@ entry:
 define i1 @func00000000000002cc(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = icmp ne i32 %0, 3
   %7 = select i1 %5, i1 %6, i1 false
@@ -43,7 +43,7 @@ entry:
 define i1 @func000000000000021c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %5, i1 %6, i1 false
@@ -72,7 +72,7 @@ entry:
 define i1 @func00000000000002ac(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp sgt i32 %0, 0
   %7 = select i1 %5, i1 %6, i1 false
@@ -85,7 +85,7 @@ entry:
 define i1 @func00000000000002c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp ne i64 %0, 0
   %7 = select i1 %5, i1 %6, i1 false
@@ -99,7 +99,7 @@ entry:
 define i1 @func0000000000000211(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %5, i1 %6, i1 false
@@ -137,12 +137,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000011c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 -1, %2
-  %4 = and i64 %1, %3
-  %5 = icmp ne i64 %4, 0
-  %6 = icmp eq i64 %0, 0
-  %7 = select i1 %5, i1 %6, i1 false
-  ret i1 %7
+  %3 = lshr i64 %1, %2
+  %4 = icmp ne i64 %3, 0
+  %5 = icmp eq i64 %0, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

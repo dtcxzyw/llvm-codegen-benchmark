@@ -51,7 +51,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = icmp ult i32 %2, 3
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = xor i1 %4, true
   ret i1 %5
 }

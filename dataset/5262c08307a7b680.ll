@@ -109,11 +109,10 @@
 define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 1, i32 2
-  %4 = sub nuw nsw i32 32, %3
-  %5 = lshr i32 %0, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = select i1 %2, i32 31, i32 30
+  %4 = lshr i32 %0, %3
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -3,13 +3,6 @@
 %union.YYSTYPE.1553161 = type { i64 }
 %union.yyalloc.1554246 = type { %union.YYSTYPE.1554245, [8 x i8] }
 %union.YYSTYPE.1554245 = type { i64 }
-%"struct.Assimp::SMD::Face.1753030" = type { i32, [3 x %"struct.Assimp::SMD::Vertex.1753031"] }
-%"struct.Assimp::SMD::Vertex.1753031" = type { %class.aiVector3t.1753032, %class.aiVector3t.1753032, %class.aiVector3t.1753032, i32, %"class.std::vector.45.1753024" }
-%class.aiVector3t.1753032 = type { float, float, float }
-%"class.std::vector.45.1753024" = type { %"struct.std::_Vector_base.46.1753025" }
-%"struct.std::_Vector_base.46.1753025" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.1753026" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.1753026" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.1753027" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.1753027" = type { ptr, ptr, ptr }
 
 ; 11 occurrences:
 ; arrow/optimized/light_array.cc.ll
@@ -63,11 +56,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 200
-  %4 = getelementptr inbounds %"struct.Assimp::SMD::Face.1753030", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 36
-  ret ptr %6
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr inbounds i8, ptr %3, i64 %0
+  %5 = getelementptr inbounds i8, ptr %4, i64 36
+  ret ptr %5
 }
 
 ; 1 occurrences:

@@ -6,7 +6,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr i64 %2, 42
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = call i32 @llvm.bswap.i32(i32 %4)
   ret i32 %5
 }

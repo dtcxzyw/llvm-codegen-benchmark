@@ -15,7 +15,8 @@ func000000000000012a:                   # @func000000000000012a
 func0000000000000108:                   # @func0000000000000108
 	sub	a0, a0, a1
 	srli	a0, a0, 2
-	addi	a0, a0, 1
-	srliw	a0, a0, 16
-	snez	a0, a0
+	lui	a1, 1048560
+	addi	a2, a1, 1
+	addw	a0, a0, a2
+	sltu	a0, a0, a1
 	ret

@@ -6,7 +6,7 @@
 define i1 @func000000000000030c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp slt i32 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000042(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i8 %0, 32
   %6 = or i1 %5, %4
   ret i1 %6
@@ -44,7 +44,7 @@ entry:
 define i1 @func00000000000002cc(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sge i64 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp slt i64 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -71,7 +71,7 @@ entry:
 define i1 @func0000000000000302(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i8 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -107,7 +107,7 @@ entry:
 define i1 @func0000000000000210(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ugt i64 %0, 2305843009213693951
   %6 = or i1 %5, %4
   ret i1 %6
@@ -119,7 +119,7 @@ entry:
 define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i32 %1, -1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -134,7 +134,7 @@ entry:
 define i1 @func0000000000000202(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i64 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -158,7 +158,7 @@ entry:
 define i1 @func0000000000000294(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, %0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp sgt i32 %0, 65535
   %6 = or i1 %5, %4
   ret i1 %6

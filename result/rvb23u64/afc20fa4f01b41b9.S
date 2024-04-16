@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	addi	a2, a1, 8
-	sltu	a1, a2, a1
+	sltiu	a1, a1, -8
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

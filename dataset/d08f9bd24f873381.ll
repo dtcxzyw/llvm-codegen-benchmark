@@ -44,7 +44,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -55,7 +55,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = icmp ult i64 %3, 5
   ret i1 %4
 }
@@ -78,7 +78,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = icmp ugt i32 %3, 1024
   ret i1 %4
 }
@@ -114,7 +114,7 @@ entry:
 define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   %4 = icmp ult i64 %3, 4294967296
   ret i1 %4
 }

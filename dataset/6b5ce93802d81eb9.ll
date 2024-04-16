@@ -34,7 +34,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -238
   %4 = icmp ult i32 %3, -9
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -59,10 +59,9 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -16
-  %4 = icmp ne i32 %3, 44
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %3 = icmp ne i32 %2, 60
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -74,7 +73,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = add nsw i8 %2, -65
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -90,10 +89,9 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -7
-  %4 = icmp eq i32 %3, 31
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %3 = icmp eq i32 %2, 38
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -102,10 +100,9 @@ entry:
 define i1 @func0000000000000022(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %3 = icmp eq i32 %2, 1
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

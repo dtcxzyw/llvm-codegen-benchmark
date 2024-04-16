@@ -11,12 +11,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i16 %0, i16 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i16
-  %4 = shl nuw i16 %1, 8
-  %5 = or disjoint i16 %4, %3
-  %6 = and i16 %0, %5
-  %7 = trunc i16 %6 to i8
-  ret i8 %7
+  %3 = trunc i16 %0 to i8
+  %4 = and i8 %3, %2
+  ret i8 %4
 }
 
 ; 3 occurrences:
@@ -26,12 +23,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl i32 %1, 8
-  %5 = or disjoint i32 %4, %3
-  %6 = and i32 %5, %0
-  %7 = trunc i32 %6 to i8
-  ret i8 %7
+  %3 = trunc i32 %0 to i8
+  %4 = and i8 %3, %2
+  ret i8 %4
 }
 
 ; 3 occurrences:

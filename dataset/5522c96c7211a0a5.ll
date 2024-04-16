@@ -7,7 +7,7 @@
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = xor i1 %5, %0
   ret i1 %6
@@ -27,9 +27,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 

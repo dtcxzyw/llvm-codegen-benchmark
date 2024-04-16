@@ -20,7 +20,7 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a2, a2, -1989
 	mulw	a1, a1, a2
 	lui	a2, 4315
-	addiw	a2, a2, 522
-	sltu	a1, a2, a1
-	czero.eqz	a0, a0, a1
+	addiw	a2, a2, 523
+	sltu	a1, a1, a2
+	czero.nez	a0, a0, a1
 	ret

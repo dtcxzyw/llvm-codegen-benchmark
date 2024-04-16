@@ -23,7 +23,7 @@ entry:
 define i64 @func00000000000000a0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %0, %3
+  %4 = mul nuw i64 %3, %0
   %5 = mul nuw i64 %0, %1
   %6 = shl i64 %5, 32
   %7 = add i64 %6, %4

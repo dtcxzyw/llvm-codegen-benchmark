@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	fneg.s	fa5, fa2
-	fmul.s	fa5, fa2, fa5
+	fmul.s	fa5, fa5, fa2
 	fmadd.s	fa5, fa0, fa1, fa5
 	lui	a0, 212992
 	fmv.w.x	fa4, a0
@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fneg.s	fa5, fa2
-	fmul.s	fa5, fa2, fa5
+	fmul.s	fa5, fa5, fa2
 	fmadd.s	fa5, fa0, fa1, fa5
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa5, fa4
@@ -16,7 +16,7 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fneg.s	fa5, fa2
-	fmul.s	fa5, fa2, fa5
+	fmul.s	fa5, fa5, fa2
 	fmadd.s	fa5, fa0, fa1, fa5
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa4, fa5

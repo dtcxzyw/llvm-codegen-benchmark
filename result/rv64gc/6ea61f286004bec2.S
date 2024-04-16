@@ -16,11 +16,11 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 255
 	li	a3, 98
-	bne	a2, a3, .LBB2_2
-	mv	a0, a1
+	beq	a2, a3, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	srli	a0, a0, 10
-	andi	a0, a0, 1020
+	srli	a1, a1, 10
+	andi	a0, a1, 1020
 	ret
 func0000000000000003:                   # @func0000000000000003
 	li	a3, 62

@@ -20,7 +20,7 @@ entry:
   %3 = select i1 %1, float %2, float 0.000000e+00
   %4 = fcmp ogt float %3, 1.000000e+00
   %5 = select i1 %4, float 1.000000e+00, float %3
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

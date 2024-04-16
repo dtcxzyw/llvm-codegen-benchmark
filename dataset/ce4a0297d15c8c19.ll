@@ -6,11 +6,10 @@
 define i1 @func00000000000003f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw nsw i32 %1, 257
-  %6 = add nuw nsw i32 %5, %4
-  %7 = icmp ult i32 %0, %6
-  ret i1 %7
+  %4 = add nuw i32 %3, %1
+  %5 = add nuw i32 %4, 258
+  %6 = icmp ugt i32 %5, %0
+  ret i1 %6
 }
 
 ; 8 occurrences:
@@ -26,11 +25,10 @@ entry:
 define i1 @func00000000000003f1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw nsw i32 %1, 257
-  %6 = add nuw nsw i32 %5, %4
-  %7 = icmp eq i32 %0, %6
-  ret i1 %7
+  %4 = add nuw i32 %3, %1
+  %5 = add nuw i32 %4, 258
+  %6 = icmp eq i32 %5, %0
+  ret i1 %6
 }
 
 ; 8 occurrences:
@@ -46,11 +44,10 @@ entry:
 define i1 @func00000000000003f6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = add nuw nsw i32 %3, 257
-  %5 = add nuw nsw i32 %1, 1
-  %6 = add nuw nsw i32 %5, %4
-  %7 = icmp slt i32 %0, %6
-  ret i1 %7
+  %4 = add nuw i32 %3, %1
+  %5 = add nuw i32 %4, 258
+  %6 = icmp sgt i32 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

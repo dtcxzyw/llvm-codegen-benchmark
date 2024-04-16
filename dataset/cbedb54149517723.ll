@@ -58,7 +58,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
+  %3 = add i64 %2, 1023
   %4 = and i64 %3, 1023
   %5 = getelementptr inbounds %"class.std::unordered_set.1875283", ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0

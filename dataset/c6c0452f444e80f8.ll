@@ -7,7 +7,7 @@ entry:
   %2 = ashr exact i64 %1, 2
   %3 = udiv i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp sge i32 %0, %4
+  %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = ashr exact i64 %1, 2
   %3 = udiv i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = ashr exact i64 %1, 2
   %3 = udiv i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -53,7 +53,7 @@ entry:
   %2 = ashr exact i64 %1, 2
   %3 = udiv i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -66,7 +66,7 @@ entry:
   %2 = ashr exact i64 %1, 2
   %3 = udiv i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 

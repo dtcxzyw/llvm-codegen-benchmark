@@ -26,7 +26,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 112
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -70,7 +70,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 36
   %6 = trunc i64 %5 to i16
-  %7 = add i16 %0, %6
+  %7 = add i16 %6, %0
   ret i16 %7
 }
 
@@ -83,7 +83,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv i64 %4, 4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

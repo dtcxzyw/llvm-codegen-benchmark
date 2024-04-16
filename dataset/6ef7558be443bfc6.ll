@@ -12,9 +12,8 @@
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
-  %2 = select i1 %1, i32 262, i32 6
-  %3 = lshr i32 %2, 8
-  ret i32 %3
+  %2 = zext i1 %1 to i32
+  ret i32 %2
 }
 
 ; 4 occurrences:
@@ -26,9 +25,8 @@ entry:
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = icmp slt i64 %0, 0
-  %2 = select i1 %1, i64 3074, i64 1
-  %3 = lshr i64 %2, 8
-  ret i64 %3
+  %2 = select i1 %1, i64 12, i64 0
+  ret i64 %2
 }
 
 ; 11 occurrences:
@@ -47,9 +45,8 @@ entry:
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
-  %2 = select i1 %1, i32 4, i32 16
-  %3 = lshr exact i32 %2, 2
-  ret i32 %3
+  %2 = select i1 %1, i32 1, i32 4
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

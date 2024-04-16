@@ -1,33 +1,32 @@
 func00000000000000da:                   # @func00000000000000da
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	sub	a0, a0, a1
-	addi	a0, a0, -2
-	sgtz	a0, a0
+	addi	a1, a1, 2
+	slt	a0, a1, a0
 	ret
 func00000000000000d6:                   # @func00000000000000d6
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	sub	a0, a0, a1
-	addi	a0, a0, -2
-	slti	a0, a0, 1
+	addi	a1, a1, 2
+	slt	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	not	a1, a1
-	ori	a1, a1, -256
-	add	a0, a0, a1
+	andi	a1, a1, 255
+	addi	a0, a0, -1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000c4:                   # @func00000000000000c4
-	not	a1, a1
-	ori	a1, a1, -256
-	add	a0, a0, a1
-	sltiu	a0, a0, 2
+	andi	a1, a1, 255
+	sub	a1, a1, a0
+	sltiu	a0, a1, -2
+	xori	a0, a0, 1
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	sext.w	a1, a1
-	sub	a0, a0, a1
-	addi	a0, a0, -4
+	addi	a1, a1, 4
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001d8:                   # @func00000000000001d8
@@ -39,17 +38,18 @@ func00000000000001d8:                   # @func00000000000001d8
 	sltu	a0, a1, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
+	sext.w	a0, a0
 	andi	a1, a1, 255
-	subw	a0, a0, a1
-	addi	a0, a0, -2
+	addi	a1, a1, 2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001da:                   # @func00000000000001da
+	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a0, a0, a1
-	addiw	a0, a0, -4
-	sgtz	a0, a0
+	addi	a1, a1, 4
+	slt	a0, a1, a0
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	slli	a1, a1, 48
@@ -59,10 +59,9 @@ func00000000000000d4:                   # @func00000000000000d4
 	sltiu	a0, a0, 4
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	not	a1, a1
-	ori	a1, a1, -256
-	addw	a0, a0, a1
-	sgtz	a0, a0
+	andi	a1, a1, 255
+	subw	a1, a1, a0
+	slti	a0, a1, -1
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	slli	a1, a1, 48

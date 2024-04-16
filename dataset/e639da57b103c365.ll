@@ -12,9 +12,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.CSN_DESCR.1928435, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr %struct.CSN_DESCR.1928435, ptr %0, i64 %4, i32 4
+  ret ptr %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -28,9 +27,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.RangeBound.2119904, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.RangeBound.2119904, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:

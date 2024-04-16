@@ -44,15 +44,18 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000051:                   # @func0000000000000051
 	andi	a1, a1, 255
+	addi	a1, a1, -1
 	andi	a0, a0, 255
-	add	a0, a0, a1
-	addi	a0, a0, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000151:                   # @func0000000000000151
+	zext.w	a1, a1
+	addi	a1, a1, -24
 	sext.w	a0, a0
-	add.uw	a0, a1, a0
-	addi	a0, a0, -24
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000158:                   # @func0000000000000158

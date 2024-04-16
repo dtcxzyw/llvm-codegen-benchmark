@@ -31,7 +31,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = lshr i64 %4, 6
   %6 = getelementptr i64, ptr %0, i64 %5

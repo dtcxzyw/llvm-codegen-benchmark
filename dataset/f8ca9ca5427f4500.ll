@@ -19,11 +19,9 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = call i32 @llvm.smin.i32(i32 %2, i32 %1)
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp sgt i32 %4, 0
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
+  %3 = icmp slt i32 %2, %1
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

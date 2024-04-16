@@ -37,8 +37,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = lshr i64 %2, 1
+  %2 = lshr i16 %1, 1
+  %3 = zext nneg i16 %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = or i64 %3, %4
   ret i64 %5

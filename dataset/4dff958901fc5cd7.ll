@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
-  %2 = bitcast float %1 to i32
-  %3 = icmp eq i32 %2, -2147483648
-  %4 = select i1 %3, i32 1, i32 %0
-  ret i32 %4
+  %2 = call i1 @llvm.is.fpclass.f32(float %1, i32 32)
+  %3 = select i1 %2, i32 1, i32 %0
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -104,4 +103,8 @@ entry:
   ret i32 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i1 @llvm.is.fpclass.f32(float, i32 immarg) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -9,9 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 %2, i64 0
-  %4 = select i1 %0, i64 %3, i64 0
-  %5 = icmp eq i64 %4, 0
+  %3 = select i1 %0, i1 %1, i1 false
+  %4 = icmp eq i64 %2, 0
+  %not. = xor i1 %3, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 
@@ -23,9 +24,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 %2, i64 -9223372036854775808
-  %4 = select i1 %0, i64 %3, i64 9223372036854775807
-  %5 = icmp sgt i64 %4, 0
+  %3 = icmp sgt i64 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 

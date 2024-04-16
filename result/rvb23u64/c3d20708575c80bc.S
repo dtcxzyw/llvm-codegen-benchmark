@@ -31,9 +31,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	andi	a0, a0, 255
-	addi	a0, a0, -51
-	sltiu	a0, a0, 27
-	xori	a0, a0, 1
+	addi	a0, a0, -78
+	sltiu	a0, a0, -27
 	or	a0, a0, a1
 	ret
 func000000000000018c:                   # @func000000000000018c
@@ -68,8 +67,7 @@ func00000000000001c8:                   # @func00000000000001c8
 	addi	a2, a2, -7
 	and	a1, a1, a2
 	snez	a1, a1
-	addi	a0, a0, -45
-	sltiu	a0, a0, 64
-	xori	a0, a0, 1
+	addi	a0, a0, -109
+	sltiu	a0, a0, -64
 	or	a0, a0, a1
 	ret

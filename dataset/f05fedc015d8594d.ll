@@ -46,11 +46,10 @@
 define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
-  %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = and i64 %3, -4
-  %5 = add nuw i64 %0, 4
-  %6 = icmp eq i64 %5, %4
-  ret i1 %6
+  %3 = and i64 %2, -4
+  %4 = add nuw i64 %0, 4
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -7,7 +7,7 @@ entry:
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
   %5 = add i64 %4, 8
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }

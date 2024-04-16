@@ -7,7 +7,7 @@ define double @func0000000000000021(i32 %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0.000000e+00
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }

@@ -13,7 +13,8 @@ func0000000000000043:                   # @func0000000000000043
 	add	a0, a0, a1
 	ret
 func00000000000000c3:                   # @func00000000000000c3
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	lui	a2, 699051
 	addiw	a2, a2, -1365

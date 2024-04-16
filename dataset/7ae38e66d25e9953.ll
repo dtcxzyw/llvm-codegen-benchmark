@@ -32,7 +32,7 @@
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %2, 12
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   %5 = and i16 %1, -1040
   %6 = or disjoint i16 %4, %5
   ret i16 %6
@@ -92,7 +92,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 43
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = and i64 %1, 281474976710654
   %6 = or i64 %4, %5
   ret i64 %6

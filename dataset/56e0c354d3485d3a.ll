@@ -32,7 +32,7 @@
 define i64 @func0000000000000020(ptr %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %2, 11376068507788127593
-  %4 = xor i128 %1, %3
+  %4 = xor i128 %3, %1
   %5 = trunc i128 %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = add i64 %5, %6

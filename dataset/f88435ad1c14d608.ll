@@ -8,7 +8,7 @@ define i32 @func0000000000000022(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 75
   %4 = select i1 %3, i32 8600, i32 %1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = udiv i32 %5, 1000
   ret i32 %6
 }

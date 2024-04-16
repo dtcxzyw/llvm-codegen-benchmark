@@ -13,8 +13,8 @@ func0000000000000017:                   # @func0000000000000017
 	sh1add.uw	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	slliw	a1, a1, 24
 	slliw	a0, a0, 28
+	slliw	a1, a1, 24
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
@@ -75,8 +75,8 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	srli	a1, a2, 60
-	slli	a0, a0, 4
-	or	a1, a1, a0
+	slli	a1, a0, 4
 	slli	a0, a2, 4
+	srli	a2, a2, 60
+	or	a1, a1, a2
 	ret

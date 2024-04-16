@@ -45,9 +45,8 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.276.2272989"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.276.2272989"], ptr %4, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

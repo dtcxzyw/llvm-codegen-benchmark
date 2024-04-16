@@ -10,7 +10,9 @@ func0000000000000044:                   # @func0000000000000044
 	srli	a1, a1, 48
 	li	a3, 48
 	beq	a1, a3, .LBB1_2
-	addi	a0, a2, -48
+	lui	a0, 2
+	addiw	a0, a0, -48
+	add	a0, a0, a2
 .LBB1_2:                                # %entry
 	slli	a0, a0, 3
 	ret

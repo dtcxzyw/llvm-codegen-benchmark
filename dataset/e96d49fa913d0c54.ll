@@ -6,10 +6,9 @@ define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = zext i64 %0 to i128
-  %4 = sub nsw i128 %3, %2
-  %5 = add nsw i128 %4, -1
-  %6 = icmp ult i128 %5, 15
-  ret i1 %6
+  %4 = sub nsw i128 %2, %3
+  %5 = icmp ugt i128 %4, -16
+  ret i1 %5
 }
 
 ; 5 occurrences:
@@ -24,9 +23,8 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = zext i16 %0 to i32
   %4 = sub nsw i32 %3, %2
-  %5 = add nsw i32 %4, 1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, -1
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -37,9 +35,8 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = zext i16 %0 to i32
   %4 = sub nsw i32 %3, %2
-  %5 = add nsw i32 %4, 1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, -1
+  ret i1 %5
 }
 
 ; 1 occurrences:

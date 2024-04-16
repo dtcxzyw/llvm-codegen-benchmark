@@ -9,11 +9,11 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000001b:                   # @func000000000000001b
 	slli	a2, a2, 59
-	or	a1, a1, a2
-	li	a2, -31
-	slli	a2, a2, 27
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	li	a3, -31
+	slli	a3, a3, 27
+	addi	a3, a3, -1
+	and	a1, a1, a3
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -35,9 +35,9 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 255
 	slli	a2, a2, 16
+	lui	a3, 520191
+	and	a1, a1, a3
 	or	a1, a1, a2
-	lui	a2, 520191
-	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
@@ -49,11 +49,11 @@ func000000000000001d:                   # @func000000000000001d
 	or	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	andi	a2, a2, 127
+	andi	a2, a2, 255
 	slli	a2, a2, 8
-	or	a1, a1, a2
-	lui	a2, 260088
-	addiw	a2, a2, -256
-	and	a1, a1, a2
+	lui	a3, 260088
+	addiw	a3, a3, -256
+	and	a1, a1, a3
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

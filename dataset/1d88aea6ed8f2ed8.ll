@@ -14,9 +14,8 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -47,9 +46,8 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.bio_vec.2005442, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr %struct.bio_vec.2005442, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -160,10 +160,8 @@ define i1 @func000000000000002a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = ashr i64 %4, 2
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %4 = icmp sgt i64 %3, 120
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -308,9 +308,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 %1, i64 131088
-  %3 = and i64 %2, 983040
-  %4 = icmp eq i64 %3, 262144
+  %2 = and i64 %1, 983040
+  %3 = icmp eq i64 %2, 262144
+  %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }
 
@@ -329,9 +329,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 %1, i8 1
-  %3 = and i8 %2, 1
-  %4 = icmp ne i8 %3, 0
+  %2 = and i8 %1, 1
+  %3 = icmp ne i8 %2, 0
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 true, i1 %3
   ret i1 %4
 }
 
@@ -340,9 +341,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 %1, i8 -1
-  %3 = and i8 %2, -17
-  %4 = icmp ult i8 %3, 6
+  %2 = and i8 %1, -18
+  %3 = icmp ult i8 %2, 6
+  %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }
 

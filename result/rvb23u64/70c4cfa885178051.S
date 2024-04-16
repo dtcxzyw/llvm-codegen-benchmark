@@ -17,8 +17,8 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a1, 255
-	sltiu	a1, a1, 240
+	andi	a1, a1, 240
+	addi	a1, a1, -240
 	li	a2, -255
 	czero.eqz	a1, a2, a1
 	lui	a2, 64

@@ -14,8 +14,7 @@ func0000000000000071:                   # @func0000000000000071
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	andi	a0, a0, 60
-	seqz	a0, a0
+	sltiu	a0, a0, 4
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
@@ -24,6 +23,5 @@ func0000000000000001:                   # @func0000000000000001
 	bltu	a1, a0, .LBB2_2
 	mv	a1, a0
 .LBB2_2:                                # %entry
-	andi	a1, a1, -8
-	seqz	a0, a1
+	sltiu	a0, a1, 8
 	ret

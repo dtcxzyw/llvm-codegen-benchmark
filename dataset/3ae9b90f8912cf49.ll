@@ -14,7 +14,7 @@ entry:
   %3 = ashr exact i16 %2, 8
   %4 = mul nsw i16 %3, %0
   %5 = lshr i16 %4, 8
-  %6 = trunc i16 %5 to i8
+  %6 = trunc nuw i16 %5 to i8
   ret i8 %6
 }
 

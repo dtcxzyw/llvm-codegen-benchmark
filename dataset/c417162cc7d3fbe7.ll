@@ -6,10 +6,8 @@
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = icmp eq i32 %1, 1
+  ret i1 %2
 }
 
 ; 13 occurrences:

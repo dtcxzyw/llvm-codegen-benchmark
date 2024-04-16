@@ -53,7 +53,7 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	andi	a2, a2, 248
 	lui	a3, 16
 	addiw	a3, a3, -512
 	xor	a1, a1, a3

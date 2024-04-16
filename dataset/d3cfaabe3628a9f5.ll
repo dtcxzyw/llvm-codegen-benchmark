@@ -11,7 +11,7 @@ entry:
   %3 = sitofp i16 %2 to float
   %4 = fmul float %3, 1.000000e+01
   %5 = fadd float %4, %1
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

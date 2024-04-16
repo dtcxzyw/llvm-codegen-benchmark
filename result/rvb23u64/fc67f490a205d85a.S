@@ -34,8 +34,8 @@ func000000000000008a:                   # @func000000000000008a
 	andn	a0, a1, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sext.h	a0, a0
 	sext.w	a1, a1
+	sext.h	a0, a0
 	xor	a1, a1, a0
 	seqz	a1, a1
 	slti	a0, a0, 0

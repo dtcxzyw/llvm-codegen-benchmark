@@ -7,7 +7,7 @@ define i64 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -5
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   %6 = select i1 %5, ptr %4, ptr %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
@@ -26,7 +26,7 @@ define i64 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -8
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   %6 = select i1 %5, ptr %4, ptr %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7

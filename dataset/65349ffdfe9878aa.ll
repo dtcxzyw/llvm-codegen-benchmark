@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = getelementptr i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }
@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr %struct._SPI_connection.2123579, ptr %1, i64 %3
+  %3 = getelementptr %struct._SPI_connection.2123579, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -104
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }

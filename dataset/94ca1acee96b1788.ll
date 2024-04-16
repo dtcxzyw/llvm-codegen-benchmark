@@ -51,7 +51,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, 1
   ret i32 %7
 }
@@ -64,12 +64,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 511
-  %4 = icmp ult i32 %3, 256
-  %5 = select i1 %4, i32 %1, i32 0
-  %6 = add nsw i32 %5, %0
-  %7 = add nsw i32 %6, 128
-  ret i32 %7
+  %3 = and i32 %2, 256
+  %.not.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not.not, i32 %1, i32 0
+  %5 = add nsw i32 %4, %0
+  %6 = add nsw i32 %5, 128
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

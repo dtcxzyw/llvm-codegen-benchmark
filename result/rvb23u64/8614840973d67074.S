@@ -5,16 +5,15 @@ func000000000000017a:                   # @func000000000000017a
 	slt	a0, a1, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
-	not	a2, a2
-	add	a1, a1, a2
-	addi	a0, a0, 1
-	xor	a0, a0, a1
-	seqz	a0, a0
+	li	a3, -2
+	sub	a3, a3, a0
+	sub	a2, a2, a1
+	xor	a2, a2, a3
+	seqz	a0, a2
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sub	a1, a1, a2
-	addi	a1, a1, 36
-	addi	a0, a0, 1
+	addi	a1, a1, 35
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -25,15 +24,14 @@ func0000000000000038:                   # @func0000000000000038
 	sltu	a0, a1, a0
 	ret
 func0000000000000076:                   # @func0000000000000076
-	not	a2, a2
-	add	a1, a1, a2
-	addi	a0, a0, 2
-	slt	a0, a0, a1
+	li	a3, -3
+	sub	a3, a3, a0
+	sub	a2, a2, a1
+	slt	a0, a2, a3
 	ret
 func0000000000000071:                   # @func0000000000000071
 	sub	a1, a1, a2
-	addi	a1, a1, -2
-	addi	a0, a0, 1
+	addi	a1, a1, -3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -62,18 +60,18 @@ func000000000000000a:                   # @func000000000000000a
 	slt	a0, a1, a0
 	ret
 func0000000000000171:                   # @func0000000000000171
-	not	a2, a2
-	add	a1, a1, a2
-	addi	a0, a0, 1
-	xor	a0, a0, a1
-	seqz	a0, a0
+	li	a3, -2
+	sub	a3, a3, a0
+	sub	a2, a2, a1
+	xor	a2, a2, a3
+	seqz	a0, a2
 	ret
 func0000000000000151:                   # @func0000000000000151
-	not	a2, a2
-	add	a1, a1, a2
-	addi	a0, a0, 1
-	xor	a0, a0, a1
-	seqz	a0, a0
+	li	a3, -2
+	sub	a3, a3, a0
+	sub	a2, a2, a1
+	xor	a2, a2, a3
+	seqz	a0, a2
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sub	a1, a1, a2

@@ -7,8 +7,8 @@ define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 31
   %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i8 -1, i8 %2
-  %5 = zext i8 %4 to i32
+  %4 = zext i8 %2 to i32
+  %5 = select i1 %3, i32 255, i32 %4
   ret i32 %5
 }
 

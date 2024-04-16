@@ -9,7 +9,7 @@ entry:
   %4 = or disjoint i64 %0, %1
   %5 = add nsw i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = or disjoint i64 %0, %1
   %5 = add i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

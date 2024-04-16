@@ -29,13 +29,11 @@ func00000000000002a8:                   # @func00000000000002a8
 	addw	a0, a0, a1
 	ret
 func00000000000002a9:                   # @func00000000000002a9
+	sext.w	a1, a1
 	sext.w	a2, a2
-	slti	a2, a2, 0
-	sraiw	a1, a1, 31
-	li	a3, 1
-	andn	a3, a3, a1
-	not	a1, a1
-	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	srli	a2, a2, 31
+	ori	a2, a2, 1
+	slti	a1, a1, 0
+	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret

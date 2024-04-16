@@ -33,23 +33,23 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a3
 	ret
 func0000000000000019:                   # @func0000000000000019
-	li	a3, 16
-	bne	a1, a2, .LBB5_2
 	li	a3, 24
+	beq	a1, a2, .LBB5_2
+	li	a3, 16
 .LBB5_2:                                # %entry
 	add	a0, a0, a3
 	ret
 func0000000000000013:                   # @func0000000000000013
-	li	a3, 8
-	bgeu	a1, a2, .LBB6_2
 	li	a3, 16
+	bltu	a1, a2, .LBB6_2
+	li	a3, 8
 .LBB6_2:                                # %entry
 	add	a0, a0, a3
 	ret
 func0000000000000018:                   # @func0000000000000018
-	li	a3, 16
-	bne	a1, a2, .LBB7_2
 	li	a3, 24
+	beq	a1, a2, .LBB7_2
+	li	a3, 16
 .LBB7_2:                                # %entry
 	add	a0, a0, a3
 	ret

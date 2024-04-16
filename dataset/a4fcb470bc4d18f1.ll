@@ -51,11 +51,10 @@
 define { i64, i1 } @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = add i64 %0, -1
-  %7 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %5, i64 %6)
-  ret { i64, i1 } %7
+  %4 = mul i64 %3, %1
+  %5 = add i64 %0, -1
+  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %4, i64 %5)
+  ret { i64, i1 } %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

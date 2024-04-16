@@ -10,7 +10,7 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 2
+  %5 = lshr exact i64 %4, 2
   %6 = and i64 %5, 2147483647
   ret i64 %6
 }

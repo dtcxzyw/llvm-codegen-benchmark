@@ -10,7 +10,7 @@ entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 136657
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
   %4 = mul nsw i64 %3, -683901
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -59,10 +59,10 @@ entry:
 define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
-  %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, 3
-  %5 = add i32 %0, %4
-  ret i32 %5
+  %narrow = mul nuw nsw i8 %2, 3
+  %3 = zext nneg i8 %narrow to i32
+  %4 = add i32 %3, %0
+  ret i32 %4
 }
 
 ; 1 occurrences:

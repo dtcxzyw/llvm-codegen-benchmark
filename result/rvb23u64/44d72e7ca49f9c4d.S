@@ -50,9 +50,8 @@ func0000000000000048:                   # @func0000000000000048
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	addiw	a0, a0, 1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
+	sltiu	a0, a0, -2
 	ret
 func0000000000000054:                   # @func0000000000000054
 	andi	a2, a1, 255
@@ -64,10 +63,7 @@ func0000000000000054:                   # @func0000000000000054
 	sltiu	a0, a0, 254
 	ret
 func000000000000004c:                   # @func000000000000004c
-	addi	a2, a1, 1
-	czero.eqz	a1, a1, a2
-	czero.nez	a0, a0, a2
-	or	a0, a0, a1
+	and	a0, a0, a1
 	sltiu	a0, a0, -1
 	ret
 func0000000000000201:                   # @func0000000000000201

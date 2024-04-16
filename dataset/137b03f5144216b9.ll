@@ -111,8 +111,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 1
+  %5 = and i64 %4, 4294967294
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 

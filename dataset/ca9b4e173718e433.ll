@@ -11,7 +11,7 @@ entry:
   %2 = and i16 %1, 4095
   %3 = sub nuw nsw i16 4096, %2
   %4 = zext nneg i16 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

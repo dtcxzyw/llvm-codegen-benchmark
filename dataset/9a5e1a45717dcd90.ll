@@ -13,7 +13,7 @@ define i64 @func0000000000000007(i16 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i16
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   %5 = zext nneg i16 %4 to i64
   ret i64 %5
 }
@@ -25,7 +25,7 @@ define i64 @func0000000000000006(i48 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = zext nneg i16 %2 to i48
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   %5 = zext i48 %4 to i64
   ret i64 %5
 }

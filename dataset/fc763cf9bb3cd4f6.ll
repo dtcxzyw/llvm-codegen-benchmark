@@ -187,10 +187,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = urem i64 %1, 576
-  %3 = icmp ult i64 %2, 1152
-  ret i1 %3
+  ret i1 true
 }
 
 ; 3 occurrences:

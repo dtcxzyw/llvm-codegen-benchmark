@@ -177,7 +177,7 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = or i32 %1, 1
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = trunc i32 %3 to i8
+  %4 = trunc nuw nsw i32 %3 to i8
   ret i8 %4
 }
 

@@ -10,7 +10,7 @@ entry:
   %2 = lshr i32 %1, 5
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = mul nsw i64 %5, 666643
   ret i64 %6
 }

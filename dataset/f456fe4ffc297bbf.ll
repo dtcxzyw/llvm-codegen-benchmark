@@ -28,8 +28,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000000c3(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp ne i64 %3, 0
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
   %5 = zext i1 %4 to i64
   %6 = udiv i64 %0, 384
   %7 = add nuw nsw i64 %6, %5

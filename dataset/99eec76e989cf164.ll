@@ -12,7 +12,7 @@ define i32 @func0000000000000115(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   %7 = mul nsw i32 %6, 12
   ret i32 %7
@@ -25,8 +25,8 @@ define i32 @func0000000000000114(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
-  %6 = add nsw i32 %0, %5
+  %5 = add nsw i32 %4, %1
+  %6 = add nsw i32 %5, %0
   %7 = mul i32 %6, 365
   ret i32 %7
 }

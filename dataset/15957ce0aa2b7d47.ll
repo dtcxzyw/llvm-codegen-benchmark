@@ -8,10 +8,9 @@ define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 63
-  %4 = lshr i64 %3, 6
-  %5 = lshr i64 %0, 6
-  %6 = icmp eq i64 %5, %4
-  ret i1 %6
+  %.unshifted = xor i64 %3, %0
+  %4 = icmp ult i64 %.unshifted, 64
+  ret i1 %4
 }
 
 ; 1 occurrences:

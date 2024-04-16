@@ -8,7 +8,7 @@ define i64 @func000000000000001a(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp uge float %0, %3
+  %4 = fcmp ule float %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -22,7 +22,7 @@ define i64 @func0000000000000016(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ule float %0, %3
+  %4 = fcmp uge float %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -34,7 +34,7 @@ define i32 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

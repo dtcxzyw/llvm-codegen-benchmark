@@ -29,10 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = select i1 %0, i64 %1, i64 %3
-  %5 = icmp slt i64 %4, 0
-  ret i1 %5
+  %3 = icmp slt i64 %1, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -58,10 +57,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i16 %2) #0 {
 entry:
-  %3 = zext i16 %2 to i64
-  %4 = select i1 %0, i64 %1, i64 %3
-  %5 = icmp ne i64 %4, -1
-  ret i1 %5
+  %3 = icmp ne i64 %1, -1
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 2 occurrences:

@@ -52,9 +52,9 @@
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %0, i64 %4
+  %3 = or i64 %2, 1
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
 
@@ -78,9 +78,9 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds %struct.Entry.1617781, ptr %0, i64 %4
+  %3 = or i64 %2, 1
+  %4 = getelementptr %struct.Entry.1617781, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 
@@ -90,9 +90,9 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr ptr, ptr %0, i64 %4
+  %3 = or i64 %2, 1
+  %4 = getelementptr ptr, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 

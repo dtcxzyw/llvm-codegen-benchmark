@@ -13,11 +13,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = icmp ult i32 %1, 65536
-  %3 = select i1 %2, i8 16, i8 0
-  %4 = or disjoint i8 %3, 8
-  ret i8 %4
+  %1 = and i64 %0, 4294901760
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i8 24, i8 8
+  ret i8 %3
 }
 
 ; 3 occurrences:
@@ -29,9 +28,8 @@ define i8 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i8 32, i8 0
-  %4 = or disjoint i8 %3, 16
-  ret i8 %4
+  %3 = select i1 %2, i8 48, i8 16
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

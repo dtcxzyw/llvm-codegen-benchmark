@@ -25,7 +25,6 @@ func0000000000000004:                   # @func0000000000000004
 .LBB3_2:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a1, a1, 251
 	slli	a1, a1, 56
 	bgez	a1, .LBB4_2
 	li	a0, 8

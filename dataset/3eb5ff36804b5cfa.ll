@@ -12,9 +12,9 @@
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 8
-  %2 = sub nsw i32 8, %1
-  %3 = add i32 %2, %0
-  ret i32 %3
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 8
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

@@ -1,6 +1,7 @@
 func0000000000000101:                   # @func0000000000000101
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	addiw	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000201:                   # @func0000000000000201

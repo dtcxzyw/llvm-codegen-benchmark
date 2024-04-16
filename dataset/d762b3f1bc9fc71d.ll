@@ -48,11 +48,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -4096
-  %4 = icmp ugt i64 %3, -2147483649
-  %5 = sub i64 -2147483648, %1
-  %6 = select i1 %4, i64 %0, i64 %5
-  ret i64 %6
+  %3 = icmp ugt i64 %2, -2147483649
+  %4 = sub i64 -2147483648, %1
+  %5 = select i1 %3, i64 %0, i64 %4
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -60,8 +59,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
-  %4 = icmp ult i32 %3, 2
+  %3 = and i32 %2, 254
+  %4 = icmp eq i32 %3, 0
   %5 = sub i32 13, %1
   %6 = select i1 %4, i32 %0, i32 %5
   ret i32 %6

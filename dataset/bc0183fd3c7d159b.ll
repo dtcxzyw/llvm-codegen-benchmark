@@ -17,10 +17,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000019(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %0, null
-  %3 = select i1 %2, ptr %0, ptr %1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %.not = icmp eq ptr %0, null
+  %2 = select i1 %.not, ptr %1, ptr %0
+  %3 = getelementptr inbounds i8, ptr %2, i64 8
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

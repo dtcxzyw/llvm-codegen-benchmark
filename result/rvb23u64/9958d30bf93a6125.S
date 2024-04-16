@@ -78,11 +78,11 @@ func0000000000000108:                   # @func0000000000000108
 func0000000000000091:                   # @func0000000000000091
 	zext.h	a2, a2
 	sltiu	a2, a2, 16
+	sext.w	a1, a1
 	li	a3, 4
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
-	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -97,10 +97,10 @@ func0000000000000148:                   # @func0000000000000148
 	sltu	a0, a1, a0
 	ret
 func0000000000000188:                   # @func0000000000000188
+	zext.w	a1, a1
 	li	a3, -1
 	srli	a3, a3, 32
 	czero.nez	a2, a3, a2
-	zext.w	a1, a1
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

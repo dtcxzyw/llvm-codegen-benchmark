@@ -12,12 +12,12 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func000000000000007a:                   # @func000000000000007a
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
+	add	a1, a1, a3
 	mul	a2, a2, a4
 	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a3
 	add	a1, a1, a2
 	li	a2, -255
 	srli	a2, a2, 1
@@ -25,12 +25,12 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func000000000000003a:                   # @func000000000000003a
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
+	add	a1, a1, a3
 	mul	a2, a2, a4
 	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a3
 	add	a1, a1, a2
 	li	a2, -255
 	srli	a2, a2, 1
@@ -38,12 +38,12 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func0000000000000020:                   # @func0000000000000020
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
+	add	a1, a1, a3
 	mul	a2, a2, a4
 	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a3
 	add	a1, a1, a2
 	li	a2, -255
 	srli	a2, a2, 1
@@ -51,39 +51,39 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func000000000000007f:                   # @func000000000000007f
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
-	add	a4, a2, a0
-	sltu	a0, a4, a2
 	add	a1, a1, a3
+	mul	a2, a2, a4
+	add	a3, a2, a0
+	sltu	a0, a3, a2
 	add	a1, a1, a0
-	addi	a0, a4, -512
-	sltu	a2, a0, a4
+	addi	a0, a3, -512
+	sltu	a2, a0, a3
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
-	add	a4, a2, a0
-	sltu	a0, a4, a2
 	add	a1, a1, a3
+	mul	a2, a2, a4
+	add	a3, a2, a0
+	sltu	a0, a3, a2
 	add	a1, a1, a0
-	addi	a0, a4, -256
-	sltu	a2, a0, a4
+	addi	a0, a3, -256
+	sltu	a2, a0, a3
 	add	a1, a1, a2
 	ret
 func0000000000000057:                   # @func0000000000000057
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
+	add	a1, a1, a3
 	mul	a2, a2, a4
 	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a3
 	add	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 8

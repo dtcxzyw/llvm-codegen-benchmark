@@ -9,7 +9,7 @@ entry:
   %3 = sext i8 %2 to i64
   %4 = add i64 %1, -48
   %5 = add i64 %4, %3
-  %6 = ashr i64 %5, %0
+  %6 = lshr i64 %5, %0
   %7 = and i64 %6, 1
   ret i64 %7
 }

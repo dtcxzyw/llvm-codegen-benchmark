@@ -8,7 +8,7 @@ entry:
   %3 = tail call i64 @llvm.ctpop.i64(i64 %2), !range !0
   %4 = icmp ult i64 %3, 2
   %5 = and i1 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

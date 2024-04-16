@@ -9,7 +9,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = mul nsw i64 %0, %3
+  %6 = mul nsw i64 %3, %0
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
 }

@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i64
-  %4 = lshr i64 %3, 3
+  %3 = lshr i8 %2, 3
+  %4 = zext nneg i8 %3 to i64
   %5 = shl nuw nsw i64 %1, 5
   %6 = or disjoint i64 %5, %4
   %7 = or disjoint i64 %6, %0

@@ -172,11 +172,9 @@
 define i64 @func0000000000000000(i128 %0) #0 {
 entry:
   %1 = freeze i128 %0
-  %2 = udiv i128 %1, 100
-  %3 = mul i128 %2, 100
-  %4 = sub i128 %1, %3
-  %5 = trunc i128 %4 to i64
-  ret i64 %5
+  %2 = urem i128 %1, 100
+  %3 = trunc nuw nsw i128 %2 to i64
+  ret i64 %3
 }
 
 ; 12 occurrences:
@@ -196,11 +194,9 @@ entry:
 define i64 @func0000000000000003(i128 %0) #0 {
 entry:
   %1 = freeze i128 %0
-  %2 = udiv i128 %1, 100
-  %3 = mul i128 %2, 100
-  %4 = sub i128 %1, %3
-  %5 = trunc nuw nsw i128 %4 to i64
-  ret i64 %5
+  %2 = urem i128 %1, 100
+  %3 = trunc nuw nsw i128 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -209,11 +205,9 @@ entry:
 define i64 @func0000000000000002(i128 %0) #0 {
 entry:
   %1 = freeze i128 %0
-  %2 = udiv i128 %1, 10000000000000000000
-  %3 = mul i128 %2, 10000000000000000000
-  %4 = sub i128 %1, %3
-  %5 = trunc nuw i128 %4 to i64
-  ret i64 %5
+  %2 = urem i128 %1, 10000000000000000000
+  %3 = trunc nuw i128 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

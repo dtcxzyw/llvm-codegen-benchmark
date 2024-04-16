@@ -9,8 +9,8 @@ entry:
   %3 = mul nuw nsw i64 %2, 24
   %4 = add nsw i64 %3, -24
   %5 = sub nuw nsw i64 %4, %1
-  %6 = add nuw nsw i64 %5, 24
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 24
   ret ptr %7
 }
 
@@ -22,8 +22,8 @@ entry:
   %3 = mul nuw i64 %2, 24
   %4 = add i64 %3, -24
   %5 = sub nuw i64 %4, %1
-  %6 = add nuw i64 %5, 24
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 24
   ret ptr %7
 }
 
@@ -38,8 +38,8 @@ entry:
   %3 = mul i64 %2, 24
   %4 = add i64 %3, -24
   %5 = sub nuw i64 %4, %1
-  %6 = add i64 %5, 24
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 24
   ret ptr %7
 }
 
@@ -53,8 +53,8 @@ entry:
   %3 = mul nsw i64 %2, 24
   %4 = add nsw i64 %3, -24
   %5 = sub nuw i64 %4, %1
-  %6 = add i64 %5, 24
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 24
   ret ptr %7
 }
 

@@ -7,12 +7,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000057(ptr %0, i16 %1, i64 %2) #0 {
 entry:
-  %3 = zext i16 %1 to i64
-  %4 = sub nsw i64 %3, %2
-  %5 = add nsw i64 %4, 1
-  %6 = sub nuw nsw i64 %3, %5
-  %7 = getelementptr inbounds i64, ptr %0, i64 %6
-  ret ptr %7
+  %3 = getelementptr i64, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

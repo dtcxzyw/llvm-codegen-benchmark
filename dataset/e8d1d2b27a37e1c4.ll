@@ -7,12 +7,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000030(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = zext i8 %0 to i32
-  %4 = add nuw nsw i32 %3, %2
-  %5 = trunc i32 %4 to i8
-  %6 = add i8 %5, -32
-  ret i8 %6
+  %2 = add i8 %0, %1
+  %3 = add i8 %2, -32
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

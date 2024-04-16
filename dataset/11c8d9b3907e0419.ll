@@ -6,9 +6,9 @@
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
-  %3 = xor i32 %2, 31
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = add i32 %0, %4
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = xor i32 %3, 7936
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -22,9 +22,9 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
-  %3 = xor i32 %2, 31
-  %4 = shl nuw nsw i32 %3, 1
-  %5 = add nuw nsw i32 %0, %4
+  %3 = shl nuw nsw i32 %2, 1
+  %4 = xor i32 %3, 62
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 

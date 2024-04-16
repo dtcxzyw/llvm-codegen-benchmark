@@ -51,7 +51,7 @@ func00000000000000ca:                   # @func00000000000000ca
 	fle.d	a0, fa5, fa4
 	beqz	a0, .LBB2_4
 .LBB2_2:                                # %entry
-	fmul.d	fa0, fa0, fa4
+	fmul.d	fa0, fa4, fa0
 	ret
 .LBB2_3:                                # %entry
 	fmv.d	fa5, fa1
@@ -60,5 +60,5 @@ func00000000000000ca:                   # @func00000000000000ca
 	fle.d	a0, fa1, fa4
 	bnez	a0, .LBB2_2
 .LBB2_4:                                # %entry
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret

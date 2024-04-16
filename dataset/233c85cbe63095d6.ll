@@ -22,7 +22,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.bswap.i32(i32 %1)
+  %2 = shl i32 %1, 24
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = icmp sgt i32 %3, -1
   ret i1 %4

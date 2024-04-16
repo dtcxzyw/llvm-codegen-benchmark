@@ -108,8 +108,8 @@ define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = add nsw i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

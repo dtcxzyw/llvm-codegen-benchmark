@@ -12,7 +12,7 @@ entry:
   %4 = sub nsw i64 23, %3
   %5 = icmp ult i8 %2, 24
   %6 = select i1 %5, i64 %4, i64 %1
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

@@ -9,7 +9,7 @@ entry:
   %2 = xor i16 %1, -1
   %3 = shl nsw i16 %2, 7
   %4 = or i16 %3, -897
-  %5 = and i16 %0, %4
+  %5 = and i16 %4, %0
   ret i16 %5
 }
 
@@ -94,7 +94,7 @@ entry:
   %2 = xor i64 %1, -1
   %3 = shl nuw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -107,7 +107,7 @@ entry:
   %2 = xor i32 %1, -1
   %3 = shl i32 %2, 4
   %4 = or disjoint i32 %3, 15
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 

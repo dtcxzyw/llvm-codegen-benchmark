@@ -10,7 +10,7 @@
 define float @func0000000000000001(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 1.000000e+00, %1
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = tail call noundef float @llvm.fabs.f32(float %3)
   ret float %4
 }
@@ -26,7 +26,7 @@ declare float @llvm.fabs.f32(float) #1
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 1.000000e+00, %1
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = call float @llvm.fabs.f32(float %3)
   ret float %4
 }

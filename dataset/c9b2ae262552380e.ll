@@ -49,7 +49,7 @@ entry:
   %2 = sub i32 56, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -76,7 +76,7 @@ entry:
   %2 = sub i64 128, %1
   %3 = zext nneg i64 %2 to i128
   %4 = lshr i128 -1, %3
-  %5 = and i128 %0, %4
+  %5 = and i128 %4, %0
   %6 = icmp ult i128 %5, 79228162514264337593543950336
   ret i1 %6
 }

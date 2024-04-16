@@ -9,8 +9,8 @@ define i1 @func0000000000000004(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = and i1 %3, %1
-  %5 = select i1 %4, i8 1, i8 %0
-  %6 = trunc i8 %5 to i1
+  %5 = trunc i8 %0 to i1
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 
@@ -21,9 +21,9 @@ entry:
 define i1 @func0000000000000020(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 96
-  %4 = and i1 %1, %3
-  %5 = select i1 %4, i8 1, i8 %0
-  %6 = trunc i8 %5 to i1
+  %4 = and i1 %3, %1
+  %5 = trunc i8 %0 to i1
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 

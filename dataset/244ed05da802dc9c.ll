@@ -25,8 +25,8 @@
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 0
-  %2 = select i1 %1, i64 20, i64 %0
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %0 to i32
+  %3 = select i1 %1, i32 20, i32 %2
   ret i32 %3
 }
 
@@ -42,8 +42,8 @@ entry:
 define i8 @func0000000000000020(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1114111
-  %2 = select i1 %1, i32 65533, i32 %0
-  %3 = trunc i32 %2 to i8
+  %2 = trunc i32 %0 to i8
+  %3 = select i1 %1, i8 -3, i8 %2
   ret i8 %3
 }
 
@@ -54,8 +54,8 @@ entry:
 define i16 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 2097151
-  %2 = select i1 %1, i32 0, i32 %0
-  %3 = trunc i32 %2 to i16
+  %2 = trunc i32 %0 to i16
+  %3 = select i1 %1, i16 0, i16 %2
   ret i16 %3
 }
 

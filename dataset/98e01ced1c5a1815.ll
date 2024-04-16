@@ -187,7 +187,7 @@ entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = lshr i32 %2, 2
   %4 = sub nuw nsw i32 8, %3
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 

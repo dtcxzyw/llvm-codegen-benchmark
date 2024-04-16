@@ -29,9 +29,9 @@ define ptr @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = add i64 %4, -8
-  %6 = and i64 %5, -8
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %5 = and i64 %4, -8
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 

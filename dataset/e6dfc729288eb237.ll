@@ -1,6 +1,4 @@
 
-%"struct.mold::elf::OpdSymbol.1613759" = type { i64, ptr }
-
 ; 31 occurrences:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; fmt/optimized/printf-test.cc.ll
@@ -38,10 +36,9 @@ define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
-  %5 = ashr exact i64 %4, 4
-  %6 = getelementptr inbounds %"struct.mold::elf::OpdSymbol.1613759", ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
-  ret i1 %7
+  %5 = getelementptr inbounds i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

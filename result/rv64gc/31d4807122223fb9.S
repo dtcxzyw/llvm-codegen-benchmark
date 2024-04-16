@@ -26,10 +26,10 @@ func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
 	li	a3, 7
 	bgeu	a3, a1, .LBB3_2
-	ori	a0, a2, 832
-	lui	a1, 1046530
-	addiw	a1, a1, -16
-	and	a0, a0, a1
+	lui	a0, 1046530
+	addiw	a0, a0, -848
+	and	a0, a0, a2
+	addi	a0, a0, 832
 .LBB3_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018

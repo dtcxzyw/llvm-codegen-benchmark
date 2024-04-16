@@ -7,8 +7,8 @@
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nuw nsw i32 %4, 28
+  %4 = add nuw nsw i32 %1, 28
+  %5 = select i1 %3, i32 28, i32 %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -20,8 +20,8 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, -4
+  %4 = add nsw i32 %1, -4
+  %5 = select i1 %3, i32 -4, i32 %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -36,9 +36,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 0, i64 %1
-  %5 = add i64 %4, 1
-  %6 = add i64 %0, %5
+  %4 = add i64 %1, 1
+  %5 = select i1 %3, i64 1, i64 %4
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -50,8 +50,8 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 1, i32 %1
-  %5 = add nuw nsw i32 %4, 1
+  %4 = add nuw nsw i32 %1, 1
+  %5 = select i1 %3, i32 2, i32 %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -62,8 +62,8 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, -1
+  %4 = add nsw i32 %1, -1
+  %5 = select i1 %3, i32 -1, i32 %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -74,8 +74,8 @@ entry:
 define i32 @func000000000000004c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
-  %4 = select i1 %3, i32 5, i32 %1
-  %5 = add nuw nsw i32 %4, 2
+  %4 = add nuw nsw i32 %1, 2
+  %5 = select i1 %3, i32 7, i32 %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -94,8 +94,8 @@ entry:
 define i64 @func0000000000000047(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 20
-  %4 = select i1 %3, i64 32, i64 %1
-  %5 = add nsw i64 %4, -1
+  %4 = add nsw i64 %1, -1
+  %5 = select i1 %3, i64 31, i64 %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }

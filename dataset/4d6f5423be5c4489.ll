@@ -15,7 +15,7 @@ define i1 @func0000000000000290(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 32
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   %6 = icmp ugt i64 %0, %1
   %7 = or i1 %6, %5
   ret i1 %7

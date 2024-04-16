@@ -67,7 +67,6 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000068:                   # @func0000000000000068
 	addi	a1, a1, 1
-	li	a2, 1
-	sll	a1, a2, a1
-	sltu	a0, a0, a1
+	srl	a0, a0, a1
+	seqz	a0, a0
 	ret

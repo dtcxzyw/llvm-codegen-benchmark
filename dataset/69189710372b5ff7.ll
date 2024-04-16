@@ -7,8 +7,8 @@
 define i1 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fptoui double %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp eq i64 %3, 0
+  %3 = sub i64 0, %0
+  %4 = icmp eq i64 %2, %3
   ret i1 %4
 }
 

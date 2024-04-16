@@ -6,10 +6,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, ptr %1, i1 %2) #0 {
 entry:
-  %3 = icmp ne ptr %0, null
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, ptr %0, ptr %1
-  %6 = icmp eq ptr %5, null
+  %3 = icmp eq ptr %0, null
+  %not. = xor i1 %2, true
+  %4 = select i1 %not., i1 true, i1 %3
+  %5 = icmp eq ptr %1, null
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -20,8 +21,8 @@ define i1 @func00000000000000cc(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp ne ptr %0, null
   %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, ptr %0, ptr %1
-  %6 = icmp ne ptr %5, null
+  %5 = icmp ne ptr %1, null
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 

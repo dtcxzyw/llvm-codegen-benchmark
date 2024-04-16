@@ -48,8 +48,8 @@
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 63
+  %2 = and i32 %1, 63
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -61,8 +61,8 @@ entry:
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 3
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 8388608
+  %2 = and i32 %1, 8388608
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -76,9 +76,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 7
+  %1 = add i32 %0, 7
+  %2 = and i32 %1, 7
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -92,8 +92,8 @@ entry:
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 1
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 4294967288
+  %2 = and i32 %1, -8
+  %3 = zext i32 %2 to i64
   ret i64 %3
 }
 
@@ -110,8 +110,8 @@ entry:
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 4
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 112
+  %2 = and i32 %1, 112
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -120,9 +120,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 2147483616
+  %1 = add i32 %0, 2147483647
+  %2 = and i32 %1, 2147483616
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

@@ -9,10 +9,10 @@ define i1 @func0000000000000101(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %1
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = sub i64 %1, %4
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %.neg, %5
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -23,10 +23,10 @@ define i1 @func0000000000000104(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %1
-  %6 = sub i64 %0, %5
-  %7 = icmp ult i64 %6, 3
-  ret i1 %7
+  %.neg = sub i64 %1, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp ult i64 %5, 3
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

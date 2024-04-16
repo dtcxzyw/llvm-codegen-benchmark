@@ -11,7 +11,7 @@
 define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 5
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ne i32 %0, 10
   %6 = and i1 %5, %4
   ret i1 %6
@@ -71,7 +71,7 @@ entry:
 define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -137,7 +137,7 @@ entry:
 define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ne i32 %0, 2064
   %6 = and i1 %5, %4
   ret i1 %6
@@ -220,7 +220,7 @@ entry:
 define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 123
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ult i32 %0, 2
   %6 = and i1 %5, %4
   ret i1 %6
@@ -233,7 +233,7 @@ entry:
 define i1 @func0000000000000101(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 4
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, 52
   %6 = and i1 %5, %4
   ret i1 %6
@@ -308,7 +308,7 @@ entry:
 define i1 @func000000000000002a(i16 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp sgt i16 %0, 20
   %6 = and i1 %5, %4
   ret i1 %6
@@ -320,7 +320,7 @@ entry:
 define i1 @func0000000000000154(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp sgt i32 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -346,7 +346,7 @@ entry:
 define i1 @func0000000000000188(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ugt i32 %0, 1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -372,7 +372,7 @@ entry:
 define i1 @func0000000000000104(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 48000
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ult i32 %0, 16385
   %6 = and i1 %5, %4
   ret i1 %6
@@ -389,7 +389,7 @@ entry:
 define i1 @func0000000000000184(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ult i64 %0, 4294967296
   %6 = and i1 %5, %4
   ret i1 %6
@@ -410,7 +410,7 @@ entry:
 define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne i32 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -423,7 +423,7 @@ entry:
 define i1 @func0000000000000141(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i8 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -435,7 +435,7 @@ entry:
 define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 88080896
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ugt i32 %1, 16
   %6 = and i1 %4, %5
   ret i1 %6
@@ -453,7 +453,7 @@ entry:
 define i1 @func0000000000000186(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 255
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp slt i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -501,7 +501,7 @@ entry:
 define i1 @func0000000000000081(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, 2
   %6 = and i1 %5, %4
   ret i1 %6
@@ -528,7 +528,7 @@ entry:
 define i1 @func00000000000000c2(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i32 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -579,7 +579,7 @@ entry:
 define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ult i32 %1, 4
   %6 = and i1 %4, %5
   ret i1 %6
@@ -615,7 +615,7 @@ entry:
 define i1 @func0000000000000110(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, -8446744073709551617
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ugt i64 %1, 1
   %6 = and i1 %4, %5
   ret i1 %6

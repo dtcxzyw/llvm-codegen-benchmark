@@ -9,10 +9,9 @@
 define i64 @func000000000000000f(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 127
-  %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %narrow = add nuw i8 %1, 1
+  %2 = zext i8 %narrow to i64
+  ret i64 %2
 }
 
 ; 5 occurrences:

@@ -8,7 +8,7 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = urem i64 %3, 3
   ret i64 %4
 }

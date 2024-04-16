@@ -6,7 +6,7 @@ define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %0, 16777216
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %0, 16
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

@@ -155,7 +155,7 @@
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv i64 %4, 1000000000
   ret i64 %5
 }
@@ -204,7 +204,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }
@@ -277,7 +277,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sdiv i32 %4, 8
   ret i32 %5
 }

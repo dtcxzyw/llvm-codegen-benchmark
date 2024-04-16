@@ -25,8 +25,8 @@ entry:
 define i32 @func000000000000000b(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
-  %2 = ashr i32 %1, 1
-  %3 = add nuw nsw i32 %2, 1
+  %2 = lshr i32 %1, 1
+  %3 = add nuw i32 %2, 1
   %4 = and i32 %3, 2147483646
   ret i32 %4
 }

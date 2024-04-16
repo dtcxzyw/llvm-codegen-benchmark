@@ -36,7 +36,7 @@ entry:
 define ptr @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 24
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
@@ -61,7 +61,7 @@ entry:
 define ptr @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 22
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5

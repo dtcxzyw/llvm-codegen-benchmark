@@ -30,7 +30,7 @@ define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = shl i64 %3, 22
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = icmp eq i64 %5, 424588054300794693
   ret i1 %6
 }

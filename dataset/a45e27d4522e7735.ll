@@ -8,11 +8,9 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(i64 %0) #0 {
 entry:
-  %1 = zext i64 %0 to i128
-  %2 = mul nuw nsw i128 %1, 10
-  %3 = trunc i128 %2 to i64
-  %4 = icmp ult i64 %3, 6
-  ret i1 %4
+  %1 = mul i64 %0, 10
+  %2 = icmp ult i64 %1, 6
+  ret i1 %2
 }
 
 ; 97 occurrences:
@@ -116,11 +114,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c4(i64 %0) #0 {
 entry:
-  %1 = zext nneg i64 %0 to i128
-  %2 = mul nuw nsw i128 %1, 12379400392853802749
-  %3 = trunc i128 %2 to i64
-  %4 = icmp ult i64 %3, -6067343680855748867
-  ret i1 %4
+  %1 = mul i64 %0, -6067343680855748867
+  %2 = icmp ult i64 %1, -6067343680855748867
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -128,11 +124,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i64 %0) #0 {
 entry:
-  %1 = zext i64 %0 to i128
-  %2 = mul nuw nsw i128 %1, 10
-  %3 = trunc i128 %2 to i64
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %1 = mul i64 %0, 10
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -140,11 +134,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i64 %0) #0 {
 entry:
-  %1 = zext i64 %0 to i128
-  %2 = mul nuw i128 %1, 18446744073709551608
-  %3 = trunc i128 %2 to i64
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %1 = mul i64 %0, -8
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -152,11 +144,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i64 %0) #0 {
 entry:
-  %1 = zext i64 %0 to i128
-  %2 = mul nuw nsw i128 %1, 51
-  %3 = trunc i128 %2 to i64
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %1 = icmp eq i64 %0, 0
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -164,11 +153,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = mul nuw nsw i64 %1, 200001
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 145821
-  ret i1 %4
+  %1 = mul i32 %0, 200001
+  %2 = icmp ugt i32 %1, 145821
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -176,11 +163,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c8(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = mul nuw nsw i64 %1, 2939745
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, -696719417
-  ret i1 %4
+  %1 = mul i32 %0, 2939745
+  %2 = icmp ugt i32 %1, -696719417
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -188,11 +173,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = mul nuw i64 %1, 3796716880
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 498250416
-  ret i1 %4
+  %1 = mul i32 %0, -498250416
+  %2 = icmp ult i32 %1, 498250416
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

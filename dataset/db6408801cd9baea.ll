@@ -27,7 +27,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.1568854", ptr %0, i64 %4
   ret ptr %5
 }
@@ -38,7 +38,7 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -51,7 +51,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 56
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -109,7 +109,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 7
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr %struct.cdf_directory_t.1712582, ptr %0, i64 %4
   ret ptr %5
 }

@@ -7,7 +7,7 @@
 define i32 @func000000000000000e(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = zext i1 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = tail call i32 @llvm.umin.i32(i32 %6, i32 255)

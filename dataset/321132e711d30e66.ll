@@ -7,7 +7,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 15
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

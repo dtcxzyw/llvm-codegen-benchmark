@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = icmp ugt i32 %4, 86399
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

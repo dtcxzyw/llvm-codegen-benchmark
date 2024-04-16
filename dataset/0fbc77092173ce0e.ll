@@ -48,8 +48,8 @@ entry:
   %3 = add nsw i64 %2, -4
   %4 = add nsw i64 %3, %1
   %5 = add nsw i64 %4, %0
-  %6 = add nsw i64 %5, -2
-  %7 = icmp ult i64 %6, 2
+  %6 = and i64 %5, -2
+  %7 = icmp eq i64 %6, 2
   ret i1 %7
 }
 
@@ -61,8 +61,8 @@ entry:
   %3 = add nsw i64 %2, -64
   %4 = add nsw i64 %3, %1
   %5 = add i64 %4, %0
-  %6 = add nsw i64 %5, -2
-  %7 = icmp ult i64 %6, 2
+  %6 = and i64 %5, -2
+  %7 = icmp eq i64 %6, 2
   ret i1 %7
 }
 

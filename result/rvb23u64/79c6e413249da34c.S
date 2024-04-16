@@ -1,9 +1,7 @@
 func0000000000000024:                   # @func0000000000000024
-	sext.w	a0, a0
 	subw	a1, a1, a2
-	bset	a1, zero, a1
-	sext.w	a1, a1
-	sltu	a0, a0, a1
+	srlw	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000025:                   # @func0000000000000025
 	sext.w	a0, a0
@@ -21,11 +19,9 @@ func0000000000000066:                   # @func0000000000000066
 	slt	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
-	sext.w	a0, a0
 	subw	a1, a1, a2
-	bset	a1, zero, a1
-	sext.w	a1, a1
-	sltu	a0, a0, a1
+	srlw	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000061:                   # @func0000000000000061
 	subw	a1, a1, a2

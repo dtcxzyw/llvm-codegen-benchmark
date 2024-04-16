@@ -8,7 +8,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, %1
-  %3 = fmul float %1, %2
+  %3 = fmul float %2, %1
   %4 = fdiv float %0, %3
   ret float %4
 }

@@ -1,15 +1,11 @@
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
-	srai	a1, a0, 63
-	andn	a0, a0, a1
+	max	a0, a0, zero
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 255
-	sltiu	a1, a0, 10
-	li	a2, 9
-	czero.nez	a2, a2, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	li	a1, 9
+	minu	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 255

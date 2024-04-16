@@ -25,9 +25,9 @@ entry:
 define i16 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i16
-  %3 = icmp ule i32 %0, %1
-  %4 = select i1 %3, i16 %2, i16 0
-  ret i16 %4
+  %.not = icmp ugt i32 %0, %1
+  %3 = select i1 %.not, i16 0, i16 %2
+  ret i16 %3
 }
 
 ; 4 occurrences:

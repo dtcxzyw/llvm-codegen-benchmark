@@ -30,7 +30,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp ne i64 %3, %2
   ret i1 %4
 }

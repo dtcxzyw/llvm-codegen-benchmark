@@ -32,11 +32,11 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = add i128 %0, %1
-  %5 = sub i128 %4, %3
-  %6 = and i128 %5, 18446744073709551615
-  ret i128 %6
+  %3 = add i128 %0, %1
+  %.tr = trunc i128 %3 to i64
+  %.narrow = sub i64 %.tr, %2
+  %4 = zext i64 %.narrow to i128
+  ret i128 %4
 }
 
 ; 1 occurrences:
@@ -44,11 +44,11 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func000000000000000f(i128 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = add nuw nsw i128 %0, %1
-  %5 = sub nuw nsw i128 %4, %3
-  %6 = and i128 %5, 18446744073709551615
-  ret i128 %6
+  %3 = add nuw nsw i128 %0, %1
+  %.tr = trunc i128 %3 to i64
+  %.narrow = sub i64 %.tr, %2
+  %4 = zext i64 %.narrow to i128
+  ret i128 %4
 }
 
 ; 1 occurrences:

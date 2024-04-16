@@ -1,8 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
-	addw	a0, a0, a1
-	slti	a1, a0, 0
-	negw	a0, a0
-	czero.eqz	a0, a0, a1
+	add	a0, a0, a1
+	negw	a1, a0
+	sraiw	a0, a0, 31
+	and	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	addw	a0, a0, a1
@@ -21,8 +21,8 @@ func0000000000000038:                   # @func0000000000000038
 	or	a0, a0, a1
 	ret
 func000000000000005a:                   # @func000000000000005a
-	addw	a0, a0, a1
-	slti	a1, a0, 0
-	negw	a0, a0
-	czero.eqz	a0, a0, a1
+	add	a0, a0, a1
+	negw	a1, a0
+	sraiw	a0, a0, 31
+	and	a0, a0, a1
 	ret

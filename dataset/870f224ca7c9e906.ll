@@ -11,8 +11,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 28
   %5 = ashr i64 %4, 32
-  %6 = add nsw i64 %5, -1
-  %7 = getelementptr inbounds ptr, ptr %0, i64 %6
+  %6 = getelementptr ptr, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 
@@ -27,8 +27,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 30
   %5 = ashr exact i64 %4, 32
-  %6 = add nsw i64 %5, -1
-  %7 = getelementptr inbounds ptr, ptr %0, i64 %6
+  %6 = getelementptr ptr, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 

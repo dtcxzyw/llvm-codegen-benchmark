@@ -87,8 +87,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %2, %1
   %4 = call i64 @llvm.umax.i64(i64 %1, i64 %3)
-  %5 = add nuw nsw i64 %4, %1
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %1
   ret ptr %6
 }
 

@@ -87,8 +87,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, -4734510112055689544
-  %3 = xor i64 %0, %2
+  %2 = xor i64 %1, %0
+  %3 = xor i64 %2, -4734510112055689544
   ret i64 %3
 }
 

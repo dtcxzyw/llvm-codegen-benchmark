@@ -6,9 +6,9 @@
 define i1 @func0000000000000330(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 93
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ne i8 %2, 90
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

@@ -7,8 +7,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000011:                   # @func0000000000000011
 	fmv.x.w	a0, fa0
-	slli	a0, a0, 33
-	srli	a0, a0, 56
-	addi	a0, a0, -115
+	lui	a1, 522240
+	and	a0, a0, a1
+	lui	a1, 235520
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

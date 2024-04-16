@@ -9,7 +9,7 @@ entry:
   %3 = add i64 %2, 65551
   %4 = and i64 %3, -65536
   %5 = add i64 %4, -16
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -2
-  %3 = add nuw nsw i64 %2, 4095
+  %2 = and i64 %1, 9223372036854775806
+  %3 = add nuw i64 %2, 4095
   %4 = and i64 %3, 9223372036854771712
   %5 = add nsw i64 %4, -4096
   %6 = add i64 %5, %0

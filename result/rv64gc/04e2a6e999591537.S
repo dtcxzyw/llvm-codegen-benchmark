@@ -57,10 +57,11 @@ func0000000000000008:                   # @func0000000000000008
 	snez	a0, a1
 	ret
 func00000000000001da:                   # @func00000000000001da
+	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sext.w	a1, a1
+	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func00000000000001d4:                   # @func00000000000001d4

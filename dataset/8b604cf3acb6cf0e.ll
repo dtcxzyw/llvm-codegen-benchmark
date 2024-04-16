@@ -170,9 +170,9 @@ entry:
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp uge i64 %0, %1
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
+  %.not = icmp ult i64 %0, %1
+  %3 = select i1 %.not, i64 %0, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -181,9 +181,9 @@ entry:
 define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp sge i64 %0, %1
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
+  %.not = icmp slt i64 %0, %1
+  %3 = select i1 %.not, i64 %0, i64 %2
+  ret i64 %3
 }
 
 ; 3 occurrences:

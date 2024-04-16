@@ -70,7 +70,7 @@ entry:
   %4 = zext i64 %3 to i128
   %5 = zext i64 %1 to i128
   %6 = mul nuw i128 %5, %4
-  %7 = xor i128 %0, %6
+  %7 = xor i128 %6, %0
   ret i128 %7
 }
 

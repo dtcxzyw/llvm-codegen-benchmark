@@ -100,12 +100,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 23
-  %2 = and i32 %1, 255
-  %3 = add nsw i32 %2, -150
-  %4 = and i32 %3, -2
-  %5 = icmp ne i32 %4, 2
-  ret i1 %5
+  %1 = and i32 %0, 2130706432
+  %2 = icmp ne i32 %1, 1275068416
+  ret i1 %2
 }
 
 ; 1 occurrences:

@@ -59,7 +59,7 @@ entry:
   %2 = mul nuw i64 %0, %1
   %3 = add i64 %2, 431999999999
   %4 = udiv i64 %3, 432000000000
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

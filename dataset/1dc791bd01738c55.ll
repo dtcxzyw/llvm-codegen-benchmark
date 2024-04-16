@@ -100,12 +100,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000001c4(i1 %0, i64 %1) #0 {
 entry:
-  %2 = zext nneg i64 %1 to i128
-  %3 = mul nuw nsw i128 %2, 12379400392853802749
-  %4 = trunc i128 %3 to i64
-  %5 = icmp ult i64 %4, -6067343680855748867
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %2 = mul i64 %1, -6067343680855748867
+  %3 = icmp ult i64 %2, -6067343680855748867
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

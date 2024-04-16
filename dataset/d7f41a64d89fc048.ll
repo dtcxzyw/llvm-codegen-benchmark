@@ -9,8 +9,8 @@ entry:
   %3 = add nsw i32 %2, -2
   %4 = shl nuw nsw i32 1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %1, %5
-  %7 = getelementptr inbounds i64, ptr %0, i64 %6
+  %6 = getelementptr i64, ptr %0, i64 %5
+  %7 = getelementptr i64, ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -28,8 +28,8 @@ entry:
   %3 = add i32 %2, -6
   %4 = shl nuw nsw i32 1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %1, %5
-  %7 = getelementptr inbounds i64, ptr %0, i64 %6
+  %6 = getelementptr i64, ptr %0, i64 %5
+  %7 = getelementptr i64, ptr %6, i64 %1
   ret ptr %7
 }
 

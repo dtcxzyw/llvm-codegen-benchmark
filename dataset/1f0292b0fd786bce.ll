@@ -7,7 +7,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = select i1 %1, i32 -9, i32 0
   %5 = add i32 %4, %3
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = shl i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = shl i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

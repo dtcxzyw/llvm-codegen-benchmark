@@ -8,7 +8,7 @@ entry:
   %3 = add i64 %2, 2147483648
   %4 = icmp ult i64 %3, 4294967296
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = add nsw i64 %2, -2
   %4 = icmp ult i64 %3, 8
   %5 = select i1 %4, i64 %1, i64 0
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

@@ -1,5 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	slliw	a0, a0, 1
-	addi	a0, a0, -4
+	slli	a0, a0, 33
+	srli	a0, a0, 33
+	addi	a0, a0, -2
 	seqz	a0, a0
 	ret

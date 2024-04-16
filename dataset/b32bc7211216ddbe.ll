@@ -45,9 +45,9 @@ entry:
 define i1 @func0000000000000038(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %2, 2
-  %4 = and i16 %3, 3968
+  %4 = and i16 %3, 3840
   %5 = or disjoint i16 %0, %1
-  %6 = or disjoint i16 %5, %4
+  %6 = or i16 %5, %4
   %7 = icmp ugt i16 %6, 255
   ret i1 %7
 }

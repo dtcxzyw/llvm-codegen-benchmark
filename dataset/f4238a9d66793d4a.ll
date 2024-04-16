@@ -12,7 +12,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = add nsw i64 %4, 1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = add nsw i64 %4, 1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = add nsw i64 %4, 1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = add nsw i64 %4, 1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

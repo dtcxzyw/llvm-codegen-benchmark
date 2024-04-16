@@ -2,7 +2,7 @@ func00000000000001a6:                   # @func00000000000001a6
 	snez	a4, a2
 	neg	a5, a3
 	sub	a4, a5, a4
-	beq	a1, a4, .LBB0_3
+	beq	a4, a1, .LBB0_3
 	slt	a4, a4, a1
 	bne	a1, a3, .LBB0_4
 .LBB0_2:

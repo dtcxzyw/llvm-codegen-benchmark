@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i128 %0) #0 {
 entry:
-  %1 = mul nuw i128 %0, 14029467366897019727
-  %2 = trunc i128 %1 to i64
+  %1 = trunc i128 %0 to i64
+  %2 = mul i64 %1, -4417276706812531889
   %3 = lshr i64 %2, 37
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, 1609587791953885689

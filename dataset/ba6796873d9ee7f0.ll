@@ -245,7 +245,7 @@
 define i8 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 10
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nuw nsw i32 %1 to i8
   %3 = or disjoint i8 %2, 48
   ret i8 %3
 }
@@ -259,7 +259,7 @@ entry:
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = urem i64 %0, 2147483647
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = or i32 %2, 1073741824
   ret i32 %3
 }

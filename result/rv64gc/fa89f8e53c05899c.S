@@ -50,23 +50,23 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a3, a1, 1
-	andi	a1, a2, 1
-	li	a2, 18
-	beqz	a1, .LBB2_4
-	li	a1, 15
+	andi	a2, a2, 1
+	li	a1, 18
+	beqz	a2, .LBB2_4
+	li	a2, 15
 	beqz	a3, .LBB2_5
 .LBB2_2:                                # %entry
-	beqz	a0, .LBB2_6
+	bnez	a0, .LBB2_6
 .LBB2_3:                                # %entry
 	mv	a0, a1
 	ret
 .LBB2_4:                                # %entry
-	li	a2, 12
-	li	a1, 15
+	li	a1, 12
+	li	a2, 15
 	bnez	a3, .LBB2_2
 .LBB2_5:                                # %entry
-	li	a1, 18
-	bnez	a0, .LBB2_3
+	li	a2, 18
+	beqz	a0, .LBB2_3
 .LBB2_6:                                # %entry
 	mv	a1, a2
 	mv	a0, a1

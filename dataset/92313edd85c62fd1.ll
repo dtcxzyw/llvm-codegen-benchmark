@@ -8,7 +8,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 63
   %5 = sub nsw i64 %1, %4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp sgt i64 %6, 0
   ret i1 %7
 }

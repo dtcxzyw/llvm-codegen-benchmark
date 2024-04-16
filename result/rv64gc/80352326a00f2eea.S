@@ -5,6 +5,7 @@ func0000000000000074:                   # @func0000000000000074
 	li	a3, 6
 	bltu	a2, a3, .LBB0_2
 	li	a0, 7
+	and	a0, a0, a1
 	ret
 .LBB0_2:
 	addi	a0, a0, 1

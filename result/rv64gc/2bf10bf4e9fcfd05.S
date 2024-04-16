@@ -1,12 +1,13 @@
 func0000000000000001:                   # @func0000000000000001
+	not	a0, a0
 	slli	a0, a0, 52
 	srli	a0, a0, 63
-	xori	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	slli	a0, a0, 47
-	srli	a0, a0, 50
+	srli	a0, a0, 3
 	lui	a1, 4
 	addiw	a1, a1, -16
+	addi	a2, a1, 15
+	and	a0, a0, a2
 	xor	a0, a0, a1
 	ret

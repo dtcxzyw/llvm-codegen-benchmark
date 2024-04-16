@@ -11,7 +11,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

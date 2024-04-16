@@ -5,15 +5,11 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
-	andi	a3, a1, 1
-	li	a1, 240
-	bnez	a3, .LBB1_2
-	mv	a1, a2
-.LBB1_2:                                # %entry
-	andi	a1, a1, 192
-	addi	a1, a1, -192
-	seqz	a1, a1
+	andi	a2, a2, 192
+	addi	a2, a2, -192
+	seqz	a2, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000038:                   # @func0000000000000038
 	slli	a2, a2, 57

@@ -184,10 +184,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 2143289343, i32 2143272703
-  %3 = and i32 %2, %0
-  %4 = icmp ult i32 %3, 16777216
-  ret i1 %4
+  %2 = and i32 %0, 2130706432
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:

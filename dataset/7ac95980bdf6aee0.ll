@@ -37,7 +37,7 @@ define i16 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)
   %2 = urem i32 %1, 3600
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = udiv i16 %3, 60
   ret i16 %4
 }
@@ -52,7 +52,7 @@ define i16 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 false)
   %2 = urem i32 %1, 3600
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = udiv i16 %3, 60
   ret i16 %4
 }

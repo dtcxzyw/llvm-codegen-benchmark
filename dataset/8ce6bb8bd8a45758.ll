@@ -17,7 +17,7 @@ entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 16026, %2
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 163)
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

@@ -115,7 +115,7 @@ define i1 @func00000000000000a2(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp eq i64 %2, 0
-  %4 = icmp ule i64 %0, %2
+  %4 = icmp uge i64 %2, %0
   %5 = or i1 %3, %4
   ret i1 %5
 }
@@ -127,7 +127,7 @@ entry:
 define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = icmp slt i32 %2, 0
   %5 = or i1 %4, %3
   ret i1 %5
@@ -139,7 +139,7 @@ entry:
 define i1 @func0000000000000110(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = icmp ugt i64 %2, 9223372036854775806
   %5 = or i1 %4, %3
   ret i1 %5
@@ -151,7 +151,7 @@ entry:
 define i1 @func0000000000000222(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = icmp eq i32 %2, 0
   %5 = or i1 %4, %3
   ret i1 %5

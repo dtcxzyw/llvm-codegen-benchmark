@@ -5,9 +5,9 @@
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 65280
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 10
   %4 = add i32 %3, %1
   %5 = and i32 %4, 64512
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 252
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

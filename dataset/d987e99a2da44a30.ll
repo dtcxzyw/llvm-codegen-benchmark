@@ -361,9 +361,9 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 2, i32 1
-  %5 = icmp ne i32 %1, -1
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
+  %.not = icmp eq i32 %1, -1
+  %5 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -386,11 +386,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 2, i32 0
-  %5 = icmp eq i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 0, i32 2
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -430,8 +430,8 @@ define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 83, i32 87
-  %5 = icmp sgt i32 %1, -1
-  %6 = select i1 %5, i32 %4, i32 %0
+  %5 = icmp slt i32 %1, 0
+  %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }
 
@@ -456,11 +456,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000000a1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp sgt i64 %2, -1
-  %4 = select i1 %3, i64 999999999, i64 0
-  %5 = icmp eq i32 %1, -1
-  %6 = select i1 %5, i64 %4, i64 %0
-  ret i64 %6
+  %.inv = icmp slt i64 %2, 0
+  %3 = select i1 %.inv, i64 0, i64 999999999
+  %4 = icmp eq i32 %1, -1
+  %5 = select i1 %4, i64 %3, i64 %0
+  ret i64 %5
 }
 
 ; 8 occurrences:
@@ -523,11 +523,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp sgt i32 %2, 0
-  %4 = select i1 %3, i32 2, i32 1
-  %5 = icmp sgt i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
+  %.inv = icmp slt i32 %2, 1
+  %3 = select i1 %.inv, i32 1, i32 2
+  %4 = icmp sgt i32 %1, 0
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
 }
 
 ; 3 occurrences:

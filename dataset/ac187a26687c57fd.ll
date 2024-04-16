@@ -19,7 +19,7 @@
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 5
-  %3 = add i64 %1, %2
+  %3 = add i64 %2, %1
   %4 = icmp ult i64 %2, %3
   ret i1 %4
 }
@@ -44,8 +44,8 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 5
-  %3 = add i64 %1, %2
-  %4 = icmp ugt i64 %2, %3
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %1
   ret i1 %4
 }
 
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 4
-  %3 = add nsw i64 %1, %2
+  %3 = add nsw i64 %2, %1
   %4 = icmp ult i64 %2, %3
   ret i1 %4
 }
@@ -69,8 +69,8 @@ entry:
 define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 3
-  %3 = add nsw i64 %1, %2
-  %4 = icmp ugt i64 %2, %3
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %1
   ret i1 %4
 }
 

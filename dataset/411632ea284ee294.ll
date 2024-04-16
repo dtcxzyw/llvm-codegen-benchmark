@@ -14,7 +14,7 @@ entry:
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
   %6 = icmp sgt i32 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
   %6 = icmp ne i32 %5, 1
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -52,11 +52,10 @@ entry:
 define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = lshr exact i64 %3, 5
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 15
-  %7 = and i1 %6, %0
-  ret i1 %7
+  %4 = and i64 %3, 137438952960
+  %5 = icmp ne i64 %4, 0
+  %6 = and i1 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -68,7 +67,7 @@ entry:
   %4 = lshr i64 %3, 5
   %5 = trunc i64 %4 to i32
   %6 = icmp sgt i32 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

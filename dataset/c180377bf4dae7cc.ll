@@ -102,8 +102,8 @@ define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 23
   %2 = and i32 %1, 255
-  %3 = add nsw i32 %2, -150
-  %4 = mul nsw i32 %3, 631305
+  %3 = mul nuw nsw i32 %2, 631305
+  %4 = add nsw i32 %3, -94695750
   ret i32 %4
 }
 
@@ -113,11 +113,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 8
-  %2 = and i32 %1, 255
-  %3 = add nuw nsw i32 %2, 2
-  %4 = mul nsw i32 %3, -8
-  ret i32 %4
+  %1 = lshr i32 %0, 5
+  %2 = and i32 %1, 2040
+  %3 = sub nuw nsw i32 -16, %2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

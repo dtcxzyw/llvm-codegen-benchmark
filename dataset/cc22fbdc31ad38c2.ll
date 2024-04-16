@@ -16,7 +16,7 @@ define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = sdiv i64 %1, 2
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   ret i1 %3
 }
 

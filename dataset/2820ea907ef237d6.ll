@@ -151,9 +151,8 @@ define ptr @func0000000000000009(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -175,9 +174,8 @@ define ptr @func0000000000000041(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.nf_conn_counter.2027146, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.nf_conn_counter.2027146, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -187,9 +185,8 @@ define ptr @func0000000000000051(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.be128.2027289, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.be128.2027289, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

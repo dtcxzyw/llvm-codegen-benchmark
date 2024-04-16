@@ -10,8 +10,8 @@
 define i1 @func0000000000000022(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp eq ptr %4, null
+  %4 = icmp eq ptr %1, null
+  %5 = select i1 %3, i1 true, i1 %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

@@ -11,8 +11,8 @@ define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
   %3 = fmul double %0, 2.000000e-01
-  %4 = fsub double %3, %2
-  %5 = fsub double 1.000000e+00, %4
+  %4 = fsub double %2, %3
+  %5 = fadd double %4, 1.000000e+00
   ret double %5
 }
 

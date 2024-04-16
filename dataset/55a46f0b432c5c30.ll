@@ -13,7 +13,7 @@
 define i8 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = zext i1 %1 to i8
   %6 = select i1 %4, i8 -1, i8 %5
   ret i8 %6

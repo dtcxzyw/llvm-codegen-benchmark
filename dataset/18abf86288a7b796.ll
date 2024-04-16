@@ -13,7 +13,7 @@ entry:
   %4 = add nuw nsw i64 %3, 1
   %5 = lshr i64 %4, 1
   %6 = select i1 %1, i64 %3, i64 %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

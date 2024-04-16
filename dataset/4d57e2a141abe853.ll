@@ -61,11 +61,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000ac(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp sgt i32 %0, 0
-  %3 = icmp ne i8 %1, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  %5 = select i1 %4, i32 %0, i32 0, !prof !0
-  ret i32 %5
+  %.not = icmp eq i8 %1, 0
+  %2 = call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %3 = select i1 %.not, i32 0, i32 %2
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -80,6 +79,8 @@ entry:
   ret i32 %5
 }
 
-attributes #0 = { nounwind }
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
 
-!0 = !{!"branch_weights", i32 2000, i32 2002}
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

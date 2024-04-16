@@ -25,7 +25,7 @@ entry:
 define i64 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 55
-  %3 = add i128 %0, %2
+  %3 = add i128 %2, %0
   %4 = trunc i128 %3 to i64
   %5 = and i64 %4, 72057594037927935
   ret i64 %5
@@ -37,7 +37,7 @@ entry:
 define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 56
-  %3 = add nuw i128 %0, %2
+  %3 = add nuw i128 %2, %0
   %4 = trunc i128 %3 to i64
   %5 = and i64 %4, 72057594037927935
   ret i64 %5

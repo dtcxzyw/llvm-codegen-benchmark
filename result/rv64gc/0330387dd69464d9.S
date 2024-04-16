@@ -15,9 +15,11 @@ func0000000000000048:                   # @func0000000000000048
 	li	a1, 16
 .LBB1_2:                                # %entry
 	subw	a0, a0, a1
-	addi	a0, a0, -4
+	lui	a1, 917504
+	addi	a1, a1, -4
+	add	a0, a0, a1
 	srliw	a0, a0, 29
-	snez	a0, a0
+	sltiu	a0, a0, 7
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sext.w	a1, a1

@@ -31,8 +31,8 @@
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 10, %1
-  %3 = select i1 %0, i32 40960, i32 %2
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 40960, i64 %3
   ret i64 %4
 }
 
@@ -118,8 +118,8 @@ entry:
 define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 1, i64 %3
   ret i64 %4
 }
 
@@ -142,8 +142,8 @@ entry:
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 1, i64 %3
   ret i64 %4
 }
 
@@ -181,8 +181,8 @@ entry:
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 1, i64 %3
   ret i64 %4
 }
 

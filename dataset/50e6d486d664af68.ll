@@ -26,10 +26,9 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
-  %4 = and i128 %0, 18446744073709551615
-  %5 = add i128 %4, %3
-  %6 = and i128 %5, 18446744073709551615
-  ret i128 %6
+  %4 = add i128 %3, %0
+  %5 = and i128 %4, 18446744073709551615
+  ret i128 %5
 }
 
 ; 3 occurrences:
@@ -39,11 +38,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 536870911
-  %4 = add nsw i32 %0, %1
-  %5 = add nsw i32 %4, %3
-  %6 = and i32 %5, 31
-  ret i32 %6
+  %3 = add nsw i32 %0, %1
+  %4 = add i32 %3, %2
+  %5 = and i32 %4, 31
+  ret i32 %5
 }
 
 ; 1 occurrences:

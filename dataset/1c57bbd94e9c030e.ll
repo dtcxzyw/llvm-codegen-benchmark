@@ -20,7 +20,7 @@ entry:
   %3 = add i16 %2, 1
   %4 = sext i16 %3 to i32
   %5 = sub nsw i32 %4, %1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

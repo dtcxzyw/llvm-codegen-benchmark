@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 16, %1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = sub i32 16, %2
   %4 = lshr i32 %0, %3
   ret i32 %4
 }
@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 0, %1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = sub i32 0, %2
   %4 = lshr i32 %0, %3
   ret i32 %4
 }

@@ -51,7 +51,7 @@
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ugt i64 %3, 1152921504606846975
   ret i1 %4
 }
@@ -128,7 +128,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umax.i32(i32 %1, i32 66000)
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }

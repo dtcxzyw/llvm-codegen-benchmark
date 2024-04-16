@@ -8,9 +8,9 @@
 define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -29,9 +29,9 @@ entry:
 define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -69,9 +69,9 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 22
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -81,9 +81,9 @@ entry:
 define i1 @func00000000000001ec(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 12
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 22
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -92,10 +92,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 22
-  %4 = add nuw nsw i64 %3, %1
-  %5 = lshr i64 %4, 22
-  %6 = icmp ne i64 %0, %5
+  %3 = lshr i64 %1, 22
+  %4 = add i64 %3, %2
+  %5 = and i64 %4, 4398046511103
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -113,9 +113,9 @@ entry:
 define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -125,9 +125,9 @@ entry:
 define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -149,9 +149,9 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -169,9 +169,9 @@ entry:
 define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

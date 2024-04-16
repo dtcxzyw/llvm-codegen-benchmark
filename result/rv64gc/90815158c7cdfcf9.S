@@ -6,16 +6,16 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a0, a0, 32
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a1, a1, 64
 	andi	a1, a1, -64
 	subw	a0, a0, a1
+	addiw	a0, a0, -64
 	ret
 func0000000000000008:                   # @func0000000000000008
-	lui	a2, 1048574
-	srli	a2, a2, 12
+	lui	a2, 1048572
+	srli	a2, a2, 13
 	add	a1, a1, a2
-	slli	a1, a1, 13
-	srli	a1, a1, 13
+	addi	a2, a2, 1
+	and	a1, a1, a2
 	sub	a0, a0, a1
 	li	a1, 0
 	ret

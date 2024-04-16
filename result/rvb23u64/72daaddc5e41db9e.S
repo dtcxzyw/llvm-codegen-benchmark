@@ -14,9 +14,8 @@ func0000000000000038:                   # @func0000000000000038
 	xori	a0, a0, 1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	andi	a1, a1, 255
+	or	a0, a0, a1
 	andi	a0, a0, 255
-	add	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
@@ -59,8 +58,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	sltiu	a0, a0, 98
 	ret
 func00000000000000b1:                   # @func00000000000000b1
-	sext.w	a1, a1
-	add.uw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000078:                   # @func0000000000000078

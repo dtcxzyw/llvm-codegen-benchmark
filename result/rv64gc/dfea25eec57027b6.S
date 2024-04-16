@@ -5,8 +5,11 @@ func0000000000000057:                   # @func0000000000000057
 	addi	a0, a0, 32
 	ret
 func0000000000000040:                   # @func0000000000000040
-	srli	a1, a1, 32
+	slli	a0, a0, 32
 	add	a0, a0, a1
-	addi	a0, a0, 1
+	li	a1, 1
+	slli	a1, a1, 32
+	add	a0, a0, a1
+	srli	a0, a0, 32
 	slli	a0, a0, 32
 	ret

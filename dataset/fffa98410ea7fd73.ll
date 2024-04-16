@@ -5,7 +5,7 @@
 define i1 @func0000000000000085(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = icmp ugt i64 %4, %1
   %6 = icmp ule i64 %0, %1
   %7 = and i1 %6, %5
@@ -194,7 +194,7 @@ entry:
 define i1 @func00000000000001b6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = icmp sge i32 %4, %1
   %6 = icmp slt i32 %0, %1
   %7 = and i1 %6, %5

@@ -8,7 +8,7 @@ entry:
   %4 = add nuw nsw i32 %3, -56613888
   %5 = shl nuw nsw i32 %1, 10
   %6 = add nsw i32 %4, %5
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = add nuw nsw i32 %3, -56613888
   %5 = shl nuw nsw i32 %1, 10
   %6 = add nsw i32 %4, %5
-  %7 = icmp sle i32 %0, %6
+  %7 = icmp sge i32 %6, %0
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = add nsw i64 %3, -1
   %5 = shl nsw i64 %1, 3
   %6 = add i64 %4, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

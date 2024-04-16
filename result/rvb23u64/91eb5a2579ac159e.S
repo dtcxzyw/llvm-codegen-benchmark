@@ -14,7 +14,6 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000071:                   # @func0000000000000071
 	add	a0, a0, a1
-	addi	a0, a0, -48
 	andi	a0, a0, 3
 	seqz	a0, a0
 	ret

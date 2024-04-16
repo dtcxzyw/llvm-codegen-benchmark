@@ -7,8 +7,8 @@
 define i64 @func0000000000000009(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
-  %4 = select i1 %3, i32 2, i32 %0
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %0 to i64
+  %5 = select i1 %3, i64 2, i64 %4
   ret i64 %5
 }
 

@@ -9,9 +9,9 @@ define i32 @func0000000000000009(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -22,9 +22,9 @@ define i32 @func0000000000000063(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = icmp ne i64 %3, 536870911
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -53,9 +53,9 @@ define i32 @func0000000000000061(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 15
   %4 = icmp ne i16 %3, 15
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -66,9 +66,9 @@ define i32 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nuw i32 %0, %6
+  %7 = add nuw i32 %6, %0
   ret i32 %7
 }
 
@@ -81,9 +81,9 @@ define i8 @func0000000000000008(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i8
-  %7 = add i8 %0, %6
+  %7 = add i8 %6, %0
   ret i8 %7
 }
 
@@ -98,9 +98,9 @@ define i64 @func0000000000000060(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -111,9 +111,9 @@ define i32 @func0000000000000062(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nuw i32 %0, %6
+  %7 = add nuw i32 %6, %0
   ret i32 %7
 }
 

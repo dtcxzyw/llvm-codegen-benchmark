@@ -28,16 +28,14 @@ func0000000000000014:                   # @func0000000000000014
 	beq	a2, a3, .LBB2_2
 	lui	a2, 6
 	addiw	a2, a2, 560
-	andi	a1, a1, 7
-	li	a3, 2
-	bgeu	a1, a3, .LBB2_3
+	andi	a1, a1, 6
+	bnez	a1, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
 	lui	a2, 4
 	addiw	a2, a2, 560
-	andi	a1, a1, 7
-	li	a3, 2
-	bltu	a1, a3, .LBB2_4
+	andi	a1, a1, 6
+	beqz	a1, .LBB2_4
 .LBB2_3:                                # %entry
 	mv	a2, a0
 .LBB2_4:                                # %entry

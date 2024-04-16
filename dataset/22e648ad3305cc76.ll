@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %2 = xor i32 %1, -1
+  %3 = sext i32 %2 to i64
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -20,7 +20,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp sgt i64 %3, %2
   ret i1 %4
 }
@@ -31,8 +31,8 @@ entry:
 define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -46,8 +46,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -56,9 +56,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000049(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp uge i64 %3, %2
+  %2 = xor i8 %1, -1
+  %3 = sext i8 %2 to i64
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 

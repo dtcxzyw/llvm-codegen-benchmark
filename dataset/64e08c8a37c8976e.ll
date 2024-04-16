@@ -40,9 +40,8 @@ define ptr @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.be128.2027289, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.be128.2027289, ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:

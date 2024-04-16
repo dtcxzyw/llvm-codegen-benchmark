@@ -8,7 +8,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -23,7 +23,7 @@ define ptr @func0000000000000011(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -35,7 +35,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6
 }

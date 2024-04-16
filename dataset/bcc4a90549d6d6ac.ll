@@ -16,7 +16,7 @@
 define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -43,7 +43,7 @@ entry:
 define i32 @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ne ptr %0, %2
+  %3 = icmp ne ptr %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i32 @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ugt ptr %0, %2
+  %3 = icmp ult ptr %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

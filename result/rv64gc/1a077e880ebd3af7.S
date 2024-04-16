@@ -25,7 +25,7 @@ func000000000000000c:                   # @func000000000000000c
 	sltu	a3, a5, a3
 	add	a4, a4, a3
 	srai	a3, a4, 1
-	beq	a2, a3, .LBB2_2
+	beq	a3, a2, .LBB2_2
 	slt	a1, a2, a3
 	or	a0, a0, a1
 	ret

@@ -11,7 +11,7 @@ entry:
   %3 = sub i64 %2, %0
   %4 = add i64 %3, -3
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 15)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

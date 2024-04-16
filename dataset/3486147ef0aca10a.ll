@@ -33,7 +33,7 @@ define i1 @func000000000000021a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 999999999999999999
   %4 = select i1 %3, i32 19, i32 18
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = icmp sgt i32 %5, 0
   %7 = and i1 %6, %0
   ret i1 %7
@@ -48,9 +48,9 @@ define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 2, i32 -1
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = icmp ne i32 %5, -1
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

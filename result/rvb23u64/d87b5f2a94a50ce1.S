@@ -84,17 +84,17 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func0000000000000034:                   # @func0000000000000034
 	fle.d	a0, fa2, fa1
-	bnez	a0, .LBB6_3
-	flt.d	a0, fa0, fa1
+	beqz	a0, .LBB6_3
+	flt.d	a0, fa0, fa2
 	beqz	a0, .LBB6_4
 .LBB6_2:                                # %entry
 	ret
 .LBB6_3:                                # %entry
-	fmv.d	fa1, fa2
-	flt.d	a0, fa0, fa2
+	fmv.d	fa2, fa1
+	flt.d	a0, fa0, fa1
 	bnez	a0, .LBB6_2
 .LBB6_4:                                # %entry
-	fmv.d	fa0, fa1
+	fmv.d	fa0, fa2
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	fle.s	a0, fa1, fa2

@@ -50,8 +50,8 @@
 define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, 1
   %5 = udiv i32 2147483645, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -73,8 +73,8 @@ entry:
 define i64 @func0000000000000071(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, 1
   %5 = udiv i32 2147483645, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

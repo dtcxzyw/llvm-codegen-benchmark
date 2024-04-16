@@ -11,13 +11,13 @@ func00000000000001cc:                   # @func00000000000001cc
 	andi	a2, a0, 255
 	li	a3, 121
 	andi	a0, a1, 255
-	bne	a2, a3, .LBB1_2
-	addi	a0, a0, -151
-	seqz	a0, a0
-	ret
-.LBB1_2:
+	beq	a2, a3, .LBB1_2
 	addi	a0, a0, -152
 	snez	a0, a0
+	ret
+.LBB1_2:
+	addi	a0, a0, -151
+	seqz	a0, a0
 	ret
 func0000000000000a61:                   # @func0000000000000a61
 	sext.w	a0, a0

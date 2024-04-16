@@ -259,7 +259,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 -1, %2
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 
@@ -271,7 +271,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr exact i64 -9223372036854775808, %2
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 

@@ -5,9 +5,9 @@ func0000000000000004:                   # @func0000000000000004
 	seqz	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sub	a1, a1, a0
 	addi	a1, a1, -1
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a0
@@ -31,10 +31,8 @@ func0000000000000026:                   # @func0000000000000026
 	srli	a0, a0, 63
 	ret
 func0000000000000008:                   # @func0000000000000008
-	not	a0, a0
-	add	a0, a0, a1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	sub	a0, a0, a1
+	sltiu	a0, a0, -2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sub	a1, a1, a0
@@ -48,9 +46,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sub	a1, a1, a0
-	addi	a1, a1, 1
-	sltiu	a0, a1, 33
-	xori	a0, a0, 1
+	addi	a1, a1, -32
+	sltiu	a0, a1, -33
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sub	a1, a1, a0

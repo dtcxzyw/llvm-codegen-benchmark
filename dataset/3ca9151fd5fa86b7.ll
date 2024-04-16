@@ -10,7 +10,7 @@ define double @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = bitcast i64 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 
@@ -23,7 +23,7 @@ define double @func0000000000000003(double %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 32
   %3 = bitcast i64 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 
@@ -34,7 +34,7 @@ define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 52
   %3 = bitcast i64 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

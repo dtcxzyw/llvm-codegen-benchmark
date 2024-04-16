@@ -1,8 +1,8 @@
 func0000000000000356:                   # @func0000000000000356
-	addi	a1, a1, 1
-	not	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	subw	a1, a1, a0
+	addiw	a1, a1, 1
+	slti	a0, a1, 0
+	xori	a0, a0, 1
 	ret
 func000000000000035a:                   # @func000000000000035a
 	subw	a0, a0, a1
@@ -11,23 +11,21 @@ func000000000000035a:                   # @func000000000000035a
 	xori	a0, a0, 1
 	ret
 func0000000000000354:                   # @func0000000000000354
-	not	a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, -2
-	sltiu	a0, a0, 6
-	ret
-func0000000000000008:                   # @func0000000000000008
-	addi	a1, a1, 1
-	not	a1, a1
-	addw	a0, a0, a1
-	sltiu	a0, a0, 3
+	sub	a1, a1, a0
+	addi	a1, a1, 2
+	sltiu	a0, a1, -6
 	xori	a0, a0, 1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	subw	a1, a1, a0
+	addiw	a1, a1, 1
+	sltiu	a0, a1, -3
+	ret
 func0000000000000006:                   # @func0000000000000006
-	not	a1, a1
+	sub	a1, a1, a0
+	lui	a0, 1048575
+	addiw	a0, a0, -905
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 905
-	add	a0, a0, a1
-	srli	a0, a0, 63
+	slti	a0, a0, 0
+	xori	a0, a0, 1
 	ret

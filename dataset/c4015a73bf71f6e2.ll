@@ -204,7 +204,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 2047
   %4 = add nsw i32 %3, -1075
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -224,7 +224,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 2047
   %4 = add nsw i32 %3, -1075
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -237,7 +237,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 268435455
   %4 = add nsw i32 %3, -9
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

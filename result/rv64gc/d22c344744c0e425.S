@@ -5,7 +5,7 @@ func0000000000000078:                   # @func0000000000000078
 	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 1
 	add	a2, a2, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	srli	a1, a1, 47
 	xor	a0, a0, a1
 	ret
@@ -16,7 +16,7 @@ func0000000000000000:                   # @func0000000000000000
 	ld	a3, %lo(.LCPI1_0)(a3)
 	slli	a2, a2, 1
 	add	a2, a2, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	srli	a1, a1, 47
 	xor	a0, a0, a1
 	ret

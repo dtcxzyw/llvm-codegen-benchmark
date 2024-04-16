@@ -9,8 +9,8 @@
 define i64 @func0000000000000006(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 1, i64 %0
-  %5 = mul nuw i64 %4, 24
+  %4 = mul nuw i64 %0, 24
+  %5 = select i1 %3, i64 24, i64 %4
   ret i64 %5
 }
 
@@ -34,8 +34,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 1, i64 %0
-  %5 = mul i64 %4, 48
+  %4 = mul i64 %0, 48
+  %5 = select i1 %3, i64 48, i64 %4
   ret i64 %5
 }
 

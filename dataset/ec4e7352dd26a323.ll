@@ -8,7 +8,7 @@ entry:
   %4 = trunc i64 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = icmp eq i32 %5, 2
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = trunc i128 %1 to i64
   %5 = sub i64 %4, %3
   %6 = icmp eq i64 %5, 2000000000
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

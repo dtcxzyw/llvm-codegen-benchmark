@@ -6,9 +6,9 @@
 define i8 @func000000000000000c(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 63
-  %2 = icmp ne i8 %0, -1
-  %3 = select i1 %2, i8 %1, i8 -1
-  ret i8 %3
+  %.not = icmp eq i8 %0, -1
+  %2 = select i1 %.not, i8 -1, i8 %1
+  ret i8 %2
 }
 
 ; 2 occurrences:
@@ -18,9 +18,9 @@ entry:
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 %1, i32 0
-  ret i32 %3
+  %.inv = icmp slt i32 %0, 0
+  %2 = select i1 %.inv, i32 0, i32 %1
+  ret i32 %2
 }
 
 ; 6 occurrences:

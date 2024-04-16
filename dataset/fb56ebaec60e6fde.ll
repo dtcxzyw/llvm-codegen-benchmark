@@ -13,9 +13,8 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = add i8 %2, -1
   %4 = zext i8 %3 to i64
-  %5 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %4, i32 0, i32 0, i32 0, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

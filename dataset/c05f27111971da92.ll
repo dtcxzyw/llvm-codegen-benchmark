@@ -102,10 +102,8 @@ define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = udiv i64 %2, 10
-  %4 = zext nneg i64 %3 to i128
-  %5 = mul nuw nsw i128 %4, 12379400392853802749
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %4 = mul i64 %3, -6067343680855748867
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

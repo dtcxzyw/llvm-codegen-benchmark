@@ -8,7 +8,7 @@ entry:
   %4 = add nuw nsw i64 %3, 4095
   %5 = add i64 %4, %1
   %6 = and i64 %5, -4096
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = add nuw nsw i32 %3, 17
   %5 = add nuw nsw i32 %4, %1
   %6 = and i32 %5, 65528
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

@@ -60,10 +60,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = sext i32 %0 to i64
-  %2 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 48)
-  %3 = extractvalue { i64, i1 } %2, 1
-  ret i1 %3
+  %1 = icmp slt i32 %0, 0
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

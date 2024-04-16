@@ -20,11 +20,11 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func00000000000000f1(i16 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 16
-  %4 = icmp eq i32 %3, 0
-  %5 = add nuw nsw i16 %0, %1
-  %6 = add nuw nsw i16 %5, 2
-  %7 = select i1 %4, i16 %5, i16 %6
+  %3 = add nuw nsw i16 %0, %1
+  %4 = trunc i32 %2 to i16
+  %5 = lshr i16 %4, 3
+  %6 = and i16 %5, 2
+  %7 = add i16 %3, %6
   ret i16 %7
 }
 

@@ -8,7 +8,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 544
   %3 = add nuw nsw i64 %2, 544
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
 
@@ -32,7 +32,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, -1
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -43,7 +43,7 @@ define i32 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 63
   %3 = add nuw nsw i32 %2, 63
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 

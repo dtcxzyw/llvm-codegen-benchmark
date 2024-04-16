@@ -9,7 +9,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = icmp eq i32 %1, 0
   %6 = and i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

@@ -7,10 +7,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 1
-  %2 = and i64 %1, 9007199254740991
+  %1 = and i64 %0, 9007199254740990
+  %2 = or disjoint i64 %1, 1
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

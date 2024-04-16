@@ -47,7 +47,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
   %6 = uitofp i64 %5 to float
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

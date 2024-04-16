@@ -9,7 +9,7 @@ entry:
   %2 = and i32 %1, 65535
   %3 = zext nneg i32 %2 to i48
   %4 = shl nuw i48 %3, 32
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   %6 = lshr exact i48 %5, 16
   ret i48 %6
 }

@@ -27,7 +27,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = and i16 %0, 12288
   %5 = or disjoint i16 %4, %3
   ret i16 %5

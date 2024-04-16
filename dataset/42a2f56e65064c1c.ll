@@ -49,8 +49,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = call i32 @llvm.umax.i32(i32 %1, i32 97)
+  %1 = call i8 @llvm.umax.i8(i8 %0, i8 97)
+  %2 = zext i8 %1 to i32
   ret i32 %2
 }
 
@@ -82,13 +82,16 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 1)
+  %2 = zext i32 %1 to i64
   ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umax.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i8 @llvm.umax.i8(i8, i8) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

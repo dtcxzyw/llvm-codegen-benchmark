@@ -36,10 +36,11 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a3, a3, -1365
 	mulw	a2, a2, a3
 	lui	a3, 349525
-	addiw	a3, a3, 1365
-	bltu	a3, a2, .LBB2_2
-	mv	a0, a1
+	addiw	a3, a3, 1366
+	bltu	a2, a3, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a3, a2, 48

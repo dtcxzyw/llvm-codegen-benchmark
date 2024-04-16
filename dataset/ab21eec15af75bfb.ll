@@ -81,10 +81,10 @@ define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -24
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %.neg, %5
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -95,10 +95,10 @@ define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 376
-  %6 = sub nsw i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -376
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %.neg, %5
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -111,10 +111,10 @@ define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 48
-  %6 = sub i64 %0, %5
-  %7 = icmp ult i64 %6, 4
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -48
+  %5 = add i64 %.neg, %0
+  %6 = icmp ult i64 %5, 4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -124,10 +124,10 @@ define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
-  %6 = sub nsw i64 %0, %5
-  %7 = icmp ult i64 %6, 8
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -24
+  %5 = add i64 %.neg, %0
+  %6 = icmp ult i64 %5, 8
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -137,10 +137,10 @@ define i1 @func0000000000000056(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
-  %6 = sub nsw i64 %0, %5
-  %7 = icmp slt i64 %6, 1
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -24
+  %5 = add i64 %.neg, %0
+  %6 = icmp slt i64 %5, 1
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -150,10 +150,10 @@ define i1 @func0000000000000046(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
-  %6 = sub i64 %0, %5
-  %7 = icmp slt i64 %6, 1
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -24
+  %5 = add i64 %.neg, %0
+  %6 = icmp slt i64 %5, 1
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

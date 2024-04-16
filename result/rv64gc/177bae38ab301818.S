@@ -1,6 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
-	not	a2, a2
-	add	a1, a1, a2
-	sraiw	a1, a1, 31
+	subw	a2, a2, a1
+	slti	a1, a2, 0
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

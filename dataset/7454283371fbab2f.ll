@@ -389,8 +389,8 @@ entry:
 define i1 @func0000000000000058(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i64
-  %2 = add nsw i64 %1, -1
-  %3 = icmp ugt i64 %2, 15
+  %2 = add nsw i64 %1, -17
+  %3 = icmp ult i64 %2, -16
   ret i1 %3
 }
 
@@ -566,10 +566,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i64
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = icmp eq i16 %0, 1
+  ret i1 %1
 }
 
 ; 88 occurrences:
@@ -664,10 +662,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = icmp eq i32 %0, 1
+  ret i1 %1
 }
 
 ; 38 occurrences:
@@ -713,8 +709,8 @@ entry:
 define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
-  %2 = add nsw i64 %1, -1
-  %3 = icmp ugt i64 %2, 2147483647
+  %2 = add nsw i64 %1, -2147483649
+  %3 = icmp ult i64 %2, -2147483648
   ret i1 %3
 }
 
@@ -852,10 +848,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i64
-  %2 = add nuw nsw i64 %1, 1
-  %3 = icmp eq i64 %2, 8
-  ret i1 %3
+  %1 = icmp eq i8 %0, 7
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -864,10 +858,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(i16 %0) #0 {
 entry:
-  %1 = zext nneg i16 %0 to i32
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp eq i32 %2, 4095
-  ret i1 %3
+  %1 = icmp eq i16 %0, 4094
+  ret i1 %1
 }
 
 ; 4 occurrences:
@@ -878,10 +870,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = add nsw i32 %1, -19
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = icmp ne i8 %0, 19
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -890,10 +880,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005c(i16 %0) #0 {
 entry:
-  %1 = zext nneg i16 %0 to i32
-  %2 = add nsw i32 %1, -20
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = icmp ne i16 %0, 20
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

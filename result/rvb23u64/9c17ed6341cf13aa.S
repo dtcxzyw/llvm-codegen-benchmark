@@ -44,8 +44,9 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1
 	seqz	a1, a1
-	andi	a0, a0, 31
-	sltiu	a0, a0, 30
+	andi	a0, a0, 30
+	addi	a0, a0, -30
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
@@ -70,8 +71,8 @@ func000000000000008c:                   # @func000000000000008c
 	and	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
-	andi	a1, a1, 15
-	sltiu	a1, a1, 4
+	andi	a1, a1, 12
+	seqz	a1, a1
 	lui	a2, 7168
 	and	a0, a0, a2
 	lui	a2, 2560
@@ -80,7 +81,7 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000044:                   # @func0000000000000044
 	lui	a2, 524288
-	addiw	a2, a2, -1
+	addiw	a2, a2, -1024
 	and	a1, a1, a2
 	and	a0, a0, a2
 	maxu	a0, a0, a1

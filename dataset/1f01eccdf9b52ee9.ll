@@ -16,12 +16,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or i32 %0, 4
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = and i32 %4, 1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %2 = and i32 %0, 1
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -31,12 +28,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = or i64 %0, 18014398509481984
-  %3 = icmp eq i64 %1, 0
-  %4 = select i1 %3, i64 %2, i64 %0
-  %5 = and i64 %4, 18014398509481984
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %2 = icmp eq i64 %1, 0
+  %3 = and i64 %0, 18014398509481984
+  %4 = icmp ne i64 %3, 0
+  %5 = select i1 %2, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -45,12 +41,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
-  %2 = or i32 %0, 128
-  %3 = icmp slt i64 %1, 0
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = and i32 %4, 128
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %2 = icmp sgt i64 %1, -1
+  %3 = and i32 %0, 128
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %2, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -60,12 +55,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000011c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, 2
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = and i32 %4, 1
-  %6 = icmp ne i32 %5, 0
-  ret i1 %6
+  %2 = and i32 %0, 1
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 ; 8 occurrences:
@@ -80,12 +72,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, 48
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = and i32 %4, 16
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %2 = icmp ne i32 %1, 0
+  %3 = and i32 %0, 16
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %2, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -93,12 +84,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000016c(i16 %0, i64 %1) #0 {
 entry:
-  %2 = or disjoint i16 %0, 4096
-  %3 = icmp slt i64 %1, 0
-  %4 = select i1 %3, i16 %2, i16 %0
-  %5 = and i16 %4, 256
-  %6 = icmp ne i16 %5, 0
-  ret i1 %6
+  %2 = and i16 %0, 256
+  %3 = icmp ne i16 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

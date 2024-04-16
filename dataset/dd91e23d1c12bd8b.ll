@@ -51,9 +51,8 @@ define i1 @func00000000000000da(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 7
   %2 = and i32 %1, 2147483640
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -76,9 +75,8 @@ define i1 @func000000000000001a(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 7
   %2 = and i64 %1, -8
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp sgt i64 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:

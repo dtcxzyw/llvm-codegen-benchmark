@@ -410,8 +410,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 1, i64 %2
-  %4 = lshr i64 %3, 2
+  %3 = lshr i64 %2, 2
+  %4 = select i1 %1, i64 0, i64 %3
   %5 = getelementptr inbounds %"class.mitsuba::filesystem::path.1556034", ptr %0, i64 %4
   ret ptr %5
 }
@@ -452,8 +452,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 1, i64 %2
-  %4 = lshr i64 %3, 2
+  %3 = lshr i64 %2, 2
+  %4 = select i1 %1, i64 0, i64 %3
   %5 = getelementptr %"class.std::__1::basic_string.1556422", ptr %0, i64 %4
   ret ptr %5
 }

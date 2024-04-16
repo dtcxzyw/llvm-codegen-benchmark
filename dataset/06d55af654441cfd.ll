@@ -12,11 +12,9 @@
 define i32 @func00000000000000d5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = sub nsw i32 %4, %1
-  %6 = sub nsw i32 %5, %0
-  %7 = tail call i32 @llvm.abs.i32(i32 %6, i1 true)
-  ret i32 %7
+  %4 = sub i32 %3, %1
+  %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
+  ret i32 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

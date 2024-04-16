@@ -13,7 +13,7 @@ entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 1
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

@@ -12,7 +12,7 @@ entry:
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = shl i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
@@ -28,7 +28,7 @@ entry:
   %2 = tail call noundef i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = shl i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }

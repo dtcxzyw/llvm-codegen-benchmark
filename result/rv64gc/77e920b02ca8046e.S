@@ -6,9 +6,9 @@ func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a1, a1, 1
-	li	a2, -94
-	mul	a1, a1, a2
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, -94
 	addw	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f

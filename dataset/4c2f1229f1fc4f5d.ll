@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 255
-  %4 = sub nsw i64 %1, %3
-  %5 = and i64 %4, 1
-  %6 = add nuw i64 %5, %0
-  ret i64 %6
+  %3 = sub i64 %1, %2
+  %4 = and i64 %3, 1
+  %5 = add nuw i64 %4, %0
+  ret i64 %5
 }
 
 ; 10 occurrences:
@@ -25,10 +24,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1431655765
-  %4 = sub nsw i32 %1, %3
+  %3 = and i32 %2, 357913941
+  %4 = sub i32 %1, %3
   %5 = and i32 %4, 858993459
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -37,11 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = and i64 %4, 1
-  %6 = add nsw i64 %0, %5
-  ret i64 %6
+  %3 = sub i64 %1, %2
+  %4 = and i64 %3, 1
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
 }
 
 ; 26 occurrences:
@@ -74,10 +72,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 6148914691236517205
+  %3 = and i64 %2, 1537228672809129301
   %4 = sub i64 %1, %3
   %5 = and i64 %4, 3689348814741910323
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

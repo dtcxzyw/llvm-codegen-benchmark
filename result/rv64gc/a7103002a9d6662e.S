@@ -33,10 +33,10 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a2
 	addi	a2, a2, -1
-	snez	a2, a2
+	seqz	a2, a2
+	xori	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2
-	ori	a0, a0, 4
 	ret
 func0000000000000012:                   # @func0000000000000012
 	andi	a3, a2, 255

@@ -22,11 +22,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
-  %5 = xor i64 %4, %0
-  %6 = lshr i64 %5, 51
-  ret i64 %6
+  %3 = xor i64 %1, %0
+  %4 = lshr i64 %3, 51
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -35,11 +33,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i64
-  %4 = or i64 %1, %3
-  %5 = xor i64 %4, %0
-  %6 = lshr i64 %5, 56
-  ret i64 %6
+  %3 = xor i64 %1, %0
+  %4 = lshr i64 %3, 56
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

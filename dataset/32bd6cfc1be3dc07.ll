@@ -9,7 +9,7 @@ entry:
   %4 = shl i32 %1, 12
   %5 = or disjoint i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
   %6 = sext i16 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -41,7 +41,7 @@ entry:
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
   %6 = sext i16 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

@@ -4,6 +4,6 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000034:                   # @func0000000000000034
 	slli	a0, a0, 56
-	srai	a0, a0, 61
+	srai	a0, a0, 56
 	sgtz	a0, a0
 	ret

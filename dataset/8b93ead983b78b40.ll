@@ -20,7 +20,7 @@ entry:
   %3 = and i32 %2, 4
   %4 = icmp eq ptr %1, null
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

@@ -26,7 +26,7 @@
 define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870911
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = icmp ne i32 %0, 536870911
   %5 = and i1 %4, %3
   ret i1 %5
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
-  %3 = icmp ult i8 %0, %2
+  %3 = icmp ugt i8 %2, %0
   %4 = icmp ugt i8 %0, 1
   %5 = and i1 %3, %4
   ret i1 %5

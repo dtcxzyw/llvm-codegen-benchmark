@@ -117,11 +117,9 @@ entry:
 define i1 @func0000000000000011(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = lshr i32 %1, 23
-  %3 = and i32 %2, 255
-  %4 = add nsw i32 %3, -150
-  %5 = icmp eq i32 %4, -35
-  ret i1 %5
+  %2 = and i32 %1, 2139095040
+  %3 = icmp eq i32 %2, 964689920
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

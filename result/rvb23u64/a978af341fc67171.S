@@ -38,16 +38,16 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	ret
 func00000000000000c3:                   # @func00000000000000c3
-	addiw	a1, a1, -16
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	andi	a1, a1, -2
+	sext.w	a1, a1
+	addi	a1, a1, -16
+	snez	a1, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
 	andi	a1, a1, 255
-	addi	a1, a1, -255
-	sltiu	a1, a1, -250
-	xori	a1, a1, 1
+	addi	a1, a1, -5
+	sltiu	a1, a1, 250
 	addw	a0, a0, a1
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -69,9 +69,8 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
-	addi	a1, a1, -48
-	sltiu	a1, a1, 5
-	xori	a1, a1, 1
+	addi	a1, a1, -53
+	sltiu	a1, a1, -5
 	addw	a0, a0, a1
 	ret
 func00000000000000a2:                   # @func00000000000000a2

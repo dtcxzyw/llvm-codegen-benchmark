@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 268435456
   %4 = icmp eq i32 %3, 0
   %5 = zext i32 %1 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }

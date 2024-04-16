@@ -21,9 +21,8 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds %"union.absl::container_internal::map_slot_type.1937477", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"union.absl::container_internal::map_slot_type.1937477", ptr %0, i64 %5, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:

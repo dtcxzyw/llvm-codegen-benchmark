@@ -13,7 +13,6 @@ func0000000000000008:                   # @func0000000000000008
 	and	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	ori	a1, a1, 2
 	sext.w	a1, a1
 	slti	a1, a1, 0
 	xori	a1, a1, 1

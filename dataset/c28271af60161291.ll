@@ -9,7 +9,7 @@ entry:
   %3 = sext i1 %2 to i32
   %4 = add nsw i32 %3, %1
   %5 = sitofp i32 %4 to double
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

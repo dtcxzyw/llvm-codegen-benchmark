@@ -1,12 +1,14 @@
 func000000000000005c:                   # @func000000000000005c
 	srai	a2, a2, 3
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000004c:                   # @func000000000000004c
 	srai	a2, a2, 3
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

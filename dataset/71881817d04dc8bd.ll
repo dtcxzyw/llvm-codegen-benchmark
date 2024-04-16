@@ -7,9 +7,7 @@
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
-  %2 = mul nuw i64 %1, 4294967297
-  %3 = and i64 %2, 4294967295
-  ret i64 %3
+  ret i64 %1
 }
 
 ; 37 occurrences:
@@ -53,9 +51,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = mul nuw nsw i64 %1, 16807
-  %3 = and i64 %2, 2147483647
+  %1 = mul i32 %0, 16807
+  %2 = and i32 %1, 2147483647
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -67,9 +65,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = mul i64 %1, -7046029254386353133
-  %3 = and i64 %2, 63
+  %1 = mul i32 %0, 19
+  %2 = and i32 %1, 63
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

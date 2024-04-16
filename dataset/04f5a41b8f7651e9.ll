@@ -1164,10 +1164,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 63
-  %4 = icmp ugt i32 %3, 31
-  %5 = select i1 %4, ptr %0, ptr %1
-  ret ptr %5
+  %3 = and i32 %2, 32
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, ptr %1, ptr %0
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -1179,9 +1179,9 @@ entry:
 define ptr @func000000000000000c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = icmp ne i8 %3, 0
-  %5 = select i1 %4, ptr %0, ptr %1
-  ret ptr %5
+  %.not = icmp eq i8 %3, 0
+  %4 = select i1 %.not, ptr %1, ptr %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -28,7 +28,7 @@
 define float @func0000000000000000(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to float
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = fadd float %4, 1.000000e+00
   %6 = fmul float %5, %0
   ret float %6

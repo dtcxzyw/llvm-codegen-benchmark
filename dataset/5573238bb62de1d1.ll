@@ -311,11 +311,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ieee80211_sband_iftype_data.2008560, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 20
-  %5 = shl nuw nsw i64 %0, 1
-  %6 = getelementptr i16, ptr %4, i64 %5
-  ret ptr %6
+  %3 = getelementptr %struct.ieee80211_sband_iftype_data.2008560, ptr %1, i64 %2, i32 1, i32 2
+  %4 = shl nuw nsw i64 %0, 1
+  %5 = getelementptr i16, ptr %3, i64 %4
+  ret ptr %5
 }
 
 ; 5 occurrences:

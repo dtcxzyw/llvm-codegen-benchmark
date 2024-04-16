@@ -16,7 +16,7 @@ func0000000000000284:                   # @func0000000000000284
 	blt	a4, a3, .LBB1_2
 	li	a2, -332
 .LBB1_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -438
 	ret
@@ -25,7 +25,7 @@ func0000000000000040:                   # @func0000000000000040
 	beqz	a2, .LBB2_2
 	li	a3, 16
 .LBB2_2:                                # %entry
-	mul	a1, a1, a3
+	mul	a1, a3, a1
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	ret

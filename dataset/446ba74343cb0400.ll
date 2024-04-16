@@ -52,7 +52,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 100
   %3 = mul nsw i32 %2, 5
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -77,9 +77,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 12
-  %3 = mul nsw i32 %2, -12
-  %4 = add i32 %0, %3
+  %.fr = freeze i32 %1
+  %2 = srem i32 %.fr, 12
+  %3 = sub i32 %2, %.fr
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -98,7 +99,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 26917
   %3 = mul i64 %2, 4294967284
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -109,7 +110,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = mul nsw i64 %2, 3
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -120,7 +121,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 20
   %3 = mul i64 %2, 56
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -133,7 +134,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = mul nsw i64 %2, 12
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 

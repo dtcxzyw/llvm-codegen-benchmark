@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
-	addiw	a0, a0, 1
-	sltiu	a0, a0, 51
-	addi	a0, a0, -1
+	addiw	a0, a0, -50
+	sltiu	a0, a0, -51
+	neg	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0

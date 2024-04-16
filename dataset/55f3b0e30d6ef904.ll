@@ -17,7 +17,7 @@ entry:
   %2 = srem i64 %1, 86400
   %3 = add nsw i64 %2, 86400
   %4 = select i1 %0, i64 %3, i64 %2
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nsw i64 %4 to i32
   ret i32 %5
 }
 

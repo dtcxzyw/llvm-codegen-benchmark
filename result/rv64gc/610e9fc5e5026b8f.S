@@ -1,9 +1,10 @@
 func0000000000000005:                   # @func0000000000000005
-	add	a2, a2, a4
+	add	a4, a4, a2
+	sub	a2, a4, a0
+	sltu	a0, a4, a0
 	neg	a1, a1
-	sltu	a3, a2, a0
-	sub	a1, a1, a3
-	sub	a0, a2, a0
+	sub	a1, a1, a0
+	mv	a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
 	add	a1, a1, a2

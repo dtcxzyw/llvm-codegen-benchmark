@@ -8,7 +8,7 @@ define i1 @func000000000000001c(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = getelementptr inbounds ptr, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = getelementptr inbounds %"struct.Yosys::RTLIL::IdString.1901438", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

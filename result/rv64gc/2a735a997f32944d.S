@@ -20,14 +20,15 @@ func0000000000000007:                   # @func0000000000000007
 	addw	a0, a0, a1
 	ret
 func0000000000000033:                   # @func0000000000000033
-	slli	a1, a1, 55
-	srai	a1, a1, 63
-	andi	a1, a1, 10
-	add	a0, a0, a1
-	addiw	a0, a0, 10
+	andi	a2, a1, 256
+	li	a1, 10
+	beqz	a2, .LBB3_2
+	li	a1, 20
+.LBB3_2:                                # %entry
+	addw	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
-	andi	a2, a1, 15
+	andi	a2, a1, 14
 	li	a3, 10
 	li	a1, 48
 	bltu	a2, a3, .LBB4_2
@@ -36,7 +37,7 @@ func0000000000000013:                   # @func0000000000000013
 	add	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
-	andi	a2, a1, 255
+	andi	a2, a1, 252
 	li	a3, 35
 	li	a1, 13
 	bltu	a3, a2, .LBB5_2
@@ -45,9 +46,11 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	ret
 func0000000000000023:                   # @func0000000000000023
-	slli	a1, a1, 49
-	srli	a1, a1, 59
-	sltiu	a1, a1, 31
+	li	a2, 31
+	slli	a2, a2, 10
+	and	a1, a1, a2
+	xor	a1, a1, a2
+	snez	a1, a1
 	addi	a1, a1, -1
 	lui	a2, 229376
 	and	a1, a1, a2
@@ -65,9 +68,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 28
 	addi	a1, a1, -28
-	snez	a1, a1
-	subw	a0, a0, a1
-	addiw	a0, a0, 2
+	seqz	a1, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a2, 16
@@ -86,9 +89,8 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	slli	a1, a1, 55
-	srli	a1, a1, 63
-	negw	a1, a1
+	slli	a1, a1, 23
+	sraiw	a1, a1, 31
 	andi	a1, a1, -8
 	addw	a0, a0, a1
 	ret

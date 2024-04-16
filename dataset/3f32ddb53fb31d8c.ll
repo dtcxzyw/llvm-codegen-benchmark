@@ -7,7 +7,7 @@ entry:
   %3 = fadd float %1, %2
   %4 = fcmp oge float %3, 1.000000e+00
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = fcmp oge double %3, 1.000000e+16
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = fcmp olt double %3, 0.000000e+00
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = fcmp olt double %3, 0.000000e+00
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = fcmp olt double %3, 0.000000e+00
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

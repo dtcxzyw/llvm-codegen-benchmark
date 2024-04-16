@@ -145,7 +145,7 @@ define ptr @func0000000000000006(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
   %4 = shl i16 %3, 9
-  %5 = or disjoint i16 %1, %4
+  %5 = or disjoint i16 %4, %1
   %6 = zext nneg i16 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7

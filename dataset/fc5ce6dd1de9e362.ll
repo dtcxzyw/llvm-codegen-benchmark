@@ -172,8 +172,8 @@ define i32 @func0000000000000025(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 315653
   %3 = ashr i32 %2, 20
-  %4 = sub nsw i32 2, %3
-  %5 = sub nsw i32 %4, %0
+  %4 = add i32 %3, %0
+  %5 = sub i32 2, %4
   ret i32 %5
 }
 

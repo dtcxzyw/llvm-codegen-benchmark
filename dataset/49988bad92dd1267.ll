@@ -20,10 +20,9 @@ entry:
 define i64 @func0000000000000015(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
-  %2 = add nsw i32 %1, 2
-  %3 = sext i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %narrow = sub nuw nsw i32 -2, %1
+  %2 = sext i32 %narrow to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

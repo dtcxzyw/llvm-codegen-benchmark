@@ -12,7 +12,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 
@@ -24,7 +24,7 @@ define i1 @func0000000000000038(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
   %3 = getelementptr inbounds i8, ptr %2, i64 -24
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
 
@@ -98,7 +98,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -8
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -298,7 +298,7 @@ define i1 @func0000000000000034(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
   %3 = getelementptr inbounds i8, ptr %2, i64 -3
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 
@@ -319,7 +319,7 @@ define i1 @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
   %3 = getelementptr inbounds i8, ptr %2, i64 -1
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
 
@@ -330,7 +330,7 @@ define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -32
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
 
@@ -341,7 +341,7 @@ define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -32
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -360,7 +360,7 @@ define i1 @func0000000000000031(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i32, ptr %0, i64 %1
   %3 = getelementptr inbounds i8, ptr %2, i64 4
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -374,7 +374,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -6
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
 
@@ -385,7 +385,7 @@ define i1 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = icmp ule ptr %0, %3
+  %4 = icmp uge ptr %3, %0
   ret i1 %4
 }
 
@@ -396,7 +396,7 @@ define i1 @func0000000000000035(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
   %3 = getelementptr inbounds i8, ptr %2, i64 -4
-  %4 = icmp ule ptr %0, %3
+  %4 = icmp uge ptr %3, %0
   ret i1 %4
 }
 

@@ -7,7 +7,7 @@
 ; Function Attrs: nounwind
 define i48 @func000000000000000f(i48 %0, i16 %1) #0 {
 entry:
-  %2 = add i16 %1, -1
+  %2 = add i16 %1, 15
   %3 = and i16 %2, 15
   %4 = zext nneg i16 %3 to i48
   %5 = shl nuw nsw i48 %4, 16

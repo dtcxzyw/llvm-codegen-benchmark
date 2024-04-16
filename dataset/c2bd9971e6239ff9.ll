@@ -47,10 +47,10 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 18
-  %3 = and i32 %2, -524288
+  %3 = and i32 %2, 66584576
   %4 = lshr i32 %0, 13
   %5 = or disjoint i32 %4, %3
-  %6 = shl i32 %5, 6
+  %6 = shl nuw i32 %5, 6
   ret i32 %6
 }
 

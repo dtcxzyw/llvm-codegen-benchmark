@@ -16,7 +16,7 @@ entry:
   %3 = sub i64 %0, %2
   %4 = lshr i64 %3, 1
   %5 = add nuw i64 %4, %2
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = urem i64 %6, %0
   ret i64 %7
 }

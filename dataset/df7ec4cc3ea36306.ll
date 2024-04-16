@@ -173,7 +173,7 @@ define i1 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = trunc i32 %3 to i1
-  %5 = xor i1 %0, %4
+  %5 = xor i1 %4, %0
   ret i1 %5
 }
 

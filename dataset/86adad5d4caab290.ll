@@ -34,7 +34,7 @@ entry:
 define ptr @func0000000000000011(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i64 4, i64 0
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -47,7 +47,7 @@ entry:
 define ptr @func0000000000000031(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 73
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i64 48, i64 56
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -60,7 +60,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i64 0, i64 7
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -72,7 +72,7 @@ entry:
 define ptr @func0000000000000030(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i64 16, i64 24
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

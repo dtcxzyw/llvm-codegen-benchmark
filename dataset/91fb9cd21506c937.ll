@@ -15,8 +15,9 @@ define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 %0, i64 %1
-  %4 = sdiv i64 %3, 400
-  %5 = mul nsw i64 %4, -400
+  %.fr = freeze i64 %3
+  %4 = srem i64 %.fr, 400
+  %5 = sub i64 %4, %.fr
   ret i64 %5
 }
 

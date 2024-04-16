@@ -20,7 +20,7 @@ func0000000000000041:                   # @func0000000000000041
 	beq	a3, a4, .LBB2_2
 	li	a2, 1
 .LBB2_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

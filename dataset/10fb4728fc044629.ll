@@ -8,7 +8,7 @@
 define i64 @func0000000000000010(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = getelementptr inbounds i8, ptr %1, i64 1
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %4

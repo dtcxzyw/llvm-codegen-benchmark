@@ -91,7 +91,7 @@ define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -361,7 +361,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -628,7 +628,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 58
   %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -1212,7 +1212,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -1234,7 +1234,7 @@ define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -1248,7 +1248,7 @@ define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 3
   %3 = sext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -1264,7 +1264,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = sext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -1277,7 +1277,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 2
   %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -1296,7 +1296,7 @@ define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 127
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 

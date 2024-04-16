@@ -13,6 +13,6 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, 4
+	ori	a0, a0, 4
+	zext.w	a0, a0
 	ret

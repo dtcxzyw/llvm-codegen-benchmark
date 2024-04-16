@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
-  %3 = select i1 %1, float %2, float 0x3FD50EA9E0000000
-  %4 = fmul float %3, 0x400156E920000000
-  %5 = fadd float %0, %4
+  %3 = fmul float %2, 0x400156E920000000
+  %4 = select i1 %1, float %3, float 0x3FE6D1F620000000
+  %5 = fadd float %4, %0
   ret float %5
 }
 

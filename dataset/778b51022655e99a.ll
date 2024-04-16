@@ -45,7 +45,7 @@ entry:
   %4 = sext i32 %1 to i64
   %5 = sub nsw i64 %4, %3
   %6 = add nsw i64 %5, 1
-  %7 = mul i64 %0, %6
+  %7 = mul i64 %6, %0
   ret i64 %7
 }
 

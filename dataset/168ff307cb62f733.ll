@@ -33,8 +33,8 @@
 define i64 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %1, 0
-  %3 = select i1 %2, i32 %0, i32 0
-  %4 = sext i32 %3 to i64
+  %3 = sext i32 %0 to i64
+  %4 = select i1 %2, i64 %3, i64 0
   ret i64 %4
 }
 
@@ -125,10 +125,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %1, -1
-  %3 = select i1 %2, i8 %0, i8 -1
-  %4 = sext i8 %3 to i32
-  ret i32 %4
+  %.not = icmp eq i8 %1, -1
+  %2 = select i1 %.not, i8 -1, i8 %0
+  %3 = sext i8 %2 to i32
+  ret i32 %3
 }
 
 ; 3 occurrences:

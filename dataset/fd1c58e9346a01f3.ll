@@ -28,7 +28,7 @@
 define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
@@ -106,7 +106,7 @@ entry:
 define i8 @func0000000000000008(i8 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -256
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i8 %0, i8 1
   ret i8 %5
 }
@@ -119,7 +119,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 5
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
@@ -145,7 +145,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 99
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, i32 %0, i32 262144
   ret i32 %5
 }

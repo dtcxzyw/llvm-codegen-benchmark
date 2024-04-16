@@ -28,7 +28,7 @@ entry:
   %3 = shl nuw i128 %0, 64
   %4 = or disjoint i128 %3, %2
   %5 = udiv i128 %4, 100000000000000000000000000000000000000
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw nsw i128 %5 to i64
   ret i64 %6
 }
 

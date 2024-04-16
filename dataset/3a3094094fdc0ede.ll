@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = select i1 %0, i32 7, i32 %2
-  %4 = icmp slt i32 %3, 1
-  %5 = zext i1 %4 to i64
-  ret i64 %5
+  %2 = icmp slt i32 %1, 2
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  %4 = zext i1 %3 to i64
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -18,8 +18,9 @@ entry:
 define i64 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 499
-  %3 = select i1 %0, i64 -1, i64 %2
-  %4 = icmp ult i64 %3, 262145
+  %3 = icmp ult i64 %2, 262145
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

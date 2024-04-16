@@ -15,10 +15,11 @@ func0000000000000108:                   # @func0000000000000108
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
-	addi	a0, a0, 16
 	lui	a1, 524288
-	addiw	a1, a1, -17
-	sltu	a0, a1, a0
+	addiw	a2, a1, 32
+	add	a0, a0, a2
+	addiw	a1, a1, 16
+	sltu	a0, a0, a1
 	ret
 func0000000000000104:                   # @func0000000000000104
 	andi	a0, a0, 255

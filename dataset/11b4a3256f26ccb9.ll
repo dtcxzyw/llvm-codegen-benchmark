@@ -14,7 +14,7 @@ entry:
   %3 = fmul float %2, 5.000000e-01
   %4 = fmul float %1, 0x3FD5555560000000
   %5 = fmul float %4, %3
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

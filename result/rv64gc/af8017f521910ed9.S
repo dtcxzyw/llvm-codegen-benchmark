@@ -46,9 +46,13 @@ func0000000000000016:                   # @func0000000000000016
 	andi	a0, a0, 1
 	bne	a2, a3, .LBB2_2
 	li	a1, 1
-.LBB2_2:                                # %entry
 	addi	a0, a0, -1
 	and	a0, a0, a1
-	sraiw	a1, a0, 31
-	or	a0, a0, a1
+	ret
+.LBB2_2:
+	sext.w	a1, a1
+	srai	a2, a1, 63
+	or	a1, a1, a2
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret

@@ -72,8 +72,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = sext i16 %0 to i32
-  %2 = or disjoint i32 %1, 15
+  %1 = or i16 %0, 15
+  %2 = sext i16 %1 to i32
   ret i32 %2
 }
 

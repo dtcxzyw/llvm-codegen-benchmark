@@ -161,7 +161,7 @@ entry:
   %2 = mul nsw i64 %1, 1292913986
   %3 = add nsw i64 %2, 4294967295
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

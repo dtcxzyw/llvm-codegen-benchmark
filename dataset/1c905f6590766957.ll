@@ -387,10 +387,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000035(float %0) #0 {
 entry:
-  %1 = fcmp ult float %0, 1.000000e+00
-  %2 = select i1 %1, float 1.000000e+00, float %0
-  %3 = fcmp ugt float %2, 1.000000e+03
-  ret i1 %3
+  %.inv = fcmp oge float %0, 1.000000e+00
+  %1 = select i1 %.inv, float %0, float 1.000000e+00
+  %2 = fcmp ugt float %1, 1.000000e+03
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

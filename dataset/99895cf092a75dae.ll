@@ -7,9 +7,9 @@ define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 2097151
   %2 = and i64 %1, -2097152
-  %3 = sub i64 %2, %0
-  %4 = sub i64 2097152, %3
-  ret i64 %4
+  %.neg = sub i64 %0, %2
+  %3 = add i64 %.neg, 2097152
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

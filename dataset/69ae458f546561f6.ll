@@ -42,9 +42,8 @@ entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 40
-  %6 = getelementptr inbounds %"struct.hermes::vm::PropertyCacheEntry.1850530", ptr %5, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.hermes::vm::PropertyCacheEntry.1850530", ptr %5, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:

@@ -9,7 +9,7 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
 	bnez	a1, .LBB1_2
-	andi	a0, a2, 15
+	andi	a0, a2, 14
 .LBB1_2:                                # %entry
 	andi	a0, a0, 255
 	sltiu	a0, a0, 2
@@ -38,12 +38,11 @@ func000000000000004c:                   # @func000000000000004c
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
 	li	a3, 2
-	bne	a1, a3, .LBB4_2
-	srliw	a0, a2, 3
-	slli	a0, a0, 3
+	beq	a1, a3, .LBB4_2
+	mv	a2, a0
 .LBB4_2:                                # %entry
-	sext.w	a0, a0
-	sltiu	a0, a0, 40
+	sext.w	a2, a2
+	sltiu	a0, a2, 40
 	ret
 func000000000000001c:                   # @func000000000000001c
 	bnez	a1, .LBB5_2

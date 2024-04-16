@@ -6,10 +6,10 @@
 define i32 @func0000000000000003(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = call i64 @llvm.ctpop.i64(i64 %4), !range !0
-  %6 = trunc i64 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %6 = trunc nuw nsw i64 %5 to i32
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -35,10 +35,10 @@ declare i64 @llvm.ctpop.i64(i64) #1
 define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = call i64 @llvm.ctpop.i64(i64 %4), !range !0
-  %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %6 = trunc nuw nsw i64 %5 to i32
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -48,10 +48,10 @@ entry:
 define i32 @func000000000000000f(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = tail call i64 @llvm.ctpop.i64(i64 %4), !range !1
   %6 = trunc nuw nsw i64 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -61,10 +61,10 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = tail call i64 @llvm.ctpop.i64(i64 %4), !range !1
   %6 = trunc nuw nsw i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -74,10 +74,10 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = call i64 @llvm.ctpop.i64(i64 %4), !range !1
   %6 = trunc nuw nsw i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -95,10 +95,10 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = tail call i64 @llvm.ctpop.i64(i64 %4), !range !1
-  %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %6 = trunc nuw nsw i64 %5 to i32
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

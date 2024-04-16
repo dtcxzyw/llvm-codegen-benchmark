@@ -8,7 +8,7 @@ entry:
   %4 = select i1 %3, i32 1899, i32 1900
   %5 = add i32 %4, %1
   %6 = mul i32 %5, 365
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = select i1 %3, i64 -841, i64 -840
   %5 = add nsw i64 %4, %1
   %6 = mul nsw i64 %5, -60
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = select i1 %3, i64 -841, i64 -840
   %5 = add nsw i64 %4, %1
   %6 = mul nsw i64 %5, 60
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = select i1 %3, i32 -36, i32 -35
   %5 = add nsw i32 %4, %1
   %6 = mul nsw i32 %5, 85
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -61,7 +61,7 @@ entry:
   %4 = select i1 %3, i32 4800, i32 4799
   %5 = add i32 %4, %1
   %6 = mul i32 %5, 365
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

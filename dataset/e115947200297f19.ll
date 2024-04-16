@@ -6,7 +6,7 @@ define i32 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = call i32 @llvm.smin.i32(i32 %5, i32 %0)
   ret i32 %6
 }
@@ -21,7 +21,7 @@ define i64 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = call i64 @llvm.smin.i64(i64 %0, i64 %5)
   ret i64 %6
 }

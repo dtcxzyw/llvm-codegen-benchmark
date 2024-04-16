@@ -16,11 +16,10 @@
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 2
-  %5 = and i64 %4, 1152921504606846972
-  %6 = shl nuw nsw i64 %5, 3
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
+  %4 = shl i64 %3, 1
+  %5 = and i64 %4, 9223372036854775776
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

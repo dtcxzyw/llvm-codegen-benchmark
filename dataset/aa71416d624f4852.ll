@@ -12,11 +12,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = trunc i32 %2 to i16
-  %4 = select i1 %1, i16 0, i16 %3
-  %5 = zext i16 %4 to i64
-  %6 = getelementptr %struct.NvmeReclaimUnit.1665079, ptr %0, i64 %5
-  ret ptr %6
+  %.mask = and i32 %2, 65535
+  %3 = zext nneg i32 %.mask to i64
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr %struct.NvmeReclaimUnit.1665079, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -26,11 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  ret ptr %6
+  %3 = and i64 %2, 4294967295
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -41,11 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = select i1 %1, i32 12, i32 %3
-  %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.duckdb_fmt::v6::internal::arg_map<duckdb_fmt::v6::basic_format_context<std::back_insert_iterator<duckdb_fmt::v6::internal::buffer<char>>, char>>::entry.1812547", ptr %0, i64 %5
-  ret ptr %6
+  %3 = and i64 %2, 4294967295
+  %4 = select i1 %1, i64 12, i64 %3
+  %5 = getelementptr inbounds %"struct.duckdb_fmt::v6::internal::arg_map<duckdb_fmt::v6::basic_format_context<std::back_insert_iterator<duckdb_fmt::v6::internal::buffer<char>>, char>>::entry.1812547", ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -58,11 +56,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr ptr, ptr %0, i64 %5
-  ret ptr %6
+  %3 = and i64 %2, 4294967295
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr ptr, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

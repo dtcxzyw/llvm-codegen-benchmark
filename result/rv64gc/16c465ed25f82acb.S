@@ -3,23 +3,20 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 4
 	bnez	a2, .LBB0_2
 	addi	a0, a1, 1023
-	srli	a0, a0, 10
+	slli	a0, a0, 46
+	srli	a0, a0, 56
 .LBB0_2:                                # %entry
-	andi	a0, a0, 255
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	addi	a0, a1, -1
-	srli	a0, a0, 4
-	slli	a0, a0, 32
+	addi	a1, a1, -1
+	slli	a0, a1, 28
 	srli	a0, a0, 32
 	ret
 .LBB1_2:
 	lui	a0, 65536
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
+	addiw	a0, a0, -1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a0, a0, 1

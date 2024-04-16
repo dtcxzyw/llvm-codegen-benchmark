@@ -18,7 +18,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 3, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = shl nuw i64 2, %1
   %6 = or i64 %4, %5
   ret i64 %6
@@ -46,7 +46,7 @@ define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 15, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = shl nuw nsw i32 4, %1
   %6 = or i32 %4, %5
   ret i32 %6
@@ -59,7 +59,7 @@ define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 7, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = shl nuw nsw i64 3, %1
   %6 = or i64 %4, %5
   ret i64 %6
@@ -72,7 +72,7 @@ define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 15, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = shl nuw i32 142, %1
   %6 = or i32 %4, %5
   ret i32 %6
@@ -85,7 +85,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 3, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = shl nuw i32 1, %1
   %6 = or i32 %4, %5
   ret i32 %6

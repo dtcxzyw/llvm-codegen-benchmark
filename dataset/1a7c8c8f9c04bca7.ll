@@ -1,5 +1,4 @@
 
-%"struct.mold::elf::OpdSymbol.1613759" = type { i64, ptr }
 %struct.CommandTagBehavior.2120287 = type { ptr, i8, i8, i8, i8 }
 
 ; 58 occurrences:
@@ -66,9 +65,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 4
-  %5 = getelementptr inbounds %"struct.mold::elf::OpdSymbol.1613759", ptr %0, i64 %4
-  ret ptr %5
+  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 10 occurrences:

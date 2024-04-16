@@ -1,12 +1,10 @@
 func0000000000000022:                   # @func0000000000000022
 	bnez	a0, .LBB0_2
 	li	a0, 8
-	slli	a0, a0, 32
-	srli	a0, a0, 32
 	ret
 .LBB0_2:
 	li	a0, 13
-	sub	a0, a0, a1
+	subw	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

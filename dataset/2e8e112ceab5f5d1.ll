@@ -11,11 +11,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %"struct.std::pair.1693351", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = or i64 %1, 1
+  %3 = getelementptr %"struct.std::pair.1693351", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -24
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -28,8 +28,8 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000028:                   # @func0000000000000028
 	zext.w	a1, a1
-	bset	a0, zero, a0
-	sltu	a0, a1, a0
+	srl	a0, a1, a0
+	seqz	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
 	bset	a1, zero, a0

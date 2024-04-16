@@ -10,10 +10,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = and i64 %1, 4
-  %3 = lshr exact i64 %2, 2
-  ret i64 %3
+  %1 = lshr i64 %0, 58
+  %2 = and i64 %1, 1
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -25,10 +24,8 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0) #0 {
 entry:
-  %1 = tail call noundef i16 @llvm.bswap.i16(i16 %0)
-  %2 = and i16 %1, 4095
-  %3 = lshr i16 %2, 8
-  ret i16 %3
+  %1 = and i16 %0, 15
+  ret i16 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -39,10 +36,9 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = call i16 @llvm.bswap.i16(i16 %0)
-  %2 = and i16 %1, 256
-  %3 = lshr exact i16 %2, 5
-  ret i16 %3
+  %1 = shl i16 %0, 3
+  %2 = and i16 %1, 8
+  ret i16 %2
 }
 
 attributes #0 = { nounwind }

@@ -110,7 +110,7 @@
 define i1 @func000000000000005a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = call noundef i32 @llvm.smin.i32(i32 %1, i32 %0)
   %6 = icmp sgt i32 %4, %5
   ret i1 %6
@@ -195,7 +195,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
   %6 = icmp sgt i32 %4, %5
   ret i1 %6

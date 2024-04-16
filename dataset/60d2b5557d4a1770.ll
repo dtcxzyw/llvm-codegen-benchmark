@@ -24,9 +24,8 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 64
-  %6 = getelementptr [8 x %struct.SpGistLastUsedPage.2122654], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr [8 x %struct.SpGistLastUsedPage.2122654], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

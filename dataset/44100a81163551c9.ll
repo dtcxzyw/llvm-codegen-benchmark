@@ -15,9 +15,9 @@
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %0, %1
-  %3 = lshr i8 %2, 2
-  %4 = xor i8 %3, %2
-  %5 = lshr i8 %4, 1
+  %3 = lshr i8 %2, 3
+  %4 = lshr i8 %2, 1
+  %5 = xor i8 %3, %4
   ret i8 %5
 }
 

@@ -17,7 +17,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i8 0, i8 4
   %5 = zext i1 %1 to i8
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   %7 = or disjoint i8 %6, %4
   ret i8 %7
 }

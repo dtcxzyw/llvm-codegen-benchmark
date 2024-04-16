@@ -100,12 +100,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 65535
-  %4 = lshr i32 %3, 8
-  %5 = zext i8 %1 to i32
-  %6 = icmp eq i32 %4, %5
-  %7 = select i1 %6, i1 %0, i1 false
-  ret i1 %7
+  %3 = lshr i32 %2, 8
+  %4 = trunc i32 %3 to i8
+  %5 = icmp eq i8 %4, %1
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -17,7 +17,7 @@ entry:
   %3 = call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -35,7 +35,7 @@ entry:
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }

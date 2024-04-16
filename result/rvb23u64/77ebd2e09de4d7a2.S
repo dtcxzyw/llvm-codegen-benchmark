@@ -7,8 +7,9 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000444:                   # @func0000000000000444
 	addiw	a1, a1, -5
 	sltiu	a1, a1, 2
-	sext.w	a0, a0
-	sltiu	a0, a0, 64
+	srliw	a0, a0, 6
+	slli	a0, a0, 6
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000448:                   # @func0000000000000448

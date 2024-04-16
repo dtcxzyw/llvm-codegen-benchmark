@@ -14,7 +14,7 @@
 define i8 @func000000000000000e(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 12
-  %3 = or disjoint i8 %0, %2
+  %3 = or disjoint i8 %2, %0
   %4 = add nuw nsw i8 %3, 1
   %5 = lshr i8 %4, 2
   ret i8 %5

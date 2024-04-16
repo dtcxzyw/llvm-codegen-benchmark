@@ -54,11 +54,8 @@ func00000000000001cc:                   # @func00000000000001cc
 	ret
 func00000000000004ac:                   # @func00000000000004ac
 	sltiu	a1, a1, 17
-	slti	a2, a0, 0
-	not	a2, a2
-	snez	a0, a0
+	sgtz	a0, a0
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 func000000000000016c:                   # @func000000000000016c
 	sext.w	a0, a0

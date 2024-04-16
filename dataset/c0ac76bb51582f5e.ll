@@ -23,10 +23,9 @@
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
-  %3 = icmp eq i32 %2, 0
-  %4 = xor i1 %3, true
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %3 = icmp ne i32 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 37 occurrences:
@@ -71,10 +70,9 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
-  %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %3, true
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = or i1 %.not, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

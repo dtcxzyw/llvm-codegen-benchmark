@@ -34,7 +34,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 6
   %3 = and i8 %2, -128
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = xor i8 %4, 32
   ret i8 %5
 }
@@ -79,7 +79,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = and i64 %2, 2
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = xor i64 %4, 1
   ret i64 %5
 }
@@ -91,7 +91,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, -65538
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = xor i32 %4, 65539
   ret i32 %5
 }

@@ -38,16 +38,17 @@ func000000000000030a:                   # @func000000000000030a
 	sgtz	a0, a0
 	ret
 func00000000000003c1:                   # @func00000000000003c1
+	sext.w	a0, a0
 	add	a1, a1, a2
-	subw	a0, a0, a1
-	addi	a0, a0, -4
+	addiw	a1, a1, 4
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000003da:                   # @func00000000000003da
+	sext.w	a0, a0
 	add	a1, a1, a2
-	subw	a0, a0, a1
-	addiw	a0, a0, -8
-	sgtz	a0, a0
+	addiw	a1, a1, 8
+	slt	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
@@ -113,13 +114,12 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000041:                   # @func0000000000000041
 	add	a1, a1, a2
-	sub	a0, a0, a1
-	addi	a0, a0, 64
+	addi	a1, a1, -64
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000015a:                   # @func000000000000015a
 	add	a1, a1, a2
-	sub	a0, a0, a1
-	addi	a0, a0, 1
-	sgtz	a0, a0
+	addi	a1, a1, -1
+	slt	a0, a1, a0
 	ret

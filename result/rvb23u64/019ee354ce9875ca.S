@@ -1,5 +1,3 @@
-.LCPI0_0:
-	.quad	384307168202282325              # 0x555555555555555
 func0000000000000541:                   # @func0000000000000541
 	srai	a2, a2, 3
 	lui	a3, 699051
@@ -7,17 +5,11 @@ func0000000000000541:                   # @func0000000000000541
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
-	add	a1, a1, a2
-	sltu	a1, a1, a2
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
-	or	a0, a0, a1
+	not	a2, a2
+	sltu	a1, a2, a1
 	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
-.LCPI1_0:
-	.quad	48038396025285290               # 0xaaaaaaaaaaaaaa
 func000000000000054c:                   # @func000000000000054c
 	srai	a2, a2, 6
 	lui	a3, 699051
@@ -25,17 +17,11 @@ func000000000000054c:                   # @func000000000000054c
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
-	add	a1, a1, a2
-	sltu	a1, a1, a2
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
-	or	a0, a0, a1
+	not	a2, a2
+	sltu	a1, a2, a1
 	snez	a0, a0
+	or	a0, a0, a1
 	ret
-.LCPI2_0:
-	.quad	115292150460684697              # 0x199999999999999
 func0000000000000441:                   # @func0000000000000441
 	srai	a2, a2, 4
 	lui	a3, 838861
@@ -43,17 +29,11 @@ func0000000000000441:                   # @func0000000000000441
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
-	add	a1, a1, a2
-	sltu	a1, a1, a2
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
-	or	a0, a0, a1
+	not	a2, a2
+	sltu	a1, a2, a1
 	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
-.LCPI3_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
 func000000000000044c:                   # @func000000000000044c
 	srai	a2, a2, 2
 	lui	a3, 699051
@@ -61,12 +41,8 @@ func000000000000044c:                   # @func000000000000044c
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
-	add	a1, a1, a2
-	sltu	a1, a1, a2
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
-	or	a0, a0, a1
+	not	a2, a2
+	sltu	a1, a2, a1
 	snez	a0, a0
+	or	a0, a0, a1
 	ret

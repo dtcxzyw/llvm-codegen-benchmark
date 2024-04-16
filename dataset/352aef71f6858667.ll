@@ -12,7 +12,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 10
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %1, %4
+  %5 = icmp eq i64 %4, %1
   %6 = select i1 %5, i32 %0, i32 1024
   ret i32 %6
 }

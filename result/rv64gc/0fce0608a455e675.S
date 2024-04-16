@@ -58,10 +58,10 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func000000000000002b:                   # @func000000000000002b
 	slli	a2, a2, 56
-	bgez	a2, .LBB8_2
-	mv	a0, a1
+	bltz	a2, .LBB8_2
+	mv	a1, a0
 .LBB8_2:                                # %entry
-	slliw	a0, a0, 1
+	slliw	a0, a1, 1
 	ret
 func0000000000000022:                   # @func0000000000000022
 	li	a3, -1
@@ -90,10 +90,10 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a2, a2, 48
-	bnez	a2, .LBB12_2
-	mv	a0, a1
+	beqz	a2, .LBB12_2
+	mv	a1, a0
 .LBB12_2:                               # %entry
-	slliw	a0, a0, 8
+	slliw	a0, a1, 8
 	ret
 func0000000000000020:                   # @func0000000000000020
 	andi	a2, a2, 255
@@ -127,15 +127,15 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000032:                   # @func0000000000000032
 	sext.w	a2, a2
-	bnez	a2, .LBB17_2
-	mv	a0, a1
+	beqz	a2, .LBB17_2
+	mv	a1, a0
 .LBB17_2:                               # %entry
-	slliw	a0, a0, 1
+	slliw	a0, a1, 1
 	ret
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a2
-	bnez	a2, .LBB18_2
-	mv	a0, a1
+	beqz	a2, .LBB18_2
+	mv	a1, a0
 .LBB18_2:                               # %entry
-	slliw	a0, a0, 1
+	slliw	a0, a1, 1
 	ret

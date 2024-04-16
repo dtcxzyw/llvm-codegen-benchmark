@@ -21,9 +21,9 @@ entry:
   %3 = trunc i32 %2 to i8
   %4 = add i8 %3, 1
   %5 = and i32 %1, 3
-  %6 = icmp ne i32 %5, 3
-  %7 = select i1 %6, i8 %4, i8 %0
-  ret i8 %7
+  %.not = icmp eq i32 %5, 3
+  %6 = select i1 %.not, i8 %0, i8 %4
+  ret i8 %6
 }
 
 attributes #0 = { nounwind }

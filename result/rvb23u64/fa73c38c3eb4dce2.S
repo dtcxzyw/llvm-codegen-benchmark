@@ -1,8 +1,8 @@
 func0000000000000031:                   # @func0000000000000031
-	addi	a1, a1, -5
-	sltiu	a1, a1, 4
+	addi	a1, a1, -9
+	sltiu	a1, a1, -4
 	li	a2, -4
-	czero.eqz	a1, a2, a1
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 9
 	ret

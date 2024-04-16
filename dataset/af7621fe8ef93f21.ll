@@ -21,7 +21,7 @@ define i1 @func0000000000000011(i128 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = zext nneg i64 %2 to i128
-  %4 = and i128 %0, %3
+  %4 = and i128 %3, %0
   %5 = icmp eq i128 %4, 0
   ret i1 %5
 }

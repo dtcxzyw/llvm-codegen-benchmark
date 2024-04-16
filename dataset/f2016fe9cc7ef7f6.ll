@@ -19,7 +19,7 @@ entry:
   %3 = xor i64 %2, -1
   %4 = zext i16 %1 to i64
   %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

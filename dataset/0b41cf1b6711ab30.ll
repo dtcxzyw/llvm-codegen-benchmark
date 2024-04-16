@@ -53,7 +53,7 @@ entry:
   %3 = udiv i32 %2, 10000
   %4 = mul nsw i32 %1, -10000
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

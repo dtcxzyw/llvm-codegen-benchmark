@@ -24,9 +24,11 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func000000000000090c:                   # @func000000000000090c
 	sext.w	a3, a0
-	addi	a2, a2, -1
-	srli	a2, a2, 32
-	snez	a2, a2
+	li	a4, -1
+	slli	a4, a4, 32
+	addi	a5, a4, -1
+	add	a2, a2, a5
+	sltu	a2, a2, a4
 	addw	a0, a0, a1
 	slt	a0, a0, a3
 	or	a0, a0, a2

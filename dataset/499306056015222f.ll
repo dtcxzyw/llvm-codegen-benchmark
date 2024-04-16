@@ -80,10 +80,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = getelementptr i16, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -2
-  ret ptr %4
+  %2 = getelementptr i16, ptr %0, i64 %1
+  ret ptr %2
 }
 
 ; 14 occurrences:
@@ -104,10 +102,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr %struct.iovec.1553443, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr %struct.iovec.1553443, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 24
+  ret ptr %3
 }
 
 ; 41 occurrences:
@@ -155,10 +152,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -2
+  ret ptr %3
 }
 
 ; 949 occurrences:
@@ -1114,10 +1110,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 -1
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -2
+  ret ptr %3
 }
 
 ; 716 occurrences:
@@ -1840,10 +1835,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr inbounds ptr, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 -8
-  ret ptr %4
+  %2 = getelementptr ptr, ptr %0, i64 %1
+  ret ptr %2
 }
 
 ; 331 occurrences:
@@ -2181,10 +2174,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = getelementptr inbounds %"class.std::__1::basic_string.1556422", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr %"class.std::__1::basic_string.1556422", ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 32
+  ret ptr %3
 }
 
 ; 8 occurrences:
@@ -2199,10 +2191,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 2
-  %3 = getelementptr ptr, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -64
-  ret ptr %4
+  %2 = getelementptr ptr, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -48
+  ret ptr %3
 }
 
 ; 32 occurrences:
@@ -2241,10 +2232,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 2
-  %3 = getelementptr inbounds %"class.rocksdb::WideColumn.1570295", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr %"class.rocksdb::WideColumn.1570295", ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 72
+  ret ptr %3
 }
 
 ; 45 occurrences:
@@ -2296,10 +2286,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr inbounds %"struct.mold::elf::ElfRel.1591379", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr %"struct.mold::elf::ElfRel.1591379", ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -16
+  ret ptr %3
 }
 
 ; 50 occurrences:
@@ -2356,10 +2345,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 1
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 2
+  ret ptr %3
 }
 
 ; 20 occurrences:
@@ -2386,10 +2374,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr %struct.NetClientState.1661247, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %2 = getelementptr %struct.NetClientState.1661247, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -360
+  ret ptr %3
 }
 
 ; 15 occurrences:
@@ -2411,10 +2398,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr inbounds ptr, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr ptr, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 16
+  ret ptr %3
 }
 
 ; 9 occurrences:
@@ -2430,10 +2416,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 2
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 3
+  ret ptr %3
 }
 
 ; 6 occurrences:
@@ -2446,10 +2431,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = getelementptr inbounds { i32, i8 }, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %2 = getelementptr { i32, i8 }, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 12
+  ret ptr %3
 }
 
 ; 5 occurrences:
@@ -2461,10 +2445,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = getelementptr %class.aiVector2t.1749520, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 1
-  ret ptr %4
+  %2 = getelementptr %class.aiVector2t.1749520, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 17
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -2472,10 +2455,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = getelementptr %struct.memblock_region.2001240, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr %struct.memblock_region.2001240, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 32
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

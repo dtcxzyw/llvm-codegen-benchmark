@@ -14,7 +14,7 @@ entry:
   %3 = shl i64 %0, 1
   %4 = or disjoint i64 %3, 1
   %5 = select i1 %1, i64 %4, i64 %2
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

@@ -39,7 +39,7 @@ entry:
 define i24 @func0000000000000042(i24 %0, i24 %1, i24 %2) #0 {
 entry:
   %3 = or disjoint i24 %1, %2
-  %4 = or i24 %3, 655360
+  %4 = or i24 %3, 131072
   %5 = icmp eq i24 %0, 4160
   %6 = select i1 %5, i24 %4, i24 %3
   %7 = or i24 %6, 786432

@@ -26,9 +26,8 @@ define ptr @func0000000000000003(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
   %4 = zext i8 %3 to i64
-  %5 = getelementptr inbounds [256 x { i8, i16 }], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 2
-  ret ptr %6
+  %5 = getelementptr inbounds [256 x { i8, i16 }], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -38,9 +37,8 @@ define ptr @func000000000000000d(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.SpGistLastUsedPage.2122654], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [8 x %struct.SpGistLastUsedPage.2122654], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

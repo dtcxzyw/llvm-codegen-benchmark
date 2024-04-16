@@ -7,7 +7,7 @@ define i8 @func0000000000000008(i8 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -20,7 +20,7 @@ define i32 @func0000000000000009(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -31,7 +31,7 @@ define i32 @func0000000000000031(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -42,7 +42,7 @@ define i64 @func0000000000000021(i64 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %1, %2
   %4 = zext i1 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -53,7 +53,7 @@ define i8 @func0000000000000011(i8 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i8
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
 
@@ -64,7 +64,7 @@ define i32 @func0000000000000029(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

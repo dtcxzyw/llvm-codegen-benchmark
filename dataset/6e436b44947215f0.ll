@@ -17,8 +17,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = sdiv exact i64 %3, 56
-  %5 = and i64 %4, 2147483647
-  %6 = shl nuw nsw i64 %5, 2
+  %5 = shl nsw i64 %4, 2
+  %6 = and i64 %5, 8589934588
   ret i64 %6
 }
 

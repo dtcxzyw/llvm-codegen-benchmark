@@ -10,7 +10,7 @@ entry:
   %3 = icmp ult i32 %2, -2
   %4 = icmp ne i32 %1, 9
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

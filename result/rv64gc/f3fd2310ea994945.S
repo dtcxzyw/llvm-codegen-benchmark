@@ -1,7 +1,8 @@
 func000000000000003b:                   # @func000000000000003b
 	andi	a1, a1, 255
-	addi	a1, a1, -128
 	slli	a1, a1, 6
 	add	a0, a0, a1
-	addiw	a0, a0, -128
+	lui	a1, 1048574
+	addi	a1, a1, -128
+	addw	a0, a0, a1
 	ret

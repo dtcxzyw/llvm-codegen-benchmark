@@ -8,9 +8,9 @@ define i1 @func0000000000000631(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i8 %1, 0
-  %5 = select i1 %4, i32 9, i32 %3
-  %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %5 = zext nneg i32 %3 to i64
+  %6 = select i1 %4, i64 9, i64 %5
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

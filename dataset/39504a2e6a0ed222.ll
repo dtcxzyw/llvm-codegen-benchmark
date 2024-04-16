@@ -57,7 +57,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 56
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

@@ -14,10 +14,9 @@
 define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [11 x %struct.free_area.2009871], ptr %1, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr [11 x %struct.free_area.2009871], ptr %1, i64 0, i64 %3, i32 0, i64 1
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -26,10 +25,9 @@ entry:
 define i1 @func0000000000000051(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [31 x %struct.xhci_virt_ep.2014095], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 48
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr [31 x %struct.xhci_virt_ep.2014095], ptr %1, i64 0, i64 %3, i32 7
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -38,10 +36,9 @@ entry:
 define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [4 x %struct.sbq_wait.2025688], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr [4 x %struct.sbq_wait.2025688], ptr %1, i64 0, i64 %3, i32 1, i32 3
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

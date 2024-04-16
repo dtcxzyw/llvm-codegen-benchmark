@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0, i40 %1) #0 {
 entry:
-  %2 = lshr i40 %1, 8
-  %3 = trunc nuw i40 %2 to i32
+  %2 = trunc i40 %1 to i32
+  %3 = lshr i32 %2, 8
   %4 = and i32 %3, 256
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i32 %4, i32 256

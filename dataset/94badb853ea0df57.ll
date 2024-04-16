@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 3
-  %3 = shl i64 %2, 6
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, -64
   %4 = udiv i64 %0, %3
   ret i64 %4
 }
@@ -16,8 +16,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 4
-  %3 = shl nuw nsw i16 %2, 1
+  %2 = lshr i16 %1, 3
+  %3 = and i16 %2, 8190
   %4 = udiv i16 %0, %3
   ret i16 %4
 }

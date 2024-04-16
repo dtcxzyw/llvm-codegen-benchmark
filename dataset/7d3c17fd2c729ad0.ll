@@ -9,12 +9,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 2251799813685248
-  %2 = icmp eq i64 %1, 0
-  %3 = or i64 %0, 18014398509481984
-  %4 = select i1 %2, i64 %3, i64 %0
-  %5 = and i64 %4, 18014398509481984
-  ret i64 %5
+  %1 = shl i64 %0, 3
+  %2 = xor i64 %1, -1
+  %3 = or i64 %2, %0
+  %4 = and i64 %3, 18014398509481984
+  ret i64 %4
 }
 
 ; 7 occurrences:
@@ -30,10 +29,9 @@ define i32 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 48
   %2 = icmp eq i32 %1, 0
-  %3 = or disjoint i32 %0, 48
-  %4 = select i1 %2, i32 %3, i32 %0
-  %5 = and i32 %4, 16
-  ret i32 %5
+  %3 = and i32 %0, 16
+  %4 = select i1 %2, i32 16, i32 %3
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

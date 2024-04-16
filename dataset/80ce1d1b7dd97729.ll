@@ -72,7 +72,7 @@ entry:
 define ptr @func0000000000000014(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %0, -1
-  %4 = mul nsw i64 %2, %3
+  %4 = mul nsw i64 %3, %2
   %5 = getelementptr double, ptr %1, i64 %4
   %6 = getelementptr double, ptr %5, i64 %0
   ret ptr %6

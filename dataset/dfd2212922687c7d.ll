@@ -7,7 +7,7 @@
 define i1 @func000000000000009a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 %1)
   %6 = sub nsw i32 %5, %0
   %7 = icmp sgt i32 %6, 127

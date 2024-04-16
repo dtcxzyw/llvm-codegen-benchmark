@@ -22,10 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 8, i64 4
-  %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ult i64 %4, 9
-  ret i1 %5
+  %3 = icmp ult i64 %1, 9
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 27 occurrences:
@@ -73,7 +72,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 2147483647, i32 -2147483648
+  %3 = select i1 %2, i32 0, i32 -2147483648
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = icmp slt i32 %4, 0
   ret i1 %5
@@ -86,7 +85,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 6, i32 12
+  %3 = select i1 %2, i32 4, i32 12
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = icmp ugt i32 %4, 11
   ret i1 %5

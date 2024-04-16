@@ -8,7 +8,7 @@
 define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = mul i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -22,8 +22,8 @@ entry:
 define i1 @func0000000000000078(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = mul nuw nsw i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = mul nuw nsw i32 %4, %0
   %6 = icmp ugt i32 %5, 536870911
   ret i1 %6
 }
@@ -37,8 +37,8 @@ entry:
 define i1 @func0000000000000066(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = mul nuw i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = mul nuw i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6
 }
@@ -51,8 +51,8 @@ entry:
 define i1 @func000000000000006c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = mul nuw i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = mul nuw i32 %4, %0
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
@@ -65,7 +65,7 @@ entry:
 define i1 @func0000000000000046(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = mul i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6
@@ -77,8 +77,8 @@ entry:
 define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = mul i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = mul i32 %4, %0
   %6 = icmp ult i32 %5, -8
   ret i1 %6
 }

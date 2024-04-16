@@ -23,8 +23,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:
-  %1 = fmul float %0, %0
-  %2 = fneg float %1
+  %1 = fneg float %0
+  %2 = fmul float %1, %0
   ret float %2
 }
 

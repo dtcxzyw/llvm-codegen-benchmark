@@ -30,7 +30,7 @@ entry:
   %1 = add i64 %0, -1
   %2 = udiv i64 %1, 10
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = sub nuw nsw i32 64, %4
   ret i32 %5
 }

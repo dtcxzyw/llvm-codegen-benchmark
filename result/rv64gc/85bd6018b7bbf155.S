@@ -58,8 +58,8 @@ func0000000000000141:                   # @func0000000000000141
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	sub	a0, a0, a1
-	sub	a0, a0, a2
+	add	a1, a1, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000015a:                   # @func000000000000015a
@@ -69,9 +69,8 @@ func000000000000015a:                   # @func000000000000015a
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	sub	a0, a0, a1
-	sub	a0, a0, a2
-	sgtz	a0, a0
+	add	a1, a1, a2
+	slt	a0, a1, a0
 	ret
 func0000000000000151:                   # @func0000000000000151
 	srai	a2, a2, 3
@@ -80,7 +79,7 @@ func0000000000000151:                   # @func0000000000000151
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	sub	a0, a0, a1
-	sub	a0, a0, a2
+	add	a1, a1, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

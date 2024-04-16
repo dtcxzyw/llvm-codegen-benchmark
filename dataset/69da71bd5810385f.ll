@@ -10,7 +10,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, 8192
   %5 = sub i64 %4, %1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

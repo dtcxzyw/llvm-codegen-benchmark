@@ -13,7 +13,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sub	a0, a0, a2
-	add.uw	a0, a1, a0
+	zext.w	a1, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006

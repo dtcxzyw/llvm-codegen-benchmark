@@ -105,7 +105,7 @@
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2147483648
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = lshr exact i32 %3, 1
   ret i32 %4
 }
@@ -202,10 +202,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -8193
-  %3 = or disjoint i64 %2, %0
-  %4 = lshr i64 %3, 15
-  ret i64 %4
+  %2 = or i64 %1, %0
+  %3 = lshr i64 %2, 15
+  ret i64 %3
 }
 
 ; 50 occurrences:
@@ -276,7 +275,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4096
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr exact i32 %3, 8
   ret i32 %4
 }

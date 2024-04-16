@@ -8,7 +8,7 @@ define i16 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
-  %4 = mul nuw nsw i32 %0, %3
+  %4 = mul nuw nsw i32 %3, %0
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -32,7 +32,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 255
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

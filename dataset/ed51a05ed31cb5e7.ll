@@ -37,7 +37,7 @@ entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
   %4 = fcmp olt double %3, %1
   %5 = select i1 %4, double %1, double %3
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   %7 = select i1 %6, double %5, double %0
   ret double %7
 }
@@ -53,7 +53,7 @@ entry:
   %3 = call float @llvm.fabs.f32(float %2)
   %4 = fcmp olt float %3, %1
   %5 = select i1 %4, float %1, float %3
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   %7 = select i1 %6, float %5, float %0
   ret float %7
 }

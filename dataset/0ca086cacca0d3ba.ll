@@ -6,9 +6,8 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 32767
-  %4 = sub i32 %3, %0
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
 }
 
 ; 12 occurrences:
@@ -29,9 +28,8 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 2047
-  %4 = sub nsw i32 %3, %0
-  %5 = icmp slt i32 %4, 1
-  ret i1 %5
+  %4 = icmp sle i32 %3, %0
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -59,9 +57,8 @@ define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 23
   %3 = and i64 %2, 255
-  %4 = sub nsw i64 %3, %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:

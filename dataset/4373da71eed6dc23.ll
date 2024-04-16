@@ -14,9 +14,9 @@
 define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i8
-  %3 = add i8 %1, %2
+  %3 = add i8 %2, %1
   %4 = zext i8 %3 to i32
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 

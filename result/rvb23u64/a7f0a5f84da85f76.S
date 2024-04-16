@@ -1,7 +1,9 @@
 func00000000000001f8:                   # @func00000000000001f8
-	addi	a1, a1, -161
 	li	a2, 94
 	mul	a1, a1, a2
+	add	a0, a0, a1
+	lui	a1, 1048572
+	addi	a1, a1, 1250
 	addw	a0, a0, a1
 	lui	a1, 2
 	addiw	a1, a1, -982

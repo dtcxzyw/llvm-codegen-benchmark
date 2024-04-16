@@ -25,9 +25,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 1
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, 2
   ret i32 %3
 }
 
@@ -117,9 +117,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw nsw i32 %2, 3
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -8
   ret i32 %3
 }
 
@@ -159,9 +159,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = trunc i64 %1 to i8
-  %3 = shl nuw nsw i8 %2, 1
+  %1 = trunc i64 %0 to i8
+  %2 = shl i8 %1, 1
+  %3 = add i8 %2, 2
   ret i8 %3
 }
 
@@ -186,9 +186,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, -32
-  %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 3
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -256
   ret i32 %3
 }
 
@@ -238,9 +238,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 6
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 6
+  %3 = add i32 %2, -64
   ret i32 %3
 }
 
@@ -253,9 +253,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0) #0 {
 entry:
-  %1 = add nuw i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 16
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 16
+  %3 = add i32 %2, 65536
   ret i32 %3
 }
 
@@ -266,9 +266,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000012(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = trunc i32 %1 to i8
-  %3 = shl nuw i8 %2, 2
+  %1 = trunc i32 %0 to i8
+  %2 = shl i8 %1, 2
+  %3 = add i8 %2, -4
   ret i8 %3
 }
 
@@ -282,9 +282,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000032(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw i32 %2, 14
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 14
+  %3 = add i32 %2, 16384
   ret i32 %3
 }
 
@@ -301,9 +301,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw nsw i32 %2, 1
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, 2
   ret i32 %3
 }
 
@@ -315,9 +315,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  %3 = shl nsw i32 %2, 2
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, 4
   ret i32 %3
 }
 
@@ -330,9 +330,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = trunc i64 %1 to i32
-  %3 = shl nsw i32 %2, 6
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 6
+  %3 = add i32 %2, -64
   ret i32 %3
 }
 

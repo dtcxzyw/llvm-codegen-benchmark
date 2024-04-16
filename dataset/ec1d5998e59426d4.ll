@@ -14,9 +14,8 @@
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 24
-  %2 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 56)
-  %3 = extractvalue { i64, i1 } %2, 0
-  ret i64 %3
+  %2 = mul i64 %1, 56
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -30,9 +29,8 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 736
-  %2 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 24)
-  %3 = extractvalue { i64, i1 } %2, 0
-  ret i64 %3
+  %2 = mul nsw i64 %1, 24
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

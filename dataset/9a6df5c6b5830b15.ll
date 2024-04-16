@@ -19,7 +19,7 @@ entry:
 define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 120
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = shl nsw i32 %0, 3
   %6 = add nsw i32 %5, %4
   %7 = lshr i32 %6, 2

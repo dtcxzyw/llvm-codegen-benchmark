@@ -15,8 +15,8 @@ define i64 @func0000000000000183(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = zext i32 %0 to i64
-  %5 = lshr i64 %4, 6
+  %4 = lshr i32 %0, 6
+  %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %5, %3
   ret i64 %6
 }
@@ -32,8 +32,8 @@ define i64 @func0000000000000193(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = zext nneg i32 %0 to i64
-  %5 = lshr i64 %4, 2
+  %4 = lshr i32 %0, 2
+  %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %5, %3
   ret i64 %6
 }

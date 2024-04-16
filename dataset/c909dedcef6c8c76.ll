@@ -38,7 +38,7 @@ define i32 @func0000000000000002(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -520094722, i32 553648126
   %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, -520094722
+  %5 = or i32 %4, 1627388926
   %6 = select i1 %0, i32 %4, i32 %5
   %7 = or i32 %6, -2147483648
   ret i32 %7
@@ -49,12 +49,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 0, i32 -1073741824
-  %4 = or i32 %1, %3
-  %5 = or i32 %4, -2147483648
-  %6 = select i1 %0, i32 %4, i32 %5
-  %7 = or i32 %6, -1073741824
-  ret i32 %7
+  %3 = or i32 %1, -1073741824
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -63,7 +59,7 @@ entry:
 define i32 @func0000000000000006(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 8
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, 2
   %6 = select i1 %0, i32 %4, i32 %5
   %7 = or i32 %6, 65536

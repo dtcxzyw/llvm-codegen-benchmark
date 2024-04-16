@@ -29,7 +29,7 @@ entry:
   %3 = add nsw i64 %2, -65
   %4 = sub nsw i64 %3, %1
   %5 = and i64 %4, -64
-  %6 = add nsw i64 %1, %5
+  %6 = add nsw i64 %5, %1
   %7 = sub nsw i64 %0, %6
   ret i64 %7
 }

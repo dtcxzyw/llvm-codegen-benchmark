@@ -9,8 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a0, a0
-	seqz	a0, a0
 	andi	a1, a1, -8
+	seqz	a0, a0
 	slli	a0, a0, 3
 	addw	a0, a0, a1
 	ret

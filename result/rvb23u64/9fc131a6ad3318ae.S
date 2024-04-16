@@ -1,5 +1,5 @@
 func0000000000000031:                   # @func0000000000000031
-	addi	a0, a0, -8
+	addi	a0, a0, 24
 	srli	a0, a0, 3
 	addi	a0, a0, 1
 	andi	a0, a0, 3
@@ -34,7 +34,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func00000000000000b1:                   # @func00000000000000b1
-	addi	a0, a0, -8
+	addi	a0, a0, 24
 	srli	a0, a0, 3
 	addi	a0, a0, 1
 	andi	a0, a0, 3

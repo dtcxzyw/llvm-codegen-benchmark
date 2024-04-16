@@ -16,7 +16,7 @@ entry:
   %3 = icmp ugt i64 %2, 1
   %4 = select i1 %1, i1 true, i1 %3
   %5 = zext i1 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
   %5 = zext i1 %4 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

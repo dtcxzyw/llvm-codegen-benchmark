@@ -8,7 +8,7 @@ define i16 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = mul nuw nsw i32 %0, %3
+  %4 = mul nuw nsw i32 %3, %0
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -21,7 +21,7 @@ define i16 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = mul nsw i32 %0, %3
+  %4 = mul nsw i32 %3, %0
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -37,10 +37,9 @@ entry:
 define i8 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = and i16 %2, 255
-  %4 = mul nuw i16 %3, %0
-  %5 = trunc i16 %4 to i8
-  ret i8 %5
+  %3 = mul i16 %2, %0
+  %4 = trunc i16 %3 to i8
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

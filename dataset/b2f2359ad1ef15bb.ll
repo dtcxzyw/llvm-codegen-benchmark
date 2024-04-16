@@ -5,10 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 2147483647)
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp eq i32 %2, 32
-  ret i1 %3
+  %1 = icmp eq i64 %0, 32
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -20,10 +18,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 2147483647)
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ult i32 %2, 128
-  ret i1 %3
+  %1 = icmp ult i64 %0, 128
+  ret i1 %1
 }
 
 ; 6 occurrences:
@@ -37,7 +33,7 @@ entry:
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.umin.i64(i64 %0, i64 246)
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ult i32 %2, 3
   ret i1 %3
 }
@@ -56,10 +52,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 257)
-  %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, 257
-  ret i1 %3
+  %1 = icmp ugt i64 %0, 256
+  ret i1 %1
 }
 
 ; 5 occurrences:
@@ -72,7 +66,7 @@ entry:
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 65536)
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ugt i32 %2, 16384
   ret i1 %3
 }
@@ -82,10 +76,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 65535)
-  %2 = trunc i64 %1 to i16
-  %3 = icmp ne i16 %2, 0
-  ret i1 %3
+  %1 = icmp ne i64 %0, 0
+  ret i1 %1
 }
 
 ; 3 occurrences:
@@ -95,10 +87,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 524288)
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ugt i32 %2, 1
-  ret i1 %3
+  %1 = icmp ugt i64 %0, 1
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

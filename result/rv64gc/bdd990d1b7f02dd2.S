@@ -27,20 +27,20 @@ func0000000000000018:                   # @func0000000000000018
 	addw	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
-	sext.w	a3, a1
+	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a4, a2, -2
-	bge	a4, a3, .LBB4_2
-	addi	a1, a2, -1
+	addiw	a2, a2, -1
+	blt	a1, a2, .LBB4_2
+	mv	a1, a2
 .LBB4_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
-	sext.w	a3, a1
+	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a4, a2, -2
-	bge	a4, a3, .LBB5_2
-	addi	a1, a2, -1
+	addiw	a2, a2, -1
+	blt	a1, a2, .LBB5_2
+	mv	a1, a2
 .LBB5_2:                                # %entry
 	addw	a0, a0, a1
 	ret

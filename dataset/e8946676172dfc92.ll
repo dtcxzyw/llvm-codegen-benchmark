@@ -6,7 +6,7 @@
 define i1 @func0000000000000308(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = and i64 %4, -4
   %6 = add i64 %5, 516
   %7 = icmp ugt i64 %6, %0
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = and i64 %4, -4
   %6 = add i64 %5, 516
   %7 = icmp ugt i64 %6, %0

@@ -8,7 +8,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 299
   %4 = sdiv i32 %3, 400
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 4
   %4 = sdiv i32 %3, 4
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

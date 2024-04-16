@@ -31,7 +31,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub nuw i64 %4, %3
   %6 = udiv exact i64 %5, 72
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -110,7 +110,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub nuw i64 %4, %3
   %6 = udiv exact i64 %5, 24
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -123,7 +123,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = udiv i64 %5, 80
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

@@ -10,7 +10,8 @@ func00000000000000d1:                   # @func00000000000000d1
 	sub	a1, a1, a2
 	srai	a1, a1, 4
 	srai	a0, a0, 5
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da
@@ -32,7 +33,8 @@ func0000000000000091:                   # @func0000000000000091
 	sub	a1, a1, a2
 	srai	a1, a1, 3
 	srai	a0, a0, 63
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000094:                   # @func0000000000000094

@@ -21,11 +21,11 @@ entry:
 define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = icmp ne i64 %1, 0
-  %5 = select i1 %4, i32 %3, i32 0
-  %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr [32 x %struct.FreeListData.2120758], ptr %0, i64 0, i64 %6
-  ret ptr %7
+  %.not = icmp eq i64 %1, 0
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %.not, i64 0, i64 %4
+  %6 = getelementptr [32 x %struct.FreeListData.2120758], ptr %0, i64 0, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

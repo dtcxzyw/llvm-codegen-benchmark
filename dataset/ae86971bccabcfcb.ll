@@ -6,8 +6,8 @@
 define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = shl nuw nsw i64 %3, %0
-  %5 = and i64 %4, 65535
+  %4 = lshr i64 65535, %0
+  %5 = and i64 %3, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

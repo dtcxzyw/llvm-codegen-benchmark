@@ -21,8 +21,8 @@
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
-  %3 = and i64 %2, 1
-  %4 = trunc i64 %3 to i8
+  %3 = trunc i64 %2 to i8
+  %4 = and i8 %3, 1
   ret i8 %4
 }
 

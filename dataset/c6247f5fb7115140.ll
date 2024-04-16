@@ -126,7 +126,7 @@ entry:
   %3 = and i32 %2, 32767
   %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 1)
   %5 = add nsw i32 %4, -16446
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -145,7 +145,7 @@ entry:
   %3 = and i32 %2, 32767
   %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 1)
   %5 = add nsw i32 %4, -16446
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

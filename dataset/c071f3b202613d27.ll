@@ -13,8 +13,8 @@
 define i32 @func0000000000000005(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
-  %2 = add nsw i32 %1, -128
-  %3 = mul nsw i32 %2, -100
+  %2 = mul nsw i32 %1, -100
+  %3 = add nsw i32 %2, 12800
   ret i32 %3
 }
 
@@ -26,8 +26,8 @@ entry:
 define i32 @func0000000000000017(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
-  %2 = add nsw i32 %1, -48
-  %3 = mul nuw nsw i32 %2, 10
+  %2 = mul nuw nsw i32 %1, 10
+  %3 = add nsw i32 %2, -480
   ret i32 %3
 }
 
@@ -37,8 +37,8 @@ entry:
 define i32 @func0000000000000015(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i32
-  %2 = add nsw i32 %1, -292
-  %3 = mul nsw i32 %2, 1741647
+  %2 = mul i32 %1, 1741647
+  %3 = add i32 %2, -508560924
   ret i32 %3
 }
 
@@ -63,8 +63,8 @@ entry:
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
-  %2 = add nuw nsw i64 %1, 10
-  %3 = mul nuw nsw i64 %2, 376
+  %2 = mul nuw nsw i64 %1, 376
+  %3 = add nuw nsw i64 %2, 3760
   ret i64 %3
 }
 
@@ -78,8 +78,8 @@ entry:
 define i32 @func0000000000000007(i8 %0) #0 {
 entry:
   %1 = zext i8 %0 to i32
-  %2 = add nsw i32 %1, -161
-  %3 = mul nuw nsw i32 %2, 94
+  %2 = mul nuw nsw i32 %1, 94
+  %3 = add nsw i32 %2, -15134
   ret i32 %3
 }
 

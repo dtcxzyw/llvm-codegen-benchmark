@@ -8,7 +8,7 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000031:                   # @func0000000000000031
 	srli	a2, a2, 3
-	add	a1, a1, a2
+	or	a1, a1, a2
 	bnez	a1, .LBB1_2
 	li	a0, 28
 .LBB1_2:                                # %entry

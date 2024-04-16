@@ -271,7 +271,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -54, %1
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
   %5 = trunc i64 %4 to i8
   %6 = add i8 %5, 48

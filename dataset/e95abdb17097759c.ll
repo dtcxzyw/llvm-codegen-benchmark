@@ -30,9 +30,8 @@ entry:
   %3 = add nuw nsw i32 %0, %1
   %4 = tail call i32 @llvm.smin.i32(i32 %2, i32 %3)
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
-  %6 = sub nsw i32 %3, %5
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i32 %3, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

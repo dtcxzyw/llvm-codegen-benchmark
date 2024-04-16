@@ -12,7 +12,7 @@ entry:
   %4 = shl nuw nsw i64 %1, 16
   %5 = or disjoint i64 %4, %3
   %6 = lshr i64 %5, 3
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = shl i32 %1, 7
   %5 = or disjoint i32 %4, %3
   %6 = lshr i32 %5, 1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -64,7 +64,7 @@ entry:
   %4 = shl nuw nsw i32 %1, 6
   %5 = or disjoint i32 %4, %3
   %6 = lshr i32 %5, 5
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -79,7 +79,7 @@ entry:
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = lshr i32 %5, 1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

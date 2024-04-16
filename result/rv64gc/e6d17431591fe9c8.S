@@ -9,21 +9,15 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a0, a0, a1
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 28
-	add	a1, a1, a0
-	andi	a1, a1, -16
-	subw	a0, a0, a1
+	lui	a1, 524288
+	addiw	a1, a1, 15
+	and	a0, a0, a1
 	addi	a0, a0, -3
 	seqz	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	subw	a0, a0, a1
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 26
-	add	a1, a1, a0
-	andi	a1, a1, -64
-	subw	a0, a0, a1
+	andi	a0, a0, 63
 	seqz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016

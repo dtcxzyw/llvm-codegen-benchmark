@@ -1,5 +1,5 @@
 func00000000000000f5:                   # @func00000000000000f5
-	sh1add.uw	a0, a2, a0
+	add.uw	a1, a2, a1
 	sh1add	a0, a1, a0
 	ret
 func00000000000000ff:                   # @func00000000000000ff
@@ -23,8 +23,7 @@ func00000000000000ec:                   # @func00000000000000ec
 	add	a0, a0, a1
 	ret
 func00000000000000f0:                   # @func00000000000000f0
-	slli.uw	a2, a2, 4
-	add	a0, a0, a2
+	add.uw	a1, a2, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
@@ -67,10 +66,9 @@ func00000000000000c0:                   # @func00000000000000c0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a2, 255
-	slli	a2, a2, 8
+	add	a0, a0, a2
 	slli	a0, a0, 8
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 func00000000000000b0:                   # @func00000000000000b0
 	slli	a2, a2, 24

@@ -9,7 +9,7 @@
 define i64 @func0000000000000042(i64 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 2047
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = icmp eq i64 %0, 0
   %5 = or i1 %4, %3
   %6 = select i1 %5, i64 0, i64 64

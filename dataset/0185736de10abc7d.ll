@@ -5,9 +5,9 @@
 define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -17,9 +17,9 @@ entry:
 define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -29,9 +29,9 @@ entry:
 define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -41,9 +41,9 @@ entry:
 define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = add i32 %2, 63
   %4 = add i32 %3, %1
   %5 = and i32 %4, -64
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = add i32 %3, %1
   %5 = and i32 %4, -8
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = add nuw i32 %2, 2
   %4 = add nuw i32 %3, %1
   %5 = and i32 %4, 255
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -99,7 +99,7 @@ entry:
   %3 = add nsw i32 %2, 65532
   %4 = add i32 %3, %1
   %5 = and i32 %4, 65535
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -111,7 +111,7 @@ entry:
   %3 = add nuw nsw i32 %2, 65533
   %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 65535
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -123,7 +123,7 @@ entry:
   %3 = add nuw nsw i64 %2, 15
   %4 = add i64 %3, %1
   %5 = and i64 %4, -16
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -136,7 +136,7 @@ entry:
   %3 = add nuw nsw i32 %2, 9
   %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 504
-  %6 = icmp ne i32 %0, %5
+  %6 = icmp ne i32 %5, %0
   ret i1 %6
 }
 

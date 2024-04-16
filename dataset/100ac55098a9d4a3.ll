@@ -163,10 +163,10 @@ entry:
 define i16 @func0000000000000018(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i16 %0, i16 %1
-  %6 = or i16 %5, 257
-  ret i16 %6
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i16 %1, i16 %0
+  %5 = or i16 %4, 257
+  ret i16 %5
 }
 
 ; 1 occurrences:
@@ -175,10 +175,10 @@ entry:
 define i8 @func0000000000000019(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i8 %0, i8 %1
-  %6 = or disjoint i8 %5, 8
-  ret i8 %6
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i8 %1, i8 %0
+  %5 = or disjoint i8 %4, 8
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

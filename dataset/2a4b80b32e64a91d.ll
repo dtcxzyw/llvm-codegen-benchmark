@@ -20,9 +20,9 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
-  %3 = shl i64 %2, 32
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %.mask = and i64 %2, 4294967295
+  %3 = icmp eq i64 %.mask, 0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -7,7 +7,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ugt i64 %3, %0
   %5 = and i64 %1, 4294967295
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

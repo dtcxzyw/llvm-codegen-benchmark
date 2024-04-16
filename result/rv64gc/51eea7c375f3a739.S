@@ -1,12 +1,9 @@
 func0000000000000014:                   # @func0000000000000014
-	andi	a2, a0, 1
-	li	a0, -151
-	bnez	a2, .LBB0_2
-	mv	a0, a1
-.LBB0_2:                                # %entry
-	lui	a1, 1048397
-	addi	a1, a1, 261
-	mul	a0, a0, a1
-	srliw	a0, a0, 20
-	seqz	a0, a0
+	lui	a2, 1048397
+	addi	a2, a2, 261
+	mul	a1, a1, a2
+	srliw	a1, a1, 20
+	seqz	a1, a1
+	not	a0, a0
+	and	a0, a0, a1
 	ret

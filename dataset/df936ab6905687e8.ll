@@ -386,7 +386,7 @@
 define i64 @func000000000000003b(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 164703072086692425)
   %5 = mul nuw nsw i64 %4, 56
   ret i64 %5

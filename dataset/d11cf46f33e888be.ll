@@ -52,7 +52,7 @@ define double @func0000000000000006(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, double 1.000000e+00, double %1
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

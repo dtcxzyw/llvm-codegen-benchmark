@@ -114,7 +114,7 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -16
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
@@ -127,10 +127,9 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = and i64 %1, %3
-  %5 = getelementptr %struct.CacheItem.1662341, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = and i64 %3, %1
+  %5 = getelementptr %struct.CacheItem.1662341, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -141,9 +140,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 10 occurrences:
@@ -189,9 +187,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr inbounds %"class.tsl::detail_robin_hash::bucket_entry.306.1858515", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.tsl::detail_robin_hash::bucket_entry.306.1858515", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -203,9 +200,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr inbounds %"class.tsl::detail_robin_hash::bucket_entry.318.1858516", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.tsl::detail_robin_hash::bucket_entry.318.1858516", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -220,7 +216,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -16
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6

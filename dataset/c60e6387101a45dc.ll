@@ -4051,11 +4051,11 @@
 define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add nsw i64 %2, %1
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 384307168202282325)
-  %5 = select i1 %0, i64 384307168202282325, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %1
+  %4 = icmp eq i64 %2, %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -4463,11 +4463,11 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add i64 %2, %1
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 9223372036854775807)
-  %5 = select i1 %0, i64 9223372036854775807, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %1
+  %4 = icmp eq i64 %2, %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -4477,10 +4477,9 @@ define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
   %3 = add nsw i64 %2, %1
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 2305843009213693951)
-  %5 = select i1 %0, i64 2305843009213693951, i64 %4
-  %6 = icmp ugt i64 %5, 768
-  ret i1 %6
+  %4 = icmp ugt i64 %3, 768
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -4489,11 +4488,10 @@ entry:
 define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add nsw i64 %2, %1
-  %4 = call i64 @llvm.umin.i64(i64 %3, i64 576460752303423487)
-  %5 = select i1 %0, i64 576460752303423487, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %1
+  %4 = icmp ne i64 %2, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 8 occurrences:
@@ -4509,11 +4507,10 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add i64 %2, %1
-  %4 = call i64 @llvm.umin.i64(i64 %3, i64 9223372036854775807)
-  %5 = select i1 %0, i64 9223372036854775807, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %1
+  %4 = icmp ne i64 %2, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

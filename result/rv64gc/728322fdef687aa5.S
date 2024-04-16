@@ -46,14 +46,14 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a2, a1
 	sext.w	a1, a0
 	beqz	a2, .LBB3_2
-	li	a0, 87
-	li	a2, 69
-	bltz	a1, .LBB3_3
+	li	a2, 87
+	li	a0, 69
+	bgez	a1, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a0, 83
-	li	a2, 78
-	bgez	a1, .LBB3_4
+	li	a2, 83
+	li	a0, 78
+	bltz	a1, .LBB3_4
 .LBB3_3:                                # %entry
 	mv	a0, a2
 .LBB3_4:                                # %entry

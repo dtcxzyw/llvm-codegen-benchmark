@@ -38,8 +38,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	zext.h	a1, a1
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	lui	a3, 524288
+	addiw	a3, a3, -4
+	and	a2, a2, a3
 	sltiu	a2, a2, 12
 	addi	a1, a1, -1
 	czero.eqz	a1, a2, a1

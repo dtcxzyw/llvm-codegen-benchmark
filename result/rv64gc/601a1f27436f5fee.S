@@ -6,15 +6,15 @@ func000000000000004a:                   # @func000000000000004a
 	and	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
+	sext.w	a1, a1
 	andi	a2, a2, 255
-	subw	a1, a1, a2
-	sraiw	a1, a1, 31
+	slt	a1, a1, a2
+	neg	a1, a1
 	or	a0, a0, a1
 	ret
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a2, a2
-	sub	a1, a1, a2
-	sgtz	a1, a1
+	slt	a1, a2, a1
 	neg	a1, a1
 	and	a0, a0, a1
 	ret

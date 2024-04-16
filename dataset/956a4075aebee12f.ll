@@ -112,9 +112,8 @@ define i32 @func0000000000000007(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 1
   %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i32 8, i32 4
-  %4 = sub nuw nsw i32 64, %3
-  ret i32 %4
+  %3 = select i1 %2, i32 56, i32 60
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

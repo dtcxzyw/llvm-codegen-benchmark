@@ -391,7 +391,7 @@
 define ptr @func000000000000001d(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 56
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 164703072086692425)
   %6 = getelementptr inbounds %"struct.re2::PrefilterTree::Entry.1554674", ptr %0, i64 %5
   ret ptr %6

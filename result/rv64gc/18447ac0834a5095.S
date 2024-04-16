@@ -3,7 +3,7 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a3, a3, -1536
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a3, 10
@@ -33,7 +33,7 @@ func0000000000000014:                   # @func0000000000000014
 	li	a3, 60
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a3, 1048555

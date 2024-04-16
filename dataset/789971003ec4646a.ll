@@ -8,7 +8,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = xor i64 %0, -1
   %2 = tail call i64 @llvm.ctpop.i64(i64 %1), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 

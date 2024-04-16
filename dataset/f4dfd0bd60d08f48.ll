@@ -168,7 +168,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %0, -1
+  %2 = add i64 %0, 9223372036854775807
   %3 = mul i64 %1, 10
   %4 = and i64 %3, %2
   %5 = shl i64 %4, 1

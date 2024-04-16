@@ -8,9 +8,9 @@
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 10)
-  %5 = zext nneg i32 %4 to i64
+  %3 = tail call i32 @llvm.umin.i32(i32 %0, i32 10)
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %2, i64 0, i64 %4
   ret i64 %5
 }
 

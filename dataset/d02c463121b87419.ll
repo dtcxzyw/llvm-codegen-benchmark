@@ -54,7 +54,7 @@ define i128 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %2, 1
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   %5 = zext i64 %4 to i128
   ret i128 %5
 }

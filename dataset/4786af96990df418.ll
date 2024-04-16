@@ -11,10 +11,10 @@
 define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = icmp slt i32 %1, 0
-  %6 = select i1 %5, ptr %0, ptr %4
-  ret ptr %6
+  %4 = icmp slt i32 %1, 0
+  %.idx = select i1 %4, i64 0, i64 %3
+  %5 = getelementptr i8, ptr %0, i64 %.idx
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

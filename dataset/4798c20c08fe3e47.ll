@@ -11,7 +11,7 @@ entry:
   %4 = lshr i32 %1, 11
   %5 = or disjoint i32 %4, %3
   %6 = mul i32 %5, 380141568
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

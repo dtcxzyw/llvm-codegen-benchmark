@@ -40,16 +40,16 @@ func000000000000002a:                   # @func000000000000002a
 	czero.eqz	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addiw	a0, a0, 1
-	sltiu	a0, a0, 51
+	addiw	a0, a0, -50
+	sltiu	a0, a0, -51
 	li	a1, 15
-	czero.nez	a0, a1, a0
+	czero.eqz	a0, a1, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a0, a0, -5
-	sltiu	a0, a0, 4
+	addi	a0, a0, -9
+	sltiu	a0, a0, -4
 	li	a1, -4
-	czero.eqz	a0, a1, a0
+	czero.nez	a0, a1, a0
 	addi	a0, a0, 9
 	ret
 func0000000000000011:                   # @func0000000000000011

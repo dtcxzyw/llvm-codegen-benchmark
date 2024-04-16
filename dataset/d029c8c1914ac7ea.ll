@@ -12,7 +12,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
   %4 = and i64 %3, -8608480567731124088
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = xor i64 %5, %0
   ret i64 %6
 }

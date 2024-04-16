@@ -32,10 +32,10 @@ entry:
 define i32 @func0000000000000047(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 4000000000, %2
-  %4 = icmp sle i64 %3, %1
-  %5 = add i32 %0, 294967296
-  %6 = select i1 %4, i32 %5, i32 %0
-  ret i32 %6
+  %.not = icmp sgt i64 %3, %1
+  %4 = add i32 %0, 294967296
+  %5 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

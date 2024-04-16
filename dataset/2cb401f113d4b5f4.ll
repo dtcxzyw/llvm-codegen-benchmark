@@ -7,10 +7,9 @@
 define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 92
-  ret i1 %5
+  %3 = sub i64 %0, %2
+  %4 = icmp ugt i64 %3, -93
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -19,10 +18,9 @@ entry:
 define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 4611686018427387903
-  ret i1 %5
+  %3 = sub i64 %0, %2
+  %4 = icmp ult i64 %3, -4611686018427387904
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -36,10 +34,9 @@ entry:
 define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %3 = sub i64 %0, %2
+  %4 = icmp slt i64 %3, -1
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -50,10 +47,9 @@ entry:
 define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = xor i64 %0, -1
-  %4 = add nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 1
-  ret i1 %5
+  %3 = sub i64 %0, %2
+  %4 = icmp eq i64 %3, -2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

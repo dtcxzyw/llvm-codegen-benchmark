@@ -29,11 +29,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -4
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, ptr null, ptr %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 20
-  ret ptr %5
+  %2 = icmp ult i64 %1, 4
+  %3 = select i1 %2, ptr null, ptr %0
+  %4 = getelementptr inbounds i8, ptr %3, i64 20
+  ret ptr %4
 }
 
 ; 2 occurrences:

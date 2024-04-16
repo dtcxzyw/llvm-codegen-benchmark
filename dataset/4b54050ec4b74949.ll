@@ -6,7 +6,7 @@ define i8 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 34359738360
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
-  %3 = trunc i64 %2 to i8
+  %3 = trunc nuw nsw i64 %2 to i8
   ret i8 %3
 }
 
@@ -22,7 +22,7 @@ define i8 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -61497
   %2 = call i32 @llvm.cttz.i32(i32 %1, i1 true), !range !1
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   ret i8 %3
 }
 

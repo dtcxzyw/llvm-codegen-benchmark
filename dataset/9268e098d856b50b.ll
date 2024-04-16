@@ -8,7 +8,7 @@ entry:
   %1 = add i32 %0, 150
   %2 = sdiv i32 %1, 75
   %3 = srem i32 %2, 60
-  %4 = trunc i32 %3 to i8
+  %4 = trunc nsw i32 %3 to i8
   ret i8 %4
 }
 

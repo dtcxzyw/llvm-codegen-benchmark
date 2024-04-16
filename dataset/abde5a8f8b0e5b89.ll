@@ -15,7 +15,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = shl nsw i32 -1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = shl nuw i8 1, %3
   %5 = xor i8 %4, -1
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = and i32 %2, 28
   %4 = shl nuw nsw i32 1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

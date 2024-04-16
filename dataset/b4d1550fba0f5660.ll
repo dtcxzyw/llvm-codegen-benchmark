@@ -20,9 +20,9 @@
 define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds %"class.openvdb::v11_0::math::Vec3.236.1673474", ptr %0, i64 %4
+  %3 = or i64 %2, 1
+  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.236.1673474", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
 
@@ -32,9 +32,9 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr %class.QCPCurveData.1927869, ptr %0, i64 %4
+  %3 = or i64 %2, 1
+  %4 = getelementptr %class.QCPCurveData.1927869, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -48
   ret ptr %5
 }
 

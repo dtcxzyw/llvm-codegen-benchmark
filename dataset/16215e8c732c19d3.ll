@@ -10,7 +10,7 @@
 define i1 @func000000000000011c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   %5 = icmp eq ptr %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -153,7 +153,7 @@ entry:
 define i1 @func0000000000000049(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i32, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -166,7 +166,7 @@ entry:
 define i1 @func0000000000000149(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %class.QString.2275469, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

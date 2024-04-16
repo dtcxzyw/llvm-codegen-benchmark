@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000084(i64 %0, i8 %1) #0 {
 entry:
-  %2 = add nuw i64 %0, 1
-  %3 = icmp eq i8 %1, 62
-  %4 = select i1 %3, i64 %0, i64 %2
+  %2 = icmp ne i8 %1, 62
+  %3 = zext i1 %2 to i64
+  %4 = add nuw i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -16,9 +16,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000058(i64 %0, i8 %1) #0 {
 entry:
-  %2 = add nsw i64 %0, -1
-  %3 = icmp slt i8 %1, 0
-  %4 = select i1 %3, i64 %0, i64 %2
+  %2 = icmp sgt i8 %1, -1
+  %3 = sext i1 %2 to i64
+  %4 = add nsw i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -29,9 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000044(i32 %0, i16 %1) #0 {
 entry:
-  %2 = add nsw i32 %0, -1
-  %3 = icmp eq i16 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
+  %2 = icmp ne i16 %1, 0
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %3, %0
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
@@ -53,7 +53,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %0, -729
+  %2 = add i32 %0, 64807
   %3 = icmp ult i32 %1, 14348907
   %4 = select i1 %3, i32 %0, i32 %2
   %5 = trunc i32 %4 to i16

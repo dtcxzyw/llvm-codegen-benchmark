@@ -19,9 +19,11 @@ func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a1, 151
-	srli	a1, a1, 32
-	snez	a1, a1
+	li	a2, -1
+	slli	a2, a2, 32
+	addi	a3, a2, 151
+	add	a1, a1, a3
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

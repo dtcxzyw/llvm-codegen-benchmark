@@ -31,8 +31,8 @@
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 164703072086692425
-  %3 = select i1 %2, i64 %0, i64 329406144173384850
-  %4 = mul nuw i64 %3, 56
+  %3 = mul nuw i64 %0, 56
+  %4 = select i1 %2, i64 %3, i64 -16
   ret i64 %4
 }
 
@@ -42,8 +42,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 1
-  %4 = mul nsw i32 %3, 15
+  %3 = mul nsw i32 %0, 15
+  %4 = select i1 %2, i32 %3, i32 15
   ret i32 %4
 }
 
@@ -62,8 +62,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 8
-  %4 = mul i32 %3, 3
+  %3 = mul i32 %0, 3
+  %4 = select i1 %2, i32 %3, i32 24
   ret i32 %4
 }
 
@@ -74,8 +74,8 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
-  %3 = select i1 %2, i64 %0, i64 0
-  %4 = mul i64 %3, 164
+  %3 = mul i64 %0, 164
+  %4 = select i1 %2, i64 %3, i64 0
   ret i64 %4
 }
 
@@ -84,10 +84,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 0
-  %4 = mul nuw nsw i32 %3, 12
-  ret i32 %4
+  %.not = icmp eq i32 %1, 0
+  %2 = mul nuw nsw i32 %0, 12
+  %3 = select i1 %.not, i32 0, i32 %2
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -96,8 +96,8 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 2301
-  %3 = select i1 %2, i32 %0, i32 -274000
-  %4 = mul i32 %3, 100
+  %3 = mul i32 %0, 100
+  %4 = select i1 %2, i32 %3, i32 -27400000
   ret i32 %4
 }
 
@@ -107,8 +107,8 @@ entry:
 define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
-  %3 = select i1 %2, i32 %0, i32 -1
-  %4 = mul nsw i32 %3, 3389
+  %3 = mul nsw i32 %0, 3389
+  %4 = select i1 %2, i32 %3, i32 -3389
   ret i32 %4
 }
 
@@ -118,8 +118,8 @@ entry:
 define i32 @func0000000000000013(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 21
-  %3 = select i1 %2, i32 %0, i32 127
-  %4 = mul nuw nsw i32 %3, 28
+  %3 = mul nuw nsw i32 %0, 28
+  %4 = select i1 %2, i32 %3, i32 3556
   ret i32 %4
 }
 

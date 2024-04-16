@@ -8,7 +8,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -1
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = and i32 %5, %0
   ret i32 %6
 }

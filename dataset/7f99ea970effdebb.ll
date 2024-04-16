@@ -12,7 +12,7 @@ entry:
   %3 = icmp eq i32 %2, 16
   %4 = zext i1 %3 to i32
   %5 = shl i32 %1, %4
-  %6 = mul nsw i32 %0, %5
+  %6 = mul nsw i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7
 }

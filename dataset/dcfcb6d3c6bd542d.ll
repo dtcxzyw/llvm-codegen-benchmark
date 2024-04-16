@@ -11,8 +11,9 @@ entry:
   %2 = udiv i64 %1, 36524
   %3 = add nsw i64 %2, %1
   %4 = sub nsw i64 %3, %0
-  %5 = udiv i64 %4, 365
-  %6 = mul i64 %5, -365
+  %.fr = freeze i64 %4
+  %5 = urem i64 %.fr, 365
+  %6 = sub i64 %5, %.fr
   ret i64 %6
 }
 
@@ -32,8 +33,9 @@ entry:
   %2 = udiv i32 %1, 36524
   %3 = add i32 %2, %1
   %4 = sub i32 %3, %0
-  %5 = udiv i32 %4, 365
-  %6 = mul i32 %5, -365
+  %.fr = freeze i32 %4
+  %5 = urem i32 %.fr, 365
+  %6 = sub i32 %5, %.fr
   ret i32 %6
 }
 

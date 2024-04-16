@@ -34,10 +34,10 @@ entry:
 define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 3
-  %4 = add nsw i64 %2, -1
-  %5 = sub nsw i64 %4, %3
-  %6 = getelementptr inbounds i8, ptr %0, i64 %1
-  %7 = getelementptr inbounds ptr, ptr %6, i64 %5
+  %4 = xor i64 %3, -1
+  %5 = getelementptr inbounds i8, ptr %0, i64 %1
+  %6 = getelementptr ptr, ptr %5, i64 %4
+  %7 = getelementptr ptr, ptr %6, i64 %2
   ret ptr %7
 }
 

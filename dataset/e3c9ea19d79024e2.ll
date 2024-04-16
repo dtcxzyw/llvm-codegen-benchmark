@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 8
+  %3 = and i64 %2, 4294967288
+  %4 = icmp eq i64 %3, 0
   %5 = getelementptr i8, ptr %1, i64 -128
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6

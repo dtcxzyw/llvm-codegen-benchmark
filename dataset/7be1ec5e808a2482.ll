@@ -5,7 +5,7 @@
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65280
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = and i64 %1, 4278190080
   %6 = add nuw nsw i64 %4, %5
   %7 = shl nuw i64 %6, 32

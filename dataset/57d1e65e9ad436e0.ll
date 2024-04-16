@@ -9,8 +9,8 @@ define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = add nsw i64 %0, -1
-  %5 = getelementptr inbounds %"class.folly::Promise.1643169", ptr %3, i64 %4
+  %4 = getelementptr %"class.folly::Promise.1643169", ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 
@@ -23,8 +23,8 @@ define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 456
-  %4 = add nuw nsw i64 %0, 1
-  %5 = getelementptr inbounds i64, ptr %3, i64 %4
+  %4 = getelementptr i64, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -37,8 +37,8 @@ define ptr @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 1281920
-  %4 = add nsw i64 %0, 1
-  %5 = getelementptr inbounds float, ptr %3, i64 %4
+  %4 = getelementptr float, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -49,8 +49,8 @@ define ptr @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 1281920
-  %4 = add nuw nsw i64 %0, 1
-  %5 = getelementptr inbounds float, ptr %3, i64 %4
+  %4 = getelementptr float, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -62,8 +62,8 @@ define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 16
-  %4 = add i64 %0, -32
-  %5 = getelementptr inbounds i8, ptr %3, i64 %4
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
 

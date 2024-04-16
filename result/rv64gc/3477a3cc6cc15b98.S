@@ -1,10 +1,10 @@
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 48
-	bltz	a2, .LBB0_2
-	mv	a0, a1
+	bgez	a2, .LBB0_2
+	mv	a1, a0
 .LBB0_2:                                # %entry
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 28
+	sraiw	a0, a1, 31
+	srliw	a0, a0, 28
 	add	a0, a0, a1
 	sraiw	a0, a0, 4
 	ret

@@ -7,7 +7,7 @@ entry:
   %2 = sub nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = sub i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

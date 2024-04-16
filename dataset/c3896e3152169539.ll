@@ -6,10 +6,10 @@
 define i1 @func0000000000000022(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = and i64 %4, 65534
   %6 = icmp eq i64 %5, 4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -21,11 +21,11 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %1, %3
-  %5 = and i32 %4, 16711679
-  %6 = icmp eq i32 %5, 0
-  %7 = or i1 %6, %0
-  ret i1 %7
+  %.masked = and i32 %1, 16711679
+  %4 = or i32 %.masked, %3
+  %5 = icmp eq i32 %4, 0
+  %6 = or i1 %5, %0
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -35,10 +35,10 @@ entry:
 define i1 @func0000000000000062(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = and i32 %4, 65534
   %6 = icmp eq i32 %5, 65534
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

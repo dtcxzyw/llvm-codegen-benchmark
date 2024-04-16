@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	divuw	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 5
 	addiw	a1, a1, 519
 	sltu	a0, a1, a0

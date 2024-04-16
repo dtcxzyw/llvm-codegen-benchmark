@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 268
-	add.uw	a0, a0, a1
+	li	a1, 1091
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret

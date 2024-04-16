@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %1, i64 %3, i64 %2
   %5 = sdiv i64 %4, 400
   %6 = mul nsw i64 %5, 146097
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = select i1 %1, i64 %3, i64 %2
   %5 = sdiv i64 %4, 146097
   %6 = mul nsw i64 %5, 400
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

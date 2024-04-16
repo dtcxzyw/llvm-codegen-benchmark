@@ -22,9 +22,8 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.ring_info.2018057, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.ring_info.2018057, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:

@@ -7,7 +7,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = tail call i64 @llvm.umin.i64(i64 %1, i64 %3)
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 %0)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

@@ -67,9 +67,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %0, %1
-  %3 = trunc i64 %2 to i8
-  %4 = icmp slt i8 %3, 0
+  %2 = shl i64 128, %1
+  %3 = and i64 %2, %0
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

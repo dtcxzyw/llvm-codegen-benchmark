@@ -14,11 +14,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000038(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 3
-  %2 = icmp ugt i64 %1, 4611686018427387903
-  %3 = ashr exact i64 %0, 1
-  %4 = select i1 %2, i64 -1, i64 %3
-  ret i64 %4
+  %1 = ashr exact i64 %0, 1
+  %.inv = icmp sgt i64 %0, -1
+  %2 = select i1 %.inv, i64 %1, i64 -1
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

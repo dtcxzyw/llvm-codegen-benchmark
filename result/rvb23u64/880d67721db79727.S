@@ -6,9 +6,7 @@ func0000000000000018:                   # @func0000000000000018
 	xori	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addi	a0, a0, -8
-	andi	a0, a0, 8
-	seqz	a0, a0
+	bexti	a0, a0, 3
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0

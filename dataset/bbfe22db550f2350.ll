@@ -10,7 +10,7 @@ entry:
   %4 = shl nuw i64 1, %3
   %5 = xor i64 %1, -1
   %6 = and i64 %4, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -49,7 +49,7 @@ entry:
   %4 = shl nuw i32 2, %3
   %5 = xor i32 %1, -1
   %6 = and i32 %4, %5
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

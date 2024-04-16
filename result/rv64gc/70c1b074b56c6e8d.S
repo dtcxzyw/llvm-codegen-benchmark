@@ -1,7 +1,5 @@
 func0000000000000022:                   # @func0000000000000022
-	beqz	a2, .LBB0_2
-	mv	a1, a2
-.LBB0_2:                                # %entry
+	or	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -27,13 +25,11 @@ func00000000000000d4:                   # @func00000000000000d4
 	or	a0, a0, a1
 	ret
 func00000000000000c2:                   # @func00000000000000c2
-	sext.w	a3, a2
-	li	a4, 128
-	blt	a3, a4, .LBB3_2
-	mv	a1, a2
-.LBB3_2:                                # %entry
 	sext.w	a1, a1
+	sext.w	a2, a2
+	slti	a2, a2, 128
 	seqz	a1, a1
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030

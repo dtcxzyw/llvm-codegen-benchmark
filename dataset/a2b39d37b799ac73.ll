@@ -50,9 +50,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1431655765
-  %3 = and i32 %0, 1431655765
-  %4 = add nuw i32 %3, %2
+  %2 = and i32 %1, 357913941
+  %3 = and i32 %0, 357913941
+  %4 = add nuw nsw i32 %3, %2
   %5 = and i32 %4, 858993459
   ret i32 %5
 }
@@ -108,8 +108,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 858993459
-  %3 = and i32 %0, 858993459
+  %2 = and i32 %1, 53687091
+  %3 = and i32 %0, 53687091
   %4 = add nuw nsw i32 %3, %2
   %5 = and i32 %4, 117901063
   ret i32 %5

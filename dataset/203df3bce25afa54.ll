@@ -19,9 +19,8 @@
 define i64 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
-  %2 = sdiv i64 %1, 2
-  %3 = sub nsw i64 0, %2
-  ret i64 %3
+  %.neg = sdiv i64 %1, -2
+  ret i64 %.neg
 }
 
 ; 2 occurrences:
@@ -31,9 +30,9 @@ entry:
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
-  %2 = sdiv i32 %1, 2
-  %3 = sub nsw i32 1, %2
-  ret i32 %3
+  %.neg = sdiv i32 %1, -2
+  %2 = add nsw i32 %.neg, 1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

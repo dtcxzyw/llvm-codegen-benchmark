@@ -18,12 +18,12 @@ func00000000000000b1:                   # @func00000000000000b1
 	seqz	a0, a0
 	ret
 func00000000000000a1:                   # @func00000000000000a1
-	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	ori	a1, a1, 2
-	slli	a1, a1, 32
+	sext.w	a2, a1
+	li	a1, 2
+	beqz	a2, .LBB2_2
+	li	a1, -1
 	srli	a1, a1, 32
+.LBB2_2:                                # %entry
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

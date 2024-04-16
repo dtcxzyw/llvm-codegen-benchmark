@@ -21,10 +21,12 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -16
-  %2 = call noundef i64 @llvm.umin.i64(i64 %1, i64 4)
-  %3 = sub nuw nsw i64 4, %2
-  ret i64 %3
+  %2 = call i64 @llvm.usub.sat.i64(i64 4, i64 %1)
+  ret i64 %2
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.usub.sat.i64(i64, i64) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

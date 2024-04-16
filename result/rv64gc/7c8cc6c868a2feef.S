@@ -1,7 +1,5 @@
 func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	or	a1, a1, a2
 	sext.w	a1, a1
 	sltiu	a1, a1, 256
 	sltiu	a0, a0, 256

@@ -7,7 +7,7 @@ define i32 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 16
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %0, %3
+  %4 = add i16 %3, %0
   %5 = sext i16 %4 to i32
   ret i32 %5
 }
@@ -23,7 +23,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 86400
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -41,7 +41,7 @@ define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

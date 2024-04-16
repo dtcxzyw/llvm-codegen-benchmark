@@ -16,7 +16,7 @@
 define i1 @func0000000000000035(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i1 %0 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = zext i16 %2 to i64
   %6 = icmp ule i64 %4, %5
   %7 = select i1 %0, i1 %6, i1 false
@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000025(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i1 %0 to i64
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = zext i16 %2 to i64
   %6 = icmp ule i64 %4, %5
   %7 = select i1 %0, i1 %6, i1 false

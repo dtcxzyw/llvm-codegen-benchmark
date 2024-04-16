@@ -22,9 +22,9 @@ declare double @llvm.fabs.f64(double) #1
 define float @func000000000000001b(float %0) #0 {
 entry:
   %1 = tail call noundef float @llvm.fabs.f32(float %0)
-  %2 = fcmp ule float %1, 0xC3ABC16D60000000
-  %3 = select i1 %2, float 0xC3ABC16D60000000, float %1
-  ret float %3
+  %.inv = fcmp ogt float %1, 0xC3ABC16D60000000
+  %2 = select i1 %.inv, float %1, float 0xC3ABC16D60000000
+  ret float %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

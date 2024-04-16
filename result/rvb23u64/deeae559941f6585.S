@@ -5,12 +5,12 @@ func0000000000000021:                   # @func0000000000000021
 	czero.eqz	a0, a1, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
-	li	a1, 2
-	bext	a0, a1, a0
+	sext.w	a0, a0
+	addi	a0, a0, -1
 	seqz	a0, a0
 	lui	a1, 786432
-	addiw	a1, a1, 1025
-	xor	a0, a0, a1
+	addiw	a1, a1, 1024
+	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a1, -2

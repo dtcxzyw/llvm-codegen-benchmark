@@ -33,7 +33,7 @@ define i64 @func0000000000000010(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = mul nsw i64 %3, 33
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = sext i8 %1 to i64
   %7 = add i64 %5, %6
   ret i64 %7

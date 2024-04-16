@@ -203,7 +203,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 3
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

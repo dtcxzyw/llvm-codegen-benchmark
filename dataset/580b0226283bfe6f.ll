@@ -13,11 +13,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = and i64 %1, 1
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 0, i64 -2233785415175766016
-  ret i64 %4
+  %1 = and i64 %0, 72057594037927936
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i64 0, i64 -2233785415175766016
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -30,11 +29,10 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.bswap.i32(i32 %0)
-  %2 = and i32 %1, 6144
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i16 256, i16 0
-  ret i16 %4
+  %1 = and i32 %0, 1572864
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i16 256, i16 0
+  ret i16 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

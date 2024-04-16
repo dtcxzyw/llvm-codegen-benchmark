@@ -6,10 +6,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = select i1 %0, i32 %2, i32 0
-  %4 = trunc i32 %3 to i16
-  ret i16 %4
+  %2 = select i1 %0, i16 %1, i16 0
+  ret i16 %2
 }
 
 attributes #0 = { nounwind }

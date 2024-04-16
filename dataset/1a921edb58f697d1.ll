@@ -37,7 +37,7 @@ entry:
   %3 = and i64 %2, 16777215
   %4 = and i64 %0, 16777216
   %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = and i64 %2, 16777184
   %4 = and i64 %0, 1610612736
   %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

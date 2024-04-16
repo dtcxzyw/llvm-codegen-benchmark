@@ -886,8 +886,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000110(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 15
-  %2 = icmp ugt i8 %1, 13
+  %1 = and i8 %0, 14
+  %2 = icmp eq i8 %1, 14
   %3 = icmp ugt i8 %0, -33
   %4 = or i1 %3, %2
   ret i1 %4
@@ -965,11 +965,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000010c(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 15
-  %2 = icmp ugt i8 %1, 3
-  %3 = icmp slt i8 %0, 0
-  %4 = or i1 %3, %2
-  ret i1 %4
+  %1 = and i8 %0, -116
+  %2 = icmp ne i8 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:

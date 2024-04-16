@@ -67,7 +67,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000031:                   # @func0000000000000031
 	not	a0, a0
 	andi	a0, a0, 1
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000026:                   # @func0000000000000026
@@ -92,9 +93,6 @@ func0000000000000034:                   # @func0000000000000034
 	sltiu	a0, a0, 29
 	ret
 func0000000000000021:                   # @func0000000000000021
-	andi	a0, a0, 1
-	addi	a0, a0, -1
-	andi	a0, a0, 2
-	add	a0, a0, a1
-	seqz	a0, a0
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret

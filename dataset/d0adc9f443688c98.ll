@@ -64,7 +64,7 @@ define i1 @func0000000000000004(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp ult i32 %3, 41
   ret i1 %4
 }
@@ -78,11 +78,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, -1
-  ret i1 %4
+  %1 = icmp ugt ptr %0, inttoptr (i64 -4294967297 to ptr)
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -93,7 +90,7 @@ define i1 @func0000000000000008(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp ugt i32 %3, 23
   ret i1 %4
 }

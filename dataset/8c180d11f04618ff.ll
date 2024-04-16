@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = xor i64 %2, -1
+  %2 = xor i8 %1, -1
+  %3 = sext i8 %2 to i64
   %4 = mul nuw i64 %0, 10
   %5 = icmp ugt i64 %4, %3
   ret i1 %5

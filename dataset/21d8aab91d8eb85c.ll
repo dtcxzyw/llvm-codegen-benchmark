@@ -178,7 +178,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -358,7 +358,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 

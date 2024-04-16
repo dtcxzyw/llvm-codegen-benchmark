@@ -103,9 +103,9 @@ entry:
 define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -4294967296
-  %2 = icmp ult i64 %0, 2147483648
-  %3 = select i1 %2, i64 %0, i64 %1
-  %4 = icmp slt i64 %3, 0
+  %2 = icmp ugt i64 %0, 2147483647
+  %3 = icmp slt i64 %1, 0
+  %4 = and i1 %2, %3
   ret i1 %4
 }
 

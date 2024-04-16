@@ -17,9 +17,8 @@
 define i32 @func0000000000000003(ptr %0) #0 {
 entry:
   %1 = icmp eq ptr %0, null
-  %2 = select i1 %1, i32 1717960833, i32 1717960897
-  %3 = or disjoint i32 %2, 1024
-  ret i32 %3
+  %2 = select i1 %1, i32 1717961857, i32 1717961921
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -28,9 +27,8 @@ entry:
 define i32 @func0000000000000002(ptr %0) #0 {
 entry:
   %1 = icmp eq ptr %0, null
-  %2 = select i1 %1, i32 -520093697, i32 1
-  %3 = or i32 %2, -2147483648
-  ret i32 %3
+  %2 = select i1 %1, i32 -520093697, i32 -2147483647
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

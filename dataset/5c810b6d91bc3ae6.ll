@@ -9,7 +9,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 1)
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

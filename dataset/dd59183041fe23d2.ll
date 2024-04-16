@@ -19,7 +19,7 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 1000000
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = sdiv i64 %3, 3600
   ret i64 %4
 }

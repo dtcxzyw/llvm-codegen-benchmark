@@ -206,11 +206,11 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000034(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp ult double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
-  %6 = select i1 %5, double %0, double %4
-  ret double %6
+  %.inv = fcmp oge double %1, %2
+  %3 = select i1 %.inv, double %2, double %1
+  %4 = fcmp ogt double %3, %0
+  %5 = select i1 %4, double %0, double %3
+  ret double %5
 }
 
 ; 2 occurrences:

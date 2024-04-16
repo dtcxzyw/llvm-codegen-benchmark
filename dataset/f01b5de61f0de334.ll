@@ -11,7 +11,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fmul float %3, %1
   %5 = fcmp ole float %4, 1.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = fdiv double 1.000000e+07, %2
   %4 = fmul double %3, %1
   %5 = fcmp olt double %4, 1.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = fmul float %3, %1
   %5 = fcmp ogt float %4, 0.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = fdiv double 0x401921FB54442D18, %2
   %4 = fmul double %3, %1
   %5 = fcmp oeq double %4, 0.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -149,7 +149,7 @@
 define i64 @func0000000000000010(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %0, %2
+  %3 = mul nuw i128 %2, %0
   %4 = lshr i128 %3, 64
   %5 = xor i128 %4, %3
   %6 = trunc i128 %5 to i64

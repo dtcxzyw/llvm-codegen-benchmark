@@ -9,8 +9,8 @@
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
-  %3 = select i1 %0, float 1.000000e+00, float -1.000000e+00
-  %4 = fmul float %3, %2
+  %3 = fneg float %2
+  %4 = select i1 %0, float %2, float %3
   ret float %4
 }
 

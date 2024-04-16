@@ -30,7 +30,7 @@ define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 1.000000e+00
   %3 = select i1 %2, double %1, double 1.000000e+00
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 
@@ -54,7 +54,7 @@ define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
   %3 = select i1 %2, float %1, float 1.000000e+00
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 
@@ -77,10 +77,10 @@ entry:
 ; Function Attrs: nounwind
 define double @func000000000000000d(double %0, double %1) #0 {
 entry:
-  %2 = fcmp uge double %1, 4.000000e+00
-  %3 = select i1 %2, double %1, double 4.000000e+00
-  %4 = fmul double %3, %0
-  ret double %4
+  %.inv = fcmp olt double %1, 4.000000e+00
+  %2 = select i1 %.inv, double 4.000000e+00, double %1
+  %3 = fmul double %2, %0
+  ret double %3
 }
 
 ; 4 occurrences:
@@ -105,7 +105,7 @@ define double @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

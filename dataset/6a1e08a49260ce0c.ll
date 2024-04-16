@@ -13,8 +13,8 @@
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, 2147483616
+  %4 = and i32 %3, 2147483616
+  %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -26,8 +26,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = and i64 %4, 65535
+  %4 = and i32 %3, 65535
+  %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds %struct.ma_job.2187044, ptr %0, i64 %5
   ret ptr %6
 }

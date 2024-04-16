@@ -54,7 +54,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %1, 60
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

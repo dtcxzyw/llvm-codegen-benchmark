@@ -10,11 +10,10 @@
 define ptr @func0000000000000036(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  %5 = getelementptr inbounds i8, ptr %3, i64 8
-  %6 = icmp slt i32 %0, 0
-  %7 = select i1 %6, ptr %5, ptr %4
-  ret ptr %7
+  %4 = icmp slt i32 %0, 0
+  %.v = select i1 %4, i64 8, i64 4
+  %5 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -23,11 +22,10 @@ entry:
 define ptr @func0000000000000071(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [1 x %struct.WhereLevel.2129430], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  %5 = getelementptr inbounds i8, ptr %3, i64 40
-  %6 = icmp eq i32 %0, 0
-  %7 = select i1 %6, ptr %4, ptr %5
-  ret ptr %7
+  %4 = icmp eq i32 %0, 0
+  %.v = select i1 %4, i64 16, i64 40
+  %5 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -36,11 +34,10 @@ entry:
 define ptr @func0000000000000076(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [64 x i8], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 -16
-  %5 = getelementptr inbounds i8, ptr %3, i64 -32
-  %6 = icmp slt i64 %0, 17
-  %7 = select i1 %6, ptr %4, ptr %5
-  ret ptr %7
+  %4 = icmp slt i64 %0, 17
+  %.v = select i1 %4, i64 -16, i64 -32
+  %5 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

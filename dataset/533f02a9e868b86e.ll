@@ -21,7 +21,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = shl nsw i32 %2, 3
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -34,9 +34,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i8 %0, i8 %1) #0 {
 entry:
-  %2 = xor i8 %1, 1
-  %3 = shl nuw nsw i8 %2, 3
-  %4 = or disjoint i8 %0, %3
+  %2 = shl i8 %1, 3
+  %3 = xor i8 %2, 8
+  %4 = or disjoint i8 %3, %0
   ret i8 %4
 }
 
@@ -46,8 +46,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
-  %2 = xor i8 %1, 1
-  %3 = shl nuw i8 %2, 7
+  %2 = xor i8 %1, -1
+  %3 = shl i8 %2, 7
   %4 = or i8 %3, %0
   ret i8 %4
 }
@@ -60,7 +60,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = shl i32 %2, 24
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -69,9 +69,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 136
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = or i32 %0, %3
+  %2 = shl i32 %1, 8
+  %3 = xor i32 %2, 34816
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -90,7 +90,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = shl nsw i32 %2, 30
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -99,8 +99,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, 16384
-  %3 = shl nuw i64 %2, 8
+  %2 = shl i64 %1, 8
+  %3 = xor i64 %2, 4194304
   %4 = or disjoint i64 %3, %0
   ret i64 %4
 }

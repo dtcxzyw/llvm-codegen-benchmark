@@ -55,8 +55,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000067:                   # @func0000000000000067
 	sext.w	a2, a2
-	bnez	a2, .LBB7_2
-	mv	a0, a1
+	beqz	a2, .LBB7_2
+	mv	a1, a0
 .LBB7_2:                                # %entry
-	slliw	a0, a0, 1
+	slliw	a0, a1, 1
 	ret

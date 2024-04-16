@@ -5,8 +5,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = udiv i32 %2, 28
-  %4 = mul i32 %3, -28
+  %.fr = freeze i32 %2
+  %3 = urem i32 %.fr, 28
+  %4 = sub i32 %3, %.fr
   %5 = add i32 %0, %1
   %6 = add i32 %5, -4
   %7 = add i32 %6, %4

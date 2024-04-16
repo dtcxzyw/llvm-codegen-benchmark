@@ -12,7 +12,7 @@ entry:
   %3 = udiv i64 %2, 36
   %4 = add nuw nsw i64 %3, 1
   %5 = and i64 %4, 1152921504606846972
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

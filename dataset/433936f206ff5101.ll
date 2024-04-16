@@ -6,9 +6,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 %1, i32 -274000
-  %3 = mul i32 %2, 100
-  %4 = add i32 %3, -273150
+  %2 = mul i32 %1, 100
+  %3 = add i32 %2, -273150
+  %4 = select i1 %0, i32 %3, i32 -27673150
   ret i32 %4
 }
 

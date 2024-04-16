@@ -8,9 +8,9 @@ define i64 @func0000000000000065(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = sub i64 %0, %1
-  %6 = sub nsw i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -20,9 +20,9 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -3
   %4 = zext i32 %3 to i64
-  %5 = sub i64 %0, %1
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 ; 36 occurrences:
@@ -67,9 +67,9 @@ define i64 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = sub i64 %0, %1
-  %6 = sub nsw i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

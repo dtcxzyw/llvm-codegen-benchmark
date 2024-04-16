@@ -171,10 +171,9 @@ define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = add i64 %4, -1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = add i64 %3, -1
+  %5 = icmp eq i64 %4, %2
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -353,10 +352,9 @@ define i1 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = add i64 %4, -1
-  %6 = icmp ugt i64 %5, 1
-  ret i1 %6
+  %4 = sub i64 %2, %3
+  %5 = icmp ult i64 %4, -2
+  ret i1 %5
 }
 
 ; 7 occurrences:
@@ -373,9 +371,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add nsw i64 %4, 1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, -1
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -387,9 +384,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add i64 %4, 22
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %5 = icmp ne i64 %4, -22
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -401,8 +397,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add nsw i64 %4, 1
-  %6 = icmp ugt i64 %5, 32
+  %5 = add i64 %4, -32
+  %6 = icmp ult i64 %5, -33
   ret i1 %6
 }
 
@@ -414,9 +410,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add nuw i64 %4, 1
-  %6 = icmp eq i64 %5, -1
-  ret i1 %6
+  %5 = icmp eq i64 %4, -2
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

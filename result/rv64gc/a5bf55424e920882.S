@@ -29,8 +29,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 1
-	subw	a1, a1, a2
-	sraiw	a1, a1, 31
+	sext.w	a2, a2
+	sext.w	a1, a1
+	slt	a1, a1, a2
+	neg	a1, a1
 	ori	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1

@@ -7,9 +7,9 @@
 define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = icmp ne ptr %2, null
-  %4 = select i1 %3, ptr %2, ptr %0
-  ret ptr %4
+  %.not = icmp eq ptr %2, null
+  %3 = select i1 %.not, ptr %0, ptr %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

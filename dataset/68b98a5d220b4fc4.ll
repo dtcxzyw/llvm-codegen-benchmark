@@ -52,7 +52,7 @@
 define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483646
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
@@ -75,7 +75,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -109,7 +109,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

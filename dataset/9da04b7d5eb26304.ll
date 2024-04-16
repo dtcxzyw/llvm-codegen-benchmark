@@ -49,8 +49,9 @@ define i1 @func0000000000000014(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %0, 47
   %4 = select i1 %3, i8 0, i8 %0
-  %5 = select i1 %1, i8 0, i8 %2
-  %6 = icmp ult i8 %4, %5
+  %5 = icmp ult i8 %4, %2
+  %not. = xor i1 %1, true
+  %6 = select i1 %not., i1 %5, i1 false
   ret i1 %6
 }
 

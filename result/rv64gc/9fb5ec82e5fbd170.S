@@ -98,9 +98,10 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
-	li	a1, 128
-	bgeu	a0, a1, .LBB7_2
+	li	a2, 128
 	li	a1, 64
+	bltu	a0, a2, .LBB7_2
+	li	a1, 128
 .LBB7_2:                                # %entry
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -172,14 +173,14 @@ func0000000000000016:                   # @func0000000000000016
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a0
 	lui	a2, 14
-	li	a0, 3
-	beq	a1, a2, .LBB14_3
+	li	a0, 1
+	bne	a1, a2, .LBB14_3
 	lui	a2, 4
 	beq	a1, a2, .LBB14_4
 .LBB14_2:                               # %entry
 	ret
 .LBB14_3:                               # %entry
-	li	a0, 1
+	li	a0, 3
 	lui	a2, 4
 	bne	a1, a2, .LBB14_2
 .LBB14_4:                               # %entry

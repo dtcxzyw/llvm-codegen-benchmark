@@ -21,7 +21,7 @@ entry:
   %2 = freeze i32 %1
   %3 = lshr exact i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %0, %4
+  %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = freeze i8 %1
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i64
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = freeze i8 %1
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 

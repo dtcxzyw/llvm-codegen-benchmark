@@ -8,7 +8,7 @@ define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 2, i32 %2
   %4 = freeze i32 %3
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000004(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 0, i16 %2
   %4 = freeze i16 %3
-  %5 = icmp ult i16 %0, %4
+  %5 = icmp ugt i16 %4, %0
   ret i1 %5
 }
 
@@ -35,7 +35,7 @@ define i1 @func0000000000000008(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 0, i16 %2
   %4 = freeze i16 %3
-  %5 = icmp ugt i16 %0, %4
+  %5 = icmp ult i16 %4, %0
   ret i1 %5
 }
 

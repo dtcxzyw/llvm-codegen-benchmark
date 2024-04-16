@@ -35,7 +35,7 @@
 define i8 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
-  %3 = trunc i16 %2 to i8
+  %3 = trunc nuw i16 %2 to i8
   %4 = and i8 %3, 3
   %5 = select i1 %0, i8 2, i8 %4
   ret i8 %5

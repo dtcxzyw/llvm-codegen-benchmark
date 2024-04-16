@@ -22,12 +22,12 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %1, -8193
-  %5 = or disjoint i64 %4, %3
-  %6 = and i64 %5, -245761
-  %7 = or disjoint i64 %6, %0
-  ret i64 %7
+  %3 = and i64 %1, -253953
+  %4 = and i32 %2, 2147237887
+  %.masked = zext nneg i32 %4 to i64
+  %5 = or i64 %3, %.masked
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
 }
 
 ; 3 occurrences:
@@ -38,11 +38,10 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, -4294836225
-  %5 = or disjoint i64 %4, %3
-  %6 = and i64 %5, -140733193388033
-  %7 = or disjoint i64 %0, %6
-  ret i64 %7
+  %4 = and i64 %1, -140737488224257
+  %5 = or i64 %4, %3
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

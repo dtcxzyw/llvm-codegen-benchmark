@@ -11,8 +11,8 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64
   %5 = trunc i128 %0 to i64
-  %6 = add i64 %5, %4
-  %7 = icmp ult i64 %6, %5
+  %6 = xor i64 %5, -1
+  %7 = icmp ult i64 %6, %4
   ret i1 %7
 }
 
@@ -24,8 +24,8 @@ entry:
   %3 = mul nuw nsw i128 %1, %2
   %4 = trunc i128 %3 to i64
   %5 = trunc i128 %0 to i64
-  %6 = add i64 %5, %4
-  %7 = icmp ult i64 %6, %5
+  %6 = xor i64 %5, -1
+  %7 = icmp ult i64 %6, %4
   ret i1 %7
 }
 

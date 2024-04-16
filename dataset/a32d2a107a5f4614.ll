@@ -108,9 +108,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0) #0 {
 entry:
-  %1 = fmul double %0, 5.000000e-01
-  %2 = fneg double %1
-  ret double %2
+  %1 = fmul double %0, -5.000000e-01
+  ret double %1
 }
 
 attributes #0 = { nounwind }

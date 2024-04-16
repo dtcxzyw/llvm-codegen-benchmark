@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000e:                   # @func000000000000000e
 	fcvt.d.w	fa5, a0
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -21,5 +21,5 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000010:                   # @func0000000000000010
 	fcvt.d.l	fa5, a0
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	ret

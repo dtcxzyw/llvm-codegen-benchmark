@@ -4,12 +4,11 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000058a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp sgt i32 %4, 1
-  %6 = icmp ugt i32 %0, 1
-  %7 = and i1 %5, %6
-  ret i1 %7
+  %3 = sub i32 %2, %1
+  %4 = icmp slt i32 %3, -2
+  %5 = icmp ugt i32 %0, 1
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 ; 1 occurrences:

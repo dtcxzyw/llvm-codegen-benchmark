@@ -4,7 +4,6 @@ func0000000000000098:                   # @func0000000000000098
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
-	mulw	a0, a0, a1
-	srli	a0, a0, 61
-	snez	a0, a0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret

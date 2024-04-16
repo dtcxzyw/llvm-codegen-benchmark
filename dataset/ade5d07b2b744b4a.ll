@@ -6,7 +6,7 @@
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -29,7 +29,7 @@ entry:
 define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

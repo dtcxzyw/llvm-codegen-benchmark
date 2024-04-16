@@ -5,10 +5,9 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = lshr i64 %3, 1
-  %5 = shl i64 %4, 4
-  ret i64 %5
+  %3 = shl i64 %2, 1
+  %4 = and i64 %3, -16
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -18,10 +17,9 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = lshr i64 %3, 1
-  %5 = shl nsw i64 %4, 2
-  ret i64 %5
+  %3 = ashr exact i64 %2, 1
+  %4 = and i64 %3, -4
+  ret i64 %4
 }
 
 ; 3 occurrences:
@@ -32,10 +30,9 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = lshr i64 %3, 1
-  %5 = shl nuw nsw i64 %4, 2
-  ret i64 %5
+  %3 = ashr exact i64 %2, 1
+  %4 = and i64 %3, -4
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -44,10 +41,9 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = lshr i64 %3, 1
-  %5 = shl nuw i64 %4, 2
-  ret i64 %5
+  %3 = ashr exact i64 %2, 1
+  %4 = and i64 %3, -4
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

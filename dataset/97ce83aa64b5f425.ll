@@ -6,9 +6,8 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
-  %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:

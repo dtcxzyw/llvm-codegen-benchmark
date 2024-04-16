@@ -49,9 +49,9 @@ entry:
 define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
-  %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %0, -1
-  %5 = sub nsw i32 %4, %3
+  %3 = xor i16 %2, -1
+  %4 = sext i16 %3 to i32
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

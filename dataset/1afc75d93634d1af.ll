@@ -23,7 +23,7 @@ define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -1048576
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

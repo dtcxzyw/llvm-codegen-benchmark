@@ -175,7 +175,7 @@
 define i32 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 48, i32 12288
   %5 = or i32 %4, %2

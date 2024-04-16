@@ -1,8 +1,7 @@
 func0000000000000180:                   # @func0000000000000180
-	slti	a2, a2, 0
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	bltz	a2, .LBB0_2
+	neg	a1, a1
+.LBB0_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
@@ -16,8 +15,9 @@ func0000000000000040:                   # @func0000000000000040
 	addw	a0, a0, a1
 	ret
 func0000000000000280:                   # @func0000000000000280
-	sraiw	a2, a2, 31
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	sext.w	a2, a2
+	bgez	a2, .LBB2_2
+	neg	a1, a1
+.LBB2_2:                                # %entry
 	addw	a0, a0, a1
 	ret

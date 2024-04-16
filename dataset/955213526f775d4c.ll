@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 393216
-  %4 = and i32 %1, 393216
-  %5 = icmp eq i32 %4, %3
+  %3 = xor i32 %1, %2
+  %4 = and i32 %3, 393216
+  %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -22,9 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 31
-  %4 = and i64 %1, 31
-  %5 = icmp ne i64 %4, %3
+  %3 = xor i64 %1, %2
+  %4 = and i64 %3, 31
+  %5 = icmp ne i64 %4, 0
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

@@ -19,7 +19,7 @@ entry:
   %2 = xor i64 %0, %1
   %3 = mul i64 %2, -3808689974395783757
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

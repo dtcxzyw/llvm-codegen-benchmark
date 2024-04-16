@@ -12,7 +12,7 @@ define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp eq i64 %1, 27
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
@@ -48,7 +48,7 @@ define i1 @func0000000000000022(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 64
   %4 = icmp eq i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp eq i32 %1, 0
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
@@ -118,7 +118,7 @@ define i1 @func0000000000000190(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp ugt i32 %1, 3012
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
@@ -145,9 +145,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000110(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 15
+  %3 = and i8 %2, 14
   %4 = icmp ugt i8 %3, 9
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp ugt i8 %1, 9
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
@@ -160,7 +160,7 @@ define i1 @func0000000000000188(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp ult i32 %1, 30000
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7

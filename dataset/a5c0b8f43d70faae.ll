@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -64
-  %3 = sub i8 %0, %2
-  %4 = and i8 %3, 63
-  %5 = zext nneg i8 %4 to i64
-  ret i64 %5
+  %2 = sub i8 %0, %1
+  %3 = and i8 %2, 63
+  %4 = zext nneg i8 %3 to i64
+  ret i64 %4
 }
 
 ; 2 occurrences:

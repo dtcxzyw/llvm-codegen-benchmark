@@ -14,7 +14,7 @@
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
@@ -71,7 +71,7 @@ entry:
 define i48 @func0000000000000002(i48 %0) #0 {
 entry:
   %1 = lshr i48 %0, 32
-  %2 = trunc i48 %1 to i16
+  %2 = trunc nuw i48 %1 to i16
   %3 = add i16 %2, 1
   %4 = zext i16 %3 to i48
   %5 = shl nuw i48 %4, 32
@@ -98,7 +98,7 @@ entry:
 define i16 @func0000000000000007(i16 %0) #0 {
 entry:
   %1 = lshr i16 %0, 8
-  %2 = trunc i16 %1 to i8
+  %2 = trunc nuw i16 %1 to i8
   %3 = add i8 %2, 1
   %4 = zext nneg i8 %3 to i16
   %5 = shl nuw nsw i16 %4, 8

@@ -12,20 +12,15 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fmul.s	fa5, fa1, fa2
-	fadd.s	fa5, fa0, fa5
-	fmv.x.w	a0, fa5
-	lui	a1, 522240
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	fadd.s	fa5, fa5, fa0
+	fclass.s	a0, fa5
+	andi	a0, a0, 126
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa0, fa5
-	fmv.x.d	a0, fa5
-	li	a1, 2047
-	slli	a1, a1, 52
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	seqz	a0, a0
+	fadd.d	fa5, fa5, fa0
+	fclass.d	a0, fa5
+	andi	a0, a0, 897
+	snez	a0, a0
 	ret

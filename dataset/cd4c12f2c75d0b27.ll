@@ -17,8 +17,8 @@
 define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 15
-  %3 = select i1 %2, i32 16, i32 %0
-  %4 = icmp slt i32 %3, %0
+  %3 = icmp sgt i32 %0, 16
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 

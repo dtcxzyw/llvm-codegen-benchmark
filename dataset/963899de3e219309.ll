@@ -16,8 +16,8 @@ define i64 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 4
   %2 = and i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, 2
+  %3 = or disjoint i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

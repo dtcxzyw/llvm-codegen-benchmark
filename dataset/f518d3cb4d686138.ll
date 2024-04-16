@@ -5,11 +5,11 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 19
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = ashr i32 %0, 19
-  %6 = sub i32 %5, %4
-  %7 = sub nsw i32 64, %6
-  ret i32 %7
+  %.neg = sub i32 %4, %5
+  %6 = add i32 %.neg, 64
+  ret i32 %6
 }
 
 ; 167 occurrences:
@@ -184,11 +184,11 @@ entry:
 define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 19
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = ashr i32 %0, 19
-  %6 = sub nsw i32 %5, %4
-  %7 = sub nsw i32 64, %6
-  ret i32 %7
+  %.neg = sub i32 %4, %5
+  %6 = add i32 %.neg, 64
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

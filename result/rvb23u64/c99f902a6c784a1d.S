@@ -1,20 +1,12 @@
 func00000000000000c6:                   # @func00000000000000c6
-	li	a3, 31
-	slli	a3, a3, 10
-	and	a2, a2, a3
 	or	a0, a0, a1
-	or	a0, a0, a2
-	sext.h	a0, a0
-	slti	a0, a0, 0
+	bexti	a0, a0, 15
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	andi	a2, a2, -2048
-	bclri	a2, a2, 11
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	not	a0, a0
+	bexti	a0, a0, 31
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a2, a2, 128

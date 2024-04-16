@@ -10,7 +10,7 @@
 define i1 @func0000000000000166(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 -9223372036854775808, %0
-  %3 = icmp slt i64 %1, %2
+  %3 = icmp sgt i64 %2, %1
   %4 = icmp slt i64 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
-  %3 = icmp ult i32 %1, %2
+  %3 = icmp ugt i32 %2, %1
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

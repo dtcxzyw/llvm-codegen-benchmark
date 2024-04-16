@@ -555,7 +555,7 @@
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %1, i64 %2)
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
 }
@@ -575,7 +575,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.umax.i64(i64 %1, i64 %2)
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = shl i64 %4, 3
   ret i64 %5
 }

@@ -24,7 +24,7 @@ func000000000000000a:                   # @func000000000000000a
 	srliw	a2, a2, 29
 	add	a1, a1, a2
 	sraiw	a1, a1, 3
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
@@ -33,7 +33,7 @@ func0000000000000004:                   # @func0000000000000004
 	srliw	a2, a2, 29
 	add	a1, a1, a2
 	sraiw	a1, a1, 3
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sltiu	a0, a0, 4
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -56,7 +56,7 @@ func0000000000000001:                   # @func0000000000000001
 	srliw	a2, a2, 29
 	add	a1, a1, a2
 	sraiw	a1, a1, 3
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	seqz	a0, a0
 	ret
 .LCPI7_0:
@@ -72,7 +72,7 @@ func0000000000000018:                   # @func0000000000000018
 	ld	a3, %lo(.LCPI7_1)(a3)
 	srai	a1, a1, 2
 	add	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	sltu	a0, a3, a0
 	ret
 .LCPI8_0:

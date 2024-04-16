@@ -56,15 +56,17 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 56
-	bltz	a2, .LBB4_3
-	li	a1, 6
-	bgeu	a0, a1, .LBB4_4
+	bgez	a2, .LBB4_3
+	li	a0, 6
+	bgeu	a1, a0, .LBB4_4
 .LBB4_2:                                # %entry
+	mv	a0, a1
 	ret
 .LBB4_3:                                # %entry
-	mv	a0, a1
-	li	a1, 6
-	bltu	a0, a1, .LBB4_2
-.LBB4_4:                                # %entry
+	mv	a1, a0
 	li	a0, 6
+	bltu	a1, a0, .LBB4_2
+.LBB4_4:                                # %entry
+	li	a1, 6
+	mv	a0, a1
 	ret

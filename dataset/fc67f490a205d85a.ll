@@ -10,7 +10,7 @@
 define i1 @func00000000000000aa(i8 %0, i32 %1) #0 {
 entry:
   %2 = sext i8 %0 to i32
-  %3 = icmp sgt i32 %1, %2
+  %3 = icmp slt i32 %2, %1
   %4 = icmp sgt i8 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -28,7 +28,7 @@ entry:
 define i1 @func00000000000000ac(i8 %0, i32 %1) #0 {
 entry:
   %2 = sext i8 %0 to i32
-  %3 = icmp sgt i32 %1, %2
+  %3 = icmp slt i32 %2, %1
   %4 = icmp ne i8 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -41,7 +41,7 @@ entry:
 define i1 @func000000000000009a(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp uge i64 %1, %2
+  %3 = icmp ule i64 %2, %1
   %4 = icmp sgt i32 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -55,7 +55,7 @@ entry:
 define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = icmp ne i32 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
@@ -68,7 +68,7 @@ entry:
 define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = icmp sgt i32 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -80,7 +80,7 @@ entry:
 define i1 @func000000000000001a(i16 %0, i32 %1) #0 {
 entry:
   %2 = sext i16 %0 to i32
-  %3 = icmp eq i32 %1, %2
+  %3 = icmp eq i32 %2, %1
   %4 = icmp sgt i16 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -92,7 +92,7 @@ entry:
 define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = icmp slt i32 %0, 1073741823
   %5 = and i1 %4, %3
   ret i1 %5
@@ -105,7 +105,7 @@ entry:
 define i1 @func00000000000000ba(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp sge i64 %1, %2
+  %3 = icmp sle i64 %2, %1
   %4 = icmp sgt i32 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5

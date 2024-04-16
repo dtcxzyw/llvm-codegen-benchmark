@@ -1,29 +1,5 @@
 func000000000000004a:                   # @func000000000000004a
-	srli	a1, a0, 40
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a1, a1, a2
-	srli	a3, a0, 56
-	or	a1, a1, a3
-	srli	a3, a0, 24
-	lui	a4, 4080
-	and	a3, a3, a4
-	srli	a5, a0, 8
-	srliw	a5, a5, 24
-	slli	a5, a5, 24
-	or	a3, a3, a5
-	or	a1, a1, a3
-	and	a4, a4, a0
-	slli	a4, a4, 24
-	srliw	a3, a0, 24
-	slli	a3, a3, 32
-	or	a3, a3, a4
-	and	a2, a2, a0
-	slli	a2, a2, 40
 	slli	a0, a0, 56
-	or	a0, a0, a2
-	or	a0, a0, a3
-	or	a0, a0, a1
 	li	a1, 1
 	slli	a1, a1, 62
 	add	a0, a0, a1
@@ -31,32 +7,9 @@ func000000000000004a:                   # @func000000000000004a
 	xori	a0, a0, 1
 	ret
 func0000000000000041:                   # @func0000000000000041
-	srli	a1, a0, 40
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a1, a1, a2
-	srli	a3, a0, 56
-	or	a1, a1, a3
-	srli	a3, a0, 24
-	lui	a4, 4080
-	and	a3, a3, a4
-	srli	a5, a0, 8
-	srliw	a5, a5, 24
-	slli	a5, a5, 24
-	or	a3, a3, a5
-	or	a1, a1, a3
-	and	a4, a4, a0
-	slli	a4, a4, 24
-	srliw	a3, a0, 24
-	slli	a3, a3, 32
-	or	a3, a3, a4
-	and	a2, a2, a0
-	slli	a2, a2, 40
-	slli	a0, a0, 56
-	or	a0, a0, a2
-	or	a0, a0, a3
-	or	a0, a0, a1
-	addi	a0, a0, -1
+	li	a1, 1
+	slli	a1, a1, 56
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
@@ -86,41 +39,22 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 48
 	srli	a0, a0, 56
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, -9
 	lui	a1, 16
-	addiw	a1, a1, -1
-	and	a0, a0, a1
-	sltiu	a0, a0, 17
-	xori	a0, a0, 1
+	addiw	a2, a1, -1
+	and	a0, a0, a2
+	addiw	a1, a1, -17
+	sltu	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	srli	a1, a0, 8
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a1, a1, a2
-	srliw	a3, a0, 24
-	or	a1, a1, a3
-	and	a2, a2, a0
-	slli	a2, a2, 8
-	slliw	a0, a0, 24
-	or	a0, a0, a2
-	or	a0, a0, a1
+	sext.w	a0, a0
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
-	slli	a1, a0, 8
-	slli	a0, a0, 48
-	srli	a0, a0, 56
-	or	a0, a0, a1
-	li	a1, 5
-	slli	a1, a1, 11
-	add	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	and	a0, a0, a1
-	sltiu	a0, a0, 1024
-	xori	a0, a0, 1
+	andi	a0, a0, 252
+	addi	a0, a0, -216
+	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	srli	a1, a0, 8
@@ -138,10 +72,6 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a1, a0, 8
-	slli	a0, a0, 48
-	srli	a0, a0, 56
-	or	a0, a0, a1
 	lui	a1, 16
 	addiw	a1, a1, -1
 	and	a0, a0, a1

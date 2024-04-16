@@ -35,9 +35,9 @@ define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, 1
-  %4 = and i8 %0, -2
+  %4 = and i8 %0, -6
   %5 = or disjoint i8 %4, %3
-  %6 = or i8 %5, 4
+  %6 = or disjoint i8 %5, 4
   ret i8 %6
 }
 

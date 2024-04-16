@@ -260,7 +260,7 @@ define i1 @func00000000000000f8(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 10
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = icmp ugt i64 %5, 2147483647
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7

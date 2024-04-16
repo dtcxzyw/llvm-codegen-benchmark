@@ -17,7 +17,7 @@ define i32 @func0000000000000030(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -32,7 +32,7 @@ define i32 @func0000000000000005(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -70,7 +70,7 @@ define i8 @func0000000000000031(i8 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   ret i8 %4
 }
 
@@ -84,7 +84,7 @@ define i32 @func0000000000000004(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 

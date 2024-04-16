@@ -20,7 +20,7 @@ func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
 	slli	a1, a1, 33
 	srli	a1, a1, 49
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
 	lui	a2, 3

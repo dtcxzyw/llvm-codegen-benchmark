@@ -15,8 +15,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.smin.i64(i64 %1, i64 2147483647)
-  %3 = tail call i64 @llvm.smin.i64(i64 %0, i64 %2)
+  %2 = call i64 @llvm.smin.i64(i64 %1, i64 %0)
+  %3 = call i64 @llvm.smin.i64(i64 %2, i64 2147483647)
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }

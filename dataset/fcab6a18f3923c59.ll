@@ -20,7 +20,7 @@ define i32 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 513
   %3 = select i1 %2, i64 2, i64 58
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = trunc i64 %4 to i32
   %6 = and i32 %5, 255
   ret i32 %6

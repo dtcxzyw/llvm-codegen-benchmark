@@ -12,7 +12,7 @@ define i1 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call { i32, i1 } @llvm.smul.with.overflow.i32(i32 %1, i32 %2)
   %4 = extractvalue { i32, i1 } %3, 1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

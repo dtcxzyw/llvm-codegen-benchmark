@@ -15,8 +15,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
-  %2 = sext i8 %1 to i64
-  %3 = sext i8 %0 to i64
+  %2 = zext i8 %1 to i64
+  %3 = zext i8 %0 to i64
   %4 = sub nsw i64 %3, %2
   %5 = and i64 %4, 3
   ret i64 %5

@@ -75,9 +75,9 @@ entry:
 define i8 @func000000000000000c(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 47, i8 0
-  %3 = icmp ne i8 %0, 0
-  %4 = select i1 %3, i8 %0, i8 %2
-  ret i8 %4
+  %.not = icmp eq i8 %0, 0
+  %3 = select i1 %.not, i8 %2, i8 %0
+  ret i8 %3
 }
 
 ; 2 occurrences:

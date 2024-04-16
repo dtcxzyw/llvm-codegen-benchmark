@@ -35,7 +35,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
 	li	a1, 1
-	bne	a0, a1, .LBB5_2
-	fmv.d	fa0, fa1
+	beq	a0, a1, .LBB5_2
+	fmv.d	fa1, fa0
 .LBB5_2:                                # %entry
+	fmv.d	fa0, fa1
 	ret

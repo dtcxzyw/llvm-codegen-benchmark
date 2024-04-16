@@ -6,8 +6,8 @@
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.umin.i32(i32 %0, i32 511)
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 480
+  %2 = and i32 %1, 480
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -19,10 +19,9 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.umin.i16(i16 %0, i16 -2)
+  %1 = and i16 %0, -2
   %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 65534
-  ret i32 %3
+  ret i32 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

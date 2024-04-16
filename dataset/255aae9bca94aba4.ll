@@ -6,10 +6,9 @@
 define i64 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = add i64 %4, %0
-  %6 = sub nsw i64 0, %5
-  ret i64 %6
+  %.neg = mul i64 %3, -4294967296
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 1 occurrences:
@@ -18,10 +17,9 @@ entry:
 define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = add i64 %4, %0
-  %6 = sub i64 0, %5
-  ret i64 %6
+  %.neg = mul i64 %3, -4294967296
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 2 occurrences:
@@ -31,10 +29,9 @@ entry:
 define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = shl nsw i64 %3, 9
-  %5 = add i64 %0, %4
-  %6 = sub i64 0, %5
-  ret i64 %6
+  %.neg = mul i64 %3, -512
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 8 occurrences:
@@ -50,10 +47,9 @@ entry:
 define i64 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = shl nsw i64 %3, 6
-  %5 = add i64 %0, %4
-  %6 = sub nsw i64 0, %5
-  ret i64 %6
+  %.neg = mul i64 %3, -64
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 1 occurrences:
@@ -62,10 +58,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = add i64 %4, %0
-  %6 = sub i64 0, %5
-  ret i64 %6
+  %.neg = mul i64 %3, -4294967296
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 attributes #0 = { nounwind }

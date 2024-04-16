@@ -13,7 +13,7 @@ entry:
   %3 = fdiv float %1, %2
   %4 = fmul float %3, %3
   %5 = fsub float 0x3FF0000100000000, %4
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

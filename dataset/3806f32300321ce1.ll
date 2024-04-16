@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 2
+  %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -23,9 +23,9 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 47
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp ult i32 %3, -13
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -40,7 +40,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 47
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i32 %3, -5
   %5 = or i1 %4, %0
   ret i1 %5
@@ -53,7 +53,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 47
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp ne i32 %3, -13
   %5 = or i1 %4, %0
   ret i1 %5

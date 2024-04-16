@@ -7,10 +7,10 @@
 define i32 @func0000000000000000(i32 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = add i64 %1, -48
+  %4 = add i64 %1, 4294967248
   %5 = add i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = and i32 %0, %6
+  %7 = and i32 %6, %0
   ret i32 %7
 }
 

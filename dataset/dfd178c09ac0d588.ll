@@ -19,7 +19,7 @@ define i8 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = udiv i16 %1, 1260
-  %3 = trunc i16 %2 to i8
+  %3 = trunc nuw nsw i16 %2 to i8
   %4 = or disjoint i8 %3, 48
   ret i8 %4
 }

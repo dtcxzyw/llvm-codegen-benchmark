@@ -21,11 +21,11 @@ func000000000000006a:                   # @func000000000000006a
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 255
-	andi	a2, a1, 255
-	addi	a2, a2, -47
-	czero.eqz	a1, a1, a2
 	andi	a1, a1, 255
+	addi	a2, a1, -47
+	snez	a2, a2
 	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a2, 1024
@@ -96,13 +96,9 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
-	sext.w	a2, a1
-	sltiu	a2, a2, 5
-	czero.eqz	a1, a1, a2
-	li	a3, 5
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	sext.w	a1, a1
+	li	a2, 5
+	minu	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

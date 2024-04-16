@@ -74,8 +74,8 @@
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = select i1 %0, i32 9, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 9, i64 %3
   ret i64 %4
 }
 
@@ -490,8 +490,8 @@ entry:
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = select i1 %0, i32 63, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 63, i64 %3
   ret i64 %4
 }
 
@@ -555,8 +555,8 @@ entry:
 define i32 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -16
-  %3 = select i1 %0, i8 0, i8 %2
-  %4 = zext i8 %3 to i32
+  %3 = zext i8 %2 to i32
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -567,8 +567,8 @@ entry:
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = select i1 %0, i32 -1, i32 %2
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 4294967295, i64 %3
   ret i64 %4
 }
 
@@ -600,8 +600,8 @@ entry:
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1075
-  %3 = select i1 %0, i32 -1074, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 4294966222, i64 %3
   ret i64 %4
 }
 
@@ -612,8 +612,8 @@ entry:
 define i64 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = select i1 %0, i32 5, i32 %2
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 5, i64 %3
   ret i64 %4
 }
 
@@ -623,8 +623,8 @@ entry:
 define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = select i1 %0, i32 8, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 8, i64 %3
   ret i64 %4
 }
 
@@ -642,8 +642,8 @@ entry:
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -6
-  %3 = select i1 %0, i32 0, i32 %2
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }
 

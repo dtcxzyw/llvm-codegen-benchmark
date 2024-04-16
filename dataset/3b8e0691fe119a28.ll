@@ -246,8 +246,8 @@ entry:
 define i1 @func0000000000000081(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = and i32 %2, 2139095040
-  %4 = icmp ugt i32 %3, 16777215
+  %3 = and i32 %2, 2130706432
+  %4 = icmp ne i32 %3, 0
   %5 = icmp eq i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

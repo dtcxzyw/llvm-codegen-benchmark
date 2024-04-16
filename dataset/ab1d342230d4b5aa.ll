@@ -6,7 +6,7 @@ define i1 @func0000000000000c24(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = add nuw i64 %0, 1
   %7 = icmp ult i64 %6, %5
   ret i1 %7
@@ -20,7 +20,7 @@ define i1 @func0000000000000c61(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = add nuw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7
@@ -33,7 +33,7 @@ define i1 @func0000000000000124(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 61
   %4 = sext i1 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = add nuw i64 %0, 1
   %7 = icmp ult i64 %6, %5
   ret i1 %7
@@ -46,7 +46,7 @@ define i1 @func0000000000000121(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add nuw i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -102,7 +102,7 @@ define i1 @func0000000000000161(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = add nuw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7
@@ -115,7 +115,7 @@ define i1 @func0000000000000131(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -128,7 +128,7 @@ define i1 @func0000000000000c01(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7
@@ -143,7 +143,7 @@ define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add i32 %0, 1
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -159,7 +159,7 @@ define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nuw i32 %0, 1
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -177,7 +177,7 @@ define i1 @func0000000000000176(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp slt i32 %6, %5
   ret i1 %7
@@ -190,7 +190,7 @@ define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nuw i32 %0, 1
   %7 = icmp ne i32 %6, %5
   ret i1 %7
@@ -203,7 +203,7 @@ define i1 @func0000000000000148(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add i32 %0, 1
   %7 = icmp ugt i32 %6, %5
   ret i1 %7

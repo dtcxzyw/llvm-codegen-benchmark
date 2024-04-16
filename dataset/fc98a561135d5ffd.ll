@@ -249,9 +249,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -264,9 +263,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 16
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 4
-  %6 = icmp ult i64 %5, 4
-  ret i1 %6
+  %5 = icmp ult i64 %4, 64
+  ret i1 %5
 }
 
 ; 16 occurrences:
@@ -292,9 +290,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr i64 %4, 5
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 31
+  ret i1 %5
 }
 
 ; 8 occurrences:
@@ -312,9 +309,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr i64 %4, 2
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 3
+  ret i1 %5
 }
 
 ; 16 occurrences:
@@ -340,9 +336,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 32
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 5
-  %6 = icmp ugt i64 %5, 23
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 736
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -353,9 +348,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -366,9 +360,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 1
-  %6 = icmp slt i64 %5, 1
-  ret i1 %6
+  %5 = icmp slt i64 %4, 2
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -379,9 +372,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 24
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 1
-  %6 = icmp ugt i64 %5, 40
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 80
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

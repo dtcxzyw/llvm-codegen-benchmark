@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 65535
+  %2 = and i32 %1, 65535
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds %struct.ma_job.2187044, ptr %0, i64 %3, i32 1
   ret ptr %4
 }

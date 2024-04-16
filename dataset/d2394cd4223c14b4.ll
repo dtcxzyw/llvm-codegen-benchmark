@@ -11,9 +11,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr inbounds %"class.openvdb::v11_0::math::Vec3.233.1668571", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.openvdb::v11_0::math::Vec3.233.1668571", ptr %0, i64 %4, i32 0, i32 0, i64 2
+  ret ptr %5
 }
 
 ; 1 occurrences:

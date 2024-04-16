@@ -14,9 +14,9 @@ entry:
   %2 = shl i32 %1, 25
   %3 = and i32 %2, 33554432
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
-  %6 = and i64 %5, -65281
-  ret i64 %6
+  %.masked = and i64 %0, -65281
+  %5 = or i64 %.masked, %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

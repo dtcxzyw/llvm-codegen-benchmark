@@ -28,7 +28,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = fcmp oge double %4, %0
   ret i1 %5
 }

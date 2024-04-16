@@ -50,9 +50,9 @@ define i8 @func000000000000000a(i8 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = and i8 %0, -2
+  %4 = and i8 %0, -4
   %5 = or disjoint i8 %4, %3
-  %6 = or i8 %5, 2
+  %6 = or disjoint i8 %5, 2
   ret i8 %6
 }
 
@@ -78,9 +78,9 @@ define i8 @func0000000000000062(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i8
-  %4 = and i8 %0, -2
+  %4 = and i8 %0, -4
   %5 = or disjoint i8 %4, %3
-  %6 = or i8 %5, 2
+  %6 = or disjoint i8 %5, 2
   ret i8 %6
 }
 

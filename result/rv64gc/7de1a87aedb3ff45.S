@@ -7,8 +7,8 @@ func0000000000000054:                   # @func0000000000000054
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	add	a1, a1, a2
-	bgeu	a1, a2, .LBB0_2
+	not	a2, a2
+	bgeu	a2, a1, .LBB0_2
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 .LBB0_2:                                # %entry
@@ -22,8 +22,8 @@ func0000000000000044:                   # @func0000000000000044
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	add	a1, a1, a2
-	bgeu	a1, a2, .LBB1_2
+	not	a2, a2
+	bgeu	a2, a1, .LBB1_2
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 .LBB1_2:                                # %entry

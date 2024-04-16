@@ -9,8 +9,8 @@ entry:
   %2 = add nsw i64 %1, -24
   %3 = urem i64 %2, 24
   %4 = sub nuw nsw i64 %2, %3
-  %5 = add nuw nsw i64 %4, 24
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 24
   ret ptr %6
 }
 
@@ -23,8 +23,8 @@ entry:
   %2 = add i64 %1, -24
   %3 = urem i64 %2, 24
   %4 = sub nuw i64 %2, %3
-  %5 = add nuw i64 %4, 24
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 24
   ret ptr %6
 }
 
@@ -45,8 +45,8 @@ entry:
   %2 = add i64 %1, -24
   %3 = urem i64 %2, 24
   %4 = sub nuw i64 %2, %3
-  %5 = add i64 %4, 24
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 24
   ret ptr %6
 }
 
@@ -60,8 +60,8 @@ entry:
   %2 = add nsw i64 %1, -24
   %3 = urem i64 %2, 24
   %4 = sub nuw i64 %2, %3
-  %5 = add i64 %4, 24
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 24
   ret ptr %6
 }
 
@@ -73,8 +73,8 @@ entry:
   %2 = add i64 %1, -24
   %3 = urem i64 %2, 24
   %4 = sub nuw i64 %2, %3
-  %5 = add i64 %4, 24
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 24
   ret ptr %6
 }
 

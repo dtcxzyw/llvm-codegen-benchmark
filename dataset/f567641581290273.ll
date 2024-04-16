@@ -399,7 +399,7 @@ entry:
   %4 = select i1 %3, i32 63, i32 %1
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw i64 1, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -410,9 +410,9 @@ define i32 @func0000000000000014(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %3, i8 -1, i8 %1
-  %5 = zext i8 %4 to i32
+  %5 = zext nneg i8 %4 to i32
   %6 = shl nuw i32 1, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

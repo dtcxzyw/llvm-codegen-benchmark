@@ -244,9 +244,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ne i8 %2, 121
-  %4 = select i1 %3, i1 %0, i1 %1
-  ret i1 %4
+  %.not = icmp eq i8 %2, 121
+  %3 = select i1 %.not, i1 %1, i1 %0
+  ret i1 %3
 }
 
 ; 12 occurrences:

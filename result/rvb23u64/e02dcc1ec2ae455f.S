@@ -1,6 +1,5 @@
 func0000000000000014:                   # @func0000000000000014
-	slli	a0, a0, 56
-	srli	a0, a0, 62
+	andi	a0, a0, 192
 	seqz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
@@ -22,10 +21,8 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a0, a0, 2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	rev8	a0, a0
-	srai	a0, a0, 48
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	andi	a0, a0, 128
+	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 56

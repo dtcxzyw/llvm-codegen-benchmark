@@ -7,9 +7,9 @@
 define i1 @func0000000000000042(float %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp ogt float %1, %3
+  %4 = fcmp olt float %3, %1
   %5 = select i1 %4, float %3, float %1
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   ret i1 %6
 }
 
@@ -19,9 +19,9 @@ entry:
 define i1 @func0000000000000022(float %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp olt float %1, %3
+  %4 = fcmp ogt float %3, %1
   %5 = select i1 %4, float %3, float %1
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   ret i1 %6
 }
 
@@ -31,9 +31,9 @@ entry:
 define i1 @func0000000000000044(float %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp ogt float %1, %3
+  %4 = fcmp olt float %3, %1
   %5 = select i1 %4, float %3, float %1
-  %6 = fcmp ogt float %0, %5
+  %6 = fcmp olt float %5, %0
   ret i1 %6
 }
 

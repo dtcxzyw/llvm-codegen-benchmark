@@ -26,7 +26,7 @@ entry:
   %3 = sub nsw i32 0, %2
   %4 = zext i8 %1 to i32
   %5 = shl nuw nsw i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

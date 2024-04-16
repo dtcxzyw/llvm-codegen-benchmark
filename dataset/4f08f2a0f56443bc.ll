@@ -157,7 +157,7 @@
 define i64 @func0000000000000011(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = udiv i64 %3, 10
   %5 = add nsw i64 %4, -10
   ret i64 %5
@@ -177,7 +177,7 @@ entry:
 define i64 @func0000000000000051(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = udiv i64 %3, 10
   %5 = add nsw i64 %4, -10
   ret i64 %5

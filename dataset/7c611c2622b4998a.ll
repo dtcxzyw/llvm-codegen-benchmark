@@ -22,9 +22,9 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = ashr i64 %0, 1
-  %5 = sub nsw i64 %3, %4
+  %3 = ashr i64 %0, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %4, %2
   ret i64 %5
 }
 

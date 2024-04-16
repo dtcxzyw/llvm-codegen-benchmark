@@ -36,7 +36,7 @@
 define i1 @func0000000000000211(i32 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl i32 %0, 6
   %5 = or disjoint i32 %4, %3
   %6 = icmp eq i32 %5, 4096
@@ -66,7 +66,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 define i1 @func0000000000000271(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 %0, 6
   %5 = or disjoint i32 %4, %3
   %6 = icmp eq i32 %5, 4096
@@ -105,12 +105,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000214(i32 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %0, 6
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 512
-  ret i1 %6
+  %2 = and i32 %0, 67108856
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -119,12 +116,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000025a(i32 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = shl nuw i32 %0, 6
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp sgt i32 %5, -1
-  ret i1 %6
+  %.mask = and i32 %0, 33554432
+  %2 = icmp eq i32 %.mask, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -132,12 +126,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000256(i32 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = shl nuw i32 %0, 6
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %.mask = and i32 %0, 33554432
+  %2 = icmp ne i32 %.mask, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -145,12 +136,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000021a(i32 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %0, 6
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp sgt i32 %5, -1
-  ret i1 %6
+  %.mask = and i32 %0, 33554432
+  %2 = icmp eq i32 %.mask, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -159,7 +147,7 @@ entry:
 define i1 @func000000000000025c(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw i32 %0, 6
   %5 = or disjoint i32 %4, %3
   %6 = icmp ne i32 %5, -1
@@ -172,7 +160,7 @@ entry:
 define i1 @func000000000000021c(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl i32 %0, 6
   %5 = or disjoint i32 %4, %3
   %6 = icmp ne i32 %5, -1

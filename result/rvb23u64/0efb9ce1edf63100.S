@@ -1,5 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	addi	a0, a0, 20
+	addi	a0, a0, 4
 	li	a1, 15
 	andn	a0, a1, a0
 	ret

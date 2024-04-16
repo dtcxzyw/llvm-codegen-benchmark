@@ -20,6 +20,6 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000028:                   # @func0000000000000028
 	srai	a1, a1, 3
 	addi	a1, a1, 1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	li	a1, 0
 	ret

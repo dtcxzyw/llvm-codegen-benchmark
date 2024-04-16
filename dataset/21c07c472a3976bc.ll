@@ -11,8 +11,8 @@
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = select i1 %2, i32 2, i32 %0
-  %4 = icmp eq i32 %3, 2
+  %3 = icmp eq i32 %0, 2
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -22,8 +22,9 @@ entry:
 define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = icmp ugt i64 %3, 15
+  %3 = icmp ugt i64 %0, 15
+  %not. = xor i1 %2, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -33,8 +34,8 @@ entry:
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = icmp eq i64 %3, 0
+  %3 = icmp eq i64 %0, 0
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 

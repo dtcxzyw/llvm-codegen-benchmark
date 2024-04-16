@@ -8,8 +8,8 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = xor i8 %2, 31
   %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i8 -1, i8 %3
-  %6 = zext i8 %5 to i32
+  %5 = zext i8 %3 to i32
+  %6 = select i1 %4, i32 255, i32 %5
   ret i32 %6
 }
 

@@ -47,7 +47,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, 3
   %5 = zext nneg i8 %0 to i32
-  %6 = add nuw nsw i32 %4, %5
+  %6 = or i32 %4, %5
   %7 = icmp ne i32 %6, 0
   ret i1 %7
 }

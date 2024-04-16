@@ -14,11 +14,11 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
-	lui	a1, 1048538
-	srli	a1, a1, 12
+	lui	a1, 1048500
+	srli	a1, a1, 13
 	add	a0, a0, a1
-	slli	a0, a0, 13
-	srli	a0, a0, 13
+	addi	a1, a1, 37
+	and	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	lui	a2, 524272

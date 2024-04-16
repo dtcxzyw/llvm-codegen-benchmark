@@ -11,7 +11,7 @@ entry:
   %3 = sub nuw nsw i32 8, %2
   %4 = lshr i32 %1, %3
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sub i32 8, %2
   %4 = lshr i32 %1, %3
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = sub nsw i64 64, %2
   %4 = lshr i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

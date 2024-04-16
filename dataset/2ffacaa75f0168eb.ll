@@ -17,8 +17,8 @@
 define i1 @func0000000000000004(i1 %0, float %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to float
-  %4 = fcmp olt float %1, %3
-  %5 = or i1 %0, %4
+  %4 = fcmp ogt float %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -29,8 +29,8 @@ entry:
 define i1 @func000000000000000e(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fcmp une double %1, %3
-  %5 = or i1 %0, %4
+  %4 = fcmp une double %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -41,8 +41,8 @@ entry:
 define i1 @func0000000000000006(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fcmp ult double %1, %3
-  %5 = or i1 %0, %4
+  %4 = fcmp ugt double %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -53,7 +53,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fcmp ugt double %1, %3
+  %4 = fcmp ult double %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -64,8 +64,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fcmp ogt double %1, %3
-  %5 = or i1 %0, %4
+  %4 = fcmp olt double %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

@@ -1,7 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
 	srliw	a1, a1, 25
-	addi	a1, a1, -32
+	slli	a1, a1, 25
+	lui	a2, 262144
+	xor	a1, a1, a2
 	li	a2, 34
 	czero.eqz	a0, a2, a0
 	czero.eqz	a0, a0, a1

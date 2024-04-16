@@ -19,11 +19,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0) #0 {
 entry:
-  %1 = udiv i64 %0, 1000
-  %2 = mul nsw i64 %1, -1000
-  %3 = add nsw i64 %2, %0
-  %4 = mul nsw i64 %3, 1000000
-  ret i64 %4
+  %.fr = freeze i64 %0
+  %1 = urem i64 %.fr, 1000
+  %2 = mul nuw nsw i64 %1, 1000000
+  ret i64 %2
 }
 
 ; 8 occurrences:
@@ -38,11 +37,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = udiv i32 %0, 1000
-  %2 = mul i32 %1, -1000
-  %3 = add i32 %2, %0
-  %4 = mul i32 %3, 1000000
-  ret i32 %4
+  %.fr = freeze i32 %0
+  %1 = urem i32 %.fr, 1000
+  %2 = mul nuw nsw i32 %1, 1000000
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

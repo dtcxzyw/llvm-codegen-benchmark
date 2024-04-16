@@ -30,9 +30,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 1, i32 -1
-  %2 = sitofp i32 %1 to double
-  ret double %2
+  %1 = select i1 %0, double 1.000000e+00, double -1.000000e+00
+  ret double %1
 }
 
 attributes #0 = { nounwind }

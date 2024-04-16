@@ -15,8 +15,8 @@ define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i1 true, i1 %3
-  %6 = select i1 %0, i1 true, i1 %5
+  %5 = select i1 %0, i1 true, i1 %4
+  %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }
 

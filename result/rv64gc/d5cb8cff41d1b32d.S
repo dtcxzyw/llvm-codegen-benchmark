@@ -28,9 +28,9 @@ func0000000000000005:                   # @func0000000000000005
 	addw	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a2, a2, 511
-	sltiu	a2, a2, 256
-	negw	a2, a2
+	slli	a2, a2, 55
+	srli	a2, a2, 63
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

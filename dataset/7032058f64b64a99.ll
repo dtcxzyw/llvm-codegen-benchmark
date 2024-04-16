@@ -7,7 +7,7 @@ entry:
   %3 = uitofp i64 %2 to double
   %4 = fdiv double %3, %1
   %5 = fcmp olt double %4, 0x3FEE666666666666
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = uitofp i64 %2 to double
   %4 = fdiv double %3, %1
   %5 = fcmp ult double %4, 1.000000e+01
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

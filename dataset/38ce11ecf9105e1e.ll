@@ -52,7 +52,7 @@
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = tail call i64 @llvm.smin.i64(i64 %0, i64 %4)
   ret i64 %5
 }
@@ -95,7 +95,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = call i64 @llvm.smin.i64(i64 %0, i64 %4)
   ret i64 %5
 }
@@ -106,7 +106,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = call i32 @llvm.smin.i32(i32 %0, i32 %4)
   ret i32 %5
 }
@@ -120,7 +120,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = tail call i64 @llvm.smin.i64(i64 %0, i64 %4)
   ret i64 %5
 }

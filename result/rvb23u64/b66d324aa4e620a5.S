@@ -13,16 +13,13 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func000000000000005c:                   # @func000000000000005c
 	sext.w	a0, a0
-	sh2add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 120
+	addi	a0, a0, 3
 	snez	a0, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a0, a0
 	sh1add	a0, a0, a0
 	slli	a0, a0, 3
-	addi	a0, a0, 8
-	sltiu	a0, a0, 1025
-	xori	a0, a0, 1
+	addi	a0, a0, -1017
+	sltiu	a0, a0, -1025
 	ret

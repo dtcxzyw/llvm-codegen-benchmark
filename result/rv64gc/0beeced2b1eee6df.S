@@ -4,7 +4,10 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srliw	a0, a0, 11
-	addi	a0, a0, -27
+	slli	a0, a0, 11
+	li	a1, 27
+	slli	a1, a1, 11
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -38,10 +41,10 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	slli	a0, a0, 49
-	srli	a0, a0, 49
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	lui	a1, 8
+	addiw	a1, a1, -2
+	and	a0, a0, a1
+	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, -32

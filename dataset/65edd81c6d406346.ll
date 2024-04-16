@@ -25,12 +25,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000021(i1 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 8
-  %3 = trunc nuw i16 %2 to i8
-  %4 = icmp eq i8 %3, 114
-  %5 = select i1 %0, i8 33, i8 35
-  %6 = select i1 %4, i8 32, i8 %5
-  ret i8 %6
+  %.mask = and i16 %1, -256
+  %2 = icmp eq i16 %.mask, 29184
+  %3 = select i1 %0, i8 33, i8 35
+  %4 = select i1 %2, i8 32, i8 %3
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

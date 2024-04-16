@@ -18,9 +18,8 @@ define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 32
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 255, i32 0
-  %4 = xor i32 %3, -1
-  ret i32 %4
+  %3 = select i1 %2, i32 -256, i32 -1
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

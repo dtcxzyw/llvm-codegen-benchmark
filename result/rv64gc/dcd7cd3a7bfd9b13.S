@@ -53,6 +53,5 @@ func0000000000000044:                   # @func0000000000000044
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
-	addi	a0, a0, -64
 	andi	a0, a0, 63
 	ret

@@ -7,7 +7,7 @@ define i8 @func0000000000000078(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i8
   ret i8 %6
@@ -24,7 +24,7 @@ define i8 @func0000000000000058(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = icmp ne i32 %4, 0
   %6 = zext i1 %5 to i8
   ret i8 %6
@@ -35,9 +35,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000070(i64 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 127
+  %2 = and i8 %1, 120
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = icmp ugt i64 %4, 39
   %6 = zext i1 %5 to i32
   ret i32 %6

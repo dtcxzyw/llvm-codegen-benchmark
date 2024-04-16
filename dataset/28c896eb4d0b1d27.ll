@@ -19,11 +19,10 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = sdiv i64 %2, 3600000
-  %4 = mul nsw i64 %3, -3600000
-  %5 = add i64 %4, %2
-  %6 = sdiv i64 %5, 60000
-  ret i64 %6
+  %.fr = freeze i64 %2
+  %3 = srem i64 %.fr, 3600000
+  %4 = sdiv i64 %3, 60000
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -33,11 +32,10 @@ entry:
 define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = sdiv i64 %2, -60000000
-  %4 = mul nsw i64 %3, 60000000
-  %5 = add nsw i64 %4, %2
-  %6 = sdiv i64 %5, -1000000
-  ret i64 %6
+  %.fr = freeze i64 %2
+  %3 = srem i64 %.fr, 60000000
+  %4 = sdiv i64 %3, -1000000
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

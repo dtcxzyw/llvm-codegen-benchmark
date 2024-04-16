@@ -12,9 +12,8 @@ entry:
   %3 = sub i32 32, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

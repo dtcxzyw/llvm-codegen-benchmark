@@ -8,8 +8,9 @@ func0000000000001806:                   # @func0000000000001806
 func00000000000018f1:                   # @func00000000000018f1
 	sext.w	a2, a2
 	snez	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func000000000000185a:                   # @func000000000000185a
@@ -73,8 +74,9 @@ func0000000000000251:                   # @func0000000000000251
 	andi	a2, a2, 255
 	addi	a2, a2, -123
 	seqz	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000018f8:                   # @func00000000000018f8
@@ -124,24 +126,29 @@ func00000000000002f1:                   # @func00000000000002f1
 	andi	a2, a2, 255
 	addi	a2, a2, -255
 	seqz	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000201:                   # @func0000000000000201
 	andi	a2, a2, 255
 	addi	a2, a2, -40
 	seqz	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000801:                   # @func0000000000000801
 	sltiu	a2, a2, 8
-	add	a0, a0, a1
-	add	a0, a0, a2
-	slli	a0, a0, 48
-	srli	a0, a0, 48
+	add	a1, a1, a2
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	neg	a0, a0
+	and	a0, a0, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000008f8:                   # @func00000000000008f8
@@ -179,8 +186,9 @@ func00000000000010f1:                   # @func00000000000010f1
 func000000000000184c:                   # @func000000000000184c
 	sext.w	a2, a2
 	snez	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000018ca:                   # @func00000000000018ca
@@ -196,8 +204,9 @@ func0000000000001801:                   # @func0000000000001801
 	addiw	a3, a3, 432
 	xor	a2, a2, a3
 	snez	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000002f4:                   # @func00000000000002f4
@@ -219,16 +228,18 @@ func00000000000014f4:                   # @func00000000000014f4
 func0000000000001051:                   # @func0000000000001051
 	sltiu	a2, a2, 2
 	xori	a2, a2, 1
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000001401:                   # @func0000000000001401
 	sext.w	a2, a2
 	slti	a2, a2, 256
 	xori	a2, a2, 1
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000140a:                   # @func000000000000140a

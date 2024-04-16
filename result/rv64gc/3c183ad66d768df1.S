@@ -1,9 +1,9 @@
 func00000000000001ca:                   # @func00000000000001ca
 	slli	a1, a1, 6
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	srliw	a0, a0, 31
+	slli	a0, a0, 31
+	seqz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	slli	a1, a1, 7

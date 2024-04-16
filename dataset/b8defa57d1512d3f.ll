@@ -14,7 +14,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -42,7 +42,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -54,7 +54,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

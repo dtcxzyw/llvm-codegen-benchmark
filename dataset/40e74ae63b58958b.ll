@@ -7,7 +7,7 @@ entry:
   %3 = add i16 %2, -1
   %4 = sext i16 %3 to i32
   %5 = zext i16 %1 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp slt i32 %6, %4
   ret i1 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp ult i64 %6, %4
   ret i1 %7
 }

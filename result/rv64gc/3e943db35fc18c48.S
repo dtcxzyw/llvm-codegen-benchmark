@@ -1,5 +1,5 @@
 func0000000000000004:                   # @func0000000000000004
-	andi	a2, a2, 15
+	andi	a2, a2, 14
 	li	a3, 10
 	bltu	a2, a3, .LBB0_2
 	mv	a0, a1
@@ -19,9 +19,10 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 34
-	bltz	a2, .LBB3_2
-	mv	a0, a1
+	bgez	a2, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 7

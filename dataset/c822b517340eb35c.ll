@@ -14,7 +14,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = xor i32 %2, 31
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -38,8 +38,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = xor i64 %2, 1
-  %4 = icmp eq i64 %0, %3
+  %3 = xor i64 %2, %0
+  %4 = icmp eq i64 %3, 1
   ret i1 %4
 }
 
@@ -207,7 +207,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -231,7 +231,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = xor i64 %2, 1
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -243,7 +243,7 @@ define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = xor i64 %2, 9223372036854775807
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
 

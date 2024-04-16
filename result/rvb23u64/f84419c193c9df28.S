@@ -73,17 +73,17 @@ func0000000000000005:                   # @func0000000000000005
 	sext.w	a0, a0
 	addiw	a1, a1, -1
 	sltu	a0, a1, a0
-	li	a1, -16
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 144
+	li	a1, 16
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 128
 	ret
 func0000000000000039:                   # @func0000000000000039
 	sext.w	a0, a0
 	addiw	a1, a1, 6
 	sltu	a0, a0, a1
-	li	a1, -2
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 6
+	li	a1, 2
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 4
 	ret
 func0000000000000006:                   # @func0000000000000006
 	addi	a1, a1, -1

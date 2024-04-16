@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 1
-  %4 = getelementptr i8, ptr %2, i64 2
-  %5 = select i1 %1, ptr %4, ptr %3
-  %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
+  %.v = select i1 %1, i64 2, i64 1
+  %3 = getelementptr i8, ptr %2, i64 %.v
+  %4 = getelementptr i8, ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 10 occurrences:
@@ -27,11 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = getelementptr inbounds i8, ptr %2, i64 2
-  %5 = select i1 %1, ptr %4, ptr %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 %0
-  ret ptr %6
+  %.v = select i1 %1, i64 2, i64 1
+  %3 = getelementptr inbounds i8, ptr %2, i64 %.v
+  %4 = getelementptr inbounds i8, ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -43,11 +41,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = getelementptr inbounds i8, ptr %2, i64 2
-  %5 = select i1 %1, ptr %4, ptr %3
-  %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
+  %.v = select i1 %1, i64 2, i64 1
+  %3 = getelementptr inbounds i8, ptr %2, i64 %.v
+  %4 = getelementptr i8, ptr %3, i64 %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

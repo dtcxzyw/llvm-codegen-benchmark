@@ -1,12 +1,11 @@
 func0000000000000021:                   # @func0000000000000021
-	sext.w	a2, a2
-	beqz	a2, .LBB0_2
-	lui	a1, 921600
-	addiw	a1, a1, -1026
+	sext.w	a3, a2
+	lui	a2, 262144
+	beqz	a3, .LBB0_2
+	lui	a1, 262144
 .LBB0_2:                                # %entry
 	or	a0, a0, a1
-	lui	a1, 262144
-	and	a0, a0, a1
+	and	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000101:                   # @func0000000000000101

@@ -1,9 +1,9 @@
 func0000000000000078:                   # @func0000000000000078
 	andi	a1, a1, 255
-	addi	a1, a1, -6
-	sltiu	a1, a1, 4
+	addi	a1, a1, -10
+	sltiu	a1, a1, -4
 	addi	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addiw	a1, a1, 48
@@ -22,23 +22,27 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a1, 50
-	srliw	a1, a1, 2
-	sltiu	a1, a1, 1725
+	lui	a2, 1048574
+	addi	a3, a2, 1342
+	addw	a1, a1, a3
+	addiw	a2, a2, 1292
+	sltu	a1, a1, a2
 	addiw	a0, a0, -5
-	czero.eqz	a0, a0, a1
+	czero.nez	a0, a0, a1
 	li	a2, 63
-	czero.nez	a1, a2, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	addi	a1, a1, 50
-	srliw	a1, a1, 2
-	sltiu	a1, a1, 1475
+	lui	a2, 1048575
+	addi	a3, a2, -1754
+	addw	a1, a1, a3
+	addiw	a2, a2, -1804
+	sltu	a1, a1, a2
 	addiw	a0, a0, 5
-	czero.eqz	a0, a0, a1
+	czero.nez	a0, a0, a1
 	li	a2, 63
-	czero.nez	a1, a2, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024

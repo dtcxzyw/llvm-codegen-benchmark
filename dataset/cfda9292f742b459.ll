@@ -7,7 +7,7 @@
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = and i32 %4, 32
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %6, i1 %0, i1 false

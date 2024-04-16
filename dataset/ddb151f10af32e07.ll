@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i16 @func000000000000001e(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1900
-  %2 = trunc nuw nsw i64 %1 to i16
+  %1 = trunc i64 %0 to i16
+  %2 = add i16 %1, 1900
   %3 = udiv i16 %2, 100
   ret i16 %3
 }
@@ -23,8 +23,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 18
-  %2 = trunc i32 %1 to i8
+  %1 = trunc i32 %0 to i8
+  %2 = add i8 %1, 18
   %3 = udiv i8 %2, 3
   ret i8 %3
 }
@@ -43,8 +43,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 1900
-  %2 = trunc i64 %1 to i16
+  %1 = trunc i64 %0 to i16
+  %2 = add i16 %1, 1900
   %3 = udiv i16 %2, 100
   ret i16 %3
 }
@@ -56,8 +56,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 5
-  %2 = trunc i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 5
   %3 = udiv i16 %2, 60
   ret i16 %3
 }
@@ -68,8 +68,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 255999
-  %2 = trunc nuw i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 255999
   %3 = udiv i32 %2, 256000
   ret i32 %3
 }

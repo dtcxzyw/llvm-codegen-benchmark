@@ -21,7 +21,7 @@ entry:
 define double @func0000000000000000(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = sitofp i32 %3 to double
   ret double %4
 }

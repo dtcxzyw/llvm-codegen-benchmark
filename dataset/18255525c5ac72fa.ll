@@ -8,10 +8,10 @@ define i1 @func0000000000000006(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp slt i64 %6, 1
-  ret i1 %7
+  %.neg = sub i64 %3, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp slt i64 %5, 1
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -22,10 +22,10 @@ define i1 @func000000000000000a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %.neg = sub i64 %3, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp sgt i64 %5, 0
+  ret i1 %6
 }
 
 ; 59 occurrences:
@@ -93,10 +93,10 @@ define i1 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp ult i64 %6, 2
-  ret i1 %7
+  %.neg = sub i64 %3, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp ult i64 %5, 2
+  ret i1 %6
 }
 
 ; 20 occurrences:
@@ -125,10 +125,10 @@ define i1 @func0000000000000001(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 8
-  ret i1 %7
+  %.neg = sub i64 %3, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp eq i64 %5, 8
+  ret i1 %6
 }
 
 ; 8 occurrences:
@@ -145,10 +145,10 @@ define i1 @func0000000000000011(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub nsw i64 %0, %5
-  %7 = icmp eq i64 %6, 8
-  ret i1 %7
+  %.neg = sub i64 %3, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp eq i64 %5, 8
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -161,10 +161,10 @@ define i1 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp ugt i64 %6, 1
-  ret i1 %7
+  %.neg = sub i64 %3, %4
+  %5 = add i64 %.neg, %0
+  %6 = icmp ugt i64 %5, 1
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

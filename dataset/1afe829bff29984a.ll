@@ -8,7 +8,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -16
   %4 = icmp eq i8 %1, 27
   %5 = select i1 %4, ptr %3, ptr null
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -64
   %4 = icmp ugt i64 %1, 15
   %5 = select i1 %4, ptr %3, ptr null
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
   %4 = icmp eq i32 %1, 1
   %5 = select i1 %4, ptr %3, ptr null
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

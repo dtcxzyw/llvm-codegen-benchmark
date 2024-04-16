@@ -9,7 +9,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 1
   %5 = sub nsw i32 0, %4
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   ret i32 %6
 }
 

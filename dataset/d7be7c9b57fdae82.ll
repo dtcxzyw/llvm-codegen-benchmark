@@ -8,11 +8,11 @@
 define i64 @func0000000000000001(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = trunc i64 %4 to i32
-  %6 = sub nsw i32 %0, %5
-  %7 = sext i32 %6 to i64
-  ret i64 %7
+  %.neg = sub i64 %3, %1
+  %.neg1 = trunc i64 %.neg to i32
+  %4 = add i32 %.neg1, %0
+  %5 = sext i32 %4 to i64
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -21,11 +21,11 @@ entry:
 define i64 @func0000000000000000(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = trunc i64 %4 to i32
-  %6 = sub i32 %0, %5
-  %7 = sext i32 %6 to i64
-  ret i64 %7
+  %.neg = sub i64 %3, %1
+  %.neg1 = trunc i64 %.neg to i32
+  %4 = add i32 %.neg1, %0
+  %5 = sext i32 %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

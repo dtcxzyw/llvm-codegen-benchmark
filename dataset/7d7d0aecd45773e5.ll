@@ -55,7 +55,7 @@ entry:
   %2 = icmp eq i32 %1, 123
   %3 = icmp eq i32 %1, 55
   %4 = or i1 %3, %2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -81,7 +81,7 @@ entry:
   %2 = icmp eq i32 %1, 19
   %3 = icmp ult i32 %1, 13
   %4 = or i1 %3, %2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

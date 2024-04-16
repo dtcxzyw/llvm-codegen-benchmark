@@ -4,8 +4,9 @@ func0000000000000001:                   # @func0000000000000001
 	zext.h	a0, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slliw	a0, a0, 2
+	slli	a0, a0, 2
 	addi	a0, a0, 1
+	zext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slliw	a0, a0, 1

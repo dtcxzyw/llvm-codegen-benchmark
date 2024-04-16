@@ -1,7 +1,4 @@
 
-%struct._OnigStackType.1553707 = type { i32, i64, %union.anon.1553708 }
-%union.anon.1553708 = type { %struct.anon.1553709 }
-%struct.anon.1553709 = type { ptr, ptr, ptr, ptr }
 %"struct.mold::elf::NameType.1591257" = type <{ %"class.std::basic_string_view.1591258", i32, i8, [3 x i8] }>
 %"class.std::basic_string_view.1591258" = type { i64, ptr }
 
@@ -14,9 +11,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 -48
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
-  %6 = sdiv exact i64 %5, 48
-  %7 = getelementptr %struct._OnigStackType.1553707, ptr %0, i64 %6
-  ret ptr %7
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
 }
 
 ; 32 occurrences:

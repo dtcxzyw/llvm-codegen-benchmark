@@ -8,9 +8,9 @@
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 8
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = shl nuw nsw i32 %3, 2
-  %5 = and i32 %4, 4
+  %3 = shl nuw nsw i32 %0, 2
+  %4 = and i32 %3, 4
+  %5 = select i1 %2, i32 4, i32 %4
   ret i32 %5
 }
 
@@ -20,9 +20,9 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 3, i32 %0
-  %4 = shl nuw i32 %3, 23
-  %5 = and i32 %4, 268435456
+  %3 = shl nuw i32 %0, 23
+  %4 = and i32 %3, 268435456
+  %5 = select i1 %2, i32 0, i32 %4
   ret i32 %5
 }
 

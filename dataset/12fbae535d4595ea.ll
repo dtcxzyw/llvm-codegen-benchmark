@@ -6,11 +6,10 @@
 define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, 1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = or disjoint i32 %2, %0
+  %4 = and i32 %3, 1
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -19,12 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, 63488
-  %6 = icmp eq i64 %5, 55296
-  ret i1 %6
+  %2 = and i32 %0, 63488
+  %3 = icmp eq i32 %2, 55296
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -33,11 +29,10 @@ entry:
 define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = zext i32 %3 to i64
-  %5 = and i64 %4, 1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = or disjoint i32 %2, %0
+  %4 = and i32 %3, 1
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 ; 8 occurrences:
@@ -53,11 +48,10 @@ entry:
 define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %0, %2
-  %4 = zext i16 %3 to i32
-  %5 = and i32 %4, 252
-  %6 = icmp eq i32 %5, 100
-  ret i1 %6
+  %3 = or disjoint i16 %2, %0
+  %4 = and i16 %3, 252
+  %5 = icmp eq i16 %4, 100
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

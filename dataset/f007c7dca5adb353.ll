@@ -63,7 +63,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -83,7 +83,7 @@ define i128 @func0000000000000003(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = sub nsw i128 %1, %2
   %4 = and i128 %3, 18446744073709551615
-  %5 = or disjoint i128 %0, %4
+  %5 = or disjoint i128 %4, %0
   ret i128 %5
 }
 

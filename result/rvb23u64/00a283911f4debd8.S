@@ -63,9 +63,10 @@ func00000000000001cc:                   # @func00000000000001cc
 	ret
 func00000000000001d1:                   # @func00000000000001d1
 	andi	a2, a2, 255
-	slli	a1, a1, 8
+	slliw	a1, a1, 8
 	or	a1, a1, a2
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001da:                   # @func00000000000001da

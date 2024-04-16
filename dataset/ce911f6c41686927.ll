@@ -4,11 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 8
-  %4 = or disjoint i32 %1, %3
-  %5 = or disjoint i32 %0, %4
-  %6 = icmp ugt i32 %5, -16777217
-  ret i1 %6
+  %3 = or i32 %1, %0
+  %4 = icmp ugt i32 %3, -16777217
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -16,11 +14,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 8
-  %4 = or disjoint i32 %1, %3
-  %5 = or disjoint i32 %0, %4
-  %6 = icmp ult i32 %5, 16777216
-  ret i1 %6
+  %3 = or i32 %1, %0
+  %4 = icmp ult i32 %3, 16777216
+  ret i1 %4
 }
 
 ; 6 occurrences:

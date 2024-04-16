@@ -10,7 +10,7 @@ entry:
   %2 = add nuw i32 %1, 7
   %3 = sub i32 %2, %0
   %4 = and i32 %3, -8
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = add i32 %5, 8
   ret i32 %6
 }

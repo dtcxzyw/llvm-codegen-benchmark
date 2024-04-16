@@ -10,7 +10,7 @@ entry:
   %2 = freeze i8 %1
   %3 = add nsw i8 %2, -9
   %4 = icmp ult i8 %3, 2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = freeze i8 %1
   %3 = add i8 %2, -48
   %4 = icmp ult i8 %3, 10
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -59,8 +59,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %2, -1
-  %4 = icmp ugt i64 %3, 4294967295
+  %3 = add i64 %2, -4294967297
+  %4 = icmp ult i64 %3, -4294967296
   %5 = or i1 %4, %0
   ret i1 %5
 }

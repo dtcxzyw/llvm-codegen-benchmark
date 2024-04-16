@@ -4,8 +4,8 @@ func0000000000000055:                   # @func0000000000000055
 	lui	a4, 1048064
 	and	a3, a3, a4
 	add	a1, a1, a2
+	add	a0, a0, a3
 	sub	a0, a1, a0
-	sub	a0, a0, a3
 	ret
 func00000000000000d5:                   # @func00000000000000d5
 	lui	a3, 256
@@ -15,8 +15,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	slli	a4, a4, 21
 	and	a3, a3, a4
 	add	a1, a1, a2
+	add	a0, a0, a3
 	sub	a0, a1, a0
-	sub	a0, a0, a3
 	ret
 func0000000000000054:                   # @func0000000000000054
 	lui	a3, 8192
@@ -24,8 +24,8 @@ func0000000000000054:                   # @func0000000000000054
 	lui	a4, 1032192
 	and	a3, a3, a4
 	add	a1, a1, a2
+	add	a0, a0, a3
 	sub	a0, a1, a0
-	sub	a0, a0, a3
 	ret
 func00000000000000d0:                   # @func00000000000000d0
 	lui	a3, 256
@@ -35,8 +35,8 @@ func00000000000000d0:                   # @func00000000000000d0
 	slli	a4, a4, 21
 	and	a3, a3, a4
 	add	a1, a1, a2
+	add	a0, a0, a3
 	sub	a0, a1, a0
-	sub	a0, a0, a3
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 256
@@ -44,6 +44,6 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a4, 1048064
 	and	a3, a3, a4
 	add	a1, a1, a2
+	add	a0, a0, a3
 	sub	a0, a1, a0
-	sub	a0, a0, a3
 	ret

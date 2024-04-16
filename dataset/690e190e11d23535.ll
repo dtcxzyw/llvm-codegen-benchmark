@@ -18,10 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = add i32 %3, %0
-  ret i32 %4
+  %.inv = icmp slt i32 %0, 0
+  %2 = select i1 %.inv, i32 %1, i32 0
+  %3 = add i32 %2, %0
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -121,7 +121,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 65536
   %3 = select i1 %2, i64 6, i64 %1
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 

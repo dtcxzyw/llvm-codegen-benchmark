@@ -1,5 +1,5 @@
 func000000000000000a:                   # @func000000000000000a
-	addi	a1, a1, -5
+	addi	a1, a1, 59
 	bset	a1, zero, a1
 	and	a0, a0, a1
 	ret

@@ -9,7 +9,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 500
   %3 = udiv i64 %2, 1000
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = shl i64 %4, 2
   ret i64 %5
 }
@@ -23,7 +23,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = udiv i32 %2, 153
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = shl nsw i32 %4, 1
   ret i32 %5
 }

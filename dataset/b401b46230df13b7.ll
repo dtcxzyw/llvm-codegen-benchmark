@@ -14,10 +14,9 @@
 define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, 1900
-  %4 = add nsw i64 %2, 1901
-  %5 = select i1 %0, i64 %4, i64 %3
-  ret i64 %5
+  %.v = select i1 %0, i64 1901, i64 1900
+  %3 = add nsw i64 %.v, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

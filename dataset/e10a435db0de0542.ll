@@ -7,7 +7,7 @@ entry:
   %3 = or i32 %1, 32
   %4 = icmp ult i32 %2, -26
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = or disjoint i32 %1, 146
   %4 = icmp ult i32 %2, 2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = or i16 %1, 96
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i16 %1, i16 %3
-  %6 = icmp eq i16 %0, %5
+  %6 = icmp eq i16 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = or disjoint i16 %1, 16
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i16 %1, i16 %3
-  %6 = icmp eq i16 %0, %5
+  %6 = icmp eq i16 %5, %0
   ret i1 %6
 }
 

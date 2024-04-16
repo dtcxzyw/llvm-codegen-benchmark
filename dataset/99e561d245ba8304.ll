@@ -9,7 +9,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = add i32 %4, -56671232
   %6 = icmp ult i32 %5, 7632
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

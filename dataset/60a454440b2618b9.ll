@@ -1,7 +1,4 @@
 
-%struct._OnigStackType.1553707 = type { i32, i64, %union.anon.1553708 }
-%union.anon.1553708 = type { %struct.anon.1553709 }
-%struct.anon.1553709 = type { ptr, ptr, ptr, ptr }
 %"struct.std::pair.28.1554679" = type <{ i64, i32, [4 x i8] }>
 %"struct.ue2::(anonymous namespace)::LookProto.2245821" = type { i32, %"class.ue2::CharReach.2245771" }
 %"class.ue2::CharReach.2245771" = type { %"class.ue2::bitfield.2245772" }
@@ -13,11 +10,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 48
-  %4 = getelementptr %struct._OnigStackType.1553707, ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %0, %5
-  ret i64 %6
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  ret i64 %5
 }
 
 ; 187 occurrences:

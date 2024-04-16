@@ -15,7 +15,7 @@ define i1 @func0000000000000031(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
   %2 = or disjoint i64 %1, 1
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   ret i1 %3
 }
 

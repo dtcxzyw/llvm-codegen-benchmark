@@ -8,7 +8,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = tail call double @llvm.fmuladd.f64(double %0, double %0, double %4)
   ret double %5
 }

@@ -14,8 +14,8 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, 255
   %5 = zext i32 %4 to i64
-  %6 = and i64 %1, %5
-  %7 = or i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -33,8 +33,8 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, 255
   %5 = zext i32 %4 to i64
-  %6 = and i64 %1, %5
-  %7 = or disjoint i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 
@@ -46,8 +46,8 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = and i64 %1, %5
-  %7 = or disjoint i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 
@@ -59,8 +59,8 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = and i64 %1, %5
-  %7 = or i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

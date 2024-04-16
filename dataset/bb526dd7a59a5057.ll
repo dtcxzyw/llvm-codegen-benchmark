@@ -30,10 +30,10 @@ entry:
 define i64 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ne i32 %3, 0
-  %5 = add i64 %0, 32
-  %6 = select i1 %4, i64 32, i64 %5
-  ret i64 %6
+  %.not = icmp eq i32 %3, 0
+  %4 = add i64 %0, 32
+  %5 = select i1 %.not, i64 %4, i64 32
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

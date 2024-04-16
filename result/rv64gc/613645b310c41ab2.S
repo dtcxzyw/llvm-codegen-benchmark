@@ -32,10 +32,10 @@ func0000000000000034:                   # @func0000000000000034
 	sltu	a0, a1, a0
 	ret
 func0000000000000114:                   # @func0000000000000114
-	li	a3, 3
-	li	a2, 5
-	bltu	a3, a1, .LBB3_2
+	li	a3, 4
 	li	a2, 1
+	bltu	a1, a3, .LBB3_2
+	li	a2, 5
 .LBB3_2:                                # %entry
 	sltu	a0, a2, a0
 	ret

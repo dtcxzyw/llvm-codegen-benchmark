@@ -19,8 +19,8 @@ define i32 @func0000000000000009(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %5 = trunc nuw nsw i64 %4 to i32
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
   %5 = trunc nuw nsw i64 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

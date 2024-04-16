@@ -10,7 +10,7 @@ entry:
   %3 = add i64 %2, -4093
   %4 = sub i64 %1, %3
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 4096)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

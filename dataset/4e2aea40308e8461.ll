@@ -9,8 +9,8 @@
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float 0.000000e+00
-  %4 = fsub float %3, %0
-  %5 = fsub float 1.000000e+00, %4
+  %4 = fsub float %0, %3
+  %5 = fadd float %4, 1.000000e+00
   ret float %5
 }
 

@@ -5,11 +5,10 @@
 define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
-  %3 = zext i1 %2 to i32
-  %4 = lshr i32 %0, 12
-  %5 = add nuw nsw i32 %4, %3
-  %6 = shl i32 %5, 12
-  ret i32 %6
+  %3 = select i1 %2, i32 4096, i32 0
+  %4 = add i32 %3, %0
+  %5 = and i32 %4, -4096
+  ret i32 %5
 }
 
 ; 17 occurrences:
@@ -67,12 +66,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000020e(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 281474976710655
-  %3 = zext i1 %2 to i64
-  %4 = lshr i64 %0, 48
-  %5 = add nuw nsw i64 %4, %3
-  %6 = shl nuw i64 %5, 48
-  ret i64 %6
+  %.inv = icmp ult i64 %1, 281474976710656
+  %2 = select i1 %.inv, i64 0, i64 281474976710656
+  %3 = add i64 %2, %0
+  %4 = and i64 %3, -281474976710656
+  ret i64 %4
 }
 
 ; 1 occurrences:

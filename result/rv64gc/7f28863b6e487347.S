@@ -9,11 +9,12 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func00000000000000b1:                   # @func00000000000000b1
-	addiw	a1, a1, -1
-	bgtz	a1, .LBB1_2
-	li	a1, 1
-.LBB1_2:                                # %entry
-	addiw	a0, a0, 1
+	sext.w	a0, a0
+	sext.w	a2, a1
+	addiw	a1, a1, -2
+	slti	a2, a2, 3
+	addiw	a2, a2, -1
+	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -40,13 +40,13 @@ func0000000000000019:                   # @func0000000000000019
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	addi	a1, a1, -1
-	li	a2, 8
-	czero.nez	a1, a2, a1
+	li	a2, -8
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 12
 	li	a2, -2
 	czero.nez	a0, a2, a0
 	addi	a0, a0, 3
 	or	a0, a0, a1
-	ori	a0, a0, 4
 	ret
 func0000000000000009:                   # @func0000000000000009
 	andi	a0, a0, 1

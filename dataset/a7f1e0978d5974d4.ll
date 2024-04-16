@@ -6,7 +6,7 @@
 define i32 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 48
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 128
   %4 = udiv i32 %3, 257
   ret i32 %4
@@ -45,7 +45,7 @@ entry:
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1000000000
   %4 = udiv i32 %3, 1000000000
   ret i32 %4

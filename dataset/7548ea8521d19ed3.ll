@@ -9,7 +9,7 @@ entry:
   %4 = call i32 @llvm.umin.i32(i32 %3, i32 253)
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

@@ -7,7 +7,7 @@ define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 6
   %3 = shl nuw i8 32, %2
-  %4 = xor i8 %0, %3
+  %4 = xor i8 %3, %0
   ret i8 %4
 }
 
@@ -19,7 +19,7 @@ define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 6
   %3 = shl nuw nsw i8 1, %2
-  %4 = xor i8 %0, %3
+  %4 = xor i8 %3, %0
   ret i8 %4
 }
 

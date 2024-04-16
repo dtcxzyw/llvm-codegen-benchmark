@@ -167,9 +167,9 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %.neg = xor i32 %2, -1
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -191,9 +191,9 @@ entry:
 define i8 @func000000000000000c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
-  %3 = add nuw nsw i8 %2, 1
-  %4 = sub i8 %0, %3
-  ret i8 %4
+  %.neg = xor i8 %2, -1
+  %3 = add i8 %.neg, %0
+  ret i8 %3
 }
 
 ; 4 occurrences:
@@ -205,9 +205,9 @@ entry:
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw i32 %2, 1
-  %4 = sub i32 %0, %3
-  ret i32 %4
+  %.neg = xor i32 %2, -1
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 ; 1 occurrences:

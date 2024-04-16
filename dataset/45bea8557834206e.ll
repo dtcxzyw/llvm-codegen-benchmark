@@ -12,7 +12,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 15
   %4 = lshr i64 %3, 4
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -21,12 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000068(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i16
-  %2 = shl nuw nsw i16 %1, 3
-  %3 = add nsw i16 %2, -5
-  %4 = lshr i16 %3, 3
-  %5 = trunc i16 %4 to i8
-  ret i8 %5
+  %1 = add i8 %0, -1
+  ret i8 %1
 }
 
 ; 5 occurrences:
@@ -42,7 +38,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 5
   %3 = add nuw nsw i64 %2, 4127
   %4 = lshr i64 %3, 12
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

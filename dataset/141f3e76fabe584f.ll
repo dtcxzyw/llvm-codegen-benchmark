@@ -96,10 +96,10 @@
 define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 12
-  %5 = sub i64 %0, %4
-  %6 = mul nuw nsw i64 %5, 12
-  ret i64 %6
+  %.neg = sdiv exact i64 %3, -12
+  %4 = add i64 %.neg, %0
+  %5 = mul nuw nsw i64 %4, 12
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -108,10 +108,10 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv i64 %3, 125000
-  %5 = sub i64 %0, %4
-  %6 = mul i64 %5, 125000
-  ret i64 %6
+  %.neg = sdiv i64 %3, -125000
+  %4 = add i64 %.neg, %0
+  %5 = mul i64 %4, 125000
+  ret i64 %5
 }
 
 ; 78 occurrences:
@@ -197,10 +197,10 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 12
-  %5 = sub i64 %0, %4
-  %6 = mul nuw i64 %5, 12
-  ret i64 %6
+  %.neg = sdiv exact i64 %3, -12
+  %4 = add i64 %.neg, %0
+  %5 = mul nuw i64 %4, 12
+  ret i64 %5
 }
 
 ; 8 occurrences:
@@ -216,10 +216,10 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 12
-  %5 = sub nsw i64 %0, %4
-  %6 = mul nuw i64 %5, 12
-  ret i64 %6
+  %.neg = sdiv exact i64 %3, -12
+  %4 = add i64 %.neg, %0
+  %5 = mul nuw i64 %4, 12
+  ret i64 %5
 }
 
 ; 10 occurrences:
@@ -237,10 +237,10 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 12
-  %5 = sub nsw i64 %0, %4
-  %6 = mul nuw nsw i64 %5, 12
-  ret i64 %6
+  %.neg = sdiv exact i64 %3, -12
+  %4 = add i64 %.neg, %0
+  %5 = mul nuw nsw i64 %4, 12
+  ret i64 %5
 }
 
 ; 3 occurrences:
@@ -251,10 +251,10 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 24
-  %5 = sub nsw i64 %0, %4
-  %6 = mul i64 %5, -24
-  ret i64 %6
+  %.neg = sdiv exact i64 %3, -24
+  %4 = add i64 %.neg, %0
+  %5 = mul i64 %4, -24
+  ret i64 %5
 }
 
 ; 65 occurrences:
@@ -327,10 +327,10 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 24
-  %5 = sub i64 %0, %4
-  %6 = mul i64 %5, 24
-  ret i64 %6
+  %.neg = sdiv exact i64 %3, -24
+  %4 = add i64 %.neg, %0
+  %5 = mul i64 %4, 24
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

@@ -8,10 +8,10 @@ define i32 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = icmp ne i64 %1, 0
-  %6 = select i1 %5, i32 %4, i32 0
-  %7 = or i32 %6, %0
-  ret i32 %7
+  %.not = icmp eq i64 %1, 0
+  %5 = select i1 %.not, i32 0, i32 %4
+  %6 = or i32 %5, %0
+  ret i32 %6
 }
 
 ; 4 occurrences:

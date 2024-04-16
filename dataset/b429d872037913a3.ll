@@ -14,7 +14,7 @@ entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = fcmp olt float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = fcmp oeq float %2, 1.000000e+00
   %4 = fcmp oeq float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = fcmp ogt float %2, 0x3FEE666660000000
   %4 = fcmp oeq float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = fcmp ogt float %2, 0x3E80000000000000
   %4 = fcmp ogt float %1, 0x3E80000000000000
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = fcmp une float %2, 0.000000e+00
   %4 = fcmp une float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = fcmp ogt double %2, 0x41DFFFFFFFC00000
   %4 = fcmp uno float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -105,7 +105,7 @@ entry:
   %3 = fcmp ueq double %2, 0x7FF0000000000000
   %4 = fcmp olt double %1, 0xC3E0000000000000
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -117,7 +117,7 @@ entry:
   %3 = fcmp ult float %2, 0.000000e+00
   %4 = fcmp ult float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -131,7 +131,7 @@ entry:
   %3 = fcmp une float %2, 0x7FF0000000000000
   %4 = fcmp oeq float %1, 0x7FF0000000000000
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -155,7 +155,7 @@ entry:
   %3 = fcmp ord float %2, 0.000000e+00
   %4 = fcmp ord float %1, 0.000000e+00
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

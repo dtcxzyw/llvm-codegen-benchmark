@@ -17,11 +17,11 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000067:                   # @func0000000000000067
 	sext.w	a1, a1
-	li	a2, -10
-	czero.nez	a1, a2, a1
+	li	a2, 10
+	czero.eqz	a1, a2, a1
 	srliw	a0, a0, 5
 	add	a0, a0, a1
-	addi	a0, a0, 20
+	addi	a0, a0, 10
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a1, a1

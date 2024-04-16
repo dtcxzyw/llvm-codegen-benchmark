@@ -5,7 +5,7 @@
 define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = and i32 %3, 48
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = and i32 %3, 48
   %5 = icmp eq i32 %4, 0
   ret i1 %5

@@ -19,8 +19,8 @@ func000000000000007e:                   # @func000000000000007e
 	srli	a3, a4, 63
 	or	a2, a2, a3
 	slli	a4, a4, 1
-	add	a4, a4, a0
-	sltu	a0, a4, a0
+	add	a0, a0, a4
+	sltu	a0, a0, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	li	a1, 0

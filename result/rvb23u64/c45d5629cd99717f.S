@@ -1,9 +1,9 @@
 func000000000000003e:                   # @func000000000000003e
-	lui	a2, 8128
+	slli	a1, a1, 2
+	lui	a2, 4096
 	and	a0, a0, a2
-	sh2add	a0, a1, a0
-	lui	a1, 4096
-	add	a0, a0, a1
+	or	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 25
 	ret
 func000000000000003a:                   # @func000000000000003a

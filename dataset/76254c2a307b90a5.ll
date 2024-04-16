@@ -551,10 +551,10 @@
 define i64 @func000000000000008c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
-  %4 = icmp eq ptr %1, %3
-  %5 = select i1 %4, i64 15, i64 %0
-  %6 = shl nuw i64 %5, 1
-  %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 9223372036854775807)
+  %4 = icmp eq ptr %3, %1
+  %5 = shl nuw i64 %0, 1
+  %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 9223372036854775807)
+  %7 = select i1 %4, i64 30, i64 %6
   ret i64 %7
 }
 
@@ -588,10 +588,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func000000000000008e(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
-  %4 = icmp eq ptr %1, %3
-  %5 = select i1 %4, i64 3, i64 %0
-  %6 = shl nuw nsw i64 %5, 1
-  %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 1152921504606846975)
+  %4 = icmp eq ptr %3, %1
+  %5 = shl nuw nsw i64 %0, 1
+  %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 1152921504606846975)
+  %7 = select i1 %4, i64 6, i64 %6
   ret i64 %7
 }
 

@@ -7,7 +7,7 @@
 define i8 @func0000000000000038(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
-  %4 = icmp ne ptr %1, %3
+  %4 = icmp ne ptr %3, %1
   %5 = xor i1 %4, %0
   %6 = zext i1 %5 to i8
   ret i8 %6

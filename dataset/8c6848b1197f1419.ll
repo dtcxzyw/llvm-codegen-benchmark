@@ -7,8 +7,8 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 28
   %4 = or disjoint i32 %3, %0
-  %5 = add nsw i32 %4, -1
-  %6 = trunc i32 %5 to i8
+  %5 = trunc i32 %4 to i8
+  %6 = add i8 %5, -1
   ret i8 %6
 }
 
@@ -21,8 +21,8 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 12
   %4 = or disjoint i32 %3, %0
-  %5 = add nuw nsw i32 %4, 1
-  %6 = trunc i32 %5 to i8
+  %5 = trunc i32 %4 to i8
+  %6 = add i8 %5, 1
   ret i8 %6
 }
 

@@ -5,12 +5,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000002e1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = add nsw i64 %2, -2
-  %4 = lshr exact i64 %3, 1
-  %5 = add nuw i64 %0, 1
-  %6 = icmp eq i64 %5, %4
-  ret i1 %6
+  %2 = add i64 %1, 9223372036854775807
+  %3 = and i64 %2, 9223372036854775807
+  %4 = add nuw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:

@@ -133,9 +133,8 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %struct.bb_commit.1778403, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 28
-  ret ptr %6
+  %5 = getelementptr %struct.bb_commit.1778403, ptr %0, i64 %4, i32 4
+  ret ptr %5
 }
 
 ; 1 occurrences:

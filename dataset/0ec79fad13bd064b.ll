@@ -125,7 +125,7 @@ entry:
   %4 = and i32 %1, 65280
   %5 = mul nuw i32 %4, %3
   %6 = lshr i32 %5, 31
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -141,7 +141,7 @@ entry:
   %4 = and i64 %1, 65535
   %5 = mul nuw nsw i64 %4, %3
   %6 = lshr i64 %5, 15
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -157,7 +157,7 @@ entry:
   %4 = and i64 %1, 4294967295
   %5 = mul nuw i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

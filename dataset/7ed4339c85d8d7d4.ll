@@ -5,12 +5,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 7
-  %3 = and i64 %2, -8
-  %4 = add i64 %3, 8
-  %5 = and i64 %4, 2147483640
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 15
+  %3 = and i64 %2, 2147483640
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -18,12 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 15
-  %3 = and i64 %2, -16
-  %4 = add i64 %3, 16
-  %5 = and i64 %4, 536870896
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = add i64 %1, 31
+  %3 = and i64 %2, 536870896
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:

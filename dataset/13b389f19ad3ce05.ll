@@ -45,8 +45,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = sdiv exact i64 %3, 56
-  %5 = add nsw i64 %4, 1
-  %6 = icmp ugt i64 %5, 329406144173384850
+  %5 = add nsw i64 %4, -329406144173384850
+  %6 = icmp ult i64 %5, -329406144173384851
   ret i1 %6
 }
 
@@ -106,10 +106,8 @@ define i1 @func0000000000000051(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = sdiv exact i64 %3, 24
-  %5 = add nsw i64 %4, -1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp eq i64 %3, 24
+  ret i1 %4
 }
 
 ; 90 occurrences:
@@ -221,10 +219,8 @@ define i1 @func000000000000005c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = sdiv exact i64 %3, 40
-  %5 = add nsw i64 %4, 1
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %4 = icmp ne i64 %3, -40
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

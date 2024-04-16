@@ -9,7 +9,7 @@ entry:
   %2 = lshr i32 %1, 2
   %3 = add nsw i32 %2, -4
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = lshr i32 %1, 24
   %3 = add nsw i32 %2, -127
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

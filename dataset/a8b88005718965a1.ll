@@ -888,7 +888,7 @@
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -926,7 +926,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 

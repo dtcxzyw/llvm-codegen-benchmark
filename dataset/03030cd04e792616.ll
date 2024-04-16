@@ -8,7 +8,7 @@
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = xor i8 %0, %2
+  %3 = xor i8 %2, %0
   %4 = and i8 %3, 1
   %5 = icmp eq i8 %4, 0
   ret i1 %5

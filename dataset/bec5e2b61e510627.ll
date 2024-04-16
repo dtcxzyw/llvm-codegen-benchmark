@@ -1,12 +1,5 @@
 
 %struct.codel_vars.2015350 = type { i32, i32, i8, i16, i32, i32, i32 }
-%"struct.std::pair.120.2075058" = type { %"class.std::__cxx11::basic_string.2074921", %"class.nlohmann::json_abi_v3_11_3::basic_json.39.2074927" }
-%"class.std::__cxx11::basic_string.2074921" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2074922", i64, %union.anon.2074923 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2074922" = type { ptr }
-%union.anon.2074923 = type { i64, [8 x i8] }
-%"class.nlohmann::json_abi_v3_11_3::basic_json.39.2074927" = type { %"struct.nlohmann::json_abi_v3_11_3::basic_json<nlohmann::json_abi_v3_11_3::ordered_map>::data.2074928" }
-%"struct.nlohmann::json_abi_v3_11_3::basic_json<nlohmann::json_abi_v3_11_3::ordered_map>::data.2074928" = type { i8, %"union.nlohmann::json_abi_v3_11_3::basic_json<nlohmann::json_abi_v3_11_3::ordered_map>::json_value.2074929" }
-%"union.nlohmann::json_abi_v3_11_3::basic_json<nlohmann::json_abi_v3_11_3::ordered_map>::json_value.2074929" = type { ptr }
 
 ; 63 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -102,12 +95,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 48
-  %4 = getelementptr inbounds %"struct.std::pair.120.2075058", ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = ptrtoint ptr %0 to i64
-  %7 = sub i64 %5, %6
-  ret i64 %7
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

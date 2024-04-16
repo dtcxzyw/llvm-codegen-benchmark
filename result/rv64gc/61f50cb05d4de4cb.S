@@ -5,5 +5,5 @@ func0000000000000000:                   # @func0000000000000000
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	fcvt.s.w	fa5, a0
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret

@@ -33,10 +33,9 @@
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = and i64 %3, 1152921504606846972
-  %5 = shl nuw nsw i64 %4, 3
-  ret i64 %5
+  %3 = shl i64 %2, 1
+  %4 = and i64 %3, 9223372036854775776
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

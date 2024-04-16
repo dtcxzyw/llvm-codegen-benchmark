@@ -7,9 +7,9 @@
 define i32 @func0000000000000039(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
-  %6 = shl i32 %5, 8
+  %4 = shl nuw nsw i32 %3, 16
+  %5 = shl i32 %1, 8
+  %6 = or i32 %4, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -22,10 +22,10 @@ entry:
 define i32 @func000000000000003f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 6
-  %5 = or disjoint i32 %1, %4
-  %6 = shl nuw nsw i32 %5, 6
-  %7 = or disjoint i32 %0, %6
+  %4 = shl nuw nsw i32 %3, 12
+  %5 = shl i32 %1, 6
+  %6 = or i32 %4, %5
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -121,9 +121,9 @@ entry:
 define i32 @func000000000000007f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 6
-  %5 = or disjoint i32 %4, %1
-  %6 = shl nuw nsw i32 %5, 6
+  %4 = shl nuw nsw i32 %3, 12
+  %5 = shl i32 %1, 6
+  %6 = or i32 %4, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -135,9 +135,9 @@ entry:
 define i32 @func000000000000003d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
-  %6 = shl nuw i32 %5, 16
+  %4 = shl nuw i32 %3, 24
+  %5 = shl i32 %1, 16
+  %6 = or i32 %4, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -148,10 +148,10 @@ entry:
 define i32 @func000000000000003c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
-  %6 = shl nuw i32 %5, 16
-  %7 = or i32 %0, %6
+  %4 = shl nuw i32 %3, 24
+  %5 = shl i32 %1, 16
+  %6 = or i32 %4, %5
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -161,10 +161,10 @@ entry:
 define i32 @func000000000000003e(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
-  %6 = shl nuw nsw i32 %5, 4
-  %7 = or i32 %0, %6
+  %4 = shl nuw nsw i32 %3, 12
+  %5 = shl i32 %1, 4
+  %6 = or i32 %4, %5
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

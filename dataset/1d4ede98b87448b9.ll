@@ -10,10 +10,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.fshl.i32(i32 %0, i32 %1, i32 3)
-  %3 = lshr i32 %2, 24
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
+  %2 = lshr i32 %0, 21
+  %3 = trunc i32 %2 to i8
+  ret i8 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

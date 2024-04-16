@@ -44,7 +44,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 -8, i64 -64
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp ult i64 %3, 513
   %5 = select i1 %4, i64 3, i64 6
   ret i64 %5

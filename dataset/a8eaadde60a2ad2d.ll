@@ -11,7 +11,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -98,7 +98,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -139,7 +139,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -214,7 +214,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -240,7 +240,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -301,7 +301,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -323,7 +323,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -399,7 +399,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -412,7 +412,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -443,7 +443,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
-  %6 = icmp ult i128 %0, %5
+  %6 = icmp ugt i128 %5, %0
   ret i1 %6
 }
 
@@ -456,7 +456,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
-  %6 = icmp sge i128 %0, %5
+  %6 = icmp sle i128 %5, %0
   ret i1 %6
 }
 
@@ -468,7 +468,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
-  %6 = icmp ule i16 %0, %5
+  %6 = icmp uge i16 %5, %0
   ret i1 %6
 }
 
@@ -484,7 +484,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
   %5 = or disjoint i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -498,7 +498,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sge i32 %0, %5
+  %6 = icmp sle i32 %5, %0
   ret i1 %6
 }
 
@@ -516,7 +516,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
-  %6 = icmp ne i128 %0, %5
+  %6 = icmp ne i128 %5, %0
   ret i1 %6
 }
 
@@ -537,7 +537,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
-  %6 = icmp sgt i128 %0, %5
+  %6 = icmp slt i128 %5, %0
   ret i1 %6
 }
 
@@ -551,7 +551,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 
@@ -564,8 +564,8 @@ define i1 @func0000000000000061(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %1, %4
-  %6 = icmp eq i64 %0, %5
+  %5 = or i64 %4, %1
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -577,7 +577,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 27
   %5 = or i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -589,7 +589,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 5
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -601,8 +601,8 @@ define i1 @func0000000000000041(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
-  %5 = or i128 %1, %4
-  %6 = icmp eq i128 %0, %5
+  %5 = or i128 %4, %1
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -614,7 +614,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl i128 %3, 65
   %5 = or disjoint i128 %4, %1
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -626,7 +626,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
-  %6 = icmp uge i128 %0, %5
+  %6 = icmp ule i128 %5, %0
   ret i1 %6
 }
 
@@ -638,7 +638,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = or i64 %4, %1
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -653,7 +653,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = icmp ule i64 %0, %5
+  %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
 
@@ -664,8 +664,8 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 42
-  %5 = or i64 %1, %4
-  %6 = icmp ugt i64 %0, %5
+  %5 = or i64 %4, %1
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -678,7 +678,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 21
   %5 = or i64 %4, %1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -689,8 +689,8 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 42
-  %5 = or i64 %1, %4
-  %6 = icmp ult i64 %0, %5
+  %5 = or i64 %4, %1
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -702,7 +702,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 21
   %5 = or i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

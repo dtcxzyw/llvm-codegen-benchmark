@@ -12,7 +12,7 @@
 define i1 @func0000000000000182(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -81,7 +81,7 @@ entry:
 define i1 @func0000000000000022(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 61
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -95,7 +95,7 @@ entry:
 define i1 @func0000000000000038(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -107,7 +107,7 @@ entry:
 define i1 @func0000000000000082(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

@@ -159,8 +159,8 @@ entry:
   %2 = lshr i128 %1, 64
   %3 = trunc i128 %2 to i32
   %4 = mul i32 %3, -10
-  %5 = add i32 %4, %0
-  %6 = icmp ne i32 %5, 0
+  %5 = sub i32 0, %0
+  %6 = icmp ne i32 %4, %5
   ret i1 %6
 }
 
@@ -178,8 +178,8 @@ entry:
   %2 = lshr i64 %1, 37
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, -100
-  %5 = add i32 %4, %0
-  %6 = icmp eq i32 %5, 0
+  %5 = sub i32 0, %0
+  %6 = icmp eq i32 %4, %5
   ret i1 %6
 }
 
@@ -191,8 +191,8 @@ entry:
   %2 = lshr i64 %1, 24
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %3, -100
-  %5 = add nsw i32 %4, %0
-  %6 = icmp eq i32 %5, 0
+  %5 = sub i32 0, %0
+  %6 = icmp eq i32 %4, %5
   ret i1 %6
 }
 

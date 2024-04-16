@@ -8,8 +8,8 @@ define i32 @func0000000000000000(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %3, %1
-  %5 = trunc i64 %4 to i32
-  %6 = and i32 %0, %5
+  %5 = trunc nuw i64 %4 to i32
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

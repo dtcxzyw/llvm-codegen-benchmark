@@ -9,8 +9,8 @@
 define i32 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nsw i64 %2, -3600
-  %4 = add nsw i64 %3, %0
+  %3 = mul nuw nsw i64 %2, 4294963696
+  %4 = add i64 %3, %0
   %5 = trunc i64 %4 to i32
   %6 = sdiv i32 %5, 60
   ret i32 %6

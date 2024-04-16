@@ -23,7 +23,7 @@ entry:
   %3 = xor i32 %1, %2
   %4 = lshr i32 %3, 11
   %5 = add i32 %4, %3
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = lshr i32 %6, 5
   ret i32 %7
 }
@@ -40,7 +40,7 @@ entry:
   %3 = xor i32 %1, %2
   %4 = lshr i32 %3, 5
   %5 = add nuw nsw i32 %4, %3
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = lshr i32 %6, 17
   ret i32 %7
 }

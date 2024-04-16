@@ -28,7 +28,7 @@
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 2.000000e+00
-  %3 = fadd float %0, %2
+  %3 = fadd float %2, %0
   %4 = fcmp olt float %3, 0.000000e+00
   ret i1 %4
 }
@@ -67,7 +67,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 1.600000e+02
-  %3 = fadd float %0, %2
+  %3 = fadd float %2, %0
   %4 = fcmp ogt float %3, 0.000000e+00
   ret i1 %4
 }
@@ -120,7 +120,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3FD64AE7E0000000
-  %3 = fadd float %0, %2
+  %3 = fadd float %2, %0
   %4 = fcmp oeq float %3, 0.000000e+00
   ret i1 %4
 }
@@ -137,7 +137,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0xBFD9E6BC40000000
-  %3 = fadd float %0, %2
+  %3 = fadd float %2, %0
   %4 = fcmp ugt float %3, 0x3F69A5C380000000
   ret i1 %4
 }

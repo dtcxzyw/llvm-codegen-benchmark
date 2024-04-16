@@ -10,8 +10,8 @@ entry:
   %3 = add nuw nsw i64 %2, 65520
   %4 = add nuw nsw i64 %3, %1
   %5 = icmp ugt i64 %4, 65520
-  %6 = select i1 %5, i64 %0, i64 65520
-  %7 = add nsw i64 %6, -65521
+  %6 = add nsw i64 %0, -65521
+  %7 = select i1 %5, i64 %6, i64 -1
   ret i64 %7
 }
 

@@ -11,7 +11,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 240)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

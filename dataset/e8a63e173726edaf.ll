@@ -16,10 +16,8 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
   %4 = getelementptr %union.yyalloc.1553162, ptr %0, i64 %3
-  %5 = add nsw i64 %1, 1
-  %6 = getelementptr %union.YYSTYPE.1553161, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -8
-  ret ptr %7
+  %5 = getelementptr %union.YYSTYPE.1553161, ptr %4, i64 %1
+  ret ptr %5
 }
 
 ; 12 occurrences:
@@ -40,10 +38,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
   %4 = getelementptr inbounds %union.yyalloc.1554246, ptr %0, i64 %3
-  %5 = add nsw i64 %1, 1
-  %6 = getelementptr inbounds %union.YYSTYPE.1554245, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 -8
-  ret ptr %7
+  %5 = getelementptr %union.YYSTYPE.1554245, ptr %4, i64 %1
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -58,10 +54,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 8
   %4 = getelementptr %union.yyalloc.2119336, ptr %0, i64 %3
-  %5 = add i64 %1, 1
-  %6 = getelementptr %union.YYSTYPE.2119335, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -8
-  ret ptr %7
+  %5 = getelementptr %union.YYSTYPE.2119335, ptr %4, i64 %1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -19,9 +19,8 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds %struct.Gia_Obj_t_.1770525, ptr %0, i64 %1
-  %6 = getelementptr inbounds %struct.Gia_Obj_t_.1770525, ptr %5, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.Gia_Obj_t_.1770525, ptr %5, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -32,9 +31,8 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds %struct.Gia_Obj_t_.1771870, ptr %0, i64 %1
-  %6 = getelementptr inbounds %struct.Gia_Obj_t_.1771870, ptr %5, i64 %4
-  %7 = getelementptr i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.Gia_Obj_t_.1771870, ptr %5, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:

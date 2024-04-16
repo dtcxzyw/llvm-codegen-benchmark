@@ -226,8 +226,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 67108848
-  %2 = icmp eq i64 %1, %0
+  %1 = and i64 %0, -67108849
+  %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 

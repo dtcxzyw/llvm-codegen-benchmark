@@ -11,8 +11,9 @@
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = select i1 %0, i32 -1, i32 %2
-  %4 = icmp ne i32 %3, -1
+  %3 = icmp ne i32 %2, -1
+  %not. = xor i1 %0, true
+  %4 = and i1 %3, %not.
   ret i1 %4
 }
 
@@ -32,8 +33,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = select i1 %0, i32 -1, i32 %2
-  %4 = icmp eq i32 %3, 0
+  %3 = icmp eq i32 %2, 0
+  %not. = xor i1 %0, true
+  %4 = and i1 %3, %not.
   ret i1 %4
 }
 
@@ -72,8 +74,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = icmp sgt i32 %3, 0
+  %3 = icmp sgt i32 %2, 0
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

@@ -18,12 +18,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000036(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 32
-  %4 = getelementptr inbounds i8, ptr %1, i64 32
-  %5 = icmp slt i8 %0, 0
-  %6 = select i1 %5, ptr %4, ptr %3
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
+  %3 = icmp slt i8 %0, 0
+  %.v = select i1 %3, ptr %1, ptr %2
+  %4 = getelementptr inbounds i8, ptr %.v, i64 32
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

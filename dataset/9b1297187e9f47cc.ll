@@ -8,7 +8,7 @@ define i128 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   %6 = zext i64 %5 to i128
   ret i128 %6
 }

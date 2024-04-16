@@ -186,9 +186,9 @@ define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 31
   %3 = udiv i8 %2, 3
-  %4 = add nuw nsw i8 %3, 1
-  %5 = zext nneg i8 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %4 = zext nneg i8 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 

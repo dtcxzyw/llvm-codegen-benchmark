@@ -32,7 +32,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 2147483520
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %4, 1
   ret i32 %5
 }
@@ -44,7 +44,7 @@ define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i32 2146959360, i32 0
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %4, 1
   ret i32 %5
 }
@@ -56,7 +56,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 2147482624
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = shl nuw i32 %4, 1
   ret i32 %5
 }

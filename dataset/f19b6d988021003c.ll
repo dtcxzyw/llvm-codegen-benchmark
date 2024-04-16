@@ -11,7 +11,7 @@ define i1 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -23,7 +23,7 @@ define i1 @func00000000000000d8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
@@ -40,7 +40,7 @@ define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 32, %2
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -52,7 +52,7 @@ define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 32, %2
   %4 = shl nsw i32 -1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }

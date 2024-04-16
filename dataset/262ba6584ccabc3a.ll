@@ -9,7 +9,7 @@ entry:
   %4 = lshr i16 %3, 2
   %5 = add i16 %1, 1
   %6 = add i16 %5, %4
-  %7 = icmp eq i16 %0, %6
+  %7 = icmp eq i16 %6, %0
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = lshr i32 %3, 3
   %5 = add i32 %1, 1
   %6 = add i32 %5, %4
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 

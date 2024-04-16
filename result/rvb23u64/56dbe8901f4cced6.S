@@ -6,9 +6,9 @@ func0000000000000038:                   # @func0000000000000038
 	andi	a0, a0, 1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	addiw	a1, a1, 1
-	sltiu	a1, a1, 385
-	orn	a0, a0, a1
+	addiw	a1, a1, -384
+	sltiu	a1, a1, -385
+	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 func0000000000000028:                   # @func0000000000000028

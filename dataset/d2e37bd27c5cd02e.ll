@@ -6,7 +6,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 0, i64 2147483648
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = and i64 %1, 32767
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -31,12 +31,12 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000033(i8 %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = icmp ne ptr %2, null
-  %4 = select i1 %3, i8 8, i8 0
-  %5 = or disjoint i8 %0, %4
-  %6 = and i8 %1, -25
-  %7 = or disjoint i8 %5, %6
-  ret i8 %7
+  %.not = icmp eq ptr %2, null
+  %3 = select i1 %.not, i8 0, i8 8
+  %4 = or disjoint i8 %3, %0
+  %5 = and i8 %1, -25
+  %6 = or disjoint i8 %4, %5
+  ret i8 %6
 }
 
 attributes #0 = { nounwind }

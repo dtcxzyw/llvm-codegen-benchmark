@@ -9,11 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
+	srli	a1, a1, 7
+	not	a0, a0
+	or	a0, a0, a1
 	andi	a0, a0, 1
-	bnez	a0, .LBB1_2
-	li	a0, 1
-	ret
-.LBB1_2:
-	slli	a0, a1, 56
-	srli	a0, a0, 63
 	ret

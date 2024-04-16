@@ -18,7 +18,7 @@
 define ptr @func000000000000001e(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = shl nuw nsw i32 %4, 2
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
@@ -37,7 +37,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = shl nuw nsw i32 %4, 1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i64, ptr %0, i64 %6
@@ -55,7 +55,7 @@ entry:
 define ptr @func0000000000000019(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = shl nuw i16 %4, 1
   %6 = zext i16 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
@@ -74,7 +74,7 @@ entry:
 define ptr @func0000000000000018(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = shl nuw i16 %4, 1
   %6 = zext i16 %5 to i64
   %7 = getelementptr %struct.stbtt_vertex.1833224, ptr %0, i64 %6

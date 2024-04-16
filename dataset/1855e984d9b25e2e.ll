@@ -61,10 +61,10 @@ define i32 @func0000000000000000(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  %7 = sub i32 %0, %6
-  ret i32 %7
+  %.neg = sub i64 %3, %4
+  %.neg1 = trunc i64 %.neg to i32
+  %5 = add i32 %.neg1, %0
+  ret i32 %5
 }
 
 ; 47 occurrences:
@@ -120,10 +120,10 @@ define i32 @func0000000000000001(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  %7 = sub nsw i32 %0, %6
-  ret i32 %7
+  %.neg = sub i64 %3, %4
+  %.neg1 = trunc i64 %.neg to i32
+  %5 = add i32 %.neg1, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

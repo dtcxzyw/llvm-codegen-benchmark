@@ -19,7 +19,7 @@ func0000000000000081:                   # @func0000000000000081
 func0000000000000241:                   # @func0000000000000241
 	sext.w	a1, a1
 	srai	a2, a2, 32
-	xor	a3, a1, a2
+	xor	a3, a2, a1
 	sltu	a1, a1, a2
 	czero.eqz	a1, a1, a3
 	czero.nez	a0, a0, a3

@@ -22,5 +22,5 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa1, %lo(.LCPI2_0)(a0)
 .LBB2_2:                                # %entry
-	fmul.d	fa0, fa0, fa1
+	fmul.d	fa0, fa1, fa0
 	ret

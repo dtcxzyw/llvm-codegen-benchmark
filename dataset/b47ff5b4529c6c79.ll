@@ -137,8 +137,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 29
-  %3 = add nsw i32 %2, %0
+  %2 = add i32 %1, 5
+  %3 = add i32 %2, %0
   %4 = and i32 %3, 7
   %5 = add nuw nsw i32 %4, 4
   ret i32 %5
@@ -150,8 +150,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 29
-  %3 = add nsw i32 %2, %0
+  %2 = add i32 %1, 5
+  %3 = add i32 %2, %0
   %4 = and i32 %3, 7
   %5 = add nsw i32 %4, -4
   ret i32 %5

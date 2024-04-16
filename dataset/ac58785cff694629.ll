@@ -5,11 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i32 %0) #0 {
 entry:
-  %1 = sub i32 0, %0
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %1 = icmp ugt i32 %0, -2147483648
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -18,11 +15,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000318(i32 %0) #0 {
 entry:
-  %1 = sub nuw nsw i32 32, %0
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = icmp ugt i32 %3, 4
-  ret i1 %4
+  %1 = add i32 %0, -1
+  %2 = icmp ult i32 %1, 27
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -31,11 +26,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i64 %0) #0 {
 entry:
-  %1 = sub i64 0, %0
-  %2 = icmp eq i64 %0, 0
-  %3 = select i1 %2, i64 -1, i64 %1
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %1 = icmp ult i64 %0, -9223372036854775807
+  ret i1 %1
 }
 
 ; 4 occurrences:
@@ -46,11 +38,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001aa(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 0, %0
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %1 = icmp slt i32 %0, 0
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -59,11 +48,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001a4(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 0, %0
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = icmp ult i32 %3, 129
-  ret i1 %4
+  %1 = icmp sgt i32 %0, -129
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -72,11 +58,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001a6(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 0, %0
-  %2 = icmp sgt i32 %0, -1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = icmp slt i32 %3, 129
-  ret i1 %4
+  %1 = icmp sgt i32 %0, -129
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -85,11 +68,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000a4(i128 %0) #0 {
 entry:
-  %1 = sub i128 1, %0
-  %2 = icmp sgt i128 %0, 0
-  %3 = select i1 %2, i128 0, i128 %1
-  %4 = icmp ult i128 %3, 18446744073709551616
-  ret i1 %4
+  %1 = icmp sgt i128 %0, -18446744073709551615
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

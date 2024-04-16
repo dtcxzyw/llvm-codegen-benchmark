@@ -1,7 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
-	slli	a2, a1, 8
-	lui	a3, 4080
-	and	a2, a2, a3
+	lui	a2, 16
+	addiw	a2, a2, -256
+	and	a2, a2, a1
+	slli	a2, a2, 8
 	slliw	a1, a1, 24
 	or	a0, a0, a1
 	or	a0, a0, a2

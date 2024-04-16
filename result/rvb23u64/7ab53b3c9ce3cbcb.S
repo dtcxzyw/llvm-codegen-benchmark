@@ -35,7 +35,6 @@ func0000000000000028:                   # @func0000000000000028
 	bseti	a3, zero, 11
 	and	a1, a1, a3
 	or	a1, a1, a2
-	srli	a1, a1, 11
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

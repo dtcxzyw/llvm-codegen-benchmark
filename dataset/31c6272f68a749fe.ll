@@ -8,7 +8,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.bswap.i64(i64 %1)
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   ret i64 %3
 }
 

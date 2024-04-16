@@ -2018,8 +2018,8 @@ define i64 @func000000000000000b(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 384307168202282325)
-  %5 = select i1 %0, i64 384307168202282325, i64 %4
-  %6 = mul nuw nsw i64 %5, 24
+  %5 = mul nuw nsw i64 %4, 24
+  %6 = select i1 %0, i64 9223372036854775800, i64 %5
   ret i64 %6
 }
 
@@ -2063,8 +2063,8 @@ define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 115292150460684697)
-  %5 = select i1 %0, i64 115292150460684697, i64 %4
-  %6 = mul nuw nsw i64 %5, 80
+  %5 = mul nuw nsw i64 %4, 80
+  %6 = select i1 %0, i64 9223372036854775760, i64 %5
   ret i64 %6
 }
 

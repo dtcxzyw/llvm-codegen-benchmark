@@ -6,7 +6,7 @@ define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 5.000000e+00
   %3 = fmul float %2, 2.000000e+00
-  %4 = fcmp oge float %0, %3
+  %4 = fcmp ole float %3, %0
   ret i1 %4
 }
 
@@ -17,7 +17,7 @@ define i1 @func000000000000000d(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
   %3 = fmul double %2, 0x3CB0000000000000
-  %4 = fcmp uge double %0, %3
+  %4 = fcmp ule double %3, %0
   ret i1 %4
 }
 

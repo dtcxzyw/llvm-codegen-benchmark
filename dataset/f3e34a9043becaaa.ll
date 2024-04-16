@@ -24,9 +24,8 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 14920
-  %5 = getelementptr inbounds [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %4, i64 0, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -37,9 +36,8 @@ entry:
   %2 = icmp ne i64 %1, 104
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds [3 x %"struct.duckdb::UnifiedVectorFormat.1823835"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [3 x %"struct.duckdb::UnifiedVectorFormat.1823835"], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -51,9 +49,8 @@ entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 76
-  %5 = getelementptr [2 x %struct.iax_call_dirdata.1916259], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [2 x %struct.iax_call_dirdata.1916259], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -64,9 +61,8 @@ entry:
   %2 = icmp eq i8 %1, 2
   %3 = zext i1 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 736
-  %5 = getelementptr [11 x %struct.resource.1995186], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [11 x %struct.resource.1995186], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -77,9 +73,8 @@ entry:
   %2 = icmp ugt i32 %1, 2
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 24
-  %5 = getelementptr [2 x [2 x i32]], ptr %4, i64 0, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [2 x [2 x i32]], ptr %4, i64 0, i64 %3, i64 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -91,9 +86,8 @@ entry:
   %2 = icmp eq i8 %1, 2
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 920
-  %5 = getelementptr [11 x %struct.resource.2021026], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr [11 x %struct.resource.2021026], ptr %4, i64 0, i64 %3, i32 3
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -104,9 +98,8 @@ entry:
   %2 = icmp ugt i32 %1, 2
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 184
-  %5 = getelementptr [2 x %struct.ip_ct_tcp_state.2022800], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 17
-  ret ptr %6
+  %5 = getelementptr [2 x %struct.ip_ct_tcp_state.2022800], ptr %4, i64 0, i64 %3, i32 5
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -117,9 +110,8 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 32
-  %5 = getelementptr inbounds [2 x %class.hashtable.2089954], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr inbounds [2 x %class.hashtable.2089954], ptr %4, i64 0, i64 %3, i32 0, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -43,9 +43,9 @@ define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 0, %2
-  %4 = icmp ne i64 %0, 0
-  %5 = select i1 %4, i32 %3, i32 %2
-  ret i32 %5
+  %.not = icmp eq i64 %0, 0
+  %4 = select i1 %.not, i32 %2, i32 %3
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -56,9 +56,9 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 0, %2
-  %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i32 %3, i32 %2
-  ret i32 %5
+  %.not = icmp eq i32 %0, 0
+  %4 = select i1 %.not, i32 %2, i32 %3
+  ret i32 %4
 }
 
 ; 1 occurrences:

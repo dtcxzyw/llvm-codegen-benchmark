@@ -223,10 +223,9 @@ define i1 @func0000000000000241(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
-  %4 = mul nuw i32 %0, 10
-  %5 = add i32 %3, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %.neg = mul i32 %0, -10
+  %4 = icmp eq i32 %3, %.neg
+  ret i1 %4
 }
 
 ; 1 occurrences:

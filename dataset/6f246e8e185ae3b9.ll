@@ -132,7 +132,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

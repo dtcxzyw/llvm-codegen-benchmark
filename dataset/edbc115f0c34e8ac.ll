@@ -62,9 +62,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.1663348], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.1663348], ptr %5, i64 0, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -73,11 +72,9 @@ entry:
 define ptr @func0000000000000015(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.AHCIDevice.1665213, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 2496
-  %6 = getelementptr [32 x %struct.NCQTransferState.1665217], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 107
-  ret ptr %7
+  %4 = getelementptr %struct.AHCIDevice.1665213, ptr %1, i64 %3, i32 14, i64 %0
+  %5 = getelementptr inbounds i8, ptr %4, i64 107
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -88,11 +85,8 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.CalloutNameListEntry.1666787, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 48
-  %6 = getelementptr inbounds [4 x %union.OnigValue.1666788], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %4 = getelementptr inbounds %struct.CalloutNameListEntry.1666787, ptr %1, i64 %3, i32 7, i64 %0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -105,9 +99,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr %struct.CalloutData.1666851, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -120
-  %6 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %5, i64 0, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 11 occurrences:
@@ -126,11 +119,8 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %"struct.Assimp::MS3DImporter::TempTriangle.1751165", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 48
-  %6 = getelementptr inbounds [3 x %class.aiVector2t.1751166], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %4 = getelementptr inbounds %"struct.Assimp::MS3DImporter::TempTriangle.1751165", ptr %1, i64 %3, i32 2, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -142,9 +132,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -272
-  %6 = getelementptr [17 x %struct.bio_vec.1996641], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr [17 x %struct.bio_vec.1996641], ptr %5, i64 0, i64 %0, i32 2
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -154,11 +143,9 @@ entry:
 define ptr @func0000000000000007(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.mq.2238993, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 104
-  %6 = getelementptr inbounds [10 x %struct.mq_item.2238994], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %4 = getelementptr %struct.mq.2238993, ptr %1, i64 %3, i32 14, i64 %0
+  %5 = getelementptr inbounds i8, ptr %4, i64 8
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

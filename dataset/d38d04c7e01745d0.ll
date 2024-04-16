@@ -6,12 +6,12 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 36, i32 37
-  %4 = or disjoint i32 %3, %0
-  %5 = and i32 %4, 3
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %2 = icmp ne i64 %1, 0
+  %3 = zext i1 %2 to i32
+  %.masked = and i32 %0, 3
+  %4 = or i32 %.masked, %3
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -23,11 +23,10 @@ entry:
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 524288, i32 526336
-  %4 = or i32 %3, %0
-  %5 = and i32 %4, 2048
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %.masked = and i32 %0, 2048
+  %3 = icmp eq i32 %.masked, 0
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -10,10 +10,8 @@
 define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 %0)
-  %5 = sub nsw i64 %0, %4
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -46,10 +44,8 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 %0)
-  %5 = sub i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp sge i64 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -59,10 +55,8 @@ entry:
 define i1 @func000000000000009a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = tail call i32 @llvm.smin.i32(i32 %0, i32 %3)
-  %5 = sub nsw i32 %0, %4
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -83,10 +77,8 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 %0)
-  %5 = sub nsw i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp sge i64 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -16,9 +16,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %4, i64 56)
-  %6 = extractvalue { i64, i1 } %5, 1
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 329406144173384850
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -32,9 +31,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = sdiv i64 %3, 736
-  %5 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %4, i64 24)
-  %6 = extractvalue { i64, i1 } %5, 1
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 768614336404564650
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

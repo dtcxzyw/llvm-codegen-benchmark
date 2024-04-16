@@ -7,7 +7,7 @@ entry:
   %2 = mul i64 %1, 5
   %3 = add i64 %2, 2
   %4 = udiv i64 %3, 153
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp slt i64 %5, 3
   ret i1 %6
 }
@@ -28,7 +28,7 @@ entry:
   %2 = mul i32 %1, 5
   %3 = add i32 %2, 2
   %4 = udiv i32 %3, 153
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp ult i32 %5, 3
   ret i1 %6
 }

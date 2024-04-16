@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
-	lui	a1, 524288
-	orn	a0, a1, a0
-	ctzw	a0, a0
-	sltiu	a0, a0, 24
-	xori	a0, a0, 1
+	lui	a1, 4096
+	addiw	a1, a1, -1
+	and	a0, a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 40
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 0, %3
   %5 = select i1 %0, i32 %4, i32 %3
   ret i32 %5

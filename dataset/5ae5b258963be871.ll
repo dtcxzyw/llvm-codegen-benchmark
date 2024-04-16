@@ -19,8 +19,8 @@ entry:
 define i8 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 153
-  %3 = select i1 %0, i32 3, i32 -9
-  %4 = add nsw i32 %3, %2
+  %3 = select i1 %0, i32 3, i32 247
+  %4 = add nuw nsw i32 %3, %2
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

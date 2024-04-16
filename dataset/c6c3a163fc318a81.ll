@@ -183,9 +183,8 @@ entry:
   %3 = freeze i64 %2
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %0, %1
-  %6 = sub nsw i32 %4, %5
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp slt i32 %5, %4
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

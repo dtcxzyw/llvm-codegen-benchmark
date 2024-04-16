@@ -20,7 +20,7 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
   ret i32 %4
 }

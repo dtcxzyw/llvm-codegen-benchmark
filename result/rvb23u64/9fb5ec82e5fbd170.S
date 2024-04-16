@@ -87,9 +87,9 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	sltiu	a1, a0, 128
-	li	a2, -64
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 128
+	li	a2, 64
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 64
 	czero.eqz	a0, a1, a0
 	ret
 func00000000000000a6:                   # @func00000000000000a6
@@ -152,13 +152,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	lui	a1, 14
 	xor	a1, a1, a0
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 3
-	lui	a2, 4
-	xor	a0, a0, a2
-	czero.eqz	a1, a1, a0
 	li	a2, 2
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 1
+	lui	a3, 4
+	xor	a0, a0, a3
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

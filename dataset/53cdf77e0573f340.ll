@@ -15,8 +15,8 @@ entry:
   %2 = lshr i8 %1, 4
   %3 = xor i8 %2, %1
   %4 = lshr i8 %3, 2
-  %5 = xor i8 %4, %3
-  %6 = xor i8 %0, %5
+  %5 = xor i8 %4, %0
+  %6 = xor i8 %5, %3
   ret i8 %6
 }
 

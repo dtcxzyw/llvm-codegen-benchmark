@@ -12,9 +12,8 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 31
   %4 = and i8 %0, 31
-  %5 = sub nsw i8 %4, %3
-  %6 = icmp slt i8 %5, 0
-  ret i1 %6
+  %5 = icmp ult i8 %4, %3
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -58,9 +57,8 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 16777215
   %4 = and i32 %0, 16777215
-  %5 = sub nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp ugt i32 %4, %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

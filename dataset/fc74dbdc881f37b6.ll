@@ -18,7 +18,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = inttoptr i64 %0 to ptr
   %5 = getelementptr inbounds i64, ptr %4, i64 %3

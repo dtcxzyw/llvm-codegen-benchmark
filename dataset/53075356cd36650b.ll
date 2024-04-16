@@ -240,7 +240,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = select i1 %3, i32 -86400, i32 86400
   ret i32 %4
 }
@@ -262,7 +262,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = select i1 %3, i32 2304, i32 256
   ret i32 %4
 }
@@ -285,7 +285,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4611686018427387903
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -296,9 +296,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870911
-  %3 = icmp ne i32 %0, %2
-  %4 = select i1 %3, i32 1, i32 2
-  ret i32 %4
+  %.not = icmp eq i32 %2, %0
+  %3 = select i1 %.not, i32 2, i32 1
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -308,7 +308,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   %4 = select i1 %3, i32 -1, i32 1
   ret i32 %4
 }
@@ -319,7 +319,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777215
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = select i1 %3, i32 0, i32 32
   ret i32 %4
 }

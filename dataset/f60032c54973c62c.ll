@@ -20,7 +20,7 @@ entry:
 define ptr @func000000000000001d(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 7
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 1
   %6 = and i64 %5, 2147483647
   %7 = getelementptr inbounds float, ptr %0, i64 %6

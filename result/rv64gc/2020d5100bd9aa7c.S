@@ -9,8 +9,9 @@ func0000000000000004:                   # @func0000000000000004
 	xori	a0, a0, 31
 	ret
 func000000000000001a:                   # @func000000000000001a
-	subw	a1, a1, a2
-	sgtz	a1, a1
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
 	not	a0, a0
 	neg	a1, a1
 	and	a0, a0, a1

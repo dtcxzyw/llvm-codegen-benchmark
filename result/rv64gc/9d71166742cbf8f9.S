@@ -4,10 +4,8 @@ func00000000000001f1:                   # @func00000000000001f1
 	mul	a1, a1, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
-	add	a0, a0, a1
-	sltu	a1, a0, a1
-	add	a1, a1, a3
 	or	a0, a0, a1
+	or	a0, a0, a3
 	seqz	a0, a0
 	ret
 func0000000000000258:                   # @func0000000000000258
@@ -68,10 +66,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	mul	a1, a1, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
-	add	a0, a0, a1
-	sltu	a1, a0, a1
-	add	a1, a1, a3
 	or	a0, a0, a1
+	or	a0, a0, a3
 	seqz	a0, a0
 	ret
 func000000000000035a:                   # @func000000000000035a

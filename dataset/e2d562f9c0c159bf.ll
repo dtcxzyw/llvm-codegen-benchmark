@@ -5,10 +5,10 @@
 define i64 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = sext i32 %4 to i64
-  ret i64 %5
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i32 %2, i32 %0
+  %4 = sext i32 %3 to i64
+  ret i64 %4
 }
 
 ; 2 occurrences:

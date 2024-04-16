@@ -50,7 +50,7 @@ entry:
   %3 = and i64 %2, 15
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = and i32 %2, 127
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -240,12 +240,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000e0(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -150
-  %3 = and i32 %2, -2
-  %4 = icmp ne i32 %3, 2
-  %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
-  ret i32 %6
+  %2 = and i32 %1, -2
+  %3 = icmp ne i32 %2, 152
+  %4 = zext i1 %3 to i32
+  %5 = add i32 %4, %0
+  ret i32 %5
 }
 
 ; 7 occurrences:
@@ -259,11 +258,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
+  %2 = add i32 %1, 31
   %3 = and i32 %2, 31
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -273,11 +272,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
+  %2 = add i32 %1, 31
   %3 = and i32 %2, 31
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -290,7 +289,7 @@ entry:
   %3 = and i8 %2, -3
   %4 = icmp eq i8 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -304,7 +303,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -317,7 +316,7 @@ entry:
   %3 = and i32 %2, 511
   %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 
@@ -330,7 +329,7 @@ entry:
   %3 = and i32 %2, 511
   %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 

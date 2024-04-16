@@ -3,7 +3,7 @@ func0000000000000024:                   # @func0000000000000024
 	fmin.d	fa5, fa1, fa5
 	fmv.d.x	fa4, zero
 	fmax.d	fa5, fa5, fa4
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.word	0x3e4ccccd                      # float 0.200000003

@@ -9,7 +9,7 @@ entry:
   %2 = shl i64 %1, 2
   %3 = udiv i64 %2, 3
   %4 = add nuw nsw i64 %3, 4
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

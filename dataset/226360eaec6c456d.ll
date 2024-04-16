@@ -6,9 +6,9 @@ define i8 @func00000000000001d2(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -6
   %3 = icmp ult i8 %2, 4
-  %4 = add nuw nsw i64 %0, 1
-  %5 = select i1 %3, i64 %4, i64 0
-  %6 = trunc nuw i64 %5 to i8
+  %4 = trunc i64 %0 to i8
+  %5 = add i8 %4, 1
+  %6 = select i1 %3, i8 %5, i8 0
   ret i8 %6
 }
 
@@ -22,9 +22,9 @@ define i8 @func00000000000001d0(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -6
   %3 = icmp ult i8 %2, 4
-  %4 = add nuw nsw i64 %0, 1
-  %5 = select i1 %3, i64 %4, i64 0
-  %6 = trunc i64 %5 to i8
+  %4 = trunc i64 %0 to i8
+  %5 = add i8 %4, 1
+  %6 = select i1 %3, i8 %5, i8 0
   ret i8 %6
 }
 
@@ -34,11 +34,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000000d0(i64 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, 126
-  %3 = icmp ult i8 %2, 2
-  %4 = add nuw nsw i64 %0, 1
-  %5 = select i1 %3, i64 %4, i64 0
-  %6 = trunc i64 %5 to i8
+  %2 = and i8 %1, -2
+  %3 = icmp eq i8 %2, -126
+  %4 = trunc i64 %0 to i8
+  %5 = add i8 %4, 1
+  %6 = select i1 %3, i8 %5, i8 0
   ret i8 %6
 }
 
@@ -50,11 +50,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000000d2(i64 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, 126
-  %3 = icmp ult i8 %2, 2
-  %4 = add nuw nsw i64 %0, 1
-  %5 = select i1 %3, i64 %4, i64 0
-  %6 = trunc nuw i64 %5 to i8
+  %2 = and i8 %1, -2
+  %3 = icmp eq i8 %2, -126
+  %4 = trunc i64 %0 to i8
+  %5 = add i8 %4, 1
+  %6 = select i1 %3, i8 %5, i8 0
   ret i8 %6
 }
 

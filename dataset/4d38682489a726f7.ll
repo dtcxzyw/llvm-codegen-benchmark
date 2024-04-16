@@ -46,7 +46,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = icmp eq ptr %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

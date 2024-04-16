@@ -1,9 +1,7 @@
 func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 1
 	beqz	a0, .LBB0_2
-	addi	a2, a2, 7
-	srliw	a1, a2, 3
-	slli	a1, a1, 3
+	addi	a1, a2, 7
 .LBB0_2:                                # %entry
 	sext.w	a1, a1
 	sltiu	a0, a1, 40
@@ -23,8 +21,9 @@ func0000000000000038:                   # @func0000000000000038
 	lui	a0, 13
 	addi	a0, a0, 1984
 	add	a0, a0, a2
-	slli	a0, a0, 48
-	srli	a1, a0, 48
+	lui	a1, 16
+	addi	a1, a1, -256
+	and	a1, a1, a0
 .LBB2_2:                                # %entry
 	sext.w	a1, a1
 	sltiu	a0, a1, 768
@@ -33,8 +32,8 @@ func0000000000000038:                   # @func0000000000000038
 func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 1
 	beqz	a0, .LBB3_2
-	addi	a2, a2, -2
-	andi	a1, a2, 63
+	addi	a0, a2, 62
+	andi	a1, a0, 63
 .LBB3_2:                                # %entry
 	snez	a0, a1
 	ret

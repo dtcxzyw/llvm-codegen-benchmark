@@ -558,7 +558,7 @@ entry:
   %4 = add nsw i64 %3, 1
   %5 = add i64 %4, %1
   %6 = shl i64 %5, 1
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

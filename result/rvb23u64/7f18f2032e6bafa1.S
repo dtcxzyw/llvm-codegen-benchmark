@@ -1,6 +1,7 @@
 func000000000000003c:                   # @func000000000000003c
-	srliw	a2, a2, 31
-	sh2add	a1, a2, a1
+	srli	a2, a2, 29
+	andi	a2, a2, 4
+	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

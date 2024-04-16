@@ -5,9 +5,9 @@
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = shl nsw i64 %2, 3
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %.tr = trunc i64 %2 to i32
+  %3 = shl i32 %.tr, 3
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -17,9 +17,9 @@ entry:
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = shl i64 %2, 3
-  %4 = trunc i64 %3 to i8
-  ret i8 %4
+  %.tr = trunc i64 %2 to i8
+  %3 = shl i8 %.tr, 3
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

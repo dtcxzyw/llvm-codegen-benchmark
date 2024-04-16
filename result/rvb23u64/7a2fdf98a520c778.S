@@ -15,5 +15,5 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	fcvt.d.w	fa4, a0
 	fmul.d	fa5, fa4, fa5
-	fadd.d	fa0, fa0, fa5
+	fadd.d	fa0, fa5, fa0
 	ret

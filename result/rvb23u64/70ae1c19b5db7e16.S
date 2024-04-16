@@ -37,7 +37,7 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a2, a2, 63
+	andi	a2, a2, 48
 	or	a1, a1, a2
 	sext.w	a1, a1
 	lui	a2, 16

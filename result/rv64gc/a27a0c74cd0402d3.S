@@ -10,7 +10,10 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000003:                   # @func0000000000000003
 	bnez	a2, .LBB1_2
 	li	a1, 2
-.LBB1_2:                                # %entry
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	ret
+.LBB1_2:
 	sext.w	a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1

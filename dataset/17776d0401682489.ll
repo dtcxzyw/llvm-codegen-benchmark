@@ -28,11 +28,10 @@ entry:
 define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 24
-  %5 = sdiv exact i64 %0, 24
-  %6 = add nsw i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = sdiv exact i64 %3, -24
+  %4 = sdiv exact i64 %0, 24
+  %5 = icmp eq i64 %4, %.neg
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -43,11 +42,10 @@ entry:
 define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = sdiv i64 %0, 7
-  %6 = add nsw i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = sdiv exact i64 %3, -40
+  %4 = sdiv i64 %0, 7
+  %5 = icmp eq i64 %4, %.neg
+  ret i1 %5
 }
 
 ; 1 occurrences:

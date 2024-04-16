@@ -48,7 +48,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 67
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, 255
   %6 = getelementptr inbounds i16, ptr %0, i64 %5
   ret ptr %6

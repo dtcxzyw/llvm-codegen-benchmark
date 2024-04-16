@@ -32,10 +32,10 @@
 define i128 @func0000000000000002(i128 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = zext i64 %4 to i128
   %6 = mul nuw i128 %5, 11376068507788127593
-  %7 = xor i128 %0, %6
+  %7 = xor i128 %6, %0
   ret i128 %7
 }
 

@@ -6,7 +6,7 @@
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = tail call noundef i32 @llvm.bswap.i32(i32 %3)
   %5 = lshr i32 %4, 8
   ret i32 %5
@@ -23,7 +23,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = tail call i64 @llvm.bswap.i64(i64 %3)
   %5 = lshr i64 %4, 32
   ret i64 %5

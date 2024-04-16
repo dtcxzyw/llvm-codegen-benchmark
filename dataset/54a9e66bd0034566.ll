@@ -672,7 +672,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4194304
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   ret i32 %3
 }
 
@@ -744,7 +744,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 248
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   ret i32 %3
 }
 

@@ -34,7 +34,7 @@ define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
 entry:
   %2 = sdiv i16 %1, 2
   %3 = sext i16 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
@@ -48,8 +48,8 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 1000
   %3 = sext i32 %2 to i64
-  %4 = add i64 %0, %3
-  %5 = icmp eq i64 %4, 0
+  %4 = sub i64 0, %0
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -60,8 +60,8 @@ define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %0, %3
-  %5 = icmp eq i64 %4, 0
+  %4 = sub i64 0, %0
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 

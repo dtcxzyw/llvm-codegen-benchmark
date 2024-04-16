@@ -7,7 +7,7 @@
 define i32 @func0000000000000002(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

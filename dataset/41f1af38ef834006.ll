@@ -26,7 +26,7 @@ entry:
 define double @func0000000000000004(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = sitofp i64 %2 to double
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fcmp ogt double %4, %0
   %6 = select i1 %5, double %4, double %0
   ret double %6

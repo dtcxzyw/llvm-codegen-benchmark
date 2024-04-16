@@ -21,9 +21,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 1
-  %6 = getelementptr inbounds %"struct.std::__1::pair.61.1562244", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 24
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.std::__1::pair.61.1562244", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:

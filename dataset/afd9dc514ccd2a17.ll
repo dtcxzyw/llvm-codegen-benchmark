@@ -11,7 +11,7 @@ entry:
   %4 = xor i8 %3, -1
   %5 = trunc i64 %1 to i8
   %6 = or i8 %5, %4
-  %7 = and i8 %0, %6
+  %7 = and i8 %6, %0
   ret i8 %7
 }
 

@@ -90,11 +90,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call { i32, i1 } @llvm.smul.with.overflow.i32(i32 %1, i32 10)
-  %3 = extractvalue { i32, i1 } %2, 0
-  %4 = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %3, i32 %0)
-  %5 = extractvalue { i32, i1 } %4, 1
-  ret i1 %5
+  %2 = mul i32 %1, 10
+  %3 = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %2, i32 %0)
+  %4 = extractvalue { i32, i1 } %3, 1
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

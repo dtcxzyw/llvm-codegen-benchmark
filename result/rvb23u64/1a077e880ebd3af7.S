@@ -28,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a4, a3, 63
 	or	a4, a6, a4
 	srai	a3, a3, 1
-	xor	a5, a2, a3
+	xor	a5, a3, a2
 	slt	a2, a2, a3
 	czero.eqz	a2, a2, a5
 	sltu	a1, a1, a4

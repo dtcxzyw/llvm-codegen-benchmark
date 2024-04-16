@@ -126,10 +126,9 @@ define i1 @func000000000000014c(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -56671232
   %2 = icmp ult i32 %1, 8176
-  %3 = add nsw i32 %0, -56613888
-  %4 = icmp ne i32 %3, 65279
-  %5 = and i1 %4, %2
-  ret i1 %5
+  %3 = icmp ne i32 %0, 56679167
+  %4 = and i1 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

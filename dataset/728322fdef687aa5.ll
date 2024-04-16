@@ -80,8 +80,8 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 83, i32 87
   %4 = select i1 %2, i32 78, i32 69
-  %5 = icmp sgt i32 %0, -1
-  %6 = select i1 %5, i32 %3, i32 %4
+  %5 = icmp slt i32 %0, 0
+  %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }
 

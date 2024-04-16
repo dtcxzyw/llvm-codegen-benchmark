@@ -27,6 +27,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
 	li	a4, -1000
+	zext.w	a4, a4
 	mul	a2, a2, a4
 	mulh	a1, a1, a3
 	srli	a3, a1, 63

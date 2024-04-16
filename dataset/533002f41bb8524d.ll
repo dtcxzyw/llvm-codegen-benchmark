@@ -12,11 +12,9 @@
 ; Function Attrs: nounwind
 define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, %0
-  %4 = sub nsw i32 %3, %1
-  %5 = sub nsw i32 %4, %0
-  %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  ret i32 %6
+  %3 = sub i32 %2, %1
+  %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -27,11 +25,9 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, %0
-  %4 = sub i32 %3, %1
-  %5 = sub nsw i32 %4, %0
-  %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  ret i32 %6
+  %3 = sub i32 %2, %1
+  %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

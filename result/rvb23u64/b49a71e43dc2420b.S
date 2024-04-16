@@ -31,10 +31,10 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000241:                   # @func0000000000000241
 	sext.b	a1, a1
-	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -48
+	addi	a1, a1, -48
+	li	a2, -10
+	mulw	a0, a0, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000246:                   # @func0000000000000246

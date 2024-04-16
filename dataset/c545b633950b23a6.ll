@@ -9,11 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = xor i64 %2, -1
-  %4 = add i64 %1, %3
-  %5 = icmp ne i64 %4, 0
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %3 = add i64 %1, -1
+  %4 = icmp ne i64 %3, %2
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -21,11 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, -1
-  %4 = add i32 %1, %3
-  %5 = icmp slt i32 %4, 32768
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %3 = sub i32 %2, %1
+  %4 = icmp sgt i32 %3, -32769
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 7 occurrences:
@@ -39,11 +37,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = xor i64 %2, -1
-  %4 = add nsw i64 %1, %3
-  %5 = icmp sgt i64 %4, 0
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %3 = sub i64 %2, %1
+  %4 = icmp slt i64 %3, -1
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 11 occurrences:
@@ -61,11 +58,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %4, 1
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = sub i32 %2, %1
+  %4 = icmp slt i32 %3, -2
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -73,11 +69,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, 8192
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %3 = sub i64 %2, %1
+  %4 = icmp ugt i64 %3, -8193
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -85,11 +80,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, -1
-  %4 = add nsw i32 %1, %3
-  %5 = icmp ne i32 %4, 0
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = add i32 %1, -1
+  %4 = icmp ne i32 %3, %2
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

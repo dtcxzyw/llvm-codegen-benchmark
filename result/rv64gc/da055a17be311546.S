@@ -2,8 +2,9 @@ func0000000000000184:                   # @func0000000000000184
 	bltz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
-	slli	a0, a0, 48
-	srli	a0, a0, 59
+	li	a1, 31
+	slli	a1, a1, 11
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048

@@ -7,9 +7,8 @@ define i1 @func0000000000000051(i8 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -9223372036854775808
   %4 = select i1 %3, i8 %1, i8 0
-  %5 = sub nsw i8 %4, %0
-  %6 = icmp eq i8 %5, 0
-  ret i1 %6
+  %5 = icmp eq i8 %4, %0
+  ret i1 %5
 }
 
 ; 6 occurrences:

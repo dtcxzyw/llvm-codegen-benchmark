@@ -16,7 +16,7 @@ define i32 @func0000000000000002(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -29,7 +29,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -42,7 +42,7 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -55,7 +55,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -69,7 +69,7 @@ define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -81,7 +81,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -92,7 +92,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -103,7 +103,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 
@@ -114,7 +114,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

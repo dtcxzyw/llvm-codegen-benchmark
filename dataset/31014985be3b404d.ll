@@ -12,7 +12,7 @@ define i16 @func0000000000000000(i16 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fptosi float %3 to i16
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   ret i16 %5
 }
 
@@ -36,7 +36,7 @@ define i32 @func0000000000000001(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fptosi float %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

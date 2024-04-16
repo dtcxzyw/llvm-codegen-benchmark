@@ -4,7 +4,7 @@ func0000000000000040:                   # @func0000000000000040
 	bltu	a4, a3, .LBB0_2
 	addi	a1, a2, -1
 .LBB0_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

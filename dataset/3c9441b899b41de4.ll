@@ -1715,7 +1715,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = and i32 %2, 2046
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -1727,7 +1727,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = and i32 %2, 1048576
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 

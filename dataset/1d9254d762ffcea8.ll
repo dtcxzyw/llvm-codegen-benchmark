@@ -47,9 +47,8 @@ define ptr @func0000000000000063(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr inbounds [0 x [3 x i8]], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %4 = getelementptr inbounds [0 x [3 x i8]], ptr %0, i64 0, i64 %3, i64 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -59,9 +58,8 @@ define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr inbounds [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %0, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -72,9 +70,8 @@ define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr inbounds [2 x %"class.rawspeed::PrefixCodeLUTDecoder.1770346"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 72
-  ret ptr %5
+  %4 = getelementptr inbounds [2 x %"class.rawspeed::PrefixCodeLUTDecoder.1770346"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -87,9 +84,8 @@ define ptr @func0000000000000009(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x %struct.JSValue.1908861], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.JSValue.1908861], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -100,9 +96,8 @@ define ptr @func0000000000000061(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x %struct.iax_call_dirdata.1916259], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.iax_call_dirdata.1916259], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -112,9 +107,8 @@ define ptr @func0000000000000040(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x [2 x i32]], ptr %0, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [2 x [2 x i32]], ptr %0, i64 0, i64 %3, i64 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -125,9 +119,8 @@ define ptr @func0000000000000041(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -137,9 +130,8 @@ define ptr @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -149,9 +141,8 @@ define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr inbounds [2 x %"class.std::vector.268.2038004"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [2 x %"class.std::vector.268.2038004"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -162,9 +153,8 @@ define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 343
   %3 = zext i1 %2 to i64
-  %4 = getelementptr inbounds [2 x %"class.std::vector.86.2047895"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [2 x %"class.std::vector.86.2047895"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

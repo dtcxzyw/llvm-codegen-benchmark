@@ -21,7 +21,7 @@ entry:
 define i1 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fmul double %0, %2
+  %3 = fmul double %2, %0
   %4 = fptoui double %3 to i32
   %5 = icmp ult i32 %4, 2
   ret i1 %5

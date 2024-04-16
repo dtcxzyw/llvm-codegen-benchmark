@@ -12,7 +12,7 @@ define i1 @func000000000000014c(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -91
   %4 = icmp ult i32 %3, -26
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = icmp ne i64 %0, 95
   %7 = and i1 %6, %5
   ret i1 %7
@@ -80,7 +80,7 @@ define i1 @func0000000000000044(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = icmp ult i64 %3, -2
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = icmp ult i32 %0, 20
   %7 = and i1 %6, %5
   ret i1 %7
@@ -109,7 +109,7 @@ define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -3
   %4 = icmp ult i32 %3, -2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp ult i32 %1, -2
   %7 = and i1 %5, %6
   ret i1 %7
@@ -122,7 +122,7 @@ define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 16658
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = icmp ugt i32 %1, 63
   %7 = and i1 %5, %6
   ret i1 %7

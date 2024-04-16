@@ -16,8 +16,10 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	slli	a0, a0, 16
-	srli	a0, a0, 33
+	lui	a1, 524288
+	addiw	a1, a1, -1
+	slli	a1, a1, 17
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c

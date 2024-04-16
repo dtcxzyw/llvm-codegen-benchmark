@@ -6,22 +6,22 @@ func0000000000000101:                   # @func0000000000000101
 	seqz	a0, a0
 	ret
 func0000000000000188:                   # @func0000000000000188
-	bset	a1, zero, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	li	a2, -1
+	sll	a1, a2, a1
+	andn	a0, a0, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	bset	a1, zero, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	li	a2, -1
+	sll	a1, a2, a1
+	andn	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000181:                   # @func0000000000000181
-	bset	a1, zero, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	li	a2, -1
+	sll	a1, a2, a1
+	andn	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000121:                   # @func0000000000000121

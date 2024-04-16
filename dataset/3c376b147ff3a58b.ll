@@ -34,7 +34,7 @@ entry:
 define i64 @func00000000000000fb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 12
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = zext i32 %0 to i64
   %7 = add nuw nsw i64 %6, %5

@@ -9,15 +9,16 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000009:                   # @func0000000000000009
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	bgeu	a1, a2, .LBB1_2
-	mv	a0, a1
+	bltu	a1, a2, .LBB1_2
+	mv	a1, a0
 .LBB1_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a3, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	beq	a3, a2, .LBB2_2
+	beq	a2, a3, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
 	ret

@@ -175,10 +175,8 @@ define i1 @func0000000000000781(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, 10
   %3 = add nuw nsw i128 %2, %0
-  %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp ult i128 %3, 18446744073709551616
+  ret i1 %4
 }
 
 ; 10 occurrences:
@@ -197,10 +195,8 @@ define i1 @func00000000000007b1(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
   %3 = add nuw nsw i64 %2, %0
-  %4 = lshr i64 %3, 32
-  %5 = trunc nuw nsw i64 %4 to i32
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %4 = icmp ult i64 %3, 4294967296
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -212,9 +208,9 @@ entry:
 define i1 @func0000000000000788(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000000000
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   %6 = icmp ugt i32 %5, 999999999
   ret i1 %6
 }
@@ -226,10 +222,8 @@ define i1 @func0000000000000501(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, 10000000000000000000
   %3 = add nuw i128 %2, %0
-  %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp ult i128 %3, 18446744073709551616
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

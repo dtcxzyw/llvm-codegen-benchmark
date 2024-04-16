@@ -17,9 +17,9 @@
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.umax.i64(i64 %1, i64 %0)
-  %3 = icmp ne i64 %1, 0
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
+  %.not = icmp eq i64 %1, 0
+  %3 = select i1 %.not, i64 %0, i64 %2
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

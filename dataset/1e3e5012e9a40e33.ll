@@ -12,7 +12,7 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = icmp ugt ptr %3, %1
   %5 = getelementptr i8, ptr %1, i64 %2
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

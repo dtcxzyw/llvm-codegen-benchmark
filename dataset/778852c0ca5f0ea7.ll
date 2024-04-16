@@ -21,7 +21,7 @@ entry:
   %3 = freeze i16 %2
   %4 = add i16 %1, -1
   %5 = icmp ult i16 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

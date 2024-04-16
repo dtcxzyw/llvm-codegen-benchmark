@@ -112,7 +112,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = icmp ne i8 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -226,7 +226,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = icmp ne i8 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -341,7 +341,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = icmp ne i8 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -354,7 +354,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = icmp ne i8 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 
@@ -366,7 +366,7 @@ entry:
 define i32 @func0000000000000051(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
   %5 = zext i1 %4 to i32
   %6 = add nsw i32 %5, %0
@@ -379,10 +379,10 @@ entry:
 define i64 @func0000000000000043(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp ugt i32 %3, 999999999
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

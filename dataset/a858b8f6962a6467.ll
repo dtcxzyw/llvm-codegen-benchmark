@@ -24,9 +24,9 @@ define i64 @func0000000000000000(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = zext i32 %0 to i64
-  %7 = sub i64 %5, %6
+  %5 = zext i32 %0 to i64
+  %6 = add i64 %3, %5
+  %7 = sub i64 %4, %6
   ret i64 %7
 }
 
@@ -38,9 +38,9 @@ define i64 @func0000000000000001(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = zext i32 %0 to i64
-  %7 = sub nsw i64 %5, %6
+  %5 = zext i32 %0 to i64
+  %6 = add i64 %3, %5
+  %7 = sub i64 %4, %6
   ret i64 %7
 }
 

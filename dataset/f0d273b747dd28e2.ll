@@ -16,7 +16,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = xor i1 %1, true
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = icmp ne i32 %2, 1
   %4 = xor i1 %1, true
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

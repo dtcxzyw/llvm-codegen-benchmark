@@ -17,10 +17,11 @@ func0000000000000004:                   # @func0000000000000004
 	mv	a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addiw	a2, a1, -48
-	li	a1, 128
 	andi	a0, a0, 1
-	bgeu	a2, a1, .LBB1_2
+	addiw	a2, a1, -176
+	li	a3, -128
+	li	a1, 128
+	bltu	a2, a3, .LBB1_2
 	li	a1, 64
 .LBB1_2:                                # %entry
 	addi	a0, a0, -1

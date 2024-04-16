@@ -169,10 +169,10 @@
 define i1 @func0000000000000064(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = icmp ult i64 %1, %4
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %.highbits = lshr i64 %1, %3
+  %4 = icmp eq i64 %.highbits, 0
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -182,8 +182,8 @@ define i1 @func0000000000000061(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = icmp eq i32 %1, %4
-  %6 = and i1 %0, %5
+  %5 = icmp eq i32 %4, %1
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -194,8 +194,8 @@ define i1 @func0000000000000065(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = icmp ule i64 %1, %4
-  %6 = and i1 %0, %5
+  %5 = icmp uge i64 %4, %1
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

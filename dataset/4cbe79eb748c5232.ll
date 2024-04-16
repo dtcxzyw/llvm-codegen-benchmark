@@ -7,7 +7,7 @@ entry:
   %3 = fdiv float %1, %2
   %4 = tail call float @llvm.fabs.f32(float %3) #2
   %5 = fcmp ole float %4, 0x3810000000000000
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = fdiv double %1, %2
   %4 = call double @llvm.fabs.f64(double %3)
   %5 = fcmp oge double %4, 1.000000e+00
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

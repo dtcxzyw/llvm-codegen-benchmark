@@ -183,9 +183,8 @@ define i1 @func000000000000011a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = trunc i64 %0 to i32
-  %5 = sub nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp slt i32 %3, %4
+  ret i1 %5
 }
 
 ; 4 occurrences:

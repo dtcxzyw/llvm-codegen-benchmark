@@ -7,8 +7,8 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = and i64 %2, 4294967295
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = and i64 %3, 34359738360
   ret i64 %4
 }
 
@@ -19,8 +19,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = and i64 %2, 9223372036854775804
-  %4 = shl i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = and i64 %3, -32
   ret i64 %4
 }
 
@@ -31,8 +31,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = and i64 %2, -8
-  %4 = shl nsw i64 %3, 1
+  %3 = shl i64 %2, 1
+  %4 = and i64 %3, -16
   ret i64 %4
 }
 
@@ -42,9 +42,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = and i32 %2, 65535
-  %4 = shl nuw i32 %3, 16
-  ret i32 %4
+  %3 = shl i32 %2, 16
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -55,8 +54,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = and i64 %2, -4
-  %4 = shl i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = and i64 %3, -32
   ret i64 %4
 }
 
@@ -66,8 +65,8 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = and i64 %2, 65535
-  %4 = shl nuw nsw i64 %3, 12
+  %3 = shl i64 %2, 12
+  %4 = and i64 %3, 268431360
   ret i64 %4
 }
 

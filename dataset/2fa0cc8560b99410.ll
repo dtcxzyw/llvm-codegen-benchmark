@@ -8,7 +8,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %1, 100
   %5 = icmp ugt i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

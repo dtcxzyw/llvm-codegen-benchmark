@@ -10,8 +10,9 @@ define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub nsw i64 %3, %0
-  %5 = udiv i64 %4, 365
-  %6 = mul i64 %5, -365
+  %.fr = freeze i64 %4
+  %5 = urem i64 %.fr, 365
+  %6 = sub i64 %5, %.fr
   ret i64 %6
 }
 
@@ -31,8 +32,9 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sub i32 %3, %0
-  %5 = udiv i32 %4, 365
-  %6 = mul i32 %5, -365
+  %.fr = freeze i32 %4
+  %5 = urem i32 %.fr, 365
+  %6 = sub i32 %5, %.fr
   ret i32 %6
 }
 

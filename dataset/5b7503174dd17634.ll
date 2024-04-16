@@ -15,8 +15,8 @@ define i64 @func0000000000000016(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp slt i16 %0, 0
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = sext i32 %4 to i64
+  %4 = sext i32 %2 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
 }
 

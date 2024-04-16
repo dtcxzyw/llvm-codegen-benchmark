@@ -9,7 +9,7 @@ entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 17
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = add i64 %5, 10
   ret i64 %6
 }

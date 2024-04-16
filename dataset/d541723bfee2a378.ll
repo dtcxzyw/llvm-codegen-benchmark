@@ -9,7 +9,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = add nsw i64 %1, -2
   %6 = select i1 %4, i64 %1, i64 %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = icmp eq i8 %3, 0
   %5 = add i8 %1, -32
   %6 = select i1 %4, i8 %1, i8 %5
-  %7 = icmp eq i8 %0, %6
+  %7 = icmp eq i8 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = icmp eq i16 %3, 0
   %5 = add nsw i32 %1, -6
   %6 = select i1 %4, i32 %1, i32 %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

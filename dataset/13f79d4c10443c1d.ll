@@ -6,7 +6,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
   %3 = fcmp olt float %2, 0.000000e+00
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -27,9 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = bitcast i64 %1 to double
-  %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = and i1 %0, %3
+  %2 = and i64 %1, 9223372036854775807
+  %3 = icmp eq i64 %2, 0
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -55,7 +55,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
   %3 = fcmp uno double %2, 0.000000e+00
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -64,8 +64,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
-  %2 = bitcast i32 %1 to float
-  %3 = fcmp une float %2, 0.000000e+00
+  %2 = and i32 %1, 2147483647
+  %3 = icmp ne i32 %2, 0
   %4 = and i1 %3, %0
   ret i1 %4
 }

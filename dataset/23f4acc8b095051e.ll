@@ -23,7 +23,7 @@ entry:
   %4 = add nsw i32 %3, 10
   %5 = sdiv i32 %1, -2
   %6 = add nsw i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

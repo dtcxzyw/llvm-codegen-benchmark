@@ -29,9 +29,8 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 %1)
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
   %5 = add nsw i32 %0, %1
-  %6 = sub nsw i32 %5, %4
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i32 %5, %4
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

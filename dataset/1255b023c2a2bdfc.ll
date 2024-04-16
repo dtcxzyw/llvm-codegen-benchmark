@@ -1272,7 +1272,7 @@ entry:
 define i1 @func000000000000001b(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = icmp sge i64 %0, 0
+  %3 = icmp sgt i64 %0, -1
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

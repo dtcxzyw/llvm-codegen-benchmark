@@ -34,8 +34,8 @@ entry:
 define i64 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %0, -1
-  %5 = sub nsw i32 %4, %3
+  %4 = xor i32 %3, -1
+  %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   %7 = add nuw nsw i64 %6, 1
   ret i64 %7
@@ -50,8 +50,8 @@ entry:
 define i64 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %0, -1
-  %5 = sub i32 %4, %3
+  %4 = xor i32 %3, -1
+  %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   %7 = add nuw nsw i64 %6, 1
   ret i64 %7

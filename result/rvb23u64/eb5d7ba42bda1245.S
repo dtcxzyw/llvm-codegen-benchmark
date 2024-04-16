@@ -1,7 +1,7 @@
 func000000000000000a:                   # @func000000000000000a
 	or	a1, a1, a2
-	srai	a1, a1, 63
-	andn	a0, a0, a1
+	slti	a1, a1, 0
+	czero.nez	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	or	a1, a1, a2
@@ -42,10 +42,10 @@ func0000000000000018:                   # @func0000000000000018
 func000000000000000c:                   # @func000000000000000c
 	or	a1, a1, a2
 	sext.w	a1, a1
-	li	a2, -6
-	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	li	a2, -6
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	or	a1, a1, a2

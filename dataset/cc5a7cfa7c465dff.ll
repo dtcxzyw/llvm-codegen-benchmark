@@ -310,7 +310,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = xor i64 %4, 9223372036854775807
-  %6 = icmp ule i64 %0, %5
+  %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
 

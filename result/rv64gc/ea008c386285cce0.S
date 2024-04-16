@@ -11,8 +11,9 @@ func0000000000000010:                   # @func0000000000000010
 .LBB1_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	sext.w	a2, a2
-	bltz	a2, .LBB2_2
-	mv	a0, a1
+	slli	a2, a2, 32
+	bgez	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
+	mv	a0, a1
 	ret

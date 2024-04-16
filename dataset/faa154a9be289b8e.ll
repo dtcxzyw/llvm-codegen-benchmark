@@ -9,7 +9,7 @@
 define i1 @func0000000000000082(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = fcmp olt double %0, 1.000000e+03
   %6 = and i1 %5, %4
   ret i1 %6

@@ -248,7 +248,7 @@ define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = lshr i64 %2, 7
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 

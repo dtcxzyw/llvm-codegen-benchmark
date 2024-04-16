@@ -28,7 +28,7 @@
 define i32 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nuw nsw i32 64, %3
   %5 = shl i32 10, %4
   %6 = select i1 %0, i32 40960, i32 %5

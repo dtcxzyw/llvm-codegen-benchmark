@@ -8,7 +8,7 @@ entry:
   %4 = icmp ult i8 %3, -65
   %5 = icmp ult i8 %1, %2
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

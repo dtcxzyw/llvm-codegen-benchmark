@@ -15,9 +15,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.smax.i32(i32 %0, i32 1)
-  %2 = icmp eq i32 %1, 1
-  ret i1 %2
+  %1 = icmp slt i32 %0, 2
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

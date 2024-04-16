@@ -7,18 +7,11 @@ func0000000000000058:                   # @func0000000000000058
 	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sub	a1, a0, a1
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sub	a1, a0, a1
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	snez	a0, a0
+	sltu	a0, a1, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sub	a1, a0, a1
@@ -28,18 +21,12 @@ func000000000000001a:                   # @func000000000000001a
 	sgtz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	sub	a1, a0, a1
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000061:                   # @func0000000000000061
-	sub	a1, a0, a1
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sub	a1, a0, a1
@@ -49,18 +36,11 @@ func0000000000000064:                   # @func0000000000000064
 	sltiu	a0, a0, 2
 	ret
 func000000000000004c:                   # @func000000000000004c
-	sub	a1, a0, a1
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	snez	a0, a0
+	sltu	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sub	a1, a0, a1
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sub	a1, a0, a1
@@ -73,12 +53,10 @@ func0000000000000048:                   # @func0000000000000048
 	sltu	a0, a1, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
-	subw	a1, a0, a1
 	sext.w	a0, a0
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sext.w	a1, a1
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a1, a0, a1
@@ -120,12 +98,10 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	subw	a1, a0, a1
 	sext.w	a0, a0
-	sltu	a0, a0, a1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sext.w	a1, a1
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func000000000000005a:                   # @func000000000000005a
 	subw	a1, a0, a1

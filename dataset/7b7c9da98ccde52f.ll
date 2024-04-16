@@ -10,7 +10,7 @@ define i8 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = urem i64 %2, 36
-  %4 = trunc i64 %3 to i8
+  %4 = trunc nuw nsw i64 %3 to i8
   ret i8 %4
 }
 
@@ -28,7 +28,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = urem i64 %2, 51113
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 
@@ -40,7 +40,7 @@ define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = urem i64 %2, 1000000000
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

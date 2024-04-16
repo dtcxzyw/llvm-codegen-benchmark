@@ -1,30 +1,28 @@
 func0000000000000011:                   # @func0000000000000011
-	slli	a1, a1, 35
-	srli	a1, a1, 60
-	li	a2, 7
-	bne	a1, a2, .LBB0_2
-	li	a0, 2
-.LBB0_2:                                # %entry
 	sext.w	a0, a0
+	lui	a2, 122880
+	and	a1, a1, a2
+	lui	a2, 57344
+	xor	a1, a1, a2
+	seqz	a1, a1
 	addi	a0, a0, -2
 	seqz	a0, a0
+	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	slli	a1, a1, 33
-	srli	a1, a1, 56
-	bnez	a1, .LBB1_2
-	li	a0, -151
-.LBB1_2:                                # %entry
 	sext.w	a0, a0
+	lui	a2, 522240
+	and	a1, a1, a2
+	snez	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	slli	a1, a1, 33
-	srli	a1, a1, 56
-	bnez	a1, .LBB2_2
-	li	a0, -151
-.LBB2_2:                                # %entry
 	sext.w	a0, a0
+	lui	a2, 522240
+	and	a1, a1, a2
+	snez	a1, a1
 	sltiu	a0, a0, 4
+	and	a0, a0, a1
 	ret

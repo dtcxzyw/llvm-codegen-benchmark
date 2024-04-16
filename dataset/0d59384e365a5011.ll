@@ -255,9 +255,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 33 occurrences:
@@ -299,9 +298,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr inbounds %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -329,9 +327,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %class.TrafficTypesRowData.1918522, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %class.TrafficTypesRowData.1918522, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -66,10 +66,9 @@ entry:
 define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 64
-  %3 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %2, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
+  %3 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %2, i64 %0, i32 0, i32 1
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
 }
 
 ; 14 occurrences:

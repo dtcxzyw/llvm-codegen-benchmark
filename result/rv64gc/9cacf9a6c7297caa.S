@@ -1,7 +1,9 @@
 func0000000000000041:                   # @func0000000000000041
-	subw	a2, a2, a0
+	sext.w	a2, a2
+	sext.w	a3, a0
 	sltu	a0, a0, a1
-	neg	a0, a0
-	and	a0, a0, a2
-	seqz	a0, a0
+	xori	a0, a0, 1
+	xor	a2, a2, a3
+	seqz	a1, a2
+	or	a0, a0, a1
 	ret

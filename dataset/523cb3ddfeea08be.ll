@@ -5,9 +5,9 @@
 define i1 @func00000000000001c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 6
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -18,9 +18,9 @@ entry:
 define i1 @func0000000000000041(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 
@@ -30,9 +30,9 @@ entry:
 define i1 @func0000000000000181(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 

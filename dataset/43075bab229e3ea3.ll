@@ -157,11 +157,11 @@
 define i64 @func0000000000000028(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add nuw i64 %0, %3
-  %5 = shl nuw i64 1, %1
-  %6 = add i64 %5, -1
-  %7 = and i64 %6, %4
-  ret i64 %7
+  %4 = add nuw i64 %3, %0
+  %notmask = shl nsw i64 -1, %1
+  %5 = xor i64 %notmask, -1
+  %6 = and i64 %4, %5
+  ret i64 %6
 }
 
 ; 9 occurrences:
@@ -178,11 +178,11 @@ entry:
 define i64 @func00000000000000a8(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %0, %3
-  %5 = shl nuw i64 1, %1
-  %6 = add i64 %5, -1
-  %7 = and i64 %6, %4
-  ret i64 %7
+  %4 = add nuw i64 %3, %0
+  %notmask = shl nsw i64 -1, %1
+  %5 = xor i64 %notmask, -1
+  %6 = and i64 %4, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

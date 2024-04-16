@@ -8,7 +8,7 @@ entry:
   %4 = add nsw i64 %3, %1
   %5 = icmp slt i64 %4, 3
   %6 = zext i1 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -29,7 +29,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = icmp ult i32 %4, 3
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = icmp ult i32 %4, 3
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 

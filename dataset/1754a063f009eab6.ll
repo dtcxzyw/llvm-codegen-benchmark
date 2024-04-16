@@ -7,10 +7,10 @@
 define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 12
-  %2 = add i64 %1, -2147483648
-  %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i64 -1073741824, i64 %2
-  %5 = icmp ugt i64 %4, -2145386497
+  %2 = icmp eq i64 %0, 0
+  %3 = add i64 %1, -2097152
+  %4 = icmp ult i64 %3, 2145386496
+  %5 = select i1 %2, i1 true, i1 %4
   ret i1 %5
 }
 

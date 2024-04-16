@@ -8,7 +8,7 @@ entry:
   %3 = add i64 %2, -5
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
   %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

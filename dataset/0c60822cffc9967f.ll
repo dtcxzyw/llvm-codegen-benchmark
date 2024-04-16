@@ -21,11 +21,10 @@
 define i1 @func000000000000015a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %0, -13
-  %6 = sub nsw i32 %5, %4
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i32 %5, %4
+  ret i1 %6
 }
 
 ; 13 occurrences:
@@ -46,11 +45,10 @@ entry:
 define i1 @func0000000000000101(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = add i64 %0, -4
-  %6 = sub i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
 }
 
 ; 6 occurrences:
@@ -64,7 +62,7 @@ entry:
 define i1 @func0000000000000104(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = add i64 %0, -3
   %6 = sub i64 %5, %4
   %7 = icmp ult i64 %6, 2
@@ -77,7 +75,7 @@ entry:
 define i1 @func0000000000000118(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = add i64 %0, -8
   %6 = sub nsw i64 %5, %4
   %7 = icmp ugt i64 %6, 7
@@ -90,7 +88,7 @@ entry:
 define i1 @func0000000000000108(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = add i64 %0, -4
   %6 = sub i64 %5, %4
   %7 = icmp ugt i64 %6, 1

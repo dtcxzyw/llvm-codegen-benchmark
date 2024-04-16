@@ -7,9 +7,9 @@
 define double @func000000000000000d(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %1, %3
+  %4 = mul nsw i32 %3, %1
   %5 = sitofp i32 %4 to double
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 
@@ -20,9 +20,9 @@ entry:
 define double @func0000000000000005(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %1, %3
+  %4 = mul nsw i32 %3, %1
   %5 = sitofp i32 %4 to double
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

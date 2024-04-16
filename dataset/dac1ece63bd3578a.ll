@@ -6,8 +6,8 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 112
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds float, ptr %0, i64 %4
+  %4 = getelementptr float, ptr %0, i64 %3
+  %5 = getelementptr float, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -18,8 +18,8 @@ entry:
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv exact i64 %2, 104
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds { { i64, [3 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, i8 }, i8, [7 x i8] }, ptr %0, i64 %4
+  %4 = getelementptr { { i64, [3 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, i8 }, i8, [7 x i8] }, ptr %0, i64 %3
+  %5 = getelementptr { { i64, [3 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, i8 }, i8, [7 x i8] }, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -29,8 +29,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 255
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   ret ptr %5
 }
 

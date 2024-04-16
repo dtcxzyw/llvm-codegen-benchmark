@@ -5,7 +5,7 @@
 define i1 @func0000000000000245(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = icmp ule i32 %0, %3
+  %4 = icmp uge i32 %3, %0
   %5 = icmp ult i32 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   %5 = icmp ugt i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   %5 = icmp ne i64 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -41,7 +41,7 @@ entry:
 define i1 @func0000000000000054(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, -1
-  %4 = icmp ule i16 %0, %3
+  %4 = icmp uge i16 %3, %0
   %5 = icmp ult i16 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -55,7 +55,7 @@ entry:
 define i1 @func0000000000000059(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 17
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   %5 = icmp ule i64 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -67,7 +67,7 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   %5 = icmp eq i64 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -79,7 +79,7 @@ entry:
 define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   %5 = icmp slt i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -91,7 +91,7 @@ entry:
 define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   %5 = icmp slt i32 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -103,7 +103,7 @@ entry:
 define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   %5 = icmp ult i64 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6

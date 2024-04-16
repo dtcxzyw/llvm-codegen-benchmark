@@ -10,7 +10,7 @@ entry:
   %2 = or i8 %1, 32
   %3 = add i8 %2, -97
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = or i32 %1, 32
   %3 = add nsw i32 %2, -97
   %4 = icmp ult i32 %3, 6
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

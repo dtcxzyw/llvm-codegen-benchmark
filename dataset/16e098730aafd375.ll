@@ -11,8 +11,8 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = and i64 %1, 8589934584
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, -8
   ret i32 %3
 }
 

@@ -112,7 +112,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 2
   %5 = sub nsw i32 %4, %1
   %6 = lshr i32 %5, 5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

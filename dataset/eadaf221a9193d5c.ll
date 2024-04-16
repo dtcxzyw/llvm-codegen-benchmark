@@ -23,7 +23,7 @@ entry:
   %4 = lshr exact i64 %3, 2
   %5 = trunc i64 %4 to i32
   %6 = icmp ne i32 %5, 2
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -39,7 +39,7 @@ entry:
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = lshr i64 %3, 2
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, 31
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -82,7 +82,7 @@ entry:
   %4 = lshr i64 %3, 2
   %5 = trunc i64 %4 to i32
   %6 = icmp slt i32 %5, 1
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

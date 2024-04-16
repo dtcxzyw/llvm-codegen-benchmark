@@ -8,10 +8,9 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
-  %3 = and i64 %2, 2047
-  %4 = sub nsw i64 %3, %0
-  %5 = and i64 %4, 63
-  ret i64 %5
+  %3 = sub i64 %2, %0
+  %4 = and i64 %3, 63
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

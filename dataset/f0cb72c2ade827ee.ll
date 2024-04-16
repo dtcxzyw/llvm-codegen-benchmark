@@ -12,9 +12,9 @@
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or i32 %0, %2
-  %4 = and i32 %3, 253953
-  ret i32 %4
+  %.masked = and i32 %0, 253953
+  %3 = or i32 %.masked, %2
+  ret i32 %3
 }
 
 ; 13 occurrences:
@@ -35,9 +35,9 @@ entry:
 define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %0, %2
-  %4 = and i8 %3, 63
-  ret i8 %4
+  %.masked = and i8 %0, 63
+  %3 = or i8 %.masked, %2
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

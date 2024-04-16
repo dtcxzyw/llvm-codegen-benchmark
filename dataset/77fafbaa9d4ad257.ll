@@ -10,11 +10,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 8191
-  %2 = sub nuw nsw i64 8192, %1
-  %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %2)
-  %4 = extractvalue { i64, i1 } %3, 0
-  ret i64 %4
+  %reass.sub = and i64 %0, -8192
+  %1 = add i64 %reass.sub, 8192
+  ret i64 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -24,10 +24,10 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = sub nsw i64 %0, %2
-  %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 0)
-  ret i64 %4
+  %.neg = xor i64 %1, -1
+  %2 = add i64 %.neg, %0
+  %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 0)
+  ret i64 %3
 }
 
 ; 4 occurrences:

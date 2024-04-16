@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000014(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = and i128 %2, 18446744073709551615
-  %4 = or disjoint i128 %0, %3
+  %4 = or disjoint i128 %3, %0
   %5 = add i128 %1, 1
   %6 = icmp ult i128 %4, %5
   ret i1 %6

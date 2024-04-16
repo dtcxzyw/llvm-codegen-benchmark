@@ -10,6 +10,6 @@ func0000000000000000:                   # @func0000000000000000
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	fcvt.w.d	a0, fa5, rtz
 	fcvt.d.w	fa3, a0
-	fsub.d	fa5, fa5, fa3
-	fsub.d	fa0, fa4, fa5
+	fsub.d	fa5, fa3, fa5
+	fadd.d	fa0, fa5, fa4
 	ret

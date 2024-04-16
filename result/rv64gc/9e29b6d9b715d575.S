@@ -54,10 +54,9 @@ func0000000000000056:                   # @func0000000000000056
 	slt	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	li	a2, 24
-	mul	a1, a1, a2
-	mul	a0, a0, a2
 	xor	a0, a0, a1
+	slli	a0, a0, 3
+	srli	a0, a0, 3
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

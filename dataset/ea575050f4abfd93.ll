@@ -6,7 +6,7 @@
 define i64 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1408237568
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, -1062731776
   %6 = or i1 %5, %4
   %7 = select i1 %6, i64 20, i64 0
@@ -20,7 +20,7 @@ entry:
 define i32 @func0000000000000102(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 26
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i8 %0, 95
   %6 = or i1 %5, %4
   %7 = select i1 %6, i32 512, i32 0

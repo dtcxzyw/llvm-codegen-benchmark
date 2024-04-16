@@ -188,7 +188,7 @@ define i1 @func000000000000007a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = sub nuw nsw i32 32, %2
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -203,7 +203,7 @@ define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !1
   %3 = sub nuw nsw i32 32, %2
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -214,7 +214,7 @@ define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !2
   %3 = sub nuw nsw i64 64, %2
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 
@@ -228,7 +228,7 @@ define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 false), !range !2
   %3 = sub nuw nsw i64 64, %2
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 

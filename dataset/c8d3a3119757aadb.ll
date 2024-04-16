@@ -103,12 +103,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000111(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -4
-  %4 = icmp eq i32 %3, 12
-  %5 = icmp eq i8 %0, 122
-  %6 = and i1 %4, %5
-  ret i1 %6
+  %2 = icmp eq i8 %1, 16
+  %3 = icmp eq i8 %0, 122
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -117,8 +115,8 @@ entry:
 define i1 @func00000000000001c8(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -4
-  %4 = icmp ugt i32 %3, 17
+  %3 = add nsw i32 %2, -22
+  %4 = icmp ult i32 %3, -18
   %5 = icmp ne i32 %0, 0
   %6 = and i1 %4, %5
   ret i1 %6

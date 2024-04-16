@@ -8,7 +8,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr i64 %5, 3
-  %7 = icmp sgt i64 %0, %6
+  %7 = icmp slt i64 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr i64 %5, 6
-  %7 = icmp ule i64 %0, %6
+  %7 = icmp uge i64 %6, %0
   ret i1 %7
 }
 
@@ -73,7 +73,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub nuw i64 %4, %3
   %6 = lshr exact i64 %5, 3
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -170,7 +170,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub nuw i64 %4, %3
   %6 = lshr exact i64 %5, 3
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -184,7 +184,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr exact i64 %5, 3
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -201,7 +201,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr exact i64 %5, 2
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -214,7 +214,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr exact i64 %5, 2
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -227,7 +227,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr i64 %5, 12
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -240,7 +240,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = lshr i64 %5, 3
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

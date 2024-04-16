@@ -7,9 +7,9 @@
 define i16 @func000000000000000f(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = and i16 %2, 255
-  %4 = shl nuw nsw i16 %3, 1
-  %5 = add nuw nsw i16 %0, %4
+  %3 = shl i16 %2, 1
+  %4 = and i16 %3, 510
+  %5 = add nuw nsw i16 %4, %0
   ret i16 %5
 }
 

@@ -13,10 +13,11 @@ func0000000000000070:                   # @func0000000000000070
 	add	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055
-	slli	a0, a0, 3
+	negw	a1, a1
 	slli	a1, a1, 35
-	or	a0, a0, a1
-	bseti	a1, zero, 31
+	slli	a0, a0, 3
+	bseti	a2, zero, 31
+	sub	a0, a0, a2
 	sub	a0, a1, a0
 	ret
 .LCPI2_0:

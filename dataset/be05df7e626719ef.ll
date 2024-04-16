@@ -9,7 +9,7 @@ entry:
   %3 = fmul float %1, %2
   %4 = fmul float %3, 0x3FC5555560000000
   %5 = fpext float %4 to double
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

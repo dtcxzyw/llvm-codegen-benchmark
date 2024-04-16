@@ -334,9 +334,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = icmp ugt i64 %2, %0
-  ret i1 %3
+  %.highbits = lshr i64 %0, %1
+  %2 = icmp eq i64 %.highbits, 0
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -348,9 +348,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = icmp ugt i32 %2, %0
-  ret i1 %3
+  %.highbits = lshr i32 %0, %1
+  %2 = icmp eq i32 %.highbits, 0
+  ret i1 %2
 }
 
 ; 33 occurrences:

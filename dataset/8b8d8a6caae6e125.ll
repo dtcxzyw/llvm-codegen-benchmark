@@ -8,7 +8,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = urem i32 %1, 24
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
   %2 = urem i16 %1, 10
-  %3 = or i16 %0, %2
+  %3 = or i16 %2, %0
   %4 = icmp ugt i16 %3, 1
   ret i1 %4
 }

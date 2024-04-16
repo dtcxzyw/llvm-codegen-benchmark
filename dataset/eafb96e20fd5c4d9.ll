@@ -6,7 +6,7 @@
 define i1 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = shl nuw i32 1, %0
   %6 = and i32 %5, %4
   %7 = icmp eq i32 %6, 0

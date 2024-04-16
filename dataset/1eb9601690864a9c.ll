@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

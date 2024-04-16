@@ -5,7 +5,7 @@
 define i8 @func000000000000007a(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 1
-  %3 = add nuw nsw i16 %0, %2
+  %3 = add nuw nsw i16 %2, %0
   %4 = udiv i16 %3, 3
   %5 = trunc nuw i16 %4 to i8
   ret i8 %5

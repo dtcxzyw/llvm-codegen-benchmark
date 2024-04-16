@@ -91,7 +91,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw i64 %4, 32
   %6 = or disjoint i64 %5, %4
   ret i64 %6

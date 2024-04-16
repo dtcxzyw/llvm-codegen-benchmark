@@ -79,7 +79,7 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr i32 %3, 8
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -114,7 +114,7 @@ entry:
 define i16 @func000000000000003c(i48 %0, i48 %1) #0 {
 entry:
   %2 = shl nuw nsw i48 %1, 16
-  %3 = or disjoint i48 %0, %2
+  %3 = or disjoint i48 %2, %0
   %4 = lshr exact i48 %3, 16
   %5 = trunc i48 %4 to i16
   ret i16 %5
@@ -135,11 +135,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000002c(i48 %0, i48 %1) #0 {
 entry:
-  %2 = shl nuw i48 %1, 32
-  %3 = or disjoint i48 %2, %0
-  %4 = lshr exact i48 %3, 16
-  %5 = trunc i48 %4 to i16
-  ret i16 %5
+  %2 = lshr i48 %0, 16
+  %3 = trunc i48 %2 to i16
+  ret i16 %3
 }
 
 ; 1 occurrences:
@@ -148,7 +146,7 @@ entry:
 define i32 @func000000000000003e(i48 %0, i48 %1) #0 {
 entry:
   %2 = shl nuw nsw i48 %1, 16
-  %3 = or disjoint i48 %0, %2
+  %3 = or disjoint i48 %2, %0
   %4 = lshr exact i48 %3, 16
   %5 = trunc nuw i48 %4 to i32
   ret i32 %5
@@ -172,7 +170,7 @@ entry:
 define i8 @func0000000000000022(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 11
-  %3 = or i16 %0, %2
+  %3 = or i16 %2, %0
   %4 = lshr i16 %3, 8
   %5 = trunc nuw i16 %4 to i8
   ret i8 %5
@@ -217,7 +215,7 @@ entry:
 define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = lshr i32 %3, 16
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -259,9 +257,9 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 33
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -283,9 +281,9 @@ entry:
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr exact i32 %3, 16
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 
@@ -296,9 +294,9 @@ entry:
 define i32 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 7
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -322,7 +320,7 @@ entry:
 define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr i32 %3, 16
   %5 = trunc i32 %4 to i8
   ret i8 %5

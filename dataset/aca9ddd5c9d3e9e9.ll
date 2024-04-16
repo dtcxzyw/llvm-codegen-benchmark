@@ -9,7 +9,7 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.maxnum.f32(float %2, float 0.000000e+00)
-  %4 = fadd float %1, %3
+  %4 = fadd float %3, %1
   %5 = fadd float %4, %0
   ret float %5
 }

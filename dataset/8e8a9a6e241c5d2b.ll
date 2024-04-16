@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 2
-  %3 = add nuw nsw i32 %1, 3
-  %4 = select i1 %0, i32 %3, i32 %2
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
+  %.v = select i1 %0, i32 3, i32 2
+  %2 = add nuw nsw i32 %.v, %1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -19,11 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -48
-  %3 = add nsw i8 %1, -87
-  %4 = select i1 %0, i8 %3, i8 %2
-  %5 = zext nneg i8 %4 to i64
-  ret i64 %5
+  %.v = select i1 %0, i8 -87, i8 -48
+  %2 = add i8 %.v, %1
+  %3 = zext nneg i8 %2 to i64
+  ret i64 %3
 }
 
 ; 6 occurrences:
@@ -36,11 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i1 %0, i8 %1) #0 {
 entry:
-  %2 = add nsw i8 %1, -1
-  %3 = add nsw i8 %1, -2
-  %4 = select i1 %0, i8 %3, i8 %2
-  %5 = zext nneg i8 %4 to i32
-  ret i32 %5
+  %.v = select i1 %0, i8 -2, i8 -1
+  %2 = add nsw i8 %.v, %1
+  %3 = zext nneg i8 %2 to i32
+  ret i32 %3
 }
 
 ; 10 occurrences:
@@ -57,11 +54,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw i32 %1, 1
-  %3 = add i32 %1, -2
-  %4 = select i1 %0, i32 %3, i32 %2
-  %5 = zext i32 %4 to i64
-  ret i64 %5
+  %.v = select i1 %0, i32 -2, i32 1
+  %2 = add i32 %.v, %1
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -72,11 +68,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 2
-  %3 = add i32 %1, -1
-  %4 = select i1 %0, i32 %3, i32 %2
-  %5 = zext i32 %4 to i64
-  ret i64 %5
+  %.v = select i1 %0, i32 -1, i32 2
+  %2 = add i32 %.v, %1
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -87,11 +82,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = add i32 %1, -2
-  %4 = select i1 %0, i32 %3, i32 %2
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
+  %.v = select i1 %0, i32 -2, i32 -1
+  %2 = add i32 %.v, %1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

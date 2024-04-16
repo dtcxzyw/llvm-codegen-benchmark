@@ -7,11 +7,10 @@
 define i64 @func000000000000001f(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 1
-  %5 = shl nuw nsw i64 %3, 2
-  %6 = and i1 %0, %1
-  %7 = select i1 %6, i64 %5, i64 %4
-  ret i64 %7
+  %4 = and i1 %0, %1
+  %.v = select i1 %4, i64 2, i64 1
+  %5 = shl nuw nsw i64 %3, %.v
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

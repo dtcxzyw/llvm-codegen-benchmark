@@ -14,7 +14,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 8
   %6 = getelementptr inbounds %struct.aiFace.1749366, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 -1
   %6 = getelementptr inbounds i8, ptr %5, i64 %4
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -38,11 +38,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001f1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 8
-  %6 = getelementptr inbounds %"class.hermes::vm::GCHermesValueBase.1844286", ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %3 = getelementptr inbounds i8, ptr %1, i64 8
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.1844286", ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

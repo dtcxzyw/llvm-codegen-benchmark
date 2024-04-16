@@ -21,8 +21,8 @@ define i1 @func0000000000000054(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
-  %5 = sub nsw i64 %4, %3
-  %6 = add nsw i64 %5, -1
+  %5 = xor i64 %3, -1
+  %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, %0
   ret i1 %7
 }

@@ -33,8 +33,8 @@ entry:
 define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %1, %2
-  %4 = add i16 %3, 1
-  %5 = select i1 %0, i16 %4, i16 %3
+  %4 = zext i1 %0 to i16
+  %5 = add i16 %3, %4
   %6 = add i16 %5, 1
   ret i16 %6
 }

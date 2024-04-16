@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = tail call i16 @llvm.bswap.i16(i16 %1)
+  %2 = lshr i16 %1, 8
   %3 = select i1 %0, i16 %1, i16 %2
   %4 = zext i16 %3 to i64
   %5 = shl i64 %4, 56

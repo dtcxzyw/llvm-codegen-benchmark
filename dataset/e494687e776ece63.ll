@@ -9,7 +9,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nsw i64 %4, -4
   %6 = mul i64 %5, %1
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 3
   %5 = add nuw nsw i64 %4, 64
   %6 = mul i64 %5, %1
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

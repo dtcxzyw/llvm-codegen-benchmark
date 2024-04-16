@@ -8,7 +8,7 @@ entry:
   %2 = mul nsw i32 %1, 1000000
   %3 = sdiv i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 

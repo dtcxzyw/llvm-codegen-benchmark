@@ -64,7 +64,7 @@ define i8 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = xor i32 %0, -1
   %2 = lshr i32 %1, 24
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw i32 %2 to i8
   ret i8 %3
 }
 
@@ -73,9 +73,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, 2147483647
-  %2 = lshr i32 %1, 16
-  %3 = trunc nuw nsw i32 %2 to i16
+  %1 = lshr i32 %0, 16
+  %2 = trunc nuw i32 %1 to i16
+  %3 = xor i16 %2, 32767
   ret i16 %3
 }
 

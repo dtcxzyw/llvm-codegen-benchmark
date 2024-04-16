@@ -56,8 +56,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 1
   %3 = udiv i32 2147483645, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

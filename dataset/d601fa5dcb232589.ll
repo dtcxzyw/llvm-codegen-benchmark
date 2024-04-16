@@ -17,7 +17,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 29
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, 1
   ret i32 %7
 }
@@ -31,7 +31,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 7
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, -6
   ret i32 %7
 }
@@ -44,7 +44,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add i32 %6, -1
   ret i32 %7
 }
@@ -57,7 +57,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add nsw i32 %6, 1
   ret i32 %7
 }

@@ -14,10 +14,9 @@
 define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = sub nsw i64 23, %2
-  %4 = add i64 %3, %0
-  %5 = icmp ugt i64 %4, 23
-  ret i1 %5
+  %3 = sub i64 %2, %0
+  %4 = icmp ugt i64 %3, 23
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -30,11 +29,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000148(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = sub nsw i64 23, %2
-  %4 = add i64 %3, %0
-  %5 = icmp ugt i64 %4, 23
-  ret i1 %5
+  %2 = sext i8 %1 to i64
+  %3 = sub i64 %2, %0
+  %4 = icmp ugt i64 %3, 23
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -43,10 +41,9 @@ entry:
 define i1 @func0000000000000058(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = sub nsw i64 6, %2
-  %4 = add nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 5
-  ret i1 %5
+  %reass.sub = sub i64 %0, %2
+  %3 = icmp ult i64 %reass.sub, -6
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

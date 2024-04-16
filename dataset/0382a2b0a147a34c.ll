@@ -28,7 +28,7 @@ declare i8 @llvm.umax.i8(i8, i8) #1
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 16777215
   %5 = and i32 %0, 16777215
   %6 = tail call i32 @llvm.umax.i32(i32 %5, i32 %4)

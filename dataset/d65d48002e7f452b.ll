@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, i32 1899, i32 1900
   %5 = add i32 %4, %1
   %6 = sdiv i32 %5, 4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = select i1 %3, i32 4800, i32 4799
   %5 = add i32 %4, %1
   %6 = sdiv i32 %5, 4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

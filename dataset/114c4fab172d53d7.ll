@@ -9,7 +9,7 @@
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.uadd.sat.i64(i64 %1, i64 1000000000)
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   ret i1 %3
 }
 
@@ -28,7 +28,7 @@ declare i64 @llvm.uadd.sat.i64(i64, i64) #1
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.uadd.sat.i64(i64 %1, i64 1000000000)
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   ret i1 %3
 }
 
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.uadd.sat.i32(i32 %1, i32 1)
-  %3 = icmp ule i32 %0, %2
+  %3 = icmp uge i32 %2, %0
   ret i1 %3
 }
 
@@ -51,7 +51,7 @@ declare i32 @llvm.uadd.sat.i32(i32, i32) #1
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = call i8 @llvm.uadd.sat.i8(i8 %1, i8 2)
-  %3 = icmp eq i8 %0, %2
+  %3 = icmp eq i8 %2, %0
   ret i1 %3
 }
 

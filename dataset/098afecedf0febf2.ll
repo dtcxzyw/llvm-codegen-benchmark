@@ -160,7 +160,7 @@ entry:
 define i128 @func0000000000000012(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = add nuw i128 %0, %2
+  %3 = add nuw i128 %2, %0
   %4 = lshr i128 %3, 64
   %5 = mul nuw i128 %4, 9444732965739290428
   ret i128 %5

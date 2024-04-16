@@ -126,7 +126,7 @@ entry:
   %4 = zext nneg i8 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = add nsw i32 %5, -48
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -140,7 +140,7 @@ entry:
   %4 = zext nneg i8 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = add nuw nsw i32 %5, -17
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

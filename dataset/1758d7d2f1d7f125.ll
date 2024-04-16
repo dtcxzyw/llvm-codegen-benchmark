@@ -19,7 +19,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 10, i8 16
-  %4 = mul i8 %1, %3
+  %4 = mul i8 %3, %1
   %5 = add i8 %0, -48
   %6 = add i8 %5, %4
   ret i8 %6

@@ -12,13 +12,13 @@ func0000000000000020:                   # @func0000000000000020
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	lui	a1, 1048560
+	lui	a1, 4080
 	add	a0, a0, a1
 	srli	a0, a0, 18
 	ori	a0, a0, -40
 	ret
 func0000000000000011:                   # @func0000000000000011
-	lui	a1, 1034754
+	lui	a1, 514
 	addi	a1, a1, 1024
 	add	a0, a0, a1
 	srli	a0, a0, 18

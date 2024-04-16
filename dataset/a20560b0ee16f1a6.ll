@@ -10,8 +10,8 @@
 define double @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %0, %2
-  %4 = fneg double %3
+  %3 = fneg double %2
+  %4 = fmul double %3, %0
   ret double %4
 }
 

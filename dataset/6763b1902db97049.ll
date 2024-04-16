@@ -6,9 +6,9 @@
 define i64 @func000000000000001f(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i8 %1, i8 0
-  %5 = zext nneg i8 %4 to i64
-  %6 = shl nuw nsw i64 %5, 32
+  %4 = zext nneg i8 %1 to i64
+  %5 = shl nuw nsw i64 %4, 32
+  %6 = select i1 %3, i64 %5, i64 0
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -20,9 +20,9 @@ entry:
 define i64 @func0000000000000017(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i8 %1, i8 0
-  %5 = zext i8 %4 to i64
-  %6 = shl nuw nsw i64 %5, 32
+  %4 = zext i8 %1 to i64
+  %5 = shl nuw nsw i64 %4, 32
+  %6 = select i1 %3, i64 %5, i64 0
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }

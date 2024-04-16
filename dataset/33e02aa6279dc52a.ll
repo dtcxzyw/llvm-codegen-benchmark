@@ -94,7 +94,7 @@ entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
   %4 = lshr i64 %0, 4
-  %5 = add nuw nsw i64 %4, %3
+  %5 = or i64 %4, %3
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -107,7 +107,7 @@ entry:
   %2 = icmp ult i32 %1, 5
   %3 = zext i1 %2 to i32
   %4 = lshr i32 %0, 5
-  %5 = add nuw nsw i32 %4, %3
+  %5 = or i32 %4, %3
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -152,7 +152,7 @@ entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
   %4 = lshr i64 %0, 6
-  %5 = add nuw nsw i64 %4, %3
+  %5 = or i64 %4, %3
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

@@ -12,16 +12,17 @@ func0000000000000044:                   # @func0000000000000044
 	add	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
+	zext.w	a1, a1
 	czero.eqz	a1, a1, a2
-	add.uw	a0, a1, a0
+	add	a0, a0, a1
 	ret
 func0000000000000027:                   # @func0000000000000027
 	sltiu	a2, a2, 7
+	sext.w	a1, a1
 	czero.nez	a1, a1, a2
 	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
 func0000000000000037:                   # @func0000000000000037
@@ -35,11 +36,11 @@ func0000000000000037:                   # @func0000000000000037
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	czero.eqz	a1, a1, a2
-	li	a3, 1
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	sext.w	a1, a1
+	li	a3, 1
+	czero.nez	a3, a3, a2
+	czero.eqz	a1, a1, a2
+	or	a1, a1, a3
 	add	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009

@@ -14,11 +14,9 @@
 define i1 @func0000000000000004(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 52
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 2047
-  %5 = icmp ult i32 %4, 107
-  ret i1 %5
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp ult i64 %2, 481885160128643072
+  ret i1 %3
 }
 
 ; 178 occurrences:
@@ -204,11 +202,9 @@ entry:
 define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 2146435072
-  %5 = icmp ugt i32 %4, 2090860544
-  ret i1 %5
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp ugt i64 %2, 8980177656976769024
+  ret i1 %3
 }
 
 ; 178 occurrences:
@@ -394,11 +390,9 @@ entry:
 define i1 @func0000000000000001(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 2146435072
-  %5 = icmp eq i32 %4, 2145386496
-  ret i1 %5
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp eq i64 %2, 9214364837600034816
+  ret i1 %3
 }
 
 ; 10 occurrences:
@@ -416,11 +410,9 @@ entry:
 define i1 @func0000000000000031(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 52
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = and i32 %3, 2047
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 9 occurrences:
@@ -437,11 +429,9 @@ entry:
 define i1 @func0000000000000038(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 52
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = and i32 %3, 2047
-  %5 = icmp ugt i32 %4, 1
-  ret i1 %5
+  %2 = and i64 %1, 9214364837600034816
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -450,11 +440,9 @@ entry:
 define i1 @func0000000000000034(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 52
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = and i32 %3, 2047
-  %5 = icmp ult i32 %4, 1023
-  ret i1 %5
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp ult i64 %2, 4607182418800017408
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

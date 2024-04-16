@@ -61,10 +61,9 @@ define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4194303
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %0
-  %5 = and i64 %4, %3
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = lshr i64 %3, %0
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:

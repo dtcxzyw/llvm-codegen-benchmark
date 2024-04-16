@@ -57,9 +57,9 @@ entry:
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
   %1 = tail call i8 @llvm.umin.i8(i8 %0, i8 8)
-  %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 8
-  ret i64 %3
+  %narrow = add nuw nsw i8 %1, 8
+  %2 = zext nneg i8 %narrow to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

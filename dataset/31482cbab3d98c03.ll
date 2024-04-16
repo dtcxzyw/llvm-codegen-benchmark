@@ -7,7 +7,7 @@
 define ptr @func0000000000000004(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp ult ptr %0, %1
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = select i1 %4, ptr %0, ptr %1
   ret ptr %5
 }

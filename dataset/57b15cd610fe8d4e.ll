@@ -6,8 +6,9 @@
 define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, 1
-  %4 = select i1 %1, i32 %2, i32 %3
-  %5 = icmp eq i32 %3, %4
+  %4 = icmp eq i32 %3, %2
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 
@@ -20,8 +21,9 @@ entry:
 define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, 1
-  %4 = select i1 %1, i32 %2, i32 %3
-  %5 = icmp eq i32 %3, %4
+  %4 = icmp eq i32 %3, %2
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 
@@ -31,8 +33,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, -1
-  %4 = select i1 %1, i64 %2, i64 %3
-  %5 = icmp ugt i64 %3, %4
+  %4 = icmp ugt i64 %3, %2
+  %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }
 

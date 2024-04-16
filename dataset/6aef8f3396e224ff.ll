@@ -12,7 +12,7 @@ entry:
   %3 = and i64 %2, 2097151
   %4 = mul nuw nsw i64 %3, 470296
   %5 = lshr i64 %1, 3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }

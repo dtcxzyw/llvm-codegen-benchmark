@@ -6,7 +6,7 @@ define i32 @func000000000000002d(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %2, 0.000000e+00
   %4 = select i1 %3, i32 %1, i32 1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -41,7 +41,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

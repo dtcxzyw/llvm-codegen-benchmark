@@ -33,7 +33,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 768
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -235,7 +235,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = and i32 %1, 960
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -287,7 +287,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = and i64 %1, -17592454479872
   %5 = or i64 %4, %3
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

@@ -22,9 +22,9 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, -288
 	ret
 func000000000000000e:                   # @func000000000000000e
+	slli	a0, a0, 5
 	li	a3, 1096
 	mul	a2, a2, a3
-	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 40

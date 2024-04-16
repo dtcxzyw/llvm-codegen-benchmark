@@ -5,12 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = sub i32 0, %2
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = icmp sgt i32 %0, -1
-  %6 = select i1 %5, i32 %0, i32 0
-  %7 = add nuw i32 %6, %4
-  ret i32 %7
+  %3 = call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %4 = select i1 %1, i32 0, i32 %2
+  %5 = sub i32 %3, %4
+  ret i32 %5
 }
 
 ; 4 occurrences:
@@ -21,12 +19,14 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000006b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 0, %2
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = icmp sgt i32 %0, -1
-  %6 = select i1 %5, i32 %0, i32 0
-  %7 = add nuw nsw i32 %6, %4
-  ret i32 %7
+  %3 = call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %4 = select i1 %1, i32 0, i32 %2
+  %5 = sub i32 %3, %4
+  ret i32 %5
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

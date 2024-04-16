@@ -6,8 +6,8 @@
 define i1 @func000000000000004a(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nsw i128 %0, %1
-  %3 = trunc i128 %2 to i64
-  %4 = icmp sgt i64 %3, -1
+  %3 = and i128 %2, 9223372036854775808
+  %4 = icmp eq i128 %3, 0
   ret i1 %4
 }
 
@@ -77,8 +77,8 @@ entry:
 define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 134217727
+  %3 = and i64 %2, 4160749568
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
@@ -88,8 +88,8 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

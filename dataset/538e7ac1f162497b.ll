@@ -34,11 +34,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
+  %.neg = sdiv exact i64 %2, -40
+  %3 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %1, i64 %.neg
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -49,11 +48,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000b1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds %"struct.faiss::ClusteringIterationStats.2124926", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
+  %.neg = sdiv exact i64 %2, -40
+  %3 = getelementptr inbounds %"struct.faiss::ClusteringIterationStats.2124926", ptr %1, i64 %.neg
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -10,10 +10,9 @@
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, -8
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -1
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -9
+  ret ptr %5
 }
 
 ; 10 occurrences:
@@ -31,10 +30,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add nsw i64 %3, 1
-  %5 = getelementptr inbounds %struct._phpdbg_param.1715867, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 -88
-  ret ptr %6
+  %4 = getelementptr %struct._phpdbg_param.1715867, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -43,9 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr i64, ptr %0, i64 %4
+  %3 = xor i64 %2, -1
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -61,10 +58,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add i64 %3, -3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -2
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -78,10 +74,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add i64 %3, 1
-  %5 = getelementptr %union.YYSTYPE.2119335, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -8
-  ret ptr %6
+  %4 = getelementptr %union.YYSTYPE.2119335, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -90,10 +84,8 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, -8
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -103,10 +95,9 @@ entry:
 define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = add i64 %3, -32
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -24
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

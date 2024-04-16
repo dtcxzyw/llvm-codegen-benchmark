@@ -171,11 +171,10 @@
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 21
-  %3 = sub nsw i32 0, %2
-  %4 = add nsw i32 %0, -292
-  %5 = sub nsw i32 %3, %4
-  %6 = sext i32 %5 to i64
-  ret i64 %6
+  %3 = add i32 %2, %0
+  %.neg1 = sub i32 292, %3
+  %4 = sext i32 %.neg1 to i64
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

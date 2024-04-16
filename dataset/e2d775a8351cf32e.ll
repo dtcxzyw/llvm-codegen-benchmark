@@ -12,7 +12,7 @@ entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
   %4 = mul nsw i64 %1, %1
   %5 = mul nsw i64 %4, %3
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 

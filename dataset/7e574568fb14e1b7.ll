@@ -20,7 +20,7 @@ entry:
   %3 = mul i32 %2, -12289
   %4 = add nuw nsw i32 %1, 196624
   %5 = add i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = icmp sgt i32 %6, 49155
   ret i1 %7
 }
@@ -59,7 +59,7 @@ entry:
   %3 = add nsw i32 %2, 719162
   %4 = mul nsw i32 %1, -146097
   %5 = add i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = icmp sgt i32 %6, -1
   ret i1 %7
 }

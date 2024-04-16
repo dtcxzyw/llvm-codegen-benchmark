@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 1048576
-  %3 = select i1 %0, i32 %1, i32 %2
-  %4 = lshr exact i32 %3, 1
+  %2 = lshr i32 %1, 1
+  %3 = or i32 %2, 524288
+  %4 = select i1 %0, i32 %2, i32 %3
   ret i32 %4
 }
 
@@ -27,9 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = or i16 %1, 16384
-  %3 = select i1 %0, i16 %1, i16 %2
-  %4 = lshr i16 %3, 8
+  %2 = lshr i16 %1, 8
+  %3 = or i16 %2, 64
+  %4 = select i1 %0, i16 %2, i16 %3
   ret i16 %4
 }
 
@@ -43,9 +43,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 8388608
-  %3 = select i1 %0, i32 %1, i32 %2
-  %4 = lshr i32 %3, 20
+  %2 = lshr i32 %1, 20
+  %3 = or i32 %2, 8
+  %4 = select i1 %0, i32 %2, i32 %3
   ret i32 %4
 }
 

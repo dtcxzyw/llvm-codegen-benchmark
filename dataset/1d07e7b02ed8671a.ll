@@ -56,7 +56,7 @@
 define i16 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = trunc nsw i32 %3 to i16
   %5 = add nsw i16 %4, 307
   %6 = sdiv i16 %5, 8
@@ -95,7 +95,7 @@ entry:
 define i16 @func0000000000000022(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = trunc i32 %3 to i16
   %5 = add nsw i16 %4, 307
   %6 = sdiv i16 %5, 8

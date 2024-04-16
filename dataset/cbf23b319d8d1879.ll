@@ -6,7 +6,7 @@
 define i8 @func0000000000000014(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 8.000000e+00
-  %3 = fcmp ole float %0, %2
+  %3 = fcmp oge float %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.010000e+00
-  %3 = fcmp ogt double %0, %2
+  %3 = fcmp olt double %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x400921FB54442D18
-  %3 = fcmp olt double %0, %2
+  %3 = fcmp ogt double %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -41,7 +41,7 @@ entry:
 define i64 @func0000000000000018(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x400921FB54442D18
-  %3 = fcmp oge double %0, %2
+  %3 = fcmp ole double %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

@@ -1,8 +1,9 @@
 func0000000000000075:                   # @func0000000000000075
 	slli	a1, a1, 48
-	lui	a2, 432
-	mulhu	a1, a1, a2
-	subw	a0, a0, a1
+	srli	a1, a1, 48
+	li	a2, -27
+	mul	a1, a1, a2
+	add	a0, a0, a1
 	addiw	a0, a0, 292
 	ret
 func0000000000000035:                   # @func0000000000000035
@@ -14,8 +15,9 @@ func0000000000000035:                   # @func0000000000000035
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a1, a1, 48
-	lui	a2, 192
-	mulhu	a1, a1, a2
-	sub	a0, a0, a1
+	srli	a1, a1, 48
+	li	a2, -12
+	mul	a1, a1, a2
+	add	a0, a0, a1
 	addi	a0, a0, -12
 	ret

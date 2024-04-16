@@ -72,7 +72,7 @@ entry:
   %3 = add nuw nsw i32 %2, -31
   %4 = icmp ugt i32 %1, 1
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -154,7 +154,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -181,7 +181,7 @@ entry:
   %3 = add nsw i32 %2, -8
   %4 = icmp ugt i16 %1, 8
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -244,7 +244,7 @@ entry:
   %3 = add i32 %2, 40960
   %4 = icmp slt i32 %1, 2
   %5 = select i1 %4, i32 %3, i32 49152
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -256,7 +256,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -268,7 +268,7 @@ entry:
   %3 = add nsw i64 %2, -8
   %4 = icmp ugt i32 %1, 8
   %5 = select i1 %4, i64 %3, i64 0
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -282,7 +282,7 @@ entry:
   %3 = add nsw i32 %2, -63
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -305,10 +305,10 @@ entry:
 define i32 @func00000000000000f1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ne i64 %1, 0
-  %5 = select i1 %4, i32 %3, i32 0
-  %6 = add nsw i32 %0, %5
-  ret i32 %6
+  %.not = icmp eq i64 %1, 0
+  %4 = select i1 %.not, i32 0, i32 %3
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -319,7 +319,7 @@ entry:
   %3 = add nuw nsw i64 %2, 12
   %4 = icmp ult i32 %1, 3
   %5 = select i1 %4, i64 %3, i64 0
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

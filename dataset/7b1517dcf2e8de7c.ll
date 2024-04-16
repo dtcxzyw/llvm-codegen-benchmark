@@ -8,7 +8,7 @@
 define i64 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

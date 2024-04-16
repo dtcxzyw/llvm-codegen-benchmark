@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %0, %1
-  %3 = and i32 %2, 255
+  %3 = and i32 %2, 254
   %4 = icmp ugt i32 %3, 17
   ret i1 %4
 }

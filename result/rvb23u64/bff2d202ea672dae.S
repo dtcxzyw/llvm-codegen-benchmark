@@ -84,7 +84,7 @@ func0000000000000088:                   # @func0000000000000088
 	bnez	a0, .LBB9_2
 	fmv.s	fa5, fa1
 .LBB9_2:                                # %entry
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 func0000000000000048:                   # @func0000000000000048
 	fmv.w.x	fa5, zero
@@ -92,7 +92,7 @@ func0000000000000048:                   # @func0000000000000048
 	bnez	a0, .LBB10_2
 	fmv.s	fa5, fa1
 .LBB10_2:                               # %entry
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 .LCPI11_0:
 	.quad	0x3ce4000000000000              # double 2.2204460492503131E-15
@@ -112,6 +112,6 @@ func00000000000000a7:                   # @func00000000000000a7
 	bnez	a0, .LBB12_2
 	fmv.s	fa5, fa1
 .LBB12_2:                               # %entry
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret

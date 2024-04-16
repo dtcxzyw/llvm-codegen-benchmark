@@ -8,9 +8,8 @@
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = xor i32 %2, 2
-  %4 = icmp eq i32 %3, 3
-  ret i1 %4
+  %3 = icmp eq i32 %2, 1
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -13,12 +13,12 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000198(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 24
-  %3 = icmp ne i32 %2, -2147483648
-  %4 = shl i32 %0, 24
-  %5 = icmp ne i32 %4, -2147483648
-  %6 = or i1 %5, %3
-  ret i1 %6
+  %.mask = and i32 %1, 255
+  %2 = icmp ne i32 %.mask, 128
+  %.mask1 = and i32 %0, 255
+  %3 = icmp ne i32 %.mask1, 128
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -29,12 +29,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 32
-  %3 = icmp eq i64 %2, 0
-  %4 = shl i64 %0, 32
-  %5 = icmp eq i64 %4, 0
-  %6 = or i1 %5, %3
-  ret i1 %6
+  %.mask = and i64 %1, 4294967295
+  %2 = icmp eq i64 %.mask, 0
+  %.mask1 = and i64 %0, 4294967295
+  %3 = icmp eq i64 %.mask1, 0
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

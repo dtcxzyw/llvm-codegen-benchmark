@@ -397,8 +397,8 @@
 define ptr @func000000000000000d(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 63
-  %4 = select i1 %1, i64 9223372036854775807, i64 %3
-  %5 = lshr i64 %4, 6
+  %4 = lshr i64 %3, 6
+  %5 = select i1 %1, i64 144115188075855871, i64 %4
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -434,8 +434,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = lshr i64 %4, 7
+  %4 = lshr i64 %3, 7
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr %"struct.QHashPrivate::Span.1914746", ptr %0, i64 %5
   ret ptr %6
 }
@@ -446,8 +446,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 63
-  %4 = select i1 %1, i64 9223372036854775807, i64 %3
-  %5 = lshr i64 %4, 6
+  %4 = lshr i64 %3, 6
+  %5 = select i1 %1, i64 144115188075855871, i64 %4
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }

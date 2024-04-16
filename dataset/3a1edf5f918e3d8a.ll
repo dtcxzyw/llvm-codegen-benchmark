@@ -14,7 +14,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 

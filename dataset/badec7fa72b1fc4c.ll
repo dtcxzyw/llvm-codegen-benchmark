@@ -15,7 +15,7 @@ entry:
   %3 = shl nsw i128 -1, %2
   %4 = xor i128 %3, -1
   %5 = zext i64 %1 to i128
-  %6 = or disjoint i128 %0, %5
+  %6 = or disjoint i128 %5, %0
   %7 = and i128 %6, %4
   ret i128 %7
 }

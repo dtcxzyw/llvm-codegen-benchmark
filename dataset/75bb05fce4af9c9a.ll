@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2147483647
   %5 = sub nsw i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 4095
   %5 = sub nsw i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 4194303
   %5 = sub i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 524287
   %5 = sub nsw i32 %4, %1
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 524287
   %5 = sub nsw i32 %4, %1
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 524287
   %5 = sub nsw i32 %4, %1
-  %6 = icmp sge i32 %0, %5
+  %6 = icmp sle i32 %5, %0
   ret i1 %6
 }
 

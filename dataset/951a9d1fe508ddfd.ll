@@ -8,10 +8,9 @@ define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 2047
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -23,7 +22,7 @@ entry:
   %2 = lshr i16 %1, 2
   %3 = and i16 %2, 60
   %4 = zext nneg i16 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }

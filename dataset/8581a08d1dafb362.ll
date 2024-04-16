@@ -6,7 +6,7 @@
 define i64 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -12211
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp slt i64 %3, 0
   %5 = select i1 %4, i64 2147483563, i64 0
   ret i64 %5

@@ -3,7 +3,7 @@ func0000000000000058:                   # @func0000000000000058
 	bnez	a2, .LBB0_2
 	li	a1, 3
 .LBB0_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srliw	a0, a0, 29
 	snez	a0, a0
 	ret

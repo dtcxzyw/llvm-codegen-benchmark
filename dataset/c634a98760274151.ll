@@ -6,11 +6,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i24 %0, i24 %1) #0 {
 entry:
-  %2 = lshr i24 %1, 16
-  %3 = shl nuw nsw i24 %0, 8
-  %4 = or disjoint i24 %3, %2
-  %5 = zext nneg i24 %4 to i32
-  ret i32 %5
+  %2 = call i24 @llvm.fshl.i24(i24 %0, i24 %1, i24 8)
+  %3 = zext nneg i24 %2 to i32
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -31,11 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 1
-  %3 = shl nuw i32 %0, 31
-  %4 = or disjoint i32 %3, %2
-  %5 = zext i32 %4 to i64
-  ret i64 %5
+  %2 = call i32 @llvm.fshl.i32(i32 %0, i32 %1, i32 31)
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -51,4 +47,11 @@ entry:
   ret i64 %5
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i24 @llvm.fshl.i24(i24, i24, i24) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.fshl.i32(i32, i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

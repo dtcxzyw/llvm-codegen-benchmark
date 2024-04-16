@@ -8,7 +8,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
-  %5 = xor i1 %1, %4
+  %5 = xor i1 %4, %1
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

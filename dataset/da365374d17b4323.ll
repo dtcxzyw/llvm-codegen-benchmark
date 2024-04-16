@@ -7,7 +7,7 @@ entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
   %4 = mul i64 %3, -4070662928558531325
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   ret i64 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = and i16 %1, -2
   %3 = zext i16 %2 to i32
   %4 = mul nuw nsw i32 %3, 7937
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

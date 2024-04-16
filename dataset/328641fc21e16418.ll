@@ -27,7 +27,7 @@ entry:
   %4 = icmp slt i64 %2, 0
   %5 = select i1 %4, i64 %3, i64 %2
   %6 = add nsw i64 %5, %1
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = add nsw i32 %2, 7
   %4 = icmp slt i32 %2, 0
   %5 = select i1 %4, i32 %3, i32 %2
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }

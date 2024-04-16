@@ -6,8 +6,8 @@
 define i1 @func0000000000000008(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = freeze ptr %2
-  %4 = icmp ugt ptr %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp ult ptr %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -17,8 +17,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = freeze ptr %2
-  %4 = icmp ne ptr %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp ne ptr %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -28,7 +28,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = freeze ptr %2
-  %4 = icmp ult ptr %1, %3
+  %4 = icmp ugt ptr %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }

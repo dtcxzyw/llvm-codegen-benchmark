@@ -10,7 +10,7 @@ entry:
   %3 = and i64 %2, 983040
   %4 = add nuw nsw i64 %3, 65536
   %5 = or disjoint i64 %4, %1
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -8
   %4 = add i8 %3, -8
-  %5 = or i8 %1, %4
+  %5 = or i8 %4, %1
   %6 = or i8 %5, %0
   ret i8 %6
 }

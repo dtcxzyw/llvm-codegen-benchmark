@@ -5,7 +5,7 @@ func0000000000000018:                   # @func0000000000000018
 	negw	a0, a1
 	li	a1, 10
 	sllw	a0, a1, a0
-.LBB0_2:                                # %entry
 	slli	a0, a0, 32
 	srli	a0, a0, 32
+.LBB0_2:                                # %entry
 	ret

@@ -52,9 +52,9 @@
 define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 2
+  %4 = lshr exact i64 %3, 2
   %5 = and i64 %4, 1152921504606846972
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -66,9 +66,9 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 3
+  %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

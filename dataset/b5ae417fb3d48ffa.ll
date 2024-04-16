@@ -13,7 +13,7 @@ entry:
   %3 = add nsw i64 %2, -2147483648
   %4 = sitofp i64 %3 to double
   %5 = fsub double %1, %4
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

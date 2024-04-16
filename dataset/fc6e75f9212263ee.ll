@@ -23,7 +23,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -65536
+  %1 = add i32 %0, 983040
   %2 = lshr i32 %1, 10
   %3 = and i32 %2, 1023
   %4 = or disjoint i32 %3, 55296

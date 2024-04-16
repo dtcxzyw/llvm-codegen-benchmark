@@ -18,10 +18,10 @@ entry:
 define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
-  %4 = icmp ult i32 %1, 2048
-  %5 = select i1 %4, i32 %3, i32 64
-  %6 = and i32 %0, 63
-  %7 = icmp ult i32 %6, %5
+  %4 = icmp ugt i32 %1, 2047
+  %5 = and i32 %0, 63
+  %6 = icmp ugt i32 %3, %5
+  %7 = select i1 %4, i1 true, i1 %6
   ret i1 %7
 }
 

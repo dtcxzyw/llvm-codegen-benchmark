@@ -20,7 +20,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 8192, i64 0
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp eq i16 %3, 5
   %5 = select i1 %4, i32 8, i32 0
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

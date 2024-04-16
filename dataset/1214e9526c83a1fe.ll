@@ -12,7 +12,7 @@ define i1 @func000000000000000c(i1 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = icmp slt i32 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -26,7 +26,7 @@ define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
   %3 = icmp eq i64 %2, 9223372036854775807
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

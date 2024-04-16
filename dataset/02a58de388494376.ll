@@ -551,7 +551,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = tail call i64 @llvm.umax.i64(i64 %5, i64 1)
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -567,7 +567,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr i64 %4, 4
   %6 = call i64 @llvm.umax.i64(i64 %5, i64 1)
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -589,7 +589,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = tail call i64 @llvm.umax.i64(i64 %5, i64 1)
-  %7 = icmp ne i64 %0, %6
+  %7 = icmp ne i64 %6, %0
   ret i1 %7
 }
 

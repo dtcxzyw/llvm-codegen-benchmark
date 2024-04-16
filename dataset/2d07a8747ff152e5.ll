@@ -12,8 +12,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = mul i32 %3, 3
+  %3 = mul i32 %2, 3
+  %4 = add i32 %3, 3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i32, ptr %1, i64 %5
   %7 = getelementptr inbounds i32, ptr %6, i64 %0
@@ -33,8 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000015(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, 7
+  %3 = mul i32 %2, 7
+  %4 = add i32 %3, 7
   %5 = sext i32 %4 to i64
   %6 = getelementptr i32, ptr %1, i64 %5
   %7 = getelementptr inbounds i32, ptr %6, i64 %0
@@ -56,8 +56,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, 6
+  %3 = mul i32 %2, 6
+  %4 = add i32 %3, 6
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i32, ptr %1, i64 %5
   %7 = getelementptr inbounds i32, ptr %6, i64 %0
@@ -69,8 +69,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, 3
+  %3 = mul i32 %2, 3
+  %4 = add i32 %3, -3
   %5 = sext i32 %4 to i64
   %6 = getelementptr double, ptr %1, i64 %5
   %7 = getelementptr double, ptr %6, i64 %0

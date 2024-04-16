@@ -8,10 +8,6 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 8
 	ret
 func0000000000000019:                   # @func0000000000000019
-	li	a2, 1
-	slli	a2, a2, 35
-	addi	a2, a2, -1536
-	add	a1, a1, a2
 	slli	a1, a1, 58
 	srli	a1, a1, 61
 	li	a2, 144
@@ -20,10 +16,6 @@ func0000000000000019:                   # @func0000000000000019
 	addi	a0, a0, 16
 	ret
 func0000000000000018:                   # @func0000000000000018
-	li	a2, 1
-	slli	a2, a2, 35
-	addi	a2, a2, -1536
-	add	a1, a1, a2
 	slli	a1, a1, 58
 	srli	a1, a1, 61
 	li	a2, 144

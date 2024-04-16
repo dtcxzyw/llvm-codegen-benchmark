@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 7168
   %4 = icmp eq i32 %3, 7168
   %5 = icmp ne i32 %1, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = icmp eq i32 %1, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }

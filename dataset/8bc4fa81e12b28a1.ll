@@ -10,8 +10,8 @@
 define i8 @func0000000000000007(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = and i8 %2, 7
-  %4 = shl nuw nsw i8 %3, 3
+  %3 = shl i8 %2, 3
+  %4 = and i8 %3, 56
   %5 = and i8 %0, -64
   %6 = or disjoint i8 %5, %4
   ret i8 %6
@@ -24,11 +24,10 @@ entry:
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 255
-  %4 = shl nuw i32 %3, 24
-  %5 = and i32 %0, 16777215
-  %6 = or disjoint i32 %4, %5
-  ret i32 %6
+  %3 = shl i32 %2, 24
+  %4 = and i32 %0, 16777215
+  %5 = or disjoint i32 %3, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

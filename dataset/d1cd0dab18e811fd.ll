@@ -14,11 +14,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 8
-  %2 = and i32 %1, 16711680
-  %3 = shl i32 %0, 24
-  %4 = or disjoint i32 %2, %3
-  ret i32 %4
+  %1 = and i32 %0, 65535
+  %2 = call i32 @llvm.bswap.i32(i32 %1)
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -34,4 +32,8 @@ entry:
   ret i32 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.bswap.i32(i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

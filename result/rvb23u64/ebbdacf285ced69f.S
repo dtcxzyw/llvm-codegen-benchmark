@@ -30,13 +30,12 @@ func000000000000000e:                   # @func000000000000000e
 	srli	a3, a3, 8
 	and	a4, a4, a3
 	and	a2, a2, a3
-	mul	a3, a2, a4
-	mulhu	a2, a2, a4
+	mulhu	a3, a2, a4
+	mul	a2, a2, a4
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a3
 	add	a1, a1, a2
-	add	a2, a0, a3
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
 	ret
 func000000000000000a:                   # @func000000000000000a
 	zext.w	a2, a2

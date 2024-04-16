@@ -68,9 +68,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.bswap.i32(i32 %1)
-  %3 = sub i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:

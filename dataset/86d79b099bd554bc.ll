@@ -23,10 +23,9 @@ define i1 @func0000000000000101(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
-  %4 = sext i1 %0 to i32
-  %5 = add i32 %3, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %.neg = zext i1 %0 to i32
+  %4 = icmp eq i32 %3, %.neg
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -49,10 +48,9 @@ define i1 @func0000000000000111(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = trunc i64 %2 to i32
-  %4 = sext i1 %0 to i32
-  %5 = add nsw i32 %3, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %.neg = zext i1 %0 to i32
+  %4 = icmp eq i32 %3, %.neg
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

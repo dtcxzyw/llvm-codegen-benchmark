@@ -8,7 +8,7 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw nsw i64 %1, 37
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -32,7 +32,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw nsw i32 %1, 6
   %6 = or i32 %4, %5
   ret i32 %6

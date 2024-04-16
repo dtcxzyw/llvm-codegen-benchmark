@@ -19,7 +19,7 @@ entry:
   %2 = sdiv i32 %1, 3
   %3 = shl i32 %2, 2
   %4 = add i32 %3, 4
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
 

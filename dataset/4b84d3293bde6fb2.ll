@@ -64,7 +64,7 @@ define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 8)
   %4 = add nsw i64 %3, %1
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -89,7 +89,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 8)
   %4 = add nsw i64 %3, %1
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -103,7 +103,7 @@ define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smin.i64(i64 %2, i64 32)
   %4 = add nsw i64 %3, %1
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -118,7 +118,7 @@ define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smin.i64(i64 %2, i64 8640)
   %4 = add i64 %3, %1
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 

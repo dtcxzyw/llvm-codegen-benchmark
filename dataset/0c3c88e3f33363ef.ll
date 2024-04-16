@@ -15,9 +15,8 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 10 occurrences:
@@ -37,9 +36,8 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.1556231"], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr inbounds [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.1556231"], ptr %0, i64 0, i64 %4, i32 0, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	sext.h	a1, a1
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 274878
 	addiw	a1, a1, -381
 	mul	a0, a0, a1

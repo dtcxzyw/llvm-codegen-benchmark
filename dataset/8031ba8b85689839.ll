@@ -9,7 +9,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %1, %4
+  %5 = fadd double %4, %1
   %6 = fsub double %5, %0
   ret double %6
 }

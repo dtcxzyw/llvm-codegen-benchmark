@@ -37,7 +37,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16384, i32 0
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, 4096
   %6 = icmp sgt i32 %0, 0
   %7 = select i1 %6, i32 %5, i32 %4
@@ -78,7 +78,7 @@ entry:
 define i32 @func0000000000000006(i16 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 33548, i32 128
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, 32
   %6 = icmp slt i16 %0, 1
   %7 = select i1 %6, i32 %5, i32 %4

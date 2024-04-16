@@ -9,7 +9,7 @@ entry:
   %3 = bitcast i64 %2 to double
   %4 = fdiv double 5.000000e-01, %1
   %5 = fsub double %4, %3
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 

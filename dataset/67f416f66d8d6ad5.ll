@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr inbounds i8, ptr %0, i64 3040
   %6 = getelementptr inbounds [6 x %struct.curltime.1698801], ptr %5, i64 0, i64 %4
   ret ptr %6
@@ -45,8 +45,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 1023
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 1023
   %5 = getelementptr inbounds i8, ptr %0, i64 4
   %6 = getelementptr inbounds [1024 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
@@ -59,8 +59,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr inbounds i8, ptr %0, i64 4
   %6 = getelementptr [2 x i16], ptr %5, i64 0, i64 %4
   ret ptr %6
@@ -73,8 +73,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 %2, i8 -2
-  %4 = zext i8 %3 to i64
+  %3 = zext i8 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 254
   %5 = getelementptr inbounds i8, ptr %0, i64 384
   %6 = getelementptr [256 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6

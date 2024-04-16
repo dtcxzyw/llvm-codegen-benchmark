@@ -7,7 +7,7 @@
 define i1 @func0000000000000004(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }

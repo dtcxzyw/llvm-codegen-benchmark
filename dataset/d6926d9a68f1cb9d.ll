@@ -32,7 +32,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, -7340033
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = or disjoint i32 %5, 1048576
   ret i32 %6
 }
@@ -51,8 +51,8 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %3, -17
-  %5 = or disjoint i32 %4, %0
+  %4 = and i32 %3, -25
+  %5 = or i32 %4, %0
   %6 = or i32 %5, 8
   ret i32 %6
 }
@@ -88,7 +88,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = and i64 %3, -281474975662142
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = or i64 %5, 33
   ret i64 %6
 }

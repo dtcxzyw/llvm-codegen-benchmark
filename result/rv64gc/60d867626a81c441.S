@@ -13,11 +13,11 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	slli	a1, a1, 32
-	bltz	a1, .LBB1_2
-	lui	a1, 2048
+	bgez	a1, .LBB1_2
+	lui	a1, 524288
 	j	.LBB1_3
 .LBB1_2:
-	lui	a1, 524288
+	lui	a1, 2048
 .LBB1_3:                                # %entry
 	addiw	a1, a1, -1
 	and	a0, a0, a1
@@ -26,14 +26,14 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a2, a1, 1
-	li	a1, -129
+	li	a1, -256
 	beqz	a2, .LBB2_2
 	lui	a1, 1048568
-	addi	a1, a1, -1
+	addi	a1, a1, -256
 .LBB2_2:                                # %entry
 	and	a0, a0, a1
 	sext.w	a0, a0
-	sltiu	a0, a0, 256
+	seqz	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 16

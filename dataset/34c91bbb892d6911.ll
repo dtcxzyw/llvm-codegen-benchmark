@@ -8,8 +8,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 12
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = add i64 %4, 1
-  %6 = trunc i64 %5 to i32
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 1
   ret i32 %6
 }
 

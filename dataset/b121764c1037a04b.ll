@@ -47,7 +47,7 @@ entry:
   %2 = lshr i32 %1, 9
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   ret i64 %5
 }
 

@@ -10,7 +10,7 @@ define i1 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 8388639, %1
   %3 = trunc i32 %2 to i1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

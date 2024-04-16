@@ -15,8 +15,5 @@ func0000000000000001:                   # @func0000000000000001
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	lui	a1, 16
-	addiw	a1, a1, -2
-	and	a0, a0, a1
-	seqz	a0, a0
+	sltiu	a0, a0, 2
 	ret

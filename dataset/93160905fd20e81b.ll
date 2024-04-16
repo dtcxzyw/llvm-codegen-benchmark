@@ -89,7 +89,7 @@ define i64 @func0000000000000180(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = mul i64 %0, 10
   %7 = sub i64 %6, %5
   ret i64 %7
@@ -101,9 +101,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000080(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = mul i64 %0, 10
   %7 = sub i64 %6, %5
   ret i64 %7

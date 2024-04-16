@@ -46,10 +46,10 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = icmp ne i32 %3, 0
-  %5 = lshr i32 %1, 1
-  %6 = select i1 %4, i32 %5, i32 %0
-  ret i32 %6
+  %.not = icmp eq i32 %3, 0
+  %4 = lshr i32 %1, 1
+  %5 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

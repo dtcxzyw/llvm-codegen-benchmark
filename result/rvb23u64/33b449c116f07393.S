@@ -81,13 +81,13 @@ func0000000000000035:                   # @func0000000000000035
 	fle.d	a0, fa5, fa2
 	bnez	a0, .LBB5_3
 	fle.d	a0, fa1, fa0
-	bnez	a0, .LBB5_4
+	beqz	a0, .LBB5_4
 .LBB5_2:                                # %entry
-	fmv.d	fa0, fa1
 	ret
 .LBB5_3:                                # %entry
 	fmv.d	fa1, fa2
 	fle.d	a0, fa2, fa0
-	beqz	a0, .LBB5_2
+	bnez	a0, .LBB5_2
 .LBB5_4:                                # %entry
+	fmv.d	fa0, fa1
 	ret

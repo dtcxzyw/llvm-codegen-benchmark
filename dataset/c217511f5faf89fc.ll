@@ -12,7 +12,7 @@ entry:
   %3 = xor i16 %2, -1
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i16 -1, i16 %3
-  %6 = and i16 %0, %5
+  %6 = and i16 %5, %0
   %7 = icmp eq i16 %6, 0
   ret i1 %7
 }

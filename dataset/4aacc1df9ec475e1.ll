@@ -11,7 +11,7 @@ entry:
   %3 = trunc i64 %2 to i16
   %4 = shl i16 %3, 7
   %5 = and i16 %4, 896
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

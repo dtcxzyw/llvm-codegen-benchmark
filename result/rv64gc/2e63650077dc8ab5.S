@@ -55,24 +55,24 @@ func0000000000000007:                   # @func0000000000000007
 func000000000000000c:                   # @func000000000000000c
 	slli	a3, a3, 32
 	srli	a3, a3, 32
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	mulhu	a1, a3, a2
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	mulhu	a3, a0, a2
+	mul	a1, a1, a2
+	add	a1, a1, a3
 	mul	a0, a0, a2
-	add	a1, a1, a0
-	mul	a0, a3, a2
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a3, a3, 32
 	srli	a3, a3, 32
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	mulhu	a1, a3, a2
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	mulhu	a3, a0, a2
+	mul	a1, a1, a2
+	add	a1, a1, a3
 	mul	a0, a0, a2
-	add	a1, a1, a0
-	mul	a0, a3, a2
 	ret
 func000000000000002f:                   # @func000000000000002f
 	andi	a2, a2, 255
@@ -91,13 +91,13 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000001c:                   # @func000000000000001c
 	slli	a3, a3, 32
 	srli	a3, a3, 32
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	mulhu	a1, a3, a2
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	mulhu	a3, a0, a2
+	mul	a1, a1, a2
+	add	a1, a1, a3
 	mul	a0, a0, a2
-	add	a1, a1, a0
-	mul	a0, a3, a2
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 32

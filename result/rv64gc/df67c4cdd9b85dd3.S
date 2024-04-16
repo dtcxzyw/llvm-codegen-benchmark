@@ -19,7 +19,9 @@ func000000000000002b:                   # @func000000000000002b
 func0000000000000005:                   # @func0000000000000005
 	beqz	a2, .LBB2_2
 	li	a1, 1023
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB2_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -35,9 +37,9 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sltiu	a2, a2, 8
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
@@ -61,9 +63,9 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000032:                   # @func0000000000000032
 	seqz	a2, a2
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	sext.w	a1, a1
 	li	a2, 24
 	mul	a1, a1, a2
 	add	a0, a0, a1

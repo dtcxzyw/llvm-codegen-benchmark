@@ -1,7 +1,8 @@
 func0000000000000884:                   # @func0000000000000884
-	bset	a2, zero, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
-	minu	a0, a2, a0
+	srl	a2, a1, a2
+	seqz	a2, a2
 	sltu	a0, a1, a0
+	and	a0, a0, a2
 	ret

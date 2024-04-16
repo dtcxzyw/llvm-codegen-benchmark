@@ -42,10 +42,10 @@ func000000000000001a:                   # @func000000000000001a
 	sh2add	a0, a1, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	czero.eqz	a1, a1, a2
-	li	a3, 7
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	andi	a1, a1, 255
+	li	a3, 7
+	czero.nez	a3, a3, a2
+	czero.eqz	a1, a1, a2
+	or	a1, a1, a3
 	sh2add	a0, a1, a0
 	ret

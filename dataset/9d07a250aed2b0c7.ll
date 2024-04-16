@@ -47,11 +47,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000003cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ne i64 %3, 9
-  %5 = icmp ne ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp ne i64 %2, 8
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -85,11 +84,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000311(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 4
-  %4 = icmp eq i64 %3, 12
-  %5 = icmp eq ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp eq i64 %2, 8
+  %4 = icmp eq ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -98,11 +96,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = icmp ne i64 %3, 1
-  %5 = icmp ne ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp ne i64 %2, 2
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -110,11 +107,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000003c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 4
-  %4 = icmp ne i64 %3, 12
-  %5 = icmp eq ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp ne i64 %2, 8
+  %4 = icmp eq ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -122,11 +118,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ne ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp eq i32 %2, 1
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -147,11 +142,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp ne ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp ne i64 %2, 1
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -159,11 +153,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000031c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 4
-  %4 = icmp eq i64 %3, 12
-  %5 = icmp ne ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %3 = icmp eq i64 %2, 8
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

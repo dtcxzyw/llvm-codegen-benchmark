@@ -7,7 +7,7 @@
 define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = fptosi float %0 to i32
-  %3 = add nsw i32 %1, %2
+  %3 = add nsw i32 %2, %1
   %4 = sitofp i32 %3 to float
   %5 = fsub float %0, %4
   ret float %5

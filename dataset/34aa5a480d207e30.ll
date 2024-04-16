@@ -9,7 +9,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 

@@ -63,7 +63,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul i64 %3, 1000000000
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -109,7 +109,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, 60
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -133,7 +133,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = mul i64 %3, -997805
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -172,7 +172,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nsw i64 %3, 1000
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -183,7 +183,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = mul nuw nsw i32 %3, 5
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -194,7 +194,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nuw i64 %3, 255
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 

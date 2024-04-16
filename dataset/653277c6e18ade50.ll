@@ -8,8 +8,8 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
   %4 = xor i32 %3, 31
-  %5 = sub nuw nsw i32 8, %4
-  %6 = sub i32 %5, %0
+  %5 = add i32 %4, %0
+  %6 = sub i32 8, %5
   ret i32 %6
 }
 

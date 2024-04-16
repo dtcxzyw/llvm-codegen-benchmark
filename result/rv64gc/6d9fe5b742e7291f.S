@@ -27,10 +27,10 @@ func000000000000005a:                   # @func000000000000005a
 	addiw	a0, a0, 1462
 	ret
 func0000000000000001:                   # @func0000000000000001
+	mv	a3, a0
 	add	a1, a1, a2
-	sub	a1, a1, a0
 	li	a0, 396
-	beqz	a1, .LBB3_2
+	beq	a1, a3, .LBB3_2
 	li	a0, 400
 .LBB3_2:                                # %entry
 	ret

@@ -7,7 +7,7 @@
 define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = and i32 %1, 65535
   %5 = icmp eq i32 %4, 0
   %6 = and i1 %5, %3
@@ -23,7 +23,7 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = and i32 %1, 63
   %5 = icmp ne i32 %4, 0
   %6 = and i1 %5, %3

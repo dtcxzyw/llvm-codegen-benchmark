@@ -8,8 +8,8 @@ define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.000000e+00, %2
   %4 = select i1 %1, float 0.000000e+00, float %3
-  %5 = fmul float %0, %4
-  %6 = fneg float %5
+  %5 = fneg float %4
+  %6 = fmul float %5, %0
   ret float %6
 }
 

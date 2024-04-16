@@ -54,7 +54,7 @@ func00000000000000fc:                   # @func00000000000000fc
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	add	a0, a0, a1
 	andi	a0, a0, 3
 	seqz	a0, a0
 	ret

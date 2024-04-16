@@ -10,8 +10,8 @@ entry:
   %3 = icmp ne i32 %0, 3
   %4 = or i1 %3, %2
   %5 = select i1 %4, i1 true, i1 %1
-  %6 = select i1 %5, i32 %0, i32 1
-  %7 = zext nneg i32 %6 to i64
+  %6 = zext nneg i32 %0 to i64
+  %7 = select i1 %5, i64 %6, i64 1
   ret i64 %7
 }
 

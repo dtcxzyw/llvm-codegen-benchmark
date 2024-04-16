@@ -11,7 +11,7 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = add nuw nsw i64 %3, 1
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %3, 1
   %5 = select i1 %1, i32 1, i32 %4
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

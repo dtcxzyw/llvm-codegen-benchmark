@@ -11,10 +11,9 @@ define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = mul i64 %2, 5
-  %4 = and i64 %0, 17592186044415
-  %5 = add i64 %3, %4
-  %6 = and i64 %5, 17592186044415
-  ret i64 %6
+  %4 = add i64 %3, %0
+  %5 = and i64 %4, 17592186044415
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -25,10 +24,9 @@ define i64 @func000000000000000f(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = mul nuw nsw i64 %2, 19
-  %4 = and i64 %0, 2251799813685247
-  %5 = add nuw nsw i64 %3, %4
-  %6 = and i64 %5, 2251799813685247
-  ret i64 %6
+  %4 = add i64 %3, %0
+  %5 = and i64 %4, 2251799813685247
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

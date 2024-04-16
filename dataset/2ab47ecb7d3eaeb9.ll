@@ -8,8 +8,9 @@
 define i1 @func0000000000000014(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = select i1 %1, ptr %0, ptr %3
-  %5 = icmp ult ptr %4, %0
+  %4 = icmp ult ptr %3, %0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -25,8 +26,8 @@ entry:
 define i1 @func0000000000000011(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = select i1 %1, ptr %0, ptr %3
-  %5 = icmp eq ptr %4, %0
+  %4 = icmp eq ptr %3, %0
+  %5 = select i1 %1, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -37,8 +38,9 @@ entry:
 define i1 @func000000000000001c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = select i1 %1, ptr %0, ptr %3
-  %5 = icmp ne ptr %4, %0
+  %4 = icmp ne ptr %3, %0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -48,8 +50,9 @@ entry:
 define i1 @func0000000000000008(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
-  %4 = select i1 %1, ptr %0, ptr %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = icmp ugt ptr %3, %0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -59,8 +62,9 @@ entry:
 define i1 @func0000000000000018(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -15
-  %4 = select i1 %1, ptr %0, ptr %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = icmp ugt ptr %3, %0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 

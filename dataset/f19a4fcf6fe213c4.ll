@@ -19,7 +19,7 @@ entry:
   %3 = ashr i64 %2, 54
   %4 = and i64 %3, 4294966784
   %5 = and i64 %1, 32
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -32,7 +32,7 @@ entry:
   %3 = ashr i64 %2, 52
   %4 = and i64 %3, 4294965248
   %5 = and i64 %1, 32
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }

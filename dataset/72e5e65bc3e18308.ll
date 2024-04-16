@@ -6,7 +6,7 @@
 define i1 @func0000000000000054(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nsw i32 %3, -1
   %5 = icmp ult i32 %4, 3
   ret i1 %5
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000044(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %0, %2
+  %3 = or disjoint i8 %2, %0
   %4 = add i8 %3, -33
   %5 = icmp ult i8 %4, -32
   ret i1 %5
@@ -30,10 +30,9 @@ entry:
 define i1 @func0000000000000071(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %0, %2
-  %4 = add nuw nsw i8 %3, 33
-  %5 = icmp eq i8 %4, 46
-  ret i1 %5
+  %3 = or disjoint i8 %2, %0
+  %4 = icmp eq i8 %3, 13
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

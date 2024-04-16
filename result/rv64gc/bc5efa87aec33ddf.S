@@ -1,7 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
-	slli	a1, a1, 12
-	sraiw	a1, a1, 31
-	and	a0, a0, a1
+	slli	a1, a1, 44
+	bltz	a1, .LBB0_2
+	li	a0, 1
+	ret
+.LBB0_2:
 	sext.w	a0, a0
 	sgtz	a1, a0
 	negw	a1, a1

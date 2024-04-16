@@ -36,11 +36,10 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = and i32 %2, 1
-  %4 = and i32 %0, 1
-  %5 = or i32 %4, %3
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = or i32 %2, %0
+  %4 = and i32 %3, 1
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -66,12 +65,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 7
-  %3 = and i64 %2, 32
-  %4 = and i64 %0, 31
-  %5 = or disjoint i64 %4, %3
-  %6 = icmp ugt i64 %5, 31
-  ret i1 %6
+  %2 = and i64 %1, 4096
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:

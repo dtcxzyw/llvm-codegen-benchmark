@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i8 %2, -1
   %4 = icmp ult i8 %3, 2
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = add nsw i32 %2, -5
   %4 = icmp ult i32 %3, 2
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = add i16 %2, -65
   %4 = icmp ult i16 %3, 26
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

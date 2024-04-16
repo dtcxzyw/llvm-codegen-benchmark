@@ -10,7 +10,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = add nsw i64 %4, -1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = add nsw i64 %4, 16
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

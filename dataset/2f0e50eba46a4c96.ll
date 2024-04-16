@@ -36,7 +36,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 44
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
@@ -49,7 +49,7 @@ entry:
 define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 8
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6

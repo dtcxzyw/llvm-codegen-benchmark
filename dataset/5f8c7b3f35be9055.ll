@@ -10,9 +10,8 @@ entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 2832
-  %6 = getelementptr inbounds %struct.drmp3_L3_gr_info.2187137, ptr %5, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 17
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.drmp3_L3_gr_info.2187137, ptr %5, i64 %4, i32 7
+  ret ptr %6
 }
 
 ; 3 occurrences:

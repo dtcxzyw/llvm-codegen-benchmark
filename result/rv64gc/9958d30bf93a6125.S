@@ -80,7 +80,10 @@ func0000000000000091:                   # @func0000000000000091
 	li	a3, 16
 	bltu	a2, a3, .LBB8_2
 	li	a1, 4
-.LBB8_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB8_2:
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -95,9 +98,12 @@ func0000000000000148:                   # @func0000000000000148
 	sltu	a0, a1, a0
 	ret
 func0000000000000188:                   # @func0000000000000188
-	snez	a2, a2
-	addi	a2, a2, -1
-	or	a1, a1, a2
+	bnez	a2, .LBB10_2
+	li	a1, -1
+	srli	a1, a1, 32
+	sltu	a0, a1, a0
+	ret
+.LBB10_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a1, a0

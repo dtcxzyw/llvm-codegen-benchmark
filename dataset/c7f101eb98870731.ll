@@ -81,7 +81,7 @@ entry:
   %3 = and i32 %2, 28
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

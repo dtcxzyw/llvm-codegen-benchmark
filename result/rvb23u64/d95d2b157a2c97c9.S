@@ -23,12 +23,9 @@ func00000000000000a1:                   # @func00000000000000a1
 func00000000000000bc:                   # @func00000000000000bc
 	sext.w	a1, a1
 	sext.w	a0, a0
-	lui	a3, 16
-	addiw	a3, a3, -1024
-	and	a2, a2, a3
-	li	a3, 27
-	slli	a3, a3, 11
-	xor	a2, a2, a3
+	slli	a2, a2, 48
+	srli	a2, a2, 58
+	addi	a2, a2, -54
 	snez	a2, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1

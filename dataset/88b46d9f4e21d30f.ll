@@ -8,8 +8,8 @@
 define i32 @func000000000000000c(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
-  %2 = select i1 %1, i32 6, i32 %0
-  %3 = or i32 %2, 2048
+  %2 = or i32 %0, 2048
+  %3 = select i1 %1, i32 2054, i32 %2
   ret i32 %3
 }
 
@@ -22,8 +22,8 @@ entry:
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -1
-  %2 = select i1 %1, i32 0, i32 %0
-  %3 = or i32 %2, 2
+  %2 = or i32 %0, 2
+  %3 = select i1 %1, i32 2, i32 %2
   ret i32 %3
 }
 

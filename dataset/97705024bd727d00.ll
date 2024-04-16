@@ -20,7 +20,7 @@ entry:
   %3 = sdiv exact i64 %2, 6
   %4 = and i64 %3, 4294967295
   %5 = getelementptr inbounds %struct.aiFace.1746327, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = sdiv i64 %2, 2
   %4 = and i64 %3, 2147483646
   %5 = getelementptr inbounds i32, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

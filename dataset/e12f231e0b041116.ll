@@ -23,10 +23,10 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, -257
+  %2 = and i16 %1, -321
   %3 = select i1 %0, i16 0, i16 256
   %4 = or disjoint i16 %3, %2
-  %5 = or i16 %4, 64
+  %5 = or disjoint i16 %4, 64
   ret i16 %5
 }
 
@@ -70,10 +70,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -6914
+  %2 = and i32 %1, -7042
   %3 = select i1 %0, i32 6657, i32 6721
   %4 = or i32 %3, %2
-  %5 = or i32 %4, 128
+  %5 = or disjoint i32 %4, 128
   ret i32 %5
 }
 

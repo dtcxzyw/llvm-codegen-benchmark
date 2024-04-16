@@ -27,7 +27,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
   %5 = mul nsw i32 %4, %3
-  %6 = mul nsw i32 %0, %5
+  %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
 

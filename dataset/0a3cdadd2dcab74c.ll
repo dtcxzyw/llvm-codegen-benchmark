@@ -7,7 +7,7 @@ entry:
   %2 = sub nuw nsw i16 8, %1
   %3 = shl nuw i16 255, %2
   %4 = trunc i16 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = sub nuw nsw i32 -32, %1
   %3 = shl nuw nsw i32 255, %2
   %4 = trunc i32 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = shl nuw nsw i32 255, %2
   %4 = trunc i32 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = sub nuw nsw i32 8, %1
   %3 = shl nsw i32 -1, %2
   %4 = trunc i32 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 

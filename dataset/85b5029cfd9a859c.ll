@@ -86,8 +86,8 @@ define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 63
   %2 = srem i32 %1, 64
-  %3 = sub nsw i32 %1, %2
-  %4 = sub nsw i32 %3, %0
+  %3 = add i32 %2, %0
+  %4 = sub i32 %1, %3
   ret i32 %4
 }
 
@@ -99,8 +99,8 @@ define i32 @func0000000000000025(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 63
   %2 = srem i32 %1, 64
-  %3 = sub nsw i32 %1, %2
-  %4 = sub nsw i32 %3, %0
+  %3 = add i32 %2, %0
+  %4 = sub i32 %1, %3
   ret i32 %4
 }
 
@@ -111,8 +111,8 @@ define i64 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 8191
   %2 = srem i64 %1, 8192
-  %3 = sub nsw i64 %1, %2
-  %4 = sub i64 %3, %0
+  %3 = add i64 %2, %0
+  %4 = sub i64 %1, %3
   ret i64 %4
 }
 
@@ -125,8 +125,8 @@ define i64 @func0000000000000015(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 1
   %2 = srem i64 %1, 2
-  %3 = sub nsw i64 %1, %2
-  %4 = sub nsw i64 %3, %0
+  %3 = add i64 %2, %0
+  %4 = sub i64 %1, %3
   ret i64 %4
 }
 

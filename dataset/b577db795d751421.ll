@@ -11,7 +11,7 @@ entry:
   %2 = sub i32 0, %1
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = sub i32 0, %1
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

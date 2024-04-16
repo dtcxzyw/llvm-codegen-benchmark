@@ -9,8 +9,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 1
   %5 = and i64 %0, 4294967295
-  %6 = sub nsw i64 %5, %4
-  %7 = add nsw i64 %6, -1
+  %6 = xor i64 %4, -1
+  %7 = add nsw i64 %5, %6
   ret i64 %7
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add i32 %0, %1
   %5 = add i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add i32 %0, %1
   %5 = add i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add i32 %0, %1
   %5 = add i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

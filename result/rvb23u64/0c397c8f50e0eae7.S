@@ -16,10 +16,11 @@ func000000000000000e:                   # @func000000000000000e
 	feq.s	a0, fa5, fa5
 	ret
 func0000000000000008:                   # @func0000000000000008
-	srli	a0, a0, 32
-	fmv.w.x	fa5, a0
-	fmv.w.x	fa4, zero
-	feq.s	a0, fa5, fa4
+	lui	a1, 524288
+	addi	a1, a1, -1
+	slli	a1, a1, 32
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 32

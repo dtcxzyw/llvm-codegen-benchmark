@@ -8,7 +8,7 @@ define i1 @func0000000000000008(i16 %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 5.000000e-01
   %3 = fptoui float %2 to i16
-  %4 = icmp ugt i16 %0, %3
+  %4 = icmp ult i16 %3, %0
   ret i1 %4
 }
 
@@ -20,7 +20,7 @@ define i1 @func0000000000000004(i16 %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 5.000000e-01
   %3 = fptoui float %2 to i16
-  %4 = icmp ult i16 %0, %3
+  %4 = icmp ugt i16 %3, %0
   ret i1 %4
 }
 

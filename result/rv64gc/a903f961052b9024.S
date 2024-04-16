@@ -1,9 +1,9 @@
 func0000000000000078:                   # @func0000000000000078
 	andi	a1, a1, 255
-	addi	a1, a1, -6
-	sltiu	a1, a1, 4
+	addi	a1, a1, -10
+	sltiu	a1, a1, -4
 	addi	a0, a0, 1
-	neg	a1, a1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -24,20 +24,22 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a1, 50
-	srliw	a1, a1, 2
-	li	a2, 1724
-	bgeu	a2, a1, .LBB3_2
+	lui	a2, 1048574
+	addi	a3, a2, 1342
+	addw	a1, a1, a3
+	addiw	a2, a2, 1292
+	bgeu	a1, a2, .LBB3_2
 	li	a0, 63
 	ret
 .LBB3_2:
 	addiw	a0, a0, -5
 	ret
 func0000000000000038:                   # @func0000000000000038
-	addi	a1, a1, 50
-	srliw	a1, a1, 2
-	li	a2, 1474
-	bgeu	a2, a1, .LBB4_2
+	lui	a2, 1048575
+	addi	a3, a2, -1754
+	addw	a1, a1, a3
+	addiw	a2, a2, -1804
+	bgeu	a1, a2, .LBB4_2
 	li	a0, 63
 	ret
 .LBB4_2:

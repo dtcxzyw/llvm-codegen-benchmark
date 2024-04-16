@@ -10,7 +10,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
   %4 = ashr exact i32 %3, 24
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 16
   %4 = ashr i32 %3, 24
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -59,7 +59,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = icmp sle i32 %0, %4
+  %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
 
@@ -71,7 +71,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = icmp sge i32 %0, %4
+  %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
 

@@ -9,7 +9,7 @@ entry:
   %4 = icmp ult i32 %3, 10
   %5 = icmp ult i32 %1, 26
   %6 = select i1 %5, i1 true, i1 %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

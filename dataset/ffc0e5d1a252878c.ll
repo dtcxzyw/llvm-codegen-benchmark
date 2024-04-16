@@ -23,10 +23,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 262143
-  %4 = or disjoint i32 %0, %3
+  %3 = and i32 %2, 196608
+  %4 = or i32 %3, %0
   %5 = and i32 %1, 2130706432
-  %6 = or disjoint i32 %4, %5
+  %6 = or i32 %4, %5
   %7 = lshr i32 %6, 16
   ret i32 %7
 }
@@ -39,7 +39,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -33554432
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 520192
   %6 = or disjoint i32 %4, %5
   %7 = lshr exact i32 %6, 12

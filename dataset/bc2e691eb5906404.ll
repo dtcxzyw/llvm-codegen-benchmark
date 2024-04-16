@@ -148,7 +148,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = shl nuw nsw i32 1, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -163,7 +163,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -179,7 +179,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

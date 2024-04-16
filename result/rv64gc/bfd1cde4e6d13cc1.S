@@ -8,15 +8,20 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:                                # %entry
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a2, a0, 1
-	li	a0, 255
+	andi	a2, a1, 1
+	andi	a1, a0, 1
 	bnez	a2, .LBB1_2
-	andi	a1, a1, 1
-	addi	a1, a1, -1
-	lui	a0, 16
-	addi	a0, a0, -1
-	or	a0, a0, a1
-.LBB1_2:                                # %entry
-	slli	a0, a0, 32
-	srli	a0, a0, 32
+	li	a2, -1
+	srli	a2, a2, 32
+	li	a0, 255
+	beqz	a1, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	lui	a2, 16
+	addiw	a2, a2, -1
+	li	a0, 255
+	bnez	a1, .LBB1_4
+.LBB1_3:                                # %entry
+	mv	a0, a2
+.LBB1_4:                                # %entry
 	ret

@@ -8,7 +8,7 @@ define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
 entry:
   %2 = call i8 @llvm.ctpop.i8(i8 %1), !range !0
   %3 = zext nneg i8 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 

@@ -1,7 +1,7 @@
 func00000000000000a4:                   # @func00000000000000a4
 	slti	a3, a1, 0
-	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
+	czero.eqz	a2, a2, a3
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -18,8 +18,8 @@ func00000000000000aa:                   # @func00000000000000aa
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a0, a0, 255
 	andi	a3, a1, 255
-	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
+	czero.nez	a2, a2, a3
 	or	a1, a1, a2
 	andi	a1, a1, 255
 	sltu	a0, a1, a0

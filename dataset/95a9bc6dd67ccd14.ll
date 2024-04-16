@@ -7,7 +7,7 @@ define i32 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = call i64 @llvm.ctlz.i64(i64 %3, i1 false), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -28,7 +28,7 @@ define i32 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = tail call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

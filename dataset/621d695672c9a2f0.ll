@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000052(i64 %0, i64 %1, i128 %2) #0 {
 entry:
-  %3 = icmp sgt i128 %2, -1
-  %4 = select i1 %3, i64 %0, i64 %1
+  %3 = icmp slt i128 %2, 0
+  %4 = select i1 %3, i64 %1, i64 %0
   %5 = zext i64 %4 to i128
   %6 = shl nuw i128 %5, 64
   ret i128 %6
@@ -145,8 +145,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000053(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = icmp sgt i16 %2, -1
-  %4 = select i1 %3, i16 %0, i16 %1
+  %3 = icmp slt i16 %2, 0
+  %4 = select i1 %3, i16 %1, i16 %0
   %5 = zext i16 %4 to i64
   %6 = shl nuw nsw i64 %5, 32
   ret i64 %6
@@ -208,11 +208,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000067(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = shl nuw nsw i64 %5, 3
-  ret i64 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 3
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

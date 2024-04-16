@@ -82,10 +82,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 7
-  %3 = add i64 %1, 8
-  %4 = select i1 %0, i64 %3, i64 %2
-  ret i64 %4
+  %.v = select i1 %0, i64 8, i64 7
+  %2 = add i64 %.v, %1
+  ret i64 %2
 }
 
 ; 78 occurrences:
@@ -170,10 +169,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -48
-  %3 = add nsw i32 %1, 52
-  %4 = select i1 %0, i32 %3, i32 %2
-  ret i32 %4
+  %.v = select i1 %0, i32 52, i32 -48
+  %2 = add nsw i32 %.v, %1
+  ret i32 %2
 }
 
 ; 5 occurrences:
@@ -185,10 +183,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 2
-  %3 = add nuw i64 %1, 3
-  %4 = select i1 %0, i64 %3, i64 %2
-  ret i64 %4
+  %.v = select i1 %0, i64 3, i64 2
+  %2 = add nuw i64 %.v, %1
+  ret i64 %2
 }
 
 ; 3 occurrences:
@@ -198,10 +195,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -127
-  %3 = add nuw i8 %1, 1
-  %4 = select i1 %0, i8 %3, i8 %2
-  ret i8 %4
+  %.v = select i1 %0, i8 1, i8 -127
+  %2 = add i8 %.v, %1
+  ret i8 %2
 }
 
 ; 4 occurrences:
@@ -212,10 +208,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -87
-  %3 = add i32 %1, -48
-  %4 = select i1 %0, i32 %3, i32 %2
-  ret i32 %4
+  %.v = select i1 %0, i32 -48, i32 -87
+  %2 = add i32 %.v, %1
+  ret i32 %2
 }
 
 ; 14 occurrences:
@@ -236,10 +231,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = add i64 %1, 2
-  %4 = select i1 %0, i64 %3, i64 %2
-  ret i64 %4
+  %.v = select i1 %0, i64 2, i64 1
+  %2 = add i64 %.v, %1
+  ret i64 %2
 }
 
 ; 20 occurrences:
@@ -266,10 +260,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 2
-  %3 = add nuw nsw i64 %1, 1
-  %4 = select i1 %0, i64 %3, i64 %2
-  ret i64 %4
+  %.v = select i1 %0, i64 1, i64 2
+  %2 = add nuw nsw i64 %.v, %1
+  ret i64 %2
 }
 
 ; 4 occurrences:
@@ -280,10 +273,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -48
-  %3 = add nsw i8 %1, -87
-  %4 = select i1 %0, i8 %3, i8 %2
-  ret i8 %4
+  %.v = select i1 %0, i8 -87, i8 -48
+  %2 = add i8 %.v, %1
+  ret i8 %2
 }
 
 ; 3 occurrences:
@@ -293,10 +285,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -48
-  %3 = add nuw nsw i32 %1, 52
-  %4 = select i1 %0, i32 %3, i32 %2
-  ret i32 %4
+  %.v = select i1 %0, i32 52, i32 -48
+  %2 = add nsw i32 %.v, %1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

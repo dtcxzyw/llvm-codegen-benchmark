@@ -9,7 +9,7 @@ define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -39,7 +39,7 @@ define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = getelementptr inbounds %"class.openvdb::v11_0::tree::LeafBuffer.835.1667912", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -56,7 +56,7 @@ define i1 @func0000000000000034(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 8
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -80,7 +80,7 @@ define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

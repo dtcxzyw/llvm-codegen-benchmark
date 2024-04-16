@@ -6,7 +6,7 @@ define i32 @func0000000000000023(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = shl nsw i32 %0, 6
   %7 = or disjoint i32 %6, %5
   ret i32 %7
@@ -31,7 +31,7 @@ define i32 @func0000000000000025(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = shl nuw i32 %0, 6
   %7 = or disjoint i32 %6, %5
   ret i32 %7
@@ -52,7 +52,7 @@ define i32 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = shl i32 %0, 6
   %7 = or disjoint i32 %6, %5
   ret i32 %7
@@ -107,7 +107,7 @@ define i32 @func0000000000000027(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = shl nuw nsw i32 %0, 6
   %7 = or disjoint i32 %6, %5
   ret i32 %7

@@ -8,7 +8,7 @@ entry:
   %3 = select i1 %2, i32 -9, i32 0
   %4 = shl i32 %1, 1
   %5 = add i32 %3, %4
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 

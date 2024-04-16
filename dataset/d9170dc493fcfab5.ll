@@ -12,7 +12,7 @@
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 0)
   ret i32 %5
 }

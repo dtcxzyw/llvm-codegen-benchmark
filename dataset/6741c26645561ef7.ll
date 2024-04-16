@@ -25,9 +25,9 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i32 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.bswap.i32(i32 %0)
-  %3 = icmp ne i16 %1, 18761
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
+  %.not = icmp eq i16 %1, 18761
+  %3 = select i1 %.not, i32 %0, i32 %2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

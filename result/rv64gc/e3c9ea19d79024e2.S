@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
-	sext.w	a2, a2
-	li	a3, 8
-	bltu	a2, a3, .LBB0_2
+	srliw	a2, a2, 3
+	slli	a2, a2, 3
+	beqz	a2, .LBB0_2
 	addi	a0, a1, -128
 .LBB0_2:                                # %entry
 	ret

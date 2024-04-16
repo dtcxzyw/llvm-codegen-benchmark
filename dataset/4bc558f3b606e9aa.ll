@@ -58,7 +58,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -74,7 +74,7 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 88
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -88,7 +88,7 @@ entry:
 define i1 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sdiv i16 %2, 2
-  %4 = add i16 %1, %3
+  %4 = add i16 %3, %1
   %5 = icmp slt i16 %4, %0
   ret i1 %5
 }
@@ -101,7 +101,7 @@ entry:
 define i1 @func000000000000000a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sdiv i16 %2, 2
-  %4 = add i16 %1, %3
+  %4 = add i16 %3, %1
   %5 = icmp sgt i16 %4, %0
   ret i1 %5
 }
@@ -120,7 +120,7 @@ entry:
 define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 6
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -147,7 +147,7 @@ entry:
 define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -194,7 +194,7 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2592000000000
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -250,7 +250,7 @@ entry:
 define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2592000000000
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
@@ -278,7 +278,7 @@ entry:
 define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 80
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -386,7 +386,7 @@ entry:
 define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -419,7 +419,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
@@ -431,7 +431,7 @@ entry:
 define i1 @func000000000000004b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -24
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp sge i64 %4, %0
   ret i1 %5
 }
@@ -443,7 +443,7 @@ entry:
 define i1 @func0000000000000045(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
@@ -471,7 +471,7 @@ entry:
 define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -482,7 +482,7 @@ entry:
 define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }

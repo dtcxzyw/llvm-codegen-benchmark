@@ -9,7 +9,7 @@ entry:
   %2 = and i8 %1, 15
   %3 = tail call i8 @llvm.umin.i8(i8 %2, i8 8)
   %4 = zext nneg i8 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = and i32 %1, -4
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 8)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

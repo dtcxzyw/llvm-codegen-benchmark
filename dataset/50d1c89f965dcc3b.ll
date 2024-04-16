@@ -5,11 +5,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000066(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 7, i32 %2
-  %4 = icmp slt i32 %3, 1
-  %5 = select i1 %4, i32 7, i32 %0
-  %6 = icmp slt i32 %5, 1
-  ret i1 %6
+  %3 = icmp sgt i32 %2, 0
+  %.not1 = select i1 %1, i1 true, i1 %3
+  %4 = icmp slt i32 %0, 1
+  %5 = select i1 %.not1, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -17,11 +17,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 7, i32 %2
-  %4 = icmp slt i32 %3, 1
-  %5 = select i1 %4, i32 7, i32 %0
-  %6 = icmp ne i32 %5, 8
-  ret i1 %6
+  %3 = icmp slt i32 %2, 1
+  %not. = xor i1 %1, true
+  %.not1 = select i1 %not., i1 %3, i1 false
+  %4 = icmp ne i32 %0, 8
+  %5 = select i1 %.not1, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 7 occurrences:
@@ -35,11 +36,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = icmp eq i32 %3, 63
-  %5 = select i1 %4, i32 0, i32 %0
-  %6 = icmp eq i32 %5, 63
-  ret i1 %6
+  %3 = icmp ne i32 %2, 63
+  %.not1 = select i1 %1, i1 true, i1 %3
+  %4 = icmp eq i32 %0, 63
+  %5 = select i1 %.not1, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -47,11 +48,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 9223372036854775807, i64 %2, !prof !0
-  %4 = icmp eq i64 %3, 0
-  %5 = select i1 %4, i64 0, i64 %0
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = icmp ne i64 %2, 0
+  %.not1 = select i1 %1, i1 true, i1 %3
+  %4 = icmp ne i64 %0, 0
+  %5 = select i1 %.not1, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -59,11 +60,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 2147483647, i32 %2
-  %4 = icmp eq i32 %3, -2147483648
-  %5 = select i1 %4, i32 -2147483648, i32 %0
-  %6 = icmp ugt i32 %5, 15
-  ret i1 %6
+  %3 = icmp eq i32 %2, -2147483648
+  %not. = xor i1 %1, true
+  %.not1 = select i1 %not., i1 %3, i1 false
+  %4 = icmp ugt i32 %0, 15
+  %5 = select i1 %.not1, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -71,11 +73,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 2147483647, i32 %2
-  %4 = icmp eq i32 %3, -2147483648
-  %5 = select i1 %4, i32 -2147483648, i32 %0
-  %6 = icmp sgt i32 %5, -1
-  ret i1 %6
+  %3 = icmp ne i32 %2, -2147483648
+  %.not1 = select i1 %1, i1 true, i1 %3
+  %4 = icmp sgt i32 %0, -1
+  %5 = select i1 %.not1, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -83,11 +85,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 2147483647, i32 %2
-  %4 = icmp slt i32 %3, -2147483646
-  %5 = select i1 %4, i32 -2147483648, i32 %0
-  %6 = icmp sgt i32 %5, -1
-  ret i1 %6
+  %3 = icmp sgt i32 %2, -2147483647
+  %.not1 = select i1 %1, i1 true, i1 %3
+  %4 = icmp sgt i32 %0, -1
+  %5 = select i1 %.not1, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -97,11 +99,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = icmp slt i32 %3, 0
-  %5 = select i1 %4, i32 1, i32 %0
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = icmp sgt i32 %2, -1
+  %.not1 = select i1 %1, i1 true, i1 %3
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %.not1, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -109,13 +111,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 0, i64 %2
-  %4 = icmp ult i64 %3, 17
-  %5 = select i1 %4, i64 0, i64 %0
-  %6 = icmp ult i64 %5, 17
+  %3 = icmp ult i64 %2, 17
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = icmp ult i64 %0, 17
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 
 attributes #0 = { nounwind }
-
-!0 = !{!"branch_weights", i32 1, i32 2000}

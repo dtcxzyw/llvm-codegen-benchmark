@@ -7,7 +7,7 @@ entry:
   %2 = tail call i8 @llvm.smax.i8(i8 %1, i8 0)
   %3 = add nuw i8 %2, 1
   %4 = zext i8 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

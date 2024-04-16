@@ -10,8 +10,8 @@ entry:
   %3 = add i32 %2, 1
   %4 = add i32 %3, %1
   %5 = icmp sgt i32 %4, 0
-  %6 = select i1 %5, i32 0, i32 %0
-  %7 = tail call i32 @llvm.smax.i32(i32 %6, i32 0)
+  %6 = tail call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %7 = select i1 %5, i32 0, i32 %6
   ret i32 %7
 }
 

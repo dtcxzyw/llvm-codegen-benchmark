@@ -7,7 +7,7 @@ entry:
   %3 = srem i32 %2, 64
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 %1, %4
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = srem i32 %2, 64
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, %4
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

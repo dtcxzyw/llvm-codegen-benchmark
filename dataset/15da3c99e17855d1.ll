@@ -51,8 +51,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = add i64 %5, -18
-  %7 = icmp ugt i64 %6, 255
+  %6 = add i64 %5, -274
+  %7 = icmp ult i64 %6, -256
   ret i1 %7
 }
 

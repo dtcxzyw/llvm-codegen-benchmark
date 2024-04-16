@@ -7,7 +7,7 @@ define i1 @func0000000000000008(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fmuladd.f64(double %1, double 0x3FD34413509F79FB, double %2)
   %4 = fptosi double %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = icmp ugt i32 %5, 22
   ret i1 %6
 }
@@ -25,7 +25,7 @@ define i1 @func0000000000000018(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fmuladd.f64(double %1, double 0x3FD34413509F79FB, double %2)
   %4 = fptosi double %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp ugt i32 %5, 22
   ret i1 %6
 }

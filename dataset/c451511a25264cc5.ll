@@ -93,9 +93,9 @@
 define i64 @func0000000000000088(i64 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 64, %2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = trunc i128 %1 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = shl i64 %6, %4
   ret i64 %7
 }
@@ -196,7 +196,7 @@ entry:
   %3 = sub nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
   %5 = trunc i128 %1 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = shl i64 %6, %4
   ret i64 %7
 }
@@ -215,7 +215,7 @@ entry:
   %3 = sub nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
   %5 = trunc nuw i128 %1 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = shl i64 %6, %4
   ret i64 %7
 }
@@ -232,9 +232,9 @@ entry:
 define i64 @func00000000000000c8(i64 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 64, %2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = trunc nuw i128 %1 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = shl i64 %6, %4
   ret i64 %7
 }

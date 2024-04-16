@@ -17,7 +17,7 @@
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = select i1 %3, i64 1155, i64 1
   ret i64 %4
 }
@@ -67,7 +67,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sgt i64 %0, %2
+  %3 = icmp slt i64 %2, %0
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -97,7 +97,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp slt i64 %0, %2
+  %3 = icmp sgt i64 %2, %0
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
@@ -112,7 +112,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -123,7 +123,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = select i1 %3, i32 43, i32 0
   ret i32 %4
 }

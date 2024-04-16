@@ -7,7 +7,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = xor i64 %4, -1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

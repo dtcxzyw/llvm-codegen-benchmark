@@ -303,7 +303,7 @@ entry:
   %2 = add i8 %1, -48
   %3 = icmp ult i8 %2, 10
   %4 = icmp ugt i8 %1, 126
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }

@@ -7,9 +7,9 @@
 define i32 @func0000000000000065(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, %0
-  %3 = add nsw i32 %0, -1
-  %4 = select i1 %2, i32 %1, i32 %3
-  %5 = sub nsw i32 %3, %4
+  %3 = xor i32 %1, -1
+  %4 = add i32 %3, %0
+  %5 = select i1 %2, i32 %4, i32 0
   ret i32 %5
 }
 

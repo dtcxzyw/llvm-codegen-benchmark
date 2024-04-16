@@ -84,7 +84,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = mul nuw i64 %0, %5
+  %6 = mul nuw i64 %5, %0
   ret i64 %6
 }
 

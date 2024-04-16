@@ -284,10 +284,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000019(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nuw nsw i64 %1, %2
-  %4 = mul i64 %3, -8
-  %5 = getelementptr inbounds double, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = shl i64 %.neg, 3
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -295,10 +295,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = mul i64 %3, -8
-  %5 = getelementptr inbounds double, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = shl i64 %.neg, 3
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:

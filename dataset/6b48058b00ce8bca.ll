@@ -32,9 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp ugt ptr %4, %0
+  %3 = icmp ne ptr %1, %2
+  %4 = icmp ugt ptr %1, %0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 

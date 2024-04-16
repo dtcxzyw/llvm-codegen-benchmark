@@ -12,7 +12,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000074(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 4095
+  %2 = and i16 %1, 3584
   %3 = icmp ult i16 %2, 2560
   %4 = add nuw nsw i16 %0, 87
   %5 = or disjoint i16 %0, 48

@@ -6,8 +6,8 @@
 define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = trunc i64 %1 to i16
-  %3 = icmp ugt i16 %2, 255
+  %2 = and i64 %1, 65280
+  %3 = icmp ne i64 %2, 0
   ret i1 %3
 }
 
@@ -48,8 +48,8 @@ entry:
 define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 65536
+  %2 = and i64 %1, 4294901760
+  %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 

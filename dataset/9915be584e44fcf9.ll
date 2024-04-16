@@ -61,11 +61,11 @@ entry:
 define i32 @func0000000000000039(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 32
-  %4 = icmp ne i32 %2, -1
-  %5 = select i1 %4, i32 %1, i32 %3
-  %6 = or disjoint i32 %5, 32768
-  %7 = select i1 %0, i32 %5, i32 %6
-  ret i32 %7
+  %.not = icmp eq i32 %2, -1
+  %4 = select i1 %.not, i32 %3, i32 %1
+  %5 = or disjoint i32 %4, 32768
+  %6 = select i1 %0, i32 %4, i32 %5
+  ret i32 %6
 }
 
 ; 16 occurrences:

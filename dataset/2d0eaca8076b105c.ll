@@ -106,7 +106,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -117,7 +117,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = icmp sgt i32 %3, 4194304
   ret i1 %4
 }
@@ -129,7 +129,7 @@ entry:
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = mul nuw nsw i32 %0, %2
+  %3 = mul nuw nsw i32 %2, %0
   %4 = icmp ult i32 %3, 129
   ret i1 %4
 }
@@ -141,7 +141,7 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -152,7 +152,7 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = icmp ugt i64 %3, 2305843009213693951
   ret i1 %4
 }
@@ -163,7 +163,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = icmp slt i64 %3, 2
   ret i1 %4
 }

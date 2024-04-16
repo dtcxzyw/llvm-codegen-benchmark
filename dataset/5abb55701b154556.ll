@@ -13,7 +13,7 @@ entry:
   %3 = add i16 %2, 1
   %4 = sub i16 %3, %1
   %5 = zext i16 %4 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 

@@ -24,9 +24,8 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct._ir_insn.1714455, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct._ir_insn.1714455, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -120,9 +119,8 @@ define ptr @func000000000000000d(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.alps_nibble_commands.2022092, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %struct.alps_nibble_commands.2022092, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -156,9 +154,8 @@ define ptr @func0000000000000001(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
   %4 = zext i8 %3 to i64
-  %5 = getelementptr %struct.HistogramLiteral.2233524, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1024
-  ret ptr %6
+  %5 = getelementptr %struct.HistogramLiteral.2233524, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

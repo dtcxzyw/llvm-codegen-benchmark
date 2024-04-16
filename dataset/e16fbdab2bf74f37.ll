@@ -11,7 +11,7 @@
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = and i32 %1, 131064
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -23,7 +23,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = and i32 %0, -2147483648
   %6 = or disjoint i32 %5, %4
   ret i32 %6

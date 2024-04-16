@@ -1,9 +1,9 @@
 func0000000000000017:                   # @func0000000000000017
-	czero.eqz	a1, a1, a2
-	lui	a3, 1024
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	zext.w	a1, a1
+	lui	a3, 1024
+	czero.nez	a3, a3, a2
+	czero.eqz	a1, a1, a2
+	or	a1, a1, a3
 	sh1add	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019

@@ -89,10 +89,10 @@ define i8 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = select i1 %2, i8 9, i8 -114
-  %4 = and i64 %0, 3
-  %5 = icmp ult i64 %4, 2
-  %6 = select i1 %5, i8 -17, i8 %3
-  ret i8 %6
+  %4 = and i64 %0, 2
+  %.not.not = icmp eq i64 %4, 0
+  %5 = select i1 %.not.not, i8 -17, i8 %3
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

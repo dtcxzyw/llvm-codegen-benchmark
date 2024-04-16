@@ -8,13 +8,13 @@ func0000000000000005:                   # @func0000000000000005
 	fle.d	a0, fa0, fa5
 	beqz	a0, .LBB0_2
 	fli.d	fa5, -1.0
-	fadd.d	fa5, fa0, fa5
+	fadd.d	fa5, fa5, fa0
 	fcvt.w.d	a0, fa5, rtz
 	ret
 .LBB0_2:
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
-	fadd.d	fa5, fa0, fa5
+	fadd.d	fa5, fa5, fa0
 	fcvt.w.d	a0, fa5, rtz
 	ret
 func0000000000000002:                   # @func0000000000000002
@@ -24,7 +24,7 @@ func0000000000000002:                   # @func0000000000000002
 	beqz	a0, .LBB1_2
 	fneg.s	fa5, fa5
 .LBB1_2:                                # %entry
-	fadd.s	fa5, fa0, fa5
+	fadd.s	fa5, fa5, fa0
 	fcvt.w.s	a0, fa5, rtz
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -34,7 +34,7 @@ func0000000000000004:                   # @func0000000000000004
 	bnez	a0, .LBB2_2
 	fneg.s	fa5, fa5
 .LBB2_2:                                # %entry
-	fadd.s	fa5, fa0, fa5
+	fadd.s	fa5, fa5, fa0
 	fcvt.l.s	a0, fa5, rtz
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -44,6 +44,6 @@ func0000000000000003:                   # @func0000000000000003
 	bnez	a0, .LBB3_2
 	fneg.d	fa5, fa5
 .LBB3_2:                                # %entry
-	fadd.d	fa5, fa0, fa5
+	fadd.d	fa5, fa5, fa0
 	fcvt.w.d	a0, fa5, rtz
 	ret

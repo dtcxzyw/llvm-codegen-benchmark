@@ -9,8 +9,8 @@
 define i64 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = sext i32 %3 to i64
+  %3 = sext i32 %0 to i64
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 

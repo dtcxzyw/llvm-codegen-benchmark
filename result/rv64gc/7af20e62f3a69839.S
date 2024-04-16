@@ -5,7 +5,7 @@ func0000000000000014:                   # @func0000000000000014
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fabs.d	fa4, fa1
 	fmax.d	fa5, fa4, fa5
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308

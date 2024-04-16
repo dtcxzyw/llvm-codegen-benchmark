@@ -10,7 +10,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 4)
   %4 = zext i32 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -26,7 +26,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = tail call i16 @llvm.umax.i16(i16 %2, i16 1)
   %4 = zext i16 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -41,7 +41,7 @@ define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }

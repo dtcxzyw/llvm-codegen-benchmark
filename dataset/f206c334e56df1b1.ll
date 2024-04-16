@@ -8,7 +8,7 @@ entry:
   %3 = call noundef float @llvm.fabs.f32(float %2)
   %4 = call noundef float @llvm.fabs.f32(float %1)
   %5 = fcmp ugt float %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = tail call double @llvm.fabs.f64(double %1)
   %5 = fcmp ult double %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

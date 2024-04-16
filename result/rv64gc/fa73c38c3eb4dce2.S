@@ -1,8 +1,8 @@
 func0000000000000031:                   # @func0000000000000031
-	addi	a2, a1, -5
-	li	a3, 3
+	addi	a2, a1, -9
+	li	a3, -4
 	li	a1, 9
-	bltu	a3, a2, .LBB0_2
+	bltu	a2, a3, .LBB0_2
 	li	a1, 5
 .LBB0_2:                                # %entry
 	add	a0, a0, a1

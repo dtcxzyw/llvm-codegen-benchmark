@@ -8,9 +8,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000031:                   # @func0000000000000031
 	subw	a0, a0, a1
-	sraiw	a0, a0, 1
-	andi	a0, a0, -8
-	addi	a0, a0, 128
+	andi	a0, a0, -16
+	addi	a0, a0, 256
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -24,7 +23,5 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000021:                   # @func0000000000000021
 	subw	a0, a0, a1
-	sraiw	a0, a0, 1
-	andi	a0, a0, -2
-	seqz	a0, a0
+	sltiu	a0, a0, 4
 	ret

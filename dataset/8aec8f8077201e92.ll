@@ -16,7 +16,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

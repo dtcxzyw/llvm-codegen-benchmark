@@ -13,7 +13,7 @@
 define double @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sitofp i32 %3 to double
   ret double %4
 }
@@ -25,7 +25,7 @@ entry:
 define double @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = sitofp i32 %3 to double
   ret double %4
 }

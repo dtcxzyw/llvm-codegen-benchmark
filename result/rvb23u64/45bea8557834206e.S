@@ -4,11 +4,7 @@ func0000000000000078:                   # @func0000000000000078
 	srli	a0, a0, 4
 	ret
 func0000000000000068:                   # @func0000000000000068
-	andi	a0, a0, 255
-	slli	a0, a0, 3
-	addi	a0, a0, -5
-	slli	a0, a0, 48
-	srli	a0, a0, 51
+	addi	a0, a0, -1
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	sext.w	a0, a0

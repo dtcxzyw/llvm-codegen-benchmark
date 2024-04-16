@@ -4,7 +4,6 @@ func000000000000000a:                   # @func000000000000000a
 	srl	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	addi	a1, a1, -624
 	slli	a1, a1, 3
 	srlw	a0, a0, a1
 	ret

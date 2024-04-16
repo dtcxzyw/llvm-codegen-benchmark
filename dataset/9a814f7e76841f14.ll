@@ -12,10 +12,10 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   %4 = sdiv i8 %3, 4
   %5 = sext i8 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -26,10 +26,10 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   %4 = sdiv i8 %3, 4
   %5 = sext i8 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

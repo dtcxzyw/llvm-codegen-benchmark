@@ -164,8 +164,8 @@ define i32 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = and i32 %1, 2047
-  %3 = add nsw i32 %2, -1075
-  %4 = mul nsw i32 %3, 631305
+  %3 = mul nuw nsw i32 %2, 631305
+  %4 = add nsw i32 %3, -678652875
   ret i32 %4
 }
 
@@ -184,8 +184,8 @@ define i32 @func0000000000000035(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = and i32 %1, 2047
-  %3 = add nsw i32 %2, -1075
-  %4 = mul nsw i32 %3, 631305
+  %3 = mul nuw nsw i32 %2, 631305
+  %4 = add nsw i32 %3, -678652875
   ret i32 %4
 }
 

@@ -20,9 +20,8 @@ define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = and i8 %0, 31
-  %4 = sub nsw i8 %3, %2
-  %5 = icmp slt i8 %4, 0
-  ret i1 %5
+  %4 = icmp ult i8 %3, %2
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -72,11 +71,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 31
-  %3 = and i8 %0, 31
-  %4 = sub nsw i8 %3, %2
-  %5 = icmp eq i8 %4, 0
-  ret i1 %5
+  %2 = xor i8 %0, %1
+  %3 = and i8 %2, 31
+  %4 = icmp eq i8 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -100,9 +98,8 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777215
   %3 = and i32 %0, 16777215
-  %4 = sub nsw i32 %3, %2
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp ugt i32 %3, %2
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -113,9 +110,8 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = and i64 %0, -4
-  %4 = sub i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -124,10 +120,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -16
-  %3 = and i64 %0, -4
-  %4 = sub i64 %3, %2
-  %5 = icmp ugt i64 %4, 31
-  ret i1 %5
+  %3 = sub i64 %0, %2
+  %4 = icmp ugt i64 %3, 31
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

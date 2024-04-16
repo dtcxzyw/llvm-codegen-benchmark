@@ -20,9 +20,7 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000028:                   # @func0000000000000028
 	srl	a0, a0, a1
-	andi	a0, a0, 3
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	bexti	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	srl	a0, a0, a1

@@ -26,9 +26,8 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = sub nsw i32 %0, %5
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp slt i32 %5, %0
+  ret i1 %6
 }
 
 ; 14 occurrences:
@@ -52,9 +51,8 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -107,9 +105,8 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
-  %6 = sub i16 %0, %5
-  %7 = icmp eq i16 %6, 0
-  ret i1 %7
+  %6 = icmp eq i16 %5, %0
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -122,7 +119,7 @@ define i1 @func00000000000001ca(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = sub i32 %0, %5
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
@@ -162,7 +159,7 @@ define i1 @func00000000000001c6(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = sub i32 %0, %5
   %7 = icmp slt i32 %6, 1
   ret i1 %7

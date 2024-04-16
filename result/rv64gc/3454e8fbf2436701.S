@@ -11,10 +11,10 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	srli	a0, a0, 9
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	ori	a0, a0, 2
-	slli	a0, a0, 32
+	andi	a1, a0, 512
+	li	a0, 2
+	beqz	a1, .LBB2_2
+	li	a0, -1
 	srli	a0, a0, 32
+.LBB2_2:                                # %entry
 	ret

@@ -24,7 +24,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -16
+  %2 = add i32 %1, 65520
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 1023
   %5 = zext nneg i32 %4 to i64

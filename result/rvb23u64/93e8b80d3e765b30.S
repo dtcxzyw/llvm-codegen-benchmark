@@ -39,7 +39,7 @@ func0000000000000006:                   # @func0000000000000006
 	bnez	a0, .LBB4_2
 	fmv.w.x	fa1, zero
 .LBB4_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fli.d	fa5, 1.0
@@ -47,5 +47,5 @@ func0000000000000005:                   # @func0000000000000005
 	beqz	a0, .LBB5_2
 	fli.d	fa1, 1.0
 .LBB5_2:                                # %entry
-	fmul.d	fa0, fa0, fa1
+	fmul.d	fa0, fa1, fa0
 	ret

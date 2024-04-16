@@ -7,11 +7,10 @@
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 24
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds { { { { { { i64, ptr }, i64 } } } }, {} }, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 -24
-  ret ptr %7
+  %.neg = sdiv exact i64 %3, -24
+  %4 = getelementptr inbounds { { { { { { i64, ptr }, i64 } } } }, {} }, ptr %0, i64 %.neg
+  %5 = getelementptr inbounds i8, ptr %4, i64 -24
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

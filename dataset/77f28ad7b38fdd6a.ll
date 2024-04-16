@@ -11,7 +11,7 @@ entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = urem i32 %3, 26
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = icmp sgt i32 %1, -5
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = urem i32 %3, 7
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 

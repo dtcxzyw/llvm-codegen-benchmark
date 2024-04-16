@@ -13,10 +13,10 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB1_2
 	mv	a1, a2
 .LBB1_2:                                # %entry
-	lui	a0, 921600
-	addiw	a0, a0, -1026
-	or	a0, a0, a1
-	lui	a1, 983040
-	addiw	a1, a1, -1
+	lui	a0, 61440
+	addiw	a0, a0, 1025
 	and	a0, a0, a1
+	lui	a1, 921600
+	addiw	a1, a1, -1026
+	or	a0, a0, a1
 	ret

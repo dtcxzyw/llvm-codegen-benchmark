@@ -865,9 +865,9 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i64 -1, i64 %2
-  ret i64 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i64 %2, i64 -1
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -901,9 +901,9 @@ entry:
 define i64 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = icmp ne i8 %0, 0
-  %4 = select i1 %3, i64 0, i64 %2
-  ret i64 %4
+  %.not = icmp eq i8 %0, 0
+  %3 = select i1 %.not, i64 %2, i64 0
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -913,9 +913,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i32 1, i32 %2
-  ret i32 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i32 %2, i32 1
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -925,9 +925,9 @@ entry:
 define i64 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 8
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i64 24, i64 %2
-  ret i64 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i64 %2, i64 24
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

@@ -11,7 +11,7 @@ define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = urem i64 %2, 10
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 
@@ -22,7 +22,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = urem i64 %2, 2000000
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

@@ -6,7 +6,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -19,13 +20,15 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000003c:                   # @func000000000000003c
 	andi	a2, a2, 1
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a2, a2, 1
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

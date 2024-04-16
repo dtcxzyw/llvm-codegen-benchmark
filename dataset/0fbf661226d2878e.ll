@@ -8,9 +8,9 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 1, %1
   %5 = and i32 %4, %3
-  %6 = icmp ne i32 %5, 0
-  %7 = select i1 %6, i32 %0, i32 -1
-  ret i32 %7
+  %.not = icmp eq i32 %5, 0
+  %6 = select i1 %.not, i32 -1, i32 %0
+  ret i32 %6
 }
 
 ; 3 occurrences:

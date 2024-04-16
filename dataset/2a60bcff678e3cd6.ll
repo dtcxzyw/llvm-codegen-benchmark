@@ -7,7 +7,7 @@
 define i1 @func0000000000000381(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = ashr i64 %4, %0
   %6 = trunc i64 %5 to i32
   %7 = icmp eq i32 %6, 0

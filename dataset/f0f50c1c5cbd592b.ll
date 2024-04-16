@@ -163,7 +163,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %0 to i32
   %5 = mul i32 %4, -100
   %6 = add i32 %5, %3

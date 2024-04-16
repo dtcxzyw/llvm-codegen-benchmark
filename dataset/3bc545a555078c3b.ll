@@ -8,7 +8,7 @@ define i32 @func0000000000000009(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 92
   %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = lshr exact i32 %4, 1
   ret i32 %5
 }
@@ -26,7 +26,7 @@ define i32 @func0000000000000032(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 2
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = lshr i32 %4, 2
   ret i32 %5
 }
@@ -39,7 +39,7 @@ define i16 @func0000000000000008(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = sext i1 %2 to i16
-  %4 = add i16 %0, %3
+  %4 = add i16 %3, %0
   %5 = lshr i16 %4, 8
   ret i16 %5
 }
@@ -52,7 +52,7 @@ define i64 @func0000000000000050(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr i64 %4, 1
   ret i64 %5
 }
@@ -79,7 +79,7 @@ define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = lshr i32 %4, 1
   ret i32 %5
 }
@@ -91,7 +91,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = lshr i32 %4, 2
   ret i32 %5
 }

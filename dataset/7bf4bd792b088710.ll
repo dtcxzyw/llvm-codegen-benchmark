@@ -6,7 +6,7 @@
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = sub i32 %2, %0
   %5 = sub i32 %0, %2
   %6 = select i1 %3, i32 %5, i32 %4
@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = sub nsw i32 %0, %2
   %5 = sub i32 %2, %0
   %6 = select i1 %3, i32 %4, i32 %5

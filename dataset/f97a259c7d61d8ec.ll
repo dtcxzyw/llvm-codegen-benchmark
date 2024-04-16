@@ -22,8 +22,8 @@
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %0, %3
+  %3 = add i64 %2, %0
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -43,8 +43,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ugt i64 %0, %3
+  %3 = xor i64 %0, -1
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
@@ -57,8 +57,8 @@ entry:
 define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ugt i64 %0, %3
+  %3 = xor i64 %0, -1
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
@@ -73,8 +73,8 @@ entry:
 define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %0, %3
+  %3 = add i64 %2, %0
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -97,8 +97,8 @@ entry:
 define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %0, %2
-  %4 = icmp slt i32 %0, %3
+  %3 = add i32 %2, %0
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -108,8 +108,8 @@ entry:
 define i1 @func0000000000000046(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add i32 %0, %2
-  %4 = icmp slt i32 %0, %3
+  %3 = add i32 %2, %0
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 

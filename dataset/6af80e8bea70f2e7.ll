@@ -24,7 +24,7 @@ entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nsw i64 %3, 16
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nsw i64 %3, 16
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

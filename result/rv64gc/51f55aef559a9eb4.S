@@ -1,6 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
 	subw	a2, a2, a1
-	addw	a0, a0, a2
+	negw	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -20,7 +21,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000111:                   # @func0000000000000111
 	subw	a2, a2, a1
-	addw	a0, a0, a2
+	negw	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a

@@ -20,8 +20,8 @@ define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %0, -2
-  %4 = add nsw i32 %3, %2
-  %5 = icmp eq i32 %4, 0
+  %4 = sub nsw i32 0, %2
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 

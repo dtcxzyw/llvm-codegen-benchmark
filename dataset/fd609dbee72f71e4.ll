@@ -8,7 +8,7 @@
 define i1 @func000000000000000a(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = call i64 @llvm.smax.i64(i64 %0, i64 %4)
   %6 = icmp sgt i64 %5, 0
   ret i1 %6

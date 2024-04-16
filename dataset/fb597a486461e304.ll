@@ -12,7 +12,7 @@ define i64 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = sub nsw i128 %0, %2
-  %4 = ashr i128 %3, 56
+  %4 = lshr i128 %3, 56
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }

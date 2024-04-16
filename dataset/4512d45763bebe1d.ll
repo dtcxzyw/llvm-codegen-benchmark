@@ -7,7 +7,7 @@ entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i16
   %4 = shl nsw i16 -1, %3
-  %5 = icmp ult i16 %0, %4
+  %5 = icmp ugt i16 %4, %0
   ret i1 %5
 }
 

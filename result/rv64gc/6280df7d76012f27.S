@@ -1,7 +1,8 @@
 func000000000000004a:                   # @func000000000000004a
 	mul	a0, a0, a2
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	srli	a0, a0, 63
+	slli	a0, a0, 63
+	seqz	a0, a0
 	ret
 func000000000000008c:                   # @func000000000000008c
 	mul	a0, a0, a2
@@ -28,11 +29,12 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000048:                   # @func0000000000000048
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
+	slli	a0, a0, 27
 	snez	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func0000000000000041:                   # @func0000000000000041
 	mulw	a0, a0, a1

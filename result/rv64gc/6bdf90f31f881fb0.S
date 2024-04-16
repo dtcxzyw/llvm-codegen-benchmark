@@ -14,10 +14,9 @@ func00000000000001cb:                   # @func00000000000001cb
 	slli	a3, a3, 1
 	sltu	a2, a3, a2
 	xori	a2, a2, 1
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func00000000000000d9:                   # @func00000000000000d9
 	slli	a3, a3, 1

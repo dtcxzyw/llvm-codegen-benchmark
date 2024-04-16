@@ -92,7 +92,7 @@ entry:
 define i128 @func0000000000000006(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 3
-  %3 = xor i128 %0, %2
+  %3 = xor i128 %2, %0
   %4 = lshr i128 %3, 64
   ret i128 %4
 }

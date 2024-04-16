@@ -8,18 +8,16 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a0
-	czero.eqz	a0, a0, a1
-	li	a2, 11
+	li	a2, 62
+	subw	a2, a2, a0
+	czero.eqz	a0, a2, a1
+	li	a2, 51
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
-	li	a1, 62
-	subw	a0, a1, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a1, a0
-	czero.eqz	a0, a0, a1
 	li	a2, 64
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
-	subw	a0, a2, a0
+	subw	a2, a2, a0
+	czero.eqz	a0, a2, a1
 	ret

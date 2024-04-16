@@ -9,8 +9,7 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
+	snez	a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret

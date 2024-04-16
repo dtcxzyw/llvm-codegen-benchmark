@@ -13,12 +13,12 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fadd.s	fa5, fa1, fa2
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fadd.s	fa5, fa1, fa2
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	fadd.s	fa5, fa1, fa2

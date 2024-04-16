@@ -33,7 +33,7 @@ entry:
   %2 = freeze i64 %1
   %3 = icmp eq i64 %2, 1
   %4 = select i1 %3, i32 5, i32 3
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -57,7 +57,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 2000000000
   %4 = select i1 %3, i32 999999999, i32 -1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

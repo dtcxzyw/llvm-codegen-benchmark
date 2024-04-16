@@ -107,10 +107,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
-  %2 = sext i8 %1 to i32
-  %3 = and i32 %2, 31
+  %2 = and i8 %1, 31
+  %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -145,10 +145,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 63
+  %2 = and i32 %1, 63
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

@@ -62,9 +62,8 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 32
-  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %4, i64 %5, i32 3
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

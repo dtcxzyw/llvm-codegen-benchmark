@@ -1,12 +1,13 @@
 func0000000000000010:                   # @func0000000000000010
+	not	a0, a0
 	andi	a0, a0, 1
-	add	a0, a0, a1
-	addiw	a0, a0, 6
+	subw	a0, a1, a0
+	addiw	a0, a0, 7
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	addi	a0, a0, -1
-	andi	a0, a0, -10
+	andi	a0, a0, 246
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret

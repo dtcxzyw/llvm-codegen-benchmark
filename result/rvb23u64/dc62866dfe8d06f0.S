@@ -43,7 +43,7 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000038:                   # @func0000000000000038
 	add	a0, a0, a1
 	fcvt.s.w	fa5, a0
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1

@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %0, %1
-  %3 = sub i32 32768, %2
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %.neg = sub i32 %1, %0
+  %2 = add i32 %.neg, 32768
+  %3 = sext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -16,10 +16,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = sub nsw i32 0, %2
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %.neg = sub nsw i32 %1, %0
+  %2 = sext i32 %.neg to i64
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -28,10 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %0, %1
-  %3 = sub nsw i32 1, %2
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %.neg = sub i32 %1, %0
+  %2 = add i32 %.neg, 1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

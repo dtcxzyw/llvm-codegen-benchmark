@@ -6,7 +6,7 @@
 define i64 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = ashr exact i64 %3, 32
   ret i64 %4
 }
@@ -25,7 +25,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i16
-  %3 = mul nsw i16 %0, %2
+  %3 = mul nsw i16 %2, %0
   %4 = ashr i16 %3, 7
   ret i16 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = ashr i64 %3, 6
   ret i64 %4
 }

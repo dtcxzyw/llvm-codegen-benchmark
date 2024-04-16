@@ -151,7 +151,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
-  %6 = xor i128 %0, %5
+  %6 = xor i128 %5, %0
   ret i128 %6
 }
 
@@ -163,7 +163,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = xor i128 %0, %5
+  %6 = xor i128 %5, %0
   ret i128 %6
 }
 
@@ -187,7 +187,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext nneg i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = xor i128 %0, %5
+  %6 = xor i128 %5, %0
   ret i128 %6
 }
 
@@ -199,7 +199,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw nsw i128 %4, %3
-  %6 = xor i128 %0, %5
+  %6 = xor i128 %5, %0
   ret i128 %6
 }
 

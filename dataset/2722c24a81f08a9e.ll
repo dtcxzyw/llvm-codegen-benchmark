@@ -122,7 +122,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 16
   %7 = getelementptr inbounds %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.1590230", ptr %6, i64 %5
   ret ptr %7
@@ -136,7 +136,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 4
   %7 = getelementptr %struct.FSE_decode_t.1996829, ptr %6, i64 %5
   ret ptr %7
@@ -149,7 +149,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 32
   %7 = getelementptr i32, ptr %6, i64 %5
   ret ptr %7

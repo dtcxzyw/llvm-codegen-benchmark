@@ -222,8 +222,8 @@ define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %3, -2
-  %5 = or disjoint i64 %4, 1
+  %4 = or i64 %3, 1
+  %5 = add nsw i64 %4, -2
   ret i64 %5
 }
 
@@ -270,8 +270,8 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = ashr i64 %2, 3
-  %4 = add nsw i64 %3, -2
-  %5 = or disjoint i64 %4, 1
+  %4 = or i64 %3, 1
+  %5 = add nsw i64 %4, -2
   ret i64 %5
 }
 

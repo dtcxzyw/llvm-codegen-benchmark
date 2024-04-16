@@ -43,7 +43,7 @@ define i1 @func0000000000000011(i8 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4611686018427387904
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = icmp eq i8 %0, 5
   %7 = select i1 %6, i1 true, i1 %5
   ret i1 %7

@@ -25,9 +25,9 @@
 define i64 @func0000000000000060(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
-  %2 = zext i1 %1 to i64
-  %3 = sub i64 %0, %2
-  ret i64 %3
+  %.neg = sext i1 %1 to i64
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

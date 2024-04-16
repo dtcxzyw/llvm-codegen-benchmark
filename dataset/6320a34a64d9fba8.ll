@@ -9,10 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i8 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 %2, i8 0
-  %4 = icmp eq i8 %0, 2
-  %5 = select i1 %4, i8 0, i8 %3
-  %6 = icmp ne i8 %5, 0
+  %3 = icmp ne i8 %0, 2
+  %4 = icmp ne i8 %2, 0
+  %5 = select i1 %3, i1 %1, i1 false
+  %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
@@ -22,10 +22,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp eq i32 %0, 4
-  %5 = select i1 %4, i32 7, i32 %3
-  %6 = icmp eq i32 %5, 0
+  %3 = icmp ne i32 %0, 4
+  %4 = icmp eq i32 %2, 0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
+  %6 = select i1 %3, i1 %5, i1 false
   ret i1 %6
 }
 

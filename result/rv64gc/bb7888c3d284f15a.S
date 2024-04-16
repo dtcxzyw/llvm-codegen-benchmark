@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
-	addiw	a2, a2, 1
-	li	a3, 10
-	bltu	a3, a2, .LBB0_2
+	addiw	a2, a2, -10
+	li	a3, -11
+	bltu	a2, a3, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret
@@ -56,14 +56,16 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000002a:                   # @func000000000000002a
 	addiw	a2, a2, 1
-	bgez	a2, .LBB8_2
-	mv	a0, a1
+	bltz	a2, .LBB8_2
+	mv	a1, a0
 .LBB8_2:                                # %entry
+	mv	a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
 	li	a3, 1
-	bne	a2, a3, .LBB9_2
-	mv	a0, a1
+	beq	a2, a3, .LBB9_2
+	mv	a1, a0
 .LBB9_2:                                # %entry
+	mv	a0, a1
 	ret

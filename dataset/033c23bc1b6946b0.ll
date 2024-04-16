@@ -13,8 +13,8 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = add i32 %1, -1
   %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i32 2, i32 %2
-  %5 = sext i32 %4 to i64
+  %4 = sext i32 %2 to i64
+  %5 = select i1 %3, i64 2, i64 %4
   ret i64 %5
 }
 

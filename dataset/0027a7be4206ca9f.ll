@@ -11,7 +11,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = and i32 %3, 8
   %5 = and i32 %1, 4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -26,7 +26,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = and i64 %3, 65280
   %5 = and i64 %1, 16711680
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }
@@ -39,7 +39,7 @@ entry:
   %3 = shl nuw nsw i128 %2, 40
   %4 = and i128 %3, 72056494526300160
   %5 = and i128 %1, 72056494526300160
-  %6 = add nuw i128 %0, %5
+  %6 = add nuw i128 %5, %0
   %7 = add nuw i128 %6, %4
   ret i128 %7
 }
@@ -67,7 +67,7 @@ entry:
   %3 = shl i128 %2, 1
   %4 = and i128 %3, 36893488147419103230
   %5 = and i128 %1, 18446744073709551615
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   %7 = add nuw nsw i128 %6, %4
   ret i128 %7
 }

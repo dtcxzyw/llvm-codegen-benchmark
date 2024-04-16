@@ -7,8 +7,9 @@ func0000000000000018:                   # @func0000000000000018
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	mv	a6, a1
 	mv	a5, a0
+	zext.w	a1, a4
 	add.uw	a0, a4, a2
-	sltu	a1, a0, a2
+	sltu	a1, a0, a1
 	add	a1, a1, a3
 	mv	a2, a5
 	mv	a3, a6

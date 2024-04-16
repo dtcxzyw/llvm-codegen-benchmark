@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %2, 223
   %4 = add nsw i32 %3, -65
   %5 = icmp ult i32 %4, 26
-  %6 = or i1 %1, %5
+  %6 = or i1 %5, %1
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
 }

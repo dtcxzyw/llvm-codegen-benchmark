@@ -18,9 +18,9 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 131072
-  %5 = or disjoint i32 %0, %4
-  %6 = and i32 %5, -262145
-  ret i32 %6
+  %.masked = and i32 %0, -262145
+  %5 = or i32 %4, %.masked
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -31,9 +31,9 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 64
-  %5 = or i8 %0, %4
-  %6 = and i8 %5, 96
-  ret i8 %6
+  %.masked = and i8 %0, 96
+  %5 = or i8 %4, %.masked
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

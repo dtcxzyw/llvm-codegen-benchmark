@@ -1,11 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a0, 1
-	li	a0, 64
-	bnez	a2, .LBB0_2
-	mv	a0, a1
-.LBB0_2:                                # %entry
-	andi	a0, a0, 64
-	seqz	a0, a0
+	andi	a1, a1, 64
+	seqz	a1, a1
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 1

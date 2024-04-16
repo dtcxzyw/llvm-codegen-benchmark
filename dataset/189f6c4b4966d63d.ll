@@ -11,7 +11,7 @@ entry:
   %2 = ashr exact i64 %1, 3
   %3 = call i64 @llvm.umax.i64(i64 %2, i64 1)
   %4 = add i64 %3, -1
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

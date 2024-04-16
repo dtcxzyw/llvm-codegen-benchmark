@@ -9,7 +9,7 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = mul nuw nsw i128 %2, 1000
   %4 = zext nneg i32 %0 to i128
-  %5 = add nuw nsw i128 %3, %4
+  %5 = or i128 %3, %4
   %6 = icmp eq i128 %5, 0
   ret i1 %6
 }
@@ -95,7 +95,7 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = mul nuw nsw i128 %2, 1000000000
   %4 = zext i32 %0 to i128
-  %5 = add nuw nsw i128 %3, %4
+  %5 = or i128 %3, %4
   %6 = icmp eq i128 %5, 0
   ret i1 %6
 }

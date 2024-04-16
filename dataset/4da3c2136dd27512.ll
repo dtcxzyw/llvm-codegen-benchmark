@@ -79,9 +79,9 @@ entry:
 define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add nsw i32 %2, 36
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 36
   ret ptr %5
 }
 
@@ -108,9 +108,9 @@ entry:
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = add nsw i32 %2, 8
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -140,9 +140,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = add nsw i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i32, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 

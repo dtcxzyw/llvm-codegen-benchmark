@@ -21,10 +21,8 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 1048575
-  %2 = tail call i32 @llvm.bswap.i32(i32 %1)
-  %3 = lshr i32 %2, 24
-  ret i32 %3
+  %1 = and i32 %0, 255
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

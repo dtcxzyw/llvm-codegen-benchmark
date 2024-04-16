@@ -33,7 +33,7 @@ entry:
   %3 = xor i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 61
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = xor i8 %1, %2
   %4 = zext i8 %3 to i64
   %5 = shl nuw nsw i64 %4, 16
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

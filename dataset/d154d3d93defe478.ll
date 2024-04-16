@@ -26,8 +26,8 @@ entry:
   %3 = and i32 %2, 32768
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
-  %6 = and i32 %5, -8
-  %7 = or i32 %6, 227
+  %6 = and i32 %5, -232
+  %7 = or disjoint i32 %6, 227
   ret i32 %7
 }
 

@@ -7,7 +7,7 @@ entry:
   %3 = add i32 %2, 8
   %4 = sext i32 %3 to i64
   %5 = sext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = add nsw i16 %2, 1
   %4 = sext i16 %3 to i32
   %5 = sext i8 %1 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -35,7 +35,7 @@ entry:
   %3 = add nsw i16 %2, 2
   %4 = sext i16 %3 to i32
   %5 = sext i16 %1 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

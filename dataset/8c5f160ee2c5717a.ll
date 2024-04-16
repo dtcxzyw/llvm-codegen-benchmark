@@ -236,9 +236,8 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = sub i32 %0, %5
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %6 = icmp eq i32 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:

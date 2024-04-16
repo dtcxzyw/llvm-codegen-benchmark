@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %2, 1990656
   %4 = add i32 %3, %1
   %5 = or disjoint i32 %4, 4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

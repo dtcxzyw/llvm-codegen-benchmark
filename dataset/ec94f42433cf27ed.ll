@@ -23,7 +23,7 @@ entry:
   %3 = and i16 %2, 63
   %4 = mul nuw nsw i16 %3, 65
   %5 = lshr i16 %4, 4
-  %6 = add nuw nsw i16 %0, %5
+  %6 = add nuw nsw i16 %5, %0
   ret i16 %6
 }
 

@@ -8,8 +8,8 @@
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fdiv float %2, %0
-  %4 = fneg float %3
+  %3 = fneg float %2
+  %4 = fdiv float %3, %0
   ret float %4
 }
 

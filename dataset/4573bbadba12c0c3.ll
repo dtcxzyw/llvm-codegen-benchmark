@@ -8,7 +8,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %2, %0
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, %0
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, %0
   %4 = lshr i16 %3, 8
-  %5 = trunc i16 %4 to i8
+  %5 = trunc nuw nsw i16 %4 to i8
   ret i8 %5
 }
 

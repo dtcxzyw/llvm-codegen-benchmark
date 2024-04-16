@@ -89,30 +89,30 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000020:                   # @func0000000000000020
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a0, a0, a1
+	mul	a2, a2, a4
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
+	slli	a1, a1, 40
+	srli	a2, a0, 24
+	or	a1, a1, a2
 	slli	a0, a0, 40
-	srli	a1, a2, 24
-	or	a1, a1, a0
-	slli	a0, a2, 40
 	ret
 func0000000000000000:                   # @func0000000000000000
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a0, a0, a1
-	srli	a1, a2, 63
-	sh1add	a1, a0, a1
-	slli	a0, a2, 1
+	mul	a2, a2, a4
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
+	srli	a2, a0, 63
+	sh1add	a1, a1, a2
+	slli	a0, a0, 1
 	ret
 func0000000000000075:                   # @func0000000000000075
 	sext.w	a2, a2

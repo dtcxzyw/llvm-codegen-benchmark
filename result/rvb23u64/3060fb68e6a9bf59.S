@@ -10,12 +10,10 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000084:                   # @func0000000000000084
 	srl	a0, a0, a1
-	andi	a0, a0, 15
+	andi	a0, a0, 14
 	sltiu	a0, a0, 10
 	ret
 func0000000000000088:                   # @func0000000000000088
 	srl	a0, a0, a1
-	andi	a0, a0, 31
-	sltiu	a0, a0, 16
-	xori	a0, a0, 1
+	bexti	a0, a0, 4
 	ret

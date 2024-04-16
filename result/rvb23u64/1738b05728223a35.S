@@ -5,9 +5,9 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	ret
 func000000000000005a:                   # @func000000000000005a
-	add	a0, a0, a1
-	subw	a0, a0, a2
-	sgtz	a0, a0
+	sext.w	a2, a2
+	addw	a0, a0, a1
+	slt	a0, a2, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	add	a0, a0, a1
@@ -15,9 +15,9 @@ func000000000000004a:                   # @func000000000000004a
 	sgtz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	add	a0, a0, a1
-	subw	a0, a0, a2
-	slti	a0, a0, 0
+	sext.w	a2, a2
+	addw	a0, a0, a1
+	slt	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008

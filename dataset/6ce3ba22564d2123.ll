@@ -12,8 +12,8 @@
 define i32 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i8 0, i8 %0
-  %4 = and i8 %3, 1
+  %3 = and i8 %0, 1
+  %4 = select i1 %2, i8 0, i8 %3
   %5 = zext nneg i8 %4 to i32
   ret i32 %5
 }
@@ -24,8 +24,8 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 7
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = and i32 %3, -2
+  %3 = and i32 %0, -2
+  %4 = select i1 %2, i32 0, i32 %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -36,9 +36,9 @@ entry:
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 4194304, i32 %0
-  %4 = and i32 %3, -2147483648
-  %5 = zext i32 %4 to i64
+  %3 = and i32 %0, -2147483648
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %2, i64 0, i64 %4
   ret i64 %5
 }
 

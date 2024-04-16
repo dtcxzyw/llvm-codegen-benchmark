@@ -10,9 +10,8 @@ entry:
   %3 = xor i64 %1, %2
   %4 = and i64 %3, 4095
   %5 = getelementptr inbounds i8, ptr %0, i64 16
-  %6 = getelementptr [4096 x %struct.anon.6.1665592], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr [4096 x %struct.anon.6.1665592], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -24,9 +23,8 @@ entry:
   %3 = xor i64 %1, %2
   %4 = and i64 %3, 127
   %5 = getelementptr inbounds i8, ptr %0, i64 12320
-  %6 = getelementptr inbounds [128 x %"struct.absl::debugging_internal::(anonymous namespace)::SymbolCacheLine.1939640"], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 64
-  ret ptr %7
+  %6 = getelementptr inbounds [128 x %"struct.absl::debugging_internal::(anonymous namespace)::SymbolCacheLine.1939640"], ptr %5, i64 0, i64 %4, i32 2
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

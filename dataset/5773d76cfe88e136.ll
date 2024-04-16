@@ -38,7 +38,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -52,7 +52,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umax.i32(i32 %2, i32 1)
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }

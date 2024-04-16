@@ -43,7 +43,7 @@ entry:
   %3 = tail call noundef i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
   %5 = getelementptr inbounds %"struct.mold::elf::ElfShdr.570.1590607", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -79,7 +79,7 @@ entry:
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -96,7 +96,7 @@ entry:
   %3 = call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -109,7 +109,7 @@ entry:
   %3 = call i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
   %5 = getelementptr inbounds %"struct.OpenImageIO_v2_6_0::PSDInput::ChannelInfo.1858941", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -121,7 +121,7 @@ entry:
   %3 = tail call i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

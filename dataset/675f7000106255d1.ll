@@ -12,10 +12,10 @@ define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = or disjoint i32 %0, %1
-  %5 = or disjoint i32 %4, %3
-  %6 = and i32 %5, 48
-  %7 = icmp eq i32 %6, 48
-  ret i1 %7
+  %.masked = and i32 %4, 48
+  %5 = or i32 %.masked, %3
+  %6 = icmp eq i32 %5, 48
+  ret i1 %6
 }
 
 ; 3 occurrences:
@@ -27,10 +27,10 @@ define i1 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 64
   %4 = or i8 %0, %1
-  %5 = or i8 %4, %3
-  %6 = and i8 %5, 96
-  %7 = icmp eq i8 %6, 0
-  ret i1 %7
+  %.masked = and i8 %4, 96
+  %5 = or i8 %.masked, %3
+  %6 = icmp eq i8 %5, 0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -39,11 +39,10 @@ entry:
 define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %0, 65520
-  %5 = or i32 %4, %3
-  %6 = and i32 %5, 64512
-  %7 = icmp eq i32 %6, 56320
-  ret i1 %7
+  %4 = or i32 %3, %0
+  %5 = and i32 %4, 64512
+  %6 = icmp eq i32 %5, 56320
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

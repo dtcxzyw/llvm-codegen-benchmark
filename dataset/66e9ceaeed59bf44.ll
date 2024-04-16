@@ -33,7 +33,7 @@ entry:
 define i1 @func00000000000001b1(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i8 16, %1
-  %3 = zext i8 %2 to i64
+  %3 = zext nneg i8 %2 to i64
   %4 = add nuw nsw i64 %0, 1
   %5 = icmp eq i64 %4, %3
   ret i1 %5

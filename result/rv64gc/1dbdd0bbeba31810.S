@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	slli	a1, a1, 1
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000f4:                   # @func00000000000000f4
@@ -28,7 +28,8 @@ func00000000000000fc:                   # @func00000000000000fc
 	ret
 func0000000000000051:                   # @func0000000000000051
 	slli	a1, a1, 3
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
@@ -49,12 +50,13 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a1, 22
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 12
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000084:                   # @func0000000000000084
@@ -63,7 +65,8 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func000000000000004c:                   # @func000000000000004c
 	slli	a1, a1, 20
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000c6:                   # @func00000000000000c6
@@ -233,12 +236,14 @@ func00000000000000b8:                   # @func00000000000000b8
 	ret
 func00000000000000b1:                   # @func00000000000000b1
 	slli	a1, a1, 16
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	slli	a1, a1, 3
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
@@ -255,7 +260,8 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000081:                   # @func0000000000000081
 	slli	a1, a1, 1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000008a:                   # @func000000000000008a

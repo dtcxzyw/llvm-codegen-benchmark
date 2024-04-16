@@ -11,7 +11,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   %7 = trunc i16 %6 to i8
   ret i8 %7
 }
@@ -24,10 +24,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000100(i16 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw i32 %2, 65526
+  %3 = add i32 %2, 246
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   %7 = trunc i16 %6 to i8
   ret i8 %7
 }
@@ -41,10 +41,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000080(i16 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 65534
+  %3 = add i32 %2, 254
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   %7 = trunc i16 %6 to i8
   ret i8 %7
 }

@@ -16,7 +16,7 @@
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = fcmp olt double %0, %3
+  %4 = fcmp ogt double %3, %0
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }
@@ -35,7 +35,7 @@ entry:
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   %5 = select i1 %4, float %3, float %0
   ret float %5
 }
@@ -46,9 +46,9 @@ entry:
 define float @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ule float %0, %3
-  %5 = select i1 %4, float %3, float %0
-  ret float %5
+  %.inv = fcmp olt float %3, %0
+  %4 = select i1 %.inv, float %0, float %3
+  ret float %4
 }
 
 attributes #0 = { nounwind }

@@ -4,7 +4,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or i32 %2, 1073741952
+  %3 = or i32 %2, 128
   %4 = and i32 %1, 1073741823
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i32 %4, i32 %3

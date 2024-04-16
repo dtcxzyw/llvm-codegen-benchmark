@@ -6,8 +6,8 @@ define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 24
   %3 = or disjoint i32 %2, %0
-  %4 = tail call i32 @llvm.bswap.i32(i32 %3)
-  %5 = trunc i32 %4 to i8
+  %4 = lshr i32 %3, 24
+  %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
 
@@ -20,7 +20,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i48 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = tail call i64 @llvm.bswap.i64(i64 %3)
   %5 = trunc i64 %4 to i48
   ret i48 %5

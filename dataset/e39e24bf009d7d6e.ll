@@ -22,7 +22,7 @@
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sdiv i32 %3, 16
   ret i32 %4
 }
@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = sdiv i32 %3, 64
   ret i32 %4
 }

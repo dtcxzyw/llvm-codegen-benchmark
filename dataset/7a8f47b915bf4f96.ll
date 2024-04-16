@@ -32,7 +32,7 @@ define i1 @func0000000000000025(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = fcmp ugt double %4, 0x3E50000000000000
   ret i1 %5
 }

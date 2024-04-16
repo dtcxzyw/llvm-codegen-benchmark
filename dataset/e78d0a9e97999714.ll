@@ -40,9 +40,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000037(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = lshr i64 %2, 1
-  %4 = shl nuw nsw i64 %3, 4
+  %2 = shl i64 %1, 3
+  %3 = add i64 %2, 8
+  %4 = and i64 %3, -16
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -70,8 +70,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4194303
-  %3 = lshr i64 %2, 22
-  %4 = shl nuw nsw i64 %3, 5
+  %3 = lshr i64 %2, 17
+  %4 = and i64 %3, 140737488355296
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -103,9 +103,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = lshr i64 %2, 1
-  %4 = shl i64 %3, 3
+  %2 = shl i64 %1, 2
+  %3 = add i64 %2, -4
+  %4 = and i64 %3, -8
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -115,9 +115,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = lshr i64 %2, 1
-  %4 = shl i64 %3, 4
+  %2 = shl i64 %1, 3
+  %3 = add i64 %2, -8
+  %4 = and i64 %3, -16
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -130,8 +130,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
-  %3 = lshr i64 %2, 6
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 2305843009213693944
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -143,9 +143,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = lshr i64 %2, 1
-  %4 = shl i64 %3, 5
+  %2 = shl i64 %1, 4
+  %3 = add i64 %2, 16
+  %4 = and i64 %3, -32
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
 }

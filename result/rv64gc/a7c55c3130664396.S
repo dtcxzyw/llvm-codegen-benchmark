@@ -58,11 +58,11 @@ func0000000000000144:                   # @func0000000000000144
 	sltiu	a0, a0, 63
 	ret
 func0000000000000046:                   # @func0000000000000046
-	srli	a1, a0, 31
-	seqz	a1, a1
-	addi	a1, a1, -1
-	srli	a1, a1, 32
+	li	a1, -1
 	slli	a1, a1, 32
-	add	a0, a0, a1
-	srli	a0, a0, 63
+	add	a1, a1, a0
+	srli	a0, a0, 31
+	snez	a0, a0
+	slti	a1, a1, 0
+	and	a0, a0, a1
 	ret

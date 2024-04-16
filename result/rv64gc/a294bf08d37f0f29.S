@@ -1,7 +1,7 @@
 func0000000000000041:                   # @func0000000000000041
 	sraiw	a2, a2, 16
 	mul	a0, a1, a0
-	mulw	a0, a0, a2
+	mulw	a0, a2, a0
 	seqz	a0, a0
 	ret
 func0000000000000108:                   # @func0000000000000108

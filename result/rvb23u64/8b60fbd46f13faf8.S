@@ -42,7 +42,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 6
 	or	a0, a0, a1
-	zext.w	a0, a0
+	srliw	a0, a0, 3
+	slli	a0, a0, 3
 	sltiu	a0, a0, 200
 	ret
 func000000000000007c:                   # @func000000000000007c
@@ -66,15 +67,17 @@ func0000000000000061:                   # @func0000000000000061
 func0000000000000068:                   # @func0000000000000068
 	slli	a1, a1, 4
 	or	a0, a0, a1
-	zext.h	a0, a0
-	li	a1, 2047
-	sltu	a0, a1, a0
+	li	a1, 31
+	slli	a1, a1, 11
+	and	a0, a0, a1
+	snez	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
 	slli	a1, a1, 6
 	or	a0, a0, a1
-	zext.w	a0, a0
-	sltiu	a0, a0, 256
+	srliw	a0, a0, 8
+	slli	a0, a0, 8
+	seqz	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a1, a1, 6

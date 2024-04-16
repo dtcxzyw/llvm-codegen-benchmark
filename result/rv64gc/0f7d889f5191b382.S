@@ -27,9 +27,8 @@ func0000000000000009:                   # @func0000000000000009
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
-	andi	a2, a2, 15
-	li	a3, 3
-	bltu	a3, a2, .LBB4_2
+	andi	a2, a2, 12
+	bnez	a2, .LBB4_2
 	li	a1, 24
 .LBB4_2:                                # %entry
 	add	a0, a0, a1

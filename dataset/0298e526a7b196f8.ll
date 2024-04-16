@@ -14,7 +14,7 @@ define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = xor i32 %3, 31
+  %4 = xor i32 %3, 16
   %5 = icmp ugt i32 %4, 15
   ret i1 %5
 }

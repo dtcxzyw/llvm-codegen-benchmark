@@ -8,7 +8,7 @@ entry:
   %4 = freeze i64 %3
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = freeze i64 %3
   %5 = icmp eq i64 %4, 0
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = freeze i64 %3
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -54,7 +54,7 @@ entry:
   %4 = freeze i64 %3
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i8
-  %7 = add i8 %0, %6
+  %7 = add i8 %6, %0
   ret i8 %7
 }
 

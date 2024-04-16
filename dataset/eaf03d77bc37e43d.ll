@@ -62,11 +62,10 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add i32 %3, 1
-  %5 = icmp ne i32 %4, 0
-  %6 = icmp ne i32 %0, 0
-  %7 = and i1 %6, %5
-  ret i1 %7
+  %4 = icmp ne i32 %3, -1
+  %5 = icmp ne i32 %0, 0
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -88,11 +87,10 @@ entry:
 define i1 @func00000000000005cc(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nsw i32 %3, 1
-  %5 = icmp ne i32 %4, 0
-  %6 = icmp ne i8 %0, 0
-  %7 = and i1 %5, %6
-  ret i1 %7
+  %4 = icmp ne i32 %3, -1
+  %5 = icmp ne i8 %0, 0
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

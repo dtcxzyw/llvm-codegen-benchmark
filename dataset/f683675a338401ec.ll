@@ -67,10 +67,9 @@
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = ashr i64 %1, 2
-  %3 = add nsw i64 %2, -2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %.mask = and i64 %1, -4
+  %2 = icmp eq i64 %.mask, 8
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

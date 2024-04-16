@@ -12,7 +12,10 @@ func0000000000000057:                   # @func0000000000000057
 func000000000000000b:                   # @func000000000000000b
 	beqz	a2, .LBB1_2
 	li	a1, 1023
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	addi	a0, a0, 4
+	ret
+.LBB1_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1

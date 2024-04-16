@@ -35,7 +35,7 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = icmp ugt i64 %3, 999999999999999999
   %5 = select i1 %4, i32 19, i32 18
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
 }

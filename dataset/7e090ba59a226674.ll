@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, 3
   %5 = select i1 %4, i32 4, i32 %1
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add i32 %2, -3
   %4 = icmp ult i32 %3, 2
   %5 = select i1 %4, i64 16, i64 %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -34,10 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = add nsw i8 %2, -6
-  %4 = icmp ugt i8 %3, 3
+  %3 = add i8 %2, -10
+  %4 = icmp ult i8 %3, -4
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

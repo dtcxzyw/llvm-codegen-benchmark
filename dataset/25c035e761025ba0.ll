@@ -27,7 +27,7 @@ entry:
   %4 = zext i1 %3 to i8
   %5 = and i8 %1, 7
   %6 = shl nuw i8 %4, %5
-  %7 = or i8 %0, %6
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 

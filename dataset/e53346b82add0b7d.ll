@@ -11,7 +11,7 @@ entry:
   %4 = and i32 %3, 31
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.1561402", ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = and i32 %3, 32
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

@@ -38,10 +38,7 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func0000000000000222:                   # @func0000000000000222
 	andi	a0, a0, 255
-	addi	a1, a1, 2
-	seqz	a1, a1
 	seqz	a0, a0
-	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a0, a0

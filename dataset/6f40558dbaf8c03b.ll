@@ -10,9 +10,9 @@ define i32 @func0000000000000037(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp sle i32 %0, %2
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
+  %.not = icmp slt i32 %2, %0
+  %4 = select i1 %.not, i32 %3, i32 %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = add nsw i32 %2, -1
   %5 = select i1 %3, i32 %0, i32 %4
   ret i32 %5

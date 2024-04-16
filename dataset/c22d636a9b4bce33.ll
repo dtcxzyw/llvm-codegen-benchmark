@@ -17,7 +17,7 @@
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add i64 %3, 24
   %5 = add i64 %2, 28
   %6 = tail call i64 @llvm.umax.i64(i64 %4, i64 %5)

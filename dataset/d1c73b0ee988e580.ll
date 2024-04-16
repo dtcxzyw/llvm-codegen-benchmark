@@ -9,10 +9,10 @@ define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 7
   %3 = and i16 %2, 128
-  %4 = or disjoint i16 %0, %3
-  %5 = and i16 %4, -97
-  %6 = or disjoint i16 %5, 64
-  ret i16 %6
+  %.masked = and i16 %0, -97
+  %4 = or i16 %3, %.masked
+  %5 = or disjoint i16 %4, 64
+  ret i16 %5
 }
 
 ; 1 occurrences:
@@ -22,10 +22,10 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 26
   %3 = and i32 %2, 67108864
-  %4 = or i32 %0, %3
-  %5 = and i32 %4, -33751045
-  %6 = or disjoint i32 %5, 33685504
-  ret i32 %6
+  %.masked = and i32 %0, -33751045
+  %4 = or i32 %3, %.masked
+  %5 = or disjoint i32 %4, 33685504
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

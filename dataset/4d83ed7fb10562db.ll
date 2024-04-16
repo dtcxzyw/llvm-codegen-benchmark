@@ -10,7 +10,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = select i1 %1, i64 %2, i64 %3
   %5 = and i64 %4, 4294967295
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

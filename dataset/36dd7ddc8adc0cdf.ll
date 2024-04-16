@@ -24,7 +24,7 @@ define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = trunc i64 %4 to i8
   ret i8 %5
 }
@@ -36,7 +36,7 @@ define i16 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = trunc nuw nsw i64 %4 to i16
   ret i16 %5
 }
@@ -51,7 +51,7 @@ define i16 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = trunc nuw i64 %4 to i16
   ret i16 %5
 }
@@ -66,7 +66,7 @@ define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 131070, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -78,7 +78,7 @@ define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

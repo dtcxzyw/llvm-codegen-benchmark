@@ -1,14 +1,11 @@
 func0000000000000074:                   # @func0000000000000074
-	slli	a0, a0, 7
-	srli	a0, a0, 7
 	sltiu	a0, a0, 19
 	ret
 func0000000000000014:                   # @func0000000000000014
-	srli	a1, a1, 27
-	andi	a1, a1, 2
-	slliw	a0, a0, 2
-	or	a0, a0, a1
-	sltiu	a0, a0, 128
+	lui	a1, 262144
+	addiw	a1, a1, -32
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a1, 34
@@ -25,11 +22,8 @@ func000000000000003c:                   # @func000000000000003c
 	snez	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	slli	a1, a1, 34
-	srli	a1, a1, 63
-	slliw	a0, a0, 1
-	or	a0, a0, a1
-	sltiu	a0, a0, 2
+	sext.w	a0, a0
+	seqz	a0, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
 	slli	a1, a1, 56

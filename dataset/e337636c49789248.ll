@@ -37,7 +37,7 @@ entry:
   %4 = xor i64 %1, -1
   %5 = add i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -68,7 +68,7 @@ entry:
   %4 = xor i64 %1, -1
   %5 = add i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

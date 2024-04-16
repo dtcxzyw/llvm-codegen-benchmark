@@ -43,10 +43,12 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a0, 1
 	lui	a0, 524288
+	bnez	a2, .LBB6_2
 	addi	a0, a0, -1
-	beqz	a2, .LBB6_2
-	addi	a0, a0, 3
-.LBB6_2:                                # %entry
+	j	.LBB6_3
+.LBB6_2:
+	addi	a0, a0, 2
+.LBB6_3:                                # %entry
 	add	a0, a0, a1
 	lui	a1, 1047844
 	addi	a1, a1, -1731

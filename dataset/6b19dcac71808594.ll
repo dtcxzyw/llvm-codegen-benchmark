@@ -33,11 +33,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -24
-  %3 = getelementptr inbounds i8, ptr %0, i64 96
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 96
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -48,11 +47,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 80
-  %3 = getelementptr inbounds i8, ptr %0, i64 496
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 496
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 84
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -65,11 +63,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = getelementptr inbounds i8, ptr %0, i64 1248
-  %4 = getelementptr inbounds ptr, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 1248
+  %3 = getelementptr ptr, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 16
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -79,11 +76,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr inbounds i8, ptr %0, i64 1248
-  %4 = getelementptr inbounds ptr, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 1248
+  %3 = getelementptr ptr, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 16
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -91,11 +87,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr i8, ptr %0, i64 48
-  %4 = getelementptr inbounds %struct.btSymmetricSpatialDyad.1742168, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 48
-  ret ptr %5
+  %2 = getelementptr i8, ptr %0, i64 48
+  %3 = getelementptr %struct.btSymmetricSpatialDyad.1742168, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 192
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -103,11 +98,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 2
-  %3 = getelementptr i8, ptr %0, i64 1281920
-  %4 = getelementptr inbounds float, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 -4
-  ret ptr %5
+  %2 = getelementptr i8, ptr %0, i64 1281920
+  %3 = getelementptr float, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 4
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -120,11 +114,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -3
-  %3 = getelementptr inbounds i8, ptr %0, i64 2
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 2
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -132,11 +125,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr inbounds i8, ptr %0, i64 64
-  %4 = getelementptr %struct.JSShapeProperty.1908873, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 64
+  %3 = getelementptr %struct.JSShapeProperty.1908873, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -144,11 +136,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000019(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr i8, ptr %0, i64 -8
-  %4 = getelementptr %struct.page.1998939, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 48
-  ret ptr %5
+  %2 = getelementptr i8, ptr %0, i64 -8
+  %3 = getelementptr %struct.page.1998939, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 112
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -156,11 +147,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = getelementptr i8, ptr %0, i64 96
-  %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = getelementptr i8, ptr %0, i64 96
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 9
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -169,11 +159,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -4
-  %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 -1
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 8
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -5
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -183,11 +172,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr inbounds i8, ptr %0, i64 104
-  %4 = getelementptr inbounds ptr, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = getelementptr inbounds i8, ptr %0, i64 104
+  %3 = getelementptr ptr, ptr %2, i64 %1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

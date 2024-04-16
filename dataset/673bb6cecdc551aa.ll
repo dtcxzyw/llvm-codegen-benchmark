@@ -10,7 +10,7 @@ entry:
   %3 = sitofp i64 %2 to double
   %4 = fdiv double %1, %3
   %5 = fcmp ogt double %4, 1.000000e+00
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = fdiv float %1, %3
   %5 = fcmp une float %4, 0.000000e+00
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

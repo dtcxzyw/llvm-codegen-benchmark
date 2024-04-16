@@ -66,7 +66,7 @@ entry:
 define i24 @func000000000000001e(i24 %0, i24 %1) #0 {
 entry:
   %2 = mul nuw nsw i24 %1, 7152
-  %3 = add nuw nsw i24 %0, %2
+  %3 = add nuw nsw i24 %2, %0
   %4 = udiv i24 %3, 10000
   ret i24 %4
 }
@@ -90,7 +90,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = udiv i32 %3, 864
   ret i32 %4
 }
@@ -101,7 +101,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 1000000
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = udiv i32 %3, 1000000000
   ret i32 %4
 }

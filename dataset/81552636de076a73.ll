@@ -53,7 +53,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = shl i32 %4, 3
   ret i32 %5
 }

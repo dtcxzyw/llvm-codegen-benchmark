@@ -33,7 +33,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 3600
   %2 = urem i64 %1, 24
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 

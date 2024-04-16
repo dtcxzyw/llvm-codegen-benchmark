@@ -116,7 +116,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = and i32 %4, 32
   %6 = icmp ne i32 %5, 0
   ret i1 %6
@@ -130,7 +130,7 @@ entry:
 define i1 @func000000000000003c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   %5 = and i16 %4, 154
   %6 = icmp ne i16 %5, 0
   ret i1 %6
@@ -155,8 +155,8 @@ define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, %0
-  %5 = and i32 %4, 65535
-  %6 = icmp ugt i32 %5, 2047
+  %5 = and i32 %4, 63488
+  %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
 

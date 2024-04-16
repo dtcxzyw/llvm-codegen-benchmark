@@ -20,9 +20,8 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl i32 %1, 3
-  %3 = sub i32 0, %2
-  ret i32 %3
+  %.neg = mul i32 %1, -8
+  ret i32 %.neg
 }
 
 ; 1 occurrences:

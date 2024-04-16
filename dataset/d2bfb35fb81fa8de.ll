@@ -250,10 +250,10 @@ define i64 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, -1
-  %6 = and i64 %0, %5
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  %5 = and i64 %4, %0
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -263,11 +263,11 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -54, %1
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, -1
-  %6 = and i64 %0, %5
-  ret i64 %6
+  %3 = zext nneg i32 %2 to i64
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  %5 = and i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

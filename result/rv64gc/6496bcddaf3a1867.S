@@ -6,11 +6,12 @@ func0000000000000066:                   # @func0000000000000066
 	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	andi	a2, a0, 255
-	add	a0, a0, a1
 	andi	a0, a0, 255
+	negw	a1, a1
+	andi	a1, a1, 255
+	xor	a1, a1, a0
+	snez	a1, a1
 	snez	a0, a0
-	snez	a1, a2
 	and	a0, a0, a1
 	ret
 func000000000000006a:                   # @func000000000000006a

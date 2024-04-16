@@ -19,7 +19,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -66,7 +66,7 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

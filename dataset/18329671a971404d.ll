@@ -10,7 +10,7 @@ entry:
   %3 = sub i32 %2, %1
   %4 = or i32 %3, %1
   %5 = icmp slt i32 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = sub nsw i32 %2, %1
   %4 = or i32 %3, %1
   %5 = icmp slt i32 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

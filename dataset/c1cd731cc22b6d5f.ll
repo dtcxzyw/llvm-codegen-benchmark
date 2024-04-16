@@ -7,8 +7,8 @@ entry:
   %3 = and i32 %2, 65535
   %4 = add i32 %3, %0
   %5 = icmp ugt i32 %4, 65536
-  %6 = select i1 %5, i32 %1, i32 %0
-  %7 = sub i32 %0, %6
+  %6 = sub i32 %0, %1
+  %7 = select i1 %5, i32 %6, i32 0
   ret i32 %7
 }
 
@@ -20,8 +20,8 @@ entry:
   %3 = and i32 %2, 131071
   %4 = add nuw i32 %3, %0
   %5 = icmp ugt i32 %4, 131072
-  %6 = select i1 %5, i32 %1, i32 %0
-  %7 = sub nsw i32 %0, %6
+  %6 = sub i32 %0, %1
+  %7 = select i1 %5, i32 %6, i32 0
   ret i32 %7
 }
 
@@ -37,8 +37,8 @@ entry:
   %3 = and i64 %2, 63
   %4 = add nuw nsw i64 %3, %0
   %5 = icmp ugt i64 %4, 64
-  %6 = select i1 %5, i64 %1, i64 %0
-  %7 = sub nsw i64 %0, %6
+  %6 = sub i64 %0, %1
+  %7 = select i1 %5, i64 %6, i64 0
   ret i64 %7
 }
 

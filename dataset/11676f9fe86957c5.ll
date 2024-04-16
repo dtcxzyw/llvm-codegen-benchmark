@@ -11,7 +11,7 @@ entry:
   %2 = uitofp i8 %1 to float
   %3 = fdiv float %2, 2.550000e+02
   %4 = fadd float %3, -5.000000e-01
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

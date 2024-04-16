@@ -9,7 +9,7 @@
 define i64 @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   %5 = bitcast double %4 to i64
   %6 = lshr i64 %5, 32
   ret i64 %6

@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = icmp ugt i64 %2, 20479
+  %2 = add i64 %1, -20481
+  %3 = icmp ult i64 %2, -20480
   %4 = sub nsw i64 52, %0
   %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5

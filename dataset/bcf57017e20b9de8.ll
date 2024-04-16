@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, -31506
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp slt i32 %1, %2
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -49,7 +49,7 @@ entry:
 define i1 @func0000000000000086(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, 2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp slt i64 %1, %2
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

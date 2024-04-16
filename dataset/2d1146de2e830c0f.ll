@@ -10,7 +10,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
   %6 = bitcast i64 %5 to double
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 

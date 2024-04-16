@@ -7,7 +7,7 @@ entry:
   %3 = trunc i48 %2 to i16
   %4 = trunc i48 %1 to i16
   %5 = icmp slt i16 %4, %3
-  %6 = icmp sge i16 %0, %4
+  %6 = icmp sle i16 %4, %0
   %7 = or i1 %5, %6
   ret i1 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp ne i32 %4, %3
-  %6 = icmp sgt i32 %0, %4
+  %6 = icmp slt i32 %4, %0
   %7 = or i1 %6, %5
   ret i1 %7
 }
@@ -34,7 +34,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp eq i32 %4, %3
-  %6 = icmp eq i32 %0, %4
+  %6 = icmp eq i32 %4, %0
   %7 = or i1 %5, %6
   ret i1 %7
 }
@@ -48,7 +48,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = icmp ult i32 %4, %3
-  %6 = icmp ugt i32 %0, %4
+  %6 = icmp ult i32 %4, %0
   %7 = or i1 %5, %6
   ret i1 %7
 }

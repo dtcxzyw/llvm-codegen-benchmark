@@ -5,8 +5,7 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000031:                   # @func0000000000000031
 	li	a1, 20
 	mul	a0, a0, a1
-	andi	a0, a0, -16
-	seqz	a0, a0
+	sltiu	a0, a0, 16
 	ret
 .LCPI2_0:
 	.quad	-6067343680855748867            # 0xabcc77118461cefd
@@ -22,7 +21,7 @@ func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	li	a1, 200
+	li	a1, -56
 	mul	a0, a0, a1
 	andi	a0, a0, 248
 	sltiu	a0, a0, 56

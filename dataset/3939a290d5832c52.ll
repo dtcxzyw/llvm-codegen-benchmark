@@ -7,11 +7,10 @@
 define ptr @func000000000000005b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds i64, ptr %0, i64 %5
-  ret ptr %6
+  %3 = or i64 %2, 1
+  %4 = sub nsw i64 2, %3
+  %5 = getelementptr inbounds i64, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -23,11 +22,10 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 2
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr i32, ptr %0, i64 %5
-  ret ptr %6
+  %3 = or i64 %2, 1
+  %4 = sub nsw i64 2, %3
+  %5 = getelementptr i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -41,11 +39,10 @@ entry:
 define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr i32, ptr %0, i64 %5
-  ret ptr %6
+  %3 = or i64 %2, 1
+  %4 = sub nsw i64 2, %3
+  %5 = getelementptr i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

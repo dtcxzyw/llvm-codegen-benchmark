@@ -24,11 +24,10 @@
 define i1 @func0000000000000408(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = zext i32 %3 to i64
-  %5 = mul i64 %1, %4
-  %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
-  ret i1 %7
+  %4 = trunc i64 %1 to i32
+  %5 = mul i32 %3, %4
+  %6 = icmp ult i32 %5, %0
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -40,11 +39,10 @@ entry:
 define i1 @func0000000000000488(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %1, %4
-  %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
-  ret i1 %7
+  %4 = trunc i64 %1 to i32
+  %5 = mul i32 %3, %4
+  %6 = icmp ult i32 %5, %0
+  ret i1 %6
 }
 
 ; 21 occurrences:
@@ -73,11 +71,10 @@ entry:
 define i1 @func0000000000000088(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %1, %4
-  %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
-  ret i1 %7
+  %4 = trunc i64 %1 to i32
+  %5 = mul i32 %3, %4
+  %6 = icmp ult i32 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -86,11 +83,10 @@ entry:
 define i1 @func0000000000000288(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %1, %4
-  %6 = trunc i128 %5 to i64
-  %7 = icmp ugt i64 %0, %6
-  ret i1 %7
+  %4 = trunc i128 %1 to i64
+  %5 = mul i64 %3, %4
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
 }
 
 ; 8 occurrences:
@@ -106,11 +102,10 @@ entry:
 define i1 @func0000000000000688(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %1, %4
-  %6 = trunc i128 %5 to i64
-  %7 = icmp ugt i64 %0, %6
-  ret i1 %7
+  %4 = trunc i128 %1 to i64
+  %5 = mul i64 %3, %4
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

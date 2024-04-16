@@ -32,7 +32,7 @@
 define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 448
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds [512 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -44,7 +44,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds [128 x i64], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -68,7 +68,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr [1 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6

@@ -9,9 +9,9 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
-  %4 = xor i32 %1, %3
+  %4 = xor i32 %3, %1
   %5 = tail call i32 @llvm.fshl.i32(i32 %4, i32 %4, i32 1)
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = tail call i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 1)
   ret i32 %7
 }
@@ -28,7 +28,7 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
-  %4 = xor i32 %1, %3
+  %4 = xor i32 %3, %1
   %5 = tail call noundef i32 @llvm.fshl.i32(i32 %4, i32 %4, i32 15)
   %6 = xor i32 %5, %0
   %7 = tail call noundef i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 15)

@@ -11,7 +11,7 @@ define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i64 20, i64 0
   ret i64 %6

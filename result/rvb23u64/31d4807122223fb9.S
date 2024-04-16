@@ -27,10 +27,10 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
-	ori	a2, a2, 832
 	lui	a3, 1046530
-	addiw	a3, a3, -16
+	addiw	a3, a3, -848
 	and	a2, a2, a3
+	addi	a2, a2, 832
 	sltiu	a1, a1, 8
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

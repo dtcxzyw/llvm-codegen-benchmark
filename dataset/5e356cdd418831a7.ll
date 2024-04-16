@@ -18,8 +18,8 @@
 define i8 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = add nsw i32 %3, -16
+  %3 = or disjoint i32 %2, %0
+  %4 = add i32 %3, 65520
   %5 = lshr i32 %4, 8
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -40,10 +40,10 @@ entry:
 define i64 @func0000000000000020(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %0, %2
+  %3 = or disjoint i128 %2, %0
   %4 = add i128 %3, 128
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -54,7 +54,7 @@ entry:
 define i8 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nuw nsw i32 %3, 65535
   %5 = lshr i32 %4, 8
   %6 = trunc i32 %5 to i8
@@ -67,10 +67,10 @@ entry:
 define i8 @func0000000000000030(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nuw i32 %3, 1
   %5 = lshr i32 %4, 24
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
 
@@ -79,12 +79,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000007a(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = add nuw nsw i32 %3, 65536
-  %5 = lshr i32 %4, 18
-  %6 = trunc nuw i32 %5 to i8
-  ret i8 %6
+  %2 = add nuw nsw i32 %0, 65536
+  %3 = lshr i32 %2, 18
+  %4 = trunc nuw i32 %3 to i8
+  ret i8 %4
 }
 
 ; 1 occurrences:
@@ -93,7 +91,7 @@ entry:
 define i8 @func0000000000000078(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nuw nsw i32 %3, 65536
   %5 = lshr i32 %4, 12
   %6 = trunc i32 %5 to i8
@@ -105,12 +103,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000003a(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = add nuw nsw i32 %3, 65536
-  %5 = lshr i32 %4, 18
-  %6 = trunc nuw i32 %5 to i8
-  ret i8 %6
+  %2 = add nuw nsw i32 %0, 65536
+  %3 = lshr i32 %2, 18
+  %4 = trunc nuw i32 %3 to i8
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

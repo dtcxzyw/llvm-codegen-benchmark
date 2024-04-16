@@ -12,7 +12,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = and i1 %3, %1
   %5 = xor i1 %4, true
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

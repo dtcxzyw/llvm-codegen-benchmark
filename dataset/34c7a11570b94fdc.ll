@@ -7,10 +7,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
-  %4 = and i32 %3, 15
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = icmp ult i32 %5, 4
+  %3 = and i32 %2, 12
+  %4 = icmp eq i32 %3, 0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
+  %6 = select i1 %0, i1 true, i1 %5
   %7 = select i1 %6, i32 16384, i32 0
   ret i32 %7
 }
@@ -20,10 +21,11 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
-  %4 = and i32 %3, 15
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = icmp eq i32 %5, 0
+  %3 = and i32 %2, 15
+  %4 = icmp eq i32 %3, 0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
+  %6 = select i1 %0, i1 true, i1 %5
   %7 = select i1 %6, i16 0, i16 8
   ret i16 %7
 }

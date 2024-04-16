@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl nsw i32 %2, 6
+  %2 = shl i32 %1, 6
+  %3 = add i32 %2, -64
   %4 = sub nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -17,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl i32 %2, 6
+  %2 = shl i32 %1, 6
+  %3 = add i32 %2, -64
   %4 = sub i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -37,8 +37,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl nuw i32 %2, 6
+  %2 = shl i32 %1, 6
+  %3 = add i32 %2, -64
   %4 = sub i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

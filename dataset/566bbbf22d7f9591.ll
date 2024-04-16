@@ -9,9 +9,9 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, 1
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
 

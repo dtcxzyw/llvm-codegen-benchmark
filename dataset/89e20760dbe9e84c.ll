@@ -52,7 +52,7 @@ define i32 @func0000000000000003(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = select i1 %2, i32 0, i32 16
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -78,10 +78,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i16 %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, null
-  %3 = select i1 %2, i16 25, i16 0
-  %4 = or i16 %0, %3
-  ret i16 %4
+  %.not = icmp eq ptr %1, null
+  %2 = select i1 %.not, i16 0, i16 25
+  %3 = or i16 %2, %0
+  ret i16 %3
 }
 
 ; 6 occurrences:
@@ -94,10 +94,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000019(i16 %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, null
-  %3 = select i1 %2, i16 0, i16 128
-  %4 = or disjoint i16 %0, %3
-  ret i16 %4
+  %.not = icmp eq ptr %1, null
+  %2 = select i1 %.not, i16 128, i16 0
+  %3 = or disjoint i16 %2, %0
+  ret i16 %3
 }
 
 attributes #0 = { nounwind }

@@ -9,7 +9,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = ashr exact i64 %1, 2
   %6 = sub nsw i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

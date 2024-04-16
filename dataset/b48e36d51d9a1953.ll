@@ -18,7 +18,7 @@
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = call i64 @llvm.smax.i64(i64 %4, i64 0)
   ret i64 %5
 }

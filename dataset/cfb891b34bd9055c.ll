@@ -19,10 +19,10 @@ entry:
 define i32 @func00000000000000fa(i8 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = add nuw nsw i32 %4, 4
-  %6 = icmp sgt i8 %0, -1
-  %7 = select i1 %6, i32 %4, i32 %5
+  %6 = icmp slt i8 %0, 0
+  %7 = select i1 %6, i32 %5, i32 %4
   ret i32 %7
 }
 
@@ -32,7 +32,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = add i64 %4, 258
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i64 %4, i64 %5

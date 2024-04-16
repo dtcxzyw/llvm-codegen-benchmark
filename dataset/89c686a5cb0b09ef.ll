@@ -26,7 +26,7 @@ entry:
   %3 = shl i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 65535, %4
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

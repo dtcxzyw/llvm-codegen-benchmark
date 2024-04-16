@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4225
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = and i64 %4, -386
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i64 %5, i64 %4

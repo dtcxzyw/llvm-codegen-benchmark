@@ -8,7 +8,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1
   %5 = sitofp i32 %4 to double
-  %6 = fcmp ugt double %0, %5
+  %6 = fcmp ult double %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1
   %5 = sitofp i32 %4 to float
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   ret i1 %6
 }
 

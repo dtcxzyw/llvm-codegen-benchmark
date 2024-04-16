@@ -10,10 +10,12 @@ func0000000000000002:                   # @func0000000000000002
 	fmul.d	fa5, fa0, fa5
 	fcvt.l.d	a1, fa5, rtz
 	mulh	a0, a1, a0
-	srli	a1, a0, 63
+	srli	a2, a0, 63
 	srai	a0, a0, 7
-	add	a0, a0, a1
-	li	a1, 1000
-	mul	a0, a0, a1
-	srai	a0, a0, 63
+	add	a0, a0, a2
+	li	a2, 1000
+	mul	a0, a0, a2
+	sub	a0, a1, a0
+	slt	a0, a1, a0
+	neg	a0, a0
 	ret

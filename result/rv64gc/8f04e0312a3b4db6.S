@@ -32,11 +32,18 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a3, a0
-	bnez	a3, .LBB3_2
-	slli	a1, a1, 63
-	srai	a0, a1, 63
-	or	a0, a0, a2
+	andi	a4, a1, 1
+	lui	a1, 524288
+	beqz	a4, .LBB3_3
+	bnez	a3, .LBB3_4
 .LBB3_2:                                # %entry
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	sext.w	a1, a1
+	slti	a0, a1, 0
+	ret
+.LBB3_3:                                # %entry
+	mv	a1, a2
+	beqz	a3, .LBB3_2
+.LBB3_4:                                # %entry
+	sext.w	a1, a0
+	slti	a0, a1, 0
 	ret

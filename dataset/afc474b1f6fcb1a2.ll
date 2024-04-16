@@ -4,11 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 31744
-  %3 = or disjoint i32 %0, %2
-  %4 = trunc i32 %3 to i16
-  %5 = icmp slt i16 %4, 0
-  ret i1 %5
+  %2 = and i32 %0, 32768
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -18,7 +16,7 @@ entry:
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -29,11 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294963200
-  %3 = or disjoint i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %2 = or i64 %1, %0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -41,8 +38,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 3968
-  %3 = or disjoint i16 %0, %2
+  %2 = and i16 %1, 128
+  %3 = or i16 %2, %0
   %4 = trunc i16 %3 to i8
   %5 = icmp ult i8 %4, 13
   ret i1 %5

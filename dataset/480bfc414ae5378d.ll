@@ -7,8 +7,9 @@
 define i1 @func0000000000000001(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, ptr %0, ptr null
-  %5 = icmp eq ptr %4, null
+  %4 = icmp eq ptr %0, null
+  %not. = xor i1 %3, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 

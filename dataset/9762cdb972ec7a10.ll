@@ -7,7 +7,7 @@
 define i128 @func0000000000000002(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
   %6 = xor i64 %5, %4
   %7 = zext i64 %6 to i128

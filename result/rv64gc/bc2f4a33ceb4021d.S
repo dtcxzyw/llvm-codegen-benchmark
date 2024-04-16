@@ -11,6 +11,6 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a2, 1048575
 	and	a1, a1, a2
 	sub	a1, a1, a0
-	addi	a1, a1, -32
 	ori	a0, a1, 2
+	addi	a0, a0, -32
 	ret

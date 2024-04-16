@@ -7,10 +7,8 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, %1
-  %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, 11400714785074694791
-  %5 = trunc i128 %4 to i64
-  ret i64 %5
+  %3 = mul i64 %2, -7046029288634856825
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -20,10 +18,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, %1
-  %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, 95
-  %5 = trunc i128 %4 to i64
-  ret i64 %5
+  %3 = mul i64 %2, 95
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

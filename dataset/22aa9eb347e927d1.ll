@@ -9,8 +9,8 @@
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
-  %2 = shl nsw i64 %1, 1
-  %3 = lshr exact i64 %2, 2
+  %2 = lshr exact i64 %1, 1
+  %3 = and i64 %2, 4611686018427387903
   ret i64 %3
 }
 
@@ -21,8 +21,8 @@ entry:
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
-  %2 = shl nsw i64 %1, 1
-  %3 = lshr i64 %2, 2
+  %2 = lshr i64 %1, 1
+  %3 = and i64 %2, 4611686018427387903
   ret i64 %3
 }
 

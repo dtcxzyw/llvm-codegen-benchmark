@@ -8,8 +8,8 @@ define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 102
   %3 = add i64 %2, %0
-  %4 = add i64 %3, 200
-  %5 = trunc i64 %4 to i16
+  %4 = trunc i64 %3 to i16
+  %5 = add i16 %4, 200
   ret i16 %5
 }
 

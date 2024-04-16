@@ -114,7 +114,7 @@ define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = icmp slt i32 %5, 1
   ret i1 %6
 }
@@ -138,11 +138,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 32
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = or i32 %0, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %.not = icmp eq i32 %2, 32
+  %3 = select i1 %.not, i32 0, i32 %1
+  %4 = or i32 %3, %0
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 ; 2 occurrences:

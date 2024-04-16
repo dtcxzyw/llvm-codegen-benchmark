@@ -46,10 +46,10 @@ entry:
 define i8 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %0, 4
-  %3 = icmp ne i8 %1, 0
-  %4 = select i1 %3, i8 %0, i8 %2
-  %5 = lshr i8 %4, 2
-  ret i8 %5
+  %.not = icmp eq i8 %1, 0
+  %3 = select i1 %.not, i8 %2, i8 %0
+  %4 = lshr i8 %3, 2
+  ret i8 %4
 }
 
 ; 1 occurrences:
@@ -58,10 +58,10 @@ entry:
 define i32 @func0000000000000039(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %0, 16
-  %3 = icmp ne i32 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = lshr exact i32 %4, 8
-  ret i32 %5
+  %.not = icmp eq i32 %1, 0
+  %3 = select i1 %.not, i32 %2, i32 %0
+  %4 = lshr exact i32 %3, 8
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

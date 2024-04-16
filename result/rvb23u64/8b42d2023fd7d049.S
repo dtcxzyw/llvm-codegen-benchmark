@@ -8,7 +8,7 @@ func000000000000038c:                   # @func000000000000038c
 	ret
 func0000000000000022:                   # @func0000000000000022
 	andi	a2, a2, 1
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	addi	a0, a0, -3
 	seqz	a0, a0

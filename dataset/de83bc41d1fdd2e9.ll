@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i1 %0, i128 %1) #0 {
 entry:
-  %2 = trunc i128 %1 to i64
-  %3 = icmp sgt i64 %2, -1
+  %2 = and i128 %1, 9223372036854775808
+  %3 = icmp eq i128 %2, 0
   %4 = and i1 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
@@ -23,7 +23,7 @@ define i16 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = zext i1 %4 to i16
   ret i16 %5
 }
@@ -33,8 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 16383
+  %2 = and i64 %1, 4294950912
+  %3 = icmp ne i64 %2, 0
   %4 = and i1 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5

@@ -54,7 +54,7 @@ entry:
   %3 = sdiv i64 %2, 4
   %4 = shl nsw i64 %3, 2
   %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 %1)
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 

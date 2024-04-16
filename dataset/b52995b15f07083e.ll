@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 1023
-  %3 = lshr i64 %2, 6
-  %4 = icmp eq i64 %0, %3
+  %2 = lshr i64 %1, 6
+  %3 = and i64 %2, 15
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -39,9 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 32
-  %3 = lshr exact i16 %2, 5
-  %4 = icmp eq i16 %0, %3
+  %2 = lshr i16 %1, 5
+  %3 = and i16 %2, 1
+  %4 = icmp eq i16 %3, %0
   ret i1 %4
 }
 
@@ -51,9 +51,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 524288
-  %3 = lshr exact i32 %2, 19
-  %4 = icmp ne i32 %0, %3
+  %2 = lshr i32 %1, 19
+  %3 = and i32 %2, 1
+  %4 = icmp ne i32 %3, %0
   ret i1 %4
 }
 
@@ -62,9 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -262144
-  %3 = lshr exact i64 %2, 12
-  %4 = icmp ult i64 %0, %3
+  %2 = lshr i64 %1, 12
+  %3 = and i64 %2, 4503599627370432
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -73,9 +73,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = lshr i32 %2, 2
-  %4 = icmp ule i32 %0, %3
+  %2 = lshr i32 %1, 2
+  %3 = and i32 %2, 63
+  %4 = icmp uge i32 %3, %0
   ret i1 %4
 }
 
@@ -87,9 +87,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 67108863
-  %3 = lshr i32 %2, 1
-  %4 = icmp sgt i32 %0, %3
+  %2 = lshr i32 %1, 1
+  %3 = and i32 %2, 33554431
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -99,9 +99,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = lshr i32 %2, 4
-  %4 = icmp ult i32 %0, %3
+  %2 = lshr i32 %1, 4
+  %3 = and i32 %2, 15
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -110,9 +110,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1048575
-  %3 = lshr exact i32 %2, 5
-  %4 = icmp sgt i32 %0, %3
+  %2 = lshr i32 %1, 5
+  %3 = and i32 %2, 32767
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 

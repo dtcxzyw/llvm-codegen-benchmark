@@ -7,7 +7,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = sitofp i64 %5 to double
   ret double %6
 }

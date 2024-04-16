@@ -31,10 +31,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	xori	a0, a0, 1
 	ret
 func00000000000000b6:                   # @func00000000000000b6
-	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
-	or	a0, a0, a2
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret

@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw i32 %2, 1
   %4 = xor i32 %3, %1
   %5 = and i32 %4, 65280
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = shl i64 %2, 12
   %4 = xor i64 %3, %1
   %5 = and i64 %4, 4503599627366400
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

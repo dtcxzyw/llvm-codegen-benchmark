@@ -13,8 +13,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 4, i64 %1
-  %3 = inttoptr i64 %2 to ptr
+  %2 = inttoptr i64 %1 to ptr
+  %3 = select i1 %0, ptr inttoptr (i64 4 to ptr), ptr %2
   ret ptr %3
 }
 

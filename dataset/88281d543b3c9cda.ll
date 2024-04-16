@@ -48,9 +48,9 @@ entry:
 define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = lshr exact i64 %2, 3
-  %4 = and i64 %3, 1
-  %5 = sub nuw nsw i64 %0, %4
+  %3 = shl i64 %2, 60
+  %4 = ashr i64 %3, 63
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

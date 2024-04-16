@@ -16,9 +16,8 @@ entry:
   %2 = lshr exact i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr inbounds %"struct.facebook::velox::StringView.1737293", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.facebook::velox::StringView.1737293", ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

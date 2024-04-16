@@ -44,8 +44,9 @@ func0000000000000101:                   # @func0000000000000101
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI4_0:
@@ -112,8 +113,9 @@ func0000000000000141:                   # @func0000000000000141
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056

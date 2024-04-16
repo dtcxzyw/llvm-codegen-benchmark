@@ -26,7 +26,7 @@ entry:
 define i32 @func0000000000000003(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 1, i8 %2
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = zext nneg i8 %4 to i32
   ret i32 %5
 }

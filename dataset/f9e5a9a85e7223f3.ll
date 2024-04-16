@@ -57,9 +57,8 @@
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr inbounds [1 x %struct.NSVGgradientStop.1553125], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds [1 x %struct.NSVGgradientStop.1553125], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -126,9 +125,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr inbounds [7 x %"struct.asmjit::_abi_1_10::ConstPool::Tree.1555254"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr inbounds [7 x %"struct.asmjit::_abi_1_10::ConstPool::Tree.1555254"], ptr %0, i64 0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 66 occurrences:
@@ -202,9 +200,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = getelementptr inbounds [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.1568429"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.1568429"], ptr %0, i64 0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 4 occurrences:
@@ -216,9 +213,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = getelementptr inbounds [0 x { i64, ptr }], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [0 x { i64, ptr }], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -227,9 +223,8 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr [8 x %union.CPUTLBEntry.1662951], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [8 x %union.CPUTLBEntry.1662951], ptr %0, i64 0, i64 %2, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 36 occurrences:
@@ -273,9 +268,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr [256 x %struct.NvmeSglDescriptor.1665057], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 15
-  ret ptr %4
+  %3 = getelementptr [256 x %struct.NvmeSglDescriptor.1665057], ptr %0, i64 0, i64 %2, i32 3
+  ret ptr %3
 }
 
 ; 11 occurrences:
@@ -294,9 +288,8 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr [3 x %struct.chan.1665143], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [3 x %struct.chan.1665143], ptr %0, i64 0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -319,9 +312,8 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 2
-  %3 = getelementptr inbounds [0 x { i32, i32 }], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr [0 x { i32, i32 }], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -330,9 +322,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
-  %3 = getelementptr inbounds [0 x { { i64, ptr }, i64 }], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr [0 x { { i64, ptr }, i64 }], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -343,9 +334,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr [3 x %struct.desc_struct.2018577], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr [3 x %struct.desc_struct.2018577], ptr %0, i64 0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -356,9 +346,8 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 2
-  %3 = getelementptr inbounds [0 x { { i64, i8 }, { { i64, ptr }, i64 } }], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr inbounds [0 x { { i64, i8 }, { { i64, ptr }, i64 } }], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

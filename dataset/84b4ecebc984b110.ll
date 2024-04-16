@@ -5,9 +5,9 @@
 define i64 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = zext i32 %3 to i64
-  %5 = lshr i64 %4, 1
+  %3 = or disjoint i32 %2, %0
+  %4 = lshr i32 %3, 1
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
@@ -18,11 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i16 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %0, %2
-  %4 = zext i16 %3 to i32
-  %5 = lshr i32 %4, 12
-  ret i32 %5
+  %2 = lshr i16 %0, 12
+  %3 = zext nneg i16 %2 to i32
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

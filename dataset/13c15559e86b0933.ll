@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 24
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 -24
-  %5 = getelementptr { { { { i64, ptr }, i64 } }, {} }, ptr %4, i64 %3
-  ret ptr %5
+  %.neg = sdiv exact i64 %1, -24
+  %2 = getelementptr i8, ptr %0, i64 -24
+  %3 = getelementptr { { { { i64, ptr }, i64 } }, {} }, ptr %2, i64 %.neg
+  ret ptr %3
 }
 
 ; 11 occurrences:
@@ -27,11 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %1, 2
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 -8
-  %5 = getelementptr i64, ptr %4, i64 %3
-  ret ptr %5
+  %.neg = sdiv i64 %1, -2
+  %2 = getelementptr i8, ptr %0, i64 -8
+  %3 = getelementptr i64, ptr %2, i64 %.neg
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

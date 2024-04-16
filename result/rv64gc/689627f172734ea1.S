@@ -28,8 +28,7 @@ func000000000000002c:                   # @func000000000000002c
 	or	a0, a0, a1
 	ret
 func0000000000000198:                   # @func0000000000000198
-	addi	a1, a1, -16
-	xori	a1, a1, 44
+	xori	a1, a1, 60
 	xori	a0, a0, 44
 	or	a0, a0, a1
 	sext.w	a0, a0

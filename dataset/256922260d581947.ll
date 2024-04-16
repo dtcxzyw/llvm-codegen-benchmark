@@ -29,7 +29,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = add nsw i128 %0, %2
+  %3 = add nsw i128 %2, %0
   %4 = freeze i128 %3
   ret i128 %4
 }

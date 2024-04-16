@@ -8,7 +8,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 16, %3
   %5 = zext i8 %1 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = lshr i32 %6, %4
   ret i32 %7
 }

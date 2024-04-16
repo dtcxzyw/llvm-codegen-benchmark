@@ -7,7 +7,7 @@
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %2, 2.700000e+01
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   %5 = fdiv float %1, 2.700000e+01
   %6 = call float @llvm.fmuladd.f32(float %4, float %4, float %5)
   %7 = fcmp ult float %6, 0.000000e+00

@@ -8,11 +8,10 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
 	beqz	a0, .LBB1_2
-	slli	a0, a2, 32
+	mv	a1, a2
+.LBB1_2:                                # %entry
+	slli	a0, a1, 32
 	srli	a0, a0, 32
-	ret
-.LBB1_2:
-	sext.w	a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0

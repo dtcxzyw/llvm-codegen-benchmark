@@ -4,11 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %0, 2097088
-  %4 = or i32 %3, %2
-  %5 = icmp ult i32 %4, 65536
-  ret i1 %5
+  %2 = and i32 %0, 2031616
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 9 occurrences:
@@ -25,8 +23,8 @@ entry:
 define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %0, 1984
-  %4 = or disjoint i32 %3, %2
+  %3 = and i32 %0, 1920
+  %4 = or i32 %3, %2
   %5 = icmp ult i32 %4, 128
   ret i1 %5
 }
@@ -88,11 +86,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %0, -256
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %2 = icmp sgt i32 %0, -1
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -100,11 +95,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %0, -256
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %2 = icmp slt i32 %0, 0
+  ret i1 %2
 }
 
 ; 4 occurrences:
@@ -115,11 +107,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %0, 1984
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp ult i32 %4, 128
-  ret i1 %5
+  %2 = and i32 %0, 1920
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -142,11 +132,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %0, -4160749569
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp ugt i64 %4, 576460752303423487
-  ret i1 %5
+  %2 = icmp ugt i64 %0, 576460752303423487
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -182,11 +169,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %0, 65280
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp ugt i32 %4, 255
-  ret i1 %5
+  %2 = and i32 %0, 65280
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -105,7 +105,7 @@ func0000000000000007:                   # @func0000000000000007
 	srai	a2, a2, 1
 	neg	a2, a2
 	sub	a2, a2, a3
-	xor	a3, a1, a2
+	xor	a3, a2, a1
 	slt	a1, a2, a1
 	czero.eqz	a1, a1, a3
 	sltu	a0, a4, a0

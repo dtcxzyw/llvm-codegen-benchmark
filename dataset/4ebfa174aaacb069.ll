@@ -162,8 +162,8 @@ define i64 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %2, %1
   %4 = call i64 @llvm.umax.i64(i64 %1, i64 %3)
-  %5 = add nsw i64 %4, %1
-  %6 = icmp ult i64 %5, %1
+  %5 = xor i64 %1, -1
+  %6 = icmp ugt i64 %4, %5
   %7 = select i1 %6, i64 1152921504606846975, i64 %0
   ret i64 %7
 }
@@ -178,8 +178,8 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = call i64 @llvm.umax.i64(i64 %1, i64 %3)
-  %5 = add i64 %4, %1
-  %6 = icmp ult i64 %5, %1
+  %5 = xor i64 %1, -1
+  %6 = icmp ugt i64 %4, %5
   %7 = select i1 %6, i64 9223372036854775807, i64 %0
   ret i64 %7
 }

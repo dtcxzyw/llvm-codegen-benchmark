@@ -20,7 +20,7 @@ entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = fcmp olt float %1, 0.000000e+00
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -5,8 +5,8 @@ func000000000000003f:                   # @func000000000000003f
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
-	andi	a1, a1, 1
+	slliw	a0, a0, 3
 	slli	a1, a1, 2
-	sh3add	a0, a0, a1
-	sext.w	a0, a0
+	andi	a1, a1, 4
+	or	a0, a0, a1
 	ret

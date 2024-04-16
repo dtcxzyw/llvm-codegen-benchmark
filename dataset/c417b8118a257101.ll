@@ -15,9 +15,8 @@
 define ptr @func0000000000000003(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
-  %4 = getelementptr inbounds %struct.entity_stage3_row.1715979, ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.entity_stage3_row.1715979, ptr %3, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 4 occurrences:

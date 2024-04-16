@@ -13,9 +13,8 @@ entry:
   %3 = add i32 %1, %2
   %4 = srem i32 %3, 4
   %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds [4 x [5 x float]], ptr %0, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr inbounds [4 x [5 x float]], ptr %0, i64 0, i64 %5, i64 3
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -27,9 +26,8 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds [2 x %"class.std::vector.10.2082043"], ptr %0, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [2 x %"class.std::vector.10.2082043"], ptr %0, i64 0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

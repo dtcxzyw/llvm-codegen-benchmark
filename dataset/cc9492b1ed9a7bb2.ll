@@ -79,10 +79,10 @@ define i32 @func0000000000000071(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = icmp ne i64 %0, 0
-  %5 = select i1 %4, i32 4, i32 0
-  %6 = or disjoint i32 %5, %3
-  ret i32 %6
+  %.not = icmp eq i64 %0, 0
+  %4 = select i1 %.not, i32 0, i32 4
+  %5 = or disjoint i32 %4, %3
+  ret i32 %5
 }
 
 ; 1 occurrences:

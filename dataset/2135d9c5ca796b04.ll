@@ -44,7 +44,7 @@ define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -105,7 +105,7 @@ define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -145,7 +145,7 @@ define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -210,7 +210,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -281,7 +281,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -917,7 +917,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -2316,7 +2316,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr inbounds %"struct.re2::Frag.1554289", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -2940,7 +2940,7 @@ define i1 @func0000000000000031(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.1561402", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -3154,7 +3154,7 @@ define i1 @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.1568966", ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -3171,7 +3171,7 @@ define i1 @func0000000000000039(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
@@ -3227,7 +3227,7 @@ define i1 @func0000000000000018(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -3311,7 +3311,7 @@ define i1 @func0000000000000034(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds %struct.Entry.1617781, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -3363,7 +3363,7 @@ define i1 @func0000000000000008(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -3383,7 +3383,7 @@ define i1 @func0000000000000038(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -3397,7 +3397,7 @@ define i1 @func0000000000000019(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds %struct._zend_op.1717024, ptr %1, i64 %3
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
@@ -3428,7 +3428,7 @@ define i1 @func000000000000003c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i16, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -3439,7 +3439,7 @@ define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr %class.QString.1915590, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -3453,7 +3453,7 @@ define i1 @func0000000000000009(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
@@ -3468,7 +3468,7 @@ define i1 @func000000000000000c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -3480,7 +3480,7 @@ define i1 @func0000000000000015(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -3491,7 +3491,7 @@ define i1 @func0000000000000029(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr %union.ListCell.2119505, ptr %1, i64 %3
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 

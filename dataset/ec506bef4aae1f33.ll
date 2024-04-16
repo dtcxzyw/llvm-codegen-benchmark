@@ -7,7 +7,7 @@ define i1 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = sext i32 %1 to i64
   %7 = icmp slt i64 %5, %6
   ret i1 %7
@@ -21,7 +21,7 @@ define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = sext i32 %1 to i64
   %7 = icmp slt i64 %5, %6
   ret i1 %7
@@ -34,7 +34,7 @@ define i1 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = sext i32 %1 to i64
   %7 = icmp slt i64 %5, %6
   ret i1 %7
@@ -47,7 +47,7 @@ define i1 @func000000000000005a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = sext i32 %1 to i64
   %7 = icmp sgt i64 %5, %6
   ret i1 %7

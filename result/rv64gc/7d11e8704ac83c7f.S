@@ -1,6 +1,6 @@
 func00000000000000a1:                   # @func00000000000000a1
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000024:                   # @func0000000000000024
@@ -34,7 +34,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000001:                   # @func0000000000000001
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -79,7 +80,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func0000000000000081:                   # @func0000000000000081
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
@@ -89,12 +91,14 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000051:                   # @func0000000000000051
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
@@ -109,12 +113,14 @@ func00000000000000d6:                   # @func00000000000000d6
 	ret
 func000000000000001c:                   # @func000000000000001c
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000dc:                   # @func00000000000000dc
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da
@@ -130,7 +136,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8
@@ -170,11 +176,13 @@ func00000000000000a4:                   # @func00000000000000a4
 	ret
 func0000000000000041:                   # @func0000000000000041
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000008c:                   # @func000000000000008c
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret

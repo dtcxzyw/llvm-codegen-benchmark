@@ -9,7 +9,7 @@ entry:
   %2 = and i32 %1, 56
   %3 = and i32 %0, 7
   %4 = or disjoint i32 %2, %3
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 

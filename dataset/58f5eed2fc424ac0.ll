@@ -26,7 +26,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr %struct.page.2011367, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -93,7 +93,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr inbounds %union.TValue.2145485, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

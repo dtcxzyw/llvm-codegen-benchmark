@@ -15,9 +15,8 @@ entry:
   %3 = lshr i64 %2, 1
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds { i32, i16 }, ptr %1, i64 %4
-  %6 = getelementptr inbounds [0 x { i32, i16 }], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds [0 x { i32, i16 }], ptr %5, i64 0, i64 %0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

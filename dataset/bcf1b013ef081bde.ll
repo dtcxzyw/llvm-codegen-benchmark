@@ -17,10 +17,9 @@ define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 29
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp ugt i64 %5, 1152921504606846975
-  ret i1 %6
+  %.mask = and i64 %3, 17179869184
+  %4 = icmp ne i64 %.mask, 0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -34,9 +33,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp ult i64 %5, 31
-  ret i1 %6
+  %5 = icmp ult i64 %4, 133143986176
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -49,9 +47,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -61,10 +58,9 @@ define i1 @func0000000000000016(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp slt i64 %5, 0
-  ret i1 %6
+  %.mask = and i64 %3, 2147483648
+  %4 = icmp ne i64 %.mask, 0
+  ret i1 %4
 }
 
 ; 30 occurrences:
@@ -103,10 +99,9 @@ define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 29
-  %5 = ashr i64 %4, 32
-  %6 = icmp ugt i64 %5, 384307168202282325
-  ret i1 %6
+  %.mask = and i64 %3, 17179869184
+  %4 = icmp ne i64 %.mask, 0
+  ret i1 %4
 }
 
 ; 5 occurrences:
@@ -120,10 +115,9 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 29
-  %5 = ashr i64 %4, 32
-  %6 = icmp eq i64 %5, 1
-  ret i1 %6
+  %4 = and i64 %3, 34359738360
+  %5 = icmp eq i64 %4, 8
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -134,9 +128,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = shl i64 %3, 30
-  %5 = ashr i64 %4, 32
-  %6 = icmp ult i64 %5, 9
-  ret i1 %6
+  %5 = icmp ult i64 %4, 38654705664
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -147,9 +140,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = shl i64 %3, 29
-  %5 = ashr i64 %4, 32
-  %6 = icmp sgt i64 %5, 1
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 8589934591
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

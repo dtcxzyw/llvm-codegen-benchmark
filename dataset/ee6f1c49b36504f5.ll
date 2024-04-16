@@ -9,8 +9,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add nuw nsw i64 %4, 28
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 28
   ret ptr %6
 }
 
@@ -26,8 +26,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add nuw nsw i64 %4, 4
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -45,8 +45,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = add nuw nsw i64 %4, 8
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -58,8 +58,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
-  %5 = add nuw nsw i64 %4, 10
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 10
   ret ptr %6
 }
 
@@ -71,8 +71,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = add nuw nsw i64 %4, 8
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 

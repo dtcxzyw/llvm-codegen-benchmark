@@ -38,8 +38,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000f1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 1
-  %4 = shl nuw nsw i64 %3, 4
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = and i64 %3, 9223372036854775792
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
   %6 = getelementptr inbounds i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
@@ -53,8 +53,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 1
-  %4 = shl i64 %3, 5
+  %3 = shl i64 %2, 4
+  %4 = and i64 %3, -32
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
   %6 = getelementptr inbounds i8, ptr %0, i64 32
   %7 = icmp eq ptr %6, %5
@@ -66,8 +66,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 32
-  %4 = shl nuw nsw i64 %3, 1
+  %3 = lshr i64 %2, 31
+  %4 = and i64 %3, 8589934590
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr inbounds i8, ptr %0, i64 2
   %7 = icmp eq ptr %6, %5
@@ -79,8 +79,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000b1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 1
-  %4 = shl nuw i64 %3, 2
+  %3 = shl nuw i64 %2, 1
+  %4 = and i64 %3, -4
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
   %6 = getelementptr inbounds i8, ptr %0, i64 4
   %7 = icmp eq ptr %6, %5

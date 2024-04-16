@@ -9,12 +9,11 @@
 ; Function Attrs: nounwind
 define i32 @func00000000000000e3(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 3
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
-  ret i32 %6
+  %2 = and i32 %1, 3
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
 }
 
 ; 12 occurrences:
@@ -33,12 +32,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000063(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 63
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
-  ret i64 %6
+  %2 = and i32 %1, 63
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -47,12 +45,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 15
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
-  ret i32 %6
+  %2 = and i8 %1, 15
+  %3 = icmp eq i8 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = add i32 %4, %0
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -61,12 +58,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 15
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
-  ret i64 %6
+  %2 = and i8 %1, 15
+  %3 = icmp eq i8 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
 }
 
 ; 3 occurrences:
@@ -76,12 +72,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 3
-  %4 = icmp ne i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
-  ret i32 %6
+  %2 = and i16 %1, 3
+  %3 = icmp ne i16 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = add i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -89,12 +84,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 64512
-  %4 = icmp eq i32 %3, 56320
-  %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
-  ret i32 %6
+  %2 = and i16 %1, -1024
+  %3 = icmp eq i16 %2, -9216
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

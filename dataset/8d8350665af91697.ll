@@ -8,7 +8,7 @@ entry:
   %3 = xor i64 %1, %2
   %4 = icmp ult i64 %3, 65536
   %5 = trunc i64 %1 to i8
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

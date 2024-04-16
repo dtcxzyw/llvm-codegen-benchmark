@@ -16,11 +16,10 @@
 define ptr @func0000000000000037(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 -8
-  ret ptr %6
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr inbounds i64, ptr %0, i64 %.neg
+  %4 = getelementptr inbounds i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -29,11 +28,10 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds %"struct.std::pair.272.1976453", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 -16
-  ret ptr %6
+  %.neg = xor i64 %2, -1
+  %3 = getelementptr inbounds %"struct.std::pair.272.1976453", ptr %0, i64 %.neg
+  %4 = getelementptr inbounds i8, ptr %3, i64 -16
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

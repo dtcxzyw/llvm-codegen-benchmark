@@ -55,7 +55,7 @@ entry:
   %4 = udiv i64 %1, %3
   %5 = tail call i64 @llvm.smax.i64(i64 %4, i64 1)
   %6 = shl nsw i64 %5, 2
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

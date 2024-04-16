@@ -28,8 +28,8 @@
 define i1 @func0000000000000006(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 4)
-  %4 = icmp slt i64 %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp sgt i64 %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -45,8 +45,8 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 999)
-  %4 = icmp sgt i32 %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp slt i32 %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

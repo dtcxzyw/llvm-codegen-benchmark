@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000001c1(i32 %0, i32 %1, double %2) #0 {
 entry:
-  %3 = fcmp une double %2, 0.000000e+00
+  %3 = fcmp oeq double %2, 0.000000e+00
   %4 = add i32 %0, 1
-  %5 = select i1 %3, i32 %1, i32 %4
-  %6 = icmp eq i32 %4, %5
+  %5 = icmp eq i32 %4, %1
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 
@@ -20,10 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001f1(i32 %0, i32 %1, double %2) #0 {
 entry:
-  %3 = fcmp une double %2, 0.000000e+00
+  %3 = fcmp oeq double %2, 0.000000e+00
   %4 = add nuw nsw i32 %0, 1
-  %5 = select i1 %3, i32 %1, i32 %4
-  %6 = icmp eq i32 %4, %5
+  %5 = icmp eq i32 %4, %1
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 

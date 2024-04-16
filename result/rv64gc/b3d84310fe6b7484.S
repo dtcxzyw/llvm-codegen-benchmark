@@ -46,7 +46,7 @@ func00000000000001cc:                   # @func00000000000001cc
 func000000000000018a:                   # @func000000000000018a
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	andi	a2, a2, 63
+	andi	a2, a2, 48
 	or	a1, a1, a2
 	sext.w	a1, a1
 	lui	a2, 16
@@ -69,8 +69,6 @@ func00000000000001c6:                   # @func00000000000001c6
 	ret
 func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
-	andi	a2, a2, 63
-	or	a1, a1, a2
 	sext.w	a1, a1
 	li	a2, 2047
 	sltu	a1, a2, a1

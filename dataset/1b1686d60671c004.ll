@@ -31,9 +31,9 @@
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %"struct.re2::RuneRange.1554646", ptr %0, i64 %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr %"struct.re2::RuneRange.1554646", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -91,9 +91,9 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -137,9 +137,9 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -171,9 +171,9 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -187,9 +187,9 @@ entry:
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 8
-  %3 = add nsw i32 %2, -2
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.tcaches_s.2127954, ptr %0, i64 %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr %struct.tcaches_s.2127954, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 

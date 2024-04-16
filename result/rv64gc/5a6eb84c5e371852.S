@@ -7,16 +7,16 @@ func000000000000000e:                   # @func000000000000000e
 	srli	a0, a0, 58
 	ret
 func000000000000003e:                   # @func000000000000003e
-	slli	a1, a1, 57
-	srli	a1, a1, 39
+	andi	a1, a1, 64
+	slli	a1, a1, 18
 	or	a0, a0, a1
 	lui	a1, 4096
 	add	a0, a0, a1
 	srli	a0, a0, 25
 	ret
 func000000000000001e:                   # @func000000000000001e
-	slli	a1, a1, 58
-	srli	a1, a1, 52
+	andi	a1, a1, 48
+	slli	a1, a1, 6
 	or	a0, a0, a1
 	lui	a1, 240
 	add	a0, a0, a1

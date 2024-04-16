@@ -8,7 +8,7 @@ entry:
   %3 = icmp ugt i64 %2, 1
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 2, i32 0
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = icmp ugt i64 %2, 1
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 2, i32 0
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

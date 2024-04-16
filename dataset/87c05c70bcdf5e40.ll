@@ -15,8 +15,8 @@
 define ptr @func0000000000000005(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = lshr i64 %4, 6
+  %4 = lshr i32 %3, 6
+  %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -30,8 +30,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = lshr i64 %4, 6
+  %4 = lshr i32 %3, 6
+  %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -42,8 +42,8 @@ entry:
 define ptr @func000000000000001d(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = lshr i64 %4, 6
+  %4 = lshr i32 %3, 6
+  %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -54,8 +54,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = lshr i64 %4, 12
+  %4 = lshr i32 %3, 12
+  %5 = zext nneg i32 %4 to i64
   %6 = getelementptr %struct.page.2005443, ptr %0, i64 %5
   ret ptr %6
 }

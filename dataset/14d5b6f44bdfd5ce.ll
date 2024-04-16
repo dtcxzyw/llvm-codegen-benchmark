@@ -10,7 +10,7 @@
 define i64 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   %5 = select i1 %4, i64 -1, i64 1
   ret i64 %5
 }
@@ -39,7 +39,7 @@ entry:
 define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds { i64, i64 }, ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = select i1 %4, i64 0, i64 16
   ret i64 %5
 }
@@ -50,9 +50,9 @@ entry:
 define i64 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds { { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, i8, i8, [6 x i8] }, ptr %1, i64 %2
-  %4 = icmp ne ptr %0, %3
-  %5 = select i1 %4, i64 80, i64 0
-  ret i64 %5
+  %.not = icmp eq ptr %3, %0
+  %4 = select i1 %.not, i64 0, i64 80
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -61,7 +61,7 @@ entry:
 define i64 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %class.QCPGraphData.1927861, ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = select i1 %4, i64 0, i64 -16
   ret i64 %5
 }
@@ -72,9 +72,9 @@ entry:
 define i32 @func0000000000000009(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp uge ptr %0, %3
-  %5 = select i1 %4, i32 12316, i32 0
-  ret i32 %5
+  %.not = icmp ugt ptr %3, %0
+  %4 = select i1 %.not, i32 0, i32 12316
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   %5 = select i1 %4, i32 -8, i32 -4
   ret i32 %5
 }
@@ -94,7 +94,7 @@ entry:
 define i32 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   %5 = select i1 %4, i32 -117, i32 0
   ret i32 %5
 }

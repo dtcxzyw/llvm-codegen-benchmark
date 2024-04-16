@@ -19,7 +19,7 @@ define i1 @func0000000000000016(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 1
   ret i1 %6
 }
@@ -46,7 +46,7 @@ define i1 @func0000000000000004(i16 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i16
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   %6 = icmp ult i16 %5, 2
   ret i1 %6
 }
@@ -61,8 +61,8 @@ define i1 @func0000000000000001(i16 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i16
-  %5 = add i16 %0, %4
-  %6 = icmp eq i16 %5, 0
+  %5 = sub i16 0, %0
+  %6 = icmp eq i16 %4, %5
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ define i1 @func000000000000001a(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
 }

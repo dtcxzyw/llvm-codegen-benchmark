@@ -266,8 +266,8 @@ entry:
   %3 = xor i32 %2, 42
   %4 = lshr i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 -1
-  %7 = icmp ult i32 %6, 32
+  %6 = icmp ult i32 %0, 32
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -536,9 +536,9 @@ define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 42
   %4 = lshr i32 %3, %1
-  %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 -1
-  %7 = icmp ugt i32 %6, 4351
+  %5 = icmp ne i32 %4, 0
+  %6 = icmp ugt i32 %0, 4351
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -807,9 +807,9 @@ define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 42
   %4 = lshr i32 %3, %1
-  %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 -1
-  %7 = icmp ne i32 %6, 12351
+  %5 = icmp ne i32 %4, 0
+  %6 = icmp ne i32 %0, 12351
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 

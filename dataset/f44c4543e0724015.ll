@@ -27,7 +27,7 @@ entry:
   %3 = add i64 %2, -1
   %4 = icmp ugt i64 %3, %1
   %5 = zext i1 %4 to i8
-  %6 = add i8 %0, %5
+  %6 = add i8 %5, %0
   %7 = zext i8 %6 to i64
   ret i64 %7
 }

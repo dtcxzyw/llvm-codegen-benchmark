@@ -103,7 +103,7 @@ define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = shl nsw i32 %2, 6
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -119,7 +119,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 15
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 
@@ -128,9 +128,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
+  %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 34
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
 

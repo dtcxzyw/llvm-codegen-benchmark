@@ -9,7 +9,7 @@ func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
-	andi	a2, a2, 31
+	andi	a2, a2, 30
 	li	a3, 6
 	bgeu	a2, a3, .LBB1_2
 	li	a1, 1
@@ -22,7 +22,9 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a2, a2, 63
 	bnez	a2, .LBB2_2
 	li	a1, 2
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB2_2:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret

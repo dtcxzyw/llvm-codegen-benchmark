@@ -17,10 +17,8 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.nbap_dch_channel_info_t.1925421, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 268
-  %7 = getelementptr [64 x i32], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr %struct.nbap_dch_channel_info_t.1925421, ptr %0, i64 %1, i32 4, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -30,10 +28,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.snd_pcm_hw_rule.2016748, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  %7 = getelementptr [5 x i32], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr %struct.snd_pcm_hw_rule.2016748, ptr %0, i64 %1, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -45,10 +41,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %"class.sat::cut.2100379", ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  %7 = getelementptr inbounds [5 x i32], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr inbounds %"class.sat::cut.2100379", ptr %0, i64 %1, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -59,10 +53,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.mq.2238993, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 104
-  %7 = getelementptr inbounds [10 x %struct.mq_item.2238994], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr %struct.mq.2238993, ptr %0, i64 %1, i32 14, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

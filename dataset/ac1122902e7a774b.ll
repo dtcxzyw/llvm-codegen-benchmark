@@ -7,7 +7,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 16777216, %1
   %3 = ashr exact i32 %2, 23
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -18,7 +18,7 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 16777216, %1
   %3 = ashr exact i32 %2, 24
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 16777216, %1
   %3 = ashr exact i32 %2, 23
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   ret i1 %4
 }
 
@@ -41,7 +41,7 @@ define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr i32 %2, 1
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -52,7 +52,7 @@ define i1 @func0000000000000047(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr i32 %2, 1
-  %4 = icmp sle i32 %0, %3
+  %4 = icmp sge i32 %3, %0
   ret i1 %4
 }
 
@@ -63,7 +63,7 @@ define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr i32 %2, 1
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 

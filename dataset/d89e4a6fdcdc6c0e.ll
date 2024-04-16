@@ -27,7 +27,7 @@ entry:
   %1 = add nuw nsw i8 %0, 3
   %2 = lshr i8 %1, 2
   %3 = sub nuw nsw i8 16, %2
-  %4 = zext i8 %3 to i64
+  %4 = zext nneg i8 %3 to i64
   ret i64 %4
 }
 

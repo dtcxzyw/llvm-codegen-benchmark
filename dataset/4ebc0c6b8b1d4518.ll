@@ -17,10 +17,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr inbounds %struct._phpdbg_param.1715867, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 -88
-  ret ptr %7
+  %5 = getelementptr %struct._phpdbg_param.1715867, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -35,10 +33,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = add i64 %4, 1
-  %6 = getelementptr %union.YYSTYPE.2119335, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -8
-  ret ptr %7
+  %5 = getelementptr %union.YYSTYPE.2119335, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

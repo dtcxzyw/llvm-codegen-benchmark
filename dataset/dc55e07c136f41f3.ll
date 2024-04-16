@@ -9,7 +9,7 @@
 define i32 @func0000000000000000(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i32 1, i32 %0
   ret i32 %5
 }

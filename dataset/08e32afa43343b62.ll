@@ -27,7 +27,7 @@ entry:
   %3 = add i32 %2, -10
   %4 = icmp ult i32 %3, -9
   %5 = icmp eq ptr %1, null
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
 }

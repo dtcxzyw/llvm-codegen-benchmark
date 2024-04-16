@@ -8,7 +8,7 @@ entry:
   %3 = xor i1 %2, true
   %4 = zext i1 %3 to i32
   %5 = add i32 %4, %1
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   %7 = select i1 %6, i32 16, i32 1
   ret i32 %7
 }

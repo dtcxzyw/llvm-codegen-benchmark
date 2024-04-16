@@ -70,9 +70,8 @@ define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 63
   %2 = shl i64 %0, 1
-  %3 = xor i64 %2, %1
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %1
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

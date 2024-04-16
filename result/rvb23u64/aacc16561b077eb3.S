@@ -20,11 +20,11 @@ func0000000000000022:                   # @func0000000000000022
 	and	a0, a0, a1
 	ret
 func0000000000000102:                   # @func0000000000000102
-	li	a3, -1
+	li	a3, -9
 	srli	a3, a3, 1
 	add	a2, a2, a3
-	sltiu	a2, a2, 4
-	orn	a0, a0, a2
+	sltiu	a2, a2, -4
+	or	a0, a0, a2
 	li	a2, 4
 	bseti	a2, a2, 63
 	xor	a1, a1, a2

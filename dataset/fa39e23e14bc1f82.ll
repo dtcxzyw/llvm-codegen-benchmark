@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 63
-  %3 = lshr exact i8 %2, 1
+  %2 = lshr i8 %1, 1
+  %3 = and i8 %2, 31
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr ptr, ptr %0, i64 %4
   ret ptr %5
@@ -25,8 +25,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 16
-  %3 = lshr exact i32 %2, 4
+  %2 = lshr i32 %1, 4
+  %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
@@ -47,8 +47,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 536870911
-  %3 = lshr i32 %2, 4
+  %2 = lshr i32 %1, 4
+  %3 = and i32 %2, 33554431
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i32, ptr %0, i64 %4
   ret ptr %5
@@ -62,8 +62,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = lshr i32 %2, 4
+  %2 = lshr i32 %1, 4
+  %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i16, ptr %0, i64 %4
   ret ptr %5

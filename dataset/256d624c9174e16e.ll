@@ -9,8 +9,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 130
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %4, %5
-  %7 = sub i64 %6, %0
+  %6 = add i64 %5, %0
+  %7 = sub i64 %4, %6
   ret i64 %7
 }
 
@@ -25,8 +25,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %4, %5
-  %7 = sub i64 %6, %0
+  %6 = add i64 %5, %0
+  %7 = sub i64 %4, %6
   ret i64 %7
 }
 

@@ -9,7 +9,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp ogt float %1, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 
@@ -78,7 +78,7 @@ entry:
   %2 = fneg float %1
   %3 = fcmp oge float %1, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

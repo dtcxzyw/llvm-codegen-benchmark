@@ -23,7 +23,7 @@ entry:
   %4 = add nuw nsw i64 %3, 1
   %5 = and i64 %1, 511
   %6 = add nuw nsw i64 %4, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

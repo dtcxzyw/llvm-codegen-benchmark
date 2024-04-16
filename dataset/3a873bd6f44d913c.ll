@@ -8,8 +8,8 @@ entry:
   %3 = and i64 %2, 16777184
   %4 = and i64 %1, 1610612736
   %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  %7 = or i32 %0, %6
+  %6 = trunc nuw nsw i64 %5 to i32
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -25,8 +25,8 @@ entry:
   %3 = and i64 %2, 16777184
   %4 = and i64 %1, 1610612736
   %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  %7 = or disjoint i32 %0, %6
+  %6 = trunc nuw nsw i64 %5 to i32
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

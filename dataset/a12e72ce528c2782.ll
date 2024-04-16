@@ -7,7 +7,7 @@
 define i1 @func00000000000000c1(i1 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   %5 = icmp eq i8 %1, 2
   %6 = xor i1 %4, %5
   ret i1 %6
@@ -43,7 +43,7 @@ entry:
 define i1 @func000000000000001c(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   %5 = icmp ne i8 %1, -1
   %6 = xor i1 %4, %5
   ret i1 %6
@@ -67,7 +67,7 @@ entry:
 define i1 @func000000000000001a(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   %5 = icmp sgt i8 %1, 0
   %6 = xor i1 %4, %5
   ret i1 %6

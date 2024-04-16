@@ -7,11 +7,9 @@
 define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 5
-  %3 = select i1 %2, i32 8, i32 0
-  %4 = or disjoint i32 %3, 23
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %3 = select i1 %2, i64 31, i64 23
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

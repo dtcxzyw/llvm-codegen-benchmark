@@ -5,10 +5,8 @@
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = lshr exact i32 %2, 2
-  %4 = lshr exact i32 %0, 2
-  %5 = icmp ugt i32 %3, %4
-  ret i1 %5
+  %3 = icmp ugt i32 %2, %0
+  ret i1 %3
 }
 
 ; 11 occurrences:
@@ -27,10 +25,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = lshr i32 %2, 27
-  %4 = lshr i32 %0, 27
-  %5 = icmp eq i32 %3, %4
-  ret i1 %5
+  %.unshifted = xor i32 %2, %0
+  %3 = icmp ult i32 %.unshifted, 134217728
+  ret i1 %3
 }
 
 ; 10 occurrences:

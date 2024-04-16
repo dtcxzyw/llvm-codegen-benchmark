@@ -33,7 +33,7 @@
 define ptr @func0000000000000009(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 43
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -47,7 +47,7 @@ entry:
 define ptr @func0000000000000061(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 48
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -62,7 +62,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -74,7 +74,7 @@ entry:
 define ptr @func0000000000000060(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -86,7 +86,7 @@ entry:
 define ptr @func0000000000000021(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 26
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

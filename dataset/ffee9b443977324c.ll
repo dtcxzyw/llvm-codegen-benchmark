@@ -5,10 +5,10 @@
 define i64 @func00000000000000b1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 153
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp slt i64 %4, 3
   %6 = zext i1 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -26,10 +26,10 @@ entry:
 define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %2, 153
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = icmp ult i32 %4, 3
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -42,10 +42,10 @@ entry:
 define i32 @func00000000000000a3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %2, 153
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = icmp ult i32 %4, 3
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 

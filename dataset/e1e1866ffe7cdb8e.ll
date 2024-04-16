@@ -157,8 +157,8 @@
 define i32 @func0000000000000010(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = add nuw i64 %1, %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add nuw i64 %4, %1
   %6 = lshr i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
@@ -179,7 +179,7 @@ define i32 @func0000000000000050(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %1, %4
+  %5 = add nuw i64 %4, %1
   %6 = lshr i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
@@ -191,8 +191,8 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = add i64 %1, %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add i64 %4, %1
   %6 = lshr i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7

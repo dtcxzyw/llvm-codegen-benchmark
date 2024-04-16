@@ -7,9 +7,10 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a1, 31
 	li	a3, 27
-	bne	a2, a3, .LBB1_2
-	mv	a0, a1
+	beq	a2, a3, .LBB1_2
+	mv	a1, a0
 .LBB1_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a2, a1, 42

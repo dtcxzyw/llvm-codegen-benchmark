@@ -5,8 +5,8 @@
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = call double @llvm.fabs.f64(double %2)
-  %4 = fadd double %1, %3
-  %5 = fcmp olt double %0, %4
+  %4 = fadd double %3, %1
+  %5 = fcmp ogt double %4, %0
   %6 = select i1 %5, double %4, double %0
   ret double %6
 }
@@ -23,8 +23,8 @@ declare double @llvm.fabs.f64(double) #1
 define double @func0000000000000012(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call noundef double @llvm.fabs.f64(double %2)
-  %4 = fadd double %1, %3
-  %5 = fcmp olt double %0, %4
+  %4 = fadd double %3, %1
+  %5 = fcmp ogt double %4, %0
   %6 = select i1 %5, double %4, double %0
   ret double %6
 }

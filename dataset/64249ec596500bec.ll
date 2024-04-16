@@ -10,7 +10,7 @@ entry:
   %4 = sext i8 %1 to i16
   %5 = mul nsw i16 %4, %3
   %6 = ashr i16 %5, 7
-  %7 = add nsw i16 %0, %6
+  %7 = add nsw i16 %6, %0
   ret i16 %7
 }
 

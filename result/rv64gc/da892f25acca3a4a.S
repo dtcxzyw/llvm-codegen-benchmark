@@ -29,27 +29,25 @@ func00000000000000c4:                   # @func00000000000000c4
 func00000000000000c7:                   # @func00000000000000c7
 	sext.w	a1, a1
 	bnez	a1, .LBB3_2
-	li	a2, 32
-	subw	a0, a0, a2
+	li	a1, -32
+	addw	a0, a0, a1
 	ret
 .LBB3_2:
-	addi	a2, a2, 1
-	subw	a0, a0, a2
+	not	a1, a2
+	addw	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
 	sext.w	a1, a1
-	addi	a2, a2, 1
+	not	a2, a2
 	slti	a1, a1, 2
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	addw	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	bgtz	a1, .LBB5_2
-	li	a2, 1
-	subw	a0, a0, a2
-	ret
-.LBB5_2:
-	addi	a2, a2, 1
-	subw	a0, a0, a2
+	not	a2, a2
+	slti	a1, a1, 1
+	negw	a1, a1
+	or	a1, a1, a2
+	addw	a0, a0, a1
 	ret

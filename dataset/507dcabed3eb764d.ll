@@ -91,9 +91,9 @@ define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 10
   %4 = sub i64 %3, %0
-  %5 = shl nuw i64 1, %1
-  %6 = icmp ult i64 %4, %5
-  ret i1 %6
+  %.highbits = lshr i64 %4, %1
+  %5 = icmp eq i64 %.highbits, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

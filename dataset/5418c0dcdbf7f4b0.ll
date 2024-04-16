@@ -8,8 +8,8 @@ entry:
   %3 = add i64 %1, %2
   %4 = urem i64 %3, %2
   %5 = sub nuw i64 %3, %4
-  %6 = add i64 %0, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 
@@ -21,8 +21,8 @@ entry:
   %3 = add i64 %1, %2
   %4 = urem i64 %3, %2
   %5 = sub nuw i64 %3, %4
-  %6 = add i64 %0, %5
-  %7 = icmp ne i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp ne i64 %5, %6
   ret i1 %7
 }
 
@@ -34,8 +34,8 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = urem i32 %3, %2
   %5 = sub nuw i32 %3, %4
-  %6 = add i32 %0, %5
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp eq i32 %5, %6
   ret i1 %7
 }
 

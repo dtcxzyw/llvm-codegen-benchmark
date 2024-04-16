@@ -1,13 +1,13 @@
 func0000000000000018:                   # @func0000000000000018
 	srliw	a2, a2, 31
 	add	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srliw	a0, a0, 8
 	ret
 func000000000000001b:                   # @func000000000000001b
 	srliw	a2, a2, 31
 	add	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srliw	a0, a0, 8
 	ret
 func000000000000001c:                   # @func000000000000001c

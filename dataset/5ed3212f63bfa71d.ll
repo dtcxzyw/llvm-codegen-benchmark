@@ -8,7 +8,7 @@ define i32 @func0000000000000004(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 3
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = or i32 %5, 4
   %7 = select i1 %0, i32 %6, i32 %5
   ret i32 %7
@@ -40,7 +40,7 @@ define i64 @func0000000000000007(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i64
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = or disjoint i64 %5, 128
   %7 = select i1 %0, i64 %6, i64 %5
   ret i64 %7

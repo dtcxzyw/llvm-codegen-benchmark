@@ -7,11 +7,10 @@
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4398046511103
-  %4 = add nuw nsw i64 %0, %3
-  %5 = lshr i64 %1, 63
-  %6 = add nsw i64 %5, -1
-  %7 = and i64 %6, %4
-  ret i64 %7
+  %4 = add nuw nsw i64 %3, %0
+  %.inv = icmp slt i64 %1, 0
+  %5 = select i1 %.inv, i64 0, i64 %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

@@ -95,7 +95,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = shl i32 %3, 18
   ret i32 %4
 }

@@ -45,7 +45,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !1
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = icmp ult i64 %3, 267
   ret i1 %4
 }
@@ -60,7 +60,7 @@ entry:
 define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ugt i64 %3, 64
   ret i1 %4
 }

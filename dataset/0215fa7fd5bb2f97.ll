@@ -6,7 +6,7 @@
 define i128 @func0000000000000032(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp uge i64 %0, %2
+  %3 = icmp ule i64 %2, %0
   %4 = zext i1 %3 to i128
   ret i128 %4
 }
@@ -20,7 +20,7 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 define i128 @func0000000000000036(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp sge i64 %0, %2
+  %3 = icmp sle i64 %2, %0
   %4 = zext i1 %3 to i128
   ret i128 %4
 }
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

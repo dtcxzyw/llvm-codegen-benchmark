@@ -55,8 +55,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a1, a1
-	andi	a2, a2, 191
-	sltiu	a2, a2, 16
+	andi	a2, a2, 176
+	seqz	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	and	a0, a0, a1

@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000101(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp eq i64 %6, -1
@@ -110,8 +110,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c6(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp slt i64 %6, 1
@@ -123,8 +123,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c4(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 4
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp ult i64 %6, 12
@@ -137,8 +137,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 5
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 5
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp ult i64 %6, 3
@@ -151,8 +151,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000141(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp eq i64 %6, -1
@@ -165,8 +165,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds %struct.TestObject.2276292, ptr %1, i64 %3
+  %3 = getelementptr %struct.TestObject.2276292, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -24
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp sgt i64 %6, 0

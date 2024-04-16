@@ -20,10 +20,10 @@ define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = select i1 %2, i32 0, i32 -4194304
-  %4 = icmp ne i32 %0, 3
-  %5 = select i1 %4, i32 4194304, i32 0
-  %6 = add nsw i32 %5, %3
-  ret i32 %6
+  %.not = icmp eq i32 %0, 3
+  %4 = select i1 %.not, i32 0, i32 4194304
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
 }
 
 ; 3 occurrences:

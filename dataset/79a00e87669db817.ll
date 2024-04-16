@@ -200,7 +200,7 @@ entry:
   %4 = sub i32 %3, %1
   %5 = call i32 @llvm.smax.i32(i32 %4, i32 0)
   %6 = zext nneg i32 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -213,7 +213,7 @@ entry:
   %4 = sub i32 %3, %1
   %5 = call i32 @llvm.smax.i32(i32 %4, i32 0)
   %6 = zext nneg i32 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

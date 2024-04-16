@@ -9,7 +9,7 @@
 define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = icmp ugt i64 %4, 4611686018427387903
   %6 = select i1 %5, i64 -1, i64 %0
   ret i64 %6
@@ -35,7 +35,7 @@ entry:
 define i8 @func0000000000000034(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %1, %3
+  %4 = mul nuw nsw i32 %3, %1
   %5 = icmp ult i32 %4, 50
   %6 = select i1 %5, i8 1, i8 %0
   ret i8 %6
@@ -47,7 +47,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = icmp ugt i64 %4, 1152921504606846975
   %6 = select i1 %5, i64 -1, i64 %0
   ret i64 %6
@@ -60,7 +60,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i32 0, i32 %0
   ret i32 %6
@@ -72,7 +72,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = icmp ult i32 %4, 60
   %6 = select i1 %5, i32 1, i32 %0
   ret i32 %6
@@ -84,7 +84,7 @@ entry:
 define i64 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = icmp ugt i64 %4, 2305843009213693951
   %6 = select i1 %5, i64 -1, i64 %0
   ret i64 %6

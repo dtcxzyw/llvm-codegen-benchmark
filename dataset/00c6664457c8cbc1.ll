@@ -13,7 +13,7 @@ entry:
   %1 = uitofp i32 %0 to double
   %2 = bitcast double %1 to i64
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 

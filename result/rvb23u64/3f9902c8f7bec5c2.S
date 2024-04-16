@@ -4,12 +4,14 @@ func0000000000000034:                   # @func0000000000000034
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -36,7 +38,9 @@ func0000000000000006:                   # @func0000000000000006
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -73,7 +77,8 @@ func0000000000000016:                   # @func0000000000000016
 	and	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

@@ -7,7 +7,7 @@ entry:
   %3 = freeze i16 %2
   %4 = lshr i16 %3, 3
   %5 = zext nneg i16 %4 to i64
-  %6 = mul nuw nsw i64 %1, %5
+  %6 = mul nuw nsw i64 %5, %1
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = freeze i32 %2
   %4 = lshr exact i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nuw nsw i64 %1, %5
+  %6 = mul nuw nsw i64 %5, %1
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
 }
@@ -33,7 +33,7 @@ entry:
   %3 = freeze i32 %2
   %4 = lshr exact i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nuw nsw i64 %1, %5
+  %6 = mul nuw nsw i64 %5, %1
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
@@ -46,7 +46,7 @@ entry:
   %3 = freeze i8 %2
   %4 = lshr i8 %3, 3
   %5 = zext nneg i8 %4 to i64
-  %6 = mul i64 %1, %5
+  %6 = mul i64 %5, %1
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
@@ -59,7 +59,7 @@ entry:
   %3 = freeze i8 %2
   %4 = lshr i8 %3, 3
   %5 = zext nneg i8 %4 to i64
-  %6 = mul nsw i64 %1, %5
+  %6 = mul nsw i64 %5, %1
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }

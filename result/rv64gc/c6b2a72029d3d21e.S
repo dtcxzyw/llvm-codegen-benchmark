@@ -2,9 +2,8 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a3, a1, 1
 	li	a1, 6
 	bnez	a3, .LBB0_2
-	mv	a1, a2
+	andi	a1, a2, 255
 .LBB0_2:                                # %entry
-	andi	a1, a1, 255
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 20
@@ -13,9 +12,8 @@ func0000000000000007:                   # @func0000000000000007
 	andi	a3, a1, 1
 	li	a1, 15
 	bnez	a3, .LBB1_2
-	mv	a1, a2
+	andi	a1, a2, 255
 .LBB1_2:                                # %entry
-	andi	a1, a1, 255
 	li	a2, 24
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -35,9 +33,8 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a3, a1, 1
 	li	a1, 5
 	bnez	a3, .LBB3_2
-	mv	a1, a2
+	sext.w	a1, a2
 .LBB3_2:                                # %entry
-	sext.w	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 64

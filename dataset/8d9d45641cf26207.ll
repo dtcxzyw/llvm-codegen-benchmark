@@ -77,10 +77,9 @@
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add i32 %0, -48
-  %4 = add i32 %3, %2
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %.neg1 = sub i32 48, %3
+  ret i32 %.neg1
 }
 
 attributes #0 = { nounwind }

@@ -181,9 +181,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 0)
-  %4 = add nuw i32 %3, 1
+  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
+  %3 = add nuw i32 %2, 1
+  %4 = select i1 %0, i32 1, i32 %3
   ret i32 %4
 }
 

@@ -14,7 +14,7 @@ entry:
   %4 = tail call double @llvm.fmuladd.f64(double %1, double 2.000000e+00, double -1.000000e+00)
   %5 = tail call double @llvm.fmuladd.f64(double %4, double %4, double %3)
   %6 = fcmp oeq double %5, 0.000000e+00
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

@@ -8,7 +8,7 @@ entry:
   %4 = lshr i128 %1, 64
   %5 = mul nuw i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = add nuw i128 %0, %6
+  %7 = add nuw i128 %6, %0
   ret i128 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = lshr i64 %1, 32
   %5 = mul nuw i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

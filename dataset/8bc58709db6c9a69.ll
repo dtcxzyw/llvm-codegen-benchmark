@@ -162,8 +162,8 @@ entry:
   %2 = trunc i128 %1 to i32
   %3 = mul i32 %2, -10
   %4 = trunc i64 %0 to i32
-  %5 = add i32 %3, %4
-  %6 = icmp ne i32 %5, 0
+  %5 = sub i32 0, %4
+  %6 = icmp ne i32 %3, %5
   ret i1 %6
 }
 
@@ -181,8 +181,8 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, -100
   %4 = trunc nuw i64 %0 to i32
-  %5 = add i32 %3, %4
-  %6 = icmp eq i32 %5, 0
+  %5 = sub i32 0, %4
+  %6 = icmp eq i32 %3, %5
   ret i1 %6
 }
 

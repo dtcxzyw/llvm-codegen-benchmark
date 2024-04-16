@@ -24,9 +24,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 34 occurrences:
@@ -67,11 +66,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr inbounds %"class.std::vector.297.1568238", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.std::vector.297.1568238", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 25 occurrences:
@@ -496,7 +494,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = getelementptr i16, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -2
@@ -566,11 +564,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr inbounds %struct.hb_glyph_info_t.2273323, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 12
-  ret ptr %5
+  %4 = getelementptr %struct.hb_glyph_info_t.2273323, ptr %0, i64 %3, i32 3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

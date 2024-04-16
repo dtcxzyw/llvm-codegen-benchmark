@@ -16,16 +16,18 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
-	slli	a0, a0, 1
-	slli	a1, a1, 33
-	or	a0, a0, a1
+	slli	a1, a1, 32
 	neg	a0, a0
+	sub	a0, a0, a1
+	slli	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
+	lui	a2, 524288
+	addi	a2, a2, -1
+	slli	a2, a2, 32
+	mul	a1, a1, a2
+	sub	a0, a1, a0
 	slli	a0, a0, 1
-	slli	a1, a1, 33
-	or	a0, a0, a1
-	neg	a0, a0
 	ret
 .LCPI3_0:
 	.quad	-7286425919675154353            # 0x9ae16a3b2f90404f
@@ -50,10 +52,10 @@ func0000000000000008:                   # @func0000000000000008
 	mulw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
-	slli	a0, a0, 3
-	slli	a1, a1, 35
-	or	a0, a0, a1
+	slli	a1, a1, 32
 	neg	a0, a0
+	sub	a0, a0, a1
+	slli	a0, a0, 3
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 8

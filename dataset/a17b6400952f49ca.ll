@@ -5,10 +5,9 @@
 define i1 @func0000000000000109(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, 17
-  %4 = add i64 %3, %2
-  %5 = icmp uge i64 %4, %3
-  ret i1 %5
+  %3 = sub i64 -18, %0
+  %4 = icmp uge i64 %3, %2
+  ret i1 %4
 }
 
 ; 3 occurrences:

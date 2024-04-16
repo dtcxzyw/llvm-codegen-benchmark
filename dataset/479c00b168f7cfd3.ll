@@ -183,8 +183,8 @@ entry:
   %3 = freeze i64 %2
   %4 = trunc i64 %3 to i32
   %5 = sub nsw i32 %4, %1
-  %6 = select i1 %0, i32 0, i32 %5
-  %7 = tail call i32 @llvm.smax.i32(i32 %6, i32 0)
+  %6 = tail call i32 @llvm.smax.i32(i32 %5, i32 0)
+  %7 = select i1 %0, i32 0, i32 %6
   ret i32 %7
 }
 

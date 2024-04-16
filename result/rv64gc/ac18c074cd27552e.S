@@ -92,18 +92,18 @@ func0000000000000013:                   # @func0000000000000013
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a3, a1
 	sext.w	a2, a2
-	li	a1, 144
-	bgeu	a2, a3, .LBB11_2
 	li	a1, 128
+	bltu	a2, a3, .LBB11_2
+	li	a1, 144
 .LBB11_2:                               # %entry
 	add	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
 	sext.w	a2, a2
 	sext.w	a3, a1
-	li	a1, 8
-	bge	a3, a2, .LBB12_2
 	li	a1, 16
+	blt	a3, a2, .LBB12_2
+	li	a1, 8
 .LBB12_2:                               # %entry
 	add	a0, a0, a1
 	ret

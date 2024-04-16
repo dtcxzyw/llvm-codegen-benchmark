@@ -11,7 +11,7 @@ define { i64, i64 } @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = insertvalue { i64, i64 } poison, i64 %4, 0
   ret { i64, i64 } %5
 }

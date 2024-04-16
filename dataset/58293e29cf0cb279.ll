@@ -13,7 +13,7 @@ entry:
   %2 = lshr i8 %1, 5
   %3 = and i8 %2, 2
   %4 = lshr i8 %1, 7
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = or disjoint i8 %5, %3
   ret i8 %6
 }

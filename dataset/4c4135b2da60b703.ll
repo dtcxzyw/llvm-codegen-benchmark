@@ -11,7 +11,7 @@ entry:
   %3 = and i64 %2, 1
   %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -189,7 +189,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

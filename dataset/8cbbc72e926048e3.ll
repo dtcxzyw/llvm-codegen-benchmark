@@ -10,7 +10,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

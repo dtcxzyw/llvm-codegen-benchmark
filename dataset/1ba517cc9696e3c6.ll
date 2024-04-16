@@ -46,8 +46,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 112
   %4 = add nsw i64 %3, 63
-  %5 = lshr i64 %4, 6
-  %6 = shl nuw nsw i64 %5, 3
+  %5 = lshr i64 %4, 3
+  %6 = and i64 %5, 2305843009213693944
   ret i64 %6
 }
 

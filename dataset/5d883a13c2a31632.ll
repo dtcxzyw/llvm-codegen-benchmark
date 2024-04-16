@@ -13,10 +13,9 @@
 define i64 @func000000000000002d(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %2 = or i64 %1, 1
+  %3 = sub nsw i64 2, %2
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -28,10 +27,9 @@ entry:
 define i64 @func000000000000000d(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 2
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %2 = or i64 %1, 1
+  %3 = sub nsw i64 2, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

@@ -162,8 +162,8 @@ define i1 @func0000000000000a90(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -39467
   %2 = icmp ult i32 %1, 149581
-  %3 = add nsw i32 %0, -48
-  %4 = icmp ugt i32 %3, 1237575
+  %3 = add i32 %0, -1237624
+  %4 = icmp ult i32 %3, -1237576
   %5 = or i1 %4, %2
   ret i1 %5
 }

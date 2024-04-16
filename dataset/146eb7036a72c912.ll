@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(float %0, float %1) #0 {
 entry:
-  %2 = fcmp olt float %0, %1
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %2 = fcmp uge float %0, %1
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -19,10 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(double %0, double %1) #0 {
 entry:
-  %2 = fcmp ult double %0, %1
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i8
-  ret i8 %4
+  %2 = fcmp oge double %0, %1
+  %3 = zext i1 %2 to i8
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

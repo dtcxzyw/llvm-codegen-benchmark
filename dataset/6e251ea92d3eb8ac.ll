@@ -115,11 +115,11 @@
 define ptr @func0000000000000035(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 7
-  %4 = add nuw nsw i64 %3, 1
-  %5 = sub nsw i64 %1, %4
-  %6 = lshr i64 %5, 1
-  %7 = getelementptr inbounds ptr, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = xor i64 %3, -1
+  %4 = add i64 %.neg, %1
+  %5 = lshr i64 %4, 1
+  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

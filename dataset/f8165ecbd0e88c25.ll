@@ -16,7 +16,7 @@ define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 16026, %1
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 163)
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -30,7 +30,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 117301, %1
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 600)
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 

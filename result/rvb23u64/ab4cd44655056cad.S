@@ -1,6 +1,5 @@
 func0000000000000071:                   # @func0000000000000071
-	addi	a1, a1, 16
-	addi	a0, a0, 1
+	addi	a1, a1, 15
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -12,8 +11,7 @@ func000000000000004a:                   # @func000000000000004a
 	slt	a0, a1, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	addi	a1, a1, 1
-	addi	a0, a0, -1
+	addi	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -37,8 +35,8 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	ret
 func000000000000005a:                   # @func000000000000005a
-	ori	a1, a1, 1
 	sext.w	a1, a1
-	addiw	a0, a0, 2
-	slt	a0, a1, a0
+	sext.w	a0, a0
+	slt	a0, a0, a1
+	xori	a0, a0, 1
 	ret

@@ -58,7 +58,7 @@ func0000000000000009:                   # @func0000000000000009
 .LBB7_3:                                # %entry
 	sll	a4, a6, a4
 	srai	a5, t0, 63
-	and	a3, a3, a7
+	and	a3, a7, a3
 	and	a2, a2, a4
 	and	a2, a2, a5
 	or	a1, a1, a3

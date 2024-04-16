@@ -17,7 +17,7 @@
 define i8 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.cttz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc i64 %1 to i8
+  %2 = trunc nuw nsw i64 %1 to i8
   %3 = icmp eq i64 %0, 0
   %4 = select i1 %3, i8 0, i8 %2
   ret i8 %4

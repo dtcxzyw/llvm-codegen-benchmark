@@ -10,11 +10,8 @@
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -1
-  %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = lshr i64 -1, %2
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 1)
-  %5 = extractvalue { i64, i1 } %4, 1
-  ret i1 %5
+  %2 = icmp slt i64 %1, 0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -25,5 +22,3 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-
-!0 = !{i64 0, i64 65}

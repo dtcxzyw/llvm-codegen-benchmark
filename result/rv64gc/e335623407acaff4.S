@@ -8,11 +8,13 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	xori	a1, a1, 136
 	slliw	a1, a1, 8
 	lui	a2, 1048560
 	and	a0, a0, a2
 	or	a0, a0, a1
+	li	a1, 17
+	slli	a1, a1, 11
+	xor	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	not	a1, a1

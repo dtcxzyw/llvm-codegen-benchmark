@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000046(i64 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, %2
-  %4 = icmp ult i32 %3, %1
+  %3 = xor i32 %1, -1
+  %4 = icmp ult i32 %3, %2
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = lshr i64 %6, 32
   ret i64 %7
 }
@@ -17,10 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp ult i64 %3, %1
+  %3 = xor i64 %1, -1
+  %4 = icmp ult i64 %3, %2
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = lshr i64 %6, 1
   ret i64 %7
 }
@@ -35,10 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = icmp ult i64 %3, %1
+  %3 = xor i64 %1, -1
+  %4 = icmp ult i64 %3, %2
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = lshr i64 %6, 32
   ret i64 %7
 }

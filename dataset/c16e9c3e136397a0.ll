@@ -10,9 +10,8 @@ entry:
   %2 = mul nsw i64 %1, 24
   %3 = add nsw i64 %2, -24
   %4 = udiv exact i64 %3, 24
-  %5 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 %4)
-  %6 = extractvalue { i64, i1 } %5, 0
-  ret i64 %6
+  %5 = mul i64 %4, %0
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -8,7 +8,7 @@ entry:
   %4 = call i64 @llvm.bswap.i64(i64 %3)
   %5 = lshr i64 %4, 28
   %6 = and i64 %5, 1073709056
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

@@ -4,14 +4,12 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	addiw	a1, a1, -1
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addiw	a1, a1, -1
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, 21
@@ -19,9 +17,9 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 21
 	ret
 func000000000000001f:                   # @func000000000000001f
-	addiw	a1, a1, 1
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 1
+	addi	a0, a0, 2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, -1
@@ -40,9 +38,9 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	addiw	a1, a1, 1
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 2
+	addi	a0, a0, 3
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addiw	a1, a1, 8
@@ -73,14 +71,14 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	addiw	a1, a1, 1
+	sext.w	a1, a1
 	add	a0, a0, a1
 	lui	a1, 10
-	addiw	a1, a1, 1432
+	addiw	a1, a1, 1433
 	add	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	addiw	a1, a1, -1
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 232
+	addi	a0, a0, 231
 	ret

@@ -7,7 +7,7 @@
 define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e+00
-  %4 = fcmp ugt double %1, %3
+  %4 = fcmp ult double %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -21,7 +21,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3F70101020000000
-  %4 = fcmp oeq float %1, %3
+  %4 = fcmp oeq float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3F847AE140000000
-  %4 = fcmp ule float %1, %3
+  %4 = fcmp uge float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -44,7 +44,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3F847AE140000000
-  %4 = fcmp ult float %1, %3
+  %4 = fcmp ugt float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -56,7 +56,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3D06849B86A12B9B
-  %4 = fcmp olt double %1, %3
+  %4 = fcmp ogt double %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -68,7 +68,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 5.000000e-01
-  %4 = fcmp ole float %1, %3
+  %4 = fcmp oge float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -80,7 +80,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 5.000000e-01
-  %4 = fcmp oge float %1, %3
+  %4 = fcmp ole float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -92,7 +92,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 5.000000e-01
-  %4 = fcmp ogt float %1, %3
+  %4 = fcmp olt float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -104,7 +104,7 @@ entry:
 define i1 @func000000000000000d(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp uge float %1, %3
+  %4 = fcmp ule float %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

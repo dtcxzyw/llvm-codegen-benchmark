@@ -7,9 +7,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 -1, i8 %2
-  %4 = select i1 %0, i8 1, i8 %3
-  %5 = icmp ugt i8 %4, 1
+  %3 = icmp ugt i8 %2, 1
+  %4 = select i1 %1, i1 true, i1 %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -51,9 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 -1, i32 %2
-  %4 = select i1 %0, i32 1, i32 %3
-  %5 = icmp slt i32 %4, 0
+  %3 = icmp slt i32 %2, 0
+  %4 = select i1 %1, i1 true, i1 %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -121,10 +123,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 -1, i32 %2
-  %4 = select i1 %0, i32 1, i32 %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = xor i1 %4, true
+  %6 = select i1 %5, i1 %3, i1 false
+  ret i1 %6
 }
 
 ; 5 occurrences:
@@ -136,9 +139,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = select i1 %0, i32 53, i32 %3
-  %5 = icmp ult i32 %4, 4
+  %3 = icmp ult i32 %2, 4
+  %4 = select i1 %1, i1 true, i1 %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -151,9 +155,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 -1, i32 %2
-  %4 = select i1 %0, i32 -1, i32 %3
-  %5 = icmp sgt i32 %4, 1114111
+  %3 = select i1 %0, i1 true, i1 %1
+  %4 = icmp sgt i32 %2, 1114111
+  %not. = xor i1 %3, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -167,9 +172,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = select i1 %0, i32 6, i32 %3
-  %5 = icmp ne i32 %4, 7
+  %3 = icmp ne i32 %2, 7
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
 

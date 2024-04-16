@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 -1, %2
   %4 = trunc i32 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 

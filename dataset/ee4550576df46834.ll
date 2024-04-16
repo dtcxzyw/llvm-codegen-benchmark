@@ -102,7 +102,7 @@ entry:
   %2 = add i32 %1, 32770
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = sext i1 %5 to i32
   ret i32 %6
 }

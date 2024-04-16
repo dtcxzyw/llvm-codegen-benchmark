@@ -22,9 +22,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 133200
   %5 = getelementptr [16 x %struct.igb_tx.1661144], ptr %4, i64 0, i64 %3
-  %6 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.1661145], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.1661145], ptr %5, i64 0, i64 %0, i32 2
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -38,9 +37,8 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 232
   %5 = getelementptr inbounds [4 x %"struct.rawspeed::VC5Decompressor::Channel.1766465"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 40
-  ret ptr %7
+  %6 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %5, i64 0, i64 %0, i32 5
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -51,9 +49,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 96
   %5 = getelementptr inbounds [3 x %"struct.std::array.102.1767429"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds [41 x %"struct.rawspeed::(anonymous namespace)::int_pair.1767430"], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds [41 x %"struct.rawspeed::(anonymous namespace)::int_pair.1767430"], ptr %5, i64 0, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -65,9 +62,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 64
   %5 = getelementptr [8 x %struct.skl_plane_wm.1997841], ptr %4, i64 0, i64 %3
-  %6 = getelementptr [8 x %struct.skl_wm_level.1997842], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 5
-  ret ptr %7
+  %6 = getelementptr [8 x %struct.skl_wm_level.1997842], ptr %5, i64 0, i64 %0, i32 3
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

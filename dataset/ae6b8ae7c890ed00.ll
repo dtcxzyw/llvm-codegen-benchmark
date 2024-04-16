@@ -53,12 +53,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 16
-  %5 = getelementptr inbounds %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %2 = getelementptr inbounds i8, ptr %0, i64 16
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -32
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -98,9 +97,8 @@ entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr %struct.ieee80211_tx_rate.1995198, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr %struct.ieee80211_tx_rate.1995198, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -116,9 +114,8 @@ entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr %struct.HUF_DEltX1.2008725, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr %struct.HUF_DEltX1.2008725, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

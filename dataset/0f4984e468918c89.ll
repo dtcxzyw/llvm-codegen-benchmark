@@ -17,7 +17,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -92,7 +92,7 @@ entry:
   %3 = add i32 %2, -9
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -111,7 +111,7 @@ entry:
   %3 = add i32 %2, -9
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -125,7 +125,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -137,7 +137,7 @@ entry:
   %3 = add nuw nsw i32 %2, 24
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -149,7 +149,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -161,7 +161,7 @@ entry:
   %3 = add nuw nsw i32 %2, 6
   %4 = add nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -173,7 +173,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -185,7 +185,7 @@ entry:
   %3 = add nsw i32 %2, -5
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -197,7 +197,7 @@ entry:
   %3 = add i32 %2, -4096
   %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -208,9 +208,9 @@ entry:
 define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 257
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -223,7 +223,7 @@ entry:
   %3 = add i16 %2, -2
   %4 = add i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -235,7 +235,7 @@ entry:
   %3 = add i8 %2, -48
   %4 = add nuw nsw i8 %3, %1
   %5 = zext nneg i8 %4 to i32
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -247,7 +247,7 @@ entry:
   %3 = add nuw nsw i32 %2, 144
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -257,9 +257,9 @@ entry:
 define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -131071
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -271,7 +271,7 @@ entry:
   %3 = add nuw nsw i32 %2, 65536
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -283,7 +283,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -295,7 +295,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -310,7 +310,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -322,7 +322,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

@@ -29,14 +29,14 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a3, a0
 	sext.w	a2, a2
 	bgeu	a2, a3, .LBB2_3
-	beqz	a1, .LBB2_4
+	bnez	a1, .LBB2_4
 .LBB2_2:                                # %entry
-	mv	a0, a2
 	ret
 .LBB2_3:                                # %entry
 	mv	a2, a3
-	bnez	a1, .LBB2_2
+	beqz	a1, .LBB2_2
 .LBB2_4:                                # %entry
+	mv	a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a3, a0

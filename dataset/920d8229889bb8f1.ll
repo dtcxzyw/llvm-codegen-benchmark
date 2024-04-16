@@ -29,7 +29,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = shl nuw i32 4092, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   ret i32 %4
 }
 
@@ -64,7 +64,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   ret i32 %4
 }
 

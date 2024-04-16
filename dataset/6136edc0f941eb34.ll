@@ -30,8 +30,8 @@
 define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 126, %1
-  %3 = lshr i32 %0, %2
-  %4 = and i32 %3, 1
+  %3 = shl nuw i32 1, %2
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -44,8 +44,8 @@ entry:
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 12, %1
-  %3 = lshr i32 %0, %2
-  %4 = and i32 %3, 15
+  %3 = shl i32 15, %2
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

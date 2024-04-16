@@ -21,7 +21,7 @@ define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = and i32 %2, 1984
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp ult i32 %4, 128
   %6 = select i1 %5, i32 65533, i32 %4
   ret i32 %6
@@ -34,7 +34,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = and i32 %2, 65472
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp eq i32 %4, 32
   %6 = select i1 %5, i32 1842, i32 %4
   ret i32 %6
@@ -48,9 +48,8 @@ entry:
   %2 = shl i32 %1, 29
   %3 = and i32 %2, 1610612736
   %4 = or disjoint i32 %3, %0
-  %5 = icmp sgt i32 %4, -1
-  %6 = select i1 %5, i32 0, i32 %4
-  ret i32 %6
+  %5 = call i32 @llvm.smin.i32(i32 %4, i32 0)
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -66,4 +65,8 @@ entry:
   ret i32 %6
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

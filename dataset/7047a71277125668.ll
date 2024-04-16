@@ -44,7 +44,7 @@ entry:
 define i16 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 10000
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nuw nsw i32 %1 to i16
   %3 = urem i16 %2, 100
   %4 = shl nuw nsw i16 %3, 1
   ret i16 %4

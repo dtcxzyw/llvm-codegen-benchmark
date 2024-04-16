@@ -13,7 +13,7 @@
 define double @func0000000000000000(double %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fadd double %1, %3
+  %4 = fadd double %3, %1
   %5 = fsub double %4, %0
   ret double %5
 }

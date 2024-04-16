@@ -7,7 +7,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, %1
   %5 = trunc i128 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = add i8 %0, %5
+  %6 = add i8 %5, %0
   ret i8 %6
 }
 

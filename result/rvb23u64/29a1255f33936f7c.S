@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	srai	a0, a0, 63
 	ret
 func0000000000000003:                   # @func0000000000000003
-	sub	a0, a0, a1
-	li	a1, -8
-	andn	a0, a1, a0
+	not	a0, a0
+	add	a0, a0, a1
+	andi	a0, a0, -8
 	ret

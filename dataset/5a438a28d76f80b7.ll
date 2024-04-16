@@ -63,9 +63,8 @@ entry:
   %3 = sub i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:

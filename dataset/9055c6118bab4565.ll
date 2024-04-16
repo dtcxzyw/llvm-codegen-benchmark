@@ -6,8 +6,8 @@ define ptr @func000000000000018d(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   %7 = getelementptr inbounds i8, ptr %6, i64 -8
   ret ptr %7
 }
@@ -19,8 +19,8 @@ define ptr @func000000000000018c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
@@ -33,8 +33,8 @@ define ptr @func000000000000014f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 9999999
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   %7 = getelementptr inbounds i8, ptr %6, i64 1
   ret ptr %7
 }
@@ -47,10 +47,9 @@ define ptr @func000000000000008a(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %1, %4
-  %6 = getelementptr inbounds { ptr, i64 }, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 8
-  ret ptr %7
+  %5 = getelementptr { ptr, i64 }, ptr %0, i64 %4
+  %6 = getelementptr { ptr, i64 }, ptr %5, i64 %1, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -60,8 +59,8 @@ define ptr @func0000000000000184(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }

@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa4
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.word	0x358637bd                      # float 9.99999997E-7

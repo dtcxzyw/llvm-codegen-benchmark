@@ -31,10 +31,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = inttoptr i64 %2 to ptr
-  %4 = inttoptr i64 %1 to ptr
-  %5 = select i1 %0, ptr %4, ptr %3
-  ret ptr %5
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = inttoptr i64 %.v to ptr
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -7,10 +7,10 @@
 define i1 @func00000000000000f1(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
-  %5 = sub nuw nsw i64 %1, %4
-  %6 = icmp eq i64 %0, %5
-  ret i1 %6
+  %.neg = xor i64 %3, -1
+  %4 = add i64 %.neg, %1
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -23,7 +23,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 2
   %5 = sub nuw i64 %1, %4
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

@@ -23,7 +23,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, 1
   ret i32 %7
 }
@@ -39,7 +39,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add nsw i32 %6, 16
   ret i32 %7
 }
@@ -55,7 +55,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add nsw i32 %6, -1
   ret i32 %7
 }
@@ -69,7 +69,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add i32 %6, -1025
   ret i32 %7
 }

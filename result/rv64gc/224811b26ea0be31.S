@@ -18,8 +18,9 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sext.w	a0, a0
+	sext.w	a1, a1
+	slt	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a0
@@ -27,8 +28,9 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	subw	a1, a1, a0
-	sgtz	a0, a1
+	sext.w	a0, a0
+	sext.w	a1, a1
+	slt	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	subw	a1, a1, a0

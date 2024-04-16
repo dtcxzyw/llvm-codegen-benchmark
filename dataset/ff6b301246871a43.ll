@@ -30,10 +30,10 @@
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
-  %5 = freeze ptr %0
-  %6 = getelementptr inbounds ptr, ptr %5, i64 %4
+  %3 = or i64 %2, 1
+  %4 = freeze ptr %0
+  %5 = getelementptr ptr, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }
 

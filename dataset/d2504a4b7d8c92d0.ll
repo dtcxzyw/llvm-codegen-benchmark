@@ -40,9 +40,9 @@ entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = icmp ne i64 %1, 0
-  %7 = select i1 %6, ptr %5, ptr %0
-  ret ptr %7
+  %.not = icmp eq i64 %1, 0
+  %6 = select i1 %.not, ptr %0, ptr %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

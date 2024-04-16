@@ -51,7 +51,7 @@ entry:
   %2 = fadd double %1, 5.000000e-01
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

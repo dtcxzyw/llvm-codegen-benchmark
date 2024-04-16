@@ -35,7 +35,7 @@ entry:
   %2 = udiv i16 %1, 3
   %3 = zext nneg i16 %2 to i64
   %4 = mul nuw nsw i64 %3, 3
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = udiv i32 %1, 400
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 146097
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

@@ -8,9 +8,8 @@
 define i1 @func0000000000000016(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %3 = icmp slt i64 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -20,9 +19,8 @@ entry:
 define i1 @func000000000000001a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, -1
-  ret i1 %4
+  %3 = icmp sge i32 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:

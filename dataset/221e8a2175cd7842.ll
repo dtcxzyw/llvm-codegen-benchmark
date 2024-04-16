@@ -50,9 +50,9 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = icmp ne i64 %0, 0
-  %5 = select i1 %4, i32 %3, i32 -1
-  ret i32 %5
+  %.not = icmp eq i64 %0, 0
+  %4 = select i1 %.not, i32 -1, i32 %3
+  ret i32 %4
 }
 
 ; 7 occurrences:
@@ -173,9 +173,9 @@ entry:
 define i64 @func000000000000001c(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = icmp ne i8 %0, 0
-  %5 = select i1 %4, i64 %3, i64 0
-  ret i64 %5
+  %.not = icmp eq i8 %0, 0
+  %4 = select i1 %.not, i64 0, i64 %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

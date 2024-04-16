@@ -12,10 +12,9 @@
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 -1, %0
-  %2 = xor i32 %1, 255
-  %3 = zext i32 %2 to i64
-  %4 = xor i64 %3, -1
-  ret i64 %4
+  %2 = zext i32 %1 to i64
+  %3 = xor i64 %2, -256
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -26,10 +25,9 @@ entry:
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 -1, %0
-  %2 = xor i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = xor i64 %3, -1
-  ret i64 %4
+  %2 = zext i32 %1 to i64
+  %3 = or disjoint i64 %2, -4294967296
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

@@ -257,7 +257,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 10
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ugt i32 %3, 30
   ret i1 %4
 }

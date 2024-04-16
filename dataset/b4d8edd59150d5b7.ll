@@ -86,10 +86,9 @@
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %2, i32 %0)
-  %4 = extractvalue { i32, i1 } %3, 0
-  %5 = trunc i32 %4 to i8
-  ret i8 %5
+  %3 = add i32 %2, %0
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

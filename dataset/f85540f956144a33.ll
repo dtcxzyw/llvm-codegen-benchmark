@@ -11,9 +11,8 @@ define ptr @func0000000000000015(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %struct.rb_code_location_struct.1553153, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %struct.rb_code_location_struct.1553153, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -24,9 +23,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr inbounds %struct.rb_code_location_struct.1554242, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.rb_code_location_struct.1554242, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 10 occurrences:

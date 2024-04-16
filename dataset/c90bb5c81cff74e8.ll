@@ -26,9 +26,8 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = sub nsw i32 %0, %5
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp slt i32 %5, %0
+  ret i1 %6
 }
 
 ; 14 occurrences:
@@ -52,9 +51,8 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -133,9 +131,8 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
-  %6 = sub i16 %0, %5
-  %7 = icmp eq i16 %6, 0
-  ret i1 %7
+  %6 = icmp eq i16 %5, %0
+  ret i1 %6
 }
 
 ; 3 occurrences:

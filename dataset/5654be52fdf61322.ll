@@ -82,10 +82,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0) #0 {
 entry:
-  %1 = sub i32 -61, %0
-  %2 = icmp sgt i32 %1, 0
-  %3 = zext i1 %2 to i32
-  ret i32 %3
+  %notsub = add i32 %0, 60
+  %1 = icmp slt i32 %notsub, -1
+  %2 = zext i1 %1 to i32
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

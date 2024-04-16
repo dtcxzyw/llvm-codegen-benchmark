@@ -39,7 +39,7 @@ entry:
   %4 = shl i32 %3, 1
   %5 = add i32 %1, -2
   %6 = add i32 %5, %4
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

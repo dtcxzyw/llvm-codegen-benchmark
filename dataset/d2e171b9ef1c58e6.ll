@@ -181,9 +181,9 @@ entry:
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i64 0, i64 %0
-  ret i64 %4
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i64 %0, i64 0
+  ret i64 %3
 }
 
 ; 1 occurrences:

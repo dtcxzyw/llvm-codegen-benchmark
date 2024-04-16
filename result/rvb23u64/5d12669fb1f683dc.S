@@ -72,9 +72,8 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, 4
 	ret
 func00000000000000d4:                   # @func00000000000000d4
-	slli	a1, a1, 7
-	slli	a0, a0, 7
 	add	a0, a0, a1
+	slli	a0, a0, 7
 	addiw	a0, a0, -1
 	ret
 func0000000000000033:                   # @func0000000000000033
@@ -86,8 +85,8 @@ func0000000000000033:                   # @func0000000000000033
 	addw	a0, a0, a1
 	ret
 func00000000000000f7:                   # @func00000000000000f7
+	add	a0, a0, a1
 	slli	a0, a0, 3
-	sh3add	a0, a1, a0
 	addiw	a0, a0, 19
 	ret
 func0000000000000051:                   # @func0000000000000051

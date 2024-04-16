@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

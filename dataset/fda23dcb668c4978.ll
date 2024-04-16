@@ -8,11 +8,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -131073
-  %3 = select i1 %0, i64 %1, i64 %2
-  %4 = lshr i64 %3, 4
-  %5 = and i64 %4, 8
-  ret i64 %5
+  %2 = lshr i64 %1, 4
+  %3 = and i64 %2, 8
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

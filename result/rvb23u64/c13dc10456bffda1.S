@@ -1,5 +1,5 @@
 func0000000000000008:                   # @func0000000000000008
-	addi	a0, a0, -36
+	addi	a0, a0, 988
 	slli	a0, a0, 54
 	srli	a0, a0, 56
 	ret

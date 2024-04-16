@@ -3,9 +3,9 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 256
 	bnez	a2, .LBB0_2
 	addi	a0, a1, 127
-.LBB0_2:                                # %entry
 	srliw	a0, a0, 7
 	slli	a0, a0, 7
+.LBB0_2:                                # %entry
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a2, a0, 1

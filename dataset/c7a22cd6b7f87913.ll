@@ -13,7 +13,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = ashr i64 %0, 52
+  %1 = lshr i64 %0, 52
   %2 = sub nsw i64 0, %1
   %3 = and i64 %2, 31
   ret i64 %3
@@ -114,7 +114,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 2
+  %1 = lshr exact i64 %0, 2
   %2 = sub nsw i64 0, %1
   %3 = and i64 %2, 4611686018427387903
   ret i64 %3

@@ -9,7 +9,7 @@ entry:
   %2 = and i64 %1, 31
   %3 = and i64 %0, 32
   %4 = or disjoint i64 %3, %2
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = shl nuw nsw i32 %5, 1
   ret i32 %6
 }
@@ -19,11 +19,11 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000010(i24 %0, i24 %1) #0 {
 entry:
-  %2 = and i24 %1, -3
+  %2 = and i24 %1, 509
   %3 = and i24 %0, 2
   %4 = or disjoint i24 %3, %2
-  %5 = trunc i24 %4 to i16
-  %6 = shl i16 %5, 7
+  %5 = trunc nuw nsw i24 %4 to i16
+  %6 = shl nuw i16 %5, 7
   ret i16 %6
 }
 

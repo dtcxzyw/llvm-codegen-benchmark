@@ -8,8 +8,8 @@
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 0)
-  %4 = icmp slt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sgt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

@@ -5,12 +5,6 @@ func000000000000003c:                   # @func000000000000003c
 	srliw	a0, a0, 6
 	ret
 func0000000000000038:                   # @func0000000000000038
-	srli	a1, a0, 32
-	or	a1, a1, a3
-	slli	a1, a1, 32
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	or	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	slli	a2, a2, 1

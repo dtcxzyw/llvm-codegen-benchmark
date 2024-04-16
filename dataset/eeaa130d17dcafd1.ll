@@ -9,7 +9,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = srem i64 %3, 86400
   %5 = ashr i64 %4, 63
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

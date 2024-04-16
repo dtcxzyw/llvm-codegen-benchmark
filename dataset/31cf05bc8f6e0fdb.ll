@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.bswap.i16(i16 %0)
-  %2 = or i16 %1, 32
+  %1 = or i16 %0, 8192
+  %2 = call i16 @llvm.bswap.i16(i16 %1)
   ret i16 %2
 }
 

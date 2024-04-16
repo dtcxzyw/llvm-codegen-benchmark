@@ -42,9 +42,10 @@ func0000000000000118:                   # @func0000000000000118
 	srli	a1, a1, 56
 	li	a2, 52
 	sub	a2, a2, a1
-	addi	a0, a0, -1
-	srli	a0, a0, 12
-	sltiu	a0, a0, 5
-	addi	a0, a0, -1
+	lui	a1, 1048571
+	addiw	a3, a1, -1
+	add	a0, a0, a3
+	sltu	a0, a0, a1
+	neg	a0, a0
 	and	a0, a0, a2
 	ret

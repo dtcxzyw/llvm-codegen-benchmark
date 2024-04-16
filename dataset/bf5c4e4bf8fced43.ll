@@ -62,8 +62,8 @@ define i64 @func0000000000000033(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = add nuw nsw i64 %0, 1
-  %6 = select i1 %4, i64 %5, i64 %0
+  %5 = zext i1 %4 to i64
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

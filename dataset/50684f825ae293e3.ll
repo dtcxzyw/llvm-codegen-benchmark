@@ -39,7 +39,7 @@ entry:
   %4 = call noundef float @llvm.fabs.f32(float %1)
   %5 = fcmp olt float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp olt float %0, %6
+  %7 = fcmp ogt float %6, %0
   ret i1 %7
 }
 
@@ -57,7 +57,7 @@ entry:
   %4 = tail call noundef float @llvm.fabs.f32(float %1)
   %5 = fcmp ogt float %4, %3
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp ogt float %0, %6
+  %7 = fcmp olt float %6, %0
   ret i1 %7
 }
 
@@ -70,7 +70,7 @@ entry:
   %4 = tail call double @llvm.fabs.f64(double %1)
   %5 = fcmp olt double %3, %4
   %6 = select i1 %5, double %4, double %3
-  %7 = fcmp oeq double %0, %6
+  %7 = fcmp oeq double %6, %0
   ret i1 %7
 }
 
@@ -86,7 +86,7 @@ entry:
   %4 = call float @llvm.fabs.f32(float %1)
   %5 = fcmp olt float %3, %4
   %6 = select i1 %5, float %4, float %3
-  %7 = fcmp olt float %0, %6
+  %7 = fcmp ogt float %6, %0
   ret i1 %7
 }
 

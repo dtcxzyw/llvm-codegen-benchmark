@@ -29,7 +29,7 @@
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = icmp eq i64 %3, 33
   ret i1 %4
 }
@@ -46,7 +46,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -57,7 +57,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -82,7 +82,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = icmp ult i32 %3, 4
   ret i1 %4
 }

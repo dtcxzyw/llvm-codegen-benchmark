@@ -7,8 +7,8 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	andi	a1, a1, 254
 	slli	a0, a0, 8
+	andi	a1, a1, 254
 	or	a0, a0, a1
 	zext.h	a0, a0
 	addi	a0, a0, -12
@@ -24,9 +24,9 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
-	slli	a0, a0, 8
+	slli	a0, a0, 56
+	srli	a0, a0, 48
 	or	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 14
 	addiw	a1, a1, 333
 	xor	a0, a0, a1

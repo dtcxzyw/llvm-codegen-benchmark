@@ -25,7 +25,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 65535
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

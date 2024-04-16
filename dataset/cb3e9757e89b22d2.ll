@@ -22,7 +22,7 @@ entry:
   %4 = or i32 %3, 8
   %5 = icmp ugt i32 %1, 188
   %6 = select i1 %5, i32 %4, i32 %3
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = or disjoint i32 %3, 32
   %5 = icmp ult i32 %1, 26
   %6 = select i1 %5, i32 %4, i32 %3
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

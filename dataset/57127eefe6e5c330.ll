@@ -21,7 +21,7 @@ define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 3968
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %5, 32
   ret i64 %6

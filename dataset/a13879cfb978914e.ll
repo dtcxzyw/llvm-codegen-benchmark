@@ -10,7 +10,7 @@ entry:
   %4 = mul nuw i64 %3, 4195354525
   %5 = add nuw i64 %4, %1
   %6 = lshr i64 %5, 28
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = mul nuw i64 %3, 4294967295
   %5 = add nuw i64 %4, %1
   %6 = lshr i64 %5, 32
-  %7 = add nuw i64 %0, %6
+  %7 = add nuw i64 %6, %0
   ret i64 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = mul nuw nsw i128 %3, 18446744073709551615
   %5 = add nuw nsw i128 %4, %1
   %6 = lshr i128 %5, 32
-  %7 = add nuw i128 %0, %6
+  %7 = add nuw i128 %6, %0
   ret i128 %7
 }
 

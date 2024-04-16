@@ -25,8 +25,7 @@ func0000000000000048:                   # @func0000000000000048
 	and	a0, a0, a2
 	ret
 func0000000000000311:                   # @func0000000000000311
-	addi	a2, a2, 4
-	xori	a2, a2, 12
+	xori	a2, a2, 8
 	xor	a0, a0, a1
 	or	a0, a0, a2
 	seqz	a0, a0

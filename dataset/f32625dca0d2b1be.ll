@@ -12,7 +12,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds %"struct.irr::video::S3DVertex.1646467", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -405,7 +405,7 @@ entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -418,7 +418,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

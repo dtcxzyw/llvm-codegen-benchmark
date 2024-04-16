@@ -7,7 +7,7 @@
 define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -256
-  %3 = add i32 %1, %2
+  %3 = add i32 %2, %1
   %4 = add nsw i32 %0, -255
   %5 = icmp slt i32 %4, %3
   ret i1 %5
@@ -75,7 +75,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, 2
-  %3 = add i32 %1, %2
+  %3 = add i32 %2, %1
   %4 = add i32 %0, 6
   %5 = icmp ugt i32 %4, %3
   ret i1 %5

@@ -4,14 +4,11 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 2
 	ret
 func000000000000000d:                   # @func000000000000000d
-	ori	a0, a0, 1
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	zext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	ori	a0, a0, 1
-	sext.w	a0, a0
-	addi	a0, a0, 7
+	zext.w	a0, a0
+	addi	a0, a0, 8
 	ret
 func0000000000000001:                   # @func0000000000000001
 	ori	a0, a0, 32

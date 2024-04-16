@@ -5,8 +5,9 @@ func0000000000000050:                   # @func0000000000000050
 	addi	a0, a0, -49
 	ret
 func0000000000000040:                   # @func0000000000000040
+	zext.w	a5, a4
 	add.uw	a4, a4, a2
-	sltu	a6, a4, a2
+	sltu	a6, a4, a5
 	sub	a2, a0, a4
 	li	a5, -1
 	srli	a5, a5, 32

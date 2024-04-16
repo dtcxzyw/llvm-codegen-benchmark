@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 1
-  %3 = shl i32 %2, 16
-  %4 = and i32 %3, 65536
+  %2 = shl i32 %1, 16
+  %3 = and i32 %2, 65536
+  %4 = xor i32 %3, 65536
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -24,7 +24,7 @@ entry:
   %2 = xor i64 %1, -1
   %3 = shl nsw i64 %2, 9
   %4 = and i64 %3, 576460752303422976
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -34,10 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 7
-  %3 = shl nuw nsw i32 %2, 3
-  %4 = and i32 %3, 56
-  %5 = or disjoint i32 %0, %4
+  %2 = shl i32 %1, 3
+  %3 = and i32 %2, 56
+  %4 = xor i32 %3, 56
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

@@ -28,7 +28,7 @@ entry:
   %3 = ashr i32 %2, 14
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 32767)
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 -32768)
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nsw i32 %5 to i16
   ret i16 %6
 }
 

@@ -22,8 +22,8 @@ entry:
 define i32 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, %1
-  %3 = zext nneg i16 %2 to i32
-  %4 = or disjoint i32 %3, 1
+  %3 = or i16 %2, 1
+  %4 = zext i16 %3 to i32
   ret i32 %4
 }
 
@@ -33,8 +33,8 @@ entry:
 define i32 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, %1
-  %3 = zext nneg i16 %2 to i32
-  %4 = or i32 %3, 2
+  %3 = or i16 %2, 2
+  %4 = zext i16 %3 to i32
   ret i32 %4
 }
 

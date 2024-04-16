@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %2 = add i64 %0, %1
+  %3 = icmp slt i64 %2, 0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -66,10 +65,9 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = icmp ugt i64 %3, 4611686018427387904
-  ret i1 %4
+  %2 = add i64 %0, %1
+  %3 = icmp ugt i64 %2, 4611686018427387904
+  ret i1 %3
 }
 
 ; 74 occurrences:
@@ -150,10 +148,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = sub i64 0, %1
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 41 occurrences:
@@ -201,10 +198,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = icmp ult i64 %3, 9223372036854775793
-  ret i1 %4
+  %2 = add i64 %0, %1
+  %3 = icmp ult i64 %2, 9223372036854775793
+  ret i1 %3
 }
 
 ; 86 occurrences:
@@ -297,10 +293,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %2 = sub i64 0, %1
+  %3 = icmp ne i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -308,10 +303,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = icmp sgt i64 %3, -1
-  ret i1 %4
+  %2 = add i64 %0, %1
+  %3 = icmp sgt i64 %2, -1
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

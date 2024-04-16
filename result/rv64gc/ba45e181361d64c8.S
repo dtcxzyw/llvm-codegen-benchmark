@@ -15,8 +15,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
-	li	a3, 3
-	blt	a2, a3, .LBB2_2
+	li	a3, 2
+	bge	a3, a2, .LBB2_2
 	li	a1, 2
 .LBB2_2:                                # %entry
 	mulw	a0, a1, a0
@@ -32,7 +32,7 @@ func0000000000000028:                   # @func0000000000000028
 	sgtz	a2, a2
 	neg	a2, a2
 	and	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a2, a2
@@ -41,7 +41,7 @@ func0000000000000020:                   # @func0000000000000020
 	bltu	a3, a2, .LBB5_2
 	li	a1, 1
 .LBB5_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000029:                   # @func0000000000000029
 	sraiw	a2, a2, 31
@@ -53,7 +53,7 @@ func0000000000000011:                   # @func0000000000000011
 	sltiu	a2, a2, 2
 	negw	a2, a2
 	and	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a5, a4

@@ -10,8 +10,8 @@ define i64 @func0000000000000208(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = icmp ugt i64 %5, %0
   %7 = zext i1 %6 to i64
   ret i64 %7
 }

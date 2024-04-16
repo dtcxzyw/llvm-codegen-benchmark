@@ -755,9 +755,8 @@ define i1 @func0000000000000041(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 ; 99 occurrences:
@@ -1137,9 +1136,8 @@ define i1 @func000000000000004c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %4, %0
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %5 = icmp ne i64 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

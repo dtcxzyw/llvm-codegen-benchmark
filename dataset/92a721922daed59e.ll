@@ -8,9 +8,8 @@ define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 10000000
   %2 = urem i64 %1, 10000000
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -5
-  %3 = icmp ugt i64 %2, 3
-  %4 = select i1 %3, i64 %0, i64 %2
-  %5 = icmp ugt i64 %4, 33
+  %2 = add i64 %1, -9
+  %3 = icmp ult i64 %2, -4
+  %4 = icmp ugt i64 %0, 33
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 

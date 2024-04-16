@@ -37,10 +37,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
-	bnez	a2, .LBB3_2
-	mv	a0, a1
+	beqz	a2, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
-	srliw	a1, a0, 31
+	srliw	a0, a1, 31
 	add	a0, a0, a1
 	sraiw	a0, a0, 1
 	ret

@@ -55,7 +55,7 @@ entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 2
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -79,7 +79,7 @@ entry:
   %2 = and i32 %1, 31
   %3 = icmp eq i32 %2, 24
   %4 = select i1 %3, i32 0, i32 59
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -102,7 +102,7 @@ entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 2
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -117,7 +117,7 @@ entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i8 30, i8 29
-  %5 = icmp ne i8 %0, %4
+  %5 = icmp ne i8 %4, %0
   ret i1 %5
 }
 
@@ -128,10 +128,10 @@ entry:
 define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 524288
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 1114111, i32 255
-  %5 = icmp ugt i32 %0, %4
-  ret i1 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 255, i32 1114111
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -144,7 +144,7 @@ entry:
   %2 = and i8 %1, 16
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 2, i32 1
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -156,7 +156,7 @@ entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 8100000, i32 7992000
-  %5 = icmp uge i32 %0, %4
+  %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
 
@@ -168,7 +168,7 @@ entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 8100000, i32 10000000
-  %5 = icmp ule i32 %0, %4
+  %5 = icmp uge i32 %4, %0
   ret i1 %5
 }
 
@@ -181,7 +181,7 @@ entry:
   %2 = and i64 %1, 16
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 3, i32 2
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -191,10 +191,10 @@ entry:
 define i1 @func00000000000000c5(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 262144
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i8 -4, i8 4
-  %5 = icmp ule i8 %0, %4
-  ret i1 %5
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i8 4, i8 -4
+  %4 = icmp uge i8 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

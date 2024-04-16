@@ -10,7 +10,7 @@ entry:
   %4 = mul nsw i32 %3, %2
   %5 = sdiv i32 %4, 2
   %6 = add nsw i32 %5, %1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = mul nsw i32 %3, %2
   %5 = sdiv i32 %4, 2
-  %6 = add nsw i32 %1, %5
+  %6 = add nsw i32 %5, %1
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %2
   %5 = sdiv i32 %4, 2
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }

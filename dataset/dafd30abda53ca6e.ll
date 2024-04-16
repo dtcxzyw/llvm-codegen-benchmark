@@ -38,11 +38,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 20
-  %3 = and i32 %2, 15
-  %4 = icmp eq i32 %3, 0
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %2 = and i32 %1, 15728640
+  %3 = icmp eq i32 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 22 occurrences:
@@ -71,11 +70,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
-  %2 = lshr i8 %1, 1
-  %3 = and i8 %2, 1
-  %4 = icmp ne i8 %3, 0
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %2 = and i8 %1, 2
+  %3 = icmp ne i8 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 20 occurrences:
@@ -102,11 +100,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 2
-  %3 = and i32 %2, 16383
-  %4 = icmp ugt i32 %3, 1023
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %2 = and i32 %1, 61440
+  %3 = icmp ne i32 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 8 occurrences:
@@ -121,11 +118,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 4
-  %3 = and i16 %2, 15
-  %4 = icmp ult i16 %3, 2
-  %5 = or i1 %0, %4
-  ret i1 %5
+  %2 = and i16 %1, 224
+  %3 = icmp eq i16 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

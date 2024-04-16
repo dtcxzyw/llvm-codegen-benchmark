@@ -31,9 +31,8 @@ entry:
   %2 = and i32 %1, 3
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds [3 x %struct.object_id.1777945], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 32
-  ret ptr %6
+  %5 = getelementptr inbounds [3 x %struct.object_id.1777945], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -45,9 +44,8 @@ entry:
   %2 = and i32 %1, 31
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [31 x %struct.xhci_virt_ep.2014095], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 88
-  ret ptr %6
+  %5 = getelementptr [31 x %struct.xhci_virt_ep.2014095], ptr %0, i64 0, i64 %4, i32 11
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

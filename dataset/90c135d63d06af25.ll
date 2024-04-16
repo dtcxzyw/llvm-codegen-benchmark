@@ -17,11 +17,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i8
-  %2 = and i8 %1, 15
-  %3 = xor i8 %2, 15
-  %4 = zext nneg i8 %3 to i64
-  ret i64 %4
+  %1 = and i64 %0, 15
+  %2 = xor i64 %1, 15
+  ret i64 %2
 }
 
 ; 1 occurrences:

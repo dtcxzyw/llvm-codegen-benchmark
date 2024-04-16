@@ -1,8 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a1, a0
-	srli	a0, a0, 32
-	xori	a0, a0, 15
-	or	a0, a0, a1
+	li	a1, 15
+	slli	a1, a1, 32
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI1_0:
@@ -48,10 +47,9 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a1, a0
 	sltiu	a1, a1, 47
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	sltiu	a0, a0, 4
-	not	a0, a0
+	srliw	a0, a0, 2
+	slli	a0, a0, 2
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
@@ -68,9 +66,11 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
-	sext.w	a1, a0
-	lui	a2, 1048560
-	sltu	a1, a1, a2
+	lui	a1, 65535
+	slli	a1, a1, 4
+	and	a2, a0, a1
+	xor	a1, a1, a2
+	snez	a1, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	seqz	a0, a0

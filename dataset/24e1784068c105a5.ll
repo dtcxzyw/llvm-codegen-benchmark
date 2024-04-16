@@ -9,7 +9,7 @@
 define i1 @func0000000000000144(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fabs.f32(float %2)
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   %5 = fcmp ogt float %0, %1
   %6 = and i1 %4, %5
   ret i1 %6

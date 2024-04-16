@@ -213,7 +213,7 @@ define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 5
   %2 = select i1 %1, i32 64, i32 0
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   ret i32 %3
 }
 

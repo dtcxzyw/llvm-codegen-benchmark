@@ -36,7 +36,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = call float @llvm.fmuladd.f32(float %1, float 3.200000e+02, float -4.000000e+01)
-  %3 = fadd float %0, %2
+  %3 = fadd float %2, %0
   ret float %3
 }
 

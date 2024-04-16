@@ -80,9 +80,9 @@
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -99,9 +99,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -211,9 +211,9 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -255,9 +255,9 @@ entry:
 define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -271,9 +271,9 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -416,9 +416,9 @@ entry:
 define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294965248
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -430,7 +430,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 117899264
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = lshr exact i32 %4, 8
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
@@ -449,7 +449,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 17592186044415
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 44
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
@@ -464,7 +464,7 @@ entry:
   %3 = and i64 %2, 2251799813685247
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 51
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

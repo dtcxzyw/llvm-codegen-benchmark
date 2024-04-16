@@ -8,9 +8,9 @@ define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
-  %5 = add nuw i32 %1, %4
+  %5 = add nuw i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = and i16 %3, 1
   %5 = add i16 %4, %1
   %6 = sext i16 %5 to i64
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

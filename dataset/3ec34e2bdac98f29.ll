@@ -45,7 +45,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 4
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 268435456)
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 
@@ -67,7 +67,7 @@ define i32 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 6
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 268435456)
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 

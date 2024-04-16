@@ -3690,7 +3690,7 @@
 define ptr @func0000000000000049(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %1, i64 1152921504606846975)
   %6 = select i1 %4, i64 1152921504606846975, i64 %5
   %7 = getelementptr inbounds ptr, ptr %0, i64 %6
@@ -3706,7 +3706,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define ptr @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = call i64 @llvm.umin.i64(i64 %1, i64 1152921504606846975)
   %6 = select i1 %4, i64 1152921504606846975, i64 %5
   %7 = getelementptr %"struct.std::pair.1925603", ptr %0, i64 %6

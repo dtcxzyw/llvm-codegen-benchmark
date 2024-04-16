@@ -13,11 +13,10 @@
 define ptr @func000000000000000e(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 18
-  %4 = or i1 %0, %3
-  %5 = getelementptr inbounds i8, ptr %1, i64 200
-  %6 = getelementptr inbounds i8, ptr %1, i64 204
-  %7 = select i1 %4, ptr %6, ptr %5
-  ret ptr %7
+  %4 = or i1 %3, %0
+  %.v = select i1 %4, i64 204, i64 200
+  %5 = getelementptr inbounds i8, ptr %1, i64 %.v
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

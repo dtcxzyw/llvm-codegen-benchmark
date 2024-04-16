@@ -7,10 +7,9 @@
 define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
-  %3 = add nsw i64 %2, -1
-  %4 = sub nsw i64 %3, %0
-  %5 = icmp eq i64 %4, 1
-  ret i1 %5
+  %3 = sub i64 %0, %2
+  %4 = icmp eq i64 %3, -2
+  ret i1 %4
 }
 
 ; 1 occurrences:

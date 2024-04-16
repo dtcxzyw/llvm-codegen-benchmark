@@ -38,10 +38,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %3 = and i64 %2, 2147483648
+  %.not = icmp eq i64 %3, 0
+  %4 = select i1 %.not, i32 %1, i32 %0
+  ret i32 %4
 }
 
 ; 14 occurrences:
@@ -401,9 +401,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i16
-  %4 = icmp ne i16 %3, 18761
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %.not = icmp eq i16 %3, 18761
+  %4 = select i1 %.not, i32 %1, i32 %0
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

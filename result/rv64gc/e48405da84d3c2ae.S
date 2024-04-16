@@ -13,17 +13,15 @@ func0000000000000051:                   # @func0000000000000051
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a0, a0, 7
-	andi	a0, a0, -8
-	addi	a0, a0, 8
-	seqz	a0, a0
+	addi	a0, a0, 15
+	sltiu	a0, a0, 8
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	li	a1, 1
 	slli	a1, a1, 32
 	addi	a1, a1, -257
 	add	a0, a0, a1
-	addi	a1, a1, 256
+	addi	a1, a1, 253
 	and	a0, a0, a1
 	addi	a0, a0, -28
 	sltiu	a0, a0, -20

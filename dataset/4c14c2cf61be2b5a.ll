@@ -11,7 +11,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
   %4 = add nuw nsw i32 %3, 1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -21,10 +21,10 @@ entry:
 define i1 @func00000000000001dc(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
-  %3 = shl nuw nsw i128 1, %2
-  %4 = add nsw i128 %3, -1
-  %5 = icmp ne i128 %0, %4
-  ret i1 %5
+  %notmask = shl nsw i128 -1, %2
+  %3 = xor i128 %notmask, %0
+  %4 = icmp ne i128 %3, -1
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -36,7 +36,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 64, %2
   %4 = add i64 %3, -1
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = add i32 %3, -4
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 8, %2
   %4 = add nuw i64 %3, 8
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

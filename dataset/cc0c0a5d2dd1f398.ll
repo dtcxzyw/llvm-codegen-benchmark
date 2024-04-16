@@ -9,9 +9,9 @@ entry:
   %3 = add i64 %2, %0
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 %1)
   %5 = add i64 %1, %0
-  %6 = sub i64 %5, %4
-  %7 = sub i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %4, %5
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

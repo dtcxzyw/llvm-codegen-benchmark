@@ -16,7 +16,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %3, %1
   %5 = udiv exact i64 %4, 152
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %3, %1
   %5 = udiv exact i64 %4, 24
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

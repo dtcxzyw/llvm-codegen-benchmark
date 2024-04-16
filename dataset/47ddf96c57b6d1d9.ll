@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i32 %2, 136
   %4 = zext i1 %3 to i32
   %5 = and i32 %1, 16519168
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

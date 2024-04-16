@@ -8,7 +8,7 @@
 define double @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = uitofp i32 %2 to double
   %4 = fadd double %3, 5.000000e-01
   ret double %4

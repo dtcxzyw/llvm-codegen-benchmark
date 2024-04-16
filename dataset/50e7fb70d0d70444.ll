@@ -5,7 +5,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

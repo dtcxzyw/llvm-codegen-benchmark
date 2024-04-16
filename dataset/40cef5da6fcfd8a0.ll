@@ -23,7 +23,7 @@ declare i16 @llvm.bswap.i16(i16) #1
 define i64 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = tail call i32 @llvm.bswap.i32(i32 %3)
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

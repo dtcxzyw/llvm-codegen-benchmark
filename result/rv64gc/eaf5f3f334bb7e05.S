@@ -1,12 +1,13 @@
 func0000000000000051:                   # @func0000000000000051
+	andi	a0, a0, 255
 	li	a3, -1
 	slli	a3, a3, 63
 	xor	a2, a2, a3
 	snez	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	subw	a1, a1, a0
-	andi	a0, a1, 255
+	andi	a1, a1, 255
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044

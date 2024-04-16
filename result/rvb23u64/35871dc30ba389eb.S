@@ -21,9 +21,7 @@ func000000000000003e:                   # @func000000000000003e
 	srliw	a0, a0, 8
 	ret
 func000000000000007e:                   # @func000000000000007e
-	zext.h	a1, a1
 	slli	a0, a0, 10
-	or	a0, a0, a1
 	lui	a1, 16
 	add	a0, a0, a1
 	srliw	a0, a0, 18

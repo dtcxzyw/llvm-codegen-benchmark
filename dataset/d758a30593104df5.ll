@@ -9,7 +9,7 @@ entry:
   %4 = add i32 %3, 8
   %5 = call i32 @llvm.smin.i32(i32 %4, i32 %1)
   %6 = sext i32 %5 to i64
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = add nsw i32 %3, 16
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %1)
   %6 = sext i32 %5 to i64
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

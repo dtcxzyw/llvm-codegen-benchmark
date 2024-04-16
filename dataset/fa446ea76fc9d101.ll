@@ -22,10 +22,9 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.cttz.i64(i64 %0, i1 true), !range !0
-  %2 = shl nuw i64 1, %1
-  %3 = xor i64 %2, %0
-  ret i64 %3
+  %1 = add i64 %0, -1
+  %2 = and i64 %1, %0
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

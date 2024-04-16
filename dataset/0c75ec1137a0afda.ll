@@ -100,8 +100,8 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext i8 %0 to i32
-  %5 = add nsw i32 %3, %4
-  %6 = icmp eq i32 %5, 0
+  %5 = sub nsw i32 0, %4
+  %6 = icmp eq i32 %3, %5
   ret i1 %6
 }
 
@@ -114,8 +114,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -24
   %4 = zext nneg i32 %0 to i64
-  %5 = add nsw i64 %3, %4
-  %6 = icmp eq i64 %5, 0
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %3, %5
   ret i1 %6
 }
 

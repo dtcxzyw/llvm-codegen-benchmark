@@ -16,9 +16,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 4611686018427387900
-  %5 = shl i64 %4, 3
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, 8
+  %5 = and i64 %4, -32
   %6 = getelementptr %"struct.boost::container::dtl::pair.1639567", ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
@@ -77,9 +77,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 4611686018427387900
-  %5 = shl i64 %4, 3
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, 8
+  %5 = and i64 %4, -32
   %6 = getelementptr inbounds i8, ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
@@ -95,9 +95,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = and i64 %3, -64
-  %5 = shl i64 %4, 1
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, 2
+  %5 = and i64 %4, -128
   %6 = getelementptr inbounds i8, ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
@@ -108,9 +108,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 131008
-  %5 = shl nuw nsw i64 %4, 1
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, 2
+  %5 = and i64 %4, 262016
   %6 = getelementptr i16, ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
@@ -121,9 +121,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 8589934584
-  %5 = shl nuw nsw i64 %4, 2
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, 4
+  %5 = and i64 %4, 34359738336
   %6 = getelementptr inbounds float, ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7

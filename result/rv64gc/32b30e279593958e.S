@@ -1,19 +1,19 @@
 func0000000000000000:                   # @func0000000000000000
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	add	a3, a3, a2
+	add	a2, a2, a4
+	sltu	a4, a2, a4
+	add	a3, a3, a4
 	beq	a3, a1, .LBB0_2
-	slt	a2, a1, a3
-	beqz	a2, .LBB0_3
+	slt	a4, a1, a3
+	beqz	a4, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	sltu	a2, a0, a4
-	bnez	a2, .LBB0_4
+	sltu	a4, a0, a2
+	bnez	a4, .LBB0_4
 .LBB0_3:                                # %entry
-	mv	a4, a0
+	mv	a2, a0
 	mv	a3, a1
 .LBB0_4:                                # %entry
-	mv	a0, a4
+	mv	a0, a2
 	mv	a1, a3
 	ret
 func0000000000000009:                   # @func0000000000000009

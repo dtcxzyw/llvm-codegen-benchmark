@@ -34,6 +34,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000001a:                   # @func000000000000001a
 	or	a0, a0, a1
-	sraiw	a1, a0, 31
+	sext.w	a0, a0
+	srai	a1, a0, 63
 	and	a0, a0, a1
 	ret

@@ -25,7 +25,8 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func00000000000001f8:                   # @func00000000000001f8
 	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
+	slli	a1, a1, 1
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000b4:                   # @func00000000000000b4
@@ -39,13 +40,15 @@ func00000000000000b4:                   # @func00000000000000b4
 	ret
 func00000000000000b8:                   # @func00000000000000b8
 	li	a2, 60
-	mul	a1, a1, a2
-	addw	a0, a0, a1
+	mulw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000098:                   # @func0000000000000098
 	li	a2, -19
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret

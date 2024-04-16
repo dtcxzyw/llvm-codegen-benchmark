@@ -670,9 +670,8 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr %struct.Elf64_Shdr.1553377, ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %struct.Elf64_Shdr.1553377, ptr %3, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 1223 occurrences:
@@ -2513,9 +2512,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.1699776", ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.1699776", ptr %3, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 5 occurrences:

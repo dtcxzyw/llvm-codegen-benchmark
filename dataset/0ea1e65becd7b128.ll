@@ -127,9 +127,9 @@ entry:
   %3 = and i32 %2, 33554432
   %4 = zext nneg i32 %3 to i64
   %5 = or disjoint i64 %0, %1
-  %6 = or disjoint i64 %5, %4
-  %7 = and i64 %6, -65281
-  ret i64 %7
+  %.masked = and i64 %5, -65281
+  %6 = or i64 %.masked, %4
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

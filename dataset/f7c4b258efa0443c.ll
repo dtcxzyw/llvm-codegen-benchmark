@@ -9,8 +9,8 @@
 define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr inbounds %"struct.re2::CaseFold.1554330", ptr %0, i64 %5
   ret ptr %6
 }
@@ -23,8 +23,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = select i1 %1, i32 2, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 2, i64 %4
   %6 = getelementptr inbounds float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -48,8 +48,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr inbounds ptr, ptr %0, i64 %5
   ret ptr %6
 }
@@ -64,8 +64,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -76,8 +76,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -24
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -88,8 +88,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -15
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr inbounds i16, ptr %0, i64 %5
   ret ptr %6
 }
@@ -100,8 +100,8 @@ entry:
 define ptr @func000000000000000e(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %1, i32 1, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 1, i64 %4
   %6 = getelementptr double, ptr %0, i64 %5
   ret ptr %6
 }

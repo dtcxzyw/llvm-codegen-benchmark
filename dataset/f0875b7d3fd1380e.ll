@@ -8,8 +8,9 @@ define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 80145
   %3 = ashr i32 %2, 12
-  %4 = add nsw i32 %3, 1
-  %5 = select i1 %0, i32 %3, i32 %4
+  %not. = xor i1 %0, true
+  %4 = zext i1 %not. to i32
+  %5 = add nsw i32 %3, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

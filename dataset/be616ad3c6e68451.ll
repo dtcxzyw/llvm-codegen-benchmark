@@ -12,8 +12,8 @@ entry:
   %3 = freeze i64 %2
   %4 = add i64 %3, -40
   %5 = sub nuw i64 %4, %1
-  %6 = add i64 %5, 40
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 40
   ret ptr %7
 }
 

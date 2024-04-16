@@ -32,7 +32,7 @@ entry:
   %3 = mul i64 %2, -5435081209227447693
   %4 = sub i64 %3, %1
   %5 = tail call i64 @llvm.fshl.i64(i64 %4, i64 %4, i64 21)
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

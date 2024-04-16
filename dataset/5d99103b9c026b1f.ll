@@ -8,7 +8,7 @@ entry:
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 -2147483648, i32 -2013265920
   %6 = or i32 %5, %1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = icmp eq i16 %3, 0
   %5 = select i1 %4, i16 0, i16 -4096
   %6 = or disjoint i16 %5, %1
-  %7 = icmp eq i16 %0, %6
+  %7 = icmp eq i16 %6, %0
   ret i1 %7
 }
 

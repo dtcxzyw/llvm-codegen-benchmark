@@ -8,7 +8,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 3
   %5 = and i32 %4, 56
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = shl nsw i64 %3, 2
   %5 = and i64 %4, -8
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = shl i128 %3, 40
   %5 = and i128 %4, 72056494526300160
-  %6 = add nuw i128 %0, %5
+  %6 = add nuw i128 %5, %0
   ret i128 %6
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = add i128 %1, %2
   %4 = shl i128 %3, 40
   %5 = and i128 %4, 72056494526300160
-  %6 = add i128 %0, %5
+  %6 = add i128 %5, %0
   ret i128 %6
 }
 
@@ -92,7 +92,7 @@ entry:
   %3 = add nsw i128 %1, %2
   %4 = shl i128 %3, 40
   %5 = and i128 %4, 72056494526300160
-  %6 = add nuw i128 %0, %5
+  %6 = add nuw i128 %5, %0
   ret i128 %6
 }
 
@@ -104,7 +104,7 @@ entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = shl i128 %3, 40
   %5 = and i128 %4, 72056494526300160
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -116,7 +116,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 3
   %5 = and i32 %4, 63488
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -128,7 +128,7 @@ entry:
   %3 = add nuw nsw i16 %1, %2
   %4 = shl nuw i16 %3, 3
   %5 = and i16 %4, -2048
-  %6 = add nuw i16 %0, %5
+  %6 = add nuw i16 %5, %0
   ret i16 %6
 }
 

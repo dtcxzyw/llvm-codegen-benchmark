@@ -61,9 +61,8 @@
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
-  %2 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 48)
-  %3 = extractvalue { i64, i1 } %2, 0
-  ret i64 %3
+  %2 = mul nsw i64 %1, 48
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

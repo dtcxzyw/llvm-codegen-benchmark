@@ -7,7 +7,7 @@ define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 
@@ -24,7 +24,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 

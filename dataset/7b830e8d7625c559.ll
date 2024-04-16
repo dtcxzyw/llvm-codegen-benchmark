@@ -42,7 +42,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr inbounds [14 x %"union.std::aligned_storage<8, 8>::type.1637575"], ptr %1, i64 0, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

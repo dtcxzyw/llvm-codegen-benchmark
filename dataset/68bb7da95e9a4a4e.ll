@@ -1,8 +1,4 @@
 
-%struct._OnigStackType.1553707 = type { i32, i64, %union.anon.1553708 }
-%union.anon.1553708 = type { %struct.anon.1553709 }
-%struct.anon.1553709 = type { ptr, ptr, ptr, ptr }
-%"struct.re2::Splice.1554359" = type { ptr, ptr, i32, i32 }
 %"class.std::vector.112.1747357" = type { %"struct.std::_Vector_base.113.1747358" }
 %"struct.std::_Vector_base.113.1747358" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.1747359" }
 %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.1747359" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.1747360" }
@@ -24,9 +20,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 48
-  %6 = getelementptr %struct._OnigStackType.1553707, ptr %0, i64 %5
-  ret ptr %6
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2258 occurrences:
@@ -2293,9 +2288,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 24
-  %6 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %5
-  ret ptr %6
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:

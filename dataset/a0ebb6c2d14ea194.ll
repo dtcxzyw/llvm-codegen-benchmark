@@ -13,7 +13,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = tail call i16 @llvm.bitreverse.i16(i16 %2)
   %4 = zext i16 %3 to i32
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 

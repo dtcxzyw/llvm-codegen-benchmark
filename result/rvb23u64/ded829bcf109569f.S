@@ -11,10 +11,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
-	addi	a0, a0, -8
 	andi	a0, a0, 255
-	sltiu	a0, a0, 9
-	xori	a0, a0, 1
+	addi	a0, a0, -17
+	sltiu	a0, a0, -9
 	ret
 func000000000000004a:                   # @func000000000000004a
 	addiw	a0, a0, -1

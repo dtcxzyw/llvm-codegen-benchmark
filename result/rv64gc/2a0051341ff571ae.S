@@ -6,6 +6,6 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a1, a0, 7
-	andi	a1, a1, -8
+	andi	a1, a1, 248
 	subw	a0, a1, a0
 	ret

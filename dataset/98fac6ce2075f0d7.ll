@@ -83,8 +83,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = call i64 @llvm.smax.i64(i64 %2, i64 -2147483648)
   %4 = call i64 @llvm.smin.i64(i64 %3, i64 2147483647)
-  %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
+  %5 = and i64 %4, 2147483648
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 
@@ -180,7 +180,7 @@ entry:
   %2 = sub i64 %0, %1
   %3 = call i64 @llvm.smax.i64(i64 %2, i64 -2147483648)
   %4 = call i64 @llvm.smin.i64(i64 %3, i64 2147483647)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nsw i64 %4 to i32
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -222,8 +222,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 -2147483648)
   %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 2147483647)
-  %5 = trunc nsw i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
+  %5 = and i64 %4, 2147483648
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 

@@ -90,7 +90,7 @@ define i1 @func0000000000000024(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 60
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -150,7 +150,7 @@ define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 60
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -191,7 +191,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -231,7 +231,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -341,7 +341,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 4
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -355,7 +355,7 @@ define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 24
   %4 = getelementptr i32, ptr %3, i64 %1
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -1424,7 +1424,7 @@ define i1 @func0000000000000031(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
   %4 = getelementptr inbounds %"struct.rocksdb::VersionBuilder::Rep::LevelState.1568123", ptr %3, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -1519,7 +1519,7 @@ define i1 @func0000000000000011(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = getelementptr inbounds %"class.rocksdb::Status.1584615", ptr %3, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -1579,7 +1579,7 @@ define i1 @func0000000000000034(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -1592,7 +1592,7 @@ define i1 @func000000000000001c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 16
   %4 = getelementptr inbounds { { i64, ptr }, { i32, i16, i16 }, i32, [1 x i32] }, ptr %3, i64 %1
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -1620,7 +1620,7 @@ define i1 @func0000000000000038(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 4096
   %4 = getelementptr inbounds i64, ptr %3, i64 %1
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -1635,7 +1635,7 @@ define i1 @func0000000000000014(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -1651,7 +1651,7 @@ define i1 @func0000000000000039(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 24
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
@@ -1662,7 +1662,7 @@ define i1 @func0000000000000035(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 24
   %4 = getelementptr inbounds %"struct.Assimp::MDL::Vertex.1753280", ptr %3, i64 %1
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -1704,7 +1704,7 @@ define i1 @func000000000000003c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
   %4 = getelementptr inbounds ptr, ptr %3, i64 %1
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -1715,7 +1715,7 @@ define i1 @func0000000000000025(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
   %4 = getelementptr %struct.prefix_code_node.1910724, ptr %3, i64 %1
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -1728,7 +1728,7 @@ define i1 @func000000000000002c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 6
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -1739,7 +1739,7 @@ define i1 @func0000000000000029(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1152
   %4 = getelementptr %struct.ata_device.1994654, ptr %3, i64 %1
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 
@@ -1750,7 +1750,7 @@ define i1 @func0000000000000009(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
 

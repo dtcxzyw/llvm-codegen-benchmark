@@ -51,9 +51,9 @@ define i8 @func000000000000002c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -2146566144
   %4 = zext i1 %3 to i8
-  %5 = icmp ne i32 %1, 0
-  %6 = select i1 %5, i8 %0, i8 %4
-  ret i8 %6
+  %.not = icmp eq i32 %1, 0
+  %5 = select i1 %.not, i8 %4, i8 %0
+  ret i8 %5
 }
 
 ; 8 occurrences:

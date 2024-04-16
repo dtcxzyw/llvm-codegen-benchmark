@@ -20,8 +20,8 @@ define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 15
   %3 = and i64 %2, 4022730752
-  %4 = xor i64 %3, %1
-  %5 = xor i64 %0, %4
+  %4 = xor i64 %3, %0
+  %5 = xor i64 %4, %1
   %6 = uitofp i64 %5 to double
   ret double %6
 }

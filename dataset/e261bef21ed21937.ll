@@ -173,8 +173,8 @@ entry:
   %2 = mul nsw i32 %1, 631305
   %3 = add nsw i32 %2, -261663
   %4 = ashr i32 %3, 21
-  %5 = sub nsw i32 0, %4
-  %6 = sub nsw i32 %5, %0
+  %5 = add i32 %4, %0
+  %6 = sub i32 0, %5
   ret i32 %6
 }
 

@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 2.000000e+00
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = fsub float %4, %0
   %6 = fcmp oeq float %5, 0.000000e+00
   ret i1 %6

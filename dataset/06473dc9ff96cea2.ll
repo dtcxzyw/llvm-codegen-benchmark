@@ -225,7 +225,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = mul nsw i32 %1, -3600
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

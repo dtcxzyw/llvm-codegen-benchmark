@@ -11,7 +11,7 @@ entry:
   %3 = and i64 %2, 15
   %4 = sub nuw nsw i64 16, %3
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %1)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = and i64 %2, 31
   %4 = sub nuw nsw i64 32, %3
   %5 = tail call noundef i64 @llvm.umin.i64(i64 %1, i64 %4)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

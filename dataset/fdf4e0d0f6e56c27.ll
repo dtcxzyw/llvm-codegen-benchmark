@@ -136,8 +136,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = freeze i64 %2
   %4 = ashr exact i64 %3, 2
-  %5 = add nsw i64 %4, -2
-  %6 = or disjoint i64 %5, 1
+  %5 = or i64 %4, 1
+  %6 = add nsw i64 %5, -2
   ret i64 %6
 }
 
@@ -211,8 +211,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = freeze i64 %2
   %4 = ashr i64 %3, 2
-  %5 = add nsw i64 %4, -2
-  %6 = or disjoint i64 %5, 1
+  %5 = or i64 %4, 1
+  %6 = add nsw i64 %5, -2
   ret i64 %6
 }
 

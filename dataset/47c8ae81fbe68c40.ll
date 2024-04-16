@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -122,7 +122,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -238,7 +238,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -352,7 +352,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -364,7 +364,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 
@@ -376,7 +376,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -395,7 +395,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp eq i8 %2, 1
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -421,7 +421,7 @@ entry:
   %2 = trunc i24 %1 to i8
   %3 = icmp eq i8 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -430,10 +430,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000052(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, -1
+  %2 = and i64 %1, 2147483648
+  %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 
@@ -445,7 +445,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 999999999
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -458,7 +458,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, -696719417
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

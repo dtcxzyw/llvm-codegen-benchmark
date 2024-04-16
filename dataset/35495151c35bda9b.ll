@@ -107,8 +107,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(i128 %0) #0 {
 entry:
-  %1 = mul nuw nsw i128 %0, 10
-  %2 = trunc i128 %1 to i64
+  %1 = trunc i128 %0 to i64
+  %2 = mul i64 %1, 10
   %3 = icmp ult i64 %2, 6
   ret i1 %3
 }
@@ -118,8 +118,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, 10
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 10
   %3 = icmp sgt i32 %2, 0
   ret i1 %3
 }
@@ -129,8 +129,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000ca(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 36
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 36
   %3 = icmp sgt i32 %2, 0
   ret i1 %3
 }
@@ -140,8 +140,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, 3
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 3
   %3 = icmp ugt i32 %2, 513535
   ret i1 %3
 }
@@ -151,8 +151,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i128 %0) #0 {
 entry:
-  %1 = mul nuw nsw i128 %0, 10
-  %2 = trunc i128 %1 to i64
+  %1 = trunc i128 %0 to i64
+  %2 = mul i64 %1, 10
   %3 = icmp ne i64 %2, 0
   ret i1 %3
 }
@@ -162,8 +162,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0) #0 {
 entry:
-  %1 = mul i16 %0, 100
-  %2 = trunc i16 %1 to i8
+  %1 = trunc i16 %0 to i8
+  %2 = mul i8 %1, 100
   %3 = icmp ult i8 %2, 100
   ret i1 %3
 }
@@ -173,8 +173,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i128 %0) #0 {
 entry:
-  %1 = mul nuw i128 %0, 18446744073709551608
-  %2 = trunc i128 %1 to i64
+  %1 = trunc i128 %0 to i64
+  %2 = mul i64 %1, -8
   %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
@@ -184,10 +184,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i128 %0) #0 {
 entry:
-  %1 = mul nuw nsw i128 %0, 51
-  %2 = trunc i128 %1 to i64
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = trunc i128 %0 to i64
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -196,8 +195,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 200001
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 200001
   %3 = icmp ugt i32 %2, 145821
   ret i1 %3
 }
@@ -207,8 +206,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i64 %0) #0 {
 entry:
-  %1 = mul nuw i64 %0, 3796716880
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, -498250416
   %3 = icmp ult i32 %2, 498250416
   ret i1 %3
 }

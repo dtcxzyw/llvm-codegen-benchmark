@@ -17,6 +17,6 @@ func000000000000000b:                   # @func000000000000000b
 	mv	a1, a2
 .LBB1_2:                                # %entry
 	slt	a0, a0, a1
-	xori	a0, a0, 1
-	addi	a0, a0, 1
+	li	a1, 2
+	sub	a0, a1, a0
 	ret

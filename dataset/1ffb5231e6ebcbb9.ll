@@ -12,8 +12,8 @@ define i1 @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.btSolverConstraint.1743444, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 160
-  %5 = select i1 %0, ptr null, ptr %4
-  %6 = icmp eq ptr %5, null
+  %5 = icmp eq ptr %4, null
+  %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
 

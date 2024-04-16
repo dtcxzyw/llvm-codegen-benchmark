@@ -36,7 +36,7 @@ entry:
   %4 = fadd double %2, 1.000000e+00
   %5 = fmul double %4, %3
   %6 = select i1 %1, double 0.000000e+00, double %5
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 

@@ -5,8 +5,8 @@
 define i1 @func00000000000000b1(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
-  %3 = select i1 %2, i32 %0, i32 1
-  %4 = icmp eq i32 %3, 0
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 
@@ -16,9 +16,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(i16 %0, float %1) #0 {
 entry:
-  %2 = fcmp une float %1, 0.000000e+00
-  %3 = select i1 %2, i16 %0, i16 0
-  %4 = icmp eq i16 %3, 0
+  %2 = fcmp oeq float %1, 0.000000e+00
+  %3 = icmp eq i16 %0, 0
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -32,9 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(i64 %0, double %1) #0 {
 entry:
-  %2 = fcmp ugt double %1, 2.621440e+05
-  %3 = select i1 %2, i64 %0, i64 1
-  %4 = icmp eq i64 %3, 1
+  %2 = fcmp ole double %1, 2.621440e+05
+  %3 = icmp eq i64 %0, 1
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 

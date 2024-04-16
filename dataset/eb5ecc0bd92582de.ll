@@ -202,9 +202,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 24
-  %4 = getelementptr [1 x %struct.rb_backtrace_location_struct.1554148], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [1 x %struct.rb_backtrace_location_struct.1554148], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 149 occurrences:
@@ -398,9 +397,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 -120
-  %4 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -411,9 +409,8 @@ define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 4
-  %4 = getelementptr inbounds [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %3, i64 0, i64 %2, i64 1
+  ret ptr %4
 }
 
 ; 10 occurrences:
@@ -432,9 +429,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 -4112
-  %4 = getelementptr [128 x %struct.ptp_extts_event.1998824], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr [128 x %struct.ptp_extts_event.1998824], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

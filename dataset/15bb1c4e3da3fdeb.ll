@@ -8,8 +8,9 @@
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = udiv i64 %2, 1000000000
-  %4 = mul nsw i64 %3, -1000000000
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 1000000000
+  %4 = sub i64 %3, %.fr
   ret i64 %4
 }
 
@@ -19,8 +20,9 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = udiv i64 %2, 125000
-  %4 = mul nuw i64 %3, 125000
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 125000
+  %4 = sub nuw i64 %.fr, %3
   ret i64 %4
 }
 
@@ -64,8 +66,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = udiv i32 %2, 365
-  %4 = mul i32 %3, -365
+  %.fr = freeze i32 %2
+  %3 = urem i32 %.fr, 365
+  %4 = sub i32 %3, %.fr
   ret i32 %4
 }
 
@@ -75,8 +78,9 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
-  %3 = udiv i32 %2, 12
-  %4 = mul nsw i32 %3, -12
+  %.fr = freeze i32 %2
+  %3 = urem i32 %.fr, 12
+  %4 = sub i32 %3, %.fr
   ret i32 %4
 }
 
@@ -97,8 +101,9 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = udiv i64 %2, 52
-  %4 = mul nuw i64 %3, 52
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 52
+  %4 = sub nuw i64 %.fr, %3
   ret i64 %4
 }
 

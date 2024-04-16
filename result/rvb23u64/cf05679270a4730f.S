@@ -10,8 +10,6 @@ func0000000000000000:                   # @func0000000000000000
 	fmul.s	fa0, fa5, fa4
 	ret
 .LBB0_2:
-	lui	a0, 276488
-	fmv.w.x	fa5, a0
-	fli.s	fa4, 0.5
-	fmul.s	fa0, fa5, fa4
+	lui	a0, 274440
+	fmv.w.x	fa0, a0
 	ret

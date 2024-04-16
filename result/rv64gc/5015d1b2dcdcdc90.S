@@ -13,13 +13,12 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000071:                   # @func0000000000000071
 	srliw	a1, a1, 3
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
 	srliw	a1, a1, 3
-	sub	a0, a0, a1
-	srli	a0, a0, 63
+	slt	a0, a0, a1
 	ret
 func0000000000000054:                   # @func0000000000000054
 	srliw	a1, a1, 6

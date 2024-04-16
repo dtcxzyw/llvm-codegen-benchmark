@@ -8,8 +8,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = shl i64 %2, 31
   %4 = add i64 %3, -4294967296
-  %5 = ashr i64 %4, 32
-  %6 = shl nsw i64 %5, 1
+  %5 = ashr exact i64 %4, 31
+  %6 = and i64 %5, -2
   ret i64 %6
 }
 

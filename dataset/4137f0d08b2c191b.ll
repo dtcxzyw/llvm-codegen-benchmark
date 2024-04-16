@@ -11,7 +11,7 @@ entry:
   %2 = sext i8 %1 to i16
   %3 = sext i8 %0 to i16
   %4 = srem i16 %3, %2
-  %5 = trunc i16 %4 to i8
+  %5 = trunc nsw i16 %4 to i8
   ret i8 %5
 }
 

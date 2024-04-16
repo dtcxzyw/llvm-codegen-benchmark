@@ -23,8 +23,8 @@
 define i64 @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = ptrtoint ptr %3 to i64
+  %3 = ptrtoint ptr %0 to i64
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -34,8 +34,8 @@ entry:
 define i64 @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -8
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = ptrtoint ptr %3 to i64
+  %3 = ptrtoint ptr %0 to i64
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -46,8 +46,8 @@ entry:
 define i64 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 64
-  %3 = select i1 %2, ptr null, ptr %0
-  %4 = ptrtoint ptr %3 to i64
+  %3 = ptrtoint ptr %0 to i64
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 

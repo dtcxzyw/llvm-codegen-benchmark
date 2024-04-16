@@ -17,10 +17,10 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a1, a1
 	snez	a1, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
 	andi	a0, a0, 255
 	slli	a0, a0, 32
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	ret
 func0000000000000026:                   # @func0000000000000026
 	srliw	a1, a1, 16
@@ -30,10 +30,10 @@ func0000000000000026:                   # @func0000000000000026
 	slli	a0, a0, 32
 	ret
 func0000000000000033:                   # @func0000000000000033
-	srai	a1, a1, 63
-	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 29
+	srai	a1, a1, 63
+	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255

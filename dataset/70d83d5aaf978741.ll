@@ -129,9 +129,9 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870912
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %0, 2147483648
-  %5 = and i64 %4, -1073741824
-  %6 = or disjoint i64 %5, %3
+  %4 = and i64 %0, -3221225472
+  %5 = or disjoint i64 %4, %3
+  %6 = or disjoint i64 %5, 2147483648
   ret i64 %6
 }
 

@@ -7,7 +7,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = getelementptr i8, ptr %2, i64 131072
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = getelementptr inbounds i8, ptr %2, i64 712
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -45,7 +45,7 @@ define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = getelementptr inbounds i8, ptr %2, i64 112
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
 

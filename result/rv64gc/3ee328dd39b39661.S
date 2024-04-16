@@ -38,19 +38,13 @@ func0000000000000074:                   # @func0000000000000074
 	seqz	a0, a0
 	ret
 func0000000000000036:                   # @func0000000000000036
-	slli	a2, a2, 48
-	srli	a2, a2, 48
 	or	a0, a0, a1
-	or	a0, a0, a2
 	slli	a0, a0, 16
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret
 func0000000000000076:                   # @func0000000000000076
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	or	a0, a0, a1
-	or	a0, a0, a2
 	slli	a0, a0, 16
 	srai	a0, a0, 16
 	slti	a0, a0, 0

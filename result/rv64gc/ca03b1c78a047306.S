@@ -1,8 +1,7 @@
 func0000000000000088:                   # @func0000000000000088
 	add	a1, a1, a2
-	addi	a1, a1, 1
-	not	a1, a1
-	add	a0, a0, a1
+	sub	a0, a0, a1
+	addi	a0, a0, -2
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	add	a1, a1, a2

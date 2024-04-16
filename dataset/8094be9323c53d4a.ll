@@ -10,7 +10,7 @@ entry:
   %3 = icmp eq i64 %1, 3505
   %4 = or i1 %3, %2
   %5 = select i1 %4, i32 22, i32 23
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = icmp eq i32 %1, 0
   %4 = or i1 %3, %2
   %5 = select i1 %4, i64 36525, i64 36524
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

@@ -19,7 +19,7 @@ define i1 @func0000000000000014(i1 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = icmp sgt i64 %2, -1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

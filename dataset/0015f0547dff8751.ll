@@ -7,7 +7,7 @@
 define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add nsw i64 %3, 16777216
   %5 = ashr i64 %4, 25
   ret i64 %5

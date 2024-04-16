@@ -5,7 +5,7 @@
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 2654435761
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
   ret i64 %6
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -4417276706812531889
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
   ret i64 %6
@@ -43,7 +43,7 @@ entry:
 define i64 @func000000000000006f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 470296
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = lshr i64 %1, 21
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -58,7 +58,7 @@ entry:
 define i64 @func0000000000000065(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 666643
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = lshr i64 %1, 21
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -73,7 +73,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 136657
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr i64 %1, 21
   %6 = add i64 %4, %5
   ret i64 %6
@@ -98,7 +98,7 @@ entry:
 define i32 @func0000000000000067(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 365
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = lshr i32 %1, 2
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -111,7 +111,7 @@ entry:
 define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1220703125
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
   ret i64 %6
@@ -128,7 +128,7 @@ entry:
 define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 146097
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = lshr i32 %1, 2
   %6 = add nsw i32 %4, %5
   ret i32 %6

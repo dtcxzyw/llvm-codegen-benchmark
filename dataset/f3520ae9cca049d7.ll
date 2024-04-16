@@ -59,11 +59,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 3
+  %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
-  %3 = icmp eq i32 %1, 2
-  %4 = or i1 %2, %3
-  ret i1 %4
+  ret i1 %2
 }
 
 ; 2 occurrences:

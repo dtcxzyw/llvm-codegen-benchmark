@@ -21,7 +21,7 @@ entry:
   %2 = fmul float %1, 6.300000e+01
   %3 = fptosi float %2 to i32
   %4 = shl nsw i32 %3, 12
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

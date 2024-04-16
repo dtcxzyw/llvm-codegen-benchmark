@@ -8,11 +8,11 @@
 define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = shl i32 %3, 1
-  %5 = icmp ne i32 %4, 65536
-  %6 = icmp ugt i32 %0, 1
-  %7 = select i1 %5, i1 %6, i1 false
-  ret i1 %7
+  %.mask = and i32 %3, 2147483647
+  %4 = icmp ne i32 %.mask, 32768
+  %5 = icmp ugt i32 %0, 1
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

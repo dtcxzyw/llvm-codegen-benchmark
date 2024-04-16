@@ -8,34 +8,32 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
+	not	a1, a1
 	andi	a1, a1, 256
-	seqz	a1, a1
-	slli	a1, a1, 27
+	slli	a1, a1, 19
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	bexti	a1, a1, 5
+	andi	a1, a1, 32
 	lui	a2, 2
 	addiw	a2, a2, 1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 7
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	andi	a1, a1, 6
+	snez	a1, a1
 	slli	a1, a1, 6
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, 7
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	andi	a1, a1, 6
+	snez	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	andi	a1, a1, 16
 	srli	a1, a1, 2
+	andi	a1, a1, 4
 	or	a0, a0, a1
 	ret

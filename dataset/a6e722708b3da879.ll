@@ -7,7 +7,7 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -114,7 +114,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -127,7 +127,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = shl i128 %4, %3
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -136,10 +136,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i64
+  %3 = zext nneg i8 %2 to i64
   %4 = zext i8 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

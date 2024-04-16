@@ -33,7 +33,7 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fsub.d	fa5, fa1, fa2
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fsub.s	fa5, fa1, fa2

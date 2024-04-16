@@ -10,8 +10,8 @@ entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0
   %4 = trunc i64 %0 to i32
-  %5 = select i1 %3, i32 0, i32 %4
-  %6 = icmp eq i32 %5, 0
+  %5 = icmp eq i32 %4, 0
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 
@@ -22,10 +22,10 @@ entry:
 define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 258048
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp ne i32 %2, 0
   %4 = trunc i32 %0 to i8
-  %5 = select i1 %3, i8 4, i8 %4
-  %6 = icmp ugt i8 %5, 16
+  %5 = icmp ugt i8 %4, 16
+  %6 = select i1 %3, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -41,8 +41,8 @@ entry:
   %2 = and i16 %1, 255
   %3 = icmp eq i16 %2, 4
   %4 = trunc nuw i16 %0 to i8
-  %5 = select i1 %3, i8 5, i8 %4
-  %6 = icmp eq i8 %5, 5
+  %5 = icmp eq i8 %4, 5
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 

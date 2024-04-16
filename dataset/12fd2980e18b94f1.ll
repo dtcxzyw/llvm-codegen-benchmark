@@ -11,9 +11,8 @@ define ptr @func0000000000000007(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 2, i64 %2
   %4 = getelementptr inbounds i8, ptr %0, i64 80
-  %5 = getelementptr inbounds %class.btVector3.1743357, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %class.btVector3.1743357, ptr %4, i64 %3, i32 0, i64 2
+  ret ptr %5
 }
 
 ; 1 occurrences:

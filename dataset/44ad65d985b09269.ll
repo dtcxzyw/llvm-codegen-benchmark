@@ -87,7 +87,7 @@ define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = lshr exact i32 %4, 16
   %6 = and i32 %5, 255
   ret i32 %6
@@ -99,12 +99,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
-  %5 = lshr exact i32 %4, 16
-  %6 = and i32 %5, 255
-  ret i32 %6
+  %2 = lshr i32 %0, 16
+  %3 = and i32 %2, 255
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

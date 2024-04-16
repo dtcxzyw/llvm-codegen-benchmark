@@ -52,7 +52,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = and i64 %1, -17592454479872
   %5 = or i64 %4, %3
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, 246415360
   ret i64 %7
 }

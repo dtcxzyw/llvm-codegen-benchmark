@@ -7,7 +7,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
-  %4 = fadd double %1, %3
+  %4 = fadd double %3, %1
   %5 = fsub double %4, %0
   %6 = call double @llvm.fabs.f64(double %5)
   ret double %6

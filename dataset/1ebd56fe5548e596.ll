@@ -53,7 +53,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -137,7 +137,7 @@ define i1 @func0000000000000004(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = tail call i8 @llvm.umin.i8(i8 %1, i8 %2)
   %4 = icmp ult i8 %3, 7
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

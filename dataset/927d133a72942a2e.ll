@@ -16,10 +16,9 @@ define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 0, %3
-  %5 = ashr exact i64 %1, 3
-  %6 = getelementptr inbounds %"class.mitsuba::ref.74.1555097", ptr %0, i64 %5
-  %7 = getelementptr %"class.mitsuba::ref.74.1555097", ptr %6, i64 %4
-  ret ptr %7
+  %5 = getelementptr inbounds i8, ptr %0, i64 %1
+  %6 = getelementptr %"class.mitsuba::ref.74.1555097", ptr %5, i64 %4
+  ret ptr %6
 }
 
 ; 26 occurrences:
@@ -54,10 +53,9 @@ define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 0, %3
-  %5 = ashr exact i64 %1, 4
-  %6 = getelementptr inbounds %"struct.std::__1::pair.27.1555573", ptr %0, i64 %5
-  %7 = getelementptr inbounds %"struct.std::__1::pair.27.1555573", ptr %6, i64 %4
-  ret ptr %7
+  %5 = getelementptr inbounds i8, ptr %0, i64 %1
+  %6 = getelementptr inbounds %"struct.std::__1::pair.27.1555573", ptr %5, i64 %4
+  ret ptr %6
 }
 
 ; 1 occurrences:

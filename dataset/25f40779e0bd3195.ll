@@ -12,10 +12,9 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
-  %3 = zext i32 %2 to i64
-  %4 = and i64 %3, 18501
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 18501
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -25,10 +24,9 @@ entry:
 define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %0, %1
-  %3 = zext i16 %2 to i32
-  %4 = and i32 %3, 256
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %3 = and i16 %2, 256
+  %4 = icmp ne i16 %3, 0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -40,10 +38,9 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, 48
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 48
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

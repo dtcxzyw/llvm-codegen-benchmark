@@ -42,9 +42,9 @@ entry:
 define i32 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = icmp sge i32 %0, %1
-  %5 = select i1 %4, i32 %3, i32 0
-  ret i32 %5
+  %.not = icmp slt i32 %0, %1
+  %4 = select i1 %.not, i32 0, i32 %3
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -54,9 +54,9 @@ entry:
 define i32 @func000000000000003b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = icmp sge i32 %0, %1
-  %5 = select i1 %4, i32 %3, i32 0
-  ret i32 %5
+  %.not = icmp slt i32 %0, %1
+  %4 = select i1 %.not, i32 0, i32 %3
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -65,9 +65,9 @@ entry:
 define i32 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = icmp ne i64 %0, %1
-  %5 = select i1 %4, i32 %3, i32 0
-  ret i32 %5
+  %.not = icmp eq i64 %0, %1
+  %4 = select i1 %.not, i32 0, i32 %3
+  ret i32 %4
 }
 
 ; 1 occurrences:

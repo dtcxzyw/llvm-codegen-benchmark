@@ -6,9 +6,8 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = sub i64 %2, %0
-  %4 = add i64 %3, -64
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, 64
+  ret i1 %4
 }
 
 ; 12 occurrences:
@@ -53,10 +52,9 @@ entry:
 define i1 @func0000000000000351(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
-  %3 = sub nsw i64 %2, %0
-  %4 = add nsw i64 %3, -1
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %.neg = add i64 %0, 1
+  %3 = icmp eq i64 %2, %.neg
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -92,8 +90,8 @@ define i1 @func0000000000000358(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = sub nsw i64 %2, %0
-  %4 = add nsw i64 %3, 7
-  %5 = icmp ugt i64 %4, 43
+  %4 = add i64 %3, -37
+  %5 = icmp ult i64 %4, -44
   ret i1 %5
 }
 

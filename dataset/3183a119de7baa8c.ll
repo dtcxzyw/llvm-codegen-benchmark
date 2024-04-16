@@ -6,10 +6,10 @@
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967296
-  %2 = icmp eq i64 %1, 0
+  %2 = icmp ne i64 %1, 0
   %3 = trunc i64 %0 to i32
-  %4 = select i1 %2, i32 0, i32 %3
-  %5 = icmp eq i32 %4, 12345
+  %4 = icmp eq i32 %3, 12345
+  %5 = and i1 %2, %4
   ret i1 %5
 }
 
@@ -19,10 +19,10 @@ entry:
 define i1 @func0000000000000084(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
-  %2 = icmp ugt i64 %1, 4096
-  %3 = trunc i64 %0 to i32
-  %4 = select i1 %2, i32 4096, i32 %3
-  %5 = icmp ult i32 %4, 4096
+  %2 = icmp ult i64 %1, 4097
+  %3 = and i64 %0, 4294963200
+  %4 = icmp eq i64 %3, 0
+  %5 = and i1 %2, %4
   ret i1 %5
 }
 
@@ -32,10 +32,10 @@ entry:
 define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
-  %2 = icmp ugt i64 %1, 4096
+  %2 = icmp ult i64 %1, 4097
   %3 = trunc i64 %0 to i32
-  %4 = select i1 %2, i32 4096, i32 %3
-  %5 = icmp eq i32 %4, 0
+  %4 = icmp eq i32 %3, 0
+  %5 = and i1 %2, %4
   ret i1 %5
 }
 
@@ -45,10 +45,10 @@ entry:
 define i1 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
-  %2 = icmp ugt i64 %1, 4096
-  %3 = trunc i64 %0 to i32
-  %4 = select i1 %2, i32 4096, i32 %3
-  %5 = icmp slt i32 %4, 0
+  %2 = icmp ult i64 %1, 4097
+  %3 = and i64 %0, 2147483648
+  %4 = icmp ne i64 %3, 0
+  %5 = and i1 %2, %4
   ret i1 %5
 }
 
@@ -58,10 +58,10 @@ entry:
 define i1 @func000000000000001a(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967296
-  %2 = icmp eq i64 %1, 0
+  %2 = icmp ne i64 %1, 0
   %3 = trunc i64 %0 to i32
-  %4 = select i1 %2, i32 -1, i32 %3
-  %5 = icmp sgt i32 %4, 0
+  %4 = icmp sgt i32 %3, 0
+  %5 = and i1 %2, %4
   ret i1 %5
 }
 
@@ -71,10 +71,10 @@ entry:
 define i1 @func000000000000001c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967296
-  %2 = icmp eq i64 %1, 0
+  %2 = icmp ne i64 %1, 0
   %3 = trunc i64 %0 to i32
-  %4 = select i1 %2, i32 0, i32 %3
-  %5 = icmp ne i32 %4, 0
+  %4 = icmp ne i32 %3, 0
+  %5 = and i1 %2, %4
   ret i1 %5
 }
 

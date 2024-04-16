@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 3, i32 %2
-  %4 = icmp eq i32 %3, 3
+  %3 = icmp eq i32 %2, 3
+  %4 = select i1 %1, i1 true, i1 %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -21,8 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = icmp ne i32 %3, 0
+  %3 = icmp ne i32 %2, 0
+  %4 = select i1 %1, i1 true, i1 %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %4, %5
   ret i1 %6

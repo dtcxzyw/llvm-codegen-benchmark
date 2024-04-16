@@ -19,8 +19,8 @@ define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 1
-  %4 = xor i8 %3, 1
-  %5 = icmp eq i8 %4, %0
+  %4 = xor i8 %3, %0
+  %5 = icmp eq i8 %4, 1
   ret i1 %5
 }
 

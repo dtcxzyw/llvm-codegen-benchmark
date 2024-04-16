@@ -21,8 +21,8 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1
   %5 = or disjoint i32 %4, %3
-  %6 = add i32 %5, 4
-  %7 = icmp ugt i32 %6, 7
+  %6 = add i32 %5, -4
+  %7 = icmp ult i32 %6, -8
   ret i1 %7
 }
 

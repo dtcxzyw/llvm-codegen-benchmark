@@ -5,9 +5,10 @@
 define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = add nsw i64 %3, -1
-  %5 = select i1 %1, i64 %3, i64 %4
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
+  %not. = xor i1 %1, true
+  %4 = sext i1 %not. to i64
+  %5 = getelementptr ptr, ptr %0, i64 %3
+  %6 = getelementptr ptr, ptr %5, i64 %4
   ret ptr %6
 }
 

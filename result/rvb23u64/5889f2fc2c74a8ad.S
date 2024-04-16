@@ -44,9 +44,9 @@ func00000000000001c1:                   # @func00000000000001c1
 func0000000000000381:                   # @func0000000000000381
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a2
-	sltiu	a2, a2, 2
-	xori	a2, a2, 1
+	srliw	a2, a2, 1
+	slli	a2, a2, 1
+	snez	a2, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	and	a0, a0, a2

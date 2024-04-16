@@ -16,8 +16,8 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = mul nsw i32 %2, 3
+  %2 = mul i32 %1, 3
+  %3 = add i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   ret ptr %5
@@ -36,8 +36,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = mul i32 %2, 3
+  %2 = mul i32 %1, 3
+  %3 = add i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr i32, ptr %0, i64 %4
   ret ptr %5
@@ -57,8 +57,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = mul nsw i32 %2, 5
+  %2 = mul i32 %1, 5
+  %3 = add i32 %2, 5
   %4 = sext i32 %3 to i64
   %5 = getelementptr i32, ptr %0, i64 %4
   ret ptr %5

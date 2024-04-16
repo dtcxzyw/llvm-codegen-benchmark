@@ -20,7 +20,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 %1, i32 16
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 

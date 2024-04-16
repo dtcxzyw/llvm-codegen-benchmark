@@ -10,7 +10,7 @@
 define i1 @func0000000000000022(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = and i32 %1, 3
   %6 = icmp eq i32 %5, 0
   %7 = or i1 %6, %4

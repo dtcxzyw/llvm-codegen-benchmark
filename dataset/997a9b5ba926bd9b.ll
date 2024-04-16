@@ -22,7 +22,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = fdiv double %3, %1
   %5 = fcmp ogt double %4, 0.000000e+00
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

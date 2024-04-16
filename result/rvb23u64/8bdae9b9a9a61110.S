@@ -1,16 +1,12 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	andi	a1, a1, 1
-	fli.s	fa5, 1.0
-	bnez	a1, .LBB0_2
-	fmv.s	fa5, fa0
-.LBB0_2:                                # %entry
-	bnez	a0, .LBB0_4
-	fli.s	fa4, 256.0
-	fmul.s	fa5, fa5, fa4
-	fcvt.w.s	a0, fa5, rtz
-	ret
-.LBB0_4:
-	fmv.w.x	fa5, zero
-	fcvt.w.s	a0, fa5, rtz
+	fli.s	fa5, 256.0
+	fmul.s	fa5, fa0, fa5
+	fcvt.w.s	a2, fa5, rtz
+	li	a3, 256
+	czero.eqz	a3, a3, a1
+	czero.nez	a1, a2, a1
+	or	a1, a1, a3
+	czero.nez	a0, a1, a0
 	ret

@@ -13,9 +13,10 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addi	a1, a1, 1
-	andi	a1, a1, 255
+	slli	a1, a1, 56
+	srai	a1, a1, 56
 	add	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, -4
@@ -24,10 +25,12 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	addiw	a1, a1, 16
+	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 func0000000000000006:                   # @func0000000000000006
-	addiw	a1, a1, -1
+	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, -1
 	ret

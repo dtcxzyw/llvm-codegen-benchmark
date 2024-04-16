@@ -31,10 +31,10 @@ define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %0
-  %5 = and i64 %4, 65534
-  %6 = icmp eq i64 %5, 4
-  ret i1 %6
+  %.masked = and i64 %0, 65534
+  %4 = or i64 %3, %.masked
+  %5 = icmp eq i64 %4, 4
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -69,10 +69,10 @@ define i1 @func0000000000000051(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %2, 8
-  %4 = or disjoint i16 %3, %0
-  %5 = and i16 %4, -2
-  %6 = icmp eq i16 %5, 12
-  ret i1 %6
+  %.masked = and i16 %0, -2
+  %4 = or i16 %3, %.masked
+  %5 = icmp eq i16 %4, 12
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -95,10 +95,10 @@ define i1 @func000000000000007c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %0, %3
-  %5 = and i64 %4, 4503599627370495
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %.masked = and i64 %0, 4503599627370495
+  %4 = or i64 %3, %.masked
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -108,7 +108,7 @@ define i1 @func00000000000000fc(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %4, 4192256
   %6 = icmp ne i32 %5, 55296
   ret i1 %6

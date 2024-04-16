@@ -6,7 +6,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 15
   %4 = and i32 %3, 524288
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = shl i32 %1, 16
   %7 = or i32 %5, %6
   ret i32 %7
@@ -47,7 +47,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
   %4 = and i32 %3, 2130706432
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = shl i32 %0, 31
   %7 = or disjoint i32 %6, %5
   ret i32 %7
@@ -136,7 +136,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = shl nuw nsw i32 %1, 28
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -166,7 +166,7 @@ define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
   %4 = and i32 %3, 251658240
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = shl nuw nsw i32 %1, 8
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -209,7 +209,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = shl i32 %1, 24
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -222,7 +222,7 @@ define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 18
   %4 = and i32 %3, 1835008
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = shl nuw nsw i32 %1, 6
   %7 = or i32 %5, %6
   ret i32 %7
@@ -236,7 +236,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 18
   %4 = and i32 %3, 1073479680
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = shl i32 %1, 30
   %7 = or i32 %5, %6
   ret i32 %7
@@ -263,7 +263,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = and i64 %3, 4194304
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = shl nuw nsw i64 %1, 31
   %7 = or i64 %5, %6
   ret i64 %7
@@ -343,7 +343,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 42
   %4 = and i64 %3, 72057594037927936
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = shl nuw i64 %1, 4
   %7 = or i64 %5, %6
   ret i64 %7
@@ -356,7 +356,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = and i64 %3, 16
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = shl nuw i64 %1, 8
   %7 = or i64 %5, %6
   ret i64 %7
@@ -369,7 +369,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = and i64 %3, 256
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = shl nuw nsw i64 %1, 4
   %7 = or i64 %5, %6
   ret i64 %7
@@ -382,7 +382,7 @@ define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 42
   %4 = and i64 %3, 4494803534348288
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = shl nuw i64 %1, 48
   %7 = or i64 %5, %6
   ret i64 %7

@@ -477,10 +477,10 @@ entry:
 define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1095216660480
-  %3 = icmp ne i64 %2, 8589934592
-  %4 = or disjoint i32 %0, 4
-  %5 = select i1 %3, i32 %0, i32 %4
-  ret i32 %5
+  %.not = icmp eq i64 %2, 8589934592
+  %3 = or disjoint i32 %0, 4
+  %4 = select i1 %.not, i32 %3, i32 %0
+  ret i32 %4
 }
 
 ; 8 occurrences:
@@ -495,8 +495,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2147483647
-  %3 = icmp ult i32 %2, 1048576
+  %2 = and i32 %1, 2146435072
+  %3 = icmp eq i32 %2, 0
   %4 = or disjoint i32 %0, 1048576
   %5 = select i1 %3, i32 %0, i32 %4
   ret i32 %5

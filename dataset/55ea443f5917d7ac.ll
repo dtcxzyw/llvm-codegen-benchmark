@@ -5,11 +5,11 @@
 define i64 @func0000000000000055(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw i64 %0, 32
-  %4 = or disjoint i64 %3, %2
-  %5 = mul nsw i64 %4, -8
-  %6 = add nsw i64 %5, 2147483648
-  ret i64 %6
+  %.neg = mul i64 %0, -4294967296
+  %.neg1 = sub i64 %.neg, %2
+  %3 = shl nsw i64 %.neg1, 3
+  %4 = add nsw i64 %3, 2147483648
+  ret i64 %4
 }
 
 ; 3 occurrences:

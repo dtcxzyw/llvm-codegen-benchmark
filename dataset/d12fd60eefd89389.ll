@@ -26,7 +26,7 @@ entry:
   %3 = freeze i32 %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = freeze i32 %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = freeze i32 %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.1854155", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = freeze i32 %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = freeze i16 %2
   %4 = zext i16 %3 to i64
   %5 = getelementptr %struct.sk_buff_head.2013655, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = freeze i32 %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr %struct.sk_buff_head.2013655, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

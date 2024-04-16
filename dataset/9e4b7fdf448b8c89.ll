@@ -38,7 +38,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
-  %6 = add i128 %0, %5
+  %6 = add i128 %5, %0
   %7 = shl i128 %6, 40
   ret i128 %7
 }

@@ -7,7 +7,7 @@ entry:
   %3 = freeze i8 %2
   %4 = icmp slt i8 %3, 0
   %5 = icmp ult i8 %1, 26
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = freeze i32 %2
   %4 = icmp ugt i32 %3, 59
   %5 = icmp ugt i32 %1, 23
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -63,7 +63,7 @@ entry:
   %3 = freeze i32 %2
   %4 = icmp eq i32 %3, 3831
   %5 = icmp ne i4 %1, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -77,7 +77,7 @@ entry:
   %3 = freeze i32 %2
   %4 = icmp ne i32 %3, 1
   %5 = icmp ne i4 %1, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
 }

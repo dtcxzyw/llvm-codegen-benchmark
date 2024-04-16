@@ -9,7 +9,7 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = shl nsw i32 -1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

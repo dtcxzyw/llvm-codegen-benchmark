@@ -229,9 +229,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 584400, i32 584388
-  %2 = zext nneg i32 %1 to i64
-  ret i64 %2
+  %1 = select i1 %0, i64 584400, i64 584388
+  ret i64 %1
 }
 
 ; 2 occurrences:
@@ -240,9 +239,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 -1, i32 1
-  %2 = zext i32 %1 to i64
-  ret i64 %2
+  %1 = select i1 %0, i64 4294967295, i64 1
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

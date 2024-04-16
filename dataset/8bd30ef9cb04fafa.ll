@@ -15,8 +15,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = xor i64 %2, 1
-  %4 = select i1 %1, i64 %2, i64 %3
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i64
+  %4 = xor i64 %3, %2
   %5 = getelementptr inbounds [2 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }

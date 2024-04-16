@@ -8,12 +8,10 @@
 ; Function Attrs: nounwind
 define i8 @func00000000000001d2(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i64
-  %2 = add nuw nsw i64 %1, 1
-  %3 = icmp ult i8 %0, 4
-  %4 = select i1 %3, i64 %2, i64 0
-  %5 = trunc nuw i64 %4 to i8
-  ret i8 %5
+  %1 = add i8 %0, 1
+  %2 = icmp ult i8 %0, 4
+  %3 = select i1 %2, i8 %1, i8 0
+  ret i8 %3
 }
 
 ; 6 occurrences:
@@ -26,12 +24,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000001d0(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i64
-  %2 = add nuw nsw i64 %1, 1
-  %3 = icmp ult i8 %0, 4
-  %4 = select i1 %3, i64 %2, i64 0
-  %5 = trunc i64 %4 to i8
-  ret i8 %5
+  %1 = add i8 %0, 1
+  %2 = icmp ult i8 %0, 4
+  %3 = select i1 %2, i8 %1, i8 0
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

@@ -8,11 +8,10 @@
 define ptr @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %1)
-  %3 = tail call noundef i64 @llvm.umax.i64(i64 %2, i64 8)
-  %4 = icmp sgt i64 %3, -1
-  %5 = zext i1 %4 to i64
-  %6 = inttoptr i64 %5 to ptr
-  ret ptr %6
+  %3 = icmp sgt i64 %2, -1
+  %4 = zext i1 %3 to i64
+  %5 = inttoptr i64 %4 to ptr
+  ret ptr %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

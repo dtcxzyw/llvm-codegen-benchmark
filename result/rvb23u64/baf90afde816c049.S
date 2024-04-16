@@ -17,9 +17,9 @@ func00000000000001c4:                   # @func00000000000001c4
 	and	a0, a0, a1
 	ret
 func00000000000005c4:                   # @func00000000000005c4
-	andi	a1, a1, 255
+	andi	a1, a1, 120
 	addi	a1, a1, -48
-	sltiu	a1, a1, 8
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

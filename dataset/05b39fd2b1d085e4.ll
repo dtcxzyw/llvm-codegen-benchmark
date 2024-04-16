@@ -7,8 +7,8 @@ define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %2, i64 0
-  %5 = add i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -22,8 +22,8 @@ define ptr @func0000000000000031(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %2, i64 0
-  %5 = add i64 %4, %1
-  %6 = getelementptr inbounds { double, double }, ptr %0, i64 %5
+  %5 = getelementptr { double, double }, ptr %0, i64 %4
+  %6 = getelementptr { double, double }, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -36,8 +36,8 @@ define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %2, i64 0
-  %5 = add nsw i64 %4, %1
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  %5 = getelementptr double, ptr %0, i64 %4
+  %6 = getelementptr double, ptr %5, i64 %1
   ret ptr %6
 }
 

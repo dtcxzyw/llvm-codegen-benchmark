@@ -10,8 +10,9 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	srl	a0, a0, a1
 	sext.w	a1, a0
-	li	a0, 10
-	bgeu	a1, a0, .LBB1_2
+	li	a2, 10
 	li	a0, 1
+	bltu	a1, a2, .LBB1_2
+	li	a0, 10
 .LBB1_2:                                # %entry
 	ret

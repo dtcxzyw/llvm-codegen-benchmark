@@ -11,10 +11,10 @@
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
-  %3 = shl nuw i32 1, %2
-  %4 = add i32 %3, -1
-  %5 = and i32 %0, %4
-  ret i32 %5
+  %notmask = shl nsw i32 -1, %2
+  %3 = xor i32 %notmask, -1
+  %4 = and i32 %3, %0
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -25,10 +25,10 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
-  %3 = shl nuw nsw i64 1, %2
-  %4 = add nsw i64 %3, -1
-  %5 = and i64 %0, %4
-  ret i64 %5
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = and i64 %3, %0
+  ret i64 %4
 }
 
 ; 5 occurrences:
@@ -43,7 +43,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = shl i64 2, %2
   %4 = add i64 %3, -1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

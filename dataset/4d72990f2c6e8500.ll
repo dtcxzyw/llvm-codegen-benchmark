@@ -16,7 +16,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 4)
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   %5 = add i32 %1, %2
   %6 = xor i32 %4, %5
   ret i32 %6

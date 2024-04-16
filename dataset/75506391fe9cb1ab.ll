@@ -7,7 +7,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 4
   %3 = getelementptr i8, ptr %0, i64 -8
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 8
   %4 = getelementptr inbounds i8, ptr %3, i64 %2
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = shl nsw i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 8
   %4 = getelementptr inbounds i8, ptr %3, i64 %2
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = shl i64 %1, 3
   %3 = getelementptr i8, ptr %0, i64 -4
   %4 = getelementptr i8, ptr %3, i64 %2
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

@@ -14,7 +14,7 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000f:                   # @func000000000000000f
 	srli	a2, a2, 32
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1

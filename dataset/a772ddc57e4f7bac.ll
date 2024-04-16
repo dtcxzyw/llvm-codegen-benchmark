@@ -187,11 +187,9 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 3
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 4611686018427387900
-  %4 = shl i64 %3, 3
-  ret i64 %4
+  %1 = add i64 %0, 8
+  %2 = and i64 %1, -32
+  ret i64 %2
 }
 
 ; 13 occurrences:
@@ -211,11 +209,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 3
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 4611686018427387900
-  %4 = shl nuw i64 %3, 3
-  ret i64 %4
+  %1 = add i64 %0, 8
+  %2 = and i64 %1, -32
+  ret i64 %2
 }
 
 ; 13 occurrences:
@@ -235,11 +231,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 1
-  %2 = add nuw i64 %1, 1
-  %3 = and i64 %2, -16
-  %4 = shl i64 %3, 1
-  ret i64 %4
+  %1 = add i64 %0, 2
+  %2 = and i64 %1, -32
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -248,11 +242,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 4294967295
-  %4 = shl nuw nsw i64 %3, 2
-  ret i64 %4
+  %1 = lshr exact i64 %0, 1
+  %2 = add nuw i64 %1, 4
+  %3 = and i64 %2, 17179869180
+  ret i64 %3
 }
 
 ; 26 occurrences:
@@ -285,11 +278,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 1
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 4611686018427387896
-  %4 = shl nuw nsw i64 %3, 1
-  ret i64 %4
+  %1 = add i64 %0, 2
+  %2 = and i64 %1, 9223372036854775792
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -297,11 +288,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 1
-  %2 = add nuw i64 %1, 1
-  %3 = and i64 %2, -16
-  %4 = shl i64 %3, 1
-  ret i64 %4
+  %1 = add i64 %0, 2
+  %2 = and i64 %1, -32
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -309,11 +298,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 2
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 9223372036854775800
-  %4 = shl i64 %3, 2
-  ret i64 %4
+  %1 = add i64 %0, 4
+  %2 = and i64 %1, -32
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

@@ -52,7 +52,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %4, -1
-  %6 = mul nuw i32 %0, %5
+  %6 = mul nuw i32 %5, %0
   ret i32 %6
 }
 

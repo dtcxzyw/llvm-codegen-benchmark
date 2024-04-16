@@ -1,8 +1,7 @@
 func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret

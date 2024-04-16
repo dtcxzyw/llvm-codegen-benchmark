@@ -1,24 +1,17 @@
 func0000000000000011:                   # @func0000000000000011
-	seqz	a0, a0
-	and	a0, a0, a1
-	czero.eqz	a0, a2, a0
-	seqz	a0, a0
+	xori	a1, a1, 1
+	snez	a0, a0
+	seqz	a2, a2
+	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 .LCPI1_0:
-	.quad	9223372036854775                # 0x20c49ba5e353f7
+	.quad	9223372036854774                # 0x20c49ba5e353f6
 func000000000000006a:                   # @func000000000000006a
-	andi	a1, a1, 1
-	bseti	a3, zero, 63
-	lui	a4, %hi(.LCPI1_0)
-	ld	a4, %lo(.LCPI1_0)(a4)
-	czero.nez	a3, a3, a1
-	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
-	slt	a0, a0, a4
-	czero.eqz	a1, a1, a0
-	li	a2, -1
-	srli	a2, a2, 1
-	czero.nez	a0, a2, a0
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
+	slt	a0, a3, a0
+	sgtz	a2, a2
+	and	a1, a1, a2
 	or	a0, a0, a1
-	sgtz	a0, a0
 	ret

@@ -11,7 +11,7 @@ entry:
   %4 = tail call double @llvm.fmuladd.f64(double %0, double %3, double %1)
   %5 = bitcast double %4 to i64
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

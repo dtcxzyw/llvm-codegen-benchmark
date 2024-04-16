@@ -6,9 +6,9 @@
 define i1 @func00000000000000a1(i32 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -336
-  %3 = icmp sgt i32 %0, 0
-  %4 = select i1 %3, ptr %2, ptr null
-  %5 = icmp eq ptr %4, null
+  %3 = icmp slt i32 %0, 1
+  %4 = icmp eq ptr %2, null
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 

@@ -11,8 +11,8 @@
 define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = icmp eq i32 %4, 0
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %3, i1 true, i1 %4
   %6 = select i1 %5, i64 0, i64 17
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7

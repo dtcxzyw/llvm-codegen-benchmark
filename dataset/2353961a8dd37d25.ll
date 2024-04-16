@@ -26,7 +26,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 60, i64 36
   %4 = select i1 %1, i64 44, i64 %3
-  %5 = mul nuw nsw i64 %0, %4
+  %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
 

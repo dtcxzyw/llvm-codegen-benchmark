@@ -7,9 +7,10 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	not	a1, a0
-	srliw	a1, a1, 31
-	and	a0, a0, a1
+	sext.w	a1, a0
+	andi	a0, a0, 1
+	slti	a1, a1, 0
+	czero.nez	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.h	a1, a0

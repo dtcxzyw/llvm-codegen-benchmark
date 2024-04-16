@@ -193,7 +193,7 @@ define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = getelementptr inbounds %"class.std::__cxx11::basic_string.1565005", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -398,7 +398,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -411,7 +411,7 @@ define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -438,7 +438,7 @@ define i1 @func0000000000000034(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -455,7 +455,7 @@ define i1 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -467,7 +467,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -501,7 +501,7 @@ define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -513,7 +513,7 @@ define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -524,7 +524,7 @@ define i1 @func0000000000000035(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -535,7 +535,7 @@ define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = getelementptr inbounds i16, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -546,7 +546,7 @@ define i1 @func000000000000003c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 

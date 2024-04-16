@@ -20,12 +20,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = zext i64 %1 to i128
-  %3 = zext i64 %0 to i128
-  %4 = add nuw nsw i128 %3, %2
-  %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %2 = xor i64 %0, -1
+  %add.narrowed.overflow = icmp ult i64 %2, %1
+  %3 = zext i1 %add.narrowed.overflow to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -33,12 +31,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
-  %2 = zext nneg i64 %1 to i128
-  %3 = zext i32 %0 to i128
-  %4 = add nuw nsw i128 %3, %2
-  %5 = lshr i128 %4, 1
-  %6 = trunc i128 %5 to i32
-  ret i32 %6
+  %2 = zext i32 %0 to i64
+  %3 = add i64 %2, %1
+  %4 = lshr i64 %3, 1
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
 }
 
 ; 3 occurrences:

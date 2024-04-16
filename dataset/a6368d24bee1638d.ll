@@ -76,9 +76,8 @@ define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add i32 %4, -4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, 4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -88,9 +87,8 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add i32 %4, -1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, 1
+  ret i1 %5
 }
 
 ; 2 occurrences:

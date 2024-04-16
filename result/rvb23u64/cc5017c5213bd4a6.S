@@ -20,12 +20,11 @@ func00000000000002cc:                   # @func00000000000002cc
 	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
-	addi	a1, a1, 15
-	andi	a1, a1, -16
-	sltiu	a1, a1, 64
+	addi	a1, a1, -49
+	sltiu	a1, a1, -64
 	sltiu	a0, a0, 96
-	or	a0, a0, a1
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	addi	a1, a1, 2031

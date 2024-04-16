@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -4
-  %2 = add i32 %1, 4
-  %3 = lshr i32 %2, 24
-  %4 = and i32 %3, 1
-  ret i32 %4
+  %1 = add i32 %0, 4
+  %2 = lshr i32 %1, 24
+  %3 = and i32 %2, 1
+  ret i32 %3
 }
 
 ; 5 occurrences:

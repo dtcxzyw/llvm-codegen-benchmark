@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	lui	a1, 400520
+	lui	a1, 8
 	addi	a1, a1, 1607
 	add	a0, a0, a1
 	slli	a0, a0, 48
@@ -13,8 +13,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000e:                   # @func000000000000000e
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	li	a1, 9
+	slli	a1, a1, 10
 	add	a0, a0, a1
 	slli	a0, a0, 46
 	srli	a0, a0, 58
@@ -51,15 +51,13 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
-	addi	a0, a0, -2048
-	addi	a0, a0, -2048
+	lui	a1, 262143
+	add	a0, a0, a1
 	slli	a0, a0, 34
 	srli	a0, a0, 46
 	ret
 func000000000000001a:                   # @func000000000000001a
-	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	xori	a1, a1, 1024
 	add	a0, a0, a1
 	slli	a0, a0, 53
 	srli	a0, a0, 58

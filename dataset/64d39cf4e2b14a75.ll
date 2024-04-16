@@ -46,9 +46,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
-  %2 = lshr i8 %1, 4
-  %3 = or i8 %2, %1
-  %4 = lshr i8 %3, 1
+  %2 = lshr i8 %1, 5
+  %3 = lshr i8 %1, 1
+  %4 = or i8 %2, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }

@@ -10,7 +10,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 7
   %4 = lshr i32 %1, 6
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = add nuw nsw i32 %5, %3
   ret i32 %6
 }
@@ -24,7 +24,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 7
   %4 = lshr i32 %1, 7
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   %6 = add nuw i32 %5, %3
   ret i32 %6
 }
@@ -39,7 +39,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 1
   %4 = lshr i32 %1, 5
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = add i32 %5, %3
   ret i32 %6
 }

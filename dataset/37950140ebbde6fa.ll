@@ -7,7 +7,7 @@
 define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = tail call noundef i32 @llvm.bswap.i32(i32 %5)
   ret i32 %6
@@ -27,7 +27,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = tail call noundef i32 @llvm.bswap.i32(i32 %5)
   ret i32 %6
@@ -40,7 +40,7 @@ entry:
 define i16 @func000000000000001e(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 10
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = or disjoint i16 %4, %0
   %6 = tail call i16 @llvm.bswap.i16(i16 %5)
   ret i16 %6
@@ -58,7 +58,7 @@ declare i16 @llvm.bswap.i16(i16) #1
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, %0
   %6 = call i32 @llvm.bswap.i32(i32 %5)
   ret i32 %6
@@ -71,7 +71,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, %0
   %6 = tail call i32 @llvm.bswap.i32(i32 %5)
   ret i32 %6

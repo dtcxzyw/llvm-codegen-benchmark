@@ -12,9 +12,8 @@
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp sgt i32 %3, -1
-  ret i1 %4
+  %3 = icmp sle i32 %2, %0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -53,9 +52,8 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp slt i32 %3, 1
-  ret i1 %4
+  %3 = icmp sge i32 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -95,9 +93,8 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = sub i32 %0, %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

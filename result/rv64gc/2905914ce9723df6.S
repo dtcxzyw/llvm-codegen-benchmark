@@ -7,10 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	slli	a0, a0, 63
-	srai	a0, a0, 63
+	slti	a1, a1, 0
 	and	a0, a0, a1
-	srli	a0, a0, 63
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
@@ -21,12 +19,9 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a0, a1, 3
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	slli	a1, a2, 48
-	srli	a1, a1, 48
-.LBB3_2:                                # %entry
-	sltiu	a0, a1, -1
+	sltiu	a1, a1, -1
+	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 1

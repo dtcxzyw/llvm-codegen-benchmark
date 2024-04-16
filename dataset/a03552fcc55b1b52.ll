@@ -16,9 +16,9 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -32
-  %3 = icmp uge i32 %2, %0
-  %4 = select i1 %3, i32 0, i32 %2
-  ret i32 %4
+  %.not = icmp ult i32 %2, %0
+  %3 = select i1 %.not, i32 %2, i32 0
+  ret i32 %3
 }
 
 ; 1 occurrences:

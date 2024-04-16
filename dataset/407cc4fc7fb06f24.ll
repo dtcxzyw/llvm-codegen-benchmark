@@ -41,9 +41,8 @@ define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 19 occurrences:
@@ -71,9 +70,8 @@ define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -86,9 +84,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [8 x %struct.USBHubPort.1661024], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 72
-  ret ptr %5
+  %4 = getelementptr [8 x %struct.USBHubPort.1661024], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 50 occurrences:
@@ -147,9 +144,8 @@ define ptr @func000000000000000d(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  ret ptr %5
+  %4 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %0, i64 0, i64 %3, i32 5
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -160,9 +156,8 @@ define ptr @func000000000000001d(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [16 x %struct.pmp_entry_t.1666671], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [16 x %struct.pmp_entry_t.1666671], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -192,9 +187,8 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [4 x %"struct.msdfgen::Vector2.1908776"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [4 x %"struct.msdfgen::Vector2.1908776"], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -229,9 +223,8 @@ define ptr @func0000000000000009(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [11 x %struct.free_area.1998947], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 64
-  ret ptr %5
+  %4 = getelementptr [11 x %struct.free_area.1998947], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -241,9 +234,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -8
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [12 x %struct.snd_interval.2000609], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [12 x %struct.snd_interval.2000609], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -280,9 +272,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [1 x %union.UValue.2179545], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [1 x %union.UValue.2179545], ptr %0, i64 0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -293,9 +284,8 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.694.2273533"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %4 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.694.2273533"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

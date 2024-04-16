@@ -18,10 +18,9 @@
 define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = add nsw i64 %3, -1
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = add nsw i64 %2, -1
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -31,10 +30,9 @@ entry:
 define i1 @func0000000000000054(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = sub nsw i128 %2, %0
-  %4 = add nsw i128 %3, -1
-  %5 = icmp ult i128 %4, 15
-  ret i1 %5
+  %3 = sub i128 %0, %2
+  %4 = icmp ugt i128 %3, -16
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -48,10 +46,9 @@ entry:
 define i1 @func0000000000000151(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = add nsw i64 %3, -1
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = add nsw i64 %2, -1
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:

@@ -45,8 +45,9 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	ret
 func0000000000000052:                   # @func0000000000000052
-	not	a1, a1
 	srliw	a1, a1, 31
+	slli	a1, a1, 31
+	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000043:                   # @func0000000000000043

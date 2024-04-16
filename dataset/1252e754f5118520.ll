@@ -178,12 +178,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 2047
-  %4 = icmp eq i32 %3, 0
-  %5 = or disjoint i64 %0, 4503599627370496
-  %6 = select i1 %4, i64 %0, i64 %5
-  ret i64 %6
+  %2 = and i64 %1, 2047
+  %3 = icmp eq i64 %2, 0
+  %4 = or disjoint i64 %0, 4503599627370496
+  %5 = select i1 %3, i64 %0, i64 %4
+  ret i64 %5
 }
 
 ; 9 occurrences:
@@ -199,12 +198,11 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000071(i128 %0, i64 %1) #0 {
 entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, 2047
-  %4 = icmp eq i32 %3, 0
-  %5 = or disjoint i128 %0, 4503599627370496
-  %6 = select i1 %4, i128 %0, i128 %5
-  ret i128 %6
+  %2 = and i64 %1, 2047
+  %3 = icmp eq i64 %2, 0
+  %4 = or disjoint i128 %0, 4503599627370496
+  %5 = select i1 %3, i128 %0, i128 %4
+  ret i128 %5
 }
 
 attributes #0 = { nounwind }

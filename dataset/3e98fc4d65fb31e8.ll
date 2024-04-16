@@ -28,9 +28,8 @@ define ptr @func0000000000000005(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr [2 x %struct.TimedAverageWindow.1666295], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.TimedAverageWindow.1666295], ptr %3, i64 0, i64 %2, i32 3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -40,9 +39,8 @@ define ptr @func0000000000000006(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 14920
-  %4 = getelementptr inbounds [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.1745967], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 12 occurrences:
@@ -63,9 +61,8 @@ define ptr @func0000000000000007(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr inbounds [3 x %"struct.duckdb::UnifiedVectorFormat.1823835"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [3 x %"struct.duckdb::UnifiedVectorFormat.1823835"], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -76,9 +73,8 @@ define ptr @func0000000000000004(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 24
-  %4 = getelementptr [2 x %struct.ssh_peer_data.1930667], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 72
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.ssh_peer_data.1930667], ptr %3, i64 0, i64 %2, i32 10, i64 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -88,9 +84,8 @@ define ptr @func0000000000000001(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 736
-  %4 = getelementptr [11 x %struct.resource.1995186], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [11 x %struct.resource.1995186], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

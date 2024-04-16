@@ -8,8 +8,8 @@ define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 24
   %3 = sub nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 24
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 24
   ret ptr %5
 }
 
@@ -21,8 +21,8 @@ define ptr @func0000000000000014(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 24
   %3 = sub nuw i64 %1, %2
-  %4 = add nuw i64 %3, 24
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 24
   ret ptr %5
 }
 
@@ -48,8 +48,8 @@ define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 24
   %3 = sub nuw i64 %1, %2
-  %4 = add i64 %3, 24
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 24
   ret ptr %5
 }
 

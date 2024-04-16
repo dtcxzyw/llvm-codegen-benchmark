@@ -45,7 +45,7 @@ declare i64 @llvm.fshl.i64(i64, i64, i64) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.fshl.i64(i64 %0, i64 %0, i64 52)
+  %1 = lshr i64 %0, 12
   %2 = and i64 %1, 63
   ret i64 %2
 }

@@ -5,18 +5,21 @@ func000000000000001b:                   # @func000000000000001b
 	addiw	a0, a0, -64
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	a1, a1, -14
-	slliw	a1, a1, 9
+	slli	a1, a1, 9
+	li	a2, -7
+	slli	a2, a2, 10
+	addw	a1, a1, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a1, a1, -1
-	slliw	a1, a1, 16
+	slli	a1, a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	or	a0, a0, a1
+	lui	a1, 1048560
+	addw	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	slli	a1, a1, 3

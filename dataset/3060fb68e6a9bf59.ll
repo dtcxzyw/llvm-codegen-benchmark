@@ -7,11 +7,10 @@
 define i1 @func000000000000008c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = lshr i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, 3
-  %6 = icmp ne i32 %5, 0
-  ret i1 %6
+  %3 = shl i64 3, %2
+  %4 = and i64 %3, %0
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 ; 274 occurrences:
@@ -293,11 +292,10 @@ entry:
 define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, 15
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = shl i64 15, %2
+  %4 = and i64 %3, %0
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 7 occurrences:
@@ -313,10 +311,9 @@ define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, 15
-  %6 = icmp ult i32 %5, 10
-  ret i1 %6
+  %4 = and i64 %3, 14
+  %5 = icmp ult i64 %4, 10
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -325,11 +322,10 @@ entry:
 define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, 31
-  %6 = icmp ugt i32 %5, 15
-  ret i1 %6
+  %3 = shl i64 16, %2
+  %4 = and i64 %3, %0
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

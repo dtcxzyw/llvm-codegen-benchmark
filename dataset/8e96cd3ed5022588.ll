@@ -1,8 +1,4 @@
 
-%"class.folly::basic_fbstring.1639853" = type { %"class.folly::fbstring_core.1639854" }
-%"class.folly::fbstring_core.1639854" = type { %union.anon.299.1639855 }
-%union.anon.299.1639855 = type { %"struct.folly::fbstring_core<char>::MediumLarge.1639856" }
-%"struct.folly::fbstring_core<char>::MediumLarge.1639856" = type { ptr, i64, i64 }
 %"class.openvdb::v11_0::math::Vec3.236.1673474" = type { %"class.openvdb::v11_0::math::Tuple.237.1673475" }
 %"class.openvdb::v11_0::math::Tuple.237.1673475" = type { [3 x float] }
 
@@ -77,10 +73,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = getelementptr inbounds %"class.folly::basic_fbstring.1639853", ptr %1, i64 %3
-  %5 = getelementptr inbounds [24 x i8], ptr %4, i64 0, i64 %0
-  ret ptr %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr inbounds [24 x i8], ptr %3, i64 0, i64 %0
+  ret ptr %4
 }
 
 ; 1 occurrences:

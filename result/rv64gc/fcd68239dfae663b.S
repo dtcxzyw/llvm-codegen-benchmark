@@ -116,10 +116,9 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000191:                   # @func0000000000000191
 	andi	a2, a1, 255
-	li	a3, 39
-	li	a1, 34
-	bne	a2, a3, .LBB12_2
 	li	a1, 39
+	beq	a2, a1, .LBB12_2
+	li	a1, 34
 .LBB12_2:                               # %entry
 	andi	a0, a0, 255
 	xor	a0, a0, a1

@@ -34,8 +34,8 @@
 define i32 @func0000000000000038(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 11
-  %4 = select i1 %1, i32 12, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 12, i64 %4
   %6 = lshr i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
@@ -47,8 +47,8 @@ entry:
 define i32 @func0000000000000018(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
-  %4 = select i1 %1, i32 30, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 30, i64 %4
   %6 = lshr i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7

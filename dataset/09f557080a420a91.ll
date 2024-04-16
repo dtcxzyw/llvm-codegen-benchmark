@@ -8,8 +8,8 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = sub nsw i128 %1, %3
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = and i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 12
   %6 = trunc i64 %5 to i32
-  %7 = and i32 %0, %6
+  %7 = and i32 %6, %0
   ret i32 %7
 }
 

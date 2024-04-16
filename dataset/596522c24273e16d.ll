@@ -9,7 +9,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, %0
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 256)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add i32 %3, %0
   %5 = call i32 @llvm.umin.i32(i32 %4, i32 512)
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
 }
 

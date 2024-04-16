@@ -9,7 +9,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

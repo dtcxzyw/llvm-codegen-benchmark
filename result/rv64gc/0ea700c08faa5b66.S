@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa1
 .LBB0_2:                                # %entry
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.quad	0x3fc999999999999a              # double 0.20000000000000001
@@ -18,5 +18,5 @@ func0000000000000004:                   # @func0000000000000004
 	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa1
 .LBB1_2:                                # %entry
-	fadd.d	fa0, fa0, fa5
+	fadd.d	fa0, fa5, fa0
 	ret

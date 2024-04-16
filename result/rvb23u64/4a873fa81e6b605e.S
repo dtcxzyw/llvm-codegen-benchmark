@@ -74,12 +74,14 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1
-	lui	a2, 1048560
-	addiw	a2, a2, -1131
-	czero.nez	a2, a2, a1
+	lui	a2, 16
+	addiw	a2, a2, 1131
+	czero.eqz	a2, a2, a1
+	lui	a3, 49
+	addiw	a3, a3, -704
+	add	a2, a2, a3
 	lui	a3, 65
 	addiw	a3, a3, 427
-	add	a2, a2, a3
 	sltu	a1, a3, a1
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

@@ -10,8 +10,8 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ne i8 %1, 0
   %5 = and i1 %4, %3
-  %6 = select i1 %5, i8 0, i8 %0
-  %7 = and i8 %6, 1
+  %6 = and i8 %0, 1
+  %7 = select i1 %5, i8 0, i8 %6
   ret i8 %7
 }
 
@@ -23,8 +23,8 @@ entry:
   %3 = icmp eq i16 %2, 1
   %4 = icmp eq i8 %1, 0
   %5 = and i1 %4, %3
-  %6 = select i1 %5, i8 1, i8 %0
-  %7 = and i8 %6, 1
+  %6 = and i8 %0, 1
+  %7 = select i1 %5, i8 1, i8 %6
   ret i8 %7
 }
 
@@ -36,8 +36,8 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i64 %1, 9218868437227405312
   %5 = and i1 %4, %3
-  %6 = select i1 %5, i64 0, i64 %0
-  %7 = and i64 %6, 9218868437227405312
+  %6 = and i64 %0, 9218868437227405312
+  %7 = select i1 %5, i64 0, i64 %6
   ret i64 %7
 }
 

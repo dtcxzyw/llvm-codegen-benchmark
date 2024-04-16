@@ -11,12 +11,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 16384
-  %4 = icmp ne i32 %3, 0
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
+  %2 = and i64 %1, 16384
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 5 occurrences:
@@ -28,12 +27,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 6291456
-  %4 = icmp eq i32 %3, 4194304
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
+  %2 = and i64 %1, 6291456
+  %3 = icmp eq i64 %2, 4194304
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 73 occurrences:
@@ -113,12 +111,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i128 %1) #0 {
 entry:
-  %2 = trunc i128 %1 to i64
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
+  %2 = and i128 %1, 4294967295
+  %3 = icmp ne i128 %2, 0
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -126,12 +123,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ne i64 %0, 0
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
+  %2 = and i64 %1, 1
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp ne i64 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -144,12 +140,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000021c(i32 %0, i128 %1) #0 {
 entry:
-  %2 = trunc nuw i128 %1 to i64
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
+  %2 = and i128 %1, 4294967295
+  %3 = icmp ne i128 %2, 0
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

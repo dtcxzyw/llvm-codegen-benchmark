@@ -18,10 +18,9 @@
 define i64 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = and i64 %0, -5
-  %2 = icmp ne i64 %1, 0
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  ret i64 %4
+  %.not = icmp eq i64 %1, 0
+  %2 = zext i1 %.not to i64
+  ret i64 %2
 }
 
 ; 26 occurrences:
@@ -55,10 +54,9 @@ entry:
 define i64 @func0000000000000002(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -2
-  %2 = icmp eq i8 %1, 68
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  ret i64 %4
+  %2 = icmp ne i8 %1, 68
+  %3 = zext i1 %2 to i64
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -69,10 +67,9 @@ entry:
 define i64 @func0000000000000010(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
-  %2 = icmp ugt i32 %1, 2
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  ret i64 %4
+  %2 = icmp ult i32 %1, 3
+  %3 = zext i1 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

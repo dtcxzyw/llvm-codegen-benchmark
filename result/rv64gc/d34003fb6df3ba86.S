@@ -1,9 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a2, 3
-	addi	a2, a2, -3
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	xori	a1, a1, 3
-	and	a0, a0, a1
+	andi	a3, a2, 3
+	li	a2, 3
+	beq	a3, a2, .LBB0_2
+	xori	a2, a1, 3
+.LBB0_2:                                # %entry
+	and	a0, a0, a2
 	ret

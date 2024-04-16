@@ -14,9 +14,8 @@ define i1 @func0000000000000016(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 31
-  %4 = sub nsw i8 %3, %0
-  %5 = icmp slt i8 %4, 0
-  ret i1 %5
+  %4 = icmp slt i8 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -59,9 +58,8 @@ define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 31
-  %4 = sub nsw i8 %3, %0
-  %5 = icmp eq i8 %4, 0
-  ret i1 %5
+  %4 = icmp eq i8 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -74,9 +72,8 @@ define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 16777215
-  %4 = sub nsw i32 %3, %0
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp sgt i32 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

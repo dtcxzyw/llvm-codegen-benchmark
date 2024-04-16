@@ -13,7 +13,7 @@ entry:
   %3 = fadd float %1, %2
   %4 = fadd float %3, %0
   %5 = fdiv float 1.000000e+00, %4
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

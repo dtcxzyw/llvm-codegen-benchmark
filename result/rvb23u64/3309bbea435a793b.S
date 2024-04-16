@@ -7,11 +7,10 @@ func0000000000000008:                   # @func0000000000000008
 	xor	a1, a1, a2
 	and	a0, a0, a1
 	ret
-.LCPI1_0:
-	.quad	-9089707755183418291            # 0x81dadef4bc2dd44d
 func0000000000000000:                   # @func0000000000000000
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
+	lui	a3, 770781
+	addi	a3, a3, 1101
+	zext.w	a3, a3
 	mul	a2, a2, a3
 	xor	a1, a1, a2
 	and	a0, a0, a1

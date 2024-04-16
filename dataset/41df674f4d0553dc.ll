@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = sub nsw i64 %3, %1
+  %3 = xor i64 %1, -1
+  %4 = add i64 %3, %2
   %5 = getelementptr inbounds i8, ptr %0, i64 4
   %6 = getelementptr inbounds [128 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6

@@ -153,7 +153,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 5
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i32 %0, i32 60
   ret i32 %5
 }

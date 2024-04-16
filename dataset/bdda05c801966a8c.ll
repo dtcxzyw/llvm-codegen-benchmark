@@ -8,9 +8,8 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 17
   %3 = and i32 %0, 65528
-  %4 = sub nsw i32 %3, %2
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp ugt i32 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:

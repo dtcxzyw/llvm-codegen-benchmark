@@ -102,8 +102,8 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000039:                   # @func0000000000000039
 	sext.w	a1, a1
 	addi	a2, a2, 768
-	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
 	addi	a0, a0, 40
 	ret

@@ -28,8 +28,8 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, i64 %3, i64 %0
-  %6 = add i64 %5, 1
-  %7 = icmp ugt i64 %6, -9
+  %6 = add i64 %5, 9
+  %7 = icmp ult i64 %6, 8
   ret i1 %7
 }
 

@@ -18,7 +18,7 @@
 define ptr @func0000000000000007(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   %7 = getelementptr inbounds i8, ptr %6, i64 -2
@@ -31,7 +31,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
@@ -45,7 +45,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr inbounds i8, ptr %6, i64 19
@@ -66,7 +66,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds %struct.stbtt_vertex.1833224, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 14
@@ -79,11 +79,10 @@ entry:
 define ptr @func0000000000000009(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.JSVarDef.1908877, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct.JSVarDef.1908877, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -92,7 +91,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
@@ -105,7 +104,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
@@ -118,7 +117,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1

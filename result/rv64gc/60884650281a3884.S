@@ -5,8 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000005:                   # @func0000000000000005
 	subw	a1, a1, a0
-	addi	a0, a1, -64
-	andi	a0, a0, 63
+	andi	a0, a1, 63
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sub	a1, a1, a0
@@ -34,8 +33,7 @@ func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, -2
 	ret
 func0000000000000001:                   # @func0000000000000001
-	subw	a1, a1, a0
-	addi	a0, a1, -8
+	subw	a0, a1, a0
 	andi	a0, a0, 7
 	ret
 func000000000000000d:                   # @func000000000000000d

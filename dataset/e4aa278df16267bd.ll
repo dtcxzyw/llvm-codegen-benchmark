@@ -41,7 +41,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %3, 1
   %5 = sub i32 %4, %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

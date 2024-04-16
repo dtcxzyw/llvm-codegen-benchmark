@@ -17,7 +17,7 @@ define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
   %3 = fptosi double %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 2147483647)
   %6 = icmp sgt i64 %5, %0
   ret i1 %6

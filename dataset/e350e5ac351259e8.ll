@@ -9,10 +9,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 16
-  %2 = or i64 %1, %0
-  %3 = and i64 %2, 281470681808895
-  %4 = shl nuw nsw i64 %3, 8
+  %1 = shl i64 %0, 24
+  %2 = shl i64 %0, 8
+  %3 = or i64 %1, %2
+  %4 = and i64 %3, 72056494543077120
   ret i64 %4
 }
 
@@ -26,10 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 2
-  %2 = or i64 %1, %0
-  %3 = and i64 %2, 3689348814741910323
-  %4 = shl nuw i64 %3, 2
+  %1 = shl i64 %0, 4
+  %2 = shl i64 %0, 2
+  %3 = or i64 %1, %2
+  %4 = and i64 %3, -3689348814741910324
   ret i64 %4
 }
 

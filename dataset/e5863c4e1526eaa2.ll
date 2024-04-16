@@ -8,7 +8,7 @@ entry:
   %2 = add i16 %0, %1
   %3 = sub i16 4660, %2
   %4 = lshr i16 %3, 8
-  %5 = trunc i16 %4 to i8
+  %5 = trunc nuw i16 %4 to i8
   ret i8 %5
 }
 

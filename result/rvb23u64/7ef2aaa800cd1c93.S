@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.l	fa5, a0
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	ret

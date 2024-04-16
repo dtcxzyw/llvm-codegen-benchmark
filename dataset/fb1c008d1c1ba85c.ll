@@ -10,7 +10,7 @@ define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
   %4 = lshr i64 -1, %3
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }

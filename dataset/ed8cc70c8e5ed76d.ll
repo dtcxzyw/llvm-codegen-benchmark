@@ -181,7 +181,7 @@ entry:
   %3 = mul nuw nsw i128 %2, 10
   %4 = add nuw nsw i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -217,7 +217,7 @@ define i8 @func000000000000007a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 29
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = lshr i32 %4, 8
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
@@ -233,7 +233,7 @@ entry:
   %3 = mul nuw i128 %2, 10000000000000000000
   %4 = add nuw i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -244,9 +244,9 @@ define i64 @func00000000000000f8(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
   %3 = mul nuw nsw i128 %2, 11392378155556871081
-  %4 = add nuw nsw i128 %0, %3
+  %4 = add nuw nsw i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 

@@ -13,8 +13,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = sdiv exact i64 %3, 1056
-  %5 = add nsw i64 %4, -1
-  %6 = shl nuw nsw i64 %5, 3
+  %5 = shl nsw i64 %4, 3
+  %6 = add nsw i64 %5, -8
   ret i64 %6
 }
 

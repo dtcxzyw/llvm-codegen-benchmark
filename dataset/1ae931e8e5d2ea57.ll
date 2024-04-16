@@ -348,9 +348,8 @@
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 32
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 14 occurrences:
@@ -372,9 +371,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %"class.std::__1::tuple.1556134", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 9 occurrences:
@@ -423,9 +421,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = getelementptr inbounds %"class.cvc5::internal::theory::eq::EqualityEngine::EqualityEdge.2033021", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds %"class.cvc5::internal::theory::eq::EqualityEngine::EqualityEdge.2033021", ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -6,11 +6,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp ne i32 %3, 0
-  %5 = and i32 %0, 128
-  %6 = icmp ne i32 %5, 0
-  %7 = select i1 %6, i1 %4, i1 false
+  %3 = icmp ne i32 %2, 0
+  %4 = and i32 %0, 128
+  %5 = icmp ne i32 %4, 0
+  %6 = select i1 %5, i1 %1, i1 false
+  %7 = select i1 %6, i1 %3, i1 false
   ret i1 %7
 }
 

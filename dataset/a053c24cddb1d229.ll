@@ -48,8 +48,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %0, 255
-  %4 = icmp eq i32 %3, %2
+  %3 = xor i32 %2, %0
+  %4 = icmp eq i32 %3, 255
   ret i1 %4
 }
 
@@ -59,8 +59,8 @@ entry:
 define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = xor i32 %0, 15
-  %4 = icmp eq i32 %3, %2
+  %3 = xor i32 %2, %0
+  %4 = icmp eq i32 %3, 15
   ret i1 %4
 }
 

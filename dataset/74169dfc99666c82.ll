@@ -18,7 +18,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -30,7 +30,7 @@ define i1 @func0000000000000018(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = udiv i8 %1, %2
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -42,7 +42,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -74,7 +74,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -88,7 +88,7 @@ define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

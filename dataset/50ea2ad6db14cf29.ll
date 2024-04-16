@@ -14,9 +14,9 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 8
-  %5 = or disjoint i32 %4, %0
-  %6 = and i32 %5, -131073
-  ret i32 %6
+  %.masked = and i32 %0, -131073
+  %5 = or i32 %4, %.masked
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

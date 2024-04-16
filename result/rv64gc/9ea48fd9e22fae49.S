@@ -51,7 +51,7 @@ func0000000000000071:                   # @func0000000000000071
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 56
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -133,7 +133,7 @@ func0000000000000031:                   # @func0000000000000031
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 56
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038

@@ -9,9 +9,8 @@ define i1 @func00000000000000da(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 2
-  %4 = sub nsw i32 %3, %0
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp sgt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:

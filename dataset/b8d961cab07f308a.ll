@@ -11,9 +11,9 @@
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = icmp eq i32 %4, 0
+  %3 = icmp ne i32 %0, 0
+  %4 = icmp eq i32 %2, 0
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -25,8 +25,8 @@ define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = icmp ne i32 %4, 0
+  %4 = icmp ne i32 %2, 0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -35,10 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i16 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 15
+  %2 = and i8 %1, 14
   %3 = icmp eq i16 %0, 24576
-  %4 = select i1 %3, i8 %2, i8 0
-  %5 = icmp ugt i8 %4, 1
+  %4 = icmp ne i8 %2, 0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -47,10 +47,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(i8 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 9223372036854775807
-  %3 = icmp slt i8 %0, 0
-  %4 = select i1 %3, i64 %2, i64 23
-  %5 = icmp ult i64 %4, 32
+  %2 = and i64 %1, 9223372036854775776
+  %3 = icmp sgt i8 %0, -1
+  %4 = icmp eq i64 %2, 0
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -59,10 +59,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i8 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 9223372036854775807
-  %3 = icmp slt i8 %0, 0
-  %4 = select i1 %3, i64 %2, i64 23
-  %5 = icmp ugt i64 %4, 1
+  %2 = and i64 %1, 9223372036854775806
+  %3 = icmp sgt i8 %0, -1
+  %4 = icmp ne i64 %2, 0
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -73,8 +73,8 @@ define i1 @func0000000000000061(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = icmp slt i8 %0, 0
-  %4 = select i1 %3, i64 %2, i64 23
-  %5 = icmp eq i64 %4, 0
+  %4 = icmp eq i64 %2, 0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -84,9 +84,9 @@ entry:
 define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = icmp ult i8 %0, 21
-  %4 = select i1 %3, i32 %2, i32 127
-  %5 = icmp eq i32 %4, 127
+  %3 = icmp ugt i8 %0, 20
+  %4 = icmp eq i32 %2, 127
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 

@@ -12,11 +12,9 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32768
-  %3 = and i64 %0, 31744
+  %3 = and i64 %0, 32767
   %4 = or disjoint i64 %3, %2
-  %5 = and i64 %0, 1023
-  %6 = or disjoint i64 %4, %5
-  ret i64 %6
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -24,12 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %0, 1073741823
-  %3 = and i32 %1, 1073741824
-  %4 = or disjoint i32 %3, %2
-  %5 = and i32 %0, -1073741824
-  %6 = or i32 %4, %5
-  ret i32 %6
+  %2 = and i32 %1, 1073741824
+  %3 = or i32 %2, %0
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -40,9 +35,7 @@ entry:
   %2 = and i32 %1, 2
   %3 = and i32 %0, -1026
   %4 = or i32 %3, %2
-  %5 = and i32 %0, -1073741824
-  %6 = or i32 %4, %5
-  ret i32 %6
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

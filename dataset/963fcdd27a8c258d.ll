@@ -11,7 +11,7 @@
 define i64 @func00000000000000a0(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = add nuw i64 %4, %0
   %6 = shl i64 %5, 2
   %7 = add i64 %6, 4
@@ -24,7 +24,7 @@ entry:
 define i64 @func00000000000000fd(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nuw nsw i64 %5, 2
   %7 = add nsw i64 %6, -1
@@ -37,7 +37,7 @@ entry:
 define i64 @func00000000000000ff(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nuw nsw i64 %5, 6
   %7 = add nuw nsw i64 %6, 64
@@ -50,7 +50,7 @@ entry:
 define i64 @func00000000000000a2(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = add nuw i64 %4, %0
   %6 = shl i64 %5, 1
   %7 = add nuw i64 %6, 2

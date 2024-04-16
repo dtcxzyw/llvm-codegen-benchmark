@@ -14,9 +14,8 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = and i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds [2 x [2 x %struct.Nf_Mat_t_.1770555]], ptr %0, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [2 x [2 x %struct.Nf_Mat_t_.1770555]], ptr %0, i64 0, i64 %5, i64 0, i32 2
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

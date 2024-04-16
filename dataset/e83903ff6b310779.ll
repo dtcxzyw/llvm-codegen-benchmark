@@ -10,7 +10,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = shl i32 %4, 8
   %6 = and i32 %5, 253952
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = trunc i24 %3 to i16
   %5 = shl i16 %4, 7
   %6 = and i16 %5, 256
-  %7 = or disjoint i16 %0, %6
+  %7 = or disjoint i16 %6, %0
   ret i16 %7
 }
 

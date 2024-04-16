@@ -10,10 +10,8 @@ define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 %0)
-  %6 = sub nsw i64 %0, %5
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %5 = icmp slt i64 %4, %0
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

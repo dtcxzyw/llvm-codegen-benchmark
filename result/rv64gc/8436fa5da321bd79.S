@@ -19,9 +19,7 @@ func0000000000000018:                   # @func0000000000000018
 	snez	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	bltu	a1, a0, .LBB3_2
-	mv	a0, a1
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008

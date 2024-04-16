@@ -57,9 +57,8 @@ define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = or i32 %3, %0
-  %5 = add nsw i32 %4, -4
-  %6 = icmp ne i32 %5, 0
-  ret i1 %6
+  %5 = icmp ne i32 %4, 4
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -73,9 +72,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = or i64 %0, %3
-  %5 = add i64 %4, 1
-  %6 = icmp ugt i64 %5, 33
+  %4 = or i64 %3, %0
+  %5 = add i64 %4, -33
+  %6 = icmp ult i64 %5, -34
   ret i1 %6
 }
 
@@ -86,8 +85,8 @@ define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
-  %5 = add i32 %4, 4
-  %6 = icmp ugt i32 %5, 7
+  %5 = add i32 %4, -4
+  %6 = icmp ult i32 %5, -8
   ret i1 %6
 }
 
@@ -115,9 +114,8 @@ define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
-  %5 = add nsw i32 %4, -12
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, 12
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -126,10 +124,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %0, %3
-  %5 = add i32 %4, 1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %4 = or i32 %3, %0
+  %5 = icmp eq i32 %4, -1
+  ret i1 %5
 }
 
 ; 1 occurrences:

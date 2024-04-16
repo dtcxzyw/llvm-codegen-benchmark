@@ -30,7 +30,7 @@ entry:
   %4 = zext nneg i16 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 1
   %6 = getelementptr i8, ptr %5, i64 %4
-  %7 = icmp ugt ptr %0, %6
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 

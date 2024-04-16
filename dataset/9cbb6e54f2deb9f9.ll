@@ -8,7 +8,7 @@ entry:
   %2 = add i64 %1, -2
   %3 = udiv i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 

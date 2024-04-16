@@ -8,7 +8,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i8 %1 to i64
   %6 = shl i64 %4, %5
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -19,9 +19,9 @@ define i64 @func0000000000000000(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, 1
   %4 = zext i8 %3 to i64
-  %5 = zext i8 %1 to i64
+  %5 = zext nneg i8 %1 to i64
   %6 = shl i64 %4, %5
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

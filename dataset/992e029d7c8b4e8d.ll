@@ -9,7 +9,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = add i32 %3, 2
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -40,7 +40,7 @@ entry:
 define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = add nsw i32 %3, 10000
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -64,7 +64,7 @@ entry:
 define i64 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, -2
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

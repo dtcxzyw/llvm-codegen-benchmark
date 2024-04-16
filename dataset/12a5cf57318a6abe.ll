@@ -13,7 +13,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -238
   %5 = icmp ult i32 %4, -9
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

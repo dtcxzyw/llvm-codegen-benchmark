@@ -222,10 +222,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 1
-  %5 = getelementptr inbounds i8, ptr %4, i64 %3
+  %2 = getelementptr inbounds i8, ptr %0, i64 1
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr i8, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -1
   ret ptr %5
 }
 
@@ -242,10 +242,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 -1
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %2 = getelementptr i8, ptr %0, i64 -1
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr i8, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -304,10 +304,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 48
-  %5 = getelementptr inbounds %struct.btSymmetricSpatialDyad.1742168, ptr %4, i64 %3
+  %2 = getelementptr i8, ptr %0, i64 48
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr %struct.btSymmetricSpatialDyad.1742168, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 144
   ret ptr %5
 }
 
@@ -335,10 +335,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 24
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %2 = getelementptr inbounds i8, ptr %0, i64 24
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr i8, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -371,10 +371,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 -16
-  %5 = getelementptr double, ptr %4, i64 %3
+  %2 = getelementptr i8, ptr %0, i64 -16
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr double, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 

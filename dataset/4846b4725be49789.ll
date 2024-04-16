@@ -32,11 +32,10 @@ entry:
 define i64 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = lshr exact i64 %3, 3
-  %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
-  %7 = select i1 %6, i64 -1, i64 %0
-  ret i64 %7
+  %4 = and i64 %3, 17179869184
+  %.not = icmp eq i64 %4, 0
+  %5 = select i1 %.not, i64 %0, i64 -1
+  ret i64 %5
 }
 
 ; 3 occurrences:

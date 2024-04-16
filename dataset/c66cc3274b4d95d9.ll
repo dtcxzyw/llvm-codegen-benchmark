@@ -95,10 +95,9 @@ define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
-  %5 = add nsw i64 %4, -1
-  %6 = add nuw i64 %0, 1
-  %7 = icmp eq i64 %6, %5
-  ret i1 %7
+  %5 = add nsw i64 %4, -2
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 10 occurrences:
@@ -117,10 +116,9 @@ define i1 @func0000000000000171(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
-  %5 = add nsw i64 %4, -1
-  %6 = add nuw nsw i64 %0, 1
-  %7 = icmp eq i64 %6, %5
-  ret i1 %7
+  %5 = add nsw i64 %4, -2
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 11 occurrences:
@@ -154,10 +152,9 @@ define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
-  %5 = add nsw i64 %4, -1
-  %6 = add i64 %0, 1
-  %7 = icmp eq i64 %6, %5
-  ret i1 %7
+  %5 = add nsw i64 %4, -2
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:

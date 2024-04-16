@@ -17,10 +17,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -1
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -102,7 +102,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -301,10 +301,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr ptr, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -321,7 +321,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -337,7 +337,7 @@ entry:
   %3 = add nuw i32 %2, 4
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -350,10 +350,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -365,7 +365,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = getelementptr %struct.xhci_root_port_bw_info.1997577, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -374,10 +374,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -1
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -386,10 +386,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.lua_TValue.2145648, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %struct.lua_TValue.2145648, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -400,10 +400,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -414,10 +414,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp uge ptr %0, %5
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
+  %6 = icmp ule ptr %5, %0
   ret i1 %6
 }
 
@@ -429,7 +429,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -441,7 +441,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp uge ptr %0, %5
+  %6 = icmp ule ptr %5, %0
   ret i1 %6
 }
 

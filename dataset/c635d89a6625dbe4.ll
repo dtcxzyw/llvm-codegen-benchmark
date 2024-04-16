@@ -6,11 +6,14 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
-  %1 = icmp slt i32 %0, 0
-  %2 = select i1 %1, i32 6, i32 %0
-  %3 = and i32 %2, 1024
-  %4 = lshr exact i32 %3, 7
-  ret i32 %4
+  %1 = call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %2 = lshr i32 %1, 7
+  %3 = and i32 %2, 8
+  ret i32 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

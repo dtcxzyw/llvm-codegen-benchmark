@@ -61,7 +61,7 @@ entry:
   %3 = fcmp ole double %2, 0.000000e+00
   %4 = fcmp oge double %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -74,7 +74,7 @@ entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = fcmp ogt float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -98,7 +98,7 @@ entry:
   %3 = fcmp oge double %2, 0.000000e+00
   %4 = fcmp ord double %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -124,7 +124,7 @@ entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
   %4 = fcmp uge double %1, 0xC1E0000000000000
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -148,7 +148,7 @@ entry:
   %3 = fcmp oge float %2, 0xC7EFFFFFE0000000
   %4 = fcmp ole float %1, 0x47EFFFFFE0000000
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -161,7 +161,7 @@ entry:
   %3 = fcmp uge double %2, 0x3870000000000000
   %4 = fcmp ule double %1, 1.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -187,7 +187,7 @@ entry:
   %3 = fcmp oeq float %2, 0.000000e+00
   %4 = fcmp une float %1, 0.000000e+00
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -200,7 +200,7 @@ entry:
   %3 = fcmp ult float %2, 1.000000e+00
   %4 = fcmp ugt double %1, 0x3EB0C6F7A0B5ED8D
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

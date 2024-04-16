@@ -36,7 +36,7 @@ func0000000000000056:                   # @func0000000000000056
 	or	a0, a0, a1
 	ret
 func00000000000000b1:                   # @func00000000000000b1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	addi	a0, a0, 24
 	czero.eqz	a0, a0, a1
 	li	a2, 28
@@ -44,7 +44,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	or	a0, a0, a1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	addi	a0, a0, 24
 	czero.eqz	a0, a0, a1
 	li	a2, 28
@@ -52,7 +52,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	or	a0, a0, a1
 	ret
 func00000000000000e1:                   # @func00000000000000e1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	addi	a0, a0, 24
 	czero.eqz	a0, a0, a1
 	li	a2, 28

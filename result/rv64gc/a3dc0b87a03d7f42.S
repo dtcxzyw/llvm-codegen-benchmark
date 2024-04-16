@@ -31,8 +31,9 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 62
 	srli	a1, a1, 33
-	or	a1, a1, a0
-	sraiw	a0, a0, 31
+	or	a0, a0, a1
+	sext.w	a0, a0
+	srai	a1, a0, 63
 	and	a0, a0, a1
 	ret
 func0000000000000074:                   # @func0000000000000074

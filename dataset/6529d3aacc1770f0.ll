@@ -118,7 +118,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 24
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -305,7 +305,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -317,7 +317,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = add nuw i32 %3, %1
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 
@@ -331,7 +331,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 4194304
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -344,7 +344,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -9223372036854775808, i64 0
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = add i64 %4, %0
   ret i64 %5
 }

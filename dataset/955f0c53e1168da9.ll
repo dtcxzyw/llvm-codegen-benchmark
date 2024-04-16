@@ -6,7 +6,7 @@ define i32 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = call i8 @llvm.umin.i8(i8 %0, i8 %2)
-  %4 = zext i8 %3 to i32
+  %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 1, %4
   ret i32 %5
 }

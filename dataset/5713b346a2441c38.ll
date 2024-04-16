@@ -11,7 +11,7 @@
 define i1 @func00000000000000ac(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -51,7 +51,7 @@ entry:
 define i1 @func00000000000000cc(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -130,7 +130,7 @@ entry:
 define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -185,7 +185,7 @@ entry:
 define i1 @func000000000000006c(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -224,7 +224,7 @@ entry:
 define i1 @func0000000000000041(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6

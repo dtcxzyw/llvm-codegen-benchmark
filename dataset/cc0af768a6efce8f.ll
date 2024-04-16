@@ -18,8 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp ugt i32 %3, %0
+  %3 = icmp ugt i32 %2, %0
+  %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i32 1, i32 2
   ret i32 %5
 }

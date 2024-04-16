@@ -35,9 +35,9 @@ define i64 @func000000000000003c(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.cttz.i16(i16 %0, i1 true), !range !0
   %2 = zext nneg i16 %1 to i64
-  %3 = icmp ne i16 %0, 0
-  %4 = select i1 %3, i64 %2, i64 undef
-  ret i64 %4
+  %.not = icmp eq i16 %0, 0
+  %3 = select i1 %.not, i64 undef, i64 %2
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

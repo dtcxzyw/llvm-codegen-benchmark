@@ -121,9 +121,8 @@
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr inbounds %"struct.re2::PrefilterTree::Entry.1554674", ptr %0, i64 %2, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.re2::PrefilterTree::Entry.1554674", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 12 occurrences:
@@ -143,9 +142,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.QuorumChildRequest.1660967, ptr %0, i64 %2, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.QuorumChildRequest.1660967, ptr %0, i64 %2, i32 1, i32 1
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -154,9 +152,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.NvmeCopySourceRangeFormat1.1665083, ptr %0, i64 %2, i32 4
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr %struct.NvmeCopySourceRangeFormat1.1665083, ptr %0, i64 %2, i32 4, i64 4
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -165,9 +162,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr inbounds %"struct.(anonymous namespace)::OptMuxtreeWorker::muxinfo_t.1906291", ptr %0, i64 %2, i32 1
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %"struct.(anonymous namespace)::OptMuxtreeWorker::muxinfo_t.1906291", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

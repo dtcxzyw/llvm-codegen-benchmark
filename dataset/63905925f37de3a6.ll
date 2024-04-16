@@ -5,7 +5,7 @@
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = shl nuw i64 %4, 1
   %6 = or disjoint i64 %5, %0
   ret i64 %6
@@ -39,9 +39,9 @@ entry:
 define i32 @func0000000000000019(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = shl i32 %4, 12
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -52,7 +52,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = shl nuw nsw i64 %4, 27
   %6 = or disjoint i64 %5, %0
   ret i64 %6
@@ -64,7 +64,7 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = shl i32 %4, 12
   %6 = or disjoint i32 %5, %0
   ret i32 %6
@@ -77,7 +77,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = shl nuw i64 %4, 48
   %6 = or i64 %5, %0
   ret i64 %6
@@ -89,9 +89,9 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = shl nuw nsw i64 %4, 52
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -101,7 +101,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = shl nuw nsw i64 %4, 52
   %6 = or disjoint i64 %5, %0
   ret i64 %6
@@ -114,9 +114,9 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = shl i32 %4, 8
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

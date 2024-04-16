@@ -10,7 +10,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sitofp i32 %3 to double
   %5 = fsub double %4, %1
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

@@ -82,10 +82,8 @@ func00000000000000aa:                   # @func00000000000000aa
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a0, a0, 1
 	bnez	a0, .LBB7_2
-	andi	a0, a2, 255
-	snez	a0, a0
-	ret
-.LBB7_2:
+	mv	a1, a2
+.LBB7_2:                                # %entry
 	andi	a0, a1, 255
 	snez	a0, a0
 	ret

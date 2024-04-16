@@ -8,7 +8,7 @@ define i8 @func0000000000000070(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 18
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i8
   ret i8 %6
@@ -42,7 +42,7 @@ define i16 @func000000000000003c(i48 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i48
   %3 = shl nuw nsw i48 %2, 16
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   %5 = lshr exact i48 %4, 16
   %6 = trunc i48 %5 to i16
   ret i16 %6
@@ -62,12 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000002c(i48 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i48
-  %3 = shl nuw i48 %2, 32
-  %4 = or disjoint i48 %3, %0
-  %5 = lshr exact i48 %4, 16
-  %6 = trunc i48 %5 to i16
-  ret i16 %6
+  %2 = lshr i48 %0, 16
+  %3 = trunc i48 %2 to i16
+  ret i16 %3
 }
 
 ; 11 occurrences:
@@ -87,9 +84,9 @@ define i32 @func0000000000000028(i48 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i48
   %3 = shl nuw i48 %2, 32
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   %5 = lshr i48 %4, 16
-  %6 = trunc i48 %5 to i32
+  %6 = trunc nuw i48 %5 to i32
   ret i32 %6
 }
 
@@ -100,12 +97,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000006c(i48 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i48
-  %3 = shl nuw i48 %2, 32
-  %4 = or disjoint i48 %0, %3
-  %5 = lshr exact i48 %4, 16
-  %6 = trunc i48 %5 to i16
-  ret i16 %6
+  %2 = lshr i48 %0, 16
+  %3 = trunc i48 %2 to i16
+  ret i16 %3
 }
 
 ; 1 occurrences:
@@ -115,7 +109,7 @@ define i32 @func000000000000003e(i48 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i48
   %3 = shl nuw nsw i48 %2, 16
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   %5 = lshr exact i48 %4, 16
   %6 = trunc nuw i48 %5 to i32
   ret i32 %6
@@ -148,7 +142,7 @@ define i8 @func0000000000000078(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 18
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = lshr i32 %4, 16
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -233,9 +227,9 @@ define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 33
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 
@@ -248,7 +242,7 @@ define i8 @func0000000000000030(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 18
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = lshr i32 %4, 16
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -274,9 +268,9 @@ define i64 @func0000000000000068(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
   %3 = shl nuw i128 %2, 65
-  %4 = or disjoint i128 %0, %3
+  %4 = or disjoint i128 %3, %0
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -288,9 +282,9 @@ define i24 @func000000000000007c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 32
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = lshr exact i64 %4, 40
-  %6 = trunc i64 %5 to i24
+  %6 = trunc nuw i64 %5 to i24
   ret i24 %6
 }
 
@@ -301,9 +295,9 @@ define i8 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 56
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = lshr i64 %4, 56
-  %6 = trunc i64 %5 to i8
+  %6 = trunc nuw i64 %5 to i8
   ret i8 %6
 }
 
@@ -316,7 +310,7 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = or i64 %3, %0
   %5 = lshr i64 %4, 56
-  %6 = trunc i64 %5 to i8
+  %6 = trunc nuw i64 %5 to i8
   ret i8 %6
 }
 

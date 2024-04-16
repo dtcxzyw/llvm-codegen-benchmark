@@ -8,7 +8,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
-  %6 = tail call i16 @llvm.umax.i16(i16 %0, i16 %5)
+  %6 = or i16 %5, %0
   %7 = icmp eq i16 %6, 0
   ret i1 %7
 }
@@ -44,7 +44,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = tail call i32 @llvm.umax.i32(i32 %0, i32 %5)
+  %6 = or i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }

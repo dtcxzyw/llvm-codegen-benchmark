@@ -18,8 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 10
-  %3 = mul nsw i32 %2, 10
+  %.fr = freeze i32 %1
+  %2 = srem i32 %.fr, 10
+  %3 = sub nsw i32 %.fr, %2
   %4 = sdiv i32 %0, 10
   %5 = add i32 %3, %4
   ret i32 %5

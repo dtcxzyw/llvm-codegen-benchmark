@@ -1,6 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
-	srliw	a1, a0, 16
+	srliw	a0, a0, 16
+	slli	a1, a0, 16
 	li	a0, 224
 	beqz	a1, .LBB0_2
 	li	a0, 128

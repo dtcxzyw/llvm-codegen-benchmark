@@ -40,8 +40,8 @@
 define i32 @func0000000000000017(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.ctlz.i32(i32 %0, i1 true), !range !0
-  %2 = add nsw i32 %1, -8
-  %3 = shl nuw nsw i32 %2, 23
+  %2 = shl nuw nsw i32 %1, 23
+  %3 = add nsw i32 %2, -67108864
   ret i32 %3
 }
 

@@ -7,10 +7,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 2
-  %2 = xor i64 %1, 7
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = icmp eq i64 %0, 28
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

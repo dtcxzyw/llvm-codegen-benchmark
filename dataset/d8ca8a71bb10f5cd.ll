@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -40
+  %2 = add i32 %1, 216
   %3 = lshr i32 %0, 4
-  %4 = add nsw i32 %3, %2
+  %4 = add i32 %3, %2
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
@@ -36,7 +36,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
-  %3 = add i64 %0, -4
+  %3 = add i64 %0, 4294967292
   %4 = add i64 %3, %2
   %5 = trunc i64 %4 to i32
   ret i32 %5

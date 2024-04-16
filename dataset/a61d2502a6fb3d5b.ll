@@ -6,7 +6,7 @@ define i64 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %2, 50
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp ugt i64 %5, 50
   %7 = select i1 %6, i64 %0, i64 %5
   ret i64 %7
@@ -22,7 +22,7 @@ define i64 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %2, 65521
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = icmp ugt i64 %5, 131041
   %7 = select i1 %6, i64 %0, i64 %5
   ret i64 %7

@@ -52,7 +52,7 @@
 define i64 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = sdiv i64 %1, 4
   %6 = shl nsw i64 %5, 2
   %7 = tail call i64 @llvm.smin.i64(i64 %6, i64 %4)

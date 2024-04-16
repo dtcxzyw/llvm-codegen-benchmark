@@ -41,13 +41,13 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	lui	a0, 4
-	addiw	a0, a0, -193
+	addiw	a0, a0, -256
 	and	a0, a0, a1
 	sltiu	a0, a0, 1280
 	ret
 .LBB3_2:
 	lui	a0, 16
-	addiw	a0, a0, -193
+	addiw	a0, a0, -256
 	and	a0, a0, a1
 	sltiu	a0, a0, 1280
 	ret

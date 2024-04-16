@@ -19,7 +19,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 7
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = ashr i32 %3, 1
   %5 = sext i32 %4 to i64
   ret i64 %5

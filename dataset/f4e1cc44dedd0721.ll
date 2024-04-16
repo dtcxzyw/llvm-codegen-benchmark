@@ -8,7 +8,7 @@ entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp olt double %3, %1
   %5 = select i1 %4, double %1, double %3
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   %7 = tail call double @llvm.fabs.f64(double %6)
   ret double %7
 }

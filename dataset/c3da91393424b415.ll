@@ -22,8 +22,8 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i64 %1, i16 %2) #0 {
 entry:
-  %3 = tail call i16 @llvm.bswap.i16(i16 %2)
-  %4 = zext i16 %3 to i64
+  %3 = lshr i16 %2, 8
+  %4 = zext nneg i16 %3 to i64
   %5 = select i1 %0, i64 %4, i64 %1
   %6 = trunc i64 %5 to i8
   ret i8 %6

@@ -6,11 +6,10 @@
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = udiv i64 %2, 10
-  %4 = mul i64 %3, -10
-  %5 = add i64 %4, %2
-  %6 = trunc i64 %5 to i8
-  ret i8 %6
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 10
+  %4 = trunc nuw nsw i64 %3 to i8
+  ret i8 %4
 }
 
 ; 1 occurrences:

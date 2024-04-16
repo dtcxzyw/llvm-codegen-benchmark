@@ -20,8 +20,8 @@ define i32 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = ashr exact i64 %4, 3
-  %6 = sub nsw i64 %0, %5
+  %5 = lshr exact i64 %4, 3
+  %6 = sub i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
@@ -35,7 +35,7 @@ define i32 @func0000000000000010(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = ashr exact i64 %4, 1
+  %5 = lshr exact i64 %4, 1
   %6 = sub i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7

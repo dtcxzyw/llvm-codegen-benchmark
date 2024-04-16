@@ -45,7 +45,7 @@ define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 257698037760
   %3 = lshr exact i64 %2, 32
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -60,7 +60,7 @@ define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 4294967296000
   %3 = lshr exact i64 %2, 32
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

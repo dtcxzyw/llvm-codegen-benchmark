@@ -11,11 +11,10 @@
 define i64 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = sub i64 %1, %2
-  %6 = icmp eq ptr %0, null
-  %7 = select i1 %6, i64 %5, i64 %4
-  ret i64 %7
+  %4 = icmp eq ptr %0, null
+  %.v = select i1 %4, i64 %1, i64 %3
+  %5 = sub i64 %.v, %2
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

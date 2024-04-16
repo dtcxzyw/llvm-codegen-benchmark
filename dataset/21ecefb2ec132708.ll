@@ -9,8 +9,8 @@ define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
   %2 = call i16 @llvm.bswap.i16(i16 %1)
   %3 = zext i16 %2 to i64
-  %4 = sub nsw i64 %3, %0
-  %5 = add nsw i64 %4, -1
+  %4 = xor i64 %0, -1
+  %5 = add i64 %4, %3
   ret i64 %5
 }
 

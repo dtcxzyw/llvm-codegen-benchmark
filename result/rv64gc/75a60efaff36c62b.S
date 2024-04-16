@@ -1,47 +1,41 @@
 func0000000000000004:                   # @func0000000000000004
-	not	a1, a1
-	ori	a1, a1, -256
-	add	a0, a0, a1
-	sltiu	a0, a0, 2
+	andi	a1, a1, 255
+	sub	a1, a1, a0
+	sltiu	a0, a1, -2
+	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	not	a1, a1
-	ori	a1, a1, -256
-	add	a0, a0, a1
+	andi	a1, a1, 255
+	addi	a0, a0, -1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	not	a1, a1
-	ori	a1, a1, -256
-	addw	a0, a0, a1
-	sltiu	a0, a0, 65
-	xori	a0, a0, 1
+	andi	a1, a1, 255
+	subw	a1, a1, a0
+	sltiu	a0, a1, -65
 	ret
 func0000000000000054:                   # @func0000000000000054
 	sext.w	a1, a1
-	not	a1, a1
-	add	a0, a0, a1
-	sltiu	a0, a0, 92
+	sub	a1, a1, a0
+	sltiu	a0, a1, -92
+	xori	a0, a0, 1
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
-	not	a1, a1
-	add	a0, a0, a1
-	srli	a0, a0, 62
-	snez	a0, a0
+	sub	a1, a1, a0
+	srli	a1, a1, 62
+	sltiu	a0, a1, 3
 	ret
 func0000000000000018:                   # @func0000000000000018
-	not	a1, a1
-	li	a2, -1
-	slli	a2, a2, 32
-	or	a1, a1, a2
-	add	a0, a0, a1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	sub	a1, a1, a0
+	sltiu	a0, a1, -2
 	ret
 func0000000000000011:                   # @func0000000000000011
-	not	a1, a1
-	ori	a1, a1, -256
-	addw	a0, a0, a1
+	andi	a1, a1, 255
+	addiw	a0, a0, -1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

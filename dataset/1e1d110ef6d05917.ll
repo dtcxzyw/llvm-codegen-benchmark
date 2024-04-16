@@ -14,7 +14,7 @@ entry:
   %3 = add i32 %2, 4800
   %4 = sub i32 %3, %1
   %5 = sdiv i32 %4, 4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = add nsw i32 %2, 9
   %4 = sub i32 %3, %1
   %5 = sdiv i32 %4, -9
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

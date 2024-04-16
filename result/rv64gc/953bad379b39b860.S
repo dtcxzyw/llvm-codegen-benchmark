@@ -117,13 +117,12 @@ func0000000000000364:                   # @func0000000000000364
 	sltiu	a0, a0, 24
 	ret
 func000000000000031c:                   # @func000000000000031c
-	sext.w	a1, a1
-	li	a3, 31
-	bne	a1, a3, .LBB14_2
-	addi	a0, a2, 1
-.LBB14_2:                               # %entry
 	sext.w	a0, a0
+	sext.w	a1, a1
+	addi	a1, a1, -31
+	seqz	a1, a1
 	snez	a0, a0
+	or	a0, a0, a1
 	ret
 func0000000000000141:                   # @func0000000000000141
 	slli	a1, a1, 48

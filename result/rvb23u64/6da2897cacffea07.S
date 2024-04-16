@@ -7,6 +7,6 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	bset	a0, zero, a0
 	fcvt.s.w	fa5, a0
-	fmul.s	fa5, fa1, fa5
+	fmul.s	fa5, fa5, fa1
 	fdiv.s	fa0, fa5, fa0
 	ret

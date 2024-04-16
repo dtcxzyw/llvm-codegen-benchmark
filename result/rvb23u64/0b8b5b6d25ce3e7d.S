@@ -13,7 +13,9 @@ func0000000000000141:                   # @func0000000000000141
 	andi	a2, a2, 1
 	sub	a1, a1, a2
 	sh1add	a1, a1, a1
-	sh2add	a0, a1, a0
+	slli	a1, a1, 2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000156:                   # @func0000000000000156
@@ -44,7 +46,8 @@ func0000000000000151:                   # @func0000000000000151
 	andi	a2, a2, 1
 	sub	a1, a1, a2
 	sh2add	a1, a1, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000144:                   # @func0000000000000144

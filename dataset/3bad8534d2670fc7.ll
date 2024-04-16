@@ -91,8 +91,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i8 7, i8 %1
-  %5 = zext nneg i8 %4 to i64
+  %4 = zext nneg i8 %1 to i64
+  %5 = select i1 %3, i64 7, i64 %4
   %6 = getelementptr [8 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }

@@ -7,7 +7,7 @@ entry:
   %2 = fcmp ugt double %1, 1.000000e+00
   %3 = fcmp ult double %1, 0.000000e+00
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = fcmp ogt double %1, 1.000000e+02
   %3 = fcmp olt double %1, 0.000000e+00
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -39,7 +39,7 @@ entry:
   %2 = fcmp olt double %1, 0xC1E0000000000000
   %3 = fcmp ogt double %1, 0x41DFFFFFFFC00000
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -51,7 +51,7 @@ entry:
   %2 = fcmp ogt double %1, 0x41DFFFFFFFC00000
   %3 = fcmp uno double %1, 0.000000e+00
   %4 = or i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

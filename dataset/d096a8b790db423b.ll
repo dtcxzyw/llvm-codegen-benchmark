@@ -15,7 +15,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = call i16 @llvm.umax.i16(i16 %2, i16 1)
   %4 = zext i16 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

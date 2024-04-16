@@ -5,9 +5,9 @@
 define double @func00000000000000ac(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
-  %4 = fcmp ole double %1, %3
+  %4 = fcmp oge double %3, %1
   %5 = select i1 %4, double %1, double %3
-  %6 = fcmp oge double %0, %5
+  %6 = fcmp ole double %5, %0
   %7 = select i1 %6, double %0, double %5
   ret double %7
 }
@@ -19,9 +19,9 @@ entry:
 define double @func0000000000000024(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 9.000000e-01
-  %4 = fcmp olt double %1, %3
+  %4 = fcmp ogt double %3, %1
   %5 = select i1 %4, double %1, double %3
-  %6 = fcmp ogt double %0, %5
+  %6 = fcmp olt double %5, %0
   %7 = select i1 %6, double %0, double %5
   ret double %7
 }
@@ -33,9 +33,9 @@ entry:
 define float @func00000000000000ca(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp oge float %1, %3
+  %4 = fcmp ole float %3, %1
   %5 = select i1 %4, float %1, float %3
-  %6 = fcmp ole float %0, %5
+  %6 = fcmp oge float %5, %0
   %7 = select i1 %6, float %0, float %5
   ret float %7
 }

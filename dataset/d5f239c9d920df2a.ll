@@ -10,7 +10,7 @@ entry:
   %2 = mul i64 %1, 6364136223846793005
   %3 = add i64 %2, 1442695040888963407
   %4 = lshr i64 %3, 59
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = call noundef i32 @llvm.fshr.i32(i32 %0, i32 %0, i32 %5)
   ret i32 %6
 }
@@ -40,7 +40,7 @@ entry:
   %2 = mul i64 %1, 6364136223846793005
   %3 = add i64 %2, -6812164046247290893
   %4 = lshr i64 %3, 59
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = tail call i32 @llvm.fshr.i32(i32 %0, i32 %0, i32 %5)
   ret i32 %6
 }

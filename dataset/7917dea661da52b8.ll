@@ -10,7 +10,7 @@ define i64 @func00000000000000c3(i64 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !0
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = shl i64 %4, 3
   %6 = sub nuw nsw i64 -8, %5
   ret i64 %6

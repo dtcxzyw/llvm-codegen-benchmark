@@ -6,11 +6,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = or disjoint i32 %2, 16
-  %4 = select i1 %1, i32 %3, i32 %2
-  %5 = and i32 %4, 16742639
-  %6 = or disjoint i32 %0, %5
-  ret i32 %6
+  %3 = and i32 %2, 16742639
+  %4 = or disjoint i32 %3, %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -21,7 +19,7 @@ entry:
   %3 = or i16 %2, 128
   %4 = select i1 %1, i16 %3, i16 %2
   %5 = and i16 %4, -1025
-  %6 = or disjoint i16 %0, %5
+  %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 
@@ -30,11 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = or disjoint i32 %2, 32768
-  %4 = select i1 %1, i32 %3, i32 %2
-  %5 = and i32 %4, 1023
-  %6 = or i32 %5, %0
-  ret i32 %6
+  %3 = and i32 %2, 1023
+  %4 = or i32 %3, %0
+  ret i32 %4
 }
 
 ; 1 occurrences:

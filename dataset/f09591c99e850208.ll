@@ -106,8 +106,8 @@ entry:
 define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
-  %3 = zext i1 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %3 = icmp eq i64 %0, 0
+  %4 = and i1 %3, %2
   ret i1 %4
 }
 

@@ -18,8 +18,8 @@ entry:
   %2 = fptosi double %1 to i64
   %3 = add nsw i64 %0, 1
   %4 = add nsw i64 %3, %2
-  %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 2147483647)
-  %6 = tail call i64 @llvm.smin.i64(i64 %0, i64 %5)
+  %5 = call i64 @llvm.smin.i64(i64 %4, i64 %0)
+  %6 = call i64 @llvm.smin.i64(i64 %5, i64 2147483647)
   ret i64 %6
 }
 

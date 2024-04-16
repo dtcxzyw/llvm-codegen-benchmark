@@ -173,7 +173,7 @@ entry:
   %2 = mul nsw i32 %1, 315653
   %3 = ashr i32 %2, 20
   %4 = sub nsw i32 2, %3
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -185,7 +185,7 @@ entry:
   %2 = mul i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

@@ -38,8 +38,8 @@ entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = lshr i32 %2, 4
   %4 = add nuw nsw i32 %3, %2
-  %5 = and i32 %4, 252645135
-  %6 = lshr i32 %5, 8
+  %5 = lshr i32 %4, 8
+  %6 = and i32 %5, 986895
   ret i32 %6
 }
 

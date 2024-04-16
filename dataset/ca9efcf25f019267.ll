@@ -10,7 +10,7 @@ entry:
   %3 = lshr i64 -1, %2
   %4 = icmp ult i32 %1, 64
   %5 = select i1 %4, i64 %3, i64 0
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

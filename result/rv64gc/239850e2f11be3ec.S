@@ -23,7 +23,7 @@ func0000000000000005:                   # @func0000000000000005
 	andi	a2, a1, 1
 	li	a1, 3
 	bnez	a2, .LBB2_2
-	li	a1, -9
+	li	a1, 247
 .LBB2_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255
@@ -41,7 +41,7 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a2, a1, 1
-	li	a1, 9
+	li	a1, 1
 	bnez	a2, .LBB4_2
 	li	a1, 4
 .LBB4_2:                                # %entry

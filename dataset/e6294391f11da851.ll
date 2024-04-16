@@ -72,10 +72,9 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call noundef i32 @llvm.cttz.i32(i32 %2, i1 true), !range !0
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.1637615", ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  %7 = getelementptr inbounds [14 x %"union.std::aligned_storage<8, 8>::type.1637575"], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.1637615", ptr %0, i64 %1, i32 3
+  %6 = getelementptr inbounds [14 x %"union.std::aligned_storage<8, 8>::type.1637575"], ptr %5, i64 0, i64 %4
+  ret ptr %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

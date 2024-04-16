@@ -1,8 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	sext.b	a1, a1
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	or	a0, a0, a1
-	addi	a0, a0, -10
-	seqz	a0, a0
+	andi	a1, a1, 255
+	addi	a1, a1, -10
+	seqz	a1, a1
+	andn	a0, a1, a0
 	ret

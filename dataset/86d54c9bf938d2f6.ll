@@ -21,7 +21,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or i64 %1, %3
+  %4 = or i64 %3, %1
   %5 = lshr i64 %4, 32
   %6 = lshr i64 %0, 32
   %7 = mul nuw i64 %5, %6

@@ -7,9 +7,9 @@ define i1 @func0000000000000101(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 4294967295, i64 1
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -20,10 +20,10 @@ entry:
 define i1 @func0000000000000141(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 1, i64 -1
-  %5 = add nsw i64 %1, %4
+  %4 = select i1 %3, i64 1, i64 4294967295
+  %5 = add i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

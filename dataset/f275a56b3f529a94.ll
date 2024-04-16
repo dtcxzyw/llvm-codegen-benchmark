@@ -4,11 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000086(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 3
-  %2 = icmp ugt i64 %0, 2305843009213693951
-  %3 = select i1 %2, i64 -1, i64 %1
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %1 = icmp ugt i64 %0, 1152921504606846975
+  ret i1 %1
 }
 
 ; 96 occurrences:
@@ -111,11 +108,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000111(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  ret i1 false
 }
 
 ; 2 occurrences:
@@ -124,11 +117,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 1
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = icmp eq i32 %0, -2147483648
+  ret i1 %1
 }
 
 ; 6 occurrences:
@@ -141,11 +131,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000116(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 64, i32 %1
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %.mask = and i32 %0, 1073741824
+  %1 = icmp ne i32 %.mask, 0
+  ret i1 %1
 }
 
 ; 13 occurrences:
@@ -165,11 +153,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000011a(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 10
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 1024, i32 %1
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %1 = icmp sgt i32 %0, -1
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -177,11 +162,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 1
-  %2 = icmp eq i32 %0, 1
-  %3 = select i1 %2, i32 4, i32 %1
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %.mask = and i32 %0, 2147483647
+  %1 = icmp ne i32 %.mask, 0
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -189,11 +172,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 32
-  %2 = icmp eq i64 %0, 0
-  %3 = select i1 %2, i64 47244640256, i64 %1
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %.mask = and i64 %0, 2147483648
+  %1 = icmp ne i64 %.mask, 0
+  ret i1 %1
 }
 
 ; 34 occurrences:
@@ -235,10 +216,8 @@ entry:
 define i1 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = shl i16 %0, 2
-  %2 = icmp eq i16 %0, 0
-  %3 = select i1 %2, i16 1, i16 %1
-  %4 = icmp ugt i16 %3, 256
-  ret i1 %4
+  %2 = icmp ugt i16 %1, 256
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

@@ -47,10 +47,9 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 14
   %3 = and i32 %2, 16384
-  %4 = and i32 %0, -4145153
+  %4 = and i32 %0, -4178432
   %5 = or disjoint i32 %4, %3
-  %6 = and i32 %5, -4162048
-  ret i32 %6
+  ret i32 %5
 }
 
 ; 7 occurrences:
@@ -66,10 +65,9 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 17
   %3 = and i32 %2, 4063232
-  %4 = and i32 %0, -4063233
+  %4 = and i32 %0, -134086657
   %5 = or disjoint i32 %3, %4
-  %6 = and i32 %5, -130023425
-  ret i32 %6
+  ret i32 %5
 }
 
 ; 5 occurrences:
@@ -83,10 +81,9 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 24
   %3 = and i32 %2, 520093696
-  %4 = and i32 %0, -520093697
+  %4 = and i32 %0, -2147221505
   %5 = or disjoint i32 %3, %4
-  %6 = and i32 %5, -1627127809
-  ret i32 %6
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

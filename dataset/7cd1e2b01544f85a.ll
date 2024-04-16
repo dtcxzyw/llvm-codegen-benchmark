@@ -9,7 +9,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, 512
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -48,7 +48,7 @@ define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, 64
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %2, i64 %1)
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -59,7 +59,7 @@ define i1 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, -1
   %3 = call i32 @llvm.umin.i32(i32 %1, i32 %2)
-  %4 = icmp ule i32 %0, %3
+  %4 = icmp uge i32 %3, %0
   ret i1 %4
 }
 
@@ -73,7 +73,7 @@ define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, -1
   %3 = call noundef i32 @llvm.umin.i32(i32 %1, i32 %2)
-  %4 = icmp ule i32 %0, %3
+  %4 = icmp uge i32 %3, %0
   ret i1 %4
 }
 

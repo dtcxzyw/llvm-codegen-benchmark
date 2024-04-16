@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %3, 31
   %5 = shl nuw i32 1, %4
   %6 = xor i32 %5, -1
-  %7 = and i32 %0, %6
+  %7 = and i32 %6, %0
   ret i32 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nsw i64 -1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 
@@ -63,7 +63,7 @@ entry:
   %4 = and i64 %3, 63
   %5 = shl nsw i64 -1, %4
   %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 

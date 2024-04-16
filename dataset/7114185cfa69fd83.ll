@@ -105,10 +105,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 1
-  %3 = shl nuw nsw i64 %0, 1
-  %4 = add nuw nsw i64 %3, %2
-  ret i64 %4
+  %2 = add i64 %0, %1
+  %3 = shl nuw i64 %2, 1
+  ret i64 %3
 }
 
 ; 5 occurrences:

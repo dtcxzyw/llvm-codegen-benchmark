@@ -8,7 +8,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = mul nuw nsw i32 %3, 3600
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -23,10 +23,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
-  %4 = mul nuw nsw i32 %3, -94
+  %3 = trunc i32 %2 to i1
+  %4 = select i1 %3, i32 -94, i32 0
   %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -50,7 +50,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = mul nuw nsw i32 %3, 60
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -65,7 +65,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2097151
   %4 = mul nsw i64 %3, -997805
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -77,7 +77,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = mul nsw i32 %3, 7873
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -90,7 +90,7 @@ define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = mul nsw i32 %3, 7873
-  %5 = add nuw i32 %1, %4
+  %5 = add nuw i32 %4, %1
   %6 = add nuw i32 %5, %0
   ret i32 %6
 }
@@ -129,7 +129,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1099511627775
   %4 = mul i64 %3, 2654435769
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -141,7 +141,7 @@ define i32 @func0000000000000037(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 55
   %4 = mul nuw nsw i32 %3, 1260
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }

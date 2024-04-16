@@ -15,11 +15,9 @@
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 2
-  %2 = add i64 %1, 4
-  %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %2, i64 15)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = and i64 %4, -16
-  ret i64 %5
+  %2 = add i64 %1, 19
+  %3 = and i64 %2, -16
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

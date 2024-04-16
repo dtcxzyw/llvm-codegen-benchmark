@@ -47,7 +47,7 @@ entry:
 define i1 @func00000000000007c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -102,7 +102,7 @@ entry:
 define i1 @func000000000000051c(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp eq i32 %4, -1
   %6 = icmp ne i16 %0, -1
   %7 = select i1 %6, i1 true, i1 %5

@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i48 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = add i16 %1, 1
-  %3 = select i1 %0, i16 %2, i16 %1
+  %2 = zext i1 %0 to i16
+  %3 = add i16 %2, %1
   %4 = add i16 %3, 1
   %5 = zext i16 %4 to i48
   ret i48 %5

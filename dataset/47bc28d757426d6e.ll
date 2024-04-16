@@ -236,9 +236,8 @@ entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 7
   %4 = getelementptr inbounds i8, ptr %0, i64 224
-  %5 = getelementptr inbounds [8 x %"class.folly::hazptr_detail::shared_head_only_list.1638994"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [8 x %"class.folly::hazptr_detail::shared_head_only_list.1638994"], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -252,9 +251,8 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 7
   %4 = getelementptr inbounds i8, ptr %0, i64 12992
-  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %4, i64 0, i64 %3, i32 0, i32 3
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -265,9 +263,8 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 7
   %4 = getelementptr inbounds i8, ptr %0, i64 12992
-  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %4, i64 0, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 20
-  ret ptr %6
+  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %4, i64 0, i64 %3, i32 0, i32 4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

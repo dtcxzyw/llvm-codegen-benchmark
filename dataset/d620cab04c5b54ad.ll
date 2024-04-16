@@ -22,8 +22,8 @@ define i64 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 7
-  %4 = add i64 %3, %1
-  %5 = icmp eq i64 %4, 0
+  %4 = sub i64 0, %1
+  %5 = icmp eq i64 %3, %4
   %6 = select i1 %5, i64 1, i64 %0
   ret i64 %6
 }
@@ -36,8 +36,8 @@ define i64 @func0000000000000091(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 7
-  %4 = add nsw i64 %3, %1
-  %5 = icmp eq i64 %4, 0
+  %4 = sub i64 0, %1
+  %5 = icmp eq i64 %3, %4
   %6 = select i1 %5, i64 1, i64 %0
   ret i64 %6
 }

@@ -33,7 +33,7 @@ define i1 @func0000000000000094(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl i32 %3, 2
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = icmp ult i32 %5, 128
   ret i1 %6
 }

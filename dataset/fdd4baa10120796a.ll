@@ -103,7 +103,7 @@ entry:
   %2 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 31)
   %3 = icmp ult i32 %2, 429496730
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

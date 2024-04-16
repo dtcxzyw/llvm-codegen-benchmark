@@ -35,8 +35,8 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 2.000000e+00
-  %4 = fmul double %1, %3
-  %5 = fadd double %0, %4
+  %4 = fmul double %3, %1
+  %5 = fadd double %4, %0
   %6 = fcmp oeq double %5, 0.000000e+00
   ret i1 %6
 }

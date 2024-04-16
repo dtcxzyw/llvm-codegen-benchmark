@@ -930,8 +930,8 @@ entry:
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %0, %1
-  %3 = and i8 %2, 15
-  %4 = icmp ult i8 %3, 8
+  %3 = and i8 %2, 8
+  %4 = icmp eq i8 %3, 0
   ret i1 %4
 }
 

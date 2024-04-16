@@ -22,8 +22,8 @@ entry:
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = xor i32 %1, 63
-  %3 = shl nuw nsw i32 %2, 5
+  %2 = shl i32 %1, 5
+  %3 = xor i32 %2, 2016
   ret i32 %3
 }
 

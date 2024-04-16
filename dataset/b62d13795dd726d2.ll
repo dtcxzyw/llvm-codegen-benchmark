@@ -127,12 +127,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = and i64 %4, 4294967295
-  %6 = add nuw nsw i64 %0, 1
-  %7 = icmp eq i64 %6, %5
-  ret i1 %7
+  %.tr = trunc i64 %1 to i32
+  %.narrow = sub i32 %.tr, %2
+  %3 = zext i32 %.narrow to i64
+  %4 = add nuw nsw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

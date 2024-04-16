@@ -11,7 +11,7 @@ entry:
   %3 = mul i64 %2, 3294967296
   %4 = add i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 4194967296
   %4 = add nuw nsw i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

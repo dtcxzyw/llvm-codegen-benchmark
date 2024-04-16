@@ -23,7 +23,7 @@ func0000000000000194:                   # @func0000000000000194
 	addi	a2, a2, 1968
 	mul	a1, a1, a2
 	srliw	a1, a1, 17
-	li	a2, -100
+	li	a2, 156
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

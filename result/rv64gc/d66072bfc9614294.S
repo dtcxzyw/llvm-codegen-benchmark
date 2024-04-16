@@ -13,13 +13,13 @@ func0000000000000035:                   # @func0000000000000035
 	mulhu	a4, a2, a4
 	sub	a4, a4, a2
 	slli	a5, a2, 32
+	add	a2, a2, a5
+	neg	a5, a2
+	sub	a0, a0, a2
+	sltu	a2, a0, a5
 	add	a1, a1, a4
 	sub	a1, a1, a3
-	sub	a2, a0, a2
-	sub	a2, a2, a5
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a1, a1, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 59

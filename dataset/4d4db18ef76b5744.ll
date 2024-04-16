@@ -38,7 +38,7 @@ entry:
   %2 = and i32 %1, 65535
   %3 = mul nuw i32 %2, %0
   %4 = lshr i32 %3, 20
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 
@@ -48,9 +48,9 @@ entry:
 define i64 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
-  %3 = mul i128 %0, %2
+  %3 = mul i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 

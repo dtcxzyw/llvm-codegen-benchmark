@@ -31,8 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
-  %2 = udiv i64 %1, 1000000
-  %3 = mul nuw nsw i64 %2, 1000000
+  %.fr = freeze i64 %1
+  %2 = urem i64 %.fr, 1000000
+  %3 = sub nuw i64 %.fr, %2
   %4 = add nsw i64 %0, 1000000
   %5 = add i64 %4, %3
   ret i64 %5
@@ -46,8 +47,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
-  %2 = udiv i32 %1, 12
-  %3 = mul nsw i32 %2, -12
+  %.fr = freeze i32 %1
+  %2 = urem i32 %.fr, 12
+  %3 = sub i32 %2, %.fr
   %4 = add nsw i32 %0, -13
   %5 = add nsw i32 %4, %3
   ret i32 %5
@@ -58,8 +60,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = udiv i32 %1, 12
-  %3 = mul i32 %2, -12
+  %.fr = freeze i32 %1
+  %2 = urem i32 %.fr, 12
+  %3 = sub i32 %2, %.fr
   %4 = add nsw i32 %0, -11
   %5 = add i32 %4, %3
   ret i32 %5
@@ -83,8 +86,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = udiv i32 %1, 28
-  %3 = mul i32 %2, -28
+  %.fr = freeze i32 %1
+  %2 = urem i32 %.fr, 28
+  %3 = sub i32 %2, %.fr
   %4 = add i32 %0, -4
   %5 = add i32 %4, %3
   ret i32 %5

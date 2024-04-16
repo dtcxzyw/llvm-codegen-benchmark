@@ -7,6 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000000:                   # @func0000000000000000
 	negw	a0, a0
-	ori	a0, a0, 1
-	andi	a0, a0, 7
+	andi	a0, a0, 6
+	addi	a0, a0, 1
 	ret

@@ -132,8 +132,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 2147483647
-  %4 = icmp ult i32 %3, 1048576
+  %3 = and i32 %2, 2146435072
+  %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
   %6 = and i32 %5, 7
   ret i32 %6
@@ -147,10 +147,10 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
-  %4 = icmp ne i64 %3, 0
-  %5 = select i1 %4, i32 %0, i32 %1
-  %6 = and i32 %5, 65535
-  ret i32 %6
+  %.not = icmp eq i64 %3, 0
+  %4 = select i1 %.not, i32 %1, i32 %0
+  %5 = and i32 %4, 65535
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

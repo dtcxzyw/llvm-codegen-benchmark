@@ -20,7 +20,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 15, %0
-  %3 = and i64 %1, %2
+  %3 = and i64 %2, %1
   %4 = lshr i64 %3, %0
   %5 = trunc i64 %4 to i8
   ret i8 %5

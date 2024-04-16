@@ -161,9 +161,8 @@ define ptr @func000000000000001d(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.ipv6_saddr_score.1999830, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.ipv6_saddr_score.1999830, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:

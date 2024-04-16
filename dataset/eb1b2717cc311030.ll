@@ -17,10 +17,9 @@ define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 28
   %3 = icmp eq i16 %2, 20
-  %4 = select i1 %3, i32 2, i32 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds [3 x %struct.version_info.1779608], ptr %0, i64 0, i64 %5
-  ret ptr %6
+  %4 = select i1 %3, i64 2, i64 1
+  %5 = getelementptr inbounds [3 x %struct.version_info.1779608], ptr %0, i64 0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -31,10 +30,9 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 524288
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 0, i32 3
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [4 x %struct.percpu_counter.1998320], ptr %0, i64 0, i64 %5
-  ret ptr %6
+  %4 = select i1 %3, i64 0, i64 3
+  %5 = getelementptr [4 x %struct.percpu_counter.1998320], ptr %0, i64 0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

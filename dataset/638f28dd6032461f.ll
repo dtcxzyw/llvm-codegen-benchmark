@@ -16,10 +16,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
+  %.fr = freeze i64 %0
+  %1 = trunc i64 %.fr to i32
   %2 = add i32 %1, -1000000000
-  %3 = udiv i32 %2, 1000000000
-  %4 = mul i32 %3, -1000000000
+  %3 = urem i32 %2, 1000000000
+  %4 = sub i32 %3, %2
   ret i32 %4
 }
 
@@ -28,10 +29,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = add nuw nsw i32 %1, 99
-  %3 = udiv i32 %2, 100
-  %4 = mul nuw nsw i32 %3, 100
+  %.fr = freeze i64 %0
+  %1 = trunc i64 %.fr to i32
+  %2 = add i32 %1, 99
+  %3 = urem i32 %2, 100
+  %4 = sub nuw i32 %2, %3
   ret i32 %4
 }
 
@@ -41,10 +43,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, 719468
-  %3 = udiv i32 %2, 146097
-  %4 = mul nsw i32 %3, -146097
+  %.fr = freeze i64 %0
+  %1 = trunc i64 %.fr to i32
+  %2 = add i32 %1, 719468
+  %3 = urem i32 %2, 146097
+  %4 = sub i32 %3, %2
   ret i32 %4
 }
 

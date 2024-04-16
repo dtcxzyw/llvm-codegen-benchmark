@@ -6,8 +6,8 @@ func00000000000000b1:                   # @func00000000000000b1
 	seqz	a0, a0
 	ret
 func00000000000001f4:                   # @func00000000000001f4
-	addiw	a1, a1, 26
-	addi	a1, a1, 1
+	zext.w	a1, a1
+	addi	a1, a1, 27
 	sltu	a0, a1, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
@@ -17,8 +17,8 @@ func00000000000000d1:                   # @func00000000000000d1
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
-	addiw	a1, a1, 4
-	addi	a1, a1, 2
+	zext.w	a1, a1
+	addi	a1, a1, 6
 	sltu	a0, a0, a1
 	ret
 func00000000000000b8:                   # @func00000000000000b8
@@ -28,8 +28,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	sltu	a0, a0, a1
 	ret
 func0000000000000178:                   # @func0000000000000178
-	addiw	a1, a1, 12
-	addi	a1, a1, 4
+	zext.w	a1, a1
+	addi	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -39,9 +39,8 @@ func0000000000000051:                   # @func0000000000000051
 	seqz	a0, a0
 	ret
 func0000000000000138:                   # @func0000000000000138
-	addi	a1, a1, 1
 	zext.w	a1, a1
-	addi	a1, a1, 2
+	addi	a1, a1, 3
 	sltu	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
@@ -66,9 +65,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func00000000000001d6:                   # @func00000000000001d6
 	sext.w	a0, a0
-	addi	a1, a1, 28
+	addi	a1, a1, 4
 	zext.h	a1, a1
-	addi	a1, a1, -24
 	slt	a0, a1, a0
 	ret
 func0000000000000016:                   # @func0000000000000016

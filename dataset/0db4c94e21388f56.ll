@@ -83,9 +83,9 @@ entry:
 define i8 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i8
-  %4 = icmp sle i64 %0, %1
-  %5 = select i1 %4, i8 %3, i8 0
-  ret i8 %5
+  %.not = icmp sgt i64 %0, %1
+  %4 = select i1 %.not, i8 0, i8 %3
+  ret i8 %4
 }
 
 ; 2 occurrences:

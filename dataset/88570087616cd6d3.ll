@@ -20,7 +20,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %0, i32 %2)
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -77,7 +77,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smin.i64(i64 %2, i64 %0)
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -95,7 +95,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 %0)
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }

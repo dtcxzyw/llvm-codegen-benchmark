@@ -7,10 +7,10 @@
 define i1 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 2
-  %4 = and i8 %3, 1
-  %5 = and i8 %1, 1
-  %6 = icmp eq i8 %5, %4
-  %7 = or i1 %0, %6
+  %4 = xor i8 %3, %1
+  %5 = and i8 %4, 1
+  %6 = icmp eq i8 %5, 0
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = and i32 %3, 63
   %5 = and i32 %1, 63
   %6 = icmp ugt i32 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

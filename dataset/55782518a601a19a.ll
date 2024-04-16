@@ -155,8 +155,8 @@ entry:
 define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
-  %4 = icmp sgt i32 %1, -1
-  %5 = select i1 %4, i32 %0, i32 %3
+  %4 = icmp slt i32 %1, 0
+  %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
 
@@ -166,9 +166,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, i32 %3, i32 %0
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

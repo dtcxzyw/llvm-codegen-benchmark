@@ -7,7 +7,7 @@
 define i64 @func0000000000000009(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = shl i32 %3, 1
   %5 = or disjoint i32 %4, 1
   %6 = sext i32 %5 to i64

@@ -16,7 +16,7 @@ entry:
   %4 = sub nuw nsw i32 64, %3
   %5 = zext nneg i32 %4 to i64
   %6 = lshr i64 %1, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

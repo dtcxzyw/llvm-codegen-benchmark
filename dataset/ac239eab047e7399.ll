@@ -21,10 +21,10 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nsw i32 %3, -8
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 8
-  %7 = getelementptr i8, ptr %6, i64 %5
+  %4 = getelementptr i8, ptr %0, i64 8
+  %5 = sext i32 %3 to i64
+  %6 = getelementptr i8, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 
@@ -34,10 +34,10 @@ entry:
 define ptr @func0000000000000015(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nsw i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 4
-  %7 = getelementptr inbounds i8, ptr %6, i64 %5
+  %4 = getelementptr i8, ptr %0, i64 4
+  %5 = sext i32 %3 to i64
+  %6 = getelementptr i8, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -51,10 +51,10 @@ entry:
 define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nsw i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 -8
-  %7 = getelementptr inbounds double, ptr %6, i64 %5
+  %4 = getelementptr inbounds i8, ptr %0, i64 -8
+  %5 = sext i32 %3 to i64
+  %6 = getelementptr double, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -78,10 +78,10 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add nsw i32 %3, 4
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 -8
-  %7 = getelementptr inbounds double, ptr %6, i64 %5
+  %4 = getelementptr inbounds i8, ptr %0, i64 -8
+  %5 = sext i32 %3 to i64
+  %6 = getelementptr double, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 32
   ret ptr %7
 }
 

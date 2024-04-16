@@ -12,7 +12,7 @@ entry:
   %2 = mul i32 %1, 1461
   %3 = add i32 %2, 7012800
   %4 = sdiv i32 %3, 4
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -29,7 +29,7 @@ entry:
   %2 = mul nsw i64 %1, 4000
   %3 = add nsw i64 %2, 4000
   %4 = sdiv i64 %3, 1461001
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -42,7 +42,7 @@ entry:
   %2 = mul nsw i64 %1, 10000
   %3 = add nsw i64 %2, 14780
   %4 = sdiv i64 %3, 365242500
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -54,7 +54,7 @@ entry:
   %2 = mul i32 %1, -137
   %3 = add nsw i32 %2, 136
   %4 = sdiv i32 %3, 59
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

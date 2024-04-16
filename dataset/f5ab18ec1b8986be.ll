@@ -6,7 +6,7 @@
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = tail call noundef i32 @llvm.cttz.i32(i32 %3, i1 true), !range !0
   ret i32 %4
 }
@@ -41,7 +41,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = tail call i32 @llvm.cttz.i32(i32 %3, i1 false), !range !0
   ret i32 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = tail call noundef i32 @llvm.cttz.i32(i32 %3, i1 false), !range !0
   ret i32 %4
 }

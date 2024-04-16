@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw nsw i32 4, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i32, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds %struct.ldmEntry_t.1956982, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr %struct.HUF_DEltX2.2008728, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

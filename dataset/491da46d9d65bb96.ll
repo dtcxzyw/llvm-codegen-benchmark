@@ -205,7 +205,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 64
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -254,7 +254,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = lshr exact i16 %2, 3
   %4 = and i16 %3, 4
-  %5 = or disjoint i16 %0, %4
+  %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
 

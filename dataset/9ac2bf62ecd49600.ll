@@ -12,7 +12,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

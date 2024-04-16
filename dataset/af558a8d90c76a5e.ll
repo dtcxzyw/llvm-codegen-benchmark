@@ -20,9 +20,10 @@ define i64 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -86400000
   %4 = add i64 %3, %1
-  %5 = add i64 %0, %4
-  %6 = sdiv i64 %5, 60000
-  %7 = mul nsw i64 %6, -60000
+  %5 = add i64 %4, %0
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 60000
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 
@@ -49,7 +50,7 @@ define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -3600000000
   %4 = add i64 %3, %1
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = sdiv i64 %5, 1000000
   %7 = mul i64 %6, 4293967296
   ret i64 %7
@@ -65,8 +66,9 @@ entry:
   %3 = mul nsw i64 %2, -3600000000
   %4 = add nsw i64 %3, %1
   %5 = add nsw i64 %4, %0
-  %6 = sdiv i64 %5, 1000000
-  %7 = mul nsw i64 %6, -1000000
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 1000000
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 
@@ -81,8 +83,9 @@ entry:
   %3 = mul nsw i64 %2, -3600000000000
   %4 = add nsw i64 %3, %1
   %5 = add i64 %4, %0
-  %6 = sdiv i64 %5, 1000000000
-  %7 = mul nsw i64 %6, -1000000000
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 1000000000
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 

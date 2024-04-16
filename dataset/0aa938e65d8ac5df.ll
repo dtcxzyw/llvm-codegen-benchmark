@@ -59,7 +59,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = trunc i32 %3 to i16
   %5 = shl i16 %4, 5
-  %6 = or disjoint i16 %0, %5
+  %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 

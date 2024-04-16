@@ -6,7 +6,7 @@ define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 60
   %3 = sub nsw i32 %1, %2
-  %4 = icmp sle i32 %0, %3
+  %4 = icmp sge i32 %3, %0
   ret i1 %4
 }
 
@@ -106,7 +106,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 8
   %3 = sub nsw i32 %1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -117,7 +117,7 @@ define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 16
   %3 = sub nsw i64 %1, %2
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -128,7 +128,7 @@ define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 16
   %3 = sub nsw i64 %1, %2
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -139,7 +139,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 32
   %3 = sub i32 %1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -150,7 +150,7 @@ define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 16
   %3 = sub nsw i32 %1, %2
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -161,7 +161,7 @@ define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 64
   %3 = sub nsw i64 %1, %2
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
 

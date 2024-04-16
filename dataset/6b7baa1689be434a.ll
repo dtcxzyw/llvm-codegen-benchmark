@@ -122,7 +122,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, -1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -139,7 +139,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 1
   %6 = add nsw i64 %5, 1
-  %7 = icmp sgt i64 %0, %6
+  %7 = icmp slt i64 %6, %0
   ret i1 %7
 }
 
@@ -243,7 +243,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = add nsw i64 %5, -1
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -276,7 +276,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, 1
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -289,7 +289,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, -1
-  %7 = icmp ne i64 %0, %6
+  %7 = icmp ne i64 %6, %0
   ret i1 %7
 }
 
@@ -306,7 +306,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
   %6 = add nsw i64 %5, -1
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

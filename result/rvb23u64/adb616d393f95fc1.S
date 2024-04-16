@@ -1,10 +1,10 @@
 func000000000000000f:                   # @func000000000000000f
-	andi	a0, a0, 31
-	slli	a0, a0, 2
+	slli	a0, a0, 59
+	srli	a0, a0, 57
 	addi	a0, a0, -4
 	ret
 func000000000000001f:                   # @func000000000000001f
-	andi	a0, a0, 255
-	slli	a0, a0, 4
+	slli	a0, a0, 56
+	srli	a0, a0, 52
 	addi	a0, a0, 16
 	ret

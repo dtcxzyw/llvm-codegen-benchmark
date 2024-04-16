@@ -43,7 +43,7 @@ entry:
   %4 = mul nuw nsw i64 %1, 60
   %5 = add nuw nsw i64 %4, %3
   %6 = mul nuw nsw i64 %5, 1000000
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -96,7 +96,7 @@ entry:
   %4 = mul nuw nsw i32 %1, 91
   %5 = add nuw nsw i32 %4, %3
   %6 = mul nuw nsw i32 %5, 91
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -149,7 +149,7 @@ entry:
   %4 = mul i64 %1, 10
   %5 = add i64 %4, %3
   %6 = mul nuw i64 %5, 10
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

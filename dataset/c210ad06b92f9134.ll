@@ -19,8 +19,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = call i64 @llvm.umax.i64(i64 %1, i64 %4)
-  %6 = add nuw nsw i64 %5, %1
-  %7 = getelementptr inbounds i32, ptr %0, i64 %6
+  %6 = getelementptr i32, ptr %0, i64 %5
+  %7 = getelementptr i32, ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -80,8 +80,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = call i64 @llvm.umax.i64(i64 %1, i64 %4)
-  %6 = add nuw nsw i64 %5, %1
-  %7 = getelementptr inbounds %"class.re2::StringPiece.1719271", ptr %0, i64 %6
+  %6 = getelementptr %"class.re2::StringPiece.1719271", ptr %0, i64 %5
+  %7 = getelementptr %"class.re2::StringPiece.1719271", ptr %6, i64 %1
   ret ptr %7
 }
 

@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %2, i64 48)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = mul i64 %1, 48
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 48
+  ret ptr %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -22,11 +21,10 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %2, i64 3)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = mul i64 %1, 3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -34,11 +32,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %2, i64 24)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = mul i64 %1, 24
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -24
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -32,7 +32,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %3 = and i32 %2, 255
+  %3 = and i32 %2, 252
   %4 = icmp ult i32 %3, 36
   ret i1 %4
 }

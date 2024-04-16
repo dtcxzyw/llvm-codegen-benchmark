@@ -9,7 +9,7 @@
 define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ult i64 %3, 4096
   ret i1 %4
 }
@@ -33,7 +33,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp eq i64 %3, -81929232789475893
   ret i1 %4
 }
@@ -45,7 +45,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ne i64 %3, -81929232789475893
   ret i1 %4
 }
@@ -56,7 +56,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ugt i64 %3, 16383
   ret i1 %4
 }

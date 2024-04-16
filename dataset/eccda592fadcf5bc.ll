@@ -18,10 +18,9 @@
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = trunc i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = trunc i64 %.v to i32
+  ret i32 %3
 }
 
 ; 7 occurrences:
@@ -36,10 +35,9 @@ entry:
 define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = trunc i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = trunc i64 %.v to i32
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

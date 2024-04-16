@@ -31,7 +31,7 @@ entry:
   %4 = shl nuw nsw i64 1, %1
   %5 = and i64 %4, %3
   %6 = icmp ne i64 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = shl nuw i64 1, %1
   %5 = and i64 %4, %3
   %6 = icmp eq i64 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

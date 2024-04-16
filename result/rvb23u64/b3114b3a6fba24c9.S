@@ -26,7 +26,7 @@ func0000000000000290:                   # @func0000000000000290
 	slti	a2, a2, 92
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a0, a0, -36
+	addiw	a0, a0, 220
 	ret
 func0000000000000294:                   # @func0000000000000294
 	sext.h	a2, a2

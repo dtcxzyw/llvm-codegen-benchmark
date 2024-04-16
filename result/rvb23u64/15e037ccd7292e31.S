@@ -1,5 +1,5 @@
 func0000000000000011:                   # @func0000000000000011
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -256
@@ -10,8 +10,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000044:                   # @func0000000000000044
 	sub	a1, a1, a2
 	sltiu	a1, a1, 32
-	zext.w	a0, a0
-	sltiu	a0, a0, 8
+	srliw	a0, a0, 3
+	slli	a0, a0, 3
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
@@ -46,7 +47,7 @@ func000000000000008c:                   # @func000000000000008c
 	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	bexti	a0, a0, 3
 	or	a0, a0, a1

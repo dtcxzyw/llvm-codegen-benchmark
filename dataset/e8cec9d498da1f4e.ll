@@ -38,8 +38,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = xor i8 %0, 1
-  %2 = trunc i8 %1 to i1
+  %1 = trunc i8 %0 to i1
+  %2 = xor i1 %1, true
   ret i1 %2
 }
 
@@ -50,8 +50,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i8 %0) #0 {
 entry:
-  %1 = xor i8 %0, 1
-  %2 = trunc nuw i8 %1 to i1
+  %1 = trunc i8 %0 to i1
+  %2 = xor i1 %1, true
   ret i1 %2
 }
 

@@ -202,7 +202,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 72
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp eq i64 %6, 128102389400760775
   ret i1 %7
 }
@@ -278,7 +278,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 80
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp ult i64 %6, 8
   ret i1 %7
 }
@@ -405,8 +405,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv i64 %4, 64
-  %6 = add nsw i64 %5, %0
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 
@@ -432,7 +432,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp slt i64 %6, 0
   ret i1 %7
 }
@@ -446,7 +446,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp slt i64 %6, 0
   ret i1 %7
 }

@@ -48,7 +48,7 @@
 define i1 @func0000000000000002(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp olt float %0, %2
+  %3 = fcmp ogt float %2, %0
   ret i1 %3
 }
 
@@ -99,7 +99,7 @@ entry:
 define i1 @func0000000000000004(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   ret i1 %3
 }
 
@@ -118,7 +118,7 @@ entry:
 define i1 @func0000000000000008(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp oeq float %0, %2
+  %3 = fcmp oeq float %2, %0
   ret i1 %3
 }
 
@@ -136,7 +136,7 @@ entry:
 define i1 @func000000000000000a(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp ole float %0, %2
+  %3 = fcmp oge float %2, %0
   ret i1 %3
 }
 
@@ -150,7 +150,7 @@ entry:
 define i1 @func0000000000000005(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp ugt float %0, %2
+  %3 = fcmp ult float %2, %0
   ret i1 %3
 }
 
@@ -163,7 +163,7 @@ entry:
 define i1 @func000000000000000c(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp oge float %0, %2
+  %3 = fcmp ole float %2, %0
   ret i1 %3
 }
 
@@ -179,7 +179,7 @@ entry:
 define i1 @func0000000000000007(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp une float %0, %2
+  %3 = fcmp une float %2, %0
   ret i1 %3
 }
 
@@ -194,7 +194,7 @@ entry:
 define i1 @func0000000000000003(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp ult float %0, %2
+  %3 = fcmp ugt float %2, %0
   ret i1 %3
 }
 
@@ -205,7 +205,7 @@ entry:
 define i1 @func0000000000000001(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp uno float %0, %2
+  %3 = fcmp uno float %2, %0
   ret i1 %3
 }
 
@@ -215,7 +215,7 @@ entry:
 define i1 @func000000000000000b(float %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
-  %3 = fcmp ule float %0, %2
+  %3 = fcmp uge float %2, %0
   ret i1 %3
 }
 

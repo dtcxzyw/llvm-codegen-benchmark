@@ -9,7 +9,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ult i8 %1, 64
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = icmp eq i64 %2, -1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -84,7 +84,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i32 %1, 256
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -102,7 +102,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -131,7 +131,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ne i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -161,7 +161,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -173,7 +173,7 @@ entry:
   %3 = icmp ult i32 %2, -6
   %4 = icmp ult i32 %1, 58
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -186,7 +186,7 @@ entry:
   %3 = icmp sgt i64 %2, -1
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -199,7 +199,7 @@ entry:
   %3 = icmp ult i64 %2, 1793
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -212,7 +212,7 @@ entry:
   %3 = icmp ugt i8 %2, 14
   %4 = icmp eq i8 %1, 2
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -224,7 +224,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp slt i32 %1, 64
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -236,7 +236,7 @@ entry:
   %3 = icmp sgt i32 %2, -1
   %4 = icmp eq i32 %1, 1
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

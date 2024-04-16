@@ -33,10 +33,10 @@ entry:
 define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
-  %5 = shl nuw i64 1, %1
-  %6 = icmp ult i64 %4, %5
-  ret i1 %6
+  %4 = and i64 %3, %0
+  %.highbits = lshr i64 %4, %1
+  %5 = icmp eq i64 %.highbits, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = shl nuw i32 1, %1
   %6 = icmp slt i32 %4, %5
   ret i1 %6

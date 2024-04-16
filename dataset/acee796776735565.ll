@@ -22,10 +22,9 @@
 define i1 @func0000000000000031(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr inbounds %"class.easylog::record_t.1699656", ptr %3, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 64
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr inbounds %"class.easylog::record_t.1699656", ptr %3, i64 %1, i32 4, i32 2
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -36,7 +35,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -52,7 +51,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -72,7 +71,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -1
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -92,7 +91,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -1
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

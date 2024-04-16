@@ -5,7 +5,7 @@
 define i16 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8191
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = trunc nuw i32 %5 to i16
   %7 = tail call i16 @llvm.bswap.i16(i16 %6)
@@ -21,7 +21,7 @@ declare i16 @llvm.bswap.i16(i16) #1
 define i16 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2016
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = trunc i32 %5 to i16
   %7 = tail call i16 @llvm.bswap.i16(i16 %6)
@@ -34,8 +34,8 @@ entry:
 define i16 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %1, %3
-  %5 = or disjoint i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = or disjoint i32 %4, %0
   %6 = trunc nuw i32 %5 to i16
   %7 = tail call noundef i16 @llvm.bswap.i16(i16 %6)
   ret i16 %7

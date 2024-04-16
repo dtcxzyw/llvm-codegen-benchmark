@@ -9,7 +9,7 @@ entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
   %5 = shl i64 %4, %0
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = lshr i64 %6, %0
   ret i64 %7
 }

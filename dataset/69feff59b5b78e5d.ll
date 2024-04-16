@@ -27,7 +27,7 @@ entry:
   %4 = icmp slt i32 %3, 1
   %5 = icmp slt i32 %1, 1
   %6 = and i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = icmp eq i32 %3, -10
   %5 = icmp eq i32 %1, -7
   %6 = and i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

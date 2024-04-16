@@ -30,7 +30,7 @@ define i64 @func0000000000000034(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.cttz.i16(i16 %2, i1 true), !range !0
   %4 = zext nneg i16 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = add nsw i64 %1, -1
   %7 = and i64 %5, %6
   ret i64 %7

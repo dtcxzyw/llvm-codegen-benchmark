@@ -6,10 +6,9 @@
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = sdiv i32 %2, 7
-  %4 = mul nsw i32 %3, -7
-  %5 = add i32 %4, %2
-  ret i32 %5
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 7
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -19,10 +18,9 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = sdiv i32 %2, 1000000
-  %4 = mul nsw i32 %3, -1000000
-  %5 = add i32 %4, %2
-  ret i32 %5
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 1000000
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -31,10 +29,9 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = sdiv i32 %2, 1000000
-  %4 = mul nsw i32 %3, -1000000
-  %5 = add nsw i32 %4, %2
-  ret i32 %5
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 1000000
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

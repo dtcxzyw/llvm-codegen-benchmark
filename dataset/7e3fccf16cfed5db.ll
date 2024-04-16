@@ -5,7 +5,7 @@
 define i32 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smax.i64(i64 %1, i64 %2)
-  %4 = icmp sge i64 %0, %3
+  %4 = icmp sle i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -20,7 +20,7 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 define i8 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smax.i64(i64 %1, i64 %2)
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -31,7 +31,7 @@ entry:
 define i32 @func000000000000002e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
-  %4 = icmp sle i32 %0, %3
+  %4 = icmp sge i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -45,7 +45,7 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -56,7 +56,7 @@ entry:
 define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

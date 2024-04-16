@@ -7,7 +7,7 @@ func0000000000000006:                   # @func0000000000000006
 	sltu	a4, a2, a4
 	add	a3, a3, a5
 	add	a3, a3, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	slt	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2

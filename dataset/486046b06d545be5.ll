@@ -6,12 +6,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000111(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 0, %1
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %4, ptr null, ptr %3
-  %6 = icmp eq ptr %5, null
-  ret i1 %6
+  %2 = icmp eq ptr %0, null
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -19,12 +15,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000011c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 0, %1
-  %3 = getelementptr inbounds double, ptr %0, i64 %2
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %4, ptr null, ptr %3
-  %6 = icmp ne ptr %5, null
-  ret i1 %6
+  %2 = icmp ne ptr %0, null
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -34,9 +26,9 @@ define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = getelementptr i64, ptr %0, i64 %2
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %4, ptr null, ptr %3
-  %6 = icmp ne ptr %5, null
+  %4 = icmp ne ptr %0, null
+  %5 = icmp ne ptr %3, null
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -48,8 +40,8 @@ entry:
   %2 = sub i64 0, %1
   %3 = getelementptr ptr, ptr %0, i64 %2
   %4 = icmp eq ptr %0, null
-  %5 = select i1 %4, ptr null, ptr %3
-  %6 = icmp eq ptr %5, null
+  %5 = icmp eq ptr %3, null
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 

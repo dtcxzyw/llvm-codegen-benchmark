@@ -76,8 +76,8 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 9223372036854775800
-  %5 = select i1 %4, i64 %0, i64 2305843009213693951
-  %6 = shl nuw i64 %5, 3
+  %5 = shl nuw i64 %0, 3
+  %6 = select i1 %4, i64 %5, i64 -8
   ret i64 %6
 }
 
@@ -88,8 +88,8 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 8
-  %5 = select i1 %4, i64 %0, i64 4
-  %6 = shl i64 %5, 3
+  %5 = shl i64 %0, 3
+  %6 = select i1 %4, i64 %5, i64 32
   ret i64 %6
 }
 

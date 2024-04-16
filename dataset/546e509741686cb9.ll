@@ -6,8 +6,8 @@ define i64 @func000000000000000b(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nsw i64 %1, -1
-  %3 = lshr i64 %2, 6
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 2305843009213693944
   ret i64 %4
 }
 
@@ -41,8 +41,8 @@ define i64 @func000000000000001b(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 63
-  %3 = lshr i64 %2, 6
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 1073741816
   ret i64 %4
 }
 
@@ -53,9 +53,9 @@ entry:
 define i64 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
-  %2 = add nuw nsw i64 %1, 34359738364
-  %3 = lshr i64 %2, 3
-  %4 = shl i64 %3, 32
+  %2 = shl nuw nsw i64 %1, 29
+  %3 = add nsw i64 %2, -2147483648
+  %4 = and i64 %3, -4294967296
   ret i64 %4
 }
 

@@ -7,7 +7,7 @@ entry:
   %3 = icmp ult i32 %0, %2
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = icmp eq i32 %0, %2
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

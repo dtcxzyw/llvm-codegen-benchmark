@@ -21,7 +21,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 2147483647
   %3 = and i64 %2, 2147483647
   %4 = getelementptr %struct.rb_econv_elem_t.1553238, ptr %0, i64 %3, i32 5
   ret ptr %4
@@ -64,7 +64,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = getelementptr inbounds %struct.reflog_info.1780926, ptr %0, i64 %3, i32 3
   ret ptr %4
@@ -76,7 +76,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
+  %2 = add i64 %1, 2147483647
   %3 = and i64 %2, 2147483647
   %4 = getelementptr %class.QPointF.1927662, ptr %0, i64 %3, i32 1
   ret ptr %4

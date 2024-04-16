@@ -11,7 +11,7 @@ entry:
   %4 = select i1 %3, i32 32, i32 64
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 0, i32 %4
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = select i1 %3, i32 4, i32 2
   %5 = icmp ult i64 %1, -4294967296
   %6 = select i1 %5, i32 8, i32 %4
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 

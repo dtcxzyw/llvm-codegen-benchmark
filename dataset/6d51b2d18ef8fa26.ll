@@ -73,7 +73,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 %1, 64
-  %3 = and i128 %0, %2
+  %3 = and i128 %2, %0
   ret i128 %3
 }
 

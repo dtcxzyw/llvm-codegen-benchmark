@@ -43,7 +43,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -8
+  %2 = and i64 %1, 9223372036854775800
   %3 = sub i64 %0, %2
   %4 = add i64 %3, 15
   %5 = and i64 %4, 9223372036854775792
@@ -55,11 +55,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 2251799813685247
-  %3 = sub nsw i64 %0, %2
-  %4 = add nsw i64 %3, 4503599627370458
-  %5 = and i64 %4, 2251799813685247
-  ret i64 %5
+  %2 = sub i64 %0, %1
+  %3 = add i64 %2, 2251799813685210
+  %4 = and i64 %3, 2251799813685247
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

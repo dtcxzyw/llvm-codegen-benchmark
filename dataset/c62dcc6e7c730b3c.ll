@@ -30,7 +30,7 @@ entry:
   %4 = or disjoint i24 %3, 1
   %5 = zext i24 %4 to i40
   %6 = shl nuw i40 %5, 16
-  %7 = or disjoint i40 %0, %6
+  %7 = or disjoint i40 %6, %0
   ret i40 %7
 }
 

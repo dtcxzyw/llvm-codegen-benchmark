@@ -7,12 +7,14 @@ func0000000000000031:                   # @func0000000000000031
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	mulh	a1, a0, a1
-	add	a0, a0, a1
-	srli	a1, a0, 63
-	srai	a0, a0, 8
-	add	a0, a0, a1
-	li	a1, -400
-	mul	a0, a0, a1
+	add	a1, a1, a0
+	srli	a2, a1, 63
+	srai	a1, a1, 8
+	add	a1, a1, a2
+	li	a2, 400
+	mul	a1, a1, a2
+	sub	a0, a0, a0
+	sub	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a1

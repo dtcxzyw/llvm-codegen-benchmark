@@ -11,7 +11,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %2, 32
   %4 = bitcast i64 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 32
   %4 = bitcast i64 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 52
   %4 = bitcast i64 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

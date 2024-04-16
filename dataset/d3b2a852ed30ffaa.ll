@@ -45,7 +45,7 @@ entry:
   %2 = add i64 %1, 1
   %3 = lshr i64 %2, 4
   %4 = zext i1 %0 to i64
-  %5 = add nuw nsw i64 %3, %4
+  %5 = or i64 %3, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

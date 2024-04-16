@@ -19,10 +19,9 @@ entry:
 define i32 @func0000000000000079(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = mul nuw nsw i32 %0, 10
-  %4 = add nuw i32 %3, %2
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %0, -10
+  %.neg1 = sub i32 %.neg, %2
+  ret i32 %.neg1
 }
 
 ; 2 occurrences:
@@ -32,10 +31,9 @@ entry:
 define i32 @func0000000000000055(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul nsw i32 %0, 10
-  %4 = add nsw i32 %3, %2
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %0, -10
+  %.neg1 = sub i32 %.neg, %2
+  ret i32 %.neg1
 }
 
 ; 1 occurrences:
@@ -44,10 +42,9 @@ entry:
 define i32 @func0000000000000039(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nuw nsw i32 %0, 10
-  %4 = add nuw i32 %3, %2
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %0, -10
+  %.neg1 = sub i32 %.neg, %2
+  ret i32 %.neg1
 }
 
 ; 1 occurrences:
@@ -56,10 +53,9 @@ entry:
 define i64 @func0000000000000040(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul i64 %0, 10
-  %4 = add i64 %3, %2
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg = mul i64 %0, -10
+  %.neg1 = sub i64 %.neg, %2
+  ret i64 %.neg1
 }
 
 ; 1 occurrences:

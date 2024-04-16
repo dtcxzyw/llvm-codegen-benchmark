@@ -7,8 +7,8 @@
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = or disjoint i64 %2, 50331648
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = or i32 %3, 50331648
   ret i32 %4
 }
 
@@ -18,8 +18,8 @@ entry:
 define i8 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, %1
-  %3 = or i16 %2, 4100
-  %4 = trunc i16 %3 to i8
+  %3 = trunc i16 %2 to i8
+  %4 = or i8 %3, 4
   ret i8 %4
 }
 
@@ -40,8 +40,8 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = or i64 %2, 2
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = or i32 %3, 2
   ret i32 %4
 }
 
@@ -52,8 +52,8 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = or disjoint i64 %2, 30
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = or i32 %3, 30
   ret i32 %4
 }
 

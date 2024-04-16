@@ -7,8 +7,8 @@
 define i32 @func0000000000000007(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = add nsw i32 %4, %0
   %6 = zext i1 %1 to i32
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -28,7 +28,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 29
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = zext i1 %1 to i32
   %7 = add i32 %5, %6
   ret i32 %7
@@ -42,7 +42,7 @@ define i64 @func0000000000000048(i64 %0, i1 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   %6 = zext i1 %1 to i64
   %7 = add i64 %5, %6
   ret i64 %7
@@ -56,7 +56,7 @@ define i64 @func0000000000000040(i64 %0, i1 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = zext i1 %1 to i64
   %7 = add i64 %5, %6
   ret i64 %7
@@ -68,8 +68,8 @@ entry:
 define i32 @func000000000000000f(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
-  %4 = trunc i64 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = add nuw nsw i32 %4, %0
   %6 = zext i1 %1 to i32
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -83,8 +83,8 @@ entry:
 define i64 @func0000000000000008(i64 %0, i1 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = add nuw i64 %0, %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add nuw i64 %4, %0
   %6 = zext i1 %1 to i64
   %7 = add i64 %5, %6
   ret i64 %7
@@ -96,8 +96,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %4 = trunc nuw i64 %3 to i32
+  %5 = add nsw i32 %4, %0
   %6 = zext i1 %1 to i32
   %7 = add nsw i32 %5, %6
   ret i32 %7

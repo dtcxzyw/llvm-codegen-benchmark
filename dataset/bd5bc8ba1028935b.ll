@@ -18,7 +18,7 @@ define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 0, i64 -8
-  %4 = mul nsw i64 %0, %3
+  %4 = mul nsw i64 %3, %0
   ret i64 %4
 }
 

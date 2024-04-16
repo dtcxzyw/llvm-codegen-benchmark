@@ -5,11 +5,10 @@
 define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 10
-  %4 = icmp ne i32 %3, 0
-  %5 = icmp eq ptr %0, null
-  %6 = and i1 %4, %5
-  ret i1 %6
+  %3 = icmp ne i32 %2, -10
+  %4 = icmp eq ptr %0, null
+  %5 = and i1 %3, %4
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -19,11 +18,10 @@ entry:
 define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = icmp ne i32 %3, 0
-  %5 = icmp ne ptr %0, null
-  %6 = and i1 %5, %4
-  ret i1 %6
+  %3 = icmp ne i32 %2, -1
+  %4 = icmp ne ptr %0, null
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -32,8 +30,8 @@ entry:
 define i1 @func000000000000008c(ptr %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = add i8 %2, -4
-  %4 = icmp ugt i8 %3, 10
+  %3 = add i8 %2, -15
+  %4 = icmp ult i8 %3, -11
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6

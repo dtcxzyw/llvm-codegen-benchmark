@@ -17,10 +17,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp sgt i32 %1, %0
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %3 = call i32 @llvm.smin.i32(i32 %1, i32 %0)
+  %4 = select i1 %2, i32 %3, i32 %1
+  ret i32 %4
 }
 
 ; 5 occurrences:
@@ -32,10 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %0, %1
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %3 = call i32 @llvm.umax.i32(i32 %0, i32 %1)
+  %4 = select i1 %2, i32 %3, i32 %1
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -45,10 +43,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp ult i32 %0, %1
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %3 = call i32 @llvm.umin.i32(i32 %0, i32 %1)
+  %4 = select i1 %2, i32 %3, i32 %1
+  ret i32 %4
 }
 
 ; 10 occurrences:
@@ -65,10 +62,22 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp slt i32 %1, %0
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %3 = call i32 @llvm.smax.i32(i32 %1, i32 %0)
+  %4 = select i1 %2, i32 %3, i32 %1
+  ret i32 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umax.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umin.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

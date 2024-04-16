@@ -395,11 +395,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 63, i32 %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 1, %4
-  %6 = xor i64 %5, -1
-  %7 = and i64 %0, %6
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw i64 1, %3
+  %5 = xor i64 %4, -1
+  %6 = select i1 %1, i64 9223372036854775807, i64 %5
+  %7 = and i64 %6, %0
   ret i64 %7
 }
 

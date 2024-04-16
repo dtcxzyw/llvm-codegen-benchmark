@@ -43,9 +43,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000005d(i32 %0, double %1) #0 {
 entry:
-  %2 = add nsw i32 %0, -1
-  %3 = fcmp une double %1, 0.000000e+00
-  %4 = select i1 %3, i32 %2, i32 %0
+  %2 = fcmp une double %1, 0.000000e+00
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %3, %0
   %5 = add nsw i32 %4, -1
   ret i32 %5
 }

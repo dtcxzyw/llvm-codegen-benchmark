@@ -36,8 +36,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i16 0, i16 %1
-  %5 = zext i16 %4 to i64
+  %4 = zext i16 %1 to i64
+  %5 = select i1 %3, i64 0, i64 %4
   %6 = getelementptr %struct.NvmeReclaimUnit.1665079, ptr %0, i64 %5
   ret ptr %6
 }
@@ -75,8 +75,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 3
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 0, i64 %4
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -164,8 +164,8 @@ entry:
 define ptr @func0000000000000029(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
-  %4 = select i1 %3, i32 12, i32 %1
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %1 to i64
+  %5 = select i1 %3, i64 12, i64 %4
   %6 = getelementptr inbounds %"struct.duckdb_fmt::v6::internal::arg_map<duckdb_fmt::v6::basic_format_context<std::back_insert_iterator<duckdb_fmt::v6::internal::buffer<char>>, char>>::entry.1812547", ptr %0, i64 %5
   ret ptr %6
 }
@@ -198,8 +198,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 2, i32 %1
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 2, i64 %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -234,11 +234,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 0
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

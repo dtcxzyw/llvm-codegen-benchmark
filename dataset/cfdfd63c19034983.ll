@@ -15,7 +15,7 @@
 define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 8
   %7 = getelementptr inbounds [2 x %"class.std::unique_ptr.41.1565381"], ptr %6, i64 0, i64 %5
@@ -28,7 +28,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 72
   %7 = getelementptr [8 x i8], ptr %6, i64 0, i64 %5
@@ -41,7 +41,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 160
   %7 = getelementptr [8 x i32], ptr %6, i64 0, i64 %5
@@ -87,7 +87,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 276
   %7 = getelementptr inbounds [38 x i32], ptr %6, i64 0, i64 %5

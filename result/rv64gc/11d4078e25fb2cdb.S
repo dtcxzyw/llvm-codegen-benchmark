@@ -1,33 +1,25 @@
 .LCPI0_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
 func0000000000000118:                   # @func0000000000000118
-	bne	a0, a1, .LBB0_2
-	li	a2, 1
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	sltu	a0, a0, a2
-	ret
-.LBB0_2:
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 1
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	sltu	a0, a0, a2
+	xor	a0, a0, a1
+	snez	a0, a0
+	sltu	a1, a3, a2
+	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	bne	a0, a1, .LBB1_2
-	li	a2, 1
-	seqz	a0, a2
-	ret
-.LBB1_2:
-	slli	a2, a2, 1
-	seqz	a0, a2
+	xor	a0, a0, a1
+	snez	a0, a0
+	seqz	a1, a2
+	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	bne	a0, a1, .LBB2_2
-	li	a2, 1
-	seqz	a0, a2
-	ret
-.LBB2_2:
+	xor	a0, a0, a1
+	snez	a0, a0
 	slli	a2, a2, 1
-	seqz	a0, a2
+	srli	a2, a2, 1
+	seqz	a1, a2
+	and	a0, a0, a1
 	ret

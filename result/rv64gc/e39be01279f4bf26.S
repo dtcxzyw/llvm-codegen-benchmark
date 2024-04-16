@@ -6,8 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	srli	a0, a0, 24
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a1, a1
 	not	a1, a1
+	sext.w	a1, a1
 	add	a0, a0, a1
 	srli	a0, a0, 2
 	ret

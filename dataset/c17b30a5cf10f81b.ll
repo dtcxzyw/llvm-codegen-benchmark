@@ -28,8 +28,8 @@ entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i64 %0, i64 %1
-  %6 = add i64 %5, 1
-  %7 = icmp ugt i64 %6, -9
+  %6 = add i64 %5, 9
+  %7 = icmp ult i64 %6, 8
   ret i1 %7
 }
 
@@ -80,9 +80,8 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
-  %6 = add nsw i32 %5, -1
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %6 = icmp eq i32 %5, 1
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -106,9 +105,8 @@ entry:
   %3 = and i16 %2, 4096
   %4 = icmp eq i16 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
-  %6 = add i32 %5, 1
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %6 = icmp eq i32 %5, -1
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

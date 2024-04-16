@@ -1,73 +1,57 @@
 func000000000000021a:                   # @func000000000000021a
-	lui	a3, 1
-	addiw	a3, a3, 4
-	bltu	a3, a1, .LBB0_2
-	subw	a0, a0, a0
+	add	a0, a0, a2
+	lui	a2, 1
+	addiw	a2, a2, 4
+	sltu	a1, a2, a1
+	lui	a2, 1048575
+	addi	a2, a2, -4
+	addw	a0, a0, a2
 	sgtz	a0, a0
-	ret
-.LBB0_2:
-	sub	a3, a3, a2
-	subw	a0, a0, a3
-	sgtz	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000e01:                   # @func0000000000000e01
-	sext.w	a3, a1
-	lui	a1, 16
-	bltu	a1, a3, .LBB1_2
-	subw	a0, a0, a0
+	sext.w	a1, a1
+	lui	a3, 1048560
+	addw	a2, a2, a3
+	lui	a3, 16
+	addiw	a3, a3, 1
+	sltu	a1, a1, a3
+	negw	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
-	ret
-.LBB1_2:
-	sub	a1, a1, a2
-	subw	a0, a0, a1
-	seqz	a0, a0
+	or	a0, a0, a1
 	ret
 func0000000000000e1a:                   # @func0000000000000e1a
-	sext.w	a3, a1
-	lui	a1, 32
-	bltu	a1, a3, .LBB2_2
-	subw	a0, a0, a0
+	sext.w	a1, a1
+	add	a0, a0, a2
+	lui	a2, 32
+	sltu	a1, a2, a1
+	lui	a2, 1048544
+	addw	a0, a0, a2
 	sgtz	a0, a0
-	ret
-.LBB2_2:
-	sub	a1, a1, a2
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000e18:                   # @func0000000000000e18
-	li	a3, 64
-	bltu	a3, a1, .LBB3_2
-	sub	a0, a0, a0
+	add	a0, a0, a2
+	sltiu	a1, a1, 65
+	addi	a0, a0, -64
 	sltiu	a0, a0, 65
-	xori	a0, a0, 1
-	ret
-.LBB3_2:
-	sub	a3, a3, a2
-	sub	a0, a0, a3
-	sltiu	a0, a0, 65
+	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000e11:                   # @func0000000000000e11
-	li	a3, 64
-	bltu	a3, a1, .LBB4_2
-	sub	a0, a0, a0
+	addi	a2, a2, -64
+	sltiu	a1, a1, 65
+	neg	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
-	ret
-.LBB4_2:
-	sub	a3, a3, a2
-	sub	a0, a0, a3
-	seqz	a0, a0
+	or	a0, a0, a1
 	ret
 func0000000000000e08:                   # @func0000000000000e08
-	li	a3, 64
-	bltu	a3, a1, .LBB5_2
-	sub	a0, a0, a0
+	add	a0, a0, a2
+	sltiu	a1, a1, 65
+	addi	a0, a0, -64
 	sltiu	a0, a0, 65
-	xori	a0, a0, 1
-	ret
-.LBB5_2:
-	sub	a3, a3, a2
-	sub	a0, a0, a3
-	sltiu	a0, a0, 65
+	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

@@ -41,11 +41,10 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a3, a1, 1
-	li	a1, 4
+	li	a1, -5
 	bnez	a3, .LBB5_2
-	mv	a1, a2
+	not	a1, a2
 .LBB5_2:                                # %entry
-	not	a1, a1
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a

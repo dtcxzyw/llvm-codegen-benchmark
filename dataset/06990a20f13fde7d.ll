@@ -19,7 +19,7 @@ entry:
   %1 = fptrunc double %0 to float
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 16
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
 

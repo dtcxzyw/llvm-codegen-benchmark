@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, 63
-  %3 = shl i64 %0, 8
-  %4 = or disjoint i64 %3, %2
+  %2 = shl i64 %0, 8
+  %3 = or i64 %2, %1
+  %4 = xor i64 %3, 63
   ret i64 %4
 }
 

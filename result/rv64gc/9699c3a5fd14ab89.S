@@ -1,34 +1,26 @@
 func0000000000000024:                   # @func0000000000000024
+	snez	a3, a0
 	add	a1, a1, a2
-	mv	a2, a1
-	beqz	a0, .LBB0_2
-	mv	a2, a0
-.LBB0_2:                                # %entry
-	sltu	a0, a2, a1
+	sltu	a0, a0, a1
+	and	a0, a0, a3
 	ret
 func0000000000000021:                   # @func0000000000000021
+	seqz	a3, a0
 	add	a1, a1, a2
-	mv	a2, a1
-	beqz	a0, .LBB1_2
-	mv	a2, a0
-.LBB1_2:                                # %entry
-	xor	a1, a1, a2
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	or	a0, a0, a3
 	ret
 func0000000000000031:                   # @func0000000000000031
+	seqz	a3, a0
 	add	a1, a1, a2
-	mv	a2, a1
-	beqz	a0, .LBB2_2
-	mv	a2, a0
-.LBB2_2:                                # %entry
-	xor	a1, a1, a2
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	or	a0, a0, a3
 	ret
 func0000000000000034:                   # @func0000000000000034
+	snez	a3, a0
 	add	a1, a1, a2
-	mv	a2, a1
-	beqz	a0, .LBB3_2
-	mv	a2, a0
-.LBB3_2:                                # %entry
-	sltu	a0, a2, a1
+	sltu	a0, a0, a1
+	and	a0, a0, a3
 	ret

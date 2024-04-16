@@ -7,10 +7,6 @@ func0000000000000065:                   # @func0000000000000065
 	sll	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
-	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	or	a0, a0, a1
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -50,9 +46,9 @@ func000000000000000d:                   # @func000000000000000d
 	sll	a0, a1, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
-	sltiu	a1, a1, 9
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	li	a1, 8
-	sll	a0, a1, a0
+	li	a2, 8
+	bgeu	a2, a1, .LBB6_2
+	sll	a2, a2, a0
+.LBB6_2:                                # %entry
+	mv	a0, a2
 	ret

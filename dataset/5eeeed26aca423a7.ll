@@ -10,10 +10,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 65533, i32 %1
-  %3 = trunc i32 %2 to i8
-  %4 = and i8 %3, 63
-  %5 = or disjoint i8 %4, -128
+  %2 = trunc i32 %1 to i8
+  %3 = and i8 %2, 63
+  %4 = or disjoint i8 %3, -128
+  %5 = select i1 %0, i8 -67, i8 %4
   ret i8 %5
 }
 

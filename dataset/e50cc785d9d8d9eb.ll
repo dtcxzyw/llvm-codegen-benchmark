@@ -8,7 +8,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = and i64 %4, -4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -72,11 +72,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %3, %1
-  %5 = and i32 %4, 65535
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
+  %.tr = trunc i32 %1 to i16
+  %.narrow = sub i16 %2, %.tr
+  %3 = zext i16 %.narrow to i32
+  %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

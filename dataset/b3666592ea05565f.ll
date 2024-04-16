@@ -27,8 +27,8 @@ define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = add i64 %3, 17
-  %5 = trunc i64 %4 to i32
+  %4 = trunc i64 %3 to i32
+  %5 = add i32 %4, 17
   ret i32 %5
 }
 
@@ -42,8 +42,8 @@ define i32 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = add nsw i64 %3, 1
-  %5 = trunc i64 %4 to i32
+  %4 = trunc i64 %3 to i32
+  %5 = add i32 %4, 1
   ret i32 %5
 }
 

@@ -9,7 +9,7 @@ entry:
   %2 = shl i32 %1, 23
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 0, i32 %2
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = or disjoint i32 %5, 34
   ret i32 %6
 }
@@ -22,7 +22,7 @@ entry:
   %2 = shl i32 %1, 16
   %3 = icmp eq i32 %1, -1
   %4 = select i1 %3, i32 0, i32 %2
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = or i32 %5, 32846
   ret i32 %6
 }

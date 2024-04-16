@@ -9,8 +9,8 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = and i64 %1, 4294967295
   %5 = mul nuw i64 %4, %3
-  %6 = add i64 %0, %5
-  %7 = icmp ult i64 %6, %5
+  %6 = xor i64 %5, -1
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

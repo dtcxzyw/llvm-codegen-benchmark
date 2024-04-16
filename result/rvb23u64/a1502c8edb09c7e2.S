@@ -1,8 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	fcvt.w.s	a1, fa1, rtz
-	fcvt.w.s	a2, fa0, rtz
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
+	bnez	a0, .LBB0_2
+	fmv.s	fa0, fa1
+.LBB0_2:                                # %entry
+	fcvt.w.s	a0, fa0, rtz
 	ret

@@ -1101,8 +1101,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 63
+  %2 = and i32 %1, 192
+  %3 = icmp ne i32 %2, 0
   %4 = icmp eq i64 %0, 0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
@@ -1302,8 +1302,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = icmp ult i64 %2, 8
+  %2 = and i64 %1, 4294967288
+  %3 = icmp eq i64 %2, 0
   %4 = icmp ult i64 %0, 32
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
@@ -1397,8 +1397,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 62
-  %3 = icmp ugt i32 %2, 59
+  %2 = and i32 %1, 60
+  %3 = icmp eq i32 %2, 60
   %4 = icmp ugt i32 %0, 59
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
@@ -1409,8 +1409,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 1
+  %2 = and i32 %1, 254
+  %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %0, 0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5

@@ -22,7 +22,7 @@ entry:
   %2 = fdiv float 1.000000e+00, %1
   %3 = fcmp ogt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float 0.000000e+00
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

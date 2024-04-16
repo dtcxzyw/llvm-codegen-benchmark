@@ -69,10 +69,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
-	sub	a2, a1, a0
-	seqz	a2, a2
-	sltu	a0, a1, a0
-	or	a0, a0, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func00000000000000d6:                   # @func00000000000000d6
 	sext.w	a2, a1

@@ -66,7 +66,7 @@ entry:
   %4 = icmp sgt i32 %1, -1
   %5 = select i1 %4, i1 %3, i1 false
   %6 = select i1 %5, i32 720912, i32 720896
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

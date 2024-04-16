@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sdiv i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

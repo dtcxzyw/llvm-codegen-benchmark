@@ -10,7 +10,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = sub nsw i32 1597463007, %2
   %4 = bitcast i32 %3 to float
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   %6 = tail call float @llvm.fmuladd.f32(float %5, float %4, float 1.500000e+00)
   ret float %6
 }

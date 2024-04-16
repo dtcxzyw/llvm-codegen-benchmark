@@ -6,11 +6,10 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4095
-  %3 = and i64 %2, -4096
-  %4 = add i64 %0, 4095
-  %5 = and i64 %4, -4096
-  %6 = icmp eq i64 %5, %3
-  ret i1 %6
+  %3 = add i64 %0, 4095
+  %4 = xor i64 %3, %2
+  %5 = icmp ult i64 %4, 4096
+  ret i1 %5
 }
 
 ; 5 occurrences:

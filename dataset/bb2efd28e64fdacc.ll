@@ -11,9 +11,8 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
-  %3 = xor i32 %2, -1252372727
-  %4 = icmp eq i32 %3, -1
-  ret i1 %4
+  %3 = icmp eq i32 %2, 1252372726
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

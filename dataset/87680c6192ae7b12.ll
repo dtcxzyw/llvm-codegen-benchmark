@@ -13,7 +13,7 @@ entry:
   %4 = and i64 %3, -4096
   %5 = add i64 %1, -1
   %6 = add i64 %5, %4
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -30,7 +30,7 @@ entry:
   %4 = and i64 %3, -4096
   %5 = add i64 %1, -4096
   %6 = add i64 %5, %4
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

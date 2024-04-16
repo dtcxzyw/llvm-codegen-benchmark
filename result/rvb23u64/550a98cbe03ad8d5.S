@@ -13,16 +13,17 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
-	slli	a2, a3, 32
-	li	a4, -1
-	bclri	a4, a4, 32
-	mulhsu	a4, a4, a3
-	add	a1, a1, a4
-	sub	a3, a0, a3
-	sub	a3, a3, a2
-	sltu	a0, a3, a0
-	snez	a2, a3
-	add	a0, a0, a2
-	add	a1, a1, a0
-	addi	a0, a3, -1
+	li	a2, -1
+	bclri	a2, a2, 32
+	mulhsu	a2, a2, a3
+	slli	a4, a3, 32
+	add	a3, a3, a4
+	neg	a4, a3
+	sub	a0, a0, a3
+	sltu	a3, a0, a4
+	add	a1, a1, a2
+	add	a1, a1, a3
+	snez	a2, a0
+	add	a1, a1, a2
+	addi	a0, a0, -1
 	ret

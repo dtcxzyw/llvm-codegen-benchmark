@@ -149,7 +149,7 @@
 define i64 @func0000000000000008(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
-  %4 = xor i128 %0, %3
+  %4 = xor i128 %3, %0
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }
@@ -160,7 +160,7 @@ entry:
 define i64 @func000000000000000c(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
-  %4 = xor i128 %0, %3
+  %4 = xor i128 %3, %0
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }

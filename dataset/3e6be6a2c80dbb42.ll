@@ -200,9 +200,9 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i64 0, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -211,9 +211,9 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i64 0, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -222,9 +222,9 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i64 0, i64 %2
+  ret i64 %3
 }
 
 ; 2 occurrences:

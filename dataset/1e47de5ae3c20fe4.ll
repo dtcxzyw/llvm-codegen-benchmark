@@ -11,7 +11,7 @@ entry:
   %3 = add i64 %2, -1
   %4 = tail call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !0
   %5 = lshr i64 -1, %4
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = sub i64 %6, %0
   ret i64 %7
 }

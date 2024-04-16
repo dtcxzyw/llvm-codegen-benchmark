@@ -13,7 +13,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -26,7 +26,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
-  %6 = mul i16 %0, %5
+  %6 = mul i16 %5, %0
   %7 = zext i16 %6 to i32
   ret i32 %7
 }

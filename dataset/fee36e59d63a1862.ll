@@ -431,7 +431,7 @@ entry:
   %4 = ashr exact i64 %3, 2
   %5 = add nsw i64 %4, -1
   %6 = sdiv i64 %5, 2
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 
@@ -480,7 +480,7 @@ entry:
   %4 = ashr i64 %3, 3
   %5 = add nsw i64 %4, -1
   %6 = sdiv i64 %5, 2
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

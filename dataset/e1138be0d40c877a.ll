@@ -7,7 +7,7 @@ entry:
   %2 = mul i32 %1, 3
   %3 = add nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = mul nuw nsw i16 %1, 6
   %3 = add nuw nsw i16 %2, 6
   %4 = zext nneg i16 %3 to i32
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 

@@ -172,10 +172,10 @@
 define i32 @func0000000000000022(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %1, %3
-  %5 = icmp ult i32 %0, %4
+  %4 = add i32 %3, %1
+  %5 = icmp ugt i32 %4, %0
   %6 = zext i1 %5 to i32
-  %7 = add nuw i32 %0, %6
+  %7 = add nuw i32 %6, %0
   ret i32 %7
 }
 

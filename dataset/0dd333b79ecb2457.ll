@@ -11,7 +11,7 @@
 define i1 @func0000000000000104(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 13
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = trunc i64 %1 to i32
   %6 = icmp ult i32 %5, 13
   %7 = and i1 %6, %4
@@ -67,7 +67,7 @@ entry:
 define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 4294967296
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = trunc i64 %1 to i32
   %6 = icmp ne i32 %5, 0
   %7 = and i1 %6, %4

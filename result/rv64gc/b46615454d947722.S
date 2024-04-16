@@ -16,10 +16,9 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 4
 	srl	a1, a2, a1
 	andi	a2, a1, 3
-	bnez	a2, .LBB1_2
-	mv	a1, a0
-.LBB1_2:                                # %entry
+	beqz	a2, .LBB1_2
 	mv	a0, a1
+.LBB1_2:                                # %entry
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 1
@@ -27,8 +26,7 @@ func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 16
 	srlw	a1, a2, a1
 	andi	a2, a1, 255
-	bnez	a2, .LBB2_2
-	mv	a1, a0
-.LBB2_2:                                # %entry
+	beqz	a2, .LBB2_2
 	mv	a0, a1
+.LBB2_2:                                # %entry
 	ret

@@ -5,8 +5,8 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
-  %3 = add i64 %2, 2
-  %4 = shl nuw nsw i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, 8
   ret i64 %4
 }
 
@@ -21,8 +21,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
-  %3 = add i64 %2, -1
-  %4 = shl i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, -4
   ret i64 %4
 }
 
@@ -38,8 +38,8 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
-  %3 = add nsw i64 %2, -1
-  %4 = shl i64 %3, 4
+  %3 = shl i64 %2, 4
+  %4 = add i64 %3, -16
   ret i64 %4
 }
 
@@ -49,8 +49,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
-  %3 = add i64 %2, -1
-  %4 = shl nuw i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, -4
   ret i64 %4
 }
 
@@ -83,8 +83,8 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %0, %1
-  %3 = add i64 %2, 2
-  %4 = shl nuw i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, 16
   ret i64 %4
 }
 
@@ -95,8 +95,8 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %0, %1
-  %3 = add nsw i64 %2, 1
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, 8
   ret i64 %4
 }
 

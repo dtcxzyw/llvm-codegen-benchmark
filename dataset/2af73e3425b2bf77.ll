@@ -9,7 +9,7 @@
 define i64 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   %5 = zext i8 %4 to i64
   ret i64 %5
 }
@@ -22,7 +22,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

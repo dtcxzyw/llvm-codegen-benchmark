@@ -10,7 +10,7 @@ entry:
   %2 = add nsw i64 %1, 7
   %3 = lshr i64 %2, 3
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = add nuw nsw i64 %1, 1048575
   %3 = lshr i64 %2, 20
   %4 = call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -42,7 +42,7 @@ entry:
   %2 = add i64 %1, -16
   %3 = lshr i64 %2, 2
   %4 = call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

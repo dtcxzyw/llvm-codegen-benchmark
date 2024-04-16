@@ -326,11 +326,10 @@ entry:
 define i1 @func0000000000000051(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = shl nsw i64 -1, %2
-  %4 = zext nneg i32 %0 to i64
-  %5 = and i64 %3, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = zext nneg i32 %0 to i64
+  %4 = lshr i64 %3, %2
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -339,11 +338,10 @@ entry:
 define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = shl nsw i64 -1, %2
-  %4 = zext i32 %0 to i64
-  %5 = and i64 %3, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = zext i32 %0 to i64
+  %4 = lshr i64 %3, %2
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

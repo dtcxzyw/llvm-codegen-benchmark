@@ -50,9 +50,9 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 31
-  %4 = and i32 %0, 31
-  %5 = icmp eq i32 %4, %3
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 31
+  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
@@ -106,9 +106,9 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = and i32 %0, 1
-  %5 = icmp ne i32 %4, %3
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 1
+  %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
 
@@ -201,9 +201,9 @@ entry:
 define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = and i32 %0, 1
-  %5 = icmp ne i32 %4, %3
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 1
+  %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
 
@@ -218,9 +218,9 @@ entry:
 define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, 536870911
-  %4 = and i32 %0, 536870911
-  %5 = icmp eq i32 %4, %3
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 536870911
+  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
@@ -235,9 +235,9 @@ entry:
 define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = and i32 %0, 1
-  %5 = icmp eq i32 %4, %3
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 1
+  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
@@ -253,9 +253,9 @@ entry:
 define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, 536870911
-  %4 = and i32 %0, 536870911
-  %5 = icmp ne i32 %4, %3
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 536870911
+  %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
 

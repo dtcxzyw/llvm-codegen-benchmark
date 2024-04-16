@@ -15,7 +15,7 @@ entry:
   %4 = fneg double %3
   %5 = fcmp ogt double %1, 0.000000e+00
   %6 = select i1 %5, double %3, double %4
-  %7 = fadd double %0, %6
+  %7 = fadd double %6, %0
   ret double %7
 }
 

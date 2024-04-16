@@ -7,8 +7,8 @@ define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
-  %6 = icmp eq i64 %5, 0
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp ugt i64 %5, 7
   ret i1 %6
 }
@@ -61,7 +61,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = icmp ugt i64 %5, 63
   ret i1 %6
 }

@@ -40,7 +40,7 @@ define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = udiv i64 %4, 1000000000
   ret i64 %5
 }

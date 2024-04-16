@@ -78,7 +78,7 @@ entry:
   %2 = and i64 %1, 31
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = and i64 %5, 4294967295
   ret i64 %6
 }
@@ -91,7 +91,7 @@ entry:
   %2 = and i32 %1, 65535
   %3 = icmp ugt i32 %2, 65524
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = and i32 %5, 65535
   ret i32 %6
 }

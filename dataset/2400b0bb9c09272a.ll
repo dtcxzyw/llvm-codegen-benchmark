@@ -8,7 +8,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 14
   %5 = icmp ugt i8 %1, 13
   %6 = select i1 %5, i32 %4, i32 0
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 8
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -60,7 +60,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 5
   %5 = icmp eq i32 %1, 9
   %6 = select i1 %5, i64 %4, i64 0
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

@@ -31,9 +31,9 @@ define double @func00000000000000c3(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ult double %4, %0
-  %6 = select i1 %5, double %0, double %4
-  ret double %6
+  %.inv = fcmp oge double %4, %0
+  %5 = select i1 %.inv, double %4, double %0
+  ret double %5
 }
 
 attributes #0 = { nounwind }

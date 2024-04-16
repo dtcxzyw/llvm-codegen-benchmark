@@ -1,7 +1,8 @@
 func000000000000018c:                   # @func000000000000018c
 	li	a2, 1
 	sll	a1, a2, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000001a4:                   # @func00000000000001a4
@@ -27,19 +28,22 @@ func0000000000000188:                   # @func0000000000000188
 func0000000000000141:                   # @func0000000000000141
 	li	a2, -1
 	sll	a1, a2, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000181:                   # @func0000000000000181
 	li	a2, 1
 	sllw	a1, a2, a1
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000101:                   # @func0000000000000101
 	li	a2, 64
 	sll	a1, a2, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000108:                   # @func0000000000000108
@@ -53,6 +57,7 @@ func0000000000000108:                   # @func0000000000000108
 func00000000000001c1:                   # @func00000000000001c1
 	li	a2, 4
 	sll	a1, a2, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

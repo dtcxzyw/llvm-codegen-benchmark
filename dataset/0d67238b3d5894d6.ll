@@ -8,7 +8,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp ult i64 %5, 2
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp slt i64 %5, 5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

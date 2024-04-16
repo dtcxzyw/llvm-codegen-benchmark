@@ -7,9 +7,11 @@ func00000000000001fe:                   # @func00000000000001fe
 	ret
 func0000000000000060:                   # @func0000000000000060
 	add	a0, a0, a2
-	sh2add	a0, a1, a0
 	addi	a0, a0, 8
-	srliw	a0, a0, 2
+	srli	a0, a0, 2
+	add	a0, a0, a1
+	slli	a0, a0, 34
+	srli	a0, a0, 34
 	ret
 func0000000000000088:                   # @func0000000000000088
 	add	a0, a0, a2

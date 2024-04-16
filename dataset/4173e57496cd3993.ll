@@ -9,10 +9,9 @@
 define i64 @func0000000000000016(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = shl nsw i64 %2, 1
-  %4 = select i1 %0, i64 1, i64 %3
-  %5 = mul nuw i64 %4, 24
-  ret i64 %5
+  %3 = mul i64 %2, 48
+  %4 = select i1 %0, i64 24, i64 %3
+  ret i64 %4
 }
 
 ; 15 occurrences:
@@ -35,10 +34,9 @@ entry:
 define i64 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
-  %3 = shl nsw i64 %2, 1
-  %4 = select i1 %0, i64 1, i64 %3
-  %5 = mul i64 %4, 48
-  ret i64 %5
+  %3 = mul i64 %2, 96
+  %4 = select i1 %0, i64 48, i64 %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

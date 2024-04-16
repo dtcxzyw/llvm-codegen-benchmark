@@ -93,7 +93,7 @@ entry:
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
-  %2 = srem i32 %1, 128
+  %2 = and i32 %1, 127
   %3 = icmp eq i32 %2, 0
   ret i1 %3
 }
@@ -176,7 +176,7 @@ entry:
 define i1 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 4
-  %2 = srem i32 %1, 4
+  %2 = and i32 %1, -2147483645
   %3 = icmp sgt i32 %2, 0
   ret i1 %3
 }

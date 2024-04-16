@@ -1,8 +1,8 @@
 func0000000000000044:                   # @func0000000000000044
 	andi	a0, a0, 255
-	xori	a1, a1, 128
-	andi	a1, a1, 255
-	sltiu	a1, a1, 64
+	slli	a1, a1, 56
+	srai	a1, a1, 56
+	slti	a1, a1, -64
 	sltiu	a0, a0, 248
 	and	a0, a0, a1
 	ret
@@ -17,9 +17,9 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000088:                   # @func0000000000000088
 	li	a2, -1
 	slli	a2, a2, 63
-	xor	a1, a1, a2
-	sltiu	a1, a1, 20
+	addi	a2, a2, 19
+	slt	a1, a2, a1
 	sltiu	a0, a0, 20
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	not	a0, a0
+	and	a0, a0, a1
 	ret

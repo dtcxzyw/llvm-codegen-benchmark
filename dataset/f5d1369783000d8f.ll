@@ -44,9 +44,8 @@ define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr %struct._conversation_item_t.1918183, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 112
-  ret ptr %5
+  %4 = getelementptr %struct._conversation_item_t.1918183, ptr %0, i64 %3, i32 12
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

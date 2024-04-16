@@ -19,7 +19,7 @@ entry:
   %2 = add i32 %1, 8
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

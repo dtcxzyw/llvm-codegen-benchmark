@@ -167,11 +167,10 @@
 define i40 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 4
-  %3 = select i1 %2, i64 4294967296, i64 0
-  %4 = zext nneg i32 %0 to i64
-  %5 = or disjoint i64 %3, %4
-  %6 = trunc i64 %5 to i40
-  ret i40 %6
+  %3 = select i1 %2, i40 4294967296, i40 0
+  %4 = zext i32 %0 to i40
+  %5 = or disjoint i40 %3, %4
+  ret i40 %5
 }
 
 ; 9 occurrences:
@@ -188,11 +187,10 @@ entry:
 define i40 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 4
-  %3 = select i1 %2, i64 4294967296, i64 0
-  %4 = zext nneg i32 %0 to i64
-  %5 = or disjoint i64 %3, %4
-  %6 = trunc nuw nsw i64 %5 to i40
-  ret i40 %6
+  %3 = select i1 %2, i40 4294967296, i40 0
+  %4 = zext i32 %0 to i40
+  %5 = or disjoint i40 %3, %4
+  ret i40 %5
 }
 
 attributes #0 = { nounwind }

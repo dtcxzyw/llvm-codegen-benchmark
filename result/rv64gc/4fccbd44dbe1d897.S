@@ -36,9 +36,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a3, a2
-	li	a2, 12
-	bnez	a3, .LBB3_2
 	li	a2, 3
+	beqz	a3, .LBB3_2
+	li	a2, 12
 .LBB3_2:                                # %entry
 	and	a1, a1, a2
 	or	a0, a0, a1

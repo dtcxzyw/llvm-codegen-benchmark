@@ -31,7 +31,7 @@ entry:
   %3 = shl i64 %2, 29
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds %"struct.rocksdb::FileIndexer::IndexUnit.1576308", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -70,7 +70,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -86,7 +86,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -108,7 +108,7 @@ entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
   %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -143,7 +143,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -156,7 +156,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -168,7 +168,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -180,7 +180,7 @@ entry:
   %3 = shl i64 %2, 31
   %4 = ashr i64 %3, 32
   %5 = getelementptr inbounds i16, ptr %1, i64 %4
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -192,7 +192,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 

@@ -28,10 +28,10 @@
 define float @func0000000000000000(float %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 21
-  %4 = xor i64 %1, %3
+  %4 = xor i64 %3, %1
   %5 = mul i64 %4, 2147483649
   %6 = uitofp i64 %5 to float
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

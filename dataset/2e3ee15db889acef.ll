@@ -155,7 +155,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
   %5 = ashr i64 %4, 32
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

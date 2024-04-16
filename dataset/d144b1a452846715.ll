@@ -9,8 +9,8 @@ define i64 @func000000000000002a(i16 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 10
   %3 = sub nsw i64 0, %2
-  %4 = icmp sgt i16 %0, -1
-  %5 = select i1 %4, i64 %2, i64 %3
+  %4 = icmp slt i16 %0, 0
+  %5 = select i1 %4, i64 %3, i64 %2
   ret i64 %5
 }
 

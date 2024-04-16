@@ -9,7 +9,7 @@ entry:
   %2 = and i8 %1, 6
   %3 = icmp eq i8 %2, 2
   %4 = zext i1 %3 to i32
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %2 = and i32 %1, -65536
   %3 = icmp eq i32 %2, -2146566144
   %4 = zext i1 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -59,7 +59,7 @@ entry:
   %2 = and i64 %1, 2147483647
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -68,10 +68,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000101(i8 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 15
-  %3 = icmp ugt i16 %2, 3
+  %2 = and i16 %1, 12
+  %3 = icmp ne i16 %2, 0
   %4 = zext i1 %3 to i8
-  %5 = icmp eq i8 %0, %4
+  %5 = icmp eq i8 %4, %0
   ret i1 %5
 }
 
@@ -83,7 +83,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -95,7 +95,7 @@ entry:
   %2 = and i8 %1, -3
   %3 = icmp eq i8 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -107,7 +107,7 @@ entry:
   %2 = and i16 %1, -2
   %3 = icmp eq i16 %2, 42
   %4 = zext i1 %3 to i32
-  %5 = icmp sle i32 %0, %4
+  %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
 

@@ -15,7 +15,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -5
   %5 = icmp ult i32 %4, 2
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

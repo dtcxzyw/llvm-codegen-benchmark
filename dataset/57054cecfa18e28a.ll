@@ -7,7 +7,7 @@ entry:
   %3 = icmp ult i32 %2, 55136
   %4 = icmp ugt i32 %1, 57343
   %5 = or i1 %4, %3
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp slt i32 %1, 2
   %5 = or i1 %4, %3
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i8 %1, 1
   %5 = or i1 %4, %3
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 

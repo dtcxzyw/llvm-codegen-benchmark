@@ -29,7 +29,7 @@ entry:
   %2 = trunc i16 %1 to i8
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 32
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = or disjoint i8 %5, 2
   ret i8 %6
 }
@@ -64,7 +64,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = shl i32 %2, 16
   %4 = and i32 %3, -2147483648
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = or i32 %5, 2139095040
   ret i32 %6
 }
@@ -90,7 +90,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = shl nuw i32 %2, 16
   %4 = and i32 %3, -2147483648
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = or i32 %5, 2139095040
   ret i32 %6
 }
@@ -102,10 +102,9 @@ define i32 @func000000000000000e(i32 %0, i48 %1) #0 {
 entry:
   %2 = trunc i48 %1 to i32
   %3 = shl nuw nsw i32 %2, 13
-  %4 = and i32 %3, 268427264
-  %5 = or disjoint i32 %4, %0
-  %6 = or i32 %5, 2139095040
-  ret i32 %6
+  %4 = or i32 %3, %0
+  %5 = or i32 %4, 2139095040
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -116,7 +115,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 30
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = or disjoint i32 %5, 25600
   ret i32 %6
 }

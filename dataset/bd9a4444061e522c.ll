@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 1
-  %3 = sub i32 0, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = mul i32 %1, -2
+  %2 = sext i32 %.neg to i64
+  %3 = getelementptr inbounds i32, ptr %0, i64 %2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -17,11 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 1
-  %3 = sub nsw i32 0, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds float, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = mul i32 %1, -2
+  %2 = sext i32 %.neg to i64
+  %3 = getelementptr inbounds float, ptr %0, i64 %2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -29,11 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 1
-  %3 = sub nsw i32 0, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = mul i32 %1, -2
+  %2 = sext i32 %.neg to i64
+  %3 = getelementptr float, ptr %0, i64 %2
+  ret ptr %3
 }
 
 ; 1 occurrences:

@@ -18,8 +18,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = select i1 %0, i64 -1, i64 %5
-  %7 = icmp eq i64 %6, -1
+  %6 = icmp eq i64 %5, -1
+  %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -42,8 +42,9 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = select i1 %0, i64 0, i64 %5
-  %7 = icmp sgt i64 %6, 0
+  %6 = icmp sgt i64 %5, 0
+  %not. = xor i1 %0, true
+  %7 = select i1 %not., i1 %6, i1 false
   ret i1 %7
 }
 

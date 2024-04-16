@@ -14,7 +14,7 @@ entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

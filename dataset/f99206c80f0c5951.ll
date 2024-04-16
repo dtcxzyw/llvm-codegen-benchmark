@@ -500,9 +500,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 4
-  %6 = icmp slt i64 %5, 17
-  ret i1 %6
+  %5 = icmp slt i64 %4, 272
+  ret i1 %5
 }
 
 ; 1732 occurrences:
@@ -2244,9 +2243,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp sgt i64 %5, -1
-  ret i1 %6
+  %5 = icmp sgt i64 %4, -1
+  ret i1 %5
 }
 
 ; 1906 occurrences:
@@ -4162,9 +4160,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 2
-  %6 = icmp ugt i64 %5, 4611686018427387903
-  ret i1 %6
+  %5 = icmp slt i64 %4, 0
+  ret i1 %5
 }
 
 ; 904 occurrences:
@@ -5078,9 +5075,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp ult i64 %5, 2
-  ret i1 %6
+  %5 = icmp ult i64 %4, 16
+  ret i1 %5
 }
 
 ; 793 occurrences:
@@ -5883,9 +5879,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr i64 %4, 4
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 15
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -5897,9 +5892,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr i64 %4, 4
-  %6 = icmp ult i64 %5, 2
-  ret i1 %6
+  %5 = icmp ult i64 %4, 32
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -5912,9 +5906,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr i64 %4, 4
-  %6 = icmp ugt i64 %5, 1
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 31
+  ret i1 %5
 }
 
 ; 5 occurrences:
@@ -5929,9 +5922,9 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr i64 %4, 2
-  %6 = icmp eq i64 %5, 2
-  ret i1 %6
+  %.mask = and i64 %4, -4
+  %5 = icmp eq i64 %.mask, 8
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

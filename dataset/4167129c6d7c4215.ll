@@ -108921,7 +108921,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0) #0 {
 entry:
-  %1 = icmp sge i32 %0, 0
+  %1 = icmp sgt i32 %0, -1
   ret i1 %1
 }
 

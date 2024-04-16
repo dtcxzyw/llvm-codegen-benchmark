@@ -11,7 +11,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = lshr i8 %1, %3
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 
@@ -22,7 +22,7 @@ define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = lshr i8 %1, %3
-  %5 = add nuw i8 %0, %4
+  %5 = add nuw i8 %4, %0
   ret i8 %5
 }
 

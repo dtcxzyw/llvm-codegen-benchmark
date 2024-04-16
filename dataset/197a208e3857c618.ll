@@ -43,7 +43,7 @@ entry:
   %4 = add i8 %1, -48
   %5 = add nuw nsw i8 %4, %3
   %6 = mul nuw i8 %5, 10
-  %7 = add i8 %0, %6
+  %7 = add i8 %6, %0
   ret i8 %7
 }
 

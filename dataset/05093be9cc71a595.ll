@@ -21,9 +21,9 @@ entry:
   %1 = add i32 %0, -525
   %2 = udiv i32 %1, 510
   %3 = shl nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 2
-  ret i64 %5
+  %narrow = add nuw nsw i32 %3, 2
+  %4 = zext nneg i32 %narrow to i64
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

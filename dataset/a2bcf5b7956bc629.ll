@@ -21,9 +21,8 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

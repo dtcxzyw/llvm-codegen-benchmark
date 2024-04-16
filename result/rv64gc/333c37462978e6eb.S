@@ -68,8 +68,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
-	bnez	a2, .LBB9_2
-	mv	a0, a1
+	beqz	a2, .LBB9_2
+	mv	a1, a0
 .LBB9_2:                                # %entry
-	addi	a0, a0, 40
+	addi	a0, a1, 40
 	ret

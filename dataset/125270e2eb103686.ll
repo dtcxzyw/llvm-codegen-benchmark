@@ -37,7 +37,7 @@ define i48 @func0000000000000001(i48 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = tail call i16 @llvm.smin.i16(i16 %1, i16 %2)
   %4 = zext i16 %3 to i48
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 

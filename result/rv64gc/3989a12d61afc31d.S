@@ -39,13 +39,14 @@ func000000000000009a:                   # @func000000000000009a
 func0000000000000181:                   # @func0000000000000181
 	addi	a1, a1, 15
 	srliw	a1, a1, 4
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
 	addi	a1, a1, 1
 	srli	a1, a1, 4
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000184:                   # @func0000000000000184
@@ -65,7 +66,8 @@ func00000000000001b4:                   # @func00000000000001b4
 func00000000000001b1:                   # @func00000000000001b1
 	addi	a1, a1, 1
 	srliw	a1, a1, 5
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000196:                   # @func0000000000000196
@@ -77,7 +79,7 @@ func0000000000000196:                   # @func0000000000000196
 func00000000000001bc:                   # @func00000000000001bc
 	addi	a1, a1, 7
 	srli	a1, a1, 3
-	add	a0, a0, a1
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000b8:                   # @func00000000000000b8
@@ -108,7 +110,8 @@ func000000000000010a:                   # @func000000000000010a
 func0000000000000021:                   # @func0000000000000021
 	addi	a1, a1, -1
 	srliw	a1, a1, 1
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000188:                   # @func0000000000000188

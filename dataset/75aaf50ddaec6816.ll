@@ -90,7 +90,7 @@ entry:
   %4 = add i64 %3, 4294967296
   %5 = ashr exact i64 %4, 32
   %6 = getelementptr inbounds %"struct.mold::elf::SymbolAux.1590062", ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -104,7 +104,7 @@ entry:
   %4 = add i64 %3, -4294967296
   %5 = ashr i64 %4, 32
   %6 = getelementptr inbounds %"struct.draco::MeshEdgebreakerEncoderImpl<draco::MeshEdgebreakerTraversalEncoder>::AttributeData.1857220", ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

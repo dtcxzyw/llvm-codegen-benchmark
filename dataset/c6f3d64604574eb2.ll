@@ -9,8 +9,8 @@ entry:
   %3 = icmp eq i8 %2, 42
   %4 = zext i1 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = add nuw nsw i64 %1, 1
-  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -23,8 +23,8 @@ entry:
   %3 = icmp eq i8 %2, 94
   %4 = zext i1 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = add nsw i64 %1, 1
-  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -37,8 +37,8 @@ entry:
   %3 = icmp eq i8 %2, 33
   %4 = zext i1 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = add i64 %1, -1
-  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 -1
   ret ptr %7
 }
 

@@ -34,7 +34,7 @@ define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 3968
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = add nsw i32 %4, 127
   %6 = zext i32 %5 to i64
   ret i64 %6

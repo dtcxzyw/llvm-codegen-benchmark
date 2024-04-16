@@ -19,7 +19,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 12
   %6 = getelementptr i32, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -242,7 +242,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 16
   %6 = getelementptr inbounds ptr, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -267,7 +267,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 16
   %6 = getelementptr inbounds ptr, ptr %5, i64 %4
-  %7 = icmp ne ptr %0, %6
+  %7 = icmp ne ptr %6, %0
   ret i1 %7
 }
 

@@ -10,7 +10,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = ptrtoint ptr %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = and i64 %6, %4
   ret i64 %7
 }

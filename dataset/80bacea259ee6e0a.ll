@@ -71,7 +71,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 2
   %5 = add i32 %1, 1
   %6 = add i32 %4, %5
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -84,7 +84,7 @@ entry:
   %4 = select i1 %3, i32 389120, i32 598016
   %5 = add i32 %1, -1024
   %6 = add nuw nsw i32 %4, %5
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -97,7 +97,7 @@ entry:
   %4 = select i1 %3, i64 0, i64 8
   %5 = add nsw i64 %1, 48
   %6 = add nsw i64 %5, %4
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

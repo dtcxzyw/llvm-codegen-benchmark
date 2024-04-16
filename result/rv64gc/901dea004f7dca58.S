@@ -1,9 +1,10 @@
 func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 32
-	srli	a1, a1, 31
+	srli	a1, a1, 32
 	slli	a0, a0, 32
-	srli	a0, a0, 31
+	srli	a0, a0, 32
 	add	a0, a0, a1
+	slli	a0, a0, 1
 	ret
 func00000000000000ef:                   # @func00000000000000ef
 	slli	a1, a1, 48
@@ -31,8 +32,7 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	sext.w	a1, a1
-	slli	a1, a1, 2
 	sext.w	a0, a0
-	slli	a0, a0, 2
 	add	a0, a0, a1
+	slli	a0, a0, 2
 	ret

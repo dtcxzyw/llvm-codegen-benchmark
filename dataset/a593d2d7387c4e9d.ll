@@ -8,7 +8,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = sext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }
@@ -26,7 +26,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = sext i32 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp slt i64 %6, %4
   ret i1 %7
 }
@@ -40,7 +40,7 @@ entry:
   %3 = shl i64 %2, 28
   %4 = ashr i64 %3, 32
   %5 = sext i32 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp slt i64 %6, %4
   ret i1 %7
 }

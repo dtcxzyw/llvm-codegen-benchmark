@@ -13,7 +13,7 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 400
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = trunc i64 %3 to i16
   %5 = sdiv i16 %4, 100
   %6 = sext i16 %5 to i64

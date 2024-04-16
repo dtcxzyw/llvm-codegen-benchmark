@@ -6,7 +6,7 @@ define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 2
   %4 = and i8 %3, 12
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = lshr i8 %1, 6
   %7 = or disjoint i8 %5, %6
   ret i8 %7
@@ -19,7 +19,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
   %4 = and i32 %3, 63872
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = lshr exact i32 %1, 8
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -32,7 +32,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 8
   %4 = and i64 %3, 17179868928
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = lshr i64 %1, 18
   %7 = or i64 %5, %6
   ret i64 %7

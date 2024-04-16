@@ -1,8 +1,5 @@
 func0000000000000081:                   # @func0000000000000081
-	li	a1, 1
-	sllw	a0, a1, a0
-	addi	a0, a0, -3
-	seqz	a0, a0
+	li	a0, 0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a1, 64

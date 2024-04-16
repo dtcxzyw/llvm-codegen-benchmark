@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1029
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = add i32 %1, -3
   %6 = icmp ult i32 %5, 2
   %7 = select i1 %6, i1 true, i1 %4
@@ -72,7 +72,7 @@ entry:
 define i1 @func0000000000000404(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 24
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = add i32 %1, -6
   %6 = icmp ult i32 %5, -3
   %7 = select i1 %6, i1 true, i1 %4

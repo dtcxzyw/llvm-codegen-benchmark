@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	subw	a0, a0, a1
-	zext.w	a0, a0
-	sltiu	a0, a0, 1024
-	xori	a0, a0, 1
+	srliw	a0, a0, 10
+	slli	a0, a0, 10
+	snez	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	subw	a0, a0, a1

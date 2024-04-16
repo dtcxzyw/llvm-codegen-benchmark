@@ -12,7 +12,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = select i1 %0, i32 48, i32 55
   %4 = add nuw nsw i32 %3, %2
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 

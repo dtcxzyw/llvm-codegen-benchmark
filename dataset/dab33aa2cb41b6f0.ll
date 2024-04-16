@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = select i1 %3, i32 252645135, i32 0
   ret i32 %4
 }
@@ -58,7 +58,7 @@ entry:
 define i8 @func0000000000000002(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = select i1 %3, i8 7, i8 0
   ret i8 %4
 }
@@ -69,7 +69,7 @@ entry:
 define i32 @func000000000000000a(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ole float %1, 3.300000e+02
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = select i1 %3, i32 128, i32 0
   ret i32 %4
 }

@@ -34,7 +34,9 @@ func0000000000000050:                   # @func0000000000000050
 	addiw	a2, a2, 619
 	sltu	a1, a1, a2
 	addi	a1, a1, -1
-	andi	a1, a1, -729
+	lui	a2, 16
+	addi	a2, a2, -729
+	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func00000000000000c4:                   # @func00000000000000c4

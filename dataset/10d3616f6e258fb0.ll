@@ -73,7 +73,7 @@ entry:
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp ogt double %4, 1.000000e+00
   %6 = select i1 %5, double 1.000000e+00, double %4
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 

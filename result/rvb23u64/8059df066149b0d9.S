@@ -23,7 +23,7 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 1.0
 	fsub.s	fa5, fa5, fa1
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fli.s	fa5, 1.0

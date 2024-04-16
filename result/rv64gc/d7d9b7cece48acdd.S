@@ -14,8 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
-	sub	a3, a1, a2
-	bltz	a3, .LBB2_2
+	blt	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:                                # %entry
 	add	a0, a0, a1

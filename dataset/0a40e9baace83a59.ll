@@ -30,7 +30,7 @@ define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 10
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 

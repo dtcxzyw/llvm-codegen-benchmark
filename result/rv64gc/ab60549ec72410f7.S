@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, 1
 	slli	a3, a2, 48
 	srli	a3, a3, 48
-	beq	a1, a3, .LBB1_2
+	beq	a3, a1, .LBB1_2
 	mv	a0, a2
 .LBB1_2:                                # %entry
 	ret

@@ -191,8 +191,8 @@
 define i32 @func0000000000000005(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = and i32 %1, 2139095040
-  %3 = lshr exact i32 %2, 23
+  %2 = lshr i32 %1, 23
+  %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -127
   ret i32 %4
 }

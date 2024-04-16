@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 6
+  %2 = mul nuw i64 %1, 6
+  %3 = add nuw i64 %2, 6
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
@@ -19,8 +19,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nsw i64 %2, 6
+  %2 = mul i64 %1, 6
+  %3 = add i64 %2, 6
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
@@ -31,8 +31,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nsw i64 %2, 6
+  %2 = mul i64 %1, 6
+  %3 = add i64 %2, 6
   %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
@@ -42,8 +42,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f6(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 6
+  %2 = mul nuw i64 %1, 6
+  %3 = add nuw i64 %2, 6
   %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
@@ -56,8 +56,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = mul i64 %2, 3
+  %2 = mul i64 %1, 3
+  %3 = add i64 %2, 3
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -67,8 +67,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = mul nsw i64 %2, 10
+  %2 = mul i64 %1, 10
+  %3 = add i64 %2, 10
   %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
@@ -79,8 +79,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = mul nsw i32 %2, 5
+  %2 = mul i32 %1, 5
+  %3 = add i32 %2, -5
   %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
@@ -90,8 +90,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = mul nuw i64 %2, 56
+  %2 = mul i64 %1, 56
+  %3 = add i64 %2, 56
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -101,8 +101,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = mul nuw i64 %2, 30
+  %2 = mul i64 %1, 30
+  %3 = add i64 %2, -30
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -112,8 +112,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = mul nuw i64 %2, 3
+  %2 = mul i64 %1, 3
+  %3 = add i64 %2, 3
   %4 = icmp ult i64 %3, %0
   ret i1 %4
 }

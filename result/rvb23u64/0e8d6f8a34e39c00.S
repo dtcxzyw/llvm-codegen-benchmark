@@ -1,7 +1,8 @@
 func0000000000000030:                   # @func0000000000000030
+	xori	a0, a0, 1
 	xor	a1, a1, a2
 	seqz	a1, a1
-	andn	a0, a1, a0
+	and	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	xori	a0, a0, 1

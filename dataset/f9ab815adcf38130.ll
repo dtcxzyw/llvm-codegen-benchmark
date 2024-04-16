@@ -8,7 +8,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ule i64 %0, %5
+  %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp sle i64 %0, %5
+  %6 = icmp sge i64 %5, %0
   ret i1 %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp sge i64 %0, %5
+  %6 = icmp sle i64 %5, %0
   ret i1 %6
 }
 
@@ -100,7 +100,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -112,7 +112,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -129,7 +129,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -141,7 +141,7 @@ entry:
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = icmp slt i128 %0, %5
+  %6 = icmp sgt i128 %5, %0
   ret i1 %6
 }
 
@@ -153,7 +153,7 @@ entry:
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = icmp sge i128 %0, %5
+  %6 = icmp sle i128 %5, %0
   ret i1 %6
 }
 
@@ -165,7 +165,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %1, 131072
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -178,7 +178,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -193,7 +193,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -206,7 +206,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -219,7 +219,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ne i32 %0, %5
+  %6 = icmp ne i32 %5, %0
   ret i1 %6
 }
 
@@ -231,7 +231,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -243,7 +243,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = shl nsw i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 
@@ -256,7 +256,7 @@ entry:
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -268,7 +268,7 @@ entry:
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = icmp ne i128 %0, %5
+  %6 = icmp ne i128 %5, %0
   ret i1 %6
 }
 
@@ -280,7 +280,7 @@ entry:
   %3 = shl nuw nsw i128 %2, 64
   %4 = and i128 %1, 18446744073709551615
   %5 = or disjoint i128 %4, %3
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -292,7 +292,7 @@ entry:
   %3 = and i64 %2, -4096
   %4 = shl nuw i64 %1, 32
   %5 = or i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -304,7 +304,7 @@ entry:
   %3 = shl nuw i32 %2, 21
   %4 = and i32 %1, 2080768
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -316,7 +316,7 @@ entry:
   %3 = shl nuw i32 %2, 21
   %4 = and i32 %1, 2080768
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

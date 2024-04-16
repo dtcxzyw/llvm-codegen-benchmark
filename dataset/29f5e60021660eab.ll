@@ -10,9 +10,9 @@ define i1 @func0000000000000518(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = shl nsw i64 %3, 1
-  %5 = icmp eq ptr %0, %1
-  %6 = select i1 %5, i64 1, i64 %4
-  %7 = icmp ugt i64 %6, 768614336404564650
+  %5 = icmp ne ptr %0, %1
+  %6 = icmp ugt i64 %4, 768614336404564650
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -35,12 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000511(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 48
-  %4 = shl nsw i64 %3, 1
-  %5 = icmp eq ptr %0, %1
-  %6 = select i1 %5, i64 1, i64 %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %3 = icmp ne ptr %0, %1
+  %4 = icmp eq i64 %2, 0
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

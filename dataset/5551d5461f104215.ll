@@ -16,7 +16,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 10
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp ne i8 %2, 47
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -72,7 +72,7 @@ entry:
   %2 = freeze i64 %1
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -84,7 +84,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 45
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -102,7 +102,7 @@ entry:
   %2 = freeze i64 %1
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -115,7 +115,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, 5
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -128,7 +128,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 1
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -140,7 +140,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 1999999999
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

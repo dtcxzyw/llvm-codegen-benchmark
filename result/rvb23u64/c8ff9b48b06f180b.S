@@ -65,8 +65,9 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000051:                   # @func0000000000000051
-	add	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a2, a2, 1
+	neg	a1, a1
+	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -96,9 +97,9 @@ func00000000000000d1:                   # @func00000000000000d1
 	or	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	add	a1, a1, a2
+	addi	a2, a2, -48
+	or	a1, a1, a2
 	andi	a1, a1, 255
-	addi	a1, a1, -48
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

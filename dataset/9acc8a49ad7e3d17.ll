@@ -30,7 +30,7 @@
 define i32 @func0000000000000000(float %0) #0 {
 entry:
   %1 = tail call float @llvm.copysign.f32(float 5.000000e-01, float %0)
-  %2 = fadd float %0, %1
+  %2 = fadd float %1, %0
   %3 = fptosi float %2 to i32
   ret i32 %3
 }

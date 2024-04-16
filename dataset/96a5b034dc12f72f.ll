@@ -50,7 +50,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
+  %1 = lshr i64 %0, 56
   %2 = and i64 %1, 1
   ret i64 %2
 }
@@ -104,7 +104,7 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.bswap.i32(i32 %0)
+  %1 = lshr i32 %0, 8
   %2 = and i32 %1, 6144
   ret i32 %2
 }

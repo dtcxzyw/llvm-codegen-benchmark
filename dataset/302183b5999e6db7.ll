@@ -8,7 +8,7 @@
 define i32 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -43,7 +43,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   ret i64 %3
 }
 
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   ret i64 %3
 }
 
@@ -65,7 +65,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   ret i32 %3
 }
 

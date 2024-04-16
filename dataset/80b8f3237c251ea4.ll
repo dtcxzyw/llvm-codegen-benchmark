@@ -124,7 +124,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -276,7 +276,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -332,7 +332,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -359,7 +359,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sle i32 %0, %6
+  %7 = icmp sge i32 %6, %0
   ret i1 %7
 }
 
@@ -411,7 +411,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 5
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -428,7 +428,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sge i32 %0, %6
+  %7 = icmp sle i32 %6, %0
   ret i1 %7
 }
 
@@ -458,7 +458,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -471,7 +471,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 5
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -485,7 +485,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sge i32 %0, %6
+  %7 = icmp sle i32 %6, %0
   ret i1 %7
 }
 
@@ -502,7 +502,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp ne i32 %0, %6
+  %7 = icmp ne i32 %6, %0
   ret i1 %7
 }
 
@@ -543,7 +543,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -577,7 +577,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -591,7 +591,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -604,7 +604,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 6
   %6 = trunc i64 %5 to i32
-  %7 = icmp ule i32 %0, %6
+  %7 = icmp uge i32 %6, %0
   ret i1 %7
 }
 

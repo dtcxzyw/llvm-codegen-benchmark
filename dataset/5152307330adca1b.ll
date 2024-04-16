@@ -185,8 +185,8 @@ define i128 @func0000000000000003(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 8388607
-  %3 = zext nneg i32 %2 to i128
-  %4 = or disjoint i128 %3, 8388608
+  %3 = or disjoint i32 %2, 8388608
+  %4 = zext nneg i32 %3 to i128
   ret i128 %4
 }
 

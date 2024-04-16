@@ -49,8 +49,8 @@ define i1 @func00000000000000d1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = getelementptr inbounds i8, ptr %1, i64 24
-  %5 = select i1 %3, ptr %4, ptr %0
-  %6 = icmp eq ptr %5, %4
+  %5 = icmp eq ptr %4, %0
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 
@@ -59,10 +59,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000dc(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = icmp slt i32 %2, 0
+  %3 = icmp sgt i32 %2, -1
   %4 = getelementptr inbounds i8, ptr %1, i64 8
-  %5 = select i1 %3, ptr %4, ptr %0
-  %6 = icmp ne ptr %5, %4
+  %5 = icmp ne ptr %4, %0
+  %6 = select i1 %3, i1 %5, i1 false
   ret i1 %6
 }
 

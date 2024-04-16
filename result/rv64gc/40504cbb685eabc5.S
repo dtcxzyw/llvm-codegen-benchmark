@@ -75,10 +75,10 @@ func0000000000000045:                   # @func0000000000000045
 func00000000000000c0:                   # @func00000000000000c0
 	andi	a2, a2, 255
 	addi	a2, a2, -60
-	snez	a2, a2
+	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	addiw	a0, a0, -4
+	add	a0, a0, a2
+	addiw	a0, a0, -5
 	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a2, a2, 255

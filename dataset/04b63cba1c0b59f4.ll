@@ -20,7 +20,7 @@ entry:
 define i8 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %0, 65520
+  %4 = and i32 %0, 48
   %5 = or i32 %4, %3
   %6 = trunc i32 %5 to i8
   %7 = and i8 %6, 63

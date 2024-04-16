@@ -10,11 +10,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 3
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds float, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 1
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 28
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -27,11 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 1
+  %3 = getelementptr i64, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -39,11 +37,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = or disjoint i64 %3, 2
-  %5 = getelementptr i16, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 2
+  %3 = getelementptr i16, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 12
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -51,11 +48,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000037(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = shl nsw i64 %2, 2
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds i16, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 2
+  %3 = getelementptr i16, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 10
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -67,11 +63,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = shl i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 1
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -80,11 +75,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = shl i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds float, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 1
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 12
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -92,11 +86,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = shl nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 1
+  %3 = getelementptr i32, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -104,11 +97,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = shl i64 %2, 3
-  %4 = or disjoint i64 %3, 4
-  %5 = getelementptr <2 x i64>, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 3
+  %3 = getelementptr <2 x i64>, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -64
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -116,11 +108,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = shl nuw i64 %2, 2
-  %4 = or disjoint i64 %3, 2
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = shl i64 %1, 2
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

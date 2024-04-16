@@ -8,11 +8,9 @@ func0000000000000011:                   # @func0000000000000011
 .LBB0_2:                                # %entry
 	ret
 func0000000000000031:                   # @func0000000000000031
-	andi	a1, a1, 1
-	addi	a1, a1, -1
-	andi	a1, a1, 8
-	addw	a1, a1, a2
-	seqz	a1, a1
+	sext.w	a2, a2
+	seqz	a2, a2
+	and	a1, a1, a2
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

@@ -186,10 +186,10 @@ define i1 @func00000000000002f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
   %4 = lshr i32 %3, 2
-  %5 = sub nuw nsw i32 8, %4
-  %6 = add nuw nsw i32 %1, %5
-  %7 = icmp ult i32 %6, %0
-  ret i1 %7
+  %reass.sub = sub i32 %1, %4
+  %5 = add i32 %reass.sub, 8
+  %6 = icmp ult i32 %5, %0
+  ret i1 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

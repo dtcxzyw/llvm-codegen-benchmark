@@ -31,11 +31,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = udiv i64 %0, 96
-  %2 = mul i64 %1, -96
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i8
-  ret i8 %4
+  %.fr = freeze i64 %0
+  %1 = urem i64 %.fr, 96
+  %2 = trunc nuw nsw i64 %1 to i8
+  ret i8 %2
 }
 
 ; 73 occurrences:
@@ -128,11 +127,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = udiv i64 %0, 10
-  %2 = mul nsw i64 %1, -10
-  %3 = add nsw i64 %2, %0
-  %4 = trunc i64 %3 to i8
-  ret i8 %4
+  %.fr = freeze i64 %0
+  %1 = urem i64 %.fr, 10
+  %2 = trunc nuw nsw i64 %1 to i8
+  ret i8 %2
 }
 
 ; 1 occurrences:

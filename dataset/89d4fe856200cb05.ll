@@ -20,7 +20,7 @@
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = urem i64 %3, 3
   ret i64 %4
 }
@@ -31,7 +31,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = urem i64 %3, 2000000
   ret i64 %4
 }

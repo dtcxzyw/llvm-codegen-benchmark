@@ -7,7 +7,7 @@
 define i1 @func000000000000014c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -21,7 +21,7 @@ entry:
 define i1 @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -33,7 +33,7 @@ entry:
 define i1 @func000000000000004c(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ult i32 %1, %3
+  %4 = icmp ugt i32 %3, %1
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6

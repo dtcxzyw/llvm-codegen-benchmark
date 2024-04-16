@@ -8,7 +8,7 @@
 define i1 @func0000000000000044(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
-  %4 = icmp ult i32 %1, %3
+  %4 = icmp ugt i32 %3, %1
   %5 = icmp ult i16 %0, 512
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -75,7 +75,7 @@ entry:
 define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = icmp ne i64 %1, %3
+  %4 = icmp ne i64 %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -88,7 +88,7 @@ entry:
 define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6

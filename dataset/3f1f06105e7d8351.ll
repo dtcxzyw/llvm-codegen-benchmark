@@ -8,7 +8,7 @@
 define i32 @func00000000000000b5(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 7
   %6 = zext nneg i16 %0 to i32
   %7 = add nsw i32 %5, %6
@@ -84,7 +84,7 @@ entry:
 define i32 @func00000000000001a5(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 60
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 75
   %6 = zext i8 %0 to i32
   %7 = add nsw i32 %5, %6

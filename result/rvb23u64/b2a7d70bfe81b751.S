@@ -27,9 +27,11 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sh2add	a0, a0, a0
-	slli	a0, a0, 34
-	srli	a0, a0, 33
-	sltiu	a0, a0, 32
+	slli	a0, a0, 1
+	lui	a1, 524288
+	addiw	a1, a1, -32
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 1
@@ -48,8 +50,7 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sh2add	a1, a0, a0
-	sh1add	a0, a1, a0
+	sh1add	a0, a0, a0
 	andi	a0, a0, 7
 	snez	a0, a0
 	ret

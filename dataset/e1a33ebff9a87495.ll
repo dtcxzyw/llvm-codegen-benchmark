@@ -8,7 +8,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = and i16 %2, -2
   %4 = icmp eq i16 %3, 126
-  %5 = icmp eq i16 %0, %2
+  %5 = icmp eq i16 %2, %0
   %6 = or i1 %5, %4
   ret i1 %6
 }
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = and i32 %2, 3
   %5 = icmp ne i32 %4, 0
   %6 = or i1 %5, %3

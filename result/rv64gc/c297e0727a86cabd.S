@@ -1,8 +1,8 @@
 func0000000000000014:                   # @func0000000000000014
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	li	a3, 2
-	bgeu	a2, a3, .LBB0_2
+	lui	a3, 16
+	addiw	a3, a3, -2
+	and	a2, a2, a3
+	bnez	a2, .LBB0_2
 	addi	a0, a1, 8
 .LBB0_2:                                # %entry
 	ret

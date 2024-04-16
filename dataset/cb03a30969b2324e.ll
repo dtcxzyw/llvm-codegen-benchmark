@@ -9,7 +9,7 @@ entry:
   %3 = mul i64 %2, 3
   %4 = udiv i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

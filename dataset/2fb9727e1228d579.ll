@@ -5,9 +5,8 @@
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
-  %3 = call noundef i64 @llvm.umin.i64(i64 %0, i64 %2)
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %0, i64 %2)
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -24,9 +23,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 64, %1
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 %0)
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %0, i64 %2)
+  ret i64 %3
 }
 
 ; 8 occurrences:
@@ -42,9 +40,8 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 64, %1
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 %0)
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %0, i64 %2)
+  ret i64 %3
 }
 
 ; 16 occurrences:
@@ -68,9 +65,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 64, %1
-  %3 = tail call i32 @llvm.umin.i32(i32 %0, i32 %2)
-  %4 = sub i32 %0, %3
-  ret i32 %4
+  %3 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %2)
+  ret i32 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -85,9 +81,8 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 4, %1
-  %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 %0)
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %3 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %2)
+  ret i32 %3
 }
 
 ; 44 occurrences:
@@ -139,9 +134,8 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 4096, %1
-  %3 = tail call i32 @llvm.umin.i32(i32 %0, i32 %2)
-  %4 = sub i32 %0, %3
-  ret i32 %4
+  %3 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %2)
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -152,9 +146,8 @@ entry:
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 4096, %1
-  %3 = call i64 @llvm.umin.i64(i64 %2, i64 %0)
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %0, i64 %2)
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -163,9 +156,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 2048, %1
-  %3 = call noundef i64 @llvm.umin.i64(i64 %2, i64 %0)
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %0, i64 %2)
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -177,9 +169,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 262128, %1
-  %3 = call noundef i32 @llvm.umin.i32(i32 %0, i32 %2)
-  %4 = sub i32 %0, %3
-  ret i32 %4
+  %3 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %2)
+  ret i32 %3
 }
 
 ; 5 occurrences:
@@ -192,10 +183,15 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 1024, %1
-  %3 = call noundef i64 @llvm.umin.i64(i64 %0, i64 %2)
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %0, i64 %2)
+  ret i64 %3
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.usub.sat.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.usub.sat.i32(i32, i32) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

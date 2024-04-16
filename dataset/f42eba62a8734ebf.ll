@@ -19,8 +19,8 @@
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nsw i64 %2, -2
-  %4 = getelementptr i32, ptr %0, i64 %3
+  %3 = getelementptr i32, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
 
@@ -483,8 +483,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds ptr, ptr %0, i64 %3
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }
 
@@ -496,8 +496,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, 24
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -540,8 +540,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %0, i64 %3
+  %3 = getelementptr %"class.std::__1::tuple.1556134", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -56
   ret ptr %4
 }
 
@@ -551,8 +551,8 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nuw nsw i64 %2, 16
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
   ret ptr %4
 }
 
@@ -562,8 +562,8 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nuw nsw i64 %2, 20
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 20
   ret ptr %4
 }
 
@@ -574,8 +574,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 2
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 2
   ret ptr %4
 }
 
@@ -586,8 +586,8 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i16, ptr %0, i64 %3
+  %3 = getelementptr i16, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -2
   ret ptr %4
 }
 
@@ -597,8 +597,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr i64, ptr %0, i64 %3
+  %3 = getelementptr i64, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }
 

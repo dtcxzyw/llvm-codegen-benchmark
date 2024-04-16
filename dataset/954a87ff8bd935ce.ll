@@ -17,7 +17,7 @@
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 72057594037927935
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -66,7 +66,7 @@ entry:
 define i8 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048576
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483644
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

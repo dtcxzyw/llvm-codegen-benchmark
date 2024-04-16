@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 31
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	andi	a0, a0, 15

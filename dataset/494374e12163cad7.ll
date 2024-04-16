@@ -8,7 +8,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = srem i32 %1, 8
+  %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 %0, %2
   ret i32 %3
 }
@@ -209,7 +209,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = srem i64 %1, 64
+  %2 = and i64 %1, 63
   %3 = shl nuw i64 %0, %2
   ret i64 %3
 }

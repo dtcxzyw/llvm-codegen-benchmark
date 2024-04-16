@@ -13,7 +13,7 @@ entry:
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 128)
   %4 = icmp eq i64 %2, 0
   %5 = select i1 %4, i64 8, i64 %3
-  %6 = add nuw nsw i64 %1, %5
+  %6 = add nuw nsw i64 %5, %1
   %7 = icmp slt i64 %6, %0
   ret i1 %7
 }

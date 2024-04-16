@@ -19,7 +19,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

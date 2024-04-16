@@ -14,7 +14,7 @@ define i32 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 7, i64 2047
   %3 = and i64 %2, %0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

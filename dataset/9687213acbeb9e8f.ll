@@ -63,7 +63,7 @@ entry:
 define i24 @func0000000000000004(i1 %0, i24 %1, i24 %2) #0 {
 entry:
   %3 = or disjoint i24 %1, %2
-  %4 = or i24 %3, 655360
+  %4 = or i24 %3, 131072
   %5 = select i1 %0, i24 %4, i24 %3
   %6 = or i24 %5, 786432
   ret i24 %6

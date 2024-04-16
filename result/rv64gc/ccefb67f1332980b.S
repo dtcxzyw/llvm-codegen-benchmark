@@ -30,9 +30,10 @@ func00000000000000ba:                   # @func00000000000000ba
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	addi	a1, a1, -8
 	slli	a1, a1, 23
 	lui	a2, 231424
 	or	a0, a0, a2
+	lui	a2, 16384
+	add	a0, a0, a2
 	subw	a0, a0, a1
 	ret

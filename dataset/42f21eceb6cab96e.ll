@@ -27,7 +27,7 @@ entry:
   %2 = shl i32 %1, 4
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 65535, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -53,7 +53,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i128
   %4 = shl i128 15, %3
-  %5 = and i128 %0, %4
+  %5 = and i128 %4, %0
   ret i128 %5
 }
 
@@ -67,7 +67,7 @@ entry:
   %2 = shl i32 %1, 3
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -79,7 +79,7 @@ entry:
   %2 = shl nsw i32 %1, 3
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 255, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -91,7 +91,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 15, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -101,9 +101,9 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl i64 255, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

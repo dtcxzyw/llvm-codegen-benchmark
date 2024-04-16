@@ -96,7 +96,7 @@
 define i8 @func0000000000000001(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
-  %3 = trunc i16 %2 to i8
+  %3 = trunc nuw i16 %2 to i8
   %4 = and i8 %3, 1
   %5 = and i8 %0, 4
   %6 = or disjoint i8 %4, %5
@@ -110,7 +110,7 @@ entry:
 define i32 @func0000000000000009(i32 %0, i48 %1) #0 {
 entry:
   %2 = lshr exact i48 %1, 16
-  %3 = trunc i48 %2 to i32
+  %3 = trunc nuw i48 %2 to i32
   %4 = and i32 %3, -65536
   %5 = and i32 %0, 65535
   %6 = or disjoint i32 %5, %4

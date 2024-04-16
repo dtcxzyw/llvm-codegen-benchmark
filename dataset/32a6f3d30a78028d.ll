@@ -7,10 +7,10 @@ define i64 @func000000000000008a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
-  %5 = sub i32 1, %1
-  %6 = icmp sgt i32 %5, 63
-  %7 = select i1 %6, i64 0, i64 %4
-  ret i64 %7
+  %notsub = add i32 %1, -2
+  %5 = icmp slt i32 %notsub, -64
+  %6 = select i1 %5, i64 0, i64 %4
+  ret i64 %6
 }
 
 ; 3 occurrences:
@@ -22,10 +22,10 @@ define i64 @func0000000000000088(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = lshr i64 %0, %3
-  %5 = sub i8 67, %1
-  %6 = icmp ugt i8 %5, 63
-  %7 = select i1 %6, i64 0, i64 %4
-  ret i64 %7
+  %notsub = add i8 %1, -68
+  %5 = icmp ult i8 %notsub, -64
+  %6 = select i1 %5, i64 0, i64 %4
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

@@ -17,10 +17,10 @@ func0000000000000101:                   # @func0000000000000101
 	srli	a1, a1, 2
 	lui	a2, 699051
 	addi	a2, a2, -1365
-	mul	a1, a1, a2
+	mulw	a1, a1, a2
 	andi	a0, a0, 1
-	subw	a1, a1, a0
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000011a:                   # @func000000000000011a
 	srli	a1, a1, 3
@@ -35,8 +35,8 @@ func0000000000000111:                   # @func0000000000000111
 	srli	a1, a1, 3
 	lui	a2, 748983
 	addi	a2, a2, -585
-	mul	a1, a1, a2
+	mulw	a1, a1, a2
 	andi	a0, a0, 1
-	subw	a1, a1, a0
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

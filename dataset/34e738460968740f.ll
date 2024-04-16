@@ -7,10 +7,9 @@
 define i64 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 %1, 1
-  %3 = and i128 %0, 18446744073709551615
-  %4 = add i128 %3, %2
-  %5 = trunc i128 %4 to i64
-  ret i64 %5
+  %3 = add i128 %2, %0
+  %4 = trunc i128 %3 to i64
+  ret i64 %4
 }
 
 ; 5 occurrences:
@@ -35,8 +34,8 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
-  %3 = and i64 %0, 562949953421296
-  %4 = add nsw i64 %3, %2
+  %3 = and i64 %0, 4294967280
+  %4 = add i64 %3, %2
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -47,7 +46,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
-  %3 = and i64 %0, -16
+  %3 = and i64 %0, 4294967280
   %4 = add i64 %3, %2
   %5 = trunc i64 %4 to i32
   ret i32 %5

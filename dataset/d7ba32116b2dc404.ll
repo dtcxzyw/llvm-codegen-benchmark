@@ -6,8 +6,8 @@
 define i32 @func0000000000000018(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i32 1, i32 %0
-  %5 = icmp ne i32 %4, 0
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
   %6 = zext i1 %5 to i32
   ret i32 %6
 }
@@ -20,8 +20,9 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i32 1, i32 %0
-  %5 = icmp eq i32 %4, 2
+  %4 = icmp eq i32 %0, 2
+  %not. = xor i1 %3, true
+  %5 = select i1 %not., i1 %4, i1 false
   %6 = zext i1 %5 to i32
   ret i32 %6
 }

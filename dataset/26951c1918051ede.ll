@@ -16,7 +16,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 10
   %3 = sext i32 %2 to i64
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 

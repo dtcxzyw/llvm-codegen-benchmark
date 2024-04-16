@@ -83,8 +83,10 @@ func0000000000000058:                   # @func0000000000000058
 	sltu	a0, a1, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	add.uw	a0, a1, a0
-	addi	a0, a0, -1
+	zext.w	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
@@ -165,8 +167,9 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000051:                   # @func0000000000000051
 	andi	a1, a1, 255
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a

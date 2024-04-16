@@ -7,7 +7,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
   %4 = icmp sgt i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 2
   %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

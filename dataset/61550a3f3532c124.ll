@@ -22,7 +22,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = call i32 @llvm.bswap.i32(i32 %3)
   ret i32 %4

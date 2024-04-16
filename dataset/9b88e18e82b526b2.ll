@@ -2017,7 +2017,7 @@ entry:
 define i64 @func0000000000000006(i8 %0) #0 {
 entry:
   %1 = sub nuw nsw i8 16, %0
-  %2 = zext i8 %1 to i64
+  %2 = zext nneg i8 %1 to i64
   ret i64 %2
 }
 

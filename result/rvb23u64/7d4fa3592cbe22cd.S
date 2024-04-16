@@ -10,13 +10,13 @@ func0000000000000201:                   # @func0000000000000201
 	ret
 func0000000000000146:                   # @func0000000000000146
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func0000000000000141:                   # @func0000000000000141
 	add	a1, a1, a2
@@ -25,8 +25,10 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func00000000000003c4:                   # @func00000000000003c4
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	sltiu	a0, a0, 32
+	add	a0, a0, a1
+	srliw	a0, a0, 5
+	slli	a0, a0, 5
+	seqz	a0, a0
 	ret
 func00000000000003c1:                   # @func00000000000003c1
 	add	a1, a1, a2

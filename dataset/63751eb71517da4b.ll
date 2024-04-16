@@ -10,7 +10,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -60,7 +60,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -105,7 +105,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 30
   %4 = ashr i64 %3, 32
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -118,7 +118,7 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 28
   %4 = ashr i64 %3, 32
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr inbounds float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -130,7 +130,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -142,7 +142,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }

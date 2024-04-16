@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 -1, i64 %2
+  %4 = select i1 %3, i64 -9223372036854775808, i64 %2
   %5 = select i1 %0, i64 %4, i64 %1
   %6 = icmp slt i64 %5, 0
   ret i1 %6

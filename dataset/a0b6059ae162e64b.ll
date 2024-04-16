@@ -6,8 +6,8 @@
 define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
-  %4 = select i1 %1, i1 true, i1 %3
-  %5 = select i1 %0, i1 true, i1 %4
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
 
@@ -30,8 +30,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = select i1 %1, i1 true, i1 %3
-  %5 = select i1 %0, i1 true, i1 %4
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
 

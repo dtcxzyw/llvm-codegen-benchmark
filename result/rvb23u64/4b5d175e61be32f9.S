@@ -29,8 +29,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 255
-	lui	a1, 4
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 13
-	bseti	a0, a0, 18
+	lui	a1, 1048572
+	czero.eqz	a0, a1, a0
+	lui	a1, 70
+	add	a0, a0, a1
 	ret

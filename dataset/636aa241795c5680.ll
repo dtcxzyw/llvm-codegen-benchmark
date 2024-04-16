@@ -52,7 +52,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = freeze i32 %3
   ret i32 %4
 }

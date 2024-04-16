@@ -5,7 +5,7 @@
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 7
-  %4 = mul nuw nsw i32 %1, %3
+  %4 = mul nuw nsw i32 %3, %1
   %5 = sub i32 %4, %0
   ret i32 %5
 }

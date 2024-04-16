@@ -7,9 +7,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0) #0 {
 entry:
-  %1 = getelementptr inbounds i8, ptr %0, i64 -1
-  %2 = getelementptr i8, ptr %1, i64 11
-  ret ptr %2
+  %1 = getelementptr i8, ptr %0, i64 10
+  ret ptr %1
 }
 
 ; 2 occurrences:
@@ -18,9 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0) #0 {
 entry:
-  %1 = getelementptr inbounds i8, ptr %0, i64 12
-  %2 = getelementptr inbounds i8, ptr %1, i64 8
-  ret ptr %2
+  %1 = getelementptr inbounds i8, ptr %0, i64 20
+  ret ptr %1
 }
 
 ; 2 occurrences:
@@ -29,9 +27,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0) #0 {
 entry:
-  %1 = getelementptr i8, ptr %0, i64 -148
-  %2 = getelementptr i8, ptr %1, i64 148
-  ret ptr %2
+  ret ptr %0
 }
 
 attributes #0 = { nounwind }

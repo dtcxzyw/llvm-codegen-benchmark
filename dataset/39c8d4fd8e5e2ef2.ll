@@ -274,7 +274,7 @@ entry:
 define i64 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32767
-  %3 = add i16 %0, %2
+  %3 = add i16 %2, %0
   %4 = zext nneg i16 %3 to i64
   ret i64 %4
 }
@@ -437,7 +437,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3968
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -452,7 +452,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -474,7 +474,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

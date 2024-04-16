@@ -8,7 +8,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %0, %4
+  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 

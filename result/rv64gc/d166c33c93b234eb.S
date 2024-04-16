@@ -46,7 +46,8 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000002ba:                   # @func00000000000002ba
@@ -104,7 +105,8 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func000000000000019a:                   # @func000000000000019a
@@ -168,7 +170,9 @@ func0000000000000111:                   # @func0000000000000111
 	sltiu	a2, a2, 192
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	sext.w	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000011a:                   # @func000000000000011a
@@ -230,7 +234,8 @@ func0000000000000101:                   # @func0000000000000101
 	bgeu	a2, a3, .LBB24_2
 	li	a1, 1
 .LBB24_2:                               # %entry
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001ba:                   # @func00000000000001ba
@@ -255,7 +260,8 @@ func0000000000000181:                   # @func0000000000000181
 	slti	a2, a2, 0
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000002aa:                   # @func00000000000002aa

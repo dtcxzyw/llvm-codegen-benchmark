@@ -10,9 +10,9 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	srli	a0, a0, 9
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	ori	a0, a0, 2
-	zext.w	a0, a0
+	andi	a0, a0, 512
+	li	a1, -3
+	zext.w	a1, a1
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 2
 	ret

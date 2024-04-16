@@ -23,7 +23,7 @@ define i32 @func0000000000000063(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = select i1 %1, i32 16, i32 0
   %7 = or disjoint i32 %5, %6
   ret i32 %7

@@ -9,7 +9,7 @@ entry:
   %2 = fcmp olt double %1, 1.000000e+07
   %3 = fcmp oge double %1, 1.000000e-03
   %4 = and i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = fcmp olt double %1, 2.000000e+00
   %3 = fcmp ogt double %1, 5.000000e-01
   %4 = and i1 %3, %2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

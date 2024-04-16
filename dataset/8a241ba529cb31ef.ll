@@ -120,8 +120,8 @@
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
-  %2 = zext i32 %1 to i64
-  %3 = lshr i64 %2, 6
+  %2 = lshr i32 %1, 6
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -132,8 +132,8 @@ entry:
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 63
-  %2 = zext i32 %1 to i64
-  %3 = lshr i64 %2, 3
+  %2 = lshr i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -151,8 +151,8 @@ entry:
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -5
-  %2 = zext i32 %1 to i64
-  %3 = lshr i64 %2, 6
+  %2 = lshr i32 %1, 6
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -164,8 +164,8 @@ entry:
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 80
-  %2 = zext i32 %1 to i64
-  %3 = lshr exact i64 %2, 4
+  %2 = lshr i32 %1, 4
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -195,8 +195,8 @@ entry:
 define i64 @func000000000000000e(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %2, 1
+  %2 = lshr i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -206,8 +206,8 @@ entry:
 define i64 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 8
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %2, 3
+  %2 = lshr i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

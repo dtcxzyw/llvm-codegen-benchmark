@@ -1,5 +1,4 @@
 
-%"struct.std::pair.28.1554679" = type <{ i64, i32, [4 x i8] }>
 %class.aiVector3t.1753911 = type { float, float, float }
 %"class.std::vector.312.1833461" = type { %"struct.std::_Vector_base.313.1833462" }
 %"struct.std::_Vector_base.313.1833462" = type { %"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl.1833463" }
@@ -1555,10 +1554,9 @@ define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 4
-  %6 = getelementptr inbounds %"struct.std::pair.28.1554679", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %6 = getelementptr inbounds i8, ptr %5, i64 8
+  ret ptr %6
 }
 
 ; 5 occurrences:
@@ -1624,9 +1622,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
-  %6 = getelementptr %"class.std::vector.312.1833461", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %"class.std::vector.312.1833461", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 9 occurrences:
@@ -1662,9 +1659,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr i64 %4, 5
-  %6 = getelementptr %struct.pg_encname.2120339, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.pg_encname.2120339, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 3 occurrences:

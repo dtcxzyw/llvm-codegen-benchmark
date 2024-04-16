@@ -22,8 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	subw	a1, a1, a2
-	addiw	a1, a1, 348
-	sltiu	a1, a1, -6
-	xori	a1, a1, 1
+	addiw	a1, a1, 354
+	sltiu	a1, a1, 6
 	or	a0, a0, a1
 	ret

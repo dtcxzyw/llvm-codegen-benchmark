@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = icmp sgt i64 %4, -1
   %6 = sext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = icmp ugt i32 %4, 5
   %6 = sext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

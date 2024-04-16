@@ -12,7 +12,7 @@ entry:
   %3 = lshr exact i64 %2, 4
   %4 = icmp eq ptr %1, null
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

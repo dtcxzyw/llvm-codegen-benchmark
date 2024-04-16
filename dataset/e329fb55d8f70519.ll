@@ -14,9 +14,8 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %struct.iovec.1644759, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.iovec.1644759, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 3 occurrences:
@@ -58,9 +57,8 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %struct._zend_op.1716781, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 28
-  ret ptr %7
+  %6 = getelementptr inbounds %struct._zend_op.1716781, ptr %0, i64 %5, i32 6
+  ret ptr %6
 }
 
 ; 1 occurrences:

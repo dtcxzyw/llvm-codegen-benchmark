@@ -16,7 +16,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
   %5 = urem i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

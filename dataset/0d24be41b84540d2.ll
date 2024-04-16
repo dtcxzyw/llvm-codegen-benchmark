@@ -12,9 +12,9 @@ define i1 @func0000000000000404(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = add i64 %5, %0
-  %7 = icmp ult i64 %6, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = xor i64 %5, -1
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -25,9 +25,9 @@ define i1 @func0000000000000604(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = add i64 %5, %0
-  %7 = icmp ult i64 %6, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = xor i64 %5, -1
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

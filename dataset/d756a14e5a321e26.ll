@@ -11,8 +11,8 @@ define i64 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294965248
   %2 = icmp eq i64 %1, 55296
-  %3 = select i1 %2, i64 65533, i64 %0
-  %4 = lshr i64 %3, 18
+  %3 = lshr i64 %0, 18
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 

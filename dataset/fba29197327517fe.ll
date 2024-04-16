@@ -190,7 +190,7 @@ define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -492,7 +492,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -522,7 +522,7 @@ define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -681,7 +681,7 @@ define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
 
@@ -793,7 +793,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 16
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -809,7 +809,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -3
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -829,7 +829,7 @@ define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -1023,7 +1023,7 @@ define i48 @func0000000000000011(i48 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 65536
   %3 = zext i1 %2 to i48
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   ret i48 %4
 }
 
@@ -1053,7 +1053,7 @@ define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 63
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
 
@@ -1067,7 +1067,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -1089,7 +1089,7 @@ define i8 @func0000000000000020(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 255
   %3 = zext i1 %2 to i8
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 

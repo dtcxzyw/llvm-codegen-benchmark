@@ -19,8 +19,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -8193
-  %3 = or i32 %2, 256
+  %2 = and i32 %1, -8449
+  %3 = or disjoint i32 %2, 256
   %4 = and i32 %1, 64
   %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i32 %3, i32 %0

@@ -1,10 +1,11 @@
 .LCPI0_0:
-	.quad	0x3fd3333333333333              # double 0.29999999999999999
+	.word	0x3e99999a                      # float 0.300000012
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa0, %lo(.LCPI0_0)(a0)
-.LBB0_2:                                # %entry
+	bnez	a0, .LBB0_2
 	fcvt.s.d	fa0, fa0
+	ret
+.LBB0_2:
+	lui	a0, %hi(.LCPI0_0)
+	flw	fa0, %lo(.LCPI0_0)(a0)
 	ret

@@ -244,7 +244,7 @@ define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = lshr exact i32 %2, 16
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
 

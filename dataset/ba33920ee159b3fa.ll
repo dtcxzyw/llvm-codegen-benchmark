@@ -10,7 +10,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000131(i32 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 3
+  %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %0, 1
   %5 = icmp eq i32 %4, %3
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 48
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = add nuw i32 %0, 1
   %5 = icmp eq i32 %4, %3
   ret i1 %5

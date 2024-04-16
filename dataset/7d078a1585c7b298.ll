@@ -8,7 +8,7 @@
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = icmp eq i32 %0, 0
   %5 = or i1 %3, %4
   ret i1 %5
@@ -26,7 +26,7 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 1)
-  %3 = icmp sge i32 %0, %2
+  %3 = icmp sle i32 %2, %0
   %4 = icmp eq i32 %0, -1
   %5 = or i1 %3, %4
   ret i1 %5

@@ -31,10 +31,10 @@ entry:
 define i128 @func000000000000003b(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
-  %2 = shl nuw nsw i64 1, %1
-  %3 = add nsw i64 %2, -1
-  %4 = zext nneg i64 %3 to i128
-  ret i128 %4
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = zext nneg i64 %2 to i128
+  ret i128 %3
 }
 
 ; 1 occurrences:
@@ -43,10 +43,10 @@ entry:
 define i128 @func0000000000000031(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
-  %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, -1
-  %4 = zext nneg i64 %3 to i128
-  ret i128 %4
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = zext nneg i64 %2 to i128
+  ret i128 %3
 }
 
 ; 2 occurrences:
@@ -56,10 +56,10 @@ entry:
 define i64 @func0000000000000030(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
-  %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, -1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

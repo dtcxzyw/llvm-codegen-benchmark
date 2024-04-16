@@ -37,14 +37,14 @@ func0000000000000016:                   # @func0000000000000016
 	slt	a0, a2, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	addiw	a2, a2, 64
 	andi	a2, a2, -64
+	addiw	a2, a2, 64
 	subw	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	addiw	a2, a2, 64
 	andi	a2, a2, -64
+	addiw	a2, a2, 64
 	subw	a0, a0, a1
 	sltu	a0, a2, a0
 	ret

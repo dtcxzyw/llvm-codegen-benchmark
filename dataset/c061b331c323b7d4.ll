@@ -236,9 +236,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %0, 1
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
+  %2 = icmp ne i32 %1, 0
+  %3 = zext i1 %2 to i32
+  %4 = shl nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -247,9 +247,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 %0, 1
-  %3 = icmp eq i32 %1, 1
-  %4 = select i1 %3, i32 %0, i32 %2
+  %2 = icmp ne i32 %1, 1
+  %3 = zext i1 %2 to i32
+  %4 = shl nuw i32 %0, %3
   ret i32 %4
 }
 

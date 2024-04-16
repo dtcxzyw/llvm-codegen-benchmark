@@ -15,16 +15,16 @@ func0000000000000002:                   # @func0000000000000002
 	bseti	a0, a0, 14
 	ret
 func0000000000000018:                   # @func0000000000000018
-	bexti	a2, a2, 5
-	czero.nez	a1, a1, a2
+	andi	a2, a2, 32
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 257
 	ret
 func0000000000000019:                   # @func0000000000000019
-	bexti	a2, a2, 4
-	czero.nez	a1, a1, a2
+	andi	a2, a2, 16
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret

@@ -9,7 +9,7 @@ entry:
   %4 = and i32 %3, 2047
   %5 = add nsw i32 %4, -1075
   %6 = select i1 %1, i32 -1074, i32 %5
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = and i32 %3, 2047
   %5 = add nsw i32 %4, -1077
   %6 = select i1 %1, i32 -1076, i32 %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

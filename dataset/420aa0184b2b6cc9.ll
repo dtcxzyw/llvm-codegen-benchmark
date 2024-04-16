@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
-  %4 = and i32 %3, 2047
+  %4 = and i32 %3, 1984
   %5 = select i1 %0, i32 %1, i32 %4
   %6 = icmp ult i32 %5, 64
   ret i1 %6

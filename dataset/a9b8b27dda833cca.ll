@@ -358,8 +358,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = sdiv exact i64 %3, 56
-  %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
+  %5 = and i64 %4, 2147483648
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 
@@ -475,8 +475,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = sdiv exact i64 %3, 20
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 1
+  %5 = and i64 %4, 4294967294
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 

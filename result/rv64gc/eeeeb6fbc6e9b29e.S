@@ -36,11 +36,11 @@ func0000000000000041:                   # @func0000000000000041
 	and	a0, a0, a1
 	ret
 func00000000000001a8:                   # @func00000000000001a8
-	addi	a1, a1, -3
-	sltiu	a1, a1, 3
+	addi	a1, a1, -6
+	sltiu	a1, a1, -3
 	slti	a0, a0, 4
-	or	a0, a0, a1
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	addiw	a1, a1, -1
@@ -91,12 +91,11 @@ func00000000000000c1:                   # @func00000000000000c1
 .LCPI12_0:
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000081:                   # @func0000000000000081
-	andi	a1, a1, 255
 	lui	a2, %hi(.LCPI12_0)
 	ld	a2, %lo(.LCPI12_0)(a2)
-	addi	a1, a1, -48
-	sltiu	a1, a1, 6
-	xori	a1, a1, 1
+	andi	a1, a1, 255
+	addi	a1, a1, -54
+	sltiu	a1, a1, -6
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -147,22 +146,20 @@ func00000000000000a4:                   # @func00000000000000a4
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addi	a1, a1, 1
-	xori	a1, a1, 2
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
-	addiw	a1, a1, 2
-	sltiu	a1, a1, 3
-	not	a1, a1
+	addiw	a1, a1, -1
+	sltiu	a1, a1, -3
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	addi	a1, a1, -624
+	xori	a1, a1, 624
 	xori	a0, a0, 4
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -198,11 +195,11 @@ func00000000000001c8:                   # @func00000000000001c8
 	and	a0, a0, a1
 	ret
 func0000000000000188:                   # @func0000000000000188
-	addi	a1, a1, -1
-	sltiu	a1, a1, 2
+	addi	a1, a1, -3
+	sltiu	a1, a1, -2
 	sltiu	a0, a0, 10
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000114:                   # @func0000000000000114
 	andi	a0, a0, 255
@@ -223,11 +220,11 @@ func00000000000000cc:                   # @func00000000000000cc
 func00000000000000a8:                   # @func00000000000000a8
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	addi	a1, a1, 3
-	sltiu	a1, a1, 76
+	addi	a1, a1, -73
+	sltiu	a1, a1, -76
 	slti	a0, a0, 0
-	or	a0, a0, a1
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
 	slli	a0, a0, 56
@@ -271,9 +268,8 @@ func0000000000000046:                   # @func0000000000000046
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
-	addi	a1, a1, 1
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	addi	a1, a1, -1
+	sltiu	a1, a1, -2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -295,9 +291,8 @@ func00000000000000ca:                   # @func00000000000000ca
 func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
 	andi	a1, a1, 255
-	addi	a1, a1, -48
-	sltiu	a1, a1, 9
-	xori	a1, a1, 1
+	addi	a1, a1, -57
+	sltiu	a1, a1, -9
 	lui	a2, 996147
 	addiw	a2, a2, 820
 	xor	a0, a0, a2
@@ -333,26 +328,24 @@ func0000000000000184:                   # @func0000000000000184
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	andi	a1, a1, 254
 	addi	a1, a1, -4
-	sltiu	a1, a1, 2
+	snez	a1, a1
 	sltiu	a0, a0, 14
-	or	a0, a0, a1
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func000000000000018c:                   # @func000000000000018c
 	andi	a0, a0, 255
-	addiw	a1, a1, -4
-	sltiu	a1, a1, 8
-	xori	a1, a1, 1
+	addiw	a1, a1, -12
+	sltiu	a1, a1, -8
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000086:                   # @func0000000000000086
 	sext.w	a0, a0
-	addiw	a1, a1, -1
-	sltiu	a1, a1, -127
-	xori	a1, a1, 1
+	addiw	a1, a1, 126
+	sltiu	a1, a1, 127
 	slti	a0, a0, 128
 	and	a0, a0, a1
 	ret

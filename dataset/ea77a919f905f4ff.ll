@@ -51,7 +51,7 @@ entry:
   %2 = shl i32 %1, 5
   %3 = and i32 %2, 4064
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -77,7 +77,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, -32
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -92,7 +92,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -108,7 +108,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -125,7 +125,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -137,7 +137,7 @@ entry:
   %2 = shl i16 %1, 3
   %3 = and i16 %2, 8
   %4 = zext nneg i16 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

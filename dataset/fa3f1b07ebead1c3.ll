@@ -163,7 +163,7 @@ define i16 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -261663
   %2 = ashr i32 %1, 21
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nsw i32 %2 to i16
   %4 = sub nsw i16 292, %3
   ret i16 %4
 }

@@ -62,9 +62,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = sitofp i32 %0 to float
-  %2 = fcmp ole float %1, 1.000000e+00
-  ret i1 %2
+  %1 = icmp slt i32 %0, 2
+  ret i1 %1
 }
 
 ; 1 occurrences:

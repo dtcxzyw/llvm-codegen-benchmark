@@ -10,10 +10,10 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, 6
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slli	a0, a0, 32
 	lui	a1, 524296
 	addi	a1, a1, 1
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 47
 	addi	a0, a0, -1
@@ -21,10 +21,10 @@ func0000000000000007:                   # @func0000000000000007
 	subw	a0, a1, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
-	slli	a0, a0, 32
 	lui	a1, 699051
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 34
 	li	a1, 6
@@ -32,10 +32,10 @@ func0000000000000005:                   # @func0000000000000005
 	addiw	a0, a0, -6
 	ret
 func000000000000000f:                   # @func000000000000000f
-	slli	a0, a0, 32
 	lui	a1, 335544
 	addi	a1, a1, 1311
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 39
 	li	a1, 400
@@ -49,10 +49,10 @@ func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 39
-	addi	a0, a0, 1
 	lui	a1, 1048540
 	addi	a1, a1, 1359
-	mulw	a0, a0, a1
+	mul	a0, a0, a1
+	addw	a0, a0, a1
 	ret
 .LCPI5_0:
 	.quad	4835703278458516699             # 0x431bde82d7b634db
@@ -61,10 +61,10 @@ func000000000000000e:                   # @func000000000000000e
 	ld	a1, %lo(.LCPI5_0)(a1)
 	mulhu	a0, a0, a1
 	srli	a0, a0, 18
-	addi	a0, a0, 1
 	lui	a1, 244
 	addiw	a1, a1, 576
 	mul	a0, a0, a1
+	add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, 699051
@@ -72,8 +72,8 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	srli	a0, a0, 1
-	addi	a0, a0, -1
-	slli	a1, a0, 1
+	srli	a1, a0, 1
+	andi	a0, a0, -2
 	add	a0, a0, a1
+	addi	a0, a0, -3
 	ret

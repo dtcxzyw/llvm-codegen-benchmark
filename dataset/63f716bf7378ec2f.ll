@@ -20,7 +20,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   %7 = and i32 %6, 1
   ret i32 %7
 }

@@ -9,7 +9,7 @@ entry:
   %2 = add i32 %1, 7
   %3 = and i32 %2, -4
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

@@ -9,14 +9,14 @@ func0000000000000034:                   # @func0000000000000034
 	sltiu	a0, a0, 513
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a3, a2, 1
-	li	a2, -32
-	bnez	a3, .LBB1_2
-	li	a2, -64
-.LBB1_2:                                # %entry
+	andi	a2, a2, 1
 	addw	a0, a0, a1
-	and	a0, a0, a2
-	seqz	a0, a0
+	li	a1, 31
+	bnez	a2, .LBB1_2
+	li	a1, 63
+.LBB1_2:                                # %entry
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a3, a2, 1

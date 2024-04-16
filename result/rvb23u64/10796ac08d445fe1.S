@@ -11,10 +11,9 @@ func0000000000000501:                   # @func0000000000000501
 	seqz	a0, a0
 	ret
 func0000000000000c01:                   # @func0000000000000c01
-	addi	a2, a2, 1
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	addi	a0, a0, 5
+	addi	a0, a0, 4
 	andi	a0, a0, 255
 	xor	a0, a0, a2
 	seqz	a0, a0

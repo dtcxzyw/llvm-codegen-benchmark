@@ -4,7 +4,8 @@ func000000000000003a:                   # @func000000000000003a
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	addw	a1, a1, a0
-	sraiw	a0, a0, 31
-	andn	a0, a1, a0
+	sext.w	a2, a0
+	addw	a0, a0, a1
+	slti	a1, a2, 0
+	czero.nez	a0, a0, a1
 	ret

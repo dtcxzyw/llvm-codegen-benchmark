@@ -12,9 +12,8 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.Au_Obj_t_.1772682, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.Au_Obj_t_.1772682, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -25,9 +24,8 @@ entry:
   %2 = freeze i16 %1
   %3 = and i16 %2, 255
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr %struct.nfnl_callback.2010840, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr %struct.nfnl_callback.2010840, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

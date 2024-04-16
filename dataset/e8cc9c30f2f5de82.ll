@@ -28,7 +28,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 255
   %5 = lshr i32 %1, %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

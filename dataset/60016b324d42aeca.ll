@@ -31,7 +31,7 @@ define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fsub double 1.000000e+00, %3
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   %6 = fcmp olt double %5, 0.000000e+00
   %7 = select i1 %6, double 0.000000e+00, double %5
   ret double %7
@@ -46,7 +46,7 @@ define double @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
   %4 = fsub double 1.000000e+00, %3
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   %6 = fcmp ole double %5, 0.000000e+00
   %7 = select i1 %6, double 0.000000e+00, double %5
   ret double %7

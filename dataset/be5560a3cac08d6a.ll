@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, float 2.550000e+02, float %2
   %5 = select i1 %1, float 0.000000e+00, float %4
   %6 = fcmp uge float %5, 2.560000e+02
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = select i1 %3, float 1.000000e+00, float %2
   %5 = select i1 %1, float 0.000000e+00, float %4
   %6 = fcmp ole float %5, 0.000000e+00
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = select i1 %3, double 7.000000e+02, double %2
   %5 = select i1 %1, double -7.000000e+02, double %4
   %6 = fcmp oeq double %5, -7.000000e+02
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

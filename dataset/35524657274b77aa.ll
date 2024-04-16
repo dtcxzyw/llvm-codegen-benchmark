@@ -308,8 +308,8 @@ entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %1, i64 %2)
   %4 = add nsw i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 230584300921369395)
-  %6 = select i1 %0, i64 230584300921369395, i64 %5
-  %7 = mul nuw nsw i64 %6, 40
+  %6 = mul nuw nsw i64 %5, 40
+  %7 = select i1 %0, i64 9223372036854775800, i64 %6
   ret i64 %7
 }
 

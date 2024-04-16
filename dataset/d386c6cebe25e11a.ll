@@ -12,7 +12,7 @@ entry:
   %3 = and i64 %2, 16777216
   %4 = and i64 %0, 16777215
   %5 = or disjoint i64 %3, %4
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = and i64 %2, 1610612736
   %4 = and i64 %0, 16777184
   %5 = or disjoint i64 %3, %4
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 
@@ -51,11 +51,10 @@ entry:
 define i16 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = and i32 %2, 2097088
-  %4 = and i32 %0, 63
-  %5 = or disjoint i32 %4, %3
-  %6 = trunc i32 %5 to i16
-  ret i16 %6
+  %3 = and i32 %0, 63
+  %4 = or disjoint i32 %3, %2
+  %5 = trunc i32 %4 to i16
+  ret i16 %5
 }
 
 ; 1 occurrences:
@@ -91,11 +90,10 @@ entry:
 define i8 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = and i32 %2, 1984
-  %4 = and i32 %0, 63
-  %5 = or disjoint i32 %4, %3
-  %6 = trunc nuw i32 %5 to i8
-  ret i8 %6
+  %3 = and i32 %0, 63
+  %4 = or disjoint i32 %3, %2
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

@@ -10,7 +10,7 @@
 define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = add i32 %3, 1
   ret i32 %4
 }
@@ -115,7 +115,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = add i64 %3, -4294967296
   ret i64 %4
 }
@@ -212,7 +212,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nsw i32 %3, -16
   ret i32 %4
 }
@@ -313,7 +313,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = add nuw nsw i64 %3, 5
   ret i64 %4
 }
@@ -327,7 +327,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = add nsw i32 %3, -32
   ret i32 %4
 }
@@ -340,7 +340,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nuw i32 %3, 12
   ret i32 %4
 }
@@ -357,7 +357,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add i32 %3, -2
   ret i32 %4
 }
@@ -370,7 +370,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -384,7 +384,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nuw nsw i32 %3, 65536
   ret i32 %4
 }

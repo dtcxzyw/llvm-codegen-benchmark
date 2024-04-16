@@ -8,7 +8,7 @@ entry:
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 -1
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = ashr exact i64 %3, 30
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 668
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

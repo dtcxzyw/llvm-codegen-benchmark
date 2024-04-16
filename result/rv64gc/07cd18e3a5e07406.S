@@ -2,8 +2,7 @@ func0000000000000016:                   # @func0000000000000016
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:                                # %entry
-	sub	a0, a1, a0
-	srli	a0, a0, 63
+	slt	a0, a1, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a2, a2

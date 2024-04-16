@@ -97,10 +97,10 @@ define i64 @func0000000000000013(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 12
-  %6 = sub i64 %0, %5
-  %7 = mul nuw nsw i64 %6, 12
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -12
+  %5 = add i64 %.neg, %0
+  %6 = mul nuw nsw i64 %5, 12
+  ret i64 %6
 }
 
 ; 78 occurrences:
@@ -187,10 +187,10 @@ define i64 @func0000000000000012(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 12
-  %6 = sub i64 %0, %5
-  %7 = mul nuw i64 %6, 12
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -12
+  %5 = add i64 %.neg, %0
+  %6 = mul nuw i64 %5, 12
+  ret i64 %6
 }
 
 ; 8 occurrences:
@@ -207,10 +207,10 @@ define i64 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 12
-  %6 = sub nsw i64 %0, %5
-  %7 = mul nuw i64 %6, 12
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -12
+  %5 = add i64 %.neg, %0
+  %6 = mul nuw i64 %5, 12
+  ret i64 %6
 }
 
 ; 10 occurrences:
@@ -229,10 +229,10 @@ define i64 @func0000000000000017(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 12
-  %6 = sub nsw i64 %0, %5
-  %7 = mul nuw nsw i64 %6, 12
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -12
+  %5 = add i64 %.neg, %0
+  %6 = mul nuw nsw i64 %5, 12
+  ret i64 %6
 }
 
 ; 3 occurrences:
@@ -244,10 +244,10 @@ define i64 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 24
-  %6 = sub nsw i64 %0, %5
-  %7 = mul i64 %6, -24
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -24
+  %5 = add i64 %.neg, %0
+  %6 = mul i64 %5, -24
+  ret i64 %6
 }
 
 ; 65 occurrences:
@@ -321,10 +321,10 @@ define i64 @func0000000000000010(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 24
-  %6 = sub i64 %0, %5
-  %7 = mul i64 %6, 24
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -24
+  %5 = add i64 %.neg, %0
+  %6 = mul i64 %5, 24
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

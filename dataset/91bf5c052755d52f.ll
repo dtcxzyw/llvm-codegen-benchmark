@@ -18,7 +18,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr inbounds %struct._zend_live_range.1714754, ptr %0, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -12
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr inbounds i32, ptr %0, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 4
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i64, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -57,7 +57,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -6
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -69,7 +69,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -82,7 +82,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -94,7 +94,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -107,7 +107,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -6
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -119,7 +119,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -4
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 

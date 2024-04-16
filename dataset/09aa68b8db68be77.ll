@@ -23,7 +23,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = shl nuw nsw i32 %1, 16
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = xor i32 %6, %4
   ret i32 %7
 }
@@ -36,7 +36,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = shl nuw nsw i32 %1, 16
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = xor i32 %6, %4
   ret i32 %7
 }

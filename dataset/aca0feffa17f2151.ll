@@ -8,7 +8,7 @@
 define i64 @func000000000000006d(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nuw nsw i64 %3, 1048576
   %5 = and i64 %4, -2097152
   %6 = sub nsw i64 %3, %5
@@ -23,7 +23,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add nsw i64 %3, 1048576
   %5 = and i64 %4, -2097152
   %6 = sub nsw i64 %3, %5
@@ -39,7 +39,7 @@ entry:
 define i64 @func0000000000000025(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add nsw i64 %3, 1048576
   %5 = and i64 %4, -2097152
   %6 = sub nsw i64 %3, %5
@@ -52,7 +52,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add i64 %3, 1048576
   %5 = and i64 %4, -2097152
   %6 = sub i64 %3, %5

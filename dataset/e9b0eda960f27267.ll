@@ -146,8 +146,8 @@ define i64 @func0000000000000049(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i64 %0, 7
-  %4 = select i1 %3, i32 1, i32 %2
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %2 to i64
+  %5 = select i1 %3, i64 1, i64 %4
   ret i64 %5
 }
 
@@ -236,8 +236,8 @@ define i64 @func0000000000000043(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i32 1, i32 %2
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %2 to i64
+  %5 = select i1 %3, i64 1, i64 %4
   ret i64 %5
 }
 

@@ -9,10 +9,10 @@
 define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 112
-  %5 = trunc i64 %4 to i32
-  %6 = sub nsw i32 %0, %5
-  ret i32 %6
+  %.neg = sdiv exact i64 %3, -112
+  %.neg1 = trunc i64 %.neg to i32
+  %4 = add i32 %.neg1, %0
+  ret i32 %4
 }
 
 ; 4 occurrences:
@@ -24,10 +24,10 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 12
-  %5 = trunc i64 %4 to i32
-  %6 = sub i32 %0, %5
-  ret i32 %6
+  %.neg = sdiv exact i64 %3, -12
+  %.neg1 = trunc i64 %.neg to i32
+  %4 = add i32 %.neg1, %0
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -38,10 +38,10 @@ entry:
 define i16 @func0000000000000000(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = sdiv i32 %3, 4
-  %5 = trunc i32 %4 to i16
-  %6 = sub i16 %0, %5
-  ret i16 %6
+  %.neg = sdiv i32 %3, -4
+  %.neg1 = trunc i32 %.neg to i16
+  %4 = add i16 %.neg1, %0
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

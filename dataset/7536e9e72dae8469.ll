@@ -9,7 +9,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   %7 = tail call i64 @llvm.fshl.i64(i64 %6, i64 %6, i64 49)
   ret i64 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = tail call noundef i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 17)
   ret i32 %7
 }

@@ -19,10 +19,8 @@
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 1112
-  %4 = getelementptr inbounds %"struct.Assimp::SIBObject.1748453", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  %6 = getelementptr inbounds [1024 x i8], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds %"struct.Assimp::SIBObject.1748453", ptr %1, i64 %3, i32 0, i32 1, i64 %0
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -31,10 +29,8 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
-  %4 = getelementptr %struct.QueryRepresentationOperand.2122387, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  %6 = getelementptr [16384 x i16], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr %struct.QueryRepresentationOperand.2122387, ptr %1, i64 %3, i32 3, i64 %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

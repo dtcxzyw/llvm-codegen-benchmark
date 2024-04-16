@@ -8,10 +8,10 @@
 define i16 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 2048
-  %2 = lshr i64 %1, 12
-  %3 = trunc i64 %2 to i16
-  %4 = shl i16 %3, 7
-  ret i16 %4
+  %sh.diff = lshr i64 %1, 5
+  %tr.sh.diff = trunc i64 %sh.diff to i16
+  %2 = and i16 %tr.sh.diff, -128
+  ret i16 %2
 }
 
 ; 1 occurrences:
@@ -19,11 +19,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000006c(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 63
-  %2 = lshr i64 %1, 6
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = shl i32 %3, 6
-  ret i32 %4
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 63
+  %3 = and i32 %2, -64
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -31,11 +30,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 4095
-  %2 = lshr i64 %1, 12
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 12
-  ret i32 %4
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 4095
+  %3 = and i32 %2, -4096
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -43,11 +41,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 17592186040353
-  %2 = lshr i64 %1, 12
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 12
-  ret i32 %4
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, -4063
+  %3 = and i32 %2, -4096
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

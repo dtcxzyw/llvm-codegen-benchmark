@@ -22,7 +22,7 @@ entry:
   %4 = add nuw nsw i64 %3, 7
   %5 = and i64 %4, 8589934584
   %6 = select i1 %1, i64 0, i64 %5
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

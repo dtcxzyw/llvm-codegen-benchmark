@@ -16,9 +16,8 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = ashr i32 %0, 31
-  %2 = xor i32 %1, %0
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %2 = icmp eq i32 %1, %0
+  ret i1 %2
 }
 
 ; 1 occurrences:

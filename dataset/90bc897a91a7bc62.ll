@@ -12,7 +12,7 @@ entry:
   %3 = uitofp i32 %2 to double
   %4 = fmul double %3, 2.000000e+00
   %5 = fdiv double %4, %1
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

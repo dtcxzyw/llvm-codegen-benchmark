@@ -39,7 +39,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 1000)
   %3 = add nuw nsw i32 %2, 4
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 

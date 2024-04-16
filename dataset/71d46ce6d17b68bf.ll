@@ -7,7 +7,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = shl i32 %3, 22
   %5 = and i32 %1, 131071
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = fptosi float %2 to i32
   %4 = shl i32 %3, 24
   %5 = and i32 %1, 255
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

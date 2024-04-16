@@ -23,8 +23,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = sitofp i32 %2 to float
+  %2 = sitofp i32 %1 to float
+  %3 = select i1 %0, float 0.000000e+00, float %2
   ret float %3
 }
 

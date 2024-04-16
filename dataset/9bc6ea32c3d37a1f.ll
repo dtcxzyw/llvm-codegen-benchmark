@@ -135,8 +135,8 @@ define i64 @func000000000000000b(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = ashr exact i64 %1, 2
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
+  %3 = or i64 %2, 1
+  %4 = add nsw i64 %3, -2
   ret i64 %4
 }
 
@@ -209,8 +209,8 @@ define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = ashr i64 %1, 2
-  %3 = add nsw i64 %2, -2
-  %4 = or disjoint i64 %3, 1
+  %3 = or i64 %2, 1
+  %4 = add nsw i64 %3, -2
   ret i64 %4
 }
 

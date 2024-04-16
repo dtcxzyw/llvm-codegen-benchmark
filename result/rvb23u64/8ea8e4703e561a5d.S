@@ -7,13 +7,13 @@ func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
 	li	a2, 255
 	minu	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1
 	li	a2, 256
 	minu	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1

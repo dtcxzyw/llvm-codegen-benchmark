@@ -49,10 +49,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, 63
-  %2 = add i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp eq i32 %0, -64
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

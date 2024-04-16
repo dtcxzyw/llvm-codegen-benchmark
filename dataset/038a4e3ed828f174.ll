@@ -31,9 +31,9 @@ define i64 @func000000000000001c(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 1
   %2 = or disjoint i64 %1, 1
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i64 0, i64 %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

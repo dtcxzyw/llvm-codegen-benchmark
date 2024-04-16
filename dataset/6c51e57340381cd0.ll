@@ -8,7 +8,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ne i32 %0, %5
+  %6 = icmp ne i32 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }
@@ -35,7 +35,7 @@ entry:
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = icmp ne i128 %0, %5
+  %6 = icmp ne i128 %5, %0
   %7 = zext i1 %6 to i8
   ret i8 %7
 }

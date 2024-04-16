@@ -33,7 +33,7 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a2
 	ret
 func0000000000000022:                   # @func0000000000000022
-	andi	a2, a2, 255
+	andi	a2, a2, 240
 	sltiu	a2, a2, 144
 	lui	a3, 8
 	addiw	a3, a3, -1

@@ -16,9 +16,9 @@
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, 5400000
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = mul nsw i64 %2, -5400000
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -27,9 +27,9 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %2, 4294967297
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = mul i64 %2, -4294967297
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -38,9 +38,9 @@ entry:
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, 8304
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = mul nsw i64 %2, -8304
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

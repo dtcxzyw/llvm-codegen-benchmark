@@ -19,7 +19,7 @@ define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, %1
   %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 

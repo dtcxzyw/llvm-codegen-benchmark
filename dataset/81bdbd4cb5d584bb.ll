@@ -14,9 +14,8 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fadd float %0, %1
-  %3 = fmul float %2, 0x3FE6666660000000
-  %4 = fneg float %3
-  ret float %4
+  %3 = fmul float %2, 0xBFE6666660000000
+  ret float %3
 }
 
 attributes #0 = { nounwind }

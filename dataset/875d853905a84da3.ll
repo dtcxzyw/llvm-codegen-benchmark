@@ -8,7 +8,7 @@ entry:
   %4 = select i1 %1, i64 %2, i64 %3
   %5 = icmp ugt i64 %4, 1
   %6 = zext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = icmp ugt i32 %4, 1
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = select i1 %1, i64 %2, i64 %3
   %5 = icmp ugt i64 %4, 1
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

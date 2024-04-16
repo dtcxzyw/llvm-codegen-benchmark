@@ -15,7 +15,7 @@
 define i1 @func0000000000000222(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds %"struct.mold::elf::ElfRel.1599990", ptr %2, i64 %0
-  %4 = icmp eq ptr %1, %3
+  %4 = icmp eq ptr %3, %1
   %5 = icmp eq i64 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func000000000000028c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 %0
-  %4 = icmp ult ptr %1, %3
+  %4 = icmp ugt ptr %3, %1
   %5 = icmp slt i64 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6

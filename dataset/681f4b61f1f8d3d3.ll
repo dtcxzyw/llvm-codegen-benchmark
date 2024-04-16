@@ -8,9 +8,8 @@
 define i1 @func0000000000000001(double %0) #0 {
 entry:
   %1 = fptoui double %0 to i32
-  %2 = add i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %2 = icmp eq i32 %1, -1
+  ret i1 %2
 }
 
 ; 2 occurrences:

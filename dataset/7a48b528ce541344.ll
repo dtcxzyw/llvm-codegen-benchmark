@@ -30,9 +30,9 @@ define i1 @func0000000000000014(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
-  %5 = icmp eq ptr %1, null
-  %6 = select i1 %5, i64 -1, i64 %4
-  %7 = icmp ult i64 %6, %0
+  %5 = icmp ne ptr %1, null
+  %6 = icmp ult i64 %4, %0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 

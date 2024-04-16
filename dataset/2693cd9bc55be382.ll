@@ -12,7 +12,7 @@ entry:
   %3 = shl nuw nsw i64 %0, 32
   %4 = or disjoint i64 %3, %2
   %5 = urem i64 %4, 10
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

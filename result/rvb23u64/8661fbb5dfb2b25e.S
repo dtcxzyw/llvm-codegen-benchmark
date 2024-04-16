@@ -19,7 +19,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -38,7 +39,8 @@ func00000000000000b4:                   # @func00000000000000b4
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000001e8:                   # @func00000000000001e8

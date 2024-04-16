@@ -9,10 +9,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 584400, i32 584388
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = or disjoint i32 %2, 1
-  ret i32 %3
+  %1 = select i1 %0, i32 1168801, i32 1168777
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

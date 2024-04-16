@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	li	a3, -2
 	czero.nez	a1, a3, a1
 	add	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
 	andi	a1, a1, 1

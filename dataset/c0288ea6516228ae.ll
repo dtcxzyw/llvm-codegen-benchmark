@@ -45,9 +45,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 32 occurrences:
@@ -87,9 +86,8 @@ entry:
 define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp slt i64 %3, 1
-  ret i1 %4
+  %3 = icmp sge i64 %2, %0
+  ret i1 %3
 }
 
 ; 45 occurrences:
@@ -142,9 +140,8 @@ entry:
 define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 13 occurrences:
@@ -178,9 +175,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %3 = icmp ne i64 %2, %0
+  ret i1 %3
 }
 
 ; 40 occurrences:
@@ -228,9 +224,8 @@ entry:
 define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %3 = icmp slt i32 %2, %0
+  ret i1 %3
 }
 
 ; 30 occurrences:

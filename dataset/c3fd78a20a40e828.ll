@@ -7,8 +7,8 @@ define i1 @func00000000000000c1(i16 %0) #0 {
 entry:
   %1 = and i16 %0, -256
   %2 = icmp ne i16 %1, 512
-  %3 = icmp eq i16 %1, 256
-  %4 = xor i1 %3, %2
+  %3 = icmp ne i16 %1, 256
+  %4 = and i1 %3, %2
   ret i1 %4
 }
 
@@ -29,11 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 1023
-  %2 = icmp ne i16 %1, 18
-  %3 = icmp ne i16 %1, 19
-  %4 = xor i1 %2, %3
-  ret i1 %4
+  %1 = and i16 %0, 1022
+  %2 = icmp eq i16 %1, 18
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

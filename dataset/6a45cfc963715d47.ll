@@ -47,7 +47,7 @@ define i32 @func0000000000000035(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = mul nsw i32 %4, 2730
   ret i32 %5
 }
@@ -60,7 +60,7 @@ define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = mul i64 %4, -7070675565921424023
   ret i64 %5
 }

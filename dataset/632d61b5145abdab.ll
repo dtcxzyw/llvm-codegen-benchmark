@@ -43,8 +43,8 @@ entry:
   %2 = xor i32 %0, %1
   %3 = lshr i32 %2, 17
   %4 = xor i32 %3, %2
-  %5 = and i32 %4, 7
-  %6 = icmp ult i32 %5, 2
+  %5 = and i32 %4, 6
+  %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
 

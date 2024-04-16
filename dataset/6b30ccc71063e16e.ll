@@ -6,12 +6,10 @@
 ; Function Attrs: nounwind
 define i64 @func00000000000000f0(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 1, %1
-  %3 = and i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = ashr i64 %0, %5
-  ret i64 %6
+  %2 = lshr i64 %0, %1
+  %3 = and i64 %2, 1
+  %4 = ashr i64 %0, %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

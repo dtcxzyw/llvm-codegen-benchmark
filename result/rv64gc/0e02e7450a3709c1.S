@@ -35,7 +35,8 @@ func0000000000000044:                   # @func0000000000000044
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB3_2
-	li	a1, -9
+	lui	a1, 16
+	addi	a1, a1, -9
 .LBB3_2:                                # %entry
 	add	a0, a0, a1
 	slliw	a0, a0, 16

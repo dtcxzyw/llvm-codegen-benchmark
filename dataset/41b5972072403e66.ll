@@ -18,8 +18,8 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = lshr i64 %2, 1
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds %"struct.std::__1::pair.61.1562244", ptr %0, i64 %4
+  %4 = getelementptr %"struct.std::__1::pair.61.1562244", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
 
@@ -33,8 +33,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = lshr i64 %2, 1
-  %4 = add nuw nsw i64 %3, 1
-  %5 = getelementptr inbounds %"struct.std::__1::pair.61.1562244", ptr %0, i64 %4
+  %4 = getelementptr %"struct.std::__1::pair.61.1562244", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
 }
 

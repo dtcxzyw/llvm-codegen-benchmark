@@ -35,7 +35,7 @@ entry:
   %3 = and i8 %2, 63
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = trunc i32 %6 to i16
   ret i16 %7
 }

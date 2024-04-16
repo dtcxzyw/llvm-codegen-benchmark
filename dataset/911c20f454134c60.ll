@@ -8,9 +8,8 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %0
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  ret i64 %.neg
 }
 
 ; 3 occurrences:
@@ -22,9 +21,9 @@ define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %0
-  %5 = sub nsw i64 3, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  %4 = add i64 %.neg, 3
+  ret i64 %4
 }
 
 ; 19 occurrences:
@@ -52,9 +51,8 @@ define i64 @func0000000000000010(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %0
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg = sub i64 %0, %3
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

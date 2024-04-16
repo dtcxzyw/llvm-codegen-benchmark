@@ -397,7 +397,7 @@ entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 9223372036854775744)
   %4 = add nuw nsw i64 %3, 63
   %5 = add nsw i64 %1, %2
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   %7 = select i1 %6, i64 9223372036854775807, i64 %4
   ret i64 %7
 }

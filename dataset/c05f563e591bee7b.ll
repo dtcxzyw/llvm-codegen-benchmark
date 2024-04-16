@@ -87,9 +87,9 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = freeze i64 %3
-  %5 = add nsw i64 %4, -2
-  %6 = or disjoint i64 %5, 1
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %5 = or i64 %4, 1
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -2
   ret ptr %7
 }
 

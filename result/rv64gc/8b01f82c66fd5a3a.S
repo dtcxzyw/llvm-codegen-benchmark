@@ -53,8 +53,8 @@ func000000000000004c:                   # @func000000000000004c
 	and	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	slli	a1, a0, 33
-	srli	a1, a1, 57
+	lui	a1, 520192
+	and	a1, a1, a0
 	snez	a1, a1
 	slli	a0, a0, 41
 	srli	a0, a0, 41

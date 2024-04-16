@@ -19,7 +19,7 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 39
-	li	a2, -12
+	li	a2, 244
 	czero.nez	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, 3

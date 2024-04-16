@@ -7,7 +7,7 @@ entry:
   %3 = mul i64 %2, 1000
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

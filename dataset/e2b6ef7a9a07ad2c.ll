@@ -15,7 +15,7 @@ entry:
   %2 = add nsw i32 %1, 3
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = add i32 %1, 4
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 1023
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -56,7 +56,7 @@ entry:
   %2 = add nuw nsw i32 %1, 247
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 8
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -65,10 +65,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -16384
-  %3 = lshr i64 %2, 11
-  %4 = and i64 %3, 8
-  %5 = or i64 %0, %4
+  %2 = lshr i64 %1, 11
+  %3 = and i64 %2, 8
+  %4 = xor i64 %3, 8
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

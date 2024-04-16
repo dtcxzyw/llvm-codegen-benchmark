@@ -13,7 +13,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 2
   %4 = and i32 %3, 48
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 7
   %4 = and i32 %3, 3968
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -56,7 +56,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = shl i16 %2, 6
   %4 = and i16 %3, 128
-  %5 = add nuw nsw i16 %0, %4
+  %5 = add nuw nsw i16 %4, %0
   ret i16 %5
 }
 

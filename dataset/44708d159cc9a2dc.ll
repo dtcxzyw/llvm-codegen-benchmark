@@ -24,7 +24,7 @@ entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 

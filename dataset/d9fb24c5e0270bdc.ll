@@ -13,7 +13,7 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 2
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = icmp ult ptr %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

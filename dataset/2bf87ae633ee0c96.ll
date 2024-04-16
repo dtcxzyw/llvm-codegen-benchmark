@@ -8,7 +8,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = lshr i32 %3, 1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = add nuw nsw i32 %5, 1
   ret i32 %6
 }

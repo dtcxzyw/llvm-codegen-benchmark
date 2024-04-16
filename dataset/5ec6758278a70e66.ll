@@ -12,7 +12,7 @@ entry:
   %2 = and i8 %1, -33
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
 }

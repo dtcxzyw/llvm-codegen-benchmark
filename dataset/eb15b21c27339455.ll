@@ -13,11 +13,10 @@
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = lshr i32 %3, 16
-  %5 = and i32 %0, 65535
-  %6 = xor i32 %5, %4
-  %7 = shl nuw i32 %6, 16
-  ret i32 %7
+  %4 = shl i32 %0, 16
+  %.masked = and i32 %3, -65536
+  %5 = xor i32 %.masked, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

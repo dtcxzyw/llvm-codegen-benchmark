@@ -8,7 +8,7 @@ define float @func0000000000000001(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
   %3 = tail call noundef float @llvm.fabs.f32(float %2)
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   ret float %4
 }
 
@@ -22,7 +22,7 @@ define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
   %3 = call float @llvm.fabs.f32(float %2)
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   ret float %4
 }
 

@@ -4,7 +4,7 @@ func0000000000000041:                   # @func0000000000000041
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	mul	a2, a2, a3
-	add	a6, a1, a2
+	add	a6, a2, a1
 	srli	a2, a0, 40
 	lui	a3, 16
 	addiw	a3, a3, -256

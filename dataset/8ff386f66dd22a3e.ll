@@ -7,9 +7,9 @@
 define i1 @func00000000000000aa(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp sgt i32 %1, %3
+  %4 = icmp slt i32 %3, %1
   %5 = icmp sgt i8 %2, 96
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
@@ -22,9 +22,9 @@ entry:
 define i1 @func00000000000000a8(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = icmp sgt i8 %2, 64
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }

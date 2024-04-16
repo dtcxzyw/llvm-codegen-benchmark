@@ -69,9 +69,8 @@
 define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -83,9 +82,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = sub i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 32 occurrences:
@@ -345,9 +343,8 @@ entry:
 define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = sub i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -479,9 +476,8 @@ entry:
 define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %3 = icmp ne i32 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

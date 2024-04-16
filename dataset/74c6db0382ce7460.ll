@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = trunc i32 %2 to i8
-  %4 = icmp ugt i8 %0, %3
-  ret i1 %4
+  %.tr = trunc i32 %1 to i8
+  %2 = shl i8 %.tr, 3
+  %3 = icmp ult i8 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

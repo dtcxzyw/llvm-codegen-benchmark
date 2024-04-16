@@ -9,7 +9,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = shl nuw i32 1, %3
   %5 = trunc i64 %1 to i32
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = icmp sgt i32 %6, %4
   ret i1 %7
 }
@@ -24,7 +24,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = shl nuw i32 1, %3
   %5 = trunc i64 %1 to i32
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = icmp eq i32 %6, %4
   ret i1 %7
 }

@@ -118,10 +118,9 @@ func0000000000000051:                   # @func0000000000000051
 func000000000000004b:                   # @func000000000000004b
 	sltu	a2, a2, a3
 	xori	a2, a2, 1
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func0000000000000059:                   # @func0000000000000059
 	slt	a2, a2, a3

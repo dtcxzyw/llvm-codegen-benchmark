@@ -1,14 +1,18 @@
 func0000000000000290:                   # @func0000000000000290
-	addi	a2, a2, -1
+	li	a3, -1
+	bclri	a3, a3, 62
+	add	a2, a2, a3
 	srli	a2, a2, 62
-	snez	a2, a2
+	sltiu	a2, a2, 3
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000310:                   # @func0000000000000310
-	addi	a2, a2, -1
+	li	a3, -1
+	bclri	a3, a3, 61
+	add	a2, a2, a3
 	srli	a2, a2, 61
-	snez	a2, a2
+	sltiu	a2, a2, 7
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
@@ -67,9 +71,11 @@ func0000000000000092:                   # @func0000000000000092
 	or	a0, a0, a2
 	ret
 func0000000000000090:                   # @func0000000000000090
-	addi	a2, a2, -1
+	li	a3, -1
+	bclri	a3, a3, 62
+	add	a2, a2, a3
 	srli	a2, a2, 62
-	snez	a2, a2
+	sltiu	a2, a2, 3
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -88,9 +94,8 @@ func0000000000000198:                   # @func0000000000000198
 	snez	a0, a0
 	ret
 func0000000000000190:                   # @func0000000000000190
-	addi	a2, a2, 1
-	sltiu	a2, a2, 128
-	xori	a2, a2, 1
+	addi	a2, a2, -127
+	sltiu	a2, a2, -128
 	xor	a0, a0, a1
 	snez	a0, a0
 	or	a0, a0, a2

@@ -14,7 +14,7 @@ entry:
   %4 = and i64 %3, 31
   %5 = select i1 %2, i64 32, i64 %4
   %6 = sub nsw i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -32,7 +32,7 @@ entry:
   %4 = and i64 %3, 7
   %5 = select i1 %2, i64 8, i64 %4
   %6 = sub nuw nsw i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -46,7 +46,7 @@ entry:
   %4 = and i64 %3, 3
   %5 = select i1 %2, i64 4, i64 %4
   %6 = sub nsw i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -60,7 +60,7 @@ entry:
   %4 = and i64 %3, 31
   %5 = select i1 %2, i64 32, i64 %4
   %6 = sub nuw i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -74,7 +74,7 @@ entry:
   %4 = and i64 %3, 3
   %5 = select i1 %2, i64 4, i64 %4
   %6 = sub i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -87,7 +87,7 @@ entry:
   %4 = and i64 %3, 7
   %5 = select i1 %2, i64 8, i64 %4
   %6 = sub nsw i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -100,7 +100,7 @@ entry:
   %4 = and i64 %3, 3
   %5 = select i1 %2, i64 4, i64 %4
   %6 = sub nuw i64 %3, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

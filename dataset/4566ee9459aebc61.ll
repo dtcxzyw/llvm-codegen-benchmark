@@ -5,7 +5,7 @@
 define i64 @func00000000000001fd(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 60
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = mul nuw nsw i64 %5, 1000000
   %7 = add nsw i64 %6, %0
@@ -21,7 +21,7 @@ entry:
   %4 = add nuw i8 %3, %1
   %5 = zext i8 %4 to i32
   %6 = mul nuw nsw i32 %5, 3600
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = add nuw i8 %3, %1
   %5 = zext nneg i8 %4 to i64
   %6 = mul nuw nsw i64 %5, 3600
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -50,7 +50,7 @@ entry:
 define i32 @func00000000000001ff(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = mul nuw nsw i8 %2, 10
-  %4 = add nuw nsw i8 %1, %3
+  %4 = add nuw nsw i8 %3, %1
   %5 = zext nneg i8 %4 to i32
   %6 = mul nuw nsw i32 %5, 100
   %7 = add nuw nsw i32 %6, %0

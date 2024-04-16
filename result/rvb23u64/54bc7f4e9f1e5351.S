@@ -13,11 +13,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
-	bseti	a2, a1, 16
-	andi	a2, a2, -65
+	snez	a0, a0
 	bclri	a1, a1, 6
 	bclri	a1, a1, 16
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	slli	a0, a0, 16
+	or	a0, a0, a1
 	ret

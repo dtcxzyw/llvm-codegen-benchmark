@@ -9,10 +9,9 @@ define i1 @func0000000000000788(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 3
   %2 = add nuw nsw i64 %1, 15
-  %3 = lshr i64 %2, 4
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, 1
-  ret i1 %5
+  %3 = and i64 %2, 68719476704
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:

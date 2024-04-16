@@ -23,15 +23,15 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a4, a4, 16
 	or	a3, a3, a4
 	srli	a5, a5, 16
+	add	a4, a3, a0
+	sltu	a0, a4, a3
 	add	a1, a1, a5
-	add	a3, a3, a0
-	sltu	a0, a3, a0
 	add	a1, a1, a0
 	lui	a0, 65535
 	slli	a0, a0, 28
 	and	a0, a0, a2
-	add	a0, a0, a3
-	sltu	a2, a0, a3
+	add	a0, a0, a4
+	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -39,15 +39,15 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a4, a4, 16
 	or	a3, a3, a4
 	srli	a5, a5, 16
+	add	a4, a3, a0
+	sltu	a0, a4, a3
 	add	a1, a1, a5
-	add	a3, a3, a0
-	sltu	a0, a3, a0
 	add	a1, a1, a0
 	lui	a0, 65535
 	slli	a0, a0, 28
 	and	a0, a0, a2
-	add	a0, a0, a3
-	sltu	a2, a0, a3
+	add	a0, a0, a4
+	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
 func000000000000001f:                   # @func000000000000001f

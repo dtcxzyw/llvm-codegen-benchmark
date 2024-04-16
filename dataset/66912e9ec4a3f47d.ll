@@ -8,7 +8,7 @@ define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -20,7 +20,7 @@ define i1 @func0000000000000014(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = zext i64 %3 to i128
-  %5 = or disjoint i128 %1, %4
+  %5 = or disjoint i128 %4, %1
   %6 = icmp ult i128 %5, %0
   ret i1 %6
 }
@@ -32,7 +32,7 @@ define i1 @func0000000000000036(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %2, -128
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = icmp slt i32 %5, %0
   ret i1 %6
 }

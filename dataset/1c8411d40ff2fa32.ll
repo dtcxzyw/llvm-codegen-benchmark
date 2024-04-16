@@ -289,9 +289,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -64
-  %3 = lshr i64 %2, 3
-  %4 = shl i64 %3, 6
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, -64
+  %4 = add i64 %3, -512
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }

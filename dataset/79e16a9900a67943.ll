@@ -28,8 +28,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1023
-  %4 = trunc i32 %3 to i16
+  %3 = trunc i32 %2 to i16
+  %4 = and i16 %3, 1023
   %5 = zext i1 %1 to i16
   %6 = or i16 %4, %5
   %7 = or disjoint i16 %6, %0
@@ -41,8 +41,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000000d(i16 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1023
-  %4 = trunc nuw nsw i32 %3 to i16
+  %3 = trunc i32 %2 to i16
+  %4 = and i16 %3, 1023
   %5 = zext i1 %1 to i16
   %6 = or i16 %4, %5
   %7 = or disjoint i16 %6, %0

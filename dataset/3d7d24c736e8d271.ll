@@ -9,7 +9,7 @@ entry:
   %4 = zext nneg i8 %3 to i64
   %5 = add i64 %1, -2
   %6 = icmp ult i64 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = zext nneg i8 %3 to i64
   %5 = add nsw i64 %1, -2
   %6 = icmp ult i64 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = add i64 %1, -8
   %6 = icmp ult i64 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

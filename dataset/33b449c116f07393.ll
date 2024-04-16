@@ -85,9 +85,9 @@ define double @func0000000000000035(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %4, %0
-  %6 = select i1 %5, double %4, double %0
-  ret double %6
+  %.inv = fcmp ole double %4, %0
+  %5 = select i1 %.inv, double %0, double %4
+  ret double %5
 }
 
 attributes #0 = { nounwind }

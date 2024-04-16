@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
-  %2 = xor i1 %1, true
-  %3 = xor i1 %2, %0
+  %2 = xor i1 %1, %0
+  %3 = xor i1 %2, true
   ret i1 %3
 }
 

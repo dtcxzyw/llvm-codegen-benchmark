@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 3)
   %5 = add nuw i32 %4, 320
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

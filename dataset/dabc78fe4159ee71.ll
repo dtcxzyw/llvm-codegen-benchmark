@@ -67,7 +67,7 @@ define i16 @func0000000000000070(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
 }

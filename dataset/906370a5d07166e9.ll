@@ -8,8 +8,8 @@
 define i8 @func0000000000000000(i8 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 255, %1
-  %3 = trunc i16 %2 to i8
-  %4 = or i8 %0, %3
+  %3 = trunc nuw i16 %2 to i8
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 
@@ -22,8 +22,8 @@ entry:
 define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 128, %1
-  %3 = trunc i32 %2 to i8
-  %4 = or i8 %0, %3
+  %3 = trunc nuw i32 %2 to i8
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 

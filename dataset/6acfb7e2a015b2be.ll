@@ -8,7 +8,7 @@
 define i1 @func0000000000000009(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   %5 = trunc i8 %1 to i1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

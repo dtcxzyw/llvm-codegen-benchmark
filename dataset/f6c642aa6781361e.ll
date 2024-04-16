@@ -12,7 +12,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 8, %3
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -39,7 +39,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -51,7 +51,7 @@ entry:
   %2 = add nsw i32 %1, -4
   %3 = zext nneg i32 %2 to i128
   %4 = shl i128 8, %3
-  %5 = icmp eq i128 %0, %4
+  %5 = icmp eq i128 %4, %0
   ret i1 %5
 }
 
@@ -62,9 +62,9 @@ define i1 @func00000000000001e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = icmp ult i64 %0, %4
-  ret i1 %5
+  %.highbits = lshr i64 %0, %3
+  %4 = icmp eq i64 %.highbits, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -74,9 +74,9 @@ define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = icmp ult i64 %0, %4
-  ret i1 %5
+  %.highbits = lshr i64 %0, %3
+  %4 = icmp eq i64 %.highbits, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -87,7 +87,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -99,7 +99,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 

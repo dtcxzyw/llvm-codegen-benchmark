@@ -6,9 +6,9 @@ define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i64 %1, i64 0
-  %6 = add nuw i64 %0, 1
-  %7 = icmp eq i64 %6, %5
+  %5 = add nuw i64 %0, 1
+  %6 = icmp eq i64 %5, %1
+  %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }
 

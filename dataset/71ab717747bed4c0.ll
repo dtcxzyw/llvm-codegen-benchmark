@@ -7,7 +7,7 @@ define ptr @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %1, %4
+  %5 = or i64 %4, %1
   %6 = or i64 %5, %0
   %7 = inttoptr i64 %6 to ptr
   ret ptr %7
@@ -20,7 +20,7 @@ define ptr @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
-  %5 = or i64 %1, %4
+  %5 = or i64 %4, %1
   %6 = or i64 %5, %0
   %7 = inttoptr i64 %6 to ptr
   ret ptr %7
@@ -36,7 +36,7 @@ define ptr @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 40
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = or disjoint i64 %5, %0
   %7 = inttoptr i64 %6 to ptr
   ret ptr %7

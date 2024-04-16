@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i32
-  %2 = or i32 %1, 1
+  %1 = or i16 %0, 1
+  %2 = zext i16 %1 to i32
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
   %4 = xor i32 %3, 31
   %5 = zext nneg i32 %4 to i64
@@ -23,8 +23,8 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = or i32 %1, 1
+  %1 = or i8 %0, 1
+  %2 = zext i8 %1 to i32
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
   %4 = xor i32 %3, 31
   %5 = zext nneg i32 %4 to i64

@@ -8,12 +8,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i96 %0, i96 %1, i96 %2) #0 {
 entry:
-  %3 = or disjoint i96 %1, %2
-  %4 = and i96 %3, -18446744073709551604
-  %5 = or disjoint i96 %0, %4
-  %6 = lshr i96 %5, 32
-  %7 = trunc i96 %6 to i32
-  ret i32 %7
+  %3 = lshr i96 %0, 32
+  %4 = trunc i96 %3 to i32
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -22,8 +19,8 @@ entry:
 define i64 @func000000000000001a(i96 %0, i96 %1, i96 %2) #0 {
 entry:
   %3 = or disjoint i96 %1, %2
-  %4 = and i96 %3, -18446744073709551604
-  %5 = or disjoint i96 %0, %4
+  %4 = and i96 %3, -18446744073709551616
+  %5 = or i96 %4, %0
   %6 = lshr i96 %5, 32
   %7 = trunc nuw i96 %6 to i64
   ret i64 %7
@@ -35,10 +32,10 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, -281474975662142
-  %5 = or i64 %0, %4
+  %4 = and i64 %3, -281474976710656
+  %5 = or i64 %4, %0
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

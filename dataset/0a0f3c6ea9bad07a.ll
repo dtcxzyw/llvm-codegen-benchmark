@@ -14,10 +14,9 @@
 define i1 @func0000000000000001(i16 %0) #0 {
 entry:
   %1 = freeze i16 %0
-  %2 = lshr i16 %1, 6
-  %3 = and i16 %2, 7
-  %4 = icmp eq i16 %3, 7
-  ret i1 %4
+  %2 = and i16 %1, 448
+  %3 = icmp eq i16 %2, 448
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -29,10 +28,9 @@ entry:
 define i1 @func0000000000000004(i16 %0) #0 {
 entry:
   %1 = freeze i16 %0
-  %2 = lshr i16 %1, 6
-  %3 = and i16 %2, 7
-  %4 = icmp ult i16 %3, 6
-  ret i1 %4
+  %2 = and i16 %1, 384
+  %3 = icmp ne i16 %2, 384
+  ret i1 %3
 }
 
 ; 13 occurrences:
@@ -53,10 +51,9 @@ entry:
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = lshr i32 %1, 8
-  %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, 7
-  ret i1 %4
+  %2 = and i32 %1, 63488
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -65,10 +62,9 @@ entry:
 define i1 @func000000000000000c(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = lshr i32 %1, 1
-  %3 = and i32 %2, 2047
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 4094
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

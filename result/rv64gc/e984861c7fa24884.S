@@ -48,9 +48,9 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a1, a1
 	addi	a1, a1, -1
-	snez	a1, a1
+	seqz	a1, a1
+	xori	a1, a1, 5
 	or	a0, a0, a1
-	ori	a0, a0, 4
 	ret
 func0000000000000009:                   # @func0000000000000009
 	andi	a2, a1, 255
@@ -87,11 +87,11 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a1, 255
 	lui	a1, 40
-	bnez	a2, .LBB11_2
-	addiw	a1, a1, 640
+	beqz	a2, .LBB11_2
+	addiw	a1, a1, 320
 	or	a0, a0, a1
 	ret
 .LBB11_2:
-	addiw	a1, a1, 320
+	addiw	a1, a1, 640
 	or	a0, a0, a1
 	ret

@@ -35,7 +35,7 @@ func0000000000000028:                   # @func0000000000000028
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
 	fmin.s	fa5, fa1, fa5
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 .LCPI6_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
@@ -132,7 +132,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	bnez	a0, .LBB16_2
 	fmv.d	fa1, fa5
 .LBB16_2:                               # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	ret
 func00000000000000a7:                   # @func00000000000000a7
 	fmv.w.x	fa5, zero
@@ -140,7 +140,7 @@ func00000000000000a7:                   # @func00000000000000a7
 	bnez	a0, .LBB17_2
 	fmv.s	fa1, fa5
 .LBB17_2:                               # %entry
-	feq.s	a0, fa0, fa1
+	feq.s	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
 func00000000000000c7:                   # @func00000000000000c7
@@ -149,6 +149,6 @@ func00000000000000c7:                   # @func00000000000000c7
 	bnez	a0, .LBB18_2
 	fmv.s	fa1, fa5
 .LBB18_2:                               # %entry
-	feq.s	a0, fa0, fa1
+	feq.s	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret

@@ -6,12 +6,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %1, %4
-  %6 = xor i32 %0, %5
-  %7 = shl i32 %6, 18
-  ret i32 %7
+  %3 = xor i32 %1, %0
+  %4 = shl i32 %3, 18
+  ret i32 %4
 }
 
 ; 1 occurrences:

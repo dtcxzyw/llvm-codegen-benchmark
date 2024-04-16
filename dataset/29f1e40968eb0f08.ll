@@ -6,8 +6,8 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 64
   %3 = lshr i64 %2, 6
-  %4 = sub nsw i64 %3, %0
-  %5 = add nsw i64 %4, -1
+  %4 = xor i64 %0, -1
+  %5 = add i64 %3, %4
   ret i64 %5
 }
 

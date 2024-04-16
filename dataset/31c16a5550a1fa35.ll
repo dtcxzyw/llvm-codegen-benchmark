@@ -10,10 +10,10 @@
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
-  %3 = sub i64 %2, %1
-  %4 = sub i64 24, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %1, %2
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  %4 = getelementptr i8, ptr %3, i64 24
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -22,10 +22,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
-  %3 = sub i64 %2, %1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %1, %2
+  %3 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -34,10 +33,10 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
-  %3 = sub i64 %2, %1
-  %4 = sub nuw nsw i64 4, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %1, %2
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  %4 = getelementptr i8, ptr %3, i64 4
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

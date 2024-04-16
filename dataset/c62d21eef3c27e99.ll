@@ -5,9 +5,9 @@
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = shl nsw i64 %2, 3
-  %4 = add i64 %3, %0
-  %5 = shl i64 %4, 16
+  %3 = shl nsw i64 %2, 19
+  %4 = shl i64 %0, 16
+  %5 = add i64 %3, %4
   ret i64 %5
 }
 
@@ -17,10 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = shl nsw i64 %2, 4
-  %4 = add nsw i64 %0, %3
-  %5 = shl i64 %4, 32
+  %2 = zext i32 %1 to i64
+  %3 = shl i64 %2, 36
+  %4 = shl i64 %0, 32
+  %5 = add i64 %3, %4
   ret i64 %5
 }
 

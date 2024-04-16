@@ -19,8 +19,8 @@ entry:
   %3 = sub nsw i64 %2, %1
   %4 = sdiv i64 %3, 8
   %5 = shl nsw i64 %4, 3
-  %6 = add nsw i64 %5, %1
-  %7 = getelementptr inbounds i32, ptr %0, i64 %6
+  %6 = getelementptr i32, ptr %0, i64 %5
+  %7 = getelementptr i32, ptr %6, i64 %1
   ret ptr %7
 }
 

@@ -8,10 +8,9 @@
 define i64 @func0000000000000035(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = add nsw i64 %3, -65521
-  %5 = select i1 %0, i64 %4, i64 65520
-  %6 = add nsw i64 %5, -65521
-  ret i64 %6
+  %4 = add nsw i64 %3, -131042
+  %5 = select i1 %0, i64 %4, i64 -1
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

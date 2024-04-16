@@ -99,9 +99,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
-  %6 = sub nsw i64 %5, %0
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 ; 23 occurrences:
@@ -224,9 +223,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 4
-  %6 = sub nsw i64 %5, %0
-  %7 = icmp sgt i64 %6, -1
-  ret i1 %7
+  %6 = icmp sge i64 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -237,9 +235,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
-  %6 = sub nsw i64 %5, %0
-  %7 = icmp slt i64 %6, 1
-  ret i1 %7
+  %6 = icmp sle i64 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

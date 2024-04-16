@@ -6,7 +6,7 @@ define i64 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = or disjoint i64 %3, 1
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = mul i64 %5, %0
   ret i64 %6
 }
@@ -34,8 +34,8 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %1, %4
-  %6 = mul i64 %0, %5
+  %5 = add i64 %4, %1
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 

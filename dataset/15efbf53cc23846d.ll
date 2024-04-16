@@ -8,7 +8,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

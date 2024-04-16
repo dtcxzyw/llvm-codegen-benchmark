@@ -19,8 +19,8 @@ entry:
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = sub i64 0, %0
-  %2 = and i64 %1, 7
-  %3 = or i64 %2, 1
+  %2 = and i64 %1, 6
+  %3 = or disjoint i64 %2, 1
   ret i64 %3
 }
 

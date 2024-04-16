@@ -20,9 +20,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
-  %2 = add i128 %1, 1442695040888963407
-  %3 = trunc i128 %2 to i64
-  %4 = xor i64 %0, %3
+  %2 = trunc i128 %1 to i64
+  %3 = add i64 %2, 1442695040888963407
+  %4 = xor i64 %3, %0
   %5 = lshr i64 %0, 58
   %6 = tail call noundef i64 @llvm.fshr.i64(i64 %4, i64 %4, i64 %5)
   ret i64 %6

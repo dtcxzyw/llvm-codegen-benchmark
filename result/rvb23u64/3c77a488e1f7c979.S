@@ -41,7 +41,7 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a0, 273536
 	fmv.w.x	fa5, a0
 .LBB3_2:                                # %entry
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -50,5 +50,5 @@ func0000000000000008:                   # @func0000000000000008
 	bnez	a0, .LBB4_2
 	fli.d	fa5, 1.0
 .LBB4_2:                                # %entry
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	ret

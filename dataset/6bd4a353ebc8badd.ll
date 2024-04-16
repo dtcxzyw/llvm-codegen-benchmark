@@ -7,7 +7,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = udiv i32 %3, 20
   %5 = tail call i32 @llvm.umax.i32(i32 %4, i32 1)
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 24
   %5 = tail call i64 @llvm.umax.i64(i64 %4, i64 2)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

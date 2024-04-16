@@ -15,8 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	slli	a1, a1, 49
-	srli	a1, a1, 43
+	slliw	a1, a1, 6
 	andi	a0, a0, 63
 	or	a0, a0, a1
 	ret
@@ -33,8 +32,7 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	slli	a1, a1, 59
-	srli	a1, a1, 53
+	slliw	a1, a1, 6
 	andi	a0, a0, 63
 	or	a0, a0, a1
 	ret

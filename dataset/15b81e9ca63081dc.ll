@@ -11,9 +11,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 2097151
-  %3 = lshr i64 %2, 19
-  %4 = or disjoint i64 %0, %3
+  %2 = lshr i64 %1, 19
+  %3 = and i64 %2, 3
+  %4 = or disjoint i64 %3, %0
   %5 = trunc i64 %4 to i8
   ret i8 %5
 }

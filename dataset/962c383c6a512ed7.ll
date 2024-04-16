@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 128
-  %4 = lshr exact i64 %3, 5
+  %3 = lshr i64 %2, 5
+  %4 = and i64 %3, 4
   %5 = or i64 %0, %1
   %6 = or i64 %5, %4
   ret i64 %6
@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 17592186044416
-  %4 = lshr exact i64 %3, 43
+  %3 = lshr i64 %2, 43
+  %4 = and i64 %3, 2
   %5 = or disjoint i64 %0, %1
   %6 = or disjoint i64 %5, %4
   ret i64 %6

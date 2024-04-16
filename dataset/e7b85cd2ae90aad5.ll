@@ -268,7 +268,7 @@ entry:
   %3 = sext i8 %2 to i64
   %4 = and i64 %3, 4294967295
   %5 = lshr i64 %1, %4
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

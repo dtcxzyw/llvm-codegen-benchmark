@@ -28,8 +28,6 @@ func0000000000000014:                   # @func0000000000000014
 .LBB2_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, 1
-	or	a0, a0, a1
 	sltiu	a0, a0, 10
 	addi	a0, a0, -1
 	andi	a0, a0, -10
@@ -38,6 +36,6 @@ func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 128
 	or	a0, a0, a1
 	sext.w	a0, a0
-	snez	a0, a0
-	xori	a0, a0, 11
+	seqz	a0, a0
+	addi	a0, a0, 10
 	ret

@@ -7,7 +7,7 @@
 define float @func0000000000000000(float %0, float %1, i16 %2) #0 {
 entry:
   %3 = sitofp i16 %2 to float
-  %4 = fadd float %1, %3
+  %4 = fadd float %3, %1
   %5 = tail call float @llvm.fmuladd.f32(float %4, float 1.562500e-02, float %0)
   ret float %5
 }

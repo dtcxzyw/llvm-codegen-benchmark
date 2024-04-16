@@ -6,7 +6,7 @@
 define ptr @func0000000000000018(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i64 24, i64 32
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -32,7 +32,7 @@ entry:
 define ptr @func0000000000000015(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i64 6, i64 7
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

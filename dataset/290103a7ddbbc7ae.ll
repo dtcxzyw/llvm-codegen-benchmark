@@ -6,7 +6,7 @@
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 112
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

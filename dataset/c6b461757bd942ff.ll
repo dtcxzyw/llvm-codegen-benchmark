@@ -17,9 +17,9 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
   %3 = fptosi double %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 2147483647)
-  %6 = tail call i64 @llvm.smin.i64(i64 %0, i64 %5)
+  %4 = add nsw i64 %3, %1
+  %5 = call i64 @llvm.smin.i64(i64 %4, i64 %0)
+  %6 = call i64 @llvm.smin.i64(i64 %5, i64 2147483647)
   ret i64 %6
 }
 

@@ -7,9 +7,9 @@
 define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
-  %4 = add nsw i64 %3, -1
-  %5 = sub nsw i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %4 = xor i64 %1, -1
+  %5 = add i64 %3, %4
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -89,9 +89,9 @@ entry:
 define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 22
-  %4 = add nsw i32 %3, -1
-  %5 = sub nsw i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %4 = xor i32 %1, -1
+  %5 = add i32 %3, %4
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -103,7 +103,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nsw i64 %3, 1
   %5 = sub nsw i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

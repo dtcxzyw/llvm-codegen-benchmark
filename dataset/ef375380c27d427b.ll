@@ -6,7 +6,7 @@ define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i64
   %4 = sitofp i64 %3 to double
-  %5 = fmul double %1, %4
+  %5 = fmul double %4, %1
   %6 = fcmp olt double %5, %0
   ret i1 %6
 }
@@ -28,7 +28,7 @@ define i1 @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %1, %4
+  %5 = fmul double %4, %1
   %6 = fcmp une double %5, %0
   ret i1 %6
 }
@@ -70,7 +70,7 @@ define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %1, %4
+  %5 = fmul double %4, %1
   %6 = fcmp oeq double %5, %0
   ret i1 %6
 }

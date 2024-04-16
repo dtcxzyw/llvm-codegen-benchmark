@@ -23,7 +23,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = mul i128 %0, %5
+  %6 = mul i128 %5, %0
   ret i128 %6
 }
 
@@ -74,7 +74,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = mul nsw i32 %0, %5
+  %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -97,7 +97,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 
@@ -110,7 +110,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = mul nsw i128 %0, %5
+  %6 = mul nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -122,7 +122,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nsw i128 %1, 64
   %5 = or disjoint i128 %4, %3
-  %6 = mul i128 %0, %5
+  %6 = mul i128 %5, %0
   ret i128 %6
 }
 
@@ -140,7 +140,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = mul nuw i32 %0, %5
+  %6 = mul nuw i32 %5, %0
   ret i32 %6
 }
 

@@ -8,10 +8,9 @@ define i64 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = udiv i16 %1, 3
-  %3 = zext nneg i16 %2 to i32
-  %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 1)
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
+  %3 = call i16 @llvm.umax.i16(i16 %2, i16 1)
+  %4 = zext nneg i16 %3 to i64
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -26,11 +25,13 @@ define i64 @func0000000000000025(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i16
   %2 = udiv i16 %1, 3
-  %3 = zext nneg i16 %2 to i32
-  %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 1)
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
+  %3 = call i16 @llvm.umax.i16(i16 %2, i16 1)
+  %4 = zext nneg i16 %3 to i64
+  ret i64 %4
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i16 @llvm.umax.i16(i16, i16) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

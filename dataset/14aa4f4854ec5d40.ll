@@ -10,7 +10,7 @@
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i64 0, i64 2
   %7 = or disjoint i64 %6, %0
@@ -24,10 +24,10 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i32 0, i32 128
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

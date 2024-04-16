@@ -17,10 +17,10 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 8192
-  %5 = or disjoint i64 %1, %4
-  %6 = and i64 %5, -245761
-  %7 = or disjoint i64 %6, %0
-  ret i64 %7
+  %.masked = and i64 %1, -245761
+  %5 = or i64 %4, %.masked
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

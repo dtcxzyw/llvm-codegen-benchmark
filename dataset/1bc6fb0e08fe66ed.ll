@@ -20,7 +20,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5
   %3 = icmp slt i32 %2, 33
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -66,7 +66,7 @@ define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000
   %3 = icmp ult i64 %2, 1000000000
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 

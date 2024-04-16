@@ -47,9 +47,9 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = lshr i32 %3, 1
-  %5 = icmp ne i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
+  %.not = icmp eq i32 %1, 0
+  %5 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -61,9 +61,9 @@ define i32 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = lshr i32 %3, 1
-  %5 = icmp ne i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
+  %.not = icmp eq i32 %1, 0
+  %5 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -74,9 +74,9 @@ define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr i32 %3, 1
-  %5 = icmp ne i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
+  %.not = icmp eq i32 %1, 0
+  %5 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %5
 }
 
 ; 1 occurrences:

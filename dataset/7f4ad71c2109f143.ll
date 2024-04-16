@@ -21,7 +21,7 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = and i32 %3, 3
   %5 = icmp eq i32 %4, 3
   ret i1 %5

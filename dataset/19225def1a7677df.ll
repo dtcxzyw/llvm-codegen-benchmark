@@ -22,9 +22,8 @@ define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 13
-  %5 = sub i32 %0, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, %0
+  ret i1 %5
 }
 
 ; 17 occurrences:
@@ -50,9 +49,8 @@ define i1 @func00000000000001da(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 13
-  %5 = sub nsw i32 %0, %4
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
 }
 
 ; 17 occurrences:
@@ -114,10 +112,9 @@ entry:
 define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = add i32 %3, 1
-  %5 = sub i32 %0, %4
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %4 = sub i32 %3, %0
+  %5 = icmp sgt i32 %4, -1
+  ret i1 %5
 }
 
 ; 1 occurrences:

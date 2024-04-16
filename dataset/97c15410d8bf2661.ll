@@ -1281,7 +1281,7 @@
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -1567,7 +1567,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1431655765
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   ret i32 %3
 }
 
@@ -3770,7 +3770,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
-  %3 = add nsw i16 %0, %2
+  %3 = add nsw i16 %2, %0
   ret i16 %3
 }
 

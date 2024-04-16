@@ -15,8 +15,8 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = and i32 %3, -16777216
-  %5 = or disjoint i32 %1, %4
-  %6 = add i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = add i32 %5, %0
   %7 = lshr i32 %6, 8
   ret i32 %7
 }
@@ -43,7 +43,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 26
   %4 = and i64 %3, 17592118935552
   %5 = or disjoint i64 %4, %1
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = lshr i64 %6, 44
   ret i64 %7
 }

@@ -8,7 +8,7 @@ entry:
   %3 = add i64 %2, -1
   %4 = ashr exact i64 %1, 5
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 %3)
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = ashr exact i64 %2, 5
   %4 = add i64 %1, 2048
   %5 = tail call noundef i64 @llvm.umin.i64(i64 %4, i64 %3)
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

@@ -34,9 +34,9 @@ define i32 @func0000000000000007(i16 %0) #0 {
 entry:
   %1 = add i16 %0, 4
   %2 = and i16 %1, 255
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 1
-  ret i32 %4
+  %narrow = add nuw nsw i16 %2, 1
+  %3 = zext nneg i16 %narrow to i32
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -59,9 +59,9 @@ define i64 @func000000000000001f(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 255
   %2 = and i32 %1, 255
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
-  ret i64 %4
+  %narrow = add nuw nsw i32 %2, 1
+  %3 = zext nneg i32 %narrow to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:

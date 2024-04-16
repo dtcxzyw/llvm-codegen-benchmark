@@ -117,7 +117,7 @@ define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = xor i64 %2, 63
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -356,7 +356,7 @@ define i1 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = xor i64 %2, 63
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 
@@ -369,7 +369,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !1
   %3 = xor i32 %2, 31
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -384,7 +384,7 @@ define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !1
   %3 = xor i32 %2, 31
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 

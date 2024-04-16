@@ -5,7 +5,7 @@
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   %5 = ashr exact i64 %1, 2
   %6 = sub i64 %4, %5
   ret i64 %6
@@ -17,7 +17,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   %5 = ashr exact i64 %1, 2
   %6 = sub nsw i64 %4, %5
   ret i64 %6
@@ -41,7 +41,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   %5 = ashr exact i64 %1, 2
   %6 = sub i64 %4, %5
   ret i64 %6

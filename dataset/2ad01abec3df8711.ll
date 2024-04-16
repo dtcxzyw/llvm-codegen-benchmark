@@ -18,11 +18,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000043(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 23, %1
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i8
-  %5 = sub nuw nsw i8 23, %4
-  ret i8 %5
+  %reass.sub.neg = sub i64 %1, %0
+  %.neg = trunc i64 %reass.sub.neg to i8
+  ret i8 %.neg
 }
 
 attributes #0 = { nounwind }

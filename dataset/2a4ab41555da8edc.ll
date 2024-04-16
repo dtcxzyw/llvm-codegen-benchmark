@@ -7,8 +7,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = srem i32 %0, %2
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = and i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -18,8 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = srem i32 %0, %2
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = and i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }

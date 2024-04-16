@@ -7,7 +7,7 @@
 define i1 @func0000000000000f4c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = icmp ult i64 %4, 16
   %6 = icmp ne i64 %0, 0
   %7 = select i1 %6, i1 %5, i1 false

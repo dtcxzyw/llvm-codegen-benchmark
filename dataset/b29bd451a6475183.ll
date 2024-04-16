@@ -4,11 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.umin.i64(i64 %0, i64 %1)
-  %3 = tail call i64 @llvm.umax.i64(i64 %0, i64 %1)
-  %4 = sub i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = icmp eq i64 %0, %1
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

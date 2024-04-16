@@ -25,12 +25,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 127
-  %4 = select i1 %3, i32 128, i32 64
-  %5 = select i1 %1, i32 0, i32 %4
-  %6 = and i32 %0, 56
-  %7 = or disjoint i32 %6, %5
-  ret i32 %7
+  %.inv = icmp ult i32 %2, 128
+  %3 = select i1 %.inv, i32 64, i32 128
+  %4 = select i1 %1, i32 0, i32 %3
+  %5 = and i32 %0, 56
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
 }
 
 ; 1 occurrences:

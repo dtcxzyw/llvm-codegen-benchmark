@@ -8,7 +8,7 @@
 define i32 @func0000000000000000(i16 %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i16
+  %3 = trunc nuw i48 %2 to i16
   %4 = call i16 @llvm.smin.i16(i16 %0, i16 %3)
   %5 = sext i16 %4 to i32
   ret i32 %5

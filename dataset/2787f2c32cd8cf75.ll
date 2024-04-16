@@ -16,7 +16,7 @@ entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %1)
   %3 = tail call noundef i64 @llvm.umax.i64(i64 %2, i64 4)
   %4 = shl nuw i64 %3, 1
-  %5 = icmp ule i64 %0, %4
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %1)
   %3 = tail call noundef i64 @llvm.umax.i64(i64 %2, i64 4)
   %4 = shl i64 %3, 1
-  %5 = icmp ule i64 %0, %4
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %1)
   %3 = tail call noundef i64 @llvm.umax.i64(i64 %2, i64 4)
   %4 = shl nuw nsw i64 %3, 1
-  %5 = icmp ule i64 %0, %4
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 

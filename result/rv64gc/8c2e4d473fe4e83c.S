@@ -26,6 +26,7 @@ func0000000000000011:                   # @func0000000000000011
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	fdiv.d	fa5, fa0, fa5
 	fcvt.w.d	a1, fa5, rtz
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -8,7 +8,7 @@
 define i48 @func0000000000000000(i48 %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i16
+  %3 = trunc nuw i48 %2 to i16
   %4 = trunc i48 %0 to i16
   %5 = tail call i16 @llvm.smin.i16(i16 %4, i16 %3)
   %6 = zext i16 %5 to i48

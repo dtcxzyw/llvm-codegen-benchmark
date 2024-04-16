@@ -15,7 +15,7 @@ entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -30,7 +30,7 @@ entry:
   %2 = call i16 @llvm.ctlz.i16(i16 %1, i1 false), !range !1
   %3 = sub nuw nsw i16 16, %2
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = tail call noundef i32 @llvm.ctlz.i32(i32 %1, i1 false), !range !0
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -57,7 +57,7 @@ entry:
   %2 = tail call noundef i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 

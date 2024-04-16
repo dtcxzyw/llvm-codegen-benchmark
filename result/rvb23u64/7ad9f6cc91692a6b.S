@@ -39,8 +39,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srliw	a1, a1, 30
-	lui	a2, 786432
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 30
 	lui	a2, 524288
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -113,8 +113,9 @@ func000000000000001b:                   # @func000000000000001b
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
 	slti	a1, a1, 2
-	xori	a1, a1, 1
-	slli	a1, a1, 2
+	li	a2, 2
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ori	a0, a0, 3
 	ret

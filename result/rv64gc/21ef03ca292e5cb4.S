@@ -39,6 +39,6 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a0, a0, 32
 	ret
 func0000000000000012:                   # @func0000000000000012
-	add	a1, a0, a2
+	add	a1, a2, a0
 	li	a0, 0
 	ret

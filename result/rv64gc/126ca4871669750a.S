@@ -14,8 +14,9 @@ func0000000000000611:                   # @func0000000000000611
 	slt	a3, a4, a3
 	negw	a3, a3
 	and	a0, a0, a3
-	subw	a1, a1, a2
-	addw	a0, a0, a1
+	sext.w	a0, a0
+	subw	a2, a2, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000060a:                   # @func000000000000060a
@@ -35,7 +36,8 @@ func0000000000000401:                   # @func0000000000000401
 	sltu	a3, a4, a3
 	negw	a3, a3
 	and	a0, a0, a3
-	subw	a1, a1, a2
-	addw	a0, a0, a1
+	sext.w	a0, a0
+	subw	a2, a2, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

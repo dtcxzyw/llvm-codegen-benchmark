@@ -3,7 +3,7 @@ func000000000000001d:                   # @func000000000000001d
 	lui	a2, 16
 	addiw	a2, a2, -1000
 	mul	a1, a1, a2
-	lui	a3, 244
+	lui	a3, 4
 	addiw	a3, a3, 576
 	add	a0, a0, a3
 	add	a0, a0, a1

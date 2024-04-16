@@ -7,7 +7,7 @@ entry:
   %3 = add i64 %2, 15
   %4 = and i64 %3, -16
   %5 = sub i64 %1, %4
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nuw i64 %2, 4294967288
   %4 = and i64 %3, 4294967294
   %5 = sub nsw i64 %1, %4
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = add i32 %2, 63
   %4 = and i32 %3, -64
   %5 = sub i32 %1, %4
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = add i32 %2, 7
   %4 = and i32 %3, -8
   %5 = sub i32 %1, %4
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = add nuw nsw i32 %2, 7
   %4 = and i32 %3, 131064
   %5 = sub i32 %1, %4
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = add nuw i64 %2, 15
   %4 = and i64 %3, -8
   %5 = sub i64 %1, %4
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

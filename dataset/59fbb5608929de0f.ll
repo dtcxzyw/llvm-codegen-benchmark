@@ -24,8 +24,8 @@ define i1 @func000000000000001a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = add nsw i64 %5, -1
+  %5 = xor i64 %3, -1
+  %6 = add i64 %5, %4
   %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }

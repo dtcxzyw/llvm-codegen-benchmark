@@ -30,8 +30,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
-  %2 = tail call i8 @llvm.umax.i8(i8 %1, i8 16)
-  %3 = tail call i8 @llvm.umax.i8(i8 %0, i8 %2)
+  %2 = call i8 @llvm.umax.i8(i8 %1, i8 %0)
+  %3 = call i8 @llvm.umax.i8(i8 %2, i8 16)
   ret i8 %3
 }
 

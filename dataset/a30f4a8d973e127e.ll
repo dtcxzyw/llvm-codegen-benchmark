@@ -133,7 +133,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = zext i1 %1 to i64
   %5 = add nuw i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

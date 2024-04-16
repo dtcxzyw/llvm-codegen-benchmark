@@ -21,18 +21,8 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a2, a2
-	andi	a0, a0, 1
-	blez	a2, .LBB2_3
-	beqz	a0, .LBB2_4
-.LBB2_2:                                # %entry
 	sext.w	a1, a1
-	sgtz	a0, a1
-	ret
-.LBB2_3:                                # %entry
-	li	a2, 1
-	bnez	a0, .LBB2_2
-.LBB2_4:                                # %entry
-	sext.w	a1, a2
-	sgtz	a0, a1
+	sgtz	a1, a1
+	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret

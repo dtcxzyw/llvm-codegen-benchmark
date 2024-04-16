@@ -7,8 +7,9 @@ entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -399
   %5 = select i1 %0, i64 %4, i64 %3
-  %6 = sdiv i64 %5, 400
-  %7 = mul nsw i64 %6, -400
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 400
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 
@@ -28,8 +29,9 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, -146096
   %5 = select i1 %0, i64 %4, i64 %3
-  %6 = sdiv i64 %5, 146097
-  %7 = mul nsw i64 %6, -146097
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 146097
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 

@@ -33,8 +33,8 @@
 define ptr @func0000000000000001(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -47,8 +47,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -119,8 +119,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  %4 = getelementptr ptr, ptr %0, i64 %3
+  %5 = getelementptr ptr, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -135,8 +135,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %1, %3
-  %5 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %4
+  %4 = getelementptr { i32, i16 }, ptr %0, i64 %3
+  %5 = getelementptr { i32, i16 }, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -253,8 +253,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -266,8 +266,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -277,8 +277,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
   ret ptr %5
 }
 

@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 1
-  %2 = shl nuw nsw i32 %1, 1
+  %1 = shl i32 %0, 1
+  %2 = and i32 %1, 2
   %3 = shl nuw nsw i32 %0, 2
   %4 = and i32 %3, 252
   %5 = or disjoint i32 %4, %2
@@ -21,8 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 16
-  %2 = shl nuw nsw i32 %1, 23
+  %1 = shl i32 %0, 23
+  %2 = and i32 %1, 134217728
   %3 = shl i32 %0, 22
   %4 = and i32 %3, 33554432
   %5 = or disjoint i32 %4, %2

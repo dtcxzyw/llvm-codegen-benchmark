@@ -8,10 +8,10 @@ func0000000000000075:                   # @func0000000000000075
 	srli	a0, a0, 49
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	sh3add	a0, a0, a0
-	sh1add	a0, a0, a0
-	addi	a0, a0, -292
-	lui	a1, 425
-	addi	a1, a1, 847
-	mulw	a0, a0, a1
+	lui	a1, 11481
+	addi	a1, a1, -1707
+	mul	a0, a0, a1
+	lui	a1, 924416
+	addi	a1, a1, -1564
+	addw	a0, a0, a1
 	ret

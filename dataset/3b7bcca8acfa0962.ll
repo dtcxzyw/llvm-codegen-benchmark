@@ -23,8 +23,8 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = or i64 %1, %3
-  %5 = icmp eq i64 %0, %4
+  %4 = or i64 %3, %1
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

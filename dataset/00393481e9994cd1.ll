@@ -45,9 +45,8 @@ entry:
   %2 = mul i32 %1, 14
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 72
-  %5 = getelementptr %union.acpi_object.2005468, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %union.acpi_object.2005468, ptr %4, i64 %3, i32 0, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:

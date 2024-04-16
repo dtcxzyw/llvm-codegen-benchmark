@@ -5,9 +5,9 @@
 define i32 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = lshr i64 %4, 9
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
@@ -91,9 +91,9 @@ entry:
 define i32 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }

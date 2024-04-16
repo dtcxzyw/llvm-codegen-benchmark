@@ -1,5 +1,6 @@
 func00000000000000cc:                   # @func00000000000000cc
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -58,7 +59,9 @@ func0000000000000166:                   # @func0000000000000166
 	and	a0, a0, a1
 	ret
 func000000000000018c:                   # @func000000000000018c
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
@@ -87,7 +90,9 @@ func00000000000003c8:                   # @func00000000000003c8
 	ret
 func00000000000001cc:                   # @func00000000000001cc
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -101,7 +106,8 @@ func0000000000000344:                   # @func0000000000000344
 	ret
 func00000000000003cc:                   # @func00000000000003cc
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -124,7 +130,8 @@ func000000000000004a:                   # @func000000000000004a
 	and	a0, a0, a1
 	ret
 func0000000000000161:                   # @func0000000000000161
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	lui	a2, 4
 	addiw	a2, a2, -1384
@@ -133,7 +140,9 @@ func0000000000000161:                   # @func0000000000000161
 	ret
 func00000000000001ac:                   # @func00000000000001ac
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
@@ -180,7 +189,9 @@ func0000000000000016:                   # @func0000000000000016
 	and	a0, a0, a1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
@@ -267,7 +278,8 @@ func0000000000000318:                   # @func0000000000000318
 	ret
 func000000000000031c:                   # @func000000000000031c
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -285,7 +297,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func000000000000011c:                   # @func000000000000011c
 	andi	a0, a0, 255
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

@@ -120,8 +120,9 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = sdiv i32 %2, 7
-  %4 = mul nsw i32 %3, -7
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 7
+  %4 = sub i32 %3, %.fr
   ret i32 %4
 }
 

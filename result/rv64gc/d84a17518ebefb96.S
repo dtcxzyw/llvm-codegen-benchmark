@@ -60,8 +60,9 @@ func000000000000000d:                   # @func000000000000000d
 	addi	a0, a0, -2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	addi	a0, a0, 4
 	slli	a0, a0, 16
+	lui	a1, 64
+	add	a0, a0, a1
 	lui	a1, 1040400
 	addiw	a1, a1, -1655
 	or	a0, a0, a1

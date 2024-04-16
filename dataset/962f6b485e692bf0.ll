@@ -12,7 +12,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

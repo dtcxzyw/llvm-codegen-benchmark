@@ -12,7 +12,7 @@ define float @func0000000000000000(float %0, double %1, double %2) #0 {
 entry:
   %3 = call double @llvm.fmuladd.f64(double %1, double -1.000000e+00, double %2)
   %4 = fptrunc double %3 to float
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

@@ -6,9 +6,8 @@
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
-  %2 = call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = and i64 %2, -4
-  ret i64 %3
+  %2 = and i64 %1, -4
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

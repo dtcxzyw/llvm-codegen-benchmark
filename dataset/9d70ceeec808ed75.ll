@@ -14,8 +14,8 @@
 define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
   %6 = getelementptr inbounds i8, ptr %5, i64 32
   ret ptr %6
 }
@@ -28,8 +28,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -1
   ret ptr %6
 }
@@ -58,8 +58,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr inbounds i8, ptr %5, i64 4
   ret ptr %6
 }
@@ -74,10 +74,9 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr inbounds %struct._zval_struct.1712315, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = getelementptr %struct._zval_struct.1712315, ptr %0, i64 %3
+  %5 = getelementptr %struct._zval_struct.1712315, ptr %4, i64 %1, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -88,10 +87,9 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr inbounds %class.btVector3.1741584, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = getelementptr %class.btVector3.1741584, ptr %0, i64 %3
+  %5 = getelementptr %class.btVector3.1741584, ptr %4, i64 %1, i32 0, i64 2
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -101,8 +99,8 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr float, ptr %0, i64 %4
+  %4 = getelementptr float, ptr %0, i64 %3
+  %5 = getelementptr float, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -640
   ret ptr %6
 }
@@ -114,8 +112,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds float, ptr %0, i64 %4
+  %4 = getelementptr float, ptr %0, i64 %3
+  %5 = getelementptr float, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }
@@ -126,10 +124,9 @@ entry:
 define ptr @func000000000000001d(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr %struct._wsp_pdu_t.1915748, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = getelementptr %struct._wsp_pdu_t.1915748, ptr %0, i64 %3
+  %5 = getelementptr %struct._wsp_pdu_t.1915748, ptr %4, i64 %1, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -138,8 +135,8 @@ entry:
 define ptr @func0000000000000011(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr inbounds i8, ptr %5, i64 2
   ret ptr %6
 }
@@ -150,8 +147,8 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr inbounds i8, ptr %5, i64 8
   ret ptr %6
 }
@@ -163,8 +160,8 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }

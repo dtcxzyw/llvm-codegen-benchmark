@@ -43,12 +43,12 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8193
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, -245761
-  %6 = shl nuw nsw i64 %0, 15
-  %7 = or disjoint i64 %5, %6
-  ret i64 %7
+  %3 = and i64 %2, -253953
+  %.masked = and i64 %1, -245761
+  %4 = or i64 %3, %.masked
+  %5 = shl nuw nsw i64 %0, 15
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
 }
 
 ; 3 occurrences:
@@ -59,11 +59,11 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
-  %4 = or disjoint i32 %1, %3
-  %5 = and i32 %4, 134217727
-  %6 = shl i32 %0, 27
-  %7 = or disjoint i32 %5, %6
-  ret i32 %7
+  %.masked = and i32 %1, 134217727
+  %4 = or i32 %3, %.masked
+  %5 = shl i32 %0, 27
+  %6 = or disjoint i32 %4, %5
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -71,12 +71,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -1152657617789587456
-  %4 = or disjoint i64 %1, %3
-  %5 = and i64 %4, 65535
-  %6 = shl nsw i64 %0, 16
-  %7 = or disjoint i64 %6, %5
-  ret i64 %7
+  %3 = and i64 %2, 61440
+  %.masked = and i64 %1, 65535
+  %4 = or i64 %3, %.masked
+  %5 = shl nsw i64 %0, 16
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -85,12 +85,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -2097153
-  %4 = or disjoint i32 %1, %3
-  %5 = and i32 %4, 16777215
-  %6 = shl nuw i32 %0, 24
-  %7 = or disjoint i32 %6, %5
-  ret i32 %7
+  %3 = and i32 %2, 14680063
+  %.masked = and i32 %1, 16777215
+  %4 = or i32 %3, %.masked
+  %5 = shl nuw i32 %0, 24
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -98,12 +98,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -1056964609
-  %4 = or i32 %3, %1
-  %5 = and i32 %4, -8323073
-  %6 = shl nuw nsw i32 %0, 16
-  %7 = or disjoint i32 %5, %6
-  ret i32 %7
+  %3 = and i32 %2, -1065287681
+  %.masked = and i32 %1, -8323073
+  %4 = or i32 %3, %.masked
+  %5 = shl nuw nsw i32 %0, 16
+  %6 = or disjoint i32 %4, %5
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

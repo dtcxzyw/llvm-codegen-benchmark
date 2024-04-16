@@ -7,12 +7,12 @@ func00000000000000c7:                   # @func00000000000000c7
 func00000000000000c6:                   # @func00000000000000c6
 	andi	a2, a2, 7
 	snez	a2, a2
-	add	a1, a1, a2
+	sh3add	a0, a2, a0
 	sh3add	a0, a1, a0
 	ret
 func00000000000000c3:                   # @func00000000000000c3
 	andi	a2, a2, 63
 	snez	a2, a2
-	add	a1, a1, a2
+	sh3add	a0, a2, a0
 	sh3add	a0, a1, a0
 	ret

@@ -16,7 +16,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -30,7 +30,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -55,7 +55,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 

@@ -74,11 +74,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000002c2(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp slt i32 %3, 1
-  %5 = icmp eq ptr %0, null
-  %6 = or i1 %5, %4
-  ret i1 %6
+  %3 = icmp sle i32 %1, %2
+  %4 = icmp eq ptr %0, null
+  %5 = or i1 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:

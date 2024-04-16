@@ -13,7 +13,7 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr inbounds %struct._zend_live_range.1714754, ptr %0, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -12
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

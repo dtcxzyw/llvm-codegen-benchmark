@@ -10,7 +10,7 @@ entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 32, i32 64
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = and i64 %2, 72057594037927936
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 -16383, i64 -16382
-  %6 = add nsw i64 %1, %5
+  %6 = add nsw i64 %5, %1
   %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
@@ -50,7 +50,7 @@ entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 2
   %5 = select i1 %4, i64 -1, i64 1
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
@@ -63,7 +63,7 @@ entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 -2
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
@@ -76,7 +76,7 @@ entry:
   %3 = and i64 %2, 98304
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 1, i64 2
-  %6 = add nuw nsw i64 %1, %5
+  %6 = add nuw nsw i64 %5, %1
   %7 = icmp slt i64 %6, %0
   ret i1 %7
 }
@@ -89,7 +89,7 @@ entry:
   %3 = and i32 %2, 33554432
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 4, i32 8
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
@@ -102,7 +102,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i8 4, i8 8
-  %6 = add nuw nsw i8 %1, %5
+  %6 = add nuw nsw i8 %5, %1
   %7 = icmp ugt i8 %6, %0
   ret i1 %7
 }
@@ -116,7 +116,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i8 4, i8 8
-  %6 = add nuw nsw i8 %1, %5
+  %6 = add nuw nsw i8 %5, %1
   %7 = icmp ult i8 %6, %0
   ret i1 %7
 }
@@ -130,7 +130,7 @@ entry:
   %3 = and i16 %2, 8192
   %4 = icmp eq i16 %3, 0
   %5 = select i1 %4, i32 0, i32 500
-  %6 = add nuw nsw i32 %1, %5
+  %6 = add nuw nsw i32 %5, %1
   %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
@@ -158,7 +158,7 @@ entry:
   %3 = and i32 %2, 16711680
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 1, i32 2
-  %6 = add nsw i32 %1, %5
+  %6 = add nsw i32 %5, %1
   %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
@@ -185,7 +185,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 9, i32 4
-  %6 = add nsw i32 %1, %5
+  %6 = add nsw i32 %5, %1
   %7 = icmp slt i32 %6, %0
   ret i1 %7
 }

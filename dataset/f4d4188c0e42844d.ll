@@ -12,9 +12,9 @@
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 63
-  %2 = sub nuw nsw i64 64, %1
-  %3 = trunc i64 %2 to i8
+  %1 = trunc i64 %0 to i8
+  %2 = and i8 %1, 63
+  %3 = sub nuw nsw i8 64, %2
   ret i8 %3
 }
 

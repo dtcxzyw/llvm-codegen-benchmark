@@ -6,7 +6,7 @@
 define i64 @func00000000000003f7(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 5
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = mul nuw nsw i64 %4, 18
   %6 = add nsw i64 %0, -1
   %7 = add nuw nsw i64 %6, %5
@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000155(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 7
   %6 = add nsw i32 %0, 45
   %7 = add nsw i32 %6, %5
@@ -102,7 +102,7 @@ entry:
 define i8 @func00000000000003e0(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = mul nuw nsw i8 %2, 10
-  %4 = add nuw nsw i8 %1, %3
+  %4 = add nuw nsw i8 %3, %1
   %5 = mul nuw i8 %4, 10
   %6 = add i8 %0, -48
   %7 = add i8 %6, %5

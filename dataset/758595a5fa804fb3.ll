@@ -16,7 +16,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = xor i64 %3, -1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

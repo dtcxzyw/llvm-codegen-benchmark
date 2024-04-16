@@ -7,7 +7,7 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = select i1 %0, i32 1073741824, i32 0
   %6 = or i32 %5, %4
   ret i32 %6
@@ -63,7 +63,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = select i1 %1, i32 16, i32 0
   %6 = or disjoint i32 %4, %5
   ret i32 %6

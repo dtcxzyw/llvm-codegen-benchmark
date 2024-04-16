@@ -8,10 +8,10 @@
 define i64 @func0000000000000075(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = add nsw i64 %4, -131042
-  %6 = select i1 %0, i64 %5, i64 %4
-  %7 = shl nsw i64 %6, 16
+  %4 = add nuw nsw i64 %3, %1
+  %5 = shl i64 %4, 16
+  %6 = add i64 %5, -8587968512
+  %7 = select i1 %0, i64 %6, i64 %5
   ret i64 %7
 }
 

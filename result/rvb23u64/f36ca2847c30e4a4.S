@@ -2,7 +2,7 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, 293941
 	fmv.w.x	fa5, a0
 	fdiv.s	fa5, fa1, fa5
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 .LCPI1_0:
 	.quad	0x412e848000000000              # double 1.0E+6

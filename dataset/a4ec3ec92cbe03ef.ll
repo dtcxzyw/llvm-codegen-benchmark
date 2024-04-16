@@ -7,7 +7,7 @@
 define i1 @func0000000000000198(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6

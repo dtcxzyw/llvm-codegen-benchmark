@@ -40,8 +40,8 @@ func00000000000000a5:                   # @func00000000000000a5
 	ret
 func000000000000006c:                   # @func000000000000006c
 	sext.w	a2, a2
-	slti	a2, a2, 1
-	negw	a2, a2
+	sgtz	a2, a2
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	lui	a2, 1048400
 	addi	a2, a2, 1733

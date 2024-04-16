@@ -20,7 +20,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to float
   %4 = fdiv float 1.000000e+00, %0
-  %5 = fmul float %3, %4
+  %5 = fmul float %4, %3
   ret float %5
 }
 

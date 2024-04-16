@@ -31,7 +31,7 @@ define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 32768
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = trunc i32 %4 to i16
   %6 = add i16 %5, 1
   ret i16 %6

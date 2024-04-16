@@ -32,7 +32,7 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.d.x	fa5, a0
-	feq.d	a1, fa0, fa5
+	feq.d	a1, fa5, fa0
 	li	a0, 257
 	bnez	a1, .LBB4_2
 	li	a0, 1

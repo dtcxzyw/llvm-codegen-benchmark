@@ -9,7 +9,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = or disjoint i32 %3, %1
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 
@@ -20,9 +20,9 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 4
-  %4 = or disjoint i8 %1, %3
+  %4 = or disjoint i8 %3, %1
   %5 = xor i8 %4, -1
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
   %5 = xor i64 %4, -1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

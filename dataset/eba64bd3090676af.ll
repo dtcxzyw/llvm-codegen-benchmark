@@ -32,7 +32,7 @@ entry:
 define i16 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = trunc nuw i32 %4 to i16
   %6 = tail call noundef i16 @llvm.bswap.i16(i16 %5)
   ret i16 %6

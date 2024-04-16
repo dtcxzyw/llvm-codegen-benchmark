@@ -1,23 +1,6 @@
 
 %"struct.mold::elf::VersionPattern.1594641" = type <{ %"class.std::basic_string_view.1594518", %"class.std::basic_string_view.1594518", %"class.std::basic_string_view.1594518", i16, i8, [5 x i8] }>
 %"class.std::basic_string_view.1594518" = type { i64, ptr }
-%"struct.ParsedText::Element.1653727" = type { %"class.std::__cxx11::list.1653728", i32, %"class.irr::core::string.1653679", %"class.irr::core::dimension2d.1653729", %"class.irr::core::vector2d.1653690", i32, i32, i32, ptr, %"class.irr::video::SColor.1653673", %"class.irr::video::SColor.1653673", i8, i32, %"class.std::__cxx11::basic_string.1653669", %"class.irr::core::vector3d.1653730", %"class.irr::core::vector3d.1653730", i32 }
-%"class.std::__cxx11::list.1653728" = type { %"class.std::__cxx11::_List_base.1653731" }
-%"class.std::__cxx11::_List_base.1653731" = type { %"struct.std::__cxx11::_List_base<ParsedText::Tag *, std::allocator<ParsedText::Tag *>>::_List_impl.1653732" }
-%"struct.std::__cxx11::_List_base<ParsedText::Tag *, std::allocator<ParsedText::Tag *>>::_List_impl.1653732" = type { %"struct.std::__detail::_List_node_header.1653733" }
-%"struct.std::__detail::_List_node_header.1653733" = type { %"struct.std::__detail::_List_node_base.1653734", i64 }
-%"struct.std::__detail::_List_node_base.1653734" = type { ptr, ptr }
-%"class.irr::core::string.1653679" = type { %"class.std::__cxx11::basic_string.8.1653680" }
-%"class.std::__cxx11::basic_string.8.1653680" = type { %"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.1653681", i64, %union.anon.12.1653682 }
-%"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.1653681" = type { ptr }
-%union.anon.12.1653682 = type { i64, [8 x i8] }
-%"class.irr::core::dimension2d.1653729" = type { i32, i32 }
-%"class.irr::core::vector2d.1653690" = type { i32, i32 }
-%"class.irr::video::SColor.1653673" = type { i32 }
-%"class.std::__cxx11::basic_string.1653669" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1653670", i64, %union.anon.1653671 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1653670" = type { ptr }
-%union.anon.1653671 = type { i64, [8 x i8] }
-%"class.irr::core::vector3d.1653730" = type { i16, i16, i16 }
 %struct.codel_vars.2015350 = type { i32, i32, i8, i16, i32, i32, i32 }
 
 ; 20 occurrences:
@@ -46,7 +29,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
   %4 = getelementptr inbounds %"struct.mold::elf::VersionPattern.1594641", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -271,10 +254,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 168
-  %4 = getelementptr inbounds %"struct.ParsedText::Element.1653727", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
-  ret i1 %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -284,7 +266,7 @@ define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 56
   %4 = getelementptr %struct.codel_vars.2015350, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

@@ -57,10 +57,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -4
-  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 65)
-  %3 = add nsw i32 %2, -64
-  ret i32 %3
+  %1 = call i32 @llvm.smax.i32(i32 %0, i32 69)
+  %2 = add nsw i32 %1, -68
+  ret i32 %2
 }
 
 ; 1 occurrences:

@@ -104,9 +104,8 @@ define i64 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = trunc i128 %0 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %2)
-  %5 = extractvalue { i64, i1 } %4, 0
-  ret i64 %5
+  %4 = add i64 %3, %2
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -119,9 +118,8 @@ define i64 @func0000000000000014(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
   %3 = trunc nuw i128 %0 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %2)
-  %5 = extractvalue { i64, i1 } %4, 0
-  ret i64 %5
+  %4 = add i64 %3, %2
+  ret i64 %4
 }
 
 ; 8 occurrences:
@@ -138,9 +136,8 @@ define i64 @func0000000000000010(i128 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
   %3 = trunc i128 %0 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %2)
-  %5 = extractvalue { i64, i1 } %4, 0
-  ret i64 %5
+  %4 = add i64 %3, %2
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

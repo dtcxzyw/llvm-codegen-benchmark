@@ -25,8 +25,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	slli	a1, a1, 48
-	srli	a1, a1, 48
+	lui	a2, 16
+	addiw	a2, a2, -256
+	and	a1, a1, a2
 	sltiu	a1, a1, 768
 	xori	a1, a1, 1
 	seqz	a0, a0

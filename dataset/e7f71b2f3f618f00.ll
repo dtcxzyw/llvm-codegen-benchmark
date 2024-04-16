@@ -10,7 +10,7 @@ entry:
   %4 = zext i64 %3 to i128
   %5 = mul nuw i128 %4, %0
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 

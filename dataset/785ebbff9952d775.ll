@@ -10,7 +10,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double 1.000000e+00, %2
   %4 = fmul double %3, %1
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   %6 = fmul double %5, 5.000000e-01
   ret double %6
 }

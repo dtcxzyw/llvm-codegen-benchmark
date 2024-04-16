@@ -7,7 +7,7 @@
 define i128 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = zext i64 %4 to i128
   %6 = zext i64 %0 to i128
   %7 = mul nuw i128 %5, %6

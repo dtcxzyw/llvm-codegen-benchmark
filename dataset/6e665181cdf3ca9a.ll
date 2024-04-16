@@ -12,11 +12,10 @@
 define i64 @func0000000000000094(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000
-  %3 = add nsw i64 %0, %2
-  %4 = sdiv i64 %3, 1000000000
-  %5 = mul nsw i64 %4, -1000000000
-  %6 = add i64 %5, %3
-  ret i64 %6
+  %3 = add nsw i64 %2, %0
+  %.fr = freeze i64 %3
+  %4 = srem i64 %.fr, 1000000000
+  ret i64 %4
 }
 
 ; 33 occurrences:
@@ -58,10 +57,9 @@ define i64 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -86400000
   %3 = add i64 %2, %0
-  %4 = sdiv i64 %3, 3600000
-  %5 = mul nsw i64 %4, -3600000
-  %6 = add i64 %5, %3
-  ret i64 %6
+  %.fr = freeze i64 %3
+  %4 = srem i64 %.fr, 3600000
+  ret i64 %4
 }
 
 ; 6 occurrences:
@@ -75,7 +73,7 @@ entry:
 define i64 @func0000000000000080(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -60000
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = sdiv i64 %3, 1000
   %5 = mul i64 %4, 64536
   %6 = add i64 %5, %3
@@ -90,10 +88,9 @@ define i64 @func0000000000000195(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3600000000
   %3 = add nsw i64 %2, %0
-  %4 = sdiv i64 %3, -60000000
-  %5 = mul nsw i64 %4, 60000000
-  %6 = add nsw i64 %5, %3
-  ret i64 %6
+  %.fr = freeze i64 %3
+  %4 = srem i64 %.fr, 60000000
+  ret i64 %4
 }
 
 ; 4 occurrences:
@@ -106,10 +103,9 @@ define i32 @func0000000000000095(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, -3600
   %3 = add nsw i32 %2, %0
-  %4 = sdiv i32 %3, 60
-  %5 = mul nsw i32 %4, -60
-  %6 = add nsw i32 %5, %3
-  ret i32 %6
+  %.fr = freeze i32 %3
+  %4 = srem i32 %.fr, 60
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -119,10 +115,9 @@ define i64 @func0000000000000194(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000000
   %3 = add nsw i64 %2, %0
-  %4 = sdiv i64 %3, 1000000000
-  %5 = mul nsw i64 %4, -1000000000
-  %6 = add i64 %5, %3
-  ret i64 %6
+  %.fr = freeze i64 %3
+  %4 = srem i64 %.fr, 1000000000
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

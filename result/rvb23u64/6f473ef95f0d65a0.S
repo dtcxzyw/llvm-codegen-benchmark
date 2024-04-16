@@ -42,9 +42,11 @@ func00000000000001d8:                   # @func00000000000001d8
 	andi	a1, a1, 255
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	addiw	a0, a0, -20
-	lui	a1, 64
-	sltu	a0, a1, a0
+	lui	a1, 1048512
+	addi	a2, a1, -21
+	addw	a0, a0, a2
+	addiw	a1, a1, -1
+	sltu	a0, a0, a1
 	ret
 .LCPI6_0:
 	.quad	2992480573525125729             # 0x29876d3a0e38ea61

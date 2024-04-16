@@ -9,11 +9,10 @@
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 1
-  %5 = icmp ne i32 %4, 0
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = and i64 %2, 1
+  %4 = icmp ne i64 %3, 0
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -27,11 +26,10 @@ entry:
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 1
-  %5 = icmp eq i32 %4, 0
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = and i64 %2, 1
+  %4 = icmp eq i64 %3, 0
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

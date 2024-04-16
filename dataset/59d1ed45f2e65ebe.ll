@@ -7,7 +7,7 @@ entry:
   %2 = srem i64 %1, 3652425
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 -3652425, i64 0
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = srem i64 %1, 100
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 -100, i64 0
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = srem i64 %1, 20
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 -2, i64 2
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

@@ -21,7 +21,7 @@ func0000000000000006:                   # @func0000000000000006
 	and	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	lui	a2, 279620
+	lui	a2, 17476
 	addiw	a2, a2, 1092
 	and	a1, a1, a2
 	and	a0, a0, a2
@@ -32,13 +32,11 @@ func0000000000000005:                   # @func0000000000000005
 	and	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	lui	a2, 197379
+	lui	a2, 771
 	addiw	a2, a2, 48
 	and	a1, a1, a2
 	and	a0, a0, a2
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	lui	a1, 112
-	addiw	a1, a1, 7
-	and	a0, a0, a1
+	andi	a0, a0, -2041
 	ret

@@ -24,7 +24,7 @@ entry:
 define i128 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = zext i64 %3 to i128
   %5 = mul nuw nsw i128 %4, 1000000
   ret i128 %5

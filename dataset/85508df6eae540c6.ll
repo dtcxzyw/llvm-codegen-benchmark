@@ -181,10 +181,10 @@
 define i64 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = select i1 %0, i32 0, i32 %3
-  %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
-  %6 = add nuw i32 %5, 1
-  %7 = zext i32 %6 to i64
+  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
+  %5 = add nuw i32 %4, 1
+  %6 = zext i32 %5 to i64
+  %7 = select i1 %0, i64 1, i64 %6
   ret i64 %7
 }
 

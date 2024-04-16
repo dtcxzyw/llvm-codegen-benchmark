@@ -80,9 +80,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = sdiv i64 %4, 2
-  %6 = getelementptr inbounds %"struct.std::pair.678.1566163", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.std::pair.678.1566163", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 6 occurrences:
@@ -111,9 +110,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = sdiv i64 %4, 2
-  %6 = getelementptr %struct.RoleNameItem.2120994, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.RoleNameItem.2120994, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000390(i8 %0, i32 %1) #0 {
 entry:
-  %2 = tail call noundef i32 @llvm.bswap.i32(i32 %1)
+  %2 = shl i32 %1, 24
   %3 = icmp ugt i32 %2, -536870913
   %4 = icmp ne i8 %0, 0
   %5 = or i1 %3, %4

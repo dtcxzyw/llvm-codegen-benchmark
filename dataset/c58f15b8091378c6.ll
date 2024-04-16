@@ -183,7 +183,7 @@ entry:
   %3 = freeze i64 %2
   %4 = trunc i64 %3 to i32
   %5 = select i1 %1, i32 %4, i32 16
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

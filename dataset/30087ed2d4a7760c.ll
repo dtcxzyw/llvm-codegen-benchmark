@@ -4,10 +4,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 64
-  %3 = select i1 %0, i8 72, i8 %2
-  %4 = or i8 %3, 65
-  ret i8 %4
+  %2 = select i1 %0, i8 73, i8 65
+  ret i8 %2
 }
 
 ; 5 occurrences:
@@ -20,8 +18,8 @@ entry:
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
-  %3 = select i1 %0, i8 0, i8 %2
-  %4 = or disjoint i8 %3, 2
+  %3 = or disjoint i8 %2, 2
+  %4 = select i1 %0, i8 2, i8 %3
   ret i8 %4
 }
 

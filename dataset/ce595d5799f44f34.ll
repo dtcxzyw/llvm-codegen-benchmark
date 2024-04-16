@@ -11,7 +11,7 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = call i32 @llvm.smin.i32(i32 %2, i32 %1)
   %4 = icmp eq i32 %2, -1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = call i32 @llvm.smin.i32(i32 %2, i32 %1)
   %4 = icmp eq i32 %2, -1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

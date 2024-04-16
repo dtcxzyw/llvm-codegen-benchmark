@@ -6,8 +6,8 @@ define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr i32 %2, 5
-  %4 = add nsw i32 %3, %0
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -26,8 +26,8 @@ define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr i32 %2, 1
-  %4 = add i32 %3, %0
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -38,7 +38,7 @@ define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr i32 %2, 1
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }

@@ -7,7 +7,7 @@ entry:
   %2 = or disjoint i128 %1, 1
   %3 = add nsw i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 

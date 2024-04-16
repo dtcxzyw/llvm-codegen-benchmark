@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %2, 1
+  %2 = or i32 %1, 1
+  %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds [131072 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }

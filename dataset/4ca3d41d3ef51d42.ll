@@ -19,9 +19,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 232
   %4 = getelementptr inbounds [4 x %"struct.rawspeed::VC5Decompressor::Channel.1766465"], ptr %3, i64 0, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %4, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 40
-  ret ptr %7
+  %6 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %4, i64 0, i64 %5, i32 5
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -32,9 +31,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 192
   %4 = getelementptr [11 x %struct.free_area.1998947], ptr %3, i64 0, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr [4 x %struct.list_head.1998923], ptr %4, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr [4 x %struct.list_head.1998923], ptr %4, i64 0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

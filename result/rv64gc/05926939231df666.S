@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
+	xori	a1, a1, 4
 	subw	a0, a0, a1
-	addi	a0, a0, -4
 	andi	a0, a0, 7
 	seqz	a0, a0
 	ret
@@ -28,20 +28,14 @@ func00000000000000d8:                   # @func00000000000000d8
 	xori	a0, a0, 1
 	ret
 func0000000000000051:                   # @func0000000000000051
-	not	a1, a1
-	add	a0, a0, a1
+	subw	a0, a1, a0
 	andi	a0, a0, 1
-	seqz	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
-	not	a1, a1
-	add	a0, a0, a1
+	subw	a0, a1, a0
 	andi	a0, a0, 1
-	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	not	a1, a1
-	add	a0, a0, a1
+	subw	a0, a1, a0
 	andi	a0, a0, 1
-	seqz	a0, a0
 	ret

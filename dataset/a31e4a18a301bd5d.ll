@@ -11,10 +11,9 @@
 define i16 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 48
-  %3 = trunc i64 %2 to i16
-  %4 = trunc i64 %1 to i16
-  %5 = select i1 %0, i16 %3, i16 %4
-  ret i16 %5
+  %.v = select i1 %0, i64 %2, i64 %1
+  %3 = trunc i64 %.v to i16
+  ret i16 %3
 }
 
 attributes #0 = { nounwind }

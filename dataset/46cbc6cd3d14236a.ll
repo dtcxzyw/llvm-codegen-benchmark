@@ -13,7 +13,7 @@ define i8 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 8, %0
   %2 = lshr i32 255, %1
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw i32 %2 to i8
   ret i8 %3
 }
 
@@ -32,7 +32,7 @@ define i16 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = sub i32 16, %0
   %2 = lshr i32 2, %1
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   ret i16 %3
 }
 
@@ -46,7 +46,7 @@ define i16 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 16, %0
   %2 = lshr i32 2, %1
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   ret i16 %3
 }
 

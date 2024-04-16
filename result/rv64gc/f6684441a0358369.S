@@ -4,8 +4,7 @@ func000000000000009c:                   # @func000000000000009c
 	bgeu	a2, a3, .LBB0_2
 	li	a1, 1
 .LBB0_2:                                # %entry
-	sext.w	a1, a1
-	add	a0, a0, a1
+	addw	a0, a0, a1
 	ret
 func00000000000000dc:                   # @func00000000000000dc
 	sext.w	a2, a2
@@ -13,8 +12,7 @@ func00000000000000dc:                   # @func00000000000000dc
 	bge	a2, a3, .LBB1_2
 	li	a1, 1
 .LBB1_2:                                # %entry
-	sext.w	a1, a1
-	add	a0, a0, a1
+	addw	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
 	sext.w	a3, a3
@@ -33,6 +31,5 @@ func0000000000000030:                   # @func0000000000000030
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	sext.w	a1, a1
-	add	a0, a0, a1
+	addw	a0, a0, a1
 	ret

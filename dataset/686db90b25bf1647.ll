@@ -10,7 +10,7 @@ entry:
   %3 = select i1 %2, i32 0, i32 2
   %4 = or disjoint i32 %3, %1
   %5 = shl nuw nsw i32 %4, 4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

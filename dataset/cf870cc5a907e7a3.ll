@@ -17,7 +17,7 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fmul float %3, 0x3FE51EB860000000
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   %6 = fmul float %5, 0x3F0E689D80000000
   ret float %6
 }

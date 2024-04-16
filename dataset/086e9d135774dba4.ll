@@ -22,10 +22,9 @@ define i32 @func00000000000000c5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = udiv i32 %4, 100
-  %6 = mul nsw i32 %5, -100
-  %7 = add nsw i32 %6, %4
-  ret i32 %7
+  %.fr = freeze i32 %4
+  %5 = urem i32 %.fr, 100
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

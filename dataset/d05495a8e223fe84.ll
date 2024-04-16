@@ -45,9 +45,9 @@ entry:
 define i64 @func0000000000000051(i8 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, -1
-  %4 = icmp eq i8 %0, 10
-  %5 = select i1 %4, i64 %3, i64 %2
+  %3 = icmp eq i8 %0, 10
+  %4 = sext i1 %3 to i64
+  %5 = add nsw i64 %2, %4
   ret i64 %5
 }
 

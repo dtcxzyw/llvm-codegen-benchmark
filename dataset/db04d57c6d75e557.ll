@@ -9,7 +9,7 @@ entry:
   %3 = mul nuw nsw i128 %0, 10
   %4 = add nuw nsw i128 %3, %2
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = mul nuw i128 %0, 10000000000000000000
   %4 = add nuw i128 %3, %2
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = mul i64 %0, 1000000000
   %4 = add i64 %3, %2
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 

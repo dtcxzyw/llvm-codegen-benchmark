@@ -22,9 +22,8 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr inbounds i8, ptr %0, i64 2
-  %5 = getelementptr [4 x %struct.anon.3.2000162], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr [4 x %struct.anon.3.2000162], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -35,9 +34,8 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr [5 x %struct.focaltech_finger_state.2000865], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [5 x %struct.focaltech_finger_state.2000865], ptr %4, i64 0, i64 %3, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -48,9 +46,8 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr i8, ptr %0, i64 -272
-  %5 = getelementptr [17 x %struct.bio_vec.2005756], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [17 x %struct.bio_vec.2005756], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -79,9 +76,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -39
   %4 = getelementptr inbounds i8, ptr %0, i64 976
-  %5 = getelementptr inbounds [196 x %struct.arena_stats_large_s.2127524], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds [196 x %struct.arena_stats_large_s.2127524], ptr %4, i64 0, i64 %3, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -92,9 +88,8 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds [1 x %struct.ExprList_item.2129404], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 17
-  ret ptr %6
+  %5 = getelementptr inbounds [1 x %struct.ExprList_item.2129404], ptr %4, i64 0, i64 %3, i32 2, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

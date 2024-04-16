@@ -3,20 +3,13 @@ func000000000000001a:                   # @func000000000000001a
 	bnez	a0, .LBB0_2
 	mv	a1, a2
 .LBB0_2:                                # %entry
-	addi	a0, a1, 1
-	seqz	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	sgtz	a0, a0
+	sgtz	a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	mv	a1, a2
 .LBB1_2:                                # %entry
-	addi	a0, a1, 1
-	seqz	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	addi	a1, a1, 1
+	sltiu	a0, a1, 2
 	ret

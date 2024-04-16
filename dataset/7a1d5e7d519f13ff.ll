@@ -28,7 +28,7 @@ entry:
   %4 = sub i32 %1, %2
   %5 = xor i32 %4, %3
   %6 = tail call noundef i32 @llvm.fshl.i32(i32 %5, i32 %5, i32 8)
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = sub i32 %1, %2
   %5 = xor i32 %4, %3
   %6 = tail call i32 @llvm.fshl.i32(i32 %5, i32 %5, i32 6)
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

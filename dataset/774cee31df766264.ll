@@ -172,11 +172,10 @@
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 524288
-  %5 = lshr exact i32 %4, 19
-  ret i32 %5
+  %sum.shift = lshr i64 %1, 51
+  %2 = trunc nuw nsw i64 %sum.shift to i32
+  %3 = and i32 %2, 1
+  ret i32 %3
 }
 
 ; 9 occurrences:
@@ -193,11 +192,10 @@ entry:
 define i32 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, 524288
-  %5 = lshr exact i32 %4, 19
-  ret i32 %5
+  %sum.shift = lshr i64 %1, 51
+  %2 = trunc nuw nsw i64 %sum.shift to i32
+  %3 = and i32 %2, 1
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

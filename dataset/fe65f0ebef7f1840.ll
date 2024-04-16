@@ -30,7 +30,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = lshr i64 %1, 25
   %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }

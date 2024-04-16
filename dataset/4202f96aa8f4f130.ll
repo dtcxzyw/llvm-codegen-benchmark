@@ -35,7 +35,7 @@ entry:
   %2 = select i1 %1, i64 8, i64 12
   %3 = icmp ult i64 %0, 65536
   %4 = select i1 %3, i64 6, i64 %2
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = select i1 %1, i8 -55, i8 -61
   %3 = icmp ugt i8 %0, 102
   %4 = select i1 %3, i8 7, i8 %2
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 

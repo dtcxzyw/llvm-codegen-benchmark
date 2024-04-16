@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %0, 1
-  %3 = icmp eq i32 %1, 23
-  %4 = select i1 %3, i32 %2, i32 %0
+  %2 = icmp eq i32 %1, 23
+  %3 = zext i1 %2 to i32
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -88,9 +88,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %0, -1
-  %3 = icmp eq i32 %1, 0
-  %4 = select i1 %3, i32 %2, i32 %0
+  %2 = icmp eq i32 %1, 0
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %3, %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

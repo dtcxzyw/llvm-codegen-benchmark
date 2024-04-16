@@ -29,8 +29,8 @@
 define i64 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = or disjoint i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -46,7 +46,7 @@ define i64 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -60,8 +60,8 @@ entry:
 define i64 @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = or disjoint i32 %3, %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

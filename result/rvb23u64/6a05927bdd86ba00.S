@@ -5,9 +5,12 @@ func0000000000000158:                   # @func0000000000000158
 	ld	a1, %lo(.LCPI0_0)(a1)
 	srai	a0, a0, 3
 	mul	a0, a0, a1
-	addi	a0, a0, 8
+	li	a1, -1
+	slli	a1, a1, 61
+	addi	a1, a1, 8
+	add	a0, a0, a1
 	srli	a0, a0, 61
-	snez	a0, a0
+	sltiu	a0, a0, 7
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sraiw	a1, a0, 31
@@ -34,7 +37,6 @@ func0000000000000048:                   # @func0000000000000048
 	srliw	a1, a1, 30
 	add	a0, a0, a1
 	andi	a0, a0, -4
-	addiw	a0, a0, 10
-	sltiu	a0, a0, 11
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
+	sltiu	a0, a0, -11
 	ret

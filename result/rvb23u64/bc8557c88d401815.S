@@ -1,8 +1,8 @@
 func00000000000000f1:                   # @func00000000000000f1
-	add	a1, a1, a2
+	addw	a1, a1, a2
 	li	a2, 1
 	andn	a0, a2, a0
-	addw	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a

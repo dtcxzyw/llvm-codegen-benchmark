@@ -6,7 +6,7 @@ define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = shl i32 %1, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }

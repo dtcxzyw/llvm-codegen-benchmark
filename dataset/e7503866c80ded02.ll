@@ -20,7 +20,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = zext nneg i32 %1 to i64
   %6 = shl i64 %4, %5
   %7 = trunc i64 %6 to i32

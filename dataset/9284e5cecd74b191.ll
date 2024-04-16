@@ -20,9 +20,9 @@
 define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp eq i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -42,9 +42,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = and i32 %2, 127
   %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -78,8 +78,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %1, %3
+  %3 = and i32 %2, 57344
+  %4 = or i32 %3, %1
   %5 = icmp ult i32 %4, 57344
   %6 = and i1 %5, %0
   ret i1 %6
@@ -106,7 +106,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4503599627370495
-  %4 = or i64 %1, %3
+  %4 = or i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = and i1 %5, %0
   ret i1 %6

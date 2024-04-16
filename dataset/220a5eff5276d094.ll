@@ -9,7 +9,7 @@ entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
   %4 = shl i64 %3, 3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = call i64 @llvm.umax.i64(i64 %2, i64 1)
   %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

@@ -11,7 +11,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 1
   %5 = add nuw nsw i64 %4, 39
   %6 = add nuw nsw i64 %5, %1
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nuw nsw i64 %4, 12
   %6 = add nuw nsw i64 %5, %1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 3
   %5 = add nuw nsw i32 %4, 8
   %6 = add i32 %5, %1
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 10
   %5 = add nsw i32 %4, -56613888
   %6 = add nuw nsw i32 %5, %1
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -64,7 +64,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 10
   %5 = add nsw i32 %4, -56613888
   %6 = add nuw nsw i32 %5, %1
-  %7 = icmp sle i32 %0, %6
+  %7 = icmp sge i32 %6, %0
   ret i1 %7
 }
 

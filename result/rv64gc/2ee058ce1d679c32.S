@@ -1,15 +1,11 @@
 func0000000000000014:                   # @func0000000000000014
-	mv	a3, a0
-	beqz	a2, .LBB0_2
-	mv	a3, a1
-.LBB0_2:                                # %entry
-	sltu	a0, a3, a0
+	snez	a2, a2
+	sltu	a0, a1, a0
+	and	a0, a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
-	mv	a3, a0
-	beqz	a2, .LBB1_2
-	mv	a3, a1
-.LBB1_2:                                # %entry
-	xor	a0, a0, a3
+	seqz	a2, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
+	or	a0, a0, a2
 	ret

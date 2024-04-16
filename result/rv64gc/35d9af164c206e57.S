@@ -29,8 +29,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000015:                   # @func0000000000000015
 	bnez	a1, .LBB4_2
-	li	a1, 4
-.LBB4_2:                                # %entry
+	li	a1, -5
+	add	a0, a0, a1
+	ret
+.LBB4_2:
 	not	a1, a1
 	add	a0, a0, a1
 	ret

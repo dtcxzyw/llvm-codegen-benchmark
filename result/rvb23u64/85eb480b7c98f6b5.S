@@ -11,16 +11,13 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a0, a0, 22
 	or	a0, a0, a1
 	ret
-.LCPI2_0:
-	.quad	-1085102592571150336            # 0xf0f0f0f0f0f0f000
 func0000000000000001:                   # @func0000000000000001
-	li	a2, 15
-	slli	a2, a2, 56
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
-	and	a1, a1, a2
 	srli	a1, a1, 52
 	slli	a0, a0, 12
-	and	a0, a0, a3
 	or	a0, a0, a1
+	lui	a1, 986895
+	addi	a1, a1, 240
+	slli	a2, a1, 32
+	add.uw	a1, a1, a2
+	and	a0, a0, a1
 	ret

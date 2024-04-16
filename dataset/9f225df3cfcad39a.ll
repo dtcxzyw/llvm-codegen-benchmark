@@ -11,9 +11,8 @@
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
-  %2 = select i1 %1, i64 1, i64 3
-  %3 = mul nuw nsw i64 %2, 56
-  ret i64 %3
+  %2 = select i1 %1, i64 56, i64 168
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -22,9 +21,8 @@ entry:
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
-  %2 = select i1 %1, i32 10, i32 1
-  %3 = mul nsw i32 %2, -20
-  ret i32 %3
+  %2 = select i1 %1, i32 -200, i32 -20
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

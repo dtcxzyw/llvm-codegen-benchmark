@@ -19,10 +19,8 @@ func0000000000000534:                   # @func0000000000000534
 	sltiu	a0, a0, 31
 	ret
 func0000000000000631:                   # @func0000000000000631
-	snez	a1, a1
-	add	a0, a0, a1
-	andi	a0, a0, 1
-	seqz	a0, a0
+	seqz	a1, a1
+	xor	a0, a0, a1
 	ret
 func0000000000000611:                   # @func0000000000000611
 	sext.w	a1, a1

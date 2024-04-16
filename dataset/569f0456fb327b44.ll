@@ -6,7 +6,7 @@
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add i64 %3, 4611686018427387904
   ret i64 %4
 }
@@ -140,7 +140,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nuw nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -342,7 +342,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -360,7 +360,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -446,7 +446,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 5
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, 7
   ret i32 %4
 }
@@ -472,7 +472,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 14
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = add i32 %3, -1
   ret i32 %4
 }
@@ -485,7 +485,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -501,7 +501,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = add i64 %3, -1
   ret i64 %4
 }
@@ -513,7 +513,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = add nuw nsw i32 %3, 2
   ret i32 %4
 }
@@ -526,7 +526,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = add i64 %3, 1
   ret i64 %4
 }

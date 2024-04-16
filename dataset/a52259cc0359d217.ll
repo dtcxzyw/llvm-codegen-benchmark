@@ -9,9 +9,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 16
   %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %3, i64 %0
   %5 = ashr exact i64 %1, 32
-  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %4, i64 %5, i32 3
+  ret ptr %6
 }
 
 ; 3 occurrences:

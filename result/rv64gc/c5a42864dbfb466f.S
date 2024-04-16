@@ -82,7 +82,7 @@ func000000000000007a:                   # @func000000000000007a
 	slt	a0, a1, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
-	beq	a1, a2, .LBB12_2
+	beq	a2, a1, .LBB12_2
 	sltu	a0, a1, a2
 	ret
 .LBB12_2:
@@ -114,7 +114,7 @@ func000000000000005c:                   # @func000000000000005c
 	snez	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
-	beq	a1, a2, .LBB16_2
+	beq	a2, a1, .LBB16_2
 	slt	a0, a2, a1
 	ret
 .LBB16_2:
@@ -149,7 +149,7 @@ func00000000000000fa:                   # @func00000000000000fa
 	slt	a0, a1, a0
 	ret
 func000000000000005b:                   # @func000000000000005b
-	beq	a1, a2, .LBB21_2
+	beq	a2, a1, .LBB21_2
 	slt	a0, a1, a2
 	xori	a0, a0, 1
 	ret
@@ -158,7 +158,7 @@ func000000000000005b:                   # @func000000000000005b
 	xori	a0, a0, 1
 	ret
 func0000000000000059:                   # @func0000000000000059
-	beq	a1, a2, .LBB22_2
+	beq	a2, a1, .LBB22_2
 	sltu	a0, a1, a2
 	xori	a0, a0, 1
 	ret

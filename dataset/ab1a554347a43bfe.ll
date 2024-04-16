@@ -6,8 +6,8 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 4)
-  %3 = add nsw i32 %0, -1
-  %4 = sub i32 %3, %2
+  %3 = xor i32 %2, -1
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 

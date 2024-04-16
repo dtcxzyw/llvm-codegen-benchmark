@@ -4,9 +4,8 @@ func0000000000000448:                   # @func0000000000000448
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
-	addi	a0, a0, 1
-	sltiu	a0, a0, -8
-	xori	a0, a0, 1
+	addi	a0, a0, 9
+	sltiu	a0, a0, 8
 	ret
 func0000000000000444:                   # @func0000000000000444
 	andi	a1, a1, 255

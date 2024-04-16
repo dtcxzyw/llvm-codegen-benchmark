@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 2097151
-  %3 = add nsw i64 %0, %2
-  %4 = lshr i64 %3, 8
-  %5 = trunc i64 %4 to i8
-  ret i8 %5
+  %2 = add i64 %1, %0
+  %3 = lshr i64 %2, 8
+  %4 = trunc i64 %3 to i8
+  ret i8 %4
 }
 
 ; 207 occurrences:
@@ -229,7 +228,7 @@ entry:
   %2 = and i64 %1, 4294967296
   %3 = add i64 %2, %0
   %4 = lshr i64 %3, 42
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -282,7 +281,7 @@ entry:
   %2 = and i128 %1, 18446744073709551615
   %3 = add nuw nsw i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 
@@ -292,7 +291,7 @@ entry:
 define i32 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65280
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -312,7 +311,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
@@ -326,7 +325,7 @@ entry:
   %2 = and i128 %1, 18446744073709551608
   %3 = add nuw i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 
@@ -336,7 +335,7 @@ entry:
 define i8 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 55552
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = lshr exact i32 %3, 8
   %5 = trunc i32 %4 to i8
   ret i8 %5

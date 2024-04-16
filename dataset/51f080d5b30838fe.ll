@@ -28,11 +28,10 @@
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %3, 16
-  %5 = shl i64 %1, 6
-  %6 = select i1 %0, i64 %4, i64 %5
-  %7 = sub i64 0, %6
-  ret i64 %7
+  %.neg1 = sub i64 -16, %3
+  %.neg2 = mul i64 %1, -64
+  %.neg3 = select i1 %0, i64 %.neg1, i64 %.neg2
+  ret i64 %.neg3
 }
 
 attributes #0 = { nounwind }

@@ -22,10 +22,11 @@ func0000000000000008:                   # @func0000000000000008
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
-	addi	a0, a0, -51
-	srliw	a0, a0, 6
-	sltiu	a0, a0, 33
-	xori	a0, a0, 1
+	addi	a0, a0, -2048
+	addiw	a0, a0, -115
+	lui	a1, 1048575
+	addiw	a1, a1, 1984
+	sltu	a0, a0, a1
 	ret
 func0000000000000066:                   # @func0000000000000066
 	bltu	a0, a1, .LBB3_2

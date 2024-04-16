@@ -9,7 +9,7 @@ entry:
   %1 = trunc i32 %0 to i16
   %2 = urem i16 %1, 1260
   %3 = udiv i16 %2, 10
-  %4 = trunc i16 %3 to i8
+  %4 = trunc nuw i16 %3 to i8
   ret i8 %4
 }
 

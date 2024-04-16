@@ -39,10 +39,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 3
-  %2 = lshr i32 %1, 24
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %1 = lshr i32 %0, 21
+  %2 = trunc i32 %1 to i8
+  ret i8 %2
 }
 
 ; 2 occurrences:
@@ -51,10 +50,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 20
-  %2 = lshr exact i32 %1, 16
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %.tr = trunc i32 %0 to i8
+  %1 = shl i8 %.tr, 4
+  ret i8 %1
 }
 
 ; 2 occurrences:
@@ -63,10 +61,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 3
-  %2 = lshr i32 %1, 8
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %1 = lshr i32 %0, 5
+  %2 = trunc i32 %1 to i8
+  ret i8 %2
 }
 
 ; 1 occurrences:
@@ -74,10 +71,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 11
-  %2 = lshr exact i32 %1, 8
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %.tr = trunc i32 %0 to i8
+  %1 = shl i8 %.tr, 3
+  ret i8 %1
 }
 
 attributes #0 = { nounwind }

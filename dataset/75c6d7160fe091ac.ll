@@ -24,11 +24,10 @@
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
-  %3 = icmp eq i64 %2, 1
-  %4 = inttoptr i64 %0 to ptr
-  %5 = select i1 %3, ptr %4, ptr null
-  %6 = icmp eq ptr %5, null
-  ret i1 %6
+  %3 = icmp ne i64 %2, 1
+  %4 = icmp eq i64 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

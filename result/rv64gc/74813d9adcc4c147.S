@@ -1,6 +1,6 @@
 func000000000000006f:                   # @func000000000000006f
-	slli	a0, a0, 10
 	slli	a1, a1, 14
+	slli	a0, a0, 10
 	or	a0, a0, a1
 	lui	a1, 240
 	and	a0, a0, a1
@@ -8,8 +8,8 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	slli	a0, a0, 10
 	slli	a1, a1, 14
+	slli	a0, a0, 10
 	or	a0, a0, a1
 	lui	a1, 256
 	addiw	a1, a1, -1024
@@ -18,8 +18,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	slli	a0, a0, 6
 	slli	a1, a1, 12
+	slli	a0, a0, 6
 	or	a0, a0, a1
 	lui	a1, 512
 	addiw	a1, a1, -64

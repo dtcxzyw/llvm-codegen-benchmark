@@ -11,7 +11,7 @@ entry:
   %3 = uitofp i64 %2 to float
   %4 = uitofp i64 %1 to float
   %5 = fsub float %4, %3
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

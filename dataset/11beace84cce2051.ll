@@ -6,9 +6,8 @@
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, %0
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %2 = icmp eq i64 %1, 1
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -18,9 +17,8 @@ entry:
 define i1 @func0000000000000051(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, %0
-  %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %2 = icmp eq i32 %1, 1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

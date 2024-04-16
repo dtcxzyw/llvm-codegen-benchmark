@@ -58,10 +58,9 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = ashr exact i32 %2, 1
-  %4 = and i32 %3, -8
-  %5 = icmp eq i32 %4, -128
-  ret i1 %5
+  %3 = and i32 %2, -16
+  %4 = icmp eq i32 %3, -256
+  ret i1 %4
 }
 
 ; 18 occurrences:
@@ -99,10 +98,8 @@ entry:
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = ashr i32 %2, 1
-  %4 = and i32 %3, -2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = icmp ult i32 %2, 4
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -9,11 +9,11 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = add i64 %3, 4
-  %5 = sub i64 %0, %4
-  %6 = trunc i64 %5 to i8
-  ret i8 %6
+  %.neg = sub i64 %2, %1
+  %.neg1 = add i64 %.neg, 252
+  %3 = add i64 %.neg1, %0
+  %4 = trunc i64 %3 to i8
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

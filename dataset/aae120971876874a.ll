@@ -8,7 +8,7 @@ define i1 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = and i16 %2, 32767
-  %4 = add i16 %0, %3
+  %4 = add i16 %3, %0
   %5 = icmp ult i16 %4, 17872
   ret i1 %5
 }
@@ -78,8 +78,8 @@ define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1
-  %4 = add i32 %3, %0
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -90,7 +90,7 @@ define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 536870911
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }
@@ -102,7 +102,7 @@ define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 2147483647
-  %4 = add nuw i32 %0, %3
+  %4 = add nuw i32 %3, %0
   %5 = icmp ugt i32 %4, 1073741823
   ret i1 %5
 }
@@ -133,7 +133,7 @@ define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 3
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = icmp ugt i32 %4, 198
   ret i1 %5
 }

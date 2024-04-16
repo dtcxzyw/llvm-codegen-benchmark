@@ -11,11 +11,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = call i64 @llvm.umin.i64(i64 %2, i64 8)
-  %4 = sub nsw i64 %2, %3
-  %5 = mul nsw i64 %4, %1
-  %6 = getelementptr double, ptr %0, i64 %5
-  ret ptr %6
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 8)
+  %4 = mul nsw i64 %3, %1
+  %5 = getelementptr double, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -33,11 +32,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 32)
-  %4 = sub nsw i64 %2, %3
-  %5 = mul nsw i64 %4, %1
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
-  ret ptr %6
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 32)
+  %4 = mul nsw i64 %3, %1
+  %5 = getelementptr inbounds double, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -46,12 +44,14 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 384)
-  %4 = sub i64 %2, %3
-  %5 = mul nsw i64 %4, %1
-  %6 = getelementptr double, ptr %0, i64 %5
-  ret ptr %6
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 384)
+  %4 = mul nsw i64 %3, %1
+  %5 = getelementptr double, ptr %0, i64 %4
+  ret ptr %5
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.usub.sat.i64(i64, i64) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

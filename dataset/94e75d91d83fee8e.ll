@@ -5,7 +5,7 @@
 define i32 @func000000000000005a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2, %1
-  %3 = icmp sgt i32 %1, %2
+  %3 = icmp slt i32 %2, %1
   %4 = sub nsw i32 0, %0
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -17,7 +17,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 4095, %1
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = sub i32 4096, %1
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5

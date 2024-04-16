@@ -26,10 +26,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = ashr i32 %0, %2
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %2 = icmp slt i32 %0, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:

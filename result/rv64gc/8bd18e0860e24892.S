@@ -11,7 +11,7 @@ func000000000000004a:                   # @func000000000000004a
 	srli	a1, a1, 32
 	mul	a2, a1, a2
 	srli	a2, a2, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	add	a0, a0, a2
 	ret
 func000000000000005b:                   # @func000000000000005b

@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 24
-  %3 = icmp eq i32 %2, 255
-  %4 = icmp ult i32 %0, 16777216
-  %5 = or i1 %3, %4
-  ret i1 %5
+  %2 = icmp ugt i32 %1, -16777217
+  %3 = icmp ult i32 %0, 16777216
+  %4 = or i1 %2, %3
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -17,11 +16,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i8 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 4
-  %3 = icmp eq i32 %2, 15
-  %4 = icmp ult i8 %0, 16
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %.mask = and i32 %1, -16
+  %2 = icmp eq i32 %.mask, 240
+  %3 = icmp ult i8 %0, 16
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -29,11 +28,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000098(i8 %0, i8 %1) #0 {
 entry:
-  %2 = lshr i8 %1, 4
-  %3 = icmp ne i8 %2, 4
-  %4 = icmp ult i8 %0, 5
-  %5 = or i1 %3, %4
-  ret i1 %5
+  %.mask = and i8 %1, -16
+  %2 = icmp ne i8 %.mask, 64
+  %3 = icmp ult i8 %0, 5
+  %4 = or i1 %2, %3
+  ret i1 %4
 }
 
 ; 14 occurrences:
@@ -54,11 +53,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = icmp eq i64 %2, 1
-  %4 = icmp eq i64 %0, 0
-  %5 = or i1 %3, %4
-  ret i1 %5
+  %.mask = and i64 %1, -2
+  %2 = icmp eq i64 %.mask, 2
+  %3 = icmp eq i64 %0, 0
+  %4 = or i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -66,11 +65,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 8
-  %3 = icmp eq i16 %2, 254
-  %4 = icmp ne i16 %0, 254
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %.mask = and i16 %1, -256
+  %2 = icmp eq i16 %.mask, -512
+  %3 = icmp ne i16 %0, 254
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -78,11 +77,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i16 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 8
-  %3 = icmp eq i32 %2, 168
-  %4 = icmp ugt i16 %0, -21505
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %.mask = and i32 %1, -256
+  %2 = icmp eq i32 %.mask, 43008
+  %3 = icmp ugt i16 %0, -21505
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

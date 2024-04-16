@@ -9,9 +9,9 @@ entry:
   %3 = add nsw i32 %2, 190
   %4 = sub nsw i32 %3, %1
   %5 = add nsw i32 %4, %0
-  %6 = sub nsw i32 1, %5
-  %7 = icmp ugt i32 %6, 63
-  ret i1 %7
+  %notsub = add nsw i32 %5, -2
+  %6 = icmp ult i32 %notsub, -64
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

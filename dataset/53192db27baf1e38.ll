@@ -183,7 +183,7 @@
 define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0x3FEFFFFFFFFFDCD1
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -492,7 +492,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oeq double %1, 0x7FF0000000000000
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -669,7 +669,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0xC3D0000000000000
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -772,7 +772,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp une double %1, 0x7FF0000000000000
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -893,7 +893,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 2.300000e+01
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -917,7 +917,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -959,7 +959,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %1, 3.000000e+02
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -996,7 +996,7 @@ entry:
 define i1 @func000000000000000d(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uge float %1, 0.000000e+00
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -1074,7 +1074,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp one float %1, 0x7FF0000000000000
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -1132,7 +1132,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uno float %1, 0.000000e+00
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 
@@ -1144,7 +1144,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ueq double %1, 0x7FF0000000000000
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 

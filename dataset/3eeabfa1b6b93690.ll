@@ -11,7 +11,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 3
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 4294901760)
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   ret i32 %3
 }
 

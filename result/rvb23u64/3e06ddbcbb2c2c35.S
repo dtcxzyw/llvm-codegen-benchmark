@@ -102,10 +102,11 @@ func0000000000000218:                   # @func0000000000000218
 	ret
 func0000000000000214:                   # @func0000000000000214
 	andi	a1, a1, 255
-	bset	a2, zero, a2
 	addi	a1, a1, -255
-	czero.eqz	a1, a2, a1
-	sltu	a0, a0, a1
+	snez	a1, a1
+	srl	a0, a0, a2
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000216:                   # @func0000000000000216
 	andi	a1, a1, 255

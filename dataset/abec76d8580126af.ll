@@ -176,7 +176,7 @@ entry:
   %4 = or disjoint i64 %3, 1
   %5 = shl i64 %4, %1
   %6 = zext i64 %5 to i128
-  %7 = mul nuw i128 %0, %6
+  %7 = mul nuw i128 %6, %0
   ret i128 %7
 }
 

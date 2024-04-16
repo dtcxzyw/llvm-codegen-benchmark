@@ -1847,8 +1847,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 24
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %3
+  %5 = xor i64 %3, -1
+  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 
@@ -1893,8 +1893,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 80
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = add i64 %4, %3
-  %6 = icmp ult i64 %5, %3
+  %5 = xor i64 %3, -1
+  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 

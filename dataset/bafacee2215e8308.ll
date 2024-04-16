@@ -200,7 +200,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   ret i1 %3
 }
 

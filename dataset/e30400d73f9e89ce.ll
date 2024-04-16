@@ -14,7 +14,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 16
   %5 = ashr exact i32 %4, 16
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

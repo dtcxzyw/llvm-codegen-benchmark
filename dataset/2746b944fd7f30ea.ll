@@ -5,10 +5,9 @@
 define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 256)
-  %2 = shl i32 %1, 24
-  %3 = ashr exact i32 %2, 24
-  %4 = icmp ult i32 %3, 32
-  ret i1 %4
+  %2 = and i32 %1, 224
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -28,9 +27,8 @@ define i1 @func000000000000001a(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.smin.i64(i64 %0, i64 64)
   %2 = shl i64 %1, 48
-  %3 = ashr exact i64 %2, 48
-  %4 = icmp sgt i64 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i64 %2, 0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -449,10 +449,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d2(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp uge float %2, %1
-  %4 = select i1 %3, float %1, float %2
-  %5 = fcmp olt float %4, %0
-  ret i1 %5
+  %.inv = fcmp olt float %2, %1
+  %3 = select i1 %.inv, float %2, float %1
+  %4 = fcmp olt float %3, %0
+  ret i1 %4
 }
 
 ; 16 occurrences:
@@ -613,10 +613,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000003c(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp ult double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %4, %0
-  ret i1 %5
+  %.inv = fcmp oge double %1, %2
+  %3 = select i1 %.inv, double %2, double %1
+  %4 = fcmp oge double %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -624,10 +624,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp ult double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
-  ret i1 %5
+  %.inv = fcmp oge double %1, %2
+  %3 = select i1 %.inv, double %2, double %1
+  %4 = fcmp ogt double %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -677,10 +677,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000b4(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fcmp ule float %2, %1
-  %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
-  ret i1 %5
+  %.inv = fcmp ogt float %2, %1
+  %3 = select i1 %.inv, float %2, float %1
+  %4 = fcmp ogt float %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:

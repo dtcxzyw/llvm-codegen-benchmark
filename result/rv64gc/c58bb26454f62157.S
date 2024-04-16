@@ -36,9 +36,9 @@ func0000000000000108:                   # @func0000000000000108
 func00000000000007fc:                   # @func00000000000007fc
 	add	a1, a1, a2
 	slli	a2, a1, 1
+	addw	a1, a1, a2
 	andi	a0, a0, 255
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000007f1:                   # @func00000000000007f1

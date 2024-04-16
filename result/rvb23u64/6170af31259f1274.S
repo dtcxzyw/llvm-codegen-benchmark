@@ -1,11 +1,15 @@
 func0000000000000111:                   # @func0000000000000111
 	sltu	a1, a1, a2
-	subw	a0, a0, a1
+	neg	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000211:                   # @func0000000000000211
 	sltu	a1, a2, a1
-	subw	a0, a0, a1
+	neg	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000216:                   # @func0000000000000216
@@ -15,7 +19,9 @@ func0000000000000216:                   # @func0000000000000216
 	ret
 func000000000000021c:                   # @func000000000000021c
 	sltu	a1, a2, a1
-	subw	a0, a0, a1
+	neg	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000021a:                   # @func000000000000021a
@@ -50,24 +56,30 @@ func0000000000000051:                   # @func0000000000000051
 	andi	a2, a2, 255
 	andi	a1, a1, 255
 	xor	a1, a1, a2
-	seqz	a1, a1
-	subw	a0, a0, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005c:                   # @func000000000000005c
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
-	seqz	a1, a1
-	subw	a0, a0, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
-	seqz	a1, a1
-	sub	a0, a0, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000116:                   # @func0000000000000116
@@ -116,7 +128,9 @@ func0000000000000191:                   # @func0000000000000191
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	subw	a0, a0, a1
+	neg	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000296:                   # @func0000000000000296
@@ -146,8 +160,10 @@ func0000000000000301:                   # @func0000000000000301
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
-	snez	a1, a1
-	subw	a0, a0, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000308:                   # @func0000000000000308

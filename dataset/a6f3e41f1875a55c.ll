@@ -31,7 +31,7 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = tail call double @llvm.copysign.f64(double 5.000000e-01, double %0)
-  %2 = fadd double %0, %1
+  %2 = fadd double %1, %0
   ret double %2
 }
 
@@ -48,7 +48,7 @@ declare double @llvm.copysign.f64(double, double) #1
 define float @func0000000000000001(float %0) #0 {
 entry:
   %1 = tail call noundef float @llvm.copysign.f32(float 1.000000e+00, float %0)
-  %2 = fadd float %0, %1
+  %2 = fadd float %1, %0
   ret float %2
 }
 

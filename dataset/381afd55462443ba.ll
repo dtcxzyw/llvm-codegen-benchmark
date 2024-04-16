@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %0, %1
-  %5 = icmp ult i64 %4, %3
-  ret i1 %5
+  %3 = add i64 %0, %1
+  %.highbits = lshr i64 %3, %2
+  %4 = icmp eq i64 %.highbits, 0
+  ret i1 %4
 }
 
 ; 10 occurrences:

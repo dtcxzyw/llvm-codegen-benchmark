@@ -8,8 +8,8 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = trunc i32 %0 to i8
   %4 = sub i8 %3, %2
-  %5 = add i8 %4, 2
-  %6 = shl i8 %5, 4
+  %5 = shl i8 %4, 4
+  %6 = add i8 %5, 32
   ret i8 %6
 }
 

@@ -8,7 +8,7 @@
 define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp slt i64 %1, %2
+  %3 = icmp sgt i64 %2, %1
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -21,7 +21,7 @@ entry:
 define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp sgt i64 %1, %2
+  %3 = icmp slt i64 %2, %1
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp ugt i64 %2, %1
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -61,7 +61,7 @@ entry:
 define i32 @func0000000000000074(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp ugt i64 %2, %1
   %4 = trunc nuw nsw i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -79,7 +79,7 @@ entry:
 define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = zext i8 %0 to i32
-  %3 = icmp ugt i32 %1, %2
+  %3 = icmp ult i32 %2, %1
   %4 = trunc i32 %1 to i8
   %5 = select i1 %3, i8 %4, i8 %0
   ret i8 %5
@@ -91,7 +91,7 @@ entry:
 define i32 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -132,7 +132,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp ugt i64 %2, %1
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -158,7 +158,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp slt i64 %1, %2
+  %3 = icmp sgt i64 %2, %1
   %4 = trunc i64 %1 to i32
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
@@ -172,7 +172,7 @@ entry:
 define i8 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = zext i8 %0 to i32
-  %3 = icmp ult i32 %1, %2
+  %3 = icmp ugt i32 %2, %1
   %4 = trunc nuw i32 %1 to i8
   %5 = select i1 %3, i8 %4, i8 %0
   ret i8 %5

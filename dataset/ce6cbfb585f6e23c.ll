@@ -4,10 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 15
-  %3 = trunc nuw i16 %2 to i1
-  %4 = xor i1 %3, %0
-  ret i1 %4
+  %2 = icmp slt i16 %1, 0
+  %3 = xor i1 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -18,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 7
-  %3 = trunc i16 %2 to i1
+  %2 = and i16 %1, 128
+  %3 = icmp ne i16 %2, 0
   %4 = xor i1 %3, %0
   ret i1 %4
 }

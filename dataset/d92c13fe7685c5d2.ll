@@ -11,12 +11,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i64 332, i64 336
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = and i16 %1, 1
+  %3 = icmp eq i16 %2, 0
+  %4 = select i1 %3, i64 332, i64 336
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -25,12 +24,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 16
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i64 9, i64 10
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = and i16 %1, 16
+  %3 = icmp eq i16 %2, 0
+  %4 = select i1 %3, i64 9, i64 10
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

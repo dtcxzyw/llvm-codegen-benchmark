@@ -9,7 +9,7 @@
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 52
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sdiv i32 %3, 64
   ret i32 %4
 }
@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 8
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = sdiv i32 %3, 8
   ret i32 %4
 }

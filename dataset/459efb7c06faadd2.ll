@@ -15,7 +15,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = sext i1 %2 to i32
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   ret i32 %4
 }
 
@@ -52,7 +52,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 
@@ -64,7 +64,7 @@ define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 32
   %3 = sext i1 %2 to i64
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 
@@ -75,7 +75,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3122
   %3 = sext i1 %2 to i32
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   ret i32 %4
 }
 

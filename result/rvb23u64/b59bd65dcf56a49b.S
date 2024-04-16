@@ -34,9 +34,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	bexti	a1, a1, 17
-	andi	a0, a0, 255
-	sltiu	a0, a0, 128
-	andn	a0, a1, a0
+	srli	a0, a0, 7
+	and	a0, a0, a1
 	ret
 func000000000000008c:                   # @func000000000000008c
 	andi	a1, a1, 255
@@ -47,7 +46,7 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000084:                   # @func0000000000000084
 	lui	a2, 524288
-	addiw	a2, a2, -1
+	addiw	a2, a2, -1024
 	and	a1, a1, a2
 	lui	a3, 21094
 	addiw	a4, a3, -1025
@@ -58,15 +57,18 @@ func0000000000000084:                   # @func0000000000000084
 	and	a0, a0, a1
 	ret
 func000000000000004c:                   # @func000000000000004c
-	zext.h	a1, a1
+	lui	a2, 16
+	addiw	a2, a2, -16
+	and	a1, a1, a2
 	sltiu	a1, a1, 80
 	srli	a0, a0, 4
 	and	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
-	zext.h	a1, a1
-	sltiu	a1, a1, 8
+	lui	a2, 16
+	addiw	a2, a2, -8
+	and	a1, a1, a2
 	andi	a0, a0, 1023
+	or	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a1
 	ret

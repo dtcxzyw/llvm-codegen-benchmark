@@ -41,9 +41,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds [2 x %"struct.gjkepa2_impl::GJK::sSimplex.1742108"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 48
-  ret ptr %5
+  %4 = getelementptr inbounds [2 x %"struct.gjkepa2_impl::GJK::sSimplex.1742108"], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -53,9 +52,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [2 x %struct.ata_device.1994654], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 800
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.ata_device.1994654], ptr %0, i64 0, i64 %3, i32 11
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -65,9 +63,8 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -3, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [6 x %struct.hwloc_special_level_s.2248430], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [6 x %struct.hwloc_special_level_s.2248430], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -78,9 +75,8 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 -3, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [6 x %struct.hwloc_special_level_s.2248430], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [6 x %struct.hwloc_special_level_s.2248430], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -90,9 +86,8 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -3, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds [6 x %struct.hwloc_special_level_s.2248457], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [6 x %struct.hwloc_special_level_s.2248457], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

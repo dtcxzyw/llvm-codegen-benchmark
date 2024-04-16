@@ -16,8 +16,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = tail call noundef i32 @llvm.bswap.i32(i32 %0)
-  %2 = trunc i32 %1 to i8
+  %1 = lshr i32 %0, 24
+  %2 = trunc nuw i32 %1 to i8
   %3 = and i8 %2, 63
   %4 = or disjoint i8 %3, -128
   ret i8 %4

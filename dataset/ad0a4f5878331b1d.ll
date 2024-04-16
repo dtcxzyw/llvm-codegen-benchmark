@@ -11,7 +11,7 @@ define i1 @func0000000000000014(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [14 x %"union.std::aligned_storage<1, 1>::type.1721457"], ptr %1, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [27 x %struct.ve_node.2016673], ptr %1, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

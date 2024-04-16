@@ -10,7 +10,7 @@ entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = and i32 %2, 504
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %0, %4
+  %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
 

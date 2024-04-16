@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i32 %2, 2064
   %4 = select i1 %3, i32 2, i32 0
   %5 = icmp eq i32 %1, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i32 1, i32 %4
   ret i32 %7
 }
@@ -50,7 +50,7 @@ entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 -2147483648, i64 2147483647
   %5 = icmp eq i64 %1, 2047
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   %7 = select i1 %6, i64 2147483647, i64 %4
   ret i64 %7
 }

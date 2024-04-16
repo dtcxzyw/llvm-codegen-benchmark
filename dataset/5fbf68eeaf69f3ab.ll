@@ -5,8 +5,8 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
-  %3 = sub i64 %0, %2
-  %4 = add i64 %3, -1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %3, %0
   %5 = call i64 @llvm.ctlz.i64(i64 %4, i1 true), !range !0
   %6 = sub nsw i64 61, %5
   ret i64 %6

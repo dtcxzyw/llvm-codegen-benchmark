@@ -12,8 +12,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, -2
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp eq ptr %1, %5
-  %7 = or i1 %0, %6
+  %6 = icmp eq ptr %5, %1
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

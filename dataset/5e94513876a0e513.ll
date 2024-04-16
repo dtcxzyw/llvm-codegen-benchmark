@@ -14,9 +14,8 @@ define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds [99 x %struct.nk_text_undo_record.1833260], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds [99 x %struct.nk_text_undo_record.1833260], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -36,9 +35,8 @@ define ptr @func0000000000000005(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr [0 x %struct.FormData_pg_attribute.2119262], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 68
-  ret ptr %5
+  %4 = getelementptr [0 x %struct.FormData_pg_attribute.2119262], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -48,9 +46,8 @@ define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %0, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 68
-  ret ptr %5
+  %4 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

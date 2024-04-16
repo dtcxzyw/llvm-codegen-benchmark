@@ -9,8 +9,8 @@
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, 10
+  %3 = mul nuw i32 %2, 10
+  %4 = add nuw i32 %3, 10
   ret i32 %4
 }
 
@@ -22,8 +22,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = add nsw i64 %2, 1
-  %4 = mul i64 %3, 24
+  %3 = mul i64 %2, 24
+  %4 = add i64 %3, 24
   ret i64 %4
 }
 
@@ -34,8 +34,8 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, 365
+  %3 = mul i32 %2, 365
+  %4 = add i32 %3, -365
   ret i32 %4
 }
 

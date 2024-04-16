@@ -8,7 +8,7 @@
 define float @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = bitcast i32 %5 to float
   ret float %6
@@ -21,7 +21,7 @@ define double @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 52
   %4 = or disjoint i64 %3, %1
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = bitcast i64 %5 to double
   ret double %6
 }

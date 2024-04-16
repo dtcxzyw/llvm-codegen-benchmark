@@ -11,7 +11,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = fadd double %3, 6.500000e+00
   %5 = fadd double %4, %1
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

@@ -17,7 +17,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = mul i64 %0, %6
+  %7 = mul i64 %6, %0
   ret i64 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = mul i64 %0, %6
+  %7 = mul i64 %6, %0
   ret i64 %7
 }
 
@@ -55,7 +55,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = mul nuw i64 %0, %6
+  %7 = mul nuw i64 %6, %0
   ret i64 %7
 }
 

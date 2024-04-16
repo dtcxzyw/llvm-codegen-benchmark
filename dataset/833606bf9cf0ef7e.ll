@@ -10,7 +10,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 128)
   %5 = sext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }

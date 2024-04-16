@@ -57,10 +57,10 @@ func0000000000000037:                   # @func0000000000000037
 	sll	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
+	mv	a2, a0
 	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	li	a1, 16
-	sllw	a0, a1, a0
+	li	a0, 16
+	beqz	a1, .LBB7_2
+	sllw	a0, a0, a2
+.LBB7_2:                                # %entry
 	ret

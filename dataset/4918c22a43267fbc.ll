@@ -49,9 +49,9 @@ define i32 @func00000000000000cc(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 76
   %2 = sext i1 %1 to i32
-  %3 = icmp ne i8 %0, 82
-  %4 = select i1 %3, i32 %2, i32 1
-  ret i32 %4
+  %.not = icmp eq i8 %0, 82
+  %3 = select i1 %.not, i32 1, i32 %2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

@@ -6,14 +6,13 @@ func000000000000008c:                   # @func000000000000008c
 	and	a0, a0, a1
 	ret
 func000000000000016a:                   # @func000000000000016a
-	sub	a1, a0, a1
-	slti	a1, a1, 1
+	slt	a1, a1, a0
+	xori	a1, a1, 1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000001a6:                   # @func00000000000001a6
-	sub	a1, a0, a1
-	sgtz	a1, a1
+	slt	a1, a1, a0
 	slti	a0, a0, 1
 	and	a0, a0, a1
 	ret

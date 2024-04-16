@@ -31,13 +31,13 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a5, 32767
 	slli	a5, a5, 29
 	and	a4, a4, a5
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	sltu	a5, a4, a0
+	add	a2, a2, a4
+	sltu	a4, a2, a4
 	sub	a3, a3, a1
-	add	a1, a3, a2
-	sub	a1, a1, a5
-	sub	a0, a4, a0
+	add	a3, a3, a4
+	sltu	a1, a2, a0
+	sub	a1, a3, a1
+	sub	a0, a2, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, -8

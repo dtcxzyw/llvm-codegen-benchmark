@@ -47,7 +47,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 40
   %5 = getelementptr inbounds [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.1833275"], ptr %4, i64 0, i64 %1
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 32
   %5 = getelementptr [12 x %struct.list_head.1998923], ptr %4, i64 0, i64 %1
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

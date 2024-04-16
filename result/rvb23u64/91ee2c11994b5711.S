@@ -17,8 +17,9 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000054:                   # @func0000000000000054
 	sext.w	a1, a1
-	lui	a2, 1048575
-	addiw	a2, a2, 496
+	lui	a2, 65536
+	addiw	a2, a2, -225
+	slli	a2, a2, 4
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -37,6 +38,6 @@ func000000000000003e:                   # @func000000000000003e
 func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 255
 	slli	a2, a1, 3
-	sub	a0, a0, a1
-	add	a0, a0, a2
+	sub	a1, a1, a0
+	sub	a0, a2, a1
 	ret

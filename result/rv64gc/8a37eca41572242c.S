@@ -1,7 +1,8 @@
 func0000000000000101:                   # @func0000000000000101
 	addi	a2, a2, -1
 	mul	a1, a2, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000156:                   # @func0000000000000156
@@ -38,19 +39,20 @@ func0000000000000308:                   # @func0000000000000308
 	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a2, a2, 1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	sgtz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, 1
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	mul	a1, a2, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000010a:                   # @func000000000000010a
 	addi	a2, a2, -1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -64,19 +66,20 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000106:                   # @func0000000000000106
 	addi	a2, a2, -1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	addi	a2, a2, 1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 func0000000000000151:                   # @func0000000000000151
 	addi	a2, a2, -1
 	mul	a1, a2, a1
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

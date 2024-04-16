@@ -39,9 +39,9 @@ func0000000000000068:                   # @func0000000000000068
 	li	a3, 23
 	sub	a3, a3, a2
 	slti	a1, a1, 0
+	czero.nez	a2, a3, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a3, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	addi	a0, a0, -10
 	ret
 func0000000000000098:                   # @func0000000000000098

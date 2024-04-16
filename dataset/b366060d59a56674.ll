@@ -6,10 +6,10 @@
 define i128 @func0000000000000003(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = zext i64 %3 to i128
-  %5 = add nuw nsw i128 %0, %4
-  %6 = and i128 %5, 18446744073709551615
-  ret i128 %6
+  %.tr = trunc i128 %0 to i64
+  %.narrow = add i64 %3, %.tr
+  %4 = zext i64 %.narrow to i128
+  ret i128 %4
 }
 
 ; 1 occurrences:
@@ -31,7 +31,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = and i64 %5, 9223372036854775807
   ret i64 %6
 }

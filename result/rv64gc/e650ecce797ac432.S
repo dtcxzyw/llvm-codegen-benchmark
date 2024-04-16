@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	sub	a0, a0, a1
-	addi	a0, a0, -1
+	not	a1, a1
+	add	a0, a0, a1
 	beqz	a0, .LBB0_2
 	srli	a1, a0, 1
 	or	a0, a0, a1

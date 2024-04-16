@@ -14,8 +14,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sub	a2, a2, a1
-	add	a0, a0, a2
-	addi	a0, a0, 2
+	addi	a2, a2, 2
+	neg	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000156:                   # @func0000000000000156
@@ -49,11 +50,9 @@ func0000000000000101:                   # @func0000000000000101
 	seqz	a0, a0
 	ret
 func000000000000015a:                   # @func000000000000015a
-	not	a1, a1
 	add	a0, a0, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 15
-	xori	a0, a0, 1
+	subw	a1, a1, a0
+	slti	a0, a1, -15
 	ret
 func0000000000000304:                   # @func0000000000000304
 	sub	a2, a2, a1
@@ -91,22 +90,21 @@ func0000000000000214:                   # @func0000000000000214
 	sltiu	a0, a0, 512
 	ret
 func000000000000001a:                   # @func000000000000001a
-	not	a1, a1
 	add	a0, a0, a2
-	add	a0, a0, a1
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	sub	a0, a1, a0
+	srli	a0, a0, 63
 	ret
 func0000000000000014:                   # @func0000000000000014
-	not	a1, a1
 	add	a0, a0, a2
-	add	a0, a0, a1
-	sltiu	a0, a0, 4
+	sub	a1, a1, a0
+	sltiu	a0, a1, -4
+	xori	a0, a0, 1
 	ret
 func0000000000000111:                   # @func0000000000000111
 	subw	a2, a2, a1
-	addw	a0, a0, a2
-	addi	a0, a0, 1
+	addiw	a2, a2, 1
+	negw	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000011a:                   # @func000000000000011a

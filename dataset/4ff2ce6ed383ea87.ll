@@ -21,7 +21,7 @@ entry:
   %4 = icmp eq i32 %3, 4537
   %5 = icmp ult i32 %1, 2
   %6 = or i1 %4, %5
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

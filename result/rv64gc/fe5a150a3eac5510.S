@@ -18,8 +18,8 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a2
-	bnez	a2, .LBB2_2
-	mv	a0, a1
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	srliw	a0, a0, 6
+	srliw	a0, a1, 6
 	ret

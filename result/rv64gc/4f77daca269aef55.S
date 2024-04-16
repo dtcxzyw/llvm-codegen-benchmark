@@ -6,10 +6,6 @@ func000000000000003a:                   # @func000000000000003a
 	srliw	a0, a0, 8
 	ret
 func000000000000003e:                   # @func000000000000003e
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 2
-	or	a0, a0, a1
 	lui	a1, 4096
 	add	a0, a0, a1
 	srli	a0, a0, 25

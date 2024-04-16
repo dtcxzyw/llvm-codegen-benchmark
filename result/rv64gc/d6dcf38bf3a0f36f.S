@@ -17,7 +17,7 @@ func0000000000000190:                   # @func0000000000000190
 	ret
 func0000000000000110:                   # @func0000000000000110
 	andi	a2, a1, 255
-	andi	a1, a1, 15
+	andi	a1, a1, 14
 	sltiu	a1, a1, 10
 	sltiu	a2, a2, 160
 	and	a1, a1, a2

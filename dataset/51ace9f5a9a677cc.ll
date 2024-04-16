@@ -17,7 +17,7 @@ define i64 @func00000000000000c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = call i64 @llvm.umax.i64(i64 %4, i64 1)
   ret i64 %5
 }
@@ -32,7 +32,7 @@ define i64 @func00000000000000c0(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = call i64 @llvm.umax.i64(i64 %4, i64 1)
   ret i64 %5
 }

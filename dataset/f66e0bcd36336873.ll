@@ -174,9 +174,8 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = sub nsw i64 %2, %0
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %.neg = sub nsw i64 %0, %2
+  ret i64 %.neg
 }
 
 ; 1 occurrences:
@@ -185,9 +184,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 29
-  %3 = sub nsw i32 %2, %0
-  %4 = sub i32 0, %3
-  ret i32 %4
+  %.neg = sub i32 %0, %2
+  ret i32 %.neg
 }
 
 ; 1 occurrences:
@@ -196,9 +194,9 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 19
-  %3 = sub i32 %2, %0
-  %4 = sub nsw i32 64, %3
-  ret i32 %4
+  %.neg = sub i32 %0, %2
+  %3 = add i32 %.neg, 64
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

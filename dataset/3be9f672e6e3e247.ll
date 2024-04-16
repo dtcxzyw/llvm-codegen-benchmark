@@ -7,7 +7,7 @@ define i1 @func0000000000000198(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp slt i32 %1, 1
   %7 = or i1 %5, %6
   ret i1 %7
@@ -18,8 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000108(i32 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 16777216
+  %3 = and i64 %2, 4278190080
+  %4 = icmp eq i64 %3, 0
   %5 = or i1 %4, %1
   %6 = icmp ult i32 %0, 16777216
   %7 = or i1 %6, %5
@@ -60,7 +60,7 @@ define i1 @func00000000000002a8(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 5
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp sgt i32 %1, 3
   %7 = or i1 %5, %6
   ret i1 %7
@@ -73,7 +73,7 @@ define i1 @func000000000000018c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 1
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = icmp slt i64 %0, 1
   %7 = or i1 %6, %5
   ret i1 %7

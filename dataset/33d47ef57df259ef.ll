@@ -19,10 +19,10 @@ entry:
 define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 16
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 2048
-  %6 = getelementptr i8, ptr %5, i64 %4
+  %3 = getelementptr i8, ptr %0, i64 2048
+  %4 = zext nneg i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }
 

@@ -17,8 +17,8 @@ define i1 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = zext i32 %0 to i64
-  %4 = add i64 %3, %2
-  %5 = icmp eq i64 %4, 0
+  %4 = sub i64 0, %2
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -55,8 +55,8 @@ define i1 @func000000000000000c(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = zext i32 %0 to i64
-  %4 = add i64 %3, %2
-  %5 = icmp ne i64 %4, 0
+  %4 = sub i64 0, %2
+  %5 = icmp ne i64 %3, %4
   ret i1 %5
 }
 

@@ -6,7 +6,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = and i32 %2, 3
-  %4 = add nuw i32 %0, %3
+  %4 = add nuw i32 %3, %0
   ret i32 %4
 }
 
@@ -34,7 +34,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = and i32 %2, 3
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -59,9 +59,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
-  %2 = sub i8 32, %1
+  %2 = sub i8 0, %1
   %3 = and i8 %2, 7
-  %4 = add nuw nsw i8 %0, %3
+  %4 = add nuw nsw i8 %3, %0
   ret i8 %4
 }
 
@@ -75,7 +75,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %2, 10000000
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -99,7 +99,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 24, %1
   %3 = and i64 %2, 60
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -113,7 +113,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = and i64 %2, 3
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 

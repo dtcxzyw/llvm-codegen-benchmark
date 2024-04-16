@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -16
-  %2 = trunc i32 %1 to i8
+  %1 = trunc i32 %0 to i8
+  %2 = add i8 %1, -16
   %3 = urem i8 %2, 3
   %4 = add nuw nsw i8 %3, 1
   ret i8 %4
@@ -23,8 +23,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000013(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -33435
-  %2 = trunc i32 %1 to i8
+  %1 = trunc i32 %0 to i8
+  %2 = add i8 %1, 101
   %3 = urem i8 %2, 3
   %4 = add nuw nsw i8 %3, 1
   ret i8 %4

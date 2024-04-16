@@ -42,7 +42,7 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !0
   ret i64 %4
 }
@@ -67,7 +67,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 -2, %1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = tail call i64 @llvm.cttz.i64(i64 %3, i1 true), !range !1
   ret i64 %4
 }

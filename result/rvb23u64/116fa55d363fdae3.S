@@ -25,9 +25,9 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000009:                   # @func0000000000000009
 	zext.h	a0, a0
+	sltiu	a0, a0, 1000
 	andi	a1, a1, 1
 	xori	a1, a1, 5
-	sltiu	a0, a0, 1000
 	czero.nez	a1, a1, a0
 	li	a2, 3
 	czero.eqz	a0, a2, a0

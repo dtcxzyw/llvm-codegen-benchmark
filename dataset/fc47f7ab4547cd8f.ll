@@ -6,7 +6,7 @@ define i32 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -89,7 +89,7 @@ define i32 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

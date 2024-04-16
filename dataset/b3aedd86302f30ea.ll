@@ -31,9 +31,9 @@ entry:
 define i64 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = add nsw i64 %2, -1
-  %4 = icmp eq i8 %0, -1
-  %5 = select i1 %4, i64 %2, i64 %3
+  %3 = icmp ne i8 %0, -1
+  %4 = sext i1 %3 to i64
+  %5 = add nsw i64 %2, %4
   ret i64 %5
 }
 
@@ -43,9 +43,9 @@ entry:
 define i64 @func0000000000000066(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp slt i8 %0, 0
-  %5 = select i1 %4, i64 %2, i64 %3
+  %3 = icmp sgt i8 %0, -1
+  %4 = zext i1 %3 to i64
+  %5 = add nuw nsw i64 %2, %4
   ret i64 %5
 }
 

@@ -54,11 +54,9 @@ entry:
 define ptr @func0000000000000007(i32 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 52
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr inbounds [3 x i16], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = sext i32 %0 to i64
+  %5 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %3, i32 1, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -67,11 +65,9 @@ entry:
 define ptr @func000000000000000f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.Au_Obj_t_.1772682, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr inbounds [2 x i32], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = sext i32 %0 to i64
+  %5 = getelementptr inbounds %struct.Au_Obj_t_.1772682, ptr %1, i64 %3, i32 1, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

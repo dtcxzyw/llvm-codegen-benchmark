@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	bltu	a1, a0, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
-	addiw	a0, a0, -1
+	not	a0, a0
 	ret

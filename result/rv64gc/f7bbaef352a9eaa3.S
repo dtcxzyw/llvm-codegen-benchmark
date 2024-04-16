@@ -5,7 +5,7 @@ func0000000000000041:                   # @func0000000000000041
 	addi	a0, a0, -1365
 	mulw	a1, a1, a0
 	li	a0, 28
-	beq	a2, a1, .LBB0_2
+	beq	a1, a2, .LBB0_2
 	li	a0, 32
 .LBB0_2:                                # %entry
 	ret

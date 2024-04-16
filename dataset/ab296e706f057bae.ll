@@ -8,7 +8,7 @@ entry:
   %4 = or i1 %3, %1
   %5 = xor i1 %4, true
   %6 = zext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -39,7 +39,7 @@ entry:
   %4 = or i1 %3, %1
   %5 = xor i1 %4, true
   %6 = zext i1 %5 to i64
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = or i1 %3, %1
   %5 = xor i1 %4, true
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 

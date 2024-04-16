@@ -318,7 +318,7 @@ define i1 @func0000000000000331(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = mul nuw nsw i8 %2, 10
   %4 = add i8 %1, -48
-  %5 = add nuw nsw i8 %4, %3
+  %5 = or i8 %4, %3
   %6 = icmp eq i8 %5, 0
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7

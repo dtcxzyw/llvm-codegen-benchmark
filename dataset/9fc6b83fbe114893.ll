@@ -8,7 +8,7 @@ entry:
   %4 = add nuw nsw i64 %3, 16
   %5 = and i64 %1, 2147483647
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = add nuw nsw i64 %3, 1
   %5 = and i64 %1, 18014398509481983
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = add i64 %3, -8192
   %5 = and i64 %1, -4096
   %6 = add i64 %4, %5
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

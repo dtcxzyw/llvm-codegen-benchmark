@@ -190,7 +190,7 @@
 define i1 @func0000000000000351(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 72
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 72
   %6 = add nsw i64 %4, %5
   %7 = icmp eq i64 %6, 128102389400760775
@@ -207,7 +207,7 @@ entry:
 define i1 @func0000000000000358(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 520
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 520
   %6 = add nsw i64 %4, %5
   %7 = icmp ugt i64 %6, 230584300921369395
@@ -236,7 +236,7 @@ entry:
 define i1 @func0000000000000354(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 88
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 88
   %6 = add nsw i64 %4, %5
   %7 = icmp ult i64 %6, 4294967296
@@ -252,7 +252,7 @@ entry:
 define i1 @func00000000000002d4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = sdiv exact i64 %0, 48
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 4
@@ -265,7 +265,7 @@ entry:
 define i1 @func0000000000000314(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = icmp ult i64 %6, 8
@@ -280,7 +280,7 @@ entry:
 define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sdiv exact i64 %0, 24
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 8
@@ -293,7 +293,7 @@ entry:
 define i1 @func000000000000035a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -306,7 +306,7 @@ entry:
 define i1 @func0000000000000306(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -319,7 +319,7 @@ entry:
 define i1 @func0000000000000356(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = icmp slt i64 %6, 0
@@ -331,12 +331,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000002d1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %1, %3
-  %5 = sdiv exact i64 %0, 24
-  %6 = add nsw i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = sdiv exact i64 %2, -24
+  %.neg1 = sub i64 %.neg, %1
+  %3 = sdiv exact i64 %0, 24
+  %4 = icmp eq i64 %3, %.neg1
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

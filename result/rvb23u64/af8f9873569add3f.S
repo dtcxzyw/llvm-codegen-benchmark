@@ -12,7 +12,7 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a2, a2, 1
-	xori	a2, a2, -35
+	xori	a2, a2, 221
 	add	a0, a0, a2
 	li	a2, 85
 	mul	a1, a1, a2

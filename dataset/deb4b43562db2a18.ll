@@ -48,8 +48,8 @@ define i64 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds [14 x %"union.std::aligned_storage<8, 8>::type.1637575"], ptr %1, i64 0, i64 %0
   %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %0, 255
-  %5 = lshr i64 %4, 1
+  %4 = lshr i64 %0, 1
+  %5 = and i64 %4, 127
   %6 = or i64 %5, %3
   ret i64 %6
 }

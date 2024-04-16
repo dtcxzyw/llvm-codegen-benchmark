@@ -12,9 +12,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, 4294967295
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.qht_bucket.1664925, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct.qht_bucket.1664925, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -26,9 +25,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

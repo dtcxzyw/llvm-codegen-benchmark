@@ -120,8 +120,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000084:                   # @func0000000000000084
 	sext.w	a0, a0
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	lui	a2, 524288
+	addiw	a2, a2, -1024
+	and	a1, a1, a2
 	lui	a2, 21094
 	addiw	a3, a2, -1025
 	sltu	a1, a3, a1
@@ -130,8 +131,9 @@ func0000000000000084:                   # @func0000000000000084
 	and	a0, a0, a1
 	ret
 func000000000000004c:                   # @func000000000000004c
-	slli	a1, a1, 48
-	srli	a1, a1, 48
+	lui	a2, 16
+	addiw	a2, a2, -16
+	and	a1, a1, a2
 	sltiu	a1, a1, 80
 	snez	a0, a0
 	and	a0, a0, a1
@@ -148,8 +150,8 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000048:                   # @func0000000000000048
 	andi	a0, a0, 255
-	andi	a1, a1, 3
-	sltiu	a1, a1, 2
+	andi	a1, a1, 2
+	seqz	a1, a1
 	sltiu	a0, a0, 3
 	not	a0, a0
 	and	a0, a0, a1

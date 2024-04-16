@@ -6,7 +6,7 @@ define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = call i32 @llvm.ctpop.i32(i32 %4), !range !0
   ret i32 %5
 }

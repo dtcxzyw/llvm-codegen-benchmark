@@ -22,7 +22,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -182,7 +182,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr inbounds %"struct.rocksdb::ConcurrentArena::Shard.1578609", ptr %0, i64 %5
   ret ptr %6
 }

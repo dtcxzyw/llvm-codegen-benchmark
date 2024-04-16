@@ -97,8 +97,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
-  %2 = mul nuw i128 %1, 11376068507788127593
-  %3 = xor i128 %0, %2
+  %2 = mul i128 %1, 105
+  %3 = xor i128 %2, %0
   %4 = trunc i128 %3 to i8
   %5 = and i8 %4, 127
   ret i8 %5
@@ -109,8 +109,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 2685821657736338717
-  %3 = xor i64 %0, %2
+  %2 = mul i64 %1, 7453
+  %3 = xor i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 8191
   ret i32 %5

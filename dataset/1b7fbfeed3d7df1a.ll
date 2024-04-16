@@ -9,8 +9,8 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = and i64 %3, 2147483647
-  %5 = mul nsw i64 %1, %4
-  %6 = add nuw nsw i64 %0, %5
+  %5 = mul nsw i64 %4, %1
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

@@ -22,7 +22,7 @@ entry:
   %4 = shl i32 %1, 16
   %5 = xor i32 %4, %3
   %6 = xor i32 %5, %1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = shl nuw nsw i32 %2, 11
   %5 = xor i32 %4, %3
   %6 = xor i32 %5, %1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -49,7 +49,7 @@ entry:
   %4 = shl nsw i32 %2, 18
   %5 = xor i32 %4, %3
   %6 = xor i32 %5, %1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

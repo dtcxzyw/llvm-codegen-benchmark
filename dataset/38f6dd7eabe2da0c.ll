@@ -63,7 +63,7 @@ entry:
   %3 = icmp eq i8 %2, 8
   %4 = select i1 %3, i8 2, i8 0
   %5 = icmp eq i8 %1, 2
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i8 1, i8 %4
   ret i8 %7
 }

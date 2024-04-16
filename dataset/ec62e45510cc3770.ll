@@ -17,9 +17,8 @@ define ptr @func0000000000000001(ptr %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -34,9 +33,8 @@ define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i64
-  %4 = getelementptr inbounds [2 x %"class.std::map.67.2034063"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr inbounds [2 x %"class.std::map.67.2034063"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 1, i32 0, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

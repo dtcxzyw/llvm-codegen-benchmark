@@ -17,8 +17,8 @@
 define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = or disjoint i32 %1, %3
-  %5 = icmp ult i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -66,8 +66,8 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = or disjoint i32 %1, %3
-  %5 = icmp eq i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -86,8 +86,8 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp ugt i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -97,8 +97,8 @@ entry:
 define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp ule i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
@@ -111,8 +111,8 @@ entry:
 define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp uge i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 
@@ -134,8 +134,8 @@ entry:
 define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp sgt i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -146,8 +146,8 @@ entry:
 define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp sle i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp sge i64 %4, %0
   ret i1 %5
 }
 
@@ -158,8 +158,8 @@ entry:
 define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp sge i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
 
@@ -175,8 +175,8 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp slt i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -192,8 +192,8 @@ entry:
 define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp ne i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 
@@ -215,7 +215,7 @@ define i1 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 32
   %4 = or i8 %3, %1
-  %5 = icmp eq i8 %0, %4
+  %5 = icmp eq i8 %4, %0
   ret i1 %5
 }
 

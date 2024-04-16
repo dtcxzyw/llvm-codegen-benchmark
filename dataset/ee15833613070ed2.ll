@@ -9,12 +9,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000070(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i64
-  %4 = shl nuw nsw i64 %3, 8
-  %5 = or disjoint i64 %4, %1
-  %6 = add i64 %5, %0
-  %7 = trunc i64 %6 to i8
-  ret i8 %7
+  %3 = add i64 %1, %0
+  %4 = trunc i64 %3 to i8
+  ret i8 %4
 }
 
 ; 7 occurrences:
@@ -52,12 +49,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw i64 %3, 32
-  %5 = or disjoint i64 %4, %1
-  %6 = add i64 %5, %0
-  %7 = trunc i64 %6 to i32
-  ret i32 %7
+  %3 = add i64 %1, %0
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -65,12 +59,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000074(i64 %0, i64 %1, i16 %2) #0 {
 entry:
-  %3 = zext i16 %2 to i64
-  %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %1
-  %6 = add nsw i64 %0, %5
-  %7 = trunc i64 %6 to i32
-  ret i32 %7
+  %3 = add i64 %1, %0
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -81,7 +72,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 30
   %5 = or i64 %4, %1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }

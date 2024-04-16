@@ -335,7 +335,7 @@ entry:
   %2 = lshr i64 %1, 24
   %3 = xor i64 %2, %1
   %4 = mul nsw i64 %3, 265
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   ret i64 %5
 }
 

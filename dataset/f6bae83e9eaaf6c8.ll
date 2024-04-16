@@ -13,9 +13,9 @@
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 640
-  %5 = select i1 %0, ptr %3, ptr %4
-  ret ptr %5
+  %.idx = select i1 %0, i64 0, i64 640
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -24,9 +24,10 @@ entry:
 define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 -1
-  %5 = select i1 %0, ptr %3, ptr %4
-  ret ptr %5
+  %not. = xor i1 %0, true
+  %.idx = sext i1 %not. to i64
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -35,9 +36,9 @@ entry:
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.snode.2275571, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 64
-  %5 = select i1 %0, ptr %3, ptr %4
-  ret ptr %5
+  %.idx = select i1 %0, i64 0, i64 64
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

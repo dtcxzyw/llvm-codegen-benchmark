@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i48 %1) #0 {
 entry:
-  %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i1
-  %4 = or i1 %0, %3
+  %2 = and i48 %1, 4294967296
+  %3 = icmp ne i48 %2, 0
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

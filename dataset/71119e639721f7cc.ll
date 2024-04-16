@@ -27,8 +27,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %1, 8
   %5 = sub i64 %4, %3
-  %6 = add i64 %5, -8
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 

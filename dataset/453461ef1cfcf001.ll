@@ -17,12 +17,12 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000034(i32 %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp ult double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = sitofp i32 %0 to double
-  %6 = fcmp ogt double %4, %5
-  %7 = select i1 %6, double %5, double %4
-  ret double %7
+  %.inv = fcmp oge double %1, %2
+  %3 = select i1 %.inv, double %2, double %1
+  %4 = sitofp i32 %0 to double
+  %5 = fcmp ogt double %3, %4
+  %6 = select i1 %5, double %4, double %3
+  ret double %6
 }
 
 ; 1 occurrences:

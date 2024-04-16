@@ -55,7 +55,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = and i64 %4, -4
   %6 = add i64 %5, 4
   ret i64 %6

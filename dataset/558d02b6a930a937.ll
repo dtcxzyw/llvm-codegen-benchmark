@@ -7,7 +7,7 @@ define i1 @func0000000000000048(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   %6 = tail call double @llvm.fabs.f64(double %5)
   %7 = fcmp oeq double %6, 0x7FF0000000000000
   ret i1 %7

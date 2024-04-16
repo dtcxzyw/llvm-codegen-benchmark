@@ -10,7 +10,7 @@
 define i1 @func000000000000001c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 4
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -81,7 +81,7 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 32
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -114,7 +114,7 @@ entry:
 define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ult i32 %0, 7
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -147,7 +147,7 @@ entry:
 define i1 @func0000000000000011(i16 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i16 %0, 32767
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -161,7 +161,7 @@ entry:
 define i1 @func0000000000000041(i64 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -174,7 +174,7 @@ entry:
 define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1024
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -188,7 +188,7 @@ entry:
 define i1 @func000000000000004c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 131071
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -207,7 +207,7 @@ entry:
 define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i32 %0, 1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -219,7 +219,7 @@ entry:
 define i1 @func0000000000000014(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ult i32 %0, 3
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -243,7 +243,7 @@ entry:
 define i1 @func000000000000008c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 135446092941623295
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -255,7 +255,7 @@ entry:
 define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -267,7 +267,7 @@ entry:
 define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, -1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -292,7 +292,7 @@ entry:
 define i1 @func00000000000000a6(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i32 %0, 1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

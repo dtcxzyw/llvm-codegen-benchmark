@@ -44,7 +44,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 16
   %5 = shl i64 %1, 48
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }

@@ -73,11 +73,7 @@ func000000000000005c:                   # @func000000000000005c
 	snez	a0, a0
 	ret
 func0000000000000076:                   # @func0000000000000076
-	slli	a1, a1, 48
-	srli	a1, a1, 48
 	slli	a0, a0, 16
-	slli	a1, a1, 32
-	or	a0, a0, a1
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret
@@ -148,9 +144,6 @@ func000000000000006c:                   # @func000000000000006c
 	snez	a0, a0
 	ret
 func000000000000007a:                   # @func000000000000007a
-	andi	a1, a1, 255
-	slli	a1, a1, 8
-	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1

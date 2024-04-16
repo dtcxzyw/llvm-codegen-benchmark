@@ -12,7 +12,7 @@ define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = or disjoint i64 %2, 4294967296
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 

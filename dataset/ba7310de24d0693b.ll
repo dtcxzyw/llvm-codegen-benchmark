@@ -29,7 +29,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw i64 %4, %3
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
@@ -68,7 +68,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
-  %6 = add i128 %0, %5
+  %6 = add i128 %5, %0
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }

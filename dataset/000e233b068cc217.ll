@@ -8,8 +8,8 @@ define i32 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
-  %3 = xor i32 %2, 31
-  %4 = shl nuw nsw i32 %3, 8
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = xor i32 %3, 7936
   ret i32 %4
 }
 
@@ -23,8 +23,8 @@ define i64 @func0000000000000017(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !1
-  %3 = xor i64 %2, 63
-  %4 = shl nuw nsw i64 %3, 2
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = xor i64 %3, 252
   ret i64 %4
 }
 

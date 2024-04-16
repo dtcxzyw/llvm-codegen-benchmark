@@ -1,9 +1,9 @@
 func0000000000000331:                   # @func0000000000000331
 	sext.w	a0, a0
 	sext.w	a3, a2
-	li	a2, 40
-	bnez	a3, .LBB0_2
 	li	a2, 24
+	beqz	a3, .LBB0_2
+	li	a2, 40
 .LBB0_2:                                # %entry
 	addw	a1, a1, a2
 	snez	a0, a0

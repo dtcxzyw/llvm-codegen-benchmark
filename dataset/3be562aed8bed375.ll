@@ -21,8 +21,9 @@ entry:
   %3 = add i64 %1, %2
   %4 = mul nsw i64 %0, -3600000
   %5 = add i64 %4, %3
-  %6 = sdiv i64 %5, 60000
-  %7 = mul nsw i64 %6, -60000
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 60000
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 
@@ -51,8 +52,9 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = mul nsw i64 %0, 60000000
   %5 = add nsw i64 %4, %3
-  %6 = sdiv i64 %5, -1000000
-  %7 = mul nsw i64 %6, -1000000
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 1000000
+  %7 = sub nsw i64 %.fr, %6
   ret i64 %7
 }
 
@@ -83,8 +85,9 @@ entry:
   %3 = mul nsw i64 %2, -60000000000
   %4 = add nsw i64 %0, %1
   %5 = add i64 %4, %3
-  %6 = sdiv i64 %5, 1000000000
-  %7 = mul nsw i64 %6, -1000000000
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 1000000000
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 

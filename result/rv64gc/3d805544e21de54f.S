@@ -1,8 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a1, 49
-	srli	a1, a1, 57
-	andi	a0, a0, 127
+	srli	a1, a1, 8
 	xor	a0, a0, a1
+	andi	a0, a0, 127
 	seqz	a0, a0
 	ret
 func0000000000000009:                   # @func0000000000000009
@@ -13,11 +12,9 @@ func0000000000000009:                   # @func0000000000000009
 	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a1, a1, 34
-	srli	a1, a1, 63
-	andi	a0, a0, 1
+	srli	a1, a1, 29
 	xor	a0, a0, a1
-	snez	a0, a0
+	andi	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 33

@@ -9,7 +9,7 @@ define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = icmp ugt i64 %2, 1
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 

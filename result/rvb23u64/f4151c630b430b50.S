@@ -22,7 +22,7 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 4
 	ret
 func000000000000001c:                   # @func000000000000001c
-	addiw	a1, a1, 1
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 24
+	addi	a0, a0, 25
 	ret

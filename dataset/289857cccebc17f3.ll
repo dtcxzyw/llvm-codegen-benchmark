@@ -5,7 +5,7 @@
 define double @func0000000000000001(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = sitofp i64 %2 to double
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fsub double 1.000000e+00, %1
   %6 = call noundef double @llvm.fmuladd.f64(double %0, double %5, double %4)
   ret double %6

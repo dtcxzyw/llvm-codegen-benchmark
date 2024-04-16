@@ -37,12 +37,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = add nsw i32 %2, -49152
-  %4 = add i32 %0, %3
-  %5 = lshr i32 %4, 8
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %2 = add i32 %1, 16384
+  %3 = add i32 %2, %0
+  %4 = lshr i32 %3, 8
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
 }
 
 ; 1 occurrences:

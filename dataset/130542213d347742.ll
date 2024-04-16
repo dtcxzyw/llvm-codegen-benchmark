@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000031(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 2, i16 0
-  %4 = add nuw nsw i16 %0, %3
+  %4 = add nuw nsw i16 %3, %0
   %5 = and i16 %1, 255
   %6 = icmp eq i16 %4, %5
   ret i1 %6

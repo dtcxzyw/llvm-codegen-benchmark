@@ -37,7 +37,11 @@ func0000000000000271:                   # @func0000000000000271
 	li	a3, 16
 	bltu	a2, a3, .LBB3_2
 	li	a1, 4
-.LBB3_2:                                # %entry
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB3_2:
 	sext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1

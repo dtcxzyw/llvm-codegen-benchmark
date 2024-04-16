@@ -37,8 +37,9 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000154:                   # @func0000000000000154
 	srai	a1, a1, 4
 	add	a0, a0, a1
+	andi	a0, a0, -2
 	addi	a0, a0, -2
-	sltiu	a0, a0, 2
+	seqz	a0, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
 	srai	a1, a1, 63
@@ -56,8 +57,9 @@ func0000000000000151:                   # @func0000000000000151
 func0000000000000114:                   # @func0000000000000114
 	srai	a1, a1, 3
 	add	a0, a0, a1
+	andi	a0, a0, -2
 	addi	a0, a0, -2
-	sltiu	a0, a0, 2
+	seqz	a0, a0
 	ret
 func000000000000010a:                   # @func000000000000010a
 	srai	a1, a1, 2

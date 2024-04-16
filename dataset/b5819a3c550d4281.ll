@@ -10,7 +10,7 @@ entry:
   %3 = add i8 %2, -1
   %4 = and i8 %3, -3
   %5 = icmp ne i8 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

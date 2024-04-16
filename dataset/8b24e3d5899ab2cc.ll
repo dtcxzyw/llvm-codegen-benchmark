@@ -32,7 +32,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nuw nsw i32 6, %2
   %4 = zext i8 %0 to i32
-  %5 = shl i32 %4, %3
+  %5 = shl nuw nsw i32 %4, %3
   ret i32 %5
 }
 

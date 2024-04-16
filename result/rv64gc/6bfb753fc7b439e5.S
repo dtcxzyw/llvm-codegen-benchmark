@@ -24,8 +24,6 @@ func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	andi	a2, a2, 255
-	or	a1, a1, a2
 	sext.w	a1, a1
 	slti	a1, a1, 0
 	xori	a1, a1, 1
@@ -52,9 +50,6 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	slli	a2, a2, 32
-	srli	a2, a2, 32
-	or	a1, a1, a2
 	slti	a1, a1, 0
 	or	a0, a0, a1
 	ret

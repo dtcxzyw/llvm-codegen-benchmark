@@ -13,7 +13,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to float
   %5 = fsub float %1, %4
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

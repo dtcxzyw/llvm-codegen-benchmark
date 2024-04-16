@@ -7,10 +7,12 @@ func0000000000000009:                   # @func0000000000000009
 	ld	a2, %lo(.LCPI0_0)(a2)
 	xor	a0, a0, a1
 	sub	a0, a0, a1
-	srli	a0, a0, 4
-	mulhu	a0, a0, a2
-	srli	a0, a0, 3
-	lui	a1, 1048575
-	addiw	a1, a1, 496
-	mul	a0, a0, a1
+	srli	a1, a0, 4
+	mulhu	a1, a1, a2
+	srli	a1, a1, 3
+	lui	a2, 1
+	addiw	a2, a2, -496
+	mul	a1, a1, a2
+	sub	a0, a0, a0
+	sub	a0, a0, a1
 	ret

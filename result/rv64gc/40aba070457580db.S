@@ -1,11 +1,10 @@
 func00000000000000d6:                   # @func00000000000000d6
 	andi	a2, a2, 255
 	add	a0, a0, a2
-	andi	a1, a1, 255
-	subw	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	slti	a0, a0, 0
+	andi	a1, a1, 255
+	slt	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 32
@@ -39,12 +38,11 @@ func00000000000002d4:                   # @func00000000000002d4
 	ret
 func00000000000002d6:                   # @func00000000000002d6
 	lui	a3, 16
-	addi	a3, a3, -1
+	addiw	a3, a3, -1
 	and	a2, a2, a3
-	add	a0, a0, a2
+	addw	a0, a0, a2
 	and	a1, a1, a3
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	slt	a0, a0, a1
 	ret
 func000000000000035a:                   # @func000000000000035a
 	sext.w	a2, a2

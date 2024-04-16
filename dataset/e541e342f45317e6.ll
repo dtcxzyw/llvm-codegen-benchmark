@@ -6,10 +6,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.ctpop.i64(i64 %0), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp eq i64 %0, 0
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -21,7 +19,7 @@ declare i64 @llvm.ctpop.i64(i64) #1
 define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = tail call noundef i64 @llvm.ctpop.i64(i64 %0), !range !0
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ugt i32 %2, 4
   ret i1 %3
 }

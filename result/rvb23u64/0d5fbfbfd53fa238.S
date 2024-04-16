@@ -65,15 +65,16 @@ func000000000000014c:                   # @func000000000000014c
 	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	addi	a1, a1, -2
+	xori	a1, a1, 2
 	andi	a0, a0, 16
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000018c:                   # @func000000000000018c
-	addiw	a1, a1, -4
-	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	andi	a1, a1, -4
+	sext.w	a1, a1
+	addi	a1, a1, -4
+	snez	a1, a1
 	srli	a0, a0, 16
 	and	a0, a0, a1
 	ret

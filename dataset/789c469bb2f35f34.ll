@@ -6,7 +6,7 @@
 define i1 @func0000000000000001(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i64 %1, 1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne i64 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -50,7 +50,7 @@ entry:
 define i1 @func000000000000000a(i8 %0, i1 %1, i48 %2) #0 {
 entry:
   %3 = trunc i48 %2 to i1
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp sgt i8 %0, -1
   %6 = and i1 %5, %4
   ret i1 %6

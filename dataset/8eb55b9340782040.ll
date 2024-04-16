@@ -9,7 +9,7 @@ entry:
   %3 = lshr i64 %2, 11
   %4 = icmp ult i64 %1, 131072
   %5 = select i1 %4, i64 %3, i64 0
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = lshr exact i32 %2, 3
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 1
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = lshr i32 %2, 2
   %4 = icmp eq i8 %1, 3
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = lshr i64 %2, 2
   %4 = icmp ult i64 %1, 1536
   %5 = select i1 %4, i64 %3, i64 384
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = lshr exact i32 %2, 1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 undef
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

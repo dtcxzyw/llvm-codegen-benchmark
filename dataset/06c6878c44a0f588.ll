@@ -13,7 +13,7 @@
 define i96 @func0000000000000003(i96 %0, i96 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i96 4, i96 0
-  %4 = or disjoint i96 %1, %3
+  %4 = or disjoint i96 %3, %1
   %5 = or disjoint i96 %4, %0
   %6 = and i96 %5, -18446744073709551604
   ret i96 %6
@@ -29,7 +29,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 128
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or i32 %4, %0
   %6 = and i32 %5, -3
   ret i32 %6
@@ -40,11 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 0, i32 2
-  %4 = or i32 %1, %3
-  %5 = or i32 %4, %0
-  %6 = and i32 %5, 8
-  ret i32 %6
+  %3 = or i32 %1, %0
+  %4 = and i32 %3, 8
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

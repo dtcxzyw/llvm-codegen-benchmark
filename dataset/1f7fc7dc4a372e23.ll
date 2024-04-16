@@ -6,7 +6,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

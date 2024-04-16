@@ -22,7 +22,7 @@ entry:
   %3 = and i64 %2, 8191
   %4 = sub nuw nsw i64 8192, %3
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %1)
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

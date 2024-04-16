@@ -436,10 +436,10 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
-  %4 = add nuw nsw i64 %3, 1
-  %5 = lshr i64 %1, 1
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  %7 = getelementptr inbounds ptr, ptr %6, i64 %4
+  %4 = lshr i64 %1, 1
+  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  %6 = getelementptr ptr, ptr %5, i64 %3
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -449,10 +449,10 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
-  %4 = add nsw i64 %3, -262144
-  %5 = lshr i64 %1, 1
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  %7 = getelementptr inbounds ptr, ptr %6, i64 %4
+  %4 = lshr i64 %1, 1
+  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  %6 = getelementptr ptr, ptr %5, i64 %3
+  %7 = getelementptr i8, ptr %6, i64 -2097152
   ret ptr %7
 }
 

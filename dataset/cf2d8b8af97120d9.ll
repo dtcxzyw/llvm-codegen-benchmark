@@ -18,8 +18,8 @@ entry:
   %3 = or disjoint i64 %2, 15
   %4 = sdiv i64 %3, 16
   %5 = getelementptr %union.yyalloc.1553162, ptr %0, i64 %4
-  %6 = add nsw i64 %1, 1
-  %7 = getelementptr %struct.rb_code_location_struct.1553153, ptr %5, i64 %6
+  %6 = getelementptr %struct.rb_code_location_struct.1553153, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
 
@@ -33,8 +33,8 @@ entry:
   %3 = or disjoint i64 %2, 15
   %4 = sdiv i64 %3, 16
   %5 = getelementptr inbounds %union.yyalloc.1554246, ptr %0, i64 %4
-  %6 = add nsw i64 %1, 1
-  %7 = getelementptr inbounds %struct.rb_code_location_struct.1554242, ptr %5, i64 %6
+  %6 = getelementptr %struct.rb_code_location_struct.1554242, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
 

@@ -1,7 +1,8 @@
 func0000000000000014:                   # @func0000000000000014
-	bgez	a2, .LBB0_2
-	mv	a0, a3
+	bltz	a2, .LBB0_2
+	mv	a3, a0
 .LBB0_2:                                # %entry
+	mv	a0, a3
 	li	a1, 0
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -29,10 +30,10 @@ func0000000000000018:                   # @func0000000000000018
 	srli	a1, a1, 48
 	lui	a3, 5
 	addiw	a3, a3, -1719
-	bne	a1, a3, .LBB4_2
-	mv	a0, a2
+	beq	a1, a3, .LBB4_2
+	mv	a2, a0
 .LBB4_2:                                # %entry
-	slli	a0, a0, 32
+	slli	a0, a2, 32
 	srli	a0, a0, 32
 	ret
 func000000000000000d:                   # @func000000000000000d

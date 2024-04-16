@@ -58,13 +58,13 @@ func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_3
 	fle.d	a0, fa1, fa0
-	bnez	a0, .LBB4_4
+	beqz	a0, .LBB4_4
 .LBB4_2:                                # %entry
-	fmv.d	fa0, fa1
 	ret
 .LBB4_3:
 	fneg.d	fa1, fa1
 	fle.d	a0, fa1, fa0
-	beqz	a0, .LBB4_2
+	bnez	a0, .LBB4_2
 .LBB4_4:                                # %entry
+	fmv.d	fa0, fa1
 	ret

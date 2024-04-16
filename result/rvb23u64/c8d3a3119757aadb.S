@@ -57,18 +57,17 @@ func000000000000054c:                   # @func000000000000054c
 	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	andi	a0, a0, 255
-	andi	a1, a1, 255
 	xori	a1, a1, 16
 	xori	a0, a0, 122
 	or	a0, a0, a1
+	andi	a0, a0, 255
 	seqz	a0, a0
 	ret
 func00000000000001c8:                   # @func00000000000001c8
 	sext.w	a0, a0
 	andi	a1, a1, 255
-	addi	a1, a1, -4
-	sltiu	a1, a1, 18
+	addi	a1, a1, -22
+	sltiu	a1, a1, -18
 	snez	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret

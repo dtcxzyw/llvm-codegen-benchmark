@@ -1,11 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 255
 	xori	a0, a0, 1
+	andi	a0, a0, 255
 	addi	a0, a0, -1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a0, a0, 255
 	xori	a0, a0, 128
+	andi	a0, a0, 255
 	addi	a0, a0, 511
 	ret
 .LCPI2_0:

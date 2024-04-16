@@ -15,7 +15,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = xor i32 %1, %3
+  %4 = xor i32 %3, %1
   %5 = mul i32 %4, 380141568
   %6 = lshr i32 %0, 17
   %7 = or disjoint i32 %6, %5

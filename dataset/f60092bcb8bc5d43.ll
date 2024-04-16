@@ -7,7 +7,7 @@ entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fmul float %4, 0x3FD2D12080000000
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

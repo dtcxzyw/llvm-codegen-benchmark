@@ -5,8 +5,8 @@
 define i64 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 24, i32 %0
-  %4 = or disjoint i32 %3, 1
+  %3 = or disjoint i32 %0, 1
+  %4 = select i1 %2, i32 25, i32 %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -18,8 +18,8 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 8190, i32 %0
-  %4 = or disjoint i32 %3, 1
+  %3 = or disjoint i32 %0, 1
+  %4 = select i1 %2, i32 8191, i32 %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

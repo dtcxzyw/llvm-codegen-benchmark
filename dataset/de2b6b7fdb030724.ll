@@ -12,7 +12,7 @@ entry:
   %3 = lshr i128 %2, 64
   %4 = xor i128 %3, %2
   %5 = trunc i128 %4 to i64
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = lshr i64 %2, 33
   %4 = xor i64 %3, %2
   %5 = trunc i64 %4 to i32
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

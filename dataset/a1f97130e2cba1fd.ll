@@ -832,9 +832,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func000000000000000b(float %0) #0 {
 entry:
-  %1 = fcmp ule float %0, 0xC3ABC16D60000000
-  %2 = select i1 %1, float 0xC3ABC16D60000000, float %0
-  ret float %2
+  %.inv = fcmp ogt float %0, 0xC3ABC16D60000000
+  %1 = select i1 %.inv, float %0, float 0xC3ABC16D60000000
+  ret float %1
 }
 
 ; 17 occurrences:

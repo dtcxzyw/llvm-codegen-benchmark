@@ -8,7 +8,7 @@ entry:
   %3 = sub i16 %1, %2
   %4 = sitofp i16 %3 to float
   %5 = fmul float %4, 1.000000e+01
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

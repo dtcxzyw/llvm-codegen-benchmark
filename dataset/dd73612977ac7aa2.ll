@@ -9,8 +9,9 @@ entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, -270
   %5 = sub i64 %4, %0
-  %6 = udiv i64 %5, 255
-  %7 = mul i64 %6, -255
+  %.fr = freeze i64 %5
+  %6 = urem i64 %.fr, 255
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 

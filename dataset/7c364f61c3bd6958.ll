@@ -8,8 +8,8 @@
 define i16 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = select i1 %0, i64 %3, i64 65535
-  %5 = trunc i64 %4 to i16
+  %4 = trunc i64 %3 to i16
+  %5 = select i1 %0, i16 %4, i16 -1
   ret i16 %5
 }
 
@@ -20,8 +20,8 @@ entry:
 define i64 @func0000000000000002(i1 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = sub i128 %1, %2
-  %4 = select i1 %0, i128 %3, i128 0
-  %5 = trunc nuw i128 %4 to i64
+  %4 = trunc nuw i128 %3 to i64
+  %5 = select i1 %0, i64 %4, i64 0
   ret i64 %5
 }
 

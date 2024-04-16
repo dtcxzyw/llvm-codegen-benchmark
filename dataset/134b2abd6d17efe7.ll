@@ -16,7 +16,7 @@ entry:
   %2 = shl nuw nsw i32 4096, %1
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -28,11 +28,11 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000011(i128 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, -1
-  %4 = zext nneg i64 %3 to i128
-  %5 = and i128 %4, %0
-  ret i128 %5
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = zext nneg i64 %2 to i128
+  %4 = and i128 %3, %0
+  ret i128 %4
 }
 
 ; 4 occurrences:
@@ -63,11 +63,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, -1
-  %4 = zext i32 %3 to i64
-  %5 = and i64 %0, %4
-  ret i64 %5
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = zext nneg i32 %2 to i64
+  %4 = and i64 %3, %0
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

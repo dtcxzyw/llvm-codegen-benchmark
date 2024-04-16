@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 288
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = mul i32 %1, 288
   %3 = and i32 %2, 65504
   ret i32 %3
 }

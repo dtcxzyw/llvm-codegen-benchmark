@@ -7,8 +7,8 @@ define i1 @func0000000000000158(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 24
   %2 = shl nsw i64 %1, 1
-  %3 = add nsw i64 %2, 8
-  %4 = icmp ugt i64 %3, 2305843009213693951
+  %3 = add nsw i64 %2, -2305843009213693944
+  %4 = icmp ult i64 %3, -2305843009213693952
   ret i1 %4
 }
 
@@ -47,8 +47,8 @@ define i1 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 4
   %2 = shl nsw i32 %1, 2
-  %3 = add i32 %2, 10
-  %4 = icmp ugt i32 %3, 10
+  %3 = add i32 %2, -1
+  %4 = icmp ult i32 %3, -11
   ret i1 %4
 }
 

@@ -65,11 +65,11 @@ entry:
 define i64 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i64 -5, i64 0
-  %4 = icmp eq i32 %1, -95
-  %5 = select i1 %4, i64 -95, i64 %3
-  ret i64 %5
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i64 0, i64 -5
+  %3 = icmp eq i32 %1, -95
+  %4 = select i1 %3, i64 -95, i64 %2
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

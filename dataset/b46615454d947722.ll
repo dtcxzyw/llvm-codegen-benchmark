@@ -24,9 +24,9 @@ entry:
   %3 = lshr i8 %2, 4
   %4 = select i1 %1, i8 %2, i8 %3
   %5 = and i8 %4, 3
-  %6 = icmp ne i8 %5, 0
-  %7 = select i1 %6, i8 %4, i8 %0
-  ret i8 %7
+  %.not = icmp eq i8 %5, 0
+  %6 = select i1 %.not, i8 %0, i8 %4
+  ret i8 %6
 }
 
 ; 1 occurrences:
@@ -37,9 +37,9 @@ entry:
   %3 = lshr exact i32 %2, 16
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = and i32 %4, 255
-  %6 = icmp ne i32 %5, 0
-  %7 = select i1 %6, i32 %4, i32 %0
-  ret i32 %7
+  %.not = icmp eq i32 %5, 0
+  %6 = select i1 %.not, i32 %0, i32 %4
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

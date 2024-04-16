@@ -57,7 +57,7 @@
 define i1 @func000000000000004c(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -26
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i64 %0, 95
   %6 = and i1 %5, %4
   ret i1 %6
@@ -182,7 +182,7 @@ entry:
 define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq i64 %1, 20
   %6 = and i1 %4, %5
   ret i1 %6
@@ -343,7 +343,7 @@ entry:
 define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne i64 %1, 27
   %6 = and i1 %4, %5
   ret i1 %6
@@ -467,7 +467,7 @@ entry:
 define i1 @func00000000000000a6(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp slt i64 %1, 4611686018427387905
   %6 = and i1 %4, %5
   ret i1 %6
@@ -504,7 +504,7 @@ entry:
 define i1 @func00000000000000ca(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp sgt i32 %1, -1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -540,7 +540,7 @@ entry:
 define i1 @func00000000000000c8(i8 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ugt i8 %0, 96
   %6 = and i1 %5, %4
   ret i1 %6
@@ -684,7 +684,7 @@ entry:
 define i1 @func00000000000000c4(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ult i64 %0, 72057594037927936
   %6 = and i1 %5, %4
   ret i1 %6
@@ -718,7 +718,7 @@ entry:
 define i1 @func00000000000000ac(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i8 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -793,7 +793,7 @@ entry:
 define i1 @func000000000000001a(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -823,7 +823,7 @@ entry:
 define i1 @func00000000000000aa(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -898,7 +898,7 @@ entry:
 define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 17
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ult i32 %1, 64
   %6 = and i1 %4, %5
   ret i1 %6
@@ -926,7 +926,7 @@ entry:
 define i1 @func00000000000000c6(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i32 %0, 21
   %6 = and i1 %5, %4
   ret i1 %6
@@ -942,7 +942,7 @@ entry:
 define i1 @func0000000000000061(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 129
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i8 %0, 36
   %6 = and i1 %5, %4
   ret i1 %6
@@ -965,7 +965,7 @@ entry:
 define i1 @func0000000000000081(i8 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i8 %0, 102
   %6 = and i1 %5, %4
   ret i1 %6
@@ -997,7 +997,7 @@ entry:
 define i1 @func0000000000000046(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 60
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp slt i64 %1, 61
   %6 = and i1 %4, %5
   ret i1 %6
@@ -1013,7 +1013,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1054
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -1069,7 +1069,7 @@ entry:
 define i1 @func000000000000004a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 5
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, 3
   %6 = and i1 %5, %4
   ret i1 %6
@@ -1096,7 +1096,7 @@ entry:
 define i1 @func00000000000000a8(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ugt i32 %0, 2
   %6 = and i1 %5, %4
   ret i1 %6

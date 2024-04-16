@@ -39,9 +39,8 @@ define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr inbounds %struct.ItemStack.1653085, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.ItemStack.1653085, ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

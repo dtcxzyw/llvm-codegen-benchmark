@@ -7,15 +7,15 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000101:                   # @func0000000000000101
 	add	a1, a1, a2
-	sub	a1, a1, a0
-	addi	a1, a1, -1
-	seqz	a0, a1
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000144:                   # @func0000000000000144
 	add	a1, a1, a2
-	not	a0, a0
-	addw	a0, a0, a1
-	sltiu	a0, a0, 7
+	subw	a0, a0, a1
+	sltiu	a0, a0, -7
+	xori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
@@ -25,9 +25,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000151:                   # @func0000000000000151
 	add	a1, a1, a2
-	sub	a1, a1, a0
-	addi	a1, a1, -1
-	seqz	a0, a1
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000154:                   # @func0000000000000154
 	add	a1, a1, a2
@@ -37,15 +37,15 @@ func0000000000000154:                   # @func0000000000000154
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
-	sub	a1, a1, a0
-	addi	a1, a1, -1
-	seqz	a0, a1
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
-	sub	a1, a1, a0
-	addi	a1, a1, -1
-	seqz	a0, a1
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
@@ -56,13 +56,12 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	sub	a1, a1, a0
-	addi	a1, a1, -4
-	sltiu	a0, a1, 8
-	xori	a0, a0, 1
+	addi	a1, a1, -12
+	sltiu	a0, a1, -8
 	ret
 func0000000000000141:                   # @func0000000000000141
 	add	a1, a1, a2
-	sub	a1, a1, a0
-	addi	a1, a1, -1
-	seqz	a0, a1
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

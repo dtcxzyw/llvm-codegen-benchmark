@@ -1,7 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	srliw	a2, a2, 3
-	srliw	a1, a1, 3
-	bne	a1, a2, .LBB0_2
+	xor	a1, a1, a2
+	sext.w	a1, a1
+	li	a2, 8
+	bgeu	a1, a2, .LBB0_2
 	li	a0, 512
 .LBB0_2:                                # %entry
 	ret

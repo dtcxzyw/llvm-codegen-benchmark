@@ -12,7 +12,7 @@
 define ptr @func000000000000001e(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 5872
   %7 = getelementptr i8, ptr %6, i64 %5
@@ -26,7 +26,7 @@ entry:
 define ptr @func0000000000000017(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 256
   %7 = getelementptr inbounds ptr, ptr %6, i64 %5
@@ -43,7 +43,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 40
   %7 = getelementptr inbounds %"struct.hermes::vm::PropertyCacheEntry.1850530", ptr %6, i64 %5
@@ -58,7 +58,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 -1
   %7 = getelementptr i8, ptr %6, i64 %5
@@ -71,7 +71,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 2
   %7 = getelementptr inbounds i16, ptr %6, i64 %5

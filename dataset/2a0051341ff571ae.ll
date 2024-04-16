@@ -23,8 +23,8 @@ entry:
 define i8 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 7
-  %2 = and i32 %1, -8
-  %3 = sub nsw i32 %2, %0
+  %2 = and i32 %1, 248
+  %3 = sub i32 %2, %0
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

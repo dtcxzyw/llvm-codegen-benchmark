@@ -9,7 +9,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = add i64 %4, %0
   %6 = call i64 @llvm.umin.i64(i64 %5, i64 4294967295)
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

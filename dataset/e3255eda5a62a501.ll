@@ -11,7 +11,7 @@ entry:
   %4 = tail call double @llvm.fabs.f64(double %1)
   %5 = fcmp olt double %3, %4
   %6 = select i1 %5, double %4, double %3
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 

@@ -9,7 +9,7 @@ entry:
   %2 = add i16 %1, -16
   %3 = sext i16 %2 to i32
   %4 = mul nsw i32 %3, 38134234
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = add i32 %1, -719163
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 86400
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

@@ -40,8 +40,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 255
 	li	a3, 98
-	bne	a2, a3, .LBB5_2
-	mv	a0, a1
+	beq	a2, a3, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
-	andi	a0, a0, 128
+	andi	a0, a1, 128
 	ret

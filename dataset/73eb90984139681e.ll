@@ -7,9 +7,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = uitofp i64 %0 to double
-  %2 = fcmp ogt double %1, 1.000000e+00
-  ret i1 %2
+  %1 = icmp ugt i64 %0, 1
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

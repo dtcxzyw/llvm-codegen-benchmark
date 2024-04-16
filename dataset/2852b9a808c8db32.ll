@@ -134,7 +134,7 @@ entry:
   %4 = icmp eq i8 %3, 0
   %5 = icmp eq ptr %1, null
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -148,7 +148,7 @@ entry:
   %4 = icmp ne i16 %3, 0
   %5 = icmp eq ptr %1, null
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

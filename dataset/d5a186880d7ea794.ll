@@ -7,7 +7,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp ult i32 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %2 = and i8 %1, -64
   %3 = icmp ne i8 %2, -128
   %4 = sext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 68
   %4 = sext i1 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -78,7 +78,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -101,7 +101,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = icmp ne i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

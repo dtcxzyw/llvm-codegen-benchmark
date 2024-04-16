@@ -22,7 +22,7 @@ entry:
   %3 = fptoui float %2 to i8
   %4 = zext i8 %3 to i32
   %5 = shl nuw nsw i32 %1, 8
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

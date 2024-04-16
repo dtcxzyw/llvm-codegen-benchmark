@@ -16,10 +16,9 @@
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 7
-  %2 = sub nsw i32 0, %1
-  %3 = and i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %2 = and i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

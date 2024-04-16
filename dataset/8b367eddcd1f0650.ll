@@ -37,7 +37,7 @@ entry:
 define i1 @func0000000000000298(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ole double %0, 0.000000e+00
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = fcmp oge double %0, 1.000000e+00
   %5 = or i1 %4, %3
   ret i1 %5
@@ -56,7 +56,7 @@ entry:
 define i1 @func0000000000000102(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ogt double %0, 1.000000e+02
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = fcmp uno double %0, 0.000000e+00
   %5 = or i1 %4, %3
   ret i1 %5
@@ -123,7 +123,7 @@ entry:
 define i1 @func0000000000000104(double %0, i1 %1) #0 {
 entry:
   %2 = fcmp ogt double %0, 0x40554345B1A57F00
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = fcmp olt double %0, 0xC0554345B1A57F00
   %5 = or i1 %4, %3
   ret i1 %5

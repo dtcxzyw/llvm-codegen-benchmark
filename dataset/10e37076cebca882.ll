@@ -12,7 +12,7 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ugt i64 %4, 32
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000028(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
-  %4 = add nuw i8 %1, %3
+  %4 = add nuw i8 %3, %1
   %5 = icmp ugt i8 %4, 59
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6

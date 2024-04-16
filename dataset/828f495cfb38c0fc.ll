@@ -12,10 +12,10 @@
 ; Function Attrs: nounwind
 define i16 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 983055
-  %4 = and i32 %1, 983055
+  %3 = and i32 %2, 15
+  %4 = and i32 %1, 15
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add i32 %5, %0
   %7 = trunc i32 %6 to i16
   ret i16 %7
 }

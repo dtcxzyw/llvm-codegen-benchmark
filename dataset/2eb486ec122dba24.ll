@@ -10,9 +10,8 @@ entry:
   %2 = sext i1 %1 to i32
   %3 = add nsw i32 %2, %0
   %4 = icmp slt i32 %3, 2
-  %5 = select i1 %4, i32 3, i32 2
-  %6 = or disjoint i32 %5, 8
-  ret i32 %6
+  %5 = select i1 %4, i32 11, i32 10
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

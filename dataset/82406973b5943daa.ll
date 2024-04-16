@@ -212,9 +212,9 @@ define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 1
   %2 = or i64 %1, %0
-  %3 = lshr i64 %2, 2
-  %4 = or i64 %3, %2
-  %5 = lshr i64 %4, 4
+  %3 = lshr i64 %2, 6
+  %4 = lshr i64 %2, 4
+  %5 = or i64 %3, %4
   ret i64 %5
 }
 
@@ -225,9 +225,9 @@ define i32 @func0000000000000015(i32 %0) #0 {
 entry:
   %1 = lshr exact i32 %0, 1
   %2 = or i32 %1, %0
-  %3 = lshr exact i32 %2, 2
-  %4 = or i32 %3, %2
-  %5 = lshr exact i32 %4, 4
+  %3 = lshr i32 %2, 6
+  %4 = lshr i32 %2, 4
+  %5 = or i32 %3, %4
   ret i32 %5
 }
 
@@ -239,9 +239,9 @@ define i32 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = lshr exact i32 %0, 2
   %2 = or i32 %1, %0
-  %3 = lshr exact i32 %2, 4
-  %4 = or i32 %3, %2
-  %5 = lshr i32 %4, 8
+  %3 = lshr i32 %2, 12
+  %4 = lshr i32 %2, 8
+  %5 = or i32 %3, %4
   ret i32 %5
 }
 
@@ -255,9 +255,9 @@ define i32 @func0000000000000010(i32 %0) #0 {
 entry:
   %1 = lshr exact i32 %0, 4
   %2 = or i32 %1, %0
-  %3 = lshr i32 %2, 8
-  %4 = or i32 %3, %2
-  %5 = lshr i32 %4, 16
+  %3 = lshr i32 %2, 24
+  %4 = lshr i32 %2, 16
+  %5 = or i32 %3, %4
   ret i32 %5
 }
 

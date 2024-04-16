@@ -18,9 +18,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds [4 x %"struct.rawspeed::VC5Decompressor::Channel.1766465"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %5 = getelementptr inbounds [4 x %"class.rawspeed::VC5Decompressor::Wavelet.1766467"], ptr %4, i64 0, i64 %3, i32 5
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -30,9 +29,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr [11 x %struct.free_area.1998947], ptr %0, i64 0, i64 %1
-  %5 = getelementptr [4 x %struct.list_head.1998923], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [4 x %struct.list_head.1998923], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -72,10 +72,8 @@ entry:
 define i1 @func0000000000000051(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 15
-  %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = icmp eq i8 %1, 1
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -85,8 +83,8 @@ define i1 @func0000000000000058(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 60
   %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, -20
-  %4 = icmp ugt i32 %3, 17
+  %3 = add nsw i32 %2, -38
+  %4 = icmp ult i32 %3, -18
   ret i1 %4
 }
 
@@ -96,10 +94,8 @@ entry:
 define i1 @func000000000000005c(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 60
-  %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, -20
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %2 = icmp ne i16 %1, 20
+  ret i1 %2
 }
 
 ; 1 occurrences:

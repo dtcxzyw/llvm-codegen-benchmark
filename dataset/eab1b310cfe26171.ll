@@ -17,7 +17,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 19)
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -33,7 +33,7 @@ define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 256
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 16384)
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
 
@@ -52,7 +52,7 @@ define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -4
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 2)
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -66,9 +66,9 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = call i32 @llvm.umin.i32(i32 %2, i32 11)
-  %4 = icmp ugt i32 %0, %3
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 10)
+  %3 = add nuw nsw i32 %2, 1
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -79,10 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = call i32 @llvm.umin.i32(i32 %2, i32 11)
-  %4 = icmp ult i32 %0, %3
-  ret i1 %4
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 10)
+  %3 = icmp uge i32 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -93,7 +92,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 10
   %3 = call i32 @llvm.umin.i32(i32 %2, i32 100)
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -104,7 +103,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = call i32 @llvm.umin.i32(i32 %2, i32 2048)
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -113,9 +112,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 2
-  %3 = call noundef i32 @llvm.umin.i32(i32 %2, i32 200)
-  %4 = icmp ult i32 %0, %3
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 198)
+  %3 = add nuw nsw i32 %2, 2
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 

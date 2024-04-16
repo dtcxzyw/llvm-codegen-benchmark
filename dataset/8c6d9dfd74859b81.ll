@@ -30,9 +30,8 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = zext i32 %0 to i64
-  %5 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %3, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %3, i64 %4, i32 0, i32 0, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -46,9 +45,8 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %3, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %3, i64 %4, i32 0, i32 0, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -60,9 +58,8 @@ entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr %struct.scatterlist.1993498, ptr %3, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.scatterlist.1993498, ptr %3, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

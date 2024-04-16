@@ -28,8 +28,8 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a3, a3, -79
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 76
-	sub	a0, a0, a1
-	add	a0, a0, a2
+	sub	a1, a1, a0
+	sub	a0, a2, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1

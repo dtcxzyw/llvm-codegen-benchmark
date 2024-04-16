@@ -86,11 +86,11 @@ entry:
 define i32 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 61440
-  %2 = icmp ne i32 %1, 57344
-  %3 = select i1 %2, i32 3, i32 1
-  %4 = icmp eq i32 %1, 16384
-  %5 = select i1 %4, i32 2, i32 %3
-  ret i32 %5
+  %.not = icmp eq i32 %1, 57344
+  %2 = select i1 %.not, i32 1, i32 3
+  %3 = icmp eq i32 %1, 16384
+  %4 = select i1 %3, i32 2, i32 %2
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -101,9 +101,9 @@ entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 2
   %3 = select i1 %2, i64 6, i64 10
-  %4 = icmp ult i64 %1, 2
-  %5 = select i1 %4, i64 1, i64 %3
-  ret i64 %5
+  %.inv = icmp ugt i64 %1, 1
+  %4 = select i1 %.inv, i64 %3, i64 1
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

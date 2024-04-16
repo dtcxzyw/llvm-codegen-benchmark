@@ -56,11 +56,11 @@ entry:
 ; Function Attrs: nounwind
 define double @func000000000000000b(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = fcmp ule double %1, %0
-  %4 = select i1 %3, double %0, double %1
-  %5 = sitofp i32 %2 to double
-  %6 = fmul double %4, %5
-  ret double %6
+  %.inv = fcmp ogt double %1, %0
+  %3 = select i1 %.inv, double %1, double %0
+  %4 = sitofp i32 %2 to double
+  %5 = fmul double %3, %4
+  ret double %5
 }
 
 attributes #0 = { nounwind }

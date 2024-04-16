@@ -7,10 +7,9 @@
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fsub float %0, %1
-  %3 = fmul float %2, 5.000000e-01
-  %4 = fneg float %3
-  %5 = fpext float %4 to double
-  ret double %5
+  %3 = fmul float %2, -5.000000e-01
+  %4 = fpext float %3 to double
+  ret double %4
 }
 
 attributes #0 = { nounwind }

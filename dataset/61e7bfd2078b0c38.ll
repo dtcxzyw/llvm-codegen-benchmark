@@ -14,9 +14,8 @@ entry:
   %2 = add i32 %1, 15
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [16 x %struct.HIDPointerEvent.1661328], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr [16 x %struct.HIDPointerEvent.1661328], ptr %0, i64 0, i64 %4, i32 3
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -28,9 +27,8 @@ entry:
   %2 = add i32 %1, 1
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds [16 x %struct.err_error_st.1830360], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds [16 x %struct.err_error_st.1830360], ptr %0, i64 0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -38,12 +36,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw i32 %1, 1
-  %3 = and i32 %2, 1
+  %2 = and i32 %1, 1
+  %3 = xor i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds [2 x %class.u_map.335.2104009], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr inbounds [2 x %class.u_map.335.2104009], ptr %0, i64 0, i64 %4, i32 0, i32 0, i32 0, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

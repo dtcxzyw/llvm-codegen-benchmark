@@ -135,9 +135,8 @@ entry:
   %2 = and i16 %1, 48
   %3 = icmp eq i16 %2, 48
   %4 = select i1 %3, i64 57, i64 47
-  %5 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:

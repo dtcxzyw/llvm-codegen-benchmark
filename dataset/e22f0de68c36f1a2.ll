@@ -15,7 +15,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -36,7 +36,7 @@ define i16 @func0000000000000001(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = lshr i16 %2, 12
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
 

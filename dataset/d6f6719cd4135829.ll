@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = zext i32 %1 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = and i8 %2, 32
   %4 = icmp eq i8 %3, 0
   %5 = zext i32 %1 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
@@ -33,7 +33,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = zext i32 %1 to i64
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }
@@ -46,7 +46,7 @@ entry:
   %3 = and i32 %2, -2146691008
   %4 = icmp eq i32 %3, 0
   %5 = zext i32 %1 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }

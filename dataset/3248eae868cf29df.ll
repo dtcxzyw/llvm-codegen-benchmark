@@ -507,8 +507,8 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = shl nsw i64 %1, 6
   %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
-  %7 = icmp ne i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp ne i64 %5, %6
   ret i1 %7
 }
 
@@ -689,7 +689,7 @@ entry:
   %3 = shl i64 %2, 4
   %4 = ashr exact i64 %1, 3
   %5 = add i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp sgt i64 %6, 1
   ret i1 %7
 }

@@ -25,11 +25,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000051(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = select i1 %1, i64 %2, i64 %3
-  %5 = add nsw i64 %4, 1
-  %6 = icmp eq i64 %0, 0
-  %7 = select i1 %6, i64 %4, i64 %5
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i64
+  %4 = add nsw i64 %3, %2
+  %5 = icmp ne i64 %0, 0
+  %6 = zext i1 %5 to i64
+  %7 = add nsw i64 %4, %6
   ret i64 %7
 }
 

@@ -9,9 +9,8 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = lshr i32 %0, 12
-  %4 = sub nsw i32 %3, %2
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp ugt i32 %3, %2
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -26,9 +25,8 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
   %3 = lshr i32 %0, 12
-  %4 = sub nsw i32 %3, %2
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %4 = icmp ult i32 %3, %2
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -67,11 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = lshr exact i64 %0, 1
-  %4 = sub nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = icmp eq i64 %0, %1
+  ret i1 %2
 }
 
 ; 3 occurrences:

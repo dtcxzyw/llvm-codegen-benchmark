@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 -2266404186210603134, %1
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = lshr i64 %3, 8
   ret i64 %4
 }

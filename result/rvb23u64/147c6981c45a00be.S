@@ -7,12 +7,11 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
+	sext.w	a1, a1
 	andi	a2, a2, 63
-	srliw	a1, a1, 11
-	li	a3, 64
-	czero.eqz	a3, a3, a1
-	czero.nez	a1, a2, a1
-	or	a1, a1, a3
+	li	a3, 2047
+	sltu	a1, a3, a1
 	andi	a0, a0, 63
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
+	or	a0, a0, a1
 	ret

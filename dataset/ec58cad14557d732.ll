@@ -11,7 +11,7 @@ entry:
   %4 = icmp ne i8 %3, 0
   %5 = icmp eq i16 %1, 0
   %6 = and i1 %5, %4
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 

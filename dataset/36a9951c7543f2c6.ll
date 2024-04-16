@@ -30,7 +30,7 @@ entry:
 define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

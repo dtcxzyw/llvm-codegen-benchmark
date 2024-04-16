@@ -42,7 +42,7 @@ func000000000000001a:                   # @func000000000000001a
 	snez	a3, a3
 	neg	a4, a4
 	sub	a4, a4, a3
-	xor	a3, a2, a4
+	xor	a3, a4, a2
 	slt	a2, a4, a2
 	czero.eqz	a2, a2, a3
 	sltu	a1, a5, a1

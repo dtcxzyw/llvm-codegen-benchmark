@@ -186,10 +186,10 @@ define i64 @func000000000000003a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = sub nuw nsw i32 32, %3
-  %5 = sub nsw i32 %0, %4
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %.neg = or disjoint i32 %3, -32
+  %4 = add i32 %.neg, %0
+  %5 = zext i32 %4 to i64
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

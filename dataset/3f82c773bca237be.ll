@@ -179,9 +179,8 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 1
-  %4 = sub i64 %3, %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

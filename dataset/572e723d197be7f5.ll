@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -44032
-  %2 = trunc i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 21504
   %3 = urem i16 %2, 28
   %4 = icmp eq i16 %3, 0
   ret i1 %4
@@ -26,8 +26,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 1
   %3 = urem i32 %2, 10
   %4 = icmp eq i32 %3, 0
   ret i1 %4
@@ -39,8 +39,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -44032
-  %2 = trunc nuw i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 21504
   %3 = urem i16 %2, 28
   %4 = icmp eq i16 %3, 0
   ret i1 %4
@@ -51,8 +51,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -44032
-  %2 = trunc nuw i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 21504
   %3 = urem i16 %2, 28
   %4 = icmp eq i16 %3, 0
   ret i1 %4

@@ -10,7 +10,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = call i32 @llvm.smin.i32(i32 %4, i32 %1)
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = call i32 @llvm.smin.i32(i32 %1, i32 %4)
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

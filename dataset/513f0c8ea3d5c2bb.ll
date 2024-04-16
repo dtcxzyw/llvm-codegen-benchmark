@@ -19,7 +19,7 @@
 define i8 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = add nsw i32 %2, -16
+  %3 = add i32 %2, 65520
   %4 = lshr i32 %3, 8
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -57,7 +57,7 @@ entry:
   %2 = or disjoint i128 %0, %1
   %3 = add i128 %2, 128
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 
@@ -70,7 +70,7 @@ entry:
   %2 = or disjoint i32 %0, %1
   %3 = add nuw i32 %2, 1
   %4 = lshr i32 %3, 16
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 

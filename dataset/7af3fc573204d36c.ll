@@ -23,7 +23,7 @@ entry:
 define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -60000000
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = sdiv i64 %3, 1000000
   %5 = shl nsw i64 %4, 1
   ret i64 %5
@@ -37,7 +37,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -60000000000
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = sdiv i64 %3, 1000000000
   %5 = shl nsw i64 %4, 1
   ret i64 %5

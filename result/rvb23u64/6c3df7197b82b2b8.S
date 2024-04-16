@@ -9,18 +9,20 @@ func000000000000002c:                   # @func000000000000002c
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a2, a2
 	addi	a2, a2, -16
-	czero.eqz	a1, a1, a2
-	li	a3, 4
+	li	a3, 64
+	subw	a3, a3, a1
+	czero.eqz	a1, a3, a2
+	li	a3, 60
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
-	li	a2, 64
-	subw	a2, a2, a1
-	sll	a0, a0, a2
+	sll	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a2
+	li	a3, 30
+	subw	a1, a3, a1
 	czero.eqz	a1, a1, a2
-	li	a2, 30
-	subw	a2, a2, a1
-	sll	a0, a0, a2
+	czero.nez	a2, a3, a2
+	or	a1, a1, a2
+	sll	a0, a0, a1
 	ret

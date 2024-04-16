@@ -8,8 +8,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %0, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %2, %4
-  %6 = add i64 %1, %5
-  %7 = getelementptr inbounds i8, ptr %3, i64 %6
+  %6 = getelementptr i8, ptr %3, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -21,8 +21,8 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %2, %4
-  %6 = add i64 %5, %1
-  %7 = getelementptr i8, ptr %3, i64 %6
+  %6 = getelementptr i8, ptr %3, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 

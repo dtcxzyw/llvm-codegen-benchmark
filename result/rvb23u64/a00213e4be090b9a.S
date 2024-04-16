@@ -8,9 +8,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func0000000000000088:                   # @func0000000000000088
 	addi	a1, a1, 1
-	zext.w	a1, a1
-	zext.w	a0, a0
-	mul	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000006c:                   # @func000000000000006c
 	addi	a1, a1, -1
@@ -18,9 +16,7 @@ func000000000000006c:                   # @func000000000000006c
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, -1
-	zext.h	a1, a1
-	zext.h	a0, a0
-	mulw	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, 1

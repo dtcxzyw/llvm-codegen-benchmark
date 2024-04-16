@@ -8,8 +8,8 @@
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i8 5, i8 %0
-  %5 = add i8 %4, -97
+  %4 = add i8 %0, -97
+  %5 = select i1 %3, i8 -92, i8 %4
   ret i8 %5
 }
 
@@ -25,8 +25,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i64 1073741824, i64 %0
-  %5 = add nsw i64 %4, -1073741824
+  %4 = add nsw i64 %0, -1073741824
+  %5 = select i1 %3, i64 0, i64 %4
   ret i64 %5
 }
 
@@ -38,8 +38,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i32 0, i32 %0
-  %5 = add nuw nsw i32 %4, 1
+  %4 = add nuw nsw i32 %0, 1
+  %5 = select i1 %3, i32 1, i32 %4
   ret i32 %5
 }
 

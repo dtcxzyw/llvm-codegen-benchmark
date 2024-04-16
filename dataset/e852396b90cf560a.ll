@@ -8,8 +8,8 @@ define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
   %3 = icmp slt i64 %0, 0
-  %4 = select i1 %3, i64 0, i64 %2
-  %5 = add nsw i64 %4, 1
+  %4 = add nsw i64 %2, 1
+  %5 = select i1 %3, i64 1, i64 %4
   ret i64 %5
 }
 

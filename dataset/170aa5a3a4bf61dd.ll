@@ -22,8 +22,8 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.smax.i64(i64 %0, i64 -128)
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 64
+  %2 = and i64 %1, 4294967232
+  %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 

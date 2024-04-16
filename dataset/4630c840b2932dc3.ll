@@ -7,7 +7,7 @@ entry:
   %3 = and i64 %2, -2
   %4 = sub i64 %3, %1
   %5 = icmp ugt i64 %4, 1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = sub i32 %3, %1
   %5 = icmp sgt i32 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = and i64 %2, -4
   %4 = sub i64 %3, %1
   %5 = icmp ult i64 %4, 65537
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -109,7 +109,7 @@
 define i1 @func0000000000000031(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 31
   %6 = icmp eq i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %0

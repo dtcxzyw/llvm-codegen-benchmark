@@ -27,9 +27,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.h	a0, a0
-	andi	a1, a1, 255
-	slti	a0, a0, 0
-	czero.eqz	a0, a1, a0
+	srli	a0, a0, 15
+	and	a0, a0, a1
+	andi	a0, a0, 255
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255

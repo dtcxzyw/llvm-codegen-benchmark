@@ -46,7 +46,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 63)
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -117,7 +117,7 @@ entry:
 define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 16)
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -133,7 +133,7 @@ entry:
 define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umin.i32(i32 %2, i32 1024)
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }

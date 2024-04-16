@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 63
+  %1 = and i8 %0, 63
+  %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -6
   %4 = sitofp i32 %3 to double
   ret double %4

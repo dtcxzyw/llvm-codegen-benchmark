@@ -14,9 +14,8 @@ entry:
   %3 = shl i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct._ir_insn.1714455, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct._ir_insn.1714455, ptr %0, i64 %5, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 8 occurrences:
@@ -132,7 +131,7 @@ entry:
 define ptr @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -1

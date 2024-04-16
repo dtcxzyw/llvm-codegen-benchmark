@@ -10,8 +10,8 @@
 define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -128
-  %4 = mul nsw i32 %3, -100
+  %3 = mul nsw i32 %2, -100
+  %4 = add nsw i32 %3, 12800
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -24,9 +24,9 @@ entry:
 define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -161
-  %4 = mul nuw nsw i32 %3, 94
-  %5 = add nuw nsw i32 %0, %4
+  %3 = mul nuw nsw i32 %2, 94
+  %4 = add nsw i32 %3, -15134
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 

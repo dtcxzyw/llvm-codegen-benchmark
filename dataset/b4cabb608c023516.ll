@@ -1599,9 +1599,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds [128 x %struct.NSVGattrib.1553121], ptr %0, i64 0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 292
-  ret ptr %3
+  %2 = getelementptr inbounds [128 x %struct.NSVGattrib.1553121], ptr %0, i64 0, i64 %1, i32 17
+  ret ptr %2
 }
 
 ; 621 occurrences:
@@ -2229,9 +2228,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr [13 x %struct.OnigCaseFoldCodeItem.1553315], ptr %0, i64 0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 4
-  ret ptr %3
+  %2 = getelementptr [13 x %struct.OnigCaseFoldCodeItem.1553315], ptr %0, i64 0, i64 %1, i32 1
+  ret ptr %2
 }
 
 ; 82 occurrences:
@@ -2320,9 +2318,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr [5 x %struct.rb_size_pool_struct.1553510], ptr %0, i64 0, i64 %1
-  %3 = getelementptr i8, ptr %2, i64 104
-  ret ptr %3
+  %2 = getelementptr [5 x %struct.rb_size_pool_struct.1553510], ptr %0, i64 0, i64 %1, i32 10, i32 2
+  ret ptr %2
 }
 
 ; 84 occurrences:
@@ -2413,9 +2410,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds [3 x %struct.tx_pkt_history_st.1588255], ptr %0, i64 0, i64 %1
-  %3 = getelementptr i8, ptr %2, i64 24
-  ret ptr %3
+  %2 = getelementptr [3 x %struct.tx_pkt_history_st.1588255], ptr %0, i64 0, i64 %1, i32 1
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

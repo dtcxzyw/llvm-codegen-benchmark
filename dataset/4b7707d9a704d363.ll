@@ -22,10 +22,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 32
-  %3 = lshr exact i16 %2, 5
-  %4 = and i16 %0, 1
-  %5 = icmp eq i16 %4, %3
+  %2 = lshr i16 %1, 5
+  %3 = xor i16 %2, %0
+  %4 = and i16 %3, 1
+  %5 = icmp eq i16 %4, 0
   ret i1 %5
 }
 

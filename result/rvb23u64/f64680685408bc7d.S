@@ -1,6 +1,6 @@
 func000000000000000d:                   # @func000000000000000d
-	xori	a2, a2, 1
 	slli	a2, a2, 3
+	xori	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

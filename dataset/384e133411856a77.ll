@@ -63,8 +63,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 1
-  %2 = shl i64 %1, 32
+  %1 = shl i64 %0, 32
+  %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
   ret i64 %3
 }
@@ -82,8 +82,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 4
-  %2 = shl i64 %1, 32
+  %1 = shl i64 %0, 32
+  %2 = add i64 %1, 17179869184
   %3 = ashr exact i64 %2, 32
   ret i64 %3
 }
@@ -117,8 +117,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = shl i64 %1, 32
+  %1 = shl i64 %0, 32
+  %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
   ret i64 %3
 }
@@ -130,8 +130,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = add nuw i64 %0, 1
-  %2 = shl i64 %1, 32
+  %1 = shl i64 %0, 32
+  %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
   ret i64 %3
 }
@@ -141,8 +141,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = shl i32 %1, 3
+  %1 = shl i32 %0, 3
+  %2 = add i32 %1, 8
   %3 = ashr i32 %2, 31
   ret i32 %3
 }
@@ -152,8 +152,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 17592186040353
-  %2 = shl i64 %1, 20
+  %1 = shl i64 %0, 20
+  %2 = add i64 %1, -4260364288
   %3 = ashr i64 %2, 32
   ret i64 %3
 }

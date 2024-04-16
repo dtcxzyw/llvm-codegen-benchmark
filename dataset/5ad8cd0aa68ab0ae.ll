@@ -75,7 +75,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 10
-  %2 = mul i64 %1, -4078282918271054303
+  %2 = mul i64 %1, 322708246049
   %3 = lshr i64 %2, 8
   %4 = trunc i64 %3 to i32
   ret i32 %4
@@ -92,7 +92,7 @@ entry:
   %1 = udiv i64 %0, 10000000000000000
   %2 = mul nuw nsw i64 %1, 10486
   %3 = lshr i64 %2, 20
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

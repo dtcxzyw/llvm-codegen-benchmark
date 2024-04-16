@@ -7,8 +7,9 @@ define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
-  %4 = select i1 %0, i32 1, i32 %3
-  %5 = icmp eq i32 %4, 0
+  %4 = icmp eq i32 %3, 0
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -21,8 +22,9 @@ define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 10
   %3 = trunc i32 %2 to i8
-  %4 = select i1 %0, i8 4, i8 %3
-  %5 = icmp ugt i8 %4, 16
+  %4 = icmp ugt i8 %3, 16
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -33,11 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 8
-  %3 = trunc i64 %2 to i8
-  %4 = select i1 %0, i8 1, i8 %3
-  %5 = icmp ult i8 %4, 4
-  ret i1 %5
+  %2 = and i64 %1, 64512
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 9 occurrences:
@@ -55,8 +56,9 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = select i1 %0, i32 128, i32 %3
-  %5 = icmp eq i32 %4, 0
+  %4 = icmp eq i32 %3, 0
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -66,9 +68,10 @@ entry:
 define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 52
-  %3 = trunc i64 %2 to i32
-  %4 = select i1 %0, i32 1, i32 %3
-  %5 = icmp ugt i32 %4, 1076
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ugt i32 %3, 1076
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -81,11 +84,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 8
-  %3 = trunc nuw i16 %2 to i8
-  %4 = select i1 %0, i8 5, i8 %3
-  %5 = icmp eq i8 %4, 5
-  ret i1 %5
+  %.mask = and i16 %1, -256
+  %2 = icmp eq i16 %.mask, 1280
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

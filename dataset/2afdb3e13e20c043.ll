@@ -85,12 +85,12 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, -1
-  %5 = mul i64 %1, 10
-  %6 = and i64 %5, %4
-  %7 = icmp ugt i64 %6, %0
-  ret i1 %7
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = mul i64 %1, 10
+  %5 = and i64 %4, %3
+  %6 = icmp ugt i64 %5, %0
+  ret i1 %6
 }
 
 ; 7 occurrences:
@@ -104,12 +104,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, -1
-  %5 = mul i64 %1, 10
-  %6 = and i64 %5, %4
-  %7 = icmp ult i64 %6, %0
-  ret i1 %7
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = mul i64 %1, 10
+  %5 = and i64 %4, %3
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
 }
 
 ; 83 occurrences:
@@ -199,12 +199,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000209(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, -1
-  %5 = mul i64 %1, 10
-  %6 = and i64 %5, %4
-  %7 = icmp uge i64 %6, %0
-  ret i1 %7
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = mul i64 %1, 10
+  %5 = and i64 %4, %3
+  %6 = icmp uge i64 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

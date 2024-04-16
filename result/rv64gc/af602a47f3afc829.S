@@ -5,7 +5,6 @@ func000000000000002a:                   # @func000000000000002a
 	li	a2, 17
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	negw	a0, a0
-	srliw	a0, a0, 4
+	subw	a2, a2, a0
+	srliw	a0, a2, 4
 	ret

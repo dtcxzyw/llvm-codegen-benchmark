@@ -36,10 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 63
-  %3 = trunc i128 %0 to i64
-  %4 = sub i64 %3, %2
-  ret i64 %4
+  %.neg = lshr i64 %1, 63
+  %2 = trunc i128 %0 to i64
+  %3 = add i64 %.neg, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

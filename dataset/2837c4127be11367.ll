@@ -36,10 +36,8 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  %6 = getelementptr inbounds [32 x i8], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %1, i64 0, i64 %3, i32 9, i64 %0
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -51,10 +49,8 @@ entry:
 define ptr @func0000000000000007(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr inbounds [0 x %"struct.asmjit::_abi_1_10::x86::InstDB::RWInfo.1561408"], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 2
-  %6 = getelementptr inbounds [6 x i8], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds [0 x %"struct.asmjit::_abi_1_10::x86::InstDB::RWInfo.1561408"], ptr %1, i64 0, i64 %3, i32 2, i64 %0
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -65,10 +61,8 @@ entry:
 define ptr @func0000000000000002(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr [32 x %struct.AHCIPortQState.1666766], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = getelementptr [32 x i64], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr [32 x %struct.AHCIPortQState.1666766], ptr %1, i64 0, i64 %3, i32 2, i64 %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

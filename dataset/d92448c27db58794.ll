@@ -23,7 +23,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = sub i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7
 }

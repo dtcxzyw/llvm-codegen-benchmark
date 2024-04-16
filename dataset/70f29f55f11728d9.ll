@@ -34,7 +34,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 48
   %3 = add nsw i64 %2, 32768
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 

@@ -34,7 +34,7 @@ define i64 @func0000000000000012(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = fcmp olt double %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -56,7 +56,7 @@ define i64 @func000000000000001a(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = fcmp ole float %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7
@@ -69,7 +69,7 @@ define i64 @func0000000000000014(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = fcmp ogt float %0, %1
   %7 = select i1 %6, i64 %5, i64 %3
   ret i64 %7

@@ -8,7 +8,7 @@ entry:
   %3 = zext nneg i32 %2 to i128
   %4 = shl i128 %0, %3
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 

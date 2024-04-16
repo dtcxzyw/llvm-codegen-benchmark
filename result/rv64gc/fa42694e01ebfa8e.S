@@ -2,7 +2,7 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 262144
 	fmv.w.x	fa5, a0
 	fsub.s	fa5, fa5, fa1
-	fmul.s	fa5, fa0, fa5
+	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa0, zero
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB0_2
@@ -29,7 +29,7 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fsub.d	fa5, fa5, fa1
-	fmul.d	fa5, fa0, fa5
+	fmul.d	fa5, fa5, fa0
 	fmv.d.x	fa0, zero
 	fle.d	a0, fa5, fa0
 	bnez	a0, .LBB2_2

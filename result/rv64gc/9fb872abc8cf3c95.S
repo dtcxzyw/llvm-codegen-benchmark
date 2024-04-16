@@ -7,13 +7,14 @@ func0000000000000005:                   # @func0000000000000005
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	addi	a1, a1, 1
-	li	a2, -1
-	srli	a2, a2, 32
+	li	a2, 1
+	slli	a2, a2, 32
+	addi	a2, a2, -2
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:                                # %entry
-	or	a0, a0, a1
+	add	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a1, 1

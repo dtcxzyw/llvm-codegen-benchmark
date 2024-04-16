@@ -1,7 +1,10 @@
 func0000000000000017:                   # @func0000000000000017
 	bnez	a2, .LBB0_2
 	lui	a1, 1024
-.LBB0_2:                                # %entry
+	slli	a0, a0, 1
+	or	a0, a0, a1
+	ret
+.LBB0_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	slli	a0, a0, 1

@@ -186,7 +186,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ne i32 %3, 0
   %5 = zext nneg i8 %1 to i32
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }

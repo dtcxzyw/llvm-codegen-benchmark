@@ -9,10 +9,10 @@
 define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = or disjoint i64 %0, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, 200
-  ret i1 %5
+  %.masked = and i64 %0, 4294967288
+  %3 = or i64 %2, %.masked
+  %4 = icmp ult i64 %3, 200
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -23,11 +23,9 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
-  %2 = call noundef i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = or disjoint i64 %2, %0
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, 256
-  ret i1 %5
+  %.masked = and i64 %0, 4294967040
+  %2 = icmp eq i64 %.masked, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

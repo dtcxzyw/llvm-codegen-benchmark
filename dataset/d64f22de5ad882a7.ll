@@ -12,7 +12,7 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = add nuw nsw i128 %2, 117397592171526113268558934119004209487
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw nsw i128 %4 to i64
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -26,8 +26,8 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = add nsw i128 %2, -1
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = add i64 %0, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

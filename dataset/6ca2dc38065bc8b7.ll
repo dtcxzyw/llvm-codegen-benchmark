@@ -5,7 +5,7 @@
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 0x3F67BD1180000000, %1
-  %3 = fcmp olt float %0, %2
+  %3 = fcmp ogt float %2, %0
   %4 = select i1 %3, float %0, float %2
   ret float %4
 }
@@ -31,7 +31,7 @@ entry:
 define double @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp ole double %0, %2
+  %3 = fcmp oge double %2, %0
   %4 = select i1 %3, double %0, double %2
   ret double %4
 }
@@ -51,7 +51,7 @@ entry:
 define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fcmp ogt double %0, %2
+  %3 = fcmp olt double %2, %0
   %4 = select i1 %3, double %0, double %2
   ret double %4
 }

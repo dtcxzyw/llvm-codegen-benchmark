@@ -10,9 +10,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 9223372036854775807
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw nsw i32 %2, 3
+  %1 = trunc i64 %0 to i32
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -8
   %4 = lshr i32 50332161, %3
   %5 = trunc i32 %4 to i8
   ret i8 %5

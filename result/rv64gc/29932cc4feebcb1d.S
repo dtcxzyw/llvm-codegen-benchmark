@@ -11,10 +11,7 @@ func0000000000000188:                   # @func0000000000000188
 	xori	a0, a0, 1
 	ret
 func0000000000000181:                   # @func0000000000000181
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	addi	a0, a0, 63
-	srli	a0, a0, 6
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000001b8:                   # @func00000000000001b8
@@ -27,10 +24,7 @@ func00000000000001b8:                   # @func00000000000001b8
 	sltu	a0, a1, a0
 	ret
 func00000000000001b1:                   # @func00000000000001b1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	addi	a0, a0, 63
-	srli	a0, a0, 6
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func000000000000018a:                   # @func000000000000018a

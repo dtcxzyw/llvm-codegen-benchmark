@@ -8,7 +8,7 @@ entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp ugt i64 %5, 32768
   ret i1 %6
 }
@@ -22,7 +22,7 @@ entry:
   %2 = add nsw i64 %1, 39
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 4294967295
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp slt i64 %5, 289
   ret i1 %6
 }

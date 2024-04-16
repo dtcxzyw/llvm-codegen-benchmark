@@ -7,9 +7,8 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = udiv i64 %2, 3
-  %4 = sub i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -31,9 +30,8 @@ define i1 @func000000000000009a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -55
   %3 = udiv i64 %2, 30
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

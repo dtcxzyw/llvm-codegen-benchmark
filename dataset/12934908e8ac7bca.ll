@@ -29,9 +29,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
   %5 = trunc i64 %4 to i32
-  %6 = sub nsw i32 %0, %5
-  %7 = icmp sgt i32 %6, -1
-  ret i1 %7
+  %6 = icmp sle i32 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -55,9 +54,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
   %5 = trunc i64 %4 to i32
-  %6 = sub nsw i32 %0, %5
-  %7 = icmp slt i32 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i32 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, i32 3, i32 4
   %5 = icmp sgt i32 %1, 2
   %6 = select i1 %5, i32 %1, i32 %4
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 

@@ -15,10 +15,7 @@ func0000000000000045:                   # @func0000000000000045
 	addiw	a0, a0, 6
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addi	a0, a0, -1
 	slli	a0, a0, 12
-	lui	a1, 1
-	add	a0, a0, a1
 	ret
 func00000000000000cf:                   # @func00000000000000cf
 	slli	a0, a0, 1

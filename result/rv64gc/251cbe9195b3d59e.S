@@ -147,12 +147,12 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a2, a2, 48
-	bnez	a2, .LBB18_2
-	mv	a0, a1
+	beqz	a2, .LBB18_2
+	mv	a1, a0
 .LBB18_2:                               # %entry
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	seqz	a0, a0
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	seqz	a0, a1
 	ret
 func000000000000008c:                   # @func000000000000008c
 	andi	a2, a2, 255
@@ -189,44 +189,44 @@ func00000000000000a6:                   # @func00000000000000a6
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	slli	a2, a2, 56
-	bgez	a2, .LBB23_2
-	mv	a0, a1
+	bltz	a2, .LBB23_2
+	mv	a1, a0
 .LBB23_2:                               # %entry
-	sext.w	a0, a0
-	sltiu	a0, a0, 25
+	sext.w	a1, a1
+	sltiu	a0, a1, 25
 	xori	a0, a0, 1
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a2, a2
-	bnez	a2, .LBB24_2
-	mv	a0, a1
+	beqz	a2, .LBB24_2
+	mv	a1, a0
 .LBB24_2:                               # %entry
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	sext.w	a1, a1
+	slti	a0, a1, 0
 	xori	a0, a0, 1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a2, a2
-	bnez	a2, .LBB25_2
-	mv	a0, a1
+	beqz	a2, .LBB25_2
+	mv	a1, a0
 .LBB25_2:                               # %entry
-	sext.w	a0, a0
-	sltiu	a0, a0, 7
+	sext.w	a1, a1
+	sltiu	a0, a1, 7
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	bnez	a2, .LBB26_2
-	mv	a0, a1
+	beqz	a2, .LBB26_2
+	mv	a1, a0
 .LBB26_2:                               # %entry
-	sext.w	a0, a0
-	sltiu	a0, a0, -1
+	sext.w	a1, a1
+	sltiu	a0, a1, -1
 	ret
 func00000000000000c6:                   # @func00000000000000c6
-	bnez	a2, .LBB27_2
-	mv	a0, a1
+	beqz	a2, .LBB27_2
+	mv	a1, a0
 .LBB27_2:                               # %entry
-	sext.w	a0, a0
-	lui	a1, 64
-	slt	a0, a0, a1
+	sext.w	a1, a1
+	lui	a0, 64
+	slt	a0, a1, a0
 	ret
 func0000000000000084:                   # @func0000000000000084
 	li	a3, -1

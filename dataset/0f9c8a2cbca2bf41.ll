@@ -181,8 +181,8 @@
 define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, -1
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
   %5 = icmp eq i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

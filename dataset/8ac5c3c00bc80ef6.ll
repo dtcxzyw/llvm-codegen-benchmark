@@ -172,9 +172,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 48
   %5 = zext i8 %0 to i64
-  %6 = getelementptr %struct.bio_vec.2016814, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.bio_vec.2016814, ptr %4, i64 %5, i32 2
+  ret ptr %6
 }
 
 ; 3 occurrences:

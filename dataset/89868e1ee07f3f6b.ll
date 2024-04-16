@@ -40,7 +40,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = and i16 %3, 3968
   %5 = and i16 %1, 4096
-  %6 = or disjoint i16 %0, %5
+  %6 = or disjoint i16 %5, %0
   %7 = or disjoint i16 %6, %4
   ret i16 %7
 }
@@ -53,11 +53,10 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = and i64 %3, 72057594037927935
-  %5 = and i64 %1, 72057594037927935
-  %6 = or i64 %0, %5
-  %7 = or i64 %6, %4
-  ret i64 %7
+  %4 = or i64 %3, %1
+  %5 = and i64 %4, 72057594037927935
+  %6 = or i64 %5, %0
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -68,7 +67,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 81
   %5 = and i32 %1, 8192
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }

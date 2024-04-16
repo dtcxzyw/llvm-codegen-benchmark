@@ -12,7 +12,7 @@ entry:
   %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = shl i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   ret i128 %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %2 = tail call noundef i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = shl i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   ret i128 %5
 }
 
@@ -36,10 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 false), !range !0
+  %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
   %3 = shl i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul i128 %0, %4
+  %5 = mul i128 %4, %0
   ret i128 %5
 }
 

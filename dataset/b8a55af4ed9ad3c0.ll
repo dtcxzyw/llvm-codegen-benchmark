@@ -34,7 +34,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
   %6 = add nuw nsw i64 %5, 5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -64,7 +64,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = add nuw nsw i32 %5, 13
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -93,7 +93,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = add nuw nsw i32 %5, 13
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -107,7 +107,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
   %6 = add nsw i64 %5, -1
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -120,7 +120,7 @@ entry:
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
   %6 = add i128 %5, 1
-  %7 = icmp ult i128 %0, %6
+  %7 = icmp ugt i128 %6, %0
   ret i1 %7
 }
 
@@ -132,9 +132,9 @@ define i1 @func00000000000001d4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = add nsw i32 %5, -43
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -145,9 +145,9 @@ define i1 @func00000000000001dc(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = add nsw i32 %5, -43
-  %7 = icmp ne i32 %0, %6
+  %7 = icmp ne i32 %6, %0
   ret i1 %7
 }
 
@@ -163,7 +163,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = add nuw nsw i32 %5, 1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -176,7 +176,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = add nsw i32 %5, -1
-  %7 = icmp uge i32 %0, %6
+  %7 = icmp ule i32 %6, %0
   ret i1 %7
 }
 
@@ -187,9 +187,9 @@ define i1 @func00000000000001f9(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 9
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = add nuw nsw i64 %5, 10
-  %7 = icmp uge i64 %0, %6
+  %7 = icmp ule i64 %6, %0
   ret i1 %7
 }
 

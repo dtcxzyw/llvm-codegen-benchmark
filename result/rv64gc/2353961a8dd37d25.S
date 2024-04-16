@@ -23,14 +23,14 @@ func0000000000000003:                   # @func0000000000000003
 	li	a3, 44
 	beqz	a1, .LBB1_4
 .LBB1_2:                                # %entry
-	mul	a0, a0, a3
+	mul	a0, a3, a0
 	ret
 .LBB1_3:                                # %entry
 	li	a2, 36
 	li	a3, 44
 	bnez	a1, .LBB1_2
 .LBB1_4:                                # %entry
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a1, 1

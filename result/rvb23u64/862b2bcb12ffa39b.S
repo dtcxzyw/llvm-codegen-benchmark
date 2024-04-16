@@ -9,7 +9,7 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
 	sext.w	a2, a2
-	lui	a3, 786432
+	lui	a3, 524288
 	addiw	a3, a3, 64
 	czero.eqz	a2, a3, a2
 	czero.eqz	a0, a0, a1

@@ -207,9 +207,8 @@
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr inbounds [128 x %struct.NSVGattrib.1553121], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 292
-  ret ptr %4
+  %3 = getelementptr inbounds [128 x %struct.NSVGattrib.1553121], ptr %0, i64 0, i64 %2, i32 17
+  ret ptr %3
 }
 
 ; 214 occurrences:
@@ -431,9 +430,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr [1 x %struct.rb_backtrace_location_struct.1554148], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [1 x %struct.rb_backtrace_location_struct.1554148], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 6 occurrences:
@@ -447,9 +445,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr inbounds [3 x %struct.tx_pkt_history_st.1588255], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr [3 x %struct.tx_pkt_history_st.1588255], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 18 occurrences:

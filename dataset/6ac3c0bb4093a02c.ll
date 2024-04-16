@@ -17,7 +17,7 @@ define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
   %3 = fmul double %2, 0.000000e+00
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 

@@ -97,10 +97,9 @@ define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2097151
   %4 = icmp eq i64 %3, 0
-  %5 = and i64 %1, -2097152
-  %6 = select i1 %4, i64 %5, i64 %0
-  %7 = icmp ult i64 %6, -73014444032
-  ret i1 %7
+  %5 = select i1 %4, i64 %1, i64 %0
+  %6 = icmp ult i64 %5, -73014444032
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

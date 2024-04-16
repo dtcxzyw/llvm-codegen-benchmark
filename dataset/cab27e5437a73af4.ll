@@ -11,10 +11,9 @@
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
-  %2 = icmp eq i32 %1, 0
-  %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
-  ret i32 %4
+  %sext = add nsw i32 %1, -1
+  %2 = add i32 %sext, %0
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -24,11 +23,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 1
-  %2 = icmp ne i32 %1, 0
-  %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
-  ret i32 %4
+  %1 = and i32 %0, -2
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

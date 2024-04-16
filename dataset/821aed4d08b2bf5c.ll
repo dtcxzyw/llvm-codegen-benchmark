@@ -13,7 +13,7 @@ entry:
   %2 = sitofp i32 %1 to double
   %3 = fdiv double 1.000000e+00, %2
   %4 = uitofp i8 %0 to double
-  %5 = fmul double %4, %3
+  %5 = fmul double %3, %4
   ret double %5
 }
 

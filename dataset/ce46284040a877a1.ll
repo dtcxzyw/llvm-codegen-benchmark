@@ -36,7 +36,7 @@ define ptr @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32760
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }

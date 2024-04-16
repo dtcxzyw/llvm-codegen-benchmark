@@ -1,17 +1,17 @@
 func000000000000001a:                   # @func000000000000001a
-	sraiw	a1, a1, 16
+	sext.w	a1, a1
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	srai	a1, a1, 5
-	bseti	a2, zero, 11
+	lui	a2, 16
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sraiw	a1, a1, 16
-	bseti	a2, zero, 11
+	sext.w	a1, a1
+	lui	a2, 32784
+	addiw	a2, a2, -1
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret

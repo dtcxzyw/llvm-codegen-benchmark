@@ -1,7 +1,5 @@
 func0000000000000074:                   # @func0000000000000074
-	slli	a0, a0, 1
-	addi	a0, a0, 1
-	slli	a0, a0, 11
+	slli	a0, a0, 12
 	srli	a0, a0, 11
 	srli	a1, a0, 1
 	or	a0, a0, a1
@@ -22,6 +20,7 @@ func0000000000000074:                   # @func0000000000000074
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	and	a1, a1, a2
+	andi	a0, a0, -2
 	sub	a0, a0, a1
 	lui	a1, 209715
 	addiw	a1, a1, 819

@@ -8,10 +8,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 false), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 2
-  ret i1 %3
+  %1 = icmp ugt i64 %0, 4611686018427387903
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -48,10 +46,8 @@ declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 false), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 59
-  ret i1 %3
+  %1 = icmp ult i64 %0, 16
+  ret i1 %1
 }
 
 ; 27 occurrences:
@@ -85,10 +81,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 53
-  ret i1 %3
+  %1 = icmp ugt i64 %0, 2047
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -96,10 +90,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp slt i64 %0, 0
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -108,10 +100,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 false), !range !0
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp eq i32 %2, 64
-  ret i1 %3
+  %1 = icmp eq i64 %0, 0
+  ret i1 %1
 }
 
 ; 3 occurrences:
@@ -121,10 +111,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ult i32 %2, 8
-  ret i1 %3
+  %1 = icmp ugt i64 %0, 72057594037927935
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -132,10 +120,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp slt i64 %0, 0
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -143,10 +129,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.ctlz.i64(i64 %0, i1 false), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, 11
-  ret i1 %3
+  %1 = and i64 %0, -4503599627370496
+  %2 = icmp eq i64 %1, 4503599627370496
+  ret i1 %2
 }
 
 ; 14 occurrences:
@@ -167,13 +152,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 51
-  ret i1 %3
+  %1 = icmp ult i64 %0, 4096
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-
-!0 = !{i64 0, i64 65}

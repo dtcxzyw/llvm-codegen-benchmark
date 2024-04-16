@@ -15,7 +15,7 @@ entry:
   %3 = xor i32 %2, 31
   %4 = shl nuw nsw i32 2, %3
   %5 = sub i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

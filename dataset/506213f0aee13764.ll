@@ -11,11 +11,9 @@
 define ptr @func000000000000000f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [3 x %struct.tinfl_huff_table.1752161], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 2336
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr inbounds [576 x i16], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = sext i32 %0 to i64
+  %5 = getelementptr inbounds [3 x %struct.tinfl_huff_table.1752161], ptr %1, i64 0, i64 %3, i32 2, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

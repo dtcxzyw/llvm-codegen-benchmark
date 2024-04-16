@@ -172,9 +172,10 @@
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = udiv i32 %3, 10
-  %5 = mul nuw i32 %4, 10
+  %.fr1 = freeze i64 %2
+  %3 = trunc i64 %.fr1 to i32
+  %4 = urem i32 %3, 10
+  %5 = sub nuw i32 %3, %4
   ret i32 %5
 }
 

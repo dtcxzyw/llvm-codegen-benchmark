@@ -20,9 +20,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = lshr i64 %2, 1
-  %4 = getelementptr inbounds %"struct.std::__1::pair.61.1562244", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.std::__1::pair.61.1562244", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:

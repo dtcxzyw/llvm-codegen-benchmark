@@ -4,9 +4,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 false)
-  %2 = udiv i64 %1, 100
-  %3 = mul nuw nsw i64 %2, 100
+  %.fr1 = freeze i64 %0
+  %1 = tail call i64 @llvm.abs.i64(i64 %.fr1, i1 false)
+  %2 = urem i64 %1, 100
+  %3 = sub nuw i64 %1, %2
   ret i64 %3
 }
 
@@ -28,8 +29,9 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 define i64 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = udiv i64 %1, 3600
-  %3 = mul nsw i64 %2, -3600
+  %.fr = freeze i64 %1
+  %2 = urem i64 %.fr, 3600
+  %3 = sub i64 %2, %.fr
   ret i64 %3
 }
 

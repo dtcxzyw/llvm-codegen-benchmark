@@ -74,11 +74,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = and i64 %0, 281474976710655
-  %4 = or i64 %3, %2
-  %5 = icmp ult i64 %4, 131072
-  ret i1 %5
+  %2 = and i64 %0, 281474976579584
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:

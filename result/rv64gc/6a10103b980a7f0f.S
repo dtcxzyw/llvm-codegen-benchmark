@@ -46,7 +46,7 @@ func000000000000002e:                   # @func000000000000002e
 func0000000000000039:                   # @func0000000000000039
 	sext.w	a2, a2
 	addi	a2, a2, 1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret

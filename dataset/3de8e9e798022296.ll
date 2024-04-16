@@ -10,8 +10,8 @@
 define i32 @func0000000000000004(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = sub i32 %0, %4
+  %4 = sub i32 %0, %1
+  %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
 
@@ -22,8 +22,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = sub nsw i32 %0, %4
+  %4 = sub i32 %0, %1
+  %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
 

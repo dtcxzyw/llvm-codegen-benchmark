@@ -13,7 +13,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 63
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nsw i64 %1 to i32
   %3 = and i32 %2, 255
   ret i32 %3
 }
@@ -47,7 +47,7 @@ entry:
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 44
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nsw i64 %1 to i32
   %3 = and i32 %2, 67107840
   ret i32 %3
 }

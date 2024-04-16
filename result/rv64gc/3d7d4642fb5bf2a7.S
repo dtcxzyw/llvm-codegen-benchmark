@@ -1,8 +1,10 @@
 func0000000000000190:                   # @func0000000000000190
-	addi	a1, a1, 1
-	srliw	a1, a1, 15
-	or	a0, a0, a1
+	lui	a2, 1048568
+	addi	a3, a2, 1
+	addw	a1, a1, a3
+	sltu	a1, a1, a2
 	snez	a0, a0
+	or	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	andi	a1, a1, 255
@@ -32,9 +34,8 @@ func0000000000000022:                   # @func0000000000000022
 	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
-	addiw	a1, a1, -1
-	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	addiw	a1, a1, -11
+	sltiu	a1, a1, -10
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -66,9 +67,8 @@ func0000000000000182:                   # @func0000000000000182
 	or	a0, a0, a1
 	ret
 func0000000000000230:                   # @func0000000000000230
-	addiw	a1, a1, -48
-	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	addiw	a1, a1, -58
+	sltiu	a1, a1, -10
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

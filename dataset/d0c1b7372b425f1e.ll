@@ -23,7 +23,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 1
+  %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 4294967295
   %4 = getelementptr inbounds i32, ptr %0, i64 %3
   ret ptr %4

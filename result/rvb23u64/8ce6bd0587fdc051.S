@@ -8,7 +8,8 @@ func0000000000000091:                   # @func0000000000000091
 	srli	a2, a1, 63
 	srai	a1, a1, 1
 	add	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI1_0:
@@ -21,6 +22,7 @@ func0000000000000081:                   # @func0000000000000081
 	srli	a2, a1, 63
 	srai	a1, a1, 1
 	add	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

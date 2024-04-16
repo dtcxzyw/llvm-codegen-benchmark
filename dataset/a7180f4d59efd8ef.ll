@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 8, i64 %1
-  %3 = shl i64 %2, 3
-  %4 = or disjoint i64 %3, 8
+  %2 = shl i64 %1, 3
+  %3 = or disjoint i64 %2, 8
+  %4 = select i1 %0, i64 72, i64 %3
   ret i64 %4
 }
 
@@ -18,9 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 0, i64 %1
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 1
+  %2 = shl nuw nsw i64 %1, 1
+  %3 = or disjoint i64 %2, 1
+  %4 = select i1 %0, i64 1, i64 %3
   ret i64 %4
 }
 
@@ -29,9 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 128, i32 %1
-  %3 = shl nuw i32 %2, 1
-  %4 = or disjoint i32 %3, 2
+  %2 = shl nuw i32 %1, 1
+  %3 = or disjoint i32 %2, 2
+  %4 = select i1 %0, i32 258, i32 %3
   ret i32 %4
 }
 

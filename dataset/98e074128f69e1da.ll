@@ -7,9 +7,9 @@
 define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i1 true, i1 %1
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, i1 true, i1 %4
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  %6 = select i1 %5, i1 true, i1 %1
   ret i1 %6
 }
 
@@ -20,9 +20,9 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i1 true, i1 %1
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i1 true, i1 %4
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  %6 = select i1 %5, i1 true, i1 %1
   ret i1 %6
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = fptosi double %2 to i64
   %4 = mul nsw i64 %1, -3600000000
   %5 = add i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

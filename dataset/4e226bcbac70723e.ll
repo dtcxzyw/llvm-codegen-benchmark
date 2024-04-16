@@ -42,8 +42,8 @@ define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4095
   %4 = sub nsw i64 %3, %1
-  %5 = add i64 %4, %0
-  %6 = icmp ne i64 %5, 0
+  %5 = sub i64 0, %0
+  %6 = icmp ne i64 %4, %5
   ret i1 %6
 }
 
@@ -68,7 +68,7 @@ define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 268435455
   %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 65536
   ret i1 %6
 }

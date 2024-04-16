@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
-  %1 = ashr i32 %0, 1
-  %2 = add nuw nsw i32 %1, 1
+  %1 = lshr i32 %0, 1
+  %2 = add nuw i32 %1, 1
   %3 = and i32 %2, 2147483646
   %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 2)
   ret i32 %4

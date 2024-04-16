@@ -11,7 +11,7 @@ define i1 @func0000000000000006(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp one double %3, 0x7FF0000000000000
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -27,7 +27,7 @@ entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp une double %3, 0x7FF0000000000000
   %5 = and i1 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

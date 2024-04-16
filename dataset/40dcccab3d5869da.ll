@@ -7,9 +7,9 @@
 define i1 @func0000000000000021(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, i32 -1, i32 %1
-  %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %4 = zext i32 %1 to i64
+  %5 = select i1 %3, i64 4294967295, i64 %4
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

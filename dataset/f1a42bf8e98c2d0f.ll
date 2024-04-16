@@ -98,7 +98,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

@@ -6,10 +6,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 1, %0
-  %2 = add i32 %1, -3
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  ret i1 false
 }
 
 ; 2 occurrences:

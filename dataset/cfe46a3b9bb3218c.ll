@@ -1846,8 +1846,8 @@ define i1 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 24
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add nsw i64 %2, %1
-  %4 = icmp ult i64 %3, %1
+  %3 = xor i64 %1, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 
@@ -1891,8 +1891,8 @@ define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 80
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add i64 %2, %1
-  %4 = icmp ult i64 %3, %1
+  %3 = xor i64 %1, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 

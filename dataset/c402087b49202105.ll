@@ -12,7 +12,7 @@ define i32 @func000000000000003b(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext i8 %1 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %2, %4
+  %5 = or disjoint i32 %4, %2
   %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %3
   ret i32 %7
@@ -28,7 +28,7 @@ define i32 @func000000000000002b(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext i8 %1 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %2, %4
+  %5 = or disjoint i32 %4, %2
   %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %3
   ret i32 %7

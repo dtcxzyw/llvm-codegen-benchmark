@@ -58,8 +58,8 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = sub i64 %0, %2
-  %4 = add i64 %3, -1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -168,8 +168,8 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = sub nsw i64 %0, %2
-  %4 = add nsw i64 %3, -1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -196,8 +196,8 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = sub i64 %0, %2
-  %4 = add nsw i64 %3, -1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -207,8 +207,8 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = sub nsw i64 %0, %2
-  %4 = add i64 %3, -1
+  %3 = xor i64 %2, -1
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 

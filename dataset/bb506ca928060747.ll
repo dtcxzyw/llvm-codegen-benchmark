@@ -10,7 +10,7 @@
 define float @func0000000000000000(float %0) #0 {
 entry:
   %1 = call float @llvm.fmuladd.f32(float %0, float -2.000000e+00, float 3.000000e+00)
-  %2 = fmul float %0, %1
+  %2 = fmul float %1, %0
   ret float %2
 }
 

@@ -15,7 +15,7 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	beq	a1, a2, .LBB2_2
+	beq	a2, a1, .LBB2_2
 	li	a0, 64
 .LBB2_2:                                # %entry
 	ret

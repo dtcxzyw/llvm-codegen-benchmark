@@ -366,9 +366,8 @@ define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr %struct.b3GpuSolverConstraint.1741474, ptr %1, i64 %3
-  %5 = getelementptr inbounds %struct.b3GpuSolverConstraint.1741474, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 80
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.b3GpuSolverConstraint.1741474, ptr %4, i64 %0, i32 5
+  ret ptr %5
 }
 
 ; 54 occurrences:

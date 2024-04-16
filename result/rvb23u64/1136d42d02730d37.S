@@ -39,12 +39,12 @@ func000000000000001a:                   # @func000000000000001a
 	srli	a4, a4, 16
 	or	a1, a1, a4
 	srli	a5, a5, 16
+	add	a2, a2, a1
+	sltu	a1, a2, a1
 	add	a3, a3, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, a3
-	slli	a2, a2, 48
-	srli	a1, a1, 16
+	add	a1, a1, a3
+	slli	a1, a1, 48
+	srli	a2, a2, 16
 	or	a1, a1, a2
 	add	a0, a0, a1
 	slli	a0, a0, 8
@@ -56,12 +56,12 @@ func0000000000000013:                   # @func0000000000000013
 	srli	a4, a4, 16
 	or	a1, a1, a4
 	srli	a5, a5, 16
+	add	a2, a2, a1
+	sltu	a1, a2, a1
 	add	a3, a3, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, a3
-	slli	a2, a2, 8
-	srli	a1, a1, 56
+	add	a1, a1, a3
+	slli	a1, a1, 8
+	srli	a2, a2, 56
 	or	a1, a1, a2
 	add	a0, a0, a1
 	slli	a0, a0, 8
@@ -73,12 +73,12 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a4, a4, 56
 	or	a1, a1, a4
 	srli	a5, a5, 56
+	add	a2, a2, a1
+	sltu	a1, a2, a1
 	add	a3, a3, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, a3
-	slli	a2, a2, 8
-	srli	a1, a1, 56
+	add	a1, a1, a3
+	slli	a1, a1, 8
+	srli	a2, a2, 56
 	or	a1, a1, a2
 	add	a0, a0, a1
 	slli	a0, a0, 8
@@ -90,12 +90,12 @@ func0000000000000011:                   # @func0000000000000011
 	srli	a4, a4, 16
 	or	a1, a1, a4
 	srli	a5, a5, 16
+	add	a2, a2, a1
+	sltu	a1, a2, a1
 	add	a3, a3, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, a3
-	slli	a2, a2, 8
-	srli	a1, a1, 56
+	add	a1, a1, a3
+	slli	a1, a1, 8
+	srli	a2, a2, 56
 	or	a1, a1, a2
 	add	a0, a0, a1
 	slli	a0, a0, 8
@@ -107,12 +107,12 @@ func000000000000000a:                   # @func000000000000000a
 	srli	a4, a4, 16
 	or	a1, a1, a4
 	srli	a5, a5, 16
+	add	a2, a2, a1
+	sltu	a1, a2, a1
 	add	a3, a3, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, a3
-	slli	a2, a2, 48
-	srli	a1, a1, 16
+	add	a1, a1, a3
+	slli	a1, a1, 48
+	srli	a2, a2, 16
 	or	a1, a1, a2
 	add	a0, a0, a1
 	slli	a0, a0, 8

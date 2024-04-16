@@ -1,8 +1,6 @@
 func0000000000000211:                   # @func0000000000000211
-	li	a3, 1
-	beq	a1, a3, .LBB0_2
-	sll	a0, a3, a2
-.LBB0_2:                                # %entry
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a

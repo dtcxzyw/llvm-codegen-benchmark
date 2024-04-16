@@ -9,12 +9,12 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000011:                   # @func0000000000000011
 	li	a3, 1
 	bne	a1, a3, .LBB1_2
-	add	a0, a2, a1
+	addi	a0, a2, 1
 .LBB1_2:                                # %entry
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a3, -1
 	bne	a1, a3, .LBB2_2
-	add	a0, a2, a1
+	addi	a0, a2, -1
 .LBB2_2:                                # %entry
 	ret

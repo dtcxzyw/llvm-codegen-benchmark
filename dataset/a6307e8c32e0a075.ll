@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = sext i16 %2 to i32
-  %4 = xor i32 %3, -1
+  %3 = xor i16 %2, -1
+  %4 = sext i16 %3 to i32
   %5 = add nsw i32 %4, %1
   %6 = sub nsw i32 %5, %0
   %7 = zext i32 %6 to i64

@@ -8,9 +8,9 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %4, %5
-  %7 = sub nsw i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %5, %4
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -21,9 +21,9 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %4, %5
-  %7 = sub nsw i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %5, %4
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 ; 20 occurrences:
@@ -53,9 +53,9 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %4, %5
-  %7 = sub i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %5, %4
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -67,9 +67,9 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %4, %5
-  %7 = sub i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %5, %4
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

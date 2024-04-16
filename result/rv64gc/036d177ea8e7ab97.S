@@ -16,24 +16,27 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000029:                   # @func0000000000000029
 	subw	a2, a1, a2
-	li	a1, 1
-	bgeu	a1, a2, .LBB2_2
+	li	a3, 1
 	li	a1, 4
+	bltu	a3, a2, .LBB2_2
+	li	a1, 1
 .LBB2_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
-	subw	a2, a1, a2
+	sext.w	a3, a1
+	sext.w	a2, a2
 	li	a1, 18
-	bgtz	a2, .LBB3_2
+	blt	a2, a3, .LBB3_2
 	li	a1, 2
 .LBB3_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	subw	a2, a1, a2
+	sext.w	a3, a1
+	sext.w	a2, a2
 	li	a1, 36
-	bgtz	a2, .LBB4_2
+	blt	a2, a3, .LBB4_2
 	li	a1, 4
 .LBB4_2:                                # %entry
 	or	a0, a0, a1

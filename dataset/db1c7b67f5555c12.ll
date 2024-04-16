@@ -23,9 +23,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = tail call noundef i32 @llvm.bswap.i32(i32 %0)
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 15
+  %1 = lshr i32 %0, 24
+  %2 = and i32 %1, 15
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -47,9 +47,9 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.bswap.i16(i16 %0)
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 15
+  %1 = lshr i16 %0, 8
+  %2 = and i16 %1, 15
+  %3 = zext nneg i16 %2 to i32
   ret i32 %3
 }
 

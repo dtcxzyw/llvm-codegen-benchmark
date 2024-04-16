@@ -31,8 +31,8 @@ define i1 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = or i64 %1, %0
-  %3 = add i64 %2, 1
-  %4 = icmp ugt i64 %3, 33
+  %3 = add i64 %2, -33
+  %4 = icmp ult i64 %3, -34
   ret i1 %4
 }
 

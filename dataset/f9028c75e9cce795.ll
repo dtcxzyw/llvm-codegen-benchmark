@@ -26,9 +26,9 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = shl i64 %4, 1
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %.mask = and i64 %4, 9223372036854775807
+  %5 = icmp eq i64 %.mask, 0
+  ret i1 %5
 }
 
 ; 32 occurrences:
@@ -70,8 +70,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = shl i64 %4, 29
-  %6 = icmp ult i64 %5, 4294967296
+  %5 = and i64 %4, 34359738360
+  %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 

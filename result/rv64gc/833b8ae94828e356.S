@@ -43,7 +43,7 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, 24
 	ret
 func000000000000001d:                   # @func000000000000001d
-	addi	a1, a1, 29
+	addi	a1, a1, 5
 	andi	a1, a1, 7
 	add	a0, a0, a1
 	addiw	a0, a0, -8

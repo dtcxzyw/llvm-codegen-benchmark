@@ -5,7 +5,7 @@
 define i32 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, %1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = sub nsw i32 %1, %2
   %6 = select i1 %4, i32 0, i32 %5
   ret i32 %6

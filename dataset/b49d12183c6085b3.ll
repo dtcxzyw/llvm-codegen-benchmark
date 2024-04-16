@@ -35,7 +35,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 21
   %4 = add i64 %3, %1
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   %6 = mul i64 %5, 265
   %7 = lshr i64 %6, 14
   ret i64 %7
@@ -53,7 +53,7 @@ define i64 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   %6 = mul nsw i64 %5, 265
   %7 = lshr i64 %6, 14
   ret i64 %7
@@ -66,7 +66,7 @@ define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 21
   %4 = add nsw i64 %3, %1
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   %6 = mul nsw i64 %5, 265
   %7 = lshr i64 %6, 14
   ret i64 %7
@@ -94,7 +94,7 @@ define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, %1
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   %6 = mul i64 %5, -7070675565921424023
   %7 = lshr i64 %6, 47
   ret i64 %7

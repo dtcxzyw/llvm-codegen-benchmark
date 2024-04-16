@@ -11,10 +11,9 @@ func0000000000000018:                   # @func0000000000000018
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	slli	a3, a3, 32
 	srli	a3, a3, 32
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a1, a1, a0
-	mv	a0, a3
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
 	li	a3, 0
 	call	__udivti3
 	ld	ra, 8(sp)                       # 8-byte Folded Reload

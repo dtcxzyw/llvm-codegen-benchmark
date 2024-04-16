@@ -97,8 +97,8 @@
 define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -109,8 +109,8 @@ entry:
 define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 131056
-  %3 = add nuw nsw i64 %2, 56
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 56
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

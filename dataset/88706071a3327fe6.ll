@@ -10,7 +10,7 @@ entry:
   %4 = lshr exact i64 %1, 3
   %5 = add nsw i64 %4, %3
   %6 = shl i64 %5, 9
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

@@ -41,10 +41,9 @@ entry:
 define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -624
-  %4 = icmp eq i32 %3, 0
-  %5 = and i1 %0, %4
-  ret i1 %5
+  %3 = icmp eq i32 %2, 624
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 5 occurrences:
@@ -57,10 +56,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 10
-  %4 = icmp ne i32 %3, 0
-  %5 = and i1 %0, %4
-  ret i1 %5
+  %3 = icmp ne i32 %2, -10
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -69,10 +67,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 17
-  %5 = and i1 %4, %0
-  ret i1 %5
+  %3 = icmp eq i32 %2, 18
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -94,9 +91,9 @@ entry:
 define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = add nsw i8 %2, -48
-  %4 = icmp ugt i8 %3, 8
-  %5 = and i1 %0, %4
+  %3 = add i8 %2, -57
+  %4 = icmp ult i8 %3, -9
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -106,9 +103,9 @@ entry:
 define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = add i8 %2, -4
-  %4 = icmp ugt i8 %3, 10
-  %5 = and i1 %0, %4
+  %3 = add i8 %2, -15
+  %4 = icmp ult i8 %3, -11
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

@@ -15,11 +15,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %struct.btMultibodyLink.1742159, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 464
-  %5 = icmp eq ptr %0, null
-  %6 = select i1 %5, ptr %4, ptr %0
-  ret ptr %6
+  %3 = getelementptr inbounds %struct.btMultibodyLink.1742159, ptr %1, i64 %2, i32 19
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, ptr %3, ptr %0
+  ret ptr %5
 }
 
 ; 2 occurrences:

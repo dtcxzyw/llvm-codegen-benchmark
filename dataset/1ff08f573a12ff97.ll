@@ -13,7 +13,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 8
   %6 = getelementptr inbounds %struct.aiFace.1749366, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 64
   %6 = getelementptr inbounds %struct.Amap_Pin_t_.1771894, ptr %5, i64 %4
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -41,7 +41,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 112
   %6 = getelementptr %struct.hlist_head.2016966, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -54,7 +54,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 -1
   %6 = getelementptr i8, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -67,7 +67,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 -8
   %6 = getelementptr i8, ptr %5, i64 %4
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

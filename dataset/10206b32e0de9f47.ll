@@ -10,7 +10,7 @@ entry:
   %2 = icmp eq i16 %1, 0
   %3 = select i1 %2, i16 44, i16 %1
   %4 = zext i16 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = icmp ult i32 %1, 13
   %3 = select i1 %2, i32 0, i32 %1
   %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -63,7 +63,7 @@ entry:
   %2 = icmp eq i8 %1, 3
   %3 = select i1 %2, i8 4, i8 %1
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

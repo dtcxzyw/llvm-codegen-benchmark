@@ -26,7 +26,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i8
-  %4 = add i8 %1, %3
+  %4 = add i8 %3, %1
   %5 = and i8 %4, 63
   %6 = zext nneg i8 %5 to i64
   %7 = getelementptr [64 x i8], ptr %0, i64 0, i64 %6

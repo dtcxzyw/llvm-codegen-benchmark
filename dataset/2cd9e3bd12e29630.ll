@@ -8,7 +8,7 @@ entry:
   %3 = lshr i8 %2, 1
   %4 = and i8 %3, 1
   %5 = select i1 %1, i8 %4, i8 0
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 

@@ -28,7 +28,7 @@ entry:
   %3 = add nsw i32 %2, %0
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 127)
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 -128)
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nsw i32 %5 to i8
   ret i8 %6
 }
 

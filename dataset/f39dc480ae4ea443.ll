@@ -18,9 +18,9 @@
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 8
-  %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, 1
-  ret i64 %3
+  %narrow = add nsw i32 %1, 1
+  %2 = sext i32 %narrow to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

@@ -11,7 +11,7 @@ entry:
   %2 = sdiv i32 %1, 64
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

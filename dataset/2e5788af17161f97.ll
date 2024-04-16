@@ -8,8 +8,8 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %0
-  %5 = and i16 %4, -16577
-  %6 = lshr i16 %5, 8
+  %5 = lshr i16 %4, 8
+  %6 = and i16 %5, 191
   ret i16 %6
 }
 

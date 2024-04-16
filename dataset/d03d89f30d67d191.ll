@@ -501,9 +501,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %0, i64 %1
-  %3 = icmp eq ptr %2, null
-  ret i1 %3
+  %2 = icmp eq ptr %0, null
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

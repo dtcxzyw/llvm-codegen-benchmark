@@ -113,7 +113,7 @@ entry:
   %3 = mul nsw i32 %2, -16069
   %4 = add nsw i32 %1, 1024
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -232,7 +232,7 @@ entry:
   %3 = mul i32 %2, -12289
   %4 = add nuw nsw i32 %1, 196624
   %5 = add i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -302,7 +302,7 @@ entry:
   %3 = add nuw nsw i32 %2, 12
   %4 = mul nuw nsw i32 %1, 12
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -363,7 +363,7 @@ entry:
   %3 = mul nsw i64 %2, 365
   %4 = add i64 %1, 1721423
   %5 = add i64 %4, %3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

@@ -24,7 +24,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -997805
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = and i64 %1, -2097152
   %6 = sub nsw i64 %4, %5
   ret i64 %6
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -683901
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = and i64 %1, -2097152
   %6 = sub i64 %4, %5
   ret i64 %6
@@ -81,7 +81,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -683901
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = and i64 %1, -2097152
   %6 = sub nsw i64 %4, %5
   ret i64 %6

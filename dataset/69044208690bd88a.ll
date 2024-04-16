@@ -11,7 +11,7 @@ entry:
   %1 = zext i8 %0 to i16
   %2 = add nuw nsw i16 %1, 1
   %3 = urem i16 %2, 3
-  %4 = trunc i16 %3 to i8
+  %4 = trunc nuw nsw i16 %3 to i8
   ret i8 %4
 }
 

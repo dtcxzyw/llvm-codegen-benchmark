@@ -13,12 +13,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = zext i8 %1 to i32
-  %5 = add nuw nsw i32 %4, %3
-  %6 = and i32 %5, 255
-  %7 = add nuw nsw i32 %0, %6
-  ret i32 %7
+  %.narrow = add i8 %1, %2
+  %3 = zext i8 %.narrow to i32
+  %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -31,7 +29,7 @@ entry:
   %4 = zext i16 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = and i32 %5, 131056
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

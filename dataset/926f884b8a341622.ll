@@ -13,7 +13,7 @@ entry:
   %3 = xor i16 %1, %2
   %4 = lshr i16 %3, 15
   %5 = trunc nuw nsw i16 %4 to i8
-  %6 = xor i8 %0, %5
+  %6 = xor i8 %5, %0
   ret i8 %6
 }
 
@@ -32,8 +32,8 @@ define i64 @func0000000000000000(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = xor i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = xor i64 %0, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = xor i64 %5, %0
   ret i64 %6
 }
 

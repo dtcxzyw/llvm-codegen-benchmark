@@ -20,8 +20,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = sub i128 %1, %2
-  %4 = trunc i128 %3 to i64
-  %5 = icmp slt i64 %4, 0
+  %4 = and i128 %3, 9223372036854775808
+  %5 = icmp ne i128 %4, 0
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -38,7 +38,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i32 %4, -1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = icmp sgt i32 %4, 8
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

@@ -36,9 +36,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = sub i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %3 = icmp ne i64 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

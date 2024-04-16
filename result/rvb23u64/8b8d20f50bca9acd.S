@@ -17,8 +17,8 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, 28
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addi	a1, a1, -1
-	andi	a1, a1, 1
+	li	a2, 1
+	andn	a1, a2, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 40
 	ret

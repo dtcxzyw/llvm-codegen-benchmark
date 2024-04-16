@@ -13,7 +13,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, %1
   %5 = and i64 %4, -2
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

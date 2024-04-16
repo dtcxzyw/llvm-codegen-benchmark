@@ -7,7 +7,7 @@
 define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nsw i32 %2 to i16
   %4 = srem i16 %0, %3
   ret i16 %4
 }

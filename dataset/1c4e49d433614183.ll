@@ -87,7 +87,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 3
   %5 = zext i8 %1 to i32
   %6 = shl nuw nsw i32 %5, %4
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

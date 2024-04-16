@@ -10,7 +10,7 @@ define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = udiv i8 %2, 20
-  %4 = icmp ugt i8 %0, %3
+  %4 = icmp ult i8 %3, %0
   ret i1 %4
 }
 

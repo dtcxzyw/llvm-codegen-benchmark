@@ -14,7 +14,7 @@ entry:
   %3 = sdiv i8 %2, 4
   %4 = sext i8 %3 to i32
   %5 = mul nsw i32 %1, 5
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

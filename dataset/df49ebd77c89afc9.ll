@@ -10,7 +10,7 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = fneg double %0
-  %2 = fmul double %0, %1
+  %2 = fmul double %1, %0
   %3 = fmul double %2, 5.000000e-01
   ret double %3
 }

@@ -516,9 +516,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr inbounds [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.1556231"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 12
-  ret ptr %4
+  %3 = getelementptr inbounds [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.1556231"], ptr %0, i64 0, i64 %2, i32 0, i32 2
+  ret ptr %3
 }
 
 ; 232 occurrences:
@@ -758,9 +757,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr inbounds [65 x %"struct.asmjit::_abi_1_10::FuncArgsContext::Var.1558394"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds [65 x %"struct.asmjit::_abi_1_10::FuncArgsContext::Var.1558394"], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 12 occurrences:
@@ -780,9 +778,8 @@ entry:
 define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr inbounds [3 x %struct.rx_pkt_history_st.1588257], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr [3 x %struct.rx_pkt_history_st.1588257], ptr %0, i64 0, i64 %2, i32 0, i32 2
+  ret ptr %3
 }
 
 ; 6 occurrences:
@@ -821,9 +818,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr [8 x [6 x i32]], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [8 x [6 x i32]], ptr %0, i64 0, i64 %2, i64 2
+  ret ptr %3
 }
 
 ; 9 occurrences:
@@ -840,9 +836,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1724392"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.1724392"], ptr %0, i64 0, i64 %2, i32 0, i64 8
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

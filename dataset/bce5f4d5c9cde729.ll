@@ -20,8 +20,8 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -6
   %4 = getelementptr %"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.1669898", ptr %0, i64 %3
-  %5 = add nsw i64 %1, 1
-  %6 = getelementptr %"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.1669898", ptr %4, i64 %5
+  %5 = getelementptr %"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.1669898", ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 80
   ret ptr %6
 }
 
@@ -33,8 +33,8 @@ define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 9
   %4 = getelementptr double, ptr %0, i64 %3
-  %5 = add nuw nsw i64 %1, 1
-  %6 = getelementptr double, ptr %4, i64 %5
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -45,8 +45,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 6
   %4 = getelementptr inbounds float, ptr %0, i64 %3
-  %5 = add i64 %1, 680
-  %6 = getelementptr i8, ptr %4, i64 %5
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 680
   ret ptr %6
 }
 
@@ -57,8 +57,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 3
   %4 = getelementptr inbounds float, ptr %0, i64 %3
-  %5 = add i64 %1, -2
-  %6 = getelementptr inbounds float, ptr %4, i64 %5
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
 

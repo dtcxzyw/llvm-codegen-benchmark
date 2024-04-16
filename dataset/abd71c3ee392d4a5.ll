@@ -45,7 +45,7 @@ define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
-  %4 = add nsw i64 %3, -1
+  %4 = add nuw nsw i64 %3, 4294967295
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6

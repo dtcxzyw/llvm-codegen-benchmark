@@ -18,7 +18,7 @@ entry:
   %2 = fptosi float %1 to i16
   %3 = zext i16 %2 to i48
   %4 = shl nuw nsw i48 %3, 16
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 

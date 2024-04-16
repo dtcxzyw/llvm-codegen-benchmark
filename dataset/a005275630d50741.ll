@@ -8,7 +8,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = tail call i8 @llvm.smax.i8(i8 %1, i8 0)
   %3 = xor i8 %2, -1
-  %4 = add i8 %0, %3
+  %4 = add i8 %3, %0
   ret i8 %4
 }
 

@@ -11,7 +11,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	addi	a1, a1, -1
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

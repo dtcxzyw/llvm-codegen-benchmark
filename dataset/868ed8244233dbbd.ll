@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000022(i64 %0) #0 {
 entry:
-  %1 = add nuw i64 %0, 1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 1
   %3 = shl nuw i32 1, %2
   ret i32 %3
 }
@@ -57,8 +57,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, -1
   %3 = shl nuw i32 1, %2
   ret i32 %3
 }
@@ -94,8 +94,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -6
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, -6
   %3 = shl i32 2, %2
   ret i32 %3
 }
@@ -121,8 +121,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, -1
   %3 = shl nuw nsw i32 1, %2
   ret i32 %3
 }
@@ -133,8 +133,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000032(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 1
   %3 = shl nuw i32 1, %2
   ret i32 %3
 }
@@ -144,8 +144,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 7
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 7
   %3 = shl nsw i32 -1, %2
   ret i32 %3
 }
@@ -158,8 +158,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 7
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 7
   %3 = shl nsw i32 -1, %2
   ret i32 %3
 }
@@ -169,8 +169,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -10
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, -10
   %3 = shl nsw i32 -1, %2
   ret i32 %3
 }

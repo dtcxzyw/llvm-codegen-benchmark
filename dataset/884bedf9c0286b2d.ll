@@ -7,7 +7,7 @@ entry:
   %3 = add i8 %2, -32
   %4 = icmp ugt i32 %1, 1
   %5 = select i1 %4, i8 %3, i8 0
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nsw i32 %2, -32
   %4 = icmp ugt i32 %1, 1
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

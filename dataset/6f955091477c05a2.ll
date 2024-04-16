@@ -6,11 +6,10 @@
 define ptr @func0000000000000001(i8 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = getelementptr i8, ptr %3, i64 -2
-  %6 = icmp eq i8 %0, 13
-  %7 = select i1 %6, ptr %5, ptr %4
-  ret ptr %7
+  %4 = icmp eq i8 %0, 13
+  %.v = select i1 %4, i64 -2, i64 -1
+  %5 = getelementptr i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -21,11 +20,10 @@ entry:
 define ptr @func0000000000000074(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 320
-  %5 = getelementptr inbounds i8, ptr %3, i64 640
-  %6 = icmp ult i64 %0, 3776
-  %7 = select i1 %6, ptr %5, ptr %4
-  ret ptr %7
+  %4 = icmp ult i64 %0, 3776
+  %.v = select i1 %4, i64 640, i64 320
+  %5 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 ; 12 occurrences:
@@ -45,11 +43,10 @@ entry:
 define ptr @func0000000000000071(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 1
-  %5 = getelementptr inbounds i8, ptr %3, i64 2
-  %6 = icmp eq i32 %0, 120
-  %7 = select i1 %6, ptr %5, ptr %4
-  ret ptr %7
+  %4 = icmp eq i32 %0, 120
+  %.v = select i1 %4, i64 2, i64 1
+  %5 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -58,11 +55,10 @@ entry:
 define ptr @func0000000000000031(i8 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = getelementptr inbounds i8, ptr %3, i64 16
-  %6 = icmp eq i8 %0, 0
-  %7 = select i1 %6, ptr %5, ptr %4
-  ret ptr %7
+  %4 = icmp eq i8 %0, 0
+  %.v = select i1 %4, i64 16, i64 8
+  %5 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

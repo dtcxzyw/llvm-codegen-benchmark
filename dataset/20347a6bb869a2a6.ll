@@ -9,7 +9,7 @@ define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3, i32 %1
-  %4 = mul nsw i32 %0, %3
+  %4 = mul nsw i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

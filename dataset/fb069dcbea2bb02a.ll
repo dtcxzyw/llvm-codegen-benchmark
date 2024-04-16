@@ -66,7 +66,7 @@ entry:
   %4 = and i64 %3, 192
   %5 = shl nuw nsw i64 %1, 16
   %6 = or disjoint i64 %4, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

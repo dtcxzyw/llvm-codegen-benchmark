@@ -6,7 +6,7 @@ define i128 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = zext i64 %5 to i128
   %7 = shl nuw i128 %6, 64
   ret i128 %7
@@ -34,7 +34,7 @@ define i64 @func000000000000015f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   %7 = shl nuw nsw i64 %6, 32
   ret i64 %7
@@ -61,7 +61,7 @@ define i64 @func000000000000005f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   %7 = shl nuw nsw i64 %6, 2
   ret i64 %7

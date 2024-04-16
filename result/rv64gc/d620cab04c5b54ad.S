@@ -8,8 +8,8 @@ func0000000000000081:                   # @func0000000000000081
 	srli	a3, a2, 63
 	srai	a2, a2, 1
 	add	a2, a2, a3
-	add	a1, a1, a2
-	bnez	a1, .LBB0_2
+	neg	a1, a1
+	bne	a2, a1, .LBB0_2
 	li	a0, 1
 .LBB0_2:                                # %entry
 	ret
@@ -23,8 +23,8 @@ func0000000000000091:                   # @func0000000000000091
 	srli	a3, a2, 63
 	srai	a2, a2, 1
 	add	a2, a2, a3
-	add	a1, a1, a2
-	bnez	a1, .LBB1_2
+	neg	a1, a1
+	bne	a2, a1, .LBB1_2
 	li	a0, 1
 .LBB1_2:                                # %entry
 	ret

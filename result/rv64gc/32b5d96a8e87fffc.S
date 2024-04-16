@@ -30,5 +30,5 @@ func0000000000000046:                   # @func0000000000000046
 	li	a2, 400
 	mul	a1, a1, a2
 	subw	a0, a0, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret

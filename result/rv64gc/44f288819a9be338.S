@@ -19,16 +19,18 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a0, a0, -64
 	ret
 func0000000000000020:                   # @func0000000000000020
-	addi	a0, a0, 1
-	slliw	a0, a0, 16
+	slli	a0, a0, 16
+	lui	a1, 16
+	addw	a0, a0, a1
 	ret
 func0000000000000012:                   # @func0000000000000012
 	slli	a0, a0, 2
 	addi	a0, a0, -4
 	ret
 func0000000000000032:                   # @func0000000000000032
-	addi	a0, a0, 1
-	slliw	a0, a0, 14
+	slli	a0, a0, 14
+	lui	a1, 4
+	addw	a0, a0, a1
 	ret
 func0000000000000033:                   # @func0000000000000033
 	slli	a0, a0, 1

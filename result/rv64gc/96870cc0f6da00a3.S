@@ -22,11 +22,12 @@ func000000000000005a:                   # @func000000000000005a
 	addiw	a0, a0, -1
 	lui	a1, 254200
 	addiw	a1, a1, 993
-	mul	a0, a0, a1
-	srli	a1, a0, 63
-	srai	a0, a0, 35
-	add	a0, a0, a1
-	slli	a1, a0, 5
-	addw	a0, a0, a1
-	sgtz	a0, a0
+	mul	a1, a0, a1
+	srli	a2, a1, 63
+	srai	a1, a1, 35
+	add	a1, a1, a2
+	slli	a2, a1, 5
+	subw	a1, a0, a1
+	subw	a1, a1, a2
+	slt	a0, a1, a0
 	ret

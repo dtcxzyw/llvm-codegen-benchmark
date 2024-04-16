@@ -8,9 +8,9 @@
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = shl nuw nsw i32 %3, 1
-  %5 = xor i32 %4, %0
-  %6 = shl nuw nsw i32 %5, 1
+  %4 = shl i32 %3, 2
+  %5 = shl i32 %0, 1
+  %6 = xor i32 %4, %5
   ret i32 %6
 }
 
@@ -20,9 +20,9 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
-  %4 = shl i8 %3, 3
-  %5 = xor i8 %0, %4
-  %6 = shl i8 %5, 1
+  %4 = shl i8 %3, 4
+  %5 = shl i8 %0, 1
+  %6 = xor i8 %4, %5
   ret i8 %6
 }
 

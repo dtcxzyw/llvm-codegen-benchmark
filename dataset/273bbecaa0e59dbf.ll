@@ -12,9 +12,8 @@ define i32 @func0000000000000005(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = or i1 %2, %0
-  %4 = select i1 %3, i32 0, i32 32
-  %5 = or disjoint i32 %4, 64
-  ret i32 %5
+  %4 = select i1 %3, i32 64, i32 96
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

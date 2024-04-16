@@ -15,8 +15,6 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
-	lui	a2, 1048320
-	and	a1, a1, a2
 	lui	a2, 256
 	add	a1, a1, a2
 	srliw	a1, a1, 20

@@ -24,10 +24,9 @@
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 3
-  %4 = and i64 %3, 2147483647
-  %5 = shl nuw nsw i64 %4, 2
-  ret i64 %5
+  %3 = lshr exact i64 %2, 1
+  %4 = and i64 %3, 8589934588
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -37,10 +36,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = lshr i32 %2, 2
-  %4 = and i32 %3, 65535
-  %5 = shl nuw nsw i32 %4, 2
-  ret i32 %5
+  %3 = and i32 %2, 262140
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

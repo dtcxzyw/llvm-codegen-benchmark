@@ -17,7 +17,7 @@ entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

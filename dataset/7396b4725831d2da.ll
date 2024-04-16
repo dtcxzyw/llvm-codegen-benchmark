@@ -16,10 +16,9 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 1
   %3 = icmp eq i32 %2, 0
-  %4 = or disjoint i32 %1, 65536
-  %5 = select i1 %3, i32 %0, i32 %4
-  %6 = and i32 %5, 2
-  ret i32 %6
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = and i32 %4, 2
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -29,10 +28,9 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 768
   %3 = icmp eq i32 %2, 0
-  %4 = or i32 %1, -1073741824
-  %5 = select i1 %3, i32 %0, i32 %4
-  %6 = and i32 %5, 1073741824
-  ret i32 %6
+  %4 = and i32 %0, 1073741824
+  %5 = select i1 %3, i32 %4, i32 1073741824
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

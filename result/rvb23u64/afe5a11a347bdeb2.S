@@ -1,7 +1,7 @@
 func000000000000011a:                   # @func000000000000011a
-	add	a1, a1, a2
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	addw	a1, a1, a2
+	sext.w	a0, a0
+	slt	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2

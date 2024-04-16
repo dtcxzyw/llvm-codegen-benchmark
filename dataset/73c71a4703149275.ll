@@ -8,7 +8,7 @@
 define i1 @func0000000000000308(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   %5 = icmp ult ptr %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -22,7 +22,7 @@ entry:
 define i1 @func0000000000000108(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   %5 = icmp ult ptr %0, %1
   %6 = or i1 %5, %4
   ret i1 %6

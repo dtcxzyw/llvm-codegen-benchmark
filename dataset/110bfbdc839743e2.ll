@@ -6,7 +6,7 @@
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sgt i64 %0, %2
+  %3 = icmp slt i64 %2, %0
   %4 = select i1 %3, i64 0, i64 %0
   ret i64 %4
 }

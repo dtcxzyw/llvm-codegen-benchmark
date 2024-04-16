@@ -14,7 +14,7 @@ entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp eq i64 %2, 14
   %4 = zext i1 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -27,7 +27,7 @@ entry:
   %2 = and i32 %1, 40
   %3 = icmp eq i32 %2, 40
   %4 = zext i1 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

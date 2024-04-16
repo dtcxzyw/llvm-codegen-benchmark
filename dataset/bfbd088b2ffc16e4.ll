@@ -12,12 +12,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000204(i64 %0, i128 %1) #0 {
 entry:
-  %2 = zext i64 %0 to i128
-  %3 = mul nuw i128 %1, %2
-  %4 = trunc i128 %3 to i64
-  %5 = add i64 %0, -1
-  %6 = icmp ult i64 %5, %4
-  ret i1 %6
+  %2 = trunc i128 %1 to i64
+  %3 = mul i64 %2, %0
+  %4 = add i64 %0, -1
+  %5 = icmp ult i64 %4, %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

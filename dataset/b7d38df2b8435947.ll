@@ -65,7 +65,7 @@ define i64 @func0000000000000054(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp ult i32 %4, 17
   %6 = select i1 %5, i64 36, i64 40
   ret i64 %6
@@ -124,9 +124,9 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %0
-  %5 = icmp ne i16 %4, 0
-  %6 = select i1 %5, i32 -328, i32 0
-  ret i32 %6
+  %.not = icmp eq i16 %4, 0
+  %5 = select i1 %.not, i32 0, i32 -328
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

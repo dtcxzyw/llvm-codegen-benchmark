@@ -11,7 +11,7 @@ define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %2, 3.000000e+00
   %4 = fmul double %3, %1
-  %5 = fcmp olt double %0, %4
+  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %2, 1.000000e+02
   %4 = fmul float %3, %1
-  %5 = fcmp ult float %0, %4
+  %5 = fcmp ugt float %4, %0
   ret i1 %5
 }
 

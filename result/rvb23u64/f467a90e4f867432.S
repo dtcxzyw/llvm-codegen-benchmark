@@ -6,9 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	srli	a0, a0, 16
-	sext.b	a0, a0
-	slti	a0, a0, 0
+	bexti	a0, a0, 23
 	addi	a0, a0, 3
 	ret
 func0000000000000006:                   # @func0000000000000006

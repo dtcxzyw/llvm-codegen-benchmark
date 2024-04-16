@@ -31,7 +31,7 @@ entry:
   %4 = lshr i64 %3, 1
   %5 = mul nuw nsw i64 %4, 24
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

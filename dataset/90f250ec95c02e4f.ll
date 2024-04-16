@@ -10,7 +10,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = add nuw nsw i32 %4, 4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = add nuw nsw i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %4, -1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -56,7 +56,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

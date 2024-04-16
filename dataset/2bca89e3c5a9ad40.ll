@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, float %1) #0 {
 entry:
-  %2 = select i1 %0, float 2.550000e+02, float %1
-  %3 = fptosi float %2 to i32
-  %4 = trunc i32 %3 to i8
+  %2 = fptosi float %1 to i32
+  %3 = trunc i32 %2 to i8
+  %4 = select i1 %0, i8 -1, i8 %3
   ret i8 %4
 }
 

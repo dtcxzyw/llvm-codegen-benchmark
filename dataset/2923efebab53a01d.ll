@@ -8,10 +8,10 @@ define i64 @func0000000000000040(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %1, %4
-  %6 = add i64 %0, -1
-  %7 = sub i64 %6, %5
-  ret i64 %7
+  %.neg = sub i64 %4, %1
+  %5 = add i64 %0, -1
+  %6 = add i64 %.neg, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

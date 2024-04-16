@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fsub float %1, %2
-  %4 = fsub float 1.000000e+00, %3
+  %3 = fsub float %2, %1
+  %4 = fadd float %3, 1.000000e+00
   %5 = fneg float %0
   %6 = tail call float @llvm.fmuladd.f32(float %5, float %4, float 1.000000e+00)
   ret float %6

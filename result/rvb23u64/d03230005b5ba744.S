@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a3, a0
-	addw	a4, a1, a2
+	addw	a4, a2, a1
 	sltu	a3, a3, a4
 	subw	a0, a0, a1
 	czero.eqz	a0, a0, a3
@@ -9,7 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000011a:                   # @func000000000000011a
 	sext.w	a3, a0
-	addw	a4, a1, a2
+	addw	a4, a2, a1
 	slt	a3, a3, a4
 	subw	a0, a0, a1
 	czero.eqz	a0, a0, a3

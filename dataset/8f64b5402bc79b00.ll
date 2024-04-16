@@ -49,7 +49,7 @@ define i1 @func0000000000000065(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %1, i64 4)
   %3 = shl nuw i64 %2, 4
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 
@@ -66,7 +66,7 @@ define i1 @func0000000000000075(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %1, i64 4)
   %3 = shl nuw nsw i64 %2, 4
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 
@@ -79,7 +79,7 @@ define i1 @func0000000000000045(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %1, i64 4)
   %3 = shl i64 %2, 6
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 

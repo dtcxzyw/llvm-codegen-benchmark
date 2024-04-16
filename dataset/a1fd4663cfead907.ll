@@ -35,7 +35,7 @@
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float 2.000000e+00, %2
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = select i1 %0, float 0.000000e+00, float %4
   ret float %5
 }

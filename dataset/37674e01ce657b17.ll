@@ -17,7 +17,7 @@ entry:
 define i32 @func0000000000000016(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 9, i32 7
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp slt i32 %3, 130
   %5 = sext i1 %4 to i32
   ret i32 %5

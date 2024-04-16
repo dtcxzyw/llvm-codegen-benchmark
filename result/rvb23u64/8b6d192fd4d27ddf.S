@@ -6,8 +6,8 @@ func000000000000004a:                   # @func000000000000004a
 	add	a0, a0, a2
 	ret
 func0000000000000052:                   # @func0000000000000052
-	mul	a5, a3, a4
-	mulhu	a4, a2, a4
+	mul	a5, a4, a3
+	mulhu	a4, a4, a2
 	add	a4, a4, a5
 	mul	a3, a3, a0
 	mulhu	a5, a0, a2

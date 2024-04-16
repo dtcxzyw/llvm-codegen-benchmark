@@ -8,9 +8,9 @@
 define i1 @func0000000000000018(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp ne i32 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000030(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %1, %3
+  %4 = or disjoint i8 %3, %1
   %5 = icmp ugt i8 %4, 98
   %6 = or i1 %5, %0
   ret i1 %6

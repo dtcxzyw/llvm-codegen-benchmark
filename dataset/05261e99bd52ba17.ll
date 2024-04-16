@@ -11,7 +11,7 @@ entry:
   %4 = add i8 %1, -48
   %5 = add nuw nsw i8 %4, %3
   %6 = zext nneg i8 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = add i8 %1, -48
   %5 = add nuw nsw i8 %4, %3
   %6 = zext nneg i8 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

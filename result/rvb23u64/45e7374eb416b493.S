@@ -18,8 +18,7 @@ func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
-	snez	a1, a1
-	li	a2, 16
-	sub	a0, a2, a0
-	sub	a0, a0, a1
+	seqz	a1, a1
+	sub	a0, a1, a0
+	addi	a0, a0, 15
 	ret

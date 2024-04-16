@@ -22,12 +22,9 @@ func000000000000006c:                   # @func000000000000006c
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	sext.w	a0, a0
-	lui	a3, 16
-	addiw	a3, a3, -1024
-	and	a2, a2, a3
-	li	a3, 27
-	slli	a3, a3, 11
-	xor	a2, a2, a3
+	slli	a2, a2, 48
+	srli	a2, a2, 58
+	addi	a2, a2, -54
 	seqz	a2, a2
 	slt	a0, a0, a1
 	and	a0, a0, a2
@@ -35,12 +32,9 @@ func0000000000000061:                   # @func0000000000000061
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
 	sext.w	a0, a0
-	lui	a3, 16
-	addiw	a3, a3, -1024
-	and	a2, a2, a3
-	li	a3, 27
-	slli	a3, a3, 11
-	xor	a2, a2, a3
+	slli	a2, a2, 48
+	srli	a2, a2, 58
+	addi	a2, a2, -54
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

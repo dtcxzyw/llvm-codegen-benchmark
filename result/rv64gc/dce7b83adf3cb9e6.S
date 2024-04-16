@@ -38,7 +38,7 @@ func000000000000007c:                   # @func000000000000007c
 	sext.w	a1, a1
 	slli	a1, a1, 3
 	addi	a1, a1, 8
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func000000000000007f:                   # @func000000000000007f
 	sext.w	a1, a1

@@ -74,10 +74,9 @@
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %0, i64 %5
-  ret ptr %6
+  %.neg = sdiv exact i64 %3, -40
+  %4 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %0, i64 %.neg
+  ret ptr %4
 }
 
 ; 134 occurrences:
@@ -219,10 +218,9 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %0, i64 %5
-  ret ptr %6
+  %.neg = sdiv exact i64 %3, -40
+  %4 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %0, i64 %.neg
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

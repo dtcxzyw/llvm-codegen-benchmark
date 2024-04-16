@@ -85,9 +85,8 @@ entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.TCGArgConstraint.1662922, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.TCGArgConstraint.1662922, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -119,9 +118,8 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.Mig_Obj_t_.1771271, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr %struct.Mig_Obj_t_.1771271, ptr %0, i64 %4, i32 0, i64 3
+  ret ptr %5
 }
 
 ; 1 occurrences:

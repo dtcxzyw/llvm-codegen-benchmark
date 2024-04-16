@@ -35,9 +35,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %0, %1
-  %5 = select i1 %4, i32 -1, i32 %3
-  ret i32 %5
+  %.not = icmp eq i32 %0, %1
+  %4 = select i1 %.not, i32 %3, i32 -1
+  ret i32 %4
 }
 
 ; 5 occurrences:

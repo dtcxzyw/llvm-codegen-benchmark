@@ -10,17 +10,18 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 255
 	sltiu	a0, a0, 6
 	ret
+.LCPI1_0:
+	.quad	96076792050570581               # 0x155555555555555
 func000000000000000c:                   # @func000000000000000c
 	lui	a1, 699051
 	addiw	a1, a1, -1365
 	slli	a2, a1, 32
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a1, a1, a2
-	mulhu	a1, a0, a1
-	srli	a1, a1, 7
-	sh1add	a1, a1, a1
-	slli	a1, a1, 6
-	subw	a0, a0, a1
-	snez	a0, a0
+	mul	a0, a0, a1
+	rori	a0, a0, 6
+	sltu	a0, a3, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
 	addi	sp, sp, -16
@@ -36,17 +37,17 @@ func0000000000000038:                   # @func0000000000000038
 	addi	sp, sp, 16
 	ret
 .LCPI3_0:
-	.quad	-2972493582642298179            # 0xd6bf94d5e57a42bd
+	.quad	-1944670517645719899            # 0xe5032477ae8d46a5
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	mulhu	a1, a0, a1
-	srli	a1, a1, 23
-	lui	a2, 2441
-	addi	a2, a2, 1664
-	mul	a1, a1, a2
-	subw	a0, a0, a1
-	seqz	a0, a0
+	mul	a0, a0, a1
+	rori	a0, a0, 7
+	lui	a1, 109951
+	addiw	a1, a1, 667
+	slli	a1, a1, 12
+	addi	a1, a1, -1077
+	sltu	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	zext.w	a1, a0
@@ -62,17 +63,17 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 .LCPI5_0:
-	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
+	.quad	-8116567392432202711            # 0x8f5c28f5c28f5c29
+.LCPI5_1:
+	.quad	184467440737095517              # 0x28f5c28f5c28f5d
 func0000000000000031:                   # @func0000000000000031
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
-	srli	a2, a0, 2
-	mulhu	a1, a2, a1
-	srli	a1, a1, 2
-	li	a2, 100
-	mul	a1, a1, a2
-	subw	a0, a0, a1
-	seqz	a0, a0
+	lui	a2, %hi(.LCPI5_1)
+	ld	a2, %lo(.LCPI5_1)(a2)
+	mul	a0, a0, a1
+	rori	a0, a0, 2
+	sltu	a0, a0, a2
 	ret
 .LCPI6_0:
 	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
@@ -88,15 +89,34 @@ func0000000000000034:                   # @func0000000000000034
 	sltiu	a0, a0, 20
 	ret
 .LCPI7_0:
-	.quad	-8446744073709551616            # 0x8ac7230489e80000
+	.quad	-7827158881146702364            # 0x93605877b8b4f5e4
+.LCPI7_1:
+	.quad	2788135333942382101             # 0x26b172506559ce15
+.LCPI7_2:
+	.quad	-2865251455325256885            # 0xd83c94fb6d2ac34b
 func0000000000000021:                   # @func0000000000000021
-	addi	sp, sp, -16
-	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	lui	a2, %hi(.LCPI7_0)
 	ld	a2, %lo(.LCPI7_0)(a2)
-	li	a3, 0
-	call	__umodti3
-	seqz	a0, a0
-	ld	ra, 8(sp)                       # 8-byte Folded Reload
-	addi	sp, sp, 16
+	lui	a3, %hi(.LCPI7_1)
+	ld	a3, %lo(.LCPI7_1)(a3)
+	mul	a2, a2, a0
+	mulhu	a4, a0, a3
+	add	a2, a2, a4
+	mul	a1, a1, a3
+	add	a1, a1, a2
+	srli	a2, a1, 19
+	mul	a0, a0, a3
+	slli	a3, a0, 45
+	or	a2, a2, a3
+	addi	a3, a2, -1
+	seqz	a2, a2
+	czero.eqz	a2, a2, a3
+	lui	a4, %hi(.LCPI7_2)
+	ld	a4, %lo(.LCPI7_2)(a4)
+	slli	a1, a1, 45
+	srli	a0, a0, 19
+	or	a0, a0, a1
+	sltu	a0, a0, a4
+	czero.nez	a0, a0, a3
+	or	a0, a0, a2
 	ret

@@ -19,7 +19,7 @@ define i1 @func0000000000000422(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr %struct.sk_buff_head.2013655, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   %6 = icmp eq ptr %0, null
   %7 = or i1 %5, %6
   ret i1 %7
@@ -32,7 +32,7 @@ define i1 @func0000000000000522(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr %union.ListCell.2119505, ptr %1, i64 %3
-  %5 = icmp uge ptr %0, %4
+  %5 = icmp ule ptr %4, %0
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7
@@ -45,7 +45,7 @@ define i1 @func0000000000000022(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr %struct.dlist_head.2119978, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7
@@ -63,7 +63,7 @@ define i1 @func0000000000000222(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7

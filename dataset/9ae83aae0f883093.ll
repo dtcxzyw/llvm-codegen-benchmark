@@ -30,10 +30,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2048
-  %4 = select i1 %3, i32 %1, i32 64
-  %5 = and i32 %0, 63
-  %6 = icmp ult i32 %5, %4
+  %3 = icmp ugt i32 %2, 2047
+  %4 = and i32 %0, 63
+  %5 = icmp ult i32 %4, %1
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 

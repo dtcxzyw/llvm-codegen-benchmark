@@ -5,11 +5,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
+  %2 = icmp ugt i64 %1, 4294967295
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 11 occurrences:
@@ -27,11 +25,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
+  %2 = icmp ugt i64 %1, 4294967295
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 24 occurrences:
@@ -62,11 +58,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
+  %2 = icmp ult i64 %1, 4294967296
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -75,11 +69,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 42
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
+  %2 = icmp ugt i64 %1, 4398046511103
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -99,11 +91,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 3
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
+  %2 = and i64 %1, 17179869184
+  %3 = icmp ne i64 %2, 0
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -147,11 +138,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i16 %1) #0 {
 entry:
-  %2 = lshr i16 %1, 8
-  %3 = trunc nuw i16 %2 to i8
-  %4 = icmp eq i8 %3, 4
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
+  %.mask = and i16 %1, -256
+  %2 = icmp eq i16 %.mask, 1024
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 1 occurrences:

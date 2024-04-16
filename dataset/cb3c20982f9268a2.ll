@@ -642,8 +642,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 3
   %3 = and i32 %2, 524287
   %4 = or disjoint i32 %3, 524288
   ret i32 %4

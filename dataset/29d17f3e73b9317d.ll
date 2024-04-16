@@ -14,10 +14,10 @@
 define ptr @func0000000000000009(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub nsw i64 23, %3
-  %5 = add i64 %4, %1
-  %6 = getelementptr inbounds [24 x i8], ptr %0, i64 0, i64 %5
-  ret ptr %6
+  %reass.sub = sub i64 %1, %3
+  %4 = add i64 %reass.sub, 23
+  %5 = getelementptr inbounds [24 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -31,10 +31,10 @@ entry:
 define ptr @func0000000000000029(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = sub nsw i64 23, %3
-  %5 = add i64 %4, %1
-  %6 = getelementptr inbounds [24 x i8], ptr %0, i64 0, i64 %5
-  ret ptr %6
+  %reass.sub = sub i64 %1, %3
+  %4 = add i64 %reass.sub, 23
+  %5 = getelementptr inbounds [24 x i8], ptr %0, i64 0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -36,8 +36,8 @@ define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 -1074, i32 %0
-  %5 = sub nuw nsw i32 17, %4
+  %4 = sub nuw nsw i32 17, %0
+  %5 = select i1 %3, i32 1091, i32 %4
   ret i32 %5
 }
 

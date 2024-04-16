@@ -11,7 +11,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 1.000000e+00
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp uno float %2, 0.000000e+00
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

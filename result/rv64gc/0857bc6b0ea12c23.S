@@ -54,7 +54,7 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
 	seqz	a2, a2
 	and	a0, a0, a2
-	andi	a1, a1, 255
+	andi	a1, a1, 254
 	sltiu	a1, a1, 6
 	not	a1, a1
 	and	a0, a0, a1

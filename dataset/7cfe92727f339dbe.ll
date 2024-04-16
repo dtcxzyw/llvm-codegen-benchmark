@@ -177,7 +177,7 @@ entry:
   %3 = select i1 %2, i32 1040, i32 16
   %4 = and i32 %1, -31
   %5 = or i32 %4, %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

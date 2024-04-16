@@ -112,9 +112,9 @@ entry:
 define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i64 0, i64 %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

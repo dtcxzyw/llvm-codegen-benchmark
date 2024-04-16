@@ -32,9 +32,9 @@ entry:
 define i8 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = and i8 %0, -2
+  %3 = and i8 %0, -4
   %4 = or disjoint i8 %3, %2
-  %5 = or i8 %4, 2
+  %5 = or disjoint i8 %4, 2
   ret i8 %5
 }
 

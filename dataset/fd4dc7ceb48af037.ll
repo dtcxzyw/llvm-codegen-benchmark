@@ -11,10 +11,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds [2 x %"class.std::unordered_map.523.1649133"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 48
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
+  %3 = getelementptr inbounds [2 x %"class.std::unordered_map.523.1649133"], ptr %1, i64 0, i64 %2, i32 0, i32 5
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -36,10 +35,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  %5 = icmp ult ptr %4, %0
-  ret i1 %5
+  %3 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %1, i64 0, i64 %2, i32 1
+  %4 = icmp ult ptr %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

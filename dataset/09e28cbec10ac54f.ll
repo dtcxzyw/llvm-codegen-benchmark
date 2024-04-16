@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i64 8, i64 %2
-  %5 = icmp ult i64 %4, 8
-  ret i1 %5
+  %2 = icmp ne i64 %0, 0
+  %3 = icmp ult i32 %1, 8
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -20,11 +19,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = icmp eq i32 %0, -1
-  %4 = select i1 %3, i32 0, i32 %2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %2 = icmp eq i32 %0, -1
+  %3 = icmp eq i16 %1, 0
+  %4 = select i1 %2, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -35,11 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i8 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = icmp eq i8 %0, 4
-  %4 = select i1 %3, i32 10, i32 %2
-  %5 = icmp ugt i32 %4, 13
-  ret i1 %5
+  %2 = icmp ne i8 %0, 4
+  %3 = icmp ugt i16 %1, 13
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -47,11 +44,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000114(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = icmp eq i64 %0, 1
-  %4 = select i1 %3, i64 1, i64 %2
-  %5 = icmp ult i64 %4, 16
-  ret i1 %5
+  %2 = icmp eq i64 %0, 1
+  %3 = icmp ult i32 %1, 16
+  %4 = select i1 %2, i1 true, i1 %3
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

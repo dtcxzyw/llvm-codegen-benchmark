@@ -5,8 +5,8 @@
 define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = select i1 %0, i16 0, i16 %3
-  %5 = icmp ult i16 %4, 2
+  %4 = icmp ult i16 %3, 2
+  %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -20,8 +20,8 @@ entry:
 define i1 @func0000000000000011(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = select i1 %0, i16 0, i16 %3
-  %5 = icmp eq i16 %4, 0
+  %4 = icmp eq i16 %3, 0
+  %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -31,8 +31,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = select i1 %0, i32 16, i32 %3
-  %5 = icmp eq i32 %4, 0
+  %4 = icmp eq i32 %3, 0
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 

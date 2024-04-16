@@ -5,9 +5,9 @@
 define i32 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = lshr i64 %3, 42
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = and i32 %5, 4193280
   ret i32 %6
 }
@@ -19,9 +19,9 @@ entry:
 define i32 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = lshr i64 %3, 42
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = and i32 %5, 4193280
   ret i32 %6
 }
@@ -79,7 +79,7 @@ entry:
 define i8 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = lshr i32 %3, 6
   %5 = trunc i32 %4 to i8
   %6 = and i8 %5, 63

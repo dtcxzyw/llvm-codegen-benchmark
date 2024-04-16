@@ -1,6 +1,8 @@
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a1, -432
-	srli	a1, a1, 27
+	lui	a2, 1015808
+	addiw	a3, a2, -432
+	add	a1, a1, a3
+	sltu	a1, a1, a2
 	czero.nez	a0, a0, a1
 	lui	a2, 4096
 	czero.eqz	a1, a2, a1
@@ -24,15 +26,15 @@ func0000000000000031:                   # @func0000000000000031
 	czero.eqz	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	lui	a2, 2
-	addiw	a2, a2, -193
-	add	a1, a1, a2
-	li	a2, 125
+	li	a2, -125
 	slli	a2, a2, 26
-	addi	a2, a2, -125
+	addi	a3, a2, 127
+	slli	a3, a3, 12
+	addi	a3, a3, -193
+	add	a1, a1, a3
+	addi	a2, a2, 125
 	slli	a2, a2, 12
-	addi	a2, a2, -1
-	sltu	a1, a2, a1
+	sltu	a1, a1, a2
 	czero.nez	a0, a0, a1
 	li	a2, -59
 	zext.w	a2, a2

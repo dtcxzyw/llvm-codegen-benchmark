@@ -85,8 +85,10 @@ func000000000000011a:                   # @func000000000000011a
 func0000000000000111:                   # @func0000000000000111
 	andi	a1, a1, 255
 	addi	a1, a1, -10
-	seqz	a1, a1
-	sub	a0, a0, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000114:                   # @func0000000000000114
@@ -143,8 +145,9 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sltiu	a1, a1, 7
-	xori	a1, a1, 1
-	subw	a0, a0, a1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000188:                   # @func0000000000000188

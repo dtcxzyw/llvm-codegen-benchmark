@@ -186,8 +186,8 @@
 define i32 @func0000000000000003(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1792
-  %4 = select i1 %1, i16 0, i16 %3
-  %5 = zext nneg i16 %4 to i32
+  %4 = zext nneg i16 %3 to i32
+  %5 = select i1 %1, i32 0, i32 %4
   %6 = and i32 %0, -65281
   %7 = or disjoint i32 %6, %5
   ret i32 %7

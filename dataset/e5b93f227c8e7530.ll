@@ -73,7 +73,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i64
+  %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, 2882338748320710657
   %5 = icmp ne i64 %4, 0

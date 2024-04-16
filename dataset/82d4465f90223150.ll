@@ -9,8 +9,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = ashr exact i64 %2, 5
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = and i64 %4, -4
-  %6 = icmp eq i64 %4, %5
+  %5 = and i64 %4, 3
+  %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 

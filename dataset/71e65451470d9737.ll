@@ -12,8 +12,8 @@ define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 14336
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp eq i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
   %5 = or i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = lshr exact i32 %2, 2
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

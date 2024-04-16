@@ -41,11 +41,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"struct.Assimp::MS3DImporter::TempVertex.1751164", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 12
-  %5 = add nuw nsw i64 %0, 1
-  %6 = getelementptr inbounds [4 x i32], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = add nuw nsw i64 %0, 1
+  %4 = getelementptr inbounds %"struct.Assimp::MS3DImporter::TempVertex.1751164", ptr %1, i64 %2, i32 1, i64 %3
+  ret ptr %4
 }
 
 ; 7 occurrences:
@@ -59,11 +57,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %struct.Lpk_Cut_t_.1771356, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 20
-  %5 = add nsw i64 %0, -1
-  %6 = getelementptr inbounds [100 x i32], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = add nsw i64 %0, -1
+  %4 = getelementptr inbounds %struct.Lpk_Cut_t_.1771356, ptr %1, i64 %2, i32 4, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -95,11 +91,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.send_queue.2025338, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = add nuw nsw i64 %0, 1
-  %6 = getelementptr [19 x %struct.scatterlist.2025327], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = add nuw nsw i64 %0, 1
+  %4 = getelementptr %struct.send_queue.2025338, ptr %1, i64 %2, i32 1, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:

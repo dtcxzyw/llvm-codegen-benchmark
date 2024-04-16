@@ -7,14 +7,13 @@ func000000000000000d:                   # @func000000000000000d
 .LBB0_2:                                # %entry
 	bnez	a1, .LBB0_4
 	addi	a1, a2, 63
-	j	.LBB0_5
+	srli	a1, a1, 6
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	ret
 .LBB0_4:
 	li	a1, -1
-	srli	a1, a1, 1
-.LBB0_5:                                # %entry
-	srli	a1, a1, 3
-	li	a2, -113
-	srli	a2, a2, 4
-	and	a1, a1, a2
+	srli	a1, a1, 7
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret

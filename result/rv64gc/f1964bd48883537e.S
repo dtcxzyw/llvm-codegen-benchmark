@@ -10,7 +10,8 @@ func0000000000000004:                   # @func0000000000000004
 	and	a2, a2, a3
 	and	a1, a1, a3
 	bgeu	a1, a2, .LBB2_2
-	li	a0, 31
-.LBB2_2:                                # %entry
+	li	a0, 8
+	ret
+.LBB2_2:
 	andi	a0, a0, 8
 	ret

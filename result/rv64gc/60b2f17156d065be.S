@@ -143,8 +143,8 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000057:                   # @func0000000000000057
 	slli	a2, a2, 56
-	bgez	a2, .LBB16_2
-	mv	a0, a1
+	bltz	a2, .LBB16_2
+	mv	a1, a0
 .LBB16_2:                               # %entry
-	addiw	a0, a0, 1
+	addiw	a0, a1, 1
 	ret

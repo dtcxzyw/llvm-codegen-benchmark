@@ -5,9 +5,10 @@
 define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %0, %3
-  %5 = sdiv i64 %1, 400
-  %6 = mul nsw i64 %5, -400
+  %4 = add i64 %3, %0
+  %.fr = freeze i64 %1
+  %5 = srem i64 %.fr, 400
+  %6 = sub i64 %5, %.fr
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -25,9 +26,10 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
-  %5 = sdiv i32 %1, 400
-  %6 = mul nsw i32 %5, -400
+  %4 = add nsw i32 %3, %0
+  %.fr = freeze i32 %1
+  %5 = srem i32 %.fr, 400
+  %6 = sub i32 %5, %.fr
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -40,7 +42,7 @@ entry:
   %3 = sdiv i32 %2, 6
   %4 = mul nsw i32 %3, 5
   %5 = sext i1 %1 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

@@ -17,9 +17,9 @@ entry:
   %3 = add i64 %1, %2
   %4 = icmp ult i64 %3, %0
   %5 = select i1 %4, i64 0, i64 %0
-  %6 = sub i64 %3, %5
-  %7 = sub i64 %0, %6
-  ret i64 %7
+  %.neg = sub i64 %5, %3
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

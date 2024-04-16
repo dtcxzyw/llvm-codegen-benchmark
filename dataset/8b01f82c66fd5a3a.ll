@@ -734,8 +734,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 2139095040
-  %2 = icmp ugt i32 %1, 16777215
+  %1 = and i32 %0, 2130706432
+  %2 = icmp ne i32 %1, 0
   %3 = and i32 %0, 8388607
   %4 = icmp eq i32 %3, 0
   %5 = and i1 %4, %2

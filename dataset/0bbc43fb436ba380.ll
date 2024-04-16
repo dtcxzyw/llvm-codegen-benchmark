@@ -6,12 +6,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 3
-  %3 = trunc i64 %2 to i32
-  %4 = lshr i32 %3, 31
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %sum.shift = lshr i64 %1, 34
+  %2 = and i64 %sum.shift, 1
+  %3 = getelementptr inbounds i8, ptr %0, i64 %2
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -20,12 +18,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = lshr i32 %3, 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %sum.shift = lshr i64 %1, 33
+  %2 = getelementptr inbounds i8, ptr %0, i64 %sum.shift
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

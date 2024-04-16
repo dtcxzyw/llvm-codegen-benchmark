@@ -6,8 +6,8 @@
 define i32 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
-  %3 = select i1 %2, i32 1, i32 -1
-  %4 = mul nsw i32 %3, %0
+  %3 = sub nsw i32 0, %0
+  %4 = select i1 %2, i32 %0, i32 %3
   ret i32 %4
 }
 
@@ -18,8 +18,8 @@ entry:
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
-  %3 = select i1 %2, i32 1, i32 -1
-  %4 = mul i32 %3, %0
+  %3 = sub i32 0, %0
+  %4 = select i1 %2, i32 %0, i32 %3
   ret i32 %4
 }
 
@@ -38,8 +38,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
-  %3 = select i1 %2, i32 1, i32 -1
-  %4 = mul nsw i32 %3, %0
+  %3 = sub nsw i32 0, %0
+  %4 = select i1 %2, i32 %0, i32 %3
   ret i32 %4
 }
 
@@ -133,9 +133,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp sgt i32 %1, -1
-  %3 = select i1 %2, i32 1, i32 -1
-  %4 = mul i32 %3, %0
+  %2 = sub i32 0, %0
+  %3 = icmp slt i32 %1, 0
+  %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
@@ -158,7 +158,7 @@ define i32 @func0000000000000020(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 13
   %3 = select i1 %2, i32 72, i32 48
-  %4 = mul i32 %0, %3
+  %4 = mul i32 %3, %0
   ret i32 %4
 }
 
@@ -181,7 +181,7 @@ define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 10
   %3 = select i1 %2, i32 10, i32 16
-  %4 = mul i32 %0, %3
+  %4 = mul i32 %3, %0
   ret i32 %4
 }
 
@@ -192,7 +192,7 @@ define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 200
   %3 = select i1 %2, i32 200, i32 900
-  %4 = mul nsw i32 %0, %3
+  %4 = mul nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -201,10 +201,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 18, i32 12
-  %4 = mul nsw i32 %0, %3
-  ret i32 %4
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 12, i32 18
+  %3 = mul nsw i32 %2, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

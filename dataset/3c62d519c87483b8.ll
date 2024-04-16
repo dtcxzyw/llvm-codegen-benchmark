@@ -53,7 +53,7 @@ define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 11
   %3 = and i32 %2, 2047
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = icmp ugt i32 %4, 2048
   ret i1 %5
 }
@@ -73,7 +73,7 @@ define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 63
-  %4 = add nuw nsw i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -98,7 +98,7 @@ define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 1073741816
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = icmp ugt i64 %4, 32768
   ret i1 %5
 }
@@ -117,8 +117,8 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
   %3 = and i32 %2, 1
-  %4 = add i32 %0, %3
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -130,8 +130,8 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
   %3 = and i32 %2, 1
-  %4 = add i32 %3, %0
-  %5 = icmp ne i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp ne i32 %3, %4
   ret i1 %5
 }
 
@@ -198,7 +198,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 7
   %3 = and i64 %2, 31
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = icmp ult i64 %4, 33
   ret i1 %5
 }
@@ -219,7 +219,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 7
   %3 = and i64 %2, 31
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = icmp ugt i64 %4, 32
   ret i1 %5
 }
@@ -232,7 +232,7 @@ define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = icmp slt i64 %4, 289
   ret i1 %5
 }
@@ -247,7 +247,7 @@ define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 120
-  %4 = add nsw i8 %0, %3
+  %4 = add nsw i8 %3, %0
   %5 = icmp ult i8 %4, 3
   ret i1 %5
 }

@@ -8,7 +8,7 @@ func000000000000000e:                   # @func000000000000000e
 	addi	sp, sp, -16
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	mul	a1, a1, a3
-	mulhu	a4, a0, a3
+	mulhu	a4, a3, a0
 	add	a1, a1, a4
 	mul	a0, a0, a3
 	zext.w	a2, a2
@@ -35,7 +35,7 @@ func0000000000000006:                   # @func0000000000000006
 	addi	sp, sp, -16
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	mul	a1, a1, a3
-	mulhu	a4, a0, a3
+	mulhu	a4, a3, a0
 	add	a1, a1, a4
 	mul	a0, a0, a3
 	zext.w	a2, a2

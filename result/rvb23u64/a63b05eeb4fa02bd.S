@@ -20,7 +20,7 @@ func0000000000000045:                   # @func0000000000000045
 	bnez	a0, .LBB1_2
 	fmv.d	fa4, fa2
 .LBB1_2:                                # %entry
-	fmul.d	fa4, fa1, fa4
+	fmul.d	fa4, fa4, fa1
 	fdiv.d	fa4, fa4, fa0
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1

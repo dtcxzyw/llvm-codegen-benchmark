@@ -13,9 +13,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 2
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  ret ptr %6
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

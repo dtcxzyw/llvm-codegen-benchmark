@@ -7,7 +7,7 @@ entry:
   %3 = sub i32 9, %2
   %4 = zext nneg i32 %3 to i64
   %5 = zext i16 %1 to i64
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   %7 = lshr i64 %6, %4
   ret i64 %7
 }

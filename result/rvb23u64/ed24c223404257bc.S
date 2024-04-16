@@ -25,10 +25,11 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	srli	a5, a4, 63
+	srli	a6, a4, 63
+	slli	a5, a4, 1
 	sh1add	a4, a4, a0
-	sltu	a0, a4, a0
-	add	a1, a1, a5
+	sltu	a0, a4, a5
+	add	a1, a1, a6
 	add	a1, a1, a0
 	srli	a0, a2, 31
 	slli	a3, a3, 33

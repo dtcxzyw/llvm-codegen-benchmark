@@ -7,8 +7,8 @@
 define i1 @func0000000000000076(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = icmp sge i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sle i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -19,8 +19,8 @@ entry:
 define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
-  %4 = icmp slt i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sgt i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -114,10 +114,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = icmp ult i64 %1, %3
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %.highbits = lshr i64 %1, %2
+  %3 = icmp eq i64 %.highbits, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -126,8 +126,8 @@ entry:
 define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = icmp eq i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -137,8 +137,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4096, %2
-  %4 = icmp ult i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ugt i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -149,8 +149,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 4096, %2
-  %4 = icmp ugt i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ult i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -160,8 +160,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 3, %2
-  %4 = icmp eq i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -171,8 +171,8 @@ entry:
 define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = icmp ugt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ult i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

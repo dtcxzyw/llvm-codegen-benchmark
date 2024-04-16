@@ -1,32 +1,36 @@
 func0000000000000069:                   # @func0000000000000069
-	sext.w	a2, a0
-	li	a3, -1086
-	bge	a3, a2, .LBB0_2
-	li	a0, 53
-	li	a1, 64
-	subw	a0, a1, a0
-	ret
-.LBB0_2:
+	mv	a2, a0
+	sext.w	a3, a0
 	andi	a1, a1, 1
-	addi	a0, a0, 1138
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	li	a1, 64
-	subw	a0, a1, a0
+	li	a0, 64
+	beqz	a1, .LBB0_3
+	li	a1, -1086
+	blt	a1, a3, .LBB0_4
+.LBB0_2:                                # %entry
+	ret
+.LBB0_3:                                # %entry
+	li	a0, -1074
+	subw	a0, a0, a2
+	li	a1, -1086
+	bge	a1, a3, .LBB0_2
+.LBB0_4:                                # %entry
+	li	a0, 11
 	ret
 func000000000000006b:                   # @func000000000000006b
-	sext.w	a2, a0
-	li	a3, -1086
-	bge	a3, a2, .LBB1_2
-	li	a0, 53
-	li	a1, 64
-	subw	a0, a1, a0
-	ret
-.LBB1_2:
+	mv	a2, a0
+	sext.w	a3, a0
 	andi	a1, a1, 1
-	addi	a0, a0, 1138
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	li	a1, 64
-	subw	a0, a1, a0
+	li	a0, 64
+	beqz	a1, .LBB1_3
+	li	a1, -1086
+	blt	a1, a3, .LBB1_4
+.LBB1_2:                                # %entry
+	ret
+.LBB1_3:                                # %entry
+	li	a0, -1074
+	subw	a0, a0, a2
+	li	a1, -1086
+	bge	a1, a3, .LBB1_2
+.LBB1_4:                                # %entry
+	li	a0, 11
 	ret

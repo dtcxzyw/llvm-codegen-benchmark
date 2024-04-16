@@ -24,9 +24,9 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = icmp eq i32 %4, 8192
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

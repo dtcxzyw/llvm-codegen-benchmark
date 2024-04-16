@@ -7,7 +7,7 @@ entry:
   %3 = tail call i16 @llvm.cttz.i16(i16 %2, i1 true), !range !0
   %4 = zext nneg i16 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = tail call i16 @llvm.cttz.i16(i16 %2, i1 true), !range !0
   %4 = zext nneg i16 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

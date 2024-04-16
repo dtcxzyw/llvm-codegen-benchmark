@@ -8,7 +8,7 @@ define i128 @func0000000000000005(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.fshr.i64(i64 %1, i64 %1, i64 %2)
   %4 = zext i64 %3 to i128
-  %5 = or disjoint i128 %0, %4
+  %5 = or disjoint i128 %4, %0
   ret i128 %5
 }
 

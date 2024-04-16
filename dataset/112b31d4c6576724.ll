@@ -6,7 +6,7 @@
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 1000000000
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 1000000
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add nsw i64 %3, 1
   ret i64 %4
 }

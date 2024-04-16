@@ -7,10 +7,10 @@
 define i8 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1114111
-  %2 = select i1 %1, i32 65533, i32 %0
-  %3 = trunc i32 %2 to i8
-  %4 = and i8 %3, 63
-  %5 = or disjoint i8 %4, -128
+  %2 = trunc i32 %0 to i8
+  %3 = and i8 %2, 63
+  %4 = or disjoint i8 %3, -128
+  %5 = select i1 %1, i8 -67, i8 %4
   ret i8 %5
 }
 
@@ -20,10 +20,10 @@ entry:
 define i8 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 4
-  %2 = select i1 %1, i64 65533, i64 %0
-  %3 = trunc i64 %2 to i8
-  %4 = and i8 %3, 63
-  %5 = or disjoint i8 %4, -128
+  %2 = trunc i64 %0 to i8
+  %3 = and i8 %2, 63
+  %4 = or disjoint i8 %3, -128
+  %5 = select i1 %1, i8 -67, i8 %4
   ret i8 %5
 }
 

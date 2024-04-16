@@ -14,6 +14,6 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000004:                   # @func0000000000000004
 	srli	a1, a0, 17
 	xor	a0, a0, a1
-	andi	a0, a0, 7
-	sltiu	a0, a0, 2
+	andi	a0, a0, 6
+	seqz	a0, a0
 	ret

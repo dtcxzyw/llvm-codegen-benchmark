@@ -1,10 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
 	subw	a0, a0, a1
-	slliw	a0, a0, 1
+	slli	a0, a0, 33
+	srli	a0, a0, 33
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	subw	a0, a0, a1
-	slliw	a0, a0, 1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	bexti	a0, a0, 30
 	ret

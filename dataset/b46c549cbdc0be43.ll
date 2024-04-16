@@ -153,7 +153,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }

@@ -9,7 +9,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = ashr exact i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 

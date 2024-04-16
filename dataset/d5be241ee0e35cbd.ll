@@ -16,9 +16,9 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 255
   %5 = shl i32 %0, %4
-  %6 = shl nuw i32 1, %1
-  %7 = sub i32 %5, %6
-  ret i32 %7
+  %.neg = shl nsw i32 -1, %1
+  %6 = add i32 %.neg, %5
+  ret i32 %6
 }
 
 ; 3 occurrences:
@@ -31,9 +31,9 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 255
   %5 = shl i32 %0, %4
-  %6 = shl nuw nsw i32 1, %1
-  %7 = sub i32 %5, %6
-  ret i32 %7
+  %.neg = shl nsw i32 -1, %1
+  %6 = add i32 %.neg, %5
+  ret i32 %6
 }
 
 ; 3 occurrences:
@@ -46,9 +46,9 @@ entry:
   %3 = sub i32 %1, %2
   %4 = and i32 %3, 255
   %5 = shl i32 %0, %4
-  %6 = shl nuw i32 1, %1
-  %7 = sub i32 %5, %6
-  ret i32 %7
+  %.neg = shl nsw i32 -1, %1
+  %6 = add i32 %.neg, %5
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

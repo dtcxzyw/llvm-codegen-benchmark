@@ -261,8 +261,8 @@ entry:
 define i1 @func0000000000000005(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp ule i64 %4, %0
+  %4 = icmp ule i64 %3, %0
+  %5 = select i1 %1, i1 true, i1 %4
   ret i1 %5
 }
 

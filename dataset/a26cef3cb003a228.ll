@@ -59,7 +59,7 @@ define i1 @func0000000000000110(i32 %0, i1 %1) #0 {
 entry:
   %2 = add i32 %0, -57344
   %3 = icmp ult i32 %2, 6400
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ugt i32 %0, 65535
   %6 = or i1 %5, %4
   ret i1 %6
@@ -98,7 +98,7 @@ define i1 @func0000000000000514(i32 %0, i1 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -65
   %3 = icmp ult i32 %2, 26
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp sgt i32 %0, 127
   %6 = or i1 %5, %4
   ret i1 %6

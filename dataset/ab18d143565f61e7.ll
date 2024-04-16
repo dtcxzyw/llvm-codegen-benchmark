@@ -6,10 +6,10 @@
 define i64 @func0000000000000007(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
-  %4 = zext nneg i32 %3 to i64
-  %5 = sub nuw nsw i64 64, %4
-  %6 = select i1 %0, i64 %5, i64 %1
-  ret i64 %6
+  %narrow = sub nuw nsw i32 64, %3
+  %4 = zext nneg i32 %narrow to i64
+  %5 = select i1 %0, i64 %4, i64 %1
+  ret i64 %5
 }
 
 ; 2 occurrences:

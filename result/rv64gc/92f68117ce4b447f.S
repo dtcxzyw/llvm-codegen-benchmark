@@ -1,8 +1,8 @@
 func00000000000000a4:                   # @func00000000000000a4
-	bgez	a1, .LBB0_2
-	mv	a1, a2
+	bltz	a1, .LBB0_2
+	mv	a2, a1
 .LBB0_2:                                # %entry
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a3, a1
@@ -16,10 +16,10 @@ func00000000000000aa:                   # @func00000000000000aa
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a3, a1, 255
 	andi	a0, a0, 255
-	bnez	a3, .LBB2_2
-	mv	a1, a2
+	beqz	a3, .LBB2_2
+	mv	a2, a1
 .LBB2_2:                                # %entry
-	andi	a1, a1, 255
+	andi	a1, a2, 255
 	sltu	a0, a1, a0
 	ret
 func0000000000000046:                   # @func0000000000000046

@@ -188,9 +188,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 14
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %union.acpi_object.2005468, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %union.acpi_object.2005468, ptr %0, i64 %3, i32 0, i32 2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

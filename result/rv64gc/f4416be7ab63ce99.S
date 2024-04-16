@@ -39,16 +39,16 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a2
 	ret
 func0000000000000020:                   # @func0000000000000020
-	add	a4, a4, a0
-	sltu	a5, a4, a0
+	add	a5, a4, a0
+	sltu	a4, a5, a4
 	slli	a0, a3, 8
 	srli	a2, a2, 56
 	or	a0, a0, a2
 	srli	a3, a3, 56
-	add	a0, a0, a4
-	sltu	a2, a0, a4
+	add	a0, a0, a5
+	sltu	a2, a0, a5
 	add	a1, a1, a3
-	add	a1, a1, a5
+	add	a1, a1, a4
 	add	a1, a1, a2
 	ret
 func000000000000003f:                   # @func000000000000003f

@@ -6,7 +6,7 @@ define i8 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 10
   %3 = add nsw i32 %2, %0
-  %4 = add nsw i32 %3, -56613888
+  %4 = add i32 %3, 10494976
   %5 = lshr i32 %4, 18
   %6 = trunc i32 %5 to i8
   ret i8 %6
@@ -32,8 +32,8 @@ entry:
 define i8 @func00000000000001e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = add nuw nsw i32 %0, %2
-  %4 = add nsw i32 %3, -56613888
+  %3 = add nuw nsw i32 %2, %0
+  %4 = add i32 %3, 10494976
   %5 = lshr i32 %4, 18
   %6 = trunc i32 %5 to i8
   ret i8 %6

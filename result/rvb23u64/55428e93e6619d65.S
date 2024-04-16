@@ -26,7 +26,8 @@ func0000000000001c38:                   # @func0000000000001c38
 	xori	a0, a0, 1
 	ret
 func000000000000061a:                   # @func000000000000061a
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	add	a0, a0, a1
 	slti	a0, a0, 2

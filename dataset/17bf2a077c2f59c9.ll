@@ -14,7 +14,7 @@ entry:
   %4 = shl nuw nsw i32 1, %1
   %5 = and i32 %4, %3
   %6 = icmp ne i32 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = shl nuw nsw i32 1, %1
   %5 = and i32 %4, %3
   %6 = icmp eq i32 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = shl nuw i32 1, %1
   %5 = and i32 %4, %3
   %6 = icmp ne i32 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 
@@ -53,7 +53,7 @@ entry:
   %4 = shl nuw i32 1, %1
   %5 = and i32 %4, %3
   %6 = icmp eq i32 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 

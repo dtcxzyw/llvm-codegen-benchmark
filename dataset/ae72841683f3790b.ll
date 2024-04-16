@@ -21,8 +21,8 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = or i64 %2, 7
-  %4 = icmp eq i64 %3, 23
+  %3 = and i64 %2, -8
+  %4 = icmp eq i64 %3, 16
   ret i1 %4
 }
 

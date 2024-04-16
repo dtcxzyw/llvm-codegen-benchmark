@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = lshr i32 %1, 5
-  %3 = xor i32 %2, 1
+  %1 = lshr i8 %0, 5
+  %2 = xor i8 %1, 1
+  %3 = zext nneg i8 %2 to i32
   ret i32 %3
 }
 
@@ -19,8 +19,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i64
-  %2 = lshr i64 %1, 4
+  %1 = lshr i8 %0, 4
+  %2 = zext nneg i8 %1 to i64
   %3 = xor i64 %2, 576460752303423487
   ret i64 %3
 }

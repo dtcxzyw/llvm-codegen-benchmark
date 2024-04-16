@@ -17,8 +17,8 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	slli	a1, a0, 33
-	srli	a1, a1, 53
+	lui	a1, 524032
+	and	a1, a1, a0
 	snez	a1, a1
 	slli	a0, a0, 44
 	srli	a0, a0, 44

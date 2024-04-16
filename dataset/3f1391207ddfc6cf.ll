@@ -88,11 +88,11 @@
 define i1 @func000000000000005a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 348, %1
-  %5 = add nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  %7 = and i1 %6, %0
-  ret i1 %7
+  %reass.sub = sub i32 %3, %1
+  %4 = add i32 %reass.sub, 348
+  %5 = icmp sgt i32 %4, 0
+  %6 = and i1 %5, %0
+  ret i1 %6
 }
 
 ; 7 occurrences:
@@ -107,11 +107,11 @@ entry:
 define i1 @func000000000000025a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = sub nsw i32 348, %1
-  %5 = add nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  %7 = and i1 %6, %0
-  ret i1 %7
+  %reass.sub = sub i32 %3, %1
+  %4 = add i32 %reass.sub, 348
+  %5 = icmp sgt i32 %4, 0
+  %6 = and i1 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

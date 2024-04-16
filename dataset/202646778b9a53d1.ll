@@ -203,10 +203,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 1
-  %3 = shl nuw i32 %0, 31
-  %4 = or disjoint i32 %3, %2
-  ret i32 %4
+  %2 = call i32 @llvm.fshl.i32(i32 %0, i32 %1, i32 31)
+  ret i32 %2
 }
 
 ; 4 occurrences:
@@ -223,4 +221,8 @@ entry:
   ret i32 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.fshl.i32(i32, i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

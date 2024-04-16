@@ -10,7 +10,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = xor i8 %2, -1
   %4 = ashr i64 %0, 63
-  %5 = trunc i64 %4 to i8
+  %5 = trunc nsw i64 %4 to i8
   %6 = or i8 %5, %3
   ret i8 %6
 }

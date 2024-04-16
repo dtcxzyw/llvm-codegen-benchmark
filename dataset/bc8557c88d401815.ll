@@ -5,8 +5,9 @@
 define i1 @func00000000000000f1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, 1
-  %5 = select i1 %0, i32 %3, i32 %4
+  %not. = xor i1 %0, true
+  %4 = zext i1 %not. to i32
+  %5 = or i32 %3, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

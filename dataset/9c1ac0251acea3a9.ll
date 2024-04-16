@@ -10,8 +10,8 @@ entry:
   %3 = freeze i8 %2
   %4 = add i8 %3, -97
   %5 = icmp ult i8 %4, 26
-  %6 = or i1 %1, %5
-  %7 = or i1 %0, %6
+  %6 = or i1 %5, %1
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

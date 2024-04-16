@@ -5,10 +5,9 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = and i32 %1, -4
-  %3 = add i32 %2, 4
-  %4 = lshr i32 %3, 24
-  ret i32 %4
+  %2 = add i32 %1, 4
+  %3 = lshr i32 %2, 24
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -29,9 +28,9 @@ entry:
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = and i32 %1, 255
+  %2 = and i32 %1, 252
   %3 = add nsw i32 %2, -32
-  %4 = lshr i32 %3, 2
+  %4 = lshr exact i32 %3, 2
   ret i32 %4
 }
 
@@ -42,7 +41,7 @@ entry:
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = and i32 %1, 255
+  %2 = and i32 %1, 252
   %3 = add nsw i32 %2, -16
   %4 = lshr exact i32 %3, 2
   ret i32 %4

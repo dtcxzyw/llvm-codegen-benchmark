@@ -6,10 +6,9 @@
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = and i64 %0, 65535
-  %4 = mul nuw nsw i64 %3, %2
-  %5 = and i64 %4, 65535
-  ret i64 %5
+  %3 = mul i64 %2, %0
+  %4 = and i64 %3, 65535
+  ret i64 %4
 }
 
 ; 7 occurrences:
@@ -23,11 +22,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i16
-  %3 = and i16 %0, 255
-  %4 = mul nuw i16 %3, %2
-  %5 = and i16 %4, 255
-  ret i16 %5
+  %.tr = trunc i16 %0 to i8
+  %.narrow = mul i8 %.tr, %1
+  %2 = zext i8 %.narrow to i16
+  ret i16 %2
 }
 
 attributes #0 = { nounwind }

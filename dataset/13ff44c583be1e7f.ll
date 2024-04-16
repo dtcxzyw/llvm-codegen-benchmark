@@ -15,10 +15,8 @@
 define i1 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 4
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 15)
-  %3 = extractvalue { i64, i1 } %2, 1
-  %4 = xor i1 %3, true
-  ret i1 %4
+  %2 = icmp ult i64 %1, -15
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

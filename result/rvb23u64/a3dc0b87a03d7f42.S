@@ -35,9 +35,8 @@ func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 62
 	srli	a1, a1, 33
 	or	a0, a0, a1
-	sext.w	a1, a0
-	slti	a1, a1, 0
-	czero.eqz	a0, a0, a1
+	sext.w	a0, a0
+	min	a0, a0, zero
 	ret
 func0000000000000074:                   # @func0000000000000074
 	slli	a1, a1, 59

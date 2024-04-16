@@ -16,7 +16,7 @@
 define double @func0000000000000000(double %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = uitofp i64 %4 to double
   %6 = fdiv double %5, %0
   ret double %6
@@ -29,7 +29,7 @@ entry:
 define double @func0000000000000006(double %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = add nuw nsw i128 %1, %3
+  %4 = add nuw nsw i128 %3, %1
   %5 = uitofp i128 %4 to double
   %6 = fdiv double %5, %0
   ret double %6

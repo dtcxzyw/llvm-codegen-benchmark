@@ -7,12 +7,10 @@
 ; Function Attrs: nounwind
 define i16 @func000000000000006c(i16 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = sub nuw nsw i32 11, %2
-  %4 = zext i16 %0 to i32
-  %5 = shl nuw nsw i32 %4, %3
-  %6 = trunc i32 %5 to i16
-  ret i16 %6
+  %2 = zext i8 %1 to i16
+  %3 = sub nsw i16 11, %2
+  %4 = shl i16 %0, %3
+  ret i16 %4
 }
 
 ; 3 occurrences:

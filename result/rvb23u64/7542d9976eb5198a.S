@@ -1,18 +1,18 @@
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 255
+	zext.h	a1, a1
 	czero.eqz	a0, a1, a0
-	zext.h	a0, a0
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a2, -2
 	zext.w	a2, a2
 	sltu	a0, a2, a0
+	zext.w	a1, a1
 	czero.nez	a1, a1, a0
 	lui	a2, 65536
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
-	zext.w	a0, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 255

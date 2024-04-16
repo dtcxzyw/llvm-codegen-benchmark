@@ -7,11 +7,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
-  %4 = and i32 %3, 15
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = tail call i32 @llvm.umin.i32(i32 %5, i32 10)
-  %7 = zext nneg i32 %6 to i64
+  %3 = and i32 %2, 15
+  %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 10)
+  %5 = zext nneg i32 %4 to i64
+  %6 = select i1 %1, i64 6, i64 %5
+  %7 = select i1 %0, i64 0, i64 %6
   ret i64 %7
 }
 

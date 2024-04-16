@@ -20,9 +20,9 @@
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
-  %4 = select i1 %3, i32 0, i32 %2
-  %5 = and i32 %4, 1
-  %6 = icmp eq i32 %5, 0
+  %4 = and i32 %2, 1
+  %5 = icmp eq i32 %4, 0
+  %6 = or i1 %3, %5
   %7 = select i1 %6, i32 %0, i32 %1
   ret i32 %7
 }

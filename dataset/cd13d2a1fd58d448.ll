@@ -259,7 +259,7 @@ entry:
   %4 = getelementptr inbounds i64, ptr %0, i64 %3
   %5 = select i1 %1, i64 -8, i64 0
   %6 = getelementptr inbounds i8, ptr %4, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

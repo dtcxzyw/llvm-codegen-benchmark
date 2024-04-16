@@ -16,7 +16,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -27,11 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i32
-  %4 = or i32 %1, %3
-  %5 = or i32 %0, %4
-  %6 = icmp ugt i32 %5, -2130706433
-  ret i1 %6
+  %3 = or i32 %1, %0
+  %4 = icmp ugt i32 %3, -2130706433
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -43,8 +41,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = or i64 %1, %3
-  %5 = or i64 %0, %4
+  %4 = or i64 %3, %1
+  %5 = or i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }

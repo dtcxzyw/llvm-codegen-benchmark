@@ -33,7 +33,7 @@ entry:
 define i1 @func0000000000000304(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 20
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = add i32 %0, 8
   %6 = icmp ult i32 %5, %4
   ret i1 %6

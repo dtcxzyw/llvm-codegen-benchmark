@@ -7,7 +7,7 @@
 define i16 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
-  %3 = add nsw i16 %0, %2
+  %3 = add nsw i16 %2, %0
   %4 = shl nuw nsw i16 %3, 6
   ret i16 %4
 }
@@ -20,10 +20,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = add nuw i64 %0, %2
-  %4 = shl i64 %3, 32
-  ret i64 %4
+  %2 = add i64 %1, %0
+  %3 = shl i64 %2, 32
+  ret i64 %3
 }
 
 ; 5 occurrences:
@@ -35,10 +34,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = add nuw nsw i64 %0, %2
-  %4 = shl i64 %3, 32
-  ret i64 %4
+  %2 = add i64 %1, %0
+  %3 = shl i64 %2, 32
+  ret i64 %3
 }
 
 ; 10 occurrences:
@@ -56,7 +54,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2097151
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = shl nsw i64 %3, 3
   ret i64 %4
 }
@@ -90,8 +88,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -4
-  %3 = add i64 %0, %2
+  %2 = and i64 %1, 1152921504606846972
+  %3 = add i64 %2, %0
   %4 = shl i64 %3, 4
   ret i64 %4
 }
@@ -126,7 +124,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1023
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
@@ -150,7 +148,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = shl i32 %3, 3
   ret i32 %4
 }
@@ -167,7 +165,7 @@ entry:
 define i16 @func000000000000000e(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
-  %3 = add nuw nsw i16 %0, %2
+  %3 = add nuw nsw i16 %2, %0
   %4 = shl nuw i16 %3, 6
   ret i16 %4
 }
@@ -181,7 +179,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = shl nsw i64 %3, 16
   ret i64 %4
 }
@@ -192,7 +190,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -256
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = shl nsw i32 %3, 2
   ret i32 %4
 }

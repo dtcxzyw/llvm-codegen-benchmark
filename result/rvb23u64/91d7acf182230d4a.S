@@ -1,6 +1,5 @@
 func000000000000000f:                   # @func000000000000000f
-	lui	a1, 4
-	addi	a1, a1, -684
+	li	a1, 1364
 	mul	a1, a1, a0
 	srli	a0, a0, 16
 	add	a0, a0, a1

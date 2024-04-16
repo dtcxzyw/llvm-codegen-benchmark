@@ -21,8 +21,8 @@ define float @func0000000000000005(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = select i1 %0, float %1, float %2
   %4 = fcmp ugt float %3, 0.000000e+00
-  %5 = select i1 %4, float %3, float 0x3FB99999A0000000
-  %6 = fmul float %5, 5.000000e-01
+  %5 = fmul float %3, 5.000000e-01
+  %6 = select i1 %4, float %5, float 0x3FA99999A0000000
   ret float %6
 }
 

@@ -9,7 +9,7 @@
 define i64 @func000000000000000f(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = zext nneg i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = zext nneg i32 %6 to i64

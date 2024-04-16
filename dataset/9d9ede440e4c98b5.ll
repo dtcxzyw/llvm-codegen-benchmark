@@ -46,7 +46,7 @@ declare i64 @llvm.fshl.i64(i64, i64, i64) #1
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 7237128888997146477
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call noundef i64 @llvm.fshl.i64(i64 %2, i64 %2, i64 13)
   %5 = xor i64 %3, %4
   ret i64 %5

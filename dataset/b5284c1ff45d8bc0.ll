@@ -15,8 +15,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1024
-  %2 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 22)
+  %1 = add i32 %0, 261120
+  %2 = lshr i32 %1, 10
   %3 = trunc i32 %2 to i8
   %4 = lshr i8 -117, %3
   %5 = trunc i8 %4 to i1
@@ -34,8 +34,8 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000040(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -8
-  %2 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 29)
+  %1 = add i32 %0, 2040
+  %2 = lshr i32 %1, 3
   %3 = trunc i32 %2 to i8
   %4 = lshr i8 -117, %3
   %5 = trunc i8 %4 to i1

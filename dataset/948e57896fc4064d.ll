@@ -53,7 +53,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 1)
   %4 = shl nsw i64 %3, 2
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = tail call i64 @llvm.smin.i64(i64 %0, i64 %5)
   ret i64 %6
 }

@@ -32,8 +32,8 @@ func0000000000000030:                   # @func0000000000000030
 	sltu	a6, a4, a2
 	sub	a5, a5, a3
 	sub	a3, a5, a6
-	add	a1, a1, a3
 	sub	a2, a4, a2
+	add	a1, a1, a3
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -45,8 +45,8 @@ func0000000000000010:                   # @func0000000000000010
 	sltu	a6, a4, a2
 	sub	a5, a5, a3
 	sub	a3, a5, a6
-	add	a1, a1, a3
 	sub	a4, a4, a2
+	add	a1, a1, a3
 	add	a4, a4, a0
 	sltu	a0, a4, a0
 	add	a1, a1, a0

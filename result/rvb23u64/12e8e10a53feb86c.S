@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
 	fmul.s	fa4, fa1, fa5
-	fadd.s	fa4, fa0, fa4
+	fadd.s	fa4, fa4, fa0
 	flt.s	a1, fa4, fa5
 	andi	a0, a0, 1
 	beqz	a1, .LBB1_3

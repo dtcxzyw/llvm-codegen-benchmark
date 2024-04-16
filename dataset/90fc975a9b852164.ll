@@ -259,7 +259,7 @@ define i32 @func0000000000000000(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = lshr i64 %1, 60
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 7
   ret i32 %4
 }

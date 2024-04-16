@@ -9,7 +9,7 @@ define i16 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = and i64 %0, -2
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 128)
-  %3 = trunc i64 %2 to i16
+  %3 = trunc nuw nsw i64 %2 to i16
   ret i16 %3
 }
 

@@ -20,7 +20,7 @@ entry:
   %3 = mul nsw i64 %1, %2
   %4 = and i64 %3, 2147483647
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -8,14 +8,8 @@ func0000000000000381:                   # @func0000000000000381
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-.LCPI1_0:
-	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
 func0000000000000181:                   # @func0000000000000181
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
-	mulhu	a0, a0, a1
-	srli	a0, a0, 7
-	seqz	a0, a0
+	sltiu	a0, a0, 1000
 	ret
 func0000000000000388:                   # @func0000000000000388
 	sext.w	a0, a0

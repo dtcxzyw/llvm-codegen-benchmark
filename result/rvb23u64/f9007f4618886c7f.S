@@ -24,10 +24,8 @@ func000000000000001c:                   # @func000000000000001c
 	add	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	li	a2, 104
-	czero.eqz	a1, a2, a1
+	sraiw	a1, a1, 31
+	andi	a1, a1, 104
 	add	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

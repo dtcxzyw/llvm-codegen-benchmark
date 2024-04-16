@@ -37,11 +37,9 @@ entry:
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048575
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -4
-  ret ptr %6
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i32, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -52,11 +50,9 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = add nuw nsw i32 %2, 2
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 -8
-  ret ptr %6
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i32, ptr %0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

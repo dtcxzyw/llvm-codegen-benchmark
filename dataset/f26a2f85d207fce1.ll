@@ -91,7 +91,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 255
-  %3 = mul nuw nsw i32 %0, %2
+  %3 = mul nuw nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -102,7 +102,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = xor i16 %1, 255
-  %3 = mul nuw i16 %0, %2
+  %3 = mul nuw i16 %2, %0
   ret i16 %3
 }
 
@@ -117,7 +117,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   ret i32 %3
 }
 

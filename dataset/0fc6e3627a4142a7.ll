@@ -19,8 +19,8 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %0, %1
-  %3 = xor i16 %2, -32768
-  %4 = lshr i16 %3, 1
+  %3 = lshr i16 %2, 1
+  %4 = xor i16 %3, 16384
   ret i16 %4
 }
 

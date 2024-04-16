@@ -14,7 +14,7 @@ entry:
   %4 = call i64 @llvm.smin.i64(i64 %3, i64 %1)
   %5 = sdiv i64 %4, 4
   %6 = shl nsw i64 %5, 2
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

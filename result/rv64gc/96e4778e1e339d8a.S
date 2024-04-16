@@ -21,11 +21,10 @@ func0000000000000004:                   # @func0000000000000004
 	srl	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	lui	a2, 8
-	and	a1, a1, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	srli	a1, a1, 12
+	andi	a1, a1, 8
 	srl	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

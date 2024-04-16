@@ -5,7 +5,7 @@
 define i1 @func000000000000034c(i16 %0, i64 %1) #0 {
 entry:
   %2 = zext i16 %0 to i64
-  %3 = add nuw nsw i64 %1, %2
+  %3 = add nuw nsw i64 %2, %1
   %4 = icmp ult i64 %3, 63
   %5 = icmp ne i16 %0, 0
   %6 = and i1 %5, %4
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = add i64 %1, %2
+  %3 = add i64 %2, %1
   %4 = icmp ult i64 %3, 12
   %5 = icmp ne i32 %0, 0
   %6 = and i1 %5, %4

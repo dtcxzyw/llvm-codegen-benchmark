@@ -9,7 +9,7 @@ define ptr @func000000000000018f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i32, ptr %0, i64 %6
   ret ptr %7
@@ -25,7 +25,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 4
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds %struct.Vec_Int_t_.1772180, ptr %0, i64 %6
   ret ptr %7
@@ -39,7 +39,7 @@ define ptr @func0000000000000181(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i16, ptr %0, i64 %6
   ret ptr %7
@@ -57,7 +57,7 @@ define ptr @func0000000000000021(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds %"class.draco::IndexType.130.1856736", ptr %0, i64 %6
   ret ptr %7
@@ -70,7 +70,7 @@ define ptr @func0000000000000020(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
@@ -83,7 +83,7 @@ define ptr @func0000000000000140(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr i32, ptr %0, i64 %6
   ret ptr %7
@@ -101,7 +101,7 @@ define ptr @func0000000000000025(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i32, ptr %0, i64 %6
   ret ptr %7
@@ -115,7 +115,7 @@ define ptr @func000000000000010f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 4095
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
@@ -129,7 +129,7 @@ define ptr @func000000000000018e(ptr %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i8
-  %5 = add nuw nsw i8 %1, %4
+  %5 = add nuw nsw i8 %4, %1
   %6 = zext nneg i8 %5 to i64
   %7 = getelementptr i32, ptr %0, i64 %6
   ret ptr %7
@@ -142,7 +142,7 @@ define ptr @func0000000000000187(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i32, ptr %0, i64 %6
   ret ptr %7

@@ -46,11 +46,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 2, i32 0
-  %4 = add nsw i32 %3, %0
-  %5 = sext i32 %4 to i64
-  ret i64 %5
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 0, i32 2
+  %3 = add nsw i32 %2, %0
+  %4 = sext i32 %3 to i64
+  ret i64 %4
 }
 
 ; 7 occurrences:
@@ -79,7 +79,7 @@ define i64 @func0000000000000010(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 16384
   %3 = select i1 %2, i8 -16, i8 -15
-  %4 = add i8 %0, %3
+  %4 = add i8 %3, %0
   %5 = sext i8 %4 to i64
   ret i64 %5
 }
@@ -92,7 +92,7 @@ define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2
   %3 = select i1 %2, i32 2, i32 0
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

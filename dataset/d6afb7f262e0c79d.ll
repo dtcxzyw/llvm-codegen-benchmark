@@ -42,11 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 127
-  %4 = icmp eq i64 %3, 127
-  ret i1 %4
+  %1 = add i32 %0, 127
+  %2 = and i32 %1, 127
+  %3 = icmp eq i32 %2, 127
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

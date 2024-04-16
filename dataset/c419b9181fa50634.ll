@@ -17,9 +17,9 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 9
   %3 = and i32 %2, 8388604
-  %4 = add nuw nsw i32 %3, 4
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -30,9 +30,9 @@ define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 268435448
-  %4 = add nuw nsw i32 %3, 16
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }
 

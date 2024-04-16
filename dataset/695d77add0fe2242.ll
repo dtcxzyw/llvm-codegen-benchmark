@@ -12,9 +12,9 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
   %4 = mul nsw i64 %3, %2
-  %5 = shl i64 %4, 2
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %.mask = and i64 %4, 4611686018427387903
+  %5 = icmp eq i64 %.mask, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

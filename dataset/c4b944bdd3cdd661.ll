@@ -18,7 +18,7 @@ define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 916520, i64 633232
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = udiv i64 %4, 1000
   ret i64 %5
 }

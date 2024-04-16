@@ -1,16 +1,8 @@
 func00000000000001d6:                   # @func00000000000001d6
-	slli	a1, a1, 32
-	slli	a0, a0, 48
-	or	a0, a0, a1
-	srai	a0, a0, 16
-	slti	a0, a0, 0
+	bexti	a0, a0, 15
 	ret
 func0000000000000176:                   # @func0000000000000176
-	slli	a1, a1, 48
-	slli	a0, a0, 32
-	or	a0, a0, a1
-	srai	a0, a0, 16
-	slti	a0, a0, 0
+	bexti	a0, a1, 15
 	ret
 func00000000000001d1:                   # @func00000000000001d1
 	slliw	a1, a1, 8

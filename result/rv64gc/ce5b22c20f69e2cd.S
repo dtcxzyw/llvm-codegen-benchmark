@@ -4,8 +4,8 @@ func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 7
 	ret
 func0000000000000030:                   # @func0000000000000030
+	not	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 1
 	andi	a0, a0, 1
 	ret
 func000000000000003c:                   # @func000000000000003c
@@ -18,12 +18,9 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	addi	a0, a0, -64
 	andi	a0, a0, 63
 	ret
 func000000000000001c:                   # @func000000000000001c
-	add	a0, a0, a1
-	lui	a1, 4096
 	add	a0, a0, a1
 	andi	a0, a0, 63
 	ret

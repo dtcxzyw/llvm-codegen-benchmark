@@ -9,7 +9,7 @@ entry:
   %3 = sub nuw nsw i64 131072, %2
   %4 = lshr i64 %3, 11
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

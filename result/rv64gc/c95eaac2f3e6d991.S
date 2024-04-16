@@ -1,9 +1,9 @@
 func000000000000000c:                   # @func000000000000000c
+	addi	a0, a0, -27
+	snez	a0, a0
 	andi	a1, a1, 1
 	slli	a1, a1, 12
 	or	a1, a1, a2
-	addi	a0, a0, -27
-	snez	a0, a0
 	slli	a0, a0, 15
 	or	a0, a0, a1
 	ret

@@ -168,9 +168,8 @@
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr inbounds %"struct.rocksdb::BufferInfo.1580095", ptr %0, i64 %2, i32 5
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.rocksdb::BufferInfo.1580095", ptr %0, i64 %2, i32 5, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 22 occurrences:
@@ -200,9 +199,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr inbounds %"struct.folly::threadlocal_detail::ElementWrapper.1645581", ptr %0, i64 %2, i32 3
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.folly::threadlocal_detail::ElementWrapper.1645581", ptr %0, i64 %2, i32 3, i32 2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -211,9 +209,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.FlatRange.1664370, ptr %0, i64 %2, i32 2
-  %4 = getelementptr i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr %struct.FlatRange.1664370, ptr %0, i64 %2, i32 2, i32 1
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -224,9 +221,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %struct.e1000_buffer.1994573, ptr %0, i64 %2, i32 2
-  %4 = getelementptr inbounds i8, ptr %3, i64 10
-  ret ptr %4
+  %3 = getelementptr %struct.e1000_buffer.1994573, ptr %0, i64 %2, i32 2, i32 0, i32 2
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -236,9 +232,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.list_lru_node.2020130, ptr %0, i64 %2, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.list_lru_node.2020130, ptr %0, i64 %2, i32 1, i32 0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

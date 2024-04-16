@@ -12,7 +12,7 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr inbounds %struct.ZSTD_seqSymbol.1956985, ptr %0, i64 %5, i32 3
   ret ptr %6
 }
@@ -25,7 +25,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr %struct.FSE_decode_t.1996829, ptr %0, i64 %5, i32 1
   ret ptr %6
 }

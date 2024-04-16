@@ -22,9 +22,7 @@ func00000000000000f4:                   # @func00000000000000f4
 .LBB1_2:                                # %entry
 	ret
 func00000000000000f6:                   # @func00000000000000f6
-	slli	a2, a2, 16
 	or	a0, a0, a1
-	or	a0, a0, a2
 	sraiw	a0, a0, 31
 	andi	a0, a0, 27
 	ret

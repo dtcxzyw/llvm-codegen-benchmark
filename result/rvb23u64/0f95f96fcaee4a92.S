@@ -25,10 +25,10 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000015c:                   # @func000000000000015c
 	sext.w	a0, a0
-	sext.w	a1, a1
-	sgtz	a1, a1
 	addi	a0, a0, -4
 	snez	a0, a0
+	sext.w	a1, a1
+	sgtz	a1, a1
 	sh1add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
@@ -63,10 +63,10 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a0, a0
+	snez	a0, a0
 	sext.w	a1, a1
 	li	a2, 2
 	czero.eqz	a1, a2, a1
-	snez	a0, a0
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	addi	a0, a0, 1

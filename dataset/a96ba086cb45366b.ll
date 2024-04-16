@@ -10,11 +10,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -16777216
-  %4 = or disjoint i32 %1, %3
-  %5 = add i32 %0, %4
-  %6 = and i32 %5, 255
-  ret i32 %6
+  %3 = add i32 %1, %0
+  %4 = and i32 %3, 255
+  ret i32 %4
 }
 
 ; 2 occurrences:

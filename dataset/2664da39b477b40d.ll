@@ -19,12 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000070(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %0, -4160749569
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp ugt i64 %4, 576460752303423487
-  %6 = zext i1 %5 to i64
-  ret i64 %6
+  %2 = icmp ugt i64 %0, 576460752303423487
+  %3 = zext i1 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

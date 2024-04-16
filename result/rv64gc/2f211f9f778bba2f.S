@@ -7,15 +7,15 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a2, a2, a4
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a0, a0, a2
+	sltu	a0, a0, a2
 	add	a0, a0, a1
 	srai	a1, a0, 63
 	ret
 func000000000000001a:                   # @func000000000000001a
 	add	a2, a2, a4
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a0, a0, a2
+	sltu	a0, a0, a2
 	add	a0, a0, a1
 	srai	a1, a0, 63
 	ret

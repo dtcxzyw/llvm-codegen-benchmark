@@ -48,8 +48,8 @@ entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne i64 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = add nuw nsw i64 %0, 1
-  %7 = select i1 %5, i64 %6, i64 %0
+  %6 = zext i1 %5 to i64
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

@@ -8,9 +8,8 @@ entry:
   %2 = trunc i64 %0 to i32
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = sub i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -23,7 +23,7 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000e:                   # @func000000000000000e
 	sext.h	a1, a1
 	fcvt.s.w	fa5, a1
-	feq.s	a1, fa0, fa5
+	feq.s	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -40,6 +40,6 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000010:                   # @func0000000000000010
 	fcvt.d.w	fa5, a1
-	feq.d	a1, fa0, fa5
+	feq.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

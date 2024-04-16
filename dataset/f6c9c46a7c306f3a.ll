@@ -12,7 +12,7 @@ entry:
   %4 = select i1 %3, i64 %2, i64 0
   %5 = icmp eq i32 %1, -1
   %6 = select i1 %5, i64 0, i64 %4
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

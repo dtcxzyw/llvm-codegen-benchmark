@@ -10,8 +10,8 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func0000000000000052:                   # @func0000000000000052
 	slti	a2, a2, 0
-	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	srli	a0, a0, 63
 	li	a1, -1
@@ -20,8 +20,8 @@ func0000000000000052:                   # @func0000000000000052
 	ret
 func0000000000000063:                   # @func0000000000000063
 	sext.w	a2, a2
-	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	srli	a0, a0, 32
 	addi	a0, a0, 1

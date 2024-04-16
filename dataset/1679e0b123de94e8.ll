@@ -17,9 +17,9 @@ define i1 @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %4, i64 0, i64 %3
-  %6 = icmp sgt i64 %5, 0
+  %4 = icmp ne ptr %0, null
+  %5 = icmp sgt i64 %3, 0
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 

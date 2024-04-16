@@ -7,7 +7,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -88,7 +88,7 @@ entry:
   %2 = shl nsw i32 %1, 6
   %3 = add i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -127,7 +127,7 @@ entry:
   %2 = shl i32 %1, 6
   %3 = add i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -141,7 +141,7 @@ entry:
   %2 = shl i32 %1, 2
   %3 = add nsw i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -156,7 +156,7 @@ entry:
   %2 = shl nsw i32 %1, 3
   %3 = add nsw i32 %2, 64
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -169,7 +169,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -181,7 +181,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -196,7 +196,7 @@ entry:
   %2 = shl i32 %1, 2
   %3 = add i32 %2, -8
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -209,7 +209,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -221,7 +221,7 @@ entry:
   %2 = shl nsw i32 %1, 13
   %3 = add nsw i32 %2, 8192
   %4 = sext i32 %3 to i64
-  %5 = icmp sge i64 %0, %4
+  %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
 
@@ -233,7 +233,7 @@ entry:
   %2 = shl nsw i32 %1, 2
   %3 = add i32 %2, -12
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

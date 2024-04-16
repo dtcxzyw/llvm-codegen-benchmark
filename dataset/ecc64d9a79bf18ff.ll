@@ -6,12 +6,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = zext i32 %0 to i64
-  %4 = mul nuw i64 %3, %2
-  %5 = and i64 %4, 4294967295
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %.narrow = mul i32 %0, %1
+  %2 = icmp eq i32 %.narrow, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:

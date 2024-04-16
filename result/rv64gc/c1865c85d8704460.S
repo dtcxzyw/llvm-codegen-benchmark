@@ -69,20 +69,18 @@ func0000000000000018:                   # @func0000000000000018
 	li	a2, -1
 	slli	a2, a2, 63
 	xor	a2, a2, a1
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	snez	a2, a2
 	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func00000000000000a6:                   # @func00000000000000a6
-	sext.w	a3, a1
-	lui	a2, 16
-	addiw	a4, a2, -2
-	sext.w	a0, a0
-	bge	a4, a3, .LBB7_2
-	addi	a1, a2, -1
-.LBB7_2:                                # %entry
 	sext.w	a1, a1
+	lui	a2, 16
+	addiw	a2, a2, -1
+	sext.w	a0, a0
+	blt	a1, a2, .LBB7_2
+	mv	a1, a2
+.LBB7_2:                                # %entry
 	slt	a0, a1, a0
 	ret
 func0000000000000088:                   # @func0000000000000088

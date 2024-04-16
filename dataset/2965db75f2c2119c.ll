@@ -21,7 +21,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -508,7 +508,7 @@ define i1 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr inbounds ptr, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -531,7 +531,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
   %4 = getelementptr inbounds ptr, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -548,7 +548,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
   %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.1583117", ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -647,7 +647,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
   %4 = getelementptr inbounds [32 x i8], ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -660,7 +660,7 @@ define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr inbounds i32, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -671,7 +671,7 @@ define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -682,7 +682,7 @@ define i1 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
   %4 = getelementptr %union.xhci_trb.2014102, ptr %1, i64 %3
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 

@@ -11,9 +11,8 @@ entry:
   %2 = add i32 %1, 9
   %3 = srem i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [10 x %struct.timeval.1662624], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [10 x %struct.timeval.1662624], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 7 occurrences:
@@ -30,9 +29,8 @@ entry:
   %2 = add nsw i32 %1, 1
   %3 = srem i32 %2, 6
   %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds [6 x %struct.ImGuiDebugAllocEntry.1931667], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 6
-  ret ptr %6
+  %5 = getelementptr inbounds [6 x %struct.ImGuiDebugAllocEntry.1931667], ptr %0, i64 0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -43,9 +41,8 @@ entry:
   %2 = add i32 %1, 6
   %3 = srem i32 %2, 6
   %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds [6 x %struct.ImGuiDebugAllocEntry.1931667], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds [6 x %struct.ImGuiDebugAllocEntry.1931667], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

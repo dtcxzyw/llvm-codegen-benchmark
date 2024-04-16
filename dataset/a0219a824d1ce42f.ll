@@ -28,11 +28,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %0, -2
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp eq i64 %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %2 = icmp ult i64 %0, 2
+  %3 = icmp eq i64 %0, %1
+  %4 = or i1 %3, %2
+  ret i1 %4
 }
 
 ; 1 occurrences:

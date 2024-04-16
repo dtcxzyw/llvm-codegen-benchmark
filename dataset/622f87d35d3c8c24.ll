@@ -5,7 +5,7 @@
 define i64 @func00000000000000e0(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 40
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = mul i64 %3, 216180478695505931
   %5 = add i64 %4, 3819052484010180608
   %6 = lshr i64 %5, 56

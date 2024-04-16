@@ -31,7 +31,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.smin.i64(i64 %0, i64 2147483647)
   %2 = tail call i64 @llvm.smax.i64(i64 %1, i64 0)
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   ret i32 %3
 }
 
@@ -49,7 +49,7 @@ define i8 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 127)
   %2 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 -127)
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   ret i8 %3
 }
 

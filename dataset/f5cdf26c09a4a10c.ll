@@ -33,9 +33,9 @@ entry:
 define i64 @func0000000000000043(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 4294967294
-  %3 = select i1 %2, i32 268435455, i32 %0
-  %4 = zext i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, 24
+  %3 = zext i32 %0 to i64
+  %4 = mul nuw nsw i64 %3, 24
+  %5 = select i1 %2, i64 6442450920, i64 %4
   ret i64 %5
 }
 

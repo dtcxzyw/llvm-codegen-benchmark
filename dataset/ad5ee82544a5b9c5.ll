@@ -99,10 +99,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i128 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = trunc i128 %1 to i64
   %5 = lshr i64 %4, %3
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -130,10 +130,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i128 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = trunc i128 %1 to i64
   %5 = lshr i64 %4, %3
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }

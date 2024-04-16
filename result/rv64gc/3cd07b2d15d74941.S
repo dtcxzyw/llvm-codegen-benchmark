@@ -11,6 +11,6 @@ func0000000000000000:                   # @func0000000000000000
 func00000000000000d8:                   # @func00000000000000d8
 	addi	a1, a1, 1
 	srli	a1, a1, 1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 32
 	ret

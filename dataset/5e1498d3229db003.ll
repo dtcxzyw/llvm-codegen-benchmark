@@ -33,10 +33,9 @@ define i1 @func000000000000018c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777215
   %4 = icmp ugt i32 %3, %0
-  %5 = add nsw i64 %1, -1
-  %6 = icmp ne i64 %5, 0
-  %7 = and i1 %6, %4
-  ret i1 %7
+  %5 = icmp ne i64 %1, 1
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 3 occurrences:

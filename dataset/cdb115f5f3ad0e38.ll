@@ -8,7 +8,7 @@ entry:
   %4 = srem i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

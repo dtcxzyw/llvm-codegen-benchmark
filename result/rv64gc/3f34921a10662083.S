@@ -1,10 +1,11 @@
 func0000000000000011:                   # @func0000000000000011
-	andi	a1, a1, 1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
 	sraiw	a2, a0, 31
 	srliw	a2, a2, 23
 	add	a0, a0, a2
 	sraiw	a0, a0, 9
-	add	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a

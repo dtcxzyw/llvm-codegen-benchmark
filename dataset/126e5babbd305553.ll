@@ -28,8 +28,9 @@
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = sdiv i64 %2, 1000000000
-  %4 = mul nsw i64 %3, -1000000000
+  %.fr = freeze i64 %2
+  %3 = srem i64 %.fr, 1000000000
+  %4 = sub i64 %3, %.fr
   ret i64 %4
 }
 
@@ -75,8 +76,9 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = sdiv i64 %2, 3600000
-  %4 = mul nsw i64 %3, -3600000
+  %.fr = freeze i64 %2
+  %3 = srem i64 %.fr, 3600000
+  %4 = sub i64 %3, %.fr
   ret i64 %4
 }
 

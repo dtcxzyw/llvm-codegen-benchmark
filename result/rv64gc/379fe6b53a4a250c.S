@@ -1,8 +1,7 @@
 func0000000000000031:                   # @func0000000000000031
-	li	a2, 64
-	srlw	a1, a2, a1
-	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
+	sext.w	a1, a1
+	li	a2, 6
+	beq	a1, a2, .LBB0_2
 	li	a0, 46
 .LBB0_2:                                # %entry
 	ret

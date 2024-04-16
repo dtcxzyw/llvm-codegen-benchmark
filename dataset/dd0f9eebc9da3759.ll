@@ -12,7 +12,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = icmp eq i64 %3, 1
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = select i1 %5, i64 %0, i64 0
   ret i64 %6
 }

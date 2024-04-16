@@ -49,8 +49,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 1
-  %2 = mul i64 %1, 3
+  %1 = mul i64 %0, 3
+  %2 = add i64 %1, 3
   ret i64 %2
 }
 
@@ -63,8 +63,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 1
-  %2 = mul nuw nsw i64 %1, 3
+  %1 = mul nuw i64 %0, 3
+  %2 = add nuw i64 %1, 3
   ret i64 %2
 }
 

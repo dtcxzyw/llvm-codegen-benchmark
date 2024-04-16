@@ -25,7 +25,7 @@
 define i1 @func00000000000000c1(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -70,7 +70,7 @@ entry:
 define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp ne ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6
@@ -245,7 +245,7 @@ entry:
 define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq ptr %1, null
   %6 = and i1 %4, %5
   ret i1 %6

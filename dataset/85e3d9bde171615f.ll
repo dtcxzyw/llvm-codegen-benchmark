@@ -16,9 +16,8 @@ entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = and i32 %3, 65528
   %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 16, i32 0
-  %7 = or disjoint i32 %6, 8
-  ret i32 %7
+  %6 = select i1 %5, i32 24, i32 8
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

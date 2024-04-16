@@ -16,6 +16,6 @@ func0000000000000004:                   # @func0000000000000004
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	andi	a0, a0, 255
+	andi	a0, a0, 252
 	sltiu	a0, a0, 36
 	ret

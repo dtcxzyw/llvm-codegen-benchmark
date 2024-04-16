@@ -1,13 +1,14 @@
 func00000000000001da:                   # @func00000000000001da
+	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	sext.w	a1, a1
+	slt	a0, a1, a0
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001c4:                   # @func00000000000001c4
@@ -63,11 +64,13 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	ret
 func0000000000000141:                   # @func0000000000000141
+	lui	a3, 16
+	addiw	a3, a3, -1
+	and	a0, a0, a3
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	subw	a0, a0, a1
-	slli	a0, a0, 48
-	srli	a0, a0, 48
+	and	a1, a1, a3
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001ca:                   # @func00000000000001ca

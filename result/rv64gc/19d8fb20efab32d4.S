@@ -9,5 +9,5 @@ func0000000000000000:                   # @func0000000000000000
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	fsub.d	fa5, fa5, fa0
 	fmul.d	fa5, fa5, fa4
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret

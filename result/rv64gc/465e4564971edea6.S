@@ -16,17 +16,17 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000017:                   # @func0000000000000017
 	slli	a4, a4, 8
 	srli	a4, a4, 8
-	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mul	a3, a4, a3
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
-	add	a4, a2, a0
-	sltu	a0, a4, a2
 	add	a1, a1, a3
+	mul	a2, a4, a2
+	add	a3, a2, a0
+	sltu	a0, a3, a2
 	add	a1, a1, a0
 	lui	a0, 8
-	add	a0, a0, a4
-	sltu	a2, a0, a4
+	add	a0, a0, a3
+	sltu	a2, a0, a3
 	add	a1, a1, a2
 	li	a2, -127
 	slli	a2, a2, 56

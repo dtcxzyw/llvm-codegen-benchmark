@@ -106,9 +106,8 @@ entry:
   %3 = shl nuw nsw i64 %2, 6
   %4 = getelementptr %struct.HistogramLiteral.2233524, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr %struct.HistogramLiteral.2233524, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1024
-  ret ptr %7
+  %6 = getelementptr %struct.HistogramLiteral.2233524, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 10 occurrences:

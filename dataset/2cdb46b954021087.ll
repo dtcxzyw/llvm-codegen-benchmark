@@ -9,7 +9,7 @@ entry:
   %4 = lshr i64 %3, 3
   %5 = add nuw nsw i64 %4, 1
   %6 = add i64 %5, %1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = lshr i64 %3, 3
   %5 = add nuw nsw i64 %4, 1
   %6 = add nuw i64 %5, %1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

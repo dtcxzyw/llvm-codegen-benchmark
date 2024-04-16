@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 2097151
-  %3 = lshr i64 %2, 12
+  %2 = lshr i64 %1, 12
+  %3 = and i64 %2, 511
   %4 = add nuw nsw i64 %3, %0
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5

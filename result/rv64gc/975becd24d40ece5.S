@@ -9,12 +9,12 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a2, a1, 63
 	srai	a1, a1, 26
 	add	a1, a1, a2
-	lui	a2, 804435
+	lui	a2, 244141
 	lui	a3, %hi(.LCPI0_1)
 	ld	a3, %lo(.LCPI0_1)(a3)
-	addiw	a2, a2, 1536
+	addiw	a2, a2, -1536
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	mulh	a0, a0, a3
 	srli	a1, a0, 63
 	srai	a0, a0, 18

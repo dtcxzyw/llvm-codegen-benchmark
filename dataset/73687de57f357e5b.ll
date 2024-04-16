@@ -12,7 +12,7 @@ entry:
   %2 = trunc i64 %0 to i32
   %3 = sub i32 %1, %2
   %4 = zext i32 %1 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   %6 = select i1 %5, i32 %3, i32 0
   ret i32 %6
 }
@@ -25,7 +25,7 @@ entry:
   %2 = trunc i64 %0 to i32
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %1 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   %6 = select i1 %5, i32 %3, i32 0
   ret i32 %6
 }

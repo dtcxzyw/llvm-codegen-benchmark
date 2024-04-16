@@ -168,11 +168,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = mul i64 %1, 10
-  %5 = icmp ult i64 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = mul i64 %1, 10
+  %.highbits = lshr i64 %3, %2
+  %4 = icmp eq i64 %.highbits, 0
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

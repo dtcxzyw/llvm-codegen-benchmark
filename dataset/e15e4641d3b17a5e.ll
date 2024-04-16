@@ -9,7 +9,7 @@
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = or i8 %0, %2
+  %3 = or i8 %2, %0
   %4 = icmp eq i8 %3, 0
   ret i1 %4
 }

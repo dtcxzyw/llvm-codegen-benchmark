@@ -28,9 +28,8 @@ define ptr @func0000000000000009(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -40,9 +39,8 @@ define ptr @func000000000000000d(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.alps_nibble_commands.2022092, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %struct.alps_nibble_commands.2022092, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -57,9 +55,8 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %class.rational.2085818, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %class.rational.2085818, ptr %0, i64 %3, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:

@@ -168,7 +168,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000012(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = and i16 %2, 4095
+  %3 = and i16 %2, 3584
   %4 = icmp ult i16 %3, 2560
   %5 = select i1 %4, i16 %0, i16 %1
   %6 = trunc nuw i16 %5 to i8
@@ -186,7 +186,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 15
+  %3 = and i32 %2, 14
   %4 = icmp ult i32 %3, 10
   %5 = select i1 %4, i32 %0, i32 %1
   %6 = trunc i32 %5 to i8

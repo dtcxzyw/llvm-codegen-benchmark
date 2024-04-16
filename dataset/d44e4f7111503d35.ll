@@ -7,7 +7,7 @@
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = mul i32 %1, 13
+  %2 = mul i32 %1, 5
   %3 = and i32 %2, 7
   %4 = sub nuw nsw i32 8, %3
   ret i32 %4

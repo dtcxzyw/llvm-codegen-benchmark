@@ -28,7 +28,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 6
   %5 = add nuw nsw i32 %4, %1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }
@@ -40,7 +40,7 @@ define i16 @func00000000000000d4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 6
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   %7 = trunc i32 %6 to i16
   ret i16 %7

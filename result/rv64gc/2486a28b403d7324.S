@@ -7,6 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000001c:                   # @func000000000000001c
 	li	a2, 256
 	subw	a2, a2, a1
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	srliw	a0, a0, 8
 	ret

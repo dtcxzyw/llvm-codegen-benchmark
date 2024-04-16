@@ -10,6 +10,7 @@ func0000000000000023:                   # @func0000000000000023
 	addiw	a0, a0, -1075
 	czero.eqz	a0, a0, a1
 	li	a2, -1074
+	zext.w	a2, a2
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

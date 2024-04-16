@@ -25,7 +25,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = urem i32 %2, 10
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -40,7 +40,7 @@ entry:
   %2 = add i32 %1, 18
   %3 = urem i32 %2, 3
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -66,7 +66,7 @@ entry:
   %2 = add nuw i64 %1, 1
   %3 = urem i64 %2, 3
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

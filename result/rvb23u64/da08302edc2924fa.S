@@ -1,8 +1,7 @@
 func0000000000000041:                   # @func0000000000000041
 	slli	a0, a0, 2
 	addi	a0, a0, 23
-	andi	a0, a0, -8
-	seqz	a0, a0
+	sltiu	a0, a0, 8
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	slli	a0, a0, 2
@@ -16,7 +15,6 @@ func00000000000000f1:                   # @func00000000000000f1
 func0000000000000004:                   # @func0000000000000004
 	slli	a0, a0, 2
 	addi	a0, a0, 7
-	andi	a0, a0, -8
 	sltiu	a0, a0, -16
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -49,7 +47,8 @@ func00000000000000fc:                   # @func00000000000000fc
 func00000000000000f4:                   # @func00000000000000f4
 	slli	a0, a0, 3
 	addi	a0, a0, 83
-	slli	a0, a0, 29
-	srli	a0, a0, 61
+	li	a1, 7
+	slli	a1, a1, 32
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret

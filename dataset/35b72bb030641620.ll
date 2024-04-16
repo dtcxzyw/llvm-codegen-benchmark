@@ -5,7 +5,7 @@
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %2, -773703683
+  %3 = mul i64 %2, 288230375378008061
   %4 = add i64 %3, %0
   %5 = shl i64 %4, 6
   ret i64 %5
@@ -33,7 +33,7 @@ define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 28
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = shl i64 %4, 32
   ret i64 %5
 }

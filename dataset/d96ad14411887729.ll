@@ -12,8 +12,8 @@ define i8 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = sub nuw nsw i32 32, %3
-  %5 = trunc i32 %4 to i8
+  %4 = trunc nuw nsw i32 %3 to i8
+  %5 = sub nuw nsw i8 32, %4
   ret i8 %5
 }
 

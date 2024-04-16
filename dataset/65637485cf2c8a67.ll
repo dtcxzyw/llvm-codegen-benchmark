@@ -20,7 +20,7 @@
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = add nuw nsw i64 %0, 1
   %6 = call i64 @llvm.umax.i64(i64 %5, i64 %4)
   ret i64 %6
@@ -40,7 +40,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i64 @func000000000000001e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = add nuw nsw i64 %0, 1
   %6 = tail call i64 @llvm.umax.i64(i64 %5, i64 %4)
   ret i64 %6
@@ -78,7 +78,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = add i64 %0, 1
   %6 = tail call i64 @llvm.umax.i64(i64 %5, i64 %4)
   ret i64 %6

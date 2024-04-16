@@ -12,8 +12,6 @@ func000000000000003c:                   # @func000000000000003c
 	srli	a0, a0, 32
 	ret
 func000000000000002c:                   # @func000000000000002c
-	slli	a1, a1, 32
-	or	a0, a0, a1
 	slli	a0, a0, 16
 	srli	a0, a0, 32
 	ret
@@ -24,8 +22,6 @@ func0000000000000028:                   # @func0000000000000028
 	srli	a0, a0, 32
 	ret
 func000000000000006c:                   # @func000000000000006c
-	slli	a1, a1, 32
-	or	a0, a0, a1
 	slli	a0, a0, 16
 	srli	a0, a0, 32
 	ret

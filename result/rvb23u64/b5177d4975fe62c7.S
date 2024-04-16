@@ -10,9 +10,8 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 3
 	ret
 func0000000000000000:                   # @func0000000000000000
-	sext.b	a1, a1
-	srli	a1, a1, 7
-	subw	a0, a0, a1
+	bexti	a1, a1, 7
+	add	a0, a0, a1
 	andi	a0, a0, 255
 	sh2add	a1, a0, a0
 	sh3add	a0, a1, a0

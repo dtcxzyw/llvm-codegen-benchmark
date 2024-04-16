@@ -18,9 +18,8 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 18
   %3 = ashr i32 %2, 29
-  %4 = sub nsw i32 %3, %0
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -81,9 +80,8 @@ define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = sub nsw i64 %3, %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:

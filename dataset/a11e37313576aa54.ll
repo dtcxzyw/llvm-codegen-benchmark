@@ -13,9 +13,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = mul nuw i64 %0, 4294967297
-  %2 = and i64 %1, 4294967295
-  ret i64 %2
+  %1 = and i64 %0, 4294967295
+  ret i64 %1
 }
 
 ; 161 occurrences:

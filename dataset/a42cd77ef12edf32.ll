@@ -39,10 +39,9 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 4
-  %4 = getelementptr inbounds [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr i8, ptr %4, i64 8
-  %6 = getelementptr %struct.dt_iop_colorzones_node_t.1768550, ptr %5, i64 %0
-  ret ptr %6
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %3, i64 0, i64 %1, i64 1
+  %5 = getelementptr %struct.dt_iop_colorzones_node_t.1768550, ptr %4, i64 %0
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -64,10 +63,9 @@ entry:
 define ptr @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1556
-  %4 = getelementptr [8 x %struct.skl_plane_wm.1997841], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 64
-  %6 = getelementptr %struct.skl_wm_level.1997842, ptr %5, i64 %0
-  ret ptr %6
+  %4 = getelementptr [8 x %struct.skl_plane_wm.1997841], ptr %3, i64 0, i64 %1, i32 1
+  %5 = getelementptr %struct.skl_wm_level.1997842, ptr %4, i64 %0
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

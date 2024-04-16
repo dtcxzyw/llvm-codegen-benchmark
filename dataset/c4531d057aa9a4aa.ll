@@ -9,7 +9,7 @@ entry:
   %3 = udiv i32 %2, 700
   %4 = lshr i32 %2, 1
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 

@@ -17,10 +17,9 @@ entry:
 define i1 @func0000000000000308(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = sub i32 %0, %2
-  %4 = add i32 %3, 88
-  %5 = icmp ugt i32 %4, 88
-  ret i1 %5
+  %3 = sub i32 %2, %0
+  %4 = icmp ugt i32 %3, 88
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -31,9 +30,8 @@ define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = sub i32 %0, %2
-  %4 = add i32 %3, -2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %4 = icmp eq i32 %3, 2
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -79,8 +77,8 @@ define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = sub i32 %0, %2
-  %4 = add i32 %3, 348
-  %5 = icmp ugt i32 %4, -7
+  %4 = add i32 %3, 354
+  %5 = icmp ult i32 %4, 6
   ret i1 %5
 }
 

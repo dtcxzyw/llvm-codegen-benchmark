@@ -13,19 +13,20 @@ func0000000000000054:                   # @func0000000000000054
 	sltiu	a0, a1, 8
 	ret
 func0000000000000051:                   # @func0000000000000051
+	sext.w	a0, a0
 	andi	a1, a1, 1
-	subw	a1, a1, a0
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
+	sext.w	a0, a0
 	andi	a1, a1, 63
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	slt	a0, a1, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
+	sext.w	a0, a0
 	andi	a1, a1, 31
-	subw	a1, a1, a0
-	sgtz	a0, a1
+	slt	a0, a0, a1
 	ret
 func0000000000000046:                   # @func0000000000000046
 	slli	a1, a1, 50

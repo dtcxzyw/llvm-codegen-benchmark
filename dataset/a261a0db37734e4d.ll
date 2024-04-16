@@ -9,7 +9,7 @@ entry:
   %4 = trunc i64 %3 to i16
   %5 = sdiv i16 %4, 4
   %6 = sext i16 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -29,7 +29,7 @@ entry:
   %4 = trunc i64 %3 to i16
   %5 = sdiv i16 %4, 4
   %6 = sext i16 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

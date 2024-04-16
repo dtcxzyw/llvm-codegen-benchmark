@@ -72,9 +72,10 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addw	a1, a1, a0
+	sext.w	a2, a0
+	negw	a1, a1
 	li	a0, 32
-	beqz	a1, .LBB10_2
+	beq	a1, a2, .LBB10_2
 	li	a0, 43
 .LBB10_2:                               # %entry
 	ret

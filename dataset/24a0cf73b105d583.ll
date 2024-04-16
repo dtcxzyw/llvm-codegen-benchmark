@@ -74,7 +74,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 

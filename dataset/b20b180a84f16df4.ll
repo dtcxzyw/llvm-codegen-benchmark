@@ -17,7 +17,7 @@
 define ptr @func0000000000000007(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 24
   %7 = getelementptr inbounds [0 x %union.frame_entry.1745519], ptr %6, i64 0, i64 %5

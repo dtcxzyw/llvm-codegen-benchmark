@@ -17,8 +17,9 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	negw	a2, a2
-	sll	a1, a1, a2
+	li	a3, 64
+	subw	a3, a3, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
@@ -34,7 +35,8 @@ func000000000000003e:                   # @func000000000000003e
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	not	a2, a2
-	sll	a1, a1, a2
+	li	a3, 63
+	subw	a3, a3, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	ret

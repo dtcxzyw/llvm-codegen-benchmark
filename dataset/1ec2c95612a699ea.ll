@@ -5259,7 +5259,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 

@@ -13,12 +13,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %0, 1
-  %3 = xor i32 %2, %1
-  %4 = and i32 %3, 1431655765
-  %5 = shl nuw i32 %4, 1
-  %6 = xor i32 %5, %0
-  ret i32 %6
+  %2 = shl i32 %1, 1
+  %3 = and i32 %2, -1431655766
+  %4 = and i32 %0, 1431655765
+  %5 = or disjoint i32 %3, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

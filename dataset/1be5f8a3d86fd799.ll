@@ -8,9 +8,9 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17592186044415
-  %3 = ashr i64 %0, 63
-  %4 = and i64 %3, %2
-  ret i64 %4
+  %isneg = icmp slt i64 %0, 0
+  %3 = select i1 %isneg, i64 %2, i64 0
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

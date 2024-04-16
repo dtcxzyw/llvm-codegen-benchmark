@@ -6,16 +6,15 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 255
-	slli	a0, a0, 8
-	or	a0, a0, a1
-	slli	a0, a0, 12
+	slli	a0, a0, 20
 	srli	a0, a0, 12
+	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
-	slli	a0, a0, 4
+	slli	a0, a0, 58
+	srli	a0, a0, 54
 	or	a0, a0, a1
-	andi	a0, a0, 1023
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 2

@@ -11,7 +11,7 @@ entry:
   %4 = xor i32 %3, %2
   %5 = lshr i32 %4, 13
   %6 = or disjoint i32 %5, %1
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

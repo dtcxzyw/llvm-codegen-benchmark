@@ -8,7 +8,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1099511627775, i64 144115188075855871
   %5 = and i64 %4, %1
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1099511627775, i64 -1
   %5 = and i64 %4, %1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 31, i32 63
   %5 = and i32 %4, %1
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

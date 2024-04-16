@@ -33,10 +33,10 @@ define i8 @func0000000000000003(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = trunc i64 %4 to i8
-  %6 = sub nuw nsw i8 23, %5
-  ret i8 %6
+  %.neg = sub i64 %2, %3
+  %.neg1 = trunc i64 %.neg to i8
+  %4 = add i8 %.neg1, 23
+  ret i8 %4
 }
 
 ; 7 occurrences:
@@ -52,10 +52,10 @@ define i32 @func0000000000000000(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = trunc i64 %4 to i32
-  %6 = sub i32 256, %5
-  ret i32 %6
+  %.neg = sub i64 %2, %3
+  %.neg1 = trunc i64 %.neg to i32
+  %4 = add i32 %.neg1, 256
+  ret i32 %4
 }
 
 ; 7 occurrences:
@@ -71,10 +71,10 @@ define i32 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = trunc i64 %4 to i32
-  %6 = sub nsw i32 6, %5
-  ret i32 %6
+  %.neg = sub i64 %2, %3
+  %.neg1 = trunc i64 %.neg to i32
+  %4 = add i32 %.neg1, 6
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

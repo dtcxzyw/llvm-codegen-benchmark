@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %2, 8
   %4 = call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = add i32 %2, 2
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = add i32 %2, 2
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = add nuw i32 %2, 13
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = add nsw i32 %2, 122
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = add nuw nsw i32 %2, 127
   %4 = call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 

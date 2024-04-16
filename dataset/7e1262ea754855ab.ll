@@ -9,7 +9,7 @@ entry:
   %3 = fcmp ugt double %2, 1.200000e+00
   %4 = fcmp uge double %1, 1.000000e+00
   %5 = or i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = fcmp uge double %2, 1.000000e+00
   %4 = fcmp ugt double %1, 1.200000e+00
   %5 = or i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = fcmp une double %1, 1.000000e+00
   %5 = or i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

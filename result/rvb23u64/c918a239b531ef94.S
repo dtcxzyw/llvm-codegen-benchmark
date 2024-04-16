@@ -1,5 +1,9 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	addi	a0, a0, 3
+	slli	a0, a0, 30
+	li	a1, 3
+	slli	a1, a1, 30
+	add	a0, a0, a1
+	srai	a0, a0, 30
 	andi	a0, a0, -4
 	ret

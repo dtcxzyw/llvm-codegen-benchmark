@@ -20,8 +20,8 @@ entry:
 define float @func0000000000000005(float %0) #0 {
 entry:
   %1 = fcmp ugt float %0, 0.000000e+00
-  %2 = select i1 %1, float %0, float 1.000000e+00
-  %3 = fdiv float 1.000000e+00, %2
+  %2 = fdiv float 1.000000e+00, %0
+  %3 = select i1 %1, float %2, float 1.000000e+00
   ret float %3
 }
 

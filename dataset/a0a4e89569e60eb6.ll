@@ -85,8 +85,8 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.bswap.i32(i32 %0)
-  %2 = trunc i32 %1 to i8
+  %1 = lshr i32 %0, 24
+  %2 = trunc nuw i32 %1 to i8
   ret i8 %2
 }
 
@@ -98,7 +98,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i16 %0) #0 {
 entry:
-  %1 = tail call noundef i16 @llvm.bswap.i16(i16 %0)
+  %1 = lshr i16 %0, 8
   %2 = trunc nuw i16 %1 to i8
   ret i8 %2
 }

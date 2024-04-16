@@ -10,7 +10,7 @@ entry:
   %4 = shl nuw i64 1, %3
   %5 = trunc i64 %4 to i32
   %6 = select i1 %1, i32 0, i32 %5
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

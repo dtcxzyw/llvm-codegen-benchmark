@@ -5,10 +5,9 @@
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
-  %3 = lshr i32 %2, 24
-  %4 = and i32 %3, 127
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 2130706432
+  %4 = icmp ne i32 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -17,10 +16,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
-  %3 = lshr i32 %2, 1
-  %4 = and i32 %3, 63
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 126
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 5 occurrences:
@@ -33,10 +31,9 @@ entry:
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = lshr i64 %2, 16
-  %4 = and i64 %3, 255
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 16711680
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

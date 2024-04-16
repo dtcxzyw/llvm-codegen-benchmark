@@ -7,7 +7,7 @@ entry:
   %2 = shl nuw i32 %1, 24
   %3 = ashr exact i32 %2, 24
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

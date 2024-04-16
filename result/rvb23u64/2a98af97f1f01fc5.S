@@ -24,7 +24,8 @@ func000000000000005c:                   # @func000000000000005c
 	lui	a2, 244
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -32,7 +33,8 @@ func0000000000000051:                   # @func0000000000000051
 	lui	a2, 244
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000054:                   # @func0000000000000054

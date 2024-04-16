@@ -18,17 +18,16 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addiw	a2, a2, -1
-	sltiu	a2, a2, 12
-	xori	a2, a2, 1
+	addiw	a2, a2, -13
+	sltiu	a2, a2, -12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addi	a2, a2, 999
-	srliw	a2, a2, 19
-	sltiu	a2, a2, 125
-	xori	a2, a2, 1
+	lui	a3, 1032576
+	addi	a4, a3, 999
+	addw	a2, a2, a4
+	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

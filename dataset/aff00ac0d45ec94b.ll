@@ -20,7 +20,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = xor i64 %3, 252
   %5 = add nsw i64 %4, -4
   ret i64 %5

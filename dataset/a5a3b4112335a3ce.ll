@@ -206,8 +206,8 @@ define i1 @func0000000000000051(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = add nsw i64 %3, 1
-  %5 = add nsw i64 %1, %4
-  %6 = icmp eq i64 %5, 0
+  %5 = sub i64 0, %1
+  %6 = icmp eq i64 %4, %5
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7
 }

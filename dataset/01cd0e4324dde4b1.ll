@@ -11,7 +11,7 @@
 define i16 @func0000000000000013(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.cttz.i32(i32 %0, i1 true), !range !0
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 1
   ret i16 %3
 }

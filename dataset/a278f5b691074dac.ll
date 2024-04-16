@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %0, %1
-  %3 = shl i64 %2, %1
+  %2 = shl nsw i64 -1, %1
+  %3 = and i64 %2, %0
   %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
@@ -28,8 +28,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %0, %1
-  %3 = shl i64 %2, %1
+  %2 = shl nsw i64 -1, %1
+  %3 = and i64 %2, %0
   %4 = icmp ne i64 %3, %0
   ret i1 %4
 }

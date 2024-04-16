@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i64 %1, 14
   %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

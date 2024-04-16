@@ -10,7 +10,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = tail call i128 @llvm.smin.i128(i128 %3, i128 %1)
   %5 = trunc i128 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

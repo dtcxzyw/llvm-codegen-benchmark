@@ -169,7 +169,7 @@
 define i1 @func0000000000000284(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = sub i64 %2, %0
   %5 = icmp ugt i64 %4, %0
   %6 = and i1 %3, %5

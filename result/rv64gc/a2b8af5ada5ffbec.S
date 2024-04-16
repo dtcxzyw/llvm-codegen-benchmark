@@ -13,10 +13,8 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
-	lui	a3, 56542
-	addiw	a3, a3, -1231
-	slli	a3, a3, 13
-	addi	a3, a3, -417
+	lui	a3, 5730
+	addiw	a3, a3, -417
 	slli	a3, a3, 15
 	add	a2, a2, a3
 	srli	a2, a2, 8

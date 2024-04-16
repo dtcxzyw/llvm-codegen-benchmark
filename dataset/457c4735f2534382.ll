@@ -9,7 +9,7 @@ define i1 @func000000000000007c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = icmp ne i64 %5, 0
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7
@@ -51,7 +51,7 @@ define i1 @func0000000000000051(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = icmp eq i32 %5, -1
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7

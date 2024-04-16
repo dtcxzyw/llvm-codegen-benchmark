@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i64 16, i64 0
-  %3 = or disjoint i64 %2, 33
-  %4 = icmp ugt i64 %3, %0
-  ret i1 %4
+  %2 = select i1 %1, i64 49, i64 33
+  %3 = icmp ugt i64 %2, %0
+  ret i1 %3
 }
 
 ; 5 occurrences:
@@ -22,10 +21,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 256, i32 2048
-  %3 = or disjoint i32 %2, 16384
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
+  %2 = select i1 %1, i32 16640, i32 18432
+  %3 = icmp ult i32 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

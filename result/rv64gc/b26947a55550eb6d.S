@@ -14,9 +14,10 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	andi	a2, a2, 255
-	snez	a2, a2
-	not	a2, a2
-	subw	a0, a1, a0
+	seqz	a2, a2
+	subw	a1, a1, a0
+	li	a0, -2
+	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 func0000000000000015:                   # @func0000000000000015

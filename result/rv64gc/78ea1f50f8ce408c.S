@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	bne	a0, a1, .LBB0_2
+	bne	a1, a0, .LBB0_2
 	li	a1, 4
 .LBB0_2:                                # %entry
 	mv	a0, a1

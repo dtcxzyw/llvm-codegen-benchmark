@@ -13,10 +13,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i32
-  %2 = lshr i32 %1, 8
-  %3 = sitofp i32 %2 to float
-  ret float %3
+  %1 = lshr i16 %0, 8
+  %2 = uitofp i16 %1 to float
+  ret float %2
 }
 
 attributes #0 = { nounwind }

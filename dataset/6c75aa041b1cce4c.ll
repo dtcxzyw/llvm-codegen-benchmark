@@ -25,7 +25,7 @@ declare double @llvm.fabs.f64(double) #1
 define i1 @func0000000000000035(double %0, double %1, double %2) #0 {
 entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = call noundef double @llvm.fabs.f64(double %0)
   %6 = fcmp ugt double %5, %4
   ret i1 %6

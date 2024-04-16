@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add nsw i32 %1, -1
+  %2 = add i32 %1, 31
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

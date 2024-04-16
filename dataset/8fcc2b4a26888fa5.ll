@@ -5,12 +5,11 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i48 %0, i48 %1, i32 %2) #0 {
 entry:
-  %3 = zext nneg i32 %2 to i48
-  %4 = or disjoint i48 %0, %1
-  %5 = or disjoint i48 %4, %3
-  %6 = trunc i48 %5 to i32
-  %7 = and i32 %6, 65535
-  ret i32 %7
+  %3 = or disjoint i48 %0, %1
+  %4 = trunc i48 %3 to i32
+  %5 = or i32 %4, %2
+  %6 = and i32 %5, 65535
+  ret i32 %6
 }
 
 ; 1 occurrences:

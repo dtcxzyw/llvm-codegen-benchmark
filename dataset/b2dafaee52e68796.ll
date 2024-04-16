@@ -6,8 +6,8 @@ define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = shl nuw nsw i32 1, %1
-  %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, 1
+  %3 = and i32 %2, 254
+  %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 

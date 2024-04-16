@@ -469,11 +469,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000035(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = sub nsw i64 %1, %3
-  %5 = lshr i64 %4, 1
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = lshr i64 %3, 1
+  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 67 occurrences:
@@ -624,11 +624,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = lshr i64 %4, 1
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = lshr i64 %3, 1
+  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -636,11 +636,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = lshr i64 %4, 1
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = lshr i64 %3, 1
+  %5 = getelementptr inbounds ptr, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

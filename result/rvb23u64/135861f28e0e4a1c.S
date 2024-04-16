@@ -33,15 +33,16 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a2, a2, 1
 	and	a1, a1, a2
 	seqz	a1, a1
-	andi	a0, a0, 255
-	sltiu	a0, a0, 64
-	xori	a0, a0, 1
+	andi	a0, a0, 192
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
-	andi	a1, a1, 63
-	andi	a0, a0, 62
-	maxu	a0, a0, a1
-	sltiu	a0, a0, 60
-	xori	a0, a0, 1
+	andi	a1, a1, 60
+	addi	a1, a1, -60
+	seqz	a1, a1
+	andi	a0, a0, 60
+	addi	a0, a0, -60
+	seqz	a0, a0
+	or	a0, a0, a1
 	ret

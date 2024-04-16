@@ -29,8 +29,8 @@ entry:
   %3 = and i64 %2, -8
   %4 = ashr exact i64 %1, 6
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 

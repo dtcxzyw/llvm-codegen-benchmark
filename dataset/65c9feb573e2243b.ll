@@ -14,11 +14,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 2
-  %3 = or disjoint i64 %1, 1
-  %4 = select i1 %0, i64 %3, i64 %2
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg1 = sub i64 -2, %1
+  %.neg = xor i64 %1, -1
+  %.neg2 = select i1 %0, i64 %.neg, i64 %.neg1
+  ret i64 %.neg2
 }
 
 attributes #0 = { nounwind }

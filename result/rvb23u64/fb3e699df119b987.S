@@ -41,10 +41,11 @@ func000000000000000a:                   # @func000000000000000a
 	fmin.s	fa0, fa0, fa5
 	ret
 func000000000000000d:                   # @func000000000000000d
-	fli.d	fa5, 4.0
-	flt.d	a0, fa0, fa5
-	beqz	a0, .LBB7_2
+	fmv.d	fa5, fa0
 	fli.d	fa0, 4.0
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB7_2
+	fmv.d	fa0, fa5
 .LBB7_2:                                # %entry
 	ret
 .LCPI8_0:

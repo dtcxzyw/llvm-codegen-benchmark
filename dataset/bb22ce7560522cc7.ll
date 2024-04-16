@@ -21,7 +21,7 @@ define i8 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 255, %1
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %0, %3
+  %4 = and i8 %3, %0
   ret i8 %4
 }
 
@@ -39,7 +39,7 @@ define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i16
-  %4 = and i16 %0, %3
+  %4 = and i16 %3, %0
   ret i16 %4
 }
 
@@ -62,7 +62,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   ret i32 %4
 }
 
@@ -74,7 +74,7 @@ define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 15, %1
   %3 = trunc i128 %2 to i64
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   ret i64 %4
 }
 

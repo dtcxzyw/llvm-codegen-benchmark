@@ -1,6 +1,8 @@
 func0000000000000028:                   # @func0000000000000028
 	or	a0, a0, a1
-	addi	a0, a0, -16
+	lui	a1, 16
+	addi	a1, a1, -16
+	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
 func0000000000000038:                   # @func0000000000000038

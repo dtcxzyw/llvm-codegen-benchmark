@@ -1,7 +1,7 @@
 func00000000000000a1:                   # @func00000000000000a1
 	zext.w	a2, a2
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000124:                   # @func0000000000000124
@@ -34,7 +34,8 @@ func00000000000000f4:                   # @func00000000000000f4
 func0000000000000101:                   # @func0000000000000101
 	andi	a2, a2, 255
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -76,13 +77,15 @@ func00000000000001d6:                   # @func00000000000001d6
 func000000000000001c:                   # @func000000000000001c
 	zext.w	a2, a2
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000001dc:                   # @func00000000000001dc
 	sext.w	a2, a2
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da
@@ -101,13 +104,13 @@ func0000000000000056:                   # @func0000000000000056
 func00000000000001f1:                   # @func00000000000001f1
 	sext.w	a2, a2
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	zext.w	a2, a2
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8

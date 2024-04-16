@@ -40,7 +40,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000311:                   # @func0000000000000311
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -62,7 +63,7 @@ func00000000000001aa:                   # @func00000000000001aa
 	or	a0, a0, a1
 	ret
 func0000000000000314:                   # @func0000000000000314
-	add	a1, a1, a2
+	or	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 4
 	or	a0, a0, a1
@@ -76,7 +77,8 @@ func0000000000000211:                   # @func0000000000000211
 	or	a0, a0, a1
 	ret
 func00000000000001cc:                   # @func00000000000001cc
-	add	a1, a1, a2
+	negw	a2, a2
+	xor	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
@@ -90,7 +92,9 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -128,7 +132,9 @@ func000000000000038a:                   # @func000000000000038a
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -157,13 +163,16 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func0000000000000111:                   # @func0000000000000111
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -194,7 +203,8 @@ func0000000000000288:                   # @func0000000000000288
 	xori	a0, a0, 1
 	ret
 func00000000000003c1:                   # @func00000000000003c1
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -236,8 +246,10 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
-	add	a1, a1, a2
 	andi	a1, a1, 255
+	negw	a2, a2
+	andi	a2, a2, 255
+	xor	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1

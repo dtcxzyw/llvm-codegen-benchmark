@@ -34,10 +34,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
-  %4 = shl nuw nsw i32 %3, 16
+  %3 = shl i32 %2, 16
+  %4 = and i32 %3, 16711680
   %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -50,8 +50,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 3
-  %4 = shl nuw nsw i32 %3, 16
+  %3 = shl i32 %2, 16
+  %4 = and i32 %3, 196608
   %5 = or i32 %4, %1
   %6 = or i32 %5, %0
   ret i32 %6
@@ -68,9 +68,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 8
-  %4 = shl nuw nsw i32 %3, 11
-  %5 = or disjoint i32 %1, %4
+  %3 = shl i32 %2, 11
+  %4 = and i32 %3, 16384
+  %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -82,9 +82,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
-  %4 = shl nuw nsw i32 %3, 9
-  %5 = or i32 %1, %4
+  %3 = shl i32 %2, 9
+  %4 = and i32 %3, 512
+  %5 = or i32 %4, %1
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -94,8 +94,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 2080895
-  %4 = shl i32 %3, 15
+  %3 = shl i32 %2, 15
+  %4 = and i32 %3, -532709376
   %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   ret i32 %6
@@ -106,11 +106,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
-  %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
+  %3 = shl i32 %2, 24
+  %4 = or disjoint i32 %3, %1
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

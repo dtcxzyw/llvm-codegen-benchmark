@@ -27,10 +27,9 @@ define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp ne i64 %2, 0
-  %4 = add i32 %0, -1
-  %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i1 %3, i1 false
-  ret i1 %6
+  %4 = icmp ne i32 %0, 1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 5 occurrences:
@@ -58,10 +57,9 @@ define i1 @func000000000000011c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 28
   %3 = icmp eq i64 %2, 0
-  %4 = add nsw i32 %0, -1
-  %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i1 %3, i1 false
-  ret i1 %6
+  %4 = icmp ne i32 %0, 1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
 }
 
 ; 3 occurrences:

@@ -57,7 +57,7 @@
 define i1 @func0000000000000222(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %"class.boost::intrusive::list.1638619", ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000232(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = icmp uge ptr %0, %3
+  %4 = icmp ule ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %4, %5
   ret i1 %6
@@ -95,7 +95,7 @@ entry:
 define i1 @func0000000000000122(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.ata_link.1994650, ptr %1, i64 %2
-  %4 = icmp uge ptr %0, %3
+  %4 = icmp ule ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -111,7 +111,7 @@ entry:
 define i1 @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.list_head.2002322, ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -127,7 +127,7 @@ entry:
 define i1 @func0000000000000032(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %union.ListCell.2120243, ptr %1, i64 %2
-  %4 = icmp uge ptr %0, %3
+  %4 = icmp ule ptr %3, %0
   %5 = icmp eq ptr %0, null
   %6 = or i1 %4, %5
   ret i1 %6

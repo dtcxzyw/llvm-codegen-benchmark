@@ -9,7 +9,7 @@ entry:
   %3 = fdiv double %1, %2
   %4 = fmul double %3, 2.000000e+00
   %5 = fsub double 3.000000e+00, %4
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

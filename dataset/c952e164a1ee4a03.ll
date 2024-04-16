@@ -37,11 +37,10 @@ entry:
 define i8 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 4
-  %4 = and i32 %3, 65520
-  %5 = or disjoint i32 %0, %1
-  %6 = or i32 %4, %5
-  %7 = trunc i32 %6 to i8
-  ret i8 %7
+  %4 = or disjoint i32 %0, %1
+  %5 = or i32 %3, %4
+  %6 = trunc i32 %5 to i8
+  ret i8 %6
 }
 
 attributes #0 = { nounwind }

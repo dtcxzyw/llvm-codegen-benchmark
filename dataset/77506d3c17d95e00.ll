@@ -10,7 +10,7 @@
 define i64 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = freeze i128 %2
-  %4 = mul i128 %1, %3
+  %4 = mul i128 %3, %1
   %5 = freeze i128 %0
   %6 = sub i128 %5, %4
   %7 = trunc i128 %6 to i64

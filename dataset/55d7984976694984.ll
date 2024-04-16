@@ -6,9 +6,9 @@ define i32 @func0000000000000041(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %1, %4
+  %5 = icmp ult i32 %4, %1
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

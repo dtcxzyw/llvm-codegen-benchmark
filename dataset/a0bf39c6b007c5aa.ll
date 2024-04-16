@@ -64,7 +64,7 @@ entry:
   %4 = icmp ult i8 %3, 2
   %5 = icmp slt i32 %1, 129
   %6 = select i1 %5, i1 %4, i1 false
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

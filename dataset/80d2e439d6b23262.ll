@@ -8,8 +8,8 @@
 define i64 @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1086
-  %3 = select i1 %2, i32 53, i32 %0
-  %4 = sub nsw i32 4, %3
+  %3 = sub nsw i32 4, %0
+  %4 = select i1 %2, i32 -49, i32 %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -36,9 +36,9 @@ entry:
 define i64 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 -1074, i32 %0
-  %4 = sub nuw nsw i32 17, %3
-  %5 = zext nneg i32 %4 to i64
+  %3 = sub nuw nsw i32 17, %0
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %2, i64 1091, i64 %4
   ret i64 %5
 }
 
@@ -48,8 +48,8 @@ entry:
 define i64 @func0000000000000057(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1086
-  %3 = select i1 %2, i32 53, i32 %0
-  %4 = sub nuw nsw i32 4, %3
+  %3 = sub nuw nsw i32 4, %0
+  %4 = select i1 %2, i32 -49, i32 %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -60,8 +60,8 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = sub nsw i32 30, %3
+  %3 = sub nsw i32 30, %0
+  %4 = select i1 %2, i32 30, i32 %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

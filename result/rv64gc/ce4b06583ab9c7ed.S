@@ -9,8 +9,8 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
-	slli	a1, a1, 59
-	srli	a1, a1, 53
+	slli	a1, a1, 6
+	andi	a1, a1, 1920
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
@@ -35,8 +35,8 @@ func0000000000000054:                   # @func0000000000000054
 	sltu	a0, a0, a1
 	ret
 func0000000000000078:                   # @func0000000000000078
-	slli	a1, a1, 59
-	srli	a1, a1, 53
+	slli	a1, a1, 6
+	andi	a1, a1, 1792
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 256

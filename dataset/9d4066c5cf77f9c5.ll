@@ -171,11 +171,10 @@
 define i32 @func00000000000000ea(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i32
-  %2 = mul nuw nsw i32 %1, 27
-  %3 = add nsw i32 %2, -292
-  %4 = mul nsw i32 %3, 1741647
-  %5 = ashr i32 %4, 19
-  ret i32 %5
+  %2 = mul i32 %1, 47024469
+  %3 = add i32 %2, -508560924
+  %4 = ashr i32 %3, 19
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

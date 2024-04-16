@@ -8,7 +8,7 @@ entry:
   %4 = lshr i32 %3, 16
   %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

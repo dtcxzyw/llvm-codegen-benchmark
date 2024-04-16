@@ -10,7 +10,7 @@ entry:
   %3 = sdiv exact i64 %2, 24
   %4 = sdiv exact i64 %1, 24
   %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sdiv exact i64 %2, 104
   %4 = sdiv exact i64 %1, -104
   %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

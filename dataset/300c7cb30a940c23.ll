@@ -25,7 +25,7 @@ entry:
   %2 = shl i64 %1, 4
   %3 = and i64 %2, 48
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -57,7 +57,7 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 3, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -72,7 +72,7 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -127,7 +127,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -140,7 +140,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 2, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -153,7 +153,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, 131070
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -168,7 +168,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 2, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }

@@ -23,8 +23,8 @@ entry:
   %2 = and i32 %1, 2047
   %3 = add nsw i32 %2, -1075
   %4 = icmp eq i64 %0, 0
-  %5 = select i1 %4, i32 -1074, i32 %3
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %3 to i64
+  %6 = select i1 %4, i64 4294966222, i64 %5
   ret i64 %6
 }
 
@@ -36,8 +36,8 @@ entry:
   %2 = and i32 %1, -8
   %3 = add i32 %2, 8
   %4 = icmp eq i64 %0, 0
-  %5 = select i1 %4, i32 0, i32 %3
-  %6 = zext i32 %5 to i64
+  %5 = zext i32 %3 to i64
+  %6 = select i1 %4, i64 0, i64 %5
   ret i64 %6
 }
 

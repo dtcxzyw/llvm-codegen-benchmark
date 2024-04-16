@@ -20,8 +20,8 @@ entry:
 define i32 @func00000000000000e4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ult i32 %4, 64
+  %4 = and i64 %3, 4294967232
+  %5 = icmp eq i64 %4, 0
   %6 = select i1 %5, i32 6, i32 %0
   ret i32 %6
 }

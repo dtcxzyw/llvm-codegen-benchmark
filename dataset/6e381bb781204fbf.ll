@@ -7,7 +7,7 @@ entry:
   %3 = mul i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

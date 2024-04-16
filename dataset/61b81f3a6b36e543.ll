@@ -89,9 +89,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr inbounds %"struct.mold::elf::ElfShdr.1591712", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.mold::elf::ElfShdr.1591712", ptr %0, i64 %4, i32 4
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -129,9 +128,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr inbounds %"struct.hermes::vm::HadesGC::OldGen::SegmentBucket.1854672", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.hermes::vm::HadesGC::OldGen::SegmentBucket.1854672", ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 2 occurrences:

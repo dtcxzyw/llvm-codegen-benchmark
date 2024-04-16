@@ -959,8 +959,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = and i64 %4, 4294967295
-  %6 = icmp ugt i64 %5, 1023
+  %5 = and i64 %4, 4294966272
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 

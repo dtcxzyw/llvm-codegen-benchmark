@@ -1,20 +1,9 @@
 func0000000000000068:                   # @func0000000000000068
-	sext.w	a3, a1
-	andi	a2, a2, 1
-	li	a1, 4
-	beqz	a2, .LBB0_3
-	bgez	a3, .LBB0_4
-.LBB0_2:                                # %entry
+	sext.w	a0, a0
 	sext.w	a1, a1
-	sltiu	a0, a1, 17
-	xori	a0, a0, 1
-	ret
-.LBB0_3:                                # %entry
-	li	a1, 16
-	bltz	a3, .LBB0_2
-.LBB0_4:                                # %entry
-	sext.w	a1, a0
-	sltiu	a0, a1, 17
+	slti	a1, a1, 0
+	sltiu	a0, a0, 17
+	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000064:                   # @func0000000000000064

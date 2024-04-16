@@ -21,7 +21,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = icmp ugt i64 %3, %1
   %5 = sext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = icmp ugt i64 %3, %1
   %5 = sext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

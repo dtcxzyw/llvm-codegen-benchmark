@@ -7,10 +7,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001c:                   # @func000000000000001c
 	addi	a2, a2, -8
-	bne	a2, a1, .LBB1_2
-	mv	a2, a0
-.LBB1_2:                                # %entry
+	beq	a2, a1, .LBB1_2
 	mv	a0, a2
+.LBB1_2:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	a2, a2, -8

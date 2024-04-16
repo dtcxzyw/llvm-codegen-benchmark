@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp ult i32 %2, 10
   %4 = select i1 %3, i32 0, i32 9
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = shl i32 %5, 4
   ret i32 %6
 }
@@ -51,8 +51,8 @@ define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = icmp ult i32 %2, 1530
-  %4 = select i1 %3, i32 3, i32 -9
-  %5 = add nsw i32 %4, %0
+  %4 = select i1 %3, i32 3, i32 65527
+  %5 = add i32 %4, %0
   %6 = shl i32 %5, 16
   ret i32 %6
 }

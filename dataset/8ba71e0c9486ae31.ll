@@ -35,7 +35,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 60
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 60
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 4
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -82,7 +82,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = getelementptr i32, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -217,7 +217,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr inbounds %"struct.rocksdb::VersionBuilder::Rep::LevelState.1568123", ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -242,7 +242,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 136
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -257,7 +257,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 24
   %5 = getelementptr inbounds i32, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -276,7 +276,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = getelementptr inbounds i32, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -292,7 +292,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 36
   %5 = getelementptr inbounds %"struct.Assimp::MDL::Vertex_MDL4.1753285", ptr %4, i64 %3
-  %6 = icmp uge ptr %0, %5
+  %6 = icmp ule ptr %5, %0
   ret i1 %6
 }
 
@@ -304,7 +304,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 36
   %5 = getelementptr inbounds %"struct.Assimp::MDL::Vertex_MDL4.1753285", ptr %4, i64 %3
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -374,7 +374,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 12
   %5 = getelementptr inbounds i32, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -388,7 +388,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -8
   %5 = getelementptr ptr, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -400,7 +400,7 @@ entry:
   %3 = sext i16 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr %struct.prefix_code_node.1910724, ptr %4, i64 %3
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -413,7 +413,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -4
   %5 = getelementptr i32, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -439,7 +439,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds ptr, ptr %4, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 

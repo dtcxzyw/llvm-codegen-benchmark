@@ -8,7 +8,7 @@
 define double @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %0, %2
+  %3 = or disjoint i16 %2, %0
   %4 = sitofp i16 %3 to double
   %5 = fdiv double %4, 1.000000e+01
   ret double %5

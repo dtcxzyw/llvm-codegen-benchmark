@@ -8,7 +8,7 @@
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, -2146435073
   %5 = or disjoint i32 %4, %0
   %6 = zext i32 %5 to i64
@@ -23,9 +23,9 @@ entry:
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -38,7 +38,7 @@ entry:
   %2 = lshr i32 %1, 9
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 16
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   %6 = zext i8 %5 to i32
   ret i32 %6
 }

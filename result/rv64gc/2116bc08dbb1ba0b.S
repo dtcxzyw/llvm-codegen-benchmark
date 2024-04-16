@@ -14,11 +14,11 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a2, a1, 1
-	li	a1, 9
+	li	a1, 1
 	bnez	a2, .LBB2_2
 	li	a1, 4
 .LBB2_2:                                # %entry
 	add	a0, a0, a1
-	addi	a0, a0, 29
+	addi	a0, a0, 5
 	andi	a0, a0, 7
 	ret

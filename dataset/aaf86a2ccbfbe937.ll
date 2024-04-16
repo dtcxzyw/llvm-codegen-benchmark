@@ -7,8 +7,8 @@ define i1 @func0000000000000011(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = and i1 %3, %1
-  %5 = select i1 %4, i32 0, i32 %0
-  %6 = icmp eq i32 %5, 0
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 
@@ -22,8 +22,8 @@ define i1 @func00000000000000ca(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
-  %5 = select i1 %4, i32 1, i32 %0
-  %6 = icmp sgt i32 %5, 0
+  %5 = icmp sgt i32 %0, 0
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 
@@ -34,8 +34,9 @@ define i1 @func00000000000000c1(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
-  %5 = select i1 %4, i32 1, i32 %0
-  %6 = icmp eq i32 %5, 0
+  %5 = icmp eq i32 %0, 0
+  %not. = xor i1 %4, true
+  %6 = select i1 %not., i1 %5, i1 false
   ret i1 %6
 }
 

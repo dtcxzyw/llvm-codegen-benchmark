@@ -13,7 +13,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = tail call i32 @llvm.smin.i32(i32 %6, i32 0)
   ret i32 %7
 }

@@ -26,9 +26,11 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 25
-	andi	a0, a0, -8
-	addi	a0, a0, -8
-	srliw	a0, a0, 2
+	lui	a1, 64
+	addiw	a1, a1, -8
+	and	a0, a0, a1
+	add	a0, a0, a1
+	srli	a0, a0, 2
 	ret
 func0000000000000038:                   # @func0000000000000038
 	lui	a1, 1

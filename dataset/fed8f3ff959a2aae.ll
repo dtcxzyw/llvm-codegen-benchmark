@@ -10,11 +10,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 30
-  %2 = ashr i64 %1, 32
-  %3 = and i64 %2, -2
-  %4 = icmp ugt i64 %3, 384307168202282325
-  ret i1 %4
+  %.mask = and i64 %0, 8589934592
+  %1 = icmp ne i64 %.mask, 0
+  ret i1 %1
 }
 
 ; 10 occurrences:

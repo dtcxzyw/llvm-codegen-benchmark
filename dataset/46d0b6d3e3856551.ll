@@ -9,7 +9,7 @@ entry:
   %3 = and i16 %2, 1
   %4 = icmp eq i16 %1, 0
   %5 = select i1 %4, i16 %3, i16 5
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

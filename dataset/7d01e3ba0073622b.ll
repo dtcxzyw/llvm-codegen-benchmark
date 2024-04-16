@@ -29,7 +29,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = and i32 %1, 31
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = or i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }

@@ -6,8 +6,8 @@
 define i32 @func000000000000001c(i32 %0, i1 %1, double %2) #0 {
 entry:
   %3 = sitofp i32 %0 to double
-  %4 = fcmp une double %2, %3
-  %5 = and i1 %1, %4
+  %4 = fcmp une double %3, %2
+  %5 = and i1 %4, %1
   %6 = sext i1 %5 to i32
   %7 = add i32 %6, %0
   ret i32 %7
@@ -23,8 +23,8 @@ entry:
 define i32 @func000000000000001d(i32 %0, i1 %1, double %2) #0 {
 entry:
   %3 = sitofp i32 %0 to double
-  %4 = fcmp une double %2, %3
-  %5 = and i1 %1, %4
+  %4 = fcmp une double %3, %2
+  %5 = and i1 %4, %1
   %6 = sext i1 %5 to i32
   %7 = add nsw i32 %6, %0
   ret i32 %7

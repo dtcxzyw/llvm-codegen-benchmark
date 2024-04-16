@@ -261,7 +261,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = shl nuw i32 %1, 24
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -869,7 +869,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = shl nuw nsw i32 %1, 16
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -1545,7 +1545,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = shl nuw nsw i32 %1, 8
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -1598,7 +1598,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = shl nuw nsw i64 %1, 16
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -1649,7 +1649,7 @@ entry:
 define i64 @func000000000000006f(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 8
   %7 = or disjoint i64 %6, %4
@@ -1679,7 +1679,7 @@ entry:
 define i64 @func000000000000004f(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 40
   %7 = or disjoint i64 %6, %4
@@ -1745,7 +1745,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
   %5 = shl nuw nsw i64 %1, 48
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -1806,7 +1806,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
   %5 = shl nsw i32 %1, 8
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -1820,7 +1820,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
   %5 = shl nuw i32 %1, 16
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -1837,7 +1837,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
   %5 = shl nuw i32 %1, 24
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -1868,7 +1868,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = shl nuw nsw i32 %1, 12
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -1955,7 +1955,7 @@ entry:
 define i64 @func0000000000000074(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = zext nneg i32 %1 to i64
   %6 = shl nuw i64 %5, 56
   %7 = or i64 %6, %4
@@ -1968,7 +1968,7 @@ entry:
 define i64 @func0000000000000064(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = zext i8 %1 to i64
   %6 = shl nuw i64 %5, 56
   %7 = or i64 %6, %4
@@ -1985,7 +1985,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 62
   %5 = shl nuw nsw i64 %1, 47
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -2011,7 +2011,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 60
   %5 = shl i64 %1, 56
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -2025,7 +2025,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = shl nuw nsw i32 %1, 16
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -2051,7 +2051,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 11
   %5 = shl i32 %1, 3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -2064,7 +2064,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %3, 25
   %5 = shl nuw nsw i32 %1, 23
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -2082,7 +2082,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
   %5 = shl i64 %1, 40
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

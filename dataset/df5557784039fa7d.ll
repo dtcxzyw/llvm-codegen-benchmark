@@ -8,7 +8,7 @@
 define ptr @func0000000000000055(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = add nsw i32 %4, 1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
@@ -21,7 +21,7 @@ entry:
 define ptr @func0000000000000035(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = add nsw i32 %4, -529
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds %"class.hermes::vm::GCHermesValueBase.1855014", ptr %0, i64 %6
@@ -34,7 +34,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = add i32 %4, 4
   %6 = zext i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
@@ -48,7 +48,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = add i32 %4, 2
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
@@ -61,7 +61,7 @@ entry:
 define ptr @func0000000000000041(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = add i32 %4, 2
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6

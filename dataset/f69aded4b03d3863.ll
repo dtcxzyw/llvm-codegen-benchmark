@@ -56,8 +56,8 @@ entry:
 define ptr @func0000000000000019(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -108,8 +108,8 @@ entry:
 define ptr @func0000000000000023(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 1
-  %4 = select i1 %3, i32 %1, i32 1
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 1
   %6 = getelementptr inbounds %struct.WherePath.2129445, ptr %0, i64 %5
   ret ptr %6
 }

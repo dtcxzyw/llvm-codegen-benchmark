@@ -1,8 +1,4 @@
 
-%struct._OnigStackType.1553707 = type { i32, i64, %union.anon.1553708 }
-%union.anon.1553708 = type { %struct.anon.1553709 }
-%struct.anon.1553709 = type { ptr, ptr, ptr, ptr }
-%"struct.re2::Splice.1554359" = type { ptr, ptr, i32, i32 }
 %"struct.mold::elf::ElfRel.1590142" = type { %"class.mold::LittleEndian.3.1590029", %"class.mold::LittleEndian.1590028", %"class.mold::LittleEndian.1590028", %"class.mold::LittleEndian.295.1590143" }
 %"class.mold::LittleEndian.3.1590029" = type { [8 x i8] }
 %"class.mold::LittleEndian.1590028" = type { [4 x i8] }
@@ -25,9 +21,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 48
-  %6 = getelementptr %struct._OnigStackType.1553707, ptr %0, i64 %5
-  ret ptr %6
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2252 occurrences:
@@ -2288,9 +2283,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
-  %6 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %5
-  ret ptr %6
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 75 occurrences:

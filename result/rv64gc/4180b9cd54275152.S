@@ -1,10 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
-	beqz	a1, .LBB0_2
-	mv	a0, a1
-.LBB0_2:                                # %entry
 	sext.w	a0, a0
-	addi	a0, a0, 2
+	xori	a0, a0, -2
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000081:                   # @func0000000000000081
@@ -34,14 +32,13 @@ func0000000000000014:                   # @func0000000000000014
 	sltiu	a0, a0, 10
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, 255
-	beqz	a1, .LBB4_2
-	mv	a0, a1
-.LBB4_2:                                # %entry
 	slli	a0, a0, 48
 	srli	a0, a0, 48
+	andi	a1, a1, 255
+	seqz	a1, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func0000000000000164:                   # @func0000000000000164
 	sext.w	a1, a1

@@ -805,7 +805,7 @@ define i64 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 1152921504606846975)
   %7 = shl nuw nsw i64 %6, 3
   ret i64 %7

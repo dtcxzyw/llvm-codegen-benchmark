@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %1, i16 %2, i16 %3
   %5 = zext i16 %4 to i64
   %6 = shl nuw nsw i64 %5, 24
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

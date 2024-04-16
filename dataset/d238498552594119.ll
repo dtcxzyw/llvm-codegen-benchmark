@@ -19,7 +19,7 @@ entry:
   %3 = icmp ult i32 %2, 26
   %4 = add nsw i32 %1, 32
   %5 = select i1 %3, i32 %4, i32 %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = icmp ult i32 %2, 26
   %4 = add nsw i32 %1, 32
   %5 = select i1 %3, i32 %4, i32 %1
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = icmp ult i32 %2, 26
   %4 = add i32 %1, 32
   %5 = select i1 %3, i32 %4, i32 %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add nsw i8 %1, -32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp slt i8 %0, %5
+  %6 = icmp sgt i8 %5, %0
   ret i1 %6
 }
 
@@ -76,7 +76,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add nsw i8 %1, -32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp sgt i8 %0, %5
+  %6 = icmp slt i8 %5, %0
   ret i1 %6
 }
 
@@ -105,7 +105,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add nsw i8 %1, -32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 
@@ -121,7 +121,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add nuw nsw i8 %1, 32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 
@@ -134,7 +134,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add i8 %1, 32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp slt i8 %0, %5
+  %6 = icmp sgt i8 %5, %0
   ret i1 %6
 }
 
@@ -147,7 +147,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add i8 %1, 32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp sgt i8 %0, %5
+  %6 = icmp slt i8 %5, %0
   ret i1 %6
 }
 
@@ -160,7 +160,7 @@ entry:
   %3 = icmp ult i16 %2, 26
   %4 = add i16 %1, 32
   %5 = select i1 %3, i16 %4, i16 %1
-  %6 = icmp ult i16 %0, %5
+  %6 = icmp ugt i16 %5, %0
   ret i1 %6
 }
 
@@ -173,7 +173,7 @@ entry:
   %3 = icmp ult i16 %2, 26
   %4 = add i16 %1, 32
   %5 = select i1 %3, i16 %4, i16 %1
-  %6 = icmp ugt i16 %0, %5
+  %6 = icmp ult i16 %5, %0
   ret i1 %6
 }
 
@@ -186,7 +186,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = add nsw i8 %1, -32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp ne i8 %0, %5
+  %6 = icmp ne i8 %5, %0
   ret i1 %6
 }
 

@@ -78,9 +78,8 @@
 define ptr @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %"struct.asmjit::_abi_1_10::FuncNode::ArgPack.1556198", ptr %1, i64 %2
-  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::RegOnly.1556199"], ptr %3, i64 0, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::RegOnly.1556199"], ptr %3, i64 0, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -89,9 +88,8 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr [4 x %struct.fwdb_wmm_ac.2017581], ptr %3, i64 0, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %4 = getelementptr [4 x %struct.fwdb_wmm_ac.2017581], ptr %3, i64 0, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -100,9 +98,8 @@ entry:
 define ptr @func0000000000000006(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds { [5 x i64] }, ptr %1, i64 %2
-  %4 = getelementptr inbounds [0 x { { ptr, i64 }, { { { i64, ptr, {} }, i64 } } }], ptr %3, i64 0, i64 %0
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr [0 x { { ptr, i64 }, { { { i64, ptr, {} }, i64 } } }], ptr %3, i64 0, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -111,9 +108,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.2210405", ptr %1, i64 %2
-  %4 = getelementptr inbounds [3 x %class.Polynomial.17.2210387], ptr %3, i64 0, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [3 x %class.Polynomial.17.2210387], ptr %3, i64 0, i64 %0, i32 0, i64 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

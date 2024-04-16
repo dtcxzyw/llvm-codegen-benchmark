@@ -89,10 +89,10 @@ define i1 @func0000000000000384(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 1, %4
-  %6 = sub i64 %0, %1
-  %7 = icmp ult i64 %6, %5
-  ret i1 %7
+  %5 = sub i64 %0, %1
+  %.highbits = lshr i64 %5, %4
+  %6 = icmp eq i64 %.highbits, 0
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -102,11 +102,11 @@ entry:
 define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 -54, %2
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw i64 1, %4
-  %6 = sub i64 %0, %1
-  %7 = icmp ult i64 %6, %5
-  ret i1 %7
+  %4 = zext nneg i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %.highbits = lshr i64 %5, %4
+  %6 = icmp eq i64 %.highbits, 0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

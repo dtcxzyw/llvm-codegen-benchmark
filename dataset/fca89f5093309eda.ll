@@ -8,7 +8,7 @@ define i1 @func0000000000000002(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fadd float %2, 0x401921FB60000000
   %4 = select i1 %1, float %3, float %2
-  %5 = fcmp olt float %0, %4
+  %5 = fcmp ogt float %4, %0
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ define i1 @func000000000000000a(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fadd double %2, 0x401921FB54442D18
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp ole double %0, %4
+  %5 = fcmp oge double %4, %0
   ret i1 %5
 }
 

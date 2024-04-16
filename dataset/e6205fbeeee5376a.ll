@@ -413,8 +413,8 @@ entry:
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 6
-  %2 = and i32 %1, 255
-  %3 = icmp ult i32 %2, 32
+  %2 = and i32 %1, 224
+  %3 = icmp eq i32 %2, 0
   ret i1 %3
 }
 

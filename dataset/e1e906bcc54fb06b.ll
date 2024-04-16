@@ -1321,8 +1321,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = add nsw i64 %3, -1
+  %3 = xor i64 %0, -1
+  %4 = add i64 %3, %2
   ret i64 %4
 }
 

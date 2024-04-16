@@ -8,10 +8,9 @@
 define i128 @func0000000000000014(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = shl nuw i128 %0, 64
-  %4 = or disjoint i128 %3, %2
-  %5 = sub i128 0, %4
-  ret i128 %5
+  %.neg = mul i128 %0, -18446744073709551616
+  %.neg1 = sub i128 %.neg, %2
+  ret i128 %.neg1
 }
 
 ; 5 occurrences:
@@ -37,10 +36,9 @@ entry:
 define i64 @func000000000000001d(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = shl nuw nsw i64 %0, 8
-  %4 = or disjoint i64 %3, %2
-  %5 = sub nsw i64 0, %4
-  ret i64 %5
+  %.neg = mul i64 %0, -256
+  %.neg1 = sub i64 %.neg, %2
+  ret i64 %.neg1
 }
 
 ; 2 occurrences:
@@ -50,10 +48,9 @@ entry:
 define i128 @func0000000000000015(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = shl nuw i128 %0, 64
-  %4 = or disjoint i128 %3, %2
-  %5 = sub nsw i128 0, %4
-  ret i128 %5
+  %.neg = mul i128 %0, -18446744073709551616
+  %.neg1 = sub i128 %.neg, %2
+  ret i128 %.neg1
 }
 
 ; 1 occurrences:
@@ -74,10 +71,9 @@ entry:
 define i64 @func0000000000000025(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = shl i64 %0, 7
-  %4 = or disjoint i64 %3, %2
-  %5 = sub nsw i64 0, %4
-  ret i64 %5
+  %.neg = mul i64 %0, -128
+  %.neg1 = sub i64 %.neg, %2
+  ret i64 %.neg1
 }
 
 ; 1 occurrences:
@@ -86,10 +82,9 @@ entry:
 define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = shl i32 %0, 7
-  %4 = or disjoint i32 %3, %2
-  %5 = sub i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %0, -128
+  %.neg1 = sub i32 %.neg, %2
+  ret i32 %.neg1
 }
 
 ; 1 occurrences:

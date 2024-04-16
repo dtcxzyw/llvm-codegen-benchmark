@@ -9,8 +9,8 @@ define double @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 1.000000e+00
   %3 = select i1 %2, float 1.000000e+00, float %1
-  %4 = select i1 %0, float 0x3FC99999A0000000, float %3
-  %5 = fpext float %4 to double
+  %4 = fpext float %3 to double
+  %5 = select i1 %0, double 0x3FC99999A0000000, double %4
   ret double %5
 }
 
@@ -22,8 +22,8 @@ define double @func0000000000000002(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
-  %4 = select i1 %0, float 1.000000e+02, float %3
-  %5 = fpext float %4 to double
+  %4 = fpext float %3 to double
+  %5 = select i1 %0, double 1.000000e+02, double %4
   ret double %5
 }
 

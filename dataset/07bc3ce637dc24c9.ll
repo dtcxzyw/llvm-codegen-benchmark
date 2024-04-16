@@ -12,8 +12,8 @@
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, 1
-  %3 = mul i32 %2, 3
+  %2 = mul i32 %1, 3
+  %3 = add i32 %2, 3
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -31,8 +31,8 @@ entry:
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, 1
-  %3 = mul nsw i32 %2, 5
+  %2 = mul i32 %1, 5
+  %3 = add i32 %2, 5
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -44,8 +44,8 @@ entry:
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, 1
-  %3 = mul nsw i32 %2, 1000000
+  %2 = mul i32 %1, 1000000
+  %3 = add i32 %2, 1000000
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

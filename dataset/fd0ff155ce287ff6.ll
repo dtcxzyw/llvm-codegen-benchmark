@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 9223372036854775800
-  %4 = shl i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = and i64 %3, -32
   %5 = sub nsw i64 0, %1
   %6 = getelementptr %"class.irr::video::SColor.1652648", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
@@ -25,8 +25,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 4611686018427387900
-  %4 = shl i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = and i64 %3, -32
   %5 = sub i64 0, %1
   %6 = getelementptr ptr, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4

@@ -6,10 +6,9 @@
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = shl nsw i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = mul nsw i64 %2, -2
+  %3 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 2 occurrences:

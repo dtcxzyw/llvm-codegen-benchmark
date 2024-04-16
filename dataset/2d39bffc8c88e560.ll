@@ -19,7 +19,7 @@
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -30,8 +30,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 63
-  %4 = icmp ult i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ugt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -267,8 +267,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, 63
-  %4 = icmp ule i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp uge i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -285,9 +285,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, -1
-  %4 = icmp eq i32 %1, %3
-  %5 = or i1 %0, %4
+  %3 = xor i32 %2, %1
+  %4 = icmp eq i32 %3, -1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -297,7 +297,7 @@ entry:
 define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = icmp uge i64 %1, %3
+  %4 = icmp ule i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }

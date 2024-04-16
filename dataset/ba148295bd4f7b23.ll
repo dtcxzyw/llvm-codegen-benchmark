@@ -7,7 +7,7 @@
 define float @func0000000000000014(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
@@ -21,7 +21,7 @@ declare float @llvm.fmuladd.f32(float, float, float) #1
 define float @func0000000000000012(float %0, float %1, float %2) #0 {
 entry:
   %3 = call noundef float @llvm.fmuladd.f32(float %1, float %1, float %2)
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   %5 = select i1 %4, float %0, float %3
   ret float %5
 }
@@ -32,7 +32,7 @@ entry:
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fmuladd.f64(double %1, double %1, double %2)
-  %4 = fcmp oge double %0, %3
+  %4 = fcmp ole double %3, %0
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }

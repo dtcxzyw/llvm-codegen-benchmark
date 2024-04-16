@@ -12,7 +12,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = sdiv i32 %3, 8
   %5 = shl nsw i32 %4, 3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 94
   %5 = shl nsw i32 %4, 8
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

@@ -17,7 +17,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 400
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = mul nsw i32 %1, 365
   %5 = add nsw i32 %3, %4
   ret i32 %5
@@ -30,7 +30,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = mul nsw i32 %1, 365
   %5 = add nsw i32 %3, %4
   ret i32 %5

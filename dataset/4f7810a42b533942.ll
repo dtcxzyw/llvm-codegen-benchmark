@@ -84,10 +84,10 @@ entry:
 define i32 @func000000000000007f(i32 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, 2
-  %5 = add nuw nsw i32 %0, %4
-  ret i32 %5
+  %narrow = add nuw i8 %2, 2
+  %3 = zext i8 %narrow to i32
+  %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 7 occurrences:

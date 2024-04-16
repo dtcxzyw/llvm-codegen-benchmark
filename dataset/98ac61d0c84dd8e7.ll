@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000010(i16 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = sext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = trunc i32 %4 to i16
-  %6 = sub i16 %0, %5
-  ret i16 %6
+  %3 = trunc i32 %1 to i16
+  %.neg = sub i16 %2, %3
+  %4 = add i16 %.neg, %0
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

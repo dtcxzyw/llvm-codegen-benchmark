@@ -2039,7 +2039,7 @@
 define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 384307168202282325)
   %5 = select i1 %3, i64 384307168202282325, i64 %4
   ret i64 %5

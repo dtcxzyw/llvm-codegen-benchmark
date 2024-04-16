@@ -10,7 +10,7 @@
 define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %2, 1.000000e+00
-  %4 = fcmp olt float %1, %3
+  %4 = fcmp ogt float %3, %1
   %5 = select i1 %4, float %1, float %3
   %6 = fsub float %5, %0
   ret float %6

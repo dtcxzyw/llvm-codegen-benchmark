@@ -8,7 +8,7 @@ entry:
   %3 = icmp ne i64 %2, 4
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = zext i1 %3 to i8
   %5 = zext i1 %1 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   %7 = or i8 %6, %4
   ret i8 %7
 }

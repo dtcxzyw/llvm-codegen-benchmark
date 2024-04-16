@@ -60,7 +60,7 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	add	a1, a1, a2
-	li	a2, -100
+	li	a2, 156
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret

@@ -24782,7 +24782,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 15
+  %1 = and i32 %0, 14
   %2 = icmp ult i32 %1, 10
   ret i1 %2
 }
@@ -27327,9 +27327,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, -1048576
-  %2 = icmp slt i64 %1, 0
-  ret i1 %2
+  %1 = icmp slt i64 %0, 0
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

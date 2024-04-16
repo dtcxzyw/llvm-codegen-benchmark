@@ -4,12 +4,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %2, 2654435761
-  %4 = and i64 %3, 4294967295
-  %5 = add nuw i64 %0, %4
-  %6 = lshr i64 %5, 32
-  ret i64 %6
+  %2 = mul i64 %1, 2654435761
+  %3 = and i64 %2, 4294967295
+  %4 = add nuw i64 %3, %0
+  %5 = lshr i64 %4, 32
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -18,12 +17,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %2, 3266489917
-  %4 = and i64 %3, 4294967295
-  %5 = add nuw nsw i64 %0, %4
-  %6 = lshr i64 %5, 32
-  ret i64 %6
+  %2 = mul i64 %1, 3266489917
+  %3 = and i64 %2, 4294967295
+  %4 = add nuw nsw i64 %3, %0
+  %5 = lshr i64 %4, 32
+  ret i64 %5
 }
 
 ; 3 occurrences:

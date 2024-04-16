@@ -19,8 +19,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = udiv exact i64 %3, 12
-  %5 = add nsw i64 %4, -2
-  %6 = or disjoint i64 %5, 1
+  %5 = or i64 %4, 1
+  %6 = add nsw i64 %5, -2
   ret i64 %6
 }
 

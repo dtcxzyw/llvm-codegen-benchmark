@@ -109,8 +109,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2139095040
-  %3 = lshr exact i32 %2, 23
+  %2 = lshr i32 %1, 23
+  %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -150
   %5 = select i1 %0, i32 -149, i32 %4
   ret i32 %5

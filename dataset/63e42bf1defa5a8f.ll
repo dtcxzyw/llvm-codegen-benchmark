@@ -21,7 +21,7 @@ entry:
 define i64 @func00000000000001c7(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = icmp ugt i64 %4, 64
   %6 = select i1 %5, i64 %0, i64 %1
   %7 = add nuw nsw i64 %6, %3

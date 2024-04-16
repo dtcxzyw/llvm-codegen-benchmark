@@ -9,7 +9,7 @@ entry:
   %3 = fptosi float %2 to i32
   %4 = zext i1 %1 to i32
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

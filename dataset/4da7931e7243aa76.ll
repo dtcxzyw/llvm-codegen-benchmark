@@ -12,7 +12,7 @@ entry:
   %2 = and i32 %1, 24
   %3 = xor i32 %2, 24
   %4 = shl nuw i32 128, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = and i8 %1, 6
   %3 = xor i8 %2, 6
   %4 = shl nuw nsw i8 1, %3
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 

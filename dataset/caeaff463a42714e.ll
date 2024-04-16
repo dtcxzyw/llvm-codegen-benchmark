@@ -44,9 +44,9 @@
 define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = sub i64 %1, %3
-  %5 = add i64 %4, -1
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
+  %4 = xor i64 %3, -1
+  %5 = getelementptr ptr, ptr %0, i64 %4
+  %6 = getelementptr ptr, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -129,9 +129,9 @@ entry:
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = sub nsw i64 %1, %3
-  %5 = add nsw i64 %4, -1
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
+  %4 = xor i64 %3, -1
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -141,9 +141,9 @@ entry:
 define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = sub i64 %1, %3
-  %5 = add nsw i64 %4, -1
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
+  %4 = xor i64 %3, -1
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -153,9 +153,9 @@ entry:
 define ptr @func0000000000000029(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = sub nsw i64 %1, %3
-  %5 = add i64 %4, -1
-  %6 = getelementptr inbounds i64, ptr %0, i64 %5
+  %4 = xor i64 %3, -1
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   ret ptr %6
 }
 

@@ -6,9 +6,9 @@
 define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %0, i64 %1
-  %3 = icmp ne ptr %0, null
-  %4 = select i1 %3, ptr %2, ptr null
-  ret ptr %4
+  %.not = icmp eq ptr %0, null
+  %3 = select i1 %.not, ptr null, ptr %2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -17,9 +17,9 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = icmp ne ptr %0, null
-  %4 = select i1 %3, ptr %2, ptr null
-  ret ptr %4
+  %.not = icmp eq ptr %0, null
+  %3 = select i1 %.not, ptr null, ptr %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

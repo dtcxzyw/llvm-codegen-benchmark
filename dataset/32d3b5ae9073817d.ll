@@ -36,8 +36,8 @@
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 72
+  %2 = and i32 %1, 72
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 
@@ -49,8 +49,8 @@ entry:
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 7
+  %2 = and i32 %1, 7
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

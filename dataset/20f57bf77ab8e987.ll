@@ -9,12 +9,12 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000077(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %2, %0
-  %4 = lshr i32 %3, 1
-  %5 = shl nuw nsw i32 %4, 2
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %2 = shl i32 %1, 9
+  %3 = shl i32 %0, 1
+  %.masked = and i32 %3, -4
+  %4 = or i32 %2, %.masked
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

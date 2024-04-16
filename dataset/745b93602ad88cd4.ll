@@ -20,11 +20,10 @@
 define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = bitcast float %3 to i32
-  %5 = and i32 %4, 2139095040
-  %6 = icmp ne i32 %5, 2139095040
-  %7 = and i1 %0, %6
-  ret i1 %7
+  %4 = call float @llvm.fabs.f32(float %3)
+  %5 = fcmp one float %4, 0x7FF0000000000000
+  %6 = and i1 %5, %0
+  ret i1 %6
 }
 
 ; 16 occurrences:
@@ -55,4 +54,11 @@ entry:
   ret i1 %7
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i1 @llvm.is.fpclass.f32(float, i32 immarg) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fabs.f32(float) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -11,7 +11,7 @@ entry:
   %4 = select i1 %3, i64 %2, i64 0
   %5 = sub i64 %1, %4
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 4096)
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

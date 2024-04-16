@@ -18,10 +18,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 63
-  %3 = add nsw i64 %2, -1
-  %4 = and i64 %0, %3
-  ret i64 %4
+  %.inv = icmp slt i64 %1, 0
+  %2 = select i1 %.inv, i64 0, i64 %0
+  ret i64 %2
 }
 
 ; 1 occurrences:

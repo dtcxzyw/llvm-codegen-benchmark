@@ -7,9 +7,9 @@
 define ptr @func0000000000000000(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = select i1 %0, ptr %1, ptr %4
-  ret ptr %5
+  %.idx = select i1 %0, i64 0, i64 %3
+  %4 = getelementptr i8, ptr %1, i64 %.idx
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -22,9 +22,9 @@ entry:
 define ptr @func0000000000000001(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = select i1 %0, ptr %1, ptr %4
-  ret ptr %5
+  %.idx = select i1 %0, i64 0, i64 %3
+  %4 = getelementptr inbounds i8, ptr %1, i64 %.idx
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

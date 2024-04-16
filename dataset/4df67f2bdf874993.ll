@@ -5,7 +5,7 @@
 define i1 @func00000000000000ac(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp slt i8 %1, 0
   %6 = or i1 %4, %5
   ret i1 %6
@@ -30,7 +30,7 @@ entry:
 define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i32 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -61,7 +61,7 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i32 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6

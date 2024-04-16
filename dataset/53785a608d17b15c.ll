@@ -47,7 +47,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = lshr exact i32 %0, 16
   %5 = or disjoint i32 %4, %3
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }
 

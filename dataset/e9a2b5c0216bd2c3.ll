@@ -21,9 +21,8 @@
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
-  %3 = icmp eq i32 %2, 0
-  %4 = xor i1 %3, true
-  ret i1 %4
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -37,9 +36,8 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
-  %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %3, true
-  ret i1 %4
+  %.not = icmp eq i32 %2, 0
+  ret i1 %.not
 }
 
 attributes #0 = { nounwind }

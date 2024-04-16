@@ -125,9 +125,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 24
-  %3 = mul nsw i64 %0, 24
-  %4 = icmp eq i64 %3, %2
+  %2 = xor i64 %0, %1
+  %3 = and i64 %2, 2305843009213693951
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 

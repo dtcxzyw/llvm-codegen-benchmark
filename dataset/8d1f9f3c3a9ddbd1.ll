@@ -52,10 +52,9 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
-  %5 = xor i64 %4, -1
-  ret i64 %5
+  %.not = xor i64 %0, -1
+  %3 = or i64 %2, %.not
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

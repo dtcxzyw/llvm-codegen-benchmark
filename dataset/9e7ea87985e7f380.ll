@@ -18,7 +18,7 @@ define i1 @func0000000000000010(i1 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -44,7 +44,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = icmp sgt i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

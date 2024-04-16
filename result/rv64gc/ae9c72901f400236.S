@@ -12,6 +12,6 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001a:                   # @func000000000000001a
 	fcvt.l.d	a1, fa0, rtz
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	sgtz	a0, a0
 	ret

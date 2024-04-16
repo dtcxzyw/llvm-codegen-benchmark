@@ -818,8 +818,8 @@ entry:
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
-  %2 = and i8 %1, -97
-  %3 = or i8 %2, 24
+  %2 = and i8 %1, -121
+  %3 = or disjoint i8 %2, 24
   ret i8 %3
 }
 

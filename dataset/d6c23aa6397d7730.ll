@@ -5,7 +5,7 @@
 define i1 @func0000000000000144(float %0, float %1) #0 {
 entry:
   %2 = call noundef float @llvm.fabs.f32(float %1)
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   %4 = select i1 %3, float %0, float %2
   %5 = fcmp ogt float %4, 1.000000e+01
   ret i1 %5
@@ -20,7 +20,7 @@ declare float @llvm.fabs.f32(float) #1
 define i1 @func0000000000000122(float %0, float %1) #0 {
 entry:
   %2 = call noundef float @llvm.fabs.f32(float %1)
-  %3 = fcmp olt float %0, %2
+  %3 = fcmp ogt float %2, %0
   %4 = select i1 %3, float %0, float %2
   %5 = fcmp olt float %4, 1.000000e+03
   ret i1 %5
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000042(double %0, double %1) #0 {
 entry:
   %2 = tail call double @llvm.fabs.f64(double %1)
-  %3 = fcmp ogt double %0, %2
+  %3 = fcmp olt double %2, %0
   %4 = select i1 %3, double %0, double %2
   %5 = fcmp olt double %4, 0x10000000000000
   ret i1 %5
@@ -47,7 +47,7 @@ declare double @llvm.fabs.f64(double) #1
 define i1 @func0000000000000028(double %0, double %1) #0 {
 entry:
   %2 = tail call double @llvm.fabs.f64(double %1)
-  %3 = fcmp olt double %0, %2
+  %3 = fcmp ogt double %2, %0
   %4 = select i1 %3, double %0, double %2
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
@@ -61,7 +61,7 @@ entry:
 define i1 @func0000000000000044(double %0, double %1) #0 {
 entry:
   %2 = call double @llvm.fabs.f64(double %1)
-  %3 = fcmp ogt double %0, %2
+  %3 = fcmp olt double %2, %0
   %4 = select i1 %3, double %0, double %2
   %5 = fcmp ogt double %4, 5.000000e-04
   ret i1 %5

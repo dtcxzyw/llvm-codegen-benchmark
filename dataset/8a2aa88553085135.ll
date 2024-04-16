@@ -7,7 +7,7 @@
 define ptr @func000000000000000e(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 3
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr [4 x %struct.transaction.1660472], ptr %0, i64 0, i64 %6
@@ -21,12 +21,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = add i32 %1, %3
-  %5 = and i32 %4, 255
-  %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr inbounds [256 x i32], ptr %0, i64 0, i64 %6
-  ret ptr %7
+  %.tr = trunc i32 %1 to i8
+  %.narrow = add i8 %.tr, %2
+  %3 = zext i8 %.narrow to i64
+  %4 = getelementptr inbounds [256 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

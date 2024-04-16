@@ -9,9 +9,9 @@
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, 3
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
+  %.neg = mul nsw i64 %2, -3
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -22,9 +22,9 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, 12
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = mul nsw i64 %2, -12
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

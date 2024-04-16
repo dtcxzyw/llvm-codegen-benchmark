@@ -77,8 +77,9 @@ func0000000000000033:                   # @func0000000000000033
 	ret
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 255
-	snez	a1, a1
-	not	a1, a1
+	seqz	a1, a1
+	li	a2, -2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029

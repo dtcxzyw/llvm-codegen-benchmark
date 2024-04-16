@@ -2039,8 +2039,8 @@
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 384307168202282325)
-  %3 = select i1 %0, i64 384307168202282325, i64 %2
-  %4 = mul nuw nsw i64 %3, 24
+  %3 = mul nuw nsw i64 %2, 24
+  %4 = select i1 %0, i64 9223372036854775800, i64 %3
   ret i64 %4
 }
 

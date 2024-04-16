@@ -13,11 +13,11 @@ func0000000000000078:                   # @func0000000000000078
 	sltu	a0, a1, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
-	addiw	a2, a2, -1
+	sext.w	a2, a2
 	li	a3, 40
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	addi	a1, a1, 16
+	addi	a1, a1, -24
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

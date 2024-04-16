@@ -53,7 +53,7 @@ define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -24
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -90,10 +90,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 152
-  %3 = icmp ne ptr %2, null
-  %4 = and i1 %3, %0
-  ret i1 %4
+  ret i1 %0
 }
 
 attributes #0 = { nounwind }

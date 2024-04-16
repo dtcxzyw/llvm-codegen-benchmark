@@ -10,7 +10,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = and i64 %1, 4294967295
   %5 = xor i64 %4, %3
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

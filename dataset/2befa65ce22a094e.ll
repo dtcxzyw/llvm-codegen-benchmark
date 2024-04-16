@@ -12,7 +12,7 @@ entry:
   %3 = tail call double @llvm.fmuladd.f64(double %1, double %2, double 7.000000e+00)
   %4 = bitcast double %3 to i64
   %5 = and i64 %4, 4294967295
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

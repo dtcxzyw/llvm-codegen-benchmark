@@ -50,8 +50,8 @@
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 56
-  %2 = or i64 %1, 128
-  %3 = trunc i64 %2 to i8
+  %2 = trunc nuw i64 %1 to i8
+  %3 = or i8 %2, -128
   ret i8 %3
 }
 
@@ -62,8 +62,8 @@ entry:
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 56
-  %2 = or i64 %1, 128
-  %3 = trunc nuw i64 %2 to i8
+  %2 = trunc nuw i64 %1 to i8
+  %3 = or i8 %2, -128
   ret i8 %3
 }
 

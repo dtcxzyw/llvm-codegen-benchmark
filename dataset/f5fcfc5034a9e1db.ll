@@ -6,7 +6,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
+  %3 = zext i32 %2 to i64
   %4 = sub i64 %3, %1
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
@@ -19,8 +19,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub nsw i64 %3, %1
+  %3 = zext i32 %2 to i64
+  %4 = sub i64 %3, %1
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i8
   ret i8 %6
@@ -33,9 +33,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %3 = zext i32 %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

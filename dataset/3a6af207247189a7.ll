@@ -12,7 +12,7 @@
 define i32 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -26,7 +26,7 @@ entry:
 define i8 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -57,7 +57,7 @@ entry:
 define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -78,7 +78,7 @@ entry:
 define i32 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -107,7 +107,7 @@ entry:
 define i16 @func000000000000002e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp sle i32 %0, %3
+  %4 = icmp sge i32 %3, %0
   %5 = zext i1 %4 to i16
   ret i16 %5
 }
@@ -122,7 +122,7 @@ entry:
 define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -134,7 +134,7 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -145,7 +145,7 @@ entry:
 define i32 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -156,7 +156,7 @@ entry:
 define i8 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -167,7 +167,7 @@ entry:
 define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -180,7 +180,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

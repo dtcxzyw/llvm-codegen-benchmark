@@ -18,7 +18,7 @@
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ugt i64 %3, 127
   ret i1 %4
 }
@@ -29,10 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
-  %2 = ashr i8 %1, 7
-  %3 = xor i8 %0, %2
-  %4 = icmp sgt i8 %3, -1
-  ret i1 %4
+  %2 = xor i8 %1, %0
+  %3 = icmp sgt i8 %2, -1
+  ret i1 %3
 }
 
 ; 5 occurrences:
@@ -45,7 +44,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp ult i32 %3, 128
   ret i1 %4
 }
@@ -56,7 +55,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp slt i64 %3, 256
   ret i1 %4
 }
@@ -70,7 +69,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp eq i32 %3, 1
   ret i1 %4
 }

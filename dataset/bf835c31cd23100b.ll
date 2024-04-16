@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 7
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

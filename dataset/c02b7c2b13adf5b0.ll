@@ -34,8 +34,8 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 65526
   %4 = and i32 %3, 65535
-  %5 = or i32 %1, %4
-  %6 = or i32 %0, %5
+  %5 = or i32 %4, %1
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -64,9 +64,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
+  %3 = add i32 %2, 7
   %4 = and i32 %3, 7
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -90,7 +90,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 32768
   %4 = and i32 %3, 16711680
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -103,7 +103,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 33554432
   %4 = and i32 %3, 234881024
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = or i32 %5, %0
   ret i32 %6
 }

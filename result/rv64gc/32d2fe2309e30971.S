@@ -4,28 +4,28 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a1, a1, 255
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	seqz	a0, a0
 	ret
 func0000000000000101:                   # @func0000000000000101
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	andi	a0, a0, 255
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	andi	a1, a1, 255
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func00000000000001ca:                   # @func00000000000001ca
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	sgtz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func0000000000000148:                   # @func0000000000000148

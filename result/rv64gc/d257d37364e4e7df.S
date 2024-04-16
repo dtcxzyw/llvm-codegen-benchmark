@@ -1,5 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, 1048575
+	li	a2, -1
+	slli	a2, a2, 32
+	srli	a2, a2, 20
 	and	a1, a1, a2
 	sub	a0, a0, a1
 	srli	a0, a0, 12
@@ -15,7 +17,9 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a0, a0, 12
 	ret
 func0000000000000004:                   # @func0000000000000004
-	lui	a2, 1048575
+	li	a2, -1
+	slli	a2, a2, 32
+	srli	a2, a2, 20
 	and	a1, a1, a2
 	sub	a0, a0, a1
 	srli	a0, a0, 12

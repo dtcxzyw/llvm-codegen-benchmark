@@ -15,10 +15,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 960
+  %2 = and i16 %1, 960
+  %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %0, 10
-  %5 = or disjoint i32 %3, %4
+  %5 = or disjoint i32 %4, %3
   %6 = lshr exact i32 %5, 6
   ret i32 %6
 }

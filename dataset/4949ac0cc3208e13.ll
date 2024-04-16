@@ -25,7 +25,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds %"struct.folly::threadlocal_detail::ElementWrapper.1637658", ptr %1, i64 %3, i32 3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

@@ -6,7 +6,7 @@
 define float @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 1)
   %5 = sitofp i32 %4 to float
   ret float %5

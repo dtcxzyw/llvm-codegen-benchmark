@@ -1651,10 +1651,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 5
-  %2 = and i32 %1, 3
-  %3 = icmp eq i32 %2, 2
-  ret i1 %3
+  %1 = and i32 %0, 96
+  %2 = icmp eq i32 %1, 64
+  ret i1 %2
 }
 
 ; 199 occurrences:
@@ -1860,10 +1859,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 2
-  %2 = and i32 %1, 1
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 4
+  %2 = icmp ne i32 %1, 0
+  ret i1 %2
 }
 
 ; 163 occurrences:
@@ -2033,10 +2031,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 4
-  %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 10
-  ret i1 %3
+  %1 = and i32 %0, 224
+  %2 = icmp ult i32 %1, 160
+  ret i1 %2
 }
 
 ; 991 occurrences:
@@ -3034,10 +3031,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 3
-  %2 = and i32 %1, 63
-  %3 = icmp ugt i32 %2, 56
-  ret i1 %3
+  %1 = and i32 %0, 504
+  %2 = icmp ugt i32 %1, 448
+  ret i1 %2
 }
 
 ; 68 occurrences:
@@ -3112,10 +3108,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = and i64 %1, 4294967295
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 34359738360
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -3124,10 +3119,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = and i64 %1, 4294967295
-  %3 = icmp ult i64 %2, 4
-  ret i1 %3
+  %1 = and i64 %0, 34359738336
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -3137,10 +3131,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 1
-  %2 = and i64 %1, 8935141660703064064
-  %3 = icmp ne i64 %2, 8935141660703064064
-  ret i1 %3
+  %1 = icmp ult i64 %0, -576460752303423488
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

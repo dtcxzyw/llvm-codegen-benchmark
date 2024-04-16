@@ -1,6 +1,6 @@
 func000000000000000b:                   # @func000000000000000b
 	add	a1, a1, a2
-	lui	a2, 209715
+	lui	a2, 13107
 	addiw	a2, a2, 819
 	and	a1, a1, a2
 	and	a0, a0, a2
@@ -11,7 +11,7 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a2
-	lui	a2, 28784
+	lui	a2, 112
 	addiw	a2, a2, 1799
 	and	a1, a1, a2
 	and	a0, a0, a2

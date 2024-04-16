@@ -32,7 +32,7 @@
 define i16 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = lshr i32 %4, 13
   %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i16

@@ -577,7 +577,7 @@ entry:
   %4 = shl nuw i32 %3, 16
   %5 = zext i16 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

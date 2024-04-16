@@ -32,7 +32,7 @@ define i16 @func0000000000000070(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 10
   %4 = select i1 %3, i16 0, i16 10
-  %5 = add nuw nsw i16 %1, %4
+  %5 = add nuw nsw i16 %4, %1
   %6 = add i16 %0, -1
   %7 = add i16 %6, %5
   ret i16 %7
@@ -71,7 +71,7 @@ define i32 @func0000000000000115(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2000000000
   %4 = select i1 %3, i32 999999999, i32 -1
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %0, -1999999999
   %7 = add nsw i32 %6, %5
   ret i32 %7

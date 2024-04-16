@@ -59,10 +59,10 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a1, a1, 255
-	slli	a1, a1, 16
-	slli	a0, a0, 8
+	slli	a1, a1, 8
+	slli	a0, a0, 40
+	srli	a0, a0, 40
 	or	a0, a0, a1
-	srliw	a0, a0, 8
 	ret
 func0000000000000032:                   # @func0000000000000032
 	srli	a2, a2, 63

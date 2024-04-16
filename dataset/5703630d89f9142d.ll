@@ -12,7 +12,7 @@ entry:
   %3 = fneg double %1
   %4 = icmp eq i32 %2, 43
   %5 = select i1 %4, double %1, double %3
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

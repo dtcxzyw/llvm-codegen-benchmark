@@ -9,9 +9,9 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = sub i64 65536, %6
-  ret i64 %7
+  %.neg = sub i64 %0, %5
+  %6 = add i64 %.neg, 65536
+  ret i64 %6
 }
 
 ; 4 occurrences:
@@ -25,9 +25,8 @@ entry:
   %3 = sub i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = sub i64 0, %6
-  ret i64 %7
+  %.neg = sub i64 %0, %5
+  ret i64 %.neg
 }
 
 ; 148 occurrences:
@@ -185,9 +184,8 @@ entry:
   %3 = sub i64 0, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = sub i64 0, %6
-  ret i64 %7
+  %.neg = sub i64 %0, %5
+  ret i64 %.neg
 }
 
 ; 3 occurrences:
@@ -200,9 +198,8 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = sub i64 0, %6
-  ret i64 %7
+  %.neg = sub i64 %0, %5
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

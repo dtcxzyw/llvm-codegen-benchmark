@@ -28,7 +28,7 @@ entry:
   %4 = icmp eq i32 %3, %1
   %5 = icmp ne i32 %3, 536870911
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -41,7 +41,7 @@ entry:
   %4 = icmp ult i32 %3, %1
   %5 = icmp ult i32 %3, 21600001
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

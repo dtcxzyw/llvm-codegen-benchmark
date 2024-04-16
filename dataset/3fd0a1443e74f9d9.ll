@@ -26,7 +26,7 @@ entry:
   %4 = zext i1 %3 to i8
   %5 = and i8 %1, -16
   %6 = or disjoint i8 %5, %4
-  %7 = or disjoint i8 %0, %6
+  %7 = or disjoint i8 %6, %0
   ret i8 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = zext i1 %3 to i64
   %5 = and i64 %1, 281474976710655
   %6 = or i64 %5, %4
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

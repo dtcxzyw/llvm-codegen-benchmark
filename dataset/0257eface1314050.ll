@@ -24,10 +24,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2
-  %3 = icmp eq i32 %2, 0
-  %4 = add nuw nsw i64 %0, 8
-  %5 = select i1 %3, i64 %0, i64 %4
+  %2 = shl i32 %1, 2
+  %3 = and i32 %2, 8
+  %4 = zext nneg i32 %3 to i64
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -99,11 +99,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 31
-  %3 = icmp ult i8 %2, 24
-  %4 = add nsw i8 %0, -96
-  %5 = select i1 %3, i8 %0, i8 %4
-  ret i8 %5
+  %2 = and i8 %1, 24
+  %.not = icmp eq i8 %2, 24
+  %3 = add nsw i8 %0, -96
+  %4 = select i1 %.not, i8 %3, i8 %0
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

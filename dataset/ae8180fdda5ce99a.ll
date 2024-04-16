@@ -50,7 +50,7 @@
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %2, 2147483647
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = mul i64 %1, 2147483646
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -72,7 +72,7 @@ entry:
 define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %2, 2147483647
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = mul nsw i64 %1, 2147483646
   %6 = icmp ult i64 %4, %5
   ret i1 %6

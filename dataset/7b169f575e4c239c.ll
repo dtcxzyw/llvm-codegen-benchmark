@@ -29,7 +29,7 @@ entry:
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = fcmp ogt double %4, 1.000000e+00
   %6 = select i1 %5, double %4, double 1.000000e+00
   ret double %6

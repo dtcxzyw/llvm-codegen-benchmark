@@ -8,7 +8,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, 839798700976720815
+  %1 = mul i64 %0, 378358703
   %2 = and i64 %1, 4294967295
   %3 = mul nuw nsw i64 %2, 668265295
   ret i64 %3
@@ -20,7 +20,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, 839798700976720815
+  %1 = mul i64 %0, 378358703
   %2 = and i64 %1, 4294967295
   %3 = mul nuw i64 %2, 3266489917
   ret i64 %3

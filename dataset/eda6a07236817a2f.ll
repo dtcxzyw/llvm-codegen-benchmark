@@ -38,7 +38,7 @@
 define i1 @func0000000000000111(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 32
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

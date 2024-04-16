@@ -123,9 +123,9 @@
 define ptr @func0000000000000015(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr inbounds i32, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 4
+  %4 = getelementptr i32, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 
@@ -141,9 +141,9 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 16
-  %5 = getelementptr inbounds %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 16
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
 
@@ -155,9 +155,9 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr inbounds ptr, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 8
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -167,9 +167,9 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 32
-  %5 = getelementptr inbounds %"struct.rawspeed::Spline<>::Segment.1768005", ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 32
+  %4 = getelementptr %"struct.rawspeed::Spline<>::Segment.1768005", ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
 

@@ -13,7 +13,7 @@ entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693948
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
   %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 2147483647
   %5 = getelementptr %struct.posix_acl_xattr_entry.2014613, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -76,7 +76,7 @@ entry:
   %3 = lshr exact i64 %2, 1
   %4 = and i64 %3, 2147483647
   %5 = getelementptr inbounds i32, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

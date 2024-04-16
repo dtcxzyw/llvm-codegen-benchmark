@@ -62,11 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:
-  %2 = lshr i8 %1, 6
-  %3 = and i8 %0, 4
-  %4 = or disjoint i8 %3, %2
-  %5 = icmp ult i8 %4, 4
-  ret i1 %5
+  %2 = and i8 %0, 4
+  %3 = icmp eq i8 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

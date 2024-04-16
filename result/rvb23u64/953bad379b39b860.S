@@ -65,9 +65,9 @@ func00000000000003a8:                   # @func00000000000003a8
 	sext.b	a1, a1
 	addi	a2, a2, 3
 	slti	a1, a1, 0
+	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	sext.w	a0, a0
 	sltiu	a0, a0, 25
 	xori	a0, a0, 1
@@ -75,9 +75,9 @@ func00000000000003a8:                   # @func00000000000003a8
 func00000000000001ca:                   # @func00000000000001ca
 	sext.w	a1, a1
 	addi	a2, a2, -1
+	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -133,14 +133,12 @@ func0000000000000364:                   # @func0000000000000364
 	sltiu	a0, a0, 24
 	ret
 func000000000000031c:                   # @func000000000000031c
-	sext.w	a1, a1
-	addi	a2, a2, 1
-	addi	a1, a1, -31
-	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
+	addi	a1, a1, -31
+	seqz	a1, a1
 	snez	a0, a0
+	or	a0, a0, a1
 	ret
 func0000000000000141:                   # @func0000000000000141
 	zext.h	a1, a1

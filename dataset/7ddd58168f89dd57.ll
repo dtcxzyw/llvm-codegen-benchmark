@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 255, %2
   %4 = trunc i32 %3 to i8
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -29,7 +29,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = zext nneg i32 %1 to i128
   %3 = shl i128 15, %2
   %4 = trunc i128 %3 to i64
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -53,7 +53,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 

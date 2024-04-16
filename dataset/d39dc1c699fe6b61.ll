@@ -49,8 +49,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 %1, i8 0
-  %3 = trunc i8 %2 to i1
+  %2 = trunc i8 %1 to i1
+  %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }
 
@@ -64,8 +64,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 %1, i8 1
-  %3 = trunc nuw i8 %2 to i1
+  %2 = trunc nuw i8 %1 to i1
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 true, i1 %2
   ret i1 %3
 }
 

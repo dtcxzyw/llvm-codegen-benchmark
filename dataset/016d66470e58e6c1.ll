@@ -10,7 +10,7 @@ entry:
   %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = zext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

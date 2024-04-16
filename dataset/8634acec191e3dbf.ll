@@ -8,8 +8,8 @@ define i64 @func000000000000000e(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %3, 6
+  %3 = lshr i32 %2, 6
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
@@ -20,8 +20,8 @@ define i64 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
   %2 = add nsw i32 %1, -1
-  %3 = zext i32 %2 to i64
-  %4 = lshr i64 %3, 16
+  %3 = lshr i32 %2, 16
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

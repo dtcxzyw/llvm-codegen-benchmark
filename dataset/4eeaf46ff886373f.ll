@@ -4,12 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds { i64, [3 x i64] }, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  %6 = getelementptr inbounds { i64, [3 x i64] }, ptr %0, i64 %1
-  %7 = icmp eq ptr %5, %6
-  ret i1 %7
+  %.unshifted = xor i64 %2, %1
+  %.mask = and i64 %.unshifted, 576460752303423487
+  %3 = icmp eq i64 %.mask, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -19,12 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds double, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  %6 = getelementptr inbounds double, ptr %0, i64 %1
-  %7 = icmp eq ptr %5, %6
-  ret i1 %7
+  %.unshifted = xor i64 %2, %1
+  %.mask = and i64 %.unshifted, 2305843009213693951
+  %3 = icmp eq i64 %.mask, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

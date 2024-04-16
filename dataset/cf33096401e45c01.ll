@@ -5,7 +5,7 @@
 define i8 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 12
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = lshr i8 %1, 6
   %6 = or disjoint i8 %4, %5
   %7 = or disjoint i8 %6, -128

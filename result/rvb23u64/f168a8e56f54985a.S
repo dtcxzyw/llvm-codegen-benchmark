@@ -5,7 +5,8 @@ func0000000000000002:                   # @func0000000000000002
 	srliw	a0, a0, 29
 	ret
 func000000000000000e:                   # @func000000000000000e
-	bexti	a1, a1, 3
-	sub	a0, a0, a1
+	slli	a1, a1, 60
+	srai	a1, a1, 63
+	add	a0, a0, a1
 	srli	a0, a0, 1
 	ret

@@ -34,7 +34,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 8, %1
   %3 = lshr exact i64 %2, 3
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   ret i64 %4
 }
 

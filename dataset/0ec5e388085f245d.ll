@@ -12,7 +12,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 344
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = shl nuw nsw i64 %6, 3
   ret i64 %7
 }
@@ -27,7 +27,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 1112
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = shl i64 %6, 3
   ret i64 %7
 }
@@ -82,7 +82,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 88
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = shl nsw i64 %6, 2
   ret i64 %7
 }

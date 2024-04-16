@@ -5,10 +5,10 @@
 define i64 @func0000000000000018(i32 %0, i16 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.bswap.i32(i32 %0)
-  %3 = icmp ne i16 %1, 18761
-  %4 = select i1 %3, i32 %2, i32 %0
-  %5 = zext i32 %4 to i64
-  ret i64 %5
+  %.not = icmp eq i16 %1, 18761
+  %3 = select i1 %.not, i32 %0, i32 %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

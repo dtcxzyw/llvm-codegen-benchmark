@@ -10,7 +10,7 @@ entry:
   %3 = and i64 %2, -2
   %4 = inttoptr i64 %3 to ptr
   %5 = icmp eq ptr %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

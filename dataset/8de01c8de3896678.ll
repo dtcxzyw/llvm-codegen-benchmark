@@ -5,10 +5,9 @@
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %3, 65535
-  %5 = shl nuw i32 %4, 16
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
+  %4 = shl i32 %3, 16
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -17,10 +16,9 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = and i32 %3, 1
-  %5 = shl nuw i32 %4, 31
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
+  %4 = shl i32 %3, 31
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -29,9 +27,9 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, 1
-  %5 = shl nuw nsw i64 %4, 1
-  %6 = or disjoint i64 %0, %5
+  %4 = shl i64 %3, 1
+  %5 = and i64 %4, 2
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -46,9 +44,9 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, 3689348814741910323
-  %5 = shl nuw nsw i64 %4, 1
-  %6 = or i64 %0, %5
+  %4 = shl i64 %3, 1
+  %5 = and i64 %4, 7378697629483820646
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -63,8 +61,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, 3689348814741910323
-  %5 = shl nuw i64 %4, 2
+  %4 = shl i64 %3, 2
+  %5 = and i64 %4, -3689348814741910324
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -75,8 +73,8 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %3, 2080895
-  %5 = shl i32 %4, 14
+  %4 = shl i32 %3, 14
+  %5 = and i32 %4, -266354688
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -87,9 +85,9 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %3, 2080895
-  %5 = shl nuw nsw i32 %4, 7
-  %6 = or disjoint i32 %0, %5
+  %4 = shl i32 %3, 7
+  %5 = and i32 %4, 266354560
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

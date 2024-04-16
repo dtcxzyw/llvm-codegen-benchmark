@@ -1,12 +1,4 @@
 
-%"class.rocksdb::Status.1568130" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.64.1568131" }
-%"class.std::unique_ptr.64.1568131" = type { %"struct.std::__uniq_ptr_data.65.1568132" }
-%"struct.std::__uniq_ptr_data.65.1568132" = type { %"class.std::__uniq_ptr_impl.66.1568133" }
-%"class.std::__uniq_ptr_impl.66.1568133" = type { %"class.std::tuple.67.1568134" }
-%"class.std::tuple.67.1568134" = type { %"struct.std::_Tuple_impl.68.1568135" }
-%"struct.std::_Tuple_impl.68.1568135" = type { %"struct.std::_Head_base.71.1568136" }
-%"struct.std::_Head_base.71.1568136" = type { ptr }
-
 ; 21 occurrences:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -32,10 +24,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 4
-  %4 = getelementptr inbounds %"class.rocksdb::Status.1568130", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 8 occurrences:

@@ -6,7 +6,7 @@
 define i128 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = zext i64 %3 to i128
   ret i128 %4
 }
@@ -21,7 +21,7 @@ entry:
 define i128 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = zext i64 %3 to i128
   ret i128 %4
 }

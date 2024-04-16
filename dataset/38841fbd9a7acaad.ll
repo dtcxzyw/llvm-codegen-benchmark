@@ -10,7 +10,7 @@
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.usub.sat.i64(i64 %1, i64 2)
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   ret i1 %3
 }
 
@@ -29,7 +29,7 @@ declare i64 @llvm.usub.sat.i64(i64, i64) #1
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.usub.sat.i64(i64 %1, i64 2)
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   ret i1 %3
 }
 
@@ -65,7 +65,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.usub.sat.i64(i64 %1, i64 2)
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   ret i1 %3
 }
 
@@ -84,7 +84,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.usub.sat.i64(i64 %1, i64 26)
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   ret i1 %3
 }
 
@@ -95,7 +95,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.usub.sat.i32(i32 %1, i32 2)
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
@@ -108,7 +108,7 @@ declare i32 @llvm.usub.sat.i32(i32, i32) #1
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.usub.sat.i32(i32 %1, i32 1)
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   ret i1 %3
 }
 
@@ -118,7 +118,7 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.usub.sat.i64(i64 %1, i64 1)
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   ret i1 %3
 }
 
@@ -128,7 +128,7 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = call noundef i32 @llvm.usub.sat.i32(i32 %1, i32 1)
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
@@ -138,7 +138,7 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.usub.sat.i64(i64 %1, i64 60000)
-  %3 = icmp uge i64 %0, %2
+  %3 = icmp ule i64 %2, %0
   ret i1 %3
 }
 

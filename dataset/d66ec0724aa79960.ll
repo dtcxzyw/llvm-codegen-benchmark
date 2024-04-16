@@ -77,7 +77,7 @@ define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 30
   %3 = shl nuw i32 3, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   %6 = zext i1 %5 to i32
   ret i32 %6
@@ -101,7 +101,7 @@ define i8 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 62
   %3 = shl nuw nsw i64 1, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i8
   ret i8 %6
@@ -119,7 +119,7 @@ define i8 @func0000000000000062(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 62
   %3 = shl nuw nsw i64 1, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   %6 = zext i1 %5 to i8
   ret i8 %6

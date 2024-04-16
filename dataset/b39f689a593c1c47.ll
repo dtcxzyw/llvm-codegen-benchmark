@@ -61,10 +61,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i8 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %0, 16
-  %3 = or i1 %2, %1
-  %4 = select i1 %3, i8 16, i8 %0
-  ret i8 %4
+  %2 = call i8 @llvm.umin.i8(i8 %0, i8 16)
+  %3 = select i1 %1, i8 16, i8 %2
+  ret i8 %3
 }
 
 ; 3 occurrences:
@@ -91,4 +90,8 @@ entry:
   ret i32 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i8 @llvm.umin.i8(i8, i8) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

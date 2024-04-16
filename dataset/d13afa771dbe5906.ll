@@ -11,7 +11,7 @@ entry:
   %3 = add i64 %2, 23
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 128
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add nuw nsw i64 %2, 14
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 40
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

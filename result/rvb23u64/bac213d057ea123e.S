@@ -67,6 +67,7 @@ func000000000000006c:                   # @func000000000000006c
 	bext	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	addi	a1, a1, 224
+	andi	a1, a1, 63
+	xori	a1, a1, 32
 	bext	a0, a0, a1
 	ret

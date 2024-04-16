@@ -16,13 +16,12 @@ func000000000000011a:                   # @func000000000000011a
 	xori	a0, a0, 1
 	ret
 func000000000000031c:                   # @func000000000000031c
-	andi	a2, a2, 31
-	li	a3, 31
-	bne	a2, a3, .LBB2_2
-	addi	a0, a1, 1
-.LBB2_2:                                # %entry
 	sext.w	a0, a0
+	andi	a2, a2, 31
+	addi	a2, a2, -31
+	seqz	a1, a2
 	snez	a0, a0
+	or	a0, a0, a1
 	ret
 func0000000000000314:                   # @func0000000000000314
 	andi	a2, a2, 1

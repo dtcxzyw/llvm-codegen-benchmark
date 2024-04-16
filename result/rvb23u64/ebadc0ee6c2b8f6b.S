@@ -7,10 +7,10 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a0, a0
-	addi	a0, a0, 1
-	seqz	a0, a0
 	andi	a1, a1, 255
 	seqz	a1, a1
+	addi	a0, a0, 1
+	seqz	a0, a0
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	addi	a0, a0, 1

@@ -7,7 +7,7 @@ entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %0, %4
+  %5 = and i16 %4, %0
   %6 = icmp eq i16 %5, 0
   ret i1 %6
 }
@@ -21,7 +21,7 @@ entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   %6 = icmp eq i8 %5, 0
   ret i1 %6
 }
@@ -49,7 +49,7 @@ entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

@@ -10,7 +10,7 @@
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp sgt i64 %0, %2
+  %3 = icmp slt i64 %2, %0
   %4 = sext i1 %3 to i64
   ret i64 %4
 }
@@ -38,7 +38,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sge i32 %0, %2
+  %3 = icmp sle i32 %2, %0
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -57,7 +57,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = sext i1 %3 to i64
   ret i64 %4
 }
@@ -69,7 +69,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -80,7 +80,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = sext i1 %3 to i64
   ret i64 %4
 }
@@ -91,7 +91,7 @@ entry:
 define i64 @func0000000000000031(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = icmp eq i16 %0, %2
+  %3 = icmp eq i16 %2, %0
   %4 = sext i1 %3 to i64
   ret i64 %4
 }
@@ -102,7 +102,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sle i32 %0, %2
+  %3 = icmp sge i32 %2, %0
   %4 = sext i1 %3 to i32
   ret i32 %4
 }

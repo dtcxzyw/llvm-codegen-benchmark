@@ -29,7 +29,7 @@ entry:
   %2 = shl i16 %1, 11
   %3 = and i16 %2, 8192
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -61,7 +61,7 @@ entry:
   %2 = shl i32 %1, 3
   %3 = and i32 %2, -67108864
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -270,7 +270,7 @@ entry:
   %2 = shl i8 %1, 2
   %3 = and i8 %2, 60
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -286,7 +286,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 16
   %3 = and i32 %2, 983040
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -329,7 +329,7 @@ entry:
   %2 = shl nuw i8 %1, 1
   %3 = and i8 %2, 14
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -342,7 +342,7 @@ entry:
   %2 = shl nsw i32 %1, 5
   %3 = and i32 %2, 2147483616
   %4 = zext nneg i32 %3 to i96
-  %5 = or disjoint i96 %0, %4
+  %5 = or disjoint i96 %4, %0
   ret i96 %5
 }
 
@@ -355,7 +355,7 @@ entry:
   %2 = shl i16 %1, 10
   %3 = and i16 %2, -32768
   %4 = zext i16 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

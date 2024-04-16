@@ -90,12 +90,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000003b6(i48 %0, i48 %1, i48 %2) #0 {
 entry:
-  %3 = shl nuw nsw i48 %2, 16
-  %4 = shl nuw i48 %1, 32
-  %5 = or disjoint i48 %4, %3
-  %6 = or disjoint i48 %5, %0
-  %7 = icmp slt i48 %6, 0
-  ret i1 %7
+  %3 = shl nuw i48 %1, 32
+  %4 = or i48 %3, %0
+  %5 = icmp slt i48 %4, 0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -105,11 +103,9 @@ entry:
 define i1 @func00000000000002f6(i48 %0, i48 %1, i48 %2) #0 {
 entry:
   %3 = shl nuw i48 %2, 32
-  %4 = shl nuw nsw i48 %1, 16
-  %5 = or disjoint i48 %4, %3
-  %6 = or disjoint i48 %5, %0
-  %7 = icmp slt i48 %6, 0
-  ret i1 %7
+  %4 = or i48 %3, %0
+  %5 = icmp slt i48 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:

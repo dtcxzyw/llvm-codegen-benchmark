@@ -38,7 +38,7 @@ define i64 @func000000000000001e(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
   %4 = select i1 %3, i64 -9223372036854775808, i64 0
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = shl nuw nsw i64 %1, 52
   %7 = or i64 %5, %6
   ret i64 %7
@@ -52,7 +52,7 @@ define i32 @func0000000000000012(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = shl i32 %1, 2
   %7 = or i32 %5, %6
   ret i32 %7

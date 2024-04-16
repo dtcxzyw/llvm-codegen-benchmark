@@ -40,10 +40,10 @@ func0000000000000014:                   # @func0000000000000014
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a2, a2, 255
 	li	a3, 98
-	bne	a2, a3, .LBB5_2
-	mv	a0, a1
+	beq	a2, a3, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
-	andi	a0, a0, 128
+	andi	a0, a1, 128
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
@@ -60,16 +60,15 @@ func0000000000000048:                   # @func0000000000000048
 	bltu	a2, a3, .LBB7_2
 	mv	a0, a1
 .LBB7_2:                                # %entry
-	andi	a0, a0, 255
-	sltiu	a0, a0, 8
-	xori	a0, a0, 1
+	andi	a0, a0, 248
+	snez	a0, a0
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a2, a2
-	bgez	a2, .LBB8_2
-	mv	a0, a1
+	bltz	a2, .LBB8_2
+	mv	a1, a0
 .LBB8_2:                                # %entry
-	andi	a0, a0, 256
+	andi	a0, a1, 256
 	seqz	a0, a0
 	ret
 func0000000000000068:                   # @func0000000000000068
@@ -77,9 +76,8 @@ func0000000000000068:                   # @func0000000000000068
 	bltz	a2, .LBB9_2
 	mv	a0, a1
 .LBB9_2:                                # %entry
-	andi	a0, a0, 7
-	sltiu	a0, a0, 4
-	xori	a0, a0, 1
+	slli	a0, a0, 61
+	srli	a0, a0, 63
 	ret
 func000000000000006c:                   # @func000000000000006c
 	bltz	a2, .LBB10_2
@@ -98,9 +96,9 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a2, 255
-	bnez	a2, .LBB12_2
-	mv	a0, a1
+	beqz	a2, .LBB12_2
+	mv	a1, a0
 .LBB12_2:                               # %entry
-	andi	a0, a0, 3
-	snez	a0, a0
+	andi	a1, a1, 3
+	snez	a0, a1
 	ret

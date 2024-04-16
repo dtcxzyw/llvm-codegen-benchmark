@@ -478,8 +478,8 @@
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 5)
-  %2 = add nuw nsw i64 %1, 3
-  %3 = shl nuw nsw i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = add i64 %2, 24
   ret i64 %3
 }
 
@@ -492,8 +492,8 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i64 @func000000000000000b(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 5)
-  %2 = add nuw i64 %1, 3
-  %3 = shl nuw nsw i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = add i64 %2, 24
   ret i64 %3
 }
 
@@ -503,8 +503,8 @@ entry:
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 4)
-  %2 = add i64 %1, -1
-  %3 = shl i64 %2, 2
+  %2 = shl i64 %1, 2
+  %3 = add i64 %2, -4
   ret i64 %3
 }
 
@@ -514,8 +514,8 @@ entry:
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.umax.i32(i32 %0, i32 28)
-  %2 = add nuw nsw i32 %1, 4
-  %3 = shl nsw i32 %2, 2
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, 16
   ret i32 %3
 }
 
@@ -528,8 +528,8 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.umax.i32(i32 %0, i32 8)
-  %2 = add nsw i32 %1, -8
-  %3 = shl nuw nsw i32 %2, 3
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -64
   ret i32 %3
 }
 
@@ -544,8 +544,8 @@ entry:
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 5)
-  %2 = add nuw nsw i64 %1, 3
-  %3 = shl i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = add i64 %2, 24
   ret i64 %3
 }
 

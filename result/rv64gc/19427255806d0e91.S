@@ -1,7 +1,9 @@
 func0000000000000008:                   # @func0000000000000008
 	li	a2, 231
-	bgeu	a2, a0, .LBB0_2
-	addi	a2, a1, -25
-.LBB0_2:                                # %entry
-	andi	a0, a2, -32
+	bltu	a2, a0, .LBB0_2
+	li	a0, 224
+	ret
+.LBB0_2:
+	addi	a0, a1, -25
+	andi	a0, a0, -32
 	ret

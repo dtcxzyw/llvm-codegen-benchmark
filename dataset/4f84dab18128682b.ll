@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
   %6 = shl i64 %1, 1
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
@@ -17,9 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 3808
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 3808
   %6 = shl nuw nsw i64 %1, 2
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
@@ -30,9 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 2
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
   %6 = shl nuw i64 %1, 1
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7

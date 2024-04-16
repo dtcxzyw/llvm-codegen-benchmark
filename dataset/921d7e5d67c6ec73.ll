@@ -11,7 +11,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = xor i32 %3, 255
-  %5 = mul nuw nsw i32 %0, %4
+  %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
 }
 

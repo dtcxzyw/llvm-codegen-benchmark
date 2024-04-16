@@ -34,8 +34,9 @@ func00000000000000d7:                   # @func00000000000000d7
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	addi	a0, a0, -8
-	slliw	a0, a0, 23
+	slli	a0, a0, 23
+	lui	a1, 1032192
+	addw	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
 	slli	a0, a0, 49
@@ -73,6 +74,7 @@ func0000000000000017:                   # @func0000000000000017
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	addi	a0, a0, -8
-	slliw	a0, a0, 23
+	slli	a0, a0, 23
+	lui	a1, 1032192
+	addw	a0, a0, a1
 	ret

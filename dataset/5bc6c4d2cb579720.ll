@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 3
-  %2 = or disjoint i8 %1, 8
-  %3 = icmp ult i8 %2, 10
-  ret i1 %3
+  %1 = and i8 %0, 2
+  %2 = icmp eq i8 %1, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -18,7 +17,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 15
+  %1 = and i8 %0, 14
   %2 = or disjoint i8 %1, 48
   %3 = icmp ugt i8 %2, 57
   ret i1 %3

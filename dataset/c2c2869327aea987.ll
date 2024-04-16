@@ -5,11 +5,10 @@
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 10
-  %3 = trunc i32 %2 to i8
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i8 4, i8 %3
-  %6 = zext i8 %5 to i32
-  ret i32 %6
+  %3 = icmp eq i32 %0, 0
+  %4 = and i32 %2, 255
+  %5 = select i1 %3, i32 4, i32 %4
+  ret i32 %5
 }
 
 ; 1 occurrences:

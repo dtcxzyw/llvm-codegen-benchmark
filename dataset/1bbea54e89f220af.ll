@@ -6,7 +6,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = icmp ult i32 %2, 36000
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -20,7 +20,7 @@ define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.abs.i64(i64 %1, i1 false)
   %3 = icmp ugt i64 %2, 9
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000011(i1 %0, i16 %1) #0 {
 entry:
   %2 = call i16 @llvm.abs.i16(i16 %1, i1 true)
   %3 = icmp eq i16 %2, 1
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -72,7 +72,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp ult i32 %2, 101
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 

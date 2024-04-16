@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 %1
   %5 = freeze i32 %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 %1
   %5 = freeze i32 %4
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = select i1 %3, i16 0, i16 %1
   %5 = freeze i16 %4
   %6 = zext i16 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

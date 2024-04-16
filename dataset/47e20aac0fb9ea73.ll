@@ -22,7 +22,7 @@
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 380141568
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = mul i32 %4, 461845907
   %6 = xor i32 %5, %0
   %7 = tail call i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 13)
@@ -38,9 +38,9 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 380141568
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = mul i32 %4, 461845907
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = tail call i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 13)
   ret i32 %7
 }
@@ -51,9 +51,9 @@ entry:
 define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %2, 380141568
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = mul i32 %4, 461845907
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   %7 = tail call i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 13)
   ret i32 %7
 }

@@ -169,7 +169,7 @@
 define i64 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.abs.i64(i64 %2, i1 false)
-  %4 = icmp ugt i64 %1, %3
+  %4 = icmp ult i64 %3, %1
   %5 = sext i1 %4 to i32
   %6 = add nsw i32 %5, %0
   %7 = sext i32 %6 to i64

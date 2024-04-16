@@ -23,7 +23,7 @@ entry:
   %3 = or disjoint i32 %2, 48
   %4 = add nuw nsw i32 %2, 55
   %5 = select i1 %0, i32 %3, i32 %4
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nuw nsw i32 %5 to i8
   ret i8 %6
 }
 

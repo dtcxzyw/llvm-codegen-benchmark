@@ -8,7 +8,7 @@ define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = xor i8 %4, -1
   ret i8 %5
 }

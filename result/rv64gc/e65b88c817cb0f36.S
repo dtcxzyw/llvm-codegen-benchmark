@@ -16,9 +16,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000004:                   # @func0000000000000004
 	mv	a2, a0
 	lui	a0, 16
-	addiw	a3, a0, 1
 	andi	a2, a2, 1
-	bgeu	a1, a3, .LBB1_3
+	bgeu	a1, a0, .LBB1_3
 	beqz	a2, .LBB1_4
 .LBB1_2:                                # %entry
 	ret

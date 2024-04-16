@@ -9,7 +9,7 @@ entry:
   %3 = and i8 %2, 60
   %4 = add nuw nsw i8 %3, 14
   %5 = zext nneg i8 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = and i8 %2, 124
   %4 = add nuw i8 %3, 4
   %5 = zext i8 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

@@ -14,8 +14,8 @@
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:
   %1 = udiv i32 %0, 16383
-  %2 = add nuw nsw i32 %1, 1
-  %3 = shl nuw nsw i32 %2, 3
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = add nuw nsw i32 %2, 8
   ret i32 %3
 }
 
@@ -26,8 +26,8 @@ entry:
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 3
-  %2 = add nuw nsw i64 %1, 1
-  %3 = shl i64 %2, 4
+  %2 = shl i64 %1, 4
+  %3 = add i64 %2, 16
   ret i64 %3
 }
 
@@ -37,8 +37,8 @@ entry:
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = udiv i32 %0, 400000
-  %2 = add nsw i32 %1, -1
-  %3 = shl nsw i32 %2, 8
+  %2 = shl nuw nsw i32 %1, 8
+  %3 = add nsw i32 %2, -256
   ret i32 %3
 }
 

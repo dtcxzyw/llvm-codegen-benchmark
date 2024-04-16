@@ -20,9 +20,9 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = add nsw i32 %4, 1
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr inbounds i16, ptr %0, i64 %6
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr i16, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 2
   ret ptr %7
 }
 

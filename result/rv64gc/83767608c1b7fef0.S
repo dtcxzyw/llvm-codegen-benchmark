@@ -3,8 +3,8 @@ func00000000000000b1:                   # @func00000000000000b1
 	addi	a1, a1, 28
 	andi	a1, a1, 31
 	sgtz	a2, a0
-	negw	a2, a2
+	neg	a2, a2
 	and	a0, a0, a2
-	addw	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret

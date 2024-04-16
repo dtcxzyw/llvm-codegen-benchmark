@@ -5,10 +5,8 @@
 define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = ashr exact i32 %2, 16
-  %4 = ashr exact i32 %0, 16
-  %5 = icmp sgt i32 %3, %4
-  ret i1 %5
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -20,10 +18,8 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
-  %3 = ashr exact i32 %2, 24
-  %4 = ashr exact i32 %0, 24
-  %5 = icmp eq i32 %3, %4
-  ret i1 %5
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -34,10 +30,8 @@ entry:
 define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = ashr exact i64 %0, 32
-  %5 = icmp slt i64 %3, %4
-  ret i1 %5
+  %3 = icmp slt i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:

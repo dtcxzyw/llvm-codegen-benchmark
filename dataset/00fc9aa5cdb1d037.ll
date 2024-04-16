@@ -5,11 +5,10 @@
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 768
-  %3 = icmp eq i64 %2, 0
-  %4 = xor i1 %3, true
-  %5 = sext i1 %4 to i32
-  %6 = add i32 %0, %5
-  ret i32 %6
+  %3 = icmp ne i64 %2, 0
+  %4 = sext i1 %3 to i32
+  %5 = add i32 %4, %0
+  ret i32 %5
 }
 
 ; 51 occurrences:
@@ -67,12 +66,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 64
-  %3 = icmp eq i16 %2, 0
-  %4 = xor i1 %3, true
-  %5 = sext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
+  %2 = shl i16 %1, 9
+  %sext = ashr i16 %2, 15
+  %3 = sext i16 %sext to i64
+  %4 = add nsw i64 %3, %0
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

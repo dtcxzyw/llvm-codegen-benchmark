@@ -21,7 +21,7 @@ entry:
   %3 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.151.1640668", ptr %1, i64 %2, i32 3
   %4 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1640670"], ptr %3, i64 0, i64 %0
   %5 = ptrtoint ptr %4 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

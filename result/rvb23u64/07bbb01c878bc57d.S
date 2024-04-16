@@ -13,15 +13,19 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000301:                   # @func0000000000000301
 	sext.w	a1, a1
-	snez	a1, a1
-	sub	a0, a0, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
 	addi	a1, a1, -45
-	seqz	a1, a1
-	sub	a0, a0, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
@@ -56,15 +60,19 @@ func0000000000000044:                   # @func0000000000000044
 	sltu	a0, a0, a1
 	ret
 func0000000000000311:                   # @func0000000000000311
-	snez	a1, a1
-	sub	a0, a0, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005c:                   # @func000000000000005c
 	andi	a1, a1, 255
 	addi	a1, a1, -63
-	seqz	a1, a1
-	subw	a0, a0, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000186:                   # @func0000000000000186
@@ -98,7 +106,9 @@ func0000000000000046:                   # @func0000000000000046
 func0000000000000291:                   # @func0000000000000291
 	sext.w	a1, a1
 	sgtz	a1, a1
-	subw	a0, a0, a1
+	neg	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
@@ -111,8 +121,10 @@ func000000000000005a:                   # @func000000000000005a
 func000000000000030c:                   # @func000000000000030c
 	sext.w	a1, a1
 	addi	a1, a1, -1
-	snez	a1, a1
-	sub	a0, a0, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000028c:                   # @func000000000000028c
@@ -183,8 +195,9 @@ func000000000000028a:                   # @func000000000000028a
 func0000000000000281:                   # @func0000000000000281
 	sext.b	a1, a1
 	slti	a1, a1, -64
-	xori	a1, a1, 1
-	sub	a0, a0, a1
+	addi	a1, a1, -1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000030a:                   # @func000000000000030a

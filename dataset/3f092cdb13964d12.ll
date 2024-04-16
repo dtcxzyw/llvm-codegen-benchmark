@@ -6,7 +6,7 @@
 define i32 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 26
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, 262144
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i32 %4, i32 %5
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000028(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or disjoint i32 %4, 3
   %6 = icmp ugt i16 %0, 11
   %7 = select i1 %6, i32 %4, i32 %5
@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000031(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, 262144
   %6 = icmp eq i16 %0, 1
   %7 = select i1 %6, i32 %4, i32 %5
@@ -65,7 +65,7 @@ entry:
 define i32 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, 4
   %6 = icmp eq i64 %0, 1
   %7 = select i1 %6, i32 %4, i32 %5

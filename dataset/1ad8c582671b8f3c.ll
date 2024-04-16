@@ -13,7 +13,7 @@
 define ptr @func0000000000000001(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }

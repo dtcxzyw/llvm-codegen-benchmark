@@ -7,8 +7,9 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = select i1 %0, i64 %5, i64 0
-  %7 = icmp ult i64 %6, 2
+  %6 = icmp ult i64 %5, 2
+  %not. = xor i1 %0, true
+  %7 = select i1 %not., i1 true, i1 %6
   ret i1 %7
 }
 
@@ -21,8 +22,9 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 8
   %5 = or disjoint i16 %4, %1
-  %6 = select i1 %0, i16 %5, i16 0
-  %7 = icmp ult i16 %6, 256
+  %6 = icmp ult i16 %5, 256
+  %not. = xor i1 %0, true
+  %7 = select i1 %not., i1 true, i1 %6
   ret i1 %7
 }
 
@@ -34,8 +36,8 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 8
   %5 = or disjoint i16 %4, %1
-  %6 = select i1 %0, i16 %5, i16 0
-  %7 = icmp ugt i16 %6, 255
+  %6 = icmp ugt i16 %5, 255
+  %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
 

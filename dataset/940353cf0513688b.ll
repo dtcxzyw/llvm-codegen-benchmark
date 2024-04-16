@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -124,7 +124,7 @@ entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -140,7 +140,7 @@ entry:
   %2 = add i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -155,7 +155,7 @@ entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 1073741816
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -170,7 +170,7 @@ entry:
   %2 = add i32 %1, 134217720
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 16777215
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -189,10 +189,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 34359738364
+  %2 = add i64 %1, 17179869180
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

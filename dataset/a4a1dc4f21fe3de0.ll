@@ -11,7 +11,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = add i64 %1, 95
   %5 = and i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = add nsw i64 %1, -1
   %5 = and i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = sub nsw i32 0, %2
   %4 = add nsw i32 %1, -1
   %5 = and i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

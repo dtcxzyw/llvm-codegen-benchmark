@@ -20,8 +20,8 @@ entry:
 define float @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 0.000000e+00
-  %3 = select i1 %2, float 1.000000e+00, float -1.000000e+00
-  %4 = fmul float %3, %0
+  %3 = fneg float %0
+  %4 = select i1 %2, float %0, float %3
   ret float %4
 }
 

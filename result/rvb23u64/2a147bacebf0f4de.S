@@ -9,11 +9,12 @@ func0000000000000057:                   # @func0000000000000057
 	addi	a0, a0, 993
 	ret
 func000000000000000b:                   # @func000000000000000b
+	zext.w	a1, a1
 	li	a3, 1023
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
-	add.uw	a0, a1, a0
+	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 func000000000000000f:                   # @func000000000000000f

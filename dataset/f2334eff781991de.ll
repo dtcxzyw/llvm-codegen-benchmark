@@ -20,7 +20,7 @@ define double @func0000000000000001(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = select i1 %3, double 4.000000e+00, double 2.000000e+00
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 
@@ -31,7 +31,7 @@ define float @func0000000000000006(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, float 1.000000e+00, float 0.000000e+00
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

@@ -21,10 +21,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = add i8 %2, -4
-  %4 = icmp ne i8 %3, 0
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
+  %3 = icmp ne i8 %2, 4
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 3 occurrences:

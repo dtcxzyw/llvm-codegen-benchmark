@@ -8,7 +8,7 @@ entry:
   %4 = fcmp une float %2, 0.000000e+00
   %5 = select i1 %4, float %3, float 0.000000e+00
   %6 = fmul float %5, %1
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = fcmp ogt float %2, 0.000000e+00
   %5 = select i1 %4, float %3, float 1.000000e+00
   %6 = fmul float %5, %1
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

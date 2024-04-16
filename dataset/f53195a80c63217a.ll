@@ -108,10 +108,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = lshr i64 %2, 1
-  %4 = select i1 %0, i64 2, i64 %3
-  %5 = shl nuw nsw i64 %4, 3
+  %2 = shl i64 %1, 2
+  %3 = add i64 %2, 4
+  %4 = and i64 %3, -8
+  %5 = select i1 %0, i64 16, i64 %4
   ret i64 %5
 }
 
@@ -120,10 +120,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = lshr i32 %2, 3
-  %4 = select i1 %0, i32 -1, i32 %3
-  %5 = shl i32 %4, 6
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -8
+  %4 = and i32 %3, -64
+  %5 = select i1 %0, i32 -64, i32 %4
   ret i32 %5
 }
 

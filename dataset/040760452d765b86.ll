@@ -15,8 +15,8 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = ashr i32 %3, 1
-  %5 = add i32 %4, %0
-  %6 = icmp eq i32 %5, 0
+  %5 = sub i32 0, %0
+  %6 = icmp eq i32 %4, %5
   ret i1 %6
 }
 

@@ -10,7 +10,7 @@ entry:
   %3 = trunc i48 %2 to i16
   %4 = trunc i48 %1 to i16
   %5 = tail call i16 @llvm.smin.i16(i16 %4, i16 %3)
-  %6 = icmp sge i16 %0, %5
+  %6 = icmp sle i16 %5, %0
   ret i1 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

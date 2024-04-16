@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
-	slli	a3, a2, 33
-	srli	a3, a3, 53
+	lui	a3, 524032
+	and	a3, a3, a2
 	slli	a2, a2, 44
 	srli	a2, a2, 44
 	czero.eqz	a1, a1, a3

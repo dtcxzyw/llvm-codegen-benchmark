@@ -9,7 +9,7 @@ entry:
   %3 = add i8 %2, -1
   %4 = tail call i8 @llvm.umin.i8(i8 %3, i8 %1)
   %5 = zext i8 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add i8 %2, -1
   %4 = tail call i8 @llvm.umin.i8(i8 %3, i8 %1)
   %5 = zext nneg i8 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = call noundef i32 @llvm.umin.i32(i32 %1, i32 %3)
   %5 = zext i32 %4 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   ret i64 %6
 }
 

@@ -15,8 +15,8 @@
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = select i1 %0, float 1.000000e+00, float %3
-  %5 = fsub float 1.000000e+00, %4
+  %4 = fsub float 1.000000e+00, %3
+  %5 = select i1 %0, float 0.000000e+00, float %4
   ret float %5
 }
 

@@ -8,7 +8,7 @@ define i32 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)
   %2 = urem i32 %1, 3600
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = udiv i16 %3, 60
   %5 = zext nneg i16 %4 to i32
   ret i32 %5
@@ -24,7 +24,7 @@ define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 false)
   %2 = urem i32 %1, 3600
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = udiv i16 %3, 60
   %5 = zext nneg i16 %4 to i32
   ret i32 %5

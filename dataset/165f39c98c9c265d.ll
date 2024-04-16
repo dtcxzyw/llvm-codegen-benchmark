@@ -31,9 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 4
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 156)
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %2 = call i64 @llvm.umin.i64(i64 %1, i64 152)
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
   ret ptr %4
 }
 

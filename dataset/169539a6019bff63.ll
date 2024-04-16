@@ -9,7 +9,7 @@ define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -34,7 +34,7 @@ define i64 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 1000
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

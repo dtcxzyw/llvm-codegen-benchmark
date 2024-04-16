@@ -1,17 +1,10 @@
 func0000000000000614:                   # @func0000000000000614
-	sext.w	a2, a2
-	sext.w	a1, a1
-	slt	a1, a1, a2
-	slliw	a0, a0, 1
-	or	a0, a0, a1
-	sltiu	a0, a0, 128
+	lui	a1, 524288
+	addiw	a1, a1, -64
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000974:                   # @func0000000000000974
-	sext.w	a2, a2
-	sext.w	a1, a1
-	sltu	a1, a1, a2
-	xori	a1, a1, 1
-	slliw	a0, a0, 1
-	or	a0, a0, a1
-	sltiu	a0, a0, 64
+	sext.w	a0, a0
+	sltiu	a0, a0, 32
 	ret

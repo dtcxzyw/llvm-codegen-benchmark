@@ -8,7 +8,7 @@ entry:
   %2 = sitofp i32 %0 to float
   %3 = fmul float %2, %1
   %4 = fptosi float %3 to i32
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 

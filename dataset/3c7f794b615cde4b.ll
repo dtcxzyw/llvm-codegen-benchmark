@@ -53,7 +53,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   %5 = fadd double %4, -1.524000e+03
   ret double %5
 }

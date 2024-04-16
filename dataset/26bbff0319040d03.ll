@@ -4,12 +4,11 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = trunc i32 %1 to i8
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i8 4, i8 %2
-  %5 = zext i8 %4 to i32
-  %6 = shl nuw nsw i32 %5, 10
-  ret i32 %6
+  %2 = icmp eq i32 %0, 0
+  %3 = shl i32 %1, 10
+  %4 = and i32 %3, 261120
+  %5 = select i1 %2, i32 4096, i32 %4
+  ret i32 %5
 }
 
 ; 1 occurrences:

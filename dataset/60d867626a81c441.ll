@@ -68,11 +68,11 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i32 2147483647, i32 8388607
-  %5 = and i32 %4, %0
-  %6 = icmp ne i32 %5, 102
-  ret i1 %6
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i32 8388607, i32 2147483647
+  %4 = and i32 %3, %0
+  %5 = icmp ne i32 %4, 102
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -83,9 +83,9 @@ define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 -129, i32 -32769
-  %5 = and i32 %0, %4
-  %6 = icmp ult i32 %5, 256
+  %4 = select i1 %3, i32 -256, i32 -33024
+  %5 = and i32 %4, %0
+  %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
 
@@ -112,7 +112,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = icmp ugt i64 %2, 2
   %4 = select i1 %3, i64 16, i64 32
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

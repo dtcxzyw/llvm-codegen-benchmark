@@ -17,7 +17,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
-  %3 = and i32 %1, %2
+  %3 = and i32 %2, %1
   %4 = add i32 %3, %0
   ret i32 %4
 }
@@ -48,7 +48,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %0
-  %3 = and i64 %1, %2
+  %3 = and i64 %2, %1
   %4 = add i64 %3, %0
   ret i64 %4
 }

@@ -11,7 +11,7 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
+  %1 = shl i64 %0, 56
   %2 = add i64 %1, 4611686018427387904
   %3 = icmp sgt i64 %2, -1
   ret i1 %3
@@ -26,10 +26,8 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0) #0 {
 entry:
-  %1 = call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = add i64 %1, -1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = icmp eq i64 %0, 72057594037927936
+  ret i1 %1
 }
 
 ; 5 occurrences:
@@ -80,8 +78,8 @@ entry:
 define i1 @func0000000000000008(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.bswap.i16(i16 %0)
-  %2 = add i16 %1, 8
-  %3 = icmp ugt i16 %2, 16
+  %2 = add i16 %1, -9
+  %3 = icmp ult i16 %2, -17
   ret i1 %3
 }
 
@@ -90,10 +88,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.bswap.i32(i32 %0)
-  %2 = add i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = icmp eq i32 %0, -1
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -104,10 +100,9 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i16 %0) #0 {
 entry:
-  %1 = tail call noundef i16 @llvm.bswap.i16(i16 %0)
-  %2 = add i16 %1, 10240
-  %3 = icmp ugt i16 %2, 1023
-  ret i1 %3
+  %1 = and i16 %0, 252
+  %2 = icmp ne i16 %1, 216
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -128,10 +123,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i16 %0) #0 {
 entry:
-  %1 = call i16 @llvm.bswap.i16(i16 %0)
-  %2 = add i16 %1, 1
-  %3 = icmp ne i16 %2, 0
-  ret i1 %3
+  %1 = icmp ne i16 %0, -1
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

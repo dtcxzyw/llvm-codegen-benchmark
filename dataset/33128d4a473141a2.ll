@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %2, 10
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }

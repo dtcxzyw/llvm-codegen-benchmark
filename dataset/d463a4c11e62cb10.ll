@@ -8,7 +8,7 @@ entry:
   %4 = and i64 %3, 1610612736
   %5 = or disjoint i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = and i32 %3, 48
   %5 = or disjoint i32 %4, %1
   %6 = trunc i32 %5 to i8
-  %7 = or disjoint i8 %0, %6
+  %7 = or disjoint i8 %6, %0
   ret i8 %7
 }
 

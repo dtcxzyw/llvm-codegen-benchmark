@@ -122,12 +122,9 @@ func000000000000003a:                   # @func000000000000003a
 	sgtz	a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	andi	a0, a0, 1
-	beqz	a0, .LBB15_2
-	addi	a1, a2, 1
-.LBB15_2:                               # %entry
 	sext.w	a1, a1
-	snez	a0, a1
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 1

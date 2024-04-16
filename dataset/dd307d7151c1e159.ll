@@ -7,8 +7,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr inbounds float, ptr %0, i64 %5
+  %5 = getelementptr float, ptr %0, i64 %4
+  %6 = getelementptr float, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -21,8 +21,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  %5 = getelementptr double, ptr %0, i64 %4
+  %6 = getelementptr double, ptr %5, i64 %1
   ret ptr %6
 }
 

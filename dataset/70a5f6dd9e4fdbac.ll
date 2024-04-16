@@ -19,7 +19,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, 1
   ret i32 %5

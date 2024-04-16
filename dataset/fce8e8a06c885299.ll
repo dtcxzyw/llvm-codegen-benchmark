@@ -114,7 +114,7 @@
 define double @func0000000000000000(double %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, double -4.715000e+03, double -4.716000e+03
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   ret double %3
 }
 

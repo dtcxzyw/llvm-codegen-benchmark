@@ -33,7 +33,7 @@ entry:
 define i128 @func000000000000003a(i128 %0) #0 {
 entry:
   %1 = shl nuw nsw i128 %0, 32
-  %2 = or disjoint i128 %0, %1
+  %2 = or disjoint i128 %1, %0
   %3 = shl nuw i128 %2, 64
   %4 = or i128 %2, %3
   ret i128 %4

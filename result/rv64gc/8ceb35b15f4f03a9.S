@@ -11,7 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
-	lui	a1, 921600
+	lui	a1, 397312
 	addiw	a2, a1, -1026
 .LBB1_2:                                # %entry
 	or	a0, a0, a2

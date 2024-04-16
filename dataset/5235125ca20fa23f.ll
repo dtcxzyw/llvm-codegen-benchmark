@@ -35,7 +35,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul i64 %2, -1000
+  %3 = mul i64 %2, 4294966296
   %4 = sdiv i64 %1, -1000000
   %5 = add i64 %4, %3
   %6 = add i64 %5, %0

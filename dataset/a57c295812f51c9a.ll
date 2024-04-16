@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 1, %0
-  %2 = add i32 %1, -1
-  %3 = sext i32 %2 to i64
-  ret i64 %3
+  %notmask = shl nsw i32 -1, %0
+  %1 = xor i32 %notmask, -1
+  %2 = zext nneg i32 %1 to i64
+  ret i64 %2
 }
 
 ; 4 occurrences:
@@ -34,10 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 1, %0
-  %2 = add nsw i32 %1, -1
-  %3 = sext i32 %2 to i64
-  ret i64 %3
+  %notmask = shl nsw i32 -1, %0
+  %1 = xor i32 %notmask, -1
+  %2 = zext nneg i32 %1 to i64
+  ret i64 %2
 }
 
 ; 4 occurrences:
@@ -61,10 +61,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0) #0 {
 entry:
-  %1 = shl nuw nsw i32 1, %0
-  %2 = add nsw i32 %1, -1
-  %3 = sext i32 %2 to i64
-  ret i64 %3
+  %notmask = shl nsw i32 -1, %0
+  %1 = xor i32 %notmask, -1
+  %2 = zext nneg i32 %1 to i64
+  ret i64 %2
 }
 
 ; 1 occurrences:

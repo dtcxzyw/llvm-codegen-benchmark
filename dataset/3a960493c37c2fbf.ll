@@ -27,9 +27,8 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr inbounds %"struct.facebook::velox::Timestamp.1726943", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.facebook::velox::Timestamp.1726943", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 20 occurrences:

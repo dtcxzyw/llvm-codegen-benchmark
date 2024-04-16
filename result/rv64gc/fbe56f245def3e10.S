@@ -33,13 +33,13 @@ func00000000000000c3:                   # @func00000000000000c3
 	fle.d	a0, fa5, fa1
 	beqz	a0, .LBB2_3
 	fle.d	a0, fa0, fa1
-	bnez	a0, .LBB2_4
+	beqz	a0, .LBB2_4
 .LBB2_2:                                # %entry
+	fmv.d	fa0, fa1
 	ret
 .LBB2_3:                                # %entry
 	fmv.d	fa1, fa2
 	fle.d	a0, fa0, fa2
-	beqz	a0, .LBB2_2
+	bnez	a0, .LBB2_2
 .LBB2_4:                                # %entry
-	fmv.d	fa0, fa1
 	ret

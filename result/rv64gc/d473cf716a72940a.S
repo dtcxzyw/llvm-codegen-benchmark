@@ -2,9 +2,9 @@ func000000000000000f:                   # @func000000000000000f
 	srliw	a2, a1, 24
 	srli	a1, a1, 24
 	slli	a1, a1, 8
-	subw	a0, a0, a2
-	add	a0, a0, a1
-	slli	a0, a0, 48
+	subw	a2, a2, a0
+	subw	a1, a1, a2
+	slli	a0, a1, 48
 	srli	a0, a0, 48
 	ret
 func000000000000000d:                   # @func000000000000000d

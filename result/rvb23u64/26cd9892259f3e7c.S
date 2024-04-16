@@ -8,7 +8,9 @@ func0000000000000108:                   # @func0000000000000108
 func0000000000000101:                   # @func0000000000000101
 	andi	a1, a1, 15
 	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
@@ -21,7 +23,8 @@ func00000000000001f8:                   # @func00000000000001f8
 func00000000000001fc:                   # @func00000000000001fc
 	andi	a1, a1, 3
 	sh1add	a0, a0, a0
-	addw	a0, a0, a1
+	sext.w	a0, a0
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func00000000000001f1:                   # @func00000000000001f1

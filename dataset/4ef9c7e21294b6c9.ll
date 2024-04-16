@@ -5,9 +5,9 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, 8446744073709551616
-  %3 = icmp ule i64 %2, %1
-  %4 = select i1 %3, i64 %2, i64 %0
-  ret i64 %4
+  %.not = icmp ugt i64 %2, %1
+  %3 = select i1 %.not, i64 %0, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:

@@ -9,7 +9,7 @@ define i1 @func0000000000000034(i128 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = zext nneg i32 %2 to i128
-  %4 = icmp ult i128 %0, %3
+  %4 = icmp ugt i128 %3, %0
   ret i1 %4
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -45,7 +45,7 @@ define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -56,7 +56,7 @@ define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -68,7 +68,7 @@ define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -80,7 +80,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 

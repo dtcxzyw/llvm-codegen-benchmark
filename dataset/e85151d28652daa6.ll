@@ -7,9 +7,9 @@
 define double @func0000000000000000(double %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i16
+  %3 = trunc nuw i48 %2 to i16
   %4 = sitofp i16 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

@@ -1,9 +1,10 @@
 func000000000000000d:                   # @func000000000000000d
-	addiw	a0, a0, 1
-	li	a1, 10
+	sext.w	a0, a0
+	li	a1, 9
 	bltu	a1, a0, .LBB0_2
-	li	a0, 10
+	li	a0, 9
 .LBB0_2:                                # %entry
+	addiw	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 1

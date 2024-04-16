@@ -31,6 +31,5 @@ func000000000000001a:                   # @func000000000000001a
 	blt	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:                                # %entry
-	sub	a1, a1, a0
-	sgtz	a0, a1
+	slt	a0, a0, a1
 	ret

@@ -19,6 +19,8 @@ func00000000000000d0:                   # @func00000000000000d0
 func0000000000000050:                   # @func0000000000000050
 	srliw	a1, a1, 27
 	beqz	a1, .LBB2_2
-	addi	a0, a1, -1
+	lui	a0, 16
+	addiw	a0, a0, -1
+	add	a0, a0, a1
 .LBB2_2:                                # %entry
 	ret

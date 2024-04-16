@@ -13,11 +13,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = shl i64 %0, 32
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp ult i64 %4, 4611686018427387904
-  ret i1 %5
+  %2 = and i64 %0, 3221225472
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 14 occurrences:
@@ -113,11 +111,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = shl i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %.mask = and i32 %0, 8388608
+  %2 = icmp ne i32 %.mask, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -152,11 +148,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1
-  %3 = shl nsw i32 %0, 1
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp ult i32 %4, 2
-  ret i1 %5
+  %2 = icmp eq i32 %0, 0
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -169,10 +162,8 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = and i64 %0, 1
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp ugt i64 %4, 9
-  ret i1 %5
+  %3 = icmp ugt i64 %2, 9
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -180,11 +171,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1048575
-  %3 = shl nuw i32 %0, 20
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp ugt i32 %4, -1048577
-  ret i1 %5
+  %2 = icmp eq i32 %0, 4095
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -230,11 +218,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000054(i8 %0, i8 %1) #0 {
 entry:
-  %2 = shl nuw i8 %1, 3
-  %3 = and i8 %0, 7
-  %4 = or disjoint i8 %3, %2
-  %5 = icmp ult i8 %4, 32
-  ret i1 %5
+  %2 = icmp ult i8 %1, 4
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -242,11 +227,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 1
-  %3 = shl nsw i64 %0, 1
-  %4 = or disjoint i64 %3, %2
-  %5 = icmp slt i64 %4, 0
-  ret i1 %5
+  %2 = icmp slt i64 %0, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:

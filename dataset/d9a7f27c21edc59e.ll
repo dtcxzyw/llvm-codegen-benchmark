@@ -8,8 +8,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = shl i32 %4, 3
-  %6 = add i32 %0, %5
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp eq i32 %5, %6
   ret i1 %7
 }
 

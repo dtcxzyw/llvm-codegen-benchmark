@@ -1,8 +1,8 @@
 func0000000000000109:                   # @func0000000000000109
 	sext.w	a2, a2
-	addi	a1, a1, 17
-	add	a2, a2, a1
-	sltu	a1, a2, a1
+	li	a3, -18
+	sub	a3, a3, a1
+	sltu	a1, a3, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

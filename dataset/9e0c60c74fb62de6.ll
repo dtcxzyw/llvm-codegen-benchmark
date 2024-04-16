@@ -9,9 +9,8 @@ entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or disjoint i32 %2, %0
   %4 = icmp ugt i32 %3, 769
-  %5 = select i1 %4, i64 16, i64 0
-  %6 = or disjoint i64 %5, 33
-  ret i64 %6
+  %5 = select i1 %4, i64 49, i64 33
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

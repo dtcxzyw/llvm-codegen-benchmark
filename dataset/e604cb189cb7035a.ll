@@ -19,7 +19,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = icmp ult i32 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -47,7 +47,7 @@ define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
   %4 = icmp ult i32 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -74,7 +74,7 @@ define i1 @func0000000000000011(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = call noundef i16 @llvm.bswap.i16(i16 %2)
   %4 = icmp eq i16 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -86,7 +86,7 @@ define i1 @func0000000000000005(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.bswap.i16(i16 %2)
   %4 = icmp ule i16 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

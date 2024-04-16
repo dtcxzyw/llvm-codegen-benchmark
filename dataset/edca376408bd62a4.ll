@@ -8,7 +8,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = icmp ult i64 %4, 22594
   %6 = select i1 %5, i64 14, i64 24
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

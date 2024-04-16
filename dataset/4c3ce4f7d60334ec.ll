@@ -23,11 +23,8 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000091(i32 %0) #0 {
 entry:
-  %1 = call noundef i32 @llvm.bswap.i32(i32 %0)
-  %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, -10
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %1 = icmp eq i32 %0, 167772160
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -35,11 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.bswap.i16(i16 %0)
-  %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, -16
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = icmp eq i16 %0, 4096
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

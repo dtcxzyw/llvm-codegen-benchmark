@@ -22,8 +22,8 @@ define i64 @func000000000000001b(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
   %2 = mul nuw nsw i64 %1, 100
-  %3 = lshr i64 %2, 32
-  %4 = shl nuw nsw i64 %3, 1
+  %3 = lshr i64 %2, 31
+  %4 = and i64 %3, 254
   ret i64 %4
 }
 

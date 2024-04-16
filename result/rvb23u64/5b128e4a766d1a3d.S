@@ -1,11 +1,10 @@
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a2, a2
-	lui	a3, 921600
-	addi	a3, a3, -1026
+	lui	a3, 262144
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
-	or	a0, a0, a3
 	not	a0, a0
 	bexti	a0, a0, 30
 	ret

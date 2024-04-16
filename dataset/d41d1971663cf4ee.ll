@@ -9,7 +9,7 @@ entry:
   %4 = xor i32 %3, 4
   %5 = shl i32 %1, %4
   %6 = trunc i32 %5 to i8
-  %7 = or i8 %0, %6
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = xor i64 %3, 4
   %5 = shl nuw nsw i64 %1, %4
   %6 = trunc i64 %5 to i8
-  %7 = or i8 %0, %6
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 

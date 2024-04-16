@@ -13,7 +13,7 @@
 define i64 @func0000000000000007(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
-  %4 = or disjoint i8 %1, %3
+  %4 = or disjoint i8 %3, %1
   %5 = zext nneg i8 %4 to i64
   %6 = and i64 %0, 768
   %7 = or disjoint i64 %6, %5
@@ -26,7 +26,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3968
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = and i64 %0, -4096
   %7 = or disjoint i64 %6, %5
@@ -40,7 +40,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = and i64 %0, -64
   %7 = or i64 %6, %5
@@ -57,7 +57,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -65536
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = and i64 %0, -4294967296
   %7 = or disjoint i64 %6, %5

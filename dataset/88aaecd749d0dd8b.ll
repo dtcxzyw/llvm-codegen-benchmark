@@ -26,9 +26,8 @@ entry:
   %2 = add i64 %1, 1
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 7
-  %5 = getelementptr inbounds [8 x %"class.folly::hazptr_detail::shared_head_only_list.1638994"], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [8 x %"class.folly::hazptr_detail::shared_head_only_list.1638994"], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -36,12 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000019(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 34359736832
-  %3 = lshr i64 %2, 3
-  %4 = and i64 %3, 7
-  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %2 = lshr i64 %1, 3
+  %3 = and i64 %2, 7
+  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %0, i64 0, i64 %3, i32 0, i32 3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -49,12 +46,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 34359736832
-  %3 = lshr i64 %2, 3
-  %4 = and i64 %3, 7
-  %5 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %0, i64 0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 20
-  ret ptr %6
+  %2 = lshr i64 %1, 3
+  %3 = and i64 %2, 7
+  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %0, i64 0, i64 %3, i32 0, i32 4
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

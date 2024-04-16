@@ -1,9 +1,10 @@
 func0000000000000056:                   # @func0000000000000056
+	sext.w	a1, a1
 	sext.w	a2, a2
-	bnez	a2, .LBB0_2
-	li	a1, 8
-.LBB0_2:                                # %entry
+	snez	a2, a2
+	slti	a1, a1, 0
+	and	a1, a1, a2
 	slli	a0, a0, 2
-	sraiw	a1, a1, 31
+	neg	a1, a1
 	or	a0, a0, a1
 	ret

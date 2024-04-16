@@ -45,7 +45,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = sub i128 %1, %3
   %5 = and i128 %4, 72057594037927935
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -54,11 +54,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = and i32 %4, 255
-  %6 = add nsw i32 %0, %5
-  ret i32 %6
+  %.tr = trunc i32 %1 to i8
+  %.narrow = sub i8 %.tr, %2
+  %3 = zext i8 %.narrow to i32
+  %4 = add nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -66,11 +66,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = and i64 %4, 4294967295
-  %6 = add i64 %5, %0
-  ret i64 %6
+  %.tr = trunc i64 %1 to i32
+  %.narrow = sub i32 %.tr, %2
+  %3 = zext i32 %.narrow to i64
+  %4 = add i64 %3, %0
+  ret i64 %4
 }
 
 ; 1 occurrences:

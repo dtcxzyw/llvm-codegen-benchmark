@@ -6,9 +6,9 @@ define i64 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, 2040
-  %5 = sub i64 %0, %1
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 ; 37 occurrences:
@@ -54,9 +54,9 @@ define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add i64 %3, -8
-  %5 = sub i64 %0, %1
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -66,9 +66,9 @@ define i64 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nsw i64 %3, -4
-  %5 = sub i64 %0, %1
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -78,9 +78,9 @@ define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = add nsw i64 %3, -4
-  %5 = sub i64 %0, %1
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %.neg = sub i64 %1, %0
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

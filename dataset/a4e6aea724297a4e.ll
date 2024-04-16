@@ -7,7 +7,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = or disjoint i128 %4, %1
-  %6 = and i128 %0, %5
+  %6 = and i128 %5, %0
   %7 = icmp ult i128 %6, 18446744073709551616
   ret i1 %7
 }
@@ -19,7 +19,7 @@ define i1 @func0000000000000061(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = and i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -34,7 +34,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -50,7 +50,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -75,8 +75,8 @@ define i1 @func000000000000007c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
-  %6 = and i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = and i32 %5, %0
   %7 = icmp ne i32 %6, 0
   ret i1 %7
 }

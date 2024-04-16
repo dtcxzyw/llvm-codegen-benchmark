@@ -29,9 +29,8 @@ define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr [16 x %struct.XHCIInterrupter.1662572], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  ret ptr %5
+  %4 = getelementptr [16 x %struct.XHCIInterrupter.1662572], ptr %0, i64 0, i64 %3, i32 6
+  ret ptr %4
 }
 
 ; 39 occurrences:
@@ -79,9 +78,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr inbounds [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.1833275"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.1833275"], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

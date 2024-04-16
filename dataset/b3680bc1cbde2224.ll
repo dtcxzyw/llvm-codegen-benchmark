@@ -233,11 +233,10 @@ entry:
 define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i32 %1 to i64
-  %6 = select i1 %4, i64 %5, i64 %0
-  %7 = icmp slt i64 %6, 0
-  ret i1 %7
+  %4 = icmp ne i32 %3, 0
+  %5 = icmp slt i64 %0, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
 }
 
 ; 1 occurrences:

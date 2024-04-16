@@ -12,15 +12,13 @@ func0000000000000181:                   # @func0000000000000181
 	srli	a1, a1, 51
 	lui	a2, 2
 	sub	a2, a2, a1
-	maxu	a0, a0, a2
-	sub	a0, a0, a2
-	seqz	a0, a0
+	sltu	a0, a2, a0
+	xori	a0, a0, 1
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	andi	a1, a1, 1023
 	li	a2, 1024
 	sub	a2, a2, a1
-	maxu	a0, a0, a2
-	sub	a0, a0, a2
-	seqz	a0, a0
+	sltu	a0, a2, a0
+	xori	a0, a0, 1
 	ret

@@ -7,20 +7,18 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000045:                   # @func0000000000000045
-	snez	a2, a1
-	addi	a2, a2, -1
-	or	a1, a1, a2
+	seqz	a2, a1
 	addi	a0, a0, -1
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 func0000000000000055:                   # @func0000000000000055
-	snez	a2, a1
-	addi	a2, a2, -1
-	or	a1, a1, a2
+	seqz	a2, a1
 	addi	a0, a0, -1
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a2, a1
@@ -42,12 +40,11 @@ func0000000000000076:                   # @func0000000000000076
 	slt	a0, a0, a1
 	ret
 func0000000000000231:                   # @func0000000000000231
-	sext.w	a2, a1
-	li	a3, 4
-	bgeu	a3, a2, .LBB5_2
+	sext.w	a1, a1
+	li	a2, 5
+	bltu	a1, a2, .LBB5_2
 	li	a1, 5
 .LBB5_2:                                # %entry
-	sext.w	a1, a1
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

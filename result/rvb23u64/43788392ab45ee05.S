@@ -30,10 +30,9 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	andi	a1, a1, 255
-	sltiu	a1, a1, 2
+	andi	a1, a1, 254
+	or	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a1
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a1, a1
@@ -61,9 +60,9 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	sext.w	a1, a1
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	srliw	a1, a1, 1
+	slli	a1, a1, 1
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -7,8 +7,8 @@
 define i128 @func0000000000000000(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul i128 %1, %3
-  %5 = add i128 %0, %4
+  %4 = mul i128 %3, %1
+  %5 = add i128 %4, %0
   %6 = lshr i128 %5, 51
   %7 = and i128 %6, 18446744073709551615
   ret i128 %7
@@ -23,8 +23,8 @@ entry:
 define i128 @func000000000000003e(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
-  %5 = add nuw nsw i128 %0, %4
+  %4 = mul nuw nsw i128 %3, %1
+  %5 = add nuw nsw i128 %4, %0
   %6 = lshr i128 %5, 51
   %7 = and i128 %6, 18446744073709551615
   ret i128 %7
@@ -37,8 +37,8 @@ entry:
 define i128 @func0000000000000010(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
-  %5 = add i128 %0, %4
+  %4 = mul nuw i128 %3, %1
+  %5 = add i128 %4, %0
   %6 = lshr i128 %5, 44
   %7 = and i128 %6, 18446744073709551615
   ret i128 %7

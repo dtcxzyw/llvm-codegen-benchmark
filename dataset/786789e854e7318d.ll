@@ -89,9 +89,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func000000000000000c(float %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, float %0, float 0.000000e+00
-  ret float %3
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, float 0.000000e+00, float %0
+  ret float %2
 }
 
 attributes #0 = { nounwind }

@@ -21,7 +21,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5000
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %0, %3
+  %4 = mul nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -32,7 +32,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 

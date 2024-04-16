@@ -12,11 +12,10 @@
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = add nsw i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %class.btVector3.1742160, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %class.btVector3.1742160, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 40
+  ret ptr %5
 }
 
 ; 5 occurrences:

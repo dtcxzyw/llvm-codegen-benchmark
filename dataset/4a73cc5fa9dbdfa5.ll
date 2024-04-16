@@ -184,10 +184,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 32, %1
-  %3 = add nuw nsw i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 32
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -196,10 +196,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 8, %1
-  %3 = add nuw nsw i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 8
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -208,10 +208,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 64, %1
-  %3 = add i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 64
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -219,10 +219,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 1, %1
-  %3 = add i32 %0, %2
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 1
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -230,10 +230,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 1, %1
-  %3 = add nsw i32 %0, %2
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 1
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -242,10 +242,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 4, %1
-  %3 = add i32 %2, %0
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %reass.sub = sub i32 %0, %1
+  %2 = add i32 %reass.sub, 4
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

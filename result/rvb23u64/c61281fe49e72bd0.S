@@ -1,6 +1,7 @@
 func0000000000000051:                   # @func0000000000000051
 	bexti	a1, a1, 7
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
@@ -18,7 +19,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	ret
 func0000000000000071:                   # @func0000000000000071
 	srliw	a1, a1, 3
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
@@ -29,7 +30,8 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000041:                   # @func0000000000000041
 	bexti	a1, a1, 7
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056

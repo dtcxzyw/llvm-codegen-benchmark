@@ -14,7 +14,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 6
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -28,7 +28,7 @@ define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 
@@ -41,7 +41,7 @@ define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 
@@ -53,7 +53,7 @@ define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
 
@@ -64,7 +64,7 @@ define i1 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp sge i64 %0, %3
+  %4 = icmp sle i64 %3, %0
   ret i1 %4
 }
 
@@ -75,7 +75,7 @@ define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

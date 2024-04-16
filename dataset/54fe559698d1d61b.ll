@@ -11,10 +11,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = icmp eq i32 %0, 0
+  %1 = icmp ne i32 %0, 0
   %2 = zext i1 %1 to i32
-  %3 = xor i32 %2, 1
-  ret i32 %3
+  ret i32 %2
 }
 
 ; 7 occurrences:

@@ -69,9 +69,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 15
-  %4 = icmp ugt i8 %3, 3
-  %5 = or i1 %1, %4
+  %3 = and i8 %2, 12
+  %4 = icmp ne i8 %3, 0
+  %5 = or i1 %4, %1
   %6 = select i1 %5, i32 %0, i32 129
   ret i32 %6
 }

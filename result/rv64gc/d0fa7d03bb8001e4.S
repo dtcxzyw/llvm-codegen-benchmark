@@ -20,7 +20,8 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a0
-	bgez	a2, .LBB3_2
-	mv	a0, a1
+	bltz	a2, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
+	mv	a0, a1
 	ret

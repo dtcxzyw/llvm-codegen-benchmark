@@ -36,9 +36,8 @@ entry:
   %2 = lshr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 64
-  %5 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1556723", ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1556723", ptr %4, i64 %3, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 56 occurrences:
@@ -119,9 +118,8 @@ entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds %struct.aiFace.1752480, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.aiFace.1752480, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -133,9 +131,8 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 24
-  %5 = getelementptr inbounds %struct.Mmr_Fixed_t_.1772329, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 44
-  ret ptr %6
+  %5 = getelementptr %struct.Mmr_Fixed_t_.1772329, ptr %4, i64 %3, i32 6, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:

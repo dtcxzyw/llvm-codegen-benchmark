@@ -34,37 +34,33 @@ func0000000000000032:                   # @func0000000000000032
 	add	a2, a2, a4
 	slli	a2, a2, 48
 	srli	a2, a2, 8
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a2, a2, a4
 	slli	a2, a2, 48
 	srli	a2, a2, 8
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func0000000000000012:                   # @func0000000000000012
 	add	a2, a2, a4
 	slli	a2, a2, 48
 	srli	a2, a2, 8
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func0000000000000033:                   # @func0000000000000033
 	add	a2, a2, a4
 	slli	a2, a2, 48
 	srli	a2, a2, 8
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2

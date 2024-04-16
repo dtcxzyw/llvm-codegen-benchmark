@@ -21,15 +21,16 @@ func0000000000000053:                   # @func0000000000000053
 func0000000000000043:                   # @func0000000000000043
 	li	a2, 1
 	slli	a2, a2, 32
-	addi	a2, a2, -2
-	bgeu	a2, a1, .LBB2_2
-	lui	a0, 65536
-	addi	a0, a0, -1
-.LBB2_2:                                # %entry
+	addi	a3, a2, -2
+	li	a2, 3
+	bgeu	a3, a1, .LBB2_2
+	slli	a0, a2, 31
+	addi	a0, a0, -24
+	ret
+.LBB2_2:
+	slli	a2, a2, 35
 	slli	a0, a0, 32
-	li	a1, 3
-	slli	a1, a1, 35
-	mulhu	a0, a0, a1
+	mulhu	a0, a0, a2
 	ret
 func0000000000000037:                   # @func0000000000000037
 	sext.w	a1, a1

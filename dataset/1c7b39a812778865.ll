@@ -38,9 +38,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 20, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = getelementptr inbounds i32, ptr %0, i64 %3
-  ret ptr %4
+  %3 = getelementptr inbounds i8, ptr %0, i64 %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

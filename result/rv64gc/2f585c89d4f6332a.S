@@ -23,9 +23,10 @@ func0000000000000009:                   # @func0000000000000009
 	sext.w	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	bgez	a3, .LBB3_2
-	mv	a0, a1
+	bltz	a3, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
+	mv	a0, a1
 	li	a1, 0
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -78,16 +79,16 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
-	bnez	a2, .LBB10_2
-	mv	a0, a1
+	beqz	a2, .LBB10_2
+	mv	a1, a0
 .LBB10_2:                               # %entry
-	andi	a0, a0, 255
+	andi	a0, a1, 255
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
-	bnez	a2, .LBB11_2
-	mv	a0, a1
+	beqz	a2, .LBB11_2
+	mv	a1, a0
 .LBB11_2:                               # %entry
-	slli	a0, a0, 32
+	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

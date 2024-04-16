@@ -29,8 +29,8 @@ entry:
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -48
-  %2 = zext nneg i32 %1 to i64
-  %3 = or disjoint i64 %2, 939524096
+  %2 = or i32 %1, 939524096
+  %3 = zext i32 %2 to i64
   ret i64 %3
 }
 
@@ -40,8 +40,8 @@ entry:
 define i64 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -48
-  %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %2, 939524096
+  %2 = or i32 %1, 939524096
+  %3 = zext i32 %2 to i64
   ret i64 %3
 }
 

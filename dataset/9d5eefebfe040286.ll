@@ -8,7 +8,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %3, 7
   %5 = icmp ult i64 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

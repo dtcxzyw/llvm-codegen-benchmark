@@ -20,12 +20,12 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000033(i8 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = icmp ne ptr %2, null
-  %4 = select i1 %3, i8 8, i8 0
-  %5 = select i1 %1, i8 16, i8 0
-  %6 = or disjoint i8 %5, %4
-  %7 = or disjoint i8 %6, %0
-  ret i8 %7
+  %.not = icmp eq ptr %2, null
+  %3 = select i1 %.not, i8 0, i8 8
+  %4 = select i1 %1, i8 16, i8 0
+  %5 = or disjoint i8 %4, %3
+  %6 = or disjoint i8 %5, %0
+  ret i8 %6
 }
 
 attributes #0 = { nounwind }

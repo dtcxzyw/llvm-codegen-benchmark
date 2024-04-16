@@ -38,6 +38,7 @@ func0000000000000024:                   # @func0000000000000024
 	srli	a1, a0, 63
 	srli	a0, a0, 36
 	add	a0, a0, a1
-	addi	a0, a0, 1
-	slliw	a0, a0, 14
+	slli	a0, a0, 14
+	lui	a1, 4
+	addw	a0, a0, a1
 	ret

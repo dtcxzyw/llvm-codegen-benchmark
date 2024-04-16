@@ -10,7 +10,7 @@ entry:
   %4 = select i1 %3, i1 %1, i1 false
   %5 = xor i1 %4, true
   %6 = zext i1 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

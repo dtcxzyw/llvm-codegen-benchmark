@@ -61,12 +61,11 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %1, i64 %4
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %0
-  ret i64 %7
+  %.neg = sdiv exact i64 %2, -40
+  %3 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %1, i64 %.neg
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  ret i64 %5
 }
 
 ; 37 occurrences:
@@ -110,12 +109,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %1, i64 %4
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %0
-  ret i64 %7
+  %.neg = sdiv exact i64 %2, -40
+  %3 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %1, i64 %.neg
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -123,12 +121,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv i64 %2, 2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %0
-  ret i64 %7
+  %.neg = sdiv i64 %2, -2
+  %3 = getelementptr inbounds ptr, ptr %1, i64 %.neg
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

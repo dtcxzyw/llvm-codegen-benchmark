@@ -9,7 +9,7 @@ entry:
   %3 = shl i64 %2, 30
   %4 = ashr i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ult i64 %6, %4
   ret i1 %7
 }
@@ -24,7 +24,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ult i64 %6, %4
   ret i1 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = shl i64 %2, 30
   %4 = ashr i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }
@@ -52,7 +52,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }

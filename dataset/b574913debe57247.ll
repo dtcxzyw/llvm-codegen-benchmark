@@ -6,10 +6,9 @@
 define i1 @func0000000000000031(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 63
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 63
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -19,10 +18,9 @@ entry:
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 15
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 15
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -35,8 +35,8 @@ define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %1, %4
-  %6 = or i32 %1, %3
+  %5 = and i32 %4, %1
+  %6 = or i32 %3, %1
   %7 = select i1 %0, i32 %6, i32 %5
   ret i32 %7
 }
@@ -60,7 +60,7 @@ define i32 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 64, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = or i32 %3, %1
   %7 = select i1 %0, i32 %6, i32 %5
   ret i32 %7

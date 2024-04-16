@@ -10,7 +10,7 @@ define i8 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 26
   %2 = srem i32 %1, 26
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   %4 = add nsw i8 %3, 97
   ret i8 %4
 }

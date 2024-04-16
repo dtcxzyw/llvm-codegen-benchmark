@@ -26,7 +26,7 @@
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 28
   %6 = getelementptr inbounds [256 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
@@ -41,7 +41,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 24
   %6 = getelementptr inbounds [1 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
@@ -53,7 +53,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 50176
   %6 = getelementptr inbounds [12544 x float], ptr %5, i64 0, i64 %4
   ret ptr %6

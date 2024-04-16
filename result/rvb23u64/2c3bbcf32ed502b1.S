@@ -12,7 +12,6 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a0
-	addi	a1, a1, 16
 	andi	a1, a1, 7
 	seqz	a0, a1
 	ret

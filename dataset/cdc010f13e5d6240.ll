@@ -5,10 +5,10 @@
 define i32 @func000000000000007a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = or disjoint i32 %4, 64
-  %6 = icmp sgt i32 %0, -1
-  %7 = select i1 %6, i32 %4, i32 %5
+  %4 = or disjoint i32 %3, %1
+  %5 = lshr i32 %0, 25
+  %6 = and i32 %5, 64
+  %7 = or i32 %4, %6
   ret i32 %7
 }
 
@@ -21,7 +21,7 @@ entry:
 define i64 @func0000000000000071(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = or disjoint i64 %4, 512
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i64 %4, i64 %5
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000031(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, -2147483648
   %6 = icmp eq i8 %0, 0
   %7 = select i1 %6, i32 %4, i32 %5
@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000041(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, 16
   %6 = icmp eq i8 %0, 0
   %7 = select i1 %6, i32 %4, i32 %5

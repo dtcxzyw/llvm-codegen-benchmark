@@ -1,13 +1,16 @@
 func0000000000000008:                   # @func0000000000000008
-	srli	a0, a0, 1
-	sext.w	a0, a0
-	sltiu	a0, a0, 256
-	xori	a0, a0, 1
+	li	a1, 1
+	slli	a1, a1, 33
+	addi	a1, a1, -512
+	and	a0, a0, a1
+	snez	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	srli	a0, a0, 1
-	sext.w	a0, a0
-	sltiu	a0, a0, 128
+	li	a1, 1
+	slli	a1, a1, 33
+	addi	a1, a1, -256
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	srli	a0, a0, 3
@@ -34,9 +37,7 @@ func000000000000004a:                   # @func000000000000004a
 	sgtz	a0, a0
 	ret
 func0000000000000046:                   # @func0000000000000046
-	srli	a0, a0, 4
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	bexti	a0, a0, 35
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 47
@@ -48,11 +49,11 @@ func000000000000001c:                   # @func000000000000001c
 	sltiu	a0, a0, -1
 	ret
 func0000000000000044:                   # @func0000000000000044
-	slli	a0, a0, 30
-	srli	a0, a0, 48
+	lui	a1, 65535
+	slli	a1, a1, 6
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	srai	a0, a0, 40
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret

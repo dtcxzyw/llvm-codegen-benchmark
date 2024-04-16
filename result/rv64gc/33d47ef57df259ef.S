@@ -7,11 +7,10 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 32
 	ret
 func000000000000007c:                   # @func000000000000007c
-	slli	a1, a1, 3
-	addiw	a1, a1, 16
+	slliw	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 2047
-	addi	a0, a0, 1
+	addi	a0, a0, 17
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 2

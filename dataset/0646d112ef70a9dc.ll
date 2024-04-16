@@ -40,7 +40,7 @@ entry:
 define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   %5 = and i32 %4, 51
   %6 = icmp ne i32 %5, 0
   ret i1 %6

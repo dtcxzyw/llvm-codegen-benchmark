@@ -535,7 +535,7 @@ define i64 @func00000000000000c5(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = shl nsw i64 %4, 4
   ret i64 %5
 }
@@ -549,7 +549,7 @@ define i64 @func00000000000000c4(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = shl i64 %4, 9
   ret i64 %5
 }

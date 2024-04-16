@@ -82,7 +82,7 @@ define i1 @func0000000000000003(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
   %3 = fdiv float 1.600000e+01, %2
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   %5 = fcmp ult float %4, 1.250000e-01
   ret i1 %5
 }
@@ -129,7 +129,7 @@ define i1 @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
   %3 = fdiv float 1.600000e+01, %2
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   %5 = fcmp ugt float %4, 8.000000e+00
   ret i1 %5
 }

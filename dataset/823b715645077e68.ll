@@ -1005,9 +1005,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, ptr %0, ptr null
-  ret ptr %3
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, ptr null, ptr %0
+  ret ptr %2
 }
 
 ; 74 occurrences:

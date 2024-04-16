@@ -11,9 +11,9 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a2, a2
-	slti	a2, a2, 0
-	xori	a2, a2, 1
+	srliw	a2, a2, 31
+	slli	a2, a2, 31
+	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

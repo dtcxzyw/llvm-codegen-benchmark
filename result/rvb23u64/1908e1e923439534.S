@@ -8,10 +8,7 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
-	slti	a2, a1, 0
-	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
-	or	a0, a0, a1
+	and	a0, a0, a1
 	srli	a0, a0, 32
 	slli	a0, a0, 32
 	ret

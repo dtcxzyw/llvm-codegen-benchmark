@@ -7,9 +7,8 @@ func0000000000000064:                   # @func0000000000000064
 func0000000000000068:                   # @func0000000000000068
 	addi	a1, a1, -2
 	srl	a0, a0, a1
-	andi	a0, a0, 3
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	slli	a0, a0, 62
+	srli	a0, a0, 63
 	ret
 func0000000000000061:                   # @func0000000000000061
 	addi	a1, a1, -2

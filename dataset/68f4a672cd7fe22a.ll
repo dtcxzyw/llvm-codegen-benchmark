@@ -12,7 +12,7 @@ entry:
   %2 = xor i32 %0, %1
   %3 = xor i32 %2, -1
   %4 = lshr i32 %3, 24
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
 

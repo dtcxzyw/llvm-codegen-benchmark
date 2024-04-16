@@ -1,9 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
-	andi	a0, a0, 1
 	subw	a2, a2, a1
-	li	a1, 16
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
+	sgtz	a1, a2
+	xori	a0, a0, 1
 	or	a0, a0, a1
-	sgtz	a0, a0
 	ret

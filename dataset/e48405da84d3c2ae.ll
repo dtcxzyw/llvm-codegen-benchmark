@@ -20,9 +20,8 @@ define i1 @func0000000000000051(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 7
   %2 = and i64 %1, -8
-  %3 = add nsw i64 %2, 16
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, -16
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -32,11 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 7
-  %2 = and i64 %1, -8
-  %3 = add i64 %2, 8
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %1 = add i64 %0, 15
+  %2 = icmp ult i64 %1, 8
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -47,7 +44,7 @@ entry:
 define i1 @func00000000000000d4(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 4294967039
-  %2 = and i64 %1, 4294967295
+  %2 = and i64 %1, 4294967292
   %3 = add nsw i64 %2, -28
   %4 = icmp ult i64 %3, -20
   ret i1 %4

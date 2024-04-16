@@ -8,10 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a1, a0
-	negw	a0, a0
-	slti	a1, a1, 0
-	czero.eqz	a0, a0, a1
+	negw	a1, a0
+	sraiw	a0, a0, 31
+	and	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a0
@@ -44,10 +43,9 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sext.w	a1, a0
-	negw	a0, a0
-	slti	a1, a1, 0
-	czero.eqz	a0, a0, a1
+	negw	a1, a0
+	sraiw	a0, a0, 31
+	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a1, 16

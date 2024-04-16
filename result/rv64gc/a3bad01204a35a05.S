@@ -68,10 +68,10 @@ func00000000000000a5:                   # @func00000000000000a5
 	ret
 func00000000000000d2:                   # @func00000000000000d2
 	flt.s	a0, fa2, fa1
-	beqz	a0, .LBB9_2
-	fmv.s	fa1, fa2
+	bnez	a0, .LBB9_2
+	fmv.s	fa2, fa1
 .LBB9_2:                                # %entry
-	flt.s	a0, fa1, fa0
+	flt.s	a0, fa2, fa0
 	ret
 func0000000000000045:                   # @func0000000000000045
 	flt.s	a0, fa2, fa1
@@ -142,17 +142,17 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func000000000000003c:                   # @func000000000000003c
 	fle.d	a0, fa2, fa1
-	beqz	a0, .LBB19_2
-	fmv.d	fa1, fa2
+	bnez	a0, .LBB19_2
+	fmv.d	fa2, fa1
 .LBB19_2:                               # %entry
-	fle.d	a0, fa0, fa1
+	fle.d	a0, fa0, fa2
 	ret
 func0000000000000034:                   # @func0000000000000034
 	fle.d	a0, fa2, fa1
-	beqz	a0, .LBB20_2
-	fmv.d	fa1, fa2
+	bnez	a0, .LBB20_2
+	fmv.d	fa2, fa1
 .LBB20_2:                               # %entry
-	flt.d	a0, fa0, fa1
+	flt.d	a0, fa0, fa2
 	ret
 func0000000000000048:                   # @func0000000000000048
 	flt.s	a0, fa2, fa1
@@ -178,10 +178,10 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func00000000000000b4:                   # @func00000000000000b4
 	flt.s	a0, fa1, fa2
-	beqz	a0, .LBB24_2
-	fmv.s	fa1, fa2
+	bnez	a0, .LBB24_2
+	fmv.s	fa2, fa1
 .LBB24_2:                               # %entry
-	flt.s	a0, fa0, fa1
+	flt.s	a0, fa0, fa2
 	ret
 func000000000000004d:                   # @func000000000000004d
 	flt.s	a0, fa2, fa1

@@ -8,8 +8,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp eq i32 %5, %6
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = sdiv i64 %3, -1000
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = icmp slt i32 %6, 1
   ret i1 %7
 }
@@ -47,8 +47,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %5, %0
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp eq i32 %5, %6
   ret i1 %7
 }
 

@@ -7,8 +7,8 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 18
   %3 = and i32 %2, 2
-  %4 = xor i32 %3, 2
-  %5 = icmp eq i32 %0, %4
+  %4 = xor i32 %3, %0
+  %5 = icmp eq i32 %4, 2
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = lshr i64 %1, 9
   %3 = and i64 %2, 1
   %4 = xor i64 %3, 1
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

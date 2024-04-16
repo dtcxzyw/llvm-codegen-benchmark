@@ -74,8 +74,8 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = and i64 %3, -65536
+  %3 = and i64 %0, -65536
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -91,8 +91,8 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 63
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = and i64 %3, 1
+  %3 = and i64 %0, 1
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -119,8 +119,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 16777216
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = and i64 %3, 255
+  %3 = and i64 %0, 255
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -136,8 +136,8 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = and i32 %3, 255
+  %3 = and i32 %0, 255
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -156,8 +156,8 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 2305843009213693951
-  %3 = select i1 %2, i64 -1, i64 %0
-  %4 = and i64 %3, 9223372036854775806
+  %3 = and i64 %0, 9223372036854775806
+  %4 = select i1 %2, i64 9223372036854775806, i64 %3
   ret i64 %4
 }
 
@@ -166,10 +166,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 -1, i32 %0
-  %4 = and i32 %3, -65538
-  ret i32 %4
+  %.not = icmp eq i32 %1, 0
+  %2 = and i32 %0, -65538
+  %3 = select i1 %.not, i32 %2, i32 -65538
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

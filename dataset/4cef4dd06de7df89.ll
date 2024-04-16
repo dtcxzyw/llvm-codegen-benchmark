@@ -7,7 +7,7 @@ define double @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fcmp ugt double %1, 1.300000e+01
   %3 = select i1 %2, double -4.715000e+03, double -4.716000e+03
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 
@@ -20,7 +20,7 @@ define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0.000000e+00
   %3 = select i1 %2, double -1.000000e+00, double 1.000000e+00
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 
@@ -45,7 +45,7 @@ define double @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fcmp ult double %1, 0.000000e+00
   %3 = select i1 %2, double -1.000000e+00, double 1.000000e+00
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 

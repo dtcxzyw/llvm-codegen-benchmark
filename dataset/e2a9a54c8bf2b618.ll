@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or i32 %2, -16777216
-  %4 = or i32 %1, -16777216
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
+  %.v = select i1 %0, i32 %1, i32 %2
+  %3 = or i32 %.v, -16777216
+  ret i32 %3
 }
 
 ; 23 occurrences:

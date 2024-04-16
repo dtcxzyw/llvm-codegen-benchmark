@@ -10,7 +10,7 @@
 define i1 @func00000000000001c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc i32 %3 to i16
   %5 = urem i16 %4, 31
   %6 = icmp eq i16 %5, 0
@@ -25,7 +25,7 @@ entry:
 define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc nuw i32 %3 to i16
   %5 = urem i16 %4, 31
   %6 = icmp eq i16 %5, 0

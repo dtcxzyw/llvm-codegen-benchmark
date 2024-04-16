@@ -7,7 +7,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

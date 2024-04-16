@@ -55,8 +55,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000056:                   # @func0000000000000056
 	sub	a2, a2, a1
-	bseti	a1, zero, 63
-	add	a1, a1, a2
+	binvi	a1, a2, 63
 	slt	a0, a0, a1
 	ret
 func000000000000005a:                   # @func000000000000005a

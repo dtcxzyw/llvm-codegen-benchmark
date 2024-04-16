@@ -28,7 +28,9 @@ func000000000000001a:                   # @func000000000000001a
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	add.uw	a1, a2, a1
+	zext.w	a2, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

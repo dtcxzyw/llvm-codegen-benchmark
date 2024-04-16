@@ -14,9 +14,9 @@
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 256
-  %6 = getelementptr inbounds ptr, ptr %5, i64 %4
+  %4 = getelementptr inbounds i8, ptr %0, i64 256
+  %5 = getelementptr ptr, ptr %4, i64 %3
+  %6 = getelementptr ptr, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -30,9 +30,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 8
-  %6 = getelementptr %struct.dt_iop_basecurve_node_t.1766692, ptr %5, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 8
+  %5 = getelementptr %struct.dt_iop_basecurve_node_t.1766692, ptr %4, i64 %3
+  %6 = getelementptr %struct.dt_iop_basecurve_node_t.1766692, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -42,9 +42,9 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 1281920
-  %6 = getelementptr inbounds float, ptr %5, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 1281920
+  %5 = getelementptr float, ptr %4, i64 %3
+  %6 = getelementptr float, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -54,9 +54,9 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 1281920
-  %6 = getelementptr inbounds float, ptr %5, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 1281920
+  %5 = getelementptr float, ptr %4, i64 %3
+  %6 = getelementptr float, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -67,9 +67,9 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 410112
-  %6 = getelementptr float, ptr %5, i64 %4
+  %4 = getelementptr inbounds i8, ptr %0, i64 410112
+  %5 = getelementptr float, ptr %4, i64 %3
+  %6 = getelementptr float, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -80,9 +80,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 717696
-  %6 = getelementptr inbounds float, ptr %5, i64 %4
+  %4 = getelementptr inbounds i8, ptr %0, i64 717696
+  %5 = getelementptr float, ptr %4, i64 %3
+  %6 = getelementptr float, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -92,9 +92,9 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 4
-  %6 = getelementptr i32, ptr %5, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 4
+  %5 = getelementptr i32, ptr %4, i64 %3
+  %6 = getelementptr i32, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -106,9 +106,9 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr i8, ptr %0, i64 -8
-  %6 = getelementptr inbounds double, ptr %5, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  %6 = getelementptr double, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -120,9 +120,9 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 -8
-  %6 = getelementptr inbounds double, ptr %5, i64 %4
+  %4 = getelementptr inbounds i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  %6 = getelementptr double, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -133,9 +133,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 -8
-  %6 = getelementptr double, ptr %5, i64 %4
+  %4 = getelementptr inbounds i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  %6 = getelementptr double, ptr %5, i64 %1
   ret ptr %6
 }
 

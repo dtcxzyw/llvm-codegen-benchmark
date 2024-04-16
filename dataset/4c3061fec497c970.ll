@@ -5,8 +5,8 @@
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 65536
+  %3 = and i64 %2, 4294901760
+  %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 224, i32 128
   ret i32 %5
 }

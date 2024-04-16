@@ -157,11 +157,11 @@
 define i1 @func000000000000005a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 348, %0
-  %5 = add nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %3 = trunc nuw i64 %2 to i32
+  %reass.sub = sub i32 %3, %0
+  %4 = add i32 %reass.sub, 348
+  %5 = icmp sgt i32 %4, 0
+  ret i1 %5
 }
 
 ; 9 occurrences:
@@ -179,10 +179,10 @@ define i1 @func000000000000025a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = sub nsw i32 348, %0
-  %5 = add nsw i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %reass.sub = sub i32 %3, %0
+  %4 = add i32 %reass.sub, 348
+  %5 = icmp sgt i32 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

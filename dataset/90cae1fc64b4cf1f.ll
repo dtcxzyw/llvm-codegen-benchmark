@@ -10,7 +10,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 1000000
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = mul i64 %4, 86400000000
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 86400
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 3600
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

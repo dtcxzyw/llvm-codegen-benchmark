@@ -1,6 +1,8 @@
 func0000000000000020:                   # @func0000000000000020
-	zext.h	a1, a1
-	sltiu	a1, a1, 256
+	lui	a2, 16
+	addiw	a2, a2, -256
+	and	a1, a1, a2
+	seqz	a1, a1
 	addi	a1, a1, -1
 	ori	a1, a1, 7
 	add	a0, a0, a1

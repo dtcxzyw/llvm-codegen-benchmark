@@ -180,12 +180,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000001a1(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 0
-  %3 = icmp sgt i32 %0, -1
-  %4 = select i1 %3, i1 true, i1 %2
-  %5 = select i1 %4, i32 %0, i32 6
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %2 = icmp eq i32 %0, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -193,12 +189,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000008c1(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 3
-  %3 = icmp ne i32 %0, -4
-  %4 = select i1 %3, i1 true, i1 %2
-  %5 = select i1 %4, i32 %0, i32 0
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %2 = icmp ult i64 %1, 4
+  %3 = icmp eq i32 %0, -4
+  %.not2 = select i1 %3, i1 %2, i1 false
+  %4 = icmp eq i32 %0, 0
+  %5 = or i1 %.not2, %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

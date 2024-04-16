@@ -18,9 +18,7 @@ func0000000000000128:                   # @func0000000000000128
 func0000000000000360:                   # @func0000000000000360
 	add	a0, a0, a1
 	srliw	a1, a0, 16
-	lui	a2, 1048560
-	addi	a2, a2, 1
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000158:                   # @func0000000000000158

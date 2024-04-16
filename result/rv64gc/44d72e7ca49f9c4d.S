@@ -49,9 +49,8 @@ func0000000000000048:                   # @func0000000000000048
 	beqz	a2, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
-	addiw	a0, a0, 1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
+	sltiu	a0, a0, -2
 	ret
 func0000000000000054:                   # @func0000000000000054
 	andi	a2, a1, 255
@@ -63,10 +62,7 @@ func0000000000000054:                   # @func0000000000000054
 	sltiu	a0, a0, 254
 	ret
 func000000000000004c:                   # @func000000000000004c
-	li	a2, -1
-	beq	a1, a2, .LBB7_2
-	mv	a0, a1
-.LBB7_2:                                # %entry
+	and	a0, a0, a1
 	sltiu	a0, a0, -1
 	ret
 func0000000000000201:                   # @func0000000000000201

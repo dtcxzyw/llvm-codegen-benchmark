@@ -18,12 +18,12 @@ func00000000000003e1:                   # @func00000000000003e1
 	ret
 func0000000000000158:                   # @func0000000000000158
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, 1
+	lui	a1, 1048564
+	addi	a1, a1, 827
 	addw	a0, a0, a1
-	lui	a1, 6
-	addiw	a1, a1, -827
-	sltu	a0, a1, a0
+	lui	a1, 1048570
+	addiw	a1, a1, 826
+	sltu	a0, a0, a1
 	ret
 func0000000000000104:                   # @func0000000000000104
 	add	a0, a0, a1
@@ -33,8 +33,7 @@ func0000000000000104:                   # @func0000000000000104
 	ret
 func00000000000003f4:                   # @func00000000000003f4
 	add	a0, a0, a1
-	addi	a0, a0, 2
-	sltiu	a0, a0, 513
+	sltiu	a0, a0, 511
 	ret
 func000000000000030c:                   # @func000000000000030c
 	addw	a0, a0, a1

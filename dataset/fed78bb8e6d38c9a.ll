@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fmul float %2, 0x3FE6A09E60000000
-  %4 = fneg float %3
-  %5 = tail call float @llvm.fmuladd.f32(float %0, float %1, float %4)
-  ret float %5
+  %3 = fmul float %2, 0xBFE6A09E60000000
+  %4 = tail call float @llvm.fmuladd.f32(float %0, float %1, float %3)
+  ret float %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

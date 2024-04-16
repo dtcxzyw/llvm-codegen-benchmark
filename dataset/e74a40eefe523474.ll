@@ -9,7 +9,7 @@
 define i128 @func0000000000000000(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 %2, i8 -1
-  %4 = and i8 %0, %3
+  %4 = and i8 %3, %0
   %5 = zext i8 %4 to i128
   ret i128 %5
 }

@@ -116,7 +116,7 @@ define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = xor i32 %4, 2047
   ret i32 %5
 }
@@ -128,7 +128,7 @@ define i32 @func000000000000000e(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 19
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = xor i32 %4, 512
   ret i32 %5
 }
@@ -142,7 +142,7 @@ define i16 @func000000000000000f(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 8
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   %5 = xor i16 %4, 1024
   ret i16 %5
 }

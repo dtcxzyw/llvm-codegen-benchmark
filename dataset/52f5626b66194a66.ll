@@ -24,7 +24,7 @@ define i64 @func000000000000000c(i64 %0, i16 %1) #0 {
 entry:
   %2 = call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !0
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = xor i64 %4, -1
   ret i64 %5
 }

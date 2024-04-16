@@ -7,8 +7,8 @@
 define i8 @func000000000000000c(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.umin.i16(i16 %0, i16 34)
-  %2 = add nuw nsw i16 %1, 2
-  %3 = trunc i16 %2 to i8
+  %2 = trunc nuw nsw i16 %1 to i8
+  %3 = add nuw nsw i8 %2, 2
   ret i8 %3
 }
 
@@ -21,8 +21,8 @@ declare i16 @llvm.umin.i16(i16, i16) #1
 define i8 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.umin.i64(i64 %0, i64 65536)
-  %2 = add nsw i64 %1, -1
-  %3 = trunc i64 %2 to i8
+  %2 = trunc i64 %1 to i8
+  %3 = add i8 %2, -1
   ret i8 %3
 }
 

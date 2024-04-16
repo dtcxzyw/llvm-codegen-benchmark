@@ -9,7 +9,7 @@ entry:
   %2 = add i32 %1, -16
   %3 = ashr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = add nsw i32 %1, 7
   %3 = ashr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = ashr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

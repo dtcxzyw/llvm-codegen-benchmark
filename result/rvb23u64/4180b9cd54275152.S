@@ -1,10 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
-	or	a0, a0, a1
 	sext.w	a0, a0
-	addi	a0, a0, 2
+	xori	a0, a0, -2
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000081:                   # @func0000000000000081
@@ -33,13 +31,12 @@ func0000000000000014:                   # @func0000000000000014
 	sltiu	a0, a0, 10
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, 255
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
-	or	a0, a0, a1
 	zext.h	a0, a0
+	andi	a1, a1, 255
+	seqz	a1, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func0000000000000164:                   # @func0000000000000164
 	sext.w	a1, a1

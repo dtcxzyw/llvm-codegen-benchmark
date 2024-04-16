@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 16
-  %3 = trunc i32 %2 to i16
-  %4 = shl nsw i16 %3, 4
-  %5 = sub i16 %0, %4
-  ret i16 %5
+  %.neg = sdiv i32 %1, -16
+  %.neg1 = trunc i32 %.neg to i16
+  %.neg2 = shl i16 %.neg1, 4
+  %2 = add i16 %.neg2, %0
+  ret i16 %2
 }
 
 ; 3 occurrences:
@@ -18,11 +18,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %1, 8
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 3
-  %5 = sub i32 %0, %4
-  ret i32 %5
+  %.neg = sdiv i64 %1, -8
+  %.neg1 = trunc i64 %.neg to i32
+  %.neg2 = shl i32 %.neg1, 3
+  %2 = add i32 %.neg2, %0
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %4
-  ret ptr %5
+  %2 = lshr i64 %1, 1
+  %3 = or i64 %2, 1
+  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -18,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 1
-  %3 = shl nsw i64 %2, 5
+  %2 = shl nuw nsw i64 %1, 4
+  %3 = and i64 %2, 9223372036854775776
   %4 = or disjoint i64 %3, 8
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5

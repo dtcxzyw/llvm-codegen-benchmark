@@ -8,8 +8,8 @@
 define i16 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 250
-  %2 = add nsw i32 %1, 1
-  %3 = trunc i32 %2 to i16
+  %2 = trunc nsw i32 %1 to i16
+  %3 = add nsw i16 %2, 1
   ret i16 %3
 }
 

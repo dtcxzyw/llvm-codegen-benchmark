@@ -18,8 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i16
-  %4 = icmp ugt i16 %3, 1023
+  %3 = and i64 %2, 64512
+  %4 = icmp ne i64 %3, 0
   %5 = select i1 %0, i1 true, i1 %1
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6

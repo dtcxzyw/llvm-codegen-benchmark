@@ -10,10 +10,10 @@
 define i32 @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x7950000000000000
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   %4 = bitcast double %3 to i64
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 

@@ -1,10 +1,10 @@
 func000000000000001c:                   # @func000000000000001c
-	li	a3, 1
-	slli	a3, a3, 33
-	xor	a0, a0, a3
-	seqz	a0, a0
 	and	a1, a1, a2
 	andi	a1, a1, 1
+	li	a2, 1
+	slli	a2, a2, 33
+	xor	a0, a0, a2
+	seqz	a0, a0
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	addi	a0, a0, 2

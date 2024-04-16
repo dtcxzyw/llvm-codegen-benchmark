@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 999, i64 %1
-  %3 = urem i64 %2, 1000000000
+  %2 = urem i64 %1, 1000000000
+  %3 = select i1 %0, i64 999, i64 %2
   ret i64 %3
 }
 

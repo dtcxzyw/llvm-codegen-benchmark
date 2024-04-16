@@ -9,7 +9,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 9
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = and i32 %4, 8191
   %6 = and i32 %0, 8192
   %7 = or disjoint i32 %6, %5
@@ -23,11 +23,11 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 27
-  %4 = or disjoint i32 %3, %1
-  %5 = and i32 %4, -4063233
-  %6 = and i32 %0, 4063232
-  %7 = or disjoint i32 %6, %5
-  ret i32 %7
+  %.masked = and i32 %1, -4063233
+  %4 = or i32 %3, %.masked
+  %5 = and i32 %0, 4063232
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
 }
 
 ; 12 occurrences:
@@ -62,11 +62,11 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, -65536
-  %6 = and i64 %0, 65534
-  %7 = or disjoint i64 %6, %5
-  ret i64 %7
+  %.masked = and i64 %1, -65536
+  %4 = or i64 %3, %.masked
+  %5 = and i64 %0, 65534
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
 }
 
 ; 7 occurrences:
@@ -81,7 +81,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 23
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = and i32 %4, 14651391
   %6 = and i32 %0, -16777216
   %7 = or disjoint i32 %6, %5

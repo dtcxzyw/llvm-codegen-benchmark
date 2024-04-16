@@ -24,8 +24,8 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
   %5 = lshr i64 %1, 2
-  %6 = add nuw nsw i64 %5, %4
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -38,8 +38,8 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
   %5 = lshr i64 %1, 3
-  %6 = add nuw nsw i64 %5, %4
-  %7 = getelementptr i64, ptr %0, i64 %6
+  %6 = getelementptr i64, ptr %0, i64 %5
+  %7 = getelementptr i64, ptr %6, i64 %4
   ret ptr %7
 }
 

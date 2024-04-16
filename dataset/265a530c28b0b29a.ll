@@ -135,7 +135,7 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 8
   %5 = add nuw nsw i16 %4, -1025
-  %6 = add i16 %1, %5
+  %6 = add i16 %5, %1
   %7 = add i16 %6, %0
   ret i16 %7
 }

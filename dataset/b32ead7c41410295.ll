@@ -11,9 +11,9 @@
 define i16 @func0000000000000000(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -28,9 +28,9 @@ entry:
 define i16 @func0000000000000008(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -46,9 +46,9 @@ entry:
 define i32 @func0000000000000009(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 16777184
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

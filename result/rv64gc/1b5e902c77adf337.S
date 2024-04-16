@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a1, 16
 	bnez	a2, .LBB0_2
-	andi	a0, a1, 15
+	andi	a0, a1, 14
 .LBB0_2:                                # %entry
 	andi	a0, a0, 255
 	sltiu	a0, a0, 2

@@ -51,9 +51,8 @@ func00000000000005c4:                   # @func00000000000005c4
 	ret
 func00000000000005c8:                   # @func00000000000005c8
 	sext.w	a1, a1
-	addi	a1, a1, -45
-	sltiu	a1, a1, 64
-	xori	a1, a1, 1
+	addi	a1, a1, -109
+	sltiu	a1, a1, -64
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

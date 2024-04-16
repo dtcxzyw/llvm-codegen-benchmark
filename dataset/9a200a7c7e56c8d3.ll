@@ -9,8 +9,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = urem i64 %3, 96
   %5 = sub nuw i64 %3, %4
-  %6 = add i64 %5, 96
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 96
   ret ptr %7
 }
 

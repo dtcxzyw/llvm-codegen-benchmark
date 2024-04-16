@@ -10,7 +10,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = icmp ugt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
 }

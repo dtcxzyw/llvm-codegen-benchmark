@@ -1,7 +1,6 @@
 func00000000000002e1:                   # @func00000000000002e1
-	slli	a1, a1, 1
-	addi	a1, a1, -2
-	srli	a1, a1, 1
+	addi	a1, a1, -1
+	bclri	a1, a1, 63
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -6,14 +6,14 @@ func0000000000000041:                   # @func0000000000000041
 	or	a0, a0, a1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	add	a3, a3, a1
-	sltu	a1, a3, a1
+	add	a4, a3, a1
+	sltu	a1, a4, a3
 	add	a1, a1, a2
-	srli	a2, a3, 32
+	srli	a2, a4, 32
 	slli	a1, a1, 32
 	or	a1, a1, a2
-	slli	a3, a3, 32
-	or	a0, a0, a3
+	slli	a4, a4, 32
+	or	a0, a0, a4
 	ret
 func0000000000000035:                   # @func0000000000000035
 	add	a1, a1, a2

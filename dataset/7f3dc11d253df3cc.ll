@@ -9,9 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 1, i64 %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, 13
+  %2 = trunc i64 %1 to i32
+  %3 = icmp eq i32 %2, 13
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -20,9 +21,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 1, i64 %1
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ugt i32 %3, 6000
+  %2 = trunc nuw i64 %1 to i32
+  %3 = icmp ugt i32 %2, 6000
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -32,9 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 3, i64 %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, -12
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ugt i32 %2, -12
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -43,9 +46,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 1, i32 %1
-  %3 = trunc i32 %2 to i8
-  %4 = icmp ult i8 %3, 7
+  %2 = trunc i32 %1 to i8
+  %3 = icmp ult i8 %2, 7
+  %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -55,9 +58,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 -1, i64 %1
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp ult i32 %3, 64
+  %2 = and i64 %1, 4294967232
+  %3 = icmp eq i64 %2, 0
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 

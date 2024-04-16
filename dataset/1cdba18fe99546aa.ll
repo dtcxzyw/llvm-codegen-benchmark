@@ -10,10 +10,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
-  %2 = fmul double %1, 0.000000e+00
-  %3 = fneg double %2
-  %4 = tail call double @llvm.fmuladd.f64(double %0, double 0.000000e+00, double %3)
-  ret double %4
+  %2 = fmul double %1, -0.000000e+00
+  %3 = tail call double @llvm.fmuladd.f64(double %0, double 0.000000e+00, double %2)
+  ret double %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

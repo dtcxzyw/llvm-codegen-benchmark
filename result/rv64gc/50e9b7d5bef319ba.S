@@ -59,6 +59,7 @@ func000000000000000c:                   # @func000000000000000c
 	blt	a2, a1, .LBB6_2
 	mv	a1, a2
 .LBB6_2:                                # %entry
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret

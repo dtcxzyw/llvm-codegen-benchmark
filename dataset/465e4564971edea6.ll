@@ -17,7 +17,7 @@ entry:
 define i128 @func0000000000000017(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = and i128 %2, 72057594037927935
-  %4 = mul nsw i128 %1, %3
+  %4 = mul nsw i128 %3, %1
   %5 = add nsw i128 %4, -168811955464684315858783496655603728384
   %6 = add nuw nsw i128 %5, %0
   ret i128 %6
@@ -45,7 +45,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = mul nuw nsw i32 %3, %1
   %5 = add nuw nsw i32 %4, 128
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

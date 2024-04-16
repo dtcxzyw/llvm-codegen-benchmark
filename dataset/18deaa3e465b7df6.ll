@@ -12,7 +12,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = fsub double %1, %3
   %5 = fcmp ogt double %4, 0x3FE0000035AFE535
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

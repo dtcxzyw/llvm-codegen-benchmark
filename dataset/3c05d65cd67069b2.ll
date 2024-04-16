@@ -6,7 +6,7 @@ define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
   %7 = icmp ugt i32 %6, 128
   ret i1 %7
@@ -17,12 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr exact i32 %2, 16
-  %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %1, %4
-  %6 = or disjoint i32 %5, %0
-  %7 = icmp ugt i32 %6, -16777217
-  ret i1 %7
+  %3 = or i32 %1, %0
+  %4 = icmp ugt i32 %3, -16777217
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -30,12 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr exact i32 %2, 16
-  %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  %7 = icmp ult i32 %6, 16777216
-  ret i1 %7
+  %3 = or i32 %1, %0
+  %4 = icmp ult i32 %3, 16777216
+  ret i1 %4
 }
 
 ; 9 occurrences:
@@ -53,7 +47,7 @@ define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -65,12 +59,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = lshr i16 %2, 1
-  %4 = and i16 %3, 112
-  %5 = or disjoint i16 %4, %1
-  %6 = or disjoint i16 %5, %0
-  %7 = icmp ugt i16 %6, 255
-  ret i1 %7
+  %3 = or i16 %1, %0
+  %4 = icmp ugt i16 %3, 255
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -80,7 +71,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 1
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = or i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -93,7 +84,7 @@ define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 256
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
   %7 = icmp ult i32 %6, 4
   ret i1 %7
@@ -106,7 +97,7 @@ define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 8
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   %7 = icmp eq i32 %6, 1
   ret i1 %7

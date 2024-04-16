@@ -18,9 +18,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds [256 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 6
-  ret ptr %6
+  %5 = getelementptr inbounds [256 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -56,9 +55,8 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [256 x %struct.PendingWriteback.2120044], ptr %0, i64 0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [256 x %struct.PendingWriteback.2120044], ptr %0, i64 0, i64 %4, i32 0, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

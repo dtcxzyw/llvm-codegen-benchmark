@@ -31,7 +31,7 @@
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fsub float 2.000000e+00, %1
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fcmp olt float %3, 0.000000e+00
   %5 = select i1 %4, float 0.000000e+00, float %3
   ret float %5
@@ -57,7 +57,7 @@ entry:
 define double @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
-  %3 = fmul double %0, %2
+  %3 = fmul double %2, %0
   %4 = fcmp ole double %3, 0.000000e+00
   %5 = select i1 %4, double 0.000000e+00, double %3
   ret double %5

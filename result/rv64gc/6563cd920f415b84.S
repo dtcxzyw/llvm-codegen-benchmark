@@ -8,7 +8,7 @@ func0000000000000008:                   # @func0000000000000008
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	mv	a6, a1
 	mv	a5, a0
-	add	a1, a3, a4
+	add	a1, a4, a3
 	mv	a0, a2
 	mv	a2, a5
 	mv	a3, a6

@@ -173,8 +173,9 @@ define i1 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, %0
-  %5 = udiv i32 %1, 10
-  %6 = mul nuw i32 %5, 10
+  %.fr = freeze i32 %1
+  %5 = urem i32 %.fr, 10
+  %6 = sub nuw i32 %.fr, %5
   %7 = icmp ult i32 %6, %4
   ret i1 %7
 }

@@ -15,7 +15,7 @@
 define i16 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 255)
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = select i1 %0, i16 0, i16 %3
   ret i16 %4
 }

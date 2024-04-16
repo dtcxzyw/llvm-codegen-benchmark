@@ -28,8 +28,8 @@ define i1 @func0000000000000001(i8 %0, i7 %1) #0 {
 entry:
   %2 = lshr i7 16, %1
   %3 = trunc i7 %2 to i1
-  %4 = icmp eq i8 %0, 7
-  %5 = select i1 %4, i1 false, i1 %3
+  %4 = icmp ne i8 %0, 7
+  %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
 

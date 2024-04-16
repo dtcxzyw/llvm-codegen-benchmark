@@ -86,17 +86,17 @@ func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1
 	lui	a2, 65
 	addiw	a2, a2, 427
+	beqz	a1, .LBB7_2
 	mv	a3, a2
-	beqz	a1, .LBB7_3
-	bgeu	a2, a1, .LBB7_4
-.LBB7_2:                                # %entry
-	ret
-.LBB7_3:                                # %entry
+	bgeu	a2, a1, .LBB7_3
+	j	.LBB7_4
+.LBB7_2:
 	lui	a3, 49
 	addiw	a3, a3, -704
-	bltu	a2, a1, .LBB7_2
-.LBB7_4:                                # %entry
+	bltu	a2, a1, .LBB7_4
+.LBB7_3:                                # %entry
 	mv	a0, a3
+.LBB7_4:                                # %entry
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1

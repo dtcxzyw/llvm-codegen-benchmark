@@ -23,11 +23,8 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.smax.i32(i32 %0, i32 0)
-  %2 = add nuw nsw i32 %1, 31
-  %3 = and i32 %2, 2147483616
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = icmp slt i32 %0, 1
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -39,7 +36,7 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.smax.i32(i32 %0, i32 1)
-  %2 = add nsw i32 %1, -1
+  %2 = add nuw i32 %1, 7
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 0
   ret i1 %4

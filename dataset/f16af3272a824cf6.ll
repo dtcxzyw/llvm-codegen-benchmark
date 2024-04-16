@@ -186,10 +186,10 @@ define i32 @func000000000000005b(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = lshr i32 %2, 2
-  %4 = sub nuw nsw i32 8, %3
-  %5 = lshr i32 %0, 24
-  %6 = add nuw nsw i32 %5, %4
-  ret i32 %6
+  %4 = lshr i32 %0, 24
+  %reass.sub = sub nsw i32 %4, %3
+  %5 = add nsw i32 %reass.sub, 8
+  ret i32 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

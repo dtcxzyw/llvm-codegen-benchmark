@@ -147,8 +147,8 @@ entry:
 define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = mul i8 %0, %1
-  %3 = and i8 %2, 63
-  %4 = icmp ugt i8 %3, 31
+  %3 = and i8 %2, 32
+  %4 = icmp ne i8 %3, 0
   ret i1 %4
 }
 

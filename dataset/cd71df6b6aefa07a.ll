@@ -9,8 +9,8 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = and i64 %1, 4294967295
   %5 = mul nuw i64 %4, %3
-  %6 = add i64 %0, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 
@@ -23,8 +23,8 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = and i64 %1, 4294967295
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add i64 %0, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 

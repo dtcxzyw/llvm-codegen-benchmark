@@ -15,7 +15,7 @@
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = lshr i64 %3, 2
   %5 = and i64 %4, 4611686018427387872
   ret i64 %5
@@ -28,7 +28,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %0, %2
+  %3 = mul nuw nsw i64 %2, %0
   %4 = lshr i64 %3, 26
   %5 = and i64 %4, 4294967232
   ret i64 %5
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   %4 = lshr i64 %3, 23
   %5 = and i64 %4, 4294967295
   ret i64 %5
@@ -65,7 +65,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %0, %2
+  %3 = mul nuw nsw i64 %2, %0
   %4 = lshr i64 %3, 7
   %5 = and i64 %4, 4294967295
   ret i64 %5
@@ -77,7 +77,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = lshr i64 %3, 8
   %5 = and i64 %4, 17592186044415
   ret i64 %5

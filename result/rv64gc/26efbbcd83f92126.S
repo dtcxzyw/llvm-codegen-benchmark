@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 1
 	addiw	a2, a0, 128
 .LBB0_2:                                # %entry
-	or	a0, a1, a2
+	or	a0, a2, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a0

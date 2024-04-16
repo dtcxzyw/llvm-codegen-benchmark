@@ -14,8 +14,8 @@ entry:
   %3 = icmp eq i32 %2, 103
   %4 = icmp eq i32 %2, 147
   %5 = or i1 %4, %3
-  %6 = and i1 %1, %5
-  %7 = or i1 %0, %6
+  %6 = and i1 %5, %1
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

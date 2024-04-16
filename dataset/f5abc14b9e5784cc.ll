@@ -19,9 +19,8 @@ entry:
   %3 = xor i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.code.1771199, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.code.1771199, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -32,9 +31,8 @@ entry:
   %3 = xor i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.code.2017295, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %6 = getelementptr %struct.code.2017295, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -46,9 +44,8 @@ entry:
   %3 = xor i32 %2, -1252372727
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.chashtable<smt::enode *, smt::cg_table::cg_comm_hash, smt::cg_table::cg_comm_eq>::cell.2105260", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.chashtable<smt::enode *, smt::cg_table::cg_comm_hash, smt::cg_table::cg_comm_eq>::cell.2105260", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

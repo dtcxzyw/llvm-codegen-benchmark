@@ -7,7 +7,7 @@
 define i64 @func00000000000000d7(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 360
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 344
   %6 = add nsw i64 %4, %5
   %7 = shl nuw nsw i64 %6, 3
@@ -82,7 +82,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv i64 %1, 2
   %6 = add i64 %4, %5
   %7 = shl i64 %6, 1
@@ -108,7 +108,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = sdiv i64 %0, -2
   %6 = add i64 %5, %4
   %7 = shl nsw i64 %6, 1
@@ -134,7 +134,7 @@ entry:
 define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add i64 %4, %5
   %7 = shl i64 %6, 1
@@ -147,7 +147,7 @@ entry:
 define i64 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = shl i64 %6, 1
@@ -160,7 +160,7 @@ entry:
 define i64 @func00000000000000d5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add nsw i64 %4, %5
   %7 = shl nsw i64 %6, 1

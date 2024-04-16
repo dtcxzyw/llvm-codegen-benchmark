@@ -79,7 +79,7 @@ func0000000000000044:                   # @func0000000000000044
 	flt.d	a0, fa5, fa1
 	beqz	a0, .LBB4_4
 .LBB4_2:                                # %entry
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret
 .LBB4_3:                                # %entry
 	fmv.d	fa1, fa2
@@ -87,5 +87,5 @@ func0000000000000044:                   # @func0000000000000044
 	flt.d	a0, fa5, fa2
 	bnez	a0, .LBB4_2
 .LBB4_4:                                # %entry
-	fmul.d	fa0, fa0, fa1
+	fmul.d	fa0, fa1, fa0
 	ret

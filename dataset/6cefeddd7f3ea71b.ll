@@ -24,7 +24,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 8192, i64 0
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = shl nuw nsw i64 %1, 44
   %7 = or disjoint i64 %5, %6
   ret i64 %7

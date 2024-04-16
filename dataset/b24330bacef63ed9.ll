@@ -37,7 +37,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp eq i64 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5

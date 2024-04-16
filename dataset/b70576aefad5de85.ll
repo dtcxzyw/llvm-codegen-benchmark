@@ -31,12 +31,11 @@
 ; Function Attrs: nounwind
 define { i64, i1 } @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 15)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = and i64 %3, -16
-  %5 = add i64 %0, 17
-  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %4, i64 %5)
-  ret { i64, i1 } %6
+  %2 = add i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = add i64 %0, 17
+  %5 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %4)
+  ret { i64, i1 } %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -57,12 +56,11 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define { i64, i1 } @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 15)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = and i64 %3, -16
-  %5 = add nuw nsw i64 %0, 16
-  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %4, i64 %5)
-  ret { i64, i1 } %6
+  %2 = add i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = add nuw nsw i64 %0, 16
+  %5 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %4)
+  ret { i64, i1 } %5
 }
 
 ; 2 occurrences:
@@ -71,12 +69,11 @@ entry:
 ; Function Attrs: nounwind
 define { i64, i1 } @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 15)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = and i64 %3, -16
-  %5 = add nsw i64 %0, 17
-  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %4, i64 %5)
-  ret { i64, i1 } %6
+  %2 = add i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = add nsw i64 %0, 17
+  %5 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %4)
+  ret { i64, i1 } %5
 }
 
 attributes #0 = { nounwind }

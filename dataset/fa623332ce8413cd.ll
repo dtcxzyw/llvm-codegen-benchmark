@@ -46,9 +46,9 @@ entry:
 define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = and i32 %2, 260
+  %3 = and i32 %2, 4
   %4 = lshr i32 %0, 16
-  %5 = or disjoint i32 %3, %4
+  %5 = or i32 %3, %4
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }

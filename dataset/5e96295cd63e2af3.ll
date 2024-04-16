@@ -40,7 +40,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
@@ -61,7 +61,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -76,7 +76,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
@@ -91,7 +91,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 63
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }

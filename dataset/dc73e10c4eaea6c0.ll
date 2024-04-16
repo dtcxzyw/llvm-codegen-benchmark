@@ -436,7 +436,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr float, ptr %0, i64 %4
   ret ptr %5
 }
@@ -449,7 +449,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr float, ptr %0, i64 %4
   ret ptr %5
 }
@@ -494,7 +494,7 @@ entry:
 define ptr @func0000000000000019(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr inbounds %"struct.Assimp::LWO::Key.1752756", ptr %0, i64 %4
   ret ptr %5
 }
@@ -840,7 +840,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr double, ptr %0, i64 %4
   ret ptr %5
 }
@@ -876,7 +876,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr inbounds double, ptr %0, i64 %4
   ret ptr %5
 }

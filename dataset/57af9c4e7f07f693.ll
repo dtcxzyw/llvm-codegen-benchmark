@@ -86,8 +86,8 @@ entry:
 define i8 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1
-  %2 = select i1 %1, i32 -2, i32 1
-  %3 = add nsw i32 %2, %0
+  %2 = select i1 %1, i32 254, i32 1
+  %3 = add i32 %2, %0
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

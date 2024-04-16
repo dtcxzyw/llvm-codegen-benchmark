@@ -5,10 +5,8 @@
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or disjoint i32 %3, 8
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = lshr i32 %5, 11
-  ret i32 %6
+  %4 = lshr i32 %3, 11
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -17,10 +15,8 @@ entry:
 define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
-  %4 = or i16 %3, 2
-  %5 = select i1 %0, i16 %4, i16 %3
-  %6 = lshr i16 %5, 8
-  ret i16 %6
+  %4 = lshr i16 %3, 8
+  ret i16 %4
 }
 
 ; 1 occurrences:
@@ -29,9 +25,9 @@ entry:
 define i32 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, 32
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = lshr i32 %5, 3
+  %4 = lshr i32 %3, 3
+  %5 = or i32 %4, 4
+  %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6
 }
 

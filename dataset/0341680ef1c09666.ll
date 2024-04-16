@@ -33,7 +33,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = sub nuw nsw i32 2048, %2
   %5 = select i1 %3, i32 0, i32 %4
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = sub nuw nsw i32 4, %2
   %5 = select i1 %3, i32 0, i32 %4
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

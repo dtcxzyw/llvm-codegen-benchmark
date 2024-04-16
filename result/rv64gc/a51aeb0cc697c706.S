@@ -89,11 +89,12 @@ func0000000000000091:                   # @func0000000000000091
 	srli	a2, a0, 63
 	srai	a0, a0, 1
 	add	a0, a0, a2
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI8_0:
-	.quad	1237940039285380275             # 0x112e0be826d694b3
+	.quad	-1237940039285380275            # 0xeed1f417d9296b4d
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, %hi(.LCPI8_0)
 	ld	a2, %lo(.LCPI8_0)(a2)
@@ -102,7 +103,7 @@ func0000000000000011:                   # @func0000000000000011
 	srai	a1, a1, 26
 	add	a1, a1, a2
 	srai	a0, a0, 61
-	add	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI9_0:

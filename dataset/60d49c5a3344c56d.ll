@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = trunc i32 %4 to i16
   %6 = add i16 %0, 6
   %7 = add i16 %6, %5

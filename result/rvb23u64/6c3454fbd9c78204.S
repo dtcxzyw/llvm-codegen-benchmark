@@ -20,8 +20,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
 	addi	a2, a2, -2
-	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	min	a0, a0, zero
 	ret
@@ -37,8 +37,8 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000015:                   # @func0000000000000015
 	sext.b	a2, a2
 	slti	a2, a2, 0
-	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	li	a1, 26
 	min	a0, a0, a1

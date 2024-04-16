@@ -1,32 +1,26 @@
 func000000000000001b:                   # @func000000000000001b
-	sext.w	a1, a0
+	sext.w	a0, a0
 	li	a2, 1024
-	mv	a0, a1
-	bgeu	a1, a2, .LBB0_3
-	blez	a1, .LBB0_4
+	mv	a1, a0
+	bltu	a0, a2, .LBB0_2
+	li	a1, 1024
 .LBB0_2:                                # %entry
-	addi	a0, a0, 7
+	bgtz	a0, .LBB0_4
+	li	a0, 1031
 	ret
-.LBB0_3:                                # %entry
-	li	a0, 1024
-	bgtz	a1, .LBB0_2
-.LBB0_4:                                # %entry
-	li	a0, 1024
-	addi	a0, a0, 7
+.LBB0_4:
+	addi	a0, a1, 7
 	ret
 func0000000000000019:                   # @func0000000000000019
-	sext.w	a1, a0
+	sext.w	a0, a0
 	li	a2, 9
-	mv	a0, a1
-	bgeu	a1, a2, .LBB1_3
-	blez	a1, .LBB1_4
+	mv	a1, a0
+	bltu	a0, a2, .LBB1_2
+	li	a1, 9
 .LBB1_2:                                # %entry
-	addiw	a0, a0, -6
+	bgtz	a0, .LBB1_4
+	li	a0, -5
 	ret
-.LBB1_3:                                # %entry
-	li	a0, 9
-	bgtz	a1, .LBB1_2
-.LBB1_4:                                # %entry
-	li	a0, 1
-	addiw	a0, a0, -6
+.LBB1_4:
+	addiw	a0, a1, -6
 	ret

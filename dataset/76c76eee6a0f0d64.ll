@@ -8,9 +8,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 %0)
-  %2 = extractvalue { i64, i1 } %1, 0
-  ret i64 %2
+  %1 = mul i64 %0, %0
+  ret i64 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

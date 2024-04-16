@@ -10,8 +10,8 @@ entry:
   %3 = and i24 %2, 49152
   %4 = icmp ne i24 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = select i1 %5, i32 0, i32 %0
-  %7 = icmp eq i32 %6, 0
+  %6 = icmp eq i32 %0, 0
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 

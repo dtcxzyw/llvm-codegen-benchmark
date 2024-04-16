@@ -7,7 +7,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp ugt i64 %6, 2047
   ret i1 %7
 }

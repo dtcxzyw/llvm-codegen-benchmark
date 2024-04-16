@@ -25,11 +25,10 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr %struct.blk_rq_stat.2022223, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.blk_rq_stat.2022223, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

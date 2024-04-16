@@ -1,9 +1,9 @@
 func0000000000000054:                   # @func0000000000000054
 	srai	a3, a2, 63
-	mulhu	a4, a0, a2
-	mul	a3, a3, a0
 	mul	a1, a1, a2
+	mulhu	a4, a2, a0
 	add	a1, a1, a4
+	mul	a3, a3, a0
 	add	a1, a1, a3
 	mul	a0, a0, a2
 	bseti	a2, zero, 62
@@ -17,28 +17,28 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
 	mul	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -193
-	add	a0, a0, a1
-	li	a1, 125
+	li	a1, -125
 	slli	a1, a1, 26
-	addi	a1, a1, -125
+	addi	a2, a1, 127
+	slli	a2, a2, 12
+	addi	a2, a2, -193
+	add	a0, a0, a2
+	addi	a1, a1, 125
 	slli	a1, a1, 12
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	sltu	a0, a0, a1
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
 	mul	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -193
-	add	a0, a0, a1
-	li	a1, 125
+	li	a1, -125
 	slli	a1, a1, 26
-	addi	a1, a1, -125
+	addi	a2, a1, 127
+	slli	a2, a2, 12
+	addi	a2, a2, -193
+	add	a0, a0, a2
+	addi	a1, a1, 125
 	slli	a1, a1, 12
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	sltu	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.h	a1, a1

@@ -5,9 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(double %0) #0 {
 entry:
-  %1 = fcmp une double %0, 0.000000e+00
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp oeq double %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -16,9 +15,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(double %0) #0 {
 entry:
-  %1 = fcmp oge double %0, 0.000000e+00
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp ult double %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -26,9 +24,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(double %0) #0 {
 entry:
-  %1 = fcmp ole double %0, 0.000000e+00
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp ugt double %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -36,9 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(float %0) #0 {
 entry:
-  %1 = fcmp ule float %0, 0.000000e+00
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp ogt float %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -46,9 +42,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(float %0) #0 {
 entry:
-  %1 = fcmp ord float %0, 0.000000e+00
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp uno float %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 8 occurrences:
@@ -63,9 +58,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0) #0 {
 entry:
-  %1 = fcmp olt float %0, 0.000000e+00
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp uge float %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 4 occurrences:
@@ -76,9 +70,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0) #0 {
 entry:
-  %1 = fcmp ogt float %0, 0x3E80000000000000
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp ule float %0, 0x3E80000000000000
+  ret i1 %1
 }
 
 ; 3 occurrences:
@@ -88,9 +81,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(double %0) #0 {
 entry:
-  %1 = fcmp oeq double %0, 0x7FF0000000000000
-  %2 = xor i1 %1, true
-  ret i1 %2
+  %1 = fcmp une double %0, 0x7FF0000000000000
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

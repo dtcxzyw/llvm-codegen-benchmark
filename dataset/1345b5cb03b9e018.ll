@@ -6,8 +6,8 @@
 define double @func0000000000000002(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fadd double %1, %3
-  %5 = fcmp olt double %0, %4
+  %4 = fadd double %3, %1
+  %5 = fcmp ogt double %4, %0
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -18,8 +18,8 @@ entry:
 define float @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %1, %3
-  %5 = fcmp ogt float %0, %4
+  %4 = fadd float %3, %1
+  %5 = fcmp olt float %4, %0
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }

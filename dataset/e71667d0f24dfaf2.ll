@@ -40,7 +40,7 @@ entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 4)
   %4 = sub i64 %1, %3
   %5 = shl nsw i64 %4, 2
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

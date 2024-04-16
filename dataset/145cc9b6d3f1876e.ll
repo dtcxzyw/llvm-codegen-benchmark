@@ -13,7 +13,7 @@
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 52
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 2047
   %4 = sub nuw nsw i32 1075, %3
   %5 = zext nneg i32 %4 to i64

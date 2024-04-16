@@ -8,8 +8,9 @@ define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
-  %5 = select i1 %0, i64 %4, i64 0
-  %6 = icmp ult i64 %5, 2
+  %5 = icmp ult i64 %4, 2
+  %not. = xor i1 %0, true
+  %6 = select i1 %not., i1 true, i1 %5
   ret i1 %6
 }
 
@@ -20,8 +21,8 @@ define i1 @func0000000000000078(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = select i1 %0, i16 %4, i16 0
-  %6 = icmp ugt i16 %5, 255
+  %5 = icmp ugt i16 %4, 255
+  %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 

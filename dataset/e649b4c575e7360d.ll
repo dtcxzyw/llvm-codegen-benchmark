@@ -92,7 +92,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = icmp slt i32 %4, 1
   ret i1 %5
 }
@@ -110,9 +110,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = xor i32 %2, 1
-  %4 = add i32 %3, %0
-  %5 = icmp eq i32 %4, 0
+  %3 = sub i32 0, %0
+  %4 = xor i32 %2, %3
+  %5 = icmp eq i32 %4, 1
   ret i1 %5
 }
 
@@ -124,7 +124,7 @@ define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = icmp ult i32 %4, 2
   ret i1 %5
 }
@@ -135,10 +135,9 @@ entry:
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = xor i64 %2, -1
-  %4 = add nsw i64 %0, %3
-  %5 = icmp ult i64 %4, 56
-  ret i1 %5
+  %3 = sub i64 %2, %0
+  %4 = icmp ugt i64 %3, -57
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

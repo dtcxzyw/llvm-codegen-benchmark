@@ -6,10 +6,9 @@
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = and i64 %0, 281474976710655
-  %4 = or i64 %3, %2
-  %5 = and i64 %4, 17179869183
-  ret i64 %5
+  %.masked = and i64 %0, 17179869183
+  %3 = or i64 %.masked, %2
+  ret i64 %3
 }
 
 ; 9 occurrences:
@@ -26,10 +25,9 @@ entry:
 define i16 @func0000000000000001(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = and i16 %0, -2
+  %3 = and i16 %0, 254
   %4 = or disjoint i16 %3, %2
-  %5 = and i16 %4, 255
-  ret i16 %5
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

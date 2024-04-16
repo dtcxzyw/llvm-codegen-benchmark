@@ -71,7 +71,7 @@ entry:
   %2 = lshr i128 %1, 64
   %3 = xor i128 %2, %1
   %4 = trunc i128 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = lshr i64 %5, 37
   ret i64 %6
 }

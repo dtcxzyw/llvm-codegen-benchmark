@@ -9,7 +9,7 @@ entry:
   %3 = zext i16 %0 to i32
   %4 = add nsw i32 %3, -48
   %5 = icmp ult i32 %4, 10
-  %6 = and i1 %2, %5
+  %6 = and i1 %5, %2
   %7 = select i1 %6, i16 %0, i16 %1
   ret i16 %7
 }

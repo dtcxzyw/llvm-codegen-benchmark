@@ -46,8 +46,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = ashr exact i64 %0, 4
-  %6 = sub nsw i64 %5, %4
-  %7 = add nsw i64 %6, -1
+  %6 = xor i64 %4, -1
+  %7 = add nsw i64 %5, %6
   ret i64 %7
 }
 
@@ -59,8 +59,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = ashr i64 %0, 32
-  %6 = sub nsw i64 %5, %4
-  %7 = add nsw i64 %6, -1
+  %6 = xor i64 %4, -1
+  %7 = add nsw i64 %5, %6
   ret i64 %7
 }
 

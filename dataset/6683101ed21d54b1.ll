@@ -10,7 +10,7 @@ define i32 @func0000000000000063(i64 %0) #0 {
 entry:
   %1 = mul nuw nsw i64 %0, 4295032833
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = add nuw nsw i32 %3, 128
   ret i32 %4
 }
@@ -111,7 +111,7 @@ define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = mul nuw nsw i64 %0, 1374389535
   %2 = lshr i64 %1, 37
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -223,7 +223,7 @@ define i64 @func0000000000000041(i128 %0) #0 {
 entry:
   %1 = mul nuw i128 %0, 9444732965739290428
   %2 = lshr i128 %1, 73
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw nsw i128 %2 to i64
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -249,7 +249,7 @@ define i64 @func0000000000000042(i128 %0) #0 {
 entry:
   %1 = mul nuw i128 %0, 17014118346046923173
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = add nuw i64 %3, 2
   ret i64 %4
 }
@@ -262,7 +262,7 @@ define i64 @func0000000000000062(i128 %0) #0 {
 entry:
   %1 = mul nuw nsw i128 %0, 17014118346046923173
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = add nuw i64 %3, 2
   ret i64 %4
 }
@@ -306,7 +306,7 @@ define i8 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = mul i32 %0, -1397199511
   %2 = lshr i32 %1, 28
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   %4 = add nuw nsw i8 %3, 4
   ret i8 %4
 }

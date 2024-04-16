@@ -1,6 +1,6 @@
 func000000000000002f:                   # @func000000000000002f
 	srli	a2, a2, 32
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	li	a2, 1

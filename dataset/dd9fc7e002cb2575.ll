@@ -53,7 +53,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, 2
   %5 = call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = sub nsw i64 %6, %4
   ret i64 %7
 }

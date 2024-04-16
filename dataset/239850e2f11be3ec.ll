@@ -33,8 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 3, i32 -9
-  %3 = add nsw i32 %2, %0
+  %2 = select i1 %1, i32 3, i32 247
+  %3 = add i32 %2, %0
   %4 = and i32 %3, 255
   %5 = add nsw i32 %4, -1
   ret i32 %5
@@ -46,7 +46,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 24
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = and i32 %3, -8
   %5 = add i32 %4, -4
   ret i32 %5
@@ -58,8 +58,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 9, i32 4
-  %3 = add nsw i32 %0, %2
+  %2 = select i1 %1, i32 1, i32 4
+  %3 = add i32 %2, %0
   %4 = and i32 %3, 7
   %5 = add nuw nsw i32 %4, 4
   ret i32 %5

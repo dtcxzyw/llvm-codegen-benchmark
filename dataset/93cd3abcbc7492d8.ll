@@ -6,9 +6,9 @@
 define i32 @func000000000000003c(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 8, %0
-  %2 = icmp ne i32 %0, 0
-  %3 = select i1 %2, i32 %1, i32 0
-  ret i32 %3
+  %.not = icmp eq i32 %0, 0
+  %2 = select i1 %.not, i32 0, i32 %1
+  ret i32 %2
 }
 
 ; 11 occurrences:

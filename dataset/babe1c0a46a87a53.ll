@@ -17,10 +17,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %0, -1
-  %4 = sub i64 %3, %2
-  %5 = icmp ugt i64 %4, 1152921504606846975
-  ret i1 %5
+  %3 = sub i64 %2, %0
+  %4 = icmp ult i64 %3, -1152921504606846976
+  ret i1 %4
 }
 
 ; 3 occurrences:

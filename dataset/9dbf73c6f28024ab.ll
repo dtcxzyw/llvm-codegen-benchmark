@@ -52,9 +52,9 @@ entry:
 define float @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
-  %4 = fcmp ule float %3, %0
-  %5 = select i1 %4, float %0, float %3
-  ret float %5
+  %.inv = fcmp ogt float %3, %0
+  %4 = select i1 %.inv, float %3, float %0
+  ret float %4
 }
 
 attributes #0 = { nounwind }

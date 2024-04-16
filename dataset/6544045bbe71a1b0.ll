@@ -8,10 +8,8 @@
 define i16 @func0000000000000003(i16 %0) #0 {
 entry:
   %1 = freeze i16 %0
-  %2 = lshr i16 %1, 6
-  %3 = and i16 %2, 7
-  %4 = shl nuw nsw i16 %3, 6
-  ret i16 %4
+  %2 = and i16 %1, 448
+  ret i16 %2
 }
 
 attributes #0 = { nounwind }

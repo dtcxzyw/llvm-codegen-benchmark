@@ -6,8 +6,8 @@
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
-  %5 = select i1 %0, i32 %1, i32 %4
+  %4 = select i1 %0, i32 0, i32 %3
+  %5 = add nuw nsw i32 %4, %1
   ret i32 %5
 }
 
@@ -19,8 +19,8 @@ entry:
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = add i64 %3, %1
-  %5 = select i1 %0, i64 %1, i64 %4
+  %4 = select i1 %0, i64 0, i64 %3
+  %5 = add i64 %4, %1
   ret i64 %5
 }
 
@@ -33,8 +33,8 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add nsw i32 %3, %1
-  %5 = select i1 %0, i32 %1, i32 %4
+  %4 = select i1 %0, i32 0, i32 %3
+  %5 = add nsw i32 %4, %1
   ret i32 %5
 }
 

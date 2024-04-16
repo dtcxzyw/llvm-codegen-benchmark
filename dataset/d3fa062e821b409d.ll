@@ -13,7 +13,7 @@ entry:
   %3 = add i64 %2, -1
   %4 = lshr i64 %3, %1
   %5 = add nuw i64 %4, 1
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 

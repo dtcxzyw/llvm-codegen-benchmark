@@ -84,11 +84,10 @@
 define i1 @func000000000000000c(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = trunc nuw i128 %2 to i64
+  %4 = sub i64 0, %0
+  %5 = icmp ne i64 %3, %4
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -106,10 +105,9 @@ define i1 @func000000000000004c(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %4 = sub i64 0, %0
+  %5 = icmp ne i64 %3, %4
+  ret i1 %5
 }
 
 ; 18 occurrences:
@@ -135,11 +133,10 @@ entry:
 define i1 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = trunc nuw i128 %2 to i64
+  %4 = sub i64 0, %0
+  %5 = icmp eq i64 %3, %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -149,10 +146,9 @@ define i1 @func0000000000000041(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = sub i64 0, %0
+  %5 = icmp eq i64 %3, %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

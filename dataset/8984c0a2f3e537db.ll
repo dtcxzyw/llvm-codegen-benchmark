@@ -23,7 +23,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 65536, %0
   %4 = call i64 @llvm.umin.i64(i64 %3, i64 %2)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 0, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %2)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub i64 16, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %2)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

@@ -3547,8 +3547,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -49
-  %2 = or i32 %1, 1
+  %1 = and i32 %0, -50
+  %2 = or disjoint i32 %1, 1
   ret i32 %2
 }
 

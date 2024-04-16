@@ -6,8 +6,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = icmp slt i32 %3, 1
+  %3 = icmp slt i32 %2, 1
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
   %5 = and i32 %0, 1
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %4

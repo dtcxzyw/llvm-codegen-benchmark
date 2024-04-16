@@ -17,8 +17,9 @@ func0000000000000007:                   # @func0000000000000007
 	ori	a0, a0, 64
 	ret
 func0000000000000023:                   # @func0000000000000023
-	slli	a2, a2, 1
-	srli	a2, a2, 1
+	lui	a3, 1046528
+	srli	a3, a3, 1
+	and	a2, a2, a3
 	lui	a3, 4091
 	slli	a3, a3, 10
 	addi	a3, a3, -1

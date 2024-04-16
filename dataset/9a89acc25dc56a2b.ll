@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sub nsw i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   %7 = trunc i32 %6 to i16

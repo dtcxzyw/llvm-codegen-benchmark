@@ -41,16 +41,16 @@ func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 20
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addiw	a0, a0, 1
-	sltiu	a0, a0, 51
-	addi	a0, a0, -1
+	addiw	a0, a0, -50
+	sltiu	a0, a0, -51
+	negw	a0, a0
 	andi	a0, a0, 15
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a0, -5
-	li	a2, 3
+	addi	a1, a0, -9
+	li	a2, -4
 	li	a0, 9
-	bltu	a2, a1, .LBB7_2
+	bltu	a1, a2, .LBB7_2
 	li	a0, 5
 .LBB7_2:                                # %entry
 	ret

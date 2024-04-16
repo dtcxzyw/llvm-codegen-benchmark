@@ -9,7 +9,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i8 %1, 1
   %5 = xor i1 %4, %3
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = icmp eq i8 %2, 1
   %4 = icmp slt i64 %1, 0
   %5 = xor i1 %4, %3
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = icmp eq i8 %2, 1
   %4 = icmp ne i64 %1, 0
   %5 = xor i1 %4, %3
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 

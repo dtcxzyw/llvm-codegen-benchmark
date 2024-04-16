@@ -7,6 +7,6 @@ func0000000000000054:                   # @func0000000000000054
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	maxu	a0, a1, a0
-	add	a0, a0, a1
-	sltu	a0, a0, a1
+	not	a1, a1
+	sltu	a0, a1, a0
 	ret

@@ -94,10 +94,10 @@ define i64 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 59
-  %5 = or disjoint i64 %4, %1
-  %6 = and i64 %5, -4160749569
-  %7 = or disjoint i64 %6, %0
-  ret i64 %7
+  %.masked = and i64 %1, -4160749569
+  %5 = or i64 %4, %.masked
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
 }
 
 ; 6 occurrences:
@@ -112,9 +112,9 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = and i32 %5, 269488144
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -139,10 +139,10 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or i32 %4, %1
-  %6 = and i32 %5, 2130702336
-  %7 = or i32 %6, %0
-  ret i32 %7
+  %.masked = and i32 %1, 2130702336
+  %5 = or i32 %4, %.masked
+  %6 = or i32 %5, %0
+  ret i32 %6
 }
 
 ; 2 occurrences:
@@ -153,9 +153,9 @@ define i32 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 23
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = and i32 %5, 14651391
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -166,10 +166,10 @@ define i32 @func000000000000001e(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
-  %6 = and i32 %5, 1065320192
-  %7 = or i32 %0, %6
-  ret i32 %7
+  %.masked = and i32 %1, 1065320192
+  %5 = or i32 %4, %.masked
+  %6 = or i32 %5, %0
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

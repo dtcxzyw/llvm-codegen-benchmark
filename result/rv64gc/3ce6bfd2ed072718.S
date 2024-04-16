@@ -7,11 +7,11 @@ func0000000000000314:                   # @func0000000000000314
 	ret
 func000000000000005c:                   # @func000000000000005c
 	sext.w	a0, a0
+	snez	a0, a0
 	sext.w	a1, a1
 	lui	a2, 524512
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	ret

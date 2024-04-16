@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = tail call i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 16)
-  %4 = xor i32 %1, %3
+  %3 = lshr i32 %2, 16
+  %4 = xor i32 %3, %1
   %5 = xor i32 %4, %0
   %6 = and i32 %5, 255
   %7 = zext nneg i32 %6 to i64

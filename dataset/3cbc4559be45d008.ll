@@ -8,11 +8,10 @@
 define i8 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = and i64 %2, 255
-  %4 = add nuw nsw i64 %0, %3
-  %5 = trunc i64 %4 to i8
-  %6 = and i8 %5, 7
-  ret i8 %6
+  %3 = add i64 %2, %0
+  %4 = trunc i64 %3 to i8
+  %5 = and i8 %4, 7
+  ret i8 %5
 }
 
 ; 7 occurrences:
@@ -27,11 +26,10 @@ entry:
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = and i64 %2, 255
-  %4 = add i64 %0, %3
-  %5 = trunc i64 %4 to i8
-  %6 = and i8 %5, 7
-  ret i8 %6
+  %3 = add i64 %2, %0
+  %4 = trunc i64 %3 to i8
+  %5 = and i8 %4, 7
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

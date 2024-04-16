@@ -19,7 +19,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 9007199254740991
   %5 = select i1 %4, i64 4503599627370496, i64 0
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

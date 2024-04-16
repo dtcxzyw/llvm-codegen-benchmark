@@ -7,8 +7,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = add i64 %5, -16
-  %7 = trunc i64 %6 to i32
+  %6 = trunc i64 %5 to i32
+  %7 = add i32 %6, -16
   ret i32 %7
 }
 
@@ -20,8 +20,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = add i64 %5, -32
-  %7 = trunc i64 %6 to i32
+  %6 = trunc i64 %5 to i32
+  %7 = add i32 %6, -32
   ret i32 %7
 }
 
@@ -33,8 +33,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = add nsw i64 %5, -66
-  %7 = trunc i64 %6 to i32
+  %6 = trunc i64 %5 to i32
+  %7 = add i32 %6, -66
   ret i32 %7
 }
 

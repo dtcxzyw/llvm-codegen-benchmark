@@ -7,7 +7,7 @@
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = tail call double @llvm.fmuladd.f64(double %1, double 0x3EB0C6F7A0000000, double 1.000000e+00)
-  %3 = fcmp ole double %0, %2
+  %3 = fcmp oge double %2, %0
   ret i1 %3
 }
 
@@ -20,7 +20,7 @@ declare double @llvm.fmuladd.f64(double, double, double) #1
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = tail call float @llvm.fmuladd.f32(float %1, float 5.000000e-01, float -1.000000e+00)
-  %3 = fcmp olt float %0, %2
+  %3 = fcmp ogt float %2, %0
   ret i1 %3
 }
 

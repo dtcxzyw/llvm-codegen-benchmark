@@ -11,7 +11,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 12
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = lshr i64 %6, 6
   ret i64 %7
 }

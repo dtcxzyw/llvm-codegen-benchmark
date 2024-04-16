@@ -8,9 +8,8 @@ define i8 @func0000000000000005(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 31
-  %4 = sub nsw i8 %3, %0
-  %5 = sub nsw i8 0, %4
-  ret i8 %5
+  %.neg = sub nsw i8 %0, %3
+  ret i8 %.neg
 }
 
 attributes #0 = { nounwind }

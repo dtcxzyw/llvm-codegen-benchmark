@@ -12,12 +12,12 @@ func0000000000000028:                   # @func0000000000000028
 func000000000000002b:                   # @func000000000000002b
 	subw	a1, a1, a2
 	addi	a1, a1, 1
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000029:                   # @func0000000000000029
 	subw	a1, a1, a2
 	addi	a1, a1, 1
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000020:                   # @func0000000000000020
 	subw	a1, a1, a2

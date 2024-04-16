@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fsub.d	fa4, fa1, fa2
-	fadd.d	fa4, fa0, fa4
+	fadd.d	fa4, fa4, fa0
 	flt.d	a0, fa4, fa5
 	bnez	a0, .LBB0_2
 	fmv.d	fa5, fa4
@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fsub.s	fa5, fa1, fa2
-	fadd.s	fa5, fa0, fa5
+	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa0, zero
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB1_2

@@ -11,8 +11,8 @@ define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %5 = trunc nuw i64 %4 to i32
+  %6 = add nsw i32 %5, %0
   %7 = icmp slt i32 %6, -3
   ret i1 %7
 }
@@ -181,8 +181,8 @@ define i1 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %5 = trunc nuw i64 %4 to i32
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
 }
@@ -203,7 +203,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 32
   %5 = trunc nuw i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
 }
@@ -216,7 +216,7 @@ entry:
   %3 = add i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp sgt i64 %6, -1
   ret i1 %7
 }

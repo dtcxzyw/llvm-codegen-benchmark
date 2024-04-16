@@ -9,7 +9,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = add nsw i16 %2, -1
   %4 = zext i16 %3 to i48
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %2 = trunc i48 %1 to i16
   %3 = add i16 %2, 1
   %4 = zext i16 %3 to i48
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 

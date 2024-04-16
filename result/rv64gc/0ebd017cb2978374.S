@@ -5,6 +5,7 @@ func0000000000000501:                   # @func0000000000000501
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	srli	a1, a1, 28
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

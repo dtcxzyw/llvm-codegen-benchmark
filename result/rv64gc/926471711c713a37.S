@@ -29,9 +29,9 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000003c:                   # @func000000000000003c
 	andi	a2, a0, 255
-	li	a0, 296
-	bnez	a2, .LBB4_2
 	li	a0, 288
+	beqz	a2, .LBB4_2
+	li	a0, 296
 .LBB4_2:                                # %entry
 	add	a0, a0, a1
 	ret
@@ -66,15 +66,13 @@ func0000000000000011:                   # @func0000000000000011
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	xori	a0, a0, 1
-	add	a0, a0, a1
-	addi	a0, a0, 3
+	srliw	a0, a0, 31
+	sub	a0, a1, a0
+	addi	a0, a0, 4
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
-	snez	a0, a0
-	add	a0, a0, a1
-	addi	a0, a0, 67
+	seqz	a0, a0
+	sub	a1, a1, a0
+	addi	a0, a1, 68
 	ret

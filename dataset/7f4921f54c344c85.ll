@@ -198,9 +198,8 @@ entry:
   %2 = add i8 %1, 1
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1590045", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1590045", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 57 occurrences:
@@ -267,9 +266,8 @@ entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1591647", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1591647", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -326,9 +324,8 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 511
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.tg3_tx_ring_info.2011777, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.tg3_tx_ring_info.2011777, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -339,9 +336,8 @@ entry:
   %2 = add i32 %1, 1
   %3 = and i32 %2, 511
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.tg3_tx_ring_info.2011777, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.tg3_tx_ring_info.2011777, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:

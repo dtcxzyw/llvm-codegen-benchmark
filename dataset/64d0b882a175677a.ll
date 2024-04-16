@@ -16,11 +16,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 152
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, -1
-  %6 = getelementptr %"struct.std::pair.295.1567576", ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr %"struct.std::pair.295.1567576", ptr %3, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 -152
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -30,9 +29,9 @@ entry:
 define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 160
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, -32
-  %6 = getelementptr inbounds ptr, ptr %0, i64 %5
+  %4 = getelementptr ptr, ptr %0, i64 %3
+  %5 = getelementptr ptr, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -256
   ret ptr %6
 }
 
@@ -42,9 +41,9 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr double, ptr %0, i64 %5
+  %4 = getelementptr double, ptr %0, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -54,9 +53,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  %4 = getelementptr double, ptr %0, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -65,11 +64,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %1, %3
-  %5 = add nsw i64 %4, -1
-  %6 = getelementptr inbounds %struct.TestObject.2279313, ptr %0, i64 %5
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr %struct.TestObject.2279313, ptr %3, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 -24
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -79,9 +77,9 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 19
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, -1
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %4 = getelementptr i64, ptr %0, i64 %3
+  %5 = getelementptr i64, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
 

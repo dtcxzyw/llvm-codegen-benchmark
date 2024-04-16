@@ -54,9 +54,8 @@ func0000000000000008:                   # @func0000000000000008
 	blt	a0, a1, .LBB6_2
 	mv	a0, a1
 .LBB6_2:                                # %entry
-	addiw	a0, a0, 16
-	sltiu	a0, a0, 145
-	xori	a0, a0, 1
+	addiw	a0, a0, -129
+	sltiu	a0, a0, -145
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1

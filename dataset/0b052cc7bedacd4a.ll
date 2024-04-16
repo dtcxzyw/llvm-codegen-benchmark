@@ -5,9 +5,9 @@
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = shl nuw i32 1, %2
-  %4 = add nsw i32 %3, -1
-  ret i32 %4
+  %notmask = shl nsw i32 -1, %2
+  %3 = xor i32 %notmask, -1
+  ret i32 %3
 }
 
 ; 1 occurrences:

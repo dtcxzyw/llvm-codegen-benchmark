@@ -12,7 +12,7 @@ define i1 @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = sitofp i64 %2 to double
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   ret i1 %4
 }
 

@@ -169,10 +169,10 @@
 define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw i64 1, %2
-  %4 = mul i64 %0, 10
-  %5 = icmp ult i64 %4, %3
-  ret i1 %5
+  %3 = mul i64 %0, 10
+  %.highbits = lshr i64 %3, %2
+  %4 = icmp eq i64 %.highbits, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

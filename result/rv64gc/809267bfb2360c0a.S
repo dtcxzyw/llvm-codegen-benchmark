@@ -76,16 +76,17 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a1
-	li	a1, 40
-	bnez	a2, .LBB10_2
 	li	a1, 24
+	beqz	a2, .LBB10_2
+	li	a1, 40
 .LBB10_2:                               # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 255
-	snez	a1, a1
-	not	a1, a1
+	seqz	a1, a1
+	li	a2, -2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029

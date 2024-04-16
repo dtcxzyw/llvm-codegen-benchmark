@@ -74,7 +74,7 @@ func0000000000000044:                   # @func0000000000000044
 	addi	a2, a2, 1
 	seqz	a4, a2
 	add	a3, a3, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	sltu	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2

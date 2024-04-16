@@ -184,7 +184,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
   %5 = select i1 %4, i32 %3, i32 16
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

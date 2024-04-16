@@ -7,20 +7,20 @@ func0000000000000040:                   # @func0000000000000040
 	subw	a0, a1, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
-	li	a1, 48
-	subw	a0, a1, a0
+	li	a2, -10
+	mul	a1, a1, a2
+	subw	a1, a1, a0
+	addiw	a0, a1, 48
 	ret
 func0000000000000010:                   # @func0000000000000010
-	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
-	li	a1, 48
-	subw	a0, a1, a0
+	li	a2, -10
+	mul	a1, a1, a2
+	subw	a1, a1, a0
+	addiw	a0, a1, 48
 	ret
 func0000000000000055:                   # @func0000000000000055
-	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
-	li	a1, 48
-	subw	a0, a1, a0
+	li	a2, -10
+	mul	a1, a1, a2
+	subw	a1, a1, a0
+	addiw	a0, a1, 48
 	ret

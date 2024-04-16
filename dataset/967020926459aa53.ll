@@ -7,7 +7,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
   %4 = xor i64 %3, -1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = and i64 %3, %1
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -21,8 +21,8 @@ define i16 @func0000000000000000(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %1, %4
-  %6 = and i16 %0, %3
+  %5 = and i16 %4, %1
+  %6 = and i16 %3, %0
   %7 = or i16 %6, %5
   ret i16 %7
 }

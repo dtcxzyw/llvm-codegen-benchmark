@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
-  %2 = xor i16 %1, 255
+  %2 = xor i16 %1, -1
   %3 = zext i16 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = and i32 %4, 85
   %6 = icmp eq i32 %5, 0
   ret i1 %6

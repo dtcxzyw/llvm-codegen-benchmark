@@ -25,7 +25,7 @@ define i64 @func000000000000001d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = tail call i32 @llvm.bswap.i32(i32 %4)
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

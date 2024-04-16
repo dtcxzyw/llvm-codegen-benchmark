@@ -34,9 +34,8 @@ define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr inbounds [8 x %struct.ge_cached.1587629], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 40
-  ret ptr %5
+  %4 = getelementptr inbounds [8 x %struct.ge_cached.1587629], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:

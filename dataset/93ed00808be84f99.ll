@@ -17,7 +17,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr [0 x i8], ptr %4, i64 0, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 6532420
   %5 = getelementptr inbounds [305000 x %struct.deflate_optimum_node.1686073], ptr %4, i64 0, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = getelementptr inbounds [1 x i8], ptr %4, i64 0, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = getelementptr inbounds [1 x i8], ptr %4, i64 0, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -121,7 +121,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = getelementptr inbounds [1 x i8], ptr %4, i64 0, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -140,7 +140,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 48
   %5 = getelementptr [4 x %struct.list_head.1994794], ptr %4, i64 0, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -157,7 +157,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 48
   %5 = getelementptr [4 x %struct.list_head.1994794], ptr %4, i64 0, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -170,7 +170,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -272
   %5 = getelementptr [17 x %struct.bio_vec.2005756], ptr %4, i64 0, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -182,7 +182,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr [0 x %struct.WordEntry.2122380], ptr %4, i64 0, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -195,7 +195,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds [0 x %"struct.nix::Attr.2152165"], ptr %4, i64 0, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -207,7 +207,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds [1 x %"struct.OT::IntType.2274064"], ptr %4, i64 0, i64 %3
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -219,7 +219,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds [1 x %"struct.OT::IntType.2274064"], ptr %4, i64 0, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

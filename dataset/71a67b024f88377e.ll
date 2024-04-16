@@ -9,7 +9,7 @@ define i1 @func0000000000000004(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sitofp i32 %3 to double
-  %5 = fcmp ogt double %0, %4
+  %5 = fcmp olt double %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000005(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ugt float %0, %4
+  %5 = fcmp ult float %4, %0
   ret i1 %5
 }
 

@@ -9,7 +9,7 @@
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = tail call i64 @llvm.umax.i64(i64 %0, i64 %4)
   %6 = add i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 9223372036854775807)

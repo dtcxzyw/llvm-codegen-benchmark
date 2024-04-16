@@ -198,10 +198,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl nuw i128 %1, 64
-  %3 = sub nuw i128 %2, %0
-  %4 = trunc i128 %3 to i64
-  ret i64 %4
+  %2 = trunc i128 %0 to i64
+  %3 = sub i64 0, %2
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -212,10 +211,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl nuw i128 %1, 64
-  %3 = sub i128 %2, %0
-  %4 = trunc i128 %3 to i64
-  ret i64 %4
+  %2 = trunc i128 %0 to i64
+  %3 = sub i64 0, %2
+  ret i64 %3
 }
 
 ; 1 occurrences:

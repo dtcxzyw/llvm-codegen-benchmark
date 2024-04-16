@@ -172,7 +172,7 @@
 define i32 @func0000000000000003(i16 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, -65281
   %5 = zext nneg i16 %0 to i32
   %6 = or disjoint i32 %4, %5

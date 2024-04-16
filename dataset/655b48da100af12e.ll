@@ -22,7 +22,7 @@ entry:
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = zext nneg i32 %3 to i64
   %5 = mul nsw i64 %4, %1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -54,7 +54,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %1, %4
+  %5 = mul nuw nsw i64 %4, %1
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -66,7 +66,7 @@ define i64 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw i64 %1, %4
+  %5 = mul nuw i64 %4, %1
   %6 = add nuw i64 %5, %0
   ret i64 %6
 }

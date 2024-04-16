@@ -34,9 +34,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, -1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, 1
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -50,8 +49,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, -1
-  %6 = icmp ugt i32 %5, 1
+  %5 = add i32 %4, -3
+  %6 = icmp ult i32 %5, -2
   ret i1 %6
 }
 
@@ -104,9 +103,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %4, -1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, 1
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

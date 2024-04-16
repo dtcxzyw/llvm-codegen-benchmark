@@ -39,7 +39,7 @@ entry:
   %4 = lshr i32 %1, 17
   %5 = or disjoint i32 %4, %3
   %6 = mul i32 %5, 461845907
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = lshr i32 %1, 17
   %5 = or disjoint i32 %4, %3
   %6 = mul i32 %5, 461845907
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

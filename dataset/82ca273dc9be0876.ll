@@ -6,7 +6,7 @@
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -52,7 +52,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -64,7 +64,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -80,7 +80,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -92,7 +92,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }

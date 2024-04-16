@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 4
-  %3 = add nsw i64 %2, -2
-  %4 = icmp eq i64 %3, 0
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
+  %.mask = and i64 %1, -16
+  %2 = icmp eq i64 %.mask, 32
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

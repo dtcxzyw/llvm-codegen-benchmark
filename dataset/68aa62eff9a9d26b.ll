@@ -89,10 +89,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 %1, %3
-  %5 = getelementptr inbounds %"struct.rocksdb::TableReader::Anchor.1572915", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sdiv exact i64 %2, -40
+  %3 = getelementptr %"struct.rocksdb::TableReader::Anchor.1572915", ptr %0, i64 %.neg
+  %4 = getelementptr %"struct.rocksdb::TableReader::Anchor.1572915", ptr %3, i64 %1
+  ret ptr %4
 }
 
 ; 28 occurrences:
@@ -127,10 +127,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sdiv exact i64 %2, -40
+  %3 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %0, i64 %.neg
+  %4 = getelementptr %"struct.mold::elf::DynamicPattern.1594115", ptr %3, i64 %1
+  ret ptr %4
 }
 
 ; 116 occurrences:
@@ -253,10 +253,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 12
-  %4 = sub i64 %1, %3
-  %5 = getelementptr inbounds %"class.irr::core::vector3d.1646455", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sdiv exact i64 %2, -12
+  %3 = getelementptr %"class.irr::core::vector3d.1646455", ptr %0, i64 %.neg
+  %4 = getelementptr %"class.irr::core::vector3d.1646455", ptr %3, i64 %1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

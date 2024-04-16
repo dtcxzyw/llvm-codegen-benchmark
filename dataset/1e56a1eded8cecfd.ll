@@ -10,7 +10,7 @@ define i64 @func0000000000000185(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = shl nsw i32 %4, 9
   %6 = sext i32 %5 to i64
   ret i64 %6

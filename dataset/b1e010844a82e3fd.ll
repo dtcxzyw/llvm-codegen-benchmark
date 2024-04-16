@@ -7,8 +7,8 @@
 define double @func0000000000000004(float %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 1.000000e-03
-  %3 = select i1 %2, float %0, float 1.000000e+00
-  %4 = fpext float %3 to double
+  %3 = fpext float %0 to double
+  %4 = select i1 %2, double %3, double 1.000000e+00
   ret double %4
 }
 

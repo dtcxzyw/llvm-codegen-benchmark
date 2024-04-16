@@ -264,7 +264,7 @@
 define i1 @func0000000000000061(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = lshr i32 %4, %0
   %6 = and i32 %5, 2147481600
   %7 = icmp eq i32 %6, 55296
@@ -277,9 +277,9 @@ entry:
 define i1 @func0000000000000021(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %1, %3
-  %5 = lshr i128 %4, %0
-  %6 = and i128 %5, 1
+  %4 = or disjoint i128 %3, %1
+  %5 = shl nuw i128 1, %0
+  %6 = and i128 %4, %5
   %7 = icmp eq i128 %6, 0
   ret i1 %7
 }

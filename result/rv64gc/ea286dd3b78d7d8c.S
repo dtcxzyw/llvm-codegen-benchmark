@@ -5,8 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a3, a3, 1939
 	slli	a3, a3, 4
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000002a1:                   # @func00000000000002a1
@@ -14,7 +15,7 @@ func00000000000002a1:                   # @func00000000000002a1
 	srli	a3, a2, 32
 	add	a1, a1, a2
 	sub	a1, a1, a3
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000351:                   # @func0000000000000351
@@ -31,8 +32,8 @@ func00000000000003f1:                   # @func00000000000003f1
 	slli	a3, a3, 33
 	slli	a2, a2, 32
 	mulhu	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000003f8:                   # @func00000000000003f8

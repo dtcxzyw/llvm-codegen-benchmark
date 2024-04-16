@@ -7,11 +7,13 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sext.w	a0, a0
-	li	a1, 3
-	bge	a1, a0, .LBB1_2
+	sext.w	a1, a0
+	li	a2, 3
+	bge	a2, a1, .LBB1_2
 	li	a0, 1
 .LBB1_2:                                # %entry
+	slli	a0, a0, 32
+	srli	a0, a0, 32
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 48
@@ -28,16 +30,17 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 255
-	li	a1, 63
-	bgeu	a1, a0, .LBB4_2
+	li	a1, 64
+	bltu	a0, a1, .LBB4_2
 	li	a0, 64
 .LBB4_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a0, a0, 255
-	sltiu	a1, a0, 8
-	neg	a1, a1
+	andi	a1, a0, 255
+	sltiu	a1, a1, 8
+	negw	a1, a1
 	and	a0, a0, a1
+	andi	a0, a0, 255
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a0, 56

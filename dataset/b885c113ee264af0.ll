@@ -10,7 +10,7 @@ entry:
   %2 = and i8 %1, -116
   %3 = icmp eq i8 %2, -120
   %4 = select i1 %3, i8 7, i8 -121
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   %6 = or disjoint i8 %5, 64
   ret i8 %6
 }

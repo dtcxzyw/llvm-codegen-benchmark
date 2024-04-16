@@ -1,5 +1,7 @@
 func0000000000000054:                   # @func0000000000000054
-	addi	a2, a2, -1
+	li	a3, -1
+	srli	a3, a3, 32
+	add	a2, a2, a3
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret

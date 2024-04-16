@@ -6,7 +6,7 @@ define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, -1
-  %4 = icmp ult i32 %0, %2
+  %4 = icmp ugt i32 %2, %0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -19,7 +19,7 @@ define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
-  %4 = icmp eq i32 %0, %2
+  %4 = icmp eq i32 %2, %0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -40,7 +40,7 @@ define i1 @func0000000000000076(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 0
-  %4 = icmp sle i32 %0, %2
+  %4 = icmp sge i32 %2, %0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -56,7 +56,7 @@ define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 0
-  %4 = icmp slt i32 %0, %2
+  %4 = icmp sgt i32 %2, %0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -68,7 +68,7 @@ define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 0
-  %4 = icmp ult i32 %0, %2
+  %4 = icmp ugt i32 %2, %0
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

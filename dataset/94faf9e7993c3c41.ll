@@ -31,10 +31,9 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 72
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 72
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -45,10 +44,9 @@ entry:
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 7
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 7
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -57,10 +55,9 @@ entry:
 define i1 @func0000000000000004(i16 %0) #0 {
 entry:
   %1 = freeze i16 %0
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 63
-  %4 = icmp ult i32 %3, 48
-  ret i1 %4
+  %2 = and i16 %1, 48
+  %3 = icmp ne i16 %2, 48
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

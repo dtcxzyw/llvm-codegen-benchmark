@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 32752
-  %3 = trunc i16 %2 to i8
+  %2 = trunc i16 %1 to i8
+  %3 = and i8 %2, -16
   %4 = and i8 %0, 15
   %5 = or disjoint i8 %4, %3
   ret i8 %5
@@ -21,8 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 8589934584
-  %3 = trunc i64 %2 to i16
+  %2 = trunc i64 %1 to i16
+  %3 = and i16 %2, -8
   %4 = and i16 %0, -8192
   %5 = or i16 %4, %3
   ret i16 %5

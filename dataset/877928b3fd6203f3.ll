@@ -10,7 +10,7 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 256
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 7
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

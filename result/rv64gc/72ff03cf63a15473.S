@@ -8,8 +8,8 @@ func0000000000000050:                   # @func0000000000000050
 func0000000000000071:                   # @func0000000000000071
 	sext.w	a3, a2
 	negw	a4, a0
-	bne	a3, a4, .LBB1_2
-	mv	a1, a2
+	beq	a4, a3, .LBB1_2
+	mv	a2, a1
 .LBB1_2:                                # %entry
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	ret

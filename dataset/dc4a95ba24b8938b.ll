@@ -49,7 +49,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 255
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -68,7 +68,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 15
   %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -81,7 +81,7 @@ entry:
   %2 = lshr exact i64 %1, 12
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

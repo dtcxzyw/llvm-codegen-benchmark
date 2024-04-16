@@ -300,10 +300,9 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = lshr i32 %2, 31
-  %4 = add nsw i32 %3, -1
-  %5 = and i32 %4, -131
-  ret i32 %5
+  %.inv = icmp slt i32 %2, 0
+  %3 = select i1 %.inv, i32 0, i32 -131
+  ret i32 %3
 }
 
 ; 29 occurrences:

@@ -100,11 +100,10 @@
 define i64 @func0000000000000020(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %0, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = lshr i64 %5, 32
-  ret i64 %6
+  %3 = mul nuw i128 %2, %0
+  %sum.shift = lshr i128 %3, 96
+  %4 = trunc nuw nsw i128 %sum.shift to i64
+  ret i64 %4
 }
 
 ; 7 occurrences:
@@ -119,11 +118,10 @@ entry:
 define i64 @func0000000000000024(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = mul nuw i128 %0, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc nuw i128 %4 to i64
-  %6 = lshr i64 %5, 32
-  ret i64 %6
+  %3 = mul nuw i128 %2, %0
+  %sum.shift = lshr i128 %3, 96
+  %4 = trunc nuw nsw i128 %sum.shift to i64
+  ret i64 %4
 }
 
 ; 5 occurrences:
@@ -136,11 +134,11 @@ entry:
 define i32 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %0, %2
-  %4 = lshr exact i64 %3, 16
-  %5 = trunc i64 %4 to i32
-  %6 = lshr i32 %5, 15
-  ret i32 %6
+  %3 = mul nuw i64 %2, %0
+  %sum.shift = lshr i64 %3, 31
+  %4 = trunc i64 %sum.shift to i32
+  %5 = and i32 %4, 131071
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

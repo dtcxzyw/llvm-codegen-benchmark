@@ -10,7 +10,7 @@ entry:
   %2 = and i32 %1, 768
   %3 = icmp eq i32 %2, 768
   %4 = select i1 %3, i16 30, i16 24
-  %5 = add nuw nsw i16 %0, %4
+  %5 = add nuw nsw i16 %4, %0
   %6 = add nuw nsw i16 %5, 3
   ret i16 %6
 }
@@ -23,7 +23,7 @@ entry:
   %2 = and i32 %1, 2048
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 4, i32 8
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = add i32 %5, 2
   ret i32 %6
 }
@@ -71,7 +71,7 @@ entry:
   %2 = and i8 %1, 8
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 9, i32 4
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = add nsw i32 %5, -8
   ret i32 %6
 }

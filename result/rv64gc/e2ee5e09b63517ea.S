@@ -13,10 +13,9 @@ func000000000000001b:                   # @func000000000000001b
 	addi	a2, a2, %lo(.LCPI0_1)
 	add	a0, a0, a2
 	lbu	a0, 0(a0)
-	slli	a1, a1, 6
+	slli	a1, a1, 39
+	srli	a1, a1, 33
 	or	a0, a0, a1
-	slli	a0, a0, 33
-	srli	a0, a0, 33
 	ret
 .LCPI1_0:
 	.quad	151050438420815295              # 0x218a392cd3d5dbf
@@ -33,10 +32,9 @@ func0000000000000009:                   # @func0000000000000009
 	addi	a2, a2, %lo(.LCPI1_1)
 	add	a1, a1, a2
 	lbu	a1, 0(a1)
-	slli	a0, a0, 6
-	or	a0, a0, a1
-	slli	a0, a0, 32
+	slli	a0, a0, 38
 	srli	a0, a0, 32
+	or	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	151050438420815295              # 0x218a392cd3d5dbf
@@ -53,10 +51,9 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a2, a2, %lo(.LCPI2_1)
 	add	a0, a0, a2
 	lbu	a0, 0(a0)
-	slli	a1, a1, 6
+	slli	a1, a1, 38
+	srli	a1, a1, 32
 	or	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
 	ret
 .LCPI3_0:
 	.quad	151050438420815295              # 0x218a392cd3d5dbf
@@ -73,8 +70,7 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a2, a2, %lo(.LCPI3_1)
 	add	a0, a0, a2
 	lbu	a0, 0(a0)
-	slli	a1, a1, 6
+	slli	a1, a1, 38
+	srli	a1, a1, 32
 	or	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
 	ret

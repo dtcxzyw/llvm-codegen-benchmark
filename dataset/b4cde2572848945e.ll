@@ -11,7 +11,7 @@
 define ptr @func0000000000000023(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %1
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -24,7 +24,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %1
   %6 = getelementptr inbounds %class.aiVector3t.1748650, ptr %0, i64 %5
   ret ptr %6
@@ -36,7 +36,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %1
   %6 = getelementptr %class.aiVector3t.1752777, ptr %0, i64 %5
   ret ptr %6

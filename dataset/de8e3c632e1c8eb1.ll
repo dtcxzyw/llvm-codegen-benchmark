@@ -186,7 +186,7 @@ entry:
 define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 10
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sdiv exact i64 %0, 48
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 10
@@ -213,7 +213,7 @@ entry:
 define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 6
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = sdiv exact i64 %1, 80
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 100

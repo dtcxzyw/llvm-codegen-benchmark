@@ -8,8 +8,8 @@
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 1024)
-  %3 = select i1 %0, i32 1024, i32 %2
-  %4 = add nuw nsw i32 %3, 7
+  %3 = add nuw nsw i32 %2, 7
+  %4 = select i1 %0, i32 1031, i32 %3
   ret i32 %4
 }
 
@@ -23,8 +23,8 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 9)
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = add nsw i32 %3, -6
+  %3 = add nsw i32 %2, -6
+  %4 = select i1 %0, i32 -5, i32 %3
   ret i32 %4
 }
 

@@ -24,11 +24,16 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000016:                   # @func0000000000000016
 	andi	a0, a0, 1
-	beqz	a0, .LBB2_2
-	snez	a0, a2
-	addi	a0, a0, -1
-	or	a1, a0, a2
+	beqz	a2, .LBB2_3
+	beqz	a0, .LBB2_4
 .LBB2_2:                                # %entry
+	srli	a0, a2, 63
+	ret
+.LBB2_3:                                # %entry
+	li	a2, -1
+	slli	a2, a2, 63
+	bnez	a0, .LBB2_2
+.LBB2_4:                                # %entry
 	srli	a0, a1, 63
 	ret
 func000000000000001a:                   # @func000000000000001a

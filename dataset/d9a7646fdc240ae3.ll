@@ -84,9 +84,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 1
-  %2 = icmp slt i64 %0, 1000
-  %3 = select i1 %2, i64 %1, i64 %0
+  %1 = icmp slt i64 %0, 1000
+  %2 = zext i1 %1 to i64
+  %3 = shl i64 %0, %2
   ret i64 %3
 }
 

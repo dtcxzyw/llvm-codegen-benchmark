@@ -373,8 +373,8 @@ define i64 @func0000000000000000(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = xor i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %2
   ret i64 %5
 }
 

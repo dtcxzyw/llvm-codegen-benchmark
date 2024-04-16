@@ -3,7 +3,7 @@ func0000000000000044:                   # @func0000000000000044
 	srliw	a2, a2, 26
 	add	a1, a1, a2
 	sraiw	a1, a1, 6
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	addiw	a0, a0, -1
 	sltiu	a0, a0, 15
 	ret

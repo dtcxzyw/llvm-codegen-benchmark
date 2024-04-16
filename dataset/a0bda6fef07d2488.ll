@@ -7,7 +7,7 @@ define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = call i32 @llvm.abs.i32(i32 %4, i1 true)
   ret i32 %5
 }

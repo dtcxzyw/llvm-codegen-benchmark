@@ -9,8 +9,8 @@ entry:
   %3 = shl nuw i128 %2, 64
   %4 = or disjoint i128 %3, %1
   %5 = freeze i128 %4
-  %6 = udiv i128 %5, %0
-  %7 = mul i128 %6, %0
+  %6 = urem i128 %5, %0
+  %7 = sub nuw i128 %5, %6
   ret i128 %7
 }
 

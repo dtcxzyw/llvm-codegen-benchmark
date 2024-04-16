@@ -51,11 +51,12 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a3, a2
-	li	a2, 128
 	andi	a1, a1, 1
-	bgeu	a3, a2, .LBB3_2
+	sext.w	a3, a2
+	li	a4, 128
 	li	a2, 64
+	bltu	a3, a4, .LBB3_2
+	li	a2, 128
 .LBB3_2:                                # %entry
 	addi	a1, a1, -1
 	and	a1, a1, a2

@@ -9,8 +9,8 @@
 define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = lshr i32 %0, %2
-  %4 = and i32 %3, 1023
+  %3 = shl i32 1023, %2
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

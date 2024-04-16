@@ -36,10 +36,10 @@ entry:
 define i1 @func00000000000000a8(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = shl nuw i64 1, %2
-  %4 = zext i32 %0 to i64
-  %5 = icmp ugt i64 %3, %4
-  ret i1 %5
+  %3 = zext i32 %0 to i64
+  %.highbits = lshr i64 %3, %2
+  %4 = icmp eq i64 %.highbits, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:

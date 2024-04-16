@@ -5,9 +5,9 @@
 define i8 @func0000000000000004(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, -27
-  %3 = and i1 %1, %2
-  %4 = select i1 %3, i8 5, i8 %0
-  %5 = add i8 %4, -97
+  %3 = and i1 %2, %1
+  %4 = add i8 %0, -97
+  %5 = select i1 %3, i8 -92, i8 %4
   ret i8 %5
 }
 
@@ -19,8 +19,8 @@ define i64 @func0000000000000005(i64 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %3 = and i1 %2, %1
-  %4 = select i1 %3, i64 1073741824, i64 %0
-  %5 = add nsw i64 %4, -1073741824
+  %4 = add nsw i64 %0, -1073741824
+  %5 = select i1 %3, i64 0, i64 %4
   ret i64 %5
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = ptrtoint ptr %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = ptrtoint ptr %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }

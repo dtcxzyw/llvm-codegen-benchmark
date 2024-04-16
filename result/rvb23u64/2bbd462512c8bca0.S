@@ -1,14 +1,16 @@
 func000000000000007f:                   # @func000000000000007f
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	addiw	a1, a1, 13
+	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, 13
 	ret
 func0000000000000077:                   # @func0000000000000077
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	addiw	a1, a1, -2047
+	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, -2047
 	ret
 func0000000000000050:                   # @func0000000000000050
 	slli	a2, a2, 8

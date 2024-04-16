@@ -9,8 +9,8 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	slli	a1, a1, 59
-	srli	a1, a1, 53
+	andi	a1, a1, 255
+	slli	a1, a1, 6
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f

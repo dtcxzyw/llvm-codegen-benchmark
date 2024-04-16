@@ -10,7 +10,7 @@
 define i1 @func000000000000008a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ule ptr %0, %3
+  %4 = icmp uge ptr %3, %0
   %5 = icmp ult i64 %1, 24
   %6 = or i1 %4, %5
   ret i1 %6

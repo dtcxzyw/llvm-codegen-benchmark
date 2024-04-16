@@ -29,10 +29,8 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr %struct.AHCIDevice.1665213, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 2496
-  %7 = getelementptr [32 x %struct.NCQTransferState.1665217], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr %struct.AHCIDevice.1665213, ptr %0, i64 %1, i32 14, i64 %4
+  ret ptr %5
 }
 
 ; 14 occurrences:

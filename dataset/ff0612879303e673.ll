@@ -25,8 +25,8 @@ define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 -255)
   %3 = sub nsw i32 0, %2
-  %4 = icmp sgt i32 %0, -1
-  %5 = select i1 %4, i32 %2, i32 %3
+  %4 = icmp slt i32 %0, 0
+  %5 = select i1 %4, i32 %3, i32 %2
   ret i32 %5
 }
 

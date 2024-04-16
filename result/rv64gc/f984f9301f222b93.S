@@ -1,8 +1,8 @@
 func0000000000000014:                   # @func0000000000000014
 	sllw	a1, a1, a2
-	andi	a1, a1, 511
-	sltiu	a1, a1, 256
+	slli	a1, a1, 55
+	srli	a1, a1, 63
 	ori	a0, a0, 1
-	neg	a1, a1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

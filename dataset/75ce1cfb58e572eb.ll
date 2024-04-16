@@ -126,10 +126,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 3
-  %4 = getelementptr inbounds %"class.mitsuba::ref.74.1555097", ptr %1, i64 %3
-  %5 = getelementptr %"class.mitsuba::ref.74.1555097", ptr %4, i64 %0
-  ret ptr %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr %"class.mitsuba::ref.74.1555097", ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 107 occurrences:
@@ -243,10 +242,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 4
-  %4 = getelementptr inbounds %"struct.std::__1::pair.27.1555573", ptr %1, i64 %3
-  %5 = getelementptr inbounds %"struct.std::__1::pair.27.1555573", ptr %4, i64 %0
-  ret ptr %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr inbounds %"struct.std::__1::pair.27.1555573", ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 3 occurrences:

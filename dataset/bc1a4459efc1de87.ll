@@ -14,8 +14,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 3
   %5 = icmp ne i64 %4, 2
-  %6 = or i1 %1, %5
-  %7 = or i1 %0, %6
+  %6 = or i1 %5, %1
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

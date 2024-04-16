@@ -9,7 +9,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = lshr i64 %3, 2
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = lshr i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

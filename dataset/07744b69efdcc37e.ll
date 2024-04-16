@@ -13,7 +13,7 @@ entry:
   %3 = lshr i8 %2, 2
   %4 = and i8 %3, 1
   %5 = icmp eq i8 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 127
   %5 = icmp ne i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 63
   %5 = icmp ugt i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
   %5 = icmp sge i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

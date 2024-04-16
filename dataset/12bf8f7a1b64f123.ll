@@ -8,7 +8,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp slt i32 %1, 32
   %4 = select i1 %3, i32 %2, i32 1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %1, 32
   %4 = select i1 %3, i32 %2, i32 1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

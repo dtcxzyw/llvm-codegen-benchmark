@@ -6,10 +6,9 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %1)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = zext i64 %3 to i128
-  ret i128 %4
+  %2 = add i64 %0, %1
+  %3 = zext i64 %2 to i128
+  ret i128 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -23,10 +22,9 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %0, i32 %1)
-  %3 = extractvalue { i32, i1 } %2, 0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %2 = add i32 %0, %1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

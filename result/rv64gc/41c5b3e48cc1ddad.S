@@ -9,7 +9,9 @@ func0000000000000023:                   # @func0000000000000023
 	slli	a2, a2, 52
 	and	a1, a1, a2
 	bnez	a1, .LBB1_2
-	li	a0, -1074
+	li	a0, 1
+	slli	a0, a0, 32
+	addi	a0, a0, -1074
 	ret
 .LBB1_2:
 	addiw	a0, a0, -1075

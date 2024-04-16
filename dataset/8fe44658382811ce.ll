@@ -22,11 +22,10 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, -16
-  %3 = or disjoint i16 %2, 2
-  %4 = and i16 %3, -782
-  %5 = or disjoint i16 %0, %4
-  ret i16 %5
+  %2 = and i16 %1, -784
+  %3 = or i16 %2, %0
+  %4 = or i16 %3, 2
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

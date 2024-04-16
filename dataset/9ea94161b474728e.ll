@@ -31,9 +31,9 @@ entry:
 define i64 @func0000000000000023(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741823
-  %3 = add nsw i32 %2, -1
-  %4 = icmp eq i8 %0, 83
-  %5 = select i1 %4, i32 %3, i32 %2
+  %3 = icmp eq i8 %0, 83
+  %4 = sext i1 %3 to i32
+  %5 = add nsw i32 %2, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

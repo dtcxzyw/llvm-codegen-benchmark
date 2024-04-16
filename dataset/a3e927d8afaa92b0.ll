@@ -21,10 +21,9 @@ entry:
 define i8 @func0000000000000016(i8 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = sub nsw i16 %1, %3
-  %5 = icmp slt i16 %4, 0
-  %6 = select i1 %5, i8 0, i8 %0
-  ret i8 %6
+  %4 = icmp sgt i16 %3, %1
+  %5 = select i1 %4, i8 0, i8 %0
+  ret i8 %5
 }
 
 ; 2 occurrences:

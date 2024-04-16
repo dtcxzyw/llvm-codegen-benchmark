@@ -12,7 +12,7 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 12
 	ret
 func0000000000000013:                   # @func0000000000000013
-	andi	a1, a1, 15
+	andi	a1, a1, 14
 	sltiu	a1, a1, 10
 	li	a2, 7
 	czero.nez	a1, a2, a1

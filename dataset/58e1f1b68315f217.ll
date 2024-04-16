@@ -8,7 +8,7 @@ entry:
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = sub nsw i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = sub nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = sub nsw i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   %5 = sub i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

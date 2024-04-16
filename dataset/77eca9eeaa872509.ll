@@ -270,9 +270,9 @@ define i32 @func000000000000001c(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = select i1 %1, i32 -114, i32 0
-  %3 = icmp ne i32 %0, 2
-  %4 = select i1 %3, i32 %2, i32 -2
-  ret i32 %4
+  %.not = icmp eq i32 %0, 2
+  %3 = select i1 %.not, i32 -2, i32 %2
+  ret i32 %3
 }
 
 ; 2 occurrences:

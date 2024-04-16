@@ -8,8 +8,8 @@
 define i32 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i32 6, i32 %1
-  %4 = and i32 %3, 15
+  %3 = and i32 %1, 15
+  %4 = select i1 %2, i32 6, i32 %3
   %5 = icmp ult i64 %0, 4
   %6 = select i1 %5, i32 0, i32 %4
   ret i32 %6

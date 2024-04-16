@@ -16,5 +16,5 @@ func000000000000018d:                   # @func000000000000018d
 	and	a2, a2, a3
 	snez	a2, a2
 	add	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret

@@ -2041,7 +2041,7 @@
 define ptr @func0000000000000049(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %1, i64 384307168202282325)
   %6 = select i1 %4, i64 384307168202282325, i64 %5
   %7 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %6

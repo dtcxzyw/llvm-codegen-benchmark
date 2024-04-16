@@ -9,9 +9,10 @@
 define i1 @func00000000000000c1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i32 %0, 0
-  %4 = and i1 %2, %3
-  %5 = select i1 %4, i32 %0, i32 %1
-  %6 = icmp eq i32 %5, 0
+  %4 = and i1 %3, %2
+  %5 = icmp eq i32 %1, 0
+  %not. = xor i1 %4, true
+  %6 = select i1 %not., i1 %5, i1 false
   ret i1 %6
 }
 

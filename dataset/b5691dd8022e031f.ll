@@ -21,9 +21,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw i64 %4, 32
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw i64 %3, 32
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
@@ -35,10 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = select i1 %1, i16 -1, i16 %2
-  %4 = zext i16 %3 to i64
-  %5 = shl nuw nsw i64 %4, 32
-  %6 = or disjoint i64 %0, %5
+  %3 = zext i16 %2 to i64
+  %4 = shl nuw nsw i64 %3, 32
+  %5 = select i1 %1, i64 281470681743360, i64 %4
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -49,10 +49,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 10, i8 %2
-  %4 = zext nneg i8 %3 to i32
-  %5 = shl nuw nsw i32 %4, 10
-  %6 = or disjoint i32 %0, %5
+  %3 = zext nneg i8 %2 to i32
+  %4 = shl nuw nsw i32 %3, 10
+  %5 = select i1 %1, i32 10240, i32 %4
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

@@ -8,7 +8,7 @@ entry:
   %2 = fmul float %0, %1
   %3 = fptoui float %2 to i32
   %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 65535)
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 

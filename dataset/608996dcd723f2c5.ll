@@ -8,7 +8,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %1, true
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = select i1 %0, i1 %1, i1 %4
   ret i1 %5
 }

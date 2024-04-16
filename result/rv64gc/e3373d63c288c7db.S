@@ -21,24 +21,24 @@ func0000000000000004:                   # @func0000000000000004
 	sll	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	add	a1, a2, a4
+	add	a1, a4, a2
 	addi	a5, a0, -64
-	sll	a4, a1, a0
+	sll	a2, a1, a0
 	bltz	a5, .LBB4_2
-	mv	a1, a4
+	mv	a1, a2
 	srai	a0, a5, 63
-	and	a0, a0, a4
+	and	a0, a0, a2
 	ret
 .LBB4_2:
-	sltu	a2, a1, a2
-	add	a2, a2, a3
+	sltu	a4, a1, a4
+	add	a3, a3, a4
 	srli	a1, a1, 1
-	not	a3, a0
-	srl	a1, a1, a3
-	sll	a0, a2, a0
+	not	a4, a0
+	srl	a1, a1, a4
+	sll	a0, a3, a0
 	or	a1, a1, a0
 	srai	a0, a5, 63
-	and	a0, a0, a4
+	and	a0, a0, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 255

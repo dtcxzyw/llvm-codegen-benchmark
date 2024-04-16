@@ -5,9 +5,8 @@ func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 5
-	addi	a0, a0, -1
-	sltiu	a0, a0, 16
-	xori	a0, a0, 1
+	addi	a0, a0, -17
+	sltiu	a0, a0, -16
 	ret
 func0000000000000014:                   # @func0000000000000014
 	lui	a1, 699051
@@ -20,12 +19,6 @@ func0000000000000014:                   # @func0000000000000014
 	sltiu	a0, a0, 365
 	ret
 func0000000000000011:                   # @func0000000000000011
-	lui	a1, 838861
-	addiw	a1, a1, -819
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a0, a0, a1
-	srli	a0, a0, 5
-	addi	a0, a0, -1
-	seqz	a0, a0
+	addi	a0, a0, -40
+	sltiu	a0, a0, 40
 	ret

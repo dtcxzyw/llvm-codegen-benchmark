@@ -5,8 +5,8 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i64
-  %4 = add i64 %1, %3
-  %5 = add i64 %0, %4
+  %4 = add i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = sdiv i64 %5, 1000000
   %7 = mul i64 %6, 4293967296
   ret i64 %7
@@ -19,10 +19,11 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i64
-  %4 = add i64 %1, %3
-  %5 = add i64 %0, %4
-  %6 = sdiv i64 %5, 60000
-  %7 = mul nsw i64 %6, -60000
+  %4 = add i64 %3, %1
+  %5 = add i64 %4, %0
+  %.fr = freeze i64 %5
+  %6 = srem i64 %.fr, 60000
+  %7 = sub i64 %6, %.fr
   ret i64 %7
 }
 

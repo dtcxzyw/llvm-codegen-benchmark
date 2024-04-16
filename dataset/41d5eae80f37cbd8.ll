@@ -12,10 +12,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = icmp eq ptr %1, %2
-  %4 = xor i1 %3, true
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
+  %3 = icmp ne ptr %1, %2
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -23,10 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = icmp ne ptr %1, %2
-  %4 = xor i1 %3, true
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
+  %.not = icmp eq ptr %1, %2
+  %3 = select i1 %.not, i1 true, i1 %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

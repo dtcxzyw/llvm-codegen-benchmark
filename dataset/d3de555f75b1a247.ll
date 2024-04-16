@@ -30,8 +30,8 @@ entry:
 define double @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = select i1 %3, double %1, double %2
-  %5 = select i1 %0, double %1, double %4
+  %4 = select i1 %0, i1 true, i1 %3
+  %5 = select i1 %4, double %1, double %2
   ret double %5
 }
 

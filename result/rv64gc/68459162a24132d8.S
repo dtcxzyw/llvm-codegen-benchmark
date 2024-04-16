@@ -32,8 +32,9 @@ func0000000000000508:                   # @func0000000000000508
 	ret
 func0000000000000501:                   # @func0000000000000501
 	add	a0, a0, a2
-	slli	a1, a1, 1
-	add	a0, a0, a1
 	addi	a0, a0, 2
+	slli	a1, a1, 1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

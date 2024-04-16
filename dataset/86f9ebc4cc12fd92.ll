@@ -137,7 +137,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   ret i64 %3
 }
 
@@ -396,7 +396,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   ret i64 %3
 }
 
@@ -518,7 +518,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   ret i32 %3
 }
 

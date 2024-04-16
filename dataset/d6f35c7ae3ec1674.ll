@@ -11,7 +11,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, -1
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr %struct.pm_constant_pool_bucket_t.1553413, ptr %0, i64 %6
   ret ptr %7

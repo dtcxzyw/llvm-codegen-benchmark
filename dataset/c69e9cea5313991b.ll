@@ -33,10 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp sgt i64 %2, -1
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = sub i64 %0, %4
-  ret i64 %5
+  %.inv = icmp slt i64 %2, 0
+  %3 = select i1 %.inv, i64 0, i64 %1
+  %4 = sub i64 %0, %3
+  ret i64 %4
 }
 
 ; 27 occurrences:

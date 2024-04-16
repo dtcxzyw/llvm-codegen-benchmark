@@ -24,7 +24,7 @@ define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp eq i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
@@ -46,7 +46,7 @@ define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = icmp ne i64 %5, 0
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7

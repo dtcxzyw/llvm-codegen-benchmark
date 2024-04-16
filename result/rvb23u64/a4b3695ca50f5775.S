@@ -9,9 +9,8 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func0000000000000090:                   # @func0000000000000090
 	andi	a1, a1, 255
-	addi	a2, a2, 7
-	sltiu	a2, a2, 8
-	xori	a2, a2, 1
+	addi	a2, a2, -1
+	sltiu	a2, a2, -8
 	sltiu	a1, a1, 64
 	or	a1, a1, a2
 	czero.nez	a0, a0, a1

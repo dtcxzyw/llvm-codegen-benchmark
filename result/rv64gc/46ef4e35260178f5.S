@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 42
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a0, 15
+	andi	a1, a0, 14
 	li	a2, 10
 	li	a0, 48
 	bltu	a1, a2, .LBB1_2
@@ -13,8 +13,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 3
-	snez	a0, a0
-	xori	a0, a0, 365
+	seqz	a0, a0
+	addi	a0, a0, 364
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a1, -1

@@ -75,9 +75,8 @@ entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 974208
-  %5 = getelementptr inbounds %struct.s_hv.1766891, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.s_hv.1766891, ptr %4, i64 %0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:

@@ -33,7 +33,7 @@ define i64 @func0000000000000040(i128 %0, i128 %1) #0 {
 entry:
   %2 = add nuw i128 %0, %1
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = and i64 %4, -4
   %6 = add i64 %5, 4
   ret i64 %6

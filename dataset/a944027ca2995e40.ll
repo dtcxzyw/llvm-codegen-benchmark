@@ -8,7 +8,7 @@
 define i1 @func0000000000000001(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ugt i64 %0, 108
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000028(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ugt i8 %0, 63
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -49,7 +49,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6

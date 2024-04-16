@@ -8,7 +8,7 @@
 define ptr @func0000000000000001(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = freeze i1 %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = sext i1 %4 to i64
   %6 = getelementptr inbounds { i64, i64 }, ptr %0, i64 %5
   ret ptr %6

@@ -21,7 +21,7 @@ define i32 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = sub nsw i8 31, %1
-  %3 = zext i8 %2 to i32
+  %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
   ret i32 %4
 }

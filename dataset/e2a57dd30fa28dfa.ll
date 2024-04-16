@@ -244,9 +244,8 @@ define ptr @func000000000000000d(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 -3, %2
-  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -268,9 +267,8 @@ define ptr @func0000000000000015(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.JSValue.1908861, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:

@@ -26,10 +26,9 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 262144
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 5, i32 13
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %4 = select i1 %3, i64 5, i64 13
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

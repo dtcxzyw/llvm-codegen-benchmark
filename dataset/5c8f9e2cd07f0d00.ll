@@ -11,7 +11,7 @@ entry:
   %4 = add nsw i64 %3, -1
   %5 = add nsw i64 %4, %1
   %6 = icmp ult i64 %5, 20
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

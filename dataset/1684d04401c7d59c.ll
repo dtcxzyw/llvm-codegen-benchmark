@@ -164,7 +164,7 @@ entry:
   %1 = mul nsw i32 %0, 631305
   %2 = add nsw i32 %1, -261663
   %3 = ashr i32 %2, 21
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nsw i32 %3 to i16
   %5 = sub nsw i16 292, %4
   ret i16 %5
 }

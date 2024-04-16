@@ -49,8 +49,8 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = mul nsw i64 %2, -8
-  %4 = add nsw i64 %3, 2147483648
+  %3 = shl i64 %2, 3
+  %4 = sub i64 2147483648, %3
   ret i64 %4
 }
 

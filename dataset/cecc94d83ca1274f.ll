@@ -27,8 +27,8 @@ define i1 @func0000000000000006(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
   %3 = udiv i128 %0, %2
-  %4 = trunc i128 %3 to i64
-  %5 = icmp slt i64 %4, 0
+  %4 = and i128 %3, 9223372036854775808
+  %5 = icmp ne i128 %4, 0
   ret i1 %5
 }
 
@@ -53,8 +53,8 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = udiv i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, -65537
+  %4 = and i64 %3, 4294901760
+  %5 = icmp eq i64 %4, 4294901760
   ret i1 %5
 }
 

@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, float %1) #0 {
 entry:
-  %2 = add i32 %0, 1
-  %3 = fcmp une float %1, 0x7FF0000000000000
-  %4 = select i1 %3, i32 %2, i32 %0
+  %2 = fcmp une float %1, 0x7FF0000000000000
+  %3 = zext i1 %2 to i32
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 
@@ -44,9 +44,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, double %1) #0 {
 entry:
-  %2 = add nsw i32 %0, -1
-  %3 = fcmp une double %1, 0.000000e+00
-  %4 = select i1 %3, i32 %2, i32 %0
+  %2 = fcmp une double %1, 0.000000e+00
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 

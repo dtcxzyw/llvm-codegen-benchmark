@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = icmp ugt i32 %1, 50
+  %1 = add i32 %0, -50
+  %2 = icmp ult i32 %1, -51
   %3 = sext i1 %2 to i8
   ret i8 %3
 }
@@ -16,10 +16,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = icmp eq i32 %1, 0
-  %3 = sext i1 %2 to i32
-  ret i32 %3
+  %1 = icmp eq i32 %0, 1
+  %2 = sext i1 %1 to i32
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -28,10 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = icmp ne i32 %1, 0
-  %3 = sext i1 %2 to i32
-  ret i32 %3
+  %1 = icmp ne i32 %0, 1
+  %2 = sext i1 %1 to i32
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -41,10 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1
-  %2 = icmp eq i32 %1, 0
-  %3 = sext i1 %2 to i32
-  ret i32 %3
+  %1 = icmp eq i32 %0, 1
+  %2 = sext i1 %1 to i32
+  ret i32 %2
 }
 
 ; 8 occurrences:
@@ -82,10 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = icmp ne i32 %1, 0
-  %3 = sext i1 %2 to i32
-  ret i32 %3
+  %1 = icmp ne i32 %0, -1
+  %2 = sext i1 %1 to i32
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

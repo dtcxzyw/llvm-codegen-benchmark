@@ -19,8 +19,10 @@ func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	or	a1, a1, a2
-	add	a0, a0, a1
+	andi	a1, a1, 1
+	beqz	a1, .LBB3_2
+	li	a2, -1
+	srli	a2, a2, 32
+.LBB3_2:                                # %entry
+	add	a0, a0, a2
 	ret

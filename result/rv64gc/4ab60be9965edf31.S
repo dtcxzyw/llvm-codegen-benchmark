@@ -18,7 +18,7 @@ func0000000000000022:                   # @func0000000000000022
 	seqz	a0, a0
 	ret
 func0000000000000032:                   # @func0000000000000032
-	beq	a1, a3, .LBB3_2
+	beq	a3, a1, .LBB3_2
 	sltu	a0, a1, a3
 	xori	a0, a0, 1
 	ret

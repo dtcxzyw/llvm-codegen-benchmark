@@ -30,9 +30,8 @@
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr inbounds [25 x %"class.std::__cxx11::basic_string.6.1648672"], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr inbounds [25 x %"class.std::__cxx11::basic_string.6.1648672"], ptr %0, i64 0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -42,9 +41,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr [512 x %struct.prefix_code_symbol.1910722], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 2
-  ret ptr %4
+  %3 = getelementptr [512 x %struct.prefix_code_symbol.1910722], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

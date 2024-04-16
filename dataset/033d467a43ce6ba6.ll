@@ -22,9 +22,8 @@ define i8 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 1, i32 2
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
+  %3 = select i1 %2, i8 1, i8 2
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

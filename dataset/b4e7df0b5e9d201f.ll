@@ -9,8 +9,8 @@
 define i32 @func0000000000000010(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 1114111
-  %2 = select i1 %1, i32 65533, i32 %0
-  %3 = lshr i32 %2, 18
+  %2 = lshr i32 %0, 18
+  %3 = select i1 %1, i32 0, i32 %2
   ret i32 %3
 }
 
@@ -33,8 +33,8 @@ entry:
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 65536
-  %2 = select i1 %1, i32 0, i32 %0
-  %3 = lshr i32 %2, 8
+  %2 = lshr i32 %0, 8
+  %3 = select i1 %1, i32 0, i32 %2
   ret i32 %3
 }
 

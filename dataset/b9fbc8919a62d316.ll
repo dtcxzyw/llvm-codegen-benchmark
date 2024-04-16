@@ -205,7 +205,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 16
   %3 = and i32 %2, 255
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   ret i32 %4
 }
 

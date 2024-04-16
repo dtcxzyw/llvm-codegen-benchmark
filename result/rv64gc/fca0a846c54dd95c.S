@@ -10,9 +10,9 @@ func0000000000000018:                   # @func0000000000000018
 	mv	a6, a1
 	mv	a5, a0
 	slli	a4, a4, 32
-	srli	a0, a4, 32
-	add	a0, a0, a2
-	sltu	a1, a0, a2
+	srli	a4, a4, 32
+	add	a0, a4, a2
+	sltu	a1, a0, a4
 	add	a1, a1, a3
 	mv	a2, a5
 	mv	a3, a6

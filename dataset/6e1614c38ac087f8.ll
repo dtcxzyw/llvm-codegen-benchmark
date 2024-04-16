@@ -13,7 +13,7 @@
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870911
-  %3 = icmp uge i32 %0, %2
+  %3 = icmp ule i32 %2, %0
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = icmp eq i8 %0, %2
+  %3 = icmp eq i8 %2, %0
   %4 = freeze i1 %3
   ret i1 %4
 }

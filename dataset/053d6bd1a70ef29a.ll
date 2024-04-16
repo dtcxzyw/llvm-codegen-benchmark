@@ -39,8 +39,8 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = mul i32 %1, %4
-  %6 = add nsw i32 %0, %5
+  %5 = mul i32 %4, %1
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -70,7 +70,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = mul nsw i32 %1, %4
+  %5 = mul nsw i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -86,7 +86,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr i64 %3, 48
   %5 = mul nsw i64 %4, %1
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -97,7 +97,7 @@ define i64 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
   %4 = ashr exact i64 %3, 48
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -109,7 +109,7 @@ define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
   %4 = ashr exact i64 %3, 48
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -125,7 +125,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = mul i64 %4, %1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -137,8 +137,8 @@ define i64 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = mul nsw i64 %1, %4
-  %6 = add nuw nsw i64 %0, %5
+  %5 = mul nsw i64 %4, %1
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

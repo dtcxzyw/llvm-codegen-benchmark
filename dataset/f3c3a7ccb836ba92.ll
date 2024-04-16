@@ -59,11 +59,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  %5 = icmp eq ptr %4, null
-  ret i1 %5
+  ret i1 false
 }
 
 attributes #0 = { nounwind }

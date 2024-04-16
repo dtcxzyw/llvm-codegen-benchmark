@@ -9,7 +9,7 @@ entry:
   %4 = sitofp i32 %1 to double
   %5 = tail call double @llvm.fmuladd.f64(double %4, double 0x3FD34413509F79FB, double %3)
   %6 = fptosi double %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = sitofp i32 %1 to double
   %5 = tail call double @llvm.fmuladd.f64(double %4, double 0x3FD34413509F79FB, double %3)
   %6 = fptosi double %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

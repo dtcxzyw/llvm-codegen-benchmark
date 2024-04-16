@@ -75,14 +75,14 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
-	beq	a1, a2, .LBB10_2
+	beq	a2, a1, .LBB10_2
 	slt	a0, a1, a2
 	ret
 .LBB10_2:
 	sltu	a0, a0, a4
 	ret
 func000000000000005b:                   # @func000000000000005b
-	beq	a1, a2, .LBB11_2
+	beq	a2, a1, .LBB11_2
 	slt	a0, a1, a2
 	xori	a0, a0, 1
 	ret

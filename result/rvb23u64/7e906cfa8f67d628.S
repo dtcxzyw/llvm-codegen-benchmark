@@ -40,9 +40,10 @@ func0000000000000041:                   # @func0000000000000041
 	or	a0, a0, a1
 	ret
 func0000000000000016:                   # @func0000000000000016
+	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -113
+	li	a2, -1
+	max	a0, a0, a2
 	czero.eqz	a0, a0, a1
-	sraiw	a1, a0, 31
-	or	a0, a0, a1
 	ret

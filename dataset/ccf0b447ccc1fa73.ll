@@ -62,8 +62,8 @@ entry:
 define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %0, i32 %3, i32 %2
+  %3 = sext i1 %0 to i32
+  %4 = add nsw i32 %2, %3
   %5 = icmp ult i32 %4, 25
   ret i1 %5
 }

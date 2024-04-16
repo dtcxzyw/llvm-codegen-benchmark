@@ -28,9 +28,9 @@ func0000000000000005:                   # @func0000000000000005
 	subw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a1, a1, -2
 	andi	a1, a1, -2
 	subw	a0, a0, a1
+	addiw	a0, a0, 2
 	ret
 func0000000000000009:                   # @func0000000000000009
 	addi	a1, a1, 1

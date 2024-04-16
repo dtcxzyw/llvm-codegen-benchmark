@@ -17,9 +17,8 @@ entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 4
-  %5 = getelementptr [16 x %struct.anon.5.2009732], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [16 x %struct.anon.5.2009732], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -33,9 +32,8 @@ entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 720
-  %5 = getelementptr inbounds [2 x %"class.std::map.67.2034063"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds [2 x %"class.std::map.67.2034063"], ptr %4, i64 0, i64 %3, i32 0, i32 0, i32 1, i32 0, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

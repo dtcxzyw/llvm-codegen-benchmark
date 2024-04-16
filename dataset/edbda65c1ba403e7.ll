@@ -271,10 +271,10 @@
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 16
-  %4 = or disjoint i16 %1, %3
-  %5 = and i16 %4, -97
-  %6 = or disjoint i16 %5, %0
-  ret i16 %6
+  %.masked = and i16 %1, -97
+  %4 = or i16 %3, %.masked
+  %5 = or disjoint i16 %4, %0
+  ret i16 %5
 }
 
 ; 12 occurrences:
@@ -294,10 +294,10 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8388608
-  %4 = or i32 %1, %3
-  %5 = and i32 %4, -7340033
-  %6 = or disjoint i32 %0, %5
-  ret i32 %6
+  %.masked = and i32 %1, -7340033
+  %4 = or i32 %3, %.masked
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -306,11 +306,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -274877906945
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, -16385
-  %6 = or i64 %0, %5
-  ret i64 %6
+  %3 = and i64 %2, -274877923329
+  %.masked = and i64 %1, -16385
+  %4 = or i64 %3, %.masked
+  %5 = or i64 %4, %0
+  ret i64 %5
 }
 
 ; 13 occurrences:
@@ -330,11 +330,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 2146500607
-  %4 = or i32 %1, %3
-  %5 = and i32 %4, 2130702336
-  %6 = or i32 %5, %0
-  ret i32 %6
+  %3 = and i32 %2, 2129719296
+  %.masked = and i32 %1, 2130702336
+  %4 = or i32 %3, %.masked
+  %5 = or i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

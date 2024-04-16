@@ -7,7 +7,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 2
   %4 = add nsw i32 %3, -8
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
 }

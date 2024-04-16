@@ -8,7 +8,7 @@ entry:
   %3 = select i1 %2, i64 58, i64 184
   %4 = icmp ult i64 %1, 513
   %5 = select i1 %4, i64 2, i64 %3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = trunc i64 %6 to i8
   ret i8 %7
 }

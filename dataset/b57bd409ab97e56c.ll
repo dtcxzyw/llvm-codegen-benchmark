@@ -129,7 +129,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = ashr i64 %3, 3
+  %4 = lshr i64 %3, 3
   %5 = and i64 %4, 63
   ret i64 %5
 }
@@ -141,7 +141,7 @@ define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub nsw i64 %0, %2
-  %4 = ashr exact i64 %3, 3
+  %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 63
   ret i64 %5
 }
@@ -153,7 +153,7 @@ define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub nsw i64 %0, %2
-  %4 = ashr i64 %3, 3
+  %4 = lshr i64 %3, 3
   %5 = and i64 %4, 63
   ret i64 %5
 }

@@ -3,9 +3,8 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, -3
 	ret
 func0000000000000030:                   # @func0000000000000030
-	addi	a0, a0, -5
-	sltiu	a0, a0, 4
-	xori	a0, a0, 1
+	addi	a0, a0, -9
+	sltiu	a0, a0, -4
 	ret
 func0000000000000028:                   # @func0000000000000028
 	addiw	a0, a0, -772
@@ -21,9 +20,8 @@ func0000000000000022:                   # @func0000000000000022
 	seqz	a0, a0
 	ret
 func0000000000000010:                   # @func0000000000000010
-	addiw	a0, a0, -1
-	sltiu	a0, a0, 10
-	xori	a0, a0, 1
+	addiw	a0, a0, -11
+	sltiu	a0, a0, -10
 	ret
 func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, -7

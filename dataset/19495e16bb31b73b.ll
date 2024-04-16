@@ -8,7 +8,7 @@
 define i64 @func000000000000000f(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 8
   %7 = or disjoint i64 %6, %4
@@ -25,7 +25,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 42
   %5 = sext i32 %1 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
   %5 = sext i32 %1 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }

@@ -60,10 +60,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, 0
-  %4 = trunc i64 %0 to i32
-  %5 = icmp slt i32 %4, 0
+  %2 = and i64 %1, 2147483648
+  %3 = icmp ne i64 %2, 0
+  %4 = and i64 %0, 2147483648
+  %5 = icmp ne i64 %4, 0
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }
@@ -76,8 +76,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i8
-  %3 = icmp ugt i8 %2, 1
+  %2 = and i64 %1, 254
+  %3 = icmp ne i64 %2, 0
   %4 = trunc i64 %0 to i32
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %3

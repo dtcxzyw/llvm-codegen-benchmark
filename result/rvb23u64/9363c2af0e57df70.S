@@ -1,13 +1,11 @@
 func000000000000001a:                   # @func000000000000001a
 	srai	a1, a1, 1
-	sub	a1, a1, a0
-	slti	a0, a1, 0
+	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func0000000000000016:                   # @func0000000000000016
 	srai	a1, a1, 1
-	sub	a0, a1, a0
-	srli	a0, a0, 63
+	slt	a0, a1, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srai	a1, a1, 4
@@ -22,8 +20,8 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000051:                   # @func0000000000000051
 	srai	a1, a1, 2
-	sub	a1, a1, a0
-	seqz	a0, a1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
 	srai	a1, a1, 3

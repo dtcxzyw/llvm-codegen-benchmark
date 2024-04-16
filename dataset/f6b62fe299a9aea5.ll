@@ -185,10 +185,10 @@
 define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
-  %3 = sub nuw nsw i32 8, %2
-  %4 = lshr i32 %0, 24
-  %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
+  %3 = lshr i32 %0, 24
+  %reass.sub = sub nsw i32 %3, %2
+  %4 = add i32 %reass.sub, 8
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

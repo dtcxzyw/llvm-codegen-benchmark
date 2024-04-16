@@ -182,7 +182,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 0)
   %5 = call i32 @llvm.smin.i32(i32 %4, i32 %1)
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   %7 = select i1 %6, i32 1, i32 -1
   ret i32 %7
 }

@@ -8,7 +8,7 @@
 define i32 @func000000000000000e(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.ctlz.i32(i32 %0, i1 false), !range !0
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nuw nsw i32 %1 to i8
   %3 = sub nsw i8 31, %2
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw i32 1, %4
@@ -24,9 +24,9 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.ctlz.i32(i32 %0, i1 false), !range !0
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nuw nsw i32 %1 to i8
   %3 = sub nsw i8 31, %2
-  %4 = zext i8 %3 to i32
+  %4 = zext nneg i8 %3 to i32
   %5 = shl nuw i32 1, %4
   ret i32 %5
 }
@@ -62,7 +62,7 @@ entry:
 define i64 @func000000000000009f(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub nuw nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 1, %4

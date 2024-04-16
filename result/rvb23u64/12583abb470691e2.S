@@ -31,8 +31,8 @@ func000000000000004a:                   # @func000000000000004a
 	or	a0, a0, a1
 	ret
 func0000000000000046:                   # @func0000000000000046
-	slli	a1, a1, 29
-	srai	a1, a1, 63
+	bexti	a1, a1, 34
+	neg	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041

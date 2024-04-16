@@ -17,11 +17,10 @@
 define i64 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = zext i32 %0 to i64
+  %3 = zext i32 %0 to i64
+  %4 = add nuw nsw i64 %3, %2
   %5 = shl nuw nsw i64 %4, 1
-  %6 = add nuw nsw i64 %5, %3
-  ret i64 %6
+  ret i64 %5
 }
 
 ; 3 occurrences:
@@ -87,11 +86,10 @@ entry:
 define i64 @func00000000000000ff(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = zext nneg i32 %0 to i64
+  %3 = zext nneg i32 %0 to i64
+  %4 = add nuw nsw i64 %3, %2
   %5 = shl nuw nsw i64 %4, 2
-  %6 = add nuw nsw i64 %5, %3
-  ret i64 %6
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

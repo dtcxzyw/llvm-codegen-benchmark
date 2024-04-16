@@ -186,7 +186,6 @@ func0000000000000061:                   # @func0000000000000061
 	xor	a0, a0, a1
 	ret
 func0000000000000066:                   # @func0000000000000066
-	slti	a1, a1, 0
-	slti	a0, a0, 0
 	xor	a0, a0, a1
+	srli	a0, a0, 63
 	ret

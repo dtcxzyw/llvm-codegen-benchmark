@@ -255,9 +255,9 @@ entry:
 define i8 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = or i8 %1, -99
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i8 -1, i8 %2
-  ret i8 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i8 %2, i8 -1
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

@@ -6,9 +6,9 @@ define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 1741647
   %3 = ashr i32 %2, 19
-  %4 = sub i32 %3, %0
-  %5 = sub nsw i32 64, %4
-  ret i32 %5
+  %.neg = sub i32 %0, %3
+  %4 = add i32 %.neg, 64
+  ret i32 %4
 }
 
 ; 167 occurrences:
@@ -184,9 +184,9 @@ define i32 @func0000000000000025(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, -1741647
   %3 = ashr i32 %2, 19
-  %4 = sub nsw i32 %3, %0
-  %5 = sub nsw i32 64, %4
-  ret i32 %5
+  %.neg = sub i32 %0, %3
+  %4 = add i32 %.neg, 64
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

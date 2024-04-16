@@ -42,9 +42,9 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, 6620516959819538809
   %4 = tail call i64 @llvm.fshl.i64(i64 %3, i64 %3, i64 32)
-  %5 = xor i64 %1, %4
+  %5 = xor i64 %4, %1
   %6 = tail call i64 @llvm.fshl.i64(i64 %5, i64 %5, i64 48)
-  %7 = xor i64 %0, %6
+  %7 = xor i64 %6, %0
   ret i64 %7
 }
 
@@ -65,7 +65,7 @@ entry:
   %4 = call noundef i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 11)
   %5 = xor i32 %4, %1
   %6 = call noundef i32 @llvm.fshl.i32(i32 %5, i32 %5, i32 11)
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

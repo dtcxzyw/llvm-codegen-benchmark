@@ -7,8 +7,8 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = and i32 %3, 65535
-  %5 = lshr i32 %4, 6
+  %4 = lshr i32 %3, 6
+  %5 = and i32 %4, 1023
   ret i32 %5
 }
 
@@ -20,8 +20,8 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = and i32 %3, 16777216
-  %5 = lshr exact i32 %4, 13
+  %4 = lshr i32 %3, 13
+  %5 = and i32 %4, 2048
   ret i32 %5
 }
 

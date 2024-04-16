@@ -13,8 +13,8 @@ define i32 @func0000000000000195(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext i8 %0 to i32
-  %5 = sub nsw i32 %3, %4
-  %6 = sub nsw i32 %5, %4
+  %5 = shl nuw nsw i32 %4, 1
+  %6 = sub i32 %3, %5
   %7 = tail call i32 @llvm.abs.i32(i32 %6, i1 true)
   ret i32 %7
 }

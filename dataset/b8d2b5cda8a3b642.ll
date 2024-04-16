@@ -17,7 +17,7 @@
 define i64 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %1, %2
-  %4 = add i16 %0, %3
+  %4 = add i16 %3, %0
   %5 = zext i16 %4 to i64
   ret i64 %5
 }

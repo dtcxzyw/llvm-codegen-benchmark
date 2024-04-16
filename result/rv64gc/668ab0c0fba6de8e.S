@@ -17,12 +17,13 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000004:                   # @func0000000000000004
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 57
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
 	sext.w	a0, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slt	a1, a2, a1
-	negw	a1, a1
-	and	a0, a0, a1
 	sext.w	a0, a0
+	neg	a1, a1
+	and	a0, a0, a1
 	ret

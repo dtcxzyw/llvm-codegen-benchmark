@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = ashr exact i64 %0, 32
-  %4 = mul nsw i64 %3, %2
+  %2 = lshr exact i64 %1, 32
+  %3 = lshr exact i64 %0, 32
+  %4 = mul nuw i64 %3, %2
   %5 = shl i64 %4, 32
   ret i64 %5
 }

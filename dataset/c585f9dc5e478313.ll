@@ -226,9 +226,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = icmp ne i64 %1, 8589934592
-  %5 = select i1 %4, i32 %3, i32 %0
-  ret i32 %5
+  %.not = icmp eq i64 %1, 8589934592
+  %4 = select i1 %.not, i32 %0, i32 %3
+  ret i32 %4
 }
 
 ; 6 occurrences:

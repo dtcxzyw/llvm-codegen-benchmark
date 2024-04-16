@@ -41,10 +41,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = and i64 %1, 1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = and i64 %0, 72057594037927936
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -55,10 +54,9 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i16 %0) #0 {
 entry:
-  %1 = tail call noundef i16 @llvm.bswap.i16(i16 %0)
-  %2 = and i16 %1, 4095
-  %3 = icmp ult i16 %2, 2560
-  ret i1 %3
+  %1 = and i16 %0, 14
+  %2 = icmp ult i16 %1, 10
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -91,10 +89,9 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.bswap.i32(i32 %0)
-  %2 = and i32 %1, 6144
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 1572864
+  %2 = icmp eq i32 %1, 0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -105,10 +102,9 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = call noundef i32 @llvm.bswap.i32(i32 %0)
-  %2 = and i32 %1, 1
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 16777216
+  %2 = icmp ne i32 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -117,10 +113,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.bswap.i32(i32 %0)
-  %2 = and i32 %1, 61440
-  %3 = icmp ugt i32 %2, 32768
-  ret i1 %3
+  %1 = and i32 %0, 15728640
+  %2 = icmp ugt i32 %1, 8388608
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -129,10 +124,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.bswap.i32(i32 %0)
-  %2 = and i32 %1, 65535
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = icmp ugt i32 %0, 65535
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -140,8 +133,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.bswap.i32(i32 %0)
-  %2 = and i32 %1, 16777215
+  %1 = and i32 %0, -256
+  %2 = call i32 @llvm.bswap.i32(i32 %1)
   %3 = icmp ult i32 %2, 32
   ret i1 %3
 }

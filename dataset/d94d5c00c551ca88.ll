@@ -17,12 +17,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 0, %1
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %5, %4
-  ret i64 %6
+  ret i64 %1
 }
 
 ; 6 occurrences:
@@ -35,12 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 0, %1
-  %3 = getelementptr inbounds ptr, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %5, %4
-  ret i64 %6
+  %.neg.neg = shl i64 %1, 3
+  ret i64 %.neg.neg
 }
 
 attributes #0 = { nounwind }

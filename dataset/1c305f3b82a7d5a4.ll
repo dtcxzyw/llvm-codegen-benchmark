@@ -34,9 +34,9 @@ define i96 @func000000000000000e(i96 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i96
   %3 = shl nuw nsw i96 %2, 32
-  %4 = and i96 %0, -18446744073709551604
+  %4 = and i96 %0, -18446744073709551616
   %5 = or disjoint i96 %3, %4
-  %6 = lshr i96 %5, 32
+  %6 = lshr exact i96 %5, 32
   ret i96 %6
 }
 

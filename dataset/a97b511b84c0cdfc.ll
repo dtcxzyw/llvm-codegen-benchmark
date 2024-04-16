@@ -5,8 +5,8 @@
 define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = and i64 %4, -2
+  %4 = and i32 %3, -2
+  %5 = sext i32 %4 to i64
   %6 = add i64 %0, 2
   %7 = icmp eq i64 %6, %5
   ret i1 %7
@@ -32,8 +32,8 @@ entry:
 define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = and i64 %4, 3
+  %4 = and i32 %3, 3
+  %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7
@@ -59,8 +59,8 @@ entry:
 define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = and i64 %4, 7
+  %4 = and i32 %3, 7
+  %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7

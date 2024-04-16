@@ -11,7 +11,7 @@ define i32 @func0000000000000002(i1 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -2
   %4 = zext i8 %3 to i16
-  %5 = or disjoint i16 %1, %4
+  %5 = or disjoint i16 %4, %1
   %6 = zext i16 %5 to i32
   %7 = select i1 %0, i32 0, i32 %6
   ret i32 %7

@@ -19,10 +19,10 @@ define i8 @func0000000000000039(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
   %3 = or disjoint i8 %2, 4
-  %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i8 %3, i8 %2
-  %6 = or disjoint i8 %5, 2
-  ret i8 %6
+  %.not = icmp eq i32 %0, 0
+  %4 = select i1 %.not, i8 %2, i8 %3
+  %5 = or disjoint i8 %4, 2
+  ret i8 %5
 }
 
 ; 2 occurrences:

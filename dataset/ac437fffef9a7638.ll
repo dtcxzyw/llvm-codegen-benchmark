@@ -11,7 +11,7 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 4
-  %2 = srem i32 %1, 2
+  %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
   ret i1 %3
 }

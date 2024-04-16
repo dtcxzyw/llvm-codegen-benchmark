@@ -8,8 +8,8 @@ func00000000000000c1:                   # @func00000000000000c1
 func00000000000000d1:                   # @func00000000000000d1
 	sext.w	a2, a2
 	slti	a2, a2, 0
-	czero.nez	a1, a1, a2
 	addi	a0, a0, 776
 	xor	a0, a0, a1
 	seqz	a0, a0
+	andn	a0, a0, a2
 	ret

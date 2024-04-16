@@ -6,13 +6,15 @@ func0000000000000029:                   # @func0000000000000029
 	li	a3, 1000
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	mulh	a0, a0, a2
-	srli	a1, a0, 63
-	srai	a0, a0, 26
-	add	a0, a0, a1
-	lui	a1, 804435
-	addiw	a1, a1, 1536
-	mul	a0, a0, a1
+	mulh	a1, a0, a2
+	srli	a2, a1, 63
+	srai	a1, a1, 26
+	add	a1, a1, a2
+	lui	a2, 244141
+	addiw	a2, a2, -1536
+	mul	a1, a1, a2
+	sub	a0, a0, a0
+	sub	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	5373003642731685221             # 0x4a90be587de6e565
@@ -23,13 +25,15 @@ func0000000000000021:                   # @func0000000000000021
 	addiw	a2, a2, 1024
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	mulh	a0, a0, a3
-	srli	a1, a0, 63
-	srai	a0, a0, 20
-	add	a0, a0, a1
-	lui	a1, 1047697
-	addiw	a1, a1, 384
-	mul	a0, a0, a1
+	mulh	a1, a0, a3
+	srli	a2, a1, 63
+	srai	a1, a1, 20
+	add	a1, a1, a2
+	lui	a2, 879
+	addiw	a2, a2, -384
+	mul	a1, a1, a2
+	sub	a0, a0, a0
+	sub	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
@@ -49,7 +53,7 @@ func0000000000000020:                   # @func0000000000000020
 	mul	a0, a0, a1
 	ret
 .LCPI3_0:
-	.quad	8130577079664715991             # 0x70d59cc6bc5928d7
+	.quad	-8130577079664715991            # 0x8f2a633943a6d729
 func0000000000000069:                   # @func0000000000000069
 	lui	a2, 439453
 	slli	a2, a2, 1
@@ -59,11 +63,13 @@ func0000000000000069:                   # @func0000000000000069
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mulh	a1, a0, a3
-	sub	a1, a1, a0
-	srli	a0, a1, 63
+	add	a1, a1, a0
+	srli	a2, a1, 63
 	srai	a1, a1, 25
-	add	a0, a0, a1
-	lui	a1, 14648
-	addiw	a1, a1, 1792
-	mul	a0, a0, a1
+	add	a1, a1, a2
+	lui	a2, 14648
+	addiw	a2, a2, 1792
+	mul	a1, a1, a2
+	sub	a0, a0, a0
+	sub	a0, a0, a1
 	ret

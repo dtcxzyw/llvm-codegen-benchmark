@@ -23,7 +23,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 32
-	or	a2, a0, a1
+	or	a2, a1, a0
 	srli	a1, a2, 40
 	lui	a3, 16
 	addiw	a3, a3, -256
@@ -52,7 +52,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 16
-	or	a2, a0, a1
+	or	a2, a1, a0
 	srli	a1, a2, 40
 	lui	a3, 16
 	addiw	a3, a3, -256

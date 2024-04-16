@@ -9,7 +9,7 @@ entry:
   %4 = shl i64 %3, 32
   %5 = add i64 %4, 4294967296
   %6 = ashr exact i64 %5, 32
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

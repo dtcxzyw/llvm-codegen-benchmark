@@ -665,9 +665,9 @@ entry:
 define i16 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
-  %3 = icmp ne i16 %0, 0
-  %4 = select i1 %3, i16 %2, i16 0
-  ret i16 %4
+  %.not = icmp eq i16 %0, 0
+  %3 = select i1 %.not, i16 0, i16 %2
+  ret i16 %3
 }
 
 ; 1 occurrences:
@@ -676,9 +676,9 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp ne i64 %0, 64
-  %4 = select i1 %3, i64 %2, i64 9223372036854775807
-  ret i64 %4
+  %.not = icmp eq i64 %0, 64
+  %3 = select i1 %.not, i64 9223372036854775807, i64 %2
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -699,9 +699,9 @@ entry:
 define i32 @func000000000000003c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ne i64 %0, 0
-  %4 = select i1 %3, i32 %2, i32 0
-  ret i32 %4
+  %.not = icmp eq i64 %0, 0
+  %3 = select i1 %.not, i32 0, i32 %2
+  ret i32 %3
 }
 
 ; 2 occurrences:

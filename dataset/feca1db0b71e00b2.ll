@@ -84,7 +84,7 @@ define i32 @func0000000000000004(i8 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16383
   %3 = zext nneg i16 %2 to i32
-  %4 = zext i8 %0 to i32
+  %4 = zext nneg i8 %0 to i32
   %5 = shl i32 %3, %4
   ret i32 %5
 }

@@ -7,7 +7,7 @@
 define i64 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 33554432
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = zext i32 %5 to i64
   %7 = mul nuw i64 %6, 4294967297

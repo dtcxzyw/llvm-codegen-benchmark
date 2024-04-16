@@ -34,7 +34,7 @@ entry:
 define i1 @func000000000000002a(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp sgt i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -72,7 +72,7 @@ entry:
 define i1 @func000000000000018c(i8 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ne i8 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

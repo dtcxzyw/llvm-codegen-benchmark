@@ -8,7 +8,7 @@ define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 80)
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 10)
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nsw i32 %2 to i8
   %4 = udiv i8 80, %3
   %5 = zext nneg i8 %4 to i32
   ret i32 %5

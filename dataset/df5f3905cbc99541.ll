@@ -8,8 +8,8 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 2097151
-  %5 = shl nuw nsw i64 %4, 5
+  %4 = shl i64 %3, 5
+  %5 = and i64 %4, 67108832
   %6 = and i64 %0, 31
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -21,8 +21,8 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = and i32 %3, 7
-  %5 = shl nuw nsw i32 %4, 3
+  %4 = shl i32 %3, 3
+  %5 = and i32 %4, 56
   %6 = and i32 %0, 7
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -34,11 +34,10 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = and i32 %3, 2097151
-  %5 = shl nuw i32 %4, 11
-  %6 = and i32 %0, 2047
-  %7 = or disjoint i32 %5, %6
-  ret i32 %7
+  %4 = shl i32 %3, 11
+  %5 = and i32 %0, 2047
+  %6 = or disjoint i32 %4, %5
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

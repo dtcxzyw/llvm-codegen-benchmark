@@ -38,7 +38,7 @@ func000000000000018a:                   # @func000000000000018a
 	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func0000000000000046:                   # @func0000000000000046

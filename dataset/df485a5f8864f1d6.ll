@@ -29,7 +29,7 @@ entry:
   %3 = select i1 %2, i64 5, i64 6
   %4 = icmp ugt i64 %1, 255
   %5 = select i1 %4, i64 7, i64 %3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = select i1 %2, i8 2, i8 3
   %4 = icmp ult i32 %1, 224
   %5 = select i1 %4, i8 1, i8 %3
-  %6 = add i8 %0, %5
+  %6 = add i8 %5, %0
   ret i8 %6
 }
 
@@ -146,7 +146,7 @@ entry:
   %3 = select i1 %2, i32 -58000, i32 -244000
   %4 = icmp ult i8 %1, 75
   %5 = select i1 %4, i32 8600, i32 %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -186,7 +186,7 @@ entry:
   %3 = select i1 %2, i32 3, i32 6
   %4 = icmp ugt i32 %1, 1
   %5 = select i1 %4, i32 1, i32 %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -199,7 +199,7 @@ entry:
   %3 = select i1 %2, i32 3, i32 4
   %4 = icmp slt i32 %1, 10
   %5 = select i1 %4, i32 2, i32 %3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -225,10 +225,10 @@ define i64 @func0000000000000120(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 2097152
   %3 = select i1 %2, i64 4096, i64 2097152
-  %4 = icmp ugt i64 %1, 1073741823
-  %5 = select i1 %4, i64 1073741824, i64 %3
-  %6 = add i64 %0, %5
-  ret i64 %6
+  %.inv = icmp ult i64 %1, 1073741824
+  %4 = select i1 %.inv, i64 %3, i64 1073741824
+  %5 = add i64 %4, %0
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -240,7 +240,7 @@ entry:
   %3 = select i1 %2, i32 2, i32 3
   %4 = icmp slt i32 %1, 256
   %5 = select i1 %4, i32 1, i32 %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

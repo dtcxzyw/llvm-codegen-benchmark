@@ -5,8 +5,11 @@ func000000000000003c:                   # @func000000000000003c
 	and	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	addi	a1, a1, -1
-	zext.w	a1, a1
+	li	a2, -16
+	zext.w	a2, a2
+	add	a1, a1, a2
+	addi	a1, a1, 15
+	and	a1, a1, a2
 	sltiu	a1, a1, 48
 	and	a0, a0, a1
 	ret
@@ -24,7 +27,8 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	addi	a1, a1, 1
+	andi	a1, a1, 1
+	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011

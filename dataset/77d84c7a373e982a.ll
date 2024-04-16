@@ -9,7 +9,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 10)
   %5 = and i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = tail call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 19)
   %5 = and i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

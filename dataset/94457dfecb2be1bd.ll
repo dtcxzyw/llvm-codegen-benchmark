@@ -51,8 +51,8 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add nsw i64 %2, -1
-  %4 = sub i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = add i64 %2, %3
   ret i64 %4
 }
 

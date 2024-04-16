@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 764
-  %3 = shl nuw nsw i32 %2, 10
+  %2 = shl i32 %1, 10
+  %3 = and i32 %2, 782336
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, i32 2097152, i32 6291456
   %6 = or disjoint i32 %5, %3

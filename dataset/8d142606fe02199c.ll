@@ -8,7 +8,7 @@
 define i32 @func0000000000000077(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %4, %5
   %7 = tail call noundef i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 13)
@@ -25,7 +25,7 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i32 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %4, %5
   %7 = tail call i32 @llvm.fshl.i32(i32 %6, i32 %6, i32 16)

@@ -303,7 +303,7 @@ define i1 @func000000000000006c(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
@@ -1142,7 +1142,7 @@ define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -1232,10 +1232,9 @@ entry:
 define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nsw i64 -1, %2
-  %4 = and i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = lshr i64 %0, %2
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 37 occurrences:
@@ -1279,7 +1278,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
@@ -1389,9 +1388,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -1480,9 +1479,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000003c(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i64
+  %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 1, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
@@ -1495,7 +1494,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
+  %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
   %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
@@ -1646,10 +1645,9 @@ entry:
 define i1 @func000000000000005c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nsw i64 -1, %2
-  %4 = and i64 %0, %3
-  %5 = icmp ne i64 %4, 0
-  ret i1 %5
+  %3 = lshr i64 %0, %2
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 22 occurrences:

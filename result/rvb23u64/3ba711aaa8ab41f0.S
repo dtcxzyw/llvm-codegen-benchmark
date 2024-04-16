@@ -10,8 +10,9 @@ func0000000000000078:                   # @func0000000000000078
 	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	add	a1, a1, a2
-	addw	a0, a0, a1
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
@@ -27,7 +28,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000051:                   # @func0000000000000051
 	add	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000028a:                   # @func000000000000028a

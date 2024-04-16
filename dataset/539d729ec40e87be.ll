@@ -12,8 +12,9 @@ define i1 @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.emitted_diff_symbol.1779459, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32
-  %5 = select i1 %0, ptr %4, ptr null
-  %6 = icmp eq ptr %5, null
+  %5 = icmp eq ptr %4, null
+  %not. = xor i1 %0, true
+  %6 = select i1 %not., i1 true, i1 %5
   ret i1 %6
 }
 

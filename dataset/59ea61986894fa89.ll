@@ -7,10 +7,9 @@
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 10
-  %3 = add i64 %2, 10
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 9
+  ret ptr %4
 }
 
 ; 10 occurrences:
@@ -28,10 +27,9 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 24
-  %3 = add nuw nsw i64 %2, 72
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 80
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -41,10 +39,9 @@ entry:
 define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -54,10 +51,9 @@ entry:
 define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 12
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -66,10 +62,9 @@ entry:
 define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 24
-  %3 = add nuw nsw i64 %2, 8
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 1
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 9
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -78,10 +73,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
-  %3 = add i64 %2, 1
-  %4 = getelementptr inbounds %"class.vcg::Point3.2213983", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr %"class.vcg::Point3.2213983", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

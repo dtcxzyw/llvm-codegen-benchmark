@@ -24,7 +24,7 @@
 define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %2
-  %4 = fcmp olt float %1, %3
+  %4 = fcmp ogt float %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %2
-  %4 = fcmp ult float %1, %3
+  %4 = fcmp ugt float %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }

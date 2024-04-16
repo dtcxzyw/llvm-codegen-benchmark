@@ -13,14 +13,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a1, 1
 	lui	a1, 2
-	beqz	a3, .LBB1_3
-	bgeu	a1, a0, .LBB1_4
-.LBB1_2:                                # %entry
-	seqz	a0, a0
-	ret
-.LBB1_3:                                # %entry
+	bnez	a3, .LBB1_2
 	mv	a1, a2
-	bltu	a2, a0, .LBB1_2
-.LBB1_4:                                # %entry
-	seqz	a0, a1
+.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	seqz	a0, a0
 	ret

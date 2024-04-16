@@ -114,7 +114,7 @@ func0000000000000184:                   # @func0000000000000184
 	zext.h	a1, a1
 	sltiu	a1, a1, 128
 	xori	a1, a1, 1
-	andi	a0, a0, 31
-	sltiu	a0, a0, 4
+	andi	a0, a0, 28
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -11,7 +11,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
   %5 = getelementptr inbounds i8, ptr %4, i64 56
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

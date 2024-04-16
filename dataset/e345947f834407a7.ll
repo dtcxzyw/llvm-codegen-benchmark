@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
   %6 = shl i32 %0, 1
   %7 = or disjoint i32 %6, %5
@@ -33,7 +33,7 @@ entry:
 define i64 @func0000000000000045(i64 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = shl nuw i64 %0, 32
   %7 = or disjoint i64 %6, %5

@@ -65,7 +65,7 @@ entry:
 define i16 @func0000000000000000(i1 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = lshr i48 %2, 32
-  %4 = trunc i48 %3 to i16
+  %4 = trunc nuw i48 %3 to i16
   %5 = select i1 %0, i16 %4, i16 %1
   ret i16 %5
 }

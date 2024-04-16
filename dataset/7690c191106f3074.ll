@@ -128,8 +128,8 @@ entry:
   %3 = select i1 %2, i64 1, i64 %1
   %4 = add nsw i64 %3, %1
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 82351536043346212)
-  %6 = select i1 %0, i64 82351536043346212, i64 %5
-  %7 = mul nuw nsw i64 %6, 112
+  %6 = mul nuw nsw i64 %5, 112
+  %7 = select i1 %0, i64 9223372036854775744, i64 %6
   ret i64 %7
 }
 

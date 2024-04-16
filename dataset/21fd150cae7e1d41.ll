@@ -17,7 +17,7 @@ define i32 @func000000000000001e(i16 %0) #0 {
 entry:
   %1 = zext i16 %0 to i32
   %2 = shl nuw nsw i32 %1, 10
-  %3 = and i32 %2, 1047552
+  %3 = and i32 %2, 983040
   %4 = add nuw nsw i32 %3, 65536
   %5 = lshr i32 %4, 18
   ret i32 %5

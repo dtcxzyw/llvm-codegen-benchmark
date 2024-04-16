@@ -13,10 +13,10 @@ define i32 @func0000000000000010(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = lshr exact i64 %3, 5
-  %5 = trunc i64 %4 to i32
-  %6 = shl i32 %5, 1
-  ret i32 %6
+  %sh.diff = lshr i64 %3, 4
+  %tr.sh.diff = trunc i64 %sh.diff to i32
+  %4 = and i32 %tr.sh.diff, -2
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -26,9 +26,9 @@ define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = lshr i64 %3, 2
-  %5 = trunc i64 %4 to i32
-  %6 = shl i32 %5, 5
+  %4 = trunc i64 %3 to i32
+  %5 = shl i32 %4, 3
+  %6 = and i32 %5, -32
   ret i32 %6
 }
 
@@ -40,10 +40,9 @@ define i32 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = lshr i64 %3, 2
-  %5 = trunc i64 %4 to i32
-  %6 = shl nsw i32 %5, 2
-  ret i32 %6
+  %tr.sh.diff = trunc i64 %3 to i32
+  %4 = and i32 %tr.sh.diff, -4
+  ret i32 %4
 }
 
 ; 6 occurrences:
@@ -58,10 +57,10 @@ define i32 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = lshr exact i64 %3, 2
-  %5 = trunc i64 %4 to i32
-  %6 = shl nsw i32 %5, 1
-  ret i32 %6
+  %sh.diff = lshr i64 %3, 1
+  %tr.sh.diff = trunc i64 %sh.diff to i32
+  %4 = and i32 %tr.sh.diff, -2
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

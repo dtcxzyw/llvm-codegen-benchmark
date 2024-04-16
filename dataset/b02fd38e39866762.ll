@@ -191,11 +191,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000061(i16 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 -8, i32 0
-  %4 = zext i16 %0 to i32
-  %5 = add nsw i32 %3, %4
-  ret i32 %5
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 0, i32 -8
+  %3 = zext i16 %0 to i32
+  %4 = add nsw i32 %2, %3
+  ret i32 %4
 }
 
 ; 1 occurrences:

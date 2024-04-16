@@ -30,8 +30,9 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	slli	a2, a2, 1
-	srli	a2, a2, 1
+	lui	a3, 1046528
+	srli	a3, a3, 1
+	and	a2, a2, a3
 	lui	a3, 4091
 	slli	a3, a3, 10
 	addi	a3, a3, -1
@@ -42,8 +43,8 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	slli	a2, a2, 41
-	srli	a2, a2, 54
+	lui	a3, 2046
+	and	a2, a2, a3
 	bnez	a2, .LBB5_2
 	li	a1, 1
 .LBB5_2:                                # %entry

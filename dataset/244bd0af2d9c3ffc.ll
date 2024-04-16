@@ -136,8 +136,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -257
-  %3 = or disjoint i32 %2, %0
+  %2 = and i32 %1, -321
+  %3 = or i32 %2, %0
   %4 = or i32 %3, 64
   ret i32 %4
 }
@@ -785,7 +785,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 32
-  %3 = or disjoint i8 %0, %2
+  %3 = or disjoint i8 %2, %0
   %4 = or disjoint i8 %3, 2
   ret i8 %4
 }
@@ -874,7 +874,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 191
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = or disjoint i32 %3, 64
   ret i32 %4
 }

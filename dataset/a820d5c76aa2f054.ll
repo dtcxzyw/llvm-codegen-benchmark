@@ -78,7 +78,7 @@ define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 7
   %3 = shl nuw i8 1, %2
-  %4 = and i8 %0, %3
+  %4 = and i8 %3, %0
   %5 = icmp ne i8 %4, 0
   ret i1 %5
 }

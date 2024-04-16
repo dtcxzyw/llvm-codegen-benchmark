@@ -26,7 +26,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = add nsw i32 %2, -1
+  %3 = add i32 %2, 16777215
   %4 = and i32 %3, 16711680
   ret i32 %4
 }

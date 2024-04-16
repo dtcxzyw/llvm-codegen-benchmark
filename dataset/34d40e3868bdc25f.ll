@@ -11,8 +11,8 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 15
   %4 = add nuw nsw i32 %3, 1
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %4 to i64
+  %6 = select i1 %0, i64 0, i64 %5
   ret i64 %6
 }
 
@@ -24,8 +24,8 @@ entry:
   %2 = lshr i32 %1, 7
   %3 = and i32 %2, 31
   %4 = add nsw i32 %3, -5
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %4 to i64
+  %6 = select i1 %0, i64 0, i64 %5
   ret i64 %6
 }
 

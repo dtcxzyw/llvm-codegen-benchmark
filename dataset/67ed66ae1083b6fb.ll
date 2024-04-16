@@ -37,8 +37,8 @@
 define i64 @func0000000000000006(i16 %0) #0 {
 entry:
   %1 = call i16 @llvm.cttz.i16(i16 %0, i1 true), !range !0
-  %2 = zext nneg i16 %1 to i64
-  %3 = lshr i64 %2, 1
+  %2 = lshr i16 %1, 1
+  %3 = zext nneg i16 %2 to i64
   ret i64 %3
 }
 

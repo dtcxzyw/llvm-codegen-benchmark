@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 7
-  %2 = trunc nuw nsw i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, 7
   %3 = sub nuw nsw i32 8, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
@@ -31,8 +31,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 15
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, 15
   %3 = sub nuw nsw i32 16, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

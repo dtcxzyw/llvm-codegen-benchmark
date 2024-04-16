@@ -8,7 +8,7 @@ entry:
   %4 = sub i32 %3, %1
   %5 = add i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

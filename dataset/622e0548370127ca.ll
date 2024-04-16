@@ -8,7 +8,7 @@ entry:
   %3 = mul nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
   %5 = srem i64 %4, 255
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nsw i64 %5 to i32
   ret i32 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = mul i64 %1, %2
   %4 = add i64 %3, %0
   %5 = srem i64 %4, 10
-  %6 = trunc i64 %5 to i8
+  %6 = trunc nsw i64 %5 to i8
   ret i8 %6
 }
 

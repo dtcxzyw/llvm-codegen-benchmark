@@ -21,8 +21,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 3
   %5 = and i32 %4, 3968
-  %6 = add nsw i32 %1, %5
-  %7 = icmp slt i32 %0, %6
+  %6 = add nsw i32 %5, %1
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -34,8 +34,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 16
   %5 = and i32 %4, 255
-  %6 = add nsw i32 %1, %5
-  %7 = icmp sgt i32 %0, %6
+  %6 = add nsw i32 %5, %1
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = lshr i32 %3, 5
   %5 = and i32 %4, 1
   %6 = add i32 %5, %1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

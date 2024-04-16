@@ -9,13 +9,11 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	lui	a1, 16
-	addi	a1, a1, -1
-	slli	a0, a1, 32
-	srli	a0, a0, 32
+	lui	a0, 16
+	addiw	a0, a0, -1
 	ret
 .LBB1_2:
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

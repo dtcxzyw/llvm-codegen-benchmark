@@ -22,7 +22,7 @@ entry:
   %4 = icmp eq i64 %3, 32767
   %5 = add nuw nsw i64 %1, 65536
   %6 = select i1 %4, i64 0, i64 %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

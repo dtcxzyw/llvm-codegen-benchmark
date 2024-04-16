@@ -15,7 +15,7 @@ define i8 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = lshr i64 %1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = trunc i64 %5 to i8
   ret i8 %6
 }

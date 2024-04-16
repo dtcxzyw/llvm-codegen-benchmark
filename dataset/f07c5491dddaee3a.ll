@@ -16,9 +16,9 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
   %3 = and i32 %0, 255
-  %4 = or disjoint i32 %3, %2
-  %5 = and i32 %4, 65535
-  ret i32 %5
+  %.masked = and i32 %2, 65280
+  %4 = or disjoint i32 %3, %.masked
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -28,10 +28,10 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 9
-  %3 = and i32 %0, -3585
-  %4 = or i32 %3, %2
-  %5 = and i32 %4, 8191
-  ret i32 %5
+  %3 = and i32 %0, 4607
+  %.masked = and i32 %2, 7680
+  %4 = or i32 %3, %.masked
+  ret i32 %4
 }
 
 ; 37 occurrences:
@@ -77,9 +77,9 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = shl nuw nsw i32 %0, 6
-  %4 = or disjoint i32 %3, %2
-  %5 = and i32 %4, 63488
-  ret i32 %5
+  %.masked = and i32 %3, 63488
+  %4 = or i32 %.masked, %2
+  ret i32 %4
 }
 
 ; 4 occurrences:
@@ -90,11 +90,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 576460752303423487
+  %2 = and i64 %1, 576460748142673919
   %3 = shl nuw i64 %0, 59
   %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, -4160749569
-  ret i64 %5
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -103,11 +102,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2146500607
+  %2 = and i32 %1, 2129719296
   %3 = shl nuw nsw i32 %0, 16
-  %4 = or i32 %3, %2
-  %5 = and i32 %4, 2130702336
-  ret i32 %5
+  %.masked = and i32 %3, 2130640896
+  %4 = or i32 %.masked, %2
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

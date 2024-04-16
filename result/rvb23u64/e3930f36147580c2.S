@@ -8,10 +8,10 @@ func0000000000000015:                   # @func0000000000000015
 	srli	a2, a0, 4
 	mulhu	a1, a2, a1
 	srli	a1, a1, 3
-	lui	a2, 1048575
-	addiw	a2, a2, 496
+	lui	a2, 1
+	addiw	a2, a2, -496
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	-7442832613395060283            # 0x98b5bf2c03e529c5
@@ -22,9 +22,9 @@ func0000000000000035:                   # @func0000000000000035
 	max	a0, a0, a2
 	mulhu	a1, a0, a1
 	srli	a1, a1, 31
-	lui	a2, 609123
+	lui	a2, 439453
 	slli	a2, a2, 1
-	addi	a2, a2, -1024
+	addi	a2, a2, 1024
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret

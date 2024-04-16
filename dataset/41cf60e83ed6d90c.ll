@@ -11,8 +11,8 @@ entry:
   %3 = and i32 %2, 7
   %4 = zext i8 %1 to i32
   %5 = lshr i32 %4, %3
-  %6 = trunc i32 %5 to i8
-  %7 = or i8 %0, %6
+  %6 = trunc nuw i32 %5 to i8
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 

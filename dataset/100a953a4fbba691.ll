@@ -30,7 +30,7 @@ entry:
   %3 = mul i64 %2, -4265267296055464877
   %4 = lshr i64 %3, 33
   %5 = xor i64 %4, %3
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr inbounds %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducerKVP.1699582", ptr %0, i64 %6
   ret ptr %7
 }

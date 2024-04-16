@@ -7,7 +7,7 @@ define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 32
   %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 

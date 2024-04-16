@@ -6,9 +6,9 @@ define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = icmp slt i32 %2, 0
-  %4 = add nsw i32 %2, 60
-  %5 = select i1 %3, i32 %4, i32 %2
-  %6 = shl i32 %5, 23
+  %4 = shl i32 %2, 23
+  %5 = add i32 %4, 503316480
+  %6 = select i1 %3, i32 %5, i32 %4
   ret i32 %6
 }
 
@@ -22,9 +22,9 @@ define i64 @func0000000000000361(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 131041
-  %4 = add nsw i64 %2, -131042
-  %5 = select i1 %3, i64 %4, i64 %2
-  %6 = shl nsw i64 %5, 16
+  %4 = shl i64 %2, 16
+  %5 = add i64 %4, -8587968512
+  %6 = select i1 %3, i64 %5, i64 %4
   ret i64 %6
 }
 
@@ -34,11 +34,10 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = add i32 %2, -2147483647
-  %4 = icmp slt i32 %2, 0
-  %5 = select i1 %4, i32 %3, i32 %2
-  %6 = shl i32 %5, 1
-  ret i32 %6
+  %3 = lshr i32 %2, 31
+  %4 = add i32 %2, %3
+  %5 = shl i32 %4, 1
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

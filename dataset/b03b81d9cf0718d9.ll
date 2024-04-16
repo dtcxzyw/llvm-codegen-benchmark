@@ -8,7 +8,7 @@ entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 

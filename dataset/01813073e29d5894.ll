@@ -264,9 +264,9 @@ define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 -1
-  %6 = and i32 %5, -256
-  %7 = icmp eq i32 %6, 129280
+  %5 = and i32 %0, -256
+  %6 = icmp eq i32 %5, 129280
+  %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }
 

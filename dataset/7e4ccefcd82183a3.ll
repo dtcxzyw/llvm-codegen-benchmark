@@ -10,7 +10,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 3, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %1, %5
+  %6 = mul nsw i64 %5, %1
   %7 = getelementptr inbounds float, ptr %0, i64 %6
   ret ptr %7
 }

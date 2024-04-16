@@ -29,10 +29,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 58
-  %7 = getelementptr inbounds [3 x i16], ptr %6, i64 0, i64 %4
-  ret ptr %7
+  %5 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %0, i64 %1, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:

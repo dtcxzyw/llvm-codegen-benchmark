@@ -16,7 +16,7 @@ entry:
   %3 = mul i32 %2, 10
   %4 = add nsw i32 %1, -48
   %5 = mul i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

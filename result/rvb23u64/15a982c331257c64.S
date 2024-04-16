@@ -54,10 +54,10 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000030:                   # @func0000000000000030
 	addi	a2, a2, -64
+	czero.eqz	a1, a1, a2
 	li	a3, -1
 	srli	a3, a3, 1
-	czero.nez	a3, a3, a2
-	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	czero.nez	a2, a3, a2
+	or	a1, a1, a2
 	sub	a0, a1, a0
 	ret

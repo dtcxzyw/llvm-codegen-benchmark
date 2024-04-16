@@ -962,8 +962,8 @@ define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ugt i64 %4, 1023
+  %4 = and i64 %3, 4294966272
+  %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
 

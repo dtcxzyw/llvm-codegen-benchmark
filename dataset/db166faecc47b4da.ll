@@ -21,11 +21,10 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %0, %3
-  %5 = bitcast float %4 to i32
-  %6 = and i32 %5, 2139095040
-  %7 = icmp ne i32 %6, 2139095040
-  ret i1 %7
+  %4 = fadd float %3, %0
+  %5 = call float @llvm.fabs.f32(float %4)
+  %6 = fcmp one float %5, 0x7FF0000000000000
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -35,11 +34,23 @@ entry:
 define i1 @func0000000000000001(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %0, %3
-  %5 = bitcast double %4 to i64
-  %6 = and i64 %5, 9218868437227405312
-  %7 = icmp eq i64 %6, 9218868437227405312
-  ret i1 %7
+  %4 = fadd double %3, %0
+  %5 = call double @llvm.fabs.f64(double %4)
+  %6 = fcmp ueq double %5, 0x7FF0000000000000
+  ret i1 %6
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i1 @llvm.is.fpclass.f32(float, i32 immarg) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fabs.f32(float) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i1 @llvm.is.fpclass.f64(double, i32 immarg) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare double @llvm.fabs.f64(double) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -551,9 +551,9 @@
 define i64 @func000000000000000c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 15, i64 %0
-  %5 = shl nuw i64 %4, 1
-  %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 9223372036854775807)
+  %4 = shl nuw i64 %0, 1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 9223372036854775807)
+  %6 = select i1 %3, i64 30, i64 %5
   ret i64 %6
 }
 
@@ -587,9 +587,9 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func000000000000000e(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 3, i64 %0
-  %5 = shl nuw nsw i64 %4, 1
-  %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 1152921504606846975)
+  %4 = shl nuw nsw i64 %0, 1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 1152921504606846975)
+  %6 = select i1 %3, i64 6, i64 %5
   ret i64 %6
 }
 

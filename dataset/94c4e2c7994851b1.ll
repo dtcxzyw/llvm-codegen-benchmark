@@ -10,7 +10,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

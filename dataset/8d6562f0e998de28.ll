@@ -19,9 +19,9 @@
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = select i1 %0, ptr %4, ptr %3
-  ret ptr %5
+  %.idx = sext i1 %0 to i64
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 ; 26 occurrences:
@@ -55,9 +55,9 @@ entry:
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 56
-  %5 = select i1 %0, ptr %4, ptr %3
-  ret ptr %5
+  %.idx = select i1 %0, i64 56, i64 0
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -66,9 +66,9 @@ entry:
 define ptr @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = select i1 %0, ptr %4, ptr %3
-  ret ptr %5
+  %.idx = select i1 %0, i64 8, i64 0
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.idx
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

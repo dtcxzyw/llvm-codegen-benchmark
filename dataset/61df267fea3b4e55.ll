@@ -14,7 +14,7 @@ entry:
   %3 = icmp ult i32 %2, 56
   %4 = select i1 %3, i32 56, i32 120
   %5 = sub nsw i32 %4, %2
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = icmp ult i32 %2, 56
   %4 = select i1 %3, i32 56, i32 120
   %5 = sub nsw i32 %4, %2
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

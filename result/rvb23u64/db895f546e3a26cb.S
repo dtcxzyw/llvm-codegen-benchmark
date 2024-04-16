@@ -10,8 +10,8 @@ func0000000000000002:                   # @func0000000000000002
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	xor	a0, a0, a1
+	zext.h	a2, a2
 	czero.eqz	a0, a2, a0
-	zext.h	a0, a0
 	ret
 func0000000000000063:                   # @func0000000000000063
 	sext.w	a1, a1

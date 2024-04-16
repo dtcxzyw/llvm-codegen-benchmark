@@ -15,7 +15,7 @@ entry:
   %4 = shl i64 %1, %3
   %5 = lshr i64 %4, 40
   %6 = and i64 %5, 255
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

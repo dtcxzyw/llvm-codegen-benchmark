@@ -12,7 +12,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

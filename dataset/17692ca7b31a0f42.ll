@@ -13,9 +13,9 @@
 define i32 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
-  %2 = ashr i32 %1, 1
-  %3 = or i32 %2, %1
-  %4 = ashr i32 %3, 2
+  %2 = ashr i32 %1, 3
+  %3 = ashr i32 %1, 2
+  %4 = or i32 %2, %3
   ret i32 %4
 }
 

@@ -14,7 +14,7 @@
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = select i1 %3, i8 7, i8 0
   ret i8 %4
 }

@@ -13,7 +13,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 6
   %5 = add nsw i64 %4, 1
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 

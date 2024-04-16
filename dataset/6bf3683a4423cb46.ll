@@ -25,9 +25,8 @@ entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 31
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr inbounds { ptr, { i64 } }, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds { ptr, { i64 } }, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -41,9 +40,8 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 1099511627775
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.page.2003047, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.page.2003047, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 5 occurrences:

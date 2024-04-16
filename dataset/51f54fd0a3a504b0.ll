@@ -39,7 +39,7 @@ entry:
   %3 = and i64 %2, 255
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.1637615", ptr %0, i64 %6
   ret ptr %7
 }

@@ -456,9 +456,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 11, i32 10
-  %3 = icmp ne i32 %0, 0
-  %4 = select i1 %3, i32 %2, i32 9
-  ret i32 %4
+  %.not = icmp eq i32 %0, 0
+  %3 = select i1 %.not, i32 9, i32 %2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

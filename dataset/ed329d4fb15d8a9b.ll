@@ -14,9 +14,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 -40
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -272
-  %6 = getelementptr [17 x %struct.bio_vec.1996641], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr [17 x %struct.bio_vec.1996641], ptr %5, i64 0, i64 %0, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -27,9 +26,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 64
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -60
-  %6 = getelementptr inbounds [0 x %struct.gough_report.2245972], ptr %5, i64 0, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds [0 x %struct.gough_report.2245972], ptr %5, i64 0, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 3 occurrences:

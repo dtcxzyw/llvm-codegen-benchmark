@@ -22,8 +22,8 @@ entry:
 define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 1073741824
-  %4 = select i1 %3, i32 %1, i32 %2
-  %5 = icmp ult i32 %4, 1073741824
+  %4 = icmp ult i32 %1, 1073741824
+  %5 = select i1 %3, i1 %4, i1 false
   %6 = select i1 %5, i32 32, i32 %0
   ret i32 %6
 }

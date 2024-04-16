@@ -50,11 +50,10 @@
 define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.std::__1::pair.248.1560179", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.std::__1::pair.248.1560179", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -63,7 +62,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
@@ -79,9 +78,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.Vec_Int_t_.1772180, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.Vec_Int_t_.1772180, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -92,9 +90,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, (anonymous namespace)::mutate_once_queue_t<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>>::entry_t.1891488", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, (anonymous namespace)::mutate_once_queue_t<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>>::entry_t.1891488", ptr %0, i64 %5, i32 0, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -103,11 +100,10 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.ImGuiTabItem.1931808, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.ImGuiTabItem.1931808, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -117,7 +113,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %1, %3
+  %4 = add i16 %3, %1
   %5 = zext i16 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr inbounds i8, ptr %6, i64 4
@@ -132,7 +128,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
-  %4 = add i16 %1, %3
+  %4 = add i16 %3, %1
   %5 = zext i16 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 8
@@ -145,7 +141,7 @@ entry:
 define ptr @func0000000000000005(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr inbounds i8, ptr %6, i64 6
@@ -160,7 +156,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -1

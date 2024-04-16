@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -48
+  %2 = xor i8 %1, 16
   %3 = or i8 %2, %0
   %4 = shl i8 %3, 3
   ret i8 %4
@@ -30,8 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add nsw i8 %1, -48
-  %3 = or disjoint i8 %2, %0
+  %2 = xor i8 %1, 16
+  %3 = or i8 %2, %0
   %4 = shl i8 %3, 3
   ret i8 %4
 }

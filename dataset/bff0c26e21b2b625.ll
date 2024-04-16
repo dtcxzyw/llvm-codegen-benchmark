@@ -35,7 +35,7 @@ entry:
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = shl nuw nsw i32 %3, 4
   %5 = and i32 %4, 458752
   ret i32 %5
@@ -47,7 +47,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = shl nsw i32 %3, 6
   %5 = and i32 %4, 117440512
   ret i32 %5
@@ -59,7 +59,7 @@ entry:
 define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = shl nuw nsw i32 %3, 4
   %5 = and i32 %4, 983040
   ret i32 %5

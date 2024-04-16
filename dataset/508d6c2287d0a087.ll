@@ -174,11 +174,9 @@
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 131072
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 562949953421312
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 168 occurrences:
@@ -354,11 +352,9 @@ entry:
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 131072
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 562949953421312
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 ; 9 occurrences:
@@ -375,11 +371,9 @@ entry:
 define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, 131072
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 562949953421312
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 9 occurrences:
@@ -396,11 +390,9 @@ entry:
 define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %3, 131072
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 562949953421312
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

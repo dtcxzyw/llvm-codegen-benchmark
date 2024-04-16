@@ -7,7 +7,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = fdiv float %3, %1
   %5 = fptosi float %4 to i32
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 

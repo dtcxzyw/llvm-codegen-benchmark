@@ -10,7 +10,7 @@ entry:
   %3 = and i16 %2, 63
   %4 = zext nneg i16 %3 to i32
   %5 = icmp eq i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = and i16 %2, 16383
   %4 = zext nneg i16 %3 to i32
   %5 = icmp sgt i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = and i16 %2, 16383
   %4 = zext nneg i16 %3 to i32
   %5 = icmp ugt i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

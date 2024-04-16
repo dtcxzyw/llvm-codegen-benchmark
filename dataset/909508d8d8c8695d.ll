@@ -128,7 +128,7 @@
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = and i64 %4, -245761
   %6 = shl nuw nsw i64 %0, 15
   %7 = or disjoint i64 %5, %6
@@ -142,11 +142,11 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
-  %5 = and i64 %4, -140733193388033
-  %6 = shl nuw nsw i64 %0, 32
-  %7 = or disjoint i64 %6, %5
-  ret i64 %7
+  %.masked = and i64 %1, -140733193388033
+  %4 = or i64 %.masked, %3
+  %5 = shl nuw nsw i64 %0, 32
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -156,7 +156,7 @@ entry:
 define i128 @func000000000000000d(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %1, %3
+  %4 = or disjoint i128 %3, %1
   %5 = and i128 %4, 36893488147419103230
   %6 = shl nuw i128 %0, 65
   %7 = or disjoint i128 %5, %6

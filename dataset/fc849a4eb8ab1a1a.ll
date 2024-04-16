@@ -18,7 +18,7 @@ entry:
   %3 = icmp ult i8 %2, 26
   %4 = select i1 %3, i8 32, i8 0
   %5 = or i8 %4, %1
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 

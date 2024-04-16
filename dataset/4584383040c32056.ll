@@ -8,7 +8,7 @@
 define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = and i32 %1, 832
   %6 = icmp eq i32 %5, 0
   %7 = select i1 %6, i1 true, i1 %4
@@ -79,7 +79,7 @@ entry:
 define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = and i64 %1, 268435456
   %6 = icmp ne i64 %5, 0
   %7 = select i1 %6, i1 true, i1 %4

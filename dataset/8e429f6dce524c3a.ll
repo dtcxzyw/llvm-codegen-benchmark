@@ -12,7 +12,7 @@
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = sub i64 0, %0
-  %2 = and i64 %0, %1
+  %2 = and i64 %1, %0
   %3 = icmp eq i64 %2, 1
   ret i1 %3
 }

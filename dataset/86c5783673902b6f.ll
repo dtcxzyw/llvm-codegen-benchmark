@@ -13,7 +13,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 201326592, i64 369098752
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -25,8 +25,8 @@ define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 -1, i64 -2
-  %5 = add nsw i64 %0, %4
+  %4 = select i1 %3, i64 4294967295, i64 4294967294
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -40,7 +40,7 @@ entry:
   %2 = and i32 %1, 16384
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 2, i64 4
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

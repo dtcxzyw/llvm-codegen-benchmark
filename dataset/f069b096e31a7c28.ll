@@ -9,7 +9,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = uitofp i32 %2 to double
   %4 = fdiv double 5.000000e-01, %3
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = uitofp i32 %2 to float
   %4 = fdiv float 1.000000e+00, %3
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

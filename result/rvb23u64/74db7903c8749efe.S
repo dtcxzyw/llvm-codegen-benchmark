@@ -5,8 +5,8 @@ func0000000000000029:                   # @func0000000000000029
 	maxu	a3, a2, a3
 	lui	a4, %hi(.LCPI0_0)
 	ld	a4, %lo(.LCPI0_0)(a4)
-	add	a3, a3, a2
-	sltu	a2, a3, a2
+	not	a2, a2
+	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a4, a2
 	or	a1, a1, a2
@@ -16,8 +16,8 @@ func0000000000000029:                   # @func0000000000000029
 func0000000000000009:                   # @func0000000000000009
 	li	a3, 1
 	maxu	a3, a2, a3
-	add	a3, a3, a2
-	sltu	a2, a3, a2
+	not	a2, a2
+	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	li	a3, -1
 	srli	a3, a3, 1
@@ -28,8 +28,8 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000028:                   # @func0000000000000028
 	li	a3, 1
 	maxu	a3, a2, a3
-	add	a3, a3, a2
-	sltu	a2, a3, a2
+	not	a2, a2
+	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	li	a3, -1
 	srli	a3, a3, 4

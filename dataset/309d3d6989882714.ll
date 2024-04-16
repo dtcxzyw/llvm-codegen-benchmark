@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 1, i32 %1
-  %3 = bitcast i32 %2 to float
+  %2 = bitcast i32 %1 to float
+  %3 = select i1 %0, float 0x36A0000000000000, float %2
   ret float %3
 }
 

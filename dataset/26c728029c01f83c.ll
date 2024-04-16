@@ -6,8 +6,8 @@
 define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -32,8 +32,8 @@ entry:
 define i1 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
-  %4 = icmp uge i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp uge i64 %3, %2
   ret i1 %4
 }
 
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
@@ -65,8 +65,8 @@ entry:
 define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = icmp ult i32 %3, %0
+  %3 = xor i32 %0, -1
+  %4 = icmp ult i32 %3, %2
   ret i1 %4
 }
 

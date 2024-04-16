@@ -1,9 +1,7 @@
 func000000000000001c:                   # @func000000000000001c
-	andi	a0, a0, 255
 	slli	a0, a0, 6
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a0, a0, 255
 	slli	a0, a0, 3
 	ret
 func000000000000000e:                   # @func000000000000000e

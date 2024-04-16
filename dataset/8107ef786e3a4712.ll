@@ -10,8 +10,8 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
   %5 = and i64 %4, 2031616
-  %6 = add nuw nsw i64 %1, %5
-  %7 = add i64 %0, %6
+  %6 = add nuw nsw i64 %5, %1
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
   %5 = and i32 %4, 2
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }
@@ -52,8 +52,8 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
   %5 = and i16 %4, 32512
-  %6 = add i16 %1, %5
-  %7 = add i16 %0, %6
+  %6 = add i16 %5, %1
+  %7 = add i16 %6, %0
   ret i16 %7
 }
 

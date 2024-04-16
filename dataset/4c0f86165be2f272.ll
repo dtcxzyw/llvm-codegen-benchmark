@@ -6,8 +6,8 @@
 define double @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
-  %4 = select i1 %3, double 1.000000e+00, double %0
-  %5 = fsub double 2.000000e+00, %4
+  %4 = fsub double 2.000000e+00, %0
+  %5 = select i1 %3, double 1.000000e+00, double %4
   ret double %5
 }
 
@@ -19,8 +19,8 @@ entry:
 define double @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %1, %2
-  %4 = select i1 %3, double 1.000000e+00, double %0
-  %5 = fsub double 1.000000e+00, %4
+  %4 = fsub double 1.000000e+00, %0
+  %5 = select i1 %3, double 0.000000e+00, double %4
   ret double %5
 }
 

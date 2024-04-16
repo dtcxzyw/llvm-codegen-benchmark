@@ -8,7 +8,7 @@ func00000000000000c4:                   # @func00000000000000c4
 func00000000000001c1:                   # @func00000000000001c1
 	andi	a1, a1, 255
 	slli	a1, a1, 6
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000ca:                   # @func00000000000000ca
@@ -18,9 +18,10 @@ func00000000000000ca:                   # @func00000000000000ca
 	sgtz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
+	sext.w	a0, a0
 	andi	a1, a1, 255
 	slli	a1, a1, 2
-	subw	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da

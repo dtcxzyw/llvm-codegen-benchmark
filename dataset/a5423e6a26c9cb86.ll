@@ -10,7 +10,7 @@ entry:
   %3 = lshr i64 %2, 3
   %4 = add nuw nsw i64 %3, 1
   %5 = add i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = lshr i64 %2, 3
   %4 = add nuw nsw i64 %3, 1
   %5 = add nuw i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -34,8 +34,8 @@ define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 7
-  %5 = add nuw nsw i32 %1, %4
-  %6 = icmp ult i32 %0, %5
+  %5 = add nuw nsw i32 %4, %1
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = add nuw nsw i32 %3, 1
   %5 = add i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = add nuw nsw i32 %3, 1
   %5 = add i32 %4, %1
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = lshr i64 %2, 12
   %4 = add nuw nsw i64 %3, 1
   %5 = add nuw nsw i64 %4, %1
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = lshr i64 %2, 12
   %4 = add nuw nsw i64 %3, 1
   %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -99,7 +99,7 @@ entry:
   %3 = lshr i64 %2, 12
   %4 = add nsw i64 %3, -1
   %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ule i64 %0, %5
+  %6 = icmp uge i64 %5, %0
   ret i1 %6
 }
 
@@ -112,7 +112,7 @@ entry:
   %3 = lshr i32 %2, 8
   %4 = add nuw nsw i32 %3, 1
   %5 = add nuw nsw i32 %4, %1
-  %6 = icmp ne i32 %0, %5
+  %6 = icmp ne i32 %5, %0
   ret i1 %6
 }
 

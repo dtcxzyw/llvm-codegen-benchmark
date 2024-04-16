@@ -19,7 +19,7 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a3, a3, 62
 	add	a2, a2, a3
 	srai	a2, a2, 2
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 .LCPI3_0:
@@ -37,7 +37,7 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a3, a3, 62
 	add	a2, a2, a3
 	srli	a2, a2, 2
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret

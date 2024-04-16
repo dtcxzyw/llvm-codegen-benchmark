@@ -9,7 +9,7 @@ entry:
   %4 = icmp ugt i64 %3, %2
   %5 = trunc i64 %2 to i32
   %6 = select i1 %4, i32 %5, i32 %1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

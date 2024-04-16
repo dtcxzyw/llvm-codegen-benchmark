@@ -489,7 +489,7 @@
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 46
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   ret i1 %3
 }
 
@@ -1266,7 +1266,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 127
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   ret i1 %3
 }
 
@@ -1456,7 +1456,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   ret i1 %3
 }
 

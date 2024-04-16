@@ -24,9 +24,8 @@ define i1 @func00000000000000da(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -36,9 +35,8 @@ define i1 @func00000000000000d6(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp slt i64 %4, 1
-  ret i1 %5
+  %4 = icmp sge i64 %3, %0
+  ret i1 %4
 }
 
 ; 26 occurrences:
@@ -72,10 +70,9 @@ entry:
 define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  %4 = sub i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = add i64 %0, -1
+  %4 = icmp eq i64 %3, %2
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -85,10 +82,9 @@ entry:
 define i1 @func00000000000000c4(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  %4 = sub i64 %0, %3
-  %5 = icmp ult i64 %4, 2
-  ret i1 %5
+  %3 = sub i64 %2, %0
+  %4 = icmp ugt i64 %3, -3
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -99,9 +95,8 @@ define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw nsw i64 %2, 4
-  %4 = sub i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -123,9 +118,8 @@ define i1 @func00000000000000d1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 2
-  %4 = sub nsw i32 %0, %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -135,9 +129,8 @@ define i1 @func00000000000001da(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nuw nsw i32 %2, 4
-  %4 = sub nsw i32 %0, %3
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -158,10 +151,9 @@ entry:
 define i1 @func00000000000000ca(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
-  %4 = sub i32 %0, %3
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %3 = sub i32 %2, %0
+  %4 = icmp slt i32 %3, -1
+  ret i1 %4
 }
 
 ; 1 occurrences:

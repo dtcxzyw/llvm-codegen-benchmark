@@ -14,11 +14,11 @@
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 4
-  %4 = or disjoint i32 %3, %1
-  %5 = and i32 %4, -9
-  %6 = or disjoint i32 %0, %5
-  %7 = and i32 %6, -131073
-  ret i32 %7
+  %.masked = and i32 %1, -131081
+  %4 = or i32 %3, %.masked
+  %.masked1 = and i32 %0, -131073
+  %5 = or i32 %4, %.masked1
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

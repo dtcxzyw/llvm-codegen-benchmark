@@ -1,5 +1,4 @@
 
-%"struct.re2::Splice.1554359" = type { ptr, ptr, i32, i32 }
 %"struct.std::pair.1554428" = type { %"class.std::__cxx11::basic_string.1554429", ptr }
 %"class.std::__cxx11::basic_string.1554429" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1554430", i64, %union.anon.9.1554431 }
 %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.1554430" = type { ptr }
@@ -1714,10 +1713,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 24
-  %3 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %2 = getelementptr inbounds i8, ptr %0, i64 %1
+  %3 = getelementptr inbounds i8, ptr %2, i64 8
+  ret ptr %3
 }
 
 ; 310 occurrences:
@@ -2035,9 +2033,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 32
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -2099,9 +2096,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr inbounds %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.1568430", ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 12 occurrences:
@@ -2137,9 +2133,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr %class.TrafficTypesRowData.1918522, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %class.TrafficTypesRowData.1918522, ptr %0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -2148,9 +2143,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
-  %3 = getelementptr %struct.QueryRepresentationOperand.2122387, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr %struct.QueryRepresentationOperand.2122387, ptr %0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 1 occurrences:

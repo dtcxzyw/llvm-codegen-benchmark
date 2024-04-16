@@ -6,5 +6,6 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a2
 	mulhu	a0, a1, a0
 	srli	a0, a0, 3
-	addi	a0, a0, -1
+	ori	a0, a0, 1
+	addi	a0, a0, -2
 	ret

@@ -7,11 +7,10 @@
 define i1 @func000000000000001c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = icmp eq i64 %4, 0
-  %6 = icmp ne ptr %0, null
-  %7 = and i1 %6, %5
-  ret i1 %7
+  %4 = icmp eq i64 %3, %1
+  %5 = icmp ne ptr %0, null
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 5 occurrences:

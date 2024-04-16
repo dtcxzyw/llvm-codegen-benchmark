@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = tail call noundef i32 @llvm.bswap.i32(i32 %1)
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %1 = lshr i64 %0, 24
+  %2 = trunc i64 %1 to i8
+  ret i8 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -21,10 +20,9 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i16
-  %2 = call i16 @llvm.bswap.i16(i16 %1)
-  %3 = trunc i16 %2 to i8
-  ret i8 %3
+  %1 = lshr i64 %0, 8
+  %2 = trunc i64 %1 to i8
+  ret i8 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

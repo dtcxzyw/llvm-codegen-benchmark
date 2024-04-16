@@ -1,8 +1,13 @@
 func0000000000000071:                   # @func0000000000000071
-	snez	a0, a0
-	slli	a1, a1, 41
-	srli	a1, a1, 41
 	slli	a1, a1, 40
+	beqz	a0, .LBB0_2
+	li	a0, -1
 	slli	a0, a0, 63
 	or	a0, a0, a1
+	ret
+.LBB0_2:
+	lui	a0, 2048
+	addi	a0, a0, -1
+	slli	a0, a0, 40
+	and	a0, a0, a1
 	ret

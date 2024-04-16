@@ -8,9 +8,8 @@ entry:
   %2 = and i64 %1, 31
   %3 = add i64 %0, 31
   %4 = add i64 %3, %2
-  %5 = and i64 %4, -32
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp ult i64 %4, 32
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -35,9 +34,8 @@ entry:
   %2 = and i64 %1, -8
   %3 = add nuw nsw i64 %0, 7
   %4 = add i64 %3, %2
-  %5 = and i64 %4, -8
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp ult i64 %4, 8
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

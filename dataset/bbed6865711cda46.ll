@@ -6,11 +6,9 @@
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = add nuw nsw i32 %2, 1
-  %4 = call i32 @llvm.umin.i32(i32 %3, i32 11)
-  %5 = xor i32 %0, -1
-  %6 = add i32 %4, %5
-  ret i32 %6
+  %3 = call i32 @llvm.umin.i32(i32 %2, i32 10)
+  %4 = sub i32 %3, %0
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

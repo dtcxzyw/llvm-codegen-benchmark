@@ -38,7 +38,7 @@
 define ptr @func000000000000000f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 13
   %7 = getelementptr inbounds i8, ptr %6, i64 %5
@@ -60,7 +60,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 10
   %7 = getelementptr inbounds i8, ptr %6, i64 %5
@@ -74,7 +74,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 20
   %7 = getelementptr i8, ptr %6, i64 %5
@@ -87,7 +87,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = zext nneg i16 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 6
   %7 = getelementptr i8, ptr %6, i64 %5
@@ -102,7 +102,7 @@ entry:
 define ptr @func000000000000000d(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 4
   %7 = getelementptr inbounds %"struct.OT::IntType.3.2272883", ptr %6, i64 %5

@@ -24,7 +24,7 @@ entry:
   %2 = freeze i8 %1
   %3 = lshr i8 %2, 1
   %4 = zext nneg i8 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = freeze i32 %1
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

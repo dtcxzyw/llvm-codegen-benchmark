@@ -6,8 +6,8 @@
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 3652425
-  %2 = add nsw i64 %1, -1
-  %3 = mul nsw i64 %2, -365
+  %2 = mul nsw i64 %1, -365
+  %3 = add nsw i64 %2, 365
   ret i64 %3
 }
 
@@ -17,9 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 12622780800
-  %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, -12622780800
+  %.fr = freeze i64 %0
+  %1 = srem i64 %.fr, 12622780800
+  %2 = sub i64 %1, %.fr
+  %3 = add i64 %2, -12622780800
   ret i64 %3
 }
 

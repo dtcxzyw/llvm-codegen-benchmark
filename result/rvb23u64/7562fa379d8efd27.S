@@ -7,7 +7,7 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a2, a2, 1
-	li	a3, -12
+	li	a3, 244
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2
 	addi	a1, a1, 3
@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a2, a2, 1
-	li	a3, -12
+	li	a3, 244
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2
 	addi	a1, a1, 3

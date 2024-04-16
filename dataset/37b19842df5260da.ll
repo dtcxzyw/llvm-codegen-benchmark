@@ -6,11 +6,9 @@
 define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
-  %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %3, true
-  %5 = icmp eq i32 %0, 0
-  %6 = and i1 %5, %4
-  ret i1 %6
+  %3 = or i32 %2, %0
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -22,11 +20,10 @@ entry:
 define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2
-  %3 = icmp eq i64 %2, 0
-  %4 = xor i1 %3, true
-  %5 = icmp eq i32 %0, 0
-  %6 = and i1 %5, %4
-  ret i1 %6
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp eq i32 %0, 0
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -35,11 +32,10 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131072
-  %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %3, true
-  %5 = icmp ne i32 %0, 0
-  %6 = and i1 %5, %4
-  ret i1 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = icmp ne i32 %0, 0
+  %4 = and i1 %3, %.not
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

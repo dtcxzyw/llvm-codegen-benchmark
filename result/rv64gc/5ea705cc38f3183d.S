@@ -18,9 +18,9 @@ func0000000000000038:                   # @func0000000000000038
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	andi	a1, a1, 15
-	sltiu	a1, a1, 14
-	xori	a1, a1, 1
+	andi	a1, a1, 14
+	addi	a1, a1, -14
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

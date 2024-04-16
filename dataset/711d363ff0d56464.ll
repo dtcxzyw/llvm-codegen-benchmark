@@ -8,7 +8,7 @@ entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = udiv i16 %2, 3
   %4 = zext nneg i16 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = add nuw i16 %1, 12288
   %3 = udiv i16 %2, 255
   %4 = zext nneg i16 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = add nuw i16 %1, 32640
   %3 = udiv i16 %2, 255
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

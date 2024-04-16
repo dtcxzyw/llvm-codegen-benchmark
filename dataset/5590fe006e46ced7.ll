@@ -34,7 +34,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = call i64 @llvm.ctpop.i64(i64 %4), !range !0
   ret i64 %5
 }

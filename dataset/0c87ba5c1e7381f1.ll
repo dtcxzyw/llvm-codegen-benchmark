@@ -14,11 +14,10 @@
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 2
-  %5 = icmp ugt i64 %4, 6
-  %6 = lshr i64 %0, 1
-  %7 = select i1 %5, i64 3, i64 %6
-  ret i64 %7
+  %4 = icmp ugt i64 %3, 24
+  %5 = lshr i64 %0, 1
+  %6 = select i1 %4, i64 3, i64 %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

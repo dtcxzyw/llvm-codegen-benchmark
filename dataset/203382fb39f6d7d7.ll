@@ -7,7 +7,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = and i32 %2, 65535
-  %4 = mul nuw i32 %0, %3
+  %4 = mul nuw i32 %3, %0
   ret i32 %4
 }
 
@@ -45,7 +45,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = and i64 %2, -4
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 

@@ -11,7 +11,7 @@ entry:
   %3 = uitofp i64 %2 to double
   %4 = sitofp i64 %1 to double
   %5 = fdiv double %4, %3
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

@@ -10,7 +10,7 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = shl i64 %4, 9
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

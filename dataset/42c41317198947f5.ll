@@ -62,8 +62,8 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %5, %0
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp eq i32 %5, %6
   ret i1 %7
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = or i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }

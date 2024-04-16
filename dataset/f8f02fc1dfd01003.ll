@@ -13,7 +13,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
   %6 = tail call noundef i64 @llvm.usub.sat.i64(i64 %5, i64 2)
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
   %6 = tail call noundef i64 @llvm.usub.sat.i64(i64 %5, i64 2)
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

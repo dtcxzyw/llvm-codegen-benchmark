@@ -47,15 +47,14 @@ func00000000000000d4:                   # @func00000000000000d4
 	addiw	a0, a0, -1
 	ret
 func000000000000009c:                   # @func000000000000009c
-	li	a2, 64
-	bne	a0, a2, .LBB5_2
-	li	a0, -1
-	srli	a0, a0, 1
+	li	a3, 64
+	li	a2, -1
+	bne	a0, a3, .LBB5_2
+	srli	a0, a2, 1
 	ret
 .LBB5_2:
-	li	a0, 1
-	sll	a0, a0, a1
-	addi	a0, a0, -1
+	sll	a0, a2, a1
+	not	a0, a0
 	ret
 func0000000000000091:                   # @func0000000000000091
 	li	a2, 1

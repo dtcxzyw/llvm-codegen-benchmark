@@ -4,7 +4,7 @@ func000000000000000e:                   # @func000000000000000e
 	srli	a0, a0, 3
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a0, a0, 63
+	andi	a0, a0, 56
 	addi	a0, a0, -8
 	srliw	a0, a0, 3
 	ret
@@ -14,7 +14,7 @@ func000000000000000b:                   # @func000000000000000b
 	srliw	a0, a0, 4
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a0, a0, 240
+	andi	a0, a0, 255
 	addi	a0, a0, -16
 	srliw	a0, a0, 4
 	ret

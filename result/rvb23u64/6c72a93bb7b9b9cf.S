@@ -36,9 +36,10 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addi	a1, a1, -1
-	srliw	a1, a1, 12
-	snez	a1, a1
+	lui	a2, 1048575
+	addi	a3, a2, -1
+	addw	a1, a1, a3
+	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -47,9 +48,8 @@ func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a1, -48
-	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	addi	a1, a1, -58
+	sltiu	a1, a1, -10
 	or	a0, a0, a1
 	ret
 func0000000000000026:                   # @func0000000000000026

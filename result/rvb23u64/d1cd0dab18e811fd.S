@@ -1,9 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a0, 8
-	lui	a2, 4080
-	and	a1, a1, a2
-	slliw	a0, a0, 24
-	or	a0, a0, a1
+	zext.h	a0, a0
+	rev8	a0, a0
+	srli	a0, a0, 32
 	ret
 func0000000000000019:                   # @func0000000000000019
 	andi	a1, a0, 254

@@ -25,8 +25,8 @@ func000000000000002c:                   # @func000000000000002c
 	srli	a1, a1, 32
 	srl	a0, a1, a0
 	andi	a1, a0, 1
-	li	a0, 128
-	bnez	a1, .LBB3_2
 	li	a0, 136
+	beqz	a1, .LBB3_2
+	li	a0, 128
 .LBB3_2:                                # %entry
 	ret

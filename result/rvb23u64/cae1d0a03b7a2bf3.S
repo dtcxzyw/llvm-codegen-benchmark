@@ -12,7 +12,7 @@ func00000000000003d4:                   # @func00000000000003d4
 	ret
 func00000000000003f1:                   # @func00000000000003f1
 	addi	a2, a2, 1
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -37,14 +37,14 @@ func00000000000003d6:                   # @func00000000000003d6
 	ret
 func0000000000000171:                   # @func0000000000000171
 	addi	a2, a2, 1
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, 1
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

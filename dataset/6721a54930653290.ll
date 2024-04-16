@@ -29,8 +29,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
-  %4 = select i1 %3, i32 0, i32 %0
-  %5 = sub nuw nsw i32 1, %4
+  %4 = sub nuw nsw i32 1, %0
+  %5 = select i1 %3, i32 1, i32 %4
   ret i32 %5
 }
 

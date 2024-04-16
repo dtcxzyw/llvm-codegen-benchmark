@@ -4,8 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
-	sext.w	a1, a1
-	srli	a1, a1, 1
+	srliw	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -49,7 +48,6 @@ func000000000000000a:                   # @func000000000000000a
 	slt	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
-	sext.w	a1, a1
-	srli	a1, a1, 1
+	srliw	a1, a1, 1
 	sltu	a0, a1, a0
 	ret

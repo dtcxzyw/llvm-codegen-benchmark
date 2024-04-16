@@ -12,7 +12,7 @@ entry:
   %2 = and i32 %1, 24
   %3 = shl i32 %0, %2
   %4 = lshr i32 %3, 16
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 

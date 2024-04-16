@@ -7,6 +7,8 @@ func000000000000014a:                   # @func000000000000014a
 func0000000000000141:                   # @func0000000000000141
 	zext.w	a2, a2
 	sub	a0, a0, a2
-	sh3add	a0, a1, a0
+	slli	a1, a1, 3
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

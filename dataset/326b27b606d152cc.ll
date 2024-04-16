@@ -23,7 +23,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 100
   %3 = ashr i32 %2, 2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

@@ -10,7 +10,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %0, %1
   %5 = urem i64 %4, %3
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %0, %1
   %5 = urem i64 %4, %3
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 

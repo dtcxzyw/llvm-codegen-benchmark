@@ -21,7 +21,7 @@ entry:
   %3 = lshr i64 %2, 51
   %4 = add nuw nsw i64 %3, %1
   %5 = zext nneg i64 %4 to i128
-  %6 = mul nuw nsw i128 %0, %5
+  %6 = mul nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -34,7 +34,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 24
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = zext i64 %4 to i128
   %6 = mul nuw i128 %5, %0
   ret i128 %6

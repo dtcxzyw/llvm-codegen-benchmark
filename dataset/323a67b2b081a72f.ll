@@ -14,12 +14,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 2
-  %4 = or disjoint i64 %2, 1
-  %5 = select i1 %1, i64 %4, i64 %3
-  %6 = sub i64 0, %5
-  %7 = getelementptr i64, ptr %0, i64 %6
-  ret ptr %7
+  %.neg1 = sub i64 -2, %2
+  %.neg = xor i64 %2, -1
+  %.neg2 = select i1 %1, i64 %.neg, i64 %.neg1
+  %3 = getelementptr i64, ptr %0, i64 %.neg2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

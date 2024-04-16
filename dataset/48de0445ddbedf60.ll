@@ -8,7 +8,7 @@ entry:
   %3 = fadd float %1, %2
   %4 = fcmp olt float %3, 0.000000e+00
   %5 = select i1 %4, float 0.000000e+00, float %3
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

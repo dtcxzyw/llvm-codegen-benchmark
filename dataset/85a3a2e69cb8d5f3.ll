@@ -12,8 +12,8 @@ entry:
   %3 = and i16 %2, 240
   %4 = icmp eq i16 %3, 32
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = select i1 %5, i64 0, i64 %0
-  %7 = trunc i64 %6 to i32
+  %6 = trunc i64 %0 to i32
+  %7 = select i1 %5, i32 0, i32 %6
   ret i32 %7
 }
 

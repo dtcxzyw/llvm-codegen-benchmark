@@ -52,9 +52,8 @@ entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr %struct.blk_rq_stat.2022223, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.blk_rq_stat.2022223, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -66,9 +65,8 @@ entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr inbounds %struct.bin_s.2126897, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 64
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.bin_s.2126897, ptr %4, i64 %5, i32 0, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = and i32 %3, %1
   %5 = xor i32 %1, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -22,9 +22,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = xor i64 %1, -1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }

@@ -18,7 +18,7 @@
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = mul i8 %2, -95
-  %4 = add i8 %1, %3
+  %4 = add i8 %3, %1
   %5 = mul i8 %4, -95
   %6 = add i8 %5, %0
   %7 = mul i8 %6, -95
@@ -44,7 +44,7 @@ entry:
 define i64 @func0000000000000155(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 24
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = mul nsw i64 %4, 60
   %6 = add nsw i64 %5, %0
   %7 = mul nsw i64 %6, 60
@@ -96,9 +96,9 @@ entry:
 define i32 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 85
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 85
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = mul i32 %6, 85
   ret i32 %7
 }
@@ -111,7 +111,7 @@ entry:
   %3 = mul nsw i32 %2, 37
   %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 37
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = mul i32 %6, 37
   ret i32 %7
 }

@@ -6,7 +6,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000011(i16 %0, i32 %1) #0 {
 entry:
-  %2 = srem i32 %1, 4
+  %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
   %4 = add nsw i16 %0, -4
   %5 = select i1 %3, i16 0, i16 %4

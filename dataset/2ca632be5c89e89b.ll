@@ -6,11 +6,10 @@
 define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %0, %2
-  %4 = lshr i32 %3, 2
-  %5 = and i32 %4, 252
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = add nuw nsw i32 %2, %0
+  %4 = and i32 %3, 1008
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

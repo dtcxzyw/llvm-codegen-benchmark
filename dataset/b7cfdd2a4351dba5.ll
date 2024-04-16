@@ -12,7 +12,7 @@ entry:
   %4 = or disjoint i64 %3, %1
   %5 = and i64 %4, 65534
   %6 = icmp eq i64 %5, 4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -23,11 +23,11 @@ entry:
 define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = or disjoint i32 %3, %1
-  %5 = and i32 %4, -2
-  %6 = icmp eq i32 %5, 65534
-  %7 = or i1 %0, %6
-  ret i1 %7
+  %.masked = and i32 %1, -2
+  %4 = or i32 %3, %.masked
+  %5 = icmp eq i32 %4, 65534
+  %6 = or i1 %5, %0
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -39,7 +39,7 @@ entry:
   %4 = or i32 %3, %1
   %5 = and i32 %4, 5120
   %6 = icmp eq i32 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -49,7 +49,7 @@ entry:
 define i1 @func00000000000000f8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = and i64 %4, 2146435072
   %6 = icmp ne i64 %5, 2146435072
   %7 = or i1 %6, %0
@@ -63,10 +63,10 @@ entry:
 define i1 @func00000000000000a2(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = and i32 %4, 2095104
   %6 = icmp eq i32 %5, 55296
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

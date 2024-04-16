@@ -5,7 +5,8 @@ func0000000000000069:                   # @func0000000000000069
 	slti	a2, a2, 0
 	and	a1, a1, a2
 	beqz	a1, .LBB0_2
-	li	a0, 6
-.LBB0_2:                                # %entry
+	li	a0, 7
+	ret
+.LBB0_2:
 	addiw	a0, a0, 1
 	ret

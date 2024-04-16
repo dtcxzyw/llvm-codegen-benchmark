@@ -21,7 +21,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 200
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = and i32 %1, 16711680
   %7 = or disjoint i32 %5, %6
   ret i32 %7

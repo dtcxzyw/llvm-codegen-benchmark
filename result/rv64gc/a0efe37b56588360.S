@@ -9,7 +9,7 @@ func0000000000000044:                   # @func0000000000000044
 	andi	a2, a1, 1
 	li	a1, 3
 	bnez	a2, .LBB1_2
-	li	a1, -9
+	li	a1, 247
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255
@@ -19,7 +19,7 @@ func0000000000000048:                   # @func0000000000000048
 	andi	a2, a1, 1
 	li	a1, 3
 	bnez	a2, .LBB2_2
-	li	a1, -9
+	li	a1, 247
 .LBB2_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255

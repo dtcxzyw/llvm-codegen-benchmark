@@ -3564,10 +3564,10 @@
 define i64 @func0000000000000053(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add nsw i64 %2, %1
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i64 1152921504606846975, i64 %0
-  %6 = shl nuw nsw i64 %5, 3
+  %3 = xor i64 %1, -1
+  %4 = icmp ugt i64 %2, %3
+  %5 = shl nuw nsw i64 %0, 3
+  %6 = select i1 %4, i64 9223372036854775800, i64 %5
   ret i64 %6
 }
 
@@ -3773,10 +3773,10 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
-  %3 = add i64 %2, %1
-  %4 = icmp ult i64 %3, %1
-  %5 = select i1 %4, i64 4611686018427387903, i64 %0
-  %6 = shl nuw nsw i64 %5, 1
+  %3 = xor i64 %1, -1
+  %4 = icmp ugt i64 %2, %3
+  %5 = shl nuw nsw i64 %0, 1
+  %6 = select i1 %4, i64 9223372036854775806, i64 %5
   ret i64 %6
 }
 

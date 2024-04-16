@@ -131,8 +131,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %0, %1
-  %3 = icmp eq i64 %2, 0
+  %2 = sub i64 0, %1
+  %3 = icmp eq i64 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -224,7 +224,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %0, %1
+  %2 = or i64 %0, %1
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
   ret i32 %4
@@ -300,8 +300,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %0, %1
-  %3 = icmp ne i32 %2, 0
+  %2 = sub i32 0, %1
+  %3 = icmp ne i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -311,7 +311,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %0, %1
+  %2 = or i64 %0, %1
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i64
   ret i64 %4

@@ -229,11 +229,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000062(i1 %0, i64 %1) #0 {
 entry:
-  %2 = tail call noundef i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = xor i64 %2, 63
-  %4 = icmp eq i64 %3, 0
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %2 = icmp eq i64 %1, 1
+  %3 = or i1 %2, %0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -244,11 +242,9 @@ declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !1
-  %3 = xor i32 %2, 31
-  %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %2 = icmp eq i32 %1, 1
+  %3 = or i1 %2, %0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -256,6 +252,3 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-
-!0 = !{i64 0, i64 65}
-!1 = !{i32 1, i32 33}

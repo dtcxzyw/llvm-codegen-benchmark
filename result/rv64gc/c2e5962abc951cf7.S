@@ -1,39 +1,29 @@
 func0000000000000018:                   # @func0000000000000018
-	andi	a0, a0, 1
-	srai	a1, a1, 4
-	addi	a0, a0, -1
-	srli	a1, a1, 59
+	li	a2, -31
+	srli	a2, a2, 1
+	sltu	a1, a2, a1
+	not	a0, a0
 	and	a0, a0, a1
-	snez	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	andi	a2, a0, 1
-	li	a0, 2
-	bnez	a2, .LBB1_2
-	sraiw	a0, a1, 16
-.LBB1_2:                                # %entry
-	sgtz	a0, a0
+	sext.w	a1, a1
+	sgtz	a1, a1
+	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a0, a0, 1
-	sraiw	a1, a1, 1
-	addi	a0, a0, -1
+	sext.w	a1, a1
+	slti	a1, a1, 4
+	xori	a1, a1, 1
+	not	a0, a0
 	and	a0, a0, a1
-	slti	a0, a0, 2
-	xori	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a2, a0, 1
-	li	a0, 11
-	bnez	a2, .LBB3_2
-	srai	a0, a1, 32
-.LBB3_2:                                # %entry
-	seqz	a0, a0
+	seqz	a1, a1
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
-	sraiw	a1, a1, 2
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	sext.w	a1, a1
+	sltiu	a1, a1, 4
+	or	a0, a0, a1
 	ret

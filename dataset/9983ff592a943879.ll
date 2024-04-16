@@ -84,7 +84,7 @@
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %4, 1
   ret i64 %5
@@ -104,7 +104,7 @@ entry:
 define i128 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = zext i64 %3 to i128
   %5 = add nsw i128 %4, -1
   ret i128 %5
@@ -116,7 +116,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = add nsw i64 %4, -1
   ret i64 %5
@@ -128,7 +128,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   %5 = add nsw i64 %4, -1
   ret i64 %5

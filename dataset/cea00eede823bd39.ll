@@ -30,7 +30,7 @@
 define float @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 21
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = mul i64 %3, 2147483649
   %5 = uitofp i64 %4 to float
   ret float %5

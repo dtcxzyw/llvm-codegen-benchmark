@@ -8,7 +8,7 @@
 define float @func0000000000000010(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 0.000000e+00
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, float 0.000000e+00, float %0
   ret float %5
 }
@@ -30,7 +30,7 @@ entry:
 define double @func0000000000000008(double %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 1.000000e+00
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %4, double 1.000000e+00, double %0
   ret double %5
 }

@@ -25,9 +25,9 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000019:                   # @func0000000000000019
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	li	a3, -8
-	czero.nez	a2, a3, a2
-	li	a3, 1074
+	li	a3, 8
+	czero.eqz	a2, a3, a2
+	li	a3, 1073
 	sh3add	a2, a3, a2
 	lui	a3, 2
 	addiw	a3, a3, 396

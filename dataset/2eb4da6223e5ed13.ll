@@ -171,8 +171,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -292
-  %2 = mul nsw i32 %1, 1741647
+  %1 = mul i32 %0, 1741647
+  %2 = add i32 %1, -508560924
   %3 = ashr i32 %2, 19
   ret i32 %3
 }

@@ -16,7 +16,7 @@ entry:
   %3 = shl nuw nsw i48 %2, 16
   %4 = and i48 %0, 65535
   %5 = or disjoint i48 %3, %4
-  %6 = trunc i48 %5 to i32
+  %6 = trunc nuw i48 %5 to i32
   ret i32 %6
 }
 

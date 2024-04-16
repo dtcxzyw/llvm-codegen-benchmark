@@ -22,11 +22,10 @@ entry:
 define i32 @func000000000000003c(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
-  %3 = mul nuw nsw i128 %2, 18446744073709551615
-  %4 = and i128 %0, 4294967295
-  %5 = add nuw nsw i128 %3, %4
-  %6 = trunc i128 %5 to i32
-  ret i32 %6
+  %3 = mul nuw nsw i128 %2, 4294967295
+  %4 = add i128 %3, %0
+  %5 = trunc i128 %4 to i32
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

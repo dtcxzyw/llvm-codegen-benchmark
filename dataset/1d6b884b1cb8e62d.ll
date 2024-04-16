@@ -893,9 +893,8 @@ define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 16
-  %4 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1593155", ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %"class.tbb::detail::d1::blocked_range.1593155", ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 58 occurrences:
@@ -1024,9 +1023,8 @@ define ptr @func000000000000000d(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr %struct.NodeInfo.1661113, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr %struct.NodeInfo.1661113, ptr %3, i64 %2, i32 2
+  ret ptr %4
 }
 
 ; 9 occurrences:
@@ -1059,9 +1057,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 8
-  %4 = getelementptr inbounds %"class.std::vector.112.1747357", ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.std::vector.112.1747357", ptr %3, i64 %2, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 19 occurrences:
@@ -1089,9 +1086,8 @@ define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 264
-  %4 = getelementptr inbounds %struct.Vec_Int_t_.1770830, ptr %3, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %struct.Vec_Int_t_.1770830, ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -1101,9 +1097,8 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 8488
-  %4 = getelementptr inbounds %struct.Kf_Cut_t_.1772221, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 28
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.Kf_Cut_t_.1772221, ptr %3, i64 %2, i32 6
+  ret ptr %4
 }
 
 ; 8 occurrences:

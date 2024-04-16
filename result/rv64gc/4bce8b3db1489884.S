@@ -14,6 +14,8 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000010:                   # @func0000000000000010
 	bltu	a0, a1, .LBB2_2
-	addi	a0, a1, -1
+	li	a0, -1
+	srli	a0, a0, 32
+	add	a0, a0, a1
 .LBB2_2:                                # %entry
 	ret

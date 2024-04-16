@@ -23,7 +23,7 @@ define i16 @func00000000000001e0(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 8
   %4 = add nuw nsw i16 %3, -1025
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   %6 = zext i1 %1 to i16
   %7 = add i16 %5, %6
   ret i16 %7

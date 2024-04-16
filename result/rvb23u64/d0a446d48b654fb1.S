@@ -11,7 +11,8 @@ func00000000000005cc:                   # @func00000000000005cc
 	lui	a3, 244
 	addiw	a3, a3, 576
 	mul	a2, a2, a3
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

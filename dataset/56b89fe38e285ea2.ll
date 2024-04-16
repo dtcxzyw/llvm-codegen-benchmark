@@ -8,7 +8,7 @@ entry:
   %3 = mul i64 %2, 65540
   %4 = add nuw nsw i64 %1, 11
   %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = mul nsw i32 %2, -3
   %4 = add i32 %1, 3
   %5 = add i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = mul i32 %2, 160
   %4 = add i32 %1, -8
   %5 = add i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = mul nsw i32 %2, 160
   %4 = add i32 %1, -16
   %5 = add i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = mul nsw i32 %2, 5
   %4 = add nsw i32 %1, 2
   %5 = add nsw i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -70,7 +70,7 @@ entry:
   %3 = mul nsw i32 %2, 50
   %4 = add nsw i32 %1, 30
   %5 = add nsw i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -83,7 +83,7 @@ entry:
   %3 = mul i32 %2, 3
   %4 = add nsw i32 %1, -30
   %5 = add i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -97,7 +97,7 @@ entry:
   %3 = mul nuw nsw i8 %2, 10
   %4 = add i8 %1, -48
   %5 = add nuw nsw i8 %4, %3
-  %6 = icmp ult i8 %0, %5
+  %6 = icmp ugt i8 %5, %0
   ret i1 %6
 }
 

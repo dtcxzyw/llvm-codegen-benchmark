@@ -31,8 +31,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 2, i32 %1
-  %5 = sext i32 %4 to i64
+  %4 = sext i32 %1 to i64
+  %5 = select i1 %3, i64 2, i64 %4
   %6 = getelementptr inbounds [3 x %class.btVector3.1741805], ptr %0, i64 0, i64 %5
   ret ptr %6
 }

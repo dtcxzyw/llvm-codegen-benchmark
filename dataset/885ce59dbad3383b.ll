@@ -24,7 +24,7 @@ define i64 @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 
@@ -44,7 +44,7 @@ define i64 @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %struct.Gia_Obj_t_.1770652, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -55,7 +55,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 
@@ -79,7 +79,7 @@ define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.page.1993499, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

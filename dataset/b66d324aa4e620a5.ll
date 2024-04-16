@@ -19,11 +19,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005c(i32 %0) #0 {
 entry:
-  %1 = sext i32 %0 to i64
-  %2 = mul nsw i64 %1, 40
-  %3 = add nsw i64 %2, 120
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %1 = icmp ne i32 %0, -3
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -33,8 +30,8 @@ define i1 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, 24
-  %3 = add nsw i64 %2, 8
-  %4 = icmp ugt i64 %3, 1024
+  %3 = add nsw i64 %2, -1017
+  %4 = icmp ult i64 %3, -1025
   ret i1 %4
 }
 

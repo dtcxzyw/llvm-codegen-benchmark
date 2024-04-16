@@ -2039,9 +2039,9 @@
 define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = icmp ult i64 %1, %3
-  %5 = select i1 %4, i64 384307168202282325, i64 %0
-  %6 = icmp eq i64 %5, 0
+  %4 = icmp ule i64 %3, %1
+  %5 = icmp eq i64 %0, 0
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -2065,9 +2065,9 @@ entry:
 define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 192
-  %4 = icmp ult i64 %1, %3
-  %5 = select i1 %4, i64 48038396025285290, i64 %0
-  %6 = icmp ne i64 %5, 0
+  %4 = icmp ugt i64 %3, %1
+  %5 = icmp ne i64 %0, 0
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 

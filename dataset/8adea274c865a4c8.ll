@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = or i64 %0, %2
+  %2 = zext i32 %1 to i64
+  %3 = or i64 %2, %0
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }

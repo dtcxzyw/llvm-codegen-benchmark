@@ -35,9 +35,9 @@ func000000000000002a:                   # @func000000000000002a
 	lui	a3, 524288
 	subw	a3, a3, a1
 	slti	a1, a2, 0
+	czero.nez	a2, a3, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a3, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a1

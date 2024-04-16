@@ -172,7 +172,7 @@
 define i1 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, 1
   %6 = lshr i32 %5, 1
   %7 = icmp ult i32 %6, %4

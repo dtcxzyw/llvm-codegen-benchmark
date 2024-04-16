@@ -12,7 +12,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 24
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

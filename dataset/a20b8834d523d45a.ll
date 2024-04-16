@@ -5,7 +5,7 @@
 define i16 @func0000000000000033(i1 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = add nuw nsw i16 %1, %3
+  %4 = add nuw nsw i16 %3, %1
   %5 = lshr i16 %4, 1
   %6 = zext i1 %0 to i16
   %7 = add nuw nsw i16 %5, %6
@@ -184,7 +184,7 @@ entry:
 define i64 @func0000000000000003(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = lshr i64 %4, 32
   %6 = zext i1 %0 to i64
   %7 = add nuw nsw i64 %5, %6

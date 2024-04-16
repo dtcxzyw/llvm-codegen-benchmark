@@ -26,7 +26,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, float 0x3FE2749460000000, float 0x3FDBE8A5E0000000
   %5 = fmul float %4, %1
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 
@@ -37,8 +37,8 @@ define float @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 4
   %4 = select i1 %3, float -5.000000e-01, float 5.000000e-01
-  %5 = fmul float %1, %4
-  %6 = fadd float %0, %5
+  %5 = fmul float %4, %1
+  %6 = fadd float %5, %0
   ret float %6
 }
 

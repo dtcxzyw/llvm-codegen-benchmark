@@ -9,6 +9,6 @@ func0000000000000030:                   # @func0000000000000030
 	subw	a0, a0, a2
 	ret
 func0000000000000020:                   # @func0000000000000020
-	addw	a1, a1, a2
+	add	a1, a1, a2
 	sub	a0, a0, a1
 	ret

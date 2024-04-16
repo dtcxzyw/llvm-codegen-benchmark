@@ -6,8 +6,8 @@
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 5242880000000000000
-  %3 = add i64 %2, %0
-  %4 = icmp ult i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 384
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp slt i64 %3, %0
   ret i1 %4
 }

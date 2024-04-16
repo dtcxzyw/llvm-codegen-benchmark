@@ -17,11 +17,10 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, -1
-  %3 = zext i16 %0 to i64
-  %4 = add nsw i64 %3, %2
-  %5 = trunc i64 %4 to i16
-  ret i16 %5
+  %2 = trunc i64 %1 to i16
+  %3 = xor i16 %2, -1
+  %4 = add i16 %3, %0
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

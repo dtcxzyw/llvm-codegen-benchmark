@@ -1,6 +1,6 @@
 func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 1
+	srli	a1, a1, 7
+	andi	a1, a1, 8
 	czero.nez	a0, a1, a0
-	andi	a0, a0, 1024
-	srli	a0, a0, 7
 	ret

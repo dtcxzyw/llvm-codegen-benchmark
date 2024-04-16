@@ -12,7 +12,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000054:                   # @func0000000000000054
 	add	a0, a0, a1
-	lui	a1, 244
+	lui	a1, 4
 	addiw	a1, a1, 576
 	add	a0, a0, a1
 	lui	a1, 16
@@ -44,8 +44,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	addi	a0, a0, 31
-	andi	a0, a0, -32
-	seqz	a0, a0
+	sltiu	a0, a0, 32
 	ret
 func0000000000000051:                   # @func0000000000000051
 	add	a0, a0, a1
@@ -61,12 +60,12 @@ func0000000000000041:                   # @func0000000000000041
 func00000000000000cc:                   # @func00000000000000cc
 	add	a0, a0, a1
 	addi	a0, a0, 7
-	andi	a0, a0, -8
-	snez	a0, a0
+	sltiu	a0, a0, 8
+	xori	a0, a0, 1
 	ret
 func0000000000000058:                   # @func0000000000000058
 	add	a0, a0, a1
-	addi	a0, a0, 29
+	addi	a0, a0, 5
 	andi	a0, a0, 7
 	sltiu	a0, a0, 5
 	xori	a0, a0, 1

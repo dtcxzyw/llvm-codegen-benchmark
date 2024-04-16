@@ -37,10 +37,10 @@
 define i1 @func00000000000000c4(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.cttz.i16(i16 %2, i1 true), !range !0
-  %4 = zext nneg i16 %3 to i64
-  %5 = lshr i64 %4, 1
+  %4 = lshr i16 %3, 1
+  %5 = zext nneg i16 %4 to i64
   %6 = or i64 %5, %1
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

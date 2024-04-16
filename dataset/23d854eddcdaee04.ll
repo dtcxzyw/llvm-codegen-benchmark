@@ -12,7 +12,7 @@ define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -32,7 +32,7 @@ define i1 @func000000000000001b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = call noundef i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   ret i1 %4
 }
 
@@ -45,7 +45,7 @@ define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -74,7 +74,7 @@ define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -86,7 +86,7 @@ define i1 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = call i16 @llvm.bswap.i16(i16 %2)
-  %4 = icmp eq i16 %0, %3
+  %4 = icmp eq i16 %3, %0
   ret i1 %4
 }
 

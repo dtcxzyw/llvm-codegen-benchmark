@@ -23,9 +23,9 @@
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = sub i32 0, %1
-  %3 = icmp slt i32 %2, 0
-  ret i1 %3
+  %notsub = add i32 %1, -1
+  %2 = icmp sgt i32 %notsub, -1
+  ret i1 %2
 }
 
 ; 4 occurrences:
@@ -37,9 +37,8 @@ entry:
 define i1 @func000000000000000a(i24 %0) #0 {
 entry:
   %1 = trunc i24 %0 to i8
-  %2 = sub i8 0, %1
-  %3 = icmp sgt i8 %2, 0
-  ret i1 %3
+  %2 = icmp ugt i8 %1, -128
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -48,9 +47,9 @@ entry:
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
-  %2 = sub i8 0, %1
-  %3 = icmp ugt i8 %2, 7
-  ret i1 %3
+  %notsub = add i8 %1, -1
+  %2 = icmp ult i8 %notsub, -8
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

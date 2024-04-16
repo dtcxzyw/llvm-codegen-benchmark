@@ -8,9 +8,9 @@
 define i8 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
-  %3 = add nsw i32 %2, -40
+  %3 = add nuw nsw i32 %2, 216
   %4 = lshr i32 %0, 4
-  %5 = add nsw i32 %4, %3
+  %5 = add nuw nsw i32 %4, %3
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }
@@ -21,12 +21,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i128 %0, i128 %1) #0 {
 entry:
-  %2 = and i128 %1, 18446744073709551615
-  %3 = add nuw nsw i128 %2, 18446673704965373952
-  %4 = lshr i128 %0, 64
-  %5 = add nuw nsw i128 %3, %4
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %2 = add i128 %1, 18446673704965373952
+  %3 = lshr i128 %0, 64
+  %4 = add i128 %2, %3
+  %5 = trunc i128 %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

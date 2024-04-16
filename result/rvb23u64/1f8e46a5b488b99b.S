@@ -9,9 +9,8 @@ func000000000000000a:                   # @func000000000000000a
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addiw	a1, a1, -1
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	addiw	a1, a1, -3
+	sltiu	a1, a1, -2
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

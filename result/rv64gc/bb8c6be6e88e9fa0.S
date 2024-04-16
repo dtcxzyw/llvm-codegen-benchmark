@@ -19,7 +19,7 @@ func00000000000000a2:                   # @func00000000000000a2
 	seqz	a0, a0
 	ret
 func00000000000000b2:                   # @func00000000000000b2
-	beq	a1, a2, .LBB3_2
+	beq	a2, a1, .LBB3_2
 	sltu	a0, a1, a2
 	xori	a0, a0, 1
 	ret

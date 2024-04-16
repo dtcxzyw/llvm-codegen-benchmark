@@ -181,7 +181,7 @@
 define i32 @func0000000000000052(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, -1
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = sub nsw i32 0, %2
   %6 = tail call i32 @llvm.smin.i32(i32 %1, i32 %5)
   %7 = select i1 %4, i32 %6, i32 %5

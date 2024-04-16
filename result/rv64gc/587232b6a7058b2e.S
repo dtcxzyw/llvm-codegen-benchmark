@@ -38,17 +38,23 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	li	a2, -1
+	slli	a2, a2, 62
+	addi	a2, a2, 1
+	add	a1, a1, a2
 	srli	a1, a1, 62
-	seqz	a1, a1
-	addi	a1, a1, -1
+	sltiu	a1, a1, 3
+	neg	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	li	a2, -1
+	slli	a2, a2, 61
+	addi	a2, a2, 1
+	add	a1, a1, a2
 	srli	a1, a1, 61
-	seqz	a1, a1
-	addi	a1, a1, -1
+	sltiu	a1, a1, 7
+	neg	a1, a1
 	or	a0, a0, a1
 	ret

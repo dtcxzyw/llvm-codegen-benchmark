@@ -16,8 +16,8 @@
 define i1 @func0000000000000056(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = sub nsw i32 %4, %0
+  %4 = add i32 %3, %0
+  %5 = sub i32 %1, %4
   %6 = icmp slt i32 %5, 1
   ret i1 %6
 }
@@ -29,8 +29,8 @@ entry:
 define i1 @func000000000000005a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = sub nsw i32 %4, %0
+  %4 = add i32 %3, %0
+  %5 = sub i32 %1, %4
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
 }
@@ -45,10 +45,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub i32 %1, %3
-  %5 = sub i32 %4, %0
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %4 = add i32 %3, %0
+  %5 = icmp eq i32 %4, %1
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -57,8 +56,8 @@ entry:
 define i1 @func000000000000004a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = sub i32 %4, %0
+  %4 = add i32 %3, %0
+  %5 = sub i32 %1, %4
   %6 = icmp sgt i32 %5, 0
   ret i1 %6
 }
@@ -69,8 +68,8 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub i32 %1, %3
-  %5 = sub i32 %4, %0
+  %4 = add i32 %3, %0
+  %5 = sub i32 %1, %4
   %6 = icmp ugt i32 %5, 69632
   ret i1 %6
 }
@@ -83,8 +82,8 @@ entry:
 define i1 @func000000000000002a(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = sub nuw i64 %4, %0
+  %4 = add i64 %3, %0
+  %5 = sub i64 %1, %4
   %6 = icmp sgt i64 %5, 0
   ret i1 %6
 }

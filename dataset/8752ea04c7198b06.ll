@@ -7,7 +7,7 @@ entry:
   %3 = add nuw nsw i64 %2, -7046029288634856825
   %4 = lshr i64 %3, 32
   %5 = mul nuw i64 %4, %1
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -18,8 +18,8 @@ define i32 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 7
   %4 = lshr i32 %3, 3
-  %5 = mul i32 %1, %4
-  %6 = add i32 %0, %5
+  %5 = mul i32 %4, %1
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = lshr i32 %3, 1
   %5 = mul nsw i32 %4, %1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -62,7 +62,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 7
   %4 = lshr i32 %3, 3
-  %5 = mul i32 %1, %4
+  %5 = mul i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -76,7 +76,7 @@ entry:
   %3 = add nuw i64 %2, 2147483648
   %4 = lshr i64 %3, 32
   %5 = mul nuw i64 %4, %1
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -101,7 +101,7 @@ entry:
   %3 = add nuw nsw i32 %2, 7
   %4 = lshr i32 %3, 3
   %5 = mul nuw nsw i32 %4, %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -113,7 +113,7 @@ entry:
   %3 = add i128 %2, 1
   %4 = lshr i128 %3, 64
   %5 = mul nuw i128 %4, %1
-  %6 = add nuw i128 %0, %5
+  %6 = add nuw i128 %5, %0
   ret i128 %6
 }
 
@@ -124,8 +124,8 @@ define i32 @func000000000000006f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 7
   %4 = lshr i32 %3, 3
-  %5 = mul nuw nsw i32 %1, %4
-  %6 = add nuw nsw i32 %0, %5
+  %5 = mul nuw nsw i32 %4, %1
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -136,7 +136,7 @@ define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = lshr i32 %3, 4
-  %5 = mul nsw i32 %1, %4
+  %5 = mul nsw i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -148,7 +148,7 @@ define i32 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr i32 %3, 4
-  %5 = mul nsw i32 %1, %4
+  %5 = mul nsw i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -161,7 +161,7 @@ define i32 @func0000000000000067(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr i32 %3, 1
-  %5 = mul nsw i32 %1, %4
+  %5 = mul nsw i32 %4, %1
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }

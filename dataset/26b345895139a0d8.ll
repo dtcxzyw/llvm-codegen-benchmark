@@ -7,7 +7,7 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = call float @llvm.fmuladd.f32(float %0, float -2.000000e+00, float %1)
-  %4 = fadd float %2, %3
+  %4 = fadd float %3, %2
   %5 = fsub float %0, %1
   %6 = fmul float %5, %4
   ret float %6

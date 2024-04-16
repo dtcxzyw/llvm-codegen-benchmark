@@ -20,8 +20,8 @@
 define i1 @func0000000000000194(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 3
-  %4 = add nsw i64 %0, %3
-  %5 = add nsw i64 %2, %3
+  %4 = add nsw i64 %3, %0
+  %5 = add nsw i64 %3, %2
   %6 = lshr i64 %5, 1
   %7 = icmp ult i64 %4, %6
   ret i1 %7
@@ -39,8 +39,8 @@ entry:
 define i1 @func0000000000000196(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 3
-  %4 = add nsw i64 %0, %3
-  %5 = add nsw i64 %2, %3
+  %4 = add nsw i64 %3, %0
+  %5 = add nsw i64 %3, %2
   %6 = lshr i64 %5, 1
   %7 = icmp slt i64 %4, %6
   ret i1 %7
@@ -57,8 +57,8 @@ entry:
 define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 3
-  %4 = add i64 %0, %3
-  %5 = add i64 %2, %3
+  %4 = add i64 %3, %0
+  %5 = add i64 %3, %2
   %6 = lshr i64 %5, 1
   %7 = icmp slt i64 %4, %6
   ret i1 %7
@@ -72,8 +72,8 @@ entry:
 define i1 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 3
-  %4 = add i64 %0, %3
-  %5 = add nsw i64 %2, %3
+  %4 = add i64 %3, %0
+  %5 = add nsw i64 %3, %2
   %6 = lshr i64 %5, 1
   %7 = icmp slt i64 %4, %6
   ret i1 %7
@@ -86,8 +86,8 @@ entry:
 define i1 @func0000000000000096(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 6
-  %4 = add nsw i64 %0, %3
-  %5 = add i64 %2, %3
+  %4 = add nsw i64 %3, %0
+  %5 = add i64 %3, %2
   %6 = lshr i64 %5, 1
   %7 = icmp slt i64 %4, %6
   ret i1 %7

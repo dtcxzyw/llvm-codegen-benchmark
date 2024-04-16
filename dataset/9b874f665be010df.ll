@@ -10,10 +10,8 @@ define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = getelementptr inbounds i8, ptr %1, i64 12496
-  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  %7 = getelementptr [31 x ptr], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3, i32 5, i64 %0
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -23,10 +21,8 @@ define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 127
   %4 = getelementptr inbounds i8, ptr %1, i64 12320
-  %5 = getelementptr inbounds [128 x %"struct.absl::debugging_internal::(anonymous namespace)::SymbolCacheLine.1939640"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 64
-  %7 = getelementptr inbounds [4 x i32], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr inbounds [128 x %"struct.absl::debugging_internal::(anonymous namespace)::SymbolCacheLine.1939640"], ptr %4, i64 0, i64 %3, i32 2, i64 %0
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

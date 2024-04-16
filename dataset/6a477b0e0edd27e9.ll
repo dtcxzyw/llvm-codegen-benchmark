@@ -6,7 +6,7 @@
 define i1 @func0000000000000128(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call noundef double @llvm.fabs.f64(double %2)
-  %4 = fcmp olt double %1, %3
+  %4 = fcmp ogt double %3, %1
   %5 = select i1 %4, double %3, double %1
   %6 = fmul double %5, %0
   %7 = fcmp oeq double %6, 0.000000e+00
@@ -22,7 +22,7 @@ declare double @llvm.fabs.f64(double) #1
 define i1 @func0000000000000028(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
-  %4 = fcmp olt double %1, %3
+  %4 = fcmp ogt double %3, %1
   %5 = select i1 %4, double %3, double %1
   %6 = fmul double %5, %0
   %7 = fcmp oeq double %6, 0.000000e+00
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000124(double %0, double %1, double %2) #0 {
 entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
-  %4 = fcmp olt double %1, %3
+  %4 = fcmp ogt double %3, %1
   %5 = select i1 %4, double %3, double %1
   %6 = fmul double %5, %0
   %7 = fcmp ogt double %6, 1.000000e+00

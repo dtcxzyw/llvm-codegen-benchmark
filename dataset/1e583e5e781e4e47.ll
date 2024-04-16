@@ -4,9 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ogt float %0, %1
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = fcmp ule float %0, %1
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -14,9 +13,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000d(double %0, double %1) #0 {
 entry:
-  %2 = fcmp uge double %0, %1
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = fcmp olt double %0, %1
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -28,9 +26,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
-  %2 = fcmp olt float %0, %1
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = fcmp uge float %0, %1
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -39,9 +36,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(double %0, double %1) #0 {
 entry:
-  %2 = fcmp ule double %0, %1
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = fcmp ogt double %0, %1
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -51,9 +47,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
-  %2 = fcmp ult double %0, %1
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = fcmp oge double %0, %1
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -61,9 +56,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
-  %2 = fcmp ole double %0, %1
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = fcmp ugt double %0, %1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

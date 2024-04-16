@@ -27,7 +27,7 @@
 define i1 @func00000000000000f4(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp ult i32 %6, 51
@@ -48,7 +48,7 @@ entry:
 define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
   %7 = icmp ugt i64 %6, 4294967295
@@ -62,10 +62,10 @@ entry:
 define i1 @func0000000000000301(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext nneg i16 %1 to i64
-  %6 = add i64 %4, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %4, %6
   ret i1 %7
 }
 
@@ -76,7 +76,7 @@ entry:
 define i1 @func0000000000000308(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext nneg i16 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 1152921504606846975
@@ -97,9 +97,9 @@ entry:
 define i1 @func00000000000000f1(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext i16 %1 to i32
-  %6 = add nuw nsw i32 %4, %5
+  %6 = or i32 %4, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -110,7 +110,7 @@ entry:
 define i1 @func00000000000003f8(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext nneg i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp ugt i32 %6, 1
@@ -123,9 +123,9 @@ entry:
 define i1 @func00000000000003f1(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext nneg i16 %1 to i32
-  %6 = add nuw nsw i32 %4, %5
+  %6 = or i32 %4, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -136,7 +136,7 @@ entry:
 define i1 @func0000000000000304(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext nneg i32 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ult i64 %6, 262137
@@ -164,7 +164,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 4294967295
@@ -177,7 +177,7 @@ entry:
 define i1 @func00000000000002f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
   %7 = icmp ult i64 %6, 2147483648
@@ -199,7 +199,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = zext i8 %1 to i32
   %6 = add i32 %4, %5
   %7 = icmp eq i32 %6, 64
@@ -215,7 +215,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = zext i8 %1 to i32
   %6 = add i32 %4, %5
   %7 = icmp ult i32 %6, 65
@@ -228,7 +228,7 @@ entry:
 define i1 @func00000000000003f4(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = zext nneg i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp ult i32 %6, 2
@@ -241,7 +241,7 @@ entry:
 define i1 @func0000000000000158(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = zext nneg i8 %1 to i32
   %6 = add nsw i32 %4, %5
   %7 = icmp ugt i32 %6, 4
@@ -254,7 +254,7 @@ entry:
 define i1 @func00000000000002a8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = add nuw i64 %4, %5
   %7 = icmp ugt i64 %6, 9223372036854775804

@@ -7,7 +7,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = sitofp i32 %1 to double
-  %4 = fcmp ogt double %2, %3
+  %4 = fcmp olt double %3, %2
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

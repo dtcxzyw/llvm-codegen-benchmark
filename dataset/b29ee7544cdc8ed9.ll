@@ -12,7 +12,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -35,7 +35,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
   %5 = zext i32 %1 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }
@@ -51,7 +51,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -64,7 +64,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, 24
   %5 = zext i16 %1 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -88,7 +88,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
   %5 = zext i8 %1 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -102,7 +102,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
   %5 = zext nneg i8 %1 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -115,7 +115,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = zext i8 %1 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -128,7 +128,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = zext nneg i32 %1 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -139,7 +139,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = shl nuw i64 %5, 32
   %7 = add i64 %6, %4
@@ -154,7 +154,7 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 8
   %5 = zext i8 %1 to i16
-  %6 = add nuw nsw i16 %0, %5
+  %6 = add nuw nsw i16 %5, %0
   %7 = add nuw nsw i16 %6, %4
   ret i16 %7
 }
@@ -180,7 +180,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
   %5 = zext nneg i16 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }

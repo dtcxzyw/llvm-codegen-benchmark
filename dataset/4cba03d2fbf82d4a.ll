@@ -94,9 +94,8 @@ entry:
   %3 = getelementptr inbounds %"struct.std::pair.28.1554679", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = ashr exact i64 %5, 4
-  %7 = icmp sgt i64 %6, 7
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 112
+  ret i1 %6
 }
 
 ; 24 occurrences:
@@ -130,9 +129,8 @@ entry:
   %3 = getelementptr inbounds ptr, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = ashr exact i64 %5, 3
-  %7 = icmp slt i64 %6, 7
-  ret i1 %7
+  %6 = icmp slt i64 %5, 56
+  ret i1 %6
 }
 
 ; 18 occurrences:
@@ -160,9 +158,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = ashr i64 %5, 2
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 3
+  ret i1 %6
 }
 
 ; 31 occurrences:
@@ -203,9 +200,8 @@ entry:
   %3 = getelementptr inbounds i16, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = ashr exact i64 %5, 1
-  %7 = icmp ugt i64 %6, 7
-  ret i1 %7
+  %6 = icmp ugt i64 %5, 14
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -217,9 +213,8 @@ entry:
   %3 = getelementptr ptr, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = ashr exact i64 %5, 3
-  %7 = icmp sgt i64 %6, 7
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 56
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -231,9 +226,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = ashr i64 %5, 4
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 15
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

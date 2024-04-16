@@ -5,7 +5,7 @@
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ugt i64 %3, 2147483647
   ret i1 %4
 }

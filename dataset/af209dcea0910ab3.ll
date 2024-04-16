@@ -21,7 +21,7 @@ define i8 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 false)
   %2 = urem i64 %1, 10
-  %3 = trunc i64 %2 to i8
+  %3 = trunc nuw nsw i64 %2 to i8
   %4 = or disjoint i8 %3, 48
   ret i8 %4
 }
@@ -36,7 +36,7 @@ define i8 @func0000000000000009(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 true)
   %2 = urem i32 %1, 10
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   %4 = or disjoint i8 %3, 48
   ret i8 %4
 }

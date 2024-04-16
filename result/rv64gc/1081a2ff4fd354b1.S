@@ -5,6 +5,6 @@ func0000000000000004:                   # @func0000000000000004
 	neg	a0, a0
 	ret
 .LBB0_2:
-	addi	a0, a1, 16
-	neg	a0, a0
+	li	a0, -16
+	sub	a0, a0, a1
 	ret

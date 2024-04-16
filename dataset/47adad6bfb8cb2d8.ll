@@ -7,7 +7,7 @@ define i1 @func0000000000000354(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = sub nsw i32 %3, %1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = icmp ult i32 %5, 255
   ret i1 %6
 }

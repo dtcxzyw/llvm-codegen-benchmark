@@ -1,11 +1,11 @@
-.LCPI0_0:
-	.quad	2170205185142300192             # 0x1e1e1e1e1e1e1e20
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	add	a0, a0, a2
+	lui	a1, 3855
+	addiw	a1, a1, 241
+	slli	a1, a1, 13
+	addi	a1, a1, -480
+	add	a0, a0, a1
 	li	a1, 255
 	slli	a1, a1, 32
 	addi	a1, a1, 255

@@ -8,9 +8,10 @@ func0000000000000558:                   # @func0000000000000558
 	ret
 func0000000000000551:                   # @func0000000000000551
 	srai	a2, a2, 5
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 16
+	add	a1, a1, a2
+	addi	a1, a1, 16
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000054a:                   # @func000000000000054a
@@ -81,8 +82,9 @@ func0000000000000508:                   # @func0000000000000508
 	ret
 func0000000000000501:                   # @func0000000000000501
 	srai	a2, a2, 3
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 2
+	add	a1, a1, a2
+	addi	a1, a1, 2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

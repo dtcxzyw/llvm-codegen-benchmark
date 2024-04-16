@@ -10,10 +10,10 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000004:                   # @func0000000000000004
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
 	mul	a2, a2, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	sltu	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2

@@ -12,10 +12,10 @@
 define ptr @func0000000000000007(ptr %0, i64 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds %class.btVector3.1742160, ptr %0, i64 %1
-  %7 = getelementptr inbounds %class.btVector3.1742160, ptr %6, i64 %5
+  %4 = getelementptr inbounds %class.btVector3.1742160, ptr %0, i64 %1
+  %5 = sext i32 %3 to i64
+  %6 = getelementptr %class.btVector3.1742160, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
 

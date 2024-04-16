@@ -35,7 +35,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -5
+  %1 = add i32 %0, 59
   %2 = and i32 %1, 63
   %3 = sub nuw nsw i32 64, %2
   ret i32 %3

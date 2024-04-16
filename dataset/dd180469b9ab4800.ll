@@ -8,12 +8,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 1
-  %4 = and i8 %1, 1
-  %5 = icmp ne i8 %4, %3
-  %6 = zext i1 %5 to i32
-  %7 = select i1 %0, i32 -1, i32 %6
-  ret i32 %7
+  %3 = xor i8 %1, %2
+  %4 = and i8 %3, 1
+  %5 = zext nneg i8 %4 to i32
+  %6 = select i1 %0, i32 -1, i32 %5
+  ret i32 %6
 }
 
 ; 2 occurrences:

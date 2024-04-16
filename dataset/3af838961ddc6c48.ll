@@ -10,11 +10,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = call noundef i64 @llvm.bswap.i64(i64 %2)
-  %4 = and i64 %3, 1
-  %5 = icmp eq i64 %4, 0
-  %6 = select i1 %5, i64 %0, i64 %1
-  ret i64 %6
+  %3 = and i64 %2, 72057594037927936
+  %4 = icmp eq i64 %3, 0
+  %5 = select i1 %4, i64 %0, i64 %1
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -25,11 +24,10 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000014(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = tail call noundef i16 @llvm.bswap.i16(i16 %2)
-  %4 = and i16 %3, 4095
-  %5 = icmp ult i16 %4, 2560
-  %6 = select i1 %5, i16 %0, i16 %1
-  ret i16 %6
+  %3 = and i16 %2, 14
+  %4 = icmp ult i16 %3, 10
+  %5 = select i1 %4, i16 %0, i16 %1
+  ret i16 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -46,11 +44,10 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = call i32 @llvm.bswap.i32(i32 %2)
-  %4 = and i32 %3, 16809984
-  %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i16 %0, i16 %1
-  ret i16 %6
+  %3 = and i32 %2, 8388609
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i16 %0, i16 %1
+  ret i16 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

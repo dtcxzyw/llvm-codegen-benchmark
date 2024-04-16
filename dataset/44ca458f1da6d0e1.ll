@@ -7,7 +7,7 @@ define i32 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 1, i8 %1
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = zext nneg i8 %5 to i32
   ret i32 %6
 }

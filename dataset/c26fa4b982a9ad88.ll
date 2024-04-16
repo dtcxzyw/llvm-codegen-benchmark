@@ -21,9 +21,9 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = shl i128 %2, 96
   %4 = shl nuw nsw i128 %0, 32
-  %5 = or disjoint i128 %4, %3
-  %6 = and i128 %5, -18446744073709551616
-  ret i128 %6
+  %.masked = and i128 %4, 170141183460469231713240559642174554112
+  %5 = or i128 %.masked, %3
+  ret i128 %5
 }
 
 ; 1 occurrences:
@@ -34,9 +34,9 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = shl nuw nsw i128 %2, 32
   %4 = shl i128 %0, 96
-  %5 = or disjoint i128 %4, %3
-  %6 = and i128 %5, -18446744073709551616
-  ret i128 %6
+  %.masked = and i128 %3, 79228162495817593519834398720
+  %5 = or disjoint i128 %4, %.masked
+  ret i128 %5
 }
 
 ; 2 occurrences:

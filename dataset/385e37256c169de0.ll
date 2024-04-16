@@ -38,8 +38,8 @@ define i64 @func0000000000000145(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %0, -1
-  %5 = add nsw i64 %4, %3
+  %4 = add i64 %0, 3
+  %5 = add i64 %4, %3
   %6 = and i64 %5, 3
   ret i64 %6
 }

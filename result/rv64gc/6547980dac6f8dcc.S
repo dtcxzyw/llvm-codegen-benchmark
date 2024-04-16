@@ -11,11 +11,11 @@ func000000000000001f:                   # @func000000000000001f
 	mulhu	a1, a1, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
+	negw	a1, a1
 	slli	a1, a1, 33
 	slli	a0, a0, 32
 	srli	a0, a0, 31
-	or	a0, a0, a1
-	neg	a0, a0
+	sub	a0, a1, a0
 	ret
 .LCPI2_0:
 	.quad	-7286425919675154353            # 0x9ae16a3b2f90404f
@@ -37,11 +37,11 @@ func0000000000000004:                   # @func0000000000000004
 	mul	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
+	negw	a1, a1
 	slli	a1, a1, 35
 	slli	a0, a0, 32
 	srli	a0, a0, 29
-	or	a0, a0, a1
-	neg	a0, a0
+	sub	a0, a1, a0
 	ret
 func000000000000005f:                   # @func000000000000005f
 	andi	a1, a1, 255

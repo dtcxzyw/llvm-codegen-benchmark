@@ -228,9 +228,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = icmp ne i64 %0, 8
-  %2 = select i1 %1, float 0.000000e+00, float 1.000000e+00
-  ret float %2
+  %.not = icmp eq i64 %0, 8
+  %1 = select i1 %.not, float 1.000000e+00, float 0.000000e+00
+  ret float %1
 }
 
 ; 2 occurrences:

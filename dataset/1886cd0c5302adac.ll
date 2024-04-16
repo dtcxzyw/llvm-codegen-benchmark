@@ -27,7 +27,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 

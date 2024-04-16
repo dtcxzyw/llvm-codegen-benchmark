@@ -10,7 +10,7 @@ entry:
   %4 = fmul float %3, %3
   %5 = fmul float %1, 5.000000e-01
   %6 = tail call float @llvm.fmuladd.f32(float %5, float %5, float %4)
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

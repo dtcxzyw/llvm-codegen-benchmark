@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000011:                   # @func0000000000000011
 	addi	a2, a0, 1
-	beq	a1, a2, .LBB1_2
+	beq	a2, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	ret

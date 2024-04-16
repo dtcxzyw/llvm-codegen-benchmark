@@ -7,7 +7,7 @@ define i1 @func0000000000000004(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 32, i8 64
   %4 = tail call i8 @llvm.umin.i8(i8 %1, i8 %3)
-  %5 = icmp ult i8 %0, %4
+  %5 = icmp ugt i8 %4, %0
   ret i1 %5
 }
 

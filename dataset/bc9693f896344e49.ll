@@ -21,10 +21,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
-  %2 = sext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %2 = xor i8 %1, -1
+  %.neg = sext i8 %2 to i32
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 ; 1 occurrences:

@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = trunc i32 %1 to i16
-  %3 = icmp sgt i16 %2, 0
-  ret i1 %3
+  %.tr = trunc i32 %0 to i16
+  %1 = shl i16 %.tr, 1
+  %2 = icmp sgt i16 %1, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -19,10 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i32 %0) #0 {
 entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = trunc i32 %1 to i16
-  %3 = icmp eq i16 %2, 0
-  ret i1 %3
+  %.mask1 = and i32 %0, 32767
+  %1 = icmp eq i32 %.mask1, 0
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -31,10 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c6(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 2
-  %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, 0
-  ret i1 %3
+  %.mask1 = and i64 %0, 536870912
+  %1 = icmp ne i64 %.mask1, 0
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

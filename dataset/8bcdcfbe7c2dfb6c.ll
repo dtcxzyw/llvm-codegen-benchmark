@@ -27,7 +27,7 @@ define i1 @func000000000000002c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
   %4 = getelementptr [0 x i8], ptr %3, i64 0, i64 %1
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -99,7 +99,7 @@ define i1 @func0000000000000031(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 240
   %4 = getelementptr inbounds [256 x %"class.boost::intrusive::list.1638619"], ptr %3, i64 0, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -140,7 +140,7 @@ define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 664
   %4 = getelementptr [512 x %struct.TCGTemp.1664283], ptr %3, i64 0, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -153,7 +153,7 @@ define i1 @func0000000000000034(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 24
   %4 = getelementptr inbounds [1 x i8], ptr %3, i64 0, i64 %1
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -170,7 +170,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 912
   %4 = getelementptr [4 x %struct.list_head.1998923], ptr %3, i64 0, i64 %1
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -182,7 +182,7 @@ define i1 @func0000000000000024(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
   %4 = getelementptr [0 x %struct.WordEntry.2122380], ptr %3, i64 0, i64 %1
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -194,7 +194,7 @@ define i1 @func000000000000003c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
   %4 = getelementptr inbounds [0 x %"struct.nix::Attr.2152165"], ptr %3, i64 0, i64 %1
-  %5 = icmp ne ptr %0, %4
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
@@ -206,7 +206,7 @@ define i1 @func0000000000000035(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 2
   %4 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.20.2273899"], ptr %3, i64 0, i64 %1
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -219,7 +219,7 @@ define i1 @func0000000000000038(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 2
   %4 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.20.2273899"], ptr %3, i64 0, i64 %1
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -230,7 +230,7 @@ define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 264
   %4 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %3, i64 0, i64 %1
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 

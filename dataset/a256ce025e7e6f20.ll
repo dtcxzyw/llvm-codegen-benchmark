@@ -164,10 +164,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000019(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr inbounds [3 x %struct.ImGuiTabBarSection.1931809], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i64 %1, i64 0
+  %4 = getelementptr inbounds [3 x %struct.ImGuiTabBarSection.1931809], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 3 occurrences:

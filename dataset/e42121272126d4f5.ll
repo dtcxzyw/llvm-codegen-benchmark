@@ -10,8 +10,8 @@
 define i1 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = add i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %1
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -81,9 +81,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000104(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = zext nneg i8 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = add i64 %4, -1
+  %3 = xor i8 %2, -1
+  %4 = sext i8 %3 to i64
+  %5 = add i64 %4, %1
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }

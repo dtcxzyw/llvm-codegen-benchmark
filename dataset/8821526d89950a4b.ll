@@ -6,8 +6,8 @@
 define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
-  %4 = select i1 %3, i32 %0, i32 1
-  %5 = sub nsw i32 36, %4
+  %4 = sub nsw i32 36, %0
+  %5 = select i1 %3, i32 %4, i32 35
   ret i32 %5
 }
 

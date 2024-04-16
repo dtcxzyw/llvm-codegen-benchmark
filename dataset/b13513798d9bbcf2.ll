@@ -7,7 +7,7 @@ entry:
   %3 = and i8 %2, 127
   %4 = zext nneg i8 %3 to i64
   %5 = sub i64 %1, %4
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

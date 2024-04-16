@@ -56,9 +56,8 @@ define i1 @func00000000000000da(i128 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = zext nneg i32 %2 to i128
-  %4 = sub nsw i128 %0, %3
-  %5 = icmp sgt i128 %4, 0
-  ret i1 %5
+  %4 = icmp slt i128 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -80,9 +79,8 @@ define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 4
   %3 = zext nneg i32 %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -131,9 +129,8 @@ define i1 @func000000000000011a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 4
   %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %0, %3
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:

@@ -289,7 +289,7 @@ entry:
 define i1 @func0000000000000e11(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = icmp eq i32 %4, 4
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -382,7 +382,7 @@ entry:
 define i1 @func0000000000000fcc(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 40
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = icmp ne i32 %4, 40
   %6 = icmp ne i16 %0, 17
   %7 = select i1 %6, i1 true, i1 %5
@@ -410,7 +410,7 @@ entry:
 define i1 @func0000000000000314(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -48
-  %4 = add nuw nsw i8 %3, %1
+  %4 = or i8 %3, %1
   %5 = icmp eq i8 %4, 0
   %6 = icmp ult i8 %0, -12
   %7 = select i1 %6, i1 true, i1 %5

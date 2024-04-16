@@ -10,12 +10,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = trunc i32 %1 to i8
-  %3 = lshr i8 %2, 3
-  %4 = trunc i32 %0 to i8
-  %5 = lshr i8 %4, 3
-  %6 = icmp eq i8 %5, %3
-  ret i1 %6
+  %.unshifted1 = xor i32 %0, %1
+  %2 = and i32 %.unshifted1, 248
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:

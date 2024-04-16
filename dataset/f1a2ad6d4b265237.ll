@@ -10,7 +10,7 @@
 define ptr @func0000000000000007(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 8
   %7 = getelementptr inbounds %struct.nodeElt_s.1957035, ptr %6, i64 %5

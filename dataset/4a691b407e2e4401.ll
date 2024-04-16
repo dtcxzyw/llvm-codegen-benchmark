@@ -6,11 +6,10 @@
 define i64 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = mul nuw nsw i64 %2, 5
-  %4 = lshr i64 %0, 32
-  %5 = add nuw nsw i64 %4, %3
-  %6 = shl i64 %5, 32
-  ret i64 %6
+  %3 = mul i64 %2, 21474836480
+  %4 = add i64 %3, %0
+  %5 = and i64 %4, -4294967296
+  ret i64 %5
 }
 
 ; 3 occurrences:

@@ -11,9 +11,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = and i64 %3, 8388607
-  %5 = or i64 %1, %4
+  %3 = and i32 %2, 8388607
+  %4 = zext nneg i32 %3 to i64
+  %5 = or i64 %4, %1
   %6 = icmp ne i64 %5, 0
   %7 = and i1 %6, %0
   ret i1 %7
@@ -25,12 +25,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = and i32 %3, 63
-  %5 = or disjoint i32 %4, %1
-  %6 = icmp ult i32 %5, 2048
-  %7 = and i1 %0, %6
-  ret i1 %7
+  %3 = icmp ult i32 %1, 2048
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

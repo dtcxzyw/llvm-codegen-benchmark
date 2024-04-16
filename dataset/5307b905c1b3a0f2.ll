@@ -9,8 +9,8 @@ entry:
   %3 = trunc i32 %2 to i8
   %4 = icmp ult i8 %3, 3
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %1, %5
-  %7 = add nsw i32 %0, %6
+  %6 = add nsw i32 %5, %1
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -25,8 +25,8 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = icmp slt i8 %3, 3
   %5 = sext i1 %4 to i64
-  %6 = add nsw i64 %1, %5
-  %7 = add nuw nsw i64 %0, %6
+  %6 = add nsw i64 %5, %1
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

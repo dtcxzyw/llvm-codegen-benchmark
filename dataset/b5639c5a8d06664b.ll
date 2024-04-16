@@ -20,7 +20,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = or i32 %3, 8
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = or disjoint i32 %3, 2
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %3, 32
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

@@ -20,7 +20,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 1099170962, i64 %1
-  %5 = mul nuw i64 %0, %4
+  %5 = mul nuw i64 %4, %0
   %6 = lshr i64 %5, 32
   ret i64 %6
 }

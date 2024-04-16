@@ -334,7 +334,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 3
   %4 = and i16 %3, 8
-  %5 = or disjoint i16 %0, %4
+  %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
 
@@ -385,7 +385,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = shl i16 %2, 7
   %4 = and i16 %3, 896
-  %5 = or i16 %0, %4
+  %5 = or i16 %4, %0
   ret i16 %5
 }
 
@@ -413,7 +413,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = shl nuw i32 %2, 16
   %4 = and i32 %3, -2147483648
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -428,7 +428,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = shl nuw nsw i8 %2, 4
   %4 = and i8 %3, 16
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -440,7 +440,7 @@ entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 2
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
 
@@ -464,7 +464,7 @@ entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = shl nuw nsw i8 %2, 1
   %4 = and i8 %3, 2
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 

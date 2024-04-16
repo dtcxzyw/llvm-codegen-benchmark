@@ -8,7 +8,7 @@ define i1 @func000000000000001a(double %0, double %1) #0 {
 entry:
   %2 = tail call noundef double @llvm.fabs.f64(double %1)
   %3 = fmul double %2, 0x3CE4000000000000
-  %4 = fcmp ole double %0, %3
+  %4 = fcmp oge double %3, %0
   ret i1 %4
 }
 
@@ -22,7 +22,7 @@ define i1 @func0000000000000015(double %0, double %1) #0 {
 entry:
   %2 = tail call noundef double @llvm.fabs.f64(double %1)
   %3 = fmul double %2, 0x3CE4000000000000
-  %4 = fcmp ugt double %0, %3
+  %4 = fcmp ult double %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000012(float %0, float %1) #0 {
 entry:
   %2 = tail call noundef float @llvm.fabs.f32(float %1)
   %3 = fmul float %2, 0x3E80000000000000
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   ret i1 %4
 }
 
@@ -49,7 +49,7 @@ define i1 @func000000000000001d(float %0, float %1) #0 {
 entry:
   %2 = tail call noundef float @llvm.fabs.f32(float %1)
   %3 = fmul float %2, 0x3E80000000000000
-  %4 = fcmp uge float %0, %3
+  %4 = fcmp ule float %3, %0
   ret i1 %4
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = tail call double @llvm.fabs.f64(double %1)
   %3 = fmul double %2, 2.500000e-01
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   ret i1 %4
 }
 
@@ -72,7 +72,7 @@ define i1 @func0000000000000014(double %0, double %1) #0 {
 entry:
   %2 = call noundef double @llvm.fabs.f64(double %1)
   %3 = fmul double %2, 5.000000e-01
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   ret i1 %4
 }
 
@@ -84,7 +84,7 @@ define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = tail call float @llvm.fabs.f32(float %1)
   %3 = fmul float %2, 0x3FDCCCCCC0000000
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   ret i1 %4
 }
 
@@ -95,7 +95,7 @@ define i1 @func0000000000000013(float %0, float %1) #0 {
 entry:
   %2 = tail call noundef float @llvm.fabs.f32(float %1)
   %3 = fmul float %2, 0x47EFFFFFE0000000
-  %4 = fcmp ult float %0, %3
+  %4 = fcmp ugt float %3, %0
   ret i1 %4
 }
 
@@ -108,7 +108,7 @@ define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = call double @llvm.fabs.f64(double %1)
   %3 = fmul double %2, 1.100000e+00
-  %4 = fcmp ole double %0, %3
+  %4 = fcmp oge double %3, %0
   ret i1 %4
 }
 
@@ -121,7 +121,7 @@ define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = call double @llvm.fabs.f64(double %1)
   %3 = fmul double %2, 1.100000e+00
-  %4 = fcmp ugt double %0, %3
+  %4 = fcmp ult double %3, %0
   ret i1 %4
 }
 

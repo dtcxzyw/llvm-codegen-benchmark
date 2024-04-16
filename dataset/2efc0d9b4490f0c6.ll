@@ -22,11 +22,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0) #0 {
 entry:
-  %1 = tail call noundef i32 @llvm.bswap.i32(i32 %0)
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 15
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %1 = and i32 %0, 251658240
+  %2 = icmp eq i32 %1, 0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -42,11 +40,9 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.bswap.i16(i16 %0)
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 15
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = and i16 %0, 3840
+  %2 = icmp eq i16 %1, 0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

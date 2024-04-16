@@ -14,9 +14,8 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 100
-  %6 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 6
-  ret ptr %7
+  %6 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %5, i64 0, i64 %4, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -27,9 +26,8 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 264
-  %6 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -40,9 +38,8 @@ entry:
   %3 = add i64 %2, -1
   %4 = add i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 264
-  %6 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -53,9 +50,8 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 264
-  %6 = getelementptr inbounds [513 x %struct.mi_page_s.2404921], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds [513 x %struct.mi_page_s.2404921], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -66,9 +62,8 @@ entry:
   %3 = add i64 %2, -1
   %4 = add i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 264
-  %6 = getelementptr inbounds [513 x %struct.mi_page_s.2404921], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds [513 x %struct.mi_page_s.2404921], ptr %5, i64 0, i64 %4, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

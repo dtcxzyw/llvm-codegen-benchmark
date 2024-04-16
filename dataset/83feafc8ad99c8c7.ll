@@ -259,8 +259,8 @@
 define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %0, i64 %2)
-  %4 = add i64 %3, %0
-  %5 = icmp ult i64 %4, %0
+  %4 = xor i64 %0, -1
+  %5 = icmp ugt i64 %3, %4
   %6 = add nuw nsw i64 %1, 63
   %7 = select i1 %5, i64 9223372036854775807, i64 %6
   ret i64 %7

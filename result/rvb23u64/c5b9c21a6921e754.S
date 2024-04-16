@@ -1,8 +1,8 @@
 func000000000000003f:                   # @func000000000000003f
-	addiw	a2, a2, 1
 	add	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
-	addi	a0, a0, 2
+	addi	a0, a0, 3
 	ret
 func000000000000000b:                   # @func000000000000000b
 	addi	a2, a2, -3

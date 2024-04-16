@@ -351,7 +351,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %1)
+  %2 = or i64 %0, %1
   %3 = icmp eq i64 %2, 0
   ret i1 %3
 }

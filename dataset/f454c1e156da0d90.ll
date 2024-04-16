@@ -5,12 +5,11 @@
 ; Function Attrs: nounwind
 define i8 @func000000000000003c(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 4
-  %3 = and i32 %2, 48
-  %4 = zext nneg i8 %0 to i32
-  %5 = or disjoint i32 %3, %4
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %.tr = trunc i32 %1 to i8
+  %2 = shl i8 %.tr, 4
+  %3 = and i8 %2, 48
+  %4 = or i8 %3, %0
+  ret i8 %4
 }
 
 ; 4 occurrences:
@@ -25,7 +24,7 @@ entry:
   %3 = and i32 %2, 3840
   %4 = zext i8 %0 to i32
   %5 = or disjoint i32 %3, %4
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
 }
 
@@ -38,7 +37,7 @@ entry:
   %3 = and i32 %2, 61440
   %4 = zext i8 %0 to i32
   %5 = or disjoint i32 %3, %4
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }
 
@@ -47,12 +46,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000030(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = and i32 %2, 128
-  %4 = zext i8 %0 to i32
-  %5 = or i32 %3, %4
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %.tr = trunc i32 %1 to i8
+  %2 = shl i8 %.tr, 2
+  %3 = and i8 %2, -128
+  %4 = or i8 %3, %0
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

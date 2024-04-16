@@ -4,7 +4,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	sltu	a3, a5, a3
 	add	a4, a4, a3
 	srai	a3, a4, 1
-	beq	a2, a3, .LBB0_2
+	beq	a3, a2, .LBB0_2
 	slt	a1, a2, a3
 	slti	a0, a0, 0
 	or	a0, a0, a1

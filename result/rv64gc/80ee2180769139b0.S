@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.quad	-3942382747735136937            # 0xc949d7c7509e6557
 .LCPI0_1:
-	.quad	-7286425919675154353            # 0x9ae16a3b2f90404f
+	.quad	7286425919675154353             # 0x651e95c4d06fbfb1
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
@@ -12,6 +12,6 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 44
 	or	a2, a2, a4
 	mul	a1, a1, a3
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

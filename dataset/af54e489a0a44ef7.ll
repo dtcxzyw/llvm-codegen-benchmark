@@ -8,7 +8,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = mul nuw nsw i64 %3, 60
   %5 = select i1 %1, i64 31536000, i64 %4
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 24
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

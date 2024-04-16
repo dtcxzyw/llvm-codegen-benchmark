@@ -8,7 +8,7 @@ define double @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -65536
   %3 = uitofp i32 %2 to double
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }
@@ -20,7 +20,7 @@ define double @func0000000000000024(double %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = uitofp i64 %2 to double
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }

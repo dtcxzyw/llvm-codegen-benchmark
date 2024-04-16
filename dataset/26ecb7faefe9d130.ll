@@ -12,7 +12,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
   %4 = or disjoint i64 %3, 4
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 4
   %4 = or disjoint i64 %3, 12
-  %5 = icmp ule i64 %0, %4
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, 64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

@@ -8,7 +8,7 @@ entry:
   %4 = shl i32 %3, 20
   %5 = or disjoint i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
   %6 = sext i16 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -39,9 +39,9 @@ define i64 @func000000000000001d(i64 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -56,7 +56,7 @@ entry:
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
   %6 = sext i16 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

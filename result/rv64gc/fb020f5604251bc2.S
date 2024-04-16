@@ -36,20 +36,20 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a2, a2, 1
-	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mul	a1, a2, a1
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
-	mul	a2, a0, a2
+	mul	a2, a2, a0
 	addi	a0, a2, -256
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	ret
 func0000000000000075:                   # @func0000000000000075
 	slli	a2, a2, 1
-	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mul	a1, a2, a1
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	li	a2, -1
 	srli	a2, a2, 8
 	add	a1, a1, a2

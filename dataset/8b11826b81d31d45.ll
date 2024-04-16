@@ -9,7 +9,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 39
   %5 = lshr i64 %4, 3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -20,11 +20,9 @@ entry:
 define i32 @func000000000000007b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 16
-  %4 = add nuw nsw i32 %3, 65537
-  %5 = lshr i32 %4, 16
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
+  %3 = add nuw nsw i32 %2, 1
+  %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -36,7 +34,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = add nsw i32 %3, -4
   %5 = lshr i32 %4, 3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

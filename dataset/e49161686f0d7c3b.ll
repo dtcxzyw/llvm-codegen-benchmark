@@ -173,9 +173,9 @@ entry:
   %2 = sub nsw i32 2, %1
   %3 = mul nsw i32 %2, 1741647
   %4 = ashr i32 %3, 19
-  %5 = sub nsw i32 %4, %0
-  %6 = sub nsw i32 64, %5
-  ret i32 %6
+  %.neg = sub i32 %0, %4
+  %5 = add i32 %.neg, 64
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

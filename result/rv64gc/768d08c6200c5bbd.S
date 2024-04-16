@@ -26,7 +26,9 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	bnez	a0, .LBB3_2
-	li	a0, 2
+	li	a1, 2
+	slli	a0, a1, 32
+	srli	a0, a0, 32
 	ret
 .LBB3_2:
 	addi	a1, a1, 1

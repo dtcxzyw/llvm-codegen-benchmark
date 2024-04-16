@@ -21,12 +21,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 42
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, 0
-  %5 = icmp eq i32 %0, 5
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %2 = icmp ugt i64 %1, 4398046511103
+  %3 = icmp eq i32 %0, 5
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -92,12 +90,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000211(i32 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %2 = icmp ult i64 %1, 4294967296
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -107,12 +103,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, -1
-  %5 = icmp eq i32 %0, -1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %2 = icmp ugt i64 %1, -4294967297
+  %3 = icmp eq i32 %0, -1
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -120,12 +114,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000002cc(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ne i32 %3, -1
-  %5 = icmp ne i64 %0, 0
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %2 = icmp ult i64 %1, -4294967296
+  %3 = icmp ne i64 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -185,12 +177,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000002c1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ne i32 %3, 0
-  %5 = icmp eq i64 %0, 1280
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
+  %2 = icmp ugt i64 %1, 4294967295
+  %3 = icmp eq i64 %0, 1280
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -199,7 +189,7 @@ entry:
 define i1 @func00000000000000ac(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
   %5 = icmp ne i8 %0, 0
   %6 = select i1 %5, i1 %4, i1 false

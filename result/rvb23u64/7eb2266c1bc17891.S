@@ -36,9 +36,9 @@ func00000000000000b6:                   # @func00000000000000b6
 	slt	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084
-	bset	a1, zero, a1
 	addi	a0, a0, 1
-	sltu	a0, a0, a1
+	srl	a0, a0, a1
+	seqz	a0, a0
 	ret
 func00000000000000b1:                   # @func00000000000000b1
 	bset	a1, zero, a1
@@ -118,7 +118,7 @@ func00000000000000ba:                   # @func00000000000000ba
 	slt	a0, a1, a0
 	ret
 func00000000000000a4:                   # @func00000000000000a4
-	bset	a1, zero, a1
 	addi	a0, a0, 2
-	sltu	a0, a0, a1
+	srl	a0, a0, a1
+	seqz	a0, a0
 	ret

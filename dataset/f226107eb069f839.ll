@@ -34,7 +34,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 19)
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 2147483647)
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -61,7 +61,7 @@ entry:
   %2 = call i8 @llvm.umin.i8(i8 %1, i8 -10)
   %3 = add nuw i8 %2, 4
   %4 = zext i8 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -76,7 +76,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 10)
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -88,7 +88,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 2)
   %3 = add nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -100,7 +100,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 131067)
   %3 = add nuw nsw i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -112,7 +112,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 8)
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

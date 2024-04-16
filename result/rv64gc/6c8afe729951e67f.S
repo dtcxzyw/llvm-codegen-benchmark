@@ -26,11 +26,7 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a0, a0, 63
 	ret
 func0000000000000041:                   # @func0000000000000041
-	li	a1, 24
-	mul	a0, a0, a1
-	addi	a0, a0, 23
-	andi	a0, a0, -8
-	seqz	a0, a0
+	li	a0, 0
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	slli	a1, a0, 1

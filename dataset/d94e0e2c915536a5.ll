@@ -12,7 +12,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = tail call i64 @llvm.umax.i64(i64 %4, i64 1)
-  %6 = mul nsw i64 %0, %5
+  %6 = mul nsw i64 %5, %0
   %7 = icmp sgt i64 %6, 9223372036854675807
   ret i1 %7
 }

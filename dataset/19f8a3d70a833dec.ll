@@ -9,7 +9,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
   %4 = and i64 %3, 65535
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 16
   %7 = getelementptr inbounds [0 x %struct.jv.1745422], ptr %6, i64 0, i64 %5
   ret ptr %7
@@ -23,7 +23,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 63
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 40
   %7 = getelementptr [64 x i8], ptr %6, i64 0, i64 %5
   ret ptr %7

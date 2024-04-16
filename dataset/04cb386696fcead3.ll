@@ -30,7 +30,7 @@
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 60
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 7
   %4 = add nsw i32 %3, -3
   %5 = icmp ult i32 %4, 2
@@ -145,12 +145,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 52
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 2047
-  %4 = add nsw i32 %3, -1075
-  %5 = icmp eq i32 %4, -77
-  ret i1 %5
+  %1 = and i64 %0, 9218868437227405312
+  %2 = icmp eq i64 %1, 4494592428115755008
+  ret i1 %2
 }
 
 ; 7 occurrences:
@@ -164,12 +161,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d1(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 52
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, 2047
-  %4 = add nsw i32 %3, -1075
-  %5 = icmp eq i32 %4, -77
-  ret i1 %5
+  %1 = and i64 %0, 9218868437227405312
+  %2 = icmp eq i64 %1, 4494592428115755008
+  ret i1 %2
 }
 
 ; 2 occurrences:

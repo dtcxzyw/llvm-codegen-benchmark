@@ -56,7 +56,7 @@
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31744
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -71,7 +71,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3840
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = lshr exact i32 %3, 6
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

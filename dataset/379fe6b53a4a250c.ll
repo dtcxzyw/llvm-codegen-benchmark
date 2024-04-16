@@ -5,11 +5,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000031(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = and i32 %2, 64
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i8 46, i8 %0
-  ret i8 %5
+  %.not = icmp eq i32 %1, 6
+  %2 = select i1 %.not, i8 %0, i8 46
+  ret i8 %2
 }
 
 ; 2 occurrences:

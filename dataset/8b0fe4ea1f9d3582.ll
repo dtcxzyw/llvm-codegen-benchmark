@@ -76,10 +76,9 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = ashr i32 %0, 22
-  %2 = icmp sgt i32 %1, -5
-  %3 = sext i1 %2 to i64
-  ret i64 %3
+  %1 = icmp sgt i32 %0, -16777217
+  %2 = sext i1 %1 to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

@@ -10,7 +10,7 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 32
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   %6 = or i8 %5, 1
   ret i8 %6
 }
@@ -22,9 +22,9 @@ entry:
 define i16 @func0000000000000002(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 25
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw nsw i32 %2 to i16
   %4 = and i16 %3, 1
-  %5 = or disjoint i16 %0, %4
+  %5 = or disjoint i16 %4, %0
   %6 = or i16 %5, 2
   ret i16 %6
 }
@@ -44,9 +44,9 @@ entry:
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 44
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = or disjoint i32 %5, 520
   ret i32 %6
 }

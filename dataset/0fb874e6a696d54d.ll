@@ -36,7 +36,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 60
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 60
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -82,7 +82,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -438,7 +438,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr inbounds %"class.rocksdb::LRUList.1570234", ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -677,7 +677,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 3
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -699,7 +699,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 1
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -733,7 +733,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -749,7 +749,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
   %5 = getelementptr inbounds %struct.TempRow.1658203, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -765,7 +765,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr inbounds %struct.aiFace.1750042, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -794,7 +794,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -826,7 +826,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 12
   %5 = getelementptr inbounds i32, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -839,7 +839,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds ptr, ptr %4, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -860,7 +860,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -873,7 +873,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -887,7 +887,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -296
   %5 = getelementptr i32, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -899,7 +899,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 24
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -911,7 +911,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 120
   %5 = getelementptr %struct.mirror.2010013, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -924,7 +924,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 12
   %5 = getelementptr %struct.ext4_extent.2023802, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -948,7 +948,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds ptr, ptr %4, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -961,7 +961,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 16
   %5 = getelementptr inbounds %struct.lua_TValue.2127476, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -973,7 +973,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -1
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -985,7 +985,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp uge ptr %0, %5
+  %6 = icmp ule ptr %5, %0
   ret i1 %6
 }
 
@@ -998,7 +998,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 4
   %5 = getelementptr inbounds %"struct.OT::IntType.3.2272883", ptr %4, i64 %3
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 

@@ -52,12 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i32, ptr %1, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 -4
-  %7 = getelementptr inbounds i32, ptr %6, i64 %0
-  ret ptr %7
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i32, ptr %1, i64 %3
+  %5 = getelementptr inbounds i32, ptr %4, i64 %0
+  ret ptr %5
 }
 
 ; 3 occurrences:

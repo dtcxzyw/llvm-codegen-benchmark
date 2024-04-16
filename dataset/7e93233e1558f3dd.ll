@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 0, i64 %2
-  %4 = icmp eq i64 %3, 0
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %1, i1 true, i1 %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }

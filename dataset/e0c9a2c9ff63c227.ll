@@ -33,7 +33,7 @@ define i1 @func00000000000000a1(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = tail call i16 @llvm.umax.i16(i16 %0, i16 %4)
+  %5 = or i16 %4, %0
   %6 = icmp eq i16 %5, 0
   ret i1 %6
 }
@@ -67,7 +67,7 @@ define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
-  %5 = tail call i32 @llvm.umax.i32(i32 %0, i32 %4)
+  %5 = or i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

@@ -12,7 +12,7 @@
 define float @func0000000000000000(i1 %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to float
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = select i1 %0, float 1.000000e+00, float %4
   ret float %5
 }

@@ -13,8 +13,8 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 1
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -25,8 +25,8 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 1
-  %6 = getelementptr inbounds i16, ptr %0, i64 %5
+  %5 = getelementptr i16, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 2
   ret ptr %6
 }
 
@@ -37,8 +37,8 @@ define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 1
-  %6 = getelementptr inbounds %"class.cvc5::internal::prop::SatLiteral.2030923", ptr %0, i64 %5
+  %5 = getelementptr %"class.cvc5::internal::prop::SatLiteral.2030923", ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -50,8 +50,8 @@ define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 1
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -62,8 +62,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 9
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 9
   ret ptr %6
 }
 

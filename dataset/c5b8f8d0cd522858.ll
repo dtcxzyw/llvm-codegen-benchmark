@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 16128
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = shl i32 %2, 17
   %4 = and i32 %3, 131072
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = shl nuw i32 %2, 1
   %4 = and i32 %3, 2
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %3, 983040
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = shl nuw i32 %2, 1
   %4 = and i32 %3, 2
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 32
   %5 = or i8 %4, %1
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 
@@ -89,7 +89,7 @@ entry:
   %3 = shl nuw i16 %2, 8
   %4 = and i16 %3, 256
   %5 = or disjoint i16 %4, %1
-  %6 = icmp ne i16 %0, %5
+  %6 = icmp ne i16 %5, %0
   ret i1 %6
 }
 
@@ -106,8 +106,8 @@ define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = and i32 %3, 480
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp eq i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -119,8 +119,8 @@ define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
   %4 = and i64 %3, 576460752303422976
-  %5 = or disjoint i64 %1, %4
-  %6 = icmp eq i64 %0, %5
+  %5 = or disjoint i64 %4, %1
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -134,7 +134,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 4
   %4 = and i32 %3, 983040
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -146,7 +146,7 @@ entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, 16776960
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -160,7 +160,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 3840
   %5 = or disjoint i32 %4, %1
-  %6 = icmp uge i32 %0, %5
+  %6 = icmp ule i32 %5, %0
   ret i1 %6
 }
 
@@ -172,7 +172,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 14
   %4 = and i32 %3, 2080768
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

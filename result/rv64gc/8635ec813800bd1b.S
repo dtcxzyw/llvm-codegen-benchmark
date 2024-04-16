@@ -40,7 +40,7 @@ func0000000000000056:                   # @func0000000000000056
 	mv	a0, a1
 	ret
 func00000000000000b1:                   # @func00000000000000b1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	bnez	a1, .LBB5_2
 	li	a0, 28
 	ret
@@ -48,7 +48,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	addi	a0, a0, 24
 	ret
 func00000000000000f1:                   # @func00000000000000f1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	bnez	a1, .LBB6_2
 	li	a0, 28
 	ret
@@ -56,7 +56,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	addi	a0, a0, 24
 	ret
 func00000000000000e1:                   # @func00000000000000e1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	bnez	a1, .LBB7_2
 	li	a0, 28
 	ret

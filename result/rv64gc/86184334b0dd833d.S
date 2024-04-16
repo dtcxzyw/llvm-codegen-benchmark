@@ -6,15 +6,15 @@ func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a2, 255
-	li	a3, 8
-	bltu	a2, a3, .LBB1_2
+	andi	a2, a2, 248
+	beqz	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	andi	a0, a0, 255
 	ret
 func0000000000000009:                   # @func0000000000000009
 	srliw	a2, a2, 11
+	slli	a2, a2, 11
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
@@ -25,10 +25,10 @@ func0000000000000018:                   # @func0000000000000018
 	srli	a2, a2, 48
 	lui	a3, 5
 	addiw	a3, a3, -1719
-	bne	a2, a3, .LBB3_2
-	mv	a0, a1
+	beq	a2, a3, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
-	slli	a0, a0, 32
+	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
 func000000000000000d:                   # @func000000000000000d

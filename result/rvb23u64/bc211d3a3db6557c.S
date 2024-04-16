@@ -1,8 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
-	fli.s	fa1, 1.0
-.LBB0_2:                                # %entry
+	fli.s	fa5, 2.0
+	fmul.s	fa0, fa5, fa0
+	ret
+.LBB0_2:
 	fadd.s	fa5, fa1, fa1
 	fmul.s	fa0, fa5, fa0
 	ret

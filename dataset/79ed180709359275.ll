@@ -10,7 +10,7 @@ entry:
   %4 = select i1 %3, float 1.000000e+00, float %2
   %5 = fsub float 2.000000e+00, %4
   %6 = fmul float %5, %1
-  %7 = fadd float %0, %6
+  %7 = fadd float %6, %0
   ret float %7
 }
 

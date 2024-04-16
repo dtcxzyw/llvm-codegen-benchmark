@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
-	sh2add	a2, a2, a2
-	slli	a2, a2, 1
+	li	a3, -10
+	mul	a2, a2, a3
 	bset	a0, zero, a0
 	sub	a0, a0, a1
-	add	a0, a0, a2
+	sub	a0, a0, a2
 	ret

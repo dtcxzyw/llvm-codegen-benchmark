@@ -603,8 +603,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 2
-  %2 = lshr exact i8 %1, 1
+  %1 = lshr i8 %0, 1
+  %2 = and i8 %1, 1
   ret i8 %2
 }
 
@@ -953,8 +953,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 72340172838076673
-  %2 = lshr i64 %1, 8
+  %1 = lshr i64 %0, 8
+  %2 = and i64 %1, 282578800148737
   ret i64 %2
 }
 

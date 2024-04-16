@@ -15,7 +15,8 @@ func0000000000000141:                   # @func0000000000000141
 	sub	a1, a1, a2
 	li	a2, 12
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000156:                   # @func0000000000000156
@@ -48,8 +49,9 @@ func0000000000000151:                   # @func0000000000000151
 	andi	a2, a2, 1
 	sub	a1, a1, a2
 	slli	a2, a1, 2
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000144:                   # @func0000000000000144

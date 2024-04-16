@@ -39,9 +39,9 @@ func0000000000000017:                   # @func0000000000000017
 	ret
 func00000000000000cf:                   # @func00000000000000cf
 	slli	a2, a1, 48
-	li	a1, 5
-	bnez	a2, .LBB5_2
 	li	a1, 9
+	beqz	a2, .LBB5_2
+	li	a1, 5
 .LBB5_2:                                # %entry
 	add	a0, a0, a1
 	addi	a0, a0, 38

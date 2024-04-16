@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp eq i32 %3, 8
   ret i1 %4
 }
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp ugt i64 %3, 2305843009213693951
   ret i1 %4
 }
@@ -73,7 +73,7 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -84,8 +84,8 @@ entry:
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
-  %3 = add i8 %2, %0
-  %4 = icmp ne i8 %3, 0
+  %3 = sub i8 0, %0
+  %4 = icmp ne i8 %2, %3
   ret i1 %4
 }
 
@@ -95,7 +95,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp ult i32 %3, 1025
   ret i1 %4
 }

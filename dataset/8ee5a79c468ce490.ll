@@ -8,7 +8,7 @@
 define ptr @func0000000000000014(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %0, %3
+  %4 = mul nsw i64 %3, %0
   %5 = getelementptr i32, ptr %1, i64 %4
   %6 = getelementptr i32, ptr %5, i64 %0
   ret ptr %6

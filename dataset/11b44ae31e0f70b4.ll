@@ -23,7 +23,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr %"class.Catch::TestCaseHandle.1878383", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -35,7 +35,7 @@ entry:
 define i64 @func0000000000000011(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr inbounds i32, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -47,7 +47,7 @@ entry:
 define i64 @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

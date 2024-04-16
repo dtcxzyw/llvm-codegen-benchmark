@@ -30,7 +30,7 @@
 define i8 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = or i16 %0, %2
+  %3 = or i16 %2, %0
   %4 = trunc i16 %3 to i8
   ret i8 %4
 }
@@ -51,7 +51,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

@@ -24,9 +24,8 @@ entry:
   %2 = udiv exact i64 %1, 56
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %"class.std::__1::tuple.1556134", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 9 occurrences:
@@ -45,9 +44,8 @@ entry:
   %2 = udiv exact i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr inbounds %"struct.mold::elf::ElfRel.1620406", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.mold::elf::ElfRel.1620406", ptr %0, i64 %4, i32 3
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

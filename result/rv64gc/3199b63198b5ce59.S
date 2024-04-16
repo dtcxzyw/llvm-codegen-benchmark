@@ -41,10 +41,10 @@ func0000000000000022:                   # @func0000000000000022
 	mul	a3, a3, a4
 	srli	a3, a3, 56
 	sll	a2, a2, a3
-	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mul	a1, a2, a1
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	ret
 func0000000000000062:                   # @func0000000000000062
 	srli	a3, a2, 1
@@ -89,13 +89,12 @@ func0000000000000062:                   # @func0000000000000062
 	mul	a3, a3, a4
 	srli	a3, a3, 56
 	sll	a2, a2, a3
-	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mul	a1, a2, a1
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
-	beqz	a2, .LBB2_2
 	srli	a3, a2, 1
 	or	a3, a3, a2
 	srli	a4, a3, 2
@@ -137,13 +136,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a4, a4, a5
 	mul	a3, a3, a4
 	srli	a3, a3, 56
-	j	.LBB2_3
-.LBB2_2:
-	li	a3, 64
-.LBB2_3:                                # %cond.end
 	sll	a2, a2, a3
-	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mul	a1, a2, a1
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	ret

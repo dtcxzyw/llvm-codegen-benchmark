@@ -7,9 +7,9 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = add nuw nsw i64 %4, 2040
-  %6 = sub i64 %0, %1
-  %7 = sub i64 %5, %6
-  ret i64 %7
+  %.neg = sub i64 %1, %0
+  %6 = add i64 %.neg, %5
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -20,9 +20,9 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nsw i64 %4, -4
-  %6 = sub i64 %0, %1
-  %7 = sub i64 %5, %6
-  ret i64 %7
+  %.neg = sub i64 %1, %0
+  %6 = add i64 %.neg, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

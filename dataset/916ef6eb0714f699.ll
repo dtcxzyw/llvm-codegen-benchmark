@@ -157,7 +157,7 @@
 define i32 @func0000000000000030(i64 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = zext nneg i32 %1 to i64
   %6 = lshr i64 %4, %5
   %7 = trunc i64 %6 to i32
@@ -178,7 +178,7 @@ entry:
 define i32 @func00000000000000b0(i64 %0, i32 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = zext nneg i32 %1 to i64
   %6 = lshr i64 %4, %5
   %7 = trunc i64 %6 to i32

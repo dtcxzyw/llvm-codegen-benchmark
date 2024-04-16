@@ -3,9 +3,9 @@ func000000000000002a:                   # @func000000000000002a
 	srli	a1, a1, 10
 	neg	a2, a1
 	slti	a0, a0, 0
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
+	or	a0, a0, a1
 	ret
 func000000000000003a:                   # @func000000000000003a
 	sext.w	a0, a0

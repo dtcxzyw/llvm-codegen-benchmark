@@ -5,6 +5,6 @@ func0000000000000005:                   # @func0000000000000005
 	xor	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	ctz	a1, a0
-	binv	a0, a0, a1
+	addi	a1, a0, -1
+	and	a0, a0, a1
 	ret

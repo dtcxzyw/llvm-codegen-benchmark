@@ -9,9 +9,9 @@
 define i32 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = xor i32 %0, 31
-  %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, -1
-  ret i32 %3
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

@@ -22,7 +22,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = call i64 @llvm.umax.i64(i64 %1, i64 %3)
   %5 = add i64 %4, -1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = add nuw i64 %2, 1
   %4 = call i64 @llvm.umax.i64(i64 %1, i64 %3)
   %5 = add i64 %4, -1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, -17
-  %3 = select i1 %0, i16 %1, i16 %2
-  %4 = shl i16 %3, 1
+  %2 = shl i16 %1, 1
+  %3 = and i16 %2, -34
+  %4 = select i1 %0, i16 %2, i16 %3
   ret i16 %4
 }
 

@@ -6,9 +6,9 @@
 define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
-  %5 = select i1 %0, i64 %4, i64 -107
-  %6 = icmp ult i64 %5, -119
+  %4 = add i64 %3, %1
+  %5 = icmp ult i64 %4, -119
+  %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -19,8 +19,9 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add i32 %3, %1
-  %5 = select i1 %0, i32 %4, i32 -5
-  %6 = icmp slt i32 %5, 0
+  %5 = icmp slt i32 %4, 0
+  %not. = xor i1 %0, true
+  %6 = select i1 %not., i1 true, i1 %5
   ret i1 %6
 }
 

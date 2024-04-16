@@ -100,11 +100,11 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
+  %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp ne i32 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 
@@ -303,7 +303,7 @@ entry:
   %4 = shl nuw i64 1, %3
   %5 = and i64 %4, %1
   %6 = icmp ne i64 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 
@@ -336,7 +336,7 @@ entry:
   %4 = shl i32 262144, %3
   %5 = and i32 %4, %1
   %6 = icmp ne i32 %5, 0
-  %7 = xor i1 %0, %6
+  %7 = xor i1 %6, %0
   ret i1 %7
 }
 

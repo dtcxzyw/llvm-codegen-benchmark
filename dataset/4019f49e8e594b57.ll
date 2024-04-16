@@ -27,10 +27,8 @@
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = lshr i32 %1, 22
-  %3 = and i32 %2, 127
-  %4 = shl nuw nsw i32 %3, 22
-  ret i32 %4
+  %2 = and i32 %1, 532676608
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

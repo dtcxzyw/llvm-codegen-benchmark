@@ -14,7 +14,7 @@ entry:
   %1 = mul i32 %0, 1103515245
   %2 = add i32 %1, 12345
   %3 = sdiv i32 %2, 65536
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nsw i32 %3 to i16
   ret i16 %4
 }
 

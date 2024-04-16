@@ -1,6 +1,5 @@
 func00000000000000a8:                   # @func00000000000000a8
-	lui	a3, 115
-	addiw	a3, a3, -744
+	li	a3, 1304
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -21,7 +20,7 @@ func00000000000001fa:                   # @func00000000000001fa
 	srliw	a0, a0, 8
 	ret
 func0000000000000000:                   # @func0000000000000000
-	lui	a3, 427607
+	lui	a3, 7
 	addi	a3, a3, -916
 	mul	a2, a2, a3
 	add	a0, a0, a1

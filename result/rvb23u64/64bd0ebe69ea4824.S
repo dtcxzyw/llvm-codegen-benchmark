@@ -31,9 +31,8 @@ func0000000000000026:                   # @func0000000000000026
 	ret
 func0000000000000101:                   # @func0000000000000101
 	andi	a0, a0, 255
-	andi	a1, a1, 15
-	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	andi	a1, a1, 12
+	snez	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

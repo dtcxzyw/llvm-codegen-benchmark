@@ -48,7 +48,10 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000006:                   # @func0000000000000006
 	bnez	a2, .LBB5_2
 	li	a1, 7
-.LBB5_2:                                # %entry
+	slli	a1, a1, 2
+	add	a0, a0, a1
+	ret
+.LBB5_2:
 	andi	a1, a1, 255
 	slli	a1, a1, 2
 	add	a0, a0, a1

@@ -6,7 +6,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = mul i32 %0, 13
+  %1 = mul i32 %0, 5
   %2 = and i32 %1, 7
   %3 = sub nuw nsw i32 8, %2
   ret i32 %3

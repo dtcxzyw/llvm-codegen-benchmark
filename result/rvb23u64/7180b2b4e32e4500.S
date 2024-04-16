@@ -66,10 +66,10 @@ func0000000000000114:                   # @func0000000000000114
 	or	a0, a0, a2
 	ret
 func0000000000000088:                   # @func0000000000000088
-	addi	a2, a2, 999
-	srliw	a2, a2, 19
-	sltiu	a2, a2, 125
-	xori	a2, a2, 1
+	lui	a3, 1032576
+	addi	a4, a3, 999
+	addw	a2, a2, a4
+	sltu	a2, a2, a3
 	srliw	a1, a1, 11
 	sltiu	a1, a1, 125
 	xori	a1, a1, 1

@@ -54,7 +54,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 32
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

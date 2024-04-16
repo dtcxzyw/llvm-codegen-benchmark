@@ -11,8 +11,8 @@ define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 64, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
-  %6 = icmp ugt i64 %0, %5
+  %5 = add nuw nsw i64 %4, %1
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -201,8 +201,8 @@ define i1 @func00000000000001c4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %1, %4
-  %6 = icmp ult i64 %0, %5
+  %5 = add i64 %4, %1
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

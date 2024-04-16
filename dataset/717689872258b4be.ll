@@ -11,7 +11,7 @@
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fpext float %3 to double
   ret double %4
 }

@@ -24,10 +24,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 127
-  %2 = or disjoint i64 %1, 128
-  %3 = trunc i64 %2 to i8
-  ret i8 %3
+  %1 = trunc i64 %0 to i8
+  %2 = or i8 %1, -128
+  ret i8 %2
 }
 
 attributes #0 = { nounwind }

@@ -23,7 +23,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 -1
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 %4, i32 0
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = select i1 %3, i32 1, i32 2
   %5 = icmp sgt i8 %1, -1
   %6 = select i1 %5, i32 %4, i32 4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -48,10 +48,10 @@ define i32 @func00000000000002a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = select i1 %3, i32 1, i32 -1
-  %5 = icmp sgt i32 %1, -1
-  %6 = select i1 %5, i32 %4, i32 0
-  %7 = add nsw i32 %0, %6
-  ret i32 %7
+  %.inv = icmp slt i32 %1, 0
+  %5 = select i1 %.inv, i32 0, i32 %4
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

@@ -7,9 +7,9 @@
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umin.i32(i32 %2, i32 11)
-  %4 = sub nsw i32 %3, %1
-  %5 = sub nsw i32 %0, %4
-  ret i32 %5
+  %.neg = sub i32 %1, %3
+  %4 = add i32 %.neg, %0
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

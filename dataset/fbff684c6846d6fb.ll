@@ -5,11 +5,10 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4095
-  %3 = lshr i64 %2, 12
-  %4 = lshr i64 %0, 12
-  %5 = sub nsw i64 %3, %4
-  %6 = shl i64 %5, 12
-  ret i64 %6
+  %3 = and i64 %0, -4096
+  %4 = sub i64 %2, %3
+  %5 = and i64 %4, -4096
+  ret i64 %5
 }
 
 ; 1 occurrences:

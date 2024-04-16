@@ -8,8 +8,8 @@
 define i1 @func0000000000001422(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 2
-  %3 = select i1 %2, i32 %0, i32 %1
-  %4 = icmp eq i32 %3, %0
+  %3 = icmp eq i32 %1, %0
+  %4 = select i1 %2, i1 true, i1 %3
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6

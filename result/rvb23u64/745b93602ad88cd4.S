@@ -1,9 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	fadd.s	fa5, fa0, fa1
-	fmv.x.w	a1, fa5
-	lui	a2, 522240
-	and	a1, a1, a2
-	xor	a1, a1, a2
+	fclass.s	a1, fa5
+	andi	a1, a1, 126
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

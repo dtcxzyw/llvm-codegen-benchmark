@@ -5,7 +5,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr i32 %3, 5
   %5 = and i32 %4, 126
   ret i32 %5
@@ -88,7 +88,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr i32 %3, 24
   %5 = and i32 %4, 15
   ret i32 %5
@@ -134,7 +134,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = lshr exact i32 %3, 16
   %5 = and i32 %4, 255
   ret i32 %5
@@ -146,11 +146,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
-  %4 = lshr exact i32 %3, 16
-  %5 = and i32 %4, 255
-  ret i32 %5
+  %2 = lshr i32 %0, 16
+  %3 = and i32 %2, 255
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -159,7 +157,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 9
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = lshr i64 %3, 9
   %5 = and i64 %4, 18014398509481983
   ret i64 %5
@@ -171,7 +169,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 16
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = lshr exact i32 %3, 12
   %5 = and i32 %4, 63
   ret i32 %5

@@ -76,8 +76,8 @@ entry:
   %3 = ashr exact i64 %1, 2
   %4 = sub nsw i64 %2, %3
   %5 = call i64 @llvm.umax.i64(i64 %3, i64 %4)
-  %6 = add nuw nsw i64 %5, %3
-  %7 = getelementptr inbounds i32, ptr %0, i64 %6
+  %6 = getelementptr i32, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 

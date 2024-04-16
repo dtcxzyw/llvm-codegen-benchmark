@@ -17,12 +17,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = and i32 %3, 15
-  %5 = icmp eq i32 %4, 15
-  %6 = or i1 %0, %1
-  %7 = or i1 %5, %6
-  ret i1 %7
+  %3 = and i8 %2, 15
+  %4 = icmp eq i8 %3, 15
+  %5 = or i1 %0, %1
+  %6 = or i1 %4, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

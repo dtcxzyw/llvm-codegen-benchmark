@@ -19,7 +19,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i24 %2) #0 {
 entry:
   %3 = and i24 %2, 3840
   %4 = icmp eq i24 %3, 1280
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

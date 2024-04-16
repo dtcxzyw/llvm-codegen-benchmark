@@ -24,13 +24,13 @@ func0000000000000088:                   # @func0000000000000088
 func00000000000000a1:                   # @func00000000000000a1
 	slli	a3, a0, 48
 	srli	a0, a3, 48
-	bgez	a3, .LBB2_2
-	mv	a1, a2
+	bltz	a3, .LBB2_2
+	mv	a2, a1
 .LBB2_2:                                # %entry
-	lui	a2, 16
-	addiw	a2, a2, -2
-	xor	a0, a0, a2
+	lui	a1, 16
+	addiw	a1, a1, -2
+	xor	a0, a0, a1
 	snez	a0, a0
 	addi	a0, a0, -1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret

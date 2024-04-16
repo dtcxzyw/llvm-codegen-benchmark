@@ -1508,9 +1508,8 @@ entry:
 define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %2, i32 0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -10,7 +10,7 @@ entry:
   %2 = lshr i32 %1, 17
   %3 = and i32 %2, 31
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

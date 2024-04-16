@@ -5,11 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 1374389535
-  %2 = lshr i64 %1, 37
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = icmp ult i64 %0, 100
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -20,7 +17,7 @@ define i1 @func0000000000000184(i64 %0) #0 {
 entry:
   %1 = mul nuw nsw i64 %0, 42949673
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp ult i32 %3, 100
   ret i1 %4
 }

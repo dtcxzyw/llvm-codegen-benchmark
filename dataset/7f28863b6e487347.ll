@@ -30,11 +30,10 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func00000000000000b1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 1)
-  %4 = add nuw nsw i32 %0, 1
-  %5 = icmp eq i32 %4, %3
-  ret i1 %5
+  %2 = call i32 @llvm.smax.i32(i32 %1, i32 2)
+  %3 = add nsw i32 %2, -2
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:

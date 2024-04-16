@@ -184,7 +184,7 @@
 define i1 @func000000000000014c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 16
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   %5 = icmp slt i32 %0, -3
   %6 = or i1 %5, %4
   ret i1 %6

@@ -22,7 +22,7 @@ define i1 @func000000000000001a(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 0.000000e+00, float %2
   %4 = fcmp uge float %3, 2.560000e+02
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -45,7 +45,7 @@ define i1 @func0000000000000014(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 0.000000e+00, float %2
   %4 = fcmp ole float %3, 0.000000e+00
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

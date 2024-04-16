@@ -185,9 +185,9 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = or i32 %2, 1
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 true), !range !0
-  %5 = sub nuw nsw i32 32, %4
-  %6 = sub nsw i32 %0, %5
-  ret i32 %6
+  %.neg = or disjoint i32 %4, -32
+  %5 = add i32 %.neg, %0
+  ret i32 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

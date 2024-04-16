@@ -11,6 +11,6 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, -2048
 	bclri	a1, a1, 11
 	sub	a1, a1, a0
-	addi	a1, a1, -32
 	ori	a0, a1, 2
+	addi	a0, a0, -32
 	ret

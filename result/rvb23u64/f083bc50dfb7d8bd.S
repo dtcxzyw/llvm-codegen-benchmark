@@ -31,7 +31,7 @@ func000000000000001d:                   # @func000000000000001d
 	or	t0, a5, t0
 	srl	a5, a6, a7
 	czero.eqz	a4, a5, a4
-	and	a2, a2, t0
+	and	a2, t0, a2
 	and	a3, a3, a4
 	or	a0, a0, a2
 	or	a1, a1, a3

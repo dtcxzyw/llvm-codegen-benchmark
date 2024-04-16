@@ -5,11 +5,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 %1, i32 3
-  %5 = or disjoint i32 %0, 12
-  %6 = add i32 %5, %4
-  ret i32 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 3, i32 %1
+  %4 = or disjoint i32 %0, 12
+  %5 = add i32 %4, %3
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

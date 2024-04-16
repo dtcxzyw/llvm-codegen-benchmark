@@ -79,6 +79,6 @@ func00000000000000c7:                   # @func00000000000000c7
 	bnez	a0, .LBB9_2
 	fmv.d	fa1, fa2
 .LBB9_2:                                # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret

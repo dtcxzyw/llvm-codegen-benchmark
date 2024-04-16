@@ -69,10 +69,9 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp slt i64 %3, 0
-  %5 = add i64 %0, -1
-  %6 = select i1 %4, i64 %5, i64 %0
-  ret i64 %6
+  %.lobit = ashr i64 %3, 63
+  %4 = add i64 %.lobit, %0
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

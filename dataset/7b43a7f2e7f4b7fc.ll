@@ -7,7 +7,7 @@
 define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = srem i64 %3, 7
   %5 = icmp slt i64 %4, 0
   ret i1 %5
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = srem i64 %3, 7
   %5 = icmp slt i64 %4, 0
   ret i1 %5

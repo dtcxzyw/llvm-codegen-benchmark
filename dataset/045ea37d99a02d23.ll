@@ -8,8 +8,9 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = sdiv i32 %3, %0
-  %5 = mul nsw i32 %4, %0
+  %.fr = freeze i32 %3
+  %4 = srem i32 %.fr, %0
+  %5 = sub nsw i32 %.fr, %4
   ret i32 %5
 }
 
@@ -19,8 +20,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = sdiv i32 %3, %0
-  %5 = mul i32 %4, %0
+  %.fr = freeze i32 %3
+  %4 = srem i32 %.fr, %0
+  %5 = sub nsw i32 %.fr, %4
   ret i32 %5
 }
 

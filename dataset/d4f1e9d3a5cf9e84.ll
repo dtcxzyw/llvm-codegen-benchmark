@@ -5,10 +5,9 @@
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = udiv i64 %2, 1000000000
-  %4 = mul nsw i64 %3, -1000000000
-  %5 = add nsw i64 %4, %2
-  ret i64 %5
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 1000000000
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -33,10 +32,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = udiv i64 %2, 255
-  %4 = mul i64 %3, -255
-  %5 = add i64 %4, %2
-  ret i64 %5
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 255
+  ret i64 %3
 }
 
 ; 1 occurrences:

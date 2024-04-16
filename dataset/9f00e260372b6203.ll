@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 8
-  %3 = lshr i32 %1, 12
-  %4 = select i1 %0, i32 %3, i32 %2
-  %5 = and i32 %4, 64
-  ret i32 %5
+  %.v = select i1 %0, i32 12, i32 8
+  %2 = lshr i32 %1, %.v
+  %3 = and i32 %2, 64
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

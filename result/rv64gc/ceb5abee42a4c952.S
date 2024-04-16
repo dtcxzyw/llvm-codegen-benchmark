@@ -16,10 +16,10 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
-	bnez	a2, .LBB2_2
-	mv	a0, a1
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	andi	a0, a0, 63
+	andi	a0, a1, 63
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srli	a2, a2, 12

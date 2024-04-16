@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 16
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 16
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
   ret i32 %3
 }
@@ -21,8 +21,8 @@ declare i32 @llvm.bswap.i32(i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 4
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 4
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
   ret i32 %3
 }
@@ -32,8 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000010(i32 %0) #0 {
 entry:
-  %1 = add nuw i32 %0, 1
-  %2 = trunc i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 1
   %3 = tail call i16 @llvm.bswap.i16(i16 %2)
   ret i16 %3
 }
@@ -48,8 +48,8 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i16
+  %1 = trunc i64 %0 to i16
+  %2 = add i16 %1, 1
   %3 = tail call i16 @llvm.bswap.i16(i16 %2)
   ret i16 %3
 }
@@ -63,8 +63,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1
-  %2 = trunc i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, -1
   %3 = call i16 @llvm.bswap.i16(i16 %2)
   ret i16 %3
 }
@@ -75,8 +75,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 8
-  %2 = trunc i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 8
   %3 = tail call i16 @llvm.bswap.i16(i16 %2)
   ret i16 %3
 }

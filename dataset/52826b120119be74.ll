@@ -8,7 +8,7 @@
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 524288
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = ashr i32 %3, 20
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
   ret i32 %5

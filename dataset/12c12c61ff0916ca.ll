@@ -6,7 +6,7 @@
 define i1 @func0000000000000009(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 -1, i64 %2
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 192, i64 %2
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   %5 = freeze i1 %4
   ret i1 %5
 }

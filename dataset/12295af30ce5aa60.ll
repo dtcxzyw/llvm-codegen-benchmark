@@ -81,7 +81,7 @@ entry:
   %3 = xor i64 %2, -1
   %4 = shl nuw i64 %3, 1
   %5 = or disjoint i64 %4, 1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

@@ -26,10 +26,10 @@
 define i32 @func0000000000000040(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %6 = trunc nuw i64 %5 to i32
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -214,10 +214,10 @@ entry:
 define i64 @func0000000000000042(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = add nuw i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = add nuw i64 %6, %0
   ret i64 %7
 }
 
@@ -386,9 +386,9 @@ entry:
 define i64 @func0000000000000060(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
+  %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   %7 = add i64 %6, %0
   ret i64 %7
 }
@@ -560,7 +560,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   %7 = add i64 %6, %0
   ret i64 %7
 }
@@ -573,10 +573,10 @@ entry:
 define i64 @func0000000000000063(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
+  %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = add nuw nsw i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -588,8 +588,8 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = add nuw nsw i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -609,10 +609,10 @@ entry:
 define i64 @func000000000000004a(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add nuw i64 %0, %6
+  %7 = add nuw i64 %6, %0
   ret i64 %7
 }
 
@@ -630,10 +630,10 @@ entry:
 define i64 @func00000000000000ec(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
+  %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -654,7 +654,7 @@ entry:
   %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -665,10 +665,10 @@ entry:
 define i32 @func0000000000000068(i32 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
+  %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -678,10 +678,10 @@ entry:
 define i64 @func0000000000000000(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul i128 %1, %3
+  %4 = mul i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = add i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -691,10 +691,10 @@ entry:
 define i64 @func0000000000000048(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

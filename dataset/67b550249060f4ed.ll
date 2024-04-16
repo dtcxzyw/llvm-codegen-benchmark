@@ -8,7 +8,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 2097151
   %4 = and i64 %3, -2097152
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 4095
   %4 = and i64 %3, -4096
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

@@ -25,10 +25,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %2 = trunc i64 %0 to i32
+  %3 = add i32 %2, %1
+  ret i32 %3
 }
 
 ; 130 occurrences:
@@ -165,10 +164,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %2 = trunc i64 %0 to i32
+  %3 = add i32 %2, %1
+  ret i32 %3
 }
 
 ; 501 occurrences:
@@ -676,10 +674,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %2 = trunc i64 %0 to i32
+  %3 = add i32 %2, %1
+  ret i32 %3
 }
 
 ; 317 occurrences:
@@ -1003,10 +1000,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = add i32 %0, %2
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
+  %2 = trunc i32 %0 to i8
+  %3 = add i8 %2, %1
+  ret i8 %3
 }
 
 ; 76 occurrences:
@@ -1089,10 +1085,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %2 = trunc i64 %0 to i32
+  %3 = add i32 %2, %1
+  ret i32 %3
 }
 
 ; 20 occurrences:
@@ -1120,7 +1115,7 @@ entry:
 define i8 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }
@@ -1165,7 +1160,7 @@ entry:
 define i16 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -1175,10 +1170,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i64 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = trunc nuw i64 %3 to i16
-  ret i16 %4
+  %2 = trunc i64 %0 to i16
+  %3 = add i16 %2, %1
+  ret i16 %3
 }
 
 ; 6 occurrences:
@@ -1192,7 +1186,7 @@ entry:
 define i16 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -1202,10 +1196,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = trunc nuw i64 %3 to i32
-  ret i32 %4
+  %2 = trunc i64 %0 to i32
+  %3 = add i32 %2, %1
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -1213,10 +1206,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %0, %2
-  %4 = trunc nuw i32 %3 to i8
-  ret i8 %4
+  %2 = trunc i32 %0 to i8
+  %3 = add i8 %2, %1
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

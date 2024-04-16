@@ -35,7 +35,7 @@ define i64 @func0000000000000000(i16 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i16
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   %6 = zext i16 %5 to i64
   ret i64 %6
 }

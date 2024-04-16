@@ -83,7 +83,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.smax.i64(i64 %1, i64 0)
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = and i64 %3, 4611686018427387903
   ret i64 %4
 }
@@ -99,7 +99,7 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = and i32 %3, 65535
   ret i32 %4
 }

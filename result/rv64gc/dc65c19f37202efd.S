@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	bnez	a0, .LBB0_2
 	fmv.s	fa1, fa2
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
@@ -21,7 +21,7 @@ func0000000000000003:                   # @func0000000000000003
 	beqz	a0, .LBB2_2
 	fmv.d	fa1, fa2
 .LBB2_2:                                # %entry
-	fmul.d	fa0, fa0, fa1
+	fmul.d	fa0, fa1, fa0
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.w.x	fa5, zero
@@ -29,7 +29,7 @@ func0000000000000007:                   # @func0000000000000007
 	beqz	a0, .LBB3_2
 	fmv.s	fa1, fa2
 .LBB3_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, zero
@@ -45,7 +45,7 @@ func0000000000000008:                   # @func0000000000000008
 	bnez	a0, .LBB5_2
 	fmv.d	fa1, fa2
 .LBB5_2:                                # %entry
-	fmul.d	fa0, fa0, fa1
+	fmul.d	fa0, fa1, fa0
 	ret
 .LCPI6_0:
 	.quad	0x3fe0000000000000              # double 0.5

@@ -10,7 +10,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 7
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

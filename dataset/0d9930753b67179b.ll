@@ -8,10 +8,9 @@ define i64 @func00000000000000cc(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 56
-  %5 = zext i64 %0 to i128
-  %6 = add nuw nsw i128 %4, %5
-  %7 = trunc i128 %6 to i64
-  ret i64 %7
+  %5 = trunc i128 %4 to i64
+  %6 = add i64 %5, %0
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -22,10 +21,9 @@ define i64 @func000000000000002c(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
   %4 = lshr i128 %3, 56
-  %5 = zext nneg i64 %0 to i128
-  %6 = add nuw nsw i128 %4, %5
-  %7 = trunc i128 %6 to i64
-  ret i64 %7
+  %5 = trunc i128 %4 to i64
+  %6 = add i64 %5, %0
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -35,10 +33,9 @@ define i64 @func000000000000008c(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = zext i64 %0 to i128
-  %6 = add nuw nsw i128 %4, %5
-  %7 = trunc i128 %6 to i64
-  ret i64 %7
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add i64 %5, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

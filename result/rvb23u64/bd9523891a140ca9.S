@@ -24,16 +24,16 @@ func0000000000000011:                   # @func0000000000000011
 	add	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
-	bexti	a1, a1, 3
-	li	a2, 8
-	czero.nez	a1, a2, a1
+	andi	a1, a1, 8
+	li	a2, -8
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 32
+	addi	a0, a0, 40
 	ret
 func0000000000000018:                   # @func0000000000000018
-	bexti	a1, a1, 4
-	li	a2, 32
-	czero.nez	a1, a2, a1
+	andi	a1, a1, 16
+	li	a2, -32
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 32
+	addi	a0, a0, 64
 	ret

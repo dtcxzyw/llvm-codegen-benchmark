@@ -12,9 +12,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr i8, ptr %0, i64 8
-  %4 = getelementptr inbounds i64, ptr %3, i64 %2
+  %2 = getelementptr i8, ptr %0, i64 8
+  %3 = getelementptr i64, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -26,9 +26,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -4
-  %3 = getelementptr inbounds i8, ptr %0, i64 16
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
+  %2 = getelementptr inbounds i8, ptr %0, i64 16
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -4
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }

@@ -21,10 +21,8 @@ define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048575
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.Mio_Cell2_t_.1770550, ptr %1, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 44
-  %7 = getelementptr inbounds [6 x i32], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr inbounds %struct.Mio_Cell2_t_.1770550, ptr %1, i64 %4, i32 7, i64 %0
+  ret ptr %5
 }
 
 ; 1 occurrences:

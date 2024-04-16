@@ -1,7 +1,8 @@
 func0000000000000101:                   # @func0000000000000101
 	addi	a2, a2, -1
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000156:                   # @func0000000000000156
@@ -45,7 +46,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, 1
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000010a:                   # @func000000000000010a
@@ -77,6 +79,7 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000151:                   # @func0000000000000151
 	addi	a2, a2, -1
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

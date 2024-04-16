@@ -42,9 +42,8 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds %"struct.asmjit::_abi_1_10::RATiedReg.1556721", ptr %1, i64 %4
-  %6 = getelementptr inbounds %"struct.asmjit::_abi_1_10::RATiedReg.1556721", ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.asmjit::_abi_1_10::RATiedReg.1556721", ptr %5, i64 %0, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -113,9 +112,8 @@ entry:
   %3 = and i32 %2, -64
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = getelementptr inbounds %struct.NFAException32.2240718, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.NFAException32.2240718, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:

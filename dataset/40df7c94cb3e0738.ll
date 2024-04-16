@@ -10,7 +10,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = shl nuw nsw i32 1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

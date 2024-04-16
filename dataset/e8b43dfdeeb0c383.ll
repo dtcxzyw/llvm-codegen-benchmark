@@ -157,10 +157,10 @@
 define i1 @func0000000000000044(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = add nuw i64 %1, %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add nuw i64 %4, %1
   %6 = udiv i64 %5, 10
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -179,9 +179,9 @@ define i1 @func0000000000000144(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %1, %4
+  %5 = add nuw i64 %4, %1
   %6 = udiv i64 %5, 10
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

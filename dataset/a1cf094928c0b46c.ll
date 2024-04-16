@@ -8,10 +8,9 @@
 define ptr @func0000000000000001(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %4 = mul i64 %3, %1
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -1,7 +1,6 @@
 func0000000000000114:                   # @func0000000000000114
-	mv	a2, a0
-	beqz	a1, .LBB0_2
 	addi	a2, a1, 1
-.LBB0_2:                                # %entry
+	snez	a1, a1
 	sltu	a0, a2, a0
+	and	a0, a0, a1
 	ret

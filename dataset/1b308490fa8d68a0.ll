@@ -5,10 +5,9 @@
 define i64 @func000000000000001f(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = sub nuw nsw i32 4, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nuw nsw i64 64, %3
-  ret i64 %4
+  %narrow = add i32 %1, 60
+  %2 = zext i32 %narrow to i64
+  ret i64 %2
 }
 
 ; 1 occurrences:

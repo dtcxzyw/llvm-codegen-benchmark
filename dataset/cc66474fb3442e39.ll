@@ -9,7 +9,7 @@
 define ptr @func0000000000000087(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = shl i64 %4, 3
   %6 = sub nuw nsw i64 -8, %5
   %7 = getelementptr inbounds i8, ptr %0, i64 %6

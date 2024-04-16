@@ -1,5 +1,5 @@
 func000000000000000a:                   # @func000000000000000a
-	sub	a0, a0, a1
+	subw	a0, a0, a1
 	negw	a1, a0
 	sraiw	a0, a0, 31
 	and	a0, a0, a1

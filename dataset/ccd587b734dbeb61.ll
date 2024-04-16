@@ -11,11 +11,9 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 3
-  %5 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %4, i64 23)
-  %6 = extractvalue { i64, i1 } %5, 1
-  %7 = select i1 %6, i64 -1, i64 %0
-  ret i64 %7
+  %4 = icmp ugt i64 %3, 6416258808246800560
+  %5 = select i1 %4, i64 -1, i64 %0
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

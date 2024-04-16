@@ -7,7 +7,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = icmp ne i32 %3, 1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 9
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -29,11 +29,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = icmp eq i64 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = add nuw i64 %0, %5
-  ret i64 %6
+  %3 = icmp eq i64 %1, %2
+  %4 = zext i1 %3 to i64
+  %5 = add nuw i64 %4, %0
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -44,7 +43,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp eq i32 %3, -2
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -56,7 +55,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, -2
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -65,11 +64,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
-  ret i32 %6
+  %3 = icmp sgt i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -82,7 +80,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 2147483647
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -91,11 +89,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000b3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp slt i32 %3, 1
-  %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
-  ret i32 %6
+  %3 = icmp sle i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -106,7 +103,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, -1
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -118,7 +115,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 8
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

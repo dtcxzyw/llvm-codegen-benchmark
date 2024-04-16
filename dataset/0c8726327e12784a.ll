@@ -8,7 +8,7 @@ entry:
   %1 = and i64 %0, 1152921504606846912
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 67108863)
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 256)
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

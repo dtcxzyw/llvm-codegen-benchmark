@@ -693,10 +693,10 @@ entry:
 define ptr @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = icmp ne i64 %3, 0
-  %5 = getelementptr inbounds i8, ptr %1, i64 16
-  %6 = select i1 %4, ptr %5, ptr %0
-  ret ptr %6
+  %.not = icmp eq i64 %3, 0
+  %4 = getelementptr inbounds i8, ptr %1, i64 16
+  %5 = select i1 %.not, ptr %0, ptr %4
+  ret ptr %5
 }
 
 ; 1 occurrences:

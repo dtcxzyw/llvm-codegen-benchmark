@@ -10,7 +10,7 @@ func0000000000000c01:                   # @func0000000000000c01
 	sext.w	a2, a2
 	snez	a2, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000108:                   # @func0000000000000108

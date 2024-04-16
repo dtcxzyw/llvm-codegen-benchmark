@@ -7,7 +7,7 @@ entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2147483647
-  %5 = icmp sle i32 %0, %4
+  %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2147483647
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -31,7 +31,7 @@ entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, -16
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 7
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

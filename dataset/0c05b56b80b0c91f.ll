@@ -20,10 +20,12 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 3
-  %2 = icmp ugt i64 %1, 2305843009213693951
-  %3 = select i1 %2, i64 -1, i64 %0
-  ret i64 %3
+  %1 = call i64 @llvm.smax.i64(i64 %0, i64 -1)
+  ret i64 %1
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smax.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

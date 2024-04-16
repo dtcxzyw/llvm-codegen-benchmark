@@ -46,8 +46,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 256
+  %3 = and i64 %2, 4294967040
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -57,8 +57,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 65535
+  %3 = and i64 %2, 4294901760
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

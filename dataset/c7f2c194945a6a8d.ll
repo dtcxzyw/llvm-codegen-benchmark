@@ -8,7 +8,7 @@ define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 
@@ -19,7 +19,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 32, %1
   %3 = shl nsw i32 -1, %2
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 

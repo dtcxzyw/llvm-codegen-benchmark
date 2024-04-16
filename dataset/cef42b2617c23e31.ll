@@ -108,7 +108,7 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
   %4 = add nuw i64 %3, 1
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -133,7 +133,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
 

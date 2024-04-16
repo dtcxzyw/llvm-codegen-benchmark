@@ -5,7 +5,7 @@
 define i1 @func000000000000001c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = and i1 %6, %5
@@ -19,7 +19,7 @@ entry:
 define i1 @func000000000000014c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ult i32 %0, 5
   %7 = and i1 %5, %6
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000114(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or disjoint i8 %1, %3
+  %4 = or disjoint i8 %3, %1
   %5 = icmp eq i8 %4, 7
   %6 = icmp ult i8 %0, 86
   %7 = and i1 %6, %5
@@ -46,7 +46,7 @@ entry:
 define i1 @func0000000000000111(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp eq i32 %4, 3
   %6 = icmp eq i32 %0, 3
   %7 = and i1 %6, %5

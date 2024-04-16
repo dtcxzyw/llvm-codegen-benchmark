@@ -6,11 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 .LBB0_2:                                # %entry
 	ret
 func0000000000000007:                   # @func0000000000000007
-	andi	a1, a0, 8
-	lui	a0, 16
-	beqz	a1, .LBB1_2
-	addiw	a0, a0, 15
-	ret
-.LBB1_2:
-	addiw	a0, a0, 7
+	andi	a0, a0, 8
+	lui	a1, 16
+	addiw	a1, a1, 7
+	or	a0, a0, a1
 	ret

@@ -11,11 +11,11 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1
-  %3 = and i32 %0, 1
-  %4 = icmp ne i32 %3, %2
-  %5 = sext i1 %4 to i64
-  ret i64 %5
+  %2 = xor i32 %0, %1
+  %3 = and i32 %2, 1
+  %sext = sub nsw i32 0, %3
+  %4 = sext i32 %sext to i64
+  ret i64 %4
 }
 
 ; 6 occurrences:

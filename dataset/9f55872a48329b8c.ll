@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = mul nsw i64 %2, -2
+  %3 = getelementptr inbounds i8, ptr %0, i64 %1
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -38,11 +37,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = mul nsw i64 %2, -16
+  %3 = getelementptr inbounds i8, ptr %0, i64 %1
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 ; 10 occurrences:
@@ -59,11 +57,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 3
-  %4 = sub i64 0, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = mul i64 %2, -8
+  %3 = getelementptr inbounds i8, ptr %0, i64 %1
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 ; 7 occurrences:
@@ -77,11 +74,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 1
-  %4 = sub i64 0, %3
-  %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = mul i64 %2, -2
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -90,11 +86,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000034(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.PendingWriteback.2120044, ptr %0, i64 %1
-  %6 = getelementptr %struct.PendingWriteback.2120044, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = mul nsw i64 %2, -2
+  %3 = getelementptr %struct.PendingWriteback.2120044, ptr %0, i64 %1
+  %4 = getelementptr %struct.PendingWriteback.2120044, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -102,11 +97,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 3
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = mul nsw i64 %2, -8
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

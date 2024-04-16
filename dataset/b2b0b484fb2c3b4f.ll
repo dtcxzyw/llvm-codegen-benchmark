@@ -66,7 +66,7 @@ define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1
   %2 = lshr i16 %0, 1
-  %3 = add nuw i16 %2, %1
+  %3 = or i16 %2, %1
   %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
@@ -78,7 +78,7 @@ define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = lshr i32 %0, 1
-  %3 = add nuw i32 %2, %1
+  %3 = or i32 %2, %1
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }

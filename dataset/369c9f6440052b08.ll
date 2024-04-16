@@ -8,9 +8,8 @@
 define i32 @func000000000000003d(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 20, %0
-  %2 = shl nuw nsw i32 1, %1
-  %3 = sub nsw i32 0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  ret i32 %.neg
 }
 
 ; 1 occurrences:
@@ -19,9 +18,8 @@ entry:
 define i64 @func0000000000000030(i64 %0) #0 {
 entry:
   %1 = sub nuw nsw i64 16494, %0
-  %2 = shl i64 2, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %.neg = shl i64 -2, %1
+  ret i64 %.neg
 }
 
 ; 1 occurrences:
@@ -30,9 +28,8 @@ entry:
 define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 23, %0
-  %2 = shl nuw i32 1, %1
-  %3 = sub i32 0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  ret i32 %.neg
 }
 
 ; 2 occurrences:
@@ -42,9 +39,9 @@ entry:
 define i32 @func0000000000000037(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 32, %0
-  %2 = shl nsw i32 -1, %1
-  %3 = sub nuw nsw i32 -2, %2
-  ret i32 %3
+  %.neg = shl nuw i32 1, %1
+  %2 = add i32 %.neg, -2
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

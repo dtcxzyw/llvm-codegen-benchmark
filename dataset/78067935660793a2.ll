@@ -9,7 +9,7 @@
 define i8 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
-  %3 = trunc i64 %2 to i8
+  %3 = trunc nuw nsw i64 %2 to i8
   %4 = zext i1 %0 to i8
   %5 = or i8 %4, %3
   ret i8 %5

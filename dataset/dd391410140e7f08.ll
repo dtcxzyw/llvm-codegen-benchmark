@@ -5,7 +5,7 @@
 define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = icmp sgt i32 %0, -1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -33,7 +33,7 @@ entry:
 define i1 @func000000000000026a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   %5 = icmp sgt i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -47,7 +47,7 @@ entry:
 define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   %5 = icmp sgt i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -59,7 +59,7 @@ entry:
 define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = icmp ne i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

@@ -27,7 +27,7 @@ func000000000000001f:                   # @func000000000000001f
 	bgtz	a2, .LBB3_2
 	li	a2, 1
 .LBB3_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -35,6 +35,6 @@ func000000000000001a:                   # @func000000000000001a
 	bgtz	a2, .LBB4_2
 	li	a2, 1
 .LBB4_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret

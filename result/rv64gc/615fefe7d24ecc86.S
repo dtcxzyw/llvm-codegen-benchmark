@@ -20,7 +20,7 @@ func0000000000000014:                   # @func0000000000000014
 	andi	a3, a1, 1
 	sext.w	a1, a0
 	bnez	a3, .LBB1_2
-	li	a2, 27
+	li	a2, 26
 .LBB1_2:                                # %entry
 	li	a3, -1
 	beq	a1, a3, .LBB1_4

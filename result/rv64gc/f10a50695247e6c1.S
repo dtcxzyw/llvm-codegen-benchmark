@@ -1,7 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
-	lui	a3, 1046192
-	addi	a3, a3, -761
-	slli	a3, a3, 10
+	lui	a3, 704322
+	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -9,9 +8,8 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	lui	a3, 1046192
-	addi	a3, a3, -761
-	slli	a3, a3, 10
+	lui	a3, 704322
+	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -19,12 +17,12 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	lui	a3, 1046192
-	addi	a3, a3, -761
-	slli	a3, a3, 10
+	lui	a3, 704322
+	addi	a3, a3, -1024
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

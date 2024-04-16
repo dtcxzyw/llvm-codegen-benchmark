@@ -11,7 +11,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 8, %3
   %5 = add i64 %4, %1
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   %7 = zext i1 %6 to i64
   ret i64 %7
 }

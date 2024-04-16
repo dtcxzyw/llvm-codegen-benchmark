@@ -83,11 +83,10 @@
 define i64 @func000000000000000f(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = and i64 %1, 4503599627370495
-  %3 = or disjoint i64 %2, 4503599627370496
-  %4 = shl nuw nsw i64 %3, 1
-  %5 = or disjoint i64 %4, 1
-  ret i64 %5
+  %2 = shl i64 %1, 1
+  %3 = and i64 %2, 9007199254740990
+  %4 = or disjoint i64 %3, 9007199254740993
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

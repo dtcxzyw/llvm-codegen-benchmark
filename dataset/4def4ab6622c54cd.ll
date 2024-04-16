@@ -31,9 +31,8 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %"class.Gluco2::vec.12.1770606", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.Gluco2::vec.12.1770606", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -45,9 +44,8 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds %struct.Vec_Int_t_.1771836, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %struct.Vec_Int_t_.1771836, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -58,9 +56,8 @@ entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.axset.1923315, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.axset.1923315, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:

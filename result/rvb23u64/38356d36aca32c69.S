@@ -5,7 +5,7 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000036:                   # @func0000000000000036
 	or	a2, a2, a4
 	or	a3, a3, a5
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	slt	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
@@ -57,7 +57,7 @@ func0000000000000022:                   # @func0000000000000022
 func000000000000002c:                   # @func000000000000002c
 	or	a2, a2, a4
 	or	a3, a3, a5
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	slt	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
@@ -67,7 +67,7 @@ func000000000000002c:                   # @func000000000000002c
 func0000000000000032:                   # @func0000000000000032
 	or	a2, a2, a4
 	or	a3, a3, a5
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	sltu	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2

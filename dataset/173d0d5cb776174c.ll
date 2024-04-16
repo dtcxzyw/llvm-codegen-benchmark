@@ -10,8 +10,8 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = shl nuw nsw i64 %4, 1
-  %6 = or disjoint i64 %5, 1
-  %7 = and i64 %6, 9007199254740991
+  %6 = and i64 %5, 9007199254740990
+  %7 = or disjoint i64 %6, 1
   ret i64 %7
 }
 

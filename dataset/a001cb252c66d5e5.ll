@@ -6,7 +6,7 @@ define i64 @func0000000000000140(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = mul i64 %4, 24
   ret i64 %5
 }
@@ -18,7 +18,7 @@ define i64 @func0000000000000143(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = mul nuw nsw i64 %4, 24
   ret i64 %5
 }
@@ -46,7 +46,7 @@ define i64 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = mul i64 %4, 328
   ret i64 %5
 }
@@ -59,7 +59,7 @@ define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1570
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = mul i32 %4, 400
   ret i32 %5
 }
@@ -74,7 +74,7 @@ define i64 @func000000000000018e(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = mul nuw i64 %4, 3
   ret i64 %5
 }
@@ -86,7 +86,7 @@ define i32 @func000000000000018f(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = mul nuw nsw i32 %4, 3
   ret i32 %5
 }
@@ -102,7 +102,7 @@ define i32 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -146097
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = mul i32 %4, 146097
   ret i32 %5
 }
@@ -114,7 +114,7 @@ define i32 @func000000000000008d(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -146097
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = mul nsw i32 %4, -400
   ret i32 %5
 }
@@ -126,7 +126,7 @@ define i64 @func0000000000000183(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = mul nuw nsw i64 %4, 120
   ret i64 %5
 }

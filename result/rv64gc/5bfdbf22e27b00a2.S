@@ -1,7 +1,7 @@
 func00000000000000b4:                   # @func00000000000000b4
-	sext.w	a1, a1
-	li	a2, 64
-	bgeu	a1, a2, .LBB0_2
+	srliw	a1, a1, 6
+	slli	a1, a1, 6
+	bnez	a1, .LBB0_2
 	li	a0, 6
 	ret
 .LBB0_2:
@@ -9,9 +9,9 @@ func00000000000000b4:                   # @func00000000000000b4
 	subw	a0, a1, a0
 	ret
 func00000000000000f4:                   # @func00000000000000f4
-	sext.w	a1, a1
-	li	a2, 64
-	bgeu	a1, a2, .LBB1_2
+	srliw	a1, a1, 6
+	slli	a1, a1, 6
+	bnez	a1, .LBB1_2
 	li	a0, 6
 	ret
 .LBB1_2:

@@ -38,8 +38,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 255
 	addi	a2, a2, -98
-	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	srliw	a0, a0, 10
 	ret
@@ -60,8 +60,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
-	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	srliw	a0, a0, 8
 	ret

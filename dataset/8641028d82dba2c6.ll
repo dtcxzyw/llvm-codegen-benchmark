@@ -70,9 +70,9 @@ entry:
 define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw i64 1, %0
-  %4 = icmp ugt i64 %3, %2
-  ret i1 %4
+  %.highbits = lshr i64 %2, %0
+  %3 = icmp eq i64 %.highbits, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:

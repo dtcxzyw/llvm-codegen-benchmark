@@ -1,7 +1,4 @@
 
-%"class.hermes::vm::GCHermesValueBase.1844286" = type { %"class.hermes::vm::HermesValue.1844287" }
-%"class.hermes::vm::HermesValue.1844287" = type { i64 }
-
 ; 31 occurrences:
 ; cpython/optimized/multibytecodec.ll
 ; cpython/optimized/unicodeobject.ll
@@ -37,12 +34,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %4
-  ret i64 %7
+  %gepdiff = sub i64 %1, %2
+  ret i64 %gepdiff
 }
 
 ; 400 occurrences:
@@ -449,12 +442,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %4
-  ret i64 %7
+  %gepdiff = sub nsw i64 %1, %2
+  ret i64 %gepdiff
 }
 
 ; 69 occurrences:
@@ -530,12 +519,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %4
-  ret i64 %7
+  %gepdiff = sub i64 %1, %2
+  ret i64 %gepdiff
 }
 
 ; 6 occurrences:
@@ -548,12 +533,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub i64 %6, %4
-  ret i64 %7
+  %gepdiff = sub i64 %1, %2
+  ret i64 %gepdiff
 }
 
 ; 4 occurrences:
@@ -564,12 +545,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"class.hermes::vm::GCHermesValueBase.1844286", ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr inbounds %"class.hermes::vm::GCHermesValueBase.1844286", ptr %0, i64 %1
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub nsw i64 %6, %4
-  ret i64 %7
+  %3 = sub nsw i64 %1, %2
+  %gepdiff = shl nsw i64 %3, 3
+  ret i64 %gepdiff
 }
 
 ; 5 occurrences:
@@ -581,12 +559,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr inbounds i8, ptr %0, i64 %1
-  %6 = ptrtoint ptr %5 to i64
-  %7 = sub nuw i64 %6, %4
-  ret i64 %7
+  %gepdiff = sub nsw i64 %1, %2
+  ret i64 %gepdiff
 }
 
 attributes #0 = { nounwind }

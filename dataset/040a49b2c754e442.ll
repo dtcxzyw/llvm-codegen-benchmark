@@ -7,10 +7,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i8 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 6
-  %3 = trunc i64 %2 to i8
-  %4 = or i8 %0, %3
-  ret i8 %4
+  %.tr = trunc i64 %1 to i8
+  %2 = shl i8 %.tr, 6
+  %3 = or i8 %2, %0
+  ret i8 %3
 }
 
 ; 25 occurrences:
@@ -42,10 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000019(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 6
-  %3 = trunc i32 %2 to i8
-  %4 = or disjoint i8 %0, %3
-  ret i8 %4
+  %.tr = trunc i32 %1 to i8
+  %2 = shl i8 %.tr, 6
+  %3 = or disjoint i8 %2, %0
+  ret i8 %3
 }
 
 ; 1 occurrences:
@@ -53,10 +53,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
-  %4 = or disjoint i32 %0, %3
-  ret i32 %4
+  %.tr = trunc i64 %1 to i32
+  %2 = shl i32 %.tr, 1
+  %3 = or disjoint i32 %2, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

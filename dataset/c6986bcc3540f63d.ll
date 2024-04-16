@@ -25,9 +25,9 @@ define i1 @func00000000000001cc(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -105
   %3 = icmp ne i8 %1, -104
-  %4 = icmp ne i8 %0, 121
-  %5 = select i1 %4, i1 %3, i1 %2
-  ret i1 %5
+  %.not = icmp eq i8 %0, 121
+  %4 = select i1 %.not, i1 %2, i1 %3
+  ret i1 %4
 }
 
 ; 3 occurrences:

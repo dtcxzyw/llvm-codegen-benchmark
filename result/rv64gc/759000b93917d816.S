@@ -7,7 +7,7 @@ func0000000000000005:                   # @func0000000000000005
 	li	a2, 160
 	mul	a0, a0, a2
 	add	a0, a0, a1
-	addi	a0, a0, 72
+	addi	a0, a0, 88
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a0, a0, 5

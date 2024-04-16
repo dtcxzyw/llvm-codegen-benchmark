@@ -9,8 +9,8 @@ entry:
   %2 = ashr exact i64 %1, 4
   %3 = ashr exact i64 %1, 3
   %4 = icmp ult i64 %3, %2
-  %5 = select i1 %4, i64 576460752303423487, i64 %0
-  %6 = shl nuw nsw i64 %5, 4
+  %5 = shl nuw nsw i64 %0, 4
+  %6 = select i1 %4, i64 9223372036854775792, i64 %5
   ret i64 %6
 }
 

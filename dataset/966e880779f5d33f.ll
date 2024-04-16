@@ -7,7 +7,7 @@ entry:
   %3 = add i32 %2, -1640562687
   %4 = add i32 %3, %1
   %5 = mul i32 %4, -1640562687
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add i8 %2, -48
   %4 = add nuw nsw i8 %3, %1
   %5 = mul nuw i8 %4, 10
-  %6 = icmp ult i8 %0, %5
+  %6 = icmp ugt i8 %5, %0
   ret i1 %6
 }
 

@@ -194,7 +194,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %0
   %4 = call noundef i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

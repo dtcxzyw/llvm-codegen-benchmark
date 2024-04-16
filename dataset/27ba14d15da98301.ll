@@ -170,8 +170,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = select i1 %1, i16 0, i16 %2
-  %4 = zext nneg i16 %3 to i32
+  %3 = zext nneg i16 %2 to i32
+  %4 = select i1 %1, i32 0, i32 %3
   %5 = trunc i64 %0 to i32
   %6 = and i32 %5, -65281
   %7 = or disjoint i32 %6, %4
@@ -191,8 +191,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i64 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = select i1 %1, i16 0, i16 %2
-  %4 = zext nneg i16 %3 to i32
+  %3 = zext nneg i16 %2 to i32
+  %4 = select i1 %1, i32 0, i32 %3
   %5 = trunc nuw i64 %0 to i32
   %6 = and i32 %5, -65281
   %7 = or disjoint i32 %6, %4

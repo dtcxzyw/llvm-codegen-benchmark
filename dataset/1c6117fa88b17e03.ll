@@ -11,7 +11,7 @@ define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i64 192, i64 64
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, %3
   ret i1 %5
 }

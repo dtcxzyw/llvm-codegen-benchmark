@@ -91,9 +91,9 @@ define i32 @func000000000000003f(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
-  %4 = shl nuw nsw i32 %0, 6
-  %5 = or disjoint i32 %4, %3
-  %6 = shl nuw nsw i32 %5, 6
+  %4 = shl i32 %0, 12
+  %5 = shl nuw nsw i32 %3, 6
+  %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 
@@ -104,11 +104,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = shl i32 %0, 1
-  %5 = or disjoint i32 %4, %3
-  %6 = shl i32 %5, 2
+  %2 = shl i32 %0, 3
+  %3 = shl i8 %1, 2
+  %4 = and i8 %3, 4
+  %5 = zext nneg i8 %4 to i32
+  %6 = or disjoint i32 %2, %5
   ret i32 %6
 }
 

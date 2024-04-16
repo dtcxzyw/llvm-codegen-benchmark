@@ -20,7 +20,7 @@ define i32 @func000000000000000c(i48 %0, i48 %1) #0 {
 entry:
   %2 = or disjoint i48 %0, %1
   %3 = lshr exact i48 %2, 16
-  %4 = trunc i48 %3 to i32
+  %4 = trunc nuw i48 %3 to i32
   %5 = and i32 %4, -65536
   ret i32 %5
 }
@@ -70,8 +70,8 @@ entry:
 define i64 @func000000000000000a(i96 %0, i96 %1) #0 {
 entry:
   %2 = or disjoint i96 %0, %1
-  %3 = lshr i96 %2, 32
-  %4 = trunc nuw i96 %3 to i64
+  %3 = trunc i96 %2 to i64
+  %4 = lshr i64 %3, 32
   %5 = and i64 %4, 2147483647
   ret i64 %5
 }

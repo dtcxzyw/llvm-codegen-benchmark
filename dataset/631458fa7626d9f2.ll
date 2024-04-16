@@ -104,9 +104,9 @@ entry:
 define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 8 occurrences:
@@ -135,9 +135,9 @@ entry:
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  %4 = sub nuw nsw i64 %0, %3
-  ret i64 %4
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 1 occurrences:

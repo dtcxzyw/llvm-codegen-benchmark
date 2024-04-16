@@ -1,13 +1,9 @@
 func00000000000000f5:                   # @func00000000000000f5
-	andi	a4, a0, 1
-	lui	a0, 16
-	addiw	a0, a0, -16
-	lui	a3, 1048560
-	addiw	a3, a3, 15
-	beqz	a4, .LBB0_2
+	andi	a0, a0, 1
 	add	a1, a1, a2
-	add	a0, a0, a1
-	add	a0, a0, a3
-.LBB0_2:                                # %entry
-	add	a0, a0, a3
+	lui	a2, 1048560
+	addiw	a2, a2, 14
+	add	a1, a1, a2
+	addi	a0, a0, -1
+	or	a0, a0, a1
 	ret

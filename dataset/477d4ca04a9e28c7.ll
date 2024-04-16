@@ -100,9 +100,8 @@ entry:
   %3 = add nsw i64 %2, 23
   %4 = and i64 %3, -8
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.GlobalTransactionData.2122554, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.GlobalTransactionData.2122554, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:

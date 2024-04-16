@@ -10,8 +10,8 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add i32 %1, %3
-  %5 = icmp eq i32 %0, %4
+  %4 = add i32 %3, %1
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -34,8 +34,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 5, i64 0
-  %4 = add i64 %1, %3
-  %5 = icmp ult i64 %0, %4
+  %4 = add i64 %3, %1
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -1, i32 1
   %4 = add nsw i32 %3, %1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -72,7 +72,7 @@ define i1 @func0000000000000018(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -9, i64 -12
   %4 = add nsw i64 %3, %1
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -90,8 +90,8 @@ entry:
 define i1 @func0000000000000034(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 4
-  %4 = add nuw nsw i32 %1, %3
-  %5 = icmp ult i32 %0, %4
+  %4 = add nuw nsw i32 %3, %1
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -109,8 +109,8 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 284, i32 4
-  %4 = add nuw nsw i32 %1, %3
-  %5 = icmp eq i32 %0, %4
+  %4 = add nuw nsw i32 %3, %1
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -126,8 +126,8 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -7, i32 -9
-  %4 = add nsw i32 %1, %3
-  %5 = icmp slt i32 %0, %4
+  %4 = add nsw i32 %3, %1
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -138,7 +138,7 @@ define i1 @func000000000000003b(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 3, i32 4
   %4 = add nuw nsw i32 %3, %1
-  %5 = icmp sge i32 %0, %4
+  %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
 
@@ -151,7 +151,7 @@ define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 65535, i32 0
   %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -162,8 +162,8 @@ entry:
 define i1 @func0000000000000038(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 12, i64 4
-  %4 = add nuw nsw i64 %1, %3
-  %5 = icmp ugt i64 %0, %4
+  %4 = add nuw nsw i64 %3, %1
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -177,7 +177,7 @@ define i1 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -9, i32 0
   %4 = add i32 %3, %1
-  %5 = icmp sle i32 %0, %4
+  %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
 
@@ -191,8 +191,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 11, i64 0
-  %4 = add i64 %1, %3
-  %5 = icmp ugt i64 %0, %4
+  %4 = add i64 %3, %1
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -203,7 +203,7 @@ define i1 @func000000000000001c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -1, i32 1
   %4 = add nsw i32 %3, %1
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 
@@ -213,8 +213,8 @@ entry:
 define i1 @func0000000000000039(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 24, i64 20
-  %4 = add nuw nsw i64 %1, %3
-  %5 = icmp uge i64 %0, %4
+  %4 = add nuw nsw i64 %3, %1
+  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 
@@ -227,8 +227,8 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -2, i64 2
-  %4 = add i64 %1, %3
-  %5 = icmp slt i64 %0, %4
+  %4 = add i64 %3, %1
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -239,7 +239,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 7
   %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -250,7 +250,7 @@ define i1 @func0000000000000036(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 9
   %4 = add nuw nsw i32 %3, %1
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

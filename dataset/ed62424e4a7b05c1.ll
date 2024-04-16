@@ -8,7 +8,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = and i64 %1, 9223372036854775807
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 %3)
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

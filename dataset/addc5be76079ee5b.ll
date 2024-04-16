@@ -11,11 +11,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = zext i32 %0 to i64
-  %4 = mul nuw i64 %3, %2
-  %5 = and i64 %4, 4294967295
-  ret i64 %5
+  %.narrow = mul i32 %0, %1
+  %2 = zext i32 %.narrow to i64
+  ret i64 %2
 }
 
 ; 4 occurrences:

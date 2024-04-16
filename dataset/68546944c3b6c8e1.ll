@@ -6,7 +6,7 @@ define i1 @func0000000000000331(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 12
   %3 = shl i64 %0, 22
-  %4 = add nuw nsw i64 %3, %2
+  %4 = or i64 %3, %2
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -28,11 +28,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 12
-  %3 = shl i64 %0, 22
-  %4 = add i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %.neg = mul i64 %1, -4096
+  %2 = shl i64 %0, 22
+  %3 = icmp eq i64 %2, %.neg
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -41,11 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000151(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 16
-  %3 = shl nsw i32 %0, 13
-  %4 = add nsw i32 %3, %2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %.neg = mul i32 %1, -65536
+  %2 = shl nsw i32 %0, 13
+  %3 = icmp eq i32 %2, %.neg
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

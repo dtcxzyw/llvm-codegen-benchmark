@@ -89,7 +89,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -226,7 +226,7 @@ define i64 @func000000000000000c(i64 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !1
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -240,7 +240,7 @@ define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !1
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -251,7 +251,7 @@ define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -262,7 +262,7 @@ define i64 @func000000000000000d(i64 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !1
   %3 = zext nneg i16 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 

@@ -8,9 +8,9 @@
 define i8 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2097151
-  %3 = ashr i64 %0, 21
-  %4 = add nsw i64 %3, %2
-  %5 = ashr i64 %4, 17
+  %3 = lshr i64 %0, 21
+  %4 = add nuw nsw i64 %3, %2
+  %5 = lshr i64 %4, 17
   %6 = trunc i64 %5 to i8
   ret i8 %6
 }

@@ -5,9 +5,7 @@ func0000000000000011:                   # @func0000000000000011
 	czero.eqz	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	srli	a0, a0, 8
-	li	a1, 3
-	slli	a1, a1, 11
+	lui	a1, 384
 	and	a0, a0, a1
 	seqz	a0, a0
 	slli	a0, a0, 8

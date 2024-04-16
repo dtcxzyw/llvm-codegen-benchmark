@@ -77,7 +77,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 1)
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

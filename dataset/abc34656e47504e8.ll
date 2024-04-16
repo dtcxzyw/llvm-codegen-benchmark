@@ -12,7 +12,7 @@ entry:
   %4 = sitofp i32 %3 to float
   %5 = fsub float %2, %4
   %6 = tail call float @llvm.fmuladd.f32(float %1, float %5, float 1.000000e+00)
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

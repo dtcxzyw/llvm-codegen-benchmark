@@ -1,7 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
-	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	andi	a1, a1, 14
-.LBB0_2:                                # %entry
+	andi	a2, a0, 1
 	slliw	a0, a1, 28
+	beqz	a2, .LBB0_2
+	lui	a1, 917504
+	and	a0, a0, a1
+.LBB0_2:                                # %entry
 	ret

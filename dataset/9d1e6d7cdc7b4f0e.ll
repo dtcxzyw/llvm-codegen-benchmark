@@ -6,7 +6,7 @@
 define i32 @func0000000000000045(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 52
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = sub nsw i32 %0, %1
   %6 = add nsw i32 %5, -967
   %7 = add nsw i32 %6, %4

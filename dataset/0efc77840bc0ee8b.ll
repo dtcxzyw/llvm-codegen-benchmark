@@ -5,9 +5,9 @@
 define i32 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = or i16 %0, %2
-  %4 = zext i16 %3 to i32
-  %5 = and i32 %4, 32
+  %3 = or i16 %2, %0
+  %4 = and i16 %3, 32
+  %5 = zext nneg i16 %4 to i32
   ret i32 %5
 }
 
@@ -21,9 +21,9 @@ entry:
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = zext i32 %3 to i64
-  %5 = and i64 %4, 63
+  %3 = or disjoint i32 %2, %0
+  %4 = and i32 %3, 63
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

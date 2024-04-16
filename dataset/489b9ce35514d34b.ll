@@ -13,9 +13,9 @@ define i1 @func0000000000000111(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
-  %4 = add nsw i64 %0, -1
-  %5 = select i1 %3, i64 %4, i64 %0
-  %6 = icmp eq i64 %5, 0
+  %4 = sext i1 %3 to i64
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 

@@ -33,7 +33,6 @@ func000000000000001a:                   # @func000000000000001a
 	lui	a2, 393216
 	and	a1, a1, a2
 	or	a0, a0, a1
-	sext.w	a1, a0
-	slti	a1, a1, 0
-	czero.eqz	a0, a0, a1
+	sext.w	a0, a0
+	min	a0, a0, zero
 	ret

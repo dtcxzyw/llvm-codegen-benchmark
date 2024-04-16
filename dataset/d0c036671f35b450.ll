@@ -88,8 +88,8 @@ entry:
   %2 = mul i64 %1, 10
   %3 = add i64 %2, -48
   %4 = sext i8 %0 to i64
-  %5 = add i64 %3, %4
-  %6 = icmp eq i64 %5, 0
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %3, %5
   ret i1 %6
 }
 
@@ -128,8 +128,8 @@ entry:
   %2 = mul nuw i16 %1, 10
   %3 = add i16 %2, -48
   %4 = sext i8 %0 to i16
-  %5 = add i16 %3, %4
-  %6 = icmp eq i16 %5, 0
+  %5 = sub nsw i16 0, %4
+  %6 = icmp eq i16 %3, %5
   ret i1 %6
 }
 
@@ -141,8 +141,8 @@ entry:
   %2 = mul nuw i16 %1, 10
   %3 = add i16 %2, -48
   %4 = sext i8 %0 to i16
-  %5 = add i16 %3, %4
-  %6 = icmp ne i16 %5, 0
+  %5 = sub nsw i16 0, %4
+  %6 = icmp ne i16 %3, %5
   ret i1 %6
 }
 

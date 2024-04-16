@@ -8,7 +8,7 @@ entry:
   %4 = select i1 %2, i32 2, i32 1
   %5 = icmp eq i32 %1, 1024
   %6 = select i1 %5, i32 %4, i32 %3
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

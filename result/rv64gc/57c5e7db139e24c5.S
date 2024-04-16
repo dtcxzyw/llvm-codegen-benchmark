@@ -17,16 +17,16 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000098:                   # @func0000000000000098
 	addi	a2, a1, -1
-	bgeu	a2, a0, .LBB2_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	sltiu	a0, a0, 2
+	sltiu	a0, a1, 2
 	xori	a0, a0, 1
 	ret
 func0000000000000091:                   # @func0000000000000091
 	addi	a2, a1, -1
-	bgeu	a2, a0, .LBB3_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
-	seqz	a0, a0
+	seqz	a0, a1
 	ret

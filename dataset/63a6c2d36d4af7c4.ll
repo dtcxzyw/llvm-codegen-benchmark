@@ -74,10 +74,10 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or i64 %0, %2
-  %4 = lshr i64 %3, 2
-  %5 = or i64 %4, %3
-  %6 = lshr i64 %5, 4
+  %3 = or i64 %2, %0
+  %4 = lshr i64 %3, 6
+  %5 = lshr i64 %3, 4
+  %6 = or i64 %4, %5
   ret i64 %6
 }
 
@@ -104,10 +104,10 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %0, %2
-  %4 = lshr i64 %3, 2
-  %5 = or i64 %4, %3
-  %6 = lshr i64 %5, 4
+  %3 = or i64 %2, %0
+  %4 = lshr i64 %3, 6
+  %5 = lshr i64 %3, 4
+  %6 = or i64 %4, %5
   ret i64 %6
 }
 

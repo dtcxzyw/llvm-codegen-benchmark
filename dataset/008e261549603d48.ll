@@ -14,7 +14,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -64
+  %3 = add i64 %2, 4294967232
   %4 = select i1 %0, i64 %1, i64 %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -50,7 +50,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
+  %3 = add i32 %2, 65535
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = trunc i32 %4 to i16
   ret i16 %5

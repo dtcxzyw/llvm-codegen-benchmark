@@ -19,10 +19,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = mul nuw i64 %0, %2
-  %4 = and i64 %3, 4294967295
-  ret i64 %4
+  %.tr = trunc i64 %0 to i32
+  %.narrow = mul i32 %.tr, %1
+  %2 = zext i32 %.narrow to i64
+  ret i64 %2
 }
 
 ; 18 occurrences:
@@ -48,7 +48,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = mul nuw nsw i64 %0, %2
+  %3 = mul nuw nsw i64 %2, %0
   %4 = and i64 %3, 8589934590
   ret i64 %4
 }
@@ -64,7 +64,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul nuw nsw i64 %0, %2
+  %3 = mul nuw nsw i64 %2, %0
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -94,7 +94,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = and i64 %3, 3
   ret i64 %4
 }
@@ -110,10 +110,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
-  %4 = and i64 %3, 4294967295
-  ret i64 %4
+  %.tr = trunc i64 %0 to i32
+  %.narrow = mul i32 %.tr, %1
+  %2 = zext i32 %.narrow to i64
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -122,7 +122,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }

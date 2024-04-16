@@ -5,7 +5,7 @@
 define i32 @func0000000000000019(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = shl i32 %4, 11
   %6 = and i32 %0, 2047
   %7 = or disjoint i32 %5, %6

@@ -7,7 +7,7 @@
 define i32 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
-  %3 = or i8 %0, %2
+  %3 = or i8 %2, %0
   %4 = zext i8 %3 to i32
   ret i32 %4
 }

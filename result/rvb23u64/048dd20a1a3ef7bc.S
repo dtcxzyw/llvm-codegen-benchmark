@@ -6,8 +6,7 @@ func0000000000000019:                   # @func0000000000000019
 	or	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
-	sext.w	a1, a1
-	srli	a1, a1, 10
+	srliw	a1, a1, 10
 	slli	a0, a0, 38
 	srli	a0, a0, 22
 	or	a0, a0, a1
@@ -15,7 +14,8 @@ func000000000000001d:                   # @func000000000000001d
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 56
 	srli	a1, a1, 57
-	slli	a0, a0, 58
-	srli	a0, a0, 51
+	slli	a0, a0, 7
 	or	a0, a0, a1
+	slli	a0, a0, 51
+	srli	a0, a0, 51
 	ret

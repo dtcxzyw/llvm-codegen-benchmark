@@ -61,9 +61,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
-  %4 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %"class.std::__1::tuple.1556134", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 120 occurrences:
@@ -192,9 +191,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
-  %4 = getelementptr inbounds %"class.std::__1::basic_string.1558600", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.std::__1::basic_string.1558600", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 8 occurrences:
@@ -211,9 +209,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr inbounds %struct.pq_heap_st.1587384, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.pq_heap_st.1587384, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -225,9 +222,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr exact i64 %2, 1
-  %4 = getelementptr inbounds %"struct.std::pair.1693351", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.std::pair.1693351", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -264,9 +260,8 @@ define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %class.QModelIndex.1912428, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %class.QModelIndex.1912428, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 4 occurrences:

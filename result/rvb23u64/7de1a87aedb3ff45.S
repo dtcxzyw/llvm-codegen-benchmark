@@ -9,8 +9,8 @@ func0000000000000054:                   # @func0000000000000054
 	mul	a2, a2, a3
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	add	a1, a1, a2
-	sltu	a1, a1, a2
+	not	a2, a2
+	sltu	a1, a2, a1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1
@@ -26,8 +26,8 @@ func0000000000000044:                   # @func0000000000000044
 	mul	a2, a2, a3
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
-	add	a1, a1, a2
-	sltu	a1, a1, a2
+	not	a2, a2
+	sltu	a1, a2, a1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1

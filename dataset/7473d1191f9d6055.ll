@@ -31,7 +31,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl i64 %1, 4
   %5 = icmp ne i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = shl i64 %1, 3
   %5 = icmp ne i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 9
   %5 = icmp eq i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %1, 3
   %5 = icmp uge i32 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

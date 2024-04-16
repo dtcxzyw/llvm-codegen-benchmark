@@ -32,10 +32,8 @@ func0000000000000008:                   # @func0000000000000008
 	feq.s	a0, fa4, fa5
 	ret
 func000000000000000a:                   # @func000000000000000a
-	fcvt.s.w	fa5, a0
-	lui	a0, 260096
-	fmv.w.x	fa4, a0
-	fle.s	a0, fa5, fa4
+	sext.w	a0, a0
+	slti	a0, a0, 2
 	ret
 .LCPI5_0:
 	.quad	0x43efffffffffffff              # double 1.844674407370955E+19

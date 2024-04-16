@@ -47,9 +47,10 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000103:                   # @func0000000000000103
 	sext.w	a1, a1
-	li	a2, 128
-	bgeu	a1, a2, .LBB3_2
+	li	a3, 128
 	li	a2, 64
+	bltu	a1, a3, .LBB3_2
+	li	a2, 128
 .LBB3_2:                                # %entry
 	seqz	a1, a1
 	addi	a1, a1, -1

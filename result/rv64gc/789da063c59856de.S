@@ -17,8 +17,8 @@ func0000000000000029:                   # @func0000000000000029
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sltiu	a1, a1, 9
-	addi	a1, a1, -1
-	and	a0, a0, a1
 	sext.w	a0, a0
 	slli	a0, a0, 4
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	ret

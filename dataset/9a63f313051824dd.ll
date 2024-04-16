@@ -43,9 +43,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 24
   %5 = ashr i64 %4, 32
-  %6 = getelementptr inbounds %struct.NodeLinks.1743222, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.NodeLinks.1743222, ptr %0, i64 %5, i32 0, i32 2
+  ret ptr %6
 }
 
 ; 5 occurrences:
@@ -60,9 +59,8 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr inbounds %struct.Vec_Int_t_.1770734, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct.Vec_Int_t_.1770734, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -73,9 +71,8 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr inbounds %struct.Vec_Int_t_.1771953, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.Vec_Int_t_.1771953, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -132,9 +129,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 21
   %5 = ashr i64 %4, 32
-  %6 = getelementptr %struct.io_tlb_slot.2002026, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.io_tlb_slot.2002026, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

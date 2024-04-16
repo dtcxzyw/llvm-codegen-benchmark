@@ -74,11 +74,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4094
-  %3 = icmp ugt i64 %2, 2047
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr i16, ptr %0, i64 %4
-  ret ptr %5
+  %2 = lshr i64 %1, 11
+  %.lobit = and i64 %2, 1
+  %3 = getelementptr i16, ptr %0, i64 %.lobit
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

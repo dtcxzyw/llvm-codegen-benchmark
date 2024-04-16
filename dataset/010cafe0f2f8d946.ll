@@ -10,7 +10,7 @@
 define double @func0000000000000000(float %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fsub double 1.000000e+00, %1
   %6 = fpext float %0 to double
   %7 = tail call double @llvm.fmuladd.f64(double %6, double %5, double %4)

@@ -23,9 +23,9 @@ entry:
 define i24 @func000000000000001e(i24 %0, i24 %1, i24 %2) #0 {
 entry:
   %3 = or disjoint i24 %1, %2
-  %4 = and i24 %3, -897
+  %4 = and i24 %3, -656257
   %5 = shl nuw nsw i24 %0, 8
-  %6 = or disjoint i24 %5, %4
+  %6 = or i24 %5, %4
   %7 = or i24 %6, 655360
   ret i24 %7
 }

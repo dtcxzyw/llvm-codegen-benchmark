@@ -31,7 +31,7 @@
 define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -237,7 +237,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.abs.i64(i64 %1, i1 false)
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   ret i1 %3
 }
 
@@ -278,7 +278,7 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   ret i1 %3
 }
 
@@ -291,7 +291,7 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   ret i1 %3
 }
 
@@ -316,7 +316,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   ret i1 %3
 }
 
@@ -327,7 +327,7 @@ entry:
 define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp uge i64 %0, %2
+  %3 = icmp ule i64 %2, %0
   ret i1 %3
 }
 
@@ -337,7 +337,7 @@ entry:
 define i1 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp sge i64 %0, %2
+  %3 = icmp sle i64 %2, %0
   ret i1 %3
 }
 
@@ -350,7 +350,7 @@ entry:
 define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   ret i1 %3
 }
 
@@ -364,7 +364,7 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
@@ -384,7 +384,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   ret i1 %3
 }
 
@@ -396,7 +396,7 @@ entry:
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
@@ -407,7 +407,7 @@ entry:
 define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp slt i64 %0, %2
+  %3 = icmp sgt i64 %2, %0
   ret i1 %3
 }
 
@@ -421,7 +421,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
@@ -431,7 +431,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -443,7 +443,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
@@ -453,7 +453,7 @@ entry:
 define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp sgt i64 %0, %2
+  %3 = icmp slt i64 %2, %0
   ret i1 %3
 }
 

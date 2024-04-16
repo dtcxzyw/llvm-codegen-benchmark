@@ -20,7 +20,7 @@
 define i8 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1525678080
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, -1525678080
   %6 = or i1 %5, %4
   %7 = zext i1 %6 to i8
@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i32 %1, 1
   %6 = or i1 %4, %5
   %7 = zext i1 %6 to i32
@@ -60,7 +60,7 @@ entry:
 define i32 @func0000000000000204(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 26
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp eq i32 %0, 95
   %6 = or i1 %5, %4
   %7 = zext i1 %6 to i32
@@ -73,7 +73,7 @@ entry:
 define i32 @func0000000000000210(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 28
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = icmp ult i8 %0, 110
   %6 = or i1 %5, %4
   %7 = zext i1 %6 to i32

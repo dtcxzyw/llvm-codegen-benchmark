@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
   %5 = lshr i32 %4, 24
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nuw i32 %5 to i8
   %7 = xor i8 %6, -128
   ret i8 %7
 }

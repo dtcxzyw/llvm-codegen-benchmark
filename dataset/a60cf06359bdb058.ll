@@ -6,9 +6,9 @@
 define i1 @func0000000000000031(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15
-  %4 = select i1 %1, i64 16, i64 %3
-  %5 = add nuw nsw i64 %4, 16
-  %6 = icmp eq i64 %0, %5
+  %4 = or disjoint i64 %3, 16
+  %5 = select i1 %1, i64 32, i64 %4
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -18,9 +18,9 @@ entry:
 define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -1048576
-  %4 = select i1 %1, i64 1082331758592, i64 %3
-  %5 = add nuw nsw i64 %4, 268435456
-  %6 = icmp ugt i64 %0, %5
+  %4 = add nuw nsw i64 %3, 268435456
+  %5 = select i1 %1, i64 1082600194048, i64 %4
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -31,9 +31,9 @@ entry:
 define i1 @func0000000000000029(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = select i1 %1, i64 32, i64 %3
-  %5 = add nuw i64 %4, 8
-  %6 = icmp uge i64 %0, %5
+  %4 = add nuw i64 %3, 8
+  %5 = select i1 %1, i64 40, i64 %4
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 

@@ -43,7 +43,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i16, ptr %0, i64 %6
   ret ptr %7

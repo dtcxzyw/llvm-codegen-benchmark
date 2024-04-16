@@ -1,12 +1,12 @@
 func00000000000003cc:                   # @func00000000000003cc
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	addi	a0, a0, -32
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000001cc:                   # @func00000000000001cc
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	addi	a0, a0, -32
 	snez	a0, a0

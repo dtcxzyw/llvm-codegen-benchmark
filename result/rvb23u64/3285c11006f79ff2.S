@@ -1,6 +1,6 @@
 func00000000000000f5:                   # @func00000000000000f5
+	add.uw	a1, a2, a1
 	sh1add	a0, a1, a0
-	sh1add.uw	a0, a2, a0
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	andi	a2, a2, 255
@@ -53,9 +53,8 @@ func00000000000001b0:                   # @func00000000000001b0
 	add	a0, a0, a2
 	ret
 func000000000000018c:                   # @func000000000000018c
-	slli	a2, a2, 8
-	add	a0, a0, a2
 	andi	a1, a1, 255
+	add	a1, a1, a2
 	slli	a1, a1, 8
 	addw	a0, a0, a1
 	ret
@@ -85,8 +84,8 @@ func00000000000001c8:                   # @func00000000000001c8
 	ret
 func0000000000000170:                   # @func0000000000000170
 	sext.w	a2, a2
+	add	a1, a1, a2
 	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
 	ret
 func00000000000001fb:                   # @func00000000000001fb
 	slli	a2, a2, 42

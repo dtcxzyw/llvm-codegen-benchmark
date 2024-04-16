@@ -21,7 +21,7 @@ define i1 @func00000000000000a5(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %2, 0.000000e+00
   %4 = select i1 %3, double 0.000000e+00, double %2
-  %5 = fmul double %1, %4
+  %5 = fmul double %4, %1
   %6 = fcmp ugt double %5, %0
   ret i1 %6
 }

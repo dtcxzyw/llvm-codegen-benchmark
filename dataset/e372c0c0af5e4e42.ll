@@ -21,7 +21,7 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = sub nsw i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = zext i64 %1 to i128
   %3 = sub i128 %2, %0
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 

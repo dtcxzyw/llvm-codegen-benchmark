@@ -7,11 +7,11 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = lshr exact i32 %2, 2
-  %4 = add nuw nsw i32 %3, 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %2 = lshr i32 %1, 2
+  %3 = and i32 %2, 63
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -20,11 +20,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = lshr i32 %2, 2
-  %4 = add nuw nsw i32 %3, 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %2 = lshr i32 %1, 2
+  %3 = and i32 %2, 63
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -37,11 +37,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1048320
-  %3 = lshr exact i32 %2, 8
-  %4 = add nsw i32 %3, -2
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.tcaches_s.2127954, ptr %0, i64 %5
+  %2 = lshr i32 %1, 8
+  %3 = and i32 %2, 4095
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr %struct.tcaches_s.2127954, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }
 

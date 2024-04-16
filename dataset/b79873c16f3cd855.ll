@@ -12,7 +12,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = ashr exact i32 %2, 24
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   ret i32 %4
 }
 
@@ -28,7 +28,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 44
   %3 = ashr i64 %2, 59
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   ret i64 %4
 }
 

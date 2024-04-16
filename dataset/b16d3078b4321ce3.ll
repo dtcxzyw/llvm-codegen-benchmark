@@ -6,8 +6,8 @@ define i1 @func0000000000000444(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %0, %4
-  %6 = icmp ult i32 %1, %4
+  %5 = icmp ugt i32 %4, %0
+  %6 = icmp ugt i32 %4, %1
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
@@ -19,8 +19,8 @@ define i1 @func0000000000000095(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
   %4 = trunc i32 %3 to i8
-  %5 = icmp ule i8 %0, %4
-  %6 = icmp uge i8 %1, %4
+  %5 = icmp uge i8 %4, %0
+  %6 = icmp ule i8 %4, %1
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
@@ -32,8 +32,8 @@ define i1 @func0000000000000446(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %0, %4
-  %6 = icmp ult i32 %1, %4
+  %5 = icmp sgt i32 %4, %0
+  %6 = icmp ugt i32 %4, %1
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
@@ -45,8 +45,8 @@ define i1 @func0000000000000485(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 6
   %4 = trunc i64 %3 to i32
-  %5 = icmp ule i32 %0, %4
-  %6 = icmp ugt i32 %1, %4
+  %5 = icmp uge i32 %4, %0
+  %6 = icmp ult i32 %4, %1
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }

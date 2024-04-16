@@ -6,7 +6,7 @@
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = tail call noundef i32 @llvm.smax.i32(i32 %3, i32 0)
   ret i32 %4
 }
@@ -40,7 +40,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 0)
   ret i32 %4
 }

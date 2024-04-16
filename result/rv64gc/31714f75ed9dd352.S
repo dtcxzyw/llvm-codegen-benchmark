@@ -47,7 +47,7 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, -16
-	addiw	a1, a1, 16
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 48
+	addi	a0, a0, 64
 	ret

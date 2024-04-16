@@ -20,11 +20,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  %5 = sub nsw i64 0, %1
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  %7 = getelementptr inbounds i32, ptr %6, i64 %4
+  %3 = sub nsw i64 0, %1
+  %4 = getelementptr inbounds i32, ptr %0, i64 %3
+  %5 = sext i32 %2 to i64
+  %6 = getelementptr i32, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -4
   ret ptr %7
 }
 

@@ -8,7 +8,7 @@ entry:
   %2 = srem i32 %1, 1000
   %3 = mul nsw i32 %2, 1000000
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = srem i32 %1, 12
   %3 = mul nsw i32 %2, 30
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

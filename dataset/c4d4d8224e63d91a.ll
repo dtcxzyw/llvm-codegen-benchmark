@@ -10,7 +10,7 @@ entry:
   %3 = add nuw nsw i64 %2, 5
   %4 = lshr i64 %3, 44
   %5 = add nuw nsw i64 %4, %1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

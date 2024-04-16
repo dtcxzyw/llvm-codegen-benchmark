@@ -9,7 +9,7 @@
 define i1 @func00000000000000aa(i8 %0, i32 %1) #0 {
 entry:
   %2 = sext i8 %0 to i32
-  %3 = icmp sgt i32 %1, %2
+  %3 = icmp slt i32 %2, %1
   %4 = icmp sgt i8 %0, 96
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -21,7 +21,7 @@ entry:
 define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp ugt i64 %1, %2
+  %3 = icmp ult i64 %2, %1
   %4 = icmp ne i32 %0, 256
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -34,7 +34,7 @@ entry:
 define i1 @func00000000000000ac(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = icmp sgt i64 %1, %2
+  %3 = icmp slt i64 %2, %1
   %4 = icmp ne i32 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

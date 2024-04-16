@@ -87,11 +87,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, double %2) #0 {
 entry:
-  %3 = fptrunc double %2 to float
-  %4 = bitcast float %3 to i32
-  %5 = icmp slt i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 %1
-  ret i32 %6
+  %3 = bitcast double %2 to i64
+  %4 = icmp slt i64 %3, 0
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

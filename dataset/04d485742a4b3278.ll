@@ -2019,7 +2019,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 384307168202282325)
   ret i64 %7
 }
@@ -2416,7 +2416,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 56
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 164703072086692425)
   ret i64 %7
 }
@@ -2459,7 +2459,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 80
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 115292150460684697)
   ret i64 %7
 }

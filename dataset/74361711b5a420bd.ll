@@ -12,7 +12,7 @@ entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to float
   %4 = fsub float %1, %3
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

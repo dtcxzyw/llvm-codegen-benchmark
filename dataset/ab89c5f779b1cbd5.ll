@@ -77,11 +77,11 @@ entry:
 define i64 @func0000000000000017(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 59
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, -4160749569
-  %6 = zext nneg i32 %0 to i64
-  %7 = or disjoint i64 %5, %6
-  ret i64 %7
+  %.masked = and i64 %1, -4160749569
+  %4 = or i64 %3, %.masked
+  %5 = zext nneg i32 %0 to i64
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
 }
 
 ; 6 occurrences:
@@ -95,11 +95,11 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or i64 %3, %1
-  %5 = and i64 %4, -4294967296
-  %6 = zext i32 %0 to i64
-  %7 = or disjoint i64 %5, %6
-  ret i64 %7
+  %.masked = and i64 %1, -4294967296
+  %4 = or i64 %3, %.masked
+  %5 = zext i32 %0 to i64
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -121,7 +121,7 @@ entry:
 define i32 @func000000000000001d(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = and i32 %4, -538976512
   %6 = zext i8 %0 to i32
   %7 = or disjoint i32 %5, %6

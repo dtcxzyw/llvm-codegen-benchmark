@@ -25,9 +25,10 @@ define i8 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i8
-  %5 = select i1 %0, i8 %4, i8 1
-  ret i8 %5
+  %not. = xor i1 %0, true
+  %narrow = select i1 %not., i1 true, i1 %3
+  %4 = zext i1 %narrow to i8
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

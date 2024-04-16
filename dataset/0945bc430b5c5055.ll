@@ -12,9 +12,8 @@ entry:
   %3 = add nuw nsw i32 %1, 1
   %4 = select i1 %2, i32 32, i32 %3
   %5 = select i1 %0, i32 %1, i32 %4
-  %6 = add nsw i32 %5, -11
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %6 = icmp eq i32 %5, 11
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

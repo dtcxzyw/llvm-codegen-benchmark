@@ -28,7 +28,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = add nuw nsw i32 %3, 20
   ret i32 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nsw i32 %3, -2048
   ret i32 %4
 }

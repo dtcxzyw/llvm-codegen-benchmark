@@ -11,8 +11,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 %2, i64 0
-  %4 = icmp eq i64 %3, 0
+  %3 = icmp eq i64 %2, 0
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 true, i1 %3
   %5 = icmp eq i64 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -281,8 +282,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 -1
-  %4 = icmp ult i32 %3, 4448
+  %3 = icmp ult i32 %2, 4448
+  %4 = select i1 %1, i1 %3, i1 false
   %5 = icmp ult i32 %0, 2
   %6 = or i1 %4, %5
   ret i1 %6
@@ -294,8 +295,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i16 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp ult i32 %3, 2
+  %3 = icmp ult i32 %2, 2
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 true, i1 %3
   %5 = icmp eq i16 %0, 329
   %6 = or i1 %4, %5
   ret i1 %6
@@ -306,8 +308,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(i64 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = select i1 %1, i16 %2, i16 0
-  %4 = icmp ult i16 %3, 256
+  %3 = icmp ult i16 %2, 256
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 true, i1 %3
   %5 = icmp eq i64 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -318,8 +321,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000102(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 4
-  %4 = icmp ugt i32 %3, 3
+  %3 = icmp ugt i32 %2, 3
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 true, i1 %3
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -331,8 +335,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000182(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = icmp ne i32 %3, 0
+  %3 = icmp ne i32 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
   %5 = icmp eq i32 %0, 1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -343,8 +347,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000188(i8 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 %2, i8 0
-  %4 = icmp ne i8 %3, 0
+  %3 = icmp ne i8 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
   %5 = icmp ult i8 %0, 32
   %6 = or i1 %5, %4
   ret i1 %6

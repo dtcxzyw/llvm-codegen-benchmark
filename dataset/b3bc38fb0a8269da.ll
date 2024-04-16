@@ -9,7 +9,7 @@ entry:
   %2 = add nsw i64 %1, 1048576
   %3 = ashr i64 %2, 21
   %4 = mul nsw i64 %3, 666643
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = add i64 %1, 1048576
   %3 = ashr i64 %2, 21
   %4 = mul nsw i64 %3, 666643
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

@@ -32,9 +32,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = and i64 %2, 2147483647
-  %4 = getelementptr inbounds %struct.cert_pkey_st.1587188, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.cert_pkey_st.1587188, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -56,9 +55,8 @@ define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 1096
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 132
-  ret ptr %5
+  %4 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %3, i32 11
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

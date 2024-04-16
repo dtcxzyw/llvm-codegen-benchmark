@@ -14,7 +14,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 10
   %4 = and i32 %3, 196608
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

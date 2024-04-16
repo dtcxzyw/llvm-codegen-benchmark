@@ -4201,11 +4201,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 384307168202282325)
-  %5 = select i1 %0, i64 384307168202282325, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %2
+  %4 = icmp eq i64 %3, %1
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -4713,11 +4713,11 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 9223372036854775807)
-  %5 = select i1 %0, i64 9223372036854775807, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %2
+  %4 = icmp eq i64 %3, %1
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -4726,10 +4726,9 @@ entry:
 define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 2305843009213693951)
-  %5 = select i1 %0, i64 2305843009213693951, i64 %4
-  %6 = icmp ugt i64 %5, 768
-  ret i1 %6
+  %4 = icmp ugt i64 %3, 768
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 18 occurrences:
@@ -4754,11 +4753,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = call i64 @llvm.umin.i64(i64 %3, i64 576460752303423487)
-  %5 = select i1 %0, i64 576460752303423487, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 8 occurrences:
@@ -4773,11 +4771,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = call i64 @llvm.umin.i64(i64 %3, i64 9223372036854775807)
-  %5 = select i1 %0, i64 9223372036854775807, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

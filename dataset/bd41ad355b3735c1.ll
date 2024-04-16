@@ -2017,10 +2017,10 @@
 define i64 @func0000000000000153(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 384307168202282325, i64 %0
-  %7 = mul nuw nsw i64 %6, 24
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = mul nuw nsw i64 %0, 24
+  %7 = select i1 %5, i64 9223372036854775800, i64 %6
   ret i64 %7
 }
 
@@ -2060,10 +2060,10 @@ entry:
 define i64 @func0000000000000113(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 80
-  %4 = add i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 115292150460684697, i64 %0
-  %7 = mul nuw nsw i64 %6, 80
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = mul nuw nsw i64 %0, 80
+  %7 = select i1 %5, i64 9223372036854775760, i64 %6
   ret i64 %7
 }
 

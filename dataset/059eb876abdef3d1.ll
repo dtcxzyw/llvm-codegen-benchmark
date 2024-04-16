@@ -30,8 +30,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 16, i64 %1
-  %3 = or disjoint i64 %2, 1
+  %2 = or disjoint i64 %1, 1
+  %3 = select i1 %0, i64 17, i64 %2
   ret i64 %3
 }
 
@@ -59,8 +59,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 2147483647, i32 %1
-  %3 = or i32 %2, -2147483648
+  %2 = or i32 %1, -2147483648
+  %3 = select i1 %0, i32 -1, i32 %2
   ret i32 %3
 }
 

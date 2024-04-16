@@ -6,8 +6,8 @@
 define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -20,8 +20,8 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ne i32 %3, %0
   ret i1 %4
 }
 
@@ -31,8 +31,8 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -110,8 +110,8 @@ entry:
 define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -130,8 +130,8 @@ entry:
 define i1 @func0000000000000049(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp uge i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ule i32 %3, %0
   ret i1 %4
 }
 
@@ -142,8 +142,8 @@ entry:
 define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -157,8 +157,8 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -172,8 +172,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -183,8 +183,8 @@ entry:
 define i1 @func0000000000000044(i8 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i8
-  %4 = icmp ult i8 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i8
+  %4 = icmp ugt i8 %3, %0
   ret i1 %4
 }
 
@@ -194,8 +194,8 @@ entry:
 define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 

@@ -21,7 +21,7 @@ entry:
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   %5 = fcmp ogt double %4, 2.550000e+02
   %6 = select i1 %5, double 2.550000e+02, double %4
   ret double %6

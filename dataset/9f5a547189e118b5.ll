@@ -6,9 +6,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 %1, 4
-  %3 = xor i32 %2, %0
-  %4 = shl i32 %3, 18
+  %2 = shl i32 %1, 22
+  %3 = shl i32 %0, 18
+  %4 = xor i32 %2, %3
   ret i32 %4
 }
 
@@ -30,9 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 9
-  %3 = xor i32 %0, %2
-  %4 = shl i32 %3, 3
+  %2 = shl i32 %1, 12
+  %3 = shl i32 %0, 3
+  %4 = xor i32 %2, %3
   ret i32 %4
 }
 
@@ -44,9 +44,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = xor i32 %2, %0
-  %4 = shl nuw nsw i32 %3, 1
+  %2 = shl i32 %1, 2
+  %3 = shl i32 %0, 1
+  %4 = xor i32 %2, %3
   ret i32 %4
 }
 
@@ -55,9 +55,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 8
-  %3 = xor i32 %2, %0
-  %4 = shl i32 %3, 8
+  %2 = shl i32 %1, 16
+  %3 = shl i32 %0, 8
+  %4 = xor i32 %2, %3
   ret i32 %4
 }
 

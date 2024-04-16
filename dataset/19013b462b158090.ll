@@ -52,7 +52,7 @@
 define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1431655765
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = lshr i32 %4, 2
   %6 = and i32 %5, 858993459
   %7 = add nuw nsw i32 %6, %0
@@ -112,7 +112,7 @@ entry:
 define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 858993459
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = lshr i32 %4, 4
   %6 = and i32 %5, 117901063
   %7 = add nuw nsw i32 %6, %0
@@ -125,11 +125,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1145324612
-  %4 = add nuw i32 %1, %3
-  %5 = lshr exact i32 %4, 2
+  %3 = and i32 %2, 71582788
+  %4 = add i32 %3, %1
+  %5 = lshr i32 %4, 2
   %6 = and i32 %5, 50529027
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -139,11 +139,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 808464432
-  %4 = add nuw nsw i32 %1, %3
-  %5 = lshr exact i32 %4, 4
+  %3 = and i32 %2, 3158064
+  %4 = add i32 %3, %1
+  %5 = lshr i32 %4, 4
   %6 = and i32 %5, 458759
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -158,10 +158,10 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = and i128 %2, 18446744073709551615
-  %4 = add i128 %1, %3
+  %4 = add i128 %3, %1
   %5 = lshr i128 %4, 44
   %6 = and i128 %5, 18446744073709551615
-  %7 = add i128 %0, %6
+  %7 = add i128 %6, %0
   ret i128 %7
 }
 
@@ -170,11 +170,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 16843009
+  %3 = and i32 %2, 257
   %4 = add i32 %3, %1
   %5 = lshr i32 %4, 8
   %6 = and i32 %5, 255
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -184,7 +184,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = lshr i32 %4, 2
   %6 = and i32 %5, 858993459
   %7 = add nuw nsw i32 %6, %0

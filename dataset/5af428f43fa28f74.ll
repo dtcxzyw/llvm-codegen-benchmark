@@ -35,7 +35,7 @@ define i16 @func000000000000000a(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i16 1, i16 3
-  %4 = add nsw i16 %0, %3
+  %4 = add nsw i16 %3, %0
   %5 = sdiv i16 %4, 8
   ret i16 %5
 }

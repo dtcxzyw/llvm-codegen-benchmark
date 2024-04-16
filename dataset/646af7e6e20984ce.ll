@@ -84,7 +84,7 @@ entry:
   %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i32
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -100,10 +100,10 @@ entry:
 define i16 @func00000000000000b1(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i16
-  %7 = or disjoint i16 %0, %6
+  %7 = or disjoint i16 %6, %0
   ret i16 %7
 }
 
@@ -113,10 +113,10 @@ entry:
 define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 2, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = zext i1 %5 to i32
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

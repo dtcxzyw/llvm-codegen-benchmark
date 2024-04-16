@@ -155,9 +155,8 @@
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -167,9 +166,8 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i64 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -179,9 +177,8 @@ entry:
 define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp sgt i64 %3, 0
-  ret i1 %4
+  %3 = icmp slt i64 %2, %0
+  ret i1 %3
 }
 
 ; 8 occurrences:
@@ -197,9 +194,8 @@ entry:
 define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i64 %2, %0
+  ret i1 %3
 }
 
 ; 571 occurrences:
@@ -887,9 +883,8 @@ entry:
 define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 23 occurrences:
@@ -979,10 +974,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
-  %2 = ashr i8 %1, 7
-  %3 = sub i8 %0, %2
-  %4 = icmp ugt i8 %3, 99
-  ret i1 %4
+  %.neg = lshr i8 %1, 7
+  %2 = add i8 %.neg, %0
+  %3 = icmp ugt i8 %2, 99
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -990,10 +985,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
-  %2 = ashr i8 %1, 7
-  %3 = sub i8 %0, %2
-  %4 = icmp ult i8 %3, 10
-  ret i1 %4
+  %.neg = lshr i8 %1, 7
+  %2 = add i8 %.neg, %0
+  %3 = icmp ult i8 %2, 10
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -1001,10 +996,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 63
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp ugt i64 %3, 99
-  ret i1 %4
+  %.neg = lshr i64 %1, 63
+  %2 = add i64 %.neg, %0
+  %3 = icmp ugt i64 %2, 99
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -1075,9 +1070,8 @@ entry:
 define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = sub i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %3 = icmp ne i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:

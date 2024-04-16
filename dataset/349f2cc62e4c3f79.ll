@@ -9,12 +9,12 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000002c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 12
-  %4 = sext i32 %1 to i64
-  %5 = sub nsw i64 %4, %3
-  %6 = mul nuw i64 %5, 12
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sdiv exact i64 %2, -12
+  %3 = sext i32 %1 to i64
+  %4 = add i64 %.neg, %3
+  %5 = mul nuw i64 %4, 12
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -22,12 +22,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000028(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 12
-  %4 = sext i32 %1 to i64
-  %5 = sub nsw i64 %4, %3
-  %6 = mul i64 %5, 12
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = sdiv exact i64 %2, -12
+  %3 = sext i32 %1 to i64
+  %4 = add i64 %.neg, %3
+  %5 = mul i64 %4, 12
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -49,10 +49,10 @@ entry:
 define i1 @func00000000000003b6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp sge i32 %3, %1
-  %5 = select i1 %4, i32 0, i32 %3
-  %6 = icmp slt i32 %5, %0
-  ret i1 %6
+  %.not = icmp slt i32 %3, %1
+  %4 = select i1 %.not, i32 %3, i32 0
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:

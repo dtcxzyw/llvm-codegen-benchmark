@@ -9,10 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 1, i64 %0
-  %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, 13
+  %2 = icmp ne i64 %1, 0
+  %3 = trunc i64 %0 to i32
+  %4 = icmp eq i32 %3, 13
+  %5 = select i1 %2, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -21,10 +21,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 1, i64 %0
-  %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ugt i32 %4, 6000
+  %2 = icmp ne i64 %1, 0
+  %3 = trunc nuw i64 %0 to i32
+  %4 = icmp ugt i32 %3, 6000
+  %5 = select i1 %2, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -33,10 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 2
-  %3 = select i1 %2, i64 3, i64 %0
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, -12
+  %2 = icmp ne i64 %1, 2
+  %3 = trunc i64 %0 to i32
+  %4 = icmp ugt i32 %3, -12
+  %5 = select i1 %2, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -46,9 +46,9 @@ entry:
 define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 35
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = trunc i32 %3 to i8
-  %5 = icmp ult i8 %4, 7
+  %3 = trunc i32 %0 to i8
+  %4 = icmp ult i8 %3, 7
+  %5 = select i1 %2, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -58,9 +58,9 @@ entry:
 define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 4
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = trunc i32 %3 to i8
-  %5 = icmp ult i8 %4, 7
+  %3 = trunc i32 %0 to i8
+  %4 = icmp ult i8 %3, 7
+  %5 = select i1 %2, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -70,10 +70,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001b4(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp slt i32 %1, 1
-  %3 = select i1 %2, i64 -1, i64 %0
-  %4 = trunc nuw nsw i64 %3 to i32
-  %5 = icmp ult i32 %4, 64
+  %2 = icmp sgt i32 %1, 0
+  %3 = and i64 %0, 4294967232
+  %4 = icmp eq i64 %3, 0
+  %5 = select i1 %2, i1 %4, i1 false
   ret i1 %5
 }
 

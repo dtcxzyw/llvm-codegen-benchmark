@@ -42,9 +42,9 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711935
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = and i32 %4, 16711935
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -55,7 +55,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 28672
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = and i32 %4, 28672
   %6 = or disjoint i32 %5, %0
   ret i32 %6
@@ -73,11 +73,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 7
-  %4 = add nsw i32 %1, %3
-  %5 = and i32 %4, 7
-  %6 = or disjoint i32 %0, %5
-  ret i32 %6
+  %3 = add i32 %2, %1
+  %4 = and i32 %3, 7
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

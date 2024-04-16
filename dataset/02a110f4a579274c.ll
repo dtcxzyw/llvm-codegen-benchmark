@@ -9,7 +9,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = freeze i8 %2
   %4 = icmp eq i8 %3, 2
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -23,7 +23,7 @@ entry:
   %3 = freeze i8 %2
   %4 = icmp ne i8 %3, 0
   %5 = and i1 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

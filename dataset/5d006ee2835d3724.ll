@@ -25,7 +25,7 @@ entry:
   %4 = select i1 %3, i16 1024, i16 0
   %5 = and i16 %1, -1025
   %6 = or disjoint i16 %5, %4
-  %7 = or i16 %0, %6
+  %7 = or i16 %6, %0
   ret i16 %7
 }
 

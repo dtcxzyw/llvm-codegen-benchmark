@@ -45,8 +45,8 @@ define i64 @func000000000000002b(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 112
   %2 = add nsw i64 %1, 63
-  %3 = lshr i64 %2, 6
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 2305843009213693944
   ret i64 %4
 }
 

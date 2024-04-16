@@ -1,8 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	lui	a1, 16384
-	addiw	a1, a1, -16
-	and	a1, a1, a0
-	xor	a0, a0, a1
+	lui	a1, 1032192
+	addiw	a1, a1, 15
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006

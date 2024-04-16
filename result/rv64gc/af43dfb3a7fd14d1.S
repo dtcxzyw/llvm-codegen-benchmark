@@ -1,8 +1,9 @@
 func0000000000000006:                   # @func0000000000000006
-	sext.w	a2, a2
-	bltz	a2, .LBB0_2
-	mv	a0, a1
+	slli	a2, a2, 32
+	bgez	a2, .LBB0_2
+	mv	a1, a0
 .LBB0_2:                                # %entry
+	mv	a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a2, a2
@@ -41,7 +42,8 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a2, a2, 48
 	lui	a3, 5
 	addiw	a3, a3, -1719
-	bne	a2, a3, .LBB6_2
-	mv	a0, a1
+	beq	a2, a3, .LBB6_2
+	mv	a1, a0
 .LBB6_2:                                # %entry
+	mv	a0, a1
 	ret

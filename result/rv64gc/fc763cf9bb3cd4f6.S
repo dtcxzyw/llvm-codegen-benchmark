@@ -106,18 +106,8 @@ func0000000000000018:                   # @func0000000000000018
 	sltiu	a0, a0, 20
 	xori	a0, a0, 1
 	ret
-.LCPI8_0:
-	.quad	-2049638230412172401            # 0xe38e38e38e38e38f
 func0000000000000014:                   # @func0000000000000014
-	lui	a1, %hi(.LCPI8_0)
-	ld	a1, %lo(.LCPI8_0)(a1)
-	addi	a0, a0, -1
-	mulhu	a1, a0, a1
-	srli	a1, a1, 9
-	li	a2, 576
-	mul	a1, a1, a2
-	sub	a0, a0, a1
-	sltiu	a0, a0, 1152
+	li	a0, 1
 	ret
 .LCPI9_0:
 	.quad	3018558121152472083             # 0x29e4129e4129e413

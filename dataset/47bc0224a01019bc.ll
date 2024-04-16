@@ -42,7 +42,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -198,7 +198,7 @@ entry:
 define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -331,7 +331,7 @@ entry:
 define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = icmp ugt i64 %3, 4611686018427387903
   ret i1 %4
 }

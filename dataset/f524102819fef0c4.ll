@@ -8,9 +8,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 12
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = add i64 %4, -12
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, 12
+  ret i1 %5
 }
 
 ; 2 occurrences:

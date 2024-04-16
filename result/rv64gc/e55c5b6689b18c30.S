@@ -23,11 +23,10 @@ func0000000000000039:                   # @func0000000000000039
 func000000000000003f:                   # @func000000000000003f
 	srli	a0, a0, 6
 	li	a2, 5
-	mv	a1, a0
+	not	a1, a0
 	bltu	a2, a0, .LBB2_2
-	li	a1, 5
+	li	a0, 5
 .LBB2_2:                                # %entry
-	not	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret

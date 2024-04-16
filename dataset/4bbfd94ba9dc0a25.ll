@@ -7,10 +7,9 @@
 define i1 @func0000000000000001(float %0) #0 {
 entry:
   %1 = fptosi float %0 to i32
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 7
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 7
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -37,10 +37,10 @@ define i32 @func0000000000000039(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 1
   %3 = or disjoint i32 %2, 32
-  %4 = icmp ne i32 %0, -1
-  %5 = select i1 %4, i32 %2, i32 %3
-  %6 = or disjoint i32 %5, 32768
-  ret i32 %6
+  %.not = icmp eq i32 %0, -1
+  %4 = select i1 %.not, i32 %3, i32 %2
+  %5 = or disjoint i32 %4, 32768
+  ret i32 %5
 }
 
 ; 5 occurrences:

@@ -95,9 +95,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = tail call { i32, i1 } @llvm.smul.with.overflow.i32(i32 %0, i32 10)
-  %2 = extractvalue { i32, i1 } %1, 0
-  ret i32 %2
+  %1 = mul i32 %0, 10
+  ret i32 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = or disjoint i32 %0, 224
-  %2 = lshr i32 %1, 3
+  %1 = lshr i32 %0, 3
+  %2 = or i32 %1, 28
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

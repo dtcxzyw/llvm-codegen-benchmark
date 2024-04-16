@@ -6,9 +6,8 @@
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 63
-  %2 = shl nuw i64 1, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %.neg = shl nsw i64 -1, %1
+  ret i64 %.neg
 }
 
 ; 1 occurrences:
@@ -17,9 +16,8 @@ entry:
 define i64 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967288
-  %2 = shl nuw i64 1, %1
-  %3 = sub nsw i64 0, %2
-  ret i64 %3
+  %.neg = shl nsw i64 -1, %1
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

@@ -8,11 +8,10 @@
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 17
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp ugt i64 %5, 9223372036854775792
-  %7 = or i1 %0, %6
-  ret i1 %7
+  %4 = add i64 %3, %1
+  %5 = icmp ugt i64 %4, 9223372036854775792
+  %6 = or i1 %5, %0
+  ret i1 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -28,11 +27,10 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 17
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp ugt i64 %5, 9223372036854775792
-  %7 = or i1 %0, %6
-  ret i1 %7
+  %4 = add i64 %3, %1
+  %5 = icmp ugt i64 %4, 9223372036854775792
+  %6 = or i1 %5, %0
+  ret i1 %6
 }
 
 ; 35 occurrences:
@@ -75,11 +73,10 @@ entry:
 define i1 @func00000000000000d0(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 16
-  %4 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp ugt i64 %5, 9223372036854775792
-  %7 = or i1 %0, %6
-  ret i1 %7
+  %4 = add i64 %3, %1
+  %5 = icmp ugt i64 %4, 9223372036854775792
+  %6 = or i1 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -5,9 +5,9 @@
 define i32 @func0000000000000023(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, 32
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -18,9 +18,9 @@ entry:
 define i32 @func0000000000000031(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 65535
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -30,9 +30,9 @@ entry:
 define i32 @func0000000000000052(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 0
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = icmp sgt i32 %0, 5
   %3 = and i1 %2, %1
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -56,7 +56,7 @@ entry:
   %2 = icmp ult i8 %0, 24
   %3 = and i1 %2, %1
   %4 = zext i1 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 

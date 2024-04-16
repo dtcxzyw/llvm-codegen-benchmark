@@ -7,7 +7,7 @@ entry:
   %2 = mul i32 %1, 1440
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 60
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = mul i32 %1, 1000
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 1000
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

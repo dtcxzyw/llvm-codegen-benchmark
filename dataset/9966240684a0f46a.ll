@@ -11,7 +11,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i32 %1, -1
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

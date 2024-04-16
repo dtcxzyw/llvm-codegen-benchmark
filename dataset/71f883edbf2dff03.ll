@@ -20,9 +20,9 @@
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = sub nuw nsw i32 8, %2
-  %4 = add i32 %0, %3
-  ret i32 %4
+  %reass.sub = sub i32 %0, %2
+  %3 = add i32 %reass.sub, 8
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -31,9 +31,9 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = sub nuw nsw i32 8, %2
-  %4 = add nsw i32 %0, %3
-  ret i32 %4
+  %reass.sub = sub i32 %0, %2
+  %3 = add i32 %reass.sub, 8
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -44,9 +44,9 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2251799813685247
-  %3 = sub nuw nsw i64 4503599627370494, %2
-  %4 = add nuw nsw i64 %0, %3
-  ret i64 %4
+  %reass.sub = sub i64 %0, %2
+  %3 = add i64 %reass.sub, 4503599627370494
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -55,9 +55,9 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = sub nuw nsw i32 8, %2
-  %4 = add nuw i32 %3, %0
-  ret i32 %4
+  %reass.sub = sub i32 %0, %2
+  %3 = add i32 %reass.sub, 8
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

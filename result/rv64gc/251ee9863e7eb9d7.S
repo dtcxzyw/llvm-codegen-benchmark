@@ -1,11 +1,10 @@
 func0000000000000074:                   # @func0000000000000074
-	slli	a1, a1, 40
-	srli	a1, a1, 48
-	seqz	a1, a1
+	sext.w	a1, a1
+	sltiu	a1, a1, 256
 	and	a0, a0, a1
 	ret
 func0000000000000054:                   # @func0000000000000054
-	srliw	a1, a1, 30
+	srli	a1, a1, 30
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

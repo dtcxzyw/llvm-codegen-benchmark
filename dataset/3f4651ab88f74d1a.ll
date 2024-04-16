@@ -9,7 +9,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sext i32 %5 to i64
   %7 = getelementptr inbounds float, ptr %0, i64 %6
   ret ptr %7
@@ -37,7 +37,7 @@ define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sext i32 %5 to i64
   %7 = getelementptr double, ptr %0, i64 %6
   ret ptr %7
@@ -53,7 +53,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sext i32 %5 to i64
   %7 = getelementptr inbounds double, ptr %0, i64 %6
   ret ptr %7
@@ -81,7 +81,7 @@ define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sext i32 %5 to i64
   %7 = getelementptr double, ptr %0, i64 %6
   ret ptr %7
@@ -94,7 +94,7 @@ define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 1
   %4 = or disjoint i32 %3, 1
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sext i32 %5 to i64
   %7 = getelementptr inbounds double, ptr %0, i64 %6
   ret ptr %7

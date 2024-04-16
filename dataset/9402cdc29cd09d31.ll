@@ -8,7 +8,7 @@
 define i1 @func000000000000004c(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   %5 = trunc i8 %1 to i1
   %6 = and i1 %4, %5
   ret i1 %6
@@ -20,7 +20,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   %5 = trunc i8 %1 to i1
   %6 = and i1 %4, %5
   ret i1 %6

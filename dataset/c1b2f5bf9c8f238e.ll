@@ -1655,10 +1655,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i8 %0, 1
+  %2 = icmp eq i8 %1, 0
+  ret i1 %2
 }
 
 ; 298 occurrences:
@@ -1963,10 +1962,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 32
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = and i8 %0, 32
+  %2 = icmp ne i8 %1, 0
+  ret i1 %2
 }
 
 ; 39 occurrences:
@@ -2012,10 +2010,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = and i32 %1, 4
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %1 = and i8 %0, 4
+  %2 = icmp ne i8 %1, 0
+  ret i1 %2
 }
 
 ; 199 occurrences:
@@ -2221,10 +2218,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = and i32 %1, 8
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i8 %0, 8
+  %2 = icmp eq i8 %1, 0
+  ret i1 %2
 }
 
 ; 24 occurrences:
@@ -2255,10 +2251,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 15
-  %3 = icmp ugt i32 %2, 9
-  ret i1 %3
+  %1 = and i8 %0, 14
+  %2 = icmp ugt i8 %1, 9
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -2266,10 +2261,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = and i32 %1, 7
-  %3 = icmp ult i32 %2, 3
-  ret i1 %3
+  %1 = and i8 %0, 7
+  %2 = icmp ult i8 %1, 3
+  ret i1 %2
 }
 
 ; 31 occurrences:
@@ -2307,10 +2301,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 10
-  ret i1 %3
+  %1 = and i8 %0, 14
+  %2 = icmp ult i8 %1, 10
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -2318,10 +2311,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i16 %0) #0 {
 entry:
-  %1 = zext nneg i16 %0 to i32
-  %2 = and i32 %1, 31
-  %3 = icmp ugt i32 %2, 1
-  ret i1 %3
+  %1 = and i16 %0, 30
+  %2 = icmp ne i16 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

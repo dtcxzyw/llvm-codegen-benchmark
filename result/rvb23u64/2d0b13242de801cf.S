@@ -11,10 +11,9 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a1, 64
 	ret
 func000000000000001f:                   # @func000000000000001f
-	li	a1, 64
+	li	a1, 127
 	subw	a1, a1, a0
-	zext.w	a1, a1
-	addi	a0, a1, 63
+	zext.w	a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	li	a1, 64

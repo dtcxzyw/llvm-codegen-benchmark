@@ -110,11 +110,11 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000003c:                   # @func000000000000003c
 	andi	a0, a0, 255
-	bnez	a0, .LBB13_2
-	addi	a0, a2, 8
+	beqz	a0, .LBB13_2
+	addi	a0, a1, 216
 	ret
 .LBB13_2:
-	addi	a0, a1, 216
+	addi	a0, a2, 8
 	ret
 func0000000000000016:                   # @func0000000000000016
 	blez	a0, .LBB14_2

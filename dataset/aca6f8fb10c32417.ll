@@ -6,8 +6,8 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = add i64 %2, 1
-  %4 = shl nuw nsw i64 %3, 15
+  %3 = shl i64 %2, 15
+  %4 = add i64 %3, 32768
   ret i64 %4
 }
 
@@ -18,8 +18,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = add i64 %2, -4
-  %4 = shl nsw i64 %3, 29
+  %3 = shl i64 %2, 29
+  %4 = add i64 %3, -2147483648
   ret i64 %4
 }
 
@@ -29,8 +29,8 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = add nsw i64 %2, -4
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, -32
   ret i64 %4
 }
 
@@ -47,8 +47,8 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = add nsw i64 %2, 1
-  %4 = shl nsw i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, 4
   ret i64 %4
 }
 
@@ -63,8 +63,8 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = add nsw i32 %2, 1
-  %4 = shl i32 %3, 16
+  %3 = shl i32 %2, 16
+  %4 = add i32 %3, 65536
   ret i32 %4
 }
 
@@ -77,8 +77,8 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = sub i8 %0, %1
-  %3 = add i8 %2, 8
-  %4 = shl nuw i8 %3, 4
+  %3 = shl i8 %2, 4
+  %4 = xor i8 %3, -128
   ret i8 %4
 }
 
@@ -109,8 +109,8 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = sub i8 %0, %1
-  %3 = add i8 %2, 2
-  %4 = shl i8 %3, 4
+  %3 = shl i8 %2, 4
+  %4 = add i8 %3, 32
   ret i8 %4
 }
 
@@ -126,8 +126,8 @@ entry:
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = sub i8 %0, %1
-  %3 = add nsw i8 %2, 2
-  %4 = shl i8 %3, 2
+  %3 = shl i8 %2, 2
+  %4 = add i8 %3, 8
   ret i8 %4
 }
 
@@ -137,8 +137,8 @@ entry:
 define i64 @func0000000000000037(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %0, %1
-  %3 = add nsw i64 %2, -3
-  %4 = shl nuw nsw i64 %3, 2
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, -12
   ret i64 %4
 }
 
@@ -150,8 +150,8 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = add nsw i32 %2, 1
-  %4 = shl nuw nsw i32 %3, 1
+  %3 = shl i32 %2, 1
+  %4 = add i32 %3, 2
   ret i32 %4
 }
 
@@ -161,8 +161,8 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = add nsw i64 %2, 2
-  %4 = shl nuw i64 %3, 4
+  %3 = shl i64 %2, 4
+  %4 = add i64 %3, 32
   ret i64 %4
 }
 
@@ -172,8 +172,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = add nsw i64 %2, -1
+  %2 = xor i64 %1, -1
+  %3 = add i64 %2, %0
   %4 = shl nsw i64 %3, 2
   ret i64 %4
 }
@@ -185,8 +185,8 @@ entry:
 define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = add i32 %2, 1
-  %4 = shl nuw i32 %3, 1
+  %3 = shl i32 %2, 1
+  %4 = add i32 %3, 2
   ret i32 %4
 }
 

@@ -10,7 +10,7 @@ entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
 }

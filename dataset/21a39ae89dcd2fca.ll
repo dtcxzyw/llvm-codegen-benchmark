@@ -24,7 +24,7 @@ entry:
   %4 = and i32 %3, 65535
   %5 = add nsw i32 %1, 3
   %6 = add nsw i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = and i64 %3, -4
   %5 = add nsw i64 %1, 556
   %6 = add i64 %5, %4
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -90,7 +90,7 @@ entry:
   %4 = and i32 %3, -8
   %5 = add nsw i32 %1, 80
   %6 = add nsw i32 %4, %5
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

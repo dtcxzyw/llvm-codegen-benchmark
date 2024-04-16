@@ -33,7 +33,7 @@ define i32 @func00000000000000d5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul nuw nsw i32 %3, 60
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = mul nsw i32 %5, 75
   %7 = add nsw i32 %6, %0
   ret i32 %7
@@ -48,7 +48,7 @@ entry:
   %4 = mul nuw nsw i32 %3, 60
   %5 = add nuw nsw i32 %4, %1
   %6 = mul nuw nsw i32 %5, 75
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -83,7 +83,7 @@ entry:
   %4 = mul nsw i64 %3, -60
   %5 = add nsw i64 %4, %1
   %6 = mul nsw i64 %5, -60000
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

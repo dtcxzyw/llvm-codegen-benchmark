@@ -294,8 +294,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 4294967295)
+  %1 = call i64 @llvm.umin.i64(i64 %0, i64 4294967294)
+  %2 = add nuw nsw i64 %1, 1
   ret i64 %2
 }
 
@@ -304,8 +304,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = add nuw i64 %0, 8
-  %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 4294967296)
+  %1 = call i64 @llvm.umin.i64(i64 %0, i64 4294967288)
+  %2 = add nuw nsw i64 %1, 8
   ret i64 %2
 }
 
@@ -336,8 +336,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = add nuw nsw i8 %0, 1
-  %2 = tail call noundef i8 @llvm.umin.i8(i8 %1, i8 8)
+  %1 = call i8 @llvm.umin.i8(i8 %0, i8 7)
+  %2 = add nuw nsw i8 %1, 1
   ret i8 %2
 }
 

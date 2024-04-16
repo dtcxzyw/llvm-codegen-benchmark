@@ -99,7 +99,7 @@ entry:
   %2 = lshr i128 %1, 71
   %3 = mul nuw nsw i128 %2, 12379400392853802749
   %4 = lshr i128 %3, 90
-  %5 = trunc i128 %4 to i32
+  %5 = trunc nuw nsw i128 %4 to i32
   ret i32 %5
 }
 
@@ -131,7 +131,7 @@ entry:
   %2 = lshr i128 %1, 64
   %3 = mul nuw nsw i128 %2, 10000000000000000000
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw nsw i128 %4 to i64
   ret i64 %5
 }
 

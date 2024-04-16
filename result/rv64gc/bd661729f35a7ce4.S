@@ -36,7 +36,9 @@ func0000000000000018:                   # @func0000000000000018
 .LBB5_2:                                # %entry
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
@@ -83,7 +85,8 @@ func0000000000000028:                   # @func0000000000000028
 .LBB12_2:                               # %entry
 	ret
 func0000000000000031:                   # @func0000000000000031
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	bnez	a1, .LBB13_2
 	li	a0, 20
 .LBB13_2:                               # %entry
@@ -96,7 +99,7 @@ func0000000000000026:                   # @func0000000000000026
 .LBB14_2:                               # %entry
 	ret
 func0000000000000021:                   # @func0000000000000021
-	add	a1, a1, a2
+	or	a1, a1, a2
 	bnez	a1, .LBB15_2
 	li	a0, 28
 .LBB15_2:                               # %entry

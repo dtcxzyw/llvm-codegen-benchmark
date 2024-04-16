@@ -18,10 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func000000000000001f(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 2251799813685247
-  %2 = sub nuw nsw i64 4503599627370494, %1
-  %3 = zext nneg i64 %2 to i128
-  %4 = shl nuw nsw i128 %3, 1
+  %1 = shl i64 %0, 1
+  %2 = and i64 %1, 4503599627370494
+  %3 = sub nuw nsw i64 9007199254740988, %2
+  %4 = zext nneg i64 %3 to i128
   ret i128 %4
 }
 

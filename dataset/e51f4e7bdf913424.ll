@@ -25,7 +25,7 @@ entry:
   %3 = select i1 %2, i32 22, i32 21
   %4 = zext i1 %2 to i32
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

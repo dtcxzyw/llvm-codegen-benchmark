@@ -7,7 +7,7 @@
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = ashr exact i64 %1, 3
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = ashr exact i64 %1, 4
   %6 = add i64 %4, %5
   ret i64 %6
@@ -34,7 +34,7 @@ entry:
 define i8 @func0000000000000005(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = sdiv i8 %2, 24
-  %4 = add nsw i8 %0, %3
+  %4 = add nsw i8 %3, %0
   %5 = ashr i8 %1, 7
   %6 = add nsw i8 %4, %5
   ret i8 %6

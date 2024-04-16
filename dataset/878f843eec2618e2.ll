@@ -10,7 +10,7 @@ entry:
   %4 = shl i32 %3, 1
   %5 = or disjoint i32 %4, 1
   %6 = sext i32 %5 to i64
-  %7 = icmp sgt i64 %0, %6
+  %7 = icmp slt i64 %6, %0
   ret i1 %7
 }
 

@@ -12,10 +12,9 @@
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 1
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr i16, ptr %0, i64 %5
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 ; 764 occurrences:
@@ -787,10 +786,9 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 1
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr inbounds i16, ptr %0, i64 %5
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -802,8 +800,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 1
-  %5 = add nsw i64 %4, -2
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -2
   ret ptr %6
 }
 
@@ -815,8 +813,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 6
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 

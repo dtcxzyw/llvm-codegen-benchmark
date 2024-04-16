@@ -15,7 +15,7 @@ define i1 @func0000000000000031(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %struct.Gia_Obj_t_.1770652, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = and i64 %5, 1
   %7 = icmp eq i64 %6, 0
   ret i1 %7
@@ -29,7 +29,7 @@ define i1 @func0000000000000021(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = and i64 %5, 3
   %7 = icmp eq i64 %6, 0
   ret i1 %7
@@ -42,7 +42,7 @@ define i1 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = and i64 %5, 7
   %7 = icmp eq i64 %6, 0
   ret i1 %7

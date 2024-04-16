@@ -20,7 +20,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = sdiv exact i64 %3, 24
-  %5 = add nsw i64 %4, -3
+  %5 = add nsw i64 %4, 1
   %6 = and i64 %5, 3
   ret i64 %6
 }

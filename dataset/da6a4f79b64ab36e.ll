@@ -7,7 +7,7 @@ entry:
   %2 = trunc i32 %0 to i8
   %3 = and i8 %1, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   %6 = select i1 %5, i8 %3, i8 %2
   ret i8 %6
 }
@@ -21,7 +21,7 @@ entry:
   %2 = trunc i64 %0 to i32
   %3 = and i32 %1, 2147483647
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   %6 = select i1 %5, i32 %3, i32 %2
   ret i32 %6
 }

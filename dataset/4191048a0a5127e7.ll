@@ -30,7 +30,7 @@ entry:
   %3 = xor i64 %1, %2
   %4 = mul i64 %3, 2147483649
   %5 = uitofp i64 %4 to float
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   %7 = fadd float %6, 1.000000e+00
   ret float %7
 }

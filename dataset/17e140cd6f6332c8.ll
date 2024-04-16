@@ -11,7 +11,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 380141568
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = mul i32 %3, 461845907
   %5 = xor i32 %4, -1756908916
   ret i32 %5

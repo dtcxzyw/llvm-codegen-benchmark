@@ -9,9 +9,9 @@
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 6
-  %4 = and i32 %3, 1
+  %2 = lshr i8 %1, 6
+  %3 = and i8 %2, 1
+  %4 = zext nneg i8 %3 to i32
   ret i32 %4
 }
 

@@ -8,7 +8,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -61,7 +61,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

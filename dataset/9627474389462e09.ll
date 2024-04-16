@@ -13,7 +13,7 @@
 define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, 27
-  %3 = icmp eq i32 %1, %2
+  %3 = icmp eq i32 %2, %1
   %4 = icmp ult i32 %0, 134217728
   %5 = or i1 %4, %3
   ret i1 %5

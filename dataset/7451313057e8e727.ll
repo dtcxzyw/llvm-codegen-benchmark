@@ -8,7 +8,7 @@
 define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sdiv i64 %4, %1
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5

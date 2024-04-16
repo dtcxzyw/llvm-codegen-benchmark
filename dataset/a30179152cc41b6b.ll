@@ -8,9 +8,8 @@ define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp ugt i32 %2, 769
-  %4 = select i1 %3, i64 16, i64 0
-  %5 = or disjoint i64 %4, 33
-  ret i64 %5
+  %4 = select i1 %3, i64 49, i64 33
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -20,9 +19,8 @@ define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = icmp ugt i64 %2, -4294967297
-  %4 = select i1 %3, i32 0, i32 32
-  %5 = or disjoint i32 %4, 16
-  ret i32 %5
+  %4 = select i1 %3, i32 16, i32 48
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@ define i32 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

@@ -31,7 +31,7 @@ entry:
   %2 = shl nuw i16 %1, 8
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %3, 512
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

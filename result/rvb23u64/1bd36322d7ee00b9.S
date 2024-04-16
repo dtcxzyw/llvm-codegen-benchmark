@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -33,12 +33,11 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	sub	a1, a1, a2
-	slti	a1, a1, 0
+	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -49,8 +48,9 @@ func0000000000000030:                   # @func0000000000000030
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	subw	a1, a1, a2
-	sgtz	a1, a1
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
@@ -59,7 +59,9 @@ func0000000000000028:                   # @func0000000000000028
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	subw	a1, a1, a2
+	sext.w	a2, a2
+	sext.w	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

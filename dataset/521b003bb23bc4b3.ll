@@ -103,7 +103,7 @@ entry:
   %2 = lshr i32 %1, 23
   %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -150
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = sub nsw i32 40, %5
   ret i32 %6
 }

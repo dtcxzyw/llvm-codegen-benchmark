@@ -100,8 +100,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i32 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 65535
-  %4 = lshr i32 %3, 8
+  %3 = lshr i32 %2, 8
+  %4 = and i32 %3, 255
   %5 = icmp eq i32 %4, %0
   %6 = icmp ne i8 %1, 0
   %7 = select i1 %5, i1 %6, i1 false

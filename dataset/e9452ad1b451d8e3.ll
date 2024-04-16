@@ -7,7 +7,7 @@ entry:
   %2 = add i32 %1, -120
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i64 20, i64 100
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 

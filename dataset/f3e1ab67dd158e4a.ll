@@ -10,7 +10,7 @@ entry:
   %2 = lshr i128 %1, 32
   %3 = trunc i128 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

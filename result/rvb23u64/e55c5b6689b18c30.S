@@ -16,9 +16,9 @@ func0000000000000039:                   # @func0000000000000039
 	ret
 func000000000000003f:                   # @func000000000000003f
 	srli	a0, a0, 6
-	li	a1, 5
-	maxu	a1, a0, a1
-	not	a0, a0
+	not	a1, a0
+	li	a2, 5
+	maxu	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret

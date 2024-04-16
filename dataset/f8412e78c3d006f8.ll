@@ -17,9 +17,8 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = shl nsw i64 %1, 7
   %5 = add nsw i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = sub nsw i64 0, %6
-  ret i64 %7
+  %.neg = sub i64 %5, %0
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

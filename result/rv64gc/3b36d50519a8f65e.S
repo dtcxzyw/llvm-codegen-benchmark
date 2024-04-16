@@ -24,7 +24,8 @@ func0000000000000034:                   # @func0000000000000034
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
@@ -64,7 +65,8 @@ func0000000000000014:                   # @func0000000000000014
 	and	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	addw	a1, a1, a2
+	or	a1, a1, a2
+	sext.w	a1, a1
 	beqz	a1, .LBB10_2
 	li	a0, 100
 .LBB10_2:                               # %entry
@@ -77,7 +79,9 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addw	a1, a1, a2
+	sext.w	a1, a1
+	negw	a2, a2
+	xor	a1, a1, a2
 	snez	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1

@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nuw nsw i32 %1, 12211
-  %3 = mul nuw nsw i32 %0, 40014
-  %4 = sub nsw i32 %3, %2
-  ret i32 %4
+  %.neg = mul i32 %1, -12211
+  %2 = mul nuw nsw i32 %0, 40014
+  %3 = add i32 %.neg, %2
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -15,10 +15,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nuw nsw i32 %1, 80
-  %3 = mul i32 %0, -160
-  %4 = sub i32 %3, %2
-  ret i32 %4
+  %.neg = mul i32 %1, -80
+  %2 = mul i32 %0, -160
+  %3 = add i32 %.neg, %2
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -28,10 +28,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 20
-  %3 = mul i32 %0, 20
-  %4 = sub i32 %3, %2
-  ret i32 %4
+  %.neg = mul i32 %1, -20
+  %2 = mul i32 %0, 20
+  %3 = add i32 %.neg, %2
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -41,10 +41,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nsw i64 %1, 40
-  %3 = mul nsw i64 %0, 40
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %.neg = mul i64 %1, -40
+  %2 = mul nsw i64 %0, 40
+  %3 = add i64 %.neg, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

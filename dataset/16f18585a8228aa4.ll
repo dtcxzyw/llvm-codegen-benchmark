@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1000000000
   %4 = udiv i32 %3, 1000000000
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -15
   %4 = udiv i32 %3, 255
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   ret i32 %5
 }
 

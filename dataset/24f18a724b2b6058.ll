@@ -1,5 +1,4 @@
 
-%"struct.re2::Splice.1554359" = type { ptr, ptr, i32, i32 }
 %"class.std::vector.112.1747357" = type { %"struct.std::_Vector_base.113.1747358" }
 %"struct.std::_Vector_base.113.1747358" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.1747359" }
 %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.1747359" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.1747360" }
@@ -1709,10 +1708,9 @@ define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 24
-  %6 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %6 = getelementptr inbounds i8, ptr %5, i64 8
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -1766,9 +1764,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv i64 %4, 48
-  %6 = getelementptr %struct.CommentItem.2120988, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.CommentItem.2120988, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -1779,9 +1776,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 12
-  %6 = getelementptr %struct.QueryRepresentationOperand.2122387, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct.QueryRepresentationOperand.2122387, ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:

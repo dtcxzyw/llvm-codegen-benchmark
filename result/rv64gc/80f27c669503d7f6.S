@@ -56,31 +56,31 @@ func000000000000001d:                   # @func000000000000001d
 	sub	a0, a0, a2
 	ret
 func000000000000001e:                   # @func000000000000001e
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	sltu	a5, a0, a4
+	add	a2, a2, a4
+	sltu	a4, a2, a4
+	sltu	a5, a0, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
+	sub	a1, a1, a4
 	sub	a1, a1, a5
-	sub	a0, a0, a4
+	sub	a0, a0, a2
 	ret
 func000000000000001f:                   # @func000000000000001f
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	sltu	a5, a0, a4
+	add	a2, a2, a4
+	sltu	a4, a2, a4
+	sltu	a5, a0, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
+	sub	a1, a1, a4
 	sub	a1, a1, a5
-	sub	a0, a0, a4
+	sub	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	sltu	a5, a0, a4
+	add	a2, a2, a4
+	sltu	a4, a2, a4
+	sltu	a5, a0, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
+	sub	a1, a1, a4
 	sub	a1, a1, a5
-	sub	a0, a0, a4
+	sub	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 255

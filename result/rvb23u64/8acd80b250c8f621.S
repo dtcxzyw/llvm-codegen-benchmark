@@ -6,10 +6,10 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
+	sext.w	a0, a0
 	lui	a2, 4
 	and	a1, a1, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
 	snez	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c

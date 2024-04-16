@@ -9,7 +9,7 @@ entry:
   %3 = getelementptr inbounds ptr, ptr %2, i64 %1
   %4 = getelementptr inbounds ptr, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -8
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = getelementptr inbounds ptr, ptr %2, i64 %1
   %4 = getelementptr inbounds ptr, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -8
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 %1
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -7
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 %1
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -2
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -2
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -83,7 +83,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -2
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

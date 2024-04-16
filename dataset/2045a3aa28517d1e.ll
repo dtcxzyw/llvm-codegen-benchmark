@@ -73,7 +73,7 @@ define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = and i64 %3, 1073741823
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = shl nuw i64 %1, 32
   %7 = or disjoint i64 %5, %6
   ret i64 %7

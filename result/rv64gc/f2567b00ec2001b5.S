@@ -13,22 +13,22 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a5, a2, 32
 	srli	a5, a5, 32
 	addi	a4, a5, -64
-	add	a3, a3, a0
+	add	a0, a0, a3
 	bltz	a4, .LBB2_2
-	sll	a1, a3, a5
-	sll	a0, a3, a2
+	sll	a1, a0, a5
+	sll	a0, a0, a2
 	srai	a4, a4, 63
 	and	a0, a0, a4
 	ret
 .LBB2_2:
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	srli	a1, a3, 1
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	srli	a3, a0, 1
 	not	a5, a5
-	srl	a1, a1, a5
+	srl	a3, a3, a5
+	sll	a1, a1, a2
+	or	a1, a1, a3
 	sll	a0, a0, a2
-	or	a1, a1, a0
-	sll	a0, a3, a2
 	srai	a4, a4, 63
 	and	a0, a0, a4
 	ret

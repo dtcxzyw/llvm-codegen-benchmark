@@ -13,10 +13,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 6
-  %3 = sub i64 %2, %0
-  %4 = and i64 %3, 63
-  ret i64 %4
+  %2 = sub i64 0, %0
+  %3 = and i64 %2, 63
+  ret i64 %3
 }
 
 ; 156 occurrences:
@@ -238,10 +237,9 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl nuw i128 %1, 64
-  %3 = sub i128 %2, %0
-  %4 = and i128 %3, 18446744073709551615
-  ret i128 %4
+  %2 = sub i128 0, %0
+  %3 = and i128 %2, 18446744073709551615
+  ret i128 %3
 }
 
 ; 6 occurrences:
@@ -254,10 +252,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = sub nsw i32 %2, %0
-  %4 = and i32 %3, 3
-  ret i32 %4
+  %2 = sub i32 0, %0
+  %3 = and i32 %2, 3
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

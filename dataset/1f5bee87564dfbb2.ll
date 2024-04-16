@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 1
-  %2 = trunc i32 %1 to i16
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 1
   %3 = sitofp i16 %2 to float
   ret float %3
 }
@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 16
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 16
   %3 = sitofp i32 %2 to float
   ret float %3
 }
@@ -66,8 +66,8 @@ entry:
 ; Function Attrs: nounwind
 define float @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 1
   %3 = sitofp i32 %2 to float
   ret float %3
 }

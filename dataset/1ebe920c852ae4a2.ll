@@ -14,7 +14,7 @@
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = tail call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !0
   ret i64 %4
 }

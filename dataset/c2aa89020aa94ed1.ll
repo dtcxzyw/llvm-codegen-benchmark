@@ -6,9 +6,9 @@ define i16 @func000000000000000c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = or i16 %2, 256
-  %4 = icmp ne i16 %0, 0
-  %5 = select i1 %4, i16 %2, i16 %3
-  ret i16 %5
+  %.not = icmp eq i16 %0, 0
+  %4 = select i1 %.not, i16 %3, i16 %2
+  ret i16 %4
 }
 
 ; 2 occurrences:

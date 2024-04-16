@@ -7,10 +7,10 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	sext.w	a2, a2
-	li	a3, 3
-	czero.nez	a3, a3, a2
 	czero.eqz	a0, a0, a2
-	or	a0, a0, a3
+	li	a3, 3
+	czero.nez	a2, a3, a2
+	or	a0, a0, a2
 	slli	a1, a1, 4
 	addw	a0, a0, a1
 	ret

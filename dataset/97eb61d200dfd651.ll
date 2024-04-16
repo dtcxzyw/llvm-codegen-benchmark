@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000034(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 8)
-  %2 = icmp sgt i64 %1, -1
-  %3 = zext i1 %2 to i64
-  %4 = inttoptr i64 %3 to ptr
-  ret ptr %4
+  %1 = icmp sgt i64 %0, -1
+  %2 = zext i1 %1 to i64
+  %3 = inttoptr i64 %2 to ptr
+  ret ptr %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

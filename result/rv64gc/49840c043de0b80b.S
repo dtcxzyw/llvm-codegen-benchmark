@@ -15,16 +15,15 @@ func000000000000003e:                   # @func000000000000003e
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 255
-	slli	a0, a0, 3
-	addi	a0, a0, -5
-	slli	a0, a0, 48
+	addi	a0, a0, -1
+	slli	a0, a0, 51
 	srli	a0, a0, 51
 	ret
 func000000000000001b:                   # @func000000000000001b
 	andi	a0, a0, 255
-	slli	a0, a0, 2
-	addi	a0, a0, -4
-	srliw	a0, a0, 2
+	addi	a0, a0, -1
+	slli	a0, a0, 34
+	srli	a0, a0, 34
 	ret
 func000000000000001f:                   # @func000000000000001f
 	andi	a0, a0, 255

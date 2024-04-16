@@ -68,7 +68,9 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addw	a0, a0, a1
+	sext.w	a0, a0
+	negw	a1, a1
+	xor	a0, a0, a1
 	li	a1, 11
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 32

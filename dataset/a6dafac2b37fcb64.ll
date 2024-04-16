@@ -2018,7 +2018,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 384307168202282325)
   ret i64 %6
 }
@@ -2414,7 +2414,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 164703072086692425)
   ret i64 %6
 }
@@ -2456,7 +2456,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 115292150460684697)
   ret i64 %6
 }

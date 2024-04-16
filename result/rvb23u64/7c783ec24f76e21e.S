@@ -19,25 +19,26 @@ func00000000000000a0:                   # @func00000000000000a0
 	add	a0, a0, a2
 	ret
 func0000000000000055:                   # @func0000000000000055
-	li	a4, -1
-	bclri	a7, a4, 32
-	mulhsu	a6, a7, a5
 	slli	a4, a5, 32
-	add	a4, a4, a5
+	add	a6, a4, a5
+	li	a4, -1
+	bclri	a4, a4, 32
+	mulhsu	a7, a4, a5
 	slli	a5, a3, 32
 	add	a3, a3, a5
-	mulhu	a5, a2, a7
+	mulhu	a4, a2, a4
 	add	a3, a3, a2
-	sub	a5, a5, a3
+	sub	a4, a4, a3
 	slli	a3, a2, 32
+	add	a2, a2, a3
+	neg	a3, a2
 	sub	a2, a0, a2
-	sub	a2, a2, a3
-	sltu	a0, a2, a0
-	add	a0, a0, a1
-	add	a1, a0, a5
-	sub	a0, a2, a4
+	sltu	a0, a2, a3
+	add	a1, a1, a4
+	add	a0, a0, a7
+	add	a1, a1, a0
+	sub	a0, a2, a6
 	sltu	a2, a0, a2
-	add	a2, a2, a6
 	add	a1, a1, a2
 	ret
 func00000000000000ff:                   # @func00000000000000ff

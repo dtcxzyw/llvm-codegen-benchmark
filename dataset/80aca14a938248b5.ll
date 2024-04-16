@@ -19,7 +19,7 @@ entry:
   %3 = select i1 %2, i32 4096, i32 8192
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, i32 %3, i32 2048
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

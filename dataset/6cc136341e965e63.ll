@@ -1538,9 +1538,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.UnsetAddr.1553316, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.UnsetAddr.1553316, ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 1305 occurrences:
@@ -3439,9 +3438,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.pm_constant_t.1553412, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.pm_constant_t.1553412, ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 1617 occurrences:

@@ -69,7 +69,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = mul nuw nsw i32 %1, 10
   %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

@@ -36,7 +36,7 @@ entry:
   %4 = tail call i64 @llvm.smax.i64(i64 %2, i64 0)
   %5 = icmp slt i64 %4, %1
   %6 = select i1 %5, i64 %4, i64 %3
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

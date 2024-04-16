@@ -7,10 +7,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 15
+  %2 = and i8 %1, 15
+  %3 = zext nneg i8 %2 to i32
   %4 = add nsw i32 %0, -40
-  %5 = add nsw i32 %3, %4
+  %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 
@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 15
+  %2 = and i8 %1, 15
+  %3 = zext nneg i8 %2 to i32
   %4 = add nuw nsw i32 %0, 1
   %5 = add nuw nsw i32 %4, %3
   ret i32 %5
@@ -39,8 +39,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 252
+  %2 = and i8 %1, -4
+  %3 = zext i8 %2 to i32
   %4 = add i32 %0, 8
   %5 = add i32 %4, %3
   ret i32 %5

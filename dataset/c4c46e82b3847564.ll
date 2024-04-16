@@ -109,11 +109,10 @@
 ; Function Attrs: nounwind
 define { i64, i1 } @func0000000000000010(i64 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
-  %5 = trunc i128 %4 to i64
-  %6 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %5)
-  ret { i64, i1 } %6
+  %3 = trunc i128 %1 to i64
+  %4 = mul i64 %3, %2
+  %5 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %4)
+  ret { i64, i1 } %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

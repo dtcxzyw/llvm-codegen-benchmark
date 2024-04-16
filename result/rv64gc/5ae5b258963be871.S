@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 39
 	li	a1, 3
 	bnez	a2, .LBB1_2
-	li	a1, -9
+	li	a1, 247
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
 	ret

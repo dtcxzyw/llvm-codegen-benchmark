@@ -12,5 +12,5 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB1_2
 	fneg.s	fa1, fa1
 .LBB1_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret

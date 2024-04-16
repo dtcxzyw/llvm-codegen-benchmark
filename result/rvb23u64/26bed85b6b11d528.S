@@ -20,8 +20,9 @@ func0000000000000f11:                   # @func0000000000000f11
 	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a3, -100
-	mul	a2, a2, a3
-	addw	a1, a1, a2
+	mulw	a2, a2, a3
+	negw	a1, a1
+	xor	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

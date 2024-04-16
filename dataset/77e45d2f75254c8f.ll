@@ -8,7 +8,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = add nuw i32 %1, 1
   %6 = icmp ult i32 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = zext nneg i16 %3 to i32
   %5 = add nuw nsw i32 %1, 32
   %6 = icmp ugt i32 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = zext nneg i8 %3 to i64
   %5 = add i64 %1, 1
   %6 = icmp ugt i64 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

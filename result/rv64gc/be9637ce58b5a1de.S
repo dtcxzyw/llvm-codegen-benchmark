@@ -53,20 +53,20 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, -1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
 func0000000000000037:                   # @func0000000000000037
 	addi	a2, a2, 1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
 func0000000000000017:                   # @func0000000000000017
 	addi	a2, a2, -1
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 16
@@ -97,7 +97,7 @@ func0000000000000033:                   # @func0000000000000033
 	ret
 func000000000000003f:                   # @func000000000000003f
 	addi	a2, a2, 8
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

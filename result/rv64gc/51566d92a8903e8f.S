@@ -23,7 +23,7 @@ func0000000000000011:                   # @func0000000000000011
 	sub	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a1, a1, 127
+	andi	a1, a1, 126
 	sltiu	a1, a1, 70
 	negw	a1, a1
 	andi	a1, a1, 100
@@ -49,15 +49,13 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a1, a1, 55
-	srli	a1, a1, 63
-	negw	a1, a1
+	srai	a1, a1, 63
 	andi	a1, a1, -6
 	addw	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a1, a1, 15
-	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	andi	a1, a1, 12
+	snez	a1, a1
 	slli	a1, a1, 16
 	addw	a0, a0, a1
 	ret

@@ -7,7 +7,7 @@
 define i64 @func000000000000007f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = add nuw nsw i64 %0, 2
   %6 = add nuw nsw i64 %5, %4
   %7 = add nuw nsw i64 %6, 3
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = add i64 %1, 4
   %6 = add i64 %4, %5
   %7 = add i64 %6, 8
@@ -33,7 +33,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = add nsw i64 %1, 1
   %6 = add i64 %4, %5
   %7 = add i64 %6, -24
@@ -46,7 +46,7 @@ entry:
 define i64 @func0000000000000042(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = add i64 %0, 2
   %6 = add i64 %5, %4
   %7 = add nuw i64 %6, 1

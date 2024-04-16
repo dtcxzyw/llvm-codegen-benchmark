@@ -57,9 +57,9 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %0, %3
-  %5 = and i32 %4, -5
-  ret i32 %5
+  %.masked = and i32 %0, -5
+  %4 = or i32 %3, %.masked
+  ret i32 %4
 }
 
 ; 7 occurrences:
@@ -74,10 +74,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 9
-  %3 = and i32 %2, 128
-  %4 = or i32 %3, %0
-  %5 = and i32 %4, 128
-  ret i32 %5
+  %3 = or i32 %2, %0
+  %4 = and i32 %3, 128
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

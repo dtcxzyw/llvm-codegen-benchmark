@@ -258,7 +258,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 63
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

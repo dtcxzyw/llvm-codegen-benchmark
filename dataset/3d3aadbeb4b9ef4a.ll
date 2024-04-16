@@ -31,7 +31,7 @@
 define float @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = bitcast i32 %3 to float
   ret float %4
 }

@@ -14,10 +14,9 @@
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
-  %4 = and i64 %3, 1152921504606846972
-  %5 = icmp eq i64 %3, %4
-  ret i1 %5
+  %3 = and i64 %2, -4611686018427387892
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

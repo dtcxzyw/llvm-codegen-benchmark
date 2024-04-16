@@ -11,7 +11,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 26, i32 27
   %6 = shl i32 %1, %5
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 26, i32 27
   %6 = shl i32 %1, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

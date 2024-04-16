@@ -99,7 +99,7 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -126,7 +126,7 @@ entry:
   %2 = sub nuw nsw i32 48, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 8, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -520,9 +520,9 @@ entry:
 define i1 @func00000000000000ac(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 64, %1
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -535,7 +535,7 @@ entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -609,9 +609,9 @@ entry:
 define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 64, %1
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

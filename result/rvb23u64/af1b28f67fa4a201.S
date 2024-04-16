@@ -6,9 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	addiw	a0, a0, 9
 	ret
 func0000000000000005:                   # @func0000000000000005
-	slli	a1, a1, 56
-	srli	a1, a1, 60
-	addi	a1, a1, -9
+	andi	a1, a1, 240
+	addi	a1, a1, -144
 	seqz	a1, a1
 	xori	a1, a1, 9
 	addw	a0, a0, a1

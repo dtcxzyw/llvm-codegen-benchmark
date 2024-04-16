@@ -12,7 +12,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = and i32 %3, -4161
   %5 = icmp eq i32 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

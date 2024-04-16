@@ -11,7 +11,7 @@ entry:
   %4 = ashr exact i64 %3, 32
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %1)
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

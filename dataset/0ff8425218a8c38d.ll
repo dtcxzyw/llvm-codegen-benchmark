@@ -37,8 +37,8 @@
 define i64 @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !0
-  %3 = zext nneg i16 %2 to i64
-  %4 = lshr i64 %3, 1
+  %3 = lshr i16 %2, 1
+  %4 = zext nneg i16 %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = or i64 %4, %5
   ret i64 %6

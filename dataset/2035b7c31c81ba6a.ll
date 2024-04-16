@@ -11,7 +11,7 @@ entry:
   %2 = trunc i48 %1 to i16
   %3 = sitofp i16 %2 to float
   %4 = fadd float %3, -5.000000e-01
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

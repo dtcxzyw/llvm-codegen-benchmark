@@ -12,8 +12,8 @@ entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 2139095040
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 -149, i32 %0
-  %6 = add nsw i32 %5, -1
+  %5 = add nsw i32 %0, -1
+  %6 = select i1 %4, i32 -150, i32 %5
   ret i32 %6
 }
 

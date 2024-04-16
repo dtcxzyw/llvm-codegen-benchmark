@@ -121,10 +121,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 1
-  %2 = add nsw i64 %1, -2
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %.mask = and i64 %0, -2
+  %1 = icmp eq i64 %.mask, 4
+  ret i1 %1
 }
 
 ; 15 occurrences:
@@ -146,10 +145,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000054(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = add nsw i64 %1, -2
-  %3 = icmp ult i64 %2, 2
-  ret i1 %3
+  %1 = and i64 %0, -16
+  %2 = icmp eq i64 %1, 16
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -162,8 +160,8 @@ entry:
 define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 3
-  %2 = add nsw i32 %1, -31
-  %3 = icmp ugt i32 %2, 255
+  %2 = add nsw i32 %1, -287
+  %3 = icmp ult i32 %2, -256
   ret i1 %3
 }
 
@@ -191,10 +189,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 20
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp eq i32 %2, 4095
-  ret i1 %3
+  %.mask = and i32 %0, -1048576
+  %1 = icmp eq i32 %.mask, -2097152
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -203,10 +200,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 24
-  %2 = add nsw i32 %1, -1
-  %3 = icmp ne i32 %2, 0
-  ret i1 %3
+  %.mask = and i32 %0, -16777216
+  %1 = icmp ne i32 %.mask, 16777216
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -215,10 +211,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %1 = icmp eq i64 %0, 8
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -226,10 +220,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 6
-  %2 = add nuw nsw i64 %1, 1
-  %3 = icmp eq i64 %2, 3
-  ret i1 %3
+  %1 = icmp eq i64 %0, 128
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -238,8 +230,8 @@ entry:
 define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
-  %2 = add nsw i64 %1, -1
-  %3 = icmp ugt i64 %2, 2
+  %2 = add nsw i64 %1, -4
+  %3 = icmp ult i64 %2, -3
   ret i1 %3
 }
 

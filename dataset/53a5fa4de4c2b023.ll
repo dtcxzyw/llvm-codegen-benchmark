@@ -49,12 +49,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
-  %2 = trunc i128 %1 to i64
-  %3 = and i64 %2, 72057594037927935
-  %4 = trunc i128 %0 to i64
-  %5 = and i64 %4, 72057594037927935
-  %6 = or i64 %5, %3
-  ret i64 %6
+  %2 = or i128 %0, %1
+  %3 = trunc i128 %2 to i64
+  %4 = and i64 %3, 72057594037927935
+  ret i64 %4
 }
 
 ; 1 occurrences:

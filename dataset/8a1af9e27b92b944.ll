@@ -10,10 +10,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(ptr %0) #0 {
 entry:
-  %1 = icmp ne ptr %0, null
-  %2 = xor i1 %1, true
-  %3 = zext i1 %2 to i32
-  ret i32 %3
+  %.not = icmp eq ptr %0, null
+  %1 = zext i1 %.not to i32
+  ret i32 %1
 }
 
 ; 20 occurrences:
@@ -40,10 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(ptr %0) #0 {
 entry:
-  %1 = icmp eq ptr %0, null
-  %2 = xor i1 %1, true
-  %3 = zext i1 %2 to i32
-  ret i32 %3
+  %1 = icmp ne ptr %0, null
+  %2 = zext i1 %1 to i32
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

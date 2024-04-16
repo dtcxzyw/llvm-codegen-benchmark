@@ -222,7 +222,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -394,7 +394,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -404,8 +404,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = icmp ult i64 %2, 2147483648
+  %2 = and i64 %1, 2147483648
+  %3 = icmp eq i64 %2, 0
   %4 = xor i1 %3, %0
   ret i1 %4
 }

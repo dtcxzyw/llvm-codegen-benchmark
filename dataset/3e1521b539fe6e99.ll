@@ -5,8 +5,8 @@
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.umin.i64(i64 %0, i64 50)
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
+  %2 = or i64 %1, 1
+  %3 = add nsw i64 %2, -2
   ret i64 %3
 }
 

@@ -13,8 +13,7 @@ func0000000000000035:                   # @func0000000000000035
 	addiw	a0, a0, 16
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	a1, a0, 32
-	andi	a1, a1, -8
-	subw	a1, a1, a0
-	addiw	a0, a1, -40
+	andi	a0, a0, 7
+	li	a1, -8
+	sub	a0, a1, a0
 	ret

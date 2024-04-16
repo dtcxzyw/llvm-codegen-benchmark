@@ -39,7 +39,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = mul i32 %3, 1025
   %5 = lshr i32 %4, 6
   %6 = xor i32 %5, %4

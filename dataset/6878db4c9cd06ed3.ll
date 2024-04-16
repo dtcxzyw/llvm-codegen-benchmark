@@ -33,7 +33,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = sub i128 %1, %3
   %5 = lshr i128 %4, 64
-  %6 = add i128 %0, %5
+  %6 = add i128 %5, %0
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }
@@ -46,7 +46,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = sub nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 64
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }

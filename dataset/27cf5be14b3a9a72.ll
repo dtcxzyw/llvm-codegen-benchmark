@@ -8,10 +8,10 @@
 ; Function Attrs: nounwind
 define i8 @func00000000000000d2(i8 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = icmp ult i8 %0, 4
-  %4 = select i1 %3, i64 %2, i64 0
-  %5 = trunc nuw i64 %4 to i8
+  %2 = icmp ult i8 %0, 4
+  %3 = trunc i64 %1 to i8
+  %4 = add i8 %3, 1
+  %5 = select i1 %2, i8 %4, i8 0
   ret i8 %5
 }
 
@@ -20,10 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000000c4(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 7
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i32 %2, i32 15
-  %5 = trunc i32 %4 to i8
+  %2 = icmp eq i32 %0, 0
+  %3 = trunc i32 %1 to i8
+  %4 = add i8 %3, 7
+  %5 = select i1 %2, i8 %4, i8 15
   ret i8 %5
 }
 
@@ -33,10 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000044(i8 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -4
-  %3 = icmp eq i8 %0, 16
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = trunc i32 %4 to i8
+  %2 = icmp eq i8 %0, 16
+  %3 = trunc i32 %1 to i8
+  %4 = add i8 %3, -4
+  %5 = select i1 %2, i8 %4, i8 0
   ret i8 %5
 }
 
@@ -50,10 +50,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000000d0(i8 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = icmp ult i8 %0, 4
-  %4 = select i1 %3, i64 %2, i64 0
-  %5 = trunc i64 %4 to i8
+  %2 = icmp ult i8 %0, 4
+  %3 = trunc i64 %1 to i8
+  %4 = add i8 %3, 1
+  %5 = select i1 %2, i8 %4, i8 0
   ret i8 %5
 }
 
@@ -63,10 +63,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func00000000000000a0(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw i32 %1, 16
-  %3 = icmp ugt i32 %0, 3
-  %4 = select i1 %3, i32 %2, i32 24
-  %5 = trunc i32 %4 to i16
+  %2 = icmp ugt i32 %0, 3
+  %3 = trunc i32 %1 to i16
+  %4 = add i16 %3, 16
+  %5 = select i1 %2, i16 %4, i16 24
   ret i16 %5
 }
 
@@ -76,10 +76,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func00000000000000e0(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 16
-  %3 = icmp ugt i32 %0, 3
-  %4 = select i1 %3, i32 %2, i32 24
-  %5 = trunc i32 %4 to i16
+  %2 = icmp ugt i32 %0, 3
+  %3 = trunc i32 %1 to i16
+  %4 = add i16 %3, 16
+  %5 = select i1 %2, i16 %4, i16 24
   ret i16 %5
 }
 

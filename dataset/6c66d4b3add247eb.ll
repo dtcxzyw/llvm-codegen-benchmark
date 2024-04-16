@@ -119,8 +119,8 @@ define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 50
   %3 = select i1 %2, i64 10, i64 %1
-  %4 = add i64 %3, %0
-  %5 = icmp eq i64 %4, 0
+  %4 = sub i64 0, %0
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -131,7 +131,7 @@ define i1 @func0000000000000201(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %0, 102
   %3 = select i1 %2, i8 7, i8 %1
-  %4 = add i8 %0, %3
+  %4 = add i8 %3, %0
   %5 = icmp eq i8 %4, 125
   ret i1 %5
 }

@@ -9,7 +9,7 @@ entry:
   %3 = mul nsw i32 %2, 7
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = mul nsw i32 %2, 7
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

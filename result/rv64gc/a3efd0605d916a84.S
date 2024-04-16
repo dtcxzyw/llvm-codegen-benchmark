@@ -1,7 +1,9 @@
 func00000000000000e8:                   # @func00000000000000e8
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	addi	a0, a0, -16
+	lui	a1, 16
+	addi	a1, a1, -16
+	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
 func00000000000000a0:                   # @func00000000000000a0

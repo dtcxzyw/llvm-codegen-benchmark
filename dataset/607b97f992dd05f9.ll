@@ -36,11 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = mul nuw i32 %2, 36969
-  %4 = add nuw i32 %3, %0
-  %5 = shl i32 %4, 16
-  ret i32 %5
+  %2 = mul i32 %1, 36969
+  %3 = add i32 %2, %0
+  %4 = shl i32 %3, 16
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -74,7 +73,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = shl nuw nsw i32 %4, 4
   ret i32 %5
 }
@@ -86,7 +85,7 @@ define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = shl nsw i32 %4, 6
   ret i32 %5
 }
@@ -98,7 +97,7 @@ define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = shl nuw nsw i32 %4, 4
   ret i32 %5
 }

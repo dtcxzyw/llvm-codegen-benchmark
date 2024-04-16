@@ -25,11 +25,8 @@ func000000000000006c:                   # @func000000000000006c
 	and	a0, a0, a1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
-	slti	a2, a0, 0
-	xori	a2, a2, 1
-	snez	a0, a0
+	sgtz	a0, a0
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a2, a0, 56

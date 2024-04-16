@@ -10,10 +10,9 @@
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
-  %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %3, true
-  %5 = and i1 %0, %4
-  ret i1 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = and i1 %.not, %0
+  ret i1 %3
 }
 
 ; 20 occurrences:
@@ -40,11 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -4
-  %3 = icmp eq i64 %2, 0
-  %4 = xor i1 %3, true
-  %5 = and i1 %0, %4
-  ret i1 %5
+  %2 = icmp ugt i64 %1, 3
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

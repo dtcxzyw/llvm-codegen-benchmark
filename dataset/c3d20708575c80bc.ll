@@ -40,10 +40,9 @@ define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
-  %4 = add i8 %0, 1
-  %5 = icmp ne i8 %4, 3
-  %6 = select i1 %5, i1 true, i1 %3
-  ret i1 %6
+  %4 = icmp ne i8 %0, 2
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -68,8 +67,8 @@ define i1 @func00000000000000c8(i8 %0, i27 %1) #0 {
 entry:
   %2 = and i27 %1, 1
   %3 = icmp ne i27 %2, 0
-  %4 = add i8 %0, -51
-  %5 = icmp ugt i8 %4, 26
+  %4 = add i8 %0, -78
+  %5 = icmp ult i8 %4, -27
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }
@@ -81,10 +80,9 @@ define i1 @func000000000000018c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 14
   %3 = icmp ugt i8 %2, 5
-  %4 = add nsw i32 %0, -20
-  %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i1 true, i1 %3
-  ret i1 %6
+  %4 = icmp ne i32 %0, 20
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -94,10 +92,9 @@ define i1 @func000000000000011c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2048
   %3 = icmp eq i16 %2, -10240
-  %4 = add nsw i32 %0, -1
-  %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i1 true, i1 %3
-  ret i1 %6
+  %4 = icmp ne i32 %0, 1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -120,8 +117,8 @@ define i1 @func00000000000001c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -3307330977390599
   %3 = icmp ne i64 %2, 0
-  %4 = add nsw i64 %0, -45
-  %5 = icmp ugt i64 %4, 63
+  %4 = add i64 %0, -109
+  %5 = icmp ult i64 %4, -64
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

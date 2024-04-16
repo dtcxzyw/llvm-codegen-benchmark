@@ -9,7 +9,7 @@ entry:
   %3 = uitofp i64 %2 to float
   %4 = fmul float %3, 2.000000e+00
   %5 = fdiv float %1, %4
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

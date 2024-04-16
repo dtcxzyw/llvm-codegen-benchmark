@@ -14,8 +14,8 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
-  %5 = xor i64 %0, %4
+  %4 = or disjoint i64 %3, %1
+  %5 = xor i64 %4, %0
   %6 = tail call i64 @llvm.fshl.i64(i64 %5, i64 %5, i64 49)
   ret i64 %6
 }
@@ -29,8 +29,8 @@ declare i64 @llvm.fshl.i64(i64, i64, i64) #1
 define i32 @func0000000000000003(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = xor i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = xor i32 %4, %0
   %6 = tail call noundef i32 @llvm.fshl.i32(i32 %5, i32 %5, i32 17)
   ret i32 %6
 }
@@ -44,7 +44,7 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %1, %3
+  %4 = or i64 %3, %1
   %5 = xor i64 %4, %0
   %6 = tail call i64 @llvm.fshl.i64(i64 %5, i64 %5, i64 16)
   ret i64 %6

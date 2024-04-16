@@ -22,7 +22,7 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000020:                   # @func0000000000000020
 	zext.h	a2, a2
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	lui	a2, 524304
 	addiw	a2, a2, 3
 	mul	a2, a2, a1

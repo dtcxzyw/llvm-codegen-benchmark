@@ -9,7 +9,7 @@
 define i64 @func0000000000000069(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %0, 1460
-  %4 = add nuw nsw i64 %2, %3
+  %4 = add nuw nsw i64 %3, %2
   %5 = sub nsw i64 %1, %4
   %6 = udiv i64 %5, 1460
   %7 = sub nsw i64 %0, %6
@@ -30,7 +30,7 @@ entry:
 define i32 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %0, 1460
-  %4 = add nuw nsw i32 %2, %3
+  %4 = add nuw nsw i32 %3, %2
   %5 = sub i32 %1, %4
   %6 = udiv i32 %5, 1460
   %7 = sub i32 %0, %6

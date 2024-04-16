@@ -7,7 +7,7 @@ define i1 @func000000000000023c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 5
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = icmp ne i32 %5, 0
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
@@ -20,7 +20,7 @@ define i1 @func0000000000000504(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp ult i64 %5, 6
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
@@ -34,7 +34,7 @@ define i1 @func0000000000000634(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = icmp ult i32 %5, 4
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
@@ -47,7 +47,7 @@ define i1 @func0000000000000616(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = icmp slt i32 %5, 2
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
@@ -61,7 +61,7 @@ define i1 @func000000000000061a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = icmp sgt i32 %5, 0
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
@@ -75,7 +75,7 @@ define i1 @func0000000000000638(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = icmp ugt i32 %5, 3
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
@@ -88,8 +88,8 @@ define i1 @func000000000000060c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
-  %6 = icmp ne i32 %5, 0
+  %5 = sub i32 0, %1
+  %6 = icmp ne i32 %4, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -101,7 +101,7 @@ define i1 @func0000000000000534(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -65
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = icmp ult i64 %5, 8
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7

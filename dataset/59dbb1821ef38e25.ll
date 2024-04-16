@@ -19,7 +19,7 @@
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 11
-  %4 = xor i32 %1, %3
+  %4 = xor i32 %3, %1
   %5 = xor i32 %4, %0
   %6 = lshr i32 %5, 11
   %7 = add i32 %6, %5

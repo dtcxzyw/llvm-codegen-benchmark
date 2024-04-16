@@ -52,7 +52,7 @@ entry:
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 11
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -63,7 +63,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 8
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -108,7 +108,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 30
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }

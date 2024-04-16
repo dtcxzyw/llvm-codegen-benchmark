@@ -23,12 +23,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = lshr i32 %2, 1
+  %2 = lshr i32 %1, 1
+  %3 = and i32 %2, 127
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.mbedtls_ecp_point.1782092, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.mbedtls_ecp_point.1782092, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -36,12 +35,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000d(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 16
-  %3 = lshr exact i32 %2, 4
+  %2 = lshr i32 %1, 4
+  %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.worker_pool.1997374, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.worker_pool.1997374, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -49,8 +47,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 32767
-  %3 = lshr i32 %2, 2
+  %2 = lshr i32 %1, 2
+  %3 = and i32 %2, 8191
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
@@ -63,8 +61,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 448
-  %3 = lshr exact i32 %2, 3
+  %2 = lshr i32 %1, 3
+  %3 = and i32 %2, 56
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 2

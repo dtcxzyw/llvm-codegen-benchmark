@@ -14,7 +14,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = select i1 %3, i32 0, i32 -2000
   ret i32 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 12
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = select i1 %3, i32 0, i32 8
   ret i32 %4
 }
@@ -50,7 +50,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = select i1 %3, i32 1, i32 -1
   ret i32 %4
 }
@@ -62,7 +62,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = select i1 %3, i32 1, i32 -1
   ret i32 %4
 }

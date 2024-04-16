@@ -25,9 +25,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 32
-  %4 = getelementptr inbounds [25 x %"class.std::__cxx11::basic_string.6.1648672"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr inbounds [25 x %"class.std::__cxx11::basic_string.6.1648672"], ptr %3, i64 0, i64 %2, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -37,9 +36,8 @@ define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 1178
-  %4 = getelementptr [2048 x %struct.e1000_shadow_ram.2003130], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 2
-  ret ptr %5
+  %4 = getelementptr [2048 x %struct.e1000_shadow_ram.2003130], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

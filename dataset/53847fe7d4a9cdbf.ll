@@ -199,7 +199,7 @@
 define ptr @func0000000000000004(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = icmp ult i8 %1, %3
+  %4 = icmp ugt i8 %3, %1
   %5 = select i1 %4, ptr %0, ptr null
   ret ptr %5
 }
@@ -211,7 +211,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %1
   %5 = select i1 %4, ptr %0, ptr null
   ret ptr %5
 }

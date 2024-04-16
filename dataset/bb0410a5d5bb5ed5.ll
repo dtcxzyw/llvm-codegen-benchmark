@@ -5,7 +5,7 @@
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = sitofp i64 %3 to double
   ret double %4
 }

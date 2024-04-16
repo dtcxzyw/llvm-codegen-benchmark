@@ -19,10 +19,15 @@ func00000000000000fc:                   # @func00000000000000fc
 func0000000000000040:                   # @func0000000000000040
 	subw	a2, a2, a1
 	add	a0, a0, a2
-	addiw	a0, a0, -40
+	lui	a1, 16
+	addi	a1, a1, -40
+	addw	a0, a0, a1
 	ret
 func0000000000000050:                   # @func0000000000000050
 	sub	a2, a2, a1
 	add	a0, a0, a2
-	addi	a0, a0, -16
+	li	a1, 1
+	slli	a1, a1, 32
+	addi	a1, a1, -16
+	add	a0, a0, a1
 	ret

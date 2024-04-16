@@ -18,7 +18,7 @@ func0000000000000007:                   # @func0000000000000007
 	beqz	a0, .LBB2_2
 	fneg.d	fa1, fa1
 .LBB2_2:                                # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -41,7 +41,7 @@ func0000000000000008:                   # @func0000000000000008
 	beqz	a0, .LBB5_2
 	fneg.d	fa1, fa1
 .LBB5_2:                                # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1

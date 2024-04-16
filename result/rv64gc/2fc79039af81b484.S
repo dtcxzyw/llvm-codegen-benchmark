@@ -37,9 +37,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a1, a1, 16
-	bltu	a1, a0, .LBB5_2
-	mv	a0, a1
-.LBB5_2:                                # %entry
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048

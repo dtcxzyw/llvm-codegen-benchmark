@@ -263,10 +263,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, 1
-  %3 = icmp eq i64 %2, 0
-  %4 = or i1 %0, %3
-  ret i1 %4
+  %2 = icmp eq i64 %1, 1
+  %3 = or i1 %2, %0
+  ret i1 %3
 }
 
 ; 27 occurrences:
@@ -300,10 +299,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, -9223372036854775808
-  %3 = icmp ugt i64 %2, 2
-  %4 = or i1 %3, %0
-  ret i1 %4
+  %2 = icmp sgt i64 %1, -9223372036854775806
+  %3 = or i1 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

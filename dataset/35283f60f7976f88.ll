@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000014(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl nuw i128 %1, 64
-  %3 = or disjoint i128 %2, %0
-  %4 = sub i128 0, %3
-  ret i128 %4
+  %.neg = mul i128 %1, -18446744073709551616
+  %.neg1 = sub i128 %.neg, %0
+  ret i128 %.neg1
 }
 
 ; 5 occurrences:
@@ -40,10 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 4
-  %3 = or disjoint i64 %2, %0
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %.neg = mul i64 %1, -16
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 2 occurrences:
@@ -52,10 +50,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 32
-  %3 = or disjoint i64 %2, %0
-  %4 = sub i64 0, %3
-  ret i64 %4
+  %.neg = mul i64 %1, -4294967296
+  %.neg1 = sub i64 %.neg, %0
+  ret i64 %.neg1
 }
 
 ; 3 occurrences:
@@ -65,10 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 %1, 6
-  %3 = or disjoint i32 %2, %0
-  %4 = sub nsw i32 0, %3
-  ret i32 %4
+  %.neg = mul i32 %1, -64
+  %.neg1 = sub i32 %.neg, %0
+  ret i32 %.neg1
 }
 
 ; 1 occurrences:

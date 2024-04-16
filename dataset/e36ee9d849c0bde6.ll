@@ -7,8 +7,8 @@
 define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, 67108848
+  %3 = and i32 %2, 67108848
+  %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 16
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -23,8 +23,8 @@ entry:
 define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, 67108848
+  %3 = and i32 %2, 67108848
+  %4 = zext nneg i32 %3 to i64
   %5 = add nuw i64 %0, 16
   %6 = icmp eq i64 %5, %4
   ret i1 %6

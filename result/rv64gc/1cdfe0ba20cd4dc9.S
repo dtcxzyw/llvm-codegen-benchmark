@@ -13,9 +13,7 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
-	lui	a1, 1024
-	addiw	a1, a1, -1
-	slli	a1, a1, 12
+	lui	a1, 1048575
 	and	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -23,6 +21,8 @@ func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 63
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addw	a0, a0, a1
-	andi	a0, a0, -8
+	add	a0, a0, a1
+	lui	a1, 16
+	addiw	a1, a1, -8
+	and	a0, a0, a1
 	ret

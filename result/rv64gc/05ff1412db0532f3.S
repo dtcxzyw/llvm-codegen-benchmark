@@ -1,9 +1,9 @@
 func000000000000001f:                   # @func000000000000001f
-	addiw	a1, a1, 1
+	sext.w	a1, a1
 	li	a2, 36
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, 44
 	ret
 func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, -1
@@ -13,11 +13,11 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 24
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addiw	a1, a1, -2
+	sext.w	a1, a1
 	li	a2, 72
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, -136
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a1, a1, -1

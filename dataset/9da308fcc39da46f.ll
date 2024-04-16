@@ -22,12 +22,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000063(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 63
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
-  ret i64 %6
+  %2 = and i32 %1, 63
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
 }
 
 ; 7 occurrences:
@@ -41,12 +40,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 7
-  %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
-  ret i64 %6
+  %2 = and i32 %1, 7
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

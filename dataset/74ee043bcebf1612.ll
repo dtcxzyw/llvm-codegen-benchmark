@@ -33,7 +33,7 @@ define i64 @func0000000000000001(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
   %4 = fptosi double %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -51,7 +51,7 @@ define i32 @func0000000000000000(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fptosi float %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

@@ -1,6 +1,7 @@
 func00000000000000cc:                   # @func00000000000000cc
+	sext.w	a2, a2
 	addw	a0, a0, a1
-	subw	a2, a2, a0
+	xor	a2, a2, a0
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

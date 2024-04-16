@@ -7,7 +7,7 @@ entry:
   %2 = ashr i64 %1, 32
   %3 = add nsw i64 %2, 1
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   ret i128 %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nuw nsw i64 %2, 1
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %0, %4
+  %5 = mul nuw i128 %4, %0
   ret i128 %5
 }
 

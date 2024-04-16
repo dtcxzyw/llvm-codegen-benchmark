@@ -7,12 +7,12 @@ func000000000000007f:                   # @func000000000000007f
 	or	a2, a2, a5
 	srli	a4, a2, 48
 	slli	a5, a3, 16
-	or	a4, a4, a5
-	slli	a5, a2, 16
-	or	a0, a0, a2
-	or	a0, a0, a5
-	or	a1, a1, a3
+	slli	a6, a2, 16
 	or	a1, a1, a4
+	or	a1, a1, a5
+	or	a0, a0, a2
+	or	a0, a6, a0
+	or	a1, a1, a3
 	ret
 func000000000000007e:                   # @func000000000000007e
 	srli	a4, a2, 48
@@ -23,12 +23,12 @@ func000000000000007e:                   # @func000000000000007e
 	or	a2, a2, a5
 	srli	a4, a2, 32
 	slli	a5, a3, 32
-	or	a4, a4, a5
-	slli	a5, a2, 32
-	or	a0, a0, a2
-	or	a0, a0, a5
-	or	a1, a1, a3
+	slli	a6, a2, 32
 	or	a1, a1, a4
+	or	a1, a1, a5
+	or	a0, a0, a2
+	or	a0, a6, a0
+	or	a1, a1, a3
 	ret
 func000000000000006c:                   # @func000000000000006c
 	slli	a2, a1, 8

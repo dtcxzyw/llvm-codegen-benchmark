@@ -12,7 +12,7 @@ entry:
   %3 = mul i64 %2, 6364136223846793005
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 59
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   %7 = tail call noundef i32 @llvm.fshr.i32(i32 %0, i32 %0, i32 %6)
   ret i32 %7
 }

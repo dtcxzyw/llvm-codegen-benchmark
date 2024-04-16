@@ -31,9 +31,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000048:                   # @func0000000000000048
 	andi	a1, a1, 255
 	or	a0, a0, a1
-	addiw	a0, a0, 4
-	sltiu	a0, a0, 8
-	xori	a0, a0, 1
+	addiw	a0, a0, -4
+	sltiu	a0, a0, -8
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
@@ -45,9 +44,11 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000058:                   # @func0000000000000058
 	andi	a1, a1, 255
 	or	a0, a0, a1
-	addiw	a0, a0, -20
-	lui	a1, 64
-	sltu	a0, a1, a0
+	lui	a1, 1048512
+	addi	a2, a1, -21
+	addw	a0, a0, a2
+	addiw	a1, a1, -1
+	sltu	a0, a0, a1
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	andi	a1, a1, 255

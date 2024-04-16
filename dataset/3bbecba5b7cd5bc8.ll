@@ -65,7 +65,7 @@ define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 %0, 23
   %2 = and i32 %1, 268435456
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   ret i32 %3
 }
 

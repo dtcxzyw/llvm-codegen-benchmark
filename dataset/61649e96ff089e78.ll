@@ -11,7 +11,7 @@ entry:
   %3 = icmp ugt i32 %2, 255
   %4 = select i1 %3, i32 8, i32 0
   %5 = lshr i32 %1, 1
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }

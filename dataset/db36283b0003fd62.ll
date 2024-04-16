@@ -21,7 +21,7 @@ define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 9
   %4 = and i64 %3, 18014398509481983
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = add nsw i64 %0, -2
   %7 = sub nsw i64 %6, %5
   ret i64 %7

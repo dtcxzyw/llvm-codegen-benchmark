@@ -25,7 +25,7 @@ entry:
   %3 = add i64 %2, -10
   %4 = add i64 %1, 4
   %5 = icmp ugt i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

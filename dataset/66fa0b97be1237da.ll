@@ -20,7 +20,7 @@ entry:
   %4 = udiv exact i64 %3, 12
   %5 = add nsw i64 %4, -1
   %6 = lshr i64 %5, 1
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = udiv exact i64 %3, 12
   %5 = add nsw i64 %4, -2
   %6 = lshr exact i64 %5, 1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -58,7 +58,7 @@ entry:
   %4 = udiv exact i64 %3, 24
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

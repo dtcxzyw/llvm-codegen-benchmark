@@ -1,16 +1,20 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a0, 1
-	lui	a0, 8192
-	bnez	a2, .LBB0_2
 	lui	a0, 15
 	and	a0, a0, a1
-	lui	a1, 4
-	xor	a0, a0, a1
-	seqz	a0, a0
-	slliw	a0, a0, 31
+	lui	a3, 4
+	lui	a1, 524544
+	bne	a0, a3, .LBB0_3
+	lui	a0, 8448
+	beqz	a2, .LBB0_4
 .LBB0_2:                                # %entry
+	ret
+.LBB0_3:                                # %entry
 	lui	a1, 256
-	or	a0, a0, a1
+	lui	a0, 8448
+	bnez	a2, .LBB0_2
+.LBB0_4:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a0, 1

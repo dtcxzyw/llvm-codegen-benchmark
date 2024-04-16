@@ -7,10 +7,10 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 15
   %3 = and i64 %2, 31
-  %4 = shl nuw nsw i64 1, %3
-  %5 = add nsw i64 %4, -1
-  %6 = and i64 %0, %5
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  %5 = and i64 %4, %0
+  ret i64 %5
 }
 
 ; 5 occurrences:
@@ -26,7 +26,7 @@ entry:
   %3 = and i64 %2, 63
   %4 = shl i64 2, %3
   %5 = add i64 %4, -1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

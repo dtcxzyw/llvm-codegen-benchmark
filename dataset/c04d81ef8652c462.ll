@@ -220,11 +220,13 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = zext nneg i32 %0 to i64
-  %4 = mul nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 4294967295
-  ret i1 %5
+  %umul = call { i32, i1 } @llvm.umul.with.overflow.i32(i32 %0, i32 %1)
+  %2 = extractvalue { i32, i1 } %umul, 1
+  ret i1 %2
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare { i32, i1 } @llvm.umul.with.overflow.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

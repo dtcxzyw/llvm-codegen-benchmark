@@ -11,7 +11,7 @@ entry:
   %4 = sub nuw nsw i32 9, %3
   %5 = shl nuw nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

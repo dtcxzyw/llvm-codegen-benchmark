@@ -10,9 +10,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = tail call i64 @llvm.umin.i64(i64 %0, i64 %4)
-  %6 = ashr i64 %5, 2
-  %7 = icmp sgt i64 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i64 %5, 3
+  ret i1 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

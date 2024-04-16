@@ -126,8 +126,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
-  %2 = add i16 %1, 1
-  %3 = select i1 %0, i16 %2, i16 %1
+  %2 = zext i1 %0 to i16
+  %3 = add i16 %2, %1
   %4 = add i16 %3, 1
   ret i16 %4
 }

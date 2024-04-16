@@ -48,7 +48,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = udiv i64 %3, 1000000000
   ret i64 %4
 }

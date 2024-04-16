@@ -51,8 +51,8 @@ entry:
 define i1 @func0000000000000271(i64 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 16
-  %4 = select i1 %3, i32 %1, i32 4
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 4
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
   ret i1 %7

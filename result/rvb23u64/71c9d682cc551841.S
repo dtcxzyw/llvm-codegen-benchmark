@@ -23,9 +23,8 @@ func000000000000003f:                   # @func000000000000003f
 	sh1add	a2, a2, a5
 	sltu	a4, a2, a4
 	add	a3, a3, a4
+	add	a0, a0, a2
+	sltu	a2, a0, a2
 	add	a1, a1, a3
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a1, a1, a2
 	ret

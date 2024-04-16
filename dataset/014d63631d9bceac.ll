@@ -6,11 +6,11 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 8388607
-  %3 = or disjoint i32 %2, 8388608
-  %4 = select i1 %0, i32 %2, i32 %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = shl nuw nsw i64 %5, 1
+  %2 = shl i32 %1, 1
+  %3 = and i32 %2, 16777214
+  %4 = or disjoint i32 %3, 16777216
+  %5 = select i1 %0, i32 %3, i32 %4
+  %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 

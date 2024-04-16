@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = add nsw i32 %2, -1075
   %5 = select i1 %3, i32 -1074, i32 %4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = add nsw i32 %2, -152
   %5 = select i1 %3, i32 -151, i32 %4
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

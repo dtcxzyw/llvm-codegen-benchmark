@@ -9,7 +9,6 @@ func000000000000003c:                   # @func000000000000003c
 	addi	a0, a0, 8
 	ret
 func000000000000007c:                   # @func000000000000007c
-	sext.w	a0, a0
 	slli	a0, a0, 4
-	addi	a0, a0, 24
+	addiw	a0, a0, 24
 	ret

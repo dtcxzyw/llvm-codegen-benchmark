@@ -6,11 +6,10 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = and i64 %3, 17592186044415
-  %5 = mul nuw nsw i64 %0, 5
-  %6 = add nuw nsw i64 %5, %4
-  %7 = and i64 %6, 17592186044415
-  ret i64 %7
+  %4 = mul nuw nsw i64 %0, 5
+  %5 = add i64 %4, %3
+  %6 = and i64 %5, 17592186044415
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

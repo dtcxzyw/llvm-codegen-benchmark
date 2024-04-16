@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, float %1) #0 {
 entry:
-  %2 = select i1 %0, float %1, float 0.000000e+00
-  %3 = bitcast float %2 to i32
+  %2 = bitcast float %1 to i32
+  %3 = select i1 %0, i32 %2, i32 0
   ret i32 %3
 }
 

@@ -389,10 +389,10 @@ define i1 @func0000000000000074(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 56
-  %6 = sub nuw nsw i64 164703072086692425, %5
-  %7 = icmp ult i64 %6, %0
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -56
+  %5 = add nsw i64 %.neg, 164703072086692425
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
 }
 
 ; 301 occurrences:
@@ -702,10 +702,10 @@ define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 40
-  %6 = sub nsw i64 230584300921369395, %5
-  %7 = icmp ult i64 %6, %0
-  ret i1 %7
+  %.neg = sdiv exact i64 %4, -40
+  %5 = add nsw i64 %.neg, 230584300921369395
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

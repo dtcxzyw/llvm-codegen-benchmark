@@ -8,10 +8,9 @@ define i64 @func000000000000002d(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %3, -2
-  %5 = or disjoint i64 %4, 1
-  %6 = sub nsw i64 0, %5
-  ret i64 %6
+  %4 = or i64 %3, 1
+  %5 = sub nsw i64 2, %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

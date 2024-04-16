@@ -10,9 +10,9 @@
 define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp slt i32 %0, 2
-  %4 = select i1 %3, i32 -1, i32 %2
-  %5 = icmp ne i32 %4, -1
+  %3 = icmp sgt i32 %0, 1
+  %4 = icmp ne i32 %2, -1
+  %5 = and i1 %3, %4
   ret i1 %5
 }
 
@@ -30,9 +30,9 @@ entry:
 define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp slt i32 %0, 2
-  %4 = select i1 %3, i32 -1, i32 %2
-  %5 = icmp eq i32 %4, 0
+  %3 = icmp sgt i32 %0, 1
+  %4 = icmp eq i32 %2, 0
+  %5 = and i1 %3, %4
   ret i1 %5
 }
 
@@ -43,8 +43,8 @@ define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %0, 7
-  %4 = select i1 %3, i32 1, i32 %2
-  %5 = icmp eq i32 %4, 1
+  %4 = icmp eq i32 %2, 1
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -61,8 +61,8 @@ define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %0, 7
-  %4 = select i1 %3, i32 1, i32 %2
-  %5 = icmp sgt i32 %4, 0
+  %4 = icmp sgt i32 %2, 0
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -97,8 +97,8 @@ define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %0, 7
-  %4 = select i1 %3, i32 1, i32 %2
-  %5 = icmp sgt i32 %4, 0
+  %4 = icmp sgt i32 %2, 0
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 

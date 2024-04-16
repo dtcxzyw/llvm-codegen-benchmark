@@ -6,9 +6,9 @@
 define i1 @func00000000000001ca(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = or disjoint i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, -1
+  %3 = or disjoint i64 %2, %0
+  %4 = and i64 %3, 2147483648
+  %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i32 %4, -1
   ret i1 %5

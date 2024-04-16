@@ -6,7 +6,7 @@
 define i32 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 true), !range !0
   %5 = sub nuw nsw i32 32, %4
   ret i32 %5

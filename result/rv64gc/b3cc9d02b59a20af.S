@@ -1,5 +1,5 @@
 func0000000000000002:                   # @func0000000000000002
-	subw	a1, a1, a2
+	add	a0, a0, a2
 	subw	a0, a1, a0
 	li	a1, 3
 	blt	a0, a1, .LBB0_2
@@ -7,7 +7,7 @@ func0000000000000002:                   # @func0000000000000002
 .LBB0_2:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sub	a1, a1, a2
+	add	a0, a0, a2
 	sub	a0, a1, a0
 	li	a1, 4
 	blt	a0, a1, .LBB1_2
@@ -15,7 +15,7 @@ func000000000000000a:                   # @func000000000000000a
 .LBB1_2:                                # %entry
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sub	a1, a1, a2
+	add	a0, a0, a2
 	sub	a0, a1, a0
 	li	a1, 12
 	blt	a0, a1, .LBB2_2

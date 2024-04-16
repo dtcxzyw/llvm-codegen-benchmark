@@ -238,7 +238,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 2147483647
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -304,7 +304,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 5
   %5 = and i64 %4, 4294967295
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -382,7 +382,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 2147483647
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -410,7 +410,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -431,7 +431,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 
@@ -445,7 +445,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
   %5 = and i64 %4, 2147483647
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -457,7 +457,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 2
   %5 = and i64 %4, 2147483647
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -470,7 +470,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = lshr i32 %3, 3
   %5 = and i32 %4, 2047
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -482,7 +482,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = lshr i32 %3, 3
   %5 = and i32 %4, 2047
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -496,7 +496,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
   %5 = and i64 %4, 4294967295
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -508,7 +508,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = and i64 %4, 2147483647
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -520,7 +520,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 4
   %5 = and i64 %4, 2147483647
-  %6 = icmp uge i64 %0, %5
+  %6 = icmp ule i64 %5, %0
   ret i1 %6
 }
 

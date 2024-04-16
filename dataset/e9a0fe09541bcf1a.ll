@@ -199,8 +199,8 @@ entry:
   %3 = icmp ugt i64 %1, %2
   %4 = sext i1 %3 to i32
   %5 = zext i8 %0 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = icmp eq i32 %6, 0
+  %6 = sub nsw i32 0, %5
+  %7 = icmp eq i32 %4, %6
   ret i1 %7
 }
 
@@ -216,8 +216,8 @@ entry:
   %3 = icmp ugt i64 %1, %2
   %4 = sext i1 %3 to i32
   %5 = zext i8 %0 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = icmp ne i32 %6, 0
+  %6 = sub nsw i32 0, %5
+  %7 = icmp ne i32 %4, %6
   ret i1 %7
 }
 

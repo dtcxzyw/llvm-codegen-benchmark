@@ -12,7 +12,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = zext i16 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 

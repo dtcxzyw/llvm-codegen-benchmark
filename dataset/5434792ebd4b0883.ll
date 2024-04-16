@@ -5,11 +5,11 @@
 define i1 @func0000000000000018(i1 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = and i32 %2, 8388607
-  %4 = or disjoint i32 %3, 8388608
-  %5 = select i1 %0, i32 %3, i32 %4
-  %6 = icmp ugt i32 %5, 2097151
-  ret i1 %6
+  %3 = and i32 %2, 6291456
+  %4 = icmp ne i32 %3, 0
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -21,10 +21,10 @@ define i1 @func0000000000000011(i1 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, 4503599627370495
-  %4 = or disjoint i64 %3, 4503599627370496
-  %5 = select i1 %0, i64 %3, i64 %4
-  %6 = icmp eq i64 %5, 4503599627370496
-  ret i1 %6
+  %4 = icmp eq i64 %3, 0
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

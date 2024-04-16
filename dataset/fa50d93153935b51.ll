@@ -10,7 +10,7 @@ entry:
   %4 = lshr i47 -26388279066624, %3
   %5 = trunc i47 %4 to i1
   %6 = select i1 %1, i1 %5, i1 false
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

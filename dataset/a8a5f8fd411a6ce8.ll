@@ -21,7 +21,7 @@ entry:
   %1 = sub i32 0, %0
   %2 = and i32 %1, 7
   %3 = lshr i32 255, %2
-  %4 = trunc i32 %3 to i8
+  %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
 

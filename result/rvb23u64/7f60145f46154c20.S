@@ -78,7 +78,7 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func0000000000000054:                   # @func0000000000000054
 	or	a3, a3, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	sltu	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
@@ -127,7 +127,7 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000005b:                   # @func000000000000005b
 	or	a3, a3, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	slt	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
@@ -174,7 +174,7 @@ func000000000000005c:                   # @func000000000000005c
 	ret
 func000000000000005a:                   # @func000000000000005a
 	or	a3, a3, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	slt	a1, a3, a1
 	czero.eqz	a1, a1, a4
 	sltu	a0, a2, a0
@@ -240,7 +240,7 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000059:                   # @func0000000000000059
 	or	a3, a3, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	sltu	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2

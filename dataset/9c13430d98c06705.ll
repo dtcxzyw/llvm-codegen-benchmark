@@ -10,7 +10,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 85
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = and i64 %3, 4294967295
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -58,7 +58,7 @@ entry:
 define i1 @func00000000000000ac(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, 11392378155556871081
-  %3 = add nuw i128 %0, %2
+  %3 = add nuw i128 %2, %0
   %4 = and i128 %3, 18446744073709551614
   %5 = icmp ne i128 %4, 0
   ret i1 %5
@@ -70,7 +70,7 @@ entry:
 define i1 @func00000000000000fc(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, 11392378155556871081
-  %3 = add nuw nsw i128 %0, %2
+  %3 = add nuw nsw i128 %2, %0
   %4 = and i128 %3, 18446744073709551614
   %5 = icmp ne i128 %4, 0
   ret i1 %5
@@ -83,8 +83,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f1(i16 %0, i16 %1) #0 {
 entry:
-  %2 = mul nuw nsw i16 %1, 10
-  %3 = add nuw nsw i16 %2, %0
+  %2 = shl i16 %1, 1
+  %3 = add i16 %2, %0
   %4 = and i16 %3, 3
   %5 = icmp eq i16 %4, 0
   ret i1 %5

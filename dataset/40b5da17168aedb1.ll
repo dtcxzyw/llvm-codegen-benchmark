@@ -97,8 +97,8 @@ entry:
   %2 = icmp eq i8 %1, 0
   %3 = zext i1 %2 to i64
   %4 = sext i8 %1 to i64
-  %5 = add nsw i64 %3, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 

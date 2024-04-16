@@ -497,9 +497,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr %union.iseq_inline_storage_entry.1553854, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %union.iseq_inline_storage_entry.1553854, ptr %0, i64 %2, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 340 occurrences:

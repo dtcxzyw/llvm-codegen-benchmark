@@ -195,11 +195,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 4294967295
-  %4 = mul nuw nsw i128 %0, %1
-  %5 = add nuw nsw i128 %4, %3
-  %6 = trunc i128 %5 to i32
-  ret i32 %6
+  %3 = mul nuw nsw i128 %0, %1
+  %4 = add i128 %3, %2
+  %5 = trunc i128 %4 to i32
+  ret i32 %5
 }
 
 ; 11 occurrences:

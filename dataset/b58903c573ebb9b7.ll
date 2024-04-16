@@ -151,9 +151,8 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4
-  %2 = icmp eq i32 %1, 0
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = icmp ne i32 %1, 0
+  ret i1 %2
 }
 
 ; 73 occurrences:
@@ -234,9 +233,8 @@ entry:
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, -5
-  %2 = icmp ne i64 %1, 0
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %.not = icmp eq i64 %1, 0
+  ret i1 %.not
 }
 
 ; 3 occurrences:
@@ -247,9 +245,8 @@ entry:
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
-  %2 = icmp ugt i32 %1, 2
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = icmp ult i32 %1, 3
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

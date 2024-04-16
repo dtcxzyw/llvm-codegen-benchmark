@@ -10,7 +10,7 @@
 define i1 @func0000000000000110(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %1, %2
+  %3 = add i32 %2, %1
   %4 = icmp ugt i32 %3, 15
   %5 = icmp ugt i64 %0, 15
   %6 = or i1 %5, %4

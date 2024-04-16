@@ -12,8 +12,9 @@ func0000000000000007:                   # @func0000000000000007
 	slli	a2, a2, 52
 	and	a1, a1, a2
 	bnez	a1, .LBB1_2
-	li	a0, -1074
-.LBB1_2:                                # %entry
+	li	a0, 1091
+	ret
+.LBB1_2:
 	li	a1, 17
 	subw	a0, a1, a0
 	ret

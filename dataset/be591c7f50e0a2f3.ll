@@ -5,9 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, 1
-  %4 = select i1 %1, i1 true, i1 %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %3 = select i1 %1, i1 true, i1 %2
+  %not. = xor i1 %3, true
+  %4 = zext i1 %not. to i32
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

@@ -21,7 +21,7 @@ entry:
   %4 = and i64 %3, 1
   %5 = icmp ult i64 %4, %1
   %6 = zext i1 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = and i64 %3, 1
   %5 = icmp uge i64 %4, %1
   %6 = zext i1 %5 to i64
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

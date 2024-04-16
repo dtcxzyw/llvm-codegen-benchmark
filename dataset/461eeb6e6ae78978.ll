@@ -64,7 +64,7 @@ define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = sdiv i64 %2, 3600000000000
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nsw i64 %3 to i32
   %5 = add nsw i32 %4, -23
   ret i32 %5
 }

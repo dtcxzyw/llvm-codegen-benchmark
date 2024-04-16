@@ -6,7 +6,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 255
+  %2 = xor i32 %1, 1
   %3 = and i32 %2, %0
   %4 = shl nuw nsw i32 %3, 1
   %5 = and i32 %4, 2
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = shl i64 %3, 52
   %5 = and i64 %4, 288230376151711744
   ret i64 %5
@@ -32,7 +32,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = shl nuw i64 %3, 1
   %5 = and i64 %4, 4
   ret i64 %5

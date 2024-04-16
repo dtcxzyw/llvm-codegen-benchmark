@@ -67,10 +67,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = icmp eq i64 %2, 0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %2 = icmp eq i64 %0, %1
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
 ; 9 occurrences:

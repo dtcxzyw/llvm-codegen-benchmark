@@ -241,9 +241,9 @@ entry:
 define i32 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %0, %1
-  %3 = icmp ne i8 %2, 0
-  %4 = select i1 %3, i32 -2147483648, i32 0
-  ret i32 %4
+  %.not = icmp eq i8 %2, 0
+  %3 = select i1 %.not, i32 0, i32 -2147483648
+  ret i32 %3
 }
 
 ; 11 occurrences:

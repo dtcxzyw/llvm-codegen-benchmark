@@ -6,7 +6,7 @@
 define i1 @func0000000000000111(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sub nsw i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   %7 = icmp eq i32 %6, 0
@@ -58,7 +58,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sub i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   %7 = icmp sgt i32 %6, 2147483645
@@ -71,7 +71,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sub i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   %7 = icmp eq i32 %6, 0
@@ -84,7 +84,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sub i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   %7 = icmp ugt i32 %6, 11

@@ -78,7 +78,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -108,7 +108,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -123,7 +123,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -10
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -150,7 +150,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 15
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
 }

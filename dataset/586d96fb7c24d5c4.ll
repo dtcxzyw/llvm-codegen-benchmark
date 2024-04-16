@@ -7,11 +7,10 @@
 define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 240
-  %3 = icmp eq i32 %2, 128
-  %4 = select i1 %3, i32 4, i32 0
-  %5 = select i1 %0, i32 3, i32 %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = icmp ne i32 %2, 128
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

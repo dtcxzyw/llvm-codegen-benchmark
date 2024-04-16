@@ -1,6 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
 	addi	a1, a1, 100
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 335544
 	addiw	a1, a1, 1311
 	mul	a0, a0, a1

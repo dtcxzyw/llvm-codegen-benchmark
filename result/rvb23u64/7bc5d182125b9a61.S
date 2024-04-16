@@ -63,10 +63,10 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 63
 	ret
 func0000000000000241:                   # @func0000000000000241
-	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	addi	a0, a0, -48
+	li	a2, -10
+	mulw	a1, a1, a2
+	addiw	a0, a0, -48
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000246:                   # @func0000000000000246
@@ -170,9 +170,10 @@ func000000000000014a:                   # @func000000000000014a
 	ret
 func0000000000000141:                   # @func0000000000000141
 	slli	a2, a0, 3
-	add	a0, a0, a1
 	subw	a0, a0, a2
-	addi	a0, a0, 5
+	li	a2, -5
+	subw	a2, a2, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8

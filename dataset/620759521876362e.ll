@@ -15,11 +15,10 @@
 define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %2, 2
-  %4 = or disjoint i64 %2, 1
-  %5 = select i1 %0, i64 %4, i64 %3
-  %6 = sub i64 0, %5
-  ret i64 %6
+  %.neg1 = sub nuw nsw i64 -2, %2
+  %.neg = xor i64 %2, -1
+  %.neg2 = select i1 %0, i64 %.neg, i64 %.neg1
+  ret i64 %.neg2
 }
 
 attributes #0 = { nounwind }

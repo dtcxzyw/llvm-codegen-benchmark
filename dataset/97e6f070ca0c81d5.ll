@@ -12,7 +12,7 @@ entry:
   %4 = icmp eq i32 %3, 4
   %5 = and i8 %1, 15
   %6 = select i1 %4, i8 %5, i8 0
-  %7 = or i8 %0, %6
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 

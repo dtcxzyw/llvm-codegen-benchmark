@@ -1,7 +1,5 @@
 func0000000000000041:                   # @func0000000000000041
-	li	a1, 1
-	sllw	a0, a1, a0
-	slli	a0, a0, 36
-	srli	a0, a0, 36
-	seqz	a0, a0
+	sext.w	a0, a0
+	sltiu	a0, a0, 28
+	xori	a0, a0, 1
 	ret

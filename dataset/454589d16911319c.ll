@@ -10,7 +10,7 @@ entry:
   %2 = shl nuw i32 256, %1
   %3 = icmp ugt i32 %2, 32768
   %4 = zext nneg i32 %2 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }

@@ -6,7 +6,7 @@ define i8 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, %1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = trunc i32 %5 to i8
   %7 = and i8 %6, 15
   ret i8 %7

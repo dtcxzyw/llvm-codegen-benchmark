@@ -10,7 +10,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 5504)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

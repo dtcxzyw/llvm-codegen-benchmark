@@ -17,7 +17,7 @@
 define i32 @func0000000000000001(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 76
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = freeze i1 %4
   %6 = select i1 %5, i32 256, i32 1
   %7 = and i32 %6, %0

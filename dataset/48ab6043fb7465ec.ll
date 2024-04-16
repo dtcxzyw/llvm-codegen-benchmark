@@ -30,10 +30,10 @@
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double 1.000000e+00, %2
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fcmp olt double %4, 0.000000e+00
   %6 = select i1 %5, double 0.000000e+00, double %4
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 
@@ -45,10 +45,10 @@ entry:
 define double @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double 1.000000e+00, %2
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fcmp ole double %4, 0.000000e+00
   %6 = select i1 %5, double 0.000000e+00, double %4
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 

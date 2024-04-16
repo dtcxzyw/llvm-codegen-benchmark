@@ -18,9 +18,8 @@ func000000000000005a:                   # @func000000000000005a
 	mv	a2, a3
 .LBB1_2:                                # %entry
 	sgtz	a3, a2
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
-	add	a0, a0, a1
-	subw	a0, a0, a2
-	sgtz	a0, a0
+	addw	a0, a0, a1
+	slt	a0, a2, a0
 	ret

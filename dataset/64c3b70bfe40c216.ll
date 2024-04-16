@@ -24,9 +24,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
-  %2 = sext i8 %1 to i16
-  %3 = sext i8 %0 to i16
-  %4 = mul nsw i16 %3, %2
+  %2 = zext i8 %1 to i16
+  %3 = zext i8 %0 to i16
+  %4 = mul nuw i16 %3, %2
   %5 = and i16 %4, 128
   ret i16 %5
 }

@@ -5,11 +5,14 @@
 ; Function Attrs: nounwind
 define i64 @func00000000000000c2(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp slt i64 %0, %1
-  %3 = icmp eq i64 %1, 0
-  %4 = or i1 %3, %2
-  %5 = select i1 %4, i64 %0, i64 %1
-  ret i64 %5
+  %2 = icmp eq i64 %1, 0
+  %3 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
+  %4 = select i1 %2, i64 %0, i64 %3
+  ret i64 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

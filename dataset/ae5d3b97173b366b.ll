@@ -6,10 +6,10 @@
 define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   %4 = xor i8 %3, 31
-  %5 = select i1 %0, i8 -1, i8 %4
-  %6 = zext i8 %5 to i32
+  %5 = zext nneg i8 %4 to i32
+  %6 = select i1 %0, i32 255, i32 %5
   ret i32 %6
 }
 
@@ -22,10 +22,10 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 define i64 @func0000000000000009(i1 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !1
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, 63
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %4 to i64
+  %6 = select i1 %0, i64 0, i64 %5
   ret i64 %6
 }
 

@@ -17,10 +17,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000063(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 %2, i64 0
-  %4 = icmp ne i64 %3, 0
+  %3 = icmp ne i64 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -30,10 +30,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 -274000
-  %4 = icmp ne i32 %3, -274000
+  %3 = icmp ne i32 %2, -274000
+  %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

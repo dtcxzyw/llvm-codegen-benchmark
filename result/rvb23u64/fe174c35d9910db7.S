@@ -1,10 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
 	fli.s	fa5, -1.0
 	fadd.s	fa5, fa0, fa5
-	fmv.x.w	a0, fa5
-	lui	a1, 522240
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	fclass.s	a0, fa5
+	andi	a0, a0, 126
 	snez	a0, a0
 	ret
 .LCPI1_0:

@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 17
-  %4 = add i64 %3, %1
-  %5 = icmp uge i64 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = sub i64 -18, %2
+  %4 = icmp uge i64 %3, %1
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -31,7 +30,7 @@ entry:
   %3 = add i32 %2, 40
   %4 = add i32 %3, %1
   %5 = icmp ugt i32 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -40,8 +40,8 @@ entry:
   %1 = shl nuw nsw i32 %0, 13
   %2 = and i32 %1, 268427264
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = add nsw i32 %3, -8
-  %5 = shl nuw nsw i32 %4, 23
+  %4 = shl nuw nsw i32 %3, 23
+  %5 = add nsw i32 %4, -67108864
   ret i32 %5
 }
 
@@ -58,8 +58,8 @@ entry:
   %1 = shl i32 %0, 13
   %2 = and i32 %1, 268427264
   %3 = call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = add nsw i32 %3, -8
-  %5 = shl nuw nsw i32 %4, 23
+  %4 = shl nuw nsw i32 %3, 23
+  %5 = add nsw i32 %4, -67108864
   ret i32 %5
 }
 

@@ -8,7 +8,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = shl nsw i32 %1, %4
   %6 = tail call i32 @llvm.smax.i32(i32 %5, i32 100)
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = shl nuw nsw i32 %1, %4
   %6 = call i32 @llvm.smax.i32(i32 %5, i32 1)
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

@@ -163,8 +163,8 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = add i64 %0, %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add i64 %4, %0
   %6 = shl nuw i64 1, %1
   %7 = and i64 %5, %6
   ret i64 %7
@@ -185,7 +185,7 @@ define i64 @func0000000000000038(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = shl nuw i64 1, %1
   %7 = and i64 %5, %6
   ret i64 %7

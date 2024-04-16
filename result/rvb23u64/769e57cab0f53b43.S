@@ -1,8 +1,7 @@
 func0000000000000034:                   # @func0000000000000034
 	andi	a0, a0, 1
-	andi	a1, a1, 7
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	andi	a1, a1, 6
+	snez	a1, a1
 	lui	a2, 2
 	czero.nez	a0, a2, a0
 	ori	a0, a0, 560

@@ -53,9 +53,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000308:                   # @func0000000000000308
 	andi	a2, a1, 255
-	li	a1, 6
-	bnez	a2, .LBB5_2
 	li	a1, 3
+	beqz	a2, .LBB5_2
+	li	a1, 6
 .LBB5_2:                                # %entry
 	sext.w	a0, a0
 	sltu	a0, a0, a1

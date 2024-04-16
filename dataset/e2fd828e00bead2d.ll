@@ -35,7 +35,7 @@ entry:
   %4 = select i1 %3, i64 1, i64 2
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %5, i64 0, i64 %4
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

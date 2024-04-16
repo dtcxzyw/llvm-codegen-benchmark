@@ -5,7 +5,7 @@
 define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = call i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 29)
   ret i32 %4
 }
@@ -22,7 +22,7 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 4)
   ret i32 %4
 }

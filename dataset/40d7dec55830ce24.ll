@@ -13,7 +13,7 @@ entry:
   %4 = and i16 %1, 16383
   %5 = icmp ugt i16 %4, %3
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

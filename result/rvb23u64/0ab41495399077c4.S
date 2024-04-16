@@ -40,8 +40,8 @@ func000000000000004c:                   # @func000000000000004c
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	zext.h	a0, a0
 	sext.w	a1, a1
+	zext.h	a0, a0
 	xor	a1, a1, a0
 	seqz	a1, a1
 	sltiu	a0, a0, 2

@@ -7,11 +7,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr inbounds i32, ptr %0, i64 %2
+  ret ptr %3
 }
 
 ; 24 occurrences:
@@ -44,8 +42,8 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, 1
-  %5 = getelementptr float, ptr %0, i64 %4
+  %4 = getelementptr float, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -57,8 +55,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  %4 = getelementptr i32, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 

@@ -16,11 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = icmp sgt i32 %1, -1
-  %4 = select i1 %3, i64 %2, i64 %0
-  %5 = and i64 %4, -4294967296
-  ret i64 %5
+  %2 = icmp slt i32 %1, 0
+  %3 = and i64 %0, -4294967296
+  %4 = select i1 %2, i64 %3, i64 0
+  ret i64 %4
 }
 
 ; 1 occurrences:

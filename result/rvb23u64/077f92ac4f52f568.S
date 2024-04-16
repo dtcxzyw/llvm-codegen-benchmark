@@ -17,7 +17,7 @@ func000000000000000d:                   # @func000000000000000d
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	addi	a1, a1, 16
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 7
@@ -42,5 +42,5 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, -2
 	addi	a1, a1, 36
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret

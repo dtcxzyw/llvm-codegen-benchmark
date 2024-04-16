@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 64
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = add i32 %0, -2
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 57343
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = add nsw i32 %0, -2048
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -72,9 +72,9 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %1, %3
-  %5 = add nsw i32 %0, 1
-  %6 = select i1 %4, i32 %5, i32 %0
+  %4 = and i1 %3, %1
+  %5 = zext i1 %4 to i32
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -89,8 +89,8 @@ define i32 @func0000000000000019(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 4096
   %4 = and i1 %3, %1
-  %5 = add nsw i32 %0, 1
-  %6 = select i1 %4, i32 %5, i32 %0
+  %5 = zext i1 %4 to i32
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -102,7 +102,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -24
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = add i32 %0, -16
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -138,7 +138,7 @@ entry:
 define i32 @func000000000000002b(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = add nuw nsw i32 %0, -100
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6
@@ -162,7 +162,7 @@ entry:
 define i16 @func0000000000000031(i16 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = add nsw i16 %0, -10
   %6 = select i1 %4, i16 %5, i16 %0
   ret i16 %6

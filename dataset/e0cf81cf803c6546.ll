@@ -12,7 +12,7 @@
 define ptr @func0000000000000009(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr inbounds [4292 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -29,7 +29,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = getelementptr inbounds [16 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -56,7 +56,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -72,7 +72,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr [0 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -88,7 +88,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr [768 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -102,7 +102,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr inbounds [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -131,7 +131,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr inbounds [2342 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -142,7 +142,7 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = getelementptr inbounds [2342 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -155,7 +155,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = getelementptr inbounds [1024 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -166,7 +166,7 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = getelementptr inbounds [6 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -177,7 +177,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = getelementptr [0 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -188,7 +188,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }

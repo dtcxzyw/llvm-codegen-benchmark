@@ -21,7 +21,7 @@ entry:
   %4 = shl i64 %1, 33
   %5 = or disjoint i64 %4, %3
   %6 = or disjoint i64 %5, 1
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

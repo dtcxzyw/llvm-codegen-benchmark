@@ -7,7 +7,7 @@ entry:
   %3 = sdiv i32 %2, 128
   %4 = add nuw nsw i32 %1, 1
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = sdiv exact i64 %1, 20
   %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 %3)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

@@ -13,8 +13,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = lshr i64 %3, 12
+  %3 = lshr i32 %2, 12
+  %4 = zext nneg i32 %3 to i64
   %5 = getelementptr %struct.page.2005443, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
@@ -27,8 +27,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = lshr i64 %3, 6
+  %3 = lshr i32 %2, 6
+  %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6

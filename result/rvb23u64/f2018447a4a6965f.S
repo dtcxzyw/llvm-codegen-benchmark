@@ -1,7 +1,5 @@
 func0000000000000046:                   # @func0000000000000046
-	slli	a0, a0, 58
-	srai	a0, a0, 58
-	slti	a0, a0, 0
+	bexti	a0, a0, 5
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a0, a0, 63
@@ -18,11 +16,10 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sraiw	a0, a0, 8
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sext.h	a0, a0
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	not	a0, a0
+	bexti	a0, a0, 31
 	ret

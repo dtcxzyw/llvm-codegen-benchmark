@@ -39,7 +39,7 @@ entry:
 define i16 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 223
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = trunc i32 %3 to i16
   %5 = udiv i16 %4, 255
   ret i16 %5

@@ -22,10 +22,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = ashr i32 %2, 25
-  %4 = add nsw i32 %3, %1
+  %3 = lshr i32 %2, 25
+  %4 = add i32 %3, %1
   %5 = shl i32 %4, 6
-  %6 = or disjoint i32 %5, %0
+  %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

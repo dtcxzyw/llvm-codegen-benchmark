@@ -314,8 +314,8 @@ entry:
 define i8 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -127
-  %3 = icmp sgt i8 %1, -1
-  %4 = select i1 %3, i8 %0, i8 %2
+  %3 = icmp slt i8 %1, 0
+  %4 = select i1 %3, i8 %2, i8 %0
   ret i8 %4
 }
 

@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 1
-  %4 = icmp ugt i32 %3, 65535
+  %3 = add i32 %2, -65535
+  %4 = icmp ult i32 %3, -65536
   %5 = select i1 %4, i32 16, i32 0
   %6 = or i32 %5, %1
   %7 = or i32 %6, %0
@@ -23,7 +23,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 3
   %5 = select i1 %4, i32 0, i32 2
-  %6 = or disjoint i32 %1, %5
+  %6 = or disjoint i32 %5, %1
   %7 = or i32 %6, %0
   ret i32 %7
 }

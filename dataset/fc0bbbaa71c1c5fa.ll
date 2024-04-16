@@ -93,10 +93,10 @@ entry:
 define i1 @func00000000000000c4(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, -1
-  %4 = icmp ne i16 %1, 0
-  %5 = select i1 %4, i16 %3, i16 0
-  %6 = icmp ult i16 %5, %0
-  ret i1 %6
+  %.not = icmp eq i16 %1, 0
+  %4 = select i1 %.not, i16 0, i16 %3
+  %5 = icmp ult i16 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -104,11 +104,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = icmp ne i64 %1, 64
-  %5 = select i1 %4, i64 %3, i64 9223372036854775807
-  %6 = icmp slt i64 %5, %0
-  ret i1 %6
+  %.not = icmp ne i64 %1, 64
+  %3 = icmp sle i64 %2, %0
+  %4 = select i1 %.not, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 4 occurrences:

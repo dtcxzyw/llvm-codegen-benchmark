@@ -20,5 +20,5 @@ func0000000000000006:                   # @func0000000000000006
 	blt	a0, a1, .LBB2_2
 	fmv.d	fa5, fa1
 .LBB2_2:                                # %entry
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret

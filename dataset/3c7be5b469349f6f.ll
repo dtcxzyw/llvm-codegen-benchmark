@@ -7,9 +7,9 @@
 define i32 @func000000000000007c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
-  %6 = shl nuw nsw i32 %5, 2
+  %4 = shl nuw nsw i32 %3, 10
+  %5 = shl i32 %1, 2
+  %6 = or i32 %4, %5
   %7 = mul i32 %6, %0
   ret i32 %7
 }

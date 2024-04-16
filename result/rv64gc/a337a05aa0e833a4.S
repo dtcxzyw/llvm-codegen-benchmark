@@ -1,6 +1,6 @@
 func0000000000000009:                   # @func0000000000000009
 	fmul.s	fa5, fa1, fa2
-	fadd.s	fa5, fa0, fa5
+	fadd.s	fa5, fa5, fa0
 	fclass.s	a0, fa5
 	andi	a0, a0, 897
 	snez	a0, a0
@@ -17,14 +17,14 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa0, fa5
+	fadd.d	fa5, fa5, fa0
 	fclass.d	a0, fa5
 	andi	a0, a0, 894
 	snez	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmul.d	fa5, fa1, fa2
-	fadd.d	fa5, fa0, fa5
+	fadd.d	fa5, fa5, fa0
 	fclass.d	a0, fa5
 	andi	a0, a0, 129
 	snez	a0, a0

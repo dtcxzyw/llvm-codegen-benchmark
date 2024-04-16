@@ -8,7 +8,7 @@ entry:
   %4 = lshr exact i64 %1, 4
   %5 = sub nsw i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = lshr i64 %1, 12
   %5 = sub nsw i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = lshr i64 %1, 12
   %5 = sub nsw i64 %4, %3
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

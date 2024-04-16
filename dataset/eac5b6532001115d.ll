@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -44,7 +44,7 @@ entry:
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = trunc i64 %3 to i16
   ret i16 %4
 }

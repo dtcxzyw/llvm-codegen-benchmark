@@ -13,7 +13,7 @@
 define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1835008
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = add nsw i32 %3, -1114112
   %5 = icmp ult i32 %4, -1048576
   ret i1 %5
@@ -41,9 +41,8 @@ define i1 @func0000000000000051(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
   %3 = or disjoint i128 %2, %0
-  %4 = add nsw i128 %3, -1
-  %5 = icmp eq i128 %4, 55201523285365573200914076740740186111
-  ret i1 %5
+  %4 = icmp eq i128 %3, 55201523285365573200914076740740186112
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

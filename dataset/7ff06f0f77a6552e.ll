@@ -13,7 +13,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = tail call i16 @llvm.smax.i16(i16 %1, i16 %3)
   %5 = zext i16 %4 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 

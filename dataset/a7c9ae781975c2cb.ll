@@ -23,9 +23,9 @@ entry:
 define i1 @func0000000000000045(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 -1, i64 %1
-  %4 = add i64 %0, -1
-  %5 = icmp ule i64 %4, %3
+  %3 = add i64 %0, -1
+  %4 = icmp ule i64 %3, %1
+  %5 = select i1 %2, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -35,9 +35,9 @@ entry:
 define i1 @func0000000000000055(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 -1, i64 %1
-  %4 = add nsw i64 %0, -1
-  %5 = icmp ule i64 %4, %3
+  %3 = add nsw i64 %0, -1
+  %4 = icmp ule i64 %3, %1
+  %5 = select i1 %2, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -71,11 +71,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000231(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 4
-  %3 = select i1 %2, i32 5, i32 %1
-  %4 = add nuw nsw i32 %0, 1
-  %5 = icmp eq i32 %4, %3
-  ret i1 %5
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 5)
+  %3 = add nuw nsw i32 %0, 1
+  %4 = icmp eq i32 %3, %2
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -131,4 +130,8 @@ entry:
   ret i1 %5
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umin.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

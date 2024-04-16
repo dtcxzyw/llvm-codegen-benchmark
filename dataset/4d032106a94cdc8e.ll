@@ -9,7 +9,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i16 %1, 0
   %6 = select i1 %5, i32 0, i32 %4
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

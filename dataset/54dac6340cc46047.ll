@@ -16,7 +16,7 @@ entry:
   %3 = fmul float %2, 0x3FBEB851E0000000
   %4 = fneg float %3
   %5 = select i1 %1, float %3, float %4
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

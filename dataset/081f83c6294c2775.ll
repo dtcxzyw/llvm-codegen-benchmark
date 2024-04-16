@@ -23,7 +23,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = xor i8 %0, %3
+  %4 = xor i8 %3, %0
   %5 = xor i8 %4, -1
   ret i8 %5
 }

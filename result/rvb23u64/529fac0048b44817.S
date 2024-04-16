@@ -8,8 +8,8 @@ func0000000000000054:                   # @func0000000000000054
 	mul	a0, a0, a1
 	li	a1, 1
 	maxu	a1, a0, a1
-	add	a1, a1, a0
-	sltu	a0, a1, a0
+	not	a0, a0
+	sltu	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sub	a0, a0, a1
@@ -21,6 +21,6 @@ func0000000000000044:                   # @func0000000000000044
 	mul	a0, a0, a1
 	li	a1, 1
 	maxu	a1, a0, a1
-	add	a1, a1, a0
-	sltu	a0, a1, a0
+	not	a0, a0
+	sltu	a0, a0, a1
 	ret

@@ -96,7 +96,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 9
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = and i32 %3, 65535
   ret i32 %4
 }
@@ -344,9 +344,9 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 16
-  %3 = or i32 %2, %0
-  %4 = and i32 %3, -7
-  ret i32 %4
+  %.masked = and i32 %0, -7
+  %3 = or i32 %2, %.masked
+  ret i32 %3
 }
 
 ; 6 occurrences:

@@ -35,9 +35,8 @@ func0000000000000114:                   # @func0000000000000114
 	sltiu	a0, a0, 2
 	ret
 func0000000000000016:                   # @func0000000000000016
-	slli	a2, a2, 63
+	slti	a0, a0, 0
 	and	a0, a0, a2
-	srli	a0, a0, 63
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a2, a2, 1

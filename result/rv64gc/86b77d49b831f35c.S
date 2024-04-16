@@ -21,9 +21,10 @@ func0000000000000004:                   # @func0000000000000004
 .LBB1_2:                                # %entry
 	ret
 func000000000000000d:                   # @func000000000000000d
-	fadd.d	fa5, fa1, fa1
-	flt.d	a0, fa5, fa0
-	beqz	a0, .LBB2_2
+	fmv.d	fa5, fa0
+	fadd.d	fa0, fa1, fa1
+	flt.d	a0, fa0, fa5
+	bnez	a0, .LBB2_2
 	fmv.d	fa0, fa5
 .LBB2_2:                                # %entry
 	ret

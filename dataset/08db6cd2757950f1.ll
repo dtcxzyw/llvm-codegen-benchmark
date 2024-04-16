@@ -11,7 +11,7 @@ define i16 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = udiv i32 %3, 500000
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 

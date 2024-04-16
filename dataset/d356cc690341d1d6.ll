@@ -8,7 +8,7 @@ define i1 @func00000000000001d0(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fabs.f32(float %2)
   %4 = fcmp une float %3, 0x7FF0000000000000
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = fcmp oeq float %0, 0x7FF0000000000000
   %7 = or i1 %6, %5
   ret i1 %7

@@ -9,7 +9,7 @@ entry:
   %2 = sub nsw i32 2048, %1
   %3 = lshr i32 %2, 5
   %4 = trunc i32 %3 to i16
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   ret i16 %5
 }
 

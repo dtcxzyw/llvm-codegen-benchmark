@@ -44,10 +44,7 @@ func0000000000000014:                   # @func0000000000000014
 	addiw	a0, a0, -5
 	ret
 func0000000000000035:                   # @func0000000000000035
-	addi	a0, a0, 65
-	slli	a0, a0, 16
-	lui	a1, 1047536
-	addw	a0, a0, a1
+	slliw	a0, a0, 16
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 2
@@ -77,9 +74,8 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 31
 	ret
 func0000000000000013:                   # @func0000000000000013
-	addi	a0, a0, -8
 	slli	a0, a0, 9
-	lui	a1, 321
+	lui	a1, 320
 	addw	a0, a0, a1
 	ret
 func000000000000002d:                   # @func000000000000002d

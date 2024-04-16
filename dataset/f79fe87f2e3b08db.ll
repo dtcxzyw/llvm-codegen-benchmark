@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 10)
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 9)
+  %2 = add nuw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

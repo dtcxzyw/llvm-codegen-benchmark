@@ -8,7 +8,7 @@ entry:
   %4 = trunc i64 %3 to i8
   %5 = and i8 %4, 7
   %6 = shl nuw i8 1, %5
-  %7 = or i8 %0, %6
+  %7 = or i8 %6, %0
   ret i8 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 31
   %6 = shl nuw i32 1, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

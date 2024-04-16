@@ -14,9 +14,9 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 63
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %1, %4
-  %6 = or i32 %0, %5
+  %4 = trunc nsw i64 %3 to i32
+  %5 = and i32 %4, %1
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

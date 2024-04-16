@@ -9,9 +9,8 @@
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:
   %1 = trunc i8 %0 to i1
-  %2 = select i1 %1, i32 16, i32 11
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
+  %2 = select i1 %1, i64 16, i64 11
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

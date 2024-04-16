@@ -36,7 +36,7 @@
 define double @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -51,7 +51,7 @@ entry:
 define float @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = uitofp i64 %3 to float
   ret float %4
 }

@@ -27,10 +27,9 @@ define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 40
-  %4 = getelementptr inbounds %struct._zval_struct.1716234, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 12
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
+  %4 = getelementptr inbounds %struct._zval_struct.1716234, ptr %3, i64 %2, i32 2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

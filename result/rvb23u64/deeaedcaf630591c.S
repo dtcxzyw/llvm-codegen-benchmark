@@ -1,16 +1,9 @@
 func0000000000000168:                   # @func0000000000000168
-	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -1
-	li	a3, 12
-	czero.eqz	a2, a3, a2
-	addi	a2, a2, 4
-	slti	a1, a1, 0
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
+	slti	a1, a1, 0
 	sltiu	a0, a0, 17
+	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000164:                   # @func0000000000000164

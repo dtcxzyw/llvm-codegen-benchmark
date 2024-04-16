@@ -12,7 +12,7 @@ entry:
   %2 = fmul float %1, 0x3FECCCCCC0000000
   %3 = fptoui float %2 to i32
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = or disjoint i64 %5, 4294967296
   ret i64 %6
 }

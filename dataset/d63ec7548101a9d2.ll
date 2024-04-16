@@ -19,7 +19,7 @@ entry:
 define i8 @func0000000000000012(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }

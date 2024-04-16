@@ -8,7 +8,7 @@
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   %5 = and i64 %1, 2251799811588096
   %6 = sub nsw i64 %4, %5
   ret i64 %6

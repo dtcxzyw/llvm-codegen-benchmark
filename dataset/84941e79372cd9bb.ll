@@ -18,8 +18,8 @@ entry:
 define i1 @func0000000000000051(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %0, -1
-  %4 = add nsw i32 %3, %2
+  %3 = add i32 %0, 255
+  %4 = add i32 %3, %2
   %5 = and i32 %4, 240
   %6 = icmp eq i32 %5, 0
   ret i1 %6

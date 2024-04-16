@@ -6,7 +6,7 @@
 define i32 @func0000000000000007(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %1, %3
+  %4 = and i8 %3, %1
   %5 = zext nneg i8 %4 to i32
   %6 = shl nuw nsw i32 %5, %0
   ret i32 %6
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %1, %3
+  %4 = and i8 %3, %1
   %5 = zext i8 %4 to i32
   %6 = shl i32 %5, %0
   ret i32 %6

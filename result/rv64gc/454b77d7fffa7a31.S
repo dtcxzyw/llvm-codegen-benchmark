@@ -29,7 +29,7 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000034:                   # @func0000000000000034
 	mv	a2, a0
-	andi	a1, a1, 15
+	andi	a1, a1, 14
 	li	a3, 6
 	li	a0, 1
 	bltu	a1, a3, .LBB4_2
@@ -38,7 +38,7 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000024:                   # @func0000000000000024
 	mv	a2, a0
-	andi	a1, a1, 63
+	andi	a1, a1, 62
 	li	a3, 6
 	li	a0, 1
 	bltu	a1, a3, .LBB5_2

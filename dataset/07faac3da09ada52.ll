@@ -107,7 +107,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 254
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = and i64 %1, 255
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -149,7 +149,7 @@ entry:
 define i24 @func000000000000000e(i24 %0, i24 %1, i24 %2) #0 {
 entry:
   %3 = and i24 %2, 255
-  %4 = add nuw nsw i24 %0, %3
+  %4 = add nuw nsw i24 %3, %0
   %5 = and i24 %1, 8355840
   %6 = add nuw i24 %4, %5
   ret i24 %6

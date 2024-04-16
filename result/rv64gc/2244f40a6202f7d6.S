@@ -37,9 +37,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	ret
 func00000000000000f7:                   # @func00000000000000f7
 	andi	a1, a1, 255
-	slli	a1, a1, 3
-	slli	a0, a0, 3
 	add	a0, a0, a1
+	slli	a0, a0, 3
 	addiw	a0, a0, 19
 	ret
 .LCPI6_0:

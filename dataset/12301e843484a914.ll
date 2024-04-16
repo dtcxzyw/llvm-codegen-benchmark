@@ -6,7 +6,7 @@ define i1 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 2)
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -22,7 +22,7 @@ define i1 @func0000000000000006(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 0)
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 

@@ -7,27 +7,27 @@ func000000000000007d:                   # @func000000000000007d
 	ret
 func0000000000000079:                   # @func0000000000000079
 	zext.h	a1, a1
-	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	negw	a0, a0
+	li	a2, -10
+	mul	a0, a0, a2
+	subw	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055
 	andi	a1, a1, 255
-	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	negw	a0, a0
+	li	a2, -10
+	mul	a0, a0, a2
+	subw	a0, a0, a1
 	ret
 func0000000000000039:                   # @func0000000000000039
 	andi	a1, a1, 255
-	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	negw	a0, a0
+	li	a2, -10
+	mul	a0, a0, a2
+	subw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a1, a1
-	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	neg	a0, a0
+	li	a2, -10
+	mul	a0, a0, a2
+	sub	a0, a0, a1
 	ret
 func0000000000000078:                   # @func0000000000000078
 	sext.w	a1, a1

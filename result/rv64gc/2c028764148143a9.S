@@ -79,9 +79,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a1
-	snez	a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, 10
+	seqz	a1, a1
+	sub	a0, a0, a1
+	addi	a0, a0, 11
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a2, a1, 255
@@ -141,9 +141,9 @@ func000000000000002b:                   # @func000000000000002b
 	ret
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a1
-	li	a1, 360
-	bnez	a2, .LBB14_2
 	li	a1, 216
+	beqz	a2, .LBB14_2
+	li	a1, 360
 .LBB14_2:                               # %entry
 	add	a0, a0, a1
 	addi	a0, a0, 20

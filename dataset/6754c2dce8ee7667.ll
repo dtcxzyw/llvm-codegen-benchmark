@@ -507,8 +507,8 @@ entry:
   %3 = shl nsw i64 %2, 6
   %4 = add nsw i64 %3, %0
   %5 = ashr exact i64 %1, 3
-  %6 = add nsw i64 %4, %5
-  %7 = icmp ne i64 %6, 0
+  %6 = sub nsw i64 0, %5
+  %7 = icmp ne i64 %4, %6
   ret i1 %7
 }
 
@@ -614,7 +614,7 @@ entry:
 define i1 @func000000000000025a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = ashr exact i64 %0, 4
   %6 = add nsw i64 %5, %4
   %7 = icmp sgt i64 %6, -1
@@ -642,7 +642,7 @@ entry:
 define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = ashr exact i64 %0, 4
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 32
@@ -704,7 +704,7 @@ entry:
 define i1 @func0000000000000308(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = ashr exact i64 %1, 4
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 128
@@ -724,7 +724,7 @@ entry:
 define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = ashr exact i64 %1, 3
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -742,7 +742,7 @@ entry:
 define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 32
@@ -755,7 +755,7 @@ entry:
 define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = ashr exact i64 %1, 2
   %6 = add nsw i64 %4, %5
   %7 = icmp ult i64 %6, 64
@@ -770,7 +770,7 @@ entry:
 define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = ashr exact i64 %1, 2
   %6 = add i64 %4, %5
   %7 = icmp slt i64 %6, 32
@@ -783,7 +783,7 @@ entry:
 define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = ashr exact i64 %1, 2
   %6 = add nsw i64 %4, %5
   %7 = icmp slt i64 %6, 0

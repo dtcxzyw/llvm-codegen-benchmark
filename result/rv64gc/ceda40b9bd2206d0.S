@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a2, 15
+	andi	a2, a2, 14
 	sltiu	a2, a2, 10
 	xori	a2, a2, 1
 	or	a1, a1, a2

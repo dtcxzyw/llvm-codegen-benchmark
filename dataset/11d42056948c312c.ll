@@ -9,7 +9,7 @@ entry:
   %2 = and i16 %1, 63
   %3 = icmp ne i16 %2, 1
   %4 = icmp ne i16 %2, 3
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = and i1 %3, %5
   ret i1 %6
 }

@@ -6,10 +6,9 @@
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = add i32 %2, 32767
-  %4 = shl nuw i32 %3, 16
-  %5 = or disjoint i32 %4, 50
-  ret i32 %5
+  %3 = shl i32 %2, 16
+  %4 = add i32 %3, 2147418162
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

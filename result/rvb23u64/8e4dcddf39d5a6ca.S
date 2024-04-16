@@ -11,6 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000009:                   # @func0000000000000009
 	andi	a0, a0, 1
 	srliw	a2, a2, 16
+	slli	a2, a2, 16
 	seqz	a2, a2
 	slli	a2, a2, 4
 	czero.eqz	a1, a1, a0

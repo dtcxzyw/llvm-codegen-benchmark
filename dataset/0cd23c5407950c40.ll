@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = sub i32 %3, %1
+  %3 = xor i32 %1, -1
+  %4 = add i32 %3, %2
   %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6

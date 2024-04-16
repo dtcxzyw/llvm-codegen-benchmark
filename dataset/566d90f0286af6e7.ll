@@ -17,7 +17,7 @@ entry:
   %2 = sub nsw i32 16026, %1
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 163)
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = sub i32 117301, %1
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 600)
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = sub nsw i32 184, %1
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 25)
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl i64 %1, 1
   %5 = udiv i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

@@ -7,6 +7,6 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	min	a0, a0, a1
-	slli	a0, a0, 32
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret

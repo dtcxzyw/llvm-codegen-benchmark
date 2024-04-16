@@ -73,7 +73,7 @@ entry:
   %4 = select i1 %3, i64 3, i64 8
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i64 0, i64 %4
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -142,7 +142,7 @@ entry:
   %4 = select i1 %3, i64 4, i64 1
   %5 = icmp eq i8 %1, 92
   %6 = select i1 %5, i64 2, i64 %4
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -153,10 +153,10 @@ define i64 @func0000000000000069(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = select i1 %3, i64 1, i64 2
-  %5 = icmp sgt i64 %1, -1
-  %6 = select i1 %5, i64 0, i64 %4
-  %7 = add nsw i64 %6, %0
-  ret i64 %7
+  %.inv = icmp slt i64 %1, 0
+  %5 = select i1 %.inv, i64 %4, i64 0
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -168,7 +168,7 @@ entry:
   %4 = select i1 %3, i32 2, i32 3
   %5 = icmp ult i16 %1, 127
   %6 = select i1 %5, i32 1, i32 %4
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 

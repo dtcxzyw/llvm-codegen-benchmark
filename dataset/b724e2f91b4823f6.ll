@@ -31,10 +31,9 @@ entry:
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = mul nsw i64 %2, -4
+  %3 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 1 occurrences:

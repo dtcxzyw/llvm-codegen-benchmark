@@ -6,10 +6,10 @@
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
-  %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, -1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -21,10 +21,10 @@ entry:
 define i64 @func0000000000000019(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
-  %2 = shl nuw i32 1, %1
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -34,10 +34,10 @@ entry:
 define i64 @func000000000000001d(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
-  %2 = shl nuw nsw i32 1, %1
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -46,10 +46,10 @@ entry:
 define i64 @func000000000000000d(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
-  %2 = shl nuw nsw i32 1, %1
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

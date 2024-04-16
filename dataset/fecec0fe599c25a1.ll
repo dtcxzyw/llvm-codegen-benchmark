@@ -14,9 +14,8 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 15, i8 %1
   %5 = zext nneg i8 %4 to i64
-  %6 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [16 x %"class.std::vector.1654695"], ptr %0, i64 0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

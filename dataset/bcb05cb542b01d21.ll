@@ -178,9 +178,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.std::pair.1554428", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -190,9 +189,8 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %"class.std::__1::tuple.1556134", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 165 occurrences:
@@ -366,9 +364,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %"class.Ipopt::TripletToCSRConverter::TripletEntry.1564267", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.Ipopt::TripletToCSRConverter::TripletEntry.1564267", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -388,9 +385,8 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %"class.rocksdb::WideColumn.1570295", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %"class.rocksdb::WideColumn.1570295", ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -429,9 +425,8 @@ define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr { i32, i16 }, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -454,9 +449,8 @@ define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %struct.Aig_VSig_t_.1772197, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.Aig_VSig_t_.1772197, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -469,9 +463,8 @@ define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr %class.TrafficTypesRowData.1918522, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %class.TrafficTypesRowData.1918522, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -481,9 +474,8 @@ define ptr @func000000000000001d(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr %struct.drm_i915_mocs_entry.2012533, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 6
-  ret ptr %5
+  %4 = getelementptr %struct.drm_i915_mocs_entry.2012533, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -493,9 +485,8 @@ define ptr @func0000000000000015(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -505,9 +496,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr inbounds %"struct.pb2bv_tactic::imp::monomial.2099164", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.pb2bv_tactic::imp::monomial.2099164", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

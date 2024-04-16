@@ -212,7 +212,7 @@
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
   %5 = add i64 %4, %3
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 9223372036854775744)

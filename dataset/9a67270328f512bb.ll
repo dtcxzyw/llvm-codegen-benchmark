@@ -50,7 +50,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %1, 52
   %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, 3
   ret i64 %7
 }

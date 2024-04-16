@@ -23,7 +23,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = add nsw i16 %3, -4
   %5 = select i1 %1, i16 0, i16 %4
-  %6 = add i16 %0, %5
+  %6 = add i16 %5, %0
   ret i16 %6
 }
 

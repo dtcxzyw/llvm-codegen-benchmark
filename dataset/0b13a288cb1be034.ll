@@ -11,7 +11,7 @@ entry:
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = and i64 %4, 7
   %6 = icmp ne i64 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

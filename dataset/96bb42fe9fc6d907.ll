@@ -7,7 +7,7 @@ entry:
   %2 = lshr i32 %1, 13
   %3 = and i32 %2, 524280
   %4 = add nuw nsw i32 %3, 8
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, 1
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 15
   %4 = add nsw i32 %3, -1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = lshr i64 %1, 52
   %3 = and i64 %2, 2047
   %4 = add nsw i64 %3, -1
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -62,7 +62,7 @@ entry:
   %2 = lshr i32 %1, 10
   %3 = and i32 %2, 511
   %4 = add nsw i32 %3, -4
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -75,7 +75,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 32767
   %4 = add nuw nsw i32 %3, 1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

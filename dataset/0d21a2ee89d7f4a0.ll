@@ -9,7 +9,7 @@ entry:
   %2 = zext i1 %1 to i32
   %3 = and i32 %0, -2
   %4 = or disjoint i32 %3, %2
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

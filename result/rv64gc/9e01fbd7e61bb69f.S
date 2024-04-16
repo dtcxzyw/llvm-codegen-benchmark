@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000008:                   # @func0000000000000008
 	fcvt.s.d	fa5, fa0
 	fmv.x.w	a0, fa5
-	slli	a0, a0, 33
-	srli	a0, a0, 57
+	lui	a1, 520192
+	and	a0, a0, a1
 	snez	a0, a0
 	ret

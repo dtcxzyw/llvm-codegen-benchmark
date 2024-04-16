@@ -95,7 +95,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = zext i1 %1 to i64
   %5 = add nuw i64 %4, %3
-  %6 = zext i32 %0 to i64
+  %6 = zext nneg i32 %0 to i64
   %7 = shl i64 %5, %6
   ret i64 %7
 }
@@ -235,7 +235,7 @@ entry:
   %3 = trunc nuw i128 %2 to i64
   %4 = zext i1 %1 to i64
   %5 = add nuw i64 %4, %3
-  %6 = zext i32 %0 to i64
+  %6 = zext nneg i32 %0 to i64
   %7 = shl i64 %5, %6
   ret i64 %7
 }

@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 3
-  %3 = and i32 %2, 63
-  %4 = icmp ugt i32 %3, 56
-  %5 = select i1 %4, i64 %0, i64 8
-  ret i64 %5
+  %2 = and i32 %1, 504
+  %3 = icmp ugt i32 %2, 448
+  %4 = select i1 %3, i64 %0, i64 8
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -21,11 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 8
-  %3 = and i32 %2, 31
-  %4 = icmp ult i32 %3, 28
-  %5 = select i1 %4, i32 %0, i32 0
-  ret i32 %5
+  %2 = and i32 %1, 7168
+  %.not = icmp eq i32 %2, 7168
+  %3 = select i1 %.not, i32 0, i32 %0
+  ret i32 %3
 }
 
 ; 6 occurrences:
@@ -38,11 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 23
-  %3 = and i64 %2, 255
-  %4 = icmp eq i64 %3, 0
-  %5 = select i1 %4, i64 %0, i64 1073741824
-  ret i64 %5
+  %2 = and i64 %1, 2139095040
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 %0, i64 1073741824
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -50,11 +47,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 16
-  %3 = and i32 %2, 255
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 0
-  ret i32 %5
+  %2 = and i32 %1, 16711680
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 0, i32 %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

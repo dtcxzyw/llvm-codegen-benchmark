@@ -172,7 +172,7 @@ entry:
   %4 = mul i64 %1, 10
   %5 = sub i64 %3, %4
   %6 = icmp ugt i64 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

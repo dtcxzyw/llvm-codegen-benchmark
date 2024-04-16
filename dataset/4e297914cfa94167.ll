@@ -110,7 +110,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = and i32 %4, 31
   %6 = sub nuw nsw i32 32, %5
   ret i32 %6

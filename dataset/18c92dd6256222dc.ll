@@ -9,7 +9,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = icmp ult i32 %3, 10
-  %5 = icmp sgt i32 %0, %2
+  %5 = icmp slt i32 %2, %0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

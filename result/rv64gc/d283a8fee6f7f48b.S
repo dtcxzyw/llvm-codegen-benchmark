@@ -17,7 +17,6 @@ func0000000000000034:                   # @func0000000000000034
 	sltiu	a0, a0, 31
 	ret
 func0000000000000031:                   # @func0000000000000031
-	add	a0, a0, a1
-	andi	a0, a0, 1
-	seqz	a0, a0
+	xor	a0, a0, a1
+	xori	a0, a0, 1
 	ret

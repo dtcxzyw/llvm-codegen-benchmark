@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
-  %2 = xor i128 %1, -1
-  %3 = trunc i128 %2 to i64
-  %4 = and i64 %0, %3
+  %2 = trunc i128 %1 to i64
+  %3 = xor i64 %2, -1
+  %4 = and i64 %3, %0
   %5 = zext i64 %4 to i128
   ret i128 %5
 }

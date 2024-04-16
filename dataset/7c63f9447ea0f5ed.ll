@@ -10,7 +10,7 @@ entry:
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
   %4 = shl i64 %2, %3
   %5 = zext i64 %4 to i128
-  %6 = mul nuw i128 %0, %5
+  %6 = mul nuw i128 %5, %0
   ret i128 %6
 }
 

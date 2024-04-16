@@ -134,11 +134,11 @@ entry:
 define i16 @func0000000000000018(i1 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = or i16 %1, 8193
-  %4 = icmp ne i32 %2, 0
-  %5 = select i1 %4, i16 %3, i16 %1
-  %6 = or i16 %5, 257
-  %7 = select i1 %0, i16 %6, i16 %5
-  ret i16 %7
+  %.not = icmp eq i32 %2, 0
+  %4 = select i1 %.not, i16 %1, i16 %3
+  %5 = or i16 %4, 257
+  %6 = select i1 %0, i16 %5, i16 %4
+  ret i16 %6
 }
 
 ; 2 occurrences:

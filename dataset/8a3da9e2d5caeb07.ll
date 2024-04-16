@@ -102,7 +102,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   ret i32 %3
 }
 
@@ -879,7 +879,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   ret i64 %3
 }
 

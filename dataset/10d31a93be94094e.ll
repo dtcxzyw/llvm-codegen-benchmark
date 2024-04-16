@@ -9,7 +9,7 @@ define double @func0000000000000001(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2147483648
   %4 = sitofp i64 %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   %6 = sitofp i64 %1 to double
   %7 = fsub double %5, %6
   ret double %7

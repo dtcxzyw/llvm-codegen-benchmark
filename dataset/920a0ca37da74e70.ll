@@ -6,7 +6,7 @@ define double @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 63
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = sitofp i64 %5 to double
   ret double %6
 }
@@ -17,9 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = ashr i64 %3, 63
-  %5 = add nsw i64 %0, %4
+  %3 = icmp slt i64 %1, %2
+  %4 = sext i1 %3 to i64
+  %5 = add nsw i64 %4, %0
   %6 = sitofp i64 %5 to double
   ret double %6
 }

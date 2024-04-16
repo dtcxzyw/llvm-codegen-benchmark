@@ -5,7 +5,7 @@
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 17
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = lshr i32 %1, 17
   %6 = add nuw nsw i32 %4, %5
   %7 = shl nuw nsw i32 %6, 2
@@ -19,11 +19,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 17
-  %4 = add nuw nsw i32 %0, %3
-  %5 = lshr i32 %1, 17
-  %6 = add nuw nsw i32 %4, %5
-  %7 = shl i32 %6, 17
+  %3 = shl i32 %0, 17
+  %4 = add i32 %3, %2
+  %5 = and i32 %4, -131072
+  %6 = add i32 %5, %1
+  %7 = and i32 %6, -131072
   ret i32 %7
 }
 

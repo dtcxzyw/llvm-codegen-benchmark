@@ -131,9 +131,8 @@ define ptr @func0000000000000005(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.page.1998939, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 48
-  ret ptr %6
+  %5 = getelementptr %struct.page.1998939, ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

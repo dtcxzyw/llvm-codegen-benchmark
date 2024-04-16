@@ -12,7 +12,7 @@ entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 %1)
   %4 = icmp slt i64 %2, 0
   %5 = select i1 %4, i64 %1, i64 %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = call i32 @llvm.smin.i32(i32 %2, i32 %1)
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

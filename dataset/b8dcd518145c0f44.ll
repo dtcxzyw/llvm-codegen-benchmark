@@ -10,7 +10,7 @@
 define i64 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %0, %2
+  %3 = or disjoint i128 %2, %0
   %4 = freeze i128 %3
   %5 = udiv i128 %4, 10000000000000000000
   %6 = trunc i128 %5 to i64

@@ -7,7 +7,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = udiv i64 16777216, %0
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
   ret i32 %3
 }

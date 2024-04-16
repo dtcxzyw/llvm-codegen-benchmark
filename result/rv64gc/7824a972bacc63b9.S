@@ -13,9 +13,8 @@ func0000000000000311:                   # @func0000000000000311
 	or	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084
-	addiw	a1, a1, 1
-	sltiu	a1, a1, 385
-	xori	a1, a1, 1
+	addiw	a1, a1, -384
+	sltiu	a1, a1, -385
 	li	a2, 1
 	slli	a2, a2, 35
 	addi	a2, a2, -8

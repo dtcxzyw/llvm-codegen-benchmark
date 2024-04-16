@@ -1,7 +1,8 @@
 func00000000000000f1:                   # @func00000000000000f1
 	srliw	a2, a2, 12
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
@@ -12,8 +13,9 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srliw	a2, a2, 6
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000084:                   # @func0000000000000084
@@ -40,27 +42,27 @@ func00000000000000a1:                   # @func00000000000000a1
 	srli	a4, a4, 32
 	or	a4, a4, a6
 	srli	a5, a5, 32
+	add	a2, a2, a4
+	sltu	a4, a2, a4
 	add	a3, a3, a5
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	add	a0, a0, a4
-	sltu	a4, a0, a4
-	add	a1, a1, a3
-	add	a1, a1, a2
-	add	a1, a1, a4
+	add	a3, a3, a4
+	or	a1, a1, a3
+	or	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000101:                   # @func0000000000000101
 	srliw	a2, a2, 13
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000081:                   # @func0000000000000081
 	srli	a2, a2, 32
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000008a:                   # @func000000000000008a
@@ -93,14 +95,16 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	srliw	a2, a2, 16
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	or	a0, a0, a1
+	sext.w	a0, a0
 	snez	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	srli	a2, a2, 5
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
@@ -112,8 +116,9 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func00000000000001f1:                   # @func00000000000001f1
 	srliw	a2, a2, 2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000000ca:                   # @func00000000000000ca

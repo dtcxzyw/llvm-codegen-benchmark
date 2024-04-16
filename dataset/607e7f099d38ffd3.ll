@@ -22,8 +22,8 @@ declare float @llvm.fabs.f32(float) #1
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, i1 %1, double %2) #0 {
 entry:
-  %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = select i1 %0, double 0.000000e+00, double %3
+  %3 = select i1 %0, i1 true, i1 %1
+  %4 = select i1 %3, double 0.000000e+00, double %2
   %5 = call double @llvm.fabs.f64(double %4)
   ret double %5
 }

@@ -47,7 +47,7 @@ entry:
 define i1 @func0000000000000034(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %1
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = icmp sgt i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -65,7 +65,7 @@ entry:
 define i1 @func000000000000002c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %1
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = icmp slt i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -77,7 +77,7 @@ entry:
 define i1 @func0000000000000122(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = icmp uge i8 %0, %1
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = icmp eq i8 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -89,7 +89,7 @@ entry:
 define i1 @func000000000000010c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ugt i32 %0, %1
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = icmp slt i32 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -114,7 +114,7 @@ entry:
 define i1 @func00000000000000c2(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %0
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = icmp eq i32 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6

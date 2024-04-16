@@ -13,7 +13,7 @@ entry:
   %3 = and i64 %2, -16
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr inbounds i8, ptr %4, i64 %1
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = and i64 %2, 281474976710655
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

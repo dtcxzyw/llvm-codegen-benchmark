@@ -8,8 +8,9 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = or i1 %3, %0
   %5 = add i64 %1, 7
-  %6 = select i1 %4, i64 2147483655, i64 %5
-  %7 = icmp ult i64 %6, 16
+  %6 = icmp ult i64 %5, 16
+  %not. = xor i1 %4, true
+  %7 = select i1 %not., i1 %6, i1 false
   ret i1 %7
 }
 

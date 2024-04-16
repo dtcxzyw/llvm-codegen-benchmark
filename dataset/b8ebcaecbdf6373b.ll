@@ -9,7 +9,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr float, ptr %0, i64 %5
   ret ptr %6
 }
@@ -31,7 +31,7 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -55,7 +55,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %1, %4
+  %5 = mul nsw i64 %4, %1
   %6 = getelementptr double, ptr %0, i64 %5
   ret ptr %6
 }
@@ -67,7 +67,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %1, %4
+  %5 = mul nuw nsw i64 %4, %1
   %6 = getelementptr double, ptr %0, i64 %5
   ret ptr %6
 }

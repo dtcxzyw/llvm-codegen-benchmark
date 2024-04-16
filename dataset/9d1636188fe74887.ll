@@ -37,7 +37,7 @@ entry:
 define i1 @func0000000000000054(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, 0
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp sgt i32 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000110(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ult i32 %0, 16
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp ugt i32 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -100,7 +100,7 @@ entry:
 define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i64 %1, %2
   %6 = or i1 %4, %5
   ret i1 %6

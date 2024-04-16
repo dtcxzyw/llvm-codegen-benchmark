@@ -109,11 +109,11 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 6
-  %4 = icmp eq i32 %3, 0
-  %5 = trunc i32 %0 to i8
-  %6 = icmp ne i8 %5, 2
-  %7 = select i1 %6, i1 %4, i1 false
+  %3 = icmp eq i32 %2, 0
+  %4 = trunc i32 %0 to i8
+  %5 = icmp ne i8 %4, 2
+  %6 = select i1 %5, i1 %1, i1 false
+  %7 = select i1 %6, i1 %3, i1 false
   ret i1 %7
 }
 

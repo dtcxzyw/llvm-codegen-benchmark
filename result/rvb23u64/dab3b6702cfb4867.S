@@ -38,9 +38,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a0, a0, a1
-	srliw	a0, a0, 31
-	addi	a0, a0, -1
-	andi	a0, a0, -131
+	slti	a0, a0, 0
+	li	a1, -131
+	czero.nez	a0, a1, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sub	a0, a0, a1

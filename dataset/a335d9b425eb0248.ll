@@ -43,7 +43,7 @@ entry:
   %3 = and i32 %2, -268431361
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 4096
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

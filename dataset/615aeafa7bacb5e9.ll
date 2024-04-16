@@ -18,7 +18,7 @@
 define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = add i32 %4, 1518500249
   %6 = add i32 %5, %0
   ret i32 %6
@@ -81,7 +81,7 @@ entry:
 define i128 @func000000000000007a(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl nuw nsw i128 %2, 64
-  %4 = or disjoint i128 %1, %3
+  %4 = or disjoint i128 %3, %1
   %5 = add nuw i128 %4, 1
   %6 = add nuw i128 %5, %0
   ret i128 %6
@@ -120,7 +120,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = add i32 %4, 128
   %6 = add i32 %5, %0
   ret i32 %6

@@ -5,7 +5,7 @@
 define i32 @func000000000000011f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = add nsw i32 %1, -32618
   %6 = sub nuw nsw i32 %5, %4
   %7 = add nuw nsw i32 %6, %0
@@ -26,7 +26,7 @@ declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 define i32 @func0000000000000115(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = add nsw i32 %1, 190
   %6 = sub nsw i32 %5, %4
   %7 = add nsw i32 %6, %0

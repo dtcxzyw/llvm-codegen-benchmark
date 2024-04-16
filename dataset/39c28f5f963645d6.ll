@@ -208,10 +208,9 @@ define i1 @func0000000000000234(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp eq i32 %3, 2
-  %5 = sub nsw i32 %0, %1
-  %6 = icmp sgt i32 %5, 0
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %5 = icmp sgt i32 %0, %1
+  %6 = or i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:

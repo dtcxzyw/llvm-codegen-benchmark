@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = add nsw i32 %1, -8
-  %3 = tail call i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 29)
-  %4 = trunc i32 %3 to i8
+  %1 = zext i8 %0 to i16
+  %2 = add nuw nsw i16 %1, 2040
+  %3 = lshr i16 %2, 3
+  %4 = trunc i16 %3 to i8
   ret i8 %4
 }
 

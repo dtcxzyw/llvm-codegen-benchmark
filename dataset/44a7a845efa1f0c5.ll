@@ -14,7 +14,7 @@ entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 27
   %5 = icmp ne i64 %1, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -62,7 +62,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 2
   %5 = icmp ult i8 %1, 4
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -127,10 +127,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000110(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 15
+  %3 = and i8 %2, 14
   %4 = icmp ugt i8 %3, 9
   %5 = icmp ugt i8 %1, 9
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }

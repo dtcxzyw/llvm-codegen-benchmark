@@ -4,12 +4,11 @@
 ; Function Attrs: nounwind
 define i16 @func000000000000001f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = lshr i16 %2, 6
-  %4 = and i16 %3, 7
-  %5 = add nsw i16 %1, %4
-  %6 = shl nuw nsw i16 %5, 6
-  %7 = add nuw nsw i16 %6, %0
-  ret i16 %7
+  %3 = shl i16 %1, 6
+  %.mask = and i16 %2, 448
+  %4 = add i16 %.mask, %3
+  %5 = add nuw nsw i16 %4, %0
+  ret i16 %5
 }
 
 ; 2 occurrences:
@@ -20,7 +19,7 @@ define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 28
   %4 = and i32 %3, 2
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = shl nuw nsw i32 %5, 2
   %7 = add i32 %6, %0
   ret i32 %7
@@ -35,7 +34,7 @@ entry:
   %4 = and i128 %3, 36893488147419103230
   %5 = add nuw nsw i128 %4, %1
   %6 = shl nuw nsw i128 %5, 33
-  %7 = add nuw nsw i128 %0, %6
+  %7 = add nuw nsw i128 %6, %0
   ret i128 %7
 }
 

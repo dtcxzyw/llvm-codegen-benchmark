@@ -72,8 +72,8 @@ define i1 @func0000000000000348(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 1000000, %2
   %4 = icmp ult i32 %1, 1000000
-  %5 = select i1 %4, i64 %3, i64 0
-  %6 = icmp ugt i64 %5, %0
+  %5 = icmp ugt i64 %3, %0
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 

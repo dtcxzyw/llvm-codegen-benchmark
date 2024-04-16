@@ -52,11 +52,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 6
-  %3 = and i64 %2, 127
-  %4 = or disjoint i64 %0, %3
-  %5 = icmp ult i64 %4, 2432
-  ret i1 %5
+  %2 = icmp ult i64 %0, 2432
+  ret i1 %2
 }
 
 ; 42 occurrences:
@@ -253,7 +250,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 7
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -263,11 +260,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr exact i32 %1, 27
-  %3 = and i32 %2, 2
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ult i32 %4, 128
-  ret i1 %5
+  %2 = icmp ult i32 %0, 128
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -281,7 +275,7 @@ define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 7
   %3 = and i64 %2, 32
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = icmp ugt i64 %4, 31
   ret i1 %5
 }

@@ -29,12 +29,12 @@ func000000000000000a:                   # @func000000000000000a
 	sub	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a2, 80
+	li	a2, -80
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	addw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	li	a2, 94
+	li	a2, -94
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	addw	a0, a0, a1
 	ret

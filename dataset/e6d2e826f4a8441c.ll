@@ -35,7 +35,7 @@ entry:
 define i64 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1048575
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp sgt i64 %3, 999999
   %5 = add i64 %3, 48576
   %6 = select i1 %4, i64 %5, i64 %3

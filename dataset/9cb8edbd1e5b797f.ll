@@ -10,10 +10,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 8, i32 4
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
+  %1 = select i1 %0, i64 7, i64 3
+  ret i64 %1
 }
 
 ; 14 occurrences:
@@ -34,10 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 10, i32 9
-  %2 = add nuw nsw i32 %1, 9
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
+  %1 = select i1 %0, i64 19, i64 18
+  ret i64 %1
 }
 
 ; 2 occurrences:
@@ -46,10 +42,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 -12, i32 -17
-  %2 = add nsw i32 %1, -1
-  %3 = zext i32 %2 to i64
-  ret i64 %3
+  %1 = select i1 %0, i64 4294967283, i64 4294967278
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

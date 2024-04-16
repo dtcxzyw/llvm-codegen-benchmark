@@ -10,7 +10,7 @@ entry:
   %3 = xor i8 %2, -1
   %4 = trunc i64 %1 to i8
   %5 = or i8 %4, %3
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 

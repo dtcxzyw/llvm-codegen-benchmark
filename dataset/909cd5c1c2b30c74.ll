@@ -11,9 +11,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -8
-  %3 = select i1 %0, i64 8, i64 %2
-  %4 = trunc i64 %3 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, -8
+  %4 = select i1 %0, i32 8, i32 %3
   ret i32 %4
 }
 

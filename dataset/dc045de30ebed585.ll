@@ -8,8 +8,8 @@
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fsub float %1, %3
-  %5 = fsub float 1.000000e+00, %4
+  %4 = fsub float %3, %1
+  %5 = fadd float %4, 1.000000e+00
   %6 = fneg float %0
   %7 = tail call float @llvm.fmuladd.f32(float %6, float %5, float 1.000000e+00)
   ret float %7

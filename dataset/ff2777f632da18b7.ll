@@ -11,7 +11,7 @@ entry:
   %2 = lshr i8 %1, 6
   %3 = add nsw i8 %2, -1
   %4 = icmp ult i8 %3, 2
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

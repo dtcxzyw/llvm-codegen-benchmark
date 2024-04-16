@@ -79,7 +79,7 @@
 define i1 @func0000000000000071(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 1835008
   %6 = or disjoint i32 %4, %5
   %7 = icmp eq i32 %6, 1114112

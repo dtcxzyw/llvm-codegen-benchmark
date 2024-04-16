@@ -7,12 +7,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw i32 %1, 1
-  %3 = shl i32 %2, 3
-  %4 = or disjoint i32 %3, 4
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, 12
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -21,12 +20,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = shl i32 %2, 3
-  %4 = or disjoint i32 %3, 4
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, 12
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -38,12 +36,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = shl nsw i32 %2, 2
-  %4 = or disjoint i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  ret ptr %6
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, 5
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -51,12 +48,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = shl i32 %2, 1
-  %4 = or disjoint i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.Yosys::RTLIL::SigBit.1891952", ptr %0, i64 %5
-  ret ptr %6
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, -1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds %"struct.Yosys::RTLIL::SigBit.1891952", ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -64,12 +60,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = shl i32 %2, 1
-  %4 = or disjoint i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  ret ptr %6
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -78,12 +73,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = shl nsw i32 %2, 1
-  %4 = or disjoint i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
-  ret ptr %6
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, -1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds double, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

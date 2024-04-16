@@ -7,7 +7,7 @@ define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = and i64 %2, 65280
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = trunc i64 %4 to i32
   %6 = call i32 @llvm.bswap.i32(i32 %5)
   ret i32 %6

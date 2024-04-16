@@ -6,9 +6,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 %3, %0
+  %2 = trunc i64 %1 to i32
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -4
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, -4
   %4 = sub i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
@@ -32,9 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = trunc i64 %2 to i32
-  %4 = sub i32 %3, %0
+  %2 = trunc i64 %1 to i32
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

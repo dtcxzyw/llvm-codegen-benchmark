@@ -7,7 +7,7 @@ entry:
   %3 = shl i16 %2, 6
   %4 = and i16 %3, 128
   %5 = and i16 %1, 2
-  %6 = add nuw nsw i16 %0, %5
+  %6 = add nuw nsw i16 %5, %0
   %7 = or disjoint i16 %6, %4
   ret i16 %7
 }

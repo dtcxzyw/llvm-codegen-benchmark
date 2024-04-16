@@ -9,7 +9,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = xor i64 %4, 9223372036854775807
+  %5 = xor i64 %4, 9223372036854775806
   %6 = icmp ult i64 %5, 2
   ret i1 %6
 }

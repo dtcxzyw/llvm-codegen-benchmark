@@ -6,12 +6,9 @@ func0000000000000166:                   # @func0000000000000166
 	and	a0, a0, a2
 	ret
 func00000000000001a6:                   # @func00000000000001a6
-	sext.w	a2, a1
-	sext.w	a3, a0
-	subw	a1, a1, a0
-	sgtz	a0, a1
-	slt	a1, a3, a2
-	and	a0, a0, a1
+	sext.w	a1, a1
+	sext.w	a0, a0
+	slt	a0, a0, a1
 	ret
 func00000000000001cc:                   # @func00000000000001cc
 	sext.w	a2, a0

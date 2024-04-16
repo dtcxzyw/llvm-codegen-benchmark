@@ -10,7 +10,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 4096
   %5 = getelementptr inbounds i64, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 4096
   %5 = getelementptr inbounds i64, ptr %4, i64 %3
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 -56
   %5 = getelementptr inbounds %"class.hermes::vm::PinnedHermesValue.1855495", ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = sub nuw nsw i64 -40, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 -4
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = getelementptr inbounds i8, ptr %1, i64 -16
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 -80
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

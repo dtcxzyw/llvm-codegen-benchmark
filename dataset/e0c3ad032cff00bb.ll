@@ -8,9 +8,9 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.000000e+00, %2
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = fsub float 1.000000e+00, %4
-  %6 = fmul float %0, %3
+  %6 = fmul float %3, %0
   %7 = fsub float %5, %6
   ret float %7
 }

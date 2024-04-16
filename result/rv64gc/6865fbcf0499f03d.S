@@ -11,11 +11,11 @@ func0000000000000080:                   # @func0000000000000080
 func000000000000008a:                   # @func000000000000008a
 	li	a2, -1
 	mulhu	a2, a4, a2
-	sub	a4, a0, a5
-	add	a2, a2, a4
-	sltu	a0, a2, a0
+	sub	a2, a2, a5
+	add	a4, a2, a0
+	sltu	a0, a4, a2
 	add	a1, a1, a0
-	add	a0, a2, a3
-	sltu	a2, a0, a2
+	add	a0, a4, a3
+	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret

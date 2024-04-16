@@ -100,10 +100,8 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = call i32 @llvm.smin.i32(i32 %1, i32 %0)
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %2 = icmp slt i32 %1, %0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -124,10 +122,8 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = icmp sle i32 %0, %1
+  ret i1 %2
 }
 
 ; 38 occurrences:
@@ -220,10 +216,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.smin.i32(i32 %1, i32 %0)
-  %3 = sub i32 %0, %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = icmp sle i32 %0, %1
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -232,10 +226,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %2 = icmp sgt i32 %0, %1
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -245,10 +237,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.smin.i64(i64 %1, i64 %0)
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp slt i64 %3, 1
-  ret i1 %4
+  %2 = icmp sge i64 %1, %0
+  ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

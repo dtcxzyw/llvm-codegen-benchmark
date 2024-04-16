@@ -3,7 +3,7 @@ func0000000000000023:                   # @func0000000000000023
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB0_2
-	li	a1, -9
+	li	a1, 247
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255

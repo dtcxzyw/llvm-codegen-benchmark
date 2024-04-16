@@ -1,7 +1,7 @@
 func0000000000000019:                   # @func0000000000000019
-	srli	a1, a1, 1
+	andi	a1, a1, -2
+	or	a0, a0, a1
 	slli	a0, a0, 2
-	sh3add	a0, a1, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slliw	a1, a1, 2
@@ -11,14 +11,18 @@ func0000000000000016:                   # @func0000000000000016
 	or	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	slliw	a1, a1, 2
-	andi	a1, a1, -256
+	slli	a1, a1, 2
+	lui	a2, 524288
+	addiw	a2, a2, -256
+	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	slliw	a1, a1, 4
-	andi	a1, a1, -256
+	slli	a1, a1, 4
+	lui	a2, 524288
+	addiw	a2, a2, -256
+	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret

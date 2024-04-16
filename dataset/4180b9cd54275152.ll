@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = icmp eq i8 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = icmp eq i32 %4, -2
-  ret i1 %5
+  %2 = icmp eq i8 %1, 0
+  %3 = icmp eq i32 %0, -2
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 5 occurrences:
@@ -63,11 +62,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i16 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i16
-  %3 = icmp eq i8 %1, 0
-  %4 = select i1 %3, i16 %0, i16 %2
-  %5 = icmp ugt i16 %4, 255
-  ret i1 %5
+  %2 = icmp eq i8 %1, 0
+  %3 = icmp ugt i16 %0, 255
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 2 occurrences:

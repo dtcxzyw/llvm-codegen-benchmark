@@ -8,7 +8,7 @@ define i1 @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3CB0000000000000
   %4 = select i1 %1, double 0x10000000000000, double %3
-  %5 = fcmp olt double %0, %4
+  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ define i1 @func000000000000000a(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 1.000000e+01
   %4 = select i1 %1, float 0.000000e+00, float %3
-  %5 = fcmp ole float %0, %4
+  %5 = fcmp oge float %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ define i1 @func0000000000000004(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 2.000000e+00
   %4 = select i1 %1, float 5.000000e+00, float %3
-  %5 = fcmp ogt float %0, %4
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ define i1 @func0000000000000008(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3F847AE140000000
   %4 = select i1 %1, float 1.000000e+00, float %3
-  %5 = fcmp oeq float %0, %4
+  %5 = fcmp oeq float %4, %0
   ret i1 %5
 }
 
@@ -56,7 +56,7 @@ define i1 @func0000000000000003(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 2.000000e+00
   %4 = select i1 %1, float 2.500000e-01, float %3
-  %5 = fcmp ult float %0, %4
+  %5 = fcmp ugt float %4, %0
   ret i1 %5
 }
 
@@ -68,7 +68,7 @@ define i1 @func0000000000000005(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
   %4 = select i1 %1, double 0.000000e+00, double %3
-  %5 = fcmp ugt double %0, %4
+  %5 = fcmp ult double %4, %0
   ret i1 %5
 }
 
@@ -80,7 +80,7 @@ define i1 @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
   %4 = select i1 %1, double 0.000000e+00, double %3
-  %5 = fcmp oge double %0, %4
+  %5 = fcmp ole double %4, %0
   ret i1 %5
 }
 

@@ -40,13 +40,13 @@ func0000000000000009:                   # @func0000000000000009
 	add.uw	a0, a1, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	addi	a1, a1, -4
-	bexti	a1, a1, 2
+	andi	a1, a1, 4
+	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	addi	a1, a1, -4
-	bexti	a1, a1, 2
+	andi	a1, a1, 4
+	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -55,8 +55,8 @@ func0000000000000003:                   # @func0000000000000003
 	add.uw	a0, a1, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
-	addi	a1, a1, 20
-	bexti	a1, a1, 2
+	andi	a1, a1, 4
+	seqz	a1, a1
 	add	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

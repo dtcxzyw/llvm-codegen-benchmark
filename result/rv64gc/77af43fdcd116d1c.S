@@ -1,8 +1,7 @@
 func0000000000000118:                   # @func0000000000000118
-	bnez	a1, .LBB0_2
-	ori	a0, a2, 64
-.LBB0_2:                                # %entry
 	sext.w	a0, a0
+	seqz	a1, a1
 	sltiu	a0, a0, 64
 	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret

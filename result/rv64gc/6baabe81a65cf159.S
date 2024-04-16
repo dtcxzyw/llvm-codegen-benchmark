@@ -1,6 +1,7 @@
 func0000000000000014:                   # @func0000000000000014
-	sraiw	a2, a2, 3
-	addi	a2, a2, 1
+	sext.w	a2, a2
+	not	a2, a2
+	srli	a2, a2, 3
 	mul	a1, a2, a1
-	subw	a0, a0, a1
+	addw	a0, a0, a1
 	ret

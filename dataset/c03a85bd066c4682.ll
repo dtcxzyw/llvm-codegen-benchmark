@@ -8,9 +8,8 @@
 define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 720
-  %2 = shl nsw i64 %1, 1
-  %3 = icmp ugt i64 %2, 1152921504606846975
-  ret i1 %3
+  %2 = icmp ugt i64 %1, 1152921504606846975
+  ret i1 %2
 }
 
 ; 9 occurrences:
@@ -27,9 +26,9 @@ entry:
 define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 48
-  %2 = shl i64 %1, 32
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %.mask = and i64 %1, 4294967295
+  %2 = icmp eq i64 %.mask, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

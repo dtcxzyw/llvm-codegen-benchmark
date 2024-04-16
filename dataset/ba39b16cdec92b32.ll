@@ -12,7 +12,7 @@ entry:
   %2 = icmp slt i32 %1, 768
   %3 = icmp ne i32 %1, 0
   %4 = and i1 %3, %2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = icmp ne i32 %1, 65536
   %3 = icmp sgt i32 %1, 771
   %4 = and i1 %3, %2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

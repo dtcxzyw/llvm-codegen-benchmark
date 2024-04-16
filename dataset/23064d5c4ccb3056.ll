@@ -31,11 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 32
-  %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr inbounds [32 x i8], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = zext nneg i32 %0 to i64
+  %4 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %1, i64 0, i64 %2, i32 9, i64 %3
+  ret ptr %4
 }
 
 ; 8 occurrences:
@@ -50,11 +48,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [8 x %struct.SCC2698Channel.1662671], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 69
-  %5 = zext i8 %0 to i64
-  %6 = getelementptr [3 x i8], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = zext i8 %0 to i64
+  %4 = getelementptr [8 x %struct.SCC2698Channel.1662671], ptr %1, i64 0, i64 %2, i32 6, i64 %3
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -66,11 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds [2 x %"struct.gjkepa2_impl::GJK::sSimplex.1742108"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 32
-  %5 = zext i32 %0 to i64
-  %6 = getelementptr inbounds [4 x float], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = zext i32 %0 to i64
+  %4 = getelementptr inbounds [2 x %"struct.gjkepa2_impl::GJK::sSimplex.1742108"], ptr %1, i64 0, i64 %2, i32 1, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

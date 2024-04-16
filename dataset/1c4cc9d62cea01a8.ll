@@ -181,9 +181,9 @@
 define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
-  %5 = add nuw i32 %4, 1
+  %3 = tail call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %4 = add nuw i32 %3, 1
+  %5 = select i1 %2, i32 1, i32 %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

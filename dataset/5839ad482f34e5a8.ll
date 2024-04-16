@@ -10,7 +10,7 @@ define i1 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 768
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -45,8 +45,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, -1
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
   %5 = and i1 %4, %1
   %6 = and i1 %5, %0
   ret i1 %6
@@ -69,7 +69,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ult i32 %3, 13
   %5 = and i1 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -85,7 +85,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, -142
   %5 = and i1 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

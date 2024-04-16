@@ -20,7 +20,7 @@ define float @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = and i32 %2, -2147483648
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = bitcast i32 %4 to float
   ret float %5
 }

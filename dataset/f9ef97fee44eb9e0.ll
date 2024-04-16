@@ -398,8 +398,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %0, %5
-  %7 = icmp ult i64 %6, %5
+  %6 = xor i64 %5, -1
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

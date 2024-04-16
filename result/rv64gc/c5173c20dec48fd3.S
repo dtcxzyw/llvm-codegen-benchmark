@@ -1,8 +1,8 @@
 func0000000000000206:                   # @func0000000000000206
 	sext.w	a1, a1
 	seqz	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func0000000000000204:                   # @func0000000000000204
 	sext.w	a1, a1
@@ -45,6 +45,7 @@ func0000000000001808:                   # @func0000000000001808
 	sltiu	a1, a1, -1
 	add	a0, a0, a1
 	srliw	a0, a0, 15
+	slli	a0, a0, 15
 	snez	a0, a0
 	ret
 func0000000000001841:                   # @func0000000000001841

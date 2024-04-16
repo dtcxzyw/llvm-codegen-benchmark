@@ -9,7 +9,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = mul nuw i64 %0, %5
+  %6 = mul nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 288230376151711748
   %5 = zext i64 %4 to i128
-  %6 = mul nuw nsw i128 %0, %5
+  %6 = mul nuw nsw i128 %5, %0
   ret i128 %6
 }
 

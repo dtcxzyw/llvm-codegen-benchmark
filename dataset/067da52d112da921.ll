@@ -5,11 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0) #0 {
 entry:
-  %1 = tail call i8 @llvm.umin.i8(i8 %0, i8 100)
-  %2 = icmp eq i8 %0, 0
-  %3 = select i1 %2, i8 1, i8 %1
-  %4 = icmp ult i8 %3, 50
-  ret i1 %4
+  %1 = icmp ult i8 %0, 50
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -23,11 +20,7 @@ declare i8 @llvm.umin.i8(i8, i8) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i8 %0) #0 {
 entry:
-  %1 = tail call i8 @llvm.umin.i8(i8 %0, i8 100)
-  %2 = icmp eq i8 %0, 0
-  %3 = select i1 %2, i8 1, i8 %1
-  %4 = icmp eq i8 %3, 0
-  ret i1 %4
+  ret i1 false
 }
 
 ; 4 occurrences:
@@ -38,11 +31,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.umin.i32(i32 %0, i32 8192)
-  %2 = icmp slt i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = icmp slt i32 %0, 1
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -54,11 +44,8 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i8 %0) #0 {
 entry:
-  %1 = tail call i8 @llvm.umin.i8(i8 %0, i8 32)
-  %2 = icmp eq i8 %0, 0
-  %3 = select i1 %2, i8 1, i8 %1
-  %4 = icmp ugt i8 %3, 2
-  ret i1 %4
+  %1 = icmp ugt i8 %0, 2
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -67,11 +54,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.umin.i32(i32 %0, i32 9)
-  %2 = icmp slt i32 %0, 1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = icmp ugt i32 %3, 5
-  ret i1 %4
+  %1 = icmp sgt i32 %0, 5
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -80,11 +64,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.umin.i32(i32 %0, i32 1048576)
-  %2 = icmp ult i32 %0, 1024
-  %3 = select i1 %2, i32 4096, i32 %1
-  %4 = icmp ult i32 %3, 4096
-  ret i1 %4
+  %1 = add i32 %0, -1024
+  %2 = icmp ult i32 %1, 3072
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = udiv i16 1000, %2
   %4 = zext nneg i16 %3 to i32
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 

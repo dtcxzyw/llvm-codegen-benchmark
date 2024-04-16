@@ -254,7 +254,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 524288
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = and i32 %1, 2097152
   %7 = or i32 %5, %6
   ret i32 %7
@@ -284,7 +284,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 2097152
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = and i32 %1, 268435456
   %7 = or i32 %5, %6
   ret i32 %7
@@ -299,7 +299,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 10
   %4 = and i32 %3, 992
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = and i32 %1, 31744
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -312,7 +312,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1048576
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = and i32 %1, 262144
   %7 = or i32 %5, %6
   ret i32 %7

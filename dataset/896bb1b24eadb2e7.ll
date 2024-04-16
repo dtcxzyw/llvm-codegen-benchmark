@@ -15,9 +15,9 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, %3
-  %6 = or i1 %0, %5
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -36,9 +36,9 @@ entry:
 define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 32
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, %3
-  %6 = or i1 %0, %5
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -48,8 +48,8 @@ entry:
 define i1 @func0000000000000188(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, %3
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -61,8 +61,8 @@ entry:
 define i1 @func0000000000000108(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
-  %4 = add i64 %3, %1
-  %5 = icmp ult i64 %4, %3
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }

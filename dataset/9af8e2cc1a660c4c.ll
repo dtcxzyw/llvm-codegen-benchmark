@@ -20,9 +20,9 @@
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3968
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -32,9 +32,9 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 3
-  %4 = add i8 %1, %3
+  %4 = add i8 %3, %1
   %5 = zext i8 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

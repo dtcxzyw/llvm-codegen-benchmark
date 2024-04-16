@@ -13,7 +13,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or i64 %3, %2
   %5 = and i64 %4, 71777214294589695
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or i64 %3, %2
   %5 = and i64 %4, 6148914691236517205
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

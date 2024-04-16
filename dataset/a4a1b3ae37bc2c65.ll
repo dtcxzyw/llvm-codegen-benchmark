@@ -19,7 +19,7 @@ entry:
   %4 = getelementptr inbounds i8, ptr %1, i64 664
   %5 = getelementptr [512 x %struct.TCGTemp.1662904], ptr %4, i64 0, i64 %3
   %6 = getelementptr i8, ptr %5, i64 56
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -30,10 +30,9 @@ define i1 @func0000000000000071(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 144
-  %5 = getelementptr inbounds [5 x %"class.std::map.12.1752829"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  %7 = icmp eq ptr %0, %6
-  ret i1 %7
+  %5 = getelementptr inbounds [5 x %"class.std::map.12.1752829"], ptr %4, i64 0, i64 %3, i32 0, i32 0, i32 1
+  %6 = icmp eq ptr %5, %0
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -44,10 +43,9 @@ define i1 @func0000000000000051(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
-  %5 = getelementptr [16 x %struct.xhci_interval_bw.2003829], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  %7 = icmp eq ptr %0, %6
-  ret i1 %7
+  %5 = getelementptr [16 x %struct.xhci_interval_bw.2003829], ptr %4, i64 0, i64 %3, i32 1
+  %6 = icmp eq ptr %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

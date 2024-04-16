@@ -6,11 +6,9 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = shl i64 %2, 30
-  %4 = add i64 %3, -4294967296
-  %5 = ashr i64 %4, 32
-  %6 = icmp eq i64 %5, -1
-  ret i1 %6
+  %3 = and i64 %2, 17179869180
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -21,9 +19,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = shl i64 %2, 29
   %4 = add i64 %3, 4294967296
-  %5 = ashr i64 %4, 32
-  %6 = icmp ugt i64 %5, 2305843009213693951
-  ret i1 %6
+  %5 = icmp slt i64 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -1,8 +1,9 @@
 func0000000000000023:                   # @func0000000000000023
-	snez	a0, a0
-	bclri	a1, a1, 15
-	bclri	a1, a1, 16
-	slli	a0, a0, 16
+	bclri	a2, a1, 15
+	bclri	a2, a2, 16
+	bseti	a1, a1, 16
+	czero.eqz	a1, a1, a0
+	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	bseti	a0, a0, 15
 	ret

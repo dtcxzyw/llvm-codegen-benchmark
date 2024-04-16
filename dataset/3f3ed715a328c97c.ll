@@ -7,7 +7,7 @@ entry:
   %3 = add nsw i64 %2, -53
   %4 = lshr i64 %3, 1
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %1)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 1
   %5 = tail call noundef i64 @llvm.umin.i64(i64 %4, i64 %1)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

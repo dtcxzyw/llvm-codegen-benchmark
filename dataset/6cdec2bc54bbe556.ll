@@ -211,8 +211,8 @@ define i1 @func0000000000000054(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = select i1 %3, i64 1, i64 %0
-  %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, %0
+  %5 = xor i64 %0, -1
+  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 

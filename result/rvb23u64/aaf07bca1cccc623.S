@@ -1,13 +1,15 @@
 func0000000000000019:                   # @func0000000000000019
-	addi	a1, a1, 1
-	slliw	a1, a1, 16
+	slli	a1, a1, 16
+	lui	a2, 16
+	addw	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 255
-	addi	a1, a1, -128
 	slli	a1, a1, 6
-	or	a0, a0, a1
+	lui	a2, 1048574
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
 	andi	a1, a1, 255

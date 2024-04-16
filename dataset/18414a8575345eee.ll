@@ -78,7 +78,7 @@ entry:
   %2 = and i32 %1, 56
   %3 = and i32 %0, 7
   %4 = or disjoint i32 %3, %2
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 
@@ -91,7 +91,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = and i32 %0, 2
   %4 = or i32 %3, %2
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 
@@ -100,7 +100,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1984
+  %2 = and i32 %1, 192
   %3 = and i32 %0, 63
   %4 = or disjoint i32 %3, %2
   %5 = trunc nuw i32 %4 to i8

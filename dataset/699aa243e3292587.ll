@@ -10,7 +10,7 @@ define double @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
   %3 = fadd double %2, -1.000000e+00
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }
@@ -22,7 +22,7 @@ define float @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fadd float %2, 2.000000e+00
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   %5 = select i1 %4, float %3, float %0
   ret float %5
 }

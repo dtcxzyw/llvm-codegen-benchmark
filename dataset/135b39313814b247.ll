@@ -69,8 +69,8 @@ define i1 @func00000000000001f1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %0, i64 64
   %4 = getelementptr inbounds %"struct.rocksdb::CacheAlignedWrapper.1568854", ptr %3, i64 %1
-  %5 = add nuw nsw i64 %2, 64
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %2
+  %6 = getelementptr i8, ptr %5, i64 64
   %7 = icmp eq ptr %6, %4
   ret i1 %7
 }
@@ -84,8 +84,8 @@ define i1 @func00000000000000f1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 8
   %4 = getelementptr inbounds %"struct.duckdb::UnifiedVectorFormat.1806402", ptr %3, i64 %1
-  %5 = add nuw nsw i64 %2, 72
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %2
+  %6 = getelementptr i8, ptr %5, i64 72
   %7 = icmp eq ptr %6, %4
   ret i1 %7
 }

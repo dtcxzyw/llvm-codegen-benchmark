@@ -59,11 +59,12 @@ func000000000000018c:                   # @func000000000000018c
 	ret
 func0000000000000110:                   # @func0000000000000110
 	andi	a1, a0, 255
-	andi	a0, a0, 15
-	sltiu	a0, a0, 14
+	andi	a0, a0, 14
+	addi	a0, a0, -14
+	seqz	a0, a0
 	sltiu	a1, a1, 224
-	and	a0, a0, a1
-	xori	a0, a0, 1
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 func0000000000000190:                   # @func0000000000000190
 	andi	a1, a0, 255
@@ -96,13 +97,8 @@ func0000000000000102:                   # @func0000000000000102
 	or	a0, a0, a1
 	ret
 func000000000000010c:                   # @func000000000000010c
-	slli	a1, a0, 56
-	srai	a1, a1, 56
-	andi	a0, a0, 15
-	sltiu	a0, a0, 4
-	xori	a0, a0, 1
-	slti	a1, a1, 0
-	or	a0, a0, a1
+	andi	a0, a0, 140
+	snez	a0, a0
 	ret
 func0000000000000194:                   # @func0000000000000194
 	sext.w	a1, a0

@@ -17,11 +17,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 0
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr inbounds [2 x i64], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = icmp ne i64 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr inbounds [2 x i64], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -30,11 +29,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr [2 x ptr], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = icmp ne i32 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr [2 x ptr], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -42,11 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 3
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr inbounds [2 x ptr], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = icmp ugt i8 %1, 2
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr inbounds [2 x ptr], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -55,11 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 2
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = icmp ult i32 %1, 3
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr [2 x %struct.nf_ct_seqadj.2003471], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -67,11 +63,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 1
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr inbounds [2 x %"class.std::vector.268.2038004"], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = icmp ult i64 %1, 2
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr inbounds [2 x %"class.std::vector.268.2038004"], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -79,11 +74,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 3
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr [2 x ptr], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = icmp ugt i32 %1, 2
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr [2 x ptr], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -91,11 +85,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 2
-  %3 = xor i1 %2, true
-  %4 = zext i1 %3 to i64
-  %5 = getelementptr inbounds [2 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %.not = icmp eq i32 %1, 2
+  %2 = zext i1 %.not to i64
+  %3 = getelementptr inbounds [2 x i8], ptr %0, i64 0, i64 %2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

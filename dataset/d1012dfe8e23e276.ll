@@ -7,11 +7,10 @@
 define ptr @func000000000000003b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
-  %5 = or disjoint i64 %4, %1
-  %6 = sub nsw i64 0, %5
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
-  ret ptr %7
+  %.neg = mul nsw i64 %3, -16
+  %.neg1 = sub i64 %.neg, %1
+  %4 = getelementptr inbounds i8, ptr %0, i64 %.neg1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

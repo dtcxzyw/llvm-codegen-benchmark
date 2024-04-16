@@ -6,7 +6,7 @@
 define i1 @func0000000000000008(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp ugt i32 %3, 22
   ret i1 %4
 }
@@ -22,7 +22,7 @@ entry:
 define i1 @func0000000000000006(i16 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i16
-  %3 = add i16 %0, %2
+  %3 = add i16 %2, %0
   %4 = icmp slt i16 %3, 0
   ret i1 %4
 }
@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000016(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -72,7 +72,7 @@ entry:
 define i1 @func0000000000000018(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp ugt i32 %3, 22
   ret i1 %4
 }
@@ -83,7 +83,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp ult i32 %3, 32
   ret i1 %4
 }
@@ -106,7 +106,7 @@ entry:
 define i1 @func000000000000001a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -119,7 +119,7 @@ entry:
 define i1 @func0000000000000011(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp eq i64 %3, -9223372036854775808
   ret i1 %4
 }

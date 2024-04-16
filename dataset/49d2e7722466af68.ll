@@ -561,7 +561,7 @@ entry:
   %3 = and i8 %2, 63
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, 10
-  %6 = or disjoint i32 %1, %5
+  %6 = or disjoint i32 %5, %1
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

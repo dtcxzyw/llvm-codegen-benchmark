@@ -16,14 +16,14 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000a:                   # @func000000000000000a
 	slli	a4, a4, 48
 	srli	a4, a4, 8
-	add	a4, a4, a0
-	sltu	a0, a4, a0
+	add	a3, a4, a0
+	sltu	a0, a3, a4
 	add	a1, a1, a0
 	lui	a0, 65535
 	slli	a0, a0, 28
 	and	a0, a0, a2
-	add	a0, a0, a4
-	sltu	a2, a0, a4
+	add	a0, a0, a3
+	sltu	a2, a0, a3
 	add	a1, a1, a2
 	ret
 func0000000000000030:                   # @func0000000000000030

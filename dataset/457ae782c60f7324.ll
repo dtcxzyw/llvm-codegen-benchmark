@@ -8,8 +8,8 @@
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = select i1 %0, i32 %2, i32 3
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 %3, i64 3
   ret i64 %4
 }
 
@@ -20,8 +20,8 @@ entry:
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = select i1 %0, i32 %2, i32 4
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 %3, i64 4
   ret i64 %4
 }
 

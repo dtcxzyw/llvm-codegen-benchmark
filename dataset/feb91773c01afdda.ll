@@ -36,8 +36,8 @@ entry:
 define i16 @func0000000000000002(i8 %0) #0 {
 entry:
   %1 = lshr i8 %0, 4
-  %2 = zext nneg i8 %1 to i16
-  %3 = or i16 %2, 2
+  %2 = or i8 %1, 2
+  %3 = zext nneg i8 %2 to i16
   ret i16 %3
 }
 

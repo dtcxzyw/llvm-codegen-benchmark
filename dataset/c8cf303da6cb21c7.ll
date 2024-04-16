@@ -7,7 +7,7 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 1073741824)
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = select i1 %0, i32 %4, i32 %1
   ret i32 %5
 }

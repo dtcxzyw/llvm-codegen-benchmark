@@ -24,7 +24,7 @@ entry:
   %2 = and i32 %1, -16
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 16
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -40,10 +40,10 @@ entry:
 define i32 @func000000000000001c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4095
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add i32 %4, %0
-  ret i32 %5
+  %narrow = add nuw nsw i16 %2, 1
+  %3 = zext nneg i16 %narrow to i32
+  %4 = add i32 %3, %0
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -54,10 +54,10 @@ entry:
 define i32 @func000000000000001d(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4095
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add nsw i32 %0, %4
-  ret i32 %5
+  %narrow = add nuw nsw i16 %2, 1
+  %3 = zext nneg i16 %narrow to i32
+  %4 = add nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 9 occurrences:
@@ -74,10 +74,10 @@ entry:
 define i32 @func000000000000001f(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4095
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw nsw i32 %0, %4
-  ret i32 %5
+  %narrow = add nuw nsw i16 %2, 1
+  %3 = zext nneg i16 %narrow to i32
+  %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -113,7 +113,7 @@ entry:
   %2 = and i16 %1, -256
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %3, -40
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

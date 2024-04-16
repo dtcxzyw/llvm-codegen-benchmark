@@ -11,7 +11,7 @@
 define double @func0000000000000001(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, 0xBF66C16C16C16C17
-  %3 = fmul double %0, %2
+  %3 = fmul double %2, %0
   %4 = tail call noundef double @llvm.fmuladd.f64(double %3, double %0, double %1)
   ret double %4
 }
@@ -27,7 +27,7 @@ declare double @llvm.fmuladd.f64(double, double, double) #1
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, 0x3EA0DED40694CE29
-  %3 = fmul double %0, %2
+  %3 = fmul double %2, %0
   %4 = tail call double @llvm.fmuladd.f64(double %3, double %0, double %1)
   ret double %4
 }

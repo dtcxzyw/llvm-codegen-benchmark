@@ -10,7 +10,7 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
   %6 = zext i1 %5 to i64
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = icmp eq i64 %3, 30064771072
   %5 = select i1 %4, i1 %1, i1 false
   %6 = zext i1 %5 to i32
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = icmp eq i32 %3, 62
   %5 = select i1 %4, i1 %1, i1 false
   %6 = zext i1 %5 to i8
-  %7 = add i8 %0, %6
+  %7 = add i8 %6, %0
   ret i8 %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
   %6 = zext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

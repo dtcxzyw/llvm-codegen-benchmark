@@ -5,9 +5,9 @@
 define i1 @func0000000000000005(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -18,9 +18,9 @@ entry:
 define i1 @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -30,9 +30,9 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -43,9 +43,9 @@ entry:
 define i1 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -85,7 +85,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = and i64 %3, %1
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

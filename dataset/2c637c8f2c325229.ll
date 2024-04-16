@@ -20,8 +20,8 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000048(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ult i32 %3, 64
+  %3 = and i64 %2, 4294967232
+  %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 6, i32 %1
   %6 = tail call i32 @llvm.umin.i32(i32 %0, i32 %5)
   ret i32 %6
@@ -33,8 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000068(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp ult i32 %3, 64
+  %3 = and i64 %2, 4294967232
+  %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 6, i32 %1
   %6 = call i32 @llvm.umin.i32(i32 %0, i32 %5)
   ret i32 %6

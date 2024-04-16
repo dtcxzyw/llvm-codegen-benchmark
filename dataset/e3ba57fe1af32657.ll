@@ -8,8 +8,8 @@ define i64 @func000000000000000b(i1 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 576460752303423487)
-  %4 = select i1 %0, i64 576460752303423487, i64 %3
-  %5 = shl nuw nsw i64 %4, 4
+  %4 = shl nuw nsw i64 %3, 4
+  %5 = select i1 %0, i64 9223372036854775792, i64 %4
   ret i64 %5
 }
 

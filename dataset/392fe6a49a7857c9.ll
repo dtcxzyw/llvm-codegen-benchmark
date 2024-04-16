@@ -55,12 +55,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = ptrtoint ptr %1 to i64
-  %4 = ptrtoint ptr %2 to i64
-  %5 = sub i64 %4, %3
-  %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
-  ret i1 %7
+  %3 = icmp eq ptr %0, %2
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -69,12 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = ptrtoint ptr %1 to i64
-  %4 = ptrtoint ptr %2 to i64
-  %5 = sub i64 %4, %3
-  %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
-  ret i1 %7
+  %3 = icmp ult ptr %0, %2
+  ret i1 %3
 }
 
 ; 15 occurrences:
@@ -96,12 +88,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = ptrtoint ptr %1 to i64
-  %4 = ptrtoint ptr %2 to i64
-  %5 = sub i64 %4, %3
-  %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
-  ret i1 %7
+  %3 = icmp ult ptr %0, %2
+  ret i1 %3
 }
 
 ; 37 occurrences:
@@ -145,12 +133,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = ptrtoint ptr %1 to i64
-  %4 = ptrtoint ptr %2 to i64
-  %5 = sub i64 %4, %3
-  %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
-  ret i1 %7
+  %3 = icmp eq ptr %0, %2
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -47,7 +47,7 @@
 define i64 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i64
   ret i64 %5
@@ -59,7 +59,7 @@ entry:
 define i32 @func0000000000000038(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5
@@ -75,7 +75,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5

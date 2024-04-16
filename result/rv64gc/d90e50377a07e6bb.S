@@ -6,7 +6,7 @@ func0000000000000009:                   # @func0000000000000009
 	sub	a0, a2, a0
 	ret
 .LBB0_3:                                # %entry
-	add	a2, a0, a1
+	add	a2, a1, a0
 	blt	a2, a1, .LBB0_2
 .LBB0_4:                                # %entry
 	sub	a0, a1, a0

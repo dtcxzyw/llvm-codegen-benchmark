@@ -17,8 +17,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 85
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -8
-  %6 = add nsw i64 %0, -1
-  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %0
+  %7 = getelementptr i8, ptr %6, i64 -1
   ret ptr %7
 }
 
@@ -32,8 +32,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 6
   %4 = getelementptr inbounds i8, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 2
-  %6 = add nuw nsw i64 %0, 1
-  %7 = getelementptr inbounds i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %0
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -47,8 +47,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 -8
   %4 = getelementptr inbounds double, ptr %3, i64 %1
   %5 = getelementptr inbounds i8, ptr %4, i64 -8
-  %6 = add nsw i64 %0, 1
-  %7 = getelementptr inbounds double, ptr %5, i64 %6
+  %6 = getelementptr double, ptr %5, i64 %0
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 

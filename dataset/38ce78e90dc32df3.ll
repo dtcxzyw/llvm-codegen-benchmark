@@ -38,8 +38,8 @@ entry:
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
-  %2 = add nuw nsw i64 %1, 1
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 4294967295)
+  %2 = call i64 @llvm.umin.i64(i64 %1, i64 4294967294)
+  %3 = add nuw nsw i64 %2, 1
   ret i64 %3
 }
 

@@ -49,8 +49,8 @@
 define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, float 1.000000e+00, float -1.000000e+00
-  %4 = fmul float %3, %0
+  %3 = fneg float %0
+  %4 = select i1 %2, float %0, float %3
   ret float %4
 }
 

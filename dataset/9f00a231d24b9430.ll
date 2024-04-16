@@ -75,8 +75,8 @@ entry:
 define double @func0000000000000008(double %0) #0 {
 entry:
   %1 = fcmp oeq double %0, 0.000000e+00
-  %2 = select i1 %1, double 7.071070e-01, double %0
-  %3 = fmul double %2, 2.000000e+00
+  %2 = fmul double %0, 2.000000e+00
+  %3 = select i1 %1, double 0x3FF6A09EDBF8B9BB, double %2
   ret double %3
 }
 

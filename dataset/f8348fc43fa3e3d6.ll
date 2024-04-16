@@ -28,7 +28,7 @@ entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 20
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 27
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

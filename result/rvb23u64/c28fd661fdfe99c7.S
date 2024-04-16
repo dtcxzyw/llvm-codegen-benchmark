@@ -26,7 +26,7 @@ func0000000000000007:                   # @func0000000000000007
 	bset	a0, zero, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
-	addi	a0, a0, -16
+	addi	a0, a0, 48
 	li	a1, -1
 	sll	a0, a1, a0
 	ret

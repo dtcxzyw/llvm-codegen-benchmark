@@ -3689,12 +3689,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000241(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = icmp ult i64 %0, %2
-  %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 1152921504606846975)
-  %5 = select i1 %3, i64 1152921504606846975, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %2 = or i64 %0, %1
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -3706,11 +3703,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i1 @func0000000000000248(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = icmp ult i64 %0, %2
-  %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 2305843009213693951)
-  %5 = select i1 %3, i64 2305843009213693951, i64 %4
-  %6 = icmp ugt i64 %5, 768
-  ret i1 %6
+  %3 = icmp ugt i64 %2, %0
+  %4 = icmp ugt i64 %0, 768
+  %5 = or i1 %3, %4
+  ret i1 %5
 }
 
 ; 8 occurrences:
@@ -3725,12 +3721,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000024c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 4
-  %3 = icmp ult i64 %0, %2
-  %4 = call i64 @llvm.umin.i64(i64 %0, i64 576460752303423487)
-  %5 = select i1 %3, i64 576460752303423487, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %2 = or i64 %0, %1
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

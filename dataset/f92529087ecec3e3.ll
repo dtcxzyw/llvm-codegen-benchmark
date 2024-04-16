@@ -185,10 +185,10 @@ define i64 @func000000000000005a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = lshr i32 %2, 2
-  %4 = sub nuw nsw i32 8, %3
-  %5 = sub nsw i32 %0, %4
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %.neg = or disjoint i32 %3, -8
+  %4 = add i32 %.neg, %0
+  %5 = zext i32 %4 to i64
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -202,10 +202,10 @@ define i64 @func000000000000005f(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = lshr i32 %2, 2
-  %4 = sub nuw nsw i32 8, %3
-  %5 = sub nuw nsw i32 %0, %4
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %.neg = or disjoint i32 %3, -8
+  %4 = add i32 %.neg, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

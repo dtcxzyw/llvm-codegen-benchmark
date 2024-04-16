@@ -7,7 +7,7 @@ entry:
   %3 = and i64 %2, 9223372032559808512
   %4 = add i64 %3, %1
   %5 = icmp slt i64 %4, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -18,8 +18,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add i32 %1, %3
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %1
+  %5 = icmp eq i32 %3, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -31,8 +31,8 @@ entry:
 define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nsw i32 %1, %3
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %1
+  %5 = icmp eq i32 %3, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

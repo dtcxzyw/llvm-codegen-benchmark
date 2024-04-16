@@ -5,7 +5,7 @@
 define i128 @func0000000000000000(i1 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = zext i1 %0 to i64
   %5 = add i64 %4, %3
   %6 = zext i64 %5 to i128
@@ -109,7 +109,7 @@ entry:
 define i128 @func0000000000000004(i1 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = zext i1 %0 to i64
   %5 = add nuw i64 %4, %3
   %6 = zext i64 %5 to i128

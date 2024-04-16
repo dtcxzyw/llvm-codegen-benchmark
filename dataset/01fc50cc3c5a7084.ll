@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0) #0 {
 entry:
-  %1 = tail call noundef i32 @llvm.cttz.i32(i32 %0, i1 true), !range !0
-  %2 = shl nuw i32 1, %1
-  %3 = xor i32 %2, -1
-  ret i32 %3
+  %neg = sub i32 0, %0
+  %1 = and i32 %neg, %0
+  %2 = xor i32 %1, -1
+  ret i32 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -56,10 +56,10 @@ declare i32 @llvm.cttz.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.cttz.i16(i16 %0, i1 true), !range !1
-  %2 = shl nuw i16 1, %1
-  %3 = xor i16 %2, -1
-  ret i16 %3
+  %neg = sub i16 0, %0
+  %1 = and i16 %neg, %0
+  %2 = xor i16 %1, -1
+  ret i16 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -78,7 +78,7 @@ declare i16 @llvm.cttz.i16(i16, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.cttz.i64(i64 %0, i1 true), !range !2
+  %1 = tail call i64 @llvm.cttz.i64(i64 %0, i1 true), !range !0
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
   ret i64 %3
@@ -92,10 +92,10 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.cttz.i32(i32 %0, i1 false), !range !0
-  %2 = shl nuw i32 1, %1
-  %3 = xor i32 %2, -1
-  ret i32 %3
+  %neg = sub i32 0, %0
+  %1 = and i32 %neg, %0
+  %2 = xor i32 %1, -1
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -103,7 +103,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = tail call noundef i32 @llvm.cttz.i32(i32 %0, i1 false), !range !0
+  %1 = tail call noundef i32 @llvm.cttz.i32(i32 %0, i1 true), !range !1
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
   ret i32 %3
@@ -115,15 +115,14 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.cttz.i32(i32 %0, i1 true), !range !0
-  %2 = shl nuw nsw i32 1, %1
-  %3 = xor i32 %2, -1
-  ret i32 %3
+  %neg = sub i32 0, %0
+  %1 = and i32 %neg, %0
+  %2 = xor i32 %1, -1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
 
-!0 = !{i32 0, i32 33}
-!1 = !{i16 0, i16 17}
-!2 = !{i64 0, i64 65}
+!0 = !{i64 0, i64 65}
+!1 = !{i32 0, i32 33}

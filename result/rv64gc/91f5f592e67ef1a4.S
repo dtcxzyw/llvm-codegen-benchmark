@@ -31,25 +31,38 @@ func0000000000000044:                   # @func0000000000000044
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB3_2
-	li	a1, -9
+	li	a1, 247
 .LBB3_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
-	sraiw	a1, a1, 31
-	ori	a1, a1, 1
+	sext.w	a1, a1
+	bltz	a1, .LBB4_2
+	li	a1, 1
+	add	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, -1
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 func00000000000000a4:                   # @func00000000000000a4
-	sraiw	a1, a1, 31
-	ori	a1, a1, 1
+	sext.w	a2, a1
+	li	a1, 1
+	bgez	a2, .LBB5_2
+	li	a1, -1
+	srli	a1, a1, 32
+.LBB5_2:                                # %entry
 	add	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
 	seqz	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, -2
+	li	a1, 1
+	slli	a1, a1, 32
+	addi	a1, a1, -2
+	add	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	li	a3, 2

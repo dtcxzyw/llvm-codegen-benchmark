@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i8 %1, -1
   %3 = udiv i8 %2, 3
   %4 = zext nneg i8 %3 to i32
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
 

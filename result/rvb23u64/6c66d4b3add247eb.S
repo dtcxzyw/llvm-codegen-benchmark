@@ -88,7 +88,8 @@ func0000000000000101:                   # @func0000000000000101
 	li	a3, 10
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000201:                   # @func0000000000000201

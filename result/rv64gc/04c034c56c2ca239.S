@@ -28,6 +28,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func0000000000000081:                   # @func0000000000000081
 	srl	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

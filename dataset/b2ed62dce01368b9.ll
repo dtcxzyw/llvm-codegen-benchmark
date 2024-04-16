@@ -8,7 +8,7 @@ entry:
   %3 = trunc i32 %2 to i8
   %4 = icmp ult i8 %3, 81
   %5 = select i1 %4, i32 201326592, i32 %1
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 442368, i32 %1
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

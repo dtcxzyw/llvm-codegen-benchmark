@@ -661,10 +661,9 @@ entry:
 define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nsw i64 -1, %0
-  %4 = and i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = lshr i64 %2, %0
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -678,10 +677,9 @@ entry:
 define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nsw i64 -1, %0
-  %4 = and i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = lshr i64 %2, %0
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:

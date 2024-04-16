@@ -9,7 +9,7 @@ entry:
   %2 = fcmp ole float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
   %4 = fptosi float %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = fcmp olt double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
   %4 = fptosi double %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

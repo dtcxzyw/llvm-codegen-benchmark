@@ -10,7 +10,7 @@ entry:
   %2 = fptosi float %1 to i32
   %3 = sitofp i32 %2 to double
   %4 = fdiv double 1.000000e+00, %3
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

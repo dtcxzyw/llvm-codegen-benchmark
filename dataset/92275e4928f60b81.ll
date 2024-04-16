@@ -45,7 +45,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 1023
   %3 = and i64 %2, 1023
   %4 = getelementptr inbounds i32, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64

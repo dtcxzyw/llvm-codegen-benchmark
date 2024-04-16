@@ -7,9 +7,9 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 9
-  %3 = and i32 %0, -3585
+  %3 = and i32 %0, -3840
   %4 = or i32 %3, %2
-  %5 = lshr i32 %4, 8
+  %5 = lshr exact i32 %4, 8
   ret i32 %5
 }
 
@@ -46,10 +46,10 @@ entry:
 ; Function Attrs: nounwind
 define i96 @func000000000000000e(i96 %0, i96 %1) #0 {
 entry:
-  %2 = and i96 %1, -18446744073709551604
+  %2 = and i96 %1, -18446744073709551616
   %3 = shl nuw nsw i96 %0, 32
-  %4 = or disjoint i96 %3, %2
-  %5 = lshr i96 %4, 32
+  %4 = or i96 %3, %2
+  %5 = lshr exact i96 %4, 32
   ret i96 %5
 }
 
@@ -60,10 +60,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
+  %2 = and i32 %1, 65534
   %3 = shl i32 %0, 16
   %4 = or disjoint i32 %3, %2
-  %5 = lshr i32 %4, 1
+  %5 = lshr exact i32 %4, 1
   ret i32 %5
 }
 
@@ -85,9 +85,9 @@ entry:
 define i128 @func000000000000000a(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 %1, 65
-  %3 = and i128 %0, 36893488147419103230
+  %3 = and i128 %0, 18446744073709551616
   %4 = or disjoint i128 %3, %2
-  %5 = lshr i128 %4, 64
+  %5 = lshr exact i128 %4, 64
   ret i128 %5
 }
 

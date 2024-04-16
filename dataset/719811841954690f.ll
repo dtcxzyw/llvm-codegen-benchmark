@@ -11,10 +11,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0) #0 {
 entry:
-  %1 = fmul float %0, 5.000000e+00
-  %2 = fneg float %1
-  %3 = fpext float %2 to double
-  ret double %3
+  %1 = fmul float %0, -5.000000e+00
+  %2 = fpext float %1 to double
+  ret double %2
 }
 
 attributes #0 = { nounwind }

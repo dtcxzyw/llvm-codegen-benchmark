@@ -7,7 +7,7 @@
 define i8 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = select i1 %4, i8 7, i8 0
   ret i8 %5
 }
@@ -18,7 +18,7 @@ entry:
 define i32 @func0000000000000007(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp une float %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = select i1 %4, i32 2, i32 0
   ret i32 %5
 }

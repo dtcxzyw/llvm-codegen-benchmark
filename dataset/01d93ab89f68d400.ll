@@ -255,9 +255,9 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = icmp ne i32 %3, 1
-  %5 = select i1 %4, i32 0, i32 %0
-  ret i32 %5
+  %.not = icmp eq i32 %3, 1
+  %4 = select i1 %.not, i32 %0, i32 0
+  ret i32 %4
 }
 
 ; 1 occurrences:

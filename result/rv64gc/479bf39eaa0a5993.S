@@ -21,9 +21,9 @@ func0000000000000078:                   # @func0000000000000078
 	xori	a0, a0, 1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 1
-	add	a0, a0, a1
+	or	a0, a0, a1
+	slli	a0, a0, 48
+	srli	a0, a0, 48
 	seqz	a0, a0
 	ret

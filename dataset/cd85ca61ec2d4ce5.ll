@@ -8,8 +8,8 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -24,8 +24,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 47
   %4 = sext i1 %3 to i64
-  %5 = add i64 %1, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -37,8 +37,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr inbounds %struct.aiFace.1749366, ptr %0, i64 %5
+  %5 = getelementptr %struct.aiFace.1749366, ptr %0, i64 %4
+  %6 = getelementptr %struct.aiFace.1749366, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -49,8 +49,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 

@@ -44,8 +44,8 @@ define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 1
-  %4 = trunc i64 %0 to i32
-  %5 = icmp slt i32 %4, 0
+  %4 = and i64 %0, 2147483648
+  %5 = icmp ne i64 %4, 0
   %6 = or i1 %5, %3
   ret i1 %6
 }

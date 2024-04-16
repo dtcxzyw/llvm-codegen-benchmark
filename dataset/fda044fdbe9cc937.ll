@@ -4,11 +4,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = add i16 %2, 1
-  %4 = sub i16 %3, %1
-  %5 = add i16 %4, -1
-  %6 = select i1 %0, i16 0, i16 %5
-  ret i16 %6
+  %3 = sub i16 %2, %1
+  %4 = select i1 %0, i16 0, i16 %3
+  ret i16 %4
 }
 
 ; 8 occurrences:

@@ -935,9 +935,8 @@
 define ptr @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 40
-  %3 = getelementptr inbounds [1 x %struct.NSVGgradientStop.1553125], ptr %2, i64 0, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds [1 x %struct.NSVGgradientStop.1553125], ptr %2, i64 0, i64 %0, i32 1
+  ret ptr %3
 }
 
 ; 536 occurrences:
@@ -1530,9 +1529,8 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 80
-  %3 = getelementptr [5 x %struct.ractor_newobj_size_pool_cache.1553537], ptr %2, i64 0, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr [5 x %struct.ractor_newobj_size_pool_cache.1553537], ptr %2, i64 0, i64 %0, i32 1
+  ret ptr %3
 }
 
 ; 54 occurrences:
@@ -1594,9 +1592,8 @@ entry:
 define ptr @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 32
-  %3 = getelementptr [5 x %struct.rb_size_pool_struct.1553510], ptr %2, i64 0, i64 %0
-  %4 = getelementptr i8, ptr %3, i64 104
-  ret ptr %4
+  %3 = getelementptr [5 x %struct.rb_size_pool_struct.1553510], ptr %2, i64 0, i64 %0, i32 10, i32 2
+  ret ptr %3
 }
 
 ; 32 occurrences:
@@ -1636,9 +1633,8 @@ entry:
 define ptr @func0000000000000006(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 144
-  %3 = getelementptr inbounds [3 x %struct.rx_pkt_history_st.1588257], ptr %2, i64 0, i64 %0
-  %4 = getelementptr i8, ptr %3, i64 16
-  ret ptr %4
+  %3 = getelementptr [3 x %struct.rx_pkt_history_st.1588257], ptr %2, i64 0, i64 %0, i32 0, i32 2
+  ret ptr %3
 }
 
 ; 10 occurrences:

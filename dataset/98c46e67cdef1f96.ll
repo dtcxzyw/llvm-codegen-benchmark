@@ -5,10 +5,10 @@
 define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   %5 = add nsw i32 %4, 4095
   %6 = tail call i32 @llvm.smin.i32(i32 %1, i32 %5)
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, -1
   %6 = call i32 @llvm.smin.i32(i32 %1, i32 %5)
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 

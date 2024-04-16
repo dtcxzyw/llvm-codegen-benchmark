@@ -12,7 +12,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 240
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 73
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

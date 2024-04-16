@@ -1,12 +1,13 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a1, 16
-	addiw	a1, a1, -8
-	and	a0, a0, a1
-	lui	a1, 13
-	addiw	a1, a1, -819
-	mul	a1, a0, a1
-	srli	a1, a1, 21
+	andi	a1, a0, -8
+	lui	a2, 16
+	addiw	a2, a2, -8
+	and	a0, a0, a2
+	lui	a2, 13
+	addiw	a2, a2, -819
+	mul	a0, a0, a2
+	srli	a0, a0, 21
 	li	a2, 40
-	mul	a1, a1, a2
-	sub	a0, a0, a1
+	mul	a0, a0, a2
+	sub	a0, a1, a0
 	ret

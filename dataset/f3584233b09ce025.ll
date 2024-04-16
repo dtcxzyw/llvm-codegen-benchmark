@@ -11,7 +11,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 0, i32 2
   %6 = or disjoint i32 %5, %4
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

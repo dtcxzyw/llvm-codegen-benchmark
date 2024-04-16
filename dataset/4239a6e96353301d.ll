@@ -15,7 +15,7 @@ entry:
   %4 = ashr i64 %1, 63
   %5 = add nsw i64 %4, %3
   %6 = sdiv i64 %5, 86400
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

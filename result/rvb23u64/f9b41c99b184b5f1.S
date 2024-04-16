@@ -15,19 +15,17 @@ func000000000000000b:                   # @func000000000000000b
 	addiw	a0, a0, -6
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	a0, a0, 1
 	sh1add	a0, a0, a0
+	addi	a0, a0, 3
 	zext.w	a0, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
-	addi	a0, a0, 4
 	sh1add	a0, a0, a0
-	sext.w	a0, a0
+	addiw	a0, a0, 12
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a0, a0, -1
 	sh3add	a0, a0, a0
-	sext.w	a0, a0
+	addiw	a0, a0, -9
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, -1231

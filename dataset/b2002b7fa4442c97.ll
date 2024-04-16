@@ -8,7 +8,7 @@ entry:
   %3 = icmp eq i32 %1, 62
   %4 = select i1 %3, i1 %2, i1 false
   %5 = zext i1 %4 to i8
-  %6 = add i8 %0, %5
+  %6 = add i8 %5, %0
   ret i8 %6
 }
 

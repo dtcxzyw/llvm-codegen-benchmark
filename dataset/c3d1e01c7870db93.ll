@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = xor i64 %1, 63
-  %3 = icmp ult i64 %2, 8
-  ret i1 %3
+  %1 = xor i32 %0, 56
+  %2 = icmp ult i32 %1, 8
+  ret i1 %2
 }
 
 ; 4 occurrences:

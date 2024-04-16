@@ -101,8 +101,8 @@
 define i1 @func00000000000000c4(i128 %0) #0 {
 entry:
   %1 = lshr i128 %0, 71
-  %2 = mul nuw nsw i128 %1, 12379400392853802749
-  %3 = trunc i128 %2 to i64
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = mul i64 %2, -6067343680855748867
   %4 = icmp ult i64 %3, -6067343680855748867
   ret i1 %4
 }

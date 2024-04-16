@@ -6,8 +6,8 @@
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = add nuw nsw i32 %1, %3
-  %5 = mul i32 %0, %4
+  %4 = add nuw nsw i32 %3, %1
+  %5 = mul i32 %4, %0
   %6 = lshr i32 %5, 8
   ret i32 %6
 }
@@ -18,8 +18,8 @@ entry:
 define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = add nuw nsw i32 %1, %3
-  %5 = mul nsw i32 %0, %4
+  %4 = add nuw nsw i32 %3, %1
+  %5 = mul nsw i32 %4, %0
   %6 = lshr exact i32 %5, 8
   ret i32 %6
 }
@@ -30,7 +30,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = mul nuw i32 %4, %0
   %6 = lshr i32 %5, 11
   ret i32 %6

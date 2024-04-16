@@ -184,7 +184,7 @@ entry:
   %3 = icmp eq i16 %2, 256
   %4 = select i1 %3, i16 0, i16 %2
   %5 = zext nneg i16 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw i32 %2, 511
   %4 = and i32 %3, -512
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = add i16 %2, 10
   %4 = and i16 %3, 15
-  %5 = or disjoint i16 %0, %4
+  %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
 

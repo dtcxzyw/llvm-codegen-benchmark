@@ -9,7 +9,7 @@ define i8 @func0000000000000001(i8 %0, i2 %1) #0 {
 entry:
   %2 = tail call i2 @llvm.bitreverse.i2(i2 %1)
   %3 = zext i2 %2 to i8
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   ret i8 %4
 }
 

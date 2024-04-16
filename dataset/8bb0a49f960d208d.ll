@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 2
-  %2 = or disjoint i32 %1, 1
+  %1 = or i32 %0, 1
+  %2 = add i32 %1, 2
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

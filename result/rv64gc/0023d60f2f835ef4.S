@@ -6,9 +6,10 @@ func0000000000000031:                   # @func0000000000000031
 .LBB0_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	slti	a2, a0, 0
-	and	a1, a1, a2
+	andi	a1, a1, 1
 	beqz	a1, .LBB1_2
-	neg	a0, a0
+	srai	a1, a0, 63
+	xor	a0, a0, a1
+	sub	a0, a0, a1
 .LBB1_2:                                # %entry
 	ret

@@ -131,11 +131,11 @@ entry:
 define i32 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1095216660480
-  %3 = icmp ne i64 %2, 8589934592
-  %4 = zext i1 %0 to i32
-  %5 = or disjoint i32 %4, 4
-  %6 = select i1 %3, i32 %4, i32 %5
-  ret i32 %6
+  %.not = icmp eq i64 %2, 8589934592
+  %3 = zext i1 %0 to i32
+  %4 = or disjoint i32 %3, 4
+  %5 = select i1 %.not, i32 %4, i32 %3
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

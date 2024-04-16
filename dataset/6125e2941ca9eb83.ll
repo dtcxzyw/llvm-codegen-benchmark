@@ -8,7 +8,7 @@ entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fptosi double %4 to i32
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

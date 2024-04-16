@@ -7,6 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 .LBB0_2:
 	li	a0, -1
-	srli	a0, a0, 1
-	srli	a0, a0, 3
+	srli	a0, a0, 4
 	ret

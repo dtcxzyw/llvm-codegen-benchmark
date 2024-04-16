@@ -19,7 +19,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, %1
   %5 = shl nsw i64 %4, 5
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = lshr i64 %6, 1
   ret i64 %7
 }

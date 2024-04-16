@@ -18,7 +18,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -2
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 4)
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 
@@ -32,7 +32,7 @@ define i8 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -3
   %2 = call noundef i64 @llvm.umin.i64(i64 %1, i64 3)
-  %3 = trunc i64 %2 to i8
+  %3 = trunc nuw nsw i64 %2 to i8
   ret i8 %3
 }
 

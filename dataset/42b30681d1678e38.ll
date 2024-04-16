@@ -15,7 +15,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 9, i32 64
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = and i32 %1, 128
   %6 = or i32 %4, %5
   ret i32 %6
@@ -140,7 +140,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 1048576
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 32
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -170,7 +170,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 128
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 256
   %6 = or i32 %4, %5
   ret i32 %6
@@ -182,7 +182,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1073741824, i32 1073750016
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = and i32 %1, 8160
   %6 = or disjoint i32 %4, %5
   ret i32 %6

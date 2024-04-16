@@ -7,7 +7,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 56
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = mul i64 %3, 16777619
   ret i64 %4
 }

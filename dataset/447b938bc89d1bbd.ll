@@ -21,7 +21,7 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
-  %2 = sub nuw nsw i64 64, %1
+  %2 = sub nsw i64 0, %1
   %3 = and i64 %2, 3
   ret i64 %3
 }

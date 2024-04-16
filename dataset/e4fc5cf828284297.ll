@@ -23,7 +23,7 @@ entry:
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
   %6 = and i128 %5, 18446744073709551612
-  %7 = add nuw nsw i128 %0, %6
+  %7 = add nuw nsw i128 %6, %0
   ret i128 %7
 }
 
@@ -32,12 +32,10 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000008(i128 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = zext i64 %1 to i128
-  %5 = mul nuw i128 %4, %3
-  %6 = and i128 %5, 18446744073709551615
-  %7 = add i128 %6, %0
-  ret i128 %7
+  %.narrow = mul i64 %1, %2
+  %3 = zext i64 %.narrow to i128
+  %4 = add i128 %3, %0
+  ret i128 %4
 }
 
 attributes #0 = { nounwind }

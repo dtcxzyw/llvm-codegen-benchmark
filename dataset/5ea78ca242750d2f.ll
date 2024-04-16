@@ -160,7 +160,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 59
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = add nuw nsw i32 %3, 63
   ret i32 %4
 }

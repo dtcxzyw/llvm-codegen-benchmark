@@ -163,8 +163,8 @@ entry:
   %2 = ashr exact i64 %0, 3
   %3 = sub nsw i64 %1, %2
   %4 = call i64 @llvm.umax.i64(i64 %2, i64 %3)
-  %5 = add nsw i64 %4, %2
-  %6 = icmp ult i64 %5, %2
+  %5 = xor i64 %2, -1
+  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 

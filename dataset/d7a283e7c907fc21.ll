@@ -90,7 +90,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = ashr exact i64 %4, 1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -102,7 +102,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, -2
   %5 = ashr exact i64 %4, 1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

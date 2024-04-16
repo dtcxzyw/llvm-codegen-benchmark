@@ -69,7 +69,7 @@ entry:
 define i16 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 56
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %1, 4
   %6 = or i32 %4, %5
   %7 = trunc i32 %6 to i16
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 32
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = and i64 %1, 4294965248
   %6 = or i64 %4, %5
   %7 = trunc i64 %6 to i32

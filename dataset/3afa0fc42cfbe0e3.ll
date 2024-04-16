@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6

@@ -88,7 +88,7 @@
 define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = xor i32 %4, 2147483647
   %6 = icmp slt i32 %5, %0
   ret i1 %6
@@ -106,7 +106,7 @@ entry:
 define i1 @func0000000000000096(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = xor i32 %4, 2147483647
   %6 = icmp slt i32 %5, %0
   ret i1 %6
@@ -119,7 +119,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = xor i64 %4, -1
   %6 = icmp ult i64 %5, %0
   ret i1 %6

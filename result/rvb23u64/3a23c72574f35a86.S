@@ -34,7 +34,7 @@ func0000000000000022:                   # @func0000000000000022
 .LBB3_2:                                # %entry
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
-	fmul.s	fa4, fa0, fa1
+	fmul.s	fa4, fa1, fa0
 	flt.s	a0, fa4, fa5
 	ret
 func00000000000000cc:                   # @func00000000000000cc
@@ -51,7 +51,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	bnez	a0, .LBB5_2
 	fmv.d	fa1, fa2
 .LBB5_2:                                # %entry
-	fmul.d	fa5, fa0, fa1
+	fmul.d	fa5, fa1, fa0
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	ret
@@ -78,7 +78,7 @@ func0000000000000042:                   # @func0000000000000042
 	bnez	a0, .LBB8_2
 	fmv.d	fa1, fa2
 .LBB8_2:                                # %entry
-	fmul.d	fa5, fa0, fa1
+	fmul.d	fa5, fa1, fa0
 	fli.d	fa4, 1.0
 	flt.d	a0, fa5, fa4
 	ret

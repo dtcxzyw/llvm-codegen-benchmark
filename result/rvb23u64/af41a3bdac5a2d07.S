@@ -7,7 +7,7 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000c:                   # @func000000000000000c
 	bexti	a1, a1, 29
 	addi	a1, a1, 49
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	srliw	a1, a1, 29

@@ -256,9 +256,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 48
-  %4 = getelementptr inbounds %struct.rand_data_pass_st.1586709, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 72
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.rand_data_pass_st.1586709, ptr %3, i64 %2, i32 9
+  ret ptr %4
 }
 
 ; 34 occurrences:
@@ -301,9 +300,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr %struct.vhost_memory_region.1660395, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr %struct.vhost_memory_region.1660395, ptr %3, i64 %2, i32 2
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -400,9 +398,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 8488
-  %4 = getelementptr %struct.Kf_Cut_t_.1772221, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 28
-  ret ptr %5
+  %4 = getelementptr %struct.Kf_Cut_t_.1772221, ptr %3, i64 %2, i32 6
+  ret ptr %4
 }
 
 ; 4 occurrences:

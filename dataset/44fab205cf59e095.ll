@@ -20,7 +20,7 @@ entry:
   %2 = freeze i32 %1
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, 258
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

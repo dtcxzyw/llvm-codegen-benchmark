@@ -160,7 +160,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = add i64 %4, %0
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

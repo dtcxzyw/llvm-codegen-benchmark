@@ -8,9 +8,8 @@ entry:
   %2 = lshr i48 %1, 16
   %3 = trunc i48 %2 to i16
   %4 = sub i16 %3, %0
-  %5 = add i16 %4, 1
-  %6 = icmp eq i16 %5, 0
-  ret i1 %6
+  %5 = icmp eq i16 %4, -1
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

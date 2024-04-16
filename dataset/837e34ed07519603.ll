@@ -6,9 +6,9 @@
 define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp sgt i32 %0, 63
-  %5 = select i1 %4, i64 0, i64 %3
-  %6 = icmp ugt i64 %5, 8388607
+  %4 = icmp slt i32 %0, 64
+  %5 = icmp ugt i64 %3, 8388607
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -18,10 +18,10 @@ entry:
 define i1 @func00000000000000c8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i32 -1, i32 %3
-  %6 = icmp ugt i32 %5, 4351
-  ret i1 %6
+  %.not = icmp ne i32 %0, 0
+  %4 = icmp ugt i32 %3, 4351
+  %5 = select i1 %.not, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -30,10 +30,10 @@ entry:
 define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i32 -1, i32 %3
-  %6 = icmp ult i32 %5, 4448
-  ret i1 %6
+  %.not = icmp eq i32 %0, 0
+  %4 = icmp ult i32 %3, 4448
+  %5 = select i1 %.not, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -42,10 +42,10 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i32 -1, i32 %3
-  %6 = icmp ne i32 %5, 12351
-  ret i1 %6
+  %.not = icmp ne i32 %0, 0
+  %4 = icmp ne i32 %3, 12351
+  %5 = select i1 %.not, i1 true, i1 %4
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -55,9 +55,9 @@ entry:
 define i1 @func0000000000000114(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %1, %2
-  %4 = icmp eq i8 %0, 0
-  %5 = select i1 %4, i32 192, i32 %3
-  %6 = icmp ult i32 %5, 56
+  %4 = icmp ne i8 %0, 0
+  %5 = icmp ult i32 %3, 56
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 
@@ -69,8 +69,8 @@ define i1 @func0000000000000118(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %1, %2
   %4 = icmp eq i8 %0, 0
-  %5 = select i1 %4, i32 192, i32 %3
-  %6 = icmp ugt i32 %5, 95
+  %5 = icmp ugt i32 %3, 95
+  %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
 

@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i8 @func000000000000000d(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = xor i8 %2, 1
-  %4 = shl nuw nsw i8 %3, 3
+  %3 = shl i8 %2, 3
+  %4 = xor i8 %3, 8
   %5 = or i8 %0, %1
   %6 = or disjoint i8 %5, %4
   ret i8 %6

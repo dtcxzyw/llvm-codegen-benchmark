@@ -1,6 +1,6 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
-	beq	a1, a2, .LBB0_2
+	beq	a2, a1, .LBB0_2
 	li	a0, 8
 .LBB0_2:                                # %entry
 	ret
@@ -21,7 +21,7 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000001:                   # @func0000000000000001
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	beq	a1, a2, .LBB3_2
+	beq	a2, a1, .LBB3_2
 	li	a0, -22
 .LBB3_2:                                # %entry
 	ret

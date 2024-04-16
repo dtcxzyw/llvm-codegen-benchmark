@@ -14,6 +14,6 @@ func0000000000000008:                   # @func0000000000000008
 	srliw	a3, a3, 29
 	add	a2, a2, a3
 	sraiw	a2, a2, 3
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	sltu	a0, a1, a0
 	ret

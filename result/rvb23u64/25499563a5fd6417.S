@@ -1,9 +1,9 @@
 func000000000000001c:                   # @func000000000000001c
-	bseti	a3, zero, 33
-	xor	a0, a0, a3
-	seqz	a0, a0
 	and	a1, a1, a2
 	andi	a1, a1, 1
+	bseti	a2, zero, 33
+	xor	a0, a0, a2
+	seqz	a0, a0
 	sh2add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

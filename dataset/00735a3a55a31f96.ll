@@ -14,7 +14,7 @@ entry:
   %4 = and i128 %0, 18446744073709551615
   %5 = add i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 

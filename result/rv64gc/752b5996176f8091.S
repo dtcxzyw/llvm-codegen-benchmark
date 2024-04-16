@@ -25,10 +25,7 @@ func000000000000006c:                   # @func000000000000006c
 	snez	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a2, a1
-	beqz	a2, .LBB3_2
-	mv	a0, a1
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret

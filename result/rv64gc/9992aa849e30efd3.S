@@ -21,7 +21,7 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, -129
 	slli	a3, a0, 48
-	or	a0, a1, a2
+	or	a0, a2, a1
 	beqz	a3, .LBB2_2
 	andi	a0, a0, -257
 .LBB2_2:                                # %entry

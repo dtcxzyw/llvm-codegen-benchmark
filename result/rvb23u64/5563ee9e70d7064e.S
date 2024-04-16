@@ -10,9 +10,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000006:                   # @func0000000000000006
 	mul	a3, a3, a4
-	mulhu	a1, a2, a4
+	mulhu	a1, a4, a2
 	add	a1, a1, a3
-	mul	a6, a2, a4
+	mul	a6, a4, a2
 	srl	a3, a1, a0
 	addi	a4, a0, -64
 	slti	a4, a4, 0

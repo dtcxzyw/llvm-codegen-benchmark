@@ -186,7 +186,7 @@ entry:
   %4 = sub nuw nsw i32 32, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

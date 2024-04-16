@@ -128,10 +128,10 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i8 %0, i16 %1) #0 {
 entry:
-  %2 = or i16 %1, 8
-  %3 = and i16 %2, -65
-  %4 = zext nneg i8 %0 to i16
-  %5 = or disjoint i16 %3, %4
+  %2 = and i16 %1, -73
+  %3 = zext nneg i8 %0 to i16
+  %4 = or i16 %2, %3
+  %5 = or i16 %4, 8
   ret i16 %5
 }
 

@@ -28,9 +28,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = getelementptr inbounds %"class.arrow::compute::InputType.2197782", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.arrow::compute::InputType.2197782", ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

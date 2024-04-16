@@ -7,7 +7,7 @@
 define double @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sitofp i32 %3 to double
   %5 = fdiv double %4, 6.166000e+02
   ret double %5
@@ -38,7 +38,7 @@ entry:
 define double @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 91
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sitofp i32 %3 to double
   %5 = fdiv double %4, 3.809260e+05
   ret double %5
@@ -50,7 +50,7 @@ entry:
 define float @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000000
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = sitofp i64 %3 to float
   %5 = fdiv float %4, 1.000000e+06
   ret float %5

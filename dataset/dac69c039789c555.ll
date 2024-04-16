@@ -6,8 +6,8 @@ define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
-  %4 = add nuw i64 %3, 1
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -168,8 +168,8 @@ define i64 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
-  %4 = add nuw i64 %3, 1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

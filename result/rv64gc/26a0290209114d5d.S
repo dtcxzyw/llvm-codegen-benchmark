@@ -1,26 +1,18 @@
 func0000000000000006:                   # @func0000000000000006
-	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	fmv.d.x	fa0, zero
-.LBB0_2:                                # %entry
-	fcvt.l.d	a0, fa0, rtz
-	srli	a0, a0, 63
+	fcvt.l.d	a1, fa0, rtz
+	slti	a1, a1, 0
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
-	beqz	a0, .LBB1_2
-	lui	a0, 267264
-	fmv.w.x	fa0, a0
-.LBB1_2:                                # %entry
-	fcvt.w.s	a0, fa0, rtz
-	seqz	a0, a0
+	fcvt.w.s	a1, fa0, rtz
+	seqz	a1, a1
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, 1
-	beqz	a0, .LBB2_2
-	lui	a0, 267264
-	fmv.w.x	fa0, a0
-.LBB2_2:                                # %entry
-	fcvt.w.s	a0, fa0, rtz
-	sltiu	a0, a0, 4
+	fcvt.w.s	a1, fa0, rtz
+	sltiu	a1, a1, 4
+	not	a0, a0
+	and	a0, a0, a1
 	ret

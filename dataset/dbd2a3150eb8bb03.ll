@@ -84,10 +84,12 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = lshr i16 %0, 8
-  %2 = shl i16 %0, 8
-  %3 = or disjoint i16 %2, %1
-  ret i16 %3
+  %1 = call i16 @llvm.bswap.i16(i16 %0)
+  ret i16 %1
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i16 @llvm.bswap.i16(i16) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

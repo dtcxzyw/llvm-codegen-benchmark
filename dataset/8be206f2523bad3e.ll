@@ -19,7 +19,7 @@
 define i1 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [0 x i8], ptr %1, i64 0, i64 %2
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
 
@@ -100,7 +100,7 @@ entry:
 define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [1025 x i8], ptr %1, i64 0, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -149,7 +149,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [512 x %struct.TCGTemp.1664283], ptr %1, i64 0, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -161,7 +161,7 @@ entry:
 define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [1 x i8], ptr %1, i64 0, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 
@@ -176,7 +176,7 @@ entry:
 define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [16 x %"struct.zmq::command_t.1931972"], ptr %1, i64 0, i64 %2
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
 
@@ -187,7 +187,7 @@ entry:
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [0 x %struct.WordEntry.2122380], ptr %1, i64 0, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 
@@ -198,7 +198,7 @@ entry:
 define i1 @func0000000000000015(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.20.2273899"], ptr %1, i64 0, i64 %2
-  %4 = icmp ule ptr %0, %3
+  %4 = icmp uge ptr %3, %0
   ret i1 %4
 }
 
@@ -210,7 +210,7 @@ entry:
 define i1 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.20.2273899"], ptr %1, i64 0, i64 %2
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
 
@@ -220,7 +220,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %1, i64 0, i64 %2
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
 

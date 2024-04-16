@@ -11,7 +11,7 @@ entry:
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
   %6 = add nuw nsw i64 %5, 258
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

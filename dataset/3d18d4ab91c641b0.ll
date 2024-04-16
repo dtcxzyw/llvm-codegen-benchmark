@@ -47,9 +47,9 @@
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
-  %4 = lshr i8 %3, 4
-  %5 = or i8 %4, %3
-  %6 = lshr i8 %5, 1
+  %4 = lshr i8 %3, 5
+  %5 = lshr i8 %3, 1
+  %6 = or i8 %4, %5
   %7 = or i8 %6, %0
   ret i8 %7
 }

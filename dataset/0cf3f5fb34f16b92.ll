@@ -141,7 +141,7 @@
 define i1 @func0000000000000002(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp olt double %0, %2
+  %3 = fcmp ogt double %2, %0
   ret i1 %3
 }
 
@@ -309,7 +309,7 @@ entry:
 define i1 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ogt double %0, %2
+  %3 = fcmp olt double %2, %0
   ret i1 %3
 }
 
@@ -356,7 +356,7 @@ entry:
 define i1 @func0000000000000007(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp une double %0, %2
+  %3 = fcmp une double %2, %0
   ret i1 %3
 }
 
@@ -368,7 +368,7 @@ entry:
 define i1 @func000000000000000b(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp ule double %0, %2
+  %3 = fcmp uge double %2, %0
   ret i1 %3
 }
 
@@ -505,7 +505,7 @@ entry:
 define i1 @func0000000000000008(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp oeq double %0, %2
+  %3 = fcmp oeq double %2, %0
   ret i1 %3
 }
 
@@ -560,7 +560,7 @@ entry:
 define i1 @func0000000000000003(float %0, i16 %1) #0 {
 entry:
   %2 = sitofp i16 %1 to float
-  %3 = fcmp ult float %0, %2
+  %3 = fcmp ugt float %2, %0
   ret i1 %3
 }
 
@@ -578,7 +578,7 @@ entry:
 define i1 @func000000000000000c(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp oge double %0, %2
+  %3 = fcmp ole double %2, %0
   ret i1 %3
 }
 
@@ -619,7 +619,7 @@ entry:
 define i1 @func0000000000000005(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ugt float %0, %2
+  %3 = fcmp ult float %2, %0
   ret i1 %3
 }
 
@@ -636,7 +636,7 @@ entry:
 define i1 @func000000000000000a(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ole float %0, %2
+  %3 = fcmp oge float %2, %0
   ret i1 %3
 }
 
@@ -649,7 +649,7 @@ entry:
 define i1 @func000000000000000d(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp uge double %0, %2
+  %3 = fcmp ule double %2, %0
   ret i1 %3
 }
 

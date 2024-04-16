@@ -65,7 +65,7 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -83,7 +83,7 @@ entry:
   %3 = and i32 %2, -2048
   %4 = icmp eq i32 %3, 55296
   %5 = select i1 %1, i1 %4, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

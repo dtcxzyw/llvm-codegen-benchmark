@@ -66,8 +66,8 @@ entry:
 define i8 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -150
-  %4 = add nsw i32 %3, %0
+  %3 = add nuw nsw i32 %2, 16777066
+  %4 = add i32 %3, %0
   %5 = lshr i32 %4, 16
   %6 = trunc i32 %5 to i8
   ret i8 %6

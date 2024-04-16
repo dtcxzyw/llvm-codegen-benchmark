@@ -17,7 +17,7 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000032:                   # @func0000000000000032
 	or	a2, a2, a4
-	xor	a4, a1, a3
+	xor	a4, a3, a1
 	sltu	a1, a1, a3
 	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2

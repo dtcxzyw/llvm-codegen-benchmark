@@ -1,10 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
-	li	a2, -1
-	bne	a1, a2, .LBB0_2
-	li	a0, 64
-.LBB0_2:                                # %entry
+	sltiu	a1, a1, -1
 	andi	a0, a0, 64
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
 	li	a3, -1

@@ -176,9 +176,9 @@ define i32 @func000000000000001c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 1
   %3 = or disjoint i32 %2, 32
-  %4 = icmp ne i32 %0, -1
-  %5 = select i1 %4, i32 %2, i32 %3
-  ret i32 %5
+  %.not = icmp eq i32 %0, -1
+  %4 = select i1 %.not, i32 %3, i32 %2
+  ret i32 %4
 }
 
 ; 3 occurrences:

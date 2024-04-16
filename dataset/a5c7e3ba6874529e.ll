@@ -79,9 +79,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr inbounds %"struct.std::pair.678.1566163", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.std::pair.678.1566163", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -108,9 +107,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %struct.RoleNameItem.2120994, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.RoleNameItem.2120994, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -16,11 +16,11 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a4, a2, a0
+	sltu	a0, a4, a2
 	add	a1, a1, a0
-	add	a0, a2, a3
-	sltu	a2, a0, a2
+	add	a0, a4, a3
+	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
 func0000000000000005:                   # @func0000000000000005

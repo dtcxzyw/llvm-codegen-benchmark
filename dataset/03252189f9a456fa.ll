@@ -11,7 +11,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = xor i64 %2, 9223372036854775806
   %4 = udiv i64 %3, 10
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -20,10 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = xor i32 %2, -1
+  %2 = xor i8 %1, -1
+  %3 = sext i8 %2 to i32
   %4 = udiv i32 %3, 10
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = xor i64 %2, 9223372036854775806
   %4 = udiv i64 %3, 10
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

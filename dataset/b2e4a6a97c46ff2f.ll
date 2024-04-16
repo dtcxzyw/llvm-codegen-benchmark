@@ -4,11 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000066(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, i64 -34, i64 %2
-  %5 = select i1 %0, i64 %1, i64 %4
-  %6 = icmp slt i64 %5, 0
-  ret i1 %6
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = icmp slt i64 %.v, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:

@@ -12,7 +12,7 @@ define float @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
   %4 = fmul double %3, %1
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   %6 = fptrunc double %5 to float
   ret float %6
 }

@@ -73,7 +73,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %3, -1
   %5 = mul nsw i32 %4, %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

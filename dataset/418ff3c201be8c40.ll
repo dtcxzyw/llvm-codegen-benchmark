@@ -9,9 +9,9 @@ entry:
   %2 = add i32 %0, %1
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, -1
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %4
+  %5 = xor i64 %notmask, -1
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -22,10 +22,10 @@ define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = sub i32 -54, %2
-  %4 = zext i32 %3 to i64
-  %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, -1
-  ret i64 %6
+  %4 = zext nneg i32 %3 to i64
+  %notmask = shl nsw i64 -1, %4
+  %5 = xor i64 %notmask, -1
+  ret i64 %5
 }
 
 ; 162 occurrences:
@@ -197,9 +197,9 @@ entry:
   %2 = add nsw i32 %0, %1
   %3 = sub nsw i32 -53, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 1, %4
-  %6 = add i64 %5, -1
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %4
+  %5 = xor i64 %notmask, -1
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

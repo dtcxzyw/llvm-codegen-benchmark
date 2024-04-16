@@ -28,7 +28,7 @@ declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 define i64 @func0000000000000009(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !0
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

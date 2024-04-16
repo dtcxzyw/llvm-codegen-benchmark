@@ -86,8 +86,8 @@ entry:
   %3 = add i64 %2, -8
   %4 = sub i64 %3, %1
   %5 = and i64 %4, -8
-  %6 = add i64 %5, 8
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 

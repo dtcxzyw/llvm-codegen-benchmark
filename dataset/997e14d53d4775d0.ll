@@ -7,7 +7,7 @@
 define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = lshr i64 %1, 32
   %6 = add i64 %4, %5
   %7 = icmp ult i64 %6, 18014398509481984
@@ -22,10 +22,10 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 28
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr i64 %1, 28
-  %6 = add i64 %4, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %4, %6
   ret i1 %7
 }
 
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = lshr i32 %1, 6
   %6 = add i32 %4, %5
   %7 = icmp ult i32 %6, 128
@@ -225,9 +225,9 @@ entry:
 define i1 @func00000000000000a1(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 32
-  %4 = add nuw i128 %0, %3
+  %4 = add nuw i128 %3, %0
   %5 = lshr i128 %1, 32
-  %6 = add nuw i128 %4, %5
+  %6 = or i128 %4, %5
   %7 = icmp eq i128 %6, 0
   ret i1 %7
 }
@@ -238,10 +238,10 @@ entry:
 define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = lshr i64 %1, 32
-  %6 = add i64 %4, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %4, %6
   ret i1 %7
 }
 
@@ -253,7 +253,7 @@ entry:
 define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 15
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = lshr i64 %1, 15
   %6 = add nuw nsw i64 %4, %5
   %7 = icmp ugt i64 %6, 281474976710655
@@ -267,9 +267,9 @@ entry:
 define i1 @func00000000000003f1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 2
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = lshr exact i32 %1, 1
-  %6 = add nuw nsw i32 %4, %5
+  %6 = or i32 %4, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -280,7 +280,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = lshr i32 %1, 6
   %6 = add i32 %4, %5
   %7 = icmp ugt i32 %6, 127

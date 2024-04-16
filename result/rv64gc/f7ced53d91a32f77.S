@@ -12,6 +12,5 @@ func0000000000000006:                   # @func0000000000000006
 	beqz	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	sext.w	a0, a0
-	srli	a0, a0, 1
+	srliw	a0, a0, 1
 	ret

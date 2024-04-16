@@ -55,7 +55,7 @@ define i1 @func0000000000000061(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = icmp eq i64 %5, 0
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7

@@ -31,11 +31,10 @@ entry:
 define i64 @func00000000000003fa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, 120
-  %5 = add nuw nsw i64 %1, 120
-  %6 = icmp sgt i32 %0, 0
-  %7 = select i1 %6, i64 %4, i64 %5
-  ret i64 %7
+  %4 = icmp sgt i32 %0, 0
+  %.v = select i1 %4, i64 %3, i64 %1
+  %5 = add nuw nsw i64 %.v, 120
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

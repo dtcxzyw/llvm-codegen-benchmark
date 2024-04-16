@@ -27,11 +27,8 @@ func0000000000000111:                   # @func0000000000000111
 	seqz	a0, a0
 	ret
 func000000000000011c:                   # @func000000000000011c
-	sext.w	a3, a2
 	sext.w	a0, a0
-	beqz	a3, .LBB3_2
-	mv	a1, a2
-.LBB3_2:                                # %entry
+	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
 	seqz	a0, a0
@@ -51,15 +48,14 @@ func00000000000001a1:                   # @func00000000000001a1
 	and	a0, a0, a1
 	ret
 func000000000000041c:                   # @func000000000000041c
-	sext.w	a3, a2
-	lui	a4, 24
-	addiw	a4, a4, 1696
 	sext.w	a0, a0
-	bltu	a3, a4, .LBB5_2
-	mv	a1, a2
-.LBB5_2:                                # %entry
 	sext.w	a1, a1
+	sext.w	a2, a2
+	lui	a3, 24
+	addiw	a3, a3, 1695
+	sltu	a2, a3, a2
 	snez	a1, a1
+	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

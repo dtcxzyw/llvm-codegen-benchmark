@@ -7,7 +7,7 @@ define i64 @func000000000000000c(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = mul nuw nsw i128 %2, 3317948294049201653
-  %4 = xor i128 %0, %3
+  %4 = xor i128 %3, %0
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }
@@ -130,7 +130,7 @@ define i64 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = mul nuw i128 %2, 11376068507788127593
-  %4 = xor i128 %0, %3
+  %4 = xor i128 %3, %0
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }
@@ -141,8 +141,8 @@ entry:
 define i32 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = mul i64 %2, -4070662928558531325
-  %4 = xor i64 %0, %3
+  %3 = mul nuw nsw i64 %2, 1055579395
+  %4 = xor i64 %3, %0
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

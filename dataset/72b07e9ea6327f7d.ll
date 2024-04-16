@@ -8,10 +8,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = call i64 @llvm.fshl.i64(i64 %0, i64 %0, i64 52)
-  %2 = lshr i64 %1, 6
-  %3 = and i64 %2, 63
-  ret i64 %3
+  %1 = lshr i64 %0, 18
+  %2 = and i64 %1, 63
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

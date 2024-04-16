@@ -40,7 +40,7 @@
 define i8 @func0000000000000023(i32 %0) #0 {
 entry:
   %1 = call noundef i32 @llvm.ctlz.i32(i32 %0, i1 false), !range !0
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nuw nsw i32 %1 to i8
   %3 = add nuw nsw i8 %2, 1
   ret i8 %3
 }
@@ -70,7 +70,7 @@ declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 define i8 @func0000000000000013(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
-  %2 = trunc i64 %1 to i8
+  %2 = trunc nuw nsw i64 %1 to i8
   %3 = add nuw nsw i8 %2, 1
   ret i8 %3
 }
@@ -94,7 +94,7 @@ entry:
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.ctlz.i64(i64 %0, i1 false), !range !1
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
   ret i32 %3
 }

@@ -52,9 +52,8 @@ entry:
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 3
-  %2 = add nsw i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %2 = icmp eq i32 %1, -1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

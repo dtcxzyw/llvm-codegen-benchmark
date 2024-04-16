@@ -49,7 +49,7 @@ entry:
   %2 = lshr i64 %1, 4
   %3 = and i64 %2, 1792
   %4 = and i64 %1, 255
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }
@@ -73,7 +73,7 @@ entry:
   %2 = lshr i32 %1, 13
   %3 = and i32 %2, 8192
   %4 = and i32 %1, 256
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = or i32 %5, %3
   ret i32 %6
 }
@@ -86,7 +86,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 256
   %4 = and i32 %1, 32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = or i32 %5, %3
   ret i32 %6
 }

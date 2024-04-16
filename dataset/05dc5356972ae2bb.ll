@@ -49,7 +49,7 @@ entry:
   %4 = add nuw nsw i64 %3, 40
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i64 0, i64 %4
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

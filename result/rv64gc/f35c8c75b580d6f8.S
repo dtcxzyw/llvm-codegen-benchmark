@@ -26,15 +26,16 @@ func0000000000000000:                   # @func0000000000000000
 	sub	a3, a3, a4
 	sub	a3, a3, a2
 	slli	a2, a4, 32
-	sub	a4, a0, a4
-	sub	a4, a4, a2
-	sltu	a0, a4, a0
-	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a2, a2, a4
+	neg	a4, a2
+	sub	a0, a0, a2
+	sltu	a2, a0, a4
+	add	a1, a1, a2
+	add	a1, a1, a3
+	slli	a1, a1, 1
+	srli	a2, a0, 63
+	or	a1, a1, a2
 	slli	a0, a0, 1
-	srli	a1, a4, 63
-	or	a1, a1, a0
-	slli	a0, a4, 1
 	ret
 func0000000000000055:                   # @func0000000000000055
 	add	a1, a1, a2

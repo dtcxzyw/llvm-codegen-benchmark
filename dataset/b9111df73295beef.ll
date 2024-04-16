@@ -9,7 +9,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
   %5 = icmp slt i32 %1, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i64 0, i64 %4
   ret i64 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = icmp slt i32 %1, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i64 0, i64 %4
   ret i64 %7
 }

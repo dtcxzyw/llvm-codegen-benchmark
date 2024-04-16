@@ -46,7 +46,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -4096
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
   ret i32 %4
 }
@@ -61,7 +61,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 4
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 1)
   ret i32 %4
 }
@@ -85,7 +85,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 1)
   ret i32 %4
 }

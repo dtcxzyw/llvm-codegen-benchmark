@@ -428,11 +428,11 @@
 define i64 @func000000000000007a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
-  %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %0, 3
-  %5 = sub nsw i64 %4, %3
-  %6 = lshr i64 %5, 1
-  ret i64 %6
+  %.neg = xor i64 %2, -1
+  %3 = add nuw nsw i64 %0, 3
+  %4 = add i64 %3, %.neg
+  %5 = lshr i64 %4, 1
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -441,11 +441,11 @@ entry:
 define i64 @func0000000000000072(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw i64 %0, 3
-  %5 = sub nsw i64 %4, %3
-  %6 = lshr i64 %5, 1
-  ret i64 %6
+  %.neg = xor i64 %2, -1
+  %3 = add nuw i64 %0, 3
+  %4 = add i64 %3, %.neg
+  %5 = lshr i64 %4, 1
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

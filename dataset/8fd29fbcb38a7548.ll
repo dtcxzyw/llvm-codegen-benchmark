@@ -74,7 +74,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 9223372036854775807
+  %2 = and i64 %1, 9223372036850581504
   %3 = icmp ugt i64 %2, 17158897663
   %4 = and i16 %0, 4088
   %5 = select i1 %3, i16 4088, i16 %4

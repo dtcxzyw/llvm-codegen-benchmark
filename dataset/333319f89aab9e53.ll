@@ -29,12 +29,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 16
-  %3 = shl nuw i32 %0, 24
-  %4 = or disjoint i32 %3, %2
-  %5 = lshr exact i32 %4, 16
-  %6 = and i32 %5, 255
-  ret i32 %6
+  %2 = and i32 %1, 255
+  ret i32 %2
 }
 
 ; 1 occurrences:

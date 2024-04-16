@@ -5,8 +5,8 @@
 define double @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 20
-  %3 = select i1 %0, i32 200, i32 %2
-  %4 = sitofp i32 %3 to double
+  %3 = sitofp i32 %2 to double
+  %4 = select i1 %0, double 2.000000e+02, double %3
   ret double %4
 }
 
@@ -17,8 +17,8 @@ entry:
 define double @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = sitofp i32 %3 to double
+  %3 = sitofp i32 %2 to double
+  %4 = select i1 %0, double 1.000000e+00, double %3
   ret double %4
 }
 

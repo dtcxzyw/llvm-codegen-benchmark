@@ -7,8 +7,8 @@ define i1 @func0000000000000216(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %5 = trunc nuw i64 %4 to i32
+  %6 = add nsw i32 %5, %0
   %7 = icmp slt i32 %6, 0
   ret i1 %7
 }
@@ -21,8 +21,8 @@ define i1 @func000000000000040c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %5 = trunc nuw i64 %4 to i32
+  %6 = add i32 %5, %0
   %7 = icmp ne i32 %6, -1
   ret i1 %7
 }
@@ -48,8 +48,8 @@ define i1 @func0000000000000428(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = add nuw i64 %0, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add nuw i64 %5, %0
   %7 = icmp ugt i64 %6, 999999999999999999
   ret i1 %7
 }
@@ -213,8 +213,8 @@ define i1 @func0000000000000424(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = add nuw i64 %0, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add nuw i64 %5, %0
   %7 = icmp ult i64 %6, 100
   ret i1 %7
 }
@@ -235,7 +235,7 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = icmp ult i64 %6, 100
   ret i1 %7
 }
@@ -316,8 +316,8 @@ entry:
   %3 = mul nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc i128 %4 to i32
-  %6 = add i32 %0, %5
-  %7 = icmp ne i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp ne i32 %5, %6
   ret i1 %7
 }
 
@@ -330,8 +330,8 @@ entry:
   %3 = mul nuw nsw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i32
-  %6 = add i32 %0, %5
-  %7 = icmp ne i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp ne i32 %5, %6
   ret i1 %7
 }
 
@@ -343,7 +343,7 @@ entry:
   %3 = mul i64 %1, %2
   %4 = lshr i64 %3, 13
   %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
 }

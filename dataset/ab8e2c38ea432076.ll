@@ -29,9 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, 1
-  %4 = icmp ugt i32 %1, %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %3 = icmp ule i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -74,9 +74,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, -1
-  %4 = icmp eq i64 %1, %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %3 = icmp ne i64 %1, %2
+  %4 = sext i1 %3 to i32
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -85,9 +85,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %0, -1
-  %4 = icmp ugt i32 %1, %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %3 = icmp ule i32 %1, %2
+  %4 = sext i1 %3 to i32
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -96,9 +96,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, 1
-  %4 = icmp slt i32 %1, %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %3 = icmp sge i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -118,9 +118,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000000a(i16 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i16 %0, 1
-  %4 = icmp sgt i64 %1, %2
-  %5 = select i1 %4, i16 %0, i16 %3
+  %3 = icmp sle i64 %1, %2
+  %4 = zext i1 %3 to i16
+  %5 = add i16 %4, %0
   ret i16 %5
 }
 

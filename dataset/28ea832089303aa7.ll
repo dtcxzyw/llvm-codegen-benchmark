@@ -10,7 +10,7 @@
 define i64 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 32)
   %5 = zext nneg i32 %4 to i64
   ret i64 %5

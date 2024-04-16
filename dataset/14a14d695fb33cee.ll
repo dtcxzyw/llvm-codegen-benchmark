@@ -7,9 +7,9 @@
 define i64 @func0000000000000001(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = and i64 %4, -8608480567731124088
-  %6 = or disjoint i64 %1, %5
+  %6 = or disjoint i64 %5, %1
   %7 = xor i64 %6, %0
   ret i64 %7
 }

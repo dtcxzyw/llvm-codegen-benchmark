@@ -56,9 +56,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 1776
-  %5 = getelementptr inbounds [6 x %struct.TileDef.1655387], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [6 x %struct.TileDef.1655387], ptr %4, i64 0, i64 %3, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -71,9 +70,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 5888
-  %5 = getelementptr [8 x %struct.USBHubPort.1661024], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 72
-  ret ptr %6
+  %5 = getelementptr [8 x %struct.USBHubPort.1661024], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -84,9 +82,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 12336
-  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3, i32 5
+  ret ptr %5
 }
 
 ; 46 occurrences:
@@ -155,9 +152,8 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 7824
-  %5 = getelementptr [16 x %struct.pmp_entry_t.1666671], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [16 x %struct.pmp_entry_t.1666671], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -181,9 +177,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 192
-  %5 = getelementptr [11 x %struct.free_area.1998947], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 64
-  ret ptr %6
+  %5 = getelementptr [11 x %struct.free_area.1998947], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -194,9 +189,8 @@ entry:
   %2 = add i32 %1, -8
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 260
-  %5 = getelementptr [12 x %struct.snd_interval.2000609], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [12 x %struct.snd_interval.2000609], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -207,9 +201,8 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 88
-  %5 = getelementptr [27 x %struct.sidtab_isid_entry.2001259], ptr %4, i64 0, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 56
-  ret ptr %6
+  %5 = getelementptr [27 x %struct.sidtab_isid_entry.2001259], ptr %4, i64 0, i64 %3, i32 1, i32 2, i32 4, i32 0, i64 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -242,9 +235,8 @@ entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds [0 x %"struct.nlsat::interval.2094751"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds [0 x %"struct.nlsat::interval.2094751"], ptr %4, i64 0, i64 %3, i32 3
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -259,9 +251,8 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 64
-  %5 = getelementptr inbounds [100 x %struct.CType.2145448], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds [100 x %struct.CType.2145448], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -275,9 +266,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 40
-  %5 = getelementptr inbounds [1 x %union.UValue.2179545], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [1 x %union.UValue.2179545], ptr %4, i64 0, i64 %3, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -289,9 +279,8 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 4
-  %5 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.694.2273533"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr inbounds [1 x %"struct.OT::OffsetTo.694.2273533"], ptr %4, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

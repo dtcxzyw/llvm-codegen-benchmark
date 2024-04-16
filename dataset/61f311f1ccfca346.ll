@@ -33,10 +33,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 1
-  %2 = xor i8 %1, 1
-  %3 = trunc i8 %2 to i1
-  ret i1 %3
+  %1 = trunc i8 %0 to i1
+  %2 = xor i1 %1, true
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

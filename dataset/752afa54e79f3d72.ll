@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i8 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i8
-  %4 = icmp ult i8 %1, %3
+  %3 = icmp eq i8 %1, 0
+  %4 = and i1 %3, %2
   %5 = select i1 %4, i64 24, i64 16
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -23,7 +23,7 @@ entry:
 define ptr @func000000000000000d(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = icmp slt i32 %1, %3
+  %4 = icmp sgt i32 %3, %1
   %5 = select i1 %4, i64 16, i64 24
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

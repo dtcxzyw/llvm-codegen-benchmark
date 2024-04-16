@@ -1,12 +1,12 @@
 func0000000000000101:                   # @func0000000000000101
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a0, a0, a2
+	sltu	a0, a0, a2
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000381:                   # @func0000000000000381
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a0, a0, a2
+	sltu	a0, a0, a2
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret

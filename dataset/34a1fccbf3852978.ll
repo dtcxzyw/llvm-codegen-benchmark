@@ -10,7 +10,7 @@ entry:
   %4 = and i16 %3, -16
   %5 = zext i16 %4 to i64
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = and i32 %3, 2147483647
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds %class.int_hash_entry.2112084, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = and i32 %3, 31
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i32, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

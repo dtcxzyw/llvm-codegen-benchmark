@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = srem i64 %0, 86400
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nsw i64 %1 to i32
   %3 = icmp slt i32 %2, -3600
   ret i1 %3
 }
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = srem i64 %0, 60
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nsw i64 %1 to i32
   %3 = icmp eq i32 %2, 0
   ret i1 %3
 }
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 100
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nsw i32 %1 to i8
   %3 = icmp ugt i8 %2, 9
   ret i1 %3
 }
@@ -81,7 +81,7 @@ entry:
 define i1 @func000000000000000c(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 8
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nsw i32 %1 to i8
   %3 = icmp ne i8 %2, 0
   ret i1 %3
 }
@@ -93,7 +93,7 @@ entry:
 define i1 @func000000000000000a(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 100
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nsw i32 %1 to i16
   %3 = icmp sgt i16 %2, 0
   ret i1 %3
 }

@@ -31,8 +31,10 @@ func0000000000000154:                   # @func0000000000000154
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	add	a0, a0, a1
+	li	a1, -4
+	zext.w	a1, a1
+	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, -4
 	ret
 func0000000000000114:                   # @func0000000000000114
 	srai	a2, a2, 3
@@ -42,6 +44,8 @@ func0000000000000114:                   # @func0000000000000114
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	add	a0, a0, a1
+	li	a1, -16
+	zext.w	a1, a1
+	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, -16
 	ret

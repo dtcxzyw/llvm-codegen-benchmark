@@ -33,9 +33,8 @@ entry:
   %1 = add i8 %0, -94
   %2 = icmp ugt i8 %0, 93
   %3 = select i1 %2, i8 %1, i8 %0
-  %4 = add i8 %3, 33
-  %5 = icmp eq i8 %4, 64
-  ret i1 %5
+  %4 = icmp eq i8 %3, 31
+  ret i1 %4
 }
 
 ; 1 occurrences:

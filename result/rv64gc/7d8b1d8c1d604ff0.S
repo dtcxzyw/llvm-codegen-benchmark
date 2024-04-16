@@ -16,8 +16,8 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000028:                   # @func0000000000000028
 	andi	a0, a0, 255
-	addi	a0, a0, -8
-	srliw	a0, a0, 3
+	addi	a0, a0, 2040
+	srli	a0, a0, 3
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a0, a0, 32
@@ -30,7 +30,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000002c:                   # @func000000000000002c
 	sext.w	a0, a0
-	addi	a0, a0, -20
+	li	a1, 1
+	slli	a1, a1, 35
+	addi	a1, a1, -20
+	add	a0, a0, a1
 	srli	a0, a0, 3
 	ret
 func000000000000003c:                   # @func000000000000003c

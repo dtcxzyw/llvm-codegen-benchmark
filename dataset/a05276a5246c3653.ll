@@ -13,8 +13,8 @@ define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext i8 %2 to i32
-  %4 = add i32 %0, %3
-  %5 = icmp ult i32 %4, %0
+  %4 = xor i32 %0, -1
+  %5 = icmp ult i32 %4, %3
   ret i1 %5
 }
 

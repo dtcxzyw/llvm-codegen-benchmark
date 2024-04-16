@@ -38,9 +38,8 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = getelementptr [512 x %struct.prefix_code_symbol.1910722], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 2
-  ret ptr %4
+  %3 = getelementptr [512 x %struct.prefix_code_symbol.1910722], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

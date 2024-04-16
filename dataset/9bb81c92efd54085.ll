@@ -20,10 +20,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
 entry:
-  %2 = mul nsw i32 %1, 30
-  %3 = select i1 %0, i32 16, i32 %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = icmp eq i32 %1, 0
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -34,8 +34,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 12
-  %3 = select i1 %0, i32 48, i32 %2
-  %4 = icmp eq i32 %3, 0
+  %3 = icmp eq i32 %2, 0
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 

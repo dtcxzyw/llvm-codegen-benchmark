@@ -6,9 +6,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4503599627370495
-  %3 = shl nuw nsw i64 %2, 11
-  %4 = and i64 %0, %3
+  %2 = shl i64 %1, 11
+  %3 = and i64 %2, 9223372036854773760
+  %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -18,8 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 71776119061217280
-  %3 = shl i64 %2, 9
+  %2 = shl i64 %1, 9
+  %3 = and i64 %2, -144115188075855872
   %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -30,8 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 71776119061217280
-  %3 = shl nuw i64 %2, 8
+  %2 = shl i64 %1, 8
+  %3 = and i64 %2, -72057594037927936
   %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5

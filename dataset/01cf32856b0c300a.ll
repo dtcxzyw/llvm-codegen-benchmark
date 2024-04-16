@@ -16,7 +16,7 @@ entry:
   %2 = tail call i32 @llvm.smin.i32(i32 %1, i32 128)
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

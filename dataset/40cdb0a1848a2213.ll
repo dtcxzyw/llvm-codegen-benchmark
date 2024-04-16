@@ -102,7 +102,7 @@
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 5.000000e-01
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   ret i1 %3
 }
 
@@ -245,7 +245,7 @@ entry:
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0.000000e+00
-  %3 = fcmp olt float %0, %2
+  %3 = fcmp ogt float %2, %0
   ret i1 %3
 }
 
@@ -315,7 +315,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e+00
-  %3 = fcmp ugt double %0, %2
+  %3 = fcmp ult double %2, %0
   ret i1 %3
 }
 
@@ -332,7 +332,7 @@ entry:
 define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3FEFF8AD00000000
-  %3 = fcmp une float %0, %2
+  %3 = fcmp une float %2, %0
   ret i1 %3
 }
 
@@ -365,7 +365,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x3CE4000000000000
-  %3 = fcmp ole double %0, %2
+  %3 = fcmp oge double %2, %0
   ret i1 %3
 }
 
@@ -415,7 +415,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.500000e+00
-  %3 = fcmp ult double %0, %2
+  %3 = fcmp ugt double %2, %0
   ret i1 %3
 }
 
@@ -441,7 +441,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F70101020000000
-  %3 = fcmp oeq float %0, %2
+  %3 = fcmp oeq float %2, %0
   ret i1 %3
 }
 
@@ -456,7 +456,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F50624DE0000000
-  %3 = fcmp ule float %0, %2
+  %3 = fcmp uge float %2, %0
   ret i1 %3
 }
 
@@ -473,7 +473,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3E80000000000000
-  %3 = fcmp uge float %0, %2
+  %3 = fcmp ule float %2, %0
   ret i1 %3
 }
 
@@ -500,7 +500,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3FE70A3D80000000
-  %3 = fcmp oge float %0, %2
+  %3 = fcmp ole float %2, %0
   ret i1 %3
 }
 

@@ -1,8 +1,8 @@
 func000000000000002a:                   # @func000000000000002a
 	andi	a1, a1, 1
-	sext.w	a3, a0
-	slti	a3, a3, 0
-	addi	a3, a3, -1
+	sext.w	a0, a0
+	sgtz	a3, a0
+	negw	a3, a3
 	and	a0, a0, a3
 	addi	a1, a1, -1
 	and	a1, a1, a2
@@ -10,9 +10,9 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000002b:                   # @func000000000000002b
 	andi	a1, a1, 1
-	sext.w	a3, a0
-	slti	a3, a3, 0
-	addi	a3, a3, -1
+	sext.w	a0, a0
+	sgtz	a3, a0
+	negw	a3, a3
 	and	a0, a0, a3
 	addi	a1, a1, -1
 	and	a1, a1, a2

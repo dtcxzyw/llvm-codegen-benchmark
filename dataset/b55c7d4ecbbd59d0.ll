@@ -10,7 +10,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = and i32 %4, 255
   %6 = zext nneg i32 %5 to i64
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

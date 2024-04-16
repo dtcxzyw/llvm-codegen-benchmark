@@ -325,7 +325,7 @@ entry:
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 60
-  %2 = or disjoint i64 %0, %1
+  %2 = or disjoint i64 %1, %0
   ret i64 %2
 }
 

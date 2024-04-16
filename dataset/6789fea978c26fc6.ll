@@ -8,12 +8,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = sext i32 %3 to i64
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr inbounds i8, ptr %0, i64 8
-  %6 = getelementptr inbounds [3 x [3 x float]], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [3 x [3 x float]], ptr %5, i64 0, i64 %4, i64 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -21,12 +20,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = sext i32 %3 to i64
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr inbounds i8, ptr %0, i64 24
-  %6 = getelementptr [0 x %struct.FormData_pg_attribute.2121508], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 95
-  ret ptr %7
+  %6 = getelementptr [0 x %struct.FormData_pg_attribute.2121508], ptr %5, i64 0, i64 %4, i32 17
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

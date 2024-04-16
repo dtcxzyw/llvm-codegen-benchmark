@@ -9447,7 +9447,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp sge i64 %1, 0
+  %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i1 true, i1 %0
   ret i1 %3
 }

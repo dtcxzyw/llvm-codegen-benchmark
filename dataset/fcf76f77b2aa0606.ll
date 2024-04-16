@@ -8,9 +8,9 @@
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr inbounds i32, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 4
+  %4 = getelementptr i32, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 
@@ -20,9 +20,9 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 32
-  %5 = getelementptr %struct.bio_vec.2010043, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 32
+  %4 = getelementptr %struct.bio_vec.2010043, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -32,9 +32,9 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
-  %3 = add nuw nsw i64 %2, 30
-  %4 = getelementptr inbounds i8, ptr %0, i64 768
-  %5 = getelementptr inbounds i8, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 768
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 30
   ret ptr %5
 }
 
@@ -44,9 +44,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 24
-  %5 = getelementptr i32, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 24
+  %4 = getelementptr i32, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 
@@ -56,9 +56,9 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr i8, ptr %0, i64 -4
-  %5 = getelementptr i32, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 -4
+  %4 = getelementptr i32, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 

@@ -7,7 +7,7 @@ entry:
   %2 = fmul double %1, 1.300000e+01
   %3 = fptosi double %2 to i32
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = fmul float %1, 2.560000e+02
   %3 = fptosi float %2 to i16
   %4 = sext i16 %3 to i32
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
 

@@ -13,10 +13,11 @@ func00000000000001ac:                   # @func00000000000001ac
 	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	sext.w	a2, a0
-	subw	a1, a1, a0
-	snez	a0, a1
-	snez	a1, a2
+	sext.w	a0, a0
+	sext.w	a1, a1
+	xor	a1, a1, a0
+	snez	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000018c:                   # @func000000000000018c

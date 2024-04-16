@@ -9,7 +9,7 @@ entry:
   %3 = uitofp i64 %2 to double
   %4 = fdiv double %3, %1
   %5 = fptoui double %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

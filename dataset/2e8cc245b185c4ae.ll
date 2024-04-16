@@ -8,7 +8,7 @@
 define i32 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = trunc i64 %0 to i32
   %5 = shl i32 %4, 6
   %6 = or disjoint i32 %5, %3
@@ -27,7 +27,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 define i32 @func0000000000000085(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = trunc i64 %0 to i32
   %5 = shl nuw i32 %4, 6
   %6 = or disjoint i32 %5, %3
@@ -48,7 +48,7 @@ entry:
 define i16 @func0000000000000087(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i16
+  %3 = trunc nuw nsw i64 %2 to i16
   %4 = trunc i64 %0 to i16
   %5 = shl nuw nsw i16 %4, 6
   %6 = or disjoint i16 %5, %3

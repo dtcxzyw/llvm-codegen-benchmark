@@ -3,7 +3,7 @@ func0000000000000441:                   # @func0000000000000441
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB0_2
-	li	a1, -9
+	li	a1, 247
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255
@@ -15,7 +15,7 @@ func0000000000000444:                   # @func0000000000000444
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB1_2
-	li	a1, -9
+	li	a1, 247
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255
@@ -26,7 +26,7 @@ func0000000000000448:                   # @func0000000000000448
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB2_2
-	li	a1, -9
+	li	a1, 247
 .LBB2_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255

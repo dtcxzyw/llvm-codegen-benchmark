@@ -10,9 +10,9 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 8
   %4 = or disjoint i32 %3, %2
-  %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, 2
-  ret i64 %6
+  %narrow = add nuw i32 %4, 2
+  %5 = zext i32 %narrow to i64
+  ret i64 %5
 }
 
 ; 13 occurrences:

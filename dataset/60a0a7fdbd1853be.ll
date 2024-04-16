@@ -51,8 +51,8 @@ entry:
 define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = mul i64 %1, %3
-  %5 = add i64 %0, %4
+  %4 = mul i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
 }
@@ -76,8 +76,8 @@ entry:
 define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = mul i64 %1, %3
-  %5 = add i64 %0, %4
+  %4 = mul i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
 }
@@ -101,9 +101,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %3 = add i64 %2, 4611686018427387903
+  %4 = mul i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = shl i64 %5, 2
   ret i64 %6
 }
@@ -114,8 +114,8 @@ entry:
 define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %1, %3
-  %5 = add i32 %0, %4
+  %4 = mul nsw i32 %3, %1
+  %5 = add i32 %4, %0
   %6 = shl nsw i32 %5, 1
   ret i32 %6
 }
@@ -125,8 +125,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %1, %3
+  %3 = add i32 %2, 1073741823
+  %4 = mul i32 %3, %1
   %5 = add i32 %4, %0
   %6 = shl i32 %5, 2
   ret i32 %6
@@ -138,7 +138,7 @@ entry:
 define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %1, %3
+  %4 = mul nsw i32 %3, %1
   %5 = add nsw i32 %4, %0
   %6 = shl nsw i32 %5, 2
   ret i32 %6
@@ -150,7 +150,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = mul nsw i32 %1, %3
+  %4 = mul nsw i32 %3, %1
   %5 = add nsw i32 %4, %0
   %6 = shl nsw i32 %5, 2
   ret i32 %6
@@ -163,7 +163,7 @@ define i64 @func000000000000007c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 4294967295
   %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = shl i64 %5, 32
   ret i64 %6
 }

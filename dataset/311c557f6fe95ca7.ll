@@ -24,7 +24,7 @@ entry:
   %3 = trunc i64 %2 to i8
   %4 = icmp ult i8 %3, 67
   %5 = select i1 %4, i32 -29, i32 %1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 1
   %5 = select i1 %4, i32 0, i32 %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

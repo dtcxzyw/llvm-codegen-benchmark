@@ -8,10 +8,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = call i64 @llvm.umin.i64(i64 %4, i64 %0)
-  ret i64 %5
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = call i64 @llvm.umin.i64(i64 %3, i64 %0)
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -26,10 +26,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = call i64 @llvm.umin.i64(i64 %4, i64 %0)
-  ret i64 %5
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = call i64 @llvm.umin.i64(i64 %3, i64 %0)
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -38,10 +38,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = call noundef i64 @llvm.umin.i64(i64 %0, i64 %4)
-  ret i64 %5
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = call noundef i64 @llvm.umin.i64(i64 %0, i64 %3)
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -49,10 +49,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = sub i64 %1, %3
-  %5 = tail call noundef i64 @llvm.umin.i64(i64 %0, i64 %4)
-  ret i64 %5
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %.neg, %1
+  %4 = tail call noundef i64 @llvm.umin.i64(i64 %0, i64 %3)
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

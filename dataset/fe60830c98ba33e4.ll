@@ -6,7 +6,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 8)
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   ret i32 %4
 }
 

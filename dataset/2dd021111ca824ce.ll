@@ -36,12 +36,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl i64 %1, 32
-  %5 = or disjoint i64 %4, %3
-  %6 = and i64 %5, -65536
-  %7 = or disjoint i64 %0, %6
-  ret i64 %7
+  %3 = shl i64 %1, 32
+  %4 = and i32 %2, -65536
+  %.masked = zext i32 %4 to i64
+  %5 = or disjoint i64 %3, %.masked
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

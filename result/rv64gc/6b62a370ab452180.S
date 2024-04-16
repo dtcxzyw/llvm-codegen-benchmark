@@ -1,26 +1,24 @@
-.LCPI0_0:
-	.quad	384307168202282325              # 0x555555555555555
 func0000000000000053:                   # @func0000000000000053
 	seqz	a2, a1
-	add	a3, a1, a1
-	add	a2, a2, a3
-	bgeu	a2, a1, .LBB0_2
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-.LBB0_2:                                # %entry
+	add	a2, a2, a1
+	not	a1, a1
+	bgeu	a1, a2, .LBB0_2
+	li	a0, -15
+	srli	a0, a0, 1
+	ret
+.LBB0_2:
 	li	a1, 24
 	mul	a0, a0, a1
 	ret
-.LCPI1_0:
-	.quad	115292150460684697              # 0x199999999999999
 func0000000000000013:                   # @func0000000000000013
 	seqz	a2, a1
-	add	a3, a1, a1
-	add	a2, a2, a3
-	bgeu	a2, a1, .LBB1_2
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
-.LBB1_2:                                # %entry
+	add	a2, a2, a1
+	not	a1, a1
+	bgeu	a1, a2, .LBB1_2
+	li	a0, -95
+	srli	a0, a0, 1
+	ret
+.LBB1_2:
 	li	a1, 80
 	mul	a0, a0, a1
 	ret

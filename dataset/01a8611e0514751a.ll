@@ -32,10 +32,9 @@ define i64 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp ugt i64 %5, 4611686018427387903
-  %7 = select i1 %6, i64 -1, i64 %0
-  ret i64 %7
+  %.inv = icmp sgt i64 %4, -1
+  %5 = select i1 %.inv, i64 %0, i64 -1
+  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -45,10 +44,9 @@ define i32 @func0000000000000016(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 2
-  %6 = icmp slt i64 %5, 26
-  %7 = select i1 %6, i32 -1, i32 %0
-  ret i32 %7
+  %5 = icmp slt i64 %4, 104
+  %6 = select i1 %5, i32 -1, i32 %0
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

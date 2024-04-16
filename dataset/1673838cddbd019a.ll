@@ -16,9 +16,8 @@ define ptr @func0000000000000007(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr inbounds i8, ptr %3, i64 28
-  %5 = getelementptr inbounds %"struct.std::pair.177.1844680", ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.std::pair.177.1844680", ptr %4, i64 %0, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:

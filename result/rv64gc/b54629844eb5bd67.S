@@ -86,8 +86,9 @@ func0000000000000174:                   # @func0000000000000174
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a1, a1, 8
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000030a:                   # @func000000000000030a
@@ -177,14 +178,16 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000201:                   # @func0000000000000201
 	add	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 32
+	addi	a1, a1, 32
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000301:                   # @func0000000000000301
 	add	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 1
+	addi	a1, a1, 1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000158:                   # @func0000000000000158
@@ -264,8 +267,9 @@ func0000000000000108:                   # @func0000000000000108
 	ret
 func0000000000000101:                   # @func0000000000000101
 	add	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 2
+	addi	a1, a1, 2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000003f4:                   # @func00000000000003f4

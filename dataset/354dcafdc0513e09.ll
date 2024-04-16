@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000030(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

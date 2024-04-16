@@ -9,7 +9,7 @@ entry:
   %2 = lshr i8 %1, 1
   %3 = or i8 %2, %1
   %4 = and i8 %3, 1
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = or disjoint i32 %2, %1
   %4 = and i32 %3, 13107
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

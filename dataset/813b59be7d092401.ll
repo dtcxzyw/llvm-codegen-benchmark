@@ -9,7 +9,7 @@ entry:
   %3 = fpext float %2 to double
   %4 = call double @llvm.fmuladd.f64(double %3, double 6.000000e-01, double %1)
   %5 = fptrunc double %4 to float
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

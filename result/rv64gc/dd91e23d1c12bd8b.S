@@ -21,12 +21,12 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a0, a1
 	ret
 func00000000000000da:                   # @func00000000000000da
-	addi	a1, a0, 7
+	sext.w	a1, a0
+	addi	a0, a0, 7
 	lui	a2, 524288
-	addi	a2, a2, -8
-	and	a1, a1, a2
-	subw	a1, a1, a0
-	sgtz	a0, a1
+	addiw	a2, a2, -8
+	and	a0, a0, a2
+	slt	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a1, a0, 63
@@ -38,8 +38,7 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000001a:                   # @func000000000000001a
 	addi	a1, a0, 7
 	andi	a1, a1, -8
-	sub	a1, a1, a0
-	sgtz	a0, a1
+	slt	a0, a0, a1
 	ret
 func00000000000000d8:                   # @func00000000000000d8
 	addi	a1, a0, 63

@@ -301,9 +301,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 3
-  %3 = sub i64 %0, %2
-  ret i64 %3
+  %.neg = mul i64 %1, -3
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -312,9 +312,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw i64 %1, 3
-  %3 = sub i64 %0, %2
-  ret i64 %3
+  %.neg = mul i64 %1, -3
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 ; 8 occurrences:
@@ -329,9 +329,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nuw nsw i32 %1, 65535
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = mul i32 %1, -65535
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 9 occurrences:
@@ -347,9 +347,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = sub i32 %0, %2
-  ret i32 %3
+  %.neg = mul i32 %1, -3
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 11 occurrences:
@@ -367,9 +367,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nsw i32 %1, 5
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = mul i32 %1, -5
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -378,9 +378,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw i64 %1, 3
-  %3 = sub nuw i64 %0, %2
-  ret i64 %3
+  %.neg = mul i64 %1, -3
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 ; 16 occurrences:
@@ -403,9 +403,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nuw nsw i32 %1, 80
-  %3 = sub i32 %0, %2
-  ret i32 %3
+  %.neg = mul i32 %1, -80
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -415,9 +415,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 94
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = mul i32 %1, -94
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

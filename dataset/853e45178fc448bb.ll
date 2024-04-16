@@ -7,7 +7,7 @@
 define float @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
   %4 = tail call noundef float @llvm.fabs.f32(float %3)
   ret float %4
@@ -22,7 +22,7 @@ declare float @llvm.fabs.f32(float) #1
 define float @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = bitcast i32 %2 to float
   %4 = call float @llvm.fabs.f32(float %3)
   ret float %4

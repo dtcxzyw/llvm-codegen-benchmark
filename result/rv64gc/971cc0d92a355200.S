@@ -1,7 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a1, a1, 31
-	andi	a0, a0, 31
 	xor	a0, a0, a1
+	andi	a0, a0, 31
 	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -10,11 +9,9 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	lui	a2, 131072
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
 	xor	a0, a0, a1
+	slli	a0, a0, 35
+	srli	a0, a0, 35
 	snez	a0, a0
 	ret
 func0000000000000084:                   # @func0000000000000084
@@ -38,19 +35,15 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a0, a1, a0
 	ret
 func0000000000000081:                   # @func0000000000000081
-	lui	a2, 131072
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
 	xor	a0, a0, a1
+	slli	a0, a0, 35
+	srli	a0, a0, 35
 	seqz	a0, a0
 	ret
 func000000000000008c:                   # @func000000000000008c
-	lui	a2, 131072
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
 	xor	a0, a0, a1
+	slli	a0, a0, 35
+	srli	a0, a0, 35
 	snez	a0, a0
 	ret
 func0000000000000088:                   # @func0000000000000088

@@ -10,7 +10,7 @@ entry:
   %4 = sext i16 %1 to i32
   %5 = add nsw i32 %4, %3
   %6 = sitofp i32 %5 to float
-  %7 = fadd float %0, %6
+  %7 = fadd float %6, %0
   ret float %7
 }
 

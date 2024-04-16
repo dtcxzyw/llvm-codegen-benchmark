@@ -10,7 +10,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = and i64 %3, 2
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = getelementptr inbounds [4 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }

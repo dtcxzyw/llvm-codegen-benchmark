@@ -13,10 +13,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %3 = tail call i32 @llvm.smax.i32(i32 %0, i32 %1)
-  %4 = sub nsw i32 %3, %2
-  ret i32 %4
+  %sub = sub nsw i32 %0, %1
+  %2 = call i32 @llvm.abs.i32(i32 %sub, i1 true)
+  ret i32 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -45,6 +44,9 @@ declare i16 @llvm.smin.i16(i16, i16) #1
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i16 @llvm.smax.i16(i16, i16) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

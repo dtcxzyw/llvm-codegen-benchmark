@@ -1,5 +1,6 @@
 func0000000000000014:                   # @func0000000000000014
 	srliw	a0, a0, 30
+	slli	a0, a0, 30
 	seqz	a0, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
@@ -39,10 +40,7 @@ func000000000000007c:                   # @func000000000000007c
 	snez	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
-	andi	a1, a1, 255
-	slliw	a0, a0, 8
-	or	a0, a0, a1
-	slti	a0, a0, 0
+	bexti	a0, a0, 23
 	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a1, a1, 1
@@ -57,25 +55,20 @@ func000000000000003c:                   # @func000000000000003c
 	snez	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a1, a1, 1
-	slliw	a0, a0, 1
-	or	a0, a0, a1
-	sltiu	a0, a0, 2
+	sext.w	a0, a0
+	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a0, a0, 1
-	sh1add	a0, a1, a0
-	sltiu	a0, a0, 10
+	slli	a1, a1, 1
+	sltiu	a0, a1, 10
 	xori	a0, a0, 1
 	ret
 func0000000000000058:                   # @func0000000000000058
-	slli	a1, a1, 44
-	srli	a1, a1, 44
-	slliw	a0, a0, 20
-	or	a0, a0, a1
-	lui	a1, 1048320
+	sext.w	a0, a0
+	lui	a1, 1
 	addiw	a1, a1, -1
-	sltu	a0, a1, a0
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slliw	a1, a1, 6
@@ -97,13 +90,11 @@ func0000000000000051:                   # @func0000000000000051
 	seqz	a0, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
-	andi	a0, a0, 7
-	sh3add	a0, a1, a0
-	andi	a0, a0, 255
-	sltiu	a0, a0, 32
+	andi	a1, a1, 255
+	sltiu	a0, a1, 4
 	ret
 func0000000000000036:                   # @func0000000000000036
-	bexti	a0, a0, 62
+	srli	a0, a0, 63
 	ret
 func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1

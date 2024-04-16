@@ -8,7 +8,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 94
   %4 = sext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = freeze i8 %1
   %3 = icmp ne i8 %2, 47
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, -146097
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

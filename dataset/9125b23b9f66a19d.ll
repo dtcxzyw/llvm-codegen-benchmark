@@ -6,8 +6,8 @@
 define i64 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = add i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

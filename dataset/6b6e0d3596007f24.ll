@@ -16,7 +16,7 @@ define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %1, %4
+  %5 = icmp eq i64 %4, %1
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

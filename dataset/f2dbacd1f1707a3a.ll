@@ -9,9 +9,10 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = add i32 %2, 23
-  %4 = udiv i32 %3, 28
-  %5 = mul i32 %4, -28
+  %.fr1 = freeze i32 %2
+  %3 = add i32 %.fr1, 23
+  %4 = urem i32 %3, 28
+  %5 = sub i32 %4, %3
   ret i32 %5
 }
 

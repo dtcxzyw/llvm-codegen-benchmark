@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = shl nuw nsw i32 %2, 2
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
-  %3 = shl nuw nsw i32 %2, 2
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -35,8 +35,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl nuw nsw i32 %2, 2
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, -4
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -47,8 +47,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl nsw i32 %2, 2
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, -4
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i16, ptr %0, i64 %4
   ret ptr %5
@@ -59,8 +59,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 3
-  %3 = shl nsw i32 %2, 1
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i16, ptr %0, i64 %4
   ret ptr %5
@@ -80,8 +80,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -32
-  %3 = shl i32 %2, 2
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, -128
   %4 = zext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
@@ -92,8 +92,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl nsw i32 %2, 3
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -8
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
@@ -105,8 +105,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = shl nuw nsw i32 %2, 1
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, -2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds %struct.ImVec2.1931752, ptr %0, i64 %4
   ret ptr %5

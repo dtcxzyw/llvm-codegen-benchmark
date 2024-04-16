@@ -80,13 +80,11 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a0, a0, 1
-	andi	a1, a1, 255
-	andi	a2, a2, 255
-	snez	a2, a2
-	snez	a1, a1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
+	andi	a0, a0, 255
+	snez	a0, a0
 	ret
 func0000000000000061:                   # @func0000000000000061
 	andi	a0, a0, 1

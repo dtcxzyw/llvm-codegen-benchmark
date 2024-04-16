@@ -111,8 +111,8 @@ define i32 @func0000000000000001(double %0) #0 {
 entry:
   %1 = fptrunc double %0 to float
   %2 = bitcast float %1 to i32
-  %3 = and i32 %2, 2139095040
-  %4 = lshr exact i32 %3, 23
+  %3 = lshr i32 %2, 23
+  %4 = and i32 %3, 255
   ret i32 %4
 }
 

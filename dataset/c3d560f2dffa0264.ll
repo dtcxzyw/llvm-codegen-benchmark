@@ -11,7 +11,7 @@ entry:
   %2 = lshr i16 %1, 2
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -60,7 +60,7 @@ entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -73,7 +73,7 @@ entry:
   %2 = lshr i32 %1, 31
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 63
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -85,7 +85,7 @@ entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 9
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -94,9 +94,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 1
+  %2 = lshr i32 %1, 2
+  %3 = and i32 %2, 1073741822
+  %4 = zext nneg i32 %3 to i64
   %5 = add i64 %4, %0
   ret i64 %5
 }

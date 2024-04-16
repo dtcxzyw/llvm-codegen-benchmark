@@ -12,7 +12,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 1
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 1
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

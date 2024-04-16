@@ -6,12 +6,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %0, i64 %1
-  %3 = ptrtoint ptr %2 to i64
-  %4 = ptrtoint ptr %0 to i64
-  %5 = sub i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %2 = trunc i64 %1 to i32
+  %3 = sub i32 0, %2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

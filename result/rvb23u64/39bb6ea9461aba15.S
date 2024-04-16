@@ -5,5 +5,5 @@ func0000000000000008:                   # @func0000000000000008
 	minu	a1, a1, a2
 	maxu	a0, a1, a0
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret

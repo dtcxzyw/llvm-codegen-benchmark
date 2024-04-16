@@ -16,9 +16,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = sub nuw nsw i32 -2, %2
-  ret i32 %3
+  %.neg = sub i32 %1, %0
+  %2 = add i32 %.neg, -2
+  ret i32 %2
 }
 
 ; 282 occurrences:
@@ -307,9 +307,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %.neg = sub i64 %1, %0
+  ret i64 %.neg
 }
 
 ; 221 occurrences:
@@ -537,9 +536,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %.neg = sub i64 %1, %0
+  ret i64 %.neg
 }
 
 ; 353 occurrences:
@@ -899,9 +897,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = sub nsw i64 0, %2
-  ret i64 %3
+  %.neg = sub nsw i64 %1, %0
+  ret i64 %.neg
 }
 
 ; 52 occurrences:
@@ -960,9 +957,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %0, %1
-  %3 = sub nsw i32 0, %2
-  ret i32 %3
+  %.neg = sub i32 %1, %0
+  ret i32 %.neg
 }
 
 ; 52 occurrences:
@@ -1021,9 +1017,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = sub nuw nsw i64 8, %2
-  ret i64 %3
+  %.neg = sub i64 %1, %0
+  %2 = add i64 %.neg, 8
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -1031,9 +1027,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 %0, %1
-  %3 = sub nuw nsw i32 32, %2
-  ret i32 %3
+  %.neg = sub i32 %1, %0
+  %2 = add i32 %.neg, 32
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -1043,9 +1039,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = sub nuw i64 -2, %2
-  ret i64 %3
+  %.neg = sub i64 %1, %0
+  %2 = add i64 %.neg, -2
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -1054,9 +1050,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub nuw nsw i64 %0, %1
-  %3 = sub nsw i64 64, %2
-  ret i64 %3
+  %.neg = sub i64 %1, %0
+  %2 = add i64 %.neg, 64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

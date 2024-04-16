@@ -6,8 +6,8 @@
 define i1 @func0000000000000021(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = lshr i64 %1, %3
-  %5 = and i64 %4, 1
+  %4 = shl nuw i64 1, %3
+  %5 = and i64 %4, %1
   %6 = icmp eq i64 %5, 0
   %7 = and i1 %6, %0
   ret i1 %7
@@ -18,11 +18,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = lshr i64 %1, %3
-  %5 = and i64 %4, 255
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl i64 255, %3
+  %5 = and i64 %4, %1
   %6 = icmp eq i64 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

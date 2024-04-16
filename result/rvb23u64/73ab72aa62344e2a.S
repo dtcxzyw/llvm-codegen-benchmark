@@ -28,6 +28,6 @@ func0000000000000005:                   # @func0000000000000005
 .LBB2_2:                                # %entry
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmul.s	fa4, fa0, fa1
+	fmul.s	fa4, fa1, fa0
 	fadd.s	fa0, fa4, fa5
 	ret

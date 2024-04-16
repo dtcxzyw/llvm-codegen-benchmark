@@ -6,12 +6,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = lshr i32 %0, 31
-  %6 = or disjoint i32 %5, %4
-  ret i32 %6
+  %2 = call i32 @llvm.fshl.i32(i32 %1, i32 %0, i32 1)
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -19,12 +15,14 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000030(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 4
-  %4 = trunc i32 %3 to i8
-  %5 = lshr i8 %0, 2
-  %6 = or i8 %5, %4
-  ret i8 %6
+  %2 = shl i8 %1, 4
+  %3 = lshr i8 %0, 2
+  %4 = or i8 %3, %2
+  ret i8 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.fshl.i32(i32, i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

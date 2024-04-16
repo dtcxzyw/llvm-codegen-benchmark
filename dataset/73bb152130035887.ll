@@ -184,9 +184,9 @@
 define i1 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, -1
-  %5 = and i1 %0, %4
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -199,7 +199,7 @@ entry:
   %2 = freeze i32 %1
   %3 = trunc i32 %2 to i8
   %4 = icmp eq i8 %3, 2
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -211,7 +211,7 @@ entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
   %4 = icmp ugt i32 %3, 99
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

@@ -20,7 +20,7 @@ entry:
   %2 = mul i8 %1, 10
   %3 = add nsw i8 %2, 32
   %4 = zext nneg i8 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = icmp ugt i32 %5, 107
   ret i1 %6
 }

@@ -9,7 +9,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
   %7 = and i32 %6, 127
   ret i32 %7
@@ -47,9 +47,9 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = and i64 %3, 2459565876494606882
-  %5 = or disjoint i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %4 = and i64 %3, 144680345676153346
+  %5 = or i64 %4, %1
+  %6 = or i64 %5, %0
   %7 = and i64 %6, -4340410370284600381
   ret i64 %7
 }

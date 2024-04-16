@@ -37,9 +37,9 @@ func0000000000000338:                   # @func0000000000000338
 func0000000000000331:                   # @func0000000000000331
 	li	a3, 10
 	mul	a2, a2, a3
-	add	a1, a1, a2
-	andi	a1, a1, 255
 	addi	a1, a1, -48
+	or	a1, a1, a2
+	andi	a1, a1, 255
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

@@ -4,10 +4,9 @@ func0000000000000101:                   # @func0000000000000101
 	add	a0, a0, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 26
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	not	a0, a0
+	slli	a0, a0, 26
+	srli	a0, a0, 26
 	seqz	a0, a0
 	ret
 func000000000000010c:                   # @func000000000000010c

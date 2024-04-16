@@ -47,7 +47,7 @@ entry:
   %1 = mul i64 %0, 10000000
   %2 = add i64 %1, 116444736000000000
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 
@@ -245,7 +245,7 @@ entry:
   %1 = mul nsw i64 %0, 1292913986
   %2 = add nsw i64 %1, 4294967295
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 

@@ -8,7 +8,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
+  %1 = zext nneg i32 %0 to i64
   %2 = shl i64 32, %1
   %3 = add i64 %2, -1
   %4 = tail call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !0

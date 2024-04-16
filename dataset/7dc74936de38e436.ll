@@ -52,10 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i32 65, i32 66
-  ret i32 %3
+  %1 = and i64 %0, 2147483648
+  %.not = icmp eq i64 %1, 0
+  %2 = select i1 %.not, i32 66, i32 65
+  ret i32 %2
 }
 
 ; 28 occurrences:
@@ -442,10 +442,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i16
-  %2 = icmp ugt i16 %1, 255
-  %3 = select i1 %2, i8 -1, i8 7
-  ret i8 %3
+  %1 = and i64 %0, 65280
+  %.not = icmp eq i64 %1, 0
+  %2 = select i1 %.not, i8 7, i8 -1
+  ret i8 %2
 }
 
 ; 1 occurrences:
@@ -497,8 +497,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0) #0 {
 entry:
-  %1 = trunc nuw nsw i64 %0 to i32
-  %2 = icmp ult i32 %1, 65536
+  %1 = and i64 %0, 4294901760
+  %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 3, i64 4
   ret i64 %3
 }
@@ -509,8 +509,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000024(i64 %0) #0 {
 entry:
-  %1 = trunc nuw i64 %0 to i32
-  %2 = icmp ult i32 %1, 65536
+  %1 = and i64 %0, 4294901760
+  %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 3, i64 4
   ret i64 %3
 }
@@ -532,9 +532,9 @@ entry:
 define i32 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 1, i32 -1
-  ret i32 %3
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 -1, i32 1
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -543,10 +543,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000016(i64 %0) #0 {
 entry:
-  %1 = trunc nsw i64 %0 to i32
-  %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i8 -1, i8 1
-  ret i8 %3
+  %1 = and i64 %0, 2147483648
+  %.not = icmp eq i64 %1, 0
+  %2 = select i1 %.not, i8 1, i8 -1
+  ret i8 %2
 }
 
 ; 1 occurrences:
@@ -554,8 +554,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000002a(i128 %0) #0 {
 entry:
-  %1 = trunc nuw i128 %0 to i64
-  %2 = icmp sgt i64 %1, -1
+  %1 = and i128 %0, 9223372036854775808
+  %2 = icmp eq i128 %1, 0
   %3 = select i1 %2, i8 3, i8 4
   ret i8 %3
 }

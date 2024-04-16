@@ -40,9 +40,9 @@
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 0, i64 8192
-  %3 = or disjoint i64 %0, %2
-  %4 = and i64 %3, -245761
-  ret i64 %4
+  %.masked = and i64 %0, -245761
+  %3 = or i64 %2, %.masked
+  ret i64 %3
 }
 
 ; 7 occurrences:
@@ -57,9 +57,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 2
-  %3 = or i32 %0, %2
-  %4 = and i32 %3, -1073741825
-  ret i32 %4
+  %.masked = and i32 %0, -1073741825
+  %3 = or i32 %2, %.masked
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

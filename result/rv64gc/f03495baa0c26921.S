@@ -1,28 +1,39 @@
 func000000000000000c:                   # @func000000000000000c
-	slt	a3, a0, a1
-	or	a2, a2, a3
 	andi	a2, a2, 1
-	bnez	a2, .LBB0_2
-	mv	a0, a1
+	mv	a3, a0
+	bge	a0, a1, .LBB0_3
+	beqz	a2, .LBB0_4
 .LBB0_2:                                # %entry
 	ret
+.LBB0_3:                                # %entry
+	mv	a3, a1
+	bnez	a2, .LBB0_2
+.LBB0_4:                                # %entry
+	mv	a0, a3
+	ret
 func000000000000000e:                   # @func000000000000000e
-	sext.w	a3, a0
-	sext.w	a4, a1
-	slt	a3, a4, a3
-	not	a3, a3
-	or	a2, a2, a3
+	sext.w	a3, a1
+	sext.w	a1, a0
 	andi	a2, a2, 1
-	bnez	a2, .LBB1_2
-	mv	a0, a1
+	bge	a1, a3, .LBB1_3
+	beqz	a2, .LBB1_4
 .LBB1_2:                                # %entry
 	ret
-func000000000000000a:                   # @func000000000000000a
-	sltu	a3, a0, a1
-	not	a3, a3
-	or	a2, a2, a3
-	andi	a2, a2, 1
-	bnez	a2, .LBB2_2
+.LBB1_3:                                # %entry
+	mv	a1, a3
+	bnez	a2, .LBB1_2
+.LBB1_4:                                # %entry
 	mv	a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	andi	a2, a2, 1
+	bgeu	a0, a1, .LBB2_3
+	beqz	a2, .LBB2_4
 .LBB2_2:                                # %entry
+	ret
+.LBB2_3:                                # %entry
+	mv	a1, a0
+	bnez	a2, .LBB2_2
+.LBB2_4:                                # %entry
+	mv	a0, a1
 	ret

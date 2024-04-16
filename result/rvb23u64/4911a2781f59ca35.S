@@ -4,7 +4,7 @@ func0000000000000007:                   # @func0000000000000007
 	beqz	a0, .LBB0_2
 	fmv.s	fa1, fa2
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.0
@@ -20,7 +20,7 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB2_2
 	fmv.s	fa1, fa2
 .LBB2_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fmv.d.x	fa5, zero
@@ -28,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	bnez	a0, .LBB3_2
 	fmv.d	fa1, fa2
 .LBB3_2:                                # %entry
-	fmul.d	fa0, fa0, fa1
+	fmul.d	fa0, fa1, fa0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fmv.d.x	fa5, zero

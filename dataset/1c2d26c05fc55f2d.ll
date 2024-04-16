@@ -60,7 +60,7 @@ entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 63
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

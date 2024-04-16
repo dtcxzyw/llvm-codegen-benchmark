@@ -9,7 +9,7 @@
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 267382800)
   ret i64 %4
 }
@@ -23,7 +23,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 2147483647)
   ret i64 %4
 }

@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = select i1 %0, i64 2, i64 %2
-  %4 = icmp ugt i64 %3, 8
-  ret i1 %4
+  %2 = icmp ugt i64 %1, 3
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 13 occurrences:
@@ -27,10 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = icmp eq i32 %3, 1
-  ret i1 %4
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 76 occurrences:
@@ -113,10 +112,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %2 = icmp ne i32 %1, 31
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 20 occurrences:
@@ -143,10 +141,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = icmp slt i32 %3, 1
-  ret i1 %4
+  %2 = icmp eq i32 %1, 31
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -155,8 +153,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 4, %1
-  %3 = select i1 %0, i32 4, i32 %2
-  %4 = icmp sgt i32 %3, 0
+  %3 = icmp sgt i32 %2, 0
+  %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -165,10 +163,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = icmp ult i32 %3, 2
-  ret i1 %4
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -176,10 +173,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 2, %1
-  %3 = select i1 %0, i32 2, i32 %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = icmp ugt i32 %1, 30
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

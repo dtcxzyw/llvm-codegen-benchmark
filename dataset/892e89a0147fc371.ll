@@ -28,9 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 127
-  %3 = or i8 %2, 64
-  %4 = and i8 %0, %3
+  %2 = and i8 %1, 63
+  %3 = or disjoint i8 %2, 64
+  %4 = and i8 %3, %0
   ret i8 %4
 }
 

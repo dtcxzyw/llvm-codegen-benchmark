@@ -6,8 +6,8 @@ define float @func000000000000000c(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %2, 0.000000e+00
   %4 = select i1 %3, float %2, float 0.000000e+00
-  %5 = select i1 %1, float 1.000000e+00, float %4
-  %6 = fmul float %5, 1.270000e+02
+  %5 = fmul float %4, 1.270000e+02
+  %6 = select i1 %1, float 1.270000e+02, float %5
   %7 = fadd float %6, %0
   ret float %7
 }
@@ -19,9 +19,9 @@ define float @func0000000000000004(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0.000000e+00
   %4 = select i1 %3, float %2, float 0.000000e+00
-  %5 = select i1 %1, float 1.000000e+00, float %4
-  %6 = fmul float %5, 0x3FB27BB300000000
-  %7 = fadd float %0, %6
+  %5 = fmul float %4, 0x3FB27BB300000000
+  %6 = select i1 %1, float 0x3FB27BB300000000, float %5
+  %7 = fadd float %6, %0
   ret float %7
 }
 

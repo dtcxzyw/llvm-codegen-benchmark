@@ -111,7 +111,7 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.fshl.i64(i64 %2, i64 %2, i64 7)
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = tail call noundef i64 @llvm.fshl.i64(i64 %1, i64 %1, i64 18)
   %6 = add i64 %4, %5
   ret i64 %6
@@ -127,7 +127,7 @@ declare i64 @llvm.fshl.i64(i64, i64, i64) #1
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 1)
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 30)
   %6 = add i32 %4, %5
   ret i32 %6

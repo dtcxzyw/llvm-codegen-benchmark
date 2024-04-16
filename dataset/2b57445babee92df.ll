@@ -10,7 +10,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 %0, i64 %1
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 131072)
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw nsw i64 %6 to i32
   ret i32 %7
 }
 

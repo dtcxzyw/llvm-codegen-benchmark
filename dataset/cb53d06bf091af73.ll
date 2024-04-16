@@ -90,11 +90,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 52
-  %5 = sext i32 %0 to i64
-  %6 = getelementptr inbounds [3 x i16], ptr %4, i64 0, i64 %5
-  ret ptr %6
+  %3 = sext i32 %0 to i64
+  %4 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %2, i32 1, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:

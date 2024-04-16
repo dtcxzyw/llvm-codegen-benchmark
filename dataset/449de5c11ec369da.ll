@@ -25,8 +25,8 @@ entry:
   %3 = udiv i32 %2, 257
   %4 = shl nuw nsw i32 %3, 8
   %5 = and i32 %4, 65280
-  %6 = or disjoint i32 %1, %5
-  %7 = or i32 %0, %6
+  %6 = or disjoint i32 %5, %1
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

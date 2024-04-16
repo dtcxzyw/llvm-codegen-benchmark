@@ -5,7 +5,7 @@
 define i64 @func000000000000000c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = xor i64 %1, %3
+  %4 = xor i64 %3, %1
   %5 = mul i64 %4, 33
   %6 = zext nneg i32 %0 to i64
   %7 = xor i64 %5, %6
@@ -21,7 +21,7 @@ entry:
 define i64 @func0000000000000000(i8 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = xor i64 %1, %3
+  %4 = xor i64 %3, %1
   %5 = mul i64 %4, 33
   %6 = zext i8 %0 to i64
   %7 = xor i64 %5, %6
@@ -35,7 +35,7 @@ entry:
 define i64 @func0000000000000003(i8 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = xor i64 %1, %3
+  %4 = xor i64 %3, %1
   %5 = mul nuw nsw i64 %4, 33
   %6 = zext i8 %0 to i64
   %7 = xor i64 %5, %6

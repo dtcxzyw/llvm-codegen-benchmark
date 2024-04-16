@@ -235,7 +235,7 @@ entry:
   %3 = add i16 %1, %2
   %4 = zext i16 %3 to i48
   %5 = shl nuw nsw i48 %4, 16
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 
@@ -259,7 +259,7 @@ entry:
   %3 = add i8 %1, %2
   %4 = zext i8 %3 to i32
   %5 = shl nuw nsw i32 %4, 12
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -325,7 +325,7 @@ entry:
   %3 = add nuw nsw i8 %1, %2
   %4 = zext i8 %3 to i32
   %5 = shl nuw i32 %4, 24
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

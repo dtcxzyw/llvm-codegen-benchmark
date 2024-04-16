@@ -6,9 +6,9 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -2
 	ret
 func0000000000000070:                   # @func0000000000000070
-	addiw	a1, a1, 4
-	not	a1, a1
-	add	a0, a0, a1
+	li	a2, -5
+	subw	a2, a2, a1
+	add	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, -48

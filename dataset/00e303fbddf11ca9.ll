@@ -4,10 +4,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 257
-  %3 = select i1 %0, i32 %2, i32 304999
-  %4 = add nuw nsw i32 %3, 1
-  ret i32 %4
+  %2 = add i32 %1, 258
+  %3 = select i1 %0, i32 %2, i32 305000
+  ret i32 %3
 }
 
 ; 4 occurrences:
@@ -18,10 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -65521
-  %3 = select i1 %0, i64 %2, i64 65520
-  %4 = add nsw i64 %3, -65521
-  ret i64 %4
+  %2 = add nsw i64 %1, -131042
+  %3 = select i1 %0, i64 %2, i64 -1
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -31,10 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = select i1 %0, i32 %2, i32 0
-  %4 = add nuw nsw i32 %3, 1
-  ret i32 %4
+  %2 = add nuw nsw i32 %1, 2
+  %3 = select i1 %0, i32 %2, i32 1
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -42,10 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = select i1 %0, i32 %2, i32 1
-  %4 = add nsw i32 %3, 2
-  ret i32 %4
+  %2 = add i32 %1, 1
+  %3 = select i1 %0, i32 %2, i32 3
+  ret i32 %3
 }
 
 ; 4 occurrences:
@@ -56,10 +52,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = select i1 %0, i32 %2, i32 0
-  %4 = add nsw i32 %3, 1
-  ret i32 %4
+  %2 = add nsw i32 %1, 2
+  %3 = select i1 %0, i32 %2, i32 1
+  ret i32 %3
 }
 
 ; 4 occurrences:
@@ -70,10 +65,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -3
-  %3 = select i1 %0, i32 %2, i32 0
-  %4 = add i32 %3, -1
-  ret i32 %4
+  %2 = add i32 %1, -4
+  %3 = select i1 %0, i32 %2, i32 -1
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -81,10 +75,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 7
-  %3 = select i1 %0, i32 %2, i32 9
-  %4 = add nuw i32 %3, 2
-  ret i32 %4
+  %2 = add i32 %1, 9
+  %3 = select i1 %0, i32 %2, i32 11
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

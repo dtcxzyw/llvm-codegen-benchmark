@@ -9,7 +9,7 @@ define i64 @func00000000000001e0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, -7286425919675154353
-  %5 = mul i64 %1, %4
+  %5 = mul i64 %4, %1
   %6 = tail call i64 @llvm.fshl.i64(i64 %5, i64 %5, i64 34)
   %7 = add i64 %6, %0
   ret i64 %7

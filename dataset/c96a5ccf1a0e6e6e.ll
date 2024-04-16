@@ -9,7 +9,7 @@
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = urem i64 %3, 31
   %5 = icmp eq i64 %4, 0
   ret i1 %5

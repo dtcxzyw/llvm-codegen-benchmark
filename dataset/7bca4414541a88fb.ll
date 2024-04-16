@@ -3566,8 +3566,8 @@ entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
   %3 = add nsw i64 %2, %1
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 1152921504606846975)
-  %5 = select i1 %0, i64 1152921504606846975, i64 %4
-  %6 = shl nuw nsw i64 %5, 3
+  %5 = shl nuw nsw i64 %4, 3
+  %6 = select i1 %0, i64 9223372036854775800, i64 %5
   ret i64 %6
 }
 
@@ -3778,8 +3778,8 @@ entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 1)
   %3 = add i64 %2, %1
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 4611686018427387903)
-  %5 = select i1 %0, i64 4611686018427387903, i64 %4
-  %6 = shl nuw nsw i64 %5, 1
+  %5 = shl nuw nsw i64 %4, 1
+  %6 = select i1 %0, i64 9223372036854775806, i64 %5
   ret i64 %6
 }
 

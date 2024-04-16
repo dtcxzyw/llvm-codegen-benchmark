@@ -5,7 +5,7 @@
 define i1 @func00000000000003cc(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = icmp ne i32 %4, 0
   ret i1 %5

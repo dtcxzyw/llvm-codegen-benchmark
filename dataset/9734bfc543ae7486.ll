@@ -26,7 +26,7 @@ entry:
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
   %6 = sext i1 %5 to i64
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 

@@ -9,7 +9,7 @@
 define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, 1
-  %4 = add i32 %2, %3
+  %4 = add i32 %3, %2
   %5 = call i32 @llvm.umin.i32(i32 %4, i32 %1)
   %6 = icmp ult i32 %3, %5
   ret i1 %6

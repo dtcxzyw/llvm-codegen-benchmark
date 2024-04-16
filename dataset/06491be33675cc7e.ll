@@ -109,9 +109,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1
   ret ptr %4
 }
 
@@ -747,9 +747,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1
   ret ptr %4
 }
 
@@ -1369,9 +1369,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %"class.re2::Prog::Inst.1554287", ptr %0, i64 %3
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr %"class.re2::Prog::Inst.1554287", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }
 
@@ -3624,9 +3624,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
 entry:
-  %2 = add nuw nsw i16 %1, 14
-  %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %2 = sext i16 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 14
   ret ptr %4
 }
 

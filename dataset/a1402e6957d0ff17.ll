@@ -6,10 +6,10 @@ define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = ashr i32 %0, 19
-  %5 = sub i32 %4, %3
-  %6 = sub nsw i32 64, %5
-  %7 = zext i32 %6 to i64
-  ret i64 %7
+  %.neg = sub i32 %3, %4
+  %5 = add i32 %.neg, 64
+  %6 = zext i32 %5 to i64
+  ret i64 %6
 }
 
 ; 96 occurrences:
@@ -114,10 +114,10 @@ define i64 @func000000000000004b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr i32 %0, 19
-  %5 = sub nsw i32 %4, %3
-  %6 = sub nsw i32 64, %5
-  %7 = zext nneg i32 %6 to i64
-  ret i64 %7
+  %.neg = sub i32 %3, %4
+  %5 = add i32 %.neg, 64
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
 }
 
 ; 167 occurrences:
@@ -293,10 +293,10 @@ define i64 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr i32 %0, 19
-  %5 = sub nsw i32 %4, %3
-  %6 = sub nsw i32 64, %5
-  %7 = zext i32 %6 to i64
-  ret i64 %7
+  %.neg = sub i32 %3, %4
+  %5 = add i32 %.neg, 64
+  %6 = zext i32 %5 to i64
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

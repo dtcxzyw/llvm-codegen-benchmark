@@ -53,8 +53,8 @@ entry:
 define i64 @func0000000000000075(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
-  %4 = icmp sgt i8 %1, -1
-  %5 = select i1 %4, i32 %3, i32 %0
+  %4 = icmp slt i8 %1, 0
+  %5 = select i1 %4, i32 %0, i32 %3
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -105,8 +105,8 @@ entry:
 define i64 @func0000000000000054(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw i16 %2, 32767
-  %4 = icmp sgt i16 %1, -1
-  %5 = select i1 %4, i16 %3, i16 %0
+  %4 = icmp slt i16 %1, 0
+  %5 = select i1 %4, i16 %0, i16 %3
   %6 = zext i16 %5 to i64
   ret i64 %6
 }
@@ -136,10 +136,10 @@ entry:
 define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i32 %3, i32 %0
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, i32 %0, i32 %3
+  %5 = zext i32 %4 to i64
+  ret i64 %5
 }
 
 ; 6 occurrences:

@@ -49,7 +49,7 @@ entry:
   %3 = or disjoint i64 %1, %2
   %4 = and i64 %3, 65534
   %5 = icmp eq i64 %4, 4
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 192
   %5 = icmp eq i32 %4, 192
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

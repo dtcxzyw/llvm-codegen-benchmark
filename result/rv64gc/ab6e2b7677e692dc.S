@@ -15,8 +15,7 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 4
 	ret
 func000000000000007f:                   # @func000000000000007f
-	mul	a1, a1, a2
-	addiw	a1, a1, 4
+	mulw	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 2
+	addi	a0, a0, 6
 	ret

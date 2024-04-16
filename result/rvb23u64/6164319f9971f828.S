@@ -17,10 +17,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addi	a1, a1, 15
-	andi	a1, a1, -16
-	sltiu	a1, a1, 64
-	xori	a1, a1, 1
+	addi	a1, a1, -49
+	sltiu	a1, a1, -64
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

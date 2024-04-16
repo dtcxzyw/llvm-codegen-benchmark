@@ -39,10 +39,10 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000241:                   # @func0000000000000241
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	li	a2, 10
-	mul	a0, a0, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -48
+	addi	a1, a1, -48
+	li	a2, -10
+	mulw	a0, a0, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000246:                   # @func0000000000000246

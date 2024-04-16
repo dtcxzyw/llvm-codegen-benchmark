@@ -7,9 +7,9 @@
 define i1 @func0000000000000050(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = xor i32 %2, -1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   %7 = or i1 %6, %4
   ret i1 %7
 }

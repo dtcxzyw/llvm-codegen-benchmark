@@ -29,14 +29,14 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	addiw	a2, a2, -1
-	bne	a1, a2, .LBB4_2
+	bne	a2, a1, .LBB4_2
 	li	a0, 1
 .LBB4_2:                                # %entry
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a1
 	addiw	a2, a2, 1
-	bne	a1, a2, .LBB5_2
+	bne	a2, a1, .LBB5_2
 	li	a0, 3
 .LBB5_2:                                # %entry
 	ret

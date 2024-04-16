@@ -171,9 +171,9 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = mul i64 %0, 10
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %.neg = mul i64 %0, -10
+  %5 = add i64 %.neg, %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

@@ -7,7 +7,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = udiv i16 %1, %3
   %5 = zext i16 %4 to i32
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = udiv i16 %1, %3
   %5 = zext nneg i16 %4 to i32
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = udiv i16 %1, %3
   %5 = zext nneg i16 %4 to i32
-  %6 = mul nuw nsw i32 %0, %5
+  %6 = mul nuw nsw i32 %5, %0
   ret i32 %6
 }
 

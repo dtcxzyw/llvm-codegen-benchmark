@@ -8,7 +8,7 @@ entry:
   %4 = or disjoint i48 %0, %1
   %5 = or disjoint i48 %4, %3
   %6 = lshr i48 %5, 16
-  %7 = trunc i48 %6 to i32
+  %7 = trunc nuw i48 %6 to i32
   ret i32 %7
 }
 

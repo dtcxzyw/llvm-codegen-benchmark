@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 127
   %4 = shl i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = shl nuw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

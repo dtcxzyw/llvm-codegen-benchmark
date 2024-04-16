@@ -6,11 +6,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
-  %2 = trunc i64 %1 to i32
-  %3 = lshr i32 %2, 31
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %sum.shift = lshr i64 %0, 34
+  %1 = and i64 %sum.shift, 1
+  ret i64 %1
 }
 
 ; 7 occurrences:
@@ -24,11 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i48 %0) #0 {
 entry:
-  %1 = lshr i48 %0, 32
-  %2 = trunc i48 %1 to i16
-  %3 = lshr i16 %2, 15
-  %4 = zext nneg i16 %3 to i32
-  ret i32 %4
+  %sum.shift = lshr i48 %0, 47
+  %1 = trunc nuw nsw i48 %sum.shift to i32
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

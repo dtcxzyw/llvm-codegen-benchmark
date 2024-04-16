@@ -11,7 +11,7 @@ define double @func0000000000000001(double %0, i64 %1, double %2) #0 {
 entry:
   %3 = bitcast double %2 to i64
   %4 = and i64 %3, 4294967295
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = bitcast i64 %5 to double
   %7 = fsub double %0, %6
   ret double %7

@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = shl nuw nsw i32 %1, 3
   %6 = shl nuw i32 %4, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = and i32 %3, 3
   %5 = shl i32 %1, 1
   %6 = shl i32 %4, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

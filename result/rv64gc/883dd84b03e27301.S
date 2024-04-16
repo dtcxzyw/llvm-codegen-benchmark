@@ -11,11 +11,11 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	bnez	a1, .LBB1_2
-	lui	a1, 2048
+	beqz	a1, .LBB1_2
+	lui	a1, 524288
 	j	.LBB1_3
 .LBB1_2:
-	lui	a1, 524288
+	lui	a1, 2048
 .LBB1_3:                                # %entry
 	addiw	a1, a1, -1
 	and	a0, a0, a1
@@ -33,8 +33,8 @@ func000000000000001c:                   # @func000000000000001c
 	snez	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	slli	a0, a0, 33
-	srli	a0, a0, 57
+	lui	a1, 520192
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000081:                   # @func0000000000000081
@@ -47,14 +47,8 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
-	lui	a2, 16
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	sltiu	a1, a1, 26
-	addi	a1, a1, -1
-	ori	a1, a1, -33
-	and	a0, a0, a2
-	and	a0, a0, a1
+	slli	a0, a0, 48
+	srli	a0, a0, 48
 	sltiu	a0, a0, 128
 	ret
 func0000000000000041:                   # @func0000000000000041

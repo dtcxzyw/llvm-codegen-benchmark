@@ -28,41 +28,25 @@ func00000000000001f4:                   # @func00000000000001f4
 	seqz	a0, a0
 	ret
 func00000000000001b6:                   # @func00000000000001b6
-	slli	a2, a2, 16
-	or	a0, a0, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	or	a0, a0, a1
 	slli	a0, a0, 16
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret
 func0000000000000136:                   # @func0000000000000136
-	slli	a2, a2, 32
-	or	a0, a0, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	or	a0, a0, a1
 	slli	a0, a0, 16
+	slli	a2, a2, 48
+	or	a0, a0, a2
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret
 func0000000000000176:                   # @func0000000000000176
-	slli	a2, a2, 32
-	or	a0, a0, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	or	a0, a0, a1
 	slli	a0, a0, 16
+	slli	a2, a2, 48
+	or	a0, a0, a2
 	srai	a0, a0, 16
 	slti	a0, a0, 0
 	ret
 func00000000000001f6:                   # @func00000000000001f6
-	slli	a2, a2, 16
-	or	a0, a0, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	or	a0, a0, a1
 	slli	a0, a0, 16
 	srai	a0, a0, 16
 	slti	a0, a0, 0

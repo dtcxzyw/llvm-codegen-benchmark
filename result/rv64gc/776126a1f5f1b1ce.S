@@ -32,9 +32,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000b:                   # @func000000000000000b
 	flt.d	a1, fa0, fa1
-	beqz	a1, .LBB4_2
-	fmv.d	fa0, fa1
+	bnez	a1, .LBB4_2
+	fmv.d	fa1, fa0
 .LBB4_2:                                # %entry
 	fcvt.d.w	fa5, a0
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa1, fa5
 	ret

@@ -47,9 +47,11 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a1, a1, a1
+	slli	a1, a1, 1
+	addi	a1, a1, -48
 	sext.b	a0, a0
-	sh1add	a0, a1, a0
-	addi	a0, a0, -48
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
@@ -69,18 +71,24 @@ func0000000000000106:                   # @func0000000000000106
 	ret
 func0000000000000201:                   # @func0000000000000201
 	sh2add	a1, a1, a1
+	slli	a1, a1, 1
+	addi	a1, a1, -48
+	zext.h	a1, a1
 	sext.b	a0, a0
-	sh1add	a0, a1, a0
+	negw	a0, a0
 	zext.h	a0, a0
-	addi	a0, a0, -48
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000020c:                   # @func000000000000020c
 	sh2add	a1, a1, a1
+	slli	a1, a1, 1
+	addi	a1, a1, -48
+	zext.h	a1, a1
 	sext.b	a0, a0
-	sh1add	a0, a1, a0
+	negw	a0, a0
 	zext.h	a0, a0
-	addi	a0, a0, -48
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004

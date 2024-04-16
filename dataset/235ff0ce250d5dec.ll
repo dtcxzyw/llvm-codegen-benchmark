@@ -30,7 +30,7 @@ define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = lshr i64 %2, 1
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = icmp ugt i64 %4, 2305843009213693951
   ret i1 %5
 }
@@ -70,7 +70,7 @@ define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 50
   %3 = lshr i64 %2, 32
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = icmp ult i64 %4, 500
   ret i1 %5
 }

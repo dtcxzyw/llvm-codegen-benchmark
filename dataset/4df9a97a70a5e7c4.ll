@@ -9,7 +9,7 @@
 define i8 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 255, i64 0
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }

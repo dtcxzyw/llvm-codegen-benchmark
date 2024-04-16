@@ -11,7 +11,7 @@ entry:
   %3 = lshr i128 %0, 56
   %4 = add nuw nsw i128 %3, %2
   %5 = lshr i128 %4, 56
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw nsw i128 %5 to i64
   ret i64 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = lshr i128 %0, 56
   %4 = add nuw nsw i128 %3, %2
   %5 = lshr i128 %4, 56
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw nsw i128 %5 to i64
   ret i64 %6
 }
 

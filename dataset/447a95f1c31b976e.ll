@@ -13,10 +13,9 @@
 define i32 @func0000000000000064(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = zext i32 %0 to i64
-  %5 = sub nsw i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %3 to i32
+  %5 = sub i32 %0, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -25,10 +24,9 @@ entry:
 define i64 @func0000000000000040(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
-  %4 = zext i64 %0 to i128
-  %5 = sub i128 %4, %3
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %4 = trunc i128 %3 to i64
+  %5 = sub i64 %0, %4
+  ret i64 %5
 }
 
 ; 1 occurrences:

@@ -65,9 +65,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = getelementptr i8, ptr %0, i64 16
-  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 12
-  ret ptr %5
+  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %3, i64 %2, i32 3
+  ret ptr %4
 }
 
 ; 1 occurrences:

@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = zext i64 %0 to i128
-  %2 = freeze i128 %1
-  ret i128 %2
+  %.fr = freeze i64 %0
+  %1 = zext i64 %.fr to i128
+  ret i128 %1
 }
 
 ; 3 occurrences:
@@ -17,9 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = zext nneg i64 %0 to i128
-  %2 = freeze i128 %1
-  ret i128 %2
+  %.fr = freeze i64 %0
+  %1 = zext i64 %.fr to i128
+  ret i128 %1
 }
 
 attributes #0 = { nounwind }

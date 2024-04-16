@@ -64,8 +64,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:
-  %2 = select i1 %0, float 1.000000e+00, float %1
-  %3 = fmul float %2, 2.560000e+02
+  %2 = fmul float %1, 2.560000e+02
+  %3 = select i1 %0, float 2.560000e+02, float %2
   ret float %3
 }
 

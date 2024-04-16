@@ -27,8 +27,8 @@
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = udiv i32 %0, 100
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
+  %2 = shl nuw nsw i32 %1, 4
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

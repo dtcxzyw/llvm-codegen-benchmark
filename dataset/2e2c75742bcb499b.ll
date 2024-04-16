@@ -10,7 +10,7 @@ entry:
   %3 = sub nsw i32 %2, %1
   %4 = sdiv i32 %3, 3
   %5 = add nsw i32 %4, %1
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 

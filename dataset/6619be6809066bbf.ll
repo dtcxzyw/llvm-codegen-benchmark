@@ -20,7 +20,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, 64
   %5 = select i1 %4, i64 %1, i64 0
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

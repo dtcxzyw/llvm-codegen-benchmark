@@ -24,7 +24,7 @@ entry:
   %3 = trunc i8 %2 to i1
   %4 = icmp eq i64 %1, 3
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = trunc i47 %2 to i1
   %4 = icmp ult i8 %1, 47
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

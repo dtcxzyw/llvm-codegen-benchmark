@@ -6,7 +6,7 @@
 define i1 @func0000000000000185(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i8 %0, %1
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp ule i8 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000187(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i64 %0, %1
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp sle i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -38,7 +38,7 @@ entry:
 define i1 @func000000000000018b(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i64 %0, %1
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp sge i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

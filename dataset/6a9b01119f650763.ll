@@ -17,10 +17,9 @@ define i64 @func000000000000000d(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr [0 x %struct.ProcSignalSlot.2123078], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
+  %4 = getelementptr [0 x %struct.ProcSignalSlot.2123078], ptr %3, i64 0, i64 %2, i32 1
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 ; 4 occurrences:
@@ -33,10 +32,9 @@ define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr inbounds [3 x %struct.WOLFSSL_SESSION.2179703], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 149
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
+  %4 = getelementptr inbounds [3 x %struct.WOLFSSL_SESSION.2179703], ptr %3, i64 0, i64 %2, i32 11
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 ; 3 occurrences:

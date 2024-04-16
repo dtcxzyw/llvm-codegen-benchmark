@@ -15,11 +15,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, -1
-  %4 = and i32 %0, %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = and i32 %2, %0
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 11 occurrences:
@@ -37,11 +37,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = add nsw i32 %2, -1
-  %4 = and i32 %3, %0
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = and i32 %2, %0
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 12 occurrences:
@@ -72,11 +72,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, -1
-  %4 = and i64 %0, %3
-  %5 = icmp ne i64 %4, 0
-  ret i1 %5
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = and i64 %2, %0
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -86,11 +86,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, -1
-  %4 = and i64 %0, %3
-  %5 = icmp ugt i64 %4, 1
-  ret i1 %5
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = and i64 %2, %0
+  %4 = icmp ugt i64 %3, 1
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -99,11 +99,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000091(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = add nsw i32 %2, -1
-  %4 = and i32 %0, %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = and i32 %2, %0
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -124,11 +124,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = add i32 %2, -1
-  %4 = and i32 %3, %0
-  %5 = icmp ult i32 %4, 2
-  ret i1 %5
+  %notmask = shl nsw i32 -1, %1
+  %2 = xor i32 %notmask, -1
+  %3 = and i32 %2, %0
+  %4 = icmp ult i32 %3, 2
+  ret i1 %4
 }
 
 ; 3 occurrences:

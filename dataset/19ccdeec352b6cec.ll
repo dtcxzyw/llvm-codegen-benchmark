@@ -11,9 +11,9 @@
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = sub nsw i64 %0, %3
-  %5 = shl nsw i64 %1, 7
-  %6 = sub nsw i64 %4, %5
+  %4 = shl nsw i64 %1, 7
+  %5 = add i64 %3, %4
+  %6 = sub i64 %0, %5
   ret i64 %6
 }
 

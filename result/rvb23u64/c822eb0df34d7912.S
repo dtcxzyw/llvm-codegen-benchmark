@@ -1,8 +1,6 @@
-.LCPI0_0:
-	.quad	-7046029288634856825            # 0x9e3779b185ebca87
 func000000000000000e:                   # @func000000000000000e
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
+	lui	a2, 548541
+	addi	a2, a2, -1401
 	add	a1, a1, a2
 	zext.w	a1, a1
 	mul	a0, a0, a1
@@ -45,7 +43,7 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a2, 262144
 	addi	a2, a2, -128
 	and	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, 3

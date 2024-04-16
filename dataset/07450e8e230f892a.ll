@@ -7,9 +7,9 @@
 define i32 @func0000000000000000(i16 %0) #0 {
 entry:
   %1 = tail call i16 @llvm.bswap.i16(i16 %0)
-  %2 = zext i16 %1 to i32
-  %3 = lshr i32 %2, 5
-  %4 = and i32 %3, 127
+  %2 = lshr i16 %1, 5
+  %3 = and i16 %2, 127
+  %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }
 
@@ -22,11 +22,10 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i16 %0) #0 {
 entry:
-  %1 = call noundef i16 @llvm.bswap.i16(i16 %0)
-  %2 = zext i16 %1 to i32
-  %3 = lshr i32 %2, 10
-  %4 = and i32 %3, 31
-  ret i32 %4
+  %1 = lshr i16 %0, 2
+  %2 = and i16 %1, 31
+  %3 = zext nneg i16 %2 to i32
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

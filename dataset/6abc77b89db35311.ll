@@ -15,9 +15,8 @@ entry:
   %2 = and i64 %1, -16
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 80
-  %5 = getelementptr inbounds [18 x %struct.mm_freenode_s.2199913], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds [18 x %struct.mm_freenode_s.2199913], ptr %4, i64 0, i64 %0, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -28,9 +27,8 @@ entry:
   %2 = and i64 %1, -33554432
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr inbounds i8, ptr %3, i64 264
-  %5 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %4, i64 0, i64 %0, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

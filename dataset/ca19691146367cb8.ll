@@ -62,11 +62,11 @@ entry:
 define i32 @func0000000000000030(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2147483648
-  %2 = icmp ne i64 %1, 0
-  %3 = select i1 %2, i32 2147483647, i32 8388607
-  %4 = trunc i64 %0 to i32
-  %5 = and i32 %3, %4
-  ret i32 %5
+  %.not = icmp eq i64 %1, 0
+  %2 = select i1 %.not, i32 8388607, i32 2147483647
+  %3 = trunc i64 %0 to i32
+  %4 = and i32 %2, %3
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

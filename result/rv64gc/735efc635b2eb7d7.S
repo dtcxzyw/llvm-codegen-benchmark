@@ -14,18 +14,18 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	neg	a2, a2
-	slli	a2, a2, 2
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a2
+	slli	a0, a0, 2
 	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	neg	a2, a2
-	li	a3, 24
-	mul	a2, a2, a3
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a2
+	li	a2, 24
+	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

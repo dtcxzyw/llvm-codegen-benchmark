@@ -36,7 +36,7 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 1
-  %3 = add nsw i64 %1, %2
+  %3 = add nsw i64 %2, %1
   %4 = srem i64 %3, 2
   %5 = tail call i64 @llvm.smin.i64(i64 %0, i64 %4)
   ret i64 %5

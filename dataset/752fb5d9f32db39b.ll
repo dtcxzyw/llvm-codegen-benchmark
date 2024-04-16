@@ -7,7 +7,7 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3145728, i32 %1
   %4 = zext i32 %3 to i64
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = icmp eq i8 %1, 2
   %3 = select i1 %2, i8 0, i8 %1
   %4 = zext i8 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
@@ -212,7 +212,7 @@ entry:
   %2 = icmp eq i16 %1, 256
   %3 = select i1 %2, i16 0, i16 %1
   %4 = zext nneg i16 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

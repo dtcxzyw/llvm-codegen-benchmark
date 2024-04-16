@@ -9,8 +9,9 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = select i1 %0, i64 0, i64 %3
-  %5 = icmp ugt i64 %4, 8388607
+  %4 = icmp ugt i64 %3, 8388607
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -20,8 +21,9 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = select i1 %0, i32 -1, i32 %3
-  %5 = icmp ult i32 %4, 4448
+  %4 = icmp ult i32 %3, 4448
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -31,8 +33,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = select i1 %0, i32 -1, i32 %3
-  %5 = icmp ne i32 %4, 12351
+  %4 = icmp ne i32 %3, 12351
+  %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -43,8 +45,9 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %1, %2
-  %4 = select i1 %0, i32 192, i32 %3
-  %5 = icmp ult i32 %4, 56
+  %4 = icmp ult i32 %3, 56
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
@@ -55,8 +58,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %1, %2
-  %4 = select i1 %0, i32 192, i32 %3
-  %5 = icmp ugt i32 %4, 95
+  %4 = icmp ugt i32 %3, 95
+  %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 

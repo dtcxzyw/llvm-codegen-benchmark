@@ -9,7 +9,7 @@
 define i8 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc nuw nsw i32 %3 to i8
   ret i8 %4
 }
@@ -318,7 +318,7 @@ entry:
 define i8 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
@@ -329,7 +329,7 @@ entry:
 define i8 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }

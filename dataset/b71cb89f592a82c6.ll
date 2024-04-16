@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = ashr exact i64 %0, 32
-  %4 = sub i64 %3, %2
-  ret i64 %4
+  %.neg = xor i64 %1, -1
+  %2 = ashr exact i64 %0, 32
+  %3 = add i64 %2, %.neg
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -31,10 +31,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = ashr exact i64 %0, 32
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %.neg = xor i64 %1, -1
+  %2 = ashr exact i64 %0, 32
+  %3 = add i64 %2, %.neg
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

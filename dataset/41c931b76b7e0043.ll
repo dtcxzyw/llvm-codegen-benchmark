@@ -8,7 +8,7 @@
 define i1 @func0000000000000104(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = shl i64 %4, 1
   %6 = tail call i64 @llvm.usub.sat.i64(i64 %0, i64 2)
   %7 = icmp ult i64 %5, %6

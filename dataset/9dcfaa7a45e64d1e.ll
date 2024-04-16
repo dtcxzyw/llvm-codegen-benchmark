@@ -32,7 +32,7 @@ entry:
 define i16 @func0000000000000016(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %0, 255
-  %4 = or disjoint i16 %2, %3
+  %4 = or disjoint i16 %3, %2
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i16 %0, i16 %4
   ret i16 %6

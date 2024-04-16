@@ -1,16 +1,14 @@
 func0000000000000060:                   # @func0000000000000060
-	slti	a1, a1, 0
-	addi	a1, a1, -1
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	bltz	a1, .LBB0_2
+	negw	a0, a0
+.LBB0_2:                                # %entry
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
-	addi	a1, a1, -1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	li	a2, 1
+	beq	a1, a2, .LBB1_2
+	negw	a0, a0
+.LBB1_2:                                # %entry
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a2, a1
@@ -22,7 +20,8 @@ func0000000000000010:                   # @func0000000000000010
 	mulw	a0, a1, a0
 	ret
 func00000000000000a0:                   # @func00000000000000a0
-	sraiw	a1, a1, 31
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	sext.w	a1, a1
+	bgez	a1, .LBB3_2
+	negw	a0, a0
+.LBB3_2:                                # %entry
 	ret

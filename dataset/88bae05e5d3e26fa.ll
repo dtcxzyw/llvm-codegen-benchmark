@@ -7,7 +7,7 @@ define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 32
   %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   %5 = icmp eq i64 %4, -81929232789475893
   ret i1 %5
 }
@@ -19,7 +19,7 @@ define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 64
   %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   %5 = icmp ult i64 %4, 65536
   ret i1 %5
 }

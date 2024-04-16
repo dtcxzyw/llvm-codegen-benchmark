@@ -20,7 +20,7 @@ define i16 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = shl nuw i32 %3, %1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = trunc i32 %5 to i16
   ret i16 %6
 }
@@ -33,11 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
-  %4 = shl i32 %3, %1
-  %5 = or i32 %0, %4
-  %6 = trunc i32 %5 to i8
-  ret i8 %6
+  %3 = shl i32 %2, %1
+  %4 = or i32 %3, %0
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
 }
 
 attributes #0 = { nounwind }

@@ -6,10 +6,10 @@
 define i32 @func00000000000000d9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 400
-  %4 = icmp slt i32 %1, 1
-  %5 = select i1 %4, i32 %3, i32 0
-  %6 = add nsw i32 %0, %5
-  ret i32 %6
+  %.inv = icmp sgt i32 %1, 0
+  %4 = select i1 %.inv, i32 0, i32 %3
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -19,10 +19,10 @@ entry:
 define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -146097
-  %4 = icmp slt i32 %1, 1
-  %5 = select i1 %4, i32 %3, i32 0
-  %6 = add i32 %0, %5
-  ret i32 %6
+  %.inv = icmp sgt i32 %1, 0
+  %4 = select i1 %.inv, i32 0, i32 %3
+  %5 = add i32 %4, %0
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -35,7 +35,7 @@ entry:
   %3 = mul i32 %2, 100
   %4 = icmp slt i32 %1, 10
   %5 = select i1 %4, i32 %3, i32 0
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

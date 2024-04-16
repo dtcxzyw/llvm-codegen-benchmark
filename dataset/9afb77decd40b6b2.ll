@@ -5,10 +5,10 @@
 define i1 @func0000000000000076(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 127
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 2
-  %5 = icmp slt i32 %0, %4
-  ret i1 %5
+  %narrow = add nuw nsw i16 %2, 2
+  %3 = zext nneg i16 %narrow to i32
+  %4 = icmp sgt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -17,10 +17,10 @@ entry:
 define i1 @func0000000000000079(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8191
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 16
-  %5 = icmp uge i32 %0, %4
-  ret i1 %5
+  %narrow = add nuw nsw i16 %2, 16
+  %3 = zext nneg i16 %narrow to i32
+  %4 = icmp ule i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -29,10 +29,10 @@ entry:
 define i1 @func0000000000000074(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4095
-  %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, 20
-  %5 = icmp ult i32 %0, %4
-  ret i1 %5
+  %narrow = add nuw nsw i16 %2, 20
+  %3 = zext nneg i16 %narrow to i32
+  %4 = icmp ugt i32 %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -46,7 +46,7 @@ entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i64
   %4 = add nsw i64 %3, -1
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -58,7 +58,7 @@ entry:
   %2 = and i16 %1, 60
   %3 = zext nneg i16 %2 to i32
   %4 = add nsw i32 %3, -4
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -70,7 +70,7 @@ entry:
   %2 = and i16 %1, 4095
   %3 = zext nneg i16 %2 to i32
   %4 = add nsw i32 %3, -1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -82,7 +82,7 @@ entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i64
   %4 = add nsw i64 %3, -1
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -93,10 +93,10 @@ entry:
 define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
-  %5 = icmp ugt i64 %0, %4
-  ret i1 %5
+  %narrow = add nuw nsw i32 %2, 1
+  %3 = zext nneg i32 %narrow to i64
+  %4 = icmp ult i64 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

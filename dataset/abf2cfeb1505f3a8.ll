@@ -9,7 +9,7 @@ entry:
   %2 = icmp eq i32 %1, 6
   %3 = select i1 %2, i64 32, i64 18
   %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 %3)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = icmp ugt i16 %1, 13
   %3 = select i1 %2, i32 2, i32 1
   %4 = call i32 @llvm.umin.i32(i32 %3, i32 %0)
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }
 

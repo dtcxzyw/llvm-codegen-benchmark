@@ -7,7 +7,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 54
   %5 = xor i32 %4, %1
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -18,8 +18,8 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
   %4 = select i1 %3, i32 0, i32 27
-  %5 = xor i32 %1, %4
-  %6 = or disjoint i32 %0, %5
+  %5 = xor i32 %4, %1
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -31,8 +31,8 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 48, i32 1024
-  %5 = xor i32 %1, %4
-  %6 = or disjoint i32 %0, %5
+  %5 = xor i32 %4, %1
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

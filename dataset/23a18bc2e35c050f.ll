@@ -17,7 +17,7 @@
 define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = and i64 %3, 4032
   ret i64 %4
 }
@@ -164,7 +164,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = and i64 %3, -245761
   ret i64 %4
 }
@@ -227,10 +227,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = or i32 %0, %2
-  %4 = and i32 %3, 255
-  ret i32 %4
+  %.tr = trunc i32 %0 to i8
+  %.narrow = or i8 %.tr, %1
+  %2 = zext i8 %.narrow to i32
+  ret i32 %2
 }
 
 ; 49 occurrences:
@@ -287,7 +287,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = and i64 %3, 65534
   ret i64 %4
 }

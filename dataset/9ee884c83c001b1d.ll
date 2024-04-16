@@ -8,7 +8,7 @@
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = call float @llvm.fabs.f32(float %2)
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = fcmp olt float %4, %0
   ret i1 %5
 }
@@ -44,7 +44,7 @@ declare double @llvm.fabs.f64(double) #1
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fcmp ogt double %4, %0
   ret i1 %5
 }

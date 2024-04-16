@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = getelementptr i8, ptr %1, i64 130
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -17,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 680
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 680
   %5 = getelementptr i8, ptr %1, i64 668
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -30,8 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 3
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 3
   %5 = getelementptr i8, ptr %1, i64 2
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -45,8 +45,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = getelementptr inbounds i8, ptr %1, i64 18
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -57,11 +57,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %1, i64 1
-  %6 = icmp eq ptr %4, %5
-  ret i1 %6
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = icmp eq ptr %3, %1
+  ret i1 %4
 }
 
 ; 8 occurrences:
@@ -76,8 +74,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 4
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
   %5 = getelementptr inbounds i8, ptr %1, i64 -12
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -88,8 +86,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 4
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
   %5 = getelementptr i8, ptr %1, i64 -12
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -100,8 +98,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 16
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
   %5 = getelementptr i8, ptr %1, i64 65536
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -113,8 +111,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = getelementptr inbounds i8, ptr %1, i64 -8
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -127,8 +125,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = getelementptr inbounds i8, ptr %1, i64 -8
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -140,8 +138,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000035(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 4
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
   %5 = getelementptr inbounds i8, ptr %1, i64 -8
   %6 = icmp ule ptr %4, %5
   ret i1 %6
@@ -152,8 +150,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = getelementptr i8, ptr %1, i64 -20
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -164,8 +162,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 4
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
   %5 = getelementptr i8, ptr %1, i64 -12
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -176,8 +174,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 8
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 8
   %5 = getelementptr i8, ptr %1, i64 -32
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -188,8 +186,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 19
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 19
   %5 = getelementptr inbounds i8, ptr %1, i64 -64
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -201,8 +199,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000078(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -4
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
   %5 = getelementptr inbounds i8, ptr %1, i64 104
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -213,8 +211,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000e8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 9
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 9
   %5 = getelementptr inbounds i8, ptr %1, i64 -1
   %6 = icmp ugt ptr %4, %5
   ret i1 %6

@@ -3,12 +3,12 @@ func0000000000000070:                   # @func0000000000000070
 	slli	a3, a3, 32
 	or	a3, a3, a5
 	slli	a2, a2, 32
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	add	a5, a2, a0
+	sltu	a0, a5, a2
 	add	a1, a1, a3
 	add	a1, a1, a0
-	add.uw	a0, a4, a2
-	sltu	a2, a0, a2
+	add.uw	a0, a4, a5
+	sltu	a2, a0, a5
 	add	a1, a1, a2
 	ret
 func000000000000007f:                   # @func000000000000007f

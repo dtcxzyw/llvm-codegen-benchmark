@@ -64,7 +64,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -274,10 +274,9 @@ define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 7
-  %4 = shl nsw i8 -1, %3
-  %5 = and i8 %0, %4
-  %6 = icmp eq i8 %5, 0
-  ret i1 %6
+  %4 = lshr i8 %0, %3
+  %5 = icmp eq i8 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

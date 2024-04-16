@@ -25,8 +25,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	add	a1, a1, a2
-	sub	a0, a0, a1
-	addi	a0, a0, -3
+	addi	a1, a1, 3
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000008a:                   # @func000000000000008a

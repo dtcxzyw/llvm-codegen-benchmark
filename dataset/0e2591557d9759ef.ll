@@ -10,7 +10,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 21
   %5 = icmp eq i32 %1, 1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -24,7 +24,7 @@ entry:
   %3 = add i8 %2, -32
   %4 = icmp ult i8 %3, -23
   %5 = icmp ne i64 %1, 0
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -54,7 +54,7 @@ entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp ult i32 %3, 10
   %5 = icmp ult i32 %1, 26
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }
@@ -93,12 +93,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000222(i1 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -6
-  %4 = icmp eq i64 %3, 31
-  %5 = icmp eq i32 %1, 31
-  %6 = or i1 %0, %5
-  %7 = select i1 %6, i1 true, i1 %4
-  ret i1 %7
+  %3 = icmp eq i64 %2, 37
+  %4 = icmp eq i32 %1, 31
+  %5 = or i1 %4, %0
+  %6 = select i1 %5, i1 true, i1 %3
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -110,7 +109,7 @@ entry:
   %3 = add i8 %2, -97
   %4 = icmp ult i8 %3, 26
   %5 = icmp ult i8 %1, 26
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }

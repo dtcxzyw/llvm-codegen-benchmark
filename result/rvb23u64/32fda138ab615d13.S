@@ -1,7 +1,7 @@
 func000000000000001a:                   # @func000000000000001a
+	sext.w	a0, a0
 	clzw	a1, a1
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000051:                   # @func0000000000000051

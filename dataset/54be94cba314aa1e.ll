@@ -19,7 +19,7 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp eq i64 %1, 0
   %4 = select i1 %3, i64 2, i64 %2
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %1, 1
   %4 = select i1 %3, i32 1, i32 %2
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
 

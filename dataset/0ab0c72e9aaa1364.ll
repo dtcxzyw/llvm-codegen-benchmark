@@ -45,8 +45,8 @@
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 
@@ -56,8 +56,8 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 
@@ -68,8 +68,8 @@ entry:
 define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 
@@ -93,8 +93,8 @@ entry:
 define i1 @func0000000000000089(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
-  %3 = add i64 %2, %0
-  %4 = icmp uge i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ule i64 %2, %3
   ret i1 %4
 }
 
@@ -107,8 +107,8 @@ entry:
 define i1 @func00000000000000c9(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
-  %3 = add i64 %2, %0
-  %4 = icmp uge i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ule i64 %2, %3
   ret i1 %4
 }
 
@@ -119,8 +119,8 @@ entry:
 define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 12
-  %3 = add i64 %2, %0
-  %4 = icmp ult i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ugt i64 %2, %3
   ret i1 %4
 }
 
@@ -130,8 +130,8 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = add i64 %0, %2
-  %4 = icmp uge i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = icmp ule i64 %2, %3
   ret i1 %4
 }
 

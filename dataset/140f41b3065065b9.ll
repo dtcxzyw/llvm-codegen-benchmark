@@ -330,9 +330,9 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = sdiv exact i64 %5, 56
-  %7 = sub nsw i64 %0, %6
-  ret i64 %7
+  %.neg = sdiv exact i64 %5, -56
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 ; 410 occurrences:
@@ -752,9 +752,9 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = sdiv exact i64 %5, 160
-  %7 = sub i64 %0, %6
-  ret i64 %7
+  %.neg = sdiv exact i64 %5, -160
+  %6 = add i64 %.neg, %0
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

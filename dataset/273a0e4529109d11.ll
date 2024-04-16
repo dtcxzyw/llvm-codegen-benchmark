@@ -9,7 +9,7 @@ entry:
   %3 = fmul float %1, %2
   %4 = fcmp ogt float %3, 0x3FEE666660000000
   %5 = select i1 %4, float 0x3FEE666660000000, float %3
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = fmul float %1, %2
   %4 = fcmp olt float %3, 0.000000e+00
   %5 = select i1 %4, float 0.000000e+00, float %3
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   ret i1 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = fmul double %1, %2
   %4 = fcmp olt double %3, 0x3CE4000000000000
   %5 = select i1 %4, double 0x3CE4000000000000, double %3
-  %6 = fcmp oge double %0, %5
+  %6 = fcmp ole double %5, %0
   ret i1 %6
 }
 

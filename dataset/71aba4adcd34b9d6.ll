@@ -9,7 +9,7 @@ entry:
   %4 = shl i64 %3, 32
   %5 = add i64 %4, 4294967296
   %6 = ashr exact i64 %5, 32
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = shl i32 %3, 16
   %5 = add i32 %4, -65536
   %6 = ashr exact i32 %5, 16
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

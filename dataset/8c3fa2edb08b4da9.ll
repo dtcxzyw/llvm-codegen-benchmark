@@ -182,8 +182,8 @@ define i32 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = tail call i32 @llvm.smax.i32(i32 %5, i32 0)
+  %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
+  %6 = select i1 %0, i32 0, i32 %5
   ret i32 %6
 }
 

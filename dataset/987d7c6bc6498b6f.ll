@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000f10(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ugt i64 %4, %0
   %6 = icmp ugt i64 %4, 8191
   %7 = or i1 %5, %6
@@ -31,7 +31,7 @@ entry:
 define i1 @func000000000000034c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp slt i32 %4, %0
   %6 = icmp sgt i32 %4, 1114111
   %7 = or i1 %5, %6

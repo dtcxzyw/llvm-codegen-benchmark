@@ -10,7 +10,7 @@ entry:
   %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nuw nsw i64 %0, %5
+  %6 = mul nuw nsw i64 %5, %0
   ret i64 %6
 }
 

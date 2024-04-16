@@ -34,10 +34,9 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a0, a0, 1
 	sext.w	a2, a2
-	czero.nez	a0, a1, a0
-	sltu	a0, a2, a0
+	sltu	a1, a2, a1
+	andn	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 1

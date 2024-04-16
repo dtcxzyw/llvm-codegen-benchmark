@@ -77,12 +77,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
-  %5 = and i64 %1, 268435455
-  %6 = add nuw i64 %4, %5
-  %7 = trunc i64 %6 to i32
-  ret i32 %7
+  %3 = mul i64 %2, %0
+  %4 = and i64 %1, 268435455
+  %5 = add i64 %3, %4
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
 }
 
 ; 105 occurrences:
@@ -194,12 +193,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 18446744073709551615
-  %4 = mul nuw nsw i128 %3, %0
-  %5 = and i128 %1, 4294967295
-  %6 = add nuw nsw i128 %4, %5
-  %7 = trunc i128 %6 to i32
-  ret i32 %7
+  %3 = mul i128 %2, %0
+  %4 = add i128 %3, %1
+  %5 = trunc i128 %4 to i32
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -9,7 +9,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = add i32 %4, 1
   %6 = and i32 %5, 3
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

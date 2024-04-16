@@ -12,7 +12,7 @@ define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.ctpop.i64(i64 %1), !range !0
   %3 = icmp ugt i64 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -27,7 +27,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.ctpop.i32(i32 %1), !range !1
   %3 = icmp ne i32 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

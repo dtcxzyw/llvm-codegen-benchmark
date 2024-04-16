@@ -1,8 +1,8 @@
 func000000000000004d:                   # @func000000000000004d
 	sub	a1, a1, a2
-	srli	a1, a1, 3
-	add	a0, a0, a1
 	slli	a0, a0, 3
+	add	a0, a0, a1
+	andi	a0, a0, -8
 	addi	a0, a0, -8
 	ret
 func000000000000005d:                   # @func000000000000005d
@@ -14,8 +14,8 @@ func000000000000005d:                   # @func000000000000005d
 	ret
 func0000000000000050:                   # @func0000000000000050
 	sub	a1, a1, a2
-	srli	a1, a1, 4
-	add	a0, a0, a1
 	slli	a0, a0, 4
+	add	a0, a0, a1
+	andi	a0, a0, -16
 	addi	a0, a0, 1024
 	ret

@@ -31,7 +31,7 @@ entry:
 define i16 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 27
-  %3 = add nsw i32 %2, -1
+  %3 = add nuw nsw i32 %2, 65535
   %4 = icmp ult i32 %1, 134217728
   %5 = select i1 %4, i32 %0, i32 %3
   %6 = trunc i32 %5 to i16

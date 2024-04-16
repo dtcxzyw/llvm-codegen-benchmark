@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 14, %1
+  %2 = add i64 %1, -7
   %3 = icmp ult i64 %2, 8
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -17,10 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 0, %1
-  %3 = icmp ugt i32 %2, 4095
-  %4 = or i1 %0, %3
-  ret i1 %4
+  %notsub = add i32 %1, -1
+  %2 = icmp ult i32 %notsub, -4096
+  %3 = or i1 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

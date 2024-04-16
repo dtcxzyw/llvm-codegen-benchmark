@@ -9,8 +9,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %0
   %5 = trunc i64 %1 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %5
+  %7 = icmp eq i32 %4, %6
   ret i1 %7
 }
 
@@ -23,8 +23,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %0
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %4, %5
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %5
+  %7 = icmp eq i32 %4, %6
   ret i1 %7
 }
 

@@ -8,7 +8,7 @@
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = lshr exact i64 %1, 3
   %6 = add i64 %4, %5
   %7 = and i64 %6, 32767
@@ -63,7 +63,7 @@ entry:
 define i128 @func0000000000000005(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 16
-  %4 = add nsw i128 %0, %3
+  %4 = add nsw i128 %3, %0
   %5 = lshr i128 %1, 56
   %6 = add nsw i128 %4, %5
   %7 = and i128 %6, 72057594037927935
@@ -76,7 +76,7 @@ entry:
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = lshr exact i64 %1, 5
   %6 = add nuw nsw i64 %4, %5
   %7 = and i64 %6, 4294967295

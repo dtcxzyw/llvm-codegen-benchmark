@@ -41,9 +41,8 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %0, i64 %1
-  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %5, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.1769072, ptr %5, i64 %4, i32 3
+  ret ptr %6
 }
 
 ; 3 occurrences:

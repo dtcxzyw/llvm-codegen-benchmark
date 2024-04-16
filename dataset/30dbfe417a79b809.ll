@@ -10,9 +10,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 1, i32 2
-  %3 = sub nuw nsw i32 %0, %2
-  ret i32 %3
+  %.neg = select i1 %1, i32 -1, i32 -2
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 33 occurrences:
@@ -52,9 +52,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i64 3, i64 2
-  %3 = sub i64 %0, %2
-  ret i64 %3
+  %.neg = select i1 %1, i64 -3, i64 -2
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 ; 4 occurrences:
@@ -65,9 +65,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i64 16, i64 0
-  %3 = sub nuw i64 %0, %2
-  ret i64 %3
+  %.neg = select i1 %1, i64 -16, i64 0
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 ; 38 occurrences:
@@ -112,9 +112,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 4, i32 8
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = select i1 %1, i32 -4, i32 -8
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

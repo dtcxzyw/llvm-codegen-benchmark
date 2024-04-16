@@ -29,8 +29,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 1, i8 %1
-  %3 = icmp eq i8 %2, 1
+  %2 = icmp eq i8 %1, 1
+  %3 = select i1 %0, i1 true, i1 %2
   %4 = select i1 %3, i32 131, i32 129
   ret i32 %4
 }
@@ -55,8 +55,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = icmp ult i32 %2, 4
+  %2 = icmp ult i32 %1, 4
+  %3 = select i1 %0, i1 true, i1 %2
   %4 = select i1 %3, i32 16384, i32 0
   ret i32 %4
 }
@@ -75,8 +75,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 90, i32 %1
-  %3 = icmp slt i32 %2, 91
+  %2 = icmp slt i32 %1, 91
+  %3 = select i1 %0, i1 true, i1 %2
   %4 = select i1 %3, i8 34, i8 17
   ret i8 %4
 }

@@ -6,8 +6,8 @@
 define i32 @func0000000000000005(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i32 9999, i32 %0
-  %5 = add nsw i32 %4, -1
+  %4 = add nsw i32 %0, -1
+  %5 = select i1 %3, i32 9998, i32 %4
   ret i32 %5
 }
 
@@ -17,8 +17,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 -1, i64 %0
-  %5 = add i64 %4, 1
+  %4 = add i64 %0, 1
+  %5 = select i1 %3, i64 0, i64 %4
   ret i64 %5
 }
 
@@ -30,8 +30,8 @@ entry:
 define i64 @func0000000000000007(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, i64 1, i64 %0
-  %5 = add nuw nsw i64 %4, 3
+  %4 = add nuw nsw i64 %0, 3
+  %5 = select i1 %3, i64 4, i64 %4
   ret i64 %5
 }
 

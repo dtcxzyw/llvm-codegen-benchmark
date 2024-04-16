@@ -39,7 +39,7 @@
 define ptr @func0000000000000023(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sub nsw i64 0, %4
   %6 = getelementptr inbounds { { { { { { i64, ptr }, i64 } } } }, {} }, ptr %0, i64 %5
   ret ptr %6
@@ -54,7 +54,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sub i64 0, %4
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -67,7 +67,7 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = sub nsw i64 0, %4
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -79,7 +79,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = sub nsw i64 0, %4
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -93,7 +93,7 @@ entry:
 define ptr @func0000000000000022(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sub nsw i64 0, %4
   %6 = getelementptr i64, ptr %0, i64 %5
   ret ptr %6

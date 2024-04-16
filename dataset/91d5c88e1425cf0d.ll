@@ -471,9 +471,9 @@ define i64 @func000000000000003d(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 5)
   %2 = add nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %0, 1
-  %4 = sub nsw i64 %2, %3
-  ret i64 %4
+  %.neg = xor i64 %0, -1
+  %3 = add i64 %2, %.neg
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -486,9 +486,9 @@ define i64 @func0000000000000039(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 5)
   %2 = add nuw i64 %1, 3
-  %3 = add nuw nsw i64 %0, 1
-  %4 = sub nsw i64 %2, %3
-  ret i64 %4
+  %.neg = xor i64 %0, -1
+  %3 = add i64 %2, %.neg
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

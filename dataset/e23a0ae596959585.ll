@@ -215,7 +215,7 @@ entry:
 define i8 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = lshr exact i32 128, %0
-  %2 = trunc i32 %1 to i8
+  %2 = trunc nuw i32 %1 to i8
   ret i8 %2
 }
 

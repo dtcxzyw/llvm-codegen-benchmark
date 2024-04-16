@@ -67,11 +67,11 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, %1
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  ret ptr %6
+  %reass.add = shl i32 %1, 1
+  %3 = add i32 %reass.add, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -79,11 +79,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, %1
-  %4 = add nuw nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr double, ptr %0, i64 %5
-  ret ptr %6
+  %reass.add = shl i32 %1, 1
+  %3 = add i32 %reass.add, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr double, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -92,11 +92,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, %1
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr double, ptr %0, i64 %5
-  ret ptr %6
+  %reass.add = shl i32 %1, 1
+  %3 = add i32 %reass.add, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr double, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -104,11 +104,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, %1
-  %4 = add nuw nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
-  ret ptr %6
+  %reass.add = shl i32 %1, 1
+  %3 = add i32 %reass.add, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr inbounds i32, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

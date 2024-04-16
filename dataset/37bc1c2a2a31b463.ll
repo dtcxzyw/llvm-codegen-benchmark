@@ -24,9 +24,8 @@
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr %struct.QuorumChildRequest.1660967, ptr %0, i64 %2, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.QuorumChildRequest.1660967, ptr %0, i64 %2, i32 1, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -36,9 +35,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr inbounds %"class.ue2::(anonymous namespace)::VertexInfo.2248034", ptr %0, i64 %2, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds %"class.ue2::(anonymous namespace)::VertexInfo.2248034", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -47,9 +45,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr inbounds %"class.ue2::(anonymous namespace)::VertexInfo.2248034", ptr %0, i64 %2, i32 1
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %"class.ue2::(anonymous namespace)::VertexInfo.2248034", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

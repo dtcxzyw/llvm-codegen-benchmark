@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000006:                   # @func0000000000000006
 	srai	a5, a4, 1
-	beq	a2, a5, .LBB2_2
+	beq	a5, a2, .LBB2_2
 	slt	a1, a2, a5
 	addi	a1, a1, -1
 	and	a0, a0, a1
@@ -29,14 +29,14 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1
 	sraiw	a2, a2, 3
-	bne	a1, a2, .LBB3_2
+	bne	a2, a1, .LBB3_2
 	li	a0, 1
 .LBB3_2:                                # %entry
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
 	sraiw	a2, a2, 10
-	beq	a1, a2, .LBB4_2
+	beq	a2, a1, .LBB4_2
 	li	a0, 1024
 .LBB4_2:                                # %entry
 	ret
@@ -54,7 +54,7 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000011:                   # @func0000000000000011
 	srai	a2, a2, 3
-	bne	a1, a2, .LBB7_2
+	bne	a2, a1, .LBB7_2
 	li	a0, 2
 .LBB7_2:                                # %entry
 	ret

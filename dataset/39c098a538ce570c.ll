@@ -18,7 +18,7 @@ entry:
   %2 = and i64 %1, 1792
   %3 = and i64 %0, 16711680
   %4 = or disjoint i64 %2, %3
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -29,9 +29,9 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 8
   %2 = and i64 %1, 4096
-  %3 = and i64 %0, -67633153
+  %3 = and i64 %0, 4227334143
   %4 = or i64 %2, %3
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

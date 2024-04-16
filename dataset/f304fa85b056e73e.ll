@@ -11,8 +11,8 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %0, %4
-  %6 = icmp eq i32 %5, 0
+  %5 = sub i32 0, %0
+  %6 = icmp eq i32 %4, %5
   ret i1 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = icmp eq i32 %5, 18
   ret i1 %6
 }

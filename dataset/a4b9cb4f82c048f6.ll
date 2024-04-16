@@ -136,10 +136,9 @@ entry:
 define i8 @func000000000000001e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = and i32 %2, 1984
-  %4 = or disjoint i32 %0, %3
-  %5 = trunc nuw i32 %4 to i8
-  ret i8 %5
+  %3 = or i32 %2, %0
+  %4 = trunc i32 %3 to i8
+  ret i8 %4
 }
 
 ; 1 occurrences:

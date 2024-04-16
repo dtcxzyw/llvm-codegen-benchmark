@@ -39,7 +39,7 @@ define i40 @func0000000000000001(i40 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = select i1 %3, i40 4294967296, i40 0
-  %5 = or disjoint i40 %0, %4
+  %5 = or disjoint i40 %4, %0
   ret i40 %5
 }
 
@@ -55,7 +55,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = select i1 %3, i64 128, i64 0
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

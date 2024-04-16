@@ -282,7 +282,7 @@
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 3
+  %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -299,7 +299,7 @@ entry:
 define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
   %2 = sub nsw i128 %0, %1
-  %3 = ashr i128 %2, 56
+  %3 = lshr i128 %2, 56
   %4 = trunc i128 %3 to i64
   ret i64 %4
 }
@@ -320,7 +320,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = ashr i64 %2, 63
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
 
@@ -336,8 +336,8 @@ entry:
 define i8 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 5
-  %4 = trunc nuw i64 %3 to i8
+  %3 = lshr exact i64 %2, 5
+  %4 = trunc i64 %3 to i8
   ret i8 %4
 }
 
@@ -347,8 +347,8 @@ entry:
 define i8 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = ashr i32 %2, 17
-  %4 = trunc nuw i32 %3 to i8
+  %3 = lshr i32 %2, 17
+  %4 = trunc i32 %3 to i8
   ret i8 %4
 }
 

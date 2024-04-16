@@ -8,7 +8,7 @@ entry:
   %3 = srem i32 %1, %2
   %4 = icmp sgt i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -25,7 +25,7 @@ entry:
   %3 = srem i32 %1, %2
   %4 = icmp sgt i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }

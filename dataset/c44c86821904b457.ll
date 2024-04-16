@@ -31,7 +31,7 @@ define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
   %3 = sitofp i32 %2 to double
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 
@@ -43,7 +43,7 @@ define float @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   ret float %4
 }
 
@@ -61,7 +61,7 @@ define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = sitofp i64 %2 to double
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   ret double %4
 }
 

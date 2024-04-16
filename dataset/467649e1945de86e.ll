@@ -35,7 +35,7 @@ define i1 @func00000000000001f1(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
   %3 = mul nuw nsw i128 %0, 1000
-  %4 = add nuw nsw i128 %3, %2
+  %4 = or i128 %3, %2
   %5 = icmp eq i128 %4, 0
   ret i1 %5
 }
@@ -157,8 +157,8 @@ define i1 @func0000000000000101(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = mul i64 %0, 10
-  %4 = add i64 %3, %2
-  %5 = icmp eq i64 %4, 0
+  %4 = sub nsw i64 0, %2
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -308,7 +308,7 @@ define i1 @func00000000000000f1(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
   %3 = mul nuw nsw i128 %0, 1000000000
-  %4 = add nuw nsw i128 %3, %2
+  %4 = or i128 %3, %2
   %5 = icmp eq i128 %4, 0
   ret i1 %5
 }
@@ -338,7 +338,7 @@ define i1 @func00000000000001fc(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = mul nuw nsw i32 %0, 3
-  %4 = add nuw nsw i32 %3, %2
+  %4 = or i32 %3, %2
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

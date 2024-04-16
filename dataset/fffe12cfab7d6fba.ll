@@ -250,7 +250,7 @@
 define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   ret i1 %3
 }
 
@@ -263,7 +263,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = icmp ugt ptr %0, %2
+  %3 = icmp ult ptr %2, %0
   ret i1 %3
 }
 

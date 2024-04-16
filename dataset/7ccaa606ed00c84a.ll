@@ -8,7 +8,7 @@
 define i1 @func0000000000000004(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   %4 = fptrunc double %3 to float
   %5 = fpext float %4 to double
   %6 = fcmp ogt double %5, 1.000000e+20

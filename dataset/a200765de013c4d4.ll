@@ -9,7 +9,7 @@ entry:
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 3
   %6 = icmp eq i32 %5, 3
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

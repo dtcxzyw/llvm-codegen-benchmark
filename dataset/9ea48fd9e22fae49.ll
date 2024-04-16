@@ -20,7 +20,7 @@ declare i32 @llvm.ctpop.i32(i32) #1
 define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.ctpop.i64(i64 %1), !range !1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = or i64 %2, %0
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.ctpop.i64(i64 %1), !range !1
-  %3 = add nuw nsw i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -73,7 +73,7 @@ entry:
 define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.ctpop.i64(i64 %1), !range !1
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = icmp ugt i64 %3, 10
   ret i1 %4
 }

@@ -1,6 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	subw	a2, a2, a1
-	sll	a0, a0, a2
+	addi	a1, a2, 64
+	sll	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
 	subw	a2, a2, a1
@@ -9,7 +10,8 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000028:                   # @func0000000000000028
 	subw	a2, a2, a1
-	sll	a0, a0, a2
+	addi	a1, a2, 64
+	sll	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	subw	a2, a2, a1

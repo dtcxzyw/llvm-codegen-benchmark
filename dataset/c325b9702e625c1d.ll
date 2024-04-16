@@ -9,7 +9,7 @@
 define i64 @func0000000000000010(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %1, %3
+  %4 = or disjoint i128 %3, %1
   %5 = freeze i128 %4
   %6 = sub i128 %5, %0
   %7 = trunc i128 %6 to i64
@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000013(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %1, %3
+  %4 = or disjoint i128 %3, %1
   %5 = freeze i128 %4
   %6 = sub i128 %5, %0
   %7 = trunc nuw nsw i128 %6 to i32
@@ -35,7 +35,7 @@ entry:
 define i64 @func0000000000000012(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %1, %3
+  %4 = or disjoint i128 %3, %1
   %5 = freeze i128 %4
   %6 = sub i128 %5, %0
   %7 = trunc nuw i128 %6 to i64

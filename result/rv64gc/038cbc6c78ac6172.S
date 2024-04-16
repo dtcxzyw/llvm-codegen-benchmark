@@ -33,8 +33,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a2
 	sext.w	a3, a1
-	bne	a3, a2, .LBB5_2
-	mv	a0, a1
+	beq	a3, a2, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
-	slliw	a0, a0, 1
+	slliw	a0, a1, 1
 	ret

@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %2, %0
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp uge i64 %0, %1
-  %6 = and i1 %5, %4
-  ret i1 %6
+  %3 = icmp ne i64 %2, %0
+  %4 = icmp uge i64 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -30,11 +29,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %2, %0
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp eq i64 %0, %1
-  %6 = and i1 %5, %4
-  ret i1 %6
+  %3 = icmp ne i64 %2, %0
+  %4 = icmp eq i64 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:

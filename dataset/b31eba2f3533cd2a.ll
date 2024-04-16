@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = and i32 %4, 1023
   %6 = or disjoint i32 %5, 56320
   ret i32 %6
@@ -35,8 +35,8 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, %0
-  %5 = and i32 %4, 268435455
-  %6 = or i32 %5, 255
+  %5 = and i32 %4, 268435200
+  %6 = or disjoint i32 %5, 255
   ret i32 %6
 }
 

@@ -11,10 +11,10 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
   %3 = or i64 %2, %1
-  %4 = and i64 %3, 281470681808895
-  %5 = or i64 %0, %4
-  %6 = and i64 %5, 71777214294589695
-  ret i64 %6
+  %4 = and i64 %3, 1095216660735
+  %.masked = and i64 %0, 71777214294589695
+  %5 = or i64 %4, %.masked
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

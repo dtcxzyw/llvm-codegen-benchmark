@@ -3,8 +3,6 @@ func00000000000001a5:                   # @func00000000000001a5
 	bltu	a2, a1, .LBB0_2
 	li	a1, 4
 .LBB0_2:                                # %entry
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -23,8 +21,6 @@ func00000000000001e5:                   # @func00000000000001e5
 	bltu	a2, a1, .LBB2_2
 	li	a1, 4
 .LBB2_2:                                # %entry
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

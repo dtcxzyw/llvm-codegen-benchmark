@@ -36,8 +36,8 @@
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 28
-  %2 = ashr i64 %1, 32
-  %3 = shl nuw nsw i64 %2, 3
+  %2 = ashr i64 %1, 29
+  %3 = and i64 %2, -8
   ret i64 %3
 }
 
@@ -55,8 +55,8 @@ entry:
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 30
-  %2 = ashr i64 %1, 32
-  %3 = shl nsw i64 %2, 2
+  %2 = ashr exact i64 %1, 30
+  %3 = and i64 %2, -4
   ret i64 %3
 }
 
@@ -65,10 +65,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 30
-  %2 = ashr i64 %1, 32
-  %3 = shl i64 %2, 34
-  ret i64 %3
+  %1 = shl i64 %0, 32
+  %2 = and i64 %1, -17179869184
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

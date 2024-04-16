@@ -1,6 +1,7 @@
 func0000000000000071:                   # @func0000000000000071
 	slli	a2, a2, 3
 	andi	a2, a2, -16
+	bclri	a2, a2, 63
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -42,20 +43,25 @@ func000000000000005c:                   # @func000000000000005c
 	snez	a0, a0
 	ret
 func000000000000007c:                   # @func000000000000007c
-	srli	a2, a2, 1
-	sh2add	a1, a2, a1
+	slli	a2, a2, 1
+	andi	a2, a2, -4
+	bclri	a2, a2, 63
+	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000006c:                   # @func000000000000006c
-	srli	a2, a2, 1
-	sh2add	a1, a2, a1
+	slli	a2, a2, 1
+	andi	a2, a2, -4
+	bclri	a2, a2, 63
+	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 3
 	andi	a2, a2, -16
+	bclri	a2, a2, 63
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -63,6 +69,7 @@ func000000000000003c:                   # @func000000000000003c
 func0000000000000031:                   # @func0000000000000031
 	slli	a2, a2, 3
 	andi	a2, a2, -16
+	bclri	a2, a2, 63
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

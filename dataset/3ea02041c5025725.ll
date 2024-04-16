@@ -62,7 +62,7 @@ entry:
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 13
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = lshr i32 %5, 13
   ret i32 %6
 }

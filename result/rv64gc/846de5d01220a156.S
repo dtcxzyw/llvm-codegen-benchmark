@@ -1,14 +1,14 @@
 func000000000000003c:                   # @func000000000000003c
-	addiw	a2, a2, 8
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 8
+	addi	a0, a0, 16
 	ret
 func0000000000000038:                   # @func0000000000000038
-	addiw	a2, a2, 2
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, -5
+	addi	a0, a0, -3
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addi	a2, a2, 4

@@ -39,7 +39,7 @@ define i1 @func000000000000001a(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 2.550000e+02
   %3 = fcmp uge float %2, 2.560000e+02
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -74,7 +74,7 @@ define i1 @func0000000000000010(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3F70101020000000
   %3 = fcmp oeq float %2, 1.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -87,7 +87,7 @@ define i1 @func000000000000000a(i1 %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 2.560000e+02
   %3 = fcmp ugt float %2, 2.550000e+02
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -111,7 +111,7 @@ define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+02
   %3 = fcmp uno double %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -124,7 +124,7 @@ define i1 @func000000000000000e(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
   %3 = fcmp une double %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

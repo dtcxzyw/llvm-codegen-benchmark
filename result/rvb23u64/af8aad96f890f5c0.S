@@ -32,14 +32,13 @@ func0000000000000063:                   # @func0000000000000063
 func0000000000000053:                   # @func0000000000000053
 	lui	a4, %hi(.LCPI4_0)
 	ld	a4, %lo(.LCPI4_0)(a4)
-	mul	a6, a5, a4
-	mulhu	a4, a5, a4
-	add	a3, a3, a4
-	add	a6, a6, a2
-	sltu	a2, a6, a2
-	add	a3, a3, a0
+	mulhu	a6, a5, a4
+	mul	a4, a4, a5
+	add	a2, a2, a4
+	sltu	a2, a2, a4
+	add	a3, a3, a6
 	add	a2, a2, a3
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret

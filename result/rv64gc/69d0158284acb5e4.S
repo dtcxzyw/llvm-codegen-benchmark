@@ -1,7 +1,7 @@
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
-	andi	a1, a1, 255
-	sltiu	a1, a1, 128
+	andi	a1, a1, 128
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -17,10 +17,10 @@
 define i1 @func0000000000000588(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i8
-  %7 = icmp ugt i8 %0, %6
+  %7 = icmp ult i8 %6, %0
   ret i1 %7
 }
 
@@ -41,10 +41,10 @@ entry:
 define i1 @func0000000000000584(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
-  %6 = zext i1 %5 to i8
-  %7 = icmp ult i8 %0, %6
+  %6 = icmp eq i8 %0, 0
+  %7 = and i1 %6, %5
   ret i1 %7
 }
 
@@ -55,10 +55,10 @@ entry:
 define i1 @func0000000000000581(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i8
-  %7 = icmp eq i8 %0, %6
+  %7 = icmp eq i8 %6, %0
   ret i1 %7
 }
 

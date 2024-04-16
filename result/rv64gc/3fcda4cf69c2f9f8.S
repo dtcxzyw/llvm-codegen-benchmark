@@ -28,8 +28,9 @@ func000000000000001a:                   # @func000000000000001a
 	slt	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	srli	a1, a1, 32
-	addw	a0, a0, a1
+	srai	a1, a1, 32
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI6_0:
@@ -55,8 +56,9 @@ func0000000000000024:                   # @func0000000000000024
 	sltiu	a0, a0, 100
 	ret
 func0000000000000081:                   # @func0000000000000081
-	srli	a1, a1, 32
-	addw	a0, a0, a1
+	srai	a1, a1, 32
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000009a:                   # @func000000000000009a
@@ -69,7 +71,9 @@ func00000000000000a4:                   # @func00000000000000a4
 	sltiu	a0, a0, 100
 	ret
 func000000000000008c:                   # @func000000000000008c
-	addw	a0, a0, a2
+	sext.w	a2, a2
+	negw	a0, a0
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -95,7 +99,8 @@ func0000000000000106:                   # @func0000000000000106
 	ret
 func0000000000000031:                   # @func0000000000000031
 	srli	a1, a1, 63
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000116:                   # @func0000000000000116
@@ -112,7 +117,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000011:                   # @func0000000000000011
 	srli	a1, a1, 40
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006

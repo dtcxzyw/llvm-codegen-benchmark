@@ -10,10 +10,9 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %1, %4
-  %6 = getelementptr inbounds %struct.code.1828641, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %5 = and i64 %4, %1
+  %6 = getelementptr inbounds %struct.code.1828641, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -24,10 +23,9 @@ define ptr @func0000000000000005(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %1, %4
-  %6 = getelementptr %struct.code.2004654, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 2
-  ret ptr %7
+  %5 = and i64 %4, %1
+  %6 = getelementptr %struct.code.2004654, ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

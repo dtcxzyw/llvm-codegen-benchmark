@@ -5,11 +5,10 @@
 define i1 @func000000000000004a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
-  %5 = xor i32 %1, -1
-  %6 = add i32 %4, %5
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %4 = add nsw i32 %3, %0
+  %5 = sub i32 %1, %4
+  %6 = icmp slt i32 %5, -1
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -19,10 +18,9 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add i32 %3, %0
-  %5 = xor i32 %1, -1
-  %6 = add i32 %4, %5
-  %7 = icmp sgt i32 %6, -1
-  ret i1 %7
+  %5 = sub i32 %1, %4
+  %6 = icmp slt i32 %5, 0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -13,7 +13,7 @@ entry:
   %4 = icmp ugt i64 %1, 15
   %5 = or i1 %4, %3
   %6 = zext i1 %5 to i32
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = icmp ne i32 %1, 0
   %5 = or i1 %4, %3
   %6 = zext i1 %5 to i32
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

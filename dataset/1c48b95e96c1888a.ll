@@ -37,8 +37,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = shl i64 %3, 28
-  %5 = ashr i64 %4, 32
-  %6 = shl nuw nsw i64 %5, 3
+  %5 = ashr i64 %4, 29
+  %6 = and i64 %5, -8
   ret i64 %6
 }
 
@@ -56,8 +56,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = shl i64 %3, 30
-  %5 = ashr i64 %4, 32
-  %6 = shl nsw i64 %5, 2
+  %5 = ashr exact i64 %4, 30
+  %6 = and i64 %5, -4
   ret i64 %6
 }
 
@@ -68,10 +68,9 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 30
-  %5 = ashr i64 %4, 32
-  %6 = shl i64 %5, 34
-  ret i64 %6
+  %4 = shl i64 %3, 32
+  %5 = and i64 %4, -17179869184
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

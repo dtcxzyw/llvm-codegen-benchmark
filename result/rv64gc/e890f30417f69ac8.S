@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 274878
 	addiw	a1, a1, -381
 	mul	a0, a0, a1
@@ -15,7 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	sext.w	a1, a1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	mulh	a0, a0, a2
 	srli	a1, a0, 63
 	srai	a0, a0, 14

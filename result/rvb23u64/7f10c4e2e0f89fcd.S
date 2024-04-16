@@ -3,8 +3,9 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	slli	a0, a0, 48
-	srli	a0, a0, 59
+	li	a1, 31
+	slli	a1, a1, 11
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -12,9 +13,8 @@ func000000000000000a:                   # @func000000000000000a
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	xori	a0, a0, 1
+	not	a0, a0
+	bexti	a0, a0, 31
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1

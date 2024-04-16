@@ -27,10 +27,7 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	srli	a2, a2, 1
-	andi	a2, a2, 112
 	or	a0, a0, a1
-	or	a0, a0, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a0, a0, 256

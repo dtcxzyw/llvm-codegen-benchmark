@@ -11,7 +11,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = icmp ult i32 %1, 3
   %4 = select i1 %3, i32 4, i32 %2
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = shl nuw i64 %1, 3
   %3 = icmp ugt i64 %1, 2305843009213693951
   %4 = select i1 %3, i64 -1, i64 %2
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = icmp eq i32 %1, 0
   %4 = select i1 %3, i32 1, i32 %2
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -53,7 +53,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = icmp eq i32 %1, 0
   %4 = select i1 %3, i32 16, i32 %2
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 

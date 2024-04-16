@@ -7,7 +7,7 @@
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = add nuw nsw i32 %2, 255
   %6 = and i32 %5, %0
   %7 = or i32 %6, %4
@@ -58,7 +58,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = add nsw i64 %2, -1
   %6 = and i64 %5, %0
   %7 = or i64 %6, %4
@@ -71,7 +71,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = add i64 %2, -1
   %6 = and i64 %5, %0
   %7 = or i64 %6, %4

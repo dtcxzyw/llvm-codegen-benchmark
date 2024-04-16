@@ -20,7 +20,7 @@ entry:
 define i16 @func0000000000000014(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 2048
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = and i16 %4, 2337
   %6 = icmp ult i64 %0, 16
   %7 = select i1 %6, i16 %4, i16 %5
@@ -33,7 +33,7 @@ entry:
 define i16 @func0000000000000011(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -129
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = and i16 %4, -257
   %6 = icmp eq i16 %0, 0
   %7 = select i1 %6, i16 %4, i16 %5

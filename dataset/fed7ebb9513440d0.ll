@@ -11,7 +11,7 @@ entry:
   %3 = fmul float %1, %2
   %4 = fptoui float %3 to i32
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = fmul double %1, %2
   %4 = fptoui double %3 to i32
   %5 = zext i32 %4 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

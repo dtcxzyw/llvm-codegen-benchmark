@@ -25,10 +25,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 24)
-  %2 = extractvalue { i64, i1 } %1, 0
-  %3 = add nuw i64 %2, 15
-  ret i64 %3
+  %1 = mul i64 %0, 24
+  %2 = add nuw i64 %1, 15
+  ret i64 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -64,10 +63,9 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 12)
-  %2 = extractvalue { i64, i1 } %1, 0
-  %3 = add i64 %2, -12
-  ret i64 %3
+  %1 = mul i64 %0, 12
+  %2 = add i64 %1, -12
+  ret i64 %2
 }
 
 ; 4 occurrences:
@@ -78,10 +76,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %0, i64 24)
-  %2 = extractvalue { i64, i1 } %1, 0
-  %3 = add nsw i64 %2, -24
-  ret i64 %3
+  %1 = mul i64 %0, 24
+  %2 = add nsw i64 %1, -24
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

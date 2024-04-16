@@ -171,8 +171,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = udiv i32 %2, 10
-  %4 = mul nuw i32 %3, 10
+  %.fr = freeze i32 %2
+  %3 = urem i32 %.fr, 10
+  %4 = sub nuw i32 %.fr, %3
   %5 = add i32 %0, %1
   %6 = icmp ult i32 %4, %5
   ret i1 %6

@@ -9,7 +9,7 @@ entry:
   %3 = and i64 %2, 72057594021150720
   %4 = lshr i64 %1, 5
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

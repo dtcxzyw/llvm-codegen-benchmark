@@ -1,22 +1,19 @@
 func0000000000000019:                   # @func0000000000000019
-	slti	a1, a1, 0
-	addi	a1, a1, -1
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	bltz	a1, .LBB0_2
+	negw	a0, a0
+.LBB0_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	slti	a1, a1, 0
-	addi	a1, a1, -1
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	bltz	a1, .LBB1_2
+	negw	a0, a0
+.LBB1_2:                                # %entry
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a1, a1
-	addi	a1, a1, -1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	li	a2, 1
+	beq	a1, a2, .LBB2_2
+	negw	a0, a0
+.LBB2_2:                                # %entry
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a2, a1
@@ -41,9 +38,10 @@ func0000000000000029:                   # @func0000000000000029
 	mulw	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
-	sraiw	a1, a1, 31
-	ori	a1, a1, 1
-	mulw	a0, a1, a0
+	sext.w	a1, a1
+	bgez	a1, .LBB6_2
+	negw	a0, a0
+.LBB6_2:                                # %entry
 	ret
 func000000000000001b:                   # @func000000000000001b
 	sext.w	a2, a1
@@ -62,7 +60,7 @@ func0000000000000020:                   # @func0000000000000020
 	bltu	a3, a2, .LBB8_2
 	li	a1, 48
 .LBB8_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000002b:                   # @func000000000000002b
 	sext.w	a1, a1
@@ -82,7 +80,7 @@ func0000000000000010:                   # @func0000000000000010
 	bltu	a2, a1, .LBB10_2
 	li	a1, 16
 .LBB10_2:                               # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 48
@@ -91,13 +89,13 @@ func0000000000000011:                   # @func0000000000000011
 	bltu	a2, a1, .LBB11_2
 	li	a1, 900
 .LBB11_2:                               # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a1
-	li	a1, 18
-	bnez	a2, .LBB12_2
 	li	a1, 12
+	beqz	a2, .LBB12_2
+	li	a1, 18
 .LBB12_2:                               # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret

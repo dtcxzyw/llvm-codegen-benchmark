@@ -64,7 +64,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(float %0) #0 {
 entry:
-  %1 = tail call i1 @llvm.is.fpclass.f32(float %0, i32 96)
+  %1 = fcmp oeq float %0, 0.000000e+00
   ret i1 %1
 }
 

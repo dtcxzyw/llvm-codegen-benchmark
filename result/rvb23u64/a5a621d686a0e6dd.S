@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	flw	fa0, %lo(.LCPI1_0)(a0)
 	fli.s	fa4, 1.0
 	fdiv.s	fa4, fa4, fa1
-	fmul.s	fa5, fa5, fa4
+	fmul.s	fa5, fa4, fa5
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB1_2
 	fmv.s	fa0, fa5

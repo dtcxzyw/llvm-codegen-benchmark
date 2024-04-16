@@ -2,7 +2,7 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a2, a0
 	addi	a1, a1, 48
 	li	a0, 72
-	beq	a2, a1, .LBB0_2
+	beq	a1, a2, .LBB0_2
 	li	a0, 40
 .LBB0_2:                                # %entry
 	ret
@@ -10,7 +10,7 @@ func0000000000000011:                   # @func0000000000000011
 	mv	a2, a0
 	addi	a1, a1, 40
 	li	a0, 24
-	beq	a2, a1, .LBB1_2
+	beq	a1, a2, .LBB1_2
 	li	a0, 16
 .LBB1_2:                                # %entry
 	ret

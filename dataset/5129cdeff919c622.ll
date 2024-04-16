@@ -9,7 +9,7 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 72)
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

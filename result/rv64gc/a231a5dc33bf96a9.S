@@ -62,13 +62,13 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000c:                   # @func000000000000000c
 	andi	a3, a0, 1
 	sext.w	a2, a2
-	li	a0, 2
-	beqz	a2, .LBB5_3
+	li	a0, 98
+	bnez	a2, .LBB5_3
 	beqz	a3, .LBB5_4
 .LBB5_2:                                # %entry
 	ret
 .LBB5_3:                                # %entry
-	li	a0, 98
+	li	a0, 2
 	bnez	a3, .LBB5_2
 .LBB5_4:                                # %entry
 	mv	a0, a1

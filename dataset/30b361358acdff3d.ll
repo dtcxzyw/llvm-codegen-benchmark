@@ -9,7 +9,7 @@
 define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 43
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4
 }
@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 772
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = select i1 %3, i32 %0, i32 771
   ret i32 %4
 }
@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, -8
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = select i1 %3, i32 %0, i32 -1
   ret i32 %4
 }

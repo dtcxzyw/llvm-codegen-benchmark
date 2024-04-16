@@ -7,11 +7,11 @@
 ; Function Attrs: nounwind
 define float @func000000000000000c(float %0, float %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, 1
   %5 = sitofp i32 %4 to float
   %6 = fdiv float %1, %5
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

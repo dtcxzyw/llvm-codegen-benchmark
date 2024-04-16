@@ -26,7 +26,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = and i64 %3, 1
   %5 = icmp ne i64 %4, 0
   ret i1 %5

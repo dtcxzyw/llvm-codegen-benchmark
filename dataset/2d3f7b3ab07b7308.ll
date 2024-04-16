@@ -9,9 +9,9 @@ define i1 @func0000000000000011(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 144
   %4 = zext nneg i16 %3 to i32
-  %5 = and i32 %1, %4
+  %5 = and i32 %4, %1
   %6 = icmp eq i32 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

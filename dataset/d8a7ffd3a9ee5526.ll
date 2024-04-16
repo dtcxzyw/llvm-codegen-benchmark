@@ -12,7 +12,7 @@ entry:
   %3 = uitofp i32 %2 to float
   %4 = fmul float %3, 0x400921FB60000000
   %5 = fadd float %4, %1
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

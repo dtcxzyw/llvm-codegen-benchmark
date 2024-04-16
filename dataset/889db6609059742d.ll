@@ -53,7 +53,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = tail call noundef i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 17)
   %5 = mul i32 %4, 668265263
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   ret i32 %6
 }
 

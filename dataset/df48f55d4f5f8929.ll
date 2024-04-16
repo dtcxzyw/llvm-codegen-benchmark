@@ -29,7 +29,7 @@
 define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ult i32 %1, 21
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -64,7 +64,7 @@ entry:
 define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i64 %1, 27
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -141,7 +141,7 @@ entry:
 define i1 @func0000000000000082(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 26
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i8 %1, 95
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -157,7 +157,7 @@ entry:
 define i1 @func00000000000000c2(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 4
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp eq i32 %1, 4
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -200,7 +200,7 @@ entry:
 define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -216,7 +216,7 @@ entry:
 define i1 @func0000000000000030(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ugt i32 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -234,7 +234,7 @@ entry:
 define i1 @func0000000000000188(i1 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ult i8 %1, -23
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -277,7 +277,7 @@ entry:
 define i1 @func0000000000000110(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 4094
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ugt i64 %1, 4096
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -327,7 +327,7 @@ entry:
 define i1 @func0000000000000190(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ugt i32 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -346,7 +346,7 @@ entry:
 define i1 @func0000000000000088(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 26
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ult i32 %1, 10
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -359,7 +359,7 @@ entry:
 define i1 @func00000000000000d8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 1
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne i64 %1, -1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -410,7 +410,7 @@ entry:
 define i1 @func0000000000000158(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -423,7 +423,7 @@ entry:
 define i1 @func0000000000000154(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp sgt i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -438,7 +438,7 @@ entry:
 define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp slt i32 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -462,7 +462,7 @@ entry:
 define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 5
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -503,7 +503,7 @@ entry:
 define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 8
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -541,7 +541,7 @@ entry:
 define i1 @func0000000000000150(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 4294967295
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   %5 = icmp ugt i64 %1, 65535
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

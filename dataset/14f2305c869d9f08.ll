@@ -8,7 +8,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 %0, %2
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -31,7 +31,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 %0, %2
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -58,7 +58,7 @@ entry:
   %2 = zext nneg i32 %1 to i128
   %3 = shl nuw nsw i128 %0, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 
@@ -70,7 +70,7 @@ entry:
   %2 = zext nneg i32 %1 to i128
   %3 = shl nsw i128 %0, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   ret i64 %5
 }
 

@@ -10,7 +10,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, -7286425919675154353
   %5 = zext i32 %1 to i64
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   %7 = mul i64 %6, %4
   ret i64 %7
 }

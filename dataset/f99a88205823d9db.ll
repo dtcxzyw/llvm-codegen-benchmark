@@ -9,7 +9,7 @@ entry:
   %4 = xor i64 %3, -1
   %5 = ptrtoint ptr %1 to i64
   %6 = add i64 %4, %5
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

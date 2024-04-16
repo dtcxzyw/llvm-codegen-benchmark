@@ -180,11 +180,11 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i16 %0, i32 %1) #0 {
 entry:
-  %2 = or i16 %0, 8193
-  %3 = icmp ne i32 %1, 0
-  %4 = select i1 %3, i16 %2, i16 %0
-  %5 = or i16 %4, 257
-  ret i16 %5
+  %2 = or i16 %0, 8192
+  %.not = icmp eq i32 %1, 0
+  %3 = select i1 %.not, i16 %0, i16 %2
+  %4 = or i16 %3, 257
+  ret i16 %4
 }
 
 ; 9 occurrences:
@@ -214,10 +214,10 @@ entry:
 define i8 @func0000000000000039(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 4
-  %3 = icmp ne i32 %1, 0
-  %4 = select i1 %3, i8 %2, i8 %0
-  %5 = or disjoint i8 %4, 2
-  ret i8 %5
+  %.not = icmp eq i32 %1, 0
+  %3 = select i1 %.not, i8 %0, i8 %2
+  %4 = or disjoint i8 %3, 2
+  ret i8 %4
 }
 
 ; 1 occurrences:

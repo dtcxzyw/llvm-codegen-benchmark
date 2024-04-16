@@ -35,7 +35,7 @@ entry:
   %2 = add i32 %1, 63
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp uge i64 %0, %4
+  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 
@@ -74,7 +74,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -99,7 +99,7 @@ entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -124,7 +124,7 @@ entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -136,7 +136,7 @@ entry:
   %2 = add i16 %1, 1
   %3 = lshr i16 %2, 1
   %4 = zext nneg i16 %3 to i64
-  %5 = icmp ne i64 %0, %4
+  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 
@@ -148,7 +148,7 @@ entry:
   %2 = add nuw nsw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ne i64 %0, %4
+  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 
@@ -162,7 +162,7 @@ entry:
   %2 = add nuw nsw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -174,7 +174,7 @@ entry:
   %2 = add nuw i32 %1, 4095
   %3 = lshr i32 %2, 12
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -187,7 +187,7 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -200,7 +200,7 @@ entry:
   %2 = add i32 %1, -32
   %3 = lshr exact i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -216,7 +216,7 @@ entry:
   %2 = add nsw i32 %1, -16
   %3 = lshr i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

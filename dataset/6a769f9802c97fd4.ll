@@ -30,7 +30,7 @@ entry:
 define float @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = bitcast i32 %3 to float
   ret float %4
 }
@@ -41,7 +41,7 @@ entry:
 define double @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 52
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = bitcast i64 %3 to double
   ret double %4
 }
@@ -52,7 +52,7 @@ entry:
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 63
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = bitcast i64 %3 to double
   ret double %4
 }
@@ -63,7 +63,7 @@ entry:
 define double @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = bitcast i64 %3 to double
   ret double %4
 }

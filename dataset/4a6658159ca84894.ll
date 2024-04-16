@@ -9,7 +9,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 6
   %4 = and i32 %3, 448
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds [512 x i8], ptr %0, i64 0, i64 %6
   ret ptr %7
@@ -39,7 +39,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = and i32 %3, 3840
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.1667587"], ptr %0, i64 0, i64 %6
   ret ptr %7
@@ -52,7 +52,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 2
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds [16 x ptr], ptr %0, i64 0, i64 %6
   ret ptr %7

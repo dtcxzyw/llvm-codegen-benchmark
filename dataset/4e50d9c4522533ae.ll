@@ -101,8 +101,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i1
+  %1 = and i64 %0, 4294967296
+  %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 
@@ -112,9 +112,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i16 %0) #0 {
 entry:
-  %1 = lshr i16 %0, 15
-  %2 = trunc nuw i16 %1 to i1
-  ret i1 %2
+  %1 = icmp slt i16 %0, 0
+  ret i1 %1
 }
 
 ; 3 occurrences:
@@ -124,8 +123,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 32
-  %2 = trunc i64 %1 to i1
+  %1 = and i64 %0, 4294967296
+  %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 
@@ -136,8 +135,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 32
-  %2 = trunc nuw i64 %1 to i1
+  %1 = and i64 %0, 4294967296
+  %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 

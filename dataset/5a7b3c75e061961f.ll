@@ -174,7 +174,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = sub i32 %1, %3
   %5 = trunc i32 %4 to i1
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 

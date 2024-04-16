@@ -4,9 +4,10 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 32
 	ret
 func000000000000001e:                   # @func000000000000001e
-	addi	a1, a1, -8
 	slli	a1, a1, 23
 	subw	a0, a0, a1
+	lui	a1, 16384
+	addw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a1, a1, 8

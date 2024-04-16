@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 1
-  %2 = shl nuw nsw i16 %1, 1
+  %1 = shl i16 %0, 1
+  %2 = and i16 %1, 2
   %3 = or disjoint i16 %2, 1
   %4 = zext nneg i16 %3 to i64
   ret i64 %4

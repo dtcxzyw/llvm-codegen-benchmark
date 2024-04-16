@@ -130,10 +130,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = lshr i64 %0, 32
-  %4 = icmp eq i64 %3, %2
-  ret i1 %4
+  %.unshifted = xor i64 %0, %1
+  %2 = icmp ult i64 %.unshifted, 4294967296
+  ret i1 %2
 }
 
 ; 202 occurrences:
@@ -514,10 +513,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 48
-  %3 = lshr i64 %0, 48
-  %4 = icmp ne i64 %3, %2
-  ret i1 %4
+  %.unshifted = xor i64 %0, %1
+  %2 = icmp ugt i64 %.unshifted, 281474976710655
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -539,10 +537,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 12
-  %3 = lshr exact i64 %0, 12
-  %4 = icmp ult i64 %3, %2
-  ret i1 %4
+  %2 = icmp ult i64 %0, %1
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -561,10 +557,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr exact i32 %1, 2
-  %3 = lshr exact i32 %0, 2
-  %4 = icmp ugt i32 %3, %2
-  ret i1 %4
+  %2 = icmp ugt i32 %0, %1
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -584,10 +578,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = lshr exact i64 %0, 1
-  %4 = icmp eq i64 %3, %2
-  ret i1 %4
+  %2 = icmp eq i64 %0, %1
+  ret i1 %2
 }
 
 ; 1 occurrences:

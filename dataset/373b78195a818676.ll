@@ -12,8 +12,8 @@ entry:
   %3 = add i64 %2, -340
   %4 = and i64 %3, -64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %4, %5
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %4
+  %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
 

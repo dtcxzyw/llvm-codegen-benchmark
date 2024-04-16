@@ -9,8 +9,8 @@ define i32 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %1, %4
-  %6 = or i1 %0, %5
+  %5 = or i1 %4, %1
+  %6 = or i1 %5, %0
   %7 = select i1 %6, i32 512, i32 0
   ret i32 %7
 }

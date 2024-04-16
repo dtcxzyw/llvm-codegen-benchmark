@@ -6,9 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	mulhu	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	subw	a0, a0, a1
+	subw	a0, a1, a0
 	slli	a0, a0, 32
-	neg	a0, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
 	subw	a0, a0, a1

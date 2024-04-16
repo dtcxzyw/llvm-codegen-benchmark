@@ -68,7 +68,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -82,7 +82,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -95,7 +95,7 @@ entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 %1, i32 0
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
@@ -106,12 +106,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 15
-  %4 = icmp ugt i32 %3, 3
-  %5 = select i1 %4, i32 %1, i32 24
-  %6 = add i32 %5, %0
-  %7 = zext i32 %6 to i64
-  ret i64 %7
+  %3 = and i32 %2, 12
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i32 24, i32 %1
+  %5 = add i32 %4, %0
+  %6 = zext i32 %5 to i64
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

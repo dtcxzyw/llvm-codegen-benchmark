@@ -7,8 +7,8 @@
 define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 1530
-  %3 = select i1 %2, i32 3, i32 -9
-  %4 = add nsw i32 %3, %0
+  %3 = select i1 %2, i32 3, i32 247
+  %4 = add i32 %3, %0
   %5 = and i32 %4, 255
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

@@ -6,10 +6,10 @@ func0000000000000005:                   # @func0000000000000005
 .LBB0_2:                                # %entry
 	ret
 func0000000000000007:                   # @func0000000000000007
-	sext.w	a0, a0
-	addi	a0, a0, -1
-	seqz	a0, a0
-	xori	a0, a0, 3
-	li	a1, 1
-	sllw	a0, a1, a0
+	sext.w	a1, a0
+	li	a2, 1
+	li	a0, 4
+	beq	a1, a2, .LBB1_2
+	li	a0, 8
+.LBB1_2:                                # %entry
 	ret

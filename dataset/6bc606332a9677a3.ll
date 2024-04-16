@@ -62,10 +62,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
-  %2 = sext i64 %1 to i128
-  %3 = mul nsw i128 %0, %2
-  %4 = trunc i128 %3 to i64
-  ret i64 %4
+  %2 = trunc i128 %0 to i64
+  %3 = mul i64 %2, %1
+  ret i64 %3
 }
 
 ; 20 occurrences:
@@ -93,7 +92,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

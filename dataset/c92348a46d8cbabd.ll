@@ -30,7 +30,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 29
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = xor i32 %5, 1
   ret i32 %6
 }

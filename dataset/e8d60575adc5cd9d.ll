@@ -18,8 +18,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 2
-  %6 = add nsw i64 %0, %5
-  %7 = icmp ult i64 %0, %6
+  %6 = add nsw i64 %5, %0
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

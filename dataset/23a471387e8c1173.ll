@@ -13,7 +13,7 @@ entry:
   %4 = add i64 %1, -234187180623265792
   %5 = or disjoint i64 %4, %3
   %6 = bitcast i64 %5 to double
-  %7 = fcmp ogt double %0, %6
+  %7 = fcmp olt double %6, %0
   ret i1 %7
 }
 

@@ -53,9 +53,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr %union.iseq_inline_storage_entry.1553854, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.1553854, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %union.iseq_inline_storage_entry.1553854, ptr %4, i64 %3, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 95 occurrences:
@@ -573,9 +572,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr %struct.ImVec2.1931752, ptr %0, i64 %1
-  %5 = getelementptr inbounds %struct.ImVec2.1931752, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.ImVec2.1931752, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

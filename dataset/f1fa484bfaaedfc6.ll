@@ -29,9 +29,9 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = shl nuw nsw i32 1, %0
-  %4 = icmp ugt i32 %3, %2
-  ret i1 %4
+  %.highbits = lshr i32 %2, %0
+  %3 = icmp eq i32 %.highbits, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -40,9 +40,9 @@ entry:
 define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = shl nuw i64 1, %0
-  %4 = icmp ugt i64 %3, %2
-  ret i1 %4
+  %.highbits = lshr i64 %2, %0
+  %3 = icmp eq i64 %.highbits, 0
+  ret i1 %3
 }
 
 ; 14 occurrences:

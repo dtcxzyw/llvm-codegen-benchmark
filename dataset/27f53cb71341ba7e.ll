@@ -66,9 +66,9 @@ define i8 @func000000000000000c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = add i8 %3, 1
-  %5 = icmp ne i32 %1, 3
-  %6 = select i1 %5, i8 %4, i8 %0
-  ret i8 %6
+  %.not = icmp eq i32 %1, 3
+  %5 = select i1 %.not, i8 %0, i8 %4
+  ret i8 %5
 }
 
 ; 1 occurrences:

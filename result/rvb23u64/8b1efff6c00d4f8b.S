@@ -16,8 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000002b:                   # @func000000000000002b
 	not	a1, a1
-	add	a1, a1, a2
 	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
 	addi	a0, a0, -8
 	ret
 func0000000000000001:                   # @func0000000000000001

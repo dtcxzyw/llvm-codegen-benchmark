@@ -106,7 +106,7 @@ define i16 @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i16 16388, i16 0
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
 

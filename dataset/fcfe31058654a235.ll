@@ -6,7 +6,7 @@ define i32 @func0000000000000000(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   %6 = fptosi double %5 to i32
   ret i32 %6
 }

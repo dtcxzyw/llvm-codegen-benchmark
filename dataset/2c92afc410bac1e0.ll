@@ -8,8 +8,8 @@ entry:
   %3 = mul nuw nsw i32 %2, 11
   %4 = add nuw nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  %6 = and i32 %5, 63
-  %7 = trunc i32 %6 to i8
+  %6 = trunc i32 %5 to i8
+  %7 = and i8 %6, 63
   ret i8 %7
 }
 

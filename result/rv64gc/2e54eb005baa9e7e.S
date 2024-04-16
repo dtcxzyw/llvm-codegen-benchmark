@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.l	fa5, a1
-	feq.d	a1, fa0, fa5
+	feq.d	a1, fa5, fa0
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

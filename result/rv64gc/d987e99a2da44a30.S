@@ -84,18 +84,18 @@ func0000000000000016:                   # @func0000000000000016
 .LBB7_4:                                # %entry
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sext.w	a3, a1
-	sext.w	a2, a2
-	li	a1, 83
-	bnez	a2, .LBB8_3
-	bltz	a3, .LBB8_4
+	sext.w	a1, a1
+	sext.w	a3, a2
+	li	a2, 83
+	bnez	a3, .LBB8_3
+	bgez	a1, .LBB8_4
 .LBB8_2:                                # %entry
-	mv	a0, a1
 	ret
 .LBB8_3:                                # %entry
-	li	a1, 87
-	bgez	a3, .LBB8_2
+	li	a2, 87
+	bltz	a1, .LBB8_2
 .LBB8_4:                                # %entry
+	mv	a0, a2
 	ret
 func0000000000000088:                   # @func0000000000000088
 	li	a3, 39
@@ -175,8 +175,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	blez	a1, .LBB15_2
 	sext.w	a2, a2
-	sgtz	a0, a2
-	addi	a0, a0, 1
+	slti	a0, a2, 1
+	li	a1, 2
+	sub	a0, a1, a0
 .LBB15_2:                               # %entry
 	ret
 func0000000000000066:                   # @func0000000000000066

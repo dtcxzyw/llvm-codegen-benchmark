@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %2 to i16
   %4 = add nsw i16 %1, -1
   %5 = and i16 %4, %3
-  %6 = icmp ugt i16 %0, %5
+  %6 = icmp ult i16 %5, %0
   ret i1 %6
 }
 

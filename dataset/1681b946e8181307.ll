@@ -8,7 +8,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = mul nuw nsw i128 %3, 4000000000
   %5 = add nuw nsw i128 %4, %1
-  %6 = mul i128 %0, %5
+  %6 = mul i128 %5, %0
   ret i128 %6
 }
 

@@ -13,7 +13,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
   %3 = shl i64 %2, 19
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 
@@ -22,9 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, 270548992
-  %3 = shl nuw nsw i64 %2, 7
-  %4 = xor i64 %3, %0
+  %2 = shl i64 %1, 7
+  %3 = xor i64 %2, %0
+  %4 = xor i64 %3, 34630270976
   ret i64 %4
 }
 

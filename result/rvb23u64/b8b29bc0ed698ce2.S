@@ -58,8 +58,10 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a1
-	zext.h	a2, a2
-	sltiu	a2, a2, 16
+	lui	a3, 16
+	addiw	a3, a3, -16
+	and	a2, a2, a3
+	seqz	a2, a2
 	sltiu	a1, a1, 8
 	and	a0, a0, a1
 	and	a0, a0, a2

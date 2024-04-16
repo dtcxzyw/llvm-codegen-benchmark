@@ -34,7 +34,7 @@
 define i32 @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 5.000000e-01
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fptoui float %3 to i32
   ret i32 %4
 }

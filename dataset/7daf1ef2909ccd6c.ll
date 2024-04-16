@@ -7,8 +7,8 @@ define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
-  %4 = lshr i32 %0, %3
-  %5 = and i32 %4, 255
+  %4 = shl i32 255, %3
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

@@ -95,9 +95,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	ret
 func00000000000000fa:                   # @func00000000000000fa
-	slli	a2, a2, 8
 	or	a0, a0, a1
-	or	a0, a0, a2
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1

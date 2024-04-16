@@ -10,8 +10,8 @@
 define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = lshr i32 %3, 1
-  %5 = shl nuw nsw i32 %4, 2
+  %4 = shl nuw nsw i32 %3, 1
+  %5 = and i32 %4, 2147483644
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7

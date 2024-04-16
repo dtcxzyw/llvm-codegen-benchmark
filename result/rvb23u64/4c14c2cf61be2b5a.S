@@ -6,20 +6,24 @@ func00000000000001f1:                   # @func00000000000001f1
 	seqz	a0, a0
 	ret
 func00000000000001dc:                   # @func00000000000001dc
-	zext.w	a3, a2
-	bset	a4, zero, a3
-	addi	a3, a3, -64
-	slti	a3, a3, 0
-	czero.nez	a4, a4, a3
-	bset	a2, zero, a2
-	czero.eqz	a2, a2, a3
-	seqz	a3, a2
-	sub	a4, a4, a3
-	addi	a2, a2, -1
-	xor	a1, a1, a4
-	xor	a0, a0, a2
-	or	a0, a0, a1
-	snez	a0, a0
+	li	a6, -1
+	sll	a4, a6, a2
+	zext.w	a2, a2
+	not	a5, a2
+	srli	a3, a6, 1
+	srl	a3, a3, a5
+	or	a3, a3, a4
+	addi	a5, a2, -64
+	slti	a5, a5, 0
+	czero.eqz	a3, a3, a5
+	sll	a2, a6, a2
+	czero.nez	a2, a2, a5
+	or	a2, a2, a3
+	czero.eqz	a3, a4, a5
+	xor	a1, a1, a2
+	xor	a0, a0, a3
+	and	a0, a0, a1
+	sltiu	a0, a0, -1
 	ret
 func0000000000000108:                   # @func0000000000000108
 	li	a2, 64

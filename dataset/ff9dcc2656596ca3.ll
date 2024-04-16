@@ -13,11 +13,11 @@
 define i32 @func000000000000003b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = lshr i32 %4, 1
-  %6 = shl nuw nsw i32 %5, 2
-  ret i32 %6
+  %3 = shl i32 %0, 9
+  %4 = shl nuw nsw i32 %2, 1
+  %.masked = and i32 %4, 508
+  %5 = or disjoint i32 %3, %.masked
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

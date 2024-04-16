@@ -128,9 +128,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 4
   %4 = getelementptr %struct.FSE_decode_t.1956970, ptr %3, i64 %0
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.FSE_decode_t.1956970, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 2
-  ret ptr %7
+  %6 = getelementptr %struct.FSE_decode_t.1956970, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 9 occurrences:
@@ -162,9 +161,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 4
   %4 = getelementptr %struct.FSE_decode_t.1996829, ptr %3, i64 %0
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.FSE_decode_t.1996829, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 2
-  ret ptr %7
+  %6 = getelementptr %struct.FSE_decode_t.1996829, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 5 occurrences:
@@ -218,9 +216,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 2
   %4 = getelementptr inbounds %"struct.OT::IntType.348.2274331", ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr inbounds %"struct.OT::IntType.36.2274123", ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.OT::IntType.36.2274123", ptr %4, i64 %5, i32 0, i32 0, i64 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

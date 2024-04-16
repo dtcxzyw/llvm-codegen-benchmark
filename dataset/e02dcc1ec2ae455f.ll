@@ -52,8 +52,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = icmp ult i64 %1, 4611686018427387904
+  %1 = and i64 %0, 192
+  %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
@@ -71,9 +71,9 @@ declare i64 @llvm.bswap.i64(i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.bswap.i64(i64 %0)
-  %2 = icmp slt i64 %1, 0
-  ret i1 %2
+  %.mask = and i64 %0, 128
+  %1 = icmp ne i64 %.mask, 0
+  ret i1 %1
 }
 
 ; 53 occurrences:
@@ -228,9 +228,9 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.bswap.i16(i16 %0)
-  %2 = icmp sgt i16 %1, -1
-  ret i1 %2
+  %.mask = and i16 %0, 128
+  %1 = icmp eq i16 %.mask, 0
+  ret i1 %1
 }
 
 ; 47 occurrences:
@@ -284,7 +284,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0) #0 {
 entry:
-  %1 = tail call i16 @llvm.bswap.i16(i16 %0)
+  %1 = shl i16 %0, 8
   %2 = icmp ugt i16 %1, 18431
   ret i1 %2
 }

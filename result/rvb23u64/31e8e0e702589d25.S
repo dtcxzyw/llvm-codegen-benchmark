@@ -1,7 +1,8 @@
 func0000000000000101:                   # @func0000000000000101
-	andi	a2, a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000108:                   # @func0000000000000108
@@ -20,7 +21,7 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func00000000000001f1:                   # @func00000000000001f1
 	andi	a2, a2, 1
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a1
+	or	a0, a0, a2
 	seqz	a0, a0
 	ret

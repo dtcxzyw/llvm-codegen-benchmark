@@ -184,9 +184,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 3
-  %2 = trunc i64 %1 to i32
-  ret i32 %2
+  %.tr = trunc i64 %0 to i32
+  %1 = shl i32 %.tr, 3
+  ret i32 %1
 }
 
 ; 1 occurrences:
@@ -194,9 +194,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i32 %0) #0 {
 entry:
-  %1 = shl nuw nsw i32 %0, 3
-  %2 = trunc nuw nsw i32 %1 to i8
-  ret i8 %2
+  %.tr = trunc i32 %0 to i8
+  %1 = shl i8 %.tr, 3
+  ret i8 %1
 }
 
 ; 55 occurrences:
@@ -258,9 +258,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 3
-  %2 = trunc i32 %1 to i8
-  ret i8 %2
+  %.tr = trunc i32 %0 to i8
+  %1 = shl i8 %.tr, 3
+  ret i8 %1
 }
 
 ; 54 occurrences:
@@ -321,9 +321,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = shl nsw i64 %0, 4
-  %2 = trunc i64 %1 to i32
-  ret i32 %2
+  %.tr = trunc i64 %0 to i32
+  %1 = shl i32 %.tr, 4
+  ret i32 %1
 }
 
 ; 9 occurrences:
@@ -339,9 +339,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = shl nuw i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  ret i32 %2
+  %.tr = trunc i64 %0 to i32
+  %1 = shl i32 %.tr, 1
+  ret i32 %1
 }
 
 ; 4 occurrences:
@@ -352,9 +352,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 1
-  %2 = trunc nuw i64 %1 to i32
-  ret i32 %2
+  %.tr = trunc i64 %0 to i32
+  %1 = shl i32 %.tr, 1
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

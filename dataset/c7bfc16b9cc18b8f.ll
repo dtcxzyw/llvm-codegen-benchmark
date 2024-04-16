@@ -31,7 +31,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -5
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   %5 = and i8 %1, 8
   %6 = or i8 %4, %5
   ret i8 %6
@@ -43,7 +43,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -524288
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = and i32 %1, 458752
   %6 = or disjoint i32 %4, %5
   ret i32 %6

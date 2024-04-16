@@ -8,8 +8,9 @@ func00000000000000d8:                   # @func00000000000000d8
 	or	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	addw	a1, a1, a2
-	addi	a1, a1, 1
+	addiw	a2, a2, 1
+	negw	a1, a1
+	xor	a1, a1, a2
 	czero.eqz	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -28,8 +29,9 @@ func0000000000000054:                   # @func0000000000000054
 	or	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	add	a1, a1, a2
-	addi	a1, a1, 2
+	addi	a2, a2, 2
+	neg	a1, a1
+	xor	a1, a1, a2
 	czero.eqz	a0, a0, a1
 	li	a2, 1
 	czero.nez	a1, a2, a1

@@ -9,7 +9,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sitofp i32 %3 to float
   %5 = fdiv float %1, %4
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

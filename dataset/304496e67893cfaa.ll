@@ -5,7 +5,7 @@
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 4294901760)
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 511
   %4 = and i32 %3, -512
   ret i32 %4
@@ -20,7 +20,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i16 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 65535)
-  %2 = trunc i64 %1 to i16
+  %2 = trunc nuw i64 %1 to i16
   %3 = add i16 %2, 3
   %4 = and i16 %3, 252
   ret i16 %4

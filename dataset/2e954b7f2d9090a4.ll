@@ -166,10 +166,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr i64 %2, 63
-  %4 = add nuw i64 %0, %1
-  %5 = sub i64 %4, %3
-  ret i64 %5
+  %.neg = lshr i64 %2, 63
+  %3 = add nuw i64 %0, %1
+  %4 = add i64 %.neg, %3
+  ret i64 %4
 }
 
 ; 6 occurrences:

@@ -13,7 +13,7 @@ entry:
   %2 = call noundef i32 @llvm.bswap.i32(i32 %1)
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 4
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -30,7 +30,7 @@ entry:
   %2 = tail call i16 @llvm.bswap.i16(i16 %1)
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %3, 40
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 

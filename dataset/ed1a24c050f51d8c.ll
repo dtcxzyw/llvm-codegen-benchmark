@@ -245,9 +245,8 @@ entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 16
-  %5 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1590045", ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.tbb::detail::d1::blocked_range.1590045", ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -344,9 +343,8 @@ entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 4864
-  %5 = getelementptr %struct.zonelist.1998950, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.zonelist.1998950, ptr %4, i64 %3, i32 0, i64 0, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:

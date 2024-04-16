@@ -28,7 +28,7 @@
 define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %"struct.folly::threadlocal_detail::ElementWrapper.1637658", ptr %1, i64 %2, i32 3
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.hid_report_enum.2016019, ptr %1, i64 %2, i32 1
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 

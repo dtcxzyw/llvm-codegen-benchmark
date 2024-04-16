@@ -30,9 +30,8 @@ define i1 @func000000000000005a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = srem i32 %1, 33
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i32 %1, %2
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

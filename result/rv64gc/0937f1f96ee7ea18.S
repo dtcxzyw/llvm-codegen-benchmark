@@ -3,12 +3,12 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a4, a4, 56
 	or	a1, a1, a4
 	srli	a5, a5, 56
+	add	a2, a2, a1
+	sltu	a1, a2, a1
 	add	a3, a3, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, a3
-	slli	a2, a2, 8
-	srli	a1, a1, 56
+	add	a1, a1, a3
+	slli	a1, a1, 8
+	srli	a2, a2, 56
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -31,8 +31,8 @@ func000000000000004c:                   # @func000000000000004c
 	add	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
-	add	a5, a5, a2
-	sltu	a1, a5, a2
+	add	a2, a2, a5
+	sltu	a1, a2, a5
 	add	a0, a0, a3
 	add	a0, a0, a1
 	ret

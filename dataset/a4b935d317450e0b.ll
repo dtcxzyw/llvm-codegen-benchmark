@@ -24,9 +24,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %"struct.std::pair.180.1889538", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.std::pair.180.1889538", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -36,9 +35,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 128
-  ret ptr %6
+  %5 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %4, i32 10
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

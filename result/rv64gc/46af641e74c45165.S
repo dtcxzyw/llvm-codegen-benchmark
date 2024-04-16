@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	bgtz	a2, .LBB1_2
 	li	a2, 1
 .LBB1_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	subw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
@@ -19,6 +19,6 @@ func000000000000000c:                   # @func000000000000000c
 	bgtz	a2, .LBB2_2
 	li	a2, 1
 .LBB2_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	subw	a0, a0, a1
 	ret

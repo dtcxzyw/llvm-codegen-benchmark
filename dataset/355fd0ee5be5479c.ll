@@ -67,7 +67,7 @@ define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = icmp ult i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
@@ -166,7 +166,7 @@ define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = icmp slt i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
@@ -233,7 +233,7 @@ define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = icmp ugt i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
@@ -287,7 +287,7 @@ define i64 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %2, %4
+  %5 = add nsw i64 %4, %2
   %6 = icmp sgt i32 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7

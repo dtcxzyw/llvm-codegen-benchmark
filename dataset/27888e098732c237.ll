@@ -13,7 +13,7 @@ entry:
   %3 = add i64 %2, -2
   %4 = lshr i64 %3, 1
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = lshr i64 %3, 1
   %5 = getelementptr inbounds %"struct.Stockfish::Search::RootMove.1772898", ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -69,7 +69,7 @@ entry:
   %3 = add i64 %2, 63
   %4 = lshr i64 %3, 6
   %5 = getelementptr inbounds i64, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -96,7 +96,7 @@ entry:
   %3 = add nsw i64 %2, 1023
   %4 = lshr i64 %3, 10
   %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -115,7 +115,7 @@ entry:
   %3 = add i64 %2, 3
   %4 = lshr i64 %3, 2
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -129,7 +129,7 @@ entry:
   %3 = add i64 %2, 3
   %4 = lshr i64 %3, 2
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -141,7 +141,7 @@ entry:
   %3 = add i64 %2, 3
   %4 = lshr i64 %3, 2
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -153,7 +153,7 @@ entry:
   %3 = add i64 %2, 3
   %4 = lshr i64 %3, 2
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -165,7 +165,7 @@ entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = lshr i64 %3, 3
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

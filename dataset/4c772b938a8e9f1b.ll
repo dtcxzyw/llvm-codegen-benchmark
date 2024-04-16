@@ -48,8 +48,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = sub i64 %0, %5
-  %7 = add i64 %6, -1
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -155,8 +155,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
-  %6 = sub nsw i64 %0, %5
-  %7 = add nsw i64 %6, -1
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -168,8 +168,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 2
-  %6 = sub i64 %0, %5
-  %7 = add nsw i64 %6, -1
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -181,8 +181,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = sub nsw i64 %0, %5
-  %7 = add i64 %6, -1
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

@@ -9,7 +9,7 @@ entry:
   %2 = lshr i16 %1, 1
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   %6 = select i1 %5, i32 2, i32 1
   ret i32 %6
 }

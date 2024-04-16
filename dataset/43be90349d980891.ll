@@ -23,7 +23,7 @@ entry:
   %4 = and i32 %3, 3
   %5 = icmp eq i32 %4, 3
   %6 = select i1 %5, i32 0, i32 -4194304
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

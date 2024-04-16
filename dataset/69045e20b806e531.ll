@@ -41,7 +41,7 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -72
   %5 = icmp eq i64 %2, 72
-  %6 = or i1 %1, %5
+  %6 = or i1 %5, %1
   %7 = select i1 %6, ptr %4, ptr %0
   ret ptr %7
 }

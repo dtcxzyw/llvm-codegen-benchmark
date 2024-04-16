@@ -7,7 +7,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 1000000, i64 %3
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = ashr i32 %2, 1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 0, i32 %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = ashr i64 %2, 12
   %4 = icmp eq i64 %1, -1
   %5 = select i1 %4, i64 -1, i64 %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -56,9 +56,9 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 12
-  %4 = icmp eq i64 %1, -1
-  %5 = select i1 %4, i64 -1, i64 %3
-  %6 = icmp ugt i64 %0, %5
+  %4 = icmp ne i64 %1, -1
+  %5 = icmp ult i64 %3, %0
+  %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 

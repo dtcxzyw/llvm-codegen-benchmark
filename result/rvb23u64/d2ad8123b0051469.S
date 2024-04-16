@@ -1,5 +1,5 @@
 func00000000000000c9:                   # @func00000000000000c9
-	sub	a2, a2, a0
+	xor	a2, a2, a0
 	snez	a2, a2
 	sltu	a0, a0, a1
 	andn	a0, a2, a0
@@ -14,7 +14,7 @@ func0000000000000049:                   # @func0000000000000049
 	andn	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	sub	a2, a2, a0
+	xor	a2, a2, a0
 	snez	a2, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

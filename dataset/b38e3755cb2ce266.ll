@@ -7,8 +7,8 @@ entry:
   %2 = and i32 %1, 1023
   %3 = mul nuw nsw i32 %2, 51
   %4 = lshr i32 %3, 10
-  %5 = trunc i32 %4 to i8
-  %6 = add i8 %0, %5
+  %5 = trunc nuw nsw i32 %4 to i8
+  %6 = add i8 %5, %0
   ret i8 %6
 }
 
@@ -20,8 +20,8 @@ entry:
   %2 = and i128 %1, 18446744073709551615
   %3 = mul nuw i128 %2, 18446744073709551615
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = add i64 %0, %5
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -33,8 +33,8 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = mul nuw nsw i64 %2, 109951163
   %4 = lshr i64 %3, 40
-  %5 = trunc i64 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %5 = trunc nuw nsw i64 %4 to i32
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

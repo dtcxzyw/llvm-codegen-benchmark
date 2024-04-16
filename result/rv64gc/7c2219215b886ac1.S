@@ -18,12 +18,14 @@ func0000000000000195:                   # @func0000000000000195
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a2, a2, 32
-	slli	a1, a1, 32
-	mulhu	a1, a1, a2
-	srli	a1, a1, 35
-	li	a2, -12
-	mul	a1, a1, a2
+	slli	a3, a1, 32
+	mulhu	a2, a3, a2
+	srli	a2, a2, 35
+	li	a3, 12
+	mul	a2, a2, a3
+	subw	a1, a1, a1
 	add	a0, a0, a1
+	subw	a0, a0, a2
 	addiw	a0, a0, -11
 	ret
 func00000000000001b5:                   # @func00000000000001b5
@@ -45,13 +47,16 @@ func0000000000000115:                   # @func0000000000000115
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
 	lui	a3, 21
-	addiw	a3, a3, 383
-	add	a1, a1, a3
-	mulhu	a1, a1, a2
-	srli	a1, a1, 16
-	lui	a2, 1048555
-	addiw	a2, a2, -384
-	mul	a1, a1, a2
-	add	a0, a0, a2
+	addiw	a4, a3, 383
+	add	a1, a1, a4
+	mulhu	a2, a1, a2
+	srli	a2, a2, 16
+	addiw	a3, a3, 384
+	mul	a2, a2, a3
+	sub	a1, a1, a1
 	add	a0, a0, a1
+	lui	a1, 1048555
+	addiw	a1, a1, -384
+	add	a0, a0, a1
+	sub	a0, a0, a2
 	ret

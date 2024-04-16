@@ -12,7 +12,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -41,7 +41,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = trunc i32 %4 to i16
-  %6 = add i16 %0, %5
+  %6 = add i16 %5, %0
   %7 = zext i16 %6 to i32
   ret i32 %7
 }

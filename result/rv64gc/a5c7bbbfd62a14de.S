@@ -11,6 +11,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	srliw	a1, a1, 16
+	slli	a1, a1, 16
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
@@ -33,9 +34,9 @@ func0000000000000006:                   # @func0000000000000006
 	and	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	sext.w	a1, a1
-	li	a2, 1
-	bltu	a2, a1, .LBB6_2
+	srliw	a1, a1, 1
+	slli	a1, a1, 1
+	bnez	a1, .LBB6_2
 	li	a0, 1
 .LBB6_2:                                # %entry
 	ret

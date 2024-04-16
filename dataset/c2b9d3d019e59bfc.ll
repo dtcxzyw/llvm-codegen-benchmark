@@ -57,10 +57,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = sext i32 %0 to i64
-  %4 = sub i64 %3, %2
-  ret i64 %4
+  %.neg = xor i64 %1, -1
+  %2 = sext i32 %0 to i64
+  %3 = add i64 %.neg, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

@@ -32,10 +32,9 @@ define i1 @func0000000000000001(float %0) #0 {
 entry:
   %1 = tail call float @llvm.fabs.f32(float %0)
   %2 = bitcast float %1 to i32
-  %3 = lshr i32 %2, 13
-  %4 = and i32 %3, 1023
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = and i32 %2, 8380416
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

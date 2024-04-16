@@ -8,7 +8,7 @@ entry:
   %2 = and i32 %1, 2048
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, double 1.000000e+03, double 1.024000e+03
-  %5 = fcmp olt double %0, %4
+  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 

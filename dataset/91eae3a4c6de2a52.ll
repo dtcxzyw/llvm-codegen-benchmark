@@ -7,7 +7,7 @@ entry:
   %3 = sdiv i64 %2, 64
   %4 = trunc i64 %3 to i32
   %5 = sub i32 %4, %1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

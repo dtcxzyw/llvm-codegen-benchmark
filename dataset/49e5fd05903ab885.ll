@@ -81,7 +81,7 @@ entry:
   %3 = icmp eq i16 %2, 31
   %4 = icmp ult i16 %1, 256
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -94,7 +94,7 @@ entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ult i8 %1, 4
   %5 = or i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

@@ -1,7 +1,8 @@
 func0000000000000051:                   # @func0000000000000051
 	sub	a1, a1, a2
 	slli	a1, a1, 3
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
@@ -26,7 +27,8 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000041:                   # @func0000000000000041
 	sub	a1, a1, a2
 	slli	a1, a1, 3
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005c:                   # @func000000000000005c

@@ -170,12 +170,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i32 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
-  %5 = trunc i128 %4 to i64
-  %6 = zext i32 %0 to i64
-  %7 = lshr i64 %5, %6
-  ret i64 %7
+  %3 = trunc i128 %1 to i64
+  %4 = mul i64 %3, %2
+  %5 = zext nneg i32 %0 to i64
+  %6 = lshr i64 %4, %5
+  ret i64 %6
 }
 
 ; 96 occurrences:
@@ -278,12 +277,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000070(i32 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
-  %5 = trunc i128 %4 to i64
-  %6 = zext i32 %0 to i64
-  %7 = lshr i64 %5, %6
-  ret i64 %7
+  %3 = trunc i128 %1 to i64
+  %4 = mul i64 %3, %2
+  %5 = zext nneg i32 %0 to i64
+  %6 = lshr i64 %4, %5
+  ret i64 %6
 }
 
 ; 96 occurrences:
@@ -386,12 +384,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i32 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = trunc i128 %4 to i64
-  %6 = zext i32 %0 to i64
-  %7 = lshr i64 %5, %6
-  ret i64 %7
+  %3 = trunc i128 %1 to i64
+  %4 = mul i64 %3, %2
+  %5 = zext nneg i32 %0 to i64
+  %6 = lshr i64 %4, %5
+  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -399,12 +396,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i32 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
-  %5 = trunc i128 %4 to i64
-  %6 = zext nneg i32 %0 to i64
-  %7 = lshr i64 %5, %6
-  ret i64 %7
+  %3 = trunc i128 %1 to i64
+  %4 = mul i64 %3, %2
+  %5 = zext nneg i32 %0 to i64
+  %6 = lshr i64 %4, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

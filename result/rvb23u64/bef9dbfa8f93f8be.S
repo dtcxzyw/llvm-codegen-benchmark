@@ -14,7 +14,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000131:                   # @func0000000000000131
 	add	a1, a1, a2
-	add.uw	a0, a1, a0
+	zext.w	a1, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
@@ -44,7 +45,9 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000091:                   # @func0000000000000091
 	add	a1, a1, a2
-	add.uw	a0, a1, a0
+	zext.w	a1, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001c4:                   # @func00000000000001c4
@@ -57,6 +60,7 @@ func00000000000001c4:                   # @func00000000000001c4
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	addw	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

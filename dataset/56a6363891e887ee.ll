@@ -41,7 +41,7 @@ entry:
   %4 = and i64 %1, 4294967295
   %5 = mul nuw i64 %4, %3
   %6 = lshr i64 %5, 9
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -54,7 +54,7 @@ entry:
   %4 = and i64 %1, -32
   %5 = mul i64 %4, %3
   %6 = lshr exact i64 %5, 3
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -67,7 +67,7 @@ entry:
   %4 = and i64 %1, -32
   %5 = mul i64 %4, %3
   %6 = lshr exact i64 %5, 3
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -106,7 +106,7 @@ entry:
   %4 = and i32 %1, 8388607
   %5 = mul i32 %4, %3
   %6 = lshr i32 %5, 15
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

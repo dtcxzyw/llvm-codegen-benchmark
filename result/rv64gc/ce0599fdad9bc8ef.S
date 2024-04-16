@@ -6,10 +6,10 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	not	a1, a1
-	ori	a1, a1, -256
-	add	a0, a0, a1
-	sltiu	a0, a0, 2
+	andi	a1, a1, 255
+	sub	a1, a1, a0
+	sltiu	a0, a1, -2
+	xori	a0, a0, 1
 	ret
 func0000000000000054:                   # @func0000000000000054
 	andi	a1, a1, 255
@@ -24,9 +24,9 @@ func0000000000000154:                   # @func0000000000000154
 	sltiu	a0, a0, 16
 	ret
 func0000000000000001:                   # @func0000000000000001
-	not	a1, a1
-	ori	a1, a1, -256
-	add	a0, a0, a1
+	andi	a1, a1, 255
+	addi	a0, a0, -1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
@@ -85,16 +85,16 @@ func000000000000004a:                   # @func000000000000004a
 	sgtz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
-	not	a1, a1
-	lui	a2, 1048560
-	or	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 1
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	subw	a1, a1, a0
+	slti	a0, a1, -1
+	xori	a0, a0, 1
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
-	subw	a0, a0, a1
-	addi	a0, a0, -20
+	addiw	a0, a0, -20
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000010a:                   # @func000000000000010a
@@ -113,11 +113,11 @@ func000000000000015a:                   # @func000000000000015a
 	xori	a0, a0, 1
 	ret
 func0000000000000106:                   # @func0000000000000106
-	not	a1, a1
-	lui	a2, 1048560
-	or	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	slli	a1, a1, 48
+	srai	a1, a1, 48
+	subw	a1, a1, a0
+	slti	a0, a1, 0
+	xori	a0, a0, 1
 	ret
 func0000000000000151:                   # @func0000000000000151
 	sext.w	a1, a1

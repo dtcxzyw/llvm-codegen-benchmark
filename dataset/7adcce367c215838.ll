@@ -16,9 +16,8 @@ define i32 @func0000000000000005(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 1
   %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i32 8, i32 4
-  %4 = add nsw i32 %3, -1
-  ret i32 %4
+  %3 = select i1 %2, i32 7, i32 3
+  ret i32 %3
 }
 
 ; 35 occurrences:
@@ -61,10 +60,8 @@ entry:
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 8
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 8, i32 16
-  %4 = add nuw nsw i32 %3, 65535
-  ret i32 %4
+  %2 = or disjoint i32 %1, 65543
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

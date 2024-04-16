@@ -11,5 +11,6 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add.uw	a0, a2, a0
+	sext.w	a1, a1
 	bext	a0, a0, a1
 	ret

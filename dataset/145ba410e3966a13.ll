@@ -18,7 +18,7 @@ entry:
 define i128 @func0000000000000010(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 16
-  %4 = add i128 %0, %3
+  %4 = add i128 %3, %0
   %5 = zext nneg i64 %1 to i128
   %6 = sub i128 %4, %5
   ret i128 %6

@@ -9,7 +9,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp sgt i64 %6, -1
   ret i1 %7
 }
@@ -25,7 +25,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ult i64 %6, 32
   ret i1 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp sgt i64 %6, -1
   ret i1 %7
 }
@@ -52,7 +52,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ult i64 %6, 64
   ret i1 %7
 }

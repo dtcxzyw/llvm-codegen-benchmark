@@ -7,17 +7,12 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 255
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a0, a0
-	beqz	a0, .LBB1_2
-	lui	a0, 921600
-	addiw	a1, a0, -1026
+	sext.w	a3, a0
 	lui	a0, 262144
-	and	a0, a0, a1
-	ret
-.LBB1_2:
+	bnez	a3, .LBB1_2
 	or	a1, a1, a2
-	lui	a0, 262144
 	and	a0, a0, a1
+.LBB1_2:                                # %entry
 	ret
 func0000000000000031:                   # @func0000000000000031
 	or	a1, a1, a2

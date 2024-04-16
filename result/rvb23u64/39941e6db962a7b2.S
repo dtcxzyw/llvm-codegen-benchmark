@@ -10,9 +10,11 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, -8
-	subw	a1, a1, a2
-	slli	a1, a1, 49
-	srli	a1, a1, 49
+	sub	a1, a1, a2
+	lui	a2, 8
+	addiw	a2, a2, -8
+	addi	a2, a2, 7
+	and	a1, a1, a2
 	slliw	a0, a0, 17
 	or	a0, a0, a1
 	ret

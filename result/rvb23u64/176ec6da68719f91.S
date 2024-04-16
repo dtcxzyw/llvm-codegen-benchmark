@@ -1,17 +1,15 @@
 func000000000000003b:                   # @func000000000000003b
-	slli	a1, a1, 10
 	slli	a0, a0, 14
+	slli	a1, a1, 10
 	or	a0, a0, a1
 	zext.h	a0, a0
 	ret
 func0000000000000023:                   # @func0000000000000023
 	andi	a1, a1, 255
-	slli	a0, a0, 14
 	slli	a1, a1, 10
+	slli	a0, a0, 58
+	srli	a0, a0, 44
 	or	a0, a0, a1
-	lui	a1, 256
-	addiw	a1, a1, -1024
-	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 127

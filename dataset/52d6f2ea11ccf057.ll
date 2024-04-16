@@ -8,7 +8,7 @@ define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 65536)
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -23,7 +23,7 @@ define i1 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = tail call i8 @llvm.umin.i8(i8 %2, i8 -128)
   %4 = zext i8 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -38,7 +38,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = tail call i8 @llvm.umin.i8(i8 %2, i8 -128)
   %4 = zext i8 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -50,7 +50,7 @@ define i1 @func0000000000000058(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umin.i32(i32 %2, i32 128)
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }

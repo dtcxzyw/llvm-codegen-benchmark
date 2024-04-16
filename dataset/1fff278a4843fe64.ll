@@ -7,7 +7,7 @@
 define i128 @func0000000000000015(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nsw i128 %1, %2
-  %4 = add nsw i128 %0, %3
+  %4 = add nsw i128 %3, %0
   %5 = tail call i128 @llvm.abs.i128(i128 %4, i1 true)
   ret i128 %5
 }

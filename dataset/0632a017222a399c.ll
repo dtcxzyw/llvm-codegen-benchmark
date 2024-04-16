@@ -13,10 +13,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = or disjoint i16 %0, 1
-  %2 = and i16 %1, -1091
-  %3 = or disjoint i16 %2, 64
-  ret i16 %3
+  %1 = and i16 %0, -1092
+  %2 = or disjoint i16 %1, 65
+  ret i16 %2
 }
 
 ; 23 occurrences:
@@ -46,10 +45,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = or i64 %0, 1108
-  %2 = and i64 %1, -4429185153
-  %3 = or disjoint i64 %2, 128
-  ret i64 %3
+  %1 = and i64 %0, -4429186261
+  %2 = or disjoint i64 %1, 1236
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

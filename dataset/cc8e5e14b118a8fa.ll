@@ -30,8 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, -2
+  %2 = and i32 %1, -2
+  %3 = sext i32 %2 to i64
   %4 = getelementptr i32, ptr %0, i64 %3
   ret ptr %4
 }

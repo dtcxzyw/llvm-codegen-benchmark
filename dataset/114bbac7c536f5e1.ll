@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 15
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 15
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -41,8 +41,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr inbounds ptr, ptr %0, i64 %4
   ret ptr %5
 }
@@ -64,8 +64,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 65535
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 65535
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   ret ptr %5
 }
@@ -78,8 +78,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = zext i32 %3 to i64
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }

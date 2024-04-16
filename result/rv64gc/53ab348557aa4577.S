@@ -1,31 +1,14 @@
 .LCPI0_0:
 	.quad	-8446744073709551616            # 0x8ac7230489e80000
 func0000000000000010:                   # @func0000000000000010
-	addi	sp, sp, -32
-	sd	ra, 24(sp)                      # 8-byte Folded Spill
-	sd	s0, 16(sp)                      # 8-byte Folded Spill
-	sd	s1, 8(sp)                       # 8-byte Folded Spill
-	sd	s2, 0(sp)                       # 8-byte Folded Spill
-	or	s2, a1, a3
-	or	s1, a0, a2
-	lui	a0, %hi(.LCPI0_0)
-	ld	s0, %lo(.LCPI0_0)(a0)
-	mv	a0, s1
-	mv	a1, s2
-	mv	a2, s0
+	addi	sp, sp, -16
+	sd	ra, 8(sp)                       # 8-byte Folded Spill
+	or	a1, a1, a3
+	or	a0, a0, a2
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	li	a3, 0
-	call	__udivti3
-	mul	a1, a1, s0
-	mulhu	a2, a0, s0
-	add	a1, a1, a2
-	mul	a0, a0, s0
-	sub	a1, s2, a1
-	sltu	a2, s1, a0
-	sub	a1, a1, a2
-	sub	a0, s1, a0
-	ld	ra, 24(sp)                      # 8-byte Folded Reload
-	ld	s0, 16(sp)                      # 8-byte Folded Reload
-	ld	s1, 8(sp)                       # 8-byte Folded Reload
-	ld	s2, 0(sp)                       # 8-byte Folded Reload
-	addi	sp, sp, 32
+	call	__umodti3
+	ld	ra, 8(sp)                       # 8-byte Folded Reload
+	addi	sp, sp, 16
 	ret

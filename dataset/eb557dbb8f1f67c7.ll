@@ -18,9 +18,9 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
   %5 = add nsw i64 %4, 1
-  %6 = sdiv exact i64 %0, 24
-  %7 = sub nsw i64 %5, %6
-  ret i64 %7
+  %.neg = sdiv exact i64 %0, -24
+  %6 = add i64 %.neg, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

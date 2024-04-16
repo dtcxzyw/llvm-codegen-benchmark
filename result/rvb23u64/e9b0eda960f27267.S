@@ -22,11 +22,11 @@ func000000000000004d:                   # @func000000000000004d
 func0000000000000049:                   # @func0000000000000049
 	bset	a1, zero, a1
 	sltiu	a0, a0, 7
-	czero.nez	a1, a1, a0
+	sext.w	a1, a1
 	li	a2, 1
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
-	sext.w	a0, a0
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 func0000000000000069:                   # @func0000000000000069
 	sext.w	a0, a0
@@ -60,11 +60,11 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000043:                   # @func0000000000000043
 	bset	a1, zero, a1
+	sext.w	a1, a1
 	li	a2, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	sext.w	a0, a0
 	ret
 func000000000000006d:                   # @func000000000000006d
 	sext.w	a0, a0

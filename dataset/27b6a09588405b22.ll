@@ -11,7 +11,7 @@ entry:
   %4 = uitofp i64 %1 to double
   %5 = fdiv double %4, %3
   %6 = fsub double 1.000000e+00, %5
-  %7 = fmul double %0, %6
+  %7 = fmul double %6, %0
   ret double %7
 }
 

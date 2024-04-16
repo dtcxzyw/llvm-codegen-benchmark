@@ -40,9 +40,8 @@ define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 276 occurrences:
@@ -327,9 +326,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
   %3 = getelementptr inbounds i8, ptr %0, i64 200
-  %4 = getelementptr inbounds [128 x %"class.rocksdb::autovector.1567566"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  ret ptr %5
+  %4 = getelementptr inbounds [128 x %"class.rocksdb::autovector.1567566"], ptr %3, i64 0, i64 %2, i32 3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -340,9 +338,8 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = getelementptr inbounds i8, ptr %0, i64 12992
-  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 20
-  ret ptr %5
+  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.1663963], ptr %3, i64 0, i64 %2, i32 0, i32 4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -352,9 +349,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = getelementptr i8, ptr %0, i64 240
-  %4 = getelementptr [11 x %struct.free_area.1998947], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [11 x %struct.free_area.1998947], ptr %3, i64 0, i64 %2, i32 0, i64 0, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -366,9 +362,8 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr inbounds [73 x %struct.cache_bin_s.2180925], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 22
-  ret ptr %5
+  %4 = getelementptr [73 x %struct.cache_bin_s.2180925], ptr %3, i64 0, i64 %2, i32 5
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

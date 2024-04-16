@@ -32,7 +32,7 @@ entry:
   %2 = tail call i32 @llvm.ctpop.i32(i32 %1), !range !1
   %3 = icmp ult i32 %2, 2
   %4 = icmp ne i32 %1, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }

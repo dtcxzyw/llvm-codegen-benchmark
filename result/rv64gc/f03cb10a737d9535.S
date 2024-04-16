@@ -16,10 +16,10 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func00000000000000af:                   # @func00000000000000af
 	slli	a2, a2, 56
-	bgez	a2, .LBB2_2
-	mv	a0, a1
+	bltz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	slli	a0, a0, 1
+	slli	a0, a1, 1
 	addiw	a0, a0, 2
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -40,12 +40,12 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func00000000000000c5:                   # @func00000000000000c5
 	slli	a2, a2, 48
-	bnez	a2, .LBB5_2
-	mv	a0, a1
+	beqz	a2, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
-	slli	a0, a0, 8
-	lui	a1, 100
-	addi	a1, a1, 16
+	slli	a1, a1, 8
+	lui	a0, 100
+	addi	a0, a0, 16
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040

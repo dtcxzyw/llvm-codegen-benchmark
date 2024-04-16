@@ -10,9 +10,8 @@ func000000000000001b:                   # @func000000000000001b
 	or	a0, a0, a2
 	ret
 func0000000000000388:                   # @func0000000000000388
-	addiw	a2, a2, 1
-	sltiu	a2, a2, 385
-	xori	a2, a2, 1
+	addiw	a2, a2, -384
+	sltiu	a2, a2, -385
 	addi	a1, a1, 32
 	sltu	a0, a0, a1
 	or	a0, a0, a2

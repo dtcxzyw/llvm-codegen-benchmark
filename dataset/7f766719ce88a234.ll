@@ -18,7 +18,7 @@ entry:
 define double @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, -1000
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = sitofp i64 %3 to double
   %5 = fdiv double %4, 1.000000e+03
   ret double %5

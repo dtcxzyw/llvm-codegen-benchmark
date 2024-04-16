@@ -64,7 +64,7 @@ entry:
   %4 = add nsw i32 %3, 80
   %5 = and i32 %1, -8
   %6 = add nsw i32 %5, %4
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

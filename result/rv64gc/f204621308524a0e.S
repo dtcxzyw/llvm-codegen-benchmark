@@ -1,11 +1,11 @@
 func0000000000000611:                   # @func0000000000000611
-	sext.w	a3, a1
-	bltz	a3, .LBB0_2
-	mv	a1, a2
-.LBB0_2:                                # %entry
+	sext.w	a2, a2
 	sext.w	a1, a1
-	or	a0, a0, a1
+	slti	a1, a1, 0
+	xori	a1, a1, 1
+	or	a0, a0, a2
 	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000411:                   # @func0000000000000411
 	sext.w	a3, a1

@@ -9,7 +9,7 @@
 define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, %1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = or i64 %2, %0
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }

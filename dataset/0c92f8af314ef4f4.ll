@@ -9,7 +9,7 @@ entry:
   %4 = lshr i64 %3, 1
   %5 = icmp eq i64 %2, 0
   %6 = select i1 %5, i64 %1, i64 %4
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -32,7 +32,7 @@ entry:
   %4 = lshr i64 %3, 1
   %5 = icmp eq i64 %2, 0
   %6 = select i1 %5, i64 %1, i64 %4
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = lshr i64 %3, 1
   %5 = icmp eq i64 %2, 0
   %6 = select i1 %5, i64 %1, i64 %4
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

@@ -17,12 +17,11 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
-	srliw	a2, a2, 11
-	li	a3, 64
-	czero.eqz	a3, a3, a2
-	czero.nez	a1, a1, a2
-	or	a1, a1, a3
 	sext.w	a1, a1
+	sext.w	a2, a2
+	li	a3, 2047
+	sltu	a2, a3, a2
 	andi	a0, a0, 63
 	sltu	a0, a0, a1
+	or	a0, a0, a2
 	ret

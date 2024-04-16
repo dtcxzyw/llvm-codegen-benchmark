@@ -7,10 +7,10 @@
 define i64 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = sub nsw i64 1, %2
-  %4 = zext i16 %0 to i64
-  %5 = add nsw i64 %3, %4
-  ret i64 %5
+  %3 = zext i16 %0 to i64
+  %reass.sub = sub nsw i64 %3, %2
+  %4 = add nsw i64 %reass.sub, 1
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

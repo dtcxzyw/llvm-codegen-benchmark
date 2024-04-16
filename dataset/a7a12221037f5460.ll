@@ -29,7 +29,7 @@
 define i1 @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 5.000000e-01
-  %3 = fcmp ugt float %0, %2
+  %3 = fcmp ult float %2, %0
   ret i1 %3
 }
 
@@ -100,7 +100,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 5.000000e-01
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   ret i1 %3
 }
 
@@ -157,7 +157,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
-  %3 = fcmp olt double %0, %2
+  %3 = fcmp ogt double %2, %0
   ret i1 %3
 }
 
@@ -172,7 +172,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 3.000000e+02
-  %3 = fcmp ule float %0, %2
+  %3 = fcmp uge float %2, %0
   ret i1 %3
 }
 
@@ -191,7 +191,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 0x3EE4F8B580000000
-  %3 = fcmp oeq float %0, %2
+  %3 = fcmp oeq float %2, %0
   ret i1 %3
 }
 
@@ -202,7 +202,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 0x3E80000000000000
-  %3 = fcmp uge float %0, %2
+  %3 = fcmp ule float %2, %0
   ret i1 %3
 }
 
@@ -216,7 +216,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, -1.500000e+00
-  %3 = fcmp oge float %0, %2
+  %3 = fcmp ole float %2, %0
   ret i1 %3
 }
 
@@ -232,7 +232,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 0xBEE4F8B580000000
-  %3 = fcmp ult float %0, %2
+  %3 = fcmp ugt float %2, %0
   ret i1 %3
 }
 
@@ -245,7 +245,7 @@ entry:
 define i1 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
-  %3 = fcmp ole double %0, %2
+  %3 = fcmp oge double %2, %0
   ret i1 %3
 }
 

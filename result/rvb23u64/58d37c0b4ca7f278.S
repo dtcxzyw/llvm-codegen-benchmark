@@ -1,6 +1,6 @@
 func00000000000000d6:                   # @func00000000000000d6
 	sext.b	a1, a1
-	not	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	subw	a1, a1, a0
+	slti	a0, a1, 0
+	xori	a0, a0, 1
 	ret

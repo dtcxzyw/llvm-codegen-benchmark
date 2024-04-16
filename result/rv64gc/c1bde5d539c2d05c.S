@@ -3,7 +3,7 @@ func000000000000001d:                   # @func000000000000001d
 	srli	a2, a2, 48
 	addi	a1, a1, -1
 	mul	a0, a0, a1
-	mulw	a0, a0, a2
+	mulw	a0, a2, a0
 	ret
 func000000000000003d:                   # @func000000000000003d
 	slli	a2, a2, 48
@@ -14,13 +14,13 @@ func000000000000003d:                   # @func000000000000003d
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 255
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	addi	a1, a1, 1
 	mulw	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	andi	a2, a2, 255
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	addi	a1, a1, 1
 	mulw	a0, a0, a1
 	ret

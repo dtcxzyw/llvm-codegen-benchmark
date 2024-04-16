@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fcmp ult float %3, 0.000000e+00
   ret i1 %4
 }
@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fcmp ogt float %3, 1.000000e+00
   ret i1 %4
 }
@@ -41,7 +41,7 @@ entry:
 define i1 @func0000000000000001(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fmul double %0, %2
+  %3 = fmul double %2, %0
   %4 = fcmp uno double %3, 0.000000e+00
   ret i1 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i1 @func0000000000000008(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fcmp oeq float %3, 0.000000e+00
   ret i1 %4
 }
@@ -66,7 +66,7 @@ entry:
 define i1 @func000000000000000c(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fcmp oge float %3, 0.000000e+00
   ret i1 %4
 }

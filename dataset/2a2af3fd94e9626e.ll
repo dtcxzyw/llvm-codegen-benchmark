@@ -10,7 +10,7 @@
 define double @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = bitcast i64 %3 to double
   %5 = fneg double %4
   ret double %5

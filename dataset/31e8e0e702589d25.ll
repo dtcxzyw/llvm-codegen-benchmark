@@ -8,8 +8,8 @@ entry:
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i64
   %5 = add i64 %0, %1
-  %6 = add i64 %5, %4
-  %7 = icmp eq i64 %6, 0
+  %6 = sub nsw i64 0, %4
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i32
   %5 = add nuw nsw i32 %0, %1
-  %6 = add nuw nsw i32 %5, %4
+  %6 = or i32 %5, %4
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }

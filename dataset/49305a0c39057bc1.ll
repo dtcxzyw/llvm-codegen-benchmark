@@ -14,7 +14,7 @@
 define i1 @func00000000000000f8(i24 %0, i24 %1, i24 %2) #0 {
 entry:
   %3 = and i24 %2, 1
-  %4 = add nuw nsw i24 %0, %3
+  %4 = add nuw nsw i24 %3, %0
   %5 = and i24 %1, 1
   %6 = add nuw nsw i24 %4, %5
   %7 = icmp ugt i24 %6, 1
@@ -31,7 +31,7 @@ entry:
 define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = and i32 %1, 1
   %6 = add nuw nsw i32 %4, %5
   %7 = icmp eq i32 %6, 1

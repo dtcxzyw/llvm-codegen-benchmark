@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = select i1 %0, i64 1, i64 %2
-  %4 = mul i64 %3, 24
-  ret i64 %4
+  %2 = mul i64 %1, 48
+  %3 = select i1 %0, i64 24, i64 %2
+  ret i64 %3
 }
 
 ; 5 occurrences:
@@ -22,10 +21,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = select i1 %0, i64 1, i64 %2
-  %4 = mul nuw i64 %3, 24
-  ret i64 %4
+  %2 = mul i64 %1, 48
+  %3 = select i1 %0, i64 24, i64 %2
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -36,10 +34,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = select i1 %0, i32 4096, i32 %2
-  %4 = mul nsw i32 %3, 5
-  ret i32 %4
+  %2 = mul nsw i32 %1, 10
+  %3 = select i1 %0, i32 20480, i32 %2
+  ret i32 %3
 }
 
 ; 16 occurrences:
@@ -62,10 +59,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = select i1 %0, i64 2, i64 %2
-  %4 = mul nuw nsw i64 %3, 40
-  ret i64 %4
+  %2 = mul i64 %1, 80
+  %3 = select i1 %0, i64 80, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -73,10 +69,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = select i1 %0, i64 2, i64 %2
-  %4 = mul nsw i64 %3, -40
-  ret i64 %4
+  %2 = mul i64 %1, -80
+  %3 = select i1 %0, i64 -80, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -84,10 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = select i1 %0, i64 1, i64 %2
-  %4 = mul nuw i64 %3, 80
-  ret i64 %4
+  %2 = mul i64 %1, 160
+  %3 = select i1 %0, i64 80, i64 %2
+  ret i64 %3
 }
 
 ; 15 occurrences:
@@ -109,10 +103,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = select i1 %0, i64 1, i64 %2
-  %4 = mul i64 %3, 48
-  ret i64 %4
+  %2 = mul i64 %1, 96
+  %3 = select i1 %0, i64 48, i64 %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

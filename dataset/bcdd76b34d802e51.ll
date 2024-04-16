@@ -186,10 +186,8 @@
 define i128 @func0000000000000000(i128 %0) #0 {
 entry:
   %1 = freeze i128 %0
-  %2 = udiv i128 %1, 100
-  %3 = mul i128 %2, 100
-  %4 = sub i128 %1, %3
-  ret i128 %4
+  %2 = urem i128 %1, 100
+  ret i128 %2
 }
 
 attributes #0 = { nounwind }

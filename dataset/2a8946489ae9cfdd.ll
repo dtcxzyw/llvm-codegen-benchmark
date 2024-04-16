@@ -17,8 +17,8 @@ define i16 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 0, i64 %0
-  %5 = trunc i64 %4 to i16
+  %4 = trunc i64 %0 to i16
+  %5 = select i1 %3, i16 0, i16 %4
   ret i16 %5
 }
 

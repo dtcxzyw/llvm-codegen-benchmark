@@ -8,10 +8,9 @@ define i8 @func0000000000000014(i8 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, %3
-  %5 = sext i8 %0 to i32
-  %6 = sub nsw i32 %5, %4
-  %7 = trunc i32 %6 to i8
-  ret i8 %7
+  %5 = trunc i32 %4 to i8
+  %6 = sub i8 %0, %5
+  ret i8 %6
 }
 
 ; 1 occurrences:
@@ -21,10 +20,9 @@ define i8 @func0000000000000010(i8 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, %3
-  %5 = sext i8 %0 to i32
-  %6 = sub i32 %5, %4
-  %7 = trunc i32 %6 to i8
-  ret i8 %7
+  %5 = trunc i32 %4 to i8
+  %6 = sub i8 %0, %5
+  ret i8 %6
 }
 
 attributes #0 = { nounwind }

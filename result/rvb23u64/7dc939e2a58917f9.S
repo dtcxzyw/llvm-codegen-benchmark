@@ -35,13 +35,13 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000025:                   # @func0000000000000025
 	andi	a1, a1, 255
 	slli	a0, a0, 7
-	or	a0, a0, a1
+	add	a0, a0, a1
 	neg	a0, a0
 	ret
 func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 255
 	slli	a0, a0, 7
-	or	a0, a0, a1
+	add	a0, a0, a1
 	negw	a0, a0
 	ret
 func0000000000000017:                   # @func0000000000000017

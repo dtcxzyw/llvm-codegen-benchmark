@@ -9,7 +9,7 @@ entry:
   %4 = mul nsw i64 %3, 80
   %5 = sdiv i64 %4, 26917
   %6 = mul i64 %5, 4294967284
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = mul nsw i64 %3, 80
   %5 = sdiv i64 %4, 26917
   %6 = mul nsw i64 %5, 4294967284
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -35,7 +35,7 @@ entry:
   %4 = mul nsw i32 %3, 80
   %5 = sdiv i32 %4, 26917
   %6 = mul nsw i32 %5, -12
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

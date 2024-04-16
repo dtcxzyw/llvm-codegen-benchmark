@@ -38,7 +38,8 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000041:                   # @func0000000000000041
 	czero.eqz	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000002ba:                   # @func00000000000002ba
@@ -92,7 +93,8 @@ func000000000000029a:                   # @func000000000000029a
 func0000000000000071:                   # @func0000000000000071
 	andi	a2, a2, 255
 	czero.eqz	a1, a1, a2
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func000000000000019a:                   # @func000000000000019a
@@ -156,7 +158,9 @@ func0000000000000111:                   # @func0000000000000111
 	andi	a2, a2, 255
 	sltiu	a2, a2, 192
 	czero.nez	a1, a1, a2
-	addw	a0, a0, a1
+	sext.w	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000011a:                   # @func000000000000011a
@@ -214,7 +218,8 @@ func0000000000000101:                   # @func0000000000000101
 	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001ba:                   # @func00000000000001ba
@@ -238,7 +243,8 @@ func0000000000000058:                   # @func0000000000000058
 func0000000000000181:                   # @func0000000000000181
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000002aa:                   # @func00000000000002aa

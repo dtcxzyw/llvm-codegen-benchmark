@@ -10,7 +10,7 @@ entry:
   %2 = mul nuw nsw i64 %1, 40
   %3 = add nuw nsw i64 %2, 4294965376
   %4 = and i64 %3, 4294967288
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, 15
   %4 = and i32 %3, -16
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -59,7 +59,7 @@ entry:
   %2 = mul nsw i64 %1, 12
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -71,7 +71,7 @@ entry:
   %2 = mul i32 %1, 12
   %3 = add i32 %2, 7
   %4 = and i32 %3, -8
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

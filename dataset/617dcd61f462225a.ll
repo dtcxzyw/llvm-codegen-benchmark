@@ -85,7 +85,7 @@
 define i8 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 24
-  %4 = or disjoint i8 %1, %3
+  %4 = or disjoint i8 %3, %1
   %5 = or disjoint i8 %4, %0
   %6 = or disjoint i8 %5, 2
   ret i8 %6
@@ -150,7 +150,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 17825792
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, %0
   %6 = or i32 %5, 4194304
   ret i32 %6
@@ -170,7 +170,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 24
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or i32 %4, %0
   %6 = or disjoint i32 %5, 64
   ret i32 %6
@@ -263,8 +263,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048576
-  %4 = or disjoint i32 %1, %3
-  %5 = or i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = or i32 %4, %0
   %6 = or i32 %5, 120
   ret i32 %6
 }

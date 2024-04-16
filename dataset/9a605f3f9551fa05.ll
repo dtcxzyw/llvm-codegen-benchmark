@@ -9,8 +9,8 @@ entry:
   %3 = and i32 %2, 65535
   %4 = icmp eq i32 %3, 126
   %5 = add i16 %0, %1
-  %6 = add i16 %5, 1
-  %7 = select i1 %4, i16 %6, i16 %5
+  %6 = zext i1 %4 to i16
+  %7 = add i16 %5, %6
   ret i16 %7
 }
 
@@ -32,12 +32,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 15
-  %4 = icmp ugt i32 %3, 3
-  %5 = add nuw nsw i32 %0, %1
-  %6 = add nuw nsw i32 %5, 65536
-  %7 = select i1 %4, i32 %6, i32 %5
-  ret i32 %7
+  %3 = and i32 %2, 12
+  %.not = icmp eq i32 %3, 0
+  %4 = add nuw nsw i32 %0, %1
+  %5 = add nuw nsw i32 %4, 65536
+  %6 = select i1 %.not, i32 %4, i32 %5
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

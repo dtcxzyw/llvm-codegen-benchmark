@@ -36,9 +36,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr inbounds %struct.dt_iop_colorzones_node_t.1768550, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.dt_iop_colorzones_node_t.1768550, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 5 occurrences:

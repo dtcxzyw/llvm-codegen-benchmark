@@ -22,7 +22,7 @@ func000000000000007c:                   # @func000000000000007c
 	ret
 func0000000000000098:                   # @func0000000000000098
 	srli	a1, a1, 25
-	sext.w	a1, a1
+	slli.uw	a1, a1, 25
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -53,8 +53,6 @@ func0000000000000051:                   # @func0000000000000051
 	or	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
-	slli	a1, a1, 32
-	add.uw	a1, a2, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret

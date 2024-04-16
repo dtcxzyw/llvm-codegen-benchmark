@@ -16,9 +16,9 @@ func0000000000000304:                   # @func0000000000000304
 func0000000000000308:                   # @func0000000000000308
 	add.uw	a1, a2, a1
 	sub	a0, a0, a1
-	lui	a1, 524288
-	addi	a1, a1, -26
+	li	a1, -26
+	bclri	a1, a1, 32
 	add	a0, a0, a1
-	srli	a0, a0, 31
-	snez	a0, a0
+	lui	a1, 524288
+	sltu	a0, a0, a1
 	ret

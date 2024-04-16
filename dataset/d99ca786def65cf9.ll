@@ -14,12 +14,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 63
-  %4 = and i32 %0, 1984
-  %5 = or disjoint i32 %3, %4
-  %6 = icmp ult i32 %5, 128
-  ret i1 %6
+  %2 = and i32 %0, 1920
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 11 occurrences:
@@ -37,10 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 63
+  %2 = and i8 %1, 63
+  %3 = zext nneg i8 %2 to i32
   %4 = and i32 %0, 2097088
-  %5 = or disjoint i32 %3, %4
+  %5 = or disjoint i32 %4, %3
   %6 = icmp ugt i32 %5, 65536
   ret i1 %6
 }
@@ -53,8 +50,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 8388607
+  %2 = and i32 %1, 8388607
+  %3 = zext nneg i32 %2 to i64
   %4 = and i64 %0, 255
   %5 = or i64 %4, %3
   %6 = icmp ne i64 %5, 0
@@ -68,8 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 8388607
+  %2 = and i32 %1, 8388607
+  %3 = zext nneg i32 %2 to i64
   %4 = and i64 %0, 255
   %5 = or i64 %4, %3
   %6 = icmp eq i64 %5, 0
@@ -82,10 +79,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 15
+  %2 = and i8 %1, 15
+  %3 = zext nneg i8 %2 to i32
   %4 = and i32 %0, 48
-  %5 = or disjoint i32 %3, %4
+  %5 = or disjoint i32 %4, %3
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }
@@ -100,8 +97,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 1
+  %2 = and i16 %1, 1
+  %3 = zext nneg i16 %2 to i32
   %4 = and i32 %0, 8
   %5 = or disjoint i32 %4, %3
   %6 = icmp eq i32 %5, 0

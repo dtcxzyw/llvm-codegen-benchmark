@@ -7,7 +7,7 @@
 define i1 @func00000000000000d0(i32 %0, i16 %1) #0 {
 entry:
   %2 = trunc i32 %0 to i16
-  %3 = add i16 %1, %2
+  %3 = add i16 %2, %1
   %4 = icmp slt i16 %3, %1
   %5 = icmp ugt i32 %0, 65535
   %6 = or i1 %5, %4
@@ -65,7 +65,7 @@ entry:
 define i1 @func000000000000010c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp slt i32 %3, %0
   %5 = icmp ugt i64 %1, 4294967295
   %6 = or i1 %4, %5

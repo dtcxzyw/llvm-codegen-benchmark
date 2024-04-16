@@ -15,7 +15,7 @@
 define float @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = sitofp i32 %3 to float
   ret float %4
 }
@@ -26,7 +26,7 @@ entry:
 define double @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, %1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sitofp i32 %3 to double
   ret double %4
 }

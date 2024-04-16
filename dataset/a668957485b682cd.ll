@@ -6,7 +6,7 @@
 define i1 @func0000000000000198(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 102
   %6 = icmp ne i32 %0, 67108864
   %7 = or i1 %6, %5
@@ -172,7 +172,7 @@ entry:
 define i1 @func0000000000000022(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %6, %5
@@ -186,7 +186,7 @@ entry:
 define i1 @func0000000000000182(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp eq i64 %0, 1
   %7 = or i1 %6, %5

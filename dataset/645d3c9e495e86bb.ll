@@ -19,7 +19,7 @@ entry:
 define i32 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nuw i32 %1, %3
+  %4 = add nuw i32 %3, %1
   %5 = lshr i32 %4, 16
   %6 = mul nuw i32 %0, 36969
   %7 = add nuw i32 %6, %5
@@ -34,7 +34,7 @@ entry:
 define i128 @func000000000000007b(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 51
-  %4 = add nuw nsw i128 %1, %3
+  %4 = add nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 51
   %6 = mul nuw nsw i128 %0, 486662
   %7 = add nuw nsw i128 %5, %6

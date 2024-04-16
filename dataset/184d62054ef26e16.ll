@@ -9,7 +9,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = icmp ne i32 %4, %3
   %6 = zext i1 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = add nsw i32 %1, 1
   %5 = icmp eq i32 %4, %3
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

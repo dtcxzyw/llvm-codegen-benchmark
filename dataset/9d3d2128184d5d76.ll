@@ -4,11 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000036(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp eq i8 %1, 0
-  %3 = select i1 %2, i8 39, i8 7
-  %4 = or disjoint i8 %3, %0
-  %5 = icmp slt i8 %4, 0
-  ret i1 %5
+  %2 = icmp slt i8 %0, 0
+  ret i1 %2
 }
 
 ; 6 occurrences:
@@ -23,7 +20,7 @@ define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 7, i32 0
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -37,7 +34,7 @@ define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 7, i32 0
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -53,7 +50,7 @@ define i1 @func0000000000000151(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 3
   %3 = select i1 %2, i32 16384, i32 0
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -70,7 +67,7 @@ define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -82,7 +79,7 @@ define i1 @func0000000000000096(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 128
   %3 = select i1 %2, i8 0, i8 -128
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = icmp slt i8 %4, 0
   ret i1 %5
 }
@@ -104,11 +101,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i16 %0, i16 %1) #0 {
 entry:
-  %2 = icmp ult i16 %1, 26
-  %3 = select i1 %2, i16 32, i16 0
-  %4 = or i16 %3, %0
-  %5 = icmp ult i16 %4, 128
-  ret i1 %5
+  %2 = icmp ult i16 %0, 128
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -128,11 +122,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 18, i32 2
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ult i32 %4, 32
-  ret i1 %5
+  %2 = icmp ult i32 %0, 32
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -142,7 +133,7 @@ define i1 @func000000000000011a(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = select i1 %2, i32 -2147483648, i32 0
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }

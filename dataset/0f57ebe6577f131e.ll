@@ -95,7 +95,7 @@ entry:
 define i32 @func000000000000000a(i16 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 48
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp sgt i16 %0, -1
   %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
@@ -172,7 +172,7 @@ entry:
 define i16 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw i32 %2 to i16
   %4 = icmp slt i64 %0, 2147483648
   %5 = select i1 %4, i16 %3, i16 32767
   ret i16 %5

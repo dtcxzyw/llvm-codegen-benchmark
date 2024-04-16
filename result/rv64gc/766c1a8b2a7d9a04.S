@@ -15,7 +15,8 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
-	addw	a0, a0, a1
-	sltiu	a0, a0, 256
-	xori	a0, a0, 1
+	add	a0, a0, a1
+	srliw	a0, a0, 8
+	slli	a0, a0, 8
+	snez	a0, a0
 	ret

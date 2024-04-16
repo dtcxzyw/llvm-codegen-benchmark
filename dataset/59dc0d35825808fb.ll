@@ -38,7 +38,7 @@
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -72,7 +72,7 @@ entry:
 define i64 @func0000000000000016(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp sge i32 %0, %2
+  %3 = icmp sle i32 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -97,7 +97,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp slt i32 %0, %2
+  %3 = icmp sgt i32 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -119,7 +119,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ne i64 %0, %2
+  %3 = icmp ne i64 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -139,7 +139,7 @@ entry:
 define i32 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sle i64 %0, %2
+  %3 = icmp sge i64 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -151,7 +151,7 @@ entry:
 define i8 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -163,7 +163,7 @@ entry:
 define i8 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp uge i64 %0, %2
+  %3 = icmp ule i64 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

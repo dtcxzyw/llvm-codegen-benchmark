@@ -1,7 +1,9 @@
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a2, a0
-	addw	a0, a0, a1
-	sltu	a0, a0, a2
+	sext.w	a1, a1
+	not	a0, a0
+	sext.w	a0, a0
+	sltu	a0, a0, a1
 	slti	a1, a2, 0
 	or	a0, a0, a1
 	ret

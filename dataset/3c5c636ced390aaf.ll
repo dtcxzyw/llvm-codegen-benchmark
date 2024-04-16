@@ -7,12 +7,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 24
-  %3 = ashr exact i32 %2, 24
-  %4 = shl i32 %0, 24
-  %5 = ashr exact i32 %4, 24
-  %6 = icmp eq i32 %5, %3
-  ret i1 %6
+  %.unshifted = xor i32 %0, %1
+  %.mask = and i32 %.unshifted, 255
+  %2 = icmp eq i32 %.mask, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -23,11 +21,9 @@ entry:
 define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = shl i64 %0, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp slt i64 %5, %3
-  ret i1 %6
+  %3 = shl i64 %0, 32
+  %4 = icmp slt i64 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

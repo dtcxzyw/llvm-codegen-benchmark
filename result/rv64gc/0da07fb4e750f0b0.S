@@ -5,7 +5,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	sub	a1, a1, a0
+	xor	a1, a1, a0
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -19,11 +19,11 @@ func000000000000004c:                   # @func000000000000004c
 	and	a0, a0, a1
 	ret
 func00000000000001aa:                   # @func00000000000001aa
-	sext.w	a2, a0
-	subw	a1, a1, a0
-	sgtz	a0, a1
-	slti	a1, a2, 2
-	not	a1, a1
+	sext.w	a1, a1
+	sext.w	a0, a0
+	slt	a1, a0, a1
+	slti	a0, a0, 2
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
@@ -47,7 +47,7 @@ func0000000000000066:                   # @func0000000000000066
 	and	a0, a0, a1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
-	sub	a1, a1, a0
+	xor	a1, a1, a0
 	snez	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

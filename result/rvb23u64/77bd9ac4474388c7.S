@@ -4,12 +4,12 @@ func0000000000000175:                   # @func0000000000000175
 	addiw	a0, a0, -432
 	ret
 func00000000000000ff:                   # @func00000000000000ff
-	lui	a2, 81007
-	slli	a2, a2, 3
-	addi	a2, a2, -1607
-	add.uw	a1, a1, a2
-	slli	a1, a1, 6
-	add	a0, a0, a2
+	slli.uw	a1, a1, 6
+	add	a0, a0, a1
+	lui	a1, 5142
+	addiw	a1, a1, 175
+	slli	a1, a1, 13
+	addi	a1, a1, 2041
 	add	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055

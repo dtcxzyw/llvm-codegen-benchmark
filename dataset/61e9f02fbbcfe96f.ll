@@ -480,10 +480,8 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr inbounds ptr, ptr %0, i64 %3
-  %5 = add nuw nsw i64 %1, 1
-  %6 = getelementptr inbounds ptr, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 -8
-  ret ptr %7
+  %5 = getelementptr ptr, ptr %4, i64 %1
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -495,10 +493,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr inbounds ptr, ptr %0, i64 %3
-  %5 = add nsw i64 %1, 1
-  %6 = getelementptr inbounds ptr, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 -8
-  ret ptr %7
+  %5 = getelementptr ptr, ptr %4, i64 %1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -509,10 +505,9 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr inbounds %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.2055381", ptr %0, i64 %3
-  %5 = add i64 %1, -1
-  %6 = getelementptr inbounds %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.2055381", ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 16
-  ret ptr %7
+  %5 = getelementptr %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.2055381", ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -16
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

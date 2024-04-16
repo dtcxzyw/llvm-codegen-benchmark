@@ -19,12 +19,12 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
 	sext.w	a1, a1
 	bge	a2, a3, .LBB1_3
-	beqz	a1, .LBB1_4
+	bnez	a1, .LBB1_4
 .LBB1_2:                                # %entry
-	mv	a0, a3
 	ret
 .LBB1_3:                                # %entry
 	mv	a3, a2
-	bnez	a1, .LBB1_2
+	beqz	a1, .LBB1_2
 .LBB1_4:                                # %entry
+	mv	a0, a3
 	ret

@@ -27,11 +27,9 @@
 define i1 @func0000000000000101(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = and i64 %4, 274877906943
-  %6 = icmp eq i64 %5, 274877906943
-  ret i1 %6
+  %3 = and i128 %2, 5070602400894470861913103269888
+  %4 = icmp eq i128 %3, 5070602400894470861913103269888
+  ret i1 %4
 }
 
 ; 72 occurrences:
@@ -111,11 +109,9 @@ entry:
 define i1 @func000000000000010c(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = and i64 %4, 4294967295
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = and i128 %2, 79228162495817593519834398720
+  %4 = icmp ne i128 %3, 0
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -129,11 +125,9 @@ entry:
 define i1 @func000000000000012c(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc nuw i128 %3 to i64
-  %5 = and i64 %4, 4294967295
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = and i128 %2, 79228162495817593519834398720
+  %4 = icmp ne i128 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -142,11 +136,9 @@ entry:
 define i1 @func0000000000000121(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %0, %1
-  %3 = lshr i128 %2, 64
-  %4 = trunc nuw i128 %3 to i64
-  %5 = and i64 %4, 4294967295
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = and i128 %2, 79228162495817593519834398720
+  %4 = icmp eq i128 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

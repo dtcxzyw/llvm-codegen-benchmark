@@ -1429,9 +1429,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 -1, i32 %0
-  ret i32 %4
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 %0, i32 -1
+  ret i32 %3
 }
 
 ; 13 occurrences:

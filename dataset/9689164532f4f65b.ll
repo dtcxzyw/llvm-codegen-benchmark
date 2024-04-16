@@ -5,11 +5,10 @@
 define i1 @func00000000000001a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = icmp sgt i64 %4, 0
-  %6 = icmp slt i64 %0, 0
-  %7 = and i1 %6, %5
-  ret i1 %7
+  %4 = icmp slt i64 %3, %1
+  %5 = icmp slt i64 %0, 0
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -19,11 +18,10 @@ entry:
 define i1 @func00000000000001aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = icmp sgt i64 %4, 0
-  %6 = icmp sgt i64 %0, 0
-  %7 = and i1 %6, %5
-  ret i1 %7
+  %4 = icmp slt i64 %3, %1
+  %5 = icmp sgt i64 %0, 0
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -32,11 +30,10 @@ entry:
 define i1 @func000000000000001c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = icmp ne i64 %4, 0
-  %6 = icmp eq i32 %0, 8192
-  %7 = and i1 %5, %6
-  ret i1 %7
+  %4 = icmp ne i64 %3, %1
+  %5 = icmp eq i32 %0, 8192
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -45,11 +42,10 @@ entry:
 define i1 @func000000000000011a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp sgt i32 %4, 0
-  %6 = icmp eq i32 %0, 0
-  %7 = and i1 %5, %6
-  ret i1 %7
+  %4 = icmp slt i32 %3, %1
+  %5 = icmp eq i32 %0, 0
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -58,11 +54,10 @@ entry:
 define i1 @func00000000000000cc(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub i32 %1, %3
-  %5 = icmp ne i32 %4, 0
-  %6 = icmp ne i8 %0, 0
-  %7 = and i1 %5, %6
-  ret i1 %7
+  %4 = icmp ne i32 %3, %1
+  %5 = icmp ne i8 %0, 0
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -97,11 +92,10 @@ entry:
 define i1 @func0000000000000166(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp slt i32 %4, 0
-  %6 = icmp slt i32 %0, 1
-  %7 = and i1 %6, %5
-  ret i1 %7
+  %4 = icmp sgt i32 %3, %1
+  %5 = icmp slt i32 %0, 1
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:

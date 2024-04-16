@@ -34,7 +34,7 @@ entry:
   %3 = and i64 %2, -5
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = and i32 %2, 7936
   %4 = icmp ugt i32 %3, 256
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -79,7 +79,7 @@ entry:
   %3 = and i16 %2, 1023
   %4 = icmp ult i16 %3, 47
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

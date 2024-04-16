@@ -45,7 +45,7 @@ entry:
 define i16 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 48
-  %3 = trunc i64 %2 to i16
+  %3 = trunc nuw i64 %2 to i16
   %4 = and i16 %3, -32768
   %5 = trunc i64 %0 to i16
   %6 = add nuw i16 %4, %5

@@ -51,7 +51,7 @@ entry:
   %4 = icmp eq i64 %3, 2
   %5 = shl nsw i64 -1, %1
   %6 = select i1 %4, i64 %5, i64 0
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

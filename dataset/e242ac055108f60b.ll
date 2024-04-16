@@ -9,7 +9,7 @@ entry:
   %3 = add i64 %2, -48
   %4 = add i64 %3, %0
   %5 = zext nneg i32 %1 to i64
-  %6 = ashr i64 %4, %5
+  %6 = lshr i64 %4, %5
   %7 = and i64 %6, 1
   ret i64 %7
 }

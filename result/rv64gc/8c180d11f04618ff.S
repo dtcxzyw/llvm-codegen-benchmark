@@ -9,7 +9,8 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000068:                   # @func0000000000000068
 	not	a1, a1
-	ori	a1, a1, -256
+	slli	a1, a1, 56
+	srai	a1, a1, 56
 	li	a2, 10
 	mul	a0, a0, a2
 	sltu	a0, a1, a0

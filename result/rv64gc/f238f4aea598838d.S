@@ -8,7 +8,7 @@ func000000000000009a:                   # @func000000000000009a
 	xori	a0, a0, 1
 	ret
 .LBB0_3:                                # %entry
-	add	a2, a0, a1
+	add	a2, a1, a0
 	blt	a2, a1, .LBB0_2
 .LBB0_4:                                # %entry
 	sub	a2, a1, a0

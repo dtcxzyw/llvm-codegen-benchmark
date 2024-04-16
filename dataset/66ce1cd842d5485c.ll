@@ -9,8 +9,8 @@ define i128 @func000000000000001f(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = or disjoint i128 %1, %2
   %4 = shl nuw nsw i128 %3, 16
-  %5 = or disjoint i128 %3, %4
-  %6 = or disjoint i128 %5, %0
+  %5 = or i128 %4, %0
+  %6 = or i128 %5, %3
   ret i128 %6
 }
 
@@ -21,8 +21,8 @@ define i128 @func000000000000001e(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = or disjoint i128 %1, %2
   %4 = shl nuw nsw i128 %3, 32
-  %5 = or disjoint i128 %3, %4
-  %6 = or i128 %5, %0
+  %5 = or i128 %4, %0
+  %6 = or i128 %5, %3
   ret i128 %6
 }
 
@@ -33,8 +33,8 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %4, %3
-  %6 = or i64 %0, %5
+  %5 = or i64 %4, %0
+  %6 = or i64 %5, %3
   ret i64 %6
 }
 
@@ -45,8 +45,8 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %4, %3
-  %6 = or i64 %5, %0
+  %5 = or i64 %4, %0
+  %6 = or i64 %5, %3
   ret i64 %6
 }
 

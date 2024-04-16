@@ -5,9 +5,9 @@
 define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = shl nuw i64 1, %2
-  %4 = icmp ult i64 %0, %3
-  ret i1 %4
+  %.highbits = lshr i64 %0, %2
+  %3 = icmp eq i64 %.highbits, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -18,7 +18,7 @@ define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = shl nuw nsw i32 1, %2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = shl nuw i32 1, %2
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 

@@ -11,7 +11,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = lshr i32 %3, 7
   %5 = and i32 %4, 60
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = and i32 %4, 127
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

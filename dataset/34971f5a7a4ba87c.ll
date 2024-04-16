@@ -64,7 +64,7 @@ entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -76,7 +76,7 @@ entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp uge i64 %0, %4
+  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 
@@ -131,7 +131,7 @@ entry:
   %2 = lshr i32 %1, 15
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -145,7 +145,7 @@ entry:
   %2 = lshr i16 %1, 1
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 
@@ -171,7 +171,7 @@ entry:
   %2 = lshr i16 %1, 2
   %3 = and i16 %2, 60
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp ugt i32 %0, %4
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -189,7 +189,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 16777215
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -202,7 +202,7 @@ entry:
   %2 = lshr i16 %1, 6
   %3 = and i16 %2, 63
   %4 = zext nneg i16 %3 to i32
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -214,7 +214,7 @@ entry:
   %2 = lshr i32 %1, 15
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp sge i64 %0, %4
+  %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
 

@@ -14,11 +14,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 15)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = and i64 %3, -16
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %2 = add i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

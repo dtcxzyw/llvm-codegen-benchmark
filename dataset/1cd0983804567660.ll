@@ -28,8 +28,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add i64 %4, 17
-  %6 = trunc i64 %5 to i32
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 17
   ret i32 %6
 }
 
@@ -43,8 +43,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add nsw i64 %4, 1
-  %6 = trunc i64 %5 to i32
+  %5 = trunc i64 %4 to i32
+  %6 = add i32 %5, 1
   ret i32 %6
 }
 

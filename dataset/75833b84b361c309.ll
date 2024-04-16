@@ -7,7 +7,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = trunc i64 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -59,7 +59,7 @@ entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -77,7 +77,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2
   %4 = trunc i64 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -90,7 +90,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 3, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -102,10 +102,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i8 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
+  %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i8
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -114,10 +114,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 64, %2
   %4 = trunc i32 %3 to i8
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 

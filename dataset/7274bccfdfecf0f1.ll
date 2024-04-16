@@ -14,8 +14,8 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
   %4 = select i1 %3, i64 -1, i64 -2
-  %5 = add i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -26,8 +26,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 4, i64 5
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr inbounds %"class.std::__1::basic_string.1558600", ptr %0, i64 %5
+  %5 = getelementptr %"class.std::__1::basic_string.1558600", ptr %0, i64 %4
+  %6 = getelementptr %"class.std::__1::basic_string.1558600", ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -40,8 +40,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 117
   %4 = select i1 %3, i64 4, i64 6
-  %5 = add i64 %4, %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -53,8 +53,8 @@ define ptr @func0000000000000047(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 1023
   %4 = select i1 %3, i64 4, i64 3
-  %5 = add nuw nsw i64 %4, %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -66,8 +66,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -2
   %4 = select i1 %3, i64 5, i64 1
-  %5 = add nuw nsw i64 %4, %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -78,8 +78,8 @@ define ptr @func0000000000000043(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 99
   %4 = select i1 %3, i64 2, i64 1
-  %5 = add nsw i64 %4, %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 

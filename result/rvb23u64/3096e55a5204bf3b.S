@@ -37,9 +37,7 @@ func0000000000000028:                   # @func0000000000000028
 	and	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
-	sext.w	a1, a1
-	bset	a2, zero, a2
-	sext.w	a2, a2
-	sltu	a1, a1, a2
+	srlw	a1, a1, a2
+	seqz	a1, a1
 	and	a0, a0, a1
 	ret

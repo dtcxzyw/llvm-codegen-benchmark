@@ -9,7 +9,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 1
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }

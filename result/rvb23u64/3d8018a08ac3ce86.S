@@ -1,6 +1,4 @@
 func0000000000000024:                   # @func0000000000000024
-	andi	a1, a1, 255
-	or	a0, a0, a1
 	sltiu	a0, a0, 128
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -22,8 +20,6 @@ func000000000000001a:                   # @func000000000000001a
 	xori	a0, a0, 1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	sext.w	a1, a1
-	or	a0, a0, a1
 	srli	a0, a0, 62
 	seqz	a0, a0
 	ret
@@ -71,8 +67,6 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000036:                   # @func0000000000000036
-	zext.w	a1, a1
-	or	a0, a0, a1
 	slli	a0, a0, 16
 	srai	a0, a0, 16
 	slti	a0, a0, 0

@@ -8,10 +8,9 @@
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = sub i64 %1, %3
-  %5 = icmp ne i64 %4, 0
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %4 = icmp ne i64 %3, %1
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -22,7 +21,7 @@ entry:
   %3 = and i32 %2, -4
   %4 = sub i32 %1, %3
   %5 = icmp ugt i32 %4, 15
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

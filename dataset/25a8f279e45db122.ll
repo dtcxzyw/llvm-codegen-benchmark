@@ -8,8 +8,8 @@ define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 376
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i64 %0, 1
-  %5 = trunc i64 %4 to i32
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %4, 1
   %6 = icmp eq i32 %5, %3
   ret i1 %6
 }
@@ -24,8 +24,8 @@ define i1 @func0000000000000706(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i64 %0, 1
-  %5 = trunc i64 %4 to i32
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %4, 1
   %6 = icmp slt i32 %5, %3
   ret i1 %6
 }
@@ -37,8 +37,8 @@ define i1 @func0000000000000506(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i64 %0, 1
-  %5 = trunc i64 %4 to i32
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %4, 1
   %6 = icmp slt i32 %5, %3
   ret i1 %6
 }
@@ -50,8 +50,8 @@ define i1 @func0000000000000704(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i64 %0, 1
-  %5 = trunc i64 %4 to i32
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %4, 1
   %6 = icmp ult i32 %5, %3
   ret i1 %6
 }

@@ -1,20 +1,20 @@
 func0000000000000021:                   # @func0000000000000021
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
-	addiw	a0, a0, -1
+	not	a0, a0
 	slli	a0, a0, 2
 	ret
 func0000000000000025:                   # @func0000000000000025
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
+	not	a0, a0
 	slli	a0, a0, 2
-	addi	a0, a0, -4
 	ret
 func0000000000000035:                   # @func0000000000000035
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
+	not	a0, a0
 	slli	a0, a0, 2
-	addi	a0, a0, -4
 	ret
 func000000000000002d:                   # @func000000000000002d
 	li	a1, 1

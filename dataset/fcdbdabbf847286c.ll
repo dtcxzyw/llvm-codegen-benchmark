@@ -5,8 +5,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = shl nsw i32 %2, 1
-  %4 = select i1 %1, i32 %2, i32 %3
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i32
+  %4 = shl nsw i32 %2, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -19,7 +20,7 @@ define i32 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = select i1 %1, i32 %2, i32 %3
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -39,9 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw i32 %2, 1
-  %4 = select i1 %1, i32 %2, i32 %3
-  %5 = add nsw i32 %0, %4
+  %not. = xor i1 %1, true
+  %3 = zext i1 %not. to i32
+  %4 = shl nuw i32 %2, %3
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

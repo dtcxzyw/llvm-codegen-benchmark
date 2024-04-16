@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %1, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %1, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -70,7 +70,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %1, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

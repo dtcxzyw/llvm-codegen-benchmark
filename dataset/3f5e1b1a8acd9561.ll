@@ -269,7 +269,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = lshr i64 %1, %4
   %6 = sub nsw i64 %1, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

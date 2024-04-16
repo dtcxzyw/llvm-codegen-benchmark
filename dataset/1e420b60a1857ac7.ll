@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000144(i8 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 127
+  %2 = and i8 %1, 126
   %3 = add nsw i8 %2, -58
   %4 = icmp ult i8 %3, -10
   %5 = icmp ult i8 %0, -4

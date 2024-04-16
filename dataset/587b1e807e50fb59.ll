@@ -97,10 +97,9 @@
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 2
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -110,10 +109,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -65536
-  %3 = add i64 %2, -16
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -123,10 +121,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -16
-  %3 = add i64 %2, 16
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 32
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -135,10 +132,9 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 131070
-  %3 = add nuw nsw i64 %2, 8
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 2
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 10
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

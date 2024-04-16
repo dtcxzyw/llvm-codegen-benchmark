@@ -7,10 +7,10 @@
 define i32 @func0000000000000129(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -1073
-  %4 = select i1 %3, i32 0, i32 %1
+  %4 = sub nsw i32 64, %1
   %5 = icmp sgt i32 %0, -1086
-  %6 = select i1 %5, i32 53, i32 %4
-  %7 = sub nsw i32 64, %6
+  %6 = select i1 %3, i32 64, i32 %4
+  %7 = select i1 %5, i32 11, i32 %6
   ret i32 %7
 }
 

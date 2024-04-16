@@ -1,6 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
 	and	a1, a1, a2
-	snez	a1, a1
+	seqz	a1, a1
 	xor	a0, a0, a1
-	xori	a0, a0, 1
 	ret

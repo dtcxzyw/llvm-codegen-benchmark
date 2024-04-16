@@ -48,7 +48,7 @@ entry:
   %2 = bitcast float %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32768
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

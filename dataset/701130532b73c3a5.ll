@@ -9,7 +9,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = add i64 %1, -1
   %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = add i64 %1, -1
   %5 = add i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = add i64 %1, -1
   %5 = add i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %1, 2
   %5 = add i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -84,7 +84,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, -27
   %5 = add i32 %4, %3
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -96,7 +96,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %1, 8
   %5 = add i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -108,7 +108,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %1, 8
   %5 = add i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

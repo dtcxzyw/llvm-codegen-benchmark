@@ -94,7 +94,7 @@
 define i64 @func0000000000000020(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = trunc i128 %1 to i64
   %6 = mul i64 %5, 4294966296
   %7 = add i64 %6, %4
@@ -113,7 +113,7 @@ entry:
 define i64 @func00000000000002e0(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   %5 = trunc nuw nsw i128 %1 to i64
   %6 = mul i64 %5, 4294966296
   %7 = add i64 %6, %4
@@ -130,7 +130,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 5
   %5 = trunc i64 %1 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

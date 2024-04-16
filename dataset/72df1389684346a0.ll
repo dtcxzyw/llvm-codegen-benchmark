@@ -7,7 +7,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nuw nsw i64 %1, 1096
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = add nuw nsw i64 %1, 1096
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }

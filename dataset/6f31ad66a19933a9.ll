@@ -8,7 +8,7 @@ define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fcmp ogt float %2, 1.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func000000000000001c(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fcmp ord float %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -47,7 +47,7 @@ define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fcmp ugt float %2, 1.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -83,7 +83,7 @@ define i1 @func0000000000000010(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fcmp oeq float %2, 1.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -94,7 +94,7 @@ define i1 @func000000000000000e(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fcmp une float %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -105,7 +105,7 @@ define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = fcmp uno float %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

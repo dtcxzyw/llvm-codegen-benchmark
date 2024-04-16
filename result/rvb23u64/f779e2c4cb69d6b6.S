@@ -145,17 +145,17 @@ func000000000000004a:                   # @func000000000000004a
 	andn	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	addi	a1, a1, -1
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
-	addiw	a1, a1, -1
-	sltiu	a1, a1, 2
+	addiw	a1, a1, -3
+	sltiu	a1, a1, -2
 	snez	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret
 func0000000000000184:                   # @func0000000000000184
 	sext.w	a0, a0
@@ -167,7 +167,7 @@ func0000000000000184:                   # @func0000000000000184
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	addi	a1, a1, -2
+	xori	a1, a1, 2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -219,10 +219,10 @@ func00000000000000a4:                   # @func00000000000000a4
 	ret
 func0000000000000118:                   # @func0000000000000118
 	andi	a0, a0, 255
-	addi	a1, a1, -1
-	sltiu	a1, a1, 5
+	addi	a1, a1, -6
+	sltiu	a1, a1, -5
 	seqz	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret
 func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
@@ -233,8 +233,7 @@ func000000000000004c:                   # @func000000000000004c
 	and	a0, a0, a1
 	ret
 func0000000000000311:                   # @func0000000000000311
-	addi	a1, a1, 248
-	xori	a1, a1, 1360
+	xori	a1, a1, 1112
 	xori	a0, a0, 765
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -257,10 +256,12 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
-	addiw	a1, a1, -4
-	sltiu	a1, a1, 4
+	andi	a1, a1, -4
+	sext.w	a1, a1
+	addi	a1, a1, -4
+	snez	a1, a1
 	seqz	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret
 func00000000000003c1:                   # @func00000000000003c1
 	sext.w	a0, a0
@@ -293,11 +294,14 @@ func0000000000000164:                   # @func0000000000000164
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0
-	zext.h	a1, a1
+	lui	a2, 16
+	addiw	a2, a2, -16
+	and	a1, a1, a2
 	addi	a1, a1, -16
-	minu	a0, a1, a0
+	snez	a1, a1
 	sltiu	a0, a0, 16
 	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 func00000000000001a1:                   # @func00000000000001a1
 	sext.w	a0, a0

@@ -6,7 +6,7 @@
 define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %1, %3
+  %4 = or i64 %3, %1
   %5 = or i64 %4, %0
   %6 = and i64 %5, 4032
   %7 = icmp eq i64 %6, 3456
@@ -29,7 +29,7 @@ entry:
 define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = and i32 %5, 16712191
   %7 = icmp eq i32 %6, 0
@@ -44,7 +44,7 @@ entry:
 define i1 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, %0
   %6 = and i32 %5, 2147483631
   %7 = icmp eq i32 %6, 108
@@ -58,8 +58,8 @@ entry:
 define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %1, %3
-  %5 = or i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = or i32 %4, %0
   %6 = and i32 %5, 2147481600
   %7 = icmp eq i32 %6, 55296
   ret i1 %7
@@ -70,12 +70,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 %2, 32
-  %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
-  %6 = and i64 %5, 3
-  %7 = icmp eq i64 %6, 3
-  ret i1 %7
+  %3 = or i64 %1, %0
+  %4 = and i64 %3, 3
+  %5 = icmp eq i64 %4, 3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -85,7 +83,7 @@ define i1 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 3
   %4 = or i8 %3, %1
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   %6 = and i8 %5, 30
   %7 = icmp eq i8 %6, 0
   ret i1 %7
@@ -112,8 +110,8 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = or i32 %4, %0
-  %6 = and i32 %5, 65535
-  %7 = icmp ugt i32 %6, 2047
+  %6 = and i32 %5, 63488
+  %7 = icmp ne i32 %6, 0
   ret i1 %7
 }
 

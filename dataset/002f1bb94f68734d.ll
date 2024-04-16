@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i64 @func00000000000000f0(i128 %0, i128 %1) #0 {
 entry:
-  %2 = add nuw nsw i128 %1, 2251799813685247
-  %3 = add nuw nsw i128 %2, %0
+  %2 = add i128 %1, 8191
+  %3 = add i128 %2, %0
   %4 = trunc i128 %3 to i64
   %5 = shl i64 %4, 51
   ret i64 %5
@@ -31,7 +31,7 @@ entry:
 define i32 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = trunc i64 %3 to i32
   %5 = shl i32 %4, 14
   ret i32 %5

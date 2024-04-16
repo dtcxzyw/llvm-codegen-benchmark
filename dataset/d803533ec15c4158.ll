@@ -10,9 +10,8 @@
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %.neg = sub nsw i64 %0, %2
+  ret i64 %.neg
 }
 
 ; 1 occurrences:
@@ -21,9 +20,9 @@ entry:
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = sub nsw i64 6, %3
-  ret i64 %4
+  %.neg = sub i64 %0, %2
+  %3 = add i64 %.neg, 6
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -32,9 +31,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = sub i64 512, %3
-  ret i64 %4
+  %.neg = sub i64 %0, %2
+  %3 = add i64 %.neg, 512
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -45,9 +44,9 @@ entry:
 define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = sub i64 9223372036854775807, %3
-  ret i64 %4
+  %.neg = sub i64 %0, %2
+  %3 = add i64 %.neg, 9223372036854775807
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

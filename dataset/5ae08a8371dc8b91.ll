@@ -27,7 +27,7 @@ entry:
   %3 = trunc i64 %2 to i16
   %4 = trunc i64 %1 to i16
   %5 = sub i16 %4, %3
-  %6 = xor i16 %0, %5
+  %6 = xor i16 %5, %0
   ret i16 %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = sub i32 %4, %3
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   ret i32 %6
 }
 

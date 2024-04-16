@@ -43,7 +43,7 @@ define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %3, 257
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }
@@ -85,7 +85,7 @@ define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = add nuw nsw i32 %3, 3
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = sub i32 %5, %0
   ret i32 %6
 }

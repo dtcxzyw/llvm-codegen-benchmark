@@ -13,7 +13,7 @@
 define i48 @func0000000000000000(i1 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = lshr i48 %2, 32
-  %4 = trunc i48 %3 to i16
+  %4 = trunc nuw i48 %3 to i16
   %5 = select i1 %0, i16 %4, i16 %1
   %6 = zext i16 %5 to i48
   ret i48 %6
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   %5 = select i1 %0, i32 %4, i32 %1
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

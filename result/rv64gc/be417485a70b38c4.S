@@ -37,8 +37,8 @@ func0000000000000104:                   # @func0000000000000104
 	or	a0, a0, a1
 	ret
 func0000000000000130:                   # @func0000000000000130
-	andi	a1, a1, 2047
-	sltiu	a1, a1, 2
+	andi	a1, a1, 2046
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

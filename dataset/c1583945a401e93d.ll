@@ -9,11 +9,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %1, %2
-  %4 = xor i1 %3, true
-  %5 = sext i1 %4 to i64
-  %6 = getelementptr inbounds { { { { { { ptr, i64 }, i64 } } } }, i32, [1 x i32] }, ptr %0, i64 %5
-  ret ptr %6
+  %3 = icmp uge i32 %1, %2
+  %4 = sext i1 %3 to i64
+  %5 = getelementptr inbounds { { { { { { ptr, i64 }, i64 } } } }, i32, [1 x i32] }, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

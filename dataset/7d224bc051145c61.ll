@@ -5,9 +5,9 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ult i64 %4, 2
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000088(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ult i64 %4, 4294967296
   %6 = or i1 %5, %0
   ret i1 %6
@@ -51,9 +51,9 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = icmp eq i64 %4, 0
-  %6 = or i1 %0, %5
+  %4 = sub i64 0, %1
+  %5 = icmp eq i64 %3, %4
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -64,9 +64,9 @@ entry:
 define i1 @func0000000000000090(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ugt i64 %4, 4294967295
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

@@ -24,11 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	bexti	a0, a0, 16
 	ret
 func0000000000000041:                   # @func0000000000000041
-	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 23
-	andi	a0, a0, -8
-	seqz	a0, a0
+	li	a0, 0
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	sh1add	a0, a0, a0

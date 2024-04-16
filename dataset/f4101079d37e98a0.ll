@@ -20,8 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000098(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ult i32 %2, 2
+  %2 = and i32 %1, 254
+  %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %0, 0
   %5 = or i1 %4, %3
   %6 = sext i1 %5 to i32

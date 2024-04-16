@@ -6,8 +6,8 @@
 define i1 @func0000000000000004(i8 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = add i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %1
   %6 = zext i8 %0 to i64
   %7 = icmp ult i64 %5, %6
   ret i1 %7
@@ -20,8 +20,8 @@ entry:
 define i1 @func0000000000000001(i8 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = add i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %1
   %6 = zext i8 %0 to i64
   %7 = icmp eq i64 %5, %6
   ret i1 %7

@@ -35,8 +35,7 @@ func000000000000003c:                   # @func000000000000003c
 	or	a0, a0, a2
 	ret
 func000000000000003e:                   # @func000000000000003e
-	slli	a2, a2, 60
-	srli	a2, a2, 48
+	slliw	a2, a2, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

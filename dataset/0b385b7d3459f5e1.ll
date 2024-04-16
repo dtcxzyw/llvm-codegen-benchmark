@@ -22,7 +22,7 @@ entry:
   %3 = add i64 %2, %1
   %4 = lshr i64 %3, 11
   %5 = and i64 %4, 4503599627370495
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

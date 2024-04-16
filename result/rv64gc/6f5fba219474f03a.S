@@ -1,25 +1,25 @@
 func0000000000000003:                   # @func0000000000000003
-	slli	a1, a1, 49
-	srli	a1, a1, 57
-	addi	a1, a1, -55
+	lui	a2, 8
+	addiw	a2, a2, -256
+	and	a1, a1, a2
+	lui	a2, 3
+	addiw	a2, a2, 1792
+	xor	a1, a1, a2
 	seqz	a1, a1
 	slli	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	slli	a1, a1, 57
-	srli	a2, a1, 61
-	li	a3, 2
+	andi	a2, a1, 96
 	li	a1, 48
-	bltu	a2, a3, .LBB1_2
+	beqz	a2, .LBB1_2
 	lui	a1, 3
 .LBB1_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	slli	a1, a1, 60
-	srli	a1, a1, 62
-	li	a2, 2
+	andi	a1, a1, 12
+	li	a2, 8
 	beq	a1, a2, .LBB2_2
 	lui	a1, 921600
 	addiw	a1, a1, -1
@@ -31,10 +31,11 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	slli	a1, a1, 33
-	srli	a1, a1, 56
-	sltiu	a1, a1, 144
-	addi	a1, a1, -1
+	lui	a2, 491520
+	and	a1, a1, a2
+	lui	a2, 292864
+	sltu	a1, a2, a1
+	negw	a1, a1
 	slli	a1, a1, 49
 	srli	a1, a1, 49
 	or	a0, a0, a1

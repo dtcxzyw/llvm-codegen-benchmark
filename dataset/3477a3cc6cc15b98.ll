@@ -18,11 +18,11 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i48 %2) #0 {
 entry:
-  %3 = trunc i48 %2 to i16
-  %4 = icmp slt i16 %3, 0
-  %5 = select i1 %4, i32 %0, i32 %1
-  %6 = sdiv i32 %5, 16
-  ret i32 %6
+  %3 = and i48 %2, 32768
+  %.not = icmp eq i48 %3, 0
+  %4 = select i1 %.not, i32 %1, i32 %0
+  %5 = sdiv i32 %4, 16
+  ret i32 %5
 }
 
 ; 5 occurrences:

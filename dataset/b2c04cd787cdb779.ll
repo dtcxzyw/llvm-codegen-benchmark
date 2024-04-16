@@ -10,7 +10,7 @@ entry:
   %4 = zext nneg i24 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = mul nsw i32 %5, %5
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = zext i16 %1 to i32
   %5 = sub nsw i32 %4, %3
   %6 = mul nsw i32 %5, %5
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 

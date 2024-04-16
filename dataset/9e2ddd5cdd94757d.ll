@@ -115,11 +115,9 @@
 define i1 @func00000000000000f4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 7
-  %4 = add nuw nsw i64 %3, 1
-  %5 = getelementptr inbounds ptr, ptr %1, i64 %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 8
-  %7 = icmp ult ptr %6, %5
-  ret i1 %7
+  %4 = getelementptr ptr, ptr %1, i64 %3
+  %5 = icmp ugt ptr %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

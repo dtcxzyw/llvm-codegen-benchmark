@@ -28,7 +28,5 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a0, a0, a1
-	andi	a0, a0, 63
-	sltiu	a0, a0, 32
-	xori	a0, a0, 1
+	bexti	a0, a0, 5
 	ret

@@ -12,7 +12,6 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000018:                   # @func0000000000000018
 	srai	a0, a0, 63
-	andi	a0, a0, 255
 	ret
 func0000000000000007:                   # @func0000000000000007
 	bseti	a1, zero, 31
@@ -36,7 +35,7 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a0, a0
-	li	a1, -4
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 8
+	li	a1, 4
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 4
 	ret

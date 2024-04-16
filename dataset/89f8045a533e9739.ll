@@ -10,7 +10,7 @@ entry:
   %3 = fcmp oeq double %1, %2
   %4 = fcmp ogt double %1, -1.000000e+03
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = fcmp oeq double %1, %2
   %4 = fcmp oge double %1, 0xC3E0000000000000
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = fcmp ole double %1, %2
   %4 = fcmp une double %1, 0x7FF0000000000000
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

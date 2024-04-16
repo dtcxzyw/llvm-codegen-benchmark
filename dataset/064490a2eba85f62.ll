@@ -23,10 +23,9 @@ entry:
 define i1 @func0000000000000054(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 24
-  %4 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  %6 = icmp ult ptr %5, %0
-  ret i1 %6
+  %4 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %3, i64 0, i64 %1, i32 1
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

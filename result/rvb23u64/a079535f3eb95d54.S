@@ -9,7 +9,7 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
-	addi	a1, a1, 5
+	addi	a1, a1, 1
 	andi	a1, a1, 3
 	slti	a0, a0, 5
 	czero.nez	a0, a1, a0

@@ -61,7 +61,7 @@ entry:
   %3 = and i32 %2, 16383
   %4 = add nuw nsw i32 %1, 32
   %5 = icmp ugt i32 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -110,7 +110,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = add nsw i64 %1, 1
   %5 = icmp uge i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

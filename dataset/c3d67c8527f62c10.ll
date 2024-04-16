@@ -183,8 +183,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, i32 0, i32 %4
-  %7 = tail call i32 @llvm.smax.i32(i32 %6, i32 0)
+  %6 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
+  %7 = select i1 %5, i32 0, i32 %6
   ret i32 %7
 }
 

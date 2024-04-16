@@ -7,7 +7,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16384
   %4 = ptrtoint ptr %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = sub i64 %6, %4
   ret i64 %7
 }

@@ -10,11 +10,10 @@
 define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
-  %2 = icmp eq i32 %1, 0
-  %3 = sext i1 %2 to i32
-  %4 = add i32 %0, %3
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %sext = add nsw i32 %1, -1
+  %2 = add i32 %sext, %0
+  %3 = icmp sgt i32 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

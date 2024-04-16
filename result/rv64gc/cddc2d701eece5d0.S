@@ -1,6 +1,6 @@
 func00000000000001d4:                   # @func00000000000001d4
 	sext.w	a2, a2
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	li	a2, 1
 	slli	a2, a2, 33
 	addi	a2, a2, 5

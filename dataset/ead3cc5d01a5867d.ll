@@ -24,9 +24,8 @@ entry:
   %3 = shl nuw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds %struct._ir_insn.1712571, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct._ir_insn.1712571, ptr %0, i64 %5, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -37,9 +36,8 @@ entry:
   %3 = shl nsw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.facebook::velox::StringView.1719269", ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %"struct.facebook::velox::StringView.1719269", ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 ; 13 occurrences:
@@ -62,9 +60,8 @@ entry:
   %3 = shl nsw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.facebook::velox::StringView.1719269", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.facebook::velox::StringView.1719269", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:

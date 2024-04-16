@@ -9,7 +9,7 @@ define i32 @func00000000000000a0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -42,8 +42,8 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 45
   %4 = sext i1 %3 to i64
-  %5 = add i64 %1, %4
-  %6 = add i64 %0, %5
+  %5 = add i64 %4, %1
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -64,7 +64,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -81,7 +81,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 92
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -93,8 +93,8 @@ define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 3
   %4 = sext i1 %3 to i64
-  %5 = add i64 %1, %4
-  %6 = add i64 %0, %5
+  %5 = add i64 %4, %1
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -113,7 +113,7 @@ define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -125,8 +125,8 @@ define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
-  %6 = add i32 %0, %5
+  %5 = add nsw i32 %4, %1
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -139,7 +139,7 @@ define i32 @func00000000000000c0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -151,7 +151,7 @@ define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -164,7 +164,7 @@ define i32 @func00000000000000c5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -177,7 +177,7 @@ define i32 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -190,7 +190,7 @@ define i32 @func00000000000000a5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -207,7 +207,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
+  %5 = add nsw i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -224,7 +224,7 @@ define i64 @func0000000000000067(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 34
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -236,8 +236,8 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %1, %4
-  %6 = add nuw i32 %0, %5
+  %5 = add nsw i32 %4, %1
+  %6 = add nuw i32 %5, %0
   ret i32 %6
 }
 
@@ -248,7 +248,7 @@ define i64 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -264,8 +264,8 @@ define i64 @func0000000000000065(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 3
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %1, %4
-  %6 = add nsw i64 %0, %5
+  %5 = add nsw i64 %4, %1
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

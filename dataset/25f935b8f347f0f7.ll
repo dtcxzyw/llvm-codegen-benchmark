@@ -10,9 +10,8 @@
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = getelementptr %struct.rb_ensure_entry.1553973, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.rb_ensure_entry.1553973, ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 5 occurrences:
@@ -25,9 +24,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr inbounds %struct.Map_TimeStruct_t_.1772000, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds %struct.Map_TimeStruct_t_.1772000, ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -10,10 +10,11 @@
 define i1 @func0000000000000011(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 16
-  %4 = and i1 %1, %3
-  %5 = select i1 %4, i8 1, i8 %0
-  %6 = and i8 %5, 1
-  %7 = icmp eq i8 %6, 0
+  %4 = and i1 %3, %1
+  %5 = and i8 %0, 1
+  %6 = icmp eq i8 %5, 0
+  %not. = xor i1 %4, true
+  %7 = select i1 %not., i1 %6, i1 false
   ret i1 %7
 }
 
@@ -28,9 +29,9 @@ define i1 @func00000000000000c1(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = and i1 %3, %1
-  %5 = select i1 %4, i8 0, i8 %0
-  %6 = and i8 %5, 1
-  %7 = icmp eq i8 %6, 0
+  %5 = and i8 %0, 1
+  %6 = icmp eq i8 %5, 0
+  %7 = select i1 %4, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -41,10 +42,10 @@ entry:
 define i1 @func000000000000001c(i8 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 1
-  %4 = and i1 %1, %3
-  %5 = select i1 %4, i8 1, i8 %0
-  %6 = and i8 %5, 1
-  %7 = icmp ne i8 %6, 0
+  %4 = and i1 %3, %1
+  %5 = and i8 %0, 1
+  %6 = icmp ne i8 %5, 0
+  %7 = select i1 %4, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -54,10 +55,11 @@ entry:
 define i1 @func00000000000000cc(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %1, %3
-  %5 = select i1 %4, i64 0, i64 %0
-  %6 = and i64 %5, 4503599627370495
-  %7 = icmp ne i64 %6, 0
+  %4 = and i1 %3, %1
+  %5 = and i64 %0, 4503599627370495
+  %6 = icmp ne i64 %5, 0
+  %not. = xor i1 %4, true
+  %7 = select i1 %not., i1 %6, i1 false
   ret i1 %7
 }
 

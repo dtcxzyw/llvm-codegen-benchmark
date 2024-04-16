@@ -5,9 +5,9 @@
 define i128 @func000000000000003f(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %2, 19
-  %4 = add nuw nsw i128 %1, %3
+  %4 = add nuw nsw i128 %3, %1
   %5 = xor i128 %4, -1
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = mul i64 %2, 60
   %4 = add i64 %3, %1
   %5 = xor i64 %4, -1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

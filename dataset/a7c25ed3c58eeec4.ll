@@ -13,7 +13,7 @@ entry:
   %4 = fptosi double %3 to i32
   %5 = sitofp i32 %4 to double
   %6 = fcmp une double %3, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

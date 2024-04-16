@@ -182,7 +182,7 @@ define i8 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }
@@ -269,7 +269,7 @@ define i8 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
   %3 = select i1 %2, i32 128, i32 0
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

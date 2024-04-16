@@ -5,7 +5,7 @@
 define i1 @func0000000000000108(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ugt i64 %1, %3
+  %4 = icmp ult i64 %3, %1
   %5 = icmp ult i64 %0, 2049
   %6 = or i1 %5, %4
   ret i1 %6
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000110(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ugt i64 %1, %3
+  %4 = icmp ult i64 %3, %1
   %5 = icmp ugt i32 %0, -2147483648
   %6 = or i1 %5, %4
   ret i1 %6
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6

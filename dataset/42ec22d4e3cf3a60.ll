@@ -27,12 +27,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 53
-  %5 = select i1 %4, i32 40960, i32 %0
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %2 = icmp ugt i64 %1, 2047
+  %3 = zext i32 %0 to i64
+  %4 = select i1 %2, i64 40960, i64 %3
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -52,12 +50,10 @@ declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000091(i32 %0, i64 %1) #0 {
 entry:
-  %2 = call i64 @llvm.ctlz.i64(i64 %1, i1 true), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 49
-  %5 = select i1 %4, i32 12, i32 %0
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %2 = icmp ult i64 %1, 16384
+  %3 = zext nneg i32 %0 to i64
+  %4 = select i1 %2, i64 12, i64 %3
+  ret i64 %4
 }
 
 ; 25 occurrences:
@@ -89,15 +85,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.ctlz.i64(i64 %1, i1 false), !range !0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 49
-  %5 = select i1 %4, i32 12, i32 %0
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %2 = icmp ult i64 %1, 16384
+  %3 = zext nneg i32 %0 to i64
+  %4 = select i1 %2, i64 12, i64 %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
-
-!0 = !{i64 0, i64 65}

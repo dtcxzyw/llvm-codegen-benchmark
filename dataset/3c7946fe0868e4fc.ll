@@ -9,7 +9,7 @@ entry:
   %3 = and i32 %2, 256
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, ptr null, ptr %1
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

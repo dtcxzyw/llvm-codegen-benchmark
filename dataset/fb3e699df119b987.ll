@@ -542,9 +542,9 @@ entry:
 ; Function Attrs: nounwind
 define double @func000000000000000d(double %0) #0 {
 entry:
-  %1 = fcmp uge double %0, 4.000000e+00
-  %2 = select i1 %1, double %0, double 4.000000e+00
-  ret double %2
+  %.inv = fcmp olt double %0, 4.000000e+00
+  %1 = select i1 %.inv, double 4.000000e+00, double %0
+  ret double %1
 }
 
 ; 3 occurrences:

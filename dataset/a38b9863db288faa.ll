@@ -400,10 +400,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
+  %1 = add i32 %0, 1
+  ret i32 %1
 }
 
 ; 55 occurrences:
@@ -465,10 +463,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = add nsw i64 %1, -1
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
+  %1 = add i32 %0, -1
+  ret i32 %1
 }
 
 ; 4 occurrences:
@@ -479,10 +475,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000001f(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = add nuw nsw i64 %1, 1900
-  %3 = trunc nuw nsw i64 %2 to i16
-  ret i16 %3
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 1900
+  ret i16 %2
 }
 
 ; 63 occurrences:
@@ -552,10 +547,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000014(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = add nsw i32 %1, -1
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %1 = add i8 %0, -1
+  ret i8 %1
 }
 
 ; 24 occurrences:
@@ -586,10 +579,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000001c(i16 %0) #0 {
 entry:
-  %1 = zext nneg i16 %0 to i64
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i16
-  ret i16 %3
+  %1 = add i16 %0, 1
+  ret i16 %1
 }
 
 ; 1 occurrences:
@@ -597,10 +588,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = add nuw nsw i32 %1, 1
-  %3 = trunc nuw nsw i32 %2 to i16
-  ret i16 %3
+  %1 = zext i8 %0 to i16
+  %2 = add nuw nsw i16 %1, 1
+  ret i16 %2
 }
 
 ; 3 occurrences:
@@ -610,10 +600,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i64
-  %2 = add nsw i64 %1, -1
-  %3 = trunc nuw nsw i64 %2 to i8
-  ret i8 %3
+  %1 = add i8 %0, -1
+  ret i8 %1
 }
 
 ; 1 occurrences:
@@ -621,10 +609,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i32
-  %2 = add nsw i32 %1, -44032
-  %3 = trunc nuw i32 %2 to i16
-  ret i16 %3
+  %1 = add i16 %0, 21504
+  ret i16 %1
 }
 
 attributes #0 = { nounwind }

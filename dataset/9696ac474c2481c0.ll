@@ -27,12 +27,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 7
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %struct.AHCIDevice.1665213, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 2480
-  ret ptr %6
+  %2 = shl i64 %1, 25
+  %3 = ashr i64 %2, 32
+  %4 = getelementptr %struct.AHCIDevice.1665213, ptr %0, i64 %3, i32 12
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -41,9 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 30
+  %2 = shl i64 %1, 30
+  %3 = ashr exact i64 %2, 30
+  %4 = and i64 %3, -4
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 2
   ret ptr %6

@@ -8,7 +8,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = mul i64 %1, %5
+  %6 = mul i64 %5, %1
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = mul i64 %1, %5
+  %6 = mul i64 %5, %1
   %7 = getelementptr float, ptr %0, i64 %6
   ret ptr %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %1, %5
+  %6 = mul nsw i64 %5, %1
   %7 = getelementptr float, ptr %0, i64 %6
   ret ptr %7
 }
@@ -50,7 +50,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = or disjoint i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %1, %5
+  %6 = mul nsw i64 %5, %1
   %7 = getelementptr float, ptr %0, i64 %6
   ret ptr %7
 }
@@ -63,7 +63,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %1, %5
+  %6 = mul nsw i64 %5, %1
   %7 = getelementptr inbounds i32, ptr %0, i64 %6
   ret ptr %7
 }

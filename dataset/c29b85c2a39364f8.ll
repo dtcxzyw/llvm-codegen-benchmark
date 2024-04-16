@@ -159,7 +159,7 @@ entry:
   %3 = sub nsw i32 -53, %2
   %4 = zext nneg i32 %3 to i64
   %5 = trunc i128 %1 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = lshr i64 %6, %4
   ret i64 %7
 }
@@ -180,7 +180,7 @@ entry:
   %3 = sub nsw i32 -53, %2
   %4 = zext nneg i32 %3 to i64
   %5 = trunc nuw i128 %1 to i64
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = lshr i64 %6, %4
   ret i64 %7
 }

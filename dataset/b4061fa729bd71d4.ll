@@ -9,9 +9,8 @@ entry:
   %1 = lshr i32 %0, 17
   %2 = add nuw nsw i32 %1, 7
   %3 = and i32 %2, 65528
-  %4 = sub nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp ugt i32 %3, %1
+  ret i1 %4
 }
 
 ; 1 occurrences:

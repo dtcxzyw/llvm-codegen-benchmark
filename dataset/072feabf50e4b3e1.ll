@@ -13,8 +13,8 @@
 define i1 @func000000000000001c(i8 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i8 %1, i8 1
-  %5 = and i8 %4, 1
+  %4 = and i8 %1, 1
+  %5 = select i1 %3, i8 %4, i8 1
   %6 = icmp ne i8 %5, %0
   ret i1 %6
 }

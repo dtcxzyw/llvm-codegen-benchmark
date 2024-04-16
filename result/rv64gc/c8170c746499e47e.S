@@ -8,8 +8,8 @@ func0000000000000071:                   # @func0000000000000071
 .LBB0_2:                                # %entry
 	ret
 func0000000000000078:                   # @func0000000000000078
-	slli	a2, a2, 59
-	srli	a2, a2, 53
+	slli	a2, a2, 6
+	andi	a2, a2, 1792
 	or	a1, a1, a2
 	sext.w	a1, a1
 	li	a2, 255

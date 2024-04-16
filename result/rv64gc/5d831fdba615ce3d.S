@@ -11,6 +11,5 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 .LBB0_4:
 	li	a0, -1
-	srli	a0, a0, 1
-	srli	a0, a0, 3
+	srli	a0, a0, 4
 	ret

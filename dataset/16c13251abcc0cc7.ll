@@ -30,12 +30,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func00000000000000ec(i48 %0, i48 %1) #0 {
 entry:
-  %2 = shl nuw nsw i48 %1, 16
-  %3 = shl nuw i48 %0, 32
-  %4 = or disjoint i48 %3, %2
-  %5 = lshr exact i48 %4, 16
-  %6 = trunc i48 %5 to i16
-  ret i16 %6
+  %2 = trunc i48 %1 to i16
+  ret i16 %2
 }
 
 ; 4 occurrences:
@@ -46,12 +42,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func00000000000000bc(i48 %0, i48 %1) #0 {
 entry:
-  %2 = shl nuw i48 %1, 32
-  %3 = shl nuw nsw i48 %0, 16
-  %4 = or disjoint i48 %3, %2
-  %5 = lshr exact i48 %4, 16
-  %6 = trunc i48 %5 to i16
-  ret i16 %6
+  %2 = trunc i48 %0 to i16
+  ret i16 %2
 }
 
 ; 4 occurrences:
@@ -96,7 +88,7 @@ entry:
   %3 = shl nuw nsw i64 %0, 1
   %4 = or disjoint i64 %3, %2
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 
@@ -110,7 +102,7 @@ entry:
   %3 = shl i128 %0, 65
   %4 = or disjoint i128 %3, %2
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -123,7 +115,7 @@ entry:
   %3 = shl i64 %0, 32
   %4 = or i64 %3, %2
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 
@@ -163,7 +155,7 @@ entry:
   %3 = shl nuw i32 %0, 24
   %4 = or disjoint i32 %3, %2
   %5 = lshr i32 %4, 16
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }
 
@@ -176,7 +168,7 @@ entry:
   %3 = shl nuw i64 %0, 32
   %4 = or i64 %3, %2
   %5 = lshr i64 %4, 56
-  %6 = trunc i64 %5 to i8
+  %6 = trunc nuw i64 %5 to i8
   ret i8 %6
 }
 

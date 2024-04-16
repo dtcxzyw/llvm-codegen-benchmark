@@ -2,14 +2,14 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a2, a2
 	sext.w	a1, a1
 	minu	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	sext.w	a1, a1
 	minu	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sltiu	a0, a0, 8
 	ret
 func0000000000000028:                   # @func0000000000000028

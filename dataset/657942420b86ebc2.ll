@@ -7,9 +7,9 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr i8, ptr %0, i64 4
-  %6 = getelementptr inbounds i32, ptr %5, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 4
+  %5 = getelementptr i32, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }
 

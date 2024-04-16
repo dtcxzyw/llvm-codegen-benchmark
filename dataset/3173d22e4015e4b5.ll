@@ -44,7 +44,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, %1
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   ret i64 %3
 }
 

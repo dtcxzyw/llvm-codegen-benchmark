@@ -16,7 +16,7 @@ entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 99
   %3 = udiv i64 %2, 100
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

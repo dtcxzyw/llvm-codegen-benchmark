@@ -37,7 +37,7 @@ define i32 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = tail call double @llvm.fmuladd.f64(double %1, double 0x3FD34413509F79FF, double -1.000000e-10)
   %3 = fptosi double %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 

@@ -7,12 +7,11 @@
 ; Function Attrs: nounwind
 define i48 @func000000000000001b(i48 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = zext nneg i32 %2 to i48
-  %4 = shl nuw i48 %0, 32
-  %5 = or disjoint i48 %4, %3
-  %6 = or disjoint i48 %5, 4294901760
-  ret i48 %6
+  %2 = zext i32 %1 to i48
+  %3 = shl nuw i48 %0, 32
+  %4 = or disjoint i48 %3, %2
+  %5 = or i48 %4, 4294901760
+  ret i48 %5
 }
 
 ; 1 occurrences:

@@ -172,10 +172,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 -1
-  %4 = add nsw i32 %3, -11904
-  %5 = icmp ult i32 %4, 30288
-  %6 = and i1 %0, %5
+  %3 = add nsw i32 %2, -11904
+  %4 = icmp ult i32 %3, 30288
+  %5 = select i1 %1, i1 %4, i1 false
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -275,10 +275,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = add i32 %3, -67108865
-  %5 = icmp ult i32 %4, -67108353
-  %6 = and i1 %0, %5
+  %3 = add i32 %2, -67108865
+  %4 = icmp ult i32 %3, -67108353
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -25,8 +25,9 @@ func00000000000000c8:                   # @func00000000000000c8
 	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	add	a0, a0, a1
-	addi	a0, a0, -256
+	addi	a1, a1, -256
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da

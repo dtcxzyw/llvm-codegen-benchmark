@@ -7,7 +7,7 @@
 define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 8192)
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = icmp slt i32 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5

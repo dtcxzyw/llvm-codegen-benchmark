@@ -263,7 +263,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 -1, %3
   %5 = and i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

@@ -14,7 +14,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smax.i64(i64 %1, i64 %2)
   %4 = add i64 %3, -1
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -29,7 +29,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = add nsw i32 %3, -1
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = add nsw i32 %3, 500000000
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -55,7 +55,7 @@ define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = add nsw i32 %3, 2
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -71,7 +71,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smax.i64(i64 %1, i64 %2)
   %4 = add nsw i64 %3, -1
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -82,7 +82,7 @@ define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.smax.i64(i64 %1, i64 %2)
   %4 = add i64 %3, 1
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -94,7 +94,7 @@ define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = add nsw i32 %3, -1
-  %5 = icmp sge i32 %0, %4
+  %5 = icmp sle i32 %4, %0
   ret i1 %5
 }
 

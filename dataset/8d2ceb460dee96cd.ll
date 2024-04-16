@@ -266,7 +266,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 55296
   %4 = select i1 %3, i32 128, i32 0
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = xor i32 %5, 42
   %7 = lshr i32 %6, %0
   ret i32 %7

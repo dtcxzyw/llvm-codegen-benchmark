@@ -13,7 +13,7 @@ func0000000000000006:                   # @func0000000000000006
 	addi	sp, sp, -16
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
 	mul	a0, a0, a2
 	lui	a2, 244141

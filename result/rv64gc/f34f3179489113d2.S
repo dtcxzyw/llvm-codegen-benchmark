@@ -1,10 +1,9 @@
 func0000000000000096:                   # @func0000000000000096
-	slli	a1, a1, 48
-	srli	a1, a1, 49
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	sub	a0, a0, a1
-	slti	a0, a0, 0
+	slli	a1, a1, 48
+	srli	a1, a1, 49
+	sltu	a0, a0, a1
 	ret
 func0000000000000094:                   # @func0000000000000094
 	srliw	a1, a1, 6

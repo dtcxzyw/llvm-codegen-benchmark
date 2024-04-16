@@ -10,9 +10,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, double %1) #0 {
 entry:
-  %2 = select i1 %0, double 0.000000e+00, double %1
-  %3 = bitcast double %2 to i64
-  %4 = lshr i64 %3, 32
+  %2 = bitcast double %1 to i64
+  %3 = lshr i64 %2, 32
+  %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }
 

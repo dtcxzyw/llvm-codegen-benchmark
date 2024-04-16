@@ -12,7 +12,7 @@ entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = add nuw nsw i64 %5, 1048576
   ret i64 %6
 }
@@ -29,7 +29,7 @@ entry:
   %2 = lshr i32 %1, 21
   %3 = and i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = add i64 %5, 2
   ret i64 %6
 }
@@ -43,7 +43,7 @@ entry:
   %2 = lshr i32 %1, 14
   %3 = and i32 %2, 262140
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = add nsw i64 %5, 4
   ret i64 %6
 }

@@ -25,7 +25,7 @@
 define float @func0000000000000008(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 0.000000e+00
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, float 0.000000e+00, float %0
   ret float %5
 }
@@ -36,7 +36,7 @@ entry:
 define float @func0000000000000002(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 5.000000e-01
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, float 1.000000e+00, float %0
   ret float %5
 }

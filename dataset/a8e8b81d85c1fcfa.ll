@@ -5,7 +5,7 @@
 define i64 @func0000000000000002(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -1
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -59,7 +59,7 @@ entry:
 define i8 @func0000000000000038(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 24
-  %3 = icmp ne ptr %0, %2
+  %3 = icmp ne ptr %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -84,7 +84,7 @@ entry:
 define i64 @func0000000000000022(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 16
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -97,7 +97,7 @@ entry:
 define i32 @func0000000000000028(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 6
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -108,7 +108,7 @@ entry:
 define i64 @func0000000000000018(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -168
-  %3 = icmp ne ptr %0, %2
+  %3 = icmp ne ptr %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -119,7 +119,7 @@ entry:
 define i32 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -4
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

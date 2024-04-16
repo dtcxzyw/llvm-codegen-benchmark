@@ -9,7 +9,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   %5 = tail call double @llvm.fabs.f64(double %1)
   %6 = fadd double %4, %5
   ret double %6
@@ -35,7 +35,7 @@ declare double @llvm.fabs.f64(double) #1
 define float @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fabs.f32(float %2)
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   %5 = tail call noundef float @llvm.fabs.f32(float %1)
   %6 = fadd float %4, %5
   ret float %6

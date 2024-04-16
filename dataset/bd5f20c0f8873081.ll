@@ -11906,9 +11906,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = icmp ne i64 %0, 0
-  %2 = select i1 %1, i64 8, i64 0
-  ret i64 %2
+  %.not = icmp eq i64 %0, 0
+  %1 = select i1 %.not, i64 0, i64 8
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

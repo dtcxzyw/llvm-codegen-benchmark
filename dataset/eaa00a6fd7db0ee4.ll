@@ -30,7 +30,7 @@ entry:
 define i16 @func0000000000000030(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 0, i16 10
-  %4 = add nuw nsw i16 %1, %3
+  %4 = add nuw nsw i16 %3, %1
   %5 = add i16 %0, -1
   %6 = add i16 %5, %4
   ret i16 %6
@@ -54,7 +54,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 999999999, i32 -1
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = add nsw i32 %0, -1999999999
   %6 = add nsw i32 %5, %4
   ret i32 %6

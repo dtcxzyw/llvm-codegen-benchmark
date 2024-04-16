@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 2, %1
+  %2 = shl nuw i32 2, %1
   %3 = sdiv i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4

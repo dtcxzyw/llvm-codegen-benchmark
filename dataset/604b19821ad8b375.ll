@@ -10,7 +10,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = lshr i32 %4, 3
   %6 = and i32 %5, 528482304
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

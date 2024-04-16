@@ -7,14 +7,14 @@ func0000000000000044:                   # @func0000000000000044
 	srli	a3, a2, 63
 	srai	a2, a2, 25
 	add	a2, a2, a3
-	lui	a3, 1027482
-	addiw	a3, a3, 1024
+	lui	a3, 21094
+	addiw	a3, a3, -1024
 	mul	a2, a2, a3
 	lui	a3, 1047697
 	addiw	a3, a3, 384
 	mul	a0, a0, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sub	a0, a0, a2
 	ret
 .LCPI1_0:
 	.quad	3667970486771497111             # 0x32e73fb956a1b897
@@ -25,8 +25,8 @@ func0000000000000040:                   # @func0000000000000040
 	srli	a3, a2, 63
 	srai	a2, a2, 34
 	add	a2, a2, a3
-	lui	a3, 1046001
-	addiw	a3, a3, 325
+	lui	a3, 2575
+	addiw	a3, a3, -325
 	slli	a3, a3, 13
 	mul	a2, a2, a3
 	lui	a3, 262083
@@ -34,5 +34,5 @@ func0000000000000040:                   # @func0000000000000040
 	addi	a3, a3, -576
 	mul	a0, a0, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sub	a0, a0, a2
 	ret

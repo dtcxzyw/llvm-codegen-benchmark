@@ -8,7 +8,7 @@
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.bswap.i64(i64 %2)
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -25,7 +25,7 @@ declare i64 @llvm.bswap.i64(i64) #1
 define i1 @func0000000000000005(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.bswap.i16(i16 %2)
-  %4 = icmp ule i16 %1, %3
+  %4 = icmp uge i16 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

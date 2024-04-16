@@ -1,6 +1,6 @@
 func0000000000000144:                   # @func0000000000000144
 	andi	a0, a0, 255
-	andi	a1, a1, 127
+	andi	a1, a1, 126
 	addi	a1, a1, -58
 	sltiu	a1, a1, -10
 	sltiu	a0, a0, 252

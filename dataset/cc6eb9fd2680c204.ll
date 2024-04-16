@@ -39,9 +39,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr inbounds %"class.folly::UnboundedQueue.185.1645749", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 128
-  ret ptr %6
+  %5 = getelementptr inbounds %"class.folly::UnboundedQueue.185.1645749", ptr %0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:

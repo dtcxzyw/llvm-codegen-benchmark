@@ -111,9 +111,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 5
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = shl nuw nsw i32 %3, 2
+  %2 = lshr i32 %1, 3
+  %3 = and i32 %2, 536870908
+  %4 = select i1 %0, i32 4, i32 %3
   ret i32 %4
 }
 
@@ -122,10 +122,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 4
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = shl nuw i32 %3, 4
-  ret i32 %4
+  %2 = and i32 %1, -16
+  %3 = select i1 %0, i32 16, i32 %2
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -134,9 +133,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 3
-  %3 = select i1 %0, i32 -1, i32 %2
-  %4 = shl i32 %3, 6
+  %2 = shl i32 %1, 3
+  %3 = and i32 %2, -64
+  %4 = select i1 %0, i32 -64, i32 %3
   ret i32 %4
 }
 

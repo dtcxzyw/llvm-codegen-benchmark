@@ -5,6 +5,7 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 32
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -8,7 +8,7 @@ entry:
   %2 = srem i64 %1, 86400
   %3 = select i1 %0, i64 86400, i64 0
   %4 = add nsw i64 %3, %2
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nsw i64 %4 to i32
   %6 = icmp ugt i32 %5, 86399
   ret i1 %6
 }

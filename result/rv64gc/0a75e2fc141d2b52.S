@@ -37,16 +37,14 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000156:                   # @func0000000000000156
 	add	a1, a1, a2
-	not	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 6
+	subw	a1, a1, a0
+	slti	a0, a1, -6
+	xori	a0, a0, 1
 	ret
 func000000000000015a:                   # @func000000000000015a
 	add	a1, a1, a2
-	not	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 7
-	xori	a0, a0, 1
+	subw	a1, a1, a0
+	slti	a0, a1, -7
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
@@ -63,10 +61,9 @@ func000000000000034a:                   # @func000000000000034a
 	sgtz	a0, a0
 	ret
 func000000000000035a:                   # @func000000000000035a
-	add	a1, a1, a2
-	subw	a0, a0, a1
+	addw	a1, a1, a2
 	addiw	a0, a0, -8
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	add	a1, a1, a2
@@ -88,10 +85,8 @@ func00000000000003ca:                   # @func00000000000003ca
 	ret
 func0000000000000144:                   # @func0000000000000144
 	add	a1, a1, a2
-	not	a1, a1
-	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
+	subw	a1, a1, a0
+	lui	a0, 524288
 	sltu	a0, a0, a1
 	ret
 func0000000000000046:                   # @func0000000000000046
@@ -109,10 +104,8 @@ func0000000000000348:                   # @func0000000000000348
 	ret
 func0000000000000048:                   # @func0000000000000048
 	add	a1, a1, a2
-	not	a1, a1
-	addw	a0, a0, a1
-	sltiu	a0, a0, 16
-	xori	a0, a0, 1
+	subw	a1, a1, a0
+	sltiu	a0, a1, -16
 	ret
 func0000000000000356:                   # @func0000000000000356
 	add	a1, a1, a2

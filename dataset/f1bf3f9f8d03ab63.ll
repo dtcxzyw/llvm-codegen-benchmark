@@ -6,7 +6,7 @@
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = call i32 @llvm.smin.i32(i32 %0, i32 %4)
   ret i32 %5
 }

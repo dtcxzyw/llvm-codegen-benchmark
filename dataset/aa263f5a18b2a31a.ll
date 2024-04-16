@@ -40,10 +40,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub i64 0, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 204 occurrences:
@@ -254,10 +253,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = sub i64 0, %3
-  %5 = getelementptr inbounds %"struct.std::pair.28.1554679", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr inbounds %"struct.std::pair.28.1554679", ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 186 occurrences:
@@ -450,10 +448,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub i64 0, %3
-  %5 = getelementptr inbounds i64, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr inbounds i64, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -461,10 +458,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = sub i64 0, %3
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr ptr, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 11 occurrences:
@@ -482,10 +478,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds %"class.std::__cxx11::basic_string.1696494", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub nsw i64 %2, %1
+  %3 = getelementptr inbounds %"class.std::__cxx11::basic_string.1696494", ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 27 occurrences:
@@ -519,10 +514,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds i32, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr inbounds i32, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -532,10 +526,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub nuw nsw i64 8, %3
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  %4 = getelementptr i8, ptr %3, i64 8
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -543,10 +537,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub nuw nsw i64 4, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  %4 = getelementptr i8, ptr %3, i64 4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -554,10 +548,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub nuw i64 -8, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -565,10 +559,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub nsw i64 8, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub i64 %2, %1
+  %3 = getelementptr i8, ptr %0, i64 %.neg
+  %4 = getelementptr i8, ptr %3, i64 8
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -576,10 +570,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sub nsw i64 %2, %1
+  %3 = getelementptr ptr, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

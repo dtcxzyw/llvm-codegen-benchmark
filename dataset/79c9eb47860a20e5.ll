@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, -9223372036854775807
-  %3 = and i64 %2, 255
-  %4 = lshr i64 %3, 3
+  %2 = add i64 %1, 1
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 31
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -20,8 +20,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8
-  %3 = and i64 %2, 4294967288
-  %4 = lshr exact i64 %3, 3
+  %3 = lshr i64 %2, 3
+  %4 = and i64 %3, 536870911
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   ret ptr %5
 }

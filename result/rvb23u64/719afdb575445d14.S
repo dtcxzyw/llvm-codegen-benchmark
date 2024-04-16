@@ -1,7 +1,7 @@
 func0000000000000154:                   # @func0000000000000154
 	srai	a1, a1, 32
-	mul	a2, a0, a1
-	mulw	a0, a0, a1
+	mul	a2, a1, a0
+	mulw	a0, a1, a0
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

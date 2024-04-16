@@ -7,8 +7,8 @@
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %0, i32 %2)
-  %4 = select i1 %1, i32 %0, i32 %3
-  %5 = sub nsw i32 %0, %4
+  %4 = sub i32 %0, %3
+  %5 = select i1 %1, i32 0, i32 %4
   ret i32 %5
 }
 
@@ -22,8 +22,8 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %0, i32 %2)
-  %4 = select i1 %1, i32 %0, i32 %3
-  %5 = sub i32 %0, %4
+  %4 = sub i32 %0, %3
+  %5 = select i1 %1, i32 0, i32 %4
   ret i32 %5
 }
 

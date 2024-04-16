@@ -52,7 +52,7 @@ entry:
   %3 = udiv i64 1572864, %2
   %4 = tail call i64 @llvm.smin.i64(i64 %1, i64 %3)
   %5 = and i64 %4, -4
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -69,7 +69,7 @@ entry:
   %3 = udiv i64 1572864, %2
   %4 = call i64 @llvm.smin.i64(i64 %1, i64 %3)
   %5 = and i64 %4, -4
-  %6 = icmp sle i64 %0, %5
+  %6 = icmp sge i64 %5, %0
   ret i1 %6
 }
 

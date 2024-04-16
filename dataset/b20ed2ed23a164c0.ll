@@ -51,7 +51,7 @@ define i64 @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds [14 x %"union.std::aligned_storage<8, 8>::type.1637575"], ptr %1, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

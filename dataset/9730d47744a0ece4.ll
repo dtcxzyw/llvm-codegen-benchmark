@@ -14,7 +14,7 @@ define i1 @func0000000000000116(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = zext i32 %1 to i64
   %7 = icmp slt i64 %5, %6
   ret i1 %7

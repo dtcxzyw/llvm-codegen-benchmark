@@ -6,7 +6,7 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000013:                   # @func0000000000000013
 	mul	a3, a3, a4
-	mulhu	a2, a2, a4
+	mulhu	a2, a4, a2
 	add	a2, a2, a3
 	srli	a3, a2, 63
 	slli	a4, a2, 1

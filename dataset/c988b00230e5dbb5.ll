@@ -16,8 +16,8 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 1
-  %6 = add nuw i64 %5, %1
-  %7 = getelementptr inbounds i32, ptr %0, i64 %6
+  %6 = getelementptr i32, ptr %0, i64 %5
+  %7 = getelementptr i32, ptr %6, i64 %1
   ret ptr %7
 }
 

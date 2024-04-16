@@ -6,7 +6,7 @@ define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fptoui double %1 to i32
   %3 = uitofp i32 %2 to double
-  %4 = fcmp olt double %0, %3
+  %4 = fcmp ogt double %3, %0
   ret i1 %4
 }
 

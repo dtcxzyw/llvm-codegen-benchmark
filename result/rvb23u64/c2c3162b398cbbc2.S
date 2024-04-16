@@ -1,9 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	lui	a1, 524288
-	addi	a1, a1, -1
-	slli	a1, a1, 32
-	and	a0, a0, a1
-	li	a1, -53
+	li	a1, 1995
 	slli	a1, a1, 52
 	add	a0, a0, a1
 	li	a1, 2047

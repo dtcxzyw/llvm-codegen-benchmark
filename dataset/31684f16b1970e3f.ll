@@ -7,7 +7,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add i64 %0, -1
   %4 = tail call noundef i64 @llvm.umin.i64(i64 %3, i64 %2)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add i64 %0, -12
   %4 = call i64 @llvm.umin.i64(i64 %3, i64 %2)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %0, 3
   %4 = tail call noundef i32 @llvm.umin.i32(i32 %3, i32 %2)
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   ret i16 %5
 }
 
@@ -51,7 +51,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %0, -1
   %4 = call noundef i32 @llvm.umin.i32(i32 %3, i32 %2)
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
 

@@ -8,7 +8,7 @@ entry:
   %3 = and i1 %1, %2
   %4 = xor i1 %3, true
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

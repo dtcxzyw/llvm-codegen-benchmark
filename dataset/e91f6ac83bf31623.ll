@@ -45,9 +45,8 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -58,9 +57,8 @@ entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.software_node.2020332, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.software_node.2020332, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -71,9 +69,8 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %class.rational.2085818, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %class.rational.2085818, ptr %0, i64 %4, i32 0, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -87,9 +84,8 @@ entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %"struct.sat::lookahead::dfs_info.2092175", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.sat::lookahead::dfs_info.2092175", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

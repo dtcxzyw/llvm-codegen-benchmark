@@ -42,9 +42,8 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.name_entry.1779610, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 52
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.name_entry.1779610, ptr %0, i64 %5, i32 3
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -86,8 +85,8 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 2, i32 %1
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 2, i64 %4
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7

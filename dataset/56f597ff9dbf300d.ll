@@ -17,10 +17,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i64
-  %3 = select i1 %0, i64 -1, i64 %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = icmp eq i16 %1, 0
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -30,10 +30,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = select i1 %0, i64 8, i64 %2
-  %4 = icmp ult i64 %3, 8
-  ret i1 %4
+  %2 = icmp ult i32 %1, 8
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -44,10 +44,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = select i1 %0, i32 10, i32 %2
-  %4 = icmp ugt i32 %3, 13
-  ret i1 %4
+  %2 = icmp ugt i16 %1, 13
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -57,10 +57,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = select i1 %0, i64 -1, i64 %2
-  %4 = icmp ult i64 %3, 1073741825
-  ret i1 %4
+  %2 = icmp ult i32 %1, 1073741825
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -68,10 +68,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i16
-  %3 = select i1 %0, i16 1, i16 %2
-  %4 = icmp eq i16 %3, 0
-  ret i1 %4
+  %2 = icmp eq i8 %1, 0
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -79,10 +79,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = select i1 %0, i32 1, i32 %2
-  %4 = icmp ugt i32 %3, 1
-  ret i1 %4
+  %2 = icmp ugt i8 %1, 1
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

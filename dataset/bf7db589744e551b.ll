@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1442695040888963407
+  %3 = add i64 %2, 289773536282116431
   %4 = lshr i64 %3, 27
-  %5 = xor i64 %1, %4
+  %5 = xor i64 %4, %1
   %6 = trunc i64 %5 to i32
   %7 = call noundef i32 @llvm.fshr.i32(i32 %6, i32 %6, i32 %0)
   ret i32 %7
@@ -25,9 +25,9 @@ declare i32 @llvm.fshr.i32(i32, i32, i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -6812164046247290893
+  %3 = add i64 %2, 105364981393790963
   %4 = lshr i64 %3, 27
-  %5 = xor i64 %1, %4
+  %5 = xor i64 %4, %1
   %6 = trunc i64 %5 to i32
   %7 = tail call i32 @llvm.fshr.i32(i32 %6, i32 %6, i32 %0)
   ret i32 %7

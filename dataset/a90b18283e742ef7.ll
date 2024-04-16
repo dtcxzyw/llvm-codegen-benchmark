@@ -78,9 +78,8 @@ define i1 @func00000000000001d6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
   %3 = or disjoint i32 %2, 8
-  %4 = sub nsw i32 %0, %3
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %4 = icmp sgt i32 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -90,9 +89,8 @@ define i1 @func00000000000000da(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = or disjoint i32 %2, 4
-  %4 = sub nsw i32 %0, %3
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

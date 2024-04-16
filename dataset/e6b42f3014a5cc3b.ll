@@ -10,7 +10,7 @@ entry:
   %3 = add i64 %2, 3
   %4 = and i64 %3, -4
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

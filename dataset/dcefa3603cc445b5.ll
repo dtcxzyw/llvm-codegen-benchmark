@@ -8,8 +8,8 @@
 define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 40
-  %2 = add nsw i64 %1, -1
-  %3 = icmp ugt i64 %2, 15
+  %2 = add nsw i64 %1, -17
+  %3 = icmp ult i64 %2, -16
   ret i1 %3
 }
 
@@ -34,10 +34,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = udiv i64 %0, 40
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, 0
-  ret i1 %3
+  %.off = add i64 %0, -40
+  %1 = icmp ult i64 %.off, 40
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

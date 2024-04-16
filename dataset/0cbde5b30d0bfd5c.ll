@@ -38,8 +38,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %1, %4
-  %6 = getelementptr inbounds i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -53,8 +53,8 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %1, %4
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -86,8 +86,8 @@ define ptr @func0000000000000019(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %1, %4
-  %6 = getelementptr inbounds i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -101,8 +101,8 @@ define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %1, %4
-  %6 = getelementptr i64, ptr %0, i64 %5
+  %5 = getelementptr i64, ptr %0, i64 %4
+  %6 = getelementptr i64, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -113,8 +113,8 @@ define ptr @func0000000000000039(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = or disjoint i64 %3, 1
-  %5 = add i64 %4, %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -125,8 +125,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.2239523", ptr %0, i64 %5
+  %5 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.2239523", ptr %0, i64 %4
+  %6 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.2239523", ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -137,8 +137,8 @@ define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.2239523", ptr %0, i64 %5
+  %5 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.2239523", ptr %0, i64 %4
+  %6 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.2239523", ptr %5, i64 %1
   ret ptr %6
 }
 

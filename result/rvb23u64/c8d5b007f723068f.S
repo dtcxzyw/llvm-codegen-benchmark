@@ -9,9 +9,9 @@ func0000000000000001:                   # @func0000000000000001
 	sraiw	a0, a0, 2
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	a0, a0, -2
 	slli	a0, a0, 31
-	bseti	a1, zero, 34
+	li	a1, 3
+	slli	a1, a1, 32
 	add	a0, a0, a1
 	srai	a0, a0, 32
 	ret

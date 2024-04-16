@@ -6,11 +6,11 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 10
-  %2 = trunc i32 %1 to i8
-  %3 = lshr i8 %2, 4
-  %4 = or disjoint i8 %3, 48
-  ret i8 %4
+  %sum.shift = lshr i32 %0, 14
+  %1 = trunc i32 %sum.shift to i8
+  %2 = and i8 %1, 15
+  %3 = or disjoint i8 %2, 48
+  ret i8 %3
 }
 
 ; 3 occurrences:
@@ -20,11 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
-  %3 = lshr i32 %2, 16
-  %4 = or i32 %3, 1
-  ret i32 %4
+  %sum.shift = lshr i64 %0, 48
+  %1 = trunc nuw nsw i64 %sum.shift to i32
+  %2 = or i32 %1, 1
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

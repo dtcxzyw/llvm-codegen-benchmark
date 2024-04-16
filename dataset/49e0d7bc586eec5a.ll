@@ -7,7 +7,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

@@ -6,7 +6,7 @@
 define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = add nuw nsw i64 %1, %2
+  %3 = add nuw nsw i64 %2, %1
   %4 = freeze i64 %3
   %5 = add i64 %4, -1
   %6 = urem i64 %5, %2

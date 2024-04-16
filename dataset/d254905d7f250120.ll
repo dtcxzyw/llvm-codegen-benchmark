@@ -9,7 +9,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = call noundef float @llvm.fabs.f32(float %3)
   %5 = fcmp ogt float %4, 0x3F50624DE0000000
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = tail call float @llvm.fabs.f32(float %3)
   %5 = fcmp une float %4, 0x7FF0000000000000
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = fsub double %1, %2
   %4 = tail call double @llvm.fabs.f64(double %3)
   %5 = fcmp ole double %4, 0x3EB0C6F7A0B5ED8D
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

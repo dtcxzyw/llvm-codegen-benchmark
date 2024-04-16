@@ -15,7 +15,7 @@ entry:
   %2 = tail call i64 @llvm.fshl.i64(i64 %1, i64 %1, i64 31)
   %3 = mul i64 %2, -7046029288634856825
   %4 = tail call i64 @llvm.fshl.i64(i64 %3, i64 %3, i64 1)
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = tail call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 13)
   %3 = mul i32 %2, -1640531535
   %4 = tail call noundef i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 7)
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

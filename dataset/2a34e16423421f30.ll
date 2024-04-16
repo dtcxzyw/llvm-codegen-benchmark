@@ -12,7 +12,7 @@ entry:
   %4 = tail call i16 @llvm.smin.i16(i16 %1, i16 %3)
   %5 = zext i16 %4 to i48
   %6 = shl nuw nsw i48 %5, 16
-  %7 = or disjoint i48 %0, %6
+  %7 = or disjoint i48 %6, %0
   ret i48 %7
 }
 

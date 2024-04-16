@@ -28,7 +28,8 @@ func000000000000000a:                   # @func000000000000000a
 .LBB4_2:                                # %entry
 	ret
 func0000000000000009:                   # @func0000000000000009
-	bgeu	a2, a0, .LBB5_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
+	mv	a0, a1
 	ret

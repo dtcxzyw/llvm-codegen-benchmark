@@ -5,7 +5,7 @@
 define i16 @func0000000000000001(i16 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 63
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   %5 = zext i8 %1 to i16
   %6 = urem i16 %4, %5
   ret i16 %6

@@ -8,7 +8,7 @@ entry:
   %3 = and i8 %2, 15
   %4 = icmp eq i32 %1, 4
   %5 = select i1 %4, i8 %3, i8 0
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   %7 = zext i8 %6 to i64
   ret i64 %7
 }

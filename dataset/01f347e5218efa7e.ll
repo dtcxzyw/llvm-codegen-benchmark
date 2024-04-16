@@ -11,8 +11,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %0
-  %5 = xor i64 %4, -4734510112055689544
-  %6 = lshr i64 %5, 51
+  %5 = lshr i64 %4, 51
+  %6 = xor i64 %5, 6089
   ret i64 %6
 }
 

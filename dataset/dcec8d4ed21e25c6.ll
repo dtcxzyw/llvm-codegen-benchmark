@@ -15,8 +15,8 @@
 define i64 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, ptr null, ptr %1
-  %5 = ptrtoint ptr %4 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = select i1 %3, i64 0, i64 %4
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6
   ret i64 %7

@@ -4,11 +4,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i16 %0, i16 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i16
-  %4 = shl nuw nsw i16 %0, %1
-  %5 = or i16 %4, %3
-  %6 = trunc i16 %5 to i8
-  ret i8 %6
+  %3 = shl nuw nsw i16 %0, %1
+  %4 = trunc i16 %3 to i8
+  %5 = or i8 %4, %2
+  ret i8 %5
 }
 
 ; 1 occurrences:

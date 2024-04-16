@@ -15,12 +15,12 @@ func000000000000001e:                   # @func000000000000001e
 	rol	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
-	addi	a0, a0, -5
+	addi	a0, a0, 59
 	li	a1, -2
 	rol	a0, a1, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
-	addi	a0, a0, -16
+	addi	a0, a0, 48
 	bset	a0, zero, a0
 	addi	a0, a0, -1
 	ret

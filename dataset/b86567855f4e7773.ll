@@ -21,10 +21,9 @@ define i1 @func00000000000000f1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr inbounds %"struct.folly::HugePageSize.1640421", ptr %1, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  %7 = icmp eq ptr %0, %6
-  ret i1 %7
+  %5 = getelementptr inbounds %"struct.folly::HugePageSize.1640421", ptr %1, i64 %4, i32 1, i32 0, i32 2
+  %6 = icmp eq ptr %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

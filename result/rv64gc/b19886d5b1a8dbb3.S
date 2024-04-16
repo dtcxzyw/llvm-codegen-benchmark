@@ -6,8 +6,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	addw	a0, a0, a1
 	ret
 func0000000000000063:                   # @func0000000000000063
-	li	a2, 11
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	add	a1, a1, a2
 	andi	a1, a1, 7
 	snez	a1, a1
 	add	a0, a0, a1

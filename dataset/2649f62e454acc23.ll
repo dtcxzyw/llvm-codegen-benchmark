@@ -9,9 +9,8 @@
 define i1 @func000000000000000c(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
-  %2 = icmp ne i8 %1, -91
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %.not = icmp eq i8 %1, -91
+  ret i1 %.not
 }
 
 ; 14 occurrences:
@@ -33,9 +32,8 @@ entry:
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = icmp eq i64 %1, 0
-  %3 = xor i1 %2, true
-  ret i1 %3
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

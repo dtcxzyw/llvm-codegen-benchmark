@@ -8,7 +8,7 @@ entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i32 256, i32 0
   %5 = shl nuw nsw i32 %1, 16
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 1048576, i64 0
   %5 = shl nuw nsw i64 %1, 32
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }

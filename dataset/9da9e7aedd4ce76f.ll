@@ -7,7 +7,7 @@ define i32 @func0000000000000010(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %0, %3
+  %4 = icmp ult i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -30,7 +30,7 @@ define i32 @func0000000000000002(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -42,7 +42,7 @@ define i64 @func0000000000000016(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -55,7 +55,7 @@ define i32 @func0000000000000018(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -68,7 +68,7 @@ define i32 @func000000000000000c(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -80,7 +80,7 @@ define i32 @func0000000000000014(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

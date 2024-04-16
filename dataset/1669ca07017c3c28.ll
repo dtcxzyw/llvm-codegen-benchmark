@@ -34,9 +34,8 @@ entry:
   %3 = sdiv exact i64 %2, 56
   %4 = add nsw i64 %3, 1
   %5 = and i64 %4, %1
-  %6 = getelementptr inbounds %"class.tsl::detail_robin_hash::bucket_entry.318.1858516", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %"class.tsl::detail_robin_hash::bucket_entry.318.1858516", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

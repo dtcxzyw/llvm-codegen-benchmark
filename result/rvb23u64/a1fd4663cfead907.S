@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	bnez	a0, .LBB0_2
 	fli.s	fa5, 2.0
 	fsub.s	fa5, fa5, fa1
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LBB0_2:
 	fmv.w.x	fa0, zero

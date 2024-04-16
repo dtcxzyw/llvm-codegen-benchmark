@@ -14,8 +14,8 @@
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = and i32 %1, 255
-  %3 = lshr i32 %2, 4
+  %2 = lshr i32 %1, 4
+  %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -28,8 +28,8 @@ entry:
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
-  %2 = and i8 %1, 63
-  %3 = lshr exact i8 %2, 1
+  %2 = lshr i8 %1, 1
+  %3 = and i8 %2, 31
   %4 = zext nneg i8 %3 to i32
   ret i32 %4
 }

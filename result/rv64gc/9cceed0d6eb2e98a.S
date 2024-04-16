@@ -30,7 +30,8 @@ func0000000000000022:                   # @func0000000000000022
 	seqz	a0, a0
 	ret
 func0000000000000002:                   # @func0000000000000002
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -53,7 +54,7 @@ func0000000000000028:                   # @func0000000000000028
 	sltiu	a0, a0, 3
 	ret
 func0000000000000078:                   # @func0000000000000078
-	add	a0, a0, a1
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
@@ -83,10 +84,12 @@ func0000000000000048:                   # @func0000000000000048
 	sltu	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	addw	a0, a0, a1
+	sext.w	a0, a0
+	negw	a1, a1
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000042:                   # @func0000000000000042
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret

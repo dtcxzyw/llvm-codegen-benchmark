@@ -23,9 +23,9 @@
 define ptr @func000000000000001c(ptr %0) #0 {
 entry:
   %1 = getelementptr inbounds i8, ptr %0, i64 1
-  %2 = icmp ne ptr %0, null
-  %3 = select i1 %2, ptr %1, ptr null
-  ret ptr %3
+  %.not = icmp eq ptr %0, null
+  %2 = select i1 %.not, ptr null, ptr %1
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

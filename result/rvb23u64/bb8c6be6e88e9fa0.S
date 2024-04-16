@@ -17,7 +17,7 @@ func00000000000000a2:                   # @func00000000000000a2
 	seqz	a0, a0
 	ret
 func00000000000000b2:                   # @func00000000000000b2
-	xor	a3, a1, a2
+	xor	a3, a2, a1
 	sltu	a1, a1, a2
 	czero.eqz	a1, a1, a3
 	sltu	a0, a0, a4

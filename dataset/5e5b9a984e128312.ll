@@ -5,10 +5,9 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = and i32 %2, 65535
-  %4 = and i32 %0, 65535
-  %5 = or i32 %4, %3
-  ret i32 %5
+  %3 = or i32 %2, %0
+  %4 = and i32 %3, 65535
+  ret i32 %4
 }
 
 ; 10 occurrences:

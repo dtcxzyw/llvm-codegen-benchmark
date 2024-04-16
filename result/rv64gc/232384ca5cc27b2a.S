@@ -18,19 +18,8 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a0, 1
-	andi	a2, a2, 1
-	li	a0, 8
-	beqz	a2, .LBB1_3
-	beqz	a3, .LBB1_4
-.LBB1_2:                                # %entry
-	sltiu	a0, a0, 9
-	ret
-.LBB1_3:                                # %entry
-	li	a0, 4
-	bnez	a3, .LBB1_2
-.LBB1_4:                                # %entry
-	sltiu	a0, a1, 9
+	sltiu	a1, a1, 9
+	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 1
@@ -47,8 +36,9 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	beqz	a0, .LBB3_2
 	andi	a2, a2, 1
+	addi	a2, a2, -1
 	lui	a1, 524288
-	sub	a1, a1, a2
+	and	a1, a1, a2
 .LBB3_2:                                # %entry
 	sext.w	a1, a1
 	slti	a0, a1, 0
@@ -56,7 +46,7 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	andi	a3, a0, 1
 	andi	a2, a2, 1
-	li	a0, 6
+	li	a0, 4
 	beqz	a2, .LBB4_3
 	beqz	a3, .LBB4_4
 .LBB4_2:                                # %entry

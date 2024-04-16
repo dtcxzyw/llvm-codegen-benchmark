@@ -18,8 +18,8 @@ entry:
 define i128 @func0000000000000000(i128 %0) #0 {
 entry:
   %1 = freeze i128 %0
-  %2 = sdiv i128 %1, 10
-  %3 = mul i128 %2, 10
+  %2 = srem i128 %1, 10
+  %3 = sub nsw i128 %1, %2
   ret i128 %3
 }
 

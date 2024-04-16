@@ -74,8 +74,8 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr i64 %2, 1
-  %4 = or i64 %3, %2
-  %5 = or i64 %0, %4
+  %4 = or i64 %3, %0
+  %5 = or i64 %4, %2
   %6 = lshr i64 %5, 4
   ret i64 %6
 }
@@ -104,8 +104,8 @@ define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 %2, 1
-  %4 = or i64 %3, %2
-  %5 = or i64 %0, %4
+  %4 = or i64 %3, %0
+  %5 = or i64 %4, %2
   %6 = lshr i64 %5, 4
   ret i64 %6
 }
@@ -118,8 +118,8 @@ define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = lshr exact i64 %2, 1
-  %4 = or i64 %3, %2
-  %5 = or i64 %0, %4
+  %4 = or i64 %3, %0
+  %5 = or i64 %4, %2
   %6 = lshr i64 %5, 4
   ret i64 %6
 }

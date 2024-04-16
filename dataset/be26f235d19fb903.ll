@@ -5,7 +5,7 @@
 define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = icmp eq i32 %0, 0
   %5 = or i1 %3, %4
   ret i1 %5
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000222(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = icmp eq i32 %0, 0
   %5 = or i1 %3, %4
   ret i1 %5

@@ -69,8 +69,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %0, i32 %1)
-  %3 = and i32 %2, 65535
-  %4 = icmp ult i32 %3, 32768
+  %3 = and i32 %2, 32768
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 

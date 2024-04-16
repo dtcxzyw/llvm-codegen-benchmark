@@ -9,7 +9,7 @@ define i8 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = trunc i32 %4 to i8
   %6 = or disjoint i8 %5, 31
   ret i8 %6

@@ -81,8 +81,8 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = xor i64 %1, %4
-  %6 = and i64 %0, %5
+  %5 = xor i64 %4, %1
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

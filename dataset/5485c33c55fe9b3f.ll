@@ -20,10 +20,10 @@ entry:
 define i16 @func0000000000000030(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i32 %0, i32 %3
-  %6 = trunc i32 %5 to i16
-  ret i16 %6
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, i32 %3, i32 %0
+  %5 = trunc i32 %4 to i16
+  ret i16 %5
 }
 
 ; 3 occurrences:

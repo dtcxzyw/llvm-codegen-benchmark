@@ -11,7 +11,7 @@ entry:
   %2 = and i64 %1, 2147483648
   %3 = add nuw nsw i64 %2, 2147483648
   %4 = lshr i64 %3, 32
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = and i32 %1, 4095
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr exact i32 %3, 4
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = and i64 %1, 2251799813685247
   %3 = add nuw nsw i64 %2, 4503599627370457
   %4 = lshr i64 %3, 51
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

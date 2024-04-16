@@ -20,9 +20,9 @@ entry:
 define i32 @func0000000000000009(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -2147483648
-  %3 = select i1 %2, i32 -1, i32 1
-  %4 = zext i8 %0 to i32
-  %5 = mul nsw i32 %3, %4
+  %3 = zext i8 %0 to i32
+  %4 = sub nsw i32 0, %3
+  %5 = select i1 %2, i32 %4, i32 %3
   ret i32 %5
 }
 

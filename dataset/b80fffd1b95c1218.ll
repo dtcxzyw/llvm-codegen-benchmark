@@ -61,7 +61,7 @@ entry:
   %2 = shl i8 %1, 3
   %3 = ashr i8 %2, 7
   %4 = sext i8 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -75,7 +75,7 @@ entry:
   %2 = shl i16 %1, 2
   %3 = ashr i16 %2, 14
   %4 = sext i16 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

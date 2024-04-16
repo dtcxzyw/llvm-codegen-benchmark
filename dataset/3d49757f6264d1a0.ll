@@ -6,10 +6,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 16
-  %3 = icmp sgt i32 %2, 0
-  %4 = select i1 %0, i1 %3, i1 false
-  ret i1 %4
+  %2 = icmp sgt i32 %1, 0
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -20,10 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 5
-  %3 = icmp ugt i64 %2, 2048
-  %4 = select i1 %0, i1 %3, i1 false
-  ret i1 %4
+  %2 = icmp ugt i64 %1, 65536
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -31,10 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr i32 %1, 16
-  %3 = icmp sgt i32 %2, 2048
-  %4 = select i1 %0, i1 %3, i1 false
-  ret i1 %4
+  %2 = icmp sgt i32 %1, 134283263
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

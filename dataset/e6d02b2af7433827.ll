@@ -17,10 +17,9 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = add i64 %2, 32
-  %4 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %0)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp ult i64 %5, 9223372036854775793
-  ret i1 %6
+  %4 = add i64 %3, %0
+  %5 = icmp ult i64 %4, 9223372036854775793
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -44,10 +43,9 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = add i64 %2, 32
-  %4 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %0)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = sub i64 0, %0
+  %5 = icmp eq i64 %3, %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

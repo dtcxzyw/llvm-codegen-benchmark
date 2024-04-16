@@ -6,9 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
-	srli	a2, a2, 12
-	add	a1, a1, a2
-	slliw	a1, a1, 12
+	slli	a1, a1, 12
+	addw	a1, a1, a2
+	lui	a2, 1048575
+	and	a1, a1, a2
 	slli	a0, a0, 52
 	srli	a0, a0, 52
 	or	a0, a0, a1

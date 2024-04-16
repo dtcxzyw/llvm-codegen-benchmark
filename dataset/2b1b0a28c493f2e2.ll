@@ -90,8 +90,8 @@
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, -10
-  %4 = add i32 %3, %1
-  %5 = icmp ne i32 %4, 0
+  %4 = sub i32 0, %1
+  %5 = icmp ne i32 %3, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -101,10 +101,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nsw i64 %2, -4
-  %4 = add i64 %1, %3
+  %3 = shl i64 %2, 2
+  %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 32
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

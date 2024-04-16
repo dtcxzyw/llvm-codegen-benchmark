@@ -15,11 +15,10 @@
 define ptr @func0000000000000024(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = sdiv i64 %2, 2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i8, ptr %0, i64 -8
-  %6 = getelementptr i64, ptr %5, i64 %4
-  ret ptr %6
+  %.neg = sdiv i64 %2, -2
+  %3 = getelementptr i8, ptr %0, i64 -8
+  %4 = getelementptr i64, ptr %3, i64 %.neg
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

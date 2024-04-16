@@ -25,7 +25,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = select i1 %2, i32 2, i32 1
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = select i1 %2, i64 2, i64 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

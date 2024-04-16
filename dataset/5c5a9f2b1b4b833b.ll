@@ -59,11 +59,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = and i64 %3, -8
-  %5 = sub nuw nsw i64 -8, %4
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
+  %3 = xor i64 %1, -1
+  %.not = add i64 %3, %2
+  %4 = and i64 %.not, -8
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

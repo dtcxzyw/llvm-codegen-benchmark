@@ -1,5 +1,5 @@
 func0000000000000558:                   # @func0000000000000558
-	subw	a2, a2, a1
+	slli	a1, a1, 1
 	subw	a2, a2, a1
 	negw	a1, a2
 	max	a1, a2, a1
@@ -9,7 +9,7 @@ func0000000000000558:                   # @func0000000000000558
 	sltu	a0, a1, a0
 	ret
 func0000000000000158:                   # @func0000000000000158
-	subw	a2, a2, a1
+	slli	a1, a1, 1
 	subw	a2, a2, a1
 	negw	a1, a2
 	max	a1, a2, a1

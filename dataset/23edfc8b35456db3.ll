@@ -51,12 +51,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000305(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = zext i1 %2 to i32
-  %4 = ashr i32 %0, 5
-  %5 = add nsw i32 %4, %3
-  %6 = shl nsw i32 %5, 5
-  ret i32 %6
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 0, i32 32
+  %3 = add i32 %2, %0
+  %4 = and i32 %3, -32
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -66,8 +65,8 @@ define i32 @func0000000000000304(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = ashr i32 %0, 4
-  %5 = add nsw i32 %4, %3
+  %4 = lshr i32 %0, 4
+  %5 = add nuw nsw i32 %4, %3
   %6 = shl i32 %5, 10
   ret i32 %6
 }
@@ -78,11 +77,10 @@ entry:
 define i32 @func0000000000000105(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 5
-  %3 = zext i1 %2 to i32
-  %4 = ashr i32 %0, 5
-  %5 = add nsw i32 %4, %3
-  %6 = shl nsw i32 %5, 5
-  ret i32 %6
+  %3 = select i1 %2, i32 32, i32 0
+  %4 = add i32 %3, %0
+  %5 = and i32 %4, -32
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

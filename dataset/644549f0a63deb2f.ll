@@ -164,11 +164,10 @@ entry:
 define i32 @func000000000000003f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 16
-  %4 = shl nuw nsw i32 %0, 8
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = and i32 %0, 16777215
   %5 = or disjoint i32 %4, %3
-  %6 = lshr exact i32 %5, 8
-  ret i32 %6
+  ret i32 %5
 }
 
 ; 2 occurrences:

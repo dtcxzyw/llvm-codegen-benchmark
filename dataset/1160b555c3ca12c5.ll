@@ -7,7 +7,7 @@
 define i32 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = lshr i64 %1, 32
   %6 = add nuw nsw i64 %4, %5
   %7 = trunc i64 %6 to i32

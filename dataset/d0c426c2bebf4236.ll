@@ -131,7 +131,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr i64 %4, 3
+  %5 = lshr i64 %4, 3
   %6 = and i64 %5, 63
   ret i64 %6
 }

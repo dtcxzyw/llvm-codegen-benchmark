@@ -32,7 +32,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sext i16 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

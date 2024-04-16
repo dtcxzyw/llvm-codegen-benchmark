@@ -5,7 +5,7 @@
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %2
-  %4 = fmul float %2, %3
+  %4 = fmul float %3, %2
   %5 = tail call float @llvm.fmuladd.f32(float %0, float %1, float %4)
   %6 = fcmp olt float %5, 0x3E80000000000000
   ret i1 %6
@@ -25,7 +25,7 @@ declare float @llvm.fmuladd.f32(float, float, float) #1
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %2
-  %4 = fmul float %2, %3
+  %4 = fmul float %3, %2
   %5 = tail call float @llvm.fmuladd.f32(float %0, float %1, float %4)
   %6 = fcmp une float %5, 0.000000e+00
   ret i1 %6
@@ -37,7 +37,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fneg float %2
-  %4 = fmul float %2, %3
+  %4 = fmul float %3, %2
   %5 = tail call float @llvm.fmuladd.f32(float %0, float %1, float %4)
   %6 = fcmp ogt float %5, 0.000000e+00
   ret i1 %6

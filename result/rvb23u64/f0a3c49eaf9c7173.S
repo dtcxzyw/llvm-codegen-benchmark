@@ -1,13 +1,13 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
+	srliw	a1, a1, 18
 	czero.nez	a0, a1, a0
-	srliw	a0, a0, 18
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
+	srliw	a1, a1, 7
 	czero.nez	a1, a1, a0
-	li	a2, 256
+	li	a2, 2
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
-	srliw	a0, a0, 7
 	ret

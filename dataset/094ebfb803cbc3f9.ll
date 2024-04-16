@@ -27,10 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func00000000000000c7(i16 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 8
-  %3 = icmp eq i32 %2, 0
-  %4 = add nuw nsw i16 %0, 2
-  %5 = select i1 %3, i16 %0, i16 %4
+  %2 = trunc i32 %1 to i16
+  %3 = lshr i16 %2, 2
+  %4 = and i16 %3, 2
+  %5 = add i16 %4, %0
   %6 = add nuw nsw i16 %5, 8
   ret i16 %6
 }
@@ -40,10 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000044(i32 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 8
-  %3 = icmp eq i8 %2, 0
-  %4 = add nsw i32 %0, 1
-  %5 = select i1 %3, i32 %0, i32 %4
+  %2 = lshr i8 %1, 3
+  %3 = and i8 %2, 1
+  %4 = zext nneg i8 %3 to i32
+  %5 = add i32 %4, %0
   %6 = add i32 %5, 1
   ret i32 %6
 }

@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i32 %1, 2
   %3 = sitofp i32 %2 to float
   %4 = fdiv float 1.000000e+00, %3
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = sitofp i32 %2 to double
   %4 = fdiv double 1.000000e+00, %3
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

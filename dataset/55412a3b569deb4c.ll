@@ -11,8 +11,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = call i64 @llvm.umax.i64(i64 %3, i64 %1)
-  %5 = add nuw nsw i64 %4, %3
-  %6 = getelementptr inbounds %class.aiVector3t.1748465, ptr %0, i64 %5
+  %5 = getelementptr %class.aiVector3t.1748465, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %2
   ret ptr %6
 }
 

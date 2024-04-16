@@ -12,11 +12,13 @@ func000000000000002b:                   # @func000000000000002b
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	minu	a1, a1, a4
-	czero.eqz	a2, a4, a0
+	sh1add	a1, a1, a1
+	slli	a1, a1, 3
+	li	a2, -15
+	srli	a2, a2, 1
+	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
-	sh1add	a0, a0, a0
-	slli	a0, a0, 3
 	ret
 .LCPI1_0:
 	.quad	115292150460684697              # 0x199999999999999
@@ -32,9 +34,11 @@ func0000000000000023:                   # @func0000000000000023
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	minu	a1, a1, a4
-	czero.eqz	a2, a4, a0
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
+	li	a2, -95
+	srli	a2, a2, 1
+	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
-	sh2add	a0, a0, a0
-	slli	a0, a0, 4
 	ret

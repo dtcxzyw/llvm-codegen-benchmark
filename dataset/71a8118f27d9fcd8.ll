@@ -107,8 +107,8 @@ entry:
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = and i32 %2, 7
-  %4 = icmp ult i32 %3, 2
+  %3 = and i32 %2, 6
+  %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

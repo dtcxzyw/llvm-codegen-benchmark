@@ -263,9 +263,9 @@
 define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 -1
-  %4 = and i32 %3, -256
-  %5 = icmp eq i32 %4, 129280
+  %3 = and i32 %0, -256
+  %4 = icmp eq i32 %3, 129280
+  %5 = select i1 %2, i1 %4, i1 false
   %6 = select i1 %5, i64 2, i64 1
   ret i64 %6
 }

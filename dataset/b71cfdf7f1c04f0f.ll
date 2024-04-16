@@ -36,9 +36,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds %struct.ImDrawVert.1931715, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 32
-  %6 = getelementptr inbounds %struct.ImDrawVert.1931715, ptr %4, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.ImDrawVert.1931715, ptr %4, i64 %5, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:

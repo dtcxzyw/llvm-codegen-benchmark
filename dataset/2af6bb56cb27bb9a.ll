@@ -10,7 +10,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 10
   %5 = and i64 %4, 31744
-  %6 = xor i64 %1, %5
+  %6 = xor i64 %5, %1
   %7 = getelementptr inbounds [32768 x i16], ptr %0, i64 0, i64 %6
   ret ptr %7
 }

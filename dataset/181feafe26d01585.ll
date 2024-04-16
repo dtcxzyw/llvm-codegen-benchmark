@@ -8,8 +8,8 @@ define i32 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 4, i32 %1
-  %4 = add i32 %3, -1
+  %3 = add i32 %1, -1
+  %4 = select i1 %2, i32 3, i32 %3
   ret i32 %4
 }
 

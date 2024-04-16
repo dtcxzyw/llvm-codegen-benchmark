@@ -18,9 +18,8 @@ entry:
   %2 = tail call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 64
-  %5 = getelementptr inbounds [6 x %"struct.asmjit::_abi_1_10::OpRWInfo.1561414"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 5
-  ret ptr %6
+  %5 = getelementptr inbounds [6 x %"struct.asmjit::_abi_1_10::OpRWInfo.1561414"], ptr %4, i64 0, i64 %3, i32 2
+  ret ptr %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -40,9 +39,8 @@ entry:
   %2 = tail call i16 @llvm.cttz.i16(i16 %1, i1 true), !range !1
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 16
-  %5 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1640670"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1640670"], ptr %4, i64 0, i64 %3, i32 0, i64 8
+  ret ptr %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -56,9 +54,8 @@ entry:
   %2 = call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 16
-  %5 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1724392"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.1724392"], ptr %4, i64 0, i64 %3, i32 0, i64 8
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

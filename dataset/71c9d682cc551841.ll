@@ -32,7 +32,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 16
   %4 = lshr i64 %1, 25
   %5 = add nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = lshr i128 %2, 64
   %4 = shl nuw nsw i128 %1, 1
   %5 = add nuw nsw i128 %4, %3
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 

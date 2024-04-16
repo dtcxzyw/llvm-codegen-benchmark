@@ -25,10 +25,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [5 x %struct.rb_size_pool_struct.1553510], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 88
-  %5 = icmp eq ptr %0, %4
-  ret i1 %5
+  %3 = getelementptr [5 x %struct.rb_size_pool_struct.1553510], ptr %1, i64 0, i64 %2, i32 10, i32 1
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 16 occurrences:
@@ -51,10 +50,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds [25 x %"class.std::__cxx11::basic_string.6.1648672"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  %5 = icmp eq ptr %0, %4
-  ret i1 %5
+  %3 = getelementptr inbounds [25 x %"class.std::__cxx11::basic_string.6.1648672"], ptr %1, i64 0, i64 %2, i32 2
+  %4 = icmp eq ptr %3, %0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -67,7 +65,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr [512 x %struct.TCGTemp.1662904], ptr %1, i64 0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 56
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -77,10 +75,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %1, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 68
-  %5 = icmp ult ptr %0, %4
-  ret i1 %5
+  %3 = getelementptr [0 x %struct.FormData_pg_attribute.2120175], ptr %1, i64 0, i64 %2, i32 2
+  %4 = icmp ugt ptr %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

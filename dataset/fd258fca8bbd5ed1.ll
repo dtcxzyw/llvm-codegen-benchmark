@@ -306,9 +306,9 @@ entry:
 define i32 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
-  %3 = icmp sle i64 %2, %0
-  %4 = select i1 %3, i32 -1, i32 1
-  ret i32 %4
+  %.not = icmp sgt i64 %2, %0
+  %3 = select i1 %.not, i32 1, i32 -1
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -317,9 +317,9 @@ entry:
 define i32 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
-  %3 = icmp ne i16 %2, %0
-  %4 = select i1 %3, i32 8, i32 0
-  ret i32 %4
+  %.not = icmp eq i16 %2, %0
+  %3 = select i1 %.not, i32 0, i32 8
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

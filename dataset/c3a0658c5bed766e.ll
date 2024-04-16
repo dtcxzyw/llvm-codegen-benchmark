@@ -7,11 +7,9 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, 14029467366897019727
-  %6 = trunc i128 %5 to i64
-  %7 = xor i64 %0, %6
-  ret i64 %7
+  %4 = mul i64 %3, -4417276706812531889
+  %5 = xor i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

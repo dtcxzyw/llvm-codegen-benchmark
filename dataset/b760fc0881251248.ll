@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 3
+  %2 = and i64 %1, 4294967292
+  %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i32 %0, 3
   %5 = xor i1 %4, %3
   ret i1 %5

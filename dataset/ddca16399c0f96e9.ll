@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 1
-  %2 = trunc i64 %1 to i16
+  %1 = trunc i64 %0 to i16
+  %2 = add i16 %1, 1
   %3 = srem i16 %2, 12
   ret i16 %3
 }

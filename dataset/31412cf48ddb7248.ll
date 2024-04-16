@@ -22,7 +22,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = tail call i32 @llvm.fshl.i32(i32 %4, i32 %4, i32 12)
   ret i32 %5
 }
@@ -44,7 +44,7 @@ declare i32 @llvm.fshl.i32(i32, i32, i32) #1
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = tail call i32 @llvm.fshl.i32(i32 %4, i32 %4, i32 11)
   ret i32 %5
 }

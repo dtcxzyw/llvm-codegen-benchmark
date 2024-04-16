@@ -17,9 +17,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
-  %5 = shl nuw nsw i32 %4, 2
+  %3 = shl i32 %2, 10
+  %4 = shl i32 %1, 2
+  %5 = or i32 %3, %4
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
@@ -35,9 +35,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
-  %5 = shl nuw nsw i32 %4, 1
+  %3 = shl i32 %2, 9
+  %4 = shl i32 %1, 1
+  %5 = or i32 %3, %4
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i64, ptr %0, i64 %6
   ret ptr %7
@@ -53,9 +53,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000059(ptr %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = shl nuw i16 %2, 8
-  %4 = or disjoint i16 %3, %1
-  %5 = shl nuw i16 %4, 1
+  %3 = shl i16 %2, 9
+  %4 = shl i16 %1, 1
+  %5 = or i16 %3, %4
   %6 = zext i16 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
@@ -72,9 +72,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000058(ptr %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = shl nuw i16 %2, 8
-  %4 = or disjoint i16 %3, %1
-  %5 = shl nuw i16 %4, 1
+  %3 = shl i16 %2, 9
+  %4 = shl i16 %1, 1
+  %5 = or i16 %3, %4
   %6 = zext i16 %5 to i64
   %7 = getelementptr %struct.stbtt_vertex.1833224, ptr %0, i64 %6
   ret ptr %7
@@ -85,9 +85,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 1
-  %4 = or disjoint i32 %3, %1
-  %5 = shl i32 %4, 2
+  %3 = shl i32 %2, 3
+  %4 = shl i32 %1, 2
+  %5 = or i32 %3, %4
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7

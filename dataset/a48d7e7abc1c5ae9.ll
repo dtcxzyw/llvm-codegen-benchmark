@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -16
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, -16
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, i32 %3, i32 -1
   ret i32 %5

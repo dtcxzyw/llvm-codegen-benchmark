@@ -45,10 +45,10 @@ entry:
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ne i32 %2, 0
-  %4 = or disjoint i64 %0, -1407374883553280
-  %5 = select i1 %3, i64 %4, i64 undef
-  ret i64 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = or disjoint i64 %0, -1407374883553280
+  %4 = select i1 %.not, i64 undef, i64 %3
+  ret i64 %4
 }
 
 ; 4 occurrences:
@@ -59,11 +59,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 511
-  %3 = icmp ult i32 %2, 256
-  %4 = or disjoint i32 %0, 1
-  %5 = select i1 %3, i32 %4, i32 0
-  ret i32 %5
+  %2 = and i32 %1, 256
+  %.not.not = icmp eq i32 %2, 0
+  %3 = or disjoint i32 %0, 1
+  %4 = select i1 %.not.not, i32 %3, i32 0
+  ret i32 %4
 }
 
 ; 2 occurrences:

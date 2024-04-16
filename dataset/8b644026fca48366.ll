@@ -84,7 +84,7 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.bswap.i32(i32 %1)
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   ret i32 %3
 }
 

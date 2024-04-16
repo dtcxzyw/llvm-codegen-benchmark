@@ -23,7 +23,7 @@
 define i1 @func0000000000000156(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = mul nsw i64 %0, %1
   %5 = icmp slt i64 %4, %3
   ret i1 %5
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000256(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   %4 = mul nsw i32 %0, %1
   %5 = icmp slt i32 %4, %3
   ret i1 %5
@@ -49,7 +49,7 @@ entry:
 define i1 @func0000000000000356(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   %4 = mul nsw i32 %0, %1
   %5 = icmp slt i32 %4, %3
   ret i1 %5
@@ -73,7 +73,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = mul i32 %0, %1
   %5 = icmp ult i32 %4, %3
   ret i1 %5

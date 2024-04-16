@@ -94,8 +94,8 @@
 define i1 @func0000000000000201(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add nuw i64 %1, %3
-  %5 = add i64 %0, %4
+  %4 = add nuw i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   %7 = icmp eq i32 %6, 0
   ret i1 %7
@@ -113,8 +113,8 @@ entry:
 define i1 @func0000000000000a01(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %1, %3
-  %5 = add i64 %0, %4
+  %4 = add nuw i64 %3, %1
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   %7 = icmp eq i32 %6, 0
   ret i1 %7

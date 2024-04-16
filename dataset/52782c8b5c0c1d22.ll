@@ -43,9 +43,8 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds %struct.Str_Mux_t_.1771693, ptr %1, i64 %4
-  %6 = getelementptr inbounds %struct.Str_Mux_t_.1771693, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 20
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.Str_Mux_t_.1771693, ptr %5, i64 %0, i32 4, i64 0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -56,9 +55,8 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr %struct._PyCfgInstruction.2323280, ptr %1, i64 %4
-  %6 = getelementptr %struct._PyCfgInstruction.2323280, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr %struct._PyCfgInstruction.2323280, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

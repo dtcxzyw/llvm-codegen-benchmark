@@ -4,12 +4,6 @@
 %"class.mold::LittleEndian.1590028" = type { [4 x i8] }
 %"class.mold::LittleEndian.295.1590143" = type { [8 x i8] }
 %struct.IOVAMapping.1663690 = type { ptr, i64, i64 }
-%"struct.(anonymous namespace)::StringPacker<unsigned char>::SuffixArrayEntry.1851875" = type { %"class.llvh::ArrayRef.25.1851862", %"class.std::vector.58.1851871" }
-%"class.llvh::ArrayRef.25.1851862" = type { ptr, i64 }
-%"class.std::vector.58.1851871" = type { %"struct.std::_Vector_base.59.1851872" }
-%"struct.std::_Vector_base.59.1851872" = type { %"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *>>::_Vector_impl.1851873" }
-%"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *>>::_Vector_impl.1851873" = type { %"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *>>::_Vector_impl_data.1851874" }
-%"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::StringEntry *>>::_Vector_impl_data.1851874" = type { ptr, ptr, ptr }
 
 ; 38 occurrences:
 ; arrow/optimized/tz.cpp.ll
@@ -86,9 +80,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = getelementptr inbounds %"struct.(anonymous namespace)::StringPacker<unsigned char>::SuffixArrayEntry.1851875", ptr %0, i64 %4
-  ret ptr %5
+  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -47,18 +47,18 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000006:                   # @func0000000000000006
 	srliw	a1, a1, 3
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	slti	a0, a0, 0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	srliw	a1, a1, 3
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 1024
 	slt	a0, a1, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
 	srliw	a1, a1, 3
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sltiu	a0, a0, 129
 	ret
 func0000000000000011:                   # @func0000000000000011

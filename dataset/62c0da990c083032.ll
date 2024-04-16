@@ -41,11 +41,10 @@ entry:
 define i1 @func0000000000000101(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 61
-  %4 = sext i1 %3 to i64
-  %5 = add i64 %0, %1
-  %6 = add i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %.neg = zext i1 %3 to i64
+  %4 = add i64 %0, %1
+  %5 = icmp eq i64 %4, %.neg
+  ret i1 %5
 }
 
 ; 1 occurrences:

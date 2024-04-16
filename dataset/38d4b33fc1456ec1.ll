@@ -8,7 +8,7 @@ define i1 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
   %3 = fcmp ult double %2, 0xC3E0000000000000
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -31,9 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
-  %2 = bitcast i64 %1 to double
-  %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %2 = and i64 %1, 9223372036854775807
+  %3 = icmp eq i64 %2, 0
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -49,7 +49,7 @@ define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
   %3 = fcmp ogt double %2, 3.600000e+01
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -74,9 +74,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, i64 %1) #0 {
 entry:
-  %2 = bitcast i64 %1 to double
-  %3 = fcmp une double %2, 0.000000e+00
-  %4 = or i1 %0, %3
+  %2 = and i64 %1, 9223372036854775807
+  %3 = icmp ne i64 %2, 0
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -101,7 +101,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
   %3 = fcmp ugt float %2, 1.000000e+02
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

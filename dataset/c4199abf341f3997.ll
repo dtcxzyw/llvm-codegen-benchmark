@@ -8,10 +8,9 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 1
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %.mask1 = and i64 %2, 2147483647
+  %3 = icmp eq i64 %.mask1, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -22,10 +21,9 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 9
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %.mask1 = and i64 %2, 4194304
+  %3 = icmp eq i64 %.mask1, 0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -35,10 +33,9 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 1
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %.mask1 = and i64 %2, 1073741824
+  %3 = icmp ne i64 %.mask1, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -4,10 +4,9 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw nsw i64 %1, 2000
-  %3 = lshr exact i64 %2, 1
-  %4 = add nsw i64 %0, %3
-  ret i64 %4
+  %2 = mul nuw nsw i64 %1, 1000
+  %3 = add nsw i64 %2, %0
+  ret i64 %3
 }
 
 ; 45 occurrences:
@@ -84,7 +83,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 2654435761
   %3 = lshr i64 %2, 32
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -201,7 +200,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 127
   %3 = lshr i64 %2, 7
-  %4 = add nuw i64 %0, %3
+  %4 = add nuw i64 %3, %0
   ret i64 %4
 }
 
@@ -255,7 +254,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 12
   %3 = lshr exact i64 %2, 2
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -269,7 +268,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 257698037760
   %3 = lshr exact i64 %2, 32
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -404,7 +403,7 @@ define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1220703125
   %3 = lshr i64 %2, 32
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -413,10 +412,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw nsw i64 %1, 10000
-  %3 = lshr exact i64 %2, 1
-  %4 = add nuw nsw i64 %0, %3
-  ret i64 %4
+  %2 = mul nuw nsw i64 %1, 5000
+  %3 = add nuw nsw i64 %2, %0
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -426,7 +424,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = lshr i64 %2, 1
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -442,7 +440,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 1217359
   %3 = lshr i32 %2, 19
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 

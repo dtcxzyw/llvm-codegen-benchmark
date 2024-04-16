@@ -22,7 +22,7 @@ define i8 @func0000000000000011(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 8
   %4 = select i1 %1, i8 %3, i8 %2
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   %6 = add nsw i8 %5, -17
   ret i8 %6
 }

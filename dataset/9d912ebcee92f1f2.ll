@@ -6,7 +6,7 @@ define i64 @func0000000000000070(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 40
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = mul i64 %4, 216180478695505931
   %6 = add i64 %5, 3819052484010180608
   ret i64 %6
@@ -17,12 +17,13 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw i64 %2, 32
-  %4 = or disjoint i64 %3, %0
-  %5 = mul nsw i64 %4, -8
-  %6 = add nsw i64 %5, 2147483648
-  ret i64 %6
+  %.neg2 = sub i32 0, %1
+  %.neg2.z = zext i32 %.neg2 to i64
+  %2 = shl i64 %.neg2.z, 35
+  %3 = shl i64 %0, 3
+  %4 = sub i64 %2, %3
+  %5 = add nsw i64 %4, 2147483648
+  ret i64 %5
 }
 
 ; 17 occurrences:

@@ -9,7 +9,7 @@ entry:
   %4 = and i64 %3, -8
   %5 = sub i64 %4, %2
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

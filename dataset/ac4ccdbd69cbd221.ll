@@ -13,9 +13,9 @@ define i32 @func0000000000000065(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = zext i8 %0 to i32
-  %5 = add nuw nsw i32 %1, %4
-  %6 = sub nsw i32 %5, %3
-  %7 = sub nsw i32 %6, %4
+  %5 = add nuw nsw i32 %4, %1
+  %6 = add nuw nsw i32 %3, %4
+  %7 = sub i32 %5, %6
   ret i32 %7
 }
 

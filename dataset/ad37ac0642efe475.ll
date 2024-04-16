@@ -20,7 +20,7 @@ entry:
   %2 = and i64 %1, 8388608
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

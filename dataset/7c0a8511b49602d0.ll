@@ -26,7 +26,7 @@ define i1 @func0000000000000002(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fneg float %2
   %4 = select i1 %1, float %2, float %3
-  %5 = fcmp olt float %0, %4
+  %5 = fcmp ogt float %4, %0
   ret i1 %5
 }
 
@@ -54,7 +54,7 @@ define i1 @func0000000000000004(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fneg float %2
   %4 = select i1 %1, float %2, float %3
-  %5 = fcmp ogt float %0, %4
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -65,7 +65,7 @@ define i1 @func0000000000000008(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fneg float %2
   %4 = select i1 %1, float %2, float %3
-  %5 = fcmp oeq float %0, %4
+  %5 = fcmp oeq float %4, %0
   ret i1 %5
 }
 
@@ -142,7 +142,7 @@ define i1 @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fcmp oge double %0, %4
+  %5 = fcmp ole double %4, %0
   ret i1 %5
 }
 
@@ -158,7 +158,7 @@ define i1 @func0000000000000005(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fcmp ugt double %0, %4
+  %5 = fcmp ult double %4, %0
   ret i1 %5
 }
 
@@ -171,7 +171,7 @@ define i1 @func000000000000000a(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fcmp ole double %0, %4
+  %5 = fcmp oge double %4, %0
   ret i1 %5
 }
 
@@ -188,7 +188,7 @@ define i1 @func0000000000000003(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fcmp ult double %0, %4
+  %5 = fcmp ugt double %4, %0
   ret i1 %5
 }
 
@@ -199,7 +199,7 @@ define i1 @func000000000000000b(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fcmp ule double %0, %4
+  %5 = fcmp uge double %4, %0
   ret i1 %5
 }
 
@@ -211,7 +211,7 @@ define i1 @func0000000000000007(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fcmp une double %0, %4
+  %5 = fcmp une double %4, %0
   ret i1 %5
 }
 

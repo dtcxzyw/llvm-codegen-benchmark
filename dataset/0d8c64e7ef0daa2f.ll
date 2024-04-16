@@ -7,10 +7,10 @@
 define i64 @func0000000000000000(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = lshr i64 %3, 3
-  %5 = trunc i128 %0 to i64
-  %6 = xor i64 %4, %5
-  %7 = lshr i64 %6, 35
+  %4 = trunc i128 %0 to i64
+  %5 = lshr i64 %3, 38
+  %6 = lshr i64 %4, 35
+  %7 = xor i64 %5, %6
   ret i64 %7
 }
 

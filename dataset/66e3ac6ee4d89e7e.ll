@@ -7,7 +7,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32767
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = or i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -18,11 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 65535
-  %4 = and i32 %3, %1
-  %5 = or disjoint i32 %4, %0
-  %6 = icmp ult i32 %5, 536870912
-  ret i1 %6
+  %3 = icmp ult i32 %0, 536870912
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -33,7 +30,7 @@ define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = and i8 %3, %1
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = icmp eq i8 %5, 0
   ret i1 %6
 }
@@ -45,7 +42,7 @@ define i1 @func000000000000001c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = and i8 %3, %1
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = icmp ne i8 %5, 0
   ret i1 %6
 }

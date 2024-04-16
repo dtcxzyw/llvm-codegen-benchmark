@@ -10,7 +10,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = add nsw i64 %4, 1048576
   %6 = ashr i64 %5, 21
-  %7 = add nsw i64 %0, %6
+  %7 = add nsw i64 %6, %0
   ret i64 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = add i64 %4, 1048576
   %6 = ashr i64 %5, 21
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

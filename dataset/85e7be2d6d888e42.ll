@@ -8,7 +8,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = call float @llvm.fmuladd.f32(float %1, float %3, float 5.000000e-01)
   %5 = fptosi float %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = sitofp i32 %2 to float
   %4 = call float @llvm.fmuladd.f32(float %1, float %3, float 5.000000e-01)
   %5 = fptosi float %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

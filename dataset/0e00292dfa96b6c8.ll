@@ -7,9 +7,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000182(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
-  %4 = and i32 %3, 1024
-  %5 = icmp ne i32 %4, 0
+  %3 = and i32 %2, 1024
+  %4 = icmp ne i32 %3, 0
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %6, %5
   ret i1 %7
@@ -22,9 +23,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
-  %4 = and i32 %3, 15
-  %5 = icmp ugt i32 %4, 10
+  %3 = and i32 %2, 15
+  %4 = icmp ugt i32 %3, 10
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
   %6 = icmp eq i32 %0, 65535
   %7 = or i1 %5, %6
   ret i1 %7
@@ -36,9 +38,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 2, i32 %2
-  %4 = and i32 %3, 1
-  %5 = icmp eq i32 %4, 0
+  %3 = and i32 %2, 1
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %1, i1 true, i1 %4
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %5, %6
   ret i1 %7

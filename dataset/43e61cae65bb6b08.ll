@@ -8,10 +8,9 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
-  %4 = add i64 %3, 1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 2
-  ret ptr %6
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 3
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

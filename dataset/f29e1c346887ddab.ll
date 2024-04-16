@@ -14,7 +14,7 @@
 define i16 @func0000000000000007(i16 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i16
-  %3 = or disjoint i16 %0, %2
+  %3 = or disjoint i16 %2, %0
   %4 = shl nuw nsw i16 %3, 8
   ret i16 %4
 }
@@ -37,7 +37,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = shl nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -49,7 +49,7 @@ entry:
 define i8 @func0000000000000006(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = or disjoint i8 %0, %2
+  %3 = or disjoint i8 %2, %0
   %4 = shl nuw i8 %3, 2
   ret i8 %4
 }

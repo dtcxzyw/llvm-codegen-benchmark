@@ -17,8 +17,7 @@ func000000000000000d:                   # @func000000000000000d
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, 1048572
-	add	a1, a1, a2
+	not	a1, a1
 	srli	a1, a1, 11
 	andi	a1, a1, 8
 	or	a0, a0, a1

@@ -64,7 +64,7 @@ entry:
 define i48 @func0000000000000022(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -1
-  %3 = add i16 %0, %2
+  %3 = add i16 %2, %0
   %4 = zext i16 %3 to i48
   %5 = shl nuw i48 %4, 32
   ret i48 %5
@@ -80,7 +80,7 @@ entry:
 define i48 @func0000000000000023(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -1
-  %3 = add i16 %0, %2
+  %3 = add i16 %2, %0
   %4 = zext i16 %3 to i48
   %5 = shl nuw nsw i48 %4, 16
   ret i48 %5

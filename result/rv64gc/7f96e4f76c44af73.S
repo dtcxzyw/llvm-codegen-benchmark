@@ -20,9 +20,10 @@ func0000000000000308:                   # @func0000000000000308
 	srli	a2, a2, 32
 	sub	a0, a0, a1
 	sub	a0, a0, a2
-	lui	a1, 524288
+	li	a1, -1
+	slli	a1, a1, 32
 	addi	a1, a1, -26
 	add	a0, a0, a1
-	srli	a0, a0, 31
-	snez	a0, a0
+	lui	a1, 524288
+	sltu	a0, a0, a1
 	ret

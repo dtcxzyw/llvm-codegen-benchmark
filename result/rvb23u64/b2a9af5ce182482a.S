@@ -32,7 +32,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	zext.h	a1, a1
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 524304
 	addiw	a1, a1, 3
 	mul	a1, a1, a0

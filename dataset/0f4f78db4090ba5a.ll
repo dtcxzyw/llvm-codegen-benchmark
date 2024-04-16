@@ -8,8 +8,8 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 536870911
-  %4 = lshr i32 %3, 4
+  %3 = lshr i32 %2, 4
+  %4 = and i32 %3, 33554431
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -21,8 +21,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 32767
-  %4 = lshr i32 %3, 2
+  %3 = lshr i32 %2, 2
+  %4 = and i32 %3, 8191
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

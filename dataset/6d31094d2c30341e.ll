@@ -10,7 +10,7 @@ define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fcmp olt double %2, 5.000000e-02
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -34,7 +34,7 @@ define i1 @func000000000000000a(i1 %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fcmp ugt double %2, -1.000000e-03
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -48,7 +48,7 @@ define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fcmp ogt double %2, 1.010000e+00
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -81,7 +81,7 @@ define i1 @func0000000000000016(i1 %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
   %3 = fcmp ule double %2, 1.000000e-04
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

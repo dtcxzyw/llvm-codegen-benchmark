@@ -1,7 +1,6 @@
 func0000000000000005:                   # @func0000000000000005
-	ori	a0, a0, 4
 	sext.w	a0, a0
-	addi	a0, a0, 4
+	addi	a0, a0, 8
 	ret
 func0000000000000001:                   # @func0000000000000001
 	ori	a0, a0, 32

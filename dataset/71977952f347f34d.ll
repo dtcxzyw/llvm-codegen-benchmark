@@ -17,7 +17,7 @@ define i32 @func000000000000001b(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -100,7 +100,7 @@ define i32 @func000000000000001f(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext nneg i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -145,7 +145,7 @@ define i32 @func000000000000001c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = zext nneg i8 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
@@ -172,7 +172,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = and i32 %3, 4064
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = zext nneg i8 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
@@ -185,7 +185,7 @@ define i64 @func0000000000000018(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = and i64 %3, 256
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   %6 = zext i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -198,7 +198,7 @@ define i64 @func000000000000001a(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 9
   %4 = and i64 %3, 512
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = zext i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -212,7 +212,7 @@ define i64 @func000000000000001e(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 6
   %4 = and i64 %3, 448
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = zext nneg i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -225,7 +225,7 @@ define i32 @func0000000000000017(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext nneg i16 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7

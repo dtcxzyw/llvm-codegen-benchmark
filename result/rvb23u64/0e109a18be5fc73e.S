@@ -21,5 +21,5 @@ func0000000000000020:                   # @func0000000000000020
 	zext.w	a0, a0
 	ret
 func0000000000000063:                   # @func0000000000000063
-	sext.w	a0, a0
+	zext.w	a0, a0
 	ret

@@ -9,7 +9,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 26, i32 27
   %4 = shl i32 %1, %3
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -25,7 +25,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 26, i32 27
   %4 = shl i32 %1, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -36,7 +36,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 20, i32 10
   %4 = shl nuw nsw i32 %1, %3
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -59,7 +59,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 32, i64 2
   %4 = shl nuw i64 %1, %3
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

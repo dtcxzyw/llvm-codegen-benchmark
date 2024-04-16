@@ -30,9 +30,9 @@ entry:
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 31
   %5 = or disjoint i32 %0, %1
-  %6 = or disjoint i32 %5, %4
-  %7 = and i32 %6, 63
-  ret i32 %7
+  %.masked = and i32 %5, 63
+  %6 = or i32 %.masked, %4
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -43,9 +43,9 @@ entry:
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 2
   %5 = or i32 %0, %1
-  %6 = or i32 %5, %4
-  %7 = and i32 %6, -5
-  ret i32 %7
+  %.masked = and i32 %5, -5
+  %6 = or i32 %.masked, %4
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

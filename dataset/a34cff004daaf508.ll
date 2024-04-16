@@ -10,7 +10,7 @@ entry:
   %2 = call i64 @llvm.smax.i64(i64 %1, i64 1)
   %3 = icmp slt i64 %1, 1
   %4 = select i1 %3, i64 9223372036854775807, i64 %2
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

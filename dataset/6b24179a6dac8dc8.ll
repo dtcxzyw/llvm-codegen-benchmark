@@ -3651,8 +3651,8 @@
 define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -3883,8 +3883,8 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 1
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 

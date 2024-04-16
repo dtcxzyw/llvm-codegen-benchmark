@@ -185,9 +185,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, i32 %3, i32 %0
+  ret i32 %4
 }
 
 ; 7 occurrences:
@@ -214,8 +214,8 @@ entry:
 define i32 @func000000000000000a(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp sgt i16 %1, -1
-  %5 = select i1 %4, i32 %0, i32 %3
+  %4 = icmp slt i16 %1, 0
+  %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
 

@@ -29,7 +29,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 -87, i8 -48
   %4 = add i8 %3, %1
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 
@@ -58,7 +58,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 939524096, i32 0
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -71,7 +71,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 255
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = or i32 %4, %0
   ret i32 %5
 }

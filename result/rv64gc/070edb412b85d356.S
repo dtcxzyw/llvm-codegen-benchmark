@@ -104,7 +104,7 @@ func0000000000000007:                   # @func0000000000000007
 	srai	a3, a3, 1
 	neg	a3, a3
 	sub	a3, a3, a4
-	beq	a1, a3, .LBB11_2
+	beq	a3, a1, .LBB11_2
 	slt	a0, a3, a1
 	xori	a0, a0, 1
 	ret

@@ -10,8 +10,8 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = or disjoint i64 %2, %0
-  %4 = xor i64 %3, -4734510112055689544
-  %5 = lshr i64 %4, 51
+  %4 = lshr i64 %3, 51
+  %5 = xor i64 %4, 6089
   ret i64 %5
 }
 

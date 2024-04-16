@@ -15,8 +15,8 @@ define i16 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 56
   %2 = ashr exact i64 %1, 56
-  %3 = add nsw i64 %2, 1
-  %4 = trunc i64 %3 to i16
+  %3 = trunc nsw i64 %2 to i16
+  %4 = add nsw i16 %3, 1
   ret i16 %4
 }
 

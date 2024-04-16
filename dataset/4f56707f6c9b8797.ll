@@ -23,10 +23,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 7
-  %2 = sub nuw nsw i32 8, %1
-  %3 = add i32 %0, %2
-  ret i32 %3
+  %reass.sub = and i32 %0, -8
+  %1 = add i32 %reass.sub, 8
+  ret i32 %1
 }
 
 ; 2 occurrences:
@@ -35,10 +34,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 7
-  %2 = sub nuw nsw i64 8, %1
-  %3 = add nsw i64 %2, %0
-  ret i64 %3
+  %reass.sub = and i64 %0, -8
+  %1 = add i64 %reass.sub, 8
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

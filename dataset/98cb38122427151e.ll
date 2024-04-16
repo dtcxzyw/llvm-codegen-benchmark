@@ -5,7 +5,7 @@
 define i8 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 127)
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 -128)
   %6 = trunc nsw i32 %5 to i8
@@ -41,7 +41,7 @@ entry:
   %3 = add nsw i64 %2, %0
   %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 2147483647)
   %5 = tail call i64 @llvm.smax.i64(i64 %4, i64 -2147483648)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nsw i64 %5 to i32
   ret i32 %6
 }
 

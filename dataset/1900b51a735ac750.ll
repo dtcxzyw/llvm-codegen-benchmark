@@ -267,7 +267,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = icmp ugt i32 %3, 1114111
   %5 = select i1 %4, i32 256, i32 0
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -283,7 +283,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = icmp ugt i32 %3, 255
   %5 = select i1 %4, i32 8, i32 0
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

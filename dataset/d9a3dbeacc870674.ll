@@ -30,9 +30,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, i1 %1, float %2) #0 {
 entry:
-  %3 = select i1 %1, float 0xFFF0000000000000, float %2
-  %4 = select i1 %0, float 0xFFFFFFFFE0000000, float %3
-  %5 = fsub float -2.500000e+00, %4
+  %3 = fsub float -2.500000e+00, %2
+  %4 = select i1 %1, float 0x7FF0000000000000, float %3
+  %5 = select i1 %0, float 0xFFFFFFFFE0000000, float %4
   ret float %5
 }
 

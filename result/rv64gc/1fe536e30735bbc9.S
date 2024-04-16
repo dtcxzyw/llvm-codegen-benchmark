@@ -9,7 +9,7 @@ func0000000000000023:                   # @func0000000000000023
 	li	a3, 24
 	mul	a2, a2, a3
 	add	a2, a2, a0
-	beq	a1, a2, .LBB1_2
+	beq	a2, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	addi	a0, a0, 4

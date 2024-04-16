@@ -10,7 +10,7 @@
 define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = select i1 %3, i64 %2, i64 0
   %5 = sub nsw i64 %0, %4
   ret i64 %5
@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000029(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = select i1 %3, i32 %2, i32 0
   %5 = sub nsw i32 %0, %4
   ret i32 %5

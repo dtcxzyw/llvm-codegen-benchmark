@@ -6,7 +6,7 @@ define i1 @func0000000000000016(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %2, 0x3F847AE140000000
   %4 = fcmp ule float %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

@@ -57,7 +57,7 @@
 define i1 @func00000000000001d4(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   %5 = urem i64 %1, 2147483647
   %6 = add nsw i64 %5, -1
   %7 = icmp ult i64 %6, %4

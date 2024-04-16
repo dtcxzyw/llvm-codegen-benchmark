@@ -7,7 +7,7 @@
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umin.i64(i64 %0, i64 65536)
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = udiv i32 %2, 6
   ret i32 %3
 }

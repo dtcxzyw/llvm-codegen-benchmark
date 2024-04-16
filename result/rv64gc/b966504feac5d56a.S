@@ -12,9 +12,10 @@ func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
-	ori	a0, a0, 255
-	slli	a0, a0, 36
-	srli	a0, a0, 36
+	lui	a1, 65536
+	addiw	a1, a1, -256
+	and	a0, a0, a1
+	addi	a0, a0, 255
 	ret
 func000000000000001f:                   # @func000000000000001f
 	slliw	a2, a2, 16

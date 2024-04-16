@@ -37,7 +37,9 @@ func0000000000000708:                   # @func0000000000000708
 	sltu	a0, a1, a0
 	ret
 func000000000000030c:                   # @func000000000000030c
-	sh3add.uw	a0, a1, a0
+	slli.uw	a1, a1, 3
+	neg	a1, a1
 	addi	a0, a0, 64
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret

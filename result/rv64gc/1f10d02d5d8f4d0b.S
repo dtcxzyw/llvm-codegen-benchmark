@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a1, .LBB1_2
 	andi	a2, a2, 1
 	addi	a2, a2, -1
-	lui	a0, 786432
+	lui	a0, 524288
 	addiw	a0, a0, 64
 	and	a0, a0, a2
 .LBB1_2:                                # %entry

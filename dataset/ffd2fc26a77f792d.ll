@@ -7,9 +7,9 @@ define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = xor i32 %2, 31
-  %4 = sub nuw nsw i32 8, %3
-  %5 = shl i32 %0, 3
-  %6 = sub i32 %4, %5
+  %4 = shl i32 %0, 3
+  %5 = add i32 %3, %4
+  %6 = sub i32 8, %5
   ret i32 %6
 }
 

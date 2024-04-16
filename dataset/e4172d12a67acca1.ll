@@ -13,8 +13,8 @@ define i32 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0xC1E0000000000000
   %3 = select i1 %2, double 0xC1E0000000000000, double %1
-  %4 = select i1 %0, double 0x41DFFFFFFFC00000, double %3
-  %5 = fptosi double %4 to i32
+  %4 = fptosi double %3 to i32
+  %5 = select i1 %0, i32 2147483647, i32 %4
   ret i32 %5
 }
 

@@ -178,7 +178,7 @@ define i16 @func0000000000000000(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = call i32 @llvm.umin.i32(i32 %1, i32 %3)
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   %6 = sub i16 %5, %0
   ret i16 %6
 }

@@ -38,11 +38,10 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
-  %3 = lshr i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, 15
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = shl i64 15, %2
+  %4 = and i64 %3, %0
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -57,10 +56,9 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
   %3 = lshr i64 %0, %2
-  %4 = trunc i64 %3 to i32
-  %5 = and i32 %4, 15
-  %6 = icmp ult i32 %5, 10
-  ret i1 %6
+  %4 = and i64 %3, 14
+  %5 = icmp ult i64 %4, 10
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

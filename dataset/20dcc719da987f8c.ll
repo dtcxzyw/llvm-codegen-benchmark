@@ -32,7 +32,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 2, %1
+  %2 = shl nuw i32 2, %1
   %3 = srem i32 %0, %2
   ret i32 %3
 }

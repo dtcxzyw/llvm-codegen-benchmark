@@ -102,9 +102,8 @@
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 0
-  %2 = select i1 %1, i64 12, i64 24
-  %3 = add nuw nsw i64 %2, 8
-  ret i64 %3
+  %2 = select i1 %1, i64 20, i64 32
+  ret i64 %2
 }
 
 ; 26 occurrences:
@@ -138,9 +137,8 @@ entry:
 define i32 @func0000000000000005(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 0
-  %2 = select i1 %1, i32 8, i32 4
-  %3 = add nsw i32 %2, -1
-  ret i32 %3
+  %2 = select i1 %1, i32 7, i32 3
+  ret i32 %2
 }
 
 ; 9 occurrences:
@@ -157,9 +155,8 @@ entry:
 define i32 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 999999999999999999
-  %2 = select i1 %1, i32 19, i32 18
-  %3 = add nsw i32 %2, -1
-  ret i32 %3
+  %2 = select i1 %1, i32 18, i32 17
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -169,9 +166,8 @@ entry:
 define i64 @func0000000000000013(i64 %0) #0 {
 entry:
   %1 = icmp ult i64 %0, 112
-  %2 = select i1 %1, i64 112, i64 240
-  %3 = add nuw nsw i64 %2, 16
-  ret i64 %3
+  %2 = select i1 %1, i64 128, i64 256
+  ret i64 %2
 }
 
 ; 3 occurrences:
@@ -182,9 +178,8 @@ entry:
 define i64 @func0000000000000023(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 4294967294
-  %2 = select i1 %1, i64 8, i64 0
-  %3 = add nuw nsw i64 %2, 8
-  ret i64 %3
+  %2 = select i1 %1, i64 16, i64 8
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -192,10 +187,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i32 %0) #0 {
 entry:
-  %1 = icmp ne i32 %0, 0
-  %2 = select i1 %1, i32 4, i32 2
-  %3 = add nuw nsw i32 %2, 4
-  ret i32 %3
+  %.not = icmp eq i32 %0, 0
+  %1 = select i1 %.not, i32 6, i32 8
+  ret i32 %1
 }
 
 ; 2 occurrences:
@@ -204,10 +198,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 65537
-  %2 = select i1 %1, i64 4, i64 5
-  %3 = add nsw i64 %2, -4
-  ret i64 %3
+  %1 = icmp ugt i64 %0, 65536
+  %2 = zext i1 %1 to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

@@ -73,9 +73,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = getelementptr inbounds %struct.bin_s.2179992, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 72
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.bin_s.2179992, ptr %5, i64 %0, i32 0, i32 0, i32 0, i32 2
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

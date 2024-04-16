@@ -26,8 +26,8 @@ func0000000000000114:                   # @func0000000000000114
 func0000000000000c11:                   # @func0000000000000c11
 	sext.w	a2, a1
 	lui	a3, 14
-	li	a1, 3
-	beq	a2, a3, .LBB2_3
+	li	a1, 1
+	bne	a2, a3, .LBB2_3
 	lui	a3, 4
 	sext.w	a0, a0
 	beq	a2, a3, .LBB2_4
@@ -36,7 +36,7 @@ func0000000000000c11:                   # @func0000000000000c11
 	seqz	a0, a0
 	ret
 .LBB2_3:                                # %entry
-	li	a1, 1
+	li	a1, 3
 	lui	a3, 4
 	sext.w	a0, a0
 	bne	a2, a3, .LBB2_2

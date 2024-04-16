@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i16 %2, 0
   %4 = and i16 %1, 1
   %5 = select i1 %3, i16 %4, i16 5
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = and i32 %1, 402653184
   %5 = select i1 %3, i32 %4, i32 0
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

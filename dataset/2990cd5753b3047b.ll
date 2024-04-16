@@ -10,11 +10,11 @@
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = xor i64 %1, %3
-  %5 = xor i64 %0, %3
-  %6 = add i64 %4, %5
-  %7 = add i64 %6, %5
-  ret i64 %7
+  %4 = xor i64 %3, %1
+  %5 = xor i64 %3, %0
+  %reass.add = shl i64 %5, 1
+  %6 = add i64 %4, %reass.add
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

@@ -367,8 +367,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
   %5 = zext i32 %0 to i64
-  %6 = add nsw i64 %4, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %4, %6
   ret i1 %7
 }
 

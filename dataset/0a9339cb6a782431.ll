@@ -13,10 +13,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -2
-  %4 = select i1 %0, i64 %1, i64 %3
-  %5 = lshr exact i64 %4, 1
-  ret i64 %5
+  %3 = select i1 %0, i64 %1, i64 %2
+  %4 = lshr i64 %3, 1
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -25,7 +24,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 65535
+  %3 = and i32 %2, 65504
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = lshr i32 %4, 5
   ret i32 %5

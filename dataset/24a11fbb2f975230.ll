@@ -20,7 +20,7 @@ entry:
 define i1 @func00000000000000cc(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = icmp ne ptr %1, null
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = icmp ne ptr %5, null
   ret i1 %6

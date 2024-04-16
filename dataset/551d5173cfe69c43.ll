@@ -373,10 +373,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i32 %0) #0 {
 entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = icmp sgt i32 %0, 3
-  %3 = select i1 %2, i64 1, i64 %1
-  ret i64 %3
+  %1 = icmp sgt i32 %0, 3
+  %narrow = select i1 %1, i32 1, i32 %0
+  %2 = zext i32 %narrow to i64
+  ret i64 %2
 }
 
 ; 38 occurrences:
@@ -446,10 +446,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = icmp ugt i8 %0, 63
-  %3 = select i1 %2, i32 64, i32 %1
-  ret i32 %3
+  %narrow = call i8 @llvm.umin.i8(i8 %0, i8 64)
+  %1 = zext nneg i8 %narrow to i32
+  ret i32 %1
 }
 
 ; 1 occurrences:
@@ -457,10 +456,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i8 %0) #0 {
 entry:
-  %1 = zext nneg i8 %0 to i32
-  %2 = icmp ugt i8 %0, 7
-  %3 = select i1 %2, i32 0, i32 %1
-  ret i32 %3
+  %1 = icmp ugt i8 %0, 7
+  %narrow = select i1 %1, i8 0, i8 %0
+  %2 = zext i8 %narrow to i32
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -474,4 +473,8 @@ entry:
   ret i16 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i8 @llvm.umin.i8(i8, i8) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

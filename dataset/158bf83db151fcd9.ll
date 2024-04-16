@@ -5,8 +5,8 @@
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, -2
-  %3 = shl nsw i32 %2, 3
+  %2 = shl i32 %1, 3
+  %3 = add i32 %2, -16
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -26,8 +26,8 @@ entry:
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, -1
-  %3 = shl nsw i32 %2, 1
+  %2 = shl i32 %1, 1
+  %3 = add i32 %2, -2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

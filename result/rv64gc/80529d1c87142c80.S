@@ -109,13 +109,11 @@ func0000000000000216:                   # @func0000000000000216
 	ret
 func0000000000000218:                   # @func0000000000000218
 	andi	a1, a1, 255
-	li	a3, 1
-	sll	a2, a3, a2
 	addi	a1, a1, -255
-	seqz	a1, a1
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	sltu	a0, a0, a1
+	snez	a1, a1
+	srl	a0, a0, a2
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000214:                   # @func0000000000000214
 	andi	a1, a1, 255

@@ -45,11 +45,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000000cc(i32 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i64 770, i64 %1
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i64 769, i64 %4
-  ret i64 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i64 %1, i64 770
+  %.not1 = icmp eq i32 %0, 0
+  %4 = select i1 %.not1, i64 %3, i64 769
+  ret i64 %4
 }
 
 ; 4 occurrences:
@@ -105,9 +105,9 @@ entry:
 define i8 @func0000000000000088(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 8
-  %4 = select i1 %3, i8 0, i8 %1
-  %5 = icmp ugt i64 %0, 16
-  %6 = select i1 %5, i8 0, i8 %4
+  %4 = icmp ugt i64 %0, 16
+  %5 = select i1 %4, i1 true, i1 %3
+  %6 = select i1 %5, i8 0, i8 %1
   ret i8 %6
 }
 

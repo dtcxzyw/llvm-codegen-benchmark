@@ -27,9 +27,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = lshr i64 %2, 2
-  %4 = icmp eq i64 %0, %3
+  %2 = lshr i32 %1, 2
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -42,9 +42,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %2, 1
-  %4 = icmp eq i64 %0, %3
+  %2 = lshr i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -55,9 +55,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = lshr exact i64 %2, 3
-  %4 = icmp ult i64 %0, %3
+  %2 = lshr i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
@@ -71,9 +71,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = lshr exact i64 %2, 24
-  %4 = icmp eq i64 %0, %3
+  %2 = lshr i32 %1, 24
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -87,9 +87,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 4
-  %4 = icmp ugt i32 %0, %3
+  %2 = lshr i8 %1, 4
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -100,9 +100,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 4
-  %4 = icmp slt i32 %0, %3
+  %2 = lshr i8 %1, 4
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -112,9 +112,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 4
-  %4 = icmp ult i32 %0, %3
+  %2 = lshr i8 %1, 4
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -123,9 +123,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000036(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = lshr exact i32 %2, 2
-  %4 = icmp slt i32 %0, %3
+  %2 = lshr i16 %1, 2
+  %3 = zext nneg i16 %2 to i32
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -139,9 +139,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 4
-  %4 = icmp sgt i32 %0, %3
+  %2 = lshr i8 %1, 4
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -150,9 +150,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %2, 1
-  %4 = icmp ugt i64 %0, %3
+  %2 = lshr i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 

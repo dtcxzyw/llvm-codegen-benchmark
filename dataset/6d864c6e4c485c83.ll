@@ -6,8 +6,8 @@
 define i64 @func0000000000000001(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = select i1 %3, i8 %0, i8 2
-  %5 = zext nneg i8 %4 to i64
+  %4 = zext nneg i8 %0 to i64
+  %5 = select i1 %3, i64 %4, i64 2
   ret i64 %5
 }
 
@@ -18,8 +18,8 @@ entry:
 define i64 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = select i1 %3, i8 %0, i8 -2
-  %5 = zext i8 %4 to i64
+  %4 = zext i8 %0 to i64
+  %5 = select i1 %3, i64 %4, i64 254
   ret i64 %5
 }
 

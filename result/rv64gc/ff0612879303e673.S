@@ -20,6 +20,6 @@ func000000000000003a:                   # @func000000000000003a
 .LBB1_3:                                # %entry
 	li	a0, -255
 	bgez	a2, .LBB1_2
-.LBB1_4:                                # %entry
+.LBB1_4:
 	negw	a0, a0
 	ret

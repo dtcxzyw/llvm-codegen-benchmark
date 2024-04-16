@@ -55,7 +55,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
-	xor	a3, a1, a2
+	xor	a3, a2, a1
 	slt	a1, a1, a2
 	czero.eqz	a1, a1, a3
 	sltu	a0, a0, a4
@@ -63,7 +63,7 @@ func0000000000000056:                   # @func0000000000000056
 	or	a0, a0, a1
 	ret
 func000000000000005b:                   # @func000000000000005b
-	xor	a3, a1, a2
+	xor	a3, a2, a1
 	slt	a1, a1, a2
 	czero.eqz	a1, a1, a3
 	sltu	a0, a0, a4

@@ -9,7 +9,7 @@ entry:
   %3 = icmp sgt i32 %2, 1
   %4 = select i1 %3, i1 true, i1 %1
   %5 = select i1 %4, i64 2, i64 1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

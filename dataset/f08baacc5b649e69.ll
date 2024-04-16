@@ -21,7 +21,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i32 @func0000000000000000(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = tail call i16 @llvm.umin.i16(i16 %1, i16 %2)
-  %4 = zext i16 %3 to i32
+  %4 = zext nneg i16 %3 to i32
   %5 = shl i32 %0, %4
   ret i32 %5
 }

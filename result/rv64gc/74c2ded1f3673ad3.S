@@ -15,6 +15,6 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fabs.d	fa5, fa1
-	feq.d	a1, fa0, fa5
+	feq.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

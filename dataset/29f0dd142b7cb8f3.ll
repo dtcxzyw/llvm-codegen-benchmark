@@ -16,12 +16,11 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds %"class.std::vector.297.1568238", ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %2 = getelementptr inbounds i8, ptr %0, i64 8
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr %"class.std::vector.297.1568238", ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -16
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -44,12 +43,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 2
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
+  %2 = getelementptr inbounds i8, ptr %0, i64 2
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr i8, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 ; 12 occurrences:
@@ -71,9 +69,8 @@ entry:
   %2 = add i32 %1, -2
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds %struct.aiFace.1752480, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.aiFace.1752480, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -81,12 +78,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 16
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 2048
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
+  %2 = getelementptr i8, ptr %0, i64 2048
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr i8, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 17
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -130,9 +126,8 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 5
-  %5 = getelementptr inbounds %"struct.OT::IntType.2272843", ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.OT::IntType.2272843", ptr %4, i64 %3, i32 0, i32 0, i64 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -140,12 +135,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -2
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 56
-  %5 = getelementptr %struct.s_slice.2359711, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 -16
-  ret ptr %6
+  %2 = getelementptr inbounds i8, ptr %0, i64 56
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr %struct.s_slice.2359711, ptr %2, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -80
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

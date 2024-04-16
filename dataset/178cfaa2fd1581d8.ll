@@ -8,8 +8,8 @@ define i64 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = select i1 %0, i32 %4, i32 16
-  %6 = sext i32 %5 to i64
+  %5 = sext i32 %4 to i64
+  %6 = select i1 %0, i64 %5, i64 16
   ret i64 %6
 }
 

@@ -77,10 +77,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000030(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %0, 0
-  %3 = select i1 %2, i8 %0, i8 %1
-  %4 = add i8 %3, -47
-  ret i8 %4
+  %.not = icmp eq i8 %0, 0
+  %2 = select i1 %.not, i8 %1, i8 %0
+  %3 = add i8 %2, -47
+  ret i8 %3
 }
 
 ; 2 occurrences:

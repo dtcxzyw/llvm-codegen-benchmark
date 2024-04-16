@@ -32,8 +32,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 223
+  %1 = and i8 %0, -33
+  %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -65
   %4 = icmp ult i32 %3, 26
   ret i1 %4
@@ -44,11 +44,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i16 %0) #0 {
 entry:
-  %1 = zext i16 %0 to i32
-  %2 = and i32 %1, 1023
-  %3 = add nsw i32 %2, -8
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = and i16 %0, 1023
+  %2 = icmp eq i16 %1, 8
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -58,11 +56,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 15
-  %3 = add nuw nsw i32 %2, 3
-  %4 = icmp eq i32 %3, 18
-  ret i1 %4
+  %1 = and i8 %0, 15
+  %2 = icmp eq i8 %1, 15
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

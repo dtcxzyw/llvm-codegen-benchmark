@@ -18,10 +18,9 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp sgt i32 %4, -1
-  %6 = select i1 %5, i32 %0, i32 -1
-  ret i32 %6
+  %.not = icmp sgt i32 %3, %1
+  %4 = select i1 %.not, i32 -1, i32 %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -30,10 +29,9 @@ entry:
 define i32 @func000000000000005a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = icmp sgt i64 %4, 0
-  %6 = select i1 %5, i32 %0, i32 0
-  ret i32 %6
+  %4 = icmp slt i64 %3, %1
+  %5 = select i1 %4, i32 %0, i32 0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -21,7 +21,7 @@ entry:
   %4 = and i16 %3, 62
   %5 = zext nneg i16 %4 to i64
   %6 = shl nuw i64 %1, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = and i32 %3, 120
   %5 = zext nneg i32 %4 to i128
   %6 = shl i128 %1, %5
-  %7 = or i128 %0, %6
+  %7 = or i128 %6, %0
   ret i128 %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = and i32 %3, 62
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw i64 %1, %5
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

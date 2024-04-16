@@ -8,10 +8,9 @@ define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %0, %3
-  %5 = icmp ne i64 %4, 0
-  %6 = xor i1 %5, true
-  ret i1 %6
+  %4 = and i64 %3, %0
+  %.not = icmp eq i64 %4, 0
+  ret i1 %.not
 }
 
 ; 10 occurrences:
@@ -30,10 +29,9 @@ define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  %6 = xor i1 %5, true
-  ret i1 %6
+  %4 = and i64 %3, %0
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

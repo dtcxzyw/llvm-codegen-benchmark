@@ -54,16 +54,10 @@ func0000000000000014:                   # @func0000000000000014
 	mv	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sext.w	a2, a0
-	sext.w	a1, a1
-	bgeu	a1, a2, .LBB4_3
-	lui	a0, 1
-	beqz	a2, .LBB4_4
-.LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
+	or	a0, a0, a1
+	sext.w	a1, a0
 	lui	a0, 1
 	bnez	a1, .LBB4_2
-.LBB4_4:
 	addiw	a0, a0, 16
+.LBB4_2:                                # %entry
 	ret

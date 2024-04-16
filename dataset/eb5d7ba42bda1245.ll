@@ -12,9 +12,9 @@
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = icmp sgt i64 %3, -1
-  %5 = select i1 %4, i64 %0, i64 0
-  ret i64 %5
+  %.inv = icmp slt i64 %3, 0
+  %4 = select i1 %.inv, i64 0, i64 %0
+  ret i64 %4
 }
 
 ; 5 occurrences:
@@ -171,9 +171,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 -6
-  ret i32 %5
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i32 -6, i32 %0
+  ret i32 %4
 }
 
 ; 3 occurrences:

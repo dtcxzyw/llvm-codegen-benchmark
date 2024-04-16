@@ -6,9 +6,9 @@
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
-  %3 = zext i1 %2 to i32
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %.neg = sext i1 %2 to i32
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 ; 13 occurrences:
@@ -29,9 +29,9 @@ entry:
 define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
-  %3 = zext i1 %2 to i64
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
+  %.neg = sext i1 %2 to i64
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -40,9 +40,9 @@ entry:
 define i64 @func0000000000000060(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = zext i1 %2 to i64
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = sext i1 %2 to i64
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -52,9 +52,9 @@ entry:
 define i64 @func000000000000000a(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 123
-  %3 = zext i1 %2 to i64
-  %4 = sub nuw i64 %0, %3
-  ret i64 %4
+  %.neg = sext i1 %2 to i64
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 5 occurrences:
@@ -67,9 +67,9 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
-  %3 = zext i1 %2 to i64
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = sext i1 %2 to i64
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -80,9 +80,9 @@ entry:
 define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = zext i1 %2 to i32
-  %4 = sub nuw nsw i32 %0, %3
-  ret i32 %4
+  %.neg = sext i1 %2 to i32
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

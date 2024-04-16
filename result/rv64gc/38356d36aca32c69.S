@@ -4,7 +4,7 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000036:                   # @func0000000000000036
 	or	a3, a3, a5
-	beq	a1, a3, .LBB1_2
+	beq	a3, a1, .LBB1_2
 	slt	a0, a1, a3
 	xori	a0, a0, 1
 	ret
@@ -56,7 +56,7 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func000000000000002c:                   # @func000000000000002c
 	or	a3, a3, a5
-	beq	a1, a3, .LBB8_2
+	beq	a3, a1, .LBB8_2
 	slt	a0, a1, a3
 	ret
 .LBB8_2:
@@ -65,7 +65,7 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000032:                   # @func0000000000000032
 	or	a3, a3, a5
-	beq	a1, a3, .LBB9_2
+	beq	a3, a1, .LBB9_2
 	sltu	a0, a1, a3
 	xori	a0, a0, 1
 	ret

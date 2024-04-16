@@ -28,9 +28,9 @@ define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 9
   %2 = and i32 %1, 1024
-  %3 = and i32 %0, -1025
+  %3 = and i32 %0, -1281
   %4 = or disjoint i32 %2, %3
-  %5 = or i32 %4, 256
+  %5 = or disjoint i32 %4, 256
   ret i32 %5
 }
 

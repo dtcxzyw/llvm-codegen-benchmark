@@ -38,7 +38,7 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048576
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -91,7 +91,7 @@ entry:
 define i1 @func00000000000001cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 240
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5

@@ -1,5 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a1, 1048560
+	lui	a1, 16384
+	addiw	a1, a1, -1
+	slli	a1, a1, 16
 	add	a0, a0, a1
 	srli	a0, a0, 10
 	li	a1, 27
@@ -49,7 +51,9 @@ func0000000000000029:                   # @func0000000000000029
 	addiw	a0, a0, 347
 	ret
 func0000000000000033:                   # @func0000000000000033
-	addi	a0, a0, -128
+	lui	a1, 2
+	addi	a1, a1, -128
+	add	a0, a0, a1
 	srliw	a0, a0, 5
 	addi	a0, a0, 12
 	ret

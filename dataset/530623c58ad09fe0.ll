@@ -33,7 +33,7 @@
 define float @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = uitofp i32 %3 to float
   ret float %4
 }
@@ -44,7 +44,7 @@ entry:
 define double @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -60,7 +60,7 @@ entry:
 define double @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = uitofp i32 %3 to double
   ret double %4
 }
@@ -74,7 +74,7 @@ entry:
 define double @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -85,7 +85,7 @@ entry:
 define double @func000000000000000e(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
-  %3 = add nuw nsw i128 %0, %2
+  %3 = add nuw nsw i128 %2, %0
   %4 = uitofp i128 %3 to double
   ret double %4
 }

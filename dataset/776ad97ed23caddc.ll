@@ -30,10 +30,9 @@ define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = lshr i64 %3, 5
-  %5 = shl i64 %4, 32
-  %6 = ashr exact i64 %5, 32
-  ret i64 %6
+  %4 = shl i64 %3, 27
+  %5 = ashr i64 %4, 32
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

@@ -8,10 +8,8 @@ func000000000000003c:                   # @func000000000000003c
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	not	a0, a0
-	add	a0, a0, a1
+	addw	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	slli	a1, a1, 48
@@ -23,6 +21,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 255
-	subw	a0, a1, a0
-	addiw	a0, a0, -10
+	subw	a1, a1, a0
+	lui	a0, 16
+	addi	a0, a0, -10
+	addw	a0, a0, a1
 	ret

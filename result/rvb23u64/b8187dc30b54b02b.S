@@ -55,12 +55,12 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 1
 	fcvt.d.w	fa5, a0
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -1
 	fcvt.d.w	fa5, a0
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	ret
 func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, -127

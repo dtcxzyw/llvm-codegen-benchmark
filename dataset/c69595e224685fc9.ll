@@ -99,7 +99,7 @@
 define i32 @func0000000000000001(i80 %0) #0 {
 entry:
   %1 = lshr i80 %0, 64
-  %2 = trunc i80 %1 to i32
+  %2 = trunc nuw nsw i80 %1 to i32
   %3 = and i32 %2, 32767
   %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 1)
   %5 = add nsw i32 %4, -16383

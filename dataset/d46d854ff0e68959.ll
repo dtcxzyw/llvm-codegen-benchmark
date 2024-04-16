@@ -12,7 +12,7 @@ entry:
   %3 = lshr i32 %2, 7
   %4 = zext nneg i32 %3 to i64
   %5 = zext i16 %1 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = mul nuw nsw i64 %6, %4
   ret i64 %7
 }

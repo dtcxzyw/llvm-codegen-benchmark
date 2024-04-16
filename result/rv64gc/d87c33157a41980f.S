@@ -1,7 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
-	bne	a2, a0, .LBB0_2
-	mv	a0, a1
+	beq	a2, a0, .LBB0_2
+	mv	a1, a0
 .LBB0_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	beq	a2, a0, .LBB1_2

@@ -17,7 +17,7 @@ entry:
   %3 = and i32 %2, 95
   %4 = add nsw i32 %3, -91
   %5 = icmp ult i32 %4, -26
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = and i8 %2, -33
   %4 = add i8 %3, -65
   %5 = icmp ult i8 %4, 26
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

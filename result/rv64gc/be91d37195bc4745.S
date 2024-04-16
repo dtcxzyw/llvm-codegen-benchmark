@@ -28,11 +28,10 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a2, a2, 43
-	bnez	a2, .LBB3_2
-	lui	a0, 1048064
-	and	a0, a0, a1
+	beqz	a2, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
-	li	a1, -17
-	slli	a1, a1, 32
-	sltu	a0, a0, a1
+	li	a0, -17
+	slli	a0, a0, 32
+	sltu	a0, a1, a0
 	ret

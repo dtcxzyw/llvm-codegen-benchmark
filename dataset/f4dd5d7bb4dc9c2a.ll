@@ -11,7 +11,7 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = udiv i32 %1, 10
   %3 = urem i32 %2, 10
-  %4 = trunc i32 %3 to i8
+  %4 = trunc nuw nsw i32 %3 to i8
   ret i8 %4
 }
 

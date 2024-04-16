@@ -22,9 +22,9 @@ entry:
 define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 13
-  %2 = and i32 %1, 2040
-  %3 = add nsw i32 %2, -48
-  %4 = icmp ugt i32 %3, 127
+  %2 = and i32 %1, 2032
+  %3 = add nsw i32 %2, -176
+  %4 = icmp ult i32 %3, -128
   %5 = select i1 %4, i32 128, i32 64
   ret i32 %5
 }

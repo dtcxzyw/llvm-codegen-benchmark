@@ -21,7 +21,7 @@ entry:
   %4 = shl nuw nsw i32 1, %3
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %5, i32 -2147483648, i32 %4
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

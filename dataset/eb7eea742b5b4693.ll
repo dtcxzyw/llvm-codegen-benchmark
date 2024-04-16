@@ -8,7 +8,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = add i64 %5, 1
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

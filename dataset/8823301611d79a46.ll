@@ -7,11 +7,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 24
-  %3 = icmp eq i32 %2, -16777216
-  %4 = icmp eq i8 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %.mask = and i32 %1, 255
+  %2 = icmp eq i32 %.mask, 255
+  %3 = icmp eq i8 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -22,11 +22,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 24
-  %3 = icmp ne i32 %2, 1191182336
-  %4 = icmp ne i64 %0, 0
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %.mask = and i32 %1, 255
+  %2 = icmp ne i32 %.mask, 71
+  %3 = icmp ne i64 %0, 0
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -34,11 +34,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 32
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp sgt i64 %0, -1
-  %5 = and i1 %3, %4
-  ret i1 %5
+  %.mask = and i64 %1, 4294967295
+  %2 = icmp ne i64 %.mask, 0
+  %3 = icmp sgt i64 %0, -1
+  %4 = and i1 %2, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:

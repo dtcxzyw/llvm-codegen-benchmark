@@ -10,7 +10,7 @@
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = uitofp i64 %3 to double
   %5 = fmul double %4, 6.000000e-01
   ret double %5

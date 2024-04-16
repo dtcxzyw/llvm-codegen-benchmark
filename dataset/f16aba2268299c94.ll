@@ -9,7 +9,7 @@ entry:
   %3 = uitofp i32 %2 to double
   %4 = uitofp i32 %1 to double
   %5 = fsub double %4, %3
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

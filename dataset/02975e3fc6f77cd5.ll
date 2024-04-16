@@ -9,7 +9,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
   %5 = sitofp i32 %1 to double
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   %7 = fadd double %6, %4
   ret double %7
 }

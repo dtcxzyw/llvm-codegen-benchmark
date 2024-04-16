@@ -8,7 +8,7 @@ entry:
   %2 = icmp slt i32 %1, 1
   %3 = select i1 %2, i32 4, i32 %1
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = icmp slt i32 %1, 1
   %3 = select i1 %2, i32 4, i32 %1
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = icmp ugt i8 %1, 10
   %3 = select i1 %2, i8 2, i8 %1
   %4 = sext i8 %3 to i64
-  %5 = icmp sge i64 %0, %4
+  %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
 
@@ -44,7 +44,7 @@ entry:
   %2 = icmp ugt i8 %1, 10
   %3 = select i1 %2, i8 2, i8 %1
   %4 = sext i8 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -56,7 +56,7 @@ entry:
   %2 = icmp ugt i8 %1, 10
   %3 = select i1 %2, i8 2, i8 %1
   %4 = sext i8 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

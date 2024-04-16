@@ -7,7 +7,7 @@ define i1 @func0000000000000001(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
   %4 = tail call i16 @llvm.smax.i16(i16 %1, i16 %3)
-  %5 = icmp eq i16 %0, %4
+  %5 = icmp eq i16 %4, %0
   ret i1 %5
 }
 
@@ -21,7 +21,7 @@ define i1 @func0000000000000007(i16 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = trunc i48 %2 to i16
   %4 = tail call i16 @llvm.smax.i16(i16 %1, i16 %3)
-  %5 = icmp sle i16 %0, %4
+  %5 = icmp sge i16 %4, %0
   ret i1 %5
 }
 
@@ -42,7 +42,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %3)
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ define i1 @func000000000000004c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = tail call i32 @llvm.smax.i32(i32 %1, i32 %3)
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 
@@ -71,7 +71,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = call i32 @llvm.smax.i32(i32 %1, i32 %3)
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

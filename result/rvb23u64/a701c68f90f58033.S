@@ -10,14 +10,14 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000004:                   # @func0000000000000004
 	fli.d	fa5, 0.5
 	fmul.d	fa5, fa2, fa5
-	fmul.d	fa5, fa1, fa5
+	fmul.d	fa5, fa5, fa1
 	flt.d	a0, fa5, fa0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fli.d	fa5, 0.5
 	fneg.d	fa5, fa5
 	fmul.d	fa5, fa2, fa5
-	fmul.d	fa5, fa1, fa5
+	fmul.d	fa5, fa5, fa1
 	flt.d	a0, fa0, fa5
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -34,14 +34,14 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	fmul.s	fa5, fa2, fa5
-	fmul.s	fa5, fa1, fa5
+	fmul.s	fa5, fa5, fa1
 	fle.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fli.s	fa5, 3.0
 	fmul.s	fa5, fa2, fa5
-	fmul.s	fa5, fa1, fa5
+	fmul.s	fa5, fa5, fa1
 	fle.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
@@ -51,7 +51,7 @@ func000000000000000b:                   # @func000000000000000b
 	lui	a0, %hi(.LCPI6_0)
 	flw	fa5, %lo(.LCPI6_0)(a0)
 	fmul.s	fa5, fa2, fa5
-	fmul.s	fa5, fa1, fa5
+	fmul.s	fa5, fa5, fa1
 	flt.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret

@@ -8,7 +8,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = and i64 %5, 4294967295
   %7 = getelementptr inbounds %struct.MapNode.1647710, ptr %0, i64 %6
   ret ptr %7
@@ -23,7 +23,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = and i64 %5, 274877906936
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7

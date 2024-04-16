@@ -181,7 +181,7 @@
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = select i1 %4, i32 1, i32 -1
   ret i32 %5
 }
@@ -195,9 +195,9 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = icmp sge i32 %0, %3
-  %5 = select i1 %4, i32 2, i32 1
-  ret i32 %5
+  %.not = icmp sgt i32 %3, %0
+  %4 = select i1 %.not, i32 1, i32 2
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

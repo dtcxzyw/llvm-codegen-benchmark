@@ -69,10 +69,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 2
-  %4 = select i1 %3, i64 %0, i64 %1
-  %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 0)
-  ret i64 %5
+  %.not = icmp eq i32 %2, 2
+  %3 = select i1 %.not, i64 %1, i64 %0
+  %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 0)
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -95,8 +95,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = icmp sgt i8 %2, -1
-  %4 = select i1 %3, i64 %0, i64 %1
+  %3 = icmp slt i8 %2, 0
+  %4 = select i1 %3, i64 %1, i64 %0
   %5 = call noundef i64 @llvm.smin.i64(i64 %4, i64 26)
   ret i64 %5
 }

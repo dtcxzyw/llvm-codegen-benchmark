@@ -7,11 +7,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 1)
-  %2 = extractvalue { i64, i1 } %1, 0
-  %3 = shl i64 %0, 1
-  %4 = call noundef i64 @llvm.umax.i64(i64 %3, i64 %2)
-  ret i64 %4
+  %1 = add i64 %0, 1
+  %2 = shl i64 %0, 1
+  %3 = call noundef i64 @llvm.umax.i64(i64 %2, i64 %1)
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

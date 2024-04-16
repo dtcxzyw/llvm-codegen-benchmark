@@ -461,9 +461,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = icmp ne i64 %0, 4
-  %2 = select i1 %1, i64 %0, i64 1
-  ret i64 %2
+  %.not = icmp eq i64 %0, 4
+  %1 = select i1 %.not, i64 1, i64 %0
+  ret i64 %1
 }
 
 ; 224 occurrences:
@@ -694,9 +694,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 257
-  %2 = select i1 %1, i64 %0, i64 256
-  ret i64 %2
+  %1 = call i64 @llvm.umin.i64(i64 %0, i64 256)
+  ret i64 %1
 }
 
 ; 16 occurrences:
@@ -724,4 +723,8 @@ entry:
   ret i32 %2
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

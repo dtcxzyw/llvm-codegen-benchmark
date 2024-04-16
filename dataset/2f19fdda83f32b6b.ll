@@ -19,11 +19,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 6
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds [4 x i64], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = lshr i8 %1, 6
+  %3 = zext nneg i8 %2 to i64
+  %4 = getelementptr inbounds [4 x i64], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -31,11 +30,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = lshr i32 %2, 6
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds [2 x i64], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = lshr i8 %1, 6
+  %3 = zext nneg i8 %2 to i64
+  %4 = getelementptr inbounds [2 x i64], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 12 occurrences:
@@ -54,11 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = lshr i32 %2, 4
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.SCC2698Channel.1662671], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = lshr i8 %1, 4
+  %3 = zext nneg i8 %2 to i64
+  %4 = getelementptr [8 x %struct.SCC2698Channel.1662671], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -66,11 +63,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = lshr i32 %2, 5
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [128 x i32], ptr %0, i64 0, i64 %4
-  ret ptr %5
+  %2 = lshr i16 %1, 5
+  %3 = zext nneg i16 %2 to i64
+  %4 = getelementptr [128 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

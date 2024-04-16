@@ -10,10 +10,10 @@
 define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
-  %4 = shl i64 %3, 2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = mul nsw i64 %2, %0
+  %.mask = and i64 %3, 4611686018427387903
+  %4 = icmp eq i64 %.mask, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -23,9 +23,9 @@ entry:
 define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
-  %4 = shl i64 %3, 2
-  %5 = icmp ult i64 %4, 32
+  %3 = mul nsw i64 %2, %0
+  %4 = and i64 %3, 4611686018427387896
+  %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
@@ -35,10 +35,10 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
-  %4 = shl i64 %3, 2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = mul i64 %2, %0
+  %.mask = and i64 %3, 4611686018427387903
+  %4 = icmp eq i64 %.mask, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

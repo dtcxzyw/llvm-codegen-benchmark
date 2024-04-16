@@ -10,13 +10,13 @@ func0000000000000134:                   # @func0000000000000134
 	ret
 func0000000000000051:                   # @func0000000000000051
 	slli	a2, a2, 48
-	srli	a3, a2, 48
-	li	a4, 2
-	li	a2, -32
-	beq	a3, a4, .LBB1_2
-	li	a2, -64
-.LBB1_2:                                # %entry
+	srli	a2, a2, 48
 	addw	a0, a0, a1
-	and	a0, a0, a2
-	seqz	a0, a0
+	li	a3, 2
+	li	a1, 31
+	beq	a2, a3, .LBB1_2
+	li	a1, 63
+.LBB1_2:                                # %entry
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret

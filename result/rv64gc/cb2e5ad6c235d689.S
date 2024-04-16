@@ -30,27 +30,27 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -193
-	add	a0, a0, a1
-	li	a1, 125
+	li	a1, -125
 	slli	a1, a1, 26
-	addi	a1, a1, -125
+	addi	a2, a1, 127
+	slli	a2, a2, 12
+	addi	a2, a2, -193
+	add	a0, a0, a2
+	addi	a1, a1, 125
 	slli	a1, a1, 12
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	sltu	a0, a0, a1
 	ret
 func0000000000000058:                   # @func0000000000000058
 	mul	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -193
-	add	a0, a0, a1
-	li	a1, 125
+	li	a1, -125
 	slli	a1, a1, 26
-	addi	a1, a1, -125
+	addi	a2, a1, 127
+	slli	a2, a2, 12
+	addi	a2, a2, -193
+	add	a0, a0, a2
+	addi	a1, a1, 125
 	slli	a1, a1, 12
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	sltu	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	mul	a0, a0, a1
@@ -109,9 +109,12 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000048:                   # @func0000000000000048
 	mul	a0, a0, a1
-	addi	a0, a0, 2
+	li	a1, -1
+	slli	a1, a1, 61
+	addi	a1, a1, 2
+	add	a0, a0, a1
 	srli	a0, a0, 61
-	snez	a0, a0
+	sltiu	a0, a0, 7
 	ret
 func0000000000000006:                   # @func0000000000000006
 	mul	a0, a0, a1
@@ -130,7 +133,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000018:                   # @func0000000000000018
 	mul	a0, a0, a1
-	addi	a0, a0, 1
+	li	a1, -1
+	slli	a1, a1, 60
+	addi	a1, a1, 1
+	add	a0, a0, a1
 	srli	a0, a0, 60
-	snez	a0, a0
+	sltiu	a0, a0, 15
 	ret

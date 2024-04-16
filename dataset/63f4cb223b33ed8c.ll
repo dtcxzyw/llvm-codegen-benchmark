@@ -11,9 +11,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 2, %1
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = shl i32 -2, %1
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 10 occurrences:
@@ -30,9 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 1, %1
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -40,9 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 -1, %1
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = shl nuw i32 1, %1
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 6 occurrences:
@@ -55,9 +55,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = sub i32 %0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 47 occurrences:
@@ -111,9 +111,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = sub i64 %0, %2
-  ret i64 %3
+  %.neg = shl nsw i64 -1, %1
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -122,9 +122,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 2, %1
-  %3 = sub nsw i32 %0, %2
-  ret i32 %3
+  %.neg = shl i32 -2, %1
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 6 occurrences:
@@ -137,9 +137,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 3, %1
-  %3 = sub i32 %0, %2
-  ret i32 %3
+  %.neg = shl i32 -3, %1
+  %2 = add i32 %.neg, %0
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -149,9 +149,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 -1, %1
-  %3 = sub i64 %0, %2
-  ret i64 %3
+  %.neg = shl nuw i64 1, %1
+  %2 = add i64 %.neg, %0
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

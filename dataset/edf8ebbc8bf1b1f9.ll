@@ -32,10 +32,9 @@
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, 1
-  %3 = shl i32 %2, 16
-  %4 = or disjoint i32 %3, 52
-  ret i32 %4
+  %2 = shl i32 %1, 16
+  %3 = add i32 %2, 65588
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

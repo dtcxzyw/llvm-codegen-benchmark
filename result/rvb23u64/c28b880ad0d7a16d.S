@@ -17,9 +17,10 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1
-	addi	a2, a2, 1
+	addiw	a2, a2, 1
 	czero.eqz	a1, a2, a1
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056

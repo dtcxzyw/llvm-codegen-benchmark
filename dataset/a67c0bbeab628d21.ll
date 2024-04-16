@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, -4096
-  %2 = sub i64 %1, %0
+  %1 = and i64 %0, 4095
+  %2 = sub nsw i64 0, %1
   ret i64 %2
 }
 

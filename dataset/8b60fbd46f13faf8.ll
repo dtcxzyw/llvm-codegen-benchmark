@@ -74,10 +74,10 @@ entry:
 define i1 @func0000000000000051(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
-  %3 = or disjoint i16 %2, %0
-  %4 = and i16 %3, -2
-  %5 = icmp eq i16 %4, 12
-  ret i1 %5
+  %.masked = and i16 %0, -2
+  %3 = or i16 %2, %.masked
+  %4 = icmp eq i16 %3, 12
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -86,7 +86,7 @@ entry:
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = and i32 %3, 128
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -118,7 +118,7 @@ define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
   %3 = or disjoint i64 %2, %0
-  %4 = and i64 %3, 4294967295
+  %4 = and i64 %3, 4294967288
   %5 = icmp ult i64 %4, 200
   ret i1 %5
 }
@@ -130,7 +130,7 @@ entry:
 define i1 @func000000000000007c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = and i64 %3, 4503599627370495
   %5 = icmp ne i64 %4, 0
   ret i1 %5
@@ -142,7 +142,7 @@ entry:
 define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = and i32 %3, 63488
   %5 = icmp eq i32 %4, 55296
   ret i1 %5
@@ -154,9 +154,9 @@ entry:
 define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = or i32 %0, %2
-  %4 = and i32 %3, 65535
-  %5 = icmp ugt i32 %4, 2047
+  %3 = or i32 %2, %0
+  %4 = and i32 %3, 63488
+  %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
 
@@ -166,9 +166,9 @@ entry:
 define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = or disjoint i64 %0, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, 256
+  %3 = or disjoint i64 %2, %0
+  %4 = and i64 %3, 4294967040
+  %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
@@ -178,7 +178,7 @@ entry:
 define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = and i64 %3, 4294967295
   %5 = icmp ne i64 %4, 4294967295
   ret i1 %5

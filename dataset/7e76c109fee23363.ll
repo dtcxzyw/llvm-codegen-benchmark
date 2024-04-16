@@ -8,7 +8,7 @@
 define i128 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %0, %2
+  %3 = or disjoint i128 %2, %0
   %4 = sub i128 0, %3
   ret i128 %4
 }
@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = sub nuw nsw i64 514, %3
   ret i64 %4
 }
@@ -47,7 +47,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = sub nsw i64 0, %3
   ret i64 %4
 }
@@ -58,7 +58,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = sub nsw i32 0, %3
   ret i32 %4
 }
@@ -69,7 +69,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = sub nsw i64 0, %3
   ret i64 %4
 }
@@ -80,7 +80,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = sub i32 0, %3
   ret i32 %4
 }

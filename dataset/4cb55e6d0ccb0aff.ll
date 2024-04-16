@@ -33,8 +33,8 @@ entry:
   %2 = or i64 %0, %1
   %3 = lshr i64 %2, 32
   %4 = or i64 %3, %2
-  %5 = add i64 %4, 1
-  %6 = icmp ugt i64 %5, 33
+  %5 = add i64 %4, -33
+  %6 = icmp ult i64 %5, -34
   ret i1 %6
 }
 
@@ -46,9 +46,8 @@ entry:
   %2 = or i32 %0, %1
   %3 = lshr i32 %2, 16
   %4 = or i32 %3, %2
-  %5 = add i32 %4, 1
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, -1
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

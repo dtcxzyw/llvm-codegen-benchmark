@@ -1,6 +1,8 @@
 func000000000000008e:                   # @func000000000000008e
 	bnez	a1, .LBB0_2
-	li	a1, -1074
+	li	a1, 1
+	slli	a1, a1, 32
+	addi	a1, a1, -1074
 	sll	a0, a0, a1
 	ret
 .LBB0_2:

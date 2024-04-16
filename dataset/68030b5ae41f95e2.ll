@@ -14,7 +14,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 29
   %4 = or disjoint i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 29
   %4 = or i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

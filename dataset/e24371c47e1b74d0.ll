@@ -19,9 +19,8 @@
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr inbounds %"struct.blender::MVertBlender2.1561864", ptr %2, i64 %0, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 2
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.blender::MVertBlender2.1561864", ptr %2, i64 %0, i32 1, i64 1
+  ret ptr %3
 }
 
 ; 4 occurrences:
@@ -33,9 +32,8 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %struct.page.2014332, ptr %2, i64 %0, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %struct.page.2014332, ptr %2, i64 %0, i32 1, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

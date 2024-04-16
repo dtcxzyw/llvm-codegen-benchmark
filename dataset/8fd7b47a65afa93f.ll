@@ -6,7 +6,7 @@
 define i8 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc nuw nsw i32 %3 to i8
   %5 = or disjoint i8 %4, -64
   ret i8 %5
@@ -86,7 +86,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = trunc i32 %3 to i16
   %5 = or i16 %4, 8193
   ret i16 %5
@@ -98,7 +98,7 @@ entry:
 define i8 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 124
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = trunc i32 %3 to i8
   %5 = or disjoint i8 %4, -128
   ret i8 %5
@@ -109,9 +109,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 4032
-  %3 = or disjoint i32 %0, %2
-  %4 = trunc nuw nsw i32 %3 to i16
+  %2 = and i32 %1, 960
+  %3 = or i32 %2, %0
+  %4 = trunc i32 %3 to i16
   %5 = or i16 %4, -9216
   ret i16 %5
 }
@@ -122,7 +122,7 @@ entry:
 define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = trunc nuw i32 %3 to i8
   %5 = or i8 %4, 16
   ret i8 %5

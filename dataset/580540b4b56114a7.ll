@@ -5,8 +5,8 @@
 define i1 @func0000000000000098(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = icmp ugt i32 %1, %3
-  %5 = icmp uge i32 %1, %3
+  %4 = icmp ult i32 %3, %1
+  %5 = icmp ule i32 %3, %1
   %6 = select i1 %0, i1 %4, i1 %5
   ret i1 %6
 }
@@ -17,8 +17,8 @@ entry:
 define i1 @func0000000000000091(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %1, %3
-  %5 = icmp uge i64 %1, %3
+  %4 = icmp eq i64 %3, %1
+  %5 = icmp ule i64 %3, %1
   %6 = select i1 %0, i1 %4, i1 %5
   ret i1 %6
 }
@@ -29,8 +29,8 @@ entry:
 define i1 @func000000000000017b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp sge i64 %1, %3
-  %5 = icmp sle i64 %1, %3
+  %4 = icmp sle i64 %3, %1
+  %5 = icmp sge i64 %3, %1
   %6 = select i1 %0, i1 %4, i1 %5
   ret i1 %6
 }
@@ -42,8 +42,8 @@ entry:
 define i1 @func00000000000001b7(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp sge i64 %1, %3
-  %5 = icmp sle i64 %1, %3
+  %4 = icmp sle i64 %3, %1
+  %5 = icmp sge i64 %3, %1
   %6 = select i1 %0, i1 %5, i1 %4
   ret i1 %6
 }

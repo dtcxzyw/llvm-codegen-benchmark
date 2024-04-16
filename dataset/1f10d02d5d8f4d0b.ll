@@ -39,7 +39,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 0, i32 -1073741760
+  %3 = select i1 %2, i32 0, i32 -2147483584
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 %0
   %6 = or i32 %5, 1073742080

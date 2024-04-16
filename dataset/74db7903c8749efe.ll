@@ -4051,8 +4051,8 @@
 define ptr @func0000000000000029(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = add nsw i64 %3, %2
-  %5 = icmp ult i64 %4, %2
+  %4 = xor i64 %2, -1
+  %5 = icmp ugt i64 %3, %4
   %6 = select i1 %5, i64 384307168202282325, i64 %1
   %7 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %6
   ret ptr %7
@@ -4460,8 +4460,8 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = add i64 %3, %2
-  %5 = icmp ult i64 %4, %2
+  %4 = xor i64 %2, -1
+  %5 = icmp ugt i64 %3, %4
   %6 = select i1 %5, i64 9223372036854775807, i64 %1
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7
@@ -4473,8 +4473,8 @@ entry:
 define ptr @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.umax.i64(i64 %2, i64 1)
-  %4 = add nsw i64 %3, %2
-  %5 = icmp ult i64 %4, %2
+  %4 = xor i64 %2, -1
+  %5 = icmp ugt i64 %3, %4
   %6 = select i1 %5, i64 1152921504606846975, i64 %1
   %7 = getelementptr %"struct.std::pair.1925603", ptr %0, i64 %6
   ret ptr %7

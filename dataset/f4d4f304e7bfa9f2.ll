@@ -11,7 +11,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = and i32 %0, 67
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %2, %4
+  %5 = or i1 %4, %2
   %6 = select i1 %5, i32 %0, i32 %1
   ret i32 %6
 }
@@ -66,7 +66,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = and i64 %0, 31
   %4 = icmp eq i64 %3, 27
-  %5 = or i1 %2, %4
+  %5 = or i1 %4, %2
   %6 = select i1 %5, i64 %0, i64 %1
   ret i64 %6
 }

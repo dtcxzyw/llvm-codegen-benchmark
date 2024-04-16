@@ -16,7 +16,7 @@
 define i64 @func00000000000000d3(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = select i1 %4, i64 %0, i64 %1
   %6 = shl nuw nsw i64 %5, 1
   ret i64 %6

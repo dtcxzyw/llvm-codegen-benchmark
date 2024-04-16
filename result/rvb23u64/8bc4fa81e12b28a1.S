@@ -1,7 +1,8 @@
 func0000000000000007:                   # @func0000000000000007
-	andi	a1, a1, 7
+	slli	a1, a1, 61
+	srli	a1, a1, 58
 	andi	a0, a0, -64
-	sh3add	a0, a1, a0
+	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	slliw	a1, a1, 24

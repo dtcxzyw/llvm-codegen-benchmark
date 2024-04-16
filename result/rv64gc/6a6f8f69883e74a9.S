@@ -1,5 +1,5 @@
 func0000000000000028:                   # @func0000000000000028
-	not	a0, a0
+	xori	a0, a0, 1
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	addi	a1, a1, -58

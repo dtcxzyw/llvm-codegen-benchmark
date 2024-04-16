@@ -52,7 +52,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
   %4 = getelementptr inbounds [14 x %"union.std::aligned_storage<8, 8>::type.1637575"], ptr %3, i64 0, i64 %1
   %5 = ptrtoint ptr %4 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

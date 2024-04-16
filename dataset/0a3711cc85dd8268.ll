@@ -10,7 +10,7 @@ define float @func0000000000000000(float %0, float %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %1, %4
+  %5 = fmul float %4, %1
   %6 = fdiv float %5, %0
   ret float %6
 }

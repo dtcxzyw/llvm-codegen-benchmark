@@ -7,7 +7,7 @@
 define i1 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 1
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = shl nuw nsw i32 2, %1
   %6 = icmp sgt i32 %4, %5
   ret i1 %6

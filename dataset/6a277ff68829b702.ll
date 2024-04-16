@@ -97,10 +97,10 @@
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 20
-  %2 = and i32 %1, 15
-  %3 = lshr i32 %0, 16
+  %2 = lshr i32 %0, 16
+  %3 = xor i32 %2, %1
   %4 = and i32 %3, 15
-  %5 = icmp eq i32 %4, %2
+  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
@@ -202,10 +202,10 @@ entry:
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 20
-  %2 = and i64 %1, 31
-  %3 = lshr i64 %0, 7
+  %2 = lshr i64 %0, 7
+  %3 = xor i64 %2, %1
   %4 = and i64 %3, 31
-  %5 = icmp ne i64 %4, %2
+  %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
 

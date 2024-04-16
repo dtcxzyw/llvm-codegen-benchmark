@@ -9,7 +9,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, -1
   %5 = getelementptr inbounds i8, ptr %1, i64 5
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   %7 = select i1 %6, i1 true, i1 %4
   ret i1 %7
 }

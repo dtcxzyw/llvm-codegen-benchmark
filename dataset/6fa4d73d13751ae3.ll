@@ -192,8 +192,8 @@
 define i32 @func0000000000000001(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = and i32 %1, 2139095040
-  %3 = lshr exact i32 %2, 23
+  %2 = lshr i32 %1, 23
+  %3 = and i32 %2, 255
   ret i32 %3
 }
 
@@ -206,8 +206,8 @@ entry:
 define i64 @func0000000000000000(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = and i64 %1, 4503599627370495
-  %3 = lshr i64 %2, 32
+  %2 = lshr i64 %1, 32
+  %3 = and i64 %2, 1048575
   ret i64 %3
 }
 

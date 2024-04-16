@@ -6,7 +6,7 @@
 define i64 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, 3317948294049201653
-  %3 = xor i128 %0, %2
+  %3 = xor i128 %2, %0
   %4 = trunc i128 %3 to i64
   ret i64 %4
 }
@@ -128,7 +128,7 @@ entry:
 define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, 11376068507788127593
-  %3 = xor i128 %0, %2
+  %3 = xor i128 %2, %0
   %4 = trunc i128 %3 to i64
   ret i64 %4
 }
@@ -160,8 +160,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, -4070662928558531325
-  %3 = xor i64 %0, %2
+  %2 = mul i64 %1, 1055579395
+  %3 = xor i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

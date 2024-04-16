@@ -9,7 +9,7 @@
 define i32 @func0000000000000006(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp slt i32 %1, %3
+  %4 = icmp sgt i32 %3, %1
   %5 = select i1 %4, i32 126, i32 %0
   ret i32 %5
 }
@@ -27,7 +27,7 @@ entry:
 define i16 @func000000000000000a(i16 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp sgt i32 %1, %3
+  %4 = icmp slt i32 %3, %1
   %5 = select i1 %4, i16 126, i16 %0
   ret i16 %5
 }
@@ -38,9 +38,9 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %1, %3
-  %5 = select i1 %4, i64 0, i64 %0
-  ret i64 %5
+  %.not = icmp eq i64 %3, %1
+  %4 = select i1 %.not, i64 %0, i64 0
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
@@ -64,9 +64,9 @@ entry:
 define i32 @func0000000000000007(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %1, %3
-  %5 = select i1 %4, i32 0, i32 %0
-  ret i32 %5
+  %.not = icmp slt i64 %3, %1
+  %4 = select i1 %.not, i32 %0, i32 0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -75,7 +75,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %1
   %5 = select i1 %4, i16 -1, i16 %0
   ret i16 %5
 }

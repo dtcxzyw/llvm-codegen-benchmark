@@ -40,5 +40,5 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000003:                   # @func0000000000000003
 	mul	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret

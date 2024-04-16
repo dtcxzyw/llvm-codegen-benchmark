@@ -20,8 +20,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 48
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a0, a0, 255
-	slli	a0, a0, 3
+	slli	a0, a0, 56
+	srli	a0, a0, 53
 	li	a1, -16
 	sub	a0, a1, a0
 	ret

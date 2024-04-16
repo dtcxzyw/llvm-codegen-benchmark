@@ -158,9 +158,8 @@ define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 16
-  %4 = getelementptr inbounds %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.1590230", ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.1590230", ptr %3, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -235,9 +234,8 @@ define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 64
-  %4 = getelementptr %struct.elf64_phdr.2014411, ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.elf64_phdr.2014411, ptr %3, i64 %0, i32 2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

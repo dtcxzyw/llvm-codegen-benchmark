@@ -7,11 +7,10 @@
 define i1 @func000000000000015a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = sdiv i64 %2, 1000000
-  %4 = mul nsw i64 %3, -1000000
-  %5 = add nsw i64 %4, %2
-  %6 = icmp sgt i64 %5, 99
-  ret i1 %6
+  %.fr = freeze i64 %2
+  %3 = srem i64 %.fr, 1000000
+  %4 = icmp sgt i64 %3, 99
+  ret i1 %4
 }
 
 ; 16 occurrences:
@@ -35,11 +34,10 @@ entry:
 define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = sdiv i64 %2, 1000000000
-  %4 = mul nsw i64 %3, -1000000000
-  %5 = add i64 %4, %2
-  %6 = icmp sgt i64 %5, 99
-  ret i1 %6
+  %.fr = freeze i64 %2
+  %3 = srem i64 %.fr, 1000000000
+  %4 = icmp sgt i64 %3, 99
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -48,11 +46,10 @@ entry:
 define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = sdiv i32 %2, 1000000
-  %4 = mul nsw i32 %3, -1000000
-  %5 = add i32 %4, %2
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 1000000
+  %4 = icmp slt i32 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -61,11 +58,10 @@ entry:
 define i1 @func0000000000000156(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = sdiv i32 %2, 60
-  %4 = mul nsw i32 %3, -60
-  %5 = add nsw i32 %4, %2
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 60
+  %4 = icmp slt i32 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

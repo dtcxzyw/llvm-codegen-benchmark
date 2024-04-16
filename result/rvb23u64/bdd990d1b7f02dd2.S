@@ -26,25 +26,17 @@ func0000000000000018:                   # @func0000000000000018
 	addw	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
-	sext.w	a2, a1
-	lui	a3, 16
-	addiw	a4, a3, -2
-	slt	a2, a4, a2
-	czero.nez	a1, a1, a2
-	addi	a3, a3, -1
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
+	sext.w	a1, a1
+	lui	a2, 16
+	addiw	a2, a2, -1
+	min	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
-	sext.w	a2, a1
-	lui	a3, 16
-	addiw	a4, a3, -2
-	slt	a2, a4, a2
-	czero.nez	a1, a1, a2
-	addi	a3, a3, -1
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
+	sext.w	a1, a1
+	lui	a2, 16
+	addiw	a2, a2, -1
+	min	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019

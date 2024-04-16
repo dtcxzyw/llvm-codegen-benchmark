@@ -8,8 +8,8 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ugt i32 %1, 100
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %5, i8 1, i8 %0
-  %7 = and i8 %6, 1
+  %6 = and i8 %0, 1
+  %7 = select i1 %5, i8 1, i8 %6
   ret i8 %7
 }
 

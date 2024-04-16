@@ -7,8 +7,8 @@ define i8 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 28
   %3 = or disjoint i32 %2, %0
-  %4 = add nsw i32 %3, -1
-  %5 = trunc i32 %4 to i8
+  %4 = trunc i32 %3 to i8
+  %5 = add i8 %4, -1
   ret i8 %5
 }
 
@@ -17,11 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = or disjoint i32 %2, %0
-  %4 = add nuw i32 %3, 1
-  %5 = trunc i32 %4 to i16
-  ret i16 %5
+  %2 = or i32 %1, %0
+  %3 = trunc i32 %2 to i16
+  %4 = add i16 %3, 1
+  ret i16 %4
 }
 
 ; 2 occurrences:
@@ -32,8 +31,8 @@ define i8 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = or disjoint i32 %2, %0
-  %4 = add nuw nsw i32 %3, 1
-  %5 = trunc i32 %4 to i8
+  %4 = trunc i32 %3 to i8
+  %5 = add i8 %4, 1
   ret i8 %5
 }
 

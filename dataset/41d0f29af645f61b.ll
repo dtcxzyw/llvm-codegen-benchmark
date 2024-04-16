@@ -6,10 +6,11 @@
 define i1 @func0000000000000071(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.umin.i32(i32 %2, i32 8192)
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %0, 1
-  %7 = icmp eq i64 %6, %5
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, 1
+  %6 = icmp eq i64 %5, %4
+  %not. = xor i1 %1, true
+  %7 = select i1 %not., i1 %6, i1 false
   ret i1 %7
 }
 

@@ -10,7 +10,7 @@ define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp eq i8 %2, 0
-  %4 = and i8 %1, 15
+  %4 = and i8 %1, 14
   %5 = select i1 %3, i8 %4, i8 %0
   %6 = icmp ugt i8 %5, 1
   ret i1 %6

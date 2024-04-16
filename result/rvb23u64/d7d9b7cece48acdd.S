@@ -15,10 +15,6 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
-	sub	a3, a1, a2
-	slti	a3, a3, 0
-	czero.nez	a2, a2, a3
-	czero.eqz	a1, a1, a3
-	or	a1, a1, a2
+	min	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -19,11 +19,10 @@ func0000000000000190:                   # @func0000000000000190
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	lui	a2, 786432
-	and	a2, a2, a1
-	seqz	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
+	addi	a1, a1, -1
+	lui	a2, 262144
+	addiw	a2, a2, -1
+	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030

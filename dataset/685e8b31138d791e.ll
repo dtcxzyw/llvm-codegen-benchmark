@@ -9,7 +9,7 @@ entry:
   %4 = or disjoint i128 %0, %1
   %5 = sub nsw i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = or disjoint i128 %0, %1
   %5 = sub i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 

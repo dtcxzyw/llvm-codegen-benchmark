@@ -17,8 +17,9 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
-	negw	a1, a1
-	li	a2, 1
-	sll	a1, a2, a1
+	li	a2, 64
+	subw	a2, a2, a1
+	li	a1, 1
+	sll	a1, a1, a2
 	and	a0, a0, a1
 	ret

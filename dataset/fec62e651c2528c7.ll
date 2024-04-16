@@ -12,7 +12,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 21
   %5 = add nsw i64 %4, %1
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   %7 = mul nsw i64 %6, 265
   ret i64 %7
 }
@@ -40,7 +40,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = add nuw nsw i64 %4, %1
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   %7 = mul i64 %6, -7070675565921424023
   ret i64 %7
 }

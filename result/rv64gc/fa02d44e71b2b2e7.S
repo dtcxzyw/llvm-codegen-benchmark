@@ -4,9 +4,9 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a0, a0, 16
 	ret
 func000000000000001d:                   # @func000000000000001d
-	li	a1, 1
+	li	a1, -1
 	sll	a0, a1, a0
-	addi	a0, a0, -1
+	not	a0, a0
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a1, 2
@@ -14,9 +14,9 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, -1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a1, 1
+	li	a1, -1
 	sll	a0, a1, a0
-	addi	a0, a0, -1
+	not	a0, a0
 	ret
 func0000000000000017:                   # @func0000000000000017
 	li	a1, -1
@@ -24,9 +24,9 @@ func0000000000000017:                   # @func0000000000000017
 	addi	a0, a0, 1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
-	addiw	a0, a0, -1
+	not	a0, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a1, -1
@@ -71,7 +71,7 @@ func0000000000000013:                   # @func0000000000000013
 	addi	a0, a0, 63
 	ret
 func000000000000000d:                   # @func000000000000000d
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
-	addiw	a0, a0, -1
+	not	a0, a0
 	ret

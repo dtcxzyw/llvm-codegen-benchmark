@@ -17,10 +17,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = add i64 %0, -1
-  %4 = add i64 %3, %2
-  ret i64 %4
+  %2 = add i64 %0, %1
+  %3 = add i64 %2, -2
+  ret i64 %3
 }
 
 ; 80 occurrences:
@@ -107,10 +106,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 24
-  %3 = add i32 %0, 18
-  %4 = add i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 42
+  ret i32 %3
 }
 
 ; 4 occurrences:
@@ -121,10 +119,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw i32 %1, 1
-  %3 = add i32 %0, 1
-  %4 = add i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 2
+  ret i32 %3
 }
 
 ; 33 occurrences:
@@ -164,10 +161,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 63
-  %3 = add i64 %0, 64
-  %4 = add i64 %3, %2
-  ret i64 %4
+  %2 = add i64 %0, %1
+  %3 = add i64 %2, 127
+  ret i64 %3
 }
 
 ; 6 occurrences:
@@ -180,10 +176,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1619
-  %3 = add i32 %0, 31337
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 32956
+  ret i32 %3
 }
 
 ; 30 occurrences:
@@ -220,10 +215,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 64
-  %3 = add nsw i64 %0, -24
-  %4 = add i64 %3, %2
-  ret i64 %4
+  %2 = add i64 %0, %1
+  %3 = add i64 %2, 40
+  ret i64 %3
 }
 
 ; 31 occurrences:
@@ -261,10 +255,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %0, 257
-  %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
+  %2 = add nuw i32 %0, %1
+  %3 = add nuw i32 %2, 258
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -273,10 +266,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %0, 1
-  %4 = add nuw i32 %3, %2
-  ret i32 %4
+  %2 = add nuw i32 %0, %1
+  %3 = add nuw i32 %2, 2
+  ret i32 %3
 }
 
 ; 17 occurrences:
@@ -300,10 +292,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -2
-  %3 = add nsw i32 %0, -1
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, -3
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -311,10 +302,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = add i32 %0, 128
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 129
+  ret i32 %3
 }
 
 ; 27 occurrences:
@@ -348,10 +338,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 600
-  %3 = add nuw nsw i32 %0, 1
-  %4 = add i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 601
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -359,10 +348,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -48
-  %3 = add nsw i32 %0, -48
-  %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, -96
+  ret i32 %3
 }
 
 ; 3 occurrences:
@@ -372,10 +360,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 4
-  %3 = add nuw i32 %0, 1
-  %4 = add i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 5
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -383,10 +370,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -4
-  %3 = add nuw i32 %0, 6
-  %4 = add i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 2
+  ret i32 %3
 }
 
 ; 4 occurrences:
@@ -397,10 +383,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 3
-  %3 = add nsw i32 %0, -2
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 1
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -408,10 +393,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 60
-  %3 = add nsw i32 %0, -12
-  %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 48
+  ret i32 %3
 }
 
 ; 9 occurrences:
@@ -427,10 +411,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = add nuw nsw i32 %0, 2
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 3
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -438,10 +421,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 192
-  %3 = add nuw nsw i32 %0, 32
-  %4 = add nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 224
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -449,10 +431,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -65
-  %3 = add nuw nsw i32 %0, 1001
-  %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 936
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -460,10 +441,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -2
-  %3 = add nsw i32 %0, 1
-  %4 = add i32 %3, %2
-  ret i32 %4
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, -1
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

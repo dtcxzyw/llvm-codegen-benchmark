@@ -5,7 +5,7 @@
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 1048575
   %5 = or i32 %4, %0
   %6 = icmp ne i32 %5, 0
@@ -17,12 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i32 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 61
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = and i32 %3, 1
-  %5 = or disjoint i32 %0, %4
-  %6 = icmp ult i32 %5, 2
-  ret i1 %6
+  %2 = icmp ult i32 %0, 2
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -32,7 +28,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2
   %5 = or disjoint i32 %4, %0
   %6 = icmp eq i32 %5, 3
@@ -46,7 +42,7 @@ entry:
 define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2
   %5 = or disjoint i32 %4, %0
   %6 = icmp ne i32 %5, 3
@@ -73,7 +69,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 1048575
   %5 = or i32 %4, %0
   %6 = icmp eq i32 %5, 0
@@ -88,7 +84,7 @@ entry:
   %2 = lshr i64 %1, 40
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = icmp eq i32 %5, 65535
   ret i1 %6
 }

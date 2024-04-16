@@ -9,9 +9,8 @@ func00000000000000ea:                   # @func00000000000000ea
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 1
-	addi	a1, a1, 131
-	sltiu	a1, a1, 128
-	xori	a1, a1, 1
+	addi	a1, a1, 3
+	sltiu	a1, a1, -128
 	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -21,9 +20,8 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slliw	a1, a1, 16
-	lui	a2, 16
-	xor	a1, a1, a2
+	zext.h	a1, a1
+	addi	a1, a1, -1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

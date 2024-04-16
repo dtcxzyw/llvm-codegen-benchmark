@@ -7,7 +7,7 @@ entry:
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 false), !range !0
   %4 = sub nuw nsw i64 64, %3
   %5 = lshr i64 %1, %4
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

@@ -21,9 +21,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	zext.h	a3, a0
 	sext.h	a0, a0
 	slti	a0, a0, 0
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
+	or	a0, a0, a1
 	lui	a1, 16
 	addiw	a1, a1, -2
 	xor	a1, a1, a3

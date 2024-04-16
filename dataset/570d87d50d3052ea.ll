@@ -12,7 +12,7 @@ entry:
   %3 = uitofp i8 %2 to double
   %4 = uitofp i8 %1 to double
   %5 = fmul double %4, %3
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

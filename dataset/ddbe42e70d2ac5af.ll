@@ -10,7 +10,7 @@
 define i16 @func0000000000000011(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = or i16 %4, 2
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i16 %4, i16 %5
@@ -32,7 +32,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or i32 %4, 3
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i32 %4, i32 %5
@@ -57,7 +57,7 @@ entry:
 define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = or disjoint i32 %4, 40960
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i32 %4, i32 %5
@@ -71,9 +71,9 @@ define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63488
   %4 = or disjoint i32 %3, %1
-  %5 = or disjoint i32 %4, 64
-  %6 = icmp sgt i32 %0, -1
-  %7 = select i1 %6, i32 %4, i32 %5
+  %5 = lshr i32 %0, 25
+  %6 = and i32 %5, 64
+  %7 = or i32 %4, %6
   ret i32 %7
 }
 
@@ -83,7 +83,7 @@ entry:
 define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = or disjoint i32 %4, -2147483648
   %6 = icmp ult i32 %0, 1073741824
   %7 = select i1 %6, i32 %4, i32 %5
@@ -112,7 +112,7 @@ entry:
 define i16 @func0000000000000034(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = or disjoint i16 %4, 4
   %6 = icmp ult i16 %0, 8
   %7 = select i1 %6, i16 %4, i16 %5

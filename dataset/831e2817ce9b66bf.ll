@@ -6,7 +6,7 @@
 define i1 @func000000000000008c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ult i32 %0, 128
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp ne i32 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6
@@ -185,7 +185,7 @@ entry:
 define i1 @func000000000000002c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, 0
-  %4 = or i1 %2, %3
+  %4 = or i1 %3, %2
   %5 = icmp ne i64 %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

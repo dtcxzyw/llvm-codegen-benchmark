@@ -12,7 +12,7 @@ entry:
   %2 = and i32 %1, 255
   %3 = and i32 %0, 255
   %4 = add nuw nsw i32 %3, %2
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 

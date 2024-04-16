@@ -8,7 +8,7 @@ entry:
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 %1
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 %1
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

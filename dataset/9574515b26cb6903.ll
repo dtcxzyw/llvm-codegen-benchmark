@@ -35,7 +35,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i64, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 56
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 -1
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -82,7 +82,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 1
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -101,7 +101,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr %struct._zval_struct.1713640, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 80
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -126,7 +126,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 68
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -145,7 +145,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds float, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 -16
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -160,7 +160,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 -2
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -175,7 +175,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 -1
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -215,10 +215,9 @@ entry:
 define i1 @func0000000000000031(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %"class.std::set.224.1878951", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr inbounds %"class.std::set.224.1878951", ptr %1, i64 %3, i32 0, i32 0, i32 1
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -228,10 +227,9 @@ entry:
 define i1 @func000000000000003c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr inbounds %"class.std::set.182.1903553", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  %6 = icmp ne ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr inbounds %"class.std::set.182.1903553", ptr %1, i64 %3, i32 0, i32 0, i32 1
+  %5 = icmp ne ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -242,7 +240,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
-  %6 = icmp ule ptr %0, %5
+  %6 = icmp uge ptr %5, %0
   ret i1 %6
 }
 
@@ -255,7 +253,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 48
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -267,7 +265,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 

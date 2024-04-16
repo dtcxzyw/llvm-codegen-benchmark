@@ -9,7 +9,7 @@
 define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -391,7 +391,7 @@ entry:
 define i64 @func0000000000000030(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -439,7 +439,7 @@ entry:
 define i32 @func0000000000000020(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 15
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

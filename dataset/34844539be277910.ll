@@ -10,7 +10,7 @@ entry:
   %3 = ashr i32 %2, 1
   %4 = icmp eq i32 %3, %1
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

@@ -19,10 +19,10 @@ entry:
 define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = and i32 %2, 4032
+  %3 = and i32 %2, 2048
   %4 = shl nuw nsw i32 %0, 12
   %5 = or disjoint i32 %3, %4
-  %6 = icmp ult i32 %5, 2048
+  %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
 

@@ -389,9 +389,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = sdiv exact i64 %0, 56
-  %2 = sub nuw nsw i64 164703072086692425, %1
-  ret i64 %2
+  %.neg = sdiv exact i64 %0, -56
+  %1 = add nsw i64 %.neg, 164703072086692425
+  ret i64 %1
 }
 
 ; 415 occurrences:
@@ -813,9 +813,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = sdiv exact i64 %0, 40
-  %2 = sub nsw i64 0, %1
-  ret i64 %2
+  %.neg = sdiv exact i64 %0, -40
+  ret i64 %.neg
 }
 
 ; 69 occurrences:
@@ -891,9 +890,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = sdiv i32 %0, 8
-  %2 = sub nsw i32 4, %1
-  ret i32 %2
+  %.neg = sdiv i32 %0, -8
+  %1 = add nsw i32 %.neg, 4
+  ret i32 %1
 }
 
 ; 2 occurrences:
@@ -902,9 +901,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 4
-  %2 = sub i64 9223372036854775807, %1
-  ret i64 %2
+  %.neg = sdiv i64 %0, -4
+  %1 = add i64 %.neg, 9223372036854775807
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

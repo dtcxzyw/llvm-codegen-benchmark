@@ -8,7 +8,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000140(i64 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -48
+  %3 = add i64 %2, 281474976710608
   %4 = icmp ult i8 %1, 10
   %5 = select i1 %4, i64 %3, i64 0
   %6 = add i64 %5, %0

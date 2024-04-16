@@ -34,8 +34,8 @@ func0000000000000018:                   # @func0000000000000018
 	czero.eqz	a0, a1, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
-	addi	a0, a0, 4
 	andi	a0, a0, 7
+	addi	a0, a0, -4
 	snez	a0, a0
 	slli	a0, a0, 3
 	ret

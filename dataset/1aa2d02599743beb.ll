@@ -183,8 +183,8 @@ entry:
   %1 = fptrunc double %0 to float
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 8388607
-  %4 = zext nneg i32 %3 to i128
-  %5 = or disjoint i128 %4, 8388608
+  %4 = or disjoint i32 %3, 8388608
+  %5 = zext nneg i32 %4 to i128
   ret i128 %5
 }
 

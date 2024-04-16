@@ -8,7 +8,7 @@
 define i32 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 255)
   ret i32 %4
 }
@@ -22,7 +22,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 32768)
   ret i64 %4
 }
@@ -36,7 +36,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i32 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = call noundef i32 @llvm.umin.i32(i32 %3, i32 15)
   ret i32 %4
 }
@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = call i32 @llvm.umin.i32(i32 %3, i32 65535)
   ret i32 %4
 }

@@ -9,7 +9,7 @@ entry:
   %2 = lshr i32 %1, 17
   %3 = xor i32 %2, %1
   %4 = and i32 %3, 3
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

@@ -8,7 +8,7 @@ entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 1024
   %4 = and i64 %3, 4294967294
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

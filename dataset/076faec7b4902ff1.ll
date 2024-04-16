@@ -68,7 +68,7 @@
 define i1 @func0000000000000042(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 27
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = icmp eq i32 %0, 10
   %5 = or i1 %4, %3
   ret i1 %5
@@ -100,11 +100,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000182(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp slt i32 %0, 0
-  %3 = or i1 %1, %2
-  %4 = icmp eq i32 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
+  %2 = icmp slt i32 %0, 1
+  %3 = or i1 %2, %1
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -116,7 +114,7 @@ entry:
 define i1 @func0000000000000054(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
-  %3 = or i1 %1, %2
+  %3 = or i1 %2, %1
   %4 = icmp sgt i32 %0, 5920
   %5 = or i1 %4, %3
   ret i1 %5
@@ -132,7 +130,7 @@ entry:
 define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2059
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   %4 = icmp eq i32 %1, 5004
   %5 = or i1 %3, %4
   ret i1 %5

@@ -8,8 +8,8 @@
 define double @func0000000000000000(i1 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.024000e+03
-  %3 = select i1 %0, double 0x43EFFFFFFFFFFFFF, double %2
-  %4 = fadd double %3, 5.000000e-01
+  %3 = fadd double %2, 5.000000e-01
+  %4 = select i1 %0, double 0x43EFFFFFFFFFFFFF, double %3
   ret double %4
 }
 

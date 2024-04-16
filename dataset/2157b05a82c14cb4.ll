@@ -9,7 +9,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %1, 32
   %4 = select i1 %3, i32 %2, i32 1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

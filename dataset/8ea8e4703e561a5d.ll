@@ -32,7 +32,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 255)
-  %3 = mul nuw nsw i32 %0, %2
+  %3 = mul nuw nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -46,7 +46,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.umin.i32(i32 %1, i32 256)
-  %3 = mul nuw nsw i32 %0, %2
+  %3 = mul nuw nsw i32 %2, %0
   ret i32 %3
 }
 

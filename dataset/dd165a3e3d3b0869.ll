@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %0, %3
+  %4 = mul i32 %3, %0
   %5 = zext nneg i8 %1 to i32
   %6 = mul i32 %4, %5
   ret i32 %6

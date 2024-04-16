@@ -11,7 +11,7 @@ entry:
   %4 = sub nsw i32 9, %3
   %5 = and i32 %1, 511
   %6 = lshr i32 %5, %4
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

@@ -11,6 +11,5 @@ func00000000000000da:                   # @func00000000000000da
 	addw	a0, a0, a1
 	min	a1, a2, a0
 	max	a1, a1, zero
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	ret

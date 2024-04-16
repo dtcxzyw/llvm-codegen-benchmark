@@ -8,7 +8,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
   %6 = and i32 %5, -16
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 

@@ -23,11 +23,13 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	fcvt.l.d	a1, fa0, rtz
 	add	a0, a0, a1
-	mulh	a0, a0, a2
-	srli	a1, a0, 63
-	srai	a0, a0, 14
-	add	a0, a0, a1
-	lui	a1, 1048561
-	addiw	a1, a1, 1440
-	mul	a0, a0, a1
+	mulh	a1, a0, a2
+	srli	a2, a1, 63
+	srai	a1, a1, 14
+	add	a1, a1, a2
+	lui	a2, 15
+	addiw	a2, a2, -1440
+	mul	a1, a1, a2
+	sub	a0, a0, a0
+	sub	a0, a0, a1
 	ret

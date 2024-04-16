@@ -8,7 +8,7 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = and i64 %4, -8
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -36,7 +36,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds %struct.MapNode.1647710, ptr %0, i64 %5
   ret ptr %6
@@ -48,7 +48,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds %struct.MapNode.1654699, ptr %0, i64 %5
   ret ptr %6
@@ -62,7 +62,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, 274877906936
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

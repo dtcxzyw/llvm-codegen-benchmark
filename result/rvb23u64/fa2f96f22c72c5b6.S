@@ -75,9 +75,9 @@ func0000000000000016:                   # @func0000000000000016
 	slti	a0, a0, 8
 	ret
 func000000000000001a:                   # @func000000000000001a
+	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
 	min	a1, a1, a2
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	ret

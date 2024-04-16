@@ -26,8 +26,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4
-  %3 = lshr exact i64 %2, 2
+  %2 = lshr i64 %1, 2
+  %3 = and i64 %2, 1
   %4 = select i1 %0, i64 %3, i64 1
   ret i64 %4
 }

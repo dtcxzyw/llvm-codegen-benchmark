@@ -83,8 +83,8 @@ define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.smax.i64(i64 %0, i64 -2147483648)
   %2 = call i64 @llvm.smin.i64(i64 %1, i64 2147483647)
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
@@ -181,7 +181,7 @@ define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.smax.i64(i64 %0, i64 -2147483648)
   %2 = call i64 @llvm.smin.i64(i64 %1, i64 2147483647)
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -221,8 +221,8 @@ define i1 @func0000000000000016(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.smax.i64(i64 %0, i64 -2147483648)
   %2 = tail call i64 @llvm.smin.i64(i64 %1, i64 2147483647)
-  %3 = trunc nsw i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

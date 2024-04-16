@@ -18,10 +18,9 @@
 define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = sdiv i64 %2, 2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i64, ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sdiv i64 %2, -2
+  %3 = getelementptr i64, ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -31,10 +30,9 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = sdiv i64 %2, 2
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr inbounds %"struct.std::pair.272.1976453", ptr %0, i64 %4
-  ret ptr %5
+  %.neg = sdiv i64 %2, -2
+  %3 = getelementptr inbounds %"struct.std::pair.272.1976453", ptr %0, i64 %.neg
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

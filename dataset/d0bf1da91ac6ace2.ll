@@ -7,7 +7,7 @@ define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 5)
   %3 = add nuw i32 %2, 640
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

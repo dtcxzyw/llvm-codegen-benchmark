@@ -40,14 +40,14 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	ret
 func00000000000001d6:                   # @func00000000000001d6
-	slli	a1, a1, 4
+	sext.w	a0, a0
+	slliw	a1, a1, 4
 	addi	a1, a1, 8
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	slt	a0, a0, a1
 	ret
 func00000000000000da:                   # @func00000000000000da
-	slli	a1, a1, 3
+	sext.w	a0, a0
+	slliw	a1, a1, 3
 	addi	a1, a1, 4
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	ret

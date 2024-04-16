@@ -9,7 +9,7 @@ entry:
   %4 = select i1 %3, i64 0, i64 %1
   %5 = or i64 %4, %0
   %6 = lshr i64 %5, 32
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

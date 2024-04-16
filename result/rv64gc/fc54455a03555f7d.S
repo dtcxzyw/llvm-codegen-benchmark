@@ -1,7 +1,7 @@
 func0000000000000041:                   # @func0000000000000041
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -17,25 +17,25 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	sltiu	a0, a0, 256
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 28
 	srai	a1, a1, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 61
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 28
 	srai	a1, a1, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a1, a1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 61
 	snez	a0, a0
 	ret

@@ -17,7 +17,7 @@ entry:
   %2 = fdiv double %0, %1
   %3 = bitcast double %2 to i64
   %4 = lshr i64 %3, 60
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

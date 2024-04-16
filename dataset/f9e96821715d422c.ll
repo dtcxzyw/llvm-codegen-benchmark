@@ -5,11 +5,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
-  %2 = ashr i128 %1, 64
-  %3 = trunc i128 %2 to i64
-  %4 = icmp eq i64 %3, 0
-  %5 = select i1 %4, i64 0, i64 %0
-  ret i64 %5
+  %2 = icmp ult i128 %1, 18446744073709551616
+  %3 = select i1 %2, i64 0, i64 %0
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -19,7 +17,7 @@ entry:
 define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 58
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i32 %3, -32
   %5 = select i1 %4, i32 31, i32 %0
   ret i32 %5
@@ -50,7 +48,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 47
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp ult i32 %3, -14
   %5 = select i1 %4, i32 14, i32 %0
   ret i32 %5

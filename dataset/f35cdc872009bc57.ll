@@ -11,7 +11,7 @@ define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = sext i64 %2 to i128
-  %4 = mul nsw i128 %0, %3
+  %4 = mul nsw i128 %3, %0
   ret i128 %4
 }
 
@@ -22,7 +22,7 @@ define i128 @func0000000000000005(i128 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 1
   %3 = sext i64 %2 to i128
-  %4 = mul nsw i128 %0, %3
+  %4 = mul nsw i128 %3, %0
   ret i128 %4
 }
 
@@ -35,7 +35,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 
@@ -53,7 +53,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 

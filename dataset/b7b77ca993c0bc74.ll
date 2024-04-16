@@ -261,7 +261,7 @@ entry:
   %2 = sdiv exact i64 %1, 56
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -275,7 +275,7 @@ entry:
   %2 = sdiv exact i64 %1, 40
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -290,7 +290,7 @@ entry:
   %2 = sdiv exact i64 %1, 376
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -304,7 +304,7 @@ entry:
   %2 = sdiv exact i64 %1, 24
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

@@ -15,7 +15,7 @@
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 7
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   %4 = icmp slt i32 %3, 0
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5

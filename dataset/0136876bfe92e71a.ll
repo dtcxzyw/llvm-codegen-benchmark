@@ -70,7 +70,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 40
   %6 = sub nsw i64 %5, %0
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

@@ -3,6 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	and	a1, a1, a2
 	bnez	a1, .LBB0_2
 	li	a0, 4
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
 	andi	a0, a0, 255
 	ret

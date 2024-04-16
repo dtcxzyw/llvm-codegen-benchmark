@@ -10,9 +10,9 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = mul i64 %5, 5
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -23,7 +23,7 @@ define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = mul nuw i64 %5, 10
   %7 = add nuw i64 %6, %0
   ret i64 %7

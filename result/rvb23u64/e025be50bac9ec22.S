@@ -2,7 +2,7 @@ func0000000000000000:                   # @func0000000000000000
 	sext.w	a1, a1
 	li	a2, 10
 	max	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	lui	a1, 67109
 	addiw	a1, a1, -557
 	mul	a0, a0, a1

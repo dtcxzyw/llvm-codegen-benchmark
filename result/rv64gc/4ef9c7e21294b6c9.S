@@ -2,10 +2,9 @@
 	.quad	8446744073709551616             # 0x7538dcfb76180000
 func0000000000000005:                   # @func0000000000000005
 	lui	a2, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a2)
-	mv	a2, a0
-	add	a0, a0, a3
-	bgeu	a1, a0, .LBB0_2
+	ld	a2, %lo(.LCPI0_0)(a2)
+	add	a2, a2, a0
+	bltu	a1, a2, .LBB0_2
 	mv	a0, a2
 .LBB0_2:                                # %entry
 	ret

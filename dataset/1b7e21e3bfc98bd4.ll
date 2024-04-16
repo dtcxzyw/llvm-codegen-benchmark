@@ -20,7 +20,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = lshr i32 %1, %3
   %5 = trunc i32 %4 to i8
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 

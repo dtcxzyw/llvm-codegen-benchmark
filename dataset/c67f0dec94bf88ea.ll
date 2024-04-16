@@ -9,9 +9,8 @@ entry:
   %3 = trunc i64 %0 to i32
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = sub i64 %0, %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

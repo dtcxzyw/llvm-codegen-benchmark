@@ -8,11 +8,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 %1
-  %4 = getelementptr inbounds i8, ptr %2, i64 %0
-  %5 = icmp slt i64 %0, %1
-  %6 = select i1 %5, ptr %4, ptr %3
-  ret ptr %6
+  %.v = call i64 @llvm.smin.i64(i64 %0, i64 %1)
+  %3 = getelementptr inbounds i8, ptr %2, i64 %.v
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -21,11 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 %0
-  %4 = getelementptr inbounds i8, ptr %2, i64 %1
-  %5 = icmp ugt i64 %0, %1
-  %6 = select i1 %5, ptr %4, ptr %3
-  ret ptr %6
+  %.v = call i64 @llvm.umin.i64(i64 %0, i64 %1)
+  %3 = getelementptr inbounds i8, ptr %2, i64 %.v
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -33,11 +29,19 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %class.QString.1915590, ptr %2, i64 %0
-  %4 = getelementptr %class.QString.1915590, ptr %2, i64 %1
-  %5 = icmp slt i64 %0, %1
-  %6 = select i1 %5, ptr %4, ptr %3
-  ret ptr %6
+  %.v = call i64 @llvm.smax.i64(i64 %0, i64 %1)
+  %3 = getelementptr %class.QString.1915590, ptr %2, i64 %.v
+  ret ptr %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smax.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

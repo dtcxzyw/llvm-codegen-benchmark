@@ -10,10 +10,8 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	seqz	a1, a1
-	addi	a1, a1, -1
-	lui	a2, 4096
-	and	a1, a1, a2
+	snez	a1, a1
+	slli	a1, a1, 24
 	lui	a2, 10240
 	or	a0, a0, a2
 	or	a0, a0, a1

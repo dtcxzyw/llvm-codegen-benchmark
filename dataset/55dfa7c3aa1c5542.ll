@@ -53,11 +53,9 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
-  %2 = zext i64 %1 to i128
-  %3 = shl nuw i128 %2, 64
-  %4 = sub i128 %3, %0
-  %5 = and i128 %4, 18446744073709551615
-  ret i128 %5
+  %2 = sub i128 0, %0
+  %3 = and i128 %2, 18446744073709551615
+  ret i128 %3
 }
 
 attributes #0 = { nounwind }

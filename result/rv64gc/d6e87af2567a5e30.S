@@ -21,7 +21,7 @@ func0000000000000017:                   # @func0000000000000017
 	beqz	a2, .LBB2_2
 	li	a1, 4
 .LBB2_2:                                # %entry
-	addi	a0, a0, 29
+	addi	a0, a0, 5
 	andi	a0, a0, 7
 	add	a0, a0, a1
 	ret

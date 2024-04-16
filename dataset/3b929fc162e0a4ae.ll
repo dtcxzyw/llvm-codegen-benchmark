@@ -9,12 +9,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000338(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -48
-  %3 = mul nuw nsw i8 %2, 10
-  %4 = add i8 %0, -48
-  %5 = add nuw nsw i8 %4, %3
-  %6 = icmp ugt i8 %5, 49
-  ret i1 %6
+  %2 = mul i8 %1, 10
+  %3 = add i8 %2, %0
+  %4 = add i8 %3, -66
+  %5 = icmp ult i8 %4, -50
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -25,12 +24,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000331(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %1, -48
-  %3 = mul nuw nsw i8 %2, 10
-  %4 = add i8 %0, -48
-  %5 = add nuw nsw i8 %4, %3
-  %6 = icmp eq i8 %5, 2
-  ret i1 %6
+  %2 = mul i8 %1, 10
+  %3 = add i8 %2, %0
+  %4 = icmp eq i8 %3, 18
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

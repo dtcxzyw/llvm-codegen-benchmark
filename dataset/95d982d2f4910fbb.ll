@@ -7,9 +7,9 @@ define i64 @func0000000000000019(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8192
   %4 = icmp ne i64 %3, 0
-  %5 = xor i1 %1, %4
+  %5 = xor i1 %4, %1
   %6 = select i1 %5, i64 0, i64 8192
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

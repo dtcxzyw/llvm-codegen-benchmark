@@ -11,9 +11,9 @@ func0000000000000011:                   # @func0000000000000011
 .LBB1_2:                                # %entry
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a2, 7
-	li	a3, 1
-	bltu	a3, a2, .LBB2_2
-	mv	a0, a1
+	andi	a2, a2, 6
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
+	mv	a0, a1
 	ret

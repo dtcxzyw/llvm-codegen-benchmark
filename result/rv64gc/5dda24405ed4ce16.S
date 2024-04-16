@@ -8,7 +8,8 @@ func0000000000000009:                   # @func0000000000000009
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	srliw	a2, a1, 16
+	srliw	a1, a1, 16
+	slli	a2, a1, 16
 	li	a1, 224
 	beqz	a2, .LBB1_2
 	li	a1, 128

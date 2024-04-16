@@ -391,9 +391,9 @@ define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = sdiv exact i64 %3, 56
-  %5 = sub nuw nsw i64 164703072086692425, %4
-  ret i64 %5
+  %.neg = sdiv exact i64 %3, -56
+  %4 = add nsw i64 %.neg, 164703072086692425
+  ret i64 %4
 }
 
 ; 320 occurrences:
@@ -722,9 +722,8 @@ define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = sdiv exact i64 %3, 40
-  %5 = sub nsw i64 0, %4
-  ret i64 %5
+  %.neg = sdiv exact i64 %3, -40
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

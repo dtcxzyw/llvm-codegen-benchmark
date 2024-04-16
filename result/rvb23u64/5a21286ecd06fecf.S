@@ -7,7 +7,5 @@ func00000000000000c1:                   # @func00000000000000c1
 	add.uw	a0, a1, a0
 	ret
 func00000000000000c7:                   # @func00000000000000c7
-	addiw	a1, a1, 1
-	sh3add	a0, a1, a0
-	addi	a0, a0, -8
+	sh3add.uw	a0, a1, a0
 	ret

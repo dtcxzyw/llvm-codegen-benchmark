@@ -12,7 +12,7 @@
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 1000000
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -26,7 +26,7 @@ entry:
 define float @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000000
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = uitofp i64 %3 to float
   ret float %4
 }
@@ -42,7 +42,7 @@ entry:
 define double @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -64,7 +64,7 @@ entry:
 define double @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 10
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }

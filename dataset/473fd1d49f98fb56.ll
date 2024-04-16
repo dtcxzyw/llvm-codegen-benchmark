@@ -11,7 +11,7 @@
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 60
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -31,7 +31,7 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = tail call i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -42,7 +42,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
@@ -75,7 +75,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000000000
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = call noundef i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -87,7 +87,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 1000000000
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = call noundef i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }

@@ -52,7 +52,7 @@ entry:
   %3 = and i32 %2, 4095
   %4 = add nuw nsw i32 %3, 1
   %5 = add nsw i32 %1, 1
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   %7 = mul i32 %6, %4
   ret i32 %7
 }

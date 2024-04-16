@@ -31,8 +31,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = lshr i64 %4, 5
-  %6 = shl i64 %5, 32
+  %5 = shl i64 %4, 27
+  %6 = and i64 %5, -4294967296
   ret i64 %6
 }
 
@@ -50,8 +50,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = lshr i64 %4, 18
-  %6 = shl nuw nsw i64 %5, 3
+  %5 = lshr i64 %4, 15
+  %6 = and i64 %5, 562949953421304
   ret i64 %6
 }
 

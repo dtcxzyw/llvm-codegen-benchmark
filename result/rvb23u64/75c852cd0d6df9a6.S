@@ -41,7 +41,7 @@ func0000000000000028:                   # @func0000000000000028
 	bnez	a0, .LBB5_2
 	fmv.d	fa1, fa2
 .LBB5_2:                                # %entry
-	feq.d	a0, fa0, fa1
+	feq.d	a0, fa1, fa0
 	ret
 func000000000000002b:                   # @func000000000000002b
 	flt.d	a0, fa2, fa1
@@ -85,7 +85,7 @@ func0000000000000048:                   # @func0000000000000048
 	bnez	a0, .LBB11_2
 	fmv.s	fa1, fa2
 .LBB11_2:                               # %entry
-	feq.s	a0, fa0, fa1
+	feq.s	a0, fa1, fa0
 	ret
 func000000000000004b:                   # @func000000000000004b
 	flt.s	a0, fa2, fa1
@@ -108,7 +108,7 @@ func0000000000000027:                   # @func0000000000000027
 	bnez	a0, .LBB14_2
 	fmv.s	fa1, fa2
 .LBB14_2:                               # %entry
-	feq.s	a0, fa0, fa1
+	feq.s	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
 func000000000000002c:                   # @func000000000000002c

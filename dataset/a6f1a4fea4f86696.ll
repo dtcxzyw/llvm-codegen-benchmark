@@ -13,7 +13,7 @@
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

@@ -51,9 +51,10 @@ func000000000000000d:                   # @func000000000000000d
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	flt.d	a0, fa0, fa5
-	beqz	a0, .LBB7_2
-	fmv.d	fa0, fa5
+	bnez	a0, .LBB7_2
+	fmv.d	fa5, fa0
 .LBB7_2:                                # %entry
+	fmv.d	fa0, fa5
 	ret
 .LCPI8_0:
 	.quad	0x41efffffffe00000              # double 4294967295

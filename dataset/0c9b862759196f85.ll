@@ -20,10 +20,9 @@
 define i8 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 15
-  %2 = and i64 %1, 127
-  %3 = or disjoint i64 %2, 128
-  %4 = trunc i64 %3 to i8
-  ret i8 %4
+  %2 = trunc i64 %1 to i8
+  %3 = or i8 %2, -128
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

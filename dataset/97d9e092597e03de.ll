@@ -7,12 +7,12 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = select i1 %1, ptr %3, ptr %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  %6 = getelementptr inbounds i8, ptr %0, i64 -1
-  %7 = icmp ult ptr %5, %6
-  ret i1 %7
+  %.idx = zext i1 %1 to i64
+  %3 = getelementptr inbounds i8, ptr %2, i64 %.idx
+  %4 = getelementptr inbounds i8, ptr %3, i64 1
+  %5 = getelementptr inbounds i8, ptr %0, i64 -1
+  %6 = icmp ult ptr %4, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

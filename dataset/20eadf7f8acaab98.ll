@@ -44,7 +44,7 @@ entry:
   %2 = zext nneg i48 %1 to i64
   %3 = shl i64 %2, 48
   %4 = ashr exact i64 %3, 44
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -60,7 +60,7 @@ entry:
   %2 = zext nneg i48 %1 to i64
   %3 = shl nuw i64 %2, 48
   %4 = ashr exact i64 %3, 40
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

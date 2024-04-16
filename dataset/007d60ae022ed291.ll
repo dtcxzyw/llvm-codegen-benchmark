@@ -58,8 +58,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
+  %5 = and i64 %4, 2147483648
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 
@@ -75,8 +75,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
+  %5 = and i64 %4, 2147483648
+  %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
 
@@ -101,8 +101,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %5, 4
+  %5 = and i64 %4, 4294967292
+  %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 

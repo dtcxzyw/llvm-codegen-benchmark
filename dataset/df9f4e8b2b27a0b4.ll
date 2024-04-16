@@ -6,7 +6,7 @@
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ult i64 %3, 256
   ret i1 %4
 }
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp ult i64 %3, 4096
   ret i1 %4
 }
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -71
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp eq i32 %3, -1
   ret i1 %4
 }
@@ -65,7 +65,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -82,9 +82,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 6364136223846793005
-  %3 = xor i64 %2, %0
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -94,7 +93,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -15
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp eq i32 %3, 1
   ret i1 %4
 }

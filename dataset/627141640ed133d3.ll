@@ -4,12 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000631(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %6 = add nuw nsw i32 %5, 1
-  %7 = icmp eq i32 %6, %4
-  ret i1 %7
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -23,12 +21,10 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000211(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %6 = add nsw i32 %5, 1
-  %7 = icmp eq i32 %6, %4
-  ret i1 %7
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -37,12 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000201(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %6 = add i32 %5, 1
-  %7 = icmp eq i32 %6, %4
-  ret i1 %7
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -50,12 +44,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000601(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %6 = add i32 %5, 1
-  %7 = icmp eq i32 %6, %4
-  ret i1 %7
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -63,12 +55,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000621(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %6 = add nuw i32 %5, 1
-  %7 = icmp eq i32 %6, %4
-  ret i1 %7
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -77,12 +67,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000221(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  %5 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
-  %6 = add nuw i32 %5, 1
-  %7 = icmp eq i32 %6, %4
-  ret i1 %7
+  %3 = trunc i64 %2 to i32
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

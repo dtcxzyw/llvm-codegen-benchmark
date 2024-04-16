@@ -6,9 +6,8 @@
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %0, i1 true, i1 %1
-  %3 = select i1 %2, i32 1073741952, i32 1073856640
-  %4 = or i32 %3, 32768
-  ret i32 %4
+  %3 = select i1 %2, i32 1073774720, i32 1073856640
+  ret i32 %3
 }
 
 ; 5 occurrences:
@@ -21,9 +20,8 @@ entry:
 define i32 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %0, i1 true, i1 %1
-  %3 = select i1 %2, i32 2, i32 0
-  %4 = or disjoint i32 %3, 4
-  ret i32 %4
+  %3 = select i1 %2, i32 6, i32 4
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

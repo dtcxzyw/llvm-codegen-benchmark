@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = getelementptr inbounds i8, ptr %0, i64 130
-  %4 = getelementptr i8, ptr %3, i64 %2
+  %2 = getelementptr inbounds i8, ptr %0, i64 130
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -21,9 +21,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -60
-  %3 = getelementptr inbounds i8, ptr %0, i64 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
+  %2 = getelementptr inbounds i8, ptr %0, i64 1
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -60
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -34,9 +34,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = getelementptr i8, ptr %0, i64 2
-  %4 = getelementptr inbounds i16, ptr %3, i64 %2
+  %2 = getelementptr i8, ptr %0, i64 2
+  %3 = getelementptr i16, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -46,9 +46,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr inbounds %"class.hermes::vm::GCHermesValueBase.1853470", ptr %3, i64 %2
+  %2 = getelementptr inbounds i8, ptr %0, i64 8
+  %3 = getelementptr %"class.hermes::vm::GCHermesValueBase.1853470", ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 8
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -58,9 +58,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 4
-  %3 = getelementptr i8, ptr %0, i64 1
-  %4 = getelementptr i8, ptr %3, i64 %2
+  %2 = getelementptr i8, ptr %0, i64 1
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 4
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -70,9 +70,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = getelementptr i8, ptr %0, i64 40
-  %4 = getelementptr i8, ptr %3, i64 %2
+  %2 = getelementptr i8, ptr %0, i64 40
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -82,9 +82,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = getelementptr inbounds i8, ptr %0, i64 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
+  %2 = getelementptr inbounds i8, ptr %0, i64 1
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

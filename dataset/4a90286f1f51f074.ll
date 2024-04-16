@@ -8,7 +8,7 @@ entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = add i64 %1, 17179869176
   %3 = lshr i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 

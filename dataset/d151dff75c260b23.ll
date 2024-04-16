@@ -11,10 +11,10 @@
 define i16 @func0000000000000003(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 8, i16 0
-  %3 = or disjoint i16 %0, %2
-  %4 = and i16 %3, -55
-  %5 = or disjoint i16 %4, 32
-  ret i16 %5
+  %.masked = and i16 %0, -55
+  %3 = or i16 %2, %.masked
+  %4 = or disjoint i16 %3, 32
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

@@ -38,6 +38,6 @@ func0000000000000348:                   # @func0000000000000348
 	addiw	a3, a3, 576
 	sub	a2, a3, a2
 	sltu	a1, a1, a3
-	czero.eqz	a1, a2, a1
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
+	and	a0, a0, a1
 	ret

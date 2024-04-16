@@ -22,11 +22,9 @@ func0000000000000018:                   # @func0000000000000018
 	and	a0, a0, a1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	sext.b	a1, a0
-	andi	a0, a0, 64
+	andi	a0, a0, 192
+	addi	a0, a0, -128
 	seqz	a0, a0
-	slti	a1, a1, 0
-	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	zext.h	a1, a0
@@ -46,17 +44,15 @@ func00000000000000c6:                   # @func00000000000000c6
 	and	a0, a0, a1
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	sext.b	a1, a0
-	bexti	a0, a0, 5
-	slti	a1, a1, 0
-	andn	a0, a0, a1
+	andi	a0, a0, 160
+	addi	a0, a0, -32
+	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sext.h	a1, a0
-	not	a0, a0
-	bexti	a0, a0, 11
-	slti	a1, a1, 0
-	andn	a0, a0, a1
+	li	a1, 17
+	slli	a1, a1, 11
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a0, 255
@@ -66,8 +62,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
-	andi	a1, a0, 255
-	bexti	a0, a0, 5
-	sltiu	a1, a1, 64
-	and	a0, a0, a1
+	andi	a0, a0, 224
+	addi	a0, a0, -32
+	seqz	a0, a0
 	ret

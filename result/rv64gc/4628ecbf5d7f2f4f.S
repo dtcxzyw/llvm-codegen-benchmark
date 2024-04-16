@@ -20,7 +20,7 @@ func000000000000000e:                   # @func000000000000000e
 	sll	a2, a3, a2
 	not	a2, a2
 	and	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
 	li	a3, -1
@@ -34,7 +34,7 @@ func000000000000000f:                   # @func000000000000000f
 	sll	a2, a3, a2
 	not	a2, a2
 	and	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
 	li	a3, 2

@@ -14,7 +14,7 @@ func0000000000000024:                   # @func0000000000000024
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa2
 .LBB1_2:                                # %entry
-	fmul.s	fa5, fa1, fa5
+	fmul.s	fa5, fa5, fa1
 	flt.s	a0, fa5, fa0
 	ret
 .LCPI2_0:
@@ -38,7 +38,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	bnez	a0, .LBB3_2
 	fmv.d	fa5, fa2
 .LBB3_2:                                # %entry
-	fmul.d	fa5, fa1, fa5
+	fmul.d	fa5, fa5, fa1
 	fle.d	a0, fa5, fa0
 	ret
 .LCPI4_0:
@@ -50,6 +50,6 @@ func00000000000000ca:                   # @func00000000000000ca
 	bnez	a0, .LBB4_2
 	fmv.d	fa5, fa2
 .LBB4_2:                                # %entry
-	fmul.d	fa5, fa1, fa5
+	fmul.d	fa5, fa5, fa1
 	fle.d	a0, fa0, fa5
 	ret

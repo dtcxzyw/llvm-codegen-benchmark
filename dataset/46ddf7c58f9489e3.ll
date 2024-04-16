@@ -24,7 +24,7 @@ define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -46,7 +46,7 @@ define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -67,7 +67,7 @@ define i1 @func0000000000000081(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -85,7 +85,7 @@ define i1 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -101,7 +101,7 @@ define i1 @func0000000000000048(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
@@ -113,7 +113,7 @@ define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp ugt ptr %0, %4
+  %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 

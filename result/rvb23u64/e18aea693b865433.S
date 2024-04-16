@@ -5,17 +5,17 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 21
 	ret
 func000000000000003f:                   # @func000000000000003f
-	addiw	a2, a2, 8
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 8
+	addi	a0, a0, 16
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a2, a2, 2047
-	addiw	a2, a2, 1761
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, -540
+	addi	a0, a0, 2047
+	addi	a0, a0, 1221
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addi	a2, a2, -1
@@ -33,14 +33,14 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 16
 	ret
 func000000000000001f:                   # @func000000000000001f
-	addiw	a2, a2, -1
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 24
+	addi	a0, a0, 23
 	ret
 func0000000000000039:                   # @func0000000000000039
-	addiw	a2, a2, 8
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, -23
+	addi	a0, a0, -15
 	ret

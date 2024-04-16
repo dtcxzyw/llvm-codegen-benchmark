@@ -19,9 +19,8 @@ func0000000000000006:                   # @func0000000000000006
 	snez	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	fclass.s	a0, fa0
-	andi	a0, a0, 24
-	snez	a0, a0
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa0, fa5
 	ret
 func00000000000000e1:                   # @func00000000000000e1
 	fclass.d	a0, fa0

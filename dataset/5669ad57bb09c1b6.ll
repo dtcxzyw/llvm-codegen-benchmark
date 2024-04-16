@@ -10,7 +10,7 @@ define float @func0000000000000000(float %0, i16 %1) #0 {
 entry:
   %2 = bitcast i16 %1 to half
   %3 = fpext half %2 to float
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 

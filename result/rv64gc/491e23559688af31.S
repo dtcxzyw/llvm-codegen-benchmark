@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a1, a0, 4
-	seqz	a1, a1
-	slli	a1, a1, 12
+	not	a1, a0
+	andi	a1, a1, 4
+	slli	a1, a1, 10
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

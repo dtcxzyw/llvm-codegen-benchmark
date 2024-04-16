@@ -8,7 +8,7 @@ entry:
   %3 = select i1 %2, i32 2, i32 0
   %4 = or disjoint i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -18,9 +18,9 @@ entry:
 define i16 @func0000000000000000(i16 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32768, i32 0
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

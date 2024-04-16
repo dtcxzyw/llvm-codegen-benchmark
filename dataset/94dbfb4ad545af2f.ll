@@ -7,8 +7,8 @@ entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, 4294905856
   %5 = and i64 %4, 4294967264
-  %6 = add nuw nsw i64 %1, %5
-  %7 = getelementptr i32, ptr %0, i64 %6
+  %6 = getelementptr i32, ptr %0, i64 %5
+  %7 = getelementptr i32, ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -20,8 +20,8 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = add nsw i64 %3, 7
   %5 = and i64 %4, -8
-  %6 = add nsw i64 %5, %1
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -33,8 +33,8 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = add nsw i64 %3, 7
   %5 = and i64 %4, -8
-  %6 = add i64 %1, %5
-  %7 = getelementptr i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -49,8 +49,8 @@ entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, 2
   %5 = and i64 %4, 1020
-  %6 = add nuw nsw i64 %5, %1
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 

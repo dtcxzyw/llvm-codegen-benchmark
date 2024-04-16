@@ -8,7 +8,7 @@ entry:
   %2 = add nsw i32 %1, 7
   %3 = sdiv i32 %2, 8
   %4 = add nsw i32 %3, 8
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = add nsw i32 %1, -2
   %3 = sdiv i32 %2, 6
   %4 = add nsw i32 %3, -1
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

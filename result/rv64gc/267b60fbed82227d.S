@@ -1,7 +1,5 @@
 func0000000000000111:                   # @func0000000000000111
-	beqz	a1, .LBB0_2
-	addi	a0, a1, 1
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011

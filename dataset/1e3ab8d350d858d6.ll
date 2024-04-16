@@ -11,7 +11,7 @@ entry:
   %4 = select i1 %3, float %0, float %2
   %5 = fmul float %1, 2.560000e+02
   %6 = fdiv float %5, %4
-  %7 = fmul float %0, %6
+  %7 = fmul float %6, %0
   ret float %7
 }
 

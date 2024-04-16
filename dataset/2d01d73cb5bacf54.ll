@@ -11,7 +11,7 @@ entry:
   %4 = select i1 %3, i32 %2, i32 0
   %5 = add nsw i32 %4, %1
   %6 = icmp slt i32 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

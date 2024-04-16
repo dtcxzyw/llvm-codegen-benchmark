@@ -40,7 +40,7 @@ entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nsw i32 %2, -1938
   %4 = icmp ult i32 %3, -3875
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

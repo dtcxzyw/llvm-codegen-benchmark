@@ -42,7 +42,7 @@ entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = add nsw i32 %2, -8
   %4 = shl i32 %1, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

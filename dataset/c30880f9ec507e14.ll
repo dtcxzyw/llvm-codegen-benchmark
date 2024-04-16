@@ -7,10 +7,10 @@
 define i8 @func0000000000000000(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fmuladd.f32(float %2, float 2.550000e+02, float 5.000000e-01)
-  %4 = select i1 %1, float 0.000000e+00, float %3
-  %5 = select i1 %0, float 2.550000e+02, float %4
-  %6 = fptosi float %5 to i32
-  %7 = trunc i32 %6 to i8
+  %4 = fptosi float %3 to i32
+  %5 = trunc i32 %4 to i8
+  %6 = select i1 %1, i8 0, i8 %5
+  %7 = select i1 %0, i8 -1, i8 %6
   ret i8 %7
 }
 

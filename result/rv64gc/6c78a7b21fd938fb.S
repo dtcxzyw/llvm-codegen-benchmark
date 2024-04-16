@@ -1,6 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	srliw	a1, a1, 25
-	li	a2, 32
+	slli	a1, a1, 25
+	lui	a2, 262144
 	bne	a1, a2, .LBB0_2
 	li	a0, 33
 	ret

@@ -36,7 +36,7 @@ entry:
   %4 = icmp eq i8 %1, 2
   %5 = and i1 %4, %3
   %6 = select i1 %5, i32 12, i32 8
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -88,7 +88,7 @@ entry:
   %4 = icmp slt i32 %1, 8192
   %5 = and i1 %4, %3
   %6 = select i1 %5, i32 64, i32 16
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -114,7 +114,7 @@ entry:
   %4 = icmp ne i32 %1, 15
   %5 = and i1 %4, %3
   %6 = select i1 %5, i32 3, i32 2
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

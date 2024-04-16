@@ -11,7 +11,7 @@ entry:
   %3 = fdiv double 1.000000e+00, %2
   %4 = fdiv double 1.000000e+00, %1
   %5 = fmul double %4, %3
-  %6 = fcmp ogt double %0, %5
+  %6 = fcmp olt double %5, %0
   ret i1 %6
 }
 

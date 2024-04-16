@@ -41,7 +41,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nsw i32 %1, -100
+  %2 = mul i32 %1, 2147483548
   %3 = add i32 %2, %0
   %4 = shl i32 %3, 1
   %5 = zext i32 %4 to i64

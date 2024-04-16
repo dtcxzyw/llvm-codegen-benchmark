@@ -5,8 +5,7 @@ func0000000000000161:                   # @func0000000000000161
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
-	addi	a1, a1, -1
-	addi	a0, a0, 1
+	addi	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -19,8 +18,7 @@ func0000000000000061:                   # @func0000000000000061
 	srli	a2, a1, 63
 	srai	a1, a1, 4
 	add	a1, a1, a2
-	addi	a1, a1, -1
-	addi	a0, a0, 1
+	addi	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -42,8 +40,7 @@ func0000000000000141:                   # @func0000000000000141
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
-	addi	a1, a1, -1
-	addi	a0, a0, 1
+	addi	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -82,11 +79,11 @@ func0000000000000158:                   # @func0000000000000158
 	sltu	a0, a1, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
+	sext.w	a0, a0
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
-	addi	a1, a1, 4
-	addiw	a0, a0, 1
+	addi	a1, a1, 3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

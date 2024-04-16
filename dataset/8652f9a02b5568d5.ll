@@ -19,7 +19,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 
@@ -252,7 +252,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
@@ -270,7 +270,7 @@ define i1 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ule ptr %0, %3
+  %4 = icmp uge ptr %3, %0
   ret i1 %4
 }
 
@@ -371,7 +371,7 @@ define i1 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
 
@@ -386,7 +386,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
 

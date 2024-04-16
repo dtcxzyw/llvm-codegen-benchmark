@@ -12,7 +12,7 @@ define i8 @func0000000000000040(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 %1, %3
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = lshr i32 %5, 8
   %7 = trunc i32 %6 to i8
   ret i8 %7

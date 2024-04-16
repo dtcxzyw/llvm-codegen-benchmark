@@ -98,11 +98,10 @@ entry:
 define i32 @func00000000000000f7(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 3
-  %4 = add nuw nsw i32 %3, 19
-  %5 = shl nsw i32 %0, 3
-  %6 = add nuw nsw i32 %5, %4
-  ret i32 %6
+  %3 = add i32 %2, %0
+  %4 = shl i32 %3, 3
+  %5 = add i32 %4, 19
+  ret i32 %5
 }
 
 ; 1 occurrences:

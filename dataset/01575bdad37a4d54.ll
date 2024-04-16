@@ -27,8 +27,8 @@ define i8 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = add i64 %4, 1
-  %6 = trunc i64 %5 to i8
+  %5 = trunc i64 %4 to i8
+  %6 = add i8 %5, 1
   ret i8 %6
 }
 
@@ -40,8 +40,8 @@ define i16 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = add nsw i32 %4, -1
-  %6 = trunc i32 %5 to i16
+  %5 = trunc i32 %4 to i16
+  %6 = add i16 %5, -1
   ret i16 %6
 }
 
@@ -58,8 +58,8 @@ define i16 @func0000000000000064(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
-  %5 = add nsw i32 %4, -1
-  %6 = trunc i32 %5 to i16
+  %5 = trunc i32 %4 to i16
+  %6 = add i16 %5, -1
   ret i16 %6
 }
 
@@ -77,8 +77,8 @@ define i8 @func0000000000000060(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = add i64 %4, 1
-  %6 = trunc i64 %5 to i8
+  %5 = trunc i64 %4 to i8
+  %6 = add i8 %5, 1
   ret i8 %6
 }
 

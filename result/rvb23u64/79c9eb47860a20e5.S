@@ -1,7 +1,5 @@
 func000000000000000d:                   # @func000000000000000d
-	li	a2, 1
-	bseti	a2, a2, 63
-	add	a1, a1, a2
+	addi	a1, a1, 1
 	slli	a1, a1, 56
 	srli	a1, a1, 59
 	add	a0, a0, a1

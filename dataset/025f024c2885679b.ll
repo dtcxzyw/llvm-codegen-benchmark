@@ -21,7 +21,7 @@ entry:
   %3 = tail call i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 16)
   %4 = add i32 %3, %1
   %5 = xor i32 %1, -1
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = xor i32 %6, %4
   ret i32 %7
 }

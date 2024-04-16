@@ -15,39 +15,38 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a1, 7
-	li	a3, 2
+	andi	a2, a1, 6
 	li	a1, 48
-	bltu	a2, a3, .LBB2_2
+	beqz	a2, .LBB2_2
 	lui	a1, 3
 .LBB2_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	slli	a2, a1, 61
+	andi	a2, a1, 4
 	lui	a1, 40
-	bltz	a2, .LBB3_2
-	addiw	a1, a1, 640
-	or	a0, a0, a1
-	ret
-.LBB3_2:
+	beqz	a2, .LBB3_2
 	addiw	a1, a1, 320
 	or	a0, a0, a1
 	ret
+.LBB3_2:
+	addiw	a1, a1, 640
+	or	a0, a0, a1
+	ret
 func0000000000000009:                   # @func0000000000000009
-	andi	a2, a1, 15
-	li	a3, 8
+	andi	a2, a1, 8
 	li	a1, 48
-	bltu	a2, a3, .LBB4_2
+	beqz	a2, .LBB4_2
 	li	a1, 32
 .LBB4_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
-	slli	a1, a1, 55
-	srai	a1, a1, 63
-	andi	a1, a1, -768
-	addi	a1, a1, 1024
+	andi	a2, a1, 256
+	li	a1, 1024
+	beqz	a2, .LBB5_2
+	li	a1, 256
+.LBB5_2:                                # %entry
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011

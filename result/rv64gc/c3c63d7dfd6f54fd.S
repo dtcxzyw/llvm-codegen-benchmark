@@ -11,8 +11,8 @@ func0000000000000020:                   # @func0000000000000020
 	slli	a0, a0, 32
 	ret
 func0000000000000024:                   # @func0000000000000024
-	bgeu	a2, a0, .LBB2_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	slli	a0, a0, 1
+	slli	a0, a1, 1
 	ret

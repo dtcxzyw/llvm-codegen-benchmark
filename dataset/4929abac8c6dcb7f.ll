@@ -39,10 +39,8 @@ entry:
 define i1 @func0000000000000001(i128 %0) #0 {
 entry:
   %1 = freeze i128 %0
-  %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %2 = icmp ult i128 %1, 18446744073709551616
+  ret i1 %2
 }
 
 ; 106 occurrences:
@@ -181,7 +179,7 @@ define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = icmp slt i32 %3, 1
   ret i1 %4
 }

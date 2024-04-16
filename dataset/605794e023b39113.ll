@@ -13,8 +13,8 @@
 define i64 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %1, %3
-  %5 = or i1 %0, %4
+  %4 = and i1 %3, %1
+  %5 = or i1 %4, %0
   %6 = select i1 %5, i64 16, i64 24
   ret i64 %6
 }
@@ -32,8 +32,8 @@ entry:
 define i32 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %1, %3
-  %5 = or i1 %0, %4
+  %4 = and i1 %3, %1
+  %5 = or i1 %4, %0
   %6 = select i1 %5, i32 29, i32 28
   ret i32 %6
 }

@@ -7,7 +7,7 @@ define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = or disjoint i32 %3, %1
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
 }
@@ -21,7 +21,7 @@ define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ne i32 %0, %4
+  %5 = icmp ne i32 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
 }

@@ -31,9 +31,11 @@ func0000000000000002:                   # @func0000000000000002
 	ori	a0, a0, 64
 	ret
 func0000000000000006:                   # @func0000000000000006
-	add	a0, a0, a1
-	addi	a0, a0, -48
-	lui	a1, 1048568
+	lui	a2, 8
+	addiw	a2, a2, -48
+	add	a1, a1, a2
+	lui	a2, 1048568
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f

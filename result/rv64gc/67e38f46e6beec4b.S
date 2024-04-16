@@ -8,11 +8,12 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a1, a1, a2
 	xor	a0, a0, a1
 	slli	a0, a0, 56
-	srli	a0, a0, 63
+	srai	a0, a0, 56
+	slti	a0, a0, 0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	xor	a1, a1, a2
 	xor	a0, a0, a1
-	andi	a0, a0, 7
-	sltiu	a0, a0, 2
+	andi	a0, a0, 6
+	seqz	a0, a0
 	ret

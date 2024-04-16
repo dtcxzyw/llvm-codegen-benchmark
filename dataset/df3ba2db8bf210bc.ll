@@ -5,7 +5,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 17
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   ret i32 %3
 }
 
@@ -50,7 +50,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 2487297242801635328
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   ret i64 %3
 }
 
@@ -77,7 +77,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 105553116266496
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   ret i64 %3
 }
 
@@ -101,7 +101,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 16842752
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   ret i32 %3
 }
 
@@ -112,7 +112,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 56
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   ret i32 %3
 }
 
@@ -124,7 +124,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 273
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   ret i32 %3
 }
 

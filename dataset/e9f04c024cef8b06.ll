@@ -101,7 +101,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = select i1 %3, i8 1, i8 %1
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -147,7 +147,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 16777216
   %4 = select i1 %3, i64 32505856, i64 %1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -156,10 +156,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i8 -1, i8 %1
-  %5 = and i8 %0, %4
-  ret i8 %5
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i8 %1, i8 -1
+  %4 = and i8 %3, %0
+  ret i8 %4
 }
 
 ; 2 occurrences:
@@ -170,7 +170,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

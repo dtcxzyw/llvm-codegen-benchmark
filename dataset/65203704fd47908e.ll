@@ -23,11 +23,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = add i64 %3, -1
-  %5 = getelementptr %"struct.std::pair.295.1567576", ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -152
-  ret ptr %6
+  %3 = getelementptr %"struct.std::pair.295.1567576", ptr %0, i64 %1
+  %4 = getelementptr %"struct.std::pair.295.1567576", ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -304
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -35,11 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 2
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 1
+  ret ptr %5
 }
 
 ; 11 occurrences:
@@ -57,11 +55,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 1
-  %5 = getelementptr inbounds %struct.Vec_Int_t_.1771164, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %3 = getelementptr %struct.Vec_Int_t_.1771164, ptr %0, i64 %1
+  %4 = getelementptr %struct.Vec_Int_t_.1771164, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 20
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -70,11 +67,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -84,11 +80,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = add i64 %3, 7
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 6
-  ret ptr %6
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 13
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -97,11 +92,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr inbounds %"struct.Yosys::RTLIL::SigBit.1891952", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.1891952", ptr %0, i64 %1
+  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.1891952", ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -109,11 +103,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = add i64 %3, -64
-  %5 = getelementptr inbounds %struct.BackwardMatch.2233540, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -4
-  ret ptr %6
+  %3 = getelementptr %struct.BackwardMatch.2233540, ptr %0, i64 %1
+  %4 = getelementptr %struct.BackwardMatch.2233540, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -516
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

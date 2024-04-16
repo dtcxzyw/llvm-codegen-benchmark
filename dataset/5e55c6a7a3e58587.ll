@@ -8,8 +8,8 @@
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = add nsw i32 %4, 1
+  %4 = add nsw i32 %0, 1
+  %5 = select i1 %3, i32 %4, i32 1
   ret i32 %5
 }
 
@@ -22,8 +22,8 @@ entry:
 define i8 @func0000000000000004(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
-  %4 = select i1 %3, i8 %0, i8 0
-  %5 = add i8 %4, -1
+  %4 = add i8 %0, -1
+  %5 = select i1 %3, i8 %4, i8 -1
   ret i8 %5
 }
 
@@ -34,8 +34,8 @@ entry:
 define i32 @func000000000000001b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = add nuw nsw i32 %4, 1
+  %4 = add nuw nsw i32 %0, 1
+  %5 = select i1 %3, i32 %4, i32 1
   ret i32 %5
 }
 
@@ -46,8 +46,8 @@ entry:
 define i32 @func0000000000000029(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = add nsw i32 %4, 1
+  %4 = add nsw i32 %0, 1
+  %5 = select i1 %3, i32 %4, i32 1
   ret i32 %5
 }
 
@@ -57,8 +57,8 @@ entry:
 define i32 @func000000000000002b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %1, %2
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = add nuw nsw i32 %4, 1
+  %4 = add nuw nsw i32 %0, 1
+  %5 = select i1 %3, i32 %4, i32 1
   ret i32 %5
 }
 
@@ -68,8 +68,8 @@ entry:
 define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = add nuw i32 %4, 4
+  %4 = add nuw i32 %0, 4
+  %5 = select i1 %3, i32 %4, i32 4
   ret i32 %5
 }
 
@@ -80,8 +80,8 @@ entry:
 define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = select i1 %3, i32 %0, i32 2
-  %5 = add nsw i32 %4, -1
+  %4 = add nsw i32 %0, -1
+  %5 = select i1 %3, i32 %4, i32 1
   ret i32 %5
 }
 
@@ -91,8 +91,8 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
-  %4 = select i1 %3, i32 %0, i32 1
-  %5 = add i32 %4, -1
+  %4 = add i32 %0, -1
+  %5 = select i1 %3, i32 %4, i32 0
   ret i32 %5
 }
 

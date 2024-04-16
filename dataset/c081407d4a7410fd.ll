@@ -12,11 +12,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %struct._zend_ssa_var_info.1718223, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  %5 = trunc i8 %0 to i1
-  %6 = select i1 %5, ptr %4, ptr null
-  ret ptr %6
+  %3 = getelementptr inbounds %struct._zend_ssa_var_info.1718223, ptr %1, i64 %2, i32 2
+  %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, ptr %3, ptr null
+  ret ptr %5
 }
 
 ; 4 occurrences:

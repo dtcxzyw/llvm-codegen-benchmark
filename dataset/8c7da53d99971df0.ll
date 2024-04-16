@@ -25,7 +25,7 @@ entry:
   %4 = icmp eq i64 %3, 15
   %5 = icmp eq i64 %1, 47
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = icmp eq i32 %3, 2
   %5 = icmp ne i32 %1, 16
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -65,7 +65,7 @@ entry:
   %4 = icmp ne i32 %3, 4
   %5 = icmp slt i32 %1, 11
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -82,7 +82,7 @@ entry:
   %4 = icmp ne i16 %3, 0
   %5 = icmp ult i8 %1, 123
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -123,7 +123,7 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = icmp ugt i64 %1, 72057594037927935
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -138,7 +138,7 @@ entry:
   %4 = icmp ne i8 %3, 0
   %5 = icmp sgt i32 %1, -1
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -196,7 +196,7 @@ entry:
   %4 = icmp eq i8 %3, 0
   %5 = icmp ne i32 %1, 0
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -209,7 +209,7 @@ entry:
   %4 = icmp eq i32 %3, 128
   %5 = icmp ult i8 %1, -2
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -223,7 +223,7 @@ entry:
   %4 = icmp ugt i96 %3, 64
   %5 = icmp sgt i32 %1, 2
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -238,7 +238,7 @@ entry:
   %4 = icmp ult i64 %3, 25
   %5 = icmp ult i16 %1, 6000
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -255,7 +255,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = icmp slt i64 %1, 0
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -268,7 +268,7 @@ entry:
   %4 = icmp ne i64 %3, 0
   %5 = icmp sgt i64 %1, 1
   %6 = and i1 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -281,7 +281,7 @@ entry:
   %4 = icmp ult i32 %3, 29
   %5 = icmp sgt i32 %1, 0
   %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

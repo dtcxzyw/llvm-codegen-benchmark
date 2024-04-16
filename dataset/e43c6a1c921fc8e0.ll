@@ -299,7 +299,7 @@
 define i64 @func0000000000000112(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 9223372036854775807)
   %5 = select i1 %3, i64 %4, i64 %0
   %6 = add nuw i64 %5, 1

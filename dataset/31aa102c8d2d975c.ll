@@ -9,12 +9,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 65528
-  %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 16, i32 0
-  %7 = select i1 %0, i32 %1, i32 %6
-  ret i32 %7
+  %3 = and i64 %2, 65528
+  %4 = icmp eq i64 %3, 0
+  %5 = select i1 %4, i32 16, i32 0
+  %6 = select i1 %0, i32 %1, i32 %5
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

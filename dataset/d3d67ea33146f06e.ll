@@ -188,10 +188,10 @@ define i64 @func000000000000000d(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 40
-  %6 = sdiv exact i64 %0, 40
-  %7 = sub nsw i64 %6, %5
-  ret i64 %7
+  %.neg = sdiv exact i64 %4, -40
+  %5 = sdiv exact i64 %0, 40
+  %6 = add nsw i64 %.neg, %5
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

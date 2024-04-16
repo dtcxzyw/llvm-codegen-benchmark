@@ -184,9 +184,9 @@
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
-  %3 = sub nuw nsw i32 8, %2
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
+  %.neg = add nsw i32 %2, -8
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -196,9 +196,9 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
-  %3 = sub nuw nsw i32 8, %2
-  %4 = sub nuw nsw i32 %0, %3
-  ret i32 %4
+  %.neg = add nsw i32 %2, -8
+  %3 = add i32 %.neg, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

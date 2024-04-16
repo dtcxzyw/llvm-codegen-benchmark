@@ -269,7 +269,7 @@ define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = select i1 %0, i32 %2, i32 %4
   %6 = icmp sgt i32 %5, 0
   ret i1 %6

@@ -4,9 +4,9 @@ func0000000000000001:                   # @func0000000000000001
 	czero.eqz	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
-	bclri	a1, a0, 63
-	slti	a0, a0, 0
-	czero.eqz	a0, a1, a0
+	srai	a1, a0, 63
+	and	a0, a0, a1
+	bclri	a0, a0, 63
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a0, 52

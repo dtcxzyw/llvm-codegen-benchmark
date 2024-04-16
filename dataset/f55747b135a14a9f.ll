@@ -192,7 +192,7 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = zext i64 %0 to i128

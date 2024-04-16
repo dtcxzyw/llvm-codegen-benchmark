@@ -13,7 +13,8 @@ func00000000000000f8:                   # @func00000000000000f8
 func0000000000000101:                   # @func0000000000000101
 	zext.h	a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	neg	a1, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000108:                   # @func0000000000000108
@@ -32,8 +33,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	zext.h	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a1
+	or	a0, a0, a2
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
@@ -45,8 +46,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func00000000000001f1:                   # @func00000000000001f1
 	zext.h	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a1
+	or	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -72,8 +73,10 @@ func0000000000000051:                   # @func0000000000000051
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
+	zext.w	a2, a2
 	add	a0, a0, a1
-	add.uw	a0, a2, a0
+	neg	a1, a2
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001

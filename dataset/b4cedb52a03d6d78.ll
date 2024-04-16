@@ -51,9 +51,9 @@
 define ptr @func0000000000000005(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr i8, ptr %0, i64 2
-  %5 = getelementptr inbounds i16, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 2
+  %4 = getelementptr i16, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -2
   ret ptr %5
 }
 
@@ -102,9 +102,9 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 28
-  %5 = getelementptr inbounds i8, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 28
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -127,9 +127,9 @@ entry:
 define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %0, i64 984
-  %5 = getelementptr inbounds ptr, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 984
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -159,9 +159,9 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 6
-  %5 = getelementptr inbounds %"class.openvdb::v11_0::math::Vec3.934.1667317", ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 6
+  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.934.1667317", ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -6
   ret ptr %5
 }
 
@@ -217,9 +217,9 @@ entry:
 define ptr @func0000000000000017(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 1248
-  %5 = getelementptr inbounds ptr, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 1248
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -231,9 +231,9 @@ entry:
 define ptr @func0000000000000015(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr inbounds i32, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 4
+  %4 = getelementptr i32, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 
@@ -244,9 +244,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 64
-  %5 = getelementptr %struct.JSShapeProperty.1908873, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 64
+  %4 = getelementptr %struct.JSShapeProperty.1908873, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -256,9 +256,9 @@ entry:
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 64
-  %5 = getelementptr %struct.JSShapeProperty.1908873, ptr %4, i64 %3
+  %3 = getelementptr inbounds i8, ptr %0, i64 64
+  %4 = getelementptr %struct.JSShapeProperty.1908873, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -268,9 +268,9 @@ entry:
 define ptr @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 4
-  %4 = getelementptr i8, ptr %0, i64 1
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -281,9 +281,9 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, -4
-  %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 8
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 

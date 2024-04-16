@@ -9,7 +9,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = add nsw i32 %3, 1
-  %5 = mul nsw i32 %1, %4
+  %5 = mul nsw i32 %4, %1
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }

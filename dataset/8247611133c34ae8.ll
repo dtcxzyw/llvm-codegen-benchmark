@@ -8,7 +8,7 @@ define i1 @func0000000000000010(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = xor i16 %2, -32768
   %4 = icmp ugt i16 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -25,7 +25,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = icmp ult i32 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -47,8 +47,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, 1
-  %4 = icmp ne i32 %3, %1
+  %3 = xor i32 %2, %1
+  %4 = icmp ne i32 %3, 1
   %5 = or i1 %4, %0
   ret i1 %5
 }

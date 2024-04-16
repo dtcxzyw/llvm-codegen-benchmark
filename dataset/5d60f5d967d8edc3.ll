@@ -23,7 +23,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = xor i32 %2, 177573
   %4 = mul nuw nsw i32 %3, 33
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   %6 = mul i32 %5, 33
   ret i32 %6
 }

@@ -181,7 +181,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 181704
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   ret i64 %3
 }
 
@@ -222,7 +222,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 60
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -232,7 +232,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   ret i64 %3
 }
 

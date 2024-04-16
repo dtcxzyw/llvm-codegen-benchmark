@@ -25,7 +25,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -38,7 +38,7 @@ entry:
   %3 = add nuw i64 %2, 63
   %4 = and i64 %3, -64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = add nuw nsw i64 %2, 15
   %4 = and i64 %3, 504
   %5 = select i1 %1, i64 32, i64 %4
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

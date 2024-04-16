@@ -39,7 +39,7 @@ entry:
   %3 = add nsw i8 %2, -32
   %4 = select i1 %1, i8 %3, i8 %2
   %5 = icmp ne i8 %4, 85
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

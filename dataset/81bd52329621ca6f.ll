@@ -102,10 +102,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = getelementptr i32, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -4
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -4
+  ret ptr %3
 }
 
 ; 57 occurrences:
@@ -170,9 +169,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = getelementptr %struct.rb_shape.1553798, ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr %struct.rb_shape.1553798, ptr %0, i64 %2, i32 4
+  ret ptr %3
 }
 
 ; 761 occurrences:
@@ -941,9 +939,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 33
-  %3 = getelementptr inbounds %"class.re2::Prog::Inst.1554287", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr inbounds %"class.re2::Prog::Inst.1554287", ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 54 occurrences:
@@ -1005,9 +1002,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr inbounds %"class.std::__1::tuple.1556134", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %"class.std::__1::tuple.1556134", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 5 occurrences:
@@ -1020,9 +1016,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = getelementptr inbounds %"struct.std::pair.1693351", ptr %0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.std::pair.1693351", ptr %0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 1 occurrences:

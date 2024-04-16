@@ -9,7 +9,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = sitofp i64 %3 to float
   %5 = fdiv float %4, 1.000000e+06
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 

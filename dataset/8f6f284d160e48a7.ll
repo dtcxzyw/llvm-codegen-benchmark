@@ -16,7 +16,7 @@ entry:
   %3 = and i16 %2, 4096
   %4 = zext nneg i16 %3 to i32
   %5 = zext nneg i16 %1 to i32
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -172,7 +172,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -222,7 +222,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i48
   %5 = zext i32 %1 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   %7 = or disjoint i48 %6, %4
   ret i48 %7
 }
@@ -235,7 +235,7 @@ entry:
   %3 = and i32 %2, -65536
   %4 = zext i32 %3 to i48
   %5 = zext i16 %1 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   %7 = or disjoint i48 %6, %4
   ret i48 %7
 }
@@ -251,7 +251,7 @@ entry:
   %3 = and i24 %2, 2097152
   %4 = zext nneg i24 %3 to i32
   %5 = zext nneg i24 %1 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -264,7 +264,7 @@ entry:
   %3 = and i8 %2, 64
   %4 = zext nneg i8 %3 to i64
   %5 = zext i8 %1 to i64
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -277,7 +277,7 @@ entry:
   %3 = and i8 %2, -128
   %4 = zext i8 %3 to i32
   %5 = zext nneg i8 %1 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

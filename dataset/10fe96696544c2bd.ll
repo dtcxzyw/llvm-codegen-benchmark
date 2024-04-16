@@ -9,8 +9,8 @@ entry:
   %2 = fmul float %1, 2.550000e+02
   %3 = fcmp ogt float %2, 2.550000e+02
   %4 = select i1 %3, float 2.550000e+02, float %2
-  %5 = select i1 %0, float 0.000000e+00, float %4
-  %6 = fptoui float %5 to i8
+  %5 = fptoui float %4 to i8
+  %6 = select i1 %0, i8 0, i8 %5
   ret i8 %6
 }
 
@@ -23,8 +23,8 @@ entry:
   %2 = fmul double %1, 6.553550e+04
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = select i1 %3, double 0.000000e+00, double %2
-  %5 = select i1 %0, double 6.553500e+04, double %4
-  %6 = fptoui double %5 to i16
+  %5 = fptoui double %4 to i16
+  %6 = select i1 %0, i16 -1, i16 %5
   ret i16 %6
 }
 

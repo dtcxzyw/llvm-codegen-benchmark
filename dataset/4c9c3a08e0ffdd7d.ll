@@ -32,7 +32,7 @@ define i1 @func0000000000000138(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 4, i8 8
-  %5 = add nuw nsw i8 %0, %4
+  %5 = add nuw nsw i8 %4, %0
   %6 = add i8 %1, -4
   %7 = icmp ugt i8 %5, %6
   ret i1 %7
@@ -45,7 +45,7 @@ define i1 @func0000000000000134(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 4, i8 8
-  %5 = add nuw nsw i8 %0, %4
+  %5 = add nuw nsw i8 %4, %0
   %6 = add i8 %1, -4
   %7 = icmp ult i8 %5, %6
   ret i1 %7
@@ -59,7 +59,7 @@ define i1 @func000000000000011a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 9, i32 4
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = add i32 %1, -32
   %7 = icmp sgt i32 %5, %6
   ret i1 %7
@@ -73,7 +73,7 @@ define i1 @func0000000000000116(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 9, i32 4
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = add i32 %1, -32
   %7 = icmp slt i32 %5, %6
   ret i1 %7

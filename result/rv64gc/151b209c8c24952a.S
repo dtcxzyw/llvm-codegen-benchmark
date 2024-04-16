@@ -18,9 +18,9 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func00000000000005aa:                   # @func00000000000005aa
 	sext.w	a0, a0
+	sext.w	a1, a1
 	andi	a2, a2, 255
-	subw	a1, a1, a2
-	sgtz	a1, a1
+	slt	a1, a2, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

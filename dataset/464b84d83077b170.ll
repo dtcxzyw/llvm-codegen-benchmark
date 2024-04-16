@@ -50,7 +50,7 @@ entry:
 define i128 @func0000000000000003(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 %1, 1
-  %3 = add i128 %0, %2
+  %3 = add i128 %2, %0
   %4 = and i128 %3, 18446744073709551615
   %5 = add nuw nsw i128 %4, 18446673704965373952
   ret i128 %5
@@ -63,7 +63,7 @@ entry:
 define i128 @func000000000000003f(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 1
-  %3 = add nuw nsw i128 %0, %2
+  %3 = add nuw nsw i128 %2, %0
   %4 = and i128 %3, 18446744073709551615
   %5 = add nuw nsw i128 %4, 18446673704965373952
   ret i128 %5
@@ -87,7 +87,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %4, 32
   ret i64 %5
@@ -99,7 +99,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = and i64 %3, -4
   %5 = add i64 %4, 516
   ret i64 %5

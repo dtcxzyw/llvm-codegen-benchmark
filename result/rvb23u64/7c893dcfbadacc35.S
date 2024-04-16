@@ -102,10 +102,9 @@ func0000000000000038:                   # @func0000000000000038
 	sltu	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
-	andi	a1, a1, 1
-	bset	a2, zero, a2
-	czero.nez	a1, a2, a1
-	sltu	a0, a0, a1
+	srl	a0, a0, a2
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 1

@@ -5,8 +5,8 @@ func000000000000006c:                   # @func000000000000006c
 	add	a0, a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068
-	add	a4, a4, a2
-	sltu	a1, a4, a2
+	add	a2, a2, a4
+	sltu	a1, a2, a4
 	add	a0, a0, a3
 	add	a0, a0, a1
 	ret

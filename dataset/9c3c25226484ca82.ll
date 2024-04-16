@@ -10,7 +10,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = and i64 %0, %2
+  %3 = and i64 %2, %0
   %4 = freeze i64 %3
   ret i64 %4
 }

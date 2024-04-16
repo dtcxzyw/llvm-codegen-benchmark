@@ -43,8 +43,9 @@ entry:
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = udiv i32 %3, 100
-  %5 = mul nsw i32 %4, -100
+  %.fr = freeze i32 %3
+  %4 = urem i32 %.fr, 100
+  %5 = sub i32 %4, %.fr
   ret i32 %5
 }
 

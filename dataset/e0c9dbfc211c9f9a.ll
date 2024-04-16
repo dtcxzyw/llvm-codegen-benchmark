@@ -57,7 +57,7 @@ define i1 @func0000000000000111(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 4
   %4 = select i1 %3, i64 36, i64 %1
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = icmp eq i64 %5, 44
   ret i1 %6
 }
@@ -70,7 +70,7 @@ define i1 @func0000000000000151(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 4
   %4 = select i1 %3, i64 36, i64 %1
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = icmp eq i64 %5, 44
   ret i1 %6
 }
@@ -93,8 +93,8 @@ entry:
 define i1 @func0000000000000034(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i8 1, i8 %1
-  %5 = or disjoint i8 %0, %4
+  %4 = select i1 %3, i8 0, i8 %1
+  %5 = or i8 %4, %0
   %6 = icmp ult i8 %5, 2
   ret i1 %6
 }
@@ -121,7 +121,7 @@ define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }

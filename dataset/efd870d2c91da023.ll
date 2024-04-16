@@ -23,8 +23,8 @@ define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 1)
   %2 = add i64 %1, %0
-  %3 = add i64 %2, 2
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, 16
   ret i64 %4
 }
 

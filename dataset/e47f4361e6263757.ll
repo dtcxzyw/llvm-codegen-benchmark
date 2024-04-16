@@ -6,8 +6,8 @@
 define i32 @func000000000000001c(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
-  %2 = sub nuw nsw i32 -1640531521, %1
-  %3 = shl i32 %2, 8
+  %2 = shl nuw nsw i32 %1, 8
+  %3 = sub nuw nsw i32 930725632, %2
   ret i32 %3
 }
 

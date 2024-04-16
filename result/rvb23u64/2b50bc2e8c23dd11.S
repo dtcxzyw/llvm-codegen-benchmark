@@ -139,16 +139,16 @@ func000000000000002c:                   # @func000000000000002c
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
 	addiw	a1, a1, 1
-	czero.nez	a1, a1, a0
 	li	a2, 1
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a0, a0
 	addi	a1, a1, 8
-	czero.nez	a1, a1, a0
 	li	a2, 24
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret

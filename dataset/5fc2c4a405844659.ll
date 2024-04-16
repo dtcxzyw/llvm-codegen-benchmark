@@ -8,7 +8,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 60
   %4 = icmp eq i16 %1, -1
   %5 = select i1 %4, i64 31536000, i64 %3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 24
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

@@ -19,9 +19,10 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000038:                   # @func0000000000000038
 	andi	a2, a2, 255
-	czero.eqz	a0, a0, a2
+	snez	a2, a2
 	sext.w	a1, a1
 	sltu	a0, a1, a0
+	and	a0, a0, a2
 	ret
 func0000000000000108:                   # @func0000000000000108
 	andi	a2, a2, 255

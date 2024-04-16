@@ -7,7 +7,7 @@ entry:
   %3 = shl nsw i32 %2, 2
   %4 = add nsw i32 %3, 6
   %5 = icmp ne i32 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = shl i64 %2, 6
   %4 = add i64 %3, 8192
   %5 = icmp ugt i64 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
   %5 = icmp ult i64 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, 2
   %5 = icmp ugt i64 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

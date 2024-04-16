@@ -13,8 +13,8 @@
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 9
-  %2 = and i32 %1, 15
-  %3 = trunc nuw nsw i32 %2 to i8
+  %2 = trunc i32 %1 to i8
+  %3 = and i8 %2, 15
   ret i8 %3
 }
 
@@ -348,10 +348,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 16
-  %2 = and i64 %1, 65535
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 16
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -360,8 +359,8 @@ entry:
 define i8 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 4
-  %2 = and i32 %1, 224
-  %3 = trunc nuw i32 %2 to i8
+  %2 = trunc i32 %1 to i8
+  %3 = and i8 %2, -32
   ret i8 %3
 }
 
@@ -373,8 +372,8 @@ entry:
 define i8 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = lshr exact i32 %0, 2
-  %2 = and i32 %1, 504
-  %3 = trunc i32 %2 to i8
+  %2 = trunc i32 %1 to i8
+  %3 = and i8 %2, -8
   ret i8 %3
 }
 

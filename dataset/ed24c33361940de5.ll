@@ -181,7 +181,7 @@
 define i64 @func0000000000000035(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = mul nsw i64 %4, 7
   %6 = sdiv exact i64 %0, 72
   %7 = add nsw i64 %5, %6
@@ -197,7 +197,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = mul i64 %4, 7
   %6 = sdiv exact i64 %0, 72
   %7 = add i64 %5, %6

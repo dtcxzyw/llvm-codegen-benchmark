@@ -9,7 +9,7 @@ define i128 @func0000000000000028(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl nuw i128 %2, 64
   %4 = or disjoint i128 %3, %1
-  %5 = mul i128 %0, %4
+  %5 = mul i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
@@ -21,7 +21,7 @@ define i128 @func000000000000002a(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl nuw i128 %2, 64
   %4 = or disjoint i128 %3, %1
-  %5 = mul nsw i128 %0, %4
+  %5 = mul nsw i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }
@@ -45,7 +45,7 @@ define i128 @func0000000000000018(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl nsw i128 %2, 64
   %4 = or disjoint i128 %3, %1
-  %5 = mul i128 %0, %4
+  %5 = mul i128 %4, %0
   %6 = lshr i128 %5, 64
   ret i128 %6
 }

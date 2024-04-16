@@ -25,7 +25,7 @@ define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp ogt double %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -38,7 +38,7 @@ define i1 @func0000000000000012(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fabs.f32(float %2)
   %4 = fcmp olt float %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -52,7 +52,7 @@ define i1 @func000000000000001d(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fabs.f32(float %2)
   %4 = fcmp uge float %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -63,7 +63,7 @@ define i1 @func000000000000000c(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp oge double %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -75,7 +75,7 @@ define i1 @func000000000000000d(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = call double @llvm.fabs.f64(double %2)
   %4 = fcmp uge double %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -108,7 +108,7 @@ define i1 @func000000000000000b(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = call float @llvm.fabs.f32(float %2)
   %4 = fcmp ule float %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

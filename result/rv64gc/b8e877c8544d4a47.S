@@ -1,38 +1,14 @@
 func0000000000000013:                   # @func0000000000000013
-	srai	a3, a1, 2
-	lui	a4, 699051
-	addiw	a4, a4, -1365
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	mul	a3, a3, a4
-	sub	a2, a2, a3
-	add	a0, a0, a1
 	li	a1, 12
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
-	srai	a3, a1, 2
-	lui	a4, 699051
-	addiw	a4, a4, -1365
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	mul	a3, a3, a4
-	sub	a2, a2, a3
-	add	a0, a0, a1
 	li	a1, 12
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
-	srai	a3, a1, 4
-	lui	a4, 699051
-	addiw	a4, a4, -1365
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	mul	a3, a3, a4
-	sub	a2, a2, a3
-	add	a0, a0, a1
 	li	a1, 48
 	mul	a1, a2, a1
 	add	a0, a0, a1

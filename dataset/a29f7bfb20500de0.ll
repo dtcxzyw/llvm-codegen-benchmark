@@ -116,7 +116,7 @@ define i1 @func0000000000000031(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = lshr i64 %0, 4
-  %4 = add nuw nsw i64 %3, %2
+  %4 = or i64 %3, %2
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -130,7 +130,7 @@ define i1 @func000000000000003c(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = lshr i64 %0, 3
-  %4 = add nuw nsw i64 %3, %2
+  %4 = or i64 %3, %2
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }

@@ -11,7 +11,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 32
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   ret i64 %4
 }
 

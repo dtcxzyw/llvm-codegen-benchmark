@@ -7,7 +7,7 @@ entry:
   %3 = or disjoint i64 %2, 1
   %4 = sub nuw i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = or disjoint i64 %2, 3
   %4 = sub nuw nsw i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

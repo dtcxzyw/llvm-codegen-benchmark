@@ -146,8 +146,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = tail call i64 @llvm.umax.i64(i64 %4, i64 %1)
-  %6 = add i64 %5, %4
-  %7 = icmp ult i64 %6, %4
+  %6 = xor i64 %4, -1
+  %7 = icmp ugt i64 %5, %6
   ret i1 %7
 }
 

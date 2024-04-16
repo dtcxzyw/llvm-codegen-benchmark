@@ -4,12 +4,11 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000005(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 18446744073709551615
-  %4 = ashr i128 %1, 64
-  %5 = add nsw i128 %4, %3
-  %6 = and i128 %5, 18446744073709551615
-  %7 = add nsw i128 %0, %6
-  ret i128 %7
+  %3 = lshr i128 %1, 64
+  %4 = add i128 %3, %2
+  %5 = and i128 %4, 18446744073709551615
+  %6 = add nsw i128 %5, %0
+  ret i128 %6
 }
 
 attributes #0 = { nounwind }

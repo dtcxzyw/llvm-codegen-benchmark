@@ -6,9 +6,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, 1
-  %4 = icmp ugt i32 %1, %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %3 = icmp ule i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

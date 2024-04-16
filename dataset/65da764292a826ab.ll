@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = sub i64 0, %0
+  %3 = icmp eq i64 %.neg, %2
+  ret i1 %3
 }
 
 ; 10 occurrences:
@@ -25,10 +25,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %.neg = sext i1 %1 to i32
+  %2 = add i32 %.neg, %0
+  %3 = icmp sgt i32 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -36,10 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp ugt i64 %3, 16
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = add i64 %.neg, %0
+  %3 = icmp ugt i64 %2, 16
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -50,10 +50,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i64 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %.neg = sext i1 %1 to i64
+  %2 = add i64 %.neg, %0
+  %3 = icmp slt i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

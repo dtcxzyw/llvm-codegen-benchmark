@@ -16,7 +16,7 @@ entry:
   %4 = lshr exact i64 %3, 1
   %5 = trunc i64 %4 to i32
   %6 = xor i32 %5, -1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

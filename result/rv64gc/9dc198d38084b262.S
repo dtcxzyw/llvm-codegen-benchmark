@@ -24,7 +24,7 @@ func0000000000000047:                   # @func0000000000000047
 	li	a3, 1
 	beq	a2, a3, .LBB1_4
 .LBB1_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 .LBB1_3:                                # %entry
 	li	a1, 36
@@ -32,7 +32,7 @@ func0000000000000047:                   # @func0000000000000047
 	bne	a2, a3, .LBB1_2
 .LBB1_4:                                # %entry
 	li	a1, 44
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000113:                   # @func0000000000000113
 	andi	a2, a1, 255

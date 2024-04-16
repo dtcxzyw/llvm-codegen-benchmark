@@ -31,7 +31,7 @@
 define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

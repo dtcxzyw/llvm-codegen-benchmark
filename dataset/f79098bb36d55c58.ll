@@ -30,7 +30,7 @@ entry:
   %3 = and i32 %2, 260
   %4 = lshr i32 %1, 3
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, 64
   ret i32 %7
 }

@@ -259,7 +259,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 16
-  %3 = tail call i64 @llvm.umax.i64(i64 %0, i64 %2)
+  %3 = or i64 %2, %0
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }

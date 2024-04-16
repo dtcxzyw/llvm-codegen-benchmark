@@ -49,7 +49,7 @@ entry:
   %4 = select i1 %3, i64 3, i64 0
   %5 = shl nuw i64 %1, 2
   %6 = or disjoint i64 %5, %4
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -62,7 +62,7 @@ entry:
   %4 = select i1 %3, i64 3, i64 0
   %5 = shl nuw nsw i64 %1, 2
   %6 = or disjoint i64 %5, %4
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

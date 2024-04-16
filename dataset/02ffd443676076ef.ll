@@ -18,7 +18,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = getelementptr inbounds %"struct.mold::elf::ElfSym.1593906", ptr %0, i64 %4, i32 4
   ret ptr %5
 }

@@ -12,12 +12,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %0, %3
-  %5 = shl nuw nsw i32 %1, 8
-  %6 = or disjoint i32 %4, %5
-  %7 = icmp ult i32 %6, 1114112
-  ret i1 %7
+  %3 = shl nuw nsw i32 %1, 8
+  %4 = or i32 %3, %0
+  %5 = icmp ult i32 %4, 1114112
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -28,7 +26,7 @@ entry:
 define i1 @func00000000000000bc(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %1, 16
   %6 = or disjoint i32 %4, %5
   %7 = icmp ne i32 %6, 536936448
@@ -46,7 +44,7 @@ entry:
 define i1 @func00000000000000b1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %1, 16
   %6 = or disjoint i32 %4, %5
   %7 = icmp eq i32 %6, 536936448
@@ -60,7 +58,7 @@ entry:
 define i1 @func00000000000000b4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %4, %5
   %7 = icmp ult i32 %6, 2
@@ -76,7 +74,7 @@ entry:
 define i1 @func00000000000000fc(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw nsw i64 %1, 24
   %6 = or disjoint i64 %4, %5
   %7 = icmp ne i64 %6, 4294967295
@@ -102,7 +100,7 @@ entry:
 define i1 @func00000000000000f1(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw nsw i64 %1, 24
   %6 = or disjoint i64 %4, %5
   %7 = icmp eq i64 %6, 0
@@ -119,7 +117,7 @@ entry:
 define i1 @func00000000000000f8(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw nsw i64 %1, 24
   %6 = or disjoint i64 %4, %5
   %7 = icmp ugt i64 %6, 8191
@@ -132,7 +130,7 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = shl nuw nsw i32 %1, 8
   %6 = or i32 %4, %5
   %7 = icmp ne i32 %6, 0

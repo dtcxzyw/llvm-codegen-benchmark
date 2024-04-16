@@ -6,8 +6,8 @@
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds float, ptr %0, i64 %3
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
   ret ptr %4
 }
 
@@ -17,8 +17,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1
   ret ptr %4
 }
 

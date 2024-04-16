@@ -129,7 +129,7 @@ entry:
 define i32 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
   ret i32 %4
@@ -144,7 +144,7 @@ entry:
 define i64 @func0000000000000010(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = icmp ugt i32 %2, 999999999
   %4 = zext i1 %3 to i64
   ret i64 %4
@@ -156,7 +156,7 @@ entry:
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 40
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ult i32 %2, 1000
   %4 = zext i1 %3 to i64
   ret i64 %4

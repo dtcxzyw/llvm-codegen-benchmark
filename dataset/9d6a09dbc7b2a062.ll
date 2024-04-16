@@ -10,7 +10,7 @@ entry:
   %2 = sdiv i32 %1, 19
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = sdiv i32 %1, 64
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = sdiv i32 %1, 64
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %0, %4
+  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = sdiv i32 %1, 8
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

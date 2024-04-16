@@ -22,7 +22,7 @@ entry:
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
   %6 = icmp ne i64 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

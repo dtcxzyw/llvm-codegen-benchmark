@@ -4,10 +4,9 @@ func0000000000000004:                   # @func0000000000000004
 .LBB0_2:                                # %entry
 	ret
 func0000000000000010:                   # @func0000000000000010
-	bgeu	a1, a2, .LBB1_2
-	li	a0, -1
-	srli	a0, a0, 3
-.LBB1_2:                                # %entry
+	sltu	a1, a1, a2
+	neg	a1, a1
+	or	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sltu	a1, a2, a1

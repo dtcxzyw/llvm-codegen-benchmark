@@ -64,9 +64,8 @@
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = xor i64 %0, %2
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -75,7 +74,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = xor i64 %0, %2
+  %3 = xor i64 %2, %0
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -86,7 +85,7 @@ entry:
 define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp ult i32 %3, 2
   ret i1 %4
 }

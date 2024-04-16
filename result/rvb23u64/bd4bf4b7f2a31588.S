@@ -25,8 +25,9 @@ func00000000000001ec:                   # @func00000000000001ec
 	snez	a0, a0
 	ret
 func000000000000006c:                   # @func000000000000006c
-	slli	a2, a2, 22
+	srli	a1, a1, 22
 	add	a1, a1, a2
+	slli	a1, a1, 22
 	srli	a1, a1, 22
 	xor	a0, a0, a1
 	snez	a0, a0

@@ -36,10 +36,10 @@
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = or disjoint i32 %2, %0
-  %4 = and i32 %3, 65535
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
+  %.masked = and i32 %0, 65535
+  %3 = or i32 %2, %.masked
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

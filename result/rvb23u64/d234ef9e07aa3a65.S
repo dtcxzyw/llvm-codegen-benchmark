@@ -6,23 +6,19 @@ func0000000000000131:                   # @func0000000000000131
 	seqz	a0, a0
 	ret
 func00000000000001b4:                   # @func00000000000001b4
-	slli	a1, a1, 6
-	ctz	a0, a0
-	or	a0, a0, a1
-	sltiu	a0, a0, 256
+	sltiu	a0, a1, 4
 	ret
 func0000000000000098:                   # @func0000000000000098
-	ctz	a1, a1
-	slli	a0, a0, 6
-	or	a0, a0, a1
-	sltiu	a0, a0, 512
-	xori	a0, a0, 1
+	li	a1, -449
+	srli	a1, a1, 6
+	and	a0, a0, a1
+	snez	a0, a0
 	ret
 func0000000000000094:                   # @func0000000000000094
-	ctz	a1, a1
-	slli	a0, a0, 6
-	or	a0, a0, a1
-	sltiu	a0, a0, 512
+	li	a1, -449
+	srli	a1, a1, 6
+	and	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000091:                   # @func0000000000000091
 	ctz	a1, a1
@@ -39,8 +35,5 @@ func00000000000001f1:                   # @func00000000000001f1
 	seqz	a0, a0
 	ret
 func00000000000001f4:                   # @func00000000000001f4
-	slli	a1, a1, 6
-	ctz	a0, a0
-	or	a0, a0, a1
-	sltiu	a0, a0, 256
+	sltiu	a0, a1, 4
 	ret

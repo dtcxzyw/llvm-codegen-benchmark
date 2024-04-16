@@ -1,12 +1,10 @@
 func00000000000000c6:                   # @func00000000000000c6
 	or	a0, a0, a1
-	sraiw	a0, a0, 16
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func0000000000000086:                   # @func0000000000000086
 	or	a0, a0, a1
-	sraiw	a0, a0, 16
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func000000000000008a:                   # @func000000000000008a
 	or	a0, a0, a2

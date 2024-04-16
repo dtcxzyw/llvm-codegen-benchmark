@@ -1,6 +1,5 @@
 func00000000000000bf:                   # @func00000000000000bf
-	sext.w	a2, a2
-	srli	a2, a2, 2
+	srliw	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2

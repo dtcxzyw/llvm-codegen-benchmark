@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, 1000000
-  %4 = add i64 %3, %2
-  %5 = shl i64 %4, 56
+  %2 = zext i32 %1 to i64
+  %3 = shl i64 %0, 62
+  %4 = shl i64 %2, 56
+  %5 = add i64 %3, %4
   ret i64 %5
 }
 

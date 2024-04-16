@@ -14,7 +14,7 @@ entry:
   %1 = and i32 %0, 15
   %2 = icmp ult i32 %1, 10
   %3 = select i1 %2, i8 48, i8 55
-  %4 = trunc i32 %1 to i8
+  %4 = trunc nuw nsw i32 %1 to i8
   %5 = add nuw nsw i8 %3, %4
   ret i8 %5
 }

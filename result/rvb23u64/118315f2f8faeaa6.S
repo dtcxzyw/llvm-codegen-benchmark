@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 255
-	or	a0, a0, a1
 	slli	a0, a0, 33
 	srli	a0, a0, 33
+	or	a0, a0, a1
 	ret

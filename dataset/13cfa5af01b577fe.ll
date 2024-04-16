@@ -37,7 +37,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = call i32 @llvm.umax.i32(i32 %0, i32 %2)
+  %3 = or i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -84,7 +84,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2097152
-  %3 = tail call i64 @llvm.umax.i64(i64 %0, i64 %2)
+  %3 = or i64 %2, %0
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

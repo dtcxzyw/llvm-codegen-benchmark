@@ -11,7 +11,7 @@
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr i32 %3, 2
   %5 = or i32 %4, %3
   ret i32 %5
@@ -100,7 +100,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = lshr i32 %3, 2
   %5 = or i32 %4, %3
   ret i32 %5
@@ -126,7 +126,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = lshr i64 %3, 2
   %5 = or i64 %4, %3
   ret i64 %5

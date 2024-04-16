@@ -6,7 +6,7 @@
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = and i32 %3, 61496
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = and i32 %3, 32
   %5 = icmp eq i32 %4, 0
   ret i1 %5

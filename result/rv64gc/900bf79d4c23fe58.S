@@ -30,7 +30,7 @@ func0000000000000044:                   # @func0000000000000044
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	srlw	a0, a0, a1
-	andi	a0, a0, 15
+	andi	a0, a0, 14
 	sltiu	a0, a0, 10
 	ret
 func0000000000000041:                   # @func0000000000000041

@@ -13,7 +13,7 @@ entry:
   %2 = fdiv float 5.000000e-01, %1
   %3 = fcmp une float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = fdiv float 1.000000e+00, %1
   %3 = fcmp ogt float %1, 0.000000e+00
   %4 = select i1 %3, float %2, float %1
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

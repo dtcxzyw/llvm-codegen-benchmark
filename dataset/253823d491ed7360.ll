@@ -2162,9 +2162,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, null
-  %3 = select i1 %2, ptr null, ptr %0
-  ret ptr %3
+  %.not = icmp eq ptr %1, null
+  %2 = select i1 %.not, ptr %0, ptr null
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

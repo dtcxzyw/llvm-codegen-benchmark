@@ -13,7 +13,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000034(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = and i16 %2, 4095
+  %3 = and i16 %2, 3584
   %4 = icmp ult i16 %3, 2560
   %5 = add nuw nsw i16 %1, 87
   %6 = select i1 %4, i16 %0, i16 %5
@@ -132,10 +132,10 @@ entry:
 define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = icmp ne i32 %3, 0
-  %5 = add nuw i32 %1, 1
-  %6 = select i1 %4, i32 %0, i32 %5
-  ret i32 %6
+  %.not = icmp eq i32 %3, 0
+  %4 = add nuw i32 %1, 1
+  %5 = select i1 %.not, i32 %4, i32 %0
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -145,10 +145,10 @@ entry:
 define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = icmp ne i32 %3, 0
-  %5 = add nuw nsw i32 %1, 1
-  %6 = select i1 %4, i32 %0, i32 %5
-  ret i32 %6
+  %.not = icmp eq i32 %3, 0
+  %4 = add nuw nsw i32 %1, 1
+  %5 = select i1 %.not, i32 %4, i32 %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

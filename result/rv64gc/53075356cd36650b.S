@@ -12,7 +12,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	andi	a1, a1, 255
-	beq	a0, a1, .LBB1_2
+	beq	a1, a0, .LBB1_2
 	li	a0, 256
 	ret
 .LBB1_2:

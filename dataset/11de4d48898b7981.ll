@@ -6,7 +6,7 @@
 define i16 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.umin.i32(i32 %0, i32 255)
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl nuw i16 %2, 8
   ret i16 %3
 }

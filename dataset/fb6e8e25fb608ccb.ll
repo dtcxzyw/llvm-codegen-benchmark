@@ -24,7 +24,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %1, %5
+  %6 = icmp eq i64 %5, %1
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -54,7 +54,7 @@ entry:
   %3 = ashr i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %1, %5
+  %6 = icmp eq i64 %5, %1
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -175,7 +175,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr exact i64 %4, 1
-  %6 = icmp eq i64 %1, %5
+  %6 = icmp eq i64 %5, %1
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

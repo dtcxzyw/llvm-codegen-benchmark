@@ -22,10 +22,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
-  %2 = shl i16 %1, 4
-  %3 = shl i16 %0, 4
-  %4 = sub i16 %3, %2
-  ret i16 %4
+  %2 = sub i16 %0, %1
+  %3 = shl i16 %2, 4
+  ret i16 %3
 }
 
 ; 8 occurrences:
@@ -56,10 +55,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 8
-  %3 = shl nuw nsw i32 %0, 8
-  %4 = sub nsw i32 %3, %2
-  ret i32 %4
+  %2 = sub nsw i32 %0, %1
+  %3 = shl nsw i32 %2, 8
+  ret i32 %3
 }
 
 ; 5 occurrences:
@@ -83,10 +81,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 2
-  %3 = shl nsw i64 %0, 2
-  %4 = sub i64 %3, %2
-  ret i64 %4
+  %2 = sub i64 %0, %1
+  %3 = shl i64 %2, 2
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -95,10 +92,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 2
-  %3 = shl nuw nsw i64 %0, 2
-  %4 = sub i64 %3, %2
-  ret i64 %4
+  %2 = sub i64 %0, %1
+  %3 = shl i64 %2, 2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -106,10 +102,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = shl nsw i32 %0, 1
-  %4 = sub nsw i32 %3, %2
-  ret i32 %4
+  %2 = sub nsw i32 %0, %1
+  %3 = shl nsw i32 %2, 1
+  ret i32 %3
 }
 
 ; 4 occurrences:
@@ -120,10 +115,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 3
-  %3 = shl nuw nsw i64 %0, 3
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %2 = sub nsw i64 %0, %1
+  %3 = shl nsw i64 %2, 3
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -131,10 +125,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 %1, 32
-  %3 = shl nuw i64 %0, 32
-  %4 = sub i64 %3, %2
-  ret i64 %4
+  %2 = sub i64 %0, %1
+  %3 = shl i64 %2, 32
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

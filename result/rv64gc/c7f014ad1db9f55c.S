@@ -2,7 +2,8 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a1, a1, 32
 	bnez	a1, .LBB0_2
 	li	a0, 32
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
 	sext.w	a0, a0
 	ret
 func0000000000000083:                   # @func0000000000000083

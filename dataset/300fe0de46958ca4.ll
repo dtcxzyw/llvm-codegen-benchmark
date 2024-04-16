@@ -9,7 +9,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = xor i64 %0, %4
+  %5 = xor i64 %4, %0
   ret i64 %5
 }
 

@@ -12,7 +12,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
   %4 = getelementptr inbounds [14 x %"union.std::aligned_storage<1, 1>::type.1721457"], ptr %3, i64 0, i64 %1
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 6320
   %4 = getelementptr [27 x %struct.ve_node.2016673], ptr %3, i64 0, i64 %1
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 64
   %4 = getelementptr [27 x %struct.ve_node.2016673], ptr %3, i64 0, i64 %1
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

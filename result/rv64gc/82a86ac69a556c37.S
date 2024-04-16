@@ -28,19 +28,22 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a3, a0
 	sext.w	a2, a2
-	bge	a2, a3, .LBB5_2
-	mv	a0, a1
+	blt	a2, a3, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a2, a2
 	sext.w	a3, a0
-	bgeu	a3, a2, .LBB6_2
-	mv	a0, a1
+	bltu	a3, a2, .LBB6_2
+	mv	a1, a0
 .LBB6_2:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	bgeu	a2, a0, .LBB7_2
-	mv	a0, a1
+	bltu	a2, a0, .LBB7_2
+	mv	a1, a0
 .LBB7_2:                                # %entry
+	mv	a0, a1
 	ret

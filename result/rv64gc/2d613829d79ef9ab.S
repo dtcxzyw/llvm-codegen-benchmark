@@ -18,8 +18,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	andi	a0, a0, 255
 	sext.w	a1, a1
+	andi	a0, a0, 255
 	xor	a1, a1, a0
 	seqz	a1, a1
 	snez	a0, a0

@@ -13,9 +13,9 @@
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 12600
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nuw nsw i32 %1 to i16
   %3 = udiv i16 %2, 1260
-  %4 = trunc i16 %3 to i8
+  %4 = trunc nuw nsw i16 %3 to i8
   ret i8 %4
 }
 

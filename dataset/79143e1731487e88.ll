@@ -8,8 +8,8 @@ define i64 @func0000000000000023(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp ugt i32 %0, -8
-  %4 = select i1 %3, i64 4294967295, i64 %2
-  %5 = add nuw nsw i64 %4, 32
+  %4 = add nuw nsw i64 %2, 32
+  %5 = select i1 %3, i64 4294967327, i64 %4
   ret i64 %5
 }
 
@@ -21,8 +21,8 @@ define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -1048576
   %3 = icmp ult i64 %0, 1082331758592
-  %4 = select i1 %3, i64 1082331758592, i64 %2
-  %5 = add nuw nsw i64 %4, 268435456
+  %4 = add nuw nsw i64 %2, 268435456
+  %5 = select i1 %3, i64 1082600194048, i64 %4
   ret i64 %5
 }
 
@@ -35,8 +35,8 @@ define i16 @func0000000000000012(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2
   %3 = icmp ult i16 %0, 25
-  %4 = select i1 %3, i16 0, i16 %2
-  %5 = add nuw i16 %4, 2
+  %4 = add nuw i16 %2, 2
+  %5 = select i1 %3, i16 2, i16 %4
   ret i16 %5
 }
 
@@ -48,8 +48,8 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp ult i32 %0, 5
-  %4 = select i1 %3, i32 19, i32 %2
-  %5 = add nsw i32 %4, -1
+  %4 = add nsw i32 %2, -1
+  %5 = select i1 %3, i32 18, i32 %4
   ret i32 %5
 }
 
@@ -61,8 +61,8 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = icmp ult i64 %0, 23
-  %4 = select i1 %3, i64 32, i64 %2
-  %5 = add i64 %4, 4150
+  %4 = add i64 %2, 4150
+  %5 = select i1 %3, i64 4182, i64 %4
   ret i64 %5
 }
 

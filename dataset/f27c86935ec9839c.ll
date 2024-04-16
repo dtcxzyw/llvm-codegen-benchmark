@@ -174,8 +174,8 @@ entry:
   %3 = xor i32 %2, 42
   %4 = lshr i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 -1
-  %7 = add nsw i32 %6, -9001
+  %6 = add nsw i32 %0, -9001
+  %7 = select i1 %5, i32 %6, i32 -9002
   ret i32 %7
 }
 
@@ -277,8 +277,8 @@ entry:
   %3 = xor i32 %2, 42
   %4 = lshr i32 %3, %1
   %5 = icmp eq i32 %4, 0
-  %6 = select i1 %5, i32 %0, i32 -1
-  %7 = add i32 %6, -9001
+  %6 = add i32 %0, -9001
+  %7 = select i1 %5, i32 %6, i32 -9002
   ret i32 %7
 }
 

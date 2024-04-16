@@ -37,7 +37,7 @@ declare float @llvm.maxnum.f32(float, float) #1
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = tail call float @llvm.maxnum.f32(float %1, float 0.000000e+00)
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   ret float %3
 }
 

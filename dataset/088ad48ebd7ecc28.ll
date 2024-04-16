@@ -15,9 +15,9 @@
 define i8 @func0000000000000000(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fadd float %2, 5.000000e-01
-  %4 = select i1 %1, float 0.000000e+00, float %3
-  %5 = select i1 %0, float 2.550000e+02, float %4
-  %6 = fptoui float %5 to i8
+  %4 = fptoui float %3 to i8
+  %5 = select i1 %1, i8 0, i8 %4
+  %6 = select i1 %0, i8 -1, i8 %5
   ret i8 %6
 }
 

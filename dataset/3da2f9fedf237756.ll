@@ -7,8 +7,8 @@ define i32 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -16
   %3 = add i8 %2, -16
-  %4 = select i1 %0, i8 0, i8 %3
-  %5 = zext i8 %4 to i32
+  %4 = zext i8 %3 to i32
+  %5 = select i1 %0, i32 0, i32 %4
   ret i32 %5
 }
 
@@ -26,8 +26,8 @@ define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %0, i32 0, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %0, i64 0, i64 %4
   ret i64 %5
 }
 
@@ -41,8 +41,8 @@ define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = add nsw i32 %2, -1075
-  %4 = select i1 %0, i32 -1074, i32 %3
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %0, i64 4294966222, i64 %4
   ret i64 %5
 }
 
@@ -53,8 +53,8 @@ define i32 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 127
   %3 = add nuw i8 %2, 2
-  %4 = select i1 %0, i8 2, i8 %3
-  %5 = zext i8 %4 to i32
+  %4 = zext i8 %3 to i32
+  %5 = select i1 %0, i32 2, i32 %4
   ret i32 %5
 }
 

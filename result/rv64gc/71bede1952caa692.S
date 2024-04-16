@@ -5,8 +5,6 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:                                # %entry
 	ret
 func0000000000000008:                   # @func0000000000000008
-	lui	a3, 1048575
-	and	a2, a2, a3
 	lui	a3, 524288
 	addi	a3, a3, -1
 	bltu	a3, a2, .LBB1_2

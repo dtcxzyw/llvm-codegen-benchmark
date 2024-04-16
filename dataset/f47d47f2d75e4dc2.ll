@@ -7,7 +7,7 @@
 define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 21
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -148,7 +148,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 12
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -159,7 +159,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 12
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

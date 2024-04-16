@@ -55,7 +55,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

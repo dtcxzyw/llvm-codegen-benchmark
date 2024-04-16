@@ -8,7 +8,7 @@ entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 33554432)
   %4 = sub i64 0, %3
   %5 = ptrtoint ptr %1 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = and i64 %6, %4
   ret i64 %7
 }

@@ -25,10 +25,8 @@
 define i32 @func000000000000001d(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 31
-  %2 = add nuw nsw i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, -1
-  ret i32 %4
+  %2 = zext nneg i8 %1 to i32
+  ret i32 %2
 }
 
 ; 6 occurrences:
@@ -73,10 +71,9 @@ entry:
 define i32 @func000000000000001f(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 31
-  %2 = add nuw nsw i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, 1
-  ret i32 %4
+  %narrow = add nuw nsw i8 %1, 2
+  %2 = zext nneg i8 %narrow to i32
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -85,10 +82,8 @@ entry:
 define i32 @func0000000000000011(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 124
-  %2 = add nuw i8 %1, 4
-  %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, -4
-  ret i32 %4
+  %2 = zext nneg i8 %1 to i32
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -97,10 +92,9 @@ entry:
 define i32 @func0000000000000013(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 127
-  %2 = add nuw i8 %1, 1
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, 1
-  ret i32 %4
+  %narrow = add nuw i8 %1, 2
+  %2 = zext i8 %narrow to i32
+  ret i32 %2
 }
 
 ; 2 occurrences:

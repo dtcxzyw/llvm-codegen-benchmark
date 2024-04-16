@@ -13,7 +13,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 3
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -38,7 +38,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 24
   %4 = getelementptr inbounds %"struct.mold::elf::ElfRel.1596993", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -49,7 +49,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 24
   %4 = getelementptr inbounds %struct.Elf64_Sym.1639226, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 3
   %4 = getelementptr i64, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

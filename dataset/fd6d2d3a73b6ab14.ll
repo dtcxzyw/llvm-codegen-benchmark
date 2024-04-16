@@ -107,8 +107,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add i64 %4, -8
-  %6 = and i64 %5, -8
+  %5 = and i64 %4, -8
+  %6 = add i64 %5, -8
   ret i64 %6
 }
 

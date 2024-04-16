@@ -8,7 +8,7 @@ entry:
   %2 = and i32 %1, -4
   %3 = add nsw i32 %2, 7
   %4 = and i32 %3, -8
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = and i32 %1, -4
   %3 = add nsw i32 %2, 7
   %4 = and i32 %3, -8
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

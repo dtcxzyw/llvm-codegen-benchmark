@@ -22,7 +22,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %3, -1
   %5 = add i64 %4, %0
-  %6 = zext i32 %1 to i64
+  %6 = zext nneg i32 %1 to i64
   %7 = lshr i64 %5, %6
   ret i64 %7
 }

@@ -11,7 +11,7 @@ func0000000000000007:                   # @func0000000000000007
 	bne	a2, a3, .LBB1_2
 	li	a1, 44
 .LBB1_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000030:                   # @func0000000000000030
 	beqz	a2, .LBB2_2
@@ -68,7 +68,7 @@ func0000000000000020:                   # @func0000000000000020
 	lui	a1, 1048568
 	addiw	a1, a1, 2
 .LBB9_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
 	li	a3, 1023
@@ -76,7 +76,7 @@ func0000000000000028:                   # @func0000000000000028
 	li	a1, 1
 	slli	a1, a1, 11
 .LBB10_2:                               # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func000000000000001b:                   # @func000000000000001b
 	sext.w	a2, a2
@@ -97,5 +97,5 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a1, 268352
 	addiw	a1, a1, 1170
 .LBB13_2:                               # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret

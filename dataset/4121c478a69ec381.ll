@@ -10,7 +10,7 @@ entry:
   %3 = urem i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = icmp ugt i64 %6, 255
   ret i1 %7
 }
@@ -28,8 +28,8 @@ entry:
   %3 = urem i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 

@@ -38,8 +38,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sub nsw i32 %3, %0
+  %3 = add i32 %2, %0
+  %4 = sub i32 %1, %3
   %5 = call i32 @llvm.smax.i32(i32 %4, i32 0)
   ret i32 %5
 }
@@ -56,8 +56,8 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub i32 %1, %2
-  %4 = sub i32 %3, %0
+  %3 = add i32 %2, %0
+  %4 = sub i32 %1, %3
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
   ret i32 %5
 }
@@ -67,8 +67,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = sub nsw i64 %3, %0
+  %3 = add i64 %2, %0
+  %4 = sub i64 %1, %3
   %5 = call i64 @llvm.smax.i64(i64 %4, i64 0)
   ret i64 %5
 }

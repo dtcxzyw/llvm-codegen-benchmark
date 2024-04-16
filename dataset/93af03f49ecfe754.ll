@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define float @func0000000000000018(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 1
-  %2 = trunc i64 %1 to i32
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 1
   %3 = uitofp i32 %2 to float
   ret float %3
 }

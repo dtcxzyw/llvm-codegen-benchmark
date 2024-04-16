@@ -32,7 +32,7 @@ entry:
   %3 = and i64 %2, -4
   %4 = or disjoint i64 %3, 2
   %5 = add i64 %4, %1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

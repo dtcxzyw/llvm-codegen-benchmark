@@ -4,12 +4,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000155(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -128
-  %4 = mul nsw i32 %3, -100
-  %5 = add nsw i32 %1, -4640
-  %6 = add nsw i32 %4, %5
-  %7 = add nsw i32 %6, %0
-  ret i32 %7
+  %3 = mul i32 %2, -100
+  %4 = add i32 %3, %1
+  %5 = add i32 %4, 8160
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -17,12 +16,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 4799
-  %4 = mul i32 %3, 365
-  %5 = add nuw nsw i32 %1, -31738
-  %6 = add i32 %5, %4
-  %7 = add i32 %6, %0
-  ret i32 %7
+  %3 = mul i32 %2, 365
+  %4 = add i32 %3, %1
+  %5 = add i32 %4, 1719897
+  %6 = add i32 %5, %0
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -30,12 +28,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000171(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, 365
-  %5 = add nuw nsw i32 %1, 1721423
-  %6 = add i32 %5, %4
-  %7 = add nsw i32 %6, %0
-  ret i32 %7
+  %3 = mul i32 %2, 365
+  %4 = add i32 %3, %1
+  %5 = add i32 %4, 1721058
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -43,12 +40,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = mul nsw i64 %3, 365
-  %5 = add i64 %1, 1721423
-  %6 = add i64 %5, %4
-  %7 = add nsw i64 %0, %6
-  ret i64 %7
+  %3 = mul i64 %2, 365
+  %4 = add i64 %3, %1
+  %5 = add i64 %4, 1721058
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -57,12 +53,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = mul i32 %3, 365
-  %5 = add nsw i32 %1, 1
-  %6 = add i32 %5, %4
-  %7 = add i32 %6, %0
-  ret i32 %7
+  %3 = mul i32 %2, 365
+  %4 = add i32 %3, %1
+  %5 = add i32 %4, -364
+  %6 = add i32 %5, %0
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

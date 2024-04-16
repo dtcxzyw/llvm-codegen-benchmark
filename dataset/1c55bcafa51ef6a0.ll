@@ -181,7 +181,7 @@
 define i1 @func000000000000014c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = tail call i32 @llvm.smin.i32(i32 %2, i32 %0)
   %6 = select i1 %4, i32 %5, i32 %0
   %7 = icmp ne i32 %6, 0
@@ -197,7 +197,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func000000000000014a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = call i32 @llvm.smin.i32(i32 %2, i32 %0)
   %6 = select i1 %4, i32 %5, i32 %0
   %7 = icmp sgt i32 %6, -1

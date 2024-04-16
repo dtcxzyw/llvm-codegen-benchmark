@@ -11,8 +11,8 @@
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 0
-  %2 = select i1 %1, i64 16, i64 %0
-  %3 = sub nuw nsw i64 16, %2
+  %2 = sub nuw nsw i64 16, %0
+  %3 = select i1 %1, i64 0, i64 %2
   ret i64 %3
 }
 
@@ -36,8 +36,8 @@ entry:
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
-  %2 = select i1 %1, i32 7, i32 %0
-  %3 = sub nsw i32 8, %2
+  %2 = sub nsw i32 8, %0
+  %3 = select i1 %1, i32 1, i32 %2
   ret i32 %3
 }
 
@@ -49,8 +49,8 @@ entry:
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
-  %2 = select i1 %1, i32 23, i32 %0
-  %3 = sub i32 31, %2
+  %2 = sub i32 31, %0
+  %3 = select i1 %1, i32 8, i32 %2
   ret i32 %3
 }
 
@@ -60,8 +60,8 @@ entry:
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 0
-  %2 = select i1 %1, i64 8192, i64 %0
-  %3 = sub nuw i64 -2, %2
+  %2 = sub nuw i64 -2, %0
+  %3 = select i1 %1, i64 -8194, i64 %2
   ret i64 %3
 }
 
@@ -70,10 +70,13 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 4097
-  %2 = select i1 %1, i64 4096, i64 %0
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %1 = call i64 @llvm.umax.i64(i64 %0, i64 4096)
+  %2 = sub i64 0, %1
+  ret i64 %2
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umax.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

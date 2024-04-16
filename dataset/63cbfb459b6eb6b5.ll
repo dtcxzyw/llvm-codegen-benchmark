@@ -15,9 +15,9 @@
 define i32 @func0000000000000010(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 9
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -30,7 +30,7 @@ entry:
 define i32 @func00000000000000c0(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
   %6 = add i32 %5, %0
   ret i32 %6
@@ -43,9 +43,9 @@ entry:
 define i32 @func00000000000000c3(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -74,9 +74,9 @@ entry:
 define i32 @func0000000000000040(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 26
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -89,7 +89,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -101,7 +101,7 @@ entry:
   %3 = icmp ult i8 %2, 16
   %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -115,9 +115,9 @@ entry:
 define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -130,7 +130,7 @@ entry:
   %3 = icmp ugt i64 %2, 31
   %4 = or i1 %3, %1
   %5 = zext i1 %4 to i8
-  %6 = add nuw nsw i8 %0, %5
+  %6 = add nuw nsw i8 %5, %0
   ret i8 %6
 }
 
@@ -143,7 +143,7 @@ entry:
   %3 = icmp ugt i16 %2, -8193
   %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

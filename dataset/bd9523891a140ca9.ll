@@ -887,10 +887,10 @@ entry:
 define ptr @func0000000000000019(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
-  %3 = icmp ne i8 %2, 0
-  %4 = select i1 %3, i64 32, i64 40
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
-  ret ptr %5
+  %.not = icmp eq i8 %2, 0
+  %3 = select i1 %.not, i64 40, i64 32
+  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -899,10 +899,10 @@ entry:
 define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i64 1, i64 2
-  %5 = getelementptr %struct.conversation_element.1925664, ptr %0, i64 %4
-  ret ptr %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i64 2, i64 1
+  %4 = getelementptr %struct.conversation_element.1925664, ptr %0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

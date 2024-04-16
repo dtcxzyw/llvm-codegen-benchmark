@@ -127,8 +127,8 @@ define i64 @func0000000000000054(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sdiv exact i64 %1, 112
   %4 = select i1 %2, i64 1, i64 %3
-  %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %3
+  %5 = xor i64 %3, -1
+  %6 = icmp ugt i64 %4, %5
   %7 = select i1 %6, i64 82351536043346212, i64 %0
   ret i64 %7
 }

@@ -13,7 +13,7 @@ entry:
   %3 = bitcast float %2 to i32
   %4 = and i32 %3, 2130706432
   %5 = icmp ne i32 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -324,9 +324,9 @@ define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fptrunc double %1 to float
   %3 = bitcast float %2 to i32
-  %4 = and i32 %3, 2139095040
-  %5 = icmp ugt i32 %4, 16777215
-  %6 = and i1 %0, %5
+  %4 = and i32 %3, 2130706432
+  %5 = icmp ne i32 %4, 0
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

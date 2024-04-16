@@ -8,10 +8,10 @@ define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 67645734912
   %3 = icmp ne i64 %2, 0
-  %4 = lshr i8 %0, 3
-  %5 = icmp eq i8 %4, 2
-  %6 = and i1 %5, %3
-  ret i1 %6
+  %.mask = and i8 %0, -8
+  %4 = icmp eq i8 %.mask, 16
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -23,10 +23,10 @@ define i1 @func0000000000000011(i24 %0, i24 %1) #0 {
 entry:
   %2 = and i24 %1, 255
   %3 = icmp eq i24 %2, 41
-  %4 = lshr i24 %0, 16
-  %5 = icmp eq i24 %4, 4
-  %6 = and i1 %5, %3
-  ret i1 %6
+  %.mask = and i24 %0, -65536
+  %4 = icmp eq i24 %.mask, 262144
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

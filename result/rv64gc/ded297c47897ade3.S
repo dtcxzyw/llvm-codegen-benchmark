@@ -49,8 +49,8 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000000c:                   # @func000000000000000c
 	andi	a3, a1, 1
 	sext.w	a2, a2
-	li	a1, 18
-	beqz	a2, .LBB2_4
+	li	a1, 12
+	bnez	a2, .LBB2_4
 	andi	a2, a0, 1
 	li	a0, 15
 	beqz	a3, .LBB2_5
@@ -59,7 +59,7 @@ func000000000000000c:                   # @func000000000000000c
 .LBB2_3:                                # %entry
 	ret
 .LBB2_4:                                # %entry
-	li	a1, 12
+	li	a1, 18
 	andi	a2, a0, 1
 	li	a0, 15
 	bnez	a3, .LBB2_2

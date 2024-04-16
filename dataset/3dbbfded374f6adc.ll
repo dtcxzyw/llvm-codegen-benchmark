@@ -13,7 +13,7 @@ entry:
   %4 = add nsw i32 %3, 1
   %5 = sitofp i32 %4 to float
   %6 = fsub float %1, %5
-  %7 = fadd float %0, %6
+  %7 = fadd float %6, %0
   ret float %7
 }
 

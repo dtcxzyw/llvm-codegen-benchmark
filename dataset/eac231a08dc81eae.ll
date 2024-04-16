@@ -10,7 +10,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = trunc i64 %1 to i32
   %6 = shl i32 %4, %5
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

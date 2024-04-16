@@ -4,6 +4,6 @@ func0000000000000010:                   # @func0000000000000010
 	and	a2, a2, a0
 	li	a0, 11
 	bnez	a2, .LBB0_2
-	andi	a0, a1, 255
+	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret

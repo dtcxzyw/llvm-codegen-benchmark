@@ -7,7 +7,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = shl nuw nsw i32 %4, 22
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = icmp ugt i16 %2, 63
   %4 = select i1 %3, i16 %1, i16 %2
   %5 = shl i16 %4, 7
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

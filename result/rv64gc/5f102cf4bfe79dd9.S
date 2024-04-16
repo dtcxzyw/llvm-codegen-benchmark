@@ -40,10 +40,10 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a3, a1, 1
 	li	a1, 1
 	bnez	a3, .LBB2_2
-	mv	a1, a2
+	sext.w	a2, a2
+	srai	a1, a2, 63
+	or	a1, a1, a2
 .LBB2_2:                                # %entry
 	addi	a0, a0, -1
 	and	a0, a0, a1
-	sraiw	a1, a0, 31
-	or	a0, a0, a1
 	ret

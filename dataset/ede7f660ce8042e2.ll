@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 

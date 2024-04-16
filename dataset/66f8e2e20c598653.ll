@@ -13,10 +13,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 2
-  %2 = and i64 %1, 1152921504606846972
-  %3 = icmp eq i64 %1, %2
-  ret i1 %3
+  %1 = and i64 %0, -4611686018427387892
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

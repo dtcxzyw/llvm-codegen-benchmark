@@ -7,11 +7,11 @@
 define i64 @func0000000000000062(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, -1
-  %6 = add nuw i64 %0, %1
-  %7 = and i64 %6, %5
-  ret i64 %7
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  %5 = add nuw i64 %0, %1
+  %6 = and i64 %5, %4
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -20,12 +20,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, -1
-  %6 = add i64 %0, %1
-  %7 = and i64 %6, %5
-  ret i64 %7
+  %3 = zext nneg i32 %2 to i64
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  %5 = add i64 %0, %1
+  %6 = and i64 %5, %4
+  ret i64 %6
 }
 
 ; 162 occurrences:
@@ -195,11 +195,11 @@ entry:
 define i64 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, -1
-  %6 = add nuw i64 %0, %1
-  %7 = and i64 %5, %6
-  ret i64 %7
+  %notmask = shl nsw i64 -1, %3
+  %4 = xor i64 %notmask, -1
+  %5 = add nuw i64 %0, %1
+  %6 = and i64 %5, %4
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

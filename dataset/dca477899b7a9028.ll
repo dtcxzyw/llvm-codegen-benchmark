@@ -15,7 +15,7 @@ define i64 @func0000000000000000(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

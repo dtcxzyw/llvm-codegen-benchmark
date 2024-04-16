@@ -11,12 +11,11 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  %7 = lshr exact i64 %6, 2
-  ret i64 %7
+  %3 = getelementptr inbounds %"class.asmjit::_abi_1_10::Operand.1560341", ptr %1, i64 %2, i32 0, i32 1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = lshr exact i64 %5, 2
+  ret i64 %6
 }
 
 ; 2 occurrences:

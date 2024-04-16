@@ -8,7 +8,7 @@
 define i8 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = srem i32 %3, 240
   %5 = trunc i32 %4 to i8
   ret i8 %5
@@ -20,9 +20,9 @@ entry:
 define i8 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = srem i32 %3, 8
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nsw i32 %4 to i8
   ret i8 %5
 }
 

@@ -9,7 +9,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = sitofp i32 %3 to float
   %5 = fdiv float %4, %1
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

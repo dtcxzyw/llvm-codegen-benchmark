@@ -132,10 +132,9 @@
 define i1 @func0000000000000001(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
-  %2 = lshr i32 %1, 13
-  %3 = and i32 %2, 1023
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = and i32 %1, 8380416
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -149,10 +148,9 @@ entry:
 define i1 @func0000000000000004(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
-  %2 = lshr i64 %1, 52
-  %3 = and i64 %2, 2047
-  %4 = icmp ult i64 %3, 1023
-  ret i1 %4
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp ult i64 %2, 4607182418800017408
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

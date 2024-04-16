@@ -12,7 +12,7 @@
 define { i64, i1 } @func0000000000000024(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
   %7 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %6)
@@ -125,9 +125,9 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 define { i64, i1 } @func0000000000000020(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   %7 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %6)
   ret { i64, i1 } %7
 }

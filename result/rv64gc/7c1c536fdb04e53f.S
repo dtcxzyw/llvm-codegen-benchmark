@@ -44,8 +44,8 @@ func00000000000001b1:                   # @func00000000000001b1
 	ret
 func00000000000001b4:                   # @func00000000000001b4
 	add	a0, a0, a1
-	srli	a0, a0, 32
-	sltiu	a0, a0, 128
+	srli	a0, a0, 39
+	seqz	a0, a0
 	ret
 func00000000000001b8:                   # @func00000000000001b8
 	add	a0, a0, a1

@@ -10,10 +10,10 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 8
 	bnez	a2, .LBB1_2
 	li	a0, 13
-	sub	a0, a0, a1
-.LBB1_2:                                # %entry
+	subw	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
+.LBB1_2:                                # %entry
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a0, 1

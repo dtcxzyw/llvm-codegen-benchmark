@@ -69,8 +69,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, 31
-  %2 = trunc i32 %1 to i8
+  %1 = trunc i32 %0 to i8
+  %2 = xor i8 %1, 31
   ret i8 %2
 }
 
@@ -83,8 +83,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = xor i64 %0, -1
-  %2 = trunc nuw i64 %1 to i8
+  %1 = trunc i64 %0 to i8
+  %2 = xor i8 %1, -1
   ret i8 %2
 }
 

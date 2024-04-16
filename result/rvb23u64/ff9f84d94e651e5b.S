@@ -6,14 +6,13 @@ func0000000000000015:                   # @func0000000000000015
 	xori	a0, a0, 1
 	ret
 func00000000000001d1:                   # @func00000000000001d1
-	addiw	a1, a1, 6
-	addi	a1, a1, -2
+	addi	a1, a1, 4
+	zext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000151:                   # @func0000000000000151
-	addiw	a1, a1, 1
-	addi	a1, a1, -1
+	zext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -23,8 +22,8 @@ func00000000000000d6:                   # @func00000000000000d6
 	slt	a0, a0, a1
 	ret
 func00000000000001d4:                   # @func00000000000001d4
-	addiw	a1, a1, 2
-	addi	a1, a1, -5
+	zext.w	a1, a1
+	addi	a1, a1, -3
 	sltu	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031

@@ -11,7 +11,7 @@ entry:
   %2 = sub i64 65, %1
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %3, 2
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

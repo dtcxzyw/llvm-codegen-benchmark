@@ -13,7 +13,7 @@ entry:
   %4 = mul nuw i128 %0, %1
   %5 = add nuw i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = mul i128 %0, %1
   %5 = add i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 
@@ -58,7 +58,7 @@ entry:
   %4 = mul nsw i128 %0, %1
   %5 = add i128 %4, %3
   %6 = lshr i128 %5, 64
-  %7 = trunc i128 %6 to i64
+  %7 = trunc nuw i128 %6 to i64
   ret i64 %7
 }
 

@@ -78,9 +78,8 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 536870911
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr inbounds %struct.Gia_Obj_t_.1771870, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.Gia_Obj_t_.1771870, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:

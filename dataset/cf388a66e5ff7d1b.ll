@@ -32,7 +32,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = and i32 %3, %1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -43,8 +43,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
-  %5 = icmp ugt i64 %0, %4
+  %4 = and i64 %3, %1
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -55,8 +55,8 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %1, %3
-  %5 = icmp ult i32 %0, %4
+  %4 = and i32 %3, %1
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -68,8 +68,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %1, %3
-  %5 = icmp ne i64 %0, %4
+  %4 = and i64 %3, %1
+  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 

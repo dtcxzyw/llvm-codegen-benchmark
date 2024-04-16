@@ -8,7 +8,7 @@ entry:
   %3 = or disjoint i8 %1, 32
   %4 = icmp ult i8 %2, 26
   %5 = select i1 %4, i8 %3, i8 %1
-  %6 = icmp sgt i8 %0, %5
+  %6 = icmp slt i8 %5, %0
   %7 = select i1 %6, i32 1, i32 -1
   ret i32 %7
 }
@@ -23,7 +23,7 @@ entry:
   %3 = or disjoint i8 %1, 32
   %4 = icmp ult i8 %2, 26
   %5 = select i1 %4, i8 %3, i8 %1
-  %6 = icmp ult i8 %0, %5
+  %6 = icmp ugt i8 %5, %0
   %7 = select i1 %6, i32 -1, i32 1
   ret i32 %7
 }

@@ -1,4 +1,5 @@
 func0000000000000011:                   # @func0000000000000011
+	sext.w	a0, a0
 	lui	a2, 768
 	and	a1, a1, a2
 	lui	a2, 256
@@ -6,7 +7,6 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a2, 512
 	xor	a0, a0, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
@@ -28,8 +28,9 @@ func000000000000004c:                   # @func000000000000004c
 	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	andi	a1, a1, 31
-	sltiu	a1, a1, 30
+	andi	a1, a1, 30
+	addi	a1, a1, -30
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -41,9 +42,8 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	andi	a1, a1, 2047
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	andi	a1, a1, 2046
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -66,10 +66,10 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000381:                   # @func0000000000000381
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	slli	a2, a2, 49
-	srli	a2, a2, 49
-	sltiu	a2, a2, 2
-	xori	a2, a2, 1
+	lui	a3, 8
+	addiw	a3, a3, -2
+	and	a2, a2, a3
+	snez	a2, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	and	a0, a0, a2
@@ -108,22 +108,23 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func0000000000000088:                   # @func0000000000000088
 	andi	a0, a0, 255
-	slli	a1, a1, 33
-	srli	a1, a1, 33
-	sltiu	a1, a1, 2
+	lui	a2, 524288
+	addiw	a2, a2, -2
+	and	a1, a1, a2
+	snez	a1, a1
 	sltiu	a0, a0, 2
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func0000000000000211:                   # @func0000000000000211
-	or	a0, a0, a1
 	sext.w	a0, a0
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, 3
-	sltiu	a1, a1, 2
-	not	a1, a1
+	srli	a1, a1, 1
 	li	a2, -1
 	slli	a2, a2, 63
 	xor	a0, a0, a2

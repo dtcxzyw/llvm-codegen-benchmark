@@ -19,7 +19,7 @@ define i1 @func0000000000000032(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %2, 0.000000e+00
   %4 = select i1 %3, float 0xFFFFFFFFE0000000, float %1
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   %6 = fcmp olt float %5, -1.270000e+02
   ret i1 %6
 }

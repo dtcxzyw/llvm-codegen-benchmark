@@ -122,10 +122,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = sub i64 0, %2
-  %4 = getelementptr inbounds %"struct.tbb::detail::d0::padded.1590091", ptr %0, i64 %3
-  ret ptr %4
+  %.neg = shl nsw i64 -1, %1
+  %2 = getelementptr inbounds %"struct.tbb::detail::d0::padded.1590091", ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

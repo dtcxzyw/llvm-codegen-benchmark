@@ -174,8 +174,9 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %0, %1
   %5 = lshr i64 %4, %3
-  %6 = udiv i64 %5, 10
-  %7 = mul nuw i64 %6, 10
+  %.fr = freeze i64 %5
+  %6 = urem i64 %.fr, 10
+  %7 = sub nuw i64 %.fr, %6
   ret i64 %7
 }
 

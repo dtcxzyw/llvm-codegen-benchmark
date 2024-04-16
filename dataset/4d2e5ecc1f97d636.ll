@@ -3648,10 +3648,10 @@
 define i1 @func0000000000000541(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 1152921504606846975, i64 %0
-  %7 = icmp eq i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp uge i64 %4, %1
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -3882,10 +3882,10 @@ entry:
 define i1 @func0000000000000441(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 1
-  %4 = add i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 4611686018427387903, i64 %0
-  %7 = icmp eq i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp uge i64 %4, %1
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -3895,10 +3895,10 @@ entry:
 define i1 @func0000000000000548(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
-  %4 = add nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 2305843009213693951, i64 %0
-  %7 = icmp ugt i64 %6, 768
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = icmp ugt i64 %0, 768
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -3912,10 +3912,10 @@ entry:
 define i1 @func000000000000054c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 576460752303423487, i64 %0
-  %7 = icmp ne i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = icmp ne i64 %0, 0
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 
@@ -3927,10 +3927,10 @@ entry:
 define i1 @func000000000000044c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add i64 %1, %3
-  %5 = icmp ult i64 %4, %3
-  %6 = select i1 %5, i64 576460752303423487, i64 %0
-  %7 = icmp ne i64 %6, 0
+  %4 = xor i64 %3, -1
+  %5 = icmp ult i64 %4, %1
+  %6 = icmp ne i64 %0, 0
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 

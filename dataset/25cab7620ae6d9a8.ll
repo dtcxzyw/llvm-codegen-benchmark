@@ -6,7 +6,7 @@
 define i1 @func00000000000001c1(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 6224
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp ne i8 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000181(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp ugt i64 %1, 65535
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000141(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 16
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp ult i64 %1, 16
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -47,7 +47,7 @@ entry:
 define i1 @func00000000000001a9(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 3
-  %4 = icmp uge ptr %0, %3
+  %4 = icmp ule ptr %3, %0
   %5 = icmp sgt i32 %1, 1048576
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000111(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -4
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp eq i32 %1, 1114112
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -86,7 +86,7 @@ entry:
 define i1 @func00000000000001cc(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   %5 = icmp ne i32 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -98,7 +98,7 @@ entry:
 define i1 @func0000000000000161(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 512
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp slt i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -110,7 +110,7 @@ entry:
 define i1 @func0000000000000118(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -1
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -122,7 +122,7 @@ entry:
 define i1 @func0000000000000081(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp ugt i64 %1, 4294967295
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -134,7 +134,7 @@ entry:
 define i1 @func0000000000000148(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 -8
-  %4 = icmp ugt ptr %0, %3
+  %4 = icmp ult ptr %3, %0
   %5 = icmp ult i64 %1, 3
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -146,7 +146,7 @@ entry:
 define i1 @func000000000000011c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 288
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   %5 = icmp eq i64 %1, 7
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -158,7 +158,7 @@ entry:
 define i1 @func0000000000000011(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp eq i64 %1, -9223372036854775808
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -170,7 +170,7 @@ entry:
 define i1 @func0000000000000119(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 136
-  %4 = icmp uge ptr %0, %3
+  %4 = icmp ule ptr %3, %0
   %5 = icmp eq i32 %1, 15
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -183,7 +183,7 @@ entry:
 define i1 @func000000000000008c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 6
-  %4 = icmp ne ptr %0, %3
+  %4 = icmp ne ptr %3, %0
   %5 = icmp ugt i32 %1, 1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -195,7 +195,7 @@ entry:
 define i1 @func00000000000001a1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = icmp sgt i64 %1, 2147483647
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

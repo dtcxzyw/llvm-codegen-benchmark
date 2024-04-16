@@ -9,7 +9,7 @@ entry:
   %2 = and i16 %1, 63
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = freeze i64 %5
   ret i64 %6
 }

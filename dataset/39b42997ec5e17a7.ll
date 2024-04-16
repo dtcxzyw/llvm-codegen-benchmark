@@ -38,10 +38,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, -4
+  %1 = and i16 %0, -1028
   %2 = or disjoint i16 %1, 1
-  %3 = and i16 %2, -1027
-  ret i16 %3
+  ret i16 %2
 }
 
 ; 1 occurrences:
@@ -49,10 +48,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -8193
-  %2 = or i32 %1, 256
-  %3 = and i32 %2, -4202561
-  ret i32 %3
+  %1 = and i32 %0, -4202817
+  %2 = or disjoint i32 %1, 256
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

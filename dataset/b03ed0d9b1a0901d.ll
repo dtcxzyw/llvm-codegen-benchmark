@@ -5,8 +5,8 @@
 define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %0
-  %3 = icmp sgt i64 %1, -1
-  %4 = select i1 %3, i64 %0, i64 %2
+  %3 = icmp slt i64 %1, 0
+  %4 = select i1 %3, i64 %2, i64 %0
   %5 = shl i64 %4, 32
   ret i64 %5
 }

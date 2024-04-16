@@ -21,7 +21,7 @@ entry:
   %3 = add nsw i128 %2, 1329227995784915854457062986570792960
   %4 = add nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 16
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   %7 = lshr i128 %6, 16
   ret i128 %7
 }

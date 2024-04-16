@@ -18,12 +18,11 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000014:                   # @func0000000000000014
 	and	a0, a0, a1
-	andi	a0, a0, 63
-	sltiu	a0, a0, 32
+	andi	a0, a0, 32
+	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
 	and	a0, a0, a1
-	andi	a0, a0, 63
-	sltiu	a0, a0, 32
-	xori	a0, a0, 1
+	slli	a0, a0, 58
+	srli	a0, a0, 63
 	ret

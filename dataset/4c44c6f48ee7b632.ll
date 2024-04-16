@@ -58,9 +58,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.iseq_inline_storage_entry.1553765, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %union.iseq_inline_storage_entry.1553765, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 87 occurrences:
@@ -156,9 +155,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %"struct.std::__1::pair.248.1560179", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.std::__1::pair.248.1560179", ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 87 occurrences:
@@ -267,9 +265,8 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %struct.ItemStack.1652996, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.ItemStack.1652996, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 14 occurrences:
@@ -344,9 +341,8 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr inbounds %struct.code.1771199, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.code.1771199, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 9 occurrences:
@@ -432,9 +428,8 @@ define ptr @func000000000000001d(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.JSVarDef.1908877, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %struct.JSVarDef.1908877, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -476,9 +471,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.lookahead_action.1923307, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %struct.lookahead_action.1923307, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -500,9 +494,8 @@ define ptr @func0000000000000011(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.code.2017295, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr %struct.code.2017295, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -527,9 +520,8 @@ define ptr @func000000000000000d(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.2210405", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.2210405", ptr %0, i64 %4, i32 0, i64 0, i32 0, i64 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

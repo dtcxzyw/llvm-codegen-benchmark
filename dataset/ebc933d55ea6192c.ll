@@ -10,7 +10,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 26, i32 27
   %5 = shl i32 %1, %4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 26, i32 27
   %5 = shl i32 %1, %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = icmp ugt i8 %2, 5
   %4 = select i1 %3, i64 32, i64 2
   %5 = shl nuw i64 %1, %4
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 26, i32 10
   %5 = shl nuw i32 %1, %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = icmp ugt i8 %2, -65
   %4 = select i1 %3, i32 1, i32 2
   %5 = shl nuw nsw i32 %1, %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

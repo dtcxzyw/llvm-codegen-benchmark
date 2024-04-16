@@ -7,7 +7,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = icmp uge i32 %0, %5
+  %6 = icmp ule i32 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }

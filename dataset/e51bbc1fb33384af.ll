@@ -8,7 +8,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub i64 %3, %1
   %5 = and i64 %4, -4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = add nuw nsw i8 %2, 7
   %4 = sub nuw nsw i8 %3, %1
   %5 = and i8 %4, 120
-  %6 = add nuw nsw i8 %0, %5
+  %6 = add nuw nsw i8 %5, %0
   ret i8 %6
 }
 
@@ -42,10 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func000000000000003b(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = add nuw nsw i128 %2, -170141183460469231731687303715884072960
-  %4 = sub nuw i128 %3, %1
+  %3 = add i128 %2, 32768
+  %4 = sub i128 %3, %1
   %5 = and i128 %4, 72057594037927935
-  %6 = add nuw nsw i128 %0, %5
+  %6 = add nuw nsw i128 %5, %0
   ret i128 %6
 }
 
@@ -72,7 +72,7 @@ entry:
   %3 = add nsw i64 %2, -63
   %4 = sub nsw i64 %3, %1
   %5 = and i64 %4, -64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

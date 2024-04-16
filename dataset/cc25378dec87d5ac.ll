@@ -121,10 +121,9 @@ entry:
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 23
-  %2 = and i32 %1, 255
+  %2 = and i32 %1, 254
   %3 = add nsw i32 %2, -150
-  %4 = and i32 %3, -2
-  ret i32 %4
+  ret i32 %3
 }
 
 ; 1 occurrences:

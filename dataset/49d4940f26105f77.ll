@@ -7,10 +7,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000025(i64 %0) #0 {
 entry:
-  %1 = udiv i64 %0, 24
-  %2 = mul nuw i64 %1, 24
-  %3 = icmp ule i64 %2, %0
-  ret i1 %3
+  ret i1 true
 }
 
 ; 2 occurrences:
@@ -19,10 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i64 %0) #0 {
 entry:
-  %1 = udiv i64 %0, 3
-  %2 = mul nuw i64 %1, 3
-  %3 = icmp eq i64 %2, %0
-  ret i1 %3
+  %.fr = freeze i64 %0
+  %1 = urem i64 %.fr, 3
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -32,10 +29,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i32 %0) #0 {
 entry:
-  %1 = udiv i32 %0, 65519
-  %2 = mul nuw i32 %1, 65519
-  %3 = icmp ne i32 %2, %0
-  ret i1 %3
+  %.fr = freeze i32 %0
+  %1 = urem i32 %.fr, 65519
+  %2 = icmp ne i32 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

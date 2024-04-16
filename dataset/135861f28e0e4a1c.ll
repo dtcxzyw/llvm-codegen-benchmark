@@ -524,8 +524,8 @@ define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8070450532247928833
   %3 = icmp eq i64 %2, 0
-  %4 = and i32 %0, 255
-  %5 = icmp ugt i32 %4, 63
+  %4 = and i32 %0, 192
+  %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }
@@ -535,10 +535,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 63
-  %3 = icmp ugt i32 %2, 59
-  %4 = and i32 %0, 62
-  %5 = icmp ugt i32 %4, 59
+  %2 = and i32 %1, 60
+  %3 = icmp eq i32 %2, 60
+  %4 = and i32 %0, 60
+  %5 = icmp eq i32 %4, 60
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

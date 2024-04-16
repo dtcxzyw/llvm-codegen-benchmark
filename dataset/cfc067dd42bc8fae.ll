@@ -19,7 +19,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i8
-  %6 = icmp ugt i8 %0, %5
+  %6 = icmp ult i8 %5, %0
   ret i1 %6
 }
 
@@ -41,8 +41,8 @@ define i1 @func0000000000000184(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = zext i1 %4 to i8
-  %6 = icmp ult i8 %0, %5
+  %5 = icmp eq i8 %0, 0
+  %6 = and i1 %5, %4
   ret i1 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i8
-  %6 = icmp eq i8 %0, %5
+  %6 = icmp eq i8 %5, %0
   ret i1 %6
 }
 

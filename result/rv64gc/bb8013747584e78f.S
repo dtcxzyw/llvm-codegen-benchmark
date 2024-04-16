@@ -1,8 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	fmv.d.x	fa0, zero
-.LBB0_2:                                # %entry
-	fmv.x.d	a0, fa0
-	srli	a0, a0, 32
+	fmv.x.d	a1, fa0
+	srli	a1, a1, 32
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret

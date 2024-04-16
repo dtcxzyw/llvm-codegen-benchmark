@@ -186,10 +186,10 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
-  %2 = mul i128 %1, 100
-  %3 = freeze i128 %0
-  %4 = sub i128 %3, %2
-  ret i128 %4
+  %.neg = mul i128 %1, -100
+  %2 = freeze i128 %0
+  %3 = add i128 %.neg, %2
+  ret i128 %3
 }
 
 attributes #0 = { nounwind }

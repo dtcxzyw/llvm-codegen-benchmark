@@ -10,11 +10,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, -55
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = and i8 %0, 1
+  %2 = icmp eq i8 %1, 0
+  ret i1 %2
 }
 
 ; 6 occurrences:
@@ -27,11 +25,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 31
-  %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %1 = and i8 %0, 1
+  %2 = icmp ne i8 %1, 0
+  ret i1 %2
 }
 
 ; 34 occurrences:
@@ -72,11 +68,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 31
-  %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %2, 8
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %1 = and i8 %0, 8
+  %2 = icmp eq i8 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -85,11 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, -33
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 64
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %1 = and i8 %0, 64
+  %2 = icmp ne i8 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -98,11 +90,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, -33
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 31
-  %4 = icmp ult i32 %3, 3
-  ret i1 %4
+  %1 = and i8 %0, 31
+  %2 = icmp ult i8 %1, 3
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

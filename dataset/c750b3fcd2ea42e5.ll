@@ -13,8 +13,8 @@ entry:
   %2 = shl nuw nsw i32 2, %1
   %3 = sub i32 %2, %0
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 true), !range !0
-  %5 = sub nuw nsw i32 32, %4
-  %6 = trunc i32 %5 to i8
+  %5 = trunc nuw nsw i32 %4 to i8
+  %6 = sub nuw nsw i8 32, %5
   ret i8 %6
 }
 

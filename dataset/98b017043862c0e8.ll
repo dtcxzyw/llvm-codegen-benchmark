@@ -5,10 +5,9 @@
 define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 7
-  %4 = and i32 %3, -8
-  %5 = select i1 %0, i32 %4, i32 %1
-  %6 = icmp ult i32 %5, 40
-  ret i1 %6
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp ult i32 %4, 40
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -30,7 +29,7 @@ entry:
 define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 55232
-  %4 = and i32 %3, 65535
+  %4 = and i32 %3, 65280
   %5 = select i1 %0, i32 %4, i32 %1
   %6 = icmp ugt i32 %5, 767
   ret i1 %6
@@ -41,7 +40,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -2
+  %3 = add i64 %2, 62
   %4 = and i64 %3, 63
   %5 = select i1 %0, i64 %4, i64 %1
   %6 = icmp ne i64 %5, 0

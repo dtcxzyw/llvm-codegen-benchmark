@@ -7,7 +7,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %1, 86400
   %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = mul i64 %1, 1000000
   %5 = add i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

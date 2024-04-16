@@ -20,9 +20,10 @@ func000000000000002b:                   # @func000000000000002b
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a2
-	slti	a2, a2, 5
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	li	a3, 4
+	blt	a3, a2, .LBB2_2
+	li	a1, 4
+.LBB2_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 3
 	ret

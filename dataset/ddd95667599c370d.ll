@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = shl nuw nsw i32 %3, 2
-  %5 = zext nneg i32 %4 to i64
+  %3 = shl nuw nsw i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 4, i64 %4
   %6 = getelementptr inbounds i64, ptr %0, i64 %5
   ret ptr %6
 }
@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 268435455, i32 %2
-  %4 = shl i32 %3, 4
-  %5 = zext i32 %4 to i64
+  %3 = shl i32 %2, 4
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %1, i64 4294967280, i64 %4
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -31,9 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = shl nsw i32 %3, 2
-  %5 = zext nneg i32 %4 to i64
+  %3 = shl nsw i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr inbounds %struct.ImVec2.1931752, ptr %0, i64 %5
   ret ptr %6
 }

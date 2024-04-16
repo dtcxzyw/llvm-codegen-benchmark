@@ -66,10 +66,10 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func000000000000007a:                   # @func000000000000007a
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -80,10 +80,10 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func0000000000000020:                   # @func0000000000000020
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -94,10 +94,10 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func000000000000003a:                   # @func000000000000003a
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -108,10 +108,10 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func0000000000000032:                   # @func0000000000000032
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a1, a1, a0
@@ -124,10 +124,10 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func0000000000000075:                   # @func0000000000000075
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -138,10 +138,10 @@ func0000000000000075:                   # @func0000000000000075
 	ret
 func0000000000000072:                   # @func0000000000000072
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -153,10 +153,10 @@ func0000000000000072:                   # @func0000000000000072
 	ret
 func0000000000000028:                   # @func0000000000000028
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
+	mul	a2, a2, a4
 	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a1, a1, a0

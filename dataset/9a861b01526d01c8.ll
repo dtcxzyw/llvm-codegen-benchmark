@@ -13,7 +13,7 @@ entry:
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds %struct.Gia_Obj_t_.1771977, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

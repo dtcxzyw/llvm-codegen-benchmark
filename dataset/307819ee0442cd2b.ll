@@ -182,7 +182,7 @@ define i32 @func0000000000000040(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = add i128 %0, %4
+  %5 = add i128 %4, %0
   %6 = trunc i128 %5 to i32
   ret i32 %6
 }
@@ -197,10 +197,9 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -209,10 +208,9 @@ entry:
 define i32 @func000000000000004c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -221,10 +219,9 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

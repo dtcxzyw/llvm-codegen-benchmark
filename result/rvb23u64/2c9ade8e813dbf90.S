@@ -36,10 +36,10 @@ func0000000000000017:                   # @func0000000000000017
 	ret
 func00000000000000cf:                   # @func00000000000000cf
 	zext.h	a1, a1
-	li	a2, 4
-	czero.nez	a1, a2, a1
+	li	a2, -4
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 43
+	addi	a0, a0, 47
 	ret
 func0000000000000065:                   # @func0000000000000065
 	sext.b	a1, a1

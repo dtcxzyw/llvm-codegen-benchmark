@@ -37,7 +37,7 @@ func0000000000000011:                   # @func0000000000000011
 	li	a3, 1530
 	li	a1, 3
 	bltu	a2, a3, .LBB3_2
-	li	a1, -9
+	li	a1, 247
 .LBB3_2:                                # %entry
 	add	a0, a0, a1
 	andi	a0, a0, 255
@@ -45,9 +45,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a1, a1
 	addi	a1, a1, -1
-	seqz	a1, a1
-	not	a1, a1
-	add	a0, a0, a1
+	snez	a1, a1
+	xor	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 func0000000000000018:                   # @func0000000000000018

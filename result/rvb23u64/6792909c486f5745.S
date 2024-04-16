@@ -1,6 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	add.uw	a0, a1, a0
+	zext.w	a1, a1
 	addi	a0, a0, -1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
@@ -64,8 +66,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
-	addw	a0, a0, a1
-	addi	a0, a0, -48
+	addiw	a0, a0, -48
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000106:                   # @func0000000000000106
@@ -132,8 +135,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000051:                   # @func0000000000000051
 	andi	a1, a1, 255
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
@@ -176,7 +180,8 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000151:                   # @func0000000000000151
 	sext.w	a1, a1
-	add	a0, a0, a1
 	addi	a0, a0, -24
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

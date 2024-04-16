@@ -7,7 +7,7 @@ entry:
   %2 = freeze i16 %1
   %3 = lshr i16 %2, 6
   %4 = and i16 %3, 7
-  %5 = add nsw i16 %0, %4
+  %5 = add nsw i16 %4, %0
   ret i16 %5
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = freeze i64 %1
   %3 = lshr i64 %2, 12
   %4 = and i64 %3, 4294967295
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

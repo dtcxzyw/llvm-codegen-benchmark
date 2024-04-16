@@ -7,9 +7,9 @@
 define i32 @func0000000000000048(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = lshr i64 %1, 32
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   %7 = tail call i32 @llvm.smin.i32(i32 %6, i32 %4)
   ret i32 %7
 }

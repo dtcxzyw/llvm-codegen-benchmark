@@ -62,8 +62,8 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a1
 	sext.w	a0, a0
-	snez	a0, a0
-	xori	a0, a0, 11
+	seqz	a0, a0
+	addi	a0, a0, 10
 	ret
 func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a1

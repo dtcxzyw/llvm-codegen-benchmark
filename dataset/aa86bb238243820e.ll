@@ -52,8 +52,8 @@
 define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = sub nsw i64 %0, %1
-  %5 = sub nsw i64 %4, %3
+  %4 = add i64 %3, %1
+  %5 = sub i64 %0, %4
   %6 = sdiv i64 %5, 2
   ret i64 %6
 }

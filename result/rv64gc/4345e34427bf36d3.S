@@ -1,8 +1,7 @@
 func0000000000000084:                   # @func0000000000000084
-	li	a3, 1
-	sllw	a2, a3, a2
 	subw	a0, a0, a1
-	sltu	a0, a0, a2
+	srlw	a0, a0, a2
+	seqz	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
 	li	a3, 2
@@ -42,8 +41,7 @@ func0000000000000086:                   # @func0000000000000086
 	slt	a0, a0, a2
 	ret
 func0000000000000094:                   # @func0000000000000094
-	li	a3, 1
-	sllw	a2, a3, a2
 	subw	a0, a0, a1
-	sltu	a0, a0, a2
+	srlw	a0, a0, a2
+	seqz	a0, a0
 	ret

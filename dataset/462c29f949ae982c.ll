@@ -44,7 +44,7 @@
 define ptr @func0000000000000009(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds %"class.rocksdb::clock_cache::ClockCacheShard.1583124", ptr %0, i64 %5, i32 2
   ret ptr %6
@@ -59,7 +59,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds %struct.code.1771765, ptr %0, i64 %5, i32 1
   ret ptr %6
@@ -85,7 +85,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr %struct.i915_oa_format.1999026, ptr %0, i64 %5, i32 2
   ret ptr %6
@@ -97,7 +97,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds %"class.lp::ext_var_info.2086051", ptr %0, i64 %5, i32 1
   ret ptr %6

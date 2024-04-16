@@ -11,7 +11,7 @@
 define i1 @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %1, %3
+  %4 = fadd float %3, %1
   %5 = fdiv float %4, %0
   %6 = fcmp ogt float %5, 0x3FEFFFFFE0000000
   ret i1 %6

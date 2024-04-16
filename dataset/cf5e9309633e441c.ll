@@ -15,8 +15,8 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 4, i64 5
-  %6 = add nsw i64 %1, %5
-  %7 = getelementptr inbounds %"class.std::__1::basic_string.1558600", ptr %0, i64 %6
+  %6 = getelementptr %"class.std::__1::basic_string.1558600", ptr %0, i64 %5
+  %7 = getelementptr %"class.std::__1::basic_string.1558600", ptr %6, i64 %1
   ret ptr %7
 }
 
@@ -28,8 +28,8 @@ entry:
   %3 = and i32 %2, 16384
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 9, i64 12
-  %6 = add i64 %1, %5
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }
 

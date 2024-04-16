@@ -30,7 +30,7 @@
 define i16 @func0000000000000005(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i16
-  %4 = or i16 %0, %3
+  %4 = or i16 %3, %0
   %5 = or disjoint i16 %1, 31744
   %6 = or disjoint i16 %4, %5
   ret i16 %6

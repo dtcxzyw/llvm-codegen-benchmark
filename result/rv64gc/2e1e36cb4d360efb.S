@@ -6,10 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -8
 	ret
 func0000000000000075:                   # @func0000000000000075
-	addi	a1, a1, 1
-	not	a1, a1
-	ori	a1, a1, -256
-	addw	a0, a0, a1
+	li	a2, -2
+	subw	a2, a2, a1
+	slli	a2, a2, 56
+	srai	a2, a2, 56
+	addw	a0, a0, a2
 	ret
 func0000000000000070:                   # @func0000000000000070
 	addi	a1, a1, 4
@@ -49,7 +50,6 @@ func0000000000000072:                   # @func0000000000000072
 	addi	a0, a0, 1935
 	ret
 func0000000000000030:                   # @func0000000000000030
-	addiw	a1, a1, -1
-	not	a1, a1
+	negw	a1, a1
 	add	a0, a0, a1
 	ret

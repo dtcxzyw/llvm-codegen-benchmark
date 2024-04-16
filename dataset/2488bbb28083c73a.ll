@@ -179,10 +179,10 @@ entry:
 define i32 @func0000000000000039(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 32
-  %3 = icmp ne i32 %1, -1
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = or disjoint i32 %4, 32768
-  ret i32 %5
+  %.not = icmp eq i32 %1, -1
+  %3 = select i1 %.not, i32 %2, i32 %0
+  %4 = or disjoint i32 %3, 32768
+  ret i32 %4
 }
 
 ; 11 occurrences:
@@ -229,10 +229,10 @@ entry:
 define i32 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 524288
-  %3 = icmp ne i8 %1, 0
-  %4 = select i1 %3, i32 %0, i32 %2
-  %5 = or i32 %4, 1048576
-  ret i32 %5
+  %.not = icmp eq i8 %1, 0
+  %3 = select i1 %.not, i32 %2, i32 %0
+  %4 = or i32 %3, 1048576
+  ret i32 %4
 }
 
 ; 1 occurrences:

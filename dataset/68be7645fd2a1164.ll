@@ -9,9 +9,8 @@ define i8 @func0000000000000001(i8 %0) #0 {
 entry:
   %1 = shl i8 %0, 3
   %2 = and i8 %1, 8
-  %3 = xor i8 %2, 8
-  %4 = or disjoint i8 %3, 32
-  ret i8 %4
+  %3 = xor i8 %2, 40
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

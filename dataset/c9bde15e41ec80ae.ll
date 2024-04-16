@@ -6,8 +6,8 @@
 define i1 @func0000000000000024(double %0) #0 {
 entry:
   %1 = fcmp olt double %0, 1.000000e-03
-  %2 = select i1 %1, double 0x3F50624DE0000000, double %0
-  %3 = fmul double %2, -5.100000e-01
+  %2 = fmul double %0, -5.100000e-01
+  %3 = select i1 %1, double 0xBF40B630B6666666, double %2
   %4 = fcmp ogt double %3, -6.000000e+01
   ret i1 %4
 }
@@ -19,8 +19,8 @@ entry:
 define i1 @func0000000000000022(double %0) #0 {
 entry:
   %1 = fcmp olt double %0, 1.000000e-03
-  %2 = select i1 %1, double 0x3F50624DE0000000, double %0
-  %3 = fmul double %2, 5.100000e-01
+  %2 = fmul double %0, 5.100000e-01
+  %3 = select i1 %1, double 0x3F40B630B6666666, double %2
   %4 = fcmp olt double %3, 6.000000e+01
   ret i1 %4
 }

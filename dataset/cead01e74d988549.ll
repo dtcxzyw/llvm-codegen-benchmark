@@ -13,7 +13,7 @@ entry:
   %2 = fadd float %1, 1.000000e+00
   %3 = fdiv float 1.000000e+00, %2
   %4 = sitofp i32 %0 to float
-  %5 = fmul float %4, %3
+  %5 = fmul float %3, %4
   ret float %5
 }
 

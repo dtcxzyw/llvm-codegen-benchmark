@@ -16,11 +16,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = add i32 %1, -1
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = sext i32 %5 to i64
-  ret i64 %6
+  %.v = select i1 %0, i32 %1, i32 %2
+  %3 = add i32 %.v, -1
+  %4 = sext i32 %3 to i64
+  ret i64 %4
 }
 
 ; 3 occurrences:
@@ -30,11 +29,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = add nsw i32 %1, -1
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = sext i32 %5 to i64
-  ret i64 %6
+  %.v = select i1 %0, i32 %1, i32 %2
+  %3 = add i32 %.v, -1
+  %4 = sext i32 %3 to i64
+  ret i64 %4
 }
 
 ; 1 occurrences:

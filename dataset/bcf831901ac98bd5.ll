@@ -29,11 +29,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %0, %1
-  %5 = mul i64 %4, %3
-  %6 = and i64 %5, 4294967295
-  ret i64 %6
+  %3 = mul nuw i64 %0, %1
+  %.tr = trunc i64 %3 to i32
+  %.narrow = mul i32 %.tr, %2
+  %4 = zext i32 %.narrow to i64
+  ret i64 %4
 }
 
 ; 1 occurrences:

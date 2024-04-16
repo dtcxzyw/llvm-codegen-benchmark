@@ -36,8 +36,8 @@ define i64 @func0000000000000094(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %0, -1
-  %5 = add nsw i64 %4, %3
+  %4 = add i64 %0, 4294967295
+  %5 = add i64 %4, %3
   %6 = shl i64 %5, 32
   ret i64 %6
 }

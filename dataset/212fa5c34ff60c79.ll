@@ -19,9 +19,9 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext i16 %1 to i32
   %5 = shl i32 %4, %3
-  %6 = shl nuw i32 1, %0
-  %7 = sub i32 %5, %6
-  ret i32 %7
+  %.neg = shl nsw i32 -1, %0
+  %6 = add i32 %.neg, %5
+  ret i32 %6
 }
 
 ; 3 occurrences:
@@ -34,9 +34,9 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext i16 %1 to i32
   %5 = shl i32 %4, %3
-  %6 = shl nuw nsw i32 1, %0
-  %7 = sub i32 %5, %6
-  ret i32 %7
+  %.neg = shl nsw i32 -1, %0
+  %6 = add i32 %.neg, %5
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

@@ -339,11 +339,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %0, %1
-  %5 = add i64 %4, %3
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %.neg = sdiv exact i64 %2, -24
+  %3 = add i64 %0, %1
+  %4 = icmp eq i64 %3, %.neg
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -404,8 +403,8 @@ define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv exact i64 %0, 24
-  %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %5, 0
+  %5 = sub i64 0, %3
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 

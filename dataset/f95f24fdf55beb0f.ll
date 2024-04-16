@@ -7,7 +7,7 @@ entry:
   %2 = add i32 %1, -16
   %3 = ashr i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = add nsw i32 %1, 1
   %3 = ashr i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

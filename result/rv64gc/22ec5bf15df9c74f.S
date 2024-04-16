@@ -15,8 +15,8 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 .LBB1_2:
-	ori	a0, a2, 256
-	lui	a1, 1048574
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	lui	a0, 1048574
+	addiw	a0, a0, -257
+	and	a0, a0, a2
+	addi	a0, a0, 256
 	ret

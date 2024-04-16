@@ -66,10 +66,11 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
+	sext.w	a0, a0
 	andi	a2, a2, 255
 	or	a1, a1, a2
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sext.w	a1, a1
+	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func0000000000000056:                   # @func0000000000000056

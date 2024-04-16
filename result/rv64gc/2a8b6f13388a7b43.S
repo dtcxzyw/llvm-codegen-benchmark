@@ -1,54 +1,38 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a1, a1, 1
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	sext.w	a1, a1
-	seqz	a1, a1
+	sext.w	a2, a2
+	seqz	a2, a2
+	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a1, a1, 1
-	addi	a1, a1, -1
+	snez	a2, a2
+	not	a1, a1
 	and	a1, a1, a2
-	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a1, 1
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	sext.w	a1, a1
-	sltiu	a1, a1, 6
+	sext.w	a2, a2
+	sltiu	a2, a2, 6
+	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a3, a1, 1
-	li	a1, 2
-	bnez	a3, .LBB3_2
-	mv	a1, a2
-.LBB3_2:                                # %entry
-	sltiu	a1, a1, 9
-	xori	a1, a1, 1
+	sltiu	a2, a2, 9
+	xori	a2, a2, 1
+	not	a1, a1
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
-	andi	a3, a1, 1
-	li	a1, -1074
-	bnez	a3, .LBB4_2
-	mv	a1, a2
-.LBB4_2:                                # %entry
-	sext.w	a1, a1
-	slti	a1, a1, 21
+	sext.w	a2, a2
+	slti	a2, a2, 21
+	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a3, a1, 1
-	li	a1, 7
-	bnez	a3, .LBB5_2
-	mv	a1, a2
-.LBB5_2:                                # %entry
-	sext.w	a1, a1
-	slti	a1, a1, 5
-	xori	a1, a1, 1
+	sext.w	a2, a2
+	slti	a2, a2, 5
+	xori	a2, a2, 1
+	or	a1, a1, a2
 	and	a0, a0, a1
 	ret

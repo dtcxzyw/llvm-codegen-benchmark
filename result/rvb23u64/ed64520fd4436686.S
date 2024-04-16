@@ -12,25 +12,19 @@ func0000000000000004:                   # @func0000000000000004
 	fmul.d	fa0, fa4, fa5
 	ret
 .LCPI1_0:
-	.word	0x3dcccccd                      # float 0.100000001
+	.word	0x3d4ccccd                      # float 0.0500000007
 func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
-	beqz	a0, .LBB1_3
+	bnez	a0, .LBB1_2
+	fmv.s	fa0, fa1
+.LBB1_2:                                # %entry
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa0, fa5
-	bnez	a0, .LBB1_4
-.LBB1_2:                                # %entry
-	fli.s	fa5, 0.5
-	fmul.s	fa0, fa0, fa5
-	ret
-.LBB1_3:                                # %entry
-	fmv.s	fa0, fa1
-	fmv.w.x	fa5, zero
-	fle.s	a0, fa1, fa5
-	beqz	a0, .LBB1_2
-.LBB1_4:                                # %entry
+	beqz	a0, .LBB1_4
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa0, %lo(.LCPI1_0)(a0)
+	ret
+.LBB1_4:
 	fli.s	fa5, 0.5
 	fmul.s	fa0, fa0, fa5
 	ret

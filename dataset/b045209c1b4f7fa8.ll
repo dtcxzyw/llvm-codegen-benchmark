@@ -31,7 +31,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -256
-  %3 = or i64 %0, %2
+  %3 = or i64 %2, %0
   %4 = or i64 %3, 4
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5

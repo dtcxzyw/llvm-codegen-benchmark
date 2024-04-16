@@ -7,7 +7,7 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 5
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = shl i64 %2, 30
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

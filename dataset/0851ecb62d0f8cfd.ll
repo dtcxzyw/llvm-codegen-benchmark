@@ -12,8 +12,8 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = add i64 %6, -1
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

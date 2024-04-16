@@ -17,7 +17,7 @@ entry:
   %2 = and i64 %1, 1
   %3 = and i64 %1, 2147483647
   %4 = sub nsw i64 %3, %2
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -102,7 +102,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = and i64 %1, 4294967295
   %4 = sub nuw nsw i64 %3, %2
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -114,7 +114,7 @@ entry:
   %2 = and i32 %1, 6
   %3 = and i32 %1, -2
   %4 = sub i32 %3, %2
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

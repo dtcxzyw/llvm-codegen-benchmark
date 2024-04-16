@@ -339,9 +339,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = getelementptr i32, ptr %0, i64 %2
-  ret ptr %3
+  %2 = getelementptr i8, ptr %0, i64 %1
+  ret ptr %2
 }
 
 ; 2449 occurrences:

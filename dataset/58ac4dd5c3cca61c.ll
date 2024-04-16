@@ -9,7 +9,7 @@
 define i1 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i64
-  %2 = sub nsw i64 16, %1
+  %2 = add nsw i64 %1, 14
   %3 = icmp ult i64 %2, 31
   ret i1 %3
 }

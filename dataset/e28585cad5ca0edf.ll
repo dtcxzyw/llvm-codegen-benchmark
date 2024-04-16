@@ -8,8 +8,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = udiv i32 %0, 10000
-  %2 = mul nuw i32 %1, 10000
+  %.fr = freeze i32 %0
+  %1 = urem i32 %.fr, 10000
+  %2 = sub nuw i32 %.fr, %1
   %3 = zext i32 %2 to i64
   ret i64 %3
 }
@@ -21,8 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {
 entry:
-  %1 = udiv i16 %0, 27
-  %2 = mul nuw nsw i16 %1, 27
+  %.fr = freeze i16 %0
+  %1 = urem i16 %.fr, 27
+  %2 = sub nuw i16 %.fr, %1
   %3 = zext nneg i16 %2 to i32
   ret i32 %3
 }

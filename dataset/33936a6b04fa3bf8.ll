@@ -10,9 +10,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 65536
-  %3 = select i1 %0, i32 %2, i32 %1
-  %4 = lshr i32 %3, 16
+  %2 = lshr i32 %1, 16
+  %3 = zext i1 %0 to i32
+  %4 = xor i32 %2, %3
   ret i32 %4
 }
 

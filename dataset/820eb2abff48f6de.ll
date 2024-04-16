@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 31
-  %3 = shl nuw nsw i32 %2, 8
+  %2 = shl i32 %1, 8
+  %3 = xor i32 %2, 7936
   %4 = add nuw nsw i32 %3, 4096
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5

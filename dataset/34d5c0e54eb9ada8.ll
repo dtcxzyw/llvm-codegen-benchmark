@@ -28,7 +28,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = sitofp i32 %3 to double
   %5 = fdiv double %1, %4
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

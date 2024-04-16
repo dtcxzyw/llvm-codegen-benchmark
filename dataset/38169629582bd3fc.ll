@@ -248,8 +248,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 4
+  %3 = and i64 %2, 4294967292
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -504,8 +504,8 @@ entry:
 define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = trunc i32 %2 to i16
-  %4 = icmp ult i16 %3, 2
+  %3 = and i32 %2, 65534
+  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
@@ -608,8 +608,8 @@ entry:
 define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = trunc i32 %2 to i8
-  %4 = icmp ugt i8 %3, 1
+  %3 = and i32 %2, 254
+  %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
@@ -624,8 +624,8 @@ entry:
 define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

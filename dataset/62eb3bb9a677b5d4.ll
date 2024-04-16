@@ -13,9 +13,8 @@ entry:
   %2 = lshr i64 %1, 10
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 31
-  %5 = sub nsw i8 %4, %0
-  %6 = icmp slt i8 %5, 0
-  ret i1 %6
+  %5 = icmp slt i8 %4, %0
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -59,9 +58,8 @@ entry:
   %2 = lshr i64 %1, 10
   %3 = trunc i64 %2 to i8
   %4 = and i8 %3, 31
-  %5 = sub nsw i8 %4, %0
-  %6 = icmp eq i8 %5, 0
-  ret i1 %6
+  %5 = icmp eq i8 %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -71,11 +69,10 @@ entry:
 define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 16777215
-  %5 = sub nsw i32 %4, %0
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i32 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -11,7 +11,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = shl nsw i32 %3, 6
   %5 = sext i16 %1 to i32
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }

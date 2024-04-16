@@ -21,9 +21,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw i64 %3, 32
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw i64 %2, 32
+  %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -116,9 +116,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 2
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -171,9 +171,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 4, i32 %1
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = select i1 %0, i64 32, i64 %3
   ret i64 %4
 }
 
@@ -182,9 +182,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 105, i32 %1
-  %3 = zext i32 %2 to i64
-  %4 = shl i64 %3, 56
+  %2 = zext i32 %1 to i64
+  %3 = shl i64 %2, 56
+  %4 = select i1 %0, i64 7566047373982433280, i64 %3
   ret i64 %4
 }
 

@@ -76,9 +76,8 @@ define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.scatterlist.1993498, ptr %3, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.scatterlist.1993498, ptr %3, i64 %0, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

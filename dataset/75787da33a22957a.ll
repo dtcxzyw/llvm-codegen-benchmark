@@ -16,9 +16,9 @@
 define i32 @func000000000000007d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %0, %3
-  %5 = shl nuw nsw i32 %4, 7
+  %3 = shl nuw nsw i32 %2, 23
+  %4 = shl i32 %0, 7
+  %5 = or i32 %3, %4
   %6 = add nsw i32 %5, -127
   ret i32 %6
 }
@@ -30,9 +30,9 @@ entry:
 define i64 @func000000000000007f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %0
-  %5 = shl nuw nsw i64 %4, 1
+  %3 = shl nuw nsw i64 %2, 9
+  %4 = shl i64 %0, 1
+  %5 = or i64 %3, %4
   %6 = add nuw nsw i64 %5, 8589934590
   ret i64 %6
 }

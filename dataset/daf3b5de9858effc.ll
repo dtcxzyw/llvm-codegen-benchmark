@@ -8,8 +8,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = mul i64 %3, 4398
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %6 = trunc nuw i64 %5 to i32
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

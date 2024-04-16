@@ -75,9 +75,8 @@ func00000000000003cc:                   # @func00000000000003cc
 	and	a0, a0, a2
 	ret
 func0000000000000081:                   # @func0000000000000081
-	addi	a2, a2, -1
-	sltiu	a2, a2, 2
-	xori	a2, a2, 1
+	addi	a2, a2, -3
+	sltiu	a2, a2, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	and	a0, a0, a2
@@ -110,9 +109,10 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a2
 	ret
 func0000000000000084:                   # @func0000000000000084
-	addiw	a2, a2, -16
-	sltiu	a2, a2, 16
-	xori	a2, a2, 1
+	andi	a2, a2, -16
+	sext.w	a2, a2
+	addi	a2, a2, -16
+	snez	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

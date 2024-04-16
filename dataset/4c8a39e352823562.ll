@@ -21,7 +21,7 @@ entry:
   %1 = zext nneg i32 %0 to i128
   %2 = shl nuw i128 1, %1
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   ret i64 %4
 }
 
@@ -34,7 +34,7 @@ entry:
   %1 = zext nneg i32 %0 to i128
   %2 = shl i128 40795, %1
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   ret i64 %4
 }
 
@@ -46,7 +46,7 @@ entry:
   %1 = zext nneg i32 %0 to i128
   %2 = shl nsw i128 -1, %1
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   ret i64 %4
 }
 

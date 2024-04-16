@@ -16,7 +16,7 @@
 define double @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = bitcast i64 %3 to double
   ret double %4
 }

@@ -6,9 +6,9 @@
 define i1 @func0000000000000005(double %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = uitofp i64 %4 to double
-  %6 = fcmp ugt double %0, %5
+  %6 = fcmp ult double %5, %0
   ret i1 %6
 }
 
@@ -20,9 +20,9 @@ entry:
 define i1 @func0000000000000083(double %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = uitofp i64 %4 to double
-  %6 = fcmp ult double %0, %5
+  %6 = fcmp ugt double %5, %0
   ret i1 %6
 }
 
@@ -34,9 +34,9 @@ entry:
 define i1 @func0000000000000002(double %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = uitofp i64 %4 to double
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 

@@ -8,9 +8,9 @@
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, 0.000000e+00
-  %4 = select i1 %3, double 1.000000e+00, double -1.000000e+00
-  %5 = fsub double %0, %1
-  %6 = fmul double %4, %5
+  %4 = fsub double %0, %1
+  %5 = fneg double %4
+  %6 = select i1 %3, double %4, double %5
   ret double %6
 }
 

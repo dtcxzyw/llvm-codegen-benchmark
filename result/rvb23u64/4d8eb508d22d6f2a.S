@@ -1,11 +1,11 @@
 func00000000000000cf:                   # @func00000000000000cf
 	sext.w	a2, a2
 	addi	a2, a2, -1
-	snez	a2, a2
+	seqz	a2, a2
+	xori	a2, a2, 5
 	slliw	a1, a1, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
-	ori	a0, a0, 4
 	ret
 func000000000000004e:                   # @func000000000000004e
 	andi	a2, a2, 255

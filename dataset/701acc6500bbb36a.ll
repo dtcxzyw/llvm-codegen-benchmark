@@ -57,7 +57,7 @@ entry:
 define i16 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = trunc i32 %3 to i16
   %5 = and i16 %4, 127
   ret i16 %5
@@ -70,7 +70,7 @@ entry:
 define i16 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = trunc nuw i64 %3 to i16
   %5 = and i16 %4, -256
   ret i16 %5
@@ -84,7 +84,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = trunc i32 %3 to i16
   %5 = and i16 %4, 1023
   ret i16 %5

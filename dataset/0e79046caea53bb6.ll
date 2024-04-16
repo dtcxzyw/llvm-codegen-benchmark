@@ -23,9 +23,8 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 974208
   %4 = sext i32 %0 to i64
-  %5 = getelementptr inbounds %struct.s_hv.1766891, ptr %3, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.s_hv.1766891, ptr %3, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:

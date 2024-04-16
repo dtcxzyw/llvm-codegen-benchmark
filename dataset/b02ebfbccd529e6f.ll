@@ -80,10 +80,9 @@ define i1 @func0000000000000046(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = lshr exact i64 %3, 3
-  %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %4 = and i64 %3, 17179869184
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 ; 417 occurrences:
@@ -843,10 +842,9 @@ define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
-  %4 = lshr i64 %3, 8
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 65535
-  ret i1 %6
+  %4 = and i64 %3, 1099494850560
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

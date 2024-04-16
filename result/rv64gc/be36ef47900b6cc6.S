@@ -12,6 +12,8 @@ func0000000000000031:                   # @func0000000000000031
 	slli	a0, a0, 48
 	bnez	a0, .LBB1_2
 	li	a0, 32
+	slli	a0, a0, 48
+	srli	a0, a0, 48
 	ret
 .LBB1_2:
 	ori	a0, a1, 32

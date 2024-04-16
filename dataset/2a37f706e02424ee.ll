@@ -7,8 +7,8 @@ entry:
   %3 = icmp eq i8 %2, 10
   %4 = select i1 %3, i1 %1, i1 false
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
-  %7 = icmp eq i32 %6, 0
+  %6 = sub i32 0, %0
+  %7 = icmp eq i32 %5, %6
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = icmp eq i8 %2, 10
   %4 = select i1 %3, i1 %1, i1 false
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, 0
   ret i1 %7
 }
@@ -35,7 +35,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp slt i32 %6, 2
   ret i1 %7
 }

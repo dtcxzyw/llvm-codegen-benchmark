@@ -16,7 +16,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = shl nsw i32 -1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

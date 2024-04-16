@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 6
   %5 = and i32 %4, 256
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }

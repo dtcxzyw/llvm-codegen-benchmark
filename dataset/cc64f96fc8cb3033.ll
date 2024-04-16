@@ -12,7 +12,7 @@ entry:
   %3 = add i64 %2, 4
   %4 = sub i64 %1, %3
   %5 = add i64 %4, 4
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = add i32 %2, 7
   %4 = sub i32 %1, %3
   %5 = add i32 %4, -4
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -34,11 +34,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 1
-  %4 = sub i32 %1, %3
-  %5 = add i32 %4, -4
-  %6 = icmp uge i32 %0, %5
-  ret i1 %6
+  %.neg = xor i32 %2, -1
+  %3 = add i32 %.neg, %1
+  %4 = add i32 %3, -4
+  %5 = icmp ule i32 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -49,7 +49,7 @@ entry:
   %3 = add i64 %2, 5
   %4 = sub i64 %1, %3
   %5 = add i64 %4, -3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

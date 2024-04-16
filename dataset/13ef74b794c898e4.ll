@@ -15,8 +15,8 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 2048, i64 %0
-  %5 = shl i64 %4, 1
+  %4 = shl i64 %0, 1
+  %5 = select i1 %3, i64 4096, i64 %4
   ret i64 %5
 }
 
@@ -51,8 +51,8 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = icmp eq i32 %2, 8
-  %4 = select i1 %3, i32 1, i32 %0
-  %5 = shl nuw nsw i32 %4, 2
+  %4 = shl nuw nsw i32 %0, 2
+  %5 = select i1 %3, i32 4, i32 %4
   ret i32 %5
 }
 
@@ -66,8 +66,8 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967288
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 1, i32 %0
-  %5 = shl nsw i32 %4, 2
+  %4 = shl nsw i32 %0, 2
+  %5 = select i1 %3, i32 4, i32 %4
   ret i32 %5
 }
 
@@ -78,8 +78,8 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 8, i64 %0
-  %5 = shl nuw i64 %4, 1
+  %4 = shl nuw i64 %0, 1
+  %5 = select i1 %3, i64 16, i64 %4
   ret i64 %5
 }
 

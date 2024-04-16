@@ -23,9 +23,8 @@ entry:
   %3 = and i64 %2, 7
   %4 = getelementptr i8, ptr %1, i64 40
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr inbounds %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.1699776", ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.1699776", ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:

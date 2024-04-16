@@ -101,14 +101,14 @@ func0000000000000514:                   # @func0000000000000514
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
-	addi	a1, a1, 999
-	srliw	a1, a1, 11
-	sltiu	a1, a1, 125
-	addi	a0, a0, 999
-	srliw	a0, a0, 11
-	sltiu	a0, a0, 125
-	and	a0, a0, a1
-	xori	a0, a0, 1
+	lui	a2, 1048514
+	addi	a3, a2, -1049
+	addw	a1, a1, a3
+	addiw	a2, a2, -2048
+	sltu	a1, a1, a2
+	addw	a0, a0, a3
+	sltu	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func000000000000041c:                   # @func000000000000041c
 	andi	a0, a0, 255
@@ -121,9 +121,8 @@ func000000000000041c:                   # @func000000000000041c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
-	addi	a1, a1, -2048
-	addi	a1, a1, -2048
 	srliw	a1, a1, 12
+	addi	a1, a1, -1
 	seqz	a1, a1
 	addi	a0, a0, -31
 	seqz	a0, a0

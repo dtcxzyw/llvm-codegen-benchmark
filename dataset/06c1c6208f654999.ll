@@ -22,8 +22,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
-  %3 = add i64 %2, 1
-  %4 = icmp ugt i64 %3, 4611686018427387903
+  %3 = add i64 %2, -4611686018427387903
+  %4 = icmp ult i64 %3, -4611686018427387904
   ret i1 %4
 }
 
@@ -34,8 +34,8 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
-  %3 = add nsw i64 %2, -1
-  %4 = icmp ugt i64 %3, 1
+  %3 = add i64 %2, -3
+  %4 = icmp ult i64 %3, -2
   ret i1 %4
 }
 
@@ -60,9 +60,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = udiv i64 %0, %1
-  %3 = add i64 %2, 1
-  %4 = icmp eq i64 %3, 0
+  %2 = icmp eq i64 %0, -1
+  %3 = icmp eq i64 %1, 1
+  %4 = and i1 %2, %3
   ret i1 %4
 }
 
@@ -72,9 +72,8 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
-  %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, 1
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

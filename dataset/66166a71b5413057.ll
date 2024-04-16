@@ -9,9 +9,9 @@ define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 3
   %2 = and i32 %1, 63
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nuw nsw i64 64, %3
-  ret i64 %4
+  %narrow = sub nuw nsw i32 64, %2
+  %3 = zext nneg i32 %narrow to i64
+  ret i64 %3
 }
 
 ; 10 occurrences:

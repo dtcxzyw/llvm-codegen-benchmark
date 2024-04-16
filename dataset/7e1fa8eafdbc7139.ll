@@ -969,10 +969,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, %0
-  %3 = icmp ne i64 %0, -1
-  %4 = or i1 %3, %2
-  ret i1 %4
+  %2 = and i64 %0, %1
+  %3 = icmp ne i64 %2, -1
+  ret i1 %3
 }
 
 ; 13 occurrences:

@@ -33,8 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = trunc i32 %2 to i8
-  %4 = icmp ult i8 %3, 8
+  %3 = and i32 %2, 248
+  %4 = icmp eq i32 %3, 0
   %5 = add i8 %1, -29
   %6 = select i1 %4, i8 %0, i8 %5
   ret i8 %6
@@ -45,11 +45,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
-  %5 = add nsw i32 %1, -1
-  %6 = select i1 %4, i32 %0, i32 %5
-  ret i32 %6
+  %3 = and i64 %2, 2147483648
+  %.not = icmp eq i64 %3, 0
+  %4 = add nsw i32 %1, -1
+  %5 = select i1 %.not, i32 %4, i32 %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

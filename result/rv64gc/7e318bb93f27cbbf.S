@@ -30,11 +30,11 @@ func0000000000000085:                   # @func0000000000000085
 	ret
 func0000000000000084:                   # @func0000000000000084
 	andi	a0, a0, 255
+	andi	a2, a2, 255
 	slli	a1, a1, 48
 	srli	a1, a1, 58
 	sltiu	a1, a1, 63
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	andi	a1, a1, 255
-	sltu	a0, a0, a1
+	not	a1, a1
+	sltu	a0, a0, a2
+	and	a0, a0, a1
 	ret

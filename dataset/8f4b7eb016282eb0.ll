@@ -15,7 +15,7 @@ define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptrunc double %0 to float
   %2 = fpext float %1 to double
-  %3 = fcmp oeq double %0, %2
+  %3 = fcmp oeq double %2, %0
   ret i1 %3
 }
 

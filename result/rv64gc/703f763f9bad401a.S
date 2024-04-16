@@ -17,7 +17,7 @@ func000000000000000c:                   # @func000000000000000c
 .LBB2_2:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a1, 257
+	li	a1, 256
 	bltu	a0, a1, .LBB3_2
 	li	a0, 256
 .LBB3_2:                                # %entry

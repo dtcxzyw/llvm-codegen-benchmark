@@ -21,8 +21,8 @@ entry:
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = select i1 %0, i32 -1, i32 1
-  %4 = mul nsw i32 %3, %2
+  %3 = sub nsw i32 0, %2
+  %4 = select i1 %0, i32 %3, i32 %2
   ret i32 %4
 }
 

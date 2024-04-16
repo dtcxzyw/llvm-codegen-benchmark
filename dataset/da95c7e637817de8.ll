@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i8 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 %2, i8 0
-  %4 = shl nuw nsw i8 %3, 1
+  %3 = shl nuw nsw i8 %2, 1
+  %4 = select i1 %1, i8 %3, i8 0
   %5 = and i8 %0, -3
   %6 = or disjoint i8 %5, %4
   ret i8 %6
@@ -16,8 +16,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 2
-  %4 = shl nuw nsw i32 %3, 4
+  %3 = shl nuw nsw i32 %2, 4
+  %4 = select i1 %1, i32 %3, i32 32
   %5 = and i32 %0, -17
   %6 = or i32 %5, %4
   ret i32 %6
@@ -28,8 +28,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 255
-  %4 = shl i32 %3, 24
+  %3 = shl i32 %2, 24
+  %4 = select i1 %1, i32 %3, i32 -16777216
   %5 = and i32 %0, 16777215
   %6 = or disjoint i32 %5, %4
   ret i32 %6

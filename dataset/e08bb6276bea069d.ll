@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000045(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, 0
-  %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
-  ret i32 %5
+  %2 = icmp eq i32 %1, 1
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -19,11 +18,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = icmp eq i32 %2, 0
-  %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
-  ret i32 %5
+  %2 = icmp eq i32 %1, 1
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -35,7 +33,7 @@ entry:
   %2 = add nsw i16 %1, -6
   %3 = icmp ult i16 %2, -2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -48,7 +46,7 @@ entry:
   %2 = add i8 %1, 1
   %3 = icmp ult i8 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

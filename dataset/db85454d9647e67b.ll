@@ -35,7 +35,7 @@ define double @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = uitofp i8 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

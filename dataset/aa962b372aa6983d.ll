@@ -39,7 +39,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = and i64 %1, 31
   %4 = icmp ne i64 %3, 27
-  %5 = and i1 %2, %4
+  %5 = and i1 %4, %2
   %6 = select i1 %5, i64 %0, i64 %1
   ret i64 %6
 }

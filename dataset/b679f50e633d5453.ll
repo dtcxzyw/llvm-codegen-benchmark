@@ -9,11 +9,8 @@
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 1
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr i16, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -2
-  ret ptr %7
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 580 occurrences:
@@ -601,11 +598,8 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 1
-  %5 = add nsw i64 %4, 1
-  %6 = getelementptr inbounds i16, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 -2
-  ret ptr %7
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -8,8 +8,8 @@ define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fmul float %0, %4
-  %6 = fneg float %5
+  %5 = fneg float %4
+  %6 = fmul float %5, %0
   ret float %6
 }
 
@@ -23,8 +23,8 @@ define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, %1
   %4 = select i1 %3, float %1, float %2
-  %5 = fmul float %0, %4
-  %6 = fneg float %5
+  %5 = fneg float %4
+  %6 = fmul float %5, %0
   ret float %6
 }
 
@@ -35,8 +35,8 @@ define double @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fmul double %0, %4
-  %6 = fneg double %5
+  %5 = fneg double %4
+  %6 = fmul double %5, %0
   ret double %6
 }
 

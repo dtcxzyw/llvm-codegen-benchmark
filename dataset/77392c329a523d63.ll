@@ -9,9 +9,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0) #0 {
 entry:
-  %1 = fneg float %0
-  %2 = fcmp olt float %1, 0.000000e+00
-  ret i1 %2
+  %1 = fcmp ogt float %0, 0.000000e+00
+  ret i1 %1
 }
 
 ; 10 occurrences:
@@ -28,9 +27,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(double %0) #0 {
 entry:
-  %1 = fneg double %0
-  %2 = fcmp ogt double %1, 0.000000e+00
-  ret i1 %2
+  %1 = fcmp olt double %0, 0.000000e+00
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

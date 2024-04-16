@@ -7,7 +7,7 @@ entry:
   %3 = icmp ugt i8 %2, 4
   %4 = icmp ne ptr %1, null
   %5 = or i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i64 %1, 0
   %5 = or i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

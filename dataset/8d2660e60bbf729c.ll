@@ -14,8 +14,8 @@ entry:
   %3 = icmp eq i8 %2, 35
   %4 = icmp eq i8 %2, 92
   %5 = or i1 %4, %3
-  %6 = or i1 %1, %5
-  %7 = or i1 %0, %6
+  %6 = or i1 %5, %1
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

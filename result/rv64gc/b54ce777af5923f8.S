@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	beqz	a0, .LBB0_2
 	fdiv.s	fa1, fa5, fa2
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 .LCPI1_0:
 	.word	0x3dcccccd                      # float 0.100000001

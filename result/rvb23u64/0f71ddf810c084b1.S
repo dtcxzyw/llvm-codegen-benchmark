@@ -188,6 +188,6 @@ func00000000000000e4:                   # @func00000000000000e4
 	ret
 func0000000000000016:                   # @func0000000000000016
 	mul	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	slti	a0, a0, 0
 	ret

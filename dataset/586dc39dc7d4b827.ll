@@ -7,9 +7,9 @@
 define i32 @func00000000000000e0(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = icmp ne ptr %1, %3
+  %4 = icmp ne ptr %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,9 +19,9 @@ entry:
 define i64 @func0000000000000060(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -168
-  %4 = icmp ne ptr %1, %3
+  %4 = icmp ne ptr %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -32,9 +32,9 @@ entry:
 define i32 @func00000000000000e3(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = icmp ne ptr %1, %3
+  %4 = icmp ne ptr %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

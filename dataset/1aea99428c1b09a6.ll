@@ -57,7 +57,7 @@
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add i64 %3, 2147483648
   ret i64 %4
 }
@@ -242,7 +242,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = add nuw nsw i32 %3, 7
   ret i32 %4
 }
@@ -436,7 +436,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add nsw i64 %3, 63
   ret i64 %4
 }
@@ -452,7 +452,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = add nsw i32 %3, 60
   ret i32 %4
 }
@@ -833,7 +833,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add i64 %3, 512
   ret i64 %4
 }
@@ -979,7 +979,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nuw nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -1007,7 +1007,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, -1
   ret i32 %4
 }
@@ -1020,7 +1020,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }
@@ -1037,7 +1037,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }
@@ -1060,7 +1060,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -1072,7 +1072,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add nuw nsw i64 %3, 2
   ret i64 %4
 }
@@ -1097,7 +1097,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = add nsw i64 %3, -64
   ret i64 %4
 }
@@ -1109,7 +1109,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = add i64 %3, 128
   ret i64 %4
 }
@@ -1138,7 +1138,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = add i32 %3, 7
   ret i32 %4
 }
@@ -1152,7 +1152,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = add nsw i32 %3, -80
   ret i32 %4
 }
@@ -1163,7 +1163,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add nuw i64 %3, 8
   ret i64 %4
 }
@@ -1175,7 +1175,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = add nuw nsw i32 %3, 3
   ret i32 %4
 }
@@ -1186,7 +1186,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = add nuw nsw i64 %3, 30
   ret i64 %4
 }
@@ -1197,7 +1197,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = add nsw i64 %3, -55
   ret i64 %4
 }

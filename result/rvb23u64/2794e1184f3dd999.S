@@ -108,9 +108,9 @@ func0000000000000231:                   # @func0000000000000231
 	ret
 func0000000000000334:                   # @func0000000000000334
 	andi	a1, a1, 255
-	li	a2, -3
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 6
+	li	a2, 3
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 3
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
 	ret

@@ -40,7 +40,7 @@ entry:
   %3 = add nuw nsw i64 %2, 3
   %4 = and i64 %3, 9223372036854775804
   %5 = add nuw nsw i64 %4, 16
-  %6 = mul nsw i64 %1, %5
+  %6 = mul nsw i64 %5, %1
   %7 = getelementptr inbounds double, ptr %0, i64 %6
   ret ptr %7
 }

@@ -156,9 +156,8 @@ define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
-  %5 = sub nsw i32 %4, %0
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i32 %4, %0
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -182,9 +181,8 @@ define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
-  %5 = sub nsw i32 %4, %0
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -206,9 +204,8 @@ define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %1
-  %5 = sub i64 %4, %0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -218,9 +215,8 @@ define i1 @func000000000000015a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
-  %5 = sub nsw i64 %4, %0
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -230,9 +226,8 @@ define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
-  %5 = sub nsw i64 %4, %0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

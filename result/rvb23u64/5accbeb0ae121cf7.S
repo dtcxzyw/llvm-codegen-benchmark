@@ -13,7 +13,6 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000017:                   # @func0000000000000017
 	andi	a1, a1, -256
-	slliw	a1, a1, 16
-	slliw	a0, a0, 16
 	or	a0, a0, a1
+	slliw	a0, a0, 16
 	ret

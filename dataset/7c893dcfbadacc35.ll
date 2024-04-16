@@ -121,10 +121,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw i64 1, %2
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
+  %.highbits = lshr i64 %0, %2
+  %3 = icmp eq i64 %.highbits, 0
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:

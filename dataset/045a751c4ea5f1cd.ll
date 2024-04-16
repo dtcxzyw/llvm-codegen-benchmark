@@ -25,7 +25,7 @@ entry:
   %4 = icmp eq i8 %3, 16
   %5 = xor i32 %1, 512
   %6 = select i1 %4, i32 %5, i32 0
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = icmp ugt i32 %3, 112
   %5 = xor i32 %1, 16384
   %6 = select i1 %4, i32 %5, i32 0
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

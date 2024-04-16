@@ -12,7 +12,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -16
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
 

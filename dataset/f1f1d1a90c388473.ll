@@ -26,7 +26,7 @@
 define i1 @func0000000000000007(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ugt float %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -300,7 +300,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -332,7 +332,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 
@@ -353,7 +353,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %1, %2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 

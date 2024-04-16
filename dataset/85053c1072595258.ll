@@ -5,7 +5,7 @@
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 1
-  %2 = icmp sgt i64 %0, %1
+  %2 = icmp slt i64 %1, %0
   ret i1 %2
 }
 
@@ -25,7 +25,7 @@ entry:
 define i1 @func000000000000001a(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
-  %2 = icmp sgt i64 %0, %1
+  %2 = icmp slt i64 %1, %0
   ret i1 %2
 }
 
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000016(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
-  %2 = icmp slt i32 %0, %1
+  %2 = icmp sgt i32 %1, %0
   ret i1 %2
 }
 
@@ -56,7 +56,7 @@ entry:
 define i1 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
-  %2 = icmp slt i32 %0, %1
+  %2 = icmp sgt i32 %1, %0
   ret i1 %2
 }
 

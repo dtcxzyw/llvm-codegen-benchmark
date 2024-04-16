@@ -20,10 +20,10 @@ func0000000000000031:                   # @func0000000000000031
 	czero.eqz	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	slli	a1, a1, 49
-	srli	a1, a1, 49
-	sltiu	a1, a1, 1024
+	li	a2, 31
+	slli	a2, a2, 10
+	and	a1, a1, a2
 	lui	a2, 229376
 	addw	a0, a0, a2
-	czero.nez	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret

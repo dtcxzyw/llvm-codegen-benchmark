@@ -183,7 +183,7 @@
 define ptr @func0000000000000001(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = ashr i64 %4, 32
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -208,7 +208,7 @@ entry:
 define ptr @func0000000000000011(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = ashr i64 %4, 32
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6

@@ -47,10 +47,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0) #0 {
 entry:
-  %1 = sub nuw nsw i32 64, %0
-  %2 = zext nneg i32 %1 to i64
-  %3 = sub nuw nsw i64 1000, %2
-  ret i64 %3
+  %narrow = add i32 %0, 936
+  %1 = zext i32 %narrow to i64
+  ret i64 %1
 }
 
 ; 3 occurrences:

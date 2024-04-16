@@ -7,10 +7,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, -1
-  %2 = icmp slt i32 %0, 0
-  %3 = select i1 %2, i32 %1, i32 %0
-  ret i32 %3
+  %.lobit = ashr i32 %0, 31
+  %1 = xor i32 %.lobit, %0
+  ret i32 %1
 }
 
 ; 1 occurrences:

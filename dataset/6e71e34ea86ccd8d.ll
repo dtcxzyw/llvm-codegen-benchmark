@@ -38,7 +38,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %2, 1.000000e+00
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

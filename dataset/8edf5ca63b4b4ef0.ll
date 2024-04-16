@@ -8,7 +8,7 @@ entry:
   %3 = fmul float %2, 6.553500e+04
   %4 = fadd float %3, %1
   %5 = fcmp olt float %4, 6.553600e+04
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

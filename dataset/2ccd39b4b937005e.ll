@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, 1
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, %2
   %6 = icmp ult i32 %4, %5
   ret i1 %6
@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, 2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, %2
   %6 = icmp slt i32 %4, %5
   ret i1 %6
@@ -42,7 +42,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 28
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, %2
   %6 = icmp sge i32 %4, %5
   ret i1 %6
@@ -55,7 +55,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, 2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, %2
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -67,7 +67,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, 2
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, %2
   %6 = icmp ugt i32 %4, %5
   ret i1 %6

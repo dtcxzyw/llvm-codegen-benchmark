@@ -61,7 +61,7 @@ entry:
   %2 = and i64 %1, 31
   %3 = icmp eq i64 %2, 29
   %4 = zext i1 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -273,7 +273,7 @@ entry:
   %2 = and i8 %1, -64
   %3 = icmp ne i8 %2, -128
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -553,7 +553,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -608,7 +608,7 @@ entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -673,7 +673,7 @@ entry:
   %2 = and i32 %1, 7936
   %3 = icmp eq i32 %2, 256
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -688,7 +688,7 @@ entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 3
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -924,7 +924,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = icmp ne i32 %2, 10
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -939,7 +939,7 @@ entry:
   %2 = and i32 %1, -2147483645
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -949,11 +949,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -4194305
-  %3 = icmp ugt i32 %2, 33554431
-  %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
-  ret i32 %5
+  %2 = icmp ugt i32 %1, 33554431
+  %3 = zext i1 %2 to i32
+  %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -964,7 +963,7 @@ entry:
   %2 = and i64 %1, 4294966784
   %3 = icmp ugt i64 %2, 999999999
   %4 = zext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -976,7 +975,7 @@ entry:
   %2 = and i32 %1, 8388607
   %3 = icmp ugt i32 %2, 3474674
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

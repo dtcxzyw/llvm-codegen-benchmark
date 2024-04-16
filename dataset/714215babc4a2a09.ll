@@ -43,7 +43,7 @@ define i1 @func0000000000000011(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -58,7 +58,7 @@ define i1 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -69,7 +69,7 @@ define i1 @func0000000000000018(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -80,7 +80,7 @@ define i1 @func0000000000000009(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 
@@ -91,7 +91,7 @@ define i1 @func000000000000001c(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   ret i1 %4
 }
 
@@ -102,7 +102,7 @@ define i1 @func000000000000000c(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %0, %3
+  %4 = icmp ne i64 %3, %0
   ret i1 %4
 }
 
@@ -113,7 +113,7 @@ define i1 @func0000000000000019(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp uge i64 %0, %3
+  %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 
@@ -124,7 +124,7 @@ define i1 @func0000000000000014(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

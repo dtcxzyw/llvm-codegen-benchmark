@@ -8,8 +8,8 @@ define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
   %4 = ashr exact i64 %3, 40
-  %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr inbounds %struct.MapNode.1647710, ptr %0, i64 %5
+  %5 = getelementptr %struct.MapNode.1647710, ptr %0, i64 %4
+  %6 = getelementptr %struct.MapNode.1647710, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -30,8 +30,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -47,8 +47,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add i64 %1, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -59,8 +59,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -73,8 +73,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -94,8 +94,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr i64 %3, 52
-  %5 = add i64 %1, %4
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -106,8 +106,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 27
   %4 = ashr i64 %3, 32
-  %5 = add nsw i64 %1, %4
-  %6 = getelementptr inbounds double, ptr %0, i64 %5
+  %5 = getelementptr double, ptr %0, i64 %4
+  %6 = getelementptr double, ptr %5, i64 %1
   ret ptr %6
 }
 

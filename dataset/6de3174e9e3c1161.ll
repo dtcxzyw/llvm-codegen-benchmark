@@ -11,7 +11,7 @@ entry:
   %3 = icmp slt i64 %0, 0
   %4 = select i1 %3, i1 %2, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

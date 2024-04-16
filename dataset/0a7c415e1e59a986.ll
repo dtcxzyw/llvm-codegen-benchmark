@@ -34,7 +34,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, 39
   %5 = and i64 %4, 68719476728
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

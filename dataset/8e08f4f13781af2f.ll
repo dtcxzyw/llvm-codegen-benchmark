@@ -17,10 +17,9 @@ define ptr @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  %5 = getelementptr inbounds i8, ptr %3, i64 8
-  %6 = select i1 %0, ptr %4, ptr %5
-  ret ptr %6
+  %.v = select i1 %0, i64 16, i64 8
+  %4 = getelementptr inbounds i8, ptr %3, i64 %.v
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

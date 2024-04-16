@@ -8,7 +8,7 @@ define double @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -22,7 +22,7 @@ define double @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -35,7 +35,7 @@ define double @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -47,7 +47,7 @@ define double @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -59,7 +59,7 @@ define double @func0000000000000060(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }
@@ -83,7 +83,7 @@ define double @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = sitofp i64 %4 to double
   ret double %5
 }

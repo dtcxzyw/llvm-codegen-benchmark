@@ -12,9 +12,8 @@
 define i32 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:
   %2 = and i1 %0, %1
-  %3 = select i1 %2, i32 1, i32 2
-  %4 = or disjoint i32 %3, 4
-  ret i32 %4
+  %3 = select i1 %2, i32 5, i32 6
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

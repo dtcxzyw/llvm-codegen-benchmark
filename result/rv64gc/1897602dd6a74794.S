@@ -328,9 +328,9 @@ func00000000000000f8:                   # @func00000000000000f8
 func0000000000000150:                   # @func0000000000000150
 	sext.w	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 127
-	sltiu	a2, a2, 126
-	xori	a2, a2, 1
+	andi	a2, a2, 126
+	addi	a2, a2, -126
+	seqz	a2, a2
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret

@@ -66,14 +66,16 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000041:                   # @func0000000000000041
 	zext.w	a2, a2
-	add	a0, a0, a1
-	sub	a0, a0, a2
+	sub	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	zext.h	a2, a2
-	add	a0, a0, a1
-	subw	a0, a0, a2
+	subw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008

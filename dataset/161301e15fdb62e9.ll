@@ -1248,9 +1248,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func000000000000000d(float %0, float %1) #0 {
 entry:
-  %2 = fcmp uge float %1, %0
-  %3 = select i1 %2, float %0, float %1
-  ret float %3
+  %.inv = fcmp olt float %1, %0
+  %2 = select i1 %.inv, float %1, float %0
+  ret float %2
 }
 
 ; 129 occurrences:
@@ -1403,9 +1403,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func0000000000000005(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ugt float %0, %1
-  %3 = select i1 %2, float %0, float %1
-  ret float %3
+  %.inv = fcmp ole float %0, %1
+  %2 = select i1 %.inv, float %1, float %0
+  ret float %2
 }
 
 ; 4 occurrences:
@@ -1416,9 +1416,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func0000000000000003(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ult float %1, %0
-  %3 = select i1 %2, float %0, float %1
-  ret float %3
+  %.inv = fcmp oge float %1, %0
+  %2 = select i1 %.inv, float %1, float %0
+  ret float %2
 }
 
 ; 5 occurrences:
@@ -1430,9 +1430,9 @@ entry:
 ; Function Attrs: nounwind
 define float @func000000000000000b(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ule float %1, %0
-  %3 = select i1 %2, float %0, float %1
-  ret float %3
+  %.inv = fcmp ogt float %1, %0
+  %2 = select i1 %.inv, float %1, float %0
+  ret float %2
 }
 
 attributes #0 = { nounwind }

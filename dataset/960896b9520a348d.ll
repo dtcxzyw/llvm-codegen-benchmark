@@ -7,7 +7,7 @@ define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
   %4 = fcmp ogt float %3, 0x3E80000000000000
-  %5 = xor i1 %0, %4
+  %5 = xor i1 %4, %0
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ define i1 @func000000000000000d(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
   %4 = fcmp uge float %3, 0.000000e+00
-  %5 = xor i1 %0, %4
+  %5 = xor i1 %4, %0
   ret i1 %5
 }
 

@@ -60,10 +60,9 @@ define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr %struct.ieee80211_sband_iftype_data.2008560, ptr %0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %5, i64 20
-  %7 = getelementptr i16, ptr %6, i64 %4
-  ret ptr %7
+  %5 = getelementptr %struct.ieee80211_sband_iftype_data.2008560, ptr %0, i64 %1, i32 1, i32 2
+  %6 = getelementptr i16, ptr %5, i64 %4
+  ret ptr %6
 }
 
 ; 2 occurrences:

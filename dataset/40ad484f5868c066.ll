@@ -13,7 +13,7 @@ define i64 @func0000000000000040(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = zext i32 %1 to i64
   %7 = add i64 %5, %6
   ret i64 %7
@@ -29,7 +29,7 @@ define i64 @func000000000000004f(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = call noundef i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = zext i16 %1 to i64
   %7 = add nuw nsw i64 %5, %6
   ret i64 %7
@@ -45,7 +45,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = zext i32 %1 to i64
   %7 = add nuw nsw i64 %5, %6
   ret i64 %7

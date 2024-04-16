@@ -31,7 +31,6 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
-	addiw	a0, a0, 166
-	sltiu	a0, a0, 513
-	xori	a0, a0, 1
+	addiw	a0, a0, -347
+	sltiu	a0, a0, -513
 	ret

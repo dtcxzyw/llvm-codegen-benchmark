@@ -558,10 +558,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 63
-  %2 = add nsw i64 %1, -1
-  %3 = and i64 %2, 1
-  ret i64 %3
+  %isnotneg = icmp sgt i64 %0, -1
+  %1 = zext i1 %isnotneg to i64
+  ret i64 %1
 }
 
 ; 19 occurrences:

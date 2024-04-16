@@ -29,8 +29,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i64
-  %3 = and i64 %2, 63
+  %2 = and i8 %1, 63
+  %3 = zext nneg i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -65,8 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 2147483646
+  %2 = and i32 %1, 2147483646
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i16, ptr %0, i64 %3
   ret ptr %4
 }
@@ -114,8 +114,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = and i64 %2, 2147483644
+  %2 = and i32 %1, 2147483644
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -135,8 +135,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %2, 2147483644
+  %2 = and i32 %1, 2147483644
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }

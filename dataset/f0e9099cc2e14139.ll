@@ -17,9 +17,9 @@ define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = add nsw i64 %2, 1
-  %4 = sdiv exact i64 %0, 24
-  %5 = sub nsw i64 %3, %4
-  ret i64 %5
+  %.neg = sdiv exact i64 %0, -24
+  %4 = add i64 %.neg, %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

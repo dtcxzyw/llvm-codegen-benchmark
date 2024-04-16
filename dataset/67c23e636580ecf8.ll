@@ -40,9 +40,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %"class.asmjit::_abi_1_10::RALiveSpans.1556233", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.asmjit::_abi_1_10::RALiveSpans.1556233", ptr %0, i64 %3, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -55,9 +54,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %"struct.rocksdb::BufferInfo.1580095", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 56
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.rocksdb::BufferInfo.1580095", ptr %0, i64 %3, i32 3
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -82,9 +80,8 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.watch_list.1770859, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr %struct.watch_list.1770859, ptr %0, i64 %3, i32 3
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -96,9 +93,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.be128.2027289, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.be128.2027289, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -108,9 +104,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.BufferDesc.2122474, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  ret ptr %5
+  %4 = getelementptr %struct.BufferDesc.2122474, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -120,9 +115,8 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.BufferDesc.2122474, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 20
-  ret ptr %5
+  %4 = getelementptr %struct.BufferDesc.2122474, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

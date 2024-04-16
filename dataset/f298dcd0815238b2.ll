@@ -8,7 +8,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -1
   %5 = ashr i64 %4, 3
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, -1
   %5 = ashr i32 %4, 10
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

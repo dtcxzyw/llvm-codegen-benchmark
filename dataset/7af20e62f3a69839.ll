@@ -8,7 +8,7 @@ entry:
   %2 = call noundef double @llvm.fabs.f64(double %1)
   %3 = fcmp ogt double %2, 1.000000e+00
   %4 = select i1 %3, double %2, double 1.000000e+00
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

@@ -16,15 +16,14 @@ func000000000000010a:                   # @func000000000000010a
 	slt	a0, a1, a0
 	ret
 func00000000000001f1:                   # @func00000000000001f1
+	zext.w	a2, a2
 	li	a3, 1000
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
 	add	a1, a1, a4
 	mul	a0, a0, a3
-	add.uw	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a0, a0, a1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
@@ -85,7 +84,9 @@ func0000000000000084:                   # @func0000000000000084
 func0000000000000101:                   # @func0000000000000101
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000106:                   # @func0000000000000106
@@ -165,16 +166,15 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
+	zext.w	a2, a2
 	lui	a3, 244141
 	addiw	a3, a3, -1536
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
 	add	a1, a1, a4
 	mul	a0, a0, a3
-	add.uw	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a0, a0, a1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000138:                   # @func0000000000000138
@@ -187,7 +187,8 @@ func0000000000000138:                   # @func0000000000000138
 func00000000000001fc:                   # @func00000000000001fc
 	andi	a1, a1, 255
 	sh1add	a0, a0, a0
-	addw	a0, a0, a1
+	sext.w	a0, a0
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 .LCPI24_0:

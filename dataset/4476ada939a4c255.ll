@@ -56,9 +56,9 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
   %4 = sub i32 %0, %3
-  %5 = lshr i32 %1, 13
-  %6 = xor i32 %4, %5
-  %7 = lshr i32 %6, 12
+  %5 = lshr i32 %1, 25
+  %6 = lshr i32 %4, 12
+  %7 = xor i32 %5, %6
   ret i32 %7
 }
 
@@ -72,9 +72,9 @@ define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, %0
   %4 = sub nsw i64 %1, %3
-  %5 = lshr i64 %0, 8
-  %6 = xor i64 %5, %4
-  %7 = lshr i64 %6, 38
+  %5 = lshr i64 %0, 46
+  %6 = lshr i64 %4, 38
+  %7 = xor i64 %5, %6
   ret i64 %7
 }
 
@@ -86,9 +86,9 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %1
   %4 = sub nuw nsw i32 %0, %3
-  %5 = lshr i32 %1, 5
-  %6 = xor i32 %4, %5
-  %7 = lshr i32 %6, 3
+  %5 = lshr i32 %1, 8
+  %6 = lshr i32 %4, 3
+  %7 = xor i32 %5, %6
   ret i32 %7
 }
 
@@ -100,9 +100,9 @@ define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %1
   %4 = sub nsw i32 %0, %3
-  %5 = lshr i32 %1, 5
-  %6 = xor i32 %4, %5
-  %7 = lshr i32 %6, 3
+  %5 = lshr i32 %1, 8
+  %6 = lshr i32 %4, 3
+  %7 = xor i32 %5, %6
   ret i32 %7
 }
 

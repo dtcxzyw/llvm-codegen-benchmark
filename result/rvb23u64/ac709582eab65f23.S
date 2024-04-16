@@ -4,8 +4,8 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 8
 	ret
 func0000000000000000:                   # @func0000000000000000
-	bseti	a0, a0, 13
-	lui	a1, 16384
+	lui	a1, 16382
 	addiw	a1, a1, -16
 	and	a0, a0, a1
+	bseti	a0, a0, 13
 	ret

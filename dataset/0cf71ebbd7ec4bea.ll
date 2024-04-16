@@ -24,7 +24,7 @@ define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 6
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -42,7 +42,7 @@ define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 1000000
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -58,7 +58,7 @@ define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 
@@ -73,7 +73,7 @@ define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -85,8 +85,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = udiv i128 %1, 100000000000000000000000000000000000000
-  %3 = trunc i128 %2 to i64
-  %4 = icmp ugt i64 %0, %3
+  %3 = trunc nuw nsw i128 %2 to i64
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -97,7 +97,7 @@ define i1 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   ret i1 %4
 }
 
@@ -109,7 +109,7 @@ define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   ret i1 %4
 }
 
@@ -120,7 +120,7 @@ define i1 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 8000000
   %3 = trunc i64 %2 to i32
-  %4 = icmp sle i32 %0, %3
+  %4 = icmp sge i32 %3, %0
   ret i1 %4
 }
 

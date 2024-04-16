@@ -18,7 +18,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 15
-  %4 = xor i32 %1, %3
+  %4 = xor i32 %3, %1
   %5 = add i32 %0, -1
   %6 = and i32 %5, %4
   %7 = zext i32 %6 to i64
@@ -73,7 +73,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   %5 = add i32 %1, -1
   %6 = and i32 %4, %5
   %7 = zext nneg i32 %6 to i64

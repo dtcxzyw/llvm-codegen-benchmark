@@ -22,7 +22,7 @@ entry:
   %3 = fptosi float %2 to i32
   %4 = and i32 %3, 255
   %5 = and i32 %1, 65280
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

@@ -16,8 +16,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
 entry:
-  %2 = add i8 %0, %1
-  %3 = icmp ne i8 %2, 0
+  %2 = sub i8 0, %1
+  %3 = icmp ne i8 %2, %0
   %4 = icmp ne i8 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5

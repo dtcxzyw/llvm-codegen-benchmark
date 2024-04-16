@@ -26,11 +26,10 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a0, a0, 5
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 30
-	add	a1, a1, a0
-	andi	a1, a1, -4
-	subw	a0, a0, a1
+	lui	a1, 524288
+	addi	a1, a1, 3
+	and	a0, a0, a1
+	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

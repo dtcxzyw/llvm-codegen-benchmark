@@ -199,8 +199,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 2139095040
-  %2 = lshr exact i32 %1, 23
+  %1 = lshr i32 %0, 23
+  %2 = and i32 %1, 255
   %3 = add nsw i32 %2, -127
   ret i32 %3
 }
@@ -221,8 +221,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 254
-  %2 = lshr i32 %1, 7
+  %1 = lshr i32 %0, 7
+  %2 = and i32 %1, 1
   %3 = add nuw nsw i32 %2, 255
   ret i32 %3
 }
@@ -238,8 +238,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 31744
-  %2 = lshr exact i16 %1, 10
+  %1 = lshr i16 %0, 10
+  %2 = and i16 %1, 31
   %3 = add nuw nsw i16 %2, 112
   ret i16 %3
 }
@@ -253,8 +253,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 2147483647
-  %2 = lshr i32 %1, 20
+  %1 = lshr i32 %0, 20
+  %2 = and i32 %1, 2047
   %3 = add nsw i32 %2, -1075
   ret i32 %3
 }

@@ -6,7 +6,7 @@
 define i8 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = xor i1 %0, %2
+  %3 = xor i1 %2, %0
   %4 = sext i1 %3 to i8
   ret i8 %4
 }

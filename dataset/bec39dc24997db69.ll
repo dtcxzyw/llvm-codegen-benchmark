@@ -7,7 +7,7 @@
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = call double @llvm.fmuladd.f64(double %1, double 0.000000e+00, double %2)
-  %4 = fadd double %0, %3
+  %4 = fadd double %3, %0
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
 }
@@ -24,7 +24,7 @@ declare double @llvm.fmuladd.f64(double, double, double) #1
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = call float @llvm.fmuladd.f32(float %1, float 0.000000e+00, float %2)
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   %5 = fcmp olt float %4, 0xBFEFFFFFC0000000
   ret i1 %5
 }
@@ -38,7 +38,7 @@ declare float @llvm.fmuladd.f32(float, float, float) #1
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = call float @llvm.fmuladd.f32(float %1, float 0.000000e+00, float %2)
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   %5 = fcmp ult float %4, 0x3FEE666660000000
   ret i1 %5
 }
@@ -49,7 +49,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fmuladd.f32(float %1, float 0x3FFE84B0A0000000, float %2)
-  %4 = fadd float %0, %3
+  %4 = fadd float %3, %0
   %5 = fcmp ogt float %4, 1.000000e+00
   ret i1 %5
 }

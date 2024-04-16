@@ -7,11 +7,11 @@
 define i1 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %0, %3
-  %5 = sub nsw i32 1, %4
-  %6 = icmp ugt i32 %5, 63
-  ret i1 %6
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = add nsw i32 %3, %0
+  %notsub = add nsw i32 %4, -2
+  %5 = icmp ult i32 %notsub, -64
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -14,8 +14,8 @@
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.umax.i64(i64 %0, i64 1)
-  %2 = and i64 %1, -4
-  %3 = icmp eq i64 %1, %2
+  %2 = and i64 %1, 3
+  %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 

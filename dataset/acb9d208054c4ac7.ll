@@ -11,7 +11,7 @@
 define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = sub i64 %4, %0
   %6 = add i64 %5, 15
   ret i64 %6

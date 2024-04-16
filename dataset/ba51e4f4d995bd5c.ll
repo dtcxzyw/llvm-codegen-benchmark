@@ -5,7 +5,7 @@
 define i16 @func000000000000001a(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i16
-  %3 = add nsw i16 %0, %2
+  %3 = add nsw i16 %2, %0
   %4 = udiv i16 %3, 5
   ret i16 %4
 }
@@ -168,7 +168,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = udiv i64 %3, 10
   ret i64 %4
 }
@@ -187,7 +187,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = udiv i64 %3, 10
   ret i64 %4
 }
@@ -203,7 +203,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = udiv i32 %3, 1000000
   ret i32 %4
 }
@@ -214,7 +214,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = udiv i32 %3, 100
   ret i32 %4
 }

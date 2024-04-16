@@ -9,11 +9,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 8
-  %3 = xor i32 %0, %2
-  %4 = xor i32 %3, -1
-  %5 = lshr i32 %4, 24
-  ret i32 %5
+  %2 = xor i32 %0, -1
+  %3 = lshr i32 %2, 24
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = call i32 @llvm.umin.i32(i32 %0, i32 %2)
   %4 = xor i32 %3, -1
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

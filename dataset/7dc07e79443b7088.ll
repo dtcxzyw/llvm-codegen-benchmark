@@ -7,9 +7,9 @@
 define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = add nuw nsw i32 %2, 1
-  %4 = call i32 @llvm.umin.i32(i32 %3, i32 11)
-  %5 = icmp ugt i32 %0, %4
+  %3 = call i32 @llvm.umin.i32(i32 %2, i32 10)
+  %4 = add nuw nsw i32 %3, 1
+  %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
@@ -24,10 +24,9 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = add nuw nsw i32 %2, 1
-  %4 = call i32 @llvm.umin.i32(i32 %3, i32 11)
-  %5 = icmp ult i32 %0, %4
-  ret i1 %5
+  %3 = call i32 @llvm.umin.i32(i32 %2, i32 10)
+  %4 = icmp uge i32 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

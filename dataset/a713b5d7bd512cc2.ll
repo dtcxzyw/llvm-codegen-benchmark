@@ -12,8 +12,8 @@
 define i32 @func0000000000000204(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
-  %3 = icmp ult i32 %0, %2
-  %4 = icmp ugt i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
+  %4 = icmp ult i32 %2, %0
   %5 = zext i1 %4 to i32
   %6 = select i1 %3, i32 -1, i32 %5
   ret i32 %6

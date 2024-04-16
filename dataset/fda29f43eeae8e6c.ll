@@ -8,10 +8,8 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000001a(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 0, %0
-  %2 = icmp sgt i32 %0, 0
-  %3 = select i1 %2, i32 %0, i32 %1
-  ret i32 %3
+  %1 = call i32 @llvm.abs.i32(i32 %0, i1 true)
+  ret i32 %1
 }
 
 ; 1 occurrences:
@@ -37,4 +35,8 @@ entry:
   ret i32 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.abs.i32(i32, i1 immarg) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

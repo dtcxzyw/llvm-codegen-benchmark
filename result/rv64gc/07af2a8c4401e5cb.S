@@ -47,7 +47,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a2, 9
 	bltu	a1, a2, .LBB6_2
 	li	a0, 512
-.LBB6_2:                                # %entry
+	ret
+.LBB6_2:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	ret

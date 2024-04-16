@@ -3,9 +3,8 @@ func0000000000000048:                   # @func0000000000000048
 	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
-	addi	a0, a0, 1
-	sltiu	a0, a0, -8
-	xori	a0, a0, 1
+	addi	a0, a0, 9
+	sltiu	a0, a0, 8
 	ret
 func0000000000000044:                   # @func0000000000000044
 	andi	a2, a2, 1

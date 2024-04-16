@@ -42,9 +42,8 @@ entry:
   %3 = shl nuw i16 %2, 1
   %4 = zext i16 %3 to i64
   %5 = getelementptr %struct.stbtt_vertex.1833224, ptr %1, i64 %4
-  %6 = getelementptr %struct.stbtt_vertex.1833224, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.stbtt_vertex.1833224, ptr %5, i64 %0, i32 6
+  ret ptr %6
 }
 
 ; 3 occurrences:

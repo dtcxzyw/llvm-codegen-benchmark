@@ -11,7 +11,7 @@ entry:
   %4 = icmp ugt i64 %3, 65520
   %5 = add nsw i64 %3, -65521
   %6 = select i1 %4, i64 %5, i64 %3
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

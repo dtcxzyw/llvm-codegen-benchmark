@@ -1,8 +1,7 @@
 func000000000000005a:                   # @func000000000000005a
 	addi	a2, a1, 1
 	czero.eqz	a1, a1, a2
-	sub	a0, a0, a1
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sext.w	a2, a1

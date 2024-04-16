@@ -1,10 +1,8 @@
 func00000000000006ba:                   # @func00000000000006ba
-	sext.w	a2, a1
-	negw	a1, a1
-	sgtz	a2, a2
-	addi	a2, a2, -1
+	sext.w	a1, a1
+	srai	a2, a1, 63
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret
 func0000000000000c41:                   # @func0000000000000c41
@@ -44,11 +42,9 @@ func000000000000004a:                   # @func000000000000004a
 	xori	a0, a0, 1
 	ret
 func00000000000002aa:                   # @func00000000000002aa
-	sext.w	a2, a1
-	negw	a1, a1
-	sgtz	a2, a2
-	addi	a2, a2, -1
+	sext.w	a1, a1
+	srai	a2, a1, 63
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret

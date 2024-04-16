@@ -143,7 +143,7 @@ define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 255, i64 0
-  %4 = xor i64 %0, %3
+  %4 = xor i64 %3, %0
   ret i64 %4
 }
 
@@ -176,7 +176,7 @@ define i32 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
   %3 = select i1 %2, i32 0, i32 27
-  %4 = xor i32 %0, %3
+  %4 = xor i32 %3, %0
   ret i32 %4
 }
 
@@ -185,10 +185,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %1, 0
-  %3 = select i1 %2, i32 255, i32 0
-  %4 = xor i32 %3, %0
-  ret i32 %4
+  %.not = icmp eq i8 %1, 0
+  %2 = select i1 %.not, i32 0, i32 255
+  %3 = xor i32 %2, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

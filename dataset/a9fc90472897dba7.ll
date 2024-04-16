@@ -11,7 +11,7 @@
 define i64 @func0000000000000001(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = srem i64 %3, 1000
   ret i64 %4
 }
@@ -31,7 +31,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = srem i64 %3, 1000
   ret i64 %4
 }

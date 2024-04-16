@@ -11,7 +11,7 @@
 define i16 @func0000000000000000(i16 %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i16
-  %3 = and i16 %0, %2
+  %3 = and i16 %2, %0
   ret i16 %3
 }
 

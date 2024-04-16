@@ -5,18 +5,9 @@ func00000000000000f0:                   # @func00000000000000f0
 	srli	a0, a0, 16
 	ret
 func00000000000000ec:                   # @func00000000000000ec
-	slli	a1, a1, 16
-	slli	a0, a0, 32
-	or	a0, a0, a1
-	slli	a0, a0, 16
-	srli	a0, a0, 32
+	mv	a0, a1
 	ret
 func00000000000000bc:                   # @func00000000000000bc
-	slli	a1, a1, 32
-	slli	a0, a0, 16
-	or	a0, a0, a1
-	slli	a0, a0, 16
-	srli	a0, a0, 32
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	slli	a1, a1, 18

@@ -112,21 +112,17 @@ func00000000000001a6:                   # @func00000000000001a6
 	slti	a0, a0, 0
 	ret
 func0000000000000311:                   # @func0000000000000311
-	sext.w	a1, a1
-	beqz	a1, .LBB13_2
-	addi	a0, a2, 4
-.LBB13_2:                               # %entry
+	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000318:                   # @func0000000000000318
-	sext.w	a1, a1
-	beqz	a1, .LBB14_2
-	addi	a0, a2, 4
-.LBB14_2:                               # %entry
 	sext.w	a0, a0
+	sext.w	a1, a1
+	snez	a1, a1
 	sltiu	a0, a0, 4
 	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret
 func0000000000000314:                   # @func0000000000000314
 	andi	a1, a1, 255

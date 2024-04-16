@@ -7,7 +7,7 @@ func0000000000000006:                   # @func0000000000000006
 	sltu	a4, a2, a4
 	add	a3, a3, a5
 	add	a3, a3, a4
-	beq	a1, a3, .LBB0_2
+	beq	a3, a1, .LBB0_2
 	slt	a0, a1, a3
 	ret
 .LBB0_2:

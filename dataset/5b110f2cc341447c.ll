@@ -32,7 +32,7 @@ entry:
   %1 = and i32 %0, 1023
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = trunc i32 %1 to i16
+  %4 = trunc nuw nsw i32 %1 to i16
   %5 = or i16 %4, %3
   ret i16 %5
 }

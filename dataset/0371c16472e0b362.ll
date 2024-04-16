@@ -14,10 +14,9 @@
 define ptr @func000000000000000b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = sub nsw i64 %3, %1
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %0, i64 %5
-  ret ptr %6
+  %.neg = sub nsw i64 %1, %3
+  %4 = getelementptr inbounds %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %0, i64 %.neg
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -9,7 +9,7 @@ entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 %0, i64 %1
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 

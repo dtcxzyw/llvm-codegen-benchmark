@@ -15,7 +15,7 @@
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 8
   ret ptr %6
@@ -29,7 +29,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = getelementptr inbounds i8, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 8
   ret ptr %6
@@ -45,10 +45,9 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %1, %3
-  %5 = getelementptr inbounds %class.aiVector3t.1746954, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = mul i64 %3, %1
+  %5 = getelementptr inbounds %class.aiVector3t.1746954, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -62,7 +61,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = getelementptr inbounds i16, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 2
   ret ptr %6
@@ -81,7 +80,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = getelementptr i16, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
@@ -96,7 +95,7 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 4
   ret ptr %6
@@ -110,7 +109,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
@@ -122,7 +121,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 4
   ret ptr %6
@@ -135,7 +134,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
@@ -147,7 +146,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr i32, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1032
   ret ptr %6
@@ -160,7 +159,7 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 8
   ret ptr %6
@@ -174,7 +173,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr i32, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
@@ -187,7 +186,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
@@ -199,7 +198,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 3
   ret ptr %6
@@ -211,7 +210,7 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
+  %4 = mul nsw i64 %3, %1
   %5 = getelementptr inbounds float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6

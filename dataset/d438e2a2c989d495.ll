@@ -7,8 +7,8 @@ entry:
   %3 = and i64 %2, 7
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = add i64 %1, 8
-  %7 = getelementptr i8, ptr %5, i64 %6
+  %6 = getelementptr i8, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 

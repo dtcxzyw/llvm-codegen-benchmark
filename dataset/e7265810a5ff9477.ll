@@ -294,8 +294,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = bitcast i64 %0 to double
-  %2 = fcmp oeq double %1, 0.000000e+00
+  %1 = and i64 %0, 9223372036854775807
+  %2 = icmp eq i64 %1, 0
   ret i1 %2
 }
 
@@ -333,8 +333,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = bitcast i64 %0 to double
-  %2 = fcmp une double %1, 0.000000e+00
+  %1 = and i64 %0, 9223372036854775807
+  %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 

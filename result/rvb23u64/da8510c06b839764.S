@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	sh2add	a0, a0, a1
 	flw	fa5, 0(a0)
 	fmul.s	fa5, fa5, fa1
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
@@ -19,6 +19,6 @@ func0000000000000004:                   # @func0000000000000004
 	bgeu	a0, a1, .LBB1_2
 	fneg.s	fa5, fa5
 .LBB1_2:                                # %entry
-	fmul.s	fa5, fa1, fa5
-	fadd.s	fa0, fa0, fa5
+	fmul.s	fa5, fa5, fa1
+	fadd.s	fa0, fa5, fa0
 	ret

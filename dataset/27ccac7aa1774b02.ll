@@ -10,7 +10,7 @@ entry:
   %2 = add i16 %1, 2
   %3 = tail call i16 @llvm.umax.i16(i16 %2, i16 4)
   %4 = zext i16 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -74,7 +74,7 @@ entry:
   %2 = add i32 %1, -2
   %3 = tail call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -89,7 +89,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -104,7 +104,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = tail call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -119,7 +119,7 @@ entry:
   %2 = add nsw i16 %1, 1
   %3 = tail call i16 @llvm.umax.i16(i16 %2, i16 2)
   %4 = zext i16 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

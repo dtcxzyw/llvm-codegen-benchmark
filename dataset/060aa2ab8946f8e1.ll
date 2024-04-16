@@ -9,7 +9,7 @@ entry:
   %2 = shl i16 %1, 4
   %3 = and i16 %2, 240
   %4 = zext nneg i16 %3 to i48
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   %6 = zext nneg i48 %5 to i64
   ret i64 %6
 }

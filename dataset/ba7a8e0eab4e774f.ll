@@ -12,9 +12,9 @@ define i32 @func0000000000000144(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = srem i64 %4, 400
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nsw i64 %5 to i32
   ret i32 %6
 }
 

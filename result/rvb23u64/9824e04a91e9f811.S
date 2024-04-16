@@ -22,8 +22,8 @@ func0000000000000014:                   # @func0000000000000014
 	sltiu	a0, a0, 3
 	ret
 func0000000000000041:                   # @func0000000000000041
-	slli	a2, a2, 33
-	srli	a2, a2, 53
+	lui	a3, 524032
+	and	a2, a2, a3
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

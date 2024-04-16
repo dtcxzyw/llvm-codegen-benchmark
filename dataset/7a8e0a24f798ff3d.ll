@@ -15,11 +15,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i16 %1) #0 {
 entry:
-  %2 = tail call noundef i16 @llvm.bswap.i16(i16 %1)
-  %3 = zext i16 %2 to i32
-  %4 = and i32 %3, 960
+  %2 = and i16 %1, -16381
+  %3 = call i16 @llvm.bswap.i16(i16 %2)
+  %4 = zext nneg i16 %3 to i32
   %5 = shl nuw nsw i32 %0, 10
-  %6 = or disjoint i32 %4, %5
+  %6 = or disjoint i32 %5, %4
   ret i32 %6
 }
 

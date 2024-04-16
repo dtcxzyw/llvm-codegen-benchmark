@@ -6,9 +6,9 @@
 define i1 @func000000000000000c(i16 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = and i32 %2, 32518
-  %4 = trunc i32 %3 to i16
-  %5 = and i16 %0, %4
+  %3 = trunc i32 %2 to i16
+  %4 = and i16 %3, 32518
+  %5 = and i16 %4, %0
   %6 = icmp ne i16 %5, 0
   ret i1 %6
 }
@@ -20,9 +20,9 @@ entry:
 define i1 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = and i32 %2, 32518
-  %4 = trunc i32 %3 to i16
-  %5 = and i16 %0, %4
+  %3 = trunc i32 %2 to i16
+  %4 = and i16 %3, 32518
+  %5 = and i16 %4, %0
   %6 = icmp eq i16 %5, 0
   ret i1 %6
 }
@@ -34,9 +34,9 @@ entry:
 define i1 @func000000000000003c(i16 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = and i32 %2, 32518
-  %4 = trunc nuw nsw i32 %3 to i16
-  %5 = and i16 %0, %4
+  %3 = trunc i32 %2 to i16
+  %4 = and i16 %3, 32518
+  %5 = and i16 %4, %0
   %6 = icmp ne i16 %5, 0
   ret i1 %6
 }

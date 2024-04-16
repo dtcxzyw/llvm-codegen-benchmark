@@ -7,7 +7,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = tail call double @llvm.fabs.f64(double %3)
   %5 = fmul double %4, 0x3D719799812DEA11
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = fadd double %1, %2
   %4 = call double @llvm.fabs.f64(double %3)
   %5 = fmul double %4, 1.100000e+00
-  %6 = fcmp ole double %0, %5
+  %6 = fcmp oge double %5, %0
   ret i1 %6
 }
 

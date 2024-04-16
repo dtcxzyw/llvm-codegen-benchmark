@@ -2,7 +2,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a2, 13
 	mul	a1, a1, a2
 	addi	a1, a1, 13
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	addiw	a0, a0, -9
 	ret
 func00000000000000f0:                   # @func00000000000000f0

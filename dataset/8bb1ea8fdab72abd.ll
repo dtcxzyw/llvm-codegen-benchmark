@@ -32,11 +32,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 18446744073709551615
-  %4 = add nuw nsw i128 %0, %1
-  %5 = add nuw nsw i128 %4, %3
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %3 = add nuw nsw i128 %0, %1
+  %4 = add i128 %3, %2
+  %5 = trunc i128 %4 to i64
+  ret i64 %5
 }
 
 ; 1 occurrences:

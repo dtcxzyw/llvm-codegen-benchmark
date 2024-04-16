@@ -24,10 +24,8 @@
 define ptr @func000000000000000a(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.NodeInfo.1661113, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 22
-  %6 = getelementptr [128 x i8], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr %struct.NodeInfo.1661113, ptr %1, i64 %3, i32 6, i64 %0
+  ret ptr %4
 }
 
 ; 34 occurrences:
@@ -108,10 +106,8 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.CalloutNameListEntry.1666787, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  %6 = getelementptr inbounds [4 x i32], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds %struct.CalloutNameListEntry.1666787, ptr %1, i64 %3, i32 6, i64 %0
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -192,10 +188,8 @@ entry:
 define ptr @func0000000000000007(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 52
-  %6 = getelementptr inbounds [3 x i16], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr inbounds %"class.btAxisSweep3Internal<unsigned short>::Handle.1742905", ptr %1, i64 %3, i32 1, i64 %0
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -231,10 +225,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.mq.2238993, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 104
-  %6 = getelementptr inbounds [10 x %struct.mq_item.2238994], ptr %5, i64 0, i64 %0
-  ret ptr %6
+  %4 = getelementptr %struct.mq.2238993, ptr %1, i64 %3, i32 14, i64 %0
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

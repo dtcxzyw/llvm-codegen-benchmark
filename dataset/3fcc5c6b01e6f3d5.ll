@@ -36,7 +36,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %1, 4032
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = trunc i32 %6 to i16
   ret i16 %7
 }
@@ -75,12 +75,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -536870913
-  %4 = shl i64 %1, 32
-  %5 = or i64 %4, %3
-  %6 = or disjoint i64 %5, %0
-  %7 = trunc i64 %6 to i32
-  ret i32 %7
+  %3 = and i64 %2, 3758096383
+  %4 = or i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

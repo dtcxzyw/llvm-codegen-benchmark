@@ -28,7 +28,7 @@ entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -96,7 +96,7 @@ entry:
   %2 = shl nuw nsw i32 510, %1
   %3 = trunc i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 
@@ -149,7 +149,7 @@ entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %0, %4
+  %5 = and i16 %4, %0
   ret i16 %5
 }
 
@@ -162,7 +162,7 @@ entry:
   %2 = shl i64 4294967295, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -175,7 +175,7 @@ entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   ret i8 %5
 }
 

@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = freeze i64 %3
   ret i64 %4
 }
@@ -30,7 +30,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = freeze i64 %3
   ret i64 %4
 }

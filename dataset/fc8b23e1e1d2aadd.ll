@@ -10,7 +10,7 @@ entry:
   %4 = and i1 %3, %2
   %5 = icmp sgt i8 %1, 96
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = and i1 %3, %2
   %5 = icmp eq i8 %1, 10
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -50,10 +50,10 @@ entry:
 define i1 @func0000000000000318(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, 0
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = icmp slt i32 %1, -1
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

@@ -21,10 +21,11 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 1
 	slli	a2, a2, 1
-	li	a0, 10
+	neg	a0, a2
+	li	a2, 10
 	bnez	a3, .LBB2_2
-	mv	a0, a1
+	mv	a2, a1
 .LBB2_2:                                # %entry
-	add	a0, a0, a2
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

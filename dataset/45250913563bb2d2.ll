@@ -27,7 +27,7 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -38,7 +38,7 @@ entry:
 define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -49,7 +49,7 @@ entry:
 define i8 @func0000000000000012(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 8
-  %3 = icmp uge i32 %0, %2
+  %3 = icmp ule i32 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -60,7 +60,7 @@ entry:
 define i8 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
-  %3 = icmp ne i64 %0, %2
+  %3 = icmp ne i64 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -75,7 +75,7 @@ entry:
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -86,7 +86,7 @@ entry:
 define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -98,7 +98,7 @@ entry:
 define i32 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 9
-  %3 = icmp ule i64 %0, %2
+  %3 = icmp uge i64 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -109,7 +109,7 @@ entry:
 define i64 @func0000000000000070(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -120,7 +120,7 @@ entry:
 define i8 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -132,7 +132,7 @@ entry:
 define i32 @func0000000000000032(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = icmp uge i32 %0, %2
+  %3 = icmp ule i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

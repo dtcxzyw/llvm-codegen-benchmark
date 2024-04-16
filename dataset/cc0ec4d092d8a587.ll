@@ -12,9 +12,8 @@ entry:
   %3 = urem i64 %1, %2
   %4 = shl nuw i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr inbounds %"class.std::__cxx11::basic_string.1647494", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 16
-  ret ptr %7
+  %6 = getelementptr inbounds %"class.std::__cxx11::basic_string.1647494", ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 ; 3 occurrences:
@@ -27,9 +26,8 @@ entry:
   %3 = urem i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr inbounds %struct.entry.1778917, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.entry.1778917, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

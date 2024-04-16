@@ -21,7 +21,7 @@ entry:
   %3 = shl nsw i64 -1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = shl nuw i64 1, %2
   %4 = trunc i64 %3 to i16
   %5 = xor i16 %4, -1
-  %6 = and i16 %0, %5
+  %6 = and i16 %5, %0
   ret i16 %6
 }
 
@@ -71,11 +71,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = trunc i32 %3 to i8
   %5 = xor i8 %4, -1
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 
@@ -84,11 +84,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
+  %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 64, %2
   %4 = trunc i32 %3 to i8
   %5 = xor i8 %4, -1
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 
@@ -103,7 +103,7 @@ entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

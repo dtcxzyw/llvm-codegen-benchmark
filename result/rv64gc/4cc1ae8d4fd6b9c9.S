@@ -15,12 +15,11 @@ func000000000000007d:                   # @func000000000000007d
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a0, a0, 32
-	srli	a0, a0, 32
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
-	add	a0, a0, a1
-	slli	a0, a0, 6
+	srli	a0, a0, 26
+	lui	a1, 5142
+	addiw	a1, a1, 175
+	slli	a1, a1, 13
+	addi	a1, a1, 2041
 	add	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d

@@ -7,9 +7,9 @@
 define i1 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = shl i32 %1, 1
-  %3 = icmp slt i32 %2, 0
-  ret i1 %3
+  %.mask = and i32 %1, 1073741824
+  %2 = icmp ne i32 %.mask, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -20,9 +20,9 @@ entry:
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = shl i32 %1, 24
-  %3 = icmp eq i32 %2, -16777216
-  ret i1 %3
+  %.mask = and i32 %1, 255
+  %2 = icmp eq i32 %.mask, 255
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -32,9 +32,9 @@ entry:
 define i1 @func000000000000000c(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = shl i32 %1, 24
-  %3 = icmp ne i32 %2, -16777216
-  ret i1 %3
+  %.mask = and i32 %1, 255
+  %2 = icmp ne i32 %.mask, 255
+  ret i1 %2
 }
 
 ; 2 occurrences:

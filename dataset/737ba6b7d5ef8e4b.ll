@@ -11,7 +11,7 @@ define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = tail call noundef i64 @llvm.usub.sat.i64(i64 %2, i64 2)
-  %4 = icmp eq i64 %0, %3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
@@ -30,7 +30,7 @@ define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = tail call noundef i64 @llvm.usub.sat.i64(i64 %2, i64 2)
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

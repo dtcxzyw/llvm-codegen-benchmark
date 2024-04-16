@@ -2,7 +2,7 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a3, a0
 	addw	a1, a1, a2
 	li	a0, 1
-	beq	a3, a1, .LBB0_2
+	beq	a1, a3, .LBB0_2
 	li	a0, 4
 .LBB0_2:                                # %entry
 	ret
@@ -47,7 +47,7 @@ func0000000000000031:                   # @func0000000000000031
 	sext.w	a3, a0
 	addw	a1, a1, a2
 	li	a0, 3
-	beq	a3, a1, .LBB6_2
+	beq	a1, a3, .LBB6_2
 	li	a0, 1000
 .LBB6_2:                                # %entry
 	ret

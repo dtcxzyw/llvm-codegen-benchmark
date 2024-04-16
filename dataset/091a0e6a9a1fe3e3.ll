@@ -9,7 +9,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -21,7 +21,7 @@ entry:
 define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -43,8 +43,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -2
-  %3 = mul nsw i64 %2, %0
+  %2 = add i64 %1, 4294967294
+  %3 = mul i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -82,8 +82,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -2
-  %3 = mul nuw nsw i64 %2, %0
+  %2 = add i64 %1, 4294967294
+  %3 = mul i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

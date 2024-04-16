@@ -35,7 +35,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 1461
   %6 = ashr i32 %5, 2
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

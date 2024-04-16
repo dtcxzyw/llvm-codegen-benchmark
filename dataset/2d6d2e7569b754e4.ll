@@ -72,8 +72,8 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = call i32 @llvm.smin.i32(i32 %1, i32 0)
+  %1 = call i32 @llvm.smin.i32(i32 %0, i32 1)
+  %2 = add nsw i32 %1, -1
   ret i32 %2
 }
 
@@ -96,8 +96,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 1
-  %2 = call noundef i32 @llvm.smin.i32(i32 %1, i32 256)
+  %1 = call i32 @llvm.smin.i32(i32 %0, i32 255)
+  %2 = add nsw i32 %1, 1
   ret i32 %2
 }
 

@@ -31,7 +31,7 @@ entry:
 define double @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 432
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = sitofp i32 %3 to double
   %5 = fmul double %4, 0x3EB0000000000000
   ret double %5

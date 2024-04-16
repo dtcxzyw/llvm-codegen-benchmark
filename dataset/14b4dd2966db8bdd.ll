@@ -6,7 +6,7 @@
 define i1 @func0000000000000298(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 2
   %6 = icmp ult i64 %0, 2
   %7 = or i1 %5, %6
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000288(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ult i32 %4, 12
   %6 = icmp ult i32 %0, 25
   %7 = or i1 %6, %5
@@ -53,7 +53,7 @@ entry:
 define i1 @func0000000000000238(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 41
   %6 = icmp eq i64 %0, 0
   %7 = or i1 %5, %6
@@ -68,7 +68,7 @@ entry:
 define i1 @func0000000000000382(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 2
   %6 = icmp eq i64 %0, 16
   %7 = or i1 %6, %5
@@ -82,7 +82,7 @@ entry:
 define i1 @func0000000000000228(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ult i64 %4, 4
   %6 = icmp eq i64 %0, 4
   %7 = or i1 %5, %6
@@ -98,7 +98,7 @@ entry:
 define i1 @func0000000000000388(i8 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ult i64 %4, 3
   %6 = icmp ne i8 %0, 0
   %7 = or i1 %5, %6
@@ -110,12 +110,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = or i32 %1, %3
-  %5 = icmp ult i32 %4, 55296
-  %6 = icmp ult i32 %0, 1056767
-  %7 = or i1 %5, %6
-  ret i1 %7
+  %3 = icmp ult i32 %1, 55296
+  %4 = icmp ult i32 %0, 1056767
+  %5 = or i1 %3, %4
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -125,7 +123,7 @@ entry:
 define i1 @func0000000000000302(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ugt i32 %4, 15
   %6 = icmp eq i32 %0, 4
   %7 = or i1 %6, %5
@@ -140,7 +138,7 @@ entry:
 define i1 @func0000000000000222(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %6, %5
@@ -153,7 +151,7 @@ entry:
 define i1 @func0000000000000598(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i8 %0, 0
   %7 = or i1 %6, %5
@@ -166,7 +164,7 @@ entry:
 define i1 @func0000000000000022(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %1, %3
+  %4 = or i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp eq i32 %0, -27394048
   %7 = or i1 %6, %5
@@ -179,7 +177,7 @@ entry:
 define i1 @func0000000000000182(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp eq i32 %4, 65536
   %6 = icmp ne i32 %0, 0
   %7 = or i1 %5, %6
@@ -192,7 +190,7 @@ entry:
 define i1 @func0000000000000188(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ult i32 %0, 30
   %7 = or i1 %6, %5
@@ -205,7 +203,7 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = or i1 %6, %5
@@ -219,7 +217,7 @@ entry:
 define i1 @func0000000000000318(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 1903126886
   %6 = icmp ugt i8 %0, 1
   %7 = or i1 %5, %6
@@ -232,7 +230,7 @@ entry:
 define i1 @func0000000000000398(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i8 %0, 0
   %7 = or i1 %6, %5
@@ -245,7 +243,7 @@ entry:
 define i1 @func0000000000000282(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = icmp eq i16 %4, 10
   %6 = icmp ult i16 %0, 224
   %7 = or i1 %5, %6
@@ -258,7 +256,7 @@ entry:
 define i1 @func0000000000000628(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ult i32 %4, 65008
   %6 = icmp eq i32 %0, 65534
   %7 = or i1 %5, %6
@@ -271,12 +269,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000230(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = icmp ugt i32 %4, 1114111
-  %6 = icmp eq i32 %0, 55296
-  %7 = or i1 %5, %6
-  ret i1 %7
+  %3 = icmp ugt i32 %1, 1114111
+  %4 = icmp eq i32 %0, 55296
+  %5 = or i1 %3, %4
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -285,7 +281,7 @@ entry:
 define i1 @func0000000000000742(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp sgt i32 %4, 1114111
   %6 = icmp eq i32 %0, 864
   %7 = or i1 %6, %5

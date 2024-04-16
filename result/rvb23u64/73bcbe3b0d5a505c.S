@@ -2,12 +2,10 @@ func0000000000000361:                   # @func0000000000000361
 	add	a0, a0, a1
 	lui	a1, 16
 	addiw	a1, a1, -16
-	sltu	a2, a1, a0
-	lui	a3, 1048560
-	addiw	a3, a3, 15
-	add	a0, a0, a3
-	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
+	sltu	a1, a1, a0
+	lui	a2, 1048544
+	addiw	a2, a2, 30
+	add	a0, a0, a2
+	addi	a1, a1, -1
 	or	a0, a0, a1
-	add	a0, a0, a3
 	ret

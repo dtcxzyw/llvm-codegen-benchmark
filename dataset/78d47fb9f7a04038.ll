@@ -13,7 +13,7 @@ entry:
   %2 = xor i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 

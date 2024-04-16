@@ -50,15 +50,11 @@ func0000000000000011:                   # @func0000000000000011
 	and	a0, a0, a2
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	sext.w	a1, a1
+	xor	a0, a0, a1
+	or	a0, a0, a2
 	sext.w	a0, a0
-	beq	a0, a1, .LBB4_2
-	li	a0, 3
-	ret
-.LBB4_2:
-	sext.w	a2, a2
-	snez	a0, a2
-	addi	a0, a0, 2
+	seqz	a0, a0
+	xori	a0, a0, 3
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0

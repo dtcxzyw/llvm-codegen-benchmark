@@ -14,8 +14,8 @@
 define i8 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = trunc i64 %3 to i8
+  %3 = trunc i64 %0 to i8
+  %4 = select i1 %2, i8 0, i8 %3
   ret i8 %4
 }
 

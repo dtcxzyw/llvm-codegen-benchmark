@@ -11,7 +11,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 59
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   %6 = tail call noundef i32 @llvm.fshr.i32(i32 %0, i32 %0, i32 %5)
   ret i32 %6
 }

@@ -9,7 +9,7 @@ entry:
   %2 = uitofp i32 %1 to double
   %3 = fmul double %2, 1.700000e+00
   %4 = fptoui double %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = uitofp i64 %1 to float
   %3 = fmul float %2, 2.500000e-01
   %4 = fptoui float %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

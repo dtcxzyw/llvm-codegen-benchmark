@@ -12,7 +12,7 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
-	andi	a1, a0, 15
+	andi	a1, a0, 14
 	li	a2, 10
 	li	a0, 48
 	bltu	a1, a2, .LBB1_2

@@ -33,7 +33,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = mul i32 %0, %2
+  %3 = mul i32 %2, %0
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -44,7 +44,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = mul nsw i32 %0, %2
+  %3 = mul nsw i32 %2, %0
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }

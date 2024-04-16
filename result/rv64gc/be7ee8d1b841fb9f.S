@@ -1,17 +1,19 @@
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	lui	a0, 1048552
-	addi	a1, a0, -1695
-.LBB0_2:                                # %entry
+	bnez	a0, .LBB0_2
 	addi	a0, a1, 1075
 	slli	a0, a0, 52
 	ret
+.LBB0_2:
+	li	a0, -155
+	slli	a0, a0, 54
+	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a0, a0, 1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	sext.w	a0, a0
-	slli	a0, a0, 2
+	andi	a2, a0, 1
+	li	a0, 4
+	bnez	a2, .LBB1_2
+	sext.w	a1, a1
+	slli	a0, a1, 2
 	addi	a0, a0, 4
+.LBB1_2:                                # %entry
 	ret

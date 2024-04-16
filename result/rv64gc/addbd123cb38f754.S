@@ -120,8 +120,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	or	a0, a0, a1
 	ret
 func0000000000000188:                   # @func0000000000000188
-	andi	a0, a0, 255
 	sext.w	a1, a1
+	andi	a0, a0, 255
 	xor	a1, a1, a0
 	snez	a1, a1
 	sltiu	a0, a0, 10

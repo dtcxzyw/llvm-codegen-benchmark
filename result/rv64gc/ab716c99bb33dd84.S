@@ -12,6 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	addiw	a2, a2, 1365
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 12
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
 	andi	a0, a0, 255
 	ret

@@ -75,7 +75,5 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func000000000000004b:                   # @func000000000000004b
 	sext.w	a0, a0
-	sltiu	a1, a0, 6
-	slti	a0, a0, 0
-	andn	a0, a1, a0
+	sltiu	a0, a0, 6
 	ret

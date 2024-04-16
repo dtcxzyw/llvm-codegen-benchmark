@@ -1,12 +1,8 @@
 
 %union.yyalloc.1553162 = type { %union.YYSTYPE.1553161, [8 x i8] }
 %union.YYSTYPE.1553161 = type { i64 }
-%struct._OnigStackType.1553707 = type { i32, i64, %union.anon.1553708 }
-%union.anon.1553708 = type { %struct.anon.1553709 }
-%struct.anon.1553709 = type { ptr, ptr, ptr, ptr }
 %union.yyalloc.1554246 = type { %union.YYSTYPE.1554245, [8 x i8] }
 %union.YYSTYPE.1554245 = type { i64 }
-%"struct.re2::Splice.1554359" = type { ptr, ptr, i32, i32 }
 
 ; 46 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -89,9 +85,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 48
-  %3 = getelementptr %struct._OnigStackType.1553707, ptr %0, i64 %2
-  ret ptr %3
+  %2 = getelementptr i8, ptr %0, i64 %1
+  ret ptr %2
 }
 
 ; 1258 occurrences:
@@ -3626,9 +3621,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 24
-  %3 = getelementptr inbounds %"struct.re2::Splice.1554359", ptr %0, i64 %2
-  ret ptr %3
+  %2 = getelementptr inbounds i8, ptr %0, i64 %1
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

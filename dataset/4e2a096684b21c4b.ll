@@ -7,7 +7,7 @@ entry:
   %3 = add i64 %2, 500000
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, i64 %3, i64 %1
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i32 %1, -1
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

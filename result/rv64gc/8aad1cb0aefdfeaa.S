@@ -10,10 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	neg	a0, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
-	li	a1, 64
-	subw	a1, a1, a0
-	li	a0, 1000
-	sub	a0, a0, a1
+	addi	a0, a0, 936
+	slli	a0, a0, 32
+	srli	a0, a0, 32
 	ret
 func000000000000000d:                   # @func000000000000000d
 	negw	a0, a0

@@ -81,14 +81,14 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000004f:                   # @func000000000000004f
 	li	a6, -1
 	mulhu	a4, a4, a6
-	sub	a5, a2, a5
-	add	a4, a4, a5
-	sltu	a2, a4, a2
-	add	a0, a0, a4
-	sltu	a4, a0, a4
+	sub	a4, a4, a5
+	add	a2, a2, a4
+	sltu	a4, a2, a4
+	add	a0, a0, a2
+	sltu	a2, a0, a2
 	add	a1, a1, a3
-	add	a1, a1, a2
 	add	a1, a1, a4
+	add	a1, a1, a2
 	ret
 func0000000000000060:                   # @func0000000000000060
 	lui	a3, 298023

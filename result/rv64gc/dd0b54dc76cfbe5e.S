@@ -1,6 +1,6 @@
 func000000000000003d:                   # @func000000000000003d
-	andi	a1, a1, 7
-	slli	a1, a1, 3
+	slli	a1, a1, 61
+	srli	a1, a1, 58
 	or	a0, a0, a1
 	ori	a0, a0, 5
 	ret

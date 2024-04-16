@@ -9,7 +9,7 @@ entry:
   %4 = trunc i64 %1 to i32
   %5 = icmp eq i32 %4, %3
   %6 = zext i1 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

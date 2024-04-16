@@ -8,7 +8,7 @@ entry:
   %3 = fmul double %2, 2.000000e+00
   %4 = fdiv double %1, %3
   %5 = fcmp olt double %4, 0x3FEFFFFFFFFFDCD1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = fmul float %2, 2.000000e+00
   %4 = fdiv float %1, %3
   %5 = fcmp ole float %4, 8.300000e+02
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

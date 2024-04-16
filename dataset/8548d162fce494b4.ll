@@ -10,11 +10,11 @@
 define i1 @func0000000000000082(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 31
-  %4 = or i1 %0, %3
-  %5 = lshr i16 %1, 8
-  %6 = icmp eq i16 %5, 31
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %4 = or i1 %3, %0
+  %.mask = and i16 %1, -256
+  %5 = icmp eq i16 %.mask, 7936
+  %6 = or i1 %5, %4
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -26,11 +26,11 @@ entry:
 define i1 @func0000000000000202(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 256
-  %4 = or i1 %0, %3
-  %5 = lshr i32 %1, 24
-  %6 = icmp eq i32 %5, 3
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %4 = or i1 %3, %0
+  %.mask = and i32 %1, -16777216
+  %5 = icmp eq i32 %.mask, 50331648
+  %6 = or i1 %5, %4
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

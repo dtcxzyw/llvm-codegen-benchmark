@@ -5,7 +5,7 @@
 define i1 @func0000000000000044(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = add i32 %1, -300
   %6 = icmp ult i32 %5, -100
   %7 = and i1 %6, %4
@@ -33,7 +33,7 @@ entry:
 define i1 @func0000000000000304(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = add i32 %1, -1
   %6 = icmp ult i32 %5, 3
   %7 = and i1 %6, %4

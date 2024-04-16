@@ -10,7 +10,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = ashr exact i64 %1, 7
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }

@@ -9,7 +9,7 @@ entry:
   %2 = mul i32 %1, 6
   %3 = add i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = mul i32 %1, 50
   %3 = add i32 %2, 84
   %4 = zext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, 10
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -60,7 +60,7 @@ entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

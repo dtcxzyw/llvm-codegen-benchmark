@@ -7,12 +7,11 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000011(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 65536, %1
-  %3 = ashr exact i32 %2, 16
-  %4 = trunc nsw i32 %3 to i16
-  %5 = sub i16 0, %4
-  %6 = select i1 %0, i16 %4, i16 %5
-  ret i16 %6
+  %2 = shl nuw i32 1, %1
+  %3 = trunc i32 %2 to i16
+  %4 = sub i16 0, %3
+  %5 = select i1 %0, i16 %3, i16 %4
+  ret i16 %5
 }
 
 attributes #0 = { nounwind }

@@ -8,7 +8,7 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 12
   %4 = sitofp i32 %3 to float
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = icmp sgt i32 %1, 2
   %3 = select i1 %2, i32 2, i32 0
   %4 = sitofp i32 %3 to float
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

@@ -155,9 +155,8 @@ entry:
   %2 = add nuw i32 %1, 12
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.Mmr_Fixed_t_.1772329, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.Mmr_Fixed_t_.1772329, ptr %0, i64 %4, i32 6
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -168,9 +167,8 @@ entry:
   %2 = add nuw i32 %1, 12
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr inbounds %struct.Mmr_Fixed_t_.1772329, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 44
-  ret ptr %6
+  %5 = getelementptr %struct.Mmr_Fixed_t_.1772329, ptr %0, i64 %4, i32 6, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -181,9 +179,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 128
-  ret ptr %6
+  %5 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %4, i32 10
+  ret ptr %5
 }
 
 ; 1 occurrences:

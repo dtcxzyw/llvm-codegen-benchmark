@@ -8,7 +8,7 @@ entry:
   %4 = sub nuw nsw i64 65536, %1
   %5 = call i64 @llvm.umin.i64(i64 %4, i64 %3)
   %6 = trunc i64 %5 to i16
-  %7 = add i16 %0, %6
+  %7 = add i16 %6, %0
   ret i16 %7
 }
 

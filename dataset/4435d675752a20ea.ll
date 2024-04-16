@@ -4,7 +4,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 false), !range !0
+  %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
   %4 = add i64 %0, %1
   %5 = shl i64 %4, %3
   ret i64 %5

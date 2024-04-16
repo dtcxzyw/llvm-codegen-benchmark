@@ -10,8 +10,8 @@
 define i1 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i8 %0, i8 0
-  %4 = trunc i8 %3 to i1
+  %3 = trunc i8 %0 to i1
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 
@@ -22,9 +22,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i8 %0, i8 1
-  %4 = trunc nuw i8 %3 to i1
+  %2 = icmp ne i32 %1, 0
+  %3 = trunc nuw i8 %0 to i1
+  %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -35,8 +35,8 @@ entry:
 define i1 @func0000000000000010(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 99
-  %3 = select i1 %2, i8 %0, i8 0
-  %4 = trunc i8 %3 to i1
+  %3 = trunc i8 %0 to i1
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 

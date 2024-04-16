@@ -10,8 +10,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, 1
-  %6 = shl i32 %5, 8
+  %5 = shl i32 %4, 8
+  %6 = add i32 %5, 256
   ret i32 %6
 }
 

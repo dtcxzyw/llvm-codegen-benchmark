@@ -9,7 +9,8 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000051:                   # @func0000000000000051
 	sext.w	a1, a1
 	slli	a0, a0, 16
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da
@@ -33,6 +34,8 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a1, a1
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i1 %0, ptr %1) #0 {
 entry:
-  %2 = select i1 %0, ptr %1, ptr null
-  %3 = icmp ne ptr %2, null
+  %2 = icmp ne ptr %1, null
+  %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

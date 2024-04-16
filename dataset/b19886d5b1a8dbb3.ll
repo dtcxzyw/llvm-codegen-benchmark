@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %2, 30
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -17,11 +17,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 11
+  %2 = mul i64 %1, 3
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

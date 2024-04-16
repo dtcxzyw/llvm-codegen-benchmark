@@ -7,7 +7,7 @@ entry:
   %3 = add i64 %2, %1
   %4 = udiv i64 %3, %1
   %5 = trunc i64 %4 to i32
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 

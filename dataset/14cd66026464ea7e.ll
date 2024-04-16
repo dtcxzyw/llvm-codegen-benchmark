@@ -7,7 +7,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = icmp sle i32 %0, %5
+  %6 = icmp sge i32 %5, %0
   %7 = zext i1 %6 to i8
   ret i8 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = trunc i64 %4 to i32
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   %7 = zext i1 %6 to i8
   ret i8 %7
 }
@@ -33,7 +33,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   %7 = zext i1 %6 to i32
   ret i32 %7
 }

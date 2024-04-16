@@ -7,7 +7,7 @@ entry:
   %2 = freeze i32 %1
   %3 = shl nuw i32 %2, 1
   %4 = and i32 %3, 14
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = freeze i32 %1
   %3 = shl i32 %2, 1
   %4 = and i32 %3, -65538
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = freeze i32 %1
   %3 = shl nuw nsw i32 %2, 3
   %4 = and i32 %3, 56
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

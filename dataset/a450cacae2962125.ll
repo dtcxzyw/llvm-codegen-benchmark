@@ -11,7 +11,7 @@ entry:
   %3 = icmp eq i64 %2, -2
   %4 = icmp ne ptr %1, null
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -8,7 +8,7 @@ entry:
   %4 = select i1 %3, i32 3, i32 4
   %5 = zext nneg i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
-  %7 = icmp sge i32 %0, %6
+  %7 = icmp sle i32 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = select i1 %3, i64 12, i64 4
   %5 = zext nneg i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -34,7 +34,7 @@ entry:
   %4 = select i1 %3, i32 14, i32 16
   %5 = zext nneg i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = select i1 %3, i32 16, i32 8
   %5 = zext i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -60,7 +60,7 @@ entry:
   %4 = select i1 %3, i64 8, i64 0
   %5 = zext nneg i16 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -73,7 +73,7 @@ entry:
   %4 = select i1 %3, i32 -2, i32 -1
   %5 = zext i8 %1 to i32
   %6 = add nsw i32 %4, %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -86,7 +86,7 @@ entry:
   %4 = select i1 %3, i32 4, i32 9
   %5 = zext i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 

@@ -32,7 +32,7 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 24576
   %4 = icmp eq i32 %3, 8192
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -68,7 +68,7 @@ entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

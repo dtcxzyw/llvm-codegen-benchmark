@@ -9,7 +9,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, %0
   %5 = lshr i64 %4, 42
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   %7 = and i32 %6, 4193280
   ret i32 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
   %5 = lshr i64 %4, 42
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   %7 = and i32 %6, 4193280
   ret i32 %7
 }

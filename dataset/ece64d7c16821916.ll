@@ -134,11 +134,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
-  %4 = or disjoint i32 %0, %1
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %3 = or disjoint i32 %0, %1
+  %4 = icmp slt i32 %3, 0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -192,10 +190,8 @@ entry:
 define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = and i32 %0, 63
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 65536
-  ret i1 %6
+  %4 = icmp ult i32 %3, 65536
+  ret i1 %4
 }
 
 ; 1 occurrences:

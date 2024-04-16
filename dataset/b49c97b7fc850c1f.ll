@@ -23,7 +23,7 @@ define i1 @func000000000000029a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, 2
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = mul nsw i32 %0, %4
+  %5 = mul nsw i32 %4, %0
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }

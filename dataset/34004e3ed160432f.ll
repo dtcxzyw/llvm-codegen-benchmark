@@ -87,7 +87,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %1, -3
   %5 = add i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -115,7 +115,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = mul nsw i64 %1, 86400000
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -140,7 +140,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %1, -10000
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

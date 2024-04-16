@@ -10,7 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	srliw	a2, a2, 24
 	slli	a2, a2, 16
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	lui	a1, 1044480
 	and	a0, a0, a1

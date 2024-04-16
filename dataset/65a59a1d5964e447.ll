@@ -8,7 +8,7 @@ entry:
   %4 = shl nsw i64 %1, 2
   %5 = add i64 %4, %3
   %6 = icmp ult i64 %5, 32
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = add i64 %1, 178608
   %5 = add i64 %4, %3
   %6 = icmp ult i64 %5, 32
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

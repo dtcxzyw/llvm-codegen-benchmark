@@ -4,31 +4,25 @@ func00000000000000c8:                   # @func00000000000000c8
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000088:                   # @func0000000000000088
 	addi	a1, a1, 1
-	slli	a0, a0, 32
-	slli	a1, a1, 32
-	mulhu	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000006c:                   # @func000000000000006c
 	addi	a1, a1, -1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, -1
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
-	mulw	a0, a1, a0
+	mul	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, 1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
 	addi	a1, a1, 1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	ret

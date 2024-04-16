@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %3, 2
   %5 = and i32 %1, 1
   %6 = or disjoint i32 %4, %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = and i32 %3, 2
   %5 = and i32 %1, 1
   %6 = or disjoint i32 %4, %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = and i32 %3, 248
   %5 = and i32 %1, 7
   %6 = or disjoint i32 %4, %5
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

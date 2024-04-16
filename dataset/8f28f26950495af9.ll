@@ -8,8 +8,8 @@ define i64 @func0000000000000081(i64 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, 11400714785074694791
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = add i64 %0, %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = add i64 %4, %0
   %6 = tail call noundef i64 @llvm.bswap.i64(i64 %5)
   ret i64 %6
 }

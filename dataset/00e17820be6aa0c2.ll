@@ -37,10 +37,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -7378697629483820647
+  %3 = and i64 %2, 1844674407370955161
   %4 = and i64 %1, 2459565876494606882
   %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %5, %0
+  %6 = or i64 %5, %0
   %7 = shl i64 %6, 2
   ret i64 %7
 }
@@ -50,8 +50,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -6148914691236517206
-  %4 = and i64 %1, 6148914691236517205
+  %3 = and i64 %2, 3074457345618258602
+  %4 = and i64 %1, 1537228672809129301
   %5 = or disjoint i64 %4, %3
   %6 = or i64 %5, %0
   %7 = shl i64 %6, 2

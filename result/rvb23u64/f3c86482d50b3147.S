@@ -8,10 +8,8 @@ func0000000000000028:                   # @func0000000000000028
 	sltu	a0, a1, a0
 	ret
 func0000000000000024:                   # @func0000000000000024
-	sext.w	a0, a0
-	bset	a1, zero, a1
-	sext.w	a1, a1
-	sltu	a0, a0, a1
+	srlw	a0, a0, a1
+	seqz	a0, a0
 	ret
 func000000000000003b:                   # @func000000000000003b
 	sext.w	a0, a0
@@ -55,10 +53,8 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a1, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	sext.w	a0, a0
-	bset	a1, zero, a1
-	sext.w	a1, a1
-	sltu	a0, a0, a1
+	srlw	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
@@ -145,9 +141,8 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a1
 	ret
 func0000000000000039:                   # @func0000000000000039
-	bset	a1, zero, a1
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
+	srl	a0, a0, a1
+	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a2, 7

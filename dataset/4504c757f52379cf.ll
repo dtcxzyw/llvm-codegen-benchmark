@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 1
-  %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %0, %4
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 1
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 
@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 16
-  %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 16
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -33,9 +33,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 16
-  %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 16
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -44,9 +44,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 %2, i8 -1
-  %4 = sext i8 %3 to i32
-  %5 = icmp ne i32 %0, %4
+  %3 = sext i8 %2 to i32
+  %4 = select i1 %1, i32 %3, i32 -1
+  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 
@@ -57,9 +57,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 0
-  %4 = sext i32 %3 to i64
-  %5 = icmp sge i64 %0, %4
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 0
+  %5 = icmp sle i64 %4, %0
   ret i1 %5
 }
 
@@ -69,9 +69,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 1
-  %4 = sext i32 %3 to i64
-  %5 = icmp sle i64 %0, %4
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 %3, i64 1
+  %5 = icmp sge i64 %4, %0
   ret i1 %5
 }
 

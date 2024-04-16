@@ -21,7 +21,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = sub nsw i64 %1, %4
-  %6 = mul nsw i64 %0, %5
+  %6 = mul nsw i64 %5, %0
   ret i64 %6
 }
 

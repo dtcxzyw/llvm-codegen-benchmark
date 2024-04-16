@@ -1,26 +1,22 @@
 func0000000000000018:                   # @func0000000000000018
 	sub	a1, a1, a2
-	srai	a1, a1, 4
-	sltiu	a1, a1, 2
+	sltiu	a1, a1, 17
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a2
-	srai	a1, a1, 6
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sub	a1, a1, a2
-	srai	a1, a1, 5
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sub	a1, a1, a2
-	srai	a1, a1, 2
-	sltiu	a1, a1, 3
+	sltiu	a1, a1, 12
 	and	a0, a0, a1
 	ret

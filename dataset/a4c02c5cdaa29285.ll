@@ -7,10 +7,8 @@ define i1 @func00000000000007b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 8
   %3 = add nuw nsw i64 %2, %0
-  %4 = lshr i64 %3, 32
-  %5 = trunc nuw nsw i64 %4 to i32
-  %6 = icmp ult i32 %5, 128
-  ret i1 %6
+  %4 = icmp ult i64 %3, 549755813888
+  ret i1 %4
 }
 
 ; 1 occurrences:

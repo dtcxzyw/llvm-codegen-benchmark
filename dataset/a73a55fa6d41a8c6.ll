@@ -10,12 +10,9 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000001d6(i48 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i48
-  %3 = shl nuw nsw i48 %2, 16
-  %4 = shl nuw i48 %0, 32
-  %5 = or disjoint i48 %4, %3
-  %6 = icmp slt i48 %5, 0
-  ret i1 %6
+  %.mask = and i48 %0, 32768
+  %2 = icmp ne i48 %.mask, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -23,12 +20,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000176(i48 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i48
-  %3 = shl nuw i48 %2, 32
-  %4 = shl nuw nsw i48 %0, 16
-  %5 = or disjoint i48 %4, %3
-  %6 = icmp slt i48 %5, 0
-  ret i1 %6
+  %2 = icmp slt i16 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:

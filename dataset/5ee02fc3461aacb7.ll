@@ -8,7 +8,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = and i32 %3, 8
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %1, %5
+  %6 = add nsw i64 %5, %1
   %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = shl i8 %2, 2
   %4 = and i8 %3, 60
   %5 = zext nneg i8 %4 to i32
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = shl nuw nsw i8 %2, 1
   %4 = and i8 %3, 2
   %5 = zext nneg i8 %4 to i32
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = icmp eq i32 %6, %0
   ret i1 %7
 }

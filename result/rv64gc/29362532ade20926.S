@@ -11,17 +11,18 @@ func00000000000000e0:                   # @func00000000000000e0
 	or	a0, a0, a1
 	ret
 func0000000000000085:                   # @func0000000000000085
-	add	a1, a1, a2
+	or	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 func00000000000000c5:                   # @func00000000000000c5
-	add	a1, a1, a2
+	or	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	add	a1, a1, a2
+	neg	a2, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

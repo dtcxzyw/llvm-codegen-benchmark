@@ -7,7 +7,7 @@ entry:
   %3 = fptosi float %2 to i32
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 2)
   %5 = tail call i32 @llvm.smin.i32(i32 %1, i32 %4)
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 16)
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %1)
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

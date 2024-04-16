@@ -1,32 +1,24 @@
 func0000000000000004:                   # @func0000000000000004
-	ori	a1, a0, 1
-	andi	a1, a1, 255
-	slli	a0, a0, 56
-	srli	a0, a0, 57
+	andi	a1, a0, 252
+	srli	a1, a1, 1
 	or	a0, a0, a1
-	srli	a1, a0, 2
+	andi	a1, a0, 248
+	srli	a1, a1, 2
 	or	a0, a0, a1
-	srli	a1, a0, 4
+	andi	a1, a0, 224
+	srli	a1, a1, 4
 	or	a0, a0, a1
 	not	a0, a0
-	srli	a1, a0, 1
-	lui	a2, 349525
-	addiw	a2, a2, 1365
-	and	a1, a1, a2
-	sub	a0, a0, a1
-	lui	a1, 209715
-	addiw	a1, a1, 819
-	and	a2, a0, a1
-	srli	a0, a0, 2
-	and	a0, a0, a1
-	add	a0, a0, a2
+	andi	a1, a0, -2
+	srli	a0, a0, 1
+	andi	a0, a0, 85
+	subw	a1, a1, a0
+	andi	a0, a1, 51
+	srli	a1, a1, 2
+	andi	a1, a1, 51
+	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	lui	a1, 61681
-	addi	a1, a1, -241
-	and	a0, a0, a1
-	lui	a1, 4112
-	addi	a1, a1, 257
-	mul	a0, a0, a1
-	srliw	a0, a0, 24
+	ori	a0, a0, 24
+	andi	a0, a0, 31
 	ret

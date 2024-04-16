@@ -53,9 +53,8 @@ entry:
   %2 = add i64 %1, 31
   %3 = and i64 %2, -32
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr %struct.be128.2027289, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr %struct.be128.2027289, ptr %4, i64 %0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -66,9 +65,8 @@ entry:
   %2 = add nsw i64 %1, 7
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr inbounds %struct.TestObject.2276292, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.TestObject.2276292, ptr %4, i64 %0, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

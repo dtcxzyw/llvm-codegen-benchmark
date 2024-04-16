@@ -32,9 +32,9 @@ func00000000000002b1:                   # @func00000000000002b1
 	ret
 func0000000000000331:                   # @func0000000000000331
 	sext.w	a2, a1
-	li	a1, 16
-	bnez	a2, .LBB3_2
 	li	a1, 32
+	beqz	a2, .LBB3_2
+	li	a1, 16
 .LBB3_2:                                # %entry
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -120,9 +120,9 @@ func0000000000000231:                   # @func0000000000000231
 	ret
 func0000000000000334:                   # @func0000000000000334
 	andi	a2, a1, 255
-	li	a1, 6
-	bnez	a2, .LBB12_2
 	li	a1, 3
+	beqz	a2, .LBB12_2
+	li	a1, 6
 .LBB12_2:                               # %entry
 	addi	a0, a0, 1
 	sltu	a0, a0, a1

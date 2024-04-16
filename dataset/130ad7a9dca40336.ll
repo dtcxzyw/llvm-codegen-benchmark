@@ -6,10 +6,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  ret ptr %4
+  %.neg = mul nsw i64 %1, -2
+  %2 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 ; 14 occurrences:
@@ -30,10 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 5
-  %3 = sub i64 0, %2
-  %4 = getelementptr inbounds i32, ptr %0, i64 %3
-  ret ptr %4
+  %.neg = mul i64 %1, -32
+  %2 = getelementptr inbounds i32, ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 ; 16 occurrences:
@@ -120,10 +118,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 2
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  ret ptr %4
+  %.neg = mul nsw i64 %1, -4
+  %2 = getelementptr inbounds i8, ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 ; 4 occurrences:
@@ -201,10 +198,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = sub i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 %3
-  ret ptr %4
+  %.neg = mul i64 %1, -2
+  %2 = getelementptr i8, ptr %0, i64 %.neg
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

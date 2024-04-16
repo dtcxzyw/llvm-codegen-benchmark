@@ -1,4 +1,5 @@
 func000000000000000a:                   # @func000000000000000a
-	sraiw	a0, a0, 2
-	sgtz	a0, a0
+	sext.w	a0, a0
+	slti	a0, a0, 4
+	xori	a0, a0, 1
 	ret

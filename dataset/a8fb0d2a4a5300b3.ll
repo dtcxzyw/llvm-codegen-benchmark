@@ -5,7 +5,7 @@
 define i1 @func0000000000000030(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 19
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = trunc i8 %1 to i1
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000032(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 2
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = trunc nuw i8 %1 to i1
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

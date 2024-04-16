@@ -5,7 +5,7 @@
 define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = lshr i32 %1, 24
   %6 = or i32 %4, %5
   %7 = icmp ugt i32 %6, 128
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 245760
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = lshr i32 %1, 2
   %6 = or disjoint i32 %4, %5
   %7 = icmp ugt i32 %6, 131072
@@ -34,7 +34,7 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = lshr i32 %1, 24
   %6 = or disjoint i32 %4, %5
   %7 = icmp eq i32 %6, 0

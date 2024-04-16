@@ -31,8 +31,8 @@ entry:
 define i1 @func0000000000000a22(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
-  %4 = add nsw i32 %1, %3
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %1
+  %5 = icmp eq i32 %3, %4
   %6 = icmp eq i32 %0, 0
   %7 = or i1 %6, %5
   ret i1 %7
@@ -44,7 +44,7 @@ entry:
 define i1 @func0000000000001902(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 4
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = icmp ugt i64 %4, -17
   %6 = icmp eq i32 %0, -1
   %7 = or i1 %6, %5

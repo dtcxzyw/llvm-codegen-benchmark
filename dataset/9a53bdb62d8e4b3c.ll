@@ -6,7 +6,7 @@
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = sdiv i64 %3, 60
   ret i64 %4
 }

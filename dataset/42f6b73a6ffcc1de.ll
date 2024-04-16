@@ -154,7 +154,7 @@ define i1 @func00000000000001a4(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %3, 4
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   %6 = zext i16 %1 to i32
   %7 = icmp ult i32 %5, %6
   ret i1 %7
@@ -221,7 +221,7 @@ define i1 @func00000000000003da(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = add nuw nsw i32 %3, 11
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = zext nneg i8 %1 to i32
   %7 = icmp sgt i32 %5, %6
   ret i1 %7

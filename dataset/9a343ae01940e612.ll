@@ -132,7 +132,7 @@ entry:
   %2 = and i32 %1, 32767
   %3 = tail call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = add nsw i32 %3, -16446
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

@@ -11,7 +11,7 @@ define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
   %3 = fneg double %2
-  %4 = fcmp olt double %0, %3
+  %4 = fcmp ogt double %3, %0
   ret i1 %4
 }
 

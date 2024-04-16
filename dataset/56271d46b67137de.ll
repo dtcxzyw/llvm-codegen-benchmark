@@ -7,7 +7,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
   %4 = add nuw nsw i32 %3, 2
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 5
   %4 = add nuw nsw i32 %3, 1
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

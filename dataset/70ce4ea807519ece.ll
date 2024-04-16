@@ -12,11 +12,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = ashr exact i64 %2, 5
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds %"class.std::__cxx11::basic_string.1696494", ptr %0, i64 %4
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr %"class.std::__cxx11::basic_string.1696494", ptr %3, i64 %1
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
 }
 
 ; 3 occurrences:
@@ -27,8 +26,8 @@ entry:
 define i64 @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = add i64 %3, %1
-  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

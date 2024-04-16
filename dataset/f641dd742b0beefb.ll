@@ -9,8 +9,9 @@ entry:
   %2 = mul i32 %1, 1233
   %3 = add i32 %2, 80145
   %4 = ashr i32 %3, 12
-  %5 = add nsw i32 %4, 1
-  %6 = select i1 %0, i32 %4, i32 %5
+  %not. = xor i1 %0, true
+  %5 = zext i1 %not. to i32
+  %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 

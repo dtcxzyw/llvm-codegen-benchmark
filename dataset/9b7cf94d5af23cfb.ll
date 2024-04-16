@@ -6,7 +6,7 @@
 define i64 @func0000000000000019(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = xor i1 %1, %3
+  %4 = xor i1 %3, %1
   %5 = select i1 %4, i64 0, i64 8192
   %6 = and i64 %0, -8193
   %7 = or disjoint i64 %6, %5
@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
-  %4 = xor i1 %1, %3
+  %4 = xor i1 %3, %1
   %5 = select i1 %4, i32 8, i32 0
   %6 = and i32 %0, 7
   %7 = or disjoint i32 %5, %6

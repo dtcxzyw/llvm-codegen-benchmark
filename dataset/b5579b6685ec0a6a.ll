@@ -98,9 +98,9 @@ entry:
 define i1 @func00000000000000cc(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, -104
-  %4 = icmp ne i8 %1, 121
-  %5 = select i1 %4, i1 %3, i1 %0
-  ret i1 %5
+  %.not = icmp eq i8 %1, 121
+  %4 = select i1 %.not, i1 %0, i1 %3
+  ret i1 %4
 }
 
 ; 14 occurrences:

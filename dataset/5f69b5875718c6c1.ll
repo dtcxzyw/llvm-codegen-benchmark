@@ -13,7 +13,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, -1
   ret i1 %7
 }

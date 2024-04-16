@@ -32,7 +32,7 @@ define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = mul nuw nsw i64 %2, 5
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   %5 = lshr i64 %4, 32
   ret i64 %5
 }
@@ -44,7 +44,7 @@ define i128 @func0000000000000014(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = mul nuw i128 %2, 10779635027931437427
-  %4 = add nuw i128 %0, %3
+  %4 = add nuw i128 %3, %0
   %5 = lshr i128 %4, 64
   ret i128 %5
 }

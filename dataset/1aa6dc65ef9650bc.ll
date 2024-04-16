@@ -153,10 +153,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.ieee80211_sband_iftype_data.2006973, ptr %0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 2
-  %4 = icmp eq ptr %3, null
-  ret i1 %4
+  %2 = getelementptr %struct.ieee80211_sband_iftype_data.2006973, ptr %0, i64 %1, i32 1
+  %3 = icmp eq ptr %2, null
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -164,10 +163,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.ieee80211_sband_iftype_data.2008560, ptr %0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 2
-  %4 = icmp ne ptr %3, null
-  ret i1 %4
+  %2 = getelementptr %struct.ieee80211_sband_iftype_data.2008560, ptr %0, i64 %1, i32 1
+  %3 = icmp ne ptr %2, null
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

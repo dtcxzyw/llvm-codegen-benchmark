@@ -10,7 +10,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
   %5 = add nsw i64 %4, -4
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = add i32 %4, 1008
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

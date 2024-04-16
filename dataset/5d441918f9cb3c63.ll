@@ -11,10 +11,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr i32 %1, 10
-  %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %0, %3
-  ret i1 %4
+  %2 = icmp sgt i32 %1, -1
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 8 occurrences:
@@ -29,10 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 1
-  %3 = icmp eq i64 %2, -1
-  %4 = and i1 %0, %3
-  ret i1 %4
+  %2 = icmp ugt i64 %1, -3
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -41,10 +39,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr i64 %1, 1
-  %3 = icmp slt i64 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
+  %2 = icmp slt i64 %1, 0
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -55,10 +52,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 4
-  %3 = icmp ugt i64 %2, 1
-  %4 = and i1 %0, %3
-  ret i1 %4
+  %2 = icmp ugt i64 %1, 16
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 13 occurrences:
@@ -78,10 +74,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 16
-  %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %0, %3
-  ret i1 %4
+  %2 = icmp sgt i32 %1, 0
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -90,10 +85,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr i32 %1, 16
-  %3 = icmp ne i32 %2, 2
-  %4 = and i1 %0, %3
-  ret i1 %4
+  %.mask = and i32 %1, -65536
+  %2 = icmp ne i32 %.mask, 131072
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -101,10 +96,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 16
-  %3 = icmp slt i32 %2, 0
-  %4 = and i1 %0, %3
-  ret i1 %4
+  %2 = icmp slt i32 %1, 0
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -113,10 +107,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 2
-  %3 = icmp ult i64 %2, 3
-  %4 = and i1 %3, %0
-  ret i1 %4
+  %2 = icmp ult i64 %1, 12
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

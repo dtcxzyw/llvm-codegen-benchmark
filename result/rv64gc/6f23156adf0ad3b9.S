@@ -8,7 +8,9 @@ func0000000000000063:                   # @func0000000000000063
 	ret
 func0000000000000023:                   # @func0000000000000023
 	bnez	a0, .LBB1_2
-	li	a0, -1074
+	li	a0, 1
+	slli	a0, a0, 32
+	addi	a0, a0, -1074
 	ret
 .LBB1_2:
 	andi	a0, a1, 2047

@@ -135,7 +135,7 @@ define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -185,7 +185,7 @@ define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 1, %1
   %3 = xor i16 %2, -1
-  %4 = and i16 %0, %3
+  %4 = and i16 %3, %0
   %5 = icmp eq i16 %4, 0
   ret i1 %5
 }
@@ -225,7 +225,7 @@ define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
@@ -238,7 +238,7 @@ define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp ult i32 %4, 10
   ret i1 %5
 }
@@ -252,7 +252,7 @@ define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -264,7 +264,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 255, %1
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

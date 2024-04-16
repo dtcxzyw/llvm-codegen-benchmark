@@ -1,12 +1,12 @@
 func0000000000000001:                   # @func0000000000000001
-	slliw	a1, a1, 3
+	slli	a1, a1, 35
+	srli	a1, a1, 35
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slliw	a1, a1, 24
-	lui	a2, 274432
-	xor	a1, a1, a2
+	andi	a1, a1, 255
+	addi	a1, a1, -67
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -21,9 +21,8 @@ func000000000000000a:                   # @func000000000000000a
 	and	a0, a0, a1
 	ret
 func000000000000002a:                   # @func000000000000002a
-	slli	a1, a1, 1
-	slti	a1, a1, 0
-	xori	a1, a1, 1
+	not	a1, a1
+	bexti	a1, a1, 62
 	and	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

@@ -754,9 +754,7 @@ entry:
 define i1 @func000000000000004b(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 6
-  %2 = icmp sge i32 %0, 0
-  %3 = and i1 %2, %1
-  ret i1 %3
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

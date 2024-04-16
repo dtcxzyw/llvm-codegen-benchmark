@@ -79,7 +79,8 @@ func000000000000006c:                   # @func000000000000006c
 	andi	a0, a0, 1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	addi	a1, a1, 224
+	andi	a1, a1, 63
+	xori	a1, a1, 32
 	srl	a0, a0, a1
 	andi	a0, a0, 1
 	ret

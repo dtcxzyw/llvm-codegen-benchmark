@@ -12,10 +12,9 @@
 define i1 @func00000000000000c6(i48 %0, i48 %1) #0 {
 entry:
   %2 = or disjoint i48 %0, %1
-  %3 = lshr exact i48 %2, 16
-  %4 = trunc i48 %3 to i16
-  %5 = icmp slt i16 %4, 0
-  ret i1 %5
+  %3 = and i48 %2, 2147483648
+  %4 = icmp ne i48 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -24,10 +23,9 @@ entry:
 define i1 @func0000000000000086(i48 %0, i48 %1) #0 {
 entry:
   %2 = or disjoint i48 %0, %1
-  %3 = lshr i48 %2, 16
-  %4 = trunc i48 %3 to i16
-  %5 = icmp slt i16 %4, 0
-  ret i1 %5
+  %3 = and i48 %2, 2147483648
+  %4 = icmp ne i48 %3, 0
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -64,10 +62,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, 65536
-  ret i1 %5
+  %3 = icmp ult i64 %2, 281474976710656
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -47,7 +47,8 @@ func00000000000000e8:                   # @func00000000000000e8
 	slli	a2, a2, 4
 	or	a0, a0, a1
 	or	a0, a0, a2
-	zext.h	a0, a0
-	li	a1, 2047
-	sltu	a0, a1, a0
+	li	a1, 31
+	slli	a1, a1, 11
+	and	a0, a0, a1
+	snez	a0, a0
 	ret

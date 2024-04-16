@@ -37,7 +37,7 @@ define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %2, double %3
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   %6 = fdiv double 1.000000e+00, %5
   ret double %6
 }

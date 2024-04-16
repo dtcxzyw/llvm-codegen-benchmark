@@ -12,12 +12,11 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
-  %5 = and i32 %4, 255
-  %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr inbounds i32, ptr %0, i64 %6
-  ret ptr %7
+  %.tr = trunc i32 %1 to i8
+  %.narrow = add i8 %.tr, %2
+  %3 = zext i8 %.narrow to i64
+  %4 = getelementptr inbounds i32, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -26,12 +25,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
-  %5 = and i32 %4, 255
-  %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %"union.absl::lts_20230802::container_internal::map_slot_type.677.2130514", ptr %0, i64 %6
-  ret ptr %7
+  %.tr = trunc i32 %1 to i8
+  %.narrow = add i8 %.tr, %2
+  %3 = zext i8 %.narrow to i64
+  %4 = getelementptr %"union.absl::lts_20230802::container_internal::map_slot_type.677.2130514", ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -40,7 +38,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = and i32 %4, 255
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i16, ptr %0, i64 %6

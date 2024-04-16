@@ -1,6 +1,6 @@
 func0000000000000022:                   # @func0000000000000022
 	mul	a2, a2, a3
-	mulhu	a1, a1, a3
+	mulhu	a1, a3, a1
 	add	a1, a1, a2
 	mul	a2, a1, a0
 	mulhu	a1, a1, a0

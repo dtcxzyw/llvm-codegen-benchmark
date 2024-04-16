@@ -22,7 +22,7 @@ entry:
   %2 = fptosi float %1 to i32
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 2)
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

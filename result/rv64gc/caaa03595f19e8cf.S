@@ -53,10 +53,9 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a0, a0
 	subw	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	sltiu	a1, a1, 4
-	not	a1, a1
+	srliw	a1, a1, 2
+	slli	a1, a1, 2
+	snez	a1, a1
 	sltiu	a0, a0, 47
 	and	a0, a0, a1
 	ret

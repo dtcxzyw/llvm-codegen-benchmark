@@ -7,7 +7,7 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000010:                   # @func0000000000000010
 	not	a0, a0
-	add.uw	a0, a1, a0
+	addw	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	zext.h	a1, a1
@@ -18,6 +18,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 255
-	subw	a0, a1, a0
-	addiw	a0, a0, -10
+	subw	a1, a1, a0
+	lui	a0, 16
+	addi	a0, a0, -10
+	addw	a0, a0, a1
 	ret

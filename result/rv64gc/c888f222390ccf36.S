@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a0, 522240
 	fmv.w.x	fa1, a0
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 522240
@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	bnez	a0, .LBB2_2
 	fmv.s	fa5, fa1
 .LBB2_2:                                # %entry
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a0, 522240
@@ -37,7 +37,7 @@ func0000000000000009:                   # @func0000000000000009
 	bnez	a0, .LBB3_2
 	fmv.w.x	fa1, zero
 .LBB3_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
@@ -46,7 +46,7 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, -1
 	fmv.w.x	fa1, a0
 .LBB4_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
@@ -54,7 +54,7 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB5_2
 	fmv.s	fa5, fa1
 .LBB5_2:                                # %entry
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LCPI6_0:
 	.word	0x322bcc77                      # float 9.99999993E-9
@@ -65,5 +65,5 @@ func000000000000000b:                   # @func000000000000000b
 	bnez	a0, .LBB6_2
 	fmv.w.x	fa1, zero
 .LBB6_2:                                # %entry
-	fmul.s	fa0, fa0, fa1
+	fmul.s	fa0, fa1, fa0
 	ret

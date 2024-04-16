@@ -8,11 +8,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nsw i32 -1, %2
-  %4 = xor i32 %3, -1
-  %5 = sub i32 %0, %1
-  %6 = icmp ugt i32 %5, %4
-  ret i1 %6
+  %3 = sub i32 %0, %1
+  %.highbits = lshr i32 %3, %2
+  %4 = icmp ne i32 %.highbits, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:

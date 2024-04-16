@@ -5,7 +5,7 @@
 define i1 @func0000000000000037(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3FF0E8A460000000
-  %4 = fcmp ult float %1, %3
+  %4 = fcmp ugt float %3, %1
   %5 = fcmp une float %0, 0.000000e+00
   %6 = and i1 %5, %4
   ret i1 %6
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000088(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3FEE54EDC0000000
-  %4 = fcmp oeq double %1, %3
+  %4 = fcmp oeq double %3, %1
   %5 = fcmp oeq double %0, 0x3FAAB12320000000
   %6 = and i1 %5, %4
   ret i1 %6

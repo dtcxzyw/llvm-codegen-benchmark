@@ -8,11 +8,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(ptr %0) #0 {
 entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = and i64 %1, -2
-  %3 = icmp ne i64 %2, 0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
+  %1 = icmp ugt ptr %0, inttoptr (i64 1 to ptr)
+  %2 = zext i1 %1 to i64
+  ret i64 %2
 }
 
 ; 21 occurrences:

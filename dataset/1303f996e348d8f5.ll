@@ -5,7 +5,7 @@
 define i1 @func000000000000000a(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = xor i16 %2, -32768
-  %4 = icmp sgt i16 %1, %3
+  %4 = icmp slt i16 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -19,8 +19,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = xor i64 %2, 1092
-  %4 = icmp eq i64 %1, %3
+  %3 = xor i64 %2, %1
+  %4 = icmp eq i64 %3, 1092
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

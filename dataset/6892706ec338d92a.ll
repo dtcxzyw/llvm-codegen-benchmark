@@ -20,9 +20,8 @@ define i1 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 1000
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 10
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %3 = icmp ne i32 %2, -10
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -58,9 +57,8 @@ define i1 @func000000000000010c(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 12
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %3 = icmp ne i32 %2, 1
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

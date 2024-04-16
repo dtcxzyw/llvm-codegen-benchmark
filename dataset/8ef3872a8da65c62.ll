@@ -7,7 +7,7 @@
 define i16 @func0000000000000070(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = trunc i32 %4 to i16
   %6 = zext i8 %0 to i16
   %7 = udiv i16 %5, %6
@@ -22,7 +22,7 @@ entry:
 define i16 @func0000000000000074(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = trunc nuw i32 %4 to i16
   %6 = zext i8 %0 to i16
   %7 = udiv i16 %5, %6

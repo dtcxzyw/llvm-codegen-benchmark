@@ -8,7 +8,7 @@ entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp oge double %4, 0xC3D0000000000000
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp olt double %4, 0x73D658E3AB795204
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

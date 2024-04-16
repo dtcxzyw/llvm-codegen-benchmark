@@ -62,7 +62,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 255
+  %1 = and i16 %0, 252
   %2 = icmp ult i16 %1, 100
   %3 = add i16 %0, -5120
   %4 = icmp ult i16 %3, 1536

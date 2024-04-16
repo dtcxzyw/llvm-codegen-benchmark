@@ -4,10 +4,9 @@ func0000000000000000:                   # @func0000000000000000
 	blt	a3, a4, .LBB0_2
 	li	a3, 17
 .LBB0_2:                                # %entry
-	subw	a2, a2, a3
-	subw	a0, a0, a1
-	negw	a0, a0
-	subw	a0, a0, a2
+	subw	a3, a3, a2
+	subw	a0, a1, a0
+	addw	a0, a0, a3
 	ret
 func0000000000000055:                   # @func0000000000000055
 	sext.w	a3, a2
@@ -15,8 +14,7 @@ func0000000000000055:                   # @func0000000000000055
 	blt	a3, a4, .LBB1_2
 	li	a3, 17
 .LBB1_2:                                # %entry
-	subw	a2, a2, a3
-	subw	a0, a0, a1
-	negw	a0, a0
-	subw	a0, a0, a2
+	subw	a3, a3, a2
+	subw	a0, a1, a0
+	addw	a0, a0, a3
 	ret

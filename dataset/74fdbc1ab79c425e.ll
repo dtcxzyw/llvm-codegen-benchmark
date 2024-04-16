@@ -16,7 +16,7 @@ define i64 @func0000000000000000(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = xor i8 %0, %4
+  %5 = xor i8 %4, %0
   %6 = zext i8 %5 to i64
   ret i64 %6
 }

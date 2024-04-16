@@ -23,7 +23,7 @@ entry:
   %4 = shl nuw nsw i64 1, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i64 0, i64 %4
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -53,7 +53,7 @@ entry:
   %4 = shl nsw i64 -1, %3
   %5 = icmp ult i8 %1, 64
   %6 = select i1 %5, i64 0, i64 %4
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

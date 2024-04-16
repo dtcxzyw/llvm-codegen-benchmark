@@ -9,7 +9,7 @@ entry:
   %4 = sub nuw nsw i64 -40, %3
   %5 = getelementptr inbounds i8, ptr %1, i64 -4
   %6 = getelementptr inbounds i8, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

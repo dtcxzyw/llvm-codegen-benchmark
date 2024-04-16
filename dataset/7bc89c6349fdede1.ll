@@ -5,7 +5,7 @@
 define i32 @func0000000000000020(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = icmp ugt i32 %1, 3
   %6 = select i1 %5, i32 1073741824, i32 0
   %7 = or i32 %6, %4
@@ -21,7 +21,7 @@ entry:
   %3 = icmp ugt i64 %2, 65535
   %4 = select i1 %3, i32 16, i32 0
   %5 = zext i1 %1 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -46,7 +46,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 2
   %5 = zext i1 %1 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -59,7 +59,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp eq i32 %1, 8192
   %6 = select i1 %5, i32 2, i32 0
   %7 = or disjoint i32 %6, %4

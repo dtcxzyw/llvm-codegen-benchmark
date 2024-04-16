@@ -86,10 +86,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000001a(i8 %0, i8 %1) #0 {
 entry:
-  %2 = sub nsw i8 %0, %1
-  %3 = icmp sgt i8 %2, -1
-  %4 = select i1 %3, i8 1, i8 -1
-  ret i8 %4
+  %.not = icmp slt i8 %0, %1
+  %2 = select i1 %.not, i8 -1, i8 1
+  ret i8 %2
 }
 
 ; 26 occurrences:
@@ -153,10 +152,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 2, i32 0
-  ret i32 %4
+  %.not = icmp sgt i32 %0, %1
+  %2 = select i1 %.not, i32 0, i32 2
+  ret i32 %2
 }
 
 ; 6 occurrences:

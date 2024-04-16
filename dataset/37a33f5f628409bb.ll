@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(i64 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i64
-  %3 = ashr exact i64 %0, 2
-  %4 = add nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %.neg = zext i1 %1 to i64
+  %2 = ashr exact i64 %0, 2
+  %3 = icmp eq i64 %2, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:

@@ -36,9 +36,8 @@ define ptr @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %3, i64 0, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %3, i64 0, i64 %0, i32 1
+  ret ptr %4
 }
 
 ; 49 occurrences:
@@ -96,9 +95,8 @@ define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 128
-  %4 = getelementptr inbounds [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.1637702"], ptr %3, i64 0, i64 %0
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr inbounds [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.1637702"], ptr %3, i64 0, i64 %0, i32 2
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -110,9 +108,8 @@ define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 64
-  %4 = getelementptr [2 x %struct.kfree_rcu_cpu_work.2013339], ptr %3, i64 0, i64 %0
-  %5 = getelementptr i8, ptr %4, i64 96
-  ret ptr %5
+  %4 = getelementptr [2 x %struct.kfree_rcu_cpu_work.2013339], ptr %3, i64 0, i64 %0, i32 3, i64 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -122,9 +119,8 @@ define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr inbounds i8, ptr %2, i64 1040
-  %4 = getelementptr inbounds [75 x %struct.mi_page_queue_s.2404959], ptr %3, i64 0, i64 %0
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr [75 x %struct.mi_page_queue_s.2404959], ptr %3, i64 0, i64 %0, i32 2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -10,8 +10,7 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a0, a1
 	ret
 func0000000000000058:                   # @func0000000000000058
-	addiw	a1, a1, -1
-	addi	a1, a1, 1
+	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
 func0000000000000016:                   # @func0000000000000016

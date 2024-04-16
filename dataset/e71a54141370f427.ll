@@ -15,7 +15,7 @@ entry:
   %2 = ashr i32 %1, 1
   %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 true), !range !0
-  %5 = xor i32 %4, 31
+  %5 = xor i32 %4, 16
   %6 = icmp ugt i32 %5, 15
   ret i1 %6
 }

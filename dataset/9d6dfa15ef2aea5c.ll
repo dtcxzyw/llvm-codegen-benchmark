@@ -7,7 +7,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = trunc i32 %1 to i16
   %5 = tail call i16 @llvm.smax.i16(i16 %4, i16 %3)
-  %6 = icmp eq i16 %0, %5
+  %6 = icmp eq i16 %5, %0
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc nuw i64 %1 to i32
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 %3)
-  %6 = icmp ne i32 %0, %5
+  %6 = icmp ne i32 %5, %0
   ret i1 %6
 }
 

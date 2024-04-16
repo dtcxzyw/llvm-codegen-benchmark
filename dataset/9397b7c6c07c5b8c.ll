@@ -9,9 +9,8 @@ entry:
   %1 = fmul double %0, 1.000000e+09
   %2 = fptosi double %1 to i64
   %3 = srem i64 %2, 1000
-  %4 = sub nsw i64 %2, %3
-  %5 = icmp slt i64 %4, 0
-  ret i1 %5
+  %4 = icmp sgt i64 %3, %2
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

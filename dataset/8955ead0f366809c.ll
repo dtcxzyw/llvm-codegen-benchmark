@@ -10,10 +10,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4503599627370495
-  %3 = or disjoint i64 %2, 4503599627370496
-  %4 = select i1 %0, i64 %2, i64 %3
-  %5 = shl nuw nsw i64 %4, 1
+  %2 = shl i64 %1, 1
+  %3 = and i64 %2, 9007199254740990
+  %4 = or disjoint i64 %3, 9007199254740992
+  %5 = select i1 %0, i64 %3, i64 %4
   ret i64 %5
 }
 

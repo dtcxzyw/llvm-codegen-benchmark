@@ -19,7 +19,7 @@ define float @func0000000000000003(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %1, %4
+  %5 = fmul float %4, %1
   %6 = fdiv float %5, %0
   ret float %6
 }

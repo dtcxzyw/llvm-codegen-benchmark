@@ -2,7 +2,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	add	a0, a0, a1
 	andi	a0, a0, 63
 	addi	a0, a0, -1
-	andi	a0, a0, 255
+	andi	a0, a0, 254
 	sltiu	a0, a0, 6
 	ret
 func00000000000000fc:                   # @func00000000000000fc

@@ -213,10 +213,10 @@
 define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = add i64 %4, %3
-  %6 = icmp ult i64 %5, %3
+  %5 = xor i64 %3, -1
+  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 

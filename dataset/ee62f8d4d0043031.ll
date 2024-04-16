@@ -5,9 +5,9 @@
 define i32 @func000000000000003f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -128
-  %4 = shl nuw nsw i32 %3, 6
-  %5 = or disjoint i32 %0, %4
+  %3 = shl nuw nsw i32 %2, 6
+  %4 = add nsw i32 %3, -8192
+  %5 = or disjoint i32 %4, %0
   %6 = shl nuw nsw i32 %5, 6
   ret i32 %6
 }

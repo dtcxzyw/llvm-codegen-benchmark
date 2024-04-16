@@ -16,7 +16,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = urem i64 %1, %3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

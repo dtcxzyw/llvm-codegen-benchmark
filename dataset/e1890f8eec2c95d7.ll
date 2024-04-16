@@ -20,9 +20,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw i64 %4, %3
-  %6 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %5, i64 %0)
-  %7 = extractvalue { i64, i1 } %6, 0
-  ret i64 %7
+  %6 = mul i64 %5, %0
+  ret i64 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

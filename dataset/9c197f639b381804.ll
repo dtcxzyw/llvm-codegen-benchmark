@@ -27,7 +27,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
+  %2 = zext nneg i32 %1 to i64
   %3 = lshr i64 131024, %2
   %4 = and i64 %3, 1
   %5 = icmp ne i64 %4, 0

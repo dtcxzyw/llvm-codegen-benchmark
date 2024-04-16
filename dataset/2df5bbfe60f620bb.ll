@@ -11,8 +11,8 @@ define i1 @func0000000000000055(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ugt float %0, %4
-  %6 = fcmp ugt float %1, %4
+  %5 = fcmp ult float %4, %0
+  %6 = fcmp ult float %4, %1
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
@@ -29,8 +29,8 @@ define i1 @func0000000000000033(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ult float %0, %4
-  %6 = fcmp ult float %1, %4
+  %5 = fcmp ugt float %4, %0
+  %6 = fcmp ugt float %4, %1
   %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }

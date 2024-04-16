@@ -23,9 +23,9 @@ define i32 @func000000000000000c(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp ne i16 %0, 18761
-  %5 = select i1 %4, i32 %3, i32 %2
-  ret i32 %5
+  %.not = icmp eq i16 %0, 18761
+  %4 = select i1 %.not, i32 %2, i32 %3
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

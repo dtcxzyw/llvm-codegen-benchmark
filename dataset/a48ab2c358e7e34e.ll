@@ -6,7 +6,7 @@ define i1 @func0000000000000025(float %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
   %3 = select i1 %2, float %1, float 1.000000e+00
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   %5 = fcmp ugt float %4, 0.000000e+00
   ret i1 %5
 }

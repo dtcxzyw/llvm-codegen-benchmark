@@ -8,10 +8,9 @@ define i1 @func000000000000001c(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
   %4 = icmp eq i8 %3, 0
-  %5 = add i32 %0, -4
-  %6 = icmp ne i32 %5, 0
-  %7 = and i1 %6, %4
-  ret i1 %7
+  %5 = icmp ne i32 %0, 4
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 3 occurrences:

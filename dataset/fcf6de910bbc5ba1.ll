@@ -8,10 +8,9 @@ define i16 @func0000000000000014(i32 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %0
-  %5 = zext i16 %1 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = trunc i32 %6 to i16
-  ret i16 %7
+  %5 = trunc i32 %4 to i16
+  %6 = add i16 %5, %1
+  ret i16 %6
 }
 
 attributes #0 = { nounwind }

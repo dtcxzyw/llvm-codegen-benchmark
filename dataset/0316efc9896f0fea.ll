@@ -20,7 +20,7 @@
 define double @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }

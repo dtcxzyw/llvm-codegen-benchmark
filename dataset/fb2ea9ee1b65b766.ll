@@ -51,7 +51,7 @@ define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 1)
-  %4 = icmp sgt i64 %0, %3
+  %4 = icmp slt i64 %3, %0
   ret i1 %4
 }
 

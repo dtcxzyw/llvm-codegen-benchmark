@@ -53,9 +53,9 @@
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = icmp eq i32 %4, 0
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -81,8 +81,8 @@ define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 0
-  %5 = icmp ne i32 %4, 0
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -94,9 +94,9 @@ entry:
 define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
-  %3 = icmp eq i64 %2, 1
-  %4 = select i1 %3, i32 %0, i32 -1
-  %5 = icmp slt i32 %4, 0
+  %3 = icmp ne i64 %2, 1
+  %4 = icmp slt i32 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -108,8 +108,8 @@ define i1 @func0000000000000014(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 96
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i8 %0, i8 -1
-  %5 = icmp ult i8 %4, 6
+  %4 = icmp ult i8 %0, 6
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -126,8 +126,8 @@ define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 %0, i64 0
-  %5 = icmp ugt i64 %4, 1
+  %4 = icmp ugt i64 %0, 1
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -140,9 +140,9 @@ entry:
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741824
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 1073741824
-  %5 = icmp sgt i32 %4, -1
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp sgt i32 %0, -1
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -153,10 +153,10 @@ entry:
 define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
-  %3 = icmp ne i32 %2, 112
-  %4 = select i1 %3, i32 %0, i32 1
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %.not = icmp ne i32 %2, 112
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %.not, i1 %3, i1 false
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

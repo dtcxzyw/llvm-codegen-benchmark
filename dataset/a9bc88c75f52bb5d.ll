@@ -1518,10 +1518,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0) #0 {
 entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = and i64 %1, -4096
-  %3 = icmp ugt i64 %2, -2147483649
-  ret i1 %3
+  %1 = icmp ugt ptr %0, inttoptr (i64 -2147483649 to ptr)
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

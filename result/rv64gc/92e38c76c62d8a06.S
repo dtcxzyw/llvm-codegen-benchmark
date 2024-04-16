@@ -1,6 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	slli	a0, a0, 32
-	srli	a0, a0, 32
+	sext.w	a0, a0
 	li	a1, 63
 	bltu	a0, a1, .LBB0_2
 	li	a0, 63

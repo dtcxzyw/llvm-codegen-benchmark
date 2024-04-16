@@ -7,7 +7,7 @@
 define i1 @func000000000000003a(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp sgt i64 %4, 16777215
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -45,7 +45,7 @@ entry:
 define i1 @func000000000000001c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 1903126886
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -56,11 +56,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
-  %5 = icmp sgt i32 %4, -1
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
+  %3 = icmp sgt i32 %1, -1
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -68,11 +66,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i1 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp ugt i64 %4, 4294967295
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
+  %3 = icmp ugt i64 %1, 4294967295
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -84,7 +80,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ugt i32 %4, 131072
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -97,7 +93,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ult i32 %4, 64
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -109,11 +105,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp slt i64 %4, 0
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
+  %3 = icmp slt i64 %1, 0
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

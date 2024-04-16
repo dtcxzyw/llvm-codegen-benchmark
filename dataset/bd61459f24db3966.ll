@@ -95,8 +95,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = tail call { i32, i1 } @llvm.smul.with.overflow.i32(i32 %0, i32 10)
-  %2 = extractvalue { i32, i1 } %1, 1
+  %1 = add i32 %0, -214748365
+  %2 = icmp ult i32 %1, -429496729
   ret i1 %2
 }
 

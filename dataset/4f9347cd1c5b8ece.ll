@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
   %4 = add nsw i32 %3, -31
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

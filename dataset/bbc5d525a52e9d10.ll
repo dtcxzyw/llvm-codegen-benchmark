@@ -20,10 +20,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i8
-  %3 = xor i8 %2, 1
-  %4 = and i8 %0, %3
-  ret i8 %4
+  %2 = and i8 %0, 1
+  %3 = select i1 %1, i8 0, i8 %2
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

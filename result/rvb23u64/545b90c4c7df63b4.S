@@ -6,7 +6,7 @@ func000000000000001d:                   # @func000000000000001d
 func000000000000001c:                   # @func000000000000001c
 	srli	a4, a4, 1
 	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
 	mul	a2, a2, a4
 	sub	a3, a3, a1

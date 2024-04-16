@@ -1,17 +1,23 @@
 func000000000000000a:                   # @func000000000000000a
-	sraiw	a0, a0, 16
-	sgtz	a0, a0
+	sext.w	a0, a0
+	lui	a1, 16
+	addiw	a1, a1, -1
+	slt	a0, a1, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sraiw	a0, a0, 16
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sraiw	a0, a0, 24
-	addi	a0, a0, 1
+	li	a1, 255
+	slli	a1, a1, 24
+	and	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sraiw	a0, a0, 16
-	sltiu	a0, a0, -1
+	lui	a1, 65535
+	slli	a1, a1, 4
+	and	a0, a0, a1
+	xor	a0, a0, a1
+	snez	a0, a0
 	ret

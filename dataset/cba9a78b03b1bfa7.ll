@@ -11,11 +11,10 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 11
-  %3 = and i64 %2, 4294965248
-  %4 = lshr i64 %0, 32
-  %5 = mul nuw i64 %4, %3
-  %6 = and i64 %5, 4294965248
-  ret i64 %6
+  %3 = lshr i64 %0, 32
+  %4 = mul i64 %3, %2
+  %5 = and i64 %4, 4294965248
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 32
+  %2 = and i8 %1, 32
+  %3 = zext nneg i8 %2 to i32
   %4 = urem i32 %0, 31
   %5 = or disjoint i32 %4, %3
   %6 = icmp ne i32 %5, 0

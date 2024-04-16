@@ -1,7 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
-	addiw	a1, a1, 511
-	andi	a1, a1, -512
-	snez	a1, a1
+	addiw	a1, a1, -1
+	sltiu	a1, a1, -512
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
@@ -11,7 +10,7 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000034:                   # @func0000000000000034
 	addi	a1, a1, 1
-	andi	a1, a1, 255
+	andi	a1, a1, 224
 	sltiu	a1, a1, 96
 	and	a0, a0, a1
 	ret

@@ -40,9 +40,8 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 4
   %5 = getelementptr inbounds [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds %struct.dt_iop_colorzones_node_t.1768550, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.dt_iop_colorzones_node_t.1768550, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -70,9 +69,8 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr [0 x %struct.flow_action_entry.1996329], ptr %4, i64 0, i64 %3
-  %6 = getelementptr %struct.flow_action_entry.1996329, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 24
-  ret ptr %7
+  %6 = getelementptr %struct.flow_action_entry.1996329, ptr %5, i64 %0, i32 4
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

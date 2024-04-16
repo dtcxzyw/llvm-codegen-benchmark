@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = srem i16 %2, 60
   %4 = icmp eq i16 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

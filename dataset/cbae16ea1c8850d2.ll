@@ -33,7 +33,7 @@ entry:
 define i1 @func000000000000007c(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
-  %2 = sub nuw nsw i64 64, %1
+  %2 = sub nsw i64 0, %1
   %3 = and i64 %2, 3
   %4 = icmp ne i64 %3, 0
   ret i1 %4
@@ -60,7 +60,7 @@ entry:
 define i1 @func0000000000000071(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.ctlz.i64(i64 %0, i1 true), !range !1
-  %2 = sub nuw nsw i64 64, %1
+  %2 = sub nsw i64 0, %1
   %3 = and i64 %2, 8
   %4 = icmp eq i64 %3, 0
   ret i1 %4

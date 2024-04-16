@@ -46,7 +46,7 @@ define i64 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i64
-  %4 = zext i8 %0 to i64
+  %4 = zext nneg i8 %0 to i64
   %5 = shl i64 %3, %4
   ret i64 %5
 }

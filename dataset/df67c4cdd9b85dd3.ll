@@ -60,8 +60,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 %1, i32 1023
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 1023
   %6 = getelementptr inbounds [1024 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
@@ -84,8 +84,8 @@ entry:
 define ptr @func0000000000000022(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 7
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   %6 = getelementptr [6 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
@@ -119,11 +119,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i32 %1, i32 0
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [32 x %struct.FreeListData.2120758], ptr %0, i64 0, i64 %5
-  ret ptr %6
+  %.not = icmp eq i64 %2, 0
+  %3 = zext nneg i32 %1 to i64
+  %4 = select i1 %.not, i64 0, i64 %3
+  %5 = getelementptr [32 x %struct.FreeListData.2120758], ptr %0, i64 0, i64 %4
+  ret ptr %5
 }
 
 ; 2 occurrences:

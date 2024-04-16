@@ -21,11 +21,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %1, i64 48)
-  %3 = extractvalue { i64, i1 } %2, 0
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %2 = mul i64 %1, 48
+  %3 = getelementptr inbounds i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
+  ret ptr %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

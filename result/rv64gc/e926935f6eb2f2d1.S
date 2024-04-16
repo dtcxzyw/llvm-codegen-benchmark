@@ -5,7 +5,6 @@ func0000000000000183:                   # @func0000000000000183
 	ret
 func0000000000000193:                   # @func0000000000000193
 	snez	a1, a1
-	sext.w	a0, a0
-	srli	a0, a0, 2
+	srliw	a0, a0, 2
 	add	a0, a0, a1
 	ret

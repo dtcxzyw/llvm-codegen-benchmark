@@ -9,7 +9,7 @@ define i1 @func000000000000001c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %3, i8 -1, i8 -33
-  %5 = and i8 %1, %4
+  %5 = and i8 %4, %1
   %6 = icmp ne i8 %5, 0
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7

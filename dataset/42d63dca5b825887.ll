@@ -396,8 +396,8 @@ define ptr @func000000000000000d(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 9223372036854775744)
   %4 = add nuw nsw i64 %3, 63
-  %5 = select i1 %1, i64 9223372036854775807, i64 %4
-  %6 = lshr i64 %5, 6
+  %5 = lshr i64 %4, 6
+  %6 = select i1 %1, i64 144115188075855871, i64 %5
   %7 = getelementptr inbounds i64, ptr %0, i64 %6
   ret ptr %7
 }

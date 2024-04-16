@@ -100,11 +100,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.151.1640668", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  %5 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1640670"], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.151.1640668", ptr %1, i64 %2, i32 3
+  %4 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1640670"], ptr %3, i64 0, i64 %0, i32 0, i64 8
+  ret ptr %4
 }
 
 ; 35 occurrences:
@@ -164,9 +162,8 @@ define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.CalloutData.1666851, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -120
-  %5 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %4, i64 0, i64 %0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -174,11 +171,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.773.1724389", ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 16
-  %5 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1724392"], ptr %4, i64 0, i64 %0
-  %6 = getelementptr i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = getelementptr inbounds %"struct.folly::f14::detail::F14Chunk.773.1724389", ptr %1, i64 %2, i32 3
+  %4 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.1724392"], ptr %3, i64 0, i64 %0, i32 0, i64 8
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -189,9 +184,8 @@ define ptr @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -272
-  %5 = getelementptr [17 x %struct.bio_vec.1996641], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr [17 x %struct.bio_vec.1996641], ptr %4, i64 0, i64 %0, i32 2
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -212,11 +206,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.mq.2238993, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 104
-  %5 = getelementptr inbounds [10 x %struct.mq_item.2238994], ptr %4, i64 0, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %3 = getelementptr %struct.mq.2238993, ptr %1, i64 %2, i32 14, i64 %0
+  %4 = getelementptr inbounds i8, ptr %3, i64 8
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

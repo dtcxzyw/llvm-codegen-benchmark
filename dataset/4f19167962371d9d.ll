@@ -13,7 +13,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.fshl.i64(i64 %2, i64 %2, i64 32)
   %4 = add i64 %3, 4354685564936845355
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = tail call i64 @llvm.fshl.i64(i64 %0, i64 %0, i64 32)
   %7 = add i64 %6, %5
   ret i64 %7

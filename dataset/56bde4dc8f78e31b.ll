@@ -59,11 +59,11 @@ entry:
 define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %0, 15
-  %3 = icmp ne i8 %2, 0
-  %4 = select i1 %3, i8 %0, i8 %1
-  %5 = and i8 %4, 3
-  %6 = icmp ne i8 %5, 0
-  ret i1 %6
+  %.not = icmp eq i8 %2, 0
+  %3 = select i1 %.not, i8 %1, i8 %0
+  %4 = and i8 %3, 3
+  %5 = icmp ne i8 %4, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

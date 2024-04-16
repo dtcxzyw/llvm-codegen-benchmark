@@ -9,7 +9,7 @@ entry:
   %2 = sitofp i64 %1 to double
   %3 = fdiv double %2, 1.000000e+03
   %4 = fptosi double %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

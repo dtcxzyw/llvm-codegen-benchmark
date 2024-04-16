@@ -12,6 +12,6 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 28
 	add	a0, a0, a1
-	addi	a0, a0, -14
+	addi	a0, a0, 18
 	andi	a0, a0, 16
 	ret

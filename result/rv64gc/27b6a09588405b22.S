@@ -7,5 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	fcvt.d.lu	fa3, a0
 	fdiv.d	fa4, fa3, fa4
 	fsub.d	fa5, fa5, fa4
-	fmul.d	fa0, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 	ret

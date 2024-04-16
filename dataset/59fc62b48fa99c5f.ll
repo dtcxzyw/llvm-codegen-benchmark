@@ -6,9 +6,9 @@
 define i128 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = shl nsw i128 -1, %1
-  %3 = xor i128 %2, -1
-  %4 = trunc i128 %3 to i64
-  %5 = and i64 %0, %4
+  %3 = trunc i128 %2 to i64
+  %4 = xor i64 %3, -1
+  %5 = and i64 %4, %0
   %6 = zext i64 %5 to i128
   ret i128 %6
 }

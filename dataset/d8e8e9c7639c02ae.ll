@@ -11,7 +11,7 @@ define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = tail call double @llvm.fmuladd.f64(double %1, double -1.151000e-09, double 1.670900e-02)
   %3 = fmul double %2, 0x404CA5DC1A63C1F8
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

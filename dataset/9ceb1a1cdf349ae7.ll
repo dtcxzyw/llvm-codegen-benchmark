@@ -14,9 +14,8 @@ entry:
   %3 = and i64 %2, 63
   %4 = sub nsw i64 0, %3
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = getelementptr inbounds [16 x %struct.P256_POINT.1588006], ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 32
-  ret ptr %7
+  %6 = getelementptr inbounds [16 x %struct.P256_POINT.1588006], ptr %5, i64 %0, i64 0, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:

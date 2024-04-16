@@ -29,7 +29,7 @@ entry:
   %4 = lshr i64 %3, 32
   %5 = lshr i64 %1, 32
   %6 = mul nuw nsw i64 %5, %4
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

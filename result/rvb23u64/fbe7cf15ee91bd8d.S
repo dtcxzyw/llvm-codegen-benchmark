@@ -1,9 +1,9 @@
 func0000000000000005:                   # @func0000000000000005
 	srai	a3, a2, 63
-	mulhu	a4, a0, a2
-	mul	a3, a3, a0
 	mul	a1, a1, a2
+	mulhu	a4, a2, a0
 	add	a1, a1, a4
+	mul	a3, a3, a0
 	add	a1, a1, a3
 	mul	a2, a2, a0
 	bseti	a0, zero, 62

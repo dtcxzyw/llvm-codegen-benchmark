@@ -37,7 +37,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = sub i32 %2, %0
   %4 = and i32 %3, 7
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

@@ -153,7 +153,7 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -91
   %4 = icmp ult i8 %3, -26
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -336,7 +336,7 @@ define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -11904
   %4 = icmp ult i32 %3, 30288
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = or i1 %5, %0
   ret i1 %6
 }

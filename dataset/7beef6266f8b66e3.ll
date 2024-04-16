@@ -9,8 +9,8 @@
 define i32 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
-  %3 = select i1 %2, i8 %0, i8 -121
-  %4 = icmp eq i8 %3, -105
+  %3 = icmp eq i8 %0, -105
+  %4 = select i1 %2, i1 %3, i1 false
   %5 = select i1 %4, i32 2, i32 127
   ret i32 %5
 }
@@ -22,8 +22,8 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 %0, i64 2
-  %4 = icmp eq i64 %3, 0
+  %3 = icmp eq i64 %0, 0
+  %4 = select i1 %2, i1 %3, i1 false
   %5 = select i1 %4, i64 2, i64 0
   ret i64 %5
 }

@@ -9,7 +9,7 @@ entry:
   %3 = uitofp i64 %2 to double
   %4 = uitofp i64 %1 to double
   %5 = fdiv double %4, %3
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = uitofp i32 %2 to double
   %4 = uitofp i32 %1 to double
   %5 = fdiv double %4, %3
-  %6 = fcmp ugt double %0, %5
+  %6 = fcmp ult double %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = uitofp i64 %2 to float
   %4 = uitofp i64 %1 to float
   %5 = fdiv float %4, %3
-  %6 = fcmp une float %0, %5
+  %6 = fcmp une float %5, %0
   ret i1 %6
 }
 

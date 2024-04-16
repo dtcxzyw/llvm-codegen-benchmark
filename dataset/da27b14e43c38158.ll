@@ -5,7 +5,7 @@
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2047
   %5 = select i1 %0, i32 -1322, i32 -1022
   %6 = add nsw i32 %4, %5
@@ -20,7 +20,7 @@ entry:
 define i8 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw i32 %2 to i8
   %4 = and i8 %3, 15
   %5 = select i1 %0, i8 55, i8 48
   %6 = add nuw nsw i8 %5, %4

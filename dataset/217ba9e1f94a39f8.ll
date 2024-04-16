@@ -5,7 +5,7 @@
 define i1 @func0000000000000007(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -44,7 +44,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %1, %2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -115,7 +115,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %1, %2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 
@@ -135,7 +135,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %1, %2
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   ret i1 %4
 }
 

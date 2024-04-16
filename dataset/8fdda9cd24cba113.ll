@@ -8,7 +8,7 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   %4 = fdiv double %3, 1.000000e+01
   ret double %4
 }

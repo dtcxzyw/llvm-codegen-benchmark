@@ -362,10 +362,10 @@ entry:
 define ptr @func0000000000000039(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 968
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, ptr %3, ptr %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, ptr %0, ptr %3
+  %5 = getelementptr inbounds i8, ptr %4, i64 40
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -134,9 +134,8 @@
 define i1 @func0000000000000016(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = ashr exact i64 %1, 2
-  %3 = icmp slt i64 %2, 2
-  ret i1 %3
+  %2 = icmp slt i64 %1, 8
+  ret i1 %2
 }
 
 ; 5 occurrences:
@@ -149,9 +148,8 @@ entry:
 define i1 @func000000000000001a(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = ashr exact i64 %1, 4
-  %3 = icmp sgt i64 %2, 16
-  ret i1 %3
+  %2 = icmp sgt i64 %1, 256
+  ret i1 %2
 }
 
 ; 69 occurrences:
@@ -228,9 +226,8 @@ entry:
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = ashr i64 %1, 3
-  %3 = icmp sgt i64 %2, 0
-  ret i1 %3
+  %2 = icmp sgt i64 %1, 7
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -239,9 +236,8 @@ entry:
 define i1 @func0000000000000004(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
-  %2 = ashr i8 %1, 4
-  %3 = icmp ult i8 %2, 10
-  ret i1 %3
+  %2 = icmp sgt i8 %1, -1
+  ret i1 %2
 }
 
 ; 19 occurrences:
@@ -268,9 +264,8 @@ entry:
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = ashr i64 %1, 4
-  %3 = icmp slt i64 %2, 2
-  ret i1 %3
+  %2 = icmp slt i64 %1, 32
+  ret i1 %2
 }
 
 ; 13 occurrences:
@@ -291,9 +286,8 @@ entry:
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = ashr i64 %1, 4
-  %3 = icmp ugt i64 %2, 1
-  ret i1 %3
+  %2 = icmp ugt i64 %1, 31
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

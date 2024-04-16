@@ -9,7 +9,7 @@ func0000000000000051:                   # @func0000000000000051
 	lui	a2, 12
 	addiw	a2, a2, 3
 	slt	a1, a2, a1
-	add	a0, a0, a1
+	xor	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 func00000000000000d1:                   # @func00000000000000d1
@@ -17,7 +17,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	lui	a2, 12
 	addiw	a2, a2, 3
 	slt	a1, a2, a1
-	add	a0, a0, a1
+	xor	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 func00000000000000a3:                   # @func00000000000000a3

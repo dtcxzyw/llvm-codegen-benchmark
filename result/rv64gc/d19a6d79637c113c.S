@@ -48,9 +48,6 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func0000000000000048:                   # @func0000000000000048
 	fclass.d	a0, fa0
-	andi	a0, a0, 129
-	snez	a0, a0
-	fmv.d.x	fa5, zero
-	flt.d	a1, fa5, fa0
-	and	a0, a0, a1
+	slli	a0, a0, 56
+	srli	a0, a0, 63
 	ret

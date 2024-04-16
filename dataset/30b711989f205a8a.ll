@@ -6,10 +6,9 @@
 define i32 @func0000000000000015(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, -1
-  %3 = mul nsw i32 %2, 3
-  %4 = add nsw i32 %3, 1
-  ret i32 %4
+  %2 = mul i32 %1, 3
+  %3 = add i32 %2, -2
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -18,10 +17,9 @@ entry:
 define i32 @func0000000000000010(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, 1
-  %3 = mul i32 %2, 48
-  %4 = add i32 %3, 2400
-  ret i32 %4
+  %2 = mul i32 %1, 48
+  %3 = add i32 %2, 2448
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

@@ -9,12 +9,12 @@ func0000000000000010:                   # @func0000000000000010
 	srli	a0, a0, 60
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addi	a0, a0, -36
+	addi	a0, a0, 988
 	slli	a0, a0, 54
 	srli	a0, a0, 56
 	ret
 func0000000000000002:                   # @func0000000000000002
-	addi	a0, a0, -2
+	addi	a0, a0, 126
 	slli	a0, a0, 57
 	srli	a0, a0, 58
 	ret
@@ -29,7 +29,7 @@ func000000000000001b:                   # @func000000000000001b
 	srliw	a0, a0, 6
 	ret
 .LCPI6_0:
-	.quad	-4629700417037541376            # 0xbfbffffff9ffe000
+	.quad	4593671619817234432             # 0x3fbffffff9ffe000
 func000000000000000b:                   # @func000000000000000b
 	lui	a1, %hi(.LCPI6_0)
 	ld	a1, %lo(.LCPI6_0)(a1)

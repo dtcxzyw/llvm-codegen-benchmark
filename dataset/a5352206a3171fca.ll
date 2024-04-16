@@ -9,7 +9,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 0)
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 0)
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

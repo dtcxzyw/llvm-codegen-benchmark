@@ -22,7 +22,7 @@ func000000000000003c:                   # @func000000000000003c
 func000000000000002c:                   # @func000000000000002c
 	zext.w	a1, a1
 	bext	a0, a1, a0
-	li	a1, 8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 128
+	li	a1, -8
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 136
 	ret

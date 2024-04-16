@@ -173,8 +173,8 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 %3, i32 -1
-  %6 = add nsw i32 %5, -9001
+  %5 = add nsw i32 %3, -9001
+  %6 = select i1 %4, i32 %5, i32 -9002
   ret i32 %6
 }
 
@@ -275,8 +275,8 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 %3, i32 -1
-  %6 = add i32 %5, -9001
+  %5 = add i32 %3, -9001
+  %6 = select i1 %4, i32 %5, i32 -9002
   ret i32 %6
 }
 

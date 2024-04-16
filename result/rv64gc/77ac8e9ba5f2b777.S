@@ -30,7 +30,8 @@ func0000000000000018:                   # @func0000000000000018
 func000000000000001a:                   # @func000000000000001a
 	lui	a2, 393216
 	and	a1, a1, a2
-	or	a1, a1, a0
-	sraiw	a0, a0, 31
+	or	a0, a0, a1
+	sext.w	a0, a0
+	srai	a1, a0, 63
 	and	a0, a0, a1
 	ret

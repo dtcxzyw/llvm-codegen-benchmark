@@ -28,15 +28,13 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
-	addi	a1, a1, -48
-	sltiu	a1, a1, 9
-	xori	a1, a1, 1
+	addi	a1, a1, -57
+	sltiu	a1, a1, -9
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
-	addi	a1, a1, -4
-	sltiu	a1, a1, 11
-	xori	a1, a1, 1
+	addi	a1, a1, -15
+	sltiu	a1, a1, -11
 	and	a0, a0, a1
 	ret

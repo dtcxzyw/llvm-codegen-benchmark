@@ -14,7 +14,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
   %3 = lshr i64 -1, %2
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   ret i64 %4
 }
 

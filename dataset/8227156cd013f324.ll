@@ -10,7 +10,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = shl nuw i32 256, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

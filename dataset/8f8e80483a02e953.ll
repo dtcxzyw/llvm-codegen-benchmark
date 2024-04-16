@@ -39,7 +39,7 @@ entry:
   %2 = tail call noundef i16 @llvm.bswap.i16(i16 %1)
   %3 = zext i16 %2 to i48
   %4 = shl nuw nsw i48 %3, 16
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 
@@ -68,7 +68,7 @@ entry:
   %2 = tail call i16 @llvm.bswap.i16(i16 %1)
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

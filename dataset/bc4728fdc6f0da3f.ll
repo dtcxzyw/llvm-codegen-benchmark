@@ -31,7 +31,7 @@ entry:
   %4 = icmp ult i32 %3, 53
   %5 = select i1 %4, i32 40960, i32 %1
   %6 = zext i32 %5 to i64
-  %7 = mul i64 %0, %6
+  %7 = mul i64 %6, %0
   ret i64 %7
 }
 

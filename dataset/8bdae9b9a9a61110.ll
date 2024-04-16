@@ -8,10 +8,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, float %2) #0 {
 entry:
-  %3 = select i1 %1, float 1.000000e+00, float %2
-  %4 = fmul float %3, 2.560000e+02
-  %5 = select i1 %0, float 0.000000e+00, float %4
-  %6 = fptosi float %5 to i32
+  %3 = fmul float %2, 2.560000e+02
+  %4 = fptosi float %3 to i32
+  %5 = select i1 %1, i32 256, i32 %4
+  %6 = select i1 %0, i32 0, i32 %5
   ret i32 %6
 }
 

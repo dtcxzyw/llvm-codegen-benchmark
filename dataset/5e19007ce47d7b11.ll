@@ -29,10 +29,10 @@
 define i16 @func0000000000000003(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = trunc i32 %2 to i16
+  %3 = trunc nuw i32 %2 to i16
   %4 = and i16 %3, -32768
-  %5 = or disjoint i16 %4, 31744
-  %6 = or disjoint i16 %0, %5
+  %5 = or i16 %4, %0
+  %6 = or i16 %5, 31744
   ret i16 %6
 }
 
@@ -44,8 +44,8 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
   %4 = and i16 %3, -32768
-  %5 = or disjoint i16 %4, 31744
-  %6 = or disjoint i16 %0, %5
+  %5 = or i16 %4, %0
+  %6 = or i16 %5, 31744
   ret i16 %6
 }
 

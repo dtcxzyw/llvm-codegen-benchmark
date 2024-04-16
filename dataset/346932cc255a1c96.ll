@@ -367,10 +367,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, -1
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = or disjoint i32 %4, 32768
-  ret i32 %5
+  %.not = icmp eq i32 %2, -1
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = or disjoint i32 %3, 32768
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -379,10 +379,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i16 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i16 %0, i16 %1
-  %5 = or i16 %4, 257
-  ret i16 %5
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i16 %1, i16 %0
+  %4 = or i16 %3, 257
+  ret i16 %4
 }
 
 ; 6 occurrences:

@@ -9,7 +9,7 @@
 define i1 @func0000000000000004(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to float
-  %4 = fadd float %1, %3
+  %4 = fadd float %3, %1
   %5 = fcmp ogt float %4, %0
   ret i1 %5
 }
@@ -21,7 +21,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fadd double %1, %3
+  %4 = fadd double %3, %1
   %5 = fcmp ugt double %4, %0
   ret i1 %5
 }
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fadd double %1, %3
+  %4 = fadd double %3, %1
   %5 = fcmp olt double %4, %0
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fadd double %1, %3
+  %4 = fadd double %3, %1
   %5 = fcmp ult double %4, %0
   ret i1 %5
 }

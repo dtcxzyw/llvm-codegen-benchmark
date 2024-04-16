@@ -34,7 +34,7 @@ entry:
   %3 = add i32 %2, 2
   %4 = add i32 %3, %1
   %5 = shl i32 %4, 19
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -89,7 +89,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
   %5 = shl nuw nsw i32 %4, 4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 
@@ -101,7 +101,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %1
   %5 = shl nuw i64 %4, 9
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

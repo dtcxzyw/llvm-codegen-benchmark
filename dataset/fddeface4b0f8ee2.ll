@@ -21,8 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = or i64 %0, %2
+  %2 = and i64 %1, 4294966784
+  %3 = or i64 %2, %0
   %4 = udiv i64 %3, 1000000000
   ret i64 %4
 }

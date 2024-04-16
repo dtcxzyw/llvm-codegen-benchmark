@@ -6,9 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srl	a1, a1, a2
-	andi	a1, a1, 3
-	li	a2, 2
-	bgeu	a1, a2, .LBB1_2
+	andi	a1, a1, 2
+	bnez	a1, .LBB1_2
 	li	a0, 1
 .LBB1_2:                                # %entry
 	ret

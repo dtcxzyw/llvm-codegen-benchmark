@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
-	lui	a3, 921600
+	lui	a3, 135168
 	addiw	a3, a3, -2
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 1

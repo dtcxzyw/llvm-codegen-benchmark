@@ -11,7 +11,7 @@
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 4.000000e+00
-  %4 = fadd float %1, %3
+  %4 = fadd float %3, %1
   %5 = select i1 %0, float %4, float %1
   ret float %5
 }

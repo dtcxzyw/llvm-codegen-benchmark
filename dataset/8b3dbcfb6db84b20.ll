@@ -101,7 +101,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 1
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

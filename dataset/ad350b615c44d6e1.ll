@@ -56,7 +56,7 @@ entry:
   %3 = mul nsw i64 %1, %2
   %4 = sdiv i64 %3, 2
   %5 = shl nsw i64 %4, 1
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = mul nsw i64 %1, %2
   %4 = sdiv i64 %3, 4
   %5 = shl nsw i64 %4, 2
-  %6 = icmp sgt i64 %0, %5
+  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 

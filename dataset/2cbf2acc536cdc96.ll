@@ -9,7 +9,7 @@
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
-  %3 = or disjoint i128 %0, %2
+  %3 = or disjoint i128 %2, %0
   %4 = freeze i128 %3
   ret i128 %4
 }

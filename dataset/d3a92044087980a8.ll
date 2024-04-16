@@ -11,8 +11,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 %1, %0
-  %3 = sub nsw i32 %2, %0
+  %2 = shl i32 %0, 1
+  %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
@@ -26,8 +26,8 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %1, %0
-  %3 = sub nsw i32 %2, %0
+  %2 = shl i32 %0, 1
+  %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
@@ -37,8 +37,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %1, %0
-  %3 = sub i32 %2, %0
+  %2 = shl i32 %0, 1
+  %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 false)
   ret i32 %4
 }

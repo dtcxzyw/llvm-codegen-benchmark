@@ -9,7 +9,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
   %5 = srem i32 %4, 7
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nsw i32 %5 to i8
   ret i8 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, %0
   %5 = srem i32 %4, 8
-  %6 = trunc i32 %5 to i8
+  %6 = trunc nsw i32 %5 to i8
   ret i8 %6
 }
 

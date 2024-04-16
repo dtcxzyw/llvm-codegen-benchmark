@@ -7,7 +7,7 @@ entry:
   %2 = mul i64 %1, 839798700976720815
   %3 = lshr i64 %2, 32
   %4 = mul nuw nsw i64 %3, 668265295
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

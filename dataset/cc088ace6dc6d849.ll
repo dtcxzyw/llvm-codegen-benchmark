@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000034(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 2
-  %2 = shl nuw nsw i64 %1, 1
+  %1 = lshr i64 %0, 1
+  %2 = and i64 %1, 9223372036854775806
   %3 = icmp ult i64 %2, %0
   ret i1 %3
 }

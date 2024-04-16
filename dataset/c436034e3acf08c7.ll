@@ -35,7 +35,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, -1
-  %3 = and i64 %1, %2
+  %3 = and i64 %2, %1
   %4 = icmp eq i64 %3, 0
   %5 = sub i64 %0, %3
   %6 = select i1 %4, i64 0, i64 %5

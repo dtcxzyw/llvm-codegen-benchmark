@@ -389,10 +389,10 @@
 define i1 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 56
-  %5 = sub nuw nsw i64 164703072086692425, %4
-  %6 = icmp ule i64 %0, %5
-  ret i1 %6
+  %.neg = sdiv exact i64 %3, -56
+  %4 = add nsw i64 %.neg, 164703072086692425
+  %5 = icmp uge i64 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -401,10 +401,10 @@ entry:
 define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 48
-  %5 = sub nuw nsw i64 2048, %4
-  %6 = icmp ult i64 %0, %5
-  ret i1 %6
+  %.neg = sdiv exact i64 %3, -48
+  %4 = add nsw i64 %.neg, 2048
+  %5 = icmp ugt i64 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -413,10 +413,9 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = sdiv i32 %3, 2
-  %5 = sub nsw i32 0, %4
-  %6 = icmp eq i32 %0, %5
-  ret i1 %6
+  %.neg = sdiv i32 %3, -2
+  %4 = icmp eq i32 %.neg, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

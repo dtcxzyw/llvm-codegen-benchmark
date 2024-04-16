@@ -11,10 +11,10 @@
 define i1 @func0000000000000104(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = icmp ult i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -25,10 +25,10 @@ entry:
 define i1 @func0000000000000108(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %1, %3
+  %4 = mul nuw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = icmp ugt i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 
@@ -38,10 +38,10 @@ entry:
 define i1 @func0000000000000184(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %1, %3
+  %4 = mul nuw nsw i128 %3, %1
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
-  %7 = icmp ult i64 %0, %6
+  %6 = trunc nuw i128 %5 to i64
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 
@@ -51,10 +51,10 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %1, %3
+  %4 = mul i64 %3, %1
   %5 = lshr i64 %4, 10
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -70,7 +70,7 @@ entry:
   %4 = mul nsw i64 %3, %1
   %5 = lshr i64 %4, 8
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -83,7 +83,7 @@ entry:
   %4 = mul nsw i64 %3, %1
   %5 = lshr i64 %4, 8
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -93,10 +93,10 @@ entry:
 define i1 @func0000000000000181(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %0, %6
+  %6 = trunc nuw i64 %5 to i32
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

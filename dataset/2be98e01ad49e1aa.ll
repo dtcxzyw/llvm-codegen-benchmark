@@ -31,7 +31,7 @@ define i64 @func000000000000000e(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = tail call i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = sub nuw i64 %0, %5
   ret i64 %6
 }

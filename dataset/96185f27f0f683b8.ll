@@ -16,7 +16,7 @@
 define ptr @func0000000000000023(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds { { i64, [7 x i64] } }, ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = select i1 %4, ptr null, ptr %0
   %6 = getelementptr inbounds i8, ptr %5, i64 8
   ret ptr %6
@@ -28,7 +28,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.sk_buff_head.2013655, ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
+  %4 = icmp eq ptr %3, %0
   %5 = select i1 %4, ptr null, ptr %0
   %6 = getelementptr inbounds i8, ptr %5, i64 64
   ret ptr %6

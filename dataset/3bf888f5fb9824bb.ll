@@ -142,7 +142,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001b1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 34359738364
+  %2 = add i64 %1, 17179869180
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2147483647
   %5 = add nuw nsw i64 %0, 1

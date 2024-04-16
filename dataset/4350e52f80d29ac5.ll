@@ -7,7 +7,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw i64 %4, %3
-  %6 = add nuw i64 %5, %0
+  %6 = or i64 %5, %0
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -52,7 +52,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = or i64 %5, %0
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }

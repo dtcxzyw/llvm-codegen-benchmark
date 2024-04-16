@@ -103,10 +103,9 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
-  %4 = sdiv exact i64 %3, 24
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr %class.QString.1910919, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = sdiv exact i64 %3, -24
+  %4 = getelementptr %class.QString.1910919, ptr %0, i64 %.neg
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -118,10 +117,9 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
-  %4 = sdiv exact i64 %3, 24
-  %5 = sub nsw i64 0, %4
-  %6 = getelementptr inbounds %class.QString.2275469, ptr %0, i64 %5
-  ret ptr %6
+  %.neg = sdiv exact i64 %3, -24
+  %4 = getelementptr inbounds %class.QString.2275469, ptr %0, i64 %.neg
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

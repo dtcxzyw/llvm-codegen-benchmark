@@ -1,12 +1,4 @@
 
-%"struct.std::pair.878.1574269" = type { i8, %"class.rocksdb::Status.1574071" }
-%"class.rocksdb::Status.1574071" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.5.1574065" }
-%"class.std::unique_ptr.5.1574065" = type { %"struct.std::__uniq_ptr_data.6.1574066" }
-%"struct.std::__uniq_ptr_data.6.1574066" = type { %"class.std::__uniq_ptr_impl.7.1574067" }
-%"class.std::__uniq_ptr_impl.7.1574067" = type { %"class.std::tuple.8.1574068" }
-%"class.std::tuple.8.1574068" = type { %"struct.std::_Tuple_impl.9.1574069" }
-%"struct.std::_Tuple_impl.9.1574069" = type { %"struct.std::_Head_base.12.1574070" }
-%"struct.std::_Head_base.12.1574070" = type { ptr }
 %"struct.std::pair.218.1845998" = type { i32, %"struct.hermes::FunctionRuntimeStatistics.1845999" }
 %"struct.hermes::FunctionRuntimeStatistics.1845999" = type { i64, i64, %"class.std::unordered_map.82.1845880" }
 %"class.std::unordered_map.82.1845880" = type { %"class.std::_Hashtable.83.1845884" }
@@ -25,11 +17,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = getelementptr inbounds %"struct.std::pair.878.1574269", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr inbounds i8, ptr %3, i64 8
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -53,10 +44,9 @@ entry:
 define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr inbounds %"struct.std::pair.218.1845998", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 72
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
+  %4 = getelementptr inbounds %"struct.std::pair.218.1845998", ptr %1, i64 %3, i32 1, i32 2, i32 0, i32 5
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

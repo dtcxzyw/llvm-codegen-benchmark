@@ -21,12 +21,11 @@ func0000000000000071:                   # @func0000000000000071
 	li	a3, -1
 	slli	a3, a3, 63
 	xor	a2, a2, a3
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	snez	a2, a2
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
+	and	a0, a0, a2
 	ret
 func0000000000000288:                   # @func0000000000000288
 	sext.w	a2, a2
@@ -54,14 +53,13 @@ func00000000000001b1:                   # @func00000000000001b1
 	seqz	a0, a0
 	ret
 func0000000000000061:                   # @func0000000000000061
-	sext.w	a2, a2
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
 	sext.w	a1, a1
+	sext.w	a2, a2
+	snez	a2, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
+	and	a0, a0, a2
 	ret
 func0000000000000184:                   # @func0000000000000184
 	sext.w	a2, a2
@@ -76,11 +74,11 @@ func0000000000000184:                   # @func0000000000000184
 func0000000000000121:                   # @func0000000000000121
 	andi	a2, a2, 255
 	sltiu	a2, a2, 2
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	not	a2, a2
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
+	and	a0, a0, a2
 	ret
 func0000000000000111:                   # @func0000000000000111
 	sltiu	a2, a2, 2
@@ -229,19 +227,19 @@ func000000000000013b:                   # @func000000000000013b
 	xori	a0, a0, 1
 	ret
 func00000000000002b6:                   # @func00000000000002b6
-	li	a3, 2047
-	bge	a3, a2, .LBB23_2
-	li	a1, 1
-	slli	a1, a1, 11
+	li	a3, 1
+	slli	a3, a3, 11
+	blt	a2, a3, .LBB23_2
+	mv	a1, a3
 .LBB23_2:                               # %entry
 	addi	a0, a0, 4
 	slt	a0, a0, a1
 	ret
 func00000000000002b1:                   # @func00000000000002b1
-	li	a3, 2047
-	bge	a3, a2, .LBB24_2
-	li	a1, 1
-	slli	a1, a1, 11
+	li	a3, 1
+	slli	a3, a3, 11
+	blt	a2, a3, .LBB24_2
+	mv	a1, a3
 .LBB24_2:                               # %entry
 	addi	a0, a0, 1
 	xor	a0, a0, a1

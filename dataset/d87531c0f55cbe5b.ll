@@ -23,7 +23,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nuw i32 65536, %3
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = icmp eq i32 %6, -1
   ret i1 %7
 }

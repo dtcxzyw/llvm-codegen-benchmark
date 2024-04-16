@@ -13,7 +13,7 @@ entry:
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 false)
   %5 = add nuw i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -30,7 +30,7 @@ entry:
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = add nuw nsw i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = add nuw nsw i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -57,7 +57,7 @@ entry:
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = add nuw nsw i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

@@ -14,7 +14,7 @@ entry:
   %3 = icmp ne i32 %2, 5
   %4 = icmp ne i32 %1, 12
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = icmp ne i32 %2, 2
   %4 = icmp ugt i32 %1, 1
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -39,12 +39,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -1073741824
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp ne i64 %1, 0
-  %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
+  %2 = add i64 %1, -1
+  %3 = icmp ult i64 %2, 1073741823
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:

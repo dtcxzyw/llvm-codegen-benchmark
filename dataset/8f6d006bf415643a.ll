@@ -30,8 +30,8 @@
 define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 126, %2
-  %4 = lshr i32 %1, %3
-  %5 = and i32 %4, 1
+  %4 = shl nuw i32 1, %3
+  %5 = and i32 %4, %1
   %6 = icmp eq i32 %5, 0
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7

@@ -8,8 +8,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, %1
   %5 = sub i64 %4, %0
-  %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, 0
+  %6 = and i64 %5, 2147483648
+  %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
 

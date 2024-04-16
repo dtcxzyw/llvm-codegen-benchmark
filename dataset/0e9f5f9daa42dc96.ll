@@ -14,7 +14,7 @@
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sext i1 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sext i1 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -51,7 +51,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %0, %3
+  %4 = add nuw i32 %3, %0
   %5 = sext i1 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -64,7 +64,7 @@ entry:
 define i8 @func000000000000000d(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = add nuw nsw i8 %0, %3
+  %4 = add nuw nsw i8 %3, %0
   %5 = sext i1 %1 to i8
   %6 = add nsw i8 %4, %5
   ret i8 %6
@@ -76,7 +76,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = sext i1 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6

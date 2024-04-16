@@ -16,14 +16,16 @@ func0000000000000148:                   # @func0000000000000148
 	ret
 func0000000000000101:                   # @func0000000000000101
 	srai	a2, a2, 4
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000015c:                   # @func000000000000015c
 	srai	a2, a2, 3
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000158:                   # @func0000000000000158
@@ -61,8 +63,9 @@ func0000000000000156:                   # @func0000000000000156
 	ret
 func0000000000000051:                   # @func0000000000000051
 	srai	a2, a2, 63
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000141:                   # @func0000000000000141

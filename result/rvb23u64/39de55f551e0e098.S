@@ -31,7 +31,7 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a2, a2, 8
 	srli	a2, a2, 8
 	mul	a1, a1, a2
-	mulhu	a3, a0, a2
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
 	mul	a2, a2, a0
 	lui	a0, 8

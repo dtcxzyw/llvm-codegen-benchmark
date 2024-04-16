@@ -7,9 +7,9 @@ entry:
   %3 = and i1 %1, %2
   %4 = select i1 %3, i32 3, i32 2
   %5 = or disjoint i32 %4, 4
-  %6 = icmp ne i64 %0, 8589934592
-  %7 = select i1 %6, i32 %4, i32 %5
-  ret i32 %7
+  %.not = icmp eq i64 %0, 8589934592
+  %6 = select i1 %.not, i32 %5, i32 %4
+  ret i32 %6
 }
 
 ; 2 occurrences:

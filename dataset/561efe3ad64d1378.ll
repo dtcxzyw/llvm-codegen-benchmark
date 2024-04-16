@@ -375,7 +375,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 9223372036854775807)
   ret i64 %7
 }
@@ -688,7 +688,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 9223372036854775807)
   ret i64 %7
 }

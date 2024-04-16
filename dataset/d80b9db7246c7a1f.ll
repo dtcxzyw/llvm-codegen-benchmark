@@ -1,12 +1,4 @@
 
-%"class.duckdb::unique_ptr.1817313" = type { %"class.std::unique_ptr.1817314" }
-%"class.std::unique_ptr.1817314" = type { %"struct.std::__uniq_ptr_data.1817315" }
-%"struct.std::__uniq_ptr_data.1817315" = type { %"class.std::__uniq_ptr_impl.1817316" }
-%"class.std::__uniq_ptr_impl.1817316" = type { %"class.std::tuple.1817317" }
-%"class.std::tuple.1817317" = type { %"struct.std::_Tuple_impl.1817318" }
-%"struct.std::_Tuple_impl.1817318" = type { %"struct.std::_Head_base.1.1817319" }
-%"struct.std::_Head_base.1.1817319" = type { ptr }
-
 ; 73 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -102,9 +94,8 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 16
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
-  %6 = ashr exact i64 %5, 3
-  %7 = getelementptr inbounds %"class.duckdb::unique_ptr.1817313", ptr %0, i64 %6
-  ret ptr %7
+  %6 = getelementptr inbounds i8, ptr %0, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

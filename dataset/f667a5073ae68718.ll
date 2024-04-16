@@ -5,11 +5,11 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sub i32 1, %2
-  %4 = icmp sgt i32 %3, 63
-  %5 = lshr i64 %0, %1
-  %6 = select i1 %4, i64 0, i64 %5
-  ret i64 %6
+  %notsub = add i32 %2, -2
+  %3 = icmp slt i32 %notsub, -64
+  %4 = lshr i64 %0, %1
+  %5 = select i1 %3, i64 0, i64 %4
+  ret i64 %5
 }
 
 ; 3 occurrences:
@@ -19,11 +19,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = sub i8 67, %2
-  %4 = icmp ugt i8 %3, 63
-  %5 = lshr i64 %0, %1
-  %6 = select i1 %4, i64 0, i64 %5
-  ret i64 %6
+  %notsub = add i8 %2, -68
+  %3 = icmp ult i8 %notsub, -64
+  %4 = lshr i64 %0, %1
+  %5 = select i1 %3, i64 0, i64 %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

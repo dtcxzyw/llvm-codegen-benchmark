@@ -546,7 +546,7 @@ define i1 @func00000000000000fc(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
   %3 = and i64 %0, 4294967295
-  %4 = add nuw nsw i64 %3, %2
+  %4 = or i64 %3, %2
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }

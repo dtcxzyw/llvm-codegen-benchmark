@@ -12,10 +12,9 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = trunc i64 %2 to i8
-  %4 = and i8 %3, 7
-  %5 = icmp eq i8 %4, 7
-  ret i1 %5
+  %3 = and i64 %2, 7
+  %4 = icmp eq i64 %3, 7
+  ret i1 %4
 }
 
 ; 253 occurrences:
@@ -276,10 +275,9 @@ entry:
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 63
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = and i64 %2, 63
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -288,10 +286,9 @@ entry:
 define i1 @func0000000000000048(i128 %0, i128 %1) #0 {
 entry:
   %2 = add nsw i128 %0, %1
-  %3 = trunc i128 %2 to i64
-  %4 = and i64 %3, 9223372036854775807
-  %5 = icmp ugt i64 %4, 9223372032559808512
-  ret i1 %5
+  %3 = and i128 %2, 9223372036854775807
+  %4 = icmp ugt i128 %3, 9223372032559808512
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -300,10 +297,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 7
-  %5 = icmp ugt i32 %4, 4
-  ret i1 %5
+  %3 = and i64 %2, 7
+  %4 = icmp ugt i64 %3, 4
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

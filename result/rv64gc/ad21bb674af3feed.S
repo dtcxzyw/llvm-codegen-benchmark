@@ -6,7 +6,7 @@ func0000000000000208:                   # @func0000000000000208
 .LBB0_2:                                # %entry
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 56
 	snez	a0, a0
 	ret

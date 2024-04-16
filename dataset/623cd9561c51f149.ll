@@ -7,7 +7,7 @@ define i1 @func0000000000000071(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %1, %4
+  %5 = icmp eq i64 %4, %1
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }
@@ -22,7 +22,7 @@ define i1 @func0000000000000054(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 256, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %1, %4
+  %5 = icmp ugt i64 %4, %1
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

@@ -33,9 +33,9 @@ define ptr @func0000000000000015(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = add nsw i64 %4, -1
-  %6 = getelementptr i8, ptr %0, i64 8
-  %7 = getelementptr inbounds i64, ptr %6, i64 %5
+  %5 = getelementptr i8, ptr %0, i64 8
+  %6 = getelementptr i64, ptr %5, i64 %4
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 
@@ -48,9 +48,9 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 144
-  %5 = add nsw i64 %4, -1
-  %6 = getelementptr inbounds i8, ptr %0, i64 16
-  %7 = getelementptr inbounds %"struct.std::array.26.1656687", ptr %6, i64 %5
+  %5 = getelementptr inbounds i8, ptr %0, i64 16
+  %6 = getelementptr %"struct.std::array.26.1656687", ptr %5, i64 %4
+  %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }
 

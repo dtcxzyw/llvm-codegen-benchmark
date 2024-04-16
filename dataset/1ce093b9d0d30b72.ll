@@ -17,9 +17,8 @@
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 %1)
-  %4 = sub nsw i64 %2, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 %1)
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -31,9 +30,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = tail call noundef i64 @llvm.umin.i64(i64 %2, i64 %1)
-  %4 = sub nsw i64 %2, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 %1)
+  ret i64 %3
 }
 
 ; 6 occurrences:
@@ -47,10 +45,12 @@ entry:
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
-  %4 = sub nsw i64 %2, %3
-  ret i64 %4
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 %1)
+  ret i64 %3
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.usub.sat.i64(i64, i64) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

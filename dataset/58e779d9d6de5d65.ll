@@ -12,7 +12,7 @@
 define i64 @func0000000000000082(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = icmp ult i64 %0, %1
   %6 = zext i1 %5 to i64
   %7 = add nuw i64 %6, %4
@@ -26,7 +26,7 @@ entry:
 define i64 @func0000000000000102(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = icmp ugt i64 %0, %1
   %6 = zext i1 %5 to i64
   %7 = add nuw i64 %6, %4
@@ -40,7 +40,7 @@ entry:
 define i64 @func0000000000000080(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = icmp ult i64 %0, %1
   %6 = zext i1 %5 to i64
   %7 = add i64 %6, %4

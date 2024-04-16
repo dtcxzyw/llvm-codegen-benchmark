@@ -33,9 +33,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40
   %5 = and i64 %4, 2147483647
-  %6 = getelementptr inbounds %struct.cert_pkey_st.1587188, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.cert_pkey_st.1587188, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -59,9 +58,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 1096
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 132
-  ret ptr %7
+  %6 = getelementptr %struct.netdev_queue.2025340, ptr %0, i64 %5, i32 11
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

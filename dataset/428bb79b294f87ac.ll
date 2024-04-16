@@ -5,7 +5,7 @@
 define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp ule i64 %0, %2
+  %3 = icmp uge i64 %2, %0
   %4 = icmp eq i64 %1, %0
   %5 = or i1 %3, %4
   ret i1 %5
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = icmp eq i64 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5

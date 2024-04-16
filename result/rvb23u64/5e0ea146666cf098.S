@@ -19,7 +19,9 @@ func00000000000000d0:                   # @func00000000000000d0
 	ret
 func0000000000000050:                   # @func0000000000000050
 	srliw	a1, a1, 27
-	addi	a2, a1, -1
+	lui	a2, 16
+	addiw	a2, a2, -1
+	add	a2, a2, a1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

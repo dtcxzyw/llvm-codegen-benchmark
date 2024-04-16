@@ -170,9 +170,9 @@ define i64 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = mul i64 %0, 10
-  %5 = sub i64 %3, %4
-  ret i64 %5
+  %.neg = mul i64 %0, -10
+  %4 = add i64 %.neg, %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

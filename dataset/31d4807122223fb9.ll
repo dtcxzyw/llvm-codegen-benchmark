@@ -48,8 +48,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -6914
-  %4 = or i32 %3, 6849
+  %3 = and i32 %2, -7106
+  %4 = or disjoint i32 %3, 6849
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
@@ -60,8 +60,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -8380752
-  %4 = or i32 %3, 832
+  %3 = and i32 %2, -8381264
+  %4 = or disjoint i32 %3, 832
   %5 = icmp ugt i8 %1, 7
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6

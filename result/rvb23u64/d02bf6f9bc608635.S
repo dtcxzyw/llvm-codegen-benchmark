@@ -4,14 +4,14 @@ func000000000000031a:                   # @func000000000000031a
 	slt	a0, a1, a0
 	ret
 func0000000000000101:                   # @func0000000000000101
-	addiw	a1, a1, 1
-	addiw	a0, a0, -1
+	sext.w	a0, a0
+	addiw	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000111:                   # @func0000000000000111
-	addiw	a1, a1, 1
-	addiw	a0, a0, -1
+	sext.w	a0, a0
+	addiw	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -55,16 +55,11 @@ func0000000000000124:                   # @func0000000000000124
 	sltu	a0, a0, a1
 	ret
 .LCPI10_0:
-	.quad	1442695040888963407             # 0x14057b7ef767814f
-.LCPI10_1:
-	.quad	6364136223846793005             # 0x5851f42d4c957f2d
+	.quad	4921441182957829598             # 0x444c78ae552dfdde
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, %hi(.LCPI10_0)
 	ld	a2, %lo(.LCPI10_0)(a2)
-	lui	a3, %hi(.LCPI10_1)
-	ld	a3, %lo(.LCPI10_1)(a3)
-	add	a1, a1, a2
-	add	a0, a0, a3
+	add	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -117,8 +112,8 @@ func0000000000000316:                   # @func0000000000000316
 	slt	a0, a0, a1
 	ret
 func0000000000000311:                   # @func0000000000000311
-	addiw	a1, a1, 1
-	addiw	a0, a0, -1
+	sext.w	a0, a0
+	addiw	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -23,7 +23,7 @@ define i1 @func0000000000000222(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds [256 x %"class.boost::intrusive::list.1638619"], ptr %1, i64 0, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7
@@ -38,7 +38,7 @@ define i1 @func0000000000000022(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr [4 x %struct.ieee80211_fragment_entry.2013654], ptr %1, i64 0, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   %6 = icmp eq ptr %0, null
   %7 = or i1 %5, %6
   ret i1 %7

@@ -41,7 +41,7 @@ entry:
   %2 = lshr exact i64 %1, 2
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -262,7 +262,7 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4611686018427387900
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -286,7 +286,7 @@ entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, -16
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -300,7 +300,7 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -314,7 +314,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = add nuw nsw i64 %2, 2
   %4 = and i64 %3, 8589934588
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -326,7 +326,7 @@ entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, -16
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -342,7 +342,7 @@ entry:
   %2 = lshr i64 %1, 6
   %3 = add nsw i64 %2, -1
   %4 = and i64 %3, -2
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -354,7 +354,7 @@ entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

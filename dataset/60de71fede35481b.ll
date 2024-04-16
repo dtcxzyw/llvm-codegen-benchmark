@@ -8,7 +8,7 @@ entry:
   %4 = select i1 %3, i16 %1, i16 %2
   %5 = zext i16 %4 to i48
   %6 = shl nuw nsw i48 %5, 16
-  %7 = or disjoint i48 %0, %6
+  %7 = or disjoint i48 %6, %0
   ret i48 %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = select i1 %3, i8 %1, i8 %2
   %5 = zext i8 %4 to i16
   %6 = shl nuw nsw i16 %5, 4
-  %7 = or i16 %0, %6
+  %7 = or i16 %6, %0
   ret i16 %7
 }
 

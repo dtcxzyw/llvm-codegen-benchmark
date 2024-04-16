@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = call i32 @llvm.smin.i32(i32 %1, i32 0)
+  %1 = call i32 @llvm.smin.i32(i32 %0, i32 1)
+  %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

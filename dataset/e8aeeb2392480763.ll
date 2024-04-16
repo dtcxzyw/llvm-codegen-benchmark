@@ -17,8 +17,8 @@
 define i64 @func0000000000000118(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, -9223372036854775808
-  %3 = select i1 %2, i64 %0, i64 0
-  %4 = icmp ne i64 %3, 0
+  %3 = icmp ne i64 %0, 0
+  %4 = select i1 %2, i1 %3, i1 false
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -30,9 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 1
-  %4 = icmp ne i32 %3, 0
+  %2 = icmp ne i32 %1, 0
+  %3 = icmp ne i32 %0, 0
+  %4 = select i1 %2, i1 true, i1 %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

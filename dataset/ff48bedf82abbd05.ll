@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i32 %0) #0 {
 entry:
-  %1 = sdiv i32 %0, 12
-  %2 = mul nsw i32 %1, -12
-  %3 = add i32 %2, %0
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %.fr = freeze i32 %0
+  %1 = srem i32 %.fr, 12
+  %2 = icmp eq i32 %1, 0
+  ret i1 %2
 }
 
 ; 19 occurrences:
@@ -36,11 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(i32 %0) #0 {
 entry:
-  %1 = sdiv i32 %0, 12
-  %2 = mul nsw i32 %1, -12
-  %3 = add i32 %2, %0
-  %4 = icmp sgt i32 %3, -1
-  ret i1 %4
+  %.fr = freeze i32 %0
+  %1 = srem i32 %.fr, 12
+  %2 = icmp sgt i32 %1, -1
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -50,11 +48,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000005a(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 1000000
-  %2 = mul nsw i64 %1, -1000000
-  %3 = add nsw i64 %2, %0
-  %4 = icmp sgt i64 %3, 99
-  ret i1 %4
+  %.fr = freeze i64 %0
+  %1 = srem i64 %.fr, 1000000
+  %2 = icmp sgt i64 %1, 99
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -62,11 +59,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000046(i32 %0) #0 {
 entry:
-  %1 = sdiv i32 %0, 1000000
-  %2 = mul nsw i32 %1, -1000000
-  %3 = add i32 %2, %0
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %.fr = freeze i32 %0
+  %1 = srem i32 %.fr, 1000000
+  %2 = icmp slt i32 %1, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -74,11 +70,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000056(i32 %0) #0 {
 entry:
-  %1 = sdiv i32 %0, 60
-  %2 = mul nsw i32 %1, -60
-  %3 = add nsw i32 %2, %0
-  %4 = icmp slt i32 %3, 0
-  ret i1 %4
+  %.fr = freeze i32 %0
+  %1 = srem i32 %.fr, 60
+  %2 = icmp slt i32 %1, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -87,11 +82,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 19
-  %2 = mul nsw i64 %1, -19
-  %3 = add i64 %2, %0
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
+  %.fr = freeze i64 %0
+  %1 = srem i64 %.fr, 19
+  %2 = icmp ne i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

@@ -17,14 +17,14 @@ func0000000000000034:                   # @func0000000000000034
 	ld	a3, %lo(.LCPI2_0)(a3)
 	add	a2, a2, a3
 	mul	a1, a1, a2
-	mulhu	a0, a0, a2
+	mulhu	a0, a2, a0
 	add	a0, a0, a1
 	li	a1, 0
 	ret
 func000000000000001e:                   # @func000000000000001e
 	addi	a2, a2, -1
 	mul	a1, a1, a2
-	mulhu	a0, a0, a2
+	mulhu	a0, a2, a0
 	add	a0, a0, a1
 	li	a1, 0
 	ret
@@ -37,7 +37,7 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000014:                   # @func0000000000000014
 	addi	a2, a2, 1
 	mul	a1, a1, a2
-	mulhu	a0, a0, a2
+	mulhu	a0, a2, a0
 	add	a0, a0, a1
 	li	a1, 0
 	ret

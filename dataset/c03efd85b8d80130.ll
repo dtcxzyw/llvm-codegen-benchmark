@@ -9,7 +9,7 @@ entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 20)
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 2)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 20)
   %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

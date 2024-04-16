@@ -3,7 +3,7 @@
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	lui	a2, 122
@@ -14,7 +14,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a1, a1, 255
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	addi	a0, a0, 50
 	slli	a0, a0, 32
 	lui	a1, 335544
@@ -40,7 +40,7 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000003e:                   # @func000000000000003e
 	sext.w	a1, a1
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	addi	a0, a0, 127
 	lui	a1, 526344
 	addiw	a1, a1, 129
@@ -55,7 +55,7 @@ func0000000000000020:                   # @func0000000000000020
 	sext.w	a1, a1
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	addi	a0, a0, 50
 	srli	a0, a0, 2
 	mulhu	a0, a0, a2
@@ -66,7 +66,7 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
 	lui	a2, 31250
@@ -80,7 +80,7 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000010:                   # @func0000000000000010
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	lui	a1, 12875
 	addiw	a1, a1, -1625
 	lui	a2, %hi(.LCPI6_0)

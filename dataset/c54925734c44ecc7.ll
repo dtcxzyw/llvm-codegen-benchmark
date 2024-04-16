@@ -188,10 +188,10 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 8
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, i32 %3, i32 %0
-  %6 = add i32 %5, -8
-  ret i32 %6
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, i32 %0, i32 %3
+  %5 = add i32 %4, -8
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -224,8 +224,8 @@ entry:
 define i32 @func00000000000000eb(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
-  %4 = icmp sgt i8 %1, -1
-  %5 = select i1 %4, i32 %3, i32 %0
+  %4 = icmp slt i8 %1, 0
+  %5 = select i1 %4, i32 %0, i32 %3
   %6 = add nuw nsw i32 %5, 1
   ret i32 %6
 }

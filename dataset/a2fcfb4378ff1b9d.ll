@@ -58,7 +58,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -116,7 +116,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 9
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
 }

@@ -27,7 +27,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 16
   %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = shl nuw nsw i32 %1, 4
   %5 = or i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   ret i32 %6
 }
 

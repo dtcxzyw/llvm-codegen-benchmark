@@ -54,7 +54,7 @@ define i128 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2251799813685247
   %3 = add nuw nsw i64 %2, 4503599627370457
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = zext i64 %4 to i128
   ret i128 %5
 }
@@ -80,7 +80,7 @@ define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131056
   %3 = add nuw nsw i32 %2, 16
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

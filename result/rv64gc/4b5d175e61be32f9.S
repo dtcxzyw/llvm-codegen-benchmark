@@ -30,8 +30,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a0, 255
-	lui	a0, 66
-	bnez	a1, .LBB5_2
 	lui	a0, 70
+	beqz	a1, .LBB5_2
+	lui	a0, 66
 .LBB5_2:                                # %entry
 	ret

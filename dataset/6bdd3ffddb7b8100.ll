@@ -180,10 +180,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, 1
-  %3 = sub nsw i32 0, %2
-  %4 = icmp sgt i32 %0, %3
-  ret i1 %4
+  %2 = xor i32 %1, -2
+  %.neg = add i32 %2, 1
+  %3 = icmp slt i32 %.neg, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -196,7 +196,7 @@ define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = sub nuw nsw i32 32, %2
-  %4 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 

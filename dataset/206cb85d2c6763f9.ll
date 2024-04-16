@@ -8,7 +8,7 @@
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10485760
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = mul i32 %4, 380141568
   %6 = lshr i32 %0, 17
   %7 = or disjoint i32 %6, %5

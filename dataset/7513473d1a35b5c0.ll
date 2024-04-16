@@ -36,7 +36,7 @@ entry:
   %4 = and i64 %3, 34359738360
   %5 = add nuw nsw i64 %4, 40
   %6 = select i1 %1, i64 0, i64 %5
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

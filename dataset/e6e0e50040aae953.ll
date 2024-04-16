@@ -9,7 +9,7 @@ entry:
   %2 = lshr i16 %0, 4
   %3 = and i16 %2, 1
   %4 = select i1 %1, i16 %3, i16 5
-  %5 = or i16 %0, %4
+  %5 = or i16 %4, %0
   ret i16 %5
 }
 

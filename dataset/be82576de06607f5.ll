@@ -19,10 +19,9 @@ define i1 @func000000000000006c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 6
   %4 = icmp slt i32 %3, %0
-  %5 = add i8 %1, -1
-  %6 = icmp ne i8 %5, 0
-  %7 = and i1 %6, %4
-  ret i1 %7
+  %5 = icmp ne i8 %1, 1
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -30,12 +29,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000ccc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp ne i64 %3, 260
-  %5 = add i64 %1, 1
-  %6 = icmp ne i64 %5, %0
-  %7 = and i1 %6, %4
-  ret i1 %7
+  %3 = icmp ne i64 %2, 259
+  %4 = add i64 %1, 1
+  %5 = icmp ne i64 %4, %0
+  %6 = and i1 %5, %3
+  ret i1 %6
 }
 
 ; 1 occurrences:

@@ -22,7 +22,7 @@ entry:
   %3 = add i32 %2, -4
   %4 = zext i32 %3 to i64
   %5 = shl i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

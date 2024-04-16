@@ -7,8 +7,8 @@ define i32 @func0000000000000045(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 56
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = shl nsw i32 %3, 1
+  %3 = shl i32 %2, 1
+  %4 = add i32 %3, -2
   ret i32 %4
 }
 
@@ -19,8 +19,8 @@ define i32 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 86400
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, 1789995
-  %4 = shl nsw i32 %3, 2
+  %3 = shl i32 %2, 2
+  %4 = add i32 %3, 7159980
   ret i32 %4
 }
 

@@ -24,8 +24,8 @@ define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ugt i32 %5, 15
+  %5 = and i64 %4, 4294967280
+  %6 = icmp ne i64 %5, 0
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

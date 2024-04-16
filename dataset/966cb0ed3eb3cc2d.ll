@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define double @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 %0, %1
-  %3 = add nsw i64 %2, -1
+  %2 = xor i64 %1, -1
+  %3 = add i64 %2, %0
   %4 = uitofp i64 %3 to double
   ret double %4
 }

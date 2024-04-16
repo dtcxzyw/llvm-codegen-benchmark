@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000031(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr inbounds i8, ptr %1, i64 112
-  %4 = getelementptr inbounds i8, ptr %1, i64 %2
-  %5 = icmp eq i8 %0, 0
-  %6 = select i1 %5, ptr %4, ptr %3
-  ret ptr %6
+  %3 = icmp eq i8 %0, 0
+  %.v = select i1 %3, i64 %2, i64 112
+  %4 = getelementptr inbounds i8, ptr %1, i64 %.v
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -45,11 +44,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 260
-  %4 = getelementptr i8, ptr %1, i64 %2
-  %5 = icmp eq i8 %0, 0
-  %6 = select i1 %5, ptr %4, ptr %3, !prof !0
-  ret ptr %6
+  %3 = icmp eq i8 %0, 0
+  %.v = select i1 %3, i64 %2, i64 260, !prof !0
+  %4 = getelementptr i8, ptr %1, i64 %.v
+  ret ptr %4
 }
 
 ; 4 occurrences:

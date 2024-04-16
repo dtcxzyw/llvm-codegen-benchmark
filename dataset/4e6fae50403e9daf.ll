@@ -64,7 +64,7 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 213887
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

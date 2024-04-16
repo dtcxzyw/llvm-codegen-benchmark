@@ -9,7 +9,7 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw i64 3, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -57,8 +57,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
-  %7 = or disjoint i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 
@@ -67,11 +67,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
-  %7 = or i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -84,7 +84,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -100,8 +100,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 65535, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
-  %7 = or disjoint i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 
@@ -117,7 +117,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 65535, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -141,8 +141,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 65535, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
-  %7 = or i64 %0, %6
+  %6 = and i64 %5, %1
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -151,10 +151,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl i64 15, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = or i64 %6, %0
   ret i64 %7
 }

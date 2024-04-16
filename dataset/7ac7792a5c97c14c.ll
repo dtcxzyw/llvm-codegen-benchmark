@@ -20,7 +20,7 @@ entry:
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 3, i32 0
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = select i1 %0, i32 7, i32 %4
   ret i32 %5
 }

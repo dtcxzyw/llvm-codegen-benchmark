@@ -1,6 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
-	slli.uw	a1, a1, 1
-	sh1add.uw	a0, a0, a1
+	zext.w	a1, a1
+	add.uw	a0, a0, a1
+	slli	a0, a0, 1
 	ret
 func00000000000000ef:                   # @func00000000000000ef
 	slli	a1, a1, 48
@@ -26,7 +27,7 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	sext.w	a1, a1
-	slli	a1, a1, 2
 	sext.w	a0, a0
-	sh2add	a0, a0, a1
+	add	a0, a0, a1
+	slli	a0, a0, 2
 	ret

@@ -173,9 +173,9 @@ define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 -1
-  %6 = add nsw i32 %5, -9001
-  %7 = icmp ult i32 %6, 2
+  %5 = add nsw i32 %0, -9001
+  %6 = icmp ult i32 %5, 2
+  %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -276,9 +276,9 @@ define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 -1
-  %6 = add i32 %5, -9001
-  %7 = icmp ult i32 %6, 2
+  %5 = add i32 %0, -9001
+  %6 = icmp ult i32 %5, 2
+  %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }
 

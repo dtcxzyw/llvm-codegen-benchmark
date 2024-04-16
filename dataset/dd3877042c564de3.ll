@@ -23,9 +23,8 @@ entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %0, -13
-  %6 = sub nsw i32 %5, %4
-  %7 = icmp sgt i32 %6, 0
-  ret i1 %7
+  %6 = icmp sgt i32 %5, %4
+  ret i1 %6
 }
 
 ; 12 occurrences:
@@ -47,9 +46,8 @@ entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = or disjoint i64 %3, %1
   %5 = add i64 %0, -4
-  %6 = sub i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -76,9 +74,8 @@ entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = add i16 %0, -2
-  %6 = sub i16 %5, %4
-  %7 = icmp eq i16 %6, 0
-  ret i1 %7
+  %6 = icmp eq i16 %5, %4
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

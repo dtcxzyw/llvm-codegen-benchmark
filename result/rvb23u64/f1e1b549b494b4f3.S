@@ -1,6 +1,6 @@
 func0000000000000081:                   # @func0000000000000081
 	slli	a1, a1, 1
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
@@ -11,7 +11,7 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000041:                   # @func0000000000000041
 	slli	a1, a1, 6
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
@@ -21,7 +21,7 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 16
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000c4:                   # @func00000000000000c4
@@ -35,13 +35,13 @@ func0000000000000044:                   # @func0000000000000044
 	sltiu	a0, a0, 16
 	ret
 func000000000000005a:                   # @func000000000000005a
-	slli	a1, a1, 3
-	subw	a0, a0, a1
-	sgtz	a0, a0
+	sext.w	a0, a0
+	slliw	a1, a1, 3
+	slt	a0, a1, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 6
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018

@@ -6,10 +6,10 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 6, i32 %1
-  %3 = and i32 %2, 1024
-  %4 = lshr exact i32 %3, 7
-  %5 = trunc nuw nsw i32 %4 to i16
+  %2 = trunc i32 %1 to i16
+  %3 = lshr i16 %2, 7
+  %4 = and i16 %3, 8
+  %5 = select i1 %0, i16 0, i16 %4
   ret i16 %5
 }
 

@@ -17,10 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -4
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 4
-  %6 = getelementptr i8, ptr %5, i64 %4
+  %3 = getelementptr inbounds i8, ptr %1, i64 4
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -4
   %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
@@ -30,10 +30,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -8
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %1, i64 8
-  %6 = getelementptr i8, ptr %5, i64 %4
+  %3 = getelementptr i8, ptr %1, i64 8
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -8
   %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
@@ -43,10 +43,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 4
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 -2
-  %6 = getelementptr inbounds i8, ptr %5, i64 %4
+  %3 = getelementptr inbounds i8, ptr %1, i64 -2
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 4
   %7 = icmp eq ptr %6, %0
   ret i1 %7
 }

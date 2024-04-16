@@ -34,7 +34,7 @@
 define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = xor i8 %0, %2
+  %3 = xor i8 %2, %0
   %4 = xor i8 %3, -1
   ret i8 %4
 }

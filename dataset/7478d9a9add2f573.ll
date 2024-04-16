@@ -10,7 +10,7 @@ entry:
   %4 = add nuw nsw i64 %3, 1
   %5 = add nuw nsw i64 %4, %1
   %6 = sub nsw i64 %5, %3
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

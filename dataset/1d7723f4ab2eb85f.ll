@@ -7,7 +7,7 @@ define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 60
   %4 = select i1 %1, i32 %3, i32 %2
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -21,7 +21,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -65521
   %4 = select i1 %1, i64 %3, i64 %2
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 
@@ -37,7 +37,7 @@ define i64 @func0000000000000002(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -65521
   %4 = select i1 %1, i64 %3, i64 %2
-  %5 = or i64 %0, %4
+  %5 = or i64 %4, %0
   ret i64 %5
 }
 

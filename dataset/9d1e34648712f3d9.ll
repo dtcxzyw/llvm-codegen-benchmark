@@ -11,9 +11,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 1023
-  %3 = zext nneg i16 %2 to i64
-  %4 = lshr i64 %3, 6
+  %2 = lshr i16 %1, 6
+  %3 = and i16 %2, 15
+  %4 = zext nneg i16 %3 to i64
   %5 = getelementptr inbounds [6 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }

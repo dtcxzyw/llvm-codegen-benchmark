@@ -32,7 +32,7 @@ define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -55,7 +55,7 @@ define i64 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 7
   %4 = select i1 %3, i32 1, i32 %1
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -110,7 +110,7 @@ define i64 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = select i1 %3, i32 1, i32 %1
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -120,11 +120,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 1, i32 %1
-  %5 = add nsw i32 %4, %0
-  %6 = sext i32 %5 to i64
-  ret i64 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 %1, i32 1
+  %4 = add nsw i32 %3, %0
+  %5 = sext i32 %4 to i64
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

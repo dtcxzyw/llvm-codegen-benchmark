@@ -192,7 +192,7 @@ entry:
 define i128 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %0, %4
   %6 = zext i64 %5 to i128
   ret i128 %6

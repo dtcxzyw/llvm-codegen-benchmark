@@ -8,8 +8,8 @@ define i64 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i16
   %2 = udiv i16 %1, 96
-  %3 = zext nneg i16 %2 to i64
-  %4 = lshr i64 %3, 1
+  %3 = lshr i16 %2, 1
+  %4 = zext nneg i16 %3 to i64
   ret i64 %4
 }
 

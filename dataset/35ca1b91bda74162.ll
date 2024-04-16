@@ -8,7 +8,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = call float @llvm.fabs.f32(float %3)
   %5 = fpext float %4 to double
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = call noundef float @llvm.fabs.f32(float %3)
   %5 = fpext float %4 to double
-  %6 = fcmp ult double %0, %5
+  %6 = fcmp ugt double %5, %0
   ret i1 %6
 }
 

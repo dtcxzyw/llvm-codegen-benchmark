@@ -11,18 +11,21 @@ func0000000000000001:                   # @func0000000000000001
 	mul	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	sp, sp, -16
-	sd	ra, 8(sp)                       # 8-byte Folded Spill
-	sd	s0, 0(sp)                       # 8-byte Folded Spill
+	addi	sp, sp, -32
+	sd	ra, 24(sp)                      # 8-byte Folded Spill
+	sd	s0, 16(sp)                      # 8-byte Folded Spill
+	sd	s1, 8(sp)                       # 8-byte Folded Spill
+	mv	s0, a1
+	mv	s1, a0
 	li	a2, 10
-	li	s0, 10
 	li	a3, 0
-	call	__divti3
-	mul	a1, a1, s0
-	mulhu	a2, a0, s0
-	add	a1, a1, a2
-	mul	a0, a0, s0
-	ld	ra, 8(sp)                       # 8-byte Folded Reload
-	ld	s0, 0(sp)                       # 8-byte Folded Reload
-	addi	sp, sp, 16
+	call	__modti3
+	sltu	a2, s1, a0
+	sub	a1, s0, a1
+	sub	a1, a1, a2
+	sub	a0, s1, a0
+	ld	ra, 24(sp)                      # 8-byte Folded Reload
+	ld	s0, 16(sp)                      # 8-byte Folded Reload
+	ld	s1, 8(sp)                       # 8-byte Folded Reload
+	addi	sp, sp, 32
 	ret

@@ -20,7 +20,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = and i32 %3, 1
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = and i32 %3, 4
   %5 = icmp ne i32 %4, 0
   ret i1 %5

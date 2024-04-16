@@ -25,11 +25,10 @@
 define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 9638941
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.Abc_ZddEnt_.1772341, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 4
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.Abc_ZddEnt_.1772341, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 53 occurrences:
@@ -92,9 +91,8 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %struct.UT_hash_bucket.1828138, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.UT_hash_bucket.1828138, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -108,9 +106,8 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.213.1853098", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.213.1853098", ptr %0, i64 %5, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 18 occurrences:
@@ -138,9 +135,8 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.pipe_buffer.1994261, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.pipe_buffer.1994261, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -151,9 +147,8 @@ entry:
   %3 = add i32 %2, 2147483647
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.list_head.2017693, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.list_head.2017693, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -164,9 +159,8 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.google::protobuf::internal::TailCallTableInfo::FastFieldInfo.2136796", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 24
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.google::protobuf::internal::TailCallTableInfo::FastFieldInfo.2136796", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -7,7 +7,7 @@
 define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %0
-  %3 = add i64 %1, %2
+  %3 = add i64 %2, %1
   %4 = lshr i64 %3, %0
   %5 = icmp ugt i64 %4, 2147483647
   ret i1 %5
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %0
-  %3 = add i64 %1, %2
+  %3 = add i64 %2, %1
   %4 = lshr i64 %3, %0
   %5 = icmp ult i64 %4, 2199023255553
   ret i1 %5

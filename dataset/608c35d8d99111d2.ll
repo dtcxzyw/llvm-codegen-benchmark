@@ -44,7 +44,7 @@ entry:
 define i8 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 19
-  %2 = add nsw i64 %1, -1
+  %2 = add nuw nsw i64 %1, 16777215
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i8
   ret i8 %4

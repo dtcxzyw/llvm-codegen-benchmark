@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -48
 	fcvt.d.w	fa4, a0
 	fmul.d	fa5, fa4, fa5
-	fadd.d	fa0, fa0, fa5
+	fadd.d	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.word	0x3b368d31                      # float 0.00278551527

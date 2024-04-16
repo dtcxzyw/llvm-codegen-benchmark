@@ -82,8 +82,8 @@ define i64 @func0000000000000071(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ugt i64 %0, 7
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %2 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
 }
 
@@ -123,8 +123,8 @@ define i64 @func0000000000000029(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp ult i8 %0, 3
-  %4 = select i1 %3, i32 %2, i32 1
-  %5 = zext nneg i32 %4 to i64
+  %4 = zext nneg i32 %2 to i64
+  %5 = select i1 %3, i64 %4, i64 1
   ret i64 %5
 }
 

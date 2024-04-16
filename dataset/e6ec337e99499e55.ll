@@ -9,7 +9,7 @@ entry:
   %4 = shl nuw i128 %3, 64
   %5 = and i128 %1, 18446744073709551615
   %6 = or disjoint i128 %4, %5
-  %7 = icmp eq i128 %0, %6
+  %7 = icmp eq i128 %6, %0
   ret i1 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = and i64 %1, -4096
   %6 = or i64 %4, %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

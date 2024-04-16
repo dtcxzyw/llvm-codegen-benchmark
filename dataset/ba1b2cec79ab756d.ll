@@ -49,10 +49,8 @@ define i1 @func00000000000003a5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.umax.i64(i64 %1, i64 %2)
   %4 = tail call noundef i64 @llvm.umax.i64(i64 %3, i64 4)
-  %5 = shl nuw i64 %4, 4
-  %6 = shl nuw i64 %0, 4
-  %7 = icmp ule i64 %6, %5
-  ret i1 %7
+  %5 = icmp uge i64 %4, %0
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -68,10 +66,8 @@ define i1 @func00000000000003e5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.umax.i64(i64 %1, i64 %2)
   %4 = tail call noundef i64 @llvm.umax.i64(i64 %3, i64 4)
-  %5 = shl nuw nsw i64 %4, 4
-  %6 = shl nuw i64 %0, 4
-  %7 = icmp ule i64 %6, %5
-  ret i1 %7
+  %5 = icmp uge i64 %4, %0
+  ret i1 %5
 }
 
 ; 3 occurrences:

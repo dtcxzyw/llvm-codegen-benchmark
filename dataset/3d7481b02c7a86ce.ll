@@ -9,7 +9,7 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = lshr i64 %2, 7
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

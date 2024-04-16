@@ -10,7 +10,7 @@ entry:
   %2 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 13)
   %3 = mul i32 %2, 5
   %4 = add i32 %3, -430675100
-  %5 = xor i32 %0, %4
+  %5 = xor i32 %4, %0
   %6 = mul i32 %5, -2048144789
   ret i32 %6
 }

@@ -2017,11 +2017,11 @@
 define i1 @func00000000000000a1(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add nsw i64 %1, %3
-  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 384307168202282325)
-  %6 = select i1 %0, i64 384307168202282325, i64 %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %4 = sub i64 0, %1
+  %5 = icmp eq i64 %3, %4
+  %not. = xor i1 %0, true
+  %6 = select i1 %not., i1 %5, i1 false
+  ret i1 %6
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -2045,11 +2045,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i1 @func00000000000000ac(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 192
-  %4 = add nsw i64 %1, %3
-  %5 = call i64 @llvm.umin.i64(i64 %4, i64 48038396025285290)
-  %6 = select i1 %0, i64 48038396025285290, i64 %5
-  %7 = icmp ne i64 %6, 0
-  ret i1 %7
+  %4 = sub i64 0, %1
+  %5 = icmp ne i64 %3, %4
+  %6 = select i1 %0, i1 true, i1 %5
+  ret i1 %6
 }
 
 ; 31 occurrences:
@@ -2088,11 +2087,11 @@ entry:
 define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 80
-  %4 = add i64 %1, %3
-  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 115292150460684697)
-  %6 = select i1 %0, i64 115292150460684697, i64 %5
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %4 = sub i64 0, %1
+  %5 = icmp eq i64 %3, %4
+  %not. = xor i1 %0, true
+  %6 = select i1 %not., i1 %5, i1 false
+  ret i1 %6
 }
 
 ; 2 occurrences:
@@ -2102,11 +2101,10 @@ entry:
 define i1 @func000000000000008c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
-  %4 = add i64 %1, %3
-  %5 = call i64 @llvm.umin.i64(i64 %4, i64 768614336404564650)
-  %6 = select i1 %0, i64 768614336404564650, i64 %5
-  %7 = icmp ne i64 %6, 0
-  ret i1 %7
+  %4 = sub i64 0, %1
+  %5 = icmp ne i64 %3, %4
+  %6 = select i1 %0, i1 true, i1 %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

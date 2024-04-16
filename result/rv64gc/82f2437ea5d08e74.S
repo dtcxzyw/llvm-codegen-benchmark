@@ -32,8 +32,9 @@ func00000000000000fa:                   # @func00000000000000fa
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
-	addi	a1, a1, -1
-	slliw	a1, a1, 16
+	slli	a1, a1, 16
+	lui	a2, 1048560
+	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func00000000000000d4:                   # @func00000000000000d4

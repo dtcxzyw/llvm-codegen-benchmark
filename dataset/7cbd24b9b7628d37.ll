@@ -99,7 +99,7 @@ define i8 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 true)
   %2 = urem i32 %1, 100
-  %3 = trunc i32 %2 to i8
+  %3 = trunc nuw nsw i32 %2 to i8
   %4 = udiv i8 %3, 10
   %5 = or disjoint i8 %4, 48
   ret i8 %5

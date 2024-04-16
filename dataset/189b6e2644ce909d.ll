@@ -8,10 +8,9 @@
 define i1 @func000000000000001a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp sgt i32 %4, 0
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %4 = icmp slt i32 %3, %1
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -22,7 +21,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = icmp eq i32 %4, 2
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +33,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp eq i64 %4, 2000000000
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -46,7 +45,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = icmp sgt i32 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

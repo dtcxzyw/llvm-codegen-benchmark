@@ -4,11 +4,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -1
-  %2 = shl i32 %1, 7
-  %3 = add nuw i32 %2, 128
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %1 = shl i32 %0, 7
+  %2 = zext i32 %1 to i64
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -16,11 +14,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = add nuw nsw i32 %2, 36
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %1 = shl i32 %0, 2
+  %2 = add i32 %1, 32
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -28,11 +25,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000007b(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %1 = shl i32 %0, 1
+  %2 = or disjoint i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 4 occurrences:
@@ -43,11 +39,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = shl i32 %1, 3
-  %3 = add i32 %2, 8
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %1 = shl i32 %0, 3
+  %2 = add i32 %1, 16
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -55,11 +50,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
-  %2 = shl nsw i32 %1, 1
-  %3 = add nsw i32 %2, 16
-  %4 = zext i32 %3 to i64
-  ret i64 %4
+  %1 = shl i32 %0, 1
+  %2 = add i32 %1, 14
+  %3 = zext i32 %2 to i64
+  ret i64 %3
 }
 
 ; 2 occurrences:
@@ -68,11 +62,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = add nuw nsw i32 %2, 24
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %1 = shl i32 %0, 2
+  %2 = add i32 %1, 28
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

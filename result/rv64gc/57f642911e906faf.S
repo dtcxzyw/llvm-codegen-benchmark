@@ -50,11 +50,11 @@ func0000000000000148:                   # @func0000000000000148
 	sltu	a0, a0, a1
 	ret
 func00000000000001da:                   # @func00000000000001da
+	sext.w	a0, a0
 	andi	a2, a2, 255
-	slli	a1, a1, 8
+	slliw	a1, a1, 8
 	or	a1, a1, a2
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func00000000000001d4:                   # @func00000000000001d4

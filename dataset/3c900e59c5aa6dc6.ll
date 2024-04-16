@@ -6,9 +6,9 @@
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = select i1 %2, i64 5, i64 7
-  %4 = sub i64 %0, %3
-  ret i64 %4
+  %.neg = select i1 %2, i64 -5, i64 -7
+  %3 = add i64 %.neg, %0
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

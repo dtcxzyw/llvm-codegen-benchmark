@@ -21,7 +21,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = tail call i64 @llvm.umin.i64(i64 %0, i64 %4)
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 

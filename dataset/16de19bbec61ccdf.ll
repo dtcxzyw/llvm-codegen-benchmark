@@ -3652,7 +3652,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 1152921504606846975)
   ret i64 %7
 }
@@ -4467,7 +4467,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 1152921504606846975)
   ret i64 %7
 }
@@ -4701,7 +4701,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 1
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = tail call i64 @llvm.umin.i64(i64 %6, i64 4611686018427387903)
   ret i64 %7
 }

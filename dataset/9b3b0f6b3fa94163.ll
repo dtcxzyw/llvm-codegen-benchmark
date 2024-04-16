@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4611686018427387900
-  %3 = shl nuw i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, -32
   %4 = add nuw i64 %3, %0
   ret i64 %4
 }
@@ -15,8 +15,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 9223372036854775800
-  %3 = shl i64 %2, 2
+  %2 = shl i64 %1, 2
+  %3 = and i64 %2, -32
   %4 = add i64 %3, %0
   ret i64 %4
 }
@@ -80,9 +80,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %0, %3
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, 34359738360
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -102,9 +102,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 252
-  %3 = shl nuw nsw i32 %2, 1
-  %4 = add nuw nsw i32 %0, %3
+  %2 = shl i32 %1, 1
+  %3 = and i32 %2, 504
+  %4 = add nuw nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -130,9 +130,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 15
-  %3 = shl nuw nsw i32 %2, 3
-  %4 = add nsw i32 %0, %3
+  %2 = shl i32 %1, 3
+  %3 = and i32 %2, 120
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -141,8 +141,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -8
-  %3 = shl nsw i64 %2, 1
+  %2 = shl i64 %1, 1
+  %3 = and i64 %2, -16
   %4 = add nsw i64 %3, %0
   ret i64 %4
 }
@@ -152,9 +152,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -8
-  %3 = shl nsw i64 %2, 3
-  %4 = add nuw nsw i64 %0, %3
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, -64
+  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -163,10 +163,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 255
-  %3 = shl nuw i16 %2, 8
-  %4 = add i16 %0, %3
-  ret i16 %4
+  %2 = shl i16 %1, 8
+  %3 = add i16 %2, %0
+  ret i16 %3
 }
 
 attributes #0 = { nounwind }

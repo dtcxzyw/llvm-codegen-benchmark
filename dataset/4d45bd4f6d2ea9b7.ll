@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i16 %0, i8 %1) #0 {
 entry:
-  %2 = sext i8 %1 to i16
-  %3 = mul nsw i16 %0, %2
+  %2 = zext i8 %1 to i16
+  %3 = mul i16 %2, %0
   %4 = and i16 %3, 128
   %5 = icmp ne i16 %4, 0
   ret i1 %5
@@ -39,8 +39,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %0, %2
+  %2 = zext i32 %1 to i64
+  %3 = mul i64 %2, %0
   %4 = and i64 %3, 2147483648
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -52,8 +52,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %2 = zext i32 %1 to i64
+  %3 = mul i64 %2, %0
   %4 = and i64 %3, 4
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -64,8 +64,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = mul i64 %0, %2
+  %2 = zext i32 %1 to i64
+  %3 = mul i64 %2, %0
   %4 = and i64 %3, 8191
   %5 = icmp ne i64 %4, 0
   ret i1 %5

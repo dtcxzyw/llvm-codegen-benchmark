@@ -11,12 +11,11 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i32
-  %3 = and i32 %2, 15
-  %4 = and i32 %0, 65520
-  %5 = or disjoint i32 %4, %3
-  %6 = trunc i32 %5 to i16
-  ret i16 %6
+  %2 = and i16 %1, 15
+  %3 = trunc i32 %0 to i16
+  %4 = and i16 %3, -16
+  %5 = or disjoint i16 %4, %2
+  ret i16 %5
 }
 
 ; 1 occurrences:
@@ -24,12 +23,11 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 63
-  %4 = and i32 %0, 1984
-  %5 = or disjoint i32 %3, %4
-  %6 = trunc nuw i32 %5 to i8
-  ret i8 %6
+  %2 = and i8 %1, 63
+  %3 = trunc i32 %0 to i8
+  %4 = and i8 %3, -64
+  %5 = or disjoint i8 %4, %2
+  ret i8 %5
 }
 
 ; 1 occurrences:
@@ -37,10 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, 63
+  %2 = and i8 %1, 63
+  %3 = zext nneg i8 %2 to i32
   %4 = and i32 %0, 4032
-  %5 = or disjoint i32 %3, %4
+  %5 = or disjoint i32 %4, %3
   %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
 }

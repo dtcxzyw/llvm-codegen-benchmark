@@ -32,9 +32,9 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 38, i32 124
-  %4 = icmp sle i32 %0, %1
-  %5 = select i1 %4, i32 %3, i32 94
-  ret i32 %5
+  %.not = icmp sgt i32 %0, %1
+  %4 = select i1 %.not, i32 94, i32 %3
+  ret i32 %4
 }
 
 ; 4 occurrences:

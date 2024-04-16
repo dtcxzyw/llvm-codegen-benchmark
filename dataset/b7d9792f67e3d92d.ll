@@ -23,7 +23,7 @@ entry:
 define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = sdiv exact i64 %1, 24
   %6 = add i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sdiv exact i64 %0, 24
   %6 = add nsw i64 %5, %4
   %7 = icmp ult i64 %6, 32768

@@ -5,7 +5,7 @@
 define i1 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %4, i64 %5)
   %7 = extractvalue { i64, i1 } %6, 1
@@ -22,7 +22,7 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 define i1 @func0000000000000008(i8 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = zext i8 %0 to i64
   %6 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %5, i64 %4)
   %7 = extractvalue { i64, i1 } %6, 1
@@ -35,7 +35,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %0, %3
+  %4 = mul nuw i64 %3, %0
   %5 = zext nneg i8 %1 to i64
   %6 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %4, i64 %5)
   %7 = extractvalue { i64, i1 } %6, 1
@@ -48,7 +48,7 @@ entry:
 define i1 @func000000000000001e(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
+  %4 = mul nuw nsw i64 %3, %1
   %5 = zext nneg i32 %0 to i64
   %6 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %5, i64 %4)
   %7 = extractvalue { i64, i1 } %6, 1

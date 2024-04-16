@@ -112,9 +112,9 @@ entry:
 define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, 64
-  %5 = icmp sgt i32 %0, -1
-  %6 = select i1 %5, i32 %3, i32 %4
+  %4 = lshr i32 %0, 25
+  %5 = and i32 %4, 64
+  %6 = or i32 %3, %5
   ret i32 %6
 }
 

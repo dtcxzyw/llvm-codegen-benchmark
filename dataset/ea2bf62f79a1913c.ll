@@ -6,8 +6,8 @@
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
-  %3 = sub nuw nsw i32 8, %2
-  %4 = sub i32 %3, %0
+  %3 = add i32 %2, %0
+  %4 = sub i32 8, %3
   ret i32 %4
 }
 

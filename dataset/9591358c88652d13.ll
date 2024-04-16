@@ -39,7 +39,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
-  %2 = srem i32 %1, 2
+  %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %0, 0
   %5 = and i1 %4, %3
@@ -76,7 +76,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
-  %2 = srem i32 %1, 4
+  %2 = and i32 %1, -2147483645
   %3 = icmp sgt i32 %2, 0
   %4 = icmp sgt i32 %0, 4
   %5 = and i1 %3, %4

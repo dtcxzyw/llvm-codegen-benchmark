@@ -25,20 +25,18 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a0, a0, a1
 	ret
 func000000000000004c:                   # @func000000000000004c
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	or	a1, a1, a2
-	sltu	a1, a1, a0
+	sltu	a2, a2, a0
+	not	a1, a1
+	and	a1, a1, a2
 	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
+	sext.w	a2, a2
 	sext.w	a0, a0
-	andi	a1, a1, 1
-	addi	a1, a1, -1
+	sltu	a2, a0, a2
+	not	a1, a1
 	and	a1, a1, a2
-	sext.w	a1, a1
-	sltu	a1, a0, a1
 	lui	a2, 8192
 	sltu	a0, a2, a0
 	and	a0, a0, a1

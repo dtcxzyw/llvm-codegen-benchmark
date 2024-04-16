@@ -54,8 +54,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func00000000000000d4:                   # @func00000000000000d4
 	add	a1, a1, a2
 	add	a0, a0, a1
-	andi	a0, a0, 7
-	sltiu	a0, a0, 2
+	andi	a0, a0, 6
+	seqz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	add	a1, a1, a2

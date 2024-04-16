@@ -41,7 +41,7 @@ define i1 @func0000000000000051(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = getelementptr inbounds %"struct.rocksdb::StatisticsImpl::StatisticsData.1577804", ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -52,7 +52,7 @@ define i1 @func0000000000000054(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = getelementptr inbounds %"struct.rocksdb::clock_cache::FixedHyperClockTable::HandleImpl.1583102", ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -63,7 +63,7 @@ define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = getelementptr %struct.page.1998939, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 

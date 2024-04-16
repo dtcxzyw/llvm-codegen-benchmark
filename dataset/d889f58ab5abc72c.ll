@@ -26,9 +26,9 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 1
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %.mask = and i64 %3, 9223372036854775807
+  %4 = icmp eq i64 %.mask, 0
+  ret i1 %4
 }
 
 ; 32 occurrences:
@@ -69,8 +69,8 @@ define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 29
-  %5 = icmp ult i64 %4, 4294967296
+  %4 = and i64 %3, 34359738360
+  %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 

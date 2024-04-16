@@ -8,7 +8,7 @@ entry:
   %3 = fmul float %2, 5.000000e-01
   %4 = fcmp olt float %3, %1
   %5 = select i1 %4, float %3, float %1
-  %6 = fadd float %0, %5
+  %6 = fadd float %5, %0
   ret float %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = fmul double %2, 2.000000e-01
   %4 = fcmp ogt double %3, %1
   %5 = select i1 %4, double %3, double %1
-  %6 = fadd double %0, %5
+  %6 = fadd double %5, %0
   ret double %6
 }
 

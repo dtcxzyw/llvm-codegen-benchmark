@@ -16,10 +16,9 @@ func0000000000000005:                   # @func0000000000000005
 	addw	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
-	zext.w	a2, a2
 	srliw	a1, a1, 12
 	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 func0000000000000063:                   # @func0000000000000063
 	zext.h	a2, a2

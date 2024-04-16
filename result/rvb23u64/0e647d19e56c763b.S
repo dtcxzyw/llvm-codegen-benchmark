@@ -34,8 +34,8 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000015:                   # @func0000000000000015
 	sext.b	a2, a2
 	slti	a2, a2, 0
-	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	li	a1, 6
 	minu	a0, a0, a1

@@ -20,7 +20,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 3
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -31,7 +31,7 @@ define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 3
   %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -96,7 +96,7 @@ define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 24
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -127,7 +127,7 @@ define i1 @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 24
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -171,7 +171,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -8
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -186,7 +186,7 @@ define i1 @func0000000000000074(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = getelementptr inbounds i64, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -200,7 +200,7 @@ define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 3
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -211,7 +211,7 @@ define i1 @func0000000000000014(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 6
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -265,7 +265,7 @@ define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -276,7 +276,7 @@ define i1 @func0000000000000035(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 12
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
@@ -288,7 +288,7 @@ define i1 @func0000000000000034(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 80
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
+  %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
@@ -299,7 +299,7 @@ define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 24
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

@@ -10,10 +10,9 @@ define { i64, i32 } @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 1000000000
   %3 = zext nneg i32 %2 to i64
-  %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %0, i64 %3)
-  %5 = extractvalue { i64, i1 } %4, 0
-  %6 = insertvalue { i64, i32 } poison, i64 %5, 0
-  ret { i64, i32 } %6
+  %4 = add i64 %3, %0
+  %5 = insertvalue { i64, i32 } poison, i64 %4, 0
+  ret { i64, i32 } %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

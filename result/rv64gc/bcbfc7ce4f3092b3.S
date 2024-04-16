@@ -2,8 +2,9 @@ func00000000000003d1:                   # @func00000000000003d1
 	add	a1, a1, a2
 	lui	a2, 1
 	addi	a2, a2, -496
-	mul	a1, a1, a2
-	addw	a0, a0, a1
+	mulw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000003f4:                   # @func00000000000003f4
@@ -37,7 +38,8 @@ func0000000000000141:                   # @func0000000000000141
 	add	a1, a1, a2
 	li	a2, 12
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000046:                   # @func0000000000000046
@@ -66,7 +68,8 @@ func00000000000003fc:                   # @func00000000000003fc
 	add	a1, a1, a2
 	li	a2, 24
 	mul	a1, a1, a2
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -149,8 +152,9 @@ func0000000000000158:                   # @func0000000000000158
 func0000000000000151:                   # @func0000000000000151
 	add	a1, a1, a2
 	slli	a2, a1, 2
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000144:                   # @func0000000000000144

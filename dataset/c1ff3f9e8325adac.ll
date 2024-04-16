@@ -32,7 +32,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -14
   %4 = icmp ult i32 %3, -5
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -41,11 +41,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, 16
-  %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
-  ret i1 %5
+  %2 = icmp ne i32 %1, -16
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

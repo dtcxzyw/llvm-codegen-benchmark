@@ -51,7 +51,7 @@ entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
-  %4 = add nsw i64 %3, -1
+  %4 = add nuw nsw i64 %3, 4294967295
   %5 = and i64 %4, 4294967295
   ret i64 %5
 }

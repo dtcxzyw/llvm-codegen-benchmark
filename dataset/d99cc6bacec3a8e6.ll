@@ -40,9 +40,8 @@ entry:
   %3 = mul i32 %2, 12
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = getelementptr inbounds %struct.dtPoly.1878779, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 30
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.dtPoly.1878779, ptr %5, i64 %0, i32 4
+  ret ptr %6
 }
 
 ; 1 occurrences:

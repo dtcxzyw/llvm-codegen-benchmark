@@ -18,7 +18,7 @@ func0000000000000003:                   # @func0000000000000003
 	sext.w	a3, a1
 	srliw	a2, a2, 1
 	li	a1, 92
-	beq	a3, a2, .LBB2_2
+	beq	a2, a3, .LBB2_2
 	li	a1, 96
 .LBB2_2:                                # %entry
 	add	a0, a0, a1

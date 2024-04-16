@@ -10,7 +10,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = add nsw i32 %3, -58
   %5 = icmp ult i32 %4, -10
-  %6 = or i1 %1, %5
+  %6 = or i1 %5, %1
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
 }

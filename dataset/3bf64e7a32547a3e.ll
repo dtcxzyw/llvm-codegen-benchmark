@@ -171,7 +171,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -214,7 +214,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31744
-  %3 = mul nuw nsw i32 %0, %2
+  %3 = mul nuw nsw i32 %2, %0
   %4 = lshr exact i32 %3, 15
   ret i32 %4
 }
@@ -225,7 +225,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65280
-  %3 = mul nuw i32 %0, %2
+  %3 = mul nuw i32 %2, %0
   %4 = lshr exact i32 %3, 16
   ret i32 %4
 }

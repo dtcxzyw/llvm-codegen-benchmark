@@ -15,10 +15,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 24
-  %3 = icmp ne i32 %2, 4
-  %4 = and i1 %3, %0
-  ret i1 %4
+  %.mask = and i32 %1, -16777216
+  %2 = icmp ne i32 %.mask, 67108864
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 ; 22 occurrences:
@@ -47,10 +47,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
-  %2 = lshr i8 %1, 3
-  %3 = icmp eq i8 %2, 2
-  %4 = and i1 %3, %0
-  ret i1 %4
+  %.mask = and i8 %1, -8
+  %2 = icmp eq i8 %.mask, 16
+  %3 = and i1 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

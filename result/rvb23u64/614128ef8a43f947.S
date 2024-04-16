@@ -29,7 +29,6 @@ func0000000000000118:                   # @func0000000000000118
 func0000000000000018:                   # @func0000000000000018
 	srai	a2, a2, 12
 	sltiu	a1, a1, -1
-	addi	a1, a1, -1
-	or	a1, a1, a2
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
+	and	a0, a0, a1
 	ret

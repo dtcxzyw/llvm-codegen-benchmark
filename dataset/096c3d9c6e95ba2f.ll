@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
-  %2 = xor i32 %1, -1
-  %3 = trunc i32 %2 to i16
-  %4 = and i16 %0, %3
+  %2 = trunc i32 %1 to i16
+  %3 = xor i16 %2, -1
+  %4 = and i16 %3, %0
   ret i16 %4
 }
 

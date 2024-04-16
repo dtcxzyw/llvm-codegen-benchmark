@@ -177,7 +177,7 @@ entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 4503599627370495
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = sub nuw nsw i32 -1063, %4
   ret i32 %5
 }

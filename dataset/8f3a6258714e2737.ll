@@ -20,7 +20,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sdiv i32 %4, %0
   ret i32 %5
 }

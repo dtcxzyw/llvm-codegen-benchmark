@@ -21,8 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000020(i8 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
-  %3 = icmp ugt i32 %2, 32
+  %2 = add i32 %1, -32
+  %3 = icmp ult i32 %2, -33
   %4 = trunc i8 %0 to i1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -35,11 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(i8 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 16
-  %3 = icmp eq i64 %2, 48
-  %4 = trunc i8 %0 to i1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
+  %2 = icmp eq i64 %1, 32
+  %3 = trunc i8 %0 to i1
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
 }
 
 ; 2 occurrences:

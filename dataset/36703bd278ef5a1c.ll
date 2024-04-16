@@ -8,9 +8,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = tail call i64 @llvm.usub.sat.i64(i64 %0, i64 1)
-  %2 = icmp ugt i64 %1, 31
-  ret i1 %2
+  %1 = icmp ugt i64 %0, 32
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -25,8 +24,8 @@ declare i64 @llvm.usub.sat.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0) #0 {
 entry:
-  %1 = call i32 @llvm.usub.sat.i32(i32 %0, i32 319)
-  %2 = icmp sgt i32 %1, 0
+  %1 = add i32 %0, -320
+  %2 = icmp ult i32 %1, 2147483647
   ret i1 %2
 }
 

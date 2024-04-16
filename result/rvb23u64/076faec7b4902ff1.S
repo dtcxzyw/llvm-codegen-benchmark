@@ -18,9 +18,7 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000182:                   # @func0000000000000182
 	sext.w	a0, a0
-	slti	a2, a0, 0
-	or	a1, a1, a2
-	seqz	a0, a0
+	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000054:                   # @func0000000000000054

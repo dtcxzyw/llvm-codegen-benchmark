@@ -55,7 +55,7 @@ entry:
 define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !0
   %5 = lshr i64 -1, %4
   ret i64 %5

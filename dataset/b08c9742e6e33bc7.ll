@@ -5,11 +5,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 0, i32 67108864
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ugt i32 %3, 268435455
-  %5 = zext i1 %4 to i32
-  ret i32 %5
+  %2 = icmp ugt i32 %0, 268435455
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -34,7 +32,7 @@ entry:
 define i8 @func0000000000000018(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 16, i8 0
-  %3 = or i8 %0, %2
+  %3 = or i8 %2, %0
   %4 = icmp ne i8 %3, 0
   %5 = zext i1 %4 to i8
   ret i8 %5

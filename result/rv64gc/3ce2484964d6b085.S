@@ -14,8 +14,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a0, 1
-	li	a0, 256
-	bnez	a1, .LBB2_2
 	li	a0, 248
+	beqz	a1, .LBB2_2
+	li	a0, 256
 .LBB2_2:                                # %entry
 	ret

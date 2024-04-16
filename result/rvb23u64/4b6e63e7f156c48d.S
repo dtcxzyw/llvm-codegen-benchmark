@@ -43,7 +43,7 @@ func0000000000000008:                   # @func0000000000000008
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	fmul.s	fa5, fa1, fa5
 .LBB3_2:                                # %entry
-	feq.s	a0, fa0, fa5
+	feq.s	a0, fa5, fa0
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1

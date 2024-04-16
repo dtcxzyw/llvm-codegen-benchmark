@@ -9,7 +9,7 @@ entry:
   %3 = ashr exact i16 %2, 8
   %4 = mul nsw i16 %3, %1
   %5 = ashr i16 %4, 7
-  %6 = add nsw i16 %0, %5
+  %6 = add nsw i16 %5, %0
   ret i16 %6
 }
 

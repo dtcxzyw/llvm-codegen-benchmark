@@ -20,10 +20,9 @@ entry:
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
-  %2 = select i1 %1, i32 12, i32 17
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
-  ret i64 %4
+  %narrow = select i1 %1, i32 13, i32 18
+  %2 = zext nneg i32 %narrow to i64
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

@@ -1,47 +1,51 @@
 func0000000000000004:                   # @func0000000000000004
-	srli	a1, a1, 32
-	lui	a2, 524032
+	li	a2, 2047
+	slli	a2, a2, 52
 	and	a1, a1, a2
 	lui	a2, 27136
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
+	slli	a2, a2, 32
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a1, 12
-	srli	a1, a1, 44
+	lui	a2, 1048575
+	slli.uw	a2, a2, 20
+	and	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a1, a1, 37
-	srli	a1, a1, 61
+	lui	a2, 28672
+	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	slli	a1, a1, 1
-	srli	a1, a1, 53
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	li	a2, 1023
+	slli	a2, a2, 53
+	and	a1, a1, a2
+	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	slli	a2, a2, 49
-	srli	a2, a2, 49
-	sltiu	a1, a2, 2
-	xori	a1, a1, 1
+	lui	a1, 8
+	addiw	a1, a1, -2
+	and	a1, a1, a2
+	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	srli	a1, a1, 52
+	bexti	a1, a1, 52
 	and	a0, a0, a1
-	andi	a0, a0, 1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	slli	a1, a1, 1
-	srli	a1, a1, 53
-	addi	a1, a1, -1022
+	li	a2, 2047
+	slli	a2, a2, 52
+	and	a1, a1, a2
+	li	a2, 511
+	slli	a2, a2, 53
+	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

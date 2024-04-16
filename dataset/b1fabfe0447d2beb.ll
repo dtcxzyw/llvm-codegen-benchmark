@@ -19,8 +19,8 @@ define i1 @func0000000000000034(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 3
   %4 = icmp eq i8 %3, 0
-  %5 = select i1 %4, i8 1, i8 %1
-  %6 = or disjoint i8 %0, %5
+  %5 = select i1 %4, i8 0, i8 %1
+  %6 = or i8 %5, %0
   %7 = icmp ult i8 %6, 2
   ret i1 %7
 }
@@ -49,7 +49,7 @@ entry:
   %3 = and i8 %2, 2
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 0, i32 %1
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = icmp ne i32 %6, 0
   ret i1 %7
 }

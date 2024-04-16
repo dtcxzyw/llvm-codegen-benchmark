@@ -5,7 +5,7 @@
 define i64 @func0000000000000004(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -1
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   %4 = sext i1 %3 to i64
   ret i64 %4
 }
@@ -19,7 +19,7 @@ entry:
 define i64 @func000000000000001c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 16
-  %3 = icmp ne ptr %0, %2
+  %3 = icmp ne ptr %2, %0
   %4 = sext i1 %3 to i64
   ret i64 %4
 }

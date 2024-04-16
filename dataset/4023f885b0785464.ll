@@ -9,11 +9,11 @@
 define i32 @func00000000000000a3(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = lshr exact i64 %3, 16
-  %5 = trunc i64 %4 to i32
-  %6 = lshr i32 %5, 16
-  %7 = add nuw nsw i32 %0, %6
-  ret i32 %7
+  %sum.shift = lshr i64 %3, 32
+  %4 = trunc nuw i64 %sum.shift to i32
+  %5 = and i32 %4, 65535
+  %6 = add nuw nsw i32 %5, %0
+  ret i32 %6
 }
 
 ; 6 occurrences:
@@ -27,11 +27,10 @@ entry:
 define i64 @func0000000000000081(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = lshr i64 %5, 32
-  %7 = add nsw i64 %6, %0
-  ret i64 %7
+  %sum.shift = lshr i128 %3, 96
+  %4 = trunc nuw nsw i128 %sum.shift to i64
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

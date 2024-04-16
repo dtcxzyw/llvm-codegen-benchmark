@@ -12,7 +12,7 @@ entry:
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

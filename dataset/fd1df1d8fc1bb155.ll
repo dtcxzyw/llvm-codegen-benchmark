@@ -7,7 +7,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -37,7 +37,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
-  %5 = icmp sgt i32 %0, %4
+  %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
 
@@ -51,7 +51,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 
@@ -62,7 +62,7 @@ define i1 @func0000000000000007(i32 %0, i32 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
-  %5 = icmp sle i32 %0, %4
+  %5 = icmp sge i32 %4, %0
   ret i1 %5
 }
 

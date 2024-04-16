@@ -7,7 +7,7 @@ entry:
   %3 = add nsw i32 %2, -7
   %4 = add nsw i32 %3, %1
   %5 = icmp sgt i32 %4, -1
-  %6 = icmp sgt i32 %0, %4
+  %6 = icmp slt i32 %4, %0
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = add i32 %3, %1
   %5 = icmp sgt i32 %4, -1
-  %6 = icmp sgt i32 %0, %4
+  %6 = icmp slt i32 %4, %0
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
@@ -33,7 +33,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = add i64 %3, %1
   %5 = icmp ult i64 %4, 4097
-  %6 = icmp ult i64 %0, %4
+  %6 = icmp ugt i64 %4, %0
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }

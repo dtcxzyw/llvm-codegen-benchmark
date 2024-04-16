@@ -10,7 +10,7 @@ entry:
   %4 = and i64 %3, 65535
   %5 = icmp ne i64 %4, 0
   %6 = zext i1 %5 to i64
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

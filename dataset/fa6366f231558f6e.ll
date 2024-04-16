@@ -4,11 +4,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -2
-  %2 = and i32 %1, -2
-  %3 = add nsw i32 %0, -4
-  %4 = sub i32 %3, %2
-  ret i32 %4
+  %1 = or i32 %0, -2
+  ret i32 %1
 }
 
 ; 1 occurrences:
@@ -16,11 +13,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -2
-  %2 = and i32 %1, -2
-  %3 = add nsw i32 %0, -4
-  %4 = sub nsw i32 %3, %2
-  ret i32 %4
+  %1 = or i32 %0, -2
+  ret i32 %1
 }
 
 ; 6 occurrences:
@@ -66,7 +60,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 25
+  %1 = add i32 %0, 1
   %2 = and i32 %1, 7
   %3 = add i32 %0, 33
   %4 = sub i32 %3, %2

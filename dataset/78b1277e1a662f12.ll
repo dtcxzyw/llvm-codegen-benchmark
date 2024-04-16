@@ -14,7 +14,7 @@
 define i1 @func0000000000000149(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds ptr, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
+  %4 = icmp ugt ptr %3, %0
   %5 = icmp uge ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -26,7 +26,7 @@ entry:
 define i1 @func0000000000000159(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
-  %4 = icmp ule ptr %0, %3
+  %4 = icmp uge ptr %3, %0
   %5 = icmp uge ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -40,7 +40,7 @@ entry:
 define i1 @func0000000000000145(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds %"class.sat::literal.2103515", ptr %0, i64 %2
-  %4 = icmp ult ptr %1, %3
+  %4 = icmp ugt ptr %3, %1
   %5 = icmp ule ptr %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

@@ -47,7 +47,7 @@ entry:
   %3 = select i1 %2, double 1.000000e+02, double %1
   %4 = fcmp ole double %3, 1.000000e+01
   %5 = select i1 %4, double 1.000000e+01, double %3
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

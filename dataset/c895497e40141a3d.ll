@@ -20,7 +20,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sdiv i64 %1, %3
   %5 = icmp eq i64 %4, 1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

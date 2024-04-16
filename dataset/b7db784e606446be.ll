@@ -78,7 +78,7 @@ define i48 @func0000000000000001(i48 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i16
   %3 = zext i16 %2 to i48
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   ret i48 %4
 }
 

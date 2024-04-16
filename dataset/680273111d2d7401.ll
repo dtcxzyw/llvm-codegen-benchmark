@@ -26,9 +26,8 @@
 define i64 @func000000000000000d(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
-  %2 = shl nuw nsw i64 %1, 3
-  %3 = sub nsw i64 0, %2
-  ret i64 %3
+  %.neg = mul nsw i64 %1, -8
+  ret i64 %.neg
 }
 
 ; 15 occurrences:

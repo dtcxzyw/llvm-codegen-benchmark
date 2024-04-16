@@ -32,7 +32,7 @@ entry:
   %3 = icmp ult i32 %2, 53
   %4 = select i1 %3, i32 40960, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = icmp ult i32 %2, 53
   %4 = select i1 %3, i32 40960, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = mul nuw nsw i64 %0, %5
+  %6 = mul nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = icmp slt i32 %2, 5
   %4 = select i1 %3, i32 5, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = icmp slt i32 %2, 5
   %4 = select i1 %3, i32 5, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = mul nuw nsw i64 %0, %5
+  %6 = mul nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -80,7 +80,7 @@ entry:
   %3 = icmp slt i32 %2, 5
   %4 = select i1 %3, i32 5, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = mul nuw i64 %0, %5
+  %6 = mul nuw i64 %5, %0
   ret i64 %6
 }
 
@@ -105,7 +105,7 @@ entry:
   %3 = icmp eq i8 %2, 15
   %4 = select i1 %3, i8 2, i8 %1
   %5 = zext nneg i8 %4 to i32
-  %6 = mul nuw nsw i32 %0, %5
+  %6 = mul nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -117,7 +117,7 @@ entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 
@@ -130,7 +130,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 1, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 
@@ -142,7 +142,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = mul nsw i64 %0, %5
+  %6 = mul nsw i64 %5, %0
   ret i64 %6
 }
 

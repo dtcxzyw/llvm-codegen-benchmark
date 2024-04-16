@@ -35,9 +35,9 @@ func00000000000001c1:                   # @func00000000000001c1
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a0, a0
 	andi	a1, a1, 2
 	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000081:                   # @func0000000000000081

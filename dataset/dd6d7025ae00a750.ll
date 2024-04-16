@@ -51,7 +51,7 @@ declare i32 @llvm.cttz.i32(i32, i1 immarg) #1
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.cttz.i32(i32 %1, i1 true), !range !1
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -105,7 +105,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.cttz.i32(i32 %1, i1 false), !range !1
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -126,7 +126,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   ret i64 %3
 }
 
@@ -149,7 +149,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.cttz.i32(i32 %1, i1 true), !range !1
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   ret i32 %3
 }
 
@@ -180,7 +180,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   ret i64 %3
 }
 

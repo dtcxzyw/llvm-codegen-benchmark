@@ -12,10 +12,9 @@ define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = tail call i64 @llvm.abs.i64(i64 %2, i1 true)
-  %4 = udiv i64 %3, 3600
-  %5 = mul nsw i64 %4, -3600
-  %6 = add nsw i64 %5, %3
-  ret i64 %6
+  %.fr = freeze i64 %3
+  %4 = urem i64 %.fr, 3600
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -28,10 +27,9 @@ define i32 @func0000000000000095(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
-  %4 = udiv i32 %3, 100
-  %5 = mul nsw i32 %4, -100
-  %6 = add nsw i32 %5, %3
-  ret i32 %6
+  %.fr = freeze i32 %3
+  %4 = urem i32 %.fr, 100
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

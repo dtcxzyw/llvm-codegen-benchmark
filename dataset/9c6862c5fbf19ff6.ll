@@ -9,7 +9,7 @@ entry:
   %3 = and i32 %2, 30
   %4 = add nuw nsw i32 %1, 2
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = and i32 %6, 31
   ret i32 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = and i64 %2, -4
   %4 = add nsw i64 %1, 556
   %5 = add i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = and i64 %6, -4096
   ret i64 %7
 }

@@ -38,7 +38,7 @@ define i1 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
   %4 = trunc i8 %3 to i1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

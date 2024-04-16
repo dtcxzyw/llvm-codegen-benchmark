@@ -6,9 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func000000000000005c:                   # @func000000000000005c
-	sext.w	a2, a2
-	srli	a2, a2, 3
-	andi	a2, a2, -8
+	srliw	a2, a2, 6
+	slli	a2, a2, 3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

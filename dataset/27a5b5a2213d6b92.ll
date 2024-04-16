@@ -19,7 +19,7 @@ define i32 @func0000000000000050(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = add i32 %5, 1518500249
   %7 = add i32 %6, %0
   ret i32 %7
@@ -66,7 +66,7 @@ define i128 @func00000000000000fa(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 64
-  %5 = or disjoint i128 %1, %4
+  %5 = or disjoint i128 %4, %1
   %6 = add nuw i128 %5, 1
   %7 = add nuw i128 %6, %0
   ret i128 %7
@@ -108,7 +108,7 @@ define i32 @func00000000000000fc(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = add nuw nsw i32 %5, 6
   %7 = add i32 %6, %0
   ret i32 %7

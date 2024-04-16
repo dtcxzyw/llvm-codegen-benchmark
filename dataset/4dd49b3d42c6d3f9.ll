@@ -321,9 +321,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp uge ptr %0, %1
-  %3 = select i1 %2, ptr null, ptr %0
-  ret ptr %3
+  %.not = icmp ult ptr %0, %1
+  %2 = select i1 %.not, ptr %0, ptr null
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

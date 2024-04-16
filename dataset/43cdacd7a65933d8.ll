@@ -7,7 +7,7 @@ entry:
   %3 = sub i64 %0, %1
   %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 %3)
   %5 = add i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sub i64 %0, %1
   %4 = tail call noundef i64 @llvm.umin.i64(i64 %3, i64 %2)
   %5 = add i64 %4, %1
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

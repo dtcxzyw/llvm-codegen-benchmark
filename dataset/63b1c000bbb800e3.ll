@@ -37,9 +37,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 4
-  %5 = getelementptr %union.xhci_trb.2014102, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 12
-  ret ptr %6
+  %5 = getelementptr %union.xhci_trb.2014102, ptr %0, i64 %4, i32 0, i32 2
+  ret ptr %5
 }
 
 ; 2 occurrences:

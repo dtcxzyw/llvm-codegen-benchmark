@@ -4,13 +4,13 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a5, %hi(.LCPI0_0)
 	ld	a5, %lo(.LCPI0_0)(a5)
 	mul	a4, a4, a5
-	mul	a3, a3, a4
-	mulhu	a5, a2, a4
+	mul	a3, a4, a3
+	mulhu	a5, a4, a2
 	add	a3, a3, a5
-	mul	a2, a2, a4
 	add	a1, a1, a3
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	mul	a2, a4, a2
+	add	a0, a0, a2
+	sltu	a0, a0, a2
 	add	a0, a0, a1
 	li	a1, 0
 	ret
@@ -22,11 +22,11 @@ func0000000000000010:                   # @func0000000000000010
 	add	a3, a3, a5
 	add	a1, a1, a3
 	mul	a2, a4, a2
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	slli	a0, a1, 48
-	srli	a2, a2, 16
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
+	slli	a2, a1, 48
+	srli	a0, a0, 16
 	or	a0, a0, a2
 	srli	a1, a1, 16
 	ret

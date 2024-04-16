@@ -11,9 +11,9 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 11
 	and	a1, a1, a2
 	lui	a2, 8
-	xor	a1, a1, a2
-	snez	a1, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	beq	a1, a2, .LBB1_2
+	li	a0, 2
+	ret
+.LBB1_2:
 	ori	a0, a0, 2
 	ret

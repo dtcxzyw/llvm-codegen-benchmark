@@ -116,8 +116,8 @@ func0000000000000161:                   # @func0000000000000161
 	or	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	andi	a0, a0, 255
 	sext.w	a1, a1
+	andi	a0, a0, 255
 	xor	a1, a1, a0
 	seqz	a1, a1
 	seqz	a0, a0

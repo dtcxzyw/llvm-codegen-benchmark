@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	addi	a1, a1, -48
+	xori	a1, a1, 16
 	or	a0, a0, a1
 	slli	a0, a0, 3
 	ret
@@ -10,9 +10,9 @@ func000000000000001c:                   # @func000000000000001c
 	addw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	add	a0, a0, a1
+	xori	a1, a1, 16
+	or	a0, a0, a1
 	slli	a0, a0, 3
-	addi	a0, a0, -128
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1

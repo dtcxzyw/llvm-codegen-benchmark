@@ -7,7 +7,7 @@ define float @func0000000000000022(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0xBFF921FB60000000
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp olt float %0, %4
+  %5 = fcmp ogt float %4, %0
   %6 = select i1 %5, float %0, float %4
   ret float %6
 }
@@ -20,7 +20,7 @@ define double @func0000000000000032(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %0, %4
+  %5 = fcmp ogt double %4, %0
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -43,7 +43,7 @@ define double @func000000000000003c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %0, %4
+  %5 = fcmp ole double %4, %0
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -57,7 +57,7 @@ define double @func000000000000003a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %0, %4
+  %5 = fcmp oge double %4, %0
   %6 = select i1 %5, double %0, double %4
   ret double %6
 }
@@ -69,9 +69,9 @@ define double @func0000000000000035(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %0, %4
-  %6 = select i1 %5, double %0, double %4
-  ret double %6
+  %.inv = fcmp oge double %4, %0
+  %5 = select i1 %.inv, double %4, double %0
+  ret double %5
 }
 
 attributes #0 = { nounwind }

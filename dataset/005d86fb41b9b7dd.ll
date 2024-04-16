@@ -6,7 +6,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 10, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -100,7 +100,7 @@ define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 8, %2
   %4 = tail call noundef i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -117,7 +117,7 @@ define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 16, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -128,7 +128,7 @@ define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 2048, %2
   %4 = tail call noundef i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -139,7 +139,7 @@ define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 32, %2
   %4 = tail call noundef i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -151,7 +151,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 16384, %2
   %4 = call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = icmp ugt i64 %0, %4
+  %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
@@ -163,7 +163,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 32, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -177,7 +177,7 @@ define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 33, %2
   %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -191,7 +191,7 @@ define i1 @func0000000000000069(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 4096, %2
   %4 = call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = icmp uge i64 %0, %4
+  %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
 
@@ -202,7 +202,7 @@ define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 4096, %2
   %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

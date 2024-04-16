@@ -15,7 +15,7 @@ entry:
   %3 = icmp sgt i32 %1, 0
   %4 = select i1 %3, i32 %1, i32 16
   %5 = trunc i64 %2 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp sgt i32 %6, %4
   ret i1 %7
 }

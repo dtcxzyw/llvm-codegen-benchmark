@@ -13,7 +13,5 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 .LBB0_2:
 	lui	a0, %hi(.LCPI0_1)
-	fld	fa5, %lo(.LCPI0_1)(a0)
-	fli.d	fa4, 0.5
-	fadd.d	fa0, fa5, fa4
+	fld	fa0, %lo(.LCPI0_1)(a0)
 	ret

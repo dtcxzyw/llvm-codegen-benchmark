@@ -90,9 +90,9 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
-  %4 = add nsw i64 %1, -1
-  %5 = sub nsw i64 %4, %3
-  %6 = getelementptr inbounds i32, ptr %0, i64 %5
+  %4 = xor i64 %3, -1
+  %5 = getelementptr i32, ptr %0, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %1
   ret ptr %6
 }
 

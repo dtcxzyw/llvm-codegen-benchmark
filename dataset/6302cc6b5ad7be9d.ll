@@ -401,9 +401,9 @@
 define i64 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = select i1 %0, i32 63, i32 %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 1, %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw i64 1, %3
+  %5 = select i1 %0, i64 -9223372036854775808, i64 %4
   ret i64 %5
 }
 

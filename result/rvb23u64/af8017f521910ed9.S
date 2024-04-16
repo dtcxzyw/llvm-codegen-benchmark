@@ -35,13 +35,14 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000016:                   # @func0000000000000016
 	andi	a0, a0, 1
+	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -114
+	li	a3, -1
+	max	a1, a1, a3
 	czero.eqz	a1, a1, a2
 	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	czero.nez	a0, a1, a0
-	sraiw	a1, a0, 31
-	or	a0, a0, a1
 	ret

@@ -7,7 +7,7 @@ entry:
   %2 = and i64 %1, -65536
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
-  %5 = icmp eq i128 %0, %4
+  %5 = icmp eq i128 %4, %0
   ret i1 %5
 }
 

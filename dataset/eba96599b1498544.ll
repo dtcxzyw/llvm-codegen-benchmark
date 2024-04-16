@@ -39,12 +39,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000222(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ieee80211_sband_iftype_data.2006973, ptr %1, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 2
-  %5 = icmp eq ptr %4, null
-  %6 = icmp eq i8 %0, 0
-  %7 = or i1 %5, %6
-  ret i1 %7
+  %3 = getelementptr %struct.ieee80211_sband_iftype_data.2006973, ptr %1, i64 %2, i32 1
+  %4 = icmp eq ptr %3, null
+  %5 = icmp eq i8 %0, 0
+  %6 = or i1 %4, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

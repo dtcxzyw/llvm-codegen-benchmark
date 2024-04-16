@@ -5,16 +5,18 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
+	xori	a0, a0, 1
 	sext.w	a1, a1
 	addi	a1, a1, -2
 	seqz	a1, a1
-	andn	a0, a1, a0
+	and	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
+	xori	a0, a0, 1
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
-	andn	a0, a1, a0
+	and	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	xori	a0, a0, 1

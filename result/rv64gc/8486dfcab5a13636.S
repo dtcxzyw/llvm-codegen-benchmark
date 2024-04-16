@@ -30,9 +30,8 @@ func0000000000000018:                   # @func0000000000000018
 	and	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a1, a1, 15
-	li	a2, 3
-	bltu	a2, a1, .LBB4_2
+	andi	a1, a1, 12
+	bnez	a1, .LBB4_2
 	li	a0, 24
 	ret
 .LBB4_2:

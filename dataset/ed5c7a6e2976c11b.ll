@@ -9,7 +9,7 @@ entry:
   %3 = and i8 %2, 1
   %4 = xor i8 %3, 1
   %5 = zext nneg i8 %4 to i32
-  %6 = add i32 %1, %5
+  %6 = add i32 %5, %1
   %7 = add i32 %6, %0
   ret i32 %7
 }

@@ -39,7 +39,7 @@ define i32 @func000000000000003b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = add nsw i32 %0, -128
   %7 = or disjoint i32 %6, %5
   ret i32 %7

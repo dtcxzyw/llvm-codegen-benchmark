@@ -90,9 +90,9 @@ func0000000000000d61:                   # @func0000000000000d61
 	ret
 func0000000000000314:                   # @func0000000000000314
 	andi	a0, a0, 255
-	add	a1, a1, a2
+	addi	a2, a2, -48
+	or	a1, a1, a2
 	andi	a1, a1, 255
-	addi	a1, a1, -48
 	seqz	a1, a1
 	sltiu	a0, a0, 244
 	or	a0, a0, a1

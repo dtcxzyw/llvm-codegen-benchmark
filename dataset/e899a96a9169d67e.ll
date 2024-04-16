@@ -173,7 +173,7 @@ define i1 @func0000000000000c04(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = lshr i32 %0, 1
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -186,7 +186,7 @@ define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 7
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = lshr i32 %0, 12
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -200,7 +200,7 @@ define i1 @func0000000000000c64(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = lshr i32 %0, 5
   %7 = icmp ult i32 %6, %5
   ret i1 %7

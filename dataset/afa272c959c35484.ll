@@ -31,7 +31,7 @@
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = call noundef i32 @llvm.bswap.i32(i32 %1)
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = call noundef i32 @llvm.bswap.i32(i32 %3)
   ret i32 %4
 }

@@ -6,7 +6,7 @@
 define i64 @func0000000000000022(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = shl i64 %1, 32
   %6 = or disjoint i64 %5, %0
   %7 = lshr i64 %6, %4

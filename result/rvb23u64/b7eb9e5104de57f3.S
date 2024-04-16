@@ -5,10 +5,10 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a2, a2, -381
 	mul	a1, a1, a2
 	srli	a1, a1, 50
-	lui	a2, 1048332
-	addi	a2, a2, -576
+	lui	a2, 244
+	addi	a2, a2, 576
 	mul	a1, a1, a2
-	addw	a0, a0, a1
+	subw	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	-6067343680855748867            # 0xabcc77118461cefd

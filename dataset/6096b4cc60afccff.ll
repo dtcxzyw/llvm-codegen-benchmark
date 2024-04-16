@@ -21,9 +21,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 63
-  %5 = getelementptr inbounds [64 x %"struct.folly::EDFThreadPoolExecutor::TaskQueue::Bucket.1637460"], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %5 = getelementptr inbounds [64 x %"struct.folly::EDFThreadPoolExecutor::TaskQueue::Bucket.1637460"], ptr %0, i64 0, i64 %4, i32 3
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -50,9 +49,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 127
-  %5 = getelementptr inbounds [128 x %"struct.duckdb_jaro_winkler::common::BitvectorHashmap::MapElem.1817717"], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [128 x %"struct.duckdb_jaro_winkler::common::BitvectorHashmap::MapElem.1817717"], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

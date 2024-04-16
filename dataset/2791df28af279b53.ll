@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 1
-  %2 = and i64 %1, 9007199254740991
+  %1 = and i64 %0, 9007199254740990
+  %2 = or disjoint i64 %1, 1
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
   %4 = xor i64 %3, 63
   ret i64 %4

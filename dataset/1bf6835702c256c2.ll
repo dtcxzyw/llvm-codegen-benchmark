@@ -9,7 +9,7 @@ entry:
   %2 = trunc i48 %1 to i16
   %3 = shl i16 %2, 4
   %4 = zext i16 %3 to i48
-  %5 = or disjoint i48 %0, %4
+  %5 = or disjoint i48 %4, %0
   ret i48 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 %2, 4
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 

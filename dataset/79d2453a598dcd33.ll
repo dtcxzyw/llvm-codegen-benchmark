@@ -206,8 +206,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = trunc i64 %4 to i32
-  %6 = icmp ult i32 %5, 4
+  %5 = and i64 %4, 4294967292
+  %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
 

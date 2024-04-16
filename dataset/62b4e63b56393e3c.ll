@@ -9,11 +9,10 @@
 define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
-  %3 = icmp eq i32 %2, 0
-  %4 = xor i1 %3, true
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i1 true, i1 %4
-  ret i1 %6
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -24,11 +23,10 @@ entry:
 define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2305843005455597567
-  %3 = icmp eq i64 %2, 2305843005455597567
-  %4 = xor i1 %3, true
-  %5 = icmp eq i32 %0, -1
-  %6 = select i1 %5, i1 true, i1 %4
-  ret i1 %6
+  %3 = icmp ne i64 %2, 2305843005455597567
+  %4 = icmp eq i32 %0, -1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

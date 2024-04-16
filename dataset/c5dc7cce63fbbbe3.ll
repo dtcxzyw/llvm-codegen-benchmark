@@ -9,7 +9,7 @@
 define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 -13
   %7 = getelementptr i8, ptr %6, i64 %5
@@ -22,7 +22,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 -8
   %7 = getelementptr double, ptr %6, i64 %5
@@ -48,7 +48,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %1, %3
+  %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 2
   %7 = getelementptr inbounds %"struct.OT::IntType.348.2274331", ptr %6, i64 %5

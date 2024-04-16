@@ -17,9 +17,9 @@ entry:
 define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, -146097
-  %3 = icmp slt i32 %0, 1
-  %4 = select i1 %3, i32 %2, i32 0
-  ret i32 %4
+  %.inv = icmp sgt i32 %0, 0
+  %3 = select i1 %.inv, i32 0, i32 %2
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -29,9 +29,9 @@ entry:
 define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 400
-  %3 = icmp slt i32 %0, 1
-  %4 = select i1 %3, i32 %2, i32 0
-  ret i32 %4
+  %.inv = icmp sgt i32 %0, 0
+  %3 = select i1 %.inv, i32 0, i32 %2
+  ret i32 %3
 }
 
 ; 3 occurrences:

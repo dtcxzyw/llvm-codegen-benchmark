@@ -41,7 +41,7 @@ define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, %1
   %3 = call i64 @llvm.ctpop.i64(i64 %2), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
 

@@ -7,7 +7,7 @@
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp ugt i32 %3, 65535
   ret i1 %4
 }
@@ -32,9 +32,8 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %0, %2
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %3 = icmp ne i32 %2, %0
+  ret i1 %3
 }
 
 ; 19 occurrences:
@@ -61,9 +60,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %0, %2
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, %0
+  ret i1 %3
 }
 
 ; 4 occurrences:
@@ -75,7 +73,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = icmp ult i32 %3, 65536
   ret i1 %4
 }

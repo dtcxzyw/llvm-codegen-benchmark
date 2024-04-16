@@ -11,10 +11,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 262, i32 6
-  %2 = lshr i32 %1, 8
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %1 = zext i1 %0 to i8
+  ret i8 %1
 }
 
 ; 4 occurrences:
@@ -25,10 +23,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i64 16384, i64 0
-  %2 = lshr exact i64 %1, 14
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
+  %1 = zext i1 %0 to i32
+  ret i32 %1
 }
 
 attributes #0 = { nounwind }

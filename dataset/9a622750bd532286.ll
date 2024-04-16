@@ -30,8 +30,8 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nuw nsw i32 64, %2
   %4 = shl i32 10, %3
-  %5 = select i1 %0, i32 40960, i32 %4
-  %6 = zext i32 %5 to i64
+  %5 = zext i32 %4 to i64
+  %6 = select i1 %0, i64 40960, i64 %5
   ret i64 %6
 }
 

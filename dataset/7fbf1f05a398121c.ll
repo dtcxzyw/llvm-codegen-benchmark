@@ -10,9 +10,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = sdiv exact i64 %3, 720
-  %5 = shl nsw i64 %4, 1
-  %6 = icmp ugt i64 %5, 1152921504606846975
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 1152921504606846975
+  ret i1 %5
 }
 
 ; 9 occurrences:
@@ -31,9 +30,9 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
   %4 = sdiv exact i64 %3, 48
-  %5 = shl i64 %4, 32
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %.mask = and i64 %4, 4294967295
+  %5 = icmp eq i64 %.mask, 0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -12,9 +12,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
-	addi	a1, a1, -48
-	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	addi	a1, a1, -58
+	sltiu	a1, a1, -10
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
@@ -32,8 +31,7 @@ func000000000000005c:                   # @func000000000000005c
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
-	addi	a1, a1, -45
-	sltiu	a1, a1, 64
-	xori	a1, a1, 1
+	addi	a1, a1, -109
+	sltiu	a1, a1, -64
 	or	a0, a0, a1
 	ret

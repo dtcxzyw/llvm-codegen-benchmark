@@ -7,7 +7,7 @@ entry:
   %3 = lshr i32 %2, 15
   %4 = and i32 %3, 4094
   %5 = select i1 %1, i32 %4, i32 0
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = lshr i64 %2, 1
   %4 = and i64 %3, 127
   %5 = select i1 %1, i64 %4, i64 48
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 

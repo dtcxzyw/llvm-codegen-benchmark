@@ -7,9 +7,8 @@ func0000000000000354:                   # @func0000000000000354
 	ret
 func0000000000000308:                   # @func0000000000000308
 	slli	a1, a1, 4
-	subw	a0, a0, a1
-	addiw	a0, a0, 88
-	sltiu	a0, a0, 89
+	subw	a1, a1, a0
+	sltiu	a0, a1, 89
 	xori	a0, a0, 1
 	ret
 func0000000000000301:                   # @func0000000000000301
@@ -43,9 +42,8 @@ func0000000000000106:                   # @func0000000000000106
 func0000000000000108:                   # @func0000000000000108
 	slli	a1, a1, 3
 	subw	a0, a0, a1
-	addiw	a0, a0, 348
-	sltiu	a0, a0, -6
-	xori	a0, a0, 1
+	addiw	a0, a0, 354
+	sltiu	a0, a0, 6
 	ret
 func0000000000000144:                   # @func0000000000000144
 	slli	a1, a1, 1

@@ -186,7 +186,7 @@ entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -201,7 +201,7 @@ entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !1
   %3 = sub nsw i32 30, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

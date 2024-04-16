@@ -9,10 +9,9 @@
 define i1 @func0000000000000098(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 48
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = icmp ugt i64 %3, 2305843009213693951
-  ret i1 %4
+  %.mask = and i64 %1, 2147483648
+  %2 = icmp ne i64 %.mask, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

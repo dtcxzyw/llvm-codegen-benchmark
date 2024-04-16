@@ -8,7 +8,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, -152
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 45
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ule ptr %0, %4
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 

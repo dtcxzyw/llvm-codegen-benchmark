@@ -30,8 +30,8 @@ define i16 @func0000000000000003(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = and i16 %2, -32768
-  %4 = or disjoint i16 %3, 31744
-  %5 = or disjoint i16 %0, %4
+  %4 = or i16 %3, %0
+  %5 = or i16 %4, 31744
   ret i16 %5
 }
 
@@ -42,8 +42,8 @@ define i16 @func000000000000000b(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = and i16 %2, -32768
-  %4 = or disjoint i16 %3, 31744
-  %5 = or disjoint i16 %0, %4
+  %4 = or i16 %3, %0
+  %5 = or i16 %4, 31744
   ret i16 %5
 }
 

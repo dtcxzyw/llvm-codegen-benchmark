@@ -9,7 +9,7 @@ entry:
   %3 = select i1 %2, i32 0, i32 292
   %4 = or disjoint i32 %3, 146
   %5 = select i1 %1, i32 %3, i32 %4
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   ret i32 %6
 }
 

@@ -36,7 +36,7 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a2, 1048564
 	czero.nez	a0, a2, a0
 	lui	a2, 16
-	addiw	a2, a2, -193
+	addiw	a2, a2, -256
 	add	a0, a0, a2
 	and	a0, a0, a1
 	sltiu	a0, a0, 1280

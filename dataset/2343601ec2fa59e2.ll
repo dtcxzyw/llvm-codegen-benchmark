@@ -14,7 +14,7 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = trunc i8 %1 to i1
   %6 = or i1 %4, %5
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

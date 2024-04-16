@@ -46,8 +46,9 @@ func000000000000060c:                   # @func000000000000060c
 	mulhu	a1, a1, a3
 	add	a1, a1, a4
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000068c:                   # @func000000000000068c
@@ -55,8 +56,9 @@ func000000000000068c:                   # @func000000000000068c
 	mulhu	a1, a1, a3
 	add	a1, a1, a4
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a

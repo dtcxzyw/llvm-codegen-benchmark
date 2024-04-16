@@ -10,9 +10,8 @@ entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr [10 x %struct.cpuidle_state.2026157], ptr %0, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 64
-  ret ptr %7
+  %6 = getelementptr [10 x %struct.cpuidle_state.2026157], ptr %0, i64 0, i64 %5, i32 4
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

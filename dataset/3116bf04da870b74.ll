@@ -16,8 +16,8 @@
 define i32 @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = select i1 %0, float 0x3EF0000000000000, float %3
-  %5 = bitcast float %4 to i32
+  %4 = bitcast float %3 to i32
+  %5 = select i1 %0, i32 931135488, i32 %4
   ret i32 %5
 }
 

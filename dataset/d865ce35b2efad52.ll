@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, i1 %1, double %2) #0 {
 entry:
-  %3 = select i1 %1, double %2, double 1.000000e+00
-  %4 = fmul double %3, 0x3CB0000000000000
+  %3 = fmul double %2, 0x3CB0000000000000
+  %4 = select i1 %1, double %3, double 0x3CB0000000000000
   %5 = select i1 %0, double 0x10000000000000, double %4
   ret double %5
 }

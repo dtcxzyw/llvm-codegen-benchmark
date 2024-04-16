@@ -12,7 +12,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = xor i32 %1, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }

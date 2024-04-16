@@ -8,7 +8,7 @@ entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = icmp ult i32 %1, 64
   %5 = select i1 %4, i32 6, i32 %3
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

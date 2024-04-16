@@ -8,7 +8,7 @@ entry:
   %3 = add i32 %2, 63
   %4 = sdiv i32 %3, 64
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add nuw i32 %2, 63
   %4 = sdiv i32 %3, 64
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

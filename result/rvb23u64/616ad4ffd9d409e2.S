@@ -13,7 +13,9 @@ func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
 	sext.w	a0, a0
 	mul	a0, a0, a1
-	addi	a0, a0, -1
+	li	a1, -1
+	bclri	a1, a1, 60
+	add	a0, a0, a1
 	srli	a0, a0, 60
-	snez	a0, a0
+	sltiu	a0, a0, 15
 	ret

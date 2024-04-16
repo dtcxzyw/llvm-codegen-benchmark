@@ -217,7 +217,7 @@
 define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -403,7 +403,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0x414282F980000000
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -574,7 +574,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oeq double %1, -5.000000e-01
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -668,7 +668,7 @@ entry:
 define i1 @func000000000000000e(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp une double %1, 0x7FF0000000000000
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -778,7 +778,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ult double %1, 0xC3E0000000000000
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -870,7 +870,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0x43E0000000000000
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -997,7 +997,7 @@ entry:
 define i1 @func0000000000000016(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -1091,7 +1091,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ugt double %1, 1.000000e+00
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 
@@ -1108,7 +1108,7 @@ entry:
 define i1 @func000000000000001c(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ord float %1, 0.000000e+00
-  %3 = or i1 %0, %2
+  %3 = or i1 %2, %0
   ret i1 %3
 }
 

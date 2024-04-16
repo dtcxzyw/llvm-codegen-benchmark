@@ -128,10 +128,9 @@ func000000000000007c:                   # @func000000000000007c
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	li	a1, 64
-	subw	a1, a1, a0
-	andi	a1, a1, 3
-	snez	a0, a1
+	negw	a0, a0
+	andi	a0, a0, 3
+	snez	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	beqz	a0, .LBB3_2
@@ -227,8 +226,7 @@ func0000000000000071:                   # @func0000000000000071
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	li	a1, 64
-	subw	a1, a1, a0
-	andi	a1, a1, 8
-	seqz	a0, a1
+	negw	a0, a0
+	andi	a0, a0, 8
+	seqz	a0, a0
 	ret

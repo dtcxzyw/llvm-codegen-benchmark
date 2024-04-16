@@ -9,14 +9,14 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a0, a0, -1
 	ret
 func000000000000001b:                   # @func000000000000001b
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
-	addiw	a0, a0, -1
+	not	a0, a0
 	ret
 func0000000000000013:                   # @func0000000000000013
-	li	a1, 1
+	li	a1, -1
 	sllw	a0, a1, a0
-	addiw	a0, a0, -1
+	not	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	li	a1, 1
@@ -40,9 +40,9 @@ func0000000000000010:                   # @func0000000000000010
 	srli	a0, a0, 32
 	ret
 func0000000000000011:                   # @func0000000000000011
-	li	a1, 1
+	li	a1, -1
 	sll	a0, a1, a0
-	addi	a0, a0, -1
+	not	a0, a0
 	li	a1, 0
 	ret
 func000000000000001f:                   # @func000000000000001f

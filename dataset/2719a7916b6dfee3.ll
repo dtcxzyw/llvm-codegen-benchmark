@@ -8,8 +8,8 @@ define i32 @func0000000000000002(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i8 -1, i8 %0
-  %5 = zext i8 %4 to i32
+  %4 = zext i8 %0 to i32
+  %5 = select i1 %3, i32 255, i32 %4
   ret i32 %5
 }
 
@@ -89,11 +89,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 3
-  %4 = select i1 %3, i32 23, i32 %0
-  %5 = zext i32 %4 to i64
-  ret i64 %5
+  %2 = and i64 %1, 4294967292
+  %.not = icmp eq i64 %2, 0
+  %3 = zext i32 %0 to i64
+  %4 = select i1 %.not, i64 %3, i64 23
+  ret i64 %4
 }
 
 ; 30 occurrences:

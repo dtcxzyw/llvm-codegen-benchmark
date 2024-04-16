@@ -8,7 +8,7 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 256, i32 128
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -34,10 +34,9 @@ entry:
 define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 16
-  %3 = select i1 %2, i32 32, i32 48
-  %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
-  ret i1 %5
+  %3 = select i1 %2, i64 32, i64 48
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -47,11 +46,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000191(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 429392688
-  %3 = select i1 %2, i32 2, i32 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
-  ret i1 %5
+  %.not = icmp eq i32 %1, 429392688
+  %2 = select i1 %.not, i32 1, i32 2
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -64,7 +63,7 @@ entry:
   %2 = icmp sgt i32 %1, 24
   %3 = select i1 %2, i32 7, i32 6
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

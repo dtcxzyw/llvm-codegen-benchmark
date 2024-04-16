@@ -7,9 +7,8 @@ define i32 @func0000000000000055(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 60
   %3 = add nsw i32 %2, %0
-  %4 = mul nsw i32 %3, 60
-  %5 = sub nsw i32 0, %4
-  ret i32 %5
+  %.neg = mul nsw i32 %3, -60
+  ret i32 %.neg
 }
 
 ; 1 occurrences:
@@ -19,9 +18,8 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 60
   %3 = add i32 %2, %0
-  %4 = mul i32 %3, 60
-  %5 = sub i32 0, %4
-  ret i32 %5
+  %.neg = mul i32 %3, -60
+  ret i32 %.neg
 }
 
 attributes #0 = { nounwind }

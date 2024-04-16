@@ -35,7 +35,7 @@ define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, -1640531535
   %4 = call noundef i32 @llvm.fshl.i32(i32 %3, i32 %3, i32 18)
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = mul i32 %1, -1028477379
   %7 = add i32 %5, %6
   ret i32 %7

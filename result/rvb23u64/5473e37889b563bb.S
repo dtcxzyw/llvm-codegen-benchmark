@@ -1,10 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
-	slli	a2, a1, 8
-	lui	a3, 4080
-	and	a2, a2, a3
-	slliw	a1, a1, 24
+	zext.h	a1, a1
+	rev8	a1, a1
+	srli	a1, a1, 32
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func0000000000000033:                   # @func0000000000000033
 	andi	a2, a1, 254

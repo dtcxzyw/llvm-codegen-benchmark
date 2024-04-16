@@ -65,9 +65,9 @@ entry:
 define i16 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = and i32 %2, 4032
-  %4 = or disjoint i32 %0, %3
-  %5 = trunc nuw nsw i32 %4 to i16
+  %3 = and i32 %2, 960
+  %4 = or i32 %3, %0
+  %5 = trunc i32 %4 to i16
   %6 = or i16 %5, -9216
   ret i16 %6
 }

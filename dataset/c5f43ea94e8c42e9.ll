@@ -21,7 +21,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, 43
   %4 = xor i8 %3, 43
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   ret i8 %5
 }
 

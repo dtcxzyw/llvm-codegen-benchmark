@@ -9,9 +9,8 @@ entry:
   %2 = add nuw i64 %1, 15
   %3 = and i64 %2, -16
   %4 = add i64 %0, 17
-  %5 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %4)
-  %6 = extractvalue { i64, i1 } %5, 0
-  ret i64 %6
+  %5 = add i64 %3, %4
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -46,9 +45,8 @@ entry:
   %2 = add nuw i64 %1, 15
   %3 = and i64 %2, -16
   %4 = add nuw nsw i64 %0, 16
-  %5 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %3, i64 %4)
-  %6 = extractvalue { i64, i1 } %5, 0
-  ret i64 %6
+  %5 = add i64 %3, %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

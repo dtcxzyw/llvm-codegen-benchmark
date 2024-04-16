@@ -39,8 +39,8 @@ entry:
   %1 = and i8 %0, 63
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, 255
-  %5 = icmp ugt i64 %4, 1
+  %4 = and i64 %3, 254
+  %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
 

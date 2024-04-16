@@ -9,7 +9,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = urem i64 %3, %2
   %5 = sub nuw i64 %3, %4
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = urem i32 %3, %2
   %5 = sub nuw i32 %3, %4
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

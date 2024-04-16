@@ -9,7 +9,7 @@ entry:
   %2 = add nsw i32 %1, -64588
   %3 = icmp ult i32 %2, 177
   %4 = icmp ult i32 %1, 61504
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

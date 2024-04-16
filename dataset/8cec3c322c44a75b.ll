@@ -9,7 +9,7 @@ entry:
   %2 = add i8 %1, -13
   %3 = icmp ult i8 %2, 3
   %4 = icmp ult i8 %1, 8
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = or i1 %5, %3
   ret i1 %6
 }

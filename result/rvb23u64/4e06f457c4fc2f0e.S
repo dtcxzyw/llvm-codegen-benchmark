@@ -21,8 +21,9 @@ func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 1
 	lui	a3, 1048568
 	czero.nez	a1, a3, a1
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000d6:                   # @func00000000000000d6

@@ -95,11 +95,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
-  %3 = lshr i32 %2, 20
-  %4 = and i32 %3, 2047
-  ret i32 %4
+  %sum.shift = lshr i64 %0, 52
+  %1 = trunc nuw nsw i64 %sum.shift to i32
+  %2 = and i32 %1, 2047
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -108,11 +107,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 32
-  %2 = trunc nuw i64 %1 to i32
-  %3 = lshr i32 %2, 8
-  %4 = and i32 %3, 255
-  ret i32 %4
+  %sum.shift = lshr i64 %0, 40
+  %1 = trunc nuw nsw i64 %sum.shift to i32
+  %2 = and i32 %1, 255
+  ret i32 %2
 }
 
 ; 5 occurrences:
@@ -124,11 +122,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 16
-  %2 = trunc i64 %1 to i32
-  %3 = lshr i32 %2, 15
-  %4 = and i32 %3, 1
-  ret i32 %4
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 31
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

@@ -16,10 +16,9 @@
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 4
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = and i64 %1, 4
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -28,10 +27,9 @@ entry:
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = freeze i64 %0
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 2097151
-  %4 = icmp ult i32 %3, 128
-  ret i1 %4
+  %2 = and i64 %1, 2097024
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

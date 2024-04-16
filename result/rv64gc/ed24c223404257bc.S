@@ -30,16 +30,16 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a5, a4, 1
 	srli	a4, a4, 63
 	add	a1, a1, a4
-	add	a5, a5, a0
-	sltu	a4, a5, a0
+	add	a4, a5, a0
+	sltu	a5, a4, a5
 	srli	a0, a2, 31
 	slli	a3, a3, 33
 	or	a3, a3, a0
 	slli	a0, a2, 33
-	add	a0, a0, a5
-	sltu	a2, a0, a5
+	add	a0, a0, a4
+	sltu	a2, a0, a4
 	add	a1, a1, a3
-	add	a1, a1, a4
+	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
 func00000000000000ee:                   # @func00000000000000ee

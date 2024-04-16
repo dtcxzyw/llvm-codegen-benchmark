@@ -21,8 +21,8 @@ entry:
 define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = trunc i32 %2 to i16
-  %4 = icmp slt i16 %3, 0
+  %3 = and i32 %2, 32768
+  %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 
@@ -51,8 +51,8 @@ entry:
 define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, -1
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -73,8 +73,8 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, -1
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -86,8 +86,8 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 256
+  %3 = and i64 %2, 4294967040
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -108,8 +108,8 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

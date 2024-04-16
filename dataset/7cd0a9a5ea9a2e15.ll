@@ -17,8 +17,8 @@
 define i64 @func000000000000000b(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 12
-  %2 = add nsw i64 %1, -2
-  %3 = or disjoint i64 %2, 1
+  %2 = or i64 %1, 1
+  %3 = add nsw i64 %2, -2
   ret i64 %3
 }
 

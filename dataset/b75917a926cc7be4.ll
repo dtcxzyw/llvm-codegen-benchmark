@@ -39,8 +39,8 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul i64 %0, 1000000
-  %4 = add i64 %3, %2
-  %5 = icmp eq i64 %4, 0
+  %4 = sub nsw i64 0, %2
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 

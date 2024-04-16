@@ -20,10 +20,9 @@ entry:
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = shl i32 %1, 4
-  %3 = add i32 %2, 80
-  %4 = lshr exact i32 %3, 4
-  ret i32 %4
+  %2 = add i32 %1, 5
+  %3 = and i32 %2, 268435455
+  ret i32 %3
 }
 
 ; 2 occurrences:

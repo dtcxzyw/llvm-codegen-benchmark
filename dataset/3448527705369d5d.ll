@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = add nuw nsw i64 %0, 2
-  %2 = or disjoint i64 %1, 1
+  %1 = or i64 %0, 1
+  %2 = add nuw nsw i64 %1, 2
   %3 = and i64 %2, 4294967295
   ret i64 %3
 }
@@ -18,8 +18,8 @@ entry:
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1073610752
-  %2 = or i32 %1, -796917760
-  %3 = and i32 %2, -268500992
+  %2 = and i32 %1, 796852224
+  %3 = or disjoint i32 %2, -1065353216
   ret i32 %3
 }
 

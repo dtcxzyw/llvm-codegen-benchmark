@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	lui	a3, 4080
 	and	a2, a2, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	lui	a2, 1044480
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -29,7 +29,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a3, 524288
 	addi	a3, a3, -4
 	and	a2, a2, a3
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	and	a1, a1, a3
 	addw	a0, a0, a1
 	ret

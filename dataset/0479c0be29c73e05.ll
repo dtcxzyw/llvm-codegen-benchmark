@@ -279,11 +279,10 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = shl i64 %4, 6
-  %6 = add i64 %5, %0
-  %7 = sub i64 0, %6
-  ret i64 %7
+  %.neg = sub i64 %1, %3
+  %.neg1 = shl i64 %.neg, 6
+  %.neg2 = sub i64 %.neg1, %0
+  ret i64 %.neg2
 }
 
 ; 5 occurrences:
@@ -296,11 +295,10 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = shl i64 %4, 2
-  %6 = add i64 %0, %5
-  %7 = sub nsw i64 0, %6
-  ret i64 %7
+  %.neg = sub i64 %1, %3
+  %.neg1 = shl i64 %.neg, 2
+  %.neg2 = sub i64 %.neg1, %0
+  ret i64 %.neg2
 }
 
 ; 1 occurrences:

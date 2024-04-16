@@ -19,7 +19,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = and i64 %4, -16
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, -8
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

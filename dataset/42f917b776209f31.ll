@@ -74,11 +74,9 @@ entry:
 define i1 @func00000000000004ac(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 17
-  %3 = icmp sgt i64 %0, -1
+  %3 = icmp sgt i64 %0, 0
   %4 = and i1 %3, %2
-  %5 = icmp ne i64 %0, 0
-  %6 = and i1 %5, %4
-  ret i1 %6
+  ret i1 %4
 }
 
 ; 4 occurrences:

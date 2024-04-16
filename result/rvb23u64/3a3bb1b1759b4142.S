@@ -1,6 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a2
-	add.uw	a0, a1, a0
+	zext.w	a1, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018

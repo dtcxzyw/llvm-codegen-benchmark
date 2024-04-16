@@ -16,11 +16,10 @@
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
-  %3 = add nuw nsw i32 %2, 1
-  %4 = and i32 %0, 31
-  %5 = add nuw nsw i32 %4, 257
-  %6 = add nuw nsw i32 %5, %3
-  ret i32 %6
+  %3 = and i32 %0, 31
+  %4 = add nuw nsw i32 %3, %2
+  %5 = add nuw nsw i32 %4, 258
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

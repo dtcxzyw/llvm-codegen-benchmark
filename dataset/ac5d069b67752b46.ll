@@ -13,7 +13,7 @@ define ptr @func0000000000000027(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 1
   %4 = zext i16 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
+  %5 = add nuw nsw i64 %4, %1
   %6 = getelementptr inbounds %struct.stbtt_vertex.1833224, ptr %0, i64 %5, i32 6
   ret ptr %6
 }

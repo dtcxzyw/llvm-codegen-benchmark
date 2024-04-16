@@ -46,8 +46,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = sext i32 %0 to i64
-  %2 = xor i64 %1, -1
+  %1 = xor i32 %0, -1
+  %2 = sext i32 %1 to i64
   ret i64 %2
 }
 

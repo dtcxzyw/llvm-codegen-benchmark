@@ -41,9 +41,8 @@ define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 40
-  %4 = getelementptr inbounds [1 x %struct.NSVGgradientStop.1553125], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds [1 x %struct.NSVGgradientStop.1553125], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -96,9 +95,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr inbounds [7 x %"struct.asmjit::_abi_1_10::ConstPool::Tree.1555254"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr inbounds [7 x %"struct.asmjit::_abi_1_10::ConstPool::Tree.1555254"], ptr %3, i64 0, i64 %2, i32 2
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -113,9 +111,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 16
-  %4 = getelementptr inbounds [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.1568429"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.1568429"], ptr %3, i64 0, i64 %2, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -125,9 +122,8 @@ define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 48
-  %4 = getelementptr [8 x %union.CPUTLBEntry.1662951], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [8 x %union.CPUTLBEntry.1662951], ptr %3, i64 0, i64 %2, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 9 occurrences:
@@ -145,9 +141,8 @@ define ptr @func000000000000001d(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 2912
-  %4 = getelementptr [3 x %struct.chan.1665143], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [3 x %struct.chan.1665143], ptr %3, i64 0, i64 %2, i32 2
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -158,9 +153,8 @@ define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 24
-  %4 = getelementptr inbounds [20 x %struct.CurveAnchorPoint.1766541], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds [20 x %struct.CurveAnchorPoint.1766541], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 34 occurrences:
@@ -203,9 +197,8 @@ define ptr @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr [32 x %struct.key_entry_t.1915230], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 36
-  ret ptr %5
+  %4 = getelementptr [32 x %struct.key_entry_t.1915230], ptr %3, i64 0, i64 %2, i32 4
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -216,9 +209,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = getelementptr i8, ptr %0, i64 -272
-  %4 = getelementptr [17 x %struct.bio_vec.2005756], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [17 x %struct.bio_vec.2005756], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -230,9 +222,8 @@ define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = getelementptr inbounds i8, ptr %0, i64 2816
-  %4 = getelementptr [3 x %struct.desc_struct.2018577], ptr %3, i64 0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [3 x %struct.desc_struct.2018577], ptr %3, i64 0, i64 %2, i32 2
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

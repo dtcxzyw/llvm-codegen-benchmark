@@ -166,7 +166,7 @@
 define i64 @func0000000000000016(i64 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sub nsw i32 -53, %4
   %6 = zext nneg i32 %5 to i64
   %7 = lshr i64 %0, %6

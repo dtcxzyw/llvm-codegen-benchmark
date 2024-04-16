@@ -11,9 +11,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1) #0 {
 entry:
-  %2 = select i1 %0, double 0x41DFFFFFFFC00000, double %1
-  %3 = fptosi double %2 to i32
-  %4 = sitofp i32 %3 to double
+  %2 = fptosi double %1 to i32
+  %3 = sitofp i32 %2 to double
+  %4 = select i1 %0, double 0x41DFFFFFFFC00000, double %3
   ret double %4
 }
 

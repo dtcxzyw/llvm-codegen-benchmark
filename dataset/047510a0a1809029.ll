@@ -177,7 +177,7 @@ entry:
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = and i64 %3, 2048
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -189,7 +189,7 @@ entry:
 define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = and i64 %3, 2048
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -255,7 +255,7 @@ entry:
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = and i32 %3, 32
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -269,7 +269,7 @@ entry:
 define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = add nuw nsw i32 %0, %2
+  %3 = add nuw nsw i32 %2, %0
   %4 = and i32 %3, 65535
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -281,7 +281,7 @@ entry:
 define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = and i32 %3, 536870912
   %5 = icmp eq i32 %4, 0
   ret i1 %5

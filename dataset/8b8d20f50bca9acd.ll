@@ -298,8 +298,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = and i32 %2, 1
+  %2 = and i32 %1, 1
+  %3 = xor i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %0, i64 40
   %6 = getelementptr inbounds [2 x ptr], ptr %5, i64 0, i64 %4

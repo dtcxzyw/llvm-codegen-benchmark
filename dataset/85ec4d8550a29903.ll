@@ -7,7 +7,7 @@
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4032
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = getelementptr [4096 x %struct.anon.6.1662958], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
@@ -26,7 +26,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = getelementptr inbounds [4 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }

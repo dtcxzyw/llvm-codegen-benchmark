@@ -28,7 +28,7 @@ entry:
   %2 = srem i32 %1, 64
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -67,7 +67,7 @@ entry:
   %2 = srem i32 %1, 64
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -82,7 +82,7 @@ entry:
   %2 = srem i16 %1, 3
   %3 = zext nneg i16 %2 to i32
   %4 = shl i32 262144, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -95,7 +95,7 @@ entry:
   %2 = srem i16 %1, 3
   %3 = zext nneg i16 %2 to i32
   %4 = shl i32 32768, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }

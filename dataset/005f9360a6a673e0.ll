@@ -7,7 +7,7 @@ entry:
   %3 = icmp sgt i32 %2, 3
   %4 = sext i1 %3 to i32
   %5 = add nsw i32 %1, -1
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

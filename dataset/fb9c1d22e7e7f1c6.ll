@@ -29,9 +29,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 1
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 2147483647
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, 2147483646
+  %3 = or disjoint i32 %2, 1
   ret i32 %3
 }
 
@@ -40,10 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = or i64 %0, 8192
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, -16777216
-  ret i32 %3
+  %1 = trunc i64 %0 to i32
+  %2 = and i32 %1, -16777216
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

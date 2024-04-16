@@ -6,7 +6,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32, i32 16
   %4 = or i32 %3, %1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -32,8 +32,8 @@ entry:
 define i1 @func000000000000001c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 0
-  %4 = or disjoint i32 %1, %3
-  %5 = and i32 %0, %4
+  %4 = or disjoint i32 %3, %1
+  %5 = and i32 %4, %0
   %6 = icmp ne i32 %5, 0
   ret i1 %6
 }

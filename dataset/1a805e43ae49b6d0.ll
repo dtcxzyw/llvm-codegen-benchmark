@@ -163,9 +163,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = icmp ne ptr %0, %2
-  %4 = select i1 %3, ptr %0, ptr %1
-  ret ptr %4
+  %.not = icmp eq ptr %0, %2
+  %3 = select i1 %.not, ptr %1, ptr %0
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

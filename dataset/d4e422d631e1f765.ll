@@ -10,7 +10,7 @@ entry:
   %3 = and i32 %2, 134217728
   %4 = icmp eq i32 %3, 0
   %5 = and i32 %1, 551550976
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }
@@ -23,7 +23,7 @@ entry:
 define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483644
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   %5 = and i32 %1, 16
   %6 = icmp eq i32 %5, 0
   %7 = and i1 %6, %4
@@ -38,7 +38,7 @@ entry:
   %3 = and i8 %2, 8
   %4 = icmp ne i8 %3, 0
   %5 = and i64 %1, 4294967295
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   %7 = and i1 %6, %4
   ret i1 %7
 }

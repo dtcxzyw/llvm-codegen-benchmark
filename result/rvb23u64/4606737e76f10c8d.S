@@ -5,7 +5,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	ret
 func00000000000000c7:                   # @func00000000000000c7
 	addi	a2, a2, 2
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	sh1add	a0, a1, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1

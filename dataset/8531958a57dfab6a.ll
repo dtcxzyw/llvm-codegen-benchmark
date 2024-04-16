@@ -9,8 +9,8 @@ entry:
   %3 = icmp ult i32 %2, 12
   %4 = select i1 %3, i1 %0, i1 false
   %5 = and i32 %1, 255
-  %6 = select i1 %4, i32 11, i32 %5
-  %7 = add nuw nsw i32 %6, 1
+  %6 = add nuw nsw i32 %5, 1
+  %7 = select i1 %4, i32 12, i32 %6
   ret i32 %7
 }
 

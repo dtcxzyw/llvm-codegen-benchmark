@@ -35,7 +35,7 @@ entry:
   %3 = and i32 %0, 65535
   %4 = mul nuw i32 %3, %2
   %5 = lshr i32 %4, 20
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw nsw i32 %5 to i16
   ret i16 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = and i64 %0, 63
   %4 = mul nuw nsw i64 %3, %2
   %5 = lshr i64 %4, 10
-  %6 = trunc i64 %5 to i16
+  %6 = trunc nuw nsw i64 %5 to i16
   ret i16 %6
 }
 

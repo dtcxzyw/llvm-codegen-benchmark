@@ -6,10 +6,9 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 1
 	ret
 func0000000000000017:                   # @func0000000000000017
-	sext.w	a0, a0
-	addi	a0, a0, -16
-	andi	a0, a0, -8
-	addi	a0, a0, 16
+	lui	a1, 524288
+	addiw	a1, a1, -8
+	and	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	zext.h	a0, a0

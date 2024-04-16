@@ -53,7 +53,7 @@ entry:
 define i8 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = add nuw nsw i32 %0, %3
+  %4 = add nuw nsw i32 %3, %0
   %5 = trunc i32 %4 to i8
   ret i8 %5
 }

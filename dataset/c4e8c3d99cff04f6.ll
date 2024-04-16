@@ -44,9 +44,8 @@ define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 -1, i32 %1
-  %5 = sub nsw i32 %0, %4
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -56,9 +55,8 @@ define i1 @func000000000000011a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = select i1 %3, i32 1, i32 %1
-  %5 = sub nsw i32 %0, %4
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -94,9 +92,8 @@ define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 1, i32 %1
-  %5 = sub i32 %0, %4
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -145,9 +142,8 @@ define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = sub i32 %0, %4
-  %6 = icmp ne i32 %5, 0
-  ret i1 %6
+  %5 = icmp ne i32 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -157,9 +153,8 @@ define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2176
   %4 = select i1 %3, i32 32, i32 %1
-  %5 = sub nsw i32 %0, %4
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i32 %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -170,9 +165,8 @@ define i1 @func000000000000019a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = sub nsw i32 %0, %4
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:

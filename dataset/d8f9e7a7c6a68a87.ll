@@ -5,7 +5,7 @@
 define i16 @func0000000000000023(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 11
-  %3 = or i16 %0, %2
+  %3 = or i16 %2, %0
   %4 = lshr i16 %3, 11
   %5 = mul nuw nsw i16 %4, 255
   ret i16 %5

@@ -19,7 +19,7 @@ define i8 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 2
   %4 = and i8 %3, 24
-  %5 = or disjoint i8 %1, %4
+  %5 = or disjoint i8 %4, %1
   %6 = or disjoint i8 %5, %0
   %7 = or disjoint i8 %6, 2
   ret i8 %7
@@ -33,7 +33,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 17
   %4 = and i32 %3, 24
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = or i32 %5, %0
   %7 = or disjoint i32 %6, 64
   ret i32 %7
@@ -66,7 +66,7 @@ entry:
   %3 = lshr i64 %2, 48
   %4 = and i64 %3, 192
   %5 = or disjoint i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = or i64 %6, 2
   ret i64 %7
 }
@@ -79,12 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 8
-  %4 = and i32 %3, 64
-  %5 = or disjoint i32 %1, %4
-  %6 = or disjoint i32 %5, %0
-  %7 = or i32 %6, 704
-  ret i32 %7
+  %3 = or i32 %1, %0
+  %4 = or i32 %3, 704
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

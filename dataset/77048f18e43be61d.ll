@@ -32,7 +32,7 @@ declare i64 @llvm.bswap.i64(i64) #1
 define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call noundef i64 @llvm.bswap.i64(i64 %3)
   ret i64 %4
 }

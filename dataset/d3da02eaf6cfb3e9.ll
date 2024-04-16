@@ -9,7 +9,7 @@ entry:
   %2 = add i16 %1, -14
   %3 = tail call i16 @llvm.umin.i16(i16 %2, i16 255)
   %4 = zext nneg i16 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

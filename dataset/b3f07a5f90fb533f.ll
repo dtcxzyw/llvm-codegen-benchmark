@@ -9,7 +9,7 @@ entry:
   %2 = sub nsw i32 %0, %1
   %3 = call i32 @llvm.smin.i32(i32 %2, i32 15)
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 0)
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nsw i32 %4 to i16
   ret i16 %5
 }
 

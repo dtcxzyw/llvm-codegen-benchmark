@@ -43,8 +43,6 @@ func000000000000005c:                   # @func000000000000005c
 	or	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
-	slli	a1, a1, 32
-	add.uw	a1, a2, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret

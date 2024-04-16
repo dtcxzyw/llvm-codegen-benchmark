@@ -13,10 +13,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1431655765
-  %4 = sub nsw i32 %1, %3
+  %3 = and i32 %2, 357913941
+  %4 = sub i32 %1, %3
   %5 = and i32 %4, 858993459
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = lshr i32 %6, 4
   ret i32 %7
 }
@@ -51,10 +51,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 6148914691236517205
+  %3 = and i64 %2, 1537228672809129301
   %4 = sub i64 %1, %3
   %5 = and i64 %4, 3689348814741910323
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = lshr i64 %6, 4
   ret i64 %7
 }

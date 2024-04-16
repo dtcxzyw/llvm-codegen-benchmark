@@ -8,7 +8,7 @@ entry:
   %4 = sdiv exact i64 %3, 312
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, -1
-  %7 = icmp ugt i32 %0, %6
+  %7 = icmp ult i32 %6, %0
   ret i1 %7
 }
 
@@ -240,7 +240,7 @@ entry:
   %4 = sdiv exact i64 %3, 48
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, -1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -255,7 +255,7 @@ entry:
   %4 = sdiv exact i64 %3, 24
   %5 = trunc i64 %4 to i32
   %6 = add nsw i32 %5, -1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -268,7 +268,7 @@ entry:
   %4 = sdiv exact i64 %3, 24
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, -1
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 
@@ -281,7 +281,7 @@ entry:
   %4 = sdiv exact i64 %3, 24
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, -1
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -294,7 +294,7 @@ entry:
   %4 = sdiv exact i64 %3, 12
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, -1
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -307,7 +307,7 @@ entry:
   %4 = sdiv exact i64 %3, 12
   %5 = trunc i64 %4 to i32
   %6 = add i32 %5, -1
-  %7 = icmp ne i32 %0, %6
+  %7 = icmp ne i32 %6, %0
   ret i1 %7
 }
 

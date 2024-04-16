@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %1 to i32
   %4 = sub i32 %2, %3
   %5 = zext i32 %4 to i64
-  %6 = add nuw nsw i64 %1, %5
+  %6 = add nuw nsw i64 %5, %1
   %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = trunc i32 %1 to i16
   %4 = sub i16 %2, %3
   %5 = zext i16 %4 to i32
-  %6 = add nuw nsw i32 %1, %5
+  %6 = add nuw nsw i32 %5, %1
   %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
@@ -34,7 +34,7 @@ entry:
   %3 = trunc i64 %1 to i32
   %4 = sub i32 %2, %3
   %5 = zext i32 %4 to i64
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = icmp ult i64 %6, %0
   ret i1 %7
 }

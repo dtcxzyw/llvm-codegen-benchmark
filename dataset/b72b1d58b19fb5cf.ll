@@ -23,9 +23,8 @@
 define i32 @func000000000000001d(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i32
-  %2 = shl nuw nsw i32 1, %1
-  %3 = sub nsw i32 0, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  ret i32 %.neg
 }
 
 ; 15 occurrences:
@@ -48,9 +47,8 @@ entry:
 define i64 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i64
-  %2 = shl nuw i64 1, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %.neg = shl nsw i64 -1, %1
+  ret i64 %.neg
 }
 
 ; 1 occurrences:
@@ -58,10 +56,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = shl i32 8, %1
-  %3 = sub i32 64, %2
-  ret i32 %3
+  %1 = zext nneg i8 %0 to i32
+  %.neg = shl i32 -8, %1
+  %2 = add i32 %.neg, 64
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -70,10 +68,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
-  %2 = shl nuw i64 1, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %1 = zext nneg i32 %0 to i64
+  %.neg = shl nsw i64 -1, %1
+  ret i64 %.neg
 }
 
 ; 3 occurrences:
@@ -84,9 +81,9 @@ entry:
 define i32 @func0000000000000019(i8 %0) #0 {
 entry:
   %1 = zext nneg i8 %0 to i32
-  %2 = shl nuw i32 1, %1
-  %3 = sub nsw i32 1022, %2
-  ret i32 %3
+  %.neg = shl nsw i32 -1, %1
+  %2 = add nsw i32 %.neg, 1022
+  ret i32 %2
 }
 
 ; 3 occurrences:
@@ -97,9 +94,8 @@ entry:
 define i64 @func0000000000000010(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
-  %2 = shl i64 4096, %1
-  %3 = sub i64 0, %2
-  ret i64 %3
+  %.neg = shl i64 -4096, %1
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

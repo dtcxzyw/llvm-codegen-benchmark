@@ -20,11 +20,6 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a1, a1, 128
-	li	a2, -16
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 18
-	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 32
 	ret

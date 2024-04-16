@@ -14,9 +14,8 @@ entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr inbounds %class.aiVector3t.1746954, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %class.aiVector3t.1746954, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 3 occurrences:
@@ -29,9 +28,8 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr inbounds %class.aiVector3t.1748650, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 16
-  ret ptr %7
+  %6 = getelementptr inbounds %class.aiVector3t.1748650, ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -42,9 +40,8 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr %class.aiVector3t.1752777, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %class.aiVector3t.1752777, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

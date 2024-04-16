@@ -11,7 +11,7 @@ entry:
   %2 = select i1 %1, i32 0, i32 32
   %3 = and i32 %0, 192
   %4 = or disjoint i32 %3, %2
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw i32 %4 to i8
   %6 = or disjoint i8 %5, 31
   ret i8 %6
 }

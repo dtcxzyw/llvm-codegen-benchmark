@@ -12,7 +12,7 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr inbounds %struct.code.1770582, ptr %0, i64 %6, i32 1
   ret ptr %7
 }
@@ -25,7 +25,7 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr %struct.printk_info.2018294, ptr %0, i64 %6, i32 5
   ret ptr %7
 }

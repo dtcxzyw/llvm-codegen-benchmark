@@ -27,8 +27,8 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 24
-  %4 = icmp ult i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ugt i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -38,8 +38,8 @@ entry:
 define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 24
-  %4 = icmp ult i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ugt i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -53,8 +53,8 @@ entry:
 define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 32
-  %4 = icmp ult i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ugt i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -68,7 +68,7 @@ entry:
 define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = icmp ule i64 %1, %3
+  %4 = icmp uge i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -166,8 +166,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = icmp eq i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -186,8 +186,8 @@ entry:
 define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
-  %4 = icmp slt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sgt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -201,8 +201,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 6
-  %4 = icmp ne i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ne i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -227,7 +227,7 @@ entry:
 define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %1, %3
+  %4 = icmp eq i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -243,8 +243,8 @@ entry:
 define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = icmp sgt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp slt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -367,8 +367,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = icmp ule i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp uge i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -382,8 +382,8 @@ entry:
 define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, -1
-  %4 = icmp sgt i16 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp slt i16 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -394,7 +394,7 @@ entry:
 define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -414,8 +414,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, 1
-  %4 = icmp slt i16 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sgt i16 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -441,8 +441,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -16
-  %4 = icmp ugt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ult i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -452,7 +452,7 @@ entry:
 define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 16
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -465,8 +465,8 @@ entry:
 define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = icmp ne i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ne i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -480,7 +480,7 @@ entry:
 define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = icmp uge i64 %1, %3
+  %4 = icmp ule i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -498,7 +498,7 @@ entry:
 define i1 @func000000000000006a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4
-  %4 = icmp ule i64 %1, %3
+  %4 = icmp uge i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -512,7 +512,7 @@ entry:
 define i1 @func0000000000000036(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = icmp sge i32 %1, %3
+  %4 = icmp sle i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -523,8 +523,8 @@ entry:
 define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = icmp ule i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp uge i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -534,7 +534,7 @@ entry:
 define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -36
-  %4 = icmp ugt i64 %1, %3
+  %4 = icmp ult i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -545,8 +545,8 @@ entry:
 define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
-  %4 = icmp slt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sgt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -556,7 +556,7 @@ entry:
 define i1 @func0000000000000076(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
-  %4 = icmp sge i32 %1, %3
+  %4 = icmp sle i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -569,7 +569,7 @@ entry:
 define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -580,8 +580,8 @@ entry:
 define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 3
-  %4 = icmp sge i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sle i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -591,8 +591,8 @@ entry:
 define i1 @func0000000000000062(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw nsw i16 %2, 1
-  %4 = icmp eq i16 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i16 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -602,7 +602,7 @@ entry:
 define i1 @func0000000000000032(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = icmp uge i32 %1, %3
+  %4 = icmp ule i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }

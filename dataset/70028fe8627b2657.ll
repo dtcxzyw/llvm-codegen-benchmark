@@ -21,11 +21,11 @@ entry:
 define i1 @func0000000000000188(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, -1
-  %5 = and i64 %0, %4
-  %6 = icmp ugt i64 %5, 1
-  ret i1 %6
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = and i64 %3, %0
+  %5 = icmp ugt i64 %4, 1
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -33,12 +33,12 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, -1
-  %5 = and i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %2 = zext nneg i32 %1 to i64
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = and i64 %3, %0
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -50,11 +50,11 @@ entry:
 define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw i64 1, %2
-  %4 = add i64 %3, -1
-  %5 = and i64 %4, %0
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = and i64 %3, %0
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 2 occurrences:

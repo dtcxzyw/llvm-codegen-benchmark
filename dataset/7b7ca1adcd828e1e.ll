@@ -14,12 +14,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i64
-  %3 = lshr i64 %2, 10
-  %4 = and i64 %3, 31
-  %5 = icmp eq i64 %4, 0
-  %6 = and i1 %0, %5
-  ret i1 %6
+  %2 = and i16 %1, 31744
+  %3 = icmp eq i16 %2, 0
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -29,12 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = lshr i64 %2, 23
-  %4 = and i64 %3, 255
-  %5 = icmp ult i64 %4, 150
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %2 = and i32 %1, 2130706432
+  %3 = icmp ult i32 %2, 1258291200
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

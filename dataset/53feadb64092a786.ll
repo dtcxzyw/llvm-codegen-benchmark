@@ -4,12 +4,12 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -274877906945
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, -16385
-  %6 = select i1 %0, i64 0, i64 49152
-  %7 = or i64 %6, %5
-  ret i64 %7
+  %3 = and i64 %2, -274877923329
+  %.masked = and i64 %1, -16385
+  %4 = or i64 %3, %.masked
+  %5 = select i1 %0, i64 0, i64 49152
+  %6 = or i64 %5, %4
+  ret i64 %6
 }
 
 ; 19 occurrences:
@@ -35,12 +35,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -67108864
-  %4 = or disjoint i32 %1, %3
-  %5 = and i32 %4, -67108865
-  %6 = select i1 %0, i32 0, i32 67108864
-  %7 = or disjoint i32 %6, %5
-  ret i32 %7
+  %3 = and i32 %2, -134217728
+  %.masked = and i32 %1, -67108865
+  %4 = or i32 %3, %.masked
+  %5 = select i1 %0, i32 0, i32 67108864
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

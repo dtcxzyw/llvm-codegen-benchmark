@@ -8,7 +8,7 @@
 define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
+  %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
   %5 = add i32 %4, 63
   %6 = icmp sgt i32 %5, 63
@@ -21,7 +21,7 @@ entry:
 define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
+  %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
   %5 = add nuw i32 %4, 63
   %6 = icmp sgt i32 %5, 63
@@ -34,10 +34,10 @@ entry:
 define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 2
+  %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, 1
-  %6 = icmp ugt i32 %5, 65535
+  %5 = add i32 %4, -65535
+  %6 = icmp ult i32 %5, -65536
   ret i1 %6
 }
 

@@ -1,7 +1,4 @@
 func0000000000000001:                   # @func0000000000000001
-	sext.w	a1, a0
-	ori	a0, a0, 16
-	sext.w	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
+	slli	a0, a0, 59
+	srli	a0, a0, 63
 	ret

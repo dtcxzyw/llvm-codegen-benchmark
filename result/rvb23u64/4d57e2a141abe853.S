@@ -36,10 +36,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	andi	a1, a1, 255
-	sext.w	a2, a0
-	sgtz	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
+	sext.w	a0, a0
+	max	a0, a0, zero
 	czero.eqz	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc

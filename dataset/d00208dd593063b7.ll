@@ -13,7 +13,7 @@ entry:
   %4 = icmp slt i32 %3, 2
   %5 = select i1 %4, i32 -1, i32 %1
   %6 = sext i32 %5 to i64
-  %7 = icmp sge i64 %0, %6
+  %7 = icmp sle i64 %6, %0
   ret i1 %7
 }
 

@@ -11,9 +11,8 @@ define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw i64 %3, %1
-  %5 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 6
-  ret ptr %6
+  %5 = getelementptr inbounds [262144 x %struct.MinimapPixel.1655012], ptr %0, i64 0, i64 %4, i32 2
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -36,7 +35,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr inbounds [16 x i8], ptr %0, i64 0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 16
   ret ptr %6
@@ -49,9 +48,8 @@ define ptr @func0000000000000011(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
-  %5 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -61,9 +59,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = add i64 %3, %1
-  %5 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [513 x %struct.mi_page_s.2332171], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

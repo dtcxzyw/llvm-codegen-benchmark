@@ -34,5 +34,6 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000001c:                   # @func000000000000001c
 	srliw	a1, a1, 3
-	sh1add	a0, a1, a0
+	slli	a1, a1, 1
+	add	a0, a0, a1
 	ret

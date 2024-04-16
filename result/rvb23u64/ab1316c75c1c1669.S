@@ -30,10 +30,10 @@ func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
 	srli	a1, a1, 30
 	slli	a2, a1, 31
-	sub	a2, a2, a1
-	not	a2, a2
+	add	a0, a0, a1
+	sub	a0, a0, a2
+	lui	a1, 524800
+	addiw	a2, a1, -1
 	add	a0, a0, a2
-	srli	a0, a0, 21
-	sltiu	a0, a0, 1023
-	xori	a0, a0, 1
+	sltu	a0, a0, a1
 	ret

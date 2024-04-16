@@ -27,7 +27,7 @@ entry:
 define i1 @func000000000000001a(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = mul nsw i64 %0, %2
+  %3 = mul nsw i64 %2, %0
   %4 = icmp sgt i64 %3, 0
   ret i1 %4
 }

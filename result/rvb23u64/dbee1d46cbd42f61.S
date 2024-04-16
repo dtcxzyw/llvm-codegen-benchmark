@@ -1,6 +1,6 @@
 func0000000000000020:                   # @func0000000000000020
 	andi	a2, a2, 255
-	mulw	a1, a1, a2
+	mulw	a1, a2, a1
 	lui	a2, 526344
 	addiw	a2, a2, 129
 	mul	a2, a2, a1

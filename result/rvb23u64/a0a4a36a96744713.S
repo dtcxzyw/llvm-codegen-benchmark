@@ -34,11 +34,11 @@ func0000000000000010:                   # @func0000000000000010
 func00000000000000ff:                   # @func00000000000000ff
 	li	a6, 3
 	mulhu	a6, a4, a6
-	sh1add	a5, a5, a5
-	sh1add	a4, a4, a4
-	add	a4, a4, a0
-	sltu	a0, a4, a0
-	add	a1, a1, a5
+	sh1add	a7, a5, a5
+	sh1add	a5, a4, a4
+	add	a4, a5, a0
+	sltu	a0, a4, a5
+	add	a1, a1, a7
 	add	a1, a1, a6
 	add	a1, a1, a0
 	srli	a0, a2, 63

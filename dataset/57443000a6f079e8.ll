@@ -7,7 +7,7 @@
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 31
-  %4 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -30,8 +30,8 @@ entry:
 define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = icmp eq i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -54,8 +54,8 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 5
-  %4 = icmp sgt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp slt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -66,7 +66,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 5
-  %4 = icmp slt i32 %1, %3
+  %4 = icmp sgt i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -78,7 +78,7 @@ entry:
 define i1 @func0000000000000032(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
-  %4 = icmp uge i64 %1, %3
+  %4 = icmp ule i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -91,8 +91,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 1
-  %4 = icmp ne i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ne i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -102,8 +102,8 @@ entry:
 define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = icmp ne i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ne i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -159,8 +159,8 @@ entry:
 define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = icmp ule i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp uge i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -170,8 +170,8 @@ entry:
 define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
-  %4 = icmp slt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sgt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -181,8 +181,8 @@ entry:
 define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
-  %4 = icmp ugt i64 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ult i64 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

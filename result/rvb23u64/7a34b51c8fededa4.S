@@ -55,24 +55,25 @@ func0000000000000041:                   # @func0000000000000041
 	and	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	addi	a1, a1, 7
-	sltiu	a1, a1, 8
-	xori	a1, a1, 1
+	addi	a1, a1, -1
+	sltiu	a1, a1, -8
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addi	a1, a1, 131
-	sltiu	a1, a1, 128
+	addi	a1, a1, 3
+	sltiu	a1, a1, -128
 	seqz	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
-	addi	a1, a1, 3
 	zext.h	a1, a1
-	sltiu	a1, a1, 5
+	addi	a1, a1, -2
+	lui	a2, 16
+	addiw	a2, a2, -5
+	sltu	a1, a1, a2
 	snez	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret
 func00000000000001cc:                   # @func00000000000001cc
 	sext.w	a1, a1
@@ -99,9 +100,8 @@ func00000000000001c4:                   # @func00000000000001c4
 	ret
 func000000000000008c:                   # @func000000000000008c
 	andi	a1, a1, 255
-	addi	a1, a1, -4
-	sltiu	a1, a1, 11
-	xori	a1, a1, 1
+	addi	a1, a1, -15
+	sltiu	a1, a1, -11
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

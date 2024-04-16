@@ -11,8 +11,8 @@ define i1 @func0000000000000024(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp ueq double %3, 0x7FF0000000000000
-  %5 = or i1 %1, %4
-  %6 = or i1 %0, %5
+  %5 = or i1 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -28,8 +28,8 @@ define i1 @func000000000000001c(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fabs.f32(float %2)
   %4 = fcmp une float %3, 0x7FF0000000000000
-  %5 = or i1 %1, %4
-  %6 = or i1 %0, %5
+  %5 = or i1 %4, %1
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = tail call float @llvm.fabs.f32(float %2)
   %4 = fcmp oeq float %3, 0x7FF0000000000000
   %5 = or i1 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp ogt double %3, 1.800000e+02
   %5 = or i1 %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

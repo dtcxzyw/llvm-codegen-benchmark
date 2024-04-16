@@ -59,8 +59,10 @@ func0000000000000044:                   # @func0000000000000044
 	sltiu	a0, a0, 32
 	ret
 func0000000000000141:                   # @func0000000000000141
-	sh3add	a0, a1, a0
+	slli	a1, a1, 3
+	neg	a1, a1
 	addi	a0, a0, -1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000346:                   # @func0000000000000346
@@ -69,9 +71,10 @@ func0000000000000346:                   # @func0000000000000346
 	slti	a0, a0, 1001
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sh3add	a0, a1, a0
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	slli	a1, a1, 3
+	negw	a1, a1
+	addiw	a0, a0, -1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000046:                   # @func0000000000000046
@@ -95,18 +98,23 @@ func00000000000000c4:                   # @func00000000000000c4
 	seqz	a0, a0
 	ret
 func0000000000000151:                   # @func0000000000000151
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, 2
+	slliw	a0, a0, 1
+	li	a2, -2
+	subw	a2, a2, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000030c:                   # @func000000000000030c
-	sh3add	a0, a1, a0
+	slli	a1, a1, 3
+	neg	a1, a1
 	addi	a0, a0, 64
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000301:                   # @func0000000000000301
-	sh3add	a0, a1, a0
+	slli	a1, a1, 3
+	neg	a1, a1
 	addi	a0, a0, 64
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -21,7 +21,7 @@
 define i64 @func0000000000000001(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = add i64 %4, 6364136223846793005
   %6 = xor i64 %5, %1
   %7 = tail call noundef i64 @llvm.fshr.i64(i64 %6, i64 %6, i64 %0)

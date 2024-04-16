@@ -13,7 +13,7 @@ define i48 @func000000000000001b(i48 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i48
   %3 = shl nuw nsw i48 %2, 16
-  %4 = or disjoint i48 %0, %3
+  %4 = or disjoint i48 %3, %0
   %5 = or disjoint i48 %4, %2
   ret i48 %5
 }
@@ -42,7 +42,7 @@ define i32 @func0000000000000010(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw i32 %2, 16
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = or i32 %4, %2
   ret i32 %5
 }
@@ -66,7 +66,7 @@ define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %2, 20
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = or i32 %4, %2
   ret i32 %5
 }

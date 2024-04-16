@@ -9,11 +9,11 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(i1 %0, float %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, 1
   %5 = sitofp i32 %4 to float
-  %6 = fcmp ogt float %1, %5
-  %7 = and i1 %0, %6
+  %6 = fcmp olt float %5, %1
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -27,10 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c2(i1 %0, float %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, 1
   %5 = sitofp i32 %4 to float
-  %6 = fcmp olt float %1, %5
+  %6 = fcmp ogt float %5, %1
   %7 = and i1 %6, %0
   ret i1 %7
 }

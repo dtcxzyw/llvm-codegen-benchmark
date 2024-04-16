@@ -104,8 +104,8 @@
 define i16 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = trunc i64 %3 to i16
+  %3 = trunc i64 %0 to i16
+  %4 = select i1 %2, i16 0, i16 %3
   ret i16 %4
 }
 
@@ -129,8 +129,8 @@ entry:
 define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
-  %3 = select i1 %2, i64 16, i64 %0
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = select i1 %2, i32 16, i32 %3
   ret i32 %4
 }
 
@@ -144,8 +144,8 @@ entry:
 define i32 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 2063
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -161,8 +161,8 @@ entry:
 define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
-  %3 = select i1 %2, i64 0, i64 %0
-  %4 = trunc i64 %3 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -172,8 +172,8 @@ entry:
 define i32 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i64 1, i64 %0
-  %4 = trunc nuw i64 %3 to i32
+  %3 = trunc nuw i64 %0 to i32
+  %4 = select i1 %2, i32 1, i32 %3
   ret i32 %4
 }
 
@@ -183,8 +183,8 @@ entry:
 define i64 @func000000000000002a(i128 %0, i128 %1) #0 {
 entry:
   %2 = icmp sgt i128 %1, 0
-  %3 = select i1 %2, i128 0, i128 %0
-  %4 = trunc nuw i128 %3 to i64
+  %3 = trunc nuw i128 %0 to i64
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 
@@ -195,8 +195,8 @@ entry:
 define i32 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
-  %3 = select i1 %2, i64 -1, i64 %0
-  %4 = trunc nuw nsw i64 %3 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = select i1 %2, i32 -1, i32 %3
   ret i32 %4
 }
 
@@ -209,8 +209,8 @@ entry:
 define i16 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 90, i32 %0
-  %4 = trunc nuw nsw i32 %3 to i16
+  %3 = trunc nuw nsw i32 %0 to i16
+  %4 = select i1 %2, i16 90, i16 %3
   ret i16 %4
 }
 
@@ -219,10 +219,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp sgt i64 %1, 2047
-  %3 = select i1 %2, i64 2048, i64 %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %.inv = icmp slt i64 %1, 2048
+  %2 = trunc i64 %0 to i32
+  %3 = select i1 %.inv, i32 %2, i32 2048
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

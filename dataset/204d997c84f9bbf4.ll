@@ -21,7 +21,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 1, i32 2
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = add nuw i32 %6, %4
   ret i32 %7
 }
@@ -101,7 +101,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i64
   %5 = select i1 %1, i64 366, i64 365
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -114,7 +114,7 @@ entry:
   %3 = icmp eq i32 %2, 15
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 8, i32 2
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -140,7 +140,7 @@ entry:
   %3 = icmp sgt i32 %2, 255
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 2, i32 1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -153,7 +153,7 @@ entry:
   %3 = icmp ugt i8 %2, 93
   %4 = zext i1 %3 to i8
   %5 = select i1 %1, i8 78, i8 105
-  %6 = add nsw i8 %0, %5
+  %6 = add nsw i8 %5, %0
   %7 = add nuw nsw i8 %6, %4
   ret i8 %7
 }

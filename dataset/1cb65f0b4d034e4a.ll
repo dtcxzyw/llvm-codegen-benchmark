@@ -10,7 +10,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = xor i32 %1, -1
   %5 = add i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

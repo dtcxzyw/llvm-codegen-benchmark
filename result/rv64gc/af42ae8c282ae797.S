@@ -1,5 +1,4 @@
 func0000000000000011:                   # @func0000000000000011
-	srai	a0, a0, 2
-	addi	a0, a0, -7
+	addi	a0, a0, -28
 	seqz	a0, a0
 	ret

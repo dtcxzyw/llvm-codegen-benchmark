@@ -1,7 +1,8 @@
 func0000000000000151:                   # @func0000000000000151
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
-	subw	a0, a0, a1
+	addi	a1, a1, -1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000114:                   # @func0000000000000114

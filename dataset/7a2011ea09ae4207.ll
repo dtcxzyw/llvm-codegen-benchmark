@@ -7,10 +7,10 @@
 define i64 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 769
-  %4 = select i1 %3, i64 16, i64 0
-  %5 = sub nuw i64 %1, %4
-  %6 = sub i64 %5, %0
-  ret i64 %6
+  %.neg = select i1 %3, i64 -16, i64 0
+  %4 = add i64 %.neg, %1
+  %5 = sub i64 %4, %0
+  ret i64 %5
 }
 
 ; 2 occurrences:
@@ -20,10 +20,10 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 21
-  %4 = select i1 %3, i32 4, i32 8
-  %5 = sub nsw i32 %1, %4
-  %6 = sub nsw i32 %5, %0
-  ret i32 %6
+  %.neg = select i1 %3, i32 -4, i32 -8
+  %4 = add i32 %.neg, %1
+  %5 = sub nsw i32 %4, %0
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -34,10 +34,10 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 3, i64 4
-  %5 = sub nuw nsw i64 %1, %4
-  %6 = sub nsw i64 %5, %0
-  ret i64 %6
+  %.neg = select i1 %3, i64 -3, i64 -4
+  %4 = add i64 %.neg, %1
+  %5 = sub nsw i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

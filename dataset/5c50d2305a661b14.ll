@@ -8,7 +8,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = add i32 %3, -57344
   %5 = icmp ult i32 %4, 1056767
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = add i32 %3, -65537
   %5 = icmp ult i32 %4, -65025
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

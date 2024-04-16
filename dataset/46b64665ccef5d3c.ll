@@ -55,7 +55,7 @@ define i1 @func000000000000001c(i32 %0, i48 %1) #0 {
 entry:
   %2 = trunc i48 %1 to i32
   %3 = shl i32 %2, 16
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp ne i32 %4, -1
   ret i1 %5
 }

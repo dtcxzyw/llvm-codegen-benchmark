@@ -50,7 +50,6 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sub	a0, a0, a1
+	sub	a0, a1, a0
 	slli	a0, a0, 3
-	neg	a0, a0
 	ret

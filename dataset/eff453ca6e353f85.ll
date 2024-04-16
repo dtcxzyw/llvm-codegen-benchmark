@@ -1009,8 +1009,8 @@ entry:
 define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, 4
+  %3 = and i64 %2, 4294967292
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
@@ -1026,7 +1026,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = and i32 %2, 15
+  %3 = and i32 %2, 14
   %4 = icmp ult i32 %3, 10
   ret i1 %4
 }

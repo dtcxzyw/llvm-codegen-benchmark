@@ -8,10 +8,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
+  %2 = add i32 %1, 4095
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 31
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -27,7 +27,7 @@ entry:
   %2 = add i32 %1, 2531011
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32767
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

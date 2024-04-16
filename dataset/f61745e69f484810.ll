@@ -41,7 +41,7 @@ entry:
   %3 = and i8 %2, 1
   %4 = xor i8 %3, 1
   %5 = and i8 %1, -4
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   %7 = or disjoint i8 %6, %4
   ret i8 %7
 }

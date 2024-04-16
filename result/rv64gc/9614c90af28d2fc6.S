@@ -4,7 +4,8 @@ func0000000000000004:                   # @func0000000000000004
 .LBB0_2:                                # %entry
 	ret
 func0000000000000030:                   # @func0000000000000030
-	bnez	a2, .LBB1_2
-	mv	a0, a1
+	beqz	a2, .LBB1_2
+	mv	a1, a0
 .LBB1_2:                                # %entry
+	mv	a0, a1
 	ret

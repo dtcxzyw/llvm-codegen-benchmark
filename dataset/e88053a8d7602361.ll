@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i8 %1, 93
   %4 = select i1 %3, i1 %2, i1 false
   %5 = sext i1 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = icmp ne i32 %1, 0
   %4 = select i1 %3, i1 %2, i1 false
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = icmp eq i8 %1, 10
   %4 = select i1 %3, i1 %2, i1 false
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = icmp ult i32 %1, 536870912
   %4 = select i1 %3, i1 %2, i1 false
   %5 = sext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = icmp ne i32 %1, 0
   %4 = select i1 %3, i1 %2, i1 false
   %5 = sext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

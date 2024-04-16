@@ -12,9 +12,8 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = getelementptr inbounds %struct.zend_shared_segment_shm.1716265, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 32
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.zend_shared_segment_shm.1716265, ptr %5, i64 %0, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:

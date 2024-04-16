@@ -9,7 +9,7 @@ func0000000000000000:                   # @func0000000000000000
 	zext.w	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	addi	a1, a1, 1
+	not	a1, a1
 	mul	a0, a0, a1
 	andi	a0, a0, 1
 	ret

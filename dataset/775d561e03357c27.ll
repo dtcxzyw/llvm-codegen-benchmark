@@ -77,8 +77,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 9223372036854775800
-  %6 = select i1 %5, i64 %0, i64 2305843009213693951
-  %7 = icmp eq i64 %6, 0
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -160,8 +160,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 9223372036854775800
-  %6 = select i1 %5, i64 %0, i64 2305843009213693951
-  %7 = icmp ugt i64 %6, 2305843009213693951
+  %6 = icmp ugt i64 %0, 2305843009213693951
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -173,8 +173,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 9223372036854775806
-  %6 = select i1 %5, i64 %0, i64 9223372036854775807
-  %7 = icmp slt i64 %6, 0
+  %6 = icmp slt i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 

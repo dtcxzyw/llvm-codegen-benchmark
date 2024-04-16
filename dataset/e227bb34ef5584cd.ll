@@ -7,7 +7,7 @@
 define i1 @func0000000000000004(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 256, i32 128
-  %4 = icmp ult i32 %1, %3
+  %4 = icmp ugt i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -24,8 +24,8 @@ entry:
 define i1 @func000000000000000c(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 30, i8 29
-  %4 = icmp ne i8 %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp ne i8 %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -45,8 +45,8 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4611686018427387904, i64 1073741824
-  %4 = icmp eq i64 %1, %3
-  %5 = and i1 %0, %4
+  %4 = icmp eq i64 %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 258, i32 64
-  %4 = icmp ule i32 %1, %3
+  %4 = icmp uge i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -68,7 +68,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 8100000, i32 7992000
-  %4 = icmp uge i32 %1, %3
+  %4 = icmp ule i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -79,7 +79,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1000, i32 100
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }

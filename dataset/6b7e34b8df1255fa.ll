@@ -7,7 +7,7 @@ entry:
   %3 = sdiv i16 %2, 5
   %4 = sext i16 %3 to i32
   %5 = sdiv i32 %1, 400
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }

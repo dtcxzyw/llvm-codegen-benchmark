@@ -22,8 +22,8 @@
 define i32 @func0000000000000004(float %0) #0 {
 entry:
   %1 = fptosi float %0 to i32
-  %2 = add nsw i32 %1, 1
-  %3 = shl i32 %2, 30
+  %2 = shl i32 %1, 30
+  %3 = add i32 %2, 1073741824
   ret i32 %3
 }
 

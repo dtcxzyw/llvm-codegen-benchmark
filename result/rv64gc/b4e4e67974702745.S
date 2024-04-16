@@ -18,12 +18,10 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	li	a3, 1000
-	mulhu	a4, a2, a3
-	mul	a2, a2, a3
-	add	a0, a0, a2
-	sltu	a2, a0, a2
-	add	a1, a1, a4
-	add	a1, a1, a2
+	mul	a4, a2, a3
+	mulhu	a2, a2, a3
+	or	a1, a1, a2
+	or	a0, a0, a4
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -61,7 +59,8 @@ func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
 	li	a2, -6
 	mul	a1, a1, a2
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000c6:                   # @func00000000000000c6
@@ -75,14 +74,16 @@ func00000000000000d1:                   # @func00000000000000d1
 	slli	a1, a1, 56
 	lui	a2, 625
 	mulhu	a1, a1, a2
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000151:                   # @func0000000000000151
 	andi	a1, a1, 255
 	li	a2, -250
 	mul	a1, a1, a2
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000008a:                   # @func000000000000008a
@@ -123,7 +124,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	sext.w	a1, a1
 	li	a2, 1000
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000015a:                   # @func000000000000015a

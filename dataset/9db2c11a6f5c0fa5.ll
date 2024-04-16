@@ -17,9 +17,8 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = getelementptr inbounds %struct.HUF_DEltX2.1956977, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.HUF_DEltX2.1956977, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -30,9 +29,8 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = getelementptr %struct.HUF_DEltX1.2008725, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %6 = getelementptr %struct.HUF_DEltX1.2008725, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

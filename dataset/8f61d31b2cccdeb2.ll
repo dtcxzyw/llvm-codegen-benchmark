@@ -9,7 +9,7 @@ entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 8192)
   %3 = zext nneg i32 %2 to i64
   %4 = call i64 @llvm.umin.i64(i64 %0, i64 %3)
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

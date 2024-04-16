@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = add i32 %2, %1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i64, ptr %0, i64 %4
-  ret ptr %5
+  %reass.add = shl i32 %1, 1
+  %2 = add i32 %reass.add, -1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i64, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -18,11 +18,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
-  %3 = add nsw i32 %2, %1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds double, ptr %0, i64 %4
-  ret ptr %5
+  %reass.add = shl i32 %1, 1
+  %2 = or disjoint i32 %reass.add, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -32,11 +32,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
-  %3 = add nsw i32 %2, %1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr double, ptr %0, i64 %4
-  ret ptr %5
+  %reass.add = shl i32 %1, 1
+  %2 = or disjoint i32 %reass.add, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr double, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 31 occurrences:
@@ -74,11 +74,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = add nsw i32 %2, %1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds double, ptr %0, i64 %4
-  ret ptr %5
+  %reass.add = shl i32 %1, 1
+  %2 = or disjoint i32 %reass.add, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

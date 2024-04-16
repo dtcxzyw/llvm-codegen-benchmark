@@ -33,28 +33,28 @@ func000000000000000e:                   # @func000000000000000e
 	srli	a4, a4, 56
 	or	a4, a4, a6
 	srli	a5, a5, 56
+	add	a2, a2, a4
+	sltu	a4, a2, a4
 	add	a3, a3, a5
-	add	a4, a4, a2
-	sltu	a2, a4, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
-	sltu	a2, a0, a4
-	sub	a1, a1, a2
-	sub	a0, a0, a4
+	sub	a1, a1, a4
+	sltu	a3, a0, a2
+	sub	a1, a1, a3
+	sub	a0, a0, a2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a6, a5, 8
 	srli	a4, a4, 56
 	or	a4, a4, a6
 	srli	a5, a5, 56
+	add	a2, a2, a4
+	sltu	a4, a2, a4
 	add	a3, a3, a5
-	add	a4, a4, a2
-	sltu	a2, a4, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
-	sltu	a2, a0, a4
-	sub	a1, a1, a2
-	sub	a0, a0, a4
+	sub	a1, a1, a4
+	sltu	a3, a0, a2
+	sub	a1, a1, a3
+	sub	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
 	srliw	a2, a2, 24

@@ -20,9 +20,8 @@ define ptr @func0000000000000035(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %struct.rb_code_location_struct.1553153, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr %struct.rb_code_location_struct.1553153, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -32,9 +31,8 @@ define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr inbounds %struct.rb_code_location_struct.1554242, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.rb_code_location_struct.1554242, ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -49,9 +47,8 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = sub i64 %3, %1
-  %5 = getelementptr inbounds %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.1583117", ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 40
-  ret ptr %6
+  %5 = getelementptr inbounds %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.1583117", ptr %0, i64 %4, i32 0, i32 1
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -75,9 +72,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 3
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr inbounds %struct.TestObject.2279313, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.TestObject.2279313, ptr %0, i64 %4, i32 4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

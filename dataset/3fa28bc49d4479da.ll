@@ -185,11 +185,11 @@
 define i64 @func0000000000000077(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
-  %3 = sub nuw nsw i32 32, %2
-  %4 = lshr i32 %0, 24
-  %5 = add nuw nsw i32 %4, %3
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
+  %3 = lshr i32 %0, 24
+  %reass.sub = sub nsw i32 %3, %2
+  %4 = add nsw i32 %reass.sub, 32
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

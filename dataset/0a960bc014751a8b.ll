@@ -6,7 +6,7 @@ define i1 @func0000000000000004(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
   %4 = fadd double %3, %1
-  %5 = fadd double %0, %3
+  %5 = fadd double %3, %0
   %6 = fcmp ogt double %5, %4
   ret i1 %6
 }
@@ -21,8 +21,8 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %1, %3
-  %5 = fadd float %0, %3
+  %4 = fadd float %3, %1
+  %5 = fadd float %3, %0
   %6 = fcmp oeq float %5, %4
   ret i1 %6
 }

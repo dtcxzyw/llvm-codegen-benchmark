@@ -8,7 +8,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 24
   %5 = icmp eq i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

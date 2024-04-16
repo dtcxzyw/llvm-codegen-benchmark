@@ -35,7 +35,7 @@ define i32 @func0000000000000001(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 1048575
   %5 = or disjoint i32 %4, 1048576
   ret i32 %5

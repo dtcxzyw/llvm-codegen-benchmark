@@ -8,9 +8,8 @@
 define i64 @func0000000000000005(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i64
-  %2 = sub nsw i64 0, %1
-  %3 = shl nsw i64 %2, 1
-  ret i64 %3
+  %.neg = mul nsw i64 %1, -2
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

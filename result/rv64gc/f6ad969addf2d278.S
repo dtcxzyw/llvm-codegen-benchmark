@@ -1,6 +1,4 @@
 func0000000000000000:                   # @func0000000000000000
-	sext.w	a2, a1
-	beqz	a2, .LBB0_2
 	srliw	a2, a1, 1
 	or	a1, a1, a2
 	srliw	a2, a1, 2
@@ -26,16 +24,12 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	lui	a2, 61681
-	addi	a2, a2, -241
+	addiw	a2, a2, -241
 	and	a1, a1, a2
 	lui	a2, 4112
-	addi	a2, a2, 257
+	addiw	a2, a2, 257
 	mul	a1, a1, a2
-	srliw	a1, a1, 24
-	srlw	a0, a0, a1
-	ret
-.LBB0_2:
-	li	a1, 32
+	srli	a1, a1, 24
 	srlw	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
@@ -83,8 +77,6 @@ func0000000000000002:                   # @func0000000000000002
 	srl	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	sext.w	a2, a1
-	beqz	a2, .LBB2_2
 	srliw	a2, a1, 1
 	or	a1, a1, a2
 	srliw	a2, a1, 2
@@ -110,15 +102,11 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	lui	a2, 61681
-	addi	a2, a2, -241
+	addiw	a2, a2, -241
 	and	a1, a1, a2
 	lui	a2, 4112
-	addi	a2, a2, 257
+	addiw	a2, a2, 257
 	mul	a1, a1, a2
-	srliw	a1, a1, 24
-	srlw	a0, a0, a1
-	ret
-.LBB2_2:
-	li	a1, 32
+	srli	a1, a1, 24
 	srlw	a0, a0, a1
 	ret

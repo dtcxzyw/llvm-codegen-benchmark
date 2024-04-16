@@ -6,8 +6,8 @@
 define i1 @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp ne ptr %3, null
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 

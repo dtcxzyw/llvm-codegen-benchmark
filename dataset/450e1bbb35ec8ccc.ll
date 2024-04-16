@@ -22,7 +22,7 @@
 define ptr @func000000000000000d(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %1, %3
+  %4 = icmp sgt i32 %3, %1
   %5 = select i1 %4, i64 24, i64 16
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -67,7 +67,7 @@ entry:
 define ptr @func0000000000000009(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
-  %4 = icmp ult i16 %1, %3
+  %4 = icmp ugt i16 %3, %1
   %5 = select i1 %4, i64 24, i64 16
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -86,7 +86,7 @@ entry:
 define ptr @func0000000000000015(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i16
-  %4 = icmp sgt i16 %1, %3
+  %4 = icmp slt i16 %3, %1
   %5 = select i1 %4, i64 16, i64 24
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -103,7 +103,7 @@ entry:
 define ptr @func0000000000000011(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = select i1 %4, i64 16, i64 24
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   ret ptr %6
@@ -115,7 +115,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %1, %3
+  %4 = icmp ugt i32 %3, %1
   %5 = select i1 %4, i64 24, i64 16
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -127,7 +127,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %1, %3
+  %4 = icmp slt i32 %3, %1
   %5 = select i1 %4, i64 16, i64 24
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

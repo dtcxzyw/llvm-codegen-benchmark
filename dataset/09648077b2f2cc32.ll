@@ -813,7 +813,7 @@ define i1 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = xor i64 %2, 1152921504606846975
-  %4 = icmp ule i64 %0, %3
+  %4 = icmp uge i64 %3, %0
   ret i1 %4
 }
 
@@ -823,8 +823,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
-  %3 = xor i32 %2, 1
-  %4 = icmp eq i32 %0, %3
+  %3 = xor i32 %2, %0
+  %4 = icmp eq i32 %3, 1
   ret i1 %4
 }
 

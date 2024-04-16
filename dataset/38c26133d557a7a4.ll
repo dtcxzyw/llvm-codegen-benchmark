@@ -13,7 +13,7 @@ entry:
   %3 = add i64 %0, 7640891576956012808
   %4 = xor i64 %3, %2
   %5 = tail call i64 @llvm.fshl.i64(i64 %4, i64 %4, i64 40)
-  %6 = add i64 %1, %5
+  %6 = add i64 %5, %1
   %7 = xor i64 %6, %0
   ret i64 %7
 }

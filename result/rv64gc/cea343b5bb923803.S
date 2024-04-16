@@ -116,12 +116,9 @@ func0000000000000026:                   # @func0000000000000026
 	slti	a0, a1, 0
 	ret
 func0000000000000031:                   # @func0000000000000031
-	andi	a0, a0, 1
-	bnez	a0, .LBB14_2
-	addi	a1, a2, 4
-.LBB14_2:                               # %entry
 	sext.w	a1, a1
-	seqz	a0, a1
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	andi	a0, a0, 1

@@ -7,8 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000003f:                   # @func000000000000003f
 	mul	a1, a1, a2
 	slli	a2, a1, 8
-	subw	a0, a0, a1
-	addw	a0, a0, a2
+	subw	a1, a1, a0
+	subw	a0, a2, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	mul	a1, a1, a2

@@ -15,11 +15,9 @@
 define ptr @func000000000000000f(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 72
-  %4 = getelementptr inbounds [3 x %struct.tinfl_huff_table.1752161], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 2336
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr inbounds [576 x i16], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = sext i32 %0 to i64
+  %5 = getelementptr inbounds [3 x %struct.tinfl_huff_table.1752161], ptr %3, i64 0, i64 %1, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -30,11 +28,9 @@ entry:
 define ptr @func000000000000000a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8224
-  %4 = getelementptr [10 x %struct.nfs4_fs_location.2006754], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 176
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr [512 x %struct.nfs4_string.2006753], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = sext i32 %0 to i64
+  %5 = getelementptr [10 x %struct.nfs4_fs_location.2006754], ptr %3, i64 0, i64 %1, i32 2, i32 1, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

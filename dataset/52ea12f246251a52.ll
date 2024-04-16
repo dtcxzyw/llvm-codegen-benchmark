@@ -12,9 +12,8 @@ entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 974208
-  %5 = getelementptr inbounds %struct.s_hv.1766891, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.s_hv.1766891, ptr %4, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:

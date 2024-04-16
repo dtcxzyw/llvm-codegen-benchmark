@@ -22,11 +22,11 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
-  %2 = or disjoint i64 %0, 4
-  %3 = trunc i8 %1 to i1
-  %4 = select i1 %3, i64 %2, i64 %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = trunc i8 %1 to i1
+  %3 = icmp eq i64 %0, 0
+  %not. = xor i1 %2, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 21 occurrences:
@@ -54,11 +54,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
-  %2 = or i64 %0, 1024
-  %3 = trunc i8 %1 to i1
-  %4 = select i1 %3, i64 %2, i64 %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = trunc i8 %1 to i1
+  %3 = icmp eq i64 %0, 0
+  %not. = xor i1 %2, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

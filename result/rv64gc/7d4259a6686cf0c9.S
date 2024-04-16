@@ -1,15 +1,15 @@
 func000000000000000e:                   # @func000000000000000e
-	andi	a1, a1, 255
+	andi	a1, a1, 252
 	addi	a1, a1, -16
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a1, a1, 254
+	andi	a1, a1, 252
 	addi	a1, a1, -32
-	srliw	a1, a1, 2
-	slli	a1, a1, 2
+	slli	a1, a1, 32
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
@@ -34,7 +34,6 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	andi	a1, a1, -8
 	addi	a1, a1, 8
 	srliw	a1, a1, 3
 	add	a0, a0, a1

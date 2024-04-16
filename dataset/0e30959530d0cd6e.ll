@@ -3650,7 +3650,7 @@
 define i64 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 1152921504606846975)
   %6 = select i1 %0, i64 1152921504606846975, i64 %5
   ret i64 %6
@@ -3886,7 +3886,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 1
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 4611686018427387903)
   %6 = select i1 %0, i64 4611686018427387903, i64 %5
   ret i64 %6

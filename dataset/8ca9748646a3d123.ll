@@ -30,9 +30,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 16
   %5 = sext i32 %0 to i64
-  %6 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.1663348], ptr %4, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.1663348], ptr %4, i64 0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -44,9 +43,8 @@ entry:
   %3 = getelementptr %struct.CalloutData.1666851, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -120
   %5 = sext i32 %0 to i64
-  %6 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %4, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [5 x %struct.anon.1666852], ptr %4, i64 0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -57,9 +55,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 24
   %5 = sext i32 %0 to i64
-  %6 = getelementptr inbounds [0 x %union.frame_entry.1745519], ptr %4, i64 0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds [0 x %union.frame_entry.1745519], ptr %4, i64 0, i64 %5, i32 0, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

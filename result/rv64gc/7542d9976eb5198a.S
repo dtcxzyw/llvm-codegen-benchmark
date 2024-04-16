@@ -11,9 +11,10 @@ func0000000000000010:                   # @func0000000000000010
 	slli	a2, a2, 32
 	addi	a2, a2, -2
 	bgeu	a2, a0, .LBB1_2
-	lui	a1, 65536
-	addi	a1, a1, -1
-.LBB1_2:                                # %entry
+	lui	a0, 65536
+	addiw	a0, a0, -1
+	ret
+.LBB1_2:
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

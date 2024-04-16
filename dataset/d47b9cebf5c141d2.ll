@@ -12,7 +12,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = zext i8 %0 to i64
   %4 = lshr i64 %3, %2
-  %5 = trunc i64 %4 to i8
+  %5 = trunc nuw i64 %4 to i8
   %6 = and i8 %5, 1
   ret i8 %6
 }

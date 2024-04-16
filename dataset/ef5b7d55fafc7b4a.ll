@@ -80,7 +80,7 @@
 define i64 @func0000000000000001(i128 %0) #0 {
 entry:
   %1 = lshr i128 %0, 73
-  %2 = trunc i128 %1 to i64
+  %2 = trunc nuw nsw i128 %1 to i64
   %3 = tail call i64 @llvm.cttz.i64(i64 %2, i1 true), !range !0
   ret i64 %3
 }

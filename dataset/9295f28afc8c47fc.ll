@@ -12,9 +12,8 @@ entry:
   %2 = xor i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 816
-  %5 = getelementptr [4 x %struct.SCC2698Block.1662673], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr [4 x %struct.SCC2698Block.1662673], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -28,9 +27,8 @@ entry:
   %2 = xor i32 %1, 255
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %0, i64 4184
-  %5 = getelementptr inbounds [256 x %"struct.gjkepa2_impl::EPA::sFace.1742111"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 72
-  ret ptr %6
+  %5 = getelementptr inbounds [256 x %"struct.gjkepa2_impl::EPA::sFace.1742111"], ptr %4, i64 0, i64 %3, i32 5
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

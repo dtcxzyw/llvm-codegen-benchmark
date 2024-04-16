@@ -30,9 +30,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 8
-  %4 = getelementptr inbounds %struct.aiFace.1752480, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.aiFace.1752480, ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -65,9 +64,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = getelementptr inbounds i8, ptr %0, i64 16
-  %4 = getelementptr inbounds %"class.std::basic_string_view.1947899", ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.std::basic_string_view.1947899", ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -91,9 +89,8 @@ define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 -8
-  %4 = getelementptr %struct.page.1998939, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.page.1998939, ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:

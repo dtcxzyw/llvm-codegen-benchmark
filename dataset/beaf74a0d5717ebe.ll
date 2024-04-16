@@ -20,9 +20,9 @@
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = lshr i64 %3, 32
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
 
@@ -36,8 +36,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = add i64 %0, %2
+  %2 = zext i32 %1 to i64
+  %3 = add i64 %2, %0
   %4 = lshr i64 %3, 16
   %5 = trunc i64 %4 to i16
   ret i16 %5

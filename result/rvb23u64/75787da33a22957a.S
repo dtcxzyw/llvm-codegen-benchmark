@@ -1,14 +1,15 @@
 func000000000000007d:                   # @func000000000000007d
 	andi	a1, a1, 255
-	slli	a0, a0, 7
 	slli	a1, a1, 23
+	slli	a0, a0, 7
 	or	a0, a0, a1
 	addiw	a0, a0, -127
 	ret
 func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 255
 	slli	a1, a1, 9
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	or	a0, a0, a1
 	li	a1, 1
 	slli	a1, a1, 33
 	addi	a1, a1, -2

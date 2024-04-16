@@ -13,7 +13,7 @@ func00000000000006f1:                   # @func00000000000006f1
 	add	a0, a0, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000006f8:                   # @func00000000000006f8

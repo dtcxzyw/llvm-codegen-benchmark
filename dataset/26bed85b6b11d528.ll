@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000f11(i16 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = mul nuw nsw i8 %2, 10
-  %4 = add nuw nsw i8 %1, %3
+  %4 = add nuw nsw i8 %3, %1
   %5 = icmp eq i8 %4, 2
   %6 = icmp eq i16 %0, 0
   %7 = and i1 %6, %5
@@ -51,8 +51,8 @@ entry:
 define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, -100
-  %4 = add i32 %3, %1
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %1
+  %5 = icmp eq i32 %3, %4
   %6 = icmp eq i64 %0, 0
   %7 = and i1 %6, %5
   ret i1 %7

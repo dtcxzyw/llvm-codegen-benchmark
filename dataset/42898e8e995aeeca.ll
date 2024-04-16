@@ -6,7 +6,7 @@
 define i64 @func0000000000000009(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 -3652425, i64 0
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = sdiv i64 %3, 3652425
   %5 = add nsw i64 %4, 1970
   ret i64 %5

@@ -11,7 +11,7 @@ entry:
   %2 = fmul double %1, 1.000000e-02
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

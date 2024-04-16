@@ -12,7 +12,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = srem i32 %4, %1
   %6 = sub nsw i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

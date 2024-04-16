@@ -8,8 +8,8 @@ entry:
   %2 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 9)
   %3 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 17)
   %4 = xor i32 %3, %2
-  %5 = xor i32 %4, %1
-  %6 = xor i32 %0, %5
+  %5 = xor i32 %4, %0
+  %6 = xor i32 %5, %1
   ret i32 %6
 }
 
@@ -25,8 +25,8 @@ entry:
   %2 = tail call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 9)
   %3 = tail call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 17)
   %4 = xor i32 %3, %2
-  %5 = xor i32 %4, %1
-  %6 = xor i32 %5, %0
+  %5 = xor i32 %4, %0
+  %6 = xor i32 %5, %1
   ret i32 %6
 }
 

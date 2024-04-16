@@ -47,11 +47,13 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	zext.w	a0, a0
-	lui	a1, 335544
-	addiw	a1, a1, 1311
-	mul	a0, a0, a1
-	srli	a0, a0, 37
-	li	a1, -100
-	mulw	a0, a0, a1
+	zext.w	a1, a0
+	lui	a2, 335544
+	addiw	a2, a2, 1311
+	mul	a1, a1, a2
+	srli	a1, a1, 37
+	li	a2, 100
+	mul	a1, a1, a2
+	subw	a0, a0, a0
+	subw	a0, a0, a1
 	ret

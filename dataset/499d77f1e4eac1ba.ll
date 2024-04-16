@@ -101,12 +101,13 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000102(double %0) #0 {
 entry:
-  %1 = tail call double @llvm.fabs.f64(double %0) #2
-  %2 = fcmp oeq double %1, 0x7FF0000000000000
-  %3 = fcmp uno double %0, 0.000000e+00
-  %4 = or i1 %3, %2
-  ret i1 %4
+  %1 = call double @llvm.fabs.f64(double %0)
+  %2 = fcmp ueq double %1, 0x7FF0000000000000
+  ret i1 %2
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i1 @llvm.is.fpclass.f64(double, i32 immarg) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

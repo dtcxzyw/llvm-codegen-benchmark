@@ -6,7 +6,7 @@ define i16 @func0000000000000010(i1 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = lshr i32 %3, 16
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw i32 %4 to i16
   %6 = select i1 %0, i16 %1, i16 %5
   ret i16 %6
 }

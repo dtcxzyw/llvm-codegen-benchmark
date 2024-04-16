@@ -6,7 +6,7 @@
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = trunc i128 %0 to i64
   %5 = sub i64 %3, %4
   %6 = zext i64 %5 to i128
@@ -32,7 +32,7 @@ entry:
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = trunc i128 %0 to i64
   %5 = sub i64 %3, %4
   %6 = zext nneg i64 %5 to i128
@@ -58,7 +58,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %0 to i32
   %5 = sub nsw i32 %3, %4
   %6 = zext nneg i32 %5 to i64

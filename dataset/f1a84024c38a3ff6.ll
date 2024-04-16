@@ -7,7 +7,7 @@
 define i1 @func00000000000002c1(i16 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = icmp eq i16 %0, 1
   %7 = select i1 %6, i1 true, i1 %5
@@ -69,7 +69,7 @@ entry:
 define i1 @func00000000000002cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -82,7 +82,7 @@ entry:
 define i1 @func00000000000003cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -130,7 +130,7 @@ entry:
 define i1 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 15, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp ugt i32 %0, 15
   %7 = select i1 %6, i1 true, i1 %5
@@ -144,7 +144,7 @@ entry:
 define i1 @func0000000000000214(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %1, %3
+  %4 = and i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp ult i8 %0, -26
   %7 = select i1 %6, i1 true, i1 %5

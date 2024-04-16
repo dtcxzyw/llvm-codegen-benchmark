@@ -47,9 +47,8 @@ entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 31
   %4 = getelementptr inbounds i8, ptr %0, i64 8
-  %5 = getelementptr inbounds { { { [6 x i64] } }, { i64 } }, ptr %4, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds { { { [6 x i64] } }, { i64 } }, ptr %4, i64 %3, i32 0, i32 0, i32 0, i64 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

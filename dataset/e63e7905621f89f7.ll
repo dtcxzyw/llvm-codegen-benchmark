@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 8
-  %2 = trunc i32 %1 to i8
-  %3 = shl nuw nsw i8 %2, 2
+  %1 = trunc i32 %0 to i8
+  %2 = shl i8 %1, 2
+  %3 = and i8 %2, 32
   %4 = xor i8 %3, 32
   ret i8 %4
 }

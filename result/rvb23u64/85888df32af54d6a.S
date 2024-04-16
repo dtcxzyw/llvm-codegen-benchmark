@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.s	fa5, fa2
 .LBB0_2:                                # %entry
 	fdiv.s	fa5, fa1, fa5
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, zero
@@ -15,5 +15,5 @@ func0000000000000008:                   # @func0000000000000008
 	fmv.s	fa5, fa2
 .LBB1_2:                                # %entry
 	fdiv.s	fa5, fa1, fa5
-	fadd.s	fa0, fa0, fa5
+	fadd.s	fa0, fa5, fa0
 	ret

@@ -706,9 +706,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(ptr %0) #0 {
 entry:
-  %1 = getelementptr inbounds i8, ptr %0, i64 152
-  %2 = icmp ne ptr %1, null
-  ret i1 %2
+  ret i1 true
 }
 
 ; 64 occurrences:
@@ -779,9 +777,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0) #0 {
 entry:
-  %1 = getelementptr inbounds i8, ptr %0, i64 40
-  %2 = icmp eq ptr %1, null
-  ret i1 %2
+  ret i1 false
 }
 
 attributes #0 = { nounwind }

@@ -69,10 +69,9 @@ define ptr @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
-  %5 = getelementptr i8, ptr %1, i64 16
-  %6 = getelementptr i8, ptr %0, i64 16
-  %7 = select i1 %4, ptr %6, ptr %5
-  ret ptr %7
+  %.v = select i1 %4, ptr %0, ptr %1
+  %5 = getelementptr i8, ptr %.v, i64 16
+  ret ptr %5
 }
 
 ; 1 occurrences:

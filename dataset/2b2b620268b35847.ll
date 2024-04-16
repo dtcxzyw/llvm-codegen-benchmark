@@ -14,9 +14,8 @@
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
-  %2 = xor i32 %1, 1
-  %3 = or disjoint i32 %2, 4
-  ret i32 %3
+  %2 = xor i32 %1, 5
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -24,10 +23,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 515
-  %2 = xor i32 %1, 2
-  %3 = or i32 %2, 1
-  ret i32 %3
+  %1 = and i32 %0, 514
+  %2 = xor i32 %1, 3
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

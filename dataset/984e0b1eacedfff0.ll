@@ -19,8 +19,8 @@ entry:
   %3 = sub i64 %2, %1
   %4 = icmp ugt i64 %3, -9223372036854775808
   %5 = sub i64 %1, %2
-  %6 = select i1 %4, i64 %5, i64 0
-  %7 = icmp ugt i64 %6, %0
+  %6 = icmp ugt i64 %5, %0
+  %7 = select i1 %4, i1 %6, i1 false
   ret i1 %7
 }
 

@@ -99,21 +99,9 @@ func000000000000044a:                   # @func000000000000044a
 	xori	a0, a0, 1
 	ret
 func0000000000000111:                   # @func0000000000000111
-	slli	a3, a2, 48
-	bnez	a3, .LBB6_3
-	slli	a2, a1, 48
-	bnez	a2, .LBB6_4
-.LBB6_2:                                # %entry
+	or	a1, a1, a2
+	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	seqz	a0, a0
-	ret
-.LBB6_3:                                # %entry
-	mv	a1, a2
-	slli	a2, a2, 48
-	beqz	a2, .LBB6_2
-.LBB6_4:                                # %entry
-	slli	a0, a1, 48
 	srli	a0, a0, 48
 	seqz	a0, a0
 	ret

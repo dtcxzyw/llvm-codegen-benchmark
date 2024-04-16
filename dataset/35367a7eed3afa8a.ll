@@ -4,11 +4,11 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 764
-  %4 = shl nuw nsw i32 %3, 10
+  %3 = shl i32 %2, 10
+  %4 = and i32 %3, 782336
   %5 = select i1 %1, i32 2097152, i32 6291456
   %6 = or disjoint i32 %5, %4
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 

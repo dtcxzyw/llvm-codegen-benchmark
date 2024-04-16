@@ -15,7 +15,7 @@ entry:
   %4 = sub i32 0, %1
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i32 %4, i32 %3
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 

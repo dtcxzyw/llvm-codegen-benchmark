@@ -11,7 +11,7 @@
 define ptr @func0000000000000055(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
   %7 = getelementptr inbounds %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.1579854", ptr %0, i64 %6
@@ -24,7 +24,7 @@ entry:
 define ptr @func0000000000000045(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
   %7 = getelementptr inbounds %"struct.(anonymous namespace)::ValuePair.2280096", ptr %0, i64 %6

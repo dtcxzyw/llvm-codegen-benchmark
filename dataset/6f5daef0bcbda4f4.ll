@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 3
-  %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %2 = and i32 %1, 3
+  %3 = icmp ne i32 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -20,9 +19,9 @@ entry:
 define i1 @func0000000000000010(i1 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, 127
-  %5 = or i1 %0, %4
+  %3 = and i64 %2, 4294967168
+  %4 = icmp ne i64 %3, 0
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -35,11 +34,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 3
-  %4 = icmp eq i64 %3, 0
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %2 = and i32 %1, 3
+  %3 = icmp eq i32 %2, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

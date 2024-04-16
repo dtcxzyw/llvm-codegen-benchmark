@@ -7,7 +7,7 @@ entry:
   %3 = ashr exact i64 %2, 5
   %4 = add i64 %1, 2
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

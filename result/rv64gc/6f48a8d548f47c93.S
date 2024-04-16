@@ -33,14 +33,14 @@ func00000000000000c1:                   # @func00000000000000c1
 	lui	a1, 15
 	and	a1, a1, a0
 	lui	a2, 14
-	li	a0, 3
-	beq	a1, a2, .LBB2_3
+	li	a0, 1
+	bne	a1, a2, .LBB2_3
 	lui	a2, 4
 	beq	a1, a2, .LBB2_4
 .LBB2_2:                                # %entry
 	ret
 .LBB2_3:                                # %entry
-	li	a0, 1
+	li	a0, 3
 	lui	a2, 4
 	bne	a1, a2, .LBB2_2
 .LBB2_4:                                # %entry
@@ -51,12 +51,14 @@ func0000000000000014:                   # @func0000000000000014
 	li	a2, 2
 	li	a0, 6
 	bne	a1, a2, .LBB3_3
-	bltu	a1, a2, .LBB3_4
+	li	a2, 1
+	bgeu	a2, a1, .LBB3_4
 .LBB3_2:                                # %entry
 	ret
 .LBB3_3:                                # %entry
 	li	a0, 10
-	bgeu	a1, a2, .LBB3_2
+	li	a2, 1
+	bltu	a2, a1, .LBB3_2
 .LBB3_4:                                # %entry
 	li	a0, 1
 	ret

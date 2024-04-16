@@ -11,27 +11,25 @@ func000000000000007d:                   # @func000000000000007d
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a2, a2, a4
-	lui	a3, 1048574
-	srli	a3, a3, 12
+	lui	a3, 1048572
+	srli	a3, a3, 13
 	add	a2, a2, a3
 	slli	a2, a2, 13
 	srli	a2, a2, 13
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a2, a2, a4
-	lui	a3, 1048574
-	srli	a3, a3, 12
+	lui	a3, 1048572
+	srli	a3, a3, 13
 	add	a2, a2, a3
 	slli	a2, a2, 13
 	srli	a2, a2, 13
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func0000000000000040:                   # @func0000000000000040
 	addi	a2, a2, 11

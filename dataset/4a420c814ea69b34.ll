@@ -5,8 +5,8 @@
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fabs.f32(float %2)
-  %4 = fmul float %1, %3
-  %5 = fcmp ogt float %0, %4
+  %4 = fmul float %3, %1
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000014(double %0, double %1, double %2) #0 {
 entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
   %4 = fmul double %3, %1
-  %5 = fcmp ogt double %0, %4
+  %5 = fcmp olt double %4, %0
   ret i1 %5
 }
 
@@ -39,8 +39,8 @@ declare double @llvm.fabs.f64(double) #1
 define i1 @func0000000000000015(double %0, double %1, double %2) #0 {
 entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
-  %4 = fmul double %1, %3
-  %5 = fcmp ugt double %0, %4
+  %4 = fmul double %3, %1
+  %5 = fcmp ult double %4, %0
   ret i1 %5
 }
 
@@ -51,7 +51,7 @@ define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.fabs.f32(float %2)
   %4 = fmul float %3, %1
-  %5 = fcmp ugt float %0, %4
+  %5 = fcmp ult float %4, %0
   ret i1 %5
 }
 

@@ -98,10 +98,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0) #0 {
 entry:
-  %1 = shl nuw nsw i32 %0, 24
-  %2 = add nuw nsw i32 %1, 134217728
-  %3 = lshr exact i32 %2, 24
-  ret i32 %3
+  %1 = add i32 %0, 8
+  %2 = and i32 %1, 255
+  ret i32 %2
 }
 
 ; 11 occurrences:
@@ -119,10 +118,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 4
-  %2 = add nsw i64 %1, -32
-  %3 = lshr exact i64 %2, 4
-  ret i64 %3
+  %1 = add i64 %0, 1152921504606846974
+  %2 = and i64 %1, 1152921504606846975
+  ret i64 %2
 }
 
 ; 16 occurrences:
@@ -145,10 +143,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 32
-  %2 = add i64 %1, 85899345920
-  %3 = lshr exact i64 %2, 32
-  ret i64 %3
+  %1 = add i64 %0, 20
+  %2 = and i64 %1, 4294967295
+  ret i64 %2
 }
 
 ; 12 occurrences:
@@ -167,10 +164,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0) #0 {
 entry:
-  %1 = shl nsw i64 %0, 1
-  %2 = add nsw i64 %1, -2
-  %3 = lshr exact i64 %2, 1
-  ret i64 %3
+  %1 = add i64 %0, 9223372036854775807
+  %2 = and i64 %1, 9223372036854775807
+  ret i64 %2
 }
 
 ; 39 occurrences:
@@ -228,10 +224,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0) #0 {
 entry:
-  %1 = shl nuw i32 %0, 13
-  %2 = add i32 %1, 8192
-  %3 = lshr exact i32 %2, 13
-  ret i32 %3
+  %1 = add i32 %0, 1
+  %2 = and i32 %1, 524287
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -266,10 +261,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func000000000000001a(i16 %0) #0 {
 entry:
-  %1 = shl nuw nsw i16 %0, 3
-  %2 = add nsw i16 %1, -5
-  %3 = lshr i16 %2, 3
-  ret i16 %3
+  %1 = add i16 %0, 8191
+  %2 = and i16 %1, 8191
+  ret i16 %2
 }
 
 ; 2 occurrences:
@@ -300,10 +294,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 %0, 2
-  %2 = add nuw i64 %1, 17179869176
-  %3 = lshr exact i64 %2, 2
-  ret i64 %3
+  %1 = add i64 %0, 4294967294
+  %2 = and i64 %1, 4611686018427387903
+  ret i64 %2
 }
 
 ; 1 occurrences:
@@ -311,10 +304,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0) #0 {
 entry:
-  %1 = shl nuw i64 %0, 2
-  %2 = add nuw i64 %1, 17179869180
-  %3 = lshr exact i64 %2, 2
-  ret i64 %3
+  %1 = add i64 %0, 4294967295
+  %2 = and i64 %1, 4611686018427387903
+  ret i64 %2
 }
 
 ; 1 occurrences:

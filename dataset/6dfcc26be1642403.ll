@@ -24,7 +24,7 @@
 define float @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = sitofp i32 %3 to float
   %5 = fmul float %4, 3.906250e-03
   ret float %5

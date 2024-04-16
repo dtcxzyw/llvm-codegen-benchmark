@@ -11,10 +11,9 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 4
-  %4 = lshr i64 %3, 1
-  %5 = and i64 %4, 2147483647
-  ret i64 %5
+  %3 = lshr i64 %2, 5
+  %4 = and i64 %3, 2147483647
+  ret i64 %4
 }
 
 ; 1 occurrences:

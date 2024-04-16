@@ -3,7 +3,9 @@ func0000000000000051:                   # @func0000000000000051
 	addi	a2, a2, -10
 	seqz	a2, a2
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	neg	a1, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a

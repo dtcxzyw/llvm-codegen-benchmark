@@ -17,8 +17,9 @@ func000000000000007e:                   # @func000000000000007e
 	add	a2, a2, a3
 	srli	a3, a4, 63
 	sh1add	a2, a2, a3
-	sh1add	a3, a4, a0
-	sltu	a0, a3, a0
+	slli	a3, a4, 1
+	sh1add	a0, a4, a0
+	sltu	a0, a0, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	li	a1, 0

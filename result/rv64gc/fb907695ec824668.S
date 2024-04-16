@@ -6,9 +6,9 @@ func0000000000000182:                   # @func0000000000000182
 	or	a0, a0, a1
 	ret
 func0000000000000198:                   # @func0000000000000198
-	sext.w	a0, a0
 	andi	a1, a1, 456
 	or	a0, a0, a1
+	sext.w	a0, a0
 	snez	a0, a0
 	ret
 func0000000000000102:                   # @func0000000000000102

@@ -15,7 +15,7 @@ define i1 @func0000000000000006(i1 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = icmp slt i64 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   ret i1 %4
 }
 

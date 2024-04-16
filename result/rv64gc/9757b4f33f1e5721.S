@@ -1,9 +1,10 @@
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	subw	a2, a2, a1
-	addi	a2, a2, -4
-	snez	a1, a2
+	sext.w	a1, a1
+	addiw	a2, a2, -4
+	xor	a1, a1, a2
+	snez	a1, a1
 	addi	a0, a0, -29
 	seqz	a0, a0
 	and	a0, a0, a1

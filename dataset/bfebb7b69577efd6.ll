@@ -49,7 +49,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds %"struct.irr::video::S3DVertex2TCoords.1653152", ptr %0, i64 %5
   ret ptr %6
@@ -66,7 +66,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
@@ -91,7 +91,7 @@ entry:
 define ptr @func000000000000001d(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw i64 %1, %3
+  %4 = add nuw i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6

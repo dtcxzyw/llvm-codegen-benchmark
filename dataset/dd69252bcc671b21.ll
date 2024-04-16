@@ -7,11 +7,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 6, i32 %2
-  %4 = and i32 %3, 15
+  %3 = and i32 %2, 15
+  %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 10)
   %5 = icmp ult i64 %0, 4
-  %6 = select i1 %5, i32 0, i32 %4
-  %7 = tail call i32 @llvm.umin.i32(i32 %6, i32 10)
+  %6 = select i1 %1, i32 6, i32 %4
+  %7 = select i1 %5, i32 0, i32 %6
   ret i32 %7
 }
 

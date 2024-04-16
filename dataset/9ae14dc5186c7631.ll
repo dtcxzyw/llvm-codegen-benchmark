@@ -22,7 +22,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = fptosi float %1 to i32
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = fptosi float %1 to i32
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

@@ -21,7 +21,7 @@ declare i16 @llvm.bswap.i16(i16) #1
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -4
+  %1 = add i32 %0, 524284
   %2 = lshr i32 %1, 3
   %3 = trunc i32 %2 to i16
   %4 = call i16 @llvm.bswap.i16(i16 %3)

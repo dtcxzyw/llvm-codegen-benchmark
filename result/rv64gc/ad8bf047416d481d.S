@@ -8,20 +8,20 @@ func0000000000000032:                   # @func0000000000000032
 	add	a0, a0, a1
 	ret
 func0000000000000052:                   # @func0000000000000052
-	bgez	a2, .LBB1_2
-	mv	a0, a1
+	bltz	a2, .LBB1_2
+	mv	a1, a0
 .LBB1_2:                                # %entry
-	srli	a0, a0, 63
+	srli	a0, a1, 63
 	li	a1, -1
 	srli	a1, a1, 1
 	add	a0, a0, a1
 	ret
 func0000000000000063:                   # @func0000000000000063
 	sext.w	a2, a2
-	bnez	a2, .LBB2_2
-	mv	a0, a1
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	srli	a0, a0, 32
+	srli	a0, a1, 32
 	addi	a0, a0, 1
 	ret
 func0000000000000043:                   # @func0000000000000043

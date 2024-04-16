@@ -9,10 +9,8 @@ define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr exact i64 %3, 2
-  %5 = xor i64 %4, 7
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp eq i64 %3, 28
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

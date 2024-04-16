@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000194(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = call i32 @llvm.umin.i32(i32 %3, i32 11)
+  %3 = call i32 @llvm.umin.i32(i32 %2, i32 10)
+  %4 = add nuw nsw i32 %3, 1
   %5 = sub nsw i32 %4, %1
   %6 = icmp ult i32 %5, %0
   ret i1 %6

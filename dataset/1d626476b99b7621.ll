@@ -11,7 +11,7 @@ entry:
   %4 = and i32 %1, 65280
   %5 = mul nuw i32 %4, %3
   %6 = and i32 %5, -16777216
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -20,12 +20,10 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func000000000000000b(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 18446744073709551615
-  %4 = and i128 %1, 18446744073709551615
-  %5 = mul nuw i128 %4, %3
-  %6 = and i128 %5, 18446744073709551615
-  %7 = add nuw nsw i128 %6, %0
-  ret i128 %7
+  %3 = mul i128 %2, %1
+  %4 = and i128 %3, 18446744073709551615
+  %5 = add nuw nsw i128 %4, %0
+  ret i128 %5
 }
 
 attributes #0 = { nounwind }

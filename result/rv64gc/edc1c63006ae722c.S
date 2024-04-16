@@ -28,9 +28,9 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	addi	a2, a2, -3
 	seqz	a2, a2
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	sext.w	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
@@ -86,11 +86,15 @@ func000000000000002b:                   # @func000000000000002b
 func0000000000000029:                   # @func0000000000000029
 	bltz	a2, .LBB9_2
 	li	a1, 12
-.LBB9_2:                                # %entry
+	li	a2, 48
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
+.LBB9_2:
 	slli	a1, a1, 32
-	li	a2, 3
-	slli	a2, a2, 36
-	mulhu	a1, a1, a2
+	srli	a1, a1, 32
+	li	a2, 48
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
@@ -106,7 +110,9 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a2, a2, 255
 	bnez	a2, .LBB11_2
 	li	a1, 2
-.LBB11_2:                               # %entry
+	add	a0, a0, a1
+	ret
+.LBB11_2:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret

@@ -50,10 +50,9 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	addiw	a2, a2, 1
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	or	a1, a1, a2
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	andi	a3, a1, 1

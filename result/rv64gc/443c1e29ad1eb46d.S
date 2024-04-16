@@ -15,10 +15,8 @@ func00000000000001d8:                   # @func00000000000001d8
 	ret
 func00000000000000da:                   # @func00000000000000da
 	sext.w	a0, a0
-	not	a1, a1
-	add	a0, a0, a1
-	slti	a0, a0, 2
-	xori	a0, a0, 1
+	sub	a1, a1, a0
+	slti	a0, a1, -2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 48
@@ -30,16 +28,12 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	not	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 6
-	xori	a0, a0, 1
+	subw	a1, a1, a0
+	slti	a0, a1, -6
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 32
 	srli	a0, a0, 32
-	not	a1, a1
-	add	a0, a0, a1
-	sltiu	a0, a0, 4
-	xori	a0, a0, 1
+	sub	a1, a1, a0
+	sltiu	a0, a1, -4
 	ret

@@ -8,7 +8,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, -65536
   %6 = or i32 %5, %1
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

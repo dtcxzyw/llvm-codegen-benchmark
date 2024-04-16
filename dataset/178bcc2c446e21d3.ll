@@ -21,8 +21,8 @@ entry:
 define i8 @func00000000000001a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 75
-  %3 = add nsw i32 %0, -150
-  %4 = add nsw i32 %3, %2
+  %3 = add i32 %0, 16777066
+  %4 = add i32 %3, %2
   %5 = lshr i32 %4, 16
   %6 = trunc i32 %5 to i8
   ret i8 %6

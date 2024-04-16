@@ -64,10 +64,10 @@ func00000000000001cc:                   # @func00000000000001cc
 	and	a0, a0, a2
 	ret
 func0000000000000048:                   # @func0000000000000048
-	addi	a2, a2, 254
-	sltiu	a2, a2, 510
+	addi	a2, a2, -256
+	sltiu	a2, a2, -510
 	sltu	a0, a0, a1
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
@@ -238,7 +238,7 @@ func0000000000000084:                   # @func0000000000000084
 	and	a0, a0, a2
 	ret
 func0000000000000111:                   # @func0000000000000111
-	addi	a2, a2, -1
+	xori	a2, a2, 1
 	xor	a0, a0, a1
 	or	a0, a0, a2
 	seqz	a0, a0

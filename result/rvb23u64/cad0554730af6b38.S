@@ -7,6 +7,6 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fclass.d	a0, fa0
-	andi	a0, a0, 129
-	seqz	a0, a0
+	andi	a0, a0, 894
+	snez	a0, a0
 	ret

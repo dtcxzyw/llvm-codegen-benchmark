@@ -9,7 +9,7 @@ entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 26)
   %4 = icmp ult i32 %1, 36
   %5 = select i1 %4, i32 %3, i32 1
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

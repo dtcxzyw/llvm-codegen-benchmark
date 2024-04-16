@@ -25,7 +25,7 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = and i1 %4, %1
-  %6 = xor i1 %0, %5
+  %6 = xor i1 %5, %0
   ret i1 %6
 }
 

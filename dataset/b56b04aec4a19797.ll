@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 1
-  %2 = shl nuw nsw i8 %1, 1
+  %1 = shl i8 %0, 1
+  %2 = and i8 %1, 2
   %3 = xor i8 %2, 2
   %4 = zext nneg i8 %3 to i16
   ret i16 %4

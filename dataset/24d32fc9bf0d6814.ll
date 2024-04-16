@@ -8,7 +8,7 @@ define i64 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
   %2 = urem i16 %1, 3
   %3 = zext nneg i16 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
 

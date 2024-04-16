@@ -9,9 +9,8 @@
 define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp sgt i64 %3, -1
-  ret i1 %4
+  %3 = icmp sge i64 %2, %0
+  ret i1 %3
 }
 
 ; 5 occurrences:
@@ -24,9 +23,8 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
+  %3 = icmp slt i64 %2, %0
+  ret i1 %3
 }
 
 ; 26 occurrences:
@@ -156,9 +154,8 @@ entry:
 define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 23 occurrences:

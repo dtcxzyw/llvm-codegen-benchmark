@@ -13,12 +13,13 @@ func0000000000000070:                   # @func0000000000000070
 	add	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055
-	slli	a0, a0, 3
+	negw	a1, a1
 	slli	a1, a1, 35
-	or	a0, a0, a1
+	slli	a0, a0, 3
+	sub	a0, a1, a0
 	li	a1, 1
 	slli	a1, a1, 31
-	sub	a0, a1, a0
+	add	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	2549297995355413924             # 0x2360ed051fc65da4

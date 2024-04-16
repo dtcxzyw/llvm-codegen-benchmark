@@ -8,7 +8,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = lshr i64 %3, 1
   %5 = select i1 %1, i64 %2, i64 %4
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = lshr i64 %3, 1
   %5 = select i1 %1, i64 %2, i64 %4
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -42,7 +42,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = lshr i64 %3, 1
   %5 = select i1 %1, i64 %2, i64 %4
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

@@ -7,7 +7,7 @@ entry:
   %3 = lshr i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 %4, %1
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

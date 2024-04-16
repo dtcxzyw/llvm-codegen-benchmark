@@ -10,7 +10,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = and i32 %4, 16128
   %6 = or disjoint i32 %5, %1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = shl nuw i16 %3, 8
   %5 = and i16 %4, 256
   %6 = or disjoint i16 %5, %1
-  %7 = icmp ne i16 %0, %6
+  %7 = icmp ne i16 %6, %0
   ret i1 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 4
   %5 = and i32 %4, 983040
   %6 = or disjoint i32 %5, %1
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = and i32 %4, 3840
   %6 = or disjoint i32 %5, %1
-  %7 = icmp uge i32 %0, %6
+  %7 = icmp ule i32 %6, %0
   ret i1 %7
 }
 

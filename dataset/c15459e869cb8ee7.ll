@@ -8,9 +8,8 @@
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr inbounds [2 x %struct.Vec_Int_t_.1771984], ptr %0, i64 0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
-  ret ptr %4
+  %3 = getelementptr [2 x %struct.Vec_Int_t_.1771984], ptr %0, i64 0, i64 %2, i32 1
+  ret ptr %3
 }
 
 ; 6 occurrences:
@@ -24,9 +23,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr inbounds [2 x %struct.Vec_Int_t_.1771984], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds [2 x %struct.Vec_Int_t_.1771984], ptr %0, i64 0, i64 %2, i32 2
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -35,9 +33,8 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 3
-  %3 = getelementptr [4 x %struct.sixaxis_led.2011839], ptr %0, i64 0, i64 %2
-  %4 = getelementptr inbounds i8, ptr %3, i64 3
-  ret ptr %4
+  %3 = getelementptr [4 x %struct.sixaxis_led.2011839], ptr %0, i64 0, i64 %2, i32 3
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

@@ -5,11 +5,11 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000013(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp uge i32 %1, %2
-  %4 = select i1 %3, i8 56, i8 48
-  %5 = or disjoint i8 %4, 4
-  %6 = select i1 %0, i8 %5, i8 %4
-  ret i8 %6
+  %.not = icmp ult i32 %1, %2
+  %3 = select i1 %.not, i8 48, i8 56
+  %4 = or disjoint i8 %3, 4
+  %5 = select i1 %0, i8 %4, i8 %3
+  ret i8 %5
 }
 
 ; 1 occurrences:

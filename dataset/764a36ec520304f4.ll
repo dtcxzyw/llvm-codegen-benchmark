@@ -18,8 +18,8 @@ define i64 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = udiv i32 %1, 100
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
+  %3 = shl nuw nsw i32 %2, 4
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

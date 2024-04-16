@@ -106,7 +106,7 @@ define double @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = add nsw i32 %2, -16446
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }

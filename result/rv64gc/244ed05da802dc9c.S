@@ -7,8 +7,7 @@ func0000000000000020:                   # @func0000000000000020
 	srliw	a1, a0, 16
 	li	a2, 16
 	bgeu	a2, a1, .LBB1_2
-	lui	a0, 16
-	addiw	a0, a0, -3
+	li	a0, -3
 .LBB1_2:                                # %entry
 	ret
 func0000000000000028:                   # @func0000000000000028

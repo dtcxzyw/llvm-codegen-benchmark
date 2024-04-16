@@ -12,11 +12,11 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000056:                   # @func0000000000000056
 	ori	a1, a1, 1
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	slti	a0, a0, 0
 	ret
 func000000000000005a:                   # @func000000000000005a
 	ori	a1, a1, 1
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret

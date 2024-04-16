@@ -26,11 +26,10 @@ entry:
 define i1 @func0000000000000051(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 2
-  %4 = select i1 %3, i32 -32, i32 -64
-  %5 = add nsw i32 %0, %1
-  %6 = and i32 %5, %4
-  %7 = icmp eq i32 %6, 0
-  ret i1 %7
+  %4 = add nsw i32 %0, %1
+  %5 = select i1 %3, i32 31, i32 63
+  %6 = icmp ule i32 %4, %5
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

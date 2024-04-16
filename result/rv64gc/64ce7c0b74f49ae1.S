@@ -11,18 +11,18 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 5
 	ret
 func000000000000003f:                   # @func000000000000003f
-	add	a5, a5, a2
-	sltu	a2, a5, a2
-	add	a4, a5, a0
-	sltu	a0, a4, a5
+	add	a2, a2, a5
+	sltu	a4, a2, a5
+	add	a5, a2, a0
+	sltu	a0, a5, a2
 	add	a1, a1, a3
-	add	a1, a1, a2
+	add	a1, a1, a4
 	add	a1, a1, a0
 	li	a2, -1
 	slli	a0, a2, 36
 	addi	a0, a0, 16
-	add	a0, a0, a4
-	sltu	a3, a0, a4
+	add	a0, a0, a5
+	sltu	a3, a0, a5
 	srli	a2, a2, 28
 	add	a1, a1, a2
 	add	a1, a1, a3

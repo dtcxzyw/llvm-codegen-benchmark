@@ -38,9 +38,9 @@ define i1 @func00000000000000f4(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 12
-  %4 = and i32 %0, 4032
+  %4 = and i32 %0, 2048
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 2048
+  %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
 

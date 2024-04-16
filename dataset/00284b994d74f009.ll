@@ -13,10 +13,9 @@
 define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr inbounds %"class.std::__cxx11::basic_string.1647494", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %4 = getelementptr inbounds %"class.std::__cxx11::basic_string.1647494", ptr %1, i64 %3, i32 2
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -27,7 +26,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr inbounds i8, ptr %1, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 -1
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -43,7 +42,7 @@ entry:
   %3 = ashr exact i64 %2, 29
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -55,7 +54,7 @@ entry:
   %3 = ashr exact i64 %2, 1
   %4 = getelementptr i64, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

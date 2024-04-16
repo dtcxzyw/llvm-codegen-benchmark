@@ -56,8 +56,8 @@
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
-  %3 = or disjoint i32 %2, 2
-  %4 = or disjoint i32 %0, %3
+  %3 = or i32 %2, %0
+  %4 = or i32 %3, 2
   ret i32 %4
 }
 
@@ -67,8 +67,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = or disjoint i32 %2, -520093698
-  %4 = or i32 %3, %0
+  %3 = or i32 %2, %0
+  %4 = or i32 %3, -520093698
   ret i32 %4
 }
 

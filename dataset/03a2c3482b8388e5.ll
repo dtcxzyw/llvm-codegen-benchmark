@@ -10,7 +10,7 @@ entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
   %4 = fcmp ogt double %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = tail call double @llvm.fabs.f64(double %2)
   %4 = fcmp ogt double %3, %1
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

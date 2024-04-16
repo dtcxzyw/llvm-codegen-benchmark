@@ -4,11 +4,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, -128
-  %3 = and i8 %0, 32
-  %4 = or disjoint i8 %3, %2
-  %5 = icmp slt i8 %4, 0
-  ret i1 %5
+  %2 = icmp slt i8 %1, 0
+  ret i1 %2
 }
 
 ; 200 occurrences:
@@ -335,11 +332,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 1984
-  %3 = and i32 %0, 63
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp ult i32 %4, 128
-  ret i1 %5
+  %2 = and i32 %1, 1920
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 11 occurrences:
@@ -397,11 +392,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, -2147483648
-  %3 = and i32 %0, 2147483647
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %2 = icmp sgt i32 %1, -1
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

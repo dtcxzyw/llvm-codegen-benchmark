@@ -11,7 +11,7 @@
 define i8 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = and i1 %4, %0
   %6 = select i1 %5, i8 7, i8 0
   ret i8 %6
@@ -24,8 +24,8 @@ entry:
 define i64 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = and i1 %1, %3
-  %5 = and i1 %0, %4
+  %4 = and i1 %3, %1
+  %5 = and i1 %4, %0
   %6 = select i1 %5, i64 2, i64 1
   ret i64 %6
 }
@@ -53,7 +53,7 @@ entry:
 define i32 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 17
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = and i1 %4, %0
   %6 = select i1 %5, i32 1, i32 2
   ret i32 %6
@@ -81,7 +81,7 @@ define i64 @func0000000000000006(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = and i1 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = select i1 %5, i64 8, i64 0
   ret i64 %6
 }

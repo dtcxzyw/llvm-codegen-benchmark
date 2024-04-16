@@ -5,11 +5,11 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 4
 	ret
 func000000000000002c:                   # @func000000000000002c
-	addi	a1, a1, 7
 	li	a2, 544
 	mulw	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, 2047
+	addi	a0, a0, 1769
 	ret
 func0000000000000053:                   # @func0000000000000053
 	sh1add	a1, a1, a1

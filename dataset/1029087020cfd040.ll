@@ -31,8 +31,8 @@
 define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 8388608
-  %3 = lshr i32 %2, %0
-  %4 = and i32 %3, 1
+  %3 = shl nuw i32 1, %0
+  %4 = and i32 %2, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

@@ -169,7 +169,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   ret i32 %4
 }
 
@@ -181,7 +181,7 @@ define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = xor i8 %2, -1
-  %4 = and i8 %0, %3
+  %4 = and i8 %3, %0
   ret i8 %4
 }
 

@@ -25,6 +25,7 @@ func0000000000000444:                   # @func0000000000000444
 func0000000000000114:                   # @func0000000000000114
 	add	a0, a0, a1
 	sh3add	a0, a2, a0
+	andi	a0, a0, -2
 	addi	a0, a0, -2
-	sltiu	a0, a0, 2
+	seqz	a0, a0
 	ret

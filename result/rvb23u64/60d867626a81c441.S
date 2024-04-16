@@ -23,12 +23,11 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1
 	lui	a2, 1048568
-	addi	a2, a2, 128
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, -129
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	sext.w	a0, a0
-	sltiu	a0, a0, 256
+	seqz	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 16

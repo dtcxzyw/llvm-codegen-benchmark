@@ -6,7 +6,7 @@
 define i24 @func00000000000001fe(i24 %0, i24 %1, i24 %2) #0 {
 entry:
   %3 = mul nuw nsw i24 %2, 2126
-  %4 = add nuw nsw i24 %0, %3
+  %4 = add nuw nsw i24 %3, %0
   %5 = mul nuw nsw i24 %1, 7152
   %6 = add nuw nsw i24 %4, %5
   %7 = udiv i24 %6, 10000

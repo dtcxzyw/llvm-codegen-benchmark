@@ -7,7 +7,7 @@ entry:
   %3 = icmp ult i16 %1, 2048
   %4 = select i1 %3, i16 %1, i16 %2
   %5 = zext i16 %4 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = icmp ult i8 %1, 10
   %4 = select i1 %3, i8 %1, i8 %2
   %5 = zext i8 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = icmp slt i32 %1, 16777215
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

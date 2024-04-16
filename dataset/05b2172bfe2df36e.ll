@@ -10,7 +10,7 @@ define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fsub float 0.000000e+00, %1
   %3 = fneg float %2
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 

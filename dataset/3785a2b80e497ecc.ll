@@ -9,8 +9,8 @@ entry:
   %3 = fsub double %1, %2
   %4 = fmul double %3, 1.000000e+09
   %5 = fptosi double %4 to i64
-  %6 = sub nsw i64 %5, %0
-  %7 = ashr i64 %6, 63
+  %6 = icmp slt i64 %5, %0
+  %7 = sext i1 %6 to i64
   ret i64 %7
 }
 

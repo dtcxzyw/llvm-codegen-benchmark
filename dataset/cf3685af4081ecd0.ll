@@ -188,9 +188,8 @@ entry:
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %2 = icmp eq i32 %1, -1
+  ret i1 %2
 }
 
 ; 10 occurrences:
@@ -208,8 +207,8 @@ entry:
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add i32 %1, 1
-  %3 = icmp ugt i32 %2, 10
+  %2 = add i32 %1, -10
+  %3 = icmp ult i32 %2, -11
   ret i1 %3
 }
 
@@ -277,9 +276,8 @@ entry:
 define i1 @func0000000000000031(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp eq i32 %2, 3
-  ret i1 %3
+  %2 = icmp eq i32 %1, 2
+  ret i1 %2
 }
 
 ; 8 occurrences:
@@ -295,9 +293,8 @@ entry:
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add nsw i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %2 = icmp eq i32 %1, -1
+  ret i1 %2
 }
 
 ; 1 occurrences:

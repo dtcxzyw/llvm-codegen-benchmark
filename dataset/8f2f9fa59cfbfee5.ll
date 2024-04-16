@@ -26,7 +26,7 @@ entry:
   %4 = add nsw i32 %3, -48
   %5 = icmp ult i16 %1, 10
   %6 = select i1 %5, i32 %4, i32 -1
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

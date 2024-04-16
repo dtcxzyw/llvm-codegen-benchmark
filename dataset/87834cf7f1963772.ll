@@ -64,9 +64,9 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 1, %0
   %4 = and i32 %3, %2
-  %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i32 -1, i32 1
-  ret i32 %6
+  %.not = icmp eq i32 %4, 0
+  %5 = select i1 %.not, i32 1, i32 -1
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -77,9 +77,9 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 1, %0
   %4 = and i64 %3, %2
-  %5 = icmp ne i64 %4, 0
-  %6 = select i1 %5, i64 128, i64 136
-  ret i64 %6
+  %.not = icmp eq i64 %4, 0
+  %5 = select i1 %.not, i64 136, i64 128
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

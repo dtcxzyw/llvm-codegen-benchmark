@@ -14,7 +14,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr [512 x %struct.PhysPageEntry.1666217], ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 2048
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -70,7 +70,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr %"struct.V3NumberData::ValueAndX.1686302", ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -8
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -88,7 +88,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 -8
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

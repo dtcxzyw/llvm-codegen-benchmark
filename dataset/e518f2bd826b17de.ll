@@ -8,7 +8,7 @@ entry:
   %3 = sub nsw i32 31, %2
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = lshr i64 %6, %4
   ret i64 %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = sub i32 127, %2
   %4 = zext nneg i32 %3 to i128
   %5 = zext i64 %1 to i128
-  %6 = or disjoint i128 %0, %5
+  %6 = or disjoint i128 %5, %0
   %7 = lshr i128 %6, %4
   ret i128 %7
 }
@@ -36,7 +36,7 @@ entry:
   %3 = sub nuw nsw i32 -16382, %2
   %4 = zext nneg i32 %3 to i128
   %5 = zext i64 %1 to i128
-  %6 = or disjoint i128 %0, %5
+  %6 = or disjoint i128 %5, %0
   %7 = lshr i128 %6, %4
   ret i128 %7
 }

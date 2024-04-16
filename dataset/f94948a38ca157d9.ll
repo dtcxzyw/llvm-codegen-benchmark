@@ -10,7 +10,7 @@ entry:
   %3 = ashr exact i16 %2, 8
   %4 = zext i16 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = ashr exact i32 %2, 16
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 24
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

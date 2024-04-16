@@ -8,7 +8,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   %6 = or disjoint i64 %5, %1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -21,7 +21,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, 27
   %6 = or i32 %5, %1
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 

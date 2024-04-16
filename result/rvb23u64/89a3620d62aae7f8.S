@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
 	srli	a1, a1, 6
-	li	a2, -96
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a1, a1
+	slli	a1, a1, 5
+	sub	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	lui	a1, 838861
@@ -27,9 +27,9 @@ func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
 	srli	a1, a1, 3
-	li	a2, -10
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 1
+	sub	a0, a0, a1
 	ret
 .LCPI3_0:
 	.quad	4835703278458517                # 0x112e0be826d695

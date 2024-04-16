@@ -10,11 +10,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = shl nuw nsw i32 %2, 5
-  %4 = or disjoint i32 %3, %0
-  %5 = and i32 %4, 63
-  ret i32 %5
+  %2 = shl i32 %1, 5
+  %3 = or i32 %2, %0
+  %4 = and i32 %3, 63
+  ret i32 %4
 }
 
 ; 6 occurrences:
@@ -27,11 +26,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 3689348814741910323
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = or i64 %0, %3
-  %5 = and i64 %4, -6148914691236517206
-  ret i64 %5
+  %2 = shl i64 %1, 1
+  %3 = and i64 %2, 2459565876494606882
+  %.masked = and i64 %0, -6148914691236517206
+  %4 = or i64 %3, %.masked
+  ret i64 %4
 }
 
 ; 6 occurrences:
@@ -44,11 +43,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 3689348814741910323
-  %3 = shl nuw i64 %2, 2
-  %4 = or i64 %3, %0
-  %5 = and i64 %4, -6148914691236517206
-  ret i64 %5
+  %2 = shl i64 %1, 2
+  %3 = and i64 %2, -8608480567731124088
+  %.masked = and i64 %0, -6148914691236517206
+  %4 = or i64 %3, %.masked
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

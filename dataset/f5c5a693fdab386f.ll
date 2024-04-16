@@ -12,7 +12,7 @@
 define ptr @func0000000000000035(ptr %0, float %1, i32 %2) #0 {
 entry:
   %3 = bitcast i32 %2 to float
-  %4 = fcmp uge float %1, %3
+  %4 = fcmp ule float %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr inbounds %"class.openvdb::v11_0::tree::NodeUnion.751.1673857", ptr %0, i64 %5
   ret ptr %6
@@ -26,7 +26,7 @@ entry:
 define ptr @func000000000000002d(ptr %0, double %1, i64 %2) #0 {
 entry:
   %3 = bitcast i64 %2 to double
-  %4 = fcmp ule double %1, %3
+  %4 = fcmp uge double %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr inbounds %"class.openvdb::v11_0::tree::NodeUnion.837.1673891", ptr %0, i64 %5
   ret ptr %6

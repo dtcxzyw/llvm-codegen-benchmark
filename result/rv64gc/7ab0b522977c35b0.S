@@ -18,9 +18,8 @@ func00000000000003cc:                   # @func00000000000003cc
 	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	addi	a1, a1, 7
-	andi	a1, a1, -8
-	snez	a1, a1
+	addi	a1, a1, -1
+	sltiu	a1, a1, -8
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -33,9 +33,8 @@ entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp sgt i64 %5, 16
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 128
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

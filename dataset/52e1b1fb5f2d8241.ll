@@ -10,9 +10,8 @@ define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
   %3 = getelementptr inbounds i8, ptr %0, i64 80
-  %4 = getelementptr inbounds [3 x %"struct.drjit::divisor.1555281"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds [3 x %"struct.drjit::divisor.1555281"], ptr %3, i64 0, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:

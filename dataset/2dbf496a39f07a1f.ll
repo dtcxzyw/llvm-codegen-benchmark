@@ -213,10 +213,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = select i1 %2, i32 48, i32 16
-  %4 = select i1 %0, i32 %3, i32 0
-  ret i32 %4
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 16, i32 48
+  %3 = select i1 %0, i32 %2, i32 0
+  ret i32 %3
 }
 
 ; 7 occurrences:

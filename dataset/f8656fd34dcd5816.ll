@@ -16,7 +16,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = zext i32 %1 to i64
   %5 = shl nuw nsw i64 %4, %3
-  %6 = or i64 %0, %5
+  %6 = or i64 %5, %0
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
@@ -29,7 +29,7 @@ entry:
   %3 = and i32 %2, 24
   %4 = zext i8 %1 to i32
   %5 = shl nuw i32 %4, %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

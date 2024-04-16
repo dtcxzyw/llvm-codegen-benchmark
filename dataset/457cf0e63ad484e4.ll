@@ -5,11 +5,10 @@
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 1073741824
-  %4 = select i1 %3, i32 0, i32 -1073741824
-  %5 = or i32 %0, %1
-  %6 = or i32 %5, %4
-  %7 = and i32 %6, 1073741824
-  ret i32 %7
+  %4 = or i32 %0, %1
+  %.masked = and i32 %4, 1073741824
+  %5 = select i1 %3, i32 %.masked, i32 1073741824
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -20,9 +19,9 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 60
   %5 = or i32 %0, %1
-  %6 = or i32 %5, %4
-  %7 = and i32 %6, -33554433
-  ret i32 %7
+  %.masked = and i32 %5, -33554433
+  %6 = or i32 %.masked, %4
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -33,9 +32,9 @@ entry:
   %3 = icmp ult i32 %2, 1501
   %4 = select i1 %3, i32 0, i32 32
   %5 = or disjoint i32 %0, %1
-  %6 = or disjoint i32 %5, %4
-  %7 = and i32 %6, -33783809
-  ret i32 %7
+  %.masked = and i32 %5, -33783809
+  %6 = or i32 %.masked, %4
+  ret i32 %6
 }
 
 ; 2 occurrences:
@@ -47,9 +46,9 @@ entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %3, i8 8, i8 0
   %5 = or disjoint i8 %0, %1
-  %6 = or disjoint i8 %4, %5
-  %7 = and i8 %6, -2
-  ret i8 %7
+  %.masked = and i8 %5, -2
+  %6 = or i8 %4, %.masked
+  ret i8 %6
 }
 
 attributes #0 = { nounwind }

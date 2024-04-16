@@ -11,8 +11,8 @@
 define i64 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
-  %4 = icmp ult i64 %0, %3
+  %3 = trunc nuw i128 %2 to i64
+  %4 = icmp ugt i64 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -24,7 +24,7 @@ define i8 @func000000000000008e(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = icmp sle i32 %0, %3
+  %4 = icmp sge i32 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -35,8 +35,8 @@ entry:
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ule i32 %0, %3
+  %3 = trunc nuw i64 %2 to i32
+  %4 = icmp uge i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -49,8 +49,8 @@ entry:
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %0, %3
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ne i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -62,7 +62,7 @@ define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %0, %3
+  %4 = icmp sle i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -74,7 +74,7 @@ define i8 @func0000000000000082(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
@@ -86,7 +86,7 @@ define i32 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -98,7 +98,7 @@ define i32 @func0000000000000098(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %0, %3
+  %4 = icmp ne i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

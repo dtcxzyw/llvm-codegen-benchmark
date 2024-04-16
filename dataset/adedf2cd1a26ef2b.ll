@@ -171,12 +171,11 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 524288
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 0, i32 %0
-  %6 = tail call i32 @llvm.smax.i32(i32 %5, i32 0)
-  ret i32 %6
+  %2 = and i64 %1, 524288
+  %3 = icmp eq i64 %2, 0
+  %4 = tail call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %5 = select i1 %3, i32 0, i32 %4
+  ret i32 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -195,12 +194,11 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = and i32 %2, 524288
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 0, i32 %0
-  %6 = call i32 @llvm.smax.i32(i32 %5, i32 0)
-  ret i32 %6
+  %2 = and i64 %1, 524288
+  %3 = icmp eq i64 %2, 0
+  %4 = call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %5 = select i1 %3, i32 0, i32 %4
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

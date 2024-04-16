@@ -14,7 +14,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = icmp ugt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 
@@ -107,7 +107,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %1, %2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 
@@ -119,7 +119,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = icmp sgt i32 %2, %1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = mul i32 %0, %5
+  %6 = mul i32 %5, %0
   ret i32 %6
 }
 

@@ -7,8 +7,9 @@ func000000000000002c:                   # @func000000000000002c
 	or	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
-	sext.w	a1, a0
-	sltiu	a1, a1, 64
+	srliw	a1, a0, 6
+	slli	a1, a1, 6
+	seqz	a1, a1
 	andi	a0, a0, 7
 	addi	a0, a0, -1
 	snez	a0, a0
@@ -26,8 +27,7 @@ func0000000000000038:                   # @func0000000000000038
 func000000000000008c:                   # @func000000000000008c
 	zext.w	a1, a0
 	sltiu	a1, a1, 25
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022

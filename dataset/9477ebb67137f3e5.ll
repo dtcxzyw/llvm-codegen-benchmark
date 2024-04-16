@@ -11,8 +11,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, %1
   %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %5, %4
-  %7 = add i64 %6, -1
+  %6 = xor i64 %4, -1
+  %7 = add i64 %6, %5
   ret i64 %7
 }
 

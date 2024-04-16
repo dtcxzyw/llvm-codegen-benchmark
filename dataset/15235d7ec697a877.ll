@@ -9,7 +9,7 @@ entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = trunc i32 %2 to i16
   %4 = urem i16 %3, 13
-  %5 = trunc i16 %4 to i8
+  %5 = trunc nuw nsw i16 %4 to i8
   ret i8 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i32
   %4 = urem i32 %3, 10000
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 

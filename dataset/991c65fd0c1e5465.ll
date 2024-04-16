@@ -9,7 +9,7 @@ define i1 @func00000000000000cc(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = icmp ne i32 %0, 4
   %4 = and i1 %3, %2
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = icmp ne i32 %0, 25
   %7 = and i1 %6, %5
   ret i1 %7

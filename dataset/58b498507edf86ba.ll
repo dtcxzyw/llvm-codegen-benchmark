@@ -50,7 +50,7 @@ entry:
   %3 = udiv i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = mul nsw i64 %0, %5
+  %6 = mul nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = udiv i64 %1, %2
   %4 = shl nuw i64 %3, 48
   %5 = ashr exact i64 %4, 48
-  %6 = mul nsw i64 %0, %5
+  %6 = mul nsw i64 %5, %0
   ret i64 %6
 }
 

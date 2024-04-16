@@ -41,11 +41,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = icmp ugt i64 %4, 4611686018427387904
-  %6 = or i1 %0, %5
-  ret i1 %6
+  %3 = add i64 %1, %2
+  %4 = icmp ugt i64 %3, 4611686018427387904
+  %5 = or i1 %4, %0
+  ret i1 %5
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -70,11 +69,10 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = icmp ne i64 %4, 0
-  %6 = or i1 %5, %0
-  ret i1 %6
+  %3 = sub i64 0, %2
+  %4 = icmp ne i64 %3, %1
+  %5 = or i1 %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

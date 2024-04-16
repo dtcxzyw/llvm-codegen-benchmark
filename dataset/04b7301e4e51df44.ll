@@ -7,8 +7,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 1
   %5 = select i1 %0, ptr %4, ptr null
   ret ptr %5
 }
@@ -18,8 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1
   %5 = select i1 %0, ptr %4, ptr null
   ret ptr %5
 }

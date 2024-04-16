@@ -19,15 +19,16 @@ func0000000000000004:                   # @func0000000000000004
 	bgeu	a1, a2, .LBB1_3
 	bgeu	a0, a1, .LBB1_4
 .LBB1_2:                                # %entry
-	slli	a0, a0, 48
-	srli	a0, a0, 63
+	lui	a1, 8
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LBB1_3:                                # %entry
 	mv	a1, a2
 	bltu	a0, a2, .LBB1_2
 .LBB1_4:                                # %entry
-	slli	a0, a1, 48
-	srli	a0, a0, 63
+	mv	a0, a1
+	lui	a1, 8
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret

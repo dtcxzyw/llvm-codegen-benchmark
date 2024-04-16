@@ -6,7 +6,7 @@ define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 4
   %2 = select i1 %1, i32 6, i32 4
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -16,10 +16,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 13
-  %2 = select i1 %1, i32 15, i32 14
-  %3 = icmp eq i32 %0, %2
-  ret i1 %3
+  %1 = icmp eq i32 %0, 15
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -28,10 +26,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000066(i32 %0) #0 {
 entry:
-  %1 = icmp slt i32 %0, 0
-  %2 = select i1 %1, i32 0, i32 1025
-  %3 = icmp slt i32 %0, %2
-  ret i1 %3
+  %1 = icmp slt i32 %0, 1025
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -41,7 +37,7 @@ define i1 @func000000000000006b(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
   %2 = select i1 %1, i32 -7, i32 12
-  %3 = icmp sge i32 %0, %2
+  %3 = icmp sle i32 %2, %0
   ret i1 %3
 }
 

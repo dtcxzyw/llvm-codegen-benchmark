@@ -47,9 +47,8 @@ define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.Column.2129359, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 14
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.Column.2129359, ptr %0, i64 %3, i32 6
+  ret ptr %4
 }
 
 ; 1 occurrences:

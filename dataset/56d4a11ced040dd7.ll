@@ -7,7 +7,7 @@ entry:
   %3 = mul nuw i64 %2, 2654435761
   %4 = and i64 %3, 4294967295
   %5 = mul nuw i64 %1, 2246822535
-  %6 = add nuw i64 %0, %5
+  %6 = add nuw i64 %5, %0
   %7 = add nuw i64 %6, %4
   ret i64 %7
 }
@@ -20,7 +20,7 @@ entry:
   %3 = mul nuw i64 %2, 3266489917
   %4 = and i64 %3, 4294967295
   %5 = mul nuw nsw i64 %1, 668265295
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }
@@ -49,7 +49,7 @@ entry:
   %3 = mul i64 %2, 60
   %4 = and i64 %3, 4294967292
   %5 = mul nsw i64 %1, 86400
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }

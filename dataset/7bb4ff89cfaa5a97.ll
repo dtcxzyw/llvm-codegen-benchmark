@@ -11,7 +11,7 @@
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 60
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = tail call i64 @llvm.abs.i64(i64 %3, i1 true)
   %5 = udiv i64 %4, 3600
   ret i64 %5

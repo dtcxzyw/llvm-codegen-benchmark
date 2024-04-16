@@ -5,17 +5,19 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
+	slliw	a2, a2, 4
 	slli	a1, a1, 63
 	srai	a1, a1, 63
-	andi	a1, a1, 224
+	li	a3, 7
+	slli	a3, a3, 9
+	and	a1, a1, a3
 	or	a1, a1, a2
-	slliw	a1, a1, 4
 	andi	a1, a1, -208
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	andi	a1, a1, 1
 	slli	a2, a2, 18
+	andi	a1, a1, 1
 	slli	a1, a1, 19
 	or	a1, a1, a2
 	lui	a2, 1048448

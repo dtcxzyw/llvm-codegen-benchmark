@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = and i32 %4, -8
   %6 = add nuw i32 %0, 8
   %7 = icmp eq i32 %6, %5

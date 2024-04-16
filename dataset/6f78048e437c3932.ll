@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 1.000000e+00
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -52,7 +52,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ugt float %2, 1.000000e+00
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -79,7 +79,7 @@ entry:
 define i1 @func000000000000001a(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %2, -1.000000e-04
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

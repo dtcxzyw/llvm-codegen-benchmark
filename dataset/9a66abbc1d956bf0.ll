@@ -447,8 +447,8 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0) #0 {
 entry:
-  %1 = lshr i16 %0, 15
-  %2 = sub nuw i16 -32768, %1
+  %1 = icmp sgt i16 %0, -1
+  %2 = select i1 %1, i16 -32768, i16 32767
   ret i16 %2
 }
 

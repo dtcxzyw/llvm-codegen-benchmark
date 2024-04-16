@@ -1,13 +1,13 @@
 func000000000000003f:                   # @func000000000000003f
-	andi	a2, a2, 7
-	slli	a2, a2, 10
+	slli	a2, a2, 61
+	srli	a2, a2, 51
 	slliw	a1, a1, 14
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a2, a2, 1
-	slli	a2, a2, 15
+	slli	a2, a2, 63
+	srli	a2, a2, 48
 	slliw	a1, a1, 20
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -20,15 +20,15 @@ func0000000000000030:                   # @func0000000000000030
 	or	a0, a0, a2
 	ret
 func000000000000003d:                   # @func000000000000003d
-	andi	a2, a2, 15
-	slli	a2, a2, 12
+	slli	a2, a2, 60
+	srli	a2, a2, 48
 	slliw	a1, a1, 6
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000003b:                   # @func000000000000003b
-	andi	a2, a2, 255
-	slli	a2, a2, 8
+	slli	a2, a2, 56
+	srli	a2, a2, 48
 	slliw	a1, a1, 24
 	or	a0, a0, a1
 	or	a0, a0, a2

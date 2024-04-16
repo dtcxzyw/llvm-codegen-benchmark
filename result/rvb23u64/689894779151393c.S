@@ -1,8 +1,7 @@
 func0000000000000075:                   # @func0000000000000075
 	andi	a1, a1, 15
-	addi	a1, a1, 1
-	not	a1, a1
-	addw	a0, a0, a1
+	subw	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 func0000000000000070:                   # @func0000000000000070
 	andi	a1, a1, 4

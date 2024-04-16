@@ -13,8 +13,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
-  %2 = udiv i64 %1, 153
-  %3 = mul nuw i64 %2, 153
+  %.fr = freeze i64 %1
+  %2 = urem i64 %.fr, 153
+  %3 = sub nuw i64 %.fr, %2
   %4 = add nuw i64 %3, 2
   %5 = udiv i64 %4, 5
   %6 = sub i64 %0, %5

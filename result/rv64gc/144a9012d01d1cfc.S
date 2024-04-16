@@ -19,14 +19,14 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a5, a5, 33
 	or	a5, a5, a6
 	slli	a4, a4, 33
-	add	a4, a4, a2
-	sltu	a2, a4, a2
+	add	a2, a2, a4
+	sltu	a4, a2, a4
 	add	a3, a3, a5
-	add	a2, a2, a3
-	add	a0, a0, a4
-	sltu	a3, a0, a4
-	add	a1, a1, a2
+	add	a3, a3, a4
+	add	a0, a0, a2
+	sltu	a2, a0, a2
 	add	a1, a1, a3
+	add	a1, a1, a2
 	slli	a1, a1, 2
 	srli	a2, a0, 62
 	or	a1, a1, a2

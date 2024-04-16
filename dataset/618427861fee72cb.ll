@@ -40,7 +40,7 @@ define ptr @func0000000000000063(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.cttz.i16(i16 %2, i1 true), !range !0
   %4 = zext nneg i16 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = sub nsw i64 0, %5
   %7 = getelementptr inbounds { { { { { { i64, ptr }, i64 } } } }, {} }, ptr %0, i64 %6
   ret ptr %7
@@ -58,7 +58,7 @@ define ptr @func0000000000000062(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = tail call i16 @llvm.cttz.i16(i16 %2, i1 true), !range !0
   %4 = zext nneg i16 %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = sub nsw i64 0, %5
   %7 = getelementptr i64, ptr %0, i64 %6
   ret ptr %7

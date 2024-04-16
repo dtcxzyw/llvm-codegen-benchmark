@@ -2,7 +2,7 @@ func00000000000001f8:                   # @func00000000000001f8
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srliw	a0, a0, 29
 	snez	a0, a0
 	ret
@@ -10,7 +10,7 @@ func00000000000001e6:                   # @func00000000000001e6
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	slti	a0, a0, 0
 	ret
 func00000000000001ec:                   # @func00000000000001ec
@@ -41,6 +41,6 @@ func00000000000001c4:                   # @func00000000000001c4
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sltiu	a0, a0, -8
 	ret

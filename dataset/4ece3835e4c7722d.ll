@@ -22,7 +22,7 @@ entry:
   %2 = icmp ne i64 %0, 0
   %3 = and i1 %2, %1
   %4 = sext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

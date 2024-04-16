@@ -130,9 +130,9 @@ func00000000000001a1:                   # @func00000000000001a1
 	li	a3, 23
 	sub	a3, a3, a2
 	slti	a1, a1, 0
+	czero.nez	a2, a3, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a3, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	addi	a0, a0, -15
 	seqz	a0, a0
 	ret
@@ -141,9 +141,9 @@ func00000000000001a8:                   # @func00000000000001a8
 	li	a3, 5
 	sub	a3, a3, a2
 	slti	a1, a1, 0
+	czero.nez	a2, a3, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a3, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	sltiu	a0, a0, 6
 	xori	a0, a0, 1
 	ret

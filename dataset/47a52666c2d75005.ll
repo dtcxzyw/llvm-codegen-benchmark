@@ -44,7 +44,7 @@ entry:
   %3 = fmul float %1, %2
   %4 = fcmp olt float %3, 0x3BC79CA100000000
   %5 = select i1 %4, float 0x3BC79CA100000000, float %3
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 
@@ -72,7 +72,7 @@ entry:
   %3 = fmul double %1, %2
   %4 = fcmp ole double %3, 0.000000e+00
   %5 = select i1 %4, double 0.000000e+00, double %3
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

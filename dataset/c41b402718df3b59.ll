@@ -32,7 +32,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 14)
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   %4 = lshr i32 %1, 3
   %5 = xor i32 %3, %4
   ret i32 %5

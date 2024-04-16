@@ -9,7 +9,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 31
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 3
   %5 = icmp eq i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 3
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -54,7 +54,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 4
   %5 = icmp eq i64 %4, 0
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

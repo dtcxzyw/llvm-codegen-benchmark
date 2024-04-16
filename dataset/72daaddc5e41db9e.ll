@@ -63,11 +63,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000031(i8 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = zext i8 %0 to i32
-  %4 = add nuw nsw i32 %3, %2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %2 = or i8 %0, %1
+  %3 = icmp eq i8 %2, 0
+  ret i1 %3
 }
 
 ; 26 occurrences:
@@ -185,11 +183,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000b1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = zext i32 %0 to i64
-  %4 = add nuw nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = or i32 %0, %1
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:

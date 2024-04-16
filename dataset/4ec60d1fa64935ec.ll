@@ -11,7 +11,7 @@ define i8 @func0000000000000007(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 2
   %3 = and i8 %2, 12
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = add nuw nsw i8 %4, 1
   ret i8 %5
 }
@@ -108,7 +108,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = add nuw nsw i32 %4, 939524096
   ret i32 %5
 }
@@ -134,7 +134,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
   %3 = and i32 %2, 4032
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = add nuw nsw i32 %4, 983040
   ret i32 %5
 }
@@ -147,7 +147,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 18
   %3 = and i32 %2, 1835008
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = add nsw i32 %4, -1114112
   ret i32 %5
 }

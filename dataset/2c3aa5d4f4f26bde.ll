@@ -79,7 +79,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = getelementptr i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -91,7 +91,7 @@ entry:
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %1, i64 1
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -124,7 +124,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr inbounds %struct.aiFace.1746131, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -136,7 +136,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = getelementptr inbounds i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -149,7 +149,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = getelementptr i8, ptr %1, i64 18
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -161,7 +161,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = getelementptr i8, ptr %1, i64 8
   %5 = getelementptr inbounds ptr, ptr %4, i64 %3
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

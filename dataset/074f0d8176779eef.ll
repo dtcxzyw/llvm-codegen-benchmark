@@ -6,7 +6,7 @@
 define i1 @func000000000000000d(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp uge float %2, 0.000000e+00
-  %4 = xor i1 %1, %3
+  %4 = xor i1 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -32,7 +32,7 @@ define i1 @func0000000000000004(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 5.000000e-01
   %4 = xor i1 %3, %1
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 
@@ -42,8 +42,8 @@ entry:
 define i1 @func000000000000000b(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %2, 0.000000e+00
-  %4 = xor i1 %1, %3
-  %5 = and i1 %0, %4
+  %4 = xor i1 %3, %1
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

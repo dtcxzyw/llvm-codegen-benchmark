@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %0, %1
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
-  ret i1 %4
+  %.not = icmp eq ptr %0, %1
+  %2 = icmp eq ptr %0, null
+  %3 = or i1 %.not, %2
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -15,10 +15,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %0, %1
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp ne ptr %3, null
-  ret i1 %4
+  %.not = icmp ne ptr %0, %1
+  %2 = icmp ne ptr %0, null
+  %3 = and i1 %.not, %2
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -28,9 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ult ptr %0, %1
-  %3 = select i1 %2, ptr %0, ptr null
-  %4 = icmp eq ptr %3, null
+  %2 = icmp uge ptr %0, %1
+  %3 = icmp eq ptr %0, null
+  %4 = or i1 %2, %3
   ret i1 %4
 }
 

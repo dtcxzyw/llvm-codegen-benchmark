@@ -5,7 +5,7 @@
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = or disjoint i64 %0, %2
+  %3 = or disjoint i64 %2, %0
   %4 = shl nuw nsw i64 1, %3
   ret i64 %4
 }

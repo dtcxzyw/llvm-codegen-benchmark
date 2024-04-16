@@ -1,7 +1,6 @@
 func0000000000000711:                   # @func0000000000000711
 	or	a1, a1, a2
-	addi	a1, a1, 33
-	xori	a1, a1, 46
+	xori	a1, a1, 13
 	or	a0, a0, a1
 	andi	a0, a0, 255
 	seqz	a0, a0

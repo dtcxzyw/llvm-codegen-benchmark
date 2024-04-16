@@ -18,7 +18,7 @@ entry:
   %3 = getelementptr inbounds [15 x %"union.std::aligned_storage<16, 8>::type.1640670"], ptr %2, i64 0, i64 %1
   %4 = ptrtoint ptr %3 to i64
   %5 = or i64 %4, %1
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

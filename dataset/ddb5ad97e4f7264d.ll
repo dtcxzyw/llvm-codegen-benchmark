@@ -18,9 +18,8 @@ define i1 @func00000000000000da(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i8 8, %1
   %3 = zext nneg i8 %2 to i64
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -30,9 +29,8 @@ define i1 @func00000000000001da(i64 %0, i8 %1) #0 {
 entry:
   %2 = sub nuw nsw i8 8, %1
   %3 = zext nneg i8 %2 to i64
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -43,9 +41,8 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 256, %1
   %3 = zext i32 %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

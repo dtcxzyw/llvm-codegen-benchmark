@@ -9,7 +9,7 @@ entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 8.000000e-01
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = fcmp ogt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fmul float %4, 8.000000e+00
-  %6 = fcmp ole float %0, %5
+  %6 = fcmp oge float %5, %0
   ret i1 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 0x3CE0000000000000
-  %6 = fcmp ogt double %0, %5
+  %6 = fcmp olt double %5, %0
   ret i1 %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 0x3CB0000000000000
-  %6 = fcmp ugt double %0, %5
+  %6 = fcmp ult double %5, %0
   ret i1 %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fmul float %4, 5.000000e-01
-  %6 = fcmp ult float %0, %5
+  %6 = fcmp ugt float %5, %0
   ret i1 %6
 }
 
@@ -74,7 +74,7 @@ entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 5.000000e-01
-  %6 = fcmp ole double %0, %5
+  %6 = fcmp oge double %5, %0
   ret i1 %6
 }
 
@@ -86,7 +86,7 @@ entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 7.812500e-03
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 
@@ -100,7 +100,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 1.000000e-10
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 

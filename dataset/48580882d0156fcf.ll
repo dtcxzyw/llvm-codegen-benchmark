@@ -34,7 +34,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000011(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -1
+  %1 = add i32 %0, 4095
   %2 = lshr i32 %1, 10
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 3

@@ -10,7 +10,7 @@
 define i32 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   ret i32 %3
 }
 

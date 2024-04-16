@@ -7,7 +7,7 @@ entry:
   %2 = add nsw i16 %1, -5
   %3 = udiv i16 %2, 7
   %4 = trunc i16 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = add nuw i64 %1, 86399
   %3 = udiv i64 %2, 86400
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

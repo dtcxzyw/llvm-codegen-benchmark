@@ -11,8 +11,10 @@ func0000000000000029:                   # @func0000000000000029
 	add	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
-	subw	a1, a1, a2
-	slti	a1, a1, 1
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
+	xori	a1, a1, 1
 	slli	a1, a1, 1
 	addw	a0, a0, a1
 	ret
@@ -42,8 +44,10 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	ret
 func0000000000000069:                   # @func0000000000000069
-	subw	a1, a1, a2
-	sraiw	a1, a1, 31
+	sext.w	a2, a2
+	sext.w	a1, a1
+	slt	a1, a1, a2
+	negw	a1, a1
 	ori	a1, a1, 1
 	addw	a0, a0, a1
 	ret

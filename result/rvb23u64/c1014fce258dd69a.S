@@ -36,11 +36,11 @@ func00000000000000d5:                   # @func00000000000000d5
 func00000000000000dd:                   # @func00000000000000dd
 	srli	a6, a4, 32
 	slli	a5, a5, 32
-	or	a5, a5, a6
+	or	a6, a5, a6
 	slli	a4, a4, 32
-	add	a4, a4, a0
-	sltu	a0, a4, a0
-	add	a1, a1, a5
+	add	a5, a4, a0
+	sltu	a0, a5, a4
+	add	a1, a1, a6
 	add	a0, a0, a1
 	slli	a1, a3, 32
 	add	a1, a1, a3
@@ -52,8 +52,8 @@ func00000000000000dd:                   # @func00000000000000dd
 	slli	a1, a2, 32
 	add	a1, a1, a2
 	add	a3, a3, a0
-	sub	a0, a4, a1
-	sltu	a1, a0, a4
+	sub	a0, a5, a1
+	sltu	a1, a0, a5
 	add	a1, a1, a3
 	ret
 func0000000000000040:                   # @func0000000000000040

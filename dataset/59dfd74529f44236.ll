@@ -7,7 +7,7 @@
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 65536
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = freeze i1 %3
   %5 = select i1 %4, i32 512, i32 256
   ret i32 %5
@@ -31,7 +31,7 @@ entry:
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 76
-  %3 = and i1 %0, %2
+  %3 = and i1 %2, %0
   %4 = freeze i1 %3
   %5 = select i1 %4, i32 256, i32 1
   ret i32 %5

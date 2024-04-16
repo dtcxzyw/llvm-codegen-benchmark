@@ -9,9 +9,9 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %2, -1
   %4 = zext i8 %3 to i32
-  %5 = mul nuw nsw i32 %1, %4
+  %5 = mul nuw nsw i32 %4, %1
   %6 = add nuw nsw i32 %5, 128
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 

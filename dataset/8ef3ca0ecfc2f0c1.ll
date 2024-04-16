@@ -16,8 +16,8 @@ entry:
   %1 = sext i16 %0 to i32
   %2 = sub nsw i32 0, %1
   %3 = icmp slt i16 %0, 0
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = sext i32 %4 to i64
+  %4 = sext i32 %2 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
 }
 

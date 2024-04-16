@@ -9,7 +9,7 @@ entry:
   %2 = tail call i64 @llvm.umax.i64(i64 %1, i64 48)
   %3 = add i64 %2, 23
   %4 = and i64 %3, -8
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

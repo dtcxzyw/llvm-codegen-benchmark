@@ -927,7 +927,7 @@ define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1
   %3 = select i1 %2, i64 2, i64 0
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   ret i64 %4
 }
 
@@ -1526,7 +1526,7 @@ define i16 @func0000000000000011(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 63
   %3 = select i1 %2, i16 256, i16 0
-  %4 = or disjoint i16 %0, %3
+  %4 = or disjoint i16 %3, %0
   ret i16 %4
 }
 
@@ -1548,7 +1548,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = select i1 %2, i32 2112, i32 64
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -1577,10 +1577,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 1
-  %3 = select i1 %2, i32 5, i32 4
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
+  %.not = icmp eq i32 %1, 1
+  %2 = select i1 %.not, i32 4, i32 5
+  %3 = or disjoint i32 %2, %0
+  ret i32 %3
 }
 
 ; 39 occurrences:
@@ -1628,7 +1628,7 @@ define i32 @func0000000000000009(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 40
   %3 = select i1 %2, i32 100663296, i32 117440512
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   ret i32 %4
 }
 
@@ -1694,7 +1694,7 @@ define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 36
   %3 = select i1 %2, i8 16, i8 32
-  %4 = or i8 %0, %3
+  %4 = or i8 %3, %0
   ret i8 %4
 }
 
@@ -1712,7 +1712,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 4
   %3 = select i1 %2, i32 16384, i32 0
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   ret i32 %4
 }
 
@@ -1722,10 +1722,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %1, 0
-  %3 = select i1 %2, i32 164160, i32 164480
-  %4 = or i32 %3, %0
-  ret i32 %4
+  %.not = icmp eq i8 %1, 0
+  %2 = select i1 %.not, i32 164480, i32 164160
+  %3 = or i32 %2, %0
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

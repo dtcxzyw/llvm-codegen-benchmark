@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa1
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.quad	0x3ff199999999999a              # double 1.1000000000000001
@@ -40,5 +40,5 @@ func000000000000000c:                   # @func000000000000000c
 	bnez	a0, .LBB4_2
 	fmv.s	fa5, fa1
 .LBB4_2:                                # %entry
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret

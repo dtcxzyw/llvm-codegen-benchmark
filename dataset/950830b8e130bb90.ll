@@ -9,7 +9,7 @@ entry:
   %4 = icmp ult i8 %3, 26
   %5 = select i1 %4, i8 %1, i8 %2
   %6 = sext i8 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

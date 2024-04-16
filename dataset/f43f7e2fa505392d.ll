@@ -12,7 +12,7 @@ entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = shl nuw nsw i32 %2, 8
   %4 = xor i32 %3, 7936
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = shl nuw nsw i32 %2, 8
   %4 = xor i32 %3, 7936
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

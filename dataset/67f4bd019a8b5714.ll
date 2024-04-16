@@ -8,8 +8,8 @@ entry:
   %3 = and i32 %2, 4
   %4 = xor i32 %3, 4
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %1, %5
-  %7 = icmp ult i64 %0, %6
+  %6 = add i64 %5, %1
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

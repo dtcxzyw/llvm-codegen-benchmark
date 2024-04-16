@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i128 @func000000000000000a(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl nuw i128 %1, 64
-  %3 = shl nuw i128 %0, 64
-  %4 = and i128 %3, %2
-  ret i128 %4
+  %2 = and i128 %0, %1
+  %3 = shl i128 %2, 64
+  ret i128 %3
 }
 
 ; 1 occurrences:

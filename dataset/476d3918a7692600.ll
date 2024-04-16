@@ -53,9 +53,9 @@ entry:
 define i1 @func000000000000001c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -105
-  %4 = icmp ne i8 %1, 121
-  %5 = select i1 %4, i1 %0, i1 %3
-  ret i1 %5
+  %.not = icmp eq i8 %1, 121
+  %4 = select i1 %.not, i1 %3, i1 %0
+  ret i1 %4
 }
 
 ; 3 occurrences:

@@ -1,7 +1,9 @@
 func0000000000000011:                   # @func0000000000000011
 	srli	a1, a1, 32
+	slli	a1, a1, 32
 	lui	a2, 524032
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
+	slli	a2, a2, 32
 	xor	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 32
@@ -79,9 +81,7 @@ func0000000000000411:                   # @func0000000000000411
 	seqz	a0, a0
 	ret
 func0000000000000084:                   # @func0000000000000084
-	srli	a1, a1, 56
-	sltiu	a1, a1, 128
-	xori	a1, a1, 1
+	slti	a1, a1, 0
 	sltiu	a0, a0, 15
 	and	a0, a0, a1
 	ret

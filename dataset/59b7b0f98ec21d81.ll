@@ -25,9 +25,9 @@
 define i8 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
-  %4 = add i64 %3, 1
-  %5 = trunc i64 %4 to i8
-  %6 = shl nuw nsw i8 %5, 1
+  %4 = trunc i64 %3 to i8
+  %5 = shl i8 %4, 1
+  %6 = add i8 %5, 2
   ret i8 %6
 }
 
@@ -37,9 +37,9 @@ entry:
 define i40 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
-  %4 = add i64 %3, 17
-  %5 = trunc i64 %4 to i40
-  %6 = shl i40 %5, 32
+  %4 = trunc i64 %3 to i40
+  %5 = shl i40 %4, 32
+  %6 = add i40 %5, 73014444032
   ret i40 %6
 }
 
@@ -49,9 +49,9 @@ entry:
 define i32 @func0000000000000013(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
-  %4 = add nsw i64 %3, -1
-  %5 = trunc i64 %4 to i32
-  %6 = shl nuw nsw i32 %5, 3
+  %4 = trunc i64 %3 to i32
+  %5 = shl i32 %4, 3
+  %6 = add i32 %5, -8
   ret i32 %6
 }
 
@@ -67,9 +67,9 @@ entry:
 define i16 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = add nsw i32 %3, -1
-  %5 = trunc i32 %4 to i16
-  %6 = shl i16 %5, 5
+  %4 = trunc i32 %3 to i16
+  %5 = shl i16 %4, 5
+  %6 = add i16 %5, -32
   ret i16 %6
 }
 

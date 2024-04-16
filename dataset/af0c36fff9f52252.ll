@@ -11,7 +11,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = or disjoint i64 %4, 4
-  %6 = icmp ugt i64 %1, %5
+  %6 = icmp ult i64 %5, %1
   %7 = and i1 %6, %0
   ret i1 %7
 }

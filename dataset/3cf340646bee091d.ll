@@ -10,7 +10,7 @@ entry:
   %4 = sext i1 %3 to i32
   %5 = lshr i32 %1, 18
   %6 = add nsw i32 %5, %4
-  %7 = icmp uge i32 %0, %6
+  %7 = icmp ule i32 %6, %0
   ret i1 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = sext i1 %3 to i32
   %5 = lshr i32 %1, 18
   %6 = add nsw i32 %5, %4
-  %7 = icmp ult i32 %0, %6
+  %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = sext i1 %3 to i32
   %5 = lshr i32 %1, 9
   %6 = add nsw i32 %5, %4
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 

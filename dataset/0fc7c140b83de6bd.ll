@@ -12,7 +12,7 @@ entry:
   %4 = zext nneg i8 %3 to i64
   %5 = add nuw nsw i64 %4, 1
   %6 = select i1 %1, i64 0, i64 %5
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

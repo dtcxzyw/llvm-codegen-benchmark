@@ -7,8 +7,8 @@ entry:
   %2 = sub nsw i32 %0, %1
   %3 = add i32 %2, 7
   %4 = sdiv i32 %3, 8
-  %5 = add nsw i32 %4, 8
-  %6 = shl nsw i32 %5, 2
+  %5 = shl nsw i32 %4, 2
+  %6 = add nsw i32 %5, 32
   ret i32 %6
 }
 
@@ -26,8 +26,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = add nsw i64 %2, 16777216
   %4 = sdiv i64 %3, 32
-  %5 = add nsw i64 %4, -524288
-  %6 = shl nsw i64 %5, 5
+  %5 = shl nsw i64 %4, 5
+  %6 = add i64 %5, -16777216
   ret i64 %6
 }
 
@@ -43,8 +43,8 @@ entry:
   %2 = sub nsw i64 %0, %1
   %3 = add nsw i64 %2, 16777216
   %4 = sdiv i64 %3, 4
-  %5 = add nsw i64 %4, -4194304
-  %6 = shl nsw i64 %5, 2
+  %5 = shl nsw i64 %4, 2
+  %6 = add i64 %5, -16777216
   ret i64 %6
 }
 

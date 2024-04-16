@@ -45,11 +45,10 @@
 define ptr @func0000000000000013(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %"class.rocksdb::clock_cache::ClockCacheShard.1583124", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 64
-  ret ptr %7
+  %6 = getelementptr inbounds %"class.rocksdb::clock_cache::ClockCacheShard.1583124", ptr %0, i64 %5, i32 2
+  ret ptr %6
 }
 
 ; 7 occurrences:
@@ -64,11 +63,10 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr inbounds %struct.code.1771199, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 1
-  ret ptr %7
+  %6 = getelementptr inbounds %struct.code.1771199, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -80,11 +78,10 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.9.1850457", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.llvh::detail::DenseMapPair.9.1850457", ptr %0, i64 %5, i32 0, i32 0, i32 1
+  ret ptr %6
 }
 
 ; 4 occurrences:
@@ -98,9 +95,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.netlink_table.1997101, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 200
-  ret ptr %7
+  %6 = getelementptr %struct.netlink_table.1997101, ptr %0, i64 %5, i32 10
+  ret ptr %6
 }
 
 ; 3 occurrences:
@@ -111,11 +107,10 @@ entry:
 define ptr @func0000000000000001(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = and i32 %1, %3
+  %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.PgStat_SnapshotEntry.2119869, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr %struct.PgStat_SnapshotEntry.2119869, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

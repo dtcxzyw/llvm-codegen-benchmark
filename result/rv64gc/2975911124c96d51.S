@@ -26,7 +26,7 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	andi	a2, a2, 255
-	beq	a0, a2, .LBB3_2
+	beq	a2, a0, .LBB3_2
 	lui	a0, 986895
 	addiw	a0, a0, 240
 	ret

@@ -7,7 +7,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = shl nsw i32 %2, 12
   %4 = and i32 %3, 196608
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

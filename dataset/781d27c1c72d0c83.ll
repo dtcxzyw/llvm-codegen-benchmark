@@ -71,11 +71,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 15
-  %3 = icmp ult i8 %2, 8
-  %4 = sub nsw i32 0, %0
-  %5 = select i1 %3, i32 %0, i32 %4
-  ret i32 %5
+  %2 = and i8 %1, 8
+  %.not.not = icmp eq i8 %2, 0
+  %3 = sub nsw i32 0, %0
+  %4 = select i1 %.not.not, i32 %0, i32 %3
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

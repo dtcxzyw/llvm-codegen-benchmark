@@ -6,9 +6,9 @@
 define i64 @func000000000000000a(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
-  %5 = icmp sgt i128 %1, -1
-  %6 = select i1 %5, i64 %0, i64 %4
+  %4 = trunc nuw i128 %3 to i64
+  %5 = icmp slt i128 %1, 0
+  %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6
 }
 
@@ -25,7 +25,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 60
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = icmp eq i32 %1, 1
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
@@ -63,10 +63,10 @@ entry:
 define i32 @func000000000000000c(i32 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ne i16 %1, 18761
-  %6 = select i1 %5, i32 %0, i32 %4
-  ret i32 %6
+  %4 = trunc nuw i64 %3 to i32
+  %.not = icmp eq i16 %1, 18761
+  %5 = select i1 %.not, i32 %4, i32 %0
+  ret i32 %5
 }
 
 ; 3 occurrences:
@@ -101,7 +101,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw i64 %3 to i32
   %5 = icmp ugt i64 %1, 31
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6

@@ -7,10 +7,8 @@
 define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = shl nuw nsw i64 %0, 4
-  %5 = icmp ult i64 %3, %4
-  ret i1 %5
+  %3 = icmp ult i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -19,10 +17,8 @@ entry:
 define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = shl nuw nsw i64 %0, 4
-  %5 = icmp ugt i64 %3, %4
-  ret i1 %5
+  %3 = icmp ugt i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -44,10 +40,8 @@ entry:
 define i1 @func0000000000000178(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = shl nsw i64 %0, 2
-  %5 = icmp ugt i64 %3, %4
-  ret i1 %5
+  %3 = icmp ugt i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -56,10 +50,8 @@ entry:
 define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 4
-  %4 = shl nuw nsw i64 %0, 4
-  %5 = icmp ugt i64 %3, %4
-  ret i1 %5
+  %3 = icmp ugt i64 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

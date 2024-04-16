@@ -12,8 +12,8 @@
 define i64 @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
-  %4 = select i1 %0, double 0.000000e+00, double %3
-  %5 = bitcast double %4 to i64
+  %4 = bitcast double %3 to i64
+  %5 = select i1 %0, i64 0, i64 %4
   ret i64 %5
 }
 

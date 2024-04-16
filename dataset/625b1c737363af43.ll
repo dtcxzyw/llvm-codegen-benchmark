@@ -33,10 +33,8 @@
 define i1 @func000000000000009a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = tail call i64 @llvm.smin.i64(i64 %2, i64 %0)
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %3 = icmp slt i64 %2, %0
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -49,10 +47,8 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 define i1 @func0000000000000096(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = tail call i64 @llvm.smin.i64(i64 %2, i64 %0)
-  %4 = sub nsw i64 %0, %3
-  %5 = icmp slt i64 %4, 1
-  ret i1 %5
+  %3 = icmp sge i64 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

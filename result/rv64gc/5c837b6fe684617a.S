@@ -21,7 +21,9 @@ func0000000000000027:                   # @func0000000000000027
 	li	a3, 7
 	bgeu	a2, a3, .LBB2_2
 	li	a1, 1
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB2_2:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
@@ -37,7 +39,9 @@ func0000000000000037:                   # @func0000000000000037
 func000000000000000f:                   # @func000000000000000f
 	bnez	a2, .LBB4_2
 	li	a1, 1
-.LBB4_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB4_2:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret

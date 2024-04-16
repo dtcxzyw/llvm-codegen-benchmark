@@ -5,8 +5,8 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 15
-  %3 = and i64 %2, -16
-  %4 = add i64 %3, 16
+  %3 = and i64 %2, 4294967280
+  %4 = add nuw nsw i64 %3, 16
   %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
@@ -18,9 +18,9 @@ entry:
 define i32 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 3
-  %3 = and i64 %2, -4
-  %4 = add nsw i64 %3, 4
-  %5 = add nsw i64 %4, %0
+  %3 = and i64 %2, 4294967292
+  %4 = add nuw nsw i64 %3, 4
+  %5 = add i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

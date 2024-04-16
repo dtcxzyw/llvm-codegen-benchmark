@@ -69,7 +69,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -87,7 +87,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1048576
   %3 = ashr i64 %2, 21
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -106,7 +106,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 8
   %3 = ashr i8 %2, 4
-  %4 = add i8 %0, %3
+  %4 = add i8 %3, %0
   ret i8 %4
 }
 

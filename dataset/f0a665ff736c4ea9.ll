@@ -17,10 +17,11 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i8
-  %4 = select i1 %1, i8 1, i8 %3
-  %5 = select i1 %0, i8 0, i8 %4
-  ret i8 %5
+  %narrow = select i1 %1, i1 true, i1 %2
+  %not. = xor i1 %0, true
+  %narrow1 = select i1 %not., i1 %narrow, i1 false
+  %3 = zext i1 %narrow1 to i8
+  ret i8 %3
 }
 
 attributes #0 = { nounwind }

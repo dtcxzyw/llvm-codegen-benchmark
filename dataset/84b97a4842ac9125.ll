@@ -7,7 +7,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = add i32 %2, 65535
   %4 = and i32 %3, 65535
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -39,7 +39,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 15
   %4 = and i32 %3, -8
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

@@ -76,9 +76,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
-	addi	a1, a1, 1
-	srliw	a1, a1, 16
-	snez	a1, a1
+	lui	a2, 1048560
+	addi	a3, a2, 1
+	addw	a1, a1, a3
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -187,9 +188,8 @@ func0000000000000114:                   # @func0000000000000114
 	or	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084
-	addiw	a1, a1, 1
-	sltiu	a1, a1, 385
-	xori	a1, a1, 1
+	addiw	a1, a1, -384
+	sltiu	a1, a1, -385
 	sltiu	a0, a0, 312
 	or	a0, a0, a1
 	ret
@@ -214,17 +214,15 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
-	addiw	a1, a1, 1
-	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	addiw	a1, a1, -3
+	sltiu	a1, a1, -4
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func000000000000008c:                   # @func000000000000008c
 	andi	a0, a0, 255
-	addiw	a1, a1, -1
-	sltiu	a1, a1, 9
-	xori	a1, a1, 1
+	addiw	a1, a1, -10
+	sltiu	a1, a1, -9
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -244,22 +242,27 @@ func0000000000000318:                   # @func0000000000000318
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
-	addi	a1, a1, 999
-	srliw	a1, a1, 11
+	lui	a2, 1048514
+	addi	a3, a2, -1049
+	addw	a1, a1, a3
+	addiw	a2, a2, -2048
+	sltu	a1, a1, a2
 	srliw	a0, a0, 11
-	maxu	a0, a0, a1
 	sltiu	a0, a0, 125
 	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret
 func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
-	addiw	a1, a1, -8
-	sltiu	a1, a1, 4
+	andi	a1, a1, -4
+	sext.w	a1, a1
+	addi	a1, a1, -8
+	seqz	a1, a1
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	addi	a1, a1, -1
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
@@ -273,7 +276,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	or	a0, a0, a1
 	ret
 func00000000000001cc:                   # @func00000000000001cc
-	addi	a1, a1, -48
+	xori	a1, a1, 48
 	lui	a2, 24414
 	addi	a2, a2, 256
 	xor	a0, a0, a2

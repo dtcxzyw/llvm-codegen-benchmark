@@ -9,7 +9,7 @@ entry:
   %2 = add nuw nsw i32 %1, 11
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -22,7 +22,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -95,7 +95,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -135,7 +135,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -172,10 +172,9 @@ define i1 @func00000000000001d1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = lshr i64 %0, %3
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 16 occurrences:
@@ -200,10 +199,9 @@ define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = lshr i64 %0, %3
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -213,10 +211,9 @@ define i1 @func000000000000005c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 9
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %4 = lshr i64 %0, %3
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -227,10 +224,9 @@ define i1 @func00000000000000d1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = lshr i64 %0, %3
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -239,7 +235,7 @@ entry:
 define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
-  %3 = zext i8 %2 to i32
+  %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
   %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0

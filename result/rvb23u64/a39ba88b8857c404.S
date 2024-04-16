@@ -5,49 +5,55 @@
 func000000000000002b:                   # @func000000000000002b
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	mulh	a2, a2, a3
-	srli	a3, a2, 63
-	srai	a2, a2, 15
-	add	a2, a2, a3
-	lui	a3, 1048540
-	addiw	a3, a3, 1359
+	mulh	a3, a2, a3
+	srli	a4, a3, 63
+	srai	a3, a3, 15
+	add	a3, a3, a4
+	lui	a4, 36
+	addiw	a4, a4, -1359
+	mul	a3, a3, a4
+	sub	a2, a2, a2
 	lui	a4, %hi(.LCPI0_1)
 	ld	a4, %lo(.LCPI0_1)(a4)
-	mul	a2, a2, a3
 	add	a1, a1, a2
+	sub	a1, a1, a3
 	srli	a1, a1, 2
 	mulhu	a1, a1, a4
 	srli	a1, a1, 6
 	add	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
-	sext.w	a2, a2
-	lui	a3, 335544
-	addiw	a3, a3, 1311
-	mul	a2, a2, a3
-	srli	a4, a2, 63
-	srai	a2, a2, 39
-	add	a2, a2, a4
-	li	a4, -400
-	mul	a2, a2, a4
+	sext.w	a3, a2
+	lui	a4, 335544
+	addiw	a4, a4, 1311
+	mul	a3, a3, a4
+	srli	a5, a3, 63
+	srai	a3, a3, 39
+	add	a3, a3, a5
+	li	a5, 400
+	mul	a3, a3, a5
+	subw	a2, a2, a2
 	add	a1, a1, a2
+	subw	a1, a1, a3
 	zext.w	a1, a1
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	srli	a1, a1, 37
 	addw	a0, a0, a1
 	ret
 func0000000000000023:                   # @func0000000000000023
-	sext.w	a2, a2
-	lui	a3, 235184
-	addiw	a3, a3, 1725
-	mul	a2, a2, a3
-	srli	a3, a2, 63
-	srai	a2, a2, 47
-	add	a2, a2, a3
-	lui	a3, 1048540
-	addi	a3, a3, 1359
-	mul	a2, a2, a3
+	sext.w	a3, a2
+	lui	a4, 235184
+	addiw	a4, a4, 1725
+	mul	a3, a3, a4
+	srli	a4, a3, 63
+	srai	a3, a3, 47
+	add	a3, a3, a4
+	lui	a4, 36
+	addi	a4, a4, -1359
+	mul	a3, a3, a4
+	subw	a2, a2, a2
 	add	a1, a1, a2
+	subw	a1, a1, a3
 	srliw	a1, a1, 2
 	lui	a2, 367720
 	addiw	a2, a2, -807
@@ -56,18 +62,20 @@ func0000000000000023:                   # @func0000000000000023
 	addw	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
-	sext.w	a2, a2
-	lui	a3, 335544
-	addiw	a3, a3, 1311
-	mul	a2, a2, a3
-	srli	a4, a2, 63
-	srai	a2, a2, 39
-	add	a2, a2, a4
-	li	a4, -400
-	mul	a2, a2, a4
+	sext.w	a3, a2
+	lui	a4, 335544
+	addiw	a4, a4, 1311
+	mul	a3, a3, a4
+	srli	a5, a3, 63
+	srai	a3, a3, 39
+	add	a3, a3, a5
+	li	a5, 400
+	mul	a3, a3, a5
+	subw	a2, a2, a2
 	add	a1, a1, a2
+	subw	a1, a1, a3
 	zext.w	a1, a1
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	srli	a1, a1, 37
 	addw	a0, a0, a1
 	ret

@@ -8,10 +8,10 @@
 define i32 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 1
-  %2 = or disjoint i64 %1, 1
-  %3 = and i64 %2, 9007199254740991
+  %2 = and i64 %1, 9007199254740990
+  %3 = or disjoint i64 %2, 1
   %4 = tail call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !0
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 

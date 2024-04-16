@@ -10,7 +10,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = add i32 %1, 1
   %5 = icmp ult i32 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = lshr i64 %2, 12
   %4 = add nsw i64 %1, -1
   %5 = icmp eq i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = lshr i64 %2, 1
   %4 = add nsw i64 %1, -1
   %5 = icmp ule i64 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

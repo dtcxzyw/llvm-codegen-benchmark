@@ -7,7 +7,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
   %4 = sub nsw i32 0, %3
-  %5 = icmp slt i32 %0, %4
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

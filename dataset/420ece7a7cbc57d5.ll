@@ -9,7 +9,7 @@ entry:
   %3 = ashr i32 %2, 1
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp slt i64 %0, %5
+  %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
 

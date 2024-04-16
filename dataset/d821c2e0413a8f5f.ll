@@ -39,7 +39,7 @@ define i32 @func0000000000000006(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 6
   %4 = icmp eq i8 %3, 0
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = or disjoint i32 %0, 64
   %7 = select i1 %5, i32 %0, i32 %6
   ret i32 %7

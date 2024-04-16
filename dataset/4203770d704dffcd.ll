@@ -11,7 +11,7 @@
 define i1 @func0000000000000154(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 188
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, -8836
   %5 = icmp ult i32 %4, 1880
   ret i1 %5
@@ -68,7 +68,7 @@ entry:
 define i1 @func0000000000000354(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, 576
   %5 = icmp ult i32 %4, 128
   ret i1 %5

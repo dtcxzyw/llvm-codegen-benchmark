@@ -44,7 +44,7 @@ func000000000000001a:                   # @func000000000000001a
 	snez	a5, a3
 	neg	a4, a4
 	sub	a4, a4, a5
-	beq	a2, a4, .LBB6_2
+	beq	a4, a2, .LBB6_2
 	slt	a1, a4, a2
 	and	a0, a0, a1
 	ret

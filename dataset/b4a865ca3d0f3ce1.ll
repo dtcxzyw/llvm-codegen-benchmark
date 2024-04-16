@@ -38,11 +38,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 28
-  %2 = ashr i64 %1, 32
-  %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %1 = and i64 %0, 68719476720
+  %2 = icmp eq i64 %1, 16
+  ret i1 %2
 }
 
 ; 15 occurrences:
@@ -64,11 +62,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 32
-  %2 = ashr exact i64 %1, 32
-  %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %.mask = and i64 %0, 4294967295
+  %1 = icmp eq i64 %.mask, 1
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

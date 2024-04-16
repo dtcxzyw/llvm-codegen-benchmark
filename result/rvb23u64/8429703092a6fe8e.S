@@ -1,10 +1,10 @@
 func000000000000018a:                   # @func000000000000018a
-	sext.w	a2, a2
-	sltiu	a2, a2, 2
+	srliw	a2, a2, 1
+	slli	a2, a2, 1
+	snez	a2, a2
 	subw	a0, a0, a1
 	slti	a0, a0, 2
-	or	a0, a0, a2
-	xori	a0, a0, 1
+	andn	a0, a2, a0
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	subw	a1, a1, a2

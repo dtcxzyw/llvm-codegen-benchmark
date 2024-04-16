@@ -54,10 +54,10 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000018(i16 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 32
-  %3 = icmp ne i32 %2, 0
-  %4 = or i16 %0, 8193
-  %5 = select i1 %3, i16 %4, i16 %0
+  %2 = trunc i32 %1 to i16
+  %3 = shl i16 %2, 8
+  %4 = and i16 %3, 8192
+  %5 = or i16 %4, %0
   %6 = or i16 %5, 257
   ret i16 %6
 }
@@ -102,10 +102,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000039(i8 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 16
-  %3 = icmp ne i32 %2, 0
-  %4 = or disjoint i8 %0, 4
-  %5 = select i1 %3, i8 %4, i8 %0
+  %2 = trunc i32 %1 to i8
+  %3 = lshr i8 %2, 2
+  %4 = and i8 %3, 4
+  %5 = or i8 %4, %0
   %6 = or disjoint i8 %5, 8
   ret i8 %6
 }

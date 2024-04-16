@@ -8,7 +8,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
   %6 = icmp ult i64 %5, 4611686018427387904
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
   %6 = icmp slt i64 %5, 4611686018427387905
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -41,12 +41,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp ult i32 %5, 65536
-  %7 = and i1 %0, %6
-  ret i1 %7
+  %3 = icmp ult i32 %1, 65536
+  %4 = and i1 %3, %0
+  ret i1 %4
 }
 
 ; 11 occurrences:
@@ -68,7 +65,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = icmp eq i32 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -102,9 +99,9 @@ define i1 @func000000000000005c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = icmp ne i32 %5, 536936448
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -157,7 +154,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
   %6 = icmp ugt i32 %5, 3121
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -171,7 +168,7 @@ entry:
   %4 = shl nuw nsw i16 %3, 6
   %5 = or disjoint i16 %4, %1
   %6 = icmp ugt i16 %5, 127
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -189,7 +186,7 @@ entry:
   %4 = shl nuw i16 %3, 8
   %5 = or disjoint i16 %4, %1
   %6 = icmp sgt i16 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 
@@ -200,7 +197,7 @@ define i1 @func000000000000006c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = icmp ne i32 %5, 0
   %7 = and i1 %6, %0
   ret i1 %7
@@ -213,9 +210,9 @@ define i1 @func0000000000000061(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
-  %5 = or i64 %1, %4
+  %5 = or i64 %4, %1
   %6 = icmp eq i64 %5, 0
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

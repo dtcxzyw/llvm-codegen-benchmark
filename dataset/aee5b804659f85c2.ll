@@ -5,7 +5,7 @@
 define i1 @func00000000000000ac(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -17,7 +17,7 @@ entry:
 define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i32 %0, -1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -41,7 +41,7 @@ entry:
 define i1 @func000000000000006c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -53,7 +53,7 @@ entry:
 define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -66,7 +66,7 @@ entry:
 define i1 @func00000000000000a6(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp slt i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -78,7 +78,7 @@ entry:
 define i1 @func00000000000000aa(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %0, %2
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp sgt i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

@@ -19,10 +19,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 0, i32 %1
-  %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, 24
-  %5 = add nuw nsw i64 %4, 48
+  %2 = zext i32 %1 to i64
+  %3 = mul nuw nsw i64 %2, 24
+  %4 = add nuw nsw i64 %3, 48
+  %5 = select i1 %0, i64 48, i64 %4
   ret i64 %5
 }
 

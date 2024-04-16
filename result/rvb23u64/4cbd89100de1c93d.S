@@ -1,7 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	zext.h	a2, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -50,8 +51,9 @@ func00000000000000f1:                   # @func00000000000000f1
 func00000000000000c1:                   # @func00000000000000c1
 	srli	a2, a2, 24
 	slli.uw	a2, a2, 24
-	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a1, a1, a2
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -69,8 +71,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a2, 3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a1, a1, a2
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a

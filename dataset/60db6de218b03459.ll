@@ -23,7 +23,7 @@ entry:
   %3 = fcmp olt double %2, 2.000000e+00
   %4 = select i1 %3, double 2.000000e+00, double %2
   %5 = fcmp ogt double %4, %1
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

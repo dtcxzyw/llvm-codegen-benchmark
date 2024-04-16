@@ -48,9 +48,8 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.umax.i32(i32 %0, i32 1)
-  %2 = icmp slt i32 %1, 0
-  ret i1 %2
+  %1 = icmp slt i32 %0, 0
+  ret i1 %1
 }
 
 ; 48 occurrences:
@@ -105,9 +104,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 8)
-  %2 = icmp slt i64 %1, 0
-  ret i1 %2
+  %1 = icmp slt i64 %0, 0
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -121,9 +119,8 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i64 %0) #0 {
 entry:
-  %1 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 8)
-  %2 = icmp sgt i64 %1, -1
-  ret i1 %2
+  %1 = icmp sgt i64 %0, -1
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

@@ -19,7 +19,7 @@ entry:
   %1 = add i64 %0, -4
   %2 = call i64 @llvm.smax.i64(i64 %1, i64 -2147483648)
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 2147483647)
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
 

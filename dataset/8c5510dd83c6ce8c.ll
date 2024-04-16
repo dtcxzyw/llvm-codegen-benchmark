@@ -22,7 +22,7 @@ entry:
   %3 = add i32 %2, 40960
   %4 = icmp slt i32 %1, 2
   %5 = select i1 %4, i32 %3, i32 49152
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

@@ -26,8 +26,8 @@
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 56
-  %3 = select i1 %0, ptr null, ptr %2
-  %4 = icmp eq ptr %3, null
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }
 
@@ -43,8 +43,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
-  %3 = select i1 %0, ptr null, ptr %2
-  %4 = icmp ne ptr %3, null
+  %3 = icmp ne ptr %2, null
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4
 }
 
@@ -60,10 +61,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 616
-  %3 = select i1 %0, ptr null, ptr %2
-  %4 = icmp eq ptr %3, null
-  ret i1 %4
+  ret i1 %0
 }
 
 ; 1 occurrences:
@@ -71,10 +69,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 15896
-  %3 = select i1 %0, ptr null, ptr %2
-  %4 = icmp ne ptr %3, null
-  ret i1 %4
+  %not. = xor i1 %0, true
+  ret i1 %not.
 }
 
 attributes #0 = { nounwind }

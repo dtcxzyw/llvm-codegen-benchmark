@@ -1,8 +1,9 @@
 func000000000000001f:                   # @func000000000000001f
 	andi	a2, a2, 255
 	or	a1, a1, a2
-	addiw	a1, a1, 13
+	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, 13
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 255
@@ -13,8 +14,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000017:                   # @func0000000000000017
 	andi	a2, a2, 255
 	or	a1, a1, a2
-	addiw	a1, a1, -2047
+	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, -2047
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a2, a2, 255

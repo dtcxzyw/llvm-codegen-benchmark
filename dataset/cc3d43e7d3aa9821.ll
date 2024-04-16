@@ -536,7 +536,7 @@ define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp eq i64 %5, 288230376151711743
   ret i1 %6
 }
@@ -766,8 +766,8 @@ define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add i64 %4, %0
-  %6 = icmp eq i64 %5, 0
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
@@ -884,7 +884,7 @@ define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp ugt i64 %5, 1152921504606846975
   ret i1 %6
 }
@@ -998,7 +998,7 @@ define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
 }
@@ -1114,7 +1114,7 @@ define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp ult i64 %5, 64
   ret i1 %6
 }
@@ -1127,8 +1127,8 @@ define i1 @func000000000000005c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %0, %4
-  %6 = icmp ne i64 %5, 0
+  %5 = sub i64 0, %0
+  %6 = icmp ne i64 %4, %5
   ret i1 %6
 }
 
@@ -1163,8 +1163,8 @@ define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = add i64 %4, %0
-  %6 = icmp ne i64 %5, 0
+  %5 = sub i64 0, %0
+  %6 = icmp ne i64 %4, %5
   ret i1 %6
 }
 
@@ -1182,7 +1182,7 @@ define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp slt i64 %5, 2
   ret i1 %6
 }
@@ -1201,7 +1201,7 @@ define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = icmp slt i64 %5, 0
   ret i1 %6
 }
@@ -1235,8 +1235,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = ashr i64 %3, 63
+  %3 = icmp slt i64 %1, %2
+  %4 = sext i1 %3 to i64
   %5 = add i64 %4, %0
   %6 = icmp slt i64 %5, 0
   ret i1 %6
@@ -1250,7 +1250,7 @@ define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   %6 = icmp ugt i64 %5, 768
   ret i1 %6
 }
@@ -1273,10 +1273,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = ashr i64 %3, 63
-  %5 = add nsw i64 %4, %0
-  %6 = icmp eq i64 %5, 0
+  %3 = icmp slt i64 %1, %2
+  %4 = sext i1 %3 to i64
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
@@ -1285,8 +1285,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000009a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = ashr i64 %3, 63
+  %3 = icmp slt i64 %1, %2
+  %4 = sext i1 %3 to i64
   %5 = add nsw i64 %4, %0
   %6 = icmp sgt i64 %5, 10
   ret i1 %6

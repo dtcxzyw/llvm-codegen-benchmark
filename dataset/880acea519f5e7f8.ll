@@ -9,8 +9,8 @@ define i1 @func000000000000005c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
-  %6 = icmp ne i32 %5, 0
+  %5 = sub i32 0, %1
+  %6 = icmp ne i32 %4, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

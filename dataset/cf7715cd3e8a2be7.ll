@@ -15,7 +15,7 @@ entry:
   %4 = getelementptr inbounds i8, ptr %2, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
   %6 = getelementptr inbounds i8, ptr %5, i64 %3
-  %7 = icmp ugt ptr %0, %6
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 
@@ -29,7 +29,7 @@ entry:
   %4 = getelementptr inbounds i8, ptr %2, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 %3
   %6 = getelementptr inbounds i8, ptr %5, i64 %3
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -42,7 +42,7 @@ entry:
   %4 = getelementptr i8, ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %3
-  %7 = icmp ugt ptr %0, %6
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 
@@ -55,7 +55,7 @@ entry:
   %4 = getelementptr i8, ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %3
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 

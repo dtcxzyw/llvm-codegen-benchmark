@@ -26,10 +26,10 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
 	li	a3, 2
-	bne	a2, a3, .LBB2_2
-	mv	a0, a1
+	beq	a2, a3, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	srai	a1, a0, 63
+	srai	a0, a1, 63
 	and	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -48,15 +48,17 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 56
-	bltz	a2, .LBB4_3
-	li	a1, 26
-	bge	a0, a1, .LBB4_4
+	bgez	a2, .LBB4_3
+	li	a0, 26
+	bge	a1, a0, .LBB4_4
 .LBB4_2:                                # %entry
+	mv	a0, a1
 	ret
 .LBB4_3:                                # %entry
-	mv	a0, a1
-	li	a1, 26
-	blt	a0, a1, .LBB4_2
-.LBB4_4:                                # %entry
+	mv	a1, a0
 	li	a0, 26
+	blt	a1, a0, .LBB4_2
+.LBB4_4:                                # %entry
+	li	a1, 26
+	mv	a0, a1
 	ret

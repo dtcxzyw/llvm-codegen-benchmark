@@ -56,7 +56,7 @@ entry:
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = srem i32 %1, 4
+  %2 = and i32 %1, -2147483645
   %3 = icmp sgt i32 %2, 0
   ret i1 %3
 }

@@ -6,7 +6,7 @@
 define i64 @func0000000000000000(i128 %0) #0 {
 entry:
   %1 = ashr i128 %0, 103
-  %2 = trunc i128 %1 to i64
+  %2 = trunc nsw i128 %1 to i64
   %3 = or i64 %2, 8388609
   ret i64 %3
 }
@@ -16,7 +16,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i128 %0) #0 {
 entry:
-  %1 = ashr exact i128 %0, 63
+  %1 = lshr exact i128 %0, 63
   %2 = trunc i128 %1 to i64
   %3 = or i64 %2, -9223372036854775807
   ret i64 %3
@@ -32,8 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func000000000000000d(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 4
-  %2 = trunc nuw i64 %1 to i8
+  %1 = lshr exact i64 %0, 4
+  %2 = trunc i64 %1 to i8
   %3 = or disjoint i8 %2, -112
   ret i8 %3
 }

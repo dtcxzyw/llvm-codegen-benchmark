@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
+  %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 0)
+  %4 = select i1 %1, i32 0, i32 %3
   %5 = sub nsw i32 %0, %4
   %6 = add nsw i32 %5, 28
   ret i32 %6

@@ -37,10 +37,10 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 255
 	li	a3, 98
-	bne	a2, a3, .LBB5_2
-	mv	a0, a1
+	beq	a2, a3, .LBB5_2
+	mv	a1, a0
 .LBB5_2:                                # %entry
-	srliw	a0, a0, 10
+	srliw	a0, a1, 10
 	ret
 func0000000000000009:                   # @func0000000000000009
 	srliw	a2, a2, 20
@@ -59,8 +59,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a2, a2
-	bnez	a2, .LBB8_2
-	mv	a0, a1
+	beqz	a2, .LBB8_2
+	mv	a1, a0
 .LBB8_2:                                # %entry
-	srliw	a0, a0, 8
+	srliw	a0, a1, 8
 	ret

@@ -9,7 +9,7 @@
 define ptr @func0000000000000013(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 43
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = zext i1 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 1
   %7 = getelementptr inbounds i8, ptr %6, i64 %5

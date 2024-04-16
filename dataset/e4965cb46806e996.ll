@@ -43,7 +43,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = lshr i64 %1, 1
   %6 = or i64 %5, %4
-  %7 = icmp ult i64 %0, %6
+  %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }
 

@@ -10,10 +10,9 @@ func000000000000000f:                   # @func000000000000000f
 	snez	a3, a3
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
@@ -37,12 +36,11 @@ func0000000000000025:                   # @func0000000000000025
 func0000000000000020:                   # @func0000000000000020
 	lui	a3, 16
 	addiw	a3, a3, -1
-	bltu	a2, a3, .LBB4_2
-	mv	a1, a3
-.LBB4_2:                                # %entry
+	bgeu	a2, a3, .LBB4_2
 	slli	a1, a1, 32
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a3, a1, 32
+.LBB4_2:                                # %entry
+	add	a0, a0, a3
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 48

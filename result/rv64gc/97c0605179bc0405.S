@@ -47,7 +47,9 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000050:                   # @func0000000000000050
 	srliw	a1, a1, 24
 	beqz	a1, .LBB7_2
-	addi	a0, a2, -1
+	li	a0, -1
+	srli	a0, a0, 32
+	add	a0, a0, a2
 .LBB7_2:                                # %entry
 	ret
 func0000000000000010:                   # @func0000000000000010

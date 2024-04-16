@@ -11,9 +11,9 @@
 define i1 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ogt float %0, %4
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -24,9 +24,9 @@ entry:
 define i1 @func000000000000000b(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ule float %0, %4
+  %5 = fcmp uge float %4, %0
   ret i1 %5
 }
 
@@ -36,9 +36,9 @@ entry:
 define i1 @func000000000000000a(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ole float %0, %4
+  %5 = fcmp oge float %4, %0
   ret i1 %5
 }
 
@@ -51,9 +51,9 @@ entry:
 define i1 @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp olt float %0, %4
+  %5 = fcmp ogt float %4, %0
   ret i1 %5
 }
 
@@ -63,9 +63,9 @@ entry:
 define i1 @func000000000000000d(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp uge float %0, %4
+  %5 = fcmp ule float %4, %0
   ret i1 %5
 }
 
@@ -75,9 +75,9 @@ entry:
 define i1 @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw i64 %2 to i32
   %4 = bitcast i32 %3 to float
-  %5 = fcmp ugt float %0, %4
+  %5 = fcmp ult float %4, %0
   ret i1 %5
 }
 

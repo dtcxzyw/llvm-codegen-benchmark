@@ -10,7 +10,7 @@ entry:
   %4 = xor i32 %3, 7
   %5 = lshr i32 %1, %4
   %6 = and i32 %5, 1
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

@@ -11,7 +11,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = add nuw i32 %2, 65526
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = add nsw i32 %2, 65534
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 

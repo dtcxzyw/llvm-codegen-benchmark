@@ -8,8 +8,8 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = zext i16 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = add nsw i64 %5, -2
-  %7 = getelementptr inbounds i8, ptr %0, i64 %6
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -2
   ret ptr %7
 }
 
@@ -21,8 +21,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = add nsw i64 %5, 1
-  %7 = getelementptr i16, ptr %0, i64 %6
+  %6 = getelementptr i16, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 2
   ret ptr %7
 }
 

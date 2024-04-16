@@ -49,10 +49,9 @@ func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	li	a2, -4
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 56
+	srai	a1, a1, 63
+	andi	a1, a1, -4
 	addw	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

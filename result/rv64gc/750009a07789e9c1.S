@@ -3,9 +3,8 @@ func0000000000000448:                   # @func0000000000000448
 	bnez	a1, .LBB0_2
 	andi	a0, a2, 255
 .LBB0_2:                                # %entry
-	addi	a0, a0, 1
-	sltiu	a0, a0, -8
-	xori	a0, a0, 1
+	addi	a0, a0, 9
+	sltiu	a0, a0, 8
 	ret
 func0000000000000444:                   # @func0000000000000444
 	andi	a1, a1, 255

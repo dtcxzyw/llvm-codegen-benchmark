@@ -37,23 +37,21 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
-	andi	a2, a2, 31
-	snez	a2, a2
-	addi	a2, a2, -1
-	or	a1, a1, a2
 	sext.w	a1, a1
+	andi	a2, a2, 31
+	seqz	a2, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
+	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	sext.w	a1, a1
+	snez	a2, a2
 	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a2, a2, 31

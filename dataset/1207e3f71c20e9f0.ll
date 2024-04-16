@@ -13,9 +13,8 @@
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = select i1 %0, double %1, double %2
-  %4 = fdiv double 5.000000e-01, %3
-  %5 = fneg double %4
-  ret double %5
+  %4 = fdiv double -5.000000e-01, %3
+  ret double %4
 }
 
 attributes #0 = { nounwind }

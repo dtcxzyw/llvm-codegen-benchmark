@@ -101,7 +101,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, -128
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

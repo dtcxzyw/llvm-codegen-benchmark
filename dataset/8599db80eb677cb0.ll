@@ -9,7 +9,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
-  %4 = add i32 %0, %3
+  %4 = add i32 %3, %0
   %5 = add i32 %1, 15
   %6 = and i32 %5, -8
   %7 = add i32 %6, %4
@@ -54,7 +54,7 @@ entry:
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
   %5 = and i64 %1, -8
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -67,7 +67,7 @@ entry:
   %3 = add nsw i64 %2, 14
   %4 = and i64 %3, -16
   %5 = and i64 %1, -8
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }

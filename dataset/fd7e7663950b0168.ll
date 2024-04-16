@@ -70,7 +70,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

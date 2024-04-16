@@ -9,7 +9,7 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000035:                   # @func0000000000000035
 	andi	a2, a2, 1
 	li	a3, -94
-	mul	a2, a2, a3
+	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

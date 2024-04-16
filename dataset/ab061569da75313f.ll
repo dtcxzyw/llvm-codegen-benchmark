@@ -9,7 +9,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = add nsw i32 %4, 1
-  %6 = mul nsw i32 %0, %5
+  %6 = mul nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
   %5 = add nsw i64 %4, 1
-  %6 = mul i64 %0, %5
+  %6 = mul i64 %5, %0
   ret i64 %6
 }
 

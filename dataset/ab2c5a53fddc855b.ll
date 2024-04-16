@@ -135,7 +135,7 @@ define i1 @func0000000000000304(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 6
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp eq i64 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7
@@ -166,7 +166,7 @@ define i1 @func0000000000000058(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 27
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = icmp ne i64 %0, 0
   %7 = or i1 %6, %5
   ret i1 %7
@@ -230,7 +230,7 @@ define i1 @func0000000000000302(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = icmp eq i64 %0, 12
   %7 = or i1 %6, %5
   ret i1 %7
@@ -245,7 +245,7 @@ define i1 @func0000000000000330(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp ne i64 %1, 32771
   %7 = or i1 %5, %6
   ret i1 %7
@@ -311,7 +311,7 @@ define i1 @func0000000000000310(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65528
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = icmp ugt i64 %0, 524287
   %7 = or i1 %6, %5
   ret i1 %7
@@ -366,7 +366,7 @@ define i1 @func0000000000000044(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 14
   %4 = icmp eq i32 %3, 14
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp eq i64 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7
@@ -383,7 +383,7 @@ define i1 @func0000000000000308(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = icmp ult i64 %0, 4
   %7 = or i1 %6, %5
   ret i1 %7
@@ -397,7 +397,7 @@ define i1 @func000000000000004c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = icmp eq i64 %3, 536870911
-  %5 = or i1 %1, %4
+  %5 = or i1 %4, %1
   %6 = icmp slt i32 %0, 1
   %7 = or i1 %6, %5
   ret i1 %7
@@ -469,7 +469,7 @@ define i1 @func0000000000000068(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1048576
   %4 = icmp eq i64 %3, 0
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = icmp sgt i32 %1, -1
   %7 = or i1 %5, %6
   ret i1 %7

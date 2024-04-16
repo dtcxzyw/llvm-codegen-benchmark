@@ -176,7 +176,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = and i32 %1, 960
   %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %0, %6
+  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -222,7 +222,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = and i64 %1, -17592454479872
   %6 = or i64 %5, %4
-  %7 = or disjoint i64 %0, %6
+  %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
 

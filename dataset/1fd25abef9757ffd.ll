@@ -21,10 +21,9 @@
 define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 24
-  %3 = getelementptr [0 x %struct.FormData_pg_attribute.2119680], ptr %2, i64 0, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 4
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
+  %3 = getelementptr [0 x %struct.FormData_pg_attribute.2119680], ptr %2, i64 0, i64 %0, i32 1
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
 }
 
 ; 5 occurrences:
@@ -37,10 +36,9 @@ entry:
 define i64 @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 8
-  %3 = getelementptr inbounds [3 x %struct.WOLFSSL_SESSION.2179703], ptr %2, i64 0, i64 %0
-  %4 = getelementptr inbounds i8, ptr %3, i64 149
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
+  %3 = getelementptr inbounds [3 x %struct.WOLFSSL_SESSION.2179703], ptr %2, i64 0, i64 %0, i32 11
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
 }
 
 ; 3 occurrences:

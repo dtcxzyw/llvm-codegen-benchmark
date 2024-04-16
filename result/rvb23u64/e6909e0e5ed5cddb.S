@@ -11,5 +11,5 @@ func0000000000000001:                   # @func0000000000000001
 	fli.s	fa5, 256.0
 	fmul.s	fa5, fa0, fa5
 	fcvt.l.s	a1, fa5, rtz
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret

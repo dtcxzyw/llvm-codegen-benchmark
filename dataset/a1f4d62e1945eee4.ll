@@ -43,7 +43,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = or i64 %2, 16384
-  %4 = mul i64 %0, %3
+  %4 = mul i64 %3, %0
   ret i64 %4
 }
 
@@ -64,7 +64,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
-  %4 = mul nsw i32 %0, %3
+  %4 = mul nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -185,7 +185,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = or disjoint i32 %2, 1
-  %4 = mul nsw i32 %0, %3
+  %4 = mul nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -201,7 +201,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
-  %4 = mul nsw i32 %0, %3
+  %4 = mul nsw i32 %3, %0
   ret i32 %4
 }
 

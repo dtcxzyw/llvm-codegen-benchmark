@@ -7,7 +7,7 @@ define i64 @func0000000000000020(i128 %0) #0 {
 entry:
   %1 = add nsw i128 %0, -1
   %2 = lshr i128 %1, 64
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nuw i128 %2 to i64
   %4 = sub i64 0, %3
   ret i64 %4
 }

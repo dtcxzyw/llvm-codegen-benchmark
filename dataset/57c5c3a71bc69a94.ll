@@ -8,10 +8,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = sdiv i64 %0, 4096
-  %2 = sub nsw i64 0, %1
-  %3 = and i64 %2, 4095
-  ret i64 %3
+  %.neg = sdiv i64 %0, -4096
+  %1 = and i64 %.neg, 4095
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

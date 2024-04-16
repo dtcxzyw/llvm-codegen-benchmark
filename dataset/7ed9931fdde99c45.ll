@@ -8,8 +8,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 1, i32 %1
-  %3 = icmp ugt i32 %2, 5
+  %2 = icmp ugt i32 %1, 5
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
   %4 = sext i1 %3 to i32
   ret i32 %4
 }
@@ -21,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 -1076, i32 %1
-  %3 = icmp ne i32 %2, -1
+  %2 = icmp ne i32 %1, -1
+  %3 = select i1 %0, i1 true, i1 %2
   %4 = sext i1 %3 to i32
   ret i32 %4
 }

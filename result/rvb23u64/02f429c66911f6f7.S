@@ -23,8 +23,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	ret
 func00000000000000ac:                   # @func00000000000000ac
-	negw	a1, a1
-	bext	a0, a0, a1
+	li	a2, 64
+	subw	a2, a2, a1
+	bext	a0, a0, a2
 	ret
 func00000000000001ec:                   # @func00000000000001ec
 	li	a2, 64
@@ -45,7 +46,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	ret
 func00000000000000a1:                   # @func00000000000000a1
-	negw	a1, a1
-	bext	a0, a0, a1
+	li	a2, 64
+	subw	a2, a2, a1
+	bext	a0, a0, a2
 	seqz	a0, a0
 	ret

@@ -10,9 +10,8 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 8, i64 %1
-  %6 = getelementptr inbounds %"class.(anonymous namespace)::RefCounted.1952521", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"class.(anonymous namespace)::RefCounted.1952521", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:

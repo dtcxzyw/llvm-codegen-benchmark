@@ -8,7 +8,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = and i32 %2, 1
   %4 = xor i32 %3, 1
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   %6 = icmp ult i32 %5, 2
   ret i1 %6
 }

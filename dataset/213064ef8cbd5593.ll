@@ -27,7 +27,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i1
   %4 = select i1 %3, i32 -67108864, i32 0
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   %6 = and i32 %1, 16777216
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -44,7 +44,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 8192, i64 0
-  %5 = or disjoint i64 %0, %4
+  %5 = or disjoint i64 %4, %0
   %6 = and i64 %1, -17592454479872
   %7 = or i64 %5, %6
   ret i64 %7

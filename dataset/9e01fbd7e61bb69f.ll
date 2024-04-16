@@ -323,8 +323,8 @@ define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptrunc double %0 to float
   %2 = bitcast float %1 to i32
-  %3 = and i32 %2, 2139095040
-  %4 = icmp ugt i32 %3, 16777215
+  %3 = and i32 %2, 2130706432
+  %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
 

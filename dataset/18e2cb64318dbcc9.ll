@@ -183,8 +183,8 @@ entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp sgt i32 %0, -1
   %4 = select i1 %3, i1 true, i1 %2
-  %5 = select i1 %4, i32 %0, i32 6
-  %6 = add nsw i32 %5, 1
+  %5 = add nsw i32 %0, 1
+  %6 = select i1 %4, i32 %5, i32 7
   ret i32 %6
 }
 

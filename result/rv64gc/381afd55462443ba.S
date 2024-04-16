@@ -1,8 +1,7 @@
 func0000000000000084:                   # @func0000000000000084
-	li	a3, 1
-	sll	a2, a3, a2
 	add	a0, a0, a1
-	sltu	a0, a0, a2
+	srl	a0, a0, a2
+	seqz	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da
 	li	a3, 2

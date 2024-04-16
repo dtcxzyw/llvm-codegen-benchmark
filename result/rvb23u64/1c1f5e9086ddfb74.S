@@ -14,8 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000005a:                   # @func000000000000005a
 	add	a1, a1, a2
-	sub	a0, a0, a1
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	lui	a1, 524288
 	addiw	a1, a1, -86
 	czero.nez	a0, a1, a0

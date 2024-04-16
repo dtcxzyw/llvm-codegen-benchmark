@@ -8,7 +8,7 @@
 define i48 @func0000000000000000(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 0, i16 %2
-  %4 = add i16 %0, %3
+  %4 = add i16 %3, %0
   %5 = add i16 %4, 1
   %6 = zext i16 %5 to i48
   ret i48 %6

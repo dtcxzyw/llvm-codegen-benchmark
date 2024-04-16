@@ -48,7 +48,7 @@ entry:
   %2 = zext nneg i64 %1 to i128
   %3 = mul nuw nsw i128 %2, 486662
   %4 = lshr i128 %3, 51
-  %5 = add nuw nsw i128 %0, %4
+  %5 = add nuw nsw i128 %4, %0
   ret i128 %5
 }
 

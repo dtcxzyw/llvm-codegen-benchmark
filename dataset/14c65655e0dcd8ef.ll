@@ -54,7 +54,7 @@ entry:
 define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 60
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -3
   %4 = icmp ult i32 %3, 2
   ret i1 %4
@@ -74,11 +74,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %.mask = and i64 %0, -4294967296
+  %1 = icmp eq i64 %.mask, 4294967296
+  ret i1 %1
 }
 
 ; 2 occurrences:
@@ -89,8 +87,8 @@ define i1 @func0000000000000108(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = icmp ugt i32 %3, 1
+  %3 = add i32 %2, -3
+  %4 = icmp ult i32 %3, -2
   ret i1 %4
 }
 
@@ -111,9 +109,8 @@ define i1 @func0000000000000101(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, -1
+  ret i1 %3
 }
 
 ; 26 occurrences:
@@ -280,9 +277,8 @@ define i1 @func0000000000000111(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, 1
+  ret i1 %3
 }
 
 ; 2 occurrences:
@@ -293,9 +289,8 @@ define i1 @func0000000000000011(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 4
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %3 = icmp eq i32 %2, -1
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -305,9 +300,8 @@ define i1 @func000000000000011c(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %3 = icmp ne i32 %2, 1
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -316,9 +310,9 @@ entry:
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = icmp ugt i32 %3, 63
+  %2 = trunc nuw i64 %1 to i32
+  %3 = add i32 %2, -63
+  %4 = icmp ult i32 %3, -64
   ret i1 %4
 }
 

@@ -5,10 +5,10 @@ func0000000000000005:                   # @func0000000000000005
 	ld	a1, %lo(.LCPI0_0)(a1)
 	mulhu	a1, a0, a1
 	srli	a1, a1, 18
-	lui	a2, 1048332
-	addiw	a2, a2, -576
+	lui	a2, 244
+	addiw	a2, a2, 576
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, 699051
@@ -17,9 +17,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
 	srli	a1, a1, 6
-	li	a2, -96
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a1, a1
+	slli	a1, a1, 5
+	sub	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	lui	a1, 838861
@@ -38,10 +38,10 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a2, a2, -1143
 	mul	a1, a1, a2
 	srli	a1, a1, 57
-	lui	a2, 1024162
-	addi	a2, a2, -256
+	lui	a2, 24414
+	addi	a2, a2, 256
 	mul	a1, a1, a2
-	addw	a0, a0, a1
+	subw	a0, a0, a1
 	ret
 .LCPI4_0:
 	.quad	4835703278458517                # 0x112e0be826d695

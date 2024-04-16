@@ -11,7 +11,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = zext i32 %0 to i64
   %4 = lshr i64 %3, %2
-  %5 = trunc i64 %4 to i32
+  %5 = trunc nuw i64 %4 to i32
   %6 = and i32 %5, 1
   ret i32 %6
 }

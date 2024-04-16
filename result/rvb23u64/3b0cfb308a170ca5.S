@@ -1,7 +1,7 @@
 func0000000000000009:                   # @func0000000000000009
-	bset	a1, zero, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	li	a2, -1
+	sll	a1, a2, a1
+	andn	a0, a0, a1
 	sext.w	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -12,8 +12,8 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	bset	a1, zero, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	li	a2, -1
+	sll	a1, a2, a1
+	andn	a0, a0, a1
 	sext.w	a0, a0
 	ret

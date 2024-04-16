@@ -9,7 +9,7 @@ entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %3, i8 2, i8 0
   %5 = select i1 %1, i8 1, i8 %4
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   %7 = icmp eq i8 %6, 0
   ret i1 %7
 }

@@ -14,12 +14,11 @@ func0000000000000008:                   # @func0000000000000008
 	mul	a1, a2, a1
 	xor	a0, a0, a1
 	ret
-.LCPI2_0:
-	.quad	-4070662928558531325            # 0xc78219a23eeadd03
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
-	andi	a1, a1, 255
-	mul	a1, a1, a2
+	slli	a1, a1, 56
+	lui	a2, 257710
+	addiw	a2, a2, -765
+	slli	a2, a2, 8
+	mulhu	a1, a1, a2
 	xor	a0, a0, a1
 	ret

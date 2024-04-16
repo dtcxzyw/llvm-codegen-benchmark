@@ -290,7 +290,7 @@ entry:
   %3 = icmp ugt i64 %2, -9223372036854775808
   %4 = select i1 %3, i64 -8, i64 0
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -331,7 +331,7 @@ entry:
   %3 = icmp eq i8 %2, -121
   %4 = select i1 %3, i64 0, i64 2
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -344,7 +344,7 @@ entry:
   %3 = icmp eq i32 %2, 97
   %4 = select i1 %3, i64 8, i64 11
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -356,7 +356,7 @@ entry:
   %3 = icmp slt i64 %2, -576460752303423487
   %4 = select i1 %3, i64 48, i64 0
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -368,7 +368,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 1, i64 2
   %5 = getelementptr %struct.ata_device.1994654, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -382,7 +382,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 4, i64 1
   %5 = getelementptr inbounds i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -394,7 +394,7 @@ entry:
   %3 = icmp ult i32 %2, 65536
   %4 = select i1 %3, i64 -1, i64 -2
   %5 = getelementptr inbounds i16, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -406,7 +406,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 0, i64 256
   %5 = getelementptr %struct.BackwardMatch.2233540, ptr %1, i64 %4
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 

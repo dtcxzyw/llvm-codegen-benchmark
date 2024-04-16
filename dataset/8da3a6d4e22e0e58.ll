@@ -18,9 +18,8 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
-  %5 = getelementptr inbounds %struct.HUF_DElt.1956971, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.HUF_DElt.1956971, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -30,9 +29,8 @@ define ptr @func0000000000000009(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
-  %5 = getelementptr %struct.HUF_DEltX1.2008725, ptr %0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 1
-  ret ptr %6
+  %5 = getelementptr %struct.HUF_DEltX1.2008725, ptr %0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

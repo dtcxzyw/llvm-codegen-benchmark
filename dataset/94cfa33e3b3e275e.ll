@@ -33,9 +33,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
-  %2 = select i1 %0, i8 0, i8 %1
-  %3 = and i8 %2, 1
-  %4 = zext nneg i8 %3 to i32
+  %2 = and i8 %1, 1
+  %3 = zext nneg i8 %2 to i32
+  %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -44,9 +44,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 4194304, i32 %1
-  %3 = and i32 %2, -2147483648
-  %4 = zext i32 %3 to i64
+  %2 = and i32 %1, -2147483648
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }
 

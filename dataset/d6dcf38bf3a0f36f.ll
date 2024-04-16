@@ -39,7 +39,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000110(i1 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 15
+  %2 = and i8 %1, 14
   %3 = icmp ugt i8 %2, 9
   %4 = icmp ugt i8 %1, -97
   %5 = or i1 %4, %3

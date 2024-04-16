@@ -16,7 +16,8 @@ func0000000000000011:                   # @func0000000000000011
 	or	a1, a1, a2
 	bnez	a1, .LBB1_2
 	li	a0, 1
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
 	andi	a0, a0, 1
 	ret
 func00000000000000c1:                   # @func00000000000000c1

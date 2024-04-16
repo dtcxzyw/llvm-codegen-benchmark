@@ -55,7 +55,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 704
-  %4 = add nsw i64 %1, %3
+  %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
   %6 = getelementptr %struct.netdev_queue.2011766, ptr %0, i64 %5
   ret ptr %6
@@ -67,7 +67,7 @@ entry:
 define ptr @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = and i64 %4, 7
   %6 = getelementptr inbounds %struct.TestObject.2279313, ptr %0, i64 %5
   ret ptr %6

@@ -9,11 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 8
-  %3 = sdiv i32 %0, -8
-  %4 = add nsw i32 %3, %2
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %.neg = sdiv i32 %1, -8
+  %2 = sdiv i32 %0, -8
+  %3 = icmp eq i32 %2, %.neg
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -43,11 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 24
-  %3 = sdiv exact i64 %0, 24
-  %4 = add nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %.neg = sdiv exact i64 %1, -24
+  %2 = sdiv exact i64 %0, 24
+  %3 = icmp eq i64 %2, %.neg
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -57,11 +55,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 40
-  %3 = sdiv i64 %0, 7
-  %4 = add nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %.neg = sdiv exact i64 %1, -40
+  %2 = sdiv i64 %0, 7
+  %3 = icmp eq i64 %2, %.neg
+  ret i1 %3
 }
 
 ; 1 occurrences:

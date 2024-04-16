@@ -8,7 +8,7 @@ define i1 @func0000000000000011(ptr %0, ptr %1, float %2) #0 {
 entry:
   %3 = fptoui float %2 to i64
   %4 = getelementptr inbounds float, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, float %2) #0 {
 entry:
   %3 = fptoui float %2 to i64
   %4 = getelementptr float, ptr %1, i64 %3
-  %5 = icmp eq ptr %0, %4
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

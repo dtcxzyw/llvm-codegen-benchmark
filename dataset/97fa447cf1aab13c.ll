@@ -11,7 +11,7 @@ entry:
   %3 = fcmp olt double %2, 1.000000e+00
   %4 = icmp ugt i32 %1, 22
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

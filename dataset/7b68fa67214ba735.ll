@@ -7,7 +7,7 @@ entry:
   %3 = add nuw i32 %2, 10
   %4 = sub nuw i32 %3, %1
   %5 = udiv i32 %4, 12
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nuw i32 %2, 12
   %4 = sub i32 %3, %1
   %5 = udiv i32 %4, 12
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = add i64 %2, -40
   %4 = sub i64 %3, %1
   %5 = udiv i64 %4, 40
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

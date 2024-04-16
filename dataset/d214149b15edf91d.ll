@@ -15,8 +15,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i1 %0, i16 %1) #0 {
 entry:
-  %2 = tail call noundef i16 @llvm.bswap.i16(i16 %1)
-  %3 = icmp ult i16 %2, 2048
+  %2 = and i16 %1, 248
+  %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i64 2, i64 3
   %5 = select i1 %0, i64 1, i64 %4
   ret i64 %5

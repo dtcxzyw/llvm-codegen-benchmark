@@ -1,7 +1,7 @@
 func00000000000000cc:                   # @func00000000000000cc
+	sext.w	a0, a0
 	andi	a1, a1, 255
 	or	a0, a0, a1
-	sext.w	a0, a0
 	snez	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -12,8 +12,9 @@ func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a1
 	ret
 func00000000000003cc:                   # @func00000000000003cc
-	snez	a0, a0
+	andi	a1, a1, 1
 	or	a0, a0, a1
+	snez	a0, a0
 	ret
 func000000000000031c:                   # @func000000000000031c
 	andi	a1, a1, 1

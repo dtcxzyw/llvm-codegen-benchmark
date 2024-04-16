@@ -11,8 +11,8 @@ define ptr @func00000000000000c1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i64
-  %5 = add i64 %1, %4
-  %6 = getelementptr inbounds %struct.aiFace.1746464, ptr %0, i64 %5
+  %5 = getelementptr %struct.aiFace.1746464, ptr %0, i64 %4
+  %6 = getelementptr %struct.aiFace.1746464, ptr %5, i64 %1
   ret ptr %6
 }
 

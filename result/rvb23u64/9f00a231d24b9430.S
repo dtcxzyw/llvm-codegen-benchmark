@@ -20,15 +20,16 @@ func0000000000000002:                   # @func0000000000000002
 	fmul.s	fa0, fa5, fa4
 	ret
 .LCPI2_0:
-	.quad	0x3fe6a09edbf8b9bb              # double 0.70710700000000004
+	.quad	0x3ff6a09edbf8b9bb              # double 1.4142140000000001
 func0000000000000008:                   # @func0000000000000008
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
-	beqz	a0, .LBB2_2
+	bnez	a0, .LBB2_2
+	fadd.d	fa0, fa0, fa0
+	ret
+.LBB2_2:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa0, %lo(.LCPI2_0)(a0)
-.LBB2_2:                                # %entry
-	fadd.d	fa0, fa0, fa0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 797504

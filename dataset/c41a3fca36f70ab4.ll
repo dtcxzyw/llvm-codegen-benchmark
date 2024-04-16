@@ -9,8 +9,8 @@
 define i1 @func0000000000000022(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %0, %3
-  %5 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %0
+  %5 = icmp eq i32 %3, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -21,8 +21,8 @@ entry:
 define i1 @func0000000000000110(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %0, %3
-  %5 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %0
+  %5 = icmp ult i32 %3, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -33,8 +33,8 @@ entry:
 define i1 @func00000000000000d4(i16 %0, i16 %1, i48 %2) #0 {
 entry:
   %3 = trunc i48 %2 to i16
-  %4 = icmp sgt i16 %0, %3
-  %5 = icmp slt i16 %1, %3
+  %4 = icmp slt i16 %3, %0
+  %5 = icmp sgt i16 %3, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -45,8 +45,8 @@ entry:
 define i1 @func000000000000014c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %0, %3
-  %5 = icmp sgt i32 %1, %3
+  %4 = icmp sgt i32 %3, %0
+  %5 = icmp slt i32 %3, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -60,8 +60,8 @@ entry:
 define i1 @func0000000000000088(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %1, %3
-  %5 = icmp ult i32 %0, %3
+  %4 = icmp ugt i32 %3, %1
+  %5 = icmp ugt i32 %3, %0
   %6 = or i1 %5, %4
   ret i1 %6
 }

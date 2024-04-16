@@ -5,16 +5,18 @@ func000000000000000b:                   # @func000000000000000b
 	sh2add	a0, a1, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
-	addiw	a2, a2, 20
+	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, 20
 	ret
 func000000000000001f:                   # @func000000000000001f
-	addiw	a2, a2, 123
+	sext.w	a2, a2
 	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	addi	a0, a0, 123
 	ret
 func0000000000000017:                   # @func0000000000000017
 	addiw	a2, a2, 1

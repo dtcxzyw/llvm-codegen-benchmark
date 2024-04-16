@@ -9,7 +9,7 @@ entry:
   %4 = zext i64 %3 to i128
   %5 = zext i64 %1 to i128
   %6 = mul nuw i128 %5, %4
-  %7 = add nuw i128 %0, %6
+  %7 = add nuw i128 %6, %0
   ret i128 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = zext i64 %3 to i128
   %5 = zext i64 %1 to i128
   %6 = mul nuw i128 %4, %5
-  %7 = add i128 %0, %6
+  %7 = add i128 %6, %0
   ret i128 %7
 }
 
@@ -39,7 +39,7 @@ entry:
   %4 = zext nneg i64 %3 to i128
   %5 = zext nneg i64 %1 to i128
   %6 = mul nuw nsw i128 %5, %4
-  %7 = add nuw nsw i128 %0, %6
+  %7 = add nuw nsw i128 %6, %0
   ret i128 %7
 }
 

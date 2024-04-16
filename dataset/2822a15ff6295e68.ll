@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000011(i16 %0, i16 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i16 0, i16 2
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = icmp eq i16 %4, %0
   ret i1 %5
 }

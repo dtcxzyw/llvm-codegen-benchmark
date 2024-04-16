@@ -11,7 +11,7 @@ define ptr @func000000000000000c(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 4
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = select i1 %5, ptr null, ptr %0
   ret ptr %6
 }
@@ -25,7 +25,7 @@ define ptr @func0000000000000001(ptr %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
   %4 = icmp eq i16 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = select i1 %5, ptr null, ptr %0
   ret ptr %6
 }

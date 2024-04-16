@@ -1,12 +1,12 @@
 func0000000000000014:                   # @func0000000000000014
-	addi	a0, a0, -54
-	andi	a0, a0, 511
-	sltiu	a0, a0, 64
+	addi	a0, a0, 458
+	andi	a0, a0, 448
+	seqz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	addi	a0, a0, -55
-	andi	a0, a0, 511
-	sltiu	a0, a0, 64
+	addi	a0, a0, 457
+	andi	a0, a0, 448
+	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
@@ -33,7 +33,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 1
-	zext.h	a0, a0
+	lui	a1, 16
+	addiw	a1, a1, -4
+	and	a0, a0, a1
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret

@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000171(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add nsw i64 %2, -3
+  %3 = add nsw i64 %2, 1
   %4 = and i64 %3, 3
   %5 = add nuw nsw i64 %0, 1
   %6 = icmp eq i64 %5, %4

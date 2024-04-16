@@ -41,7 +41,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 240
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = lshr exact i32 %4, 1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds i64, ptr %0, i64 %6

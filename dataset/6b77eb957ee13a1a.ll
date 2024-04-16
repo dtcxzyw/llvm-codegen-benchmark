@@ -5,10 +5,10 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
-  %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
-  ret i32 %4
+  %neg = sub i32 0, %1
+  %2 = and i32 %neg, %0
+  %3 = and i32 %2, %1
+  ret i32 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -34,10 +34,10 @@ declare i32 @llvm.cttz.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !1
-  %3 = shl nuw i64 1, %2
-  %4 = and i64 %0, %3
-  ret i64 %4
+  %neg = sub i64 0, %1
+  %2 = and i64 %neg, %0
+  %3 = and i64 %2, %1
+  ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -53,7 +53,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !1
+  %2 = call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
   %3 = shl nsw i64 -1, %2
   %4 = and i64 %3, %0
   ret i64 %4
@@ -64,14 +64,13 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call noundef i64 @llvm.cttz.i64(i64 %1, i1 true), !range !1
+  %2 = tail call noundef i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
   %3 = shl nsw i64 -2, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   ret i64 %4
 }
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
 
-!0 = !{i32 0, i32 33}
-!1 = !{i64 0, i64 65}
+!0 = !{i64 0, i64 65}

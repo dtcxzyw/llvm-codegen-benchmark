@@ -58,10 +58,10 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000005(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ugt float %0, %1
-  %3 = select i1 %2, float %0, float %1
-  %4 = fpext float %3 to double
-  ret double %4
+  %.inv = fcmp ole float %0, %1
+  %2 = select i1 %.inv, float %1, float %0
+  %3 = fpext float %2 to double
+  ret double %3
 }
 
 ; 1 occurrences:
@@ -69,10 +69,10 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000003(float %0, float %1) #0 {
 entry:
-  %2 = fcmp ult float %1, %0
-  %3 = select i1 %2, float %0, float %1
-  %4 = fpext float %3 to double
-  ret double %4
+  %.inv = fcmp oge float %1, %0
+  %2 = select i1 %.inv, float %1, float %0
+  %3 = fpext float %2 to double
+  ret double %3
 }
 
 attributes #0 = { nounwind }

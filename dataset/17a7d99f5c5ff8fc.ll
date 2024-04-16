@@ -7,7 +7,7 @@ entry:
   %3 = icmp ne i32 %2, %1
   %4 = icmp ne i32 %1, 255
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

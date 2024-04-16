@@ -44,7 +44,7 @@ define i64 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+01
   %3 = fptosi double %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 

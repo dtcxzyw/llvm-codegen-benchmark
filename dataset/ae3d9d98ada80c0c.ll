@@ -402,7 +402,7 @@ define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = sub nsw i32 64, %2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
   ret i64 %5
 }
@@ -415,7 +415,7 @@ define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = sub i32 -54, %2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
   ret i64 %5
 }

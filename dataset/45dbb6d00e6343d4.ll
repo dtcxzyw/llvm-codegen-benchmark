@@ -23,7 +23,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = shl nuw nsw i32 %3, 4
   %5 = and i32 %4, 240
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = lshr exact i32 %6, 1
   ret i32 %7
 }

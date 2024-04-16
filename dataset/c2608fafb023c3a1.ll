@@ -10,7 +10,7 @@ entry:
   %4 = add nuw nsw i32 %3, 1024
   %5 = lshr i32 %4, 12
   %6 = trunc i32 %5 to i16
-  %7 = add i16 %0, %6
+  %7 = add i16 %6, %0
   ret i16 %7
 }
 
@@ -24,7 +24,7 @@ entry:
   %4 = add i32 %3, 16
   %5 = lshr i32 %4, 3
   %6 = trunc i32 %5 to i8
-  %7 = add i8 %0, %6
+  %7 = add i8 %6, %0
   ret i8 %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = add nuw i64 %3, 65535
   %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = add nsw i64 %3, 32768
   %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -63,7 +63,7 @@ entry:
   %4 = add nsw i64 %3, 32768
   %5 = lshr i64 %4, 16
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 

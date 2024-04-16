@@ -180,7 +180,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float %1, 3.000000e+00
-  %3 = fadd float %0, %2
+  %3 = fadd float %2, %0
   ret float %3
 }
 

@@ -39,11 +39,11 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000131:                   # @func0000000000000131
-	not	a1, a1
-	add	a1, a1, a2
-	andi	a1, a1, 3
-	addi	a0, a0, 1
-	xor	a0, a0, a1
+	li	a3, -2
+	sub	a3, a3, a0
+	subw	a1, a1, a2
+	ori	a0, a1, -4
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 func0000000000000361:                   # @func0000000000000361

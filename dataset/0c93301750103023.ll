@@ -54,7 +54,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3
   %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = ashr exact i32 %2, 24
   %4 = ashr exact i32 %1, 24
   %5 = add nsw i32 %4, %3
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = ashr exact i32 %2, 24
   %4 = ashr exact i32 %1, 24
   %5 = add nsw i32 %4, %3
-  %6 = icmp sge i32 %0, %5
+  %6 = icmp sle i32 %5, %0
   ret i1 %6
 }
 
@@ -94,7 +94,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = ashr exact i64 %1, 4
   %5 = add nsw i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -108,7 +108,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = ashr exact i64 %1, 32
   %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -120,7 +120,7 @@ entry:
   %3 = ashr exact i64 %2, 1
   %4 = ashr exact i64 %1, 1
   %5 = add nsw i64 %4, %3
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 
@@ -132,7 +132,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr i64 %1, 63
   %5 = add nsw i64 %4, %3
-  %6 = icmp ult i64 %0, %5
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 

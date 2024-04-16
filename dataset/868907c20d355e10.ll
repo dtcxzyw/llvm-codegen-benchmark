@@ -8,7 +8,7 @@ entry:
   %3 = udiv i64 %2, 1000000
   %4 = add i64 %1, 10
   %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %0, %5
+  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = udiv i32 %2, 10
   %4 = add nsw i32 %1, -1
   %5 = add nsw i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = udiv i32 %2, 10
   %4 = add nsw i32 %1, -1
   %5 = add nsw i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

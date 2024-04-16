@@ -9,7 +9,7 @@
 define i64 @func0000000000000000(i64 %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %1, %3
+  %4 = fmul double %3, %1
   %5 = fptoui double %4 to i64
   %6 = call i64 @llvm.umin.i64(i64 %0, i64 %5)
   ret i64 %6

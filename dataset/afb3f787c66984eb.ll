@@ -10,7 +10,7 @@ entry:
   %4 = select i1 %3, i64 135, i64 0
   %5 = shl i64 %1, 1
   %6 = xor i64 %5, %4
-  %7 = xor i64 %0, %6
+  %7 = xor i64 %6, %0
   ret i64 %7
 }
 
@@ -25,7 +25,7 @@ entry:
   %4 = select i1 %3, i32 0, i32 27
   %5 = shl nuw nsw i32 %1, 1
   %6 = xor i32 %5, %4
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = select i1 %3, i32 0, i32 27
   %5 = shl nuw nsw i32 %1, 1
   %6 = xor i32 %5, %4
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 
@@ -58,7 +58,7 @@ entry:
   %4 = select i1 %3, i32 27, i32 0
   %5 = shl nuw nsw i32 %1, 1
   %6 = xor i32 %4, %5
-  %7 = xor i32 %0, %6
+  %7 = xor i32 %6, %0
   ret i32 %7
 }
 

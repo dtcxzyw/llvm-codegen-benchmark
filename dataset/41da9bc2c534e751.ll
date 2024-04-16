@@ -12,7 +12,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i8
   %5 = and i8 %4, 63
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = add nuw nsw i128 %1, %2
   %4 = trunc i128 %3 to i64
   %5 = and i64 %4, 2251799813685247
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

@@ -48,7 +48,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
+  %3 = add i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %0, %5

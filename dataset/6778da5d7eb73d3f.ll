@@ -9,8 +9,8 @@ define i32 @func00000000000000a5(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %1, %3
-  %5 = add nsw i32 %0, %4
+  %4 = add nsw i32 %3, %1
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -22,8 +22,8 @@ define i64 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = add i64 %0, %4
+  %4 = add nsw i64 %3, %1
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

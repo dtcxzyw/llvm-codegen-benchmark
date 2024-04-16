@@ -13,8 +13,8 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = sitofp i32 %3 to float
-  %5 = fsub float %1, %4
-  %6 = fsub float 1.000000e+00, %5
+  %5 = fsub float %4, %1
+  %6 = fadd float %5, 1.000000e+00
   %7 = fmul float %6, %0
   ret float %7
 }

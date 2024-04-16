@@ -12,7 +12,7 @@ define i128 @func0000000000000003(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = add nuw nsw i128 %0, %4
+  %5 = add nuw nsw i128 %4, %0
   ret i128 %5
 }
 
@@ -51,7 +51,7 @@ define i128 @func0000000000000000(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = add i128 %0, %4
+  %5 = add i128 %4, %0
   ret i128 %5
 }
 
@@ -64,7 +64,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

@@ -67,7 +67,7 @@
 define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp eq i32 %0, %2
+  %3 = icmp eq i32 %2, %0
   %4 = icmp eq i32 %0, -1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -85,7 +85,7 @@ entry:
 define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = icmp eq i32 %0, -1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -99,7 +99,7 @@ entry:
 define i1 @func0000000000000342(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = icmp eq i32 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
@@ -112,7 +112,7 @@ entry:
 define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -16
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp ult i32 %2, %0
   %4 = icmp ult i32 %0, 2
   %5 = or i1 %4, %3
   ret i1 %5
@@ -124,7 +124,7 @@ entry:
 define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
-  %3 = icmp ule i64 %0, %2
+  %3 = icmp uge i64 %2, %0
   %4 = icmp ult i64 %0, 5
   %5 = or i1 %4, %3
   ret i1 %5
@@ -136,7 +136,7 @@ entry:
 define i1 @func0000000000000110(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -36
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = icmp ugt i64 %0, 8191
   %5 = or i1 %3, %4
   ret i1 %5
@@ -148,7 +148,7 @@ entry:
 define i1 @func0000000000000310(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -36
-  %3 = icmp ugt i64 %0, %2
+  %3 = icmp ult i64 %2, %0
   %4 = icmp ugt i64 %0, 8191
   %5 = or i1 %3, %4
   ret i1 %5
@@ -160,7 +160,7 @@ entry:
 define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp ult i64 %0, %2
+  %3 = icmp ugt i64 %2, %0
   %4 = icmp eq i64 %0, -1
   %5 = or i1 %3, %4
   ret i1 %5
@@ -172,7 +172,7 @@ entry:
 define i1 @func0000000000000228(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = icmp ult i64 %0, 8
   %5 = or i1 %4, %3
   ret i1 %5
@@ -184,7 +184,7 @@ entry:
 define i1 @func0000000000000118(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -20
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = icmp ugt i32 %0, 65535
   %5 = or i1 %3, %4
   ret i1 %5
@@ -196,7 +196,7 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = icmp eq i32 %0, 0
   %5 = or i1 %3, %4
   ret i1 %5
@@ -208,7 +208,7 @@ entry:
 define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp ugt i32 %2, %0
   %4 = icmp slt i32 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
@@ -221,7 +221,7 @@ entry:
 define i1 @func0000000000000222(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = icmp eq i64 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
@@ -233,7 +233,7 @@ entry:
 define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp eq i64 %0, %2
+  %3 = icmp eq i64 %2, %0
   %4 = icmp slt i64 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
@@ -245,7 +245,7 @@ entry:
 define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = icmp slt i32 %0, -1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -257,7 +257,7 @@ entry:
 define i1 @func0000000000000168(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 3
-  %3 = icmp sge i32 %0, %2
+  %3 = icmp sle i32 %2, %0
   %4 = icmp ult i32 %0, 3
   %5 = or i1 %4, %3
   ret i1 %5
@@ -269,7 +269,7 @@ entry:
 define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
-  %3 = icmp ne i32 %0, %2
+  %3 = icmp ne i32 %2, %0
   %4 = icmp eq i32 %0, 56319
   %5 = or i1 %4, %3
   ret i1 %5
@@ -281,7 +281,7 @@ entry:
 define i1 @func000000000000034c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = icmp sgt i32 %0, %2
+  %3 = icmp slt i32 %2, %0
   %4 = icmp slt i32 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5

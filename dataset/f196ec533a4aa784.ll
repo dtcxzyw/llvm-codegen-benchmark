@@ -8,7 +8,7 @@ define i128 @func0000000000000000(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = sub i128 %1, %2
   %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
+  %5 = trunc nuw i128 %4 to i64
   %6 = sub i64 %5, %0
   %7 = zext i64 %6 to i128
   ret i128 %7

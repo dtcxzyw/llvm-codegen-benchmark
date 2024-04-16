@@ -170,10 +170,9 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %2, 2
-  %4 = getelementptr inbounds %"class.Ipopt::TripletToCSRConverter::TripletEntry.1564267", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.1564267", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 28
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -192,10 +191,9 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %2, 2
-  %4 = getelementptr inbounds %"class.rocksdb::WideColumn.1570295", ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr %"class.rocksdb::WideColumn.1570295", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 72
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -206,10 +204,9 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 5
-  %3 = add nuw nsw i64 %2, 32
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 48
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -219,10 +216,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
-  %3 = add i64 %2, -4
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -232,10 +228,9 @@ entry:
 define ptr @func0000000000000036(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds { i32, i16 }, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr { i32, i16 }, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -244,10 +239,9 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = add nsw i64 %2, 32
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 7
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 39
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -256,10 +250,9 @@ entry:
 define ptr @func0000000000000034(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
-  %3 = add nsw i64 %2, -4
-  %4 = getelementptr <2 x i64>, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %3 = getelementptr <2 x i64>, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -48
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -269,10 +262,9 @@ entry:
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %2, 2
-  %4 = getelementptr %class.QModelIndex.1920016, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr %class.QModelIndex.1920016, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 52
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -281,10 +273,9 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, 16
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 20
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -293,10 +284,9 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
-  %3 = add nsw i64 %2, 8
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

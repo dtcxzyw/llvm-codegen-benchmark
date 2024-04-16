@@ -6,8 +6,8 @@ define i64 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = add nsw i32 %1, 3
-  %3 = zext i32 %2 to i64
-  %4 = and i64 %3, 8388608
+  %3 = and i32 %2, 8388608
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
@@ -19,8 +19,8 @@ define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = add i32 %1, 4
-  %3 = zext i32 %2 to i64
-  %4 = and i64 %3, 28
+  %3 = and i32 %2, 28
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

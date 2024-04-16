@@ -117,7 +117,7 @@ define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ult i32 %3, %0
-  %5 = and i32 %1, 63
+  %5 = and i32 %1, 62
   %6 = icmp ult i32 %5, 38
   %7 = and i1 %6, %4
   ret i1 %7

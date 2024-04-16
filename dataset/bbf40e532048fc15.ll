@@ -13,7 +13,7 @@ entry:
   %2 = fadd double %1, 2.240000e+02
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

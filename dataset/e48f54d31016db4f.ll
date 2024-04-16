@@ -5,9 +5,8 @@
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
-  %2 = add nuw nsw i32 %1, 2
-  %3 = or disjoint i32 %2, 1
-  ret i32 %3
+  %2 = add i32 %1, 3
+  ret i32 %2
 }
 
 ; 2 occurrences:
@@ -17,9 +16,8 @@ entry:
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
-  %2 = add i32 %1, 2
-  %3 = or disjoint i32 %2, 1
-  ret i32 %3
+  %2 = add i32 %1, 3
+  ret i32 %2
 }
 
 ; 17 occurrences:
@@ -44,9 +42,8 @@ entry:
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 1
-  %2 = add i64 %1, 2
-  %3 = or disjoint i64 %2, 1
-  ret i64 %3
+  %2 = add i64 %1, 3
+  ret i64 %2
 }
 
 ; 2 occurrences:
@@ -87,9 +84,8 @@ entry:
 define i32 @func000000000000001b(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
-  %2 = add nsw i32 %1, -200
-  %3 = or disjoint i32 %2, 1
-  ret i32 %3
+  %2 = add nsw i32 %1, -199
+  ret i32 %2
 }
 
 ; 5 occurrences:

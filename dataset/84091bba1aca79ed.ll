@@ -6,10 +6,10 @@
 define i32 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 5
-  %4 = or disjoint i32 %0, %3
-  %5 = and i32 %4, 252
-  %6 = shl nuw nsw i32 %5, 1
+  %3 = shl nuw nsw i32 %2, 6
+  %4 = shl i32 %0, 1
+  %5 = or i32 %3, %4
+  %6 = and i32 %5, 504
   ret i32 %6
 }
 
@@ -19,11 +19,10 @@ entry:
 define i32 @func000000000000001e(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = shl nuw nsw i32 %2, 2
-  %4 = or disjoint i32 %3, %0
-  %5 = and i32 %4, 65535
-  %6 = shl nuw i32 %5, 16
-  ret i32 %6
+  %3 = shl i32 %2, 18
+  %4 = shl i32 %0, 16
+  %5 = or i32 %3, %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -32,11 +31,11 @@ entry:
 define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 14
-  %4 = or disjoint i32 %3, %0
-  %5 = and i32 %4, 2080895
-  %6 = shl i32 %5, 14
-  ret i32 %6
+  %3 = shl i32 %2, 28
+  %4 = shl i32 %0, 14
+  %.masked = and i32 %4, -266354688
+  %5 = or i32 %3, %.masked
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

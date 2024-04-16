@@ -37,9 +37,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 12
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, -1
-  %6 = icmp ne i32 %5, 0
-  ret i1 %6
+  %5 = icmp ne i32 %4, 1
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

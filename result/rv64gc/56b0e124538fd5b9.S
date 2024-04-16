@@ -8,13 +8,15 @@ func000000000000060a:                   # @func000000000000060a
 func0000000000000601:                   # @func0000000000000601
 	and	a1, a1, a2
 	snez	a1, a1
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000631:                   # @func0000000000000631
 	and	a1, a1, a2
 	snez	a1, a1
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000638:                   # @func0000000000000638

@@ -37,10 +37,9 @@
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = and i64 %1, 1
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 7 occurrences:
@@ -55,10 +54,9 @@ entry:
 define i1 @func000000000000000c(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 1
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
+  %2 = and i64 %1, 1
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 ; 3 occurrences:
@@ -69,10 +67,9 @@ entry:
 define i1 @func0000000000000008(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 65535
-  %4 = icmp ugt i32 %3, 1
-  ret i1 %4
+  %2 = and i64 %1, 65534
+  %3 = icmp ne i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

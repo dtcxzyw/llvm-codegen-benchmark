@@ -8,7 +8,7 @@ entry:
   %3 = fadd float %2, 3.600000e+02
   %4 = select i1 %1, float %3, float %2
   %5 = fcmp olt float %4, 3.600000e+02
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

@@ -28,7 +28,7 @@ entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fdiv float 1.000000e+00, %4
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fdiv double 1.000000e+00, %4
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   ret double %6
 }
 

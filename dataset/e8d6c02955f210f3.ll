@@ -523,8 +523,8 @@ define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add i64 %0, %1
-  %5 = add i64 %4, %3
-  %6 = icmp eq i64 %5, 0
+  %5 = sub nsw i64 0, %3
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
@@ -536,8 +536,8 @@ define i1 @func000000000000015c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  %6 = icmp ne i64 %5, 0
+  %5 = sub nsw i64 0, %3
+  %6 = icmp ne i64 %4, %5
   ret i1 %6
 }
 
@@ -838,8 +838,8 @@ define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr i64 %0, 63
-  %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %5, 0
+  %5 = sub i64 0, %3
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
@@ -932,8 +932,8 @@ define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr exact i64 %0, 2
-  %5 = add nsw i64 %4, %3
-  %6 = icmp eq i64 %5, 0
+  %5 = sub i64 0, %3
+  %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 

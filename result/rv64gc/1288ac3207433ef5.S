@@ -30,23 +30,19 @@ func00000000000000c0:                   # @func00000000000000c0
 	slli	a0, a0, 2
 	ret
 func00000000000000f7:                   # @func00000000000000f7
-	li	a3, 1260
+	li	a3, 44
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 1048564
-	addi	a1, a1, 821
-	add	a0, a0, a1
+	addi	a0, a0, 53
 	andi	a0, a0, 63
 	ret
 func00000000000000f5:                   # @func00000000000000f5
-	li	a3, 1260
+	li	a3, 44
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 1048561
-	addi	a1, a1, -378
-	add	a0, a0, a1
+	addi	a0, a0, 6
 	andi	a0, a0, 63
 	ret
 func0000000000000000:                   # @func0000000000000000

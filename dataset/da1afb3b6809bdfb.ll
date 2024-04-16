@@ -9,8 +9,8 @@ entry:
   %2 = sub i64 %0, %1
   %3 = trunc i64 %2 to i16
   %4 = udiv i16 %3, 96
-  %5 = zext nneg i16 %4 to i64
-  %6 = lshr i64 %5, 1
+  %5 = lshr i16 %4, 1
+  %6 = zext nneg i16 %5 to i64
   ret i64 %6
 }
 

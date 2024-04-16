@@ -12,8 +12,8 @@ entry:
   %1 = fcmp ogt float %0, 1.000000e+00
   %2 = select i1 %1, float 1.000000e+00, float %0
   %3 = fcmp olt float %0, 0.000000e+00
-  %4 = select i1 %3, float 0.000000e+00, float %2
-  %5 = fsub float 1.000000e+00, %4
+  %4 = fsub float 1.000000e+00, %2
+  %5 = select i1 %3, float 1.000000e+00, float %4
   ret float %5
 }
 

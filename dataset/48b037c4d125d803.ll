@@ -38,7 +38,7 @@ define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %0, %3
+  %4 = and i64 %3, %0
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -75,7 +75,7 @@ define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 9
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -188,7 +188,7 @@ define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %0, %3
+  %4 = and i32 %3, %0
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -230,10 +230,9 @@ entry:
 define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -31
-  %3 = shl nsw i32 -1, %2
-  %4 = and i32 %0, %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = lshr i32 %0, %2
+  %4 = icmp eq i32 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -242,10 +241,9 @@ entry:
 define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = shl nsw i64 -1, %2
-  %4 = and i64 %0, %3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = lshr i64 %0, %2
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

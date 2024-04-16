@@ -24,7 +24,7 @@ entry:
   %3 = add i32 %2, %1
   %4 = shl i32 %3, 3
   %5 = xor i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -41,7 +41,7 @@ entry:
   %3 = add nuw nsw i32 %2, %1
   %4 = shl nuw i32 %3, 4
   %5 = xor i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

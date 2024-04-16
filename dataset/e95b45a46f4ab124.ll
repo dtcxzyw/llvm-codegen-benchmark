@@ -7,7 +7,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = call double @llvm.copysign.f64(double 0.000000e+00, double %1)
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   ret double %3
 }
 

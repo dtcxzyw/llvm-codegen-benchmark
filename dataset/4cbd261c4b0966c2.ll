@@ -9,9 +9,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = select i1 %1, ptr %2, ptr null
-  %4 = icmp eq ptr %3, null
-  %5 = select i1 %0, i1 true, i1 %4
+  %3 = icmp eq ptr %2, null
+  %not. = xor i1 %1, true
+  %4 = select i1 %0, i1 true, i1 %not.
+  %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
 

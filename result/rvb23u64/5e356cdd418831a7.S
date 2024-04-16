@@ -1,7 +1,9 @@
 func0000000000000028:                   # @func0000000000000028
 	andi	a1, a1, 255
 	or	a0, a0, a1
-	addi	a0, a0, -16
+	lui	a1, 16
+	addi	a1, a1, -16
+	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
 func0000000000000020:                   # @func0000000000000020
@@ -25,8 +27,6 @@ func0000000000000030:                   # @func0000000000000030
 	srliw	a0, a0, 24
 	ret
 func000000000000007a:                   # @func000000000000007a
-	zext.h	a1, a1
-	or	a0, a0, a1
 	lui	a1, 16
 	add	a0, a0, a1
 	srliw	a0, a0, 18
@@ -39,8 +39,6 @@ func0000000000000078:                   # @func0000000000000078
 	srliw	a0, a0, 12
 	ret
 func000000000000003a:                   # @func000000000000003a
-	zext.h	a1, a1
-	or	a0, a0, a1
 	lui	a1, 16
 	add	a0, a0, a1
 	srliw	a0, a0, 18

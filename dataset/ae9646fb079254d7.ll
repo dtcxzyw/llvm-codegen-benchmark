@@ -8,7 +8,7 @@ entry:
   %3 = sdiv i32 %2, 512
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 1)
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = sdiv i32 %2, 32
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 1)
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = sdiv i32 %2, 32
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 1)
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp ne i64 %0, %5
+  %6 = icmp ne i64 %5, %0
   ret i1 %6
 }
 

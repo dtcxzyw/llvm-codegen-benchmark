@@ -6,11 +6,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = and i64 %2, 7
-  %4 = icmp eq i64 %3, 0
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
+  %2 = and i32 %1, 7
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:

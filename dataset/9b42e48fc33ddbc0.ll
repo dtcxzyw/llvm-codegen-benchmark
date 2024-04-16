@@ -8,7 +8,7 @@
 define float @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast i32 %0 to float
-  %3 = fmul float %1, %2
+  %3 = fmul float %2, %1
   %4 = tail call float @llvm.fmuladd.f32(float %3, float %2, float 1.500000e+00)
   %5 = fmul float %4, %2
   ret float %5

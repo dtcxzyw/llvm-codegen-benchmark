@@ -26,7 +26,7 @@ entry:
   %3 = add nuw nsw i32 %2, 3
   %4 = lshr i32 %3, 2
   %5 = select i1 %1, i32 %4, i32 0
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 

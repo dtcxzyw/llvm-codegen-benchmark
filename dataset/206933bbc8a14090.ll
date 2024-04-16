@@ -16,7 +16,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = lshr i64 %3, 1
   %5 = getelementptr inbounds %struct.aiFace.1749366, ptr %1, i64 %4
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = ashr exact i64 %2, 2
   %4 = lshr i64 %3, 1
   %5 = getelementptr inbounds i32, ptr %1, i64 %4
-  %6 = icmp ne ptr %0, %5
+  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 

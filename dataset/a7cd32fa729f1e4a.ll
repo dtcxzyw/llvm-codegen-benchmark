@@ -12,7 +12,7 @@ define i32 @func0000000000000020(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ugt i32 %3, 15
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
 }
@@ -36,8 +36,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %1, %2
-  %4 = icmp ne i32 %3, 0
+  %3 = sub i32 0, %2
+  %4 = icmp ne i32 %3, %1
   %5 = or i1 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6

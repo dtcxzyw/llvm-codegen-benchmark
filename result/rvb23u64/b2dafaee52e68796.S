@@ -1,9 +1,7 @@
 func0000000000000078:                   # @func0000000000000078
 	addi	a0, a0, -1
-	bset	a0, zero, a0
-	andi	a0, a0, 255
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	li	a1, 254
+	bext	a0, a1, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
 	addi	a0, a0, -97

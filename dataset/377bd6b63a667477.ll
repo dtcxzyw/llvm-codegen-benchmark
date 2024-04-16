@@ -14,7 +14,7 @@
 define i32 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = or i1 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
@@ -31,7 +31,7 @@ define i8 @func0000000000000030(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 35
   %4 = and i1 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = zext i1 %5 to i8
   ret i8 %6
 }
@@ -43,7 +43,7 @@ define i32 @func0000000000000010(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 2
   %4 = and i1 %3, %1
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = zext i1 %5 to i32
   ret i32 %6
 }

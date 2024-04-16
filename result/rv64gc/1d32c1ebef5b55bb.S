@@ -24,7 +24,8 @@ func0000000000000038:                   # @func0000000000000038
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

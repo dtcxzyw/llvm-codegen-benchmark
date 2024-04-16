@@ -10,8 +10,8 @@
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %2, 2147483648
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
@@ -34,8 +34,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 1
+  %3 = and i64 %2, 4294967294
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
@@ -45,8 +45,8 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, -1
+  %3 = and i64 %2, 2147483648
+  %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 

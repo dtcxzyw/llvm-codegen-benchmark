@@ -32,11 +32,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -2147483647
-  %2 = icmp slt i32 %0, 0
-  %3 = select i1 %2, i32 %1, i32 %0
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
+  %1 = lshr i32 %0, 31
+  %2 = add i32 %1, %0
+  %3 = trunc i32 %2 to i8
+  ret i8 %3
 }
 
 ; 15 occurrences:
@@ -71,9 +70,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000060(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, -65535
-  %2 = icmp ugt i32 %0, 65535
-  %3 = select i1 %2, i32 %1, i32 %0
+  %1 = icmp ugt i32 %0, 65535
+  %2 = zext i1 %1 to i32
+  %3 = add i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

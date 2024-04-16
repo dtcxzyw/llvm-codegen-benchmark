@@ -396,10 +396,10 @@
 define i64 @func000000000000000c(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = select i1 %1, i32 63, i32 %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = shl nuw i64 1, %5
-  %7 = or i64 %0, %6
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw i64 1, %4
+  %6 = select i1 %1, i64 -9223372036854775808, i64 %5
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 

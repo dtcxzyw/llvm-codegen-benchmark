@@ -7,8 +7,8 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = add i32 %1, 63
   %3 = sdiv i32 %2, 64
-  %4 = add nsw i32 %3, -1
-  %5 = shl nsw i32 %4, 6
+  %4 = shl nsw i32 %3, 6
+  %5 = add i32 %4, -64
   ret i32 %5
 }
 
@@ -21,8 +21,8 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = add nuw i32 %1, 63
   %3 = sdiv i32 %2, 64
-  %4 = add nsw i32 %3, -1
-  %5 = shl nsw i32 %4, 6
+  %4 = shl nsw i32 %3, 6
+  %5 = add i32 %4, -64
   ret i32 %5
 }
 
@@ -34,8 +34,8 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = add nuw i32 %1, 63
   %3 = sdiv i32 %2, 64
-  %4 = add nsw i32 %3, -1
-  %5 = shl i32 %4, 6
+  %4 = shl nsw i32 %3, 6
+  %5 = add i32 %4, -64
   ret i32 %5
 }
 
@@ -199,8 +199,8 @@ entry:
   %1 = trunc i64 %0 to i32
   %2 = add nsw i32 %1, 347
   %3 = sdiv i32 %2, 8
-  %4 = add nsw i32 %3, 1
-  %5 = shl nsw i32 %4, 3
+  %4 = shl nsw i32 %3, 3
+  %5 = add i32 %4, 8
   ret i32 %5
 }
 
@@ -220,8 +220,8 @@ entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = add nsw i32 %1, 347
   %3 = sdiv i32 %2, 8
-  %4 = add nsw i32 %3, 1
-  %5 = shl nsw i32 %4, 3
+  %4 = shl nsw i32 %3, 3
+  %5 = add i32 %4, 8
   ret i32 %5
 }
 

@@ -9,9 +9,12 @@ func0000000000000111:                   # @func0000000000000111
 	or	a0, a0, a1
 	ret
 func000000000000011c:                   # @func000000000000011c
-	addi	a1, a1, -1
-	srliw	a1, a1, 4
-	slli	a1, a1, 4
+	li	a2, 1
+	slli	a2, a2, 32
+	addi	a2, a2, -16
+	add	a1, a1, a2
+	addi	a1, a1, 15
+	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

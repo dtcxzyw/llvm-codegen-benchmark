@@ -16,7 +16,7 @@
 define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 7
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp sgt i64 %3, 4
   ret i1 %4
 }
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 5
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp slt i64 %3, 1
   ret i1 %4
 }
@@ -46,7 +46,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 8
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = icmp sgt i32 %3, 32
   ret i1 %4
 }
@@ -64,7 +64,7 @@ entry:
 define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 146097
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = icmp ugt i64 %3, 146097
   ret i1 %4
 }
@@ -86,7 +86,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 86400
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }

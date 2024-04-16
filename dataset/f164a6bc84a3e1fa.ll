@@ -7,11 +7,9 @@
 define i1 @func00000000000001d1(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
-  %3 = add nsw i32 %2, -131071
-  %4 = add nuw nsw i32 %0, 1
-  %5 = add nsw i32 %4, %3
-  %6 = icmp eq i32 %5, -1
-  ret i1 %6
+  %3 = add i32 %2, %0
+  %4 = icmp eq i32 %3, 131069
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -20,11 +18,9 @@ entry:
 define i1 @func0000000000000151(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 14
-  %3 = add nsw i32 %2, -131071
-  %4 = add nsw i32 %0, 1
-  %5 = add nsw i32 %4, %3
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %3 = add i32 %2, %0
+  %4 = icmp eq i32 %3, 131070
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

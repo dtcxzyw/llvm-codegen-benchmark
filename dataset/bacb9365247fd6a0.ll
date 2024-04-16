@@ -9,7 +9,7 @@ entry:
   %2 = sdiv i64 %1, 1461001
   %3 = mul nsw i64 %2, 1461
   %4 = sdiv i64 %3, -4
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = mul nsw i64 %5, 80
   ret i64 %6
 }
@@ -22,7 +22,7 @@ entry:
   %2 = sdiv i32 %1, 1461001
   %3 = mul nsw i32 %2, 1461
   %4 = sdiv i32 %3, -4
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   %6 = mul nsw i32 %5, 80
   ret i32 %6
 }

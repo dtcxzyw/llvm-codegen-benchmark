@@ -5,10 +5,8 @@
 define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = call i32 @llvm.smin.i32(i32 %2, i32 3)
-  %4 = sub nsw i32 %2, %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
+  %3 = icmp slt i32 %2, 4
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -31,10 +29,8 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = call i64 @llvm.smin.i64(i64 %2, i64 4)
-  %4 = sub nsw i64 %2, %3
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %3 = icmp sgt i64 %2, 4
+  ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

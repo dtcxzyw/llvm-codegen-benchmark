@@ -5,9 +5,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
-	not	a0, a0
-	add	a0, a0, a1
+	subw	a0, a0, a1
 	andi	a0, a0, 3
+	addi	a0, a0, -3
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -17,9 +17,9 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
-	not	a0, a0
-	add	a0, a0, a1
+	subw	a0, a0, a1
 	andi	a0, a0, 3
+	addi	a0, a0, -3
 	seqz	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
@@ -30,8 +30,9 @@ func00000000000000d1:                   # @func00000000000000d1
 	ret
 func0000000000000051:                   # @func0000000000000051
 	subw	a1, a1, a0
-	addiw	a1, a1, -4
-	seqz	a0, a1
+	li	a0, -4
+	addw	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sub	a1, a1, a0

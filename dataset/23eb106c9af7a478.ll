@@ -15,7 +15,7 @@ entry:
   %3 = zext i32 %2 to i128
   %4 = udiv i128 %1, %3
   %5 = trunc i128 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = udiv i128 %1, %3
   %5 = trunc i128 %4 to i64
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

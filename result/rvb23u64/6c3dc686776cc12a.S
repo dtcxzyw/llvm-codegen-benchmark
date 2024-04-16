@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
-	addi	a1, a1, -1
-	sraiw	a1, a1, 31
-	and	a0, a0, a1
+	sext.w	a1, a1
+	sgtz	a1, a1
+	czero.nez	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a2, -1

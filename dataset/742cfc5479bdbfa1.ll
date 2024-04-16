@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 18446744073709551615
-  %4 = sub nsw i128 %1, %3
-  %5 = and i128 %4, 18446744073709551615
-  %6 = or disjoint i128 %0, %5
-  ret i128 %6
+  %3 = sub i128 %1, %2
+  %4 = and i128 %3, 18446744073709551615
+  %5 = or disjoint i128 %4, %0
+  ret i128 %5
 }
 
 ; 10 occurrences:
@@ -26,11 +25,10 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i128 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = and i128 %2, 18446744073709551615
-  %4 = sub i128 %1, %3
-  %5 = and i128 %4, 18446744073709551615
-  %6 = or disjoint i128 %0, %5
-  ret i128 %6
+  %3 = sub i128 %1, %2
+  %4 = and i128 %3, 18446744073709551615
+  %5 = or disjoint i128 %4, %0
+  ret i128 %5
 }
 
 attributes #0 = { nounwind }

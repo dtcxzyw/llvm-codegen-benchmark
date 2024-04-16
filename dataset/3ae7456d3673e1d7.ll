@@ -9,7 +9,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = add nsw i8 %2, -1
   %4 = sext i8 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = and i16 %1, 3
   %3 = add nsw i16 %2, -2
   %4 = sext i16 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

@@ -7,9 +7,8 @@ entry:
   %3 = xor i8 %2, 1
   %4 = icmp eq i64 %1, -9223372036854775808
   %5 = select i1 %4, i8 %3, i8 0
-  %6 = sub nsw i8 %0, %5
-  %7 = icmp eq i8 %6, 0
-  ret i1 %7
+  %6 = icmp eq i8 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

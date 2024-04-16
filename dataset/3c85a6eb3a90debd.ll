@@ -186,7 +186,7 @@ define i128 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = or disjoint i64 %2, 2
-  %4 = zext i32 %0 to i64
+  %4 = zext nneg i32 %0 to i64
   %5 = shl i64 %3, %4
   %6 = zext i64 %5 to i128
   ret i128 %6

@@ -54,7 +54,7 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
-	srli	a1, a1, 56
-	sltiu	a1, a1, 64
+	srli	a1, a1, 62
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret

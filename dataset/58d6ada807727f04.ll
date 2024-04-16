@@ -9,7 +9,7 @@ entry:
   %2 = lshr i16 %1, 8
   %3 = add i16 %2, %1
   %4 = trunc i16 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 
@@ -19,9 +19,9 @@ entry:
 define i16 @func0000000000000030(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = add nuw nsw i32 %1, %2
+  %3 = add nuw nsw i32 %2, %1
   %4 = trunc i32 %3 to i16
-  %5 = add i16 %0, %4
+  %5 = add i16 %4, %0
   ret i16 %5
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = add nuw nsw i32 %2, %1
   %4 = trunc i32 %3 to i8
-  %5 = add nsw i8 %0, %4
+  %5 = add nsw i8 %4, %0
   ret i8 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = add nuw nsw i64 %2, %1
   %4 = trunc i64 %3 to i32
-  %5 = add nuw nsw i32 %0, %4
+  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 

@@ -37,11 +37,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  %6 = getelementptr inbounds %"class.hermes::vm::GCHermesValueBase.1844286", ptr %5, i64 %3
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr inbounds i8, ptr %2, i64 8
+  %4 = sext i32 %1 to i64
+  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.1844286", ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -92,11 +92,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 8
-  %3 = zext nneg i32 %2 to i64
-  %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr i8, ptr %4, i64 -23
-  %6 = getelementptr i8, ptr %5, i64 %3
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr i8, ptr %2, i64 -23
+  %4 = sext i32 %1 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 

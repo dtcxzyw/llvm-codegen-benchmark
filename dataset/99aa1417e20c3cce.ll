@@ -7,9 +7,8 @@ entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr i64 %4, 4
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 15
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -21,9 +20,8 @@ entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr i64 %4, 4
-  %6 = icmp ugt i64 %5, 1
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 31
+  ret i1 %5
 }
 
 ; 27 occurrences:
@@ -60,9 +58,8 @@ entry:
   %2 = freeze ptr %1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp sgt i64 %5, 16
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 128
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

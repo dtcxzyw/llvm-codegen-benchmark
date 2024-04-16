@@ -1,14 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
-	bgeu	a2, a1, .LBB0_3
-	bgeu	a1, a0, .LBB0_4
-.LBB0_2:                                # %entry
-	seqz	a0, a0
-	ret
-.LBB0_3:                                # %entry
+	bltu	a2, a1, .LBB0_2
 	mv	a1, a2
-	bltu	a2, a0, .LBB0_2
-.LBB0_4:                                # %entry
-	seqz	a0, a1
+.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	bgeu	a2, a1, .LBB1_3

@@ -25,10 +25,17 @@ func0000000000000000:                   # @func0000000000000000
 	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
+	andi	a2, a2, 1
 	andi	a1, a1, 1
-	slli	a2, a2, 63
-	srai	a2, a2, 63
-	ori	a2, a2, 1
+	bnez	a2, .LBB2_2
+	li	a2, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	lui	a2, 16
+	addi	a2, a2, -1
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1

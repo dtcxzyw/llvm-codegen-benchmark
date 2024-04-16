@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, -4097
-  %4 = shl nuw i32 %3, 16
+  %3 = shl i32 %2, 16
+  %4 = and i32 %3, -268500992
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %1, %5
+  %6 = or disjoint i64 %5, %1
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -40,10 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i24 %2) #0 {
 entry:
-  %3 = and i24 %2, 128
-  %4 = shl nuw nsw i24 %3, 11
+  %3 = shl i24 %2, 11
+  %4 = and i24 %3, 262144
   %5 = zext nneg i24 %4 to i32
-  %6 = or disjoint i32 %1, %5
+  %6 = or disjoint i32 %5, %1
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -54,10 +54,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 7
-  %4 = shl nuw nsw i8 %3, 1
+  %3 = shl i8 %2, 1
+  %4 = and i8 %3, 14
   %5 = zext nneg i8 %4 to i32
-  %6 = or disjoint i32 %1, %5
+  %6 = or disjoint i32 %5, %1
   %7 = or i32 %6, %0
   ret i32 %7
 }

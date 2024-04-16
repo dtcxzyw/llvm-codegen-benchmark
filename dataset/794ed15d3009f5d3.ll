@@ -51,7 +51,7 @@ entry:
   %4 = icmp ugt i32 %3, 59
   %5 = icmp ugt i32 %1, 24
   %6 = or i1 %5, %4
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

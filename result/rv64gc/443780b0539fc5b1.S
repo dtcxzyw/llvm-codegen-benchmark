@@ -17,8 +17,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000019:                   # @func0000000000000019
 	slli	a1, a0, 43
-	lui	a0, 524340
-	bltz	a1, .LBB2_2
 	lui	a0, 524336
+	bgez	a1, .LBB2_2
+	lui	a0, 524340
 .LBB2_2:                                # %entry
 	ret

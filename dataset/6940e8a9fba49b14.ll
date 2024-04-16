@@ -59,10 +59,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 40
-  %3 = zext i32 %0 to i64
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %.neg = sdiv exact i64 %1, -40
+  %2 = zext i32 %0 to i64
+  %3 = add nsw i64 %.neg, %2
+  ret i64 %3
 }
 
 ; 9 occurrences:
@@ -78,10 +78,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv exact i64 %1, 36
-  %3 = zext nneg i32 %0 to i64
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %.neg = sdiv exact i64 %1, -36
+  %2 = zext nneg i32 %0 to i64
+  %3 = add nsw i64 %.neg, %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -89,10 +89,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %1, 1000000
-  %3 = zext i16 %0 to i64
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %.neg = sdiv i64 %1, -1000000
+  %2 = zext i16 %0 to i64
+  %3 = add nsw i64 %.neg, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

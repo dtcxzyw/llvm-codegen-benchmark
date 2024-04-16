@@ -81,7 +81,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 10
   ret i64 %5
@@ -97,7 +97,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 31
-  %3 = or i32 %0, %2
+  %3 = or i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5

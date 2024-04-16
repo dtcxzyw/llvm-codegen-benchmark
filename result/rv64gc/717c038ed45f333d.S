@@ -1,11 +1,14 @@
 func0000000000000008:                   # @func0000000000000008
-	slli	a1, a1, 16
-	srli	a1, a1, 33
+	lui	a2, 524288
+	addiw	a2, a2, -1
+	slli	a2, a2, 17
+	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slliw	a1, a1, 3
+	slli	a1, a1, 35
+	srli	a1, a1, 35
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

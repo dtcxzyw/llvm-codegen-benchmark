@@ -15,9 +15,9 @@ func0000000000000002:                   # @func0000000000000002
 	bseti	a0, a0, 14
 	ret
 func0000000000000022:                   # @func0000000000000022
-	lui	a2, 8192
-	and	a1, a1, a2
 	srli	a1, a1, 12
+	lui	a2, 2
+	and	a1, a1, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 14
 	bseti	a0, a0, 15

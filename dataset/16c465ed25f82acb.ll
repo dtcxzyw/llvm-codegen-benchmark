@@ -6,10 +6,9 @@ define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1023
   %3 = lshr i32 %2, 10
-  %4 = trunc i32 %3 to i8
-  %5 = select i1 %0, i8 4, i8 %4
-  %6 = zext i8 %5 to i32
-  ret i32 %6
+  %4 = and i32 %3, 255
+  %5 = select i1 %0, i32 4, i32 %4
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -19,10 +18,9 @@ define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 68719476735
   %3 = lshr i64 %2, 4
-  %4 = trunc i64 %3 to i32
-  %5 = select i1 %0, i32 268435455, i32 %4
-  %6 = zext i32 %5 to i64
-  ret i64 %6
+  %4 = and i64 %3, 4294967295
+  %5 = select i1 %0, i64 268435455, i64 %4
+  ret i64 %5
 }
 
 ; 3 occurrences:
@@ -34,10 +32,10 @@ define i64 @func0000000000000031(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 262120
   %3 = lshr i32 %2, 2
-  %4 = trunc i32 %3 to i16
-  %5 = select i1 %0, i16 0, i16 %4
-  %6 = zext nneg i16 %5 to i64
-  ret i64 %6
+  %.mask = and i32 %3, 65535
+  %4 = zext nneg i32 %.mask to i64
+  %5 = select i1 %0, i64 0, i64 %4
+  ret i64 %5
 }
 
 ; 4 occurrences:
@@ -50,10 +48,10 @@ define i64 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 262120
   %3 = lshr i32 %2, 2
-  %4 = trunc i32 %3 to i16
-  %5 = select i1 %0, i16 0, i16 %4
-  %6 = zext i16 %5 to i64
-  ret i64 %6
+  %.mask = and i32 %3, 65535
+  %4 = zext nneg i32 %.mask to i64
+  %5 = select i1 %0, i64 0, i64 %4
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

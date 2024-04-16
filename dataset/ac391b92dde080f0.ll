@@ -19,7 +19,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 31
+  %3 = and i32 %2, 30
   %4 = icmp ult i32 %3, 6
   %5 = select i1 %4, i32 1, i32 %1
   %6 = zext nneg i32 %5 to i64
@@ -37,8 +37,8 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 63
   %4 = icmp eq i8 %3, 0
-  %5 = select i1 %4, i32 2, i32 %1
-  %6 = zext nneg i32 %5 to i64
+  %5 = zext nneg i32 %1 to i64
+  %6 = select i1 %4, i64 2, i64 %5
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
@@ -64,8 +64,8 @@ define ptr @func0000000000000011(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967292
   %4 = icmp ult i64 %3, 858993460
-  %5 = select i1 %4, i32 0, i32 %1
-  %6 = zext i32 %5 to i64
+  %5 = zext i32 %1 to i64
+  %6 = select i1 %4, i64 0, i64 %5
   %7 = getelementptr inbounds i32, ptr %0, i64 %6
   ret ptr %7
 }

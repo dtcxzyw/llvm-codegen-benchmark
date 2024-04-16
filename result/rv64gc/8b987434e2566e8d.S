@@ -39,16 +39,14 @@ func000000000000000c:                   # @func000000000000000c
 .LBB5_2:                                # %entry
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a2, a2, 255
-	li	a3, 2
-	bgeu	a2, a3, .LBB6_2
+	andi	a2, a2, 254
+	bnez	a2, .LBB6_2
 	addiw	a0, a1, 1
 .LBB6_2:                                # %entry
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a2, a2, 31
-	li	a3, 15
-	bgeu	a3, a2, .LBB7_2
+	andi	a2, a2, 16
+	beqz	a2, .LBB7_2
 	addiw	a0, a1, -29
 .LBB7_2:                                # %entry
 	ret

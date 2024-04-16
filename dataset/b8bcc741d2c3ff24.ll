@@ -20,8 +20,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add i64 %3, 254
-  %5 = icmp ugt i64 %4, 509
+  %4 = add i64 %3, -256
+  %5 = icmp ult i64 %4, -510
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -32,10 +32,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add i32 %3, -20
-  %5 = icmp ne i32 %4, -1
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
+  %4 = icmp ne i32 %3, 19
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:

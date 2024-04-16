@@ -8,7 +8,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = tail call i32 @llvm.abs.i32(i32 %4, i1 true)
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

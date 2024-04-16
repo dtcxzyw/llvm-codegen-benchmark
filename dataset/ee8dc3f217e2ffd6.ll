@@ -9,7 +9,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = shl nuw i128 %3, 64
   %5 = sub i128 %4, %1
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = zext nneg i64 %2 to i128
   %4 = shl nuw nsw i128 %3, 64
   %5 = sub nsw i128 %4, %1
-  %6 = icmp eq i128 %0, %5
+  %6 = icmp eq i128 %5, %0
   ret i1 %6
 }
 

@@ -59,7 +59,7 @@ entry:
   %2 = sdiv exact i64 %1, 12
   %3 = add nsw i64 %2, -1
   %4 = sdiv i64 %3, 2
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 

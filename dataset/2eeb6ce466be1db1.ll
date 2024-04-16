@@ -16,7 +16,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = tail call i32 @llvm.smax.i32(i32 %1, i32 %4)
   %6 = sext i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

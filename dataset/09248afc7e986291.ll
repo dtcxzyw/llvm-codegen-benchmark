@@ -50,7 +50,7 @@ entry:
 define i32 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add nsw i32 %1, -1
+  %2 = add i32 %1, 7
   %3 = and i32 %2, 7
   %4 = shl nuw nsw i32 1, %3
   ret i32 %4

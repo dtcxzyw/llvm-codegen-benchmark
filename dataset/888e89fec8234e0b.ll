@@ -21,7 +21,7 @@ entry:
   %3 = select i1 %2, i8 -55, i8 -48
   %4 = add i8 %3, %1
   %5 = shl nuw i8 %4, 4
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = select i1 %2, i8 0, i8 9
   %4 = add i8 %3, %1
   %5 = shl i8 %4, 4
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 

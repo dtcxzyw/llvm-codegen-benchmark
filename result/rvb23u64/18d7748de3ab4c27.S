@@ -11,8 +11,9 @@ func0000000000000005:                   # @func0000000000000005
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa0, fa5
 	beqz	a0, .LBB1_2
-	fli.s	fa0, 1.0
-.LBB1_2:                                # %entry
+	fli.s	fa0, 2.0
+	ret
+.LBB1_2:
 	fadd.s	fa0, fa0, fa0
 	ret
 .LCPI2_0:

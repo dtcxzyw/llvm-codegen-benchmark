@@ -18,7 +18,7 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 3
+  %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -32,7 +32,7 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 2
+  %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

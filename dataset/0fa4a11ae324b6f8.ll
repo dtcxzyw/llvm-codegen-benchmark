@@ -103,7 +103,7 @@ define i1 @func00000000000000c4(i64 %0, i1 %1) #0 {
 entry:
   %2 = and i64 %0, 65535
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ult i64 %0, 72057594037927936
   %6 = and i1 %5, %4
   ret i1 %6
@@ -119,7 +119,7 @@ define i1 @func00000000000000cc(i32 %0, i1 %1) #0 {
 entry:
   %2 = and i32 %0, -3
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = icmp ne i32 %0, 4
   %6 = and i1 %5, %4
   ret i1 %6

@@ -40,20 +40,19 @@ func000000000000000d:                   # @func000000000000000d
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	slli	a2, a2, 32
-	or	a1, a1, a2
-	lui	a2, 1048575
-	and	a1, a1, a2
+	lui	a3, 1048575
+	and	a1, a1, a3
+	or	a0, a0, a2
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
 	slliw	a2, a2, 24
-	or	a1, a1, a2
-	lui	a2, 1048064
-	addiw	a2, a2, 1
-	and	a1, a1, a2
+	lui	a3, 1048064
+	addiw	a3, a3, 1
+	and	a1, a1, a3
 	slliw	a0, a0, 1
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -67,10 +66,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000037:                   # @func0000000000000037
 	slliw	a2, a2, 24
-	or	a1, a1, a2
-	lui	a2, 1046544
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a3, 1046544
+	addiw	a3, a3, -1
+	and	a1, a1, a3
 	slliw	a0, a0, 16
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

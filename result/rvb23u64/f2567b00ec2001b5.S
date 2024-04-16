@@ -8,23 +8,23 @@ func000000000000003c:                   # @func000000000000003c
 	sll	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	add	a3, a3, a0
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	srli	a1, a3, 1
+	add	a0, a0, a3
+	sltu	a3, a0, a3
+	add	a1, a1, a3
+	srli	a3, a0, 1
 	zext.w	a4, a2
 	not	a5, a4
-	srl	a1, a1, a5
+	srl	a3, a3, a5
+	sll	a1, a1, a2
+	or	a1, a1, a3
+	addi	a3, a4, -64
+	slti	a3, a3, 0
+	czero.eqz	a1, a1, a3
+	sll	a4, a0, a4
+	czero.nez	a4, a4, a3
+	or	a1, a1, a4
 	sll	a0, a0, a2
-	or	a0, a0, a1
-	addi	a1, a4, -64
-	slti	a5, a1, 0
-	czero.eqz	a0, a0, a5
-	sll	a1, a3, a4
-	czero.nez	a1, a1, a5
-	or	a1, a1, a0
-	sll	a0, a3, a2
-	czero.eqz	a0, a0, a5
+	czero.eqz	a0, a0, a3
 	ret
 func0000000000000004:                   # @func0000000000000004
 	add.uw	a0, a2, a0

@@ -111,8 +111,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i64
-  %3 = lshr i64 %2, 6
+  %2 = lshr i8 %1, 6
+  %3 = zext nneg i8 %2 to i64
   %4 = getelementptr inbounds [4 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
@@ -133,8 +133,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 %2, 6
+  %2 = lshr i32 %1, 6
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds [5 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
@@ -144,8 +144,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
-  %2 = zext i16 %1 to i64
-  %3 = lshr i64 %2, 11
+  %2 = lshr i16 %1, 11
+  %3 = zext nneg i16 %2 to i64
   %4 = getelementptr [32 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
@@ -156,8 +156,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = lshr exact i64 %2, 5
+  %2 = lshr i32 %1, 5
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds [0 x %union.anon.273.2038379], ptr %0, i64 0, i64 %3
   ret ptr %4
 }

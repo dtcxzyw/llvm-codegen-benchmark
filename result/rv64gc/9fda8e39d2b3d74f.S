@@ -5,8 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	li	a2, 17
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	negw	a0, a0
+	subw	a0, a2, a0
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a2, a1
@@ -15,6 +14,5 @@ func0000000000000015:                   # @func0000000000000015
 	li	a2, 17
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	negw	a0, a0
+	subw	a0, a2, a0
 	ret

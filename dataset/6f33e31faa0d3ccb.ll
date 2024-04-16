@@ -33,8 +33,8 @@ define i64 @func0000000000000054(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %2, 15
   %4 = add nuw i16 %3, 32767
-  %5 = icmp sgt i16 %1, -1
-  %6 = select i1 %5, i16 %4, i16 %0
+  %5 = icmp slt i16 %1, 0
+  %6 = select i1 %5, i16 %0, i16 %4
   %7 = zext i16 %6 to i64
   ret i64 %7
 }

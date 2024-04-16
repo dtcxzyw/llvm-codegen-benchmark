@@ -6,11 +6,10 @@
 define i1 @func00000000000000cc(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
-  %4 = and i8 %3, -128
-  %5 = icmp ne i8 %4, 0
-  %6 = icmp ne i32 %0, 0
-  %7 = and i1 %6, %5
-  ret i1 %7
+  %4 = icmp slt i8 %3, 0
+  %5 = icmp ne i32 %0, 0
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 5 occurrences:
@@ -23,11 +22,10 @@ entry:
 define i1 @func000000000000001c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
-  %4 = and i8 %3, -128
-  %5 = icmp ne i8 %4, 0
-  %6 = icmp eq i8 %0, 0
-  %7 = and i1 %5, %6
-  ret i1 %7
+  %4 = icmp slt i8 %3, 0
+  %5 = icmp eq i8 %0, 0
+  %6 = and i1 %4, %5
+  ret i1 %6
 }
 
 ; 1 occurrences:

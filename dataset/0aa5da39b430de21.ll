@@ -10,7 +10,7 @@ entry:
   %1 = and i32 %0, 7
   %2 = sub nuw nsw i32 8, %1
   %3 = lshr i32 255, %2
-  %4 = trunc i32 %3 to i8
+  %4 = trunc nuw nsw i32 %3 to i8
   ret i8 %4
 }
 

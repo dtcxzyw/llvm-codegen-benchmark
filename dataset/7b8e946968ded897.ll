@@ -26,9 +26,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 30
   %4 = and i64 %3, 15
-  %5 = getelementptr inbounds [16 x %struct.rtree_ctx_cache_elm_s.2127069], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds [16 x %struct.rtree_ctx_cache_elm_s.2127069], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -39,9 +38,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 20
   %4 = and i64 %3, 16383
-  %5 = getelementptr [16384 x %struct.arena_coverage_t.2333064], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr [16384 x %struct.arena_coverage_t.2333064], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

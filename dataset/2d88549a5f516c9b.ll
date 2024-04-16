@@ -10,7 +10,7 @@ entry:
   %3 = fcmp ogt double %1, 1.000000e+00
   %4 = select i1 %3, double %1, double 1.000000e+00
   %5 = sitofp i32 %2 to double
-  %6 = fmul double %0, %5
+  %6 = fmul double %5, %0
   %7 = fdiv double %6, %4
   ret double %7
 }

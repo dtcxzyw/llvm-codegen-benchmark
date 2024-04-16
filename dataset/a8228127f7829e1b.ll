@@ -8,7 +8,7 @@ entry:
   %3 = sub i64 %0, %2
   %4 = add i64 %3, -64
   %5 = lshr i64 %4, 63
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

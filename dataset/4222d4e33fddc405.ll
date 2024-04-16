@@ -1025,9 +1025,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = mul nuw nsw i64 %0, 2000
-  %2 = lshr exact i64 %1, 1
-  ret i64 %2
+  %1 = mul nuw nsw i64 %0, 1000
+  ret i64 %1
 }
 
 ; 212 occurrences:

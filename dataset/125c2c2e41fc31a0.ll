@@ -171,7 +171,7 @@ entry:
   %3 = shl nuw i64 1, %2
   %4 = sub i64 %3, %1
   %5 = icmp ugt i64 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

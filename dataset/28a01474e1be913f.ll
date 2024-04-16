@@ -17,10 +17,9 @@ define i1 @func00000000000001c8(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 16
   %2 = shl nuw i64 %0, 5
-  %3 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %2, i64 %1)
-  %4 = extractvalue { i64, i1 } %3, 0
-  %5 = icmp ugt i64 %4, 9223372036854775792
-  ret i1 %5
+  %3 = add i64 %2, %1
+  %4 = icmp ugt i64 %3, 9223372036854775792
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

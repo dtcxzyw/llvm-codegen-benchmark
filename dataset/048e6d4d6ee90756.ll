@@ -7,7 +7,7 @@
 define i1 @func00000000000003a1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp sgt i64 %4, 16777215
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000111(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp eq i64 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -39,7 +39,7 @@ entry:
 define i1 @func00000000000001c8(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 1903126886
   %6 = icmp ugt i8 %0, 1
   %7 = select i1 %6, i1 true, i1 %5
@@ -54,7 +54,7 @@ entry:
 define i1 @func00000000000001cc(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i8 %0, 22
   %7 = select i1 %6, i1 true, i1 %5
@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000181(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ugt i32 %4, 131072
   %6 = icmp eq i64 %0, 3
   %7 = select i1 %6, i1 true, i1 %5
@@ -82,7 +82,7 @@ entry:
 define i1 @func0000000000000144(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp ult i32 %4, 64
   %6 = icmp ult i32 %0, 64
   %7 = select i1 %6, i1 true, i1 %5
@@ -95,7 +95,7 @@ entry:
 define i1 @func0000000000000184(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %1, %3
+  %4 = or disjoint i16 %3, %1
   %5 = icmp ugt i16 %4, -32768
   %6 = icmp ult i16 %0, 26624
   %7 = select i1 %6, i1 true, i1 %5
@@ -108,12 +108,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000166(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %1, %3
-  %5 = icmp slt i64 %4, 0
-  %6 = icmp slt i64 %0, 0
-  %7 = select i1 %6, i1 true, i1 %5
-  ret i1 %7
+  %3 = icmp slt i64 %1, 0
+  %4 = icmp slt i64 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

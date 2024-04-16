@@ -15,10 +15,9 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
-  %3 = udiv i32 %2, 1000000
-  %4 = mul i32 %3, -1000000
-  %5 = add i32 %4, %2
-  ret i32 %5
+  %.fr = freeze i32 %2
+  %3 = urem i32 %.fr, 1000000
+  ret i32 %3
 }
 
 ; 1 occurrences:

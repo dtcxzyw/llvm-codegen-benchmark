@@ -9,7 +9,7 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a4, a4, 32
-	or	a0, a3, a4
+	or	a0, a4, a3
 	add	a0, a0, a1
 	li	a1, 0
 	ret

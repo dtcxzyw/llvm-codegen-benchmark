@@ -902,8 +902,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %0, i32 1, i32 %1
-  %3 = sext i32 %2 to i64
+  %2 = sext i32 %1 to i64
+  %3 = select i1 %0, i64 1, i64 %2
   ret i64 %3
 }
 

@@ -245,10 +245,9 @@
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16
-  %3 = and i16 %0, -17
+  %3 = and i16 %0, -113
   %4 = or disjoint i16 %3, %2
-  %5 = and i16 %4, -97
-  ret i16 %5
+  ret i16 %4
 }
 
 attributes #0 = { nounwind }

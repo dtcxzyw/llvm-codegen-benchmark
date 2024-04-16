@@ -16,7 +16,7 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 1
-	addi	a1, a1, 29
+	addi	a1, a1, 5
 	andi	a1, a1, 7
 	li	a2, -5
 	czero.nez	a0, a2, a0

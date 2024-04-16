@@ -42,7 +42,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = call i64 @llvm.umin.i64(i64 %3, i64 2305843009213693951)
   ret i64 %4
 }

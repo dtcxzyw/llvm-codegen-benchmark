@@ -6,5 +6,5 @@ func0000000000000040:                   # @func0000000000000040
 func000000000000004c:                   # @func000000000000004c
 	zext.h	a2, a2
 	mul	a1, a1, a2
-	add.uw	a0, a1, a0
+	addw	a0, a0, a1
 	ret

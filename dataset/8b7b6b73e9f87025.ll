@@ -6,10 +6,8 @@ define i1 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
   %3 = sub i128 %0, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc i128 %4 to i64
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = icmp ult i128 %3, 18446744073709551616
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -30,9 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -4096
+  %2 = and i64 %1, 17592186040320
   %3 = sub i64 %0, %2
-  %4 = lshr exact i64 %3, 12
+  %4 = lshr i64 %3, 12
   %5 = trunc i64 %4 to i32
   %6 = icmp eq i32 %5, 0
   ret i1 %6

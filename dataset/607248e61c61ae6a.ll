@@ -8,7 +8,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

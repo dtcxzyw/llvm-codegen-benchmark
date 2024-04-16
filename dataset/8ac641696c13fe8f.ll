@@ -5,8 +5,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000ca(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
   %4 = icmp sgt i32 %3, -1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
@@ -18,8 +18,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, -1
   %4 = icmp sgt i32 %3, -1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
@@ -33,8 +33,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, -1
   %4 = icmp sgt i32 %3, -1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5

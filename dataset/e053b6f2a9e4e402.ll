@@ -512,9 +512,8 @@ define i1 @func0000000000000016(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr exact i64 %3, 4
-  %5 = icmp slt i64 %4, 17
-  ret i1 %5
+  %4 = icmp slt i64 %3, 272
+  ret i1 %4
 }
 
 ; 1735 occurrences:
@@ -2258,9 +2257,8 @@ define i1 @func000000000000001a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr exact i64 %3, 3
-  %5 = icmp sgt i64 %4, -1
-  ret i1 %5
+  %4 = icmp sgt i64 %3, -1
+  ret i1 %4
 }
 
 ; 1908 occurrences:
@@ -4177,9 +4175,8 @@ define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr exact i64 %3, 2
-  %5 = icmp ugt i64 %4, 4611686018427387903
-  ret i1 %5
+  %4 = icmp slt i64 %3, 0
+  ret i1 %4
 }
 
 ; 905 occurrences:
@@ -5093,9 +5090,8 @@ define i1 @func0000000000000014(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr exact i64 %3, 3
-  %5 = icmp ult i64 %4, 2
-  ret i1 %5
+  %4 = icmp ult i64 %3, 16
+  ret i1 %4
 }
 
 ; 794 occurrences:
@@ -5898,9 +5894,8 @@ define i1 @func000000000000000a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr i64 %3, 4
-  %5 = icmp sgt i64 %4, 0
-  ret i1 %5
+  %4 = icmp sgt i64 %3, 15
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -5911,9 +5906,8 @@ define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr i64 %3, 4
-  %5 = icmp ult i64 %4, 2
-  ret i1 %5
+  %4 = icmp ult i64 %3, 32
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -5925,9 +5919,8 @@ define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr i64 %3, 4
-  %5 = icmp ugt i64 %4, 1
-  ret i1 %5
+  %4 = icmp ugt i64 %3, 31
+  ret i1 %4
 }
 
 ; 5 occurrences:
@@ -5941,9 +5934,9 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = ashr i64 %3, 2
-  %5 = icmp eq i64 %4, 2
-  ret i1 %5
+  %.mask = and i64 %3, -4
+  %4 = icmp eq i64 %.mask, 8
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

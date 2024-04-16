@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i32 %2, -8
   %4 = add nsw i32 %1, 1
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = add nsw i32 %2, 3
   %4 = add i32 %1, -2
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = add nsw i32 %2, 3
   %4 = add nsw i32 %1, -2
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = add i32 %2, -58
   %4 = add nsw i32 %1, -60
   %5 = tail call i32 @llvm.smin.i32(i32 %4, i32 %3)
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

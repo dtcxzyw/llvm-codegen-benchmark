@@ -69,7 +69,7 @@ define i1 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -90,7 +90,7 @@ define i1 @func0000000000000018(i1 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

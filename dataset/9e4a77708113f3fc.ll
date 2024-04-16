@@ -7,7 +7,7 @@
 define i1 @func0000000000000024(float %0, float %1, i16 %2) #0 {
 entry:
   %3 = sitofp i16 %2 to float
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   %5 = fcmp ogt float %0, %1
   %6 = and i1 %5, %4
   ret i1 %6

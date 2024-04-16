@@ -20,7 +20,7 @@
 define i128 @func0000000000000010(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
-  %3 = or disjoint i128 %0, %2
+  %3 = or disjoint i128 %2, %0
   %4 = mul i128 %3, 47026247687942121848144207491837523525
   %5 = add i128 %4, 1442695040888963407
   ret i128 %5
@@ -33,7 +33,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
-  %3 = or disjoint i32 %0, %2
+  %3 = or disjoint i32 %2, %0
   %4 = mul nuw nsw i32 %3, 63
   %5 = add nuw nsw i32 %4, 63
   ret i32 %5

@@ -16,7 +16,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000044(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = add nsw i16 %2, -48
+  %3 = add i16 %2, 8144
   %4 = icmp eq i16 %1, 48
   %5 = select i1 %4, i16 %0, i16 %3
   %6 = shl i16 %5, 3
@@ -29,7 +29,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
+  %3 = add i64 %2, 4611686018427387903
   %4 = icmp ult i32 %1, 16777216
   %5 = select i1 %4, i64 %0, i64 %3
   %6 = shl i64 %5, 2

@@ -18,10 +18,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i32
-  %3 = select i1 %0, i32 %2, i32 1
-  %4 = icmp eq i32 %3, 0
-  ret i1 %4
+  %2 = xor i1 %1, true
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

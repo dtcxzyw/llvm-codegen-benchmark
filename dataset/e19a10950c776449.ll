@@ -14,11 +14,9 @@
 define ptr @func0000000000000016(i16 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = getelementptr %struct.NodeInfo.1661113, ptr %3, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 22
-  %6 = zext nneg i16 %0 to i64
-  %7 = getelementptr [128 x i8], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext nneg i16 %0 to i64
+  %5 = getelementptr %struct.NodeInfo.1661113, ptr %3, i64 %1, i32 6, i64 %4
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -29,11 +27,9 @@ entry:
 define ptr @func000000000000001f(i16 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
-  %4 = getelementptr inbounds %struct.cdf_catalog_entry_t.1712586, ptr %3, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = zext nneg i16 %0 to i64
-  %7 = getelementptr inbounds [256 x i16], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext nneg i16 %0 to i64
+  %5 = getelementptr inbounds %struct.cdf_catalog_entry_t.1712586, ptr %3, i64 %1, i32 3, i64 %4
+  ret ptr %5
 }
 
 ; 4 occurrences:
@@ -45,11 +41,9 @@ entry:
 define ptr @func000000000000001b(i8 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 6728
-  %4 = getelementptr inbounds %struct.stbi__huffman.1870818, ptr %3, i64 %1
-  %5 = getelementptr inbounds i8, ptr %4, i64 1024
-  %6 = zext i8 %0 to i64
-  %7 = getelementptr inbounds [256 x i8], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext i8 %0 to i64
+  %5 = getelementptr inbounds %struct.stbi__huffman.1870818, ptr %3, i64 %1, i32 2, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:

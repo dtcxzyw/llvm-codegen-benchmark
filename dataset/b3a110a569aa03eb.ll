@@ -6,8 +6,8 @@
 define i1 @func0000000000000030(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = tail call noundef i16 @llvm.bswap.i16(i16 %2)
-  %4 = icmp ugt i16 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ult i16 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ declare i16 @llvm.bswap.i16(i16) #1
 define i1 @func0000000000000028(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = tail call noundef i16 @llvm.bswap.i16(i16 %2)
-  %4 = icmp ult i16 %1, %3
+  %4 = icmp ugt i16 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp ult i32 %1, %3
+  %4 = icmp ugt i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -51,8 +51,8 @@ declare i32 @llvm.bswap.i32(i32) #1
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp eq i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -64,7 +64,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.bswap.i32(i32 %2)
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }

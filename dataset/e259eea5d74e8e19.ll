@@ -15,7 +15,7 @@ entry:
   %3 = select i1 %0, double %1, double %2
   %4 = bitcast double %3 to i64
   %5 = lshr i64 %4, 60
-  %6 = trunc i64 %5 to i32
+  %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }
 

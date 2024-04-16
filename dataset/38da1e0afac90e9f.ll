@@ -63,7 +63,7 @@
 define i32 @func0000000000000000(i48 %0) #0 {
 entry:
   %1 = lshr i48 %0, 16
-  %2 = trunc i48 %1 to i32
+  %2 = trunc nuw i48 %1 to i32
   %3 = ashr i32 %2, 16
   ret i32 %3
 }
@@ -85,7 +85,7 @@ entry:
 define i32 @func0000000000000008(i48 %0) #0 {
 entry:
   %1 = lshr exact i48 %0, 16
-  %2 = trunc i48 %1 to i32
+  %2 = trunc nuw i48 %1 to i32
   %3 = ashr i32 %2, 16
   ret i32 %3
 }

@@ -12,10 +12,9 @@ func0000000000000006:                   # @func0000000000000006
 	fmv.d	fs0, fa0
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	add	a2, a2, a0
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a2
 	call	__floatuntidf
 	fdiv.d	fa0, fa0, fs0
 	ld	ra, 8(sp)                       # 8-byte Folded Reload

@@ -11,8 +11,10 @@ func0000000000000046:                   # @func0000000000000046
 	srli	a0, a0, 3
 	lui	a1, 748983
 	addi	a1, a1, -585
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	slli	a2, a1, 33
+	add	a1, a1, a2
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sub	a0, a0, a1
@@ -36,9 +38,12 @@ func0000000000000048:                   # @func0000000000000048
 	srli	a0, a0, 2
 	lui	a1, 838861
 	addi	a1, a1, -819
-	mulw	a0, a0, a1
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	slli	a2, a1, 32
+	add	a1, a1, a2
+	mul	a0, a0, a1
+	srliw	a0, a0, 1
+	slli	a0, a0, 1
+	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a0, a0, a1

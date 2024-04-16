@@ -14,7 +14,7 @@ entry:
   %3 = or i64 %1, %2
   %4 = trunc i64 %3 to i16
   %5 = and i16 %4, 255
-  %6 = or disjoint i16 %0, %5
+  %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 

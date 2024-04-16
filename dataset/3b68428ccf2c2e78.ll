@@ -6,7 +6,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 4, i64 0
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = and i64 %1, -8
   %7 = add i64 %5, %6
   ret i64 %7
@@ -23,7 +23,7 @@ define i16 @func000000000000001f(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i16 7, i16 11
-  %5 = add nuw nsw i16 %0, %4
+  %5 = add nuw nsw i16 %4, %0
   %6 = and i16 %1, 2
   %7 = add nuw nsw i16 %5, %6
   ret i16 %7

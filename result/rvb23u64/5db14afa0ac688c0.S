@@ -8,7 +8,8 @@ func000000000000060c:                   # @func000000000000060c
 	andi	a2, a2, 255
 	addi	a2, a2, -128
 	snez	a2, a2
-	add	a1, a1, a2
+	neg	a1, a1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

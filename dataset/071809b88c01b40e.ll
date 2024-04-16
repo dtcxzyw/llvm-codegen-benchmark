@@ -12,7 +12,7 @@ entry:
   %4 = or disjoint i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = urem i64 %4, %5
-  %7 = trunc i64 %6 to i32
+  %7 = trunc nuw i64 %6 to i32
   ret i32 %7
 }
 

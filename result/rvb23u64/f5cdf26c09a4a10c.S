@@ -23,14 +23,15 @@ func0000000000000043:                   # @func0000000000000043
 	li	a2, -2
 	zext.w	a2, a2
 	sltu	a1, a2, a1
+	zext.w	a2, a0
+	sh1add.uw	a0, a0, a2
+	slli	a0, a0, 3
 	czero.nez	a0, a0, a1
-	lui	a2, 65536
-	addi	a2, a2, -1
+	li	a2, 3
+	slli	a2, a2, 31
+	addi	a2, a2, -24
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
-	zext.w	a1, a0
-	sh1add.uw	a0, a0, a1
-	slli	a0, a0, 3
 	ret
 func0000000000000037:                   # @func0000000000000037
 	sext.w	a1, a1

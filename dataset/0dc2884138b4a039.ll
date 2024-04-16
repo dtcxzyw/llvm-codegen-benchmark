@@ -24,8 +24,8 @@ entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, 2
   %4 = ashr exact i64 %0, 2
-  %5 = add nsw i64 %3, %4
-  %6 = icmp eq i64 %5, 0
+  %5 = sub nsw i64 0, %4
+  %6 = icmp eq i64 %3, %5
   ret i1 %6
 }
 

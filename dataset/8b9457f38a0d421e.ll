@@ -6,11 +6,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000075(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, %0
-  %3 = sub nuw nsw i32 -1021, %2
-  %4 = sub nsw i32 54, %0
-  %5 = sub nsw i32 %4, %3
-  ret i32 %5
+  %2 = add i32 %1, 1075
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

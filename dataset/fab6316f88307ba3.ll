@@ -20,7 +20,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = call i32 @llvm.smax.i32(i32 %3, i32 2)
   %5 = sitofp i32 %4 to float
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

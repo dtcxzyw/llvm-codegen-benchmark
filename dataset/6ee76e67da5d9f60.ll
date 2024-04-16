@@ -11,7 +11,7 @@ entry:
   %2 = sdiv i16 %1, 8
   %3 = add nsw i16 %2, 1
   %4 = sext i16 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = sdiv i16 %1, 8
   %3 = add nsw i16 %2, 1
   %4 = sext i16 %3 to i64
-  %5 = mul i64 %0, %4
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 

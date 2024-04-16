@@ -23,7 +23,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %1, 8
   %5 = or disjoint i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7
 }

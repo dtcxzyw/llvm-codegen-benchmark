@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = mul nuw nsw i32 %1, 255
   %5 = mul nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -20,7 +20,7 @@ entry:
   %3 = mul i32 %2, 800
   %4 = and i32 %1, 65535
   %5 = mul i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

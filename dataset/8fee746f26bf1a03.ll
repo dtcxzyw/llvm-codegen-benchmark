@@ -11,7 +11,7 @@ entry:
   %4 = add nuw nsw i64 %3, 9
   %5 = lshr i64 %2, %4
   %6 = lshr i64 %5, %1
-  %7 = add nuw nsw i64 %0, %6
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

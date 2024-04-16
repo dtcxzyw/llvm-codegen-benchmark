@@ -134,9 +134,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 24
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -145,9 +145,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 24
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -176,9 +176,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 32
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr inbounds i8, ptr %3, i64 %2
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr i8, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 32
   ret ptr %4
 }
 
@@ -199,9 +199,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr inbounds %"class.std::unique_ptr.1632052", ptr %3, i64 %2
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr %"class.std::unique_ptr.1632052", ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
 
@@ -210,9 +210,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -1
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.1998939, ptr %3, i64 %2
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr %struct.page.1998939, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -64
   ret ptr %4
 }
 
@@ -221,9 +221,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.pmd_t.2018405, ptr %3, i64 %2
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr %struct.pmd_t.2018405, ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }
 

@@ -55,10 +55,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -2147483648
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, float 0x7FF0000000000000, float 0xFFF0000000000000
-  ret float %3
+  %1 = icmp sgt i32 %0, -1
+  %2 = select i1 %1, float 0x7FF0000000000000, float 0xFFF0000000000000
+  ret float %2
 }
 
 ; 1 occurrences:
@@ -66,10 +65,10 @@ entry:
 ; Function Attrs: nounwind
 define float @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, 63
-  %2 = icmp ugt i8 %1, 31
-  %3 = select i1 %2, float 1.000000e+00, float -1.000000e+00
-  ret float %3
+  %1 = and i8 %0, 32
+  %.not = icmp eq i8 %1, 0
+  %2 = select i1 %.not, float -1.000000e+00, float 1.000000e+00
+  ret float %2
 }
 
 attributes #0 = { nounwind }

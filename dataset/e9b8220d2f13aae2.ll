@@ -5,12 +5,12 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
-  %2 = zext i64 %1 to i128
-  %3 = freeze i128 %2
-  %4 = freeze i128 %0
-  %5 = udiv i128 %4, %3
-  %6 = mul i128 %5, %3
-  ret i128 %6
+  %.fr = freeze i64 %1
+  %2 = zext i64 %.fr to i128
+  %3 = freeze i128 %0
+  %4 = urem i128 %3, %2
+  %5 = sub nuw i128 %3, %4
+  ret i128 %5
 }
 
 ; 1 occurrences:
@@ -18,12 +18,12 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
-  %2 = zext nneg i64 %1 to i128
-  %3 = freeze i128 %2
-  %4 = freeze i128 %0
-  %5 = udiv i128 %4, %3
-  %6 = mul i128 %5, %3
-  ret i128 %6
+  %.fr = freeze i64 %1
+  %2 = zext i64 %.fr to i128
+  %3 = freeze i128 %0
+  %4 = urem i128 %3, %2
+  %5 = sub nuw i128 %3, %4
+  ret i128 %5
 }
 
 attributes #0 = { nounwind }

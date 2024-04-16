@@ -10,7 +10,7 @@ entry:
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 15
   %5 = select i1 %1, i8 %4, i8 0
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = trunc nuw i40 %2 to i32
   %4 = and i32 %3, 65536
   %5 = select i1 %1, i32 %4, i32 65536
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

@@ -32,8 +32,8 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	addi	a1, a1, -4
 	andi	a1, a1, 7
+	xori	a1, a1, 4
 	or	a0, a0, a1
 	lui	a1, 4096
 	addiw	a1, a1, -1000

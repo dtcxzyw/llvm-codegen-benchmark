@@ -19,10 +19,9 @@ define i1 @func000000000000044c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %0
-  %5 = add i64 %1, -1
-  %6 = icmp ne i64 %5, 0
-  %7 = select i1 %6, i1 %4, i1 false
-  ret i1 %7
+  %5 = icmp ne i64 %1, 1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
 }
 
 ; 3 occurrences:
@@ -50,10 +49,9 @@ define i1 @func00000000000005cc(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 4
   %4 = icmp ne ptr %3, %0
-  %5 = add nsw i64 %1, -1
-  %6 = icmp ne i64 %5, 0
-  %7 = select i1 %6, i1 %4, i1 false
-  ret i1 %7
+  %5 = icmp ne i64 %1, 1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
 }
 
 ; 3 occurrences:
@@ -65,10 +63,9 @@ define i1 @func00000000000004cc(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %0
-  %5 = add i8 %1, 1
-  %6 = icmp ne i8 %5, 8
-  %7 = select i1 %6, i1 %4, i1 false
-  ret i1 %7
+  %5 = icmp ne i8 %1, 7
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
 }
 
 ; 4 occurrences:

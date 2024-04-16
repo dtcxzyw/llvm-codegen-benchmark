@@ -182,10 +182,9 @@ define i1 @func0000000000000034(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = trunc i64 %3 to i32
-  %5 = sub nsw i32 %4, %1
-  %6 = icmp sgt i32 %5, 0
-  %7 = or i1 %6, %0
-  ret i1 %7
+  %5 = icmp sgt i32 %4, %1
+  %6 = or i1 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

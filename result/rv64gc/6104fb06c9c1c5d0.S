@@ -25,14 +25,14 @@ func000000000000001e:                   # @func000000000000001e
 	srli	a2, a2, 13
 	lui	a3, 119
 	addiw	a3, a3, -762
-	mul	a4, a2, a3
-	mulhu	a2, a2, a3
+	mulhu	a4, a2, a3
+	mul	a2, a2, a3
+	add	a0, a0, a2
+	sltu	a2, a0, a2
+	add	a1, a1, a4
 	add	a1, a1, a2
-	add	a4, a4, a0
-	sltu	a0, a4, a0
-	add	a1, a1, a0
-	slli	a0, a1, 13
-	srli	a4, a4, 51
-	or	a0, a0, a4
+	slli	a2, a1, 13
+	srli	a0, a0, 51
+	or	a0, a0, a2
 	srli	a1, a1, 51
 	ret

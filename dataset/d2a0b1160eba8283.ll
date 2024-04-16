@@ -5,11 +5,10 @@
 define i1 @func000000000000019a(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -18,11 +17,10 @@ entry:
 define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = icmp ugt i64 %5, 2305843009213693951
-  ret i1 %6
+  %3 = add i64 %2, %0
+  %.mask = and i64 %3, 2147483648
+  %4 = icmp ne i64 %.mask, 0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -33,11 +31,10 @@ entry:
 define i1 @func0000000000000096(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nsw i32 %0, %2
-  %4 = shl i32 %3, 16
-  %5 = ashr exact i32 %4, 16
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %3 = add nsw i32 %2, %0
+  %.mask = and i32 %3, 32768
+  %4 = icmp ne i32 %.mask, 0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -48,11 +45,10 @@ entry:
 define i1 @func0000000000000196(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %0, %2
-  %4 = shl i32 %3, 16
-  %5 = ashr exact i32 %4, 16
-  %6 = icmp slt i32 %5, 0
-  ret i1 %6
+  %3 = add nuw nsw i32 %2, %0
+  %.mask = and i32 %3, 32768
+  %4 = icmp ne i32 %.mask, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

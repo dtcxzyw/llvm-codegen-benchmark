@@ -138,7 +138,7 @@ entry:
 define double @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -16446
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = sitofp i32 %3 to double
   ret double %4
 }

@@ -145,7 +145,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, -2
+  %1 = add i64 %0, 4294967294
   %2 = and i64 %1, 4294967294
   %3 = or disjoint i64 %2, 1
   ret i64 %3

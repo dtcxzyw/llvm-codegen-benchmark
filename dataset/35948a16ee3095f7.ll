@@ -181,7 +181,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

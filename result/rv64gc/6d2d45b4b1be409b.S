@@ -3,7 +3,9 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a2, a2, 3
 	bnez	a2, .LBB0_2
 	li	a1, 1
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB0_2:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret

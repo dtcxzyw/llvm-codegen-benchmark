@@ -5,7 +5,7 @@
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %0, %2
+  %3 = mul nuw i64 %2, %0
   %4 = lshr i64 %3, 32
   %5 = sub nsw i64 3221225472, %4
   ret i64 %5

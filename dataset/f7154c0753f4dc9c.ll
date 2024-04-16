@@ -26,7 +26,7 @@ define float @func0000000000000001(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call noundef float @llvm.fmuladd.f32(float %1, float 0.000000e+00, float %2)
   %4 = fmul float %3, 0.000000e+00
-  %5 = fadd float %0, %4
+  %5 = fadd float %4, %0
   ret float %5
 }
 

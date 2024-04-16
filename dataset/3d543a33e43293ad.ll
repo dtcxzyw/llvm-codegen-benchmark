@@ -18,8 +18,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 31
-  %4 = shl nuw nsw i8 %3, 2
+  %3 = shl i8 %2, 2
+  %4 = and i8 %3, 124
   %5 = select i1 %0, i8 %4, i8 %1
   ret i8 %5
 }

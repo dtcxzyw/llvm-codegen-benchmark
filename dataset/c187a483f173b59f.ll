@@ -16,7 +16,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = and i32 %0, 2047
   %4 = call i32 @llvm.umin.i32(i32 %3, i32 %2)
-  %5 = trunc i32 %4 to i16
+  %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
 

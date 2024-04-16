@@ -9,7 +9,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fneg float %4
-  %6 = fcmp olt float %0, %5
+  %6 = fcmp ogt float %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
   %5 = fneg float %4
-  %6 = fcmp ogt float %0, %5
+  %6 = fcmp olt float %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = fcmp ogt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fneg double %4
-  %6 = fcmp olt double %0, %5
+  %6 = fcmp ogt double %5, %0
   ret i1 %6
 }
 

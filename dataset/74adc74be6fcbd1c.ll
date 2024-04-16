@@ -42,7 +42,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = add nsw i32 %1, 1
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -105,7 +105,7 @@ entry:
   %3 = add i64 %2, -1553255926290448384
   %4 = and i64 %1, -8446744073709551616
   %5 = add i64 %4, %3
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -125,7 +125,7 @@ entry:
   %3 = add nuw nsw i32 %2, 28
   %4 = and i32 %1, 16
   %5 = add nuw nsw i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -149,7 +149,7 @@ entry:
   %3 = add nsw i32 %2, 80
   %4 = and i32 %1, -8
   %5 = add nsw i32 %4, %3
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

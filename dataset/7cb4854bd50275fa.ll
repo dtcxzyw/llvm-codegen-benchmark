@@ -15,7 +15,7 @@ entry:
   %3 = call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = call i32 @llvm.umax.i32(i32 %3, i32 1)
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = tail call i16 @llvm.umin.i16(i16 %1, i16 %2)
   %4 = tail call i16 @llvm.umax.i16(i16 %3, i16 1)
   %5 = zext nneg i16 %4 to i64
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 

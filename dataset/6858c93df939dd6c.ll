@@ -12,8 +12,9 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = udiv i64 %0, %2
-  %4 = mul i64 %3, %2
+  %.fr = freeze i64 %0
+  %3 = urem i64 %.fr, %2
+  %4 = sub nuw i64 %.fr, %3
   ret i64 %4
 }
 
@@ -23,8 +24,9 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = udiv i64 %0, %2
-  %4 = mul i64 %3, %2
+  %.fr = freeze i64 %0
+  %3 = urem i64 %.fr, %2
+  %4 = sub nuw i64 %.fr, %3
   ret i64 %4
 }
 
@@ -34,8 +36,9 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = udiv i64 %0, %2
-  %4 = mul nuw i64 %3, %2
+  %.fr = freeze i64 %0
+  %3 = urem i64 %.fr, %2
+  %4 = sub nuw i64 %.fr, %3
   ret i64 %4
 }
 

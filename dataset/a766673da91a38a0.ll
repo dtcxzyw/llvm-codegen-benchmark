@@ -20,7 +20,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i32 4, i32 5
   %6 = icmp sgt i32 %0, 7
   %7 = select i1 %6, i32 6, i32 %5
@@ -34,7 +34,7 @@ entry:
 define i32 @func00000000000000c6(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 85
-  %4 = and i1 %1, %3
+  %4 = and i1 %3, %1
   %5 = select i1 %4, i32 4, i32 5
   %6 = icmp slt i32 %0, 0
   %7 = select i1 %6, i32 3, i32 %5

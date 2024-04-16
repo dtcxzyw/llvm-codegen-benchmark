@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = mul nuw nsw i32 %3, 60
   %5 = mul nuw nsw i32 %1, 3600
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -23,7 +23,7 @@ entry:
   %3 = and i64 %2, 2097151
   %4 = mul nsw i64 %3, -683901
   %5 = mul nuw nsw i64 %1, 136657
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -62,7 +62,7 @@ entry:
   %3 = and i64 %2, 2097151
   %4 = mul nuw nsw i64 %3, 136657
   %5 = mul nuw nsw i64 %1, 654183
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -78,7 +78,7 @@ entry:
   %3 = and i64 %2, 2097151
   %4 = mul nsw i64 %3, -997805
   %5 = mul nuw nsw i64 %1, 470296
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -94,7 +94,7 @@ entry:
   %3 = and i64 %2, 2097151
   %4 = mul nuw nsw i64 %3, 666643
   %5 = mul nsw i64 %1, -997805
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -110,7 +110,7 @@ entry:
   %3 = and i64 %2, 2097151
   %4 = mul nsw i64 %3, -683901
   %5 = mul nsw i64 %1, -997805
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -123,7 +123,7 @@ entry:
   %3 = and i32 %2, 134217727
   %4 = mul nsw i32 %3, 8147
   %5 = mul nsw i32 %1, 7873
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -149,7 +149,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = mul nuw nsw i32 %3, 7103
   %5 = mul nsw i32 %1, 7873
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   %7 = add nuw i32 %6, %4
   ret i32 %7
 }
@@ -162,7 +162,7 @@ entry:
   %3 = and i32 %2, 32767
   %4 = mul nsw i32 %3, 100663319
   %5 = mul nsw i32 %1, 50331653
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   %7 = add nuw i32 %6, %4
   ret i32 %7
 }
@@ -188,7 +188,7 @@ entry:
   %3 = and i64 %2, 1099511627775
   %4 = mul i64 %3, 1610612741
   %5 = mul i64 %1, 2654435769
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -201,7 +201,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = mul nuw nsw i32 %3, 1260
   %5 = mul nuw nsw i32 %1, 12600
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -214,7 +214,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = mul nuw nsw i32 %3, 1260
   %5 = mul nuw nsw i32 %1, 12600
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }

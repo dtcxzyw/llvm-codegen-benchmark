@@ -6,7 +6,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 1461
   %3 = shl nsw i32 %2, 2
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = add nsw i32 %4, 2
   ret i32 %5
 }
@@ -30,7 +30,7 @@ define i64 @func0000000000000055(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl nsw i64 %2, 4
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = add nsw i64 %4, 31
   ret i64 %5
 }
@@ -43,7 +43,7 @@ define i64 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl nsw i64 %2, 4
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   %5 = add i64 %4, 31
   ret i64 %5
 }

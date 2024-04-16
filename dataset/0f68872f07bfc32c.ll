@@ -21,7 +21,7 @@ entry:
   %4 = icmp ugt i64 %3, 8
   %5 = sub i64 8, %2
   %6 = select i1 %4, i64 %5, i64 %1
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

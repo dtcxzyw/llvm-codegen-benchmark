@@ -5,11 +5,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 3
-  %4 = and i32 %1, 3
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = icmp eq i32 %5, 3
-  ret i1 %6
+  %.v = select i1 %0, i32 %1, i32 %2
+  %3 = and i32 %.v, 3
+  %4 = icmp eq i32 %3, 3
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -18,10 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 2047
-  %4 = and i32 %1, 65535
+  %3 = and i32 %2, 1984
+  %4 = and i32 %1, 65472
   %5 = select i1 %0, i32 %4, i32 %3
-  %6 = icmp ult i32 %5, 64
+  %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
 

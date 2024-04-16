@@ -1,9 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
-	li	a3, -1
-	slli	a3, a3, 42
-	add	a2, a2, a3
-	srai	a2, a2, 63
-	and	a1, a1, a2
+	bseti	a3, zero, 42
+	slt	a2, a2, a3
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

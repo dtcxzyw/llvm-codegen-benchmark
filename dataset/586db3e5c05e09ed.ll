@@ -291,7 +291,7 @@ entry:
   %3 = shl i32 %2, 5
   %4 = shl i32 %1, 5
   %5 = icmp ugt i32 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

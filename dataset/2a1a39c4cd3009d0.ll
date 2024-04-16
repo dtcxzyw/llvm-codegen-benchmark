@@ -11,7 +11,7 @@
 define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = and i16 %0, %2
+  %3 = and i16 %2, %0
   %4 = and i16 %3, 32767
   ret i16 %4
 }

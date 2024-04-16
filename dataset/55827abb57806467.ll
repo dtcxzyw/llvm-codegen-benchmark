@@ -32,9 +32,9 @@
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %2, 2
-  %4 = freeze ptr %0
-  %5 = getelementptr inbounds ptr, ptr %4, i64 %3
+  %3 = freeze ptr %0
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -44,9 +44,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = add i64 %2, 2
-  %4 = freeze ptr %0
-  %5 = getelementptr ptr, ptr %4, i64 %3
+  %3 = freeze ptr %0
+  %4 = getelementptr ptr, ptr %3, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }
 

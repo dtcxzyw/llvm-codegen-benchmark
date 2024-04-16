@@ -17,11 +17,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000111(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds ptr, ptr %0, i64 %1
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr null, ptr %2
-  %5 = icmp eq ptr %4, null
-  ret i1 %5
+  %2 = icmp eq ptr %0, null
+  ret i1 %2
 }
 
 ; 4 occurrences:
@@ -34,8 +31,8 @@ define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr %struct.eventfs_attr.2011201, ptr %0, i64 %1
   %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr null, ptr %2
-  %5 = icmp eq ptr %4, null
+  %4 = icmp eq ptr %2, null
+  %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
 
@@ -46,9 +43,9 @@ entry:
 define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr [32 x i8], ptr %0, i64 %1
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr null, ptr %2
-  %5 = icmp ne ptr %4, null
+  %3 = icmp ne ptr %0, null
+  %4 = icmp ne ptr %2, null
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -57,11 +54,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000011c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds double, ptr %0, i64 %1
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, ptr null, ptr %2
-  %5 = icmp ne ptr %4, null
-  ret i1 %5
+  %2 = icmp ne ptr %0, null
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

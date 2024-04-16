@@ -9,8 +9,8 @@
 define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp sgt i32 %1, -1
-  %5 = select i1 %4, ptr %0, ptr %3
+  %4 = icmp slt i32 %1, 0
+  %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
 }
 
@@ -91,9 +91,9 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ne i32 %1, 0
-  %5 = select i1 %4, ptr %0, ptr %3
-  ret ptr %5
+  %.not = icmp eq i32 %1, 0
+  %4 = select i1 %.not, ptr %3, ptr %0
+  ret ptr %4
 }
 
 ; 3 occurrences:

@@ -148,11 +148,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 4
-  %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 8
-  ret i32 %4
+  %1 = and i32 %0, 7
+  %2 = icmp eq i32 %1, 4
+  %3 = select i1 %2, i32 0, i32 8
+  ret i32 %3
 }
 
 ; 2 occurrences:

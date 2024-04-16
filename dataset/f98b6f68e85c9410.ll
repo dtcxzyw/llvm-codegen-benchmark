@@ -206,9 +206,9 @@ entry:
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = icmp ne i64 %2, 0
-  %4 = select i1 %3, i32 16, i32 0
-  ret i32 %4
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i32 0, i32 16
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -218,9 +218,9 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 10, i32 11
-  ret i32 %4
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 11, i32 10
+  ret i32 %3
 }
 
 ; 1 occurrences:

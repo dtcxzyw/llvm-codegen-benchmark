@@ -245,8 +245,8 @@ entry:
 define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -2147483648, %1
-  %3 = icmp sgt i32 %1, -1
-  %4 = select i1 %3, i32 %2, i32 %0
+  %3 = icmp slt i32 %1, 0
+  %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
 

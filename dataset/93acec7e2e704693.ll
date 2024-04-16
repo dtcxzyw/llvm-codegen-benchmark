@@ -36,7 +36,7 @@ entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, -2
   %4 = icmp ult i64 %3, 4097
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

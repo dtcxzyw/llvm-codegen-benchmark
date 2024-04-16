@@ -7,7 +7,7 @@ entry:
   %3 = xor i8 %1, -128
   %4 = icmp ugt i8 %2, -33
   %5 = select i1 %4, i8 %3, i8 %1
-  %6 = add i8 %0, %5
+  %6 = add i8 %5, %0
   ret i8 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = xor i16 %1, 127
   %4 = icmp ugt i16 %2, 126
   %5 = select i1 %4, i16 %3, i16 %1
-  %6 = add nuw nsw i16 %0, %5
+  %6 = add nuw nsw i16 %5, %0
   ret i16 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = xor i32 %1, -2147483648
   %4 = icmp slt i8 %2, 0
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = add nuw nsw i32 %0, %5
+  %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = xor i32 %1, -2147483648
   %4 = icmp slt i8 %2, 0
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   ret i32 %6
 }
 

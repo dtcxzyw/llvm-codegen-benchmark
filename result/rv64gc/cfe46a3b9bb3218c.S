@@ -6,9 +6,9 @@ func0000000000000054:                   # @func0000000000000054
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	seqz	a1, a0
-	add	a2, a0, a0
-	add	a1, a1, a2
-	sltu	a0, a1, a0
+	add	a1, a1, a0
+	not	a0, a0
+	sltu	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srai	a0, a0, 4
@@ -18,7 +18,7 @@ func0000000000000044:                   # @func0000000000000044
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	seqz	a1, a0
-	add	a2, a0, a0
-	add	a1, a1, a2
-	sltu	a0, a1, a0
+	add	a1, a1, a0
+	not	a0, a0
+	sltu	a0, a0, a1
 	ret

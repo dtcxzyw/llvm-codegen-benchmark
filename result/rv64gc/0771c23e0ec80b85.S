@@ -1,28 +1,22 @@
 func0000000000000001:                   # @func0000000000000001
-	and	a0, a0, a1
-	andi	a0, a0, 1
-	seqz	a0, a0
+	andi	a1, a1, 1
+	seqz	a1, a1
+	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
-	andi	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	slli	a0, a0, 63
-	srai	a0, a0, 63
+	andi	a1, a1, 14
+	snez	a1, a1
 	and	a0, a0, a1
-	andi	a0, a0, 15
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	li	a0, 23
-	sltiu	a0, a0, 32
-	ret
-.LBB3_2:
-	slli	a0, a1, 1
-	srli	a0, a0, 1
-	sltiu	a0, a0, 32
+	li	a2, -63
+	srli	a2, a2, 1
+	and	a1, a1, a2
+	seqz	a1, a1
+	xori	a0, a0, 1
+	or	a0, a0, a1
 	ret

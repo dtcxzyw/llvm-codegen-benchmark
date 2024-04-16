@@ -9,7 +9,7 @@ define i1 @func0000000000000005(float %0, i16 %1) #0 {
 entry:
   %2 = sitofp i16 %1 to float
   %3 = fmul float %2, 1.000000e+01
-  %4 = fcmp ugt float %0, %3
+  %4 = fcmp ult float %3, %0
   ret i1 %4
 }
 
@@ -23,7 +23,7 @@ define i1 @func0000000000000008(float %0, i16 %1) #0 {
 entry:
   %2 = sitofp i16 %1 to float
   %3 = fmul float %2, 1.000000e+01
-  %4 = fcmp oeq float %0, %3
+  %4 = fcmp oeq float %3, %0
   ret i1 %4
 }
 
@@ -43,7 +43,7 @@ define i1 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 1.250000e-01
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   ret i1 %4
 }
 
@@ -57,7 +57,7 @@ define i1 @func0000000000000003(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3FB1111120000000
-  %4 = fcmp ult float %0, %3
+  %4 = fcmp ugt float %3, %0
   ret i1 %4
 }
 
@@ -75,7 +75,7 @@ define i1 @func0000000000000002(float %0, i8 %1) #0 {
 entry:
   %2 = sitofp i8 %1 to float
   %3 = fmul float %2, 0x3F80204080000000
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   ret i1 %4
 }
 
@@ -89,7 +89,7 @@ define i1 @func000000000000000a(float %0, i8 %1) #0 {
 entry:
   %2 = sitofp i8 %1 to float
   %3 = fmul float %2, 0x3F80204080000000
-  %4 = fcmp ole float %0, %3
+  %4 = fcmp oge float %3, %0
   ret i1 %4
 }
 
@@ -101,7 +101,7 @@ define i1 @func000000000000000c(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp oge float %0, %3
+  %4 = fcmp ole float %3, %0
   ret i1 %4
 }
 
@@ -113,7 +113,7 @@ define i1 @func000000000000000b(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp ule float %0, %3
+  %4 = fcmp uge float %3, %0
   ret i1 %4
 }
 
@@ -125,7 +125,7 @@ define i1 @func000000000000000d(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp uge float %0, %3
+  %4 = fcmp ule float %3, %0
   ret i1 %4
 }
 
@@ -137,7 +137,7 @@ define i1 @func0000000000000007(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3EF0000000000000
-  %4 = fcmp une float %0, %3
+  %4 = fcmp une float %3, %0
   ret i1 %4
 }
 

@@ -31,9 +31,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr %struct.io_hash_bucket.2025400, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr %struct.io_hash_bucket.2025400, ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 2 occurrences:
@@ -45,9 +44,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 16383
-  %6 = getelementptr inbounds %"struct.Imf_3_2::(anonymous namespace)::HufDec.2200730", ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 8
-  ret ptr %7
+  %6 = getelementptr inbounds %"struct.Imf_3_2::(anonymous namespace)::HufDec.2200730", ptr %0, i64 %5, i32 1
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -55,7 +53,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i64
+  %3 = zext nneg i8 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 4294967295
   %6 = getelementptr inbounds %struct.RoseLongLitHashEntry.2245288, ptr %0, i64 %5

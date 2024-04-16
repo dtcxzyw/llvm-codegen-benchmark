@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = sext i32 %0 to i64
-  %2 = add nsw i64 %1, 1
-  %3 = shl i64 %2, 32
+  %1 = zext i32 %0 to i64
+  %2 = shl nuw i64 %1, 32
+  %3 = add i64 %2, 4294967296
   %4 = ashr exact i64 %3, 32
   ret i64 %4
 }

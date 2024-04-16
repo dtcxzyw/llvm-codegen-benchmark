@@ -11,7 +11,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = sdiv i16 %2, 100
   %4 = sext i16 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp slt i64 %5, 0
   ret i1 %6
 }
@@ -29,7 +29,7 @@ entry:
   %2 = trunc i64 %1 to i16
   %3 = sdiv i16 %2, 100
   %4 = sext i16 %3 to i64
-  %5 = add nsw i64 %0, %4
+  %5 = add nsw i64 %4, %0
   %6 = icmp sgt i64 %5, 0
   ret i1 %6
 }

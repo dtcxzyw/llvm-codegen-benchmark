@@ -12,7 +12,7 @@
 define i96 @func0000000000000003(i96 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = or i8 %1, %3
+  %4 = or i8 %3, %1
   %5 = icmp eq i8 %4, 0
   %6 = select i1 %5, i96 0, i96 8
   %7 = or disjoint i96 %6, %0

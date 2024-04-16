@@ -9,10 +9,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 -1
-  %3 = getelementptr i8, ptr %2, i64 11
-  %4 = getelementptr i8, ptr %3, i64 %0
-  ret ptr %4
+  %2 = getelementptr i8, ptr %1, i64 10
+  %3 = getelementptr i8, ptr %2, i64 %0
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -20,10 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 60
-  %3 = getelementptr inbounds i8, ptr %2, i64 1
-  %4 = getelementptr inbounds %struct._zend_jit_trace_stack.1718192, ptr %3, i64 %0
-  ret ptr %4
+  %2 = getelementptr inbounds i8, ptr %1, i64 61
+  %3 = getelementptr inbounds %struct._zend_jit_trace_stack.1718192, ptr %2, i64 %0
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -31,10 +29,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %1, i64 -148
-  %3 = getelementptr i8, ptr %2, i64 148
-  %4 = getelementptr i32, ptr %3, i64 %0
-  ret ptr %4
+  %2 = getelementptr i32, ptr %1, i64 %0
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

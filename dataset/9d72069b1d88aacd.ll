@@ -27,7 +27,7 @@ entry:
 define i64 @func00000000000000ed(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw i64 %1, 56
   %6 = or disjoint i64 %4, %5
   %7 = add nsw i64 %6, 8
@@ -73,7 +73,7 @@ entry:
 define i8 @func000000000000000c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = shl i8 %2, 5
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = shl i8 %1, 4
   %6 = or disjoint i8 %4, %5
   %7 = add i8 %6, 64

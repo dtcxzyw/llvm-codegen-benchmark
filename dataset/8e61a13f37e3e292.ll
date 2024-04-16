@@ -64,9 +64,8 @@ define ptr @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %3, i64 %2, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -80,9 +79,8 @@ define ptr @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.scatterlist.1993498, ptr %3, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.scatterlist.1993498, ptr %3, i64 %2, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:

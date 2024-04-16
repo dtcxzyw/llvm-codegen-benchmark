@@ -5,10 +5,10 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr i64 %2, 32
-  %4 = trunc i64 %3 to i32
-  %5 = shl i32 %4, 5
-  ret i32 %5
+  %sh.diff = lshr i64 %2, 27
+  %tr.sh.diff = trunc i64 %sh.diff to i32
+  %3 = and i32 %tr.sh.diff, -32
+  ret i32 %3
 }
 
 ; 6 occurrences:
@@ -22,10 +22,10 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = ashr exact i64 %2, 3
-  %4 = trunc i64 %3 to i32
-  %5 = shl i32 %4, 1
-  ret i32 %5
+  %sh.diff = lshr i64 %2, 2
+  %tr.sh.diff = trunc i64 %sh.diff to i32
+  %3 = and i32 %tr.sh.diff, -2
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

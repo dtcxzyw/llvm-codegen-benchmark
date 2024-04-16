@@ -14,7 +14,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 4
   %5 = or disjoint i64 %4, 8
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 4
   %5 = or disjoint i64 %4, 8
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -42,7 +42,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 1
   %5 = or disjoint i64 %4, 6
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -57,7 +57,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 5
   %5 = or disjoint i64 %4, 8
   %6 = getelementptr inbounds i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

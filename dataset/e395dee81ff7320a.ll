@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 65528
-  %2 = trunc i64 %1 to i16
+  %1 = trunc i64 %0 to i16
+  %2 = and i16 %1, -8
   %3 = urem i16 %2, 40
   ret i16 %3
 }

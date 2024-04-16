@@ -13,7 +13,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = shl i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = mul nsw i64 %0, %6
+  %7 = mul nsw i64 %6, %0
   ret i64 %7
 }
 

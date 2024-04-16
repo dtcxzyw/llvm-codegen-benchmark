@@ -8,7 +8,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = sitofp i32 %3 to float
   %5 = fsub float %1, %4
-  %6 = fcmp ogt float %0, %5
+  %6 = fcmp olt float %5, %0
   ret i1 %6
 }
 

@@ -6,11 +6,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp eq i32 %0, 70
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 40, i32 %0
-  %5 = icmp slt i32 %4, 0
-  ret i1 %5
+  %2 = icmp slt i32 %0, 0
+  ret i1 %2
 }
 
 ; 2 occurrences:
@@ -19,11 +16,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp eq i32 %0, 70
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 40, i32 %0
-  %5 = icmp ne i32 %4, 0
-  ret i1 %5
+  %2 = icmp ne i32 %0, 0
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -31,10 +25,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp slt i32 %0, 3
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 0, i32 %0
-  %5 = icmp eq i32 %4, 8
+  %2 = icmp sgt i32 %0, 2
+  %not. = xor i1 %1, true
+  %3 = select i1 %not., i1 true, i1 %2
+  %4 = icmp eq i32 %0, 8
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -77,11 +72,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
 entry:
+  %not. = xor i1 %1, true
   %2 = icmp eq i64 %0, 0
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i64 1, i64 %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %3 = select i1 %not., i1 %2, i1 false
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -89,11 +83,13 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006a(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp slt i32 %0, 0
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = select i1 %3, i32 0, i32 %0
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %2 = icmp sgt i32 %0, -1
+  %3 = select i1 %1, i1 true, i1 %2
+  ret i1 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

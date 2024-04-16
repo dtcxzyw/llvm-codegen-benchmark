@@ -21,7 +21,7 @@ entry:
   %2 = shl i32 %1, 28
   %3 = ashr exact i32 %2, 27
   %4 = add nsw i32 %3, 50
-  %5 = mul nuw nsw i32 %0, %4
+  %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
 }
 

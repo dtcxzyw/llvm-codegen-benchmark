@@ -49,10 +49,7 @@ func0000000000000014:                   # @func0000000000000014
 	seqz	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a2, a1
-	beqz	a2, .LBB6_2
-	mv	a0, a1
-.LBB6_2:                                # %entry
+	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret

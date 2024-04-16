@@ -17,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000098(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = icmp ult i32 %1, 64
+  %1 = and i64 %0, 4294967232
+  %2 = icmp eq i64 %1, 0
   %3 = and i64 %0, 7
   %4 = icmp ne i64 %3, 1
   %5 = or i1 %4, %2
@@ -45,8 +45,8 @@ define i1 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
   %2 = icmp ult i64 %1, 25
-  %3 = trunc i64 %0 to i32
-  %4 = icmp slt i32 %3, 0
+  %3 = and i64 %0, 2147483648
+  %4 = icmp ne i64 %3, 0
   %5 = or i1 %4, %2
   ret i1 %5
 }

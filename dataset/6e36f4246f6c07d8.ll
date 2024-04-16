@@ -11,10 +11,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:
-  %3 = fptrunc double %2 to float
-  %4 = fptrunc double %1 to float
-  %5 = select i1 %0, float %4, float %3
-  ret float %5
+  %.v = select i1 %0, double %1, double %2
+  %3 = fptrunc double %.v to float
+  ret float %3
 }
 
 attributes #0 = { nounwind }

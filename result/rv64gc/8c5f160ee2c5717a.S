@@ -35,12 +35,13 @@ func00000000000000da:                   # @func00000000000000da
 	xori	a0, a0, 1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
+	sext.w	a0, a0
 	lui	a3, 16
-	addi	a3, a3, -1
+	addiw	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000d4:                   # @func00000000000000d4

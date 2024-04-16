@@ -8,8 +8,8 @@ define i1 @func0000000000000044(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 56
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %1, %4
-  %6 = and i1 %0, %5
+  %5 = icmp ugt i32 %4, %1
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -29,8 +29,8 @@ define i1 @func0000000000000046(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %1, %4
-  %6 = and i1 %0, %5
+  %5 = icmp sgt i32 %4, %1
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

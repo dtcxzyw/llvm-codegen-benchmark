@@ -5,9 +5,9 @@
 ; Function Attrs: nounwind
 define i128 @func0000000000000040(i64 %0, i128 %1) #0 {
 entry:
-  %2 = mul nuw i128 %1, 10000000000000000000
-  %3 = trunc i128 %2 to i64
-  %4 = add i64 %0, %3
+  %2 = trunc i128 %1 to i64
+  %3 = mul i64 %2, -8446744073709551616
+  %4 = add i64 %3, %0
   %5 = zext i64 %4 to i128
   ret i128 %5
 }
@@ -17,9 +17,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw nsw i64 %1, 3
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %0, %3
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %2, 3
+  %4 = add i32 %3, %0
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

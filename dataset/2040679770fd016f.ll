@@ -24,7 +24,7 @@ define i16 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 false)
   %2 = srem i64 %1, 3600
-  %3 = trunc i64 %2 to i16
+  %3 = trunc nsw i64 %2 to i16
   ret i16 %3
 }
 

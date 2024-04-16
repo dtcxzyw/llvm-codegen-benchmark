@@ -101,9 +101,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 %2, i64 0
-  %4 = add nuw nsw i64 %0, 8192
-  %5 = icmp ugt i64 %4, %3
+  %3 = add nuw nsw i64 %0, 8192
+  %4 = icmp ugt i64 %3, %2
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 true, i1 %4
   ret i1 %5
 }
 

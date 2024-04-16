@@ -105,9 +105,8 @@ define i1 @func00000000000001da(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
-  %5 = sub nsw i32 %4, %0
-  %6 = icmp sgt i32 %5, -1
-  ret i1 %6
+  %5 = icmp sge i32 %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:

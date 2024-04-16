@@ -16,6 +16,7 @@ func0000000000000014:                   # @func0000000000000014
 	sub	a1, a1, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
+	andi	a0, a0, -2
 	addi	a0, a0, -2
-	sltiu	a0, a0, 2
+	seqz	a0, a0
 	ret

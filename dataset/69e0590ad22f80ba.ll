@@ -21,9 +21,8 @@ define ptr @func0000000000000005(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr [4 x %struct.anon.3.2000162], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %4 = getelementptr [4 x %struct.anon.3.2000162], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -33,9 +32,8 @@ define ptr @func0000000000000015(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr [5 x %struct.focaltech_finger_state.2000865], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr [5 x %struct.focaltech_finger_state.2000865], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -62,9 +60,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -39
-  %4 = getelementptr inbounds [196 x %struct.arena_stats_large_s.2127524], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr inbounds [196 x %struct.arena_stats_large_s.2127524], ptr %0, i64 0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -74,9 +71,8 @@ define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds [1 x %struct.ExprList_item.2129404], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 17
-  ret ptr %5
+  %4 = getelementptr inbounds [1 x %struct.ExprList_item.2129404], ptr %0, i64 0, i64 %3, i32 2, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

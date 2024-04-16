@@ -69,10 +69,10 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = and i64 %2, -6148914691236517206
-  %4 = and i64 %0, 6148914691236517205
+  %3 = and i64 %2, -6148914691236517208
+  %4 = and i64 %0, 6148914691236517204
   %5 = or disjoint i64 %3, %4
-  %6 = lshr i64 %5, 2
+  %6 = lshr exact i64 %5, 2
   ret i64 %6
 }
 
@@ -83,9 +83,9 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = and i64 %2, 64424509440
-  %4 = and i64 %0, -64424509448
+  %4 = and i64 %0, -64424509456
   %5 = or disjoint i64 %3, %4
-  %6 = lshr i64 %5, 4
+  %6 = lshr exact i64 %5, 4
   ret i64 %6
 }
 
@@ -96,9 +96,9 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
   %3 = and i32 %2, 1047552
-  %4 = and i32 %0, 1023
+  %4 = and i32 %0, 960
   %5 = or disjoint i32 %4, %3
-  %6 = lshr i32 %5, 6
+  %6 = lshr exact i32 %5, 6
   ret i32 %6
 }
 
@@ -108,10 +108,10 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = and i32 %2, 2097120
+  %3 = and i32 %2, 2031616
   %4 = and i32 %0, 14680064
   %5 = or disjoint i32 %3, %4
-  %6 = lshr i32 %5, 16
+  %6 = lshr exact i32 %5, 16
   ret i32 %6
 }
 

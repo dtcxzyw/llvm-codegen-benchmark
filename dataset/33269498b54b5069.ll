@@ -12,10 +12,9 @@
 define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = add nsw i64 %2, -4
-  %4 = getelementptr inbounds %"class.std::vector.5.1740032", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr %"class.std::vector.5.1740032", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -88
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -24,10 +23,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, 2
-  %4 = getelementptr inbounds float, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -4
-  ret ptr %5
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 4
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -36,10 +34,9 @@ entry:
 define ptr @func0000000000000005(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr %struct.FmgrInfo.2123341, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %3 = getelementptr %struct.FmgrInfo.2123341, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -40
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -34,10 +34,10 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000079:                   # @func0000000000000079
 	sext.w	a0, a0
-	li	a2, -200
-	czero.nez	a0, a2, a0
+	li	a2, 200
+	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
-	addi	a0, a0, 1008
+	addi	a0, a0, 808
 	ret
 func0000000000000062:                   # @func0000000000000062
 	andi	a0, a0, 255

@@ -65,7 +65,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fmuladd.f64(double %1, double 3.000000e+00, double %2)
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

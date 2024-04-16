@@ -103,9 +103,9 @@ entry:
   %2 = and i32 %1, 201326592
   %3 = icmp eq i32 %2, 67108864
   %4 = select i1 %3, i64 14628, i64 14592
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i64 14620, i64 %4
-  ret i64 %6
+  %.not = icmp eq i32 %0, 0
+  %5 = select i1 %.not, i64 %4, i64 14620
+  ret i64 %5
 }
 
 ; 1 occurrences:

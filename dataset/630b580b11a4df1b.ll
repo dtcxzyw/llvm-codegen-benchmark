@@ -12,9 +12,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = or i32 %0, 56320
-  %2 = lshr i32 %1, 6
-  %3 = trunc i32 %2 to i8
+  %1 = lshr i32 %0, 6
+  %2 = trunc i32 %1 to i8
+  %3 = or i8 %2, 112
   ret i8 %3
 }
 
@@ -28,9 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 3472339291344613424
-  %2 = lshr i64 %1, 8
-  %3 = trunc i64 %2 to i8
+  %1 = lshr i64 %0, 8
+  %2 = trunc i64 %1 to i8
+  %3 = or i8 %2, 48
   ret i8 %3
 }
 

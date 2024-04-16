@@ -1,22 +1,22 @@
 func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 1
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	addi	a0, a0, -2
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	addi	a0, a0, 1
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	addi	a0, a0, -1
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	addi	a0, a0, -1
@@ -42,7 +42,7 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, -1
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -2
@@ -71,5 +71,5 @@ func0000000000000013:                   # @func0000000000000013
 func000000000000000d:                   # @func000000000000000d
 	addi	a0, a0, 1
 	bset	a0, zero, a0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret

@@ -76,11 +76,10 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = and i64 %3, 72057594037927935
-  %5 = or i64 %0, %4
-  %6 = and i64 %1, 72057594037927935
-  %7 = or i64 %5, %6
-  ret i64 %7
+  %4 = or i64 %3, %1
+  %5 = and i64 %4, 72057594037927935
+  %6 = or i64 %5, %0
+  ret i64 %6
 }
 
 ; 2 occurrences:
@@ -91,7 +90,7 @@ define i8 @func000000000000000f(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw nsw i32 %2 to i8
   %4 = and i8 %3, 1
-  %5 = or disjoint i8 %0, %4
+  %5 = or disjoint i8 %4, %0
   %6 = and i8 %1, 4
   %7 = or disjoint i8 %5, %6
   ret i8 %7

@@ -19,7 +19,7 @@ func0000000000000101:                   # @func0000000000000101
 	ret
 func0000000000000156:                   # @func0000000000000156
 	srai	a2, a2, 32
-	mul	a0, a0, a2
-	mul	a1, a1, a2
+	mul	a0, a2, a0
+	mul	a1, a2, a1
 	slt	a0, a0, a1
 	ret

@@ -76,8 +76,8 @@ entry:
   %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = mul i32 %0, -10
-  %6 = add i32 %5, %4
-  %7 = icmp ne i32 %6, 0
+  %6 = sub i32 0, %4
+  %7 = icmp ne i32 %5, %6
   ret i1 %7
 }
 

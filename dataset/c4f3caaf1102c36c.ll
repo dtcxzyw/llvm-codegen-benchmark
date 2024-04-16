@@ -11,8 +11,8 @@
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to float
-  %3 = fsub float %0, %2
-  %4 = fsub float 1.000000e+00, %3
+  %3 = fsub float %2, %0
+  %4 = fadd float %3, 1.000000e+00
   ret float %4
 }
 

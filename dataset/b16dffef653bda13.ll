@@ -15,9 +15,9 @@
 define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr %struct.sk_buff_head.2013655, ptr %1, i64 %2
-  %4 = icmp eq ptr %0, %3
-  %5 = select i1 %4, ptr null, ptr %0
-  %6 = icmp eq ptr %5, null
+  %4 = icmp eq ptr %3, %0
+  %5 = icmp eq ptr %0, null
+  %6 = or i1 %4, %5
   ret i1 %6
 }
 

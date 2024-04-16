@@ -9,7 +9,7 @@ entry:
   %2 = fadd double %1, 5.000000e-01
   %3 = fptosi double %2 to i32
   %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

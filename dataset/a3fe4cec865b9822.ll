@@ -42,9 +42,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr [8 x %struct.ar_table_pair_struct.1554124], ptr %0, i64 0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 36 occurrences:
@@ -89,9 +88,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.1556231"], ptr %0, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 12
-  ret ptr %5
+  %4 = getelementptr inbounds [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.1556231"], ptr %0, i64 0, i64 %3, i32 0, i32 2
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -102,9 +100,8 @@ define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr inbounds [3 x %struct.rx_pkt_history_st.1588257], ptr %0, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
+  %4 = getelementptr [3 x %struct.rx_pkt_history_st.1588257], ptr %0, i64 0, i64 %3, i32 0, i32 2
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -115,9 +112,8 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [16 x %struct.CPUTLBDesc.1662950], ptr %0, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 56
-  ret ptr %5
+  %4 = getelementptr [16 x %struct.CPUTLBDesc.1662950], ptr %0, i64 0, i64 %3, i32 6, i64 0, i32 0, i32 1
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

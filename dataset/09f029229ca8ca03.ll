@@ -52,7 +52,7 @@ entry:
   %2 = sdiv i64 %1, 256
   %3 = and i64 %2, -8
   %4 = tail call i64 @llvm.smax.i64(i64 %3, i64 1)
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

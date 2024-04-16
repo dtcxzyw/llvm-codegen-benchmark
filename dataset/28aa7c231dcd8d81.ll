@@ -19,7 +19,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %1, 8
   %5 = or disjoint i16 %4, %3
-  %6 = and i16 %0, %5
+  %6 = and i16 %5, %0
   ret i16 %6
 }
 

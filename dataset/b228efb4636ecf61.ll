@@ -9,7 +9,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -2147483648
   %4 = sitofp i64 %3 to double
-  %5 = fadd double %0, %4
+  %5 = fadd double %4, %0
   ret double %5
 }
 

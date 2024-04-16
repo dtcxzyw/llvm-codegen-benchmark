@@ -132,7 +132,7 @@ define ptr @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds %class.default_map_entry.2082824, ptr %0, i64 %3
-  %5 = icmp eq ptr %1, %4
+  %5 = icmp eq ptr %4, %1
   %6 = select i1 %5, ptr %0, ptr %1
   ret ptr %6
 }

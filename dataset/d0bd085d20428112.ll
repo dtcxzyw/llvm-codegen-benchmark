@@ -18,7 +18,7 @@ entry:
 define double @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
-  %4 = mul i32 %0, %3
+  %4 = mul i32 %3, %0
   %5 = sitofp i32 %4 to double
   ret double %5
 }

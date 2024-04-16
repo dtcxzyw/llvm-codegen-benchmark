@@ -32,7 +32,7 @@ func000000000000001d:                   # @func000000000000001d
 .LBB2_3:                                # %entry
 	srl	a4, a6, a7
 	srai	a5, a5, 63
-	and	a2, a2, t0
+	and	a2, t0, a2
 	and	a3, a3, a4
 	and	a3, a3, a5
 	or	a0, a0, a2

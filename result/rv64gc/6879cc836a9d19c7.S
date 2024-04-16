@@ -3,7 +3,8 @@ func0000000000000631:                   # @func0000000000000631
 	addi	a2, a2, -133
 	snez	a2, a2
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000538:                   # @func0000000000000538
@@ -18,7 +19,7 @@ func000000000000063c:                   # @func000000000000063c
 	sext.w	a2, a2
 	snez	a2, a2
 	and	a1, a1, a2
-	add	a0, a0, a1
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000604:                   # @func0000000000000604
@@ -55,7 +56,8 @@ func000000000000020c:                   # @func000000000000020c
 	srliw	a2, a2, 29
 	seqz	a2, a2
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000638:                   # @func0000000000000638

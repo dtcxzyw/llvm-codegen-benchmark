@@ -6,8 +6,8 @@
 define i64 @func0000000000000017(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 4194304, i32 %1
-  %5 = zext i32 %4 to i64
+  %4 = zext i32 %1 to i64
+  %5 = select i1 %3, i64 4194304, i64 %4
   %6 = shl nuw nsw i64 %0, 1
   %7 = or disjoint i64 %6, %5
   ret i64 %7

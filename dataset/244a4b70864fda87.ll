@@ -24,7 +24,7 @@ entry:
   %2 = add i32 %1, 3
   %3 = and i32 %2, -4
   %4 = sub i32 0, %3
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -40,7 +40,7 @@ entry:
   %2 = add nuw i64 %1, 7
   %3 = and i64 %2, -8
   %4 = sub i64 0, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

@@ -40,7 +40,7 @@ entry:
   %3 = xor i64 %1, %2
   %4 = xor i64 %3, 5840696475078001361
   %5 = tail call i64 @llvm.fshl.i64(i64 %4, i64 %4, i64 32)
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   ret i64 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = xor i64 %1, %2
   %4 = xor i64 %3, 8387220255154660723
   %5 = tail call noundef i64 @llvm.fshl.i64(i64 %4, i64 %4, i64 16)
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   ret i64 %6
 }
 

@@ -9,8 +9,9 @@ func000000000000000c:                   # @func000000000000000c
 	sll	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
-	negw	a1, a1
-	sll	a0, a0, a1
+	li	a2, 64
+	subw	a2, a2, a1
+	sll	a0, a0, a2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	negw	a1, a1

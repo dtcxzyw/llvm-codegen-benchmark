@@ -7,7 +7,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = sub nsw i64 64, %2
   %4 = lshr i64 -1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 64, %2
   %4 = lshr i64 -1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   ret i64 %5
 }
 

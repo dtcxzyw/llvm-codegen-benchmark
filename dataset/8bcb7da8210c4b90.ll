@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define { i64, i1 } @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = shl nuw i64 %1, 4
+  %1 = shl i64 %0, 4
+  %2 = add i64 %1, 16
   %3 = add nsw i64 %0, 17
   %4 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %2, i64 %3)
   ret { i64, i1 } %4

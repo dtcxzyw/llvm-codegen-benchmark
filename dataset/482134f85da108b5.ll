@@ -20,7 +20,7 @@ entry:
   %3 = fneg float %2
   %4 = select i1 %1, float %3, float %2
   %5 = fdiv float 1.000000e+00, %4
-  %6 = fmul float %0, %5
+  %6 = fmul float %5, %0
   ret float %6
 }
 

@@ -6,9 +6,6 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
-	slli	a1, a1, 2
-	srli	a1, a1, 63
-	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	ret

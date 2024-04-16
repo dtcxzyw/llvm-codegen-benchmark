@@ -390,9 +390,9 @@
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = sdiv exact i64 %2, 56
-  %4 = sub nuw nsw i64 164703072086692425, %3
-  ret i64 %4
+  %.neg = sdiv exact i64 %2, -56
+  %3 = add nsw i64 %.neg, 164703072086692425
+  ret i64 %3
 }
 
 ; 415 occurrences:
@@ -815,9 +815,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = sdiv exact i64 %2, 40
-  %4 = sub nsw i64 0, %3
-  ret i64 %4
+  %.neg = sdiv exact i64 %2, -40
+  ret i64 %.neg
 }
 
 ; 4 occurrences:
@@ -829,9 +828,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = sdiv i32 %2, 4
-  %4 = sub nsw i32 0, %3
-  ret i32 %4
+  %.neg = sdiv i32 %2, -4
+  ret i32 %.neg
 }
 
 attributes #0 = { nounwind }

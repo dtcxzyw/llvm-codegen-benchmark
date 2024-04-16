@@ -39,9 +39,8 @@ func0000000000000016:                   # @func0000000000000016
 	slli	a0, a0, 1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	slli	a1, a1, 56
-	srai	a1, a1, 63
-	sub	a0, a0, a1
+	bexti	a1, a1, 7
+	add	a0, a0, a1
 	slli	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000

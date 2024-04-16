@@ -185,11 +185,11 @@
 define i1 @func00000000000001b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
-  %4 = sub nuw nsw i32 8, %3
-  %5 = lshr i32 %1, 24
-  %6 = add nuw nsw i32 %5, %4
-  %7 = icmp ult i32 %6, %0
-  ret i1 %7
+  %4 = lshr i32 %1, 24
+  %reass.sub = sub nsw i32 %4, %3
+  %5 = add i32 %reass.sub, 8
+  %6 = icmp ult i32 %5, %0
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

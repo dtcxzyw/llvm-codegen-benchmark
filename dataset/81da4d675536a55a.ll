@@ -50,7 +50,7 @@ entry:
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = zext i32 %3 to i64
   %5 = mul nuw nsw i64 %4, 1431655766
   %6 = lshr i64 %5, 32
@@ -152,7 +152,7 @@ entry:
 define i128 @func0000000000000026(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = zext i64 %3 to i128
   %5 = mul nuw nsw i128 %4, 2361183241434822607
   %6 = lshr i128 %5, 71
@@ -171,7 +171,7 @@ entry:
 define i128 @func00000000000000a6(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add nuw i64 %0, %2
+  %3 = add nuw i64 %2, %0
   %4 = zext i64 %3 to i128
   %5 = mul nuw nsw i128 %4, 2361183241434822607
   %6 = lshr i128 %5, 71

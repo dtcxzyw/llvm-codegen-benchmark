@@ -37,8 +37,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %4, %5
-  %7 = add nsw i64 %6, -1
+  %6 = xor i64 %5, -1
+  %7 = add i64 %6, %4
   ret i64 %7
 }
 

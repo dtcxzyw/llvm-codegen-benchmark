@@ -10,9 +10,9 @@ define i16 @func0000000000000000(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 4
-  %5 = or i32 %1, %4
+  %5 = or i32 %4, %1
   %6 = trunc i32 %5 to i16
-  %7 = or i16 %0, %6
+  %7 = or i16 %6, %0
   ret i16 %7
 }
 
@@ -27,9 +27,9 @@ define i16 @func0000000000000008(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = trunc i32 %5 to i16
-  %7 = or i16 %0, %6
+  %7 = or i16 %6, %0
   ret i16 %7
 }
 
@@ -40,9 +40,9 @@ define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 9
   %4 = and i64 %3, 16777184
-  %5 = or disjoint i64 %1, %4
+  %5 = or disjoint i64 %4, %1
   %6 = trunc i64 %5 to i32
-  %7 = or i32 %0, %6
+  %7 = or i32 %6, %0
   ret i32 %7
 }
 
@@ -56,9 +56,9 @@ define i8 @func0000000000000009(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 3
-  %5 = or disjoint i32 %1, %4
+  %5 = or disjoint i32 %4, %1
   %6 = trunc i32 %5 to i8
-  %7 = or disjoint i8 %0, %6
+  %7 = or disjoint i8 %6, %0
   ret i8 %7
 }
 

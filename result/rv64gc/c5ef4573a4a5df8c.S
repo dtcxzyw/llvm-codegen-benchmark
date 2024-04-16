@@ -53,10 +53,10 @@ func0000000000000541:                   # @func0000000000000541
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	li	a3, 12
-	mul	a1, a1, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
+	li	a2, -12
+	mul	a1, a1, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LCPI4_0:
@@ -122,10 +122,11 @@ func0000000000000551:                   # @func0000000000000551
 	ld	a3, %lo(.LCPI8_0)(a3)
 	srai	a2, a2, 3
 	mul	a2, a2, a3
-	slli	a3, a1, 2
-	add	a1, a1, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
+	slli	a2, a1, 2
+	neg	a1, a1
+	sub	a1, a1, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000544:                   # @func0000000000000544

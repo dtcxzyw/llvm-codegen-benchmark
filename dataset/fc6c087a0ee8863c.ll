@@ -27,10 +27,10 @@ entry:
 define i128 @func0000000000000011(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 63
-  %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, -1
-  %4 = zext nneg i64 %3 to i128
-  ret i128 %4
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = zext nneg i64 %2 to i128
+  ret i128 %3
 }
 
 ; 2 occurrences:

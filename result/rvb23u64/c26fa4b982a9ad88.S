@@ -1,8 +1,10 @@
 func0000000000000007:                   # @func0000000000000007
+	slli	a2, a2, 32
 	srli	a0, a0, 32
-	or	a1, a1, a2
 	slli	a1, a1, 32
-	or	a1, a1, a0
+	or	a0, a0, a1
+	bclri	a1, a0, 63
+	or	a1, a1, a2
 	li	a0, 0
 	ret
 func0000000000000019:                   # @func0000000000000019

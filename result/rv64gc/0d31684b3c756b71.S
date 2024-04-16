@@ -1,11 +1,12 @@
 func0000000000000077:                   # @func0000000000000077
-	addiw	a1, a1, 1
+	slli	a1, a1, 32
+	srli	a1, a1, 32
 	add	a0, a0, a1
-	addi	a0, a0, -59
+	addi	a0, a0, -58
 	ret
 func0000000000000075:                   # @func0000000000000075
-	sext.w	a1, a1
-	slli	a1, a1, 1
+	slli	a1, a1, 32
+	srli	a1, a1, 31
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

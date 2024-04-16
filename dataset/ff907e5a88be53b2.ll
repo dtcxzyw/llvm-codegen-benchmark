@@ -24,8 +24,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = select i1 %0, i64 %1, i64 8
-  %3 = sub nsw i64 8, %2
+  %2 = sub nsw i64 8, %1
+  %3 = select i1 %0, i64 %2, i64 0
   ret i64 %3
 }
 

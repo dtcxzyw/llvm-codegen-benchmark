@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 1, i32 -1
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %0, %4
+  %3 = sub nsw i32 0, %1
+  %4 = select i1 %2, i32 %1, i32 %3
+  %5 = add i32 %4, %0
   %6 = icmp ugt i32 %5, 59
   ret i1 %6
 }

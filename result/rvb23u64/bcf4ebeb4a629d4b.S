@@ -14,12 +14,11 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 6
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slli	a1, a1, 54
-	srli	a1, a1, 41
+	slliw	a1, a1, 13
 	lui	a2, 524288
 	and	a0, a0, a2
-	or	a0, a0, a1
-	lui	a1, 522240
+	lui	a2, 522240
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

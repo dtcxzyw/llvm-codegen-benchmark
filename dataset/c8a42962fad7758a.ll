@@ -100,11 +100,8 @@
 define i64 @func00000000000000ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = zext nneg i64 %2 to i128
-  %4 = zext i64 %0 to i128
-  %5 = mul nuw nsw i128 %4, %3
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %3 = mul i64 %2, %0
+  ret i64 %3
 }
 
 ; 162 occurrences:
@@ -274,11 +271,8 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 11
-  %3 = zext i64 %2 to i128
-  %4 = zext i64 %0 to i128
-  %5 = mul nuw i128 %4, %3
-  %6 = trunc i128 %5 to i64
-  ret i64 %6
+  %3 = mul i64 %2, %0
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

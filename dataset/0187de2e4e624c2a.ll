@@ -10,7 +10,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = mul nuw i128 %3, 11400714785074694791
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i64
+  %6 = trunc nuw i128 %5 to i64
   ret i64 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = mul nuw nsw i128 %3, 95
   %5 = lshr i128 %4, 64
-  %6 = trunc i128 %5 to i8
+  %6 = trunc nuw nsw i128 %5 to i8
   ret i8 %6
 }
 

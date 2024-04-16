@@ -43,8 +43,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -2
-  %2 = shl i32 %1, 29
+  %1 = shl i32 %0, 29
+  %2 = and i32 %1, -1073741824
   %3 = sub i32 0, %2
   ret i32 %3
 }
@@ -65,8 +65,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 3
-  %2 = shl nuw nsw i32 %1, 3
+  %1 = shl i32 %0, 3
+  %2 = and i32 %1, 24
   %3 = sub nuw nsw i32 32, %2
   ret i32 %3
 }
@@ -76,8 +76,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 1
-  %2 = shl nuw nsw i32 %1, 1
+  %1 = shl i32 %0, 1
+  %2 = and i32 %1, 2
   %3 = sub nsw i32 1, %2
   ret i32 %3
 }

@@ -9,7 +9,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
@@ -29,7 +29,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 1)
-  %5 = icmp eq i64 %0, %4
+  %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 

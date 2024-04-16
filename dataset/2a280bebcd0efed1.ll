@@ -6,9 +6,8 @@
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, %1
-  %3 = select i1 %2, i32 16, i32 0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %3 = select i1 %2, i64 16, i64 0
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -28,9 +27,8 @@ entry:
 define i16 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, %1
-  %3 = select i1 %2, i8 4, i8 6
-  %4 = zext nneg i8 %3 to i16
-  ret i16 %4
+  %3 = select i1 %2, i16 4, i16 6
+  ret i16 %3
 }
 
 ; 1 occurrences:

@@ -110,7 +110,7 @@
 define i32 @func000000000000000d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = call noundef i32 @llvm.smax.i32(i32 %0, i32 %4)
   %6 = add nsw i32 %5, 1
   ret i32 %6
@@ -195,7 +195,7 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 define i32 @func0000000000000009(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = call i32 @llvm.smax.i32(i32 %0, i32 %4)
   %6 = add nsw i32 %5, 1
   ret i32 %6

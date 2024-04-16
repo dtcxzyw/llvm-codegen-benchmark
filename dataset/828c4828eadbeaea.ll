@@ -48,7 +48,7 @@ entry:
   %2 = add nsw i32 %1, -4
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %3, 1
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
 }

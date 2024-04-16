@@ -13,7 +13,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = zext i4 %2 to i32
   %4 = shl nuw nsw i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -79,7 +79,7 @@ entry:
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, %1
   %5 = trunc i16 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 
@@ -91,7 +91,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 %3, %1
   %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
+  %6 = or i8 %5, %0
   ret i8 %6
 }
 

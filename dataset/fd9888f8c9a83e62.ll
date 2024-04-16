@@ -7,7 +7,7 @@ entry:
   %2 = and i16 %1, 16376
   %3 = or disjoint i16 %2, 4
   %4 = zext nneg i16 %3 to i64
-  %5 = icmp ult i64 %0, %4
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 

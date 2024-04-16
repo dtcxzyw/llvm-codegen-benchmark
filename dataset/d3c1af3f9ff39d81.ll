@@ -5,8 +5,8 @@
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 64
-  %3 = select i1 %2, i64 %0, i64 -1
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 127)
+  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 127)
+  %4 = select i1 %2, i64 %3, i64 127
   ret i64 %4
 }
 
@@ -24,8 +24,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 %0, i32 1023
-  %4 = call i32 @llvm.umin.i32(i32 %3, i32 1023)
+  %3 = call i32 @llvm.umin.i32(i32 %0, i32 1023)
+  %4 = select i1 %2, i32 %3, i32 1023
   ret i32 %4
 }
 
@@ -38,8 +38,8 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 define i64 @func0000000000000008(i64 %0, i128 %1) #0 {
 entry:
   %2 = icmp ult i128 %1, 18446744073709551616
-  %3 = select i1 %2, i64 %0, i64 -3
-  %4 = call i64 @llvm.umin.i64(i64 %3, i64 -3)
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 -3)
+  %4 = select i1 %2, i64 %3, i64 -3
   ret i64 %4
 }
 

@@ -1,7 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	andi	a0, a0, 1
-	bnez	a0, .LBB0_2
-	fmv.w.x	fa0, zero
-.LBB0_2:                                # %entry
-	fcvt.wu.s	a0, fa0, rtz
+	fcvt.wu.s	a1, fa0, rtz
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
 	ret

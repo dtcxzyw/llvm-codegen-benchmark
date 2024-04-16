@@ -15,10 +15,10 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(float %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ogt float %0, %4
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -33,10 +33,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c3(float %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ult float %0, %4
+  %5 = fcmp ugt float %4, %0
   ret i1 %5
 }
 
@@ -50,10 +50,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c2(float %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
   %4 = sitofp i32 %3 to float
-  %5 = fcmp olt float %0, %4
+  %5 = fcmp ogt float %4, %0
   ret i1 %5
 }
 
@@ -63,10 +63,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(double %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
   %4 = sitofp i32 %3 to double
-  %5 = fcmp oeq double %0, %4
+  %5 = fcmp oeq double %4, %0
   ret i1 %5
 }
 
@@ -75,10 +75,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c8(double %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = trunc i64 %2 to i32
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
   %4 = sitofp i32 %3 to double
-  %5 = fcmp oeq double %0, %4
+  %5 = fcmp oeq double %4, %0
   ret i1 %5
 }
 

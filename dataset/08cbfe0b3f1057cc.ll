@@ -128,8 +128,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 112
   %5 = select i1 %0, i64 1, i64 %4
-  %6 = add nsw i64 %5, %4
-  %7 = icmp ult i64 %6, %4
+  %6 = xor i64 %4, -1
+  %7 = icmp ugt i64 %5, %6
   ret i1 %7
 }
 

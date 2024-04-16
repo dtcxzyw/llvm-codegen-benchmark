@@ -9,8 +9,8 @@ entry:
   %3 = mul nsw i32 %2, 9
   %4 = sext i32 %3 to i64
   %5 = getelementptr double, ptr %0, i64 %4
-  %6 = add nuw nsw i64 %1, 1
-  %7 = getelementptr double, ptr %5, i64 %6
+  %6 = getelementptr double, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -23,8 +23,8 @@ entry:
   %3 = mul nsw i32 %2, 576
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds float, ptr %0, i64 %4
-  %6 = add nuw nsw i64 %1, 19
-  %7 = getelementptr inbounds float, ptr %5, i64 %6
+  %6 = getelementptr float, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 76
   ret ptr %7
 }
 
@@ -36,8 +36,8 @@ entry:
   %3 = mul nsw i32 %2, -2
   %4 = sext i32 %3 to i64
   %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = add nsw i64 %1, -1
-  %7 = getelementptr ptr, ptr %5, i64 %6
+  %6 = getelementptr ptr, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 

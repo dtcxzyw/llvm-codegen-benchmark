@@ -1,8 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
 	subw	a0, a0, a1
-	slti	a1, a0, 0
-	negw	a0, a0
-	czero.eqz	a0, a0, a1
+	negw	a1, a0
+	sraiw	a0, a0, 31
+	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1

@@ -21,11 +21,10 @@
 define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, -1
-  %4 = ptrtoint ptr %0 to i64
-  %5 = add i64 %3, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = ptrtoint ptr %0 to i64
+  %4 = add i64 %3, -1
+  %5 = icmp eq i64 %4, %2
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -35,11 +34,10 @@ entry:
 define i1 @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, -1
-  %4 = ptrtoint ptr %0 to i64
-  %5 = add i64 %4, %3
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %.neg = add i64 %2, 1
+  %3 = ptrtoint ptr %0 to i64
+  %4 = icmp ne i64 %.neg, %3
+  ret i1 %4
 }
 
 ; 4 occurrences:
@@ -51,11 +49,10 @@ entry:
 define i1 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, -1
-  %4 = ptrtoint ptr %0 to i64
-  %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %5, 8191
-  ret i1 %6
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = icmp ult i64 %4, -8192
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -66,11 +63,10 @@ entry:
 define i1 @func0000000000000004(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, -1
-  %4 = ptrtoint ptr %0 to i64
-  %5 = add i64 %4, %3
-  %6 = icmp ult i64 %5, 9
-  ret i1 %6
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = icmp ugt i64 %4, -10
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -381,9 +381,8 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %"class.re2::Prog::Inst.1554287", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.re2::Prog::Inst.1554287", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -403,9 +402,8 @@ define ptr @func0000000000000005(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.VirtIONetQueue.1664572, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 32
-  ret ptr %5
+  %4 = getelementptr %struct.VirtIONetQueue.1664572, ptr %0, i64 %3, i32 4
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -425,9 +423,8 @@ define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.b3Int4.1743034, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %struct.b3Int4.1743034, ptr %0, i64 %3, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -442,9 +439,8 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.aiFace.1752480, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr inbounds %struct.aiFace.1752480, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -454,9 +450,8 @@ define ptr @func000000000000000d(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.worker_pool.1997374, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.worker_pool.1997374, ptr %0, i64 %3, i32 2
+  ret ptr %4
 }
 
 ; 2 occurrences:

@@ -26,7 +26,7 @@ define ptr @func0000000000000041(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds %"struct.irr::scene::ISkinnedMesh::SWeight.1656169", ptr %0, i64 %6
   ret ptr %7

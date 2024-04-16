@@ -183,8 +183,8 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 6, i32 %0
-  %5 = call i32 @llvm.smax.i32(i32 %4, i32 0)
+  %4 = call i32 @llvm.smax.i32(i32 %0, i32 0)
+  %5 = select i1 %3, i32 6, i32 %4
   ret i32 %5
 }
 

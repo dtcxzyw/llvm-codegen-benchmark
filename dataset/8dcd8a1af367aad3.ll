@@ -8,7 +8,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ugt ptr %0, %5
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -4194304
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

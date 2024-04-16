@@ -30,10 +30,9 @@ entry:
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1023
-  %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, -6
-  %4 = and i32 %3, 65535
-  ret i32 %4
+  %2 = add nsw i16 %1, -6
+  %3 = zext i16 %2 to i32
+  ret i32 %3
 }
 
 ; 1 occurrences:

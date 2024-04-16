@@ -19,7 +19,7 @@ entry:
   %3 = sub i16 %1, %2
   %4 = icmp sgt i16 %3, 0
   %5 = select i1 %4, i8 1, i8 2
-  %6 = or disjoint i8 %0, %5
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -29,10 +29,10 @@ entry:
 define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = icmp ult i32 %3, 2
-  %5 = select i1 %4, i32 1, i32 4
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
+  %.inv = icmp ugt i32 %3, 1
+  %4 = select i1 %.inv, i32 4, i32 1
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -40,11 +40,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, 0
-  %5 = select i1 %4, i32 18, i32 2
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
+  %3 = icmp sgt i32 %1, %2
+  %4 = select i1 %3, i32 18, i32 2
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 ; 1 occurrences:
@@ -52,11 +51,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, 0
-  %5 = select i1 %4, i32 36, i32 4
-  %6 = or i32 %0, %5
-  ret i32 %6
+  %3 = icmp sgt i32 %1, %2
+  %4 = select i1 %3, i32 36, i32 4
+  %5 = or i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

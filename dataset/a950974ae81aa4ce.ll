@@ -14,7 +14,7 @@ entry:
   %2 = udiv i16 %1, 10
   %3 = urem i16 %2, 10
   %4 = icmp eq i16 %3, 0
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

@@ -19,7 +19,7 @@ define i1 @func0000000000000006(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fptosi double %3 to i64
-  %5 = icmp slt i64 %0, %4
+  %5 = icmp sgt i64 %4, %0
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ define i1 @func000000000000000a(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2
   %4 = fptosi double %3 to i64
-  %5 = icmp sgt i64 %0, %4
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

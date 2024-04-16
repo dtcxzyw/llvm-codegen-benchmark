@@ -34,7 +34,7 @@ entry:
 define i32 @func00000000000000ca(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = zext i8 %1 to i32
   %6 = add nsw i32 %4, %5
   %7 = lshr i32 %6, 10

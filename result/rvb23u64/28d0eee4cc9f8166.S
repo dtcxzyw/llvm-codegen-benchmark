@@ -7,8 +7,8 @@ func0000000000000198:                   # @func0000000000000198
 func00000000000001a8:                   # @func00000000000001a8
 	add	a1, a1, a2
 	add	a0, a0, a1
-	andi	a0, a0, 7
-	sltiu	a0, a0, 2
+	andi	a0, a0, 6
+	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2

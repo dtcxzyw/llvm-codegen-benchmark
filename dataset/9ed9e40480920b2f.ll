@@ -30,11 +30,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i32
-  %3 = mul i32 %0, 33
-  %4 = add i32 %3, %2
-  %5 = and i32 %4, 255
-  ret i32 %5
+  %2 = trunc i32 %0 to i8
+  %.tr = mul i8 %2, 33
+  %.narrow = add i8 %.tr, %1
+  %3 = zext i8 %.narrow to i32
+  ret i32 %3
 }
 
 ; 4 occurrences:

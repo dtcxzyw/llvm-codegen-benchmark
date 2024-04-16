@@ -40,7 +40,7 @@ entry:
   %4 = sdiv exact i64 %3, 12
   %5 = add nsw i64 %4, -2
   %6 = ashr exact i64 %5, 1
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

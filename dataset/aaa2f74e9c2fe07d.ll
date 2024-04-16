@@ -15,7 +15,7 @@ entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %3, i8 2, i8 0
   %5 = select i1 %1, i8 1, i8 %4
-  %6 = and i8 %0, %5
+  %6 = and i8 %5, %0
   ret i8 %6
 }
 
@@ -27,7 +27,7 @@ entry:
   %3 = icmp ult i64 %2, 67108864
   %4 = select i1 %3, i64 130023424, i64 -8388608
   %5 = select i1 %1, i64 32505856, i64 %4
-  %6 = and i64 %0, %5
+  %6 = and i64 %5, %0
   ret i64 %6
 }
 

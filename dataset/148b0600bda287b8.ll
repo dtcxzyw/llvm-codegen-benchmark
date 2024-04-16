@@ -17,11 +17,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sext i64 %1 to i128
-  %3 = sext i64 %0 to i128
-  %4 = mul nsw i128 %3, %2
-  %5 = trunc i128 %4 to i64
-  ret i64 %5
+  %2 = mul i64 %0, %1
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

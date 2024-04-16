@@ -8,8 +8,8 @@
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = mul nuw nsw i32 %0, 15700
-  %4 = add nuw nsw i32 %3, %2
+  %3 = mul i32 %0, 1364
+  %4 = add i32 %3, %2
   %5 = and i32 %4, 2047
   ret i32 %5
 }

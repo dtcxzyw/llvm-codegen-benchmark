@@ -9,7 +9,7 @@
 define i32 @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %1, %3
+  %4 = fmul float %3, %1
   %5 = fptosi float %4 to i32
   %6 = fptosi float %0 to i32
   %7 = add nsw i32 %5, %6

@@ -7,9 +7,9 @@
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 16
-  %2 = shl nsw i64 %1, 4
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
+  %.tr = trunc i64 %1 to i32
+  %2 = shl i32 %.tr, 4
+  ret i32 %2
 }
 
 ; 1 occurrences:
@@ -18,9 +18,9 @@ entry:
 define i32 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 48
-  %2 = shl nsw i64 %1, 2
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
+  %.tr = trunc i64 %1 to i32
+  %2 = shl i32 %.tr, 2
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

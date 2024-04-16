@@ -19,10 +19,10 @@
 define { i64, ptr } @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = sub i64 %0, %4
-  %6 = insertvalue { i64, ptr } poison, i64 %5, 0
-  ret { i64, ptr } %6
+  %.neg = sub i64 %1, %3
+  %4 = add i64 %.neg, %0
+  %5 = insertvalue { i64, ptr } poison, i64 %4, 0
+  ret { i64, ptr } %5
 }
 
 attributes #0 = { nounwind }

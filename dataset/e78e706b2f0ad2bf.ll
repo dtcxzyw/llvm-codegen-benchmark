@@ -114,10 +114,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp sle i32 %0, %2
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = sext i32 %4 to i64
-  ret i64 %5
+  %.not = icmp sgt i32 %0, %2
+  %3 = select i1 %.not, i32 %1, i32 %0
+  %4 = sext i32 %3 to i64
+  ret i64 %4
 }
 
 ; 2 occurrences:

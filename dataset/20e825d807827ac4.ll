@@ -103,8 +103,8 @@ entry:
   %1 = zext i64 %0 to i128
   %2 = mul nuw nsw i128 %1, 2361183241434822607
   %3 = lshr i128 %2, 71
-  %4 = mul nuw nsw i128 %3, 12379400392853802749
-  %5 = trunc i128 %4 to i64
+  %4 = trunc nuw nsw i128 %3 to i64
+  %5 = mul i64 %4, -6067343680855748867
   ret i64 %5
 }
 
@@ -116,8 +116,8 @@ entry:
   %1 = zext i64 %0 to i128
   %2 = mul nuw i128 %1, 17014118346046923173
   %3 = lshr i128 %2, 64
-  %4 = mul nuw nsw i128 %3, 10000000000000000000
-  %5 = trunc i128 %4 to i64
+  %4 = trunc nuw i128 %3 to i64
+  %5 = mul i64 %4, -8446744073709551616
   ret i64 %5
 }
 

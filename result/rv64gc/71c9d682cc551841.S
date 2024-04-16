@@ -23,10 +23,9 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 1
 	add	a5, a5, a2
 	sltu	a2, a5, a2
+	add	a0, a0, a5
+	sltu	a4, a0, a5
 	add	a1, a1, a3
 	add	a1, a1, a2
-	add	a2, a0, a5
-	sltu	a0, a2, a0
-	add	a1, a1, a0
-	mv	a0, a2
+	add	a1, a1, a4
 	ret

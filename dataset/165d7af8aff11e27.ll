@@ -23,7 +23,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = and i32 %1, 1
   %5 = icmp eq i32 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 
@@ -32,11 +32,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
-  %3 = zext i16 %2 to i32
-  %4 = and i32 %1, 65535
-  %5 = icmp ne i32 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
+  %3 = trunc i32 %1 to i16
+  %4 = icmp ne i16 %3, %2
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 3 occurrences:
@@ -49,7 +48,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = and i64 %1, -32
   %5 = icmp ugt i64 %4, %3
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

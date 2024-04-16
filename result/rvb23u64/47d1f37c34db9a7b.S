@@ -34,7 +34,7 @@ func00000000000000c8:                   # @func00000000000000c8
 func000000000000005a:                   # @func000000000000005a
 	andi	a2, a2, 1
 	add	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1

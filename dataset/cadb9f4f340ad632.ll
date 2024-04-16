@@ -8,7 +8,7 @@
 define i1 @func0000000000000252(double %0, double %1, double %2) #0 {
 entry:
   %3 = call noundef double @llvm.fabs.f64(double %2)
-  %4 = fcmp olt double %1, %3
+  %4 = fcmp ogt double %3, %1
   %5 = select i1 %4, double %3, double %1
   %6 = call noundef double @llvm.fabs.f64(double %0)
   %7 = fcmp olt double %6, %5

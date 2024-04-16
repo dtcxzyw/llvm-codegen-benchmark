@@ -9,8 +9,8 @@ define i1 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp ult i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -30,8 +30,8 @@ define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp eq i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp slt i32 %0, %5
+  %6 = icmp sgt i32 %5, %0
   ret i1 %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ne i32 %0, %5
+  %6 = icmp ne i32 %5, %0
   ret i1 %6
 }
 
@@ -82,8 +82,8 @@ define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp sgt i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 
@@ -94,8 +94,8 @@ define i1 @func0000000000000077(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %1, %4
-  %6 = icmp sle i32 %0, %5
+  %5 = or disjoint i32 %4, %1
+  %6 = icmp sge i32 %5, %0
   ret i1 %6
 }
 
@@ -110,7 +110,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, -2
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 
@@ -121,8 +121,8 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 4095
-  %5 = or i32 %1, %4
-  %6 = icmp eq i32 %0, %5
+  %5 = or i32 %4, %1
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 

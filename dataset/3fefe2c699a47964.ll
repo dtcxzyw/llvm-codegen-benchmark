@@ -8,7 +8,7 @@ define ptr @func000000000000018e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr [16 x i8], ptr %0, i64 0, i64 %6
   ret ptr %7
@@ -21,7 +21,7 @@ define ptr @func0000000000000021(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
   %7 = getelementptr inbounds [64 x %struct.iovec.1974891], ptr %0, i64 0, i64 %6
   ret ptr %7
@@ -70,7 +70,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds [0 x ptr], ptr %0, i64 0, i64 %6
   ret ptr %7
@@ -84,7 +84,7 @@ define ptr @func000000000000018f(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 232
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr inbounds [0 x ptr], ptr %0, i64 0, i64 %6
   ret ptr %7

@@ -17,16 +17,16 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	slli	a2, a2, 58
-	bltz	a2, .LBB2_2
-	mv	a0, a1
+	andi	a2, a2, 32
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:                                # %entry
-	ori	a0, a0, 257
+	ori	a0, a1, 257
 	ret
 func0000000000000019:                   # @func0000000000000019
-	slli	a2, a2, 59
-	bltz	a2, .LBB3_2
-	mv	a0, a1
+	andi	a2, a2, 16
+	beqz	a2, .LBB3_2
+	mv	a1, a0
 .LBB3_2:                                # %entry
-	ori	a0, a0, 8
+	ori	a0, a1, 8
 	ret

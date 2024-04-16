@@ -9,10 +9,10 @@ define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = or disjoint i32 %2, 1
-  %4 = and i32 %0, 511
-  %5 = icmp ult i32 %4, 256
-  %6 = select i1 %5, i32 %3, i32 0
-  ret i32 %6
+  %4 = and i32 %0, 256
+  %.not.not = icmp eq i32 %4, 0
+  %5 = select i1 %.not.not, i32 %3, i32 0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

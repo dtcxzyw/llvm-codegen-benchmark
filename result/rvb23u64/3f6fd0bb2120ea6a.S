@@ -10,10 +10,10 @@ func0000000000000001:                   # @func0000000000000001
 	sub	a5, a5, a4
 	sub	a5, a5, a3
 	neg	a2, a2
-	mul	a5, a5, a0
-	mulhu	a3, a0, a2
 	mul	a1, a1, a2
+	mulhu	a3, a2, a0
 	add	a1, a1, a3
+	mul	a5, a5, a0
 	add	a1, a1, a5
 	mul	a0, a0, a2
 	ret

@@ -9,9 +9,9 @@
 define float @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, float 1.000000e+00, float -1.000000e+00
-  %5 = fmul float %0, %1
-  %6 = fmul float %4, %5
+  %4 = fmul float %0, %1
+  %5 = fneg float %4
+  %6 = select i1 %3, float %4, float %5
   ret float %6
 }
 

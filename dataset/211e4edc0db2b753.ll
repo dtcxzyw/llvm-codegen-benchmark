@@ -83,8 +83,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
-  %1 = or disjoint i16 %0, 1
-  %2 = and i16 %1, -1027
+  %1 = and i16 %0, -1028
+  %2 = or disjoint i16 %1, 1
   ret i16 %2
 }
 
@@ -349,8 +349,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = or i64 %0, 8192
-  %2 = and i64 %1, -409601
+  %1 = and i64 %0, -417793
+  %2 = or disjoint i64 %1, 8192
   ret i64 %2
 }
 

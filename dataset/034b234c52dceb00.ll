@@ -10,9 +10,8 @@ entry:
   %2 = add i32 %1, -1
   %3 = add i32 %2, %0
   %4 = srem i32 %3, %0
-  %5 = sub nsw i32 %3, %4
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i32 %3, %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

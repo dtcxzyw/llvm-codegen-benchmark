@@ -1,5 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	add	a3, a1, a2
+	add	a3, a2, a1
 	srliw	a2, a3, 24
 	slli	a2, a2, 32
 	lui	a6, 4080

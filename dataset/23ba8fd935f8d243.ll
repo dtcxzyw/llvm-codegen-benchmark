@@ -43,8 +43,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = zext i32 %1 to i64
-  %6 = add i64 %4, %5
-  %7 = icmp eq i64 %6, 0
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %4, %6
   ret i1 %7
 }
 

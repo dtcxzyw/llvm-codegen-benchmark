@@ -49,9 +49,8 @@ entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
   %5 = getelementptr inbounds i8, ptr %0, i64 992
-  %6 = getelementptr inbounds [3 x %class.btRotationalLimitMotor2.1742528], ptr %5, i64 0, i64 %4
-  %7 = getelementptr inbounds i8, ptr %6, i64 84
-  ret ptr %7
+  %6 = getelementptr inbounds [3 x %class.btRotationalLimitMotor2.1742528], ptr %5, i64 0, i64 %4, i32 21
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

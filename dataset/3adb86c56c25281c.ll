@@ -452,9 +452,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 -4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 2
-  %6 = icmp sgt i64 %5, 2
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 8
+  ret i1 %5
 }
 
 ; 9 occurrences:
@@ -473,9 +472,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp ugt i64 %5, 1
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 8
+  ret i1 %5
 }
 
 ; 7 occurrences:
@@ -492,9 +490,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 2
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr i64 %4, 3
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 7
+  ret i1 %5
 }
 
 ; 18 occurrences:
@@ -522,9 +519,8 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 -4
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 2
-  %6 = icmp sgt i64 %5, 0
-  ret i1 %6
+  %5 = icmp sgt i64 %4, 0
+  ret i1 %5
 }
 
 ; 4 occurrences:
@@ -538,9 +534,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 16
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 4
-  %6 = icmp slt i64 %5, 2
-  ret i1 %6
+  %5 = icmp slt i64 %4, 32
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -551,9 +546,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 511
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr i64 %4, 9
-  %6 = icmp ugt i64 %5, 32
-  ret i1 %6
+  %5 = icmp ugt i64 %4, 16895
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -564,9 +558,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 511
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr i64 %4, 9
-  %6 = icmp ult i64 %5, 8192
-  ret i1 %6
+  %5 = icmp ult i64 %4, 4194304
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -577,9 +570,8 @@ entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
-  %5 = ashr exact i64 %4, 3
-  %6 = icmp ult i64 %5, 12
-  ret i1 %6
+  %5 = icmp ult i64 %4, 96
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

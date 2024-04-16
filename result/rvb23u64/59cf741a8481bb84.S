@@ -1,23 +1,15 @@
 func0000000000000011:                   # @func0000000000000011
-	andi	a0, a0, 1
-	slli	a0, a0, 1
-	or	a0, a0, a1
-	sext.w	a0, a0
-	seqz	a0, a0
+	sext.w	a1, a1
+	seqz	a1, a1
+	andn	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
-	slli	a0, a0, 10
-	or	a0, a0, a1
-	seqz	a0, a0
+	seqz	a1, a1
+	andn	a0, a1, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	andi	a0, a0, 1
-	li	a2, 24
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
-	sext.b	a0, a0
-	slti	a0, a0, 0
+	sext.b	a1, a1
+	slti	a0, a1, 0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1

@@ -8,7 +8,7 @@
 define i1 @func0000000000000071(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 0
-  %4 = and i1 %2, %3
+  %4 = and i1 %3, %2
   %5 = select i1 %4, i32 1, i32 %1
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp eq i32 %6, %5

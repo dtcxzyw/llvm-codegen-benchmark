@@ -1,6 +1,5 @@
 func000000000000000a:                   # @func000000000000000a
 	srli	a1, a1, 48
-	slli	a0, a0, 48
-	srai	a0, a0, 63
-	andn	a0, a1, a0
+	bexti	a0, a0, 15
+	czero.nez	a0, a1, a0
 	ret

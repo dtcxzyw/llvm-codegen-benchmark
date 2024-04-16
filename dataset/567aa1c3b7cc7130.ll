@@ -6,8 +6,8 @@
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 6, i32 %0
-  %4 = add i32 %3, 1
+  %3 = add i32 %0, 1
+  %4 = select i1 %2, i32 7, i32 %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -21,8 +21,8 @@ entry:
 define i32 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -1
-  %3 = select i1 %2, i8 -1, i8 %0
-  %4 = add nsw i8 %3, -16
+  %3 = add nsw i8 %0, -16
+  %4 = select i1 %2, i8 -17, i8 %3
   %5 = sext i8 %4 to i32
   ret i32 %5
 }
@@ -33,8 +33,8 @@ entry:
 define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = add nsw i32 %3, -1
+  %3 = add nsw i32 %0, -1
+  %4 = select i1 %2, i32 -1, i32 %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

@@ -24,7 +24,7 @@ entry:
 define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, 40960
+  %4 = or disjoint i32 %3, 8192
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i32 %3, i32 %4
   %7 = or i32 %6, 49152
@@ -57,7 +57,7 @@ entry:
 define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, -520094722
+  %4 = or i32 %3, 1627388926
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i32 %3, i32 %4
   %7 = or i32 %6, -2147483648

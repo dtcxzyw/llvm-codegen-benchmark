@@ -209,9 +209,8 @@ define i64 @func0000000000000000(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = sub i64 0, %4
-  ret i64 %5
+  %.neg = sub i64 %2, %3
+  ret i64 %.neg
 }
 
 ; 12 occurrences:
@@ -232,9 +231,9 @@ define i64 @func0000000000000003(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = sub nuw nsw i64 128, %4
-  ret i64 %5
+  %.neg = sub i64 %2, %3
+  %4 = add i64 %.neg, 128
+  ret i64 %4
 }
 
 ; 13 occurrences:
@@ -256,9 +255,9 @@ define i64 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = sub nsw i64 24, %4
-  ret i64 %5
+  %.neg = sub i64 %2, %3
+  %4 = add i64 %.neg, 24
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -268,9 +267,9 @@ define i64 @func0000000000000002(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = sub nuw i64 -8, %4
-  ret i64 %5
+  %.neg = sub i64 %2, %3
+  %4 = add i64 %.neg, -8
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

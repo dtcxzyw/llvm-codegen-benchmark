@@ -9,8 +9,8 @@ entry:
   %3 = lshr i64 %2, 28
   %4 = mul i64 %1, 27755575600
   %5 = add i64 %4, %3
-  %6 = add i64 %5, %0
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 

@@ -11,9 +11,11 @@ func000000000000000b:                   # @func000000000000000b
 	or	a2, a2, a3
 	add	a1, a1, a2
 	minu	a1, a1, a4
+	li	a2, 112
+	mul	a1, a1, a2
 	czero.nez	a1, a1, a0
-	czero.eqz	a0, a4, a0
+	li	a2, -127
+	srli	a2, a2, 1
+	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
-	li	a1, 112
-	mul	a0, a0, a1
 	ret

@@ -126,7 +126,8 @@ func0000000000000051:                   # @func0000000000000051
 .LBB7_2:                                # %entry
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
+	negw	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000101:                   # @func0000000000000101
@@ -137,7 +138,8 @@ func0000000000000101:                   # @func0000000000000101
 	seqz	a1, a1
 	xori	a1, a1, 3
 .LBB8_2:                                # %entry
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000111:                   # @func0000000000000111
@@ -149,7 +151,8 @@ func0000000000000111:                   # @func0000000000000111
 	li	a3, -48
 	beqz	a1, .LBB9_4
 .LBB9_2:                                # %entry
-	add	a0, a0, a3
+	neg	a0, a0
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 .LBB9_3:                                # %entry
@@ -157,6 +160,7 @@ func0000000000000111:                   # @func0000000000000111
 	li	a3, -48
 	bnez	a1, .LBB9_2
 .LBB9_4:                                # %entry
-	add	a0, a0, a2
+	neg	a0, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

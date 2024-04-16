@@ -92,9 +92,9 @@
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 15
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, 1
-  ret i64 %3
+  %narrow = add nuw nsw i32 %1, 1
+  %2 = zext nneg i32 %narrow to i64
+  ret i64 %2
 }
 
 ; 130 occurrences:

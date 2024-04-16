@@ -23,7 +23,7 @@
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   %4 = fadd double %3, 0x41A971E84A000000
   ret double %4
 }

@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %3, 16711680
   %5 = mul i32 %4, %1
   %6 = lshr i32 %5, 24
-  %7 = mul i32 %0, %6
+  %7 = mul i32 %6, %0
   ret i32 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = mul nuw i64 %4, %1
   %6 = lshr i64 %5, 32
-  %7 = mul nuw i64 %0, %6
+  %7 = mul nuw i64 %6, %0
   ret i64 %7
 }
 

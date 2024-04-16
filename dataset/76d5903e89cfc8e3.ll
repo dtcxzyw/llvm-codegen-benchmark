@@ -280,7 +280,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 3
+  %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
@@ -299,8 +299,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = ashr exact i64 %4, 5
-  %6 = trunc nuw i64 %5 to i8
+  %5 = lshr exact i64 %4, 5
+  %6 = trunc i64 %5 to i8
   ret i8 %6
 }
 

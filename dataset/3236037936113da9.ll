@@ -60,7 +60,7 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func000000000000001d(i128 %0, i128 %1) #0 {
 entry:
-  %2 = add nuw nsw i128 %1, 117397592171526113268558934119004209487
+  %2 = add i128 %1, 1442695040888963407
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %0, 64
   %5 = or disjoint i128 %4, %3
@@ -73,7 +73,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
+  %2 = add i64 %1, 2097151
   %3 = and i64 %2, 2097151
   %4 = shl i64 %0, 21
   %5 = or disjoint i64 %3, %4
@@ -98,7 +98,7 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func000000000000000d(i128 %0, i128 %1) #0 {
 entry:
-  %2 = add nsw i128 %1, -1
+  %2 = add i128 %1, 18446744073709551615
   %3 = and i128 %2, 18446744073709551615
   %4 = shl nuw i128 %0, 64
   %5 = or disjoint i128 %4, %3

@@ -1,5 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	subw	a0, a0, a1
+	sext.w	a1, a1
+	sext.w	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -13,8 +15,9 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sext.w	a1, a1
+	sext.w	a0, a0
+	slt	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sub	a0, a0, a2

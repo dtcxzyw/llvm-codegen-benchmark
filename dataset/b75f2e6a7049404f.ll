@@ -20,7 +20,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 24
   %6 = getelementptr i32, ptr %5, i64 %4
-  %7 = icmp ugt ptr %0, %6
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 
@@ -32,11 +32,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000078(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 24
-  %6 = getelementptr inbounds i32, ptr %5, i64 %4
-  %7 = icmp ugt ptr %0, %6
+  %3 = getelementptr inbounds i8, ptr %1, i64 24
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i32, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -4
+  %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
 
@@ -53,11 +53,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr inbounds i8, ptr %1, i64 16
-  %6 = getelementptr inbounds %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %3 = getelementptr inbounds i8, ptr %1, i64 16
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.1754964", ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -40
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -78,11 +78,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000051(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %1, i64 12
-  %6 = getelementptr inbounds i32, ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %3 = getelementptr i8, ptr %1, i64 12
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i32, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -4
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 
@@ -96,7 +96,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 11
   %6 = getelementptr inbounds i8, ptr %5, i64 %4
-  %7 = icmp ult ptr %0, %6
+  %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }
 
@@ -109,7 +109,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr inbounds i8, ptr %1, i64 8
   %6 = getelementptr inbounds %"class.icu_75::UnicodeString.2182863", ptr %5, i64 %4
-  %7 = icmp eq ptr %0, %6
+  %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
 

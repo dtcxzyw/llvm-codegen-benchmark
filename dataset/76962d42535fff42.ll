@@ -29,8 +29,8 @@
 define i1 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = icmp eq i8 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp eq i8 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927424
-  %4 = icmp ult i64 %1, %3
+  %4 = icmp ugt i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -60,8 +60,8 @@ entry:
 define i1 @func000000000000000e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp sle i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp sge i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -85,7 +85,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -114,8 +114,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = icmp ne i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ne i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -126,8 +126,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = icmp ule i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp uge i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -140,8 +140,8 @@ entry:
 define i1 @func0000000000000012(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
-  %4 = icmp uge i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp ule i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -152,8 +152,8 @@ entry:
 define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
-  %4 = icmp sgt i32 %1, %3
-  %5 = or i1 %0, %4
+  %4 = icmp slt i32 %3, %1
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 
@@ -163,7 +163,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777215
-  %4 = icmp slt i32 %1, %3
+  %4 = icmp sgt i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }

@@ -5,9 +5,9 @@
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 0, i64 %1
-  %5 = select i1 %0, i64 0, i64 %4
-  %6 = lshr exact i64 %5, 2
+  %4 = select i1 %0, i1 true, i1 %3
+  %5 = lshr exact i64 %1, 2
+  %6 = select i1 %4, i64 0, i64 %5
   ret i64 %6
 }
 
@@ -17,9 +17,9 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 98
-  %4 = select i1 %3, i32 1, i32 %1
-  %5 = select i1 %0, i32 0, i32 %4
-  %6 = lshr i32 %5, 1
+  %4 = select i1 %0, i1 true, i1 %3
+  %5 = lshr i32 %1, 1
+  %6 = select i1 %4, i32 0, i32 %5
   ret i32 %6
 }
 

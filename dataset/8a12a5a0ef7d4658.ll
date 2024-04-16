@@ -22,7 +22,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -20253, i32 -20351
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = add nsw i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -7, i32 -9
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -62,7 +62,7 @@ define i64 @func0000000000000015(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 4, i32 3
   %4 = add nuw i32 %3, %1
-  %5 = add nuw i32 %0, %4
+  %5 = add nuw i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -85,7 +85,7 @@ entry:
 define i64 @func000000000000000f(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 78, i8 105
-  %4 = add nsw i8 %1, %3
+  %4 = add nsw i8 %3, %1
   %5 = add nuw nsw i8 %4, %0
   %6 = zext nneg i8 %5 to i64
   ret i64 %6

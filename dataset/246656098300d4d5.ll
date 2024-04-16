@@ -125,7 +125,7 @@ declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 define { i64, i1 } @func0000000000000040(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = mul nuw i128 %0, %1
   %6 = trunc i128 %5 to i64
   %7 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %6, i64 %4)

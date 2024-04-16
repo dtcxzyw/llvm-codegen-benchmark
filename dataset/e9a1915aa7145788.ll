@@ -41,8 +41,8 @@ define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add i64 %0, -1
-  %4 = add i64 %3, %2
-  %5 = icmp eq i64 %4, 0
+  %4 = sub nsw i64 0, %2
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -170,8 +170,8 @@ define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = add nsw i64 %0, 1
-  %4 = add nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
+  %4 = sub nsw i64 0, %2
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -204,11 +204,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = ashr i64 %0, 1
-  %4 = add nsw i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = ashr i64 %0, 1
+  %3 = xor i64 %2, %1
+  %4 = icmp eq i64 %3, -1
+  ret i1 %4
 }
 
 ; 1 occurrences:

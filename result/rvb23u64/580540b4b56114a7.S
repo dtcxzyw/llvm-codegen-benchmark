@@ -12,7 +12,7 @@ func0000000000000098:                   # @func0000000000000098
 func0000000000000091:                   # @func0000000000000091
 	andi	a0, a0, 1
 	zext.w	a2, a2
-	xor	a3, a1, a2
+	xor	a3, a2, a1
 	seqz	a3, a3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1

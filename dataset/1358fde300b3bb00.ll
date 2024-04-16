@@ -5,8 +5,8 @@
 define i64 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, 63
+  %4 = and i32 %3, 63
+  %5 = zext nneg i32 %4 to i64
   %6 = shl nuw i64 1, %5
   ret i64 %6
 }
@@ -22,8 +22,8 @@ entry:
 define i64 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = zext i32 %3 to i64
-  %5 = and i64 %4, 63
+  %4 = and i32 %3, 63
+  %5 = zext nneg i32 %4 to i64
   %6 = shl nuw i64 1, %5
   ret i64 %6
 }

@@ -183,7 +183,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = call i32 @llvm.smax.i32(i32 %4, i32 0)
   %6 = call i32 @llvm.smin.i32(i32 %5, i32 %1)
-  %7 = icmp eq i32 %0, %6
+  %7 = icmp eq i32 %6, %0
   ret i1 %7
 }
 
@@ -377,7 +377,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = call i32 @llvm.smax.i32(i32 %4, i32 0)
   %6 = call i32 @llvm.smin.i32(i32 %5, i32 %1)
-  %7 = icmp slt i32 %0, %6
+  %7 = icmp sgt i32 %6, %0
   ret i1 %7
 }
 
@@ -565,7 +565,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
   %6 = tail call i32 @llvm.smin.i32(i32 %5, i32 %1)
-  %7 = icmp sgt i32 %0, %6
+  %7 = icmp slt i32 %6, %0
   ret i1 %7
 }
 

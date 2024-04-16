@@ -1,5 +1,5 @@
 func000000000000000f:                   # @func000000000000000f
-	lui	a3, 209715
+	lui	a3, 13107
 	addiw	a3, a3, 819
 	and	a2, a2, a3
 	and	a1, a1, a3

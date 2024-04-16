@@ -8,7 +8,7 @@ entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = shl nuw i32 4092, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = shl nuw nsw i32 1023, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = mul i32 %1, 6
   %3 = shl nuw nsw i32 63, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 
@@ -57,7 +57,7 @@ entry:
   %2 = mul i32 %1, 6
   %3 = shl i32 3, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 

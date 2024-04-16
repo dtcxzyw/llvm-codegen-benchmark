@@ -3655,8 +3655,8 @@ entry:
   %2 = add nsw i64 %1, %0
   %3 = icmp ult i64 %2, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 1152921504606846975)
-  %5 = select i1 %3, i64 1152921504606846975, i64 %4
-  %6 = shl nuw nsw i64 %5, 3
+  %5 = shl nuw nsw i64 %4, 3
+  %6 = select i1 %3, i64 9223372036854775800, i64 %5
   ret i64 %6
 }
 
@@ -3892,8 +3892,8 @@ entry:
   %2 = add i64 %1, %0
   %3 = icmp ult i64 %2, %0
   %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 4611686018427387903)
-  %5 = select i1 %3, i64 4611686018427387903, i64 %4
-  %6 = shl nuw nsw i64 %5, 1
+  %5 = shl nuw nsw i64 %4, 1
+  %6 = select i1 %3, i64 9223372036854775806, i64 %5
   ret i64 %6
 }
 

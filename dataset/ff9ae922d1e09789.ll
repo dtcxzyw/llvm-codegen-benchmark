@@ -26,8 +26,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
-  %4 = select i1 %1, i64 %3, i64 undef
-  %5 = icmp ult i64 %4, %0
+  %4 = icmp ult i64 %3, %0
+  %5 = select i1 %1, i1 %4, i1 false
   ret i1 %5
 }
 
@@ -51,8 +51,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
-  %4 = select i1 %1, i64 %3, i64 undef
-  %5 = icmp eq i64 %4, %0
+  %4 = icmp eq i64 %3, %0
+  %5 = select i1 %1, i1 %4, i1 undef
   ret i1 %5
 }
 

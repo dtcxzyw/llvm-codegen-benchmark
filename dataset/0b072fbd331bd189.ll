@@ -64,8 +64,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4611686018427387900
-  %3 = shl i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, -32
   %4 = getelementptr i8, ptr %0, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
@@ -76,8 +76,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 2305843009213693948
-  %3 = shl i64 %2, 4
+  %2 = shl i64 %1, 4
+  %3 = and i64 %2, -64
   %4 = getelementptr inbounds i8, ptr %0, i64 16
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
@@ -96,8 +96,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 288230376151711740
-  %3 = shl nuw nsw i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, 2305843009213693920
   %4 = getelementptr inbounds i8, ptr %0, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
@@ -113,8 +113,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 288230376151711743
-  %3 = shl nuw nsw i64 %2, 3
+  %2 = shl i64 %1, 3
+  %3 = and i64 %2, 2305843009213693944
   %4 = getelementptr i8, ptr %0, i64 24
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5

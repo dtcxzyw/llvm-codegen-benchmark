@@ -16,11 +16,9 @@ func000000000000000b:                   # @func000000000000000b
 	or	a1, a1, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	slli	a1, a1, 32
-	or	a1, a1, a2
-	lui	a2, 1048560
-	and	a1, a1, a2
+	srliw	a2, a2, 16
+	slli	a2, a2, 16
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret

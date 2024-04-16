@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = mul i64 %2, -8
+  %2 = shl i64 %1, 3
+  %3 = sub i64 8, %2
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 24
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %2 = mul i64 %1, 24
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -40,9 +40,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 6
-  %4 = getelementptr i16, ptr %0, i64 %3
+  %2 = mul nuw i64 %1, 6
+  %3 = getelementptr i16, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 12
   ret ptr %4
 }
 
@@ -51,9 +51,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 1
-  %3 = mul i64 %2, 6
-  %4 = getelementptr float, ptr %0, i64 %3
+  %2 = mul i64 %1, 6
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -76,9 +76,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nsw i64 %2, 100000
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
+  %2 = mul i64 %1, 100000
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 100000
   ret ptr %4
 }
 
@@ -88,9 +88,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = mul nsw i64 %2, 3
-  %4 = getelementptr inbounds i32, ptr %0, i64 %3
+  %2 = mul i64 %1, 3
+  %3 = getelementptr i32, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }
 
@@ -99,9 +99,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = mul nuw nsw i64 %2, 5
-  %4 = getelementptr inbounds i32, ptr %0, i64 %3
+  %2 = mul i64 %1, 5
+  %3 = getelementptr i32, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -20
   ret ptr %4
 }
 
@@ -114,9 +114,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw nsw i64 %2, 3
-  %4 = getelementptr inbounds float, ptr %0, i64 %3
+  %2 = mul nuw i64 %1, 3
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 12
   ret ptr %4
 }
 
@@ -130,9 +130,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = mul nsw i64 %2, 3
-  %4 = getelementptr inbounds double, ptr %0, i64 %3
+  %2 = mul i64 %1, 3
+  %3 = getelementptr double, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }
 
@@ -142,9 +142,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = mul i64 %2, 6
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %2 = mul i64 %1, 6
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 6
   ret ptr %4
 }
 
@@ -154,8 +154,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = mul i64 %2, -8
+  %2 = shl i64 %1, 3
+  %3 = sub i64 8, %2
   %4 = getelementptr inbounds double, ptr %0, i64 %3
   ret ptr %4
 }
@@ -165,9 +165,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = mul nsw i64 %2, 3
-  %4 = getelementptr float, ptr %0, i64 %3
+  %2 = mul i64 %1, 3
+  %3 = getelementptr float, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }
 

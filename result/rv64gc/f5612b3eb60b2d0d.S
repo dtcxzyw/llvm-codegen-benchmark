@@ -38,14 +38,14 @@ func000000000000001a:                   # @func000000000000001a
 	bnez	a3, .LBB4_2
 	mv	a1, a2
 .LBB4_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	sgtz	a0, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srli	a0, a0, 63
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -54,7 +54,7 @@ func0000000000000018:                   # @func0000000000000018
 	bnez	a3, .LBB6_2
 	mv	a1, a2
 .LBB6_2:                                # %entry
-	mul	a0, a0, a1
+	mul	a0, a1, a0
 	srliw	a0, a0, 29
 	snez	a0, a0
 	ret
@@ -83,7 +83,7 @@ func0000000000000034:                   # @func0000000000000034
 	lui	a1, 268352
 	addiw	a2, a1, 1170
 .LBB9_2:                                # %entry
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	srli	a0, a0, 32
 	seqz	a0, a0
 	ret
@@ -93,7 +93,7 @@ func0000000000000024:                   # @func0000000000000024
 	lui	a1, 268352
 	addiw	a2, a1, 1170
 .LBB10_2:                               # %entry
-	mul	a0, a0, a2
+	mul	a0, a2, a0
 	srli	a0, a0, 32
 	seqz	a0, a0
 	ret

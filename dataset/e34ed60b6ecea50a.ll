@@ -9,8 +9,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = lshr i64 %3, 26
+  %3 = lshr i32 %2, 26
+  %4 = zext nneg i32 %3 to i64
   %5 = or disjoint i64 %0, %1
   %6 = or disjoint i64 %5, %4
   ret i64 %6

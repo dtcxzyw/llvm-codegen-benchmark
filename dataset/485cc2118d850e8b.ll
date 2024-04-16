@@ -12,8 +12,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = select i1 %1, ptr null, ptr %2
-  %4 = ptrtoint ptr %3 to i64
+  %3 = ptrtoint ptr %2 to i64
+  %4 = select i1 %1, i64 0, i64 %3
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5
   %7 = sdiv exact i64 %6, 12
@@ -25,8 +25,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = select i1 %1, ptr null, ptr %2
-  %4 = ptrtoint ptr %3 to i64
+  %3 = ptrtoint ptr %2 to i64
+  %4 = select i1 %1, i64 0, i64 %3
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5
   %7 = sdiv i64 %6, 3

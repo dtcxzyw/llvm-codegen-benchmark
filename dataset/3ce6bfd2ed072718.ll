@@ -20,9 +20,9 @@ entry:
   %2 = icmp eq i32 %1, -2146566144
   %3 = zext i1 %2 to i8
   %4 = or disjoint i8 %3, 4
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %5, i8 %4, i8 %3
-  ret i8 %6
+  %.not = icmp eq i32 %0, 0
+  %5 = select i1 %.not, i8 %3, i8 %4
+  ret i8 %5
 }
 
 ; 2 occurrences:

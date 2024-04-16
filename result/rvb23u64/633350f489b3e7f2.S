@@ -10,10 +10,8 @@ func0000000000000021:                   # @func0000000000000021
 	or	a0, a0, a1
 	ret
 func0000000000000181:                   # @func0000000000000181
+	andi	a1, a1, 128
+	or	a0, a0, a1
 	sext.w	a0, a0
-	bexti	a1, a1, 7
-	li	a2, 1
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	snez	a0, a0
 	ret

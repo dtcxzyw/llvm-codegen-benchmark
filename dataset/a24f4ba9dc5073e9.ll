@@ -74,7 +74,7 @@
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 3600
-  %2 = trunc i32 %1 to i16
+  %2 = trunc nuw nsw i32 %1 to i16
   %3 = urem i16 %2, 60
   ret i16 %3
 }

@@ -7,7 +7,7 @@ entry:
   %3 = trunc i32 %2 to i16
   %4 = add i16 %3, 4
   %5 = zext i16 %4 to i32
-  %6 = add nuw nsw i32 %1, %5
+  %6 = add nuw nsw i32 %5, %1
   %7 = icmp ugt i32 %6, %0
   ret i1 %7
 }

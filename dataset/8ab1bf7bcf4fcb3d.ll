@@ -49,7 +49,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sub nuw nsw i64 64, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %0)
-  %5 = trunc i64 %4 to i8
+  %5 = trunc nuw nsw i64 %4 to i8
   ret i8 %5
 }
 

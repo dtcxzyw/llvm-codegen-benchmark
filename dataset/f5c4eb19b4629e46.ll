@@ -25,8 +25,8 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %2, -1
-  %4 = sub nsw i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = add i64 %2, %3
   ret i64 %4
 }
 
@@ -236,8 +236,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add i64 %2, -1
-  %4 = sub nuw i64 %3, %0
+  %3 = xor i64 %0, -1
+  %4 = add i64 %2, %3
   ret i64 %4
 }
 

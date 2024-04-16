@@ -19,7 +19,7 @@ define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = icmp eq i32 %4, 10
   ret i1 %5
 }
@@ -101,7 +101,7 @@ define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 -1, %2
-  %4 = or i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = icmp eq i64 %4, -1
   ret i1 %5
 }

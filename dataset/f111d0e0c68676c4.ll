@@ -469,7 +469,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -545,7 +545,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ne i32 %3, 102
   ret i1 %4
 }
@@ -557,7 +557,7 @@ entry:
 define i1 @func0000000000000031(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = and i16 %0, %2
+  %3 = and i16 %2, %0
   %4 = icmp eq i16 %3, 0
   ret i1 %4
 }
@@ -569,7 +569,7 @@ entry:
 define i1 @func000000000000003c(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = and i16 %0, %2
+  %3 = and i16 %2, %0
   %4 = icmp ne i16 %3, 0
   ret i1 %4
 }
@@ -580,7 +580,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -606,7 +606,7 @@ entry:
 define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = and i8 %0, %2
+  %3 = and i8 %2, %0
   %4 = icmp eq i8 %3, 0
   ret i1 %4
 }
@@ -618,7 +618,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ugt i32 %3, 256
   ret i1 %4
 }

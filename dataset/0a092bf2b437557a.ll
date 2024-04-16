@@ -41,9 +41,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 40960, i32 %2
-  %4 = zext i32 %3 to i64
-  %5 = mul i64 %0, %4
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 40960, i64 %3
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -53,9 +53,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 75000, i32 %2
-  %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %0, %4
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 75000, i64 %3
+  %5 = mul nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -66,9 +66,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 40960, i32 %2
-  %4 = zext i32 %3 to i64
-  %5 = mul nuw nsw i64 %0, %4
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 40960, i64 %3
+  %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -88,9 +88,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 30000, i32 %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %0, %4
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 30000, i64 %3
+  %5 = mul i64 %4, %0
   ret i64 %5
 }
 
@@ -101,9 +101,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = select i1 %1, i8 2, i8 %2
-  %4 = zext nneg i8 %3 to i32
-  %5 = mul nuw nsw i32 %0, %4
+  %3 = zext nneg i8 %2 to i32
+  %4 = select i1 %1, i32 2, i32 %3
+  %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -113,8 +113,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = zext nneg i32 %3 to i64
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %1, i64 1, i64 %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
@@ -124,9 +124,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 1, i32 %2
-  %4 = zext i32 %3 to i64
-  %5 = mul nsw i64 %0, %4
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 1, i64 %3
+  %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 

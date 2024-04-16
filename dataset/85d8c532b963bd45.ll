@@ -52,7 +52,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 100
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 
@@ -64,7 +64,7 @@ define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = srem i8 %1, 10
   %3 = icmp slt i8 %2, 5
-  %4 = or i1 %0, %3
+  %4 = or i1 %3, %0
   ret i1 %4
 }
 

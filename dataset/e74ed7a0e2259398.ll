@@ -25,7 +25,7 @@ define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = uitofp i64 %2 to float
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 
@@ -36,7 +36,7 @@ define float @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = uitofp i64 %2 to float
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 
@@ -55,7 +55,7 @@ define float @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = uitofp i64 %2 to float
-  %4 = fmul float %0, %3
+  %4 = fmul float %3, %0
   ret float %4
 }
 
@@ -67,7 +67,7 @@ define double @func0000000000000006(double %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   ret double %4
 }
 

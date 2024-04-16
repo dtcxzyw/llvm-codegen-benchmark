@@ -32,8 +32,8 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, -8
 	ret
 func0000000000000006:                   # @func0000000000000006
-	czero.eqz	a1, a1, a2
 	sext.w	a1, a1
+	czero.eqz	a1, a1, a2
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret

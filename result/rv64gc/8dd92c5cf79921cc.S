@@ -42,8 +42,10 @@ func0000000000000088:                   # @func0000000000000088
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	subw	a1, a1, a2
-	sltiu	a1, a1, 16
+	srliw	a1, a1, 4
+	slli	a1, a1, 4
+	snez	a1, a1
 	sltiu	a0, a0, 16
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	not	a0, a0
+	and	a0, a0, a1
 	ret

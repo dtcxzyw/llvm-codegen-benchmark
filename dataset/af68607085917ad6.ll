@@ -10,7 +10,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext i16 %0 to i32
   %5 = urem i32 %3, %4
-  %6 = trunc i32 %5 to i16
+  %6 = trunc nuw i32 %5 to i16
   ret i16 %6
 }
 

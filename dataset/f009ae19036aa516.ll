@@ -4,10 +4,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul i64 %2, 5871781006564002453
-  %4 = mul i64 %1, 5871781006564002453
-  %5 = select i1 %0, i64 %4, i64 %3
-  ret i64 %5
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = mul i64 %.v, 5871781006564002453
+  ret i64 %3
 }
 
 ; 1 occurrences:

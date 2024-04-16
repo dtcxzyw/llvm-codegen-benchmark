@@ -4,9 +4,11 @@ func0000000000000054:                   # @func0000000000000054
 	sltiu	a0, a0, 11
 	ret
 func0000000000000011:                   # @func0000000000000011
-	slli	a0, a0, 28
-	srai	a0, a0, 32
-	addi	a0, a0, -1
+	li	a1, 1
+	slli	a1, a1, 36
+	addi	a1, a1, -16
+	and	a0, a0, a1
+	addi	a0, a0, -16
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051

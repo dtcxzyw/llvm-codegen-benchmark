@@ -24,7 +24,7 @@ entry:
 define i64 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 3
-  %3 = xor i128 %0, %2
+  %3 = xor i128 %2, %0
   %4 = trunc i128 %3 to i64
   ret i64 %4
 }

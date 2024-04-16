@@ -50,10 +50,10 @@ entry:
 define i64 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = zext i32 %2 to i64
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i64 2, i64 %3
-  ret i64 %5
+  %3 = icmp eq i32 %0, 0
+  %narrow = select i1 %3, i32 2, i32 %2
+  %4 = zext i32 %narrow to i64
+  ret i64 %4
 }
 
 ; 1 occurrences:

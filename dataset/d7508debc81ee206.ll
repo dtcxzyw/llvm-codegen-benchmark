@@ -12,10 +12,8 @@
 define i32 @func0000000000000035(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = sub nsw i32 %4, %1
-  %6 = sub nsw i32 %5, %0
-  ret i32 %6
+  %4 = sub i32 %3, %1
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -24,10 +22,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %0, %3
-  %5 = sub i32 %4, %1
-  %6 = sub i32 %5, %0
-  ret i32 %6
+  %4 = sub i32 %3, %1
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

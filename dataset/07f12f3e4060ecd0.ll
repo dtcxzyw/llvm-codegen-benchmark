@@ -17,8 +17,8 @@ define i64 @func0000000000000013(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i64
   %4 = add nsw i64 %3, %1
-  %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 2147483647)
-  %6 = tail call i64 @llvm.smin.i64(i64 %0, i64 %5)
+  %5 = call i64 @llvm.smin.i64(i64 %4, i64 %0)
+  %6 = call i64 @llvm.smin.i64(i64 %5, i64 2147483647)
   %7 = shl nuw nsw i64 %6, 2
   ret i64 %7
 }

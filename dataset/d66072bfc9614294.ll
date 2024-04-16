@@ -8,7 +8,7 @@ entry:
   %4 = and i128 %3, 36893488147419103230
   %5 = add nuw nsw i128 %4, %1
   %6 = mul nsw i128 %5, -4294967297
-  %7 = add nsw i128 %0, %6
+  %7 = add nsw i128 %6, %0
   ret i128 %7
 }
 
@@ -20,7 +20,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %1, %4
+  %5 = add nuw nsw i32 %4, %1
   %6 = mul nuw nsw i32 %5, 3
   %7 = add nuw nsw i32 %6, %0
   ret i32 %7

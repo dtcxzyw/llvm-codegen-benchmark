@@ -25,5 +25,5 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 .LBB2_2:
 	addi	a2, a2, -1
-	mulw	a0, a1, a2
+	mulw	a0, a2, a1
 	ret

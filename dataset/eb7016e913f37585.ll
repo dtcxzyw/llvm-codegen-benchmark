@@ -15,10 +15,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = icmp ult i64 %0, %1
-  %4 = select i1 %2, i1 true, i1 %3
-  %5 = select i1 %4, i64 %0, i64 %1
-  ret i64 %5
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %1)
+  %4 = select i1 %2, i64 %0, i64 %3
+  ret i64 %4
 }
 
 ; 9 occurrences:
@@ -34,10 +33,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %0, %1
-  %4 = select i1 %2, i1 true, i1 %3
-  %5 = select i1 %4, i64 %0, i64 %1
-  ret i64 %5
+  %3 = call i64 @llvm.umax.i64(i64 %0, i64 %1)
+  %4 = select i1 %2, i64 %0, i64 %3
+  ret i64 %4
 }
 
 ; 8 occurrences:
@@ -52,10 +50,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = icmp sgt i32 %0, %1
-  %4 = select i1 %2, i1 true, i1 %3
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
+  %3 = call i32 @llvm.smax.i32(i32 %0, i32 %1)
+  %4 = select i1 %2, i32 %0, i32 %3
+  ret i32 %4
 }
 
 ; 6 occurrences:
@@ -68,10 +65,22 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = icmp slt i64 %0, %1
-  %4 = select i1 %2, i1 true, i1 %3
-  %5 = select i1 %4, i64 %0, i64 %1
-  ret i64 %5
+  %3 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
+  %4 = select i1 %2, i64 %0, i64 %3
+  ret i64 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umax.i64(i64, i64) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

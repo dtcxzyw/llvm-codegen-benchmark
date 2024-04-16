@@ -37,8 +37,8 @@ declare i16 @llvm.umin.i16(i16, i16) #1
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = call i32 @llvm.umin.i32(i32 %2, i32 4)
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 3)
+  %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr inbounds [5 x %"class.vcg::Color4.2229487"], ptr %0, i64 0, i64 %4
   ret ptr %5

@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
+  %2 = lshr i32 %1, 3
+  %3 = and i32 %2, 536870904
+  %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }

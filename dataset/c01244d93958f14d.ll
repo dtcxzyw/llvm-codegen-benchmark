@@ -35,11 +35,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %1, %0
-  %3 = icmp ne i32 %2, 0
-  %4 = icmp ne i32 %0, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
+  %2 = icmp ne i32 %1, %0
+  %3 = icmp ne i32 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:

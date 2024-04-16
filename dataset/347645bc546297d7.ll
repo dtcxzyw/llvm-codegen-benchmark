@@ -13,8 +13,9 @@
 define i1 @func0000000000000000(i8 %0) #0 {
 entry:
   %1 = trunc i8 %0 to i1
-  %2 = select i1 %1, i8 %0, i8 1
-  %3 = trunc i8 %2 to i1
+  %2 = trunc i8 %0 to i1
+  %not. = xor i1 %1, true
+  %3 = or i1 %not., %2
   ret i1 %3
 }
 

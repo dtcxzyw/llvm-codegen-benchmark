@@ -30,9 +30,9 @@ entry:
 define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 8
-  %3 = select i1 %2, i32 %0, i32 0
-  %4 = sext i32 %3 to i64
-  %5 = shl nsw i64 %4, 4
+  %3 = sext i32 %0 to i64
+  %4 = shl nsw i64 %3, 4
+  %5 = select i1 %2, i64 %4, i64 0
   ret i64 %5
 }
 

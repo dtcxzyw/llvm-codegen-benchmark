@@ -21,7 +21,8 @@ func0000000000000301:                   # @func0000000000000301
 	and	a2, a2, a3
 	add	a0, a0, a2
 	and	a1, a1, a3
-	add	a0, a0, a1
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000308:                   # @func0000000000000308
@@ -36,11 +37,11 @@ func0000000000000308:                   # @func0000000000000308
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	lui	a3, 16
-	addi	a3, a3, -1
+	addiw	a3, a3, -1
 	and	a2, a2, a3
-	add	a0, a0, a2
+	addw	a0, a0, a2
 	and	a1, a1, a3
-	addw	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000003f8:                   # @func00000000000003f8
@@ -55,11 +56,11 @@ func00000000000003f8:                   # @func00000000000003f8
 	ret
 func00000000000003f1:                   # @func00000000000003f1
 	lui	a3, 16
-	addi	a3, a3, -1
+	addiw	a3, a3, -1
 	and	a2, a2, a3
-	add	a0, a0, a2
+	addw	a0, a0, a2
 	and	a1, a1, a3
-	addw	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000304:                   # @func0000000000000304

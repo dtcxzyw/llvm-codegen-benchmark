@@ -7,7 +7,7 @@ entry:
   %2 = icmp ugt i32 %1, 1
   %3 = zext i1 %2 to i32
   %4 = and i32 %0, 63
-  %5 = add nuw nsw i32 %4, %3
+  %5 = or i32 %4, %3
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -21,7 +21,7 @@ entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
   %4 = and i32 %0, 1023
-  %5 = add nuw nsw i32 %4, %3
+  %5 = or i32 %4, %3
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

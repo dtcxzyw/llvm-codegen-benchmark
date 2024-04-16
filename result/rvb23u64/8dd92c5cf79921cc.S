@@ -39,7 +39,9 @@ func000000000000044a:                   # @func000000000000044a
 func0000000000000088:                   # @func0000000000000088
 	zext.h	a0, a0
 	subw	a1, a1, a2
-	minu	a0, a0, a1
+	srliw	a1, a1, 4
+	slli	a1, a1, 4
+	snez	a1, a1
 	sltiu	a0, a0, 16
-	xori	a0, a0, 1
+	andn	a0, a1, a0
 	ret

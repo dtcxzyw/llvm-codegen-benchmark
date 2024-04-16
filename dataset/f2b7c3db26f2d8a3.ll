@@ -15,8 +15,8 @@
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.ctlz.i32(i32 %0, i1 true), !range !0
-  %2 = xor i32 %1, 31
-  %3 = shl nuw nsw i32 %2, 9
+  %2 = shl nuw nsw i32 %1, 9
+  %3 = xor i32 %2, 15872
   ret i32 %3
 }
 

@@ -4,12 +4,9 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000058(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw i64 %1, 32
-  %5 = or disjoint i64 %4, %3
-  %6 = icmp ugt i64 %5, 4294967295
-  %7 = select i1 %0, i1 %6, i1 false
-  ret i1 %7
+  %3 = icmp ne i64 %1, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 8 occurrences:
@@ -81,12 +78,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl i32 %1, 4
-  %5 = or i32 %4, %3
-  %6 = icmp ugt i32 %5, 1114111
-  %7 = select i1 %0, i1 %6, i1 false
-  ret i1 %7
+  %3 = shl i32 %1, 4
+  %4 = icmp ugt i32 %3, 1114111
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -94,12 +89,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl i32 %1, 8
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 256
-  %7 = select i1 %0, i1 %6, i1 false
-  ret i1 %7
+  %.mask = and i32 %1, 16777215
+  %3 = icmp eq i32 %.mask, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:

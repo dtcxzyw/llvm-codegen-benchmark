@@ -11,7 +11,7 @@
 define ptr @func0000000000000007(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 -1
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr inbounds ptr, ptr %0, i64 %5
   ret ptr %6
@@ -25,7 +25,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 16, i8 12
-  %4 = add i8 %1, %3
+  %4 = add i8 %3, %1
   %5 = zext i8 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -61,7 +61,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 284, i32 4
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -140,7 +140,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 -1
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr ptr, ptr %0, i64 %5
   ret ptr %6

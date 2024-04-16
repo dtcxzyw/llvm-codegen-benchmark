@@ -357,8 +357,8 @@ entry:
 define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 56
-  %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, 0
+  %2 = and i64 %1, 2147483648
+  %3 = icmp ne i64 %2, 0
   ret i1 %3
 }
 
@@ -490,8 +490,8 @@ entry:
 define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 20
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 1
+  %2 = and i64 %1, 4294967294
+  %3 = icmp ne i64 %2, 0
   ret i1 %3
 }
 

@@ -314,9 +314,8 @@ define ptr @func0000000000000011(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %union.acpi_object.2014169, ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 1 occurrences:

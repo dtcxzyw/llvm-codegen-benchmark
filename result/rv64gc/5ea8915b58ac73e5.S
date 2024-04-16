@@ -8,7 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	li	a2, -1
 	bne	a1, a2, .LBB1_2
 	li	a0, 64
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
 	andi	a0, a0, 64
 	ret
 func0000000000000018:                   # @func0000000000000018

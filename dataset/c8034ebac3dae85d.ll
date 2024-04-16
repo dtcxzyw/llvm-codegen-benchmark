@@ -8,8 +8,8 @@ define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = and i8 %2, 15
-  %4 = select i1 %0, i8 16, i8 %3
-  %5 = add nsw i8 %4, -1
+  %4 = add nsw i8 %3, -1
+  %5 = select i1 %0, i8 15, i8 %4
   ret i8 %5
 }
 

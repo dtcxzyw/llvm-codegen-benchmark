@@ -41,7 +41,7 @@ entry:
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fmul double %0, %3
+  %4 = fmul double %3, %0
   %5 = fcmp oge double %4, 1.000000e+00
   %6 = select i1 %5, double 1.000000e+00, double %4
   ret double %6

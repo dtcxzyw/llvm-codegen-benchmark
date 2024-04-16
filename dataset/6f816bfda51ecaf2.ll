@@ -58,7 +58,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = shl i32 %0, 8
   %6 = xor i32 %4, %5
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -74,7 +74,7 @@ entry:
   %4 = sub nsw i64 %1, %3
   %5 = shl i64 %0, 23
   %6 = xor i64 %5, %4
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -88,7 +88,7 @@ entry:
   %4 = sub nsw i32 %1, %3
   %5 = shl nsw i32 %0, 8
   %6 = xor i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -102,7 +102,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = shl i32 %0, 16
   %6 = xor i32 %4, %5
-  %7 = add i32 %0, %6
+  %7 = add i32 %6, %0
   ret i32 %7
 }
 
@@ -116,7 +116,7 @@ entry:
   %4 = sub nuw i32 %1, %3
   %5 = shl i32 %0, 16
   %6 = xor i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -130,7 +130,7 @@ entry:
   %4 = sub nuw nsw i32 %1, %3
   %5 = shl i32 %0, 16
   %6 = xor i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

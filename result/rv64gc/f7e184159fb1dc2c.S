@@ -87,9 +87,9 @@ func0000000000000023:                   # @func0000000000000023
 func000000000000002d:                   # @func000000000000002d
 	sext.w	a2, a2
 	sext.w	a3, a1
-	li	a1, 29
-	bge	a3, a2, .LBB12_2
 	li	a1, 51
+	blt	a3, a2, .LBB12_2
+	li	a1, 29
 .LBB12_2:                               # %entry
 	addw	a0, a0, a1
 	ret
@@ -132,9 +132,9 @@ func000000000000001d:                   # @func000000000000001d
 func0000000000000027:                   # @func0000000000000027
 	sext.w	a2, a2
 	sext.w	a3, a1
-	li	a1, 6
-	bgeu	a3, a2, .LBB18_2
 	li	a1, 4
+	bltu	a3, a2, .LBB18_2
+	li	a1, 6
 .LBB18_2:                               # %entry
 	addw	a0, a0, a1
 	ret

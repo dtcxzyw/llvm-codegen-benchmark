@@ -9,8 +9,8 @@
 define i32 @func0000000000000145(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
+  %4 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
+  %5 = select i1 %3, i32 0, i32 %4
   %6 = sub nsw i32 %0, %5
   %7 = add nsw i32 %6, 28
   ret i32 %7

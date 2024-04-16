@@ -74,9 +74,9 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a2, a2
-	li	a3, -6
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 18
+	li	a3, 6
+	czero.eqz	a2, a3, a2
+	addi	a2, a2, 12
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

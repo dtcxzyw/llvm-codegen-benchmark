@@ -9,7 +9,7 @@ entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 0, i32 %3
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

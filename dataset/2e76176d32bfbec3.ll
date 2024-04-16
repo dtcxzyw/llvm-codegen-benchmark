@@ -12,7 +12,7 @@
 define ptr @func0000000000000023(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 72
-  %4 = icmp eq ptr %1, %3
+  %4 = icmp eq ptr %3, %1
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = getelementptr inbounds i8, ptr %5, i64 16
   ret ptr %6

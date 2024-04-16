@@ -19,16 +19,16 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000013:                   # @func0000000000000013
 	sext.w	a1, a1
 	sext.w	a2, a0
-	li	a0, 60
-	bgeu	a2, a1, .LBB2_2
 	li	a0, 52
+	bltu	a2, a1, .LBB2_2
+	li	a0, 60
 .LBB2_2:                                # %entry
 	ret
 func000000000000000b:                   # @func000000000000000b
 	mv	a2, a0
-	li	a0, 4
-	bgeu	a1, a2, .LBB3_2
 	li	a0, 132
+	bltu	a1, a2, .LBB3_2
+	li	a0, 4
 .LBB3_2:                                # %entry
 	ret
 func0000000000000008:                   # @func0000000000000008

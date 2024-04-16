@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000038(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 11, i32 %2
-  %4 = sub nuw nsw i32 62, %3
-  %5 = zext nneg i32 %4 to i64
+  %3 = sub nuw nsw i32 62, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = select i1 %1, i64 51, i64 %4
   %6 = lshr i64 %0, %5
   %7 = trunc i64 %6 to i16
   ret i16 %7

@@ -10,9 +10,8 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000058:                   # @func0000000000000058
 	andi	a0, a0, 60
-	addi	a0, a0, -20
-	sltiu	a0, a0, 18
-	xori	a0, a0, 1
+	addi	a0, a0, -38
+	sltiu	a0, a0, -18
 	ret
 func000000000000005c:                   # @func000000000000005c
 	andi	a0, a0, 60

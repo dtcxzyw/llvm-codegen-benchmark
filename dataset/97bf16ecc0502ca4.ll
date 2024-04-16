@@ -8,7 +8,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = shl nuw nsw i32 %2, 18
   %4 = and i32 %3, 8126464
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = shl i32 %2, 23
   %4 = and i32 %3, 528482304
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 

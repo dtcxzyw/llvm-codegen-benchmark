@@ -3,7 +3,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	srli	a1, a1, 32
 	addi	a1, a1, 7
 	andi	a1, a1, -8
-	sub	a0, a0, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000da:                   # @func00000000000000da

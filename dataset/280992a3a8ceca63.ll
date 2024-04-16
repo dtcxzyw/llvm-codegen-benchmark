@@ -7,7 +7,7 @@
 define i1 @func0000000000000035(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp ugt float %0, %2
+  %3 = fcmp ult float %2, %0
   %4 = fcmp ult float %0, %1
   %5 = and i1 %3, %4
   ret i1 %5
@@ -20,7 +20,7 @@ entry:
 define i1 @func00000000000000da(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp uge float %0, %2
+  %3 = fcmp ule float %2, %0
   %4 = fcmp ole float %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000024(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   %4 = fcmp olt float %0, %1
   %5 = and i1 %3, %4
   ret i1 %5
@@ -47,7 +47,7 @@ entry:
 define i1 @func0000000000000042(float %0, float %1) #0 {
 entry:
   %2 = fneg float %1
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   %4 = fcmp olt float %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
@@ -59,7 +59,7 @@ entry:
 define i1 @func000000000000005d(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp uge double %0, %2
+  %3 = fcmp ule double %2, %0
   %4 = fcmp ugt double %1, %0
   %5 = and i1 %3, %4
   ret i1 %5
@@ -72,7 +72,7 @@ entry:
 define i1 @func00000000000000ca(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fcmp oge double %0, %2
+  %3 = fcmp ole double %2, %0
   %4 = fcmp ole double %0, %1
   %5 = and i1 %4, %3
   ret i1 %5

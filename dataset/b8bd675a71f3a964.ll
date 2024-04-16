@@ -8,7 +8,7 @@ entry:
   %4 = select i1 %3, double %1, double %2
   %5 = fptosi double %4 to i32
   %6 = zext nneg i32 %5 to i64
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

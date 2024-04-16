@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	fld	fa5, %lo(.LCPI0_0)(a2)
 	mul	a0, a0, a1
 	fcvt.d.w	fa4, a0
-	fmul.d	fa4, fa0, fa4
+	fmul.d	fa4, fa4, fa0
 	fmul.d	fa0, fa4, fa5
 	ret
 .LCPI1_0:
@@ -17,6 +17,6 @@ func0000000000000001:                   # @func0000000000000001
 	fld	fa5, %lo(.LCPI1_0)(a2)
 	mul	a0, a0, a1
 	fcvt.d.w	fa4, a0
-	fmul.d	fa4, fa0, fa4
+	fmul.d	fa4, fa4, fa0
 	fmul.d	fa0, fa4, fa5
 	ret

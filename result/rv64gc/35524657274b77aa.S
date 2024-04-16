@@ -9,16 +9,14 @@ func000000000000000b:                   # @func000000000000000b
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a1, a1, a3
 	andi	a0, a0, 1
-	bgeu	a1, a2, .LBB0_5
-	beqz	a0, .LBB0_6
-.LBB0_4:                                # %entry
-	li	a0, 40
-	mul	a0, a2, a0
-	ret
-.LBB0_5:                                # %entry
+	bltu	a1, a2, .LBB0_4
 	mv	a1, a2
-	bnez	a0, .LBB0_4
-.LBB0_6:                                # %entry
+.LBB0_4:                                # %entry
+	bnez	a0, .LBB0_6
 	li	a0, 40
 	mul	a0, a1, a0
+	ret
+.LBB0_6:
+	li	a0, -15
+	srli	a0, a0, 1
 	ret

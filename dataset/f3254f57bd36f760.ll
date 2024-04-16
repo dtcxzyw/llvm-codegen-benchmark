@@ -24,9 +24,8 @@ entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %0, %1
-  %6 = sub i64 %5, %4
-  %7 = icmp eq i64 %6, 0
-  ret i1 %7
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ugt i32 %0, 1
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4
 }
@@ -33,7 +33,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, 4294967294
-  %3 = and i1 %1, %2
+  %3 = and i1 %2, %1
   %4 = select i1 %3, i64 %0, i64 0
   ret i64 %4
 }

@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, double %2) #0 {
 entry:
-  %3 = select i1 %1, double 0x41DFFFFFFFC00000, double %2
-  %4 = fptosi double %3 to i32
-  %5 = add nsw i32 %0, %4
+  %3 = fptosi double %2 to i32
+  %4 = select i1 %1, i32 2147483647, i32 %3
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -19,9 +19,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, double %2) #0 {
 entry:
-  %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fptosi double %3 to i64
-  %5 = add i64 %0, %4
+  %3 = fptosi double %2 to i64
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

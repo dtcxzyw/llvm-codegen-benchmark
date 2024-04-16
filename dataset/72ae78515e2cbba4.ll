@@ -9,7 +9,7 @@ entry:
   %3 = lshr i32 %2, 2
   %4 = add i32 %1, 1
   %5 = add i32 %4, %3
-  %6 = icmp eq i32 %0, %5
+  %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = add i32 %1, -32768
   %5 = add i32 %4, %3
-  %6 = icmp ult i32 %0, %5
+  %6 = icmp ugt i32 %5, %0
   ret i1 %6
 }
 

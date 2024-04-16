@@ -9,8 +9,8 @@
 define ptr @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
-  %4 = add nuw i64 %3, 2
-  %5 = getelementptr i32, ptr %1, i64 %4
+  %4 = getelementptr i32, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   %6 = getelementptr i32, ptr %5, i64 %0
   ret ptr %6
 }
@@ -21,8 +21,8 @@ entry:
 define ptr @func000000000000003d(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, 4
-  %5 = getelementptr i8, ptr %1, i64 %4
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
   %6 = getelementptr inbounds float, ptr %5, i64 %0
   ret ptr %6
 }
@@ -35,8 +35,8 @@ entry:
 define ptr @func0000000000000017(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = add nsw i64 %3, 8
-  %5 = getelementptr inbounds i8, ptr %1, i64 %4
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   %6 = getelementptr inbounds i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -48,8 +48,8 @@ entry:
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = add i64 %3, 4
-  %5 = getelementptr inbounds float, ptr %1, i64 %4
+  %4 = getelementptr float, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
   %6 = getelementptr float, ptr %5, i64 %0
   ret ptr %6
 }
@@ -60,8 +60,8 @@ entry:
 define ptr @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 8
-  %5 = getelementptr i8, ptr %1, i64 %4
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -72,8 +72,8 @@ entry:
 define ptr @func0000000000000022(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 2
-  %4 = add i64 %3, 4
-  %5 = getelementptr inbounds float, ptr %1, i64 %4
+  %4 = getelementptr float, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
   %6 = getelementptr float, ptr %5, i64 %0
   ret ptr %6
 }
@@ -87,8 +87,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = add i64 %3, 2
-  %5 = getelementptr inbounds %"class.ue2::CharReach.2240562", ptr %1, i64 %4
+  %4 = getelementptr %"class.ue2::CharReach.2240562", ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 64
   %6 = getelementptr inbounds i8, ptr %5, i64 %0
   ret ptr %6
 }

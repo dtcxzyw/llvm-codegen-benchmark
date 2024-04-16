@@ -54,8 +54,8 @@ define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 19
   %3 = mul nsw i32 %2, -100
-  %4 = add i32 %3, %0
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -66,8 +66,8 @@ define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 19
   %3 = mul nsw i32 %2, -100
-  %4 = add nsw i32 %3, %0
-  %5 = icmp eq i32 %4, 0
+  %4 = sub i32 0, %0
+  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 

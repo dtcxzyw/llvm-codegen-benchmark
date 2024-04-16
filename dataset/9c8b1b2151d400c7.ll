@@ -20,7 +20,7 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr i32, ptr %0, i64 %6
   ret ptr %7
 }
@@ -40,7 +40,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr inbounds %"struct.rocksdb::ConcurrentArena::Shard.1578609", ptr %0, i64 %6
   ret ptr %7
 }
@@ -51,10 +51,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr inbounds ptr, ptr %0, i64 %6
   ret ptr %7
 }
@@ -64,10 +64,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %1, %5
+  %6 = and i64 %5, %1
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }

@@ -19,7 +19,7 @@ define i64 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 15
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 32
   ret i64 %6

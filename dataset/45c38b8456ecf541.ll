@@ -23,7 +23,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, -8
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = add nuw i16 %1, %2
   %4 = and i16 %3, -256
   %5 = zext i16 %4 to i32
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 536870911
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 3
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

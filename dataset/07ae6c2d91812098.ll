@@ -13,7 +13,7 @@
 define i32 @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 56
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
   %4 = xor i32 %3, 31
   %5 = sub nuw nsw i32 8, %4

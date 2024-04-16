@@ -19,7 +19,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, -4265267296055464877
+  %1 = mul i64 %0, 388179
   %2 = lshr i64 %1, 15
   %3 = and i64 %2, 127
   %4 = or disjoint i64 %3, 128

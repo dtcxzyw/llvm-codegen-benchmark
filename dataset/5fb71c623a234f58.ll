@@ -35,10 +35,8 @@ define ptr @func000000000000001f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 28
-  %5 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 32
-  %7 = getelementptr inbounds [32 x i8], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr inbounds [4 x %"struct.asmjit::_abi_1_10::FuncArgsContext::WorkData.1558391"], ptr %4, i64 0, i64 %3, i32 9, i64 %0
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -48,10 +46,8 @@ define ptr @func0000000000000012(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 12336
-  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  %7 = getelementptr [31 x ptr], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr [64 x %struct.XHCISlot.1662560], ptr %4, i64 0, i64 %3, i32 5, i64 %0
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -61,10 +57,8 @@ define ptr @func000000000000000a(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 56
-  %5 = getelementptr [32 x %struct.AHCIPortQState.1666766], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 16
-  %7 = getelementptr [32 x i64], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr [32 x %struct.AHCIPortQState.1666766], ptr %4, i64 0, i64 %3, i32 2, i64 %0
+  ret ptr %5
 }
 
 ; 3 occurrences:
@@ -76,10 +70,8 @@ define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr inbounds i8, ptr %1, i64 168
-  %5 = getelementptr inbounds [2 x %"struct.gjkepa2_impl::GJK::sSimplex.1742108"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 32
-  %7 = getelementptr inbounds [4 x float], ptr %6, i64 0, i64 %0
-  ret ptr %7
+  %5 = getelementptr inbounds [2 x %"struct.gjkepa2_impl::GJK::sSimplex.1742108"], ptr %4, i64 0, i64 %3, i32 1, i64 %0
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

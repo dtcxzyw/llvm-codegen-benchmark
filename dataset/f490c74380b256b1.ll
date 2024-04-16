@@ -16,10 +16,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr [0 x %struct.FormData_pg_attribute.2119680], ptr %0, i64 0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 4
-  %4 = ptrtoint ptr %3 to i64
-  ret i64 %4
+  %2 = getelementptr [0 x %struct.FormData_pg_attribute.2119680], ptr %0, i64 0, i64 %1, i32 1
+  %3 = ptrtoint ptr %2 to i64
+  ret i64 %3
 }
 
 ; 5 occurrences:
@@ -31,10 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr inbounds [3 x %struct.WOLFSSL_SESSION.2179703], ptr %0, i64 0, i64 %1
-  %3 = getelementptr inbounds i8, ptr %2, i64 149
-  %4 = ptrtoint ptr %3 to i64
-  ret i64 %4
+  %2 = getelementptr inbounds [3 x %struct.WOLFSSL_SESSION.2179703], ptr %0, i64 0, i64 %1, i32 11
+  %3 = ptrtoint ptr %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

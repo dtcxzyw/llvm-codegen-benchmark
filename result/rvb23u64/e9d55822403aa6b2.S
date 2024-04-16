@@ -43,10 +43,10 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
-	andi	a1, a1, 15
-	sltiu	a1, a1, 2
+	andi	a1, a1, 14
+	snez	a1, a1
 	snez	a0, a0
-	andn	a0, a0, a1
+	and	a0, a0, a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0

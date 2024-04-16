@@ -12,8 +12,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add nsw i64 %4, 1
-  %6 = shl i64 %5, 4
+  %5 = shl i64 %4, 4
+  %6 = add i64 %5, 16
   ret i64 %6
 }
 
@@ -30,8 +30,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = add i64 %4, 1
-  %6 = shl i64 %5, 3
+  %5 = shl i64 %4, 3
+  %6 = add i64 %5, 8
   ret i64 %6
 }
 

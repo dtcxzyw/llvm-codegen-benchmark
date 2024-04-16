@@ -17,7 +17,8 @@ func000000000000003c:                   # @func000000000000003c
 	add	a0, a0, a1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	li	a2, 30
+	slli	a1, a1, 1
+	li	a2, 60
 	subw	a2, a2, a1
-	sh1add.uw	a0, a2, a0
+	add.uw	a0, a2, a0
 	ret

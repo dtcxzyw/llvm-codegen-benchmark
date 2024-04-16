@@ -9,7 +9,7 @@ define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+03
   %3 = fdiv double %2, 1.000000e+06
-  %4 = fcmp ogt double %0, %3
+  %4 = fcmp olt double %3, %0
   ret i1 %4
 }
 

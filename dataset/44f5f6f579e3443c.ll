@@ -83,7 +83,7 @@
 define float @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fadd double %0, %2
+  %3 = fadd double %2, %0
   %4 = fptrunc double %3 to float
   ret float %4
 }

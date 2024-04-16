@@ -1,11 +1,10 @@
 func0000000000000008:                   # @func0000000000000008
-	add	a2, a2, a1
-	bgeu	a2, a1, .LBB0_2
-	li	a0, -1
-	srli	a0, a0, 1
+	mv	a3, a0
+	not	a1, a1
+	li	a0, -113
+	srli	a0, a0, 4
+	bltu	a1, a2, .LBB0_2
+	srli	a3, a3, 3
+	and	a0, a0, a3
 .LBB0_2:                                # %entry
-	srli	a0, a0, 3
-	li	a1, -113
-	srli	a1, a1, 4
-	and	a0, a0, a1
 	ret

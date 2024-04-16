@@ -5,10 +5,9 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 1, i32 2
-  %3 = trunc i32 %2 to i8
-  %4 = or disjoint i8 %0, %3
-  ret i8 %4
+  %2 = select i1 %1, i8 1, i8 2
+  %3 = or disjoint i8 %2, %0
+  ret i8 %3
 }
 
 ; 1 occurrences:
@@ -16,10 +15,9 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 1, i32 64
-  %3 = trunc i32 %2 to i16
-  %4 = or i16 %0, %3
-  ret i16 %4
+  %2 = select i1 %1, i16 1, i16 64
+  %3 = or i16 %2, %0
+  ret i16 %3
 }
 
 attributes #0 = { nounwind }

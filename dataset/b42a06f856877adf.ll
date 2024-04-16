@@ -12,7 +12,7 @@ define ptr @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 24
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = and i64 %5, %0
   %7 = inttoptr i64 %6 to ptr
   ret ptr %7
@@ -26,7 +26,7 @@ define ptr @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 168
   %4 = ptrtoint ptr %3 to i64
-  %5 = add i64 %1, %4
+  %5 = add i64 %4, %1
   %6 = and i64 %5, %0
   %7 = inttoptr i64 %6 to ptr
   ret ptr %7
@@ -39,7 +39,7 @@ define ptr @func0000000000000005(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 56
   %4 = ptrtoint ptr %3 to i64
-  %5 = add nsw i64 %1, %4
+  %5 = add nsw i64 %4, %1
   %6 = and i64 %5, %0
   %7 = inttoptr i64 %6 to ptr
   ret ptr %7

@@ -9,7 +9,7 @@ define float @func0000000000000003(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   %6 = fdiv float %5, 3.000000e+00
   ret float %6
 }

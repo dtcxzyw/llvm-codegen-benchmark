@@ -167,10 +167,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(double %0) #0 {
 entry:
-  %1 = fptrunc double %0 to float
-  %2 = bitcast float %1 to i32
-  %3 = icmp slt i32 %2, 0
-  ret i1 %3
+  %1 = bitcast double %0 to i64
+  %2 = icmp slt i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

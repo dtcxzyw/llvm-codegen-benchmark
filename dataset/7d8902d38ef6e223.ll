@@ -14,7 +14,7 @@
 define i64 @func0000000000000014(i64 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i64
-  %4 = mul nsw i64 %0, %3
+  %4 = mul nsw i64 %3, %0
   %5 = sext i16 %1 to i64
   %6 = add nsw i64 %4, %5
   %7 = shl i64 %6, 32
@@ -27,7 +27,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %0, %3
+  %4 = mul nsw i64 %3, %0
   %5 = sext i32 %1 to i64
   %6 = add i64 %4, %5
   %7 = shl i64 %6, 2
@@ -41,7 +41,7 @@ entry:
 define i64 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %0, %3
+  %4 = mul nuw nsw i64 %3, %0
   %5 = sext i32 %1 to i64
   %6 = add nsw i64 %4, %5
   %7 = shl i64 %6, 2

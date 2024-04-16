@@ -1,16 +1,16 @@
 func0000000000000084:                   # @func0000000000000084
-	bset	a0, zero, a0
-	sext.w	a0, a0
-	sltiu	a0, a0, 2
+	li	a1, -2
+	zext.w	a1, a1
+	bext	a0, a1, a0
+	seqz	a0, a0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
-	bset	a0, zero, a0
-	sext.w	a0, a0
-	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	li	a1, -2
+	zext.w	a1, a1
+	bext	a0, a1, a0
 	ret
 func0000000000000088:                   # @func0000000000000088
-	bset	a0, zero, a0
-	srliw	a0, a0, 16
-	snez	a0, a0
+	lui	a1, 65535
+	slli	a1, a1, 4
+	bext	a0, a1, a0
 	ret

@@ -444,8 +444,8 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = sub nsw i64 %4, %3
-  %6 = add i64 %5, %0
-  %7 = icmp eq i64 %6, 0
+  %6 = sub i64 0, %0
+  %7 = icmp eq i64 %5, %6
   ret i1 %7
 }
 
@@ -472,7 +472,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp eq i32 %6, 24
   ret i1 %7
 }
@@ -485,7 +485,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp ugt i32 %6, 27
   ret i1 %7
 }
@@ -498,7 +498,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = zext nneg i16 %1 to i32
   %5 = sub nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   %7 = icmp ult i32 %6, 128
   ret i1 %7
 }

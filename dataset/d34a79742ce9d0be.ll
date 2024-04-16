@@ -65,7 +65,7 @@ entry:
   %2 = and i16 %1, 63
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp ne i64 %5, 0
   ret i1 %6
 }
@@ -408,7 +408,7 @@ entry:
   %2 = and i16 %1, 63
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %0, %4
+  %5 = and i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -476,10 +476,9 @@ define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %3
-  %5 = and i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %4 = lshr i64 %0, %3
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
 }
 
 ; 6 occurrences:

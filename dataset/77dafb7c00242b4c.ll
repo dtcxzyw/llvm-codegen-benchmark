@@ -82,11 +82,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 12
-  %2 = and i32 %1, 15
-  %3 = icmp ne i32 %2, 7
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %1 = and i32 %0, 61440
+  %2 = icmp ne i32 %1, 28672
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
 ; 38 occurrences:
@@ -131,11 +130,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = lshr i32 %0, 8
-  %2 = and i32 %1, 127
-  %3 = icmp eq i32 %2, 93
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %1 = and i32 %0, 32512
+  %2 = icmp eq i32 %1, 23808
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -143,11 +141,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i8 %0) #0 {
 entry:
-  %1 = lshr i8 %0, 1
-  %2 = and i8 %1, 31
-  %3 = icmp ugt i8 %2, 15
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %1 = lshr i8 %0, 5
+  %.lobit = and i8 %1, 1
+  %2 = zext nneg i8 %.lobit to i32
+  ret i32 %2
 }
 
 attributes #0 = { nounwind }

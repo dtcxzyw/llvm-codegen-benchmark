@@ -7,9 +7,10 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 0, i32 %2
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %0, i1 %4, i1 false
+  %3 = icmp ne i32 %2, 0
+  %not. = xor i1 %1, true
+  %4 = select i1 %0, i1 %not., i1 false
+  %5 = select i1 %4, i1 %3, i1 false
   %6 = zext i1 %5 to i32
   ret i32 %6
 }

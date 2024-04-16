@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -432
+  %2 = add i64 %1, 34359737936
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
   %5 = select i1 %0, i32 16777216, i32 %4

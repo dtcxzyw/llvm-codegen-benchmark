@@ -4,9 +4,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -4096
-  %3 = and i64 %0, -4096
-  %4 = sub i64 %3, %2
+  %2 = and i64 %1, 140737488351232
+  %3 = and i64 %0, 140737488351232
+  %4 = sub nsw i64 %3, %2
   %5 = shl i64 %4, 17
   ret i64 %5
 }

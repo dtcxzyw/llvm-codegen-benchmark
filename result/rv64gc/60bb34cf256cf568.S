@@ -48,10 +48,10 @@ func0000000000000109:                   # @func0000000000000109
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
 	lui	a2, 8
-	xor	a1, a1, a2
-	snez	a1, a1
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	beq	a1, a2, .LBB5_2
+	li	a0, 2
+	ret
+.LBB5_2:
 	ori	a0, a0, 2
 	ret
 func0000000000000031:                   # @func0000000000000031

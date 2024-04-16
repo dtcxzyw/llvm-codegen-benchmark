@@ -9,7 +9,7 @@ define i1 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = sub i8 %1, %2
   %4 = add i8 %3, 2
-  %5 = or i8 %0, %4
+  %5 = or i8 %4, %0
   %6 = icmp ult i8 %5, 4
   ret i1 %6
 }

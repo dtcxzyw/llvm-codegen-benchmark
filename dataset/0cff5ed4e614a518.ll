@@ -13,7 +13,7 @@ entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i16
   %5 = sub i16 %4, %1
-  %6 = xor i16 %0, %5
+  %6 = xor i16 %5, %0
   ret i16 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = sub i32 %4, %1
-  %6 = xor i32 %0, %5
+  %6 = xor i32 %5, %0
   ret i32 %6
 }
 

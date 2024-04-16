@@ -10,7 +10,7 @@ entry:
   %2 = trunc i128 %1 to i64
   %3 = or i64 %2, 8388609
   %4 = zext i64 %3 to i128
-  %5 = or disjoint i128 %0, %4
+  %5 = or disjoint i128 %4, %0
   ret i128 %5
 }
 

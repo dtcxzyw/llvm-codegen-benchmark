@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a1, a1, 255
+	andi	a1, a1, 240
 	sltiu	a1, a1, 144
 	lui	a2, 8
 	addiw	a3, a2, -1

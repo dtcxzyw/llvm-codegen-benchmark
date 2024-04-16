@@ -8,7 +8,7 @@ entry:
   %1 = zext i16 %0 to i64
   %2 = mul nuw nsw i64 %1, 4295032833
   %3 = lshr i64 %2, 32
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = add nuw nsw i32 %4, 128
   ret i32 %5
 }
@@ -110,7 +110,7 @@ entry:
   %1 = zext i64 %0 to i128
   %2 = mul nuw nsw i128 %1, 2361183241434822607
   %3 = lshr i128 %2, 71
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw nsw i128 %3 to i64
   %5 = add nsw i64 %4, -1
   ret i64 %5
 }
@@ -156,7 +156,7 @@ entry:
   %1 = zext i64 %0 to i128
   %2 = mul nuw i128 %1, 17014118346046923173
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = add nuw i64 %4, 2
   ret i64 %5
 }
@@ -166,10 +166,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000062(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = mul nuw nsw i32 %1, 255
-  %3 = lshr i32 %2, 8
-  %4 = trunc i32 %3 to i8
+  %1 = zext i8 %0 to i16
+  %2 = mul nuw i16 %1, 255
+  %3 = lshr i16 %2, 8
+  %4 = trunc nuw i16 %3 to i8
   %5 = add nuw i8 %4, 1
   ret i8 %5
 }

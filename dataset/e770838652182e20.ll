@@ -7,11 +7,9 @@
 define i1 @func0000000000000011(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 63
-  %2 = lshr i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, 7
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = and i32 %1, 448
+  %3 = icmp eq i32 %2, 0
+  ret i1 %3
 }
 
 ; 19 occurrences:
@@ -38,11 +36,9 @@ entry:
 define i1 @func000000000000001c(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 32800
-  %2 = lshr i32 %1, 16
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, 1
-  %5 = icmp ne i64 %4, 0
-  ret i1 %5
+  %2 = and i32 %1, 65536
+  %3 = icmp ne i32 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -51,11 +47,9 @@ entry:
 define i1 @func00000000000000d1(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 4095
-  %2 = lshr i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, 63
-  %5 = icmp eq i64 %4, 63
-  ret i1 %5
+  %2 = and i32 %1, 4032
+  %3 = icmp eq i32 %2, 4032
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

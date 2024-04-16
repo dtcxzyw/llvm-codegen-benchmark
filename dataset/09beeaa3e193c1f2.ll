@@ -8,8 +8,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %1, %2
-  %4 = and i64 %3, 15
+  %3 = shl i64 15, %2
+  %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
@@ -46,8 +46,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %1, %2
-  %4 = and i32 %3, 1
+  %3 = shl nuw i32 1, %2
+  %4 = and i32 %3, %1
   %5 = icmp eq i32 %4, 0
   %6 = icmp ne i32 %0, -2147483648
   %7 = select i1 %6, i1 true, i1 %5

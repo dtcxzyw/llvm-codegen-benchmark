@@ -11,7 +11,7 @@ define i1 @func0000000000000001(i32 %0, i48 %1) #0 {
 entry:
   %2 = trunc i48 %1 to i32
   %3 = ashr i32 %2, 16
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -22,7 +22,7 @@ define i1 @func000000000000000a(i32 %0, i48 %1) #0 {
 entry:
   %2 = trunc i48 %1 to i32
   %3 = ashr i32 %2, 16
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -37,7 +37,7 @@ define i1 @func0000000000000006(i64 %0, i96 %1) #0 {
 entry:
   %2 = trunc i96 %1 to i64
   %3 = ashr i64 %2, 32
-  %4 = icmp slt i64 %0, %3
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 

@@ -48,7 +48,7 @@ define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.fmuladd.f64(double %1, double -2.000000e-01, double %2)
   %4 = fcmp ogt double %3, 0.000000e+00
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   ret i1 %5
 }
 

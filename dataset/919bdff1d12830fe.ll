@@ -39,10 +39,9 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 1
-  %4 = and i32 %0, -2
+  %4 = and i32 %0, -6
   %5 = or disjoint i32 %4, %3
-  %6 = and i32 %5, -5
-  ret i32 %6
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

@@ -33,10 +33,10 @@ define i64 @func00000000000000fa(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 64, %0
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 1, %2
-  %4 = add nsw i64 %3, -1
-  %5 = lshr i64 %4, 12
-  ret i64 %5
+  %notmask = shl nsw i64 -1, %2
+  %3 = xor i64 %notmask, -1
+  %4 = lshr i64 %3, 12
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

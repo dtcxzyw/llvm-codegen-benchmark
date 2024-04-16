@@ -55,7 +55,7 @@ entry:
 define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fdiv float 1.000000e+00, %1
-  %3 = fmul float %0, %2
+  %3 = fmul float %2, %0
   %4 = fcmp ogt float %3, 0x3FEFFFFFE0000000
   %5 = select i1 %4, float 0x3FEFFFFFE0000000, float %3
   ret float %5

@@ -6,7 +6,7 @@
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.maxnum.f32(float %1, float %2)
-  %4 = fcmp oeq float %0, %3
+  %4 = fcmp oeq float %3, %0
   ret i1 %4
 }
 
@@ -19,7 +19,7 @@ declare float @llvm.maxnum.f32(float, float) #1
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = tail call float @llvm.maxnum.f32(float %1, float %2)
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = tail call double @llvm.maxnum.f64(double %1, double %2)
-  %4 = fcmp ugt double %0, %3
+  %4 = fcmp ult double %3, %0
   ret i1 %4
 }
 

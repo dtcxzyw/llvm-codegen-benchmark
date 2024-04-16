@@ -9,7 +9,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -58
   %4 = icmp ult i32 %3, -10
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = xor i1 %5, true
   ret i1 %6
 }

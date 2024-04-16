@@ -1,7 +1,8 @@
 func0000000000000401:                   # @func0000000000000401
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000003b8:                   # @func00000000000003b8
@@ -31,14 +32,16 @@ func00000000000003b1:                   # @func00000000000003b1
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000005b1:                   # @func00000000000005b1
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
 	xori	a1, a1, 1
-	addw	a0, a0, a1
+	or	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 .LCPI6_0:
@@ -47,6 +50,6 @@ func0000000000000131:                   # @func0000000000000131
 	lui	a1, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a1)
 	flt.d	a1, fa0, fa5
-	add	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret

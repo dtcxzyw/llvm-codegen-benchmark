@@ -12,10 +12,9 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -100000000
   %3 = add i32 %2, %0
-  %4 = udiv i32 %3, 1000000
-  %5 = mul i32 %4, -1000000
-  %6 = add i32 %5, %3
-  ret i32 %6
+  %.fr = freeze i32 %3
+  %4 = urem i32 %.fr, 1000000
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

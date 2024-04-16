@@ -19,12 +19,13 @@ func0000000000000017:                   # @func0000000000000017
 	addi	a2, a2, -1
 	mulhsu	a2, a2, a3
 	slli	a4, a3, 32
-	sub	a3, a0, a3
-	sub	a3, a3, a4
-	sltu	a0, a3, a0
-	add	a0, a0, a1
-	add	a0, a0, a2
-	snez	a1, a3
-	add	a1, a1, a0
-	addi	a0, a3, -1
+	add	a3, a3, a4
+	neg	a4, a3
+	sub	a0, a0, a3
+	sltu	a3, a0, a4
+	add	a1, a1, a2
+	snez	a2, a0
+	add	a2, a2, a3
+	add	a1, a1, a2
+	addi	a0, a0, -1
 	ret

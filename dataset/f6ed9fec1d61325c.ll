@@ -12,10 +12,8 @@ define i1 @func0000000000000314(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %1, i64 %2
   %4 = getelementptr inbounds i8, ptr %3, i64 -8
-  %5 = icmp ugt ptr %0, %4
-  %6 = select i1 %5, ptr %4, ptr %0
-  %7 = icmp ult ptr %6, %4
-  ret i1 %7
+  %5 = icmp ugt ptr %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

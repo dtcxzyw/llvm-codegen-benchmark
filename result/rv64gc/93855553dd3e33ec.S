@@ -1,14 +1,14 @@
 func000000000000001f:                   # @func000000000000001f
-	li	a1, 64
-	subw	a1, a1, a0
-	slliw	a0, a1, 3
+	slli	a0, a0, 3
+	li	a1, 512
+	subw	a0, a1, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a1, 13
-	subw	a1, a1, a0
-	slliw	a0, a1, 1
+	slli	a0, a0, 1
+	li	a1, 26
+	subw	a0, a1, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
+	slli	a0, a0, 2
 	negw	a0, a0
-	slliw	a0, a0, 2
 	ret

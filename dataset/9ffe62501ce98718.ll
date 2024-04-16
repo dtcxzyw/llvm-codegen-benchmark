@@ -25,9 +25,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
-  %5 = sub i64 %0, %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %0
+  ret i1 %5
 }
 
 ; 16 occurrences:

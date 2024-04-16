@@ -23,7 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fmul.d	fa4, fa1, fa1
 	fmul.d	fa5, fa4, fa5
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	ret
 .LCPI3_0:
 	.quad	0x400921fb54442d18              # double 3.1415926535897931
@@ -32,7 +32,7 @@ func0000000000000007:                   # @func0000000000000007
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	fmul.d	fa4, fa1, fa1
 	fmul.d	fa5, fa4, fa5
-	feq.d	a0, fa0, fa5
+	feq.d	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 .LCPI4_0:

@@ -101,7 +101,7 @@ entry:
   %1 = add nsw i32 %0, -5612400
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = urem i32 %2, 3600
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nuw nsw i32 %3 to i16
   %5 = udiv i16 %4, 60
   ret i16 %5
 }

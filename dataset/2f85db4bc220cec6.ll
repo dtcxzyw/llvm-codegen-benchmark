@@ -123,7 +123,7 @@ entry:
 define i1 @func00000000000007cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 24
-  %4 = or disjoint i64 %1, %3
+  %4 = or disjoint i64 %3, %1
   %5 = icmp ne i64 %4, 4294967295
   %6 = icmp ne i64 %0, 4294967295
   %7 = select i1 %6, i1 %5, i1 false

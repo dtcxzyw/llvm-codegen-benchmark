@@ -6,7 +6,7 @@
 define i1 @func0000000000000021(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = xor i1 %4, true
   %6 = icmp eq i8 %0, 0
   %7 = select i1 %5, i1 %6, i1 false
@@ -20,7 +20,7 @@ entry:
 define i1 @func0000000000000181(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = or i1 %1, %3
+  %4 = or i1 %3, %1
   %5 = xor i1 %4, true
   %6 = icmp eq i8 %0, 0
   %7 = select i1 %5, i1 %6, i1 false

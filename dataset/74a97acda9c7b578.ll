@@ -40,9 +40,8 @@
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr inbounds %"struct.rocksdb::CompactionInputFiles.1568019", ptr %0, i64 %2, i32 1
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.rocksdb::CompactionInputFiles.1568019", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
+  ret ptr %3
 }
 
 ; 3 occurrences:
@@ -53,9 +52,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = getelementptr inbounds %"struct.rocksdb::FdWithKeyRange.1568246", ptr %0, i64 %2, i32 3
-  %4 = getelementptr inbounds i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.rocksdb::FdWithKeyRange.1568246", ptr %0, i64 %2, i32 3, i32 1
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -64,9 +62,8 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = getelementptr inbounds %"struct.rocksdb::FdWithKeyRange.1568246", ptr %0, i64 %2, i32 2
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %3 = getelementptr %"struct.rocksdb::FdWithKeyRange.1568246", ptr %0, i64 %2, i32 2, i32 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -76,9 +73,8 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = getelementptr inbounds %"struct.folly::threadlocal_detail::ElementWrapper.1645581", ptr %0, i64 %2, i32 3
-  %4 = getelementptr inbounds i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr inbounds %"struct.folly::threadlocal_detail::ElementWrapper.1645581", ptr %0, i64 %2, i32 3, i32 3
+  ret ptr %3
 }
 
 ; 1 occurrences:
@@ -87,9 +83,8 @@ entry:
 define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr %struct.send_queue.2025338, ptr %0, i64 %2, i32 5
-  %4 = getelementptr inbounds i8, ptr %3, i64 24
-  ret ptr %4
+  %3 = getelementptr %struct.send_queue.2025338, ptr %0, i64 %2, i32 5, i32 2
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

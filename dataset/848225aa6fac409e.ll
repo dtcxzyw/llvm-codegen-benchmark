@@ -47,7 +47,7 @@ entry:
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = icmp ult i32 %5, 12
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -72,12 +72,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl i32 %1, 4
-  %5 = or i32 %4, %3
-  %6 = icmp ult i32 %5, 55296
-  %7 = or i1 %6, %0
-  ret i1 %7
+  %3 = shl i32 %1, 4
+  %4 = icmp ult i32 %3, 55296
+  %5 = or i1 %4, %0
+  ret i1 %5
 }
 
 ; 6 occurrences:
@@ -145,12 +143,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000ac(i1 %0, i128 %1, i64 %2) #0 {
 entry:
-  %3 = zext i64 %2 to i128
-  %4 = shl nuw i128 %1, 64
-  %5 = or disjoint i128 %4, %3
-  %6 = icmp slt i128 %5, 0
-  %7 = or i1 %6, %0
-  ret i1 %7
+  %.mask = and i128 %1, 9223372036854775808
+  %3 = icmp ne i128 %.mask, 0
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -162,7 +158,7 @@ entry:
   %4 = shl i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = icmp ne i64 %5, 0
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -190,7 +186,7 @@ entry:
   %4 = shl i32 %1, 7
   %5 = or disjoint i32 %4, %3
   %6 = icmp ugt i32 %5, 100000000
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 
@@ -218,7 +214,7 @@ entry:
   %4 = shl i32 %1, 6
   %5 = or disjoint i32 %4, %3
   %6 = icmp sgt i32 %5, 1114111
-  %7 = or i1 %0, %6
+  %7 = or i1 %6, %0
   ret i1 %7
 }
 

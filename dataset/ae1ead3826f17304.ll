@@ -25,7 +25,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -40,7 +40,7 @@ define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, %2
   %4 = xor i8 %3, -1
-  %5 = and i8 %0, %4
+  %5 = and i8 %4, %0
   %6 = icmp eq i8 %5, 0
   ret i1 %6
 }
@@ -65,7 +65,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = icmp ult i32 %5, 16
   ret i1 %6
 }

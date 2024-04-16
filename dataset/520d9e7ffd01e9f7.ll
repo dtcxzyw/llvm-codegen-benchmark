@@ -186,7 +186,7 @@ entry:
   %3 = or i32 %2, 1
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 true), !range !0
   %5 = sub nuw nsw i32 32, %4
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

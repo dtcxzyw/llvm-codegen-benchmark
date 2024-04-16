@@ -29,7 +29,8 @@ func0000000000000045:                   # @func0000000000000045
 func0000000000000044:                   # @func0000000000000044
 	addiw	a1, a1, 2
 	sltiu	a1, a1, 1530
-	li	a2, -12
+	lui	a2, 16
+	addi	a2, a2, -12
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 3

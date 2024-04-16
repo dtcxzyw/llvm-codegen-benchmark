@@ -1,7 +1,7 @@
 func00000000000000c6:                   # @func00000000000000c6
 	srli	a1, a1, 31
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func000000000000010a:                   # @func000000000000010a
 	srli	a1, a1, 3
@@ -25,8 +25,8 @@ func000000000000014a:                   # @func000000000000014a
 	ret
 func0000000000000106:                   # @func0000000000000106
 	srli	a1, a1, 3
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 func0000000000000101:                   # @func0000000000000101
 	srli	a1, a1, 3

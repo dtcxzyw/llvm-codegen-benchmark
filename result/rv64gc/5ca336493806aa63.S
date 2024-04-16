@@ -1,50 +1,40 @@
 func000000000000001a:                   # @func000000000000001a
-	andi	a3, a0, 1
-	li	a0, -64
-	bnez	a3, .LBB0_2
 	subw	a1, a1, a2
-	addiw	a0, a1, -64
-.LBB0_2:                                # %entry
-	sgtz	a0, a0
+	slti	a1, a1, 65
+	xori	a1, a1, 1
+	not	a0, a0
+	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a0, a0, 1
-	sub	a1, a1, a2
-	addiw	a1, a1, 1
-	addi	a0, a0, -1
+	subw	a1, a1, a2
+	lui	a2, 524288
+	addiw	a2, a2, -1
+	sltu	a1, a1, a2
+	not	a0, a0
 	and	a0, a0, a1
-	sgtz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	andi	a0, a0, 1
-	sub	a1, a1, a2
-	addiw	a1, a1, -24
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	subw	a1, a1, a2
+	addi	a1, a1, -24
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a0, a0, 1
 	sub	a1, a1, a2
-	addi	a1, a1, 1
-	addi	a0, a0, -1
+	sltiu	a1, a1, -1
+	not	a0, a0
 	and	a0, a0, a1
-	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
 	sub	a1, a1, a2
 	addi	a1, a1, 1
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	seqz	a0, a0
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
-	andi	a3, a0, 1
-	li	a0, 64
-	bnez	a3, .LBB5_2
-	subw	a0, a1, a2
-	addiw	a0, a0, 1
-.LBB5_2:                                # %entry
-	slti	a0, a0, 1
+	sext.w	a2, a2
+	sext.w	a1, a1
+	slt	a1, a1, a2
+	not	a0, a0
+	and	a0, a0, a1
 	ret

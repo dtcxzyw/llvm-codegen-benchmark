@@ -12,10 +12,8 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a1, a1
 	lui	a2, 524288
-	xor	a1, a1, a2
-	snez	a1, a1
-	addi	a1, a1, -1
-	ori	a1, a1, 1
 	andi	a0, a0, 255
-	mul	a0, a1, a0
+	bne	a1, a2, .LBB1_2
+	neg	a0, a0
+.LBB1_2:                                # %entry
 	ret

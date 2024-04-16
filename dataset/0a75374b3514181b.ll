@@ -157,11 +157,11 @@
 define i32 @func0000000000000115(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = sub nsw i32 348, %3
-  %5 = trunc i64 %1 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = add nsw i32 %6, %0
-  ret i32 %7
+  %4 = trunc i64 %1 to i32
+  %reass.sub = sub i32 %4, %3
+  %5 = add i32 %reass.sub, 348
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
 }
 
 ; 9 occurrences:
@@ -178,11 +178,11 @@ entry:
 define i32 @func0000000000000195(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
-  %4 = sub nsw i32 348, %3
-  %5 = trunc nuw i64 %1 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = add nsw i32 %6, %0
-  ret i32 %7
+  %4 = trunc nuw i64 %1 to i32
+  %reass.sub = sub i32 %4, %3
+  %5 = add i32 %reass.sub, 348
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
 }
 
 attributes #0 = { nounwind }

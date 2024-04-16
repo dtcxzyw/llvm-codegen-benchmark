@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	add	a1, a1, a2
@@ -32,7 +32,7 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a2
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
 	add	a1, a1, a2

@@ -29,8 +29,8 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = add nsw i32 %2, 1
-  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 1)
+  %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
+  %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
 

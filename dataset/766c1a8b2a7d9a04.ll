@@ -42,8 +42,8 @@ define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = freeze i64 %2
-  %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, 255
+  %4 = and i64 %3, 4294967040
+  %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
 

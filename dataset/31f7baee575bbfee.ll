@@ -4,8 +4,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %0, %1
-  %3 = add i32 %2, -1
+  %2 = xor i32 %1, -1
+  %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 false), !range !0
   %5 = sub nuw nsw i32 33, %4
   ret i32 %5
@@ -21,8 +21,8 @@ declare i32 @llvm.ctlz.i32(i32, i1 immarg) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub i32 %0, %1
-  %3 = add i32 %2, -1
+  %2 = xor i32 %1, -1
+  %3 = add i32 %2, %0
   %4 = tail call i32 @llvm.ctlz.i32(i32 %3, i1 true), !range !0
   %5 = sub nuw nsw i32 32, %4
   ret i32 %5
@@ -59,8 +59,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sub i64 %0, %1
-  %3 = add i64 %2, -1
+  %2 = xor i64 %1, -1
+  %3 = add i64 %2, %0
   %4 = call i64 @llvm.ctlz.i64(i64 %3, i1 true), !range !1
   %5 = sub nsw i64 61, %4
   ret i64 %5

@@ -34,9 +34,8 @@ func0000000000000158:                   # @func0000000000000158
 	xori	a0, a0, 1
 	ret
 func0000000000000104:                   # @func0000000000000104
+	sh2add	a1, a2, a1
 	sub	a0, a0, a1
-	slli	a2, a2, 2
-	sub	a0, a0, a2
 	sltiu	a0, a0, 32
 	ret
 func0000000000000116:                   # @func0000000000000116
@@ -84,9 +83,9 @@ func0000000000000156:                   # @func0000000000000156
 	slti	a0, a0, 0
 	ret
 func000000000000004c:                   # @func000000000000004c
-	sub	a1, a1, a2
-	li	a2, -19
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sub	a2, a2, a1
+	li	a1, -19
+	mul	a0, a0, a1
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret

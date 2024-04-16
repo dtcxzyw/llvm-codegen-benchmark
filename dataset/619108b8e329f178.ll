@@ -4,10 +4,10 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %1, i64 1
-  %3 = select i1 %0, ptr %2, ptr %1
-  %4 = getelementptr i8, ptr %3, i64 1
-  ret ptr %4
+  %.idx = zext i1 %0 to i64
+  %2 = getelementptr i8, ptr %1, i64 %.idx
+  %3 = getelementptr i8, ptr %2, i64 1
+  ret ptr %3
 }
 
 ; 12 occurrences:
@@ -26,10 +26,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 1
-  %3 = select i1 %0, ptr %2, ptr %1
-  %4 = getelementptr inbounds i8, ptr %3, i64 1
-  ret ptr %4
+  %.idx = zext i1 %0 to i64
+  %2 = getelementptr inbounds i8, ptr %1, i64 %.idx
+  %3 = getelementptr inbounds i8, ptr %2, i64 1
+  ret ptr %3
 }
 
 ; 2 occurrences:
@@ -38,10 +38,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 1
-  %3 = select i1 %0, ptr %2, ptr %1
-  %4 = getelementptr i8, ptr %3, i64 8
-  ret ptr %4
+  %.idx = zext i1 %0 to i64
+  %2 = getelementptr inbounds i8, ptr %1, i64 %.idx
+  %3 = getelementptr i8, ptr %2, i64 8
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

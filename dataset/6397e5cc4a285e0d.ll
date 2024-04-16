@@ -9,7 +9,7 @@ entry:
   %2 = icmp ne i32 %0, 0
   %3 = select i1 %1, i1 %2, i1 false
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = icmp ne i64 %0, 0
   %3 = select i1 %1, i1 %2, i1 false
   %4 = sext i1 %3 to i64
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -54,7 +54,7 @@ entry:
   %2 = icmp sgt i8 %0, -12
   %3 = select i1 %1, i1 %2, i1 false
   %4 = sext i1 %3 to i8
-  %5 = add i8 %0, %4
+  %5 = add i8 %4, %0
   ret i8 %5
 }
 
@@ -66,7 +66,7 @@ entry:
   %2 = icmp slt i32 %0, 6
   %3 = select i1 %1, i1 %2, i1 false
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

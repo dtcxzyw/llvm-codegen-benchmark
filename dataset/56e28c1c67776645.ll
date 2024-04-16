@@ -12,7 +12,7 @@ define i64 @func0000000000000015(i64 %0, i16 %1) #0 {
 entry:
   %2 = udiv i16 %1, 40
   %3 = zext nneg i16 %2 to i64
-  %4 = add nsw i64 %0, %3
+  %4 = add nsw i64 %3, %0
   %5 = add nsw i64 %4, 63
   ret i64 %5
 }

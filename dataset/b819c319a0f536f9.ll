@@ -19,10 +19,9 @@ entry:
 define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %0, %4
-  %6 = sub nsw i32 0, %5
-  ret i32 %6
+  %.neg = zext i1 %3 to i32
+  %.neg1 = sub i32 %.neg, %0
+  ret i32 %.neg1
 }
 
 attributes #0 = { nounwind }

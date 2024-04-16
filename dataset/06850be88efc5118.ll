@@ -12,7 +12,7 @@ entry:
   %2 = add i32 %1, -3
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 255)
   %4 = tail call i32 @llvm.umax.i32(i32 %3, i32 1)
-  %5 = icmp eq i32 %0, %4
+  %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
 

@@ -1,10 +1,8 @@
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	or	a1, a1, a2
-	sext.w	a1, a1
-	sltiu	a1, a1, -1
+	sext.w	a2, a2
+	sltiu	a2, a2, -1
+	andn	a1, a2, a1
 	addi	a0, a0, -8
 	seqz	a0, a0
 	and	a0, a0, a1

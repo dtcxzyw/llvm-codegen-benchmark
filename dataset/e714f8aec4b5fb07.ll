@@ -10,7 +10,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = udiv i16 %2, 255
   %4 = zext nneg i16 %3 to i32
-  %5 = or disjoint i32 %0, %4
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = trunc i32 %1 to i16
   %3 = udiv i16 %2, 255
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   ret i32 %5
 }
 

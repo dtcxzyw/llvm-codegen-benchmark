@@ -22,8 +22,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i16 %1) #0 {
 entry:
-  %2 = zext nneg i16 %1 to i32
-  %3 = or disjoint i32 %2, 32
+  %2 = or i16 %1, 32
+  %3 = zext i16 %2 to i32
   %4 = select i1 %0, i32 32, i32 %3
   ret i32 %4
 }

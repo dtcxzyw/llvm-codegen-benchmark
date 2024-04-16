@@ -30,11 +30,7 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 1
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 25
-	add	a1, a1, a0
-	andi	a1, a1, -128
-	subw	a0, a0, a1
+	andi	a0, a0, 127
 	seqz	a0, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -96,12 +92,10 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 63
 	ret
 func000000000000000a:                   # @func000000000000000a
-	addi	a0, a0, 4
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 30
-	add	a1, a1, a0
-	andi	a1, a1, -4
-	subw	a0, a0, a1
+	addiw	a0, a0, 4
+	lui	a1, 524288
+	addiw	a1, a1, 3
+	and	a0, a0, a1
 	sgtz	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004

@@ -7,8 +7,8 @@
 define i64 @func0000000000000002(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = sub nsw i64 %2, %0
-  %4 = ashr i64 %3, 63
+  %3 = icmp slt i64 %2, %0
+  %4 = sext i1 %3 to i64
   ret i64 %4
 }
 

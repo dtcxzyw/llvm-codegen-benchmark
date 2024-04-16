@@ -7,11 +7,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000014(i32 %0) #0 {
 entry:
-  %1 = shl i32 65536, %0
-  %2 = ashr exact i32 %1, 16
-  %3 = trunc nsw i32 %2 to i16
-  %4 = sub i16 0, %3
-  ret i16 %4
+  %.neg = shl nsw i32 -1, %0
+  %.neg1 = trunc i32 %.neg to i16
+  ret i16 %.neg1
 }
 
 attributes #0 = { nounwind }

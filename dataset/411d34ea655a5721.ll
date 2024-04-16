@@ -5,9 +5,9 @@
 define i1 @func0000000000000408(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 10
-  %4 = icmp ugt i32 %1, %3
+  %4 = icmp ult i32 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %0, %5
+  %6 = add i32 %5, %0
   %7 = icmp ugt i32 %6, 79
   ret i1 %7
 }
@@ -20,9 +20,9 @@ entry:
 define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = icmp eq i32 %1, %3
+  %4 = icmp eq i32 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nuw i32 %0, %5
+  %6 = add nuw i32 %5, %0
   %7 = icmp ugt i32 %6, 32
   ret i1 %7
 }

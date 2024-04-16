@@ -26,7 +26,7 @@ entry:
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

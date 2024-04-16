@@ -68,9 +68,9 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 61
   %5 = or disjoint i64 %0, %1
-  %6 = or disjoint i64 %5, %4
-  %7 = and i64 %6, -1073741824
-  ret i64 %7
+  %.masked = and i64 %5, -1073741824
+  %6 = or i64 %.masked, %4
+  ret i64 %6
 }
 
 ; 6 occurrences:
@@ -99,9 +99,9 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or i64 %0, %1
-  %6 = or i64 %5, %4
-  %7 = and i64 %6, 281474976710655
-  ret i64 %7
+  %.masked = and i64 %5, 281474976710655
+  %6 = or i64 %.masked, %4
+  ret i64 %6
 }
 
 ; 1 occurrences:

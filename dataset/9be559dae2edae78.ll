@@ -13,9 +13,8 @@ define ptr @func000000000000000f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds %class.btVector3.1742160, ptr %2, i64 %1
   %4 = getelementptr inbounds %class.btVector3.1742160, ptr %3, i64 %1
-  %5 = getelementptr inbounds %struct.btSpatialMotionVector.1742162, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.btSpatialMotionVector.1742162, ptr %4, i64 %0, i32 0, i32 0, i64 2
+  ret ptr %5
 }
 
 ; 59 occurrences:

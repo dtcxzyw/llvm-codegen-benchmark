@@ -12,7 +12,7 @@
 define ptr @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 88
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = getelementptr i8, ptr %0, i64 -48
   %5 = select i1 %3, ptr null, ptr %4
   ret ptr %5
@@ -29,7 +29,7 @@ entry:
 define ptr @func0000000000000031(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr inbounds i8, ptr %1, i64 24
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = getelementptr inbounds i8, ptr %0, i64 -16
   %5 = select i1 %3, ptr null, ptr %4
   ret ptr %5
@@ -42,7 +42,7 @@ entry:
 define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 80
-  %3 = icmp eq ptr %0, %2
+  %3 = icmp eq ptr %2, %0
   %4 = getelementptr i8, ptr %0, i64 -104
   %5 = select i1 %3, ptr null, ptr %4
   ret ptr %5

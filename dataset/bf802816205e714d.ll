@@ -167,11 +167,10 @@
 define i40 @func000000000000003c(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %0, i64 4294967296, i64 0
-  %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i40
-  ret i40 %6
+  %3 = zext i32 %2 to i40
+  %4 = select i1 %0, i40 4294967296, i40 0
+  %5 = or disjoint i40 %4, %3
+  ret i40 %5
 }
 
 ; 9 occurrences:
@@ -188,11 +187,10 @@ entry:
 define i40 @func000000000000003f(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %0, i64 4294967296, i64 0
-  %5 = or disjoint i64 %4, %3
-  %6 = trunc nuw nsw i64 %5 to i40
-  ret i40 %6
+  %3 = zext i32 %2 to i40
+  %4 = select i1 %0, i40 4294967296, i40 0
+  %5 = or disjoint i40 %4, %3
+  ret i40 %5
 }
 
 attributes #0 = { nounwind }

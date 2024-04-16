@@ -5,7 +5,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = shl i64 %4, 15
   %6 = and i64 %0, -4161537
   %7 = or i64 %6, %5
@@ -17,8 +17,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %3 = zext i32 %2 to i64
+  %4 = add i64 %3, %1
   %5 = shl i64 %4, 56
   %6 = and i64 %0, 71776119061217280
   %7 = or disjoint i64 %6, %5

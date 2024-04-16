@@ -47,7 +47,7 @@ entry:
   %2 = shl nsw i32 %1, 2
   %3 = zext i16 %0 to i32
   %4 = lshr i32 %3, %2
-  %5 = and i32 %4, 15
+  %5 = and i32 %4, 14
   %6 = icmp ult i32 %5, 10
   ret i1 %6
 }
@@ -59,8 +59,8 @@ define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = zext i16 %0 to i32
-  %4 = lshr i32 %3, %2
-  %5 = and i32 %4, 8
+  %4 = shl i32 8, %2
+  %5 = and i32 %4, %3
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }

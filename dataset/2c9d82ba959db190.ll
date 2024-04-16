@@ -258,7 +258,7 @@ entry:
   %3 = sdiv i64 %2, 64
   %4 = getelementptr inbounds i64, ptr %0, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 %1
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 

@@ -93,11 +93,10 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = mul nuw i64 %0, %2
-  %4 = and i64 %3, 2147483648
-  %5 = add nuw nsw i64 %4, 2147483648
-  ret i64 %5
+  %2 = mul i64 %1, %0
+  %3 = and i64 %2, 2147483648
+  %4 = add nuw nsw i64 %3, 2147483648
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

@@ -1,11 +1,10 @@
 func000000000000000d:                   # @func000000000000000d
-	andi	a0, a0, 3
 	slli	a0, a0, 3
+	andi	a0, a0, 24
 	bset	a0, zero, a0
 	addi	a0, a0, -1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a0, a0, 7
 	slli	a0, a0, 3
 	li	a1, 255
 	sll	a0, a1, a0

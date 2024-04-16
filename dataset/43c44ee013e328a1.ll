@@ -32,9 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
-  %1 = or disjoint i64 %0, 1
-  %2 = sub nsw i64 0, %1
-  ret i64 %2
+  %.neg = xor i64 %0, -1
+  ret i64 %.neg
 }
 
 ; 9 occurrences:

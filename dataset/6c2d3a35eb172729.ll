@@ -17,11 +17,9 @@
 define ptr @func0000000000000002(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr [4 x %struct.zone.1997937], ptr %1, i64 0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1088
-  %6 = zext i32 %0 to i64
-  %7 = getelementptr [10 x %struct.atomic64_t.1997910], ptr %5, i64 0, i64 %6
-  ret ptr %7
+  %4 = zext i32 %0 to i64
+  %5 = getelementptr [4 x %struct.zone.1997937], ptr %1, i64 0, i64 %3, i32 36, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -69,8 +69,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = and i64 %5, 4294967295
-  %7 = icmp ugt i64 %6, 3
+  %6 = and i64 %5, 4294967292
+  %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
 
@@ -82,8 +82,8 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = and i64 %5, 4294967295
-  %7 = icmp ult i64 %6, 8
+  %6 = and i64 %5, 4294967288
+  %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
 

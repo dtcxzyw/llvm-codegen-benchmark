@@ -7,9 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	ret
 .LBB0_2:
-	li	a0, 1
-	slli	a0, a0, 31
-	addi	a2, a0, 7
-	srli	a0, a2, 3
-	addi	a0, a0, -1
+	lui	a0, 65536
+	addiw	a0, a0, -1
 	ret

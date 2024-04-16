@@ -8,7 +8,7 @@ entry:
   %2 = and i16 %1, 16383
   %3 = zext nneg i16 %2 to i32
   %4 = mul nuw nsw i32 %3, 18
-  %5 = icmp ult i32 %0, %4
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 

@@ -28,8 +28,8 @@ func0000000000000089:                   # @func0000000000000089
 	zext.h	a0, a0
 	srli	a1, a0, 4
 	sltiu	a1, a1, 625
-	xori	a1, a1, 5
 	sltiu	a0, a0, 1000
+	xori	a1, a1, 5
 	li	a2, 3
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

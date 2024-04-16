@@ -24,7 +24,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = add nuw nsw i64 %1, 1
   %6 = icmp ult i64 %5, %4
-  %7 = and i1 %0, %6
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

@@ -1,9 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a3, 16
 	czero.eqz	a2, a3, a2
-	lui	a3, 10
-	addiw	a3, a3, 1024
-	or	a2, a2, a3
+	bseti	a2, a2, 10
+	bseti	a2, a2, 15
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

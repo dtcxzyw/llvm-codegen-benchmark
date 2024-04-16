@@ -32,7 +32,7 @@ define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 48
   %2 = ashr exact i64 %1, 48
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   ret i32 %3
 }
 
@@ -79,7 +79,7 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 44
   %2 = ashr i64 %1, 59
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nsw i64 %2 to i32
   ret i32 %3
 }
 
@@ -104,7 +104,7 @@ define i64 @func0000000000000010(i128 %0) #0 {
 entry:
   %1 = shl nuw i128 %0, 64
   %2 = ashr i128 %1, 103
-  %3 = trunc i128 %2 to i64
+  %3 = trunc nsw i128 %2 to i64
   ret i64 %3
 }
 
@@ -114,10 +114,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i128 %0) #0 {
 entry:
-  %1 = shl nuw i128 %0, 64
-  %2 = ashr exact i128 %1, 63
-  %3 = trunc i128 %2 to i64
-  ret i64 %3
+  %.tr = trunc i128 %0 to i64
+  %1 = shl i64 %.tr, 1
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

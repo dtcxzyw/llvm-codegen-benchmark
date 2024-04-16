@@ -11,7 +11,7 @@ entry:
   %2 = sdiv i64 %1, 146097
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %3, 400
-  %5 = add nsw i32 %0, %4
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -24,7 +24,7 @@ entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 3
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 
@@ -36,7 +36,7 @@ entry:
   %2 = sdiv i64 %1, 365
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 365
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

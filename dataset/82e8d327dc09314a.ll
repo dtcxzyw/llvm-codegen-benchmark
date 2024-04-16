@@ -11,7 +11,7 @@ entry:
   %2 = lshr i32 %1, 2
   %3 = and i32 %2, 7
   %4 = icmp eq i32 %3, 3
-  %5 = and i1 %0, %4
+  %5 = and i1 %4, %0
   %6 = select i1 %5, i32 2, i32 %3
   ret i32 %6
 }

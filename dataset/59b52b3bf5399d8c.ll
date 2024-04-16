@@ -53,7 +53,7 @@ entry:
   %4 = shl nsw i64 %3, 2
   %5 = shl nsw i64 %1, 1
   %6 = add i64 %5, %4
-  %7 = icmp slt i64 %0, %6
+  %7 = icmp sgt i64 %6, %0
   ret i1 %7
 }
 

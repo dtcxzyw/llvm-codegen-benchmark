@@ -108,8 +108,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = sub nsw i32 %3, %0
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   %5 = zext i16 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -159,8 +159,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = sub i32 %3, %0
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   %5 = zext i16 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -171,8 +171,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000091(i32 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = sub nsw i32 %3, %0
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   %5 = zext i16 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -195,8 +195,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = sub i32 %3, %0
+  %3 = xor i32 %0, -1
+  %4 = add i32 %3, %2
   %5 = zext nneg i8 %1 to i32
   %6 = icmp ne i32 %4, %5
   ret i1 %6

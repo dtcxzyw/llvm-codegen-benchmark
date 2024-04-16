@@ -6,7 +6,7 @@
 define i1 @func0000000000000001(i1 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = lshr i16 %2, 12
-  %4 = trunc i16 %3 to i8
+  %4 = trunc nuw nsw i16 %3 to i8
   %5 = select i1 %0, i8 %1, i8 %4
   %6 = icmp eq i8 %5, 0
   ret i1 %6

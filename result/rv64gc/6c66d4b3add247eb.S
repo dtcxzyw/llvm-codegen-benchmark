@@ -84,7 +84,8 @@ func0000000000000101:                   # @func0000000000000101
 	bgeu	a0, a2, .LBB9_2
 	li	a1, 10
 .LBB9_2:                                # %entry
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000201:                   # @func0000000000000201

@@ -2017,8 +2017,8 @@
 define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add nsw i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 
@@ -2031,7 +2031,7 @@ entry:
 define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp ugt i32 %3, %2
   ret i1 %4
 }
@@ -2072,8 +2072,8 @@ entry:
 define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 80
-  %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %2
+  %3 = xor i64 %2, -1
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 

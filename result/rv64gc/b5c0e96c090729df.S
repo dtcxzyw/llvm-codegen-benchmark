@@ -42,29 +42,29 @@ func000000000000007b:                   # @func000000000000007b
 	add	a1, a1, a2
 	srli	a1, a1, 51
 	add	a0, a0, a1
-	lui	a1, 1048574
-	srli	a1, a1, 12
+	lui	a1, 1048572
+	srli	a1, a1, 13
 	add	a0, a0, a1
-	slli	a0, a0, 13
-	srli	a0, a0, 13
+	addi	a1, a1, 1
+	and	a0, a0, a1
 	ret
 func0000000000000067:                   # @func0000000000000067
 	add	a1, a1, a2
 	srli	a1, a1, 51
 	add	a0, a0, a1
-	lui	a1, 1048574
-	srli	a1, a1, 12
+	lui	a1, 1048572
+	srli	a1, a1, 13
 	add	a0, a0, a1
-	slli	a0, a0, 13
-	srli	a0, a0, 13
+	addi	a1, a1, 1
+	and	a0, a0, a1
 	ret
 func000000000000006b:                   # @func000000000000006b
 	add	a1, a1, a2
 	srli	a1, a1, 51
 	add	a0, a0, a1
-	lui	a1, 1048574
-	srli	a1, a1, 12
+	lui	a1, 1048572
+	srli	a1, a1, 13
 	add	a0, a0, a1
-	slli	a0, a0, 13
-	srli	a0, a0, 13
+	addi	a1, a1, 1
+	and	a0, a0, a1
 	ret

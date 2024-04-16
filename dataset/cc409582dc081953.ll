@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000009(ptr %0, i8 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i8
-  %4 = and i8 %1, 1
-  %5 = icmp ult i8 %4, %3
+  %3 = and i8 %1, 1
+  %4 = icmp eq i8 %3, 0
+  %5 = and i1 %4, %2
   %6 = select i1 %5, i64 24, i64 16
   %7 = getelementptr inbounds i8, ptr %0, i64 %6
   ret ptr %7

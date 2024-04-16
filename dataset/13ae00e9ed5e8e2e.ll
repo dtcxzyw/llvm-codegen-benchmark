@@ -12,9 +12,8 @@ entry:
   %2 = icmp eq i16 %1, 768
   %3 = select i1 %2, i64 2, i64 1
   %4 = getelementptr inbounds i8, ptr %0, i64 64
-  %5 = getelementptr inbounds [3 x %struct.version_info.1779608], ptr %4, i64 0, i64 %3
-  %6 = getelementptr inbounds i8, ptr %5, i64 36
-  ret ptr %6
+  %5 = getelementptr inbounds [3 x %struct.version_info.1779608], ptr %4, i64 0, i64 %3, i32 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

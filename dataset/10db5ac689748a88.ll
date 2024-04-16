@@ -5,9 +5,9 @@
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = shl i32 %3, 6
-  %5 = or disjoint i32 %0, %4
+  %3 = shl i32 %2, 6
+  %4 = add i32 %3, 64
+  %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
@@ -29,8 +29,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = shl i32 %3, 16
+  %3 = shl i32 %2, 16
+  %4 = add i32 %3, 65536
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -41,8 +41,8 @@ entry:
 define i32 @func000000000000006d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = shl nuw i32 %3, 6
+  %3 = shl i32 %2, 6
+  %4 = add i32 %3, -64
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -60,8 +60,8 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, -1
-  %4 = shl nuw i32 %3, 6
+  %3 = shl i32 %2, 6
+  %4 = add i32 %3, -64
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

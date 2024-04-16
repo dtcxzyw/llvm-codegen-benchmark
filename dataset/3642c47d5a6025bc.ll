@@ -7,7 +7,7 @@
 define i1 @func0000000000000022(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %2, 5
   %4 = icmp eq i32 %2, 25
   %5 = or i1 %3, %4

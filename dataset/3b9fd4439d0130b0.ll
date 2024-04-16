@@ -174,8 +174,9 @@ entry:
   %2 = sub nsw i32 11, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
-  %5 = udiv i64 %4, 10
-  %6 = mul nuw i64 %5, 10
+  %.fr = freeze i64 %4
+  %5 = urem i64 %.fr, 10
+  %6 = sub nuw i64 %.fr, %5
   ret i64 %6
 }
 

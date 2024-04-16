@@ -8,9 +8,8 @@
 define float @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = sitofp i32 %0 to float
-  %2 = fmul float %1, 0x3FD99999A0000000
-  %3 = fneg float %2
-  ret float %3
+  %2 = fmul float %1, 0xBFD99999A0000000
+  ret float %2
 }
 
 attributes #0 = { nounwind }

@@ -12,7 +12,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %0, 15
   %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i8
+  %6 = trunc nuw i64 %5 to i8
   ret i8 %6
 }
 
@@ -23,11 +23,10 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33554432
-  %3 = zext i32 %2 to i64
-  %4 = and i64 %0, 33554431
-  %5 = or disjoint i64 %4, %3
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
+  %3 = trunc i64 %0 to i32
+  %4 = and i32 %3, 33554431
+  %5 = or disjoint i32 %4, %2
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

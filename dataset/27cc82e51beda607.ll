@@ -76,12 +76,10 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 16
-  %3 = trunc i64 %2 to i8
-  %4 = and i8 %3, 15
-  %5 = icmp ne i8 %4, 6
-  %6 = select i1 %5, i1 true, i1 %0
-  ret i1 %6
+  %2 = and i64 %1, 983040
+  %3 = icmp ne i64 %2, 393216
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 ; 6 occurrences:
@@ -94,12 +92,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i128 %1) #0 {
 entry:
-  %2 = lshr i128 %1, 64
-  %3 = trunc nuw i128 %2 to i64
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ne i64 %4, 0
-  %6 = select i1 %5, i1 true, i1 %0
-  ret i1 %6
+  %2 = and i128 %1, 79228162495817593519834398720
+  %3 = icmp ne i128 %2, 0
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -109,12 +105,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 52
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 2047
-  %5 = icmp ugt i32 %4, 1054
-  %6 = select i1 %5, i1 true, i1 %0
-  ret i1 %6
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp ugt i64 %2, 4746794007248502784
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -7,11 +7,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i8 %0) #0 {
 entry:
-  %1 = and i8 %0, -2
-  %2 = icmp eq i8 %1, 2
-  %3 = select i1 %2, i8 18, i8 %0
-  %4 = icmp eq i8 %3, 4
-  ret i1 %4
+  %1 = icmp eq i8 %0, 4
+  ret i1 %1
 }
 
 ; 1 occurrences:
@@ -21,8 +18,8 @@ define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 240
   %2 = icmp eq i32 %1, 96
-  %3 = select i1 %2, i32 96, i32 %0
-  %4 = icmp ugt i32 %3, 31
+  %3 = icmp ugt i32 %0, 31
+  %4 = or i1 %2, %3
   ret i1 %4
 }
 

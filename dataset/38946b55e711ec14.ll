@@ -190,7 +190,7 @@ entry:
   %3 = icmp ult i8 %2, -2
   %4 = icmp ult i8 %1, 32
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 
@@ -297,7 +297,7 @@ entry:
   %3 = icmp ult i32 %2, 5
   %4 = icmp ne i32 %1, 11
   %5 = and i1 %4, %3
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

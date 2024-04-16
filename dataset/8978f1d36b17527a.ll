@@ -6,7 +6,7 @@ define i48 @func000000000000008f(i48 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i48
   %4 = shl nuw i48 %3, 32
-  %5 = add nuw nsw i48 %0, %4
+  %5 = add nuw nsw i48 %4, %0
   %6 = trunc i64 %1 to i48
   %7 = add nuw nsw i48 %5, %6
   ret i48 %7

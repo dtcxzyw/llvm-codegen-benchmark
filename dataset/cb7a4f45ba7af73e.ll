@@ -10,7 +10,7 @@
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = or i32 %1, %3
+  %4 = or i32 %3, %1
   %5 = icmp uge i32 %4, %0
   ret i1 %5
 }
@@ -39,7 +39,7 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = or disjoint i32 %1, %3
+  %4 = or disjoint i32 %3, %1
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }

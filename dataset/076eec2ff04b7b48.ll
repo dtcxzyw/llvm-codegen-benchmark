@@ -180,7 +180,7 @@
 define i64 @func0000000000000003(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %1, %3
+  %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr inbounds i8, ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
@@ -194,7 +194,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %1, %3
+  %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64

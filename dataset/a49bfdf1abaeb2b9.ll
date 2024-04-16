@@ -186,9 +186,9 @@ define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
   %3 = tail call i32 @llvm.ctlz.i32(i32 %2, i1 true), !range !0
-  %4 = sub nuw nsw i32 32, %3
-  %5 = sub nsw i32 %0, %4
-  ret i32 %5
+  %.neg = or disjoint i32 %3, -32
+  %4 = add i32 %.neg, %0
+  ret i32 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)

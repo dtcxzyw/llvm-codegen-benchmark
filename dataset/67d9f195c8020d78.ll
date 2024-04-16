@@ -12,8 +12,8 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = add i64 %5, -1
-  %7 = select i1 %0, i64 %6, i64 %5
+  %6 = sext i1 %0 to i64
+  %7 = add i64 %5, %6
   ret i64 %7
 }
 

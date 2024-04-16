@@ -1,5 +1,5 @@
 func00000000000000d4:                   # @func00000000000000d4
-	li	a3, -94
+	li	a3, 162
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -11,7 +11,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a3
 	ret
 func0000000000000040:                   # @func0000000000000040
-	lui	a3, 1048561
+	lui	a3, 1
 	addiw	a3, a3, 1440
 	mul	a2, a2, a3
 	add	a0, a0, a1

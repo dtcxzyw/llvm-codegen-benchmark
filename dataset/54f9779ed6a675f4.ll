@@ -6,8 +6,8 @@
 define i64 @func0000000000000000(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = xor i64 %4, -1
+  %4 = xor i64 %3, -1
+  %5 = add i64 %4, %1
   %6 = zext i32 %0 to i64
   %7 = add i64 %5, %6
   ret i64 %7

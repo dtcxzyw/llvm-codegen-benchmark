@@ -56,9 +56,8 @@ define ptr @func000000000000000f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 4
   %4 = getelementptr inbounds [3 x [20 x %struct.dt_iop_colorzones_node_t.1768550]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr inbounds %struct.dt_iop_colorzones_node_t.1768550, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 4
-  ret ptr %6
+  %5 = getelementptr inbounds %struct.dt_iop_colorzones_node_t.1768550, ptr %4, i64 %0, i32 1
+  ret ptr %5
 }
 
 ; 2 occurrences:
@@ -87,9 +86,8 @@ define ptr @func0000000000000009(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 8
   %4 = getelementptr [0 x %struct.flow_action_entry.1996329], ptr %3, i64 0, i64 %1
-  %5 = getelementptr %struct.flow_action_entry.1996329, ptr %4, i64 %0
-  %6 = getelementptr inbounds i8, ptr %5, i64 24
-  ret ptr %6
+  %5 = getelementptr %struct.flow_action_entry.1996329, ptr %4, i64 %0, i32 4
+  ret ptr %5
 }
 
 ; 1 occurrences:

@@ -41,8 +41,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 2048
-  %2 = lshr exact i32 %1, 11
+  %1 = lshr i32 %0, 11
+  %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
   ret i32 %3
 }
@@ -53,8 +53,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 131071
-  %2 = lshr i32 %1, 3
+  %1 = lshr i32 %0, 3
+  %2 = and i32 %1, 16383
   %3 = xor i32 %2, 16368
   ret i32 %3
 }

@@ -20,7 +20,7 @@ define i1 @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp olt float %0, %3
+  %4 = fcmp ogt float %3, %0
   ret i1 %4
 }
 
@@ -47,7 +47,7 @@ define i1 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ogt float %0, %3
+  %4 = fcmp olt float %3, %0
   ret i1 %4
 }
 
@@ -61,7 +61,7 @@ define i1 @func0000000000000008(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp oeq float %0, %3
+  %4 = fcmp oeq float %3, %0
   ret i1 %4
 }
 
@@ -74,7 +74,7 @@ define i1 @func000000000000000d(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp uge float %0, %3
+  %4 = fcmp ule float %3, %0
   ret i1 %4
 }
 
@@ -87,7 +87,7 @@ define i1 @func0000000000000007(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp une float %0, %3
+  %4 = fcmp une float %3, %0
   ret i1 %4
 }
 
@@ -100,7 +100,7 @@ define i1 @func000000000000000b(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ule float %0, %3
+  %4 = fcmp uge float %3, %0
   ret i1 %4
 }
 
@@ -112,7 +112,7 @@ define i1 @func000000000000000a(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ole float %0, %3
+  %4 = fcmp oge float %3, %0
   ret i1 %4
 }
 
@@ -123,7 +123,7 @@ define i1 @func000000000000000c(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp oge float %0, %3
+  %4 = fcmp ole float %3, %0
   ret i1 %4
 }
 
@@ -135,7 +135,7 @@ define i1 @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = bitcast i32 %2 to float
-  %4 = fcmp ugt float %0, %3
+  %4 = fcmp ult float %3, %0
   ret i1 %4
 }
 

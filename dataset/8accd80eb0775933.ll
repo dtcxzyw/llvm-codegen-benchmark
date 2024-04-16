@@ -10,12 +10,12 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, -1
-  %4 = lshr i64 %3, 12
-  %5 = add nuw nsw i64 %4, 1
-  %6 = mul i64 %5, %0
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = lshr i64 %2, 12
+  %4 = add nuw nsw i64 %3, 1
+  %5 = mul i64 %4, %0
+  ret i64 %5
 }
 
 ; 26 occurrences:
@@ -48,12 +48,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000001ac(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 1, %1
-  %3 = add nsw i64 %2, -1
-  %4 = lshr i64 %3, 12
-  %5 = add nuw nsw i64 %4, 1
-  %6 = mul i64 %5, %0
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = lshr i64 %2, 12
+  %4 = add nuw nsw i64 %3, 1
+  %5 = mul i64 %4, %0
+  ret i64 %5
 }
 
 ; 5 occurrences:
@@ -65,12 +65,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000001af(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 1, %1
-  %3 = add nsw i64 %2, -1
-  %4 = lshr i64 %3, 12
-  %5 = add nuw nsw i64 %4, 1
-  %6 = mul nuw nsw i64 %5, %0
-  ret i64 %6
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = lshr i64 %2, 12
+  %4 = add nuw nsw i64 %3, 1
+  %5 = mul nuw nsw i64 %4, %0
+  ret i64 %5
 }
 
 attributes #0 = { nounwind }

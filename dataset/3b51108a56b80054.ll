@@ -10,8 +10,8 @@ entry:
   %3 = add i32 %0, 1
   %4 = add i32 %3, %2
   %5 = icmp slt i32 %4, %1
-  %6 = select i1 %5, i32 %0, i32 1
-  %7 = trunc i32 %6 to i16
+  %6 = trunc i32 %0 to i16
+  %7 = select i1 %5, i16 %6, i16 1
   ret i16 %7
 }
 

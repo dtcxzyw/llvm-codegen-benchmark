@@ -40,16 +40,14 @@ func0000000000000014:                   # @func0000000000000014
 	li	a3, 4
 	li	a0, 9
 	bne	a1, a3, .LBB2_3
-	andi	a2, a2, 3
-	li	a1, 2
-	bltu	a2, a1, .LBB2_4
+	andi	a2, a2, 2
+	beqz	a2, .LBB2_4
 .LBB2_2:                                # %entry
 	ret
 .LBB2_3:                                # %entry
 	li	a0, -114
-	andi	a2, a2, 3
-	li	a1, 2
-	bgeu	a2, a1, .LBB2_2
+	andi	a2, a2, 2
+	bnez	a2, .LBB2_2
 .LBB2_4:                                # %entry
 	li	a0, -17
 	ret

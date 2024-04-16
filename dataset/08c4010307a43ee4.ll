@@ -24,7 +24,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = shl nsw i32 %3, 8
-  %5 = or i32 %0, %4
+  %5 = or i32 %4, %0
   %6 = shl i32 %1, 24
   %7 = or i32 %5, %6
   ret i32 %7

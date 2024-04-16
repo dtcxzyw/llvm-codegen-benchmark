@@ -31,15 +31,15 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	slli	a3, a2, 3
-	subw	a0, a0, a2
+	subw	a2, a2, a0
+	subw	a3, a3, a2
+	sh2add	a0, a1, a1
+	sh1add	a0, a0, a1
 	add	a0, a0, a3
-	sh2add	a2, a1, a1
-	sh1add	a1, a2, a1
-	add	a0, a0, a1
 	andi	a0, a0, 63
 	ret
 func00000000000000f7:                   # @func00000000000000f7
-	li	a3, 1260
+	li	a3, 44
 	mul	a2, a2, a3
 	add	a0, a0, a2
 	sh2add	a1, a1, a1
@@ -47,7 +47,7 @@ func00000000000000f7:                   # @func00000000000000f7
 	andi	a0, a0, 63
 	ret
 func00000000000000f5:                   # @func00000000000000f5
-	li	a3, 1260
+	li	a3, 44
 	mul	a2, a2, a3
 	add	a0, a0, a2
 	sh2add	a1, a1, a1

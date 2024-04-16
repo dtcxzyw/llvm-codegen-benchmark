@@ -1,21 +1,14 @@
 func0000000000000451:                   # @func0000000000000451
-	addi	a0, a0, 1
-	addi	a1, a0, -8
-	czero.eqz	a0, a0, a1
-	addi	a0, a0, -7
+	addi	a0, a0, -6
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	addiw	a0, a0, 1
-	addi	a1, a0, -18
-	czero.eqz	a0, a0, a1
-	addi	a0, a0, -17
+	sext.w	a0, a0
+	addi	a0, a0, -16
 	seqz	a0, a0
 	ret
 func0000000000000c71:                   # @func0000000000000c71
-	addiw	a0, a0, 1
-	addi	a1, a0, -3
-	czero.eqz	a0, a0, a1
-	addi	a0, a0, -2
+	sext.w	a0, a0
+	addi	a0, a0, -1
 	seqz	a0, a0
 	ret

@@ -15,11 +15,10 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds %"struct.Yosys::hashlib::dict<Yosys::RTLIL::Cell *, std::set<Yosys::RTLIL::SigBit>>::entry_t.1879437", ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 16
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %3 = getelementptr %"struct.Yosys::hashlib::dict<Yosys::RTLIL::Cell *, std::set<Yosys::RTLIL::SigBit>>::entry_t.1879437", ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -48
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -28,11 +27,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 14
-  %6 = icmp ult ptr %0, %5
-  ret i1 %6
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 15
+  %5 = icmp ugt ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -40,11 +38,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr inbounds i8, ptr %1, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 6
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 7
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -52,11 +49,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, -1
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 1
-  %6 = icmp ne ptr %0, %5
-  ret i1 %6
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = icmp ne ptr %3, %0
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -65,11 +60,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 1
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 32
-  %6 = icmp eq ptr %0, %5
-  ret i1 %6
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 33
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

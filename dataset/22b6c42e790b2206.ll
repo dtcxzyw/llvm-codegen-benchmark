@@ -13,7 +13,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = getelementptr inbounds [257 x i32], ptr %0, i64 0, i64 %4
   %6 = getelementptr inbounds i8, ptr %5, i64 32
   ret ptr %6
@@ -25,10 +25,9 @@ entry:
 define ptr @func000000000000000d(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr [256 x %struct.be128.2027289], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 8
-  ret ptr %6
+  %4 = add nuw nsw i64 %3, %1
+  %5 = getelementptr [256 x %struct.be128.2027289], ptr %0, i64 0, i64 %4, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -37,10 +36,9 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, %3
-  %5 = getelementptr inbounds [1 x %struct.SrcItem.2129408], ptr %0, i64 0, i64 %4
-  %6 = getelementptr inbounds i8, ptr %5, i64 60
-  ret ptr %6
+  %4 = add nsw i64 %3, %1
+  %5 = getelementptr inbounds [1 x %struct.SrcItem.2129408], ptr %0, i64 0, i64 %4, i32 9
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

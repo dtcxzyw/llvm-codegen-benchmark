@@ -16,8 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	mv	a0, a1
 	ret
 .LBB1_2:
-	ori	a0, a2, 832
-	lui	a1, 1046530
-	addiw	a1, a1, -16
-	and	a0, a0, a1
+	lui	a0, 1046530
+	addiw	a0, a0, -848
+	and	a0, a0, a2
+	addi	a0, a0, 832
 	ret

@@ -6,9 +6,9 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a2
 	ret
 func0000000000000019:                   # @func0000000000000019
-	li	a2, 16
-	bnez	a1, .LBB1_2
 	li	a2, 24
+	beqz	a1, .LBB1_2
+	li	a2, 16
 .LBB1_2:                                # %entry
 	add	a0, a0, a2
 	ret

@@ -11,16 +11,20 @@ func0000000000000050:                   # @func0000000000000050
 	or	a0, a0, a2
 	ret
 func0000000000000060:                   # @func0000000000000060
-	addi	a2, a2, -1
+	li	a3, -1
+	bclri	a3, a3, 61
+	add	a2, a2, a3
 	srli	a2, a2, 61
-	snez	a2, a2
+	sltiu	a2, a2, 7
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000020:                   # @func0000000000000020
-	addi	a2, a2, -1
+	li	a3, -1
+	bclri	a3, a3, 62
+	add	a2, a2, a3
 	srli	a2, a2, 62
-	snez	a2, a2
+	sltiu	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

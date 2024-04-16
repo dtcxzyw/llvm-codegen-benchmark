@@ -12,10 +12,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 1
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr i16, ptr %0, i64 %3
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 2
+  ret ptr %3
 }
 
 ; 777 occurrences:
@@ -799,10 +798,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 1
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr inbounds i16, ptr %0, i64 %3
-  ret ptr %4
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 2
+  ret ptr %3
 }
 
 ; 11 occurrences:
@@ -821,8 +819,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr inbounds ptr, ptr %0, i64 %3
+  %3 = getelementptr ptr, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
 
@@ -833,8 +831,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 6
-  %3 = add nsw i64 %2, 1
-  %4 = getelementptr i64, ptr %0, i64 %3
+  %3 = getelementptr i64, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }
 

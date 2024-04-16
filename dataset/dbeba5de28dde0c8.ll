@@ -24,7 +24,7 @@ entry:
 define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 10000000000000000
-  %2 = trunc i64 %1 to i32
+  %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   ret i32 %3
 }

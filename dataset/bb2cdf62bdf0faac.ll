@@ -30,7 +30,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 2305843009213693951)
   %4 = select i1 %1, i64 2305843009213693951, i64 %3
-  %5 = add nuw nsw i64 %0, %4
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
@@ -60,7 +60,7 @@ define i64 @func0000000000000002(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 9223372036854775807)
   %4 = select i1 %1, i64 9223372036854775807, i64 %3
-  %5 = add nuw i64 %0, %4
+  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 

@@ -4202,11 +4202,9 @@
 define i1 @func0000000000000241(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, %0
-  %3 = icmp ult i64 %2, %0
-  %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 384307168202282325)
-  %5 = select i1 %3, i64 384307168202282325, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = or i64 %2, %0
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -4715,11 +4713,9 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
-  %3 = icmp ult i64 %2, %0
-  %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 9223372036854775807)
-  %5 = select i1 %3, i64 9223372036854775807, i64 %4
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = or i64 %2, %0
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
 }
 
 ; 1 occurrences:
@@ -4729,10 +4725,9 @@ define i1 @func0000000000000248(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, %0
   %3 = icmp ult i64 %2, %0
-  %4 = tail call i64 @llvm.umin.i64(i64 %2, i64 2305843009213693951)
-  %5 = select i1 %3, i64 2305843009213693951, i64 %4
-  %6 = icmp ugt i64 %5, 768
-  ret i1 %6
+  %4 = icmp ugt i64 %2, 768
+  %5 = or i1 %3, %4
+  ret i1 %5
 }
 
 ; 18 occurrences:
@@ -4758,11 +4753,9 @@ entry:
 define i1 @func000000000000024c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, %0
-  %3 = icmp ult i64 %2, %0
-  %4 = call i64 @llvm.umin.i64(i64 %2, i64 576460752303423487)
-  %5 = select i1 %3, i64 576460752303423487, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = or i64 %2, %0
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 ; 8 occurrences:
@@ -4778,11 +4771,9 @@ entry:
 define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, %0
-  %3 = icmp ult i64 %2, %0
-  %4 = call i64 @llvm.umin.i64(i64 %2, i64 9223372036854775807)
-  %5 = select i1 %3, i64 9223372036854775807, i64 %4
-  %6 = icmp ne i64 %5, 0
-  ret i1 %6
+  %3 = or i64 %2, %0
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

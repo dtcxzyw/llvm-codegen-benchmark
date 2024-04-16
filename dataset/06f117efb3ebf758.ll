@@ -32,10 +32,10 @@
 define i64 @func000000000000003a(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
-  %2 = shl nuw nsw i64 1, %1
-  %3 = add nsw i64 %2, -1
-  %4 = lshr i64 %3, 12
-  ret i64 %4
+  %notmask = shl nsw i64 -1, %1
+  %2 = xor i64 %notmask, -1
+  %3 = lshr i64 %2, 12
+  ret i64 %3
 }
 
 ; 3 occurrences:
@@ -46,10 +46,10 @@ entry:
 define i128 @func0000000000000030(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i128
-  %2 = shl nuw i128 1, %1
-  %3 = add i128 %2, -1
-  %4 = lshr i128 %3, 64
-  ret i128 %4
+  %notmask = shl nsw i128 -1, %1
+  %2 = xor i128 %notmask, -1
+  %3 = lshr i128 %2, 64
+  ret i128 %3
 }
 
 attributes #0 = { nounwind }

@@ -9,6 +9,5 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	max	a1, a1, a2
-	sub	a0, a0, a1
-	sgtz	a0, a0
+	slt	a0, a1, a0
 	ret

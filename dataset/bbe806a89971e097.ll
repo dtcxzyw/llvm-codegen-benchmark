@@ -9,7 +9,7 @@ entry:
   %3 = zext nneg i32 %2 to i48
   %4 = lshr i48 -139635829144576, %3
   %5 = trunc i48 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

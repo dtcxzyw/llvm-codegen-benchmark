@@ -59,10 +59,10 @@ entry:
 define ptr @func0000000000000019(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777216
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i64 14620, i64 %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 %5
-  ret ptr %6
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i64 %1, i64 14620
+  %5 = getelementptr inbounds i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 ; 1 occurrences:
@@ -71,10 +71,10 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i64 24, i64 %1
-  %6 = getelementptr %struct.yyjson_val.2186815, ptr %0, i64 %5
-  ret ptr %6
+  %.not = icmp eq i32 %3, 0
+  %4 = select i1 %.not, i64 %1, i64 24
+  %5 = getelementptr %struct.yyjson_val.2186815, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

@@ -7,9 +7,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000031:                   # @func0000000000000031
 	zext.h	a0, a0
 	ori	a1, a1, 32
-	zext.h	a1, a1
+	czero.eqz	a1, a1, a0
 	li	a2, 32
-	czero.nez	a2, a2, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	czero.nez	a0, a2, a0
+	or	a0, a0, a1
+	zext.h	a0, a0
 	ret

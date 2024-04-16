@@ -8,29 +8,34 @@ func0000000000000024:                   # @func0000000000000024
 	czero.eqz	a1, a3, a1
 	add	a1, a1, a0
 	mulh	a2, a1, a2
-	add	a1, a1, a2
-	srli	a2, a1, 63
-	srai	a1, a1, 8
-	add	a1, a1, a2
-	li	a2, -400
-	mul	a1, a1, a2
+	add	a2, a2, a1
+	srli	a3, a2, 63
+	srai	a2, a2, 8
+	add	a2, a2, a3
+	li	a3, 400
+	mul	a2, a2, a3
+	sub	a1, a1, a1
 	add	a0, a0, a1
+	sub	a0, a0, a2
 	ret
 .LCPI1_0:
 	.quad	4137408090565272301             # 0x396b06bcc8f862ed
 func0000000000000025:                   # @func0000000000000025
 	andi	a1, a1, 1
 	lui	a2, 1048540
-	addiw	a2, a2, 1359
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
-	addi	a4, a2, 1
-	czero.eqz	a1, a4, a1
+	addiw	a2, a2, 1360
+	czero.eqz	a1, a2, a1
 	add	a1, a1, a0
-	mulh	a1, a1, a3
-	srli	a3, a1, 63
-	srai	a1, a1, 15
-	add	a1, a1, a3
-	mul	a1, a1, a2
+	mulh	a2, a1, a3
+	srli	a3, a2, 63
+	srai	a2, a2, 15
+	add	a2, a2, a3
+	lui	a3, 36
+	addiw	a3, a3, -1359
+	mul	a2, a2, a3
+	sub	a1, a1, a1
 	add	a0, a0, a1
+	sub	a0, a0, a2
 	ret

@@ -6,8 +6,8 @@
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 7
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = ashr i32 %3, 1
+  %3 = ashr i32 %0, 1
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 
@@ -19,8 +19,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 1, i32 %0
-  %4 = ashr i32 %3, 1
+  %3 = ashr i32 %0, 1
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 

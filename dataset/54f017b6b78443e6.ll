@@ -99,7 +99,7 @@ define i64 @func0000000000000018(i1 %0, i128 %1) #0 {
 entry:
   %2 = add nuw nsw i128 %1, 1
   %3 = lshr i128 %2, 64
-  %4 = trunc i128 %3 to i64
+  %4 = trunc nuw i128 %3 to i64
   %5 = select i1 %0, i64 %4, i64 0
   ret i64 %5
 }

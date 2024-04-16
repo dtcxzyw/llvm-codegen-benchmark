@@ -7,7 +7,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %1, -1
   %5 = mul nsw i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -19,7 +19,7 @@ entry:
   %3 = add nsw i32 %2, -7
   %4 = shl i32 %1, 1
   %5 = mul i32 %4, %3
-  %6 = add nsw i32 %0, %5
+  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 

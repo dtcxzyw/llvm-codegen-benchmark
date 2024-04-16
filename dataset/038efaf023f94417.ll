@@ -16,7 +16,7 @@ define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 3
   %3 = zext nneg i16 %2 to i32
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = or i32 %4, 4
   ret i32 %5
 }
@@ -68,7 +68,7 @@ define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = or disjoint i64 %4, 128
   ret i64 %5
 }
@@ -78,9 +78,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 3968
+  %2 = and i32 %1, 3840
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or i64 %3, %0
   %5 = or i64 %4, 128
   ret i64 %5
 }
@@ -92,7 +92,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -64
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = or disjoint i64 %4, 8
   ret i64 %5
 }
@@ -102,11 +102,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, -3
-  %3 = zext i16 %2 to i32
-  %4 = or i32 %0, %3
-  %5 = or i32 %4, 7
-  ret i32 %5
+  %2 = zext i16 %1 to i32
+  %3 = or i32 %2, %0
+  %4 = or i32 %3, 7
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

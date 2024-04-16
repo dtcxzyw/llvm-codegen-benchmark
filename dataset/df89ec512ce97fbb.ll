@@ -27,7 +27,7 @@ entry:
   %1 = shl nuw i64 %0, 1
   %2 = add i64 %1, -1
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = xor i32 %4, 63
   ret i32 %5
 }
@@ -47,7 +47,7 @@ entry:
   %1 = shl nuw nsw i64 %0, 1
   %2 = add nsw i64 %1, -1
   %3 = tail call i64 @llvm.ctlz.i64(i64 %2, i1 true), !range !0
-  %4 = trunc i64 %3 to i32
+  %4 = trunc nuw nsw i64 %3 to i32
   %5 = xor i32 %4, 63
   ret i32 %5
 }

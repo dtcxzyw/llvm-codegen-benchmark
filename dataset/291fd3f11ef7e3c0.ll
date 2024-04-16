@@ -60,9 +60,9 @@ define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %0
-  %5 = and i64 %4, 65534
-  ret i64 %5
+  %.masked = and i64 %0, 65534
+  %4 = or i64 %3, %.masked
+  ret i64 %4
 }
 
 ; 4 occurrences:
@@ -212,9 +212,9 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 %2, 59
-  %4 = or disjoint i64 %3, %0
-  %5 = and i64 %4, -4160749569
-  ret i64 %5
+  %.masked = and i64 %0, -4160749569
+  %4 = or i64 %3, %.masked
+  ret i64 %4
 }
 
 ; 15 occurrences:
@@ -238,9 +238,9 @@ define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
   %3 = shl i128 %2, 96
-  %4 = or disjoint i128 %0, %3
-  %5 = and i128 %4, -18446744073709551616
-  ret i128 %5
+  %.masked = and i128 %0, -18446744073709551616
+  %4 = or i128 %3, %.masked
+  ret i128 %4
 }
 
 ; 2 occurrences:
@@ -251,7 +251,7 @@ define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 23
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = and i32 %4, 14651391
   ret i32 %5
 }

@@ -169,7 +169,7 @@ entry:
   %4 = shl nuw i64 1, %3
   %5 = shl i64 %1, 1
   %6 = sub i64 %4, %5
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

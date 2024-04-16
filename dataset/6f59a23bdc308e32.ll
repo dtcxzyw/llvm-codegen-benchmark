@@ -6,8 +6,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 65536)
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 65536)
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr inbounds %struct.rect2.1700530, ptr %0, i64 %3
   ret ptr %4
 }
@@ -20,11 +20,14 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
-  %2 = zext i32 %1 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 8)
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 8)
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umin.i32(i32, i32) #1
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

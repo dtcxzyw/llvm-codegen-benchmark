@@ -6,9 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
 	srli	a1, a1, 3
-	li	a2, -10
+	li	a2, 10
 	mul	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	-6067343680855748867            # 0xabcc77118461cefd

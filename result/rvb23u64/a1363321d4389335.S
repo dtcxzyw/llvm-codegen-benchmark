@@ -1,17 +1,12 @@
 func00000000000000f4:                   # @func00000000000000f4
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	sltu	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a1, 32
-	slli	a0, a0, 32
 	xor	a0, a0, a1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func00000000000000a5:                   # @func00000000000000a5
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -53,20 +48,16 @@ func0000000000000085:                   # @func0000000000000085
 	xori	a0, a0, 1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	slli	a1, a1, 3
-	slli	a0, a0, 3
 	xor	a0, a0, a1
+	slli	a0, a0, 3
+	srli	a0, a0, 3
 	seqz	a0, a0
 	ret
 func00000000000000e5:                   # @func00000000000000e5
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func00000000000000f8:                   # @func00000000000000f8
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	sltu	a0, a1, a0
 	ret
 func00000000000000f1:                   # @func00000000000000f1
@@ -76,14 +67,14 @@ func00000000000000f1:                   # @func00000000000000f1
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	slliw	a1, a1, 2
-	slliw	a0, a0, 2
+	sext.w	a1, a1
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000056:                   # @func0000000000000056
-	slliw	a1, a1, 1
-	slliw	a0, a0, 1
+	sext.w	a1, a1
+	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -99,21 +90,21 @@ func0000000000000025:                   # @func0000000000000025
 	xori	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	slli	a1, a1, 4
-	slli	a0, a0, 4
 	xor	a0, a0, a1
+	slli	a0, a0, 4
+	srli	a0, a0, 4
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	slli	a1, a1, 2
-	slli	a0, a0, 2
 	xor	a0, a0, a1
+	slli	a0, a0, 2
+	srli	a0, a0, 2
 	seqz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	slli	a1, a1, 2
-	slli	a0, a0, 2
 	xor	a0, a0, a1
+	slli	a0, a0, 2
+	srli	a0, a0, 2
 	seqz	a0, a0
 	ret
 func000000000000005a:                   # @func000000000000005a
@@ -143,8 +134,6 @@ func0000000000000028:                   # @func0000000000000028
 	sltu	a0, a1, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
-	slli	a1, a1, 3
-	slli	a0, a0, 3
 	sltu	a0, a1, a0
 	ret
 func00000000000000aa:                   # @func00000000000000aa

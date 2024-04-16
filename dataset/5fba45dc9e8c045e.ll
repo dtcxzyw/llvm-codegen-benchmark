@@ -15,7 +15,7 @@ define i1 @func0000000000000101(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1023
   %4 = zext nneg i16 %3 to i32
-  %5 = add i32 %1, %4
+  %5 = add i32 %4, %1
   %6 = add i32 %0, 1
   %7 = icmp eq i32 %6, %5
   ret i1 %7

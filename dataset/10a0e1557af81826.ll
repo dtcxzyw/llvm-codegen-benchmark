@@ -11,7 +11,7 @@
 define i48 @func0000000000000002(i16 %0, i48 %1) #0 {
 entry:
   %2 = lshr i48 %1, 32
-  %3 = trunc i48 %2 to i16
+  %3 = trunc nuw i48 %2 to i16
   %4 = tail call i16 @llvm.smax.i16(i16 %0, i16 %3)
   %5 = zext i16 %4 to i48
   %6 = shl nuw i48 %5, 32

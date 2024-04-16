@@ -21,8 +21,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000000f4(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %1, 2
-  %3 = or disjoint i64 %2, 1
+  %2 = or i64 %1, 1
+  %3 = add nuw nsw i64 %2, 2
   %4 = zext nneg i32 %0 to i64
   %5 = icmp ult i64 %3, %4
   ret i1 %5

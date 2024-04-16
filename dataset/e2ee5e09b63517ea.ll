@@ -7,9 +7,9 @@ define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
   %3 = tail call i64 @llvm.cttz.i64(i64 %0, i1 true), !range !0
-  %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, 2147483647
-  ret i64 %5
+  %.masked = and i64 %2, 2147483584
+  %4 = or disjoint i64 %3, %.masked
+  ret i64 %4
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
@@ -26,9 +26,9 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
   %3 = shl i64 %0, 6
-  %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, 4294967295
-  ret i64 %5
+  %.masked = and i64 %3, 4294967232
+  %4 = or disjoint i64 %.masked, %2
+  ret i64 %4
 }
 
 ; 3 occurrences:
@@ -40,9 +40,9 @@ define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
   %3 = call noundef i64 @llvm.cttz.i64(i64 %0, i1 true), !range !0
-  %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, 4294967295
-  ret i64 %5
+  %.masked = and i64 %2, 4294967232
+  %4 = or disjoint i64 %3, %.masked
+  ret i64 %4
 }
 
 ; 1 occurrences:
@@ -52,9 +52,9 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
   %3 = tail call i64 @llvm.cttz.i64(i64 %0, i1 true), !range !0
-  %4 = or disjoint i64 %3, %2
-  %5 = and i64 %4, 4294967295
-  ret i64 %5
+  %.masked = and i64 %2, 4294967232
+  %4 = or disjoint i64 %3, %.masked
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

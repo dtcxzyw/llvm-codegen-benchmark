@@ -31,7 +31,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 false), !range !0
+  %2 = tail call i64 @llvm.cttz.i64(i64 %1, i1 true), !range !0
   %3 = lshr i64 %0, %2
   ret i64 %3
 }

@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = freeze i64 %3
   %5 = icmp ugt i64 %4, 88686269585142075
   ret i1 %5
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %0, %2
+  %3 = add nsw i64 %2, %0
   %4 = freeze i64 %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5

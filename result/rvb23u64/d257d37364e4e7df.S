@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	andi	a1, a1, -2048
-	bclri	a1, a1, 11
+	srli	a1, a1, 12
+	slli.uw	a1, a1, 12
 	sub	a0, a0, a1
 	srli	a0, a0, 12
 	ret
@@ -15,8 +15,8 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a0, a0, 12
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a1, -2048
-	bclri	a1, a1, 11
+	srli	a1, a1, 12
+	slli.uw	a1, a1, 12
 	sub	a0, a0, a1
 	srli	a0, a0, 12
 	ret

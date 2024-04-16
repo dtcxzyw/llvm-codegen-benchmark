@@ -10,10 +10,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i8 4, i8 5
-  %2 = zext nneg i8 %1 to i64
-  %3 = shl nuw nsw i64 %2, 32
-  ret i64 %3
+  %1 = select i1 %0, i64 17179869184, i64 21474836480
+  ret i64 %1
 }
 
 attributes #0 = { nounwind }

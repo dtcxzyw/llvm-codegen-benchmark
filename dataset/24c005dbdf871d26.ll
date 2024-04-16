@@ -66,7 +66,7 @@ define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 14
   %3 = icmp eq i64 %2, 10
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -155,7 +155,7 @@ define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

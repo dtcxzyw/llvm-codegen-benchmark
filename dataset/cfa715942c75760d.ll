@@ -34,7 +34,7 @@ define float @func0000000000000001(float %0, float %1, float %2) #0 {
 entry:
   %3 = call noundef float @llvm.fmuladd.f32(float %1, float %0, float %2)
   %4 = fdiv float 1.000000e+00, %3
-  %5 = fmul float %0, %4
+  %5 = fmul float %4, %0
   ret float %5
 }
 

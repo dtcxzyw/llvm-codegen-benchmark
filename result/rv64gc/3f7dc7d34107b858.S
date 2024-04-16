@@ -4,7 +4,7 @@ func0000000000000020:                   # @func0000000000000020
 	bltu	a4, a3, .LBB0_2
 	addi	a1, a2, -1
 .LBB0_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sext.w	a3, a2
@@ -54,7 +54,7 @@ func0000000000000058:                   # @func0000000000000058
 	blt	a4, a3, .LBB7_2
 	addi	a1, a2, -1
 .LBB7_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a3, a2
@@ -62,7 +62,7 @@ func0000000000000028:                   # @func0000000000000028
 	blt	a4, a3, .LBB8_2
 	addi	a1, a2, -1
 .LBB8_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	ret
 func0000000000000063:                   # @func0000000000000063
 	sext.w	a3, a2

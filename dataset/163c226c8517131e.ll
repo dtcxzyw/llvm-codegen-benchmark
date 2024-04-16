@@ -7,10 +7,8 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0) #0 {
 entry:
-  %1 = select i1 %0, i32 -64, i32 -16
-  %2 = xor i32 %1, -1
-  %3 = trunc i32 %2 to i8
-  ret i8 %3
+  %1 = select i1 %0, i8 63, i8 15
+  ret i8 %1
 }
 
 attributes #0 = { nounwind }

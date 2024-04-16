@@ -10,7 +10,7 @@
 define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = icmp eq ptr %1, %2
+  %3 = icmp eq ptr %2, %1
   %4 = icmp eq i64 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

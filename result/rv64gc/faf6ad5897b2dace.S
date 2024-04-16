@@ -8,9 +8,9 @@ func00000000000000f8:                   # @func00000000000000f8
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	andi	a2, a2, 1
-	add	a0, a0, a2
+	addw	a0, a0, a2
 	andi	a1, a1, 1
-	addw	a0, a0, a1
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000008a:                   # @func000000000000008a
@@ -62,8 +62,9 @@ func0000000000000056:                   # @func0000000000000056
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
 	add	a0, a0, a2
-	andi	a1, a1, 1
-	add	a0, a0, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000f4:                   # @func00000000000000f4
@@ -106,9 +107,9 @@ func00000000000000fa:                   # @func00000000000000fa
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	andi	a2, a2, 1
-	add	a0, a0, a2
+	addw	a0, a0, a2
 	andi	a1, a1, 1
-	addw	a0, a0, a1
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

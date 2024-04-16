@@ -1,5 +1,6 @@
 func0000000000000044:                   # @func0000000000000044
 	srliw	a2, a2, 16
+	slli	a2, a2, 16
 	seqz	a2, a2
 	slli	a2, a2, 4
 	srliw	a1, a1, 24

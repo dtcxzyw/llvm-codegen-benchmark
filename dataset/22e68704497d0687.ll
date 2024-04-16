@@ -8,7 +8,7 @@ define i32 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %0, %4
+  %5 = and i32 %4, %0
   %6 = select i1 %1, i32 0, i32 %3
   %7 = or i32 %5, %6
   ret i32 %7
@@ -22,7 +22,7 @@ entry:
   %3 = shl i32 3, %2
   %4 = select i1 %1, i32 0, i32 %3
   %5 = xor i32 %3, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -35,7 +35,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 0, i32 %3
   %5 = xor i32 %3, -1
-  %6 = and i32 %0, %5
+  %6 = and i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }

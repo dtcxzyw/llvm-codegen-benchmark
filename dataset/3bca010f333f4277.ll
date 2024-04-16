@@ -7,10 +7,10 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = trunc i32 %3 to i8
+  %1 = icmp eq i32 %0, 0
+  %2 = trunc i32 %0 to i8
+  %3 = add i8 %2, 1
+  %4 = select i1 %1, i8 0, i8 %3
   ret i8 %4
 }
 

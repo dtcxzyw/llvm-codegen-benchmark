@@ -15,18 +15,11 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
 	andi	a2, a2, 1
-	lui	a3, 786432
-	addiw	a3, a3, -1024
+	lui	a3, 262144
+	and	a1, a1, a3
 	czero.eqz	a2, a3, a2
-	lui	a3, 135168
-	addiw	a3, a3, -2
-	add	a2, a2, a3
 	or	a1, a1, a2
-	lui	a2, 921600
-	addiw	a2, a2, -1026
-	czero.nez	a2, a2, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
-	lui	a1, 262144
-	and	a0, a0, a1
+	czero.eqz	a1, a1, a0
+	czero.nez	a0, a3, a0
+	or	a0, a0, a1
 	ret

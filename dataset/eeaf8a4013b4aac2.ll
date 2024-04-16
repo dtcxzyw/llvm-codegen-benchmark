@@ -7,7 +7,7 @@
 define i48 @func0000000000000000(i48 %0) #0 {
 entry:
   %1 = lshr i48 %0, 32
-  %2 = trunc i48 %1 to i16
+  %2 = trunc nuw i48 %1 to i16
   %3 = xor i16 %2, -1
   %4 = zext i16 %3 to i48
   ret i48 %4

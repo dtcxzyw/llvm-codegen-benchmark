@@ -121,9 +121,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 127
-  %2 = or disjoint i64 %1, 128
-  %3 = shl nuw nsw i64 %2, 1
+  %1 = shl i64 %0, 1
+  %2 = and i64 %1, 254
+  %3 = or disjoint i64 %2, 256
   ret i64 %3
 }
 
@@ -133,10 +133,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 8388607
-  %2 = or disjoint i64 %1, 8388608
-  %3 = shl nuw i64 %2, 40
-  ret i64 %3
+  %1 = shl i64 %0, 40
+  %2 = or i64 %1, -9223372036854775808
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

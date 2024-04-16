@@ -5,7 +5,7 @@
 define i1 @func0000000000000015(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = trunc i64 %1 to i32
   %6 = icmp ule i32 %4, %5
   ret i1 %6
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000017(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = trunc i64 %1 to i32
   %6 = icmp sle i32 %4, %5
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func000000000000001a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   %5 = trunc i64 %1 to i32
   %6 = icmp sgt i32 %4, %5
   ret i1 %6

@@ -14,11 +14,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 127
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %1 = and i8 %0, 127
+  %narrow = add nuw i8 %1, 1
+  %2 = zext i8 %narrow to i64
+  ret i64 %2
 }
 
 ; 3 occurrences:
@@ -28,8 +27,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 15
+  %1 = and i8 %0, 15
+  %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
@@ -40,8 +39,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = and i32 %1, 127
+  %1 = and i8 %0, 127
+  %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
   ret i64 %4

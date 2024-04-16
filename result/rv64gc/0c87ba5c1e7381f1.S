@@ -1,7 +1,6 @@
 func0000000000000028:                   # @func0000000000000028
 	sub	a1, a1, a2
-	srai	a1, a1, 2
-	li	a2, 6
+	li	a2, 24
 	bgeu	a2, a1, .LBB0_2
 	li	a0, 3
 	ret

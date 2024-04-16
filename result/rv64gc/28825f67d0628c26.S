@@ -12,12 +12,14 @@ func0000000000000041:                   # @func0000000000000041
 	li	a3, 1
 	beq	a1, a3, .LBB1_2
 	li	a1, 72
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LBB1_2:
 	addi	a1, a2, 72
-	add	a0, a0, a1
+	neg	a0, a0
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000456:                   # @func0000000000000456

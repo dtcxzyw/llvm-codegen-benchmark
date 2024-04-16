@@ -53,9 +53,9 @@ define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 2
+  %5 = lshr exact i64 %4, 2
   %6 = and i64 %5, 1152921504606846972
-  %7 = icmp eq i64 %0, %6
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 
@@ -68,9 +68,9 @@ define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = ashr exact i64 %4, 3
+  %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = icmp ugt i64 %0, %6
+  %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
 

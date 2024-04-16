@@ -42,7 +42,7 @@
 define i1 @func0000000000000022(i1 %0, i8 %1, double %2) #0 {
 entry:
   %3 = fcmp uno double %2, 0.000000e+00
-  %4 = and i1 %0, %3
+  %4 = and i1 %3, %0
   %5 = icmp eq i8 %1, 9
   %6 = or i1 %4, %5
   ret i1 %6

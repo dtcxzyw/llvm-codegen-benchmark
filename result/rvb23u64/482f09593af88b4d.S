@@ -19,11 +19,11 @@ func0000000000000151:                   # @func0000000000000151
 	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a2, a2, 255
+	sext.w	a1, a1
 	czero.eqz	a1, a1, a2
 	li	a3, 9
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -81,11 +81,11 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000091:                   # @func0000000000000091
 	sltiu	a2, a2, 7
+	sext.w	a1, a1
 	czero.nez	a1, a1, a2
 	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -186,32 +186,32 @@ func0000000000000039:                   # @func0000000000000039
 func0000000000000114:                   # @func0000000000000114
 	andi	a2, a2, 255
 	sltiu	a2, a2, 12
+	sext.w	a1, a1
 	czero.eqz	a1, a1, a2
 	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	sltu	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111
 	andi	a2, a2, 255
 	sltiu	a2, a2, 12
+	sext.w	a1, a1
 	czero.eqz	a1, a1, a2
 	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000096:                   # @func0000000000000096
 	zext.h	a2, a2
 	sltiu	a2, a2, 1000
+	sext.w	a1, a1
 	czero.nez	a1, a1, a2
 	li	a3, 3
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028

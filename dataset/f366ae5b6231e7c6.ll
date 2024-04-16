@@ -9,7 +9,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 4294967295
   %5 = and i64 %4, 4294967295
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add i64 %3, -1
   %5 = and i64 %4, -4
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, 1023
   %5 = and i32 %4, 1023
-  %6 = icmp ugt i32 %0, %5
+  %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
 

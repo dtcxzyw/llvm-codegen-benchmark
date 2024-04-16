@@ -1,8 +1,7 @@
 func0000000000000006:                   # @func0000000000000006
 	zext.w	a1, a1
 	remu	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 31
 	ret
 func0000000000000041:                   # @func0000000000000041
 	zext.h	a1, a1

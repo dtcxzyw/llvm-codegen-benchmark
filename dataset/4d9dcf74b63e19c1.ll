@@ -12,9 +12,8 @@ define ptr @func0000000000000007(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 4, i64 5
   %3 = getelementptr inbounds i8, ptr %0, i64 308
-  %4 = getelementptr inbounds [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.1647159"], ptr %3, i64 0, i64 %2
-  %5 = getelementptr inbounds i8, ptr %4, i64 9
-  ret ptr %5
+  %4 = getelementptr inbounds [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.1647159"], ptr %3, i64 0, i64 %2, i32 3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -9,8 +9,8 @@ define i32 @func000000000000001b(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.umin.i32(i32 %0, i32 1024)
   %2 = icmp slt i32 %0, 1
-  %3 = select i1 %2, i32 1024, i32 %1
-  %4 = add nuw nsw i32 %3, 7
+  %3 = add nuw nsw i32 %1, 7
+  %4 = select i1 %2, i32 1031, i32 %3
   ret i32 %4
 }
 
@@ -25,8 +25,8 @@ define i32 @func0000000000000019(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.umin.i32(i32 %0, i32 9)
   %2 = icmp slt i32 %0, 1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = add nsw i32 %3, -6
+  %3 = add nsw i32 %1, -6
+  %4 = select i1 %2, i32 -5, i32 %3
   ret i32 %4
 }
 

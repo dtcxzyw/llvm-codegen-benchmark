@@ -128,7 +128,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = mul i8 %1, -95
-  %3 = add i8 %0, %2
+  %3 = add i8 %2, %0
   %4 = mul i8 %3, -95
   ret i8 %4
 }
@@ -147,7 +147,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, -12
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = mul nsw i32 %3, 367
   ret i32 %4
 }
@@ -237,7 +237,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 5
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = mul i32 %3, -862048943
   ret i32 %4
 }
@@ -248,7 +248,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 12
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   %4 = mul nuw nsw i64 %3, 40
   ret i64 %4
 }
@@ -301,7 +301,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -12289
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = mul nsw i32 %3, 2730
   ret i32 %4
 }
@@ -345,7 +345,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 60
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = mul nsw i32 %3, 75
   ret i32 %4
 }
@@ -356,7 +356,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = mul nuw nsw i32 %3, 3600
   ret i32 %4
 }
@@ -367,7 +367,7 @@ entry:
 define i16 @func0000000000000034(i16 %0, i16 %1) #0 {
 entry:
   %2 = mul nuw nsw i16 %1, 21
-  %3 = add nsw i16 %0, %2
+  %3 = add nsw i16 %2, %0
   %4 = mul i16 %3, 28
   ret i16 %4
 }

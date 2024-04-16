@@ -45,15 +45,15 @@ func0000000000000019:                   # @func0000000000000019
 	andi	a0, a0, 1
 	sext.w	a2, a1
 	li	a3, 1
-	li	a1, 4
-	beq	a2, a3, .LBB4_3
+	li	a1, 12
+	bne	a2, a3, .LBB4_3
 	li	a2, 3
 	beqz	a0, .LBB4_4
 .LBB4_2:                                # %entry
 	or	a0, a2, a1
 	ret
 .LBB4_3:                                # %entry
-	li	a1, 12
+	li	a1, 4
 	li	a2, 3
 	bnez	a0, .LBB4_2
 .LBB4_4:                                # %entry

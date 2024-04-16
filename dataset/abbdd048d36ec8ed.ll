@@ -6,9 +6,9 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
 entry:
-  %2 = sext i8 %1 to i16
-  %3 = sext i8 %0 to i16
-  %4 = mul nsw i16 %3, %2
+  %2 = zext i8 %1 to i16
+  %3 = zext i8 %0 to i16
+  %4 = mul nuw i16 %3, %2
   %5 = and i16 %4, 128
   %6 = icmp ne i16 %5, 0
   ret i1 %6
@@ -38,9 +38,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = sext i32 %0 to i64
-  %4 = mul nsw i64 %3, %2
+  %2 = zext i32 %1 to i64
+  %3 = zext i32 %0 to i64
+  %4 = mul nuw i64 %3, %2
   %5 = and i64 %4, 2147483648
   %6 = icmp eq i64 %5, 0
   ret i1 %6

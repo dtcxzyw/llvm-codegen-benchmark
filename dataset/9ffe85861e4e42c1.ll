@@ -395,8 +395,8 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
-  %4 = select i1 %3, i64 9223372036854775807, i64 %0
-  %5 = lshr i64 %4, 3
+  %4 = lshr i64 %0, 3
+  %5 = select i1 %3, i64 1152921504606846975, i64 %4
   ret i64 %5
 }
 
@@ -406,8 +406,8 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
-  %4 = select i1 %3, i32 0, i32 %0
-  %5 = lshr i32 %4, 24
+  %4 = lshr i32 %0, 24
+  %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
 
@@ -417,8 +417,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = select i1 %3, i64 -1, i64 %0
-  %5 = lshr i64 %4, 32
+  %4 = lshr i64 %0, 32
+  %5 = select i1 %3, i64 4294967295, i64 %4
   ret i64 %5
 }
 

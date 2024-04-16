@@ -1,7 +1,8 @@
 func000000000000009c:                   # @func000000000000009c
-	sub	a1, a1, a2
-	sltu	a0, a1, a0
+	sub	a3, a1, a2
+	sltu	a0, a3, a0
 	xori	a0, a0, 1
+	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

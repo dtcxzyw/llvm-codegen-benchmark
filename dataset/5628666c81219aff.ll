@@ -101,8 +101,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, double %1) #0 {
 entry:
-  %2 = select i1 %0, double 6.553500e+04, double %1
-  %3 = fptoui double %2 to i32
+  %2 = fptoui double %1 to i32
+  %3 = select i1 %0, i32 65535, i32 %2
   ret i32 %3
 }
 

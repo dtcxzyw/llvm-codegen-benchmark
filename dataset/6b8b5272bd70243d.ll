@@ -30,9 +30,9 @@
 define i1 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 10, %2
-  %4 = select i1 %1, i32 40960, i32 %3
-  %5 = zext i32 %4 to i64
-  %6 = mul i64 %0, %5
+  %4 = zext i32 %3 to i64
+  %5 = select i1 %1, i64 40960, i64 %4
+  %6 = mul i64 %5, %0
   %7 = icmp ugt i64 %6, 72057594037927935
   ret i1 %7
 }

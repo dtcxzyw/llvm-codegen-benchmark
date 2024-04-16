@@ -508,7 +508,7 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   ret i32 %3
 }
 
@@ -531,7 +531,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw nsw i16 %1 to i8
-  %3 = xor i8 %0, %2
+  %3 = xor i8 %2, %0
   ret i8 %3
 }
 
@@ -542,7 +542,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   ret i32 %3
 }
 
@@ -554,7 +554,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = xor i32 %0, %2
+  %3 = xor i32 %2, %0
   ret i32 %3
 }
 

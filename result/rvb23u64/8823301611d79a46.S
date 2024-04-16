@@ -1,20 +1,17 @@
 func0000000000000011:                   # @func0000000000000011
+	orn	a0, a0, a1
 	andi	a0, a0, 255
-	not	a1, a1
-	slliw	a1, a1, 24
-	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	slliw	a1, a1, 24
-	lui	a2, 290816
-	xor	a1, a1, a2
+	andi	a1, a1, 255
+	addi	a1, a1, -71
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
-	slli	a1, a1, 32
+	sext.w	a1, a1
 	snez	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

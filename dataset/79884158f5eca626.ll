@@ -36,7 +36,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 120
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = and i32 %3, -8
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -56,11 +56,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 65535
-  %3 = add nuw nsw i32 %2, %0
-  %4 = and i32 %3, 63
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
+  %2 = add i32 %1, %0
+  %3 = and i32 %2, 63
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
 }
 
 ; 5 occurrences:
@@ -85,7 +84,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147418112
-  %3 = add nuw i32 %0, %2
+  %3 = add nuw i32 %2, %0
   %4 = and i32 %3, -8
   %5 = zext i32 %4 to i64
   ret i64 %5

@@ -1,7 +1,7 @@
 func0000000000000016:                   # @func0000000000000016
-	slli	a1, a1, 48
-	srai	a1, a1, 63
-	andi	a1, a1, -15
+	bexti	a1, a1, 15
+	li	a2, -15
+	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018

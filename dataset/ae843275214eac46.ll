@@ -9,7 +9,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = xor i32 %3, -1
   %5 = icmp sgt i32 %4, %1
-  %6 = and i1 %0, %5
+  %6 = and i1 %5, %0
   ret i1 %6
 }
 

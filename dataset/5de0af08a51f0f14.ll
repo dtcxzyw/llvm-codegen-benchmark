@@ -172,8 +172,9 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
-  %3 = udiv i64 %2, 10
-  %4 = mul nuw i64 %3, 10
+  %.fr = freeze i64 %2
+  %3 = urem i64 %.fr, 10
+  %4 = sub nuw i64 %.fr, %3
   ret i64 %4
 }
 

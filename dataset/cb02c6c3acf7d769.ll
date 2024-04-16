@@ -47,9 +47,8 @@ entry:
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
-  %3 = sub nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, 0
-  ret i1 %4
+  %3 = icmp sgt i32 %2, %0
+  ret i1 %3
 }
 
 ; 6 occurrences:
@@ -109,9 +108,8 @@ entry:
 define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
+  %3 = icmp eq i64 %2, %0
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -154,9 +152,8 @@ entry:
 define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = sub nsw i64 %2, %0
-  %4 = icmp slt i64 %3, 1
-  ret i1 %4
+  %3 = icmp sle i64 %2, %0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

@@ -13,7 +13,7 @@ func000000000000029a:                   # @func000000000000029a
 	blt	a4, a3, .LBB1_2
 	mv	a1, a2
 .LBB1_2:                                # %entry
-	mulw	a0, a0, a1
+	mulw	a0, a1, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret

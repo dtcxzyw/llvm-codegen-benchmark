@@ -8,9 +8,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = xor i32 %0, 1
-  %2 = shl i32 %1, 3
-  %3 = ashr exact i32 %2, 3
+  %1 = shl i32 %0, 3
+  %2 = ashr exact i32 %1, 3
+  %3 = xor i32 %2, 1
   ret i32 %3
 }
 

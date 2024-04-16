@@ -1,19 +1,13 @@
 func00000000000003c6:                   # @func00000000000003c6
 	slli	a1, a1, 16
 	or	a0, a0, a1
-	srli	a0, a0, 16
-	sext.h	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func00000000000002c6:                   # @func00000000000002c6
-	srli	a0, a0, 16
-	sext.h	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func0000000000000286:                   # @func0000000000000286
-	srli	a0, a0, 16
-	sext.h	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func000000000000038a:                   # @func000000000000038a
 	slli	a2, a2, 32

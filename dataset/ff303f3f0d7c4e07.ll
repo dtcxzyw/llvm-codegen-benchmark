@@ -17,11 +17,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000066(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = sub nsw i16 %1, %2
-  %4 = icmp slt i16 %3, 0
-  %5 = trunc nuw i16 %0 to i8
-  %6 = select i1 %4, i8 0, i8 %5
-  ret i8 %6
+  %3 = icmp slt i16 %1, %2
+  %4 = trunc nuw i16 %0 to i8
+  %5 = select i1 %3, i8 0, i8 %4
+  ret i8 %5
 }
 
 ; 2 occurrences:

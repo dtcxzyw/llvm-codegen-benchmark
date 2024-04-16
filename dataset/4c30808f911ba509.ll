@@ -9,7 +9,7 @@ entry:
   %4 = add nuw nsw i32 %3, 9
   %5 = add nuw nsw i32 %4, %1
   %6 = and i32 %5, 504
-  %7 = icmp ne i32 %0, %6
+  %7 = icmp ne i32 %6, %0
   ret i1 %7
 }
 

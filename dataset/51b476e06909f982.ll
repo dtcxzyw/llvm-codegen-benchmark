@@ -21,7 +21,7 @@ define float @func000000000000000c(float %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8388607
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = select i1 %5, float 0.000000e+00, float %0
   ret float %6
 }
@@ -60,7 +60,7 @@ define double @func0000000000000004(double %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2146435072
   %4 = icmp ult i32 %3, 112197632
-  %5 = and i1 %1, %4
+  %5 = and i1 %4, %1
   %6 = select i1 %5, double 0x370000000000000, double %0
   ret double %6
 }

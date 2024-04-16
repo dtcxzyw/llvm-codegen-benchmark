@@ -64,7 +64,7 @@ define i32 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = icmp eq i64 %3, 512
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   %6 = select i1 %1, i32 15, i32 14
   %7 = select i1 %5, i32 21, i32 %6
   ret i32 %7

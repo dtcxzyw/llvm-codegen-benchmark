@@ -32,11 +32,10 @@ entry:
 define i1 @func00000000000005aa(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = icmp sgt i32 %4, 0
-  %6 = icmp sgt i32 %0, 0
-  %7 = select i1 %5, i1 %6, i1 false
-  ret i1 %7
+  %4 = icmp slt i32 %3, %1
+  %5 = icmp sgt i32 %0, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

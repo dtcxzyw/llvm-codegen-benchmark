@@ -51,7 +51,7 @@ entry:
 define i16 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = sdiv i32 %3, 864
   %5 = trunc i32 %4 to i16
   ret i16 %5

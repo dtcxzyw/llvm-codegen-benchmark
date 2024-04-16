@@ -1,31 +1,27 @@
 func0000000000000064:                   # @func0000000000000064
-	slti	a2, a2, 0
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	bltz	a2, .LBB0_2
+	neg	a1, a1
+.LBB0_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000065:                   # @func0000000000000065
-	slti	a2, a2, 0
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	bltz	a2, .LBB1_2
+	neg	a1, a1
+.LBB1_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000060:                   # @func0000000000000060
-	slti	a2, a2, 0
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	bltz	a2, .LBB2_2
+	neg	a1, a1
+.LBB2_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a2, a2
-	addi	a2, a2, -1
-	seqz	a2, a2
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	li	a3, 1
+	beq	a2, a3, .LBB3_2
+	neg	a1, a1
+.LBB3_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func00000000000000a5:                   # @func00000000000000a5
@@ -42,28 +38,27 @@ func0000000000000010:                   # @func0000000000000010
 	slli	a2, a4, 32
 	beq	a3, a4, .LBB5_2
 	addi	a2, a2, -88
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 .LBB5_2:
 	addi	a2, a2, -98
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func00000000000000a0:                   # @func00000000000000a0
-	sraiw	a2, a2, 31
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	sext.w	a2, a2
+	bgez	a2, .LBB6_2
+	neg	a1, a1
+.LBB6_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	lui	a3, 524288
-	xor	a2, a2, a3
-	snez	a2, a2
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a2, a1
+	bne	a2, a3, .LBB7_2
+	neg	a1, a1
+.LBB7_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func00000000000000ad:                   # @func00000000000000ad
@@ -86,7 +81,7 @@ func0000000000000040:                   # @func0000000000000040
 	bltu	a3, a2, .LBB9_2
 	li	a2, 16
 .LBB9_2:                                # %entry
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -107,14 +102,13 @@ func000000000000001f:                   # @func000000000000001f
 	seqz	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, 255
-	mul	a1, a1, a2
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
-	seqz	a2, a2
-	addi	a2, a2, -1
-	ori	a2, a2, 1
-	mul	a1, a1, a2
+	beqz	a2, .LBB12_2
+	neg	a1, a1
+.LBB12_2:                               # %entry
 	addw	a0, a0, a1
 	ret

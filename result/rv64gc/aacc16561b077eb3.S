@@ -20,15 +20,15 @@ func0000000000000022:                   # @func0000000000000022
 	and	a0, a0, a1
 	ret
 func0000000000000102:                   # @func0000000000000102
-	li	a3, -1
-	srli	a4, a3, 1
-	add	a2, a2, a4
-	sltiu	a2, a2, 4
-	not	a2, a2
+	li	a3, -9
+	srli	a3, a3, 1
+	add	a2, a2, a3
+	sltiu	a2, a2, -4
 	or	a0, a0, a2
-	slli	a3, a3, 63
-	addi	a3, a3, 4
-	xor	a1, a1, a3
+	li	a2, -1
+	slli	a2, a2, 63
+	addi	a2, a2, 4
+	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

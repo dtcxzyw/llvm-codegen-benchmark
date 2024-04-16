@@ -8,7 +8,7 @@ entry:
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = or i64 %0, %6
+  %7 = or i64 %6, %0
   ret i64 %7
 }
 
@@ -23,7 +23,7 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
   %6 = zext i64 %5 to i128
-  %7 = or disjoint i128 %0, %6
+  %7 = or disjoint i128 %6, %0
   ret i128 %7
 }
 

@@ -9421,11 +9421,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = icmp eq ptr %0, %1
+  ret i1 %2
 }
 
 ; 4988 occurrences:

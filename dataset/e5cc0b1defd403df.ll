@@ -6,7 +6,7 @@
 define i1 @func0000000000000194(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = zext i32 %0 to i64
   %6 = sub nsw i64 %5, %4
   %7 = icmp ult i64 %6, 48
@@ -19,11 +19,10 @@ entry:
 define i1 @func00000000000003d6(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %1, %3
+  %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i16 %0 to i32
-  %6 = sub nsw i32 %5, %4
-  %7 = icmp slt i32 %6, 1
-  ret i1 %7
+  %6 = icmp sge i32 %4, %5
+  ret i1 %6
 }
 
 ; 1 occurrences:

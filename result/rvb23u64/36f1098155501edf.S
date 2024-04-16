@@ -1,12 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	ori	a0, a0, 32
-	andi	a0, a0, 255
-	addi	a0, a0, -99
+	andi	a0, a0, 223
+	addi	a0, a0, -67
 	li	a1, 13
 	czero.nez	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	ori	a0, a0, 1
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
 	lui	a1, 2998

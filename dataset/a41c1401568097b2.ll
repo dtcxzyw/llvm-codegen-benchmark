@@ -53,7 +53,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 65, i32 64
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 52
   ret i64 %5

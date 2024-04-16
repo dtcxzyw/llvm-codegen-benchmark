@@ -24,9 +24,8 @@ entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = and i64 %2, 8589934584
   %4 = add i64 %0, -8
-  %5 = sub i64 %4, %3
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -37,9 +36,8 @@ entry:
   %2 = add i32 %1, 3
   %3 = and i32 %2, -4
   %4 = add i32 %0, -4
-  %5 = sub i32 %4, %3
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
+  %5 = icmp eq i32 %4, %3
+  ret i1 %5
 }
 
 ; 2 occurrences:

@@ -24,7 +24,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
-  %6 = icmp eq ptr %0, %5
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -203,7 +203,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr inbounds i8, ptr %0, i64 %3
   %5 = getelementptr inbounds i8, ptr %4, i64 -3
-  %6 = icmp ult ptr %0, %5
+  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

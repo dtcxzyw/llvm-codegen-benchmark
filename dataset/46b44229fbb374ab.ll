@@ -10,7 +10,7 @@ entry:
   %3 = xor i128 %1, %2
   %4 = trunc i128 %3 to i64
   %5 = and i64 %4, 2459565876494606882
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

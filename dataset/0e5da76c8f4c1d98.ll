@@ -58,9 +58,8 @@ entry:
   %3 = shl i64 %2, 23
   %4 = ashr i64 %3, 63
   %5 = getelementptr %struct.TCGTemp.1662904, ptr %1, i64 %4
-  %6 = getelementptr %struct.TCGTemp.1662904, ptr %5, i64 %0
-  %7 = getelementptr inbounds i8, ptr %6, i64 24
-  ret ptr %7
+  %6 = getelementptr %struct.TCGTemp.1662904, ptr %5, i64 %0, i32 3
+  ret ptr %6
 }
 
 ; 1 occurrences:

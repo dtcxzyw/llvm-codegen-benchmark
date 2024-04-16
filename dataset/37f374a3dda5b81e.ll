@@ -31,11 +31,9 @@ entry:
 define i32 @func00000000000000ec(i48 %0, i48 %1, i48 %2) #0 {
 entry:
   %3 = shl nuw nsw i48 %2, 16
-  %4 = shl nuw i48 %1, 32
-  %5 = or disjoint i48 %4, %3
-  %6 = or disjoint i48 %5, %0
-  %7 = trunc i48 %6 to i32
-  ret i32 %7
+  %4 = or i48 %3, %0
+  %5 = trunc i48 %4 to i32
+  ret i32 %5
 }
 
 ; 2 occurrences:
@@ -44,12 +42,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000bc(i48 %0, i48 %1, i48 %2) #0 {
 entry:
-  %3 = shl nuw i48 %2, 32
-  %4 = shl nuw nsw i48 %1, 16
-  %5 = or disjoint i48 %4, %3
-  %6 = or disjoint i48 %5, %0
-  %7 = trunc i48 %6 to i32
-  ret i32 %7
+  %3 = shl nuw nsw i48 %1, 16
+  %4 = or i48 %3, %0
+  %5 = trunc i48 %4 to i32
+  ret i32 %5
 }
 
 ; 1 occurrences:

@@ -61,7 +61,7 @@ entry:
   %2 = fptoui float %1 to i8
   %3 = zext i8 %2 to i16
   %4 = shl i16 %3, 12
-  %5 = or i16 %0, %4
+  %5 = or i16 %4, %0
   ret i16 %5
 }
 
@@ -85,7 +85,7 @@ entry:
   %2 = fptoui float %1 to i8
   %3 = zext i8 %2 to i16
   %4 = shl nuw i16 %3, 8
-  %5 = or i16 %0, %4
+  %5 = or i16 %4, %0
   ret i16 %5
 }
 
@@ -97,7 +97,7 @@ entry:
   %2 = fptoui float %1 to i8
   %3 = zext i8 %2 to i16
   %4 = shl nuw nsw i16 %3, 4
-  %5 = or i16 %0, %4
+  %5 = or i16 %4, %0
   ret i16 %5
 }
 

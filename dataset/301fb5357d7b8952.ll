@@ -19,8 +19,9 @@ define i64 @func0000000000000095(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 719468
   %4 = add nsw i64 %3, %0
-  %5 = sdiv i64 %1, 146097
-  %6 = mul nsw i64 %5, -146097
+  %.fr = freeze i64 %1
+  %5 = srem i64 %.fr, 146097
+  %6 = sub i64 %5, %.fr
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }
@@ -31,8 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sdiv i32 %2, 1461
-  %4 = mul nsw i32 %3, 1461
+  %.fr = freeze i32 %2
+  %3 = srem i32 %.fr, 1461
+  %4 = sub nsw i32 %.fr, %3
   %5 = add nsw i32 %1, -100795972
   %6 = add nsw i32 %5, %0
   %7 = add nsw i32 %6, %4

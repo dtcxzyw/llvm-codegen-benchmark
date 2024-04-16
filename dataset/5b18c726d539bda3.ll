@@ -14,7 +14,7 @@ entry:
   %3 = and i16 %2, 1
   %4 = add i16 %3, %0
   %5 = lshr i16 %4, 8
-  %6 = trunc i16 %5 to i8
+  %6 = trunc nuw i16 %5 to i8
   ret i8 %6
 }
 
@@ -51,7 +51,7 @@ define i64 @func0000000000000018(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 51
   %3 = and i128 %2, 18446744073709551615
-  %4 = add nuw nsw i128 %0, %3
+  %4 = add nuw nsw i128 %3, %0
   %5 = lshr i128 %4, 51
   %6 = trunc i128 %5 to i64
   ret i64 %6

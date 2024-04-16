@@ -6,7 +6,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16368
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %2, i64 256)
-  %4 = add i64 %0, %3
+  %4 = add i64 %3, %0
   ret i64 %4
 }
 
@@ -25,7 +25,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775806
   %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 384)
-  %4 = add nuw nsw i64 %0, %3
+  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 

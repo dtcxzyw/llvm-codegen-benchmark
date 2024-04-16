@@ -4,7 +4,7 @@
 ; Function Attrs: nounwind
 define double @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = zext i32 %0 to i64
+  %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
   %3 = uitofp i64 %2 to double
   ret double %3

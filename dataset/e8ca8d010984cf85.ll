@@ -16,7 +16,7 @@ define i1 @func000000000000020e(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp sle i32 %0, %4
+  %5 = icmp sge i32 %4, %0
   %6 = trunc i8 %1 to i1
   %7 = or i1 %5, %6
   ret i1 %7

@@ -17,8 +17,8 @@ entry:
   %3 = add i64 %2, 15
   %4 = sdiv i64 %3, 16
   %5 = getelementptr %union.yyalloc.1553162, ptr %0, i64 %4
-  %6 = add nsw i64 %1, 1
-  %7 = getelementptr %union.YYSTYPE.1553161, ptr %5, i64 %6
+  %6 = getelementptr %union.YYSTYPE.1553161, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -41,8 +41,8 @@ entry:
   %3 = add nsw i64 %2, 15
   %4 = sdiv i64 %3, 16
   %5 = getelementptr inbounds %union.yyalloc.1554246, ptr %0, i64 %4
-  %6 = add nsw i64 %1, 1
-  %7 = getelementptr inbounds %union.YYSTYPE.1554245, ptr %5, i64 %6
+  %6 = getelementptr %union.YYSTYPE.1554245, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -59,8 +59,8 @@ entry:
   %3 = add nsw i64 %2, 7
   %4 = sdiv i64 %3, 8
   %5 = getelementptr %union.yyalloc.2119336, ptr %0, i64 %4
-  %6 = add i64 %1, 1
-  %7 = getelementptr %union.YYSTYPE.2119335, ptr %5, i64 %6
+  %6 = getelementptr %union.YYSTYPE.2119335, ptr %5, i64 %1
+  %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 

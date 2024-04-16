@@ -7,10 +7,10 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr i64 %2, 2
-  %4 = trunc i64 %3 to i32
-  %5 = lshr i32 %4, 16
-  ret i32 %5
+  %sum.shift = lshr i64 %2, 18
+  %3 = trunc i64 %sum.shift to i32
+  %4 = and i32 %3, 65535
+  ret i32 %4
 }
 
 ; 3 occurrences:
@@ -21,10 +21,10 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr exact i64 %2, 3
-  %4 = trunc i64 %3 to i32
-  %5 = lshr i32 %4, 31
-  ret i32 %5
+  %sum.shift = lshr i64 %2, 34
+  %3 = trunc nuw nsw i64 %sum.shift to i32
+  %4 = and i32 %3, 1
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

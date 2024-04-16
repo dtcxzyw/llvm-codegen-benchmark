@@ -10,11 +10,10 @@
 define ptr @func0000000000000007(ptr %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 20
-  %4 = select i1 %3, i32 2, i32 1
-  %5 = select i1 %1, i32 %4, i32 0
-  %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr inbounds [3 x %struct.version_info.1779608], ptr %0, i64 0, i64 %6
-  ret ptr %7
+  %4 = select i1 %3, i64 2, i64 1
+  %5 = select i1 %1, i64 %4, i64 0
+  %6 = getelementptr inbounds [3 x %struct.version_info.1779608], ptr %0, i64 0, i64 %5
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

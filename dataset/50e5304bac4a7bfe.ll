@@ -27,9 +27,8 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr inbounds %struct._zend_ssa_op.1716779, ptr %0, i64 %5
-  %7 = getelementptr inbounds i8, ptr %6, i64 12
-  ret ptr %7
+  %6 = getelementptr inbounds %struct._zend_ssa_op.1716779, ptr %0, i64 %5, i32 3
+  ret ptr %6
 }
 
 ; 2 occurrences:

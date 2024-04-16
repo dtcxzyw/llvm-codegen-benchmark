@@ -111,9 +111,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr inbounds i8, ptr %1, i64 16
-  %3 = select i1 %0, ptr %1, ptr %2
-  ret ptr %3
+  %.idx = select i1 %0, i64 0, i64 16
+  %2 = getelementptr inbounds i8, ptr %1, i64 %.idx
+  ret ptr %2
 }
 
 ; 12 occurrences:
@@ -132,9 +132,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr i8, ptr %1, i64 24
-  %3 = select i1 %0, ptr %1, ptr %2
-  ret ptr %3
+  %.idx = select i1 %0, i64 0, i64 24
+  %2 = getelementptr i8, ptr %1, i64 %.idx
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

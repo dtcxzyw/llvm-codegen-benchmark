@@ -1,6 +1,5 @@
 func00000000000001d1:                   # @func00000000000001d1
-	addiw	a0, a0, 1
-	addi	a0, a0, -1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 .LCPI1_0:
@@ -19,8 +18,7 @@ func0000000000000094:                   # @func0000000000000094
 	sltiu	a0, a0, -20
 	ret
 func0000000000000151:                   # @func0000000000000151
-	addiw	a0, a0, 1
-	addi	a0, a0, -1
+	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
@@ -29,9 +27,8 @@ func0000000000000054:                   # @func0000000000000054
 	sltiu	a0, a0, 8
 	ret
 func0000000000000114:                   # @func0000000000000114
-	addi	a0, a0, 1
 	zext.w	a0, a0
-	addi	a0, a0, -2
+	addi	a0, a0, -1
 	sltiu	a0, a0, 3
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -46,7 +43,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
-	addiw	a0, a0, -1
-	addi	a0, a0, -24
+	sext.w	a0, a0
+	addi	a0, a0, -25
 	seqz	a0, a0
 	ret

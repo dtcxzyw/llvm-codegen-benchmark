@@ -12,7 +12,7 @@ define ptr @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr inbounds %struct.nghttp2_map_bucket.1686008, ptr %0, i64 %5
   ret ptr %6
 }
@@ -24,7 +24,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr inbounds i32, ptr %0, i64 %5
   ret ptr %6
 }
@@ -55,7 +55,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = and i64 %1, %4
+  %5 = and i64 %4, %1
   %6 = getelementptr %struct.p4d_t.1993266, ptr %0, i64 %5
   ret ptr %6
 }

@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	beqz	a1, .LBB0_3
 	bnez	a0, .LBB0_4
 .LBB0_2:                                # %entry
-	fmul.s	fa5, fa0, fa5
+	fmul.s	fa5, fa5, fa0
 	fcvt.w.s	a0, fa5, rtz
 	ret
 .LBB0_3:                                # %entry
@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	beqz	a0, .LBB0_2
 .LBB0_4:
 	fmv.w.x	fa5, zero
-	fmul.s	fa5, fa0, fa5
+	fmul.s	fa5, fa5, fa0
 	fcvt.w.s	a0, fa5, rtz
 	ret
 func0000000000000002:                   # @func0000000000000002

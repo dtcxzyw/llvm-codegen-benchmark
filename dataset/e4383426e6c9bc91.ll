@@ -55,7 +55,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = add nuw nsw i32 %0, %6
+  %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -113,7 +113,7 @@ entry:
   %4 = shl i64 %3, 48
   %5 = zext i32 %1 to i64
   %6 = or disjoint i64 %4, %5
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 
@@ -216,7 +216,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = add nsw i32 %0, %6
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 
@@ -248,7 +248,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 8
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = add nuw i32 %0, %6
+  %7 = add nuw i32 %6, %0
   ret i32 %7
 }
 
@@ -275,7 +275,7 @@ entry:
   %4 = shl nuw nsw i128 %3, 32
   %5 = zext nneg i64 %1 to i128
   %6 = or disjoint i128 %4, %5
-  %7 = add i128 %0, %6
+  %7 = add i128 %6, %0
   ret i128 %7
 }
 
@@ -317,7 +317,7 @@ entry:
   %4 = shl nuw nsw i16 %3, 8
   %5 = zext i8 %1 to i16
   %6 = or disjoint i16 %4, %5
-  %7 = add nuw nsw i16 %0, %6
+  %7 = add nuw nsw i16 %6, %0
   ret i16 %7
 }
 
@@ -343,7 +343,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 30
   %5 = zext i32 %1 to i64
   %6 = or i64 %4, %5
-  %7 = add i64 %0, %6
+  %7 = add i64 %6, %0
   ret i64 %7
 }
 

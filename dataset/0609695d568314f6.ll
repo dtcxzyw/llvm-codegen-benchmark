@@ -20,8 +20,8 @@ define i1 @func0000000000000191(i64 %0) #0 {
 entry:
   %1 = icmp slt i64 %0, 0
   %2 = select i1 %1, i64 7, i64 0
-  %3 = add nsw i64 %2, %0
-  %4 = icmp eq i64 %3, 0
+  %3 = sub i64 0, %0
+  %4 = icmp eq i64 %2, %3
   ret i1 %4
 }
 

@@ -130,7 +130,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = and i32 %3, 65535
   %5 = zext nneg i32 %4 to i48
-  %6 = or disjoint i48 %0, %5
+  %6 = or disjoint i48 %5, %0
   ret i48 %6
 }
 
@@ -159,7 +159,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, -4096
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
@@ -180,7 +180,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 536870911
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 

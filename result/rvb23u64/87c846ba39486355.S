@@ -11,9 +11,9 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 16
 	ret
 func0000000000000007:                   # @func0000000000000007
-	addiw	a1, a1, -4
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 1
+	addi	a0, a0, -3
 	ret
 func0000000000000002:                   # @func0000000000000002
 	addiw	a1, a1, 2
@@ -26,10 +26,10 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	addiw	a1, a1, 1
+	sext.w	a1, a1
 	sh3add	a1, a1, a1
 	sh3add	a0, a1, a0
-	addi	a0, a0, -40
+	addi	a0, a0, 32
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1
@@ -43,9 +43,9 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	addiw	a1, a1, -6
+	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 12
+	addi	a0, a0, 6
 	ret
 func0000000000000009:                   # @func0000000000000009
 	addiw	a1, a1, 1

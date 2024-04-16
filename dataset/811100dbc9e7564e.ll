@@ -64,7 +64,7 @@ define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = shl nsw i32 %2, 1
-  %4 = icmp sgt i32 %0, %3
+  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
@@ -79,7 +79,7 @@ define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = shl nsw i32 %2, 2
-  %4 = icmp eq i32 %0, %3
+  %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
 
@@ -175,7 +175,7 @@ define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
   %3 = shl nsw i32 %2, 2
-  %4 = icmp slt i32 %0, %3
+  %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
 

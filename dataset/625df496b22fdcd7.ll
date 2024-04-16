@@ -9,9 +9,9 @@
 define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 5
-  %4 = add nuw nsw i64 %1, %3
+  %4 = add nuw nsw i64 %3, %1
   %5 = mul nuw nsw i64 %4, 18
-  %6 = add nuw nsw i64 %0, %5
+  %6 = add nuw nsw i64 %5, %0
   %7 = and i64 %6, 63
   ret i64 %7
 }
@@ -21,8 +21,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000f0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = mul nuw nsw i32 %2, 15700
-  %4 = add nuw nsw i32 %3, %1
+  %3 = mul i32 %2, 1364
+  %4 = add i32 %3, %1
   %5 = mul i32 %4, 1364
   %6 = add i32 %5, %0
   %7 = and i32 %6, 2047

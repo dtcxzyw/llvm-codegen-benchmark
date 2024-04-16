@@ -1,12 +1,12 @@
 func0000000000000017:                   # @func0000000000000017
-	srai	a2, a2, 2
-	lui	a3, 699051
-	addiw	a3, a3, -1365
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	mul	a2, a2, a3
-	maxu	a1, a2, a1
-	add	a1, a1, a2
+	srai	a3, a2, 2
+	lui	a4, 699051
+	addiw	a4, a4, -1365
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	mul	a3, a3, a4
+	maxu	a1, a3, a1
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
+	add	a0, a0, a2
 	ret

@@ -12,7 +12,7 @@ entry:
   %1 = udiv i64 %0, 100000000
   %2 = trunc i64 %1 to i32
   %3 = urem i32 %2, 10000
-  %4 = trunc i32 %3 to i16
+  %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
 

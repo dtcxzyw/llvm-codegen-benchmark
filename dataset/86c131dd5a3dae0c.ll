@@ -10,9 +10,9 @@
 define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = and i32 %2, 255
-  %4 = and i32 %0, 255
-  %5 = icmp eq i32 %3, %4
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 255
+  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
@@ -42,10 +42,9 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4095
-  %3 = and i64 %2, -4096
-  %4 = and i64 %0, -4096
-  %5 = icmp eq i64 %3, %4
-  ret i1 %5
+  %3 = xor i64 %2, %0
+  %4 = icmp ult i64 %3, 4096
+  ret i1 %4
 }
 
 ; 2 occurrences:
@@ -68,9 +67,9 @@ entry:
 define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = and i32 %2, 8388607
-  %4 = and i32 %0, 8388607
-  %5 = icmp eq i32 %3, %4
+  %3 = xor i32 %2, %0
+  %4 = and i32 %3, 8388607
+  %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 

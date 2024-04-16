@@ -16,7 +16,7 @@ define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = call noundef i16 @llvm.bswap.i16(i16 %1)
   %3 = call i16 @llvm.umax.i16(i16 %2, i16 1)
-  %4 = icmp eq i16 %0, %3
+  %4 = icmp eq i16 %3, %0
   ret i1 %4
 }
 
@@ -39,7 +39,7 @@ define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = tail call i16 @llvm.bswap.i16(i16 %1)
   %3 = tail call i16 @llvm.umax.i16(i16 %2, i16 1)
-  %4 = icmp eq i16 %0, %3
+  %4 = icmp eq i16 %3, %0
   ret i1 %4
 }
 

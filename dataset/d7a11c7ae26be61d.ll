@@ -15,7 +15,7 @@
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 1000000000
-  %3 = add nuw nsw i64 %0, %2
+  %3 = add nuw nsw i64 %2, %0
   ret i64 %3
 }
 
@@ -85,7 +85,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 2147483647
-  %3 = add i64 %0, %2
+  %3 = add i64 %2, %0
   ret i64 %3
 }
 
@@ -115,7 +115,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = urem i16 %1, 3
-  %3 = add nsw i16 %0, %2
+  %3 = add nsw i16 %2, %0
   ret i16 %3
 }
 

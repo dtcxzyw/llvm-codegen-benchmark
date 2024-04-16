@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	max	a0, a0, a1
 	addiw	a1, a1, -1
 	min	a0, a0, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 524288
@@ -24,5 +24,5 @@ func0000000000000016:                   # @func0000000000000016
 	max	a0, a0, a1
 	addiw	a1, a1, -1
 	min	a0, a0, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret

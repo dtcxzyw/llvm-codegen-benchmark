@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 6
-  %3 = sub nsw i64 %0, %2
-  %4 = shl nsw i64 %3, 3
+  %2 = shl i64 %1, 9
+  %3 = shl i64 %0, 3
+  %4 = sub i64 %3, %2
   ret i64 %4
 }
 
@@ -21,9 +21,9 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl i128 %1, 1
-  %3 = sub i128 %0, %2
-  %4 = shl i128 %3, 32
+  %2 = shl i128 %1, 33
+  %3 = shl i128 %0, 32
+  %4 = sub i128 %3, %2
   ret i128 %4
 }
 
@@ -32,9 +32,9 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000030(i128 %0, i128 %1) #0 {
 entry:
-  %2 = shl nuw nsw i128 %1, 3
-  %3 = sub i128 %0, %2
-  %4 = shl i128 %3, 32
+  %2 = shl i128 %1, 35
+  %3 = shl i128 %0, 32
+  %4 = sub i128 %3, %2
   ret i128 %4
 }
 
@@ -116,9 +116,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = sub i64 %0, %2
-  %4 = shl nuw i64 %3, 3
+  %2 = shl i64 %1, 4
+  %3 = shl i64 %0, 3
+  %4 = sub i64 %3, %2
   ret i64 %4
 }
 
@@ -128,9 +128,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 1
-  %3 = sub nsw i64 %0, %2
-  %4 = shl nuw nsw i64 %3, 3
+  %2 = shl i64 %1, 4
+  %3 = shl i64 %0, 3
+  %4 = sub i64 %3, %2
   ret i64 %4
 }
 
@@ -139,9 +139,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 11
-  %3 = sub i64 %0, %2
-  %4 = shl i64 %3, 32
+  %2 = shl i64 %1, 43
+  %3 = shl i64 %0, 32
+  %4 = sub i64 %3, %2
   ret i64 %4
 }
 
@@ -150,9 +150,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = sub i32 %0, %2
-  %4 = shl nsw i32 %3, 3
+  %2 = shl i32 %1, 6
+  %3 = shl i32 %0, 3
+  %4 = sub i32 %3, %2
   ret i32 %4
 }
 
@@ -163,9 +163,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 3
-  %3 = sub i32 %0, %2
-  %4 = shl nsw i32 %3, 2
+  %2 = shl i32 %1, 5
+  %3 = shl i32 %0, 2
+  %4 = sub i32 %3, %2
   ret i32 %4
 }
 

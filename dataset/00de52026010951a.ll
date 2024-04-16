@@ -85,7 +85,7 @@
 define i1 @func00000000000000cc(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ne ptr %0, %2
+  %3 = icmp ne ptr %2, %0
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
   ret i1 %5
@@ -97,7 +97,7 @@ entry:
 define i1 @func000000000000004c(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ult ptr %0, %2
+  %3 = icmp ugt ptr %2, %0
   %4 = icmp ne ptr %0, null
   %5 = and i1 %4, %3
   ret i1 %5

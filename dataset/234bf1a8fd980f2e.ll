@@ -11,10 +11,8 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ugt ptr %1, %0
-  %3 = select i1 %2, ptr %0, ptr %1
-  %4 = icmp ult ptr %3, %0
-  ret i1 %4
+  %2 = icmp ult ptr %1, %0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

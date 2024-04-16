@@ -9,7 +9,7 @@ define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3E50000000000000
   %4 = fmul double %3, %1
-  %5 = fcmp ole double %0, %4
+  %5 = fcmp oge double %4, %0
   ret i1 %5
 }
 
@@ -32,8 +32,8 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
-  %4 = fmul double %1, %3
-  %5 = fcmp ogt double %0, %4
+  %4 = fmul double %3, %1
+  %5 = fcmp olt double %4, %0
   ret i1 %5
 }
 
@@ -70,8 +70,8 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, -5.000000e-01
-  %4 = fmul double %1, %3
-  %5 = fcmp olt double %0, %4
+  %4 = fmul double %3, %1
+  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 
@@ -83,7 +83,7 @@ define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 6.500000e+01
   %4 = fmul float %3, %1
-  %5 = fcmp uge float %0, %4
+  %5 = fcmp ule float %4, %0
   ret i1 %5
 }
 
@@ -99,8 +99,8 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3FEF958100000000
-  %4 = fmul float %1, %3
-  %5 = fcmp ult float %0, %4
+  %4 = fmul float %3, %1
+  %5 = fcmp ugt float %4, %0
   ret i1 %5
 }
 
@@ -126,8 +126,8 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 3.000000e+00
-  %4 = fmul float %1, %3
-  %5 = fcmp ugt float %0, %4
+  %4 = fmul float %3, %1
+  %5 = fcmp ult float %4, %0
   ret i1 %5
 }
 
@@ -137,8 +137,8 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 0x3EA40000C0000000
-  %4 = fmul float %1, %3
-  %5 = fcmp ule float %0, %4
+  %4 = fmul float %3, %1
+  %5 = fcmp uge float %4, %0
   ret i1 %5
 }
 
@@ -149,7 +149,7 @@ define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 2.000000e+00
   %4 = fmul double %3, %1
-  %5 = fcmp oge double %0, %4
+  %5 = fcmp ole double %4, %0
   ret i1 %5
 }
 

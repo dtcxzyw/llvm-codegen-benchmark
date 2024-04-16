@@ -8,10 +8,11 @@ func0000000000000063:                   # @func0000000000000063
 	ret
 func0000000000000023:                   # @func0000000000000023
 	addiw	a1, a1, -1075
+	czero.eqz	a1, a1, a0
 	li	a2, -1074
-	czero.nez	a2, a2, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	zext.w	a2, a2
+	czero.nez	a0, a2, a0
+	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	addiw	a1, a1, -1
@@ -22,8 +23,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, 8
+	zext.w	a1, a1
 	czero.eqz	a0, a1, a0
-	zext.w	a0, a0
 	ret
 func000000000000006c:                   # @func000000000000006c
 	sext.w	a0, a0
@@ -84,11 +85,11 @@ func0000000000000030:                   # @func0000000000000030
 	zext.h	a0, a0
 	addi	a1, a1, -2
 	sltiu	a0, a0, 8
+	andi	a1, a1, 255
 	czero.eqz	a1, a1, a0
 	li	a2, 12
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
-	andi	a0, a0, 255
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a0, a0

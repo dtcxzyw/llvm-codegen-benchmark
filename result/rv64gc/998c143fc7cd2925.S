@@ -14,23 +14,17 @@ func0000000000000000:                   # @func0000000000000000
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
+	andi	a3, a0, 1
 	andi	a4, a2, 1
-	lui	a2, 921600
-	addiw	a2, a2, -1026
-	andi	a0, a0, 1
-	mv	a3, a2
-	beqz	a4, .LBB1_3
-	bnez	a0, .LBB1_4
-.LBB1_2:                                # %entry
+	lui	a2, 262144
 	lui	a0, 262144
-	and	a0, a0, a2
+	beqz	a4, .LBB1_3
+	beqz	a3, .LBB1_4
+.LBB1_2:                                # %entry
 	ret
 .LBB1_3:                                # %entry
-	lui	a3, 135168
-	addiw	a3, a3, -2
-	beqz	a0, .LBB1_2
-.LBB1_4:
-	or	a2, a3, a1
+	and	a0, a1, a2
+	bnez	a3, .LBB1_2
+.LBB1_4:                                # %entry
 	lui	a0, 262144
-	and	a0, a0, a2
 	ret

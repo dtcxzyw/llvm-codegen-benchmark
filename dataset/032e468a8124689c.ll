@@ -13,10 +13,10 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
-  %2 = zext i1 %1 to i64
-  %3 = sext i32 %0 to i64
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
+  %.neg = sext i1 %1 to i64
+  %2 = sext i32 %0 to i64
+  %3 = add nsw i64 %.neg, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

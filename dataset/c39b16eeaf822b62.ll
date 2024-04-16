@@ -5,8 +5,9 @@
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 7
-  %3 = udiv i32 %0, %2
-  %4 = mul i32 %3, %2
+  %.fr = freeze i32 %0
+  %3 = urem i32 %.fr, %2
+  %4 = sub nuw i32 %.fr, %3
   ret i32 %4
 }
 
@@ -17,8 +18,9 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
-  %3 = udiv i128 %0, %2
-  %4 = mul i128 %3, %2
+  %.fr = freeze i128 %0
+  %3 = urem i128 %.fr, %2
+  %4 = sub nuw i128 %.fr, %3
   ret i128 %4
 }
 

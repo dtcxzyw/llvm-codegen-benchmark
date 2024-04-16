@@ -9,7 +9,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 10
   %4 = and i64 %3, 31744
-  %5 = xor i64 %1, %4
+  %5 = xor i64 %4, %1
   %6 = getelementptr inbounds i8, ptr %0, i64 168618
   %7 = getelementptr inbounds [32768 x i16], ptr %6, i64 0, i64 %5
   ret ptr %7

@@ -83,7 +83,7 @@
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %1, %3
+  %4 = mul nuw i64 %3, %1
   %5 = and i64 %0, 4294967295
   %6 = add nuw i64 %5, %4
   %7 = lshr i64 %6, 32
@@ -201,7 +201,7 @@ entry:
 define i128 @func000000000000001e(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = mul nuw nsw i128 %0, %3
+  %4 = mul nuw nsw i128 %3, %0
   %5 = and i128 %1, 4294967295
   %6 = add nuw nsw i128 %4, %5
   %7 = lshr i128 %6, 32

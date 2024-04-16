@@ -47,7 +47,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 1048576
   %5 = and i32 %1, 63872
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -67,7 +67,7 @@ entry:
   %3 = icmp eq i32 %2, 268435809
   %4 = select i1 %3, i32 2097152, i32 0
   %5 = and i32 %1, 134217728
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -80,7 +80,7 @@ entry:
   %3 = icmp sgt i32 %2, 3
   %4 = select i1 %3, i32 16384, i32 0
   %5 = and i32 %1, 4
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -93,7 +93,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 2146959360, i32 0
   %5 = and i32 %1, 522240
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -109,7 +109,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 2147482624
   %5 = and i32 %1, 512
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -137,7 +137,7 @@ entry:
   %3 = icmp ugt i64 %2, 127
   %4 = select i1 %3, i64 72057594037927936, i64 0
   %5 = and i64 %1, 281474976710656
-  %6 = or disjoint i64 %0, %5
+  %6 = or disjoint i64 %5, %0
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -147,12 +147,12 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000033(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i32 16777216, i32 0
-  %5 = and i32 %1, 16776960
-  %6 = or disjoint i32 %0, %5
-  %7 = or disjoint i32 %6, %4
-  ret i32 %7
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 0, i32 16777216
+  %4 = and i32 %1, 16776960
+  %5 = or disjoint i32 %4, %0
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
 }
 
 ; 6 occurrences:
@@ -168,7 +168,7 @@ entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 0, i32 4
   %5 = and i32 %1, -45093
-  %6 = or i32 %0, %5
+  %6 = or i32 %5, %0
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

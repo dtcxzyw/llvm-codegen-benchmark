@@ -10,7 +10,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = or i1 %0, %5
+  %6 = or i1 %5, %0
   ret i1 %6
 }
 

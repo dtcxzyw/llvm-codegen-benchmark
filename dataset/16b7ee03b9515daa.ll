@@ -114,8 +114,8 @@ define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add i64 %0, -48
-  %4 = add i64 %3, %2
-  %5 = icmp eq i64 %4, 0
+  %4 = sub nsw i64 0, %2
+  %5 = icmp eq i64 %3, %4
   ret i1 %5
 }
 
@@ -139,8 +139,8 @@ define i1 @func000000000000000c(i16 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i16
   %3 = add i16 %0, -48
-  %4 = add i16 %3, %2
-  %5 = icmp ne i16 %4, 0
+  %4 = sub nsw i16 0, %2
+  %5 = icmp ne i16 %3, %4
   ret i1 %5
 }
 

@@ -18,8 +18,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = lshr i32 %1, 2
+  %1 = lshr i8 %0, 2
+  %2 = zext nneg i8 %1 to i32
   %3 = or disjoint i32 %2, 1472
   ret i32 %3
 }
@@ -30,9 +30,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i8 %0) #0 {
 entry:
-  %1 = zext i8 %0 to i32
-  %2 = lshr i32 %1, 6
-  %3 = or i32 %2, 14
+  %1 = lshr i8 %0, 6
+  %2 = or i8 %1, 14
+  %3 = zext nneg i8 %2 to i32
   ret i32 %3
 }
 
@@ -41,9 +41,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {
 entry:
-  %1 = zext nneg i16 %0 to i32
-  %2 = lshr i32 %1, 6
-  %3 = or disjoint i32 %2, 192
+  %1 = lshr i16 %0, 6
+  %2 = or i16 %1, 192
+  %3 = zext nneg i16 %2 to i32
   ret i32 %3
 }
 

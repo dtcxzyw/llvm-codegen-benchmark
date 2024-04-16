@@ -7,9 +7,9 @@
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 4
-  %3 = or disjoint i32 %2, %0
-  %4 = trunc i32 %3 to i8
+  %2 = or i32 %1, %0
+  %3 = trunc i32 %2 to i8
+  %4 = or i8 %3, 4
   ret i8 %4
 }
 

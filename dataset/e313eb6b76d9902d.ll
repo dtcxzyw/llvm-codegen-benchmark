@@ -8,7 +8,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %3, 6
   %5 = tail call i64 @llvm.smax.i64(i64 %1, i64 %4)
-  %6 = icmp eq i64 %0, %5
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = add nsw i32 %3, -48
   %5 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %4)
-  %6 = icmp sgt i32 %0, %5
+  %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
 

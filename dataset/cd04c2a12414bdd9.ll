@@ -20,9 +20,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
   %4 = add nsw i64 %3, %2
-  %5 = add i64 %4, 16
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, -16
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -34,9 +33,8 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nsw i64 %0, 3
   %4 = add nsw i64 %3, %2
-  %5 = add nsw i64 %4, 15
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %5 = icmp eq i64 %4, -15
+  ret i1 %5
 }
 
 ; 1 occurrences:
@@ -47,8 +45,8 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %0, 10
   %4 = add nsw i32 %3, %2
-  %5 = add nsw i32 %4, -56613888
-  %6 = icmp ult i32 %5, 128
+  %5 = and i32 %4, -128
+  %6 = icmp eq i32 %5, 56613888
   ret i1 %6
 }
 
@@ -73,9 +71,8 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %0, 10
   %4 = add nsw i32 %3, %2
-  %5 = add nsw i32 %4, -56613888
-  %6 = icmp ne i32 %5, 65279
-  ret i1 %6
+  %5 = icmp ne i32 %4, 56679167
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

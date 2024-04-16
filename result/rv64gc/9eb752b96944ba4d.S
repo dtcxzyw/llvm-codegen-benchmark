@@ -7,7 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
-	andi	a1, a1, 128
 	or	a0, a0, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 56
@@ -50,15 +49,12 @@ func0000000000000018:                   # @func0000000000000018
 	xori	a0, a0, 1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	andi	a1, a1, -256
 	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a1, a1, 64
-	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1

@@ -6,11 +6,11 @@ func0000000000000009:                   # @func0000000000000009
 	beqz	a0, .LBB0_2
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa2
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LBB0_2:
 	fmv.w.x	fa5, zero
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LCPI1_0:
 	.word	0x358637bd                      # float 9.99999997E-7
@@ -39,11 +39,11 @@ func000000000000000b:                   # @func000000000000000b
 	beqz	a0, .LBB2_2
 	fli.s	fa5, 2.0
 	fdiv.s	fa5, fa5, fa2
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 .LBB2_2:
 	fmv.w.x	fa5, zero
-	fmul.s	fa0, fa0, fa5
+	fmul.s	fa0, fa5, fa0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, zero

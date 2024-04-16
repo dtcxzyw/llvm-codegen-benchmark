@@ -49,12 +49,11 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i8 %0, i64 %1) #0 {
 entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 7
-  %4 = shl nuw nsw i32 1, %3
-  %5 = trunc i32 %4 to i8
-  %6 = or i8 %0, %5
-  ret i8 %6
+  %2 = trunc i64 %1 to i8
+  %3 = and i8 %2, 7
+  %4 = shl nuw i8 1, %3
+  %5 = or i8 %4, %0
+  ret i8 %5
 }
 
 ; 2 occurrences:
@@ -67,7 +66,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = shl nuw i32 1, %3
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %0, %5
+  %6 = or i16 %5, %0
   ret i16 %6
 }
 

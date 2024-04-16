@@ -7,7 +7,7 @@
 define i16 @func0000000000000004(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp ogt float %0, %2
+  %3 = fcmp olt float %2, %0
   %4 = select i1 %3, float %0, float %2
   %5 = fptosi float %4 to i16
   ret i16 %5
@@ -32,7 +32,7 @@ entry:
 define i32 @func0000000000000002(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fcmp olt float %0, %2
+  %3 = fcmp ogt float %2, %0
   %4 = select i1 %3, float %0, float %2
   %5 = fptosi float %4 to i32
   ret i32 %5
@@ -45,7 +45,7 @@ entry:
 define i32 @func000000000000000c(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp oge double %0, %2
+  %3 = fcmp ole double %2, %0
   %4 = select i1 %3, double %0, double %2
   %5 = fptosi double %4 to i32
   ret i32 %5

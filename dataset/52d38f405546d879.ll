@@ -9,7 +9,7 @@ entry:
   %3 = trunc i128 %2 to i64
   %4 = shl i64 %3, 1
   %5 = add i64 %4, %1
-  %6 = xor i64 %0, %5
+  %6 = xor i64 %5, %0
   ret i64 %6
 }
 

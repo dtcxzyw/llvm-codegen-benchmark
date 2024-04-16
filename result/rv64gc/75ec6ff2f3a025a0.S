@@ -53,8 +53,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000074:                   # @func0000000000000074
 	slli	a3, a3, 32
 	srli	a3, a3, 32
-	add	a3, a3, a1
-	sltu	a1, a3, a1
+	add	a1, a1, a3
+	sltu	a1, a1, a3
 	add	a1, a1, a2
 	beqz	a1, .LBB6_2
 	li	a0, -3

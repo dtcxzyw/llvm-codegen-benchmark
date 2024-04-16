@@ -44,8 +44,8 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sub i32 0, %3
-  %5 = icmp sgt i32 %0, -1
-  %6 = select i1 %5, i32 %4, i32 %3
+  %5 = icmp slt i32 %0, 0
+  %6 = select i1 %5, i32 %3, i32 %4
   ret i32 %6
 }
 

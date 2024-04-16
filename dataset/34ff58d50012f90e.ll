@@ -100,10 +100,9 @@ entry:
 define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = ashr i32 %2, 5
-  %4 = ashr i32 %0, 5
-  %5 = icmp eq i32 %4, %3
-  ret i1 %5
+  %.unshifted = xor i32 %2, %0
+  %3 = icmp ult i32 %.unshifted, 32
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -137,10 +136,9 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = ashr i32 %2, 10
-  %4 = ashr i32 %0, 10
-  %5 = icmp ne i32 %4, %3
-  ret i1 %5
+  %.unshifted = xor i32 %2, %0
+  %3 = icmp ugt i32 %.unshifted, 1023
+  ret i1 %3
 }
 
 ; 1 occurrences:
@@ -149,10 +147,9 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = ashr i32 %2, 10
-  %4 = ashr i32 %0, 10
-  %5 = icmp eq i32 %4, %3
-  ret i1 %5
+  %.unshifted = xor i32 %2, %0
+  %3 = icmp ult i32 %.unshifted, 1024
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

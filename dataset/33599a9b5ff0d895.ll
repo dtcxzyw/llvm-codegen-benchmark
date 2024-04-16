@@ -42,12 +42,11 @@
 ; Function Attrs: nounwind
 define ptr @func00000000000000c7(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp eq i64 %3, 3
-  %5 = select i1 %4, i64 0, i64 %1
-  %6 = getelementptr inbounds i8, ptr %0, i64 16
-  %7 = getelementptr inbounds [3 x %class.btVector3.1741805], ptr %6, i64 0, i64 %5
-  ret ptr %7
+  %3 = icmp eq i64 %2, 2
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = getelementptr inbounds i8, ptr %0, i64 16
+  %6 = getelementptr inbounds [3 x %class.btVector3.1741805], ptr %5, i64 0, i64 %4
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

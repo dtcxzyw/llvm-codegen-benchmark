@@ -105,7 +105,7 @@
 define double @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -16446
-  %3 = add i32 %0, %2
+  %3 = add i32 %2, %0
   %4 = sitofp i32 %3 to double
   %5 = tail call double @llvm.fmuladd.f64(double %4, double 0x3FD34413509F79FF, double -1.000000e-10)
   ret double %5

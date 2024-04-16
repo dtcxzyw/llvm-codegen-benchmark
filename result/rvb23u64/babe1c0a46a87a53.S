@@ -7,10 +7,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
-	not	a1, a1
-	add	a0, a0, a1
-	srli	a0, a0, 60
-	snez	a0, a0
+	sub	a1, a1, a0
+	srli	a1, a1, 60
+	sltiu	a0, a1, 15
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1

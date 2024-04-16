@@ -12,9 +12,9 @@ entry:
   %3 = lshr i64 %0, 33
   %4 = xor i64 %3, %0
   %5 = xor i64 %1, %2
-  %6 = add i64 %4, %5
-  %7 = add i64 %6, %4
-  ret i64 %7
+  %reass.add = shl i64 %4, 1
+  %6 = add i64 %5, %reass.add
+  ret i64 %6
 }
 
 attributes #0 = { nounwind }

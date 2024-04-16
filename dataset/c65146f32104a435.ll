@@ -135,9 +135,8 @@ define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.1553799, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.redblack_node.1553799, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 23 occurrences:
@@ -167,11 +166,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %"struct.re2::Frag.1554289", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr %"struct.re2::Frag.1554289", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 ; 269 occurrences:
@@ -449,9 +447,8 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %"struct.asmjit::_abi_1_10::RAStackGap.1562016", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.asmjit::_abi_1_10::RAStackGap.1562016", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 18 occurrences:
@@ -508,11 +505,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 1
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 2
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -547,9 +543,8 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %"struct.irr::scene::ISkinnedMesh::SPositionKey.1657977", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"struct.irr::scene::ISkinnedMesh::SPositionKey.1657977", ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 11 occurrences:
@@ -567,11 +562,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -4
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 38
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 34
+  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -582,11 +576,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000d(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -48
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.TCGArgConstraint.1662922, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr %struct.TCGArgConstraint.1662922, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -568
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -614,9 +607,8 @@ define ptr @func0000000000000005(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.IOVAMapping.1663690, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 8
-  ret ptr %5
+  %4 = getelementptr %struct.IOVAMapping.1663690, ptr %0, i64 %3, i32 1
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -628,11 +620,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 25
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 1
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 26
+  ret ptr %4
 }
 
 ; 27 occurrences:
@@ -666,11 +657,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 1
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 2
+  ret ptr %4
 }
 
 ; 3 occurrences:
@@ -682,9 +672,8 @@ define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr inbounds %"class.rapidjson::GenericMember.1749402", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -706,11 +695,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr inbounds %struct.Vec_Int_t_.1771777, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr %struct.Vec_Int_t_.1771777, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -12
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -718,11 +706,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001d(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.axset.1923315, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 12
-  ret ptr %5
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr %struct.axset.1923315, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 36
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -732,9 +719,8 @@ define ptr @func0000000000000009(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.BufferDescPadded.2120049, ptr %0, i64 %3
-  %5 = getelementptr inbounds i8, ptr %4, i64 24
-  ret ptr %5
+  %4 = getelementptr %union.BufferDescPadded.2120049, ptr %0, i64 %3, i32 0, i32 2
+  ret ptr %4
 }
 
 ; 6 occurrences:
@@ -776,9 +762,8 @@ define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.SnapShot.2145690, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 10
-  ret ptr %5
+  %4 = getelementptr %struct.SnapShot.2145690, ptr %0, i64 %3, i32 5
+  ret ptr %4
 }
 
 ; 1 occurrences:
@@ -788,9 +773,8 @@ define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr inbounds %struct.hb_glyph_info_t.2273323, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 12
-  ret ptr %5
+  %4 = getelementptr %struct.hb_glyph_info_t.2273323, ptr %0, i64 %3, i32 3
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

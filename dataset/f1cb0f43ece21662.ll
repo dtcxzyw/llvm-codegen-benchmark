@@ -5,10 +5,9 @@
 define i1 @func0000000000000016(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 6
-  %3 = and i8 %2, -128
-  %4 = or disjoint i8 %0, %3
-  %5 = icmp slt i8 %4, 0
-  ret i1 %5
+  %3 = or i8 %2, %0
+  %4 = icmp slt i8 %3, 0
+  ret i1 %4
 }
 
 ; 90 occurrences:
@@ -107,7 +106,7 @@ define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp eq i32 %4, 56320
   ret i1 %5
 }
@@ -118,7 +117,7 @@ entry:
 define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = and i32 %2, 2097088
+  %3 = and i32 %2, 2031616
   %4 = or i32 %3, %0
   %5 = icmp ult i32 %4, 65536
   ret i1 %5
@@ -146,8 +145,8 @@ entry:
 define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
-  %3 = and i32 %2, 1984
-  %4 = or disjoint i32 %3, %0
+  %3 = and i32 %2, 1920
+  %4 = or i32 %3, %0
   %5 = icmp ult i32 %4, 128
   ret i1 %5
 }
@@ -179,7 +178,7 @@ define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = and i32 %2, 448
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp eq i32 %4, 73
   ret i1 %5
 }
@@ -193,7 +192,7 @@ define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = and i32 %2, 448
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp ugt i32 %4, 7
   ret i1 %5
 }
@@ -226,8 +225,8 @@ entry:
 define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = and i32 %2, 4032
-  %4 = or disjoint i32 %3, %0
+  %3 = and i32 %2, 2048
+  %4 = or i32 %3, %0
   %5 = icmp ult i32 %4, 2048
   ret i1 %5
 }
@@ -247,7 +246,7 @@ define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
   %3 = and i32 %2, 2097088
-  %4 = or disjoint i32 %0, %3
+  %4 = or disjoint i32 %3, %0
   %5 = icmp ugt i32 %4, 65536
   ret i1 %5
 }
@@ -271,11 +270,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 9
-  %3 = and i32 %2, 261632
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ult i32 %4, 268435456
-  ret i1 %5
+  %2 = icmp ult i32 %0, 268435456
+  ret i1 %2
 }
 
 ; 1 occurrences:
@@ -323,8 +319,8 @@ entry:
 define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = and i32 %2, 1984
-  %4 = or disjoint i32 %0, %3
+  %3 = and i32 %2, 1920
+  %4 = or i32 %3, %0
   %5 = icmp ugt i32 %4, 127
   ret i1 %5
 }
@@ -340,7 +336,7 @@ define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 2
   %3 = and i8 %2, 12
-  %4 = or disjoint i8 %0, %3
+  %4 = or disjoint i8 %3, %0
   %5 = icmp ne i8 %4, 14
   ret i1 %5
 }
@@ -367,11 +363,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 29
-  %3 = and i32 %2, 1610612736
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
+  %2 = icmp sgt i32 %0, -1
+  ret i1 %2
 }
 
 ; 1 occurrences:

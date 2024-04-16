@@ -621,11 +621,11 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %3, i64 2, i64 1
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i64 1, i64 2
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:

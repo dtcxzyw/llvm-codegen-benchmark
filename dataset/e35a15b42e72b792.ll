@@ -37,7 +37,7 @@ entry:
   %2 = trunc i48 %1 to i32
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
-  %5 = add i32 %0, %4
+  %5 = add i32 %4, %0
   ret i32 %5
 }
 

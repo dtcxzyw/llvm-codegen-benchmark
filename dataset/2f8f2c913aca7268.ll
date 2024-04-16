@@ -106,11 +106,11 @@ declare i64 @llvm.fshl.i64(i64, i64, i64) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = tail call noundef i32 @llvm.fshl.i32(i32 %2, i32 %2, i32 1)
-  %4 = tail call noundef i32 @llvm.fshl.i32(i32 %1, i32 %1, i32 1)
-  %5 = xor i32 %4, %3
-  %6 = tail call noundef i32 @llvm.fshl.i32(i32 %0, i32 %0, i32 1)
-  %7 = xor i32 %5, %6
+  %3 = xor i32 %1, %2
+  %4 = xor i32 %1, %2
+  %5 = xor i32 %3, %0
+  %6 = xor i32 %4, %0
+  %7 = call i32 @llvm.fshl.i32(i32 %5, i32 %6, i32 1)
   ret i32 %7
 }
 

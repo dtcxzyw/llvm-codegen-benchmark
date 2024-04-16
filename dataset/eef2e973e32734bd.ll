@@ -48,7 +48,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 1
   %5 = call i64 @llvm.smin.i64(i64 %4, i64 %1)
-  %6 = add nsw i64 %0, %5
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 1
   %5 = call i64 @llvm.smin.i64(i64 %4, i64 %1)
-  %6 = add i64 %0, %5
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

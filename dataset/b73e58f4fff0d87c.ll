@@ -6,10 +6,9 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = add i32 %2, 24
-  %4 = add i32 %0, 18
-  %5 = add i32 %4, %3
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 42
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -18,10 +17,9 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
-  %3 = add i32 %2, 4
-  %4 = add nsw i32 %0, 4
-  %5 = add i32 %3, %4
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 8
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -30,10 +28,9 @@ entry:
 define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 7
-  %3 = add i32 %2, 128
-  %4 = add nsw i32 %0, 1
-  %5 = add nsw i32 %3, %4
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 129
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -42,10 +39,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = add i32 %2, 61
-  %4 = add nuw nsw i32 %0, 1
-  %5 = add i32 %4, %3
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 62
+  ret i32 %4
 }
 
 ; 4 occurrences:
@@ -57,10 +53,9 @@ entry:
 define i32 @func00000000000000ff(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, 3
-  %4 = add nuw nsw i32 %0, 1
-  %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
+  %3 = add nuw i32 %2, %0
+  %4 = add nuw i32 %3, 4
+  ret i32 %4
 }
 
 ; 2 occurrences:
@@ -70,10 +65,9 @@ entry:
 define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nuw nsw i32 %2, 3
-  %4 = add i32 %0, 5
-  %5 = add i32 %3, %4
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 8
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -82,10 +76,9 @@ entry:
 define i32 @func00000000000000d0(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
-  %3 = add nsw i32 %2, -4
-  %4 = add i32 %0, 7
-  %5 = add i32 %4, %3
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 3
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -94,10 +87,9 @@ entry:
 define i32 @func00000000000000cd(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = add nuw nsw i32 %2, 32
-  %4 = add i32 %0, 192
-  %5 = add nsw i32 %3, %4
-  ret i32 %5
+  %3 = add i32 %2, %0
+  %4 = add i32 %3, 224
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

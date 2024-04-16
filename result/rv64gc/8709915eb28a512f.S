@@ -18,8 +18,12 @@ func00000000000001f1:                   # @func00000000000001f1
 	ret
 func0000000000000151:                   # @func0000000000000151
 	bnez	a2, .LBB2_2
-	li	a2, 4
-.LBB2_2:                                # %entry
+	li	a2, -5
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB2_2:
 	not	a2, a2
 	add	a1, a1, a2
 	xor	a0, a0, a1

@@ -15,8 +15,6 @@
 %struct.anon.3.1555504 = type { i64 }
 %"class.std::__1::__tuple_leaf.50.1555548" = type { %"class.std::__1::basic_string.1555498" }
 %"class.std::__1::__tuple_leaf.51.1555549" = type { i8 }
-%struct.VertexBinding.1558810 = type { %"struct.std::__1::array.1558807", i32, ptr }
-%"struct.std::__1::array.1558807" = type { [3 x i32] }
 %"struct.duckdb::TupleSniffing.1814867" = type { i64, i64, i8, %"class.duckdb::vector.16.1814868" }
 %"class.duckdb::vector.16.1814868" = type { %"class.std::vector.17.1814869" }
 %"class.std::vector.17.1814869" = type { %"struct.std::_Vector_base.18.1814870" }
@@ -524,10 +522,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 56
-  %4 = getelementptr inbounds %"class.std::__1::tuple.1555545", ptr %1, i64 %3
-  %5 = getelementptr inbounds %"class.std::__1::tuple.1555545", ptr %4, i64 %0
-  ret ptr %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr inbounds %"class.std::__1::tuple.1555545", ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 5 occurrences:
@@ -539,10 +536,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 24
-  %4 = getelementptr inbounds %struct.VertexBinding.1558810, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %0
-  ret ptr %5
+  %3 = getelementptr inbounds i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 %0
+  ret ptr %4
 }
 
 ; 38 occurrences:

@@ -31,12 +31,10 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %0
-  %5 = shl nuw nsw i32 %1, 4
-  %6 = or i32 %4, %5
-  %7 = trunc i32 %6 to i8
-  ret i8 %7
+  %3 = shl nuw nsw i32 %1, 4
+  %4 = or i32 %3, %0
+  %5 = trunc i32 %4 to i8
+  ret i8 %5
 }
 
 ; 1 occurrences:
@@ -45,7 +43,7 @@ entry:
 define i16 @func00000000000000f0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or i32 %0, %3
+  %4 = or i32 %3, %0
   %5 = shl nuw nsw i32 %1, 1
   %6 = or i32 %4, %5
   %7 = trunc i32 %6 to i16

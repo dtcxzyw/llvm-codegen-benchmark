@@ -66,7 +66,7 @@ entry:
 define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -81,7 +81,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 4
-  %3 = and i32 %0, %2
+  %3 = and i32 %2, %0
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -92,10 +92,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000001a(i8 %0, i8 %1) #0 {
 entry:
-  %2 = or disjoint i8 %1, -128
-  %3 = and i8 %0, %2
-  %4 = icmp sgt i8 %3, -1
-  ret i1 %4
+  %2 = icmp sgt i8 %0, -1
+  ret i1 %2
 }
 
 ; 4 occurrences:

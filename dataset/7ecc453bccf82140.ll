@@ -206,10 +206,10 @@
 define i1 @func0000000000000141(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 %1
-  %4 = add nsw i64 %3, %1
-  %5 = icmp ult i64 %4, %1
-  %6 = select i1 %5, i64 576460752303423487, i64 %0
-  %7 = icmp eq i64 %6, 0
+  %4 = xor i64 %1, -1
+  %5 = icmp ule i64 %3, %4
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7
 }
 
@@ -235,10 +235,10 @@ entry:
 define i1 @func000000000000014c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 %1
-  %4 = add nsw i64 %3, %1
-  %5 = icmp ult i64 %4, %1
-  %6 = select i1 %5, i64 48038396025285290, i64 %0
-  %7 = icmp ne i64 %6, 0
+  %4 = xor i64 %1, -1
+  %5 = icmp ugt i64 %3, %4
+  %6 = icmp ne i64 %0, 0
+  %7 = select i1 %5, i1 true, i1 %6
   ret i1 %7
 }
 

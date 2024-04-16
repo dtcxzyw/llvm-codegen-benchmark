@@ -21,7 +21,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4
-  %3 = mul i64 %0, %2
+  %3 = mul i64 %2, %0
   %4 = and i64 %3, 4294967295
   ret i64 %4
 }
@@ -31,8 +31,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = mul i32 %0, %2
+  %2 = xor i32 %1, -1
+  %3 = mul i32 %2, %0
   %4 = and i32 %3, 1
   ret i32 %4
 }

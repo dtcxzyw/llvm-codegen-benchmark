@@ -12,7 +12,7 @@ entry:
   %2 = zext i32 %0 to i64
   %3 = udiv i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %0, %4
+  %5 = mul i32 %4, %0
   ret i32 %5
 }
 

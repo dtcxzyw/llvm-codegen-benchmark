@@ -16,9 +16,9 @@
 define i1 @func0000000000000290(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2
-  %4 = icmp ult ptr %0, %3
-  %5 = add nsw i64 %1, -1
-  %6 = icmp ugt i64 %5, 4611686018427387903
+  %4 = icmp ugt ptr %3, %0
+  %5 = add i64 %1, -4611686018427387905
+  %6 = icmp ult i64 %5, -4611686018427387904
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -48,9 +48,9 @@ entry:
 define i1 @func0000000000000090(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 12
-  %4 = icmp ult ptr %0, %3
-  %5 = add i64 %1, -1
-  %6 = icmp ugt i64 %5, 4611686018427387903
+  %4 = icmp ugt ptr %3, %0
+  %5 = add i64 %1, -4611686018427387905
+  %6 = icmp ult i64 %5, -4611686018427387904
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -61,11 +61,10 @@ entry:
 define i1 @func0000000000000998(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 40
-  %4 = icmp ne ptr %0, %3
-  %5 = add i64 %1, 1
-  %6 = icmp ne i64 %5, 0
-  %7 = or i1 %6, %4
-  ret i1 %7
+  %4 = icmp ne ptr %3, %0
+  %5 = icmp ne i64 %1, -1
+  %6 = or i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -74,9 +73,9 @@ entry:
 define i1 @func0000000000000990(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr inbounds i8, ptr %2, i64 48
-  %4 = icmp ne ptr %0, %3
-  %5 = add i64 %1, 1
-  %6 = icmp ugt i64 %5, 127
+  %4 = icmp ne ptr %3, %0
+  %5 = add i64 %1, -127
+  %6 = icmp ult i64 %5, -128
   %7 = or i1 %6, %4
   ret i1 %7
 }

@@ -9,7 +9,7 @@ define i1 @func0000000000000014(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp ogt double %0, %4
+  %5 = fcmp olt double %4, %0
   ret i1 %5
 }
 
@@ -22,7 +22,7 @@ define i1 @func0000000000000032(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp olt double %0, %4
+  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 
@@ -34,7 +34,7 @@ define i1 @func0000000000000004(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ogt float %0, %4
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -45,7 +45,7 @@ define i1 @func000000000000001d(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fcmp uge float %0, %4
+  %5 = fcmp ule float %4, %0
   ret i1 %5
 }
 
@@ -58,7 +58,7 @@ define i1 @func0000000000000012(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fcmp olt float %0, %4
+  %5 = fcmp ogt float %4, %0
   ret i1 %5
 }
 
@@ -69,7 +69,7 @@ define i1 @func0000000000000002(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp olt double %0, %4
+  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 
@@ -80,7 +80,7 @@ define i1 @func0000000000000003(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fcmp ult double %0, %4
+  %5 = fcmp ugt double %4, %0
   ret i1 %5
 }
 
@@ -92,7 +92,7 @@ define i1 @func0000000000000034(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ogt float %0, %4
+  %5 = fcmp olt float %4, %0
   ret i1 %5
 }
 
@@ -103,7 +103,7 @@ define i1 @func0000000000000038(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fcmp oeq float %0, %4
+  %5 = fcmp oeq float %4, %0
   ret i1 %5
 }
 
@@ -114,7 +114,7 @@ define i1 @func000000000000001b(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sitofp i32 %3 to float
-  %5 = fcmp ule float %0, %4
+  %5 = fcmp uge float %4, %0
   ret i1 %5
 }
 

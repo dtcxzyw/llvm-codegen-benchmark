@@ -25,8 +25,8 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp slt i32 %1, 4096
   %5 = and i1 %4, %3
-  %6 = add nsw i32 %0, 1
-  %7 = select i1 %5, i32 %6, i32 %0
+  %6 = zext i1 %5 to i32
+  %7 = add nsw i32 %6, %0
   ret i32 %7
 }
 

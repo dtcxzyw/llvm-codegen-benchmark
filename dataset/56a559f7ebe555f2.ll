@@ -97,7 +97,7 @@ define i32 @func000000000000001d(i32 %0, double %1) #0 {
 entry:
   %2 = fcmp une double %1, 0.000000e+00
   %3 = select i1 %2, i32 2, i32 1
-  %4 = add nsw i32 %0, %3
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 

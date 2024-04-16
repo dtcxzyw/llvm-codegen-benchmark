@@ -15,7 +15,7 @@
 define i8 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 4
-  %4 = xor i1 %0, %3
+  %4 = xor i1 %3, %0
   %5 = select i1 %1, i8 15, i8 0
   %6 = select i1 %4, i8 %5, i8 8
   ret i8 %6

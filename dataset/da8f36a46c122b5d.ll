@@ -21,7 +21,7 @@ entry:
   %2 = xor i32 %1, 7
   %3 = zext i8 %0 to i32
   %4 = lshr i32 %3, %2
-  %5 = trunc i32 %4 to i8
+  %5 = trunc nuw i32 %4 to i8
   %6 = and i8 %5, 1
   ret i8 %6
 }

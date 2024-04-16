@@ -1,6 +1,6 @@
 func0000000000000038:                   # @func0000000000000038
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -20,7 +20,7 @@ func000000000000008c:                   # @func000000000000008c
 	or	a0, a0, a1
 	ret
 func0000000000000222:                   # @func0000000000000222
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -72,22 +72,24 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func000000000000002c:                   # @func000000000000002c
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1
 	ret
 func000000000000028c:                   # @func000000000000028c
 	andi	a0, a0, 255
-	subw	a1, a1, a2
-	slti	a1, a1, 0
+	sext.w	a2, a2
+	sext.w	a1, a1
+	slt	a1, a1, a2
 	sltiu	a0, a0, 254
 	or	a0, a0, a1
 	ret
 func0000000000000234:                   # @func0000000000000234
 	sext.w	a0, a0
-	subw	a1, a1, a2
-	sgtz	a1, a1
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a2, a1
 	addi	a0, a0, -2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -153,7 +155,7 @@ func0000000000000118:                   # @func0000000000000118
 	ret
 func0000000000000382:                   # @func0000000000000382
 	andi	a0, a0, 255
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -214,7 +216,7 @@ func00000000000000d4:                   # @func00000000000000d4
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -270,8 +272,9 @@ func000000000000034c:                   # @func000000000000034c
 	ret
 func00000000000002c2:                   # @func00000000000002c2
 	sext.w	a0, a0
-	subw	a1, a1, a2
-	slti	a1, a1, 0
+	sext.w	a2, a2
+	sext.w	a1, a1
+	slt	a1, a1, a2
 	addi	a0, a0, -1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -285,8 +288,7 @@ func0000000000000228:                   # @func0000000000000228
 	ret
 func0000000000000358:                   # @func0000000000000358
 	sext.w	a0, a0
-	sub	a1, a1, a2
-	slti	a1, a1, 0
+	slt	a1, a1, a2
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1

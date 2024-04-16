@@ -98,9 +98,9 @@ define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 9
-  %5 = select i1 %4, i32 10, i32 1
-  ret i32 %5
+  %.inv = icmp ult i32 %3, 10
+  %4 = select i1 %.inv, i32 1, i32 10
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

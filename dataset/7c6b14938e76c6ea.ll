@@ -9,9 +9,9 @@
 define i16 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 25
-  %2 = and i64 %1, 31
-  %3 = add nsw i64 %2, -17
-  %4 = trunc i64 %3 to i16
+  %2 = trunc i64 %1 to i16
+  %3 = and i16 %2, 31
+  %4 = add nsw i16 %3, -17
   ret i16 %4
 }
 
@@ -45,11 +45,10 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 29
-  %2 = and i64 %1, 7
-  %3 = add nuw nsw i64 %2, 1
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 29
+  %3 = add nuw nsw i32 %2, 1
+  ret i32 %3
 }
 
 attributes #0 = { nounwind }

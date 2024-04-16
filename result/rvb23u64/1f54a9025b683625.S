@@ -20,8 +20,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000020:                   # @func0000000000000020
 	srliw	a2, a2, 30
-	lui	a3, 786432
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
+	slli	a2, a2, 30
 	or	a0, a0, a1
 	lui	a1, 524288
 	or	a0, a0, a1

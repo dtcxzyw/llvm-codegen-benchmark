@@ -7,7 +7,7 @@ entry:
   %2 = lshr i32 %1, 24
   %3 = trunc nuw i32 %2 to i8
   %4 = uitofp i8 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
   %4 = uitofp i8 %3 to double
-  %5 = fmul double %0, %4
+  %5 = fmul double %4, %0
   ret double %5
 }
 

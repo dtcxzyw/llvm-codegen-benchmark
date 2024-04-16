@@ -190,7 +190,7 @@
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2047
   %5 = add nsw i32 %4, -1076
   %6 = select i1 %0, i32 -1075, i32 %5
@@ -238,7 +238,7 @@ entry:
 define i32 @func0000000000000003(i1 %0, i120 %1) #0 {
 entry:
   %2 = lshr i120 %1, 104
-  %3 = trunc i120 %2 to i32
+  %3 = trunc nuw nsw i120 %2 to i32
   %4 = and i32 %3, 255
   %5 = add nuw nsw i32 %4, 1
   %6 = select i1 %0, i32 0, i32 %5

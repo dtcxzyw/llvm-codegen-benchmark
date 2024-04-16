@@ -7,8 +7,8 @@ define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = icmp eq i32 %2, 126
-  %4 = add i16 %0, 1
-  %5 = select i1 %3, i16 %4, i16 %0
+  %4 = zext i1 %3 to i16
+  %5 = add i16 %4, %0
   %6 = add i16 %5, 1
   ret i16 %6
 }

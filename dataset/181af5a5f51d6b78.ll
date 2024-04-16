@@ -175,7 +175,7 @@ entry:
   %4 = or disjoint i64 %1, 1
   %5 = shl i64 %4, %3
   %6 = zext i64 %5 to i128
-  %7 = mul nuw i128 %0, %6
+  %7 = mul nuw i128 %6, %0
   ret i128 %7
 }
 
@@ -184,11 +184,11 @@ entry:
 ; Function Attrs: nounwind
 define i128 @func0000000000000022(i128 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = or disjoint i64 %1, 2
   %5 = shl i64 %4, %3
   %6 = zext i64 %5 to i128
-  %7 = mul nuw i128 %0, %6
+  %7 = mul nuw i128 %6, %0
   ret i128 %7
 }
 
