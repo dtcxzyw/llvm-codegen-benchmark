@@ -30,8 +30,8 @@ func000000000000006f:                   # @func000000000000006f
 	addi	a0, a0, 2
 	ret
 func000000000000007f:                   # @func000000000000007f
-	zext.w	a1, a1
-	sh1add	a1, a1, a1
+	zext.w	a2, a1
+	sh1add.uw	a1, a1, a2
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
 	addi	a0, a0, 12

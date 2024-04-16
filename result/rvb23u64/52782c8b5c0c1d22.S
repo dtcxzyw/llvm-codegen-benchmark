@@ -15,10 +15,11 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a2, a2
-	neg	a2, a2
-	sh2add	a2, a2, a2
-	sh3add	a1, a2, a1
+	neg	a3, a2
+	slli	a2, a2, 3
+	sub	a1, a1, a2
 	sh2add	a0, a0, a0
+	sh2add	a0, a3, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

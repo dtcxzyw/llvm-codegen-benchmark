@@ -13,11 +13,12 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.w	a2, a2
-	sh2add	a2, a2, a2
+	zext.w	a3, a2
+	sh2add.uw	a2, a2, a3
 	sh2add	a0, a2, a0
-	srai	a1, a1, 32
-	sh2add	a1, a1, a1
+	srai	a2, a1, 32
+	srai	a1, a1, 30
+	add	a1, a1, a2
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
 	ret

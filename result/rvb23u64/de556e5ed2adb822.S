@@ -1,14 +1,16 @@
 func0000000000000015:                   # @func0000000000000015
-	srai	a0, a0, 32
-	sh1add	a0, a0, a0
-	li	a1, 32
-	sh3add	a0, a0, a1
+	srai	a1, a0, 32
+	srai	a0, a0, 31
+	add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 32
 	ret
 func0000000000000010:                   # @func0000000000000010
-	srai	a0, a0, 3
-	sh1add	a0, a0, a0
-	li	a1, 24
-	sh3add	a0, a0, a1
+	srli	a1, a0, 3
+	srli	a0, a0, 2
+	add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 24
 	ret
 func000000000000001f:                   # @func000000000000001f
 	srai	a1, a0, 4
@@ -25,8 +27,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000005:                   # @func0000000000000005
 	srai	a0, a0, 32
 	sh2add	a0, a0, a0
-	li	a1, 8
-	sh3add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 8
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sraiw	a0, a0, 1
@@ -42,20 +44,23 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a0, a0, 378
 	ret
 func0000000000000011:                   # @func0000000000000011
-	srai	a0, a0, 3
-	sh1add	a0, a0, a0
-	li	a1, -4
-	sh2add	a0, a0, a1
+	srai	a1, a0, 3
+	srli	a0, a0, 2
+	add	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, -4
 	ret
 func000000000000001a:                   # @func000000000000001a
-	srai	a0, a0, 4
-	sh1add	a0, a0, a0
-	li	a1, 24
-	sh3add	a0, a0, a1
+	srai	a1, a0, 4
+	srli	a0, a0, 3
+	add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 24
 	ret
 func000000000000001d:                   # @func000000000000001d
-	srai	a0, a0, 32
-	sh1add	a0, a0, a0
-	li	a1, -24
-	sh3add	a0, a0, a1
+	srai	a1, a0, 32
+	srai	a0, a0, 31
+	add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, -24
 	ret

@@ -14,6 +14,6 @@ func0000000000000003:                   # @func0000000000000003
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	sext.w	a0, a0
-	li	a1, 136
-	mul	a0, a0, a1
+	slli	a1, a0, 7
+	sh3add	a0, a0, a1
 	ret

@@ -17,7 +17,8 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a3, a3, 1639
 	mul	a2, a2, a3
 	srliw	a3, a2, 31
-	srli	a2, a2, 18
+	srai	a2, a2, 16
+	srli	a2, a2, 2
 	add	a2, a2, a3
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1
@@ -32,7 +33,8 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a3, a3, 1639
 	mul	a2, a2, a3
 	srliw	a3, a2, 31
-	srli	a2, a2, 18
+	srai	a2, a2, 16
+	srli	a2, a2, 2
 	add	a2, a2, a3
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1

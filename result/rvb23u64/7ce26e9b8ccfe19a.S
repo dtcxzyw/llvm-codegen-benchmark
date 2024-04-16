@@ -24,11 +24,11 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000003:                   # @func0000000000000003
 	addi	a2, a2, -1
-	zext.w	a2, a2
-	li	a3, 344
-	mul	a1, a1, a3
+	zext.w	a3, a2
+	li	a4, 344
+	mul	a1, a1, a4
 	add	a0, a0, a1
-	sh1add	a1, a2, a2
+	sh1add.uw	a1, a2, a3
 	sh3add	a0, a1, a0
 	addi	a0, a0, 104
 	ret

@@ -35,16 +35,16 @@ func0000000000000058:                   # @func0000000000000058
 	xori	a0, a0, 1
 	ret
 func00000000000000f4:                   # @func00000000000000f4
+	zext.w	a1, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	add.uw	a0, a1, a0
+	sh1add	a0, a0, a1
 	srli	a0, a0, 31
 	seqz	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8
+	zext.w	a1, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	add.uw	a0, a1, a0
+	sh1add	a0, a0, a1
 	srli	a0, a0, 31
 	snez	a0, a0
 	ret
@@ -95,14 +95,15 @@ func0000000000000106:                   # @func0000000000000106
 	srli	a0, a0, 63
 	ret
 func0000000000000156:                   # @func0000000000000156
+	zext.w	a2, a2
 	li	a3, 10
 	mulhu	a3, a0, a3
 	sh2add	a1, a1, a1
 	sh1add	a1, a1, a3
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	add.uw	a2, a2, a0
-	sltu	a0, a2, a0
+	slli	a3, a0, 1
+	sh1add	a0, a0, a2
+	sltu	a0, a0, a3
 	add	a0, a0, a1
 	srli	a0, a0, 63
 	ret

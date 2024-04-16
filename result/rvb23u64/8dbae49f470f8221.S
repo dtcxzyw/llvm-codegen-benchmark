@@ -23,15 +23,14 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	sh1add	a0, a0, a0
-	li	a1, -12
-	sh2add	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, -12
 	sltiu	a0, a0, 384
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sh2add	a0, a0, a0
-	li	a1, 16
-	sh3add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 3
+	addiw	a0, a0, 16
 	lui	a1, 1
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
@@ -79,8 +78,8 @@ func00000000000000d1:                   # @func00000000000000d1
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sh1add	a0, a0, a0
-	li	a1, 8
-	sh3add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 8
 	sltiu	a0, a0, 1025
 	xori	a0, a0, 1
 	ret

@@ -19,9 +19,9 @@ func00000000000001ef:                   # @func00000000000001ef
 	ret
 func00000000000001ec:                   # @func00000000000001ec
 	sh2add	a2, a2, a2
-	slli	a2, a2, 1
-	srli	a2, a2, 32
+	srli	a2, a2, 31
 	sh2add	a1, a1, a1
-	sh1add	a1, a1, a2
+	slli	a1, a1, 1
+	add.uw	a1, a2, a1
 	add	a0, a0, a1
 	ret

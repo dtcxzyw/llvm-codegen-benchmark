@@ -28,8 +28,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	srliw	a0, a0, 16
 	sh2add	a1, a1, a1
+	srliw	a0, a0, 16
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

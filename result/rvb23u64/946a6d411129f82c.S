@@ -38,8 +38,7 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000009:                   # @func0000000000000009
 	andi	a2, a2, 1
 	add	a1, a1, a2
-	zext.w	a1, a1
-	li	a2, 136
-	mul	a1, a1, a2
+	slli.uw	a2, a1, 7
+	sh3add.uw	a1, a1, a2
 	add	a0, a0, a1
 	ret

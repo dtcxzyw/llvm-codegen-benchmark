@@ -20,8 +20,9 @@ func000000000000001f:                   # @func000000000000001f
 	addiw	a0, a0, 44
 	ret
 func0000000000000010:                   # @func0000000000000010
-	srli	a0, a0, 3
-	sh1add	a0, a0, a0
+	srli	a1, a0, 3
+	srli	a0, a0, 2
+	add	a0, a0, a1
 	lui	a1, 32767
 	slli	a1, a1, 5
 	addi	a1, a1, 44
@@ -60,9 +61,9 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a0, a0, 1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	srliw	a0, a0, 3
-	sh1add	a0, a0, a0
-	li	a1, 2000
-	sh2add	a0, a0, a1
-	sext.w	a0, a0
+	srliw	a1, a0, 3
+	srli	a0, a0, 3
+	sh1add	a0, a0, a1
+	slli	a0, a0, 2
+	addiw	a0, a0, 2000
 	ret

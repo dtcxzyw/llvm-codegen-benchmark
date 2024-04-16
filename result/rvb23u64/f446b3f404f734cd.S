@@ -16,9 +16,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 58
 	ret
 func000000000000000b:                   # @func000000000000000b
-	zext.w	a2, a2
-	li	a3, 1028
-	mul	a2, a2, a3
+	slli.uw	a3, a2, 10
+	sh2add.uw	a2, a2, a3
 	add	a1, a1, a2
 	add.uw	a0, a0, a1
 	addi	a0, a0, 4
@@ -86,8 +85,8 @@ func0000000000000003:                   # @func0000000000000003
 	li	a3, 344
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	zext.w	a0, a0
-	sh1add	a0, a0, a0
+	zext.w	a2, a0
+	sh1add.uw	a0, a0, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 104
 	ret

@@ -9,10 +9,10 @@ func000000000000007c:                   # @func000000000000007c
 	add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	zext.w	a1, a1
-	sh1add	a1, a1, a1
-	li	a2, 39
-	sh3add	a1, a1, a2
+	zext.w	a2, a1
+	sh1add.uw	a1, a1, a2
+	slli	a1, a1, 3
+	addi	a1, a1, 39
 	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret

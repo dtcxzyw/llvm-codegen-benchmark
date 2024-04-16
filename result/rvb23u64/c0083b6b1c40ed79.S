@@ -5,13 +5,15 @@ func0000000000000005:                   # @func0000000000000005
 	sub	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	slli.uw	a1, a1, 2
-	sh1add	a1, a1, a1
+	zext.w	a2, a1
+	sh1add.uw	a1, a1, a2
+	slli	a1, a1, 2
 	sub	a0, a1, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	slli.uw	a1, a1, 2
-	sh1add	a1, a1, a1
+	zext.w	a2, a1
+	sh1add.uw	a1, a1, a2
+	slli	a1, a1, 2
 	sub	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

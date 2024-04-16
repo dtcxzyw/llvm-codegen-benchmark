@@ -10,8 +10,9 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000046:                   # @func0000000000000046
 	srli	a3, a2, 63
 	add	a2, a2, a3
-	srai	a2, a2, 1
-	sh1add	a2, a2, a2
+	srli	a3, a2, 1
+	andi	a2, a2, -2
+	add	a2, a2, a3
 	sh3add	a1, a2, a1
 	sub	a0, a0, a1
 	slti	a0, a0, 168

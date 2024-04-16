@@ -1,8 +1,9 @@
 func00000000000000b5:                   # @func00000000000000b5
 	slt	a1, a1, a2
 	xori	a1, a1, 1
-	sh2add	a1, a1, a1
-	sh3add	a0, a1, a0
+	slli	a2, a1, 5
+	sh3add	a1, a1, a2
+	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
 func00000000000000c5:                   # @func00000000000000c5

@@ -1,6 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
-	srai	a1, a1, 32
-	sh2add	a1, a1, a1
+	srai	a2, a1, 32
+	srai	a1, a1, 30
+	add	a1, a1, a2
 	sh2add	a0, a1, a0
 	addi	a0, a0, 20
 	ret

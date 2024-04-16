@@ -4,9 +4,11 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	mulhu	a0, a0, a1
-	srli	a0, a0, 18
-	slli.uw	a0, a0, 3
-	sh1add	a0, a0, a0
+	srli	a1, a0, 18
+	slli	a0, a0, 14
+	srli	a0, a0, 32
+	sh1add.uw	a0, a1, a0
+	slli	a0, a0, 3
 	ret
 .LCPI1_0:
 	.quad	19342813113834067               # 0x44b82fa09b5a53

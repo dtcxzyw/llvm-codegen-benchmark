@@ -5,8 +5,8 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	zext.w	a0, a0
+	slli	a0, a0, 35
+	srli	a0, a0, 32
 	neg	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011

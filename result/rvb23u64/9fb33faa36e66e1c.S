@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
-	zext.w	a2, a2
-	sh1add	a2, a2, a2
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
 	sh3add	a1, a2, a1
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 8

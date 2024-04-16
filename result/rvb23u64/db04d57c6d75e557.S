@@ -4,9 +4,9 @@ func00000000000000f8:                   # @func00000000000000f8
 	sh2add	a1, a1, a1
 	sh1add	a1, a1, a3
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	add	a2, a2, a0
-	sltu	a0, a2, a0
+	slli	a3, a0, 1
+	sh1add	a0, a0, a2
+	sltu	a0, a0, a3
 	add	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028

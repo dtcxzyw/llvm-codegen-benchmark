@@ -14,14 +14,14 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 255
-	li	a3, 258
-	mul	a2, a2, a3
+	slli	a3, a2, 8
+	sh1add	a2, a2, a3
 	zext.h	a0, a0
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 9
 	addiw	a1, a1, 844
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add.uw	a1, a2, a1

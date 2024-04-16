@@ -13,10 +13,10 @@ func0000000000000007:                   # @func0000000000000007
 	mul	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.w	a0, a0
-	sh1add	a0, a0, a0
-	li	a1, 48
-	sh3add	a0, a0, a1
+	zext.w	a1, a0
+	sh1add.uw	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 48
 	ret
 func000000000000000d:                   # @func000000000000000d
 	andi	a0, a0, 255

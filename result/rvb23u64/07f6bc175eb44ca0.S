@@ -1,6 +1,6 @@
 func00000000000000c1:                   # @func00000000000000c1
-	zext.w	a2, a2
-	sh1add	a2, a2, a2
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
 	sh2add	a1, a2, a1
 	addi	a1, a1, 28
 	xor	a0, a0, a1

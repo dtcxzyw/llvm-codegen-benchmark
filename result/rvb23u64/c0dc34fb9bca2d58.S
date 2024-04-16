@@ -1,7 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	subw	a0, a0, a1
-	slli.uw	a0, a0, 3
-	sh1add	a0, a0, a0
+	zext.w	a1, a0
+	sh1add.uw	a0, a0, a1
+	slli	a0, a0, 3
 	ret
 func0000000000000008:                   # @func0000000000000008
 	subw	a0, a0, a1

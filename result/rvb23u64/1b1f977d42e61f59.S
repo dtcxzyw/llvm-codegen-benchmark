@@ -14,9 +14,8 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sh2add	a0, a0, a0
-	li	a1, 40
-	sh3add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 3
+	addiw	a0, a0, 40
 	ret
 func0000000000000020:                   # @func0000000000000020
 	addi	a0, a0, 4

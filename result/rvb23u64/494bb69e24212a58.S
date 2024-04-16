@@ -10,8 +10,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 50
-	lui	a2, 24
-	mulhu	a1, a1, a2
-	srli	a1, a1, 3
+	srli	a1, a1, 50
+	sh1add	a1, a1, a1
+	srli	a1, a1, 2
 	add	a0, a0, a1
 	ret

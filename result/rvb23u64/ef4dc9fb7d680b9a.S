@@ -1,20 +1,20 @@
 func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a1
 	sh1add	a0, a0, a0
-	li	a1, -24
-	sh3add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, -24
 	ret
 func0000000000000037:                   # @func0000000000000037
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	li	a1, 40
-	sh3add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 40
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	li	a1, 10
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, 10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
@@ -59,9 +59,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	sh1add	a0, a0, a0
-	li	a1, -28
-	sh2add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 2
+	addiw	a0, a0, -28
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
@@ -78,16 +77,14 @@ func0000000000000035:                   # @func0000000000000035
 func000000000000001d:                   # @func000000000000001d
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	li	a1, -48
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, -48
 	ret
 func000000000000003d:                   # @func000000000000003d
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	li	a1, -480
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, -480
 	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a0, a0, a1
@@ -104,9 +101,8 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
-	li	a1, 15
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, 15
 	ret
 func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1

@@ -27,10 +27,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	lui	a1, 524288
-	addiw	a1, a1, -2
-	and	a0, a0, a1
+	slli	a0, a0, 34
+	srli	a0, a0, 33
 	sltiu	a0, a0, 32
 	ret
 func000000000000002c:                   # @func000000000000002c

@@ -23,7 +23,7 @@ func0000000000000002:                   # @func0000000000000002
 	sraiw	a0, a0, 2
 	ret
 func0000000000000008:                   # @func0000000000000008
-	sub	a0, a0, a1
+	subw	a0, a0, a1
 	sh3add	a0, a0, a0
 	slliw	a0, a0, 1
 	lui	a1, 67109

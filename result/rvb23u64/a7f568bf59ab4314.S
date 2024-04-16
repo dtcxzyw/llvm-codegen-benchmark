@@ -2,14 +2,14 @@ func000000000000001d:                   # @func000000000000001d
 	addi	a0, a0, -48
 	andi	a0, a0, 255
 	sh2add	a0, a0, a0
-	li	a1, -48
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, -48
 	ret
 func000000000000003f:                   # @func000000000000003f
 	addiw	a0, a0, -1
 	sh1add	a0, a0, a0
-	li	a1, 6
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, 6
 	ret
 func000000000000007f:                   # @func000000000000007f
 	addi	a0, a0, 5
@@ -21,14 +21,13 @@ func000000000000003d:                   # @func000000000000003d
 	addi	a0, a0, -48
 	andi	a0, a0, 255
 	sh2add	a0, a0, a0
-	li	a1, -48
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, -48
 	ret
 func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, -1
-	zext.w	a0, a0
-	li	a1, 520
-	mul	a0, a0, a1
+	slli.uw	a1, a0, 9
+	sh3add.uw	a0, a0, a1
 	addi	a0, a0, 536
 	ret
 func000000000000007d:                   # @func000000000000007d
@@ -39,8 +38,8 @@ func000000000000007d:                   # @func000000000000007d
 	ret
 func000000000000000d:                   # @func000000000000000d
 	addi	a0, a0, 1
-	zext.w	a0, a0
-	sh1add	a0, a0, a0
-	li	a1, -12
-	sh2add	a0, a0, a1
+	zext.w	a1, a0
+	sh1add.uw	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, -12
 	ret

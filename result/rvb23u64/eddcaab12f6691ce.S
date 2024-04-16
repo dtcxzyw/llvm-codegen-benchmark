@@ -63,8 +63,8 @@ func0000000000000044:                   # @func0000000000000044
 	sltu	a0, a1, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	zext.w	a2, a2
-	sh1add	a2, a2, a2
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
 	sh3add	a1, a2, a1
 	addi	a1, a1, 24
 	sltu	a0, a1, a0

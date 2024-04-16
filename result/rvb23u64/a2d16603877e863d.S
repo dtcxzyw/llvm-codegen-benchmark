@@ -1,7 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	sh1add	a0, a1, a0
-	slli.uw	a0, a0, 3
-	sh1add	a0, a0, a0
+	zext.w	a1, a0
+	sh1add.uw	a0, a0, a1
+	slli	a0, a0, 3
 	ret
 .LCPI1_0:
 	.quad	-7070675565921424023            # 0x9ddfea08eb382d69
