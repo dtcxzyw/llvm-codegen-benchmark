@@ -6,7 +6,7 @@ func000000000000003e:                   # @func000000000000003e
 	vsetivli	zero, 1, e64, m1, ta, ma
 	vslidedown.vi	v9, v8, 1
 	vmv.x.s	a6, v9
-	vmv.x.s	t2, v8
+	vmv.x.s	a5, v8
 	li	t0, 10
 	mulhu	a2, a1, t0
 	sh2add	a4, a4, a4
@@ -15,14 +15,14 @@ func000000000000003e:                   # @func000000000000003e
 	sh2add	a2, a7, a7
 	sh1add	a2, a2, a4
 	sh2add	a1, a1, a1
-	slli	a4, a1, 1
+	slli	a1, a1, 1
 	sh2add	a3, a3, a3
-	slli	a5, a3, 1
-	sh1add	a3, a3, t2
-	sltu	a3, a3, a5
+	slli	a3, a3, 1
+	add	a5, a5, a3
+	sltu	a3, a5, a3
 	add	a2, a2, a3
-	sh1add	a1, a1, a6
-	sltu	a1, a1, a4
+	add	a6, a6, a1
+	sltu	a1, a6, a1
 	add	a1, a1, t1
 	sd	zero, 24(a0)
 	sd	zero, 8(a0)

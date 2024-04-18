@@ -1,8 +1,8 @@
 func0000000000000781:                   # @func0000000000000781
-	ld	a6, 24(a0)
-	ld	a7, 16(a0)
-	ld	t0, 8(a0)
-	ld	t1, 0(a0)
+	ld	a6, 16(a0)
+	ld	a7, 24(a0)
+	ld	t0, 0(a0)
+	ld	t1, 8(a0)
 	ld	a5, 8(a1)
 	ld	a2, 16(a1)
 	ld	a3, 24(a1)
@@ -15,16 +15,16 @@ func0000000000000781:                   # @func0000000000000781
 	sh2add	a4, a5, a5
 	sh1add	a3, a4, a3
 	sh2add	a2, a2, a2
-	slli	a4, a2, 1
+	slli	a2, a2, 1
 	sh2add	a1, a1, a1
-	slli	a5, a1, 1
-	sh1add	a1, a1, t1
-	sltu	a1, a1, a5
-	add	a3, a3, t0
+	slli	a1, a1, 1
+	add	a3, a3, t1
+	add	t0, t0, a1
+	sltu	a1, t0, a1
 	add	a1, a1, a3
-	sh1add	a2, a2, a7
-	sltu	a2, a2, a4
-	add	a0, a0, a6
+	add	a0, a0, a7
+	add	a6, a6, a2
+	sltu	a2, a6, a2
 	add	a0, a0, a2
 	seqz	a0, a0
 	vsetivli	zero, 1, e8, mf8, ta, ma

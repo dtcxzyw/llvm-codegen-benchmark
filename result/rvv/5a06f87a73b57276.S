@@ -13,30 +13,30 @@ func000000000000000f:                   # @func000000000000000f
 	ld	a6, 0(a1)
 	ld	a7, 8(a1)
 	ld	t0, 16(a1)
-	ld	t1, 24(a1)
+	ld	a1, 24(a1)
 	vsetivli	zero, 1, e64, m1, ta, ma
 	vslidedown.vi	v9, v8, 1
 	vmv.x.s	a5, v9
 	vmv.x.s	a2, v8
 	li	a3, 10
-	mulhu	t2, a2, a3
+	mulhu	a4, a2, a3
 	mulhu	a3, a5, a3
 	sh2add	a2, a2, a2
-	slli	a1, a2, 1
+	slli	a2, a2, 1
 	sh2add	a5, a5, a5
-	slli	a4, a5, 1
-	add	a3, a3, t1
-	sh1add	a5, a5, t0
-	sltu	a4, a5, a4
-	add	a3, a3, a4
-	add	a7, a7, t2
-	sh1add	a2, a2, a6
-	sltu	a1, a2, a1
-	add	a1, a1, a7
-	sd	a2, 0(a0)
-	sd	a5, 16(a0)
-	sd	a1, 8(a0)
-	sd	a3, 24(a0)
+	slli	a5, a5, 1
+	add	a1, a1, a3
+	add	t0, t0, a5
+	sltu	a3, t0, a5
+	add	a1, a1, a3
+	add	a4, a4, a7
+	add	a6, a6, a2
+	sltu	a2, a6, a2
+	add	a2, a2, a4
+	sd	a6, 0(a0)
+	sd	t0, 16(a0)
+	sd	a2, 8(a0)
+	sd	a1, 24(a0)
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 859683

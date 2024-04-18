@@ -10,20 +10,20 @@ func00000000000000f8:                   # @func00000000000000f8
 	li	a7, 10
 	mulhu	a4, a0, a7
 	sh2add	a3, a3, a3
-	sh1add	t0, a3, a4
+	sh1add	a3, a3, a4
 	mulhu	a4, a2, a7
 	sh2add	a1, a1, a1
 	sh1add	a1, a1, a4
 	sh2add	a0, a0, a0
-	slli	a4, a0, 1
+	slli	a0, a0, 1
 	sh2add	a2, a2, a2
-	slli	a3, a2, 1
-	sh1add	a2, a2, a5
-	sltu	a2, a2, a3
+	slli	a2, a2, 1
+	add	a5, a5, a2
+	sltu	a2, a5, a2
 	add	a1, a1, a2
-	sh1add	a0, a0, a6
-	sltu	a0, a0, a4
-	add	a0, a0, t0
+	add	a6, a6, a0
+	sltu	a0, a6, a0
+	add	a0, a0, a3
 	vmv.s.x	v9, a0
 	vmv.s.x	v8, a1
 	vsetivli	zero, 2, e64, m1, ta, ma

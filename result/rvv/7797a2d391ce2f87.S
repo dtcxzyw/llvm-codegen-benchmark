@@ -9,10 +9,10 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vx	v8, v8, a0
 	ret
 func000000000000001e:                   # @func000000000000001e
-	ld	a6, 24(a1)
-	ld	a7, 16(a1)
-	ld	t0, 8(a1)
-	ld	t1, 0(a1)
+	ld	a6, 16(a1)
+	ld	a7, 24(a1)
+	ld	t0, 0(a1)
+	ld	t1, 8(a1)
 	ld	a3, 8(a2)
 	ld	a4, 16(a2)
 	ld	a5, 24(a2)
@@ -20,26 +20,26 @@ func000000000000001e:                   # @func000000000000001e
 	li	t2, 10
 	mulhu	a1, a4, t2
 	sh2add	a5, a5, a5
-	sh1add	t3, a5, a1
+	sh1add	a1, a5, a1
 	mulhu	a5, a2, t2
 	sh2add	a3, a3, a3
 	sh1add	a3, a3, a5
 	sh2add	a4, a4, a4
-	slli	a5, a4, 1
+	slli	a4, a4, 1
 	sh2add	a2, a2, a2
-	slli	a1, a2, 1
-	sh1add	a2, a2, t1
-	sltu	a1, a2, a1
-	add	a3, a3, t0
+	slli	a2, a2, 1
+	add	a3, a3, t1
+	add	t0, t0, a2
+	sltu	a2, t0, a2
+	add	a2, a2, a3
+	add	a1, a1, a7
+	add	a6, a6, a4
+	sltu	a3, a6, a4
 	add	a1, a1, a3
-	sh1add	a2, a4, a7
-	sltu	a2, a2, a5
-	add	a6, a6, t3
-	add	a2, a2, a6
 	sd	zero, 24(a0)
 	sd	zero, 8(a0)
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
+	sd	a1, 16(a0)
+	sd	a2, 0(a0)
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 859683

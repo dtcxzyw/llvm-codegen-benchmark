@@ -5,24 +5,24 @@ func000000000000001f:                   # @func000000000000001f
 	vmv.x.s	a2, v9
 	li	a3, 10
 	mulhu	a6, a2, a3
-	mulhu	a7, a1, a3
+	mulhu	a3, a1, a3
 	sh2add	a2, a2, a2
-	slli	t0, a2, 1
+	slli	a2, a2, 1
 	sh2add	a1, a1, a1
-	slli	a4, a1, 1
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
+	slli	a1, a1, 1
 	vmv.x.s	a5, v8
-	sh1add	a1, a1, a5
-	sltu	a4, a1, a4
-	add	a4, a4, a7
-	sh1add	a2, a2, a3
-	sltu	a3, a2, t0
-	add	a3, a3, a6
-	sd	a2, 0(a0)
-	sd	a1, 16(a0)
-	sd	a3, 8(a0)
-	sd	a4, 24(a0)
+	vslidedown.vi	v8, v8, 1
+	vmv.x.s	a4, v8
+	add	a4, a4, a1
+	sltu	a1, a4, a1
+	add	a1, a1, a3
+	add	a5, a5, a2
+	sltu	a2, a5, a2
+	add	a2, a2, a6
+	sd	a5, 0(a0)
+	sd	a4, 16(a0)
+	sd	a2, 8(a0)
+	sd	a1, 24(a0)
 	ret
 func0000000000000035:                   # @func0000000000000035
 	lui	a0, 1048332
