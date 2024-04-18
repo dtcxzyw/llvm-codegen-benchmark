@@ -1,6 +1,6 @@
 func000000000000000f:                   # @func000000000000000f
-	zext.w	a3, a2
-	sh2add.uw	a2, a2, a3
+	zext.w	a2, a2
+	sh2add	a2, a2, a2
 	slli	a2, a2, 10
 	slli	a0, a0, 4
 	add	a0, a0, a1

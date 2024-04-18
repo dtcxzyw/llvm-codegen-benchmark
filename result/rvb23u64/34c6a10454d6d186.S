@@ -8,7 +8,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	addw	a0, a0, a1
 	ret
 func00000000000000ff:                   # @func00000000000000ff
-	sh1add.uw	a0, a1, a0
+	zext.w	a1, a1
+	sh1add	a0, a1, a0
 	slli	a0, a0, 3
 	addi	a0, a0, 32
 	ret
