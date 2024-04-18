@@ -8,10 +8,11 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	srli	a0, a0, 2
-	li	a1, -5
-	zext.w	a1, a1
-	mul	a0, a0, a1
+	srli	a1, a0, 2
+	andi	a0, a0, -4
+	add	a0, a0, a1
+	slli	a1, a1, 32
+	sub	a0, a1, a0
 	ret
 .LCPI1_0:
 	.quad	2535301200456458803             # 0x232f33025bd42233

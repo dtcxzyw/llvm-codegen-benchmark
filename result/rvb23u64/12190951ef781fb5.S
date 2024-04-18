@@ -15,8 +15,9 @@ func0000000000000003:                   # @func0000000000000003
 	mul	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a1, 125
-	mul	a0, a0, a1
+	sh1add	a1, a0, a0
+	slli	a0, a0, 7
+	subw	a0, a0, a1
 	zext.w	a1, a0
 	lui	a2, 274878
 	addiw	a2, a2, -381

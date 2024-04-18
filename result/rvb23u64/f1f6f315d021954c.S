@@ -8,10 +8,10 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 20
-	lui	a3, 512
-	addi	a3, a3, -9
-	mul	a2, a2, a3
-	subw	a1, a1, a2
+	slli	a3, a2, 21
+	sh3add	a2, a2, a2
+	subw	a2, a2, a3
+	add	a1, a1, a2
 	li	a2, 1000
 	mul	a1, a1, a2
 	addw	a0, a0, a1

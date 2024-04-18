@@ -14,9 +14,8 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a0, a0, 33
 	ret
 func000000000000003f:                   # @func000000000000003f
-	li	a2, 125
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a1, a1
+	subw	a0, a0, a1
 	addi	a0, a0, 22
 	andi	a0, a0, 127
 	ret
