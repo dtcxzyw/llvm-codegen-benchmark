@@ -16,6 +16,7 @@
 #include <llvm/IR/Intrinsics.h>
 #include <llvm/IR/LLVMContext.h>
 #include <llvm/IR/Module.h>
+#include <llvm/IR/Operator.h>
 #include <llvm/IR/Type.h>
 #include <llvm/IR/Value.h>
 #include <llvm/IR/Verifier.h>
@@ -159,7 +160,8 @@ public:
       SmallVector<Value *, 4> Args;
       for (Value *Arg : I.args())
         Args.push_back(getMappedValue(Arg));
-      return Builder.CreateIntrinsic(IID, {Args.front()->getType()}, Args, &I);
+      return Builder.CreateIntrinsic(IID, {Args.front()->getType()}, Args,
+                                     isa<FPMathOperator>(I) ? &I : nullptr);
     }
     }
   }
