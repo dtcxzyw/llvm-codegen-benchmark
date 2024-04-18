@@ -1,0 +1,9 @@
+func000000000000004c:                   # @func000000000000004c
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vzext.vf2	v12, v9
+	vsrl.vv	v10, v10, v12
+	vmseq.vi	v0, v10, 0
+	vmv.v.i	v10, 1
+	vzext.vf4	v10, v8, v0.t
+	vmv.v.v	v8, v10
+	ret

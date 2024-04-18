@@ -1,0 +1,55 @@
+func0000000000000007:                   # @func0000000000000007
+	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfadd.vf	v12, v8, fa5
+	vfrsub.vf	v8, v8, fa5
+	vfmul.vv	v8, v8, v12
+	fmv.w.x	fa5, zero
+	vmfne.vf	v0, v8, fa5
+	ret
+func0000000000000008:                   # @func0000000000000008
+	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfadd.vf	v12, v8, fa5
+	vfrsub.vf	v8, v8, fa5
+	vfmul.vv	v8, v8, v12
+	fli.s	fa5, inf
+	vmfeq.vf	v0, v8, fa5
+	ret
+func0000000000000003:                   # @func0000000000000003
+	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfadd.vf	v12, v8, fa5
+	vfrsub.vf	v8, v8, fa5
+	vfmul.vv	v8, v8, v12
+	fmv.w.x	fa5, zero
+	vmfge.vf	v12, v8, fa5
+	vmnot.m	v0, v12
+	ret
+func000000000000000c:                   # @func000000000000000c
+	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfadd.vf	v12, v8, fa5
+	vfrsub.vf	v8, v8, fa5
+	vfmul.vv	v8, v8, v12
+	fli.s	fa5, min
+	vmfge.vf	v0, v8, fa5
+	ret
+func0000000000000002:                   # @func0000000000000002
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfrsub.vf	v16, v8, fa5
+	vfadd.vf	v8, v8, fa5
+	vfmul.vv	v8, v8, v16
+	fmv.d.x	fa5, zero
+	vmflt.vf	v0, v8, fa5
+	ret
+func000000000000000a:                   # @func000000000000000a
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfrsub.vf	v16, v8, fa5
+	vfadd.vf	v8, v8, fa5
+	vfmul.vv	v8, v8, v16
+	fmv.d.x	fa5, zero
+	vmfle.vf	v0, v8, fa5
+	ret

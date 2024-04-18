@@ -1,0 +1,26 @@
+func0000000000000007:                   # @func0000000000000007
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v10, v10, 7
+	li	a0, 254
+	vand.vx	v8, v8, a0
+	vor.vv	v8, v8, v10
+	vadd.vv	v8, v8, v8
+	ret
+func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 1
+	lui	a0, 65535
+	slli	a0, a0, 4
+	vand.vx	v8, v8, a0
+	vor.vv	v8, v8, v10
+	li	a0, 32
+	vsll.vx	v8, v8, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	lui	a0, 16256
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vx	v10, v10, a0
+	vsrl.vi	v8, v8, 13
+	vor.vv	v8, v8, v10
+	vsll.vi	v8, v8, 6
+	ret

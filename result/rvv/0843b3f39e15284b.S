@@ -1,0 +1,8 @@
+func0000000000000011:                   # @func0000000000000011
+	li	a0, 256
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmv.v.x	v12, a0
+	vsext.vf2	v12, v10, v0.t
+	vadd.vi	v8, v8, 1
+	vmseq.vv	v0, v8, v12
+	ret

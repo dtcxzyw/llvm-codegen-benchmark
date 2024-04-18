@@ -1,0 +1,14 @@
+func0000000000000300:                   # @func0000000000000300
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vv	v10, v12, v10
+	vsub.vv	v8, v10, v8
+	vsll.vi	v8, v8, 16
+	lui	a0, 8208
+	vadd.vx	v8, v8, a0
+	ret
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v10, v12, v10
+	vsub.vv	v8, v10, v8
+	vsll.vi	v8, v8, 3
+	ret

@@ -1,0 +1,30 @@
+.LCPI0_0:
+	.quad	0x4024000000000000              # double 10
+.LCPI0_1:
+	.quad	0x412e848000000000              # double 1.0E+6
+func0000000000000002:                   # @func0000000000000002
+	lui	a0, %hi(.LCPI0_0)
+	addi	a0, a0, %lo(.LCPI0_0)
+	vsetivli	zero, 16, e64, m8, ta, mu
+	vlse64.v	v24, (a0), zero
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmul.vv	v24, v8, v16, v0.t
+	vfmin.vf	v8, v24, fa5
+	ret
+func0000000000000004:                   # @func0000000000000004
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, mu
+	vfmv.v.f	v24, fa5
+	vfmul.vv	v24, v8, v16, v0.t
+	fmv.d.x	fa5, zero
+	vfmax.vf	v8, v24, fa5
+	ret
+func000000000000000a:                   # @func000000000000000a
+	fli.s	fa5, -1.0
+	vsetivli	zero, 16, e32, m4, ta, mu
+	vfmv.v.f	v16, fa5
+	vfmul.vv	v16, v8, v12, v0.t
+	fli.s	fa5, 1.0
+	vfmin.vf	v8, v16, fa5
+	ret

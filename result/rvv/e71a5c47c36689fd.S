@@ -1,0 +1,45 @@
+func0000000000000021:                   # @func0000000000000021
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vor.vv	v10, v10, v12
+	lui	a0, 131072
+	addi	a0, a0, -1
+	vxor.vx	v10, v10, a0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmseq.vi	v0, v8, 0
+	lui	a0, 262144
+	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
+	ret
+func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vor.vv	v10, v10, v12
+	li	a0, 2047
+	vxor.vx	v10, v10, a0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmseq.vi	v0, v8, 0
+	lui	a0, 262144
+	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
+	ret
+func0000000000000031:                   # @func0000000000000031
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vor.vv	v10, v10, v12
+	li	a0, 2047
+	vxor.vx	v10, v10, a0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmseq.vi	v0, v8, 0
+	lui	a0, 262144
+	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
+	ret
+func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vor.vv	v10, v10, v12
+	li	a0, 32
+	vmsltu.vx	v0, v8, a0
+	vxor.vi	v8, v10, 7
+	vor.vi	v8, v8, 8, v0.t
+	ret

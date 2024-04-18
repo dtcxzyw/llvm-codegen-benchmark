@@ -1,0 +1,69 @@
+.LCPI0_0:
+	.quad	-4417276706812531889            # 0xc2b2ae3d27d4eb4f
+func0000000000000080:                   # @func0000000000000080
+	lui	a0, 274270
+	addiw	a0, a0, 1339
+	slli	a0, a0, 1
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	vmul.vx	v8, v8, a1
+	ret
+func0000000000000040:                   # @func0000000000000040
+	li	a0, 365
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	lui	a0, 21
+	addiw	a0, a0, 384
+	vmul.vx	v8, v8, a0
+	ret
+func0000000000000000:                   # @func0000000000000000
+	li	a0, 33
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	vmul.vx	v8, v8, a0
+	ret
+func0000000000000055:                   # @func0000000000000055
+	li	a0, 10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	li	a0, 60
+	vmul.vx	v8, v8, a0
+	ret
+func00000000000000ff:                   # @func00000000000000ff
+	li	a0, 100
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	vmul.vx	v8, v8, a0
+	ret
+func0000000000000054:                   # @func0000000000000054
+	li	a0, -1000
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	li	a0, 103
+	vmul.vx	v8, v8, a0
+	ret
+func0000000000000005:                   # @func0000000000000005
+	li	a0, -365
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	li	a0, 12
+	vmul.vx	v8, v8, a0
+	ret
+func0000000000000041:                   # @func0000000000000041
+	li	a0, 60
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vadd.vv	v8, v10, v8
+	lui	a0, 244
+	addiw	a0, a0, 576
+	vmul.vx	v8, v8, a0
+	ret

@@ -1,0 +1,13 @@
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v10, v8
+	li	a0, -256
+	vxor.vx	v8, v10, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v10, v8
+	li	a0, -1
+	slli	a0, a0, 32
+	vor.vx	v8, v10, a0
+	ret

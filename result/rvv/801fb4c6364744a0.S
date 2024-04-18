@@ -1,0 +1,47 @@
+func0000000000000007:                   # @func0000000000000007
+	lui	a0, 8192
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vor.vx	v10, v10, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v12, v10
+	lui	a0, 1040272
+	addiw	a0, a0, -1
+	vand.vx	v8, v8, a0
+	vor.vv	v8, v8, v12
+	ret
+func0000000000000005:                   # @func0000000000000005
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vor.vi	v10, v10, 3
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v12, v10
+	li	a0, -1
+	slli	a0, a0, 32
+	vand.vx	v8, v8, a0
+	vor.vv	v8, v8, v12
+	ret
+func0000000000000001:                   # @func0000000000000001
+	ld	a2, 8(a1)
+	ld	a1, 24(a1)
+	lui	a3, 2048
+	addiw	a3, a3, 1
+	vsetivli	zero, 2, e64, m1, ta, ma
+	vor.vx	v8, v8, a3
+	vslidedown.vi	v9, v8, 1
+	sd	a1, 24(a0)
+	sd	a2, 8(a0)
+	vsetivli	zero, 1, e64, m1, ta, ma
+	vse64.v	v8, (a0)
+	addi	a0, a0, 16
+	vse64.v	v9, (a0)
+	ret
+func0000000000000004:                   # @func0000000000000004
+	lui	a0, 60166
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vor.vx	v10, v10, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v12, v10
+	lui	a0, 983039
+	slli	a0, a0, 16
+	vand.vx	v8, v8, a0
+	vor.vv	v8, v8, v12
+	ret

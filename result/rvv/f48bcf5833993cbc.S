@@ -1,0 +1,8 @@
+func000000000000003d:                   # @func000000000000003d
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vzext.vf4	v10, v9
+	vsll.vi	v8, v8, 8
+	vor.vv	v10, v8, v10
+	vmv.v.i	v11, 0
+	vwsubu.vv	v8, v11, v10
+	ret

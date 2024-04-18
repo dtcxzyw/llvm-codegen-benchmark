@@ -9,7 +9,17 @@ cmake ../llvm-project/llvm -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -G 
 cmake --build . -j -t llc
 cd ../..
 
-scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result
+mkdir -p build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -G Ninja -DLLVM_DIR=$(pwd)/../llvm/llvm-build/lib/cmake/llvm
+cmake --build . -j
+./vectorize ../dataset output
+cd ..
+
+scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result rv64gc
+scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result rvb23u64
+scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result rvv
+
 ret=$?
 if [ $PRE_COMMIT_MODE -eq 0 ]
 then

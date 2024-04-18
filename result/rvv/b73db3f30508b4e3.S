@@ -1,0 +1,11 @@
+func0000000000000018:                   # @func0000000000000018
+	lui	a0, 16
+	addiw	a0, a0, -16
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmv.v.x	v12, a0
+	lui	a1, 1048560
+	addiw	a1, a1, 15
+	vadd.vx	v12, v10, a1, v0.t
+	vmsgtu.vx	v0, v12, a0
+	vmerge.vvm	v8, v12, v8, v0
+	ret

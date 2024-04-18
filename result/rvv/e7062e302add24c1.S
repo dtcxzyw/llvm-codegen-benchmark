@@ -1,0 +1,59 @@
+func00000000000001b5:                   # @func00000000000001b5
+	li	a0, 10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vwaddu.wv	v10, v10, v9
+	lui	a0, 1048575
+	addi	a0, a0, -1232
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vx	v8, v10, a0
+	ret
+func00000000000001ef:                   # @func00000000000001ef
+	li	a0, 10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vwaddu.wv	v10, v10, v9
+	lui	a0, 15
+	addi	a0, a0, -1232
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vx	v8, v10, a0
+	ret
+func00000000000001a5:                   # @func00000000000001a5
+	li	a0, 10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vwaddu.wv	v10, v10, v9
+	lui	a0, 1048575
+	addi	a0, a0, -1232
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vx	v8, v10, a0
+	ret
+func00000000000001b7:                   # @func00000000000001b7
+	li	a0, 10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vwaddu.wv	v10, v10, v9
+	lui	a0, 1048575
+	addi	a0, a0, -1232
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vx	v8, v10, a0
+	ret
+func00000000000001ff:                   # @func00000000000001ff
+	li	a0, 10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v10, a0, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vwaddu.wv	v10, v10, v9
+	lui	a0, 16
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vx	v8, v10, a0
+	ret

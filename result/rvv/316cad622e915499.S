@@ -1,0 +1,25 @@
+.LCPI0_0:
+	.quad	-7070675565921424023            # 0x9ddfea08eb382d69
+func0000000000000000:                   # @func0000000000000000
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 6
+	vadd.vv	v8, v12, v8
+	vmacc.vx	v8, a0, v10
+	lui	a0, 81007
+	slli	a0, a0, 3
+	addi	a0, a0, -1607
+	vadd.vx	v8, v8, a0
+	ret
+func00000000000003c4:                   # @func00000000000003c4
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsll.vi	v12, v12, 3
+	vadd.vv	v10, v12, v10
+	lui	a0, 1048564
+	addi	a0, a0, -4
+	vmacc.vx	v10, a0, v8
+	lui	a0, 48
+	addi	a0, a0, 16
+	vadd.vx	v8, v10, a0
+	ret

@@ -1,0 +1,6 @@
+func0000000000000000:                   # @func0000000000000000
+	lui	a0, 1015808
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v12, v12, a0
+	vfmadd.vv	v8, v12, v10
+	ret

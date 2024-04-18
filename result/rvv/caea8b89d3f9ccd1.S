@@ -1,0 +1,8 @@
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.x.v	v12, v12
+	lui	a0, 273536
+	fmv.w.x	fa5, a0
+	vfdiv.vf	v10, v10, fa5
+	vfmacc.vv	v8, v12, v10
+	ret

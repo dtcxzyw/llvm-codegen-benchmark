@@ -1,0 +1,64 @@
+func0000000000000010:                   # @func0000000000000010
+	fli.s	fa5, 1.0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmfeq.vf	v0, v10, fa5
+	lui	a0, 524288
+	vor.vx	v10, v8, a0
+	vmerge.vvm	v8, v10, v8, v0
+	ret
+func0000000000000011:                   # @func0000000000000011
+	lui	a0, 264704
+	fmv.w.x	fa5, a0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfeq.vf	v0, v12, fa5
+	vsetvli	zero, zero, e8, m1, ta, mu
+	vor.vi	v8, v8, 4, v0.t
+	ret
+func000000000000001d:                   # @func000000000000001d
+	ld	a6, 0(a1)
+	ld	a7, 16(a1)
+	ld	a4, 8(a1)
+	ld	a1, 24(a1)
+	vsetivli	zero, 2, e32, mf2, ta, ma
+	vmfeq.vv	v0, v8, v8
+	vfirst.m	a5, v0
+	li	a2, -1
+	srli	a2, a2, 1
+	czero.nez	a5, a2, a5
+	vsetvli	zero, zero, e8, mf8, ta, ma
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
+	vslidedown.vi	v8, v8, 1
+	vmv.x.s	a3, v8
+	andi	a3, a3, 1
+	czero.eqz	a2, a2, a3
+	or	a1, a1, a2
+	or	a4, a4, a5
+	sd	a7, 16(a0)
+	sd	a6, 0(a0)
+	sd	a4, 8(a0)
+	sd	a1, 24(a0)
+	ret
+func0000000000000005:                   # @func0000000000000005
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmflt.vf	v0, v10, fa5
+	vor.vi	v8, v8, 2, v0.t
+	ret
+func0000000000000009:                   # @func0000000000000009
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmfgt.vf	v0, v10, fa5
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vrsub.vi	v10, v10, 2
+	vor.vv	v8, v10, v8
+	ret
+func0000000000000004:                   # @func0000000000000004
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmflt.vf	v0, v12, fa5
+	li	a0, 128
+	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vx	v8, v8, a0, v0.t
+	ret

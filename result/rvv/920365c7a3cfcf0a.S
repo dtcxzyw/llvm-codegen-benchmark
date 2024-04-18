@@ -1,0 +1,17 @@
+func0000000000000009:                   # @func0000000000000009
+	vsetivli	zero, 16, e32, m4, ta, ma
+	fli.s	fa5, inf
+	vmflt.vf	v20, v8, fa5
+	vmfgt.vf	v21, v8, fa5
+	vmnor.mm	v0, v21, v20
+	vfadd.vv	v8, v12, v16
+	vmerge.vim	v8, v8, 0, v0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vle64.v	v24, (a0)
+	fli.d	fa5, 1.0
+	vmflt.vf	v0, v8, fa5
+	vfadd.vv	v8, v16, v24
+	vfmerge.vfm	v8, v8, fa5, v0
+	ret

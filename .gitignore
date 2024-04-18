@@ -4,3 +4,6 @@ test.log
 patch.diff
 *.bench_tmp.S
 dataset/*.s
+build
+.vscode
+.cache

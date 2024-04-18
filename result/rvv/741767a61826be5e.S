@@ -1,0 +1,53 @@
+func000000000000000a:                   # @func000000000000000a
+	addi	sp, sp, -64
+	sd	ra, 56(sp)                      # 8-byte Folded Spill
+	sd	s0, 48(sp)                      # 8-byte Folded Spill
+	sd	s1, 40(sp)                      # 8-byte Folded Spill
+	sd	s2, 32(sp)                      # 8-byte Folded Spill
+	sd	s3, 24(sp)                      # 8-byte Folded Spill
+	sd	s4, 16(sp)                      # 8-byte Folded Spill
+	sd	s5, 8(sp)                       # 8-byte Folded Spill
+	sd	s6, 0(sp)                       # 8-byte Folded Spill
+	mv	s0, a0
+	ld	s3, 0(a1)
+	ld	s2, 8(a1)
+	ld	a0, 16(a1)
+	ld	a1, 24(a1)
+	vsetivli	zero, 1, e64, m1, ta, ma
+	vmv.x.s	s4, v9
+	vslidedown.vi	v9, v9, 1
+	vmv.x.s	a3, v9
+	vmv.x.s	s5, v8
+	vslidedown.vi	v8, v8, 1
+	vmv.x.s	a2, v8
+	call	__divti3
+	mv	s6, a0
+	mv	s1, a1
+	mv	a0, s3
+	mv	a1, s2
+	mv	a2, s5
+	mv	a3, s4
+	call	__divti3
+	sd	a1, 8(s0)
+	sd	a0, 0(s0)
+	sd	s1, 24(s0)
+	sd	s6, 16(s0)
+	ld	ra, 56(sp)                      # 8-byte Folded Reload
+	ld	s0, 48(sp)                      # 8-byte Folded Reload
+	ld	s1, 40(sp)                      # 8-byte Folded Reload
+	ld	s2, 32(sp)                      # 8-byte Folded Reload
+	ld	s3, 24(sp)                      # 8-byte Folded Reload
+	ld	s4, 16(sp)                      # 8-byte Folded Reload
+	ld	s5, 8(sp)                       # 8-byte Folded Reload
+	ld	s6, 0(sp)                       # 8-byte Folded Reload
+	addi	sp, sp, 64
+	ret
+func000000000000000e:                   # @func000000000000000e
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v12, v11
+	vwsll.vi	v14, v12, 8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vzext.vf4	v12, v10
+	vor.vv	v10, v14, v12
+	vdiv.vv	v8, v8, v10
+	ret

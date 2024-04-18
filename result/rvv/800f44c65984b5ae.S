@@ -1,0 +1,30 @@
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v8, v8, v10
+	vmv.v.i	v10, 9
+	li	a0, 3
+	vmacc.vx	v10, a0, v8
+	li	a0, 63
+	vsra.vx	v8, v10, a0
+	li	a0, 62
+	vsrl.vx	v8, v8, a0
+	vadd.vv	v8, v10, v8
+	vsra.vi	v8, v8, 2
+	ret
+.LCPI1_0:
+	.quad	1654928120671552141             # 0x16f77c5b896ec28d
+func000000000000002a:                   # @func000000000000002a
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v8, v8, v10
+	lui	a0, 1
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	addiw	a0, a0, -96
+	vmv.v.x	v10, a0
+	vmacc.vx	v10, a0, v8
+	vmulh.vx	v8, v10, a1
+	li	a0, 63
+	vsrl.vx	v10, v8, a0
+	vsra.vi	v8, v8, 17
+	vadd.vv	v8, v8, v10
+	ret

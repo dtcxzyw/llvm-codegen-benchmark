@@ -1,0 +1,10 @@
+func000000000000000a:                   # @func000000000000000a
+	lui	a0, 924416
+	addi	a0, a0, -1564
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v10, a0
+	lui	a0, 425
+	addi	a0, a0, 847
+	vmacc.vx	v10, a0, v8
+	vsra.vi	v8, v10, 19
+	ret

@@ -1,0 +1,28 @@
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfmul.vv	v8, v8, v10
+	vfcvt.rtz.xu.f.v	v8, v8
+	vmseq.vi	v0, v8, 0
+	ret
+func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vfmul.vv	v8, v8, v9
+	vfwcvt.rtz.xu.f.v	v10, v8
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsle.vi	v0, v10, 0
+	ret
+func0000000000000008:                   # @func0000000000000008
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmul.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m2, ta, ma
+	vfncvt.rtz.xu.f.w	v12, v8
+	li	a0, 63
+	vmsgtu.vx	v0, v12, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vfmul.vv	v8, v8, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vfncvt.rtz.xu.f.w	v12, v8
+	vmsleu.vi	v0, v12, 1
+	ret

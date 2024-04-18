@@ -1,0 +1,17 @@
+func0000000000000001:                   # @func0000000000000001
+	vmv1r.v	v10, v0
+	li	a0, 193
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	li	a0, 65
+	vmv1r.v	v0, v9
+	vmerge.vxm	v12, v12, a0, v0
+	li	a0, 1024
+	vmv.v.x	v14, a0
+	li	a0, 512
+	vmv1r.v	v0, v8
+	vmerge.vxm	v8, v14, a0, v0
+	vor.vv	v8, v8, v12
+	vmv1r.v	v0, v10
+	vmerge.vim	v8, v8, 0, v0
+	ret

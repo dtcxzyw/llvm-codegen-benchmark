@@ -1,0 +1,332 @@
+func000000000000001d:                   # @func000000000000001d
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func000000000000001f:                   # @func000000000000001f
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf4	v14, v12
+	vsll.vi	v10, v10, 8
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func000000000000001c:                   # @func000000000000001c
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v14, v12
+	vsll.vi	v10, v10, 8
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000004:                   # @func0000000000000004
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v14, v12
+	vsll.vi	v10, v10, 8
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000017:                   # @func0000000000000017
+	addi	sp, sp, -256
+	sd	ra, 248(sp)                     # 8-byte Folded Spill
+	sd	s0, 240(sp)                     # 8-byte Folded Spill
+	addi	s0, sp, 256
+	andi	sp, sp, -64
+	ld	a3, 32(a1)
+	sd	a3, 32(sp)
+	ld	a3, 24(a1)
+	sd	a3, 24(sp)
+	ld	a3, 16(a1)
+	sd	a3, 16(sp)
+	ld	a3, 8(a1)
+	sd	a3, 8(sp)
+	ld	a1, 0(a1)
+	sd	a1, 0(sp)
+	ld	a1, 32(a2)
+	sd	a1, 96(sp)
+	ld	a1, 24(a2)
+	sd	a1, 88(sp)
+	ld	a1, 16(a2)
+	sd	a1, 80(sp)
+	ld	a1, 8(a2)
+	sd	a1, 72(sp)
+	ld	a1, 0(a2)
+	sd	a1, 64(sp)
+	mv	a1, sp
+	vsetivli	zero, 8, e64, m4, ta, ma
+	addi	a2, sp, 64
+	vle64.v	v12, (a2)
+	vle64.v	v16, (a1)
+	vzext.vf2	v20, v8
+	li	a1, 32
+	vsll.vx	v8, v12, a1
+	vor.vv	v8, v8, v20
+	vadd.vv	v8, v8, v16
+	addi	a1, sp, 128
+	vse64.v	v8, (a1)
+	ld	a1, 160(sp)
+	sw	a1, 24(a0)
+	vmv.x.s	a2, v8
+	sw	a2, 0(a0)
+	srli	a1, a1, 32
+	sh	a1, 28(a0)
+	vsetivli	zero, 1, e64, m1, ta, ma
+	vslidedown.vi	v10, v8, 1
+	vmv.x.s	a1, v10
+	sh	a1, 6(a0)
+	srli	a2, a2, 32
+	sh	a2, 4(a0)
+	vsetivli	zero, 1, e64, m2, ta, ma
+	vslidedown.vi	v10, v8, 3
+	vmv.x.s	a2, v10
+	sh	a2, 18(a0)
+	vslidedown.vi	v8, v8, 2
+	vmv.x.s	a3, v8
+	sw	a3, 12(a0)
+	srli	a4, a1, 16
+	sh	a4, 8(a0)
+	srli	a1, a1, 32
+	sh	a1, 10(a0)
+	srli	a1, a2, 16
+	sh	a1, 20(a0)
+	srli	a2, a2, 32
+	sh	a2, 22(a0)
+	srli	a3, a3, 32
+	sh	a3, 16(a0)
+	addi	sp, s0, -256
+	ld	ra, 248(sp)                     # 8-byte Folded Reload
+	ld	s0, 240(sp)                     # 8-byte Folded Reload
+	addi	sp, sp, 256
+	ret
+func0000000000000024:                   # @func0000000000000024
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf4	v14, v12
+	vsll.vi	v10, v10, 2
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000036:                   # @func0000000000000036
+	addi	sp, sp, -256
+	sd	ra, 248(sp)                     # 8-byte Folded Spill
+	sd	s0, 240(sp)                     # 8-byte Folded Spill
+	addi	s0, sp, 256
+	andi	sp, sp, -64
+	ld	a3, 72(a1)
+	sw	a3, 36(sp)
+	ld	a3, 64(a1)
+	sw	a3, 32(sp)
+	ld	a3, 56(a1)
+	sw	a3, 28(sp)
+	ld	a3, 48(a1)
+	sw	a3, 24(sp)
+	ld	a3, 40(a1)
+	sw	a3, 20(sp)
+	ld	a3, 32(a1)
+	sw	a3, 16(sp)
+	ld	a3, 24(a1)
+	sw	a3, 12(sp)
+	ld	a3, 16(a1)
+	sw	a3, 8(sp)
+	ld	a3, 8(a1)
+	sw	a3, 4(sp)
+	ld	a1, 0(a1)
+	sw	a1, 0(sp)
+	ld	a1, 72(a2)
+	sw	a1, 100(sp)
+	ld	a1, 64(a2)
+	sw	a1, 96(sp)
+	ld	a1, 56(a2)
+	sw	a1, 92(sp)
+	ld	a1, 48(a2)
+	sw	a1, 88(sp)
+	ld	a1, 40(a2)
+	sw	a1, 84(sp)
+	ld	a1, 32(a2)
+	sw	a1, 80(sp)
+	ld	a1, 24(a2)
+	sw	a1, 76(sp)
+	ld	a1, 16(a2)
+	sw	a1, 72(sp)
+	ld	a1, 8(a2)
+	sw	a1, 68(sp)
+	ld	a1, 0(a2)
+	sw	a1, 64(sp)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	addi	a1, sp, 64
+	vle32.v	v12, (a1)
+	mv	a1, sp
+	vle32.v	v16, (a1)
+	vzext.vf2	v20, v8
+	vsll.vi	v8, v12, 16
+	vor.vv	v8, v8, v20
+	vadd.vv	v8, v8, v16
+	addi	a1, sp, 128
+	vse32.v	v8, (a1)
+	lw	a1, 164(sp)
+	sb	a1, 27(a0)
+	lw	a2, 160(sp)
+	sh	a2, 24(a0)
+	vmv.x.s	a3, v8
+	sh	a3, 0(a0)
+	srli	a4, a1, 8
+	sb	a4, 28(a0)
+	srli	a1, a1, 16
+	sb	a1, 29(a0)
+	srli	a2, a2, 16
+	sb	a2, 26(a0)
+	vsetivli	zero, 1, e32, m1, ta, ma
+	vslidedown.vi	v10, v8, 3
+	vmv.x.s	a5, v10
+	sb	a5, 9(a0)
+	vslidedown.vi	v10, v8, 2
+	vmv.x.s	a6, v10
+	sh	a6, 6(a0)
+	vslidedown.vi	v10, v8, 1
+	vmv.x.s	a4, v10
+	sb	a4, 3(a0)
+	srli	a3, a3, 16
+	sb	a3, 2(a0)
+	vsetivli	zero, 1, e32, m2, ta, ma
+	vslidedown.vi	v10, v8, 7
+	vmv.x.s	a3, v10
+	sb	a3, 21(a0)
+	vslidedown.vi	v10, v8, 6
+	vmv.x.s	a7, v10
+	sh	a7, 18(a0)
+	vslidedown.vi	v10, v8, 5
+	vmv.x.s	a2, v10
+	sb	a2, 15(a0)
+	vslidedown.vi	v8, v8, 4
+	vmv.x.s	t0, v8
+	sh	t0, 12(a0)
+	srli	a1, a5, 8
+	sb	a1, 10(a0)
+	srli	a5, a5, 16
+	sb	a5, 11(a0)
+	srli	a1, a6, 16
+	sb	a1, 8(a0)
+	srli	a1, a4, 8
+	sb	a1, 4(a0)
+	srli	a4, a4, 16
+	sb	a4, 5(a0)
+	srli	a1, a3, 8
+	sb	a1, 22(a0)
+	srli	a3, a3, 16
+	sb	a3, 23(a0)
+	srli	a1, a7, 16
+	sb	a1, 20(a0)
+	srli	a1, a2, 8
+	sb	a1, 16(a0)
+	srli	a2, a2, 16
+	sb	a2, 17(a0)
+	srli	a1, t0, 16
+	sb	a1, 14(a0)
+	addi	sp, s0, -256
+	ld	ra, 248(sp)                     # 8-byte Folded Reload
+	ld	s0, 240(sp)                     # 8-byte Folded Reload
+	addi	sp, sp, 256
+	ret
+func000000000000001e:                   # @func000000000000001e
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf4	v14, v12
+	vsll.vi	v10, v10, 8
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000016:                   # @func0000000000000016
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000025:                   # @func0000000000000025
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vadd.vv	v10, v10, v10
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000027:                   # @func0000000000000027
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vadd.vv	v10, v10, v10
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func000000000000003c:                   # @func000000000000003c
+	ld	a6, 24(a1)
+	ld	a7, 16(a1)
+	ld	t0, 8(a1)
+	ld	t1, 0(a1)
+	ld	t2, 8(a2)
+	ld	a4, 0(a2)
+	ld	a5, 24(a2)
+	ld	a2, 16(a2)
+	vsetivli	zero, 1, e64, m1, ta, ma
+	vmv.x.s	t3, v8
+	vslidedown.vi	v8, v8, 1
+	vmv.x.s	a3, v8
+	srli	a1, a2, 32
+	slli	a5, a5, 32
+	or	a1, a1, a5
+	srli	a5, a4, 32
+	slli	t2, t2, 32
+	or	a5, t2, a5
+	slli	a4, a4, 32
+	slli	a2, a2, 32
+	or	a2, a2, a3
+	or	a3, a4, t3
+	add	t1, t1, a3
+	sltu	a3, t1, a3
+	add	a5, a5, t0
+	add	a3, a3, a5
+	add	a7, a7, a2
+	sltu	a2, a7, a2
+	add	a1, a1, a6
+	add	a1, a1, a2
+	sd	a7, 16(a0)
+	sd	t1, 0(a0)
+	sd	a1, 24(a0)
+	sd	a3, 8(a0)
+	ret
+func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func000000000000003d:                   # @func000000000000003d
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func000000000000003f:                   # @func000000000000003f
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf4	v14, v12
+	vsll.vi	v10, v10, 6
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vsll.vi	v10, v10, 30
+	vor.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
+	ret

@@ -1,0 +1,18 @@
+func0000000000000001:                   # @func0000000000000001
+	fli.s	fa5, 0.5
+	fneg.s	fa5, fa5
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfadd.vf	v8, v8, fa5
+	vfabs.v	v8, v8
+	fli.s	fa5, 0.25
+	fneg.s	fa5, fa5
+	vfadd.vf	v8, v8, fa5
+	ret
+func0000000000000000:                   # @func0000000000000000
+	fli.d	fa5, 0.75
+	fneg.d	fa5, fa5
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfadd.vf	v8, v8, fa5
+	vfabs.v	v8, v8
+	vfadd.vf	v8, v8, fa5
+	ret

@@ -1,0 +1,23 @@
+func0000000000000003:                   # @func0000000000000003
+	li	a0, 255
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vx	v12, v10, a0
+	vmseq.vi	v10, v12, 0
+	vmv.v.i	v12, 0
+	vmerge.vim	v12, v12, 1, v0
+	vsll.vi	v12, v12, 4
+	vmv1r.v	v0, v10
+	vmerge.vvm	v8, v12, v8, v0
+	vor.vi	v8, v8, 4
+	ret
+func0000000000000002:                   # @func0000000000000002
+	li	a0, 17
+	slli	a0, a0, 11
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vand.vx	v10, v10, a0
+	lui	a0, 8
+	vmseq.vx	v0, v10, a0
+	vmv.v.i	v10, 2
+	vor.vi	v10, v8, 2, v0.t
+	vmv.v.v	v8, v10
+	ret

@@ -1,0 +1,16 @@
+func0000000000000010:                   # @func0000000000000010
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vmv.v.i	v10, 6
+	vwsll.vv	v12, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vzext.vf2	v10, v8
+	vor.vv	v8, v12, v10
+	ret
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vmv.v.i	v10, 5
+	vwsll.vv	v12, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vzext.vf2	v10, v8
+	vor.vv	v8, v12, v10
+	ret

@@ -1,0 +1,7 @@
+func000000000000008a:                   # @func000000000000008a
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	vsll.vi	v10, v10, 3
+	vadd.vv	v8, v10, v8
+	vmsgt.vi	v0, v8, 3
+	ret

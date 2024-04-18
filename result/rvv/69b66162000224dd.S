@@ -1,0 +1,15 @@
+func0000000000000009:                   # @func0000000000000009
+	vsetivli	zero, 4, e32, m1, ta, ma
+	li	a0, 63
+	vmseq.vx	v0, v10, a0
+	vadd.vi	v10, v10, 1
+	vmerge.vim	v10, v10, 0, v0
+	vwsubu.wv	v8, v8, v10
+	ret
+func0000000000000088:                   # @func0000000000000088
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmseq.vi	v0, v10, 0
+	vadd.vi	v10, v10, 2
+	vmerge.vim	v10, v10, 0, v0
+	vwsubu.wv	v8, v8, v10
+	ret

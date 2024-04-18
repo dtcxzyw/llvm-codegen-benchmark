@@ -1,0 +1,14 @@
+func000000000000000e:                   # @func000000000000000e
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsrl.vi	v9, v9, 31
+	vwsll.vv	v10, v9, v8
+	vmv2r.v	v8, v10
+	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 4, e8, mf4, ta, ma
+	vsrl.vi	v9, v9, 4
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v10, v9
+	vzext.vf4	v11, v8
+	vwsll.vv	v8, v10, v11
+	ret

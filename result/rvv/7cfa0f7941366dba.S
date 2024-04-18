@@ -1,0 +1,11 @@
+func0000000000000002:                   # @func0000000000000002
+	li	a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vx	v8, v8, a0
+	li	a1, -3
+	slli	a1, a1, 33
+	vadd.vx	v8, v8, a1
+	vsra.vx	v8, v8, a0
+	li	a0, 255
+	vminu.vx	v8, v8, a0
+	ret

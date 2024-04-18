@@ -1,0 +1,11 @@
+func0000000000000002:                   # @func0000000000000002
+	li	a0, 255
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vx	v0, v10, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vfwcvt.f.xu.v	v12, v10
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vfmul.vv	v8, v12, v8
+	ret

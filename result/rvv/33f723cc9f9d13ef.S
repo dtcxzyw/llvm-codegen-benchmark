@@ -1,0 +1,12 @@
+func00000000000000c4:                   # @func00000000000000c4
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v10, v9
+	li	a0, 16
+	vmv.v.x	v9, a0
+	vwsubu.vv	v12, v9, v10
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vzext.vf2	v10, v8
+	vsrl.vv	v8, v10, v12
+	li	a0, 512
+	vmsltu.vx	v0, v8, a0
+	ret

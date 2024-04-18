@@ -1,0 +1,19 @@
+func0000000000000003:                   # @func0000000000000003
+	li	a0, -15
+	slli	a0, a0, 11
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vor.vv	v8, v10, v8
+	li	a0, 32
+	vor.vx	v10, v8, a0
+	vmerge.vvm	v8, v10, v8, v0
+	ret
+func0000000000000000:                   # @func0000000000000000
+	li	a0, -512
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vor.vv	v8, v10, v8
+	lui	a0, 262144
+	vor.vx	v10, v8, a0
+	vmerge.vvm	v8, v10, v8, v0
+	ret

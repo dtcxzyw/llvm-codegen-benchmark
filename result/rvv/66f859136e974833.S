@@ -1,0 +1,11 @@
+func0000000000000000:                   # @func0000000000000000
+	fli.s	fa5, 0.5
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmv.v.f	v12, fa5
+	fneg.s	fa5, fa5
+	vfmerge.vfm	v12, v12, fa5, v0
+	lui	a0, 273536
+	fmv.w.x	fa5, a0
+	vfmul.vf	v8, v8, fa5
+	vfadd.vv	v8, v8, v12
+	ret

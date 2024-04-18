@@ -1,0 +1,143 @@
+func0000000000000008:                   # @func0000000000000008
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 16
+	vmseq.vx	v0, v8, a0
+	ret
+func0000000000000042:                   # @func0000000000000042
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 66
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000399:                   # @func0000000000000399
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 921
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 96
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfeq.vf	v0, v8, fa5
+	ret
+func00000000000000e1:                   # @func00000000000000e1
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 135
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func000000000000001e:                   # @func000000000000001e
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 120
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func00000000000003f7:                   # @func00000000000003f7
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 1007
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func00000000000000c3:                   # @func00000000000000c3
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 195
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func00000000000003c3:                   # @func00000000000003c3
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 963
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000499:                   # @func0000000000000499
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 153
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func00000000000000f9:                   # @func00000000000000f9
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 159
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000019:                   # @func0000000000000019
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 152
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func000000000000000f:                   # @func000000000000000f
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 240
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000310:                   # @func0000000000000310
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 776
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000066:                   # @func0000000000000066
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 102
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000402:                   # @func0000000000000402
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 64
+	vmseq.vx	v0, v8, a0
+	ret
+func00000000000007bd:                   # @func00000000000007bd
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 957
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func00000000000003bd:                   # @func00000000000003bd
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 957
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func0000000000000306:                   # @func0000000000000306
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 864
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret
+func00000000000000e4:                   # @func00000000000000e4
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v8, v8
+	li	a0, 39
+	vand.vx	v8, v8, a0
+	vmsne.vi	v0, v8, 0
+	ret

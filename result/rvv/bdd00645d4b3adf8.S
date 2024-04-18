@@ -1,0 +1,19 @@
+func00000000000000d4:                   # @func00000000000000d4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, -3
+	vmsleu.vi	v0, v8, 1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 1
+	vadd.vv	v8, v10, v8
+	vmseq.vi	v0, v8, 1
+	ret
+func00000000000000d1:                   # @func00000000000000d1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 6
+	vadd.vv	v8, v10, v8
+	vmseq.vi	v0, v8, 1
+	ret

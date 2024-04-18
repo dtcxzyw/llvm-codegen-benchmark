@@ -1,0 +1,19 @@
+func0000000000000041:                   # @func0000000000000041
+	bseti	a0, zero, 31
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	bseti	a0, zero, 32
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmv.v.i	v10, 0
+	vmerge.vvm	v9, v10, v9, v0
+	vmseq.vv	v0, v9, v8
+	ret
+func0000000000000141:                   # @func0000000000000141
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, -2
+	vmsleu.vi	v0, v12, 7
+	vmv.v.i	v12, 0
+	vmerge.vvm	v10, v12, v10, v0
+	vmseq.vv	v0, v10, v8
+	ret

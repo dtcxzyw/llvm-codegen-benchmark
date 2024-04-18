@@ -1,0 +1,45 @@
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwmulu.vv	v10, v8, v8
+	li	a0, 9
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmul.vx	v8, v10, a0
+	ret
+func000000000000000f:                   # @func000000000000000f
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vwmulu.vv	v10, v9, v9
+	li	a0, 3
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v8, v10, a0
+	ret
+func000000000000001f:                   # @func000000000000001f
+	vsetivli	zero, 1, e64, m1, ta, ma
+	vslidedown.vi	v9, v8, 1
+	vmv.x.s	a1, v9
+	vmv.x.s	a2, v8
+	mul	a3, a2, a2
+	mulhu	a6, a2, a2
+	mul	a4, a1, a1
+	mulhu	a1, a1, a1
+	li	a5, 19
+	mul	a1, a1, a5
+	mulhu	a2, a4, a5
+	add	a7, a2, a1
+	mul	a2, a6, a5
+	mulhu	a1, a3, a5
+	add	a1, a1, a2
+	mul	a4, a4, a5
+	mul	a3, a3, a5
+	sd	a3, 0(a0)
+	sd	a4, 16(a0)
+	sd	a1, 8(a0)
+	sd	a7, 24(a0)
+	ret
+func000000000000001e:                   # @func000000000000001e
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwmulu.vv	v10, v8, v8
+	li	a0, 3
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmul.vx	v8, v10, a0
+	ret
