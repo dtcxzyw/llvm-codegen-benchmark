@@ -42,9 +42,10 @@ func000000000000003c:                   # @func000000000000003c
 	slli	a1, a1, 13
 	srli	a5, a5, 51
 	or	a1, a1, a5
-	li	a4, 19
-	mul	a1, a1, a4
-	mul	a3, a3, a4
+	sh3add	a4, a1, a1
+	sh1add	a1, a4, a1
+	sh3add	a4, a3, a3
+	sh1add	a3, a4, a3
 	add	a0, a0, a3
 	add	a1, a1, a2
 	vsetivli	zero, 2, e64, m1, ta, ma

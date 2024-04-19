@@ -39,16 +39,17 @@ func000000000000007c:                   # @func000000000000007c
 	vnsrl.wi	v8, v10, 0
 	ret
 func00000000000000fc:                   # @func00000000000000fc
-	ld	a2, 0(a0)
-	ld	a3, 0(a1)
+	ld	a2, 0(a1)
+	ld	a3, 0(a0)
 	ld	a1, 16(a1)
 	ld	a0, 16(a0)
-	li	a4, 19
-	mul	a3, a3, a4
-	mul	a1, a1, a4
+	sh3add	a4, a2, a2
+	sh1add	a2, a4, a2
+	sh3add	a4, a1, a1
+	sh1add	a1, a4, a1
 	lui	a4, 1048538
 	srli	a4, a4, 13
-	add	a2, a2, a4
+	add	a3, a3, a4
 	add	a2, a2, a3
 	add	a0, a0, a4
 	add	a0, a0, a1

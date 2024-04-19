@@ -41,32 +41,36 @@ func000000000000006f:                   # @func000000000000006f
 	slli	a3, a2, 13
 	srli	a4, t0, 51
 	or	a3, a3, a4
-	srli	t0, a2, 51
+	srli	a2, a2, 51
 	slli	a4, a1, 13
 	srli	a5, t1, 51
 	or	a4, a4, a5
 	srli	a1, a1, 51
-	li	a5, 19
-	mul	a1, a1, a5
-	mulhu	a2, a4, a5
-	add	t1, a2, a1
-	mul	a2, t0, a5
-	mulhu	a1, a3, a5
-	add	a1, a1, a2
-	mul	a4, a4, a5
-	mul	a3, a3, a5
-	li	a2, -1
-	srli	a2, a2, 13
-	and	a5, a7, a2
-	and	a2, a6, a2
+	sh3add	a5, a1, a1
+	sh1add	a1, a5, a1
+	li	t0, 19
+	mulhu	a5, a4, t0
+	add	t1, a5, a1
+	sh3add	a5, a4, a4
+	sh1add	a4, a5, a4
+	sh3add	a5, a2, a2
+	sh1add	a2, a5, a2
+	mulhu	a5, a3, t0
+	add	a2, a2, a5
+	sh3add	a5, a3, a3
+	sh1add	a3, a5, a3
+	li	a5, -1
+	srli	a5, a5, 13
+	and	a1, a7, a5
+	and	a5, a6, a5
+	add	a5, a5, a3
+	sltu	a3, a5, a3
 	add	a2, a2, a3
-	sltu	a3, a2, a3
-	add	a1, a1, a3
-	add	a5, a5, a4
-	sltu	a3, a5, a4
+	add	a1, a1, a4
+	sltu	a3, a1, a4
 	add	a3, a3, t1
-	sd	a5, 16(a0)
-	sd	a2, 0(a0)
+	sd	a1, 16(a0)
+	sd	a5, 0(a0)
 	sd	a3, 24(a0)
-	sd	a1, 8(a0)
+	sd	a2, 8(a0)
 	ret

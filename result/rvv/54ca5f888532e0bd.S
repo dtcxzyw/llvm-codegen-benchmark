@@ -43,47 +43,51 @@ func000000000000002a:                   # @func000000000000002a
 func000000000000007e:                   # @func000000000000007e
 	ld	t0, 16(a1)
 	ld	a6, 24(a1)
-	ld	t2, 0(a1)
+	ld	t3, 0(a1)
 	ld	a7, 8(a1)
 	ld	a4, 0(a2)
-	ld	a1, 24(a2)
-	ld	a3, 16(a2)
-	ld	t1, 8(a2)
-	li	a2, 19
-	mul	a1, a1, a2
-	mulhu	a5, a3, a2
-	add	t3, a5, a1
-	mul	a5, t1, a2
-	mulhu	a1, a4, a2
-	add	a1, a1, a5
-	mul	a3, a3, a2
-	mul	a2, a2, a4
-	add	a1, a1, a7
-	add	a2, a2, t2
-	sltu	a4, a2, t2
-	add	a1, a1, a4
-	add	a6, a6, t3
-	add	a3, a3, t0
-	sltu	a4, a3, t0
+	ld	a1, 16(a2)
+	ld	a3, 24(a2)
+	ld	a2, 8(a2)
+	li	t1, 19
+	mulhu	t2, a1, t1
+	sh3add	a5, a3, a3
+	sh1add	t4, a5, a3
+	mulhu	a5, a4, t1
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a3, a1, a1
+	sh1add	a1, a3, a1
+	sh3add	a3, a4, a4
+	sh1add	a3, a3, a4
+	add	a5, a5, a7
+	add	a2, a2, a5
+	add	a3, a3, t3
+	sltu	a4, a3, t3
+	add	a2, a2, a4
+	add	a6, a6, t2
+	add	a6, a6, t4
+	add	a1, a1, t0
+	sltu	a4, a1, t0
 	add	a4, a4, a6
-	addi	a5, a3, 19
-	sltu	a3, a5, a3
-	add	a3, a3, a4
-	addi	a4, a2, 19
-	sltu	a2, a4, a2
-	add	a1, a1, a2
-	slli	a2, a1, 13
+	addi	a5, a1, 19
+	sltu	a1, a5, a1
+	add	a1, a1, a4
+	addi	a4, a3, 19
+	sltu	a3, a4, a3
+	add	a2, a2, a3
+	slli	a3, a2, 13
 	srli	a4, a4, 51
-	or	a2, a2, a4
-	slli	a4, a3, 13
+	or	a3, a3, a4
+	slli	a4, a1, 13
 	srli	a5, a5, 51
 	or	a4, a4, a5
+	srli	a2, a2, 51
 	srli	a1, a1, 51
-	srli	a3, a3, 51
-	sd	a3, 24(a0)
-	sd	a1, 8(a0)
+	sd	a1, 24(a0)
+	sd	a2, 8(a0)
 	sd	a4, 16(a0)
-	sd	a2, 0(a0)
+	sd	a3, 0(a0)
 	ret
 func000000000000006a:                   # @func000000000000006a
 	li	a0, 75

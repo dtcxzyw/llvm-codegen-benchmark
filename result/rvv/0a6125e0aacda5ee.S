@@ -19,25 +19,29 @@ func000000000000000f:                   # @func000000000000000f
 	ld	t0, 24(a1)
 	ld	t1, 16(a1)
 	ld	a3, 16(a2)
-	ld	a4, 8(a2)
-	ld	a5, 0(a2)
-	ld	t2, 24(a2)
-	li	a1, 19
-	mul	a4, a4, a1
-	mulhu	a2, a5, a1
-	add	t3, a2, a4
-	mul	a4, t2, a1
-	mulhu	a2, a3, a1
-	add	a2, a2, a4
-	mul	a5, a5, a1
-	mul	a1, a1, a3
-	add	t1, t1, a1
-	sltu	a1, t1, a1
-	add	a2, a2, t0
-	add	a1, a1, a2
-	add	a7, a7, a5
-	sltu	a2, a7, a5
-	add	a6, a6, t3
+	ld	a4, 0(a2)
+	ld	a5, 8(a2)
+	ld	a2, 24(a2)
+	li	t3, 19
+	mulhu	t2, a4, t3
+	sh3add	a1, a5, a5
+	sh1add	t4, a1, a5
+	mulhu	a5, a3, t3
+	sh3add	a1, a2, a2
+	sh1add	a1, a1, a2
+	sh3add	a2, a4, a4
+	sh1add	a2, a2, a4
+	sh3add	a4, a3, a3
+	sh1add	a3, a4, a3
+	add	t1, t1, a3
+	sltu	a3, t1, a3
+	add	a5, a5, t0
+	add	a1, a1, a5
+	add	a1, a1, a3
+	add	a7, a7, a2
+	sltu	a2, a7, a2
+	add	a6, a6, t2
+	add	a6, a6, t4
 	add	a2, a2, a6
 	not	a2, a2
 	not	a1, a1

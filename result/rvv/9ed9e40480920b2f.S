@@ -39,9 +39,10 @@ func000000000000001f:                   # @func000000000000001f
 	vmv.x.s	a3, v8
 	vslidedown.vi	v8, v8, 1
 	vmv.x.s	a4, v8
-	li	a5, 19
-	mul	a1, a1, a5
-	mul	a2, a2, a5
+	sh3add	a5, a1, a1
+	sh1add	a1, a5, a1
+	sh3add	a5, a2, a2
+	sh1add	a2, a5, a2
 	add	a2, a2, a4
 	add	a1, a1, a3
 	li	a3, -1

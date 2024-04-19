@@ -19,20 +19,24 @@ func000000000000001f:                   # @func000000000000001f
 	vmv.x.s	a1, v9
 	vmv.x.s	a2, v8
 	mul	a3, a2, a2
-	mulhu	a6, a2, a2
 	mul	a4, a1, a1
+	mulhu	a2, a2, a2
 	mulhu	a1, a1, a1
-	li	a5, 19
-	mul	a1, a1, a5
-	mulhu	a2, a4, a5
-	add	a7, a2, a1
-	mul	a2, a6, a5
-	mulhu	a1, a3, a5
-	add	a1, a1, a2
-	mul	a4, a4, a5
-	mul	a3, a3, a5
+	li	a6, 19
+	mulhu	a7, a4, a6
+	sh3add	a5, a1, a1
+	sh1add	a1, a5, a1
+	add	a7, a7, a1
+	mulhu	a5, a3, a6
+	sh3add	a1, a2, a2
+	sh1add	a1, a1, a2
+	add	a1, a1, a5
+	sh3add	a2, a4, a4
+	sh1add	a2, a2, a4
+	sh3add	a4, a3, a3
+	sh1add	a3, a4, a3
 	sd	a3, 0(a0)
-	sd	a4, 16(a0)
+	sd	a2, 16(a0)
 	sd	a1, 8(a0)
 	sd	a7, 24(a0)
 	ret

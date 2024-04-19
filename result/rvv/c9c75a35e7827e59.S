@@ -23,9 +23,10 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a3, a3, 13
 	and	a1, a1, a3
 	and	a2, a2, a3
-	li	a3, 19
-	mul	a2, a2, a3
-	mul	a1, a1, a3
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a3, a1, a1
+	sh1add	a1, a3, a1
 	sd	zero, 24(a0)
 	sd	zero, 8(a0)
 	sd	a1, 16(a0)
@@ -46,9 +47,10 @@ func000000000000003f:                   # @func000000000000003f
 	srli	a3, a3, 13
 	and	a1, a1, a3
 	and	a2, a2, a3
-	li	a3, 19
-	mul	a2, a2, a3
-	mul	a1, a1, a3
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a3, a1, a1
+	sh1add	a1, a3, a1
 	sd	zero, 24(a0)
 	sd	zero, 8(a0)
 	sd	a1, 16(a0)

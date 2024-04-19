@@ -10,26 +10,30 @@ func000000000000003f:                   # @func000000000000003f
 	ld	t4, 8(a2)
 	ld	t5, 0(a2)
 	ld	a5, 0(a3)
-	ld	a4, 24(a3)
-	ld	a1, 16(a3)
-	ld	t6, 8(a3)
+	ld	a4, 16(a3)
+	ld	a1, 24(a3)
+	ld	a3, 8(a3)
 	li	a2, 19
-	mul	a4, a4, a2
-	mulhu	a3, a1, a2
-	add	s0, a3, a4
-	mul	a4, t6, a2
-	mulhu	a3, a5, a2
-	add	a3, a3, a4
-	mul	a1, a1, a2
-	mul	a2, a2, a5
-	add	t5, t5, a2
-	sltu	a2, t5, a2
-	add	a3, a3, t4
+	mulhu	t6, a4, a2
+	sh3add	s0, a1, a1
+	sh1add	a1, s0, a1
+	mulhu	a2, a5, a2
+	sh3add	s0, a3, a3
+	sh1add	a3, s0, a3
+	sh3add	s0, a4, a4
+	sh1add	a4, s0, a4
+	sh3add	s0, a5, a5
+	sh1add	a5, s0, a5
+	add	t5, t5, a5
+	sltu	a5, t5, a5
+	add	a2, a2, t4
 	add	a2, a2, a3
-	add	t3, t3, a1
-	sltu	a1, t3, a1
-	add	t2, t2, s0
+	add	a2, a2, a5
+	add	t3, t3, a4
+	sltu	a3, t3, a4
+	add	t2, t2, t6
 	add	a1, a1, t2
+	add	a1, a1, a3
 	not	a1, a1
 	not	a2, a2
 	not	a3, t3

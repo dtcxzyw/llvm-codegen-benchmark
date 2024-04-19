@@ -23,9 +23,10 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 13
 	srli	a3, a3, 51
 	or	a2, a2, a3
-	li	a3, 19
-	mul	a2, a2, a3
-	mul	a3, a3, a4
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a3, a4, a4
+	sh1add	a3, a3, a4
 	add	a1, a1, a3
 	add	a2, a2, a6
 	addi	a2, a2, 19

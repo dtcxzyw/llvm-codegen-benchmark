@@ -48,27 +48,31 @@ func000000000000001b:                   # @func000000000000001b
 	sltu	a1, a7, a1
 	add	a3, a3, a6
 	add	a1, a1, a3
-	slli	a3, a1, 13
+	srli	a3, a1, 51
+	slli	a1, a1, 13
 	srli	a4, a7, 51
-	or	a3, a3, a4
-	srli	a6, a1, 51
-	slli	a4, a2, 13
+	or	a1, a1, a4
+	srli	a4, a2, 51
+	slli	a2, a2, 13
 	srli	a5, t1, 51
-	or	a4, a4, a5
-	srli	a2, a2, 51
-	li	a5, 19
-	mul	a2, a2, a5
-	mulhu	a1, a4, a5
-	add	a7, a1, a2
-	mul	a2, a6, a5
-	mulhu	a1, a3, a5
-	add	a1, a1, a2
-	mul	a4, a4, a5
-	mul	a3, a3, a5
-	sd	a3, 16(a0)
-	sd	a4, 0(a0)
+	or	a2, a2, a5
+	sh3add	a5, a2, a2
+	sh1add	a6, a5, a2
+	sh3add	a5, a4, a4
+	sh1add	a4, a5, a4
+	li	a7, 19
+	mulhu	a2, a2, a7
+	add	a2, a2, a4
+	sh3add	a4, a1, a1
+	sh1add	a4, a4, a1
+	sh3add	a5, a3, a3
+	sh1add	a3, a5, a3
+	mulhu	a1, a1, a7
+	add	a1, a1, a3
 	sd	a1, 24(a0)
-	sd	a7, 8(a0)
+	sd	a4, 16(a0)
+	sd	a2, 8(a0)
+	sd	a6, 0(a0)
 	ret
 func0000000000000019:                   # @func0000000000000019
 	li	a0, 51
