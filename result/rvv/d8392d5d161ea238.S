@@ -207,24 +207,6 @@ func000000000000003f:                   # @func000000000000003f
 	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 8
 	ret
-func0000000000000032:                   # @func0000000000000032
-	ld	a6, 16(a1)
-	ld	a1, 0(a1)
-	ld	a4, 16(a2)
-	ld	a5, 0(a2)
-	ld	a3, 8(a2)
-	ld	a2, 24(a2)
-	srli	a4, a4, 63
-	srli	a5, a5, 63
-	or	a1, a1, a3
-	sh1add	a1, a1, a5
-	or	a2, a2, a6
-	sh1add	a2, a2, a4
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
-	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8

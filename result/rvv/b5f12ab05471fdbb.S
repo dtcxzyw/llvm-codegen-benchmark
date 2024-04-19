@@ -39,47 +39,6 @@ func0000000000000051:                   # @func0000000000000051
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v0, v8, a0
 	ret
-func0000000000000154:                   # @func0000000000000154
-	ld	a1, 24(a0)
-	ld	a2, 16(a0)
-	ld	a3, 8(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a4, v9
-	vmv.x.s	a5, v8
-	add	a0, a0, a5
-	sltu	a5, a0, a5
-	add	a3, a3, a5
-	add	a2, a2, a4
-	sltu	a4, a2, a4
-	add	a1, a1, a4
-	bseti	a4, zero, 63
-	add	a5, a2, a4
-	sltu	a2, a5, a2
-	add	a1, a1, a2
-	add	a4, a4, a0
-	sltu	a0, a4, a0
-	add	a0, a0, a3
-	snez	a0, a0
-	vmv.s.x	v8, a0
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	snez	a0, a1
-	vmv.s.x	v9, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vmv.s.x	v9, zero
-	vmerge.vim	v9, v9, 1, v0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vslideup.vi	v8, v9, 1
-	vmsne.vi	v0, v8, 0
-	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10

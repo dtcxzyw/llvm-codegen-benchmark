@@ -1,21 +1,3 @@
-func0000000000000005:                   # @func0000000000000005
-	ld	a6, 0(a1)
-	ld	a7, 16(a1)
-	ld	t0, 8(a2)
-	ld	a2, 24(a2)
-	ld	a5, 16(a3)
-	ld	a3, 0(a3)
-	ld	a4, 8(a1)
-	ld	a1, 24(a1)
-	and	a2, a2, a5
-	and	a3, a3, t0
-	or	a3, a3, a4
-	or	a1, a1, a2
-	sd	a7, 16(a0)
-	sd	a6, 0(a0)
-	sd	a1, 24(a0)
-	sd	a3, 8(a0)
-	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 7

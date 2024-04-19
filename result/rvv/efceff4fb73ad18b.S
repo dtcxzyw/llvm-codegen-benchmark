@@ -17,16 +17,3 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vim	v8, v8, 1, v0
 	vsub.vv	v8, v10, v8
 	ret
-func00000000000000a0:                   # @func00000000000000a0
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmsgt.vi	v0, v8, -5
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v8, (a0)
-	vle64.v	v9, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v9, 1
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
-	ret

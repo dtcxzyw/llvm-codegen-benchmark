@@ -55,20 +55,6 @@ func0000000000000026:                   # @func0000000000000026
 	vsra.vi	v8, v8, 31
 	vand.vv	v8, v8, v9
 	ret
-func000000000000003a:                   # @func000000000000003a
-	addi	a1, a0, 8
-	addi	a0, a0, 24
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v10, v9, 1
-	vsetvli	zero, zero, e32, mf2, ta, ma
-	vmsgt.vi	v0, v8, -5
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vvm	v8, v8, v10, v0
-	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 3

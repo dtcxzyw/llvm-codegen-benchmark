@@ -208,32 +208,6 @@ func0000000000000038:                   # @func0000000000000038
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func000000000000003a:                   # @func000000000000003a
-	ld	a6, 8(a0)
-	ld	a7, 0(a0)
-	ld	a4, 0(a1)
-	ld	a5, 24(a0)
-	ld	a1, 16(a1)
-	ld	a0, 16(a0)
-	srli	a2, a4, 32
-	slli	a4, a4, 32
-	srli	a3, a1, 32
-	slli	a1, a1, 32
-	or	a0, a0, a1
-	or	a3, a3, a5
-	or	a1, a4, a7
-	or	a2, a2, a6
-	slli	a2, a2, 32
-	srli	a1, a1, 32
-	or	a1, a1, a2
-	slli	a3, a3, 32
-	srli	a0, a0, 32
-	or	a0, a0, a3
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v8, a1
-	vslideup.vi	v8, v9, 1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -242,24 +216,6 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v8, v10, a0
-	ret
-func000000000000002a:                   # @func000000000000002a
-	ld	a2, 8(a0)
-	ld	a3, 24(a0)
-	ld	a4, 16(a1)
-	ld	a1, 0(a1)
-	ld	a5, 0(a0)
-	ld	a0, 16(a0)
-	or	a3, a3, a4
-	or	a1, a1, a2
-	srli	a5, a5, 63
-	sh1add	a1, a1, a5
-	srli	a0, a0, 63
-	sh1add	a0, a3, a0
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v8, a1
-	vslideup.vi	v8, v9, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, ma

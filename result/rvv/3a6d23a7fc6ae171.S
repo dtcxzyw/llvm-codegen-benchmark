@@ -49,28 +49,3 @@ func0000000000000060:                   # @func0000000000000060
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func000000000000001e:                   # @func000000000000001e
-	ld	a2, 0(a0)
-	ld	a0, 16(a0)
-	ld	a3, 16(a1)
-	ld	a1, 0(a1)
-	lui	a4, 244141
-	addi	a4, a4, -1536
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmseq.vx	v0, v8, a4
-	vfirst.m	a4, v0
-	czero.eqz	a1, a1, a4
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	andi	a4, a4, 1
-	czero.nez	a3, a3, a4
-	add	a0, a0, a3
-	add	a1, a1, a2
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vslideup.vi	v8, v9, 1
-	ret

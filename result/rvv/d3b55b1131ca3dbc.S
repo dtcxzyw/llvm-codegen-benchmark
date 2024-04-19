@@ -7,19 +7,3 @@ func000000000000000d:                   # @func000000000000000d
 	vsub.vv	v8, v9, v8
 	vadd.vi	v8, v8, 6
 	ret
-func000000000000000f:                   # @func000000000000000f
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	li	a0, -1
-	srli	a0, a0, 8
-	vand.vx	v9, v9, a0
-	vand.vx	v8, v8, a0
-	vsub.vv	v8, v9, v8
-	li	a0, 4
-	bseti	a0, a0, 58
-	vadd.vx	v8, v8, a0
-	ret

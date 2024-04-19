@@ -22,34 +22,6 @@ func0000000000000001:                   # @func0000000000000001
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	bclri	a1, a1, 63
-	bclri	a0, a0, 63
-	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 32
-	sltu	a0, a2, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vmv.s.x	v9, zero
-	vmerge.vim	v9, v9, 1, v0
-	sltu	a0, a2, a1
-	vmv.s.x	v10, a0
-	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vslideup.vi	v10, v9, 1
-	vmsne.vi	v0, v10, 0
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vvm	v8, v9, v8, v0
-	ret
 func0000000000000021:                   # @func0000000000000021
 	addi	sp, sp, -128
 	sd	ra, 120(sp)                     # 8-byte Folded Spill

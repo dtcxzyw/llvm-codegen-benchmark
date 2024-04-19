@@ -1,15 +1,3 @@
-func0000000000000000:                   # @func0000000000000000
-	ld	a2, 16(a0)
-	ld	a0, 0(a0)
-	ld	a3, 0(a1)
-	ld	a1, 16(a1)
-	sh1add	a0, a3, a0
-	sh1add	a1, a1, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v8, a0
-	vslideup.vi	v8, v9, 1
-	ret
 func000000000000003c:                   # @func000000000000003c
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma

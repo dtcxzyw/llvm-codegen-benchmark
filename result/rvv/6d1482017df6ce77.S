@@ -24,25 +24,6 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v8, v10, 0
 	vxor.vi	v8, v8, 7
 	ret
-func0000000000000000:                   # @func0000000000000000
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	li	a2, -1
-	srli	a2, a2, 32
-	sll	a3, a2, a1
-	addi	a1, a1, -64
-	slti	a1, a1, 0
-	czero.eqz	a1, a3, a1
-	sll	a2, a2, a0
-	addi	a0, a0, -64
-	slti	a0, a0, 0
-	czero.eqz	a0, a2, a0
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v8, a0
-	vmv.s.x	v9, a1
-	vslideup.vi	v9, v8, 1
-	vnot.v	v8, v9
-	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1

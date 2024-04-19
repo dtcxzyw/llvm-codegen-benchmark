@@ -82,36 +82,6 @@ func000000000000000d:                   # @func000000000000000d
 	vmul.vv	v8, v12, v8
 	vsll.vi	v8, v8, 2
 	ret
-func000000000000000c:                   # @func000000000000000c
-	ld	a7, 16(a1)
-	ld	a6, 24(a1)
-	ld	a4, 0(a1)
-	ld	a1, 8(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a5, v9
-	vmv.x.s	a3, v8
-	mul	a1, a1, a3
-	mulhu	a2, a3, a4
-	add	a1, a1, a2
-	slli	t0, a1, 40
-	mul	a2, a5, a6
-	mulhu	a1, a5, a7
-	add	a1, a1, a2
-	slli	a1, a1, 40
-	mul	a3, a3, a4
-	mul	a2, a5, a7
-	srli	a4, a2, 24
-	or	a1, a1, a4
-	srli	a4, a3, 24
-	or	a4, t0, a4
-	slli	a2, a2, 40
-	slli	a3, a3, 40
-	sd	a3, 0(a0)
-	sd	a2, 16(a0)
-	sd	a4, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10

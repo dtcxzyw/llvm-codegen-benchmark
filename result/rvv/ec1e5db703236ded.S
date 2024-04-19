@@ -67,38 +67,6 @@ func000000000000000a:                   # @func000000000000000a
 	vsub.vv	v8, v10, v8
 	vadd.vi	v8, v8, 2
 	ret
-func000000000000000e:                   # @func000000000000000e
-	ld	a6, 24(a1)
-	ld	a7, 24(a2)
-	ld	t0, 8(a1)
-	ld	a3, 0(a1)
-	ld	a4, 0(a2)
-	ld	t1, 8(a2)
-	ld	t2, 16(a1)
-	ld	a2, 16(a2)
-	sltu	a5, a4, a3
-	sub	a1, t1, t0
-	sub	a1, a1, a5
-	sub	a4, a4, a3
-	lui	t0, 8
-	add	a5, a4, t0
-	sltu	a4, a5, a4
-	bseti	a3, zero, 63
-	add	a1, a1, a3
-	add	t1, a1, a4
-	sltu	a4, a2, t2
-	sub	a1, a7, a6
-	sub	a1, a1, a4
-	sub	a2, a2, t2
-	add	t0, t0, a2
-	sltu	a2, t0, a2
-	add	a1, a1, a3
-	add	a1, a1, a2
-	sd	t0, 16(a0)
-	sd	a5, 0(a0)
-	sd	a1, 24(a0)
-	sd	t1, 8(a0)
-	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v10, v8

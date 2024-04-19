@@ -53,25 +53,3 @@ func00000000000000a0:                   # @func00000000000000a0
 	vadd.vv	v8, v12, v10
 	vadd.vi	v8, v8, -1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	addi	a2, a1, 8
-	addi	a1, a1, 24
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v8, (a1)
-	vle64.v	v9, (a2)
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v8, 1
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v8, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v10, 1
-	vadd.vv	v8, v9, v8
-	lui	a0, 960284
-	addi	a0, a0, -1545
-	slli.uw	a0, a0, 12
-	addi	a0, a0, -317
-	slli	a0, a0, 19
-	vadd.vx	v8, v8, a0
-	ret

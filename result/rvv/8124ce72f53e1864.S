@@ -21,16 +21,6 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v9
 	ret
-func0000000000000006:                   # @func0000000000000006
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v10, a0
-	vslideup.vi	v10, v9, 1
-	vand.vi	v8, v8, 1
-	vor.vv	v8, v8, v10
-	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0

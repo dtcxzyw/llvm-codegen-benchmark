@@ -21,35 +21,6 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vi	v10, v10, -8
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000003b:                   # @func000000000000003b
-	ld	a6, 24(a1)
-	ld	a7, 16(a1)
-	ld	t0, 8(a1)
-	ld	a5, 0(a2)
-	ld	a4, 0(a3)
-	ld	a1, 0(a1)
-	ld	a2, 16(a2)
-	ld	a3, 16(a3)
-	sub	a4, a4, a5
-	lui	a5, 8
-	add	a4, a4, a5
-	sub	a3, a3, a2
-	add	a3, a3, a5
-	li	a2, -1
-	srli	a2, a2, 8
-	and	a3, a3, a2
-	and	a2, a2, a4
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, t0
-	add	a7, a7, a3
-	sltu	a3, a7, a3
-	add	a3, a3, a6
-	sd	a7, 16(a0)
-	sd	a1, 0(a0)
-	sd	a3, 24(a0)
-	sd	a2, 8(a0)
-	ret
 func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v12, v10

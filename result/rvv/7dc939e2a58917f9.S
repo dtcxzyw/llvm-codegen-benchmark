@@ -1,23 +1,3 @@
-func0000000000000014:                   # @func0000000000000014
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	snez	a5, a4
-	neg	a5, a5
-	sub	a5, a5, a1
-	snez	a1, a3
-	neg	a1, a1
-	sub	a1, a1, a2
-	neg	a2, a4
-	neg	a3, a3
-	sd	a3, 0(a0)
-	sd	a2, 16(a0)
-	sd	a1, 8(a0)
-	sd	a5, 24(a0)
-	ret
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v12, v10
@@ -32,26 +12,6 @@ func000000000000001d:                   # @func000000000000001d
 	vsll.vi	v8, v8, 8
 	vor.vv	v8, v8, v12
 	vrsub.vi	v8, v8, 0
-	ret
-func0000000000000015:                   # @func0000000000000015
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	snez	a5, a4
-	neg	a5, a5
-	sub	a5, a5, a1
-	snez	a1, a3
-	neg	a1, a1
-	sub	a1, a1, a2
-	neg	a2, a4
-	neg	a3, a3
-	sd	a3, 0(a0)
-	sd	a2, 16(a0)
-	sd	a1, 8(a0)
-	sd	a5, 24(a0)
 	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e64, m2, ta, ma

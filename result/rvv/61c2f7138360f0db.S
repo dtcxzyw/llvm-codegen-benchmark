@@ -47,17 +47,6 @@ func0000000000000086:                   # @func0000000000000086
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
 	ret
-func00000000000000c6:                   # @func00000000000000c6
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v10, a0
-	vslideup.vi	v10, v9, 1
-	vmsle.vi	v9, v10, 2
-	vmsne.vi	v8, v8, 2
-	vmor.mm	v0, v9, v8
-	ret
 func0000000000000066:                   # @func0000000000000066
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma

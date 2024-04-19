@@ -22,35 +22,3 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 32
 	vsrl.vx	v8, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
-	ld	a6, 0(a3)
-	ld	a3, 16(a3)
-	ld	a5, 16(a2)
-	ld	a2, 0(a2)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	add	a3, a3, a5
-	add	a2, a2, a6
-	mulhu	a2, a2, a4
-	mulhu	a1, a3, a1
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a1, 16(a0)
-	sd	a2, 0(a0)
-	ret
-func000000000000001c:                   # @func000000000000001c
-	ld	a6, 0(a3)
-	ld	a3, 16(a3)
-	ld	a5, 16(a2)
-	ld	a2, 0(a2)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	add	a3, a3, a5
-	add	a2, a2, a6
-	mulhu	a2, a2, a4
-	mulhu	a1, a3, a1
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a1, 16(a0)
-	sd	a2, 0(a0)
-	ret

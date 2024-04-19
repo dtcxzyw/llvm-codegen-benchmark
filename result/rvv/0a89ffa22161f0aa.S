@@ -31,32 +31,6 @@ func000000000000000b:                   # @func000000000000000b
 	vand.vi	v8, v8, 1
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000007:                   # @func0000000000000007
-	ld	a6, 8(a1)
-	ld	a7, 24(a1)
-	ld	a4, 16(a1)
-	ld	a1, 0(a1)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vsll.vi	v8, v8, 5
-	vmv.x.s	a5, v8
-	lui	t0, 524288
-	addiw	a2, t0, -32
-	and	a5, a5, a2
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	and	a2, a2, a3
-	addiw	t0, t0, 31
-	and	a1, a1, t0
-	and	a3, a4, t0
-	or	a2, a2, a3
-	or	a1, a1, a5
-	srli	a4, a4, 32
-	sw	a4, 16(a0)
-	sw	a7, 20(a0)
-	sw	a6, 8(a0)
-	sd	a1, 0(a0)
-	sw	a2, 12(a0)
-	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v10, v10, 2

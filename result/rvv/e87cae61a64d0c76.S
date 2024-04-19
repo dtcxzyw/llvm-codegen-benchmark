@@ -14,31 +14,6 @@ func0000000000000011:                   # @func0000000000000011
 	vsetvli	zero, zero, e8, m1, ta, mu
 	vor.vi	v8, v8, 4, v0.t
 	ret
-func000000000000001d:                   # @func000000000000001d
-	ld	a6, 0(a1)
-	ld	a7, 16(a1)
-	ld	a4, 8(a1)
-	ld	a1, 24(a1)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmfeq.vv	v0, v8, v8
-	vfirst.m	a5, v0
-	li	a2, -1
-	srli	a2, a2, 1
-	czero.nez	a5, a2, a5
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	andi	a3, a3, 1
-	czero.eqz	a2, a2, a3
-	or	a1, a1, a2
-	or	a4, a4, a5
-	sd	a7, 16(a0)
-	sd	a6, 0(a0)
-	sd	a4, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000005:                   # @func0000000000000005
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, mu

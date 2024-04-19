@@ -92,17 +92,6 @@ func0000000000000018:                   # @func0000000000000018
 	li	a0, 39
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vslideup.vi	v9, v8, 1
-	lui	a0, 122
-	addi	a0, a0, 288
-	vmsgtu.vx	v0, v9, a0
-	ret
 func0000000000000036:                   # @func0000000000000036
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma

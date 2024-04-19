@@ -6,40 +6,6 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vx	v8, v8, a0
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000044:                   # @func0000000000000044
-	ld	a2, 8(a0)
-	ld	a3, 16(a0)
-	ld	a4, 16(a1)
-	ld	a5, 0(a0)
-	ld	a0, 24(a0)
-	ld	a1, 0(a1)
-	add	a3, a3, a4
-	sltu	a4, a3, a4
-	add	a0, a0, a4
-	add	a5, a5, a1
-	sltu	a1, a5, a1
-	add	a1, a1, a2
-	seqz	a2, a5
-	sub	a1, a1, a2
-	seqz	a2, a3
-	sub	a0, a0, a2
-	seqz	a0, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v8, a0
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	seqz	a0, a1
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	ret
 func000000000000005a:                   # @func000000000000005a
 	li	a0, 2047
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,21 +1,3 @@
-func0000000000000014:                   # @func0000000000000014
-	ld	a6, 16(a2)
-	ld	a5, 0(a1)
-	ld	a4, 0(a3)
-	ld	a1, 16(a1)
-	ld	a2, 0(a2)
-	ld	a3, 16(a3)
-	add	a5, a5, a4
-	sltu	a4, a5, a4
-	add	a2, a2, a4
-	add	a1, a1, a3
-	sltu	a3, a1, a3
-	add	a3, a3, a6
-	sd	a1, 16(a0)
-	sd	a5, 0(a0)
-	sd	a3, 24(a0)
-	sd	a2, 8(a0)
-	ret
 func000000000000001e:                   # @func000000000000001e
 	addi	sp, sp, -320
 	sd	ra, 312(sp)                     # 8-byte Folded Spill

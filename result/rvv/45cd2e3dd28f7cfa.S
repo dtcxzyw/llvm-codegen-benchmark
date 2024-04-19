@@ -84,46 +84,6 @@ func0000000000000035:                   # @func0000000000000035
 	li	a0, 120
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
-	ld	a6, 0(a1)
-	ld	a1, 16(a1)
-	ld	a4, 24(a2)
-	ld	a5, 8(a2)
-	ld	a3, 0(a2)
-	ld	a2, 16(a2)
-	add	a1, a1, a4
-	add	a5, a5, a6
-	seqz	a4, a3
-	sub	a5, a5, a4
-	seqz	a4, a2
-	sub	a1, a1, a4
-	addi	a3, a3, -1
-	addi	a2, a2, -1
-	sd	a2, 16(a0)
-	sd	a3, 0(a0)
-	sd	a1, 24(a0)
-	sd	a5, 8(a0)
-	ret
-func0000000000000024:                   # @func0000000000000024
-	ld	a6, 0(a2)
-	ld	a2, 16(a2)
-	ld	a4, 24(a1)
-	ld	a5, 8(a1)
-	ld	a3, 0(a1)
-	ld	a1, 16(a1)
-	add	a2, a2, a4
-	add	a5, a5, a6
-	seqz	a4, a3
-	sub	a5, a5, a4
-	seqz	a4, a1
-	sub	a2, a2, a4
-	addi	a3, a3, -1
-	addi	a1, a1, -1
-	sd	a1, 16(a0)
-	sd	a3, 0(a0)
-	sd	a2, 24(a0)
-	sd	a5, 8(a0)
-	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v9, v9, 4
@@ -142,27 +102,6 @@ func0000000000000019:                   # @func0000000000000019
 	vadd.vv	v10, v10, v10
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 4
-	ret
-func000000000000002c:                   # @func000000000000002c
-	ld	a6, 0(a2)
-	ld	a2, 16(a2)
-	ld	a4, 24(a1)
-	ld	a5, 8(a1)
-	ld	a3, 16(a1)
-	ld	a1, 0(a1)
-	add	a7, a4, a2
-	add	a5, a5, a6
-	bseti	a4, zero, 31
-	add	a2, a1, a4
-	sltu	a1, a2, a1
-	add	a1, a1, a5
-	add	a4, a4, a3
-	sltu	a3, a4, a3
-	add	a3, a3, a7
-	sd	a4, 16(a0)
-	sd	a2, 0(a0)
-	sd	a3, 24(a0)
-	sd	a1, 8(a0)
 	ret
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e32, m2, ta, ma

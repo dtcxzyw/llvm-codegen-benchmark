@@ -41,36 +41,6 @@ func0000000000000016:                   # @func0000000000000016
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
-	vmv1r.v	v8, v0
-	ld	a1, 0(a0)
-	ld	a2, 24(a0)
-	ld	a3, 8(a0)
-	ld	a0, 16(a0)
-	addi	a4, a1, -2
-	sltu	a1, a4, a1
-	add	a1, a1, a3
-	addi	a3, a0, -2
-	sltu	a0, a3, a0
-	add	a0, a0, a2
-	seqz	a0, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vmv.s.x	v9, zero
-	vmerge.vim	v9, v9, 1, v0
-	seqz	a0, a1
-	vmv.s.x	v10, a0
-	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vslideup.vi	v10, v9, 1
-	vmsne.vi	v9, v10, 0
-	vmor.mm	v0, v8, v9
-	ret
 func0000000000000034:                   # @func0000000000000034
 	li	a0, 22
 	vsetivli	zero, 8, e32, m2, ta, ma

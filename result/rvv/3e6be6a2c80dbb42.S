@@ -28,25 +28,6 @@ func0000000000000031:                   # @func0000000000000031
 	vmv.v.x	v8, a0
 	vsll.vi	v8, v10, 8, v0.t
 	ret
-func0000000000000026:                   # @func0000000000000026
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmsle.vi	v0, v8, -1
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	andi	a3, a3, 1
-	czero.eqz	a1, a1, a3
-	vfirst.m	a3, v0
-	czero.nez	a2, a2, a3
-	sd	zero, 16(a0)
-	sd	zero, 0(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000038:                   # @func0000000000000038
 	li	a0, 128
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -55,25 +36,6 @@ func0000000000000038:                   # @func0000000000000038
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.x	v8, a0
 	vsll.vi	v8, v10, 4, v0.t
-	ret
-func000000000000002a:                   # @func000000000000002a
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmsgt.vi	v0, v8, 0
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	andi	a3, a3, 1
-	czero.eqz	a1, a1, a3
-	vfirst.m	a3, v0
-	czero.nez	a2, a2, a3
-	sd	zero, 16(a0)
-	sd	zero, 0(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 8, e8, mf2, ta, ma

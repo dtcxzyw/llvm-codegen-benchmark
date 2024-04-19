@@ -53,47 +53,6 @@ func000000000000007f:                   # @func000000000000007f
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v8, v10, 13
 	ret
-func000000000000003d:                   # @func000000000000003d
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vadd.vi	v8, v8, -1
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a2, v9
-	zext.w	a1, a2
-	vmv.x.s	a3, v8
-	zext.w	a4, a3
-	li	a7, -1
-	sll	a6, a7, a3
-	not	a3, a4
-	srli	a5, a7, 1
-	srl	a3, a5, a3
-	or	t0, a6, a3
-	addi	a3, a4, -64
-	slti	a3, a3, 0
-	czero.eqz	t0, t0, a3
-	sll	a4, a7, a4
-	czero.nez	a4, a4, a3
-	or	t0, t0, a4
-	sll	a4, a7, a2
-	not	a2, a1
-	srl	a2, a5, a2
-	or	a2, a2, a4
-	addi	a5, a1, -64
-	slti	a5, a5, 0
-	czero.eqz	a2, a2, a5
-	sll	a1, a7, a1
-	czero.nez	a1, a1, a5
-	or	a1, a1, a2
-	czero.eqz	a2, a6, a3
-	czero.eqz	a3, a4, a5
-	not	a1, a1
-	not	a4, t0
-	not	a3, a3
-	not	a2, a2
-	sd	a2, 0(a0)
-	sd	a3, 16(a0)
-	sd	a4, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000072:                   # @func0000000000000072
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v8, v8, 1

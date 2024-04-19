@@ -86,56 +86,6 @@ func0000000000000086:                   # @func0000000000000086
 	ld	s0, 176(sp)                     # 8-byte Folded Reload
 	addi	sp, sp, 192
 	ret
-func000000000000008a:                   # @func000000000000008a
-	ld	a6, 8(a1)
-	ld	a7, 0(a1)
-	ld	a4, 24(a1)
-	ld	a1, 16(a1)
-	ld	a5, 16(a0)
-	ld	a2, 24(a0)
-	ld	a3, 0(a0)
-	ld	a0, 8(a0)
-	or	a1, a1, a5
-	or	a2, a2, a4
-	or	a3, a3, a7
-	or	a0, a0, a6
-	slli	a0, a0, 32
-	srli	a3, a3, 32
-	or	a0, a0, a3
-	slli	a2, a2, 32
-	srli	a1, a1, 32
-	or	a1, a1, a2
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vslideup.vi	v9, v8, 1
-	vmsgt.vi	v0, v9, 0
-	ret
-func000000000000008c:                   # @func000000000000008c
-	ld	a6, 8(a1)
-	ld	a7, 0(a1)
-	ld	a4, 24(a1)
-	ld	a1, 16(a1)
-	ld	a5, 16(a0)
-	ld	a2, 24(a0)
-	ld	a3, 0(a0)
-	ld	a0, 8(a0)
-	or	a1, a1, a5
-	or	a2, a2, a4
-	or	a3, a3, a7
-	or	a0, a0, a6
-	slli	a0, a0, 32
-	srli	a3, a3, 32
-	or	a0, a0, a3
-	slli	a2, a2, 32
-	srli	a1, a1, 32
-	or	a1, a1, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10

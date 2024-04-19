@@ -1,25 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	ld	a6, 24(a1)
-	ld	a7, 16(a2)
-	ld	t0, 0(a1)
-	ld	a5, 16(a1)
-	ld	a4, 16(a3)
-	ld	a3, 0(a3)
-	ld	a2, 0(a2)
-	ld	a1, 8(a1)
-	or	a4, a4, a5
-	or	a3, a3, t0
-	add	a2, a2, a3
-	sltu	a3, a2, a3
-	add	a1, a1, a3
-	add	a7, a7, a4
-	sltu	a3, a7, a4
-	add	a3, a3, a6
-	sd	a7, 16(a0)
-	sd	a2, 0(a0)
-	sd	a3, 24(a0)
-	sd	a1, 8(a0)
-	ret
 func0000000000000007:                   # @func0000000000000007
 	li	a0, 512
 	vsetivli	zero, 16, e16, m2, ta, ma

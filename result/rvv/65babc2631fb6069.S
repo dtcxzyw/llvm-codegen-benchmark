@@ -109,31 +109,3 @@ func000000000000007b:                   # @func000000000000007b
 	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000021:                   # @func0000000000000021
-	ld	a6, 8(a1)
-	ld	a7, 0(a1)
-	ld	a5, 0(a2)
-	ld	t0, 24(a1)
-	ld	t1, 16(a1)
-	ld	a4, 16(a2)
-	ld	t2, 24(a2)
-	ld	a2, 8(a2)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a1, v9
-	vmv.x.s	a3, v8
-	add	a2, a2, a3
-	add	a1, a1, t2
-	add	t1, t1, a4
-	sltu	a3, t1, a4
-	add	a1, a1, t0
-	add	a1, a1, a3
-	add	a7, a7, a5
-	sltu	a3, a7, a5
-	add	a2, a2, a6
-	add	a2, a2, a3
-	sd	t1, 16(a0)
-	sd	a7, 0(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
-	ret

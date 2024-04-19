@@ -56,25 +56,6 @@ func00000000000000c6:                   # @func00000000000000c6
 	vnsrl.wi	v8, v9, 0
 	vmerge.vim	v8, v8, 0, v0
 	ret
-func00000000000000c8:                   # @func00000000000000c8
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	bset	a2, zero, a1
-	addi	a1, a1, -64
-	slti	a1, a1, 0
-	czero.eqz	a1, a2, a1
-	bset	a2, zero, a0
-	addi	a0, a0, -64
-	slti	a0, a0, 0
-	czero.eqz	a0, a2, a0
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	li	a0, 31
-	vmsgtu.vx	v0, v8, a0
-	vslideup.vi	v10, v9, 1
-	vmerge.vim	v8, v10, 0, v0
-	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma

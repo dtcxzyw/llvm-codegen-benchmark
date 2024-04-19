@@ -7,26 +7,6 @@ func0000000000000061:                   # @func0000000000000061
 	vand.vi	v9, v9, 1
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000079:                   # @func0000000000000079
-	ld	a2, 0(a0)
-	ld	a0, 16(a0)
-	ld	a3, 16(a1)
-	ld	a1, 0(a1)
-	add	a0, a0, a3
-	add	a1, a1, a2
-	lui	a2, 1048538
-	srli	a2, a2, 13
-	add	a1, a1, a2
-	add	a0, a0, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	li	a0, -1
-	srli	a0, a0, 13
-	vand.vx	v9, v10, a0
-	vor.vv	v8, v9, v8
-	ret
 func0000000000000039:                   # @func0000000000000039
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10

@@ -133,23 +133,3 @@ func0000000000000024:                   # @func0000000000000024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000014:                   # @func0000000000000014
-	ld	a2, 16(a1)
-	ld	a1, 0(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	slli	a6, a1, 4
-	slli	a2, a2, 4
-	slli	a5, a4, 4
-	slli	a1, a3, 4
-	srli	a3, a3, 60
-	srli	a4, a4, 60
-	or	a2, a2, a4
-	or	a3, a6, a3
-	sd	a1, 0(a0)
-	sd	a5, 16(a0)
-	sd	a3, 8(a0)
-	sd	a2, 24(a0)
-	ret

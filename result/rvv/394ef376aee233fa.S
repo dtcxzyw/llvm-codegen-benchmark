@@ -28,24 +28,6 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 63
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000000d:                   # @func000000000000000d
-	ld	a3, 0(a2)
-	ld	a2, 16(a2)
-	ld	a4, 16(a1)
-	ld	a1, 0(a1)
-	add	a2, a2, a4
-	add	a1, a1, a3
-	snez	a3, a1
-	addi	a3, a3, -1
-	snez	a4, a2
-	addi	a4, a4, -1
-	addi	a1, a1, -1
-	addi	a2, a2, -1
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
-	sd	a4, 24(a0)
-	sd	a3, 8(a0)
-	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10

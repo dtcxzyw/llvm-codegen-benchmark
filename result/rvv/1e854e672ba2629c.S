@@ -65,18 +65,3 @@ func0000000000000030:                   # @func0000000000000030
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000038:                   # @func0000000000000038
-	ld	a2, 0(a0)
-	ld	a3, 0(a1)
-	ld	a0, 16(a0)
-	ld	a1, 16(a1)
-	sub	a3, a3, a2
-	lui	a2, 8
-	add	a3, a3, a2
-	sub	a1, a1, a0
-	add	a1, a1, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v8, a3
-	vslideup.vi	v8, v9, 1
-	ret

@@ -52,30 +52,6 @@ func0000000000000004:                   # @func0000000000000004
 	vsll.vi	v8, v8, 24
 	vadd.vv	v8, v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
-	ld	a6, 24(a2)
-	ld	a7, 8(a2)
-	ld	a2, 16(a1)
-	ld	a5, 24(a1)
-	ld	a3, 0(a1)
-	ld	a1, 8(a1)
-	srli	a4, a2, 63
-	sh1add	t0, a5, a4
-	srli	a5, a3, 63
-	sh1add	a1, a1, a5
-	slli	a5, a2, 1
-	slli	a4, a3, 1
-	sh1add	a3, a3, a7
-	sltu	a4, a3, a4
-	add	a1, a1, a4
-	sh1add	a2, a2, a6
-	sltu	a4, a2, a5
-	add	a4, a4, t0
-	sd	a2, 16(a0)
-	sd	a3, 0(a0)
-	sd	a4, 24(a0)
-	sd	a1, 8(a0)
-	ret
 func0000000000000013:                   # @func0000000000000013
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma

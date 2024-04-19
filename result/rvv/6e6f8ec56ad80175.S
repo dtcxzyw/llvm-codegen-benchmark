@@ -31,20 +31,6 @@ func0000000000000050:                   # @func0000000000000050
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000070:                   # @func0000000000000070
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vslideup.vi	v9, v8, 1
-	lui	a0, 122
-	addi	a0, a0, 288
-	vmsgtu.vx	v0, v9, a0
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

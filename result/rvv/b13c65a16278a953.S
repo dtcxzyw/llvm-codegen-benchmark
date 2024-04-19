@@ -81,43 +81,6 @@ func0000000000000028:                   # @func0000000000000028
 	li	a0, 18
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000016:                   # @func0000000000000016
-	ld	a6, 16(a1)
-	ld	a3, 16(a0)
-	ld	a7, 0(a1)
-	ld	a5, 8(a1)
-	ld	a2, 8(a0)
-	ld	a4, 0(a0)
-	ld	a1, 24(a1)
-	ld	a0, 24(a0)
-	add	a2, a2, a5
-	add	a7, a7, a4
-	sltu	a4, a7, a4
-	add	a2, a2, a4
-	add	a0, a0, a1
-	add	a6, a6, a3
-	sltu	a1, a6, a3
-	add	a0, a0, a1
-	slti	a0, a0, 0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v8, a0
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	slti	a0, a2, 0
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	vsetvli	zero, zero, e32, mf2, ta, ma
-	vmv.v.i	v8, 1
-	vmerge.vim	v8, v8, -1, v0
-	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10

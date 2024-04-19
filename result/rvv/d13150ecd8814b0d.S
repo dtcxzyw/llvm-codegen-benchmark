@@ -7,34 +7,6 @@ func000000000000000f:                   # @func000000000000000f
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
-	ld	a3, 0(a1)
-	ld	a1, 16(a1)
-	ld	a6, 24(a2)
-	ld	a7, 16(a2)
-	ld	t0, 8(a2)
-	ld	a2, 0(a2)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a5, v9
-	vmv.x.s	a4, v8
-	add	a2, a2, a4
-	sltu	a4, a2, a4
-	add	a4, a4, t0
-	add	a7, a7, a5
-	sltu	a5, a7, a5
-	add	a5, a5, a6
-	add	a7, a7, a1
-	sltu	a1, a7, a1
-	add	a1, a1, a5
-	add	a2, a2, a3
-	sltu	a3, a2, a3
-	add	a3, a3, a4
-	sd	a2, 0(a0)
-	sd	a7, 16(a0)
-	sd	a3, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v12

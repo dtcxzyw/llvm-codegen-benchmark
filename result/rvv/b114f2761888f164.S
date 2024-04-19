@@ -74,34 +74,6 @@ func000000000000011b:                   # @func000000000000011b
 	vmseq.vi	v9, v10, 0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000019:                   # @func0000000000000019
-	ld	a1, 8(a0)
-	ld	a2, 0(a0)
-	ld	a3, 24(a0)
-	ld	a0, 16(a0)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vadd.vi	v9, v9, 1
-	vmsleu.vv	v8, v8, v9
-	or	a0, a0, a3
-	seqz	a0, a0
-	vmv.s.x	v9, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vmv.s.x	v9, zero
-	vmerge.vim	v9, v9, 1, v0
-	or	a1, a1, a2
-	seqz	a0, a1
-	vmv.s.x	v10, a0
-	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vslideup.vi	v10, v9, 1
-	vmsne.vi	v9, v10, 0
-	vmor.mm	v0, v8, v9
-	ret
 func00000000000003cc:                   # @func00000000000003cc
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, 10

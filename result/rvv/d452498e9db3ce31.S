@@ -19,26 +19,6 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wx	v10, v8, a0
 	vmv.v.v	v8, v10
 	ret
-func0000000000000038:                   # @func0000000000000038
-	ld	a1, 8(a0)
-	ld	a2, 0(a0)
-	ld	a3, 24(a0)
-	ld	a0, 16(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a4, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a5, v8
-	add	a0, a0, a5
-	sltu	a0, a0, a5
-	add	a0, a0, a3
-	add	a2, a2, a4
-	sltu	a2, a2, a4
-	add	a1, a1, a2
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v9, 1
-	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -76,26 +56,6 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 32
 	vnsrl.wx	v10, v8, a0
 	vmv.v.v	v8, v10
-	ret
-func0000000000000022:                   # @func0000000000000022
-	ld	a1, 8(a0)
-	ld	a2, 0(a0)
-	ld	a3, 24(a0)
-	ld	a0, 16(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a4, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a5, v8
-	add	a0, a0, a5
-	sltu	a0, a0, a5
-	add	a0, a0, a3
-	add	a2, a2, a4
-	sltu	a2, a2, a4
-	add	a1, a1, a2
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v9, 1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 8, e16, m1, ta, ma

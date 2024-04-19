@@ -1,39 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	ld	a6, 8(a1)
-	ld	a3, 24(a1)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.v.i	v9, 1
-	vsll.vv	v8, v9, v8
-	vmv.x.s	a5, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a2, v8
-	or	a1, a1, a2
-	or	a4, a4, a5
-	sd	a3, 24(a0)
-	sd	a6, 8(a0)
-	sd	a4, 0(a0)
-	sd	a1, 16(a0)
-	ret
-func000000000000000e:                   # @func000000000000000e
-	ld	a6, 8(a1)
-	ld	a3, 24(a1)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.v.i	v9, 1
-	vsll.vv	v8, v9, v8
-	vmv.x.s	a5, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a2, v8
-	or	a1, a1, a2
-	or	a4, a4, a5
-	sd	a3, 24(a0)
-	sd	a6, 8(a0)
-	sd	a4, 0(a0)
-	sd	a1, 16(a0)
-	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma

@@ -6,69 +6,6 @@ func00000000000003fe:                   # @func00000000000003fe
 	vadd.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000003ff:                   # @func00000000000003ff
-	addi	sp, sp, -16
-	sd	s0, 8(sp)                       # 8-byte Folded Spill
-	ld	a6, 8(a1)
-	ld	t2, 0(a1)
-	ld	a7, 24(a1)
-	ld	t3, 16(a1)
-	ld	t0, 24(a2)
-	ld	t6, 16(a2)
-	ld	t1, 8(a2)
-	ld	a2, 0(a2)
-	ld	t4, 8(a3)
-	ld	a1, 16(a3)
-	ld	a5, 24(a3)
-	ld	a3, 0(a3)
-	li	t5, 3
-	mulhu	a4, a1, t5
-	sh1add	a5, a5, a5
-	add	s0, a4, a5
-	mulhu	a5, a3, t5
-	sh1add	a4, t4, t4
-	add	a4, a4, a5
-	sh1add	a1, a1, a1
-	sh1add	a3, a3, a3
-	add	a3, a3, a2
-	sltu	a2, a3, a2
-	add	a4, a4, t1
-	add	a2, a2, a4
-	add	a1, a1, t6
-	sltu	a4, a1, t6
-	add	t0, t0, s0
-	add	a4, a4, t0
-	sh1add	a5, t3, a1
-	sltu	a1, a5, a1
-	srli	s0, t3, 63
-	sh1add	s0, a7, s0
-	add	a4, a4, s0
-	add	a7, a4, a1
-	sh1add	a4, t2, a3
-	sltu	a3, a4, a3
-	srli	s0, t2, 63
-	sh1add	s0, a6, s0
-	add	a2, a2, s0
-	add	a2, a2, a3
-	li	a3, -17
-	slli	a3, a3, 32
-	addi	a3, a3, 16
-	add	s0, a4, a3
-	sltu	a4, s0, a4
-	bseti	a1, zero, 36
-	add	a4, a4, a1
-	add	a2, a2, a4
-	add	a3, a3, a5
-	sltu	a4, a3, a5
-	add	a1, a1, a4
-	add	a1, a1, a7
-	sd	a3, 16(a0)
-	sd	s0, 0(a0)
-	sd	a1, 24(a0)
-	sd	a2, 8(a0)
-	ld	s0, 8(sp)                       # 8-byte Folded Reload
-	addi	sp, sp, 16
-	ret
 func0000000000000155:                   # @func0000000000000155
 	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma

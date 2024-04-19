@@ -203,27 +203,6 @@ func000000000000000e:                   # @func000000000000000e
 	vor.vv	v8, v12, v8
 	vor.vv	v8, v8, v14
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a6, 8(a1)
-	ld	a7, 24(a1)
-	ld	t0, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a5, v9
-	vslidedown.vi	v9, v9, 1
-	vmv.x.s	a2, v9
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	or	a1, a1, a4
-	or	a3, a3, t0
-	or	a2, a7, a2
-	or	a4, a6, a5
-	sd	a4, 8(a0)
-	sd	a3, 0(a0)
-	sd	a2, 24(a0)
-	sd	a1, 16(a0)
-	ret
 func000000000000001b:                   # @func000000000000001b
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma

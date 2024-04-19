@@ -8,14 +8,3 @@ func0000000000000009:                   # @func0000000000000009
 	vand.vi	v8, v8, -3
 	vor.vv	v8, v8, v9
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v10, a0
-	vslideup.vi	v10, v9, 1
-	vsrl.vi	v9, v10, 2
-	vor.vv	v8, v9, v8
-	vand.vi	v8, v8, 1
-	ret

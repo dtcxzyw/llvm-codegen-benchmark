@@ -36,15 +36,3 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vi	v8, v8, 18
 	vxor.vv	v8, v8, v10
 	ret
-func000000000000000a:                   # @func000000000000000a
-	ld	a3, 16(a2)
-	ld	a2, 0(a2)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	xor	a2, a2, a4
-	xor	a1, a1, a3
-	sd	a1, 24(a0)
-	sd	zero, 16(a0)
-	sd	a2, 8(a0)
-	sd	zero, 0(a0)
-	ret

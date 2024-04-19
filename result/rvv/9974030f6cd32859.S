@@ -66,48 +66,6 @@ func0000000000000010:                   # @func0000000000000010
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000017:                   # @func0000000000000017
-	ld	a6, 24(a1)
-	ld	a7, 16(a1)
-	ld	t0, 8(a1)
-	ld	t1, 0(a1)
-	ld	t2, 8(a2)
-	ld	t3, 0(a2)
-	ld	t4, 24(a2)
-	ld	t5, 16(a2)
-	ld	a2, 8(a3)
-	ld	a1, 24(a3)
-	li	a4, -1
-	bclri	a4, a4, 32
-	mulhsu	t6, a4, a2
-	slli	a5, a2, 32
-	add	a2, a2, a5
-	neg	a5, a2
-	mulhsu	a4, a4, a1
-	slli	a3, a1, 32
-	add	a1, a1, a3
-	neg	a3, a1
-	sub	a1, t5, a1
-	sltu	a3, a1, a3
-	add	a4, a4, t4
-	sub	a2, t3, a2
-	sltu	a5, a2, a5
-	add	t2, t2, t6
-	add	t1, t1, a2
-	sltu	a2, t1, a2
-	add	t0, t0, t2
-	add	a5, a5, t0
-	add	a2, a2, a5
-	add	a7, a7, a1
-	sltu	a1, a7, a1
-	add	a4, a4, a6
-	add	a3, a3, a4
-	add	a1, a1, a3
-	sd	a7, 16(a0)
-	sd	t1, 0(a0)
-	sd	a1, 24(a0)
-	sd	a2, 8(a0)
-	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsrl.vi	v12, v12, 11

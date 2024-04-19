@@ -66,20 +66,6 @@ func0000000000000007:                   # @func0000000000000007
 	ld	s0, 112(sp)                     # 8-byte Folded Reload
 	addi	sp, sp, 128
 	ret
-func0000000000000017:                   # @func0000000000000017
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v9, v9, v10
-	vslidedown.vi	v10, v9, 1
-	vslidedown.vi	v11, v8, 1
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v8, (a0)
-	addi	a1, a0, 24
-	vse64.v	v10, (a1)
-	addi	a1, a0, 16
-	vse64.v	v11, (a1)
-	addi	a0, a0, 8
-	vse64.v	v9, (a0)
-	ret
 func000000000000002d:                   # @func000000000000002d
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v9, v9, v10
@@ -97,60 +83,6 @@ func0000000000000077:                   # @func0000000000000077
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v8
 	vor.vv	v8, v10, v12
-	ret
-func000000000000000f:                   # @func000000000000000f
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v9, v9, v10
-	vmv.x.s	a1, v9
-	vslidedown.vi	v9, v9, 1
-	vmv.x.s	a2, v9
-	srli	a6, a2, 32
-	srli	a4, a1, 32
-	slli	a1, a1, 32
-	slli	a2, a2, 32
-	vmv.x.s	a5, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	or	a2, a2, a3
-	or	a1, a1, a5
-	sd	a4, 8(a0)
-	sd	a6, 24(a0)
-	sd	a1, 0(a0)
-	sd	a2, 16(a0)
-	ret
-func000000000000007f:                   # @func000000000000007f
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v9, v9, v10
-	vmv.x.s	a1, v9
-	vslidedown.vi	v9, v9, 1
-	vmv.x.s	a2, v9
-	srli	a6, a2, 32
-	srli	a4, a1, 32
-	slli	a1, a1, 32
-	slli	a2, a2, 32
-	vmv.x.s	a5, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	or	a2, a2, a3
-	or	a1, a1, a5
-	sd	a4, 8(a0)
-	sd	a6, 24(a0)
-	sd	a1, 0(a0)
-	sd	a2, 16(a0)
-	ret
-func0000000000000045:                   # @func0000000000000045
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v9, v9, v10
-	vslidedown.vi	v10, v9, 1
-	vslidedown.vi	v11, v8, 1
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v8, (a0)
-	addi	a1, a0, 24
-	vse64.v	v10, (a1)
-	addi	a1, a0, 16
-	vse64.v	v11, (a1)
-	addi	a0, a0, 8
-	vse64.v	v9, (a0)
 	ret
 func000000000000003f:                   # @func000000000000003f
 	vsetivli	zero, 4, e32, m1, ta, ma

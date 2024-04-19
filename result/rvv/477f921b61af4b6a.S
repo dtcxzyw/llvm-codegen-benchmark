@@ -24,38 +24,6 @@ func000000000000001a:                   # @func000000000000001a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
 	ret
-func0000000000000006:                   # @func0000000000000006
-	ld	a6, 8(a1)
-	ld	t0, 24(a1)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a5, v9
-	vslidedown.vi	v9, v9, 1
-	vmv.x.s	a2, v9
-	li	a7, 65
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmslt.vx	v0, v8, a7
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	andi	a3, a3, 1
-	czero.nez	a1, a1, a3
-	czero.eqz	a2, a2, a3
-	or	a1, a1, a2
-	vfirst.m	a2, v0
-	czero.eqz	a4, a4, a2
-	czero.nez	a5, a5, a2
-	or	a4, a4, a5
-	czero.nez	a3, t0, a3
-	czero.eqz	a2, a6, a2
-	sd	a2, 8(a0)
-	sd	a4, 0(a0)
-	sd	a3, 24(a0)
-	sd	a1, 16(a0)
-	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 30
 	vsetivli	zero, 4, e8, mf4, ta, ma

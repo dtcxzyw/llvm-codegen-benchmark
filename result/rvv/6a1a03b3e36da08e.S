@@ -96,25 +96,6 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -241
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func000000000000000e:                   # @func000000000000000e
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmfeq.vv	v0, v8, v8
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a1, v8
-	andi	a1, a1, 1
-	li	a2, -1
-	srli	a2, a2, 1
-	czero.eqz	a1, a2, a1
-	vfirst.m	a3, v0
-	czero.nez	a2, a2, a3
-	sd	zero, 16(a0)
-	sd	zero, 0(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000005:                   # @func0000000000000005
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma

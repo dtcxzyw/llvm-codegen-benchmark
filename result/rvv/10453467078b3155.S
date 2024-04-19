@@ -23,37 +23,3 @@ func0000000000000007:                   # @func0000000000000007
 	vmv.v.x	v11, a0
 	vwsll.vv	v8, v11, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 1, e32, mf2, ta, ma
-	vmv.x.s	a1, v8
-	andi	a1, a1, 120
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a2, v8
-	andi	a2, a2, 120
-	li	a3, -1
-	srli	a3, a3, 32
-	sll	a7, a3, a2
-	addi	a5, a2, -64
-	slti	a5, a5, 0
-	czero.nez	a6, a7, a5
-	not	a2, a2
-	lui	a4, 524288
-	addiw	a4, a4, -1
-	srl	a2, a4, a2
-	czero.eqz	a2, a2, a5
-	or	a6, a2, a6
-	sll	a3, a3, a1
-	addi	a2, a1, -64
-	slti	a2, a2, 0
-	czero.nez	t0, a3, a2
-	not	a1, a1
-	srl	a1, a4, a1
-	czero.eqz	a1, a1, a2
-	or	a1, a1, t0
-	czero.eqz	a4, a7, a5
-	czero.eqz	a2, a3, a2
-	sd	a2, 0(a0)
-	sd	a4, 16(a0)
-	sd	a1, 8(a0)
-	sd	a6, 24(a0)
-	ret

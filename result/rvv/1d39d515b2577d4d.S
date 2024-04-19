@@ -12,45 +12,6 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v9, v10, 0
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000018:                   # @func0000000000000018
-	ld	a2, 16(a1)
-	ld	a1, 0(a1)
-	ld	a3, 0(a0)
-	ld	a0, 16(a0)
-	add	a1, a1, a3
-	add	a0, a0, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vor.vv	v8, v10, v8
-	ret
-func0000000000000000:                   # @func0000000000000000
-	ld	a2, 16(a1)
-	ld	a1, 0(a1)
-	ld	a3, 0(a0)
-	ld	a0, 16(a0)
-	add	a1, a1, a3
-	add	a0, a0, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vor.vv	v8, v10, v8
-	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a2, 16(a1)
-	ld	a1, 0(a1)
-	ld	a3, 0(a0)
-	ld	a0, 16(a0)
-	add	a1, a1, a3
-	add	a0, a0, a2
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vor.vv	v8, v10, v8
-	ret
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12

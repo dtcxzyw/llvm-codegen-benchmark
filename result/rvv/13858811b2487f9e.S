@@ -1,13 +1,3 @@
-func000000000000007c:                   # @func000000000000007c
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	li	a0, 10
-	vmacc.vx	v8, a0, v9
-	ret
 func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
@@ -37,26 +27,6 @@ func000000000000007e:                   # @func000000000000007e
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v12, v12, v11
 	vnsrl.wi	v8, v12, 0
-	ret
-func000000000000003c:                   # @func000000000000003c
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	vsetivli	zero, 1, e32, mf2, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a2, v9
-	vmv.x.s	a3, v8
-	lui	a4, 477
-	addiw	a4, a4, -667
-	slli	a4, a4, 11
-	mul	a0, a0, a4
-	mul	a1, a1, a4
-	add.uw	a1, a3, a1
-	add.uw	a0, a2, a0
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v8, a1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v9, 1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e32, m1, ta, ma

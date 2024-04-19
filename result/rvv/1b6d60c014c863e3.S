@@ -20,54 +20,6 @@ func0000000000000101:                   # @func0000000000000101
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
-func00000000000001a1:                   # @func00000000000001a1
-	ld	a6, 24(a0)
-	ld	a7, 8(a0)
-	ld	t0, 16(a0)
-	ld	t1, 0(a0)
-	ld	a3, 24(a1)
-	ld	a4, 0(a1)
-	lwu	a5, 0(a2)
-	ld	a0, 16(a1)
-	ld	a1, 8(a1)
-	lwu	a2, 16(a2)
-	add	a4, a4, a5
-	sltu	a5, a4, a5
-	add	a1, a1, a5
-	add	a0, a0, a2
-	sltu	a2, a0, a2
-	add	a2, a2, a3
-	srli	a0, a0, 32
-	slli	a3, a2, 32
-	srli	a4, a4, 32
-	slli	a5, a1, 32
-	srli	a2, a2, 32
-	srli	a1, a1, 32
-	or	a4, a4, t1
-	or	a4, a4, a5
-	or	a0, a0, t0
-	or	a0, a0, a3
-	or	a1, a1, a7
-	or	a2, a2, a6
-	or	a0, a0, a2
-	seqz	a0, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v8, a0
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	or	a1, a1, a4
-	seqz	a0, a1
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	ret
 func0000000000000121:                   # @func0000000000000121
 	li	a0, -1
 	srli	a0, a0, 32

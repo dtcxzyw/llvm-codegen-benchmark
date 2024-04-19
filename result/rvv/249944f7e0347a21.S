@@ -1,17 +1,3 @@
-func000000000000001c:                   # @func000000000000001c
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v8, v8, v8
-	li	a2, -257
-	srli	a2, a2, 8
-	vand.vx	v8, v8, a2
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v8, v9
-	ret
 func0000000000000074:                   # @func0000000000000074
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 2

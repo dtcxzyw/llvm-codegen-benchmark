@@ -9,46 +9,17 @@ func000000000000001f:                   # @func000000000000001f
 	li	a0, 12
 	vwmaccu.vx	v8, a0, v11
 	ret
-func000000000000000f:                   # @func000000000000000f
-	ld	a6, 0(a1)
-	ld	a7, 8(a1)
-	ld	t0, 16(a1)
-	ld	a1, 24(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a5, v9
-	vmv.x.s	a2, v8
-	li	a3, 10
-	mulhu	a4, a2, a3
-	mulhu	a3, a5, a3
-	sh2add	a2, a2, a2
-	slli	a2, a2, 1
-	sh2add	a5, a5, a5
-	slli	a5, a5, 1
-	add	a1, a1, a3
-	add	t0, t0, a5
-	sltu	a3, t0, a5
-	add	a1, a1, a3
-	add	a4, a4, a7
-	add	a6, a6, a2
-	sltu	a2, a6, a2
-	add	a2, a2, a4
-	sd	a6, 0(a0)
-	sd	t0, 16(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 859683
 	addi	a0, a0, 2045
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v10
 	ret
-.LCPI4_0:
+.LCPI3_0:
 	.quad	-5171249494174542183            # 0xb83c07fbc6ced699
 func0000000000000000:                   # @func0000000000000000
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	vmacc.vx	v8, a0, v12

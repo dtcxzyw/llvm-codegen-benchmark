@@ -269,22 +269,6 @@ func000000000000003f:                   # @func000000000000003f
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000032:                   # @func0000000000000032
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a3, v9
-	vmv.x.s	a4, v8
-	srli	a4, a4, 63
-	srli	a3, a3, 63
-	sh1add	a1, a1, a3
-	sh1add	a2, a2, a4
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 0(a0)
-	sd	a1, 16(a0)
-	ret
 func000000000000007b:                   # @func000000000000007b
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma

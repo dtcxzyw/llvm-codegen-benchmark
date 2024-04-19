@@ -22,18 +22,6 @@ func0000000000000007:                   # @func0000000000000007
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v9
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	srli	a1, a1, 2
-	srli	a0, a0, 2
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vand.vi	v8, v8, 1
-	vor.vv	v8, v8, v10
-	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v9, v10, 16
@@ -41,18 +29,6 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v9, v9, 0
 	vand.vi	v8, v8, -16
 	vor.vv	v8, v8, v9
-	ret
-func000000000000000e:                   # @func000000000000000e
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	srli	a1, a1, 2
-	srli	a0, a0, 2
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vand.vi	v8, v8, 1
-	vor.vv	v8, v8, v10
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 32

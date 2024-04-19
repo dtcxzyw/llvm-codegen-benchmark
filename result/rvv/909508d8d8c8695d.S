@@ -20,27 +20,3 @@ func000000000000000f:                   # @func000000000000000f
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
-func000000000000000d:                   # @func000000000000000d
-	ld	a6, 16(a1)
-	ld	a7, 0(a1)
-	ld	t0, 8(a2)
-	ld	a5, 24(a2)
-	ld	a3, 16(a2)
-	ld	a2, 0(a2)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a1, v9
-	vmv.x.s	a4, v8
-	or	a2, a2, a4
-	or	a1, a1, a3
-	andi	a1, a1, -2
-	andi	a2, a2, -2
-	andi	a5, a5, 1
-	andi	a3, t0, 1
-	sh1add	a3, a7, a3
-	sh1add	a4, a6, a5
-	sd	a4, 24(a0)
-	sd	a3, 8(a0)
-	sd	a2, 0(a0)
-	sd	a1, 16(a0)
-	ret

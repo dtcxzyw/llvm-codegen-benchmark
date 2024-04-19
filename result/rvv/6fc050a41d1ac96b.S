@@ -42,29 +42,6 @@ func000000000000000b:                   # @func000000000000000b
 	vzext.vf4	v12, v10
 	vor.vv	v8, v12, v8
 	ret
-func0000000000000007:                   # @func0000000000000007
-	ld	a6, 8(a1)
-	ld	a7, 24(a1)
-	ld	a4, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vsll.vi	v8, v8, 5
-	vmv.x.s	a5, v8
-	lui	a2, 524288
-	addiw	a2, a2, -32
-	and	a5, a5, a2
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	and	a2, a2, a3
-	or	a2, a2, a1
-	or	a4, a4, a5
-	srli	a1, a1, 32
-	sw	a1, 16(a0)
-	sw	a7, 20(a0)
-	sw	a6, 8(a0)
-	sd	a4, 0(a0)
-	sw	a2, 12(a0)
-	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsll.vi	v10, v10, 10

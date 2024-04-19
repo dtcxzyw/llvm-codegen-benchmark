@@ -14,22 +14,6 @@ func000000000000002a:                   # @func000000000000002a
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vnsrl.wi	v8, v10, 8
 	ret
-func000000000000000a:                   # @func000000000000000a
-	ld	a3, 8(a1)
-	ld	a1, 24(a1)
-	ld	a4, 16(a2)
-	ld	a2, 0(a2)
-	ld	a5, 8(a0)
-	ld	a0, 24(a0)
-	or	a1, a1, a4
-	or	a2, a2, a3
-	and	a2, a2, a5
-	and	a0, a0, a1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v8, a2
-	vslideup.vi	v8, v9, 1
-	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma

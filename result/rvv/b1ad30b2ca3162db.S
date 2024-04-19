@@ -1,29 +1,3 @@
-func000000000000001f:                   # @func000000000000001f
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v10, v9, 1
-	vmv.x.s	a1, v10
-	vmv.x.s	a2, v9
-	li	a3, 10
-	mulhu	a6, a2, a3
-	mulhu	a3, a1, a3
-	sh2add	a2, a2, a2
-	slli	a2, a2, 1
-	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	vmv.x.s	a5, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	add	a4, a4, a1
-	sltu	a1, a4, a1
-	add	a1, a1, a3
-	add	a5, a5, a2
-	sltu	a2, a5, a2
-	add	a2, a2, a6
-	sd	a5, 0(a0)
-	sd	a4, 16(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000035:                   # @func0000000000000035
 	lui	a0, 1048332
 	addi	a0, a0, 1619
@@ -57,33 +31,6 @@ func000000000000000f:                   # @func000000000000000f
 	vzext.vf4	v9, v8
 	vwaddu.wv	v10, v10, v9
 	vmv2r.v	v8, v10
-	ret
-.LCPI5_0:
-	.quad	-8446744073709551616            # 0x8ac7230489e80000
-func000000000000000a:                   # @func000000000000000a
-	vsetivli	zero, 1, e64, m1, ta, ma
-	lui	a1, %hi(.LCPI5_0)
-	ld	a1, %lo(.LCPI5_0)(a1)
-	vslidedown.vi	v10, v9, 1
-	vmv.x.s	a2, v10
-	vmv.x.s	a3, v9
-	mulhu	a6, a3, a1
-	mul	a3, a3, a1
-	mulhu	a5, a2, a1
-	mul	a1, a1, a2
-	vmv.x.s	a2, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	add	a4, a4, a1
-	sltu	a1, a4, a1
-	add	a1, a1, a5
-	add	a2, a2, a3
-	sltu	a3, a2, a3
-	add	a3, a3, a6
-	sd	a2, 0(a0)
-	sd	a4, 16(a0)
-	sd	a3, 8(a0)
-	sd	a1, 24(a0)
 	ret
 func000000000000002f:                   # @func000000000000002f
 	vsetivli	zero, 8, e16, m1, ta, ma

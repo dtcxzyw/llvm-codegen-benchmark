@@ -4,39 +4,6 @@ func000000000000000f:                   # @func000000000000000f
 	vmv.v.x	v12, a0
 	vmadd.vv	v8, v10, v12
 	ret
-func0000000000000005:                   # @func0000000000000005
-	ld	a6, 8(a1)
-	ld	a4, 0(a2)
-	ld	a7, 8(a2)
-	ld	t0, 24(a2)
-	ld	a5, 16(a1)
-	ld	a2, 16(a2)
-	ld	a3, 0(a1)
-	ld	t1, 24(a1)
-	mul	t0, a5, t0
-	mulhu	a1, a5, a2
-	add	t0, t0, a1
-	mul	a1, t1, a2
-	add	t0, t0, a1
-	mul	a7, a3, a7
-	mulhu	a1, a3, a4
-	add	a7, a7, a1
-	mul	a1, a6, a4
-	add	a1, a1, a7
-	mul	a2, a2, a5
-	mul	a3, a3, a4
-	bseti	a4, zero, 62
-	add	a5, a3, a4
-	sltu	a3, a5, a3
-	add	a1, a1, a3
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	add	a2, a2, t0
-	sd	a4, 16(a0)
-	sd	a5, 0(a0)
-	sd	a2, 24(a0)
-	sd	a1, 8(a0)
-	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, -5

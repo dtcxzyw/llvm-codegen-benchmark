@@ -5,21 +5,6 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v9, v10, 3
 	vmsltu.vv	v0, v8, v9
 	ret
-func0000000000000081:                   # @func0000000000000081
-	ld	a1, 0(a0)
-	ld	a2, 8(a0)
-	ld	a3, 16(a0)
-	ld	a0, 24(a0)
-	seqz	a1, a1
-	sub	a2, a2, a1
-	seqz	a1, a3
-	sub	a0, a0, a1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a2
-	vslideup.vi	v10, v9, 1
-	vmseq.vv	v0, v10, v8
-	ret
 func0000000000000188:                   # @func0000000000000188
 	li	a0, 1
 	slli	a0, a0, 35

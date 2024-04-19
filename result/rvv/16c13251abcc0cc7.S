@@ -84,24 +84,6 @@ func0000000000000038:                   # @func0000000000000038
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v8, v10, a0
 	ret
-func00000000000000c8:                   # @func00000000000000c8
-	ld	a2, 16(a0)
-	ld	a0, 0(a0)
-	ld	a3, 16(a1)
-	ld	a4, 0(a1)
-	ld	a5, 8(a1)
-	ld	a1, 24(a1)
-	srli	a3, a3, 63
-	srli	a4, a4, 63
-	or	a0, a0, a5
-	sh1add	a0, a0, a4
-	or	a1, a1, a2
-	sh1add	a1, a1, a3
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v8, a0
-	vslideup.vi	v8, v9, 1
-	ret
 func0000000000000080:                   # @func0000000000000080
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 7

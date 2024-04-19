@@ -44,33 +44,3 @@ func0000000000000004:                   # @func0000000000000004
 	vsrl.vi	v10, v10, 3
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000013:                   # @func0000000000000013
-	ld	a6, 24(a1)
-	ld	a7, 16(a1)
-	ld	t0, 8(a1)
-	ld	t1, 0(a1)
-	ld	t2, 0(a2)
-	ld	a4, 8(a2)
-	ld	a1, 0(a3)
-	ld	a3, 16(a3)
-	ld	a5, 24(a2)
-	ld	a2, 16(a2)
-	addi	a1, a1, 1
-	addi	a3, a3, 1
-	mul	a5, a5, a3
-	mulhu	a2, a3, a2
-	add	a2, a2, a5
-	mul	a4, a4, a1
-	mulhu	a1, a1, t2
-	add	a1, a1, a4
-	add	t1, t1, a1
-	sltu	a1, t1, a1
-	add	a1, a1, t0
-	add	a7, a7, a2
-	sltu	a2, a7, a2
-	add	a2, a2, a6
-	sd	a7, 16(a0)
-	sd	t1, 0(a0)
-	sd	a2, 24(a0)
-	sd	a1, 8(a0)
-	ret

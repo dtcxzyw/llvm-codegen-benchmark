@@ -37,35 +37,3 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vv	v8, v8, v10
 	vminu.vx	v8, v8, a0
 	ret
-func0000000000000007:                   # @func0000000000000007
-	ld	a6, 0(a2)
-	ld	a4, 0(a1)
-	ld	a7, 16(a2)
-	ld	t0, 24(a2)
-	ld	a5, 24(a1)
-	ld	a3, 16(a1)
-	ld	a2, 8(a2)
-	ld	a1, 8(a1)
-	add	a5, a5, t0
-	add	a7, a7, a3
-	sltu	a3, a7, a3
-	add	a3, a3, a5
-	add	a1, a1, a2
-	add	a6, a6, a4
-	sltu	a2, a6, a4
-	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	czero.eqz	a4, a2, a1
-	minu	a5, a6, a2
-	czero.nez	a1, a5, a1
-	or	a1, a1, a4
-	czero.eqz	a4, a2, a3
-	minu	a2, a7, a2
-	czero.nez	a2, a2, a3
-	or	a2, a2, a4
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
-	ret

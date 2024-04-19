@@ -61,32 +61,6 @@ func0000000000000024:                   # @func0000000000000024
 	vor.vv	v8, v8, v12
 	vadd.vi	v8, v8, -2
 	ret
-func000000000000003d:                   # @func000000000000003d
-	ld	a6, 8(a1)
-	ld	a3, 0(a1)
-	ld	a4, 24(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a7, v9
-	vmv.x.s	a2, v8
-	srli	a5, a1, 32
-	slli	a4, a4, 32
-	or	a4, a4, a5
-	srli	a5, a3, 32
-	slli	a6, a6, 32
-	or	a5, a6, a5
-	slli	a1, a1, 32
-	slli	a3, a3, 32
-	or	a2, a2, a3
-	or	a1, a1, a7
-	addi	a5, a5, -1
-	addi	a4, a4, -1
-	sd	a1, 16(a0)
-	sd	a2, 0(a0)
-	sd	a4, 24(a0)
-	sd	a5, 8(a0)
-	ret
 func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v12, v10

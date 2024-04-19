@@ -90,43 +90,6 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000004f:                   # @func000000000000004f
-	ld	a6, 24(a1)
-	ld	a7, 16(a1)
-	ld	t0, 8(a1)
-	ld	t3, 0(a1)
-	ld	t2, 8(a2)
-	ld	t4, 0(a2)
-	ld	t1, 24(a2)
-	ld	t5, 16(a2)
-	ld	a5, 24(a3)
-	ld	a1, 0(a3)
-	ld	a4, 8(a3)
-	ld	a3, 16(a3)
-	li	a2, -1
-	mulhu	a1, a1, a2
-	sub	a1, a1, a4
-	mulhu	a2, a3, a2
-	sub	a2, a2, a5
-	add	t5, t5, a2
-	sltu	a2, t5, a2
-	add	t4, t4, a1
-	sltu	a1, t4, a1
-	add	t3, t3, t4
-	sltu	a3, t3, t4
-	add	t0, t0, t2
-	add	a1, a1, t0
-	add	a1, a1, a3
-	add	a7, a7, t5
-	sltu	a3, a7, t5
-	add	a6, a6, t1
-	add	a2, a2, a6
-	add	a2, a2, a3
-	sd	a7, 16(a0)
-	sd	t3, 0(a0)
-	sd	a2, 24(a0)
-	sd	a1, 8(a0)
-	ret
 func0000000000000060:                   # @func0000000000000060
 	lui	a0, 298023
 	addiw	a0, a0, 917

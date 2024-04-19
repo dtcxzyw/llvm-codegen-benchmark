@@ -13,20 +13,6 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v8, v11, v10
 	vadd.vi	v8, v8, 4
 	ret
-.LCPI2_0:
-	.quad	-971890876800001                # 0xfffc8c12058723ff
-func0000000000000050:                   # @func0000000000000050
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v9, v8
-	vadd.vx	v8, v8, a0
-	ret
 func0000000000000071:                   # @func0000000000000071
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v8, 0

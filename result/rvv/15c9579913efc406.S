@@ -37,30 +37,6 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vi	v8, v8, -2
 	vsrl.vi	v8, v8, 1
 	ret
-.LCPI4_0:
-	.quad	1442695040888963407             # 0x14057b7ef767814f
-func0000000000000018:                   # @func0000000000000018
-	ld	a3, 0(a1)
-	ld	a6, 8(a2)
-	ld	a7, 24(a2)
-	ld	a4, 24(a1)
-	ld	t0, 8(a1)
-	lui	a2, %hi(.LCPI4_0)
-	ld	a5, %lo(.LCPI4_0)(a2)
-	add	a7, a7, a4
-	ld	a1, 16(a1)
-	add	a4, t0, a6
-	add	a2, a3, a5
-	sltu	a2, a2, a3
-	add	a2, a2, a4
-	add	a5, a5, a1
-	sltu	a1, a5, a1
-	add	a1, a1, a7
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a1, 16(a0)
-	sd	a2, 0(a0)
-	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 1048575
 	vsetivli	zero, 4, e64, m2, ta, ma

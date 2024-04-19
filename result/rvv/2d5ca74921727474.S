@@ -53,19 +53,6 @@ func0000000000000021:                   # @func0000000000000021
 	ld	s0, 112(sp)                     # 8-byte Folded Reload
 	addi	sp, sp, 128
 	ret
-func0000000000000008:                   # @func0000000000000008
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, mu
-	vslideup.vi	v9, v10, 1
-	vmsgtu.vi	v0, v8, 3
-	vmv.v.i	v8, 0
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v9, a0, v0.t
-	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vnsrl.wi	v10, v10, 0

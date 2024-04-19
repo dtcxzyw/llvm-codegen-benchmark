@@ -82,53 +82,6 @@ func0000000000000041:                   # @func0000000000000041
 	vmand.mm	v8, v11, v0
 	vmand.mm	v0, v8, v10
 	ret
-func000000000000008c:                   # @func000000000000008c
-	vmv1r.v	v8, v0
-	ld	a2, 0(a0)
-	ld	a0, 16(a0)
-	lwu	a3, 24(a1)
-	ld	a4, 16(a1)
-	ld	a5, 0(a1)
-	lwu	a1, 8(a1)
-	snez	a3, a3
-	sltiu	a4, a4, 65
-	xori	a4, a4, 1
-	or	a3, a3, a4
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v9, a3
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vmv.s.x	v9, zero
-	vmerge.vim	v10, v9, 1, v0
-	snez	a1, a1
-	sltiu	a3, a5, 65
-	xori	a3, a3, 1
-	or	a1, a1, a3
-	vmv.s.x	v11, a1
-	vand.vi	v11, v11, 1
-	vmsne.vi	v0, v11, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v11, 0
-	vmerge.vim	v12, v11, 1, v0
-	vslideup.vi	v12, v10, 1
-	vmsne.vi	v10, v12, 0
-	vmand.mm	v8, v10, v8
-	srli	a0, a0, 31
-	vmv.s.x	v10, a0
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
-	vmerge.vim	v9, v9, 1, v0
-	srli	a2, a2, 31
-	vmv.s.x	v10, a2
-	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmerge.vim	v10, v11, 1, v0
-	vslideup.vi	v10, v9, 1
-	vmsne.vi	v9, v10, 0
-	vmand.mm	v0, v9, v8
-	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, 2
 	addi	a0, a0, 4

@@ -90,42 +90,6 @@ func00000000000000d1:                   # @func00000000000000d1
 	vsub.vv	v8, v10, v8
 	vmseq.vi	v0, v8, 1
 	ret
-func0000000000000081:                   # @func0000000000000081
-	ld	a2, 24(a0)
-	ld	a3, 8(a0)
-	ld	a4, 0(a0)
-	ld	a5, 0(a1)
-	ld	a1, 16(a1)
-	ld	a0, 16(a0)
-	neg	a6, a4
-	sub	a5, a5, a3
-	snez	a3, a4
-	sub	a5, a5, a3
-	neg	a3, a0
-	sub	a1, a1, a2
-	snez	a0, a0
-	sub	a1, a1, a0
-	and	a1, a1, a3
-	addi	a1, a1, 1
-	seqz	a0, a1
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v8, a0
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	and	a0, a6, a5
-	addi	a0, a0, 1
-	seqz	a0, a0
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	ret
 func00000000000000d6:                   # @func00000000000000d6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 3

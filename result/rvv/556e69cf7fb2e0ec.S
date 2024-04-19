@@ -30,30 +30,6 @@ func0000000000000045:                   # @func0000000000000045
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v8, v9, v0.t
 	ret
-func0000000000000028:                   # @func0000000000000028
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v10, (a0)
-	vle64.v	v11, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v10, v11, 1
-	vsetvli	zero, zero, e32, mf2, ta, ma
-	vmsgt.vi	v0, v9, -5
-	vsetvli	zero, zero, e64, m1, ta, mu
-	vadd.vv	v8, v8, v10, v0.t
-	ret
-func00000000000000e8:                   # @func00000000000000e8
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v10, (a0)
-	vle64.v	v11, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v10, v11, 1
-	vsetvli	zero, zero, e32, mf2, ta, ma
-	vmsgt.vi	v0, v9, -5
-	vsetvli	zero, zero, e64, m1, ta, mu
-	vadd.vv	v8, v8, v10, v0.t
-	ret
 func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v9, v12, 0

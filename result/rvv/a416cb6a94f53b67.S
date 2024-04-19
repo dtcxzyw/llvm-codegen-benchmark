@@ -44,23 +44,3 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vi	v10, v8, 2, v0.t
 	vmv.v.v	v8, v10
 	ret
-func000000000000000c:                   # @func000000000000000c
-	ld	a2, 8(a1)
-	ld	a1, 24(a1)
-	li	a3, 65
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmslt.vx	v0, v8, a3
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a3, v8
-	andi	a3, a3, 1
-	czero.eqz	a1, a1, a3
-	vfirst.m	a3, v0
-	czero.nez	a2, a2, a3
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 0(a0)
-	sd	a1, 16(a0)
-	ret

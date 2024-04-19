@@ -130,17 +130,6 @@ func0000000000000041:                   # @func0000000000000041
 	vmseq.vi	v8, v8, 0
 	vmor.mm	v0, v8, v9
 	ret
-func00000000000000c6:                   # @func00000000000000c6
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v10, a0
-	vslideup.vi	v10, v9, 1
-	vmsne.vi	v9, v10, 2
-	vmsle.vi	v8, v8, 2
-	vmor.mm	v0, v8, v9
-	ret
 func00000000000003cc:                   # @func00000000000003cc
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0

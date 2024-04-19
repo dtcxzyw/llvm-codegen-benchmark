@@ -32,24 +32,3 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v8, v11
 	ret
-func000000000000001f:                   # @func000000000000001f
-	ld	a2, 16(a1)
-	ld	a1, 0(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	li	a5, 19
-	mul	a1, a1, a5
-	mul	a2, a2, a5
-	add	a2, a2, a4
-	add	a1, a1, a3
-	li	a3, -1
-	srli	a3, a3, 13
-	and	a1, a1, a3
-	and	a2, a2, a3
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
-	ret

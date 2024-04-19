@@ -4,17 +4,6 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vi	v9, v9, -2
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000015:                   # @func0000000000000015
-	ld	a1, 8(a0)
-	ld	a0, 24(a0)
-	slli	a1, a1, 1
-	slli	a0, a0, 1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vor.vv	v8, v10, v8
-	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma

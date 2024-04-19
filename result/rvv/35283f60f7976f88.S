@@ -1,25 +1,3 @@
-func0000000000000014:                   # @func0000000000000014
-	ld	a3, 16(a1)
-	ld	a6, 8(a1)
-	ld	a5, 0(a2)
-	ld	a4, 0(a1)
-	ld	a7, 24(a1)
-	ld	a2, 16(a2)
-	add	a5, a5, a6
-	snez	a1, a4
-	add	a1, a1, a5
-	neg	a1, a1
-	add	a2, a2, a7
-	snez	a5, a3
-	add	a2, a2, a5
-	neg	a2, a2
-	neg	a4, a4
-	neg	a3, a3
-	sd	a3, 16(a0)
-	sd	a4, 0(a0)
-	sd	a2, 24(a0)
-	sd	a1, 8(a0)
-	ret
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8

@@ -71,18 +71,6 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v11, v8, 0
 	vmseq.vv	v0, v10, v11
 	ret
-func000000000000001a:                   # @func000000000000001a
-	addi	a1, a0, 4
-	addi	a0, a0, 20
-	vsetivli	zero, 1, e32, mf2, ta, ma
-	vle32.v	v9, (a0)
-	vle32.v	v10, (a1)
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vslideup.vi	v10, v9, 1
-	vadd.vi	v9, v10, -1
-	vnsrl.wi	v8, v8, 0
-	vmslt.vv	v0, v8, v9
-	ret
 func0000000000000411:                   # @func0000000000000411
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 3

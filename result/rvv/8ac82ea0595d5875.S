@@ -22,32 +22,6 @@ func0000000000000011:                   # @func0000000000000011
 	vmseq.vv	v12, v8, v10
 	vmand.mm	v0, v14, v12
 	ret
-func0000000000000018:                   # @func0000000000000018
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	li	a2, 511
-	andn	a1, a2, a1
-	seqz	a1, a1
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	vmv.s.x	v10, a1
-	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
-	vmv.s.x	v10, zero
-	vmerge.vim	v10, v10, 1, v0
-	andn	a0, a2, a0
-	seqz	a0, a0
-	vmv.s.x	v11, a0
-	vand.vi	v11, v11, 1
-	vmsne.vi	v0, v11, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v11, 0
-	vmerge.vim	v11, v11, 1, v0
-	vslideup.vi	v11, v10, 1
-	vmsne.vi	v10, v11, 0
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmsltu.vv	v8, v9, v8
-	vmand.mm	v0, v8, v10
-	ret
 func0000000000000081:                   # @func0000000000000081
 	lui	a0, 16
 	addiw	a0, a0, -1

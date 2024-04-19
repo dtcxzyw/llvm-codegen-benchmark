@@ -57,37 +57,3 @@ func000000000000000f:                   # @func000000000000000f
 	vadd.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 4
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a6, 8(a1)
-	ld	a7, 0(a1)
-	ld	t0, 24(a1)
-	ld	a1, 16(a1)
-	ld	a3, 8(a2)
-	ld	a4, 0(a2)
-	ld	a5, 16(a2)
-	ld	a2, 24(a2)
-	slli	a3, a3, 20
-	srli	a4, a4, 44
-	or	a3, a3, a4
-	slli	a2, a2, 20
-	srli	a5, a5, 44
-	or	a2, a2, a5
-	add	a1, a1, a2
-	sltu	a2, a1, a2
-	add	a2, a2, t0
-	add	a7, a7, a3
-	sltu	a3, a7, a3
-	add	a3, a3, a6
-	slli	a4, a3, 20
-	srli	a5, a7, 44
-	or	a4, a4, a5
-	slli	a5, a2, 20
-	srli	a1, a1, 44
-	or	a1, a1, a5
-	srli	a3, a3, 44
-	srli	a2, a2, 44
-	sd	a2, 24(a0)
-	sd	a3, 8(a0)
-	sd	a1, 16(a0)
-	sd	a4, 0(a0)
-	ret

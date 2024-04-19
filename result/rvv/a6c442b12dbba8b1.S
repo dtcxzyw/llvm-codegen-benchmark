@@ -255,23 +255,6 @@ func0000000000000005:                   # @func0000000000000005
 	ld	s0, 112(sp)                     # 8-byte Folded Reload
 	addi	sp, sp, 128
 	ret
-func0000000000000017:                   # @func0000000000000017
-	li	a1, 56
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vsll.vx	v9, v9, a1
-	vslidedown.vi	v10, v9, 1
-	vsetivli	zero, 1, e16, mf4, ta, ma
-	vslidedown.vi	v11, v8, 1
-	vmv.x.s	a1, v11
-	zext.h	a1, a1
-	vmv.x.s	a2, v8
-	zext.h	a2, a2
-	sd	a2, 8(a0)
-	vse64.v	v9, (a0)
-	sd	a1, 24(a0)
-	addi	a0, a0, 16
-	vse64.v	v10, (a0)
-	ret
 func0000000000000045:                   # @func0000000000000045
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsll.vi	v9, v9, 8

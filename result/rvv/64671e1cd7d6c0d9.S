@@ -171,23 +171,6 @@ func000000000000001f:                   # @func000000000000001f
 	vzext.vf4	v12, v8
 	vor.vv	v8, v10, v12
 	ret
-func0000000000000012:                   # @func0000000000000012
-	ld	a6, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a3, v9
-	vslidedown.vi	v9, v9, 1
-	vmv.x.s	a4, v9
-	vmv.x.s	a5, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a2, v8
-	or	a2, a2, a4
-	or	a3, a3, a5
-	sd	a1, 24(a0)
-	sd	a6, 8(a0)
-	sd	a3, 0(a0)
-	sd	a2, 16(a0)
-	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v9

@@ -43,44 +43,6 @@ func000000000000003f:                   # @func000000000000003f
 	srli	a0, a0, 32
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000007f:                   # @func000000000000007f
-	ld	a6, 8(a1)
-	ld	t2, 0(a1)
-	ld	a7, 24(a1)
-	ld	t4, 16(a1)
-	ld	t1, 24(a2)
-	ld	a5, 16(a2)
-	ld	t0, 8(a2)
-	ld	a2, 0(a2)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a3, v9
-	vmv.x.s	a4, v8
-	add	a4, a4, a2
-	sltu	t3, a4, a2
-	add	a3, a3, a5
-	sltu	a5, a3, a5
-	sltu	a2, a3, t4
-	sub	a1, t1, a7
-	add	a1, a1, a5
-	sub	a1, a1, a2
-	sub	a2, a3, t4
-	snez	a3, a2
-	add	a1, a1, a3
-	sltu	a3, a4, t2
-	sub	a5, t0, a6
-	add	a5, a5, t3
-	sub	a5, a5, a3
-	sub	a3, a4, t2
-	snez	a4, a3
-	add	a4, a4, a5
-	addi	a2, a2, -1
-	addi	a3, a3, -1
-	sd	a3, 0(a0)
-	sd	a2, 16(a0)
-	sd	a4, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func000000000000003d:                   # @func000000000000003d
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12

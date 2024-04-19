@@ -36,22 +36,6 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 2047
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000001e:                   # @func000000000000001e
-	ld	a3, 0(a1)
-	ld	a4, 16(a2)
-	ld	a2, 0(a2)
-	ld	a1, 16(a1)
-	addi	a3, a3, 1
-	seqz	a5, a3
-	add	a2, a2, a5
-	addi	a1, a1, 1
-	seqz	a5, a1
-	add	a4, a4, a5
-	sd	a1, 16(a0)
-	sd	a3, 0(a0)
-	sd	a4, 24(a0)
-	sd	a2, 8(a0)
-	ret
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16

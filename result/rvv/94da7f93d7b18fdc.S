@@ -4,38 +4,6 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v12
 	ret
-func0000000000000005:                   # @func0000000000000005
-	ld	a6, 0(a2)
-	ld	a4, 0(a1)
-	ld	a7, 8(a2)
-	ld	t0, 8(a1)
-	ld	t1, 16(a2)
-	ld	a3, 16(a1)
-	ld	t2, 24(a2)
-	ld	a1, 24(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a5, v9
-	vmv.x.s	a2, v8
-	add	a1, a1, t2
-	add	t1, t1, a3
-	sltu	a3, t1, a3
-	add	a1, a1, a3
-	add	a7, a7, t0
-	add	a6, a6, a4
-	sltu	a3, a6, a4
-	add	a3, a3, a7
-	sltu	a4, a6, a2
-	sub	a3, a3, a4
-	sltu	a4, t1, a5
-	sub	a1, a1, a4
-	sub	a2, a6, a2
-	sub	a4, t1, a5
-	sd	a4, 16(a0)
-	sd	a2, 0(a0)
-	sd	a1, 24(a0)
-	sd	a3, 8(a0)
-	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
@@ -101,36 +69,4 @@ func000000000000001d:                   # @func000000000000001d
 	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v12
-	ret
-func000000000000001f:                   # @func000000000000001f
-	ld	a6, 0(a2)
-	ld	a4, 0(a1)
-	ld	a7, 8(a2)
-	ld	t0, 8(a1)
-	ld	t1, 16(a2)
-	ld	a3, 16(a1)
-	ld	t2, 24(a2)
-	ld	a1, 24(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a5, v9
-	vmv.x.s	a2, v8
-	add	a1, a1, t2
-	add	t1, t1, a3
-	sltu	a3, t1, a3
-	add	a1, a1, a3
-	add	a7, a7, t0
-	add	a6, a6, a4
-	sltu	a3, a6, a4
-	add	a3, a3, a7
-	sltu	a4, a6, a2
-	sub	a3, a3, a4
-	sltu	a4, t1, a5
-	sub	a1, a1, a4
-	sub	a2, a6, a2
-	sub	a4, t1, a5
-	sd	a4, 16(a0)
-	sd	a2, 0(a0)
-	sd	a1, 24(a0)
-	sd	a3, 8(a0)
 	ret

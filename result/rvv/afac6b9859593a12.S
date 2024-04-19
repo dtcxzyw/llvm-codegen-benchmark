@@ -78,30 +78,6 @@ func000000000000001c:                   # @func000000000000001c
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000018:                   # @func0000000000000018
-	li	a1, -19
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmacc.vx	v8, a1, v9
-	vslidedown.vi	v9, v8, 1
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v8, (a0)
-	addi	a0, a0, 16
-	vse64.v	v9, (a0)
-	ret
-func000000000000001b:                   # @func000000000000001b
-	li	a1, -19
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmacc.vx	v8, a1, v9
-	vslidedown.vi	v9, v8, 1
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v8, (a0)
-	addi	a0, a0, 16
-	vse64.v	v9, (a0)
-	ret
 func0000000000000014:                   # @func0000000000000014
 	li	a0, 10
 	vsetivli	zero, 8, e8, mf2, ta, ma

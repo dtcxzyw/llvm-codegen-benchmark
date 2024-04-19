@@ -68,20 +68,6 @@ func0000000000000022:                   # @func0000000000000022
 	li	a0, 32
 	vwsll.vx	v8, v10, a0
 	ret
-func0000000000000067:                   # @func0000000000000067
-	li	a1, 32
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vsll.vx	v9, v9, a1
-	vadd.vv	v8, v9, v8
-	vslidedown.vi	v9, v8, 1
-	sd	zero, 16(a0)
-	sd	zero, 0(a0)
-	addi	a1, a0, 24
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v9, (a1)
-	addi	a0, a0, 8
-	vse64.v	v8, (a0)
-	ret
 func000000000000002f:                   # @func000000000000002f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 3

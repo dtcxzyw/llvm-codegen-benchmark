@@ -21,16 +21,6 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, -4
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
-	ld	a2, 8(a1)
-	ld	a1, 24(a1)
-	neg	a2, a2
-	neg	a1, a1
-	sd	zero, 24(a0)
-	sd	a1, 16(a0)
-	sd	zero, 8(a0)
-	sd	a2, 0(a0)
-	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v8, v8, 16

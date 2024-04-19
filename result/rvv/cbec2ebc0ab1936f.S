@@ -41,37 +41,3 @@ func0000000000000044:                   # @func0000000000000044
 	vadd.vv	v8, v10, v11
 	vadd.vi	v8, v8, 1
 	ret
-func00000000000000a0:                   # @func00000000000000a0
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v8, v8, v9
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v8, v9
-	lui	a0, 960284
-	addi	a0, a0, -1545
-	slli.uw	a0, a0, 12
-	addi	a0, a0, -317
-	slli	a0, a0, 19
-	vadd.vx	v8, v8, a0
-	ret
-func0000000000000020:                   # @func0000000000000020
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vadd.vv	v8, v8, v9
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v8, v9
-	lui	a0, 960284
-	addi	a0, a0, -1545
-	slli.uw	a0, a0, 12
-	addi	a0, a0, -317
-	slli	a0, a0, 19
-	vadd.vx	v8, v8, a0
-	ret

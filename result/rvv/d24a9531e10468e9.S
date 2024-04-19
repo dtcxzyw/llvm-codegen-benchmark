@@ -17,13 +17,3 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v10, v8, 0, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000003:                   # @func0000000000000003
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v8, (a0)
-	vle64.v	v9, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v9, 1
-	vmv.v.i	v9, 0
-	vmerge.vvm	v8, v9, v8, v0
-	ret

@@ -36,51 +36,6 @@ func000000000000001c:                   # @func000000000000001c
 	vmacc.vx	v10, a0, v8
 	vadd.vi	v8, v10, 3
 	ret
-func000000000000001d:                   # @func000000000000001d
-	ld	a6, 8(a1)
-	ld	a7, 0(a2)
-	ld	a5, 16(a1)
-	ld	a4, 16(a2)
-	ld	a3, 0(a1)
-	ld	t1, 24(a1)
-	slli	t0, a5, 32
-	sub	a2, a4, a5
-	sub	a2, a2, t0
-	sltu	t2, a2, a4
-	slli	a1, t1, 32
-	add	t1, t1, a1
-	li	t0, -1
-	bclri	a4, t0, 32
-	mulhu	a1, a5, a4
-	sub	a1, a1, a5
-	sub	a1, a1, t1
-	add	t2, t2, a1
-	slli	a5, a3, 32
-	sub	a1, a7, a3
-	sub	a1, a1, a5
-	sltu	a7, a1, a7
-	slli	a5, a6, 32
-	add	a5, a5, a6
-	mulhu	a4, a3, a4
-	sub	a4, a4, a3
-	sub	a4, a4, a5
-	add	a4, a4, a7
-	li	a3, -16
-	bclri	a3, a3, 36
-	add	a5, a1, a3
-	sltu	a1, a5, a1
-	add	a1, a1, a4
-	srli	a4, t0, 28
-	add	a1, a1, a4
-	add	a3, a3, a2
-	sltu	a2, a3, a2
-	add	a2, a2, t2
-	add	a2, a2, a4
-	sd	a3, 16(a0)
-	sd	a5, 0(a0)
-	sd	a2, 24(a0)
-	sd	a1, 8(a0)
-	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -4

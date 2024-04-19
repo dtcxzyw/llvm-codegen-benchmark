@@ -42,56 +42,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	vmerge.vim	v8, v8, 1, v0
 	vor.vi	v8, v8, -4
 	ret
-func0000000000000056:                   # @func0000000000000056
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	not	a1, a1
-	bexti	a1, a1, 63
-	vmv.s.x	v8, a1
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	not	a0, a0
-	bexti	a0, a0, 63
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	vsetvli	zero, zero, e32, mf2, ta, ma
-	vmv.v.i	v8, -1
-	vmerge.vim	v8, v8, 1, v0
-	ret
-func000000000000005a:                   # @func000000000000005a
-	ld	a1, 16(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 1, e8, mf8, ta, ma
-	not	a1, a1
-	bexti	a1, a1, 63
-	vmv.s.x	v8, a1
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	not	a0, a0
-	bexti	a0, a0, 63
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	vsetvli	zero, zero, e32, mf2, ta, ma
-	vmv.v.i	v8, -1
-	vmerge.vim	v8, v8, 1, v0
-	ret
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10

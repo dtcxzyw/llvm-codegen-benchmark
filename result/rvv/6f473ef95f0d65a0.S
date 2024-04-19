@@ -59,49 +59,6 @@ func00000000000001d8:                   # @func00000000000001d8
 	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
-.LCPI6_0:
-	.quad	2992480573525125729             # 0x29876d3a0e38ea61
-func00000000000003d1:                   # @func00000000000003d1
-	ld	a1, 0(a0)
-	ld	a2, 16(a0)
-	ld	a3, 24(a0)
-	ld	a0, 8(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a4, v8
-	lui	a5, %hi(.LCPI6_0)
-	ld	a5, %lo(.LCPI6_0)(a5)
-	or	a0, a0, a4
-	vmv.x.s	a4, v9
-	or	a3, a3, a4
-	xor	a3, a3, a5
-	lui	a4, 782937
-	addiw	a4, a4, 1875
-	slli	a4, a4, 13
-	addi	a4, a4, 801
-	slli	a4, a4, 18
-	xor	a2, a2, a4
-	or	a2, a2, a3
-	seqz	a2, a2
-	vmv.s.x	v8, a2
-	vsetvli	zero, zero, e8, mf8, ta, ma
-	vand.vi	v8, v8, 1
-	vmsne.vi	v0, v8, 0
-	vmv.s.x	v8, zero
-	vmerge.vim	v8, v8, 1, v0
-	xor	a0, a0, a5
-	xor	a1, a1, a4
-	or	a0, a0, a1
-	seqz	a0, a0
-	vmv.s.x	v9, a0
-	vand.vi	v9, v9, 1
-	vmsne.vi	v0, v9, 0
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vslideup.vi	v9, v8, 1
-	vmsne.vi	v0, v9, 0
-	ret
 func0000000000000194:                   # @func0000000000000194
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsll.vi	v12, v10, 8

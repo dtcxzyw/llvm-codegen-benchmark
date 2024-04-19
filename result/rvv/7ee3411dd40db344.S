@@ -6,21 +6,6 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 23
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
-	addi	a1, a0, 16
-	li	a2, 54
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vsll.vx	v8, v8, a2
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v8, v9
-	li	a0, -1
-	slli	a0, a0, 54
-	vadd.vx	v8, v8, a0
-	ret
 func0000000000000040:                   # @func0000000000000040
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 6

@@ -7,39 +7,3 @@ func0000000000000011:                   # @func0000000000000011
 	vmerge.vim	v9, v9, 1, v0
 	vsub.vv	v8, v8, v9
 	ret
-func0000000000000020:                   # @func0000000000000020
-	addi	a2, a1, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a1)
-	vle64.v	v10, (a2)
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v10, (a0)
-	vle64.v	v11, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v10, v11, 1
-	vmsltu.vv	v0, v9, v10
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
-	ret
-func0000000000000021:                   # @func0000000000000021
-	addi	a2, a1, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a1)
-	vle64.v	v10, (a2)
-	addi	a1, a0, 16
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v10, (a0)
-	vle64.v	v11, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v10, v11, 1
-	vmsltu.vv	v0, v9, v10
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
-	ret

@@ -5,16 +5,6 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, -1024
 	vand.vx	v8, v8, a0
 	ret
-func000000000000000a:                   # @func000000000000000a
-	ld	a1, 8(a0)
-	ld	a0, 24(a0)
-	slli	a1, a1, 1
-	slli	a0, a0, 1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v8, a1
-	vslideup.vi	v8, v9, 1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 16

@@ -92,16 +92,3 @@ func0000000000000039:                   # @func0000000000000039
 	vsll.vi	v8, v8, 3
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000005:                   # @func0000000000000005
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vrsub.vi	v8, v8, 0
-	vslidedown.vi	v9, v8, 1
-	sd	a1, 24(a0)
-	sd	a2, 8(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v8, (a0)
-	addi	a0, a0, 16
-	vse64.v	v9, (a0)
-	ret

@@ -1,27 +1,3 @@
-func0000000000000003:                   # @func0000000000000003
-	addi	a2, a0, 16
-	ld	a3, 8(a1)
-	lbu	a4, 7(a1)
-	ld	a5, 24(a1)
-	lbu	a1, 23(a1)
-	slli	a3, a3, 8
-	or	a3, a3, a4
-	slli	a5, a5, 8
-	or	a1, a1, a5
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a3
-	vslideup.vi	v9, v8, 1
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v8, (a0)
-	vle64.v	v10, (a2)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v10, 1
-	li	a0, -1
-	srli	a0, a0, 8
-	vand.vx	v8, v8, a0
-	vadd.vv	v8, v8, v9
-	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	sp, sp, -192
 	sd	ra, 184(sp)                     # 8-byte Folded Spill

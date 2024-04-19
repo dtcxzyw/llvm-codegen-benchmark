@@ -61,30 +61,6 @@ func0000000000000003:                   # @func0000000000000003
 	ld	s0, 112(sp)                     # 8-byte Folded Reload
 	addi	sp, sp, 128
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a1, 16(a0)
-	lhu	a2, 24(a0)
-	lhu	a3, 40(a0)
-	ld	a4, 32(a0)
-	ld	a5, 0(a0)
-	lhu	a0, 8(a0)
-	slli	a3, a3, 4
-	srli	a4, a4, 60
-	or	a3, a3, a4
-	slli	a0, a0, 4
-	srli	a5, a5, 60
-	or	a0, a0, a5
-	slli	a2, a2, 4
-	srli	a1, a1, 60
-	or	a1, a1, a2
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v8, a0
-	vslideup.vi	v8, v9, 1
-	vmv.s.x	v9, a3
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vslideup.vi	v8, v9, 2
-	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsrl.vi	v10, v8, 1

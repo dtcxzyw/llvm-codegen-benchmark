@@ -36,23 +36,3 @@ func0000000000000002:                   # @func0000000000000002
 	vnclipu.wi	v10, v8, 0
 	vmv.v.v	v8, v10
 	ret
-func0000000000000006:                   # @func0000000000000006
-	ld	a1, 16(a0)
-	ld	a2, 24(a0)
-	ld	a3, 8(a0)
-	ld	a0, 0(a0)
-	li	a4, -1
-	srli	a4, a4, 32
-	czero.eqz	a5, a4, a3
-	minu	a0, a0, a4
-	czero.nez	a0, a0, a3
-	or	a0, a0, a5
-	czero.eqz	a3, a4, a2
-	minu	a1, a1, a4
-	czero.nez	a1, a1, a2
-	or	a1, a1, a3
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vmv.s.x	v9, a1
-	vmv.s.x	v8, a0
-	vslideup.vi	v8, v9, 1
-	ret

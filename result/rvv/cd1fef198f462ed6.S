@@ -37,17 +37,3 @@ func0000000000000050:                   # @func0000000000000050
 	vmv.v.i	v8, -1
 	vnsrl.wi	v8, v10, 0, v0.t
 	ret
-func0000000000000030:                   # @func0000000000000030
-	addi	a1, a0, 8
-	addi	a0, a0, 24
-	li	a2, 65
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmslt.vx	v0, v8, a2
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v8, (a0)
-	vle64.v	v9, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v8, 1
-	vmv.v.i	v8, 0
-	vmerge.vvm	v8, v8, v9, v0
-	ret

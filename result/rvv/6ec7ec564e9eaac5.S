@@ -24,19 +24,3 @@ func0000000000000008:                   # @func0000000000000008
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 18
 	ret
-.LCPI3_0:
-	.quad	-9002011107970261188            # 0x83126e978d4fdf3c
-func0000000000000004:                   # @func0000000000000004
-	ld	a2, 24(a1)
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
-	ld	a1, 8(a1)
-	mulhu	a2, a2, a3
-	mulhu	a1, a1, a3
-	srli	a1, a1, 9
-	srli	a2, a2, 9
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
-	ret

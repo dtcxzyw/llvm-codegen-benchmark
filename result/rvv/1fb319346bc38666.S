@@ -10,24 +10,6 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v9, v9, 0
 	vmseq.vv	v0, v9, v8
 	ret
-func0000000000000008:                   # @func0000000000000008
-	ld	a1, 0(a0)
-	ld	a0, 16(a0)
-	lui	a2, 256000
-	srl	a3, a2, a1
-	addi	a1, a1, -64
-	slti	a1, a1, 0
-	czero.eqz	a1, a3, a1
-	srl	a2, a2, a0
-	addi	a0, a0, -64
-	slti	a0, a0, 0
-	czero.eqz	a0, a2, a0
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v9, a0
-	vmv.s.x	v10, a1
-	vslideup.vi	v10, v9, 1
-	vmsltu.vv	v0, v10, v8
-	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma

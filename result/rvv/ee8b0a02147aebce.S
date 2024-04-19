@@ -21,22 +21,6 @@ func000000000000000b:                   # @func000000000000000b
 	vzext.vf2	v10, v8
 	vwsll.vi	v8, v10, 24
 	ret
-func000000000000000a:                   # @func000000000000000a
-	li	a1, 256
-	vsetivli	zero, 2, e32, mf2, ta, ma
-	vand.vx	v10, v10, a1
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e64, m1, ta, ma
-	vmerge.vvm	v8, v9, v8, v0
-	vslidedown.vi	v9, v8, 1
-	sd	zero, 16(a0)
-	sd	zero, 0(a0)
-	addi	a1, a0, 8
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vse64.v	v8, (a1)
-	addi	a0, a0, 24
-	vse64.v	v9, (a0)
-	ret
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, 522240
 	vsetivli	zero, 4, e32, m1, ta, ma

@@ -25,33 +25,6 @@ func000000000000006d:                   # @func000000000000006d
 	vnsrl.wx	v10, v8, a0
 	vadd.vi	v8, v10, -1
 	ret
-func0000000000000062:                   # @func0000000000000062
-	ld	a6, 0(a1)
-	ld	a3, 0(a0)
-	ld	a7, 16(a1)
-	ld	a5, 24(a1)
-	ld	a2, 24(a0)
-	ld	a4, 16(a0)
-	ld	a1, 8(a1)
-	ld	a0, 8(a0)
-	add	a2, a2, a5
-	add	a7, a7, a4
-	sltu	a4, a7, a4
-	add	a2, a2, a4
-	add	a0, a0, a1
-	add	a6, a6, a3
-	sltu	a1, a6, a3
-	add	a0, a0, a1
-	srli	a1, a6, 63
-	sh1add	a0, a0, a1
-	srli	a1, a7, 63
-	sh1add	a1, a2, a1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vmv.s.x	v8, a1
-	vmv.s.x	v9, a0
-	vslideup.vi	v9, v8, 1
-	vadd.vi	v8, v9, 1
-	ret
 func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
@@ -61,30 +34,6 @@ func0000000000000061:                   # @func0000000000000061
 	lui	a0, 804435
 	addi	a0, a0, 1536
 	vadd.vx	v8, v10, a0
-	ret
-func000000000000006f:                   # @func000000000000006f
-	ld	a6, 16(a1)
-	ld	a3, 16(a0)
-	ld	a7, 0(a1)
-	ld	a5, 8(a1)
-	ld	a2, 8(a0)
-	ld	a4, 0(a0)
-	ld	a1, 24(a1)
-	ld	a0, 24(a0)
-	add	a2, a2, a5
-	add	a7, a7, a4
-	sltu	a4, a7, a4
-	add	a2, a2, a4
-	add	a0, a0, a1
-	add	a6, a6, a3
-	sltu	a1, a6, a3
-	add	a0, a0, a1
-	vsetivli	zero, 2, e8, mf8, ta, ma
-	vmv.s.x	v8, a0
-	vmv.s.x	v9, a2
-	vslideup.vi	v9, v8, 1
-	li	a0, 48
-	vadd.vx	v8, v9, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma

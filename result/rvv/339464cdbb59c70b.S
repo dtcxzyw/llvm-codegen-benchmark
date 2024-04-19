@@ -29,24 +29,6 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
 	ret
-func000000000000000a:                   # @func000000000000000a
-	ld	a2, 0(a1)
-	ld	a1, 16(a1)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vmv.x.s	a3, v8
-	vslidedown.vi	v8, v8, 1
-	vmv.x.s	a4, v8
-	snez	a5, a4
-	sub	a1, a1, a5
-	snez	a5, a3
-	sub	a2, a2, a5
-	neg	a4, a4
-	neg	a3, a3
-	sd	a3, 0(a0)
-	sd	a4, 16(a0)
-	sd	a2, 8(a0)
-	sd	a1, 24(a0)
-	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v8

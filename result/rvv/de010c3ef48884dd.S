@@ -15,15 +15,6 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000002:                   # @func0000000000000002
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v9, v8
-	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
@@ -56,15 +47,6 @@ func0000000000000008:                   # @func0000000000000008
 	ld	ra, 120(sp)                     # 8-byte Folded Reload
 	ld	s0, 112(sp)                     # 8-byte Folded Reload
 	addi	sp, sp, 128
-	ret
-func000000000000000a:                   # @func000000000000000a
-	addi	a1, a0, 16
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vle64.v	v9, (a0)
-	vle64.v	v10, (a1)
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v9, v10, 1
-	vadd.vv	v8, v9, v8
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma

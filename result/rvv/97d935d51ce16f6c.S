@@ -42,66 +42,6 @@ func00000000000001d5:                   # @func00000000000001d5
 	li	a0, 760
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000037f:                   # @func000000000000037f
-	ld	a6, 8(a1)
-	ld	t2, 0(a1)
-	ld	a7, 24(a1)
-	ld	t3, 16(a1)
-	ld	t0, 24(a2)
-	ld	t4, 16(a2)
-	ld	t1, 8(a2)
-	ld	a2, 0(a2)
-	ld	a5, 16(a3)
-	ld	a1, 24(a3)
-	ld	t5, 8(a3)
-	ld	a3, 0(a3)
-	srli	a4, a5, 31
-	slli	a1, a1, 33
-	or	a1, a1, a4
-	srli	a4, a3, 31
-	slli	t5, t5, 33
-	or	a4, t5, a4
-	slli	a5, a5, 33
-	slli	a3, a3, 33
-	add	a3, a3, a2
-	sltu	a2, a3, a2
-	add	a4, a4, t1
-	add	t1, a4, a2
-	add	a5, a5, t4
-	sltu	a4, a5, t4
-	add	a1, a1, t0
-	add	a1, a1, a4
-	sh1add	a4, t3, a5
-	sltu	a5, a4, a5
-	srli	a2, t3, 63
-	sh1add	a2, a7, a2
-	add	a1, a1, a2
-	add	a7, a1, a5
-	sh1add	a2, t2, a3
-	sltu	a3, a2, a3
-	srli	a5, t2, 63
-	sh1add	a5, a6, a5
-	add	a5, a5, t1
-	add	a6, a5, a3
-	li	a5, -33
-	slli	a5, a5, 36
-	addi	a5, a5, 528
-	add	a1, a2, a5
-	sltu	a2, a1, a2
-	li	a3, 33
-	slli	a3, a3, 36
-	addi	a3, a3, -1
-	add	a2, a2, a3
-	add	a2, a2, a6
-	add	a5, a5, a4
-	sltu	a4, a5, a4
-	add	a3, a3, a4
-	add	a3, a3, a7
-	sd	a5, 16(a0)
-	sd	a1, 0(a0)
-	sd	a3, 24(a0)
-	sd	a2, 8(a0)
-	ret
 func0000000000000330:                   # @func0000000000000330
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16

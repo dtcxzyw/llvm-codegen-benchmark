@@ -10,35 +10,6 @@ func000000000000001d:                   # @func000000000000001d
 	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	ret
-func000000000000003f:                   # @func000000000000003f
-	ld	a6, 16(a1)
-	ld	a1, 0(a1)
-	ld	a4, 8(a2)
-	ld	a5, 0(a2)
-	ld	a3, 16(a2)
-	ld	a2, 24(a2)
-	slli	a4, a4, 13
-	srli	a5, a5, 51
-	or	a4, a4, a5
-	slli	a2, a2, 13
-	srli	a3, a3, 51
-	or	a2, a2, a3
-	li	a3, 19
-	mul	a2, a2, a3
-	mul	a3, a3, a4
-	add	a1, a1, a3
-	add	a2, a2, a6
-	addi	a2, a2, 19
-	addi	a1, a1, 19
-	li	a3, -1
-	srli	a3, a3, 13
-	and	a1, a1, a3
-	and	a2, a2, a3
-	sd	zero, 24(a0)
-	sd	zero, 8(a0)
-	sd	a2, 16(a0)
-	sd	a1, 0(a0)
-	ret
 func000000000000003e:                   # @func000000000000003e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 16

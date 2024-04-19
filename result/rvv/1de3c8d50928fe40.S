@@ -25,32 +25,6 @@ func000000000000007a:                   # @func000000000000007a
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vnsrl.wi	v8, v10, 1
 	ret
-func0000000000000050:                   # @func0000000000000050
-	ld	a1, 24(a0)
-	ld	a2, 16(a0)
-	ld	a3, 8(a0)
-	ld	a0, 0(a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vslidedown.vi	v9, v8, 1
-	vmv.x.s	a4, v9
-	vmv.x.s	a5, v8
-	add	a5, a5, a0
-	sltu	a0, a5, a0
-	add	a0, a0, a3
-	add	a4, a4, a2
-	sltu	a2, a4, a2
-	add	a1, a1, a2
-	addi	a4, a4, 1
-	seqz	a2, a4
-	add	a1, a1, a2
-	addi	a5, a5, 1
-	seqz	a2, a5
-	add	a0, a0, a2
-	vmv.s.x	v8, a0
-	vmv.s.x	v9, a1
-	vsetivli	zero, 2, e64, m1, ta, ma
-	vslideup.vi	v8, v9, 1
-	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
