@@ -1,20 +1,17 @@
 func000000000000000a:                   # @func000000000000000a
-	lui	a0, 629146
-	addi	a0, a0, -1639
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulh.vx	v8, v8, a0
-	li	a0, 63
-	vsrl.vx	v10, v8, a0
-	vsra.vi	v8, v8, 5
-	vadd.vv	v8, v8, v10
-	vadd.vi	v8, v8, -2
+	vsra.vi	v8, v8, 4
+	vmv.v.i	v10, -2
+	lui	a0, 209715
+	addiw	a0, a0, 819
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	vmacc.vx	v10, a0, v8
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmulhu.vx	v8, v8, a0
+	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 2
 	vnot.v	v8, v8
 	ret

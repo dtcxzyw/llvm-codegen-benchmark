@@ -16,9 +16,9 @@ func0000000000000023:                   # @func0000000000000023
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vrsub.vi	v12, v12, 2
 	vmseq.vi	v0, v10, 0
-	vor.vv	v10, v8, v12
+	vsub.vv	v10, v8, v12
+	vadd.vi	v10, v10, 2
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func00000000000000c3:                   # @func00000000000000c3

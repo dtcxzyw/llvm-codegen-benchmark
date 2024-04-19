@@ -10,9 +10,9 @@ func0000000000000070:                   # @func0000000000000070
 	vrsub.vx	v8, v8, a2
 	vslidedown.vi	v9, v8, 1
 	vmv.x.s	t3, v9
-	zext.w	a2, t3
+	andi	a2, t3, 255
 	vmv.x.s	a5, v8
-	zext.w	a3, a5
+	andi	a3, a5, 255
 	srl	a4, a1, a3
 	addi	a0, a3, -64
 	slti	a0, a0, 0

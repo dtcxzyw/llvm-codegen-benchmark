@@ -10,16 +10,13 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vv	v8, v10, v8
 	ret
 .LCPI1_0:
-	.quad	341606371735362067              # 0x4bda12f684bda13
+	.quad	-8881765665119413741            # 0x84bda12f684bda13
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulh.vx	v10, v10, a0
-	li	a0, 63
-	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 2
-	vadd.vv	v10, v10, v12
-	vadd.vi	v10, v10, -16
-	vand.vv	v8, v10, v8
+	vsra.vi	v10, v10, 3
+	vmv.v.i	v12, -16
+	vmacc.vx	v12, a0, v10
+	vand.vv	v8, v12, v8
 	ret

@@ -5,12 +5,8 @@ func0000000000000005:                   # @func0000000000000005
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 7
-	vmulh.vx	v8, v8, a0
-	li	a0, 63
-	vsrl.vx	v12, v8, a0
-	vsra.vi	v8, v8, 7
-	vadd.vv	v8, v8, v12
-	vadd.vv	v8, v8, v10
+	vsra.vi	v8, v8, 5
+	vmadd.vx	v8, a0, v10
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma

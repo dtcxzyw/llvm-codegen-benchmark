@@ -10,7 +10,7 @@ func000000000000000f:                   # @func000000000000000f
 	vmseq.vi	v0, v9, 0
 	vmv.v.i	v9, 8
 	vmerge.vim	v9, v9, 4, v0
+	vadd.vv	v8, v9, v8
 	li	a0, 17
-	vor.vx	v8, v8, a0
-	vadd.vv	v8, v8, v9
+	vadd.vx	v8, v8, a0
 	ret

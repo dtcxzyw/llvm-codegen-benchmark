@@ -8,13 +8,13 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000002f:                   # @func000000000000002f
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vi	v9, v9, 1
-	vadd.vv	v10, v9, v8
+	vadd.vv	v8, v8, v9
+	vadd.vi	v10, v8, 1
 	vwsll.vi	v8, v10, 3
 	ret
 func0000000000000023:                   # @func0000000000000023
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vi	v9, v9, 1
-	vadd.vv	v10, v9, v8
+	vadd.vv	v8, v8, v9
+	vadd.vi	v10, v8, 1
 	vwsll.vi	v8, v10, 3
 	ret

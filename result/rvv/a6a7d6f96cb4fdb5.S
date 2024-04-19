@@ -29,10 +29,10 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v0, v8, 0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	lui	a0, 1048352
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	lui	a0, 1048352
+	vadd.vx	v8, v8, a0
 	bseti	a0, zero, 11
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -52,8 +52,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, 2
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 2
 	lui	a0, 512
 	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
@@ -73,39 +73,39 @@ func0000000000000026:                   # @func0000000000000026
 	vmsle.vi	v0, v8, -1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	li	a0, -32
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	li	a0, -32
+	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	li	a0, -48
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	li	a0, -48
+	vadd.vx	v8, v8, a0
 	li	a0, 31
 	vmsgtu.vx	v0, v8, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
-	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	li	a0, 32
+	vadd.vx	v8, v8, a0
 	vmsle.vi	v0, v8, -1
 	ret
 func0000000000000074:                   # @func0000000000000074
-	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	lui	a0, 256
+	vadd.vx	v8, v8, a0
 	bseti	a0, zero, 60
 	vmsltu.vx	v0, v8, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, -4
-	vor.vv	v8, v10, v8
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, -4
 	vmseq.vi	v0, v8, 0
 	ret

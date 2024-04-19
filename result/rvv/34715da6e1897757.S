@@ -19,8 +19,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000001c:                   # @func000000000000001c
 	li	a0, 24
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
+	vmacc.vx	v8, a0, v10
 	li	a0, 128
-	vor.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vx	v8, v8, a0
 	ret

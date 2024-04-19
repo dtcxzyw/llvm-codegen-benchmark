@@ -7,10 +7,10 @@ func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 2, e32, mf2, ta, ma
 	vrsub.vx	v8, v8, a4
 	vmv.x.s	t1, v8
-	zext.w	a5, t1
+	andi	a5, t1, 255
 	vslidedown.vi	v8, v8, 1
 	vmv.x.s	a3, v8
-	zext.w	a1, a3
+	andi	a1, a3, 255
 	sra	a2, a0, a1
 	addi	a4, a1, -64
 	slti	a4, a4, 0

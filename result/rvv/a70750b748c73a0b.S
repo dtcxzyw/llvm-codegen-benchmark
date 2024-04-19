@@ -33,9 +33,9 @@ func000000000000002b:                   # @func000000000000002b
 	vmv.v.i	v11, 0
 	vmv1r.v	v0, v9
 	vmerge.vim	v9, v11, 1, v0
-	vrsub.vi	v9, v9, 2
-	vor.vv	v8, v9, v8
-	vor.vv	v8, v8, v10
+	vsub.vv	v8, v8, v9
+	vadd.vv	v8, v8, v10
+	vadd.vi	v8, v8, 2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, mu

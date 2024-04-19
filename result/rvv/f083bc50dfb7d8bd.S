@@ -37,10 +37,10 @@ func000000000000001d:                   # @func000000000000001d
 	vsetivli	zero, 2, e32, mf2, ta, ma
 	vrsub.vx	v8, v8, a1
 	vmv.x.s	a3, v8
-	zext.w	a1, a3
+	andi	a1, a3, 255
 	vslidedown.vi	v8, v8, 1
 	vmv.x.s	a5, v8
-	zext.w	a4, a5
+	andi	a4, a5, 255
 	li	t6, -1
 	srl	a2, t6, a4
 	addi	s0, a4, -64

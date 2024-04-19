@@ -15,10 +15,10 @@ func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 2, e32, mf2, ta, ma
 	vrsub.vx	v8, v8, a5
 	vmv.x.s	t0, v8
-	zext.w	a5, t0
+	andi	a5, t0, 255
 	vslidedown.vi	v8, v8, 1
 	vmv.x.s	t3, v8
-	zext.w	a4, t3
+	andi	a4, t3, 255
 	sra	t1, a2, a4
 	addi	a3, a4, -64
 	slti	a3, a3, 0

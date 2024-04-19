@@ -7,10 +7,10 @@ func0000000000000025:                   # @func0000000000000025
 	vsra.vi	v8, v8, 3
 	vsrl.vi	v9, v8, 31
 	vadd.vv	v8, v8, v9
-	vadd.vi	v8, v8, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v8
 	vsll.vi	v8, v10, 3
+	vadd.vi	v8, v8, 8
 	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e16, mf2, ta, ma
@@ -19,9 +19,10 @@ func0000000000000005:                   # @func0000000000000005
 	vsrl.vi	v9, v9, 13
 	vadd.vv	v8, v8, v9
 	vsra.vi	v8, v8, 3
-	vadd.vi	v8, v8, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf4	v10, v8
 	li	a0, 32
 	vsll.vx	v8, v10, a0
+	bseti	a0, zero, 32
+	vadd.vx	v8, v8, a0
 	ret

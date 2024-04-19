@@ -24,9 +24,9 @@ func000000000000001f:                   # @func000000000000001f
 	vsll.vi	v10, v10, 16
 	lui	a0, 524272
 	vand.vx	v10, v10, a0
+	vadd.vv	v10, v10, v8
 	lui	a0, 16
 	vadd.vx	v10, v10, a0
-	vor.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func000000000000001a:                   # @func000000000000001a

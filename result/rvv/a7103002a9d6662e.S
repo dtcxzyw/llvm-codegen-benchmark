@@ -74,9 +74,9 @@ func000000000000002b:                   # @func000000000000002b
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
-	vor.vv	v9, v10, v9
-	vor.vv	v8, v9, v8
+	vsub.vv	v9, v9, v10
+	vadd.vv	v8, v9, v8
+	vadd.vi	v8, v8, 2
 	ret
 func0000000000000010:                   # @func0000000000000010
 	lui	a0, 8

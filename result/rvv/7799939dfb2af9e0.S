@@ -13,10 +13,10 @@ func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 2, e32, mf2, ta, ma
 	vrsub.vx	v9, v9, a0
 	vmv.x.s	a0, v9
-	zext.w	a1, a0
+	andi	a1, a0, 255
 	vslidedown.vi	v9, v9, 1
 	vmv.x.s	a2, v9
-	zext.w	a3, a2
+	andi	a3, a2, 255
 	li	a6, -1
 	srl	a5, a6, a3
 	addi	a4, a3, -64

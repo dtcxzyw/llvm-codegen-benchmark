@@ -64,10 +64,12 @@ func00000000000000f4:                   # @func00000000000000f4
 func00000000000000d1:                   # @func00000000000000d1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v11
-	vmul.vv	v8, v12, v8
-	vzext.vf2	v12, v10
-	vmul.vv	v8, v8, v12
-	vmseq.vi	v0, v8, 0
+	vzext.vf2	v14, v10
+	vmseq.vi	v10, v8, 0
+	vmseq.vi	v8, v12, 0
+	vmor.mm	v8, v8, v10
+	vmseq.vi	v9, v14, 0
+	vmor.mm	v0, v8, v9
 	ret
 func0000000000000101:                   # @func0000000000000101
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -89,10 +91,12 @@ func0000000000000108:                   # @func0000000000000108
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v11
-	vmul.vv	v8, v12, v8
-	vzext.vf4	v12, v10
-	vmul.vv	v8, v8, v12
-	vmseq.vi	v0, v8, 0
+	vzext.vf4	v14, v10
+	vmseq.vi	v10, v8, 0
+	vmseq.vi	v8, v12, 0
+	vmor.mm	v8, v8, v10
+	vmseq.vi	v9, v14, 0
+	vmor.mm	v0, v8, v9
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma

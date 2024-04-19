@@ -55,32 +55,22 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v8, v12, v8
 	ret
 .LCPI4_0:
-	.quad	7378697629483820647             # 0x6666666666666667
+	.quad	-3689348814741910312            # 0xccccccccccccccd8
 func0000000000000040:                   # @func0000000000000040
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulh.vx	v12, v12, a0
-	li	a0, 63
-	vsrl.vx	v14, v12, a0
-	vsra.vi	v12, v12, 3
-	vadd.vv	v12, v12, v14
-	li	a0, 56
+	vsra.vi	v12, v12, 2
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
 .LCPI5_0:
-	.quad	7378697629483820647             # 0x6666666666666667
+	.quad	3689348814741910328             # 0x3333333333333338
 func0000000000000050:                   # @func0000000000000050
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulh.vx	v12, v12, a0
-	li	a0, 63
-	vsrl.vx	v14, v12, a0
-	vsra.vi	v12, v12, 4
-	vadd.vv	v12, v12, v14
-	li	a0, 24
+	vsra.vi	v12, v12, 3
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret

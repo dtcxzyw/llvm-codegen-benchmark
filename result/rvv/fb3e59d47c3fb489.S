@@ -47,8 +47,9 @@ func0000000000000051:                   # @func0000000000000051
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v10, 0
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v0, v12, v10
 	ret
 func0000000000000056:                   # @func0000000000000056
 	li	a0, 32
@@ -85,8 +86,9 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v10, 0
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v0, v12, v10
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 32

@@ -13,16 +13,18 @@ func0000000000000051:                   # @func0000000000000051
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v10, v12, v10
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v10, 0
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v0, v12, v10
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v10, v12, v10
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v10, 0
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v0, v12, v10
 	ret
 .LCPI3_0:
 	.quad	384307168202282325              # 0x555555555555555
@@ -49,6 +51,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v10, v12, v10
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v10, 0
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v0, v12, v10
 	ret

@@ -81,8 +81,9 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 2
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v8, 0
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v0, v8, v12
 	ret
 .LCPI14_0:
 	.quad	384307168202282325              # 0x555555555555555
@@ -118,8 +119,10 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmadd.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vadd.vi	v10, v10, 1
+	vmseq.vi	v12, v8, 0
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v0, v8, v12
 	ret
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -141,8 +144,9 @@ func0000000000000071:                   # @func0000000000000071
 	li	a0, -183
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v12, v10, 0
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v0, v12, v10
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	vsetivli	zero, 8, e32, m2, ta, ma

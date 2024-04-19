@@ -3,8 +3,8 @@ func000000000000003f:                   # @func000000000000003f
 	vzext.vf8	v14, v12
 	vsll.vi	v10, v10, 8
 	vor.vv	v10, v10, v14
-	vor.vi	v8, v8, 3
 	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 3
 	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,6 +12,6 @@ func000000000000002c:                   # @func000000000000002c
 	li	a0, 32
 	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v14
-	vor.vi	v8, v8, 1
 	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 1
 	ret

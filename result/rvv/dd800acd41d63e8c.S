@@ -12,11 +12,11 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000055:                   # @func0000000000000055
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, -1
-	vmv.v.i	v10, 1
-	vmacc.vv	v10, v8, v9
+	vmul.vv	v8, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v10
-	vsll.vi	v8, v8, 3
+	vsext.vf2	v10, v8
+	vsll.vi	v8, v10, 3
+	vadd.vi	v8, v8, 8
 	ret
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 4, e32, m1, ta, ma

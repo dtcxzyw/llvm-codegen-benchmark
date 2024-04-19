@@ -40,9 +40,9 @@ func0000000000000019:                   # @func0000000000000019
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v10, v12, v10
 	vsll.vi	v10, v10, 11
+	vadd.vv	v8, v10, v8
 	bseti	a0, zero, 11
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vx	v8, v8, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a0, -87
@@ -60,9 +60,9 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vim	v12, v12, 1, v0
 	vsub.vv	v10, v10, v12
 	vsll.vi	v10, v10, 3
+	vadd.vv	v8, v10, v8
 	li	a0, 16
-	vadd.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vadd.vx	v8, v8, a0
 	ret
 func0000000000000009:                   # @func0000000000000009
 	li	a0, 63
