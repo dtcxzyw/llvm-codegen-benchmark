@@ -190,8 +190,12 @@ public:
     auto *NewF = NewBB.getParent();
     for (uint32_t I = 0, E = OldF->arg_size(); I != E; ++I)
       ValueMap.insert({OldF->getArg(I), NewF->getArg(I)});
-    for (Instruction &I : BB)
-      ValueMap.insert({&I, visit(I)});
+    for (Instruction &I : BB) {
+      Value *V = visit(I);
+      if (auto *NewI = dyn_cast<Instruction>(V))
+        NewI->copyIRFlags(&I);
+      ValueMap.insert({&I, V});
+    }
   }
 };
 
