@@ -74,7 +74,7 @@ static uint32_t getElementCount(Type *Ty, const DataLayout &DL) {
   if (Ty->isVoidTy() || Ty->isIntegerTy(1))
     return 255U;
   if (auto Size = getTypeBits(Ty, DL))
-    return Bits / Size;
+    return Size <= 64U ? Bits / Size : 0U;
   return 0U;
 }
 
