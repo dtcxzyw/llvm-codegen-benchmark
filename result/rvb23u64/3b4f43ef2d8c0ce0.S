@@ -10,7 +10,7 @@ func000000000000005d:                   # @func000000000000005d
 	srli	a1, a1, 49
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	sh3add	a0, a0, a0
 	sh1add	a0, a0, a0
+	sh3add	a0, a0, a0
 	addi	a0, a0, -292
 	ret

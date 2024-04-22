@@ -39,12 +39,15 @@ func0000000000000154:                   # @func0000000000000154
 	mulw	a0, a0, a3
 	ret
 func0000000000000150:                   # @func0000000000000150
-	li	a3, 37
-	mul	a2, a2, a3
+	sh3add	a3, a2, a2
+	sh2add	a2, a3, a2
 	add	a1, a1, a2
-	mul	a1, a1, a3
+	sh3add	a2, a1, a1
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	mulw	a0, a0, a3
+	sh3add	a1, a0, a0
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret
 func0000000000000140:                   # @func0000000000000140
 	sh2add	a2, a2, a2

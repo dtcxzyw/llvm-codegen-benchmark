@@ -9,9 +9,10 @@ func0000000000000031:                   # @func0000000000000031
 	srliw	a2, a2, 1
 	add	a1, a1, a2
 	srliw	a1, a1, 4
-	li	a2, 19
-	mul	a1, a1, a2
+	sh3add	a2, a1, a1
+	sh1add	a1, a2, a1
 	subw	a0, a0, a1
-	subw	a2, a2, a0
-	czero.eqz	a0, a2, a0
+	li	a1, 19
+	subw	a1, a1, a0
+	czero.eqz	a0, a1, a0
 	ret
