@@ -10,7 +10,7 @@ func000000000000007b:                   # @func000000000000007b
 	andi	a1, a1, 63
 	sh1add	a2, a1, a1
 	slli	a1, a1, 8
-	or	a1, a1, a2
+	add	a1, a1, a2
 	addi	a1, a1, 33
 	srli	a1, a1, 6
 	addw	a0, a0, a1
