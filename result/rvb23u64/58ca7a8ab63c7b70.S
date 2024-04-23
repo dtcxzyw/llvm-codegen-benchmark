@@ -9,8 +9,8 @@ func0000000000000009:                   # @func0000000000000009
 	srliw	a2, a2, 1
 	add	a1, a1, a2
 	srli	a1, a1, 4
-	sh1add	a1, a1, a1
 	sh3add	a1, a1, a1
+	sh1add	a1, a1, a1
 	subw	a0, a0, a0
 	subw	a0, a0, a1
 	ret

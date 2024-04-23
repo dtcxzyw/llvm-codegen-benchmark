@@ -27,8 +27,8 @@ func000000000000003c:                   # @func000000000000003c
 	mul	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d
-	sh2add	a1, a1, a1
-	sh2add	a1, a1, a1
+	sh1add	a2, a1, a1
+	sh3add	a1, a2, a1
 	addi	a1, a1, 25
 	mulw	a0, a1, a0
 	ret

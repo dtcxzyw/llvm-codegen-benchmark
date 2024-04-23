@@ -36,12 +36,10 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000007e:                   # @func000000000000007e
 	li	a4, 19
-	mulhu	a4, a2, a4
-	sh3add	a5, a3, a3
-	sh1add	a3, a5, a3
-	add	a3, a3, a4
-	sh3add	a4, a2, a2
-	sh1add	a2, a4, a2
+	mul	a3, a3, a4
+	mulhu	a5, a2, a4
+	add	a3, a3, a5
+	mul	a2, a2, a4
 	add	a1, a1, a3
 	add	a2, a2, a0
 	sltu	a0, a2, a0

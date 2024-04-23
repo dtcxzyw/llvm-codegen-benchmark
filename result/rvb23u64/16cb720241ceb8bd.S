@@ -23,13 +23,11 @@ func000000000000006f:                   # @func000000000000006f
 	srli	a4, a4, 51
 	or	a2, a2, a4
 	srli	a1, a1, 51
-	sh3add	a3, a1, a1
-	sh1add	a1, a3, a1
 	li	a3, 19
-	mulhu	a3, a2, a3
-	add	a1, a1, a3
-	sh3add	a3, a2, a2
-	sh1add	a2, a3, a2
+	mul	a1, a1, a3
+	mulhu	a4, a2, a3
+	add	a1, a1, a4
+	mul	a2, a2, a3
 	slli	a0, a0, 13
 	srli	a0, a0, 13
 	add	a0, a0, a2

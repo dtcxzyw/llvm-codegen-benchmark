@@ -7,13 +7,11 @@ func00000000000000a9:                   # @func00000000000000a9
 	ret
 func00000000000001fb:                   # @func00000000000001fb
 	li	a6, 19
-	mulhu	a6, a4, a6
-	sh3add	a7, a5, a5
-	sh1add	a5, a7, a5
-	add	a6, a6, a5
-	sh3add	a5, a4, a4
-	sh1add	a4, a5, a4
-	add	a3, a3, a6
+	mul	a7, a5, a6
+	mulhu	a5, a4, a6
+	add	a5, a5, a7
+	mul	a4, a4, a6
+	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
 	add	a2, a2, a3

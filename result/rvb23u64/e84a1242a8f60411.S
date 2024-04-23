@@ -14,8 +14,8 @@ func0000000000000013:                   # @func0000000000000013
 	slli	a0, a0, 16
 	ret
 func000000000000001f:                   # @func000000000000001f
-	sh2add	a0, a0, a0
-	sh2add	a0, a0, a0
+	sh1add	a1, a0, a0
+	sh3add	a0, a1, a0
 	sext.w	a0, a0
 	slli	a0, a0, 1
 	ret
@@ -34,9 +34,9 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 32
 	ret
 func0000000000000002:                   # @func0000000000000002
-	sh3add	a1, a0, a0
-	sh2add	a0, a1, a0
-	slli	a0, a0, 32
+	li	a1, 37
+	slli	a1, a1, 32
+	mul	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sh1add	a0, a0, a0

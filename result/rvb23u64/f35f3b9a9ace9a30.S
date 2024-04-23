@@ -6,8 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 511
 	ret
 func000000000000001d:                   # @func000000000000001d
-	sh1add	a0, a0, a0
 	sh3add	a0, a0, a0
+	sh1add	a0, a0, a0
 	zext.h	a0, a0
 	addi	a0, a0, -292
 	ret

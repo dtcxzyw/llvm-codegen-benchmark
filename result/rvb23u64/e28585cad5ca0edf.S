@@ -20,8 +20,8 @@ func0000000000000007:                   # @func0000000000000007
 	srli	a0, a0, 49
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	sh1add	a0, a0, a0
 	sh3add	a0, a0, a0
+	sh1add	a0, a0, a0
 	zext.h	a0, a0
 	ret
 func0000000000000003:                   # @func0000000000000003

@@ -31,8 +31,8 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
-	sh1add	a1, a1, a1
 	sh3add	a1, a1, a1
+	sh1add	a1, a1, a1
 	srliw	a1, a1, 5
 	sltu	a0, a0, a1
 	ret

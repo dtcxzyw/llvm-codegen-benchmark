@@ -18,8 +18,8 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a0, a0, 49
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	sh1add	a0, a0, a0
 	sh3add	a0, a0, a0
+	sh1add	a0, a0, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
 	zext.w	a1, a0
