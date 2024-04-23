@@ -8,10 +8,12 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a2, a2, 13
 	srli	a2, a2, 13
 	li	a3, 19
-	mul	a1, a1, a3
-	mulhu	a4, a0, a3
-	add	a1, a1, a4
-	mul	a3, a3, a0
+	mulhu	a3, a0, a3
+	sh3add	a4, a1, a1
+	sh1add	a1, a4, a1
+	add	a1, a1, a3
+	sh3add	a3, a0, a0
+	sh1add	a3, a3, a0
 	add	a0, a3, a2
 	sltu	a2, a0, a3
 	add	a1, a1, a2
@@ -20,10 +22,12 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 13
 	srli	a2, a2, 13
 	li	a3, 19
-	mul	a1, a1, a3
-	mulhu	a4, a0, a3
-	add	a1, a1, a4
-	mul	a3, a3, a0
+	mulhu	a3, a0, a3
+	sh3add	a4, a1, a1
+	sh1add	a1, a4, a1
+	add	a1, a1, a3
+	sh3add	a3, a0, a0
+	sh1add	a3, a3, a0
 	add	a0, a3, a2
 	sltu	a2, a0, a3
 	add	a1, a1, a2

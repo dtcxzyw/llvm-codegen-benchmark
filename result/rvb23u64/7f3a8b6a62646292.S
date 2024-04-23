@@ -15,16 +15,16 @@ func00000000000000a4:                   # @func00000000000000a4
 	ret
 func0000000000000051:                   # @func0000000000000051
 	sext.w	a0, a0
-	sh3add	a1, a1, a1
 	sh1add	a1, a1, a1
+	sh3add	a1, a1, a1
 	addiw	a1, a1, -292
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func00000000000000d1:                   # @func00000000000000d1
 	sext.w	a0, a0
-	sh3add	a1, a1, a1
 	sh1add	a1, a1, a1
+	sh3add	a1, a1, a1
 	addiw	a1, a1, -292
 	xor	a0, a0, a1
 	seqz	a0, a0

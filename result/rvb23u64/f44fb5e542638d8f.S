@@ -10,8 +10,8 @@ func0000000000000017:                   # @func0000000000000017
 	srli	a1, a1, 49
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	sh3add	a0, a0, a0
 	sh1add	a0, a0, a0
+	sh3add	a0, a0, a0
 	ret
 func0000000000000057:                   # @func0000000000000057
 	li	a1, 292
@@ -25,6 +25,6 @@ func0000000000000057:                   # @func0000000000000057
 	srli	a1, a1, 49
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	sh3add	a0, a0, a0
 	sh1add	a0, a0, a0
+	sh3add	a0, a0, a0
 	ret

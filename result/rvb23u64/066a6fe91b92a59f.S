@@ -9,8 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a0, a0, 32
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sh3add	a2, a2, a2
 	sh1add	a2, a2, a2
+	sh3add	a2, a2, a2
 	xor	a0, a0, a1
 	xor	a0, a0, a2
 	srliw	a0, a0, 7
