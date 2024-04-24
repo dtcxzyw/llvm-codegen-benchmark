@@ -11,7 +11,7 @@ func0000000000000078:                   # @func0000000000000078
 func0000000000000058:                   # @func0000000000000058
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	sub	a0, a0, a1
+	subw	a0, a0, a1
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
 	subw	a0, a0, a1
@@ -20,7 +20,7 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func0000000000000074:                   # @func0000000000000074
 	andi	a1, a1, 255
-	sub	a0, a0, a1
+	subw	a0, a0, a1
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
 	subw	a0, a0, a1

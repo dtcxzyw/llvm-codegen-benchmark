@@ -49,8 +49,7 @@ func0000000000000034:                   # @func0000000000000034
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	sltu	a1, a3, a2
-	snez	a0, a0
-	addi	a0, a0, -1
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000066:                   # @func0000000000000066

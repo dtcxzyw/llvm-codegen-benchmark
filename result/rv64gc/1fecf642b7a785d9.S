@@ -32,8 +32,7 @@ func00000000000000b4:                   # @func00000000000000b4
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	sltu	a0, a1, a0
-	snez	a1, a2
-	addi	a1, a1, -1
+	seqz	a1, a2
 	and	a0, a0, a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1

@@ -1,7 +1,7 @@
 func0000000000000158:                   # @func0000000000000158
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	sub	a2, a2, a1
+	subw	a2, a2, a1
 	sraiw	a1, a2, 31
 	xor	a2, a2, a1
 	subw	a2, a2, a1
@@ -12,7 +12,7 @@ func0000000000000158:                   # @func0000000000000158
 	ret
 func0000000000000154:                   # @func0000000000000154
 	andi	a2, a2, 255
-	sub	a2, a2, a1
+	subw	a2, a2, a1
 	sraiw	a1, a2, 31
 	xor	a2, a2, a1
 	subw	a2, a2, a1

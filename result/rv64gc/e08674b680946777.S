@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	slti	a0, a0, 8
 	negw	a0, a0
 	and	a0, a0, a1

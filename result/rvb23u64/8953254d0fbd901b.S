@@ -10,7 +10,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 255
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	slli.uw	a2, a1, 6
 	sh2add.uw	a1, a1, a2
 	add	a0, a0, a1
