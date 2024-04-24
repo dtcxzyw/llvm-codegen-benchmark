@@ -1,10 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vi	v12, v10, -8
-	vmv.v.i	v10, 0
+	vand.vi	v10, v10, -8
 	vmseq.vi	v0, v8, 3
-	vrsub.vi	v10, v12, 0, v0.t
-	vmv.v.v	v8, v10
+	vmv.v.i	v8, 0
+	vrsub.vi	v8, v10, 0, v0.t
 	ret
 func0000000000000011:                   # @func0000000000000011
 	bseti	a0, zero, 31

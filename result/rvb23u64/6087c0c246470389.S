@@ -27,8 +27,9 @@ func00000000000001fe:                   # @func00000000000001fe
 	li	a3, 77
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	li	a2, 29
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret
@@ -49,8 +50,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	li	a3, 77
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	li	a2, 29
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret

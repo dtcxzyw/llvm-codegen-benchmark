@@ -19,8 +19,8 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000058:                   # @func0000000000000058
 	li	a0, 62
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vor.vx	v10, v8, a0
 	vmsgtu.vi	v0, v8, 1
+	vor.vx	v10, v8, a0
 	vadd.vi	v10, v8, -2, v0.t
 	vmv.v.v	v8, v10
 	ret

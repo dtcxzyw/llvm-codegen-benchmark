@@ -2,9 +2,9 @@
 	.word	0x3fa2f983                      # float 1.27323949
 func0000000000000007:                   # @func0000000000000007
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, mu
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa4, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfne.vf	v0, v12, fa5
 	vmv.v.i	v12, 0
 	vfmul.vf	v12, v16, fa4, v0.t

@@ -37,11 +37,10 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vzext.vf2	v12, v10
 	li	a0, 188
 	vmsgtu.vx	v0, v8, a0
-	vor.vi	v12, v12, 8, v0.t
-	vmv.v.v	v8, v12
+	vzext.vf2	v8, v10
+	vor.vi	v8, v8, 8, v0.t
 	ret
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e32, m2, ta, ma

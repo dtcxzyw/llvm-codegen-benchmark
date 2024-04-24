@@ -29,10 +29,11 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vmseq.vi	v0, v10, 4
-	vor.vi	v8, v12, 8, v0.t
+	vmv.v.i	v14, 0
+	vmseq.vi	v12, v10, 4
+	vmerge.vim	v10, v14, 1, v0
+	vmv1r.v	v0, v12
+	vor.vi	v8, v10, 8, v0.t
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma

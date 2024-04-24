@@ -48,10 +48,9 @@ func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 16, e8, m1, ta, mu
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vsll.vi	v10, v10, 2
 	vmsltu.vv	v0, v8, v9
-	vor.vi	v10, v10, 2, v0.t
-	vmv.v.v	v8, v10
+	vsll.vi	v8, v10, 2
+	vor.vi	v8, v8, 2, v0.t
 	ret
 func0000000000000016:                   # @func0000000000000016
 	li	a0, 65

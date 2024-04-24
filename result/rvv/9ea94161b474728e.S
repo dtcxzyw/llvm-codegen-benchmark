@@ -13,10 +13,10 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000063:                   # @func0000000000000063
 	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, mu
+	lui	a1, 16
+	addi	a1, a1, -512
+	vmseq.vx	v0, v8, a1
 	vand.vx	v10, v9, a0
-	lui	a0, 16
-	addi	a0, a0, -512
-	vmseq.vx	v0, v8, a0
 	vadd.vi	v10, v10, 4, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10

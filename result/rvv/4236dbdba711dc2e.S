@@ -18,15 +18,15 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a1, sp, 16
 	vs8r.v	v8, (a1)                        # Unknown-size Folded Spill
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vle64.v	v8, (a0)
+	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	vmfne.vf	v0, v16, fa5
-	vmv.v.i	v24, 0
-	vfdiv.vv	v24, v8, v16, v0.t
+	vmv.v.i	v8, 0
+	vfdiv.vv	v8, v24, v16, v0.t
 	addi	a0, sp, 16
-	vl8r.v	v8, (a0)                        # Unknown-size Folded Reload
-	vfneg.v	v8, v8
-	vfmul.vv	v8, v24, v8
+	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
+	vfneg.v	v16, v16
+	vfmul.vv	v8, v8, v16
 	csrr	a0, vlenb
 	sh3add	sp, a0, sp
 	addi	sp, sp, 16

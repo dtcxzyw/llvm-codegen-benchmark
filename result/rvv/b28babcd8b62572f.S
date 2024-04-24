@@ -2,8 +2,8 @@ func000000000000000a:                   # @func000000000000000a
 	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vx	v10, v8, a0
-	vmv.v.i	v8, 1
 	vmsgt.vi	v0, v10, 1
+	vmv.v.i	v8, 1
 	vsrl.vi	v8, v10, 1, v0.t
 	ret
 func0000000000000008:                   # @func0000000000000008

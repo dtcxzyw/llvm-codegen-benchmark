@@ -1,29 +1,26 @@
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v10
+	vadd.vv	v10, v12, v10
 	li	a0, 16
-	vadd.vx	v10, v12, a0
 	vmseq.vi	v0, v8, 0
-	vadd.vi	v10, v12, 12, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v10, a0
+	vadd.vi	v8, v10, 12, v0.t
 	ret
 func0000000000000201:                   # @func0000000000000201
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v10
+	vadd.vv	v10, v12, v10
 	li	a0, 16
-	vadd.vx	v10, v12, a0
 	vmseq.vi	v0, v8, 0
-	vadd.vi	v10, v12, 12, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v10, a0
+	vadd.vi	v8, v10, 12, v0.t
 	ret
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v10
+	vadd.vv	v10, v12, v10
 	li	a0, 16
-	vadd.vx	v10, v12, a0
 	vmseq.vi	v0, v8, 0
-	vadd.vi	v10, v12, 12, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v10, a0
+	vadd.vi	v8, v10, 12, v0.t
 	ret
 func0000000000000354:                   # @func0000000000000354
 	vsetivli	zero, 4, e64, m2, ta, ma

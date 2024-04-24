@@ -12,10 +12,10 @@ func0000000000000091:                   # @func0000000000000091
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v9, v12, 0
-	vmv.v.i	v12, 0
 	li	a0, 229
-	vmsltu.vx	v14, v10, a0
-	vmand.mm	v0, v14, v9
-	vzext.vf4	v12, v8, v0.t
-	vmv.v.v	v8, v12
+	vmsltu.vx	v12, v10, a0
+	vmand.mm	v0, v12, v9
+	vmv.v.i	v10, 0
+	vzext.vf4	v10, v8, v0.t
+	vmv.v.v	v8, v10
 	ret

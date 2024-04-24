@@ -20,8 +20,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sraiw	a1, a1, 16
-	li	a2, 23
-	mul	a1, a1, a2
+	sh3add	a2, a1, a1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010

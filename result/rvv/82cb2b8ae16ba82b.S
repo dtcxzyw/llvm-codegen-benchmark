@@ -1,8 +1,7 @@
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vsrl.vi	v12, v12, 12
 	li	a0, 64
 	vmsgtu.vx	v0, v8, a0
-	vrsub.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vsrl.vi	v8, v12, 12
+	vrsub.vx	v8, v10, a0, v0.t
 	ret

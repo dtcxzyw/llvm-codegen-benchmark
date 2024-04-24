@@ -12,8 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vsub.vv	v12, v8, v10
 	vmslt.vv	v0, v10, v8
+	vsub.vv	v12, v8, v10
 	vsub.vv	v12, v10, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
@@ -49,8 +49,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vsub.vv	v12, v10, v8
 	vmslt.vv	v0, v8, v10
+	vsub.vv	v12, v10, v8
 	vsub.vv	v12, v8, v10, v0.t
 	vmv.v.v	v8, v12
 	ret

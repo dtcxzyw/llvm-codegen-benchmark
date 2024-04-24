@@ -17,12 +17,12 @@ func0000000000000008:                   # @func0000000000000008
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmulhu.vx	v10, v8, a0
-	li	a0, 34
-	vsrl.vx	v10, v10, a0
 	lui	a0, 2575
 	addiw	a0, a0, -325
 	slli	a0, a0, 13
 	addi	a1, a0, -1
 	vmsgtu.vx	v0, v8, a1
+	li	a1, 34
+	vsrl.vx	v10, v10, a1
 	vnmsac.vx	v8, a0, v10, v0.t
 	ret

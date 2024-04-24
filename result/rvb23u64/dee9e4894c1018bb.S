@@ -3,8 +3,9 @@ func000000000000003f:                   # @func000000000000003f
 	addi	a2, a2, -1472
 	add	a1, a1, a2
 	zext.h	a1, a1
-	li	a2, 125
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	slli	a1, a1, 7
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 22
 	ret

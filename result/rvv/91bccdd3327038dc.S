@@ -35,20 +35,22 @@ func0000000000000002:                   # @func0000000000000002
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	vmv1r.v	v10, v0
 	vsetivli	zero, 16, e8, m1, ta, mu
-	vmseq.vi	v0, v9, 0
+	vmseq.vi	v9, v9, 0
+	vmv1r.v	v10, v0
+	vmv.v.v	v0, v9
 	vsrl.vi	v8, v8, 4, v0.t
 	vsrl.vi	v9, v8, 2
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func0000000000000039:                   # @func0000000000000039
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vi	v0, v10, 0
-	vsrl.vi	v8, v8, 16, v0.t
-	vsrl.vi	v10, v8, 8
+	vmseq.vi	v12, v10, 0
+	vmv1r.v	v10, v0
 	vmv1r.v	v0, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vsrl.vi	v8, v8, 16, v0.t
+	vsrl.vi	v12, v8, 8
+	vmv1r.v	v0, v10
+	vmerge.vvm	v8, v12, v8, v0
 	ret

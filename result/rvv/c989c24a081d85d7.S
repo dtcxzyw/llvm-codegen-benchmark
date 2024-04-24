@@ -16,9 +16,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	vmand.mm	v0, v9, v0
 	vsetvli	zero, zero, e8, mf4, ta, mu
 	vmv.v.i	v9, 0
-	vmerge.vim	v10, v9, 1, v0
-	vmv.v.i	v9, 5
+	vmerge.vim	v9, v9, 1, v0
 	vmseq.vi	v0, v8, 5
-	vor.vi	v9, v10, 4, v0.t
-	vmv1r.v	v8, v9
+	vmv.v.i	v8, 5
+	vor.vi	v8, v9, 4, v0.t
 	ret

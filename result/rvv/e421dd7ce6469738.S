@@ -4,10 +4,10 @@ func0000000000000042:                   # @func0000000000000042
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
-	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	vfadd.vf	v8, v8, fa5, v0.t
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	fli.d	fa4, 1.0
+	vfadd.vf	v8, v8, fa4, v0.t
 	vfabs.v	v8, v8
-	vmflt.vf	v0, v8, fa4
+	vmflt.vf	v0, v8, fa5
 	ret

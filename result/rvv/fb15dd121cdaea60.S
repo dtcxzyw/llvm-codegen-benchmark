@@ -11,7 +11,7 @@ func0000000000000082:                   # @func0000000000000082
 	vzext.vf4	v14, v12
 	lui	a0, 32
 	vmv.v.x	v12, a0
-	vsll.vv	v12, v12, v14
 	vmseq.vi	v0, v10, 0
-	vor.vv	v8, v8, v12, v0.t
+	vsll.vv	v10, v12, v14
+	vor.vv	v8, v8, v10, v0.t
 	ret

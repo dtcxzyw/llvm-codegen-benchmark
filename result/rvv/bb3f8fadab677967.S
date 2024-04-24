@@ -32,10 +32,10 @@ func0000000000000043:                   # @func0000000000000043
 	vle64.v	v12, (a0)
 	vnsrl.wi	v16, v12, 0
 	lui	a0, 16
-	vmv.v.x	v12, a0
 	vmseq.vi	v0, v10, 0
-	vand.vx	v12, v16, a0, v0.t
-	vor.vv	v8, v12, v8
+	vmv.v.x	v10, a0
+	vand.vx	v10, v16, a0, v0.t
+	vor.vv	v8, v10, v8
 	addi	sp, s0, -128
 	ld	ra, 120(sp)                     # 8-byte Folded Reload
 	ld	s0, 112(sp)                     # 8-byte Folded Reload

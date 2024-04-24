@@ -16,9 +16,9 @@ func0000000000000011:                   # @func0000000000000011
 	sd	a1, 0(sp)
 	mv	a1, sp
 	vsetivli	zero, 8, e16, m1, ta, ma
+	bseti	a2, zero, 11
+	vmsltu.vx	v0, v8, a2
 	vle64.v	v12, (a1)
-	bseti	a1, zero, 11
-	vmsltu.vx	v0, v8, a1
 	vmerge.vvm	v8, v9, v8, v0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vzext.vf4	v16, v8

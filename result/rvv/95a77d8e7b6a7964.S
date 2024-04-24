@@ -9,10 +9,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vand.vi	v10, v10, -8
 	vmseq.vi	v0, v8, 0
-	vadd.vi	v10, v10, 8, v0.t
-	vmv.v.v	v8, v10
+	vand.vi	v8, v10, -8
+	vadd.vi	v8, v8, 8, v0.t
 	ret
 func0000000000000031:                   # @func0000000000000031
 	li	a0, 240

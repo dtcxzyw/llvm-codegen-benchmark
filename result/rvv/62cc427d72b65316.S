@@ -27,11 +27,11 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a1, sp, 64
 	vsetivli	zero, 8, e64, m4, ta, mu
 	vle64.v	v8, (a1)
-	li	a1, 32
-	vsll.vx	v8, v8, a1
 	vmv.v.i	v12, 0
 	mv	a1, sp
 	vle64.v	v12, (a1), v0.t
+	li	a1, 32
+	vsll.vx	v8, v8, a1
 	vor.vv	v8, v12, v8
 	addi	a1, sp, 128
 	vse64.v	v8, (a1)

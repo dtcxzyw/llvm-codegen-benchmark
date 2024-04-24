@@ -35,15 +35,15 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v14, 1
 	vmsleu.vi	v0, v10, 6
-	vsll.vv	v8, v14, v12, v0.t
+	vmv.v.i	v10, 1
+	vsll.vv	v8, v10, v12, v0.t
 	ret
 func0000000000000036:                   # @func0000000000000036
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v14, 1
 	vmsle.vi	v0, v10, 6
-	vsll.vv	v8, v14, v12, v0.t
+	vmv.v.i	v10, 1
+	vsll.vv	v8, v10, v12, v0.t
 	ret
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -63,7 +63,7 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v14, 15
 	vmseq.vi	v0, v10, 0
-	vsll.vv	v8, v14, v12, v0.t
+	vmv.v.i	v10, 15
+	vsll.vv	v8, v10, v12, v0.t
 	ret
