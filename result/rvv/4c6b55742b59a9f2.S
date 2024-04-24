@@ -35,11 +35,12 @@ func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vle64.v	v12, (a0)
 	vnsrl.wi	v10, v12, 0
-	vsrl.vi	v10, v10, 8
+	vsrl.vi	v12, v10, 8
 	li	a0, 256
+	vmv.v.x	v10, a0
 	vmseq.vi	v0, v8, 0
-	vmv.v.x	v8, a0
-	vand.vx	v8, v10, a0, v0.t
+	vand.vx	v10, v12, a0, v0.t
+	vmv.v.v	v8, v10
 	addi	sp, s0, -128
 	ld	ra, 120(sp)                     # 8-byte Folded Reload
 	ld	s0, 112(sp)                     # 8-byte Folded Reload

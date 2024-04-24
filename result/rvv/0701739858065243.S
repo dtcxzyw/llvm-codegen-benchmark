@@ -43,12 +43,11 @@ func000000000000002b:                   # @func000000000000002b
 	vor.vi	v8, v8, 8, v0.t
 	ret
 func0000000000000007:                   # @func0000000000000007
+	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vi	v12, v10, 0
-	vmv1r.v	v10, v0
-	vmv1r.v	v0, v12
+	vmseq.vi	v0, v10, 0
 	vor.vi	v8, v8, 4, v0.t
-	vmv1r.v	v0, v10
+	vmv1r.v	v0, v12
 	vor.vi	v8, v8, 2, v0.t
 	ret
 func0000000000000010:                   # @func0000000000000010

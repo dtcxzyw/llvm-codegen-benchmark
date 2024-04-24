@@ -11,7 +11,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000006:                   # @func0000000000000006
 	fli.s	fa5, 0.5
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vfmul.vf	v10, v10, fa5
 	vmsle.vi	v0, v8, -1
-	vfmul.vf	v8, v10, fa5
-	vfneg.v	v8, v8, v0.t
+	vfneg.v	v10, v10, v0.t
+	vmv.v.v	v8, v10
 	ret

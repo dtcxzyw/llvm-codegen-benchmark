@@ -20,10 +20,10 @@ func0000000000000001:                   # @func0000000000000001
 	vmv.v.i	v12, 12
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 4, v0
-	bseti	a0, zero, 11
-	vmseq.vx	v10, v8, a0
 	vmv1r.v	v0, v11
-	vmerge.vim	v8, v12, 0, v0
-	vmv1r.v	v0, v10
-	vor.vi	v8, v8, 4, v0.t
+	vmerge.vim	v10, v12, 0, v0
+	bseti	a0, zero, 11
+	vmseq.vx	v0, v8, a0
+	vor.vi	v10, v10, 4, v0.t
+	vmv.v.v	v8, v10
 	ret

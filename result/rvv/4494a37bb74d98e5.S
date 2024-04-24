@@ -2,17 +2,17 @@ func00000000000001c5:                   # @func00000000000001c5
 	vsetivli	zero, 16, e16, m2, ta, mu
 	vmv.v.i	v14, -1
 	vsll.vv	v12, v14, v12
+	vadd.vv	v12, v12, v8
 	vmseq.vi	v0, v10, 0
-	vadd.vv	v10, v12, v8
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 func0000000000000144:                   # @func0000000000000144
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v14, -1
 	vsll.vv	v12, v14, v12
+	vadd.vv	v12, v12, v8
 	vmseq.vi	v0, v10, 0
-	vadd.vv	v10, v12, v8
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 func00000000000001e9:                   # @func00000000000001e9
 	vsetivli	zero, 4, e32, m1, ta, ma

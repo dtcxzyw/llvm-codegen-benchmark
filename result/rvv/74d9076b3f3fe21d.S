@@ -38,11 +38,11 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000003:                   # @func0000000000000003
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, mu
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
 	vmfge.vf	v16, v8, fa5
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmnot.m	v0, v16
 	vmv.v.i	v16, 0
-	vfmul.vf	v16, v8, fa4, v0.t
+	vfmul.vf	v16, v8, fa5, v0.t
 	vmv.v.v	v8, v16
 	ret

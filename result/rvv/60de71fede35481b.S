@@ -16,9 +16,9 @@ func0000000000000047:                   # @func0000000000000047
 	sd	a1, 0(sp)
 	mv	a1, sp
 	vsetivli	zero, 8, e16, m1, ta, ma
-	bseti	a2, zero, 11
-	vmsltu.vx	v0, v8, a2
 	vle64.v	v12, (a1)
+	bseti	a1, zero, 11
+	vmsltu.vx	v0, v8, a1
 	vmerge.vvm	v8, v9, v8, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v10, v8
@@ -79,9 +79,9 @@ func0000000000000045:                   # @func0000000000000045
 	sd	a1, 0(sp)
 	mv	a1, sp
 	vsetivli	zero, 8, e16, m1, ta, ma
-	bseti	a2, zero, 11
-	vmsltu.vx	v0, v8, a2
 	vle64.v	v12, (a1)
+	bseti	a1, zero, 11
+	vmsltu.vx	v0, v8, a1
 	vmerge.vvm	v8, v9, v8, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v10, v8

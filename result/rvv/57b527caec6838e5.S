@@ -30,9 +30,10 @@ func0000000000000031:                   # @func0000000000000031
 func0000000000000011:                   # @func0000000000000011
 	li	a0, 24
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vor.vx	v12, v12, a0
 	vmseq.vi	v0, v8, 0
-	vor.vx	v8, v12, a0
-	vor.vi	v8, v10, 8, v0.t
+	vor.vi	v12, v10, 8, v0.t
+	vmv.v.v	v8, v12
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 1

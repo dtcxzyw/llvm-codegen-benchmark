@@ -14,10 +14,11 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vnsrl.wi	v9, v10, 0
+	vnsrl.wi	v12, v10, 0
+	vmv.v.i	v9, -1
 	vmsleu.vi	v0, v8, 7
-	vmv.v.i	v8, -1
-	vnot.v	v8, v9, v0.t
+	vnot.v	v9, v12, v0.t
+	vmv.v.v	v8, v9
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma

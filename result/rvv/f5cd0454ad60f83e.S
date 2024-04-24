@@ -22,10 +22,11 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000007:                   # @func0000000000000007
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, mu
+	vfmv.v.f	v16, fa5
 	fmv.w.x	fa4, zero
 	vmfne.vf	v0, v8, fa4
-	vfmv.v.f	v8, fa5
-	vfrdiv.vf	v8, v12, fa5, v0.t
+	vfrdiv.vf	v16, v12, fa5, v0.t
+	vmv.v.v	v8, v16
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, 264704

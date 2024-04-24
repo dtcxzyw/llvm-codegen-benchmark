@@ -9,17 +9,17 @@ func0000000000000166:                   # @func0000000000000166
 	ret
 func0000000000000344:                   # @func0000000000000344
 	vsetivli	zero, 4, e64, m2, ta, mu
+	vmv.v.i	v14, 5
 	vmsleu.vi	v0, v10, 3
-	vmv.v.i	v10, 5
-	vrsub.vi	v10, v12, 5, v0.t
-	vmsltu.vv	v0, v10, v8
+	vrsub.vi	v14, v12, 5, v0.t
+	vmsltu.vv	v0, v14, v8
 	ret
 func000000000000034c:                   # @func000000000000034c
 	vsetivli	zero, 4, e64, m2, ta, mu
+	vmv.v.i	v14, 5
 	vmsleu.vi	v0, v10, 3
-	vmv.v.i	v10, 5
-	vrsub.vi	v10, v12, 5, v0.t
-	vmsne.vv	v0, v10, v8
+	vrsub.vi	v14, v12, 5, v0.t
+	vmsne.vv	v0, v14, v8
 	ret
 func0000000000000114:                   # @func0000000000000114
 	vsetivli	zero, 4, e8, mf4, ta, ma

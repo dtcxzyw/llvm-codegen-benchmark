@@ -16,9 +16,9 @@ func0000000000000001:                   # @func0000000000000001
 	sd	a2, 8(sp)
 	ld	a1, 0(a1)
 	sd	a1, 0(sp)
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
 	mv	a1, sp
+	lui	a2, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a2)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vle64.v	v12, (a1)
 	vfmul.vf	v10, v10, fa5

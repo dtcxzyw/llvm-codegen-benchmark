@@ -11,12 +11,11 @@ func0000000000000018:                   # @func0000000000000018
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000016:                   # @func0000000000000016
+	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsle.vi	v12, v10, -1
-	vmv1r.v	v13, v0
-	vmv1r.v	v0, v12
+	vmsle.vi	v0, v10, -1
 	vadd.vi	v10, v10, 13, v0.t
-	vmv1r.v	v0, v13
+	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000008:                   # @func0000000000000008

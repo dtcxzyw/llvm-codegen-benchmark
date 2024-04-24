@@ -41,9 +41,9 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000071:                   # @func0000000000000071
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vi	v12, v12, 8
-	vmsltu.vv	v0, v10, v12
-	vmv.v.i	v10, 8
-	vzext.vf2	v10, v8, v0.t
-	vmv.v.v	v8, v10
+	vadd.vi	v14, v12, 8
+	vmv.v.i	v12, 8
+	vmsltu.vv	v0, v10, v14
+	vzext.vf2	v12, v8, v0.t
+	vmv.v.v	v8, v12
 	ret

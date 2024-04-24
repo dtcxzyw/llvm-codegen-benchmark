@@ -11,8 +11,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e32, m4, ta, mu
+	vfdiv.vv	v16, v16, v12
 	fmv.w.x	fa5, zero
 	vmfne.vf	v0, v12, fa5
-	vfdiv.vv	v12, v16, v12
-	vfmul.vv	v8, v8, v12, v0.t
+	vfmul.vv	v8, v8, v16, v0.t
 	ret
