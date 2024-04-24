@@ -26,15 +26,15 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vsrl.vi	v12, v12, 1
 	vmseq.vi	v0, v10, 0
-	vsrl.vi	v10, v12, 1
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vsrl.vi	v12, v12, 1
 	vmseq.vi	v0, v10, 0
-	vsrl.vi	v10, v12, 1
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 func0000000000000036:                   # @func0000000000000036
 	vsetivli	zero, 8, e32, m2, ta, ma

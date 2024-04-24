@@ -22,7 +22,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.i	v14, 8
 	vmseq.vv	v0, v8, v10
-	vmv.v.i	v8, 8
-	vrsub.vi	v8, v12, 8, v0.t
+	vrsub.vi	v14, v12, 8, v0.t
+	vmv.v.v	v8, v14
 	ret

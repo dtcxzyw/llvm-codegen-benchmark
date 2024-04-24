@@ -1,8 +1,8 @@
 func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vmsne.vi	v10, v10, 0
-	vmand.mm	v0, v10, v0
+	vmsne.vi	v11, v10, 0
 	vmv.v.i	v10, 0
+	vmand.mm	v0, v11, v0
 	vnsrl.wi	v10, v8, 0, v0.t
 	vmv.v.v	v8, v10
 	ret

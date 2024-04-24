@@ -15,9 +15,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vadd.vv	v12, v12, v12
 	vmsgt.vi	v0, v10, 0
-	vadd.vv	v10, v12, v12
-	vadd.vi	v8, v10, 2, v0.t
+	vadd.vi	v8, v12, 2, v0.t
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	vsetivli	zero, 4, e64, m2, ta, mu

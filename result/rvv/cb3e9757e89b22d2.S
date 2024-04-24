@@ -9,11 +9,11 @@ func0000000000000063:                   # @func0000000000000063
 	ret
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vzext.vf2	v14, v12
 	li	a0, 188
 	vmsgtu.vx	v0, v10, a0
-	vzext.vf2	v10, v12
-	vor.vi	v10, v10, 8, v0.t
-	vor.vv	v8, v10, v8
+	vor.vi	v14, v14, 8, v0.t
+	vor.vv	v8, v14, v8
 	ret
 func0000000000000029:                   # @func0000000000000029
 	vsetivli	zero, 8, e32, m2, ta, mu

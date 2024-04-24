@@ -5,8 +5,8 @@ func0000000000000011:                   # @func0000000000000011
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	vmulhu.vx	v10, v10, a0
 	vmseq.vi	v0, v8, 0
-	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v12, v8, 4, v0.t
+	vsrl.vi	v12, v10, 4, v0.t
 	vmv.v.v	v8, v12
 	ret

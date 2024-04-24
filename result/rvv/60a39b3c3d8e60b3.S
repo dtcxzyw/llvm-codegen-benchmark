@@ -17,8 +17,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000010:                   # @func0000000000000010
 	lui	a0, 4
 	vsetivli	zero, 8, e32, m2, ta, mu
-	li	a1, 112
-	vmsgtu.vx	v0, v10, a1
-	vxor.vx	v10, v12, a0
-	vor.vv	v8, v8, v10, v0.t
+	vxor.vx	v12, v12, a0
+	li	a0, 112
+	vmsgtu.vx	v0, v10, a0
+	vor.vv	v8, v8, v12, v0.t
 	ret

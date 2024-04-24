@@ -1,10 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsll.vi	v12, v12, 8
+	vor.vv	v10, v12, v10
 	li	a0, 128
 	vmseq.vx	v0, v8, a0
-	vor.vv	v8, v12, v10
-	vor.vx	v8, v8, a0, v0.t
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -225,9 +226,10 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsll.vi	v12, v12, 12
+	vor.vv	v10, v12, v10
 	vmseq.vi	v0, v8, 0
-	vor.vv	v8, v12, v10
-	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v10, v10, 8, v0.t
+	vmv.v.v	v8, v10
 	ret
 func00000000000000fa:                   # @func00000000000000fa
 	vsetivli	zero, 8, e32, m2, ta, ma

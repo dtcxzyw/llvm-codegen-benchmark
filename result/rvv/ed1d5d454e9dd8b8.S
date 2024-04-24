@@ -174,13 +174,13 @@ func0000000000000036:                   # @func0000000000000036
 	sw	a1, 64(sp)
 	mv	a1, sp
 	vsetivli	zero, 16, e16, m2, ta, ma
-	addi	a2, sp, 64
-	vle32.v	v12, (a2)
+	vle32.v	v12, (a1)
+	addi	a1, sp, 64
 	vle32.v	v16, (a1)
 	vwsll.vi	v20, v8, 16
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vor.vv	v8, v20, v12
-	vadd.vv	v8, v8, v16
+	vor.vv	v8, v20, v16
+	vadd.vv	v8, v8, v12
 	addi	a1, sp, 128
 	vse32.v	v8, (a1)
 	lw	a1, 164(sp)

@@ -4,9 +4,9 @@
 	.quad	0xc0bf400000000000              # double -8000
 func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmand.mm	v0, v0, v16
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	vmand.mm	v0, v0, v16
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	vfmerge.vfm	v8, v8, fa5, v0

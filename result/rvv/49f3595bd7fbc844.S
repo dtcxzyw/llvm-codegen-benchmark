@@ -87,7 +87,8 @@ func0000000000000096:                   # @func0000000000000096
 	ret
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 4, e32, m1, ta, mu
+	vnsrl.wi	v9, v10, 0
 	vmsle.vi	v0, v8, -1
-	vnsrl.wi	v8, v10, 0
-	vrsub.vi	v8, v8, 0, v0.t
+	vrsub.vi	v9, v9, 0, v0.t
+	vmv.v.v	v8, v9
 	ret

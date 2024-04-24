@@ -5,18 +5,19 @@ func0000000000000238:                   # @func0000000000000238
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	vsll.vi	v10, v10, 3
 	vmsgtu.vx	v0, v8, a0
-	vsll.vi	v8, v10, 3
-	vadd.vi	v8, v8, 8, v0.t
+	vadd.vi	v10, v10, 8, v0.t
+	vmv.v.v	v8, v10
 	ret
 func0000000000000071:                   # @func0000000000000071
 	vsetivli	zero, 16, e8, m1, ta, mu
 	vmseq.vi	v0, v9, 1
-	vmv.v.i	v10, 3
-	vmseq.vi	v9, v8, 1
-	vmerge.vim	v8, v10, 5, v0
-	vmv.v.v	v0, v9
-	vadd.vi	v8, v8, 2, v0.t
+	vmv.v.i	v9, 3
+	vmerge.vim	v9, v9, 5, v0
+	vmseq.vi	v0, v8, 1
+	vadd.vi	v9, v9, 2, v0.t
+	vmv.v.v	v8, v9
 	ret
 func0000000000000076:                   # @func0000000000000076
 	vsetivli	zero, 8, e8, mf2, ta, ma

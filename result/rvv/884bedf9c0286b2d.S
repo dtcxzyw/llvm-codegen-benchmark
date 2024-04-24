@@ -10,9 +10,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000030:                   # @func0000000000000030
 	li	a0, -32
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vadd.vx	v12, v12, a0
 	vmsgtu.vi	v0, v10, 1
-	vadd.vx	v10, v12, a0
-	vor.vv	v8, v8, v10, v0.t
+	vor.vv	v8, v8, v12, v0.t
 	ret
 func0000000000000070:                   # @func0000000000000070
 	vsetivli	zero, 8, e32, m2, ta, ma
