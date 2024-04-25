@@ -11,7 +11,7 @@ func0000000000000016:                   # @func0000000000000016
 	addi	a0, a0, 16
 	ret
 func0000000000000017:                   # @func0000000000000017
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	lui	a3, 748983
 	addiw	a3, a3, -585
 	slli	a4, a3, 33

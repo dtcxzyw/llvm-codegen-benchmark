@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v8, v8, 3
+	vsrl.vi	v8, v8, 3
 	vmul.vx	v8, v8, a0
 	ret
 .LCPI3_0:

@@ -1,6 +1,6 @@
 func000000000000000e:                   # @func000000000000000e
 	sub	a2, a2, a1
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	li	a1, 24
 	mul	a1, a2, a1
 	add	a0, a0, a1

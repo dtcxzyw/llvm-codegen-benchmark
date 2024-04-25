@@ -29,7 +29,7 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	li	a3, 104
 	mul	a2, a2, a3
 	add	a0, a0, a2

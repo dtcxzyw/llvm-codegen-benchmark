@@ -14,7 +14,7 @@ func000000000000000c:                   # @func000000000000000c
 	sh1add	a2, a2, a2
 	slli	a2, a2, 9
 	add	a0, a0, a2
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	ret

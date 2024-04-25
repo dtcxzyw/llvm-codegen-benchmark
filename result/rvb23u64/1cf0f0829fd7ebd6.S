@@ -10,7 +10,7 @@ func000000000000000b:                   # @func000000000000000b
 	sub	a0, a0, a2
 	ret
 func000000000000002b:                   # @func000000000000002b
-	srai	a2, a2, 1
+	srli	a2, a2, 1
 	neg	a1, a1
 	sub	a1, a1, a2
 	sh1add	a1, a1, a1
