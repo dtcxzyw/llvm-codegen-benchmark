@@ -239,6 +239,7 @@ int main(int argc, char **argv) {
       uint32_t MaxElementCount = getMaxElementCount(F, M->getDataLayout());
       if (MaxElementCount <= 1U)
         continue;
+      MaxElementCount = 1U << Log2_32(MaxElementCount);
       auto NewF = cast<Function>(
           NewM.getOrInsertFunction(F.getName(),
                                    cast<FunctionType>(getVectorType(
