@@ -1,5 +1,4 @@
 func0000000000000018:                   # @func0000000000000018
-	andi	a1, a1, -1
 	addi	a1, a1, 12
 	slli	a0, a0, 32
 	srli	a0, a0, 32

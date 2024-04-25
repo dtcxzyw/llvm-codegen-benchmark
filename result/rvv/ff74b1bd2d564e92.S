@@ -1,7 +1,6 @@
 func0000000000000070:                   # @func0000000000000070
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vwsll.vi	v10, v8, 16
-	vmv2r.v	v8, v10
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vwsll.vi	v8, v10, 16
 	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma

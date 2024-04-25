@@ -5,7 +5,6 @@ func0000000000000070:                   # @func0000000000000070
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	andi	a2, a2, -1
 	negw	a2, a2
 	srl	a1, a1, a2
 	or	a0, a0, a1
