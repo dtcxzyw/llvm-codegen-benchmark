@@ -32,7 +32,7 @@ func0000000000000003:                   # @func0000000000000003
 	mul	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	srai	a0, a0, 5
-	slli	a1, a0, 7
-	sh3add	a0, a0, a1
+	srai	a1, a0, 5
+	slli	a0, a0, 2
+	sh3add	a0, a1, a0
 	ret

@@ -9,15 +9,15 @@ func000000000000000f:                   # @func000000000000000f
 	sh1add	a0, a0, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
-	mul	a2, a0, a0
-	mulhu	a0, a0, a0
-	li	a1, 19
-	mulhu	a1, a2, a1
-	sh3add	a3, a0, a0
-	sh1add	a0, a3, a0
-	add	a1, a1, a0
-	sh3add	a0, a2, a2
-	sh1add	a0, a0, a2
+	mulhu	a1, a0, a0
+	mul	a0, a0, a0
+	li	a2, 19
+	mulhu	a2, a0, a2
+	sh3add	a3, a1, a1
+	sh1add	a1, a3, a1
+	add	a1, a1, a2
+	sh3add	a2, a0, a0
+	sh1add	a0, a2, a0
 	ret
 func000000000000001e:                   # @func000000000000001e
 	sext.w	a0, a0
