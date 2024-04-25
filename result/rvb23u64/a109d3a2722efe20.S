@@ -16,7 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a2, 103
 	mul	a1, a1, a2
 	bexti	a2, a1, 15
-	srli	a1, a1, 10
+	srai	a1, a1, 8
+	srli	a1, a1, 2
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1

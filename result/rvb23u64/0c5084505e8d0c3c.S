@@ -110,9 +110,9 @@ func00000000000000f7:                   # @func00000000000000f7
 	sext.w	a0, a0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	zext.w	a2, a2
+	slli.uw	a2, a2, 1
 	sh2add	a2, a2, a2
-	sh1add	a0, a2, a0
+	add	a0, a0, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 33
 	add	a0, a0, a1

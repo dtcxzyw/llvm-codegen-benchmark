@@ -1,9 +1,9 @@
 func000000000000003f:                   # @func000000000000003f
 	andi	a1, a0, 15
+	sh2add	a1, a1, a1
 	srliw	a0, a0, 4
 	li	a2, 100
 	mul	a0, a0, a2
-	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

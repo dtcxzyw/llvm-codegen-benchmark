@@ -9,7 +9,7 @@ func00000000000000ff:                   # @func00000000000000ff
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 255
 	sh1add	a1, a1, a1
-	slli	a1, a1, 1
-	sh3add	a0, a0, a1
+	sh2add	a0, a0, a1
+	slli	a0, a0, 1
 	addiw	a0, a0, 16
 	ret

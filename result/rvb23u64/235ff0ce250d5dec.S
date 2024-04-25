@@ -1,7 +1,7 @@
 func00000000000000f8:                   # @func00000000000000f8
 	sh1add	a1, a1, a1
-	slli	a1, a1, 2
-	srliw	a1, a1, 3
+	slli	a1, a1, 34
+	srli	a1, a1, 35
 	addw	a0, a0, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1

@@ -6,8 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sh1add	a2, a2, a2
-	slli	a2, a2, 1
 	sh1add	a0, a1, a0
+	slli	a2, a2, 1
 	sh1add.uw	a0, a2, a0
 	addi	a0, a0, 4
 	ret

@@ -18,9 +18,9 @@ func0000000000000055:                   # @func0000000000000055
 	mul	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
+	sh1add	a2, a2, a2
 	subw	a0, a0, a1
-	sh1add	a1, a2, a2
-	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
 	li	a1, 60
 	mulw	a0, a0, a1
 	ret

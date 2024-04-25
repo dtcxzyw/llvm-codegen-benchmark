@@ -5,9 +5,9 @@ func00000000000000e4:                   # @func00000000000000e4
 	sltu	a0, a0, a1
 	ret
 func0000000000000071:                   # @func0000000000000071
-	zext.w	a2, a2
+	slli.uw	a2, a2, 1
 	sh1add	a2, a2, a2
-	sh1add	a1, a2, a1
+	add	a1, a1, a2
 	addi	a1, a1, -6
 	addi	a0, a0, 6
 	xor	a0, a0, a1
