@@ -1,6 +1,6 @@
 func0000000000000171:                   # @func0000000000000171
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -10,7 +10,7 @@ func0000000000000171:                   # @func0000000000000171
 	ret
 func0000000000000176:                   # @func0000000000000176
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -19,7 +19,7 @@ func0000000000000176:                   # @func0000000000000176
 	ret
 func0000000000000071:                   # @func0000000000000071
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000071:                   # @func0000000000000071
 	ret
 func0000000000000174:                   # @func0000000000000174
 	sext.w	a0, a0
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

@@ -1,8 +1,8 @@
 func0000000000000041:                   # @func0000000000000041
 	li	a3, 208
 	mul	a2, a2, a3
+	subw	a1, a1, a0
 	add	a1, a1, a2
-	sub	a1, a1, a0
 	sraiw	a0, a1, 31
 	xor	a1, a1, a0
 	subw	a0, a1, a0
@@ -39,8 +39,8 @@ func0000000000000053:                   # @func0000000000000053
 func0000000000000000:                   # @func0000000000000000
 	li	a3, 1000
 	mul	a2, a2, a3
+	subw	a1, a1, a0
 	add	a1, a1, a2
-	sub	a1, a1, a0
 	sraiw	a0, a1, 31
 	xor	a1, a1, a0
 	subw	a0, a1, a0

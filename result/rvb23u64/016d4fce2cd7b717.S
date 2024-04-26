@@ -1,6 +1,6 @@
 func0000000000000010:                   # @func0000000000000010
-	or	a2, a2, a4
 	or	a3, a3, a5
+	or	a2, a2, a4
 	lui	a4, 960284
 	addi	a4, a4, -1545
 	slli.uw	a4, a4, 12

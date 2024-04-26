@@ -1,6 +1,8 @@
 func0000000000000204:                   # @func0000000000000204
 	sext.w	a0, a0
-	srliw	a1, a1, 12
+	srli	a1, a1, 12
+	slli	a1, a1, 44
+	srli	a1, a1, 44
 	sltu	a2, a0, a1
 	sltu	a0, a1, a0
 	neg	a1, a2

@@ -15,7 +15,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a0, a1, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -26,7 +26,7 @@ func0000000000000051:                   # @func0000000000000051
 	seqz	a0, a0
 	ret
 func0000000000000151:                   # @func0000000000000151
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -47,7 +47,7 @@ func00000000000001f8:                   # @func00000000000001f8
 	sltu	a0, a1, a0
 	ret
 func0000000000000158:                   # @func0000000000000158
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -57,7 +57,7 @@ func0000000000000158:                   # @func0000000000000158
 	sltu	a0, a1, a0
 	ret
 func0000000000000154:                   # @func0000000000000154
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -83,7 +83,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	sltu	a0, a0, a1
 	ret
 func00000000000001f4:                   # @func00000000000001f4
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -93,7 +93,7 @@ func00000000000001f4:                   # @func00000000000001f4
 	sltu	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -103,7 +103,7 @@ func0000000000000006:                   # @func0000000000000006
 	slt	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

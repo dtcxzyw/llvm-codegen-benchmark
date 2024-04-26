@@ -16,7 +16,7 @@ func0000000000000020:                   # @func0000000000000020
 	sub	a0, a0, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	zext.w	a2, a1
 	lui	a3, 422303
 	addiw	a3, a3, 865
@@ -33,7 +33,7 @@ func0000000000000000:                   # @func0000000000000000
 	subw	a0, a0, a2
 	ret
 func0000000000000045:                   # @func0000000000000045
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	slli	a2, a1, 32
 	lui	a3, 699051
 	addi	a3, a3, -1365
@@ -47,7 +47,7 @@ func0000000000000045:                   # @func0000000000000045
 	subw	a0, a0, a2
 	ret
 func0000000000000025:                   # @func0000000000000025
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	slli	a2, a1, 32
 	lui	a3, 838861
 	addi	a3, a3, -819

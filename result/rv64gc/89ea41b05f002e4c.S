@@ -1,15 +1,15 @@
 func0000000000000131:                   # @func0000000000000131
-	srli	a2, a1, 8
-	lui	a3, 16
-	addiw	a3, a3, -256
-	and	a2, a2, a3
-	srliw	a4, a1, 24
-	or	a2, a2, a4
-	and	a3, a3, a1
+	lui	a2, 16
+	addiw	a2, a2, -256
+	and	a3, a1, a2
 	slli	a3, a3, 8
-	slliw	a1, a1, 24
-	or	a1, a1, a3
+	slliw	a4, a1, 24
+	or	a3, a3, a4
+	srli	a4, a1, 8
+	and	a2, a2, a4
+	srliw	a1, a1, 24
 	or	a1, a1, a2
+	or	a1, a1, a3
 	seqz	a2, a1
 	add	a1, a1, a2
 	slli	a1, a1, 32

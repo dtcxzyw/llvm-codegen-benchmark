@@ -29,7 +29,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a1, 3
-	sub	a2, a2, a1
+	subw	a2, a2, a1
 	addiw	a2, a2, -7
 	sltiu	a0, a0, 54
 	neg	a0, a0
@@ -38,7 +38,7 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000051:                   # @func0000000000000051
 	sext.w	a0, a0
 	slli	a2, a1, 3
-	sub	a2, a2, a1
+	subw	a2, a2, a1
 	addiw	a2, a2, 30
 	seqz	a0, a0
 	addi	a0, a0, -1

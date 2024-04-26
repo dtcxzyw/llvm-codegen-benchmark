@@ -1,6 +1,6 @@
 func000000000000001f:                   # @func000000000000001f
-	sext.w	a1, a1
-	sgtz	a2, a1
+	sext.w	a2, a1
+	sgtz	a2, a2
 	negw	a2, a2
 	and	a1, a1, a2
 	slli	a1, a1, 32

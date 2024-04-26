@@ -27,9 +27,9 @@ func000000000000000f:                   # @func000000000000000f
 	sll	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slli	a1, a0, 48
-	srli	a1, a1, 48
-	addi	a1, a1, -8
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	addi	a1, a0, -8
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1

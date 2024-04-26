@@ -1,6 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a2, a2
-	sgtz	a3, a2
+	sext.w	a3, a2
+	sgtz	a3, a3
 	negw	a3, a3
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -8,8 +8,8 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a0, a0
 	ret
 func000000000000008a:                   # @func000000000000008a
-	sext.w	a2, a2
-	sgtz	a3, a2
+	sext.w	a3, a2
+	sgtz	a3, a3
 	negw	a3, a3
 	and	a2, a2, a3
 	add	a0, a0, a1

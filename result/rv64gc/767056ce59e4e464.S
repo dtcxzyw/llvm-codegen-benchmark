@@ -7,5 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	blt	a0, a1, .LBB0_2
 	li	a0, 93
 .LBB0_2:                                # %entry
-	fcvt.d.l	fa0, a0
+	fcvt.d.w	fa0, a0
 	ret
