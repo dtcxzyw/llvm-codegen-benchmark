@@ -1,10 +1,11 @@
 func0000000000000218:                   # @func0000000000000218
 	andi	a0, a0, 255
+	li	a2, 1
+	sll	a1, a2, a1
 	lui	a2, 262145
 	slli	a2, a2, 2
 	addi	a2, a2, -511
-	srl	a1, a2, a1
-	andi	a1, a1, 1
+	and	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 64
 	xori	a0, a0, 1

@@ -9,7 +9,8 @@ func00000000000000c8:                   # @func00000000000000c8
 func00000000000000cc:                   # @func00000000000000cc
 	lui	a2, 20
 	addiw	a2, a2, 780
-	bext	a1, a2, a1
+	srl	a1, a2, a1
+	andi	a1, a1, 1
 	or	a0, a0, a1
 	snez	a0, a0
 	ret

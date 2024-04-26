@@ -16,7 +16,8 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	srai	a1, a1, 32
+	srli	a1, a1, 32
+	sext.w	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -1
 	slt	a1, a2, a1

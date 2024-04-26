@@ -1,5 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
-	srl	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	bset	a2, zero, a2
+	and	a1, a1, a2
+	snez	a1, a1
+	andn	a0, a1, a0
 	ret

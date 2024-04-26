@@ -21,8 +21,6 @@ func0000000000000104:                   # @func0000000000000104
 	vadd.vi	v8, v8, -16
 	li	a0, 17
 	vmsltu.vx	v10, v8, a0
-	vmandn.mm	v8, v0, v12
-	vmor.mm	v9, v0, v10
-	vmand.mm	v9, v9, v12
-	vmor.mm	v0, v9, v8
+	vmand.mm	v8, v12, v10
+	vmor.mm	v0, v0, v8
 	ret

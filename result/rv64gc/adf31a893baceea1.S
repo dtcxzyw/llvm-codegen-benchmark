@@ -42,7 +42,8 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a1
 	ret
 func000000000000026c:                   # @func000000000000026c
-	srai	a1, a1, 32
+	srli	a1, a1, 32
+	sext.w	a1, a1
 	slti	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -51,6 +52,7 @@ func000000000000024c:                   # @func000000000000024c
 	andi	a0, a0, 255
 	slli	a1, a1, 48
 	srli	a1, a1, 56
+	andi	a1, a1, 255
 	sltiu	a1, a1, 3
 	addi	a0, a0, -3
 	snez	a0, a0

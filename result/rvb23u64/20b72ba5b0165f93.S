@@ -1,6 +1,6 @@
 func000000000000004a:                   # @func000000000000004a
 	sub	a1, a1, a2
-	srli	a1, a1, 3
+	srai	a1, a1, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2

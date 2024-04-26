@@ -1,7 +1,8 @@
 func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	srli	a2, a2, 32
+	slli	a2, a2, 16
+	srli	a2, a2, 48
 	addi	a2, a2, -1
 	slli	a2, a2, 48
 	srai	a2, a2, 48
@@ -12,7 +13,8 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	srli	a2, a2, 32
+	slli	a2, a2, 16
+	srli	a2, a2, 48
 	addi	a2, a2, -1
 	slli	a2, a2, 48
 	srai	a2, a2, 48

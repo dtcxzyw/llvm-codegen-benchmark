@@ -6,7 +6,7 @@ func000000000000001c:                   # @func000000000000001c
 	srli	a2, a2, 32
 	add	a2, a2, a1
 	srliw	a3, a2, 31
-	srli	a2, a2, 5
+	sraiw	a2, a2, 5
 	add	a2, a2, a3
 	li	a3, 60
 	mul	a2, a2, a3

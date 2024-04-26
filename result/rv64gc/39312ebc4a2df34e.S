@@ -14,6 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	srli	a1, a1, 48
 	slli	a2, a2, 56
 	srli	a2, a2, 57
+	andi	a2, a2, 255
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

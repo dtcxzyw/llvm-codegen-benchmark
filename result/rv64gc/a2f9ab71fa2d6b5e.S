@@ -3,6 +3,8 @@ func0000000000000078:                   # @func0000000000000078
 	slli	a1, a1, 48
 	srai	a1, a1, 48
 	fcvt.l.d	a2, fa0, rtz
+	slli	a2, a2, 48
+	srai	a2, a2, 48
 	slt	a1, a2, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
