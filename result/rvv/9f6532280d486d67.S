@@ -71,8 +71,8 @@ func0000000000000025:                   # @func0000000000000025
 	vadd.vv	v12, v14, v12
 	vsra.vi	v12, v12, 20
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	lui	a0, 638253
 	addi	a0, a0, 2007
 	vmulh.vx	v12, v8, a0

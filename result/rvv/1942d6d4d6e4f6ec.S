@@ -4,8 +4,8 @@ func0000000000000080:                   # @func0000000000000080
 	vmv.v.x	v14, a0
 	vmsgtu.vi	v0, v12, 8
 	vadd.vx	v14, v12, a0, v0.t
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret
 func00000000000001a5:                   # @func00000000000001a5
 	vsetivli	zero, 8, e32, m2, ta, mu

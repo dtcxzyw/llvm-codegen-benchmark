@@ -9,8 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v12, v14, v12
 	vsra.vi	v12, v12, 2
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 .LCPI1_0:
 	.quad	1654928120671552141             # 0x16f77c5b896ec28d
@@ -27,8 +27,8 @@ func00000000000000a5:                   # @func00000000000000a5
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 17
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 .LCPI2_0:
 	.quad	3389364707791071069             # 0x2f09713e7e21e75d
@@ -47,8 +47,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 26
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, 1
@@ -62,7 +62,7 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 20
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
 	ret

@@ -19,8 +19,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	vmulh.vx	v8, v8, a0
 	vsra.vi	v8, v8, 6
 	vsrl.vi	v12, v8, 31
-	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -33,6 +33,6 @@ func0000000000000061:                   # @func0000000000000061
 	vadd.vv	v8, v12, v8
 	vsra.vi	v8, v8, 2
 	vsrl.vi	v12, v8, 31
-	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret

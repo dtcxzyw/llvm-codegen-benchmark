@@ -4,11 +4,11 @@ func0000000000000020:                   # @func0000000000000020
 	vsrl.vi	v14, v14, 29
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 3
-	vadd.vv	v8, v12, v8
-	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
+	vsrl.vi	v14, v10, 31
+	vadd.vv	v10, v10, v14
 	vsra.vi	v10, v10, 1
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v12, v8
 	vadd.vi	v8, v8, -5
 	ret
 .LCPI1_0:

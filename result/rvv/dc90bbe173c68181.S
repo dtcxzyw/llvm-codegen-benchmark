@@ -8,8 +8,8 @@ func0000000000000014:                   # @func0000000000000014
 	vadd.vv	v12, v12, v14
 	li	a0, 12
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v8, v10
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -1
 	ret
 .LCPI1_0:

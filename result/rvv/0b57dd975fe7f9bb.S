@@ -5,7 +5,7 @@ func000000000000001b:                   # @func000000000000001b
 	vand.vx	v12, v12, a0
 	li	a0, 44
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v10, v10, v12
 	vsrl.vx	v8, v8, a0
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret

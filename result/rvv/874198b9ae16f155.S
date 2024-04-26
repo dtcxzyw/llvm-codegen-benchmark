@@ -12,8 +12,8 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vnmsub.vx	v14, a0, v12
-	vadd.vv	v10, v14, v10
-	vadd.vv	v10, v10, v8
+	vadd.vv	v8, v10, v8
+	vadd.vv	v10, v14, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
@@ -28,8 +28,8 @@ func0000000000000010:                   # @func0000000000000010
 	vadd.vv	v14, v14, v16
 	li	a0, 94
 	vnmsub.vx	v14, a0, v12
-	vadd.vv	v10, v14, v10
-	vadd.vv	v10, v10, v8
+	vadd.vv	v8, v10, v8
+	vadd.vv	v10, v14, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret

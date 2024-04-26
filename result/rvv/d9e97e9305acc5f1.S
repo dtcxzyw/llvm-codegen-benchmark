@@ -9,8 +9,8 @@ func0000000000000050:                   # @func0000000000000050
 	lui	a0, 879
 	addiw	a0, a0, -384
 	vnmsub.vx	v14, a0, v12
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 351844
@@ -21,8 +21,8 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 24414
 	addi	a0, a0, 256
 	vnmsub.vx	v14, a0, v12
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret
 .LCPI2_0:
 	.quad	-7442832613395060283            # 0x98b5bf2c03e529c5
@@ -36,6 +36,6 @@ func0000000000000055:                   # @func0000000000000055
 	slli	a0, a0, 1
 	addi	a0, a0, 1024
 	vnmsub.vx	v14, a0, v12
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret

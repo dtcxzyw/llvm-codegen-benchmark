@@ -22,8 +22,8 @@ func000000000000009a:                   # @func000000000000009a
 	vadd.vv	v8, v12, v8
 	vsra.vi	v8, v8, 12
 	vsrl.vi	v12, v8, 31
-	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	vmsgt.vi	v0, v8, 14
 	ret
 .LCPI2_0:

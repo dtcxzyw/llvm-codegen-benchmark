@@ -77,8 +77,8 @@ func000000000000010f:                   # @func000000000000010f
 	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	ret
 func000000000000030c:                   # @func000000000000030c
 	vmv1r.v	v11, v0

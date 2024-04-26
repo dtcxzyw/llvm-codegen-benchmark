@@ -22,9 +22,9 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 56
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
-	vadd.vv	v10, v12, v10
 	vsll.vi	v8, v8, 16
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret
 func00000000000000bf:                   # @func00000000000000bf
 	vsetivli	zero, 16, e16, m2, ta, ma

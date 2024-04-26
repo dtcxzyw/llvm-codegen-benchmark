@@ -20,9 +20,9 @@ func0000000000000005:                   # @func0000000000000005
 	vsub.vv	v12, v14, v12
 	vsra.vi	v12, v12, 1
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v14
 	ret
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma

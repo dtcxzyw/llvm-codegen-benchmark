@@ -27,14 +27,14 @@ func00000000000000af:                   # @func00000000000000af
 	li	a0, 96
 	vmv.v.x	v12, a0
 	vmerge.vim	v12, v12, 2, v0
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, 0
 	vmv.v.i	v12, 6
 	vmerge.vim	v12, v12, 10, v0
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret

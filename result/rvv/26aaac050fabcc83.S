@@ -12,9 +12,9 @@ func000000000000003d:                   # @func000000000000003d
 	lui	a0, 16
 	addiw	a0, a0, -15
 	vmul.vx	v14, v14, a0
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v10, v12
+	vsub.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	lui	a0, 1048544
 	addiw	a0, a0, 30
 	vadd.vx	v8, v8, a0

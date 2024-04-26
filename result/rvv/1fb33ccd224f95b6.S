@@ -18,8 +18,8 @@ func000000000000001f:                   # @func000000000000001f
 	vadd.vv	v14, v16, v14
 	vsrl.vi	v14, v14, 15
 	vmul.vx	v14, v14, a0
-	vsub.vv	v10, v14, v10
-	vadd.vv	v8, v8, v10
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v14
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v13
 	ret

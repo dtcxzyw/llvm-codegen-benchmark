@@ -22,6 +22,6 @@ func0000000000000001:                   # @func0000000000000001
 	vsub.vv	v8, v12, v8
 	vsra.vi	v8, v8, 1
 	vsrl.vi	v12, v8, 31
-	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret

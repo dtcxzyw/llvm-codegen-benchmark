@@ -38,8 +38,8 @@ func0000000000000041:                   # @func0000000000000041
 	vmulh.vx	v12, v10, a0
 	vsra.vi	v12, v12, 5
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v14
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vmulh.vx	v10, v10, a0

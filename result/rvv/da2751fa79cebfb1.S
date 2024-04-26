@@ -9,8 +9,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 17
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 262144
 	addiw	a0, a0, -1225
 	slli	a0, a0, 2
@@ -26,8 +26,8 @@ func0000000000000054:                   # @func0000000000000054
 	vsrl.vx	v14, v14, a0
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 2
-	vsub.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v8, v12
 	li	a0, 31
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -30,8 +30,8 @@ func000000000000001c:                   # @func000000000000001c
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 20972
 	addi	a0, a0, -1968
 	vmv.v.x	v10, a0

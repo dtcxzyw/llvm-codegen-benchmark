@@ -13,8 +13,8 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vv	v12, v12, v14
 	li	a0, 400
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v10, v8
+	vsub.vv	v8, v12, v8
 	ret
 .LCPI1_0:
 	.quad	4137408090565272301             # 0x396b06bcc8f862ed
@@ -31,6 +31,6 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 36
 	addiw	a0, a0, -1359
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v10, v8
+	vsub.vv	v8, v12, v8
 	ret

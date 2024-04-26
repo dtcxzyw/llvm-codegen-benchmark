@@ -42,8 +42,8 @@ func0000000000000015:                   # @func0000000000000015
 	vsrl.vi	v12, v12, 3
 	li	a0, 12
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v8, v10
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -13
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -54,8 +54,8 @@ func0000000000000004:                   # @func0000000000000004
 	vsrl.vi	v12, v12, 3
 	li	a0, 12
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v8, v10
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -11
 	ret
 func0000000000000035:                   # @func0000000000000035
@@ -78,7 +78,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmulhu.vx	v12, v12, a0
 	li	a0, 28
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v8, v10
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -4
 	ret

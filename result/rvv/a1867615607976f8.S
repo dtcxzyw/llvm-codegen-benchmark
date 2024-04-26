@@ -7,10 +7,10 @@ func000000000000000f:                   # @func000000000000000f
 	vsrl.vi	v10, v10, 9
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 11
+	vmv.v.i	v12, 0
+	vmerge.vim	v12, v12, 1, v0
+	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v10, v8
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	7429236654343298871             # 0x6719f36016719f37
@@ -23,8 +23,8 @@ func0000000000000005:                   # @func0000000000000005
 	vsrl.vi	v10, v10, 1
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 8
+	vmv.v.i	v12, 0
+	vmerge.vim	v12, v12, 1, v0
+	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v10, v8
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v8, v10
 	ret

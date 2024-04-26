@@ -24,8 +24,8 @@ func0000000000000054:                   # @func0000000000000054
 	vadd.vv	v10, v12, v10
 	vsra.vi	v10, v10, 8
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	li	a0, -1970
 	vadd.vx	v8, v8, a0
 	li	a0, 68

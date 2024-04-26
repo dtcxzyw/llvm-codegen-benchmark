@@ -12,9 +12,9 @@ func0000000000000011:                   # @func0000000000000011
 	vadd.vv	v14, v14, v16
 	li	a0, 400
 	vnmsub.vx	v14, a0, v12
-	vsub.vv	v12, v14, v12
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v12, v8
+	vsub.vv	v8, v12, v8
+	vsub.vv	v8, v14, v8
 	li	a0, 365
 	vmul.vx	v8, v8, a0
 	ret
@@ -28,9 +28,9 @@ func0000000000000054:                   # @func0000000000000054
 	vadd.vv	v14, v14, v16
 	li	a0, 400
 	vnmsub.vx	v14, a0, v12
-	vsub.vv	v12, v14, v12
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v12, v8
+	vsub.vv	v8, v12, v8
+	vsub.vv	v8, v14, v8
 	li	a0, 365
 	vmul.vx	v8, v8, a0
 	ret
@@ -44,9 +44,9 @@ func0000000000000055:                   # @func0000000000000055
 	vadd.vv	v14, v14, v16
 	li	a0, 400
 	vnmsub.vx	v14, a0, v12
-	vsub.vv	v12, v14, v12
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v12, v8
+	vsub.vv	v8, v12, v8
+	vsub.vv	v8, v14, v8
 	li	a0, 365
 	vmul.vx	v8, v8, a0
 	ret

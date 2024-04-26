@@ -5,7 +5,7 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a0, 8
 	addi	a0, a0, -128
 	vand.vx	v10, v10, a0
-	vadd.vv	v10, v10, v12
+	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v10, v8
 	lui	a0, 4096
 	addi	a0, a0, -1

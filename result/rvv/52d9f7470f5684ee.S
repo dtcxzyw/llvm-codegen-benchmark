@@ -7,8 +7,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	addi	a0, a0, -819
 	vmulhu.vx	v12, v14, a0
 	vsrl.vi	v12, v12, 2
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	lui	a0, 42054
@@ -22,8 +22,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	addi	a0, a0, 1311
 	vmulhu.vx	v12, v14, a0
 	vsrl.vi	v12, v12, 5
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func00000000000000a5:                   # @func00000000000000a5
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -34,6 +34,6 @@ func00000000000000a5:                   # @func00000000000000a5
 	addi	a0, a0, -819
 	vmulhu.vx	v12, v14, a0
 	vsrl.vi	v12, v12, 2
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret

@@ -7,8 +7,8 @@ func0000000000000009:                   # @func0000000000000009
 	vsub.vv	v10, v12, v10
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,8 +27,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	ret
 .LCPI3_0:
 	.quad	-2361183241434822607            # 0xdf3b645a1cac0831

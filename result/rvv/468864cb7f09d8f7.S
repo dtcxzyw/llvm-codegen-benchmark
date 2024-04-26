@@ -4,8 +4,8 @@ func000000000000180a:                   # @func000000000000180a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v12
 	vmsgt.vi	v0, v8, 0
 	ret
 func0000000000001811:                   # @func0000000000001811

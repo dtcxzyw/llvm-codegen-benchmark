@@ -53,7 +53,7 @@ func000000000000010c:                   # @func000000000000010c
 	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	vadd.vi	v8, v8, 3
 	ret

@@ -8,8 +8,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	ret
 .LCPI1_0:
 	.quad	1403534266930087369             # 0x137a5afac274c5c9
@@ -49,6 +49,6 @@ func0000000000000009:                   # @func0000000000000009
 	vadd.vv	v10, v12, v10
 	vsra.vi	v10, v10, 14
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	ret

@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vv	v11, v11, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v11
+	vsext.vf2	v14, v10
+	vmul.vv	v8, v8, v14
 	vmul.vv	v8, v12, v8
-	vsext.vf2	v12, v10
-	vmul.vv	v8, v8, v12
 	ret

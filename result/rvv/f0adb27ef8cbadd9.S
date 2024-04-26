@@ -6,6 +6,6 @@ func0000000000000000:                   # @func0000000000000000
 	fmv.w.x	fa5, a0
 	vfmacc.vf	v14, fa5, v12
 	vfcvt.rtz.x.f.v	v12, v14
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret

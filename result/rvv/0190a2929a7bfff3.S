@@ -3,7 +3,7 @@ func0000000000000005:                   # @func0000000000000005
 	vzext.vf4	v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v10, v12, v10
 	vsrl.vi	v8, v8, 24
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
+	vsub.vv	v8, v8, v10
 	ret

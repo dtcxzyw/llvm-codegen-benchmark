@@ -7,8 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	vror.vi	v12, v12, 33
 	vmul.vx	v12, v12, a0
 	vror.vi	v12, v12, 63
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func0000000000000090:                   # @func0000000000000090
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -17,6 +17,6 @@ func0000000000000090:                   # @func0000000000000090
 	addi	a0, a0, -1615
 	vmul.vx	v12, v12, a0
 	vror.vi	v12, v12, 14
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret

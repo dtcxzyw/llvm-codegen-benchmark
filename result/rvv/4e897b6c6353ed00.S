@@ -5,8 +5,8 @@ func0000000000000005:                   # @func0000000000000005
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 11
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 2, v0.t
 	ret
 .LCPI1_0:

@@ -35,10 +35,10 @@ func000000000000006c:                   # @func000000000000006c
 	srli	a1, a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a1
-	vadd.vv	v10, v12, v10
 	li	a1, 44
 	vsll.vx	v8, v8, a1
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	slli	a0, a0, 44
 	vand.vx	v8, v8, a0
 	ret

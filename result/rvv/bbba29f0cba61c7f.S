@@ -12,6 +12,6 @@ func0000000000000040:                   # @func0000000000000040
 	lui	a0, 21094
 	addiw	a0, a0, -1024
 	vnmsub.vx	v14, a0, v12
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret

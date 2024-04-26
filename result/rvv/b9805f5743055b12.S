@@ -21,8 +21,8 @@ func0000000000000010:                   # @func0000000000000010
 	vmulh.vx	v12, v12, a0
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v14
 	lui	a0, 36
 	addi	a0, a0, -1359
 	vmacc.vx	v8, a0, v10
@@ -34,8 +34,8 @@ func0000000000000015:                   # @func0000000000000015
 	vmulh.vx	v12, v12, a0
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v14
 	lui	a0, 36
 	addi	a0, a0, -1359
 	vmacc.vx	v8, a0, v10

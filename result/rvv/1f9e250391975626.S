@@ -5,8 +5,8 @@ func0000000000000022:                   # @func0000000000000022
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 1048568
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
@@ -18,8 +18,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vmsle.vi	v10, v8, 0
 	vmor.mm	v0, v10, v0
 	ret
@@ -30,8 +30,8 @@ func000000000000000c:                   # @func000000000000000c
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 18
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vmsle.vi	v10, v8, -1
 	vmor.mm	v0, v10, v0
 	ret

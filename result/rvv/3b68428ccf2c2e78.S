@@ -12,9 +12,9 @@ func000000000000001f:                   # @func000000000000001f
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmv.v.i	v10, 11
 	vmerge.vim	v10, v10, 7, v0
-	vadd.vv	v8, v10, v8
 	vand.vi	v9, v9, 2
 	vadd.vv	v8, v8, v9
+	vadd.vv	v8, v10, v8
 	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 4, e16, mf2, ta, ma

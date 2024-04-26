@@ -32,8 +32,8 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a0, a0, 179
 	slli	a0, a0, 7
 	vnmsub.vx	v12, a0, v10
-	vsub.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v10, v8
+	vsub.vv	v8, v12, v8
 	lui	a0, 1024500
 	addiw	a0, a0, -179
 	slli	a0, a0, 7

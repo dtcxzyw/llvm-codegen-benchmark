@@ -7,8 +7,8 @@ func0000000000000016:                   # @func0000000000000016
 	vmulh.vx	v8, v8, a0
 	vsra.vi	v8, v8, 1
 	vsrl.vi	v12, v8, 31
-	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	vmsle.vi	v0, v8, 0
 	ret
 func0000000000000094:                   # @func0000000000000094

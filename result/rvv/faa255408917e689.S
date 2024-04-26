@@ -13,18 +13,18 @@ func0000000000000045:                   # @func0000000000000045
 	li	a0, -1900
 	vadd.vx	v10, v10, a0
 	li	a0, 63
-	vsrl.vx	v14, v10, a0
 	lui	a1, %hi(.LCPI0_1)
 	ld	a1, %lo(.LCPI0_1)(a1)
+	vsrl.vx	v14, v10, a0
 	vsra.vi	v10, v10, 6
 	vadd.vv	v10, v10, v14
+	vmulh.vx	v14, v12, a1
+	vadd.vv	v12, v14, v12
+	vsrl.vx	v14, v12, a0
+	vsra.vi	v12, v12, 8
+	vadd.vv	v12, v12, v14
+	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v10, v8
-	vmulh.vx	v10, v12, a1
-	vadd.vv	v10, v10, v12
-	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 8
-	vadd.vv	v10, v10, v12
-	vadd.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	7854979361862454525             # 0x6d027e1cb5d60cfd
@@ -43,17 +43,17 @@ func0000000000000040:                   # @func0000000000000040
 	addiw	a0, a0, 1604
 	vadd.vx	v10, v10, a0
 	li	a0, 63
-	vsrl.vx	v14, v10, a0
 	lui	a1, %hi(.LCPI1_1)
 	ld	a1, %lo(.LCPI1_1)(a1)
+	vsrl.vx	v14, v10, a0
 	vsra.vi	v10, v10, 23
 	vadd.vv	v10, v10, v14
+	vmulh.vx	v12, v12, a1
+	vsrl.vx	v14, v12, a0
+	vsra.vi	v12, v12, 26
+	vadd.vv	v12, v12, v14
+	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v10, v8
-	vmulh.vx	v10, v12, a1
-	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 26
-	vadd.vv	v10, v10, v12
-	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 1899
@@ -70,8 +70,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 7
 	vsrl.vi	v14, v10, 31
-	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	vadd.vv	v8, v8, v12
 	ret
 func000000000000004d:                   # @func000000000000004d

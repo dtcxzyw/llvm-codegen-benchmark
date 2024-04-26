@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vror.vi	v12, v12, 16
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vx	v8, v8, a0
 	ret

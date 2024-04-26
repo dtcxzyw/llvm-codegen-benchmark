@@ -12,8 +12,8 @@ func0000000000000041:                   # @func0000000000000041
 	vsub.vv	v8, v12, v8
 	vsra.vi	v8, v8, 1
 	vsrl.vi	v12, v8, 31
-	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret
 .LCPI1_0:
 	.quad	-2361183241434822607            # 0xdf3b645a1cac0831

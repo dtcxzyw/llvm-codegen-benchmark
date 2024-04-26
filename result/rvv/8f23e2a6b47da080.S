@@ -3,8 +3,8 @@ func0000000000000030:                   # @func0000000000000030
 	vadd.vi	v12, v12, 1
 	vwsll.vi	v14, v12, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret
 func000000000000003f:                   # @func000000000000003f
 	lui	a0, 648056
@@ -13,6 +13,6 @@ func000000000000003f:                   # @func000000000000003f
 	vadd.vx	v12, v12, a0
 	vwsll.vi	v14, v12, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v10, v14, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v14, v8
 	ret

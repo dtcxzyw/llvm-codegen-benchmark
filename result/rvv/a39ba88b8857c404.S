@@ -16,8 +16,8 @@ func000000000000002b:                   # @func000000000000002b
 	vnmsub.vx	v14, a0, v12
 	lui	a0, %hi(.LCPI0_1)
 	ld	a0, %lo(.LCPI0_1)(a0)
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v12, v10
+	vsub.vv	v10, v12, v10
+	vsub.vv	v10, v14, v10
 	vsrl.vi	v10, v10, 2
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 6
@@ -33,8 +33,8 @@ func0000000000000028:                   # @func0000000000000028
 	vadd.vv	v14, v14, v16
 	li	a1, 400
 	vnmsub.vx	v14, a1, v12
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v12, v10
+	vsub.vv	v10, v12, v10
+	vsub.vv	v10, v14, v10
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 5
 	vadd.vv	v8, v10, v8
@@ -50,8 +50,8 @@ func0000000000000023:                   # @func0000000000000023
 	lui	a0, 36
 	addi	a0, a0, -1359
 	vnmsub.vx	v14, a0, v12
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v12, v10
+	vsub.vv	v10, v12, v10
+	vsub.vv	v10, v14, v10
 	vsrl.vi	v10, v10, 2
 	lui	a0, 367720
 	addi	a0, a0, -807
@@ -69,8 +69,8 @@ func0000000000000029:                   # @func0000000000000029
 	vadd.vv	v14, v14, v16
 	li	a1, 400
 	vnmsub.vx	v14, a1, v12
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v12, v10
+	vsub.vv	v10, v12, v10
+	vsub.vv	v10, v14, v10
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 5
 	vadd.vv	v8, v10, v8

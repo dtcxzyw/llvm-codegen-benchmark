@@ -3,8 +3,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	lui	a0, 16368
 	vadd.vx	v8, v8, a0
 	ret

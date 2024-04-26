@@ -58,8 +58,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmulh.vx	v10, v12, a0
 	vsra.vi	v10, v10, 3
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 1048574

@@ -12,8 +12,8 @@ func000000000000001f:                   # @func000000000000001f
 	lui	a0, 16
 	addiw	a0, a0, -15
 	vmul.vx	v14, v14, a0
-	vsub.vv	v12, v14, v12
-	vadd.vv	v8, v8, v12
+	vsub.vv	v8, v8, v12
+	vadd.vv	v8, v8, v14
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	ret

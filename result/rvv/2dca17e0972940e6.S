@@ -9,8 +9,8 @@ func0000000000000015:                   # @func0000000000000015
 	vsrl.vi	v12, v12, 4
 	li	a0, 27
 	vnmsub.vx	v12, a0, v8
-	vsub.vv	v8, v12, v8
-	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	li	a0, -27
 	vadd.vx	v8, v8, a0
 	ret
@@ -22,8 +22,8 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vi	v12, v12, 2
 	li	a0, 13
 	vnmsub.vx	v12, a0, v8
-	vsub.vv	v8, v12, v8
-	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, -13
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -34,8 +34,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v12, v12, 7
 	li	a0, 400
 	vnmsub.vx	v12, a0, v8
-	vsub.vv	v8, v12, v8
-	vadd.vv	v8, v10, v8
+	vsub.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	li	a0, -400
 	vadd.vx	v8, v8, a0
 	ret

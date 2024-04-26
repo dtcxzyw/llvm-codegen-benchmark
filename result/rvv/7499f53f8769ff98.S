@@ -3,9 +3,9 @@ func0000000000000020:                   # @func0000000000000020
 	vnsrl.wi	v12, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v12, 0
-	vadd.vv	v9, v9, v10
 	vsrl.vi	v8, v8, 4
 	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v10
 	li	a0, -40
 	vadd.vx	v8, v8, a0
 	ret

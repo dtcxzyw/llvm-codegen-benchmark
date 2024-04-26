@@ -18,8 +18,8 @@ func0000000000000055:                   # @func0000000000000055
 	vmulh.vx	v14, v12, a0
 	vsra.vi	v14, v14, 7
 	vsrl.vi	v16, v14, 31
-	vadd.vv	v14, v14, v16
 	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v16
 	li	a0, 365
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8

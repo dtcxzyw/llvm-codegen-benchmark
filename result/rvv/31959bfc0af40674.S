@@ -5,8 +5,8 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vzext.vf2	v14, v12
-	vmul.vv	v10, v14, v10
 	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v14, v8
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 23
 	ret

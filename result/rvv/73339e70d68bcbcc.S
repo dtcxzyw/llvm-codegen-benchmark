@@ -3,8 +3,8 @@ func000000000000007f:                   # @func000000000000007f
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	lui	a0, 16
 	vadd.vx	v8, v8, a0
 	ret
@@ -23,8 +23,8 @@ func000000000000000f:                   # @func000000000000000f
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	lui	a0, 8192
 	vadd.vx	v8, v8, a0
 	ret
@@ -52,8 +52,8 @@ func000000000000001f:                   # @func000000000000001f
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v14
 	lui	a0, 1046848
 	vadd.vx	v8, v8, a0
 	ret

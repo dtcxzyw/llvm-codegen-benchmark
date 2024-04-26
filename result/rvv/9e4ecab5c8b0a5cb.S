@@ -7,8 +7,8 @@ func0000000000000015:                   # @func0000000000000015
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
 	vsll.vi	v12, v12, 2
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func0000000000000010:                   # @func0000000000000010
 	lui	a0, 713032
@@ -19,8 +19,8 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
 	vadd.vv	v12, v12, v12
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 2
@@ -31,6 +31,6 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v14, v12, 15
 	vadd.vv	v12, v12, v14
 	vsll.vi	v12, v12, 8
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	ret

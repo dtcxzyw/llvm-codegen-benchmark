@@ -5,8 +5,8 @@ func0000000000000090:                   # @func0000000000000090
 	vmul.vx	v14, v12, a0
 	vsra.vi	v14, v14, 19
 	vsub.vv	v10, v10, v12
-	vadd.vv	v10, v10, v14
 	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v14
 	ret
 func0000000000000095:                   # @func0000000000000095
 	lui	a0, 425
@@ -15,6 +15,6 @@ func0000000000000095:                   # @func0000000000000095
 	vmul.vx	v14, v12, a0
 	vsra.vi	v14, v14, 19
 	vsub.vv	v10, v10, v12
-	vadd.vv	v10, v10, v14
 	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v14
 	ret

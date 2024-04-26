@@ -10,9 +10,9 @@ func000000000000006a:                   # @func000000000000006a
 	vsrl.vi	v14, v14, 15
 	lui	a0, %hi(.LCPI0_1)
 	ld	a0, %lo(.LCPI0_1)(a0)
-	vadd.vv	v8, v14, v8
 	vadd.vv	v10, v10, v12
 	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v14, v8
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
@@ -26,9 +26,9 @@ func0000000000000060:                   # @func0000000000000060
 	addi	a0, a0, 127
 	vmulhu.vx	v14, v14, a0
 	vsrl.vi	v14, v14, 11
-	vadd.vv	v8, v14, v8
 	vadd.vv	v10, v10, v12
 	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v14, v8
 	lui	a0, 422303
 	addi	a0, a0, 865
 	vmulhu.vx	v10, v8, a0

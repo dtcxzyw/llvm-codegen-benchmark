@@ -3,8 +3,8 @@ func00000000000001b5:                   # @func00000000000001b5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 21
-	vadd.vv	v10, v12, v10
 	vsub.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	lui	a0, 163
 	addiw	a0, a0, -1005
 	vmul.vx	v8, v8, a0
@@ -14,8 +14,8 @@ func00000000000001b4:                   # @func00000000000001b4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 21
-	vadd.vv	v10, v12, v10
 	vsub.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	lui	a0, 1048332
 	addiw	a0, a0, 1619
 	vmul.vx	v8, v8, a0

@@ -26,8 +26,8 @@ func0000000000000056:                   # @func0000000000000056
 	vsrl.vi	v14, v14, 22
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 10
-	vadd.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v12
 	vmsle.vi	v0, v8, 5
 	ret
 func000000000000005a:                   # @func000000000000005a
@@ -36,8 +36,8 @@ func000000000000005a:                   # @func000000000000005a
 	vsrl.vi	v14, v14, 22
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 10
-	vadd.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v12
 	vmsgt.vi	v0, v8, 6
 	ret
 func000000000000014a:                   # @func000000000000014a

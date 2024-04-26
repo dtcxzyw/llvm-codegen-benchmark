@@ -7,8 +7,8 @@ func0000000000000069:                   # @func0000000000000069
 	vsrl.vi	v14, v8, 2
 	vmulhu.vx	v14, v14, a0
 	vsrl.vi	v14, v14, 6
-	vadd.vv	v12, v14, v12
 	vsub.vv	v10, v10, v12
+	vsub.vv	v10, v10, v14
 	vsrl.vi	v10, v10, 2
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 6
@@ -21,8 +21,8 @@ func0000000000000060:                   # @func0000000000000060
 	addi	a0, a0, -807
 	vmulhu.vx	v14, v14, a0
 	vsrl.vi	v14, v14, 7
-	vadd.vv	v12, v14, v12
 	vsub.vv	v10, v10, v12
+	vsub.vv	v10, v10, v14
 	vsrl.vi	v10, v10, 2
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 7

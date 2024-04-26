@@ -7,8 +7,8 @@ func0000000000000035:                   # @func0000000000000035
 	vmulh.vx	v12, v12, a0
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
 	lui	a0, 1048570
 	addi	a0, a0, -974
@@ -23,8 +23,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v14, v14, 30
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 2
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 1048568
 	addi	a0, a0, 693
 	vadd.vx	v8, v8, a0
@@ -43,8 +43,8 @@ func00000000000000b5:                   # @func00000000000000b5
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 17
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 262144
 	addiw	a0, a0, -1225
 	slli	a0, a0, 2
@@ -68,8 +68,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 23
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 176
 	addiw	a0, a0, -1429
 	vadd.vx	v8, v8, a0
@@ -86,8 +86,8 @@ func0000000000000080:                   # @func0000000000000080
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 1
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 1048400
 	addiw	a0, a0, 1427
 	vadd.vx	v8, v8, a0
@@ -100,8 +100,8 @@ func0000000000000095:                   # @func0000000000000095
 	vmulh.vx	v12, v12, a0
 	vsra.vi	v12, v12, 5
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
 	lui	a0, 1048400
 	addi	a0, a0, 1734
@@ -118,8 +118,8 @@ func0000000000000015:                   # @func0000000000000015
 	vadd.vv	v12, v14, v12
 	vsra.vi	v12, v12, 20
 	vsrl.vi	v14, v12, 31
-	vadd.vv	v12, v12, v14
 	vadd.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
 	lui	a0, 1048575
 	addi	a0, a0, -804
@@ -132,7 +132,7 @@ func00000000000000bd:                   # @func00000000000000bd
 	vsrl.vi	v14, v14, 30
 	vadd.vv	v12, v12, v14
 	vsra.vi	v12, v12, 2
-	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 6
 	ret

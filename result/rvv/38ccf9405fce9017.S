@@ -7,8 +7,8 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vv	v14, v14, v16
 	li	a0, 3
 	vmul.vx	v14, v14, a0
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v10, v12
+	vsub.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	vmslt.vv	v0, v10, v8
 	ret
 .LCPI1_0:
@@ -25,8 +25,8 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vmul.vx	v14, v14, a0
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v10, v12
+	vsub.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	vmsne.vv	v0, v10, v8
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -35,7 +35,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsrl.vi	v14, v14, 29
 	vadd.vv	v14, v12, v14
 	vand.vi	v14, v14, -8
-	vsub.vv	v12, v14, v12
-	vadd.vv	v10, v10, v12
+	vsub.vv	v10, v10, v12
+	vadd.vv	v10, v10, v14
 	vmslt.vv	v0, v8, v10
 	ret

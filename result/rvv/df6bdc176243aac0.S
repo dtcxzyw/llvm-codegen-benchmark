@@ -3,8 +3,8 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v9, v9, v8
-	vsra.vi	v8, v8, 1
+	vsra.vi	v10, v8, 1
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v9, v8
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v9, v9, v8
-	vsra.vi	v8, v8, 1
+	vsra.vi	v10, v8, 1
+	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v9, v8
 	ret

@@ -3,8 +3,8 @@ func000000000000063f:                   # @func000000000000063f
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 2
 	ret
 func000000000000060c:                   # @func000000000000060c
@@ -12,8 +12,8 @@ func000000000000060c:                   # @func000000000000060c
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 8
 	ret
 func000000000000023f:                   # @func000000000000023f
@@ -21,7 +21,7 @@ func000000000000023f:                   # @func000000000000023f
 	vmsleu.vi	v0, v12, 9
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 1
 	ret

@@ -5,8 +5,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v11, v10, 31
-	vadd.vv	v10, v10, v11
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v11
 	vsra.vi	v10, v9, 31
 	vsrl.vi	v10, v10, 30
 	vadd.vv	v9, v9, v10

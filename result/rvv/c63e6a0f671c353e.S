@@ -22,8 +22,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 6
 	vadd.vv	v12, v12, v14
-	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v12, v8
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vmul.vx	v8, v8, a0

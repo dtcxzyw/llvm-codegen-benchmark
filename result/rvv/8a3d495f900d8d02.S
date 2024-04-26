@@ -5,7 +5,7 @@ func0000000000000045:                   # @func0000000000000045
 	vmv.v.i	v9, 3
 	vmerge.vim	v9, v9, 1, v0
 	vnsrl.wi	v12, v10, 0
-	vadd.vv	v9, v9, v12
+	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v9, v8
 	ret
 func0000000000000040:                   # @func0000000000000040
@@ -14,6 +14,6 @@ func0000000000000040:                   # @func0000000000000040
 	vmv.v.i	v9, -1
 	vmerge.vim	v9, v9, 1, v0
 	vnsrl.wi	v12, v10, 0
-	vadd.vv	v9, v9, v12
+	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v9, v8
 	ret
