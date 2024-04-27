@@ -1,7 +1,6 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 15
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 255
 	addi	a0, a0, -5
@@ -10,7 +9,6 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 15
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 255
 	addi	a0, a0, -4

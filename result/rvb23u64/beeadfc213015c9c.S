@@ -1,6 +1,5 @@
 func000000000000001c:                   # @func000000000000001c
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 7
 	snez	a0, a0

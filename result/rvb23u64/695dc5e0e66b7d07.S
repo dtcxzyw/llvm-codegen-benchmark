@@ -26,7 +26,6 @@ func0000000000000016:                   # @func0000000000000016
 	andi	a0, a0, 1
 	bseti	a3, zero, 63
 	czero.nez	a3, a3, a2
-	czero.eqz	a2, a2, a2
 	or	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

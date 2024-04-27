@@ -77,7 +77,6 @@ func0000000000000046:                   # @func0000000000000046
 	ret
 func0000000000000014:                   # @func0000000000000014
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	sltiu	a0, a0, 9
 	ret
@@ -104,7 +103,6 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000018:                   # @func0000000000000018
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1

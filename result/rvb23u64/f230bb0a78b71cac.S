@@ -24,7 +24,6 @@ func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
 	addi	a1, a1, 632
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
