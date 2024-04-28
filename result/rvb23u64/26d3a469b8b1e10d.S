@@ -21,7 +21,6 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000018:                   # @func0000000000000018
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -37,7 +36,6 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func0000000000000014:                   # @func0000000000000014
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -68,7 +66,6 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func0000000000000016:                   # @func0000000000000016
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	slt	a0, a1, a0
 	ret
@@ -124,14 +121,12 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000019:                   # @func0000000000000019
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

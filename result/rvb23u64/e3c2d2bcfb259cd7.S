@@ -12,7 +12,6 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func0000000000000018:                   # @func0000000000000018
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a1, a1
 	or	a0, a0, a1
 	slli	a0, a0, 1
 	addi	a0, a0, -1

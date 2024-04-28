@@ -1,6 +1,5 @@
 func0000000000000114:                   # @func0000000000000114
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	sltiu	a1, a1, 9
 	addi	a0, a0, -1
@@ -9,7 +8,6 @@ func0000000000000114:                   # @func0000000000000114
 	ret
 func0000000000000188:                   # @func0000000000000188
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	sltiu	a1, a1, 256
 	srli	a0, a0, 10
@@ -19,7 +17,6 @@ func0000000000000188:                   # @func0000000000000188
 	ret
 func0000000000000111:                   # @func0000000000000111
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	xori	a1, a1, 160
 	xori	a0, a0, 1024

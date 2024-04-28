@@ -59,7 +59,6 @@ func0000000000000118:                   # @func0000000000000118
 	ret
 func000000000000004c:                   # @func000000000000004c
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a2, a2
 	or	a1, a1, a2
 	addi	a1, a1, -1
 	xor	a0, a0, a1
