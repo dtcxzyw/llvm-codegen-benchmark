@@ -9,7 +9,7 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000071:                   # @func0000000000000071
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 255
 	seqz	a2, a1
 	add	a1, a1, a2

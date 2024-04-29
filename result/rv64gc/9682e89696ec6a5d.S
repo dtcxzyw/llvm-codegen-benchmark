@@ -1,6 +1,6 @@
 func0000000000000158:                   # @func0000000000000158
 	andi	a2, a2, 255
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -11,7 +11,7 @@ func0000000000000158:                   # @func0000000000000158
 	ret
 func0000000000000154:                   # @func0000000000000154
 	andi	a2, a2, 255
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

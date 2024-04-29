@@ -71,8 +71,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	and	a0, a0, a1
 	ret
 func00000000000000aa:                   # @func00000000000000aa
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	min	a0, a0, a1
 	sgtz	a0, a0
 	ret

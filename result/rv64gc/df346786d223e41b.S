@@ -19,7 +19,8 @@ func0000000000000045:                   # @func0000000000000045
 	subw	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
-	sraiw	a2, a1, 31
+	sext.w	a1, a1
+	srai	a2, a1, 63
 	or	a1, a1, a2
 	not	a1, a1
 	addw	a0, a0, a1

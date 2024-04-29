@@ -14,7 +14,10 @@ func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 255
 	andi	a2, a2, 1
 	addi	a2, a2, -1
-	ori	a2, a2, -5
+	li	a3, 1
+	slli	a3, a3, 32
+	addi	a3, a3, -5
+	or	a2, a2, a3
 	addw	a1, a1, a2
 	addi	a0, a0, -255
 	seqz	a0, a0

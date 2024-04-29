@@ -1,7 +1,7 @@
 func0000000000000036:                   # @func0000000000000036
 	sext.w	a0, a0
-	sext.w	a3, a2
-	sgtz	a3, a3
+	sext.w	a2, a2
+	sgtz	a3, a2
 	negw	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
@@ -9,8 +9,8 @@ func0000000000000036:                   # @func0000000000000036
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
-	sext.w	a3, a2
-	sgtz	a3, a3
+	sext.w	a2, a2
+	sgtz	a3, a2
 	negw	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
@@ -60,8 +60,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a0, a0
-	sext.w	a3, a2
-	sgtz	a3, a3
+	sext.w	a2, a2
+	sgtz	a3, a2
 	negw	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
@@ -69,8 +69,8 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func000000000000007a:                   # @func000000000000007a
 	sext.w	a0, a0
-	sext.w	a3, a2
-	sgtz	a3, a3
+	sext.w	a2, a2
+	sgtz	a3, a2
 	negw	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
@@ -100,8 +100,8 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a0, a0
-	sext.w	a3, a2
-	sgtz	a3, a3
+	sext.w	a2, a2
+	sgtz	a3, a2
 	negw	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
@@ -110,7 +110,8 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
-	sraiw	a3, a2, 31
+	sext.w	a2, a2
+	srai	a3, a2, 63
 	or	a2, a2, a3
 	addw	a1, a1, a2
 	sltu	a0, a0, a1

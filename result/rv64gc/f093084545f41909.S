@@ -4,8 +4,8 @@ func0000000000000038:                   # @func0000000000000038
 	or	a0, a0, a1
 	ret
 func00000000000000d8:                   # @func00000000000000d8
-	sext.w	a2, a1
-	sgtz	a2, a2
+	sext.w	a1, a1
+	sgtz	a2, a1
 	negw	a2, a2
 	and	a1, a1, a2
 	slli	a1, a1, 53

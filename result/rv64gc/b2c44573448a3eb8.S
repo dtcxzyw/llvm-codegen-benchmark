@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
-	slli	a1, a0, 32
-	lui	a2, 351844
-	addi	a2, a2, -1143
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 351844
+	addi	a1, a1, -1143
+	slli	a1, a1, 32
+	slli	a2, a0, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 57
 	lui	a2, 24414
 	addi	a2, a2, 256
@@ -17,11 +17,11 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a0, a0, 47
 	ret
 func000000000000000a:                   # @func000000000000000a
-	slli	a1, a0, 32
-	lui	a2, 858993
-	addi	a2, a2, 1881
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 858993
+	addi	a1, a1, 1881
+	slli	a1, a1, 32
+	slli	a2, a0, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 45
 	lui	a2, 2
 	addi	a2, a2, 1808

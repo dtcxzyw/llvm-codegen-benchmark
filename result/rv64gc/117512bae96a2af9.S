@@ -1,5 +1,5 @@
 func0000000000000145:                   # @func0000000000000145
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 10
 	slli	a1, a2, 32
 	lui	a3, 699051
@@ -14,7 +14,7 @@ func0000000000000145:                   # @func0000000000000145
 	subw	a0, a0, a1
 	ret
 func0000000000000100:                   # @func0000000000000100
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 12
 	slli	a1, a2, 32
 	lui	a3, 699051

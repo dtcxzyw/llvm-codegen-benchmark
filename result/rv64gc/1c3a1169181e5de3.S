@@ -101,7 +101,8 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
-	sraiw	a2, a2, 31
+	sext.w	a2, a2
+	srli	a2, a2, 31
 	ori	a2, a2, 1
 	slli	a1, a1, 63
 	srai	a1, a1, 63

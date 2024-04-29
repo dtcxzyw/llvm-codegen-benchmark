@@ -32,7 +32,8 @@ func000000000000001c:                   # @func000000000000001c
 	mul	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sraiw	a2, a1, 31
+	sext.w	a1, a1
+	srai	a2, a1, 63
 	or	a1, a1, a2
 	addiw	a1, a1, 2
 	mul	a0, a1, a0

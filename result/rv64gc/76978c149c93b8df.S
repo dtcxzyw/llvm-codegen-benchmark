@@ -21,9 +21,9 @@ func0000000000000001:                   # @func0000000000000001
 	mulhu	a1, a1, a2
 	srli	a1, a1, 33
 	slli	a2, a1, 3
-	add	a1, a1, a2
-	subw	a0, a0, a0
-	subw	a0, a0, a1
+	subw	a1, a0, a1
+	subw	a1, a1, a2
+	subw	a0, a1, a0
 	ret
 .LCPI2_0:
 	.quad	-6067343680855748867            # 0xabcc77118461cefd

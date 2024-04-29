@@ -1,28 +1,31 @@
 func0000000000000111:                   # @func0000000000000111
-	andi	a0, a0, 255
+	andi	a2, a0, 255
+	andi	a3, a1, 255
+	addi	a3, a3, -47
+	seqz	a3, a3
+	addi	a3, a3, -1
+	and	a1, a1, a3
 	andi	a1, a1, 255
-	addi	a2, a1, -47
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	addi	a2, a0, -47
+	addi	a2, a2, -47
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a0, a0, a2
+	andi	a0, a0, 255
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000114:                   # @func0000000000000114
-	andi	a0, a0, 255
+	andi	a2, a0, 255
 	andi	a1, a1, 255
-	addi	a2, a1, -47
-	snez	a2, a2
-	addi	a3, a0, -47
-	seqz	a3, a3
-	addi	a3, a3, -1
-	and	a0, a0, a3
-	sltu	a0, a0, a1
+	addi	a3, a1, -47
+	snez	a3, a3
+	addi	a2, a2, -47
+	seqz	a2, a2
+	addi	a2, a2, -1
 	and	a0, a0, a2
+	andi	a0, a0, 255
+	sltu	a0, a0, a1
+	and	a0, a0, a3
 	ret
 func000000000000011b:                   # @func000000000000011b
 	sext.w	a2, a0

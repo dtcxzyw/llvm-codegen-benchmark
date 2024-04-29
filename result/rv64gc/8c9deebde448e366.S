@@ -47,7 +47,7 @@ func0000000000000037:                   # @func0000000000000037
 	ret
 func0000000000000013:                   # @func0000000000000013
 	srliw	a0, a0, 1
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	beqz	a0, .LBB1_2
 	srliw	a1, a0, 1
 	or	a0, a0, a1

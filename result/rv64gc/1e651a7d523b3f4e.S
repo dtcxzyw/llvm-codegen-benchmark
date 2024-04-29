@@ -17,7 +17,7 @@ func0000000000000000:                   # @func0000000000000000
 .LBB0_2:                                # %entry
 	ret
 func000000000000002a:                   # @func000000000000002a
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -29,7 +29,7 @@ func000000000000002a:                   # @func000000000000002a
 .LBB1_2:                                # %entry
 	ret
 func000000000000003e:                   # @func000000000000003e
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

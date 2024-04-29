@@ -40,7 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 	mul	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a1, a0, 32
 	lui	a2, 422303
 	addi	a2, a2, 865
@@ -57,7 +57,7 @@ func0000000000000000:                   # @func0000000000000000
 	subw	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a1, a0, 32
 	lui	a2, 699051
 	addi	a2, a2, -1365

@@ -58,11 +58,11 @@ func0000000000000056:                   # @func0000000000000056
 	sltiu	a0, a0, 10
 	ret
 func0000000000000006:                   # @func0000000000000006
-	slli	a1, a0, 32
-	lui	a2, 858993
-	addi	a2, a2, 1881
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 858993
+	addi	a1, a1, 1881
+	slli	a1, a1, 32
+	slli	a2, a0, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 45
 	lui	a2, 2
 	addi	a2, a2, 1808
@@ -72,11 +72,11 @@ func0000000000000006:                   # @func0000000000000006
 	sltiu	a0, a0, 625
 	ret
 func0000000000000004:                   # @func0000000000000004
-	slli	a1, a0, 32
-	lui	a2, 858993
-	addi	a2, a2, 1881
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 858993
+	addi	a1, a1, 1881
+	slli	a1, a1, 32
+	slli	a2, a0, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 45
 	lui	a2, 2
 	addi	a2, a2, 1808

@@ -1,6 +1,6 @@
 func0000000000000009:                   # @func0000000000000009
 	subw	a0, a0, a1
-	sraiw	a1, a0, 31
+	srai	a1, a0, 63
 	or	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

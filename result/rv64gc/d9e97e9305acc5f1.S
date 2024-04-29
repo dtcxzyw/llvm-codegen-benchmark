@@ -13,11 +13,11 @@ func0000000000000050:                   # @func0000000000000050
 	sub	a0, a0, a3
 	ret
 func0000000000000000:                   # @func0000000000000000
-	slli	a3, a2, 32
-	lui	a4, 351844
-	addi	a4, a4, -1143
-	slli	a4, a4, 32
-	mulhu	a3, a3, a4
+	lui	a3, 351844
+	addi	a3, a3, -1143
+	slli	a3, a3, 32
+	slli	a4, a2, 32
+	mulhu	a3, a4, a3
 	srli	a3, a3, 57
 	lui	a4, 24414
 	addi	a4, a4, 256

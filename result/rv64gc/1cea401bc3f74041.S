@@ -30,8 +30,8 @@ func0000000000000009:                   # @func0000000000000009
 	addiw	a0, a0, -68
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	a0, a0, 2
-	sraiw	a1, a0, 31
+	addiw	a0, a0, 2
+	srai	a1, a0, 63
 	or	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

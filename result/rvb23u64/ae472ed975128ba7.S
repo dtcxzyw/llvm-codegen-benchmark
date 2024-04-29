@@ -17,7 +17,7 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func0000000000000060:                   # @func0000000000000060
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a1, a0
 	lui	a2, 422303
 	addiw	a2, a2, 865

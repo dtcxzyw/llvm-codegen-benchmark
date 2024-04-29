@@ -10,20 +10,21 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a0, a0, 4
 	ret
 func0000000000000088:                   # @func0000000000000088
-	mv	a1, a0
 	li	a2, 23
-	li	a0, 3
-	bgeu	a2, a1, .LBB1_3
+	li	a1, 3
+	bgeu	a2, a0, .LBB1_3
 	li	a2, 79
-	bltu	a2, a1, .LBB1_4
+	bltu	a2, a0, .LBB1_4
 .LBB1_2:                                # %entry
+	mv	a0, a1
 	ret
 .LBB1_3:                                # %entry
-	li	a0, 1
+	li	a1, 1
 	li	a2, 79
-	bgeu	a2, a1, .LBB1_2
+	bgeu	a2, a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a0, 4
+	li	a1, 4
+	mv	a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0

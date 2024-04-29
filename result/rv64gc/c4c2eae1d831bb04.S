@@ -1,5 +1,6 @@
 func00000000000006ba:                   # @func00000000000006ba
-	sraiw	a2, a1, 31
+	sext.w	a1, a1
+	srai	a2, a1, 63
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	sgtz	a0, a0
@@ -41,7 +42,8 @@ func000000000000004a:                   # @func000000000000004a
 	xori	a0, a0, 1
 	ret
 func00000000000002aa:                   # @func00000000000002aa
-	sraiw	a2, a1, 31
+	sext.w	a1, a1
+	srai	a2, a1, 63
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	sgtz	a0, a0

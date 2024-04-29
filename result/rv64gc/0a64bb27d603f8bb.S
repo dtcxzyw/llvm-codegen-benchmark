@@ -8,16 +8,16 @@ func000000000000001a:                   # @func000000000000001a
 	xori	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	sext.w	a2, a1
-	sgtz	a2, a2
+	sext.w	a1, a1
+	sgtz	a2, a1
 	negw	a2, a2
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
-	sext.w	a2, a1
-	sgtz	a2, a2
+	sext.w	a1, a1
+	sgtz	a2, a1
 	negw	a2, a2
 	and	a1, a1, a2
 	subw	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000016:                   # @func0000000000000016
 	xori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	sext.w	a2, a1
-	sgtz	a2, a2
+	sext.w	a1, a1
+	sgtz	a2, a1
 	negw	a2, a2
 	and	a1, a1, a2
 	subw	a0, a0, a1

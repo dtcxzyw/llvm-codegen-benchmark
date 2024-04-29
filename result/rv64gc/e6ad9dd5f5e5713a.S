@@ -1,5 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
