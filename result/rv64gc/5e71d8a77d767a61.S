@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	sltu	a4, a0, a2
 	bnez	a4, .LBB0_4
 .LBB0_3:                                # %entry
-	mv	a1, a3
 	mv	a0, a2
+	mv	a1, a3
 .LBB0_4:                                # %entry
 	ret

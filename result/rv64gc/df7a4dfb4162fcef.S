@@ -36,8 +36,7 @@ func00000000000002a8:                   # @func00000000000002a8
 	ret
 func00000000000002a9:                   # @func00000000000002a9
 	sext.w	a1, a1
-	sext.w	a2, a2
-	srli	a2, a2, 31
+	sraiw	a2, a2, 31
 	ori	a2, a2, 1
 	slti	a1, a1, 0
 	addi	a1, a1, -1

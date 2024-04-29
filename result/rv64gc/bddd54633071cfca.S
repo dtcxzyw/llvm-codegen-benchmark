@@ -1,5 +1,5 @@
 func0000000000000041:                   # @func0000000000000041
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -10,7 +10,7 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
 	ret
 func00000000000002f1:                   # @func00000000000002f1
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -19,7 +19,7 @@ func00000000000002f1:                   # @func00000000000002f1
 	seqz	a0, a0
 	ret
 func00000000000000f1:                   # @func00000000000000f1
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -28,7 +28,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	seqz	a0, a0
 	ret
 func00000000000002f4:                   # @func00000000000002f4
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

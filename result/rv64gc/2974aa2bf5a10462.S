@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a3, a1
 	sext.w	a4, a0
-	sub	a0, a0, a1
+	subw	a0, a0, a1
 	mulw	a0, a0, a2
 	slt	a1, a4, a3
 	addi	a1, a1, -1

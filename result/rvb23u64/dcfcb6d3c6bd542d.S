@@ -27,8 +27,8 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a3, a3, 127
 	mul	a2, a2, a3
 	srli	a2, a2, 43
+	subw	a1, a1, a0
 	add	a1, a1, a2
-	sub	a1, a1, a0
 	zext.w	a0, a1
 	lui	a2, 422303
 	addiw	a2, a2, 865

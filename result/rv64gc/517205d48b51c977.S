@@ -1,7 +1,7 @@
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	srai	a2, a1, 63
+	srai	a1, a1, 48
 	xor	a1, a1, a2
 	subw	a2, a2, a0
 	subw	a1, a1, a2

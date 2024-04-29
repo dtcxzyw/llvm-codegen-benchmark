@@ -1,5 +1,5 @@
 func0000000000000057:                   # @func0000000000000057
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -9,7 +9,7 @@ func0000000000000057:                   # @func0000000000000057
 	addw	a0, a0, a1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -19,7 +19,7 @@ func0000000000000016:                   # @func0000000000000016
 	addw	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000056:                   # @func0000000000000056
 	addw	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
-	sub	a1, a1, a2
+	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

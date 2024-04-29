@@ -28,8 +28,8 @@ func0000000000000060:                   # @func0000000000000060
 	addiw	a3, a3, -807
 	mul	a2, a2, a3
 	srli	a2, a2, 39
-	add	a1, a1, a2
-	sub	a0, a0, a1
+	subw	a0, a0, a1
+	subw	a0, a0, a2
 	slli	a1, a0, 32
 	lui	a2, 422303
 	addi	a2, a2, 865

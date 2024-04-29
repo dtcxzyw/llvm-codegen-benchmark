@@ -1,7 +1,6 @@
 func0000000000000285:                   # @func0000000000000285
 	sext.w	a1, a1
-	sext.w	a2, a0
-	srli	a2, a2, 31
+	sraiw	a2, a0, 31
 	ori	a2, a2, 1
 	lui	a3, 522240
 	xor	a1, a1, a3

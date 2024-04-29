@@ -25,8 +25,8 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func0000000000000014:                   # @func0000000000000014
 	zext.h	a0, a0
-	srli	a1, a1, 2
-	zext.h	a1, a1
+	slli	a1, a1, 46
+	srli	a1, a1, 48
 	addi	a1, a1, -1
 	sltiu	a0, a0, 25
 	neg	a0, a0
