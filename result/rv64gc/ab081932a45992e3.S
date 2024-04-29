@@ -9,16 +9,16 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, -3
 	ret
 func0000000000000014:                   # @func0000000000000014
-	srli	a0, a0, 7
-	andi	a0, a0, 31
+	slli	a0, a0, 52
+	srli	a0, a0, 59
 	sltiu	a1, a0, 6
 	addi	a0, a0, -5
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	srli	a0, a0, 2
-	andi	a0, a0, 7
+	slli	a0, a0, 59
+	srli	a0, a0, 61
 	seqz	a1, a0
 	addi	a0, a0, 1
 	addi	a1, a1, -1

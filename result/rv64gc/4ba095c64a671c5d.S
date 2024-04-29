@@ -23,8 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1
-	sext.w	a2, a2
-	srli	a2, a2, 2
+	sraiw	a2, a2, 2
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1

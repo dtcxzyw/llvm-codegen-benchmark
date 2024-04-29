@@ -1,7 +1,6 @@
 func0000000000000029:                   # @func0000000000000029
 	andi	a1, a1, 1
-	sext.w	a2, a0
-	srli	a2, a2, 31
+	sraiw	a2, a0, 31
 	ori	a2, a2, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2

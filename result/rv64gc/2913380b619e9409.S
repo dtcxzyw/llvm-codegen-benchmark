@@ -36,13 +36,12 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000002:                   # @func0000000000000002
 	srli	a0, a0, 32
-	sext.w	a1, a0
-	beqz	a1, .LBB1_2
-	srliw	a1, a0, 1
+	beqz	a0, .LBB1_2
+	srli	a1, a0, 1
 	or	a0, a0, a1
-	srliw	a1, a0, 2
+	srli	a1, a0, 2
 	or	a0, a0, a1
-	srliw	a1, a0, 4
+	srli	a1, a0, 4
 	or	a0, a0, a1
 	srliw	a1, a0, 8
 	or	a0, a0, a1
