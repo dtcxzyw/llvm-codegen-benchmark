@@ -24,5 +24,4 @@ func000000000000000b:                   # @func000000000000000b
 	mul	a0, a0, a1
 	slli	a0, a0, 2
 	andi	a0, a0, -8
-	bclri	a0, a0, 63
 	ret

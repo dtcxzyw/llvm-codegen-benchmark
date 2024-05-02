@@ -8,7 +8,5 @@ func0000000000000003:                   # @func0000000000000003
 	xori	a0, a0, 63
 	li	a1, 1
 	sll	a0, a1, a0
-	li	a1, -3
-	srli	a1, a1, 1
-	and	a0, a0, a1
+	andi	a0, a0, -2
 	ret

@@ -6,9 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000b:                   # @func000000000000000b
 	sub	a0, a0, a1
 	slli	a0, a0, 2
-	li	a1, -15
-	srli	a1, a1, 1
-	and	a0, a0, a1
+	andi	a0, a0, -8
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1

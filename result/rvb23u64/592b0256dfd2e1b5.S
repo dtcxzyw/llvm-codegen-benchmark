@@ -1,12 +1,11 @@
+.LCPI0_0:
+	.quad	6148914691236517206             # 0x5555555555555556
 func0000000000000038:                   # @func0000000000000038
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	slli	a0, a0, 32
 	add.uw	a0, a1, a0
-	lui	a1, 699051
-	addiw	a1, a1, -1365
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a0, a0, a1
-	srli	a0, a0, 1
+	mulhu	a0, a0, a2
 	ret
 .LCPI1_0:
 	.quad	5421010862427522170             # 0x4b3b4ca85a86c47a
@@ -26,14 +25,13 @@ func0000000000000028:                   # @func0000000000000028
 	addi	sp, sp, 16
 	ret
 .LCPI2_0:
-	.quad	19342813113834067               # 0x44b82fa09b5a53
+	.quad	1237940039285380275             # 0x112e0be826d694b3
 func0000000000000030:                   # @func0000000000000030
-	zext.w	a1, a1
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
+	zext.w	a1, a1
 	slli	a0, a0, 30
 	or	a0, a0, a1
-	srli	a0, a0, 9
 	mulhu	a0, a0, a2
-	srli	a0, a0, 11
+	srli	a0, a0, 26
 	ret

@@ -51,10 +51,8 @@ func0000000000000004:                   # @func0000000000000004
 	sh3add	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slli	a1, a1, 2
-	andi	a1, a1, -8
-	bclri	a1, a1, 63
-	add	a0, a0, a1
+	srli	a1, a1, 1
+	sh3add	a0, a1, a0
 	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a1, a1, 1

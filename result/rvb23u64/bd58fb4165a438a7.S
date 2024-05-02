@@ -24,13 +24,11 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 16
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slli	a0, a0, 1
-	andi	a0, a0, -4
-	bclri	a0, a0, 63
+	srli	a0, a0, 1
 	li	a1, 1
 	slli	a1, a1, 34
 	addi	a1, a1, -8
-	add	a0, a0, a1
+	sh2add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	srli	a0, a0, 1

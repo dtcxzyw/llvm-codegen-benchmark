@@ -1,8 +1,6 @@
 func00000000000000f1:                   # @func00000000000000f1
 	slli	a2, a2, 3
-	li	a3, -31
-	srli	a3, a3, 1
-	and	a2, a2, a3
+	andi	a2, a2, -16
 	add	a1, a1, a2
 	addi	a0, a0, 16
 	xor	a0, a0, a1

@@ -1,14 +1,13 @@
+.LCPI0_0:
+	.quad	6148914691236517206             # 0x5555555555555556
 func000000000000000e:                   # @func000000000000000e
 	slli	a1, a1, 32
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	srli	a1, a1, 32
 	slli	a0, a0, 32
 	or	a0, a0, a1
-	lui	a1, 699051
-	addiw	a1, a1, -1365
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a0, a0, a1
-	srli	a0, a0, 1
+	mulhu	a0, a0, a2
 	ret
 .LCPI1_0:
 	.quad	5421010862427522170             # 0x4b3b4ca85a86c47a
@@ -28,15 +27,14 @@ func000000000000000a:                   # @func000000000000000a
 	addi	sp, sp, 16
 	ret
 .LCPI2_0:
-	.quad	19342813113834067               # 0x44b82fa09b5a53
+	.quad	1237940039285380275             # 0x112e0be826d694b3
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
+	srli	a1, a1, 32
 	slli	a0, a0, 30
 	or	a0, a0, a1
-	srli	a0, a0, 9
 	mulhu	a0, a0, a2
-	srli	a0, a0, 11
+	srli	a0, a0, 26
 	ret

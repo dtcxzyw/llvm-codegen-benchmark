@@ -1,8 +1,6 @@
 func000000000000001d:                   # @func000000000000001d
 	slli	a2, a2, 2
-	li	a3, -15
-	srli	a3, a3, 1
-	and	a2, a2, a3
+	andi	a2, a2, -8
 	add	a1, a1, a2
 	or	a0, a0, a1
 	ret

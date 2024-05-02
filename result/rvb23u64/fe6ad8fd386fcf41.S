@@ -12,15 +12,10 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a0, 3
-	slli	a2, a1, 48
-	lui	a3, 149808
-	mulhu	a2, a2, a3
-	srli	a2, a2, 16
-	subw	a1, a1, a2
 	slli	a1, a1, 48
-	srli	a1, a1, 49
-	add	a1, a1, a2
-	srli	a1, a1, 2
+	lui	a2, 299600
+	mulhu	a1, a1, a2
+	srli	a1, a1, 17
 	slli	a2, a1, 3
 	sub	a1, a1, a2
 	sh3add	a0, a0, a1

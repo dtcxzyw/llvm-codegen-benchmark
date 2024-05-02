@@ -15,9 +15,10 @@ func000000000000007c:                   # @func000000000000007c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 7
 	li	a0, 516
-	vadd.vx	v10, v8, a0
+	csrwi	vxrm, 2
+	vaaddu.vx	v10, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v8, v10, 1
+	vnsrl.wi	v8, v10, 0
 	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e64, m2, ta, ma

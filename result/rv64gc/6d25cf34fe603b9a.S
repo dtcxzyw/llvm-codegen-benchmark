@@ -25,11 +25,10 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000001e:                   # @func000000000000001e
 	slli	a0, a0, 1
 	addi	a0, a0, 255
-	lui	a1, 43691
-	slli	a1, a1, 4
 	slli	a0, a0, 48
+	lui	a1, 349536
 	mulhu	a0, a0, a1
-	srli	a0, a0, 17
+	srli	a0, a0, 16
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 3

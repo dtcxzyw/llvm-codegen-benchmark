@@ -32,7 +32,6 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a1, 1
 	andi	a1, a1, -4
-	bclri	a1, a1, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
