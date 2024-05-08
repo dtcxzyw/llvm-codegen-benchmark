@@ -1,9 +1,7 @@
 func000000000000000d:                   # @func000000000000000d
 	andi	a1, a1, 255
-	addi	a1, a1, -1
 	sh1add	a1, a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 3
 	ret
 func000000000000002d:                   # @func000000000000002d
 	andi	a1, a1, 255
