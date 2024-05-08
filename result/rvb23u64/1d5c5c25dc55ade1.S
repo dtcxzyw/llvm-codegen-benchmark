@@ -23,8 +23,8 @@ func0000000000000015:                   # @func0000000000000015
 func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	sh1add	a0, a0, a0
-	li	a1, 132
-	sh2add	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, 132
 	ret
 func000000000000001d:                   # @func000000000000001d
 	or	a0, a0, a1

@@ -1,9 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
-	srli	a0, a0, 25
-	li	a1, 3
-	slli	a1, a1, 46
-	slli	a0, a0, 63
-	mulhu	a0, a0, a1
+	bexti	a0, a0, 25
+	sh1add	a0, a0, a0
+	slli	a0, a0, 45
 	ret
 func0000000000000005:                   # @func0000000000000005
 	slli	a0, a0, 37

@@ -35,12 +35,11 @@ func00000000000000a5:                   # @func00000000000000a5
 func0000000000000025:                   # @func0000000000000025
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
-	slli	a2, a1, 4
 	slliw	a1, a1, 4
-	lui	a3, 638253
-	addiw	a3, a3, 2007
-	mul	a1, a1, a3
-	srli	a1, a1, 32
+	lui	a2, 638253
+	addiw	a2, a2, 2007
+	mul	a2, a2, a1
+	srli	a2, a2, 32
 	add	a1, a1, a2
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 14

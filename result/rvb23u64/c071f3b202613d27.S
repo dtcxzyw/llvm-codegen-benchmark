@@ -7,8 +7,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000017:                   # @func0000000000000017
 	andi	a0, a0, 255
 	sh2add	a0, a0, a0
-	li	a1, -480
-	sh1add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, -480
 	ret
 func0000000000000015:                   # @func0000000000000015
 	zext.h	a0, a0

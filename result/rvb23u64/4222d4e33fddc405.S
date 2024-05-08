@@ -27,11 +27,11 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh1add	a0, a0, a0
-	slli	a0, a0, 9
-	srliw	a0, a0, 1
+	slli	a0, a0, 41
+	srli	a0, a0, 33
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
-	srliw	a0, a0, 3
+	slli	a0, a0, 34
+	srli	a0, a0, 35
 	ret

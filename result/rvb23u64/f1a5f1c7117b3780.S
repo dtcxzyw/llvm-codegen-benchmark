@@ -4,9 +4,9 @@ func0000000000000070:                   # @func0000000000000070
 	slli	a3, a3, 24
 	addi	a3, a3, 15
 	and	a2, a2, a3
+	sh1add	a2, a2, a2
 	or	a0, a0, a1
-	sh1add	a1, a2, a2
-	sh1add	a0, a1, a0
+	sh1add	a0, a2, a0
 	slli	a0, a0, 8
 	ret
 func000000000000007e:                   # @func000000000000007e
@@ -15,9 +15,9 @@ func000000000000007e:                   # @func000000000000007e
 	slli	a3, a3, 24
 	addi	a3, a3, 15
 	and	a2, a2, a3
+	sh1add	a2, a2, a2
 	or	a0, a0, a1
-	sh1add	a1, a2, a2
-	sh1add	a0, a1, a0
+	sh1add	a0, a2, a0
 	slli	a0, a0, 8
 	ret
 func0000000000000055:                   # @func0000000000000055

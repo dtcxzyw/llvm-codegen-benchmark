@@ -27,8 +27,8 @@ func000000000000001e:                   # @func000000000000001e
 	sh1add	a0, a0, a0
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	li	a2, 365
-	sh3add	a0, a0, a2
+	slli	a0, a0, 3
+	addi	a0, a0, 365
 	srli	a0, a0, 1
 	mulhu	a0, a0, a1
 	srli	a0, a0, 6

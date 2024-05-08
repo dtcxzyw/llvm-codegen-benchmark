@@ -18,8 +18,8 @@ func0000000000000030:                   # @func0000000000000030
 	addiw	a3, a3, -557
 	mul	a2, a2, a3
 	srli	a2, a2, 36
+	sh1add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a1, a2, a2
-	sh1add	a0, a1, a0
+	sh1add	a0, a2, a0
 	addiw	a0, a0, 4
 	ret

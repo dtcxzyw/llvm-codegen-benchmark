@@ -31,17 +31,17 @@ func00000000000000f8:                   # @func00000000000000f8
 	ret
 func00000000000003f8:                   # @func00000000000003f8
 	andi	a1, a1, 255
-	andi	a0, a0, 255
 	sh2add	a1, a1, a1
+	andi	a0, a0, 255
 	sh1add	a0, a1, a0
 	sltiu	a0, a0, 60
 	xori	a0, a0, 1
 	ret
 func00000000000001f4:                   # @func00000000000001f4
-	zext.w	a1, a1
-	sext.w	a0, a0
+	slli.uw	a1, a1, 1
 	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
+	sext.w	a0, a0
+	add	a0, a0, a1
 	srli	a0, a0, 32
 	seqz	a0, a0
 	ret

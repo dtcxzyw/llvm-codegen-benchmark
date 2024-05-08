@@ -2,7 +2,7 @@ func0000000000000115:                   # @func0000000000000115
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
 	add	a0, a0, a1
-	sub	a0, a0, a2
+	subw	a0, a0, a2
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 2
 	ret

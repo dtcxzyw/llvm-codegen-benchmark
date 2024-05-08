@@ -11,8 +11,8 @@ func000000000000001e:                   # @func000000000000001e
 func000000000000003e:                   # @func000000000000003e
 	sext.w	a1, a1
 	sh2add	a1, a1, a1
-	li	a2, 47
-	sh3add	a1, a1, a2
+	slli	a1, a1, 3
+	addi	a1, a1, 47
 	lui	a2, 917504
 	srli	a2, a2, 26
 	and	a1, a1, a2

@@ -16,9 +16,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000e:                   # @func000000000000000e
 	sh1add	a2, a2, a2
-	slli	a2, a2, 13
-	lui	a3, 6
-	and	a2, a2, a3
+	slli	a2, a2, 62
+	srli	a2, a2, 49
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

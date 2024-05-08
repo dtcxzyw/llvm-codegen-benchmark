@@ -11,8 +11,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	sext.w	a0, a0
 	zext.h	a1, a1
 	sh1add	a1, a1, a1
-	li	a2, 5
-	sh1add	a1, a1, a2
+	slli	a1, a1, 1
+	addi	a1, a1, 5
 	sltu	a0, a0, a1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
@@ -27,15 +27,14 @@ func00000000000000f1:                   # @func00000000000000f1
 func00000000000001f8:                   # @func00000000000001f8
 	sext.w	a1, a1
 	sh2add	a1, a1, a1
-	li	a2, 16
-	sh2add	a1, a1, a2
+	slli	a1, a1, 2
+	addi	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
 func00000000000000f5:                   # @func00000000000000f5
-	zext.w	a1, a1
+	slli.uw	a1, a1, 3
 	sh2add	a1, a1, a1
-	li	a2, 16
-	sh3add	a1, a1, a2
+	addi	a1, a1, 16
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

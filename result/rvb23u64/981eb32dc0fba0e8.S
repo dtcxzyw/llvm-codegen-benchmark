@@ -63,12 +63,11 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func00000000000000a5:                   # @func00000000000000a5
 	sh2add	a2, a2, a2
-	slli	a3, a2, 4
 	slliw	a2, a2, 4
-	lui	a4, 638253
-	addiw	a4, a4, 2007
-	mul	a2, a2, a4
-	srli	a2, a2, 32
+	lui	a3, 638253
+	addiw	a3, a3, 2007
+	mul	a3, a3, a2
+	srli	a3, a3, 32
 	add	a2, a2, a3
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 14

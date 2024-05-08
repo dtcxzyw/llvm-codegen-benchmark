@@ -9,8 +9,8 @@ func0000000000000010:                   # @func0000000000000010
 	sub	a0, a0, a1
 	srai	a0, a0, 3
 	sh1add	a0, a0, a0
-	li	a1, 24
-	sh3add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 24
 	ret
 func000000000000001f:                   # @func000000000000001f
 	sub	a0, a0, a1
@@ -23,6 +23,6 @@ func0000000000000011:                   # @func0000000000000011
 	sub	a0, a0, a1
 	srai	a0, a0, 3
 	sh1add	a0, a0, a0
-	li	a1, -4
-	sh2add	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, -4
 	ret

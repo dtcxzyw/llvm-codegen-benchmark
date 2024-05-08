@@ -4,6 +4,6 @@ func00000000000000d3:                   # @func00000000000000d3
 	li	a1, 6
 	minu	a0, a0, a1
 	sh2add	a0, a0, a0
-	li	a1, 19
-	sh3add	a0, a0, a1
+	slli	a0, a0, 3
+	addi	a0, a0, 19
 	ret

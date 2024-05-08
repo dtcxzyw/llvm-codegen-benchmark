@@ -10,8 +10,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
-	zext.w	a0, a0
+	slli	a0, a0, 33
+	srli	a0, a0, 32
 	lui	a1, 322639
 	addiw	a1, a1, -945
 	mul	a0, a0, a1

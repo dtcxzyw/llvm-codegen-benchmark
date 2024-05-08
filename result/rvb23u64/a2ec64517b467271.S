@@ -10,15 +10,13 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sh1add	a0, a0, a0
-	li	a1, 2
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, 2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a0, a0, a0
-	li	a1, 2
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
+	slli	a0, a0, 1
+	addiw	a0, a0, 2
 	ret
 func0000000000000010:                   # @func0000000000000010
 	lui	a1, 1
