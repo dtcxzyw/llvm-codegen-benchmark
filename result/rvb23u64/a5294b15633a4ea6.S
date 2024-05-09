@@ -3,8 +3,7 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 38
 	addi	a1, a1, -65
 	add	a0, a0, a1
-	srli	a0, a0, 3
-	srli	a0, a0, 3
+	srli	a0, a0, 6
 	slli.uw	a0, a0, 3
 	sh2add	a0, a0, a0
 	ret

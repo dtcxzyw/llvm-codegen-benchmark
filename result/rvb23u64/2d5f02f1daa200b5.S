@@ -19,8 +19,7 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 24
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slli	a1, a1, 2
-	srli	a1, a1, 4
+	srli	a1, a1, 2
 	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 8
