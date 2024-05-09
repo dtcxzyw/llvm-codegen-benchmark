@@ -31,11 +31,10 @@ func0000000000000005:                   # @func0000000000000005
 	or	a1, a1, a2
 	slli	a1, a1, 63
 	srli	a1, a1, 1
-	li	a2, -1
-	slli	a2, a2, 32
-	addi	a2, a2, -3
-	slli	a2, a2, 30
-	addi	a2, a2, -1
+	lui	a2, 786432
+	addiw	a2, a2, -1
+	bclri	a2, a2, 31
+	bclri	a2, a2, 62
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

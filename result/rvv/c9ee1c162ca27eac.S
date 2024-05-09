@@ -42,11 +42,10 @@ func0000000000000005:                   # @func0000000000000005
 	vsll.vx	v10, v10, a0
 	bseti	a0, zero, 62
 	vand.vx	v10, v10, a0
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, -3
-	slli	a0, a0, 30
-	addi	a0, a0, -1
+	lui	a0, 786432
+	addiw	a0, a0, -1
+	bclri	a0, a0, 31
+	bclri	a0, a0, 62
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
