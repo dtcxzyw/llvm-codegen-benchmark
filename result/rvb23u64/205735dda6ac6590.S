@@ -8,7 +8,7 @@ func000000000000001d:                   # @func000000000000001d
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	srli	a1, a1, 1
-	slli	a1, a1, 32
+	slli.uw	a1, a1, 32
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f

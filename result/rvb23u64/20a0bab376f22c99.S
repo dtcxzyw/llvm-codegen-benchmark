@@ -19,5 +19,5 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000e:                   # @func000000000000000e
 	add.uw	a0, a1, a0
 	srli	a0, a0, 1
-	slli	a0, a0, 32
+	slli.uw	a0, a0, 32
 	ret

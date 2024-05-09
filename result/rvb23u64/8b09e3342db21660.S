@@ -17,7 +17,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 5
-	slli	a0, a0, 32
+	slli.uw	a0, a0, 32
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, 699051

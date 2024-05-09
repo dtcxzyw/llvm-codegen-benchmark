@@ -22,6 +22,6 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000001d:                   # @func000000000000001d
 	add.uw	a1, a2, a1
 	srli	a1, a1, 1
-	slli	a1, a1, 32
+	slli.uw	a1, a1, 32
 	or	a0, a0, a1
 	ret
