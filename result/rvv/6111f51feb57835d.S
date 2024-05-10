@@ -21,8 +21,8 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000062:                   # @func0000000000000062
 	li	a0, 8
-	vsetivli	zero, 4, e32, m1, ta, ma
 	csrwi	vxrm, 2
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vaaddu.vx	v8, v8, a0
 	vadd.vi	v8, v8, 3
 	ret

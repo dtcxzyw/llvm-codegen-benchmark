@@ -12,8 +12,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a0, 1
-	vsetivli	zero, 8, e8, mf2, ta, ma
 	csrwi	vxrm, 2
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vaaddu.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v10, v8

@@ -11,7 +11,7 @@ func0000000000000058:                   # @func0000000000000058
 	vnsrl.wi	v8, v10, 1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	vsetivli	zero, 16, e8, m1, ta, ma
 	csrwi	vxrm, 2
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vaaddu.vv	v8, v8, v9
 	ret
