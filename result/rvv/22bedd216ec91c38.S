@@ -1,5 +1,5 @@
 func0000000000000038:                   # @func0000000000000038
-	li	a0, 255
+	li	a0, -1
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwmulu.vx	v10, v8, a0
 	lui	a0, 1
@@ -25,7 +25,7 @@ func0000000000000010:                   # @func0000000000000010
 	vnsrl.wi	v8, v10, 15
 	ret
 func000000000000003a:                   # @func000000000000003a
-	li	a0, 255
+	li	a0, -1
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwmulu.vx	v10, v8, a0
 	lui	a0, 1

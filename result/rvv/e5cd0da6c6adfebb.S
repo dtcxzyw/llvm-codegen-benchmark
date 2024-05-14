@@ -8,6 +8,6 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vminu.vv	v10, v8, v9
-	li	a0, 255
+	li	a0, -1
 	vwmulu.vx	v8, v10, a0
 	ret

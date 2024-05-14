@@ -1,5 +1,5 @@
 func0000000000000010:                   # @func0000000000000010
-	li	a0, 255
+	li	a0, -1
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwmulu.vx	v10, v9, a0
 	vsetvli	zero, zero, e16, m2, ta, ma

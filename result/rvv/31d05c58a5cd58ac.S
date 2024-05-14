@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	vmv.v.v	v8, v10
 	ret
 func0000000000000010:                   # @func0000000000000010
-	li	a0, 249
+	li	a0, -7
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vwmaccu.vx	v8, a0, v9
 	vsetvli	zero, zero, e32, m2, ta, ma

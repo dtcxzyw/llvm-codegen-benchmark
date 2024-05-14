@@ -8,7 +8,7 @@ func0000000000000020:                   # @func0000000000000020
 	vzext.vf2	v8, v10
 	ret
 func0000000000000030:                   # @func0000000000000030
-	li	a0, 249
+	li	a0, -7
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vwmaccu.vx	v8, a0, v9
 	vsetvli	zero, zero, e16, m1, ta, ma

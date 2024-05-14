@@ -70,7 +70,7 @@ func000000000000000e:                   # @func000000000000000e
 	vwmaccu.vx	v8, a0, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a0, 249
+	li	a0, -7
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
