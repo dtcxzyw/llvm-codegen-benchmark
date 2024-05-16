@@ -6,7 +6,7 @@ func0000000000000305:                   # @func0000000000000305
 	vsra.vi	v12, v8, 31
 	vsrl.vi	v12, v12, 23
 	vadd.vv	v8, v8, v12
-	vsra.vi	v8, v8, 9
+	vsrl.vi	v8, v8, 9
 	vadd.vv	v8, v8, v10
 	vsll.vi	v8, v8, 9
 	ret

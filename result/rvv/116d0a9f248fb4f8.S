@@ -9,8 +9,7 @@ func0000000000000009:                   # @func0000000000000009
 	vadd.vv	v8, v8, v10
 	li	a0, 63
 	vadd.vx	v8, v8, a0
-	vsra.vi	v10, v8, 31
-	vsrl.vi	v10, v10, 26
+	vsrl.vi	v10, v8, 26
 	vadd.vv	v8, v8, v10
 	li	a0, -64
 	vand.vx	v8, v8, a0

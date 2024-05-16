@@ -5,7 +5,7 @@ func0000000000000005:                   # @func0000000000000005
 	vsra.vi	v12, v8, 31
 	vsrl.vi	v12, v12, 23
 	vadd.vv	v8, v8, v12
-	vsra.vi	v8, v8, 9
+	vsrl.vi	v8, v8, 9
 	vadd.vv	v8, v8, v10
 	vsll.vi	v8, v8, 9
 	ret
@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsra.vi	v12, v8, 31
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v8, v8, v12
-	vsra.vi	v8, v8, 2
+	vsrl.vi	v8, v8, 2
 	vadd.vv	v8, v8, v10
 	vsll.vi	v8, v8, 2
 	ret

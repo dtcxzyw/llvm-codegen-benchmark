@@ -28,7 +28,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsra.vi	v14, v12, 31
 	vsrl.vi	v14, v14, 30
 	vadd.vv	v12, v12, v14
-	vsra.vi	v12, v12, 2
+	vsrl.vi	v12, v12, 2
 	vadd.vv	v10, v12, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v9, v10, 0

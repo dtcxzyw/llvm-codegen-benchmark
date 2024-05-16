@@ -22,7 +22,7 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vi	v12, v12, 1
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
-	vsra.vi	v12, v12, 1
+	vsrl.vi	v12, v12, 1
 	vadd.vv	v8, v10, v8
 	vadd.vv	v10, v12, v8
 	vsetvli	zero, zero, e16, m1, ta, ma

@@ -15,11 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v8, v8, v12
 	ret
 func000000000000000e:                   # @func000000000000000e
-	lui	a0, 4096
-	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v10, a0
-	vsrl.vi	v12, v12, 1
+	vsrl.vi	v12, v10, 1
 	lui	a0, 2040
 	vand.vx	v12, v12, a0
 	li	a0, 255

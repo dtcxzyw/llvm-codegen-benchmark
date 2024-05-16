@@ -1,11 +1,7 @@
 .LCPI0_0:
 	.word	0x3ed65fd9                      # float 0.41870001
 func0000000000000000:                   # @func0000000000000000
-	lui	a0, 4096
-	addi	a0, a0, -1
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 8
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
@@ -20,11 +16,7 @@ func0000000000000000:                   # @func0000000000000000
 .LCPI1_0:
 	.word	0x3da6809e                      # float 0.0813000053
 func0000000000000004:                   # @func0000000000000004
-	lui	a0, 4096
-	addi	a0, a0, -1
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 16
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0

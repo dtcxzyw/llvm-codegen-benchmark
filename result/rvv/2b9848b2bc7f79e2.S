@@ -31,8 +31,7 @@ func0000000000000020:                   # @func0000000000000020
 	vadd.vv	v10, v10, v12
 	li	a0, 1461
 	vmul.vx	v10, v10, a0
-	vsra.vi	v12, v10, 31
-	vsrl.vi	v12, v12, 30
+	vsrl.vi	v12, v10, 30
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 2
 	vsub.vv	v8, v8, v10
