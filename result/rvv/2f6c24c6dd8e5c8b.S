@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	vwadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsrl.vi	v8, v10, 31
-	vadd.vv	v8, v10, v8
-	vsra.vi	v8, v8, 1
+	csrwi	vxrm, 2
+	vaadd.vv	v8, v10, v8
 	vrsub.vi	v8, v8, 0
 	ret

@@ -4,6 +4,6 @@ func0000000000000002:                   # @func0000000000000002
 	vsra.vi	v10, v8, 3
 	li	a0, 63
 	vsrl.vx	v8, v8, a0
-	vadd.vv	v8, v10, v8
-	vsra.vi	v8, v8, 1
+	csrwi	vxrm, 2
+	vaadd.vv	v8, v10, v8
 	ret
