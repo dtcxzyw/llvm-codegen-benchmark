@@ -2,9 +2,9 @@
 	.quad	0xc3d0000000000000              # double -4.6116860184273879E+18
 func000000000000002c:                   # @func000000000000002c
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmv1r.v	v25, v0
 	vmv1r.v	v0, v24
@@ -16,9 +16,9 @@ func000000000000002c:                   # @func000000000000002c
 	.quad	0x43d0000000000000              # double 4.6116860184273879E+18
 func0000000000000022:                   # @func0000000000000022
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmv1r.v	v25, v0
 	vmv1r.v	v0, v24

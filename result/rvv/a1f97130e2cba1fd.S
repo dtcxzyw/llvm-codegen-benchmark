@@ -52,9 +52,9 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	0x43f0000000000000              # double 1.8446744073709552E+19
 func0000000000000003:                   # @func0000000000000003
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa4, %lo(.LCPI7_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	vfmerge.vfm	v8, v8, fa4, v0

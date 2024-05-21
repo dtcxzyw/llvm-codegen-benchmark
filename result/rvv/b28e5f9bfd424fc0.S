@@ -172,9 +172,9 @@ func0000000000000186:                   # @func0000000000000186
 .LCPI22_0:
 	.quad	922337203685477580              # 0xccccccccccccccc
 func00000000000003ac:                   # @func00000000000003ac
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a0, %hi(.LCPI22_0)
 	ld	a0, %lo(.LCPI22_0)(a0)
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 7
 	vmslt.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma

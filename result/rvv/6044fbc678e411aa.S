@@ -18,8 +18,8 @@ func0000000000000005:                   # @func0000000000000005
 	vmv.v.v	v8, v10
 	ret
 func0000000000000020:                   # @func0000000000000020
-	vsetivli	zero, 4, e64, m2, ta, ma
 	li	a0, 256
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vadd.vi	v8, v8, 1
 	vmerge.vxm	v8, v8, a0, v0

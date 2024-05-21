@@ -30,13 +30,13 @@ func0000000000000042:                   # @func0000000000000042
 .LCPI2_0:
 	.word	0x40c90fdb                      # float 6.28318548
 func000000000000002c:                   # @func000000000000002c
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
-	vmflt.vf	v0, v8, fa5
-	vfadd.vf	v8, v8, fa4, v0.t
-	vmfge.vf	v0, v8, fa4
+	vmflt.vf	v0, v8, fa4
+	vfadd.vf	v8, v8, fa5, v0.t
+	vmfge.vf	v0, v8, fa5
 	ret
 func0000000000000022:                   # @func0000000000000022
 	fmv.w.x	fa5, zero
@@ -66,13 +66,13 @@ func0000000000000021:                   # @func0000000000000021
 .LCPI6_0:
 	.word	0x40c90fdb                      # float 6.28318548
 func0000000000000028:                   # @func0000000000000028
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI6_0)
-	flw	fa4, %lo(.LCPI6_0)(a0)
+	flw	fa5, %lo(.LCPI6_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
-	vmflt.vf	v0, v8, fa5
-	vfadd.vf	v8, v8, fa4, v0.t
-	vmfeq.vf	v0, v8, fa5
+	vmflt.vf	v0, v8, fa4
+	vfadd.vf	v8, v8, fa5, v0.t
+	vmfeq.vf	v0, v8, fa4
 	ret
 .LCPI7_0:
 	.quad	0x4076800000000000              # double 360
@@ -80,11 +80,11 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	0x4056800000000000              # double 90
 func0000000000000025:                   # @func0000000000000025
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, mu
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa4, %lo(.LCPI7_0)(a0)
 	lui	a0, %hi(.LCPI7_1)
 	fld	fa3, %lo(.LCPI7_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
 	vfadd.vf	v8, v8, fa4, v0.t
 	vmfle.vf	v16, v8, fa3
@@ -99,11 +99,11 @@ func0000000000000025:                   # @func0000000000000025
 func0000000000000023:                   # @func0000000000000023
 	lui	a0, %hi(.LCPI8_0)
 	fld	fa5, %lo(.LCPI8_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, mu
 	lui	a0, %hi(.LCPI8_1)
 	fld	fa4, %lo(.LCPI8_1)(a0)
 	lui	a0, %hi(.LCPI8_2)
 	fld	fa3, %lo(.LCPI8_2)(a0)
+	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
 	vfadd.vf	v8, v8, fa4, v0.t
 	vmfge.vf	v16, v8, fa3

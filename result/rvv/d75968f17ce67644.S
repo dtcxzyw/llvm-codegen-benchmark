@@ -1,6 +1,6 @@
 func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 4, e32, m1, ta, ma
 	li	a0, 26
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v0, v9, a0
 	vzext.vf4	v9, v10
 	vmerge.vvm	v10, v9, v8, v0

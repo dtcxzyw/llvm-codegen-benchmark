@@ -171,13 +171,13 @@ func0000000000000222:                   # @func0000000000000222
 func0000000000000355:                   # @func0000000000000355
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vle32.v	v24, (a0)
-	fli.s	fa5, 1.0
 	lui	a0, %hi(.LCPI15_0)
-	fld	fa4, %lo(.LCPI15_0)(a0)
-	vmfge.vf	v28, v24, fa5
+	fld	fa5, %lo(.LCPI15_0)(a0)
+	fli.s	fa4, 1.0
+	vmfge.vf	v28, v24, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmin.vv	v8, v16, v8
-	vmfle.vf	v16, v8, fa4
+	vmfle.vf	v16, v8, fa5
 	vmnot.m	v8, v16
 	vmandn.mm	v0, v8, v28
 	ret

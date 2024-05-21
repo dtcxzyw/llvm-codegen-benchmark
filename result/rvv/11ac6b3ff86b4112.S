@@ -12,9 +12,9 @@ func0000000000000000:                   # @func0000000000000000
 	.word	0x3e2aaaab                      # float 0.166666672
 func0000000000000001:                   # @func0000000000000001
 	fli.s	fa5, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	addi	a0, a0, %lo(.LCPI1_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v16, (a0), zero
 	vfrsub.vf	v12, v12, fa5
 	fli.s	fa5, 0.5

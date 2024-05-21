@@ -21,9 +21,9 @@ func0000000000000005:                   # @func0000000000000005
 .LCPI1_1:
 	.quad	19342813113834067               # 0x44b82fa09b5a53
 func000000000000000f:                   # @func000000000000000f
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 18
 	lui	a1, %hi(.LCPI1_1)
 	ld	a1, %lo(.LCPI1_1)(a1)
@@ -44,9 +44,9 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI2_1)
 	ld	a1, %lo(.LCPI2_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
 	vsrl.vi	v10, v10, 18
 	vsrl.vi	v8, v8, 3
@@ -63,9 +63,9 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI3_1)
 	ld	a1, %lo(.LCPI3_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
 	vsrl.vi	v10, v10, 31
 	vsrl.vi	v8, v8, 8

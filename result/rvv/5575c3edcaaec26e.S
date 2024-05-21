@@ -60,13 +60,13 @@ func00000000000005c1:                   # @func00000000000005c1
 .LCPI6_0:
 	.quad	8142226647931183360             # 0x70feffff36a86100
 func0000000000000511:                   # @func0000000000000511
-	li	a0, 32
-	lui	a1, %hi(.LCPI6_0)
-	ld	a1, %lo(.LCPI6_0)(a1)
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
+	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v12, v12, a0
+	vsll.vx	v12, v12, a1
 	vor.vv	v10, v12, v10
-	vmseq.vx	v9, v10, a1
+	vmseq.vx	v9, v10, a0
 	lui	a0, 390917
 	addi	a0, a0, 273
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	7429236654343298871             # 0x6719f36016719f37
 func0000000000000185:                   # @func0000000000000185
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v12, 2
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0

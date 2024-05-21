@@ -16,13 +16,13 @@ func00000000000000a5:                   # @func00000000000000a5
 .LCPI1_0:
 	.quad	0x3f571547652b82fe              # double 0.0014088818758681283
 func00000000000001a5:                   # @func00000000000001a5
-	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
+	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v24, v16, fa5
+	vmflt.vf	v24, v16, fa4
 	vmorn.mm	v16, v0, v24
-	vmfle.vf	v17, v8, fa4
+	vmfle.vf	v17, v8, fa5
 	vmandn.mm	v0, v16, v17
 	ret
 func000000000000002e:                   # @func000000000000002e

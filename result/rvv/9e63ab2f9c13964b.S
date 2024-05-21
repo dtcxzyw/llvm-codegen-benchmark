@@ -48,20 +48,19 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vmv.v.i	v10, 1
 	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
-	vadd.vi	v10, v12, 1, v0.t
-	vmv.v.v	v8, v10
+	vmv.v.i	v8, 1
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vadd.vi	v10, v12, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vim	v8, v10, 0, v0
+	vadd.vi	v8, v12, 1
+	vmerge.vim	v8, v8, 0, v0
 	ret

@@ -4,11 +4,11 @@
 	.quad	31372013730798557               # 0x6f74ae26501bdd
 func000000000000005c:                   # @func000000000000005c
 	li	a0, 10
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	lui	a2, %hi(.LCPI0_1)
 	ld	a2, %lo(.LCPI0_1)(a2)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmul.vx	v8, v8, a1
 	vror.vi	v8, v8, 2

@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.quad	6653270261604748243             # 0x5c552a0d699f0bd3
 func0000000000000020:                   # @func0000000000000020
-	lui	a0, 1048276
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	addiw	a0, a0, -655
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	lui	a1, 1048276
+	addiw	a1, a1, -655
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vmulhu.vx	v8, v8, a1
+	vadd.vx	v8, v8, a1
+	vmulhu.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 16
 	vsetvli	zero, zero, e16, mf2, ta, ma
@@ -43,13 +43,13 @@ func0000000000000062:                   # @func0000000000000062
 .LCPI3_0:
 	.quad	3777893186295716171             # 0x346dc5d63886594b
 func0000000000000060:                   # @func0000000000000060
-	lui	a0, 2
-	lui	a1, %hi(.LCPI3_0)
-	ld	a1, %lo(.LCPI3_0)(a1)
-	addiw	a0, a0, 1807
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
+	lui	a1, 2
+	addiw	a1, a1, 1807
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vmulhu.vx	v8, v8, a1
+	vadd.vx	v8, v8, a1
+	vmulhu.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 11
 	li	a0, 63
@@ -58,13 +58,13 @@ func0000000000000060:                   # @func0000000000000060
 .LCPI4_0:
 	.quad	3777893186295716171             # 0x346dc5d63886594b
 func0000000000000063:                   # @func0000000000000063
-	lui	a0, 2
-	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
-	addiw	a0, a0, 1807
+	lui	a0, %hi(.LCPI4_0)
+	ld	a0, %lo(.LCPI4_0)(a0)
+	lui	a1, 2
+	addiw	a1, a1, 1807
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vmulhu.vx	v8, v8, a1
+	vadd.vx	v8, v8, a1
+	vmulhu.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 11
 	li	a0, 63

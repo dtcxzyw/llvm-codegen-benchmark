@@ -53,9 +53,9 @@ func0000000000000016:                   # @func0000000000000016
 .LCPI3_2:
 	.quad	184467440737095516              # 0x28f5c28f5c28f5c
 func000000000000001c:                   # @func000000000000001c
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	addi	a0, a0, %lo(.LCPI3_0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vlse64.v	v12, (a0), zero
 	lui	a0, %hi(.LCPI3_1)
 	ld	a0, %lo(.LCPI3_1)(a0)
@@ -73,9 +73,9 @@ func000000000000001c:                   # @func000000000000001c
 .LCPI4_2:
 	.quad	18446744073709550               # 0x4189374bc6a7ee
 func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI4_0)
 	addi	a0, a0, %lo(.LCPI4_0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vlse64.v	v12, (a0), zero
 	lui	a0, %hi(.LCPI4_1)
 	ld	a0, %lo(.LCPI4_1)(a0)
@@ -93,9 +93,9 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI5_2:
 	.quad	184467440737095516              # 0x28f5c28f5c28f5c
 func000000000000000c:                   # @func000000000000000c
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI5_0)
 	addi	a0, a0, %lo(.LCPI5_0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vlse64.v	v12, (a0), zero
 	lui	a0, %hi(.LCPI5_1)
 	ld	a0, %lo(.LCPI5_1)(a0)

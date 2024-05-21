@@ -11,13 +11,13 @@ func0000000000000000:                   # @func0000000000000000
 	vlse64.v	v16, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
-	vfmacc.vf	v16, fa5, v12
 	lui	a0, %hi(.LCPI0_2)
-	fld	fa5, %lo(.LCPI0_2)(a0)
+	fld	fa4, %lo(.LCPI0_2)(a0)
+	vfmacc.vf	v16, fa5, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfwcvt.f.x.v	v12, v10
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmadd.vf	v12, fa5, v16
+	vfmadd.vf	v12, fa4, v16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v10, v12
 	vadd.vv	v8, v10, v8
@@ -35,13 +35,13 @@ func0000000000000001:                   # @func0000000000000001
 	vlse64.v	v16, (a0), zero
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_1)(a0)
-	vfmacc.vf	v16, fa5, v12
 	lui	a0, %hi(.LCPI1_2)
-	fld	fa5, %lo(.LCPI1_2)(a0)
+	fld	fa4, %lo(.LCPI1_2)(a0)
+	vfmacc.vf	v16, fa5, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfwcvt.f.x.v	v12, v10
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmadd.vf	v12, fa5, v16
+	vfmadd.vf	v12, fa4, v16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v10, v12
 	vadd.vv	v8, v10, v8

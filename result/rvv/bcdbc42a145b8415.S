@@ -14,11 +14,11 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_1:
 	.quad	0xc0bf400000000000              # double -8000
 func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmand.mm	v0, v0, v16
 	vfmerge.vfm	v8, v8, fa5, v0
 	vmfgt.vf	v0, v8, fa4
@@ -84,9 +84,9 @@ func000000000000000e:                   # @func000000000000000e
 .LCPI10_0:
 	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func000000000000000b:                   # @func000000000000000b
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmand.mm	v0, v0, v16
 	vmerge.vim	v8, v8, 0, v0
 	vmfgt.vf	v16, v8, fa5

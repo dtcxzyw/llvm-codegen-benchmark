@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 244
 	addiw	a0, a0, 576
-	vsetivli	zero, 4, e64, m2, ta, ma
 	li	a1, -1
 	srli	a1, a1, 2
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a1
 	vmaxu.vx	v8, v10, a0
 	vmerge.vim	v8, v8, -1, v0
@@ -26,12 +26,11 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 2
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmaxu.vx	v10, v10, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsleu.vi	v0, v8, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vim	v8, v10, 3, v0
+	vmaxu.vx	v8, v10, a0
+	vmerge.vim	v8, v8, 3, v0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a0, 1

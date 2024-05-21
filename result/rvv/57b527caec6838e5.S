@@ -7,13 +7,11 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vx	v8, v8, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vor.vi	v12, v12, 1
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vor.vi	v12, v10, 5, v0.t
-	vmv.v.v	v8, v12
+	vor.vi	v8, v12, 1
+	vor.vi	v8, v10, 5, v0.t
 	ret
 func0000000000000031:                   # @func0000000000000031
 	lui	a0, 786432
@@ -30,10 +28,9 @@ func0000000000000031:                   # @func0000000000000031
 func0000000000000011:                   # @func0000000000000011
 	li	a0, 24
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vor.vx	v12, v12, a0
 	vmseq.vi	v0, v8, 0
-	vor.vi	v12, v10, 8, v0.t
-	vmv.v.v	v8, v12
+	vor.vx	v8, v12, a0
+	vor.vi	v8, v10, 8, v0.t
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 1

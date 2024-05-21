@@ -7,15 +7,15 @@
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI0_0)
 	addi	a0, a0, %lo(.LCPI0_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v20, (a0), zero
-	vmerge.vvm	v16, v20, v16, v0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vlse32.v	v24, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
 	flw	fa4, %lo(.LCPI0_2)(a0)
-	vsetvli	zero, zero, e64, m8, ta, ma
-	vmflt.vf	v0, v8, fa5
+	vmflt.vf	v20, v8, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vfmerge.vfm	v8, v16, fa4, v0
+	vmerge.vvm	v8, v24, v16, v0
+	vmv1r.v	v0, v20
+	vfmerge.vfm	v8, v8, fa4, v0
 	ret

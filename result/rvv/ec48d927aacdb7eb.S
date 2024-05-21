@@ -42,9 +42,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	.word	0x3d93dd98                      # float 0.0722000003
 func0000000000000044:                   # @func0000000000000044
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa4, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmax.vf	v8, v8, fa5
 	fli.s	fa5, 1.0
 	vmfgt.vf	v0, v8, fa5

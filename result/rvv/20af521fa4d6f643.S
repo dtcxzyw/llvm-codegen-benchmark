@@ -37,9 +37,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a0, 255
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a1, 262144
 	addi	a1, a1, -1
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vx	v0, v8, a1
 	vand.vx	v8, v9, a0
 	vmerge.vim	v10, v8, 0, v0

@@ -24,9 +24,9 @@ func00000000000000d0:                   # @func00000000000000d0
 func00000000000000d4:                   # @func00000000000000d4
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmv.v.i	v11, 1
-	vwsll.vv	v12, v11, v10
 	li	a0, 31
 	vmsgt.vx	v0, v10, a0
+	vwsll.vv	v12, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vim	v10, v12, -1, v0
 	vor.vv	v8, v10, v8

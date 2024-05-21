@@ -44,11 +44,11 @@ func000000000000000a:                   # @func000000000000000a
 .LCPI5_0:
 	.quad	0x3fd3333333333333              # double 0.29999999999999999
 func0000000000000004:                   # @func0000000000000004
-	li	a0, 40
+	lui	a0, %hi(.LCPI5_0)
+	addi	a0, a0, %lo(.LCPI5_0)
 	vsetivli	zero, 8, e32, m2, ta, ma
-	lui	a1, %hi(.LCPI5_0)
-	addi	a1, a1, %lo(.LCPI5_0)
-	vlse64.v	v12, (a1), zero
+	vlse64.v	v12, (a0), zero
+	li	a0, 40
 	vmsltu.vx	v0, v8, a0
 	fli.d	fa5, 1.0
 	vsetvli	zero, zero, e64, m4, ta, ma

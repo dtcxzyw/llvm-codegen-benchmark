@@ -23,8 +23,8 @@ func0000000000000168:                   # @func0000000000000168
 	ret
 func0000000000000044:                   # @func0000000000000044
 	lui	a0, 264192
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, 784384
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a1
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0

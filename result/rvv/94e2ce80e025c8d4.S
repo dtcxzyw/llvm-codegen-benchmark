@@ -27,8 +27,8 @@ func0000000000000184:                   # @func0000000000000184
 	vmsltu.vv	v0, v8, v10
 	ret
 func000000000000001a:                   # @func000000000000001a
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a0, 524288
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vadd.vi	v10, v10, -1
 	vmerge.vxm	v10, v10, a0, v0

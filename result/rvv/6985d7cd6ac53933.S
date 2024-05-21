@@ -5,9 +5,9 @@
 .LCPI0_2:
 	.word	0x3caa6a57                      # float 0.0208026599
 func0000000000000000:                   # @func0000000000000000
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	addi	a0, a0, %lo(.LCPI0_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v20, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	flw	fa5, %lo(.LCPI0_1)(a0)

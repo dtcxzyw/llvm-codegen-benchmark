@@ -7,8 +7,8 @@ func0000000000000022:                   # @func0000000000000022
 	vzext.vf2	v8, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 16, e8, m1, ta, ma
 	li	a0, 20
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vx	v0, v9, a0
 	vor.vi	v9, v10, 1
 	vmerge.vvm	v10, v9, v8, v0

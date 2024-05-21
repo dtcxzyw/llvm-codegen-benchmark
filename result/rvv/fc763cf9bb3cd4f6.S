@@ -45,9 +45,9 @@ func0000000000000021:                   # @func0000000000000021
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmacc.vx	v10, a0, v8
 	vror.vi	v8, v10, 2

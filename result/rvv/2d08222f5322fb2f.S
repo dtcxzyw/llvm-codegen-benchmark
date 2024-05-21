@@ -20,11 +20,11 @@ func00000000000000f1:                   # @func00000000000000f1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v11, v10, 2
 	vmerge.vvm	v10, v11, v10, v0
-	vadd.vi	v11, v10, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vmerge.vvm	v8, v11, v10, v0
+	vadd.vi	v8, v10, 8
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	li	a0, 28

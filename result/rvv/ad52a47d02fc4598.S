@@ -6,16 +6,16 @@ func00000000000001d1:                   # @func00000000000001d1
 	.quad	1844674407370955161             # 0x1999999999999999
 func00000000000000d4:                   # @func00000000000000d4
 	li	a0, -48
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v8, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, -6
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vx	v0, v10, a0
+	vmsltu.vx	v0, v10, a1
 	ret
 func0000000000000094:                   # @func0000000000000094
 	li	a0, -257

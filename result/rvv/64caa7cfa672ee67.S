@@ -6,14 +6,14 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v16, v8, fa5
-	vfwcvt.f.f.v	v8, v16
+	vfmul.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfwcvt.f.f.v	v16, v8
 	fli.d	fa4, -1.0
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmv.v.f	v16, fa4
-	vfmacc.vf	v16, fa5, v8
+	vfmv.v.f	v24, fa4
+	vfmacc.vf	v24, fa5, v16
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vfncvt.f.f.w	v8, v16
+	vfncvt.f.f.w	v8, v24
 	ret

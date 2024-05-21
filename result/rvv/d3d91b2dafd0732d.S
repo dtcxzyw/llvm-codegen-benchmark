@@ -10,10 +10,10 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, -55
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v14, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v14, v14, v12
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsleu.vi	v0, v10, 5
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v14, v14, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v8, v14, v0
 	ret

@@ -21,11 +21,11 @@ func0000000000000012:                   # @func0000000000000012
 .LCPI2_1:
 	.quad	0x37f0000010000010              # double 2.9387360522180373E-39
 func000000000000000a:                   # @func000000000000000a
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v16, v16
 	vmfle.vf	v0, v16, fa5
 	vsetvli	zero, zero, e64, m8, ta, ma

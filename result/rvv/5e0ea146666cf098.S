@@ -12,9 +12,9 @@ func00000000000000d2:                   # @func00000000000000d2
 func00000000000000d0:                   # @func00000000000000d0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v10, 28
-	lui	a0, 655360
-	vmsltu.vx	v0, v10, a0
 	li	a0, 55
+	lui	a1, 655360
+	vmsltu.vx	v0, v10, a1
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vsetvli	zero, zero, e16, m1, ta, ma

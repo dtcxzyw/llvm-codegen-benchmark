@@ -22,13 +22,13 @@ func0000000000000077:                   # @func0000000000000077
 .LCPI3_0:
 	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func0000000000000024:                   # @func0000000000000024
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v20, v16, fa5
+	vmflt.vf	v20, v16, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfgt.vf	v16, v8, fa4
+	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v20
 	ret
 func0000000000000088:                   # @func0000000000000088

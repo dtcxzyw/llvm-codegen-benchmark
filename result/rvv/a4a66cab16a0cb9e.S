@@ -6,9 +6,9 @@
 	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
 func0000000000000000:                   # @func0000000000000000
 	fli.d	fa5, 1.5
-	vsetivli	zero, 8, e64, m4, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	addi	a0, a0, %lo(.LCPI0_0)
+	vsetivli	zero, 8, e64, m4, ta, ma
 	vlse64.v	v16, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)

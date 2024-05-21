@@ -71,15 +71,14 @@ func0000000000000063:                   # @func0000000000000063
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v11, v10, 1, v0
-	vor.vi	v10, v11, 2
+	vmerge.vim	v10, v10, 1, v0
 	lui	a0, 8
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, mu
-	vor.vi	v10, v11, 4, v0.t
-	vmv.v.v	v8, v10
+	vor.vi	v8, v10, 2
+	vor.vi	v8, v10, 4, v0.t
 	ret
 func0000000000000111:                   # @func0000000000000111
 	li	a0, 254

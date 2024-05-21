@@ -8,8 +8,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000003:                   # @func0000000000000003
 	li	a0, 511
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, 4
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a1
 	vand.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

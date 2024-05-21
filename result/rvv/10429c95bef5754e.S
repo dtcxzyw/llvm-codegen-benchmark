@@ -26,13 +26,13 @@ func0000000000000022:                   # @func0000000000000022
 .LCPI2_1:
 	.quad	0x3f1a36e2eb1c432d              # double 1.0E-4
 func0000000000000044:                   # @func0000000000000044
-	vsetivli	zero, 16, e64, m8, ta, mu
-	vmflt.vv	v7, v16, v8
 	lui	a0, %hi(.LCPI2_0)
 	addi	a0, a0, %lo(.LCPI2_0)
+	vsetivli	zero, 16, e64, m8, ta, mu
 	vlse64.v	v24, (a0), zero
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_1)(a0)
+	vmflt.vv	v7, v16, v8
 	vmv1r.v	v6, v0
 	vmv1r.v	v0, v7
 	vmerge.vvm	v8, v16, v8, v0

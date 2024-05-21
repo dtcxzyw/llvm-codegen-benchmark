@@ -73,14 +73,14 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI8_0:
 	.quad	-211813488000000000             # 0xfd0f7cc1411fa000
 func0000000000000046:                   # @func0000000000000046
-	lui	a0, 244
-	addi	a0, a0, 576
-	lui	a1, %hi(.LCPI8_0)
-	ld	a1, %lo(.LCPI8_0)(a1)
+	lui	a0, %hi(.LCPI8_0)
+	ld	a0, %lo(.LCPI8_0)(a0)
+	lui	a1, 244
+	addi	a1, a1, 576
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwmacc.vx	v8, a0, v10
+	vwmacc.vx	v8, a1, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmslt.vx	v0, v8, a1
+	vmslt.vx	v0, v8, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
 	lui	a0, 244

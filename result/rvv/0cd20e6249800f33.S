@@ -5,9 +5,9 @@ func0000000000000002:                   # @func0000000000000002
 	csrr	a0, vlenb
 	slli	a0, a0, 3
 	sub	sp, sp, a0
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	addi	a0, a0, %lo(.LCPI0_0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vlse64.v	v24, (a0), zero
 	addi	a0, sp, 16
 	vs8r.v	v24, (a0)                       # Unknown-size Folded Spill
@@ -25,9 +25,9 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	addi	a0, a0, %lo(.LCPI1_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v20, (a0), zero
 	vmflt.vv	v16, v12, v8
 	vmv1r.v	v17, v0

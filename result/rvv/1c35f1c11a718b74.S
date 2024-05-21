@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.word	0x3a83126f                      # float 0.00100000005
 func0000000000000002:                   # @func0000000000000002
-	fli.s	fa5, 0.5
 	lui	a0, %hi(.LCPI0_0)
-	flw	fa4, %lo(.LCPI0_0)(a0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
+	fli.s	fa4, 0.5
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v8, v8, fa5
+	vfmul.vf	v8, v8, fa4
 	vfabs.v	v8, v8
-	vmflt.vf	v0, v8, fa4
+	vmflt.vf	v0, v8, fa5
 	ret
 .LCPI1_0:
 	.quad	0x40f5180000000000              # double 86400
@@ -78,13 +78,13 @@ func0000000000000009:                   # @func0000000000000009
 .LCPI7_0:
 	.quad	0x3eb0c6f7a0000000              # double 9.9999999747524271E-7
 func000000000000001d:                   # @func000000000000001d
-	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI7_0)
-	fld	fa4, %lo(.LCPI7_0)(a0)
+	fld	fa5, %lo(.LCPI7_0)(a0)
+	fli.d	fa4, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmul.vf	v8, v8, fa5
+	vfmul.vf	v8, v8, fa4
 	vfabs.v	v8, v8
-	vmflt.vf	v16, v8, fa4
+	vmflt.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
 .LCPI8_0:

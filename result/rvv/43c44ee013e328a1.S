@@ -26,11 +26,11 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 526344
 	addi	a0, a0, 128
-	slli	a1, a0, 32
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
-	add.uw	a0, a0, a1
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
+	slli	a2, a0, 32
+	add.uw	a0, a0, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vx	v8, v8, a0
-	vrsub.vx	v8, v8, a2
+	vrsub.vx	v8, v8, a1
 	ret

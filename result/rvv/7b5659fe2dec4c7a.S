@@ -10,11 +10,11 @@ func0000000000000000:                   # @func0000000000000000
 	vfmul.vf	v0, v24, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
-	fli.d	fa5, 3.0
 	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	fneg.d	fa5, fa5
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	fli.d	fa4, 3.0
+	fneg.d	fa4, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmadd.vf	v24, fa5, v0
-	vfmadd.vf	v8, fa4, v24
+	vfmadd.vf	v24, fa4, v0
+	vfmadd.vf	v8, fa5, v24
 	ret

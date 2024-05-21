@@ -87,9 +87,9 @@ func00000000000002a2:                   # @func00000000000002a2
 .LCPI9_0:
 	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func0000000000000a2a:                   # @func0000000000000a2a
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a1, %hi(.LCPI9_0)
 	fld	fa5, %lo(.LCPI9_0)(a1)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vmflt.vf	v7, v16, fa5
 	vfmin.vv	v8, v24, v8

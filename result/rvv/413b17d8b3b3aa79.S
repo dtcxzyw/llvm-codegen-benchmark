@@ -117,9 +117,9 @@ func000000000000004c:                   # @func000000000000004c
 .LCPI14_0:
 	.word	0x3727c5ac                      # float 9.99999974E-6
 func0000000000000044:                   # @func0000000000000044
+	lui	a0, %hi(.LCPI14_0)
+	flw	fa5, %lo(.LCPI14_0)(a0)
 	lui	a0, 24
-	lui	a1, %hi(.LCPI14_0)
-	flw	fa5, %lo(.LCPI14_0)(a1)
 	addi	a0, a0, 1696
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
@@ -171,9 +171,9 @@ func00000000000000cb:                   # @func00000000000000cb
 .LCPI20_0:
 	.quad	0x3f50624dd2f1a9fc              # double 0.001
 func000000000000004d:                   # @func000000000000004d
+	lui	a0, %hi(.LCPI20_0)
+	fld	fa5, %lo(.LCPI20_0)(a0)
 	li	a0, 999
-	lui	a1, %hi(.LCPI20_0)
-	fld	fa5, %lo(.LCPI20_0)(a1)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m4, ta, ma

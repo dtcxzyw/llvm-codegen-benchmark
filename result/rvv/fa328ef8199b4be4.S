@@ -28,11 +28,11 @@ func0000000000000012:                   # @func0000000000000012
 .LCPI2_1:
 	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
 func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vvm	v8, v16, v8, v0
 	vfadd.vf	v8, v8, fa5
 	vfabs.v	v8, v8

@@ -4,10 +4,11 @@ func0000000000000044:                   # @func0000000000000044
 	vmsleu.vi	v0, v9, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 3, v0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsleu.vi	v0, v8, 1
+	vmsleu.vi	v8, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
+	vmerge.vim	v12, v12, 3, v0
+	vmv1r.v	v0, v8
 	vmerge.vim	v8, v12, 4, v0
 	vmv1r.v	v0, v10
 	vmerge.vim	v8, v8, 5, v0

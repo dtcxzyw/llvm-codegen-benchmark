@@ -1,8 +1,9 @@
 func0000000000000045:                   # @func0000000000000045
-	vmv1r.v	v11, v0
 	li	a0, 107
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmseq.vx	v0, v10, a0
+	vmseq.vx	v10, v10, a0
+	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vsll.vi	v8, v8, 10, v0.t
 	vmv1r.v	v0, v11
@@ -20,11 +21,12 @@ func00000000000000a2:                   # @func00000000000000a2
 	vsll.vi	v8, v8, 16, v0.t
 	ret
 func0000000000000004:                   # @func0000000000000004
-	vmv1r.v	v9, v0
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v10, 0
+	vmseq.vi	v9, v10, 0
+	vmv1r.v	v10, v0
+	vmv1r.v	v0, v9
 	vsetvli	zero, zero, e8, mf4, ta, mu
 	vsll.vi	v8, v8, 4, v0.t
-	vmv1r.v	v0, v9
+	vmv1r.v	v0, v10
 	vsll.vi	v8, v8, 2, v0.t
 	ret

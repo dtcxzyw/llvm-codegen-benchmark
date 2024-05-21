@@ -2,14 +2,14 @@
 	.quad	384307168202282325              # 0x555555555555555
 func0000000000000108:                   # @func0000000000000108
 	vsetivli	zero, 4, e64, m2, ta, ma
-	lui	a0, 699051
-	addiw	a0, a0, -1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
+	lui	a0, 699051
+	addiw	a0, a0, -1365
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	slli	a2, a0, 32
+	add	a0, a0, a2
 	vmacc.vx	v8, a0, v12
 	vmsgtu.vx	v0, v8, a1
 	ret

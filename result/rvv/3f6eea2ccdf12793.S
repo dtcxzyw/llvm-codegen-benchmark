@@ -89,9 +89,9 @@ func0000000000000114:                   # @func0000000000000114
 .LCPI9_0:
 	.quad	307445734561825861              # 0x444444444444445
 func000000000000018c:                   # @func000000000000018c
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a0, %hi(.LCPI9_0)
 	ld	a0, %lo(.LCPI9_0)(a0)
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v11, v11, 0
 	vmsgtu.vi	v10, v10, 7
 	vsetvli	zero, zero, e64, m2, ta, ma

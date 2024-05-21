@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.word	0xc8976760                      # float -310075
 func0000000000000004:                   # @func0000000000000004
+	lui	a0, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, 266752
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
 	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa4
@@ -13,9 +13,9 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI1_0:
 	.word	0x48976760                      # float 310075
 func0000000000000008:                   # @func0000000000000008
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 266752
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
 	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa4

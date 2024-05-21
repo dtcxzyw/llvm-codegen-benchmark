@@ -1,22 +1,20 @@
 func0000000000000008:                   # @func0000000000000008
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vsrl.vi	v10, v8, 8
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
+	vsrl.vi	v9, v8, 8
+	vmerge.vvm	v8, v9, v8, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf2	v10, v8
 	li	a0, 56
 	vwsll.vx	v8, v10, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vrev8.v	v10, v8
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
+	vrev8.v	v9, v8
+	vmerge.vvm	v8, v9, v8, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf2	v10, v8
 	vwsll.vi	v8, v10, 24

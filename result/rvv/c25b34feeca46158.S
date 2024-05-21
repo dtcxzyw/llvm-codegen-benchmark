@@ -13,9 +13,9 @@ func0000000000000042:                   # @func0000000000000042
 .LCPI1_0:
 	.quad	0x43e158e460913d00              # double 1.0E+19
 func0000000000000024:                   # @func0000000000000024
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	vmfgt.vf	v0, v8, fa5
@@ -24,9 +24,9 @@ func0000000000000024:                   # @func0000000000000024
 .LCPI2_0:
 	.quad	0x41dfffffffc00000              # double 2147483647
 func000000000000004c:                   # @func000000000000004c
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	vmfge.vf	v0, v8, fa5

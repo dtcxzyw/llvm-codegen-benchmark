@@ -11,9 +11,9 @@ func0000000000000023:                   # @func0000000000000023
 	.word	0x3f733333                      # float 0.949999988
 func0000000000000025:                   # @func0000000000000025
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, mu
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa4, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, mu
 	vmflt.vf	v0, v8, fa5
 	vfneg.v	v8, v8, v0.t
 	vmfle.vf	v12, v8, fa4
@@ -23,9 +23,9 @@ func0000000000000025:                   # @func0000000000000025
 	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
 func000000000000002c:                   # @func000000000000002c
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, mu
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa4, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
 	vfneg.v	v8, v8, v0.t
 	vmfge.vf	v0, v8, fa4
@@ -34,9 +34,9 @@ func000000000000002c:                   # @func000000000000002c
 	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
 func0000000000000022:                   # @func0000000000000022
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, mu
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa4, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
 	vfneg.v	v8, v8, v0.t
 	vmflt.vf	v0, v8, fa4
@@ -45,9 +45,9 @@ func0000000000000022:                   # @func0000000000000022
 	.word	0x3f7fff58                      # float 0.999989986
 func0000000000000024:                   # @func0000000000000024
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, mu
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa4, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, mu
 	vmflt.vf	v0, v8, fa5
 	vfneg.v	v8, v8, v0.t
 	vmfgt.vf	v0, v8, fa4

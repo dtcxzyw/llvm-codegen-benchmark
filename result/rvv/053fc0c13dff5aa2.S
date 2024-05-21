@@ -15,9 +15,9 @@ func0000000000000100:                   # @func0000000000000100
 	lui	a0, 797483
 	addi	a0, a0, -451
 	zext.w	a0, a0
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	li	a0, 32
 	vsrl.vx	v12, v12, a0

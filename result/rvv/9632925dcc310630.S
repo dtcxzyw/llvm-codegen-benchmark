@@ -36,12 +36,11 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vsrl.vi	v12, v10, 8
+	vsrl.vi	v10, v10, 8
 	li	a0, 127
-	vmv.v.x	v10, a0
 	vmsgt.vi	v0, v8, -1
-	vand.vx	v10, v12, a0, v0.t
-	vmv.v.v	v8, v10
+	vmv.v.x	v8, a0
+	vand.vx	v8, v10, a0, v0.t
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma

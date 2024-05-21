@@ -22,11 +22,11 @@ func0000000000001044:                   # @func0000000000001044
 func0000000000001104:                   # @func0000000000001104
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
 	fld	fa3, %lo(.LCPI1_2)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v8, fa5
 	vmfgt.vf	v25, v16, fa4
 	vmor.mm	v16, v25, v24

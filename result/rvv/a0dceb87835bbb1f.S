@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 32
-	vsetivli	zero, 4, e32, m1, ta, ma
 	li	a1, 1408
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v0, v9, a1
 	vnsrl.wx	v9, v10, a0
 	vmerge.vvm	v10, v9, v8, v0

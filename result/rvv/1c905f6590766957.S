@@ -112,9 +112,9 @@ func0000000000000012:                   # @func0000000000000012
 func00000000000000a5:                   # @func00000000000000a5
 	lui	a0, %hi(.LCPI12_0)
 	flw	fa5, %lo(.LCPI12_0)(a0)
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI12_1)
 	flw	fa4, %lo(.LCPI12_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	vmfle.vf	v12, v8, fa4
@@ -172,9 +172,9 @@ func0000000000000083:                   # @func0000000000000083
 func00000000000000ca:                   # @func00000000000000ca
 	lui	a0, %hi(.LCPI18_0)
 	fld	fa5, %lo(.LCPI18_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI18_1)
 	fld	fa4, %lo(.LCPI18_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	vmfle.vf	v0, v8, fa4

@@ -8,12 +8,11 @@ func000000000000008f:                   # @func000000000000008f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	li	a0, 64
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vor.vx	v10, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
+	vor.vx	v9, v8, a0
+	vmerge.vvm	v8, v9, v8, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v10, v8
 	li	a0, 48

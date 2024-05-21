@@ -14,11 +14,11 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI1_1:
 	.word	0x40c90fdb                      # float 6.28318548
 func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	vmflt.vf	v0, v8, fa5
 	vmv.v.i	v12, 0
@@ -59,11 +59,11 @@ func000000000000000c:                   # @func000000000000000c
 .LCPI4_1:
 	.quad	0x401921fb54442d18              # double 6.2831853071795862
 func000000000000000a:                   # @func000000000000000a
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
 	fld	fa4, %lo(.LCPI4_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vfsub.vv	v8, v8, v16
 	vmfle.vf	v0, v8, fa5
 	vmv.v.i	v16, 0

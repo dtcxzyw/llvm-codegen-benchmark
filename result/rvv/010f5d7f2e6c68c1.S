@@ -47,17 +47,17 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v12, 2
-	vsll.vv	v9, v12, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vi	v0, v10, 6
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vv	v9, v12, v9
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v14, 1
 	vmsle.vi	v0, v10, -1
-	vsll.vv	v8, v14, v12, v0.t
+	vmv.v.i	v10, 1
+	vsll.vv	v8, v10, v12, v0.t
 	ret
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 4, e64, m2, ta, ma

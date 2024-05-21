@@ -72,11 +72,11 @@ func000000000000000c:                   # @func000000000000000c
 .LCPI5_1:
 	.quad	0x401921fb54442d18              # double 6.2831853071795862
 func000000000000000a:                   # @func000000000000000a
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	lui	a0, %hi(.LCPI5_1)
 	fld	fa4, %lo(.LCPI5_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vfsub.vv	v8, v8, v16
 	vmfle.vf	v0, v8, fa5
 	vmv.v.i	v8, 0

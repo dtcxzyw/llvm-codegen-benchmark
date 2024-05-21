@@ -7,9 +7,9 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vsext.vf2	v10, v9
-	vfwcvt.f.x.v	v12, v10
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
+	vfwcvt.f.x.v	v12, v10
 	vsext.vf2	v10, v8
 	vfwcvt.f.x.v	v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma

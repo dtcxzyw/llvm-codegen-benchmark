@@ -1,8 +1,8 @@
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 16, e8, m1, ta, mu
 	vand.vi	v9, v8, 7
-	vmv.v.i	v8, 7
 	vmsleu.vi	v0, v9, 2
+	vmv.v.i	v8, 7
 	vadd.vi	v8, v9, 4, v0.t
 	ret
 func0000000000000038:                   # @func0000000000000038

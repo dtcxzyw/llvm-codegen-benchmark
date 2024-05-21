@@ -24,14 +24,13 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, 1
 	addi	a0, a0, -8
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vand.vx	v9, v9, a0
 	lui	a1, 4091
 	slli	a1, a1, 10
 	addi	a1, a1, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a1
 	vsetvli	zero, zero, e16, mf2, ta, ma
+	vand.vx	v9, v9, a0
 	vmerge.vxm	v9, v9, a0, v0
 	lui	a0, 1048568
 	vand.vx	v8, v8, a0

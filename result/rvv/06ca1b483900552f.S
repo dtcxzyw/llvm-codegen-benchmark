@@ -36,11 +36,12 @@ func0000000000000011:                   # @func0000000000000011
 	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v13, v12, 1, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v10
+	vmseq.vv	v13, v8, v10
 	vsetvli	zero, zero, e16, mf2, ta, mu
-	vrsub.vi	v12, v13, 2, v0.t
+	vmerge.vim	v8, v12, 1, v0
+	vmv1r.v	v0, v13
+	vrsub.vi	v12, v8, 2, v0.t
 	vmv1r.v	v8, v12
 	ret
 func00000000000000c1:                   # @func00000000000000c1

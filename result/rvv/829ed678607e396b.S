@@ -1,8 +1,8 @@
 func0000000000000031:                   # @func0000000000000031
 	li	a0, 1000
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwmulu.vx	v10, v8, a0
 	vmseq.vi	v0, v8, 0
+	vwmulu.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v8, v10, 1, v0
 	ret
@@ -10,8 +10,8 @@ func0000000000000076:                   # @func0000000000000076
 	lui	a0, 244
 	addi	a0, a0, 576
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwmulu.vx	v10, v8, a0
 	vmsle.vi	v0, v8, -1
+	vwmulu.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v8, v10, -1, v0
 	ret

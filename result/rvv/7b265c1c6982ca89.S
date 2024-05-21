@@ -3,12 +3,12 @@
 .LCPI0_1:
 	.word	0x3d25aee6                      # float 0.0404499993
 func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vzext.vf2	v10, v8
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
 	flw	fa4, %lo(.LCPI0_1)(a0)
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v10, v8
 	vfwcvt.f.xu.v	v12, v10
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfmul.vf	v8, v12, fa5
@@ -38,9 +38,9 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI3_0:
 	.word	0x3b808081                      # float 0.00392156886
 func0000000000000008:                   # @func0000000000000008
-	vsetivli	zero, 16, e16, m2, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v10, v8
 	vfwcvt.f.xu.v	v12, v10
 	vsetvli	zero, zero, e32, m4, ta, ma
@@ -51,9 +51,9 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI4_0:
 	.word	0x3b808081                      # float 0.00392156886
 func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 16, e16, m2, ta, ma
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v10, v8
 	vfwcvt.f.xu.v	v12, v10
 	vsetvli	zero, zero, e32, m4, ta, ma
@@ -66,9 +66,9 @@ func0000000000000009:                   # @func0000000000000009
 .LCPI5_0:
 	.word	0x3b808081                      # float 0.00392156886
 func000000000000000c:                   # @func000000000000000c
-	vsetivli	zero, 16, e16, m2, ta, ma
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v10, v8
 	vfwcvt.f.xu.v	v12, v10
 	vsetvli	zero, zero, e32, m4, ta, ma

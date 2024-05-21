@@ -47,64 +47,64 @@ func0000000000000000:                   # @func0000000000000000
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 160(sp)
-	vsetivli	zero, 1, e32, m1, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m1, ta, ma
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 128(sp)
-	vsetivli	zero, 1, e32, m1, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m1, ta, ma
 	vslidedown.vi	v8, v8, 3
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 140(sp)
-	vsetivli	zero, 1, e32, m1, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m1, ta, ma
 	vslidedown.vi	v8, v8, 2
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 136(sp)
-	vsetivli	zero, 1, e32, m1, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m1, ta, ma
 	vslidedown.vi	v8, v8, 1
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 132(sp)
-	vsetivli	zero, 1, e32, m2, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 7
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 156(sp)
-	vsetivli	zero, 1, e32, m2, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 6
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 152(sp)
-	vsetivli	zero, 1, e32, m2, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 5
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
 	fsw	fa0, 148(sp)
-	vsetivli	zero, 1, e32, m2, ta, ma
 	addi	a0, sp, 240
 	vl4r.v	v8, (a0)                        # Unknown-size Folded Reload
+	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 4
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0

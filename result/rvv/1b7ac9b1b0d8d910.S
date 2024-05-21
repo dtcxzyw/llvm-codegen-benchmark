@@ -22,12 +22,12 @@ func000000000000000a:                   # @func000000000000000a
 .LCPI2_0:
 	.quad	0x3feffffe00000000              # double 0.99999904632568359
 func0000000000000004:                   # @func0000000000000004
-	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	fli.d	fa4, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmv.v.f	v24, fa5
+	vfmv.v.f	v24, fa4
 	vfmacc.vv	v24, v16, v8
-	vmfgt.vf	v0, v24, fa4
-	vfmerge.vfm	v8, v24, fa4, v0
+	vmfgt.vf	v0, v24, fa5
+	vfmerge.vfm	v8, v24, fa5, v0
 	ret

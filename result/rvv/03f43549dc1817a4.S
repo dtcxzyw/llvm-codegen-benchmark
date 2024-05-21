@@ -9,9 +9,9 @@ func0000000000000000:                   # @func0000000000000000
 .LCPI1_0:
 	.quad	0x4024000000000000              # double 10
 func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	addi	a0, a0, %lo(.LCPI1_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse64.v	v24, (a0), zero
 	vfwcvt.f.f.v	v0, v16
 	vsetvli	zero, zero, e64, m8, ta, ma

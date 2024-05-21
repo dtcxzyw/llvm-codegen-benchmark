@@ -5,9 +5,9 @@
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
-	vsetivli	zero, 16, e32, m4, ta, mu
 	lui	a0, %hi(.LCPI0_1)
 	flw	fa4, %lo(.LCPI0_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	vfadd.vf	v8, v12, fa4, v0.t

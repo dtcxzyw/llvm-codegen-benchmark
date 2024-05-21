@@ -45,9 +45,9 @@ func0000000000000548:                   # @func0000000000000548
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000441:                   # @func0000000000000441
 	li	a0, -48
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vmsleu.vi	v14, v12, 5
 	vadd.vv	v8, v8, v10

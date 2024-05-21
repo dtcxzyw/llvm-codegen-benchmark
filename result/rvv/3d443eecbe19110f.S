@@ -9,10 +9,10 @@ func0000000000000031:                   # @func0000000000000031
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 func0000000000000021:                   # @func0000000000000021
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vi	v10, v10, -8
 	li	a0, 23
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vx	v0, v8, a0
+	vand.vi	v10, v10, -8
 	vadd.vi	v8, v10, 8, v0.t
 	ret
 func0000000000000008:                   # @func0000000000000008

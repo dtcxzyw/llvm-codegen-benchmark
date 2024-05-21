@@ -58,25 +58,23 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vi	v8, v8, -1
 	ret
 func0000000000000030:                   # @func0000000000000030
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v8, -4
 	lui	a0, 1048571
 	addi	a0, a0, -238
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v8, -4
+	vmerge.vvm	v8, v10, v8, v0
 	vadd.vi	v8, v8, -5
 	ret
 func0000000000000031:                   # @func0000000000000031
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v8, -4
 	lui	a0, 1048571
 	addi	a0, a0, -238
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v8, -4
+	vmerge.vvm	v8, v10, v8, v0
 	vadd.vi	v8, v8, -2
 	ret
 func0000000000000050:                   # @func0000000000000050

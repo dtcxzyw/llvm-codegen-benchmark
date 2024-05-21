@@ -5,9 +5,9 @@ func000000000000000a:                   # @func000000000000000a
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	vsetivli	zero, 4, e64, m2, ta, ma
 	li	a0, -1
 	bclri	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vnot.v	v10, v10
 	vmerge.vvm	v8, v10, v8, v0

@@ -15,9 +15,9 @@ func0000000000000018:                   # @func0000000000000018
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v10, v10, 0
 	li	a0, 48
-	vor.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vi	v0, v9, 9
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
+	vor.vx	v9, v10, a0
+	vmerge.vvm	v8, v9, v8, v0
 	ret

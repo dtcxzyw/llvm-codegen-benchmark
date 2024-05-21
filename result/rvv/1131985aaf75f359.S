@@ -98,9 +98,9 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000010:                   # @func0000000000000010
 	lui	a0, %hi(.LCPI11_0)
 	ld	a0, %lo(.LCPI11_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI11_1)
 	addi	a1, a1, %lo(.LCPI11_1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vlse64.v	v10, (a1), zero
 	vmsltu.vx	v0, v8, a0
 	vmerge.vim	v10, v10, 1, v0

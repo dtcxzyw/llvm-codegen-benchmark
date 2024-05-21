@@ -16,13 +16,12 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmerge.vim	v12, v12, 8, v0
-	vor.vv	v10, v12, v10
 	li	a0, 86
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vor.vi	v10, v10, 4, v0.t
-	vmv.v.v	v8, v10
+	vor.vv	v8, v12, v10
+	vor.vi	v8, v8, 4, v0.t
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 4

@@ -43,11 +43,10 @@ func0000000000000048:                   # @func0000000000000048
 	vmsltu.vv	v0, v8, v10
 	ret
 func0000000000000081:                   # @func0000000000000081
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v9, v9, 15
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v10, 15
 	vsetvli	zero, zero, e8, mf2, ta, ma
+	vand.vi	v9, v9, 15
 	vmerge.vim	v9, v9, 0, v0
 	vmseq.vv	v0, v9, v8
 	ret

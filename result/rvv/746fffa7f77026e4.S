@@ -2,12 +2,12 @@
 	.quad	7885077735510076010             # 0x6d6d6c6c6b6b6a6a
 func0000000000000016:                   # @func0000000000000016
 	li	a0, -98
+	lui	a1, %hi(.LCPI0_0)
+	addi	a1, a1, %lo(.LCPI0_0)
 	vsetivli	zero, 4, e8, mf4, ta, ma
+	vlse64.v	v10, (a1), zero
 	vadd.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
-	vlse64.v	v10, (a0), zero
 	vzext.vf4	v9, v8
 	vwsll.vi	v12, v9, 3
 	vsetvli	zero, zero, e64, m2, ta, ma

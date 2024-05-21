@@ -38,11 +38,10 @@ func0000000000000016:                   # @func0000000000000016
 	vadd.vi	v8, v8, 4, v0.t
 	ret
 func0000000000000039:                   # @func0000000000000039
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vadd.vi	v9, v8, 2
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v0, v10, v12
 	vsetvli	zero, zero, e8, mf2, ta, ma
+	vadd.vi	v9, v8, 2
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -78,11 +77,10 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000007:                   # @func0000000000000007
 	lui	a0, 72014
 	addi	a0, a0, -2048
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v9, v8, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vadd.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func0000000000000001:                   # @func0000000000000001

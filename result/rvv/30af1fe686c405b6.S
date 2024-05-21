@@ -65,9 +65,9 @@ func00000000000000ac:                   # @func00000000000000ac
 .LCPI5_0:
 	.word	0xb8d1b717                      # float -9.99999974E-5
 func00000000000000ca:                   # @func00000000000000ca
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fli.s	fa4, 1.0
 	vmfle.vf	v12, v8, fa4

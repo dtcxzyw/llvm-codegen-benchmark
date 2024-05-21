@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.quad	4223091239536077                # 0xf00e10d2fc5cd
 func0000000000000006:                   # @func0000000000000006
-	lui	a0, 1048560
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	addiw	a0, a0, 15
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	lui	a1, 1048560
+	addiw	a1, a1, 15
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vx	v8, v8, a0, v0.t
-	vmulhu.vx	v12, v10, a1
+	vadd.vx	v8, v8, a1, v0.t
+	vmulhu.vx	v12, v10, a0
 	vsub.vv	v14, v10, v12
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12

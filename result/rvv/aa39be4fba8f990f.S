@@ -26,9 +26,9 @@ func0000000000000015:                   # @func0000000000000015
 	vzext.vf2	v8, v10
 	ret
 func0000000000000011:                   # @func0000000000000011
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a0, 196608
 	addi	a0, a0, -1
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vnot.v	v8, v9
 	vmerge.vim	v10, v8, 15, v0

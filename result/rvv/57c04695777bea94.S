@@ -16,9 +16,9 @@ func000000000000001c:                   # @func000000000000001c
 .LCPI2_0:
 	.quad	0x40efffe000000000              # double 65535
 func0000000000000012:                   # @func0000000000000012
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v16, 0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0

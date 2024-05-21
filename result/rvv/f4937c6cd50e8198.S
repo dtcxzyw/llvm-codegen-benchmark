@@ -7,9 +7,9 @@
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI0_1)
 	addi	a0, a0, %lo(.LCPI0_1)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vlse64.v	v16, (a0), zero
 	lui	a0, %hi(.LCPI0_2)
 	fld	fa4, %lo(.LCPI0_2)(a0)
@@ -51,9 +51,9 @@ func0000000000000007:                   # @func0000000000000007
 	.word	0x3f4b2ff5                      # float 0.793700516
 func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI4_0)
 	addi	a0, a0, %lo(.LCPI4_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v12, (a0), zero
 	lui	a0, %hi(.LCPI4_1)
 	flw	fa4, %lo(.LCPI4_1)(a0)

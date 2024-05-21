@@ -20,13 +20,13 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI2_0:
 	.quad	0x3ff6a09edbf8b9bb              # double 1.4142140000000001
 func0000000000000008:                   # @func0000000000000008
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v0, v8, fa5
+	vmfeq.vf	v0, v8, fa4
 	vfadd.vv	v8, v8, v8
-	vfmerge.vfm	v8, v8, fa4, v0
+	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 797504

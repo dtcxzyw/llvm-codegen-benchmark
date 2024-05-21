@@ -11,12 +11,12 @@ func0000000000000007:                   # @func0000000000000007
 	vlse64.v	v20, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
-	vfmacc.vf	v20, fa5, v16
 	lui	a0, %hi(.LCPI0_2)
-	fld	fa5, %lo(.LCPI0_2)(a0)
+	fld	fa4, %lo(.LCPI0_2)(a0)
+	vfmacc.vf	v20, fa5, v16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfwcvt.f.x.v	v16, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmadd.vf	v16, fa5, v20
+	vfmadd.vf	v16, fa4, v20
 	vmfne.vv	v0, v16, v8
 	ret

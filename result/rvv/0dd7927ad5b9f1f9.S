@@ -1,10 +1,9 @@
 func0000000000000161:                   # @func0000000000000161
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v8, -5
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsle.vi	v0, v10, 4
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v8, -5
+	vmerge.vvm	v8, v10, v8, v0
 	vmseq.vi	v0, v8, 0
 	ret
 func0000000000000311:                   # @func0000000000000311
@@ -16,11 +15,10 @@ func0000000000000311:                   # @func0000000000000311
 	vmseq.vi	v0, v8, 0
 	ret
 func0000000000000141:                   # @func0000000000000141
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v9, v8, -3
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v0, v10, 2
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vadd.vi	v9, v8, -3
 	vmerge.vvm	v8, v9, v8, v0
 	vmseq.vi	v0, v8, 2
 	ret
@@ -50,12 +48,11 @@ func0000000000000384:                   # @func0000000000000384
 	vmand.mm	v0, v10, v11
 	ret
 func0000000000000166:                   # @func0000000000000166
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v12, v8, 12
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v8, 12
+	vmerge.vvm	v8, v10, v8, v0
 	vmsle.vi	v0, v8, -1
 	ret
 func0000000000000114:                   # @func0000000000000114
@@ -67,21 +64,20 @@ func0000000000000114:                   # @func0000000000000114
 	vmsleu.vi	v0, v8, 7
 	ret
 func0000000000000146:                   # @func0000000000000146
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v9, v8, 2
 	bseti	a0, zero, 62
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vadd.vi	v9, v8, 2
 	vmerge.vvm	v8, v9, v8, v0
 	li	a0, -1074
 	vmslt.vx	v0, v8, a0
 	ret
 func0000000000000144:                   # @func0000000000000144
 	li	a0, -729
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, 3503
 	addi	a1, a1, 619
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a1
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0

@@ -93,9 +93,9 @@ func00000000000002aa:                   # @func00000000000002aa
 .LCPI8_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000444:                   # @func0000000000000444
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI8_0)
 	flw	fa5, %lo(.LCPI8_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vfmin.vv	v8, v8, v12

@@ -10,12 +10,10 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 16
-	vsra.vi	v12, v8, 16
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vsext.vf2	v8, v10
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsle.vi	v0, v12, -1
+	vsra.vi	v8, v8, 16
+	vmsle.vi	v0, v8, -1
 	vsetvli	zero, zero, e32, m1, ta, mu
+	vsext.vf2	v8, v10
 	vadd.vi	v8, v8, -15, v0.t
 	ret
 func0000000000000011:                   # @func0000000000000011

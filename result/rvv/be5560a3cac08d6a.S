@@ -46,9 +46,9 @@ func0000000000000094:                   # @func0000000000000094
 func0000000000000090:                   # @func0000000000000090
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI3_1)
 	fld	fa4, %lo(.LCPI3_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v9, v16, fa5
 	vmv1r.v	v10, v0
 	vmv1r.v	v0, v9

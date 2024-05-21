@@ -36,33 +36,33 @@ func000000000000002f:                   # @func000000000000002f
 	.quad	-7515340178177965473            # 0x97b425ed097b425f
 func000000000000003f:                   # @func000000000000003f
 	li	a0, -216
+	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a1, 216
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
+	li	a2, 216
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwmaccu.vx	v10, a1, v8
+	vwmaccu.vx	v10, a2, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmulhu.vx	v8, v10, a2
+	vmulhu.vx	v8, v10, a1
 	vsrl.vi	v8, v8, 7
-	vmul.vx	v8, v8, a1
+	vmul.vx	v8, v8, a2
 	vsub.vx	v8, v8, a0
 	ret
 .LCPI3_0:
 	.quad	-7515340178177965473            # 0x97b425ed097b425f
 func000000000000003d:                   # @func000000000000003d
 	li	a0, -216
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a1, 216
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
+	li	a2, 216
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwmaccu.vx	v10, a1, v8
+	vwmaccu.vx	v10, a2, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmulhu.vx	v8, v10, a2
+	vmulhu.vx	v8, v10, a1
 	vsrl.vi	v8, v8, 7
-	vmul.vx	v8, v8, a1
+	vmul.vx	v8, v8, a2
 	vsub.vx	v8, v8, a0
 	ret

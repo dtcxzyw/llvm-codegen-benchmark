@@ -53,9 +53,9 @@ func000000000000002b:                   # @func000000000000002b
 .LCPI6_1:
 	.quad	-6148914691236560896            # 0xaaaaaaaaaaaa0000
 func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI6_0)
 	addi	a0, a0, %lo(.LCPI6_0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vlse64.v	v10, (a0), zero
 	lui	a0, %hi(.LCPI6_1)
 	ld	a0, %lo(.LCPI6_1)(a0)

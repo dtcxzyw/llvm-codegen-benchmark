@@ -30,12 +30,12 @@ func0000000000000024:                   # @func0000000000000024
 .LCPI2_0:
 	.quad	0x408f400000000000              # double 1000
 func0000000000000021:                   # @func0000000000000021
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v0, v16, fa5
-	vfmerge.vfm	v16, v16, fa4, v0
+	vmflt.vf	v0, v16, fa4
+	vfmerge.vfm	v16, v16, fa5, v0
 	vfmul.vv	v8, v16, v8
 	vmfne.vv	v0, v8, v8
 	ret

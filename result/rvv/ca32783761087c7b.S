@@ -19,9 +19,9 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI1_0:
 	.quad	1237940039285380275             # 0x112e0be826d694b3
 func0000000000000000:                   # @func0000000000000000
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
 	li	a1, 1000
 	vmacc.vx	v10, a1, v8

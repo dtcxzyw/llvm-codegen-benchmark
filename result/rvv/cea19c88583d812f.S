@@ -55,13 +55,13 @@ func0000000000000fd6:                   # @func0000000000000fd6
 .LCPI6_0:
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000004:                   # @func0000000000000004
-	li	a0, 10
-	lui	a1, %hi(.LCPI6_0)
-	ld	a1, %lo(.LCPI6_0)(a1)
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
+	li	a1, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v10, a0, v12
-	vmadd.vx	v10, a0, v8
-	vmsltu.vx	v0, v10, a1
+	vmacc.vx	v10, a1, v12
+	vmadd.vx	v10, a1, v8
+	vmsltu.vx	v0, v10, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 10
@@ -83,13 +83,13 @@ func0000000000000ff8:                   # @func0000000000000ff8
 .LCPI9_0:
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000fa8:                   # @func0000000000000fa8
-	li	a0, 10
-	lui	a1, %hi(.LCPI9_0)
-	ld	a1, %lo(.LCPI9_0)(a1)
+	lui	a0, %hi(.LCPI9_0)
+	ld	a0, %lo(.LCPI9_0)(a0)
+	li	a1, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v10, a0, v12
-	vmadd.vx	v10, a0, v8
-	vmsgtu.vx	v0, v10, a1
+	vmacc.vx	v10, a1, v12
+	vmadd.vx	v10, a1, v8
+	vmsgtu.vx	v0, v10, a0
 	ret
 func0000000000000551:                   # @func0000000000000551
 	li	a0, 60

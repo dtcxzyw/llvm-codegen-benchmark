@@ -30,9 +30,9 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000030:                   # @func0000000000000030
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI2_1)
 	ld	a1, %lo(.LCPI2_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 30
 	vxor.vv	v8, v10, v8

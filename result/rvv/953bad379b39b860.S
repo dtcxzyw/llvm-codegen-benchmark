@@ -54,12 +54,11 @@ func0000000000000316:                   # @func0000000000000316
 	vmsle.vi	v0, v8, -1
 	ret
 func00000000000003a8:                   # @func00000000000003a8
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 3
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v12, 3
+	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 24
 	vmsgtu.vx	v0, v8, a0
 	ret

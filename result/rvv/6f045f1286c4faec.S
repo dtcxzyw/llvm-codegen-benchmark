@@ -130,13 +130,13 @@ func0000000000000220:                   # @func0000000000000220
 .LCPI14_0:
 	.quad	0x3870000000000000              # double 7.5231638452626401E-37
 func0000000000000314:                   # @func0000000000000314
-	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI14_0)
-	fld	fa4, %lo(.LCPI14_0)(a0)
+	fld	fa5, %lo(.LCPI14_0)(a0)
+	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v24, v16, fa5
+	vmfge.vf	v24, v16, fa4
 	vmor.mm	v16, v24, v0
-	vmfle.vf	v17, v8, fa4
+	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
 func00000000000000ca:                   # @func00000000000000ca

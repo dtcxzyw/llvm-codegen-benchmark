@@ -135,9 +135,9 @@ func000000000000004a:                   # @func000000000000004a
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, %hi(.LCPI9_0)
 	fld	fa5, %lo(.LCPI9_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI9_1)
 	fld	fa4, %lo(.LCPI9_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
 	vmv1r.v	v17, v0
 	vmv1r.v	v0, v16
@@ -194,9 +194,9 @@ func0000000000000025:                   # @func0000000000000025
 func0000000000000048:                   # @func0000000000000048
 	lui	a0, %hi(.LCPI13_0)
 	fld	fa5, %lo(.LCPI13_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI13_1)
 	fld	fa4, %lo(.LCPI13_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v16, v8, fa5
 	vmv1r.v	v17, v0
 	vmv1r.v	v0, v16

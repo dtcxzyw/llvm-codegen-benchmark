@@ -18,8 +18,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vmv1r.v	v10, v0
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a0, 524288
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v8, a0
 	vrsub.vi	v12, v8, 0
 	vmerge.vim	v12, v12, -1, v0

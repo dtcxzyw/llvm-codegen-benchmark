@@ -32,23 +32,22 @@ func0000000000000044:                   # @func0000000000000044
 func00000000000000d0:                   # @func00000000000000d0
 	lui	a0, 131071
 	slli	a0, a0, 3
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v12, v8, a0
-	lui	a0, 1048568
-	addi	a0, a0, 1
-	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmsltu.vx	v0, v10, a0
+	lui	a1, 1048568
+	addi	a1, a1, 1
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vmsltu.vx	v0, v10, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vvm	v10, v12, v8, v0
+	vadd.vx	v10, v8, a0
+	vmerge.vvm	v10, v10, v8, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
 func0000000000000050:                   # @func0000000000000050
 	lui	a0, 16
 	addi	a0, a0, -729
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, 3503
 	addi	a1, a1, 619
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a1
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v10, v10, v8, v0

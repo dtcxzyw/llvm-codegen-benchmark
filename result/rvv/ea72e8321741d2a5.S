@@ -1,20 +1,17 @@
 func0000000000000031:                   # @func0000000000000031
 	li	a0, 255
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 7
 	vsetvli	zero, zero, e32, m1, ta, mu
-	vadd.vi	v10, v10, 10, v0.t
-	vmv.v.v	v8, v10
+	vand.vx	v8, v10, a0
+	vadd.vi	v8, v8, 10, v0.t
 	ret
 func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vi	v10, v10, -2
 	li	a0, 62
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vx	v0, v8, a0
-	vadd.vi	v10, v10, 2, v0.t
-	vmv.v.v	v8, v10
+	vand.vi	v8, v10, -2
+	vadd.vi	v8, v8, 2, v0.t
 	ret
 func0000000000000038:                   # @func0000000000000038
 	lui	a0, 262144

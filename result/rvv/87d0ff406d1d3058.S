@@ -34,9 +34,10 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, -1
-	vmerge.vvm	v10, v12, v10, v0
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsgt.vi	v0, v8, -1
+	vmsgt.vi	v8, v8, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
+	vmerge.vvm	v10, v12, v10, v0
+	vmv1r.v	v0, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret

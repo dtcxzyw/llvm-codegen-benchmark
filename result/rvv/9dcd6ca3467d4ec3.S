@@ -22,9 +22,9 @@ func000000000000000e:                   # @func000000000000000e
 .LCPI3_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func000000000000000c:                   # @func000000000000000c
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	addi	a0, a0, %lo(.LCPI3_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v20, (a0), zero
 	fmv.w.x	fa5, zero
 	vmfge.vf	v16, v12, fa5

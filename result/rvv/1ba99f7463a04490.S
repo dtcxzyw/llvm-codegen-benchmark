@@ -8,13 +8,13 @@ func0000000000000014:                   # @func0000000000000014
 .LCPI1_0:
 	.quad	-4417276706812531889            # 0xc2b2ae3d27d4eb4f
 func0000000000000000:                   # @func0000000000000000
-	li	a0, 32
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v10, a0
+	vsrl.vx	v10, v10, a1
 	vadd.vv	v8, v10, v8
-	vmul.vx	v8, v8, a1
+	vmul.vx	v8, v8, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e64, m2, ta, ma

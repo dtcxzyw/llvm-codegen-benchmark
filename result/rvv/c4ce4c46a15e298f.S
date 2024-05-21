@@ -50,9 +50,9 @@ func00000000000000c1:                   # @func00000000000000c1
 .LCPI4_0:
 	.quad	32772547957449569               # 0x746e756f636361
 func00000000000000a1:                   # @func00000000000000a1
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgt.vi	v10, v10, 0
 	vmand.mm	v10, v10, v0
 	vsetvli	zero, zero, e64, m2, ta, ma

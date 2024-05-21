@@ -7,9 +7,9 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1223
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 10
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, 14648
+	lui	a1, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a1)
 	addi	a0, a0, 1792
 	vnmsub.vx	v10, a0, v8
 	vfwcvt.f.xu.v	v12, v10

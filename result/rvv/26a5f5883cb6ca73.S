@@ -2,14 +2,12 @@ func0000000000000021:                   # @func0000000000000021
 	li	a0, 45
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vx	v0, v8, a0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v10, v12, v10, v0
 	li	a0, 46
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v14, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vor.vi	v10, v10, 8, v0.t
-	vmv.v.v	v8, v10
+	vmerge.vvm	v8, v12, v10, v0
+	vmv1r.v	v0, v14
+	vor.vi	v8, v8, 8, v0.t
 	ret
 func0000000000000031:                   # @func0000000000000031
 	lui	a0, 12

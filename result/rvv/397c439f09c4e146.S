@@ -82,12 +82,11 @@ func000000000000001a:                   # @func000000000000001a
 	vadd.vx	v8, v12, a0, v0.t
 	ret
 func000000000000003a:                   # @func000000000000003a
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 3
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v12, 3
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000036:                   # @func0000000000000036
 	vsetivli	zero, 8, e32, m2, ta, mu

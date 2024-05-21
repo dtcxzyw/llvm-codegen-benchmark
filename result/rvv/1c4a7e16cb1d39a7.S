@@ -29,13 +29,13 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
 	flw	fa3, %lo(.LCPI1_2)(a0)
 	lui	a0, %hi(.LCPI1_3)
 	flw	fa2, %lo(.LCPI1_3)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfmacc.vf	v16, fa4, v12
 	vfmacc.vf	v16, fa3, v8

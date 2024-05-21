@@ -23,9 +23,9 @@ func0000000000000042:                   # @func0000000000000042
 	.quad	0x43d0000000000000              # double 4.6116860184273879E+18
 func0000000000000022:                   # @func0000000000000022
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa4, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vf	v0, v8, fa4
@@ -34,9 +34,9 @@ func0000000000000022:                   # @func0000000000000022
 	.quad	0xc3d0000000000000              # double -4.6116860184273879E+18
 func000000000000002c:                   # @func000000000000002c
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa4, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	vmfge.vf	v0, v8, fa4
@@ -55,9 +55,9 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000045:                   # @func0000000000000045
 	lui	a0, 287672
 	fmv.w.x	fa5, a0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa4, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	vmfle.vf	v12, v8, fa4
@@ -68,9 +68,9 @@ func0000000000000045:                   # @func0000000000000045
 func0000000000000043:                   # @func0000000000000043
 	lui	a0, 287672
 	fmv.w.x	fa5, a0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI6_0)
 	flw	fa4, %lo(.LCPI6_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	vmfge.vf	v12, v8, fa4
@@ -80,9 +80,9 @@ func0000000000000043:                   # @func0000000000000043
 	.word	0x3f733333                      # float 0.949999988
 func0000000000000025:                   # @func0000000000000025
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI7_0)
 	flw	fa4, %lo(.LCPI7_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	vmfle.vf	v12, v8, fa4
@@ -238,9 +238,9 @@ func00000000000000a4:                   # @func00000000000000a4
 	.quad	0x4415af1d78b58c40              # double 1.0E+20
 func0000000000000088:                   # @func0000000000000088
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI24_0)
 	fld	fa4, %lo(.LCPI24_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	vmfeq.vf	v0, v8, fa4

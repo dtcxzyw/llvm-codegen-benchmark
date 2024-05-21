@@ -3,9 +3,9 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, 281475
 	addiw	a1, a0, -95
-	slli	a1, a1, 12
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	slli	a1, a1, 12
 	addi	a1, a1, -2048
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a1

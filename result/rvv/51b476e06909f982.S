@@ -21,9 +21,9 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a0, 524032
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, 27392
+	lui	a1, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a1)
 	vmsltu.vx	v14, v12, a0
 	vmand.mm	v0, v14, v0
 	vsetvli	zero, zero, e64, m4, ta, ma

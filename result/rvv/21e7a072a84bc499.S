@@ -17,12 +17,12 @@ func0000000000000024:                   # @func0000000000000024
 .LCPI1_1:
 	.word	0xbff70a3d                      # float -1.92999995
 func00000000000000a4:                   # @func00000000000000a4
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfwcvt.f.f.v	v16, v12
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfwcvt.f.f.v	v16, v12
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfgt.vf	v12, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
@@ -34,12 +34,12 @@ func00000000000000a4:                   # @func00000000000000a4
 .LCPI2_1:
 	.word	0xbff70a3d                      # float -1.92999995
 func0000000000000044:                   # @func0000000000000044
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfwcvt.f.f.v	v16, v12
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
 	flw	fa4, %lo(.LCPI2_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfwcvt.f.f.v	v16, v12
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfgt.vf	v12, v16, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma

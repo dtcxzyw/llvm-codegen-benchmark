@@ -91,21 +91,19 @@ func0000000000000181:                   # @func0000000000000181
 	ret
 func00000000000001a1:                   # @func00000000000001a1
 	li	a0, 23
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vx	v12, v12, a0
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vrsub.vx	v10, v12, a0
+	vmerge.vvm	v8, v10, v8, v0
 	vmseq.vi	v0, v8, 15
 	ret
 func00000000000001a8:                   # @func00000000000001a8
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v12, v12, 5
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vrsub.vi	v10, v12, 5
+	vmerge.vvm	v8, v10, v8, v0
 	vmsgtu.vi	v0, v8, 5
 	ret
 func0000000000000266:                   # @func0000000000000266

@@ -159,9 +159,9 @@ func0000000000000082:                   # @func0000000000000082
 	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
 func0000000000000124:                   # @func0000000000000124
 	fli.d	fa5, inf
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI18_0)
 	fld	fa4, %lo(.LCPI18_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
 	vmor.mm	v16, v25, v24

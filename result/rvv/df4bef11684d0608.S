@@ -7,13 +7,11 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 256
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v12, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vminu.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.x	v8, a0
+	vminu.vx	v8, v10, a0, v0.t
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, 131072

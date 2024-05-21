@@ -51,12 +51,12 @@ func0000000000000881:                   # @func0000000000000881
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vor.vi	v12, v12, 2
 	li	a0, -17
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v10, v12, 4, v0
+	vor.vi	v10, v12, 2
+	vmerge.vim	v10, v10, 4, v0
 	vmseq.vv	v0, v10, v8
 	ret
 func0000000000000116:                   # @func0000000000000116
@@ -81,10 +81,10 @@ func0000000000000446:                   # @func0000000000000446
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vxor.vi	v12, v12, 3
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsleu.vi	v0, v10, 9
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v10, v12, 1, v0
+	vxor.vi	v10, v12, 3
+	vmerge.vim	v10, v10, 1, v0
 	vmslt.vv	v0, v8, v10
 	ret

@@ -187,10 +187,10 @@ func0000000000000184:                   # @func0000000000000184
 .LCPI21_0:
 	.quad	1000000000000000001             # 0xde0b6b3a7640001
 func0000000000000224:                   # @func0000000000000224
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsgtu.vi	v0, v12, 15
 	lui	a0, %hi(.LCPI21_0)
 	ld	a0, %lo(.LCPI21_0)(a0)
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmsgtu.vi	v0, v12, 15
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0

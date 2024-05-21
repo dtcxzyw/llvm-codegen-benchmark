@@ -1,20 +1,16 @@
 func0000000000000016:                   # @func0000000000000016
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v12, v10, 2
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v8, -1
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vor.vi	v12, v10, 1, v0.t
-	vmv.v.v	v8, v12
+	vadd.vi	v8, v10, 2
+	vor.vi	v8, v10, 1, v0.t
 	ret
 func000000000000001a:                   # @func000000000000001a
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v12, v10, 2
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgt.vi	v0, v8, 0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vor.vi	v12, v10, 1, v0.t
-	vmv.v.v	v8, v12
+	vadd.vi	v8, v10, 2
+	vor.vi	v8, v10, 1, v0.t
 	ret
 func0000000000000074:                   # @func0000000000000074
 	li	a0, 55
@@ -29,10 +25,9 @@ func0000000000000074:                   # @func0000000000000074
 func0000000000000014:                   # @func0000000000000014
 	li	a0, -29
 	vsetivli	zero, 16, e8, m1, ta, mu
-	vadd.vx	v10, v9, a0
 	vmsleu.vi	v0, v8, 7
-	vor.vi	v10, v9, 1, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v9, a0
+	vor.vi	v8, v9, 1, v0.t
 	ret
 func0000000000000034:                   # @func0000000000000034
 	li	a0, 64
@@ -46,17 +41,15 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vi	v12, v10, 3
 	vmseq.vi	v0, v8, 0
-	vor.vi	v12, v10, 1, v0.t
-	vmv.v.v	v8, v12
+	vadd.vi	v8, v10, 3
+	vor.vi	v8, v10, 1, v0.t
 	ret
 func0000000000000071:                   # @func0000000000000071
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vi	v12, v10, 3
 	vmseq.vi	v0, v8, 0
-	vor.vi	v12, v10, 4, v0.t
-	vmv.v.v	v8, v12
+	vadd.vi	v8, v10, 3
+	vor.vi	v8, v10, 4, v0.t
 	ret
 func0000000000000078:                   # @func0000000000000078
 	li	a0, 68
@@ -70,10 +63,9 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vi	v12, v10, -1
 	vmseq.vi	v0, v8, 0
-	vor.vi	v12, v10, 1, v0.t
-	vmv.v.v	v8, v12
+	vadd.vi	v8, v10, -1
+	vor.vi	v8, v10, 1, v0.t
 	ret
 func0000000000000064:                   # @func0000000000000064
 	lui	a0, 5

@@ -22,10 +22,10 @@ func000000000000005a:                   # @func000000000000005a
 	.quad	464269060799999                 # 0x1a6401072fdff
 func0000000000000058:                   # @func0000000000000058
 	lui	a0, 21094
-	addi	a0, a0, -1024
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
+	addi	a0, a0, -1024
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vx	v10, v10, a0
 	vwadd.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma

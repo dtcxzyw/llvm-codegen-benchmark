@@ -120,13 +120,13 @@ func00000000000000d3:                   # @func00000000000000d3
 .LCPI11_0:
 	.quad	0x40dfffc000000000              # double 32767
 func00000000000000ca:                   # @func00000000000000ca
-	fli.d	fa5, 32768.0
 	lui	a0, %hi(.LCPI11_0)
-	fld	fa4, %lo(.LCPI11_0)(a0)
-	fneg.d	fa5, fa5
+	fld	fa5, %lo(.LCPI11_0)(a0)
+	fli.d	fa4, 32768.0
+	fneg.d	fa4, fa4
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v16, v8, fa5
-	vmfle.vf	v17, v8, fa4
+	vmfge.vf	v16, v8, fa4
+	vmfle.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret
 func00000000000000db:                   # @func00000000000000db

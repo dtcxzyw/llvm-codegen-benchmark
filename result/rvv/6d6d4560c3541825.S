@@ -3,9 +3,9 @@
 .LCPI0_1:
 	.quad	0x4024000000000000              # double 10
 func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 16, e64, m8, ta, mu
 	lui	a0, %hi(.LCPI0_0)
 	addi	a0, a0, %lo(.LCPI0_0)
+	vsetivli	zero, 16, e64, m8, ta, mu
 	vlse64.v	v24, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)

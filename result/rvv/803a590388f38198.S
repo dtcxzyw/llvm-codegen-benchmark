@@ -68,19 +68,20 @@ func000000000000006c:                   # @func000000000000006c
 	vmerge.vxm	v8, v10, a1, v0
 	ret
 func0000000000000064:                   # @func0000000000000064
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v0, v10, -1
+	vmsle.vi	v12, v10, -1
 	li	a0, 43
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.x	v10, a0
-	li	a1, 45
-	vmerge.vxm	v10, v10, a1, v0
 	lui	a1, 1
 	addi	a1, a1, -496
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v11, v8, a1
-	vmand.mm	v0, v11, v12
+	li	a1, 45
+	vmand.mm	v8, v11, v0
+	vmv1r.v	v0, v12
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v9, v10, a1, v0
+	vmv1r.v	v0, v8
+	vmerge.vxm	v8, v9, a0, v0
 	ret

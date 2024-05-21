@@ -95,9 +95,9 @@ func0000000000000016:                   # @func0000000000000016
 .LCPI13_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
 func0000000000000028:                   # @func0000000000000028
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI13_0)
 	ld	a0, %lo(.LCPI13_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v10, v8

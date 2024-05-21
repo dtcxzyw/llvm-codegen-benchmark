@@ -9,9 +9,9 @@ func0000000000000007:                   # @func0000000000000007
 .LCPI1_0:
 	.word	0x3dcccccd                      # float 0.100000001
 func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v8, v8, v12
 	fli.s	fa4, 1.52587890625e-05
 	vfmul.vf	v8, v8, fa4

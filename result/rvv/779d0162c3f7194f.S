@@ -2,9 +2,9 @@
 	.quad	3234497591006606311             # 0x2ce33e6c02ce33e7
 func000000000000002b:                   # @func000000000000002b
 	lui	a0, 1048540
-	addiw	a0, a0, 1359
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
+	addiw	a0, a0, 1359
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vsrl.vi	v10, v10, 2

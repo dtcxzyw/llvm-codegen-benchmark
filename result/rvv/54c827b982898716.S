@@ -3,15 +3,15 @@
 .LCPI0_1:
 	.word	0x3e3851ec                      # float 0.180000007
 func0000000000000002:                   # @func0000000000000002
-	fli.s	fa5, -1.0
 	lui	a0, %hi(.LCPI0_0)
-	flw	fa4, %lo(.LCPI0_0)(a0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	flw	fa3, %lo(.LCPI0_1)(a0)
+	flw	fa4, %lo(.LCPI0_1)(a0)
+	fli.s	fa3, -1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfadd.vf	v8, v8, fa5
-	vfdiv.vf	v8, v8, fa4
-	vmflt.vf	v0, v8, fa3
+	vfadd.vf	v8, v8, fa3
+	vfdiv.vf	v8, v8, fa5
+	vmflt.vf	v0, v8, fa4
 	ret
 .LCPI1_0:
 	.word	0x3d6147ae                      # float 0.0549999997

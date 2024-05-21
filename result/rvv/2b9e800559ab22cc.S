@@ -3,8 +3,8 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 1048555
 	addi	a0, a0, -384
 	vmv2r.v	v12, v8
-	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v0, v10
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vx	v12, v8, a0, v0.t
 	lui	a0, 21
 	addi	a0, a0, 384
@@ -16,8 +16,8 @@ func000000000000000f:                   # @func000000000000000f
 	vmv1r.v	v11, v0
 	li	a0, 1900
 	vmv2r.v	v12, v8
-	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v0, v10
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vx	v12, v8, a0, v0.t
 	li	a0, 2000
 	vmv1r.v	v0, v11
@@ -28,8 +28,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmv1r.v	v11, v0
 	li	a0, -190
 	vmv2r.v	v12, v8
-	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v0, v10
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vx	v12, v8, a0, v0.t
 	li	a0, -80
 	vmv1r.v	v0, v11
@@ -60,8 +60,8 @@ func000000000000000d:                   # @func000000000000000d
 	vmv1r.v	v11, v0
 	li	a0, 1900
 	vmv2r.v	v12, v8
-	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v0, v10
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v12, v8, a0, v0.t
 	li	a0, 2000
 	vmv1r.v	v0, v11

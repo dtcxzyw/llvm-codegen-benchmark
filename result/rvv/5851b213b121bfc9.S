@@ -1,11 +1,11 @@
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	vsra.vi	v10, v10, 16
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsle.vi	v0, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vim	v8, v10, 2, v0
+	vsra.vi	v8, v10, 16
+	vmerge.vim	v8, v8, 2, v0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -38,9 +38,9 @@ func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
 	li	a0, 40
-	vsra.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsle.vi	v0, v8, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v8, v10, 1, v0
+	vsra.vx	v8, v10, a0
+	vmerge.vim	v8, v8, 1, v0
 	ret

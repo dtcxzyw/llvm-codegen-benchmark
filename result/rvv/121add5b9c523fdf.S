@@ -5,9 +5,9 @@
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI0_1)
 	addi	a1, a1, %lo(.LCPI0_1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vlse64.v	v14, (a1), zero
 	vmul.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10

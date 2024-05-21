@@ -24,10 +24,10 @@ func0000000000000111:                   # @func0000000000000111
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vrsub.vi	v9, v9, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
+	vrsub.vi	v9, v9, 2
 	vmerge.vvm	v8, v9, v8, v0
 	vmseq.vi	v0, v8, 2
 	ret

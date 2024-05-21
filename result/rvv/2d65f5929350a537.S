@@ -1,8 +1,8 @@
 func000000000000014a:                   # @func000000000000014a
-	vsetivli	zero, 8, e32, m2, ta, ma
-	li	a0, -1073
-	vmsltu.vx	v0, v10, a0
 	li	a0, 1138
+	li	a1, -1073
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsltu.vx	v0, v10, a1
 	vadd.vx	v10, v8, a0
 	vmerge.vim	v10, v10, 0, v0
 	li	a0, -1086

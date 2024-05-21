@@ -5,11 +5,11 @@
 .LCPI0_2:
 	.quad	7429236654343298871             # 0x6719f36016719f37
 func000000000000001a:                   # @func000000000000001a
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, %hi(.LCPI0_1)
 	ld	a1, %lo(.LCPI0_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v10, 2
 	vmulhu.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 6

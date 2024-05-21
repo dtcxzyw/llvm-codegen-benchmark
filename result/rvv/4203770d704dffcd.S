@@ -47,11 +47,11 @@ func0000000000000354:                   # @func0000000000000354
 	.quad	-9011559254509551616            # 0x82f0829a72930000
 func0000000000000104:                   # @func0000000000000104
 	lui	a0, 244
-	addiw	a0, a0, 576
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
 	lui	a2, %hi(.LCPI5_1)
 	ld	a2, %lo(.LCPI5_1)(a2)
+	addiw	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vadd.vx	v8, v8, a1

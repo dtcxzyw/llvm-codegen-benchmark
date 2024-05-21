@@ -16,8 +16,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func0000000000000051:                   # @func0000000000000051
 	li	a0, 34
-	vsetivli	zero, 4, e64, m2, ta, ma
 	li	a1, 33
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a1
 	vand.vi	v12, v10, 1
 	vmseq.vi	v0, v12, 0

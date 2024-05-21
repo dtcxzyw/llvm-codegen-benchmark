@@ -17,8 +17,8 @@ func0000000000000043:                   # @func0000000000000043
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, mu
 	vnsrl.wi	v9, v9, 0
-	vmv.v.i	v10, 1
 	vmseq.vi	v0, v8, 0
+	vmv.v.i	v10, 1
 	vand.vi	v10, v9, 1, v0.t
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v8, v10

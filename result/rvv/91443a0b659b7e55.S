@@ -24,9 +24,9 @@ func000000000000001a:                   # @func000000000000001a
 	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
 func000000000000005a:                   # @func000000000000005a
 	li	a0, -1
-	srli	a0, a0, 32
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
+	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3
@@ -37,9 +37,9 @@ func000000000000005a:                   # @func000000000000005a
 	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
 func0000000000000054:                   # @func0000000000000054
 	li	a0, -1
-	srli	a0, a0, 32
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
+	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3

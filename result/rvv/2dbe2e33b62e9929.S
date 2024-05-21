@@ -37,9 +37,9 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v16, v16, v20
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, 212992
-	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
 	fmv.w.x	fa4, a0
 	vmfgt.vf	v20, v16, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma

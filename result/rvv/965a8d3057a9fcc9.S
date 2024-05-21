@@ -1,7 +1,7 @@
 func000000000000001c:                   # @func000000000000001c
 	vmv1r.v	v11, v0
-	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v0, v10
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v8, v8, 2, v0.t
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v11

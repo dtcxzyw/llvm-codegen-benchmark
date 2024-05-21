@@ -50,9 +50,9 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000015:                   # @func0000000000000015
 	li	a0, 511
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, 8
 	addi	a1, a1, -641
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v10, a1
 	vand.vx	v10, v12, a0
 	vmerge.vim	v10, v10, 8, v0

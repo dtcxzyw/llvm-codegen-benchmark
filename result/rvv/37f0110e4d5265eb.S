@@ -92,9 +92,9 @@ func0000000000000083:                   # @func0000000000000083
 	.quad	0x3fb999999999999a              # double 0.10000000000000001
 func0000000000000044:                   # @func0000000000000044
 	fli.d	fa5, 0.125
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI8_0)
 	fld	fa4, %lo(.LCPI8_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI8_1)
 	fld	fa5, %lo(.LCPI8_1)(a0)

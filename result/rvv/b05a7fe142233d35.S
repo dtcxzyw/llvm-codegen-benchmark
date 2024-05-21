@@ -16,9 +16,9 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000042:                   # @func0000000000000042
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmerge.vfm	v8, v8, fa5, v0
 	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5

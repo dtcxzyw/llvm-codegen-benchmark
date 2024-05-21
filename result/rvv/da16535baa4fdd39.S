@@ -82,13 +82,13 @@ func0000000000000014:                   # @func0000000000000014
 .LCPI6_0:
 	.quad	-6709238516040760861            # 0xa2e3ff1de20581e3
 func0000000000000010:                   # @func0000000000000010
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, 12875
 	addiw	a0, a0, -1625
 	slli	a0, a0, 13
 	addi	a0, a0, -1
 	lui	a1, %hi(.LCPI6_0)
 	ld	a1, %lo(.LCPI6_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vzext.vf2	v14, v10
 	vmacc.vv	v12, v8, v14

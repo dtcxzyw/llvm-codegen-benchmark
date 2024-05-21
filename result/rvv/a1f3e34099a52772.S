@@ -77,13 +77,13 @@ func0000000000000035:                   # @func0000000000000035
 .LCPI7_0:
 	.quad	-8737931403336103397            # 0x86bca1af286bca1b
 func0000000000000018:                   # @func0000000000000018
-	li	a0, 32
-	lui	a1, %hi(.LCPI7_0)
-	ld	a1, %lo(.LCPI7_0)(a1)
+	lui	a0, %hi(.LCPI7_0)
+	ld	a0, %lo(.LCPI7_0)(a0)
+	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v10, v10, a0
+	vsra.vx	v10, v10, a1
 	vsra.vi	v8, v8, 4
-	vmul.vx	v8, v8, a1
+	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret
 func0000000000000021:                   # @func0000000000000021

@@ -49,13 +49,13 @@ func000000000000000f:                   # @func000000000000000f
 	.quad	2312618258016476599             # 0x2018120d8a279db7
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 1048574
-	addiw	a1, a0, 40
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
+	addiw	a2, a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a1
+	vadd.vx	v8, v8, a2
 	vsrl.vi	v8, v8, 3
-	vmulhu.vx	v8, v8, a2
+	vmulhu.vx	v8, v8, a1
 	vsll.vi	v8, v8, 6
 	vand.vx	v8, v8, a0
 	lui	a0, 2

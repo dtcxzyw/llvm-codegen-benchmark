@@ -30,9 +30,9 @@ func0000000000000006:                   # @func0000000000000006
 	.quad	18040924479227903               # 0x4018200f0107ff
 func0000000000000000:                   # @func0000000000000000
 	bseti	a0, zero, 57
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0
 	vor.vv	v8, v10, v8

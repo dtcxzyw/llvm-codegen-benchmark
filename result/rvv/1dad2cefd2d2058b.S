@@ -4,21 +4,19 @@ func000000000000000a:                   # @func000000000000000a
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v10, v12, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vnsrl.wi	v11, v10, 0
-	vmv.v.i	v10, -1
+	vnsrl.wi	v10, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vi	v0, v8, -1
 	vsetvli	zero, zero, e8, mf4, ta, mu
-	vnot.v	v10, v11, v0.t
-	vmv1r.v	v8, v10
+	vmv.v.i	v8, -1
+	vnot.v	v8, v10, v0.t
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vnsrl.wi	v12, v10, 0
-	vmv.v.i	v9, -1
+	vnsrl.wi	v9, v10, 0
 	vmsleu.vi	v0, v8, 7
-	vnot.v	v9, v12, v0.t
-	vmv.v.v	v8, v9
+	vmv.v.i	v8, -1
+	vnot.v	v8, v9, v0.t
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -50,9 +48,9 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vnot.v	v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vim	v8, v10, 0, v0
+	vnot.v	v8, v12
+	vmerge.vim	v8, v8, 0, v0
 	ret

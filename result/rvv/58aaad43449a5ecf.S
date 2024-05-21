@@ -17,9 +17,9 @@ func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 244
-	addiw	a0, a0, 576
 	lui	a1, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a1)
+	addiw	a0, a0, 576
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vfncvt.f.x.w	v10, v8

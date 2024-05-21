@@ -108,9 +108,9 @@ func0000000000000042:                   # @func0000000000000042
 	.word	0x3d25aee6                      # float 0.0404499993
 func0000000000000023:                   # @func0000000000000023
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI12_0)
 	flw	fa4, %lo(.LCPI12_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v12, fa5
 	vmerge.vim	v8, v8, 0, v0
 	vmfge.vf	v12, v8, fa4
@@ -138,9 +138,9 @@ func0000000000000015:                   # @func0000000000000015
 .LCPI15_0:
 	.quad	0x433fffffffffffff              # double 9007199254740991
 func0000000000000014:                   # @func0000000000000014
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI15_0)
 	fld	fa5, %lo(.LCPI15_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v0, v16, v16
 	vmerge.vim	v8, v8, 0, v0
 	vmfgt.vf	v0, v8, fa5

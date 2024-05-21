@@ -3,16 +3,17 @@
 .LCPI0_1:
 	.quad	6364136223846793005             # 0x5851f42d4c957f2d
 func0000000000000010:                   # @func0000000000000010
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsrl.vi	v10, v8, 3
-	vsetvli	zero, zero, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	addi	a0, a0, %lo(.LCPI0_0)
-	vlse64.v	v8, (a0), zero
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vlse64.v	v10, (a0), zero
 	lui	a0, %hi(.LCPI0_1)
 	ld	a0, %lo(.LCPI0_1)(a0)
-	vzext.vf2	v12, v10
-	vmacc.vx	v8, a0, v12
+	vsrl.vi	v8, v8, 3
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v12, v8
+	vmacc.vx	v10, a0, v12
+	vmv.v.v	v8, v10
 	ret
 func000000000000001d:                   # @func000000000000001d
 	vsetivli	zero, 8, e8, mf2, ta, ma

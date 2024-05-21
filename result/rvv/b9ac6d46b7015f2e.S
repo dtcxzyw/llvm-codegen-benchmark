@@ -1,7 +1,7 @@
 func0000000000000028:                   # @func0000000000000028
 	lui	a0, 1048575
-	vsetivli	zero, 4, e16, mf2, ta, ma
 	bseti	a1, zero, 11
+	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsltu.vx	v0, v8, a1
 	vadd.vx	v9, v8, a0
 	vmerge.vvm	v10, v9, v8, v0
@@ -26,8 +26,8 @@ func0000000000000029:                   # @func0000000000000029
 	ret
 func0000000000000009:                   # @func0000000000000009
 	li	a0, -136
-	vsetivli	zero, 4, e32, m1, ta, ma
 	li	a1, 136
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v0, v8, a1
 	vadd.vx	v9, v8, a0
 	vmerge.vvm	v10, v9, v8, v0

@@ -32,9 +32,9 @@ func0000000000000044:                   # @func0000000000000044
 .LCPI3_1:
 	.word	0xbfb4f4ab                      # float -1.41371667
 func0000000000000042:                   # @func0000000000000042
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v8, v12, v16
 	lui	a0, %hi(.LCPI3_1)
 	flw	fa4, %lo(.LCPI3_1)(a0)

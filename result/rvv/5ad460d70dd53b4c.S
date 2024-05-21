@@ -20,14 +20,14 @@ func0000000000000058:                   # @func0000000000000058
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a2
 	ret
 func00000000000000d8:                   # @func00000000000000d8
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -47,11 +47,11 @@ func000000000000005a:                   # @func000000000000005a
 func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
-	li	a0, 10
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
+	li	a1, 10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmul.vx	v8, v8, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v11
 	vsetvli	zero, zero, e64, m2, ta, ma

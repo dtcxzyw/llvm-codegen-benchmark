@@ -3,9 +3,9 @@
 .LCPI0_1:
 	.quad	128102389400760775              # 0x1c71c71c71c71c7
 func0000000000000351:                   # @func0000000000000351
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a1, %hi(.LCPI0_1)
 	ld	a1, %lo(.LCPI0_1)(a1)

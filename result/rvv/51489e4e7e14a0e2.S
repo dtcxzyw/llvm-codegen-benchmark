@@ -11,9 +11,9 @@ func000000000000000c:                   # @func000000000000000c
 .LCPI1_1:
 	.quad	0x403312b020c49ba6              # double 19.073
 func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 16, e8, m1, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	addi	a0, a0, %lo(.LCPI1_0)
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vlse64.v	v16, (a0), zero
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_1)(a0)

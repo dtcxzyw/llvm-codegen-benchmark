@@ -3,9 +3,9 @@
 func0000000000000046:                   # @func0000000000000046
 	lui	a0, 16
 	addiw	a1, a0, -16
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a1
 	vmerge.vvm	v8, v10, v8, v0
 	vmulhu.vx	v10, v12, a2

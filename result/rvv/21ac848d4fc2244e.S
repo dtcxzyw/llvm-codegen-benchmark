@@ -9,8 +9,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	vsrl.vv	v8, v8, v10
 	ret
 func00000000000000e2:                   # @func00000000000000e2
-	vsetivli	zero, 4, e32, m1, ta, ma
 	li	a0, 49
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vadd.vi	v10, v11, 11
 	vmerge.vim	v10, v10, 12, v0

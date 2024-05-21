@@ -23,9 +23,9 @@ func0000000000000208:                   # @func0000000000000208
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vsext.vf4	v9, v8
-	vwadd.wv	v10, v10, v9
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	vwadd.wv	v10, v10, v9
 	li	a1, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a1
@@ -178,9 +178,9 @@ func0000000000000008:                   # @func0000000000000008
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vsext.vf4	v9, v8
-	vwadd.wv	v10, v10, v9
 	lui	a0, %hi(.LCPI13_0)
 	ld	a0, %lo(.LCPI13_0)(a0)
+	vwadd.wv	v10, v10, v9
 	li	a1, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a1

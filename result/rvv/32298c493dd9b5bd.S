@@ -1,10 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v12, v10, a0
 	vmseq.vi	v0, v9, 0
+	vnsrl.wx	v9, v10, a0
 	vsetvli	zero, zero, e16, mf2, ta, mu
-	vnsrl.wi	v8, v12, 0, v0.t
+	vnsrl.wi	v8, v9, 0, v0.t
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 8

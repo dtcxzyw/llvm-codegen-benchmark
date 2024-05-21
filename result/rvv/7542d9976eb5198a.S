@@ -34,8 +34,8 @@ func0000000000000003:                   # @func0000000000000003
 	vzext.vf4	v8, v9
 	ret
 func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 4, e16, mf2, ta, ma
 	li	a0, 25
+	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vnsrl.wi	v8, v9, 0
 	vmerge.vim	v10, v8, 0, v0
@@ -43,8 +43,8 @@ func0000000000000009:                   # @func0000000000000009
 	vzext.vf4	v8, v10
 	ret
 func0000000000000008:                   # @func0000000000000008
-	vsetivli	zero, 4, e16, mf2, ta, ma
 	li	a0, 25
+	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vnsrl.wi	v8, v9, 0
 	vmerge.vim	v10, v8, 0, v0

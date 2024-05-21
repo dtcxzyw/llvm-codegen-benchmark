@@ -15,13 +15,14 @@ func0000000000000444:                   # @func0000000000000444
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.i	v9, 2
-	vmerge.vim	v9, v9, 4, v0
+	vmv.v.i	v12, 2
 	li	a0, -1
 	slli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vx	v0, v10, a0
+	vmsltu.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vim	v9, v9, 8, v0
+	vmerge.vim	v10, v12, 4, v0
+	vmv1r.v	v0, v9
+	vmerge.vim	v9, v10, 8, v0
 	vmsltu.vv	v0, v8, v9
 	ret

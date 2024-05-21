@@ -23,8 +23,8 @@ func0000000000000023:                   # @func0000000000000023
 	vzext.vf2	v8, v10
 	ret
 func000000000000006d:                   # @func000000000000006d
-	vsetivli	zero, 4, e32, m1, ta, ma
 	li	a0, 32
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmslt.vx	v0, v8, a0
 	vadd.vv	v8, v8, v8
 	vmerge.vxm	v10, v8, a0, v0

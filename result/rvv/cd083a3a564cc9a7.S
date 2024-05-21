@@ -3,13 +3,13 @@
 .LCPI0_1:
 	.quad	0x3fd34413509f79fe              # double 0.30102999566398114
 func0000000000000002:                   # @func0000000000000002
-	li	a0, 52
+	lui	a0, %hi(.LCPI0_0)
+	addi	a0, a0, %lo(.LCPI0_0)
 	vsetivli	zero, 8, e32, m2, ta, ma
-	lui	a1, %hi(.LCPI0_0)
-	addi	a1, a1, %lo(.LCPI0_0)
-	vlse64.v	v12, (a1), zero
-	lui	a1, %hi(.LCPI0_1)
-	fld	fa5, %lo(.LCPI0_1)(a1)
+	vlse64.v	v12, (a0), zero
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	li	a0, 52
 	vadd.vx	v8, v8, a0
 	vfwcvt.f.x.v	v16, v8
 	vsetvli	zero, zero, e64, m4, ta, ma

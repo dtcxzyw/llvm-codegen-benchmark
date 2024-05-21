@@ -23,24 +23,22 @@ func0000000000000010:                   # @func0000000000000010
 	vadd.vi	v8, v8, 11
 	ret
 func0000000000000145:                   # @func0000000000000145
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v12, v9, 2
 	bseti	a0, zero, 62
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vvm	v9, v12, v9, v0
+	vadd.vi	v10, v9, 2
+	vmerge.vvm	v9, v10, v9, v0
 	vadd.vv	v8, v9, v8
 	li	a0, 1075
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000345:                   # @func0000000000000345
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v12, v9, 2
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v0, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vvm	v9, v12, v9, v0
+	vadd.vi	v10, v9, 2
+	vmerge.vvm	v9, v10, v9, v0
 	vadd.vv	v8, v9, v8
 	vadd.vi	v8, v8, -1
 	ret

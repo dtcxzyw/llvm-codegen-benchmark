@@ -18,9 +18,9 @@ func0000000000000078:                   # @func0000000000000078
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 988971
 	addiw	a0, a0, 1455
-	slli	a0, a0, 12
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	slli	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vsrl.vi	v8, v8, 3

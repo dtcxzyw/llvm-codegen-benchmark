@@ -45,15 +45,15 @@ func000000000000000a:                   # @func000000000000000a
 .LCPI4_1:
 	.quad	0x3fe6666666666666              # double 0.69999999999999996
 func000000000000000d:                   # @func000000000000000d
-	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa4, %lo(.LCPI4_0)(a0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
-	fld	fa3, %lo(.LCPI4_1)(a0)
+	fld	fa4, %lo(.LCPI4_1)(a0)
+	fli.d	fa3, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmv.v.f	v16, fa5
-	vfmacc.vf	v16, fa4, v8
-	vmflt.vf	v8, v16, fa3
+	vfmv.v.f	v16, fa3
+	vfmacc.vf	v16, fa5, v8
+	vmflt.vf	v8, v16, fa4
 	vmnot.m	v0, v8
 	ret
 func0000000000000008:                   # @func0000000000000008

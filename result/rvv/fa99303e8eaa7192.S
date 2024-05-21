@@ -9,9 +9,9 @@ func0000000000000002:                   # @func0000000000000002
 	.word	0x3d23d70a                      # float 0.0399999991
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa4, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	vfadd.vf	v8, v8, fa4

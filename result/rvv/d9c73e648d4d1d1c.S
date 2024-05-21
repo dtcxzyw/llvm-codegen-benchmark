@@ -25,8 +25,8 @@ func0000000000000005:                   # @func0000000000000005
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000023:                   # @func0000000000000023
-	vsetivli	zero, 16, e8, m1, ta, ma
 	li	a0, -65
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vx	v0, v9, a0
 	vand.vi	v9, v10, 2
 	vmerge.vim	v9, v9, 4, v0

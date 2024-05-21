@@ -1,9 +1,8 @@
 func0000000000000016:                   # @func0000000000000016
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsext.vf2	v10, v8
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vmsle.vi	v0, v8, -1
 	vsetvli	zero, zero, e32, m2, ta, mu
+	vsext.vf2	v10, v8
 	vadd.vi	v10, v10, -15, v0.t
 	vmv.v.v	v8, v10
 	ret

@@ -2,9 +2,9 @@
 	.quad	0x41dfffffffc00000              # double 2147483647
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmv1r.v	v25, v0
 	vmv1r.v	v0, v24

@@ -29,13 +29,13 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI4_0:
 	.quad	23450716140815697               # 0x53504d554d4551
 func0000000000000001:                   # @func0000000000000001
-	li	a0, 56
-	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
+	lui	a0, %hi(.LCPI4_0)
+	ld	a0, %lo(.LCPI4_0)(a0)
+	li	a1, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vx	v10, v8, a0
+	vwsll.vx	v10, v8, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v8, v10, a1
+	vor.vx	v8, v10, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
 	li	a0, 63

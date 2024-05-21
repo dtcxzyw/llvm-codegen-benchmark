@@ -3,9 +3,9 @@
 func000000000000000c:                   # @func000000000000000c
 	li	a0, -8
 	zext.w	a0, a0
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vadd.vi	v12, v12, 8
 	vxor.vv	v10, v12, v10

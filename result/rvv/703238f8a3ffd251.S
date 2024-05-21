@@ -10,13 +10,13 @@ func0000000000000003:                   # @func0000000000000003
 .LCPI1_0:
 	.word	0x4006538f                      # float 2.09885001
 func0000000000000005:                   # @func0000000000000005
-	fli.s	fa5, 1.0
 	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	fli.s	fa4, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfadd.vf	v12, v12, fa5
+	vfadd.vf	v12, v12, fa4
 	vfdiv.vv	v8, v8, v12
-	vmfle.vf	v12, v8, fa4
+	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
 func0000000000000007:                   # @func0000000000000007

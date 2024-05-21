@@ -25,9 +25,9 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI3_0:
 	.quad	0x406fe00000000000              # double 255
 func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vfwcvt.f.x.v	v20, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmadd.vv	v20, v8, v12

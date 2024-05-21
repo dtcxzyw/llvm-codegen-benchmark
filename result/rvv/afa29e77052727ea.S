@@ -15,9 +15,9 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, 286124
 	fmv.w.x	fa5, a0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	addi	a0, a0, %lo(.LCPI1_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v16, (a0), zero
 	lui	a0, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a0)

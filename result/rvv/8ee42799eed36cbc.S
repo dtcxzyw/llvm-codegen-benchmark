@@ -10,9 +10,9 @@ func000000000000000c:                   # @func000000000000000c
 .LCPI1_0:
 	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
 func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 4, e64, m2, ta, ma
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	vmulh.vx	v8, v8, a0

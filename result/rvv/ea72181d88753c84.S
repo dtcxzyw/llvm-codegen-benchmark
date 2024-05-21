@@ -20,12 +20,11 @@ func0000000000000446:                   # @func0000000000000446
 	li	a0, 1000
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsltu.vx	v0, v10, a0
+	li	a0, 100
+	vmsltu.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v12, v12, 3, v0
-	li	a0, 100
-	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmsltu.vx	v0, v10, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv1r.v	v0, v10
 	vmerge.vim	v10, v12, 2, v0
 	vmslt.vv	v0, v8, v10
 	ret

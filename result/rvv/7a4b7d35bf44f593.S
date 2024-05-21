@@ -21,11 +21,12 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 6, v0
+	vmv.v.i	v12, 0
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vmsgtu.vi	v0, v10, 11
+	vmsgtu.vi	v9, v10, 11
 	vsetvli	zero, zero, e8, m1, ta, ma
-	vmerge.vim	v9, v9, 15, v0
+	vmerge.vim	v10, v12, 6, v0
+	vmv1r.v	v0, v9
+	vmerge.vim	v9, v10, 15, v0
 	vand.vv	v8, v9, v8
 	ret

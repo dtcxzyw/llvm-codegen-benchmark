@@ -2,9 +2,9 @@
 	.quad	4835703278458516699             # 0x431bde82d7b634db
 func00000000000000a0:                   # @func00000000000000a0
 	lui	a0, 244
-	addiw	a0, a0, 576
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
+	addiw	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
@@ -21,9 +21,9 @@ func00000000000000a0:                   # @func00000000000000a0
 func00000000000001a8:                   # @func00000000000001a8
 	lui	a0, 439453
 	slli	a0, a0, 1
-	addi	a0, a0, 1024
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	addi	a0, a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
@@ -40,9 +40,9 @@ func00000000000001a8:                   # @func00000000000001a8
 func0000000000000080:                   # @func0000000000000080
 	lui	a0, 609123
 	slli	a0, a0, 1
-	addi	a0, a0, -1024
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
+	addi	a0, a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8

@@ -5,9 +5,9 @@ func0000000000000018:                   # @func0000000000000018
 	vmseq.vx	v0, v8, a0
 	li	a0, 120
 	vmv.v.x	v12, a0
-	li	a0, 255
-	vmsgtu.vx	v10, v8, a0
 	li	a0, 45
+	li	a1, 255
+	vmsgtu.vx	v10, v8, a1
 	vmerge.vxm	v12, v12, a0, v0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v8, v12, v0

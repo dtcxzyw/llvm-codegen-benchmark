@@ -26,11 +26,11 @@ func0000000000000029:                   # @func0000000000000029
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 5
 	lui	a0, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsll.vi	v9, v9, 5
 	vmerge.vvm	v8, v9, v8, v0
 	vor.vi	v8, v8, 8
 	ret
@@ -42,12 +42,12 @@ func0000000000000111:                   # @func0000000000000111
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 5
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vi	v9, v9, 5
 	vmerge.vvm	v8, v9, v8, v0
 	vor.vi	v8, v8, 8
 	ret
@@ -59,11 +59,11 @@ func0000000000000109:                   # @func0000000000000109
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 5
 	bseti	a0, zero, 48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vi	v9, v9, 5
 	vmerge.vvm	v8, v9, v8, v0
 	vor.vi	v8, v8, 8
 	ret
@@ -82,11 +82,12 @@ func0000000000000031:                   # @func0000000000000031
 	addi	a0, a0, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v12, a0
-	vmerge.vim	v12, v12, 2, v0
 	li	a0, 31
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsgtu.vx	v0, v10, a0
+	vmsgtu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
+	vmerge.vim	v12, v12, 2, v0
+	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v12, v8, v0
 	bseti	a0, zero, 11
 	vor.vx	v8, v8, a0
@@ -97,10 +98,10 @@ func0000000000000083:                   # @func0000000000000083
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vi	v9, v9, 3
 	vmerge.vvm	v8, v9, v8, v0
 	li	a0, 32
 	vor.vx	v8, v8, a0

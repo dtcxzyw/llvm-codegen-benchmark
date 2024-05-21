@@ -14,13 +14,13 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_0:
 	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
 func0000000000000003:                   # @func0000000000000003
-	li	a0, 10
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	li	a1, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
+	vmul.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 2
-	vmulhu.vx	v8, v8, a1
+	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 2
 	li	a0, 39
 	vmul.vx	v8, v8, a0

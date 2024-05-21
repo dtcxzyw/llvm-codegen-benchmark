@@ -102,8 +102,8 @@ func0000000000000022:                   # @func0000000000000022
 	vzext.vf2	v8, v10
 	ret
 func0000000000000071:                   # @func0000000000000071
-	vsetivli	zero, 4, e32, m1, ta, ma
 	li	a0, 49
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vadd.vi	v8, v9, 11
 	vmerge.vim	v10, v8, 12, v0

@@ -15,9 +15,9 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	0x0370000000000000              # double 4.0083367200179456E-292
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 27392
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v14, v12, a0
 	vmand.mm	v0, v14, v0
 	vsetvli	zero, zero, e64, m4, ta, ma

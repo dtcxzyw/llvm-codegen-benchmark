@@ -67,11 +67,11 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000218:                   # @func0000000000000218
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v14, 1
-	vsll.vv	v12, v14, v12
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v10, v12, 0, v0
+	vsll.vv	v10, v14, v12
+	vmerge.vim	v10, v10, 0, v0
 	vmsltu.vv	v0, v10, v8
 	ret
 func0000000000000214:                   # @func0000000000000214
@@ -85,11 +85,11 @@ func0000000000000214:                   # @func0000000000000214
 func0000000000000216:                   # @func0000000000000216
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v14, 1
-	vsll.vv	v12, v14, v12
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v10, v12, 0, v0
+	vsll.vv	v10, v14, v12
+	vmerge.vim	v10, v10, 0, v0
 	vmslt.vv	v0, v8, v10
 	ret
 func0000000000000361:                   # @func0000000000000361

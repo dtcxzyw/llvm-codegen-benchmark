@@ -34,9 +34,9 @@ func0000000000000025:                   # @func0000000000000025
 	.quad	19342813113834067               # 0x44b82fa09b5a53
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 122070
-	addiw	a0, a0, 1280
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
+	addiw	a0, a0, 1280
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 9

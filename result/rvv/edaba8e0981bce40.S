@@ -104,9 +104,9 @@ func0000000000000255:                   # @func0000000000000255
 	vmflt.vv	v0, v16, v20
 	lui	a0, %hi(.LCPI10_0)
 	flw	fa5, %lo(.LCPI10_0)(a0)
-	vmerge.vvm	v16, v20, v16, v0
 	lui	a0, %hi(.LCPI10_1)
 	fld	fa4, %lo(.LCPI10_1)(a0)
+	vmerge.vvm	v16, v20, v16, v0
 	vmfle.vf	v20, v16, fa5
 	vmnot.m	v16, v20
 	vsetvli	zero, zero, e64, m8, ta, ma

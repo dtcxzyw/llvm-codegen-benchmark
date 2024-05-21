@@ -28,15 +28,15 @@ func0000000000000003:                   # @func0000000000000003
 .LCPI2_0:
 	.quad	-5770238071427257601            # 0xafebff0bcb24aaff
 func0000000000000001:                   # @func0000000000000001
-	lui	a0, 11921
-	lui	a1, %hi(.LCPI2_0)
-	ld	a1, %lo(.LCPI2_0)(a1)
-	addiw	a0, a0, -291
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, 11921
+	addiw	a1, a1, -291
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v10, v8, a0
-	vmulhu.vx	v8, v10, a1
-	li	a1, 36
-	vsrl.vx	v8, v8, a1
-	slli	a0, a0, 11
-	vnmsub.vx	v8, a0, v10
+	vmul.vx	v10, v8, a1
+	vmulhu.vx	v8, v10, a0
+	li	a0, 36
+	vsrl.vx	v8, v8, a0
+	slli	a1, a1, 11
+	vnmsub.vx	v8, a1, v10
 	ret

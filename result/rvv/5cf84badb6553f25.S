@@ -4,13 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 748983
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vror.vi	v12, v12, 3
-	vmsleu.vx	v0, v12, a1
+	vmsleu.vx	v0, v12, a2
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000004:                   # @func0000000000000004

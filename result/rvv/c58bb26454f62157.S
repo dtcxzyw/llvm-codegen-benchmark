@@ -3,10 +3,10 @@
 func0000000000000104:                   # @func0000000000000104
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 10
-	vmul.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	li	a1, 10
+	vmul.vx	v10, v10, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -17,10 +17,10 @@ func0000000000000104:                   # @func0000000000000104
 func0000000000000101:                   # @func0000000000000101
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 10
-	vmul.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	li	a1, 10
+	vmul.vx	v10, v10, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -76,14 +76,14 @@ func00000000000007a8:                   # @func00000000000007a8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	li	a0, 10
+	lui	a1, %hi(.LCPI6_0)
+	ld	a1, %lo(.LCPI6_0)(a1)
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
 	vzext.vf4	v9, v8
 	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v10, a0
+	vmsgtu.vx	v0, v10, a1
 	ret
 func00000000000007f4:                   # @func00000000000007f4
 	vsetivli	zero, 4, e64, m2, ta, ma

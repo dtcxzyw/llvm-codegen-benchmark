@@ -38,9 +38,9 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	0x3fb999999999999a              # double 0.10000000000000001
 func0000000000000014:                   # @func0000000000000014
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa4, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v0
 	vfmerge.vfm	v8, v8, fa4, v0

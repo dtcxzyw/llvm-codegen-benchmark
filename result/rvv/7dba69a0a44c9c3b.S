@@ -3,18 +3,17 @@
 func0000000000000006:                   # @func0000000000000006
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vfmerge.vfm	v12, v12, fa5, v0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsle.vi	v0, v8, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsle.vi	v16, v8, -1
 	vsetvli	zero, zero, e64, m4, ta, mu
-	vfneg.v	v12, v12, v0.t
-	vmv.v.v	v8, v12
+	vfmerge.vfm	v8, v12, fa5, v0
+	vmv1r.v	v0, v16
+	vfneg.v	v8, v8, v0.t
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmerge.vim	v10, v10, 0, v0
-	vmseq.vi	v0, v8, 1
-	vfneg.v	v10, v10, v0.t
-	vmv.v.v	v8, v10
+	vmseq.vi	v12, v8, 1
+	vmerge.vim	v8, v10, 0, v0
+	vmv1r.v	v0, v12
+	vfneg.v	v8, v8, v0.t
 	ret

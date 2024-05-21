@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	fli.s	fa5, -1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	fli.s	fa4, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v12, v8, fa4
 	vmnot.m	v0, v12
 	vfadd.vf	v12, v8, fa5

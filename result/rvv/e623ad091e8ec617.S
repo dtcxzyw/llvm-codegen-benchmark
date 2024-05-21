@@ -89,9 +89,9 @@ func0000000000000066:                   # @func0000000000000066
 	.quad	0xc1e0000000000000              # double -2147483648
 func000000000000006d:                   # @func000000000000006d
 	fli.d	fa5, inf
-	vsetivli	zero, 16, e64, m8, ta, ma
 	lui	a0, %hi(.LCPI9_0)
 	fld	fa4, %lo(.LCPI9_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
 	vmor.mm	v16, v25, v24
@@ -154,13 +154,13 @@ func0000000000000087:                   # @func0000000000000087
 .LCPI15_0:
 	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func0000000000000035:                   # @func0000000000000035
-	fli.s	fa5, 1.0
 	lui	a0, %hi(.LCPI15_0)
-	fld	fa4, %lo(.LCPI15_0)(a0)
+	fld	fa5, %lo(.LCPI15_0)(a0)
+	fli.s	fa4, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v20, v16, fa5
+	vmfge.vf	v20, v16, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfle.vf	v16, v8, fa4
+	vmfle.vf	v16, v8, fa5
 	vmnot.m	v8, v16
 	vmandn.mm	v8, v8, v20
 	vmand.mm	v0, v8, v0

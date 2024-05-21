@@ -20,18 +20,19 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000011:                   # @func0000000000000011
 	li	a0, 127
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vand.vx	v10, v8, a0
 	li	a0, 33
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmv.v.i	v10, 0
+	vmv.v.i	v9, 0
 	li	a1, 34
-	vmerge.vxm	v10, v10, a1, v0
-	li	a1, 32
+	li	a2, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vx	v0, v8, a1
+	vmseq.vx	v8, v10, a2
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v9, v9, a1, v0
+	vmv1r.v	v0, v8
+	vmerge.vxm	v8, v9, a0, v0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	lui	a0, 15

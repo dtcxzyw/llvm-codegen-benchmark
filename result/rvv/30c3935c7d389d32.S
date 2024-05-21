@@ -13,8 +13,8 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000000:                   # @func0000000000000000
 	vmv1r.v	v11, v0
 	bseti	a0, zero, 32
-	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v0, v10
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v11

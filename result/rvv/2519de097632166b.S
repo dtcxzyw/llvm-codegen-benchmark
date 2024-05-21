@@ -32,9 +32,9 @@ func00000000000000a4:                   # @func00000000000000a4
 func0000000000000085:                   # @func0000000000000085
 	lui	a0, 3
 	addi	a0, a0, -288
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a1)
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmfle.vf	v10, v8, fa5
@@ -45,9 +45,9 @@ func0000000000000085:                   # @func0000000000000085
 func0000000000000083:                   # @func0000000000000083
 	lui	a0, 3
 	addi	a0, a0, -288
-	vsetivli	zero, 8, e32, m2, ta, ma
 	lui	a1, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a1)
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmfge.vf	v10, v8, fa5

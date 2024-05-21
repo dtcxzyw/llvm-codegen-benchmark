@@ -42,9 +42,9 @@ func0000000000000028:                   # @func0000000000000028
 .LCPI6_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func00000000000000c2:                   # @func00000000000000c2
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI6_0)
 	addi	a0, a0, %lo(.LCPI6_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v16, (a0), zero
 	fmv.w.x	fa5, zero
 	vmfge.vf	v0, v12, fa5
@@ -114,9 +114,9 @@ func000000000000004a:                   # @func000000000000004a
 	.word	0x3c23d70a                      # float 0.00999999977
 func0000000000000052:                   # @func0000000000000052
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	lui	a0, %hi(.LCPI14_0)
 	addi	a0, a0, %lo(.LCPI14_0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vlse32.v	v16, (a0), zero
 	vmfle.vf	v20, v12, fa5
 	vmnot.m	v0, v20

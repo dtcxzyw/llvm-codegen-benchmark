@@ -1,7 +1,7 @@
 func0000000000000020:                   # @func0000000000000020
 	li	a0, -48
-	vsetivli	zero, 16, e8, m1, ta, ma
 	li	a1, 96
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vx	v0, v10, a1
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v9, v10, v9, v0

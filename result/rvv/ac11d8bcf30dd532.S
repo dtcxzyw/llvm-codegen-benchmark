@@ -66,9 +66,9 @@ func0000000000000057:                   # @func0000000000000057
 .LCPI9_0:
 	.quad	1844674407370955209             # 0x19999999999999c9
 func0000000000000038:                   # @func0000000000000038
-	vsetivli	zero, 4, e32, m1, ta, ma
 	lui	a0, %hi(.LCPI9_0)
 	addi	a0, a0, %lo(.LCPI9_0)
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vlse64.v	v12, (a0), zero
 	vzext.vf4	v11, v10
 	vwsubu.wv	v12, v12, v11
