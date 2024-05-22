@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v8, v8, 3
+	vsrl.vi	v8, v8, 3
 	li	a0, -48
 	vmv.v.x	v10, a0
 	li	a0, 48

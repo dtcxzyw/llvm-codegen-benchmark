@@ -7,7 +7,7 @@ func0000000000000017:                   # @func0000000000000017
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a1, a1, -2
-	srai	a1, a1, 1
+	srli	a1, a1, 1
 	li	a2, 12
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000016:                   # @func0000000000000016
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a1, a1, -2
-	srai	a1, a1, 1
+	srli	a1, a1, 1
 	li	a2, 24
 	mul	a1, a1, a2
 	add	a0, a0, a1

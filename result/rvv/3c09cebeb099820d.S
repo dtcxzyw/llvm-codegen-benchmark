@@ -10,7 +10,7 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v10, v8
+	vzext.vf2	v10, v8
 	bseti	a0, zero, 32
 	vmv.v.x	v8, a0
 	li	a0, 3

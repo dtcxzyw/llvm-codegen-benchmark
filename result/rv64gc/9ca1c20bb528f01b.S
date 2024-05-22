@@ -21,9 +21,10 @@ func0000000000000016:                   # @func0000000000000016
 	srai	a2, a2, 56
 	li	a3, 43
 	mul	a2, a2, a3
-	srai	a3, a2, 10
-	slli	a2, a2, 48
-	srli	a2, a2, 63
+	slli	a3, a2, 48
+	srli	a3, a3, 63
+	srai	a2, a2, 8
+	srli	a2, a2, 2
 	add	a2, a2, a3
 	li	a3, 24
 	mul	a2, a2, a3

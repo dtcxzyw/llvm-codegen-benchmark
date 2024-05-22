@@ -32,7 +32,7 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v8, 4
+	vsrl.vi	v10, v8, 4
 	li	a0, -1
 	slli	a0, a0, 32
 	vmv.v.x	v8, a0
@@ -47,7 +47,7 @@ func000000000000001d:                   # @func000000000000001d
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v8, 3
+	vsrl.vi	v10, v8, 3
 	vmv.v.i	v8, -8
 	vmacc.vx	v8, a0, v10
 	ret
@@ -70,7 +70,7 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000012:                   # @func0000000000000012
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v8, 3
+	vsrl.vi	v10, v8, 3
 	bseti	a0, zero, 32
 	vmv.v.x	v8, a0
 	lui	a0, 699051
@@ -84,7 +84,7 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a0, %hi(.LCPI8_0)
 	ld	a0, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v8, 3
+	vsrl.vi	v10, v8, 3
 	vmv.v.i	v8, -1
 	vmacc.vx	v8, a0, v10
 	ret
@@ -94,7 +94,7 @@ func000000000000001f:                   # @func000000000000001f
 	lui	a0, %hi(.LCPI9_0)
 	ld	a0, %lo(.LCPI9_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v8, 3
+	vsrl.vi	v10, v8, 3
 	vmv.v.i	v8, 8
 	vmacc.vx	v8, a0, v10
 	ret

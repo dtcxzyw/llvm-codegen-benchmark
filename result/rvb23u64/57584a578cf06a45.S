@@ -4,7 +4,7 @@ func000000000000002a:                   # @func000000000000002a
 	srai	a2, a1, 63
 	srli	a2, a2, 62
 	add	a1, a1, a2
-	srai	a1, a1, 2
+	srli	a1, a1, 2
 	sub	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)

@@ -14,7 +14,7 @@ func0000000000000000:                   # @func0000000000000000
 	sub	a1, a1, a0
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
-	srai	a1, a1, 2
+	srli	a1, a1, 2
 	add	a1, a1, a2
 	li	a2, 12
 	mul	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000001:                   # @func0000000000000001
 	sub	a1, a1, a0
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	add	a1, a1, a2
 	li	a2, 24
 	mul	a1, a1, a2

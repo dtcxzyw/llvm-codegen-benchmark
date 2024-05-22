@@ -23,7 +23,8 @@ func0000000000000005:                   # @func0000000000000005
 	li	a3, 43
 	mul	a2, a2, a3
 	bexti	a3, a2, 15
-	srai	a2, a2, 10
+	srai	a2, a2, 8
+	srli	a2, a2, 2
 	add	a2, a2, a3
 	sh1add	a2, a2, a2
 	slli	a2, a2, 3

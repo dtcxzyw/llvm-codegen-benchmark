@@ -7,7 +7,7 @@ func0000000000000028:                   # @func0000000000000028
 	li	a1, 62
 	vsrl.vx	v12, v12, a1
 	vadd.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
+	vsrl.vi	v10, v10, 2
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	vsub.vv	v8, v8, v10

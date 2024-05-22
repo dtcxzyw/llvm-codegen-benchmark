@@ -1,5 +1,5 @@
 func000000000000000b:                   # @func000000000000000b
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	lui	a3, 838861
 	addiw	a3, a3, -819
 	slli	a4, a3, 32
@@ -11,7 +11,7 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	srai	a2, a2, 4
+	srli	a2, a2, 4
 	lui	a3, 838861
 	addiw	a3, a3, -819
 	slli	a4, a3, 32
@@ -23,7 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	lui	a3, 838861
 	addiw	a3, a3, -819
 	slli	a4, a3, 32
@@ -43,7 +43,7 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a2
 	ret
 func0000000000000009:                   # @func0000000000000009
-	srai	a2, a2, 4
+	srli	a2, a2, 4
 	lui	a3, 699051
 	addiw	a3, a3, -1365
 	slli	a4, a3, 32

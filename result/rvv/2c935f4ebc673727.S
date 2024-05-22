@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	vsra.vi	v8, v8, 2
+	vsrl.vi	v8, v8, 2
 	lui	a0, 838861
 	addi	a0, a0, -819
 	slli	a0, a0, 32

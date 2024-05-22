@@ -28,9 +28,8 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a2, a2, -1365
 	mul	a1, a1, a2
 	srli	a2, a1, 63
-	srai	a1, a1, 32
-	srli	a1, a1, 1
-	add	a0, a0, a2
+	srai	a1, a1, 33
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	lui	a1, 599186
 	addiw	a1, a1, 1171
@@ -50,9 +49,8 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
-	srai	a1, a1, 32
-	srli	a1, a1, 7
-	add	a0, a0, a2
+	srai	a1, a1, 39
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	lui	a1, 599186
 	addiw	a1, a1, 1171

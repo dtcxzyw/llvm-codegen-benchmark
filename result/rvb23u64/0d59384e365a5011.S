@@ -2,7 +2,7 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a1, a1, -1
 	srli	a2, a1, 63
 	add	a1, a1, a2
-	srai	a1, a1, 1
+	srli	a1, a1, 1
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 32
@@ -29,7 +29,7 @@ func0000000000000009:                   # @func0000000000000009
 	addi	a1, a1, -1
 	srli	a2, a1, 63
 	add	a1, a1, a2
-	srai	a1, a1, 1
+	srli	a1, a1, 1
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 8

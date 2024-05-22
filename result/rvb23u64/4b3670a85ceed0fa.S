@@ -61,7 +61,7 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000d:                   # @func000000000000000d
 	lui	a3, %hi(.LCPI9_0)
 	ld	a3, %lo(.LCPI9_0)(a3)
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	mul	a2, a2, a3
 	li	a3, 104
 	mul	a1, a1, a3

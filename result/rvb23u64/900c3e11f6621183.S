@@ -15,7 +15,7 @@ func0000000000000015:                   # @func0000000000000015
 	srai	a2, a1, 63
 	srli	a2, a2, 62
 	add	a1, a1, a2
-	srai	a1, a1, 2
+	srli	a1, a1, 2
 	sub	a0, a0, a1
 	addi	a0, a0, 31
 	sh2add	a0, a0, a0
@@ -25,7 +25,7 @@ func0000000000000020:                   # @func0000000000000020
 	sraiw	a2, a0, 31
 	srliw	a2, a2, 30
 	add	a0, a0, a2
-	sraiw	a0, a0, 2
+	srliw	a0, a0, 2
 	subw	a1, a1, a0
 	lui	a0, 1
 	addi	a0, a0, -96

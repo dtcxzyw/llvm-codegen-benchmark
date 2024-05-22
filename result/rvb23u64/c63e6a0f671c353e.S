@@ -1,5 +1,5 @@
 func0000000000000053:                   # @func0000000000000053
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	lui	a3, 838861
 	addiw	a3, a3, -819
 	slli	a4, a3, 32
@@ -18,7 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	mulh	a3, a2, a3
 	sub	a3, a3, a2
 	srli	a2, a3, 63
-	srai	a3, a3, 6
+	srli	a3, a3, 6
 	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

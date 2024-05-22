@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	sub	a0, a0, a1
-	srai	a0, a0, 3
+	srli	a0, a0, 3
 	mul	a0, a0, a2
 	ret
 .LCPI2_0:
@@ -70,7 +70,7 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1
 	mulh	a0, a0, a2
 	srli	a1, a0, 63
-	srai	a0, a0, 18
+	srli	a0, a0, 18
 	add	a0, a0, a1
 	lui	a1, 15625
 	slli	a1, a1, 26

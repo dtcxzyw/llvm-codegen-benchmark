@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsra.vi	v10, v8, 31
 	vsrl.vi	v10, v10, 28
 	vadd.vv	v8, v8, v10
-	vsra.vi	v8, v8, 4
+	vsrl.vi	v8, v8, 4
 	li	a0, 80
 	vmul.vx	v8, v8, a0
 	vmax.vx	v8, v8, zero

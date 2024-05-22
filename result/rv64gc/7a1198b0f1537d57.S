@@ -8,7 +8,7 @@ func0000000000000029:                   # @func0000000000000029
 	addi	a0, a0, 1
 	srli	a1, a0, 63
 	add	a0, a0, a1
-	srai	a0, a0, 1
+	srli	a0, a0, 1
 	li	a1, 24
 	mul	a0, a0, a1
 	ret
@@ -26,7 +26,7 @@ func0000000000000009:                   # @func0000000000000009
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 26
 	add	a0, a0, a1
-	sraiw	a0, a0, 6
+	srliw	a0, a0, 6
 	lui	a1, 6
 	mulw	a0, a0, a1
 	ret
@@ -37,7 +37,7 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 1
 	srli	a1, a0, 63
 	add	a0, a0, a1
-	srai	a0, a0, 1
+	srli	a0, a0, 1
 	li	a1, 768
 	mul	a0, a0, a1
 	ret

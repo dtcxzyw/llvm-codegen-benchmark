@@ -43,9 +43,6 @@ func0000000000000005:                   # @func0000000000000005
 	mul	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	li	a1, 17
-	slli	a1, a1, 32
-	slli	a0, a0, 56
-	mulhu	a0, a0, a1
-	sext.w	a0, a0
+	lui	a1, 69632
+	mulw	a0, a0, a1
 	ret

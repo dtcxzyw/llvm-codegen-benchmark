@@ -7,7 +7,7 @@ func000000000000002a:                   # @func000000000000002a
 	li	a1, 62
 	vsrl.vx	v12, v12, a1
 	vadd.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
+	vsrl.vi	v10, v10, 2
 	vsub.vv	v8, v8, v10
 	lui	a1, 1
 	addiw	a1, a1, -1616
@@ -26,7 +26,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsra.vi	v12, v10, 31
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
+	vsrl.vi	v10, v10, 2
 	vsub.vv	v8, v8, v10
 	lui	a0, 1
 	addi	a0, a0, -1616

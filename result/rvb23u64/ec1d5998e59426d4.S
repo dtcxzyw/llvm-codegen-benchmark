@@ -3,7 +3,7 @@
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	srai	a0, a0, 3
+	srli	a0, a0, 3
 	mul	a0, a0, a1
 	ret
 .LCPI1_0:

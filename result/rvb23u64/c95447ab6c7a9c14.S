@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1
 	li	a3, 1
-	sub	a3, a3, a2
+	subw	a3, a3, a2
 	czero.nez	a2, a3, a1
 	li	a3, -6
 	czero.eqz	a1, a3, a1
@@ -20,7 +20,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 1
 	li	a3, 1
-	sub	a3, a3, a2
+	subw	a3, a3, a2
 	czero.nez	a2, a3, a1
 	li	a3, -6
 	czero.eqz	a1, a3, a1

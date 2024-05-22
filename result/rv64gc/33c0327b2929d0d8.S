@@ -47,7 +47,7 @@ func0000000000000000:                   # @func0000000000000000
 	sraiw	a3, a2, 31
 	srliw	a3, a3, 30
 	add	a2, a2, a3
-	sraiw	a2, a2, 2
+	srliw	a2, a2, 2
 	li	a3, 20
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -58,7 +58,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000040:                   # @func0000000000000040
 	lui	a3, %hi(.LCPI4_0)
 	ld	a3, %lo(.LCPI4_0)(a3)
-	srai	a2, a2, 2
+	srli	a2, a2, 2
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -68,7 +68,7 @@ func0000000000000040:                   # @func0000000000000040
 func0000000000000050:                   # @func0000000000000050
 	lui	a3, %hi(.LCPI5_0)
 	ld	a3, %lo(.LCPI5_0)(a3)
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

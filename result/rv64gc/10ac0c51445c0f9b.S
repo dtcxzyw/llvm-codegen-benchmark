@@ -6,7 +6,7 @@ func000000000000000b:                   # @func000000000000000b
 	bnez	a3, .LBB0_2
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	srai	a2, a2, 3
+	srli	a2, a2, 3
 	mul	a1, a2, a1
 .LBB0_2:                                # %entry
 	li	a2, 24

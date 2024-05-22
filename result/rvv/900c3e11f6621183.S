@@ -20,7 +20,7 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 62
 	vsrl.vx	v12, v12, a0
 	vadd.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
+	vsrl.vi	v10, v10, 2
 	vsub.vv	v10, v8, v10
 	lui	a0, 1
 	addiw	a0, a0, -1616
@@ -33,7 +33,7 @@ func0000000000000020:                   # @func0000000000000020
 	vsra.vi	v12, v8, 31
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v8, v8, v12
-	vsra.vi	v8, v8, 2
+	vsrl.vi	v8, v8, 2
 	vsub.vv	v10, v10, v8
 	lui	a0, 699466
 	addi	a0, a0, -32
@@ -47,7 +47,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsra.vi	v12, v10, 31
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
+	vsrl.vi	v10, v10, 2
 	vsub.vv	v10, v8, v10
 	lui	a0, 1
 	addi	a0, a0, -1616

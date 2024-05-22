@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	sub	a1, a1, a0
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	add	a1, a1, a2
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
@@ -19,7 +19,7 @@ func0000000000000000:                   # @func0000000000000000
 	sub	a1, a1, a0
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	add	a1, a1, a2
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0

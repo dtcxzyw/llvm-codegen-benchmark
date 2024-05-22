@@ -1,5 +1,5 @@
 func0000000000000007:                   # @func0000000000000007
-	sraiw	a1, a1, 1
+	srliw	a1, a1, 1
 	sh1add	a1, a1, a1
 	slliw	a1, a1, 1
 	add	a0, a0, a1

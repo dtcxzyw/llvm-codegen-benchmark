@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	mul	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	srai	a0, a0, 4
+	srli	a0, a0, 4
 	li	a1, 160
 	mul	a0, a0, a1
 	ret
@@ -20,12 +20,12 @@ func0000000000000001:                   # @func0000000000000001
 	mul	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	sraiw	a0, a0, 1
+	srliw	a0, a0, 1
 	li	a1, 20
 	mulw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	srai	a0, a0, 2
+	srli	a0, a0, 2
 	li	a1, 224
 	mul	a0, a0, a1
 	ret

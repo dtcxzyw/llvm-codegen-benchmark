@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	srli	a2, a1, 63
 	add	a1, a1, a2
-	srai	a1, a1, 1
+	srli	a1, a1, 1
 	li	a2, 24
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -11,7 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000000b:                   # @func000000000000000b
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	srai	a1, a1, 2
+	srli	a1, a1, 2
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -20,7 +20,7 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000e:                   # @func000000000000000e
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

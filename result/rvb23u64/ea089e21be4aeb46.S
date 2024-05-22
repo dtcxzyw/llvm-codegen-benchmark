@@ -1,5 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
-	sraiw	a2, a2, 1
+	sext.w	a2, a2
+	srli	a2, a2, 1
 	sh1add	a2, a2, a2
 	sh2add	a1, a2, a1
 	sub	a0, a1, a0

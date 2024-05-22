@@ -5,7 +5,7 @@ func0000000000000015:                   # @func0000000000000015
 	addi	a0, a0, 32
 	ret
 func0000000000000010:                   # @func0000000000000010
-	srai	a0, a0, 3
+	srli	a0, a0, 3
 	sh1add	a0, a0, a0
 	slli	a0, a0, 3
 	addi	a0, a0, 24
@@ -17,7 +17,7 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	srai	a0, a0, 3
+	srli	a0, a0, 3
 	sh1add	a0, a0, a0
 	slli	a0, a0, 4
 	addi	a0, a0, -48

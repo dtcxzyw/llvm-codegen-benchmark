@@ -1,7 +1,6 @@
 func00000000000000b5:                   # @func00000000000000b5
 	sh2add	a2, a2, a2
-	slli	a2, a2, 1
-	add	a1, a1, a2
+	sh1add	a1, a2, a1
 	slli	a2, a1, 3
 	zext.h	a0, a0
 	subw	a1, a1, a0
