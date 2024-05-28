@@ -15,32 +15,22 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000004:                   # @func0000000000000004
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a1, a1, 4
+	slli	a1, a1, 3
 	sub	sp, sp, a1
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v24, v24
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs8r.v	v24, (a0)                       # Unknown-size Folded Spill
 	lui	a0, %hi(.LCPI1_0)
 	addi	a0, a0, %lo(.LCPI1_0)
-	vlse64.v	v24, (a0), zero
+	vlse64.v	v0, (a0), zero
 	addi	a0, sp, 16
-	vs8r.v	v24, (a0)                       # Unknown-size Folded Spill
+	vs8r.v	v0, (a0)                        # Unknown-size Folded Spill
 	fli.d	fa5, 1.0
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vl8r.v	v24, (a0)                       # Unknown-size Folded Reload
 	vmfgt.vf	v0, v24, fa5
-	addi	a0, sp, 16
 	vl8r.v	v24, (a0)                       # Unknown-size Folded Reload
 	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vv	v8, v16, v8
 	csrr	a0, vlenb
-	slli	a0, a0, 4
-	add	sp, sp, a0
+	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
