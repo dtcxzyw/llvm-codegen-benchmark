@@ -36,9 +36,8 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func00000000000001cc:                   # @func00000000000001cc
 	andi	a0, a0, 255
+	or	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
-	czero.eqz	a2, a0, a2
 	and	a0, a0, a1
-	or	a0, a0, a2
 	ret

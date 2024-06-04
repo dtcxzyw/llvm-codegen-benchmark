@@ -10,8 +10,8 @@ func0000000000000444:                   # @func0000000000000444
 func0000000000000095:                   # @func0000000000000095
 	andi	a1, a1, 255
 	andi	a0, a0, 255
-	slli	a2, a2, 48
-	srli	a2, a2, 56
+	srliw	a2, a2, 8
+	andi	a2, a2, 255
 	sltu	a0, a2, a0
 	sltu	a1, a1, a2
 	or	a0, a0, a1

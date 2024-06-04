@@ -5,8 +5,10 @@ func0000000000000005:                   # @func0000000000000005
 	vmsleu.vv	v0, v8, v9
 	ret
 func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vnsrl.wi	v9, v10, 1
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vsrl.vi	v10, v10, 1
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
 	vmsltu.vv	v8, v8, v9
 	vmand.mm	v0, v0, v8
 	ret

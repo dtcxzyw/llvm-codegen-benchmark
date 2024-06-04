@@ -10,7 +10,7 @@ func000000000000009c:                   # @func000000000000009c
 	ret
 func00000000000001ac:                   # @func00000000000001ac
 	sext.w	a0, a0
-	addi	a2, a2, 2
+	ori	a2, a2, 2
 	slt	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -26,7 +26,7 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func0000000000000161:                   # @func0000000000000161
 	sext.w	a0, a0
-	addi	a2, a2, 1
+	ori	a2, a2, 1
 	slt	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1

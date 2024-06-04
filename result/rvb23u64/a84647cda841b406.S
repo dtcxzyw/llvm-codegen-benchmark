@@ -1,6 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	sext.h	a1, a1
 	fcvt.l.d	a2, fa0, rtz
+	sext.h	a2, a2
 	slt	a1, a2, a1
 	xori	a1, a1, 1
 	and	a0, a0, a1

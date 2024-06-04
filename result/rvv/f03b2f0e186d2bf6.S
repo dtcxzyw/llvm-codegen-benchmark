@@ -24,10 +24,8 @@ func00000000000006a6:                   # @func00000000000006a6
 	li	a0, -1085
 	vmslt.vx	v13, v8, a0
 	vmsle.vi	v8, v10, 3
-	vmand.mm	v9, v13, v12
-	vmand.mm	v8, v13, v8
-	vmandn.mm	v8, v8, v12
-	vmor.mm	v0, v9, v8
+	vmor.mm	v8, v12, v8
+	vmand.mm	v0, v13, v8
 	ret
 func0000000000000116:                   # @func0000000000000116
 	vsetivli	zero, 8, e32, m2, ta, ma

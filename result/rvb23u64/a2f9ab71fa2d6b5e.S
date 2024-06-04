@@ -2,6 +2,7 @@ func0000000000000078:                   # @func0000000000000078
 	sext.w	a0, a0
 	sext.h	a1, a1
 	fcvt.l.d	a2, fa0, rtz
+	sext.h	a2, a2
 	slt	a1, a2, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1

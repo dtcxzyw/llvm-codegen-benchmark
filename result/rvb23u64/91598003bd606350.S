@@ -1,6 +1,6 @@
 func00000000000000d1:                   # @func00000000000000d1
 	li	a3, -1
-	sll	a2, a3, a2
+	sllw	a2, a3, a2
 	andn	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1

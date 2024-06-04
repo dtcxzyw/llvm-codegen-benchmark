@@ -8,8 +8,6 @@ func00000000000000c4:                   # @func00000000000000c4
 	vmsltu.vx	v10, v8, a0
 	bseti	a0, zero, 39
 	vmsne.vx	v11, v8, a0
-	vmand.mm	v8, v10, v11
-	vmand.mm	v9, v10, v0
-	vmandn.mm	v9, v9, v11
-	vmor.mm	v0, v8, v9
+	vmor.mm	v8, v11, v0
+	vmand.mm	v0, v10, v8
 	ret

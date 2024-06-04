@@ -14,8 +14,6 @@ func0000000000000118:                   # @func0000000000000118
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vi	v13, v8, 0
 	vmsgtu.vi	v8, v10, -3
-	vmandn.mm	v9, v13, v12
-	vmor.mm	v8, v13, v8
-	vmand.mm	v8, v8, v12
-	vmor.mm	v0, v8, v9
+	vmand.mm	v8, v12, v8
+	vmor.mm	v0, v13, v8
 	ret

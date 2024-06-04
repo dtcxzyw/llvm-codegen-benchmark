@@ -10,13 +10,13 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	andi	a1, a1, 255
 	andi	a3, a2, 1
 	li	a2, 86
 	bnez	a3, .LBB1_2
-	li	a2, 246
+	li	a2, -10
 .LBB1_2:                                # %entry
 	xor	a1, a1, a2
+	andi	a1, a1, 255
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

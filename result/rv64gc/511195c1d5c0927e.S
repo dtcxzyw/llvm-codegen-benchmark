@@ -30,13 +30,15 @@ func0000000000000046:                   # @func0000000000000046
 	or	a0, a0, a1
 	ret
 func0000000000000026:                   # @func0000000000000026
-	srai	a1, a1, 32
+	srli	a1, a1, 32
+	sext.w	a1, a1
 	slti	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	slli	a1, a1, 48
 	srli	a1, a1, 56
+	andi	a1, a1, 255
 	sltiu	a1, a1, 3
 	or	a0, a0, a1
 	ret

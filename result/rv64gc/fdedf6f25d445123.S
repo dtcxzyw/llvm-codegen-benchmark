@@ -2,6 +2,8 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 48
 	srai	a1, a1, 48
 	fcvt.l.s	a2, fa0, rtz
+	slli	a2, a2, 48
+	srai	a2, a2, 48
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -9,6 +11,8 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 48
 	srai	a1, a1, 48
 	fcvt.l.d	a2, fa0, rtz
+	slli	a2, a2, 48
+	srai	a2, a2, 48
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

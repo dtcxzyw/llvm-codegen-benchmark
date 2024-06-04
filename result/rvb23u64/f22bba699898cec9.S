@@ -3,8 +3,8 @@ func000000000000011c:                   # @func000000000000011c
 	andi	a2, a2, 1
 	li	a3, -14
 	czero.nez	a2, a3, a2
-	add	a1, a1, a2
-	addiw	a1, a1, 1
+	ori	a2, a2, 1
+	addw	a1, a1, a2
 	addi	a1, a1, -1
 	seqz	a1, a1
 	snez	a0, a0
