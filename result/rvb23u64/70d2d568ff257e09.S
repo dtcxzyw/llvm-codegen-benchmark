@@ -12,12 +12,10 @@ func00000000000000f4:                   # @func00000000000000f4
 	sext.h	a2, a2
 	neg	a3, a2
 	max	a2, a2, a3
-	zext.h	a2, a2
 	subw	a0, a0, a1
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
-	zext.h	a0, a0
 	sltu	a0, a0, a2
 	ret
 func00000000000005f4:                   # @func00000000000005f4

@@ -28,7 +28,6 @@ func0000000000000008:                   # @func0000000000000008
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
-	zext.h	a0, a0
 	sltiu	a0, a0, 10
 	xori	a0, a0, 1
 	addi	a0, a0, 1

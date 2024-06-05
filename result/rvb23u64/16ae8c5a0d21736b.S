@@ -2,7 +2,6 @@ func0000000000000010:                   # @func0000000000000010
 	sext.h	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
-	zext.h	a0, a0
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret
