@@ -3,7 +3,8 @@ func000000000000002b:                   # @func000000000000002b
 	addi	a0, a0, -1
 	srli	a0, a0, 1
 	addi	a0, a0, 1
-	andi	a0, a0, -2
+	bclri	a0, a0, 0
+	bclri	a0, a0, 63
 	ret
 func000000000000000b:                   # @func000000000000000b
 	zext.w	a0, a0

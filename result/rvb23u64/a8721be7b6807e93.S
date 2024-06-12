@@ -12,11 +12,10 @@ func000000000000000e:                   # @func000000000000000e
 	li	a1, 0
 	ret
 func0000000000000016:                   # @func0000000000000016
-	zext.w	a2, a0
-	add.uw	a0, a0, a1
-	sltu	a1, a0, a2
+	zext.w	a0, a0
+	and	a2, a0, a1
+	xor	a0, a0, a1
 	srli	a0, a0, 1
-	slli	a1, a1, 63
-	or	a0, a0, a1
+	add	a0, a0, a2
 	li	a1, 0
 	ret
