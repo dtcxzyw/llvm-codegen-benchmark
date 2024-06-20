@@ -21,9 +21,10 @@ func0000000000000019:                   # @func0000000000000019
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 255
 	or	a1, a1, a2
-	slli	a1, a1, 1
-	slli	a1, a1, 48
-	lui	a2, 224
-	mulhu	a1, a1, a2
+	slli	a1, a1, 49
+	srli	a1, a1, 48
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -67,10 +67,13 @@ func000000000000003c:                   # @func000000000000003c
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, 1
 	andi	a2, a2, 255
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	sub	a2, a2, a3
 	andi	a1, a1, 255
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

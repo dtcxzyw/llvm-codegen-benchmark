@@ -1,7 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, 56
-	li	a3, 56
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

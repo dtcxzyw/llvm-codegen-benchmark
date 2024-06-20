@@ -4,20 +4,22 @@ func0000000000000003:                   # @func0000000000000003
 	bnez	a3, .LBB0_2
 	li	a2, 24
 .LBB0_2:                                # %entry
-	li	a3, 120
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 7
+	sub	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a4, a2, 1
+	andi	a3, a2, 1
+	li	a2, 32
+	bnez	a3, .LBB1_2
 	li	a2, 28
-	li	a3, 32
-	bnez	a4, .LBB1_2
-	li	a3, 28
 .LBB1_2:                                # %entry
-	mul	a1, a1, a2
-	add	a0, a0, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 5
+	sub	a1, a1, a3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

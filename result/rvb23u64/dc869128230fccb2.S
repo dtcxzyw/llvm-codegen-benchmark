@@ -32,10 +32,12 @@ func0000000000000047:                   # @func0000000000000047
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a0
 	addi	a1, a1, -12
-	li	a2, 30
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 5
+	subw	a0, a0, a2
 	addiw	a0, a0, 30
+	li	a2, 30
+	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret

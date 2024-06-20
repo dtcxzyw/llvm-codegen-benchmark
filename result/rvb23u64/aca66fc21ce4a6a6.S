@@ -12,8 +12,9 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a2, -1911
 	mul	a1, a1, a0
 	srli	a1, a1, 17
-	li	a2, 60
-	mul	a1, a1, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 6
+	slli	a1, a1, 2
+	subw	a1, a1, a2
+	add	a0, a0, a1
 	zext.h	a0, a0
 	ret

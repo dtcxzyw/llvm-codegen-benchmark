@@ -6,10 +6,11 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a2, a1, 63
 	srai	a1, a1, 37
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a2, a2, a1
-	li	a3, 100
-	mul	a1, a1, a3
+	slli	a2, a1, 2
+	slli	a3, a1, 6
+	subw	a3, a3, a2
+	li	a2, 100
+	mul	a1, a1, a2
 	subw	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	ret

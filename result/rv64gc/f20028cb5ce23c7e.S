@@ -1,7 +1,8 @@
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a2, a2, 255
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
@@ -48,18 +49,19 @@ func00000000000000c8:                   # @func00000000000000c8
 	sltu	a0, a2, a0
 	ret
 func00000000000000c5:                   # @func00000000000000c5
-	li	a3, 3
-	slli	a3, a3, 35
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 27
+	sub	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	andi	a2, a2, 255
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret

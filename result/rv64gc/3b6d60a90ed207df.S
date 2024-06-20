@@ -10,8 +10,9 @@ func0000000000000034:                   # @func0000000000000034
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -109
-	li	a1, 28
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, -20
 	ret
 func000000000000003e:                   # @func000000000000003e
@@ -25,8 +26,9 @@ func000000000000003f:                   # @func000000000000003f
 	li	a2, 21
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 28
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	lui	a1, 1047951
 	addi	a1, a1, 1024
 	addw	a0, a0, a1

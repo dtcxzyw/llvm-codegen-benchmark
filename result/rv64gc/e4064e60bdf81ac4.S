@@ -8,8 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000031:                   # @func0000000000000031
 	bnez	a0, .LBB1_2
-	li	a0, 24
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	sub	a0, a1, a0
 .LBB1_2:                                # %entry
 	ret
 func0000000000000036:                   # @func0000000000000036

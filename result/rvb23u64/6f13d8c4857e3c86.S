@@ -8,8 +8,9 @@ func00000000000000cc:                   # @func00000000000000cc
 func00000000000001dd:                   # @func00000000000001dd
 	andi	a2, a2, 255
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a0, a0, a2

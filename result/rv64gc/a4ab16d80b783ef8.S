@@ -11,8 +11,9 @@ func0000000000000010:                   # @func0000000000000010
 	li	a2, 100
 	mul	a2, a1, a2
 	sub	a0, a0, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	lui	a2, 1
 	addiw	a2, a2, -496
 	mul	a1, a1, a2

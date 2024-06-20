@@ -4,10 +4,10 @@ func0000000000000003:                   # @func0000000000000003
 	bnez	a3, .LBB0_2
 	li	a2, 24
 .LBB0_2:                                # %entry
-	li	a3, 15
-	slli	a3, a3, 35
 	slli	a1, a1, 32
-	mulhu	a1, a1, a3
+	srli	a3, a1, 29
+	srli	a1, a1, 25
+	sub	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

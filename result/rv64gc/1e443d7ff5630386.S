@@ -2,8 +2,9 @@ func00000000000000a0:                   # @func00000000000000a0
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	li	a3, 60
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	sraiw	a0, a0, 31

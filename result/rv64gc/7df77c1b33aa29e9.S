@@ -1,7 +1,8 @@
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 1
-	li	a2, 30
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	addi	a0, a0, -1
 	li	a2, 15
 	slli	a2, a2, 33

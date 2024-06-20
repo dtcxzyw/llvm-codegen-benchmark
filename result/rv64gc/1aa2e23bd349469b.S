@@ -16,8 +16,9 @@ func000000000000000f:                   # @func000000000000000f
 	or	a0, a0, a2
 	ret
 func000000000000000e:                   # @func000000000000000e
+	slli	a2, a2, 13
+	neg	a2, a2
 	lui	a3, 6
-	mul	a2, a2, a3
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

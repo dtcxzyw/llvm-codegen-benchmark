@@ -36,15 +36,19 @@ func0000000000000036:                   # @func0000000000000036
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a2, a0
+	sext.w	a0, a0
+	bnez	a0, .LBB4_2
 	li	a0, 24
-	beqz	a2, .LBB4_2
-	mul	a0, a1, a0
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	sub	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a2, 56
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	srli	a0, a0, 61
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -65,8 +69,9 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, 16
 	ret
 .LBB7_2:
-	li	a0, 30
-	mulw	a0, a1, a0
+	slli	a0, a1, 1
+	slli	a1, a1, 5
+	subw	a0, a1, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a0

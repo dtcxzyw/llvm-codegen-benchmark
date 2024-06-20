@@ -7,8 +7,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	ret
 func0000000000000053:                   # @func0000000000000053
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	li	a1, 40
@@ -43,8 +44,9 @@ func0000000000000045:                   # @func0000000000000045
 	subw	a3, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a3
-	li	a1, 62
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 6
+	subw	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055
 	li	a3, 365

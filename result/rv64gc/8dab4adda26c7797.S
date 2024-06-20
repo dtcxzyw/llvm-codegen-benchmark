@@ -17,6 +17,7 @@ func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 8
-	li	a1, 384
-	mul	a0, a0, a1
+	slli	a1, a0, 7
+	slli	a0, a0, 9
+	sub	a0, a0, a1
 	ret

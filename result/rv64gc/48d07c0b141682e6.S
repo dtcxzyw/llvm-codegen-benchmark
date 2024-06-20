@@ -18,6 +18,7 @@ func0000000000000045:                   # @func0000000000000045
 	li	a0, 1008
 	ret
 .LBB2_2:
-	li	a0, 48
-	mul	a0, a1, a0
+	slli	a0, a1, 4
+	slli	a1, a1, 6
+	sub	a0, a1, a0
 	ret

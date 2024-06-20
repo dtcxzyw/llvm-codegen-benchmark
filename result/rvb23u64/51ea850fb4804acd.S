@@ -4,8 +4,9 @@ func0000000000000003:                   # @func0000000000000003
 	add.uw	a0, a1, a0
 	ret
 func000000000000001e:                   # @func000000000000001e
-	li	a3, 14
-	mulw	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 4
+	subw	a2, a2, a3
 	sh1add	a0, a2, a0
 	sext.w	a1, a1
 	sh1add	a0, a1, a0

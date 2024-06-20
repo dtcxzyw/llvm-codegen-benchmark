@@ -26,8 +26,9 @@ func000000000000005c:                   # @func000000000000005c
 	and	a0, a0, a1
 	ret
 func00000000000000fc:                   # @func00000000000000fc
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	subw	a2, a2, a3
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1

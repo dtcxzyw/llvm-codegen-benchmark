@@ -7,8 +7,9 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func000000000000003f:                   # @func000000000000003f
 	addiw	a0, a0, -1
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	sub	a0, a0, a1
 	addi	a0, a0, 6
 	ret
 func000000000000007f:                   # @func000000000000007f
@@ -42,9 +43,9 @@ func000000000000007d:                   # @func000000000000007d
 	ret
 func000000000000000d:                   # @func000000000000000d
 	addi	a0, a0, 1
-	li	a1, 3
-	slli	a1, a1, 34
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 28
+	sub	a0, a0, a1
 	addi	a0, a0, -12
 	ret

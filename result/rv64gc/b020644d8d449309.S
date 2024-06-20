@@ -10,6 +10,7 @@ func000000000000002f:                   # @func000000000000002f
 	mv	a2, a0
 .LBB0_2:                                # %entry
 	add	a1, a1, a2
-	li	a0, 12
-	mul	a0, a1, a0
+	slli	a0, a1, 2
+	slli	a1, a1, 4
+	sub	a0, a1, a0
 	ret

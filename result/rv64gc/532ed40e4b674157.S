@@ -40,8 +40,9 @@ func000000000000000f:                   # @func000000000000000f
 	li	a1, 4
 	bgeu	a1, a0, .LBB2_4
 .LBB2_2:                                # %entry
-	li	a1, 56
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 .LBB2_3:                                # %entry
 	mv	a0, a1
@@ -49,6 +50,7 @@ func000000000000000f:                   # @func000000000000000f
 	bltu	a1, a0, .LBB2_2
 .LBB2_4:                                # %entry
 	li	a0, 4
-	li	a1, 56
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret

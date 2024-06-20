@@ -8,8 +8,9 @@ func0000000000000023:                   # @func0000000000000023
 	slli	a1, a1, 24
 	addi	a1, a1, 15
 	and	a0, a0, a1
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	sub	a0, a0, a1
 	ret
 func000000000000003b:                   # @func000000000000003b
 	or	a0, a0, a1
@@ -21,8 +22,9 @@ func000000000000003b:                   # @func000000000000003b
 	slli	a1, a1, 24
 	addi	a1, a1, 15
 	and	a0, a0, a1
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	sub	a0, a0, a1
 	ret
 func0000000000000039:                   # @func0000000000000039
 	or	a0, a0, a1

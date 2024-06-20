@@ -12,29 +12,29 @@ func000000000000001c:                   # @func000000000000001c
 	sll	a0, a0, a2
 	ret
 func000000000000000b:                   # @func000000000000000b
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a1, a1, 1
+	negw	a1, a1
 	andi	a1, a1, 6
 	andi	a0, a0, 255
 	sll	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a1, a1, 1
+	negw	a1, a1
 	andi	a1, a1, 6
 	sext.w	a0, a0
 	sll	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a1, a1, 1
+	negw	a1, a1
 	andi	a1, a1, 6
 	andi	a0, a0, 255
 	sll	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a1, a1, 1
+	negw	a1, a1
 	andi	a1, a1, 6
 	sext.w	a0, a0
 	sll	a0, a0, a1

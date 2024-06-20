@@ -38,12 +38,13 @@ func0000000000000000:                   # @func0000000000000000
 	.quad	2310355422147575937             # 0x2010080402010081
 func000000000000007b:                   # @func000000000000007b
 	addi	a1, a1, 170
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
-	li	a3, 24
-	mul	a1, a1, a3
+	slli	a2, a1, 3
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	srli	a1, a1, 3
-	mulhu	a1, a1, a2
+	mulhu	a1, a1, a3
 	srli	a1, a1, 6
 	add	a0, a0, a1
 	ret

@@ -7,8 +7,9 @@ func000000000000003a:                   # @func000000000000003a
 	slt	a0, a1, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	addi	a1, a1, 4
 	sltu	a0, a1, a0
 	ret

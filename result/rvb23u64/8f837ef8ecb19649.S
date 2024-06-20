@@ -2,8 +2,9 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 1
 	li	a3, 24
 	czero.eqz	a2, a3, a2
-	li	a3, 120
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 7
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 24
@@ -12,8 +13,9 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.eqz	a2, a3, a2
-	li	a3, 28
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 5
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 28

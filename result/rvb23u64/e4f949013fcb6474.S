@@ -20,9 +20,10 @@ func0000000000000016:                   # @func0000000000000016
 	slli	a2, a2, 48
 	srai	a2, a2, 53
 	add	a2, a2, a3
-	li	a3, 60
-	mul	a2, a2, a3
-	sub	a1, a1, a2
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	sub	a2, a2, a3
+	add	a1, a1, a2
 	sext.h	a2, a1
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2

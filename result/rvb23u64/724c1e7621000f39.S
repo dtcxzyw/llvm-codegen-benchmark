@@ -2,8 +2,9 @@ func000000000000003f:                   # @func000000000000003f
 	sext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	li	a1, 60
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1
@@ -25,8 +26,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	lui	a1, 244
 	addiw	a1, a1, 576

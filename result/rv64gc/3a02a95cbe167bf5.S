@@ -21,8 +21,9 @@ func000000000000000c:                   # @func000000000000000c
 	mulhu	a1, a1, a2
 	srli	a1, a1, 35
 	add	a0, a0, a1
-	li	a1, 12
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	subw	a0, a0, a1
 	ret
 func000000000000002d:                   # @func000000000000002d
 	andi	a2, a2, 1

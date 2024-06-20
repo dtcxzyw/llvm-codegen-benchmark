@@ -1,6 +1,7 @@
 func00000000000000f8:                   # @func00000000000000f8
-	li	a2, 12
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	srliw	a1, a1, 3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 2

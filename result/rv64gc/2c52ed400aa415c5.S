@@ -35,8 +35,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
 	addiw	a1, a1, -1
-	li	a2, 48
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

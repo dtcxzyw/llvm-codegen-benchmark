@@ -13,10 +13,13 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 8
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	add	a1, a1, a2
-	mul	a0, a0, a3
+	slli	a2, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

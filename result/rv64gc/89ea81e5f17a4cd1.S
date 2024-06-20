@@ -15,9 +15,10 @@ func000000000000001c:                   # @func000000000000001c
 	srliw	a1, a0, 31
 	srli	a0, a0, 5
 	add	a0, a0, a1
-	li	a1, 60
-	mul	a0, a0, a1
-	subw	a3, a3, a0
-	andi	a0, a3, 255
+	slli	a1, a0, 6
+	slli	a0, a0, 2
+	subw	a0, a0, a1
+	add	a0, a0, a3
+	andi	a0, a0, 255
 	snez	a0, a0
 	ret

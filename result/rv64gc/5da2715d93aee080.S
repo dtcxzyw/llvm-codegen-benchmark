@@ -44,15 +44,14 @@ func0000000000000043:                   # @func0000000000000043
 	li	a3, 6
 	bne	a1, a3, .LBB3_2
 	li	a1, 1
-	li	a2, 48
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	ret
+	j	.LBB3_3
 .LBB3_2:
 	addi	a2, a2, 2
 	slli	a1, a2, 32
 	srli	a1, a1, 32
-	li	a2, 48
-	mul	a1, a1, a2
+.LBB3_3:                                # %entry
+	slli	a2, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret

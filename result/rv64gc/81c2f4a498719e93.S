@@ -11,8 +11,9 @@ func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a2
@@ -40,8 +41,9 @@ func000000000000007f:                   # @func000000000000007f
 	add	a1, a1, a2
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	li	a1, 60
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 func000000000000007c:                   # @func000000000000007c
 	add	a1, a1, a2

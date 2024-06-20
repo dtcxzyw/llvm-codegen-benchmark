@@ -8,9 +8,10 @@ func0000000000000022:                   # @func0000000000000022
 	addi	a0, a0, 16
 	ret
 func0000000000000023:                   # @func0000000000000023
-	li	a2, 48
-	mul	a2, a0, a2
-	add	a1, a1, a2
+	slli	a2, a0, 4
+	slli	a3, a0, 6
+	sub	a3, a3, a2
+	add	a1, a1, a3
 	addi	a1, a1, -48
 	seqz	a0, a0
 	addi	a0, a0, -1

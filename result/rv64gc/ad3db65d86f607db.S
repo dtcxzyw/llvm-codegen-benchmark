@@ -6,8 +6,9 @@ func0000000000000016:                   # @func0000000000000016
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sext.w	a1, a1
@@ -38,8 +39,9 @@ func0000000000000017:                   # @func0000000000000017
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	srli	a1, a1, 2
@@ -49,8 +51,9 @@ func000000000000001f:                   # @func000000000000001f
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
 	srli	a1, a1, 3
@@ -60,8 +63,9 @@ func0000000000000013:                   # @func0000000000000013
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 .LCPI6_0:
 	.quad	1749024623285053783             # 0x1845c8a0ce512957
@@ -98,8 +102,9 @@ func000000000000001c:                   # @func000000000000001c
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sraiw	a2, a1, 31
@@ -118,6 +123,7 @@ func0000000000000010:                   # @func0000000000000010
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret

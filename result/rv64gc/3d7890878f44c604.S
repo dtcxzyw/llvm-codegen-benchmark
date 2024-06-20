@@ -57,8 +57,9 @@ func0000000000000013:                   # @func0000000000000013
 	srli	a0, a0, 9
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	srli	a0, a0, 2
 	ret
 .LCPI9_0:

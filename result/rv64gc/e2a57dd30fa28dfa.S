@@ -19,8 +19,9 @@ func0000000000000016:                   # @func0000000000000016
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	neg	a1, a1
-	li	a2, 48
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -16
 	ret

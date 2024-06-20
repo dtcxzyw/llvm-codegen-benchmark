@@ -60,23 +60,31 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a2, 24
-	mul	a1, a1, a2
-	li	a2, 56
-	mul	a0, a0, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
-	li	a2, 24
-	mul	a1, a1, a2
-	mul	a0, a0, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
-	li	a2, 56
-	mul	a1, a1, a2
-	mul	a0, a0, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000006:                   # @func0000000000000006

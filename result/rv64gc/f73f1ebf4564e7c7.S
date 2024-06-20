@@ -14,8 +14,9 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000003c:                   # @func000000000000003c
 	mul	a1, a2, a1
 	mul	a0, a1, a0
-	li	a1, 6
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	mul	a1, a2, a1

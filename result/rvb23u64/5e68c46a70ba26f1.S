@@ -19,8 +19,9 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a0
 	ret
 func00000000000000f4:                   # @func00000000000000f4
-	li	a2, 28
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	slli	a0, a0, 3
 	sltu	a0, a0, a1
 	ret

@@ -6,8 +6,9 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000003d:                   # @func000000000000003d
 	andi	a1, a1, 255
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 120
 	ret
@@ -73,8 +74,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func000000000000007c:                   # @func000000000000007c
 	andi	a1, a1, 255
-	li	a2, 28
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 8
 	ret

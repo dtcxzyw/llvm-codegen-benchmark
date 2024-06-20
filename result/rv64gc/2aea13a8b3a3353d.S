@@ -45,14 +45,16 @@ func000000000000007a:                   # @func000000000000007a
 	slt	a0, a2, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
-	li	a3, 6
-	mulw	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	subw	a2, a2, a3
 	mulw	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
 func0000000000000079:                   # @func0000000000000079
-	li	a3, 12
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	subw	a2, a2, a3
 	mulw	a0, a0, a1
 	sltu	a0, a0, a2
 	xori	a0, a0, 1

@@ -18,8 +18,9 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 4
 	ret
 func0000000000000001:                   # @func0000000000000001
-	li	a2, 192
-	mul	a1, a1, a2
+	slli	a2, a1, 6
+	slli	a1, a1, 8
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	ori	a0, a0, 60
 	ret

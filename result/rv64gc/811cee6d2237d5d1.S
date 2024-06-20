@@ -31,9 +31,9 @@ func000000000000001d:                   # @func000000000000001d
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	slli	a0, a0, 32
-	li	a1, 3
-	slli	a1, a1, 34
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 28
+	sub	a0, a0, a1
 	addi	a0, a0, -12
 	ret
 .LCPI3_0:
@@ -46,8 +46,8 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a0, a0, 1
 	add	a0, a0, a1
 	slli	a0, a0, 32
-	li	a1, 3
-	slli	a1, a1, 34
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 28
+	sub	a0, a0, a1
 	addi	a0, a0, -12
 	ret

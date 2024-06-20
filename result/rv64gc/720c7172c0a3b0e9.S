@@ -9,10 +9,10 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a0
-	li	a3, 15
-	slli	a3, a3, 36
 	slli	a0, a0, 32
-	mulhu	a0, a0, a3
+	srli	a3, a0, 28
+	srli	a0, a0, 24
+	sub	a0, a0, a3
 	add	a0, a0, a1
 	sltiu	a1, a2, 33
 	neg	a1, a1

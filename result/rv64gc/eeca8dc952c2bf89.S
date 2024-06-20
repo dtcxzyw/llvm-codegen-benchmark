@@ -14,8 +14,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 .LBB1_2:
 	addi	a0, a0, 1024
-	li	a1, 24
-	mulw	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
 	sext.w	a1, a0

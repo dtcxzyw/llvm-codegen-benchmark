@@ -7,8 +7,9 @@ func0000000000000012:                   # @func0000000000000012
 	li	a0, -16
 	ret
 .LBB0_2:
-	li	a1, 56
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a1, a1
@@ -38,8 +39,9 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a1, a1
 	seqz	a1, a1
-	li	a2, 12
-	mulw	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 4
+	subw	a0, a0, a2
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
@@ -73,6 +75,7 @@ func0000000000000013:                   # @func0000000000000013
 	addiw	a0, a0, -540
 	ret
 .LBB7_2:
-	li	a1, 28
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	ret

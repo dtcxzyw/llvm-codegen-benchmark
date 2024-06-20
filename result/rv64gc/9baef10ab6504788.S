@@ -33,8 +33,9 @@ func000000000000001e:                   # @func000000000000001e
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 32
 	srli	a2, a2, 30
-	li	a3, 48
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

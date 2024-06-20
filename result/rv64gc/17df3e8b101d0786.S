@@ -50,8 +50,9 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000031:                   # @func0000000000000031
 	add	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 6
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	add	a1, a1, a2
@@ -100,12 +101,14 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mulw	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
 	add	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret

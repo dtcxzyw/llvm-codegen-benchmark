@@ -44,8 +44,9 @@ func00000000000003fd:                   # @func00000000000003fd
 	addw	a0, a0, a1
 	ret
 func00000000000003f5:                   # @func00000000000003f5
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	add	a1, a1, a2
 	li	a2, 75
 	mul	a1, a1, a2

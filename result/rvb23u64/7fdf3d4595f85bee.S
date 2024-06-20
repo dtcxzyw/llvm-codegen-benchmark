@@ -3,8 +3,9 @@ func0000000000000155:                   # @func0000000000000155
 	sh1add	a0, a2, a0
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
-	li	a1, 60
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a1
 	ret
 func0000000000000154:                   # @func0000000000000154
 	li	a3, -1000
@@ -39,8 +40,9 @@ func0000000000000110:                   # @func0000000000000110
 	mulw	a0, a0, a1
 	ret
 func0000000000000141:                   # @func0000000000000141
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	sub	a2, a2, a3
 	add	a0, a0, a2
 	lui	a2, 21
 	addiw	a2, a2, 384

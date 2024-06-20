@@ -2,8 +2,9 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 1
 	addi	a2, a2, -1
 	andi	a2, a2, -96
-	li	a3, 24
-	mul	a0, a0, a3
+	slli	a3, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

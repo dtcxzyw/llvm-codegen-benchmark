@@ -4,8 +4,9 @@ func0000000000000030:                   # @func0000000000000030
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	and	a1, a1, a2
-	li	a3, 6
-	mul	a1, a1, a3
+	slli	a3, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	slli	a0, a0, 8
 	slli	a2, a2, 8
@@ -17,8 +18,9 @@ func000000000000003e:                   # @func000000000000003e
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	and	a1, a1, a2
-	li	a3, 6
-	mul	a1, a1, a3
+	slli	a3, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	slli	a0, a0, 8
 	slli	a2, a2, 8

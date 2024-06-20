@@ -9,8 +9,9 @@ func0000000000000029:                   # @func0000000000000029
 	srli	a1, a0, 63
 	add	a0, a0, a1
 	srli	a0, a0, 1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a1, a0
@@ -27,8 +28,9 @@ func0000000000000009:                   # @func0000000000000009
 	srliw	a1, a1, 26
 	add	a0, a0, a1
 	srliw	a0, a0, 6
-	lui	a1, 6
-	mulw	a0, a0, a1
+	slli	a1, a0, 13
+	slli	a0, a0, 15
+	subw	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	srli	a1, a0, 63
@@ -38,6 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a1, a0, 63
 	add	a0, a0, a1
 	srli	a0, a0, 1
-	li	a1, 768
-	mul	a0, a0, a1
+	slli	a1, a0, 8
+	slli	a0, a0, 10
+	sub	a0, a0, a1
 	ret

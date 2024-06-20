@@ -94,8 +94,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
-	li	a1, 120
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 7
+	sub	a0, a0, a1
 	addi	a0, a0, 640
 	ret
 func0000000000000030:                   # @func0000000000000030

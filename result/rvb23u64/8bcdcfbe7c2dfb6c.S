@@ -12,8 +12,9 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
-	li	a3, 56
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 664
 	xor	a0, a0, a1

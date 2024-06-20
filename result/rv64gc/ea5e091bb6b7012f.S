@@ -29,8 +29,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, 7
 	andi	a1, a1, -8
-	li	a2, 24
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

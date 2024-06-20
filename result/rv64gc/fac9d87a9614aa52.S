@@ -13,17 +13,18 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	li	a2, 3
-	slli	a2, a2, 35
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 29
+	srli	a1, a1, 27
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func000000000000003a:                   # @func000000000000003a
 	sext.w	a0, a0
 	andi	a1, a1, 255
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
@@ -42,8 +43,9 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 255
-	li	a2, 12
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000076:                   # @func0000000000000076

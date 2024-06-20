@@ -1,32 +1,30 @@
 func0000000000000145:                   # @func0000000000000145
 	subw	a2, a2, a1
 	addi	a2, a2, 10
-	slli	a1, a2, 32
-	lui	a3, 699051
-	addi	a3, a3, -1365
-	slli	a3, a3, 32
-	mulhu	a1, a1, a3
+	slli	a2, a2, 32
+	lui	a1, 699051
+	addi	a1, a1, -1365
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 35
-	li	a3, 12
-	mul	a1, a1, a3
-	subw	a2, a2, a2
-	add	a0, a0, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 4
+	slli	a1, a1, 2
+	subw	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 func0000000000000100:                   # @func0000000000000100
 	subw	a2, a2, a1
 	addi	a2, a2, 12
-	slli	a1, a2, 32
-	lui	a3, 699051
-	addi	a3, a3, -1365
-	slli	a3, a3, 32
-	mulhu	a1, a1, a3
+	slli	a2, a2, 32
+	lui	a1, 699051
+	addi	a1, a1, -1365
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 35
-	li	a3, 12
-	mul	a1, a1, a3
-	subw	a2, a2, a2
-	add	a0, a0, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 4
+	slli	a1, a1, 2
+	subw	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	19342813113834067               # 0x44b82fa09b5a53

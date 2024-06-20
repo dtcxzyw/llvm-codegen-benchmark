@@ -44,8 +44,10 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000078:                   # @func0000000000000078
 	slli	a1, a1, 48
-	lui	a2, 96
-	mulhu	a1, a1, a2
+	srli	a1, a1, 48
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret

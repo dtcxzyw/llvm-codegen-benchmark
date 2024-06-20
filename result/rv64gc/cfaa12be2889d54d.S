@@ -9,8 +9,9 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	bgeu	a0, a2, .LBB0_4
 .LBB0_2:                                # %entry
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 .LBB0_3:                                # %entry
 	mv	a1, a2
@@ -19,8 +20,9 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	bltu	a0, a2, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a1, 12
-	mul	a0, a2, a1
+	slli	a1, a2, 2
+	slli	a0, a2, 4
+	sub	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
@@ -33,8 +35,9 @@ func000000000000005b:                   # @func000000000000005b
 	add	a0, a0, a1
 	bgeu	a0, a2, .LBB1_4
 .LBB1_2:                                # %entry
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 .LBB1_3:                                # %entry
 	mv	a1, a2
@@ -43,6 +46,7 @@ func000000000000005b:                   # @func000000000000005b
 	add	a0, a0, a1
 	bltu	a0, a2, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a1, 12
-	mul	a0, a2, a1
+	slli	a1, a2, 2
+	slli	a0, a2, 4
+	sub	a0, a0, a1
 	ret

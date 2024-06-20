@@ -14,20 +14,21 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB1_2
-	addi	a2, a2, 1
-	slli	a0, a2, 48
-	srai	a0, a0, 48
-	lui	a1, 1048569
-	addiw	a1, a1, -1911
-	mul	a0, a0, a1
-	srli	a0, a0, 16
-	add	a0, a0, a2
-	slli	a0, a0, 48
-	srli	a1, a0, 63
-	srai	a0, a0, 53
+	addi	a0, a2, 1
+	slli	a1, a0, 48
+	srai	a1, a1, 48
+	lui	a2, 1048569
+	addiw	a2, a2, -1911
+	mul	a1, a1, a2
+	srli	a1, a1, 16
+	add	a1, a1, a0
+	slli	a1, a1, 48
+	srli	a2, a1, 63
+	srai	a1, a1, 53
+	add	a1, a1, a2
+	slli	a2, a1, 6
+	slli	a1, a1, 2
+	sub	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 60
-	mul	a0, a0, a1
-	sub	a0, a2, a0
 .LBB1_2:                                # %entry
 	ret

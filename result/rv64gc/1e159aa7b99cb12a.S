@@ -68,8 +68,9 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	add	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	addiw	a0, a0, 72
 	ret
 func000000000000007f:                   # @func000000000000007f
@@ -77,7 +78,8 @@ func000000000000007f:                   # @func000000000000007f
 	srli	a1, a1, 48
 	add	a0, a0, a1
 	addi	a0, a0, 1572
-	li	a1, 28
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	addiw	a0, a0, 16
 	ret

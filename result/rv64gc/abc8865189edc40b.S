@@ -6,8 +6,9 @@ func000000000000001f:                   # @func000000000000001f
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -18,8 +19,9 @@ func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -30,8 +32,9 @@ func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func000000000000001d:                   # @func000000000000001d
@@ -42,8 +45,9 @@ func000000000000001d:                   # @func000000000000001d
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func0000000000000029:                   # @func0000000000000029
@@ -66,8 +70,9 @@ func0000000000000015:                   # @func0000000000000015
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -78,8 +83,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 3
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	addi	a0, a0, 12
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -90,7 +96,8 @@ func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret

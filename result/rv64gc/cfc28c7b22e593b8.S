@@ -22,10 +22,12 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a3, a2, 63
 	srai	a2, a2, 33
 	add	a2, a2, a3
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 2
+	subw	a2, a2, a3
+	add	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
 	subw	a1, a1, a2
-	li	a2, 30
-	mulw	a1, a1, a2
 	add	a0, a0, a1
 	ret

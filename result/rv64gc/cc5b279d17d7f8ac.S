@@ -19,9 +19,9 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	srai	a1, a1, 32
-	li	a2, 24
-	mul	a1, a1, a2
+	srai	a2, a1, 29
+	srai	a1, a1, 27
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 168
 	ret

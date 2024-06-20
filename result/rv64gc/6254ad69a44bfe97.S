@@ -1,9 +1,11 @@
 func0000000000000004:                   # @func0000000000000004
-	mv	a2, a0
+	bnez	a1, .LBB0_2
 	li	a0, 24
-	beqz	a1, .LBB0_2
-	mul	a0, a2, a0
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b
 	bgez	a1, .LBB1_2
@@ -11,8 +13,9 @@ func000000000000001b:                   # @func000000000000001b
 	srli	a0, a0, 1
 	ret
 .LBB1_2:
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	mv	a2, a0
@@ -39,8 +42,9 @@ func0000000000000028:                   # @func0000000000000028
 	li	a0, -12
 	ret
 .LBB4_2:
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
 	li	a2, 2

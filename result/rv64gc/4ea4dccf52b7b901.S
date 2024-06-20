@@ -27,15 +27,13 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, -8
-	srli	a0, a0, 3
-	li	a1, 6
-	mul	a0, a0, a1
+	srli	a1, a0, 2
+	sub	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, -8
-	srli	a0, a0, 3
-	li	a1, 6
-	mul	a0, a0, a1
+	srli	a1, a0, 2
+	sub	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	lui	a1, 256

@@ -5,10 +5,11 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 37
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	subw	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	add	a0, a0, a2
 	andi	a0, a0, 255
 	li	a1, 205
 	mul	a0, a0, a1

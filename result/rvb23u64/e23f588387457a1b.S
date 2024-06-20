@@ -35,9 +35,10 @@ func000000000000000a:                   # @func000000000000000a
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 5
 	add	a2, a2, a3
-	li	a3, 60
-	mul	a2, a2, a3
-	subw	a1, a1, a2
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	subw	a2, a2, a3
+	addw	a1, a1, a2
 	sgtz	a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

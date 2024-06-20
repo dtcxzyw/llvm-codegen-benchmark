@@ -1,8 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	sext.b	a1, a1
 	add	a0, a0, a1
-	li	a1, 60
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sext.b	a1, a1
@@ -14,8 +15,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000005:                   # @func0000000000000005
 	sext.b	a1, a1
 	add	a0, a0, a1
-	li	a1, 60
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.h	a1, a1

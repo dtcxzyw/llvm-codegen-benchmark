@@ -36,10 +36,10 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, 16
 	ret
 func000000000000000b:                   # @func000000000000000b
-	li	a3, 7
-	slli	a3, a3, 35
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 26
+	sub	a2, a2, a3
 	slli	a0, a0, 32
 	srli	a0, a0, 30
 	add	a0, a0, a1
@@ -48,10 +48,10 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
-	li	a3, 3
-	slli	a3, a3, 37
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 27
+	srli	a2, a2, 25
+	sub	a2, a2, a3
 	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2

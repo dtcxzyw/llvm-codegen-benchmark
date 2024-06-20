@@ -8,8 +8,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sub	a1, a1, a0
-	li	a0, 12
-	mul	a0, a1, a0
+	slli	a0, a1, 2
+	slli	a1, a1, 4
+	sub	a0, a1, a0
 	addi	a0, a0, 12
 	ret
 func0000000000000035:                   # @func0000000000000035
@@ -35,15 +36,17 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sub	a1, a1, a0
-	li	a0, 24
-	mul	a0, a1, a0
-	addi	a0, a0, 48
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a0
+	addi	a0, a1, 48
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sub	a1, a1, a0
-	li	a0, 24
-	mul	a0, a1, a0
-	addi	a0, a0, 48
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a0
+	addi	a0, a1, 48
 	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a0

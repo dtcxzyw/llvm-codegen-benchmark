@@ -40,14 +40,16 @@ func0000000000000058:                   # @func0000000000000058
 	sltu	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
-	li	a2, 56
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	addi	a1, a1, 56
 	sltu	a0, a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068
-	li	a2, 30
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	addi	a1, a1, -30
 	sltu	a0, a0, a1
 	ret

@@ -13,16 +13,18 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 72
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	sub	a2, a2, a3
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 72
 	ret
 func0000000000000007:                   # @func0000000000000007
-	li	a3, 120
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 7
+	sub	a2, a2, a3
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

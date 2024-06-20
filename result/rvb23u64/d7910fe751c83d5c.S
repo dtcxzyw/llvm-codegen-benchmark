@@ -1,20 +1,23 @@
 func00000000000000c6:                   # @func00000000000000c6
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
 	xori	a0, a0, 1
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -303,8 +306,9 @@ func00000000000000f6:                   # @func00000000000000f6
 	slti	a0, a0, 49
 	ret
 func00000000000000e1:                   # @func00000000000000e1
-	li	a2, 30
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 1

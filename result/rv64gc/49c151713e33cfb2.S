@@ -51,6 +51,7 @@ func000000000000030c:                   # @func000000000000030c
 	mulhu	a0, a0, a2
 	srli	a0, a0, 8
 	add	a0, a0, a1
-	li	a1, 384
-	mul	a0, a0, a1
+	slli	a1, a0, 7
+	slli	a0, a0, 9
+	sub	a0, a0, a1
 	ret

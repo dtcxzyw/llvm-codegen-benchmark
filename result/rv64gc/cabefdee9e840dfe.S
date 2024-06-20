@@ -46,7 +46,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a2, 8
 .LBB4_2:                                # %entry
 	add	a0, a0, a2
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	ret

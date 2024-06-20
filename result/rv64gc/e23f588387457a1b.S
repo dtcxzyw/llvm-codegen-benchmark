@@ -35,9 +35,10 @@ func000000000000000a:                   # @func000000000000000a
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 5
 	add	a2, a2, a3
-	li	a3, 60
-	mul	a2, a2, a3
-	subw	a1, a1, a2
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	subw	a2, a2, a3
+	addw	a1, a1, a2
 	bgtz	a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
@@ -50,9 +51,10 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a3, a2, 63
 	srai	a2, a2, 33
 	add	a2, a2, a3
-	li	a3, 12
-	mul	a2, a2, a3
-	subw	a1, a1, a2
+	slli	a3, a2, 4
+	slli	a2, a2, 2
+	subw	a2, a2, a3
+	addw	a1, a1, a2
 	li	a2, -13
 	bltu	a2, a1, .LBB3_2
 	mv	a0, a1

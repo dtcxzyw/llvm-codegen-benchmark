@@ -2,8 +2,9 @@ func0000000000000f06:                   # @func0000000000000f06
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	li	a3, 60
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
@@ -12,8 +13,9 @@ func0000000000000f08:                   # @func0000000000000f08
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	li	a3, 60
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 7
@@ -24,8 +26,9 @@ func0000000000000f0a:                   # @func0000000000000f0a
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	li	a3, 60
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
@@ -154,8 +157,9 @@ func000000000000044a:                   # @func000000000000044a
 	xori	a0, a0, 1
 	ret
 func0000000000000401:                   # @func0000000000000401
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	addw	a0, a0, a2
 	lui	a2, 1048555
 	addi	a2, a2, -384

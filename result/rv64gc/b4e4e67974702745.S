@@ -101,10 +101,10 @@ func0000000000000146:                   # @func0000000000000146
 	srli	a0, a0, 63
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	li	a2, 7
-	slli	a2, a2, 35
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 29
+	srli	a1, a1, 26
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

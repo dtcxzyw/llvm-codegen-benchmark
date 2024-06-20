@@ -1,14 +1,16 @@
 func0000000000000001:                   # @func0000000000000001
-	li	a2, 14
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	addi	a1, a1, 18
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -21

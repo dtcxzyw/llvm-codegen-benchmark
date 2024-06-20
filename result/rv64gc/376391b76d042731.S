@@ -8,8 +8,9 @@ func0000000000000016:                   # @func0000000000000016
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
 	sub	a1, a1, a2
@@ -21,8 +22,9 @@ func0000000000000017:                   # @func0000000000000017
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sub	a1, a1, a2
@@ -34,6 +36,7 @@ func0000000000000014:                   # @func0000000000000014
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret

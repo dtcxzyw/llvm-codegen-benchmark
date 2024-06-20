@@ -22,8 +22,9 @@ func0000000000000003:                   # @func0000000000000003
 	bnez	a3, .LBB2_2
 	li	a2, 32
 .LBB2_2:                                # %entry
-	li	a3, 192
-	mul	a1, a1, a3
+	slli	a3, a1, 6
+	slli	a1, a1, 8
+	sub	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

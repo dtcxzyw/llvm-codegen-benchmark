@@ -35,7 +35,8 @@ func0000000000000000:                   # @func0000000000000000
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
-	li	a2, 30
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 5
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret

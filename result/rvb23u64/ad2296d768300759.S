@@ -10,9 +10,10 @@ func0000000000000056:                   # @func0000000000000056
 	slli	a1, a1, 48
 	srai	a1, a1, 53
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
-	sub	a0, a0, a1
+	slli	a2, a1, 6
+	slli	a1, a1, 2
+	sub	a1, a1, a2
+	add	a0, a0, a1
 	sext.h	a1, a0
 	srli	a1, a1, 15
 	andi	a1, a1, 60

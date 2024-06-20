@@ -3,8 +3,9 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, 44
 	ret
 func0000000000000005:                   # @func0000000000000005
-	li	a2, 56
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 36
 	ret
@@ -14,8 +15,9 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 88
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a2, 224
-	mul	a0, a0, a2
+	slli	a2, a0, 5
+	slli	a0, a0, 8
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 136
 	ret

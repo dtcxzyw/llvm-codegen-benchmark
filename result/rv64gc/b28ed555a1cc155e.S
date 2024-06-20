@@ -29,8 +29,9 @@ func0000000000000151:                   # @func0000000000000151
 	ret
 func00000000000003d6:                   # @func00000000000003d6
 	sext.w	a3, a0
-	li	a0, 60
-	mul	a0, a2, a0
+	slli	a0, a2, 2
+	slli	a2, a2, 6
+	subw	a0, a2, a0
 	addw	a0, a0, a1
 	bgez	a3, .LBB3_2
 	negw	a0, a0

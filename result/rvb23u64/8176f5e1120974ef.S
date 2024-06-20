@@ -42,8 +42,9 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a2, 56
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	srli	a0, a0, 61
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -61,8 +62,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
-	li	a2, 30
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	sltiu	a0, a0, 15
 	czero.nez	a1, a1, a0
 	li	a2, 16

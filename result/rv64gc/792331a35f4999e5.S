@@ -48,8 +48,9 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -70,8 +71,9 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -83,13 +85,15 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func000000000000003a:                   # @func000000000000003a
 	sext.w	a0, a0
-	li	a2, 6
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	li	a2, 192
-	mul	a1, a1, a2
+	slli	a2, a1, 6
+	slli	a1, a1, 8
+	sub	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -103,8 +107,9 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a2, 48
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -177,15 +182,17 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a0, a0
-	li	a2, 12
-	mulw	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000017:                   # @func0000000000000017
 	sext.w	a0, a0
-	li	a2, 30
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret

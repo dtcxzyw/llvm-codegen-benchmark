@@ -26,6 +26,7 @@ func0000000000000029:                   # @func0000000000000029
 	lui	a0, 64
 .LBB2_2:                                # %entry
 	sext.w	a0, a0
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret

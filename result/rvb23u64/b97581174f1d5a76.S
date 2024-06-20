@@ -23,8 +23,9 @@ func000000000000003d:                   # @func000000000000003d
 	ret
 func000000000000007f:                   # @func000000000000007f
 	sext.w	a1, a1
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	lui	a1, 244
 	addiw	a1, a1, 576
@@ -84,8 +85,9 @@ func000000000000006a:                   # @func000000000000006a
 	ret
 func000000000000007c:                   # @func000000000000007c
 	andi	a1, a1, 255
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a2
 	add	a0, a0, a1
 	lui	a1, 244
 	addi	a1, a1, 576

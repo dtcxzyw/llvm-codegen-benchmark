@@ -8,20 +8,23 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, 1
 	mul	a0, a1, a0
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	addi	a1, a1, 1
 	mul	a0, a1, a0
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
 	addi	a1, a1, 1
 	mul	a0, a1, a0
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	addi	a1, a1, 1

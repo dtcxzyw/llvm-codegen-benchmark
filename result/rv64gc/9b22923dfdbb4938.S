@@ -8,8 +8,9 @@ func0000000000000034:                   # @func0000000000000034
 	subw	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	sub	a0, a1, a0
 	addi	a0, a0, 15
 	ret

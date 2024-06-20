@@ -47,8 +47,9 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a2, a2, 259
 	mul	a1, a1, a2
 	srli	a1, a1, 22
-	li	a2, 254
-	mul	a1, a1, a2
-	sub	a0, a0, a1
+	slli	a2, a1, 8
+	slli	a1, a1, 1
+	sub	a1, a1, a2
+	add	a0, a0, a1
 	slli	a0, a0, 8
 	ret

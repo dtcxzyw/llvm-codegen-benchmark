@@ -7,9 +7,10 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a2, a1, 63
 	srai	a1, a1, 34
 	add	a1, a1, a2
-	li	a2, 24
-	mul	a1, a1, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 5
+	slli	a1, a1, 3
+	subw	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 31

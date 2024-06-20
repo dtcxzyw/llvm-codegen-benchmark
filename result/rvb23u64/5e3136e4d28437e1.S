@@ -8,9 +8,9 @@ func0000000000000075:                   # @func0000000000000075
 	addw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
-	zext.w	a2, a2
-	li	a3, 448
-	mul	a2, a2, a3
+	slli.uw	a3, a2, 6
+	slli.uw	a2, a2, 9
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2047

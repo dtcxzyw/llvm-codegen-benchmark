@@ -6,9 +6,9 @@ func000000000000006c:                   # @func000000000000006c
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	li	a2, 15
-	slli	a2, a2, 34
-	mul	a1, a1, a2
+	slli	a2, a1, 34
+	slli	a1, a1, 38
+	sub	a1, a1, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

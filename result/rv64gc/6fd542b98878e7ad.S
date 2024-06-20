@@ -67,8 +67,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a0, a0
-	li	a2, 14
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	addiw	a1, a1, 68
 	slt	a0, a0, a1
 	xori	a0, a0, 1
@@ -118,8 +119,9 @@ func00000000000000fb:                   # @func00000000000000fb
 	xori	a0, a0, 1
 	ret
 func00000000000000a4:                   # @func00000000000000a4
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a2
 	addi	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
@@ -139,8 +141,9 @@ func00000000000000f9:                   # @func00000000000000f9
 	ret
 func000000000000007b:                   # @func000000000000007b
 	sext.w	a0, a0
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
 	addiw	a1, a1, 16
 	slt	a0, a0, a1
 	xori	a0, a0, 1

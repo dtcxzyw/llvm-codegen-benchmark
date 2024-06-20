@@ -22,8 +22,9 @@ func0000000000000003:                   # @func0000000000000003
 	mv	a0, a1
 	ret
 .LBB2_2:
-	li	a0, 30
-	mul	a0, a2, a0
+	slli	a0, a2, 1
+	slli	a2, a2, 5
+	sub	a0, a2, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 1

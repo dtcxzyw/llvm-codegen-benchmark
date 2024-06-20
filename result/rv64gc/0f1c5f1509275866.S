@@ -34,7 +34,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	beqz	a2, .LBB3_2
 	li	a0, 16
 .LBB3_2:                                # %entry
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -1,7 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 255
-	li	a0, 60
-	mul	a0, a2, a0
+	slli	a0, a2, 2
+	slli	a2, a2, 6
+	subw	a0, a2, a0
 	li	a2, 43
 	addw	a0, a0, a1
 	beq	a3, a2, .LBB0_2

@@ -16,8 +16,9 @@ func00000000000001bd:                   # @func00000000000001bd
 	ret
 func00000000000001ff:                   # @func00000000000001ff
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
 	lui	a1, 244
@@ -74,8 +75,9 @@ func00000000000001ea:                   # @func00000000000001ea
 	ret
 func00000000000001fc:                   # @func00000000000001fc
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	andi	a0, a0, 255
 	add	a0, a0, a1
 	lui	a1, 244

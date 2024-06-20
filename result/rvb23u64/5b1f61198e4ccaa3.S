@@ -12,10 +12,10 @@ func0000000000000002:                   # @func0000000000000002
 	mv	a1, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
-	sext.w	a0, a0
-	li	a1, -1
-	slli.uw	a1, a1, 12
-	mul	a0, a0, a1
+	sext.w	a1, a0
+	slli	a0, a0, 44
+	slli	a1, a1, 12
+	sub	a0, a0, a1
 	not	a0, a0
 	ret
 .LCPI3_0:

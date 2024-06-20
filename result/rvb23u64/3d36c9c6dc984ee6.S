@@ -24,6 +24,7 @@ func000000000000002f:                   # @func000000000000002f
 	andi	a1, a1, 255
 	zext.h	a0, a0
 	mul	a0, a0, a1
-	li	a1, 60
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret

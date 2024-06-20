@@ -22,7 +22,8 @@ func0000000000000018:                   # @func0000000000000018
 	or	a1, a1, a2
 	slli	a1, a1, 49
 	srli	a1, a1, 48
-	li	a2, 14
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret

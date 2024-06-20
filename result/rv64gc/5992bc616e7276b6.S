@@ -16,7 +16,8 @@ func0000000000000151:                   # @func0000000000000151
 	slli	a2, a1, 3
 	add	a0, a0, a1
 	subw	a0, a0, a2
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	subw	a0, a0, a1
 	addiw	a0, a0, 48
 	ret

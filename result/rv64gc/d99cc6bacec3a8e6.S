@@ -17,8 +17,9 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 32
 	ret
 func0000000000000007:                   # @func0000000000000007
-	li	a3, 12
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	subw	a2, a2, a3
 	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2

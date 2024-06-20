@@ -62,8 +62,9 @@ func00000000000003fe:                   # @func00000000000003fe
 func0000000000000375:                   # @func0000000000000375
 	li	a3, 196
 	mul	a2, a2, a3
-	li	a3, 28
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 5
+	subw	a1, a1, a3
 	add	a1, a1, a2
 	lui	a2, 7
 	addi	a2, a2, 1708
@@ -108,8 +109,9 @@ func0000000000000157:                   # @func0000000000000157
 func00000000000003f4:                   # @func00000000000003f4
 	li	a3, 588
 	mul	a2, a2, a3
-	li	a3, 28
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 5
+	subw	a1, a1, a3
 	add	a1, a1, a2
 	lui	a2, 1047932
 	addi	a2, a2, -1692

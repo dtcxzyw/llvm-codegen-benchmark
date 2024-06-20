@@ -6,8 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	sub	a1, a1, a0
 	add	a0, a1, a2
 	addi	a0, a0, -12

@@ -16,10 +16,13 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000001f:                   # @func000000000000001f
 	sext.w	a2, a2
-	li	a3, 56
-	mul	a2, a2, a3
-	add	a1, a1, a2
-	mul	a0, a0, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 6
+	sub	a2, a2, a3
+	slli	a3, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a3
 	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 112
 	ret

@@ -26,9 +26,10 @@ func0000000000000056:                   # @func0000000000000056
 	srai	a1, a1, 8
 	srli	a1, a1, 2
 	add	a1, a1, a2
-	li	a2, 24
-	mul	a1, a1, a2
-	sub	a0, a0, a1
+	slli	a2, a1, 5
+	slli	a1, a1, 3
+	sub	a1, a1, a2
+	add	a0, a0, a1
 	slli	a1, a0, 56
 	srai	a1, a1, 56
 	srli	a1, a1, 7

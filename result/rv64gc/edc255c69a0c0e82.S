@@ -14,8 +14,9 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func000000000000002d:                   # @func000000000000002d
 	andi	a1, a1, 255
-	li	a2, 12
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -568
 	ret
@@ -27,8 +28,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 48
-	lui	a2, 768
-	mulhu	a1, a1, a2
+	srli	a1, a1, 48
+	slli	a2, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
@@ -41,10 +44,10 @@ func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -1
-	li	a2, 3
-	slli	a2, a2, 34
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 30
+	srli	a1, a1, 28
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 10
 	ret
@@ -52,10 +55,10 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -1
-	li	a2, 3
-	slli	a2, a2, 34
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 30
+	srli	a1, a1, 28
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 10
 	ret

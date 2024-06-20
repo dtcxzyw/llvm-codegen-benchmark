@@ -26,12 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 33
 	ret
 func0000000000000001:                   # @func0000000000000001
-	li	a1, 1536
-	mul	a0, a0, a1
+	slli	a1, a0, 9
+	slli	a0, a0, 11
+	subw	a0, a0, a1
 	srliw	a0, a0, 1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	subw	a0, a0, a1
 	srliw	a0, a0, 3
 	ret

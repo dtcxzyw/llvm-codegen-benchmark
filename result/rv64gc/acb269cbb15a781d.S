@@ -14,8 +14,9 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000001c:                   # @func000000000000001c
 	or	a1, a1, a2
-	li	a2, 6
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

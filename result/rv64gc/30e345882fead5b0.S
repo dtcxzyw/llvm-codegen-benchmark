@@ -9,8 +9,9 @@ func0000000000000006:                   # @func0000000000000006
 	bltu	a1, a0, .LBB1_2
 	li	a0, 4
 .LBB1_2:                                # %entry
-	li	a1, 96
-	mul	a0, a0, a1
+	slli	a1, a0, 5
+	slli	a0, a0, 7
+	sub	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	seqz	a1, a0
@@ -41,8 +42,9 @@ func0000000000000007:                   # @func0000000000000007
 	bltu	a1, a0, .LBB5_2
 	li	a0, 2
 .LBB5_2:                                # %entry
-	li	a1, 48
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	seqz	a1, a0

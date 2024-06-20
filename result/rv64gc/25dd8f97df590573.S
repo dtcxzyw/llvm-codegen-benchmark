@@ -8,24 +8,27 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func000000000000004a:                   # @func000000000000004a
 	neg	a2, a2
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	sub	a2, a2, a3
 	sub	a1, a1, a0
 	add	a1, a1, a2
 	sgtz	a0, a1
 	ret
 func000000000000008a:                   # @func000000000000008a
 	neg	a2, a2
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	sub	a2, a2, a3
 	sub	a1, a1, a0
 	add	a1, a1, a2
 	sgtz	a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	neg	a2, a2
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	sub	a1, a1, a0
 	add	a1, a1, a2
 	sgtz	a0, a1

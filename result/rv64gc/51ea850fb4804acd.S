@@ -9,8 +9,9 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a2
 	ret
 func000000000000001e:                   # @func000000000000001e
-	li	a3, 14
-	mulw	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 4
+	subw	a2, a2, a3
 	slli	a2, a2, 1
 	sext.w	a1, a1
 	slli	a1, a1, 1
@@ -34,8 +35,9 @@ func000000000000003a:                   # @func000000000000003a
 	add	a0, a0, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
-	li	a3, 24
-	mulw	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	subw	a2, a2, a3
 	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2

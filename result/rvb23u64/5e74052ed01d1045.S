@@ -17,15 +17,19 @@ func000000000000003e:                   # @func000000000000003e
 	lui	a2, 1
 	addi	a2, a2, -496
 	mul	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func00000000000003dd:                   # @func00000000000003dd
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	sub	a2, a2, a3
 	add	a1, a1, a2
-	mul	a1, a1, a3
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a0, a0, a2

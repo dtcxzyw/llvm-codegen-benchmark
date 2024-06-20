@@ -124,10 +124,12 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func00000000000000ce:                   # @func00000000000000ce
 	add	a1, a1, a2
-	li	a2, 12
-	mul	a1, a1, a2
-	li	a2, 6
-	mul	a0, a0, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055
@@ -144,8 +146,9 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a1, a1, a2
 	li	a2, 11
 	mul	a1, a1, a2
-	li	a2, 6
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
@@ -153,14 +156,16 @@ func000000000000003e:                   # @func000000000000003e
 	lui	a2, 1
 	addi	a2, a2, -496
 	mul	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func00000000000000dd:                   # @func00000000000000dd
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a0, a0, a2

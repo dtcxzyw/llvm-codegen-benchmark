@@ -35,10 +35,10 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 72
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a3, 7
-	slli	a3, a3, 35
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 26
+	sub	a2, a2, a3
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

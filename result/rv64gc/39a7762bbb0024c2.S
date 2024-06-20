@@ -22,7 +22,8 @@ func0000000000000001:                   # @func0000000000000001
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	sub	a0, a0, a1
 	seqz	a0, a0
 	ret

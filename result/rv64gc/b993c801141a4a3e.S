@@ -38,8 +38,9 @@ func0000000000000155:                   # @func0000000000000155
 func0000000000000140:                   # @func0000000000000140
 	add	a1, a1, a2
 	addi	a1, a1, 232
-	li	a2, 28
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	lui	a2, 1048571
 	addiw	a2, a2, -1020
 	add	a0, a0, a2

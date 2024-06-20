@@ -27,17 +27,19 @@ func000000000000015a:                   # @func000000000000015a
 	.quad	230584300921369395              # 0x333333333333333
 func0000000000000148:                   # @func0000000000000148
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
-	li	a3, 12
-	mul	a1, a1, a3
+	slli	a2, a1, 2
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	add	a0, a0, a1
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	ret
 func0000000000000141:                   # @func0000000000000141
 	add	a1, a1, a2
-	li	a2, 12
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -52,8 +54,9 @@ func0000000000000046:                   # @func0000000000000046
 	ret
 func0000000000000156:                   # @func0000000000000156
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
@@ -66,16 +69,18 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func00000000000003fc:                   # @func00000000000003fc
 	add	a1, a1, a2
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 63

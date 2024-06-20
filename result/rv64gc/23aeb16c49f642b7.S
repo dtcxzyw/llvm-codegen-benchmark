@@ -2,16 +2,18 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a0, 1
 	li	a0, 24
 	bnez	a2, .LBB0_2
-	li	a0, 48
-	mul	a0, a1, a0
+	slli	a0, a1, 4
+	slli	a1, a1, 6
+	sub	a0, a1, a0
 .LBB0_2:                                # %entry
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a2, a0, 1
 	li	a0, 24
 	bnez	a2, .LBB1_2
-	li	a0, 48
-	mul	a0, a1, a0
+	slli	a0, a1, 4
+	slli	a1, a1, 6
+	sub	a0, a1, a0
 .LBB1_2:                                # %entry
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -48,7 +50,8 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a2, a0, 1
 	li	a0, 48
 	bnez	a2, .LBB6_2
-	li	a0, 96
-	mul	a0, a1, a0
+	slli	a0, a1, 5
+	slli	a1, a1, 7
+	sub	a0, a1, a0
 .LBB6_2:                                # %entry
 	ret

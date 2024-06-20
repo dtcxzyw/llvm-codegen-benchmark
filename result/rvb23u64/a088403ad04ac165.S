@@ -5,9 +5,10 @@ func0000000000000011:                   # @func0000000000000011
 	ld	a2, %lo(.LCPI0_0)(a2)
 	zext.h	a1, a1
 	mulhu	a2, a1, a2
-	li	a3, 60
-	mul	a2, a2, a3
-	sub	a1, a1, a2
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	sub	a2, a2, a3
+	add	a1, a1, a2
 	xori	a0, a0, 3
 	or	a0, a0, a1
 	seqz	a0, a0

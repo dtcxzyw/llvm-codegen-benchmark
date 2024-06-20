@@ -95,9 +95,9 @@ func0000000000000146:                   # @func0000000000000146
 	srli	a0, a0, 63
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	zext.w	a1, a1
-	li	a2, 56
-	mul	a1, a1, a2
+	slli.uw	a2, a1, 3
+	slli.uw	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

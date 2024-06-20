@@ -37,15 +37,17 @@ func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	li	a2, 24
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1521
 	ret
 func0000000000000001:                   # @func0000000000000001
-	li	a2, 56
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 72
 	ret

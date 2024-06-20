@@ -21,8 +21,9 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a1, a1, 35
 	andi	a0, a0, 1
 	add	a0, a0, a1
-	li	a1, 12
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	subw	a0, a0, a1
 	ret
 func000000000000004d:                   # @func000000000000004d
 	add	a1, a1, a2

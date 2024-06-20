@@ -2,8 +2,9 @@ func000000000000016f:                   # @func000000000000016f
 	sraiw	a2, a0, 31
 	andi	a2, a2, 60
 	add	a0, a0, a2
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000160:                   # @func0000000000000160

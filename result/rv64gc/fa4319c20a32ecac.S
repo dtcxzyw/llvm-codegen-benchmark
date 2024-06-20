@@ -2,9 +2,9 @@ func0000000000000005:                   # @func0000000000000005
 	li	a1, -1
 	slli	a1, a1, 32
 	add	a0, a0, a1
-	srai	a0, a0, 32
-	li	a1, 24
-	mul	a0, a0, a1
+	srai	a1, a0, 29
+	srai	a0, a0, 27
+	sub	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a1, 256

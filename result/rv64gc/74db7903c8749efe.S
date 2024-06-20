@@ -8,8 +8,9 @@ func0000000000000029:                   # @func0000000000000029
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 .LBB0_2:                                # %entry
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009

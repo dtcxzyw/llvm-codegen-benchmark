@@ -38,10 +38,11 @@ func0000000000000548:                   # @func0000000000000548
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
-	li	a3, 12
+	slli	a3, a1, 2
+	slli	a1, a1, 4
 	lui	a4, %hi(.LCPI2_0)
 	ld	a4, %lo(.LCPI2_0)(a4)
-	mul	a1, a1, a3
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	sltu	a0, a4, a0

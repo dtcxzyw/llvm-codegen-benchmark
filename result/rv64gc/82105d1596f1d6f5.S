@@ -4,8 +4,9 @@ func000000000000000f:                   # @func000000000000000f
 	bltu	a0, a1, .LBB0_2
 	li	a0, 240
 .LBB0_2:                                # %entry
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 func0000000000000000:                   # @func0000000000000000

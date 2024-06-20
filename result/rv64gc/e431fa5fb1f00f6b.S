@@ -23,8 +23,9 @@ func0000000000000036:                   # @func0000000000000036
 func0000000000000026:                   # @func0000000000000026
 	sext.w	a1, a1
 	bltz	a1, .LBB3_2
-	li	a0, 6
-	mul	a0, a2, a0
+	slli	a0, a2, 1
+	slli	a2, a2, 3
+	sub	a0, a2, a0
 .LBB3_2:                                # %entry
 	ret
 func0000000000000034:                   # @func0000000000000034

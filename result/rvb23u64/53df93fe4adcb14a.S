@@ -23,9 +23,10 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a3, a3, 48
 	srai	a3, a3, 53
 	add	a3, a3, a4
-	li	a4, 60
-	mul	a3, a3, a4
-	sub	a2, a2, a3
+	slli	a4, a3, 6
+	slli	a3, a3, 2
+	sub	a3, a3, a4
+	add	a2, a2, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

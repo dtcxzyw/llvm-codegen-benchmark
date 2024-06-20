@@ -18,6 +18,7 @@ func0000000000000307:                   # @func0000000000000307
 	sext.w	a1, a1
 	snez	a1, a1
 	addw	a0, a0, a1
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret

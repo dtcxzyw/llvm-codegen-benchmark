@@ -65,7 +65,8 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a2, 1048575
 	addi	a2, a2, 496
 	and	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret

@@ -33,9 +33,9 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, 16
 	ret
 func000000000000000b:                   # @func000000000000000b
-	zext.w	a2, a2
-	li	a3, 56
-	mul	a2, a2, a3
+	slli.uw	a3, a2, 3
+	slli.uw	a2, a2, 6
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	sh2add.uw	a0, a0, a1
 	addi	a0, a0, 32

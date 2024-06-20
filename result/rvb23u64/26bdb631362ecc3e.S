@@ -1,13 +1,15 @@
 func0000000000000306:                   # @func0000000000000306
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
 	ret
 func0000000000000308:                   # @func0000000000000308
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 7
@@ -15,8 +17,9 @@ func0000000000000308:                   # @func0000000000000308
 	xori	a0, a0, 1
 	ret
 func000000000000030a:                   # @func000000000000030a
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
@@ -69,16 +72,18 @@ func0000000000000106:                   # @func0000000000000106
 	srli	a0, a0, 63
 	ret
 func0000000000000151:                   # @func0000000000000151
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
 func000000000000015c:                   # @func000000000000015c
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	sltiu	a0, a0, -1

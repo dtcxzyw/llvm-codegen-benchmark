@@ -82,8 +82,9 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000001f:                   # @func000000000000001f
 	sext.w	a1, a1
 	add	a0, a0, a1
-	li	a1, 60
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	zext.h	a1, a1

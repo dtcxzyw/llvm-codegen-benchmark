@@ -21,10 +21,13 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a2, a2, 20
 	li	a3, 42
 	mul	a2, a2, a3
-	subw	a1, a1, a2
-	slli	a1, a1, 48
-	lui	a2, 4032
-	mulhu	a1, a1, a2
+	sub	a1, a1, a2
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 8
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 241
 	ret

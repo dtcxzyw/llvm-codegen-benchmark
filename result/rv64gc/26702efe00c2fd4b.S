@@ -51,15 +51,17 @@ func0000000000000076:                   # @func0000000000000076
 func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	li	a2, 12
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret
 func000000000000007f:                   # @func000000000000007f
 	sext.w	a1, a1
-	li	a2, 12
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

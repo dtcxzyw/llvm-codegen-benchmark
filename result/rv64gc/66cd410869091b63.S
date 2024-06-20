@@ -21,9 +21,10 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000b:                   # @func000000000000000b
 	andi	a3, a1, 1
 	sext.w	a2, a2
-	li	a1, 192
-	mul	a1, a2, a1
-	add	a0, a0, a1
+	slli	a1, a2, 6
+	slli	a2, a2, 8
+	sub	a2, a2, a1
+	add	a0, a0, a2
 	li	a1, 8
 	bnez	a3, .LBB2_2
 	li	a1, 32

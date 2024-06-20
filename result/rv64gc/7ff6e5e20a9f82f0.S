@@ -1,6 +1,7 @@
 func0000000000000190:                   # @func0000000000000190
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
@@ -39,8 +40,9 @@ func00000000000000b4:                   # @func00000000000000b4
 	slt	a0, a1, a0
 	ret
 func00000000000000b8:                   # @func00000000000000b8
-	li	a2, 60
-	mulw	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	negw	a0, a0
 	xor	a0, a0, a1
 	snez	a0, a0

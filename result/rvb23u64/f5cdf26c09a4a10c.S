@@ -6,8 +6,9 @@ func000000000000000b:                   # @func000000000000000b
 	czero.nez	a1, a2, a1
 	zext.w	a0, a0
 	or	a0, a0, a1
-	li	a1, 56
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 func0000000000000053:                   # @func0000000000000053
 	sext.h	a1, a1

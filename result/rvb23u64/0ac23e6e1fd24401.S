@@ -5,8 +5,9 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 556
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a3, 56
-	mul	a0, a0, a3
+	slli	a3, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a3
 	add	a0, a0, a2
 	sext.w	a1, a1
 	slli	a1, a1, 4

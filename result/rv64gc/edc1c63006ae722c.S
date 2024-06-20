@@ -86,15 +86,14 @@ func000000000000002b:                   # @func000000000000002b
 func0000000000000029:                   # @func0000000000000029
 	bltz	a2, .LBB9_2
 	li	a1, 12
-	li	a2, 48
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	ret
+	j	.LBB9_3
 .LBB9_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	li	a2, 48
-	mul	a1, a1, a2
+.LBB9_3:                                # %entry
+	slli	a2, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021

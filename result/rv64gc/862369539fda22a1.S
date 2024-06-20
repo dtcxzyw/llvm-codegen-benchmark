@@ -17,8 +17,9 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000d:                   # @func000000000000000d
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
-	li	a1, 60
-	mul	a1, a2, a1
+	slli	a1, a2, 2
+	slli	a2, a2, 6
+	sub	a1, a2, a1
 	add	a0, a0, a1
 	ret
 .LBB2_2:
@@ -37,8 +38,9 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 1
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	sub	a2, a2, a3
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	add	a0, a0, a1

@@ -30,6 +30,7 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 34
-	li	a1, 48
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret

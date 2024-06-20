@@ -33,10 +33,10 @@ func000000000000006f:                   # @func000000000000006f
 	addi	a0, a0, 2
 	ret
 func000000000000007f:                   # @func000000000000007f
-	li	a2, 3
-	slli	a2, a2, 33
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 31
+	srli	a1, a1, 29
+	sub	a1, a1, a2
 	andi	a0, a0, 255
 	add	a0, a0, a1
 	addi	a0, a0, 12

@@ -5,9 +5,9 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 4
 .LBB0_2:                                # %entry
 	slli	a0, a0, 32
-	li	a1, 3
-	slli	a1, a1, 35
-	mulhu	a0, a0, a1
+	srli	a1, a0, 29
+	srli	a0, a0, 27
+	sub	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a0, a0

@@ -21,6 +21,7 @@ func0000000000000059:                   # @func0000000000000059
 	bgez	a1, .LBB2_2
 	neg	a0, a0
 .LBB2_2:                                # %entry
-	li	a1, 60
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a1
 	ret

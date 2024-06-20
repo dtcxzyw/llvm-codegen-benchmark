@@ -1,6 +1,7 @@
 func0000000000000019:                   # @func0000000000000019
-	li	a3, 56
-	mul	a0, a0, a3
+	slli	a3, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a3
 	add	a0, a0, a2
 	sext.w	a1, a1
 	slli	a1, a1, 4

@@ -21,8 +21,9 @@ func000000000000001e:                   # @func000000000000001e
 	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	li	a2, 14
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	addiw	a1, a1, 2
 	or	a0, a0, a1
 	ret

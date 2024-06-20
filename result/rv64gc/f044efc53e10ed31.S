@@ -10,8 +10,8 @@ func0000000000000006:                   # @func0000000000000006
 	srlw	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a1, a1, 1
+	negw	a1, a1
 	andi	a1, a1, 6
 	li	a2, 8
 	subw	a2, a2, a1

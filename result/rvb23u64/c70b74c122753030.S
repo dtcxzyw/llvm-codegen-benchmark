@@ -15,6 +15,7 @@ func000000000000003f:                   # @func000000000000003f
 	sext.w	a1, a1
 	sext.w	a0, a0
 	mul	a0, a0, a1
-	li	a1, 28
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret

@@ -24,8 +24,9 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a3, a1, 1
-	li	a1, 24
-	mul	a1, a2, a1
+	slli	a1, a2, 3
+	slli	a2, a2, 5
+	sub	a1, a2, a1
 	li	a2, 8
 	bnez	a3, .LBB2_2
 	li	a2, 16

@@ -10,9 +10,10 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a1, a1, 547
 	mul	a1, a1, a0
 	srli	a1, a1, 35
-	li	a2, 60
-	mul	a1, a1, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 6
+	slli	a1, a1, 2
+	subw	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 48

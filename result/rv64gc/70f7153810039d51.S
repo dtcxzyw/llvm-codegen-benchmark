@@ -15,8 +15,9 @@ func0000000000000002:                   # @func0000000000000002
 	beq	a2, a3, .LBB2_2
 	mv	a1, a2
 .LBB2_2:                                # %entry
-	li	a2, 12
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011

@@ -21,6 +21,7 @@ func0000000000000030:                   # @func0000000000000030
 	add	a1, a1, a3
 	add	a1, a1, a2
 	and	a0, a0, a1
-	li	a1, 48
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret

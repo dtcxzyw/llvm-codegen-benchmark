@@ -27,8 +27,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func000000000000003d:                   # @func000000000000003d
 	andi	a3, a0, 1
-	li	a0, 60
-	mul	a0, a2, a0
+	slli	a0, a2, 2
+	slli	a2, a2, 6
+	subw	a0, a2, a0
 	addw	a0, a0, a1
 	beqz	a3, .LBB3_2
 	negw	a0, a0

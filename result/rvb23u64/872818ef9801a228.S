@@ -12,8 +12,9 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, 8
 	ret
 func000000000000001c:                   # @func000000000000001c
-	li	a3, 14
-	mulw	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 4
+	subw	a2, a2, a3
 	sh1add	a1, a2, a1
 	sh1add	a0, a0, a1
 	addi	a0, a0, -4

@@ -13,9 +13,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sub	a0, a0, a1
-	srai	a0, a0, 5
-	li	a1, 28
-	mul	a0, a0, a1
+	srai	a1, a0, 3
+	sub	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sub	a0, a0, a1

@@ -53,9 +53,10 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000001c:                   # @func000000000000001c
 	srliw	a1, a1, 4
-	li	a2, 14
-	mul	a1, a1, a2
-	addw	a0, a0, a1
+	slli	a1, a1, 4
+	srli	a2, a1, 3
+	add	a0, a0, a1
+	subw	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	srliw	a1, a1, 17

@@ -1,8 +1,7 @@
 func0000000000000015:                   # @func0000000000000015
 	sub	a1, a1, a0
-	srai	a1, a1, 5
-	li	a0, 28
-	mul	a0, a0, a1
+	srai	a0, a1, 3
+	sub	a0, a1, a0
 	addi	a0, a0, 28
 	ret
 func0000000000000010:                   # @func0000000000000010

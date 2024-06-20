@@ -37,7 +37,8 @@ func0000000000000029:                   # @func0000000000000029
 	bgeu	a2, a3, .LBB4_2
 	li	a1, 11
 .LBB4_2:                                # %entry
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret

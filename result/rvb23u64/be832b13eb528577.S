@@ -18,8 +18,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	li	a2, 30
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	addiw	a1, a1, -210
 	li	a2, -180
 	czero.eqz	a2, a2, a0

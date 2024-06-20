@@ -1,17 +1,18 @@
 func0000000000000003:                   # @func0000000000000003
 	not	a1, a1
 	andi	a1, a1, 1
-	li	a2, 96
-	mul	a1, a1, a2
+	slli	a2, a1, 5
+	slli	a1, a1, 7
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 80
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, -1
-	li	a2, 3
-	slli	a2, a2, 36
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 26
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
@@ -45,10 +46,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, -1
-	li	a2, 3
-	slli	a2, a2, 37
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 27
+	srli	a1, a1, 25
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

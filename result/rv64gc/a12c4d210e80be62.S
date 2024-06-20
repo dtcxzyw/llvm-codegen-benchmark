@@ -1,6 +1,7 @@
 func00000000000000c4:                   # @func00000000000000c4
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 4
 	sltu	a0, a0, a1
@@ -14,8 +15,9 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	li	a3, 12
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 28
 	xor	a0, a0, a1
@@ -28,8 +30,9 @@ func0000000000000048:                   # @func0000000000000048
 	sltu	a0, a1, a0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	li	a3, 6
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 4
 	xor	a0, a0, a1

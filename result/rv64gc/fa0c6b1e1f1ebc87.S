@@ -15,9 +15,8 @@ func0000000000000002:                   # @func0000000000000002
 	addw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	srli	a0, a0, 3
-	li	a1, 6
-	mul	a0, a0, a1
+	srli	a1, a0, 2
+	sub	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 21

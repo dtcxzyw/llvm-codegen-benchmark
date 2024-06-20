@@ -8,8 +8,9 @@ func0000000000000017:                   # @func0000000000000017
 func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	addi	a0, a0, 75
-	li	a1, 56
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	addi	a0, a0, 15
 	lui	a1, 131072
 	addiw	a1, a1, -1

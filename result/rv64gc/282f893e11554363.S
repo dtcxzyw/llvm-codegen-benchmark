@@ -23,16 +23,18 @@ func00000000000000f5:                   # @func00000000000000f5
 	ret
 func0000000000000175:                   # @func0000000000000175
 	sext.w	a1, a1
-	li	a2, 12
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	li	a2, 36
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 160
 	ret
 func0000000000000195:                   # @func0000000000000195
-	li	a2, 24
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	li	a2, -24

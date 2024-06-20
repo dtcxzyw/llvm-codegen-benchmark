@@ -24,11 +24,12 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000005d:                   # @func000000000000005d
 	subw	a1, a1, a2
-	li	a2, 28
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	lui	a1, 7
-	addi	a1, a1, 1708
+	slli	a2, a1, 2
+	slli	a1, a1, 5
+	subw	a1, a1, a2
+	lui	a2, 7
+	addi	a2, a2, 1708
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000033:                   # @func0000000000000033

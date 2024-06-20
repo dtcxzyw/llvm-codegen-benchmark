@@ -2,16 +2,18 @@ func000000000000003f:                   # @func000000000000003f
 	lui	a2, 1
 	addi	a2, a2, -496
 	mul	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	lui	a2, 1
 	addiw	a2, a2, -496
 	mul	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LCPI2_0:
@@ -101,10 +103,12 @@ func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	li	a2, 6
-	mul	a1, a1, a2
-	li	a2, 12
-	mul	a0, a0, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	sub	a1, a1, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
@@ -144,16 +148,18 @@ func000000000000003e:                   # @func000000000000003e
 	lui	a2, 1
 	addi	a2, a2, -496
 	mul	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
-	li	a2, 60
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017

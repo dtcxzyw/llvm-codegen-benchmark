@@ -1,11 +1,11 @@
 func000000000000003f:                   # @func000000000000003f
-	li	a2, 255
-	slli	a2, a2, 32
-	slli	a1, a1, 56
-	mulhu	a1, a1, a2
-	lui	a2, 65535
-	slli	a2, a2, 12
-	slli	a0, a0, 56
-	mulhu	a0, a0, a2
+	andi	a1, a1, 255
+	slli	a2, a1, 24
+	slli	a1, a1, 32
+	sub	a1, a1, a2
+	andi	a0, a0, 255
+	slli	a2, a0, 16
+	slli	a0, a0, 32
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret

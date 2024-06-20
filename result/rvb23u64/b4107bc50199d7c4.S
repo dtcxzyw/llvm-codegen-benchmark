@@ -1,10 +1,10 @@
 func0000000000000007:                   # @func0000000000000007
 	li	a2, 1
 	subw	a2, a2, a1
-	zext.w	a2, a2
-	li	a1, 56
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	slli.uw	a1, a2, 3
+	slli.uw	a2, a2, 6
+	sub	a2, a2, a1
+	add	a0, a0, a2
 	addi	a0, a0, 216
 	ret
 func0000000000000005:                   # @func0000000000000005

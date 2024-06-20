@@ -99,10 +99,10 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -272
 	ret
 func0000000000000003:                   # @func0000000000000003
-	li	a3, 3
-	slli	a3, a3, 35
 	slli	a0, a0, 32
-	mulhu	a0, a0, a3
+	srli	a3, a0, 29
+	srli	a0, a0, 27
+	sub	a0, a0, a3
 	li	a3, 43
 	slli	a3, a3, 35
 	slli	a2, a2, 32

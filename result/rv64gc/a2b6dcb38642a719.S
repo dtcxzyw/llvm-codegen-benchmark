@@ -33,8 +33,9 @@ func000000000000006f:                   # @func000000000000006f
 	ret
 func00000000000000fa:                   # @func00000000000000fa
 	sext.w	a2, a2
-	li	a3, 30
-	mul	a1, a1, a3
+	slli	a3, a1, 1
+	slli	a1, a1, 5
+	sub	a1, a1, a3
 	sext.w	a0, a0
 	add	a0, a0, a2
 	add	a0, a0, a1

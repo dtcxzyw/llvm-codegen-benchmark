@@ -6,8 +6,9 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	add	a0, a0, a1
-	li	a1, 60
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1

@@ -1,6 +1,7 @@
 func000000000000001e:                   # @func000000000000001e
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
 	addi	a1, a1, 13
 	srlw	a0, a0, a1
 	ret

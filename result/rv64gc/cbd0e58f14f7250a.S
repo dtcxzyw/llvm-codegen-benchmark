@@ -28,7 +28,8 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, -180
 	ret
 .LBB2_2:
-	li	a1, 30
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	addiw	a0, a0, -210
 	ret

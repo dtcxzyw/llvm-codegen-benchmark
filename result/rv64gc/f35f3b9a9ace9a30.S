@@ -20,15 +20,17 @@ func0000000000000013:                   # @func0000000000000013
 	addi	a0, a0, 19
 	ret
 func000000000000000b:                   # @func000000000000000b
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	addi	a0, a0, 3
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a1, 6
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	addi	a0, a0, 6
 	ret
 func000000000000001f:                   # @func000000000000001f

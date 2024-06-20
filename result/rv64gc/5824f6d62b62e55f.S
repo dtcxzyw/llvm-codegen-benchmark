@@ -5,6 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	mv	a1, a2
 .LBB0_2:                                # %entry
 	sub	a0, a0, a1
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret

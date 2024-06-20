@@ -25,9 +25,10 @@ func000000000000003a:                   # @func000000000000003a
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 5
 	add	a1, a1, a2
-	li	a2, 60
-	mul	a1, a1, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 6
+	slli	a1, a1, 2
+	subw	a1, a1, a2
+	addw	a0, a0, a1
 	sgtz	a1, a0
 	negw	a1, a1
 	andi	a1, a1, -60
@@ -41,9 +42,10 @@ func0000000000000018:                   # @func0000000000000018
 	srli	a2, a1, 63
 	srai	a1, a1, 33
 	add	a1, a1, a2
-	li	a2, 12
-	mul	a1, a1, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 4
+	slli	a1, a1, 2
+	subw	a1, a1, a2
+	addw	a0, a0, a1
 	sltiu	a1, a0, -12
 	addi	a1, a1, -1
 	andi	a1, a1, 12

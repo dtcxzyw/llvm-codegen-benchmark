@@ -1,13 +1,15 @@
 func000000000000000d:                   # @func000000000000000d
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
 	li	a2, -1
 	sllw	a1, a2, a1
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
 	lui	a2, 64
 	sllw	a1, a2, a1
 	and	a0, a0, a1

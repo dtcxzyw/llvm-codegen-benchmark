@@ -14,8 +14,9 @@ func000000000000005b:                   # @func000000000000005b
 	add	a1, a1, a2
 	bgeu	a1, a0, .LBB0_4
 .LBB0_2:                                # %entry
-	li	a0, 56
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 6
+	sub	a0, a1, a0
 	ret
 .LBB0_3:                                # %entry
 	mv	a2, a0
@@ -25,6 +26,7 @@ func000000000000005b:                   # @func000000000000005b
 	bltu	a1, a0, .LBB0_2
 .LBB0_4:                                # %entry
 	mv	a1, a0
-	li	a0, 56
-	mul	a0, a1, a0
+	slli	a0, a0, 3
+	slli	a1, a1, 6
+	sub	a0, a1, a0
 	ret

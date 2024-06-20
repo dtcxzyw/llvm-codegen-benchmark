@@ -1,10 +1,10 @@
 func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 1
 	addi	a0, a0, 4
-	li	a1, 3
-	slli	a1, a1, 36
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 28
+	srli	a0, a0, 26
+	sub	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	7784369436827535058             # 0x6c07a2c26a8346d2

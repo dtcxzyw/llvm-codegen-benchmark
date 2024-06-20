@@ -11,13 +11,14 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a3, a2, 63
 	srai	a2, a2, 53
 	add	a2, a2, a3
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	sub	a2, a2, a3
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	andi	a0, a0, 60
 	add	a0, a0, a1
-	sub	a0, a0, a2
+	add	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a1, 1

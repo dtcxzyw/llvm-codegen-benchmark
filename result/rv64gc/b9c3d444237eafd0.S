@@ -1,15 +1,13 @@
 func0000000000000015:                   # @func0000000000000015
 	sub	a1, a1, a0
-	srai	a1, a1, 5
-	li	a0, 28
-	mul	a0, a1, a0
+	srai	a0, a1, 3
+	sub	a0, a1, a0
 	addi	a0, a0, 28
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sub	a1, a1, a0
-	srli	a1, a1, 3
-	li	a0, 24
-	mul	a0, a1, a0
+	slli	a0, a1, 2
+	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func000000000000001f:                   # @func000000000000001f
@@ -21,8 +19,8 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sub	a1, a1, a0
-	srai	a1, a1, 3
-	li	a0, 12
-	mul	a0, a1, a0
+	srai	a0, a1, 1
+	slli	a1, a1, 1
+	sub	a0, a1, a0
 	addi	a0, a0, -4
 	ret

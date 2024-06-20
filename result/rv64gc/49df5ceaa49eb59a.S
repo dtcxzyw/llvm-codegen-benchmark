@@ -6,8 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	add	a2, a2, a3
 	mulhu	a2, a0, a2
 	srli	a2, a2, 5
-	li	a3, 48
-	mul	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 6
+	sub	a2, a2, a3
 	sub	a0, a2, a0
 	add	a0, a0, a1
 	ret

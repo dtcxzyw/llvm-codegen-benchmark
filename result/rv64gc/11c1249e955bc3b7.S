@@ -34,8 +34,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 50
-	lui	a1, 24
-	mulhu	a0, a0, a1
+	srli	a0, a0, 50
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	addi	a0, a0, -1260
 	slli	a1, a0, 32
 	lui	a2, 149797

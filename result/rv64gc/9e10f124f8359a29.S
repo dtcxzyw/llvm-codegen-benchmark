@@ -6,6 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 .LBB0_2:
 	add	a1, a1, a2
-	li	a0, 30
-	mulw	a0, a1, a0
+	slli	a0, a1, 1
+	slli	a1, a1, 5
+	subw	a0, a1, a0
 	ret

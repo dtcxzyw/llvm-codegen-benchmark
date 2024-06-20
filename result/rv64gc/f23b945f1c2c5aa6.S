@@ -28,8 +28,9 @@ func0000000000000195:                   # @func0000000000000195
 	andi	a0, a0, 255
 	add	a0, a0, a1
 	addi	a0, a0, -161
-	li	a1, 28
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	ret
 func00000000000000c3:                   # @func00000000000000c3
 	li	a2, 10

@@ -76,15 +76,17 @@ func00000000000000a4:                   # @func00000000000000a4
 func0000000000000054:                   # @func0000000000000054
 	sext.w	a0, a0
 	add	a1, a1, a2
-	li	a2, 6
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
 	sext.w	a0, a0
 	add	a1, a1, a2
-	li	a2, 12
-	mulw	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

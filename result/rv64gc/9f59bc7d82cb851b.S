@@ -26,8 +26,9 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	ret
 func000000000000002a:                   # @func000000000000002a
-	li	a1, 96
-	mul	a0, a0, a1
+	slli	a1, a0, 5
+	slli	a0, a0, 7
+	sub	a0, a0, a1
 	sgtz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -36,8 +37,9 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a0, a0
 	ret
 func0000000000000026:                   # @func0000000000000026
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	srli	a0, a0, 63
 	ret
 func000000000000000c:                   # @func000000000000000c

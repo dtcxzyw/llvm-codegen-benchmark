@@ -6,8 +6,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 127
-	li	a2, 56
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
@@ -19,10 +20,10 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 20
 	ret
 func0000000000000002:                   # @func0000000000000002
-	li	a2, 3
-	slli	a2, a2, 35
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 29
+	srli	a1, a1, 27
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 22
 	ret

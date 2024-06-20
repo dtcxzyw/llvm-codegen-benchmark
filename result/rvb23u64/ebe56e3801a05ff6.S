@@ -6,8 +6,9 @@ func00000000000000ef:                   # @func00000000000000ef
 	add	a0, a0, a3
 	ret
 func0000000000000075:                   # @func0000000000000075
-	li	a3, 60
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -21,8 +22,9 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	li	a3, 60
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	subw	a2, a2, a3
 	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -10,8 +10,9 @@ func0000000000000050:                   # @func0000000000000050
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a1, a1, a3
-	li	a3, 60
-	mul	a0, a0, a3
+	slli	a3, a0, 2
+	slli	a0, a0, 6
+	subw	a0, a0, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

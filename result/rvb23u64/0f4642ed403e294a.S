@@ -24,9 +24,9 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a1, a1, 40
 	srli	a1, a1, 40
 	addi	a1, a1, -1
-	zext.w	a1, a1
-	li	a2, 28
-	mul	a1, a1, a2
+	slli.uw	a2, a1, 2
+	slli.uw	a1, a1, 5
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

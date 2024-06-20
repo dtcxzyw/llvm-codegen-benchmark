@@ -5,20 +5,16 @@ func0000000000000005:                   # @func0000000000000005
 	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 1
 	andi	a1, a1, 1
-	bgeu	a2, a3, .LBB0_3
-	beqz	a1, .LBB0_4
-.LBB0_2:                                # %entry
-	li	a1, 12
-	mul	a1, a3, a1
-	add	a0, a0, a1
-	ret
-.LBB0_3:                                # %entry
+	bltu	a2, a3, .LBB0_2
 	mv	a2, a3
-	bnez	a1, .LBB0_2
+.LBB0_2:                                # %entry
+	bnez	a1, .LBB0_4
+	mv	a3, a2
 .LBB0_4:                                # %entry
-	li	a1, 12
-	mul	a1, a2, a1
-	add	a0, a0, a1
+	slli	a1, a3, 2
+	slli	a3, a3, 4
+	sub	a3, a3, a1
+	add	a0, a0, a3
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a3, a2, 1

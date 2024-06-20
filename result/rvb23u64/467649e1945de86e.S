@@ -219,15 +219,17 @@ func00000000000001f6:                   # @func00000000000001f6
 	ret
 func00000000000001e6:                   # @func00000000000001e6
 	sext.w	a1, a1
-	li	a2, 30
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	slti	a0, a0, 56
 	ret
 func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a1, a1
-	li	a2, 30
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 1

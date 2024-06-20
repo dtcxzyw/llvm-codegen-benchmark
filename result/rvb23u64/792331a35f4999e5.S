@@ -181,8 +181,9 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000017:                   # @func0000000000000017
 	sext.w	a0, a0
-	li	a2, 30
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	subw	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret

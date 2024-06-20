@@ -5,9 +5,10 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 37
-	li	a3, 60
-	mul	a2, a2, a3
-	subw	a1, a1, a2
+	slli	a3, a2, 6
+	slli	a2, a2, 2
+	subw	a2, a2, a3
+	addw	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

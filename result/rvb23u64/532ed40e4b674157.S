@@ -19,6 +19,7 @@ func000000000000000f:                   # @func000000000000000f
 	maxu	a0, a0, a1
 	li	a1, 4
 	maxu	a0, a0, a1
-	li	a1, 56
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret

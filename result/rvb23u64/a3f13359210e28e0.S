@@ -33,9 +33,10 @@ func0000000000000007:                   # @func0000000000000007
 	mul	a0, a0, a1
 	srli	a1, a0, 1
 	mulhu	a1, a1, a2
-	srli	a1, a1, 1
-	li	a2, 14
-	mul	a1, a1, a2
+	andi	a2, a1, -2
+	slli	a1, a1, 3
+	andi	a1, a1, -16
+	add	a0, a0, a2
 	sub	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003

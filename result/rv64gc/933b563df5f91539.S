@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a3, 3
-	slli	a3, a3, 45
-	mul	a2, a2, a3
+	slli	a3, a2, 45
+	slli	a2, a2, 47
+	sub	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

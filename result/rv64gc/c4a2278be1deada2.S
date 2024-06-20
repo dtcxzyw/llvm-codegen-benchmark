@@ -21,8 +21,9 @@ func0000000000000000:                   # @func0000000000000000
 	srliw	a3, a3, 29
 	add	a2, a2, a3
 	sraiw	a2, a2, 3
-	li	a3, 56
-	mul	a0, a0, a3
+	slli	a3, a0, 3
+	slli	a0, a0, 6
+	subw	a0, a0, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 112

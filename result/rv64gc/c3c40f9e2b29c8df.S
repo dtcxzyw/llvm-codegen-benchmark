@@ -1,8 +1,8 @@
 func000000000000000d:                   # @func000000000000000d
-	li	a1, 3
-	slli	a1, a1, 34
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 28
+	sub	a0, a0, a1
 	addi	a0, a0, -12
 	ret
 .LCPI1_0:
@@ -20,10 +20,10 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a1, 3
-	slli	a1, a1, 35
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 29
+	srli	a0, a0, 27
+	sub	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 func000000000000001f:                   # @func000000000000001f

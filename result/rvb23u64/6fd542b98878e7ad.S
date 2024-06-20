@@ -61,8 +61,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a0, a0
-	li	a2, 14
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	subw	a1, a1, a2
 	addiw	a1, a1, 68
 	slt	a0, a0, a1
 	xori	a0, a0, 1

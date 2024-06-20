@@ -25,8 +25,9 @@ func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, 699051
@@ -35,6 +36,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 3
-	li	a1, 12
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	sub	a0, a0, a1
 	ret

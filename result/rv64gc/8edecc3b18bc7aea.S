@@ -1,7 +1,8 @@
 func0000000000000025:                   # @func0000000000000025
 	slli	a1, a1, 5
-	li	a2, 24
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -51,8 +52,9 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 4
-	li	a2, 24
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

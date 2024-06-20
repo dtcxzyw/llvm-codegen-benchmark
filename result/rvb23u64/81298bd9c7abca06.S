@@ -18,8 +18,9 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func000000000000001a:                   # @func000000000000001a
 	addw	a1, a1, a2
-	li	a2, 30
-	mulw	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 5
+	subw	a0, a0, a2
 	slt	a0, a1, a0
 	ret
 func0000000000000056:                   # @func0000000000000056

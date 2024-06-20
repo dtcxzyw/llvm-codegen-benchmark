@@ -56,9 +56,10 @@ func000000000000003d:                   # @func000000000000003d
 func0000000000000027:                   # @func0000000000000027
 	addi	a1, a1, 12
 	srliw	a1, a1, 3
-	li	a2, 56
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	slli	a1, a1, 3
+	slli	a2, a1, 3
+	sub	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
 func0000000000000034:                   # @func0000000000000034

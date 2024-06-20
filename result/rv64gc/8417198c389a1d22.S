@@ -5,8 +5,9 @@ func000000000000000d:                   # @func000000000000000d
 	sllw	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	lui	a1, 64
 	sllw	a0, a1, a0
 	ret
@@ -24,14 +25,16 @@ func000000000000000f:                   # @func000000000000000f
 	sllw	a0, a1, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	li	a1, 63
 	sllw	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	li	a1, 14
 	sllw	a0, a1, a0
 	ret
@@ -42,8 +45,9 @@ func0000000000000002:                   # @func0000000000000002
 	sllw	a0, a1, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
-	li	a1, 6
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	subw	a0, a0, a1
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret

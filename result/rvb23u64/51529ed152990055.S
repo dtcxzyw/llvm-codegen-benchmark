@@ -79,8 +79,9 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a0, a0, 832
 	ret
 func0000000000000075:                   # @func0000000000000075
-	li	a3, 28
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
+	subw	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	lui	a1, 7
@@ -244,8 +245,9 @@ func0000000000000041:                   # @func0000000000000041
 	add	a0, a0, a1
 	ret
 func00000000000000e0:                   # @func00000000000000e0
-	li	a3, 448
-	mul	a2, a2, a3
+	slli	a3, a2, 6
+	slli	a2, a2, 9
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	lui	a1, 8
@@ -253,8 +255,9 @@ func00000000000000e0:                   # @func00000000000000e0
 	add	a0, a0, a1
 	ret
 func00000000000000f4:                   # @func00000000000000f4
-	li	a3, 28
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
+	subw	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	lui	a1, 1047932

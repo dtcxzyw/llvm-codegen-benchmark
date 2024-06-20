@@ -21,8 +21,9 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	zext.h	a1, a1
-	li	a2, 14
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 6
 	ret

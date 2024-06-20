@@ -1,7 +1,8 @@
 func00000000000000c5:                   # @func00000000000000c5
 	zext.h	a1, a1
-	li	a3, 60
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 6
+	sub	a2, a2, a3
 	lui	a3, 16
 	addiw	a3, a3, -1
 	xor	a1, a1, a3

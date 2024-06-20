@@ -25,7 +25,8 @@ func000000000000002f:                   # @func000000000000002f
 	andi	a1, a1, 255
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a2, 60
-	mul	a1, a1, a2
 	mul	a0, a1, a0
+	slli	a1, a0, 2
+	slli	a0, a0, 6
+	sub	a0, a0, a1
 	ret
