@@ -31,8 +31,9 @@ func0000000000000141:                   # @func0000000000000141
 	seqz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
-	li	a3, 24
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	sub	a2, a2, a3
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	addi	a0, a0, 24

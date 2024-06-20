@@ -24,10 +24,11 @@ func000000000000001e:                   # @func000000000000001e
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
-	li	a1, 24
+	slli	a1, a0, 3
+	slli	a0, a0, 5
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	mul	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 365
 	srli	a0, a0, 1
 	mulhu	a0, a0, a2

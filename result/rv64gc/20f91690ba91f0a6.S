@@ -22,8 +22,9 @@ func00000000000000e3:                   # @func00000000000000e3
 	ret
 func00000000000000c3:                   # @func00000000000000c3
 	sext.w	a1, a1
-	li	a3, 12
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	subw	a2, a2, a3
 	sltu	a1, a2, a1
 	addw	a0, a0, a1
 	ret

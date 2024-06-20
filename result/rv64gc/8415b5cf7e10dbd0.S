@@ -19,8 +19,8 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	li	a2, 6
-	mul	a1, a1, a2
+	slli	a1, a1, 1
+	negw	a1, a1
 	andi	a1, a1, 6
 	seqz	a1, a1
 	and	a0, a0, a1

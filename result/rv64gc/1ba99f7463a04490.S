@@ -66,6 +66,7 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000001f:                   # @func000000000000001f
 	srliw	a1, a1, 2
 	add	a0, a0, a1
-	li	a1, 24
-	mulw	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	subw	a0, a0, a1
 	ret

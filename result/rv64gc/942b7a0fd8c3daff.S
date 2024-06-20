@@ -34,7 +34,9 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a2, a0, 1
 	li	a0, 30
 	bnez	a2, .LBB3_2
-	mul	a0, a1, a0
+	slli	a0, a1, 1
+	slli	a1, a1, 5
+	subw	a0, a1, a0
 	addiw	a0, a0, 30
 .LBB3_2:                                # %entry
 	ret

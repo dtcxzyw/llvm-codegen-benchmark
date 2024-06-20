@@ -44,8 +44,9 @@ func00000000000000ff:                   # @func00000000000000ff
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	andi	a1, a1, 255
-	li	a2, 60
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 6
+	subw	a1, a1, a2
 	andi	a0, a0, 255
 	add	a0, a0, a1
 	lui	a1, 14648

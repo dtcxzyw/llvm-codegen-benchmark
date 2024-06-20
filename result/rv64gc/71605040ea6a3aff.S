@@ -26,8 +26,10 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a0, 63
 	srai	a0, a0, 9
 	add	a1, a1, a0
+	slli	a0, a1, 3
+	slli	a2, a1, 5
+	sub	a0, a2, a0
 	li	a2, 24
-	mul	a0, a1, a2
 	mulhu	a1, a1, a2
 	snez	a1, a1
 	ret
