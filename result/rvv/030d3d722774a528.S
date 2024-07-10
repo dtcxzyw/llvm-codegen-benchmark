@@ -43,11 +43,11 @@ func0000000000000028:                   # @func0000000000000028
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func00000000000000c2:                   # @func00000000000000c2
 	lui	a0, %hi(.LCPI6_0)
-	addi	a0, a0, %lo(.LCPI6_0)
+	flw	fa5, %lo(.LCPI6_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v16, (a0), zero
-	fmv.w.x	fa5, zero
-	vmfge.vf	v0, v12, fa5
+	vmfge.vf	v0, v12, fa4
+	vfmv.v.f	v16, fa5
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v0, v8, v12
 	ret
@@ -113,13 +113,13 @@ func000000000000004a:                   # @func000000000000004a
 .LCPI14_0:
 	.word	0x3c23d70a                      # float 0.00999999977
 func0000000000000052:                   # @func0000000000000052
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI14_0)
-	addi	a0, a0, %lo(.LCPI14_0)
+	flw	fa5, %lo(.LCPI14_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v16, (a0), zero
-	vmfle.vf	v20, v12, fa5
-	vmnot.m	v0, v20
+	vmfle.vf	v16, v12, fa4
+	vmnot.m	v0, v16
+	vfmv.v.f	v16, fa5
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v0, v8, v12
 	ret

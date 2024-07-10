@@ -27,11 +27,11 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	addi	a0, a0, %lo(.LCPI4_0)
-	vlse32.v	v12, (a0), zero
-	vmfle.vf	v16, v8, fa5
-	vmnot.m	v0, v16
+	flw	fa5, %lo(.LCPI4_0)(a0)
+	fmv.w.x	fa4, zero
+	vmfle.vf	v12, v8, fa4
+	vmnot.m	v0, v12
+	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret

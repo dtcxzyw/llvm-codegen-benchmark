@@ -22,9 +22,9 @@ func0000000000000008:                   # @func0000000000000008
 	.quad	0xbfd3ee99a62ed352              # double -0.31143799999999999
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI2_0)
-	addi	a0, a0, %lo(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v24, (a0), zero
+	vfmv.v.f	v24, fa5
 	vfmacc.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
 	vmflt.vf	v0, v24, fa5

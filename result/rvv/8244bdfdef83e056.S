@@ -2,12 +2,13 @@
 	.quad	0xc033800000000000              # double -19.5
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vlse64.v	v12, (a0), zero
 	vfcvt.f.x.v	v8, v8
-	fli.s	fa5, 0.5
-	vfmul.vf	v8, v8, fa5
-	vfwadd.wv	v12, v12, v8
-	vmv4r.v	v8, v12
+	fli.s	fa4, 0.5
+	vfmul.vf	v12, v8, fa4
+	vsetvli	zero, zero, e64, m4, ta, ma
+	vfmv.v.f	v8, fa5
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vfwadd.wv	v8, v8, v12
 	ret

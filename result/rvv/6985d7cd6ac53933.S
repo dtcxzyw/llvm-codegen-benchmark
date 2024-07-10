@@ -6,16 +6,15 @@
 	.word	0x3caa6a57                      # float 0.0208026599
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v20, (a0), zero
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	flw	fa5, %lo(.LCPI0_1)(a0)
+	flw	fa4, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
-	addi	a0, a0, %lo(.LCPI0_2)
-	vlse32.v	v16, (a0), zero
-	vfdiv.vv	v8, v8, v12
-	vfmacc.vf	v20, fa5, v8
-	vfmacc.vv	v16, v8, v20
-	vmv.v.v	v8, v16
+	flw	fa3, %lo(.LCPI0_2)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfdiv.vv	v12, v8, v12
+	vfmv.v.f	v16, fa5
+	vfmacc.vf	v16, fa4, v12
+	vfmv.v.f	v8, fa3
+	vfmacc.vv	v8, v12, v16
 	ret

@@ -17,11 +17,11 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_1:
 	.quad	2635249153387078802             # 0x2492492492492492
 func0000000000000051:                   # @func0000000000000051
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
-	vlse64.v	v12, (a0), zero
+	vmv.v.x	v12, a0
 	lui	a0, 748983
 	addiw	a0, a0, -585
 	slli	a1, a0, 33

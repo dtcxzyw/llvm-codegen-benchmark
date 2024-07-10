@@ -30,9 +30,9 @@ func0000000000000008:                   # @func0000000000000008
 	.quad	0x4056800000000000              # double 90
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI4_0)
-	addi	a0, a0, %lo(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v24, (a0), zero
+	vfmv.v.f	v24, fa5
 	vmerge.vvm	v16, v24, v16, v0
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24
@@ -41,9 +41,9 @@ func0000000000000005:                   # @func0000000000000005
 	.quad	0x4056800000000000              # double 90
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, %hi(.LCPI5_0)
-	addi	a0, a0, %lo(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v24, (a0), zero
+	vfmv.v.f	v24, fa5
 	vmerge.vvm	v16, v24, v16, v0
 	vmfle.vv	v0, v8, v16
 	ret

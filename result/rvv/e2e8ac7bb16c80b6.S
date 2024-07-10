@@ -12,10 +12,10 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	lui	a2, %hi(.LCPI0_1)
-	addi	a2, a2, %lo(.LCPI0_1)
-	vlse64.v	v12, (a2), zero
+	ld	a2, %lo(.LCPI0_1)(a2)
 	vsra.vi	v10, v10, 3
 	vmul.vx	v10, v10, a0
 	vmsltu.vx	v0, v10, a1
-	vmerge.vvm	v8, v12, v8, v0
+	vmv.v.x	v10, a2
+	vmerge.vvm	v8, v10, v8, v0
 	ret

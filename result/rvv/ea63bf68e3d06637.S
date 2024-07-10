@@ -14,11 +14,11 @@ func0000000000000002:                   # @func0000000000000002
 	.quad	0x4059000000000000              # double 100
 func0000000000000007:                   # @func0000000000000007
 	lui	a0, %hi(.LCPI2_0)
-	addi	a0, a0, %lo(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v24, (a0), zero
-	fmv.d.x	fa5, zero
-	vmfne.vf	v0, v16, fa5
+	vmfne.vf	v0, v16, fa4
+	vfmv.v.f	v24, fa5
 	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vv	v8, v16, v8
 	ret

@@ -14,14 +14,13 @@ func0000000000000008:                   # @func0000000000000008
 	.word	0x3e5cd035                      # float 0.215637997
 func0000000000000004:                   # @func0000000000000004
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v16, (a0), zero
+	vmflt.vf	v0, v12, fa5
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a0)
-	vmflt.vf	v0, v12, fa5
-	vmerge.vvm	v8, v12, v8, v0
-	vfmacc.vf	v16, fa4, v8
-	vmv.v.v	v8, v16
+	vmerge.vvm	v12, v12, v8, v0
+	vfmv.v.f	v8, fa5
+	vfmacc.vf	v8, fa4, v12
 	ret

@@ -45,12 +45,12 @@ func000000000000000a:                   # @func000000000000000a
 	.quad	0x3fd3333333333333              # double 0.29999999999999999
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI5_0)
-	addi	a0, a0, %lo(.LCPI5_0)
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vlse64.v	v12, (a0), zero
+	fld	fa5, %lo(.LCPI5_0)(a0)
 	li	a0, 40
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
-	fli.d	fa5, 1.0
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmerge.vfm	v8, v12, fa5, v0
+	vfmv.v.f	v8, fa5
+	fli.d	fa5, 1.0
+	vfmerge.vfm	v8, v8, fa5, v0
 	ret

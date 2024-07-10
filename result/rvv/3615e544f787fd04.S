@@ -5,14 +5,14 @@
 func0000000000000012:                   # @func0000000000000012
 	bseti	a0, zero, 11
 	lui	a1, %hi(.LCPI0_0)
-	addi	a1, a1, %lo(.LCPI0_0)
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vlse64.v	v16, (a1), zero
+	fld	fa5, %lo(.LCPI0_0)(a1)
 	lui	a1, %hi(.LCPI0_1)
-	fld	fa5, %lo(.LCPI0_1)(a1)
+	fld	fa4, %lo(.LCPI0_1)(a1)
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmerge.vfm	v12, v16, fa5, v0
+	vfmv.v.f	v12, fa5
+	vfmerge.vfm	v12, v12, fa4, v0
 	vmflt.vv	v0, v8, v12
 	ret

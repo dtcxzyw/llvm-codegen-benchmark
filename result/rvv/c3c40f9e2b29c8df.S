@@ -12,14 +12,13 @@ func000000000000000d:                   # @func000000000000000d
 	.quad	6364136223846793005             # 0x5851f42d4c957f2d
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	lui	a1, %hi(.LCPI1_1)
+	ld	a1, %lo(.LCPI1_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
-	lui	a0, %hi(.LCPI1_1)
-	ld	a0, %lo(.LCPI1_1)(a0)
-	vzext.vf2	v12, v8
-	vmacc.vx	v10, a0, v12
-	vmv.v.v	v8, v10
+	vzext.vf2	v10, v8
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a1, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -66,14 +65,13 @@ func0000000000000015:                   # @func0000000000000015
 	.quad	6364136223846793005             # 0x5851f42d4c957f2d
 func0000000000000010:                   # @func0000000000000010
 	lui	a0, %hi(.LCPI6_0)
-	addi	a0, a0, %lo(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
+	lui	a1, %hi(.LCPI6_1)
+	ld	a1, %lo(.LCPI6_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
-	lui	a0, %hi(.LCPI6_1)
-	ld	a0, %lo(.LCPI6_1)(a0)
-	vzext.vf2	v12, v8
-	vmacc.vx	v10, a0, v12
-	vmv.v.v	v8, v10
+	vzext.vf2	v10, v8
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a1, v10
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, 48

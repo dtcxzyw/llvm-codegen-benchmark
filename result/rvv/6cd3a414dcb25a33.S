@@ -25,13 +25,13 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 286124
 	fmv.w.x	fa5, a0
 	lui	a0, %hi(.LCPI1_1)
-	addi	a0, a0, %lo(.LCPI1_1)
-	vlse32.v	v12, (a0), zero
+	flw	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
-	flw	fa4, %lo(.LCPI1_2)(a0)
-	vmfle.vf	v16, v8, fa5
-	vmnot.m	v0, v16
-	vfmerge.vfm	v8, v12, fa4, v0
+	flw	fa3, %lo(.LCPI1_2)(a0)
+	vmfle.vf	v12, v8, fa5
+	vmnot.m	v0, v12
+	vfmv.v.f	v8, fa4
+	vfmerge.vfm	v8, v8, fa3, v0
 	ret
 .LCPI2_0:
 	.quad	0x4018000000000000              # double 6

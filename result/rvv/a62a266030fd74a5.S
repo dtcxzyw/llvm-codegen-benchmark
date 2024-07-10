@@ -12,26 +12,26 @@
 	.word	0xbc46b2e5                      # float -0.0121276127
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v12, (a0), zero
+	vfmv.v.f	v12, fa5
 	lui	a0, %hi(.LCPI0_1)
 	flw	fa5, %lo(.LCPI0_1)(a0)
-	vfmacc.vf	v12, fa5, v8
 	lui	a0, %hi(.LCPI0_2)
-	addi	a0, a0, %lo(.LCPI0_2)
-	vlse32.v	v16, (a0), zero
+	flw	fa4, %lo(.LCPI0_2)(a0)
 	lui	a0, %hi(.LCPI0_3)
-	addi	a0, a0, %lo(.LCPI0_3)
-	vlse32.v	v20, (a0), zero
+	flw	fa3, %lo(.LCPI0_3)(a0)
 	lui	a0, %hi(.LCPI0_4)
-	addi	a0, a0, %lo(.LCPI0_4)
-	vlse32.v	v24, (a0), zero
+	flw	fa2, %lo(.LCPI0_4)(a0)
+	vfmacc.vf	v12, fa5, v8
+	vfmv.v.f	v16, fa4
+	vfmv.v.f	v20, fa3
+	vfmv.v.f	v24, fa2
 	lui	a0, %hi(.LCPI0_5)
-	addi	a0, a0, %lo(.LCPI0_5)
-	vlse32.v	v28, (a0), zero
+	flw	fa5, %lo(.LCPI0_5)(a0)
 	vfmacc.vv	v16, v8, v12
 	vfmacc.vv	v20, v8, v16
 	vfmacc.vv	v24, v8, v20
-	vfmadd.vv	v8, v24, v28
+	vfmv.v.f	v12, fa5
+	vfmadd.vv	v8, v24, v12
 	ret

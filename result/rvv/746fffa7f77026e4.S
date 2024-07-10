@@ -3,15 +3,15 @@
 func0000000000000016:                   # @func0000000000000016
 	li	a0, -98
 	lui	a1, %hi(.LCPI0_0)
-	addi	a1, a1, %lo(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vlse64.v	v10, (a1), zero
 	vadd.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v9, v8
-	vwsll.vi	v12, v9, 3
+	vwsll.vi	v10, v9, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsrl.vv	v8, v10, v12
+	vmv.v.x	v8, a1
+	vsrl.vv	v8, v8, v10
 	ret
 func0000000000000006:                   # @func0000000000000006
 	li	a0, -44

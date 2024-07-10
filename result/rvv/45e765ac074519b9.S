@@ -3,12 +3,12 @@
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
-	vlse32.v	v8, (a0), zero
-	vmfle.vf	v12, v16, fa5
-	vmnot.m	v0, v12
+	flw	fa5, %lo(.LCPI0_0)(a0)
+	fmv.w.x	fa4, zero
+	vmfle.vf	v8, v16, fa4
+	vmnot.m	v0, v8
+	vfmv.v.f	v8, fa5
 	vmerge.vvm	v8, v8, v16, v0
 	ret
 func0000000000000004:                   # @func0000000000000004

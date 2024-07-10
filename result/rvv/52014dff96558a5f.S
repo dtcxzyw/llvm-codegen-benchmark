@@ -2,12 +2,12 @@
 	.word	0x3eb78d50                      # float 0.358500004
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v20, (a0), zero
-	fmv.w.x	fa5, zero
-	vmfgt.vf	v0, v16, fa5
-	vmerge.vvm	v12, v20, v12, v0
+	vmfgt.vf	v0, v16, fa4
+	vfmv.v.f	v16, fa5
+	vmerge.vvm	v12, v16, v12, v0
 	vfdiv.vv	v8, v8, v12
 	ret
 func0000000000000005:                   # @func0000000000000005

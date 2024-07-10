@@ -21,9 +21,9 @@ func0000000000000002:                   # @func0000000000000002
 	.word	0x3f7fffff                      # float 0.99999994
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI2_0)
-	addi	a0, a0, %lo(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v16, (a0), zero
+	vfmv.v.f	v16, fa5
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v12, v8
 	fmv.w.x	fa5, zero

@@ -11,13 +11,13 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	0x412e848000000000              # double 1.0E+6
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
-	vsetivli	zero, 16, e64, m8, ta, mu
-	vlse64.v	v24, (a0), zero
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_1)(a0)
+	fld	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e64, m8, ta, mu
+	vfmv.v.f	v24, fa5
 	vfmul.vv	v24, v8, v16, v0.t
-	vmflt.vf	v0, v24, fa5
+	vmflt.vf	v0, v24, fa4
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, -1.0

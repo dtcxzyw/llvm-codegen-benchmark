@@ -8,18 +8,18 @@
 	.quad	0x4075c9a8305ae6ab              # double 348.60356173999998
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v16, (a0), zero
+	vfmv.v.f	v16, fa5
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
-	addi	a0, a0, %lo(.LCPI0_2)
-	vlse64.v	v24, (a0), zero
+	fld	fa4, %lo(.LCPI0_2)(a0)
 	lui	a0, %hi(.LCPI0_3)
-	addi	a0, a0, %lo(.LCPI0_3)
-	vlse64.v	v0, (a0), zero
+	fld	fa3, %lo(.LCPI0_3)(a0)
 	vfmacc.vf	v16, fa5, v8
+	vfmv.v.f	v24, fa4
 	vfmacc.vv	v24, v8, v16
-	vfmadd.vv	v8, v24, v0
+	vfmv.v.f	v16, fa3
+	vfmadd.vv	v8, v24, v16
 	ret

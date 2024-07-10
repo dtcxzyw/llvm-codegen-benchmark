@@ -27,9 +27,9 @@ func0000000000000002:                   # @func0000000000000002
 	.quad	-6302637592877692800            # 0xa888888088808880
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI3_0)
-	addi	a0, a0, %lo(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
+	vmv.v.x	v10, a0
 	vsll.vv	v8, v10, v8
 	vandn.vv	v8, v10, v8
 	ret

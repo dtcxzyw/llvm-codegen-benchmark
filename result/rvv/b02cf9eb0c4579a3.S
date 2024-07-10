@@ -38,22 +38,22 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI5_0:
 	.quad	0x4024000000000000              # double 10
 func0000000000000014:                   # @func0000000000000014
+	lui	a1, %hi(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v0, (a0)
-	lui	a0, %hi(.LCPI5_0)
-	addi	a0, a0, %lo(.LCPI5_0)
-	vlse64.v	v24, (a0), zero
+	vfmv.v.f	v24, fa5
 	vfmacc.vv	v24, v16, v0
 	vmflt.vv	v0, v8, v24
 	ret
 .LCPI6_0:
 	.quad	0x4024000000000000              # double 10
 func000000000000001a:                   # @func000000000000001a
+	lui	a1, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v0, (a0)
-	lui	a0, %hi(.LCPI6_0)
-	addi	a0, a0, %lo(.LCPI6_0)
-	vlse64.v	v24, (a0), zero
+	vfmv.v.f	v24, fa5
 	vfmacc.vv	v24, v16, v0
 	vmfle.vv	v0, v24, v8
 	ret

@@ -1,15 +1,15 @@
 .LCPI0_0:
 	.quad	18446744073709551               # 0x4189374bc6a7ef
 func0000000000000030:                   # @func0000000000000030
-	vmv1r.v	v11, v0
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	vmv1r.v	v11, v0
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vlse64.v	v12, (a0), zero
 	vmseq.vi	v0, v10, 0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.x	v12, a0
 	lui	a0, 524288
 	addiw	a0, a0, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v12, v12, a0, v0
 	vmsltu.vv	v10, v12, v8
 	vmor.mm	v0, v10, v11

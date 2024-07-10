@@ -4,9 +4,9 @@
 	.quad	461168601842738790              # 0x666666666666666
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
+	vmv.v.x	v10, a0
 	lui	a0, 838861
 	addiw	a0, a0, -819
 	slli	a1, a0, 32

@@ -8,14 +8,14 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	addi	a0, a0, %lo(.LCPI0_1)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v16, (a0), zero
+	fld	fa4, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
-	fld	fa4, %lo(.LCPI0_2)(a0)
-	vmfle.vf	v24, v8, fa5
-	vmnot.m	v0, v24
-	vfmerge.vfm	v8, v16, fa4, v0
+	fld	fa3, %lo(.LCPI0_2)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vf	v16, v8, fa5
+	vmnot.m	v0, v16
+	vfmv.v.f	v8, fa4
+	vfmerge.vfm	v8, v8, fa3, v0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
@@ -52,14 +52,14 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	addi	a0, a0, %lo(.LCPI4_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v12, (a0), zero
+	flw	fa4, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
-	flw	fa4, %lo(.LCPI4_1)(a0)
-	vmfge.vf	v16, v8, fa5
-	vmnot.m	v0, v16
-	vfmerge.vfm	v8, v12, fa4, v0
+	flw	fa3, %lo(.LCPI4_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfge.vf	v12, v8, fa5
+	vmnot.m	v0, v12
+	vfmv.v.f	v8, fa4
+	vfmerge.vfm	v8, v8, fa3, v0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 1.0

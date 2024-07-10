@@ -12,10 +12,10 @@ func000000000000003c:                   # @func000000000000003c
 	.quad	4865540595714422341             # 0x4385df649fccf645
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	lui	a1, %hi(.LCPI1_1)
+	ld	a1, %lo(.LCPI1_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
-	lui	a0, %hi(.LCPI1_1)
-	ld	a0, %lo(.LCPI1_1)(a0)
-	vmadd.vx	v8, a0, v10
+	vmv.v.x	v10, a0
+	vmadd.vx	v8, a1, v10
 	ret

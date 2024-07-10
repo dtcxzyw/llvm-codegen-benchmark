@@ -29,12 +29,12 @@ func00000000000001e1:                   # @func00000000000001e1
 	.quad	6364136223846793005             # 0x5851f42d4c957f2d
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, %hi(.LCPI2_0)
-	addi	a0, a0, %lo(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, %hi(.LCPI2_1)
+	ld	a1, %lo(.LCPI2_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v12, (a0), zero
-	lui	a0, %hi(.LCPI2_1)
-	ld	a0, %lo(.LCPI2_1)(a0)
-	vmacc.vx	v12, a0, v10
+	vmv.v.x	v12, a0
+	vmacc.vx	v12, a1, v10
 	li	a0, 62
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v12, a0

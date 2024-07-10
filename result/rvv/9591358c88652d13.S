@@ -6,16 +6,16 @@
 	.quad	5124095576030430                # 0x123456789abcde
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	lui	a1, %hi(.LCPI0_1)
+	ld	a1, %lo(.LCPI0_1)(a1)
+	lui	a2, %hi(.LCPI0_2)
+	ld	a2, %lo(.LCPI0_2)(a2)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v12, (a0), zero
-	lui	a0, %hi(.LCPI0_1)
-	ld	a0, %lo(.LCPI0_1)(a0)
-	lui	a1, %hi(.LCPI0_2)
-	ld	a1, %lo(.LCPI0_2)(a1)
-	vmacc.vx	v12, a0, v10
+	vmv.v.x	v12, a0
+	vmacc.vx	v12, a1, v10
 	vror.vi	v10, v12, 4
-	vmsleu.vx	v9, v10, a1
+	vmsleu.vx	v9, v10, a2
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v8, v8, 3
 	vmand.mm	v0, v8, v9

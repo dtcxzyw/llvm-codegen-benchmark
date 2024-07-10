@@ -6,15 +6,15 @@
 	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v14, (a0), zero
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	fld	fa5, %lo(.LCPI0_1)(a0)
+	fld	fa4, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
-	fld	fa4, %lo(.LCPI0_2)(a0)
-	vfmacc.vf	v14, fa5, v12
-	vfmacc.vf	v14, fa4, v10
+	fld	fa3, %lo(.LCPI0_2)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfmv.v.f	v14, fa5
+	vfmacc.vf	v14, fa4, v12
+	vfmacc.vf	v14, fa3, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vfncvt.rtz.x.f.w	v9, v14
 	vadd.vv	v10, v9, v8
@@ -29,15 +29,15 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v14, (a0), zero
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_1)(a0)
+	fld	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
-	fld	fa4, %lo(.LCPI1_2)(a0)
-	vfmacc.vf	v14, fa5, v12
-	vfmacc.vf	v14, fa4, v10
+	fld	fa3, %lo(.LCPI1_2)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfmv.v.f	v14, fa5
+	vfmacc.vf	v14, fa4, v12
+	vfmacc.vf	v14, fa3, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vfncvt.rtz.x.f.w	v9, v14
 	vadd.vv	v10, v9, v8

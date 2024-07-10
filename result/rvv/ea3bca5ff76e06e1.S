@@ -17,9 +17,9 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	2170205185142300192             # 0x1e1e1e1e1e1e1e20
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI2_0)
-	addi	a0, a0, %lo(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
+	vmv.v.x	v10, a0
 	li	a0, 10
 	vmadd.vx	v8, a0, v10
 	ret

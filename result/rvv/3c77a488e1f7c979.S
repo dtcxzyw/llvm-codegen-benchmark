@@ -14,9 +14,9 @@ func000000000000000b:                   # @func000000000000000b
 	.word	0x3f2ac083                      # float 0.666999995
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v12, (a0), zero
+	vfmv.v.f	v12, fa5
 	fli.s	fa5, 0.5
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmflt.vv	v0, v8, v12

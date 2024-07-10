@@ -54,13 +54,13 @@ func000000000000002b:                   # @func000000000000002b
 	.quad	-6148914691236560896            # 0xaaaaaaaaaaaa0000
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI6_0)
-	addi	a0, a0, %lo(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
+	lui	a1, %hi(.LCPI6_1)
+	ld	a1, %lo(.LCPI6_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vlse64.v	v10, (a0), zero
-	lui	a0, %hi(.LCPI6_1)
-	ld	a0, %lo(.LCPI6_1)(a0)
 	vmseq.vi	v0, v8, 0
-	vmerge.vxm	v8, v10, a0, v0
+	vmv.v.x	v8, a0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, 16

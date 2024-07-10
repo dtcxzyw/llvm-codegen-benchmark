@@ -28,14 +28,14 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI3_0:
 	.word	0x49742400                      # float 1.0E+6
 func0000000000000007:                   # @func0000000000000007
+	lui	a0, %hi(.LCPI3_0)
+	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	lui	a0, %hi(.LCPI3_0)
-	addi	a0, a0, %lo(.LCPI3_0)
-	vlse32.v	v16, (a0), zero
-	fmv.w.x	fa5, zero
-	vmfne.vf	v0, v12, fa5
-	vmerge.vvm	v8, v16, v8, v0
+	fmv.w.x	fa4, zero
+	vmfne.vf	v0, v12, fa4
+	vfmv.v.f	v12, fa5
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e32, m4, ta, ma

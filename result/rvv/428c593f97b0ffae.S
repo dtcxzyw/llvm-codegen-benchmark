@@ -4,11 +4,11 @@
 	.word	0x3eb2b8c3                      # float 0.34906587
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
-	addi	a0, a0, %lo(.LCPI0_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vlse32.v	v12, (a0), zero
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	flw	fa5, %lo(.LCPI0_1)(a0)
-	vfmerge.vfm	v12, v12, fa5, v0
+	flw	fa4, %lo(.LCPI0_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmv.v.f	v12, fa5
+	vfmerge.vfm	v12, v12, fa4, v0
 	vfadd.vv	v8, v12, v8
 	ret

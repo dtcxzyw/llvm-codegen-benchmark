@@ -28,28 +28,16 @@ func0000000000000024:                   # @func0000000000000024
 .LCPI2_1:
 	.quad	0x3feccccccccccccd              # double 0.90000000000000002
 func0000000000000042:                   # @func0000000000000042
-	addi	sp, sp, -16
-	csrr	a0, vlenb
-	slli	a0, a0, 3
-	sub	sp, sp, a0
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vv	v7, v16, v8
+	vmv1r.v	v7, v0
 	lui	a0, %hi(.LCPI2_0)
-	addi	a0, a0, %lo(.LCPI2_0)
-	vlse64.v	v24, (a0), zero
-	addi	a0, sp, 16
-	vs8r.v	v24, (a0)                       # Unknown-size Folded Spill
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vv	v0, v16, v8
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa5, %lo(.LCPI2_1)(a0)
-	vmv1r.v	v25, v0
+	fld	fa4, %lo(.LCPI2_1)(a0)
+	vfmv.v.f	v24, fa5
+	vmerge.vvm	v8, v16, v8, v0
 	vmv1r.v	v0, v7
-	vmerge.vvm	v8, v16, v8, v0
-	vmv1r.v	v0, v25
-	addi	a0, sp, 16
-	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
-	vmerge.vvm	v8, v16, v8, v0
-	vfmin.vf	v8, v8, fa5
-	csrr	a0, vlenb
-	sh3add	sp, a0, sp
-	addi	sp, sp, 16
+	vmerge.vvm	v8, v24, v8, v0
+	vfmin.vf	v8, v8, fa4
 	ret

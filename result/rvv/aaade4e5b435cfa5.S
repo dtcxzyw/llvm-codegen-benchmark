@@ -34,12 +34,12 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	addi	a0, a0, %lo(.LCPI2_1)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v16, (a0), zero
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	lui	a0, %hi(.LCPI2_2)
-	fld	fa4, %lo(.LCPI2_2)(a0)
+	fld	fa3, %lo(.LCPI2_2)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vv	v8, v8, v8
 	vmfeq.vf	v0, v8, fa5
-	vfmerge.vfm	v8, v16, fa4, v0
+	vfmv.v.f	v8, fa4
+	vfmerge.vfm	v8, v8, fa3, v0
 	ret

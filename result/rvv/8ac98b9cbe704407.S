@@ -22,13 +22,13 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
-	addi	a0, a0, %lo(.LCPI1_2)
+	fld	fa3, %lo(.LCPI1_2)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vlse64.v	v24, (a0), zero
 	vmfle.vf	v16, v8, fa5
 	vmv1r.v	v17, v0
 	vmv1r.v	v0, v16
 	vfmerge.vfm	v8, v8, fa4, v0
+	vfmv.v.f	v24, fa3
 	vmv1r.v	v0, v17
 	vmerge.vvm	v8, v24, v8, v0
 	ret

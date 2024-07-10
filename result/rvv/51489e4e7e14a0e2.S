@@ -12,13 +12,13 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	0x403312b020c49ba6              # double 19.073
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, %hi(.LCPI1_0)
-	addi	a0, a0, %lo(.LCPI1_0)
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vlse64.v	v16, (a0), zero
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_1)(a0)
+	fld	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vi	v8, v8, 0
 	vmand.mm	v0, v8, v0
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmerge.vfm	v8, v16, fa5, v0
+	vfmv.v.f	v8, fa5
+	vfmerge.vfm	v8, v8, fa4, v0
 	ret
