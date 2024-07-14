@@ -46,9 +46,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v10, v8, 15
 	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e8, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vsll.vi	v8, v10, 2
-	vand.vi	v8, v8, -8
+	vnsrl.wi	v10, v8, 1
+	vsll.vi	v8, v10, 3
 	li	a0, 67
 	vor.vx	v8, v8, a0
 	ret
