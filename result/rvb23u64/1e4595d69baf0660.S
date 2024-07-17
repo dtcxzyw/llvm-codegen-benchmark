@@ -27,8 +27,8 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000b:                   # @func000000000000000b
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
-	mulhu	a0, a0, a1
-	srli	a0, a0, 5
+	srli	a0, a0, 3
+	mul	a0, a0, a1
 	li	a1, 3
 	maxu	a0, a0, a1
 	addi	a0, a0, 1

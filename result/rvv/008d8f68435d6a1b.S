@@ -16,12 +16,12 @@ func000000000000000b:                   # @func000000000000000b
 	vmv.v.x	v10, a0
 	li	a0, 24
 	vmacc.vx	v10, a0, v8
+	vsrl.vi	v8, v10, 3
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 4
+	vmul.vx	v8, v8, a0
 	ret
 func000000000000001e:                   # @func000000000000001e
 	li	a0, 17

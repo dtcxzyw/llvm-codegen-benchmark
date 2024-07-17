@@ -34,15 +34,12 @@ func0000000000000002:                   # @func0000000000000002
 	vmulhu.vx	v8, v8, a0
 	vand.vi	v8, v8, -2
 	ret
+.LCPI3_0:
+	.quad	6148914691236517206             # 0x5555555555555556
 func0000000000000007:                   # @func0000000000000007
-	lui	a0, 699051
-	addiw	a0, a0, -1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3
-	li	a0, -9
-	srli	a0, a0, 3
-	vand.vx	v8, v8, a0
+	vmul.vx	v8, v8, a0
 	ret

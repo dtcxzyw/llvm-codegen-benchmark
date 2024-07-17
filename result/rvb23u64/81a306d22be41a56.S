@@ -1,14 +1,12 @@
 .LCPI0_0:
-	.quad	696103549951303835              # 0x9a90e7d95bc609b
+	.quad	2436362424829563421             # 0x21cfb2b78c13521d
 func0000000000000071:                   # @func0000000000000071
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	srli	a1, a1, 5
-	mulhu	a1, a1, a2
-	srli	a1, a1, 1
+	mul	a1, a1, a2
 	srli	a0, a0, 5
-	mulhu	a0, a0, a2
-	srli	a0, a0, 1
+	mul	a0, a0, a2
 	minu	a0, a0, a1
 	seqz	a0, a0
 	ret

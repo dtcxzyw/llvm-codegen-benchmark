@@ -18,10 +18,10 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a0, a1
 	ret
 .LBB1_2:
+	srli	a2, a2, 3
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	mulhu	a0, a2, a0
-	srli	a0, a0, 4
+	mul	a0, a2, a0
 	ret

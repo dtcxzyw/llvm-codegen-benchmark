@@ -5,7 +5,7 @@ func0000000000000327:                   # @func0000000000000327
 	ld	a3, %lo(.LCPI0_0)(a3)
 	snez	a2, a2
 	sub	a0, a0, a1
-	mulhu	a0, a0, a3
-	srli	a0, a0, 5
+	srli	a0, a0, 3
+	mul	a0, a0, a3
 	add	a0, a0, a2
 	ret
