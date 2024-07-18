@@ -1,35 +1,24 @@
 func00000000000000c8:                   # @func00000000000000c8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vmul.vv	v8, v12, v8
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vmadd.vv	v12, v8, v12
 	li	a0, -1
 	srli	a0, a0, 8
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v12, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vmul.vv	v8, v12, v8
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vmadd.vv	v12, v8, v12
 	li	a0, -1
 	srli	a0, a0, 32
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v12, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v11, v10
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vmul.vv	v8, v12, v8
-	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v8, v8, v11
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsgt.vi	v0, v8, 0
+	vmadd.vv	v12, v8, v12
+	vmsgt.vi	v0, v12, 0
 	ret
 func000000000000005a:                   # @func000000000000005a
 	vsetivli	zero, 8, e32, m2, ta, ma

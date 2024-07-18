@@ -6,9 +6,6 @@ func00000000000001f4:                   # @func00000000000001f4
 	vdivu.vv	v12, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmul.vv	v10, v14, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vv	v0, v8, v10
+	vmadd.vv	v14, v10, v14
+	vmsltu.vv	v0, v8, v14
 	ret
