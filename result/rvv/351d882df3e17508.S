@@ -3,10 +3,10 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v8, v8, a0
-	lui	a0, 1048573
-	addi	a0, a0, -819
+	lui	a0, 6
+	addi	a0, a0, 1639
 	vmulhu.vx	v9, v8, a0
-	vsrl.vi	v10, v9, 4
+	vsrl.vi	v10, v9, 3
 	li	a0, 20
 	vnmsub.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m2, ta, ma

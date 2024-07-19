@@ -7,10 +7,9 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 21
 	addi	a0, a0, 384
 	vnmsub.vx	v9, a0, v8
-	lui	a0, 596523
-	addi	a0, a0, 965
-	vmulhu.vx	v8, v9, a0
-	vsrl.vi	v10, v8, 11
+	lui	a0, 291
+	addi	a0, a0, 1111
+	vmulhu.vx	v10, v9, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

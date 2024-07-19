@@ -10,9 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v9, v9, 8
 	li	a0, 588
 	vnmsub.vx	v9, a0, v8
-	vsrl.vi	v8, v9, 2
-	lui	a0, 5
+	lui	a0, 1
 	addi	a0, a0, -1755
-	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
+	vmulhu.vx	v8, v9, a0
 	ret

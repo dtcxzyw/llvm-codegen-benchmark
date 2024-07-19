@@ -7,10 +7,10 @@ func000000000000001e:                   # @func000000000000001e
 	vmv.v.x	v9, a0
 	li	a0, 31
 	vmacc.vx	v9, a0, v8
-	lui	a0, 1048568
-	addi	a0, a0, 129
+	lui	a0, 4
+	addi	a0, a0, 65
 	vmulhu.vx	v8, v9, a0
-	vsrl.vi	v8, v8, 7
+	vsrl.vi	v8, v8, 6
 	ret
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e16, m1, ta, ma

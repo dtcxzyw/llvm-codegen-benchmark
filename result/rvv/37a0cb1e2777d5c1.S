@@ -14,19 +14,19 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 31
 	vnmsub.vx	v8, a0, v10
 	ret
-.LCPI1_0:
-	.quad	-6067343680855748867            # 0xabcc77118461cefd
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v9
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vwsll.vi	v12, v10, 30
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v8
 	vor.vv	v10, v12, v10
+	lui	a0, 21990
+	addiw	a0, a0, 953
+	slli	a0, a0, 12
+	addi	a0, a0, -1853
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 28
+	vsrl.vi	v8, v8, 3
 	lui	a0, 97656
 	addiw	a0, a0, 1024
 	vnmsub.vx	v8, a0, v10

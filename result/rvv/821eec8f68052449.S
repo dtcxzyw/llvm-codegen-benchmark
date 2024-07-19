@@ -7,9 +7,8 @@ func0000000000000023:                   # @func0000000000000023
 	vnsrl.wi	v8, v10, 0
 	li	a0, 31
 	vxor.vx	v8, v8, a0
-	li	a0, -85
+	li	a0, 86
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
 	vadd.vi	v8, v8, 1
 	ret
 func000000000000003b:                   # @func000000000000003b
@@ -21,8 +20,7 @@ func000000000000003b:                   # @func000000000000003b
 	vnsrl.wi	v8, v10, 0
 	li	a0, 31
 	vxor.vx	v8, v8, a0
-	li	a0, -85
+	li	a0, 86
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
 	vadd.vi	v8, v8, 1
 	ret

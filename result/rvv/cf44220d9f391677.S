@@ -9,11 +9,10 @@ func0000000000000003:                   # @func0000000000000003
 	vnmsub.vx	v10, a1, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
-	vsrl.vi	v8, v8, 3
 	addi	a0, a0, 197
 	vmulhu.vx	v8, v8, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v8, 4
+	vnsrl.wi	v8, v8, 7
 	li	a0, 48
 	vadd.vx	v8, v8, a0
 	ret

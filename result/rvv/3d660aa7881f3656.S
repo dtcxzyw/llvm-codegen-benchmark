@@ -1,10 +1,10 @@
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v8, v8, v8
-	lui	a0, 838861
-	addi	a0, a0, -819
+	lui	a0, 419430
+	addi	a0, a0, 1639
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 4
+	vsrl.vi	v8, v8, 3
 	ret
 .LCPI1_0:
 	.quad	3777893186295716171             # 0x346dc5d63886594b

@@ -16,9 +16,8 @@ func000000000000000d:                   # @func000000000000000d
 	li	a0, 66
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vrsub.vx	v8, v8, a0
-	li	a0, -85
-	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v10, v8, 1
+	li	a0, 86
+	vmulhu.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf8	v8, v10
 	ret

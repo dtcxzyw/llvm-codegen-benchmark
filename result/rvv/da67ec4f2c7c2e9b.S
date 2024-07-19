@@ -11,10 +11,6 @@ func0000000000000000:                   # @func0000000000000000
 	bseti	a0, a0, 44
 	bseti	a0, a0, 54
 	vmulhu.vx	v10, v8, a0
-	vsub.vv	v12, v8, v10
-	vsrl.vi	v12, v12, 1
-	vadd.vv	v10, v12, v10
-	vsrl.vi	v10, v10, 9
 	vadd.vv	v8, v8, v10
 	li	a0, 56
 	vsll.vx	v8, v8, a0
@@ -32,10 +28,6 @@ func0000000000000003:                   # @func0000000000000003
 	bseti	a0, a0, 44
 	bseti	a0, a0, 54
 	vmulhu.vx	v10, v8, a0
-	vsub.vv	v12, v8, v10
-	vsrl.vi	v12, v12, 1
-	vadd.vv	v10, v12, v10
-	vsrl.vi	v10, v10, 9
 	li	a0, 1023
 	vnmsub.vx	v10, a0, v8
 	li	a0, 48

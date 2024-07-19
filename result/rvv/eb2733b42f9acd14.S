@@ -4,10 +4,9 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 5
-	lui	a0, 699051
+	lui	a0, 43691
 	addi	a0, a0, -1365
-	vmulhu.vx	v9, v8, a0
-	vsrl.vi	v10, v9, 4
+	vmulhu.vx	v10, v8, a0
 	li	a0, 24
 	vnmsub.vx	v10, a0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma

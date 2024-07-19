@@ -6,12 +6,12 @@ func0000000000000078:                   # @func0000000000000078
 	li	a0, 255
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwmaccu.vx	v10, a0, v8
-	lui	a0, 986895
+	lui	a0, 3855
 	addi	a0, a0, 241
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmulhu.vx	v8, v10, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 15
+	vnsrl.wi	v10, v8, 7
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret

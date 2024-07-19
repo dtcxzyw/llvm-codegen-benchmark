@@ -5,9 +5,8 @@ func000000000000007b:                   # @func000000000000007b
 	addi	a0, a0, -1
 	vand.vx	v8, v10, a0
 	vadd.vi	v8, v8, 2
-	lui	a0, 1048571
-	addi	a0, a0, -1365
+	lui	a0, 5
+	addi	a0, a0, 1366
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
 	vadd.vi	v8, v8, 1
 	ret

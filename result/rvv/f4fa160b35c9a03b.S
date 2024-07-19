@@ -29,9 +29,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmulhu.vx	v8, v8, a0
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vnsrl.wi	v10, v8, 4
-	li	a0, -51
+	li	a0, 26
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 3
 	li	a0, 10
 	vnmsub.vx	v8, a0, v10
 	ret

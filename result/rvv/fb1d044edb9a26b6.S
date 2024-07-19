@@ -6,10 +6,8 @@ func0000000000000016:                   # @func0000000000000016
 	vand.vx	v8, v8, a0
 	li	a0, 255
 	vmul.vx	v8, v8, a0
-	li	a0, 1041
-	vmulhu.vx	v10, v8, a0
-	vsub.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 1
-	vadd.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 5
+	lui	a0, 4
+	addi	a0, a0, 261
+	vmulhu.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 4
 	ret

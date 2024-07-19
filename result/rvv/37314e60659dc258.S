@@ -6,11 +6,11 @@ func0000000000000018:                   # @func0000000000000018
 	vsrl.vi	v8, v8, 13
 	li	a0, 128
 	vadd.vx	v8, v8, a0
-	lui	a0, 1044496
-	addi	a0, a0, -255
+	lui	a0, 4080
+	addi	a0, a0, 256
 	vmulhu.vx	v8, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 8
+	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret

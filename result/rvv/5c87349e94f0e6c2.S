@@ -4,8 +4,9 @@ func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 5
+	lui	a0, 10486
+	addi	a0, a0, -983
 	vmulhu.vx	v9, v8, a0
-	vsrl.vi	v9, v9, 5
 	li	a0, 100
 	vnmsub.vx	v9, a0, v8
 	vadd.vv	v10, v9, v9
