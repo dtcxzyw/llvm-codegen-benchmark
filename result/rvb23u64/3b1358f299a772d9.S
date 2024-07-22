@@ -9,18 +9,14 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a2
 	ret
 func00000000000000ac:                   # @func00000000000000ac
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	sgtz	a2, a2
-	czero.eqz	a1, a0, a1
-	and	a0, a0, a2
-	or	a0, a0, a1
+	or	a1, a1, a2
+	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	snez	a2, a2
-	czero.eqz	a1, a0, a1
-	and	a0, a0, a2
-	or	a0, a0, a1
+	or	a1, a1, a2
+	and	a0, a0, a1
 	ret

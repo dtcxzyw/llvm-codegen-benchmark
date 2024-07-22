@@ -7,14 +7,13 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a2, a2
 	andi	a1, a1, 255
+	sext.w	a2, a2
+	snez	a2, a2
 	addi	a1, a1, -1
 	seqz	a1, a1
-	xori	a0, a0, 1
-	czero.eqz	a2, a0, a2
-	and	a0, a0, a1
-	or	a0, a0, a2
+	or	a1, a1, a2
+	andn	a0, a1, a0
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a2, a2

@@ -1,6 +1,6 @@
 func00000000000004aa:                   # @func00000000000004aa
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 3
+	vsra.vi	v10, v10, 3
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32

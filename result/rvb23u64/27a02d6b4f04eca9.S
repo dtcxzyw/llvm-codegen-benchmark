@@ -1,12 +1,16 @@
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 255
-	srl	a1, a1, a2
+	bset	a2, zero, a2
+	and	a1, a1, a2
+	snez	a1, a1
 	addi	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	srl	a1, a1, a2
+	bset	a2, zero, a2
+	and	a1, a1, a2
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

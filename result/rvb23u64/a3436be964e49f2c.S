@@ -1,8 +1,6 @@
 func0000000000000044:                   # @func0000000000000044
-	fmv.w.x	fa5, zero
-	flt.s	a1, fa5, fa1
-	flt.s	a2, fa5, fa0
-	czero.eqz	a2, a0, a2
+	fmax.s	fa5, fa0, fa1
+	fmv.w.x	fa4, zero
+	flt.s	a1, fa4, fa5
 	and	a0, a0, a1
-	or	a0, a0, a2
 	ret

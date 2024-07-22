@@ -12,10 +12,8 @@ func0000000000000048:                   # @func0000000000000048
 	or	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
-	andi	a1, a1, 1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
-	czero.eqz	a1, a0, a1
-	and	a0, a0, a2
-	or	a0, a0, a1
+	or	a1, a1, a2
+	and	a0, a0, a1
 	ret

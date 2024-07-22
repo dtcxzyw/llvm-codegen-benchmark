@@ -1,14 +1,15 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	lui	a2, 796918
-	addi	a2, a2, -983
-	mul	a1, a1, a2
-	slliw	a2, a1, 30
-	srliw	a1, a1, 2
-	or	a1, a1, a2
-	lui	a2, 10486
-	addiw	a2, a2, -983
-	sltu	a1, a1, a2
+	slli	a2, a1, 32
+	lui	a3, 335544
+	addi	a3, a3, 1311
+	slli	a3, a3, 32
+	mulhu	a2, a2, a3
+	srli	a2, a2, 37
+	li	a3, 100
+	mul	a2, a2, a3
+	subw	a1, a1, a2
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

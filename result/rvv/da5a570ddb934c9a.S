@@ -13,8 +13,6 @@ func000000000000006a:                   # @func000000000000006a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v12, v8, a0
 	vmsgt.vi	v8, v10, 0
-	vmandn.mm	v9, v12, v0
-	vmor.mm	v8, v12, v8
-	vmand.mm	v8, v8, v0
-	vmor.mm	v0, v8, v9
+	vmand.mm	v8, v0, v8
+	vmor.mm	v0, v12, v8
 	ret

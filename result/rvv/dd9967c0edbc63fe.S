@@ -3,10 +3,8 @@ func0000000000000018:                   # @func0000000000000018
 	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgtu.vi	v8, v8, 1
-	vmandn.mm	v10, v9, v0
-	vmandn.mm	v8, v8, v0
-	vmandn.mm	v8, v8, v9
-	vmor.mm	v0, v10, v8
+	vmor.mm	v8, v9, v8
+	vmandn.mm	v0, v8, v0
 	ret
 func0000000000000061:                   # @func0000000000000061
 	li	a0, -1025
@@ -21,20 +19,16 @@ func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vmsle.vi	v10, v8, 3
-	vmandn.mm	v8, v10, v0
-	vmandn.mm	v8, v8, v12
-	vmandn.mm	v9, v12, v0
-	vmor.mm	v0, v9, v8
+	vmor.mm	v8, v12, v10
+	vmandn.mm	v0, v8, v0
 	ret
 func0000000000000044:                   # @func0000000000000044
 	li	a0, -1073
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vmsleu.vi	v10, v8, 3
-	vmandn.mm	v8, v10, v0
-	vmandn.mm	v8, v8, v12
-	vmandn.mm	v9, v12, v0
-	vmor.mm	v0, v9, v8
+	vmor.mm	v8, v12, v10
+	vmandn.mm	v0, v8, v0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -47,10 +41,8 @@ func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v12, v10, 2
 	vmseq.vi	v10, v8, 4
-	vmandn.mm	v8, v0, v12
-	vmor.mm	v9, v0, v10
-	vmand.mm	v9, v9, v12
-	vmor.mm	v0, v9, v8
+	vmand.mm	v8, v12, v10
+	vmor.mm	v0, v0, v8
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -97,20 +89,16 @@ func000000000000008a:                   # @func000000000000008a
 	vmsleu.vi	v10, v10, 7
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgt.vi	v11, v8, 0
-	vmandn.mm	v8, v0, v10
-	vmor.mm	v9, v0, v11
-	vmand.mm	v9, v9, v10
-	vmor.mm	v0, v9, v8
+	vmand.mm	v8, v10, v11
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000066:                   # @func0000000000000066
 	li	a0, -1137
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v12, v10, a0
 	vmsle.vi	v10, v8, 3
-	vmandn.mm	v8, v10, v0
-	vmandn.mm	v8, v8, v12
-	vmandn.mm	v9, v12, v0
-	vmor.mm	v0, v9, v8
+	vmor.mm	v8, v12, v10
+	vmandn.mm	v0, v8, v0
 	ret
 func0000000000000016:                   # @func0000000000000016
 	li	a0, 114

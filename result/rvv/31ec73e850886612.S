@@ -1,16 +1,15 @@
 func000000000000000c:                   # @func000000000000000c
-	lui	a0, 20972
-	addi	a0, a0, -1968
+	lui	a0, 335544
+	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.x	v10, a0
-	lui	a0, 796918
-	addi	a0, a0, -983
-	vmacc.vx	v10, a0, v8
-	vror.vi	v8, v10, 4
-	lui	a0, 2621
-	addi	a0, a0, 1802
-	vmsgtu.vx	v10, v8, a0
-	vmand.mm	v0, v0, v10
+	vmulh.vx	v10, v8, a0
+	vsra.vi	v10, v10, 7
+	vsrl.vi	v12, v10, 31
+	vadd.vv	v10, v10, v12
+	li	a0, 400
+	vnmsub.vx	v10, a0, v8
+	vmsne.vi	v8, v10, 0
+	vmand.mm	v0, v0, v8
 	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a0, 6
@@ -39,16 +38,15 @@ func000000000000000a:                   # @func000000000000000a
 	vmand.mm	v0, v0, v8
 	ret
 func0000000000000001:                   # @func0000000000000001
-	lui	a0, 4194
-	addi	a0, a0, 1240
+	lui	a0, 67109
+	addi	a0, a0, -557
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.x	v10, a0
-	lui	a0, 159384
-	addi	a0, a0, -1835
-	vmacc.vx	v10, a0, v8
-	vror.vi	v8, v10, 3
-	lui	a0, 1049
-	addi	a0, a0, -1738
-	vmsleu.vx	v10, v8, a0
-	vmand.mm	v0, v0, v10
+	vmulh.vx	v10, v8, a0
+	vsra.vi	v10, v10, 6
+	vsrl.vi	v12, v10, 31
+	vadd.vv	v10, v10, v12
+	li	a0, 1000
+	vnmsub.vx	v10, a0, v8
+	vmseq.vi	v8, v10, 0
+	vmand.mm	v0, v0, v8
 	ret

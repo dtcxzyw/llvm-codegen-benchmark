@@ -23,7 +23,7 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	addi	a2, a2, 3
+	ori	a2, a2, 3
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

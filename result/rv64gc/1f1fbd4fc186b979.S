@@ -28,19 +28,13 @@ func0000000000000016:                   # @func0000000000000016
 	or	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
-	sext.w	a1, a1
-	sext.w	a2, a2
-	seqz	a2, a2
+	mulw	a1, a1, a2
 	seqz	a1, a1
-	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a1, a1
-	sext.w	a2, a2
-	seqz	a2, a2
+	mulw	a1, a1, a2
 	seqz	a1, a1
-	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
@@ -67,9 +61,8 @@ func0000000000000034:                   # @func0000000000000034
 	or	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
-	seqz	a2, a2
+	mul	a1, a1, a2
 	seqz	a1, a1
-	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
