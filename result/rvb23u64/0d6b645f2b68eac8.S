@@ -11,8 +11,8 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000001b:                   # @func000000000000001b
 	li	a1, 100
 	mul	a0, a0, a1
-	srli	a0, a0, 31
-	andi	a0, a0, -2
+	srli	a0, a0, 32
+	slli.uw	a0, a0, 1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sh1add	a0, a0, a0

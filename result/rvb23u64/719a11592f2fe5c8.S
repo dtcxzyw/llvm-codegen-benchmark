@@ -11,14 +11,14 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000d:                   # @func000000000000000d
 	add	a1, a1, a2
-	srli	a1, a1, 28
-	andi	a1, a1, -16
+	srli	a1, a1, 32
+	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	add	a1, a1, a2
-	srli	a1, a1, 28
-	andi	a1, a1, -16
+	srli	a1, a1, 32
+	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

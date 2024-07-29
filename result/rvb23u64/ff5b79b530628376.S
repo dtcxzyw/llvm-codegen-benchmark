@@ -29,6 +29,6 @@ func000000000000007b:                   # @func000000000000007b
 	lui	a1, 105
 	addiw	a1, a1, -583
 	mul	a0, a0, a1
-	srli	a0, a0, 31
-	andi	a0, a0, -2
+	srli	a0, a0, 32
+	slli.uw	a0, a0, 1
 	ret

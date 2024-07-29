@@ -22,8 +22,8 @@ func0000000000000002:                   # @func0000000000000002
 	mulw	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
-	srli	a1, a1, 28
-	andi	a1, a1, -16
+	srli	a1, a1, 32
+	slli.uw	a1, a1, 4
 	zext.w	a0, a0
 	mul	a0, a0, a1
 	ret

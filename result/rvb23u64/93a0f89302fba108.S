@@ -31,8 +31,8 @@ func0000000000000011:                   # @func0000000000000011
 	bclri	a0, a0, 11
 	ret
 func0000000000000009:                   # @func0000000000000009
-	srli	a0, a0, 31
-	andi	a0, a0, -2
+	srli	a0, a0, 32
+	slli.uw	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, -64

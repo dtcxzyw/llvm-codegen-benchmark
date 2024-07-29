@@ -17,8 +17,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000006:                   # @func0000000000000006
 	rev8	a0, a0
-	srli	a0, a0, 29
-	andi	a0, a0, -8
+	srli	a0, a0, 32
+	slli.uw	a0, a0, 3
 	sext.w	a0, a0
 	ret
 func0000000000000003:                   # @func0000000000000003

@@ -1,12 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
-	srli	a0, a0, 12
-	srli	a0, a0, 4
+	srli	a0, a0, 16
 	slli.uw	a0, a0, 4
 	addi	a0, a0, 16
 	ret
 func0000000000000040:                   # @func0000000000000040
-	srli	a0, a0, 12
-	srli	a0, a0, 4
+	srli	a0, a0, 16
 	slli.uw	a0, a0, 4
 	addi	a0, a0, 16
 	ret

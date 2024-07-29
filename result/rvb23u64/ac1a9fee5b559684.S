@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	srli	a1, a1, 28
-	andi	a1, a1, -16
+	srli	a1, a1, 32
+	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	zext.h	a0, a0
 	ret
