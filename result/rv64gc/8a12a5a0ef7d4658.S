@@ -9,10 +9,13 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a2, 1048571
 	bnez	a3, .LBB1_2
 	addi	a2, a2, 129
-	j	.LBB1_3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
 .LBB1_2:
 	addi	a2, a2, 227
-.LBB1_3:                                # %entry
 	add	a0, a0, a1
 	add	a0, a0, a2
 	slli	a0, a0, 32

@@ -31,29 +31,41 @@ func0000000000000003:                   # @func0000000000000003
 	.word	0x3a83126f                      # float 0.00100000005
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	fmv.s	fa0, fa1
-.LBB3_2:                                # %entry
+	beqz	a0, .LBB3_3
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	flt.s	a1, fa0, fa5
 	li	a0, 17
-	bnez	a1, .LBB3_4
-	li	a0, 9
+	beqz	a1, .LBB3_4
+.LBB3_2:                                # %entry
+	ret
+.LBB3_3:                                # %entry
+	lui	a0, %hi(.LCPI3_0)
+	flw	fa5, %lo(.LCPI3_0)(a0)
+	flt.s	a1, fa1, fa5
+	li	a0, 17
+	bnez	a1, .LBB3_2
 .LBB3_4:                                # %entry
+	li	a0, 9
 	ret
 .LCPI4_0:
 	.word	0x3a83126f                      # float 0.00100000005
 func000000000000000d:                   # @func000000000000000d
 	andi	a0, a0, 1
-	bnez	a0, .LBB4_2
-	fmv.s	fa0, fa1
-.LBB4_2:                                # %entry
+	beqz	a0, .LBB4_3
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	flt.s	a1, fa0, fa5
 	li	a0, 9
-	beqz	a1, .LBB4_4
-	li	a0, 17
+	bnez	a1, .LBB4_4
+.LBB4_2:                                # %entry
+	ret
+.LBB4_3:                                # %entry
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa5, %lo(.LCPI4_0)(a0)
+	flt.s	a1, fa1, fa5
+	li	a0, 9
+	beqz	a1, .LBB4_2
 .LBB4_4:                                # %entry
+	li	a0, 17
 	ret

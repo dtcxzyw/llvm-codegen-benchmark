@@ -35,32 +35,37 @@ func0000000000000034:                   # @func0000000000000034
 	srli	a4, a4, 32
 	addi	a2, a4, -64
 	sll	a1, a3, a1
-	bltz	a2, .LBB1_2
+	bltz	a2, .LBB1_3
 	sll	a4, a3, a4
-	j	.LBB1_3
-.LBB1_2:
-	not	a4, a4
-	srli	a3, a3, 1
-	srl	a4, a3, a4
-	or	a4, a4, a1
-.LBB1_3:                                # %entry
 	srai	a3, a2, 63
 	slli	a5, a0, 32
 	srli	a5, a5, 32
 	addi	a2, a5, -64
 	and	a3, a3, a1
-	bltz	a2, .LBB1_5
-	sll	a1, a3, a5
-	sll	a0, a3, a0
-	srai	a2, a2, 63
-	and	a0, a0, a2
-	ret
-.LBB1_5:
+	bgez	a2, .LBB1_4
+.LBB1_2:
 	sll	a1, a4, a0
 	srli	a4, a3, 1
 	not	a5, a5
 	srl	a4, a4, a5
 	or	a1, a1, a4
+	sll	a0, a3, a0
+	srai	a2, a2, 63
+	and	a0, a0, a2
+	ret
+.LBB1_3:
+	not	a4, a4
+	srli	a3, a3, 1
+	srl	a4, a3, a4
+	or	a4, a4, a1
+	srai	a3, a2, 63
+	slli	a5, a0, 32
+	srli	a5, a5, 32
+	addi	a2, a5, -64
+	and	a3, a3, a1
+	bltz	a2, .LBB1_2
+.LBB1_4:                                # %entry
+	sll	a1, a3, a5
 	sll	a0, a3, a0
 	srai	a2, a2, 63
 	and	a0, a0, a2

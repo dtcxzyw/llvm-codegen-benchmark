@@ -41,10 +41,14 @@ func0000000000000001:                   # @func0000000000000001
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 56
-	j	.LBB0_3
+	xori	a1, a1, 63
+	li	a2, -1
+	sll	a1, a2, a1
+	not	a1, a1
+	and	a0, a0, a1
+	ret
 .LBB0_2:
 	li	a1, 64
-.LBB0_3:                                # %cond.end
 	xori	a1, a1, 63
 	li	a2, -1
 	sll	a1, a2, a1

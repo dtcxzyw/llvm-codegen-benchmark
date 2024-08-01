@@ -154,12 +154,19 @@ func0000000000000043:                   # @func0000000000000043
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa0
 	andi	a0, a0, 1
-	bnez	a1, .LBB7_2
-	fmv.s	fa5, fa0
+	beqz	a1, .LBB7_3
+	bnez	a0, .LBB7_4
 .LBB7_2:                                # %entry
-	beqz	a0, .LBB7_4
+	lui	a0, %hi(.LCPI7_0)
+	flw	fa4, %lo(.LCPI7_0)(a0)
+	fle.s	a0, fa4, fa5
+	xori	a0, a0, 1
+	ret
+.LBB7_3:                                # %entry
+	fmv.s	fa5, fa0
+	beqz	a0, .LBB7_2
+.LBB7_4:
 	fmv.w.x	fa5, zero
-.LBB7_4:                                # %entry
 	lui	a0, %hi(.LCPI7_0)
 	flw	fa4, %lo(.LCPI7_0)(a0)
 	fle.s	a0, fa4, fa5
@@ -252,13 +259,21 @@ func0000000000000025:                   # @func0000000000000025
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	andi	a0, a0, 1
-	bnez	a1, .LBB12_2
-	fmv.s	fa5, fa0
-.LBB12_2:                               # %entry
+	beqz	a1, .LBB12_3
 	fli.s	fa4, 1.0
-	bnez	a0, .LBB12_4
-	fmv.s	fa4, fa5
+	beqz	a0, .LBB12_4
+.LBB12_2:                               # %entry
+	lui	a0, %hi(.LCPI12_0)
+	flw	fa5, %lo(.LCPI12_0)(a0)
+	fle.s	a0, fa4, fa5
+	xori	a0, a0, 1
+	ret
+.LBB12_3:                               # %entry
+	fmv.s	fa5, fa0
+	fli.s	fa4, 1.0
+	bnez	a0, .LBB12_2
 .LBB12_4:                               # %entry
+	fmv.s	fa4, fa5
 	lui	a0, %hi(.LCPI12_0)
 	flw	fa5, %lo(.LCPI12_0)(a0)
 	fle.s	a0, fa4, fa5

@@ -172,17 +172,26 @@ func0000000000000445:                   # @func0000000000000445
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	flt.d	a0, fa5, fa2
-	bnez	a0, .LBB7_2
-	fmv.d	fa1, fa2
-.LBB7_2:                                # %entry
+	beqz	a0, .LBB7_3
 	lui	a0, %hi(.LCPI7_1)
 	fld	fa5, %lo(.LCPI7_1)(a0)
 	flt.d	a0, fa5, fa1
-	bnez	a0, .LBB7_4
-	fmv.d	fa0, fa1
-.LBB7_4:                                # %entry
+	beqz	a0, .LBB7_4
+.LBB7_2:                                # %entry
 	lui	a0, %hi(.LCPI7_2)
 	fld	fa5, %lo(.LCPI7_2)(a0)
 	fle.d	a0, fa0, fa5
+	xori	a0, a0, 1
+	ret
+.LBB7_3:                                # %entry
+	fmv.d	fa1, fa2
+	lui	a0, %hi(.LCPI7_1)
+	fld	fa5, %lo(.LCPI7_1)(a0)
+	flt.d	a0, fa5, fa2
+	bnez	a0, .LBB7_2
+.LBB7_4:                                # %entry
+	lui	a0, %hi(.LCPI7_2)
+	fld	fa5, %lo(.LCPI7_2)(a0)
+	fle.d	a0, fa1, fa5
 	xori	a0, a0, 1
 	ret

@@ -97,12 +97,19 @@ func0000000000000043:                   # @func0000000000000043
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa4
 	andi	a0, a0, 1
-	bnez	a1, .LBB4_2
-	fmv.s	fa5, fa4
+	beqz	a1, .LBB4_3
+	bnez	a0, .LBB4_4
 .LBB4_2:                                # %entry
-	beqz	a0, .LBB4_4
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa4, %lo(.LCPI4_0)(a0)
+	fle.s	a0, fa4, fa5
+	xori	a0, a0, 1
+	ret
+.LBB4_3:                                # %entry
+	fmv.s	fa5, fa4
+	beqz	a0, .LBB4_2
+.LBB4_4:
 	fmv.w.x	fa5, zero
-.LBB4_4:                                # %entry
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa4, %lo(.LCPI4_0)(a0)
 	fle.s	a0, fa4, fa5

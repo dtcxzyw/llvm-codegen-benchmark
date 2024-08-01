@@ -13,11 +13,14 @@ func0000000000000002:                   # @func0000000000000002
 	beqz	a1, .LBB1_2
 	lui	a1, 921600
 	addiw	a1, a1, -1026
-	j	.LBB1_3
+	lui	a2, 983040
+	addiw	a2, a2, -1
+	and	a0, a0, a2
+	or	a0, a0, a1
+	ret
 .LBB1_2:
 	lui	a1, 524288
 	and	a1, a1, a2
-.LBB1_3:                                # %entry
 	lui	a2, 983040
 	addiw	a2, a2, -1
 	and	a0, a0, a2

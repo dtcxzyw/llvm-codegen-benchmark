@@ -99,10 +99,13 @@ func0000000000000111:                   # @func0000000000000111
 	lui	a1, 2
 	bltu	a3, a2, .LBB9_2
 	addiw	a1, a1, 542
-	j	.LBB9_3
+	addi	a0, a0, -5
+	seqz	a0, a0
+	slli	a0, a0, 6
+	or	a0, a0, a1
+	ret
 .LBB9_2:
 	addiw	a1, a1, 798
-.LBB9_3:                                # %entry
 	addi	a0, a0, -5
 	seqz	a0, a0
 	slli	a0, a0, 6

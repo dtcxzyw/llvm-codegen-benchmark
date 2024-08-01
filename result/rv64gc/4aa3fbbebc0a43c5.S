@@ -23,10 +23,14 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a2, 1
 	beq	a3, a4, .LBB2_2
 	addiw	a2, a2, 936
-	j	.LBB2_3
+	add	a1, a1, a2
+	li	a2, 40
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	addi	a0, a0, -40
+	ret
 .LBB2_2:
 	addiw	a2, a2, 336
-.LBB2_3:                                # %entry
 	add	a1, a1, a2
 	li	a2, 40
 	mul	a0, a0, a2
@@ -111,10 +115,13 @@ func000000000000000d:                   # @func000000000000000d
 	lui	a2, 1
 	beqz	a3, .LBB10_2
 	addiw	a2, a2, -2032
-	j	.LBB10_3
+	slli	a0, a0, 3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 4
+	ret
 .LBB10_2:
 	addiw	a2, a2, -2024
-.LBB10_3:                               # %entry
 	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2

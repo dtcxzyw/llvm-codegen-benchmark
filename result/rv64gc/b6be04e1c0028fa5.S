@@ -39,13 +39,20 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	sext.w	a2, a0
-	blt	a2, a1, .LBB3_2
-	mv	a2, a1
+	bge	a2, a1, .LBB3_3
+	bnez	a1, .LBB3_4
 .LBB3_2:                                # %entry
-	beqz	a1, .LBB3_4
-	mv	a0, a2
-.LBB3_4:                                # %entry
 	sext.w	a0, a0
+	lui	a1, 244141
+	addiw	a1, a1, -1536
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB3_3:                                # %entry
+	mv	a2, a1
+	beqz	a1, .LBB3_2
+.LBB3_4:                                # %entry
+	sext.w	a0, a2
 	lui	a1, 244141
 	addiw	a1, a1, -1536
 	xor	a0, a0, a1

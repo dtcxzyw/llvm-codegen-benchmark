@@ -19,11 +19,15 @@ func000000000000004c:                   # @func000000000000004c
 	bnez	a2, .LBB1_2
 	li	a2, -1
 	slli	a2, a2, 63
-	j	.LBB1_3
+	and	a1, a1, a2
+	snez	a1, a1
+	srli	a0, a0, 15
+	seqz	a0, a0
+	and	a0, a0, a1
+	ret
 .LBB1_2:
 	li	a2, 1
 	slli	a2, a2, 31
-.LBB1_3:                                # %entry
 	and	a1, a1, a2
 	snez	a1, a1
 	srli	a0, a0, 15

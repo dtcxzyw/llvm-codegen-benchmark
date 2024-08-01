@@ -9,20 +9,25 @@ func0000000000000012:                   # @func0000000000000012
 	mul	a4, a2, a3
 	mv	a2, a0
 	mv	a3, a1
-	bltu	a4, a1, .LBB0_2
-	mv	a3, a4
-.LBB0_2:                                # %entry
+	bgeu	a4, a1, .LBB0_4
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	add	a1, a1, a3
 	andi	a2, a2, 1
 	bgeu	a1, a0, .LBB0_5
+.LBB0_2:                                # %entry
 	beqz	a2, .LBB0_6
-.LBB0_4:                                # %entry
+.LBB0_3:                                # %entry
 	ret
+.LBB0_4:                                # %entry
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	add	a1, a1, a4
+	andi	a2, a2, 1
+	bltu	a1, a0, .LBB0_2
 .LBB0_5:                                # %entry
 	mv	a1, a0
-	bnez	a2, .LBB0_4
+	bnez	a2, .LBB0_3
 .LBB0_6:                                # %entry
 	mv	a0, a1
 	ret

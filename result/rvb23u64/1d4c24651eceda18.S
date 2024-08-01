@@ -100,17 +100,25 @@ func0000000000000044:                   # @func0000000000000044
 	.word	0x3d25aee6                      # float 0.0404499993
 func0000000000000045:                   # @func0000000000000045
 	andi	a0, a0, 1
-	beqz	a0, .LBB4_2
-	fmv.w.x	fa0, zero
-.LBB4_2:                                # %entry
+	bnez	a0, .LBB4_3
 	fli.s	fa5, 1.0
 	flt.s	a0, fa5, fa0
-	bnez	a0, .LBB4_4
-	fmv.s	fa5, fa0
-.LBB4_4:                                # %entry
+	beqz	a0, .LBB4_4
+.LBB4_2:                                # %entry
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa4, %lo(.LCPI4_0)(a0)
 	fle.s	a0, fa5, fa4
+	xori	a0, a0, 1
+	ret
+.LBB4_3:
+	fmv.w.x	fa0, zero
+	fli.s	fa5, 1.0
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB4_2
+.LBB4_4:                                # %entry
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa4, %lo(.LCPI4_0)(a0)
+	fle.s	a0, fa0, fa4
 	xori	a0, a0, 1
 	ret
 .LCPI5_0:

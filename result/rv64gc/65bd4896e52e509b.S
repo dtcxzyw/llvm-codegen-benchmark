@@ -22,11 +22,14 @@ func0000000000000015:                   # @func0000000000000015
 	beqz	a1, .LBB2_2
 	lui	a1, 155
 	addiw	a1, a1, -1648
-	j	.LBB2_3
+	lui	a2, 1
+	addiw	a2, a2, -2013
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
 .LBB2_2:
 	lui	a1, 224
 	addiw	a1, a1, -984
-.LBB2_3:                                # %entry
 	lui	a2, 1
 	addiw	a2, a2, -2013
 	mul	a0, a0, a2

@@ -19,14 +19,21 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000014:                   # @func0000000000000014
 	andi	a3, a1, 1
 	sext.w	a1, a0
-	bnez	a3, .LBB1_2
-	li	a2, 26
-.LBB1_2:                                # %entry
+	beqz	a3, .LBB1_3
 	li	a3, -1
-	beq	a1, a3, .LBB1_4
-	mv	a2, a0
-.LBB1_4:                                # %entry
+	bne	a1, a3, .LBB1_4
+.LBB1_2:                                # %entry
 	sext.w	a2, a2
+	lui	a0, 524288
+	addiw	a0, a0, -10
+	sltu	a0, a2, a0
+	ret
+.LBB1_3:                                # %entry
+	li	a2, 26
+	li	a3, -1
+	beq	a1, a3, .LBB1_2
+.LBB1_4:                                # %entry
+	sext.w	a2, a0
 	lui	a0, 524288
 	addiw	a0, a0, -10
 	sltu	a0, a2, a0

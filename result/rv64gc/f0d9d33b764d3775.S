@@ -23,15 +23,23 @@ func0000000000000042:                   # @func0000000000000042
 func0000000000000024:                   # @func0000000000000024
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa0, fa5
-	bnez	a0, .LBB1_2
-	fmv.s	fa5, fa0
-.LBB1_2:                                # %entry
+	beqz	a0, .LBB1_3
 	lui	a0, 292864
 	lui	a1, 260096
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa0
 	fmv.w.x	fa0, a0
-	bnez	a1, .LBB1_4
-	fmul.s	fa0, fa5, fa0
+	beqz	a1, .LBB1_4
+.LBB1_2:                                # %entry
+	ret
+.LBB1_3:                                # %entry
+	fmv.s	fa5, fa0
+	lui	a0, 292864
+	lui	a1, 260096
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa4, fa0
+	fmv.w.x	fa0, a0
+	bnez	a1, .LBB1_2
 .LBB1_4:                                # %entry
+	fmul.s	fa0, fa5, fa0
 	ret

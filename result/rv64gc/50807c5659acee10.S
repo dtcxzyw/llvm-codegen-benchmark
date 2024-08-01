@@ -16,14 +16,18 @@ func0000000000000041:                   # @func0000000000000041
 	srl	a4, a1, a3
 	bltz	a5, .LBB2_2
 	mv	a0, a4
-	j	.LBB2_3
+	srai	a5, a5, 63
+	and	a4, a4, a5
+	xor	a0, a0, a2
+	or	a0, a0, a4
+	seqz	a0, a0
+	ret
 .LBB2_2:
 	srl	a0, a0, a3
 	not	a3, a3
 	slli	a1, a1, 1
 	sll	a1, a1, a3
 	or	a0, a0, a1
-.LBB2_3:                                # %entry
 	srai	a5, a5, 63
 	and	a4, a4, a5
 	xor	a0, a0, a2

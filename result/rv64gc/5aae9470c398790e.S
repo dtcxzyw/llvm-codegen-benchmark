@@ -24,10 +24,14 @@ func0000000000000020:                   # @func0000000000000020
 	andi	a0, a0, 1
 	bltu	a3, a2, .LBB2_2
 	lui	a2, 6
-	j	.LBB2_3
+	addiw	a2, a2, 1604
+	or	a1, a1, a2
+	addi	a0, a0, -1
+	andi	a0, a0, 32
+	or	a0, a0, a1
+	ret
 .LBB2_2:
 	lui	a2, 7
-.LBB2_3:                                # %entry
 	addiw	a2, a2, 1604
 	or	a1, a1, a2
 	addi	a0, a0, -1

@@ -47,11 +47,15 @@ func0000000000000018:                   # @func0000000000000018
 	bnez	a2, .LBB4_2
 	lui	a2, 1040384
 	addiw	a2, a2, 575
-	j	.LBB4_3
+	or	a1, a1, a2
+	sltiu	a0, a0, 14
+	xori	a0, a0, 1
+	slli	a0, a0, 19
+	or	a0, a0, a1
+	ret
 .LBB4_2:
 	lui	a2, 1040385
 	addiw	a2, a2, -1473
-.LBB4_3:                                # %entry
 	or	a1, a1, a2
 	sltiu	a0, a0, 14
 	xori	a0, a0, 1
@@ -64,11 +68,14 @@ func0000000000000006:                   # @func0000000000000006
 	srai	a0, a0, 48
 	bnez	a2, .LBB5_2
 	li	a2, 128
-	j	.LBB5_3
+	or	a1, a1, a2
+	slti	a0, a0, 1
+	slli	a0, a0, 5
+	or	a0, a0, a1
+	ret
 .LBB5_2:
 	lui	a2, 8
 	addiw	a2, a2, 780
-.LBB5_3:                                # %entry
 	or	a1, a1, a2
 	slti	a0, a0, 1
 	slli	a0, a0, 5

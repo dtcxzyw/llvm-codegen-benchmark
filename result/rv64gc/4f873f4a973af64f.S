@@ -13,7 +13,11 @@ func000000000000000e:                   # @func000000000000000e
 	mulhu	a3, a5, a2
 	bltz	a1, .LBB1_2
 	srl	a2, a3, a4
-	j	.LBB1_3
+	srl	a0, a3, a0
+	srai	a1, a1, 63
+	and	a1, a1, a0
+	mv	a0, a2
+	ret
 .LBB1_2:
 	mul	a2, a5, a2
 	srl	a2, a2, a0
@@ -21,7 +25,6 @@ func000000000000000e:                   # @func000000000000000e
 	not	a4, a4
 	sll	a4, a5, a4
 	or	a2, a2, a4
-.LBB1_3:                                # %entry
 	srl	a0, a3, a0
 	srai	a1, a1, 63
 	and	a1, a1, a0

@@ -8,16 +8,26 @@ func000000000000002d:                   # @func000000000000002d
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	mv	a3, a2
-	bltu	a1, a2, .LBB0_2
-	mv	a3, a1
-.LBB0_2:                                # %entry
+	bgeu	a1, a2, .LBB0_3
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	add	a2, a2, a3
-	bltu	a2, a1, .LBB0_4
-	mv	a2, a1
-.LBB0_4:                                # %entry
+	bgeu	a2, a1, .LBB0_4
+.LBB0_2:                                # %entry
 	slli	a1, a2, 3
+	slli	a2, a2, 6
+	sub	a2, a2, a1
+	add	a0, a0, a2
+	ret
+.LBB0_3:                                # %entry
+	mv	a3, a1
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	add	a2, a2, a3
+	bltu	a2, a1, .LBB0_2
+.LBB0_4:                                # %entry
+	mv	a2, a1
+	slli	a1, a1, 3
 	slli	a2, a2, 6
 	sub	a2, a2, a1
 	add	a0, a0, a2

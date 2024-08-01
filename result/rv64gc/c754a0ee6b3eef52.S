@@ -3,10 +3,13 @@ func000000000000000f:                   # @func000000000000000f
 	bnez	a1, .LBB0_2
 	addi	a2, a2, 7
 	slli	a1, a2, 32
-	j	.LBB0_3
+	srli	a1, a1, 32
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, -8
+	ret
 .LBB0_2:
 	li	a1, -1
-.LBB0_3:                                # %entry
 	srli	a1, a1, 32
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -17,10 +20,13 @@ func000000000000000e:                   # @func000000000000000e
 	bnez	a1, .LBB1_2
 	addi	a2, a2, 7
 	slli	a1, a2, 32
-	j	.LBB1_3
+	srli	a1, a1, 32
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, -64
+	ret
 .LBB1_2:
 	li	a1, -1
-.LBB1_3:                                # %entry
 	srli	a1, a1, 32
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -31,10 +37,13 @@ func0000000000000003:                   # @func0000000000000003
 	bnez	a1, .LBB2_2
 	addi	a2, a2, 7
 	slli	a1, a2, 32
-	j	.LBB2_3
+	srli	a1, a1, 32
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, -8
+	ret
 .LBB2_2:
 	li	a1, -1
-.LBB2_3:                                # %entry
 	srli	a1, a1, 32
 	slli	a1, a1, 3
 	add	a0, a0, a1

@@ -40,10 +40,14 @@ func0000000000000029:                   # @func0000000000000029
 func000000000000001d:                   # @func000000000000001d
 	beq	a3, a5, .LBB8_2
 	slt	a2, a5, a3
-	j	.LBB8_3
+	xori	a3, a2, 1
+	sub	a2, a0, a3
+	sltu	a0, a0, a3
+	sub	a1, a1, a0
+	mv	a0, a2
+	ret
 .LBB8_2:
 	sltu	a2, a4, a2
-.LBB8_3:                                # %entry
 	xori	a3, a2, 1
 	sub	a2, a0, a3
 	sltu	a0, a0, a3

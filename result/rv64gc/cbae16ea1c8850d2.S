@@ -32,10 +32,14 @@ func0000000000000038:                   # @func0000000000000038
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	j	.LBB0_3
+	li	a1, 64
+	subw	a1, a1, a0
+	andi	a0, a1, 126
+	sltiu	a0, a0, 53
+	xori	a0, a0, 1
+	ret
 .LBB0_2:
 	li	a0, 32
-.LBB0_3:                                # %cond.end
 	li	a1, 64
 	subw	a1, a1, a0
 	andi	a0, a1, 126
@@ -76,10 +80,14 @@ func0000000000000031:                   # @func0000000000000031
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	j	.LBB1_3
+	li	a1, 64
+	subw	a1, a1, a0
+	andi	a0, a1, 126
+	addi	a0, a0, -52
+	seqz	a0, a0
+	ret
 .LBB1_2:
 	li	a0, 32
-.LBB1_3:                                # %cond.end
 	li	a1, 64
 	subw	a1, a1, a0
 	andi	a0, a1, 126
@@ -175,10 +183,13 @@ func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	j	.LBB3_3
+	li	a1, 63
+	subw	a1, a1, a0
+	andi	a0, a1, 63
+	seqz	a0, a0
+	ret
 .LBB3_2:
 	li	a0, 64
-.LBB3_3:                                # %cond.end
 	li	a1, 63
 	subw	a1, a1, a0
 	andi	a0, a1, 63

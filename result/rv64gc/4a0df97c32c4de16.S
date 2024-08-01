@@ -25,16 +25,23 @@ func0000000000000022:                   # @func0000000000000022
 	lui	a0, 260096
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa1, fa4
-	bnez	a0, .LBB1_2
-	fmv.s	fa4, fa1
-.LBB1_2:                                # %entry
+	beqz	a0, .LBB1_3
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	fdiv.s	fa4, fa0, fa4
 	flt.s	a0, fa4, fa5
-	bnez	a0, .LBB1_4
-	fmv.s	fa5, fa4
+	beqz	a0, .LBB1_4
+.LBB1_2:                                # %entry
+	fmv.s	fa0, fa5
+	ret
+.LBB1_3:                                # %entry
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	fdiv.s	fa4, fa0, fa1
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
+	fmv.s	fa5, fa4
 	fmv.s	fa0, fa5
 	ret
 .LCPI2_0:
@@ -45,15 +52,22 @@ func0000000000000024:                   # @func0000000000000024
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa4, %lo(.LCPI2_0)(a0)
 	flt.d	a0, fa1, fa4
-	bnez	a0, .LBB2_2
-	fmv.d	fa4, fa1
-.LBB2_2:                                # %entry
+	beqz	a0, .LBB2_3
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_1)(a0)
 	fdiv.d	fa4, fa0, fa4
 	flt.d	a0, fa5, fa4
-	bnez	a0, .LBB2_4
-	fmv.d	fa5, fa4
+	beqz	a0, .LBB2_4
+.LBB2_2:                                # %entry
+	fmv.d	fa0, fa5
+	ret
+.LBB2_3:                                # %entry
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	fdiv.d	fa4, fa0, fa1
+	flt.d	a0, fa5, fa4
+	bnez	a0, .LBB2_2
 .LBB2_4:                                # %entry
+	fmv.d	fa5, fa4
 	fmv.d	fa0, fa5
 	ret

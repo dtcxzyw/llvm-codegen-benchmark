@@ -31,10 +31,14 @@ func00000000000000cc:                   # @func00000000000000cc
 	lui	a2, 14
 	bnez	a3, .LBB2_2
 	addiw	a2, a2, -1025
-	j	.LBB2_3
+	slt	a0, a2, a0
+	lui	a2, 13
+	addiw	a2, a2, 2047
+	slt	a1, a1, a2
+	or	a0, a0, a1
+	ret
 .LBB2_2:
 	addiw	a2, a2, -1
-.LBB2_3:                                # %entry
 	slt	a0, a2, a0
 	lui	a2, 13
 	addiw	a2, a2, 2047

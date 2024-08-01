@@ -32,11 +32,14 @@ func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fsub.s	fa5, fa0, fa1
-	j	.LBB2_3
+	lui	a0, %hi(.LCPI2_1)
+	flw	fa4, %lo(.LCPI2_1)(a0)
+	fle.s	a0, fa5, fa4
+	xori	a0, a0, 1
+	ret
 .LBB2_2:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-.LBB2_3:                                # %entry
 	lui	a0, %hi(.LCPI2_1)
 	flw	fa4, %lo(.LCPI2_1)(a0)
 	fle.s	a0, fa5, fa4

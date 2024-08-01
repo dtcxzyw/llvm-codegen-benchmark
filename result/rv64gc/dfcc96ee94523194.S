@@ -3,10 +3,13 @@ func0000000000000054:                   # @func0000000000000054
 	lui	a1, 143
 	bnez	a2, .LBB0_2
 	addiw	a1, a1, -1340
-	j	.LBB0_3
+	lui	a2, 1
+	addiw	a2, a2, 616
+	add	a0, a0, a2
+	sltu	a0, a0, a1
+	ret
 .LBB0_2:
 	addiw	a1, a1, -1328
-.LBB0_3:                                # %entry
 	lui	a2, 1
 	addiw	a2, a2, 616
 	add	a0, a0, a2

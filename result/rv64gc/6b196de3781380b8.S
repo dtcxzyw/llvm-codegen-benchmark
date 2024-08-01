@@ -30,12 +30,15 @@ func0000000000000001:                   # @func0000000000000001
 	sll	a1, a2, a0
 	bltz	a3, .LBB4_2
 	mv	a0, a1
-	j	.LBB4_3
+	srai	a3, a3, 63
+	and	a1, a1, a3
+	or	a0, a0, a1
+	seqz	a0, a0
+	ret
 .LBB4_2:
 	not	a0, a0
 	srli	a2, a2, 1
 	srl	a0, a2, a0
-.LBB4_3:                                # %entry
 	srai	a3, a3, 63
 	and	a1, a1, a3
 	or	a0, a0, a1

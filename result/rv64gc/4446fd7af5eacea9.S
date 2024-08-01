@@ -21,12 +21,16 @@ func0000000000000016:                   # @func0000000000000016
 	addi	a4, a5, -64
 	bltz	a4, .LBB3_2
 	sll	a5, a2, a5
-	j	.LBB3_3
+	sll	a2, a2, a3
+	srai	a4, a4, 63
+	and	a2, a2, a4
+	or	a1, a1, a5
+	or	a0, a0, a2
+	ret
 .LBB3_2:
 	srli	a6, a2, 1
 	not	a5, a5
 	srl	a5, a6, a5
-.LBB3_3:                                # %entry
 	sll	a2, a2, a3
 	srai	a4, a4, 63
 	and	a2, a2, a4

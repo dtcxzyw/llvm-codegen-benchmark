@@ -54,13 +54,19 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a3, a2
 	sext.w	a2, a1
 	andi	a0, a0, 1
-	bltu	a2, a3, .LBB3_2
-	mv	a2, a3
+	bgeu	a2, a3, .LBB3_3
+	beqz	a0, .LBB3_4
 .LBB3_2:                                # %entry
-	bnez	a0, .LBB3_4
-	mv	a1, a2
-.LBB3_4:                                # %entry
 	sext.w	a1, a1
+	lui	a0, 524288
+	addiw	a0, a0, -1
+	sltu	a0, a1, a0
+	ret
+.LBB3_3:                                # %entry
+	mv	a2, a3
+	bnez	a0, .LBB3_2
+.LBB3_4:                                # %entry
+	sext.w	a1, a2
 	lui	a0, 524288
 	addiw	a0, a0, -1
 	sltu	a0, a1, a0

@@ -135,10 +135,13 @@ func0000000000000019:                   # @func0000000000000019
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	j	.LBB2_3
+	li	a1, 67
+	subw	a1, a1, a0
+	srliw	a0, a1, 2
+	addi	a0, a0, -1
+	ret
 .LBB2_2:
 	li	a0, 64
-.LBB2_3:                                # %cond.end
 	li	a1, 67
 	subw	a1, a1, a0
 	srliw	a0, a1, 2

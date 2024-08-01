@@ -88,10 +88,13 @@ func0000000000000007:                   # @func0000000000000007
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 56
-	j	.LBB1_3
+	li	a2, 60
+	sub	a2, a2, a1
+	slli	a2, a2, 3
+	add	a0, a0, a2
+	ret
 .LBB1_2:
 	li	a1, 64
-.LBB1_3:                                # %cond.end
 	li	a2, 60
 	sub	a2, a2, a1
 	slli	a2, a2, 3

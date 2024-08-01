@@ -3,10 +3,13 @@ func0000000000000010:                   # @func0000000000000010
 	flt.s	a1, fa5, fa0
 	bnez	a1, .LBB0_2
 	lui	a1, 782336
-	j	.LBB0_3
+	fmv.w.x	fa5, a1
+	fadd.s	fa5, fa5, fa0
+	fcvt.l.s	a1, fa5, rtz
+	add	a0, a0, a1
+	ret
 .LBB0_2:
 	lui	a1, 258048
-.LBB0_3:                                # %entry
 	fmv.w.x	fa5, a1
 	fadd.s	fa5, fa5, fa0
 	fcvt.l.s	a1, fa5, rtz

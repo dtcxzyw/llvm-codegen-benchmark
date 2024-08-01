@@ -2,16 +2,23 @@
 	.word	0x3f8147ae                      # float 1.00999999
 func0000000000000022:                   # @func0000000000000022
 	flt.s	a0, fa1, fa2
-	bnez	a0, .LBB0_2
-	fmv.s	fa1, fa2
-.LBB0_2:                                # %entry
+	beqz	a0, .LBB0_3
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	fmul.s	fa4, fa1, fa0
 	flt.s	a0, fa4, fa5
-	bnez	a0, .LBB0_4
-	fmv.s	fa5, fa4
+	beqz	a0, .LBB0_4
+.LBB0_2:                                # %entry
+	fmv.s	fa0, fa5
+	ret
+.LBB0_3:                                # %entry
+	lui	a0, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
+	fmul.s	fa4, fa2, fa0
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
+	fmv.s	fa5, fa4
 	fmv.s	fa0, fa5
 	ret
 func00000000000000cc:                   # @func00000000000000cc

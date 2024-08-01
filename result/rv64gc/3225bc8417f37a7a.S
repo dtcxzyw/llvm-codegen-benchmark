@@ -16,10 +16,14 @@ func000000000000000e:                   # @func000000000000000e
 	lui	a2, 1
 	beq	a3, a4, .LBB1_2
 	addiw	a2, a2, 936
-	j	.LBB1_3
+	add	a0, a0, a2
+	sext.w	a1, a1
+	li	a2, 40
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
 .LBB1_2:
 	addiw	a2, a2, 336
-.LBB1_3:                                # %entry
 	add	a0, a0, a2
 	sext.w	a1, a1
 	li	a2, 40
@@ -117,11 +121,14 @@ func0000000000000040:                   # @func0000000000000040
 	li	a3, 2
 	bltu	a3, a2, .LBB10_2
 	li	a2, 64
-	j	.LBB10_3
+	add	a0, a0, a2
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	add	a0, a0, a1
+	ret
 .LBB10_2:
 	li	a2, 21
 	slli	a2, a2, 10
-.LBB10_3:                               # %entry
 	add	a0, a0, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

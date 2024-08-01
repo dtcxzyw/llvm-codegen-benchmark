@@ -55,10 +55,14 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a2, a2, %lo(.LCPI2_0)
 	add	a1, a1, a2
 	lbu	a1, 0(a1)
-	j	.LBB2_3
+	slli	a1, a1, 3
+	lui	a2, 7
+	addiw	a2, a2, 712
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
 .LBB2_2:
 	li	a1, 32
-.LBB2_3:                                # %cond.end
 	slli	a1, a1, 3
 	lui	a2, 7
 	addiw	a2, a2, 712

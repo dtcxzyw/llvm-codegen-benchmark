@@ -29,10 +29,14 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, 788480
-	j	.LBB2_3
+	fmv.w.x	fa5, a0
+	fadd.s	fa5, fa5, fa0
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
+	ret
 .LBB2_2:
 	lui	a0, 262144
-.LBB2_3:                                # %entry
 	fmv.w.x	fa5, a0
 	fadd.s	fa5, fa5, fa0
 	lui	a0, 260096

@@ -41,10 +41,13 @@ func000000000000000d:                   # @func000000000000000d
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 56
-	j	.LBB0_3
+	slli	a1, a1, 23
+	slli	a0, a0, 41
+	srli	a0, a0, 41
+	subw	a0, a0, a1
+	ret
 .LBB0_2:
 	li	a1, 64
-.LBB0_3:                                # %cond.end
 	slli	a1, a1, 23
 	slli	a0, a0, 41
 	srli	a0, a0, 41

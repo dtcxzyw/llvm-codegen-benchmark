@@ -61,10 +61,13 @@ func0000000000000062:                   # @func0000000000000062
 	andi	a1, a1, 255
 	bnez	a1, .LBB4_2
 	lui	a1, 32768
-	j	.LBB4_3
+	lui	a2, 1014016
+	addiw	a2, a2, -1
+	and	a0, a0, a2
+	or	a0, a0, a1
+	ret
 .LBB4_2:
 	slliw	a1, a2, 20
-.LBB4_3:                                # %entry
 	lui	a2, 1014016
 	addiw	a2, a2, -1
 	and	a0, a0, a2

@@ -30,10 +30,14 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 52
 	srli	a0, a0, 60
 	add	a0, a0, a2
-	j	.LBB0_3
+	li	a2, 14
+	subw	a2, a2, a0
+	andi	a2, a2, 15
+	srli	a1, a1, 48
+	srl	a0, a1, a2
+	ret
 .LBB0_2:
 	li	a0, 16
-.LBB0_3:                                # %cond.end
 	li	a2, 14
 	subw	a2, a2, a0
 	andi	a2, a2, 15

@@ -89,10 +89,13 @@ func000000000000000b:                   # @func000000000000000b
 	andi	a0, a0, 1
 	bnez	a0, .LBB8_2
 	fadd.d	fa5, fa0, fa1
-	j	.LBB8_3
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa4, %lo(.LCPI8_0)(a0)
+	flt.d	a0, fa4, fa5
+	xori	a0, a0, 1
+	ret
 .LBB8_2:
 	fmv.d.x	fa5, zero
-.LBB8_3:                                # %entry
 	lui	a0, %hi(.LCPI8_0)
 	fld	fa4, %lo(.LCPI8_0)(a0)
 	flt.d	a0, fa4, fa5

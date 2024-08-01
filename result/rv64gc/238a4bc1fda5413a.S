@@ -114,16 +114,23 @@ func0000000000000225:                   # @func0000000000000225
 	ret
 func000000000000022b:                   # @func000000000000022b
 	flt.s	a0, fa1, fa2
-	bnez	a0, .LBB6_2
-	fmv.s	fa1, fa2
-.LBB6_2:                                # %entry
+	beqz	a0, .LBB6_3
 	flt.s	a0, fa1, fa0
-	bnez	a0, .LBB6_4
-	fmv.s	fa0, fa1
-.LBB6_4:                                # %entry
+	beqz	a0, .LBB6_4
+.LBB6_2:                                # %entry
 	lui	a0, 258048
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa0
+	xori	a0, a0, 1
+	ret
+.LBB6_3:                                # %entry
+	fmv.s	fa1, fa2
+	flt.s	a0, fa2, fa0
+	bnez	a0, .LBB6_2
+.LBB6_4:                                # %entry
+	lui	a0, 258048
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa1
 	xori	a0, a0, 1
 	ret
 func0000000000000247:                   # @func0000000000000247

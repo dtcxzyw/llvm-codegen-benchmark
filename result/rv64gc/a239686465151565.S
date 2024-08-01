@@ -45,13 +45,16 @@ func000000000000003d:                   # @func000000000000003d
 	sll	a0, a2, a0
 	bltz	a1, .LBB6_2
 	sll	a2, a2, a3
-	j	.LBB6_3
+	srai	a1, a1, 63
+	and	a0, a0, a1
+	not	a1, a2
+	not	a0, a0
+	ret
 .LBB6_2:
 	not	a3, a3
 	srli	a2, a2, 1
 	srl	a2, a2, a3
 	or	a2, a2, a0
-.LBB6_3:                                # %entry
 	srai	a1, a1, 63
 	and	a0, a0, a1
 	not	a1, a2

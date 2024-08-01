@@ -33,10 +33,13 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a2, 1
 	beq	a3, a4, .LBB3_2
 	addiw	a2, a2, 936
-	j	.LBB3_3
+	add	a1, a1, a2
+	li	a2, 40
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	ret
 .LBB3_2:
 	addiw	a2, a2, 336
-.LBB3_3:                                # %entry
 	add	a1, a1, a2
 	li	a2, 40
 	mul	a0, a0, a2

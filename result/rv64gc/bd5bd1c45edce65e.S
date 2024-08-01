@@ -28,11 +28,14 @@ func0000000000000001:                   # @func0000000000000001
 	bnez	a1, .LBB3_2
 	lui	a1, 174
 	addiw	a1, a1, 1728
-	j	.LBB3_3
+	add	a0, a0, a1
+	lui	a1, 29
+	addiw	a1, a1, 288
+	add	a0, a0, a1
+	ret
 .LBB3_2:
 	lui	a1, 349
 	addiw	a1, a1, -640
-.LBB3_3:                                # %entry
 	add	a0, a0, a1
 	lui	a1, 29
 	addiw	a1, a1, 288

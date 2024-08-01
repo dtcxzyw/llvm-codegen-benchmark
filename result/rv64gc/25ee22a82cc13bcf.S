@@ -15,10 +15,13 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a1, 16
 	bnez	a2, .LBB1_2
 	addiw	a1, a1, -2
-	j	.LBB1_3
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -2
+	add	a0, a0, a1
+	ret
 .LBB1_2:
 	addiw	a1, a1, -4
-.LBB1_3:                                # %entry
 	seqz	a0, a0
 	addi	a0, a0, -1
 	andi	a0, a0, -2

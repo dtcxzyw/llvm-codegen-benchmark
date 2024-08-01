@@ -71,17 +71,25 @@ func000000000000006a:                   # @func000000000000006a
 	slli	a2, a2, 13
 	addi	a3, a2, 1290
 	li	a2, -1
-	bge	a0, a3, .LBB5_2
-	slli	a1, a2, 63
-	addi	a1, a1, 1
-.LBB5_2:                                # %entry
+	blt	a0, a3, .LBB5_3
 	lui	a3, 274878
 	addiw	a3, a3, -381
 	slli	a3, a3, 13
 	addi	a3, a3, -1290
-	bge	a3, a0, .LBB5_4
-	srli	a1, a2, 1
+	blt	a3, a0, .LBB5_4
+.LBB5_2:                                # %entry
+	mv	a0, a1
+	ret
+.LBB5_3:                                # %entry
+	slli	a1, a2, 63
+	addi	a1, a1, 1
+	lui	a3, 274878
+	addiw	a3, a3, -381
+	slli	a3, a3, 13
+	addi	a3, a3, -1290
+	bge	a3, a0, .LBB5_2
 .LBB5_4:                                # %entry
+	srli	a1, a2, 1
 	mv	a0, a1
 	ret
 func00000000000000aa:                   # @func00000000000000aa

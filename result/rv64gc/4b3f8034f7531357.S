@@ -56,20 +56,26 @@ func0000000000000044:                   # @func0000000000000044
 	lui	a1, 32
 	addiw	a4, a1, -1
 	li	a1, 17
-	bltu	a2, a4, .LBB2_2
-	li	a1, 21
-.LBB2_2:                                # %entry
+	bgeu	a2, a4, .LBB2_4
 	andi	a2, a0, 1
 	lui	a0, 1
 	addiw	a4, a0, 15
 	li	a0, 12
 	bgeu	a3, a4, .LBB2_5
+.LBB2_2:                                # %entry
 	beqz	a2, .LBB2_6
-.LBB2_4:                                # %entry
+.LBB2_3:                                # %entry
 	ret
+.LBB2_4:                                # %entry
+	li	a1, 21
+	andi	a2, a0, 1
+	lui	a0, 1
+	addiw	a4, a0, 15
+	li	a0, 12
+	bltu	a3, a4, .LBB2_2
 .LBB2_5:                                # %entry
 	li	a0, 15
-	bnez	a2, .LBB2_4
+	bnez	a2, .LBB2_3
 .LBB2_6:                                # %entry
 	mv	a0, a1
 	ret

@@ -43,12 +43,19 @@ func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sext.w	a0, a0
-	blt	a1, a2, .LBB3_2
-	mv	a1, a2
+	bge	a1, a2, .LBB3_3
+	bge	a1, a0, .LBB3_4
 .LBB3_2:                                # %entry
-	blt	a1, a0, .LBB3_4
-	mv	a1, a0
+	lui	a0, 244141
+	addiw	a0, a0, -1536
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB3_3:                                # %entry
+	mv	a1, a2
+	blt	a2, a0, .LBB3_2
 .LBB3_4:                                # %entry
+	mv	a1, a0
 	lui	a0, 244141
 	addiw	a0, a0, -1536
 	xor	a0, a0, a1

@@ -59,10 +59,13 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	fmv.d.x	fa5, zero
-	j	.LBB4_3
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa4, %lo(.LCPI4_0)(a0)
+	fle.d	a0, fa4, fa5
+	xori	a0, a0, 1
+	ret
 .LBB4_2:
 	fdiv.d	fa5, fa0, fa1
-.LBB4_3:                                # %entry
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa4, %lo(.LCPI4_0)(a0)
 	fle.d	a0, fa4, fa5

@@ -74,16 +74,23 @@ func0000000000000224:                   # @func0000000000000224
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000ac7:                   # @func0000000000000ac7
 	fle.d	a0, fa1, fa2
-	bnez	a0, .LBB4_2
-	fmv.d	fa1, fa2
-.LBB4_2:                                # %entry
+	beqz	a0, .LBB4_3
 	fle.d	a0, fa1, fa0
-	bnez	a0, .LBB4_4
-	fmv.d	fa0, fa1
-.LBB4_4:                                # %entry
+	beqz	a0, .LBB4_4
+.LBB4_2:                                # %entry
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	feq.d	a0, fa0, fa5
+	xori	a0, a0, 1
+	ret
+.LBB4_3:                                # %entry
+	fmv.d	fa1, fa2
+	fle.d	a0, fa2, fa0
+	bnez	a0, .LBB4_2
+.LBB4_4:                                # %entry
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
+	feq.d	a0, fa1, fa5
 	xori	a0, a0, 1
 	ret
 .LCPI5_0:

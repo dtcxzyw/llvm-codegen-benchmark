@@ -21,10 +21,14 @@ func0000000000000038:                   # @func0000000000000038
 	slli	a1, a1, 52
 	srli	a1, a1, 60
 	add	a1, a1, a2
-	j	.LBB0_3
+	add	a0, a0, a1
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	sltiu	a0, a0, 16
+	xori	a0, a0, 1
+	ret
 .LBB0_2:
 	li	a1, 16
-.LBB0_3:                                # %cond.end
 	add	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48

@@ -57,30 +57,34 @@ func0000000000000004:                   # @func0000000000000004
 	li	a4, -1
 	addi	a3, a2, -64
 	sll	a1, a4, a2
-	bltz	a3, .LBB3_2
+	bltz	a3, .LBB3_3
 	mv	a4, a1
-	j	.LBB3_3
-.LBB3_2:
-	not	a2, a2
-	srli	a4, a4, 1
-	srl	a4, a4, a2
-	or	a4, a4, a1
-.LBB3_3:                                # %entry
 	srai	a3, a3, 63
 	and	a1, a1, a3
 	addi	a3, a0, -64
 	sll	a2, a1, a0
-	bltz	a3, .LBB3_5
-	mv	a1, a2
-	srai	a0, a3, 63
-	and	a0, a0, a2
-	ret
-.LBB3_5:
+	bgez	a3, .LBB3_4
+.LBB3_2:
 	sll	a4, a4, a0
 	srli	a1, a1, 1
 	not	a0, a0
 	srl	a1, a1, a0
 	or	a1, a1, a4
+	srai	a0, a3, 63
+	and	a0, a0, a2
+	ret
+.LBB3_3:
+	not	a2, a2
+	srli	a4, a4, 1
+	srl	a4, a4, a2
+	or	a4, a4, a1
+	srai	a3, a3, 63
+	and	a1, a1, a3
+	addi	a3, a0, -64
+	sll	a2, a1, a0
+	bltz	a3, .LBB3_2
+.LBB3_4:                                # %entry
+	mv	a1, a2
 	srai	a0, a3, 63
 	and	a0, a0, a2
 	ret

@@ -34,11 +34,14 @@ func0000000000000001:                   # @func0000000000000001
 	bnez	a2, .LBB3_2
 	lui	a2, 1040384
 	addiw	a2, a2, 575
-	j	.LBB3_3
+	or	a1, a1, a2
+	andi	a0, a0, 1
+	slli	a0, a0, 19
+	or	a0, a0, a1
+	ret
 .LBB3_2:
 	lui	a2, 1040385
 	addiw	a2, a2, -1473
-.LBB3_3:                                # %entry
 	or	a1, a1, a2
 	andi	a0, a0, 1
 	slli	a0, a0, 19

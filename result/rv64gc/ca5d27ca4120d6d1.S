@@ -15,10 +15,13 @@ func0000000000000007:                   # @func0000000000000007
 	li	a3, 96
 	bne	a1, a3, .LBB1_2
 	li	a2, 2
-	j	.LBB1_3
+	or	a0, a0, a2
+	li	a1, 9
+	slli	a1, a1, 8
+	or	a0, a0, a1
+	ret
 .LBB1_2:
 	andi	a2, a2, 1
-.LBB1_3:                                # %entry
 	or	a0, a0, a2
 	li	a1, 9
 	slli	a1, a1, 8

@@ -42,11 +42,14 @@ func0000000000000028:                   # @func0000000000000028
 	blt	a2, a1, .LBB5_2
 	lui	a1, 174
 	addiw	a1, a1, 1728
-	j	.LBB5_3
+	add	a0, a0, a1
+	lui	a1, 44
+	addiw	a1, a1, -1616
+	add	a0, a0, a1
+	ret
 .LBB5_2:
 	lui	a1, 349
 	addiw	a1, a1, -640
-.LBB5_3:                                # %entry
 	add	a0, a0, a1
 	lui	a1, 44
 	addiw	a1, a1, -1616
@@ -58,11 +61,14 @@ func0000000000000029:                   # @func0000000000000029
 	blt	a2, a1, .LBB6_2
 	lui	a1, 174
 	addiw	a1, a1, 1728
-	j	.LBB6_3
+	add	a0, a0, a1
+	lui	a1, 29
+	addiw	a1, a1, 288
+	add	a0, a0, a1
+	ret
 .LBB6_2:
 	lui	a1, 349
 	addiw	a1, a1, -640
-.LBB6_3:                                # %entry
 	add	a0, a0, a1
 	lui	a1, 29
 	addiw	a1, a1, 288
