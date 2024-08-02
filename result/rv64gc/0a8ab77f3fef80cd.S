@@ -1,54 +1,36 @@
 func0000000000000034:                   # @func0000000000000034
-	li	a2, 64
-	li	a3, 64
+	addi	sp, sp, -32
+	sd	ra, 24(sp)                      # 8-byte Folded Spill
+	sd	s0, 16(sp)                      # 8-byte Folded Spill
+	sd	s1, 8(sp)                       # 8-byte Folded Spill
+	mv	s0, a0
+	li	s1, 64
+	li	a0, 64
 	beqz	a1, .LBB0_2
-	srli	a3, a1, 1
-	or	a1, a1, a3
-	srli	a3, a1, 2
-	or	a1, a1, a3
-	srli	a3, a1, 4
-	or	a1, a1, a3
-	srli	a3, a1, 8
-	or	a1, a1, a3
-	srli	a3, a1, 16
-	or	a1, a1, a3
-	srli	a3, a1, 32
-	or	a1, a1, a3
-	not	a1, a1
-	srli	a3, a1, 1
-	lui	a4, 349525
-	addiw	a4, a4, 1365
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	and	a3, a3, a4
-	sub	a1, a1, a3
-	lui	a3, 209715
-	addiw	a3, a3, 819
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	and	a4, a1, a3
-	srli	a1, a1, 2
-	and	a1, a1, a3
-	add	a1, a1, a4
-	srli	a3, a1, 4
-	add	a1, a1, a3
-	lui	a3, 61681
-	addiw	a3, a3, -241
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	and	a1, a1, a3
-	lui	a3, 4112
-	addiw	a3, a3, 257
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	mul	a3, a1, a3
-	srli	a3, a3, 56
+	srli	a0, a1, 1
+	or	a0, a0, a1
+	srli	a1, a0, 2
+	or	a0, a0, a1
+	srli	a1, a0, 4
+	or	a0, a0, a1
+	srli	a1, a0, 8
+	or	a0, a0, a1
+	srli	a1, a0, 16
+	or	a0, a0, a1
+	srli	a1, a0, 32
+	or	a0, a0, a1
+	not	a0, a0
+	call	__popcountdi2
 .LBB0_2:                                # %cond.end
-	sub	a2, a2, a3
-	sext.w	a0, a0
-	sltiu	a0, a0, 2
+	sub	s1, s1, a0
+	sext.w	s0, s0
+	sltiu	a0, s0, 2
 	addi	a0, a0, -1
-	and	a0, a0, a2
+	and	a0, a0, s1
+	ld	ra, 24(sp)                      # 8-byte Folded Reload
+	ld	s0, 16(sp)                      # 8-byte Folded Reload
+	ld	s1, 8(sp)                       # 8-byte Folded Reload
+	addi	sp, sp, 32
 	ret
 func0000000000000074:                   # @func0000000000000074
 	sext.w	a0, a0

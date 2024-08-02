@@ -1,45 +1,28 @@
 func0000000000000088:                   # @func0000000000000088
-	srli	a1, a2, 1
-	or	a1, a1, a2
-	srli	a3, a1, 2
-	or	a1, a1, a3
-	srli	a3, a1, 4
-	or	a1, a1, a3
-	srli	a3, a1, 8
-	or	a1, a1, a3
-	srli	a3, a1, 16
-	or	a1, a1, a3
-	srli	a3, a1, 32
-	or	a1, a1, a3
-	not	a1, a1
-	srli	a3, a1, 1
-	lui	a4, 349525
-	addiw	a4, a4, 1365
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	and	a3, a3, a4
-	sub	a1, a1, a3
-	lui	a3, 209715
-	addiw	a3, a3, 819
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	and	a4, a1, a3
-	srli	a1, a1, 2
-	and	a1, a1, a3
-	add	a1, a1, a4
-	srli	a3, a1, 4
-	add	a1, a1, a3
-	lui	a3, 61681
-	addiw	a3, a3, -241
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	and	a1, a1, a3
-	lui	a3, 4112
-	addiw	a3, a3, 257
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	mul	a1, a1, a3
-	srli	a1, a1, 56
-	sll	a1, a2, a1
-	mul	a0, a1, a0
+	addi	sp, sp, -32
+	sd	ra, 24(sp)                      # 8-byte Folded Spill
+	sd	s0, 16(sp)                      # 8-byte Folded Spill
+	sd	s1, 8(sp)                       # 8-byte Folded Spill
+	mv	s0, a2
+	mv	s1, a0
+	srli	a0, a2, 1
+	or	a0, a0, a2
+	srli	a1, a0, 2
+	or	a0, a0, a1
+	srli	a1, a0, 4
+	or	a0, a0, a1
+	srli	a1, a0, 8
+	or	a0, a0, a1
+	srli	a1, a0, 16
+	or	a0, a0, a1
+	srli	a1, a0, 32
+	or	a0, a0, a1
+	not	a0, a0
+	call	__popcountdi2
+	sll	a0, s0, a0
+	mul	a0, a0, s1
+	ld	ra, 24(sp)                      # 8-byte Folded Reload
+	ld	s0, 16(sp)                      # 8-byte Folded Reload
+	ld	s1, 8(sp)                       # 8-byte Folded Reload
+	addi	sp, sp, 32
 	ret
