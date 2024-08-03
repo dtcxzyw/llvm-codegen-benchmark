@@ -10,9 +10,8 @@ func000000000000000a:                   # @func000000000000000a
 	subw	a0, a0, a1
 	addi	a0, a0, 4
 	slli	a1, a0, 56
-	srai	a1, a1, 56
-	slli	a1, a1, 49
-	srli	a1, a1, 62
+	srai	a1, a1, 63
+	andi	a1, a1, 3
 	add	a0, a0, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 58

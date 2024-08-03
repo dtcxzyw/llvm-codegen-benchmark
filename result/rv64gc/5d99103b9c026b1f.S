@@ -14,8 +14,7 @@ func0000000000000031:                   # @func0000000000000031
 	addiw	a3, a3, -1
 	and	a0, a0, a3
 	slli	a2, a2, 52
-	srai	a2, a2, 48
-	srli	a2, a2, 15
+	srai	a2, a2, 63
 	lui	a4, 15
 	and	a2, a2, a4
 	or	a1, a1, a2

@@ -1,8 +1,7 @@
 func0000000000000005:                   # @func0000000000000005
 	slli	a3, a2, 48
-	srai	a3, a3, 48
-	slli	a3, a3, 33
-	srli	a3, a3, 61
+	srai	a3, a3, 63
+	andi	a3, a3, 7
 	add	a2, a2, a3
 	slli	a2, a2, 48
 	srai	a2, a2, 51
@@ -11,13 +10,11 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a3, a2, 48
-	srai	a3, a3, 48
-	slli	a3, a3, 33
-	srli	a3, a3, 61
+	srai	a3, a3, 63
+	andi	a3, a3, 7
 	add	a2, a2, a3
 	slli	a2, a2, 48
-	srai	a2, a2, 48
-	srli	a2, a2, 3
+	srai	a2, a2, 51
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret

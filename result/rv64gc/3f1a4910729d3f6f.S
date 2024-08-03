@@ -8,11 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a1, a0, 63
-	srai	a0, a0, 48
-	srli	a0, a0, 5
+	srai	a0, a0, 53
 	add	a0, a0, a1
-	slli	a0, a0, 48
-	srai	a0, a0, 48
 	slli	a0, a0, 6
 	ret
 func0000000000000003:                   # @func0000000000000003
