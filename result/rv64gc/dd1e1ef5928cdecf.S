@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	not	a1, a1
 	lui	a2, 133355
-	addiw	a2, a2, 899
+	addi	a2, a2, 899
 	slli	a2, a2, 12
 	addi	a2, a2, -663
 	slli	a2, a2, 21

@@ -19,7 +19,7 @@ func000000000000001d:                   # @func000000000000001d
 	vadd.vv	v10, v10, v12
 	vsll.vi	v10, v10, 8
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	slli	a0, a0, 8

@@ -30,7 +30,7 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000010:                   # @func0000000000000010
 	slli	a0, a0, 48
 	lui	a1, 3504
-	addiw	a1, a1, 219
+	addi	a1, a1, 219
 	slli	a1, a1, 15
 	addi	a1, a1, 219
 	slli	a1, a1, 24

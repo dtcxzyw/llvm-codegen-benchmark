@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a2, a2, a3
 	xor	a1, a1, a2
 	lui	a2, 133355
-	addiw	a2, a2, 899
+	addi	a2, a2, 899
 	slli	a2, a2, 12
 	addi	a2, a2, -663
 	slli	a2, a2, 21

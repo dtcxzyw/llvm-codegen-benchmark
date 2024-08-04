@@ -50,7 +50,7 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v8, v10
 	lui	a0, 960284
-	addiw	a0, a0, -1545
+	addi	a0, a0, -1545
 	slli	a0, a0, 12
 	addi	a0, a0, -317
 	slli	a0, a0, 20

@@ -11,7 +11,7 @@ func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 1042318
-	addiw	a0, a0, -537
+	addi	a0, a0, -537
 	slli	a0, a0, 13
 	addi	a0, a0, -837
 	slli	a0, a0, 24

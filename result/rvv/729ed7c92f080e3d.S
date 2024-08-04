@@ -8,7 +8,7 @@ func0000000000000000:                   # @func0000000000000000
 	vxor.vv	v10, v12, v10
 	vnot.v	v8, v8
 	lui	a0, 133355
-	addiw	a0, a0, 899
+	addi	a0, a0, 899
 	slli	a0, a0, 12
 	addi	a0, a0, -663
 	slli	a0, a0, 21

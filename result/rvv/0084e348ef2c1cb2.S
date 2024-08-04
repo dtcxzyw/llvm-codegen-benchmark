@@ -6,7 +6,7 @@ func0000000000000010:                   # @func0000000000000010
 	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 8
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	slli	a0, a0, 8
@@ -20,7 +20,7 @@ func000000000000007e:                   # @func000000000000007e
 	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 8
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	slli	a0, a0, 8

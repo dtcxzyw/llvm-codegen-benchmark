@@ -2,7 +2,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 960284
-	addiw	a0, a0, -1545
+	addi	a0, a0, -1545
 	slli	a0, a0, 12
 	addi	a0, a0, -317
 	slli	a0, a0, 20

@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 40
 	vsrl.vx	v10, v10, a0
 	lui	a0, 17191
-	addiw	a0, a0, 1113
+	addi	a0, a0, 1113
 	slli	a0, a0, 12
 	addi	a0, a0, 895
 	slli	a0, a0, 24

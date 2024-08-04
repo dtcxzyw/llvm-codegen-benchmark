@@ -1,6 +1,6 @@
 func0000000000000070:                   # @func0000000000000070
 	lui	a3, 61440
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	slli	a3, a3, 24
 	addi	a3, a3, 15
 	and	a2, a2, a3
@@ -11,7 +11,7 @@ func0000000000000070:                   # @func0000000000000070
 	ret
 func000000000000007e:                   # @func000000000000007e
 	lui	a3, 61440
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	slli	a3, a3, 24
 	addi	a3, a3, 15
 	and	a2, a2, a3

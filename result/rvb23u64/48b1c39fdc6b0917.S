@@ -4,7 +4,7 @@ func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
 	slli	a1, a1, 8
 	lui	a2, 61440
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a2, a2, 24
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
@@ -20,7 +20,7 @@ func000000000000003b:                   # @func000000000000003b
 	add	a1, a1, a2
 	slli	a1, a1, 8
 	lui	a2, 61440
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a2, a2, 24
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)

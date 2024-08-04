@@ -5,7 +5,7 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	slli	a0, a0, 8
 	lui	a1, 61440
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	slli	a1, a1, 24
 	addi	a1, a1, 15
 	slli	a1, a1, 8
@@ -18,7 +18,7 @@ func000000000000003e:                   # @func000000000000003e
 	add	a0, a0, a1
 	slli	a0, a0, 8
 	lui	a1, 61440
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	slli	a1, a1, 24
 	addi	a1, a1, 15
 	slli	a1, a1, 8

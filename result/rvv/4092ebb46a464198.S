@@ -4,7 +4,7 @@ func0000000000000061:                   # @func0000000000000061
 	vmacc.vx	v10, a0, v12
 	vsll.vi	v10, v10, 8
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	slli	a0, a0, 8
@@ -17,7 +17,7 @@ func000000000000007d:                   # @func000000000000007d
 	vmacc.vx	v10, a0, v12
 	vsll.vi	v10, v10, 8
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	slli	a0, a0, 8

@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmul.vx	v10, v8, a0
 	vnot.v	v10, v10
 	lui	a0, 133355
-	addiw	a0, a0, 899
+	addi	a0, a0, 899
 	slli	a0, a0, 12
 	addi	a0, a0, -663
 	slli	a0, a0, 21
