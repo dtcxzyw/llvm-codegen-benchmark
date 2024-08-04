@@ -113,8 +113,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000036:                   # @func0000000000000036
 	slli	a1, a1, 56
-	srai	a1, a1, 63
-	andi	a1, a1, 3
+	srai	a1, a1, 1
+	srli	a1, a1, 62
 	addw	a0, a0, a1
 	ret
 func000000000000003a:                   # @func000000000000003a

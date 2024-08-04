@@ -9,8 +9,9 @@ func00000000000000a5:                   # @func00000000000000a5
 	ret
 func0000000000000065:                   # @func0000000000000065
 	subw	a0, a0, a1
-	sraiw	a1, a0, 31
-	andi	a1, a1, 7
+	slli	a1, a0, 32
+	srai	a1, a1, 2
+	srli	a1, a1, 61
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
