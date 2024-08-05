@@ -5,8 +5,7 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 56
-	srai	a1, a1, 56
-	srli	a1, a1, 7
+	srai	a1, a1, 63
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
