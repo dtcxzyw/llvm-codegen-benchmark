@@ -31,8 +31,8 @@ func0000000000000016:                   # @func0000000000000016
 	slli	a2, a1, 3
 	add	a0, a0, a1
 	sub	a0, a0, a2
-	srai	a0, a0, 63
-	andi	a0, a0, 7
+	srai	a0, a0, 2
+	srli	a0, a0, 61
 	ret
 .LCPI2_0:
 	.quad	-6640827866535438581            # 0xa3d70a3d70a3d70b

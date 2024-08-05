@@ -147,13 +147,12 @@ func0000000000000150:                   # @func0000000000000150
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
-	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a1, a1, a3
 	sext.w	a0, a0
+	slli	a1, a1, 48
+	srli	a1, a1, 48
 	slli	a2, a2, 56
-	srai	a2, a2, 56
-	and	a2, a2, a3
+	srai	a2, a2, 8
+	srli	a2, a2, 48
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0

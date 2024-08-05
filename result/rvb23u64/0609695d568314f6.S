@@ -9,15 +9,15 @@ func0000000000000284:                   # @func0000000000000284
 	sltiu	a0, a0, 2
 	ret
 func0000000000000191:                   # @func0000000000000191
-	srai	a1, a0, 63
-	andi	a1, a1, 7
+	srai	a1, a0, 2
+	srli	a1, a1, 61
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000019a:                   # @func000000000000019a
-	srai	a1, a0, 63
-	andi	a1, a1, 7
+	srai	a1, a0, 2
+	srli	a1, a1, 61
 	add	a0, a0, a1
 	slti	a0, a0, 5
 	xori	a0, a0, 1

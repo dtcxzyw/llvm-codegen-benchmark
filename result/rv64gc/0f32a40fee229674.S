@@ -14,8 +14,8 @@ func000000000000007a:                   # @func000000000000007a
 	beqz	a2, .LBB1_2
 	li	a1, 3
 .LBB1_2:                                # %entry
-	srai	a0, a0, 63
-	andi	a0, a0, 3
+	srai	a0, a0, 1
+	srli	a0, a0, 62
 	add	a0, a0, a1
 	ret
 func0000000000000051:                   # @func0000000000000051

@@ -12,8 +12,7 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000021:                   # @func0000000000000021
 	slli	a1, a1, 56
-	srai	a1, a1, 56
-	slli	a1, a1, 32
+	srai	a1, a1, 24
 	srli	a1, a1, 32
 	xor	a0, a0, a1
 	seqz	a0, a0

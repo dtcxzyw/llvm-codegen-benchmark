@@ -22,8 +22,8 @@ func0000000000000076:                   # @func0000000000000076
 	andi	a1, a1, 255
 	li	a2, 2
 	czero.eqz	a1, a2, a1
-	srai	a0, a0, 63
-	andi	a0, a0, 3
+	srai	a0, a0, 1
+	srli	a0, a0, 62
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret

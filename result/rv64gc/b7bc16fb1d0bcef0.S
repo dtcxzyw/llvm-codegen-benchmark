@@ -128,8 +128,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a1, a1, 56
-	srai	a1, a1, 63
-	andi	a1, a1, 3
+	srai	a1, a1, 1
+	srli	a1, a1, 62
 	add	a0, a0, a1
 	addi	a0, a0, 5
 	andi	a0, a0, 255
