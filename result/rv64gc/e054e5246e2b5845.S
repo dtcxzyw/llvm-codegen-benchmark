@@ -16,7 +16,7 @@ func0000000000000058:                   # @func0000000000000058
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sub	a0, a0, a1
-	srai	a1, a0, 63
+	srai	a1, a0, 31
 	xor	a0, a0, a1
 	sub	a0, a0, a1
 	sltiu	a0, a0, 166
