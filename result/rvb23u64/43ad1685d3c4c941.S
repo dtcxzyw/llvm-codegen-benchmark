@@ -36,8 +36,7 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a3, a3, -1513
 	mul	a2, a2, a3
 	srliw	a3, a2, 31
-	srai	a2, a2, 16
-	srli	a2, a2, 4
+	srai	a2, a2, 20
 	add	a2, a2, a3
 	slli	a2, a2, 8
 	add	a0, a0, a1

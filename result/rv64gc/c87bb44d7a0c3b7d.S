@@ -20,7 +20,7 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 48
-	srai	a0, a0, 48
-	srliw	a0, a0, 1
+	srai	a0, a0, 16
+	srli	a0, a0, 33
 	addiw	a0, a0, 1
 	ret

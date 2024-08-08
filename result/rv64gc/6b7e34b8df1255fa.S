@@ -7,8 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 	srliw	a3, a2, 31
 	srli	a2, a2, 17
 	add	a2, a2, a3
-	slli	a2, a2, 48
-	srai	a2, a2, 48
 	sext.w	a1, a1
 	lui	a3, 335544
 	addiw	a3, a3, 1311

@@ -1,7 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a0, 56
-	srai	a1, a1, 56
-	slli	a1, a1, 49
+	srai	a1, a1, 2
 	srli	a1, a1, 61
 	add	a1, a1, a0
 	andi	a1, a1, 248
