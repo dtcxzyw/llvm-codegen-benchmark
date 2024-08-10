@@ -52,7 +52,7 @@ if __name__ == '__main__':
     
     print("total items: ", len(work_list))
 
-    pool = Pool(processes=16)
+    pool = Pool(processes=os.cpu_count())
     progress = tqdm.tqdm(work_list, miniters=len(work_list)/200)
     with open('test.log', 'w') as log:
         for file, status in pool.imap_unordered(run_llc, work_list):

@@ -30,7 +30,7 @@ jobs:
       - name: Setup patch
         run: ${{ github.workspace }}/scripts/setup_pre_commit_patch.sh
 
-      - name: Update optimized IR
+      - name: Update ASM
         id: update
         run: ${{ github.workspace }}/scripts/update_optimized.sh
 
