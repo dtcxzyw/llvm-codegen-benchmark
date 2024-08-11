@@ -15,20 +15,20 @@ func0000000000000010:                   # @func0000000000000010
 	sub	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	addiw	a1, a1, -16
 	sext.w	a0, a0
+	addiw	a1, a1, -16
 	maxu	a0, a0, a1
 	sub	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
-	addiw	a1, a1, 4
 	sext.w	a0, a0
+	addiw	a1, a1, 4
 	maxu	a0, a0, a1
 	sub	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	addiw	a1, a1, -1
 	sext.w	a0, a0
+	addiw	a1, a1, -1
 	maxu	a0, a0, a1
 	sub	a0, a0, a1
 	ret

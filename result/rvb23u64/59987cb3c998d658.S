@@ -30,8 +30,8 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a0, a0, 1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	subw	a1, a1, a2
 	sext.w	a0, a0
+	subw	a1, a1, a2
 	maxu	a0, a0, a1
 	subw	a0, a0, a1
 	slti	a0, a0, 0

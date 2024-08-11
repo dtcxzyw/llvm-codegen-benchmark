@@ -14,8 +14,8 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	zext.h	a1, a1
 	sext.w	a0, a0
+	zext.h	a1, a1
 	maxu	a0, a0, a1
 	sub	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func000000000000000c:                   # @func000000000000000c
 	sub	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a1, a1, 255
 	sext.w	a0, a0
+	andi	a1, a1, 255
 	maxu	a0, a0, a1
 	sub	a0, a0, a1
 	ret
