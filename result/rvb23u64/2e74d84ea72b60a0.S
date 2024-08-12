@@ -23,10 +23,10 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
+	sext.w	a0, a0
 	sraiw	a2, a2, 31
 	or	a1, a1, a2
 	sext.w	a1, a1
-	sext.w	a0, a0
 	not	a2, a0
 	minu	a1, a1, a2
 	add	a0, a0, a1
