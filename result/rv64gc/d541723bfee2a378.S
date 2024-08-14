@@ -8,8 +8,7 @@ func0000000000000114:                   # @func0000000000000114
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 255
 	slli	a2, a2, 62
-	srai	a2, a2, 56
-	srli	a2, a2, 7
+	srai	a2, a2, 63
 	andi	a2, a2, 224
 	add	a1, a1, a2
 	andi	a1, a1, 255
