@@ -3,8 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a3, a3, 63
 	add	a2, a2, a3
 	slli	a2, a2, 48
-	srai	a2, a2, 48
-	srli	a2, a2, 1
+	srai	a2, a2, 49
 	add	a0, a0, a1
 	add	a0, a0, a2
 	lui	a1, 16

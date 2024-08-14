@@ -15,8 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a0
 	slli	a1, a1, 48
 	srli	a2, a1, 63
-	srai	a1, a1, 48
-	srli	a1, a1, 9
+	srai	a1, a1, 57
 	add	a1, a1, a2
 	li	a2, 1000
 	mul	a1, a1, a2
