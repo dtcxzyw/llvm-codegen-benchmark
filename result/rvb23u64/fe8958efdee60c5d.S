@@ -9,8 +9,9 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, 11
 	ret
 func000000000000000f:                   # @func000000000000000f
-	slliw	a1, a1, 2
-	sh3add	a0, a1, a0
+	sext.w	a1, a1
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func0000000000000007:                   # @func0000000000000007
@@ -19,12 +20,13 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, 52
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slliw	a1, a1, 1
-	sh3add	a0, a1, a0
+	sext.w	a1, a1
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	addi	a0, a0, 56
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slliw	a1, a1, 1
-	add	a0, a0, a1
+	sext.w	a1, a1
+	sh1add	a0, a1, a0
 	addi	a0, a0, 29
 	ret
