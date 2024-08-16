@@ -261,8 +261,10 @@ func0000000000000293:                   # @func0000000000000293
 	add	a0, a0, a1
 	ret
 .LBB17_2:
-	sraiw	a1, a1, 31
-	andi	a1, a1, 24
+	slli	a1, a1, 32
+	srai	a1, a1, 4
+	srli	a1, a1, 62
+	slli	a1, a1, 3
 	addi	a1, a1, 36
 	add	a0, a0, a1
 	ret

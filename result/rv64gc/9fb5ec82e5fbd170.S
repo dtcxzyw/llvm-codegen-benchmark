@@ -278,7 +278,9 @@ func00000000000000a4:                   # @func00000000000000a4
 	li	a0, 6
 	ret
 .LBB21_2:
-	sraiw	a0, a0, 31
-	andi	a0, a0, 12
+	slli	a0, a0, 32
+	srai	a0, a0, 3
+	srli	a0, a0, 62
+	slli	a0, a0, 2
 	addi	a0, a0, 18
 	ret

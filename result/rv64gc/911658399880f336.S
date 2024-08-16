@@ -1,6 +1,8 @@
 func000000000000000d:                   # @func000000000000000d
-	sraiw	a1, a0, 1
-	andi	a1, a1, -2
+	sext.w	a1, a0
+	srai	a1, a1, 1
+	srli	a1, a1, 1
+	slli	a1, a1, 1
 	sgtz	a2, a1
 	negw	a2, a2
 	and	a1, a1, a2

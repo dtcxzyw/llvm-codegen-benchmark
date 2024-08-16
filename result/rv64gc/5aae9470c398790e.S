@@ -81,12 +81,14 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000028:                   # @func0000000000000028
 	andi	a0, a0, 1
-	sraiw	a2, a2, 31
-	andi	a2, a2, -8
+	slli	a2, a2, 32
+	srai	a2, a2, 63
+	srli	a2, a2, 3
+	slli	a2, a2, 3
 	addi	a2, a2, 16
-	or	a1, a1, a2
 	addi	a0, a0, -1
-	lui	a2, 4
-	and	a0, a0, a2
+	lui	a3, 4
+	and	a0, a0, a3
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret

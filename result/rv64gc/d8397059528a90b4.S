@@ -46,10 +46,10 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000036:                   # @func0000000000000036
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	or	a1, a1, a2
-	lui	a2, 1044480
-	and	a0, a0, a2
+	srai	a0, a0, 56
+	srli	a0, a0, 24
+	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011

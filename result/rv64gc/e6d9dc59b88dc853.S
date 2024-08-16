@@ -172,9 +172,11 @@ func000000000000002b:                   # @func000000000000002b
 	andi	a3, a1, 1
 	li	a1, 12
 	bnez	a3, .LBB13_2
-	sraiw	a1, a2, 31
-	andi	a1, a1, 24
-	addi	a1, a1, 36
+	slli	a2, a2, 32
+	srai	a2, a2, 4
+	srli	a2, a2, 62
+	slli	a2, a2, 3
+	addi	a1, a2, 36
 .LBB13_2:                               # %entry
 	add	a0, a0, a1
 	ret

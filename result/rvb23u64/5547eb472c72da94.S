@@ -4,7 +4,8 @@ func000000000000004a:                   # @func000000000000004a
 	srli	a2, a2, 56
 	add	a1, a1, a2
 	srai	a1, a1, 8
-	andi	a1, a1, -8
+	srli	a1, a1, 3
+	slli	a1, a1, 3
 	li	a2, 1
 	max	a1, a1, a2
 	slt	a0, a1, a0

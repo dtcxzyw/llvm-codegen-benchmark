@@ -1,6 +1,8 @@
 func0000000000000036:                   # @func0000000000000036
-	sraiw	a0, a0, 31
-	andi	a0, a0, 24
+	slli	a0, a0, 32
+	srai	a0, a0, 4
+	srli	a0, a0, 62
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

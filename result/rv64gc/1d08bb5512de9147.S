@@ -28,7 +28,8 @@ func0000000000000015:                   # @func0000000000000015
 func000000000000001d:                   # @func000000000000001d
 	slli	a2, a2, 45
 	srai	a2, a2, 63
-	andi	a2, a2, -8
+	srli	a2, a2, 3
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -5
