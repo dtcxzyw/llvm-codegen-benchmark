@@ -66,7 +66,8 @@ func0000000000000019:                   # @func0000000000000019
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 56
 	srai	a1, a1, 63
-	andi	a1, a1, -2
+	srli	a1, a1, 1
+	slli	a1, a1, 1
 	addi	a1, a1, 18
 	andi	a0, a0, 3
 	or	a0, a0, a1

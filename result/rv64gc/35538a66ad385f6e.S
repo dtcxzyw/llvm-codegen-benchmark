@@ -13,7 +13,8 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000005:                   # @func0000000000000005
 	slli	a2, a2, 50
 	srai	a2, a2, 63
-	andi	a2, a2, -4
+	srli	a2, a2, 2
+	slli	a2, a2, 2
 	lui	a3, 2
 	addiw	a3, a3, 368
 	mul	a1, a1, a3

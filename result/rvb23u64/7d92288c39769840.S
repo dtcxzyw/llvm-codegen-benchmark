@@ -1,12 +1,14 @@
 func0000000000000002:                   # @func0000000000000002
-	add	a0, a0, a1
-	sraiw	a0, a0, 1
-	andi	a0, a0, -8
+	addw	a0, a0, a1
+	srai	a0, a0, 1
+	srli	a0, a0, 3
+	slli	a0, a0, 3
 	ret
 func0000000000000003:                   # @func0000000000000003
-	add	a0, a0, a1
-	sraiw	a0, a0, 1
-	andi	a0, a0, -8
+	addw	a0, a0, a1
+	srai	a0, a0, 1
+	srli	a0, a0, 3
+	slli	a0, a0, 3
 	ret
 .LCPI2_0:
 	.quad	-8446744073709551616            # 0x8ac7230489e80000
@@ -20,5 +22,6 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	srai	a0, a0, 28
-	andi	a0, a0, -16
+	srli	a0, a0, 4
+	slli	a0, a0, 4
 	ret

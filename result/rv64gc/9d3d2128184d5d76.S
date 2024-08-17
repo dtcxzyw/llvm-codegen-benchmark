@@ -50,7 +50,8 @@ func0000000000000096:                   # @func0000000000000096
 func00000000000000d4:                   # @func00000000000000d4
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	andi	a1, a1, -256
+	srli	a1, a1, 8
+	slli	a1, a1, 8
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 128

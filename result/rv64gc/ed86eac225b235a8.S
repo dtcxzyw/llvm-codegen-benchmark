@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, -2048
 	add	a0, a0, a1
 	srai	a0, a0, 29
-	andi	a0, a0, -8
+	srli	a0, a0, 3
+	slli	a0, a0, 3
 	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, -1
@@ -21,11 +22,13 @@ func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 34
 	add	a0, a0, a1
 	srai	a0, a0, 32
-	andi	a0, a0, -8
+	srli	a0, a0, 3
+	slli	a0, a0, 3
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 1
-	addi	a0, a0, 35
-	sraiw	a0, a0, 3
-	andi	a0, a0, -4
+	addiw	a0, a0, 35
+	srai	a0, a0, 3
+	srli	a0, a0, 2
+	slli	a0, a0, 2
 	ret
