@@ -87,8 +87,9 @@ func000000000000001a:                   # @func000000000000001a
 func00000000000000c5:                   # @func00000000000000c5
 	andi	a0, a0, 255
 	slli	a1, a1, 45
-	srai	a1, a1, 63
-	andi	a1, a1, 248
+	srai	a1, a1, 7
+	srli	a1, a1, 59
+	slli	a1, a1, 3
 	addi	a1, a1, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

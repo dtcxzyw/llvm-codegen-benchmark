@@ -3,8 +3,9 @@ func0000000000000002:                   # @func0000000000000002
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	srai	a0, a0, 63
-	andi	a0, a0, 12
+	srai	a0, a0, 3
+	srli	a0, a0, 62
+	slli	a0, a0, 2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a0, a0
