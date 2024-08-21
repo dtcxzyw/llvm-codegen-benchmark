@@ -1,9 +1,9 @@
 func0000000000000004:                   # @func0000000000000004
-	bltu	a0, a1, .LBB0_2
-	sub	a0, a0, a1
+	bltu	a1, a0, .LBB0_2
+	sub	a0, a1, a0
 	ret
 .LBB0_2:
-	sub	a0, a1, a0
+	sub	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	bltu	a1, a0, .LBB1_2
@@ -22,13 +22,14 @@ func000000000000000a:                   # @func000000000000000a
 	subw	a0, a1, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
-	sext.w	a2, a0
-	sext.w	a3, a1
-	bltu	a3, a2, .LBB3_2
-	subw	a0, a1, a0
-	ret
-.LBB3_2:
-	subw	a0, a0, a1
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	sub	a0, a0, a1
+	srai	a1, a0, 63
+	xor	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	bltu	a1, a0, .LBB4_2
@@ -38,29 +39,31 @@ func0000000000000048:                   # @func0000000000000048
 	sub	a0, a0, a1
 	ret
 func0000000000000054:                   # @func0000000000000054
-	bltu	a0, a1, .LBB5_2
-	sub	a0, a0, a1
-	ret
-.LBB5_2:
+	bltu	a1, a0, .LBB5_2
 	sub	a0, a1, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
-	sext.w	a2, a1
-	sext.w	a3, a0
-	bltu	a3, a2, .LBB6_2
-	subw	a0, a0, a1
+.LBB5_2:
+	sub	a0, a0, a1
 	ret
-.LBB6_2:
-	subw	a0, a1, a0
+func0000000000000014:                   # @func0000000000000014
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	sub	a0, a0, a1
+	srai	a1, a0, 63
+	xor	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	sext.w	a2, a0
-	sext.w	a3, a1
-	bltu	a3, a2, .LBB7_2
-	subw	a0, a1, a0
-	ret
-.LBB7_2:
-	subw	a0, a0, a1
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	sub	a0, a0, a1
+	srai	a1, a0, 63
+	xor	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a2, a1
