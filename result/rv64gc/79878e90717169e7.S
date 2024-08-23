@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000009:                   # @func0000000000000009
 	sub	a1, a1, a0
 	addi	a1, a1, 8
-	srai	a1, a1, 2
-	srli	a0, a1, 2
-	slli	a0, a0, 1
+	srai	a1, a1, 3
+	li	a0, -3
+	srli	a0, a0, 1
+	and	a0, a0, a1
 	ret

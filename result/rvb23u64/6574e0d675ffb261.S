@@ -5,9 +5,10 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	srai	a1, a1, 12
-	srli	a1, a1, 61
-	slli	a1, a1, 10
+	srai	a1, a1, 63
+	li	a2, 7
+	slli	a2, a2, 10
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
