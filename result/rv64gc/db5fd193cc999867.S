@@ -9,8 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a2, 1024
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
@@ -23,6 +22,5 @@ func0000000000000006:                   # @func0000000000000006
 	li	a2, -34
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret

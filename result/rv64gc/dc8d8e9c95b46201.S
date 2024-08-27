@@ -38,8 +38,7 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a2, a0
 	beqz	a0, .LBB2_2
 .LBB2_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a3, a0

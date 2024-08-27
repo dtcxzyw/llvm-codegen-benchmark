@@ -11,8 +11,7 @@ func0000000000000000:                   # @func0000000000000000
 	li	a2, 178
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
@@ -27,6 +26,5 @@ func0000000000000002:                   # @func0000000000000002
 	li	a2, 1
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret

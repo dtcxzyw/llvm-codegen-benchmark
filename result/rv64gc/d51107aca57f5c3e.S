@@ -27,6 +27,5 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a2, a1
 	beqz	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret

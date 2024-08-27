@@ -56,8 +56,7 @@ func0000000000000081:                   # @func0000000000000081
 	mv	a1, a3
 	beqz	a0, .LBB3_2
 .LBB3_4:                                # %entry
-	mv	a1, a3
-	mv	a0, a1
+	mv	a0, a3
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	slli	a2, a2, 56

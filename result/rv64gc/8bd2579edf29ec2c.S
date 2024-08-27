@@ -11,8 +11,7 @@ func000000000000004c:                   # @func000000000000004c
 	mv	a2, a3
 	beqz	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a0
@@ -45,6 +44,5 @@ func000000000000006c:                   # @func000000000000006c
 	li	a3, -1
 	beq	a0, a3, .LBB2_2
 .LBB2_4:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret

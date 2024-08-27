@@ -12,8 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a2, a3, 9
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a2, a1
-	mv	a0, a2
+	mv	a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a3, a1
@@ -27,6 +26,5 @@ func0000000000000006:                   # @func0000000000000006
 	li	a2, 1
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	mv	a2, a1
-	mv	a0, a2
+	mv	a0, a1
 	ret

@@ -68,8 +68,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a2, 18
 	beqz	a0, .LBB2_3
 .LBB2_6:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a3, a2, 1

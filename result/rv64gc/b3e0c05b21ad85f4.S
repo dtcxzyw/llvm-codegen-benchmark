@@ -22,8 +22,7 @@ func0000000000000044:                   # @func0000000000000044
 	li	a2, 384
 	bnez	a0, .LBB0_3
 .LBB0_6:                                # %entry
-	mv	a1, a2
-	mv	a0, a1
+	mv	a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
