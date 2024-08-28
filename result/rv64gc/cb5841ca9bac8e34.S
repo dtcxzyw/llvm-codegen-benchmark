@@ -10,8 +10,7 @@ func0000000000000061:                   # @func0000000000000061
 	li	a1, 2
 	beqz	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a1, 1
-	mv	a0, a1
+	li	a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0

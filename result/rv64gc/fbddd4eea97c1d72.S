@@ -12,6 +12,5 @@ func0000000000000056:                   # @func0000000000000056
 	li	a1, 18
 	bge	a2, a1, .LBB0_2
 .LBB0_4:
-	addiw	a1, a0, 18
-	mv	a0, a1
+	addiw	a0, a0, 18
 	ret

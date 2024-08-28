@@ -39,6 +39,5 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a1, a2, 1
 	beqz	a0, .LBB2_2
 .LBB2_4:
-	addiw	a1, a2, -1
-	mv	a0, a1
+	addiw	a0, a2, -1
 	ret

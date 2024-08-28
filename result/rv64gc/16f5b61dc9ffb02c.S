@@ -207,8 +207,7 @@ func0000000000000088:                   # @func0000000000000088
 	li	a2, 1560
 	bgeu	a2, a0, .LBB16_2
 .LBB16_4:                               # %entry
-	li	a1, 16
-	mv	a0, a1
+	li	a0, 16
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a2, a0

@@ -13,8 +13,7 @@ func0000000000000216:                   # @func0000000000000216
 .LBB0_4:
 	lui	a1, 21
 	addi	a1, a1, 384
-	addw	a1, a1, a0
-	mv	a0, a1
+	addw	a0, a0, a1
 	ret
 func0000000000000116:                   # @func0000000000000116
 	li	a2, 100
@@ -29,6 +28,5 @@ func0000000000000116:                   # @func0000000000000116
 	li	a2, 69
 	bge	a0, a2, .LBB1_2
 .LBB1_4:
-	addi	a1, a0, 2000
-	mv	a0, a1
+	addi	a0, a0, 2000
 	ret

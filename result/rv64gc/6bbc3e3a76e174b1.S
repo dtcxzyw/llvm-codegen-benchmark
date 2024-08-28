@@ -10,8 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a1, 316
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a1, 317
-	mv	a0, a1
+	li	a0, 317
 	ret
 func0000000000000006:                   # @func0000000000000006
 	li	a3, 1281
@@ -25,8 +24,7 @@ func0000000000000006:                   # @func0000000000000006
 	li	a1, 1024
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a1, 1280
-	mv	a0, a1
+	li	a0, 1280
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a2
@@ -41,8 +39,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a1, 100
 	bnez	a0, .LBB2_2
 .LBB2_4:                                # %entry
-	li	a1, 120
-	mv	a0, a1
+	li	a0, 120
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
@@ -67,8 +64,7 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a1, a2, 4
 	bnez	a0, .LBB4_2
 .LBB4_4:                                # %entry
-	lui	a1, 128
-	mv	a0, a1
+	lui	a0, 128
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2

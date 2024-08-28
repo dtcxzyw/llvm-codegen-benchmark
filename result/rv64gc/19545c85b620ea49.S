@@ -18,8 +18,7 @@ func0000000000000002:                   # @func0000000000000002
 	flt.d	a2, fa0, fa5
 	beqz	a2, .LBB0_2
 .LBB0_4:
-	slli	a1, a0, 63
-	mv	a0, a1
+	slli	a0, a0, 63
 	ret
 .LCPI1_0:
 	.quad	0x3feccccccccccccd              # double 0.90000000000000002

@@ -11,6 +11,5 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 2
 	bltu	a1, a0, .LBB0_2
 .LBB0_4:                                # %entry
-	lui	a1, 2
-	mv	a0, a1
+	lui	a0, 2
 	ret

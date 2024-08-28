@@ -12,6 +12,5 @@ func0000000000000016:                   # @func0000000000000016
 .LBB0_4:
 	lui	a1, 21
 	addi	a2, a1, 384
-	addw	a2, a2, a0
-	mv	a0, a2
+	addw	a0, a0, a2
 	ret

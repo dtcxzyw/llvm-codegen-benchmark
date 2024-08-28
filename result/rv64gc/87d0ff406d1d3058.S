@@ -19,8 +19,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a2, 2
 	beqz	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a2, 3
-	mv	a0, a2
+	li	a0, 3
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 1
@@ -36,8 +35,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a1, 6
 	bgeu	a0, a1, .LBB2_2
 .LBB2_4:                                # %entry
-	li	a2, 3
-	mv	a0, a2
+	li	a0, 3
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0

@@ -11,8 +11,7 @@ func0000000000000028:                   # @func0000000000000028
 	addiw	a1, a1, -481
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	negw	a1, a1
-	mv	a0, a1
+	negw	a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	andi	a3, a0, 1
@@ -47,6 +46,5 @@ func0000000000000029:                   # @func0000000000000029
 	addiw	a1, a1, -481
 	bnez	a0, .LBB3_2
 .LBB3_4:                                # %entry
-	negw	a1, a1
-	mv	a0, a1
+	negw	a0, a1
 	ret

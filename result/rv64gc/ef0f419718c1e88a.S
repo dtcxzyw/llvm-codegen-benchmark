@@ -21,8 +21,7 @@ func000000000000002a:                   # @func000000000000002a
 	li	a1, 1
 	blt	a2, a1, .LBB1_2
 .LBB1_4:                                # %entry
-	addiw	a1, a0, 1
-	mv	a0, a1
+	addiw	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sgtz	a2, a1

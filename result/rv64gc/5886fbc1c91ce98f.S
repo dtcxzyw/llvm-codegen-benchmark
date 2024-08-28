@@ -21,6 +21,5 @@ func000000000000000a:                   # @func000000000000000a
 	li	a1, 383
 	bge	a1, a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a2, 192
-	mv	a0, a2
+	li	a0, 192
 	ret

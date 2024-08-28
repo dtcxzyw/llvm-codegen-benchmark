@@ -27,8 +27,7 @@ func0000000000000008:                   # @func0000000000000008
 	li	a1, 14
 	bltu	a2, a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a1, 6
-	mv	a0, a1
+	li	a0, 6
 	ret
 func0000000000000004:                   # @func0000000000000004
 	bltu	a1, a0, .LBB2_2
@@ -50,8 +49,7 @@ func0000000000000014:                   # @func0000000000000014
 	li	a1, 4
 	bltu	a0, a1, .LBB3_2
 .LBB3_4:                                # %entry
-	li	a1, 8
-	mv	a0, a1
+	li	a0, 8
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1

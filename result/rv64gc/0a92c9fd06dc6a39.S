@@ -10,8 +10,7 @@ func0000000000000006:                   # @func0000000000000006
 	li	a1, 2
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a1, 1
-	mv	a0, a1
+	li	a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a2, a1
@@ -25,8 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a1, 32
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a1, 32
-	mv	a0, a1
+	li	a0, 32
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sltiu	a2, a1, 2

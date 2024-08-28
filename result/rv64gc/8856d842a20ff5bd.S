@@ -41,6 +41,5 @@ func000000000000000a:                   # @func000000000000000a
 	bge	a2, a0, .LBB2_2
 .LBB2_4:                                # %entry
 	li	a1, -1
-	srli	a1, a1, 1
-	mv	a0, a1
+	srli	a0, a1, 1
 	ret

@@ -20,8 +20,7 @@ func0000000000000028:                   # @func0000000000000028
 	mv	a2, a3
 	bnez	a0, .LBB0_3
 .LBB0_6:                                # %entry
-	negw	a2, a2
-	mv	a0, a2
+	negw	a0, a2
 	ret
 func0000000000000029:                   # @func0000000000000029
 	sext.w	a2, a2
@@ -45,6 +44,5 @@ func0000000000000029:                   # @func0000000000000029
 	mv	a2, a3
 	bnez	a0, .LBB1_3
 .LBB1_6:                                # %entry
-	negw	a2, a2
-	mv	a0, a2
+	negw	a0, a2
 	ret

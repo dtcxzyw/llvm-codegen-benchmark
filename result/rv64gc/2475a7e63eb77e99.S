@@ -11,8 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a2, a1, -481
 	beqz	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	negw	a2, a2
-	mv	a0, a2
+	negw	a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a3, a0

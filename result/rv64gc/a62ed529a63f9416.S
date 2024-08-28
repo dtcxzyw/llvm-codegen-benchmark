@@ -13,8 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_4:
 	lui	a0, 24
 	addiw	a0, a0, 1024
-	and	a2, a2, a0
-	mv	a0, a2
+	and	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 1
@@ -31,8 +30,7 @@ func0000000000000008:                   # @func0000000000000008
 .LBB1_4:
 	lui	a0, 1048575
 	addiw	a0, a0, 2047
-	and	a2, a2, a0
-	mv	a0, a2
+	and	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
@@ -48,6 +46,5 @@ func0000000000000006:                   # @func0000000000000006
 	bgez	a0, .LBB2_2
 .LBB2_4:
 	slli	a2, a2, 32
-	srli	a2, a2, 32
-	mv	a0, a2
+	srli	a0, a2, 32
 	ret

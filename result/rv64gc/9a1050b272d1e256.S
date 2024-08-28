@@ -42,8 +42,7 @@ func0000000000000006:                   # @func0000000000000006
 	beqz	a0, .LBB2_2
 .LBB2_4:
 	lui	a0, 1047599
-	addiw	a1, a0, 1792
-	mv	a0, a1
+	addiw	a0, a0, 1792
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a3, a0, 1
@@ -79,6 +78,5 @@ func000000000000000a:                   # @func000000000000000a
 	beqz	a0, .LBB5_2
 .LBB5_4:
 	lui	a0, 8
-	addiw	a1, a0, -512
-	mv	a0, a1
+	addiw	a0, a0, -512
 	ret

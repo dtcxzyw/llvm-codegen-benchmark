@@ -9,8 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	li	a2, 26
 	bltu	a1, a0, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a2, 1
-	mv	a0, a2
+	li	a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a3, 128
@@ -23,8 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a2, 128
 	bltu	a0, a1, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a2, 128
-	mv	a0, a2
+	li	a0, 128
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 255
@@ -39,6 +37,5 @@ func0000000000000001:                   # @func0000000000000001
 	li	a2, 4
 	beq	a0, a1, .LBB2_2
 .LBB2_4:                                # %entry
-	li	a2, 3
-	mv	a0, a2
+	li	a0, 3
 	ret

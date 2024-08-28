@@ -11,8 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	li	a2, 3
 	bltu	a2, a0, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a1, 1
-	mv	a0, a1
+	li	a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, 256
@@ -26,8 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a1, 256
 	beqz	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	lui	a1, 256
-	mv	a0, a1
+	lui	a0, 256
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, 131072
@@ -42,8 +40,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a2, -1
 	bne	a0, a2, .LBB2_2
 .LBB2_4:                                # %entry
-	lui	a1, 131072
-	mv	a0, a1
+	lui	a0, 131072
 	ret
 func0000000000000004:                   # @func0000000000000004
 	mv	a2, a0

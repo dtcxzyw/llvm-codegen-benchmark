@@ -13,6 +13,5 @@ func0000000000000004:                   # @func0000000000000004
 	bltu	a0, a2, .LBB0_2
 .LBB0_4:                                # %entry
 	li	a1, -1
-	srli	a1, a1, 3
-	mv	a0, a1
+	srli	a0, a1, 3
 	ret

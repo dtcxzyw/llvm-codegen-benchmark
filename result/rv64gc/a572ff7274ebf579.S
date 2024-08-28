@@ -38,8 +38,7 @@ func0000000000000006:                   # @func0000000000000006
 	bge	a0, a1, .LBB2_2
 .LBB2_4:                                # %entry
 	lui	a0, 1047599
-	addiw	a2, a0, 1792
-	mv	a0, a2
+	addiw	a0, a0, 1792
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0

@@ -13,8 +13,7 @@ func0000000000000088:                   # @func0000000000000088
 .LBB0_4:
 	lui	a0, 1048575
 	addiw	a0, a0, 2047
-	and	a1, a1, a0
-	mv	a0, a1
+	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a3, a0

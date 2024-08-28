@@ -14,8 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_4:                                # %entry
 	slli	a1, a1, 35
 	addi	a1, a1, -1
-	and	a2, a2, a1
-	mv	a0, a2
+	and	a0, a2, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
@@ -29,6 +28,5 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a2, a2, 3
 	bltz	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	andi	a2, a2, 12
-	mv	a0, a2
+	andi	a0, a2, 12
 	ret

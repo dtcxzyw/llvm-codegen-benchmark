@@ -10,6 +10,5 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, -17
 	beqz	a0, .LBB0_2
 .LBB0_4:
-	andi	a2, a2, -5
-	mv	a0, a2
+	andi	a0, a2, -5
 	ret

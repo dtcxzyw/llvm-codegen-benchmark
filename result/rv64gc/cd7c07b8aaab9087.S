@@ -13,8 +13,7 @@ func0000000000000066:                   # @func0000000000000066
 	bge	a0, a2, .LBB0_2
 .LBB0_4:                                # %entry
 	lui	a0, 1047599
-	addiw	a1, a0, 1792
-	mv	a0, a1
+	addiw	a0, a0, 1792
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a0
@@ -89,8 +88,7 @@ func000000000000006a:                   # @func000000000000006a
 	addi	a3, a3, -1290
 	bge	a3, a0, .LBB5_2
 .LBB5_4:                                # %entry
-	srli	a1, a2, 1
-	mv	a0, a1
+	srli	a0, a2, 1
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a0

@@ -10,6 +10,5 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a1, 524288
 	beqz	a0, .LBB0_2
 .LBB0_4:
-	addiw	a1, a2, -1
-	mv	a0, a1
+	addiw	a0, a2, -1
 	ret

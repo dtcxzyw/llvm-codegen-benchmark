@@ -67,6 +67,5 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 6
 	bltu	a1, a0, .LBB4_2
 .LBB4_4:                                # %entry
-	li	a1, 6
-	mv	a0, a1
+	li	a0, 6
 	ret

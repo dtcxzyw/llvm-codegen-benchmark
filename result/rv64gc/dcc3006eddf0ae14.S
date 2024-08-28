@@ -10,6 +10,5 @@ func0000000000000005:                   # @func0000000000000005
 	negw	a2, a2
 	beqz	a0, .LBB0_2
 .LBB0_4:
-	negw	a2, a2
-	mv	a0, a2
+	negw	a0, a2
 	ret

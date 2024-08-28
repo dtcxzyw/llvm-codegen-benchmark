@@ -11,6 +11,5 @@ func0000000000000001:                   # @func0000000000000001
 	li	a1, 9
 	beqz	a2, .LBB0_2
 .LBB0_4:                                # %entry
-	addiw	a1, a0, 15
-	mv	a0, a1
+	addiw	a0, a0, 15
 	ret

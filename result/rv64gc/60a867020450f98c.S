@@ -10,8 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a2, 316
 	beqz	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	li	a2, 317
-	mv	a0, a2
+	li	a0, 317
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 1
@@ -24,8 +23,7 @@ func000000000000000a:                   # @func000000000000000a
 	li	a2, 1024
 	bgtz	a0, .LBB1_2
 .LBB1_4:                                # %entry
-	li	a2, 1280
-	mv	a0, a2
+	li	a0, 1280
 	ret
 .LCPI2_0:
 	.quad	9223372036854775                # 0x20c49ba5e353f7
@@ -45,6 +43,5 @@ func0000000000000006:                   # @func0000000000000006
 	ld	a3, %lo(.LCPI2_0)(a3)
 	blt	a0, a3, .LBB2_2
 .LBB2_4:                                # %entry
-	srli	a2, a1, 1
-	mv	a0, a2
+	srli	a0, a1, 1
 	ret

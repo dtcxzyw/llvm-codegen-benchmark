@@ -59,6 +59,5 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 26
 	blt	a1, a0, .LBB4_2
 .LBB4_4:                                # %entry
-	li	a1, 26
-	mv	a0, a1
+	li	a0, 26
 	ret
