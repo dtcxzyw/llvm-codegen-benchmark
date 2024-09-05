@@ -51,8 +51,11 @@ if __name__ == '__main__':
             work_list.append(os.path.join(bench_dir, file))
     
     print("total items: ", len(work_list))
+    loadavg = os.getloadavg()[2]
+    cores = os.cpu_count() - (10 if loadavg > 10 else 0)
+    print("threads: ", cores)
 
-    pool = Pool(processes=os.cpu_count())
+    pool = Pool(processes=cores)
     progress = tqdm.tqdm(work_list, miniters=len(work_list)/200)
     with open('test.log', 'w') as log:
         for file, status in pool.imap_unordered(run_llc, work_list):
