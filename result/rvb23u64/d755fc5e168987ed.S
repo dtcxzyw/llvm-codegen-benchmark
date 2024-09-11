@@ -42,11 +42,11 @@ func0000000000000355:                   # @func0000000000000355
 	sext.w	a0, a0
 	ret
 func00000000000003d5:                   # @func00000000000003d5
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	sh2add	a1, a1, a1
-	sh1add	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a2, a1
+	sh1add	a0, a1, a0
 	li	a1, -1332
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
@@ -80,21 +80,21 @@ func00000000000001d5:                   # @func00000000000001d5
 	addi	a0, a0, 160
 	ret
 func00000000000003ff:                   # @func00000000000003ff
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	sh2add	a1, a1, a1
-	sh1add	a1, a1, a2
-	lui	a2, 15
-	addi	a2, a2, -1232
-	add	a0, a0, a2
+	sh1add	a1, a2, a1
+	sh1add	a0, a1, a0
+	lui	a1, 15
+	addi	a1, a1, -1232
 	addw	a0, a0, a1
 	ret
 func00000000000003d7:                   # @func00000000000003d7
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	sh2add	a1, a1, a1
-	sh1add	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a2, a1
+	sh1add	a0, a1, a0
 	li	a1, -1332
 	sh2add	a0, a1, a0
 	sext.w	a0, a0

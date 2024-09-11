@@ -8,8 +8,9 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a0, a0, 2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 2
-	li	a1, 100
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret
 .LCPI1_0:
 	.quad	655884233731895169              # 0x91a2b3c4d5e6f81

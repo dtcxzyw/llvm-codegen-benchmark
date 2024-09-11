@@ -10,10 +10,12 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a1, a1, 1147
 	mul	a1, a1, a0
 	srliw	a2, a1, 31
-	srli	a1, a1, 19
+	srai	a1, a1, 16
+	srli	a1, a1, 3
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	subw	a0, a0, a1
 	sext.h	a0, a0
 	ret

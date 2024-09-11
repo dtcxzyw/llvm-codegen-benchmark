@@ -1,14 +1,16 @@
 func000000000000003c:                   # @func000000000000003c
 	zext.w	a1, a1
-	li	a2, 100
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
 	zext.w	a1, a1
-	li	a2, 100
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

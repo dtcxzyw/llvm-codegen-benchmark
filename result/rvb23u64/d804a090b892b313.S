@@ -16,7 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
-	li	a2, 400
-	mulw	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slliw	a1, a1, 4
 	czero.eqz	a0, a1, a0
 	ret

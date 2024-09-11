@@ -5,8 +5,9 @@ func0000000000000037:                   # @func0000000000000037
 	add	a0, a0, a1
 	ret
 func000000000000003b:                   # @func000000000000003b
-	li	a2, 108
-	mulw	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh3add	a1, a1, a1
+	slliw	a1, a1, 2
 	add.uw	a0, a0, a1
 	ret
 func000000000000002b:                   # @func000000000000002b

@@ -7,8 +7,9 @@ func000000000000002c:                   # @func000000000000002c
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	add	a0, a0, a1
-	li	a1, 400
-	mulw	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 4
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1

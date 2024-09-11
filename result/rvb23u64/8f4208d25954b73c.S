@@ -69,8 +69,9 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

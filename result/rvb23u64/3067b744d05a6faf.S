@@ -1,7 +1,8 @@
 func0000000000000037:                   # @func0000000000000037
-	li	a1, 200
-	mul	a0, a0, a1
-	srliw	a0, a0, 8
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 35
+	srli	a0, a0, 40
 	addi	a0, a0, 2
 	ret
 func0000000000000033:                   # @func0000000000000033

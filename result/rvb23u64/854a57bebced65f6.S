@@ -131,10 +131,10 @@ func000000000000005f:                   # @func000000000000005f
 	addi	a0, a0, -1
 	ret
 func00000000000000c0:                   # @func00000000000000c0
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 2047
 	addiw	a0, a0, 453
 	ret

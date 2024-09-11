@@ -31,8 +31,9 @@ func000000000000001f:                   # @func000000000000001f
 func000000000000001d:                   # @func000000000000001d
 	andi	a0, a0, 255
 	addi	a0, a0, -53
-	li	a1, 100
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	addi	a0, a0, -28
 	ret
 func0000000000000015:                   # @func0000000000000015

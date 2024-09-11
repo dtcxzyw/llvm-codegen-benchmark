@@ -32,9 +32,9 @@ func0000000000000060:                   # @func0000000000000060
 	addiw	a0, a0, -5
 	ret
 func000000000000006f:                   # @func000000000000006f
-	li	a2, 50
-	mul	a1, a1, a2
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	srli	a1, a1, 31
+	add.uw	a0, a1, a0
 	addi	a0, a0, 50
 	ret

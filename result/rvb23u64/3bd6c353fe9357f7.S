@@ -8,8 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 8
 	add	a2, a2, a3
-	li	a3, 360
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh3add	a2, a2, a2
+	slli	a2, a2, 3
 	subw	a1, a1, a2
 	mulw	a0, a1, a0
 	ret

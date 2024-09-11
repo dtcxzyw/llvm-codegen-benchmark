@@ -10,10 +10,10 @@ func00000000000000d5:                   # @func00000000000000d5
 	ret
 func00000000000001d5:                   # @func00000000000001d5
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -1332
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
@@ -39,12 +39,12 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
-	add	a0, a0, a1
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	lui	a2, 15
+	addi	a2, a2, -1232
 	add	a0, a0, a2
-	lui	a1, 15
-	addi	a1, a1, -1232
 	addw	a0, a0, a1
 	ret
 func00000000000000f0:                   # @func00000000000000f0
@@ -57,10 +57,10 @@ func00000000000000f0:                   # @func00000000000000f0
 	ret
 func00000000000001d7:                   # @func00000000000001d7
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -1332
 	sh2add	a0, a1, a0
 	sext.w	a0, a0

@@ -12,15 +12,17 @@ func0000000000000081:                   # @func0000000000000081
 	addw	a0, a0, a2
 	ret
 func00000000000000a9:                   # @func00000000000000a9
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	sext.h	a0, a0
 	ret
 func00000000000001f9:                   # @func00000000000001f9
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	sext.h	a0, a0

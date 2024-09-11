@@ -37,9 +37,9 @@ func0000000000000194:                   # @func0000000000000194
 	sltiu	a0, a0, 22
 	ret
 func00000000000001b4:                   # @func00000000000001b4
-	li	a2, 50
-	mul	a1, a1, a2
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	srli	a1, a1, 31
+	add.uw	a0, a1, a0
 	sltiu	a0, a0, 500
 	ret

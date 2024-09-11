@@ -1,6 +1,7 @@
 func0000000000000025:                   # @func0000000000000025
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	andi	a1, a1, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -22,8 +23,9 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a2
 	ret
 func000000000000006f:                   # @func000000000000006f
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	andi	a1, a1, 1
 	add	a0, a0, a1
 	addw	a0, a0, a2

@@ -46,13 +46,14 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a2, 1
 	addiw	a2, a2, -1795
 	sltu	a1, a1, a2
-	li	a2, 100
-	mulw	a0, a0, a2
-	czero.eqz	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 2
 	lui	a2, 1041887
 	addiw	a2, a2, -1856
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000029:                   # @func0000000000000029
 	sext.w	a1, a1

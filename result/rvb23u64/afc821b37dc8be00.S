@@ -79,8 +79,9 @@ func000000000000000b:                   # @func000000000000000b
 	addiw	a1, a1, 1725
 	mul	a0, a0, a1
 	srli	a0, a0, 47
-	li	a1, 400
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 4
 	ret
 .LCPI7_0:
 	.quad	-4454547087429121353            # 0xc22e450672894ab7

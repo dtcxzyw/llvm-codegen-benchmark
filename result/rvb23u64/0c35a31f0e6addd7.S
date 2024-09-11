@@ -5,14 +5,14 @@ func00000000000000f5:                   # @func00000000000000f5
 	ld	a3, %lo(.LCPI0_0)(a3)
 	mulhu	a2, a2, a3
 	srli	a2, a2, 15
-	li	a3, 100
-	mul	a2, a2, a3
-	add	a0, a0, a1
-	lui	a1, 262144
-	addiw	a1, a1, -1225
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	lui	a2, 262144
+	addiw	a2, a2, -1225
+	slli	a2, a2, 2
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	zext.w	a2, a2
@@ -46,9 +46,9 @@ func00000000000000d5:                   # @func00000000000000d5
 	addiw	a3, a3, 1725
 	mul	a2, a2, a3
 	srli	a2, a2, 47
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addiw	a0, a0, -1900
 	ret

@@ -49,10 +49,11 @@ func000000000000000c:                   # @func000000000000000c
 	sh2add	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	mul	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a0, a2, a0
+	sext.w	a0, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	mul	a1, a1, a2

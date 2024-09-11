@@ -5,8 +5,9 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	sub	a0, a0, a1
 	slli	a0, a0, 1
 	ret
@@ -17,8 +18,9 @@ func000000000000000b:                   # @func000000000000000b
 	addiw	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	sub	a0, a0, a1
 	slli	a0, a0, 1
 	ret
@@ -28,8 +30,9 @@ func0000000000000003:                   # @func0000000000000003
 	addiw	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	subw	a0, a0, a1
 	slliw	a0, a0, 1
 	ret

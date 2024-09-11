@@ -24,8 +24,9 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a0, 63
 	srai	a0, a0, 37
 	add	a0, a0, a1
-	li	a1, 100
-	mulw	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 2
 	ret
 .LCPI3_0:
 	.quad	-6640827866535438581            # 0xa3d70a3d70a3d70b
@@ -38,6 +39,7 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a1, a0, 63
 	srai	a0, a0, 6
 	add	a0, a0, a1
-	li	a1, 100
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret

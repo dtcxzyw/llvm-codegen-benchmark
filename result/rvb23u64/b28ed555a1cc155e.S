@@ -44,9 +44,9 @@ func00000000000003d6:                   # @func00000000000003d6
 	or	a0, a0, a1
 	ret
 func00000000000003da:                   # @func00000000000003da
-	li	a3, 100
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	neg	a2, a1
 	sgtz	a0, a0
 	czero.nez	a1, a1, a0

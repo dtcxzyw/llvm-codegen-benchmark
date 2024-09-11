@@ -48,8 +48,9 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000030:                   # @func0000000000000030
 	add	a1, a1, a2
-	li	a2, 400
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
 	addw	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
@@ -117,7 +118,8 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func000000000000000d:                   # @func000000000000000d
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
-	addw	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret

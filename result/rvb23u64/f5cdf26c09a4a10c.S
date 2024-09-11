@@ -52,8 +52,9 @@ func0000000000000023:                   # @func0000000000000023
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	andi	a0, a0, 255
-	li	a1, 100
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret
 func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a1

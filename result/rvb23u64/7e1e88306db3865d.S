@@ -42,8 +42,9 @@ func000000000000003f:                   # @func000000000000003f
 	addiw	a3, a3, 1725
 	mul	a2, a2, a3
 	srli	a2, a2, 47
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

@@ -6,10 +6,11 @@ func0000000000000008:                   # @func0000000000000008
 	mulh	a2, a1, a2
 	add	a2, a2, a1
 	srli	a3, a2, 63
-	srli	a2, a2, 8
+	srai	a2, a2, 8
 	add	a2, a2, a3
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	sext.h	a0, a0

@@ -16,8 +16,8 @@ func000000000000004a:                   # @func000000000000004a
 func00000000000000ff:                   # @func00000000000000ff
 	add	a1, a1, a2
 	andi	a1, a1, 255
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
 	andi	a0, a0, 255
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	ret

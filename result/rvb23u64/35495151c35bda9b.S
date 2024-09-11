@@ -25,9 +25,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a1, 100
-	mul	a0, a0, a1
-	andi	a0, a0, 252
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 58
+	srli	a0, a0, 56
 	sltiu	a0, a0, 100
 	ret
 func0000000000000081:                   # @func0000000000000081

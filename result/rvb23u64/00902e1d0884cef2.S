@@ -7,8 +7,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000006:                   # @func0000000000000006
 	zext.w	a1, a1
-	li	a2, 100
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	divu	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
@@ -27,8 +28,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000002:                   # @func0000000000000002
 	zext.w	a1, a1
-	li	a2, 100
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	divu	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

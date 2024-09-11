@@ -9,8 +9,9 @@ func0000000000000029:                   # @func0000000000000029
 	srli	a1, a1, 1
 	add	a1, a1, a2
 	srli	a1, a1, 8
-	li	a2, 400
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 4
 	add	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
@@ -24,8 +25,9 @@ func0000000000000009:                   # @func0000000000000009
 	srliw	a1, a1, 1
 	add	a1, a1, a2
 	srli	a1, a1, 8
-	li	a2, 400
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 4
 	addw	a0, a0, a1
 	ret
 func000000000000003b:                   # @func000000000000003b
@@ -39,7 +41,8 @@ func000000000000003b:                   # @func000000000000003b
 	srliw	a1, a1, 1
 	add	a1, a1, a2
 	srli	a1, a1, 8
-	li	a2, 400
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 4
 	addw	a0, a0, a1
 	ret

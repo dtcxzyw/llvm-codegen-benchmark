@@ -1,7 +1,8 @@
 func0000000000000055:                   # @func0000000000000055
-	li	a2, 100
-	mul	a1, a1, a2
-	sh2add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a0, a0, 2
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 1970
 	ret
 .LCPI1_0:
@@ -73,9 +74,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	addiw	a0, a0, 144
 	ret
 func0000000000000040:                   # @func0000000000000040
-	li	a2, 180
-	mul	a1, a1, a2
-	sh2add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh3add	a1, a1, a1
+	slli	a0, a0, 2
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 4
 	ret
 func0000000000000030:                   # @func0000000000000030

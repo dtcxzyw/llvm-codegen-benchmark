@@ -15,8 +15,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000025:                   # @func0000000000000025
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
-	li	a4, 400
-	mul	a2, a2, a4
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	mulhu	a3, a1, a3
 	sub	a1, a1, a3
 	srli	a1, a1, 1
@@ -54,8 +55,9 @@ func0000000000000015:                   # @func0000000000000015
 	addw	a0, a0, a2
 	ret
 func000000000000006f:                   # @func000000000000006f
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	zext.w	a3, a1
 	lui	a4, 422303
 	addiw	a4, a4, 865

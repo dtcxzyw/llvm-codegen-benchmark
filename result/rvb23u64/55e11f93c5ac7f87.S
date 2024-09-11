@@ -3,9 +3,10 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 1
 	addi	a1, a1, 32
 	andi	a1, a1, 254
-	li	a2, 100
-	mul	a0, a0, a2
-	addw	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func00000000000000b0:                   # @func00000000000000b0
 	li	a2, -30

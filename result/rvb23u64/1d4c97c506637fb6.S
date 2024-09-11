@@ -34,11 +34,11 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func00000000000000bf:                   # @func00000000000000bf
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	andi	a1, a1, 255
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a1, a2, a1
+	addw	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	zext.w	a2, a2

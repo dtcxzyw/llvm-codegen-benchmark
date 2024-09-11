@@ -28,13 +28,15 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func000000000000001f:                   # @func000000000000001f
 	sext.w	a1, a1
-	li	a2, 216
-	mul	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh3add	a1, a1, a1
+	slli	a1, a1, 3
 	sub	a0, a1, a0
 	ret
 func000000000000001d:                   # @func000000000000001d
 	sext.w	a1, a1
-	li	a2, 216
-	mul	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh3add	a1, a1, a1
+	slli	a1, a1, 3
 	sub	a0, a1, a0
 	ret

@@ -32,8 +32,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000007d:                   # @func000000000000007d
 	addiw	a0, a0, 1
-	li	a1, 216
-	mul	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh3add	a0, a0, a0
+	slli	a0, a0, 3
 	addi	a0, a0, -216
 	ret
 func000000000000000d:                   # @func000000000000000d

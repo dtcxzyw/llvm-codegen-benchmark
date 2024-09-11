@@ -3,9 +3,9 @@ func0000000000000015:                   # @func0000000000000015
 	li	a2, 1000
 	mul	a1, a1, a2
 	sext.b	a0, a0
-	li	a2, 100
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1

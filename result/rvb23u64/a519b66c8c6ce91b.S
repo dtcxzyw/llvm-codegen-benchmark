@@ -46,6 +46,7 @@ func0000000000000043:                   # @func0000000000000043
 	andi	a1, a1, 255
 	add	a0, a0, a1
 	addi	a0, a0, -48
-	li	a1, 100
-	mulw	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 2
 	ret

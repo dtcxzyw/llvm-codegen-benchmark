@@ -96,9 +96,10 @@ func00000000000000f0:                   # @func00000000000000f0
 	li	a3, 1000
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	li	a2, 100
-	mul	a1, a1, a2
-	addw	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	zext.w	a2, a2

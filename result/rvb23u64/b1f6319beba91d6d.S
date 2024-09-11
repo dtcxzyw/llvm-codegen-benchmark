@@ -9,12 +9,12 @@ func00000000000000ed:                   # @func00000000000000ed
 	srli	a2, a1, 63
 	srai	a1, a1, 17
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a0, a0, a2
-	lui	a2, 262144
-	addiw	a2, a2, -1225
-	slli	a2, a2, 2
-	add	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
+	lui	a1, 262144
+	addiw	a1, a1, -1225
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
 func0000000000000025:                   # @func0000000000000025
@@ -28,9 +28,9 @@ func0000000000000025:                   # @func0000000000000025
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 20
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
 	li	a1, -1225
 	sh2add	a0, a1, a0
 	sext.w	a0, a0

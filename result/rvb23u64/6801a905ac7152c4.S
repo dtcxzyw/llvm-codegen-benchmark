@@ -12,8 +12,9 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a1, 41944
 	mulhu	a1, a0, a1
 	srli	a1, a1, 19
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	srli	a0, a0, 49
 	subw	a0, a0, a1
 	zext.h	a0, a0
@@ -24,8 +25,9 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a1, 41944
 	mulhu	a1, a0, a1
 	srli	a1, a1, 19
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	srli	a0, a0, 49
 	subw	a0, a0, a1
 	zext.h	a0, a0

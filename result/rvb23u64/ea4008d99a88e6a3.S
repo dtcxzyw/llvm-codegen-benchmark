@@ -1,7 +1,7 @@
 func0000000000000031:                   # @func0000000000000031
-	li	a2, 25
-	slli	a2, a2, 8
-	mulw	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slliw	a1, a1, 8
 	li	a2, 1
 	max	a1, a1, a2
 	addiw	a0, a0, 1

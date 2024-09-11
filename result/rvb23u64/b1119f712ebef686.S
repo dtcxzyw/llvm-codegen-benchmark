@@ -10,8 +10,9 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a2, 20972
 	mulhu	a0, a0, a2
 	srli	a0, a0, 17
-	li	a2, 100
-	mul	a0, a0, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	sub	a0, a1, a0
 	ret
 func0000000000000003:                   # @func0000000000000003

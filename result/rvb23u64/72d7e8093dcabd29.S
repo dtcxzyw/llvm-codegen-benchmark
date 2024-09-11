@@ -17,24 +17,27 @@ func0000000000000186:                   # @func0000000000000186
 	addi	sp, sp, 16
 	ret
 func000000000000000a:                   # @func000000000000000a
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	divu	a0, a1, a0
 	sext.w	a0, a0
 	slti	a0, a0, 95
 	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	divu	a0, a1, a0
 	sext.w	a0, a0
 	sltiu	a0, a0, 6
 	xori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	divu	a0, a1, a0
 	srliw	a0, a0, 2
 	slli	a0, a0, 2

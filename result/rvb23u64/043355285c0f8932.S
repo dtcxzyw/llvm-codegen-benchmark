@@ -13,8 +13,9 @@ func000000000000006a:                   # @func000000000000006a
 	zext.w	a0, a0
 	ret
 func000000000000002a:                   # @func000000000000002a
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	zext.w	a0, a0

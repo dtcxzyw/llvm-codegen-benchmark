@@ -37,8 +37,9 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a0, a0
 	add	a1, a1, a2
-	li	a2, 100
-	mulw	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slliw	a1, a1, 2
 	slt	a0, a1, a0
 	ret
 func00000000000000f6:                   # @func00000000000000f6
@@ -50,8 +51,9 @@ func00000000000000f6:                   # @func00000000000000f6
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	sltu	a0, a1, a0
 	ret
 func00000000000000d8:                   # @func00000000000000d8

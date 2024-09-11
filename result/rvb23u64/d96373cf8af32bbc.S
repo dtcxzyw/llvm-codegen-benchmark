@@ -8,8 +8,8 @@ func0000000000000015:                   # @func0000000000000015
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 15
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 1970
 	ret

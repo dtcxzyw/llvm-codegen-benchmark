@@ -6,8 +6,9 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a4, a3, 63
 	srai	a3, a3, 37
 	add	a3, a3, a4
-	li	a4, 100
-	mul	a3, a3, a4
+	sh2add	a3, a3, a3
+	sh2add	a3, a3, a3
+	slli	a3, a3, 2
 	add	a1, a1, a2
 	add	a0, a0, a1
 	subw	a0, a0, a3
@@ -31,8 +32,9 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a4, a3, 63
 	srai	a3, a3, 6
 	add	a3, a3, a4
-	li	a4, 100
-	mul	a3, a3, a4
+	sh2add	a3, a3, a3
+	sh2add	a3, a3, a3
+	slli	a3, a3, 2
 	add	a1, a1, a2
 	add	a0, a0, a1
 	sub	a0, a0, a3

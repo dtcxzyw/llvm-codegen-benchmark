@@ -38,10 +38,11 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a0, a2, a0
+	sext.w	a0, a0
 	ret
 func0000000000000035:                   # @func0000000000000035
 	andi	a2, a2, 255

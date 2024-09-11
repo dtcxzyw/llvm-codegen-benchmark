@@ -90,9 +90,9 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a2
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 80
 	ret
 func00000000000000f7:                   # @func00000000000000f7

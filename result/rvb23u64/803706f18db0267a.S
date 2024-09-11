@@ -8,8 +8,9 @@ func0000000000000021:                   # @func0000000000000021
 	srli	a2, a1, 63
 	srai	a1, a1, 37
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	subw	a0, a0, a1
 	ret
 .LCPI1_0:
@@ -26,8 +27,9 @@ func0000000000000051:                   # @func0000000000000051
 	srli	a2, a1, 63
 	srai	a1, a1, 6
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	sub	a0, a0, a1
 	ret
 .LCPI2_0:
@@ -44,8 +46,9 @@ func0000000000000050:                   # @func0000000000000050
 	srli	a2, a1, 63
 	srai	a1, a1, 6
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	sub	a0, a0, a1
 	ret
 .LCPI3_0:

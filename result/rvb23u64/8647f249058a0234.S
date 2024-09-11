@@ -21,9 +21,9 @@ func0000000000000020:                   # @func0000000000000020
 	addw	a0, a0, a1
 	ret
 func00000000000000c5:                   # @func00000000000000c5
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, -1900
 	ret
 func00000000000000c4:                   # @func00000000000000c4

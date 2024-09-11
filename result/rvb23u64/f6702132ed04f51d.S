@@ -56,8 +56,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
-	li	a2, 50
-	mulw	a2, a0, a2
+	sh2add	a2, a0, a0
+	sh2add	a2, a2, a2
+	slliw	a2, a2, 1
 	sltiu	a1, a1, 6
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -65,8 +66,9 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
-	li	a2, 50
-	mulw	a2, a0, a2
+	sh2add	a2, a0, a0
+	sh2add	a2, a2, a2
+	slliw	a2, a2, 1
 	sltiu	a1, a1, 6
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

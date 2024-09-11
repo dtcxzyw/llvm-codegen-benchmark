@@ -1,10 +1,10 @@
 func000000000000003f:                   # @func000000000000003f
 	srliw	a1, a1, 4
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
 	sh2add	a0, a0, a0
-	sh1add	a0, a0, a1
-	sext.w	a0, a0
+	sh1add	a0, a1, a0
+	slliw	a0, a0, 1
 	ret
 .LCPI1_0:
 	.quad	-4417276706812531889            # 0xc2b2ae3d27d4eb4f

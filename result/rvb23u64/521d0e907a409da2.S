@@ -5,12 +5,12 @@ func000000000000003d:                   # @func000000000000003d
 	ld	a2, %lo(.LCPI0_0)(a2)
 	mulhu	a1, a1, a2
 	srli	a1, a1, 15
-	li	a2, 100
-	mul	a1, a1, a2
-	lui	a2, 262144
-	addiw	a2, a2, -1225
-	slli	a2, a2, 2
-	add	a0, a0, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	lui	a1, 262144
+	addiw	a1, a1, -1225
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
@@ -43,8 +43,8 @@ func0000000000000035:                   # @func0000000000000035
 	addiw	a2, a2, 1725
 	mul	a1, a1, a2
 	srli	a1, a1, 47
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, -1900
 	ret

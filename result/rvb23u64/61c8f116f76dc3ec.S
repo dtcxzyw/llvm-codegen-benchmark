@@ -29,9 +29,9 @@ func0000000000000544:                   # @func0000000000000544
 	ret
 func00000000000007d4:                   # @func00000000000007d4
 	andi	a1, a1, 255
-	li	a2, 100
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
 	addiw	a0, a0, -1950
 	sltiu	a0, a0, 100
 	ret

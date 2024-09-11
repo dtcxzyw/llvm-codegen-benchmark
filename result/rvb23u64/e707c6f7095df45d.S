@@ -102,12 +102,13 @@ func00000000000000d0:                   # @func00000000000000d0
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
 	li	a3, 1000
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a0, a2, a0
+	sext.w	a0, a0
 	ret
 func00000000000001f0:                   # @func00000000000001f0
 	sext.w	a2, a2

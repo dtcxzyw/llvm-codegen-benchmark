@@ -2,8 +2,9 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	andi	a0, a0, 255
-	li	a1, 100
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a1

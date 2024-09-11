@@ -66,7 +66,8 @@ func00000000000000d5:                   # @func00000000000000d5
 func000000000000000d:                   # @func000000000000000d
 	add	a1, a1, a2
 	addi	a1, a1, -48
-	li	a2, 100
-	mul	a1, a1, a2
-	addw	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret

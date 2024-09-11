@@ -7,8 +7,9 @@ func0000000000000031:                   # @func0000000000000031
 	srli	a3, a1, 2
 	mulhu	a2, a3, a2
 	srli	a2, a2, 2
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	sub	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -22,8 +23,9 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a3, a1, 2
 	mulhu	a2, a3, a2
 	srli	a2, a2, 2
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	sub	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

@@ -24,9 +24,9 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
 	li	a3, 8
 	czero.nez	a2, a3, a2
-	li	a3, 360
-	mul	a1, a1, a3
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh3add	a1, a1, a1
+	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	addi	a0, a0, 272
 	ret

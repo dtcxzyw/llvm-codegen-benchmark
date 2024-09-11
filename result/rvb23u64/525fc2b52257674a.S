@@ -1,8 +1,8 @@
 func0000000000000055:                   # @func0000000000000055
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addiw	a0, a0, 1970
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -13,10 +13,10 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 3
 	ret
 func00000000000000f5:                   # @func00000000000000f5
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 262144
 	addiw	a1, a1, -1225
 	slli	a1, a1, 2
@@ -142,10 +142,10 @@ func00000000000000fc:                   # @func00000000000000fc
 	addi	a0, a0, 640
 	ret
 func00000000000000d7:                   # @func00000000000000d7
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -1332
 	sh2add	a0, a1, a0
 	sext.w	a0, a0

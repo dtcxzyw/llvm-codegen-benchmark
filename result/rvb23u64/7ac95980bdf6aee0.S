@@ -45,8 +45,9 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	subw	a0, a0, a1
 	zext.w	a0, a0
 	li	a1, 103

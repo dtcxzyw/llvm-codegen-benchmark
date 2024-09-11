@@ -42,8 +42,9 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
-	li	a2, 50
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 1
 	addiw	a1, a1, 84
 	xor	a0, a0, a1
 	seqz	a0, a0

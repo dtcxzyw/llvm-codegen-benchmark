@@ -5,9 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	lui	a1, 16
 	addiw	a1, a1, -2
 	and	a0, a0, a1

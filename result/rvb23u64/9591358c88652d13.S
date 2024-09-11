@@ -90,10 +90,12 @@ func000000000000006a:                   # @func000000000000006a
 	addiw	a3, a3, 1147
 	mul	a2, a2, a3
 	srliw	a3, a2, 31
-	srli	a2, a2, 19
+	srai	a2, a2, 16
+	srli	a2, a2, 3
 	add	a2, a2, a3
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	subw	a1, a1, a2
 	sext.h	a1, a1
 	sgtz	a1, a1

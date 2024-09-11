@@ -8,8 +8,9 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a3, 200
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 3
 	lui	a3, 16
 	addiw	a3, a3, -256
 	and	a2, a2, a3

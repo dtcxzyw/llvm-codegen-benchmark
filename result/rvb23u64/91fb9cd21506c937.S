@@ -12,8 +12,9 @@ func0000000000000031:                   # @func0000000000000031
 	srli	a2, a1, 63
 	srai	a1, a1, 8
 	add	a1, a1, a2
-	li	a2, 400
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
 	sub	a0, a0, a0
 	sub	a0, a0, a1
 	ret

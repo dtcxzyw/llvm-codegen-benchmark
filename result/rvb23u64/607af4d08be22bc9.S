@@ -36,9 +36,9 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000075:                   # @func0000000000000075
 	andi	a1, a1, 255
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	li	a1, -1332
 	sh2add	a0, a1, a0
 	sext.w	a0, a0

@@ -1,8 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
-	li	a2, 100
-	mul	a1, a1, a2
-	zext.w	a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 34
+	srli	a1, a1, 32
 	lui	a2, 67109
 	addiw	a2, a2, -557
 	mul	a1, a1, a2

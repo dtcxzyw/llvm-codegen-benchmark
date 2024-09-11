@@ -10,11 +10,12 @@ func0000000000000000:                   # @func0000000000000000
 	roriw	a0, a0, 19
 	ret
 func000000000000001e:                   # @func000000000000001e
-	li	a3, 54
-	mul	a2, a2, a3
-	xor	a0, a0, a2
+	sh1add	a2, a2, a2
+	sh3add	a2, a2, a2
+	slli	a2, a2, 1
 	sh1add	a1, a1, a1
 	sh3add	a1, a1, a1
 	xor	a0, a0, a1
+	xor	a0, a0, a2
 	roriw	a0, a0, 16
 	ret

@@ -1,10 +1,10 @@
 func000000000000003f:                   # @func000000000000003f
 	andi	a1, a1, 15
 	sh2add	a1, a1, a1
-	li	a2, 100
-	mul	a0, a0, a2
-	sh1add	a0, a1, a0
-	sext.w	a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh1add	a0, a0, a1
+	slliw	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 255

@@ -7,8 +7,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
-	li	a2, 180
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh3add	a1, a1, a1
+	slli	a1, a1, 2
 	addiw	a1, a1, -180
 	li	a2, 1440
 	czero.eqz	a2, a2, a0

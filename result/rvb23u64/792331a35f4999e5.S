@@ -5,14 +5,16 @@ func0000000000000024:                   # @func0000000000000024
 	sltu	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -123,8 +125,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
-	li	a2, 100
-	mulw	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slliw	a1, a1, 2
 	slt	a0, a1, a0
 	ret
 func0000000000000036:                   # @func0000000000000036

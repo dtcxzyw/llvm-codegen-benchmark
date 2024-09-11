@@ -189,10 +189,10 @@ func0000000000000146:                   # @func0000000000000146
 	slti	a0, a0, 1
 	ret
 func00000000000003f8:                   # @func00000000000003f8
-	li	a3, 100
-	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret

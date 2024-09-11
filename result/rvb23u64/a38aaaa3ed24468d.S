@@ -23,9 +23,9 @@ func0000000000000055:                   # @func0000000000000055
 func000000000000007d:                   # @func000000000000007d
 	andi	a0, a0, 1
 	zext.h	a2, a2
-	li	a3, 100
-	mul	a1, a1, a3
-	add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a2
 	neg	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

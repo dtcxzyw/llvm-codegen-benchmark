@@ -9,9 +9,9 @@ func0000000000000035:                   # @func0000000000000035
 	addiw	a0, a0, -528
 	ret
 func0000000000000015:                   # @func0000000000000015
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 1970
 	ret
 func0000000000000000:                   # @func0000000000000000
@@ -31,9 +31,9 @@ func0000000000000020:                   # @func0000000000000020
 	addi	a0, a0, -48
 	ret
 func000000000000003d:                   # @func000000000000003d
-	li	a2, 100
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	lui	a1, 262144
 	addiw	a1, a1, -1225
 	slli	a1, a1, 2

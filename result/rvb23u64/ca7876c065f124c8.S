@@ -46,9 +46,10 @@ func0000000000000075:                   # @func0000000000000075
 func000000000000003f:                   # @func000000000000003f
 	addi	a1, a1, 32
 	andi	a1, a1, 255
-	li	a2, 100
-	mul	a0, a0, a2
-	addw	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000002f:                   # @func000000000000002f
 	addi	a1, a1, -48
