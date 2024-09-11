@@ -40,8 +40,9 @@ func00000000000003ff:                   # @func00000000000003ff
 	add	a1, a1, a2
 	ret
 func0000000000000155:                   # @func0000000000000155
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	lui	a1, 1048509

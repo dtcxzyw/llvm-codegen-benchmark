@@ -7,8 +7,9 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a1, a0, 63
 	srai	a0, a0, 15
 	add	a0, a0, a1
-	li	a1, 400
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 4
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	sp, sp, -32

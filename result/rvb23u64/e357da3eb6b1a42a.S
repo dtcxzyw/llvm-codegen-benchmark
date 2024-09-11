@@ -28,8 +28,9 @@ func0000000000000035:                   # @func0000000000000035
 	slli	a1, a1, 6
 	subw	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 75
-	mulw	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 3
 	ret
 func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 255

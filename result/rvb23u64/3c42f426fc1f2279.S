@@ -5,8 +5,8 @@ func0000000000000035:                   # @func0000000000000035
 	addiw	a0, a0, -480
 	ret
 func0000000000000010:                   # @func0000000000000010
-	li	a2, 135
-	mul	a1, a1, a2
+	sh3add	a1, a1, a1
+	sh1add	a1, a1, a1
 	sext.w	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, 540

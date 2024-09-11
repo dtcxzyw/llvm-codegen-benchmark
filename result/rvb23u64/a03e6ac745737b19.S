@@ -22,8 +22,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func0000000000000108:                   # @func0000000000000108
 	sext.w	a2, a2
-	li	a3, 135
-	mul	a1, a1, a3
+	sh3add	a1, a1, a1
+	sh1add	a1, a1, a1
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

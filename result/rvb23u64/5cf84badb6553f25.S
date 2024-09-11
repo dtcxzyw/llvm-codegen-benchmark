@@ -46,8 +46,9 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a4, 186416
 	mulhu	a3, a3, a4
 	srli	a3, a3, 22
-	li	a4, 360
-	mul	a3, a3, a4
+	sh3add	a3, a3, a3
+	sh2add	a3, a3, a3
+	slli	a3, a3, 2
 	subw	a2, a2, a3
 	zext.h	a2, a2
 	sltiu	a2, a2, 181

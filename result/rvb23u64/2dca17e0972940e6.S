@@ -34,8 +34,9 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a3, a3, 1311
 	mul	a2, a2, a3
 	srli	a2, a2, 39
-	li	a3, 400
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	subw	a0, a0, a0
 	add	a0, a0, a1
 	subw	a0, a0, a2

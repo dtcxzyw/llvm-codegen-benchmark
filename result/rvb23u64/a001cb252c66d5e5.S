@@ -22,8 +22,9 @@ func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a1, a1
 	slti	a1, a1, 1570
 	add	a0, a0, a1
-	li	a1, 400
-	mulw	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 4
 	ret
 func000000000000018e:                   # @func000000000000018e
 	snez	a1, a1

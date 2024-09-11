@@ -6,8 +6,9 @@ func0000000000000014:                   # @func0000000000000014
 	srli	a4, a3, 63
 	srai	a3, a3, 37
 	add	a3, a3, a4
-	li	a4, 100
-	mul	a3, a3, a4
+	sh2add	a3, a3, a3
+	sh2add	a3, a3, a3
+	slli	a3, a3, 2
 	add	a0, a0, a2
 	subw	a0, a0, a3
 	sh1add	a0, a1, a0

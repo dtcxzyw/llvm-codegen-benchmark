@@ -31,6 +31,7 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 34
-	li	a1, 360
-	mulw	a0, a0, a1
+	sh3add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 2
 	ret

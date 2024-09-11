@@ -30,8 +30,9 @@ func00000000000000d5:                   # @func00000000000000d5
 	slli	a1, a1, 6
 	subw	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 75
-	mul	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 3
 	addiw	a0, a0, -150
 	ret
 func0000000000000013:                   # @func0000000000000013

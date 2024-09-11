@@ -43,9 +43,9 @@ func0000000000000458:                   # @func0000000000000458
 	ret
 func0000000000000356:                   # @func0000000000000356
 	andi	a1, a1, 255
-	li	a2, 75
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh3add	a0, a0, a1
 	addiw	a0, a0, -150
 	slti	a0, a0, 0
 	ret

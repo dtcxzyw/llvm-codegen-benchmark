@@ -65,9 +65,9 @@ func0000000000000330:                   # @func0000000000000330
 	li	a3, 1000
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	li	a2, 100
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
 	addiw	a0, a0, 80
 	ret
 func00000000000003f7:                   # @func00000000000003f7

@@ -35,8 +35,9 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a4, a3, 63
 	srai	a3, a3, 8
 	add	a3, a3, a4
-	li	a4, 400
-	mul	a3, a3, a4
+	sh2add	a3, a3, a3
+	sh2add	a3, a3, a3
+	slli	a3, a3, 4
 	sub	a2, a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

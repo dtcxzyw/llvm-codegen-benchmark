@@ -3,7 +3,8 @@ func000000000000003f:                   # @func000000000000003f
 	li	a2, 77
 	mul	a1, a1, a2
 	srliw	a0, a0, 8
-	li	a2, 150
-	mul	a0, a0, a2
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 4
 	addw	a0, a0, a1
 	ret

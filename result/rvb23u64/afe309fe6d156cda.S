@@ -1,6 +1,7 @@
 func0000000000000009:                   # @func0000000000000009
-	li	a2, 400
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
 	zext.w	a2, a0
 	lui	a3, 422303
 	addiw	a3, a3, 865

@@ -116,8 +116,9 @@ func0000000000000044:                   # @func0000000000000044
 	addiw	a3, a3, 1147
 	mul	a2, a2, a3
 	srli	a2, a2, 17
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	subw	a1, a1, a2
 	zext.h	a1, a1
 	sltiu	a1, a1, 60
