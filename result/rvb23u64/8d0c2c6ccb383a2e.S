@@ -6,8 +6,9 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a3, a1, 2
 	mulhu	a2, a3, a2
 	srli	a2, a2, 2
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	addi	a0, a0, 1

@@ -14,8 +14,9 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a3, a2, 63
 	srai	a2, a2, 37
 	add	a2, a2, a3
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	subw	a0, a0, a1
 	addw	a0, a0, a2
 	ret

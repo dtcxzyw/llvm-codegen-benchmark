@@ -1,6 +1,7 @@
 func00000000000000f1:                   # @func00000000000000f1
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	addi	a0, a0, 1900
 	xor	a0, a0, a1
 	seqz	a0, a0

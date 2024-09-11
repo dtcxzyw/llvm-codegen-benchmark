@@ -22,8 +22,9 @@ func0000000000000015:                   # @func0000000000000015
 	li	a3, -400
 	czero.eqz	a0, a3, a0
 	add	a0, a0, a1
-	li	a1, 400
-	mul	a1, a1, a2
+	sh2add	a1, a2, a2
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d

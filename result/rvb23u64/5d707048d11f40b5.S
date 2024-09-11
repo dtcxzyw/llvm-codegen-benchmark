@@ -22,8 +22,9 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a2, a0, 2
 	mulhu	a1, a2, a1
 	srli	a1, a1, 2
-	li	a2, 100
-	mul	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	sub	a0, a0, a1
 	li	a1, 103
 	mul	a0, a0, a1

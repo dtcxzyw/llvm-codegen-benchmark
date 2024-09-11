@@ -1,6 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
-	li	a1, 90
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh3add	a0, a0, a0
+	slli	a0, a0, 1
 	fcvt.d.w	fa0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001

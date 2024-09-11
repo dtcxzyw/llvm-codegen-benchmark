@@ -1,6 +1,7 @@
 func00000000000001f4:                   # @func00000000000001f4
-	li	a3, 108
-	mulw	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh3add	a2, a2, a2
+	slliw	a2, a2, 2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

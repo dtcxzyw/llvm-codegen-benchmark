@@ -2,8 +2,9 @@ func000000000000000c:                   # @func000000000000000c
 	zext.w	a1, a1
 	zext.w	a0, a0
 	mul	a0, a0, a1
-	li	a1, 200
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 3
 	ret
 func000000000000003f:                   # @func000000000000003f
 	mul	a2, a1, a0

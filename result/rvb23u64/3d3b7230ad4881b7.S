@@ -1,8 +1,9 @@
 func000000000000000d:                   # @func000000000000000d
 	andi	a1, a1, 1
 	andi	a2, a2, 255
-	li	a3, 100
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	li	a3, 2000
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

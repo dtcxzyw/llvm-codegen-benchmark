@@ -15,6 +15,7 @@ func000000000000019f:                   # @func000000000000019f
 	sh1add	a0, a1, a0
 	addi	a0, a0, -48
 	andi	a0, a0, 255
-	li	a1, 100
-	mul	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret

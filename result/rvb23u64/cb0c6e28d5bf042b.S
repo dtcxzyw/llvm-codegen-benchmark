@@ -4,8 +4,9 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a3, a3, 1311
 	mul	a2, a2, a3
 	srli	a2, a2, 36
-	li	a3, 50
-	mul	a2, a2, a3
+	sh2add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 1
 	subw	a1, a1, a2
 	add.uw	a0, a1, a0
 	addi	a0, a0, -50
