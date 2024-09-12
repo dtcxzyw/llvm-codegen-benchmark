@@ -1,8 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	fli.d	fa5, 3.0
-	fneg.d	fa5, fa5
 	fmul.d	fa5, fa1, fa5
-	fadd.d	fa5, fa0, fa5
+	fsub.d	fa5, fa0, fa5
 	feq.d	a0, fa5, fa5
 	fli.d	fa0, nan
 	beqz	a0, .LBB0_2
@@ -11,9 +10,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 0.25
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa1, fa5
-	fadd.s	fa5, fa0, fa5
+	fsub.s	fa5, fa0, fa5
 	fmv.w.x	fa0, zero
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB1_2

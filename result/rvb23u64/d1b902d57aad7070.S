@@ -16,7 +16,6 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.s	fa0, fa1
 .LBB1_2:                                # %entry
 	fli.s	fa5, 1.52587890625e-05
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa2, fa5
-	fadd.s	fa0, fa0, fa5
+	fsub.s	fa0, fa0, fa5
 	ret

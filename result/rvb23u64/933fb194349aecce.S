@@ -34,11 +34,10 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI3_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000012:                   # @func0000000000000012
-	fli.s	fa5, 2.0
 	lui	a0, %hi(.LCPI3_0)
-	flw	fa4, %lo(.LCPI3_0)(a0)
-	fneg.s	fa5, fa5
-	fmadd.s	fa5, fa0, fa5, fa1
-	fabs.s	fa5, fa5
-	flt.s	a0, fa5, fa4
+	flw	fa5, %lo(.LCPI3_0)(a0)
+	fli.s	fa4, 2.0
+	fnmsub.s	fa4, fa4, fa0, fa1
+	fabs.s	fa4, fa4
+	flt.s	a0, fa4, fa5
 	ret

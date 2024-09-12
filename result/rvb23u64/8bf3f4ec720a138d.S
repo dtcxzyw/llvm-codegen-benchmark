@@ -1,7 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
 	fli.s	fa5, 0.5
-	fneg.s	fa4, fa5
-	fmadd.s	fa0, fa0, fa4, fa5
+	fnmsub.s	fa0, fa5, fa0, fa5
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB0_2

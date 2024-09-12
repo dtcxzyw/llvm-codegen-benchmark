@@ -38,8 +38,7 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fli.s	fa5, 1.5
-	fneg.s	fa5, fa5
-	fadd.s	fa5, fa1, fa5
+	fsub.s	fa5, fa1, fa5
 	fle.s	a0, fa5, fa0
 	ret
 .LCPI7_0:

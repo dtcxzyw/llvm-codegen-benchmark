@@ -9,8 +9,7 @@ func0000000000000015:                   # @func0000000000000015
 	addi	a0, a0, -1
 	fcvt.d.w	fa5, a0
 	fli.d	fa4, 0.5
-	fneg.d	fa4, fa4
-	fadd.d	fa4, fa0, fa4
+	fsub.d	fa4, fa0, fa4
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret

@@ -14,8 +14,7 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, a0
 	fdiv.s	fa5, fa0, fa5
 	fli.s	fa4, 2.0
-	fneg.s	fa4, fa4
-	fadd.s	fa5, fa5, fa4
+	fsub.s	fa5, fa5, fa4
 	fcvt.l.s	a0, fa5, rtz
 	sgtz	a0, a0
 	ret
