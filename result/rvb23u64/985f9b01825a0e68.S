@@ -6,8 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fli.s	fa5, 1.5
-	fneg.s	fa5, fa5
-	fadd.s	fa5, fa1, fa5
+	fsub.s	fa5, fa1, fa5
 	fle.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

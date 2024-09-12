@@ -1,7 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 0.5
-	fneg.s	fa5, fa5
-	fmadd.s	fa5, fa2, fa5, fa1
+	fnmsub.s	fa5, fa5, fa2, fa1
 	fle.s	a0, fa5, fa0
 	ret
 .LCPI1_0:

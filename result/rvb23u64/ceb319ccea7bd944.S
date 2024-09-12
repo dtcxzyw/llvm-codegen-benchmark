@@ -44,8 +44,7 @@ func000000000000000d:                   # @func000000000000000d
 	fli.s	fa5, 0.5
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB3_2
-	fneg.s	fa5, fa5
-	fadd.s	fa0, fa0, fa5
+	fsub.s	fa0, fa0, fa5
 .LBB3_2:                                # %entry
 	ret
 .LCPI4_0:

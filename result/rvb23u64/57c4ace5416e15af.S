@@ -4,8 +4,7 @@ func000000000000000b:                   # @func000000000000000b
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fli.d	fa4, 0.125
-	fneg.d	fa4, fa4
-	fmadd.d	fa5, fa1, fa5, fa4
+	fmsub.d	fa5, fa1, fa5, fa4
 	flt.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

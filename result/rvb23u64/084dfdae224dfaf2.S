@@ -22,8 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 2.0
-	fneg.s	fa5, fa5
-	fmadd.s	fa5, fa1, fa5, fa2
+	fnmsub.s	fa5, fa5, fa1, fa2
 	feq.s	a0, fa5, fa0
 	ret
 .LCPI4_0:

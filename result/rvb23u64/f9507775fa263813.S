@@ -22,8 +22,7 @@ func0000000000000013:                   # @func0000000000000013
 func0000000000000002:                   # @func0000000000000002
 	fadd.s	fa5, fa1, fa2
 	fli.s	fa4, 2.0
-	fneg.s	fa4, fa4
-	fmadd.s	fa5, fa0, fa4, fa5
+	fnmsub.s	fa5, fa4, fa0, fa5
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa5, fa4
 	ret

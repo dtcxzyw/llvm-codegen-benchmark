@@ -8,7 +8,6 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	fli.d	fa3, 1.5
-	fneg.d	fa3, fa3
-	fadd.d	fa3, fa0, fa3
+	fsub.d	fa3, fa0, fa3
 	fmadd.d	fa0, fa3, fa4, fa5
 	ret

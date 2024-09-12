@@ -22,13 +22,12 @@ func0000000000000015:                   # @func0000000000000015
 .LCPI2_0:
 	.quad	0x3f847ae147ae147b              # double 0.01
 func0000000000000002:                   # @func0000000000000002
-	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
-	fneg.d	fa5, fa5
-	fadd.d	fa5, fa0, fa5
-	fabs.d	fa5, fa5
-	flt.d	a0, fa5, fa4
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	fli.d	fa4, 0.5
+	fsub.d	fa4, fa0, fa4
+	fabs.d	fa4, fa4
+	flt.d	a0, fa4, fa5
 	ret
 .LCPI3_0:
 	.word	0xbf2ec4c6                      # float -0.682690024
