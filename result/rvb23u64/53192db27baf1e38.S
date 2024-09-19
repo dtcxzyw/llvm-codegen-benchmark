@@ -15,8 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	and	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
@@ -81,10 +81,8 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
 	and	a0, a0, a1
 	ret

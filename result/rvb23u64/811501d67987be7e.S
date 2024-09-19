@@ -2,8 +2,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	fclass.d	a0, fa1
 	andi	a0, a0, 894
 	snez	a0, a0
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	ret
 func000000000000010e:                   # @func000000000000010e
@@ -51,8 +51,8 @@ func0000000000000310:                   # @func0000000000000310
 	fclass.d	a0, fa1
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	ret
 .LCPI7_0:
@@ -103,13 +103,10 @@ func00000000000000aa:                   # @func00000000000000aa
 func0000000000000132:                   # @func0000000000000132
 	fclass.d	a0, fa1
 	andi	a0, a0, 897
-	snez	a0, a0
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
 	or	a0, a0, a1
+	snez	a0, a0
 	ret
 func00000000000002aa:                   # @func00000000000002aa
 	fabs.s	fa5, fa1
@@ -147,11 +144,8 @@ func0000000000000198:                   # @func0000000000000198
 func00000000000000f2:                   # @func00000000000000f2
 	fclass.d	a0, fa1
 	andi	a0, a0, 894
-	snez	a0, a0
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
 	or	a0, a0, a1
+	snez	a0, a0
 	ret

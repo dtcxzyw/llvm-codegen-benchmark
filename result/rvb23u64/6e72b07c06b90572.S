@@ -197,11 +197,9 @@ func0000000000000092:                   # @func0000000000000092
 	lui	a0, %hi(.LCPI20_0)
 	fld	fa5, %lo(.LCPI20_0)(a0)
 	flt.d	a0, fa5, fa0
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
 	ret
 .LCPI21_0:

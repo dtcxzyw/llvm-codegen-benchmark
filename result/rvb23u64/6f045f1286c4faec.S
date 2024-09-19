@@ -176,24 +176,19 @@ func0000000000000224:                   # @func0000000000000224
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa1, fa5
 	or	a0, a0, a1
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000264:                   # @func0000000000000264
-	fli.d	fa5, inf
-	flt.d	a1, fa1, fa5
-	flt.d	a2, fa5, fa1
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa1
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
 	ret
 func000000000000039c:                   # @func000000000000039c

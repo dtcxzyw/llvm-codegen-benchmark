@@ -2,8 +2,8 @@ func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	srli	a1, a1, 7
 	and	a0, a0, a1
 	ret
 .LCPI1_0:
@@ -83,8 +83,8 @@ func0000000000000188:                   # @func0000000000000188
 	fabs.d	fa5, fa1
 	fli.d	fa4, 1.0
 	feq.d	a0, fa5, fa4
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	and	a0, a0, a1
 	ret
 func0000000000000066:                   # @func0000000000000066

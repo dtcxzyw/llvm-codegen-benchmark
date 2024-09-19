@@ -10,8 +10,8 @@ func0000000000000068:                   # @func0000000000000068
 	bltz	a0, .LBB1_2
 	fmv.d	fa0, fa1
 .LBB1_2:                                # %entry
-	fli.d	fa5, inf
-	feq.d	a0, fa0, fa5
+	fclass.d	a0, fa0
+	bexti	a0, a0, 7
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0

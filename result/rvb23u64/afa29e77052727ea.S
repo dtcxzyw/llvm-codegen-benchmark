@@ -21,21 +21,28 @@ func0000000000000005:                   # @func0000000000000005
 	flw	fa5, 0(a0)
 	fdiv.s	fa0, fa5, fa0
 	ret
+.LCPI2_0:
+	.quad	0xbff0000000000000              # double -1
+	.quad	0x3ff0000000000000              # double 1
 func0000000000000004:                   # @func0000000000000004
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa5, fa1
-	fli.d	fa5, 1.0
-	bnez	a0, .LBB2_2
-	fli.d	fa5, -1.0
-.LBB2_2:                                # %entry
+	lui	a1, %hi(.LCPI2_0)
+	addi	a1, a1, %lo(.LCPI2_0)
+	sh3add	a0, a0, a1
+	fld	fa5, 0(a0)
 	fdiv.d	fa0, fa5, fa0
 	ret
+.LCPI3_0:
+	.quad	0x3ff0000000000000              # double 1
+	.quad	0xbff0000000000000              # double -1
 func0000000000000003:                   # @func0000000000000003
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa1
-	fli.d	fa5, -1.0
-	beqz	a0, .LBB3_2
-	fli.d	fa5, 1.0
-.LBB3_2:                                # %entry
+	xori	a0, a0, 1
+	lui	a1, %hi(.LCPI3_0)
+	addi	a1, a1, %lo(.LCPI3_0)
+	sh3add	a0, a0, a1
+	fld	fa5, 0(a0)
 	fdiv.d	fa0, fa5, fa0
 	ret

@@ -58,7 +58,7 @@ func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	and	a0, a0, a1
 	ret

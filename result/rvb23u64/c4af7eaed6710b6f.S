@@ -1,8 +1,8 @@
 func0000000000000088:                   # @func0000000000000088
-	fli.d	fa5, inf
-	feq.d	a0, fa1, fa5
-	feq.d	a1, fa0, fa5
+	fclass.d	a0, fa1
+	fclass.d	a1, fa0
 	and	a0, a0, a1
+	bexti	a0, a0, 7
 	ret
 .LCPI1_0:
 	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308
@@ -246,11 +246,9 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
-	fli.d	fa5, inf
-	flt.d	a0, fa1, fa5
-	flt.d	a1, fa5, fa1
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	fclass.d	a0, fa1
+	andi	a0, a0, 896
+	snez	a0, a0
 	fli.d	fa5, 1.0
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1

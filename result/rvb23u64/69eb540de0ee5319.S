@@ -69,11 +69,9 @@ func0000000000000022:                   # @func0000000000000022
 	flt.s	a0, fa5, fa4
 	ret
 func0000000000000098:                   # @func0000000000000098
-	fli.d	fa5, inf
-	flt.d	a0, fa1, fa5
-	flt.d	a1, fa5, fa1
-	or	a0, a0, a1
-	bnez	a0, .LBB7_2
+	fclass.d	a0, fa1
+	andi	a0, a0, 896
+	beqz	a0, .LBB7_2
 	fmv.d.x	fa0, zero
 .LBB7_2:                                # %entry
 	fli.d	fa5, 1.0

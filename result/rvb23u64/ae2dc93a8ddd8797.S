@@ -44,11 +44,9 @@ func0000000000000001:                   # @func0000000000000001
 	xori	a0, a0, 1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	fli.d	fa5, inf
-	flt.d	a0, fa0, fa5
-	flt.d	a1, fa5, fa0
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	fclass.d	a0, fa0
+	andi	a0, a0, 896
+	snez	a0, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	feq.d	a0, fa0, fa0

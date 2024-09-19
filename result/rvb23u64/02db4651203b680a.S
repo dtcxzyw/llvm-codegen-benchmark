@@ -39,15 +39,16 @@ func0000000000000078:                   # @func0000000000000078
 	fli.d	fa5, inf
 	feq.d	a1, fa1, fa5
 	xori	a1, a1, 1
-	feq.d	a2, fa0, fa5
+	fclass.d	a2, fa0
+	bexti	a2, a2, 7
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
-	fli.d	fa5, inf
-	feq.d	a1, fa1, fa5
-	or	a0, a0, a1
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa1
+	fclass.d	a2, fa0
+	or	a1, a1, a2
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011

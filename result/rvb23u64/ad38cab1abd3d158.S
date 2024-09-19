@@ -39,11 +39,9 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI4_1:
 	.quad	0x4051b770a3d70a3d              # double 70.866249999999994
 func0000000000000009:                   # @func0000000000000009
-	fli.d	fa5, inf
-	flt.d	a0, fa0, fa5
-	flt.d	a1, fa5, fa0
-	or	a0, a0, a1
-	beqz	a0, .LBB4_2
+	fclass.d	a0, fa0
+	andi	a0, a0, 896
+	bnez	a0, .LBB4_2
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	fmul.d	fa0, fa1, fa5

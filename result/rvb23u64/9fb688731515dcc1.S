@@ -10,11 +10,9 @@ func000000000000002e:                   # @func000000000000002e
 	and	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
-	fli.d	fa5, inf
-	flt.d	a0, fa2, fa5
-	flt.d	a1, fa5, fa2
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	fclass.d	a0, fa2
+	andi	a0, a0, 896
+	snez	a0, a0
 	feq.d	a1, fa0, fa1
 	and	a0, a0, a1
 	ret

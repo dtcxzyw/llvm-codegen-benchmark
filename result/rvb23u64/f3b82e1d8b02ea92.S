@@ -76,11 +76,9 @@ func0000000000000005:                   # @func0000000000000005
 .LBB10_2:                               # %entry
 	ret
 func0000000000000009:                   # @func0000000000000009
-	fli.d	fa5, inf
-	flt.d	a0, fa2, fa5
-	flt.d	a1, fa5, fa2
-	or	a0, a0, a1
-	beqz	a0, .LBB11_2
+	fclass.d	a0, fa2
+	andi	a0, a0, 896
+	bnez	a0, .LBB11_2
 	fmv.d	fa0, fa1
 .LBB11_2:                               # %entry
 	ret

@@ -13,31 +13,39 @@ func0000000000000005:                   # @func0000000000000005
 	sh3add	a0, a0, a1
 	fld	fa0, 0(a0)
 	ret
+.LCPI1_0:
+	.quad	0x7ff0000000000000              # double +Inf
+	.quad	0xfff0000000000000              # double -Inf
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa0, fa5
-	fli.d	fa0, inf
-	beqz	a0, .LBB1_2
-	fneg.d	fa0, fa0
-.LBB1_2:                                # %entry
+	lui	a1, %hi(.LCPI1_0)
+	addi	a1, a1, %lo(.LCPI1_0)
+	sh3add	a0, a0, a1
+	fld	fa0, 0(a0)
 	ret
+.LCPI2_0:
+	.quad	0x3ff0000000000000              # double 1
+	.quad	0xbff0000000000000              # double -1
 func0000000000000004:                   # @func0000000000000004
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa5, fa0
-	fli.d	fa0, -1.0
-	bnez	a0, .LBB2_2
-	fli.d	fa0, 1.0
-.LBB2_2:                                # %entry
+	lui	a1, %hi(.LCPI2_0)
+	addi	a1, a1, %lo(.LCPI2_0)
+	sh3add	a0, a0, a1
+	fld	fa0, 0(a0)
 	ret
+.LCPI3_0:
+	.quad	0x7ff8000000000000              # double NaN
+	.quad	0xfff0000000000000              # double -Inf
 func0000000000000007:                   # @func0000000000000007
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
-	beqz	a0, .LBB3_2
-	fli.d	fa0, nan
-	ret
-.LBB3_2:
-	fli.d	fa5, inf
-	fneg.d	fa0, fa5
+	xori	a0, a0, 1
+	lui	a1, %hi(.LCPI3_0)
+	addi	a1, a1, %lo(.LCPI3_0)
+	sh3add	a0, a0, a1
+	fld	fa0, 0(a0)
 	ret
 .LCPI4_0:
 	.word	0x3fa14518                      # float 1.25992107

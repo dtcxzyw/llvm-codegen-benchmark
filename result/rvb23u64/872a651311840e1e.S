@@ -48,12 +48,11 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func00000000000000f2:                   # @func00000000000000f2
 	feq.d	a0, fa1, fa2
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
 	xori	a0, a0, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 func00000000000001ae:                   # @func00000000000001ae
 	flt.s	a0, fa1, fa2

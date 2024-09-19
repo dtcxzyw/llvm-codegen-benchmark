@@ -77,8 +77,8 @@ func0000000000001e10:                   # @func0000000000001e10
 func000000000000221c:                   # @func000000000000221c
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
-	fli.d	fa4, inf
-	feq.d	a1, fa1, fa4
+	fclass.d	a1, fa1
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
@@ -87,15 +87,11 @@ func000000000000221c:                   # @func000000000000221c
 func0000000000002264:                   # @func0000000000002264
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
-	fli.d	fa5, inf
-	flt.d	a1, fa1, fa5
-	flt.d	a2, fa5, fa1
+	fclass.d	a1, fa1
+	fclass.d	a2, fa0
 	or	a1, a1, a2
-	flt.d	a2, fa0, fa5
-	flt.d	a3, fa5, fa0
-	or	a2, a2, a3
-	and	a1, a1, a2
-	xori	a1, a1, 1
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000003b9c:                   # @func0000000000003b9c

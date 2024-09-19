@@ -103,11 +103,9 @@ func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
-	fli.d	fa5, inf
-	flt.d	a2, fa0, fa5
-	flt.d	a3, fa5, fa0
-	or	a2, a2, a3
-	xori	a2, a2, 1
+	fclass.d	a2, fa0
+	andi	a2, a2, 896
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

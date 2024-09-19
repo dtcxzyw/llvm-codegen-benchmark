@@ -76,8 +76,8 @@ func0000000000000087:                   # @func0000000000000087
 	fclass.s	a0, fa1
 	andi	a0, a0, 894
 	snez	a0, a0
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	ret
 .LCPI9_0:

@@ -6,8 +6,8 @@ func0000000000000488:                   # @func0000000000000488
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa4, fa2
 	feq.d	a1, fa1, fa5
-	fli.d	fa5, inf
-	feq.d	a2, fa0, fa5
+	fclass.d	a2, fa0
+	srli	a2, a2, 7
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -19,8 +19,8 @@ func0000000000000288:                   # @func0000000000000288
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa2, fa4
 	feq.d	a1, fa1, fa5
-	fli.d	fa5, inf
-	feq.d	a2, fa0, fa5
+	fclass.d	a2, fa0
+	srli	a2, a2, 7
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

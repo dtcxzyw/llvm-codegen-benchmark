@@ -2,8 +2,8 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	ori	a0, a0, 3
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	li	a2, 4
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

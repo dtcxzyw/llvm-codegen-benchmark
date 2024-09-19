@@ -46,6 +46,6 @@ func000000000000007a:                   # @func000000000000007a
 	and	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
-	fli.d	fa5, inf
-	feq.d	a0, fa0, fa5
+	fclass.d	a0, fa0
+	bexti	a0, a0, 7
 	ret

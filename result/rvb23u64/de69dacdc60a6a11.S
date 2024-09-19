@@ -57,7 +57,7 @@ func0000000000000110:                   # @func0000000000000110
 	fsub.d	fa5, fa1, fa2
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	ret

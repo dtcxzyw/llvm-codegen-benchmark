@@ -43,21 +43,22 @@ func0000000000000444:                   # @func0000000000000444
 	flt.s	a0, fa4, fa5
 	ret
 func0000000000000878:                   # @func0000000000000878
+	fclass.d	a0, fa2
+	fclass.d	a1, fa0
+	or	a0, a0, a1
 	fli.d	fa5, inf
-	feq.d	a0, fa2, fa5
 	feq.d	a1, fa1, fa5
 	xori	a1, a1, 1
-	feq.d	a2, fa0, fa5
-	or	a0, a0, a2
+	bexti	a0, a0, 7
 	or	a0, a0, a1
 	ret
 func0000000000000888:                   # @func0000000000000888
-	fli.d	fa5, inf
-	feq.d	a0, fa2, fa5
-	feq.d	a1, fa1, fa5
+	fclass.d	a0, fa2
+	fclass.d	a1, fa1
+	fclass.d	a2, fa0
+	or	a1, a1, a2
 	or	a0, a0, a1
-	feq.d	a1, fa0, fa5
-	or	a0, a0, a1
+	bexti	a0, a0, 7
 	ret
 func0000000000000111:                   # @func0000000000000111
 	feq.d	a0, fa2, fa2

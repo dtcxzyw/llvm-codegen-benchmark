@@ -30,14 +30,18 @@ func0000000000000005:                   # @func0000000000000005
 	sh2add	a0, a0, a1
 	flw	fa0, 0(a0)
 	ret
+.LCPI3_0:
+	.quad	0x3fe0000000000000              # double 0.5
+	.quad	0xbfe0000000000000              # double -0.5
 func0000000000000003:                   # @func0000000000000003
 	fsub.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
-	fli.d	fa0, 0.5
-	bnez	a0, .LBB3_2
-	fneg.d	fa0, fa0
-.LBB3_2:                                # %entry
+	xori	a0, a0, 1
+	lui	a1, %hi(.LCPI3_0)
+	addi	a1, a1, %lo(.LCPI3_0)
+	sh3add	a0, a0, a1
+	fld	fa0, 0(a0)
 	ret
 .LCPI4_0:
 	.quad	0xbf1a36e2eb1c432d              # double -1.0E-4

@@ -32,11 +32,9 @@ func0000000000000077:                   # @func0000000000000077
 	addi	sp, sp, 32
 	ret
 func0000000000000094:                   # @func0000000000000094
-	fli.d	fa5, inf
-	flt.d	a0, fa2, fa5
-	flt.d	a1, fa5, fa2
-	or	a0, a0, a1
-	xori	a0, a0, 1
+	fclass.d	a0, fa2
+	andi	a0, a0, 896
+	snez	a0, a0
 	flt.d	a1, fa1, fa0
 	or	a0, a0, a1
 	ret

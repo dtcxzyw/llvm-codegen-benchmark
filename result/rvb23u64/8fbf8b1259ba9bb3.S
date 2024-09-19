@@ -2,12 +2,14 @@ func00000000000000f0:                   # @func00000000000000f0
 	fli.d	fa5, inf
 	feq.d	a0, fa1, fa5
 	xori	a0, a0, 1
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	or	a0, a0, a1
 	ret
 func000000000000010e:                   # @func000000000000010e
+	fclass.d	a0, fa1
+	bexti	a0, a0, 7
 	fli.d	fa5, inf
-	feq.d	a0, fa1, fa5
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -143,14 +145,12 @@ func0000000000000082:                   # @func0000000000000082
 .LCPI18_0:
 	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
 func0000000000000124:                   # @func0000000000000124
-	fli.d	fa5, inf
-	flt.d	a0, fa1, fa5
-	lui	a1, %hi(.LCPI18_0)
-	fld	fa4, %lo(.LCPI18_0)(a1)
-	flt.d	a1, fa5, fa1
-	or	a0, a0, a1
-	xori	a0, a0, 1
-	flt.d	a1, fa0, fa4
+	lui	a0, %hi(.LCPI18_0)
+	fld	fa5, %lo(.LCPI18_0)(a0)
+	fclass.d	a0, fa1
+	andi	a0, a0, 896
+	snez	a0, a0
+	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 func00000000000000aa:                   # @func00000000000000aa
@@ -233,24 +233,18 @@ func0000000000000150:                   # @func0000000000000150
 	or	a0, a0, a1
 	ret
 func0000000000000132:                   # @func0000000000000132
-	fli.d	fa5, inf
-	flt.d	a0, fa1, fa5
-	flt.d	a1, fa5, fa1
+	fclass.d	a0, fa1
+	fclass.d	a1, fa0
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
-	xori	a0, a0, 1
+	andi	a0, a0, 896
+	snez	a0, a0
 	ret
 func0000000000000112:                   # @func0000000000000112
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa1, fa5
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000108:                   # @func0000000000000108
@@ -295,8 +289,8 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a1
 	ret
 func0000000000000102:                   # @func0000000000000102
-	fli.d	fa5, inf
-	feq.d	a0, fa1, fa5
+	fclass.d	a0, fa1
+	bexti	a0, a0, 7
 	feq.d	a1, fa0, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -311,11 +305,11 @@ func00000000000000e4:                   # @func00000000000000e4
 func00000000000000f2:                   # @func00000000000000f2
 	fli.d	fa5, inf
 	feq.d	a0, fa1, fa5
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
 	xori	a0, a0, 1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 func00000000000001c2:                   # @func00000000000001c2
 	feq.d	a0, fa1, fa1

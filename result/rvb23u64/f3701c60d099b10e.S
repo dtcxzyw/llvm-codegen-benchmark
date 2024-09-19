@@ -4,13 +4,11 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	czero.eqz	a0, a0, a1
+	fclass.d	a1, fa0
+	andi	a1, a1, 896
+	czero.nez	a0, a0, a1
 	li	a2, -22
-	czero.nez	a1, a2, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

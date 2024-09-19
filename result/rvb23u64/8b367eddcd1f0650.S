@@ -59,13 +59,11 @@ func0000000000000044:                   # @func0000000000000044
 .LCPI6_0:
 	.quad	0x433fffffffffffff              # double 9007199254740991
 func000000000000024a:                   # @func000000000000024a
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	lui	a3, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a3)
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fclass.d	a1, fa0
+	lui	a2, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a2)
+	andi	a1, a1, 896
+	snez	a1, a1
 	or	a0, a0, a1
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1

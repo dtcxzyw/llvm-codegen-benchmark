@@ -16,8 +16,8 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	li	a2, 4
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

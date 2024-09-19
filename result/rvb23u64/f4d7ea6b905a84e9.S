@@ -2,8 +2,8 @@ func0000000000000048:                   # @func0000000000000048
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa1
 	and	a0, a0, a1
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	and	a0, a0, a1
 	ret
 .LCPI1_0:
@@ -12,8 +12,8 @@ func0000000000000088:                   # @func0000000000000088
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	feq.d	a1, fa1, fa5
-	fli.d	fa5, inf
-	feq.d	a2, fa0, fa5
+	fclass.d	a2, fa0
+	bexti	a2, a2, 7
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -21,8 +21,8 @@ func0000000000000028:                   # @func0000000000000028
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa1, fa5
 	and	a0, a0, a1
-	fli.d	fa5, inf
-	feq.d	a1, fa0, fa5
+	fclass.d	a1, fa0
+	bexti	a1, a1, 7
 	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
