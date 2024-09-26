@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -20,7 +20,9 @@
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; mold/optimized/perf.cc.ll
+; openusd/optimized/registry.cpp.ll
 ; openvdb/optimized/Filter.cc.ll
+; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i1 %1, ptr %2) #0 {

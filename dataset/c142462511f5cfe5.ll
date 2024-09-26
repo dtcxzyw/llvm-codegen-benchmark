@@ -1,0 +1,172 @@
+
+; 18 occurrences:
+; icu/optimized/ucnv_ext.ll
+; libjpeg-turbo/optimized/jdicc.c.ll
+; libjpeg-turbo/optimized/tjunittest.c.ll
+; libpng/optimized/pngpread.c.ll
+; libpng/optimized/pngrutil.c.ll
+; libpng/optimized/pngwutil.c.ll
+; linux/optimized/config.ll
+; linux/optimized/virtio_net.ll
+; lodepng/optimized/lodepng.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; openjdk/optimized/pngpread.ll
+; openjdk/optimized/pngrutil.ll
+; openssl/optimized/libcrypto-lib-evp_enc.ll
+; openssl/optimized/libcrypto-shlib-evp_enc.ll
+; proxygen/optimized/HTTP2Framer.cpp.ll
+; rocksdb/optimized/comparator.cc.ll
+; wireshark/optimized/packet-hartip.c.ll
+; wireshark/optimized/packet-juniper.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp ugt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 11 occurrences:
+; libquic/optimized/s3_both.c.ll
+; linux/optimized/drm_client_modeset.ll
+; luau/optimized/Parser.cpp.ll
+; php/optimized/pcre2_match.ll
+; recastnavigation/optimized/RecastLayers.cpp.ll
+; redis/optimized/zipmap.ll
+; wireshark/optimized/packet-gtp.c.ll
+; wireshark/optimized/packet-iax2.c.ll
+; wireshark/optimized/packet-mojito.c.ll
+; wolfssl/optimized/dh.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp eq i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 18 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
+; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; linux/optimized/intel_hdcp.ll
+; openspiel/optimized/dynamic_routing_utils.cc.ll
+; openspiel/optimized/history_tree.cc.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp ne i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; abc/optimized/dauMerge.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp ult i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 6 occurrences:
+; graphviz/optimized/parse.c.ll
+; linux/optimized/filter.ll
+; linux/optimized/hdmi.ll
+; linux/optimized/xfrm_user.ll
+; postgres/optimized/regcomp.ll
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp eq i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 5 occurrences:
+; cmake/optimized/archive_read_support_format_lha.c.ll
+; libjpeg-turbo/optimized/tjunittest.c.ll
+; libquic/optimized/cipher.c.ll
+; linux/optimized/config.ll
+; redis/optimized/ldebug.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp sgt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; linux/optimized/intel_dp.ll
+; linux/optimized/ip_options.ll
+; linux/optimized/tcp_timer.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; nuttx/optimized/msginternal.c.ll
+; opencv/optimized/brightedges.cpp.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp ult i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-umts_rlc.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001a(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp slt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; nuttx/optimized/msginternal.c.ll
+; redis/optimized/ldebug.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = icmp slt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; protobuf/optimized/field_mask_util.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = icmp sgt i32 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

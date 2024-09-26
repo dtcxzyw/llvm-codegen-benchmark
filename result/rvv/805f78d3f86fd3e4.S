@@ -1,7 +1,0 @@
-func0000000000000116:                   # @func0000000000000116
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 1
-	vmseq.vv	v0, v12, v10
-	vmerge.vim	v10, v12, 0, v0
-	vmslt.vv	v0, v8, v10
-	ret

@@ -1,14 +1,12 @@
 
-; 188 occurrences:
+; 195 occurrences:
+; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
-; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; cvc5/optimized/linear_equality.cpp.ll
-; cvc5/optimized/theory_arith_private.cpp.ll
-; faiss/optimized/IndexIVF.cpp.ll
+; gromacs/optimized/vsite.cpp.ll
 ; grpc/optimized/xds_cluster_resolver.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_calc_components.cpp.ll
@@ -21,30 +19,40 @@
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/rose_build_infix.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; icu/optimized/smpdtfmt.ll
 ; icu/optimized/utf16collationiterator.ll
 ; libquic/optimized/quic_session.cc.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/irqdomain.ll
 ; linux/optimized/mark.ll
 ; linux/optimized/sem.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/DeclObjC.cpp.ll
+; llvm/optimized/Function.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/Module.cpp.ll
+; llvm/optimized/ProfileSummaryBuilder.cpp.ll
+; llvm/optimized/SROA.cpp.ll
+; llvm/optimized/SampleContextTracker.cpp.ll
+; llvm/optimized/SampleProf.cpp.ll
+; llvm/optimized/SampleProfReader.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
+; llvm/optimized/SampleProfileMatcher.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; luau/optimized/DataFlowGraph.cpp.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
+; openjdk/optimized/graphKit.ll
+; openjdk/optimized/memnode.ll
+; openspiel/optimized/human_bot.cc.ll
+; openssl/optimized/libcrypto-lib-context.ll
+; openssl/optimized/libcrypto-shlib-context.ll
 ; postgres/optimized/equivclass.ll
 ; postgres/optimized/indxpath.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTPHeaders.cpp.ll
 ; proxygen/optimized/HTTPMessage.cpp.ll
-; redis/optimized/networking.ll
-; rocksdb/optimized/blob_db_impl.cc.ll
-; rocksdb/optimized/db_impl.cc.ll
-; rocksdb/optimized/db_impl_open.cc.ll
-; rocksdb/optimized/db_impl_secondary.cc.ll
-; rocksdb/optimized/db_impl_write.cc.ll
-; rocksdb/optimized/env_encryption.cc.ll
-; rocksdb/optimized/pessimistic_transaction.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; rocksdb/optimized/write_batch.cc.ll
-; rocksdb/optimized/write_unprepared_txn_db.cc.ll
+; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/aiger.ll
@@ -187,7 +195,6 @@
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
@@ -253,11 +260,10 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; cpython/optimized/listobject.ll
+; 3 occurrences:
+; clamav/optimized/phishcheck.c.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_infix.cpp.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
@@ -266,22 +272,13 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; zstd/optimized/zstdmt_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(ptr %0, ptr %1) #0 {
-entry:
-  %2 = freeze ptr %1
-  %3 = icmp uge ptr %2, %0
-  ret i1 %3
-}
-
-; 5 occurrences:
+; 6 occurrences:
 ; cvc5/optimized/bag_solver.cpp.ll
 ; cvc5/optimized/theory_sets_private.cpp.ll
 ; grpc/optimized/xds_cluster_resolver.cc.ll
 ; linux/optimized/af_unix.ll
-; redis/optimized/networking.ll
+; llvm/optimized/VPlanAnalysis.cpp.ll
+; xgboost/optimized/multiclass_obj.cc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:

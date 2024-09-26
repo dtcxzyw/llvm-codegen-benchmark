@@ -1,0 +1,283 @@
+
+; 8 occurrences:
+; linux/optimized/ahci.ll
+; linux/optimized/dm.ll
+; linux/optimized/mlme.ll
+; linux/optimized/nfnetlink_log.ll
+; openjdk/optimized/runTimeClassInfo.ll
+; qemu/optimized/hw_display_vga.c.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/addr2line.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp eq i16 %1, 5
+  %3 = select i1 %2, i64 4, i64 2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 136 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; bullet3/optimized/btAxisSweep3.ll
+; c3c/optimized/llvm_codegen_function.c.ll
+; clamav/optimized/matcher-bm.c.ll
+; clamav/optimized/qtmd.c.ll
+; clamav/optimized/yc.c.ll
+; cmake/optimized/ftp.c.ll
+; curl/optimized/libcurl_la-ftp.ll
+; cvc5/optimized/alf_node_converter.cpp.ll
+; cvc5/optimized/extf_solver.cpp.ll
+; flatbuffers/optimized/idl_gen_swift.cpp.ll
+; folly/optimized/EpollBackend.cpp.ll
+; freetype/optimized/autofit.c.ll
+; freetype/optimized/truetype.c.ll
+; git/optimized/merge-ort.ll
+; hdf5/optimized/H5trace.c.ll
+; icu/optimized/nfrs.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; libquic/optimized/string_number_conversions.cc.ll
+; linux/optimized/buffered-io.ll
+; linux/optimized/fils_aead.ll
+; linux/optimized/gro.ll
+; linux/optimized/iface.ll
+; linux/optimized/mlme.ll
+; linux/optimized/nfs4proc.ll
+; linux/optimized/nfs4state.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/rx.ll
+; linux/optimized/sme.ll
+; linux/optimized/sta_info.ll
+; linux/optimized/tx.ll
+; linux/optimized/udp.ll
+; linux/optimized/wpa.ll
+; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
+; llvm/optimized/AArch64RegisterInfo.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
+; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/AsmWriter.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGException.cpp.ll
+; llvm/optimized/COFFObjectFile.cpp.ll
+; llvm/optimized/CodeGenFunction.cpp.ll
+; llvm/optimized/CodeGenPGO.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/Core.cpp.ll
+; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
+; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
+; llvm/optimized/DebugHandlerBase.cpp.ll
+; llvm/optimized/DeclPrinter.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/FrontendActions.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveRangeShrink.cpp.ll
+; llvm/optimized/MachineCopyPropagation.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/MachineOperand.cpp.ll
+; llvm/optimized/MachineRegisterInfo.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
+; llvm/optimized/RegAllocFast.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/RemoveRedundantDebugValues.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SelectionDAGISel.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/Stmt.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; llvm/optimized/WasmEHPrepare.cpp.ll
+; llvm/optimized/WinEHPrepare.cpp.ll
+; llvm/optimized/X86DynAllocaExpander.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; llvm/optimized/X86FixupLEAs.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; memcached/optimized/memcached-proto_bin.ll
+; memcached/optimized/memcached_debug-proto_bin.ll
+; minetest/optimized/connection.cpp.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; node/optimized/libnode.Protocol.ll
+; node/optimized/libnode.node_report_utils.ll
+; node/optimized/libnode.node_sockaddr.ll
+; node/optimized/libnode.packet.ll
+; openjdk/optimized/SctpNet.ll
+; openjdk/optimized/reg_split.ll
+; openjdk/optimized/runTimeClassInfo.ll
+; openmpi/optimized/pml_ob1_sendreq.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
+; php/optimized/util.ll
+; php/optimized/zend_ast.ll
+; php/optimized/zend_compile.ll
+; postgres/optimized/integerset.ll
+; qemu/optimized/hw_scsi_megasas.c.ll
+; slurm/optimized/gang.ll
+; slurm/optimized/slurm_protocol_api.ll
+; slurm/optimized/step_io.ll
+; sqlite/optimized/sqlite3.ll
+; verilator/optimized/V3Param.cpp.ll
+; wireshark/optimized/packet-dcerpc-pn-io.c.ll
+; wireshark/optimized/packet-epl.c.ll
+; wireshark/optimized/tap-sctp-analysis.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp eq i16 %1, 0
+  %3 = select i1 %2, i64 4176, i64 4184
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; oiio/optimized/psdinput.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp slt i16 %1, -1
+  %3 = select i1 %2, i64 24, i64 16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; llvm/optimized/DWARFVerifier.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 5
+  %3 = select i1 %2, i64 144, i64 152
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; llvm/optimized/GISelKnownBits.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp eq i16 %1, 0
+  %3 = select i1 %2, i64 24, i64 40
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; llvm/optimized/DwarfDebug.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 4
+  %3 = select i1 %2, i64 320, i64 136
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; imgui/optimized/imgui_tables.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp sgt i16 %1, -1
+  %3 = select i1 %2, i64 5, i64 4
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; llvm/optimized/TargetLowering.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 173
+  %3 = select i1 %2, i64 60, i64 52
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; linux/optimized/decompress_unlzo.ll
+; llvm/optimized/DWARFDebugLine.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 4
+  %3 = select i1 %2, i64 0, i64 -136
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 3 occurrences:
+; icu/optimized/normalizer2impl.ll
+; linux/optimized/intel_wm.ll
+; llvm/optimized/DWARFUnit.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000022(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 4
+  %3 = select i1 %2, i64 272, i64 264
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; cvc5/optimized/theory_sep.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000032(ptr %0, i16 %1) #0 {
+entry:
+  %.not = icmp eq i16 %1, 18
+  %2 = select i1 %.not, i64 416, i64 408
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  ret ptr %3
+}
+
+; 3 occurrences:
+; postgres/optimized/ginutil.ll
+; postgres/optimized/hashutil.ll
+; postgres/optimized/indextuple.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp sgt i16 %1, -1
+  %3 = select i1 %2, i64 8, i64 16
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+attributes #0 = { nounwind }

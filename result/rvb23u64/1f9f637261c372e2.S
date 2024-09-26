@@ -1,0 +1,30 @@
+func000000000000002c:                   # @func000000000000002c
+	sext.w	a1, a1
+	bext	a0, a0, a1
+	ret
+func0000000000000021:                   # @func0000000000000021
+	srl	a0, a0, a1
+	andi	a0, a0, 63
+	seqz	a0, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	srl	a0, a0, a1
+	andi	a0, a0, 255
+	seqz	a0, a0
+	ret
+func0000000000000028:                   # @func0000000000000028
+	srl	a0, a0, a1
+	andi	a0, a0, 63
+	sltiu	a0, a0, 59
+	xori	a0, a0, 1
+	ret
+func0000000000000024:                   # @func0000000000000024
+	srl	a0, a0, a1
+	andi	a0, a0, 63
+	sltiu	a0, a0, 59
+	ret
+func000000000000000c:                   # @func000000000000000c
+	srl	a0, a0, a1
+	sext.w	a0, a0
+	snez	a0, a0
+	ret

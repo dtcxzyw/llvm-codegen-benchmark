@@ -1,0 +1,40 @@
+
+; 1 occurrences:
+; stockfish/optimized/position.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i1 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 63
+  %3 = zext nneg i16 %2 to i32
+  %4 = select i1 %0, i32 8, i32 -8
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 3 occurrences:
+; linux/optimized/flow_dissector.ll
+; linux/optimized/gre_offload.ll
+; wireshark/optimized/packet-dcp-etsi.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i1 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 4
+  %3 = zext nneg i16 %2 to i32
+  %4 = select i1 %0, i32 14, i32 16
+  %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/nbtsplitloc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i1 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, -256
+  %3 = zext i16 %2 to i32
+  %4 = select i1 %0, i32 -52, i32 -44
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/memory_pool.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; libevent/optimized/evutil.c.ll
@@ -8,6 +8,8 @@
 ; lief/optimized/MemoryStream.cpp.ll
 ; lief/optimized/SpanStream.cpp.ll
 ; lief/optimized/VectorStream.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; openjdk/optimized/systemDictionaryShared.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, ptr %1, i1 %2) #0 {
 entry:

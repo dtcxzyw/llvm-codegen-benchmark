@@ -1,0 +1,50 @@
+
+; 3 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; openjdk/optimized/collectedHeap.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 2, i64 3
+  %4 = add nsw i64 %3, %1
+  %5 = and i64 %4, %0
+  ret i64 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/AArch64StackTagging.cpp.ll
+; llvm/optimized/ELFObjectWriter.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 8, i64 1
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, %0
+  ret i64 %5
+}
+
+; 12 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
+; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
+; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/cord_test.cc.ll
+; cpython/optimized/obmalloc.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; mimalloc/optimized/segment.c.ll
+; protobuf/optimized/message_lite.cc.ll
+; protobuf/optimized/zero_copy_stream.cc.ll
+; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 8, i64 64
+  %4 = add nuw nsw i64 %3, %1
+  %5 = and i64 %4, %0
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

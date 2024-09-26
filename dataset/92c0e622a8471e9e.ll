@@ -1,0 +1,52 @@
+
+; 2 occurrences:
+; openjdk/optimized/xMarkStack.ll
+; openjdk/optimized/zMarkStack.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, -2048
+  %4 = icmp eq i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; cmake/optimized/index.c.ll
+; linux/optimized/intel_dpll_mgr.ll
+; linux/optimized/posix-cpu-timers.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 126
+  %4 = icmp ugt i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; redis/optimized/evict.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 10
+  %4 = icmp ugt i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; arrow/optimized/decimal.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_numeric.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw i64 %2, 10
+  %4 = icmp ugt i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

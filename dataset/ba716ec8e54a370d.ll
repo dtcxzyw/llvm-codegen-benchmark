@@ -1,8 +1,11 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/X86AsmParser.cpp.ll
 ; mimalloc/optimized/os.c.ll
+; opencv/optimized/stat_c.cpp.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {

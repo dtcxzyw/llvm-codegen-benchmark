@@ -1,0 +1,12 @@
+func0000000000000001:                   # @func0000000000000001
+	lui	a2, 699051
+	addi	a2, a2, -1365
+	mul	a1, a1, a2
+	lui	a2, 174763
+	addi	a2, a2, -1366
+	addw	a1, a1, a2
+	lui	a2, 349525
+	addiw	a2, a2, 1365
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret

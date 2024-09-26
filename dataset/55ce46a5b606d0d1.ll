@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/editor.ll
 ; libevent/optimized/event.c.ll
+; openjdk/optimized/awt_InputMethod.ll
 ; php/optimized/cgi_main.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000c1(ptr %0, ptr %1) #0 {

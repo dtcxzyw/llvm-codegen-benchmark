@@ -1,0 +1,22 @@
+func0000000000000001:                   # @func0000000000000001
+	andi	a2, a2, -5
+	beqz	a2, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	ret
+func000000000000000c:                   # @func000000000000000c
+	slli	a2, a2, 50
+	bgez	a2, .LBB1_2
+	mv	a1, a0
+.LBB1_2:                                # %entry
+	mv	a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	lui	a3, 256
+	addi	a3, a3, -1
+	slli	a3, a3, 32
+	and	a2, a2, a3
+	beqz	a2, .LBB2_2
+	mv	a0, a1
+.LBB2_2:                                # %entry
+	ret

@@ -1,0 +1,25 @@
+
+; 11 occurrences:
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; jemalloc/optimized/extent_dss.ll
+; jemalloc/optimized/extent_dss.pic.ll
+; jemalloc/optimized/extent_dss.sym.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
+; ropey-rs/optimized/q87dnuin1j2jq4x.ll
+; wasmtime-rs/optimized/1h2b9qnacbe9cbqw.ll
+; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
+; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 15
+  %4 = and i64 %3, -16
+  %5 = sub i64 %4, %2
+  %6 = getelementptr nusw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

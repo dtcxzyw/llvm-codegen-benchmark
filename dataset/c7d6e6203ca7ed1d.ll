@@ -1,24 +1,9 @@
 
-; 5 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; openssl/optimized/openssl-bin-fipsinstall.ll
-; php/optimized/logical_filters.ll
-; slurm/optimized/sreport.ll
-; wireshark/optimized/lemon.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, ptr %1, i1 %2) #0 {
-entry:
-  %3 = xor i1 %2, true
-  %4 = select i1 %3, i1 true, i1 %0
-  %5 = icmp ne ptr %1, null
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 22 occurrences:
+; 27 occurrences:
 ; cmake/optimized/stream.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; libuv/optimized/stream.c.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; node/optimized/stream.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -37,13 +22,34 @@ entry:
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
+; openjdk/optimized/whitebox.ll
+; openusd/optimized/composeSite.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
+; rocksdb/optimized/compaction_iterator.cc.ll
+; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = select i1 %3, i1 true, i1 %0
   %5 = icmp eq ptr %1, null
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; openssl/optimized/openssl-bin-fipsinstall.ll
+; proj/optimized/concatenatedoperation.cpp.ll
+; proj/optimized/coordinateoperationfactory.cpp.ll
+; slurm/optimized/sreport.ll
+; wireshark/optimized/lemon.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = xor i1 %2, true
+  %4 = select i1 %3, i1 true, i1 %0
+  %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }

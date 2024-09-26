@@ -1,0 +1,34 @@
+func0000000000000037:                   # @func0000000000000037
+	li	a2, 1233
+	mul	a1, a1, a2
+	srliw	a1, a1, 12
+	addw	a0, a0, a1
+	ret
+func0000000000000007:                   # @func0000000000000007
+	lui	a2, 4112
+	addi	a2, a2, 257
+	mul	a1, a1, a2
+	srliw	a1, a1, 24
+	addw	a0, a0, a1
+	ret
+func0000000000000033:                   # @func0000000000000033
+	lui	a2, 297
+	addi	a2, a2, 847
+	mul	a1, a1, a2
+	srliw	a1, a1, 19
+	addw	a0, a0, a1
+	ret
+func0000000000000032:                   # @func0000000000000032
+	lui	a2, 19
+	addi	a2, a2, 1089
+	mul	a1, a1, a2
+	srliw	a1, a1, 18
+	add	a0, a0, a1
+	zext.w	a0, a0
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sh3add	a1, a1, a1
+	srliw	a1, a1, 6
+	add	a0, a0, a1
+	zext.w	a0, a0
+	ret

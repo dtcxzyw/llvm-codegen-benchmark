@@ -1,10 +1,13 @@
 
-; 34 occurrences:
-; cmake/optimized/json_reader.cpp.ll
+; 35 occurrences:
 ; cpython/optimized/_xxinterpchannelsmodule.ll
 ; cpython/optimized/interpreteridobject.ll
 ; graphviz/optimized/DotIO.c.ll
 ; linux/optimized/intel_atomic_plane.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/VectorUtils.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -25,8 +28,6 @@
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; node/optimized/libnode.crypto_common.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openssl/optimized/libcrypto-lib-v3_akid.ll
-; openssl/optimized/libcrypto-shlib-v3_akid.ll
 ; postgres/optimized/describe.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/qemu-io-cmds.c.ll

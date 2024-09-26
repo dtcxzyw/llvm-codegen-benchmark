@@ -1,0 +1,21 @@
+
+; 5 occurrences:
+; abc/optimized/nwkMerge.c.ll
+; glslang/optimized/ShaderLang.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; redis/optimized/redis-cli.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 %0)
+  %4 = icmp eq ptr %1, null
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

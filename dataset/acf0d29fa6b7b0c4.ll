@@ -1,0 +1,137 @@
+
+; 125 occurrences:
+; abc/optimized/fraClaus.c.ll
+; abc/optimized/giaEra2.c.ll
+; abc/optimized/ifMap.c.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; cmake/optimized/fld_opts.c.ll
+; cmake/optimized/frm_opts.c.ll
+; cmake/optimized/nghttp2_hd.c.ll
+; cpython/optimized/unicodeobject.ll
+; darktable/optimized/introspection_rawdenoise.c.ll
+; hdf5/optimized/H5Tinit_float.c.ll
+; hermes/optimized/TypeInference.cpp.ll
+; icu/optimized/ubidi.ll
+; libevent/optimized/buffer.c.ll
+; libquic/optimized/e_rc2.c.ll
+; libquic/optimized/hpack_input_stream.cc.ll
+; libquic/optimized/p256-x86_64.c.ll
+; libsodium/optimized/libsodium_la-codecs.ll
+; lief/optimized/x509_crt.c.ll
+; linux/optimized/algapi.ll
+; linux/optimized/api.ll
+; linux/optimized/aspm.ll
+; linux/optimized/cdrom.ll
+; linux/optimized/chip.ll
+; linux/optimized/i915_perf.ll
+; linux/optimized/intel_ggtt.ll
+; linux/optimized/ioctl.ll
+; linux/optimized/p4.ll
+; linux/optimized/skcipher.ll
+; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
+; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
+; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
+; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
+; llvm/optimized/AArch64SLSHardening.cpp.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/ExpandPostRAPseudos.cpp.ll
+; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
+; llvm/optimized/FloatingPointMode.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/MachineCopyPropagation.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/MachineInstrBundle.cpp.ll
+; llvm/optimized/MachineOperand.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/PHIElimination.cpp.ll
+; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
+; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RISCVRegisterInfo.cpp.ll
+; llvm/optimized/ReachingDefAnalysis.cpp.ll
+; llvm/optimized/RegAllocFast.cpp.ll
+; llvm/optimized/TargetInstrInfo.cpp.ll
+; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; llvm/optimized/UnreachableBlockElim.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
+; llvm/optimized/X86ExpandPseudo.cpp.ll
+; llvm/optimized/X86FixupLEAs.cpp.ll
+; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86LowerTileCopy.cpp.ll
+; llvm/optimized/X86RegisterInfo.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; nghttp2/optimized/nghttp2_hd.c.ll
+; oiio/optimized/strutil.cpp.ll
+; openjdk/optimized/macroArrayCopy.ll
+; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
+; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
+; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
+; openssl/optimized/libcrypto-lib-rc2_cbc.ll
+; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
+; openssl/optimized/libcrypto-shlib-rc2_cbc.ll
+; php/optimized/zend_inheritance.ll
+; php/optimized/zend_jit.ll
+; qemu/optimized/block_io.c.ll
+; qemu/optimized/hw_audio_ac97.c.ll
+; qemu/optimized/hw_net_pcnet.c.ll
+; qemu/optimized/hw_net_tulip.c.ll
+; qemu/optimized/hw_scsi_esp-pci.c.ll
+; qemu/optimized/hw_scsi_mptsas.c.ll
+; qemu/optimized/hw_usb_hcd-ehci.c.ll
+; qemu/optimized/hw_usb_hcd-ohci.c.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; quickjs/optimized/quickjs.ll
+; raylib/optimized/rcore.c.ll
+; re2/optimized/dfa.cc.ll
+; ruby/optimized/io.ll
+; ruby/optimized/vm_trace.ll
+; slurm/optimized/assoc_mgr.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; spike/optimized/debug_module.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 3
+  %3 = xor i32 %2, 3
+  %4 = and i32 %3, %0
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

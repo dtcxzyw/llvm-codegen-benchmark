@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cpython/optimized/listobject.ll
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/ucnv_bld.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/seccomp.ll
 ; oiio/optimized/environment.cpp.ll
 ; stb/optimized/stb_ds.c.ll
+; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
 entry:

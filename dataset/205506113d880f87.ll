@@ -1,10 +1,12 @@
 
-; 28 occurrences:
+; 40 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cvc5/optimized/entailment_check.cpp.ll
 ; cvc5/optimized/regexp_entail.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; cvc5/optimized/theory_engine.cpp.ll
+; fmt/optimized/core-test.cc.ll
+; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/rematch.ll
 ; jemalloc/optimized/extent_dss.ll
@@ -13,13 +15,23 @@
 ; linux/optimized/8139too.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_display.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/BypassSlowDivision.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/Path.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SelectionDAGAddressAnalysis.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; lua/optimized/lvm.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; mitsuba3/optimized/mask.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
+; openjdk/optimized/shenandoahVerifier.ll
+; openusd/optimized/testUsdResolveTarget.cpp.ll
 ; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_xclass.ll
+; php/optimized/zend_jit.ll
+; postgres/optimized/fe-connect.ll
 ; protobuf/optimized/time_util.cc.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/extent_dss.ll

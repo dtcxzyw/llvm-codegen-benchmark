@@ -1,9 +1,13 @@
 
-; 8 occurrences:
+; 12 occurrences:
+; clamav/optimized/pdf.c.ll
 ; cmake/optimized/url.c.ll
+; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; curl/optimized/libcurl_la-url.ll
 ; hwloc/optimized/topology-xml.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
 ; libevent/optimized/buffer.c.ll
+; llvm/optimized/MachineBlockPlacement.cpp.ll
 ; postgres/optimized/setrefs.ll
 ; redis/optimized/redis-cli.ll
 ; wireshark/optimized/file.c.ll

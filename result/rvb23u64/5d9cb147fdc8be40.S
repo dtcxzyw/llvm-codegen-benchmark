@@ -1,0 +1,33 @@
+func000000000000001f:                   # @func000000000000001f
+	li	a3, 1000
+	mul	a1, a1, a3
+	mulhu	a4, a0, a3
+	add	a1, a1, a4
+	mul	a3, a3, a0
+	add.uw	a0, a2, a3
+	sltu	a2, a0, a3
+	add	a1, a1, a2
+	ret
+func000000000000000f:                   # @func000000000000000f
+	lui	a3, 244141
+	addiw	a3, a3, -1536
+	mul	a1, a1, a3
+	mulhu	a4, a0, a3
+	add	a1, a1, a4
+	mul	a3, a3, a0
+	add.uw	a0, a2, a3
+	sltu	a2, a0, a3
+	add	a1, a1, a2
+	ret
+func0000000000000017:                   # @func0000000000000017
+	zext.w	a2, a2
+	li	a3, 10
+	mulhu	a3, a0, a3
+	sh2add	a1, a1, a1
+	sh1add	a1, a1, a3
+	sh2add	a0, a0, a0
+	slli	a3, a0, 1
+	sh1add	a0, a0, a2
+	sltu	a2, a0, a3
+	add	a1, a1, a2
+	ret

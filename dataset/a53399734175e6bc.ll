@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/block.cpp.ll
+; llvm/optimized/DereferenceChecker.cpp.ll
 ; qemu/optimized/nbd_client.c.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind

@@ -1,0 +1,214 @@
+
+; 135 occurrences:
+; abc/optimized/acecRe.c.ll
+; abc/optimized/bdcSpfd.c.ll
+; abc/optimized/giaClp.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaUtil.c.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/wlcBlast.c.ll
+; cmake/optimized/archive_pack_dev.c.ll
+; cvc5/optimized/Solver.cc.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; gromacs/optimized/tng_io.c.ll
+; hermes/optimized/GlobalObject.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; icu/optimized/collationbuilder.ll
+; lief/optimized/BinaryParser.cpp.ll
+; lief/optimized/ChainedFixup.cpp.ll
+; lief/optimized/RelocationFixup.cpp.ll
+; linux/optimized/blk-core.ll
+; linux/optimized/blk-merge.ll
+; linux/optimized/ds.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/lbr.ll
+; linux/optimized/page.ll
+; linux/optimized/pt.ll
+; linux/optimized/swap_state.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/ASTDiagnostic.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTUnit.cpp.ll
+; llvm/optimized/BranchProbability.cpp.ll
+; llvm/optimized/CSEInfo.cpp.ll
+; llvm/optimized/CallAndMessageChecker.cpp.ll
+; llvm/optimized/CommentToXML.cpp.ll
+; llvm/optimized/DebugCheckers.cpp.ll
+; llvm/optimized/DeclarationName.cpp.ll
+; llvm/optimized/DynamicTypeChecker.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/IndexSymbol.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/InvalidPtrChecker.cpp.ll
+; llvm/optimized/LangOptions.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
+; llvm/optimized/PaddingChecker.cpp.ll
+; llvm/optimized/PathDiagnostic.cpp.ll
+; llvm/optimized/RISCVAsmBackend.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/RewriteModernObjC.cpp.ll
+; llvm/optimized/RewriteObjC.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/StmtPrinter.cpp.ll
+; llvm/optimized/TemplateBase.cpp.ll
+; llvm/optimized/TemplateName.cpp.ll
+; llvm/optimized/TextNodeDumper.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
+; llvm/optimized/USRGeneration.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; logos-rs/optimized/bt773r0511h3mpz.ll
+; luau/optimized/isocline.c.ll
+; mold/optimized/arch-arm32.cc.ll
+; openjdk/optimized/shenandoahHeapRegionCounters.ll
+; openssl/optimized/libcrypto-lib-bn_gf2m.ll
+; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
+; php/optimized/crypt_freesec.ll
+; qemu/optimized/disas_riscv.c.ll
+; qemu/optimized/hw_display_ati.c.ll
+; qemu/optimized/hw_display_vga.c.ll
+; qemu/optimized/hw_sd_sdhci.c.ll
+; qemu/optimized/source_s_addMagsF16.c.ll
+; qemu/optimized/source_s_subMagsF16.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; qemu/optimized/tcg.c.ll
+; redis/optimized/script.ll
+; ring-rs/optimized/1vabw27ldssjsz66.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; spike/optimized/beq.ll
+; spike/optimized/bge.ll
+; spike/optimized/bgeu.ll
+; spike/optimized/blt.ll
+; spike/optimized/bltu.ll
+; spike/optimized/bne.ll
+; spike/optimized/c_addi4spn.ll
+; spike/optimized/c_beqz.ll
+; spike/optimized/c_bnez.ll
+; spike/optimized/c_fldsp.ll
+; spike/optimized/c_flw.ll
+; spike/optimized/c_flwsp.ll
+; spike/optimized/c_fsw.ll
+; spike/optimized/c_j.ll
+; spike/optimized/c_jal.ll
+; spike/optimized/c_lui.ll
+; spike/optimized/c_lw.ll
+; spike/optimized/c_lwsp.ll
+; spike/optimized/c_sw.ll
+; spike/optimized/csrs.ll
+; spike/optimized/disasm.ll
+; spike/optimized/jal.ll
+; spike/optimized/processor.ll
+; spike/optimized/s_addMagsF16.ll
+; spike/optimized/s_subMagsF16.ll
+; spike/optimized/shfli.ll
+; spike/optimized/triggers.ll
+; spike/optimized/unshfli.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wireshark/optimized/mpeg.c.ll
+; wireshark/optimized/packet-mpeg-pes.c.ll
+; wireshark/optimized/packet-noe.c.ll
+; z3/optimized/sat_cutset.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = and i64 %1, 16
+  %5 = or disjoint i64 %4, %3
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
+}
+
+; 15 occurrences:
+; libquic/optimized/poly1305_vec.c.ll
+; linux/optimized/badblocks.ll
+; linux/optimized/fork.ll
+; linux/optimized/set_memory.ll
+; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; luau/optimized/CostModel.cpp.ll
+; spike/optimized/gorci.ll
+; wasmedge/optimized/vinode.cpp.ll
+; wasmedge/optimized/wasifunc.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = and i64 %1, 32
+  %5 = or disjoint i64 %4, %3
+  %6 = or i64 %5, %0
+  ret i64 %6
+}
+
+; 12 occurrences:
+; libquic/optimized/p224-64.c.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/intel_ggtt.ll
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; spike/optimized/fall_reciprocal.ll
+; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 32768
+  %4 = and i64 %1, 64512
+  %5 = or i64 %4, %3
+  %6 = or i64 %5, %0
+  ret i64 %6
+}
+
+; 6 occurrences:
+; linux/optimized/init_64.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/DeclPrinter.cpp.ll
+; llvm/optimized/DeclarationFragments.cpp.ll
+; llvm/optimized/ObjCMT.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 7
+  %4 = and i64 %1, -449
+  %5 = or i64 %4, %3
+  %6 = or disjoint i64 %5, %0
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

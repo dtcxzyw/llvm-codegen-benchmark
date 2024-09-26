@@ -1,0 +1,40 @@
+func00000000000000ea:                   # @func00000000000000ea
+	sext.w	a1, a1
+	addi	a1, a1, 7
+	srli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, 5
+	ret
+func0000000000000028:                   # @func0000000000000028
+	lui	a2, 1048575
+	addiw	a2, a2, 976
+	add.uw	a1, a1, a2
+	srli	a1, a1, 3
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 2047
+	addi	a0, a0, 865
+	ret
+func000000000000002a:                   # @func000000000000002a
+	slli.uw	a1, a1, 2
+	addi	a1, a1, -8
+	andi	a1, a1, -8
+	lui	a2, 256
+	addiw	a2, a2, 16
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+func0000000000000060:                   # @func0000000000000060
+	zext.w	a1, a1
+	addi	a1, a1, 3
+	andi	a1, a1, -4
+	add	a0, a0, a1
+	addi	a0, a0, 12
+	ret
+func00000000000000a0:                   # @func00000000000000a0
+	sext.w	a1, a1
+	addi	a1, a1, -8
+	andi	a1, a1, -4
+	add	a0, a0, a1
+	addi	a0, a0, 8
+	ret

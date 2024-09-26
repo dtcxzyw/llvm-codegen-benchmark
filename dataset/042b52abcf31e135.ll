@@ -1,0 +1,18 @@
+
+; 5 occurrences:
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/Builtins.cpp.ll
+; llvm/optimized/PPMacroExpansion.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 65534
+  %3 = icmp ult i32 %1, 36
+  %4 = or i1 %3, %2
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

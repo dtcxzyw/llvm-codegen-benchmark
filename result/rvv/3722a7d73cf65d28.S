@@ -1,0 +1,62 @@
+func00000000000000a6:                   # @func00000000000000a6
+	lui	a0, 1024162
+	addiw	a0, a0, -256
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v12, v12, a0
+	vmslt.vv	v9, v10, v12
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmsle.vi	v8, v8, 9
+	vmand.mm	v0, v8, v9
+	ret
+func00000000000003c4:                   # @func00000000000003c4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 1
+	vmsltu.vv	v11, v12, v8
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmsne.vi	v8, v10, 0
+	vmand.mm	v0, v11, v8
+	ret
+func0000000000000316:                   # @func0000000000000316
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 1
+	vmslt.vv	v11, v12, v8
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmseq.vi	v8, v10, 0
+	vmand.mm	v0, v11, v8
+	ret
+func0000000000000116:                   # @func0000000000000116
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 1
+	vmslt.vv	v11, v12, v8
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmseq.vi	v8, v10, 0
+	vmand.mm	v0, v11, v8
+	ret
+func00000000000000c4:                   # @func00000000000000c4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 1
+	vmsltu.vv	v11, v12, v8
+	li	a0, 61
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmsne.vx	v8, v10, a0
+	vmand.mm	v0, v11, v8
+	ret
+func00000000000002c4:                   # @func00000000000002c4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 1
+	vmsltu.vv	v11, v12, v8
+	li	a0, 61
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmsne.vx	v8, v10, a0
+	vmand.mm	v0, v11, v8
+	ret
+func0000000000000214:                   # @func0000000000000214
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 1
+	vmsltu.vv	v11, v12, v8
+	li	a0, -5
+	slli	a0, a0, 11
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmseq.vx	v8, v10, a0
+	vmand.mm	v0, v11, v8
+	ret

@@ -1,13 +1,19 @@
 
-; 14 occurrences:
+; 20 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; git/optimized/archive-zip.ll
+; gromacs/optimized/gmx_bar.cpp.ll
+; gromacs/optimized/gmx_omp_nthreads.cpp.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; hwloc/optimized/topology-xml.ll
-; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/i915_module.ll
+; llvm/optimized/SveEmitter.cpp.ll
+; opencv/optimized/local_optimization.cpp.ll
+; openspiel/optimized/SolverIF.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
+; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; spike/optimized/csrs.ll
 ; wireshark/optimized/erf.c.ll
 ; yosys/optimized/btor.ll

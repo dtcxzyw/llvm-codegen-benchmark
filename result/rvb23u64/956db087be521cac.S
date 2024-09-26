@@ -1,0 +1,40 @@
+func000000000000000f:                   # @func000000000000000f
+	slli.uw	a0, a0, 3
+	addi	a0, a0, 8
+	ret
+func000000000000001f:                   # @func000000000000001f
+	sext.w	a0, a0
+	slli	a0, a0, 3
+	addi	a0, a0, 8
+	ret
+func0000000000000008:                   # @func0000000000000008
+	slli	a0, a0, 32
+	bseti	a1, zero, 33
+	add	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	slli.uw	a0, a0, 3
+	addi	a0, a0, -1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	slli	a0, a0, 33
+	li	a1, 31
+	slli	a1, a1, 29
+	add	a0, a0, a1
+	ret
+func000000000000001d:                   # @func000000000000001d
+	sext.w	a0, a0
+	slli	a0, a0, 2
+	addi	a0, a0, -4
+	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a0, a0, 56
+	li	a1, -79
+	slli	a1, a1, 56
+	add	a0, a0, a1
+	ret
+func0000000000000010:                   # @func0000000000000010
+	slli	a0, a0, 34
+	bseti	a1, zero, 36
+	add	a0, a0, a1
+	ret

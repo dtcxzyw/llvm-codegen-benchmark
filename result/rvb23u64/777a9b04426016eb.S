@@ -1,0 +1,32 @@
+func000000000000000a:                   # @func000000000000000a
+	sh1add	a2, a2, a2
+	add.uw	a0, a1, a0
+	add.uw	a0, a2, a0
+	ret
+func0000000000000068:                   # @func0000000000000068
+	sh1add	a2, a2, a2
+	sext.w	a1, a1
+	sh1add	a0, a1, a0
+	slli	a2, a2, 1
+	sh1add.uw	a0, a2, a0
+	ret
+func0000000000000070:                   # @func0000000000000070
+	sh1add	a2, a2, a2
+	slliw	a2, a2, 1
+	sext.w	a1, a1
+	sh1add	a0, a1, a0
+	sh1add	a0, a2, a0
+	ret
+func00000000000000fa:                   # @func00000000000000fa
+	sh1add	a2, a2, a2
+	slliw	a2, a2, 1
+	sext.w	a1, a1
+	sh1add	a0, a1, a0
+	sh1add	a0, a2, a0
+	ret
+func00000000000000da:                   # @func00000000000000da
+	sh1add	a2, a2, a2
+	slliw	a2, a2, 2
+	add.uw	a0, a1, a0
+	add	a0, a0, a2
+	ret

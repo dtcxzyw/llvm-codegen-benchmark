@@ -1,9 +1,27 @@
 
+; 7 occurrences:
+; cmake/optimized/cmLocalGenerator.cxx.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/linkmodes.ll
+; linux/optimized/virtio_net.ll
+; openjdk/optimized/java_md.ll
+; postgres/optimized/pathkeys.ll
+; postgres/optimized/pg_isready.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000198(ptr %0, ptr %1) #0 {
+entry:
+  %2 = freeze ptr %1
+  %3 = icmp ne ptr %2, null
+  %4 = icmp ne ptr %0, null
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 43 occurrences:
 ; grpc/optimized/xds_cluster_resolver.cc.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
 ; linux/optimized/move_extent.ll
-; php/optimized/phpdbg_bp.ll
+; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; yosys/optimized/aiger.ll
 ; yosys/optimized/connwrappers.ll
 ; yosys/optimized/equiv_induct.ll
@@ -49,7 +67,7 @@ entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %0, null
-  %5 = or i1 %4, %3
+  %5 = or i1 %3, %4
   ret i1 %5
 }
 
@@ -61,23 +79,6 @@ define i1 @func0000000000000038(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
-  %4 = icmp ne ptr %0, null
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 6 occurrences:
-; cmake/optimized/cmLocalGenerator.cxx.ll
-; linux/optimized/build_utility.ll
-; linux/optimized/linkmodes.ll
-; linux/optimized/virtio_net.ll
-; postgres/optimized/pathkeys.ll
-; postgres/optimized/pg_isready.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1) #0 {
-entry:
-  %2 = freeze ptr %1
-  %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %0, null
   %5 = or i1 %4, %3
   ret i1 %5

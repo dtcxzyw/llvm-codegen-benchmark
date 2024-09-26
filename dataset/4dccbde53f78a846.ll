@@ -1,33 +1,45 @@
 
-; 32 occurrences:
+; 44 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/fraClau.c.ll
 ; cmake/optimized/archive_read_support_filter_zstd.c.ll
 ; cvc5/optimized/Solver.cc.ll
 ; git/optimized/convert.ll
 ; git/optimized/send-pack.ll
+; gromacs/optimized/domdec.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
+; hwloc/optimized/topology-linux.ll
 ; icu/optimized/uregex.ll
-; libquic/optimized/quic_data_writer.cc.ll
+; libquic/optimized/example_mul.c.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/Handler.cpp.ll
 ; lief/optimized/MemoryStream.cpp.ll
 ; lief/optimized/SpanStream.cpp.ll
 ; lief/optimized/VectorStream.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; nix/optimized/derivation-goal.ll
+; opencv/optimized/rho.cpp.ll
+; openjdk/optimized/constantPool.ll
+; openjdk/optimized/gifdecoder.ll
+; openjdk/optimized/systemDictionaryShared.ll
 ; openssl/optimized/libcrypto-lib-bio_asn1.ll
-; openssl/optimized/libcrypto-lib-rsa_chk.ll
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll
 ; openssl/optimized/libcrypto-shlib-bio_asn1.ll
-; openssl/optimized/libcrypto-shlib-rsa_chk.ll
 ; openssl/optimized/libcrypto-shlib-srp_vfy.ll
 ; openssl/optimized/openssl-bin-ocsp.ll
-; proxygen/optimized/HQControlCodec.cpp.ll
-; proxygen/optimized/HQStreamCodec.cpp.ll
+; openusd/optimized/inbetweenShape.cpp.ll
+; openusd/optimized/schemaBase.cpp.ll
+; php/optimized/main.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/k12.c.ll
+; tev/optimized/Image.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
@@ -41,13 +53,16 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 22 occurrences:
 ; git/optimized/commit.ll
 ; git/optimized/diffcore-rename.ll
 ; git/optimized/dir.ll
-; hwloc/optimized/lstopo-lstopo.ll
+; gromacs/optimized/gmx_vanhove.cpp.ll
 ; linux/optimized/fork.ll
 ; llama.cpp/optimized/ggml.c.ll
+; llvm/optimized/CGPointerAuth.cpp.ll
+; llvm/optimized/LiveRangeCalc.cpp.ll
+; openjdk/optimized/threadService.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libssl-lib-ssl3_meth.ll
@@ -57,7 +72,9 @@ entry:
 ; php/optimized/cgi_main.ll
 ; postgres/optimized/initdb.ll
 ; postgres/optimized/user.ll
+; proj/optimized/crs.cpp.ll
 ; qemu/optimized/net_tap.c.ll
+; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, ptr %2) #0 {

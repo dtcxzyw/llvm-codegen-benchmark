@@ -1,6 +1,0 @@
-func000000000000001a:                   # @func000000000000001a
-	or	a1, a1, a2
-	or	a0, a0, a1
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
-	ret

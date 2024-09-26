@@ -3,10 +3,10 @@
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
-; qemu/optimized/fpu_softfloat.c.ll
+; openjdk/optimized/compile.ll
 ; ruby/optimized/prism.ll
-; yosys/optimized/register.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

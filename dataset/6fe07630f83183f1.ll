@@ -1,0 +1,83 @@
+
+; 44 occurrences:
+; abseil-cpp/optimized/bits_test.cc.ll
+; actix-rs/optimized/1a89q5mj3jl9opyq.ll
+; actix-rs/optimized/1flt9r9cbevpwous.ll
+; actix-rs/optimized/1h6chd9qxbb3rt70.ll
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/2lnack56lfnd1s8n.ll
+; actix-rs/optimized/2wg1z1eatrkafji9.ll
+; actix-rs/optimized/305jwhumkt6l000n.ll
+; actix-rs/optimized/34v80y29y6uwgxas.ll
+; actix-rs/optimized/36qa1hw006t0trtl.ll
+; actix-rs/optimized/3q3jkuswkinqn2en.ll
+; actix-rs/optimized/413tg63jfy9n4nnj.ll
+; actix-rs/optimized/48duj8tg7v09rmpe.ll
+; actix-rs/optimized/4vksfexudgt1qids.ll
+; actix-rs/optimized/520p8qtoxfmkvgyc.ll
+; actix-rs/optimized/5k5ycrtlwwxldg7.ll
+; actix-rs/optimized/7zeo7o16a1wcxcn.ll
+; actix-rs/optimized/h71pcgvmobkrtmz.ll
+; actix-rs/optimized/q4aavw6wh20so0r.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; llvm/optimized/AArch64ExpandImm.cpp.ll
+; llvm/optimized/RISCVMatInt.cpp.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; meshoptimizer/optimized/vertexfilter.cpp.ll
+; ockam-rs/optimized/13hx4edwj16k9wur.ll
+; ockam-rs/optimized/14m30vbbwzpy4dn0.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
+; ockam-rs/optimized/2tmak98bqpx7zrgd.ll
+; ockam-rs/optimized/371lbzotxaob5lvd.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
+; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; ockam-rs/optimized/4df8gyzy0u3roc94.ll
+; ockam-rs/optimized/8vw3dw8isly7xg2.ll
+; ockam-rs/optimized/cts9nubscl1ph7i.ll
+; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; qemu/optimized/target_riscv_vcrypto_helper.c.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call noundef i64 @llvm.fshl.i64(i64 %0, i64 %0, i64 %1)
+  ret i64 %2
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.fshl.i64(i64, i64, i64) #1
+
+; 17 occurrences:
+; actix-rs/optimized/1flt9r9cbevpwous.ll
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/3q3jkuswkinqn2en.ll
+; actix-rs/optimized/48duj8tg7v09rmpe.ll
+; actix-rs/optimized/4vksfexudgt1qids.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; luajit/optimized/lj_carith.ll
+; luajit/optimized/lj_carith_dyn.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; openjdk/optimized/mulnode.ll
+; qemu/optimized/optimize.c.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; spike/optimized/rol.ll
+; wasmedge/optimized/engine.cpp.ll
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call i64 @llvm.fshl.i64(i64 %0, i64 %0, i64 %1)
+  ret i64 %2
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

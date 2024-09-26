@@ -1,0 +1,50 @@
+
+%struct.pm_constant_pool_bucket_t.2485450 = type { i32, i32 }
+
+; 2 occurrences:
+; linux/optimized/pipe.ll
+; ruby/optimized/pm_constant_pool.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = add i32 %1, 1
+  %5 = and i32 %4, %3
+  %6 = zext i32 %5 to i64
+  %7 = getelementptr %struct.pm_constant_pool_bucket_t.2485450, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 6 occurrences:
+; abseil-cpp/optimized/graphcycles.cc.ll
+; c3c/optimized/decltable.c.ll
+; c3c/optimized/symtab.c.ll
+; c3c/optimized/types.c.ll
+; git/optimized/pack-objects.ll
+; llvm/optimized/HeaderMap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = add i32 %1, 1
+  %5 = and i32 %4, %3
+  %6 = zext i32 %5 to i64
+  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; c3c/optimized/decltable.c.ll
+; c3c/optimized/symtab.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = add i32 %1, 1
+  %5 = and i32 %4, %3
+  %6 = zext i32 %5 to i64
+  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

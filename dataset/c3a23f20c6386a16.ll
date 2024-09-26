@@ -1,6 +1,11 @@
 
-; 6 occurrences:
+; 11 occurrences:
 ; box2d/optimized/b2_contact.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; opencv/optimized/ts_gtest.cpp.ll
 ; spike/optimized/f16_classify.ll
 ; spike/optimized/f32_classify.ll
 ; spike/optimized/f64_classify.ll

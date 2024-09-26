@@ -1,0 +1,16 @@
+
+; 5 occurrences:
+; freetype/optimized/cff.c.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; linux/optimized/vsprintf.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; openjdk/optimized/vectorization.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i1 %0, i1 %1) #0 {
+entry:
+  %2 = or i1 %0, %1
+  %3 = select i1 %2, i64 2, i64 1
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

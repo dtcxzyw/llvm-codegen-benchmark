@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cpython/optimized/compile.ll
 ; git/optimized/unpack-trees.ll
+; llvm/optimized/SemaDecl.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

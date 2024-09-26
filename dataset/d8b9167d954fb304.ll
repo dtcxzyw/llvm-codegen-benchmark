@@ -1,0 +1,45 @@
+
+; 11 occurrences:
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; icu/optimized/csrsbcs.ll
+; jq/optimized/compile.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
+; linux/optimized/af_unix.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; openjdk/optimized/jdmarker.ll
+; protobuf/optimized/wire_format.cc.ll
+; protobuf/optimized/wire_format_lite.cc.ll
+; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
+; sentencepiece/optimized/wire_format_lite.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = or disjoint i32 %2, 208
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; darktable/optimized/RawImageDataU16.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1
+  %3 = or disjoint i32 %2, 2
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; icu/optimized/csrsbcs.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 16776960
+  %3 = or disjoint i32 %2, 32
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

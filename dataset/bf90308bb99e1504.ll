@@ -1,0 +1,107 @@
+
+; 78 occurrences:
+; assimp/optimized/SGSpatialSort.cpp.ll
+; assimp/optimized/SpatialSort.cpp.ll
+; assimp/optimized/clipper.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; faiss/optimized/NNDescent.cpp.ll
+; faiss/optimized/NSG.cpp.ll
+; gromacs/optimized/cluster_methods.cpp.ll
+; gromacs/optimized/gmx_disre.cpp.ll
+; gromacs/optimized/pull_rotation.cpp.ll
+; gromacs/optimized/transformations.cpp.ll
+; hermes/optimized/ProfileAnalyzer.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; llama.cpp/optimized/llama.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGProfile.cpp.ll
+; llvm/optimized/CodeGenTBAA.cpp.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/DWARFDebugAranges.cpp.ll
+; llvm/optimized/DWARFDebugLine.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/IndirectCallPromotion.cpp.ll
+; llvm/optimized/InstrProf.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/LowerSwitch.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SemaHexagon.cpp.ll
+; llvm/optimized/StackMaps.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; llvm/optimized/SymbolDumper.cpp.ll
+; llvm/optimized/TypeDumpVisitor.cpp.ll
+; llvm/optimized/TypeRecordMapping.cpp.ll
+; luau/optimized/BytecodeAnalysis.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/filter_mutualglobal.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/seams.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; minetest/optimized/environment.cpp.ll
+; minetest/optimized/server.cpp.ll
+; node/optimized/libnode.cleanup_queue.ll
+; oiio/optimized/exrinput.cpp.ll
+; opencv/optimized/akaze.cpp.ll
+; opencv/optimized/bagofwords_classification.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
+; opencv/optimized/cuda_test.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/evaluation.cpp.ll
+; opencv/optimized/face_detection_mtcnn.cpp.ll
+; opencv/optimized/graphsegmentation.cpp.ll
+; opencv/optimized/harris_lapace_detector.cpp.ll
+; opencv/optimized/learning_based_color_balance.cpp.ll
+; opencv/optimized/merge.cpp.ll
+; opencv/optimized/motion_estimators.cpp.ll
+; opencv/optimized/mser.cpp.ll
+; opencv/optimized/quasi_dense_stereo.cpp.ll
+; opencv/optimized/selectivesearchsegmentation.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; opencv/optimized/text_detector_swt.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
+; openexr/optimized/ImfTileOffsets.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; ozz-animation/optimized/animation_builder.cc.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; rocksdb/optimized/blob_db_impl.cc.ll
+; rocksdb/optimized/compaction_picker_universal.cc.ll
+; spike/optimized/processor.ll
+; velox/optimized/MemoryPool.cpp.ll
+; yosys/optimized/cxxrtl_backend.ll
+; yosys/optimized/mutate.ll
+; yosys/optimized/xaiger.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -24
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = sdiv exact i64 %4, 24
+  %6 = and i64 %5, 1
+  ret i64 %6
+}
+
+; 3 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; wireshark/optimized/manuf_dialog.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 -24
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = sdiv exact i64 %4, 24
+  %6 = and i64 %5, 1
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

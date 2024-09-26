@@ -1,0 +1,150 @@
+
+; 136 occurrences:
+; folly/optimized/AsyncSocket.cpp.ll
+; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
+; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; html5ever-rs/optimized/4e9vfrmeneic1jap.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; ockam-rs/optimized/2btxi82q4wq22oyk.ll
+; ockam-rs/optimized/31s7w40jb5ho09e2.ll
+; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
+; ockam-rs/optimized/4o6a2p97oy1nlemw.ll
+; ockam-rs/optimized/y59h8jnu9k73im6.ll
+; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll
+; regex-rs/optimized/1rguw48xrsv49k4z.ll
+; regex-rs/optimized/v8mcpnwv4glojx2.ll
+; ring-rs/optimized/1vabw27ldssjsz66.ll
+; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
+; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
+; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
+; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
+; rust-analyzer-rs/optimized/1bjrygtvfxna7kin.ll
+; rust-analyzer-rs/optimized/1bm9kynael7uiqrn.ll
+; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
+; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
+; rust-analyzer-rs/optimized/1f55n198c3xcwe5h.ll
+; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
+; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
+; rust-analyzer-rs/optimized/1jnytxsf9ijspdxz.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; rust-analyzer-rs/optimized/1u7otakiib7wnsgg.ll
+; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
+; rust-analyzer-rs/optimized/1x0y9zi6lpw009zm.ll
+; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
+; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
+; rust-analyzer-rs/optimized/206pid2yjlj5ool2.ll
+; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
+; rust-analyzer-rs/optimized/28jcyytu5knrz2fd.ll
+; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
+; rust-analyzer-rs/optimized/2gfayp3e9bppz63d.ll
+; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
+; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
+; rust-analyzer-rs/optimized/2opy4detkbqdwmaz.ll
+; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
+; rust-analyzer-rs/optimized/2u22uu4kc5lsbxda.ll
+; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
+; rust-analyzer-rs/optimized/2z8yitblr1xxwxav.ll
+; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
+; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
+; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
+; rust-analyzer-rs/optimized/39qzrxn3p3f1jz7v.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
+; rust-analyzer-rs/optimized/3bcyxdd3fm70gs30.ll
+; rust-analyzer-rs/optimized/3dond84tezktihlu.ll
+; rust-analyzer-rs/optimized/3e2k9rvojvac5ok5.ll
+; rust-analyzer-rs/optimized/3eest3j1daftelre.ll
+; rust-analyzer-rs/optimized/3elplf9uza0vvo88.ll
+; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
+; rust-analyzer-rs/optimized/3lmu0tsslmelo8sk.ll
+; rust-analyzer-rs/optimized/3mo33cygxsz2niby.ll
+; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
+; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
+; rust-analyzer-rs/optimized/3r60zyztvepuy9ka.ll
+; rust-analyzer-rs/optimized/3tbfdlk9xf31te72.ll
+; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
+; rust-analyzer-rs/optimized/45p2airz10aj25pm.ll
+; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
+; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
+; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
+; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
+; rust-analyzer-rs/optimized/4il2q1fg8uiz7yqm.ll
+; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
+; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
+; rust-analyzer-rs/optimized/4piyv0md79k42idp.ll
+; rust-analyzer-rs/optimized/4s35iu99nk8vtuto.ll
+; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
+; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
+; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
+; rust-analyzer-rs/optimized/52ys2m0iie88bqaj.ll
+; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
+; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
+; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
+; rust-analyzer-rs/optimized/54fx8hdjlkc0fd42.ll
+; rust-analyzer-rs/optimized/557t1ercvtihjjps.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
+; rust-analyzer-rs/optimized/577813mpo9tvqnpt.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; rust-analyzer-rs/optimized/59dl6i7wymyjqg05.ll
+; rust-analyzer-rs/optimized/59xtetyz59tgy0g8.ll
+; rust-analyzer-rs/optimized/5cuaio8coq8lvmol.ll
+; rust-analyzer-rs/optimized/5cv6fzh8luwt5r60.ll
+; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
+; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
+; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
+; rust-analyzer-rs/optimized/6geurunh5eorswv.ll
+; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
+; rust-analyzer-rs/optimized/7tzel9f1i5b789y.ll
+; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
+; rust-analyzer-rs/optimized/aq6vzyl3cdvfzgv.ll
+; rust-analyzer-rs/optimized/c249cixj978zg74.ll
+; rust-analyzer-rs/optimized/dmp87bhacgqvbrv.ll
+; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
+; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
+; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
+; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
+; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
+; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; rust-analyzer-rs/optimized/kgjdhswqfwvmeof.ll
+; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
+; rust-analyzer-rs/optimized/lt4f7k28xei9pok.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
+; rust-analyzer-rs/optimized/m5y7tkywgbwlx2e.ll
+; rust-analyzer-rs/optimized/n2ltxs27br91fc6.ll
+; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
+; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
+; rust-analyzer-rs/optimized/q9awrviuvcs0ebr.ll
+; rust-analyzer-rs/optimized/ri7xfiosbc1bsgh.ll
+; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
+; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
+; rust-analyzer-rs/optimized/wnma56lgiayogov.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
+; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
+; wasmtime-rs/optimized/2dr4z69w9sk0c61w.ll
+; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; wasmtime-rs/optimized/3ci7fikymkm8nvp6.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
+; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; wasmtime-rs/optimized/4gcs6zbu61nja9jh.ll
+; wasmtime-rs/optimized/4p9uc9lk5kt46yrg.ll
+; wasmtime-rs/optimized/504voril3a5lulnh.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; Function Attrs: nounwind
+define { i32, i1 } @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %0, i32 96)
+  ret { i32, i1 } %1
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare { i32, i1 } @llvm.uadd.with.overflow.i32(i32, i32) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -160,7 +160,8 @@ public:
       SmallVector<Value *, 4> Args;
       for (Value *Arg : I.args())
         Args.push_back(getMappedValue(Arg));
-      return Builder.CreateIntrinsic(IID, {Args.front()->getType()}, Args,
+      return Builder.CreateIntrinsic(getVectorType(I.getType(), ElementCount),
+                                     IID, Args,
                                      isa<FPMathOperator>(I) ? &I : nullptr);
     }
     }

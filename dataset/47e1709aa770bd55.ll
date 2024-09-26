@@ -1,0 +1,124 @@
+
+; 113 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcNtk.c.ll
+; abc/optimized/abcPrint.c.ll
+; abc/optimized/abcSpeedup.c.ll
+; abc/optimized/abcTiming.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/giaSpeedup.c.ll
+; abc/optimized/giaTim.c.ll
+; abc/optimized/nwkTiming.c.ll
+; bullet3/optimized/b3ConvexHullComputer.ll
+; bullet3/optimized/btConvexHullComputer.ll
+; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btDiscreteDynamicsWorld.ll
+; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_colormapping.c.ll
+; darktable/optimized/introspection_colortransfer.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_equalizer.c.ll
+; darktable/optimized/introspection_retouch.c.ll
+; darktable/optimized/introspection_spots.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/print_settings.c.ll
+; gromacs/optimized/bonded.cpp.ll
+; gromacs/optimized/coupling.cpp.ll
+; gromacs/optimized/domdec_setup.cpp.ll
+; gromacs/optimized/expfit.cpp.ll
+; gromacs/optimized/gmx_analyze.cpp.ll
+; gromacs/optimized/gmx_clustsize.cpp.ll
+; gromacs/optimized/gmx_density.cpp.ll
+; gromacs/optimized/gmx_densorder.cpp.ll
+; gromacs/optimized/gmx_dielectric.cpp.ll
+; gromacs/optimized/gmx_dipoles.cpp.ll
+; gromacs/optimized/gmx_dyecoupl.cpp.ll
+; gromacs/optimized/gmx_h2order.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; gromacs/optimized/gmx_order.cpp.ll
+; gromacs/optimized/gmx_potential.cpp.ll
+; gromacs/optimized/gmx_rmsdist.cpp.ll
+; gromacs/optimized/gmx_sorient.cpp.ll
+; gromacs/optimized/gmx_traj.cpp.ll
+; gromacs/optimized/gmx_wham.cpp.ll
+; gromacs/optimized/grid.cpp.ll
+; gromacs/optimized/membed.cpp.ll
+; gromacs/optimized/nbsearch.cpp.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_demo.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_ao.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshio.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/pickpointsDialog.cpp.ll
+; minetest/optimized/guiInventoryList.cpp.ll
+; minetest/optimized/serverenvironment.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/gemm_x86.cpp.ll
+; ncnn/optimized/gemm_x86_avx.cpp.ll
+; ncnn/optimized/gemm_x86_avx512.cpp.ll
+; ncnn/optimized/gemm_x86_fma.cpp.ll
+; nori/optimized/imagepanel.cpp.ll
+; nori/optimized/imageview.cpp.ll
+; nori/optimized/screen.cpp.ll
+; nuklear/optimized/unity.c.ll
+; oiio/optimized/texturesys.cpp.ll
+; opencv/optimized/checker_detector.cpp.ll
+; opencv/optimized/detector.cpp.ll
+; opencv/optimized/dnn_utils.cpp.ll
+; opencv/optimized/edgeboxes.cpp.ll
+; opencv/optimized/face_detection_mtcnn.cpp.ll
+; opencv/optimized/facemarkAAM.cpp.ll
+; opencv/optimized/facemark_lbf_fitting.cpp.ll
+; opencv/optimized/generalized_hough.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/lsc.cpp.ll
+; opencv/optimized/onlineBoosting.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; opencv/optimized/ransac_solvers.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/slic.cpp.ll
+; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
+; opencv/optimized/tsdf_functions.cpp.ll
+; opencv/optimized/waldboost.cpp.ll
+; openjdk/optimized/splashscreen_sys.ll
+; openmpi/optimized/rmaps_rr_mappers.ll
+; pbrt-v4/optimized/color.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; postgres/optimized/bufmgr.ll
+; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/DetourTileCache.cpp.ll
+; recastnavigation/optimized/RecastArea.cpp.ll
+; recastnavigation/optimized/Sample_SoloMesh.cpp.ll
+; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
+; recastnavigation/optimized/Sample_TileMesh.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(float %0, float %1) #0 {
+entry:
+  %2 = fdiv float %0, %1
+  %3 = fptosi float %2 to i32
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

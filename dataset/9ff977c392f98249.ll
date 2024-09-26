@@ -1,12 +1,16 @@
 
-; 9 occurrences:
+; 13 occurrences:
+; clamav/optimized/fmap.c.ll
 ; git/optimized/archive-zip.ll
+; hdf5/optimized/H5Pdxpl.c.ll
 ; hermes/optimized/IdentifierHashTable.cpp.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
-; linux/optimized/drm_plane_helper.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; php/optimized/spl_array.ll
+; proj/optimized/coordinateoperationfactory.cpp.ll
 ; rocksdb/optimized/forward_iterator.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
@@ -17,7 +21,11 @@ entry:
   ret i1 %2
 }
 
-; 8 occurrences:
+; 12 occurrences:
+; abc/optimized/mapperTime.c.ll
+; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/ConstantHoisting.cpp.ll
+; luau/optimized/Builtins.cpp.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll

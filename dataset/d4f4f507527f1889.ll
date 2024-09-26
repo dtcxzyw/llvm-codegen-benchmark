@@ -1,5 +1,6 @@
 
-; 37 occurrences:
+; 50 occurrences:
+; c3c/optimized/types.c.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -30,6 +31,16 @@
 ; entt/optimized/signal_less.cpp.ll
 ; entt/optimized/snapshot.cpp.ll
 ; entt/optimized/view.cpp.ll
+; llvm/optimized/CGExprConstant.cpp.ll
+; llvm/optimized/FixIrreducible.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LoopInfo.cpp.ll
+; llvm/optimized/SSAUpdater.cpp.ll
+; llvm/optimized/SimpleLoopUnswitch.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; openjdk/optimized/cfgnode.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -37,6 +48,8 @@
 ; protobuf/optimized/wire_format.cc.ll
 ; qemu/optimized/io_channel.c.ll
 ; ruby/optimized/io.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:

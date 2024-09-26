@@ -1,0 +1,19 @@
+
+; 6 occurrences:
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; openjdk/optimized/assembler_x86.ll
+; recastnavigation/optimized/DetourDebugDraw.cpp.ll
+; redis/optimized/ae.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 16
+  %4 = and i32 %1, 1
+  %5 = or disjoint i32 %4, %3
+  %6 = select i1 %0, i32 %5, i32 0
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

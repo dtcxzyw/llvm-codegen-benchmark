@@ -1,10 +1,29 @@
 
-; 10 occurrences:
+; 29 occurrences:
 ; arrow/optimized/UriCommon.c.ll
 ; cvc5/optimized/ext_theory.cpp.ll
+; hermes/optimized/APFloat.cpp.ll
 ; libevent/optimized/event.c.ll
 ; libquic/optimized/quic_crypto_server_config.cc.ll
+; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
+; lightgbm/optimized/serial_tree_learner.cpp.ll
+; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/exit.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/ContinuationIndenter.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/LoopFlatten.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/LoopVectorizationLegality.cpp.ll
+; llvm/optimized/MachineLoopInfo.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/ParsedAttrInfo.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
+; llvm/optimized/UnwrappedLineParser.cpp.ll
+; luau/optimized/Def.cpp.ll
+; openjdk/optimized/type.ll
 ; openssl/optimized/libdefault-lib-x942kdf.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
@@ -19,7 +38,7 @@ entry:
   ret i1 %5
 }
 
-; 53 occurrences:
+; 74 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
@@ -35,6 +54,24 @@ entry:
 ; libquic/optimized/ssl_cipher.c.ll
 ; libquic/optimized/statistics_recorder.cc.ll
 ; linux/optimized/snapshot.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/BasicBlock.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/CtxProfAnalysis.cpp.ll
+; llvm/optimized/HotColdSplitting.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/InstrInfoEmitter.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
+; luau/optimized/TopoSortStatements.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -56,8 +93,11 @@ entry:
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
+; opencv/optimized/memory_accessor.cpp.ll
+; opencv/optimized/motion_estimators.cpp.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
+; openusd/optimized/material.cpp.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; postgres/optimized/nodeModifyTable.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
@@ -82,20 +122,20 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; php/optimized/var.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c9(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ne ptr %2, null
-  %4 = icmp uge ptr %0, %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 2 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_query_node.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
+; gromacs/optimized/listed_forces.cpp.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/CGSCCPassManager.cpp.ll
+; llvm/optimized/FunctionAttrs.cpp.ll
+; llvm/optimized/LazyCallGraph.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/SampleProfileMatcher.cpp.ll
+; opencv/optimized/evaluation.cpp.ll
+; openjdk/optimized/loopopts.ll
+; proj/optimized/conversion.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
 entry:
@@ -105,19 +145,10 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/psloop.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ne ptr %2, null
-  %4 = icmp ult ptr %0, %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 1 occurrences:
+; 3 occurrences:
 ; icu/optimized/uconv.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; luau/optimized/Frontend.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, ptr %1, ptr %2) #0 {
 entry:

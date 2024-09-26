@@ -1,10 +1,11 @@
 
-; 41 occurrences:
-; abseil-cpp/optimized/stacktrace.cc.ll
+; 44 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/linsol_qr.cpp.ll
+; llvm/optimized/AggressiveInstCombine.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-arm64.cc.ll
@@ -41,6 +42,8 @@
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; mold/optimized/input-sections.cc.SPARC64.cc.ll
 ; mold/optimized/input-sections.cc.X86_64.cc.ll
+; openssl/optimized/libcrypto-lib-ec_mult.ll
+; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -51,7 +54,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; llvm/optimized/BugReporter.cpp.ll
 ; openmpi/optimized/libmpi_c_profile_la-allreduce.ll
 ; openmpi/optimized/libmpi_c_profile_la-allreduce_init.ll
 ; openmpi/optimized/libmpi_c_profile_la-iallreduce.ll

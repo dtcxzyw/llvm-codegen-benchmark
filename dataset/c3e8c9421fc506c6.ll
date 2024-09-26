@@ -1,0 +1,22 @@
+
+; 6 occurrences:
+; abc/optimized/cecSatG2.c.ll
+; abc/optimized/cecSatG3.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; meshlab/optimized/packing.cpp.ll
+; opencv/optimized/tldEnsembleClassifier.cpp.ll
+; raylib/optimized/rmodels.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 6400
+  %3 = call i32 @llvm.smax.i32(i32 %2, i32 1)
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

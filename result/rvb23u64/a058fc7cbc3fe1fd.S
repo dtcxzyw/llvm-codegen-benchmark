@@ -1,0 +1,26 @@
+func000000000000003a:                   # @func000000000000003a
+	andi	a1, a1, -4
+	sh3add	a0, a0, a1
+	addi	a0, a0, 24
+	ret
+func0000000000000012:                   # @func0000000000000012
+	andi	a1, a1, -64
+	sh2add	a0, a0, a1
+	lui	a1, 313
+	addiw	a1, a1, -124
+	add	a0, a0, a1
+	ret
+func0000000000000032:                   # @func0000000000000032
+	andi	a1, a1, -64
+	sh2add	a0, a0, a1
+	lui	a1, 313
+	addiw	a1, a1, -124
+	add	a0, a0, a1
+	ret
+func000000000000001a:                   # @func000000000000001a
+	andi	a1, a1, -64
+	sh2add	a0, a0, a1
+	lui	a1, 125
+	addiw	a1, a1, 632
+	add	a0, a0, a1
+	ret

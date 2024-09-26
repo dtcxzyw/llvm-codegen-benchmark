@@ -1,8 +1,28 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; icu/optimized/pkgdata.ll
+; llvm/optimized/Pointer.cpp.ll
+; openjdk/optimized/node.ll
+; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 9 occurrences:
 ; git/optimized/unpack-trees.ll
 ; linux/optimized/drm_atomic_uapi.ll
 ; linux/optimized/nfs4proc.ll
+; llvm/optimized/InstCombineMulDivRem.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; postgres/optimized/ruleutils.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {

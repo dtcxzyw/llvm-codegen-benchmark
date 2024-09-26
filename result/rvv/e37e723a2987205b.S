@@ -1,8 +1,0 @@
-func00000000000000c0:                   # @func00000000000000c0
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	li	a0, 3
-	vmadd.vx	v9, a0, v8
-	li	a0, 20
-	vadd.vx	v8, v9, a0
-	ret

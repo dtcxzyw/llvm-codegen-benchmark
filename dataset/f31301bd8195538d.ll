@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; hyperscan/optimized/asserts.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
@@ -42,7 +42,6 @@
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; linux/optimized/ip6_fib.ll
 ; wireshark/optimized/lemon.c.ll
-; z3/optimized/spacer_cluster_util.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
 entry:

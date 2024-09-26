@@ -1,0 +1,15 @@
+func00000000000000a2:                   # @func00000000000000a2
+	sh1add	a1, a2, a1
+	addi	a1, a1, 1
+	sh3add.uw	a0, a1, a0
+	ret
+func0000000000000022:                   # @func0000000000000022
+	sh3add	a1, a2, a1
+	addi	a1, a1, 1
+	sh3add.uw	a0, a1, a0
+	ret
+func00000000000000fe:                   # @func00000000000000fe
+	sh2add	a1, a2, a1
+	addiw	a1, a1, 3
+	sh1add	a0, a1, a0
+	ret

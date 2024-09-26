@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 45 occurrences:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; assimp/optimized/FindInstancesProcess.cpp.ll
@@ -12,19 +12,27 @@
 ; cpython/optimized/string_parser.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; flac/optimized/main.c.ll
-; git/optimized/http-walker.ll
+; freetype/optimized/ftbase.c.ll
 ; git/optimized/submodule.ll
 ; graphviz/optimized/gvmap.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; libquic/optimized/rsa_impl.c.ll
 ; linux/optimized/initramfs.ll
+; llvm/optimized/BasicBlock.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/BugReporter.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/DWARFDie.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; nanobind/optimized/nb_enum.cpp.ll
-; php/optimized/SAPI.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; openjdk/optimized/cfgnode.ll
+; ozz-animation/optimized/ik_two_bone_job.cc.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/zend_jit.ll
 ; rocksdb/optimized/blob_source.cc.ll
-; rocksdb/optimized/compaction_iterator.cc.ll
 ; slurm/optimized/job_info.ll
 ; slurm/optimized/job_step_info.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
@@ -46,9 +54,17 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 12 occurrences:
 ; flac/optimized/encode.c.ll
 ; folly/optimized/IOBuf.cpp.ll
+; llvm/optimized/CodeViewRecordIO.cpp.ll
+; llvm/optimized/MemoryBuiltins.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SymbolRecordMapping.cpp.ll
+; llvm/optimized/TypeRecordMapping.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
+; ockam-rs/optimized/59na08zlxqp9p17s.ll
+; openjdk/optimized/verifier.ll
 ; php/optimized/zend_compile.ll
 ; postgres/optimized/pg_dumpall.ll
 ; Function Attrs: nounwind

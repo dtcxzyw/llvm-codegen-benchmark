@@ -1,0 +1,8 @@
+func0000000000000038:                   # @func0000000000000038
+	li	a0, 63
+	li	a1, 64
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vx	v0, v10, a1
+	vand.vx	v10, v12, a0
+	vrsub.vx	v8, v10, a1, v0.t
+	ret

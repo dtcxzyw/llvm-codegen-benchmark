@@ -1,6 +1,0 @@
-func00000000000000c8:                   # @func00000000000000c8
-	negw	a2, a2
-	bset	a2, zero, a2
-	sub	a0, a1, a0
-	add	a0, a0, a2
-	ret

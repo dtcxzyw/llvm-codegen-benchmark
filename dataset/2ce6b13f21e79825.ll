@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 135 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/globals_test.cc.ll
@@ -8,12 +8,15 @@
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/message.cc.ll
+; c3c/optimized/number.c.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
+; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/entailment_check.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/nl_model.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
+; cvc5/optimized/regexp_entail.cpp.ll
 ; darktable/optimized/introspection_invert.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -23,10 +26,11 @@
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
-; folly/optimized/LogCategoryConfig.cpp.ll
 ; glog/optimized/logging_unittest.cc.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
+; hermes/optimized/JSProxy.cpp.ll
 ; icu/optimized/measure.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/plurfmt.ll
@@ -35,11 +39,63 @@
 ; libquic/optimized/s3_srvr.c.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/xt_conntrack.ll
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/ASTStructuralEquivalence.cpp.ll
+; llvm/optimized/AsmParser.cpp.ll
+; llvm/optimized/Dominators.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/IRSimilarityIdentifier.cpp.ll
+; llvm/optimized/IndVarSimplify.cpp.ll
+; llvm/optimized/InputFile.cpp.ll
+; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/JSON.cpp.ll
+; llvm/optimized/LoopUnroll.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
+; llvm/optimized/MachinePostDominators.cpp.ll
+; llvm/optimized/MasmParser.cpp.ll
+; llvm/optimized/PGOInstrumentation.cpp.ll
+; llvm/optimized/PPDirectives.cpp.ll
+; llvm/optimized/RISCVTargetParser.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/ThreadSafety.cpp.ll
+; llvm/optimized/UninitializedValues.cpp.ll
+; llvm/optimized/VectorUtils.cpp.ll
+; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; meshlab/optimized/bool_value.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/rich_bool.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
-; mitsuba3/optimized/shapegroup.cpp.ll
+; opencv/optimized/fr_lfw_benchmark.cpp.ll
+; opencv/optimized/grfmt_exr.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; openjdk/optimized/classes.ll
+; openusd/optimized/abstractData.cpp.ll
+; openusd/optimized/assetInfo.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/collectionCache.cpp.ll
+; openusd/optimized/collectionPredicateLibrary.cpp.ll
+; openusd/optimized/data.cpp.ll
+; openusd/optimized/diff.cpp.ll
+; openusd/optimized/expressionVariablesSource.cpp.ll
+; openusd/optimized/keyFrame.cpp.ll
+; openusd/optimized/keyFrameUtils.cpp.ll
+; openusd/optimized/layer.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/shaderNode.cpp.ll
+; openusd/optimized/sparseValueWriter.cpp.ll
+; openusd/optimized/spline.cpp.ll
+; openusd/optimized/spline_KeyFrames.cpp.ll
+; openusd/optimized/testHdSceneIndex.cpp.ll
+; openusd/optimized/testTsThreadedCOW.cpp.ll
+; openusd/optimized/testTs_HardToReach.cpp.ll
+; openusd/optimized/testUsdUtilsStitch.cpp.ll
+; openusd/optimized/testVtCpp.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; pugixml/optimized/pugixml.cpp.ll
@@ -78,6 +134,7 @@
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

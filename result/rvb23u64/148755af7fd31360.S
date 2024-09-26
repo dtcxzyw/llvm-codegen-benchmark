@@ -1,6 +1,0 @@
-func00000000000000c4:                   # @func00000000000000c4
-	srli	a2, a2, 2
-	addi	a2, a2, 1
-	sll	a1, a2, a1
-	sltu	a0, a1, a0
-	ret

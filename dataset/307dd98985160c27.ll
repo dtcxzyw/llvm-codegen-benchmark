@@ -2,8 +2,8 @@
 ; 6 occurrences:
 ; git/optimized/combine-diff.ll
 ; graphviz/optimized/fmtesc.c.ll
-; openssl/optimized/libcrypto-lib-v3_akid.ll
-; openssl/optimized/libcrypto-shlib-v3_akid.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; nanobind/optimized/nb_func.cpp.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; redis/optimized/setcpuaffinity.ll
 ; Function Attrs: nounwind

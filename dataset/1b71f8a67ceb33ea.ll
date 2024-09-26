@@ -1,11 +1,9 @@
 
-; 9 occurrences:
-; assimp/optimized/AMFImporter_Postprocess.cpp.ll
+; 7 occurrences:
 ; git/optimized/cat-file.ll
-; hermes/optimized/GlobalObject.cpp.ll
-; hermes/optimized/String.cpp.ll
 ; libquic/optimized/rand.cc.ll
 ; linux/optimized/move_extent.ll
+; llvm/optimized/MemRegion.cpp.ll
 ; openssl/optimized/libcrypto-lib-keymgmt_lib.ll
 ; openssl/optimized/libcrypto-shlib-keymgmt_lib.ll
 ; postgres/optimized/pg_isready.ll

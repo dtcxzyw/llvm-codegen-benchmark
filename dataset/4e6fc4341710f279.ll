@@ -1,9 +1,12 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; php/optimized/strnatcmp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
 entry:

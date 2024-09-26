@@ -1,8 +1,11 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
+; ockam-rs/optimized/111eznecj9pn2lkp.ll
+; ockam-rs/optimized/1p7irsir7pcyegbj.ll
+; ockam-rs/optimized/426qm66o70bzn5r0.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll

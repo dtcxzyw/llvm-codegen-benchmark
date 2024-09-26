@@ -1,0 +1,37 @@
+
+; 3 occurrences:
+; cmake/optimized/xmltok.c.ll
+; cpython/optimized/xmltok.ll
+; quantlib/optimized/thirty360.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 30, i32 %2
+  %4 = freeze i32 %3
+  %5 = icmp eq i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/rtmutex_api.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 120, i32 %2
+  %4 = freeze i32 %3
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/scale_layer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 0, i32 %2
+  %4 = freeze i32 %3
+  %5 = icmp ult i32 %4, %0
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

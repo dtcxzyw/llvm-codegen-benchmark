@@ -1,12 +1,25 @@
 
-; 79 occurrences:
+; 97 occurrences:
 ; csmith/optimized/ArrayVariable.cpp.ll
+; gromacs/optimized/tmpi_init.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/nsnames.ll
 ; linux/optimized/tlb.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/BTFParser.cpp.ll
+; llvm/optimized/BasicBlockUtils.cpp.ll
+; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
+; llvm/optimized/CompilerInstance.cpp.ll
+; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
+; llvm/optimized/IRSymtab.cpp.ll
+; llvm/optimized/LTOBackend.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/ParentMapContext.cpp.ll
+; llvm/optimized/ToolChain.cpp.ll
 ; node/optimized/libnode.application.ll
 ; node/optimized/libnode.cares_wrap.ll
 ; node/optimized/libnode.crypto_cipher.ll
@@ -69,6 +82,10 @@
 ; node/optimized/libnode.tlscontext.ll
 ; node/optimized/libnode.transportparams.ll
 ; node/optimized/libnode.udp_wrap.ll
+; openjdk/optimized/instanceKlass.ll
+; openusd/optimized/changeTracker.cpp.ll
+; openusd/optimized/layer.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
 ; openvdb/optimized/Queue.cc.ll
 ; php/optimized/spl_fixedarray.ll
 ; php/optimized/zend_API.ll
@@ -79,6 +96,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
 entry:
@@ -88,14 +106,44 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 61 occurrences:
 ; cpython/optimized/pylifecycle.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/compile.ll
 ; libquic/optimized/quic_spdy_session.cc.ll
+; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/delegation.ll
 ; linux/optimized/msi.ll
+; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/AggressiveInstCombine.cpp.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/BugReporter.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
+; llvm/optimized/Consumed.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/RetainCountDiagnostics.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/Store.cpp.ll
+; llvm/optimized/SwiftErrorValueTracking.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
+; llvm/optimized/X86MCInstLower.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; msgpack/optimized/asio_send_recv.cpp.ll
+; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; php/optimized/memory.ll
 ; php/optimized/pcre2_compile.ll
@@ -129,13 +177,41 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 6 occurrences:
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
+; zxing/optimized/ODCode93Reader.cpp.ll
+; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
+; zxing/optimized/ODMultiUPCEANReader.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000009c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp uge ptr %0, %1
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 14 occurrences:
+; clamav/optimized/pdf.c.ll
+; cpython/optimized/listobject.ll
+; flac/optimized/operations_shorthand_vorbiscomment.c.ll
+; git/optimized/convert.ll
+; git/optimized/urlmatch.ll
+; git/optimized/utf8.ll
+; hwloc/optimized/topology-synthetic.ll
+; linux/optimized/slub.ll
+; linux/optimized/trace_output.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/defNewGeneration.ll
+; openjdk/optimized/serialHeap.ll
+; redis/optimized/redis-cli.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = icmp ult ptr %0, %1
   %3 = icmp ne ptr %0, null
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -163,25 +239,6 @@ entry:
 define i1 @func000000000000005c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ule ptr %0, %1
-  %3 = icmp ne ptr %0, null
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 9 occurrences:
-; flac/optimized/operations_shorthand_vorbiscomment.c.ll
-; git/optimized/convert.ll
-; git/optimized/urlmatch.ll
-; git/optimized/utf8.ll
-; hwloc/optimized/topology-synthetic.ll
-; linux/optimized/slub.ll
-; linux/optimized/trace_output.ll
-; redis/optimized/redis-cli.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
-entry:
-  %2 = icmp ult ptr %0, %1
   %3 = icmp ne ptr %0, null
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4

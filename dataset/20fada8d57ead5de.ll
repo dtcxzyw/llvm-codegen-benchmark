@@ -1,0 +1,227 @@
+
+; 90 occurrences:
+; assimp/optimized/IFCOpenings.cpp.ll
+; assimp/optimized/clipper.cpp.ll
+; casadi/optimized/newton.cpp.ll
+; cjson/optimized/cJSON.c.ll
+; cjson/optimized/cJSON_Utils.c.ll
+; cpython/optimized/cmathmodule.ll
+; cpython/optimized/mathmodule.ll
+; darktable/optimized/introspection_ashift.c.ll
+; graphviz/optimized/shapes.c.ll
+; graphviz/optimized/stress.c.ll
+; gromacs/optimized/dlasv2.cpp.ll
+; gromacs/optimized/expfit.cpp.ll
+; luau/optimized/main.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; mitsuba3/optimized/rgb2spec_opt.cpp.ll
+; msdfgen/optimized/edge-coloring.cpp.ll
+; nlohmann_json/optimized/unit.cpp.ll
+; ocio/optimized/Lut3DOpCPU.cpp.ll
+; openblas/optimized/z_abs.c.ll
+; opencv/optimized/downhill_simplex.cpp.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/epnp.cpp.ll
+; opencv/optimized/fisheye.cpp.ll
+; opencv/optimized/gabor.cpp.ll
+; opencv/optimized/local_optimization.cpp.ll
+; opencv/optimized/segment_objects.cpp.ll
+; opencv/optimized/squares.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/Maps.cc.ll
+; openvdb/optimized/Transform.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
+; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
+; postgres/optimized/geo_ops.ll
+; proj/optimized/defmodel.cpp.ll
+; protobuf/optimized/field_comparator.cc.ll
+; quantlib/optimized/abcdcalibration.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/basecorrelationstructure.ll
+; quantlib/optimized/capfloortermvolcurve.ll
+; quantlib/optimized/capfloortermvolsurface.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/ctsmmcapletcalibration.ll
+; quantlib/optimized/fdm1dimsolver.ll
+; quantlib/optimized/fdm2dimsolver.ll
+; quantlib/optimized/fdm3dimsolver.ll
+; quantlib/optimized/fdmarithmeticaveragecondition.ll
+; quantlib/optimized/gaussian1dcapfloorengine.ll
+; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
+; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
+; quantlib/optimized/gaussian1dswaptionengine.ll
+; quantlib/optimized/jumpdiffusionengine.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
+; quantlib/optimized/sabrinterpolatedsmilesection.ll
+; quantlib/optimized/sampledcurve.ll
+; quantlib/optimized/strippedoptionletadapter.ll
+; quantlib/optimized/svd.ll
+; quantlib/optimized/sviinterpolatedsmilesection.ll
+; quantlib/optimized/zabr.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; stat-rs/optimized/1957ju1ns40544yq.ll
+; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
+; stb/optimized/stb_dxt.c.ll
+; sundials/optimized/arkode.c.ll
+; sundials/optimized/arkode_adapt.c.ll
+; sundials/optimized/cvode.c.ll
+; sundials/optimized/cvodes.c.ll
+; sundials/optimized/ida.c.ll
+; sundials/optimized/ida_bbdpre.c.ll
+; sundials/optimized/ida_ls.c.ll
+; sundials/optimized/idas.c.ll
+; sundials/optimized/idas_bbdpre.c.ll
+; sundials/optimized/idas_ls.c.ll
+; sundials/optimized/kinsol_bbdpre.c.ll
+; sundials/optimized/kinsol_ls.c.ll
+; sundials/optimized/nvector_serial.c.ll
+; sundials/optimized/sundials_band.c.ll
+; wireshark/optimized/io_graph_dialog.cpp.ll
+; yosys/optimized/qwp.ll
+; zfp/optimized/encode1d.c.ll
+; zfp/optimized/encode2d.c.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode4d.c.ll
+; zxing/optimized/DMDetector.cpp.ll
+; zxing/optimized/PerspectiveTransform.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = tail call double @llvm.fabs.f64(double %2)
+  %4 = select i1 %0, double %3, double %1
+  ret double %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare double @llvm.fabs.f64(double) #1
+
+; 113 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/line_search.cc.ll
+; ceres/optimized/line_search_minimizer.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; ceres/optimized/trust_region_minimizer.cc.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/line3d.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/structure_only.cpp.ll
+; g2o/optimized/types_icp.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; g2o/optimized/vertex_cam.cpp.ll
+; g2o/optimized/vertex_se3.cpp.ll
+; g2o/optimized/vertex_se3_euler.cpp.ll
+; g2o/optimized/vertex_se3_expmap.cpp.ll
+; gromacs/optimized/dlaebz.cpp.ll
+; gromacs/optimized/dlaed6.cpp.ll
+; gromacs/optimized/dlagts.cpp.ll
+; gromacs/optimized/dlange.cpp.ll
+; gromacs/optimized/dlanst.cpp.ll
+; gromacs/optimized/dlapy2.cpp.ll
+; gromacs/optimized/dlarrbx.cpp.ll
+; gromacs/optimized/dlarrex.cpp.ll
+; gromacs/optimized/dlartg.cpp.ll
+; gromacs/optimized/dlas2.cpp.ll
+; gromacs/optimized/dlasd1.cpp.ll
+; gromacs/optimized/dlasd2.cpp.ll
+; gromacs/optimized/dlasd6.cpp.ll
+; gromacs/optimized/dlasd7.cpp.ll
+; gromacs/optimized/dlasq1.cpp.ll
+; gromacs/optimized/dstebz.cpp.ll
+; gromacs/optimized/gmx_wham.cpp.ll
+; gromacs/optimized/idamax.cpp.ll
+; ipopt/optimized/IpAdaptiveMuUpdate.ll
+; ipopt/optimized/IpCGPenaltyCq.ll
+; ipopt/optimized/IpDenseGenMatrix.ll
+; ipopt/optimized/IpDenseSymMatrix.ll
+; ipopt/optimized/IpGenTMatrix.ll
+; ipopt/optimized/IpLimMemQuasiNewtonUpdater.ll
+; ipopt/optimized/IpMonotoneMuUpdate.ll
+; ipopt/optimized/IpSymTMatrix.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
+; opencv/optimized/dls.cpp.ll
+; opencv/optimized/homography_decomp.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lda.cpp.ll
+; opencv/optimized/levmarq.cpp.ll
+; opencv/optimized/matrix_sparse.cpp.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
+; opencv/optimized/norm.cpp.ll
+; opencv/optimized/rtrees.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; opencv/optimized/ts_perf.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/expm.ll
+; quantlib/optimized/matrix.ll
+; quantlib/optimized/methodoflinesscheme.ll
+; quantlib/optimized/zabr.ll
+; tinympc/optimized/admm.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; velox/optimized/Variant.cpp.ll
+; zxing/optimized/DMDetector.cpp.ll
+; zxing/optimized/PDFReader.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; zxing/optimized/WhiteRectDetector.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000001(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = tail call noundef double @llvm.fabs.f64(double %2)
+  %4 = select i1 %0, double %3, double %1
+  ret double %4
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

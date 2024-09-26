@@ -1,0 +1,27 @@
+func0000000000000018:                   # @func0000000000000018
+	addiw	a1, a1, -9
+	sltiu	a1, a1, -16
+	czero.nez	a0, a0, a1
+	ret
+func0000000000000006:                   # @func0000000000000006
+	addiw	a1, a1, -2
+	slti	a1, a1, 0
+	czero.nez	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	addiw	a1, a1, -40
+	lui	a2, 16
+	addiw	a2, a2, -1
+	slt	a1, a2, a1
+	czero.nez	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	addiw	a1, a1, 119
+	sltiu	a1, a1, 239
+	czero.nez	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	addiw	a1, a1, -20
+	sltiu	a1, a1, 1280
+	czero.nez	a0, a0, a1
+	ret

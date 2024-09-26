@@ -1,0 +1,120 @@
+
+; 109 occurrences:
+; gromacs/optimized/sim_util.cpp.ll
+; hermes/optimized/TDZDedup.cpp.ll
+; icu/optimized/messagepattern.ll
+; icu/optimized/smpdtfmt.ll
+; icu/optimized/uconv.ll
+; linux/optimized/xfrm_policy.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/ADCE.cpp.ll
+; llvm/optimized/ASTMatchFinder.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/Attributor.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/CGVTables.cpp.ll
+; llvm/optimized/CallBrPrepare.cpp.ll
+; llvm/optimized/CloneFunction.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/Constants.cpp.ll
+; llvm/optimized/ConstraintElimination.cpp.ll
+; llvm/optimized/ControlHeightReduction.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
+; llvm/optimized/DeadStoresChecker.cpp.ll
+; llvm/optimized/DebugInfo.cpp.ll
+; llvm/optimized/DeclObjC.cpp.ll
+; llvm/optimized/DwarfEHPrepare.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/GlobalDCE.cpp.ll
+; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
+; llvm/optimized/Globals.cpp.ll
+; llvm/optimized/IndirectBrExpandPass.cpp.ll
+; llvm/optimized/InferAddressSpaces.cpp.ll
+; llvm/optimized/InstCombineCasts.cpp.ll
+; llvm/optimized/ItaniumCXXABI.cpp.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/LocalizationChecker.cpp.ll
+; llvm/optimized/LoopPeel.cpp.ll
+; llvm/optimized/LoopUnroll.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
+; llvm/optimized/MemoryBuiltins.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/ODRDiagsEmitter.cpp.ll
+; llvm/optimized/ParseDeclCXX.cpp.ll
+; llvm/optimized/Pointer.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/RewriteModernObjC.cpp.ll
+; llvm/optimized/RewriteObjC.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SelectOptimize.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprMember.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaObjCProperty.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/SjLjEHPrepare.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
+; llvm/optimized/SuffixTree.cpp.ll
+; llvm/optimized/TransProperties.cpp.ll
+; llvm/optimized/TruncInstCombine.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/VPlanTransforms.cpp.ll
+; llvm/optimized/WinEHPrepare.cpp.ll
+; llvm/optimized/X86LowerAMXType.cpp.ll
+; mold/optimized/icf.cc.ALPHA.cc.ll
+; mold/optimized/icf.cc.ARM32.cc.ll
+; mold/optimized/icf.cc.ARM64.cc.ll
+; mold/optimized/icf.cc.I386.cc.ll
+; mold/optimized/icf.cc.LOONGARCH32.cc.ll
+; mold/optimized/icf.cc.LOONGARCH64.cc.ll
+; mold/optimized/icf.cc.M68K.cc.ll
+; mold/optimized/icf.cc.PPC32.cc.ll
+; mold/optimized/icf.cc.PPC64V1.cc.ll
+; mold/optimized/icf.cc.PPC64V2.cc.ll
+; mold/optimized/icf.cc.RV32BE.cc.ll
+; mold/optimized/icf.cc.RV32LE.cc.ll
+; mold/optimized/icf.cc.RV64BE.cc.ll
+; mold/optimized/icf.cc.RV64LE.cc.ll
+; mold/optimized/icf.cc.S390X.cc.ll
+; mold/optimized/icf.cc.SH4.cc.ll
+; mold/optimized/icf.cc.SPARC64.cc.ll
+; mold/optimized/icf.cc.X86_64.cc.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openmpi/optimized/coll_ftagree_earlyreturning.ll
+; postgres/optimized/parse_coerce.ll
+; postgres/optimized/parse_cte.ll
+; postgres/optimized/ruleutils.ll
+; postgres/optimized/tlist.ll
+; protobuf/optimized/descriptor.cc.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/edata.ll
+; redis/optimized/edata.sym.ll
+; redis/optimized/hpdata.ll
+; redis/optimized/hpdata.sym.ll
+; redis/optimized/hyperloglog.ll
+; redis/optimized/replication.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = select i1 %0, i64 %2, i64 0
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

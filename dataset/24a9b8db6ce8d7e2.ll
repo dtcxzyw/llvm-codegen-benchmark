@@ -1,6 +1,9 @@
 
-; 4 occurrences:
+; 7 occurrences:
+; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; linux/optimized/intel_migrate.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll

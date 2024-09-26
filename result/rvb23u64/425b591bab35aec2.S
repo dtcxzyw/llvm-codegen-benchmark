@@ -1,0 +1,17 @@
+func0000000000000025:                   # @func0000000000000025
+	slli	a1, a1, 33
+	srli	a1, a1, 33
+	slli	a0, a0, 20
+	subw	a0, a1, a0
+	ret
+func000000000000003d:                   # @func000000000000003d
+	slli	a1, a1, 41
+	srli	a1, a1, 41
+	slli	a0, a0, 23
+	subw	a0, a1, a0
+	ret
+func000000000000000d:                   # @func000000000000000d
+	andi	a1, a1, 3
+	slli	a0, a0, 2
+	subw	a0, a1, a0
+	ret

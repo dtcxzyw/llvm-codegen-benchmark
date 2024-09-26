@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -7,6 +7,8 @@
 ; icu/optimized/dtptngen.ll
 ; libevent/optimized/buffer.c.ll
 ; linux/optimized/setup-bus.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; luau/optimized/lvmutils.cpp.ll
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/type.ll
 ; redis/optimized/aof.ll

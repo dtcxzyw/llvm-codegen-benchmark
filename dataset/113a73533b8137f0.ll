@@ -1,8 +1,11 @@
 
-; 14 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; git/optimized/tree-walk.ll
+; jsonnet/optimized/formatter.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
 ; node/optimized/libnode.crypto_common.ll
+; openssl/optimized/openssl-bin-cms.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll

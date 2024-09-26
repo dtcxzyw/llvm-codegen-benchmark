@@ -1,6 +1,12 @@
 
-; 3 occurrences:
+; 9 occurrences:
+; gromacs/optimized/reduce.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
+; llvm/optimized/FunctionSpecialization.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; openjdk/optimized/macroAssembler_x86.ll
 ; ruby/optimized/vm.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind

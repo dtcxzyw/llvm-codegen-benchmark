@@ -1,0 +1,28 @@
+func0000000000000085:                   # @func0000000000000085
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v12, v12, v8
+	vmsltu.vv	v14, v10, v12
+	vmsleu.vv	v12, v8, v10
+	vmand.mm	v0, v12, v14
+	ret
+func0000000000000354:                   # @func0000000000000354
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v12, v8, v12
+	vmsleu.vv	v14, v12, v10
+	vmsltu.vv	v12, v8, v10
+	vmand.mm	v0, v12, v14
+	ret
+func0000000000000254:                   # @func0000000000000254
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v12, v8, v12
+	vmsleu.vv	v14, v12, v10
+	vmsltu.vv	v12, v8, v10
+	vmand.mm	v0, v12, v14
+	ret
+func0000000000000385:                   # @func0000000000000385
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v12, v8, v12
+	vmsltu.vv	v14, v10, v12
+	vmsleu.vv	v12, v8, v10
+	vmand.mm	v0, v12, v14
+	ret

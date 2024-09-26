@@ -1,0 +1,124 @@
+
+; 6 occurrences:
+; cpython/optimized/longobject.ll
+; cpython/optimized/mpdecimal.ll
+; linux/optimized/build_utility.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; rocksdb/optimized/flush_block_policy.cc.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 100, %1
+  %3 = mul i64 %2, %0
+  ret i64 %3
+}
+
+; 10 occurrences:
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; linux/optimized/flex_proportions.ll
+; linux/optimized/page-writeback.ll
+; mold/optimized/rust-demangle.c.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
+; opencv/optimized/color_lab.cpp.ll
+; opencv/optimized/facemarkLBF.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 36, %1
+  %3 = mul i64 %2, %0
+  ret i64 %3
+}
+
+; 5 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; folly/optimized/HHWheelTimer.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; opencv/optimized/gfluidbuffer.cpp.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 256, %1
+  %3 = mul nsw i64 %2, %0
+  ret i64 %3
+}
+
+; 17 occurrences:
+; arrow/optimized/diff.cc.ll
+; arrow/optimized/scalar_cast_string.cc.ll
+; bullet3/optimized/b3ConvexHullComputer.ll
+; bullet3/optimized/btConvexHullComputer.ll
+; cpython/optimized/bltinmodule.ll
+; cpython/optimized/ceval.ll
+; cpython/optimized/listobject.ll
+; cpython/optimized/long.ll
+; cpython/optimized/longobject.ll
+; libjpeg-turbo/optimized/jcsample.c.ll
+; libjpeg-turbo/optimized/jdcoefct.c.ll
+; linux/optimized/rpl.ll
+; minetest/optimized/test_content_mapblock.cpp.ll
+; openblas/optimized/daxpy.c.ll
+; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
+; openusd/optimized/warped_motion.c.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 1, %1
+  %3 = mul nsw i64 %2, %0
+  ret i64 %3
+}
+
+; 27 occurrences:
+; actix-rs/optimized/3k33h0ss7dy62evb.ll
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; cpython/optimized/textio.ll
+; delta-rs/optimized/2n0ez5zuwgs53clg.ll
+; image-rs/optimized/ptscn4jakoj4p9m.ll
+; influxdb-rs/optimized/3jexax7r6nng0tve.ll
+; jemalloc/optimized/decay.ll
+; jemalloc/optimized/decay.pic.ll
+; jemalloc/optimized/decay.sym.ll
+; lief/optimized/bignum.c.ll
+; linux/optimized/blk-iolatency.ll
+; linux/optimized/vmscan.ll
+; llvm/optimized/RustDemangle.cpp.ll
+; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
+; ockam-rs/optimized/2ck5v5sgkr8z8vz5.ll
+; openblas/optimized/dlaswp_minus.c.ll
+; redis/optimized/decay.ll
+; redis/optimized/decay.sym.ll
+; ropey-rs/optimized/2x09g09ycg0qimak.ll
+; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; wasmtime-rs/optimized/1bcfhxehf88v8ux3.ll
+; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
+; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; wasmtime-rs/optimized/h626cniernc4zw8.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 2, %1
+  %3 = mul i64 %2, %0
+  ret i64 %3
+}
+
+; 3 occurrences:
+; image-rs/optimized/8143hfqbwzfmz2f.ll
+; opencv/optimized/color_lab.cpp.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 6, %1
+  %3 = mul nuw nsw i64 %2, %0
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

@@ -1,7 +1,16 @@
 
-; 7 occurrences:
+; 16 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/GlobalsModRef.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; quantlib/optimized/austria.ll
+; quantlib/optimized/finland.ll
+; quantlib/optimized/japan.ll
+; quantlib/optimized/romania.ll
 ; z3/optimized/subpaving_hwf.cpp.ll
 ; z3/optimized/subpaving_mpf.cpp.ll
 ; z3/optimized/subpaving_mpff.cpp.ll

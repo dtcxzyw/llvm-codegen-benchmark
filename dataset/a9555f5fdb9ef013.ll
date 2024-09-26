@@ -1,14 +1,27 @@
 
-; 14 occurrences:
+; 27 occurrences:
+; gromacs/optimized/gmx_bar.cpp.ll
 ; hwloc/optimized/hwloc-bind.ll
-; linux/optimized/dynamic_queue_limits.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/LICM.cpp.ll
+; llvm/optimized/LoopFuse.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/Solaris.cpp.ll
+; llvm/optimized/X86FixupLEAs.cpp.ll
+; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/havannah.cc.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/initsplan.ll
 ; postgres/optimized/subscriptioncmds.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; proj/optimized/singleoperation.cpp.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
+; soc-simulator/optimized/verilated.ll
 ; spike/optimized/cbo_inval.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll

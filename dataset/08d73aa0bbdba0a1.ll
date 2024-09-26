@@ -1,0 +1,29 @@
+
+; 1 occurrences:
+; stockfish/optimized/search.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = select i1 %0, i32 2, i32 1
+  %4 = and i32 %3, %2
+  ret i32 %4
+}
+
+; 6 occurrences:
+; libquic/optimized/spdy_framer.cc.ll
+; linux/optimized/pci.ll
+; postgres/optimized/toast_helper.ll
+; proxygen/optimized/HPACKDecoder.cpp.ll
+; wireshark/optimized/packet-ipmi.c.ll
+; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = select i1 %0, i32 15, i32 63
+  %4 = and i32 %3, %2
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

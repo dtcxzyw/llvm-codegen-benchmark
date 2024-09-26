@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -12,6 +12,7 @@
 ; minetest/optimized/CDummyTransformationSceneNode.cpp.ll
 ; minetest/optimized/CEmptySceneNode.cpp.ll
 ; minetest/optimized/CMeshSceneNode.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind

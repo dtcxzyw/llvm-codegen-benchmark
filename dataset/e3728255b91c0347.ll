@@ -1,7 +1,13 @@
 
-; 5 occurrences:
+; 11 occurrences:
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
+; llvm/optimized/ParseOpenMP.cpp.ll
+; llvm/optimized/StackColoring.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll

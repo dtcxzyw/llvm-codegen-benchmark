@@ -1,0 +1,21 @@
+
+; 10 occurrences:
+; abc/optimized/cuddCache.c.ll
+; graphviz/optimized/htmltable.c.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; hermes/optimized/SynthTraceParser.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; opencv/optimized/inner_functions.cpp.ll
+; opencv/optimized/letter_recog.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, i1 %1) #0 {
+entry:
+  %2 = uitofp i1 %1 to double
+  %3 = fadd double %2, %0
+  ret double %3
+}
+
+attributes #0 = { nounwind }

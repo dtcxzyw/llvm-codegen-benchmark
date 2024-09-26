@@ -1,9 +1,18 @@
 
-; 9 occurrences:
+; 18 occurrences:
+; clamav/optimized/ishield.c.ll
+; clamav/optimized/phishcheck.c.ll
 ; cpython/optimized/sre.ll
 ; darktable/optimized/darkroom.c.ll
 ; linux/optimized/direct-io.ll
-; openmpi/optimized/coll_han_dynamic.ll
+; llvm/optimized/BasicBlock.cpp.ll
+; llvm/optimized/FlattenCFG.cpp.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/MemorySSAUpdater.cpp.ll
+; llvm/optimized/ShrinkWrap.cpp.ll
+; openusd/optimized/cpuEvaluator.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
 ; postgres/optimized/parse_relation.ll
 ; postgres/optimized/subscriptioncmds.ll
 ; qemu/optimized/block_io.c.ll

@@ -1,6 +1,9 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; hermes/optimized/FoldingSet.cpp.ll
+; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
+; llvm/optimized/FoldingSet.cpp.ll
+; openjdk/optimized/jvmtiTrace.ll
 ; openssl/optimized/libcrypto-lib-http_lib.ll
 ; openssl/optimized/libcrypto-shlib-http_lib.ll
 ; openssl/optimized/openssl-bin-pkcs12.ll

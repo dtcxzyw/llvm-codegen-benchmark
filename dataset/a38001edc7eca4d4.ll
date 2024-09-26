@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; openssl/optimized/openssl-bin-srp.ll
 ; postgres/optimized/pg_dump.ll
+; proj/optimized/crs.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
 entry:

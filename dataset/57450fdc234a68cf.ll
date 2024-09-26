@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; c3c/optimized/llvm_codegen_expr.c.ll
 ; git/optimized/unpack-trees.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; linux/optimized/vmalloc.ll
-; rocksdb/optimized/block_based_table_reader.cc.ll
+; llvm/optimized/CGExpr.cpp.ll
+; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:
@@ -13,10 +15,11 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cpython/optimized/weakrefobject.ll
 ; git/optimized/unpack-trees.ll
 ; linux/optimized/slub.ll
+; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; postgres/optimized/ruleutils.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {

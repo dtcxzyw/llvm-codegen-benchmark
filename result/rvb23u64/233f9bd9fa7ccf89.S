@@ -1,0 +1,18 @@
+func0000000000000007:                   # @func0000000000000007
+	fcvt.d.wu	fa5, a0
+	fli.d	fa4, 1.0
+	fdiv.d	fa0, fa4, fa5
+	ret
+func0000000000000005:                   # @func0000000000000005
+	fcvt.d.wu	fa5, a0
+	fli.d	fa4, 1.0
+	fdiv.d	fa0, fa4, fa5
+	ret
+.LCPI2_0:
+	.quad	0x401921fb54442d18              # double 6.2831853071795862
+func0000000000000001:                   # @func0000000000000001
+	lui	a1, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a1)
+	fcvt.d.wu	fa4, a0
+	fdiv.d	fa0, fa5, fa4
+	ret

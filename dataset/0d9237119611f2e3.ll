@@ -1,0 +1,23 @@
+
+; 11 occurrences:
+; hermes/optimized/APInt.cpp.ll
+; jemalloc/optimized/hpdata.ll
+; jemalloc/optimized/hpdata.pic.ll
+; jemalloc/optimized/hpdata.sym.ll
+; llvm/optimized/APInt.cpp.ll
+; mitsuba3/optimized/jitallocator.cpp.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
+; qemu/optimized/optimize.c.ll
+; redis/optimized/hpdata.ll
+; redis/optimized/hpdata.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 -1, %1
+  %3 = shl i64 %2, %0
+  %4 = xor i64 %3, -1
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

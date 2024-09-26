@@ -1,10 +1,13 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; arrow/optimized/bit_block_counter.cc.ll
 ; cmake/optimized/mime.c.ll
 ; curl/optimized/libcurl_la-mime.ll
 ; linux/optimized/ip6_fib.ll
 ; linux/optimized/rate.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/Record.cpp.ll
+; openjdk/optimized/loaderConstraints.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
 entry:

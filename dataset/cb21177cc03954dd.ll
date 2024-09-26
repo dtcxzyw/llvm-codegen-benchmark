@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 46 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -29,6 +29,23 @@
 ; mold/optimized/icf.cc.SH4.cc.ll
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
+; openusd/optimized/inherits.cpp.ll
+; openusd/optimized/instanceKey.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/namespaceEdits.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; openusd/optimized/sdfdump.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; openusd/optimized/statistics.cpp.ll
+; openusd/optimized/targetIndex.cpp.ll
+; openusd/optimized/testPcpIterator.cpp.ll
+; openusd/optimized/testSdfPathThreading.cpp.ll
+; openusd/optimized/testUsdStageThreading.cpp.ll
+; openusd/optimized/usdcat.cpp.ll
+; openusd/optimized/usdtree.cpp.ll
+; openusd/optimized/variantSets.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -38,11 +55,13 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; php/optimized/zend_jit.ll
+; 6 occurrences:
+; llvm/optimized/Format.cpp.ll
+; llvm/optimized/RegAllocPBQP.cpp.ll
+; openusd/optimized/materialBindingResolvingSceneIndex.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
-; z3/optimized/basic_cmds.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
 entry:

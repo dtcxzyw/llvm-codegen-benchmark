@@ -1,9 +1,12 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; git/optimized/unpack-trees.ll
 ; graphviz/optimized/block.cpp.ll
 ; linux/optimized/cls_api.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Subtyping.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
 ; qemu/optimized/chardev_char.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, i1 %1, ptr %2) #0 {

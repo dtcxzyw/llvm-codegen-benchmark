@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; git/optimized/unpack-trees.ll
+; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; postgres/optimized/ruleutils.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, i1 %1, ptr %2) #0 {

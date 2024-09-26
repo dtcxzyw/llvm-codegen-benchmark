@@ -1,0 +1,33 @@
+
+; 9 occurrences:
+; actix-rs/optimized/comsm606o4zjj7a.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; qemu/optimized/target_riscv_vcrypto_helper.c.ll
+; softposit-rs/optimized/4x7uq85ym1obejw4.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; spike/optimized/vwsll_vv.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 15
+  %3 = zext nneg i8 %2 to i16
+  %4 = shl i16 %0, %3
+  ret i16 %4
+}
+
+; 2 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000006(i16 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 15
+  %3 = zext nneg i8 %2 to i16
+  %4 = shl nuw i16 %0, %3
+  ret i16 %4
+}
+
+attributes #0 = { nounwind }

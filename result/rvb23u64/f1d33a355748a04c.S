@@ -1,0 +1,13 @@
+func0000000000000082:                   # @func0000000000000082
+	zext.h	a0, a0
+	lui	a3, 9
+	addiw	a3, a3, 636
+	xor	a3, a3, a0
+	seqz	a3, a3
+	or	a1, a1, a2
+	lui	a2, 15
+	xor	a0, a0, a2
+	seqz	a0, a0
+	or	a0, a0, a1
+	or	a0, a0, a3
+	ret

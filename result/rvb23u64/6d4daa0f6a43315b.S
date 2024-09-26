@@ -1,0 +1,25 @@
+func000000000000005a:                   # @func000000000000005a
+	add	a0, a0, a2
+	srai	a1, a1, 29
+	add	a0, a0, a1
+	addi	a0, a0, 40
+	ret
+func0000000000000058:                   # @func0000000000000058
+	add	a0, a0, a2
+	srai	a1, a1, 2
+	add	a0, a0, a1
+	addi	a0, a0, 40
+	ret
+func0000000000000010:                   # @func0000000000000010
+	slli	a0, a0, 4
+	add	a0, a0, a2
+	srai	a1, a1, 28
+	add	a0, a0, a1
+	addi	a0, a0, 16
+	ret
+func000000000000004a:                   # @func000000000000004a
+	sh3add	a0, a0, a2
+	srai	a1, a1, 32
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
+	ret

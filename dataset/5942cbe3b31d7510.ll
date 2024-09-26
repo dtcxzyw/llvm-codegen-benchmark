@@ -1,0 +1,123 @@
+
+; 112 occurrences:
+; abc/optimized/FxchDiv.c.ll
+; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/abc.c.ll
+; abc/optimized/abcFx.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcHieCec.c.ll
+; abc/optimized/absGla.c.ll
+; abc/optimized/absOldCex.c.ll
+; abc/optimized/acbFunc.c.ll
+; abc/optimized/acbMfs.c.ll
+; abc/optimized/acbUtil.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/bmcBmc3.c.ll
+; abc/optimized/bmcCexCut.c.ll
+; abc/optimized/bmcCexDepth.c.ll
+; abc/optimized/bmcClp.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/bzlib.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/dauGia.c.ll
+; abc/optimized/decompress.c.ll
+; abc/optimized/fretInit.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaEsop.c.ll
+; abc/optimized/giaFx.c.ll
+; abc/optimized/giaHash.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaShrink6.c.ll
+; abc/optimized/giaSif.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/giaSweeper.c.ll
+; abc/optimized/giaTransduction.cpp.ll
+; abc/optimized/ioWriteAiger.c.ll
+; abc/optimized/ioaWriteAig.c.ll
+; abc/optimized/ivyDsd.c.ll
+; abc/optimized/mpmAbc.c.ll
+; abc/optimized/mpmPre.c.ll
+; abc/optimized/retInit.c.ll
+; abc/optimized/sbdCnf.c.ll
+; abc/optimized/sbdWin.c.ll
+; abc/optimized/sclBuffer.c.ll
+; abc/optimized/sfmCnf.c.ll
+; abc/optimized/sscSat.c.ll
+; abc/optimized/sswSweep.c.ll
+; abc/optimized/wlcBlast.c.ll
+; abc/optimized/wlnBlast.c.ll
+; clamav/optimized/matcher-ac.c.ll
+; cmake/optimized/bzlib.c.ll
+; cmake/optimized/decompress.c.ll
+; cmake/optimized/nghttp2_session.c.ll
+; cpython/optimized/longobject.ll
+; cvc5/optimized/ceg_arith_instantiator.cpp.ll
+; git/optimized/add-interactive.ll
+; linux/optimized/auditsc.ll
+; linux/optimized/igmp.ll
+; linux/optimized/trace_events_filter.ll
+; linux/optimized/uhci-hcd.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/BypassSlowDivision.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; meshoptimizer/optimized/indexcodec.cpp.ll
+; mold/optimized/arch-arm32.cc.ll
+; msdfgen/optimized/Shape.cpp.ll
+; nghttp2/optimized/nghttp2_session.c.ll
+; openjdk/optimized/ifnode.ll
+; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
+; openssl/optimized/lhash_test-bin-lhash_test.ll
+; php/optimized/ir_emit.ll
+; php/optimized/softmagic.ll
+; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; quickjs/optimized/libbf.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_dxt.c.ll
+; stockfish/optimized/tbprobe.ll
+; wireshark/optimized/packet-http2.c.ll
+; wireshark/optimized/packet-v120.c.ll
+; yosys/optimized/ezsat.ll
+; z3/optimized/arith_axioms.cpp.ll
+; z3/optimized/arith_sls.cpp.ll
+; z3/optimized/arith_solver.cpp.ll
+; z3/optimized/array_internalize.cpp.ll
+; z3/optimized/bv_internalize.cpp.ll
+; z3/optimized/bv_solver.cpp.ll
+; z3/optimized/euf_internalize.cpp.ll
+; z3/optimized/fpa_solver.cpp.ll
+; z3/optimized/goal2sat.cpp.ll
+; z3/optimized/intblast_solver.cpp.ll
+; z3/optimized/nra_solver.cpp.ll
+; z3/optimized/pb_internalize.cpp.ll
+; z3/optimized/pb_sls.cpp.ll
+; z3/optimized/pb_solver.cpp.ll
+; z3/optimized/q_solver.cpp.ll
+; z3/optimized/recfun_solver.cpp.ll
+; z3/optimized/sat_aig_cuts.cpp.ll
+; z3/optimized/sat_proof_trim.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/smt_internalizer.cpp.ll
+; z3/optimized/theory_bv.cpp.ll
+; z3/optimized/theory_diff_logic.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; z3/optimized/theory_seq.cpp.ll
+; z3/optimized/theory_utvpi.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = xor i32 %2, %0
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

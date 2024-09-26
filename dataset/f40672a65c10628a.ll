@@ -1,10 +1,14 @@
 
-; 7 occurrences:
+; 11 occurrences:
 ; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
 ; git/optimized/rev-parse.ll
 ; linux/optimized/printk_ringbuffer.ll
+; luau/optimized/Normalize.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
-; slurm/optimized/filter.ll
+; openjdk/optimized/castnode.ll
+; openjdk/optimized/loopPredicate.ll
+; openjdk/optimized/mulnode.ll
+; openjdk/optimized/systemDictionary.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind

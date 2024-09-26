@@ -1,8 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	add	a1, a1, a2
-	slli	a1, a1, 9
-	li	a2, -7
-	slli	a2, a2, 10
-	addw	a1, a1, a2
-	or	a0, a0, a1
-	ret

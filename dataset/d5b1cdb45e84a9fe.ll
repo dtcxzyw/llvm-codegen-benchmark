@@ -1,0 +1,203 @@
+
+; 113 occurrences:
+; c3c/optimized/sema_expr.c.ll
+; ceres/optimized/covariance_impl.cc.ll
+; clamav/optimized/extract.cpp.ll
+; cmake/optimized/SystemInformation.cxx.ll
+; cmake/optimized/cmCPackLog.cxx.ll
+; cmake/optimized/cmCPackNSISGenerator.cxx.ll
+; cmake/optimized/cmGeneratorTarget.cxx.ll
+; coreutils-rs/optimized/45371cbry3cnr73y.ll
+; cvc5/optimized/extf_solver.cpp.ll
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
+; cvc5/optimized/node_algorithm.cpp.ll
+; cvc5/optimized/proof_node_algorithm.cpp.ll
+; glslang/optimized/Constant.cpp.ll
+; glslang/optimized/iomapper.cpp.ll
+; gromacs/optimized/decidesimulationworkload.cpp.ll
+; gromacs/optimized/pme.cpp.ll
+; gromacs/optimized/selelem.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; hermes/optimized/CompilerDriver.cpp.ll
+; hermes/optimized/JSParserImpl.cpp.ll
+; hermes/optimized/RegexParser.cpp.ll
+; hermes/optimized/synth.cpp.ll
+; hyperscan/optimized/goughcompile_accel.cpp.ll
+; hyperscan/optimized/goughcompile_reg.cpp.ll
+; hyperscan/optimized/mcsheng_compile.cpp.ll
+; hyperscan/optimized/ng_depth.cpp.ll
+; hyperscan/optimized/ng_dominators.cpp.ll
+; hyperscan/optimized/ng_prune.cpp.ll
+; hyperscan/optimized/ng_region.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/ng_som.cpp.ll
+; hyperscan/optimized/ng_som_util.cpp.ll
+; hyperscan/optimized/ng_squash.cpp.ll
+; hyperscan/optimized/ng_util.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; libquic/optimized/quic_packet_generator.cc.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/ASTMatchFinder.cpp.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/AnalysisConsumer.cpp.ll
+; llvm/optimized/CGException.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/DylibVerifier.cpp.ll
+; llvm/optimized/EvalEmitter.cpp.ll
+; llvm/optimized/HWAddressSanitizer.cpp.ll
+; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/PPExpressions.cpp.ll
+; llvm/optimized/SValBuilder.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetPassConfig.cpp.ll
+; llvm/optimized/TextDiagnostic.cpp.ll
+; llvm/optimized/X86LegalizerInfo.cpp.ll
+; luau/optimized/Frontend.cpp.ll
+; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
+; meshlab/optimized/ml_shared_data_context.cpp.ll
+; nix/optimized/derivations.ll
+; nix/optimized/flake.ll
+; openjdk/optimized/bcEscapeAnalyzer.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openjdk/optimized/compile.ll
+; openjdk/optimized/escape.ll
+; openjdk/optimized/filemap.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-set.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmtiClassFileReconstituter.ll
+; openjdk/optimized/whitebox.ll
+; openusd/optimized/bbox3d.cpp.ll
+; openusd/optimized/variableExpressionImpl.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/ValueTransformer.cc.ll
+; php/optimized/session.ll
+; postgres/optimized/functioncmds.ll
+; postgres/optimized/procarray.ll
+; postgres/optimized/rewriteHandler.ll
+; postgres/optimized/ruleutils.ll
+; protobuf/optimized/helpers.cc.ll
+; qemu/optimized/chardev_wctablet.c.ll
+; rocksdb/optimized/block_based_table_iterator.cc.ll
+; rocksdb/optimized/compaction_picker_universal.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/db_impl_write.cc.ll
+; rocksdb/optimized/point_lock_tracker.cc.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; sentencepiece/optimized/sentencepiece_processor.cc.ll
+; slurm/optimized/srun_job.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3SplitAs.cpp.ll
+; yosys/optimized/dfflibmap.ll
+; yosys/optimized/extract_counter.ll
+; yosys/optimized/flowmap.ll
+; yosys/optimized/opt_demorgan.ll
+; yosys/optimized/opt_dff.ll
+; yosys/optimized/opt_ffinv.ll
+; yosys/optimized/opt_lut.ll
+; yosys/optimized/share.ll
+; yosys/optimized/submod.ll
+; yosys/optimized/tribuf.ll
+; yosys/optimized/wreduce.ll
+; z3/optimized/ast_counter.cpp.ll
+; z3/optimized/old_interval.cpp.ll
+; z3/optimized/sat_drat.cpp.ll
+; z3/optimized/smt_clause_proof.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = select i1 %2, i8 0, i8 %0
+  ret i8 %3
+}
+
+; 70 occurrences:
+; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
+; coreutils-rs/optimized/3ovky1nu4e8ycm16.ll
+; coreutils-rs/optimized/czge978gjagq0cc.ll
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; gromacs/optimized/selectioncollection.cpp.ll
+; gromacs/optimized/selelem.cpp.ll
+; image-rs/optimized/249ukonr3l56u09i.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; image-rs/optimized/34r8dryqmufipcqz.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; meilisearch-rs/optimized/4tsjgmg5dc8wpnes.ll
+; meshlab/optimized/AlignPairWidget.cpp.ll
+; ockam-rs/optimized/1411u8drt798uxi8.ll
+; ockam-rs/optimized/18drj88gqh6dyxft.ll
+; ockam-rs/optimized/197vp0af1p3e6q7f.ll
+; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
+; ockam-rs/optimized/1webxc5tel1wnzl3.ll
+; ockam-rs/optimized/2wmaz4egimtz3sac.ll
+; ockam-rs/optimized/371lbzotxaob5lvd.ll
+; ockam-rs/optimized/37pfoqtlnttaeb5z.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/3d0wri7d19ar4clk.ll
+; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; ockam-rs/optimized/58bgotmnlu3rwn4k.ll
+; ockam-rs/optimized/59na08zlxqp9p17s.ll
+; ockam-rs/optimized/5faa5l2dkmayqy36.ll
+; ockam-rs/optimized/8vw3dw8isly7xg2.ll
+; ockam-rs/optimized/r526c2e8kd9diy6.ll
+; ockam-rs/optimized/w9idkdfzlxavkb6.ll
+; openjdk/optimized/jfrTypeSet.ll
+; regex-rs/optimized/183h9dropc9vohym.ll
+; regex-rs/optimized/3bb5ih3626n2er1d.ll
+; ripgrep-rs/optimized/1blifwgi0jcy5tf4.ll
+; ripgrep-rs/optimized/9k9ra57dklri5ur.ll
+; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
+; rust-analyzer-rs/optimized/1arzxdbnyk8fkg2l.ll
+; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
+; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
+; rust-analyzer-rs/optimized/2qd3h3zpqydj8d90.ll
+; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
+; rust-analyzer-rs/optimized/3vf8rng5v602wdjs.ll
+; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
+; rust-analyzer-rs/optimized/43pdur0jxhus3hd4.ll
+; rust-analyzer-rs/optimized/4baun3pe1avree5d.ll
+; rust-analyzer-rs/optimized/4yvp88cqyyaanzkc.ll
+; rust-analyzer-rs/optimized/56mi9mdna0u3odv5.ll
+; rust-analyzer-rs/optimized/5djmpgt9ghwflvfq.ll
+; rust-analyzer-rs/optimized/7zmg1hi276ncg5y.ll
+; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
+; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
+; syn/optimized/59s55fjcmu2d325w.ll
+; tokenizers-rs/optimized/1gbi58t02rey1ahs.ll
+; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
+; tokenizers-rs/optimized/58hth72z9dib25am.ll
+; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
+; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = select i1 %2, i8 1, i8 %0
+  ret i8 %3
+}
+
+attributes #0 = { nounwind }

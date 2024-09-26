@@ -1,8 +1,14 @@
 
-; 6 occurrences:
+; 12 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; gromacs/optimized/index.cpp.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tlb.ll
+; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
+; openusd/optimized/surfaceFactory.cpp.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
@@ -15,11 +21,13 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; cmake/optimized/block_buffer_decoder.c.ll
 ; git/optimized/read-cache.ll
+; gromacs/optimized/gmx_anaeig.cpp.ll
 ; icu/optimized/uregex.ll
 ; linux/optimized/resize.ll
+; llvm/optimized/COFFObjectFile.cpp.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; wireshark/optimized/prefs.c.ll
 ; yosys/optimized/opt_expr.ll

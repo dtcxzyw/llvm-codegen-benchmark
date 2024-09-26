@@ -1,6 +1,10 @@
 
-; 3 occurrences:
+; 7 occurrences:
+; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
+; llvm/optimized/SMTConstraintManager.cpp.ll
+; openusd/optimized/multiInterval.cpp.ll
 ; postgres/optimized/jsonfuncs.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; Function Attrs: nounwind

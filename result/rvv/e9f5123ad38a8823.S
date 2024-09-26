@@ -1,6 +1,0 @@
-func0000000000000005:                   # @func0000000000000005
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vsext.vf2	v10, v9
-	vsext.vf2	v11, v8
-	vwsub.vv	v8, v10, v11
-	ret

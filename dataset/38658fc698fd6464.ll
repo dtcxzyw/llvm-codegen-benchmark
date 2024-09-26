@@ -1,11 +1,20 @@
 
-; 10 occurrences:
+; 19 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; curl/optimized/libcurl_la-url.ll
+; gromacs/optimized/pme_grid.cpp.ll
 ; icu/optimized/measunit_extra.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
+; libwebp/optimized/webp_dec.c.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/MCExpr.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
+; openjdk/optimized/freetypeScaler.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wireshark/optimized/packet-openvpn.c.ll
 ; yosys/optimized/mem.ll

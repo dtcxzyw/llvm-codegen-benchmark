@@ -1,0 +1,755 @@
+
+; 381 occurrences:
+; arrow/optimized/row_internal.cc.ll
+; c3c/optimized/parse_expr.c.ll
+; clamav/optimized/hfsplus.c.ll
+; cmake/optimized/rhash.c.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; gromacs/optimized/bench_system.cpp.ll
+; gromacs/optimized/grid.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; grpc/optimized/fault_injection_filter.cc.ll
+; hdf5/optimized/H5FDonion_index.c.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; hermes/optimized/SynthTraceParser.cpp.ll
+; hwloc/optimized/topology-x86.ll
+; hyperscan/optimized/hs.cpp.ll
+; libjpeg-turbo/optimized/tjbench.c.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; linux/optimized/slab_common.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; llvm/optimized/AArch64TargetMachine.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DataLayout.cpp.ll
+; llvm/optimized/Flang.cpp.ll
+; llvm/optimized/InstCombineAndOrXor.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/InstCombineShifts.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LegalizeTypes.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/LoopVectorizationLegality.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/RISCVTargetMachine.cpp.ll
+; llvm/optimized/RISCVTargetParser.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/SwiftCallingConv.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/TargetTransformInfo.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lua/optimized/ltable.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; openjdk/optimized/abstractInterpreter.ll
+; openjdk/optimized/ad_x86.ll
+; openjdk/optimized/ad_x86_misc.ll
+; openjdk/optimized/addnode.ll
+; openjdk/optimized/archiveBuilder.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/arguments.ll
+; openjdk/optimized/arraycopynode.ll
+; openjdk/optimized/assembler.ll
+; openjdk/optimized/barrierSetAssembler_x86.ll
+; openjdk/optimized/barrierSetC1.ll
+; openjdk/optimized/bcEscapeAnalyzer.ll
+; openjdk/optimized/block.ll
+; openjdk/optimized/bootstrapInfo.ll
+; openjdk/optimized/bytecode.ll
+; openjdk/optimized/bytecodeAssembler.ll
+; openjdk/optimized/bytecodeInfo.ll
+; openjdk/optimized/bytecodeUtils.ll
+; openjdk/optimized/c1_Canonicalizer.ll
+; openjdk/optimized/c1_Compilation.ll
+; openjdk/optimized/c1_FpuStackSim_x86.ll
+; openjdk/optimized/c1_FrameMap.ll
+; openjdk/optimized/c1_GraphBuilder.ll
+; openjdk/optimized/c1_IR.ll
+; openjdk/optimized/c1_Instruction.ll
+; openjdk/optimized/c1_LIR.ll
+; openjdk/optimized/c1_LIRAssembler.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openjdk/optimized/c1_LIRGenerator_x86.ll
+; openjdk/optimized/c1_LinearScan.ll
+; openjdk/optimized/c1_Optimizer.ll
+; openjdk/optimized/c1_RangeCheckElimination.ll
+; openjdk/optimized/c1_Runtime1.ll
+; openjdk/optimized/c1_ValueMap.ll
+; openjdk/optimized/c1_ValueStack.ll
+; openjdk/optimized/c2_CodeStubs.ll
+; openjdk/optimized/c2_MacroAssembler_x86.ll
+; openjdk/optimized/callGenerator.ll
+; openjdk/optimized/callnode.ll
+; openjdk/optimized/cardTableBarrierSetC1.ll
+; openjdk/optimized/cdsEnumKlass.ll
+; openjdk/optimized/cdsHeapVerifier.ll
+; openjdk/optimized/cfgnode.ll
+; openjdk/optimized/chaitin.ll
+; openjdk/optimized/ciConstantPoolCache.ll
+; openjdk/optimized/ciEnv.ll
+; openjdk/optimized/ciExceptionHandler.ll
+; openjdk/optimized/ciField.ll
+; openjdk/optimized/ciInstanceKlass.ll
+; openjdk/optimized/ciMethod.ll
+; openjdk/optimized/ciMethodBlocks.ll
+; openjdk/optimized/ciMethodData.ll
+; openjdk/optimized/ciObject.ll
+; openjdk/optimized/ciObjectFactory.ll
+; openjdk/optimized/ciReplay.ll
+; openjdk/optimized/ciSignature.ll
+; openjdk/optimized/ciStreams.ll
+; openjdk/optimized/ciTypeFlow.ll
+; openjdk/optimized/classFileParser.ll
+; openjdk/optimized/classListParser.ll
+; openjdk/optimized/classLoader.ll
+; openjdk/optimized/classLoaderData.ll
+; openjdk/optimized/classLoaderExt.ll
+; openjdk/optimized/classPrelinker.ll
+; openjdk/optimized/classUnloadingContext.ll
+; openjdk/optimized/coalesce.ll
+; openjdk/optimized/codeBuffer.ll
+; openjdk/optimized/codeCache.ll
+; openjdk/optimized/compactHashtable.ll
+; openjdk/optimized/compilationPolicy.ll
+; openjdk/optimized/compile.ll
+; openjdk/optimized/compileBroker.ll
+; openjdk/optimized/compileTask.ll
+; openjdk/optimized/compilerDirectives.ll
+; openjdk/optimized/compilerEvent.ll
+; openjdk/optimized/constantPool.ll
+; openjdk/optimized/constantTable.ll
+; openjdk/optimized/cpCache.ll
+; openjdk/optimized/debugInfo.ll
+; openjdk/optimized/debugInfoRec.ll
+; openjdk/optimized/defaultMethods.ll
+; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/dependencies.ll
+; openjdk/optimized/diagnosticArgument.ll
+; openjdk/optimized/diagnosticFramework.ll
+; openjdk/optimized/dict.ll
+; openjdk/optimized/dictionary.ll
+; openjdk/optimized/disassembler.ll
+; openjdk/optimized/divnode.ll
+; openjdk/optimized/doCall.ll
+; openjdk/optimized/domgraph.ll
+; openjdk/optimized/dumpTimeClassInfo.ll
+; openjdk/optimized/dynamicArchive.ll
+; openjdk/optimized/edgeStore.ll
+; openjdk/optimized/edgeUtils.ll
+; openjdk/optimized/escape.ll
+; openjdk/optimized/escapeBarrier.ll
+; openjdk/optimized/fieldDescriptor.ll
+; openjdk/optimized/fieldInfo.ll
+; openjdk/optimized/fieldLayoutBuilder.ll
+; openjdk/optimized/filemap.ll
+; openjdk/optimized/foreignGlobals.ll
+; openjdk/optimized/foreignGlobals_x86_64.ll
+; openjdk/optimized/frame.ll
+; openjdk/optimized/g1BarrierSetC1.ll
+; openjdk/optimized/g1BatchedTask.ll
+; openjdk/optimized/g1CodeRootSet.ll
+; openjdk/optimized/g1CollectionSetCandidates.ll
+; openjdk/optimized/g1ConcurrentRefine.ll
+; openjdk/optimized/g1FullGCCompactionPoint.ll
+; openjdk/optimized/g1MonotonicArenaFreeMemoryTask.ll
+; openjdk/optimized/g1SurvivorRegions.ll
+; openjdk/optimized/gcTimer.ll
+; openjdk/optimized/gcm.ll
+; openjdk/optimized/generateOopMap.ll
+; openjdk/optimized/graphKit.ll
+; openjdk/optimized/handles.ll
+; openjdk/optimized/heapDumper.ll
+; openjdk/optimized/heapInspection.ll
+; openjdk/optimized/heapShared.ll
+; openjdk/optimized/idealKit.ll
+; openjdk/optimized/ifnode.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/interpreterRT_x86_64.ll
+; openjdk/optimized/interpreterRuntime.ll
+; openjdk/optimized/java.ll
+; openjdk/optimized/javaCalls.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/jfrDcmds.ll
+; openjdk/optimized/jfrEmergencyDump.ll
+; openjdk/optimized/jfrJdkJfrEvent.ll
+; openjdk/optimized/jfrKlassUnloading.ll
+; openjdk/optimized/jfrMethodData.ll
+; openjdk/optimized/jfrNetworkUtilization.ll
+; openjdk/optimized/jfrOptionSet.ll
+; openjdk/optimized/jfrPeriodic.ll
+; openjdk/optimized/jfrRecorder.ll
+; openjdk/optimized/jfrThreadGroup.ll
+; openjdk/optimized/jfrTypeSetUtils.ll
+; openjdk/optimized/jni.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmFlagConstraintsCompiler.ll
+; openjdk/optimized/jvmFlagConstraintsRuntime.ll
+; openjdk/optimized/jvmciCodeInstaller.ll
+; openjdk/optimized/jvmciCompiler.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmciRuntime.ll
+; openjdk/optimized/jvmtiAgentList.ll
+; openjdk/optimized/jvmtiClassFileReconstituter.ll
+; openjdk/optimized/jvmtiCodeBlobEvents.ll
+; openjdk/optimized/jvmtiEnv.ll
+; openjdk/optimized/jvmtiEnvBase.ll
+; openjdk/optimized/jvmtiEnvThreadState.ll
+; openjdk/optimized/jvmtiExport.ll
+; openjdk/optimized/jvmtiExtensions.ll
+; openjdk/optimized/jvmtiImpl.ll
+; openjdk/optimized/jvmtiRedefineClasses.ll
+; openjdk/optimized/jvmtiTagMap.ll
+; openjdk/optimized/jvmtiTagMapTable.ll
+; openjdk/optimized/jvmtiThreadState.ll
+; openjdk/optimized/klass.ll
+; openjdk/optimized/klassVtable.ll
+; openjdk/optimized/lambdaFormInvokers.ll
+; openjdk/optimized/lcm.ll
+; openjdk/optimized/library_call.ll
+; openjdk/optimized/linkResolver.ll
+; openjdk/optimized/loaderConstraints.ll
+; openjdk/optimized/loopPredicate.ll
+; openjdk/optimized/loopTransform.ll
+; openjdk/optimized/loopUnswitch.ll
+; openjdk/optimized/loopnode.ll
+; openjdk/optimized/macro.ll
+; openjdk/optimized/management.ll
+; openjdk/optimized/matcher.ll
+; openjdk/optimized/memnode.ll
+; openjdk/optimized/memoryFileTracker.ll
+; openjdk/optimized/memoryService.ll
+; openjdk/optimized/metaspaceShared.ll
+; openjdk/optimized/method.ll
+; openjdk/optimized/methodComparator.ll
+; openjdk/optimized/methodData.ll
+; openjdk/optimized/methodHandles.ll
+; openjdk/optimized/methodLiveness.ll
+; openjdk/optimized/modRefBarrierSetC1.ll
+; openjdk/optimized/moduleEntry.ll
+; openjdk/optimized/modules.ll
+; openjdk/optimized/mulnode.ll
+; openjdk/optimized/mutableNUMASpace.ll
+; openjdk/optimized/nativeEntryPoint.ll
+; openjdk/optimized/nativeLookup.ll
+; openjdk/optimized/nmethod.ll
+; openjdk/optimized/nmtNativeCallStackStorage.ll
+; openjdk/optimized/node.ll
+; openjdk/optimized/objArrayKlass.ll
+; openjdk/optimized/objectSampleCheckpoint.ll
+; openjdk/optimized/objectSampleWriter.ll
+; openjdk/optimized/oopMap.ll
+; openjdk/optimized/oopRecorder.ll
+; openjdk/optimized/os_linux.ll
+; openjdk/optimized/output.ll
+; openjdk/optimized/packageEntry.ll
+; openjdk/optimized/parse2.ll
+; openjdk/optimized/perfData.ll
+; openjdk/optimized/phaseX.ll
+; openjdk/optimized/postaloc.ll
+; openjdk/optimized/predicates.ll
+; openjdk/optimized/psCompactionManager.ll
+; openjdk/optimized/reflection.ll
+; openjdk/optimized/reflectionUtils.ll
+; openjdk/optimized/reg_split.ll
+; openjdk/optimized/regeneratedClasses.ll
+; openjdk/optimized/relocator.ll
+; openjdk/optimized/replacednodes.ll
+; openjdk/optimized/resolvedMethodTable.ll
+; openjdk/optimized/rewriter.ll
+; openjdk/optimized/scopeDesc.ll
+; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; openjdk/optimized/shenandoahBarrierSetC1.ll
+; openjdk/optimized/shenandoahBarrierSetC1_x86.ll
+; openjdk/optimized/shenandoahBarrierSetC2.ll
+; openjdk/optimized/shenandoahEvacOOMHandler.ll
+; openjdk/optimized/shenandoahFullGC.ll
+; openjdk/optimized/shenandoahNMethod.ll
+; openjdk/optimized/shenandoahSupport.ll
+; openjdk/optimized/signature.ll
+; openjdk/optimized/stackMapFrame.ll
+; openjdk/optimized/stackMapTable.ll
+; openjdk/optimized/stackWatermark.ll
+; openjdk/optimized/stackwalk.ll
+; openjdk/optimized/stringDedupTable.ll
+; openjdk/optimized/stringTable.ll
+; openjdk/optimized/stringopts.ll
+; openjdk/optimized/subnode.ll
+; openjdk/optimized/superword.ll
+; openjdk/optimized/superwordVTransformBuilder.ll
+; openjdk/optimized/symbolTable.ll
+; openjdk/optimized/synchronizer.ll
+; openjdk/optimized/systemDictionary.ll
+; openjdk/optimized/systemDictionaryShared.ll
+; openjdk/optimized/threadService.ll
+; openjdk/optimized/threads.ll
+; openjdk/optimized/type.ll
+; openjdk/optimized/unsafe.ll
+; openjdk/optimized/upcallLinker.ll
+; openjdk/optimized/vectorIntrinsics.ll
+; openjdk/optimized/vectorization.ll
+; openjdk/optimized/vectornode.ll
+; openjdk/optimized/verificationType.ll
+; openjdk/optimized/verifier.ll
+; openjdk/optimized/vframe.ll
+; openjdk/optimized/vframeArray.ll
+; openjdk/optimized/vframe_hp.ll
+; openjdk/optimized/vmatree.ll
+; openjdk/optimized/vtransform.ll
+; openjdk/optimized/whitebox.ll
+; openjdk/optimized/xBarrierSetAssembler_x86.ll
+; openjdk/optimized/xBarrierSetC1.ll
+; openjdk/optimized/xBarrierSetC2.ll
+; openjdk/optimized/xCollectedHeap.ll
+; openjdk/optimized/xHeap.ll
+; openjdk/optimized/xMountPoint_linux.ll
+; openjdk/optimized/xNMethod.ll
+; openjdk/optimized/xNMethodTable.ll
+; openjdk/optimized/xPageAllocator.ll
+; openjdk/optimized/xPhysicalMemory.ll
+; openjdk/optimized/zBarrierSetAssembler_x86.ll
+; openjdk/optimized/zBarrierSetC1.ll
+; openjdk/optimized/zBarrierSetC2.ll
+; openjdk/optimized/zCollectedHeap.ll
+; openjdk/optimized/zGeneration.ll
+; openjdk/optimized/zMountPoint_linux.ll
+; openjdk/optimized/zNMethod.ll
+; openjdk/optimized/zNMethodTable.ll
+; openjdk/optimized/zPageAllocator.ll
+; openjdk/optimized/zPhysicalMemory.ll
+; openjdk/optimized/zRelocate.ll
+; openjdk/optimized/zRelocationSet.ll
+; openjdk/optimized/zRelocationSetSelector.ll
+; openjdk/optimized/zRemembered.ll
+; openspiel/optimized/colored_trails_board_generator.cc.ll
+; openspiel/optimized/garnet.cc.ll
+; openusd/optimized/aom_image.c.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; php/optimized/phpdbg_prompt.ll
+; php/optimized/zend_ast.ll
+; php/optimized/zend_jit.ll
+; postgres/optimized/array_userfuncs.ll
+; postgres/optimized/arrayfuncs.ll
+; postgres/optimized/ginfast.ll
+; postgres/optimized/heapam.ll
+; postgres/optimized/initdb.ll
+; postgres/optimized/list.ll
+; postgres/optimized/nodeHash.ll
+; postgres/optimized/pg_controldata.ll
+; postgres/optimized/pg_resetwal.ll
+; postgres/optimized/pg_rewind.ll
+; postgres/optimized/pg_waldump.ll
+; postgres/optimized/streamutil.ll
+; postgres/optimized/tableam.ll
+; postgres/optimized/xlog.ll
+; qemu/optimized/block_blklogwrites.c.ll
+; qemu/optimized/block_bochs.c.ll
+; qemu/optimized/block_dirty-bitmap.c.ll
+; qemu/optimized/block_qcow2-bitmap.c.ll
+; qemu/optimized/cache.ll
+; qemu/optimized/hw_acpi_erst.c.ll
+; qemu/optimized/hw_pci_pcie_aer.c.ll
+; quickjs/optimized/libbf.ll
+; raylib/optimized/rcore.c.ll
+; re2/optimized/regexp.cc.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/regparse.ll
+; spike/optimized/elf2hex.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = tail call range(i32 1, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ult i32 %1, 2
+  ret i1 %2
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.ctpop.i32(i32) #1
+
+; 104 occurrences:
+; abc/optimized/covMinEsop.c.ll
+; abc/optimized/covMinSop.c.ll
+; abc/optimized/ifMap.c.ll
+; arrow/optimized/row_internal.cc.ll
+; c3c/optimized/types.c.ll
+; darktable/optimized/ColorFilterArray.cpp.ll
+; darktable/optimized/Cr2Decoder.cpp.ll
+; eastl/optimized/EARandom.cpp.ll
+; faiss/optimized/lattice_Zn.cpp.ll
+; git/optimized/config.ll
+; git/optimized/diff.ll
+; git/optimized/for-each-ref.ll
+; git/optimized/object-name.ll
+; git/optimized/shortlog.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; graphviz/optimized/sfprint.c.ll
+; graphviz/optimized/sfvscanf.c.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; linux/optimized/coredump.ll
+; linux/optimized/dm-stripe.ll
+; linux/optimized/drm_property.ll
+; linux/optimized/filter.ll
+; linux/optimized/i915_gem_execbuffer.ll
+; linux/optimized/intel_hdmi.ll
+; linux/optimized/libata-core.ll
+; linux/optimized/lskcipher.ll
+; linux/optimized/pci.ll
+; linux/optimized/pcm_lib.ll
+; linux/optimized/pcm_native.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64TargetMachine.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; lua/optimized/lstrlib.ll
+; lua/optimized/ltable.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luajit/optimized/lj_udata.ll
+; luajit/optimized/lj_udata_dyn.ll
+; luau/optimized/lstrlib.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; minetest/optimized/wieldmesh.cpp.ll
+; mitsuba3/optimized/compiler.cpp.ll
+; mitsuba3/optimized/grid.cpp.ll
+; mitsuba3/optimized/jitallocator.cpp.ll
+; mitsuba3/optimized/multijitter.cpp.ll
+; mitsuba3/optimized/orthogonal.cpp.ll
+; mitsuba3/optimized/roughplastic.cpp.ll
+; mitsuba3/optimized/sdfgrid.cpp.ll
+; mitsuba3/optimized/stratified.cpp.ll
+; mitsuba3/optimized/x86assembler.cpp.ll
+; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; opencv/optimized/array.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/hash_tsdf.cpp.ll
+; openjdk/optimized/zHeap.ll
+; openjdk/optimized/zVerify.ll
+; openmpi/optimized/coll_base_reduce_scatter_block.ll
+; php/optimized/parse_date.ll
+; postgres/optimized/array_userfuncs.ll
+; postgres/optimized/hashpage.ll
+; postgres/optimized/hashsort.ll
+; postgres/optimized/heapam.ll
+; postgres/optimized/lwlock.ll
+; postgres/optimized/nodeHash.ll
+; postgres/optimized/scan.ll
+; postgres/optimized/typcache.ll
+; qemu/optimized/block_monitor_bitmap-qmp-cmds.c.ll
+; qemu/optimized/block_qed.c.ll
+; qemu/optimized/block_vhdx.c.ll
+; qemu/optimized/blockdev.c.ll
+; qemu/optimized/hw_acpi_bios-linker-loader.c.ll
+; qemu/optimized/hw_ide_core.c.ll
+; qemu/optimized/hw_intc_sifive_plic.c.ll
+; qemu/optimized/hw_net_rocker_rocker_desc.c.ll
+; qemu/optimized/hw_pci_msi.c.ll
+; qemu/optimized/hw_pci_pcie_host.c.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; qemu/optimized/tcg.c.ll
+; qemu/optimized/util_cacheflush.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/lua_struct.ll
+; ruby/optimized/big2str.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/ruby.ll
+; spike/optimized/execute.ll
+; spike/optimized/processor.ll
+; wireshark/optimized/idl2wrs.c.ll
+; wolfssl/optimized/internal.c.ll
+; xgboost/optimized/c_api.cc.ll
+; xgboost/optimized/elementwise_metric.cc.ll
+; xgboost/optimized/hinge.cc.ll
+; xgboost/optimized/quantile_obj.cc.ll
+; xgboost/optimized/regression_obj.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; yosys/optimized/pmux2shiftx.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0) #0 {
+entry:
+  %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ult i32 %1, 2
+  ret i1 %2
+}
+
+; 21 occurrences:
+; abseil-cpp/optimized/seed_material_test.cc.ll
+; cpython/optimized/hamt.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; linux/optimized/client.ll
+; linux/optimized/i915_request.ll
+; linux/optimized/intel_fb_pin.ll
+; linux/optimized/kbuf.ll
+; linux/optimized/nfs4client.ll
+; linux/optimized/skl_universal_plane.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; meshlab/optimized/meshlab_plugin_type.cpp.ll
+; mitsuba3/optimized/envmap.cpp.ll
+; openmpi/optimized/nbc_iallgather.ll
+; php/optimized/pcre2_jit_compile.ll
+; php/optimized/php_reflection.ll
+; quickjs/optimized/libbf.ll
+; ruby/optimized/bignum.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/ezsat.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0) #0 {
+entry:
+  %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ugt i32 %1, 1
+  ret i1 %2
+}
+
+; 43 occurrences:
+; abc/optimized/ac_wrapper.cpp.ll
+; c3c/optimized/c_abi_aarch64.c.ll
+; c3c/optimized/c_abi_x86.c.ll
+; cpython/optimized/_testinternalcapi.ll
+; cpython/optimized/instrumentation.ll
+; eastl/optimized/TestBitset.cpp.ll
+; hdf5/optimized/H5FDonion.c.ll
+; linux/optimized/bdev.ll
+; linux/optimized/cbc.ll
+; linux/optimized/dm-table.ll
+; linux/optimized/drm_blend.ll
+; linux/optimized/drm_modes.ll
+; linux/optimized/i915_gem_tiling.ll
+; linux/optimized/i915_request.ll
+; linux/optimized/linkmodes.ll
+; linux/optimized/sysctl_net_core.ll
+; linux/optimized/virtio_ring.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; minetest/optimized/wieldmesh.cpp.ll
+; mitsuba3/optimized/codeholder.cpp.ll
+; mitsuba3/optimized/compiler.cpp.ll
+; mitsuba3/optimized/ralocal.cpp.ll
+; php/optimized/pcre2_convert.ll
+; php/optimized/zend_jit.ll
+; qemu/optimized/block.c.ll
+; qemu/optimized/block_qcow2-cache.c.ll
+; qemu/optimized/hw_pci_pci.c.ll
+; qemu/optimized/nbd_client.c.ll
+; qemu/optimized/tcg.c.ll
+; velox/optimized/AllocationPool.cpp.ll
+; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
+; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
+; wasmtime-rs/optimized/3kfvm76kbgzrwkht.ll
+; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
+; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
+; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; z3/optimized/dl_table.cpp.ll
+; z3/optimized/enum2bv_rewriter.cpp.ll
+; z3/optimized/mpz.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = tail call i32 @llvm.ctpop.i32(i32 %0), !range !0
+  %2 = icmp eq i32 %1, 1
+  ret i1 %2
+}
+
+; 67 occurrences:
+; abc/optimized/dauDsd.c.ll
+; clamav/optimized/hash.c.ll
+; cmake/optimized/algorithms.c.ll
+; cmake/optimized/rhash.c.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; hdf5/optimized/H5FDonion.c.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/AggressiveInstCombine.cpp.ll
+; llvm/optimized/CGNonTrivialStruct.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DAGISelMatcherGen.cpp.ll
+; llvm/optimized/DemandedBits.cpp.ll
+; llvm/optimized/ExecutionDomainFix.cpp.ll
+; llvm/optimized/ExpandReductions.cpp.ll
+; llvm/optimized/HeaderMap.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/InstCombineCasts.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/KnownBits.cpp.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/LegalizeDAG.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/LoopUnrollRuntime.cpp.ll
+; llvm/optimized/LowerMemIntrinsics.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; llvm/optimized/X86PartialReduction.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; luajit/optimized/lj_crecord.ll
+; luajit/optimized/lj_crecord_dyn.ll
+; minetest/optimized/test_utilities.cpp.ll
+; openjdk/optimized/block.ll
+; openjdk/optimized/c1_LIRGenerator_x86.ll
+; openjdk/optimized/dfa_x86.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1RegionMarkStatsCache.ll
+; openjdk/optimized/jvmFlagConstraintsG1.ll
+; openjdk/optimized/jvmFlagConstraintsGC.ll
+; openjdk/optimized/loopnode.ll
+; openjdk/optimized/node.ll
+; openjdk/optimized/phaseX.ll
+; openjdk/optimized/vectset.ll
+; openjdk/optimized/xRelocationSet.ll
+; openjdk/optimized/xRelocationSetSelector.ll
+; openjdk/optimized/zRelocationSet.ll
+; openjdk/optimized/zRelocationSetSelector.ll
+; pbrt-v4/optimized/image.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samplers.cpp.ll
+; qemu/optimized/hw_pci_pcie_aer.c.ll
+; spike/optimized/elf2hex.ll
+; z3/optimized/mpfx.cpp.ll
+; z3/optimized/mpz.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i32 %0) #0 {
+entry:
+  %1 = tail call range(i32 1, 33) i32 @llvm.ctpop.i32(i32 %0), !range !1
+  %2 = icmp eq i32 %1, 31
+  ret i1 %2
+}
+
+; 5 occurrences:
+; llvm/optimized/KnownBits.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; openjdk/optimized/superword.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(i32 %0) #0 {
+entry:
+  %1 = tail call range(i32 1, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ne i32 %1, 1
+  ret i1 %2
+}
+
+; 21 occurrences:
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/giaEra2.c.ll
+; abc/optimized/lpkSets.c.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/LegalityPredicates.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; lua/optimized/ltable.ll
+; openjdk/optimized/X11Color.ll
+; openjdk/optimized/divnode.ll
+; openjdk/optimized/vectorIntrinsics.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0) #0 {
+entry:
+  %1 = call range(i32 1, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ugt i32 %1, 1
+  ret i1 %2
+}
+
+; 2 occurrences:
+; linux/optimized/libata-core.ll
+; php/optimized/zend_jit.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i32 %0) #0 {
+entry:
+  %1 = call range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ne i32 %1, 1
+  ret i1 %2
+}
+
+; 1 occurrences:
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0) #0 {
+entry:
+  %1 = call noundef range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ugt i32 %1, 1
+  ret i1 %2
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/bits_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0) #0 {
+entry:
+  %1 = call noundef range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp eq i32 %1, 31
+  ret i1 %2
+}
+
+; 1 occurrences:
+; zxing/optimized/AZDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0) #0 {
+entry:
+  %1 = call noundef range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %0)
+  %2 = icmp ult i32 %1, 3
+  ret i1 %2
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }
+
+!0 = !{i32 0, i32 33}
+!1 = !{i32 1, i32 33}

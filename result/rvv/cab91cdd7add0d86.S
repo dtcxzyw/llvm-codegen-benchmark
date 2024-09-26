@@ -1,0 +1,8 @@
+func0000000000000009:                   # @func0000000000000009
+	lui	a0, 256
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsltu.vx	v0, v10, a0
+	addi	a0, a0, -2
+	vand.vx	v8, v12, a0, v0.t
+	vsrl.vi	v8, v8, 1
+	ret

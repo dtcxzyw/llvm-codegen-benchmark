@@ -1,0 +1,342 @@
+
+; 21 occurrences:
+; arrow/optimized/thread_pool.cc.ll
+; assimp/optimized/BlenderLoader.cpp.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; glslang/optimized/disassemble.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/GCBase.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hyperscan/optimized/ng.cpp.ll
+; llvm/optimized/AnalysisConsumer.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; minetest/optimized/connection.cpp.ll
+; minetest/optimized/server.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
+; protobuf/optimized/generated_message_reflection.cc.ll
+; proxygen/optimized/HTTP2Codec.cpp.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; rocksdb/optimized/point_lock_manager.cc.ll
+; rocksdb/optimized/version_set.cc.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; verilator/optimized/V3FileLine.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr exact i64 %4, 3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 24 occurrences:
+; delta-rs/optimized/3qkwqfk85qralejq.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; openjdk/optimized/archiveBuilder.ll
+; openjdk/optimized/codeCache.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1OopStarChunkedList.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/psParallelCompact.ll
+; postgres/optimized/freepage.ll
+; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; rocksdb/optimized/version_set.cc.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
+; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
+; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; tls-rs/optimized/49b6dhrgmsskmdw3.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; tree-sitter-rs/optimized/sw0aazrl08me20d.ll
+; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
+; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
+; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr i64 %4, 3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 28 occurrences:
+; assimp/optimized/BlenderLoader.cpp.ll
+; assimp/optimized/clipper.cpp.ll
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; gromacs/optimized/qmmminputgenerator.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; llvm/optimized/AsmWriterEmitter.cpp.ll
+; llvm/optimized/CallEvent.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/CoreEngine.cpp.ll
+; llvm/optimized/ExprEngineCXX.cpp.ll
+; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
+; llvm/optimized/IRSymtab.cpp.ll
+; llvm/optimized/MemProf.cpp.ll
+; llvm/optimized/PathDiagnostic.cpp.ll
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; llvm/optimized/ScheduleDAGFast.cpp.ll
+; llvm/optimized/ThreadPool.cpp.ll
+; minetest/optimized/connectionthreads.cpp.ll
+; minetest/optimized/servermap.cpp.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; opencv/optimized/objects_associator.cpp.ll
+; opencv/optimized/trace.cpp.ll
+; rocksdb/optimized/memtable.cc.ll
+; rocksdb/optimized/threadpool_imp.cc.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; verilator/optimized/V3Delayed.cpp.ll
+; yosys/optimized/json.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr exact i64 %4, 3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 22 occurrences:
+; assimp/optimized/3DSConverter.cpp.ll
+; assimp/optimized/BlenderLoader.cpp.ll
+; cvc5/optimized/cut_log.cpp.ll
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; gromacs/optimized/gmx_bar.cpp.ll
+; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
+; llvm/optimized/MetadataLoader.cpp.ll
+; llvm/optimized/Patterns.cpp.ll
+; meshlab/optimized/intersection.cpp.ll
+; meshlab/optimized/layerDialog.cpp.ll
+; minetest/optimized/CB3DMeshFileLoader.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; opencv/optimized/abs_decoder.cpp.ll
+; opencv/optimized/hough.cpp.ll
+; openusd/optimized/quadRefinement.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
+; php/optimized/zend_execute.ll
+; pugixml/optimized/pugixml.cpp.ll
+; quantlib/optimized/actualactual.ll
+; verilator/optimized/V3Sched.cpp.ll
+; yosys/optimized/verilog_backend.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr exact i64 %4, 2
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 44 occurrences:
+; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
+; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; diesel-rs/optimized/4l2dlnns3xjar0un.ll
+; html5ever-rs/optimized/4f0kix4z793pb47k.ll
+; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; mini-lsm-rs/optimized/2vbarw74mreksmkr.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
+; ockam-rs/optimized/z0rkq6s90lca7cm.ll
+; regex-rs/optimized/244spg1j3kwmcjv5.ll
+; regex-rs/optimized/54dfm57uiwuw9jbd.ll
+; ripgrep-rs/optimized/20vllb8f66lp502b.ll
+; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
+; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
+; rust-analyzer-rs/optimized/2jezmucvqvfiuhvx.ll
+; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
+; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
+; rust-analyzer-rs/optimized/4tstt0w6z5grnfcy.ll
+; rust-analyzer-rs/optimized/4ylvf7q7b8ea52vh.ll
+; rust-analyzer-rs/optimized/5cv6fzh8luwt5r60.ll
+; rust-analyzer-rs/optimized/5eyhy11yq8t0zgxe.ll
+; rust-analyzer-rs/optimized/84mgk0fwp2eksq1.ll
+; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
+; stat-rs/optimized/20o1n4zmlkej35p7.ll
+; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
+; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
+; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/aovf7fvpf4y65zc.ll
+; typst-rs/optimized/ef603zin5qw49hb.ll
+; wasmtime-rs/optimized/1272tr6bte1p197s.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
+; wasmtime-rs/optimized/22090c9nvh3rueq7.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
+; wasmtime-rs/optimized/59apva3e2aabn5yb.ll
+; wasmtime-rs/optimized/yijsgxkf5yj6ls1.ll
+; wasmtime-rs/optimized/yvuhygn8g1cm0um.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub nuw i64 %3, %1
+  %5 = lshr exact i64 %4, 4
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 8 occurrences:
+; jemalloc/optimized/hpdata.ll
+; jemalloc/optimized/hpdata.pic.ll
+; jemalloc/optimized/hpdata.sym.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
+; redis/optimized/hpdata.ll
+; redis/optimized/hpdata.sym.ll
+; wasmedge/optimized/proxy.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr i64 %4, 3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 4 occurrences:
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psYoungGen.ll
+; pugixml/optimized/pugixml.cpp.ll
+; verilator/optimized/V3Delayed.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr i64 %4, 19
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 71 occurrences:
+; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
+; clap-rs/optimized/5651dp9k16h53y8x.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; ockam-rs/optimized/1145kugil9dl94a2.ll
+; ockam-rs/optimized/18drj88gqh6dyxft.ll
+; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
+; ockam-rs/optimized/1m3syekh32bdyn7h.ll
+; ockam-rs/optimized/1nr6pb10qh86z9fy.ll
+; ockam-rs/optimized/1pv5gnbequqkl6bi.ll
+; ockam-rs/optimized/1webxc5tel1wnzl3.ll
+; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
+; ockam-rs/optimized/24riastqfxe8dcf.ll
+; ockam-rs/optimized/29qu7xzozkf0g7sn.ll
+; ockam-rs/optimized/29yd4i88qicarchi.ll
+; ockam-rs/optimized/2ffdkde2ipa00t7y.ll
+; ockam-rs/optimized/2laqgemyvjk4w4zu.ll
+; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; ockam-rs/optimized/2n3khw32ncj4zrb8.ll
+; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
+; ockam-rs/optimized/2wmaz4egimtz3sac.ll
+; ockam-rs/optimized/30eg1upn5zmujbkj.ll
+; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; ockam-rs/optimized/35pvxddga2itk8eb.ll
+; ockam-rs/optimized/371lbzotxaob5lvd.ll
+; ockam-rs/optimized/39162e6lwdaotcdm.ll
+; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
+; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; ockam-rs/optimized/4domb9jqp8axahh9.ll
+; ockam-rs/optimized/4i2q0c0wyur8autb.ll
+; ockam-rs/optimized/4op0lm10vgcgt7cp.ll
+; ockam-rs/optimized/4vm9wwbhr0wvdjh9.ll
+; ockam-rs/optimized/57x5i9ppjq89r6ok.ll
+; ockam-rs/optimized/58bgotmnlu3rwn4k.ll
+; ockam-rs/optimized/5gcqm38vn3t9jxog.ll
+; ockam-rs/optimized/8vw3dw8isly7xg2.ll
+; ockam-rs/optimized/bws0hnih6ct4ces.ll
+; ockam-rs/optimized/cts9nubscl1ph7i.ll
+; ockam-rs/optimized/ezelett6ckruet.ll
+; ockam-rs/optimized/zoffpo3ld8myn2r.ll
+; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
+; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
+; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
+; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
+; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
+; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
+; rust-analyzer-rs/optimized/4gpbylzxf192izgm.ll
+; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; rust-analyzer-rs/optimized/4piyv0md79k42idp.ll
+; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
+; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
+; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
+; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
+; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
+; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
+; syn/optimized/2i67i8azb4r5b3mw.ll
+; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
+; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
+; tokio-rs/optimized/3k1p5lcuq1gqdulf.ll
+; tokio-rs/optimized/4mr1mvhll2ekuv31.ll
+; tokio-rs/optimized/4ni18r7xt9z3j0r8.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; wasmtime-rs/optimized/11ww7ts55o8z8j6m.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub nuw i64 %3, %1
+  %5 = lshr exact i64 %4, 6
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 6 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; gromacs/optimized/disre.cpp.ll
+; icu/optimized/ucnv2022.ll
+; openusd/optimized/quadRefinement.cpp.ll
+; openusd/optimized/triRefinement.cpp.ll
+; yosys/optimized/memlib.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = lshr exact i64 %4, 2
+  %6 = add nuw i64 %5, %0
+  ret i64 %6
+}
+
+; 2 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub nuw i64 %3, %1
+  %5 = lshr exact i64 %4, 2
+  %6 = add nuw i64 %5, %0
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

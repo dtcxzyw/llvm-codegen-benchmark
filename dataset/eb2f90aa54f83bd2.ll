@@ -1,8 +1,10 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
+; gromacs/optimized/decidesimulationworkload.cpp.ll
+; llvm/optimized/CodeGenFunction.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; sundials/optimized/arkode_ls.c.ll
 ; sundials/optimized/cvode_ls.c.ll

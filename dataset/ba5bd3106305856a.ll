@@ -1,10 +1,34 @@
 
-; 12 occurrences:
+; 36 occurrences:
 ; cpython/optimized/_xxinterpchannelsmodule.ll
 ; cpython/optimized/interpreteridobject.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; gromacs/optimized/tng_compress.c.ll
+; llvm/optimized/SemaConcept.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openblas/optimized/dgesvdq.c.ll
+; opencv/optimized/matrix_expressions.cpp.ll
+; openjdk/optimized/verifier.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_match.ll
 ; postgres/optimized/checkpointer.ll
 ; postgres/optimized/ruleutils.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll

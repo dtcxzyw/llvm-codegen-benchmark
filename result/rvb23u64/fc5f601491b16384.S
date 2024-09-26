@@ -1,5 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	sub	a0, a0, a1
-	sh1add	a0, a0, a0
-	addi	a0, a0, 9
-	ret

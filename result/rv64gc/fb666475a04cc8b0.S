@@ -1,4 +1,0 @@
-func0000000000000008:                   # @func0000000000000008
-	fneg.s	fa5, fa1
-	feq.s	a0, fa5, fa0
-	ret

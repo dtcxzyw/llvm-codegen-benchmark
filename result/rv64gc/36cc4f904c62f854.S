@@ -1,0 +1,50 @@
+func0000000000000034:                   # @func0000000000000034
+	add	a0, a0, a1
+	srli	a0, a0, 24
+	seqz	a0, a0
+	xori	a0, a0, 127
+	ret
+.LCPI1_0:
+	.quad	999999999999999999              # 0xde0b6b3a763ffff
+func0000000000000028:                   # @func0000000000000028
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	add	a0, a0, a1
+	sltu	a0, a2, a0
+	addi	a0, a0, 18
+	ret
+func000000000000000a:                   # @func000000000000000a
+	add	a0, a0, a1
+	sgtz	a0, a0
+	addi	a0, a0, 1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	add	a0, a0, a1
+	srli	a0, a0, 32
+	seqz	a0, a0
+	xori	a0, a0, 3
+	ret
+func0000000000000018:                   # @func0000000000000018
+	add	a1, a1, a0
+	lui	a0, 244141
+	addiw	a2, a0, -1537
+	li	a0, 10
+	bltu	a2, a1, .LBB4_2
+	li	a0, 1
+.LBB4_2:                                # %entry
+	ret
+func0000000000000016:                   # @func0000000000000016
+	add	a0, a0, a1
+	srai	a0, a0, 63
+	ori	a0, a0, 1
+	ret
+func0000000000000026:                   # @func0000000000000026
+	add	a0, a0, a1
+	srai	a0, a0, 63
+	andi	a0, a0, 9
+	ret
+func0000000000000006:                   # @func0000000000000006
+	add	a0, a0, a1
+	srai	a0, a0, 63
+	andi	a0, a0, 9
+	ret

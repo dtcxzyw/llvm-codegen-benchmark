@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
+; openjdk/optimized/loopnode.ll
+; openusd/optimized/dependencies.cpp.ll
 ; ruby/optimized/bignum.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
@@ -13,9 +15,10 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/cat-file.ll
-; imgui/optimized/imgui.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; openssl/optimized/libcrypto-lib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
 ; Function Attrs: nounwind
@@ -27,10 +30,18 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 23 occurrences:
 ; assimp/optimized/zip.c.ll
+; gromacs/optimized/expfit.cpp.ll
+; gromacs/optimized/forcerec.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/rtmutex_api.ll
+; llvm/optimized/Darwin.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/LoopSimplify.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
+; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; memcached/optimized/memcached-logger.ll
 ; memcached/optimized/memcached_debug-logger.ll
@@ -52,13 +63,25 @@ entry:
   ret i1 %5
 }
 
-; 59 occurrences:
+; 71 occurrences:
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/unzip.c.ll
 ; cpython/optimized/textio.ll
+; gromacs/optimized/gmx_cluster.cpp.ll
+; gromacs/optimized/gmx_nmr.cpp.ll
 ; hermes/optimized/zip.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/MCExternalSymbolizer.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; openjdk/optimized/gtk3_interface.ll
+; openjdk/optimized/safefetch_static_posix.ll
+; openjdk/optimized/signals_posix.ll
+; openjdk/optimized/vmError_posix.ll
 ; openmpi/optimized/comm.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll

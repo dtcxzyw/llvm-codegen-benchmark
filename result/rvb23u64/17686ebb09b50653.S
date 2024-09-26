@@ -1,0 +1,11 @@
+func000000000000000a:                   # @func000000000000000a
+	addiw	a2, a2, -1
+	bext	a1, a1, a2
+	sh3add	a0, a1, a0
+	ret
+func000000000000001a:                   # @func000000000000001a
+	addi	a2, a2, -6
+	srl	a1, a1, a2
+	andi	a1, a1, 63
+	sh3add	a0, a1, a0
+	ret

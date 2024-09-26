@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
+; llvm/optimized/JSON.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
 ; qemu/optimized/block.c.ll
 ; rocksdb/optimized/version_edit_handler.cc.ll
 ; Function Attrs: nounwind

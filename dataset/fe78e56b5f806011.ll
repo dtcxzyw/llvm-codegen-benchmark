@@ -1,7 +1,8 @@
 
-; 9 occurrences:
-; git/optimized/hash-object.ll
+; 10 occurrences:
 ; linux/optimized/8250_core.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; luajit/optimized/buildvm.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_execute.ll

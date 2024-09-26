@@ -1,0 +1,24 @@
+
+; 10 occurrences:
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/APINotesReader.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
+; llvm/optimized/CGAtomic.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; openusd/optimized/patchTableFactory.cpp.ll
+; ruby/optimized/utf_16_32.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
+entry:
+  %2 = lshr i8 %1, 2
+  %3 = and i8 %2, 15
+  %4 = and i8 %0, 48
+  %5 = or disjoint i8 %3, %4
+  %6 = or disjoint i8 %5, -128
+  ret i8 %6
+}
+
+attributes #0 = { nounwind }

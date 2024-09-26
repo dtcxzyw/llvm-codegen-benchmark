@@ -1,0 +1,124 @@
+
+; 113 occurrences:
+; abseil-cpp/optimized/int128_test.cc.ll
+; abseil-cpp/optimized/numbers_test.cc.ll
+; bullet3/optimized/poly34.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_atrous.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_levels.c.ll
+; darktable/optimized/introspection_lowlight.c.ll
+; darktable/optimized/introspection_overlay.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_rgblevels.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/introspection_vignette.c.ll
+; darktable/optimized/introspection_watermark.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
+; duckdb/optimized/ub_duckdb_func_math.cpp.ll
+; faiss/optimized/extra_distances.cpp.ll
+; graphviz/optimized/poly.c.ll
+; gromacs/optimized/biasstate.cpp.ll
+; gromacs/optimized/calc_verletbuf.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
+; gromacs/optimized/gmx_dielectric.cpp.ll
+; gromacs/optimized/gmx_sham.cpp.ll
+; gromacs/optimized/interaction_const.cpp.ll
+; gromacs/optimized/kernel_gpu_ref.cpp.ll
+; gromacs/optimized/mttk.cpp.ll
+; gromacs/optimized/pull.cpp.ll
+; gromacs/optimized/pull_rotation.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
+; gromacs/optimized/shellfc.cpp.ll
+; gromacs/optimized/slasd4.cpp.ll
+; gromacs/optimized/slasd5.cpp.ll
+; gromacs/optimized/writeps.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/filter_ao.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_layer.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/save_project.cpp.ll
+; meshlab/optimized/shadow_mapping.cpp.ll
+; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
+; minetest/optimized/COpenGLExtensionHandler.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/clientenvironment.cpp.ll
+; minetest/optimized/content_cao.cpp.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; minetest/optimized/dynamicshadows.cpp.ll
+; minetest/optimized/game.cpp.ll
+; minetest/optimized/localplayer.cpp.ll
+; minetest/optimized/serverenvironment.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; nanosvg/optimized/nanosvg.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/chessboard.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; opencv/optimized/gaze_estimation.cpp.ll
+; opencv/optimized/gpc_evaluate.cpp.ll
+; opencv/optimized/gtrUtils.cpp.ll
+; opencv/optimized/homography_solver.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/ippe.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
+; opencv/optimized/normal.cpp.ll
+; opencv/optimized/odometry.cpp.ll
+; opencv/optimized/pcaflow_demo.cpp.ll
+; opencv/optimized/rand.cpp.ll
+; opencv/optimized/rapid.cpp.ll
+; opencv/optimized/recurrent_layers.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/seamless_cloning_impl.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
+; opencv/optimized/svm.cpp.ll
+; opencv/optimized/tracker_dasiamrpn.cpp.ll
+; openusd/optimized/capsule.cpp.ll
+; openusd/optimized/capsule_1.cpp.ll
+; openusd/optimized/cone.cpp.ll
+; openusd/optimized/cylinder.cpp.ll
+; openusd/optimized/cylinder_1.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; postgres/optimized/array_selfuncs.ll
+; raylib/optimized/raudio.c.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtext.c.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_truetype.c.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_colmaker.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; xgboost/optimized/updater_refresh.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(float %0) #0 {
+entry:
+  %1 = fneg float %0
+  %2 = fpext float %1 to double
+  ret double %2
+}
+
+attributes #0 = { nounwind }

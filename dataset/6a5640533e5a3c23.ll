@@ -1,0 +1,104 @@
+
+; 94 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
+; arrow/optimized/array_base.cc.ll
+; arrow/optimized/light_array.cc.ll
+; arrow/optimized/row_encoder.cc.ll
+; clamav/optimized/bytecode_vm.c.ll
+; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
+; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
+; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
+; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
+; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
+; coreutils-rs/optimized/59rj03aw6jgy8z12.ll
+; coreutils-rs/optimized/tq1d77uuiq535i2.ll
+; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; git/optimized/notes.ll
+; hdf5/optimized/H5Tbit.c.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_asserts.cpp.ll
+; hyperscan/optimized/ng_depth.cpp.ll
+; hyperscan/optimized/ng_literal_analysis.cpp.ll
+; hyperscan/optimized/ng_netflow.cpp.ll
+; hyperscan/optimized/ng_region.cpp.ll
+; hyperscan/optimized/ng_util.cpp.ll
+; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/ng_width.cpp.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; just-rs/optimized/2sblcsgax6v4zfcc.ll
+; just-rs/optimized/bulvmt5gknxyhsd.ll
+; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
+; libquic/optimized/curve25519.c.ll
+; libquic/optimized/hpack_huffman_table.cc.ll
+; libquic/optimized/p224-64.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; linux/optimized/drm_dp_helper.ll
+; linux/optimized/drm_dp_mst_topology.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; ockam-rs/optimized/1sna1kukcpmrcv4c.ll
+; openspiel/optimized/best_response.cc.ll
+; openspiel/optimized/dynamic_routing.cc.ll
+; openspiel/optimized/dynamic_routing_utils.cc.ll
+; openspiel/optimized/history_tree.cc.ll
+; openspiel/optimized/spiel.cc.ll
+; openspiel/optimized/state_distribution.cc.ll
+; openssl/optimized/libcrypto-lib-curve25519.ll
+; openssl/optimized/libcrypto-lib-provider_core.ll
+; openssl/optimized/libcrypto-shlib-curve25519.ll
+; openssl/optimized/libcrypto-shlib-provider_core.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
+; protobuf/optimized/unparser.cc.ll
+; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; spike/optimized/srl8.ll
+; spike/optimized/vsrl_vi.ll
+; spike/optimized/vsrl_vv.ll
+; spike/optimized/vsrl_vx.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/BitUtil.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/ByteStream.cpp.ll
+; velox/optimized/IsNull.cpp.ll
+; velox/optimized/Not.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; wireshark/optimized/packet-dnp.c.ll
+; wireshark/optimized/packet-openflow_v4.c.ll
+; wireshark/optimized/packet-openflow_v5.c.ll
+; wireshark/optimized/packet-tcp.c.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
+entry:
+  %2 = lshr i8 %0, %1
+  ret i8 %2
+}
+
+attributes #0 = { nounwind }

@@ -1,29 +1,15 @@
 
-; 202 occurrences:
+; 163 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
-; abseil-cpp/optimized/unordered_map_test.cc.ll
-; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/uri.cc.ll
-; ceres/optimized/line_search_preprocessor.cc.ll
-; ceres/optimized/trust_region_preprocessor.cc.ll
+; c3c/optimized/sema_expr.c.ll
 ; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
-; cmake/optimized/cmCacheManager.cxx.ll
-; cmake/optimized/cmMakefile.cxx.ll
-; cmake/optimized/jsoncpp_json_serializer.cpp.ll
-; cmake/optimized/protocol_requests.cpp.ll
-; cmake/optimized/protocol_response.cpp.ll
-; cmake/optimized/protocol_types.cpp.ll
-; cpp-httplib/optimized/httplib.cc.ll
-; cpython/optimized/obmalloc.ll
-; cvc5/optimized/alethe_printer.cpp.ll
-; cvc5/optimized/arith_poly_norm.cpp.ll
-; cvc5/optimized/cut_log.cpp.ll
-; cvc5/optimized/regexp_eval.cpp.ll
-; cvc5/optimized/sygus_inst.cpp.ll
-; cvc5/optimized/sygus_process_conj.cpp.ll
-; cvc5/optimized/sygus_unif_io.cpp.ll
-; cvc5/optimized/theory_sets_rels.cpp.ll
+; coreutils-rs/optimized/95am6mm2qmrbtl3.ll
 ; darktable/optimized/darkroom.c.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
@@ -39,17 +25,13 @@
 ; duckdb/optimized/ub_duckdb_planner_operator.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_statement.cpp.ll
-; eastl/optimized/TestFixedString.cpp.ll
-; eastl/optimized/TestFixedTupleVector.cpp.ll
-; eastl/optimized/TestFixedVector.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/meta_context.cpp.ll
-; flac/optimized/main.c.ll
 ; folly/optimized/LogConfig.cpp.ll
-; hermes/optimized/HBCParser.cpp.ll
-; hermes/optimized/ProfileAnalyzer.cpp.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/psaux.c.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/goughcompile_reg.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -75,13 +57,16 @@
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; libzmq/optimized/req.cpp.ll
-; lief/optimized/LangCodeItem.cpp.ll
-; lief/optimized/Method.cpp.ll
 ; linux/optimized/hugetlb_cgroup.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nsparse.ll
 ; linux/optimized/tty_jobctrl.ll
-; llama.cpp/optimized/sampling.cpp.ll
+; llvm/optimized/LexicalScopes.cpp.ll
+; llvm/optimized/MCObjectStreamer.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/SemaPseudoObject.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
@@ -127,7 +112,6 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; mimalloc/optimized/options.c.ll
 ; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -159,53 +143,56 @@
 ; minetest/optimized/test_inventory.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; minetest/optimized/unit_sao.cpp.ll
-; mold/optimized/passes.cc.ALPHA.cc.ll
-; mold/optimized/passes.cc.ARM32.cc.ll
-; mold/optimized/passes.cc.ARM64.cc.ll
-; mold/optimized/passes.cc.I386.cc.ll
-; mold/optimized/passes.cc.LOONGARCH32.cc.ll
-; mold/optimized/passes.cc.LOONGARCH64.cc.ll
-; mold/optimized/passes.cc.M68K.cc.ll
-; mold/optimized/passes.cc.PPC32.cc.ll
-; mold/optimized/passes.cc.PPC64V1.cc.ll
-; mold/optimized/passes.cc.PPC64V2.cc.ll
-; mold/optimized/passes.cc.RV32BE.cc.ll
-; mold/optimized/passes.cc.RV32LE.cc.ll
-; mold/optimized/passes.cc.RV64BE.cc.ll
-; mold/optimized/passes.cc.RV64LE.cc.ll
-; mold/optimized/passes.cc.S390X.cc.ll
-; mold/optimized/passes.cc.SH4.cc.ll
-; mold/optimized/passes.cc.SPARC64.cc.ll
-; mold/optimized/passes.cc.X86_64.cc.ll
-; nix/optimized/fromTOML.ll
-; php/optimized/simplexml.ll
+; openjdk/optimized/linkResolver.ll
 ; php/optimized/zend_builtin_functions.ll
 ; php/optimized/zend_inference.ll
-; php/optimized/zend_stream.ll
-; postgres/optimized/guc.ll
-; postgres/optimized/print.ll
 ; qemu/optimized/block.c.ll
-; rocksdb/optimized/c.cc.ll
-; rocksdb/optimized/compaction.cc.ll
-; rocksdb/optimized/db_impl.cc.ll
-; rocksdb/optimized/file_system.cc.ll
-; rocksdb/optimized/options_parser.cc.ll
-; rocksdb/optimized/sst_file_dumper.cc.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/setproctitle.ll
-; taskflow/optimized/text_pipeline.cpp.ll
+; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
+; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
+; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
+; rust-analyzer-rs/optimized/3fxp92r9t1x66wd0.ll
+; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
+; rust-analyzer-rs/optimized/c249cixj978zg74.ll
+; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
-; verilator/optimized/V3HierBlock.cpp.ll
 ; verilator/optimized/V3Split.cpp.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; wireshark/optimized/logcat.c.ll
-; wireshark/optimized/prefs.c.ll
-; yalantinglibs/optimized/chat_room.cpp.ll
-; z3/optimized/emonics.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, %0
+  %3 = icmp eq ptr %0, null
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 16 occurrences:
+; git/optimized/apply.ll
+; git/optimized/attr.ll
+; openjdk/optimized/bytecodes.ll
+; openjdk/optimized/codeBuffer.ll
+; openjdk/optimized/compiledIC.ll
+; openjdk/optimized/nmethod.ll
+; openjdk/optimized/relocInfo.ll
+; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/shenandoahNMethod.ll
+; openjdk/optimized/xNMethod.ll
+; openjdk/optimized/zNMethod.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_match.ll
+; postgres/optimized/snprintf.ll
+; postgres/optimized/snprintf_shlib.ll
+; postgres/optimized/snprintf_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(ptr %0, ptr %1) #0 {
+entry:
+  %2 = icmp ult ptr %1, %0
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
@@ -219,23 +206,6 @@ entry:
 define i1 @func0000000000000081(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %1, %0
-  %3 = icmp eq ptr %0, null
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 7 occurrences:
-; git/optimized/apply.ll
-; git/optimized/attr.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_match.ll
-; postgres/optimized/snprintf.ll
-; postgres/optimized/snprintf_shlib.ll
-; postgres/optimized/snprintf_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1) #0 {
-entry:
-  %2 = icmp ult ptr %1, %0
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4

@@ -1,0 +1,18 @@
+func0000000000000014:                   # @func0000000000000014
+	slli	a2, a2, 12
+	add	a1, a1, a2
+	slli	a0, a0, 12
+	add	a0, a0, a1
+	slli	a0, a0, 34
+	srli	a0, a0, 46
+	ret
+func0000000000000015:                   # @func0000000000000015
+	sh3add	a1, a2, a1
+	sh3add	a0, a0, a1
+	bexti	a0, a0, 3
+	ret
+func0000000000000005:                   # @func0000000000000005
+	sh3add	a1, a2, a1
+	sh3add	a0, a0, a1
+	bexti	a0, a0, 3
+	ret

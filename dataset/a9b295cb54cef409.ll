@@ -1,12 +1,11 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
-; cmake/optimized/json_reader.cpp.ll
+; coreutils-rs/optimized/4qccn4mjmdouwvjm.ll
 ; linux/optimized/tree.ll
+; llvm/optimized/SemaAttr.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
-; postgres/optimized/standby.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
-; yosys/optimized/bugpoint.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

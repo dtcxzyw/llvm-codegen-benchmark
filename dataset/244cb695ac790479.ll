@@ -1,0 +1,60 @@
+
+; 19 occurrences:
+; freetype/optimized/sfnt.c.ll
+; hyperscan/optimized/limex_64.c.ll
+; hyperscan/optimized/limex_native.c.ll
+; hyperscan/optimized/limex_simd128.c.ll
+; hyperscan/optimized/limex_simd256.c.ll
+; hyperscan/optimized/limex_simd384.c.ll
+; hyperscan/optimized/limex_simd512.c.ll
+; libzmq/optimized/radix_tree.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CallEvent.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
+; llvm/optimized/NeonEmitter.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/Stmt.cpp.ll
+; openjdk/optimized/ciStreams.ll
+; velox/optimized/CastExpr.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 2
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %1, i64 1
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw i32, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaChecking.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000da(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 8
+  %4 = getelementptr nusw ptr, ptr %3, i64 %0
+  %5 = sext i32 %2 to i64
+  %6 = getelementptr ptr, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
+  ret ptr %7
+}
+
+; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
+; openusd/optimized/grain_synthesis.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001da(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 13448
+  %4 = getelementptr nusw i32, ptr %3, i64 %0
+  %5 = sext i32 %2 to i64
+  %6 = getelementptr i32, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 36
+  ret ptr %7
+}
+
+attributes #0 = { nounwind }

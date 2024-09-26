@@ -1,0 +1,123 @@
+
+; 111 occurrences:
+; assimp/optimized/OgreStructs.cpp.ll
+; box2d/optimized/b2_joint.cpp.ll
+; box2d/optimized/b2_rope.cpp.ll
+; bullet3/optimized/b3CpuRigidBodyPipeline.ll
+; bullet3/optimized/b3GpuRigidBodyPipeline.ll
+; bullet3/optimized/b3PgsJacobiSolver.ll
+; bullet3/optimized/btConeTwistConstraint.ll
+; bullet3/optimized/btContinuousConvexCollision.ll
+; bullet3/optimized/btDantzigLCP.ll
+; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btDiscreteDynamicsWorld.ll
+; bullet3/optimized/btMiniSDF.ll
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btReducedDeformableBody.ll
+; bullet3/optimized/btRigidBody.ll
+; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
+; bullet3/optimized/btSoftBody.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_atrous.c.ll
+; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_clipping.c.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_denoiseprofile.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_graduatednd.c.ll
+; darktable/optimized/introspection_lens.cc.ll
+; darktable/optimized/introspection_liquify.c.ll
+; darktable/optimized/introspection_overlay.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/introspection_velvia.c.ll
+; darktable/optimized/introspection_watermark.c.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; gromacs/optimized/bonded.cpp.ll
+; gromacs/optimized/calc_verletbuf.cpp.ll
+; gromacs/optimized/gmx_dielectric.cpp.ll
+; gromacs/optimized/gmx_sigeps.cpp.ll
+; gromacs/optimized/md_support.cpp.ll
+; gromacs/optimized/nb_free_energy.cpp.ll
+; gromacs/optimized/orires.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; gromacs/optimized/wall.cpp.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; minetest/optimized/gameui.cpp.ll
+; minetest/optimized/mapgen_carpathian.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/blackbody.cpp.ll
+; mitsuba3/optimized/bsplinecurve.cpp.ll
+; mitsuba3/optimized/envmap.cpp.ll
+; mitsuba3/optimized/hair.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/measured_polarized.cpp.ll
+; mitsuba3/optimized/microfacet.cpp.ll
+; mitsuba3/optimized/plastic.cpp.ll
+; mitsuba3/optimized/pplastic.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
+; mitsuba3/optimized/principledthin.cpp.ll
+; mitsuba3/optimized/roughconductor.cpp.ll
+; mitsuba3/optimized/roughdielectric.cpp.ll
+; mitsuba3/optimized/roughplastic.cpp.ll
+; mitsuba3/optimized/sggx.cpp.ll
+; mixbox/optimized/mixbox.ll
+; ncnn/optimized/yolodetectionoutput.cpp.ll
+; nuklear/optimized/unity.c.ll
+; ocio/optimized/FixedFunctionOpCPU.cpp.ll
+; oiio/optimized/imagebufalgo_yee.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/color_lab.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; opencv/optimized/vgg.cpp.ll
+; openusd/optimized/cpuEvaluator.cpp.ll
+; openusd/optimized/ompEvaluator.cpp.ll
+; openusd/optimized/patchBasis.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/colorspace.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
+; pbrt-v4/optimized/filters.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/materials.cpp.ll
+; pbrt-v4/optimized/media.cpp.ll
+; pbrt-v4/optimized/mipmap.cpp.ll
+; pbrt-v4/optimized/paramdict.cpp.ll
+; pbrt-v4/optimized/spectrum.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; pbrt-v4/optimized/textures.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
+; raylib/optimized/raudio.c.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rshapes.c.ll
+; raylib/optimized/rtext.c.ll
+; stb/optimized/stb_truetype.c.ll
+; xgboost/optimized/multiclass_obj.cc.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fmul float %2, 0x3E112E0BE0000000
+  %4 = fmul float %3, %1
+  %5 = fmul float %4, %0
+  ret float %5
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,23 @@
+
+; 10 occurrences:
+; assimp/optimized/Assimp.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; jq/optimized/regexec.ll
+; linux/optimized/nf_conntrack_sip.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; oniguruma/optimized/regexec.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = trunc i64 %3 to i32
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %5, i32 -1, i32 %4
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

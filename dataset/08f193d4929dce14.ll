@@ -1,0 +1,20 @@
+
+; 7 occurrences:
+; linux/optimized/vfs_inode.ll
+; meshlab/optimized/edit_select.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
+; wireshark/optimized/packet-ros.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 61440
+  %3 = icmp eq i32 %2, 16384
+  %4 = and i32 %1, 511
+  %5 = select i1 %3, i32 %0, i32 %4
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
+; llvm/optimized/SROA.cpp.ll
 ; postgres/optimized/nbtinsert.ll
 ; tev/optimized/main.cpp.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

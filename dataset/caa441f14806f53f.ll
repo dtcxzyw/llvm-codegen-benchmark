@@ -1,13 +1,16 @@
 
-; 30 occurrences:
+; 33 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; cmake/optimized/parsedate.c.ll
+; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; curl/optimized/libcurl_la-parsedate.ll
-; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/decode.c.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; imgui/optimized/imgui.cpp.ll
+; libjpeg-turbo/optimized/tjbench.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/RegionPrinter.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll

@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.quad	0x3feffffde7210be9              # double 0.99999899999999997
+func0000000000000000:                   # @func0000000000000000
+	lui	a1, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a1)
+	fcvt.d.lu	fa4, a0
+	fmadd.d	fa0, fa0, fa4, fa5
+	ret

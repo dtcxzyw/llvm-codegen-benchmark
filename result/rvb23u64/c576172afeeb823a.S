@@ -1,0 +1,22 @@
+func0000000000000045:                   # @func0000000000000045
+	li	a2, 2047
+	slli	a2, a2, 52
+	and	a1, a1, a2
+	li	a2, 1075
+	subw	a2, a2, a0
+	czero.eqz	a0, a2, a1
+	li	a2, 1074
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func0000000000000047:                   # @func0000000000000047
+	li	a2, 2047
+	slli	a2, a2, 52
+	and	a1, a1, a2
+	li	a2, 1092
+	subw	a2, a2, a0
+	czero.eqz	a0, a2, a1
+	li	a2, 1091
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
+	ret

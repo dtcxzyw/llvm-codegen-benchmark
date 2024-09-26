@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; git/optimized/editor.ll
 ; libevent/optimized/event.c.ll
 ; linux/optimized/compaction.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; openjdk/optimized/awt_InputMethod.ll
 ; php/optimized/cgi_main.ll
 ; postgres/optimized/dbcommands.ll
 ; Function Attrs: nounwind

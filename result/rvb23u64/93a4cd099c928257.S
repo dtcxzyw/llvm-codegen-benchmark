@@ -1,0 +1,33 @@
+func00000000000000a1:                   # @func00000000000000a1
+	sext.w	a0, a0
+	sh3add	a2, a2, a2
+	sh2add	a1, a2, a1
+	li	a2, -8
+	czero.eqz	a0, a2, a0
+	add	a0, a0, a1
+	addi	a0, a0, 12
+	ret
+func0000000000000001:                   # @func0000000000000001
+	sext.w	a0, a0
+	slli	a2, a2, 5
+	add	a1, a1, a2
+	lui	a2, 524288
+	addiw	a2, a2, 3
+	xor	a0, a0, a2
+	li	a2, 8
+	czero.eqz	a0, a2, a0
+	add	a0, a0, a1
+	addi	a0, a0, 16
+	ret
+func00000000000000aa:                   # @func00000000000000aa
+	sext.w	a0, a0
+	slli	a3, a2, 3
+	slli	a2, a2, 7
+	sub	a2, a2, a3
+	add	a1, a1, a2
+	sgtz	a0, a0
+	li	a2, -8
+	czero.nez	a0, a2, a0
+	add	a0, a0, a1
+	addi	a0, a0, 80
+	ret

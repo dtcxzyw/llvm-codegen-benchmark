@@ -1,9 +1,13 @@
 
-; 5 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btSliderConstraint.ll
 ; linux/optimized/mcast.ll
-; openblas/optimized/lapacke_dlarfb.c.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
+; openjdk/optimized/DrawPolygons.ll
+; openjdk/optimized/exceptions.ll
+; openusd/optimized/subset.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
+; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/bool_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

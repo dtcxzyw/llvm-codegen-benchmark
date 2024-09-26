@@ -1,9 +1,16 @@
 
-; 10 occurrences:
+; 17 occurrences:
 ; arrow/optimized/function.cc.ll
+; clamav/optimized/sigtool.c.ll
 ; git/optimized/editor.ll
 ; graphviz/optimized/block.cpp.ll
 ; libevent/optimized/event.c.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/DereferenceChecker.cpp.ll
+; llvm/optimized/OMPIRBuilder.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; opencv/optimized/persistence.cpp.ll
+; openjdk/optimized/awt_InputMethod.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/cgi_main.ll
 ; postgres/optimized/syslogger.ll

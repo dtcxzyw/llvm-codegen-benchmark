@@ -1,0 +1,18 @@
+func000000000000001a:                   # @func000000000000001a
+	zext.h	a0, a0
+	subw	a1, a1, a2
+	slti	a1, a1, 0
+	addi	a0, a0, -1328
+	seqz	a0, a0
+	andn	a0, a0, a1
+	ret
+func000000000000011a:                   # @func000000000000011a
+	zext.h	a0, a0
+	subw	a1, a1, a2
+	slti	a1, a1, 2
+	li	a2, 27
+	slli	a2, a2, 11
+	xor	a0, a0, a2
+	seqz	a0, a0
+	andn	a0, a0, a1
+	ret

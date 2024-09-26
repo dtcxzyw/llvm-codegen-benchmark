@@ -1,9 +1,11 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; ruby/optimized/dir.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

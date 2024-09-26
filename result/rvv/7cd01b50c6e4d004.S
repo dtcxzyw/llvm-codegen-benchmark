@@ -1,0 +1,37 @@
+func000000000000001f:                   # @func000000000000001f
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v12, v10
+	li	a0, 16
+	vmv.v.x	v10, a0
+	vmadd.vv	v8, v12, v10
+	ret
+func000000000000000f:                   # @func000000000000000f
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v12, v10
+	vmv.v.i	v10, 7
+	vmadd.vv	v8, v12, v10
+	ret
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v12, v10
+	vmv.v.i	v10, 4
+	vmadd.vv	v8, v12, v10
+	ret
+func0000000000000010:                   # @func0000000000000010
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v12, v10
+	vmv.v.i	v10, 5
+	vmadd.vv	v8, v12, v10
+	ret
+func000000000000000d:                   # @func000000000000000d
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v12, v10
+	vmv.v.i	v10, -1
+	vmadd.vv	v8, v12, v10
+	ret
+func0000000000000005:                   # @func0000000000000005
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v12, v10
+	vmv.v.i	v10, -1
+	vmadd.vv	v8, v12, v10
+	ret

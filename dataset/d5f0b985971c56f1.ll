@@ -1,6 +1,9 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; linux/optimized/page_alloc.ll
+; llvm/optimized/CastValueChecker.cpp.ll
+; llvm/optimized/ParsePragma.cpp.ll
+; luau/optimized/Unifier.cpp.ll
 ; php/optimized/zend_jit.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; yosys/optimized/simplify.ll

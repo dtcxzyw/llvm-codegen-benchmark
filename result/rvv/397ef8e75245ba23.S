@@ -1,0 +1,41 @@
+func0000000000000021:                   # @func0000000000000021
+	lui	a0, 8
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 16
+	vsub.vv	v8, v9, v8
+	ret
+func0000000000000069:                   # @func0000000000000069
+	lui	a0, 1
+	addiw	a0, a0, -1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 12
+	vsub.vv	v8, v9, v8
+	ret
+func000000000000006c:                   # @func000000000000006c
+	li	a0, 63
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 6
+	vsub.vv	v8, v9, v8
+	ret
+func000000000000006d:                   # @func000000000000006d
+	li	a0, 63
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 6
+	vsub.vv	v8, v9, v8
+	ret
+func0000000000000020:                   # @func0000000000000020
+	li	a0, 31
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 5
+	vsub.vv	v8, v9, v8
+	ret

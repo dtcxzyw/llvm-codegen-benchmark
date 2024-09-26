@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; darktable/optimized/introspection_liquify.c.ll
@@ -10,7 +10,9 @@
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/workqueue.ll
-; nuklear/optimized/unity.c.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Subtyping.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; redis/optimized/anet.ll

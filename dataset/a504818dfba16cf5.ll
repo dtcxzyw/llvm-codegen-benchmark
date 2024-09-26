@@ -1,15 +1,21 @@
 
-; 36 occurrences:
+; 42 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/dsdProc.c.ll
 ; cvc5/optimized/nl_model.cpp.ll
-; hermes/optimized/Executor.cpp.ll
-; mitsuba3/optimized/shapegroup.cpp.ll
+; lightgbm/optimized/serial_tree_learner.cpp.ll
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
+; openjdk/optimized/loopPredicate.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
+; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
+; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
+; softposit-rs/optimized/4x7uq85ym1obejw4.ll
+; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll

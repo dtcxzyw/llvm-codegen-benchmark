@@ -1,0 +1,63 @@
+func000000000000003c:                   # @func000000000000003c
+	sub	a1, a1, a2
+	srli	a1, a1, 2
+	srai	a0, a0, 4
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func000000000000003f:                   # @func000000000000003f
+	sub	a1, a1, a2
+	srli	a1, a1, 2
+	srai	a0, a0, 4
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func0000000000000035:                   # @func0000000000000035
+	sub	a1, a1, a2
+	srai	a1, a1, 3
+	srai	a0, a0, 3
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func0000000000000037:                   # @func0000000000000037
+	sub	a1, a1, a2
+	srai	a1, a1, 3
+	srai	a0, a0, 3
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func000000000000003d:                   # @func000000000000003d
+	sub	a1, a1, a2
+	srai	a1, a1, 3
+	srai	a0, a0, 3
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func000000000000002c:                   # @func000000000000002c
+	sub	a1, a1, a2
+	srli	a1, a1, 2
+	srai	a0, a0, 32
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func000000000000002f:                   # @func000000000000002f
+	sub	a1, a1, a2
+	srli	a1, a1, 2
+	srai	a0, a0, 32
+	sub	a0, a0, a1
+	slli	a0, a0, 2
+	ret
+func000000000000003e:                   # @func000000000000003e
+	sub	a1, a1, a2
+	srli	a1, a1, 4
+	srai	a0, a0, 5
+	sub	a0, a0, a1
+	slli	a0, a0, 4
+	ret
+func0000000000000034:                   # @func0000000000000034
+	sub	a1, a1, a2
+	srli	a1, a1, 3
+	srli	a0, a0, 3
+	subw	a0, a0, a1
+	slli	a0, a0, 32
+	ret

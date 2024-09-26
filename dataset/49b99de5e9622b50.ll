@@ -1,0 +1,49 @@
+
+; 1 occurrences:
+; ruby/optimized/time.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000071(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = mul nuw nsw i64 %2, 100
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = mul nuw nsw i64 %2, 3
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; slurm/optimized/cpu_frequency.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = mul nuw nsw i64 %2, 332
+  %4 = icmp eq i64 %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
+; freetype/optimized/winfnt.c.ll
+; postgres/optimized/gindatapage.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = mul nuw nsw i64 %2, 40
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

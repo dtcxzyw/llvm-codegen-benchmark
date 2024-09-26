@@ -1,18 +1,11 @@
 
-; 99 occurrences:
-; abc/optimized/cuddSplit.c.ll
-; abseil-cpp/optimized/container_test.cc.ll
+; 123 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; assimp/optimized/AMFImporter.cpp.ll
-; assimp/optimized/ColladaParser.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
-; assimp/optimized/XGLLoader.cpp.ll
 ; clap-rs/optimized/421wxj3t0b5xgmkw.ll
+; cvc5/optimized/linear_equality.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
-; folly/optimized/HugePages.cpp.ll
-; folly/optimized/JSONSchema.cpp.ll
-; folly/optimized/TestUtil.cpp.ll
-; folly/optimized/Uri.cpp.ll
+; gromacs/optimized/grompp.cpp.ll
 ; grpc/optimized/xds_cluster_resolver.cc.ll
 ; hermes/optimized/JSWeakMapImpl.cpp.ll
 ; hyperscan/optimized/asserts.cpp.ll
@@ -39,29 +32,59 @@
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_groups.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; icu/optimized/smpdtfmt.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/libata-eh.ll
 ; linux/optimized/nf_conntrack_core.ll
+; linux/optimized/rdma.ll
+; llvm/optimized/ArchiveWriter.cpp.ll
+; llvm/optimized/Function.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/MachinePostDominators.cpp.ll
+; llvm/optimized/Module.cpp.ll
+; llvm/optimized/ProfileSummaryBuilder.cpp.ll
+; llvm/optimized/RegAllocFast.cpp.ll
+; llvm/optimized/SampleContextTracker.cpp.ll
+; llvm/optimized/SampleProf.cpp.ll
+; llvm/optimized/SampleProfReader.cpp.ll
+; llvm/optimized/SampleProfWriter.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/SampleProfileMatcher.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/UnwrappedLineParser.cpp.ll
+; llvm/optimized/VPlanHCFGBuilder.cpp.ll
+; luau/optimized/DataFlowGraph.cpp.ll
 ; meshlab/optimized/mesh_document.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; ms-gsl/optimized/span_tests.cpp.ll
-; openssl/optimized/libcrypto-lib-context.ll
-; openssl/optimized/libcrypto-shlib-context.ll
+; openspiel/optimized/tensor_game.cc.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/targetIndex.cpp.ll
 ; php/optimized/zend_builtin_functions.ll
-; protobuf/optimized/message_differencer.cc.ll
-; proxygen/optimized/HTTP2Codec.cpp.ll
-; proxygen/optimized/HTTPHeaders.cpp.ll
-; proxygen/optimized/HTTPMessage.cpp.ll
 ; ring-rs/optimized/1y6av6yno9dk5en7.ll
+; rocksdb/optimized/blob_db_impl.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/db_impl_open.cc.ll
+; rocksdb/optimized/db_impl_secondary.cc.ll
+; rocksdb/optimized/db_impl_write.cc.ll
+; rocksdb/optimized/env_encryption.cc.ll
+; rocksdb/optimized/pessimistic_transaction.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
+; rocksdb/optimized/write_batch.cc.ll
+; rocksdb/optimized/write_unprepared_txn_db.cc.ll
 ; ruby/optimized/symbol.ll
-; spike/optimized/socketif.ll
+; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3Ast.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; yosys/optimized/aiger.ll
 ; yosys/optimized/connwrappers.ll
 ; yosys/optimized/edif.ll
@@ -99,6 +122,7 @@
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/wreduce.ll
 ; yosys/optimized/xaiger.ll
+; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
@@ -107,9 +131,12 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; csmith/optimized/StatementGoto.cpp.ll
+; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/VPlanAnalysis.cpp.ll
 ; qemu/optimized/qom_object.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, ptr %1) #0 {
@@ -119,7 +146,8 @@ entry:
   ret i1 %3
 }
 
-; 49 occurrences:
+; 50 occurrences:
+; cpython/optimized/listobject.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; hyperscan/optimized/asserts.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -174,6 +202,16 @@ define i1 @func0000000000000004(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp ult ptr %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; zstd/optimized/zstdmt_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(ptr %0, ptr %1) #0 {
+entry:
+  %2 = freeze ptr %1
+  %3 = icmp uge ptr %2, %0
   ret i1 %3
 }
 

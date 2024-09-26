@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/connect.c.ll
 ; curl/optimized/libcurl_la-connect.ll
 ; libevent/optimized/buffer.c.ll
+; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, ptr %1, i1 %2) #0 {
 entry:

@@ -1,0 +1,13 @@
+func0000000000000001:                   # @func0000000000000001
+	sext.w	a1, a1
+	beqz	a1, .LBB0_2
+	lui	a1, 1048575
+	addiw	a1, a1, 1023
+	and	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, -11
+	slli	a1, a1, 45
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret

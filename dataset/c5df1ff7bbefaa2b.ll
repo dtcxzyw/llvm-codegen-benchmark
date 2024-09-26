@@ -1,8 +1,17 @@
 
-; 5 occurrences:
+; 14 occurrences:
 ; git/optimized/diff.ll
-; hermes/optimized/escape.cpp.ll
 ; hyperscan/optimized/truffle.c.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; openjdk/optimized/dependencies.ll
+; openjdk/optimized/shenandoahReferenceProcessor.ll
 ; redis/optimized/rax.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind

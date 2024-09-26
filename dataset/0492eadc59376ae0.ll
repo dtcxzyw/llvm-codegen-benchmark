@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/unpack-trees.ll
+; gromacs/optimized/threadaffinity.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; mitsuba3/optimized/rectangle.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll

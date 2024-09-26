@@ -1,0 +1,25 @@
+
+; 13 occurrences:
+; cvc5/optimized/core_solver.cpp.ll
+; cvc5/optimized/extf_solver.cpp.ll
+; cvc5/optimized/relevant_domain.cpp.ll
+; cvc5/optimized/sep_skolem_emp.cpp.ll
+; cvc5/optimized/sygus_extension.cpp.ll
+; cvc5/optimized/transition_inference.cpp.ll
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; nlohmann_json/optimized/unit-conversions.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 1
+  %3 = icmp ugt i8 %2, %0
+  %4 = select i1 %3, i64 16, i64 24
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

@@ -3,12 +3,12 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/decode.c.ll
 ; hwloc/optimized/hwloc-bind.ll
+; libjpeg-turbo/optimized/tjbench.c.ll
 ; lief/optimized/rsa.c.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/text2pcap.c.ll
 ; Function Attrs: nounwind

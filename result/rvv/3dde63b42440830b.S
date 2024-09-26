@@ -1,0 +1,50 @@
+func0000000000000094:                   # @func0000000000000094
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
+	vmsgt.vi	v8, v10, 0
+	vmor.mm	v0, v8, v0
+	ret
+func0000000000000098:                   # @func0000000000000098
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 2
+	vmsne.vi	v8, v10, 2
+	vmor.mm	v0, v8, v0
+	ret
+func000000000000008c:                   # @func000000000000008c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
+	vmsle.vi	v8, v10, 4
+	vmor.mm	v0, v8, v0
+	ret
+func0000000000000082:                   # @func0000000000000082
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v0, v8, v0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 2
+	li	a0, 31
+	vmseq.vx	v8, v10, a0
+	vmor.mm	v0, v8, v0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 3
+	vmsne.vi	v8, v10, 8
+	vmor.mm	v0, v8, v0
+	ret
+func0000000000000010:                   # @func0000000000000010
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 9
+	li	a0, 20
+	vmsgtu.vx	v8, v10, a0
+	vmor.mm	v0, v8, v0
+	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 2
+	vmsle.vi	v8, v10, 0
+	vmor.mm	v0, v8, v0
+	ret

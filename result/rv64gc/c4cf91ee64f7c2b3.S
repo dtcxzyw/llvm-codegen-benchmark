@@ -10,25 +10,25 @@ func0000000000000084:                   # @func0000000000000084
 .LBB1_2:                                # %entry
 	sltu	a0, a1, a0
 	ret
-func0000000000000088:                   # @func0000000000000088
-	bltu	a1, a2, .LBB2_2
+func0000000000000081:                   # @func0000000000000081
+	bltu	a2, a1, .LBB2_2
 	mv	a1, a2
 .LBB2_2:                                # %entry
-	sltu	a0, a0, a1
-	ret
-func0000000000000081:                   # @func0000000000000081
-	bltu	a2, a1, .LBB3_2
-	mv	a1, a2
-.LBB3_2:                                # %entry
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000089:                   # @func0000000000000089
+	bltu	a1, a2, .LBB3_2
+	mv	a1, a2
+.LBB3_2:                                # %entry
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
+	ret
+func0000000000000088:                   # @func0000000000000088
 	bltu	a1, a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:                                # %entry
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
+	sltu	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
 	bltu	a1, a2, .LBB5_2

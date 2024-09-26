@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 20 occurrences:
 ; cmake/optimized/connect.c.ll
 ; curl/optimized/libcurl_la-connect.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
@@ -10,6 +10,9 @@
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/sysrq.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; openjdk/optimized/jfrTypeSet.ll
+; openjdk/optimized/jvmtiEventController.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; protobuf/optimized/time_util.cc.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll

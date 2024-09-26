@@ -1,8 +1,14 @@
 
-; 6 occurrences:
+; 12 occurrences:
+; clamav/optimized/htmlnorm.c.ll
+; clamav/optimized/phishcheck.c.ll
+; gromacs/optimized/gmxfio.cpp.ll
 ; hermes/optimized/SmallPtrSet.cpp.ll
 ; linux/optimized/link.ll
 ; linux/optimized/setup-bus.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SmallPtrSet.cpp.ll
 ; postgres/optimized/slot.ll
 ; qemu/optimized/system_qdev-monitor.c.ll
 ; ruby/optimized/dln.ll

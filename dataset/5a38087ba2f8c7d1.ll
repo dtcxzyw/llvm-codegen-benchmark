@@ -1,0 +1,89 @@
+
+%"class.llvm::Use.2964483" = type { ptr, ptr, ptr, ptr }
+
+; 1 occurrences:
+; openjdk/optimized/jfrEventClassTransformer.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000aa(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 6
+  %4 = icmp sgt i32 %1, 2
+  %5 = select i1 %4, ptr %3, ptr null
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; bullet3/optimized/btMultiBody.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 24
+  %4 = icmp sgt i32 %1, 0
+  %5 = select i1 %4, ptr %3, ptr null
+  %6 = getelementptr nusw float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; bullet3/optimized/btMultiBody.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 24
+  %4 = icmp sgt i32 %1, 0
+  %5 = select i1 %4, ptr %3, ptr null
+  %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; llvm/optimized/Evaluator.cpp.ll
+; luau/optimized/ToString.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000086(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %4 = icmp eq i32 %1, 9
+  %5 = select i1 %4, ptr %3, ptr null
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 13 occurrences:
+; llvm/optimized/CGVTables.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/ConstraintElimination.cpp.ll
+; llvm/optimized/DeadArgumentElimination.cpp.ll
+; llvm/optimized/FunctionAttrs.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IROutliner.cpp.ll
+; llvm/optimized/IndirectBrExpandPass.cpp.ll
+; llvm/optimized/InductiveRangeCheckElimination.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/LowerInvoke.cpp.ll
+; llvm/optimized/TailRecursionElimination.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000092(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -24
+  %4 = icmp ult i32 %1, 11
+  %5 = select i1 %4, ptr %3, ptr null
+  %6 = getelementptr nusw %"class.llvm::Use.2964483", ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000084(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 160
+  %4 = icmp eq i32 %1, 3
+  %5 = select i1 %4, ptr %3, ptr null
+  %6 = getelementptr i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+attributes #0 = { nounwind }

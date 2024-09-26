@@ -20,21 +20,26 @@ func0000000000000082:                   # @func0000000000000082
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000032:                   # @func0000000000000032
-	seqz	a2, a0
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
-	ret
 func0000000000000122:                   # @func0000000000000122
 	sltu	a1, a0, a1
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+func0000000000000030:                   # @func0000000000000030
+	seqz	a2, a0
+	sltu	a0, a1, a0
+	or	a0, a0, a2
+	ret
 func0000000000000038:                   # @func0000000000000038
 	seqz	a2, a0
 	xor	a0, a0, a1
 	snez	a0, a0
+	or	a0, a0, a2
+	ret
+func0000000000000032:                   # @func0000000000000032
+	seqz	a2, a0
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret

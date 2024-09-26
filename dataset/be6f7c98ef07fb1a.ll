@@ -1,0 +1,118 @@
+
+; 107 occurrences:
+; assimp/optimized/ASELoader.cpp.ll
+; bullet3/optimized/poly34.ll
+; darktable/optimized/colorpicker.c.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_channelmixer.c.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_clipping.c.ll
+; darktable/optimized/introspection_colorbalance.c.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colorize.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_exposure.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_graduatednd.c.ll
+; darktable/optimized/introspection_lowlight.c.ll
+; darktable/optimized/introspection_shadhi.c.ll
+; gromacs/optimized/cellsizes.cpp.ll
+; gromacs/optimized/domdec.cpp.ll
+; gromacs/optimized/ewald_utils.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; gromacs/optimized/pbc.cpp.ll
+; gromacs/optimized/sbdsqr.cpp.ll
+; gromacs/optimized/shellfc.cpp.ll
+; gromacs/optimized/slaed6.cpp.ll
+; gromacs/optimized/slarrvx.cpp.ll
+; gromacs/optimized/slasq4.cpp.ll
+; gromacs/optimized/sstebz.cpp.ll
+; gromacs/optimized/sstegr.cpp.ll
+; gromacs/optimized/toppush.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_demo.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; meshlab/optimized/VisibleSet.cpp.ll
+; meshlab/optimized/coordinateframe.cpp.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_mutualglobal.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/levmarmethods.cpp.ll
+; meshlab/optimized/parameters.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/particles.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
+; mitsuba3/optimized/bsplinecurve.cpp.ll
+; mitsuba3/optimized/circular.cpp.ll
+; mitsuba3/optimized/conductor.cpp.ll
+; mitsuba3/optimized/cylinder.cpp.ll
+; mitsuba3/optimized/dielectric.cpp.ll
+; mitsuba3/optimized/direct.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/measured_polarized.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/path.cpp.ll
+; mitsuba3/optimized/pplastic.cpp.ll
+; mitsuba3/optimized/retarder.cpp.ll
+; mitsuba3/optimized/roughconductor.cpp.ll
+; mitsuba3/optimized/scene.cpp.ll
+; mitsuba3/optimized/sphere.cpp.ll
+; mitsuba3/optimized/stokes.cpp.ll
+; mitsuba3/optimized/volpath.cpp.ll
+; msdfgen/optimized/render-sdf.cpp.ll
+; msdfgen/optimized/save-png.cpp.ll
+; nori/optimized/chi2test.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nori/optimized/warptest.cpp.ll
+; nuklear/optimized/unity.c.ll
+; ocio/optimized/GradingBSplineCurve.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/color_lab.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; opencv/optimized/miniflann.cpp.ll
+; opencv/optimized/motion_stabilizing.cpp.ll
+; opencv/optimized/objects_associator.cpp.ll
+; opencv/optimized/polar_transforms.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; opencv/optimized/trackerCSRTUtils.cpp.ll
+; opencv/optimized/tracker_goturn.cpp.ll
+; opencv/optimized/types.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
+; openjdk/optimized/hb-font.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-var.ll
+; openusd/optimized/range2f.cpp.ll
+; openusd/optimized/range3f.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
+; raylib/optimized/rcore.c.ll
+; recastnavigation/optimized/DetourCrowd.cpp.ll
+; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; recastnavigation/optimized/RecastArea.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = fmul float %2, 2.000000e+00
+  %4 = select i1 %0, float %1, float %3
+  ret float %4
+}
+
+attributes #0 = { nounwind }

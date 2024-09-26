@@ -1,0 +1,129 @@
+
+; 117 occurrences:
+; abseil-cpp/optimized/pcg_engine_test.cc.ll
+; abseil-cpp/optimized/symbolize.cc.ll
+; bdwgc/optimized/gc.c.ll
+; cpython/optimized/setobject.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; grpc/optimized/executor.cc.ll
+; grpc/optimized/memory_quota.cc.ll
+; grpc/optimized/timer.cc.ll
+; grpc/optimized/timer_generic.cc.ll
+; linux/optimized/alternative.ll
+; linux/optimized/hda_intel.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/InstrEmitter.cpp.ll
+; llvm/optimized/LegalizeFloatTypes.cpp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; llvm/optimized/LegalizeTypes.cpp.ll
+; llvm/optimized/LegalizeTypesGeneric.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
+; llvm/optimized/StatepointLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luau/optimized/AstQuery.cpp.ll
+; luau/optimized/Autocomplete.cpp.ll
+; luau/optimized/BuiltinDefinitions.cpp.ll
+; luau/optimized/Builtins.cpp.ll
+; luau/optimized/Compiler.cpp.ll
+; luau/optimized/Conformance.test.cpp.ll
+; luau/optimized/ConstantFolding.cpp.ll
+; luau/optimized/Constraint.cpp.ll
+; luau/optimized/ConstraintGenerator.cpp.ll
+; luau/optimized/ConstraintSolver.cpp.ll
+; luau/optimized/CostModel.cpp.ll
+; luau/optimized/DataFlowGraph.cpp.ll
+; luau/optimized/DcrLogger.cpp.ll
+; luau/optimized/Differ.cpp.ll
+; luau/optimized/Error.cpp.ll
+; luau/optimized/Frontend.cpp.ll
+; luau/optimized/Generalization.cpp.ll
+; luau/optimized/Generalization.test.cpp.ll
+; luau/optimized/Instantiation.cpp.ll
+; luau/optimized/Instantiation2.cpp.ll
+; luau/optimized/Instantiation2.test.cpp.ll
+; luau/optimized/LValue.test.cpp.ll
+; luau/optimized/Linter.cpp.ll
+; luau/optimized/NonStrictTypeChecker.cpp.ll
+; luau/optimized/Normalize.cpp.ll
+; luau/optimized/Normalize.test.cpp.ll
+; luau/optimized/OverloadResolution.cpp.ll
+; luau/optimized/Parser.cpp.ll
+; luau/optimized/Quantify.cpp.ll
+; luau/optimized/RequireTracer.cpp.ll
+; luau/optimized/RequireTracer.test.cpp.ll
+; luau/optimized/Scope.cpp.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Substitution.cpp.ll
+; luau/optimized/Subtyping.cpp.ll
+; luau/optimized/Subtyping.test.cpp.ll
+; luau/optimized/TableLiteralInference.cpp.ll
+; luau/optimized/TableShape.cpp.ll
+; luau/optimized/ToString.cpp.ll
+; luau/optimized/TopoSortStatements.cpp.ll
+; luau/optimized/TxnLog.cpp.ll
+; luau/optimized/Type.cpp.ll
+; luau/optimized/TypeFamily.cpp.ll
+; luau/optimized/TypeFamilyReductionGuesser.cpp.ll
+; luau/optimized/TypeInfer.cpp.ll
+; luau/optimized/TypeInfer.functions.test.cpp.ll
+; luau/optimized/TypeInfer.test.cpp.ll
+; luau/optimized/TypePath.cpp.ll
+; luau/optimized/TypeUtils.cpp.ll
+; luau/optimized/TypeVar.test.cpp.ll
+; luau/optimized/Types.cpp.ll
+; luau/optimized/Unifier.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
+; luau/optimized/ValueTracking.cpp.ll
+; luau/optimized/lmathlib.cpp.ll
+; minetest/optimized/noise.cpp.ll
+; mitsuba3/optimized/independent.cpp.ll
+; mitsuba3/optimized/multijitter.cpp.ll
+; mitsuba3/optimized/orthogonal.cpp.ll
+; mitsuba3/optimized/qmc.cpp.ll
+; mitsuba3/optimized/stratified.cpp.ll
+; nori/optimized/chi2test.cpp.ll
+; nori/optimized/independent.cpp.ll
+; nori/optimized/ttest.cpp.ll
+; nori/optimized/warptest.cpp.ll
+; openmpi/optimized/tm_mt.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/filters.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lightsamplers.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samplers.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; pcg-cpp/optimized/codebook.cpp.ll
+; pcg-cpp/optimized/cppref-sample.cpp.ll
+; pcg-cpp/optimized/make-partytrick.cpp.ll
+; pcg-cpp/optimized/pcg-demo.cpp.ll
+; pcg-cpp/optimized/use-partytrick.cpp.ll
+; php/optimized/zend_jit.ll
+; protobuf/optimized/lexer.cc.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
+; rand-rs/optimized/3wentbx1vl0iwznb.ll
+; raylib/optimized/rcore.c.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; ring-rs/optimized/1vabw27ldssjsz66.ll
+; soc-simulator/optimized/sim_mycpu.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 27
+  %2 = lshr i64 %0, 45
+  %3 = xor i64 %2, %1
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; libevent/optimized/event.c.ll
+; opencv/optimized/persistence.cpp.ll
 ; php/optimized/cgi_main.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind

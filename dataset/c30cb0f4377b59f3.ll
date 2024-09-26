@@ -1,5 +1,9 @@
 
-; 66 occurrences:
+; 71 occurrences:
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/RewriteModernObjC.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/SemaStmtAttr.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
 ; nlohmann_json/optimized/unit-allocator.cpp.ll
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
@@ -65,6 +69,7 @@
 ; openssl/optimized/libcrypto-shlib-encoder_meth.ll
 ; openssl/optimized/libcrypto-shlib-evp_fetch.ll
 ; openssl/optimized/libcrypto-shlib-store_meth.ll
+; php/optimized/logical_filters.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, ptr %2) #0 {
@@ -75,12 +80,40 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 33 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/mcast.ll
-; wireshark/optimized/packet-llc.c.ll
+; msgpack/optimized/asio_send_recv.cpp.ll
+; msgpack/optimized/asio_send_recv_zlib.cpp.ll
+; openjdk/optimized/loopnode.ll
+; spike/optimized/socketif.ll
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/chat_room.cpp.ll
+; yalantinglibs/optimized/client.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
+; yalantinglibs/optimized/concurrent_clients.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/file_client.cpp.ll
+; yalantinglibs/optimized/file_server.cpp.ll
+; yalantinglibs/optimized/rpc_service.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, ptr %2) #0 {
 entry:

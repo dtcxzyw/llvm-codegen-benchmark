@@ -12,8 +12,9 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libevent/optimized/buffer.c.ll
+; opencv/optimized/featureselect.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, ptr %1, i1 %2) #0 {
 entry:

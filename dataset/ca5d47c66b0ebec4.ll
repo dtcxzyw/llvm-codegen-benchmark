@@ -1,8 +1,15 @@
 
-; 3 occurrences:
+; 10 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
-; linux/optimized/tg3.ll
-; php/optimized/php_pcre.ll
+; hdf5/optimized/H5FDint.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/BitcodeWriterPass.cpp.ll
+; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
+; openjdk/optimized/compilerDefinitions.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

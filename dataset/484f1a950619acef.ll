@@ -1,0 +1,124 @@
+
+; 113 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/abcSymm.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/ifSat.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdLut.c.ll
+; abc/optimized/sfmSat.c.ll
+; abc/optimized/utilIsop.c.ll
+; abc/optimized/wlcBlast.c.ll
+; abseil-cpp/optimized/duration.cc.ll
+; abseil-cpp/optimized/time.cc.ll
+; arrow/optimized/basic_decimal.cc.ll
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; clamav/optimized/readdb.c.ll
+; cmake/optimized/zstd_opt.c.ll
+; cpython/optimized/crt.ll
+; cpython/optimized/obmalloc.ll
+; cvc5/optimized/theory_bv.cpp.ll
+; cvc5/optimized/theory_bv_rewriter.cpp.ll
+; folly/optimized/Conv.cpp.ll
+; freetype/optimized/pshinter.c.ll
+; graphviz/optimized/textspan_lut.c.ll
+; gromacs/optimized/pdb2gmx.cpp.ll
+; gromacs/optimized/tng_io.c.ll
+; hyperscan/optimized/compiler.cpp.ll
+; libquic/optimized/time.cc.ll
+; libwebp/optimized/frame_dec.c.ll
+; linux/optimized/crash_core.ll
+; linux/optimized/memory.ll
+; linux/optimized/mmap.ll
+; linux/optimized/nf_nat_proto.ll
+; linux/optimized/nfs4proc.ll
+; linux/optimized/quirks.ll
+; linux/optimized/shm.ll
+; linux/optimized/udp.ll
+; linux/optimized/uhci-hcd.ll
+; linux/optimized/uncore_snbep.ll
+; linux/optimized/xprtsock.ll
+; llvm/optimized/AArch64AsmPrinter.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64TargetMachine.cpp.ll
+; llvm/optimized/AArch64TargetStreamer.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/CallLowering.cpp.ll
+; llvm/optimized/CommentSema.cpp.ll
+; llvm/optimized/IROutliner.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
+; llvm/optimized/Mangle.cpp.ll
+; llvm/optimized/PatternParser.cpp.ll
+; llvm/optimized/RISCVTargetMachine.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/RetainSummaryManager.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/Sanitizers.cpp.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
+; llvm/optimized/X86ExpandPseudo.cpp.ll
+; llvm/optimized/X86FixupLEAs.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86TargetMachine.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; mimalloc/optimized/stats.c.ll
+; mitsuba3/optimized/assembler.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/obj.cpp.ll
+; mitsuba3/optimized/serialized.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; opencv/optimized/shapedescr.cpp.ll
+; openexr/optimized/chunk.c.ll
+; openjdk/optimized/memnode.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
+; openssl/optimized/libssl-lib-statem_clnt.ll
+; openssl/optimized/libssl-shlib-statem_clnt.ll
+; openusd/optimized/clip.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; postgres/optimized/aclchk.ll
+; postgres/optimized/execExpr.ll
+; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; quantlib/optimized/qdplusamericanengine.ll
+; quickjs/optimized/libbf.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; rustfmt-rs/optimized/2tgwtv970e5remme.ll
+; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
+; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; tokio-rs/optimized/1k577qo9p6sw2dlc.ll
+; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
+; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; wireshark/optimized/packet-iax2.c.ll
+; zfp/optimized/zfp.c.ll
+; zstd/optimized/zstd_opt.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 12, i64 24
+  %4 = select i1 %0, i64 %3, i64 %1
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,120 @@
+
+; 109 occurrences:
+; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; abseil-cpp/optimized/distribution_test_util.cc.ll
+; abseil-cpp/optimized/distributions_test.cc.ll
+; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; arrow/optimized/tdigest.cc.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; cpython/optimized/complexobject.ll
+; darktable/optimized/NefDecoder.cpp.ll
+; darktable/optimized/introspection_basicadj.c.ll
+; darktable/optimized/introspection_levels.c.ll
+; darktable/optimized/introspection_rgblevels.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/navigation.c.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; faiss/optimized/Clustering.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; graphviz/optimized/pack.c.ll
+; gromacs/optimized/biasstate.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
+; gromacs/optimized/expfit.cpp.ll
+; gromacs/optimized/gmx_dielectric.cpp.ll
+; gromacs/optimized/gmx_dipoles.cpp.ll
+; gromacs/optimized/gmx_wham.cpp.ll
+; gromacs/optimized/muParser.cpp.ll
+; meshlab/optimized/Factor.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/eqhandle.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; minetest/optimized/voxelalgorithms.cpp.ll
+; mitsuba3/optimized/cylinder.cpp.ll
+; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
+; msdfgen/optimized/msdfgen.cpp.ll
+; nori/optimized/chi2test.cpp.ll
+; nori/optimized/warptest.cpp.ll
+; ocio/optimized/CanonCameras.cpp.ll
+; opencv/optimized/colorspace.cpp.ll
+; opencv/optimized/dpm_feature.cpp.ll
+; opencv/optimized/hough.cpp.ll
+; opencv/optimized/imagelogpolprojection.cpp.ll
+; opencv/optimized/lsd.cpp.ll
+; opencv/optimized/optical_flow_evaluation.cpp.ll
+; opencv/optimized/svm.cpp.ll
+; opencv/optimized/trackerCSRTUtils.cpp.ll
+; openjdk/optimized/cmsgamma.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
+; openvdb/optimized/Transform.cc.ll
+; postgres/optimized/sampling.ll
+; proj/optimized/4D_api.cpp.ll
+; proj/optimized/conversion.cpp.ll
+; proj/optimized/geodesic.c.ll
+; proj/optimized/gn_sinu.cpp.ll
+; proj/optimized/labrd.cpp.ll
+; proj/optimized/lagrng.cpp.ll
+; proj/optimized/mod_ster.cpp.ll
+; proj/optimized/omerc.cpp.ll
+; proj/optimized/som.cpp.ll
+; proj/optimized/somerc.cpp.ll
+; proj/optimized/stere.cpp.ll
+; proj/optimized/tmerc.cpp.ll
+; quantlib/optimized/americanpayoffathit.ll
+; quantlib/optimized/amortizingfixedratebond.ll
+; quantlib/optimized/beta.ll
+; quantlib/optimized/bivariatestudenttdistribution.ll
+; quantlib/optimized/bjerksundstenslandengine.ll
+; quantlib/optimized/blackformula.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/continuousarithmeticasianlevyengine.ll
+; quantlib/optimized/couponpricer.ll
+; quantlib/optimized/coxingersollrossprocess.ll
+; quantlib/optimized/factorreduction.ll
+; quantlib/optimized/filonintegral.ll
+; quantlib/optimized/forwardforwardmappings.ll
+; quantlib/optimized/forwardrateagreement.ll
+; quantlib/optimized/g2.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/generalstatistics.ll
+; quantlib/optimized/hestonprocess.ll
+; quantlib/optimized/hestonslvprocess.ll
+; quantlib/optimized/iborcoupon.ll
+; quantlib/optimized/iborindex.ll
+; quantlib/optimized/incrementalstatistics.ll
+; quantlib/optimized/interestrate.ll
+; quantlib/optimized/liborforwardmodel.ll
+; quantlib/optimized/lmmcurvestate.ll
+; quantlib/optimized/mchullwhiteengine.ll
+; quantlib/optimized/multistepperiodcapletswaptions.ll
+; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
+; quantlib/optimized/overnightindexedcouponpricer.ll
+; quantlib/optimized/overnightindexfuture.ll
+; quantlib/optimized/ratehelpers.ll
+; quantlib/optimized/squarerootandersen.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quantlib/optimized/swapforwardmappings.ll
+; quantlib/optimized/swaptioncfs.ll
+; raylib/optimized/raudio.c.ll
+; ruby/optimized/numeric.ll
+; sqlite/optimized/sqlite3.ll
+; stat-rs/optimized/1957ju1ns40544yq.ll
+; stat-rs/optimized/350eqnsjcoc7kbdy.ll
+; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; stat-rs/optimized/n94tvlll45kxl7r.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; stb/optimized/stb_vorbis.c.ll
+; stockfish/optimized/search.ll
+; stockfish/optimized/timeman.ll
+; sundials/optimized/arkode_interp.c.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, double %1) #0 {
+entry:
+  %2 = fadd double %1, 1.000000e+00
+  %3 = fdiv double %2, %0
+  ret double %3
+}
+
+attributes #0 = { nounwind }

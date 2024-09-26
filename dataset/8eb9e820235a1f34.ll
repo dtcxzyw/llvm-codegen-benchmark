@@ -1,17 +1,21 @@
 
-; 15 occurrences:
+; 19 occurrences:
+; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/mvcUtils.c.ll
-; assimp/optimized/FixNormalsStep.cpp.ll
+; abc/optimized/wlcBlast.c.ll
 ; git/optimized/replay.ll
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mii.ll
+; llvm/optimized/InstCombineCasts.cpp.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/MachineBlockPlacement.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
+; opencv/optimized/run_length_morphology.cpp.ll
+; openjdk/optimized/vtableStubs.ll
 ; openssl/optimized/openssl-bin-cmp.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; php/optimized/pcre2_jit_compile.ll
+; openusd/optimized/pred_common.c.ll
 ; postgres/optimized/copyfromparse.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll

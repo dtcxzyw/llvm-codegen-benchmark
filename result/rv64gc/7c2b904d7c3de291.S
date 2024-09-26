@@ -1,8 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	not	a2, a2
-	slliw	a2, a2, 9
-	lui	a3, 524288
-	and	a2, a2, a3
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret

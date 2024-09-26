@@ -1,19 +1,26 @@
 
-; 14 occurrences:
-; git/optimized/merge-recursive.ll
+; 21 occurrences:
+; glslang/optimized/PpScanner.cpp.ll
+; gromacs/optimized/tng_compress.c.ll
 ; grpc/optimized/flow_control.cc.ll
 ; hyperscan/optimized/ng_asserts.cpp.ll
 ; libzmq/optimized/null_mechanism.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/ParseDecl.cpp.ll
+; llvm/optimized/VPlanRecipes.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dtgevc.c.ll
+; openjdk/optimized/lowMemoryDetector.ll
 ; php/optimized/logical_filters.ll
 ; postgres/optimized/pgoutput.ll
 ; ruby/optimized/prism.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
-; z3/optimized/spacer_util.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

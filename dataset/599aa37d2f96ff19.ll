@@ -1,0 +1,559 @@
+
+; 393 occurrences:
+; abc/optimized/aigPart.c.ll
+; abc/optimized/fraInd.c.ll
+; actix-rs/optimized/d7z2ueos8qkfuul.ll
+; clamav/optimized/asn1.c.ll
+; cmake/optimized/hostip.c.ll
+; cpython/optimized/codeobject.ll
+; cpython/optimized/dictobject.ll
+; cpython/optimized/typeobject.ll
+; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-hostip.ll
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; linux/optimized/coredump.ll
+; linux/optimized/dm-table.ll
+; linux/optimized/ipv6_sockglue.ll
+; linux/optimized/mremap.ll
+; linux/optimized/nexthop.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/oom_kill.ll
+; linux/optimized/slab_common.ll
+; linux/optimized/tx.ll
+; llvm/optimized/CGException.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
+; llvm/optimized/CodeGenPGO.cpp.ll
+; llvm/optimized/Compiler.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/NSAPI.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaAccess.cpp.ll
+; llvm/optimized/SemaExceptionSpec.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; minetest/optimized/CAttributes.cpp.ll
+; minetest/optimized/COpenGLSLMaterialRenderer.cpp.ll
+; minetest/optimized/MaterialRenderer.cpp.ll
+; mitsuba3/optimized/codeholder.cpp.ll
+; mitsuba3/optimized/constpool.cpp.ll
+; mitsuba3/optimized/jitallocator.cpp.ll
+; openjdk/optimized/doCall.ll
+; openjdk/optimized/escape.ll
+; openjdk/optimized/reg_split.ll
+; openjdk/optimized/xNMethod.ll
+; openssl/optimized/libcrypto-lib-x509_vfy.ll
+; openssl/optimized/libcrypto-shlib-x509_vfy.ll
+; openusd/optimized/AVIFImage.cpp.ll
+; openusd/optimized/OpenEXRImage.cpp.ll
+; openusd/optimized/TestPcpDynamicFileFormatPlugin.cpp.ll
+; openusd/optimized/TestSdfNoAssetFileFormat.cpp.ll
+; openusd/optimized/TestSdrRegistry_oslParserPlugin.cpp.ll
+; openusd/optimized/TestUsdProceduralExternalAssetsFileFormatPlugin.cpp.ll
+; openusd/optimized/abstractData.cpp.ll
+; openusd/optimized/animMapper.cpp.ll
+; openusd/optimized/assetLocalization.cpp.ll
+; openusd/optimized/assetLocalizationDelegate.cpp.ll
+; openusd/optimized/assetPathResolver.cpp.ll
+; openusd/optimized/assetPreviewsAPI.cpp.ll
+; openusd/optimized/attribute.cpp.ll
+; openusd/optimized/attributeSpec.cpp.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/basisCurvesAdapter.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; openusd/optimized/camera.cpp.ll
+; openusd/optimized/cameraAdapter.cpp.ll
+; openusd/optimized/changeList.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/children.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
+; openusd/optimized/clip.cpp.ll
+; openusd/optimized/clipSet.cpp.ll
+; openusd/optimized/clipSetDefinition.cpp.ll
+; openusd/optimized/clipsAPI.cpp.ll
+; openusd/optimized/collectionAPI.cpp.ll
+; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/collectionPredicateLibrary.cpp.ll
+; openusd/optimized/composeSite.cpp.ll
+; openusd/optimized/connectionListEditor.cpp.ll
+; openusd/optimized/constraintTarget.cpp.ll
+; openusd/optimized/coordSys.cpp.ll
+; openusd/optimized/copyUtils.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/curves.cpp.ll
+; openusd/optimized/data.cpp.ll
+; openusd/optimized/dataSource.cpp.ll
+; openusd/optimized/dataSourceAttribute.cpp.ll
+; openusd/optimized/dataSourceHash.cpp.ll
+; openusd/optimized/dataSourceLegacyPrim.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/dataSourceMaterialNetworkInterface.cpp.ll
+; openusd/optimized/dataSourcePrimvars.cpp.ll
+; openusd/optimized/dataSourceRenderPrims.cpp.ll
+; openusd/optimized/dataSourceStage.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/dependencies.cpp.ll
+; openusd/optimized/dictionary.cpp.ll
+; openusd/optimized/diff.cpp.ll
+; openusd/optimized/domeLight_1Adapter.cpp.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
+; openusd/optimized/drawModeStandin.cpp.ll
+; openusd/optimized/dynamicFileFormatContext.cpp.ll
+; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
+; openusd/optimized/engine.cpp.ll
+; openusd/optimized/evalUtils.cpp.ll
+; openusd/optimized/expressionVariables.cpp.ll
+; openusd/optimized/extComputation.cpp.ll
+; openusd/optimized/extComputationContextInternal.cpp.ll
+; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
+; openusd/optimized/extComputationUtils.cpp.ll
+; openusd/optimized/field3dAssetAdapter.cpp.ll
+; openusd/optimized/fieldAdapter.cpp.ll
+; openusd/optimized/fileIO.cpp.ll
+; openusd/optimized/fileIO_Common.cpp.ll
+; openusd/optimized/flattenUtils.cpp.ll
+; openusd/optimized/generativeProceduralAdapter.cpp.ll
+; openusd/optimized/generativeProceduralFilteringSceneIndex.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/glslfx.cpp.ll
+; openusd/optimized/glslfxConfig.cpp.ll
+; openusd/optimized/glslfxResourceLayout.cpp.ll
+; openusd/optimized/gprimAdapter.cpp.ll
+; openusd/optimized/imageShader.cpp.ll
+; openusd/optimized/imageable.cpp.ll
+; openusd/optimized/inbetweenShape.cpp.ll
+; openusd/optimized/input.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/instancing.cpp.ll
+; openusd/optimized/interpolators.cpp.ll
+; openusd/optimized/introspection.cpp.ll
+; openusd/optimized/keyFrame.cpp.ll
+; openusd/optimized/keyFrameUtils.cpp.ll
+; openusd/optimized/layer.cpp.ll
+; openusd/optimized/layerRelocatesEditBuilder.cpp.ll
+; openusd/optimized/layerStack.cpp.ll
+; openusd/optimized/lightAPIAdapter.cpp.ll
+; openusd/optimized/lightAdapter.cpp.ll
+; openusd/optimized/lightFilterAdapter.cpp.ll
+; openusd/optimized/lightLinkingSceneIndex.cpp.ll
+; openusd/optimized/lightListAPI.cpp.ll
+; openusd/optimized/listAPI.cpp.ll
+; openusd/optimized/listOp.cpp.ll
+; openusd/optimized/localizeAsset.cpp.ll
+; openusd/optimized/mapEditor.cpp.ll
+; openusd/optimized/mapFunction.cpp.ll
+; openusd/optimized/material.cpp.ll
+; openusd/optimized/materialAdapter.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/materialNetwork2Interface.cpp.ll
+; openusd/optimized/materialParamUtils.cpp.ll
+; openusd/optimized/meshAdapter.cpp.ll
+; openusd/optimized/metrics.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
+; openusd/optimized/nodeDefAPI.cpp.ll
+; openusd/optimized/nurbsCurvesAdapter.cpp.ll
+; openusd/optimized/object.cpp.ll
+; openusd/optimized/openvdbAssetAdapter.cpp.ll
+; openusd/optimized/output.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/parserPlugin.cpp.ll
+; openusd/optimized/parserValueContext.cpp.ll
+; openusd/optimized/pathExpression.cpp.ll
+; openusd/optimized/pathPattern.cpp.ll
+; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/pipeline.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/pointsAdapter.cpp.ll
+; openusd/optimized/predicateExpression.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/primCompositionQuery.cpp.ll
+; openusd/optimized/primDefinition.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; openusd/optimized/primSpec.cpp.ll
+; openusd/optimized/primvar.cpp.ll
+; openusd/optimized/primvarSchema.cpp.ll
+; openusd/optimized/property.cpp.ll
+; openusd/optimized/propertyIndex.cpp.ll
+; openusd/optimized/propertySpec.cpp.ll
+; openusd/optimized/proxyTypes.cpp.ll
+; openusd/optimized/pxrDisplayFilterAdapter.cpp.ll
+; openusd/optimized/pxrIntegratorAdapter.cpp.ll
+; openusd/optimized/pxrRenderTerminalHelper.cpp.ll
+; openusd/optimized/pxrSampleFilterAdapter.cpp.ll
+; openusd/optimized/reference.cpp.ll
+; openusd/optimized/references.cpp.ll
+; openusd/optimized/relationshipSpec.cpp.ll
+; openusd/optimized/renderDelegate.cpp.ll
+; openusd/optimized/renderPassState.cpp.ll
+; openusd/optimized/renderSettings.cpp.ll
+; openusd/optimized/renderSettingsAdapter.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/resolverContextBinder.cpp.ll
+; openusd/optimized/resolverScopedCache.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
+; openusd/optimized/samplingUtils.cpp.ll
+; openusd/optimized/sceneDelegate.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/schemaBase.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/sdfdump.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; openusd/optimized/settings.cpp.ll
+; openusd/optimized/shader.cpp.ll
+; openusd/optimized/shaderDefUtils.cpp.ll
+; openusd/optimized/shaderProperty.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/sparseValueWriter.cpp.ll
+; openusd/optimized/spec.cpp.ll
+; openusd/optimized/spline.cpp.ll
+; openusd/optimized/spline_KeyFrames.cpp.ll
+; openusd/optimized/stitch.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/subLayerListEditor.cpp.ll
+; openusd/optimized/subset.cpp.ll
+; openusd/optimized/targetIndex.cpp.ll
+; openusd/optimized/testHdBufferSourceEmptyVal.cpp.ll
+; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
+; openusd/optimized/testHdCommand.cpp.ll
+; openusd/optimized/testHdDataSource.cpp.ll
+; openusd/optimized/testHdExtComputationUtils.cpp.ll
+; openusd/optimized/testHdSceneIndex.cpp.ll
+; openusd/optimized/testHdTimeSampleArray.cpp.ll
+; openusd/optimized/testHdsiPinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/testHioAvif.cpp.ll
+; openusd/optimized/testHioImage.cpp.ll
+; openusd/optimized/testPcpHardToReach.cpp.ll
+; openusd/optimized/testSdfAttributeBlocking.cpp.ll
+; openusd/optimized/testSdfHardToReach.cpp.ll
+; openusd/optimized/testSdfMetaDataPlugInfo.cpp.ll
+; openusd/optimized/testSdfPathExpression.cpp.ll
+; openusd/optimized/testSdfPredicateExpression.cpp.ll
+; openusd/optimized/testTsThreadedCOW.cpp.ll
+; openusd/optimized/testTs_HardToReach.cpp.ll
+; openusd/optimized/testUsdAttributeBlocking.cpp.ll
+; openusd/optimized/testUsdAttributeInterpolationCpp.cpp.ll
+; openusd/optimized/testUsdCreateAttributeCpp.cpp.ll
+; openusd/optimized/testUsdGeomCreateAttribute.cpp.ll
+; openusd/optimized/testUsdHardToReach.cpp.ll
+; openusd/optimized/testUsdImagingDataSourceAttribute.cpp.ll
+; openusd/optimized/testUsdImagingDelegate.cpp.ll
+; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
+; openusd/optimized/testUsdImagingMaterialBinding.cpp.ll
+; openusd/optimized/testUsdImagingRerootingSceneIndex.cpp.ll
+; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
+; openusd/optimized/testUsdInstancingCpp.cpp.ll
+; openusd/optimized/testUsdMetadata.cpp.ll
+; openusd/optimized/testUsdResolveTarget.cpp.ll
+; openusd/optimized/testUsdSchemaRegistryCpp.cpp.ll
+; openusd/optimized/testUsdTemplatedIO.cpp.ll
+; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
+; openusd/optimized/testUsdUtilsStitch.cpp.ll
+; openusd/optimized/testVtCpp.cpp.ll
+; openusd/optimized/textFileFormat.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/textParserContext.cpp.ll
+; openusd/optimized/textParserHelpers.cpp.ll
+; openusd/optimized/timeSampleArray.cpp.ll
+; openusd/optimized/tsTest_TsEvaluator.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestDelegate.cpp.ll
+; openusd/optimized/unitTestHelper.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
+; openusd/optimized/usdtree.cpp.ll
+; openusd/optimized/usdzPackage.cpp.ll
+; openusd/optimized/value.cpp.ll
+; openusd/optimized/valueTypeRegistry.cpp.ll
+; openusd/optimized/valueUtils.cpp.ll
+; openusd/optimized/variableExpression.cpp.ll
+; openusd/optimized/variableExpressionImpl.cpp.ll
+; openusd/optimized/variantSpec.cpp.ll
+; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
+; openusd/optimized/vtBufferSource.cpp.ll
+; openusd/optimized/xformCommonAPI.cpp.ll
+; openusd/optimized/xformOp.cpp.ll
+; openusd/optimized/xformable.cpp.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/parse.ll
+; ruby/optimized/ripper.ll
+; slurm/optimized/job_mgr.ll
+; wireshark/optimized/about_dialog.cpp.ll
+; wireshark/optimized/additional_toolbar.cpp.ll
+; wireshark/optimized/astringlist_list_model.cpp.ll
+; wireshark/optimized/bluetooth_att_server_attributes_dialog.cpp.ll
+; wireshark/optimized/bluetooth_device_dialog.cpp.ll
+; wireshark/optimized/bluetooth_devices_dialog.cpp.ll
+; wireshark/optimized/bluetooth_hci_summary_dialog.cpp.ll
+; wireshark/optimized/byte_view_text.cpp.ll
+; wireshark/optimized/capture_file_dialog.cpp.ll
+; wireshark/optimized/capture_info_dialog.cpp.ll
+; wireshark/optimized/color_utils.cpp.ll
+; wireshark/optimized/coloring_rules_model.cpp.ll
+; wireshark/optimized/copy_from_profile_button.cpp.ll
+; wireshark/optimized/credentials_model.cpp.ll
+; wireshark/optimized/decode_as_delegate.cpp.ll
+; wireshark/optimized/decode_as_dialog.cpp.ll
+; wireshark/optimized/decode_as_model.cpp.ll
+; wireshark/optimized/display_filter_expression_dialog.cpp.ll
+; wireshark/optimized/dissector_tables_model.cpp.ll
+; wireshark/optimized/enabled_protocols_model.cpp.ll
+; wireshark/optimized/expert_info_dialog.cpp.ll
+; wireshark/optimized/expert_info_model.cpp.ll
+; wireshark/optimized/expert_info_proxy_model.cpp.ll
+; wireshark/optimized/export_objects_model.cpp.ll
+; wireshark/optimized/extcap_argument_multiselect.cpp.ll
+; wireshark/optimized/extcap_options_dialog.cpp.ll
+; wireshark/optimized/fileset_entry_model.cpp.ll
+; wireshark/optimized/filter_action.cpp.ll
+; wireshark/optimized/filter_dialog.cpp.ll
+; wireshark/optimized/funnel_statistics.cpp.ll
+; wireshark/optimized/funnel_string_dialog.cpp.ll
+; wireshark/optimized/iax2_analysis_dialog.cpp.ll
+; wireshark/optimized/info_proxy_model.cpp.ll
+; wireshark/optimized/interface_frame.cpp.ll
+; wireshark/optimized/interface_sort_filter_model.cpp.ll
+; wireshark/optimized/interface_toolbar.cpp.ll
+; wireshark/optimized/interface_tree_cache_model.cpp.ll
+; wireshark/optimized/io_graph_dialog.cpp.ll
+; wireshark/optimized/label_stack.cpp.ll
+; wireshark/optimized/lte_mac_statistics_dialog.cpp.ll
+; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
+; wireshark/optimized/lte_rlc_statistics_dialog.cpp.ll
+; wireshark/optimized/main_application.cpp.ll
+; wireshark/optimized/main_window.cpp.ll
+; wireshark/optimized/main_window_layout.cpp.ll
+; wireshark/optimized/manage_interfaces_dialog.cpp.ll
+; wireshark/optimized/manuf_table_model.cpp.ll
+; wireshark/optimized/multicast_statistics_dialog.cpp.ll
+; wireshark/optimized/packet_diagram.cpp.ll
+; wireshark/optimized/packet_dialog.cpp.ll
+; wireshark/optimized/packet_list.cpp.ll
+; wireshark/optimized/packet_list_model.cpp.ll
+; wireshark/optimized/pref_models.cpp.ll
+; wireshark/optimized/preferences_dialog.cpp.ll
+; wireshark/optimized/profile_model.cpp.ll
+; wireshark/optimized/proto_node.cpp.ll
+; wireshark/optimized/proto_tree.cpp.ll
+; wireshark/optimized/protocol_hierarchy_dialog.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; wireshark/optimized/qt_ui_utils.cpp.ll
+; wireshark/optimized/resolved_addresses_dialog.cpp.ll
+; wireshark/optimized/resolved_addresses_view.cpp.ll
+; wireshark/optimized/response_time_delay_dialog.cpp.ll
+; wireshark/optimized/rpc_service_response_time_dialog.cpp.ll
+; wireshark/optimized/rtp_analysis_dialog.cpp.ll
+; wireshark/optimized/rtp_audio_stream.cpp.ll
+; wireshark/optimized/rtp_player_dialog.cpp.ll
+; wireshark/optimized/rtp_stream_dialog.cpp.ll
+; wireshark/optimized/sequence_diagram.cpp.ll
+; wireshark/optimized/sequence_dialog.cpp.ll
+; wireshark/optimized/service_response_time_dialog.cpp.ll
+; wireshark/optimized/simple_dialog.cpp.ll
+; wireshark/optimized/simple_statistics_dialog.cpp.ll
+; wireshark/optimized/sparkline_delegate.cpp.ll
+; wireshark/optimized/stock_icon.cpp.ll
+; wireshark/optimized/stock_icon_tool_button.cpp.ll
+; wireshark/optimized/supported_protocols_model.cpp.ll
+; wireshark/optimized/tap_parameter_dialog.cpp.ll
+; wireshark/optimized/tcp_stream_dialog.cpp.ll
+; wireshark/optimized/traffic_tab.cpp.ll
+; wireshark/optimized/traffic_tree.cpp.ll
+; wireshark/optimized/traffic_types_list.cpp.ll
+; wireshark/optimized/uat_dialog.cpp.ll
+; wireshark/optimized/uat_frame.cpp.ll
+; wireshark/optimized/uat_model.cpp.ll
+; wireshark/optimized/voip_calls_dialog.cpp.ll
+; wireshark/optimized/voip_calls_info_model.cpp.ll
+; wireshark/optimized/wireshark_application.cpp.ll
+; wireshark/optimized/wireshark_dialog.cpp.ll
+; wireshark/optimized/wireshark_main_window.cpp.ll
+; wireshark/optimized/wireshark_main_window_slots.cpp.ll
+; wireshark/optimized/wlan_statistics_dialog.cpp.ll
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/chat_room.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
+; yalantinglibs/optimized/concurrent_clients.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/file_client.cpp.ll
+; yalantinglibs/optimized/file_server.cpp.ll
+; yalantinglibs/optimized/rpc_service.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
+; z3/optimized/api_solver.cpp.ll
+; z3/optimized/euf_proof.cpp.ll
+; z3/optimized/rel_context.cpp.ll
+; z3/optimized/sat_config.cpp.ll
+; z3/optimized/sat_drat.cpp.ll
+; z3/optimized/sat_solver.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000022(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -5
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp eq ptr %0, null
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 68 occurrences:
+; cpython/optimized/ceval.ll
+; hermes/optimized/FoldingSet.cpp.ll
+; libquic/optimized/ex_data.c.ll
+; linux/optimized/buffered_read.ll
+; linux/optimized/buffered_write.ll
+; linux/optimized/cred.ll
+; linux/optimized/datagram.ll
+; linux/optimized/extents_status.ll
+; linux/optimized/filemap.ll
+; linux/optimized/gup.ll
+; linux/optimized/hw-me.ll
+; linux/optimized/idr.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/iterator.ll
+; linux/optimized/journal.ll
+; linux/optimized/libfs.ll
+; linux/optimized/madvise.ll
+; linux/optimized/manage.ll
+; linux/optimized/memfd.ll
+; linux/optimized/page-writeback.ll
+; linux/optimized/posix_acl.ll
+; linux/optimized/readahead.ll
+; linux/optimized/scatterlist.ll
+; linux/optimized/shmem.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/swap_state.ll
+; linux/optimized/xarray.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CodeGenPGO.cpp.ll
+; llvm/optimized/Consumed.cpp.ll
+; llvm/optimized/FoldingSet.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/TransRetainReleaseDealloc.cpp.ll
+; opencv/optimized/attr_value.pb.cc.ll
+; opencv/optimized/function.pb.cc.ll
+; opencv/optimized/graph.pb.cc.ll
+; opencv/optimized/op_def.pb.cc.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; opencv/optimized/opencv-onnx.pb.cc.ll
+; opencv/optimized/tensor.pb.cc.ll
+; opencv/optimized/tensor_shape.pb.cc.ll
+; openjdk/optimized/type.ll
+; openjdk/optimized/verificationType.ll
+; openjdk/optimized/verifier.ll
+; openmpi/optimized/comm_ft.ll
+; openmpi/optimized/group_init.ll
+; openmpi/optimized/hook_comm_method_fns.ll
+; php/optimized/logical_filters.ll
+; pocketpy/optimized/iter.cpp.ll
+; pocketpy/optimized/vm.cpp.ll
+; qemu/optimized/chardev_char.c.ll
+; rocksdb/optimized/slice.cc.ll
+; ruby/optimized/ast.ll
+; ruby/optimized/class.ll
+; ruby/optimized/compile.ll
+; ruby/optimized/gc.ll
+; ruby/optimized/imemo.ll
+; ruby/optimized/iseq.ll
+; ruby/optimized/postponed_job.ll
+; ruby/optimized/proc.ll
+; ruby/optimized/vm.ll
+; ruby/optimized/vm_backtrace.ll
+; ruby/optimized/vm_trace.ll
+; ruby/optimized/yjit.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000182(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 7
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp eq ptr %0, null
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 28 occurrences:
+; hwloc/optimized/memattrs.ll
+; linux/optimized/af_unix.ll
+; linux/optimized/filter.ll
+; linux/optimized/gso.ll
+; linux/optimized/gup.ll
+; linux/optimized/tcp_offload.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; opencv/optimized/attr_value.pb.cc.ll
+; opencv/optimized/function.pb.cc.ll
+; opencv/optimized/op_def.pb.cc.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; opencv/optimized/opencv-onnx.pb.cc.ll
+; opencv/optimized/tensor_shape.pb.cc.ll
+; opencv/optimized/versions.pb.cc.ll
+; openjdk/optimized/heapDumper.ll
+; openjdk/optimized/instanceRefKlass.ll
+; openjdk/optimized/jni.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmtiTagMap.ll
+; openjdk/optimized/referenceProcessor.ll
+; openjdk/optimized/unsafe.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/zHeapIterator.ll
+; php/optimized/crypt_sha256.ll
+; php/optimized/crypt_sha512.ll
+; slurm/optimized/gres_ctld.ll
+; xgboost/optimized/quantile.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 20480
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp eq ptr %0, null
+  %5 = or i1 %3, %4
+  ret i1 %5
+}
+
+; 12 occurrences:
+; gromacs/optimized/basicoptions.cpp.ll
+; gromacs/optimized/filenameoption.cpp.ll
+; gromacs/optimized/selectionoption.cpp.ll
+; linux/optimized/libata-acpi.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/vmalloc.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/SemaObjCProperty.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000198(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp ne ptr %0, null
+  %5 = or i1 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/p4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(ptr %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 62
+  %3 = icmp ugt i64 %2, 45
+  %4 = icmp eq ptr %0, null
+  %5 = or i1 %3, %4
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

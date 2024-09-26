@@ -13,4 +13,16 @@ entry:
   ret i1 %2
 }
 
+; 3 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; postgres/optimized/common.ll
+; qemu/optimized/block_block-copy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
+entry:
+  %2 = icmp ne ptr %1, null
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
+}
+
 attributes #0 = { nounwind }

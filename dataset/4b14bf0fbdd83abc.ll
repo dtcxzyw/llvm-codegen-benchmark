@@ -1,0 +1,46 @@
+
+; 7 occurrences:
+; assimp/optimized/SpatialSort.cpp.ll
+; assimp/optimized/StandardShapes.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/mesh_model_state.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; yosys/optimized/subcircuit.ll
+; zxing/optimized/PDFWriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nsw i64 %3, %1
+  %5 = sdiv exact i64 %0, 24
+  %6 = icmp ult i64 %5, %4
+  ret i1 %6
+}
+
+; 3 occurrences:
+; openusd/optimized/collectionPredicateLibrary.cpp.ll
+; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
+; openusd/optimized/testSdfPredicateExpression.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nsw i64 %3, %1
+  %5 = sdiv exact i64 %0, 48
+  %6 = icmp ugt i64 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; arrow/optimized/diff.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nsw i64 %3, %1
+  %5 = sdiv i64 %0, 2
+  %6 = icmp ult i64 %5, %4
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

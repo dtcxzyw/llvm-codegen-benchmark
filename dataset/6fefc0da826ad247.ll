@@ -1,32 +1,42 @@
 
-; 27 occurrences:
+; 37 occurrences:
 ; git/optimized/rev-parse.ll
 ; git/optimized/urlmatch.ll
-; hermes/optimized/DateUtil.cpp.ll
-; hermes/optimized/GlobalObject.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/Operations.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/String.cpp.ll
-; hermes/optimized/escape.cpp.ll
-; hermes/optimized/eval.cpp.ll
 ; linux/optimized/intel_guc_submission.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/BasicBlockUtils.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/Frontend.cpp.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
+; llvm/optimized/LLLexer.cpp.ll
+; llvm/optimized/LTO.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/SROA.cpp.ll
+; llvm/optimized/TailDuplicator.cpp.ll
+; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
+; llvm/optimized/VPlanSLP.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/modalMenu.cpp.ll
+; mitsuba3/optimized/properties.cpp.ll
 ; oiio/optimized/termoutput.cpp.ll
+; openjdk/optimized/fieldLayoutBuilder.ll
 ; openssl/optimized/openssl-bin-srp.ll
 ; php/optimized/url.ll
 ; postgres/optimized/deadlock.ll
 ; postgres/optimized/lock.ll
-; qemu/optimized/ui_console.c.ll
 ; ruby/optimized/dln.ll
 ; ruby/optimized/strftime.ll
 ; slurm/optimized/slurm_protocol_pack.ll
 ; tev/optimized/Common.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
-; wireshark/optimized/packet-rtnet.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
 entry:
@@ -36,8 +46,9 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
-; hermes/optimized/String.cpp.ll
+; 25 occurrences:
+; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/modalMenu.cpp.ll
@@ -70,9 +81,8 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; hermes/optimized/RegExp.cpp.ll
-; hermes/optimized/escape.cpp.ll
+; 4 occurrences:
+; pbrt-v4/optimized/paramdict.cpp.ll
 ; postgres/optimized/trigger.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; redis/optimized/hyperloglog.ll
@@ -85,9 +95,18 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; imgui/optimized/imgui.cpp.ll
+; 1 occurrences:
+; openjdk/optimized/mutableNUMASpace.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %3, ptr %1, ptr %2
+  %5 = icmp ule ptr %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
 ; linux/optimized/indirect.ll
 ; postgres/optimized/varlena.ll
 ; redis/optimized/redis-benchmark.ll

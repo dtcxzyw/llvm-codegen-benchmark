@@ -1,0 +1,217 @@
+
+; 149 occurrences:
+; cmake/optimized/MD5.c.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; freetype/optimized/sfnt.c.ll
+; libphonenumber/optimized/phonemetadata.pb.cc.ll
+; libphonenumber/optimized/phonenumber.pb.cc.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; lief/optimized/BinaryParser.cpp.ll
+; linux/optimized/8139too.ll
+; linux/optimized/r8169_firmware.ll
+; linux/optimized/skcipher.ll
+; linux/optimized/slub.ll
+; llvm/optimized/AArch64MCTargetDesc.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached_debug-items.ll
+; opencc/optimized/bit-vector.cc.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; openexr/optimized/ImfMultiPartInputFile.cpp.ll
+; openjdk/optimized/archiveBuilder.ll
+; openjdk/optimized/archiveHeapLoader.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/bfsClosure.ll
+; openjdk/optimized/cardTableBarrierSet.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/classLoaderData.ll
+; openjdk/optimized/defNewGeneration.ll
+; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/dfsClosure.ll
+; openjdk/optimized/dumpTimeClassInfo.ll
+; openjdk/optimized/g1AllocRegion.ll
+; openjdk/optimized/g1Allocator.ll
+; openjdk/optimized/g1Arguments.ll
+; openjdk/optimized/g1BarrierSet.ll
+; openjdk/optimized/g1BatchedTask.ll
+; openjdk/optimized/g1BlockOffsetTable.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1CardTable.ll
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/g1CollectionSet.ll
+; openjdk/optimized/g1CollectionSetCandidates.ll
+; openjdk/optimized/g1CollectionSetChooser.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1ConcurrentMarkBitMap.ll
+; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
+; openjdk/optimized/g1ConcurrentMarkThread.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1ConcurrentRefine.ll
+; openjdk/optimized/g1DirtyCardQueue.ll
+; openjdk/optimized/g1EvacFailureRegions.ll
+; openjdk/optimized/g1FullCollector.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1FullGCCompactTask.ll
+; openjdk/optimized/g1FullGCCompactionPoint.ll
+; openjdk/optimized/g1FullGCMarkTask.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1FullGCOopClosures.ll
+; openjdk/optimized/g1FullGCPrepareTask.ll
+; openjdk/optimized/g1FullGCResetMetadataTask.ll
+; openjdk/optimized/g1GCPhaseTimes.ll
+; openjdk/optimized/g1HeapRegion.ll
+; openjdk/optimized/g1HeapRegionManager.ll
+; openjdk/optimized/g1HeapRegionRemSet.ll
+; openjdk/optimized/g1HeapRegionSet.ll
+; openjdk/optimized/g1HeapVerifier.ll
+; openjdk/optimized/g1IHOPControl.ll
+; openjdk/optimized/g1MonitoringSupport.ll
+; openjdk/optimized/g1NMethodClosure.ll
+; openjdk/optimized/g1OopClosures.ll
+; openjdk/optimized/g1OopStarChunkedList.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/g1PeriodicGCTask.ll
+; openjdk/optimized/g1Policy.ll
+; openjdk/optimized/g1RegionMarkStatsCache.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1RemSetSummary.ll
+; openjdk/optimized/g1RemSetTrackingPolicy.ll
+; openjdk/optimized/g1RootClosures.ll
+; openjdk/optimized/g1RootProcessor.ll
+; openjdk/optimized/g1SATBMarkQueueSet.ll
+; openjdk/optimized/g1StringDedup.ll
+; openjdk/optimized/g1UncommitRegionTask.ll
+; openjdk/optimized/g1VMOperations.ll
+; openjdk/optimized/g1YoungCollector.ll
+; openjdk/optimized/g1YoungGCAllocationFailureInjector.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/g1YoungGCPreEvacuateTasks.ll
+; openjdk/optimized/gcVMOperations.ll
+; openjdk/optimized/heapInspection.ll
+; openjdk/optimized/heapShared.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/iterator.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmtiEnv.ll
+; openjdk/optimized/jvmtiExport.ll
+; openjdk/optimized/jvmtiTagMap.ll
+; openjdk/optimized/mutableSpace.ll
+; openjdk/optimized/parMarkBitMap.ll
+; openjdk/optimized/parallelScavengeHeap.ll
+; openjdk/optimized/psCardTable.ll
+; openjdk/optimized/psCompactionManager.ll
+; openjdk/optimized/psOldGen.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psPromotionLAB.ll
+; openjdk/optimized/psPromotionManager.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/serialFullGC.ll
+; openjdk/optimized/serialHeap.ll
+; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/shenandoahAsserts.ll
+; openjdk/optimized/shenandoahBarrierSet.ll
+; openjdk/optimized/shenandoahFullGC.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahHeapRegion.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/shenandoahRuntime.ll
+; openjdk/optimized/shenandoahVerifier.ll
+; openjdk/optimized/space.ll
+; openjdk/optimized/stringDedupTable.ll
+; openjdk/optimized/stringTable.ll
+; openjdk/optimized/tenuredGeneration.ll
+; openjdk/optimized/whitebox.ll
+; openjdk/optimized/xBarrier.ll
+; openjdk/optimized/xBarrierSetRuntime.ll
+; openjdk/optimized/xForwarding.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/xMark.ll
+; openjdk/optimized/xRelocate.ll
+; openjdk/optimized/zBarrierSetRuntime.ll
+; openjdk/optimized/zForwarding.ll
+; openjdk/optimized/zHeapIterator.ll
+; openjdk/optimized/zMark.ll
+; openjdk/optimized/zRelocate.ll
+; openjdk/optimized/zRelocationSet.ll
+; openjdk/optimized/zRemembered.ll
+; openjdk/optimized/zRememberedSet.ll
+; openjdk/optimized/zVerify.ll
+; openssl/optimized/libssl-lib-quic_wire_pkt.ll
+; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
+; openssl/optimized/quic_record_test-bin-quic_record_test.ll
+; postgres/optimized/multirangetypes.ll
+; protobuf/optimized/descriptor.pb.cc.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
+; qemu/optimized/target_riscv_debug.c.ll
+; ruby/optimized/md5.ll
+; ruby/optimized/sha1.ll
+; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 3
+  %3 = and i32 %2, 63
+  %4 = zext nneg i32 %3 to i64
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 24 occurrences:
+; abc/optimized/aigRet.c.ll
+; cmake/optimized/MD5.c.ll
+; libquic/optimized/curve25519.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; linux/optimized/libata-sff.ll
+; linux/optimized/scatterwalk.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached-proto_text.ll
+; memcached/optimized/memcached-storage.ll
+; memcached/optimized/memcached_debug-items.ll
+; memcached/optimized/memcached_debug-proto_text.ll
+; memcached/optimized/memcached_debug-storage.ll
+; mitsuba3/optimized/x86instapi.cpp.ll
+; opencc/optimized/bit-vector.cc.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; openssl/optimized/libcrypto-lib-curve25519.ll
+; openssl/optimized/libcrypto-shlib-curve25519.ll
+; openssl/optimized/libssl-lib-quic_wire_pkt.ll
+; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
+; qemu/optimized/hw_net_rtl8139.c.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/md5.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 3
+  %3 = and i32 %2, 63
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 9 occurrences:
+; libquic/optimized/curve25519.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; llvm/optimized/CGAtomic.cpp.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached-storage.ll
+; memcached/optimized/memcached_debug-items.ll
+; memcached/optimized/memcached_debug-storage.ll
+; openssl/optimized/libcrypto-lib-curve25519.ll
+; openssl/optimized/libcrypto-shlib-curve25519.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 6
+  %3 = and i32 %2, 2097151
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

@@ -1,8 +1,13 @@
 
-; 4 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btSoftBody.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; llvm/optimized/FastISel.cpp.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

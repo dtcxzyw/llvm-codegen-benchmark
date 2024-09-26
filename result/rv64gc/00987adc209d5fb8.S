@@ -1,0 +1,29 @@
+func0000000000000084:                   # @func0000000000000084
+	slli	a2, a0, 5
+	add	a1, a1, a2
+	addi	a1, a1, -32
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 16
+	ret
+func0000000000000086:                   # @func0000000000000086
+	slli	a2, a0, 3
+	slli	a3, a0, 6
+	sub	a3, a3, a2
+	add	a1, a1, a3
+	addi	a1, a1, -56
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 24
+	ret
+func0000000000000006:                   # @func0000000000000006
+	slli	a2, a0, 4
+	add	a1, a1, a2
+	addi	a1, a1, -16
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 8
+	ret

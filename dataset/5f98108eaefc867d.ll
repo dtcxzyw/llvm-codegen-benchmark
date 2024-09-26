@@ -1,0 +1,86 @@
+
+; 23 occurrences:
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; delta-rs/optimized/4zvphat0q9a964bz.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
+; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
+; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; jemalloc/optimized/sc.ll
+; jemalloc/optimized/sc.pic.ll
+; jemalloc/optimized/sc.sym.ll
+; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
+; redis/optimized/sc.ll
+; redis/optimized/sc.sym.ll
+; regex-rs/optimized/10eccrragw6uslmk.ll
+; regex-rs/optimized/3bb5ih3626n2er1d.ll
+; ring-rs/optimized/2ynmf0orlf9ml2dm.ll
+; ring-rs/optimized/3r96bqjv88cu5m8n.ll
+; ring-rs/optimized/d308x8t7de9vep4.ll
+; ripgrep-rs/optimized/544b63jf571x6ld1.ll
+; ripgrep-rs/optimized/5baox15rvywa81ar.ll
+; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c38(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = lshr i64 %1, 2
+  %6 = add nuw nsw i64 %5, %4
+  %7 = icmp ugt i64 %6, %0
+  ret i1 %7
+}
+
+; 4 occurrences:
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
+; opencc/optimized/bit-vector.cc.ll
+; ring-rs/optimized/36n9a21mmta9vg69.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c34(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = lshr i64 %1, 9
+  %6 = add nuw nsw i64 %5, %4
+  %7 = icmp ult i64 %6, %0
+  ret i1 %7
+}
+
+; 8 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
+; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/ue2string.cpp.ll
+; ockam-rs/optimized/48m1civl6b0v2j4c.ll
+; ring-rs/optimized/36n9a21mmta9vg69.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c31(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = lshr i64 %1, 3
+  %6 = add nuw nsw i64 %5, %4
+  %7 = icmp eq i64 %6, %0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/erf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000831(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 4294967295999999999
+  %4 = zext i1 %3 to i64
+  %5 = lshr i64 %1, 32
+  %6 = add nuw nsw i64 %5, %4
+  %7 = icmp eq i64 %6, %0
+  ret i1 %7
+}
+
+attributes #0 = { nounwind }

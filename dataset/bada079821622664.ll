@@ -1,0 +1,19 @@
+
+; 6 occurrences:
+; linux/optimized/vsprintf.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DeclCXX.cpp.ll
+; openspiel/optimized/pentago.cc.ll
+; qemu/optimized/hw_virtio_virtio-pci.c.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 32
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i64 2, i64 12
+  %5 = lshr i64 %0, %4
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

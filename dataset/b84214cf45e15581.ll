@@ -1,11 +1,9 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; icu/optimized/umutablecptrie.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
+; postgres/optimized/nbtdedup.ll
 ; qemu/optimized/target_riscv_translate.c.ll
+; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

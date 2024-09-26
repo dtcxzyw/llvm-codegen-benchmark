@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; hermes/optimized/APFloat.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/PPDirectives.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind

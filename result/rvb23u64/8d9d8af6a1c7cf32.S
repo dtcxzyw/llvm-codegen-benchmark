@@ -1,0 +1,34 @@
+func0000000000000014:                   # @func0000000000000014
+	slliw	a2, a2, 26
+	lui	a3, 1015808
+	addw	a1, a1, a3
+	or	a1, a1, a2
+	lui	a2, 1047552
+	addw	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func00000000000000d6:                   # @func00000000000000d6
+	slli	a2, a2, 6
+	add	a1, a1, a2
+	addiw	a1, a1, -128
+	lui	a2, 1033216
+	addw	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func00000000000000da:                   # @func00000000000000da
+	slli	a2, a2, 6
+	add	a1, a1, a2
+	addiw	a1, a1, -128
+	lui	a2, 1033216
+	addw	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func0000000000000000:                   # @func0000000000000000
+	lui	a3, 393216
+	addw	a2, a2, a3
+	slliw	a1, a1, 16
+	or	a1, a1, a2
+	lui	a2, 512
+	addw	a0, a0, a2
+	or	a0, a0, a1
+	ret

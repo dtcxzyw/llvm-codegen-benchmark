@@ -1,9 +1,13 @@
 
-; 6 occurrences:
+; 10 occurrences:
+; cpython/optimized/obmalloc.ll
+; flac/optimized/main.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; ipopt/optimized/IpJournalist.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; llama.cpp/optimized/sampling.cpp.ll
+; mimalloc/optimized/options.c.ll
+; openjdk/optimized/instanceKlass.ll
 ; postgres/optimized/common.ll
 ; postgres/optimized/trigger.ll
 ; Function Attrs: nounwind

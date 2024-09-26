@@ -1,25 +1,15 @@
 
-; 21 occurrences:
+; 11 occurrences:
+; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
-; mold/optimized/output-chunks.cc.ALPHA.cc.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.ARM64.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
-; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
-; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; openjdk/optimized/c1_GraphBuilder.ll
+; openjdk/optimized/c1_RangeCheckElimination.ll
+; openjdk/optimized/c1_ValueMap.ll
+; openjdk/optimized/compilationPolicy.ll
+; openjdk/optimized/compilerDefinitions.ll
+; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/jvmFlagConstraintsCompiler.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

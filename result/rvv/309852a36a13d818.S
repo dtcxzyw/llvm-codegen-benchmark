@@ -1,0 +1,49 @@
+func000000000000007e:                   # @func000000000000007e
+	li	a0, 3
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	vadd.vi	v8, v8, 2
+	vsrl.vi	v8, v8, 2
+	ret
+func0000000000000000:                   # @func0000000000000000
+	li	a0, 257
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	lui	a0, 8
+	vadd.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 16
+	ret
+func0000000000000078:                   # @func0000000000000078
+	li	a0, 80
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	li	a0, 390
+	vadd.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 3
+	ret
+func000000000000006a:                   # @func000000000000006a
+	li	a0, 112
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	li	a0, -113
+	vadd.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	li	a0, 63
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	li	a0, 128
+	vadd.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 3
+	ret
+func0000000000000020:                   # @func0000000000000020
+	lui	a0, 1
+	addi	a0, a0, 1256
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	lui	a0, 3
+	addi	a0, a0, -288
+	vadd.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 16
+	ret

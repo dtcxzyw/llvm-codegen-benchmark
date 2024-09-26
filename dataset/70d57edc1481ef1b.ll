@@ -1,7 +1,12 @@
 
-; 2 occurrences:
+; 7 occurrences:
+; clamav/optimized/phishcheck.c.ll
 ; cpython/optimized/sre.ll
 ; darktable/optimized/darkroom.c.ll
+; llvm/optimized/FlattenCFG.cpp.ll
+; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/MemorySSAUpdater.cpp.ll
+; llvm/optimized/ShrinkWrap.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
 entry:

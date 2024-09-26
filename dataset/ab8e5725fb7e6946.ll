@@ -1,0 +1,43 @@
+
+; 4 occurrences:
+; folly/optimized/AsyncSocket.cpp.ll
+; folly/optimized/IPAddressV4.cpp.ll
+; folly/optimized/IPAddressV6.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i8 %0) #0 {
+entry:
+  %1 = shl nuw i8 1, %0
+  %2 = and i8 %1, -107
+  ret i8 %2
+}
+
+; 9 occurrences:
+; darktable/optimized/introspection_dither.c.ll
+; darktable/optimized/introspection_lut3d.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; entt/optimized/scheduler.cpp.ll
+; folly/optimized/Compression.cpp.ll
+; minetest/optimized/CGUIButton.cpp.ll
+; minetest/optimized/guiButton.cpp.ll
+; minetest/optimized/log.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i8 %0) #0 {
+entry:
+  %1 = shl nuw nsw i8 1, %0
+  %2 = and i8 %1, 55
+  ret i8 %2
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000001(i8 %0) #0 {
+entry:
+  %1 = shl nsw i8 -1, %0
+  %2 = and i8 %1, 127
+  ret i8 %2
+}
+
+attributes #0 = { nounwind }

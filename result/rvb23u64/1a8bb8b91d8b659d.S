@@ -1,6 +1,0 @@
-func0000000000000007:                   # @func0000000000000007
-	subw	a1, a1, a0
-	clzw	a0, a1
-	li	a1, 276
-	sub	a0, a1, a0
-	ret

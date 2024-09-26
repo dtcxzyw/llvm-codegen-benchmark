@@ -1,0 +1,16 @@
+
+; 4 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; openjdk/optimized/xHeuristics.ll
+; openusd/optimized/collector.cpp.ll
+; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(double %0, double %1) #0 {
+entry:
+  %2 = fmul double %1, 1.000000e+02
+  %3 = fdiv double %2, %0
+  %4 = fptoui double %3 to i64
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

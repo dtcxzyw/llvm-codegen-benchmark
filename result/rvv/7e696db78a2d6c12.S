@@ -1,8 +1,0 @@
-func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v8, v8, 9
-	lui	a0, 260096
-	vor.vx	v8, v8, a0
-	fli.s	fa5, -1.0
-	vfadd.vf	v8, v8, fa5
-	ret

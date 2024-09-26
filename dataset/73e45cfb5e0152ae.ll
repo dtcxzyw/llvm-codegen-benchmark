@@ -1,11 +1,16 @@
 
-; 8 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
+; gromacs/optimized/tng_compress.c.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/dtptngen.ll
 ; jq/optimized/decNumber.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_match.ll
 ; redis/optimized/dict.ll
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind

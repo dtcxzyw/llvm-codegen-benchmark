@@ -1,0 +1,70 @@
+func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmseq.vv	v12, v14, v8
+	vmseq.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func000000000000001b:                   # @func000000000000001b
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmseq.vv	v12, v14, v8
+	vmsle.vv	v13, v10, v8
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000084:                   # @func0000000000000084
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmsltu.vv	v12, v14, v8
+	vmsltu.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000088:                   # @func0000000000000088
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmsltu.vv	v12, v14, v8
+	vmsltu.vv	v13, v10, v8
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000044:                   # @func0000000000000044
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmsltu.vv	v12, v8, v14
+	vmsltu.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func000000000000011c:                   # @func000000000000011c
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmseq.vv	v12, v14, v8
+	vmsne.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000181:                   # @func0000000000000181
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmsltu.vv	v12, v14, v8
+	vmseq.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000166:                   # @func0000000000000166
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmslt.vv	v12, v8, v14
+	vmslt.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000184:                   # @func0000000000000184
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmsltu.vv	v12, v14, v8
+	vmsltu.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret
+func0000000000000144:                   # @func0000000000000144
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
+	vmsltu.vv	v12, v8, v14
+	vmsltu.vv	v13, v8, v10
+	vmor.mm	v0, v13, v12
+	ret

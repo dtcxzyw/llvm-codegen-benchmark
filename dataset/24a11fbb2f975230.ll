@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; cmake/optimized/connect.c.ll
 ; curl/optimized/libcurl_la-connect.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; proj/optimized/strerrno.cpp.ll
 ; slurm/optimized/numa.ll
 ; z3/optimized/special_relations_decl_plugin.cpp.ll
 ; Function Attrs: nounwind

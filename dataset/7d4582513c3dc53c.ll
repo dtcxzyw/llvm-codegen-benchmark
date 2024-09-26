@@ -1,0 +1,46 @@
+
+; 4 occurrences:
+; folly/optimized/dynamic.cpp.ll
+; meshlab/optimized/additionalgui.cpp.ll
+; meshlab/optimized/paintbox.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000068(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 3
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; flatbuffers/optimized/reflection.cpp.ll
+; openjdk/optimized/jfrEventClassTransformer.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000e8(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = getelementptr nusw i8, ptr %1, i64 8
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/MemProfReader.cpp.ll
+; php/optimized/cdf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = getelementptr nusw i8, ptr %1, i64 16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+attributes #0 = { nounwind }

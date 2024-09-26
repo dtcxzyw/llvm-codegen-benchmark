@@ -1,0 +1,23 @@
+func000000000000001a:                   # @func000000000000001a
+	andi	a1, a1, 15
+	slli	a1, a1, 6
+	add	a0, a0, a1
+	addi	a0, a0, 28
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a1, a1, 63
+	add	a0, a0, a1
+	addi	a0, a0, 28
+	ret
+func000000000000001e:                   # @func000000000000001e
+	andi	a1, a1, 1
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	addi	a0, a0, 360
+	ret
+func0000000000000010:                   # @func0000000000000010
+	andi	a1, a1, 1
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	addi	a0, a0, 400
+	ret

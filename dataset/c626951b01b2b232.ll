@@ -27,9 +27,11 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/unzip.c.ll
 ; hermes/optimized/zip.c.ll
+; llvm/optimized/Driver.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; wolfssl/optimized/chacha20_poly1305.c.ll

@@ -1,0 +1,32 @@
+func0000000000000008:                   # @func0000000000000008
+	addi	a2, a2, -1
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	sub	a0, a1, a0
+	add	a0, a0, a2
+	ret
+func0000000000000078:                   # @func0000000000000078
+	sext.w	a2, a2
+	sub	a1, a1, a0
+	add	a0, a1, a2
+	addi	a0, a0, 1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	addi	a2, a2, -1
+	slli	a2, a2, 32
+	srli	a2, a2, 30
+	sub	a0, a1, a0
+	add	a0, a0, a2
+	ret
+func0000000000000070:                   # @func0000000000000070
+	sext.w	a2, a2
+	sub	a1, a1, a0
+	add	a0, a1, a2
+	addi	a0, a0, 16
+	ret
+func0000000000000030:                   # @func0000000000000030
+	sext.w	a2, a2
+	add	a1, a1, a2
+	not	a0, a0
+	add	a0, a0, a1
+	ret

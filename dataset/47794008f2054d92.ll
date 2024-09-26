@@ -1,0 +1,18 @@
+
+; 4 occurrences:
+; arrow/optimized/bignum.cc.ll
+; double_conversion/optimized/bignum.cc.ll
+; icu/optimized/double-conversion-bignum.ll
+; openusd/optimized/bignum.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000036c(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = sext i16 %2 to i32
+  %4 = add nsw i32 %3, %1
+  %5 = icmp sle i32 %4, %0
+  %6 = icmp slt i32 %0, %1
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+attributes #0 = { nounwind }

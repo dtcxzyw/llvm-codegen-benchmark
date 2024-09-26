@@ -1,0 +1,58 @@
+func0000000000000000:                   # @func0000000000000000
+	slli	a1, a0, 32
+	lui	a2, 838861
+	addi	a2, a2, -819
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	srli	a1, a1, 35
+	li	a2, 10
+	mul	a1, a1, a2
+	subw	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	slli	a1, a0, 32
+	lui	a2, 351844
+	addi	a2, a2, -1143
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	srli	a1, a1, 57
+	lui	a2, 24414
+	addi	a2, a2, 256
+	mul	a1, a1, a2
+	subw	a0, a0, a1
+	ret
+func0000000000000005:                   # @func0000000000000005
+	slli	a1, a0, 32
+	lui	a2, 235184
+	addi	a2, a2, 1725
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	srli	a1, a1, 47
+	lui	a2, 36
+	addi	a2, a2, -1359
+	mul	a1, a1, a2
+	subw	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	slli	a1, a0, 32
+	lui	a2, 838861
+	addi	a2, a2, -819
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	srli	a1, a1, 35
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	subw	a1, a1, a2
+	addw	a0, a0, a1
+	ret
+func000000000000000f:                   # @func000000000000000f
+	slli	a1, a0, 32
+	lui	a2, 838861
+	addi	a2, a2, -819
+	slli	a2, a2, 32
+	mulhu	a1, a1, a2
+	srli	a1, a1, 35
+	li	a2, 246
+	mul	a1, a1, a2
+	addw	a0, a0, a1
+	ret

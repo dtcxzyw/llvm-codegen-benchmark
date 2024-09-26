@@ -1,0 +1,122 @@
+.LCPI0_0:
+	.quad	0x43e158e460913d00              # double 1.0E+19
+func0000000000000042:                   # @func0000000000000042
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfgt.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmflt.vv	v0, v16, v8
+	ret
+func0000000000000024:                   # @func0000000000000024
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v0, v16, fa5
+	vmerge.vim	v16, v16, 0, v0
+	vmflt.vv	v0, v8, v16
+	ret
+.LCPI2_0:
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+func0000000000000022:                   # @func0000000000000022
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmflt.vv	v0, v16, v8
+	ret
+.LCPI3_0:
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+func0000000000000023:                   # @func0000000000000023
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmfle.vv	v24, v8, v16
+	vmnot.m	v0, v24
+	ret
+.LCPI4_0:
+	.quad	0x3feffffffffffffe              # double 0.99999999999999978
+func0000000000000082:                   # @func0000000000000082
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
+	fli.d	fa4, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v0, v16, fa4
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmflt.vv	v0, v16, v8
+	ret
+func000000000000008b:                   # @func000000000000008b
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v0, v16, fa5
+	vmerge.vim	v16, v16, 0, v0
+	vmflt.vv	v24, v8, v16
+	vmnot.m	v0, v24
+	ret
+func00000000000000a4:                   # @func00000000000000a4
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmflt.vv	v0, v8, v16
+	ret
+.LCPI7_0:
+	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
+func0000000000000044:                   # @func0000000000000044
+	lui	a0, %hi(.LCPI7_0)
+	fld	fa5, %lo(.LCPI7_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfgt.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmflt.vv	v0, v8, v16
+	ret
+func0000000000000025:                   # @func0000000000000025
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v0, v16, fa5
+	vmerge.vim	v16, v16, 0, v0
+	vmfle.vv	v24, v16, v8
+	vmnot.m	v0, v24
+	ret
+func0000000000000028:                   # @func0000000000000028
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v0, v16, fa5
+	vmerge.vim	v16, v16, 0, v0
+	vmfeq.vv	v0, v16, v8
+	ret
+func00000000000000a2:                   # @func00000000000000a2
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vf	v0, v16, fa5
+	vmerge.vim	v16, v16, 0, v0
+	vmflt.vv	v0, v16, v8
+	ret
+func00000000000000ac:                   # @func00000000000000ac
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfle.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmfle.vv	v0, v8, v16
+	ret
+func00000000000000c5:                   # @func00000000000000c5
+	fli.d	fa5, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfge.vf	v0, v16, fa5
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmfle.vv	v24, v16, v8
+	vmnot.m	v0, v24
+	ret
+.LCPI13_0:
+	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
+func0000000000000084:                   # @func0000000000000084
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
+	fmv.d.x	fa4, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v0, v16, fa4
+	vfmerge.vfm	v16, v16, fa5, v0
+	vmflt.vv	v0, v8, v16
+	ret

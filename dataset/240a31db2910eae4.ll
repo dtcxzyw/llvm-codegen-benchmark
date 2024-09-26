@@ -1,8 +1,10 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; icu/optimized/dtptngen.ll
 ; libevent/optimized/buffer.c.ll
 ; linux/optimized/setup-bus.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; luau/optimized/lvmutils.cpp.ll
 ; postgres/optimized/type.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, i1 %1, ptr %2) #0 {

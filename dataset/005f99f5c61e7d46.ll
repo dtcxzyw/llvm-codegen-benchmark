@@ -1,0 +1,111 @@
+
+; 101 occurrences:
+; arrow/optimized/array_base.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_internal.cc.ll
+; assimp/optimized/glTF2Exporter.cpp.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3GpuNarrowPhase.ll
+; bullet3/optimized/b3OptimizedBvh.ll
+; bullet3/optimized/b3QuantizedBvh.ll
+; bullet3/optimized/btAxisSweep3.ll
+; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btOptimizedBvh.ll
+; bullet3/optimized/btQuantizedBvh.ll
+; darktable/optimized/avif.c.ll
+; darktable/optimized/introspection_rawprepare.c.ll
+; darktable/optimized/tiff.c.ll
+; darktable/optimized/xcf.c.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; faiss/optimized/quantize_lut.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Tconv_float.c.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; image-rs/optimized/fyek6fuqg0ocunt.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; libwebp/optimized/sharpyuv_gamma.c.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; minetest/optimized/client.cpp.ll
+; minetest/optimized/game.cpp.ll
+; minetest/optimized/localplayer.cpp.ll
+; minetest/optimized/mapgen.cpp.ll
+; minetest/optimized/mapgen_v6.cpp.ll
+; minetest/optimized/particles.cpp.ll
+; minetest/optimized/server.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; ocio/optimized/CPUProcessor.cpp.ll
+; ocio/optimized/CTFReaderHelper.cpp.ll
+; ocio/optimized/Lut1DOpCPU.cpp.ll
+; oiio/optimized/DPXColorConverter.cpp.ll
+; oiio/optimized/Writer.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/deepdata.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; openusd/optimized/alpha.c.ll
+; openusd/optimized/reformat.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/value.cpp.ll
+; openvdb/optimized/points.cc.ll
+; pbrt-v4/optimized/lightsamplers.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/ir.ll
+; pocketpy/optimized/array2d.cpp.ll
+; pocketpy/optimized/ceval.cpp.ll
+; pocketpy/optimized/cffi.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
+; pocketpy/optimized/compiler.cpp.ll
+; pocketpy/optimized/dataclasses.cpp.ll
+; pocketpy/optimized/expr.cpp.ll
+; pocketpy/optimized/frame.cpp.ll
+; pocketpy/optimized/io.cpp.ll
+; pocketpy/optimized/linalg.cpp.ll
+; pocketpy/optimized/modules.cpp.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; pocketpy/optimized/pocketpy_c.cpp.ll
+; pocketpy/optimized/random.cpp.ll
+; pocketpy/optimized/vm.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
+; stb/optimized/stb_dxt.c.ll
+; stb/optimized/stb_image.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/vwr.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000000(float %0) #0 {
+entry:
+  %1 = fptoui float %0 to i16
+  ret i16 %1
+}
+
+attributes #0 = { nounwind }

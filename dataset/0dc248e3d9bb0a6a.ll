@@ -1,0 +1,532 @@
+
+; 179 occurrences:
+; abseil-cpp/optimized/raw_hash_set.cc.ll
+; actix-rs/optimized/2wg1z1eatrkafji9.ll
+; actix-rs/optimized/36qa1hw006t0trtl.ll
+; actix-rs/optimized/520p8qtoxfmkvgyc.ll
+; coreutils-rs/optimized/1ks0bjj5pmsh3du4.ll
+; coreutils-rs/optimized/1rno21l8yxg9vs0k.ll
+; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
+; coreutils-rs/optimized/2y94il9ncyebrpt0.ll
+; coreutils-rs/optimized/30f5bptmhm0gvo6i.ll
+; coreutils-rs/optimized/3stdugogn8b6evb1.ll
+; coreutils-rs/optimized/50z74lntrf1cjp27.ll
+; coreutils-rs/optimized/592w9u2os9g8yndg.ll
+; coreutils-rs/optimized/5csmbnxbvn5bvzoy.ll
+; coreutils-rs/optimized/6h79q3cnlscd1jd.ll
+; coreutils-rs/optimized/if1nymhyh0puht7.ll
+; coreutils-rs/optimized/jxegc1d49bwppaa.ll
+; delta-rs/optimized/17fowff2nvfrfdbu.ll
+; delta-rs/optimized/1hj0ksbtyfwxzh2n.ll
+; delta-rs/optimized/1kqybwbo4z39nain.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; delta-rs/optimized/2fjmxjbhgng2mk02.ll
+; delta-rs/optimized/3r9vx3p2jzork50q.ll
+; delta-rs/optimized/3w98mau10rb6qf7d.ll
+; delta-rs/optimized/43rqrp2cinp33t64.ll
+; delta-rs/optimized/56nvjt5b8qxnt1we.ll
+; delta-rs/optimized/fhoj0ycmzgl7mm8.ll
+; diesel-rs/optimized/1d6yrclfdvavot4r.ll
+; diesel-rs/optimized/1d8pgoqwu3bzfya4.ll
+; diesel-rs/optimized/1pu1gypvn16sk7jj.ll
+; diesel-rs/optimized/1zhqdyjorbzdhypm.ll
+; diesel-rs/optimized/2sf6u3r7os1bcdld.ll
+; diesel-rs/optimized/3hbywg7swws1iy6v.ll
+; diesel-rs/optimized/3iqa5s4rcitpn2nv.ll
+; diesel-rs/optimized/3nv3xphjbq527f6u.ll
+; diesel-rs/optimized/3nydn42x30kj4j9q.ll
+; diesel-rs/optimized/3rjno8am3tsn5qrm.ll
+; diesel-rs/optimized/46661qc4yjpbja0f.ll
+; diesel-rs/optimized/gepqftqgym352s.ll
+; diesel-rs/optimized/ozsudjqkjomiiqo.ll
+; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
+; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
+; influxdb-rs/optimized/2du585cd6kvsz0m5.ll
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; just-rs/optimized/15iymzte00kmcyqz.ll
+; libphonenumber/optimized/phonenumberutil.cc.ll
+; libphonenumber/optimized/shortnumberinfo.cc.ll
+; meilisearch-rs/optimized/2wt0tk1rjionlq9o.ll
+; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
+; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
+; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
+; ockam-rs/optimized/13hx4edwj16k9wur.ll
+; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
+; ockam-rs/optimized/2n0s7h3mrzul4f05.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
+; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
+; ockam-rs/optimized/4df8gyzy0u3roc94.ll
+; ockam-rs/optimized/4t3y03rrak2rtjym.ll
+; ockam-rs/optimized/548tb0vgebzwk35z.ll
+; ockam-rs/optimized/59645ou3p4wsm5oz.ll
+; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
+; openspiel/optimized/battleship_test.cc.ll
+; openspiel/optimized/best_response.cc.ll
+; openspiel/optimized/ce.cc.ll
+; openspiel/optimized/chess.cc.ll
+; openspiel/optimized/colored_trails.cc.ll
+; openspiel/optimized/colored_trails_utils.cc.ll
+; openspiel/optimized/corr_dev_builder.cc.ll
+; openspiel/optimized/corr_dist.cc.ll
+; openspiel/optimized/corr_dist_test.cc.ll
+; openspiel/optimized/dark_chess.cc.ll
+; openspiel/optimized/dynamic_routing.cc.ll
+; openspiel/optimized/dynamic_routing_data.cc.ll
+; openspiel/optimized/dynamic_routing_utils.cc.ll
+; openspiel/optimized/dynamic_routing_utils_test.cc.ll
+; openspiel/optimized/efg_game.cc.ll
+; openspiel/optimized/fsicfr.cc.ll
+; openspiel/optimized/history_tree.cc.ll
+; openspiel/optimized/history_tree_test.cc.ll
+; openspiel/optimized/human_bot.cc.ll
+; openspiel/optimized/is_mcts.cc.ll
+; openspiel/optimized/kriegspiel.cc.ll
+; openspiel/optimized/pathfinding.cc.ll
+; openspiel/optimized/policy.cc.ll
+; openspiel/optimized/policy_iteration.cc.ll
+; openspiel/optimized/rbc.cc.ll
+; openspiel/optimized/sheriff_test.cc.ll
+; openspiel/optimized/stones_and_gems.cc.ll
+; openspiel/optimized/stones_and_gems_test.cc.ll
+; openspiel/optimized/tabular_best_response_mdp.cc.ll
+; openspiel/optimized/tabular_q_learning.cc.ll
+; openspiel/optimized/tabular_q_learning_test.cc.ll
+; openspiel/optimized/tabular_sarsa.cc.ll
+; openspiel/optimized/tabular_sarsa_test.cc.ll
+; qdrant-rs/optimized/14hho85eanhsaepf.ll
+; qdrant-rs/optimized/1604xuzoa424d8h4.ll
+; qdrant-rs/optimized/565lxzptfhw542rw.ll
+; qdrant-rs/optimized/5df3kwa3vgb8d75f.ll
+; re2/optimized/compile.cc.ll
+; re2/optimized/dfa.cc.ll
+; re2/optimized/prefilter_tree.cc.ll
+; re2/optimized/regexp.cc.ll
+; regex-rs/optimized/4dth5ncaqumdqgby.ll
+; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
+; ripgrep-rs/optimized/kiwlvuwlry6renb.ll
+; rust-analyzer-rs/optimized/16ss3ngd5xjxotkj.ll
+; rust-analyzer-rs/optimized/1d113v6a3epuvh5y.ll
+; rust-analyzer-rs/optimized/1inhtflzeuuko7d8.ll
+; rust-analyzer-rs/optimized/1nq05dx97mrwfe5q.ll
+; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
+; rust-analyzer-rs/optimized/2334ao9w0k9d7973.ll
+; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
+; rust-analyzer-rs/optimized/25mimo7c8tgr4lg9.ll
+; rust-analyzer-rs/optimized/2byauzqgce2a9ymb.ll
+; rust-analyzer-rs/optimized/2c0n7dumpf7kecgy.ll
+; rust-analyzer-rs/optimized/2fcy4m9e2fxieax4.ll
+; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
+; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
+; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
+; rust-analyzer-rs/optimized/2s0syxcsgn6lrmiu.ll
+; rust-analyzer-rs/optimized/2xc4k213s11rexpc.ll
+; rust-analyzer-rs/optimized/2z8yitblr1xxwxav.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/39wpokevyhxzb05g.ll
+; rust-analyzer-rs/optimized/3bcyxdd3fm70gs30.ll
+; rust-analyzer-rs/optimized/3ezpsp4ix1xt5gp1.ll
+; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
+; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
+; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
+; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
+; rust-analyzer-rs/optimized/4dy7ijwwbie8y9pm.ll
+; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
+; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
+; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
+; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
+; rust-analyzer-rs/optimized/4rlc671wrakubmrp.ll
+; rust-analyzer-rs/optimized/51m9a8c8z6eylshw.ll
+; rust-analyzer-rs/optimized/56h3y9a9iyx2hg6y.ll
+; rust-analyzer-rs/optimized/5a391sezfv8ojps9.ll
+; rust-analyzer-rs/optimized/5tc27igfpd8lxn0.ll
+; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
+; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
+; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
+; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
+; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
+; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
+; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
+; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; tokio-rs/optimized/58zica37k9qw0rn.ll
+; tree-sitter-rs/optimized/2xun21ofbsn7p9xn.ll
+; tree-sitter-rs/optimized/2yfsyc10m67buedj.ll
+; tree-sitter-rs/optimized/3iovi93q4avxr89k.ll
+; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; typst-rs/optimized/31vebs4z0lpwpjgn.ll
+; typst-rs/optimized/3efk6odw6ecl29p.ll
+; typst-rs/optimized/3gfld5k3k43fgjtj.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/3zt5lgc0v7piaijw.ll
+; wasmtime-rs/optimized/136otopym0n1vd5o.ll
+; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
+; wasmtime-rs/optimized/1aeertcmltcg0pmp.ll
+; wasmtime-rs/optimized/1g9fzsxu6f987i7p.ll
+; wasmtime-rs/optimized/2v0w4wom426siltx.ll
+; wasmtime-rs/optimized/2x1mxlm9f496za8a.ll
+; wasmtime-rs/optimized/35t0vcavp8gy3o68.ll
+; wasmtime-rs/optimized/3bqeq7vw4cyun8u0.ll
+; wasmtime-rs/optimized/3hufa2evbb1rcpzn.ll
+; wasmtime-rs/optimized/3hwarn3zl2ncla2z.ll
+; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
+; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
+; wasmtime-rs/optimized/fhugawvdzmyefe9.ll
+; wasmtime-rs/optimized/hmb8tiwife399k7.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, %2
+  %4 = and i64 %3, %0
+  %5 = icmp ult i64 %4, 16
+  ret i1 %5
+}
+
+; 274 occurrences:
+; abc/optimized/abcDec.c.ll
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/ac_wrapper.cpp.ll
+; abc/optimized/acbPush.c.ll
+; abc/optimized/acec2Mult.c.ll
+; abc/optimized/acecCore.c.ll
+; abc/optimized/acecMult.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauGia.c.ll
+; abc/optimized/dauNpn.c.ll
+; abc/optimized/extraUtilDsd.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaOf.c.ll
+; abc/optimized/giaPf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaSupp.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/giaTtopt.cpp.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/ifTruth.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/ioReadPlaMo.c.ll
+; abc/optimized/mpmTruth.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdCut.c.ll
+; abc/optimized/sfmLib.c.ll
+; abc/optimized/sfmSat.c.ll
+; abc/optimized/utilIsop.c.ll
+; arrow/optimized/api_scalar.cc.ll
+; icu/optimized/number_decimalquantity.ll
+; linux/optimized/addrconf.ll
+; linux/optimized/addrlabel.ll
+; linux/optimized/bitmap.ll
+; linux/optimized/blk-mq-debugfs.ll
+; linux/optimized/commoncap.ll
+; linux/optimized/dcache.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/iface.ll
+; linux/optimized/ip6_fib.ll
+; linux/optimized/move_extent.ll
+; linux/optimized/mprotect.ll
+; linux/optimized/swiotlb.ll
+; linux/optimized/tcp_ipv4.ll
+; linux/optimized/uncore_nhmex.ll
+; linux/optimized/uncore_snbep.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/AArch64ExpandImm.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/LiveIntervalCalc.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/SwiftCallingConv.cpp.ll
+; mold/optimized/input-files.cc.ALPHA.cc.ll
+; mold/optimized/input-files.cc.ARM32.cc.ll
+; mold/optimized/input-files.cc.ARM64.cc.ll
+; mold/optimized/input-files.cc.I386.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-files.cc.M68K.cc.ll
+; mold/optimized/input-files.cc.PPC32.cc.ll
+; mold/optimized/input-files.cc.PPC64V1.cc.ll
+; mold/optimized/input-files.cc.PPC64V2.cc.ll
+; mold/optimized/input-files.cc.RV32BE.cc.ll
+; mold/optimized/input-files.cc.RV32LE.cc.ll
+; mold/optimized/input-files.cc.RV64BE.cc.ll
+; mold/optimized/input-files.cc.RV64LE.cc.ll
+; mold/optimized/input-files.cc.S390X.cc.ll
+; mold/optimized/input-files.cc.SH4.cc.ll
+; mold/optimized/input-files.cc.SPARC64.cc.ll
+; mold/optimized/input-files.cc.X86_64.cc.ll
+; mold/optimized/input-sections.cc.ALPHA.cc.ll
+; mold/optimized/input-sections.cc.ARM32.cc.ll
+; mold/optimized/input-sections.cc.ARM64.cc.ll
+; mold/optimized/input-sections.cc.I386.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-sections.cc.M68K.cc.ll
+; mold/optimized/input-sections.cc.PPC32.cc.ll
+; mold/optimized/input-sections.cc.PPC64V1.cc.ll
+; mold/optimized/input-sections.cc.PPC64V2.cc.ll
+; mold/optimized/input-sections.cc.RV32BE.cc.ll
+; mold/optimized/input-sections.cc.RV32LE.cc.ll
+; mold/optimized/input-sections.cc.RV64BE.cc.ll
+; mold/optimized/input-sections.cc.RV64LE.cc.ll
+; mold/optimized/input-sections.cc.S390X.cc.ll
+; mold/optimized/input-sections.cc.SH4.cc.ll
+; mold/optimized/input-sections.cc.SPARC64.cc.ll
+; mold/optimized/input-sections.cc.X86_64.cc.ll
+; mold/optimized/mapfile.cc.ALPHA.cc.ll
+; mold/optimized/mapfile.cc.ARM32.cc.ll
+; mold/optimized/mapfile.cc.ARM64.cc.ll
+; mold/optimized/mapfile.cc.I386.cc.ll
+; mold/optimized/mapfile.cc.LOONGARCH32.cc.ll
+; mold/optimized/mapfile.cc.LOONGARCH64.cc.ll
+; mold/optimized/mapfile.cc.M68K.cc.ll
+; mold/optimized/mapfile.cc.PPC32.cc.ll
+; mold/optimized/mapfile.cc.PPC64V1.cc.ll
+; mold/optimized/mapfile.cc.PPC64V2.cc.ll
+; mold/optimized/mapfile.cc.RV32BE.cc.ll
+; mold/optimized/mapfile.cc.RV32LE.cc.ll
+; mold/optimized/mapfile.cc.RV64BE.cc.ll
+; mold/optimized/mapfile.cc.RV64LE.cc.ll
+; mold/optimized/mapfile.cc.S390X.cc.ll
+; mold/optimized/mapfile.cc.SH4.cc.ll
+; mold/optimized/mapfile.cc.SPARC64.cc.ll
+; mold/optimized/mapfile.cc.X86_64.cc.ll
+; openjdk/optimized/bitMap.ll
+; openjdk/optimized/xVerify.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/cache.cpp.ll
+; openusd/optimized/cacheImpl.cpp.ll
+; openusd/optimized/changeTracker.cpp.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/collisionGroup.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/discoveryPlugin.cpp.ll
+; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
+; openusd/optimized/flatteningSceneIndex.cpp.ll
+; openusd/optimized/imageable.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/introspection.cpp.ll
+; openusd/optimized/lightListAPI.cpp.ll
+; openusd/optimized/listAPI.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/mapExpression.cpp.ll
+; openusd/optimized/materialAdapter.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/nodeGraph.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primFlags.cpp.ll
+; openusd/optimized/primRange.cpp.ll
+; openusd/optimized/primTypeInfoCache.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/rigidBodyAPI.cpp.ll
+; openusd/optimized/root.cpp.ll
+; openusd/optimized/stageSceneIndex.cpp.ll
+; openusd/optimized/subset.cpp.ll
+; openusd/optimized/testUsdPrimGetDescendants.cpp.ll
+; openusd/optimized/testUsdStageThreading.cpp.ll
+; openusd/optimized/usdtree.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/Queue.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; pcg-cpp/optimized/cppref-sample.cpp.ll
+; pcg-cpp/optimized/pcg-demo.cpp.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/hw_vfio_common.c.ll
+; qemu/optimized/linux-user_mmap.c.ll
+; qemu/optimized/util_bitmap.c.ll
+; redis/optimized/dict.ll
+; slurm/optimized/bitstring.ll
+; spike/optimized/csrs.ll
+; spike/optimized/triggers.ll
+; stockfish/optimized/position.ll
+; velox/optimized/ArrayAndMapMatch.cpp.ll
+; velox/optimized/ArrayConstructor.cpp.ll
+; velox/optimized/ArrayContains.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; velox/optimized/ArrayPosition.cpp.ll
+; velox/optimized/ArrayShuffle.cpp.ll
+; velox/optimized/ArraySort.cpp.ll
+; velox/optimized/ArraySum.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/CheckDuplicateKeys.cpp.ll
+; velox/optimized/CoalesceExpr.cpp.ll
+; velox/optimized/Comparisons.cpp.ll
+; velox/optimized/ComplexVector.cpp.ll
+; velox/optimized/ConjunctExpr.cpp.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/DecimalVectorFunctions.cpp.ll
+; velox/optimized/ElementAt.cpp.ll
+; velox/optimized/EvalCtx.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/FieldReference.cpp.ll
+; velox/optimized/FilterFunctions.cpp.ll
+; velox/optimized/FindFirst.cpp.ll
+; velox/optimized/FirstLastValue.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUnixTime.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/GreatestLeast.cpp.ll
+; velox/optimized/InPredicate.cpp.ll
+; velox/optimized/IsNull.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LambdaFunctionUtil.cpp.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/Map.cpp.ll
+; velox/optimized/MapConcat.cpp.ll
+; velox/optimized/MapEntries.cpp.ll
+; velox/optimized/MapFromEntries.cpp.ll
+; velox/optimized/MapKeysAndValues.cpp.ll
+; velox/optimized/MapZipWith.cpp.ll
+; velox/optimized/Not.cpp.ll
+; velox/optimized/NthValue.cpp.ll
+; velox/optimized/PeeledEncoding.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/Reduce.cpp.ll
+; velox/optimized/Repeat.cpp.ll
+; velox/optimized/Reverse.cpp.ll
+; velox/optimized/RowFunction.cpp.ll
+; velox/optimized/SelectivityVector.cpp.ll
+; velox/optimized/Sequence.cpp.ll
+; velox/optimized/SequenceVector.cpp.ll
+; velox/optimized/Slice.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/StringFunctions.cpp.ll
+; velox/optimized/Subscript.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/SwitchExpr.cpp.ll
+; velox/optimized/TimestampWithTimeZoneType.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/Transform.cpp.ll
+; velox/optimized/TransformKeys.cpp.ll
+; velox/optimized/TransformValues.cpp.ll
+; velox/optimized/TryExpr.cpp.ll
+; velox/optimized/UnsafeRowSerializer.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorPrinter.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
+; velox/optimized/WidthBucketArray.cpp.ll
+; velox/optimized/Zip.cpp.ll
+; velox/optimized/ZipWith.cpp.ll
+; z3/optimized/sat_aig_cuts.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, %2
+  %4 = and i64 %3, %0
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; libquic/optimized/time_posix.cc.ll
+; openjdk/optimized/subnode.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; spike/optimized/ksub64.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, %2
+  %4 = and i64 %3, %0
+  %5 = icmp sgt i64 %4, -1
+  ret i1 %5
+}
+
+; 14 occurrences:
+; libquic/optimized/time.cc.ll
+; opencv/optimized/resize.cpp.ll
+; openjdk/optimized/mathexactnode.ll
+; quickjs/optimized/libbf.ll
+; spike/optimized/kmadrs32.ll
+; spike/optimized/kmads32.ll
+; spike/optimized/kmar64.ll
+; spike/optimized/kmaxda32.ll
+; spike/optimized/kmaxds32.ll
+; spike/optimized/kmsda32.ll
+; spike/optimized/kmsxda32.ll
+; spike/optimized/ksub64.ll
+; spike/optimized/vssub_vv.ll
+; spike/optimized/vssub_vx.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, %2
+  %4 = and i64 %3, %0
+  %5 = icmp slt i64 %4, 0
+  ret i1 %5
+}
+
+; 9 occurrences:
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaPf.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifMap.c.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/task_mmu.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, %2
+  %4 = and i64 %3, %0
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

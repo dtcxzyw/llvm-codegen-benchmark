@@ -1,0 +1,19 @@
+
+; 6 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000142(float %0, float %1, i32 %2) #0 {
+entry:
+  %3 = uitofp nneg i32 %2 to float
+  %4 = fcmp ogt float %3, %0
+  %5 = fcmp olt float %3, %1
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

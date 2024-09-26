@@ -1,0 +1,123 @@
+
+; 112 occurrences:
+; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; casadi/optimized/cvodes.c.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/fast_newton.cpp.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
+; casadi/optimized/idas.c.ll
+; casadi/optimized/kinsol_bbdpre.c.ll
+; casadi/optimized/kinsol_direct.c.ll
+; casadi/optimized/linsol_qr.cpp.ll
+; casadi/optimized/lsqr.cpp.ll
+; casadi/optimized/qrqp.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; ceres/optimized/loss_function.cc.ll
+; darktable/optimized/introspection_grain.c.ll
+; flac/optimized/window.c.ll
+; g2o/optimized/robust_kernel_impl.cpp.ll
+; graphviz/optimized/mq.c.ll
+; graphviz/optimized/stuff.c.ll
+; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll
+; gromacs/optimized/colvarbias_restraint.cpp.ll
+; gromacs/optimized/colvarcomp_distances.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
+; gromacs/optimized/colvarcomp_rotations.cpp.ll
+; gromacs/optimized/coupling.cpp.ll
+; gromacs/optimized/dispersioncorrection.cpp.ll
+; gromacs/optimized/energyoutput.cpp.ll
+; gromacs/optimized/ewald.cpp.ll
+; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/gmx_current.cpp.ll
+; gromacs/optimized/histogram.cpp.ll
+; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/measured_polarized.cpp.ll
+; mitsuba3/optimized/roughplastic.cpp.ll
+; nuttx/optimized/lib_exp.c.ll
+; nuttx/optimized/lib_gamma.c.ll
+; nuttx/optimized/lib_lgamma.c.ll
+; ocio/optimized/ExposureContrastOpCPU.cpp.ll
+; ocio/optimized/GradingPrimary.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; openblas/optimized/dhgeqz.c.ll
+; openblas/optimized/dlag2.c.ll
+; openblas/optimized/dlaln2.c.ll
+; openblas/optimized/dlaror.c.ll
+; openblas/optimized/dlatrs.c.ll
+; openblas/optimized/dlatrs3.c.ll
+; openblas/optimized/dtgevc.c.ll
+; opencv/optimized/binary_descriptor.cpp.ll
+; opencv/optimized/corner.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/ippe.cpp.ll
+; opencv/optimized/matchcontours.cpp.ll
+; opencv/optimized/moments.cpp.ll
+; opencv/optimized/p3p.cpp.ll
+; opencv/optimized/quality.cpp.ll
+; opencv/optimized/simpleflow.cpp.ll
+; opencv/optimized/templmatch.cpp.ll
+; openjdk/optimized/cmscam02.ll
+; openjdk/optimized/cmswtpnt.ll
+; openusd/optimized/frustum.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/ArHosekSkyModel.c.ll
+; postgres/optimized/costsize.ll
+; postgres/optimized/float.ll
+; proj/optimized/grids.cpp.ll
+; proj/optimized/healpix.cpp.ll
+; proj/optimized/imw_p.cpp.ll
+; proj/optimized/labrd.cpp.ll
+; proj/optimized/lagrng.cpp.ll
+; proj/optimized/lcca.cpp.ll
+; proj/optimized/omerc.cpp.ll
+; proj/optimized/poly.cpp.ll
+; proj/optimized/urm5.cpp.ll
+; quantlib/optimized/bjerksundstenslandengine.ll
+; quantlib/optimized/cashflows.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/coshestonengine.ll
+; quantlib/optimized/exchangerate.ll
+; quantlib/optimized/fdmhestongreensfct.ll
+; quantlib/optimized/fftengine.ll
+; quantlib/optimized/filonintegral.ll
+; quantlib/optimized/gammadistribution.ll
+; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
+; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
+; quantlib/optimized/gaussian1dswaptionengine.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/gemanroncoroniprocess.ll
+; quantlib/optimized/hestonprocess.ll
+; quantlib/optimized/interestrate.ll
+; quantlib/optimized/mchullwhiteengine.ll
+; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/qdfpamericanengine.ll
+; quantlib/optimized/qdplusamericanengine.ll
+; quantlib/optimized/secondderivativeop.ll
+; quantlib/optimized/secondordermixedderivativeop.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quantlib/optimized/unitofmeasureconversion.ll
+; quest/optimized/QuEST_cpu_local.c.ll
+; raylib/optimized/rtextures.c.ll
+; stat-rs/optimized/11haqsqxcf11j877.ll
+; stat-rs/optimized/350eqnsjcoc7kbdy.ll
+; stat-rs/optimized/43fparx0v87xel0c.ll
+; stat-rs/optimized/4bf6omib3d9godoe.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; stb/optimized/stb_image_resize2.c.ll
+; sundials/optimized/arkode_interp.c.ll
+; sundials/optimized/cvodes.c.ll
+; sundials/optimized/idas.c.ll
+; sundials/optimized/kinsol_bbdpre.c.ll
+; sundials/optimized/kinsol_ls.c.ll
+; wireshark/optimized/packet-btavdtp.c.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, double %1) #0 {
+entry:
+  %2 = fmul double %0, %1
+  %3 = fdiv double 1.000000e+00, %2
+  ret double %3
+}
+
+attributes #0 = { nounwind }

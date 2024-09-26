@@ -1,0 +1,9 @@
+func0000000000000012:                   # @func0000000000000012
+	sraiw	a3, a2, 31
+	srliw	a3, a3, 29
+	add	a2, a2, a3
+	sraiw	a2, a2, 3
+	addw	a0, a0, a2
+	sext.w	a1, a1
+	min	a0, a0, a1
+	ret

@@ -13,10 +13,12 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; icu/optimized/olsontz.ll
 ; linux/optimized/drm_edid.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; openjdk/optimized/escape.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:

@@ -1,0 +1,39 @@
+
+; 27 occurrences:
+; darktable/optimized/colorpicker.c.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_channelmixer.c.ll
+; darktable/optimized/introspection_clahe.c.ll
+; darktable/optimized/introspection_colorbalance.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colorize.c.ll
+; darktable/optimized/introspection_graduatednd.c.ll
+; darktable/optimized/introspection_soften.c.ll
+; darktable/optimized/introspection_splittoning.c.ll
+; imgui/optimized/imgui.cpp.ll
+; llama.cpp/optimized/ggml.c.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_func.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
+; mitsuba3/optimized/specfilm.cpp.ll
+; nori/optimized/colorwheel.cpp.ll
+; ocio/optimized/FileFormatCSP.cpp.ll
+; ocio/optimized/FixedFunctionOpCPU.cpp.ll
+; ocio/optimized/GradingToneOpCPU.cpp.ll
+; openexr/optimized/ImfEnvmap.cpp.ll
+; pbrt-v4/optimized/math.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/Recast.cpp.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fsub float %1, %2
+  %4 = fdiv float %3, %0
+  %5 = fadd float %4, 1.000000e+00
+  ret float %5
+}
+
+attributes #0 = { nounwind }

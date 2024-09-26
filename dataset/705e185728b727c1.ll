@@ -1,8 +1,12 @@
 
-; 5 occurrences:
+; 9 occurrences:
+; gromacs/optimized/hbond.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
+; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; spike/optimized/processor.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; z3/optimized/bool_rewriter.cpp.ll
 ; Function Attrs: nounwind

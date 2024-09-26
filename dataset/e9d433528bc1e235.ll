@@ -1,0 +1,447 @@
+
+%"struct.drjit::Array.57.2487222" = type { %"struct.drjit::StaticArrayImpl.58.2487223" }
+%"struct.drjit::StaticArrayImpl.58.2487223" = type { <4 x float> }
+%struct.NvmeSecCtrlEntry.2595360 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
+%class.btVector3.2706810 = type { [4 x float] }
+
+; 52 occurrences:
+; abc/optimized/abcIfif.c.ll
+; brotli/optimized/block_splitter.c.ll
+; cpython/optimized/_collectionsmodule.ll
+; cpython/optimized/obmalloc.ll
+; cpython/optimized/pystate.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; gromacs/optimized/biasstate.cpp.ll
+; gromacs/optimized/grid.cpp.ll
+; gromacs/optimized/pullutil.cpp.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/rose_build_anchored.cpp.ll
+; libsodium/optimized/librdrand_la-randombytes_internal_random.ll
+; linux/optimized/ata_piix.ll
+; linux/optimized/cipso_ipv4.ll
+; linux/optimized/cls_api.ll
+; linux/optimized/drm_dp_mst_topology.ll
+; linux/optimized/hmac.ll
+; linux/optimized/huf_decompress.ll
+; linux/optimized/io_uring.ll
+; linux/optimized/mdio_bus.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; linux/optimized/skl_watermark.ll
+; linux/optimized/tg3.ll
+; linux/optimized/ttm_pool.ll
+; linux/optimized/xz_dec_lzma2.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; postgres/optimized/to_tsany.ll
+; postgres/optimized/ts_typanalyze.ll
+; postgres/optimized/tsginidx.ll
+; postgres/optimized/tsgistidx.ll
+; postgres/optimized/tsrank.ll
+; postgres/optimized/tsvector.ll
+; postgres/optimized/tsvector_op.ll
+; qemu/optimized/block_file-posix.c.ll
+; qemu/optimized/hw_net_can_ctucan_core.c.ll
+; qemu/optimized/hw_scsi_scsi-generic.c.ll
+; qemu/optimized/tcg.c.ll
+; qemu/optimized/ui_vnc.c.ll
+; ruby/optimized/compile.ll
+; ruby/optimized/vm_backtrace.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/lemon.c.ll
+; wireshark/optimized/packet-oscore.c.ll
+; wireshark/optimized/tvbuff_rdp.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr [0 x i8], ptr %1, i64 0, i64 %2
+  %4 = getelementptr i64, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 329 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcSpeedup.c.ll
+; abc/optimized/compress.c.ll
+; abc/optimized/extraUtilCube.c.ll
+; abc/optimized/extraUtilPerm.c.ll
+; abc/optimized/giaSpeedup.c.ll
+; abc/optimized/ifDec08.c.ll
+; abc/optimized/ifDec10.c.ll
+; abc/optimized/ifTime.c.ll
+; abc/optimized/kitDsd.c.ll
+; abc/optimized/mpmMap.c.ll
+; abc/optimized/nwkSpeedup.c.ll
+; abc/optimized/nwkTiming.c.ll
+; abc/optimized/sbdCore.c.ll
+; abseil-cpp/optimized/symbolize.cc.ll
+; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
+; assimp/optimized/zip.c.ll
+; bdwgc/optimized/gc.c.ll
+; brotli/optimized/metablock.c.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3CpuNarrowPhase.ll
+; bullet3/optimized/b3FixedConstraint.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/b3PgsJacobiSolver.ll
+; bullet3/optimized/btCollisionWorld.ll
+; bullet3/optimized/btCompoundShape.ll
+; bullet3/optimized/btConeTwistConstraint.ll
+; bullet3/optimized/btContinuousConvexCollision.ll
+; bullet3/optimized/btConvexInternalShape.ll
+; bullet3/optimized/btConvexTriangleMeshShape.ll
+; bullet3/optimized/btDeformableBackwardEulerObjective.ll
+; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btDiscreteDynamicsWorld.ll
+; bullet3/optimized/btGImpactBvh.ll
+; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
+; bullet3/optimized/btGhostObject.ll
+; bullet3/optimized/btHingeConstraint.ll
+; bullet3/optimized/btKinematicCharacterController.ll
+; bullet3/optimized/btMLCPSolver.ll
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btMultiBodyGearConstraint.ll
+; bullet3/optimized/btMultiBodyJointLimitConstraint.ll
+; bullet3/optimized/btMultiBodyJointMotor.ll
+; bullet3/optimized/btPolyhedralConvexShape.ll
+; bullet3/optimized/btReducedDeformableBody.ll
+; bullet3/optimized/btRigidBody.ll
+; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
+; bullet3/optimized/btSoftBody.ll
+; clamav/optimized/Ppmd7.c.ll
+; clamav/optimized/aspack.c.ll
+; clamav/optimized/bzlib.c.ll
+; clamav/optimized/pathfn.cpp.ll
+; clamav/optimized/unpack.cpp.ll
+; clap-rs/optimized/421wxj3t0b5xgmkw.ll
+; clap-rs/optimized/thb07xvb2pkztra.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; cmake/optimized/archive_ppmd8.c.ll
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/headers.c.ll
+; cmake/optimized/huf_decompress.c.ll
+; cmake/optimized/lzma_encoder.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; cmake/optimized/ntlm.c.ll
+; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
+; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
+; coreutils-rs/optimized/2xf0tcanjahg0sla.ll
+; coreutils-rs/optimized/5d0bhe82sp4etblu.ll
+; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
+; curl/optimized/libcurl_la-headers.ll
+; curl/optimized/libcurl_la-ntlm.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_retouch.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; darktable/optimized/snapshots.c.ll
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; delta-rs/optimized/3qkwqfk85qralejq.ll
+; diesel-rs/optimized/4u31u22vv9um9irc.ll
+; diesel-rs/optimized/ivb4nc5xs1gnmkx.ll
+; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
+; gromacs/optimized/checkpoint.cpp.ll
+; gromacs/optimized/electricfield.cpp.ll
+; gromacs/optimized/partition.cpp.ll
+; gromacs/optimized/ter_db.cpp.ll
+; gromacs/optimized/toppush.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/zip.c.ll
+; html5ever-rs/optimized/126f7y4y0nk6dpjh.ll
+; html5ever-rs/optimized/1c9wisiomueezeur.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; icu/optimized/ppucd.ll
+; icu/optimized/ucmstate.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
+; imgui/optimized/imgui.cpp.ll
+; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
+; jq/optimized/jv.ll
+; just-rs/optimized/3fhxcueg488gjpka.ll
+; libjpeg-turbo/optimized/jcmaster.c.ll
+; libpng/optimized/pngpread.c.ll
+; libquic/optimized/curve25519.c.ll
+; lief/optimized/aria.c.ll
+; lua/optimized/lstring.ll
+; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; meilisearch-rs/optimized/5g8cdwg08vmvzitq.ll
+; meshlab/optimized/apss.cpp.ll
+; meshlab/optimized/coordinateframe.cpp.ll
+; meshlab/optimized/cubemap.cpp.ll
+; meshlab/optimized/decorate_background.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_manipulators.cpp.ll
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_layer.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/io_bre.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; meshlab/optimized/load_project.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; meshlab/optimized/parameters.cpp.ll
+; meshlab/optimized/ssao.cpp.ll
+; meshlab/optimized/trackball.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; mimalloc/optimized/alloc-aligned.c.ll
+; mimalloc/optimized/alloc.c.ll
+; mimalloc/optimized/heap.c.ll
+; mimalloc/optimized/segment.c.ll
+; miniaudio/optimized/unity.c.ll
+; mitsuba3/optimized/circular.cpp.ll
+; mitsuba3/optimized/conductor.cpp.ll
+; mitsuba3/optimized/cylinder.cpp.ll
+; mitsuba3/optimized/dielectric.cpp.ll
+; mitsuba3/optimized/direct.cpp.ll
+; mitsuba3/optimized/disk.cpp.ll
+; mitsuba3/optimized/grid.cpp.ll
+; mitsuba3/optimized/measured_polarized.cpp.ll
+; mitsuba3/optimized/orthographic.cpp.ll
+; mitsuba3/optimized/path.cpp.ll
+; mitsuba3/optimized/perspective.cpp.ll
+; mitsuba3/optimized/polarizer.cpp.ll
+; mitsuba3/optimized/pplastic.cpp.ll
+; mitsuba3/optimized/projector.cpp.ll
+; mitsuba3/optimized/rectangle.cpp.ll
+; mitsuba3/optimized/retarder.cpp.ll
+; mitsuba3/optimized/roughconductor.cpp.ll
+; mitsuba3/optimized/sdfgrid.cpp.ll
+; mitsuba3/optimized/sggx.cpp.ll
+; mitsuba3/optimized/spectrum.cpp.ll
+; mitsuba3/optimized/sphere.cpp.ll
+; mitsuba3/optimized/stokes.cpp.ll
+; mitsuba3/optimized/thinlens.cpp.ll
+; mitsuba3/optimized/volpath.cpp.ll
+; mitsuba3/optimized/volumegrid.cpp.ll
+; mitsuba3/optimized/xml.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; ocio/optimized/Lut1DOpData.cpp.ll
+; ockam-rs/optimized/1j8f46ag92qmaepd.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; ockam-rs/optimized/2odlvw84qikntvno.ll
+; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
+; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; opencv/optimized/hough.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/types.cpp.ll
+; openjdk/optimized/cmslut.ll
+; openjdk/optimized/filemap.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/jcmaster.ll
+; openjdk/optimized/logOutput.ll
+; openjdk/optimized/metaspaceArena.ll
+; openjdk/optimized/pngpread.ll
+; openspiel/optimized/DealerPar.cpp.ll
+; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/Par.cpp.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; openusd/optimized/cdef.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/Maps.cc.ll
+; openvdb/optimized/Transform.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
+; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/string.ll
+; php/optimized/zend_compile.ll
+; pyo3-rs/optimized/36bd5489ry9qsmb9.ll
+; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
+; raylib/optimized/raudio.c.ll
+; readerwriterqueue/optimized/bench.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; redis/optimized/cluster_legacy.ll
+; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll
+; regex-rs/optimized/32jw1oy2yofrhudk.ll
+; regex-rs/optimized/gbxkn0az9l87aop.ll
+; ripgrep-rs/optimized/1fbennvriruc2bmt.ll
+; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
+; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
+; rust-analyzer-rs/optimized/13i9xm375bsqcpag.ll
+; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
+; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
+; rust-analyzer-rs/optimized/17y19x1rgmlymeti.ll
+; rust-analyzer-rs/optimized/1qp47dim71n9oc0d.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; rust-analyzer-rs/optimized/1ritseoble5k1o6v.ll
+; rust-analyzer-rs/optimized/1vx00lq5wtnxtv17.ll
+; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
+; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
+; rust-analyzer-rs/optimized/23etaswy8pveuce8.ll
+; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
+; rust-analyzer-rs/optimized/2ga8ngdy4siqk3oq.ll
+; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
+; rust-analyzer-rs/optimized/2z79z3pj3t0p2c2c.ll
+; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/37uh3s2rho5t9d0q.ll
+; rust-analyzer-rs/optimized/3mo33cygxsz2niby.ll
+; rust-analyzer-rs/optimized/45r7ra5b0dw60rxb.ll
+; rust-analyzer-rs/optimized/4tgb03bwftsgdtke.ll
+; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
+; rust-analyzer-rs/optimized/4y5vujysnctsd892.ll
+; rust-analyzer-rs/optimized/577813mpo9tvqnpt.ll
+; rust-analyzer-rs/optimized/57k3arpnxwqv62sa.ll
+; rust-analyzer-rs/optimized/57yy3hfi5uyj25tj.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; rust-analyzer-rs/optimized/59dl6i7wymyjqg05.ll
+; rust-analyzer-rs/optimized/9ipmi6my0zkv4p.ll
+; rust-analyzer-rs/optimized/a1gz87jxvbvnc32.ll
+; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
+; rust-analyzer-rs/optimized/ri7xfiosbc1bsgh.ll
+; rust-analyzer-rs/optimized/vux7x0s1st8za9f.ll
+; rust-analyzer-rs/optimized/yi4ld7f3458brcr.ll
+; rustfmt-rs/optimized/2tgwtv970e5remme.ll
+; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
+; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; rustfmt-rs/optimized/4ns0rlx88oaf4rkk.ll
+; rustfmt-rs/optimized/5genfix4t5066ss.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
+; stb/optimized/stb_image.c.ll
+; stockfish/optimized/evaluate_nnue.ll
+; syn/optimized/4llvvcm7ykus6q9g.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; tinyrenderer/optimized/main.cpp.ll
+; tinyrenderer/optimized/our_gl.cpp.ll
+; tls-rs/optimized/2c05x43dk4j7ivkd.ll
+; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
+; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
+; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; wasmtime-rs/optimized/1kan0u7yfu7u6hal.ll
+; wasmtime-rs/optimized/1swth1h1xb2uamky.ll
+; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
+; wasmtime-rs/optimized/1xbg7k9kapo8ag7l.ll
+; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; wasmtime-rs/optimized/3svhyn9z4vtm8iwc.ll
+; wasmtime-rs/optimized/3tddp02mhmdocq2m.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; wasmtime-rs/optimized/3x26ra3en5gtspzq.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
+; zstd/optimized/huf_decompress.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; zxing/optimized/ODDataBarExpandedReader.cpp.ll
+; zxing/optimized/ODDataBarReader.cpp.ll
+; zxing/optimized/QRDataBlock.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw [4 x %"struct.drjit::Array.57.2487222"], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw float, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 12 occurrences:
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; gromacs/optimized/grid.cpp.ll
+; linux/optimized/intel_fb.ll
+; linux/optimized/pcm_lib.ll
+; linux/optimized/skl_watermark.ll
+; linux/optimized/xfrm_policy.ll
+; postgres/optimized/print.ll
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; wireshark/optimized/packet-mac-nr.c.ll
+; wireshark/optimized/packet-umts_fp.c.ll
+; wolfssl/optimized/sha3.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2595360], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 11 occurrences:
+; bullet3/optimized/btSoftBody.ll
+; clamav/optimized/aspack.c.ll
+; clamav/optimized/bzlib.c.ll
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; openusd/optimized/cdef.c.ll
+; openusd/optimized/entropy.c.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw [3 x %class.btVector3.2706810], ptr %1, i64 0, i64 %2
+  %4 = getelementptr float, ptr %3, i64 %0
+  ret ptr %4
+}
+
+attributes #0 = { nounwind }

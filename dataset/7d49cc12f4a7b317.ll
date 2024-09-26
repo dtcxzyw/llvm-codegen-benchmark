@@ -1,7 +1,11 @@
 
-; 4 occurrences:
+; 8 occurrences:
 ; cmake/optimized/cmMakefile.cxx.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; regex-rs/optimized/154fzydpihuymjog.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind

@@ -9,7 +9,7 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 24 occurrences:
 ; abc/optimized/mioSop.c.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/view.cpp.ll
@@ -17,6 +17,15 @@ entry:
 ; libquic/optimized/quic_protocol.cc.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/selection.ll
+; openjdk/optimized/objArrayKlass.ll
+; openjdk/optimized/shenandoahBarrierSet.ll
+; openjdk/optimized/shenandoahCodeRoots.ll
+; openjdk/optimized/shenandoahConcurrentGC.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahNMethod.ll
+; openjdk/optimized/shenandoahRuntime.ll
+; openjdk/optimized/shenandoahStackWatermark.ll
+; openjdk/optimized/stubRoutines.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; verilator/optimized/V3Combine.cpp.ll
@@ -34,7 +43,21 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; gromacs/optimized/toppush.cpp.ll
+; openjdk/optimized/continuationFreezeThaw.ll
+; openjdk/optimized/instanceStackChunkKlass.ll
+; openjdk/optimized/stackChunkOop.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(ptr %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %2, %0
+  %4 = select i1 %1, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; openjdk/optimized/ifnode.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, i1 %1, ptr %2) #0 {

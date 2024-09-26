@@ -1,11 +1,29 @@
 
-; 10 occurrences:
+; 28 occurrences:
+; c3c/optimized/llvm_codegen_type.c.ll
 ; cpython/optimized/fileutils.ll
+; hermes/optimized/DateUtil.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/String.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
+; hermes/optimized/escape.cpp.ll
 ; libquic/optimized/quic_session.cc.ll
 ; libquic/optimized/quic_spdy_session.cc.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/BasicBlock.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
+; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
+; llvm/optimized/ObjCARCContract.cpp.ll
+; llvm/optimized/SampleProfileProbe.cpp.ll
+; llvm/optimized/SanitizerCoverage.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/SjLjEHPrepare.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; openmpi/optimized/common_ompio_file_read.ll
-; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; php/optimized/spl_fixedarray.ll
 ; qemu/optimized/block.c.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll

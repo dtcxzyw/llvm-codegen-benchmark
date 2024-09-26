@@ -1,13 +1,10 @@
 
-; 9 occurrences:
-; assimp/optimized/AMFImporter.cpp.ll
-; assimp/optimized/ColladaParser.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
-; assimp/optimized/XGLLoader.cpp.ll
+; 6 occurrences:
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; linux/optimized/ip6_fib.ll
 ; linux/optimized/move_extent.ll
-; postgres/optimized/refint.ll
+; llvm/optimized/Scalarizer.cpp.ll
+; openspiel/optimized/tensor_game.cc.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {

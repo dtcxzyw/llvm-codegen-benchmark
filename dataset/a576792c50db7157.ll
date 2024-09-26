@@ -1,11 +1,16 @@
 
-; 13 occurrences:
+; 18 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; icu/optimized/measunit_extra.ll
 ; linux/optimized/mcast.ll
+; llvm/optimized/CGCleanup.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
-; openblas/optimized/lapacke_dlarfb.c.ll
+; openjdk/optimized/exceptions.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; yosys/optimized/register.ll
 ; z3/optimized/subpaving_hwf.cpp.ll

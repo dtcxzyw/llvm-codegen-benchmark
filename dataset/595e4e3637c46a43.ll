@@ -1,11 +1,22 @@
 
-; 8 occurrences:
+; 19 occurrences:
+; gromacs/optimized/position_restraints.cpp.ll
+; gromacs/optimized/solvate.cpp.ll
 ; icu/optimized/decNumber.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; jemalloc/optimized/stats.ll
 ; jemalloc/optimized/stats.pic.ll
 ; jemalloc/optimized/stats.sym.ll
 ; jq/optimized/decNumber.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; protobuf/optimized/field_comparator.cc.ll
+; proxygen/optimized/HTTP2Codec.cpp.ll
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
 ; Function Attrs: nounwind

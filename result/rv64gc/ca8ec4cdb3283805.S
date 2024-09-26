@@ -1,0 +1,10 @@
+func0000000000000119:                   # @func0000000000000119
+	sext.w	a3, a2
+	sext.w	a4, a1
+	not	a1, a1
+	add	a1, a1, a2
+	slt	a2, a4, a3
+	negw	a2, a2
+	and	a1, a1, a2
+	mulw	a0, a1, a0
+	ret

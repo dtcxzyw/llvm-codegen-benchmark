@@ -1,8 +1,14 @@
 
-; 3 occurrences:
+; 9 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/LoopFuse.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; postgres/optimized/pg_receivewal.ll
-; rocksdb/optimized/block_based_table_reader.cc.ll
+; proj/optimized/singleoperation.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

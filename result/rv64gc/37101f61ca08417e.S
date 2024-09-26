@@ -1,0 +1,13 @@
+func000000000000000a:                   # @func000000000000000a
+	fsub.s	fa5, fa1, fa2
+	fdiv.s	fa5, fa5, fa0
+	fcvt.w.s	a0, fa5, rtz
+	slti	a0, a0, 0
+	xori	a0, a0, 1
+	ret
+func0000000000000006:                   # @func0000000000000006
+	fsub.s	fa5, fa1, fa2
+	fdiv.s	fa5, fa5, fa0
+	fcvt.w.s	a0, fa5, rtz
+	slti	a0, a0, 0
+	ret

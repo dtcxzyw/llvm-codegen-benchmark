@@ -1,13 +1,11 @@
 
-; 38 occurrences:
-; casadi/optimized/external.cpp.ll
+; 36 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; git/optimized/cat-file.ll
 ; git/optimized/packfile.ll
 ; minetest/optimized/texturepaths.cpp.ll
-; openssl/optimized/openssl-bin-cmp.ll
 ; ruby/optimized/prism.ll
 ; ruby/optimized/vm.ll
 ; yosys/optimized/connwrappers.ll
@@ -47,7 +45,7 @@ entry:
   ret i1 %4
 }
 
-; 103 occurrences:
+; 100 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -115,19 +113,16 @@ entry:
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; libquic/optimized/ec_test.cc.ll
+; libwebp/optimized/image_enc.c.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/netlabel_kapi.ll
 ; linux/optimized/tx.ll
 ; ms-gsl/optimized/span_tests.cpp.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nix/optimized/machines.ll
-; openmpi/optimized/onesided_aggregation.ll
 ; openssl/optimized/openssl-bin-speed.ll
-; openssl/optimized/openssl-bin-x509.ll
 ; php/optimized/pdo_sql_parser.ll
 ; postgres/optimized/pathkeys.ll
-; postgres/optimized/pg_locale.ll
 ; postgres/optimized/tablecmds.ll
 ; qemu/optimized/qom_object.c.ll
 ; slurm/optimized/job_mgr.ll

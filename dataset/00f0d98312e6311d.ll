@@ -1,0 +1,114 @@
+
+; 8 occurrences:
+; abc/optimized/trees.c.ll
+; cmake/optimized/trees.c.ll
+; gromacs/optimized/trees.c.ll
+; libquic/optimized/trees.c.ll
+; linux/optimized/deftree.ll
+; luajit/optimized/minilua.ll
+; minetest/optimized/clouds.cpp.ll
+; zlib/optimized/trees.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; minetest/optimized/clouds.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001b(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = icmp sle i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; minetest/optimized/clouds.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000017(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = icmp sge i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
+}
+
+; 6 occurrences:
+; minetest/optimized/l_item.cpp.ll
+; minetest/optimized/serverpackethandler.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; postgres/optimized/xloginsert.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = icmp sgt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-umts_rlc.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000005c(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i32
+  %3 = sub nsw i32 1, %2
+  %4 = icmp ne i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/ff-memless.ll
+; linux/optimized/sock_reuseport.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 0, %2
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/intel_guc_submission.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 2048, %2
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/intel_guc_submission.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sub nsw i32 2048, %2
+  %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

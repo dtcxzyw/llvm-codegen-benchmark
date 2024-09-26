@@ -1,0 +1,1119 @@
+
+%"class.asmjit::_abi_1_10::Operand.2492325" = type { %"struct.asmjit::_abi_1_10::Operand_.2492326" }
+%"struct.asmjit::_abi_1_10::Operand_.2492326" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2492322", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2492322" = type { i32 }
+%"class.std::vector.1175.2514229" = type { %"struct.std::_Vector_base.1176.2514230" }
+%"struct.std::_Vector_base.1176.2514230" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2514231" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2514231" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2514232" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2514232" = type { ptr, ptr, ptr }
+%struct.hb_glyph_info_t.2621672 = type { i32, i32, i32, %union._hb_var_int_t.2621673, %union._hb_var_int_t.2621673 }
+%union._hb_var_int_t.2621673 = type { i32 }
+%"struct.jsonnet::internal::(anonymous namespace)::Frame.2662250" = type { i32, ptr, %"struct.jsonnet::internal::LocationRange.2662187", i8, %"struct.jsonnet::internal::(anonymous namespace)::Value.2662152", %"struct.jsonnet::internal::(anonymous namespace)::Value.2662152", %"class.__gnu_cxx::__normal_iterator.2662251", %"class.std::map.131.2662217", i32, %"class.std::map.123.2662208", %"class.std::vector.136.2662232", %"class.std::__cxx11::basic_string.58.2662184", i8, %"class.std::__cxx11::basic_string.2662147", ptr, ptr, i32, %"class.std::map.123.2662208" }
+%"struct.jsonnet::internal::LocationRange.2662187" = type { %"class.std::__cxx11::basic_string.2662147", %"struct.jsonnet::internal::Location.2662188", %"struct.jsonnet::internal::Location.2662188" }
+%"struct.jsonnet::internal::Location.2662188" = type { i64, i64 }
+%"struct.jsonnet::internal::(anonymous namespace)::Value.2662152" = type { i32, %union.anon.19.2662164 }
+%union.anon.19.2662164 = type { ptr }
+%"class.__gnu_cxx::__normal_iterator.2662251" = type { ptr }
+%"class.std::map.131.2662217" = type { %"class.std::_Rb_tree.132.2662218" }
+%"class.std::_Rb_tree.132.2662218" = type { %"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2662219" }
+%"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2662219" = type { %"struct.std::_Rb_tree_key_compare.128.2662211", %"struct.std::_Rb_tree_header.2662130" }
+%"struct.std::_Rb_tree_key_compare.128.2662211" = type { %"struct.std::less.129.2662212" }
+%"struct.std::less.129.2662212" = type { i8 }
+%"struct.std::_Rb_tree_header.2662130" = type { %"struct.std::_Rb_tree_node_base.2662132", i64 }
+%"struct.std::_Rb_tree_node_base.2662132" = type { i32, ptr, ptr, ptr }
+%"class.std::vector.136.2662232" = type { %"struct.std::_Vector_base.137.2662233" }
+%"struct.std::_Vector_base.137.2662233" = type { %"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl.2662234" }
+%"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl.2662234" = type { %"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl_data.2662235" }
+%"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl_data.2662235" = type { ptr, ptr, ptr }
+%"class.std::__cxx11::basic_string.58.2662184" = type { %"struct.std::__cxx11::basic_string<char32_t>::_Alloc_hider.2662185", i64, %union.anon.62.2662186 }
+%"struct.std::__cxx11::basic_string<char32_t>::_Alloc_hider.2662185" = type { ptr }
+%union.anon.62.2662186 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2662147" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2662148", i64, %union.anon.2662149 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2662148" = type { ptr }
+%union.anon.2662149 = type { i64, [8 x i8] }
+%"class.std::map.123.2662208" = type { %"class.std::_Rb_tree.124.2662209" }
+%"class.std::_Rb_tree.124.2662209" = type { %"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2662210" }
+%"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2662210" = type { %"struct.std::_Rb_tree_key_compare.128.2662211", %"struct.std::_Rb_tree_header.2662130" }
+%struct.cli_exe_section.2869164 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%"struct.llvm::WinEH::Instruction.2948927" = type <{ ptr, i32, i32, i32, [4 x i8] }>
+%"struct.llvm::IntervalMapImpl::Path::Entry.2949667" = type { ptr, i32, i32 }
+%"class.llvm::SDUse.2958584" = type { %"class.llvm::SDValue.2958235", ptr, ptr, ptr }
+%"class.llvm::SDValue.2958235" = type <{ ptr, i32, [4 x i8] }>
+
+; 23 occurrences:
+; abc/optimized/darLib.c.ll
+; assimp/optimized/ACLoader.cpp.ll
+; brotli/optimized/backward_references_hq.c.ll
+; clamav/optimized/bytecode.c.ll
+; clamav/optimized/pe.c.ll
+; freetype/optimized/pcf.c.ll
+; freetype/optimized/raster.c.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/StatepointLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_opt_loop.ll
+; luajit/optimized/lj_opt_loop_dyn.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; opencv/optimized/aruco_detector.cpp.ll
+; opencv/optimized/bound_min.cpp.ll
+; opencv/optimized/detection_based_tracker.cpp.ll
+; opencv/optimized/select3dobj.cpp.ll
+; opencv/optimized/warpPerspective_demo.cpp.ll
+; php/optimized/zend_jit.ll
+; php/optimized/zend_ssa.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr %"class.asmjit::_abi_1_10::Operand.2492325", ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
+}
+
+; 45 occurrences:
+; clamav/optimized/pe.c.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; cmake/optimized/zdict.c.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/storage.cpp.ll
+; gromacs/optimized/colvardeps.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; icu/optimized/icuexportdata.ll
+; imgui/optimized/imgui_demo.cpp.ll
+; jemalloc/optimized/malloc_io.ll
+; jemalloc/optimized/malloc_io.pic.ll
+; jemalloc/optimized/malloc_io.sym.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
+; llvm/optimized/AnalysisBasedWarnings.cpp.ll
+; luau/optimized/ltable.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; opencv/optimized/caffe_importer.cpp.ll
+; opencv/optimized/darknet_importer.cpp.ll
+; opencv/optimized/detection_based_tracker.cpp.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-shaper-indic.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFilter.cc.ll
+; php/optimized/block_pass.ll
+; php/optimized/zend_compile.ll
+; redis/optimized/ltable.ll
+; redis/optimized/malloc_io.ll
+; redis/optimized/malloc_io.sym.ll
+; rocksdb/optimized/db_impl.cc.ll
+; yosys/optimized/booth.ll
+; yosys/optimized/eval.ll
+; yosys/optimized/opt_expr.ll
+; yosys/optimized/smv.ll
+; z3/optimized/array_rewriter.cpp.ll
+; z3/optimized/dd_bdd.cpp.ll
+; z3/optimized/dd_pdd.cpp.ll
+; z3/optimized/hnf_cutter.cpp.ll
+; z3/optimized/opt_preprocess.cpp.ll
+; z3/optimized/sat_lookahead.cpp.ll
+; zstd/optimized/zdict.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr %"class.std::vector.1175.2514229", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
+}
+
+; 33 occurrences:
+; cvc5/optimized/conjecture_generator.cpp.ll
+; faiss/optimized/AutoTune.cpp.ll
+; folly/optimized/AsyncFdSocket.cpp.ll
+; folly/optimized/AsyncSocket.cpp.ll
+; folly/optimized/AsyncUDPSocket.cpp.ll
+; folly/optimized/HugePages.cpp.ll
+; folly/optimized/JSONSchema.cpp.ll
+; folly/optimized/NetOps.cpp.ll
+; folly/optimized/TestUtil.cpp.ll
+; folly/optimized/Uri.cpp.ll
+; folly/optimized/farmhash.cpp.ll
+; git/optimized/dir.ll
+; jsonnet/optimized/vm.cpp.ll
+; libwebp/optimized/muxinternal.c.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/ByteCodeEmitter.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SymbolizableObjectFile.cpp.ll
+; llvm/optimized/X86EncodingOptimization.cpp.ll
+; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; minetest/optimized/c_content.cpp.ll
+; nuttx/optimized/mm_malloc.c.ll
+; oiio/optimized/farmhash.cpp.ll
+; oiio/optimized/ustring.cpp.ll
+; php/optimized/parse_tz.ll
+; php/optimized/pcre2_jit_compile.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; proxygen/optimized/HTTPSession.cpp.ll
+; redis/optimized/rax.ll
+; sqlite/optimized/sqlite3.ll
+; z3/optimized/ast.cpp.ll
+; z3/optimized/sat_lookahead.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 7
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 62 occurrences:
+; coreutils-rs/optimized/1rno21l8yxg9vs0k.ll
+; coreutils-rs/optimized/2y94il9ncyebrpt0.ll
+; coreutils-rs/optimized/3stdugogn8b6evb1.ll
+; coreutils-rs/optimized/50z74lntrf1cjp27.ll
+; coreutils-rs/optimized/if1nymhyh0puht7.ll
+; coreutils-rs/optimized/jxegc1d49bwppaa.ll
+; delta-rs/optimized/17fowff2nvfrfdbu.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; delta-rs/optimized/3w98mau10rb6qf7d.ll
+; diesel-rs/optimized/1d6yrclfdvavot4r.ll
+; diesel-rs/optimized/1d8pgoqwu3bzfya4.ll
+; diesel-rs/optimized/1zhqdyjorbzdhypm.ll
+; diesel-rs/optimized/2sf6u3r7os1bcdld.ll
+; diesel-rs/optimized/3hbywg7swws1iy6v.ll
+; diesel-rs/optimized/3iqa5s4rcitpn2nv.ll
+; diesel-rs/optimized/3nv3xphjbq527f6u.ll
+; diesel-rs/optimized/3nydn42x30kj4j9q.ll
+; diesel-rs/optimized/gepqftqgym352s.ll
+; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
+; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
+; just-rs/optimized/15iymzte00kmcyqz.ll
+; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; qdrant-rs/optimized/14hho85eanhsaepf.ll
+; qdrant-rs/optimized/5df3kwa3vgb8d75f.ll
+; regex-rs/optimized/4dth5ncaqumdqgby.ll
+; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
+; rust-analyzer-rs/optimized/16ss3ngd5xjxotkj.ll
+; rust-analyzer-rs/optimized/1d113v6a3epuvh5y.ll
+; rust-analyzer-rs/optimized/1inhtflzeuuko7d8.ll
+; rust-analyzer-rs/optimized/1nq05dx97mrwfe5q.ll
+; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
+; rust-analyzer-rs/optimized/2334ao9w0k9d7973.ll
+; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
+; rust-analyzer-rs/optimized/2s0syxcsgn6lrmiu.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/3ezpsp4ix1xt5gp1.ll
+; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
+; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
+; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
+; rust-analyzer-rs/optimized/51m9a8c8z6eylshw.ll
+; rust-analyzer-rs/optimized/5tc27igfpd8lxn0.ll
+; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
+; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
+; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
+; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; tree-sitter-rs/optimized/3iovi93q4avxr89k.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; typst-rs/optimized/3efk6odw6ecl29p.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/3zt5lgc0v7piaijw.ll
+; wasmtime-rs/optimized/136otopym0n1vd5o.ll
+; wasmtime-rs/optimized/1aeertcmltcg0pmp.ll
+; wasmtime-rs/optimized/35t0vcavp8gy3o68.ll
+; wasmtime-rs/optimized/3hwarn3zl2ncla2z.ll
+; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 188 occurrences:
+; duckdb/optimized/ub_duckdb_func_table.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; fmt/optimized/format-test.cc.ll
+; fmt/optimized/format.cc.ll
+; fmt/optimized/gtest-extra.cc.ll
+; fmt/optimized/header-only-test.cc.ll
+; fmt/optimized/os.cc.ll
+; fmt/optimized/printf-test.cc.ll
+; fmt/optimized/ranges-test.cc.ll
+; fmt/optimized/std-test.cc.ll
+; fmt/optimized/unicode-test.cc.ll
+; fmt/optimized/util.cc.ll
+; fmt/optimized/xchar-test.cc.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; gromacs/optimized/gmx_bar.cpp.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; lief/optimized/ASN1Reader.cpp.ll
+; lief/optimized/AndroidIdent.cpp.ll
+; lief/optimized/BinaryParser.cpp.ll
+; lief/optimized/BuildToolVersion.cpp.ll
+; lief/optimized/Builder.cpp.ll
+; lief/optimized/ChainedFixup.cpp.ll
+; lief/optimized/CodeIntegrity.cpp.ll
+; lief/optimized/CodeView.cpp.ll
+; lief/optimized/CodeViewPDB.cpp.ll
+; lief/optimized/CoreAuxv.cpp.ll
+; lief/optimized/CoreFile.cpp.ll
+; lief/optimized/CorePrPsInfo.cpp.ll
+; lief/optimized/CorePrStatus.cpp.ll
+; lief/optimized/CoreSigInfo.cpp.ll
+; lief/optimized/Debug.cpp.ll
+; lief/optimized/DelayImport.cpp.ll
+; lief/optimized/DelayImportEntry.cpp.ll
+; lief/optimized/DyldChainedFixups.cpp.ll
+; lief/optimized/DyldInfo.cpp.ll
+; lief/optimized/DynamicEntryArray.cpp.ll
+; lief/optimized/DynamicEntryLibrary.cpp.ll
+; lief/optimized/DynamicEntryRpath.cpp.ll
+; lief/optimized/DynamicEntryRunPath.cpp.ll
+; lief/optimized/DynamicSharedObject.cpp.ll
+; lief/optimized/File.cpp.ll
+; lief/optimized/FileStream.cpp.ll
+; lief/optimized/GenericContent.cpp.ll
+; lief/optimized/LangCodeItem.cpp.ll
+; lief/optimized/LinkEdit.cpp.ll
+; lief/optimized/LoadConfiguration.cpp.ll
+; lief/optimized/LoadConfigurationV0.cpp.ll
+; lief/optimized/LoadConfigurationV1.cpp.ll
+; lief/optimized/LoadConfigurationV10.cpp.ll
+; lief/optimized/LoadConfigurationV11.cpp.ll
+; lief/optimized/LoadConfigurationV3.cpp.ll
+; lief/optimized/LoadConfigurationV4.cpp.ll
+; lief/optimized/LoadConfigurationV5.cpp.ll
+; lief/optimized/LoadConfigurationV6.cpp.ll
+; lief/optimized/LoadConfigurationV7.cpp.ll
+; lief/optimized/LoadConfigurationV8.cpp.ll
+; lief/optimized/LoadConfigurationV9.cpp.ll
+; lief/optimized/MemoryStream.cpp.ll
+; lief/optimized/Note.cpp.ll
+; lief/optimized/NoteAbi.cpp.ll
+; lief/optimized/NoteGnuProperty.cpp.ll
+; lief/optimized/PKCS9SigningTime.cpp.ll
+; lief/optimized/Pogo.cpp.ll
+; lief/optimized/PogoEntry.cpp.ll
+; lief/optimized/RelocationEntry.cpp.ll
+; lief/optimized/RelocationFixup.cpp.ll
+; lief/optimized/Repro.cpp.ll
+; lief/optimized/ResourceNode.cpp.ll
+; lief/optimized/ResourceStringFileInfo.cpp.ll
+; lief/optimized/ResourceVarFileInfo.cpp.ll
+; lief/optimized/ResourceVersion.cpp.ll
+; lief/optimized/ResourcesManager.cpp.ll
+; lief/optimized/ResourcesParser.cpp.ll
+; lief/optimized/RichHeader.cpp.ll
+; lief/optimized/Signature.cpp.ll
+; lief/optimized/SignatureParser.cpp.ll
+; lief/optimized/SignerInfo.cpp.ll
+; lief/optimized/SpanStream.cpp.ll
+; lief/optimized/SpcIndirectData.cpp.ll
+; lief/optimized/StackSize.cpp.ll
+; lief/optimized/TLS.cpp.ll
+; lief/optimized/TrieNode.cpp.ll
+; lief/optimized/Type.cpp.ll
+; lief/optimized/VectorStream.cpp.ll
+; lief/optimized/hash_stream.cpp.ll
+; lief/optimized/x509.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; linux/optimized/af_packet.ll
+; linux/optimized/namei_vfat.ll
+; minetest/optimized/CImageLoaderBMP.cpp.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsinput.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/jpegoutput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/rlaoutput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/xmp.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; opencv/optimized/persistence.cpp.ll
+; postgres/optimized/gindatapage.ll
+; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; spdlog/optimized/spdlog.cpp.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
+  %3 = and i64 %2, 8589934560
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -1
+  ret ptr %5
+}
+
+; 463 occurrences:
+; actix-rs/optimized/17u9ijoz8shmpsbe.ll
+; actix-rs/optimized/188iedib5veo0ne9.ll
+; actix-rs/optimized/190uhijawk1lki5o.ll
+; actix-rs/optimized/1rmq6g519rw6hl6a.ll
+; actix-rs/optimized/2pgtlhl4qd060m9c.ll
+; actix-rs/optimized/2sajg5of2ft10y8h.ll
+; actix-rs/optimized/2wg1z1eatrkafji9.ll
+; actix-rs/optimized/3nvglea5fxa22p93.ll
+; actix-rs/optimized/3r4ha69xj2bs6l86.ll
+; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
+; actix-rs/optimized/3tnlvci61w0nl5yv.ll
+; actix-rs/optimized/3z8xs86q8mjw7jd4.ll
+; actix-rs/optimized/48duj8tg7v09rmpe.ll
+; actix-rs/optimized/48s07gwzc9uq6bop.ll
+; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
+; actix-rs/optimized/4qw0kfiz3ki66qyr.ll
+; actix-rs/optimized/4vksfexudgt1qids.ll
+; actix-rs/optimized/52qe9gl98lnufrop.ll
+; actix-rs/optimized/7rz97b55rz3o3h7.ll
+; actix-rs/optimized/cd3xchev5fp4w96.ll
+; actix-rs/optimized/d7z2ueos8qkfuul.ll
+; actix-rs/optimized/x5wdyzwp9hx5e8t.ll
+; actix-rs/optimized/xcr5yeosl21p44j.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
+; clap-rs/optimized/46qpaucouebcxfrx.ll
+; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
+; coreutils-rs/optimized/11fdr7kbbvsdssj2.ll
+; coreutils-rs/optimized/11kjrmy11gxmilns.ll
+; coreutils-rs/optimized/11le6x0de15gpyo5.ll
+; coreutils-rs/optimized/12m3ujwrafz1081k.ll
+; coreutils-rs/optimized/12z6icc2yyeo0v0b.ll
+; coreutils-rs/optimized/12zaot09cnei5hk4.ll
+; coreutils-rs/optimized/142lvpbd2x51gts0.ll
+; coreutils-rs/optimized/15uwc3zyhqyhtivg.ll
+; coreutils-rs/optimized/1b5ok0xs5tfm0duf.ll
+; coreutils-rs/optimized/1c0bwvv43j289y30.ll
+; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
+; coreutils-rs/optimized/1f8oi36d4s80igur.ll
+; coreutils-rs/optimized/1gv0a8i489qy3ae6.ll
+; coreutils-rs/optimized/1iiitxeck9g2ksb7.ll
+; coreutils-rs/optimized/1mhb4e8l0v9dncti.ll
+; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
+; coreutils-rs/optimized/1pn74b1r3k1s4pck.ll
+; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
+; coreutils-rs/optimized/1rdobp60b3xxy0g7.ll
+; coreutils-rs/optimized/1ui3yxdetdbghtw.ll
+; coreutils-rs/optimized/1ule2h3a0hqz383r.ll
+; coreutils-rs/optimized/1unp4st43r7zdtb0.ll
+; coreutils-rs/optimized/1w1fr6oesdx75u3.ll
+; coreutils-rs/optimized/1w8bjqmsfkf0ntfz.ll
+; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
+; coreutils-rs/optimized/1y438ox107i37q6b.ll
+; coreutils-rs/optimized/26a2uyrtdxle93un.ll
+; coreutils-rs/optimized/27c7vqo44geqht17.ll
+; coreutils-rs/optimized/294emqhgwj8ibka.ll
+; coreutils-rs/optimized/2ahdhlyatyqueo1a.ll
+; coreutils-rs/optimized/2cdf2d3oxld9pqvr.ll
+; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
+; coreutils-rs/optimized/2etc5gfaqs8pnymi.ll
+; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
+; coreutils-rs/optimized/2l6nxvvz97tcra6u.ll
+; coreutils-rs/optimized/2pqvixtdp9wizsl2.ll
+; coreutils-rs/optimized/2pt9vox7afjom7gj.ll
+; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
+; coreutils-rs/optimized/31vrb73337u20kex.ll
+; coreutils-rs/optimized/335dxrzb7ducnzi9.ll
+; coreutils-rs/optimized/335iccg14rff9vbo.ll
+; coreutils-rs/optimized/389ib4lq03w39x6a.ll
+; coreutils-rs/optimized/3a0v4ncg7do5itt4.ll
+; coreutils-rs/optimized/3a9rbx42d86fwku2.ll
+; coreutils-rs/optimized/3b2b3u4n6b7tc1s0.ll
+; coreutils-rs/optimized/3jbb9tw7701fm28c.ll
+; coreutils-rs/optimized/3l08u1tfq6vahgiy.ll
+; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
+; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
+; coreutils-rs/optimized/3r2vyvwpz7j7c5gy.ll
+; coreutils-rs/optimized/3ri12qup21vdgfw4.ll
+; coreutils-rs/optimized/3ummpw5ql7d4y98b.ll
+; coreutils-rs/optimized/3vfybkcp5ufzff0e.ll
+; coreutils-rs/optimized/3wh8t8l0mi6tzx9q.ll
+; coreutils-rs/optimized/3x959pa9na58uqov.ll
+; coreutils-rs/optimized/3xd3ofdwe43hl3cs.ll
+; coreutils-rs/optimized/3yatagipaedyu36z.ll
+; coreutils-rs/optimized/420s040g7rwxzzqz.ll
+; coreutils-rs/optimized/45371cbry3cnr73y.ll
+; coreutils-rs/optimized/45fhbmkiqhp2z7a8.ll
+; coreutils-rs/optimized/45ibbzl0las8sgut.ll
+; coreutils-rs/optimized/4akyoq84dmd3ywue.ll
+; coreutils-rs/optimized/4az5xpme70gqxylk.ll
+; coreutils-rs/optimized/4ei1tppxpketfz5g.ll
+; coreutils-rs/optimized/4ez78vmdxhxkcda.ll
+; coreutils-rs/optimized/4f3jlvkyrv359w1l.ll
+; coreutils-rs/optimized/4h7z3ghynwnbx7iw.ll
+; coreutils-rs/optimized/4j66t66xy69es170.ll
+; coreutils-rs/optimized/4kegmj2upwa8iiok.ll
+; coreutils-rs/optimized/4kgtcn9evb3aj2za.ll
+; coreutils-rs/optimized/4l9vhhaykgv9gwpd.ll
+; coreutils-rs/optimized/4tt85gim3dxp9l65.ll
+; coreutils-rs/optimized/4wgjawmszqchd55g.ll
+; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
+; coreutils-rs/optimized/4wx66ytsj6r522cv.ll
+; coreutils-rs/optimized/4xd42pwugxo8maov.ll
+; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
+; coreutils-rs/optimized/4z7fkefxhkjcjrbz.ll
+; coreutils-rs/optimized/504abxd4zc2m0le8.ll
+; coreutils-rs/optimized/50yk4ggbj78ukvx1.ll
+; coreutils-rs/optimized/5362q9qekdi7amtn.ll
+; coreutils-rs/optimized/56pmeu9oowf5l9r6.ll
+; coreutils-rs/optimized/59caop8p2vwwcpcd.ll
+; coreutils-rs/optimized/5ahm1r9stsd779is.ll
+; coreutils-rs/optimized/5zsuzwbvn6hx7wp.ll
+; coreutils-rs/optimized/67mjb2gvdjt043z.ll
+; coreutils-rs/optimized/8nf4jc48zp3hgya.ll
+; coreutils-rs/optimized/942h4e64iw767xo.ll
+; coreutils-rs/optimized/9xo8eu2r42z97lz.ll
+; coreutils-rs/optimized/bop1lnrjt6srds1.ll
+; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
+; coreutils-rs/optimized/exyrvqdrhfrgv84.ll
+; coreutils-rs/optimized/ga96dm5uabspngk.ll
+; coreutils-rs/optimized/gy31avu15bepulc.ll
+; coreutils-rs/optimized/h56aibhqef681ic.ll
+; coreutils-rs/optimized/icw7irkz6mu05a9.ll
+; coreutils-rs/optimized/l1lqbqyvia1m667.ll
+; coreutils-rs/optimized/lxs6l3vkum8cy1f.ll
+; coreutils-rs/optimized/plvfu1855xjk96c.ll
+; coreutils-rs/optimized/q1uj1dvgnsml25y.ll
+; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
+; coreutils-rs/optimized/v09xnmp3q4laojw.ll
+; coreutils-rs/optimized/vppmuz1ymgkjyvp.ll
+; coreutils-rs/optimized/vylkzjuq6grxql.ll
+; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
+; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
+; cpython/optimized/dictobject.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_colorin.c.ll
+; darktable/optimized/introspection_defringe.c.ll
+; darktable/optimized/introspection_denoiseprofile.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_scalepixels.c.ll
+; darktable/optimized/introspection_soften.c.ll
+; delta-rs/optimized/11f8x98axanecwnw.ll
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; delta-rs/optimized/18hy949kj2hgmhpt.ll
+; delta-rs/optimized/19o44o7ada9hlwut.ll
+; delta-rs/optimized/1iagj3aecrejld8d.ll
+; delta-rs/optimized/264wku5om6u5pdmz.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/2n0ez5zuwgs53clg.ll
+; delta-rs/optimized/3i6wl0c802davmoy.ll
+; delta-rs/optimized/3qkwqfk85qralejq.ll
+; delta-rs/optimized/3yt47vxpbp4b5dih.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; delta-rs/optimized/4yzqn3zldbxccs8p.ll
+; delta-rs/optimized/4zvphat0q9a964bz.ll
+; delta-rs/optimized/55engpi7kd52qzvr.ll
+; delta-rs/optimized/588o35exto3pi57p.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; image-rs/optimized/249ukonr3l56u09i.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; image-rs/optimized/5oy2v8fghrh79s8.ll
+; influxdb-rs/optimized/3k3vgyqcou07q2z6.ll
+; influxdb-rs/optimized/4bpmt5749p4g145g.ll
+; influxdb-rs/optimized/u7z03ejdn0bs7a8.ll
+; just-rs/optimized/1t8x2pim4pkxeam1.ll
+; just-rs/optimized/1uppz7l1e89fp8n7.ll
+; just-rs/optimized/2sotx4bdu006z307.ll
+; just-rs/optimized/52uhuxfcop8n85cu.ll
+; linux/optimized/ip_sockglue.ll
+; linux/optimized/scm.ll
+; linux/optimized/sock.ll
+; linux/optimized/super.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
+; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
+; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; meilisearch-rs/optimized/3boqjkyppnj30yn0.ll
+; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
+; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
+; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
+; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
+; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
+; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
+; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
+; mini-lsm-rs/optimized/2pljfrpd43hxhxjr.ll
+; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
+; mini-lsm-rs/optimized/3m8k5ep4f562pm44.ll
+; mini-lsm-rs/optimized/45avienzelzw747t.ll
+; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
+; mini-lsm-rs/optimized/59xebgypolxascxr.ll
+; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
+; ockam-rs/optimized/10ibqeca0q5t101b.ll
+; ockam-rs/optimized/10k16szy9z0gnoyc.ll
+; ockam-rs/optimized/111eznecj9pn2lkp.ll
+; ockam-rs/optimized/11bh5irimcsbm5u.ll
+; ockam-rs/optimized/11t2l14a5kpl8jvh.ll
+; ockam-rs/optimized/13b0iru6w2t4kov8.ll
+; ockam-rs/optimized/1411u8drt798uxi8.ll
+; ockam-rs/optimized/14m30vbbwzpy4dn0.ll
+; ockam-rs/optimized/17lrt90yj9gplgzp.ll
+; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
+; ockam-rs/optimized/1e5oqa6s9mthz3yq.ll
+; ockam-rs/optimized/1fsy5ihkfk2uw2z3.ll
+; ockam-rs/optimized/1gc4y6newn78g6fr.ll
+; ockam-rs/optimized/1j8f46ag92qmaepd.ll
+; ockam-rs/optimized/1jxqq0c8ppka0dgc.ll
+; ockam-rs/optimized/1kf3nciefeyq4tfp.ll
+; ockam-rs/optimized/1l1yexp2yu73yat8.ll
+; ockam-rs/optimized/1p7irsir7pcyegbj.ll
+; ockam-rs/optimized/1sna1kukcpmrcv4c.ll
+; ockam-rs/optimized/1u6h88ugr8rwmiaw.ll
+; ockam-rs/optimized/1u7cc2g6nvmoyh9z.ll
+; ockam-rs/optimized/1vlwqipp8gcyyd4a.ll
+; ockam-rs/optimized/1w1enrqpm17pnxjo.ll
+; ockam-rs/optimized/1webxc5tel1wnzl3.ll
+; ockam-rs/optimized/1ybc3zt4ylwuzsl9.ll
+; ockam-rs/optimized/1ybu237lwdn3r9dv.ll
+; ockam-rs/optimized/1ztake8eabyohrmo.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; ockam-rs/optimized/24ov58ot1didqxwe.ll
+; ockam-rs/optimized/24riastqfxe8dcf.ll
+; ockam-rs/optimized/274k60s1efyiyv8u.ll
+; ockam-rs/optimized/29qo5g7aujs2ujt.ll
+; ockam-rs/optimized/2b6p4x953b2bb7vv.ll
+; ockam-rs/optimized/2bg7joofo9nayga5.ll
+; ockam-rs/optimized/2btxi82q4wq22oyk.ll
+; ockam-rs/optimized/2ck5v5sgkr8z8vz5.ll
+; ockam-rs/optimized/2cqk2bthd7hdsbp.ll
+; ockam-rs/optimized/2jdafynperrjfnwp.ll
+; ockam-rs/optimized/2kfsy1g3v370u61t.ll
+; ockam-rs/optimized/2l947gsuqi8rck2p.ll
+; ockam-rs/optimized/2laqgemyvjk4w4zu.ll
+; ockam-rs/optimized/2lsooj7vvp8k6cii.ll
+; ockam-rs/optimized/2n1wyoax2qficosw.ll
+; ockam-rs/optimized/2n3khw32ncj4zrb8.ll
+; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
+; ockam-rs/optimized/2px2is5654ttwkil.ll
+; ockam-rs/optimized/2qz3huiqqut486jt.ll
+; ockam-rs/optimized/2rihuzhmont6zqqo.ll
+; ockam-rs/optimized/2tmak98bqpx7zrgd.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
+; ockam-rs/optimized/2v5jo34gglxi7dx1.ll
+; ockam-rs/optimized/2wmaz4egimtz3sac.ll
+; ockam-rs/optimized/2xc1d9uwzo37kjfb.ll
+; ockam-rs/optimized/2zpb9qmdbtl1z92t.ll
+; ockam-rs/optimized/30d7m2hcfvgg0p05.ll
+; ockam-rs/optimized/31jw4yzcb70q4z70.ll
+; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; ockam-rs/optimized/33c6jc0dyxwrepo7.ll
+; ockam-rs/optimized/34q0qddqdcicgigp.ll
+; ockam-rs/optimized/35pvxddga2itk8eb.ll
+; ockam-rs/optimized/368texf7kw4palgx.ll
+; ockam-rs/optimized/371lbzotxaob5lvd.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/37wpz1tx0oad4jej.ll
+; ockam-rs/optimized/3814z5tzzmmk2te1.ll
+; ockam-rs/optimized/3919s5zr4j7s800u.ll
+; ockam-rs/optimized/39elqh75xhewanjo.ll
+; ockam-rs/optimized/3ai7h96ib4cyqp26.ll
+; ockam-rs/optimized/3d2putwb383bfowi.ll
+; ockam-rs/optimized/3fm0cf0yvmhfr2yc.ll
+; ockam-rs/optimized/3j9z39kni00li7al.ll
+; ockam-rs/optimized/3jggqsoeoucpes36.ll
+; ockam-rs/optimized/3mikojidw926fus2.ll
+; ockam-rs/optimized/3mx0spe4b10ptbw0.ll
+; ockam-rs/optimized/3pjzu1cfy8ymmm8m.ll
+; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
+; ockam-rs/optimized/3srf4j1tze6zn8ex.ll
+; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; ockam-rs/optimized/3w3eyv0kfqvzbr4y.ll
+; ockam-rs/optimized/3ytys96dj1bci8ru.ll
+; ockam-rs/optimized/40iecfzh8kpu4oof.ll
+; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; ockam-rs/optimized/489ih6jpsphgjhwq.ll
+; ockam-rs/optimized/48idw0lyc6jqw85q.ll
+; ockam-rs/optimized/48m1civl6b0v2j4c.ll
+; ockam-rs/optimized/4df8gyzy0u3roc94.ll
+; ockam-rs/optimized/4edd6rk9ug30grxn.ll
+; ockam-rs/optimized/4f34xiu6efu0qenm.ll
+; ockam-rs/optimized/4gv6ak02caawu3g.ll
+; ockam-rs/optimized/4h15go5rbmdr09f8.ll
+; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
+; ockam-rs/optimized/4j4a1v5i1sqbggrm.ll
+; ockam-rs/optimized/4kvhnp2ywtthbq6d.ll
+; ockam-rs/optimized/4o6a2p97oy1nlemw.ll
+; ockam-rs/optimized/4op0lm10vgcgt7cp.ll
+; ockam-rs/optimized/4u1bjhkuz3nkthw0.ll
+; ockam-rs/optimized/52hk8y4wcm3nv0fi.ll
+; ockam-rs/optimized/5332wkk5omjw03ok.ll
+; ockam-rs/optimized/53knze3nqsbtlge8.ll
+; ockam-rs/optimized/546kmyffuelq6tnl.ll
+; ockam-rs/optimized/54uy9wcqqr2soa72.ll
+; ockam-rs/optimized/57qwn9uk5g87r7x.ll
+; ockam-rs/optimized/594kg43rtueps2cx.ll
+; ockam-rs/optimized/59na08zlxqp9p17s.ll
+; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
+; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
+; ockam-rs/optimized/5faa5l2dkmayqy36.ll
+; ockam-rs/optimized/5gcqm38vn3t9jxog.ll
+; ockam-rs/optimized/7hitgxreqt236i.ll
+; ockam-rs/optimized/8bl7ikep7ibcq21.ll
+; ockam-rs/optimized/8g2r22yshp3qi00.ll
+; ockam-rs/optimized/8vw3dw8isly7xg2.ll
+; ockam-rs/optimized/dhoovpx53ppvqd6.ll
+; ockam-rs/optimized/fvcfhm3saxk0gr8.ll
+; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
+; ockam-rs/optimized/h4di1rbusc24odc.ll
+; ockam-rs/optimized/lcclztcuaxx9mqt.ll
+; ockam-rs/optimized/lh8tdr09s5mpabx.ll
+; ockam-rs/optimized/obnl8wv2za00d1i.ll
+; ockam-rs/optimized/pwlgj8q4pvsve1y.ll
+; ockam-rs/optimized/scbbgml6cvr1nwt.ll
+; ockam-rs/optimized/y59h8jnu9k73im6.ll
+; ockam-rs/optimized/y9mp3cipt8wluu6.ll
+; ockam-rs/optimized/z0rkq6s90lca7cm.ll
+; php/optimized/zend_language_scanner.ll
+; postgres/optimized/bufmgr.ll
+; postgres/optimized/generation.ll
+; qemu/optimized/linux-user_syscall.c.ll
+; regex-rs/optimized/10eccrragw6uslmk.ll
+; regex-rs/optimized/1x04d8372kemp7hd.ll
+; regex-rs/optimized/3bb5ih3626n2er1d.ll
+; regex-rs/optimized/3ixfkxlmcuecmmus.ll
+; regex-rs/optimized/4sqmacerw61c696o.ll
+; regex-rs/optimized/4tj6blcjgz33swwj.ll
+; regex-rs/optimized/6c2onrqlphpgxx0.ll
+; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
+; ripgrep-rs/optimized/2425miidforqaenw.ll
+; ripgrep-rs/optimized/2byk283iafgd1x3i.ll
+; ripgrep-rs/optimized/2f6rw61gsgw15nux.ll
+; ripgrep-rs/optimized/2o34yknt0qgloo1w.ll
+; ripgrep-rs/optimized/36tk92kkpxdef558.ll
+; ripgrep-rs/optimized/3ujtdws8zoe4o3t7.ll
+; ripgrep-rs/optimized/4rymer90zmfu5xtd.ll
+; ripgrep-rs/optimized/4uyvhmw63hdvr2we.ll
+; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
+; ripgrep-rs/optimized/5baox15rvywa81ar.ll
+; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
+; rust-analyzer-rs/optimized/13i9xm375bsqcpag.ll
+; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
+; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
+; rust-analyzer-rs/optimized/1llrnjwin3zvhpvx.ll
+; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
+; rust-analyzer-rs/optimized/1odpv3eeje06yf96.ll
+; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
+; rust-analyzer-rs/optimized/28jcyytu5knrz2fd.ll
+; rust-analyzer-rs/optimized/2jv2sqtzbp0mun3n.ll
+; rust-analyzer-rs/optimized/2lato44ro4ucoan4.ll
+; rust-analyzer-rs/optimized/2rdswb8f6bh7ph2o.ll
+; rust-analyzer-rs/optimized/2z8yitblr1xxwxav.ll
+; rust-analyzer-rs/optimized/3e2k9rvojvac5ok5.ll
+; rust-analyzer-rs/optimized/3fxp92r9t1x66wd0.ll
+; rust-analyzer-rs/optimized/3ojrwagwutxscby0.ll
+; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
+; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; rust-analyzer-rs/optimized/557t1ercvtihjjps.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; rust-analyzer-rs/optimized/62jls0djfkqesn3.ll
+; rust-analyzer-rs/optimized/6geurunh5eorswv.ll
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; rust-analyzer-rs/optimized/a1gz87jxvbvnc32.ll
+; smol-rs/optimized/1p7wu8w0t94kgeq2.ll
+; tls-rs/optimized/1oa4q9ydtxtlathz.ll
+; tls-rs/optimized/2xhpv4vf07do7r8g.ll
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; tls-rs/optimized/526n7g8rwc65lc9b.ll
+; tls-rs/optimized/59h61akxu6z29dlt.ll
+; tls-rs/optimized/5b2dkiwfbrdnen43.ll
+; tls-rs/optimized/z2cy5bf5cayilz9.ll
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; tokio-rs/optimized/27wc5j4mui8auwxp.ll
+; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
+; tokio-rs/optimized/5fqt3exrqd05oqq2.ll
+; tokio-rs/optimized/um69cc05lgsv45r.ll
+; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
+; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; tree-sitter-rs/optimized/2cvruiwm27upsbz5.ll
+; tree-sitter-rs/optimized/2czk4owdq0ube9pw.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/2ihg39n1dg1po2l8.ll
+; tree-sitter-rs/optimized/3flgp21wlj9z2cn6.ll
+; tree-sitter-rs/optimized/3qy4i2l3swpfs9q5.ll
+; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
+; tree-sitter-rs/optimized/4zakogfbfa4d80x8.ll
+; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; tree-sitter-rs/optimized/5exgj98ug936yba5.ll
+; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; tree-sitter-rs/optimized/hpag7w091st4k7n.ll
+; typst-rs/optimized/15cosas43yh9dmeo.ll
+; typst-rs/optimized/1c2qpu6zljc8gscz.ll
+; typst-rs/optimized/1ieizyrayutd063g.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/42n69x09j7wzwnay.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/4p30esqzpn2o5olu.ll
+; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; typst-rs/optimized/xrijsyrxk2ciyk9.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; wasmtime-rs/optimized/1vk9ndqtrqpdgown.ll
+; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
+; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; wasmtime-rs/optimized/33slbp9da8waph2q.ll
+; wasmtime-rs/optimized/36wnn78o6fi28w8m.ll
+; wasmtime-rs/optimized/3flv1664rwe55t82.ll
+; wasmtime-rs/optimized/3hwarn3zl2ncla2z.ll
+; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
+; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
+; wasmtime-rs/optimized/3qxuuvy9ipi9muus.ll
+; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
+; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
+; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
+; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
+; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; wireshark/optimized/wmem_allocator_block.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -1
+  %3 = and i64 %2, -16
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 4 occurrences:
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
+; opencv/optimized/aruco_detector.cpp.ll
+; opencv/optimized/checker_detector.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 6 occurrences:
+; linux/optimized/kcore.ll
+; openjdk/optimized/cdsEnumKlass.ll
+; openjdk/optimized/runTimeClassInfo.ll
+; postgres/optimized/lock.ll
+; postgres/optimized/resowner.ll
+; postgres/optimized/tsvector_op.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 7
+  %3 = and i64 %2, -8
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 4 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-shaper-indic.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr %struct.hb_glyph_info_t.2621672, ptr %0, i64 %3, i32 3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; git/optimized/fmt-merge-msg.ll
+; jsonnet/optimized/vm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 2147483647
+  %3 = and i64 %2, 2147483647
+  %4 = getelementptr %"struct.jsonnet::internal::(anonymous namespace)::Frame.2662250", ptr %0, i64 %3, i32 10, i32 0, i32 0, i32 0, i32 1
+  ret ptr %4
+}
+
+; 7 occurrences:
+; clamav/optimized/pe.c.ll
+; freetype/optimized/truetype.c.ll
+; icu/optimized/msgfmt.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 1
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr %struct.cli_exe_section.2869164, ptr %0, i64 %3, i32 2
+  ret ptr %4
+}
+
+; 7 occurrences:
+; llvm/optimized/InlineSpiller.cpp.ll
+; llvm/optimized/InstrEmitter.cpp.ll
+; llvm/optimized/LiveRangeEdit.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SelectionDAGISel.cpp.ll
+; openusd/optimized/read.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 2147483647
+  %3 = and i64 %2, 2147483647
+  %4 = getelementptr %"struct.llvm::WinEH::Instruction.2948927", ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 20 occurrences:
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DFAEmitter.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InterferenceCache.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveIntervalUnion.cpp.ll
+; llvm/optimized/NativeSession.cpp.ll
+; llvm/optimized/ParseDecl.cpp.ll
+; llvm/optimized/ParseInit.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
+; llvm/optimized/SymbolizableObjectFile.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/X86EncodingOptimization.cpp.ll
+; llvm/optimized/X86InstComments.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967294
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr %"struct.llvm::IntervalMapImpl::Path::Entry.2949667", ptr %0, i64 %3, i32 2
+  ret ptr %4
+}
+
+; 5 occurrences:
+; linux/optimized/kcore.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGCoroutine.cpp.ll
+; llvm/optimized/CGException.cpp.ll
+; llvm/optimized/SemaModule.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = and i64 %2, -8
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 19 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/InstrEmitter.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/ResourcePriorityQueue.cpp.ll
+; llvm/optimized/ScheduleDAGFast.cpp.ll
+; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SelectionDAGISel.cpp.ll
+; llvm/optimized/SelectionDAGPrinter.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; llvm/optimized/X86MCInstLower.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 4294967295
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr %"class.llvm::SDUse.2958584", ptr %0, i64 %3, i32 0, i32 1
+  ret ptr %4
+}
+
+; 3 occurrences:
+; postgres/optimized/bufmgr.ll
+; wireshark/optimized/wmem_allocator_block.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 16
+  %3 = and i64 %2, 536870896
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 6 occurrences:
+; linux/optimized/bio.ll
+; linux/optimized/inline.ll
+; linux/optimized/ip6_tables.ll
+; linux/optimized/ip_tables.ll
+; linux/optimized/namei.ll
+; postgres/optimized/twophase.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 103
+  %3 = and i64 %2, 2199023255544
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 88
+  ret ptr %5
+}
+
+attributes #0 = { nounwind }

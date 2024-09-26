@@ -1,0 +1,18 @@
+func000000000000003f:                   # @func000000000000003f
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	and	a0, a0, a2
+	add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, 4
+	ret
+func000000000000003d:                   # @func000000000000003d
+	lui	a2, 16
+	addiw	a2, a2, -1
+	and	a1, a1, a2
+	and	a0, a0, a2
+	add	a0, a0, a1
+	slli	a0, a0, 1
+	addi	a0, a0, -5
+	ret

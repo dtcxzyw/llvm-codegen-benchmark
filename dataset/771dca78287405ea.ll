@@ -1,0 +1,227 @@
+
+; 203 occurrences:
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver3.c.ll
+; abc/optimized/solver.c.ll
+; annoy/optimized/annoymodule.ll
+; arrow/optimized/bpacking.cc.ll
+; arrow/optimized/decimal.cc.ll
+; c3c/optimized/bigint.c.ll
+; coreutils-rs/optimized/11hiuykak1azonq6.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; eastl/optimized/BenchmarkBitset.cpp.ll
+; eastl/optimized/Int128_t.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; flac/optimized/bitwriter.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; fmt/optimized/format-test.cc.ll
+; fmt/optimized/format.cc.ll
+; fmt/optimized/gtest-extra.cc.ll
+; fmt/optimized/header-only-test.cc.ll
+; fmt/optimized/os.cc.ll
+; fmt/optimized/unicode-test.cc.ll
+; fmt/optimized/util.cc.ll
+; icu/optimized/number_decimalquantity.ll
+; jemalloc/optimized/ckh.ll
+; jemalloc/optimized/ckh.pic.ll
+; jemalloc/optimized/ckh.sym.ll
+; libquic/optimized/gcm.c.ll
+; libquic/optimized/poly1305_vec.c.ll
+; libquic/optimized/shift.c.ll
+; libquic/optimized/xts.c.ll
+; libsodium/optimized/libsodium_la-poly1305_donna.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; libwebp/optimized/bit_reader_utils.c.ll
+; libwebp/optimized/tree_dec.c.ll
+; libwebp/optimized/vp8_dec.c.ll
+; lief/optimized/ASN1Reader.cpp.ll
+; lief/optimized/AndroidIdent.cpp.ll
+; lief/optimized/BinaryParser.cpp.ll
+; lief/optimized/BuildToolVersion.cpp.ll
+; lief/optimized/Builder.cpp.ll
+; lief/optimized/ChainedFixup.cpp.ll
+; lief/optimized/CodeIntegrity.cpp.ll
+; lief/optimized/CodeView.cpp.ll
+; lief/optimized/CodeViewPDB.cpp.ll
+; lief/optimized/CoreAuxv.cpp.ll
+; lief/optimized/CoreFile.cpp.ll
+; lief/optimized/CorePrPsInfo.cpp.ll
+; lief/optimized/CorePrStatus.cpp.ll
+; lief/optimized/CoreSigInfo.cpp.ll
+; lief/optimized/Debug.cpp.ll
+; lief/optimized/DelayImport.cpp.ll
+; lief/optimized/DelayImportEntry.cpp.ll
+; lief/optimized/DyldChainedFixups.cpp.ll
+; lief/optimized/DyldInfo.cpp.ll
+; lief/optimized/DynamicEntryArray.cpp.ll
+; lief/optimized/DynamicEntryLibrary.cpp.ll
+; lief/optimized/DynamicEntryRpath.cpp.ll
+; lief/optimized/DynamicEntryRunPath.cpp.ll
+; lief/optimized/DynamicSharedObject.cpp.ll
+; lief/optimized/File.cpp.ll
+; lief/optimized/FileStream.cpp.ll
+; lief/optimized/GenericContent.cpp.ll
+; lief/optimized/LangCodeItem.cpp.ll
+; lief/optimized/LinkEdit.cpp.ll
+; lief/optimized/LoadConfiguration.cpp.ll
+; lief/optimized/LoadConfigurationV0.cpp.ll
+; lief/optimized/LoadConfigurationV1.cpp.ll
+; lief/optimized/LoadConfigurationV10.cpp.ll
+; lief/optimized/LoadConfigurationV11.cpp.ll
+; lief/optimized/LoadConfigurationV3.cpp.ll
+; lief/optimized/LoadConfigurationV4.cpp.ll
+; lief/optimized/LoadConfigurationV5.cpp.ll
+; lief/optimized/LoadConfigurationV6.cpp.ll
+; lief/optimized/LoadConfigurationV7.cpp.ll
+; lief/optimized/LoadConfigurationV8.cpp.ll
+; lief/optimized/LoadConfigurationV9.cpp.ll
+; lief/optimized/MemoryStream.cpp.ll
+; lief/optimized/Note.cpp.ll
+; lief/optimized/NoteAbi.cpp.ll
+; lief/optimized/NoteGnuProperty.cpp.ll
+; lief/optimized/PKCS9SigningTime.cpp.ll
+; lief/optimized/Pogo.cpp.ll
+; lief/optimized/PogoEntry.cpp.ll
+; lief/optimized/RelocationEntry.cpp.ll
+; lief/optimized/RelocationFixup.cpp.ll
+; lief/optimized/Repro.cpp.ll
+; lief/optimized/ResourceNode.cpp.ll
+; lief/optimized/ResourceStringFileInfo.cpp.ll
+; lief/optimized/ResourceVarFileInfo.cpp.ll
+; lief/optimized/ResourceVersion.cpp.ll
+; lief/optimized/ResourcesManager.cpp.ll
+; lief/optimized/ResourcesParser.cpp.ll
+; lief/optimized/RichHeader.cpp.ll
+; lief/optimized/Signature.cpp.ll
+; lief/optimized/SignatureParser.cpp.ll
+; lief/optimized/SignerInfo.cpp.ll
+; lief/optimized/SpanStream.cpp.ll
+; lief/optimized/SpcIndirectData.cpp.ll
+; lief/optimized/StackSize.cpp.ll
+; lief/optimized/TLS.cpp.ll
+; lief/optimized/TrieNode.cpp.ll
+; lief/optimized/Type.cpp.ll
+; lief/optimized/VectorStream.cpp.ll
+; lief/optimized/bignum.c.ll
+; lief/optimized/gcm.c.ll
+; lief/optimized/hash_stream.cpp.ll
+; lief/optimized/sha512.c.ll
+; lief/optimized/x509.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; linux/optimized/bitmap.ll
+; linux/optimized/cmac.ll
+; linux/optimized/ec.ll
+; linux/optimized/fils_aead.ll
+; linux/optimized/gf128mul.ll
+; linux/optimized/mpih-div.ll
+; linux/optimized/sha512_generic.ll
+; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; luau/optimized/AssemblyBuilderX64.test.cpp.ll
+; node/optimized/simdutf.ll
+; oiio/optimized/ddsinput.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; openjdk/optimized/mlib_c_ImageCopy.ll
+; openmpi/optimized/psquash_flex128.ll
+; openssl/optimized/libcrypto-lib-bn_gf2m.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-lib-bn_shift.ll
+; openssl/optimized/libcrypto-lib-bn_word.ll
+; openssl/optimized/libcrypto-lib-gcm128.ll
+; openssl/optimized/libcrypto-lib-scalar.ll
+; openssl/optimized/libcrypto-lib-siv128.ll
+; openssl/optimized/libcrypto-lib-xts128.ll
+; openssl/optimized/libcrypto-lib-xts128gb.ll
+; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_shift.ll
+; openssl/optimized/libcrypto-shlib-bn_word.ll
+; openssl/optimized/libcrypto-shlib-gcm128.ll
+; openssl/optimized/libcrypto-shlib-scalar.ll
+; openssl/optimized/libcrypto-shlib-siv128.ll
+; openssl/optimized/libcrypto-shlib-xts128.ll
+; openssl/optimized/libcrypto-shlib-xts128gb.ll
+; php/optimized/PMurHash128.ll
+; php/optimized/crypt_sha512.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/target_riscv_vcrypto_helper.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; quickjs/optimized/libbf.ll
+; redis/optimized/ckh.ll
+; redis/optimized/ckh.sym.ll
+; ring-rs/optimized/1ifa1mnaz8f3h6jb.ll
+; ring-rs/optimized/1vabw27ldssjsz66.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; rocksdb/optimized/unique_id.cc.ll
+; ruby/optimized/bignum.ll
+; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
+; sentencepiece/optimized/int128.cc.ll
+; simdjson/optimized/simdjson.cpp.ll
+; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; spike/optimized/f128_div.ll
+; spike/optimized/f128_mul.ll
+; spike/optimized/f128_rem.ll
+; spike/optimized/f128_sqrt.ll
+; spike/optimized/pkbt32.ll
+; spike/optimized/s_addMagsF128.ll
+; spike/optimized/s_mulAddF128.ll
+; spike/optimized/s_mulAddF64.ll
+; spike/optimized/s_subMagsF128.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wireshark/optimized/packet-nvme.c.ll
+; wolfssl/optimized/aes.c.ll
+; wolfssl/optimized/poly1305.c.ll
+; wolfssl/optimized/sha512.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.fshl.i64(i64 %0, i64 %1, i64 59)
+  ret i64 %2
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.fshl.i64(i64, i64, i64) #1
+
+; 2 occurrences:
+; cpython/optimized/Hacl_Hash_SHA2.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call noundef i64 @llvm.fshl.i64(i64 %0, i64 %1, i64 1)
+  ret i64 %2
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

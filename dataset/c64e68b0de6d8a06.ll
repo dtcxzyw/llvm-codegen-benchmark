@@ -1,11 +1,15 @@
 
-; 10 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; git/optimized/unpack-trees.ll
 ; graphviz/optimized/block.cpp.ll
 ; icu/optimized/pkgdata.ll
 ; linux/optimized/cls_api.ll
+; linux/optimized/slub.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Subtyping.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
 ; postgres/optimized/command.ll
 ; qemu/optimized/chardev_char.c.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll

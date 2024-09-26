@@ -1,0 +1,210 @@
+
+; 71 occurrences:
+; clamav/optimized/lzxd.c.ll
+; gromacs/optimized/bwlzh.c.ll
+; gromacs/optimized/huffmem.c.ll
+; gromacs/optimized/xtc3.c.ll
+; hdf5/optimized/H5FDonion_header.c.ll
+; hdf5/optimized/H5FDonion_history.c.ll
+; hdf5/optimized/H5FDonion_index.c.ll
+; hdf5/optimized/H5Shyper.c.ll
+; hdf5/optimized/H5Spoint.c.ll
+; hdf5/optimized/H5Zfletcher32.c.ll
+; hermes/optimized/MD5.cpp.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; libjpeg-turbo/optimized/rdbmp.c.ll
+; libquic/optimized/cfb64ede.c.ll
+; libquic/optimized/des.c.ll
+; libquic/optimized/e_rc2.c.ll
+; libquic/optimized/md4.c.ll
+; libquic/optimized/ripemd.c.ll
+; lief/optimized/aes.c.ll
+; lief/optimized/md5.c.ll
+; lief/optimized/poly1305.c.ll
+; lief/optimized/ripemd160.c.ll
+; linux/optimized/af_packet.ll
+; linux/optimized/e1000_hw.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/intel_color.ll
+; linux/optimized/mac.ll
+; linux/optimized/xfrm_policy.ll
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/MD5.cpp.ll
+; llvm/optimized/blake3.c.ll
+; llvm/optimized/blake3_portable.c.ll
+; lodepng/optimized/lodepng.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/mesh.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; mold/optimized/arch-arm32.cc.ll
+; openjdk/optimized/gtk2_interface.ll
+; openssl/optimized/libcrypto-lib-cbc_enc.ll
+; openssl/optimized/libcrypto-lib-cfb64ede.ll
+; openssl/optimized/libcrypto-lib-cfb_enc.ll
+; openssl/optimized/libcrypto-lib-des_enc.ll
+; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
+; openssl/optimized/libcrypto-lib-md4_dgst.ll
+; openssl/optimized/libcrypto-lib-mdc2dgst.ll
+; openssl/optimized/libcrypto-lib-ofb_enc.ll
+; openssl/optimized/libcrypto-lib-pcbc_enc.ll
+; openssl/optimized/libcrypto-lib-rmd_dgst.ll
+; openssl/optimized/libcrypto-lib-set_key.ll
+; openssl/optimized/libcrypto-lib-xcbc_enc.ll
+; openssl/optimized/libcrypto-shlib-cbc_enc.ll
+; openssl/optimized/libcrypto-shlib-cfb64ede.ll
+; openssl/optimized/libcrypto-shlib-cfb_enc.ll
+; openssl/optimized/libcrypto-shlib-des_enc.ll
+; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
+; openssl/optimized/libcrypto-shlib-md4_dgst.ll
+; openssl/optimized/libcrypto-shlib-mdc2dgst.ll
+; openssl/optimized/libcrypto-shlib-ofb_enc.ll
+; openssl/optimized/libcrypto-shlib-pcbc_enc.ll
+; openssl/optimized/libcrypto-shlib-rmd_dgst.ll
+; openssl/optimized/libcrypto-shlib-set_key.ll
+; openssl/optimized/libcrypto-shlib-xcbc_enc.ll
+; openssl/optimized/libdefault-lib-cipher_chacha20_poly1305_hw.ll
+; openssl/optimized/liblegacy-lib-des_enc.ll
+; qemu/optimized/hw_audio_ac97.c.ll
+; wireshark/optimized/packet-rlc-lte.c.ll
+; wireshark/optimized/packet-usb.c.ll
+; wireshark/optimized/print.c.ll
+; wireshark/optimized/sequence_analysis.c.ll
+; wireshark/optimized/sharkd_session.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl nuw nsw i32 %1, 16
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 3 occurrences:
+; oiio/optimized/ddsinput.cpp.ll
+; qemu/optimized/ui_console-vc.c.ll
+; recastnavigation/optimized/RecastDebugDraw.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001e(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %1, 21
+  %5 = or disjoint i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; qemu/optimized/hw_virtio_virtio.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl nuw nsw i32 %1, 15
+  %5 = or i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/FourByteAbgrPre.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl nuw i32 %1, 24
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 2 occurrences:
+; hermes/optimized/TypeInference.cpp.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl nuw i32 %1, 16
+  %5 = or disjoint i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
+; 2 occurrences:
+; recastnavigation/optimized/DetourDebugDraw.cpp.ll
+; recastnavigation/optimized/RecastDebugDraw.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %1, 8
+  %5 = or i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/RecastDebugDraw.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001d(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %1, 8
+  %5 = or i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; recastnavigation/optimized/DetourDebugDraw.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001a(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw i32 %1, 24
+  %5 = or disjoint i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-rlc-lte.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %1, 12
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 3 occurrences:
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/mesh.cpp.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl i32 %1, 24
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-atn-ulcs.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = shl i32 %1, 16
+  %5 = or disjoint i32 %4, %3
+  %6 = or i32 %5, %0
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }

@@ -1,9 +1,14 @@
 
-; 7 occurrences:
-; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
+; 12 occurrences:
 ; linux/optimized/drm_edid.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; ncnn/optimized/deformableconv2d_x86.cpp.ll
+; ncnn/optimized/innerproduct_x86.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
+; ncnn/optimized/innerproduct_x86_fma.cpp.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
-; proxygen/optimized/HTTPTransaction.cpp.ll
 ; spike/optimized/f16_classify.ll
 ; spike/optimized/f32_classify.ll
 ; spike/optimized/f64_classify.ll

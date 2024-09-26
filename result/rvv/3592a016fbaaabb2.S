@@ -1,8 +1,0 @@
-func0000000000000044:                   # @func0000000000000044
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vminu.vv	v10, v10, v12
-	vmsleu.vi	v9, v10, 2
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsleu.vi	v8, v8, 2
-	vmand.mm	v0, v9, v8
-	ret

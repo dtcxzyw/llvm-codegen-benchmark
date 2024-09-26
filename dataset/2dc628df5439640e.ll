@@ -1,0 +1,28 @@
+
+; 1 occurrences:
+; llvm/optimized/InstCombineCompares.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002c8(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = icmp ult i32 %2, %0
+  %4 = icmp ne i64 %1, 0
+  %5 = and i1 %3, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; openspiel/optimized/checkers.cc.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i64 %0 to i32
+  %3 = icmp slt i32 %2, %1
+  %4 = icmp sgt i64 %0, -1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,117 @@
+
+; 3 occurrences:
+; cmake/optimized/cmFileCommand.cxx.ll
+; linux/optimized/balloc.ll
+; openjdk/optimized/deoptimization.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006a(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp slt i32 %3, %0
+  %5 = icmp sgt i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; git/optimized/remote.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; openspiel/optimized/stones_and_gems.cc.ll
+; postgres/optimized/namespace.ll
+; wireshark/optimized/packet-btle.c.ll
+; wireshark/optimized/packet-btmesh.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp eq i32 %3, %0
+  %5 = icmp eq i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; git/optimized/diff.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006b(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp sle i32 %3, %0
+  %5 = icmp sgt i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/drm_modes.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp ult i32 %3, %0
+  %5 = icmp ugt i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/balloc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp eq i32 %3, %0
+  %5 = icmp ult i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000007a(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp slt i32 %3, %0
+  %5 = icmp sge i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/local_optimization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000067(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp sge i32 %3, %0
+  %5 = icmp sgt i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/cuda_gpu_mat.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000026a(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = icmp slt i32 %3, %0
+  %5 = icmp sgt i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; freetype/optimized/psaux.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008a(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = icmp slt i32 %3, %0
+  %5 = icmp ult i32 %3, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

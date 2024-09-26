@@ -1,9 +1,12 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; linux/optimized/device_pm.ll
 ; linux/optimized/nl80211.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Subtyping.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
 entry:

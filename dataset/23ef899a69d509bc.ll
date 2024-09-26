@@ -1,7 +1,12 @@
 
-; 3 occurrences:
+; 8 occurrences:
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; linux/optimized/hrtimer.ll
+; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/LoopIdiomRecognize.cpp.ll
+; llvm/optimized/LoopUnroll.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; qemu/optimized/block_io.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i1 %2) #0 {

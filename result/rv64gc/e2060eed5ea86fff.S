@@ -1,0 +1,8 @@
+func0000000000000548:                   # @func0000000000000548
+	slli	a2, a2, 2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	srliw	a0, a0, 1
+	slli	a0, a0, 1
+	snez	a0, a0
+	ret

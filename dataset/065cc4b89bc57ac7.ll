@@ -1,7 +1,8 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
+; openssl/optimized/openssl-bin-cms.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll

@@ -1,11 +1,27 @@
 
-; 10 occurrences:
+; 26 occurrences:
+; clamav/optimized/regexec.c.ll
 ; graphviz/optimized/strmatch.c.ll
 ; hermes/optimized/regexec.c.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LazyValueInfo.cpp.ll
+; llvm/optimized/LiveIntervals.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
+; llvm/optimized/MustExecute.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; llvm/optimized/SimplifyLibCalls.cpp.ll
+; llvm/optimized/regexec.c.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/minilua.ll
+; luau/optimized/lstrlib.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openjdk/optimized/compile.ll
 ; php/optimized/zend_hash.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; redis/optimized/lstrlib.ll
@@ -18,9 +34,10 @@ entry:
   ret ptr %3
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/bblif.c.ll
 ; arrow/optimized/UriQuery.c.ll
+; openjdk/optimized/memRegion.ll
 ; postgres/optimized/allpaths.ll
 ; postgres/optimized/analyze.ll
 ; postgres/optimized/analyzejoins.ll
@@ -76,8 +93,10 @@ entry:
   ret ptr %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
 ; git/optimized/unpack-trees.ll
+; llvm/optimized/AssumptionCache.cpp.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, ptr %1) #0 {

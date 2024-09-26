@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; linux/optimized/dm-table.ll
 ; qemu/optimized/block.c.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; z3/optimized/dl_mk_array_eq_rewrite.cpp.ll

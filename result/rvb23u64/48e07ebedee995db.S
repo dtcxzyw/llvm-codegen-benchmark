@@ -1,0 +1,107 @@
+func000000000000001a:                   # @func000000000000001a
+	sext.w	a0, a0
+	slliw	a2, a2, 1
+	andi	a1, a1, 1
+	or	a1, a1, a2
+	slt	a0, a0, a1
+	ret
+func0000000000000054:                   # @func0000000000000054
+	sext.w	a0, a0
+	slliw	a2, a2, 21
+	lui	a3, 508
+	and	a1, a1, a3
+	or	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000051:                   # @func0000000000000051
+	sext.w	a0, a0
+	slliw	a2, a2, 21
+	lui	a3, 508
+	and	a1, a1, a3
+	or	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func000000000000003a:                   # @func000000000000003a
+	sext.w	a0, a0
+	slliw	a2, a2, 1
+	andi	a1, a1, 1
+	or	a1, a1, a2
+	slt	a0, a0, a1
+	ret
+func0000000000000031:                   # @func0000000000000031
+	sext.w	a0, a0
+	slliw	a2, a2, 1
+	andi	a1, a1, 1
+	or	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000037:                   # @func0000000000000037
+	sext.w	a0, a0
+	slliw	a2, a2, 1
+	andi	a1, a1, 1
+	or	a1, a1, a2
+	slt	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func0000000000000016:                   # @func0000000000000016
+	sext.w	a0, a0
+	slliw	a2, a2, 6
+	andi	a1, a1, 63
+	or	a1, a1, a2
+	slt	a0, a1, a0
+	ret
+func0000000000000017:                   # @func0000000000000017
+	sext.w	a0, a0
+	slliw	a2, a2, 3
+	andi	a1, a1, 7
+	or	a1, a1, a2
+	slt	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a0, a0
+	andi	a2, a2, 63
+	slliw	a1, a1, 6
+	or	a1, a1, a2
+	sltu	a0, a0, a1
+	ret
+func0000000000000074:                   # @func0000000000000074
+	sext.w	a0, a0
+	slliw	a2, a2, 6
+	andi	a1, a1, 63
+	or	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a0, a0
+	slliw	a2, a2, 16
+	zext.h	a1, a1
+	or	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000015:                   # @func0000000000000015
+	sext.w	a0, a0
+	slliw	a2, a2, 16
+	zext.h	a1, a1
+	or	a1, a1, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sext.w	a0, a0
+	slliw	a2, a2, 16
+	zext.h	a1, a1
+	or	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000055:                   # @func0000000000000055
+	sext.w	a0, a0
+	slliw	a2, a2, 16
+	zext.h	a1, a1
+	or	a1, a1, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret

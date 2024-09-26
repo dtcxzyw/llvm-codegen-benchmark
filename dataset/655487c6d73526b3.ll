@@ -1,9 +1,11 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; clamav/optimized/mbox.c.ll
 ; git/optimized/setup.ll
+; llvm/optimized/NumberObjectConversionChecker.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
+; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; openmpi/optimized/show_help.ll
-; wireshark/optimized/next_tvb.c.ll
 ; wireshark/optimized/packet-dcerpc-nt.c.ll
 ; wireshark/optimized/packet-multipart.c.ll
 ; Function Attrs: nounwind

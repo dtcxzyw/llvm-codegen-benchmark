@@ -1,7 +1,13 @@
 
-; 3 occurrences:
+; 9 occurrences:
 ; cmake/optimized/connect.c.ll
 ; curl/optimized/libcurl_la-connect.ll
+; gromacs/optimized/sim_util.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/ParseStmt.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; qemu/optimized/hw_gpio_sifive_gpio.c.ll
+; slurm/optimized/node_features_knl_generic.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

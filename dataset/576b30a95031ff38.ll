@@ -1,8 +1,10 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; linux/optimized/bitset.ll
+; llvm/optimized/BugReporter.cpp.ll
+; openjdk/optimized/filemap.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
 ; wireshark/optimized/packet-ssh.c.ll

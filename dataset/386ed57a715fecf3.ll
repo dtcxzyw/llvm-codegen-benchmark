@@ -1,0 +1,41 @@
+
+; 14 occurrences:
+; minetest/optimized/noise.cpp.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lightsamplers.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samplers.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; pcg-cpp/optimized/codebook.cpp.ll
+; pcg-cpp/optimized/cppref-sample.cpp.ll
+; pcg-cpp/optimized/make-partytrick.cpp.ll
+; pcg-cpp/optimized/pcg-demo.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 1
+  %3 = or disjoint i64 %2, 1
+  %4 = mul i64 %0, 6364136223846793005
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; nori/optimized/independent.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 1
+  %3 = or disjoint i64 %2, 1
+  %4 = mul i64 %0, 6364136223846793005
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

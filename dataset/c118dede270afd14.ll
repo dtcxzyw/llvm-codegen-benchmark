@@ -1,0 +1,215 @@
+
+; 84 occurrences:
+; actix-rs/optimized/3afp9uuicyvwgbsz.ll
+; bullet3/optimized/b3GpuJacobiContactSolver.ll
+; cpython/optimized/obmalloc.ll
+; cvc5/optimized/conjecture_generator.cpp.ll
+; cvc5/optimized/extended_rewrite.cpp.ll
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; freetype/optimized/truetype.c.ll
+; git/optimized/show-branch.ll
+; hdf5/optimized/H5Odtype.c.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; hermes/optimized/String.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; hermes/optimized/hermes.cpp.ll
+; hyperscan/optimized/rose_build_add.cpp.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; libquic/optimized/ctr.c.ll
+; linux/optimized/buffered-io.ll
+; linux/optimized/libahci.ll
+; linux/optimized/printk.ll
+; linux/optimized/xprtsock.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/DXContainer.cpp.ll
+; llvm/optimized/DXILResource.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
+; llvm/optimized/HeaderSearch.cpp.ll
+; llvm/optimized/LoopPredication.cpp.ll
+; llvm/optimized/MachineRegisterInfo.cpp.ll
+; llvm/optimized/ParseDecl.cpp.ll
+; llvm/optimized/ScaledNumber.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lib_math.ll
+; luajit/optimized/lib_math_dyn.ll
+; meshoptimizer/optimized/simplifier.cpp.ll
+; mimalloc/optimized/segment.c.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; ncnn/optimized/detectionoutput.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; opencv/optimized/tflite_importer.cpp.ll
+; openjdk/optimized/stubRoutines_x86.ll
+; openmpi/optimized/opal_datatype_optimize.ll
+; openssl/optimized/libcrypto-lib-ctr128.ll
+; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
+; openssl/optimized/libcrypto-shlib-ctr128.ll
+; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
+; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
+; postgres/optimized/pg_constraint.ll
+; proxygen/optimized/HTTP2Framer.cpp.ll
+; quantlib/optimized/analyticcevengine.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/hestonprocess.ll
+; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quantlib/optimized/tcopulapolicy.ll
+; rayon-rs/optimized/9qhkgr4qio1yp41.ll
+; regex-rs/optimized/3q3ceyp25m3d5uar.ll
+; regex-rs/optimized/rrg5bgs95wzff0u.ll
+; ruby/optimized/class.ll
+; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
+; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
+; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
+; slurm/optimized/reservation.ll
+; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
+; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
+; wasmedge/optimized/proxy.cpp.ll
+; wasmedge/optimized/serial_instruction.cpp.ll
+; wasmedge/optimized/tableInstr.cpp.ll
+; wasmedge/optimized/wasmedge.cpp.ll
+; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
+; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
+; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
+; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
+; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
+; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = select i1 %0, i64 %2, i64 0
+  ret i64 %3
+}
+
+; 111 occurrences:
+; abc/optimized/AbcGlucose.cpp.ll
+; abc/optimized/AbcGlucose2.cpp.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/histogram.c.ll
+; bullet3/optimized/b3GpuParallelLinearBvh.ll
+; bullet3/optimized/b3RadixSort32CL.ll
+; clamav/optimized/rarvm.cpp.ll
+; clamav/optimized/unarj.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; cpython/optimized/longobject.ll
+; darktable/optimized/introspection_highlights.c.ll
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; git/optimized/bloom.ll
+; git/optimized/commit-reach.ll
+; git/optimized/describe.ll
+; git/optimized/name-rev.ll
+; git/optimized/show-branch.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; icu/optimized/ubidiln.ll
+; icu/optimized/ucase.ll
+; icu/optimized/ucoleitr.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; libpng/optimized/pngwrite.c.ll
+; lief/optimized/bignum.c.ll
+; linux/optimized/dev.ll
+; linux/optimized/evdev.ll
+; linux/optimized/hidraw.ll
+; linux/optimized/intel_hdmi.ll
+; linux/optimized/msg.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/sem.ll
+; linux/optimized/shm.ll
+; linux/optimized/string.ll
+; linux/optimized/trace_eprobe.ll
+; linux/optimized/trace_kprobe.ll
+; linux/optimized/trace_uprobe.ll
+; llvm/optimized/AArch64.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AMDGPU.cpp.ll
+; llvm/optimized/ARC.cpp.ll
+; llvm/optimized/ARM.cpp.ll
+; llvm/optimized/AVR.cpp.ll
+; llvm/optimized/BPF.cpp.ll
+; llvm/optimized/CSKY.cpp.ll
+; llvm/optimized/DirectX.cpp.ll
+; llvm/optimized/Hexagon.cpp.ll
+; llvm/optimized/InitPreprocessor.cpp.ll
+; llvm/optimized/Lanai.cpp.ll
+; llvm/optimized/LoongArch.cpp.ll
+; llvm/optimized/M68k.cpp.ll
+; llvm/optimized/MSP430.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
+; llvm/optimized/Mips.cpp.ll
+; llvm/optimized/NVPTX.cpp.ll
+; llvm/optimized/PNaCl.cpp.ll
+; llvm/optimized/PPC.cpp.ll
+; llvm/optimized/RISCV.cpp.ll
+; llvm/optimized/SPIR.cpp.ll
+; llvm/optimized/Sparc.cpp.ll
+; llvm/optimized/SystemZ.cpp.ll
+; llvm/optimized/TCE.cpp.ll
+; llvm/optimized/TargetInfo.cpp.ll
+; llvm/optimized/Targets.cpp.ll
+; llvm/optimized/VE.cpp.ll
+; llvm/optimized/WebAssembly.cpp.ll
+; llvm/optimized/X86.cpp.ll
+; llvm/optimized/XCore.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; nix/optimized/json-to-value.ll
+; nlohmann_json/optimized/unit-bjdata.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-class_parser.cpp.ll
+; nlohmann_json/optimized/unit-disabled_exceptions.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; nlohmann_json/optimized/unit-regression2.cpp.ll
+; nlohmann_json/optimized/unit-ubjson.cpp.ll
+; openblas/optimized/dstedc.c.ll
+; opencv/optimized/arithm.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/shapedescr.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; openjdk/optimized/SDE.ll
+; openjdk/optimized/ciMethod.ll
+; openjdk/optimized/cmspack.ll
+; openjdk/optimized/eventFilter.ll
+; openspiel/optimized/colored_trails.cc.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; openvdb/optimized/StreamCompression.cc.ll
+; php/optimized/pack.ll
+; postgres/optimized/network.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
+; redis/optimized/listpack.ll
+; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
+; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
+; stb/optimized/stb_image.c.ll
+; tev/optimized/ImageViewer.cpp.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wireshark/optimized/packet-zebra.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = select i1 %0, i64 %2, i64 0
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

@@ -1,6 +1,9 @@
 
-; 7 occurrences:
+; 10 occurrences:
 ; cvc5/optimized/extended_rewrite.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/PredicateInfo.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvdq.c.ll

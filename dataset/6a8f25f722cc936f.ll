@@ -1,0 +1,92 @@
+
+; 80 occurrences:
+; abc/optimized/Glucose.cpp.ll
+; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/extraUtilUtil.c.ll
+; actix-rs/optimized/2pgtlhl4qd060m9c.ll
+; c3c/optimized/benchmark.c.ll
+; clamav/optimized/clamdtop.c.ll
+; cpython/optimized/_datetimemodule.ll
+; cpython/optimized/signalmodule.ll
+; duckdb/optimized/ub_duckdb_func_date.cpp.ll
+; hdf5/optimized/H5timer.c.ll
+; hdf5/optimized/io_timer.c.ll
+; icu/optimized/uperf.ll
+; ipopt/optimized/IpUtils.ll
+; jq/optimized/builtin.ll
+; libjpeg-turbo/optimized/tjutil.c.ll
+; libquic/optimized/time.cc.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; opencv/optimized/cap_v4l.cpp.ll
+; openjdk/optimized/os_linux.ll
+; openmpi/optimized/comm_ft_detector.ll
+; openmpi/optimized/errmgr.ll
+; openmpi/optimized/errmgr_dvm.ll
+; openmpi/optimized/errmgr_prted.ll
+; openmpi/optimized/ess_base_std_prted.ll
+; openmpi/optimized/event.ll
+; openmpi/optimized/filem_base_receive.ll
+; openmpi/optimized/grpcomm_direct.ll
+; openmpi/optimized/iof_base_output.ll
+; openmpi/optimized/iof_hnp_read.ll
+; openmpi/optimized/iof_prted_read.ll
+; openmpi/optimized/libmpi_c_profile_la-wtime.ll
+; openmpi/optimized/libprrte_la-pmix_server_dyn.ll
+; openmpi/optimized/libprrte_la-pmix_server_gen.ll
+; openmpi/optimized/libprrte_la-prted_comm.ll
+; openmpi/optimized/libprrte_la-rml.ll
+; openmpi/optimized/odls_base_default_fns.ll
+; openmpi/optimized/odls_default_module.ll
+; openmpi/optimized/oob_tcp_component.ll
+; openmpi/optimized/oob_tcp_connection.ll
+; openmpi/optimized/oob_tcp_sendrecv.ll
+; openmpi/optimized/plm_base_launch_support.ll
+; openmpi/optimized/plm_base_receive.ll
+; openmpi/optimized/plm_slurm_module.ll
+; openmpi/optimized/plm_ssh_component.ll
+; openmpi/optimized/plm_ssh_module.ll
+; openmpi/optimized/prte.ll
+; openmpi/optimized/psched.ll
+; openmpi/optimized/ras_base_allocate.ll
+; openmpi/optimized/ras_slurm_module.ll
+; openmpi/optimized/rmaps_base_map_job.ll
+; openmpi/optimized/scheduler.ll
+; openmpi/optimized/session.ll
+; openmpi/optimized/state.ll
+; openmpi/optimized/state_base_fns.ll
+; openmpi/optimized/state_dvm.ll
+; openmpi/optimized/state_prted.ll
+; openmpi/optimized/tm_tree.ll
+; osqp/optimized/timing_linux.c.ll
+; php/optimized/SAPI.ll
+; php/optimized/microtime.ll
+; php/optimized/session.ll
+; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/checkpointer.ll
+; postgres/optimized/vacuumlazy.ll
+; qemu/optimized/qemu-io-cmds.c.ll
+; qemu/optimized/ui_vnc.c.ll
+; ruby/optimized/process.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; wireshark/optimized/lbm_lbtrm_transport_dialog.cpp.ll
+; wireshark/optimized/lbm_lbtru_transport_dialog.cpp.ll
+; wireshark/optimized/lte_rlc_graph_dialog.cpp.ll
+; wireshark/optimized/tap-camelsrt.c.ll
+; wireshark/optimized/time_util.c.ll
+; wolfssl/optimized/api.c.ll
+; wolfssl/optimized/benchmark.c.ll
+; wolfssl/optimized/client.c.ll
+; wolfssl/optimized/server.c.ll
+; wolfssl/optimized/tls_bench.c.ll
+; yosys/optimized/Solver.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, i64 %1) #0 {
+entry:
+  %2 = sitofp i64 %1 to double
+  %3 = fdiv double %0, 1.000000e+06
+  %4 = fadd double %3, %2
+  ret double %4
+}
+
+attributes #0 = { nounwind }

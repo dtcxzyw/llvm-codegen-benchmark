@@ -1,6 +1,0 @@
-func0000000000000001:                   # @func0000000000000001
-	sub	a0, a0, a1
-	srli	a1, a0, 3
-	srli	a0, a0, 4
-	sub	a0, a1, a0
-	ret

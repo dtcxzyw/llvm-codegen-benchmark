@@ -1,0 +1,108 @@
+
+; 20 occurrences:
+; lodepng/optimized/pngdetail.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/pickpointsDialog.cpp.ll
+; minetest/optimized/mg_ore.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/hash_tsdf.cpp.ll
+; opencv/optimized/imagecut.cpp.ll
+; pbrt-v4/optimized/mipmap.cpp.ll
+; recastnavigation/optimized/DetourProximityGrid.cpp.ll
+; recastnavigation/optimized/DetourTileCache.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(float %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = fptosi float %0 to i32
+  %4 = icmp sgt i32 %3, %2
+  ret i1 %4
+}
+
+; 8 occurrences:
+; gromacs/optimized/gmx_densorder.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/detector.cpp.ll
+; openjdk/optimized/ShapeSpanIterator.ll
+; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(float %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = fptosi float %0 to i32
+  %4 = icmp slt i32 %3, %2
+  ret i1 %4
+}
+
+; 15 occurrences:
+; bullet3/optimized/btHeightfieldTerrainShape.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/detector.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/sparse_match_interpolators.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; raylib/optimized/rcore.c.ll
+; raylib/optimized/rtext.c.ll
+; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; wireshark/optimized/wireless_timeline.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(float %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = fptosi float %0 to i32
+  %4 = icmp eq i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(float %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = fptosi float %0 to i32
+  %4 = icmp ne i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/imagecut.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(float %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = fptosi float %0 to i32
+  %4 = icmp sle i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/brisk.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(float %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = fptosi float %0 to i32
+  %4 = icmp sge i32 %3, %2
+  ret i1 %4
+}
+
+attributes #0 = { nounwind }

@@ -1,9 +1,15 @@
 
-; 4 occurrences:
+; 10 occurrences:
+; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; git/optimized/unpack-trees.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/standby.ll
 ; qemu/optimized/migration_savevm.c.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

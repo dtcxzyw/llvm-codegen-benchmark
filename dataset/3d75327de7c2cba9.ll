@@ -1,0 +1,19 @@
+
+; 7 occurrences:
+; clamav/optimized/pe_icons.c.ll
+; libwebp/optimized/anim_decode.c.ll
+; libwebp/optimized/picture_tools_enc.c.ll
+; minetest/optimized/texturesource.cpp.ll
+; openjdk/optimized/splashscreen_gfx_impl.ll
+; raylib/optimized/rtextures.c.ll
+; typst-rs/optimized/18i60ist7isq7y2m.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 24
+  %2 = and i32 %0, 255
+  %3 = mul nuw nsw i32 %2, %1
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

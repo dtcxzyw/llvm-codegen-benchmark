@@ -1,0 +1,125 @@
+
+; 114 occurrences:
+; abc/optimized/acecPo.c.ll
+; abseil-cpp/optimized/marshalling.cc.ll
+; assimp/optimized/AMFImporter_Material.cpp.ll
+; assimp/optimized/ColladaParser.cpp.ll
+; assimp/optimized/FBXParser.cpp.ll
+; assimp/optimized/IRRMeshLoader.cpp.ll
+; assimp/optimized/OgreXmlSerializer.cpp.ll
+; assimp/optimized/STEPFileReader.cpp.ll
+; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; assimp/optimized/X3DImporter_Group.cpp.ll
+; assimp/optimized/XGLLoader.cpp.ll
+; assimp/optimized/XmlSerializer.cpp.ll
+; clamav/optimized/filestr.cpp.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
+; coreutils-rs/optimized/162a9hv49p91yl4q.ll
+; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
+; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
+; coreutils-rs/optimized/2ph6t6nh0hmjeejh.ll
+; cpython/optimized/basearith.ll
+; cpython/optimized/pystrtod.ll
+; cvc5/optimized/linear_equality.cpp.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; diesel-rs/optimized/2nqojkvzec127ieh.ll
+; duckdb/optimized/is_distinct_from.cpp.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
+; duckdb/optimized/ub_duckdb_parser.cpp.ll
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/registry.cpp.ll
+; git/optimized/urlmatch.ll
+; hdf5/optimized/H5FDonion.c.ll
+; hermes/optimized/APFloat.cpp.ll
+; hermes/optimized/APInt.cpp.ll
+; icu/optimized/decNumber.ll
+; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
+; jq/optimized/decNumber.ll
+; jsonnet/optimized/vm.cpp.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; libquic/optimized/prtime.cc.ll
+; linux/optimized/8250_port.ll
+; linux/optimized/libata-scsi.ll
+; linux/optimized/xfrm_input.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/APInt.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScaledNumber.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/TargetTransformInfo.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lua/optimized/lbaselib.ll
+; luajit/optimized/lib_base.ll
+; luajit/optimized/lib_base_dyn.ll
+; meshoptimizer/optimized/indexcodec.cpp.ll
+; minetest/optimized/COBJMeshFileLoader.cpp.ll
+; minetest/optimized/COpenGLExtensionHandler.cpp.ll
+; minetest/optimized/CXMeshFileLoader.cpp.ll
+; nix/optimized/get-drvs.ll
+; nix/optimized/tests.ll
+; node/optimized/simdutf.ll
+; ockam-rs/optimized/1411u8drt798uxi8.ll
+; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; opencv/optimized/persistence_xml.cpp.ll
+; opencv/optimized/persistence_yml.cpp.ll
+; openjdk/optimized/arguments.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openjdk/optimized/graphKit.ll
+; openssl/optimized/ca_internals_test-bin-apps.ll
+; openssl/optimized/libapps-lib-apps.ll
+; openusd/optimized/stbImage.cpp.ll
+; php/optimized/var_unserializer.ll
+; postgres/optimized/bool.ll
+; postgres/optimized/date.ll
+; postgres/optimized/float.ll
+; postgres/optimized/geo_ops.ll
+; postgres/optimized/localtime.ll
+; postgres/optimized/pgbench.ll
+; protobuf/optimized/unparser.cc.ll
+; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
+; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/tcg.c.ll
+; quickjs/optimized/libbf.ll
+; raylib/optimized/rtextures.c.ll
+; ruby/optimized/enum.ll
+; ruby/optimized/prism.ll
+; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
+; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
+; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
+; smol-rs/optimized/28cdo1glt4bo5dm3.ll
+; stb/optimized/stb_image_resize2.c.ll
+; typst-rs/optimized/3dimj4rf5dyrieyi.ll
+; wireshark/optimized/ws_getopt.c.ll
+; xgboost/optimized/data.cc.ll
+; xgboost/optimized/gblinear.cc.ll
+; xgboost/optimized/gbtree.cc.ll
+; xgboost/optimized/learner.cc.ll
+; xgboost/optimized/linear_updater.cc.ll
+; xgboost/optimized/pseudo_huber.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/regression_obj.cc.ll
+; xgboost/optimized/survival_util.cc.ll
+; xgboost/optimized/tree_model.cc.ll
+; xgboost/optimized/updater_colmaker.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
+entry:
+  %2 = or i1 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

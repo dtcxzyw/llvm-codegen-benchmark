@@ -1,6 +1,0 @@
-func0000000000000009:                   # @func0000000000000009
-	srliw	a1, a1, 11
-	lui	a2, 92808
-	mulw	a1, a1, a2
-	or	a0, a0, a1
-	ret

@@ -1,0 +1,120 @@
+
+; 109 occurrences:
+; abseil-cpp/optimized/distribution_test_util.cc.ll
+; casadi/optimized/cvodes.c.ll
+; casadi/optimized/feasiblesqpmethod.cpp.ll
+; casadi/optimized/lsqr.cpp.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; cpython/optimized/mathmodule.ll
+; flac/optimized/window.c.ll
+; graphviz/optimized/circpos.c.ll
+; gromacs/optimized/biasparams.cpp.ll
+; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll
+; gromacs/optimized/convparm.cpp.ll
+; gromacs/optimized/coupling.cpp.ll
+; gromacs/optimized/dispersioncorrection.cpp.ll
+; gromacs/optimized/dlasd4.cpp.ll
+; gromacs/optimized/forcerec.cpp.ll
+; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/gmx_dos.cpp.ll
+; gromacs/optimized/integrate.cpp.ll
+; gromacs/optimized/pme_load_balancing.cpp.ll
+; gromacs/optimized/readir.cpp.ll
+; lightgbm/optimized/feature_histogram.cpp.ll
+; lightgbm/optimized/serial_tree_learner.cpp.ll
+; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
+; meshlab/optimized/Factor.cpp.ll
+; meshlab/optimized/apss.cpp.ll
+; meshlab/optimized/balltree.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; mitsuba3/optimized/rgb2spec_opt.cpp.ll
+; msdfgen/optimized/import-svg.cpp.ll
+; openblas/optimized/dbbcsd.c.ll
+; openblas/optimized/dlasd4.c.ll
+; opencv/optimized/ap3p.cpp.ll
+; opencv/optimized/aruco_detector.cpp.ll
+; opencv/optimized/bundle.cpp.ll
+; opencv/optimized/depth_cleaner.cpp.ll
+; opencv/optimized/detector.cpp.ll
+; opencv/optimized/distance.cpp.ll
+; opencv/optimized/fisheye.cpp.ll
+; opencv/optimized/imagelogpolprojection.cpp.ll
+; opencv/optimized/mathfuncs.cpp.ll
+; opencv/optimized/omnidir.cpp.ll
+; opencv/optimized/p3p.cpp.ll
+; opencv/optimized/pnp_solver.cpp.ll
+; opencv/optimized/polynom_solver.cpp.ll
+; opencv/optimized/shapedescr.cpp.ll
+; opencv/optimized/synthetic_seq.cpp.ll
+; opencv/optimized/trackerCSRT.cpp.ll
+; opencv/optimized/trackerCSRTSegmentation.cpp.ll
+; opencv/optimized/trackerCSRTUtils.cpp.ll
+; opencv/optimized/undistort.dispatch.cpp.ll
+; openjdk/optimized/DrawParallelogram.ll
+; openjdk/optimized/cmspcs.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
+; openusd/optimized/evalUtils.cpp.ll
+; openusd/optimized/frustum.cpp.ll
+; openusd/optimized/rotation.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/Maps.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; openvdb/optimized/Transform.cc.ll
+; openvdb/optimized/VectorTransformer.cc.ll
+; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
+; php/optimized/astro.ll
+; proj/optimized/cart.cpp.ll
+; proj/optimized/cass.cpp.ll
+; proj/optimized/defmodel.cpp.ll
+; proj/optimized/geodesic.c.ll
+; proj/optimized/labrd.cpp.ll
+; proj/optimized/natearth2.cpp.ll
+; proj/optimized/ortho.cpp.ll
+; proj/optimized/som.cpp.ll
+; proj/optimized/tmerc.cpp.ll
+; proj/optimized/tpeqd.cpp.ll
+; proj/optimized/vandg.cpp.ll
+; quantlib/optimized/analyticcevengine.ll
+; quantlib/optimized/analytichestonengine.ll
+; quantlib/optimized/analyticptdhestonengine.ll
+; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/bjerksundstenslandengine.ll
+; quantlib/optimized/blackformula.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/conundrumpricer.ll
+; quantlib/optimized/coshestonengine.ll
+; quantlib/optimized/creditriskplus.ll
+; quantlib/optimized/fdmblackscholesmultistrikemesher.ll
+; quantlib/optimized/fdmhestonvariancemesher.ll
+; quantlib/optimized/filonintegral.ll
+; quantlib/optimized/fittedbonddiscountcurve.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/hestonexpansionengine.ll
+; quantlib/optimized/hestonprocess.ll
+; quantlib/optimized/hestonrndcalculator.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; quantlib/optimized/kirkspreadoptionengine.ll
+; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
+; quantlib/optimized/sabr.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quantlib/optimized/svd.ll
+; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; stat-rs/optimized/n94tvlll45kxl7r.ll
+; sundials/optimized/cvode.c.ll
+; sundials/optimized/cvodes.c.ll
+; xgboost/optimized/aft_obj.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, double %1) #0 {
+entry:
+  %2 = fmul double %0, %1
+  %3 = fmul double %2, %2
+  ret double %3
+}
+
+attributes #0 = { nounwind }

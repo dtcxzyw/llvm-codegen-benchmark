@@ -1,0 +1,31 @@
+.LCPI0_0:
+	.quad	0x40d85989c85a0509              # double 24934.152853493611
+.LCPI0_1:
+	.quad	0x40c8bc4a4e440b07              # double 12664.58051348246
+.LCPI0_2:
+	.quad	0x40b7da5289526cfe              # double 6106.3224078670592
+.LCPI0_3:
+	.quad	0x409ce1f572b87d47              # double 1848.489695437094
+.LCPI0_4:
+	.quad	0x4082b7024619cbc3              # double 598.87611026909906
+.LCPI0_5:
+	.quad	0x4048e6d5e1f1349c              # double 49.80340217855084
+func0000000000000000:                   # @func0000000000000000
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa4, %lo(.LCPI0_1)(a0)
+	fmadd.d	fa5, fa0, fa4, fa5
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa4, %lo(.LCPI0_2)(a0)
+	lui	a0, %hi(.LCPI0_3)
+	fld	fa3, %lo(.LCPI0_3)(a0)
+	lui	a0, %hi(.LCPI0_4)
+	fld	fa2, %lo(.LCPI0_4)(a0)
+	lui	a0, %hi(.LCPI0_5)
+	fld	fa1, %lo(.LCPI0_5)(a0)
+	fmadd.d	fa5, fa0, fa5, fa4
+	fmadd.d	fa5, fa0, fa5, fa3
+	fmadd.d	fa5, fa0, fa5, fa2
+	fmadd.d	fa0, fa0, fa5, fa1
+	ret

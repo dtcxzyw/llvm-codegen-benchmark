@@ -1,6 +1,5 @@
 
-; 58 occurrences:
-; abc/optimized/cutNode.c.ll
+; 213 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
@@ -10,12 +9,12 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/cmVariableWatch.cxx.ll
+; hermes/optimized/gmock-all.cc.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; icu/optimized/normalizer2.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/uts46.ll
-; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/values.cc.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/cls_api.ll
@@ -46,16 +45,172 @@
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/workqueue.ll
+; linux/optimized/x_tables.ll
 ; linux/optimized/xprt.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/Dominators.cpp.ll
+; llvm/optimized/InstCombineMulDivRem.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/MCCodeView.cpp.ll
+; llvm/optimized/MachineLoopInfo.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/TailDuplicator.cpp.ll
+; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/shader.cpp.ll
 ; minetest/optimized/texturepaths.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
+; opencv/optimized/datastructs.cpp.ll
+; openjdk/optimized/archiveHeapLoader.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/arraycopynode.ll
+; openjdk/optimized/barrierSetNMethod.ll
+; openjdk/optimized/bfsClosure.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/classLoaderData.ll
+; openjdk/optimized/compile.ll
+; openjdk/optimized/defNewGeneration.ll
+; openjdk/optimized/dfsClosure.ll
+; openjdk/optimized/escape.ll
+; openjdk/optimized/g1AllocRegion.ll
+; openjdk/optimized/g1Allocator.ll
+; openjdk/optimized/g1Arguments.ll
+; openjdk/optimized/g1BarrierSet.ll
+; openjdk/optimized/g1BatchedTask.ll
+; openjdk/optimized/g1BlockOffsetTable.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1CardTable.ll
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/g1CollectionSet.ll
+; openjdk/optimized/g1CollectionSetCandidates.ll
+; openjdk/optimized/g1CollectionSetChooser.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1ConcurrentMarkBitMap.ll
+; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
+; openjdk/optimized/g1ConcurrentMarkThread.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1ConcurrentRefine.ll
+; openjdk/optimized/g1DirtyCardQueue.ll
+; openjdk/optimized/g1EvacFailureRegions.ll
+; openjdk/optimized/g1FullCollector.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1FullGCCompactTask.ll
+; openjdk/optimized/g1FullGCCompactionPoint.ll
+; openjdk/optimized/g1FullGCMarkTask.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1FullGCOopClosures.ll
+; openjdk/optimized/g1FullGCPrepareTask.ll
+; openjdk/optimized/g1FullGCResetMetadataTask.ll
+; openjdk/optimized/g1GCPhaseTimes.ll
+; openjdk/optimized/g1HeapRegion.ll
+; openjdk/optimized/g1HeapRegionManager.ll
+; openjdk/optimized/g1HeapRegionRemSet.ll
+; openjdk/optimized/g1HeapRegionSet.ll
+; openjdk/optimized/g1HeapVerifier.ll
+; openjdk/optimized/g1IHOPControl.ll
+; openjdk/optimized/g1MonitoringSupport.ll
+; openjdk/optimized/g1NMethodClosure.ll
+; openjdk/optimized/g1OopClosures.ll
+; openjdk/optimized/g1OopStarChunkedList.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/g1PeriodicGCTask.ll
+; openjdk/optimized/g1Policy.ll
+; openjdk/optimized/g1RegionMarkStatsCache.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1RemSetSummary.ll
+; openjdk/optimized/g1RemSetTrackingPolicy.ll
+; openjdk/optimized/g1RootClosures.ll
+; openjdk/optimized/g1RootProcessor.ll
+; openjdk/optimized/g1SATBMarkQueueSet.ll
+; openjdk/optimized/g1StringDedup.ll
+; openjdk/optimized/g1UncommitRegionTask.ll
+; openjdk/optimized/g1VMOperations.ll
+; openjdk/optimized/g1YoungCollector.ll
+; openjdk/optimized/g1YoungGCAllocationFailureInjector.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/g1YoungGCPreEvacuateTasks.ll
+; openjdk/optimized/gcVMOperations.ll
+; openjdk/optimized/heapDumper.ll
+; openjdk/optimized/heapShared.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/instanceRefKlass.ll
+; openjdk/optimized/iterator.ll
+; openjdk/optimized/jfrDeprecationManager.ll
+; openjdk/optimized/jni.ll
+; openjdk/optimized/jniHandles.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmtiTagMap.ll
+; openjdk/optimized/jvmtiTagMapTable.ll
+; openjdk/optimized/library_call.ll
+; openjdk/optimized/macroArrayCopy.ll
+; openjdk/optimized/memnode.ll
+; openjdk/optimized/mutableSpace.ll
+; openjdk/optimized/node.ll
+; openjdk/optimized/objArrayOop.ll
+; openjdk/optimized/objectMonitor.ll
+; openjdk/optimized/objectSample.ll
+; openjdk/optimized/objectSampleCheckpoint.ll
+; openjdk/optimized/parMarkBitMap.ll
+; openjdk/optimized/protectionDomainCache.ll
+; openjdk/optimized/psCardTable.ll
+; openjdk/optimized/psCompactionManager.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psPromotionManager.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/referenceProcessor.ll
+; openjdk/optimized/resolvedMethodTable.ll
+; openjdk/optimized/serialFullGC.ll
+; openjdk/optimized/serialHeap.ll
+; openjdk/optimized/shenandoahBarrierSet.ll
+; openjdk/optimized/shenandoahConcurrentGC.ll
+; openjdk/optimized/shenandoahFullGC.ll
+; openjdk/optimized/shenandoahGC.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahHeapRegion.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/shenandoahRootProcessor.ll
+; openjdk/optimized/shenandoahRuntime.ll
+; openjdk/optimized/shenandoahVerifier.ll
+; openjdk/optimized/stringDedupTable.ll
+; openjdk/optimized/stringTable.ll
+; openjdk/optimized/subnode.ll
+; openjdk/optimized/universe.ll
+; openjdk/optimized/unsafe.ll
+; openjdk/optimized/vectorization.ll
+; openjdk/optimized/weakHandle.ll
+; openjdk/optimized/whitebox.ll
+; openjdk/optimized/xBarrier.ll
+; openjdk/optimized/xBarrierSetRuntime.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/xMark.ll
+; openjdk/optimized/xRootsIterator.ll
+; openjdk/optimized/zBarrierSetRuntime.ll
+; openjdk/optimized/zHeapIterator.ll
+; openjdk/optimized/zMark.ll
+; openjdk/optimized/zRelocate.ll
+; openjdk/optimized/zRelocationSet.ll
+; openjdk/optimized/zRootsIterator.ll
+; openjdk/optimized/zVerify.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/composeSite.cpp.ll
+; openusd/optimized/gprimAdapter.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/primvar.cpp.ll
+; openusd/optimized/skinningQuery.cpp.ll
+; openusd/optimized/subset.cpp.ll
+; openusd/optimized/variableExpressionImpl.cpp.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/zend_object_handlers.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; ruby/optimized/gc.ll
+; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
@@ -67,7 +222,7 @@ entry:
   ret i1 %5
 }
 
-; 215 occurrences:
+; 260 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -84,14 +239,12 @@ entry:
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
-; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/sensitivity_analysis.cpp.ll
 ; casadi/optimized/test_linsol.cpp.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmExportLibraryDependenciesCommand.cxx.ll
-; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; cmake/optimized/cmGlobalNinjaGenerator.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -152,7 +305,12 @@ entry:
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; folly/optimized/Compression.cpp.ll
+; glslang/optimized/iomapper.cpp.ll
 ; graphviz/optimized/solve_VPSC.cpp.ll
+; gromacs/optimized/biaswriter.cpp.ll
+; gromacs/optimized/interactions.cpp.ll
+; gromacs/optimized/ter_db.cpp.ll
+; gromacs/optimized/toppush.cpp.ll
 ; grpc/optimized/cds.cc.ll
 ; grpc/optimized/channel_trace.cc.ll
 ; grpc/optimized/channelz.cc.ll
@@ -177,11 +335,9 @@ entry:
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/clique.cpp.ll
 ; hyperscan/optimized/data_corpus.cpp.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_fuzzy.cpp.ll
@@ -208,7 +364,37 @@ entry:
 ; lief/optimized/ResourceDialog.cpp.ll
 ; lief/optimized/ResourceDialogItem.cpp.ll
 ; linux/optimized/neighbour.ll
+; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; llvm/optimized/AsmWriterEmitter.cpp.ll
+; llvm/optimized/AtomicExpandPass.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/BugReporter.cpp.ll
+; llvm/optimized/CallingConvEmitter.cpp.ll
+; llvm/optimized/ClangASTPropertiesEmitter.cpp.ll
+; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
+; llvm/optimized/CodeGenMapTable.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
+; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/ExegesisEmitter.cpp.ll
+; llvm/optimized/GlobalISelMatchTableExecutorEmitter.cpp.ll
+; llvm/optimized/HTMLDiagnostics.cpp.ll
+; llvm/optimized/InstrInfoEmitter.cpp.ll
+; llvm/optimized/JSONBackend.cpp.ll
+; llvm/optimized/MCExpr.cpp.ll
+; llvm/optimized/MLInlineAdvisor.cpp.ll
+; llvm/optimized/MachineLoopInfo.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/MemProfiler.cpp.ll
+; llvm/optimized/MveEmitter.cpp.ll
+; llvm/optimized/NeonEmitter.cpp.ll
+; llvm/optimized/StackSafetyAnalysis.cpp.ll
+; llvm/optimized/TailRecursionElimination.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; luau/optimized/TopoSortStatements.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -249,14 +435,31 @@ entry:
 ; nix/optimized/installables.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/worker.ll
+; opencc/optimized/DictGroup.cpp.ll
+; opencv/optimized/geo_interpolation.cpp.ll
+; opencv/optimized/net_impl.cpp.ll
+; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
+; opencv/optimized/perf_aruco.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/slic.cpp.ll
+; openspiel/optimized/oh_hell_test.cc.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/collisionGroup.cpp.ll
+; openusd/optimized/fileIO_Common.cpp.ll
+; openusd/optimized/jsonSerialization.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/material.cpp.ll
+; openusd/optimized/namespaceEdits.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
-; php/optimized/filter.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/creditriskplus.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
 ; rocksdb/optimized/error_handler.cc.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/commands.update-baseline.cpp.ll
 ; vcpkg/optimized/platform-expression.cpp.ll
@@ -264,13 +467,11 @@ entry:
 ; verilator/optimized/V3Case.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; yosys/optimized/aiger.ll
-; yosys/optimized/connwrappers.ll
 ; yosys/optimized/edif.ll
 ; yosys/optimized/expose.ll
 ; yosys/optimized/extract.ll
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/fsm_map.ll
-; yosys/optimized/fsm_opt.ll
 ; yosys/optimized/genrtlil.ll
 ; yosys/optimized/hierarchy.ll
 ; yosys/optimized/opt_dff.ll
@@ -281,7 +482,6 @@ entry:
 ; yosys/optimized/splitnets.ll
 ; yosys/optimized/subcircuit.ll
 ; yosys/optimized/test_autotb.ll
-; z3/optimized/euf_bv_plugin.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(ptr %0, ptr %1, ptr %2) #0 {
@@ -292,9 +492,178 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 72 occurrences:
+; assimp/optimized/zip.c.ll
+; c3c/optimized/types.c.ll
+; cpython/optimized/_bz2module.ll
+; cpython/optimized/_collectionsmodule.ll
+; cpython/optimized/_queuemodule.ll
+; cpython/optimized/_randommodule.ll
+; cpython/optimized/_ssl.ll
+; cpython/optimized/arraymodule.ll
+; cpython/optimized/bltinmodule.ll
+; cpython/optimized/bufferedio.ll
+; cpython/optimized/classobject.ll
+; cpython/optimized/codeobject.ll
+; cpython/optimized/cursor.ll
+; cpython/optimized/enumobject.ll
+; cpython/optimized/floatobject.ll
+; cpython/optimized/itertoolsmodule.ll
+; cpython/optimized/listobject.ll
+; cpython/optimized/row.ll
+; cpython/optimized/setobject.ll
+; cpython/optimized/tupleobject.ll
+; git/optimized/merge-recursive.ll
+; gromacs/optimized/replicaexchange.cpp.ll
+; hermes/optimized/zip.c.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/goughcompile_accel.cpp.ll
+; hyperscan/optimized/goughcompile_reg.cpp.ll
+; hyperscan/optimized/mpvcompile.cpp.ll
+; linux/optimized/exit.ll
+; linux/optimized/libata-eh.ll
+; linux/optimized/pnode.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/CFG.cpp.ll
+; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
+; llvm/optimized/DCE.cpp.ll
+; llvm/optimized/IVDescriptors.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/InstCombineAndOrXor.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/InstCombineMulDivRem.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LoopFlatten.cpp.ll
+; llvm/optimized/LoopInfo.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/TailRecursionElimination.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/X86InstrMappingEmitter.cpp.ll
+; llvm/optimized/X86LowerAMXType.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/seam_remover.cpp.ll
+; openjdk/optimized/buildOopMap.ll
+; openjdk/optimized/g1DirtyCardQueue.ll
+; openjdk/optimized/jvmtiEnv.ll
+; openjdk/optimized/postaloc.ll
+; openjdk/optimized/reflection.ll
+; openjdk/optimized/systemDictionary.ll
+; openusd/optimized/childrenUtils.cpp.ll
+; openusd/optimized/layerRelocatesEditBuilder.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; redis/optimized/cluster_legacy.ll
+; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
+; verilator/optimized/V3Ast.cpp.ll
+; verilator/optimized/V3Descope.cpp.ll
+; yosys/optimized/fsm_opt.ll
+; yosys/optimized/smt2.ll
+; z3/optimized/euf_bv_plugin.cpp.ll
+; z3/optimized/q_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000182(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = icmp eq ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 90 occurrences:
 ; libquic/optimized/hmac.c.ll
 ; linux/optimized/locks.ll
+; llvm/optimized/ArrayBoundChecker.cpp.ll
+; llvm/optimized/ArrayBoundCheckerV2.cpp.ll
+; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
+; llvm/optimized/BitwiseShiftChecker.cpp.ll
+; llvm/optimized/BlockInCriticalSectionChecker.cpp.ll
+; llvm/optimized/BoolAssignmentChecker.cpp.ll
+; llvm/optimized/BuiltinFunctionChecker.cpp.ll
+; llvm/optimized/CStringChecker.cpp.ll
+; llvm/optimized/CXXDeleteChecker.cpp.ll
+; llvm/optimized/CXXSelfAssignmentChecker.cpp.ll
+; llvm/optimized/CallAndMessageChecker.cpp.ll
+; llvm/optimized/CastSizeChecker.cpp.ll
+; llvm/optimized/CastValueChecker.cpp.ll
+; llvm/optimized/CheckObjCDealloc.cpp.ll
+; llvm/optimized/CheckPlacementNew.cpp.ll
+; llvm/optimized/ChrootChecker.cpp.ll
+; llvm/optimized/ContainerModeling.cpp.ll
+; llvm/optimized/ConversionChecker.cpp.ll
+; llvm/optimized/DebugCheckers.cpp.ll
+; llvm/optimized/DebugContainerModeling.cpp.ll
+; llvm/optimized/DebugIteratorModeling.cpp.ll
+; llvm/optimized/DereferenceChecker.cpp.ll
+; llvm/optimized/DivZeroChecker.cpp.ll
+; llvm/optimized/DynamicTypeChecker.cpp.ll
+; llvm/optimized/DynamicTypePropagation.cpp.ll
+; llvm/optimized/EnumCastOutOfRangeChecker.cpp.ll
+; llvm/optimized/ErrnoChecker.cpp.ll
+; llvm/optimized/ErrnoTesterChecker.cpp.ll
+; llvm/optimized/ExprInspectionChecker.cpp.ll
+; llvm/optimized/FixedAddressChecker.cpp.ll
+; llvm/optimized/FuchsiaHandleChecker.cpp.ll
+; llvm/optimized/GenericTaintChecker.cpp.ll
+; llvm/optimized/InvalidPtrChecker.cpp.ll
+; llvm/optimized/InvalidatedIteratorChecker.cpp.ll
+; llvm/optimized/IteratorModeling.cpp.ll
+; llvm/optimized/IteratorRangeChecker.cpp.ll
+; llvm/optimized/LocalizationChecker.cpp.ll
+; llvm/optimized/MIGChecker.cpp.ll
+; llvm/optimized/MPIChecker.cpp.ll
+; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
+; llvm/optimized/MacOSXAPIChecker.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/MismatchedIteratorChecker.cpp.ll
+; llvm/optimized/MmapWriteExecChecker.cpp.ll
+; llvm/optimized/MoveChecker.cpp.ll
+; llvm/optimized/NSAutoreleasePoolChecker.cpp.ll
+; llvm/optimized/NonNullParamChecker.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
+; llvm/optimized/ObjCAtSyncChecker.cpp.ll
+; llvm/optimized/ObjCContainersChecker.cpp.ll
+; llvm/optimized/ObjCSelfInitChecker.cpp.ll
+; llvm/optimized/ObjCSuperDeallocChecker.cpp.ll
+; llvm/optimized/PointerArithChecker.cpp.ll
+; llvm/optimized/PointerSubChecker.cpp.ll
+; llvm/optimized/PthreadLockChecker.cpp.ll
+; llvm/optimized/PutenvStackArrayChecker.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
+; llvm/optimized/ReturnPointerRangeChecker.cpp.ll
+; llvm/optimized/ReturnUndefChecker.cpp.ll
+; llvm/optimized/ReturnValueChecker.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SetgidSetuidOrderChecker.cpp.ll
+; llvm/optimized/SimpleStreamChecker.cpp.ll
+; llvm/optimized/SmartPtrChecker.cpp.ll
+; llvm/optimized/SmartPtrModeling.cpp.ll
+; llvm/optimized/StackAddrEscapeChecker.cpp.ll
+; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
+; llvm/optimized/StdVariantChecker.cpp.ll
+; llvm/optimized/StreamChecker.cpp.ll
+; llvm/optimized/StringChecker.cpp.ll
+; llvm/optimized/TaintTesterChecker.cpp.ll
+; llvm/optimized/TestAfterDivZeroChecker.cpp.ll
+; llvm/optimized/UndefBranchChecker.cpp.ll
+; llvm/optimized/UndefCapturedBlockVarChecker.cpp.ll
+; llvm/optimized/UndefResultChecker.cpp.ll
+; llvm/optimized/UndefinedArraySubscriptChecker.cpp.ll
+; llvm/optimized/UndefinedAssignmentChecker.cpp.ll
+; llvm/optimized/UndefinedNewArraySizeChecker.cpp.ll
+; llvm/optimized/UninitializedObjectChecker.cpp.ll
+; llvm/optimized/UnixAPIChecker.cpp.ll
+; llvm/optimized/VLASizeChecker.cpp.ll
+; llvm/optimized/ValistChecker.cpp.ll
+; llvm/optimized/VforkChecker.cpp.ll
+; llvm/optimized/VirtualCallChecker.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/testUsdResolveTarget.cpp.ll
 ; rocksdb/optimized/merging_iterator.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000198(ptr %0, ptr %1, ptr %2) #0 {
@@ -316,48 +685,6 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
-; assimp/optimized/zip.c.ll
-; cpython/optimized/_bz2module.ll
-; cpython/optimized/_collectionsmodule.ll
-; cpython/optimized/_queuemodule.ll
-; cpython/optimized/_randommodule.ll
-; cpython/optimized/_ssl.ll
-; cpython/optimized/arraymodule.ll
-; cpython/optimized/bltinmodule.ll
-; cpython/optimized/bufferedio.ll
-; cpython/optimized/classobject.ll
-; cpython/optimized/codeobject.ll
-; cpython/optimized/cursor.ll
-; cpython/optimized/enumobject.ll
-; cpython/optimized/floatobject.ll
-; cpython/optimized/itertoolsmodule.ll
-; cpython/optimized/listobject.ll
-; cpython/optimized/row.ll
-; cpython/optimized/setobject.ll
-; cpython/optimized/tupleobject.ll
-; git/optimized/merge-recursive.ll
-; hermes/optimized/zip.c.ll
-; hyperscan/optimized/mpvcompile.cpp.ll
-; linux/optimized/exit.ll
-; linux/optimized/libata-eh.ll
-; linux/optimized/pnode.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; pugixml/optimized/pugixml.cpp.ll
-; redis/optimized/cluster_legacy.ll
-; verilator/optimized/V3Ast.cpp.ll
-; verilator/optimized/V3Descope.cpp.ll
-; yosys/optimized/smt2.ll
-; z3/optimized/q_solver.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ne ptr %1, %2
-  %4 = icmp eq ptr %0, null
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
@@ -369,15 +696,16 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/signal.c.ll
+; hdf5/optimized/H5FDcore.c.ll
 ; libuv/optimized/signal.c.ll
 ; node/optimized/signal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = icmp ugt ptr %0, %1
+  %4 = icmp ult ptr %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -389,17 +717,6 @@ define i1 @func0000000000000138(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp ne ptr %0, null
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/ptp_classifier.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ugt ptr %1, %2
-  %4 = icmp eq ptr %0, null
   %5 = or i1 %4, %3
   ret i1 %5
 }

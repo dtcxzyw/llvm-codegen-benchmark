@@ -1,0 +1,127 @@
+
+; 116 occurrences:
+; arrow/optimized/bignum.cc.ll
+; clamav/optimized/yara_lexer.c.ll
+; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
+; cmake/optimized/cmCommandArgumentLexer.cxx.ll
+; cmake/optimized/cmDependsJavaLexer.cxx.ll
+; cmake/optimized/cmDependsJavaParser.cxx.ll
+; cmake/optimized/cmExprLexer.cxx.ll
+; cmake/optimized/cmFortranLexer.cxx.ll
+; cmake/optimized/cmGccDepfileLexer.cxx.ll
+; cmake/optimized/cmListFileLexer.c.ll
+; cmake/optimized/frm_driver.c.ll
+; double_conversion/optimized/bignum.cc.ll
+; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
+; eastl/optimized/EAScanfCore.cpp.ll
+; freetype/optimized/ftbase.c.ll
+; glslang/optimized/glslang_tab.cpp.ll
+; graphviz/optimized/exparse.c.ll
+; graphviz/optimized/gmlscan.c.ll
+; graphviz/optimized/layout.c.ll
+; graphviz/optimized/scan.c.ll
+; gromacs/optimized/parser.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hdf5/optimized/H5LTanalyze.c.ll
+; hermes/optimized/APFloat.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
+; icu/optimized/double-conversion-bignum.ll
+; icu/optimized/number_usageprefs.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; jq/optimized/lexer.ll
+; jq/optimized/parser.ll
+; jq/optimized/unicode.ll
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/CodeGenPGO.cpp.ll
+; llvm/optimized/CoverageMappingGen.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
+; luajit/optimized/minilua.ll
+; minetest/optimized/CZipReader.cpp.ll
+; minetest/optimized/cavegen.cpp.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; minetest/optimized/mapgen_v7.cpp.ll
+; minetest/optimized/s_inventory.cpp.ll
+; minetest/optimized/s_nodemeta.cpp.ll
+; minetest/optimized/s_player.cpp.ll
+; nuklear/optimized/unity.c.ll
+; oniguruma/optimized/unicode.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; opencv/optimized/mathfuncs.cpp.ll
+; openjdk/optimized/hb-ot-shaper-indic.ll
+; openjdk/optimized/hb-ot-shaper-khmer.ll
+; openjdk/optimized/hb-ot-shaper-myanmar.ll
+; openjdk/optimized/hb-ot-shaper-use.ll
+; openmpi/optimized/rmaps_rank_file_lex.ll
+; openmpi/optimized/show_help_lex.ll
+; openusd/optimized/bignum.cc.ll
+; php/optimized/zend_language_parser.ll
+; postgres/optimized/bootscanner.ll
+; postgres/optimized/brin.ll
+; postgres/optimized/brin_inclusion.ll
+; postgres/optimized/brin_minmax.ll
+; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/dependencies.ll
+; postgres/optimized/execJunk.ll
+; postgres/optimized/execReplication.ll
+; postgres/optimized/exprscan.ll
+; postgres/optimized/ginscan.ll
+; postgres/optimized/gistscan.ll
+; postgres/optimized/gram.ll
+; postgres/optimized/guc-file.ll
+; postgres/optimized/heap.ll
+; postgres/optimized/indexam.ll
+; postgres/optimized/indexcmds.ll
+; postgres/optimized/matview.ll
+; postgres/optimized/nodeAgg.ll
+; postgres/optimized/partcache.ll
+; postgres/optimized/pg_attrdef.ll
+; postgres/optimized/pgc.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/plancat.ll
+; postgres/optimized/preproc.ll
+; postgres/optimized/repl_scanner.ll
+; postgres/optimized/ri_triggers.ll
+; postgres/optimized/specscanner.ll
+; postgres/optimized/syncrep_scanner.ll
+; postgres/optimized/syscache.ll
+; postgres/optimized/tablecmds.ll
+; postgres/optimized/trigger.ll
+; postgres/optimized/tupdesc.ll
+; proj/optimized/wkt2_generated_parser.c.ll
+; redis/optimized/lparser.ll
+; ruby/optimized/gc.ll
+; ruby/optimized/parse.ll
+; ruby/optimized/ripper.ll
+; sqlite/optimized/sqlite3.ll
+; velox/optimized/DenseHll.cpp.ll
+; velox/optimized/ExprToSubfieldFilter.cpp.ll
+; velox/optimized/TypeCalculation.yy.cc.ll
+; verilator/optimized/V3ParseLex.cpp.ll
+; wireshark/optimized/ascend_scanner.c.ll
+; wireshark/optimized/busmaster_scanner.c.ll
+; wireshark/optimized/candump_scanner.c.ll
+; wireshark/optimized/diam_dict.c.ll
+; wireshark/optimized/dtd_parse.c.ll
+; wireshark/optimized/dtd_preparse.c.ll
+; wireshark/optimized/k12text.c.ll
+; wireshark/optimized/mate_parser.c.ll
+; wireshark/optimized/packet-csn1.c.ll
+; wireshark/optimized/protobuf_lang_scanner.c.ll
+; wireshark/optimized/radius_dict.c.ll
+; wireshark/optimized/scanner.c.ll
+; wireshark/optimized/text_import_scanner.c.ll
+; wireshark/optimized/uat_load.c.ll
+; wireshark/optimized/wimaxasncp_dict.c.ll
+; yosys/optimized/rtlil_lexer.ll
+; yosys/optimized/verilog_lexer.ll
+; yosys/optimized/verilog_parser.tab.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i16 %0) #0 {
+entry:
+  %1 = sext i16 %0 to i64
+  %2 = add nsw i64 %1, 1
+  ret i64 %2
+}
+
+attributes #0 = { nounwind }

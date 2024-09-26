@@ -1,0 +1,15 @@
+func0000000000000004:                   # @func0000000000000004
+	andi	a0, a0, 255
+	sltiu	a1, a0, 32
+	addi	a1, a1, -1
+	or	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	slli	a1, a0, 56
+	bgez	a1, .LBB1_2
+	lui	a0, 16
+	addiw	a0, a0, -3
+	ret
+.LBB1_2:
+	andi	a0, a0, 255
+	ret

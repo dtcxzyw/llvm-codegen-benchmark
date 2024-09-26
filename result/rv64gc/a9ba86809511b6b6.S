@@ -1,0 +1,16 @@
+func0000000000000401:                   # @func0000000000000401
+	add	a1, a1, a2
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000518:                   # @func0000000000000518
+	addw	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000011:                   # @func0000000000000011
+	addw	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret

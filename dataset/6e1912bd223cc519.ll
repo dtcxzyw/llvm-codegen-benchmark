@@ -1,0 +1,124 @@
+
+; 113 occurrences:
+; abc/optimized/cuddZddMisc.c.ll
+; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; abseil-cpp/optimized/chi_square_test.cc.ll
+; abseil-cpp/optimized/discrete_distribution_test.cc.ll
+; abseil-cpp/optimized/exponential_distribution_test.cc.ll
+; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
+; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; darktable/optimized/camera.c.ll
+; darktable/optimized/darkroom.c.ll
+; darktable/optimized/gamepad.c.ll
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_atrous.c.ll
+; darktable/optimized/introspection_clipping.c.ll
+; darktable/optimized/introspection_colorcorrection.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_levels.c.ll
+; darktable/optimized/introspection_lowlight.c.ll
+; darktable/optimized/introspection_monochrome.c.ll
+; darktable/optimized/introspection_rgblevels.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
+; darktable/optimized/live_view.c.ll
+; darktable/optimized/print_settings.c.ll
+; darktable/optimized/ratings.c.ll
+; darktable/optimized/snapshots.c.ll
+; darktable/optimized/tagging.c.ll
+; darktable/optimized/tethering.c.ll
+; darktable/optimized/timeline.c.ll
+; graphviz/optimized/dotsplines.c.ll
+; graphviz/optimized/emit.c.ll
+; graphviz/optimized/gvdevice_xlib.c.ll
+; graphviz/optimized/gvrender_core_pic.c.ll
+; graphviz/optimized/position.c.ll
+; graphviz/optimized/shapes.c.ll
+; graphviz/optimized/stress.c.ll
+; graphviz/optimized/xlabels.c.ll
+; gromacs/optimized/densityfittingforce.cpp.ll
+; gromacs/optimized/gmx_potential.cpp.ll
+; grpc/optimized/histogram_view.cc.ll
+; hdf5/optimized/H5Ztrans.c.ll
+; icu/optimized/indiancal.ll
+; imgui/optimized/imgui.cpp.ll
+; libwebp/optimized/quant_levels_utils.c.ll
+; meshlab/optimized/AlignPairWidget.cpp.ll
+; meshlab/optimized/coordinateframe.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/edit_measure.cpp.ll
+; meshlab/optimized/edit_mutualcorrs.cpp.ll
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/edit_sample.cpp.ll
+; meshlab/optimized/editpickpoints.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/ml_default_decorators.cpp.ll
+; meshlab/optimized/paintbox.cpp.ll
+; meshlab/optimized/rubberband.cpp.ll
+; meshlab/optimized/texture_optimization.cpp.ll
+; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
+; msdfgen/optimized/main.cpp.ll
+; msdfgen/optimized/sdf-error-estimation.cpp.ll
+; opencv/optimized/Utils.cpp.ll
+; opencv/optimized/bgfg_gmg.cpp.ll
+; opencv/optimized/cap_v4l.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
+; opencv/optimized/color_match_template.cpp.ll
+; opencv/optimized/convhull.cpp.ll
+; opencv/optimized/daisy.cpp.ll
+; opencv/optimized/demhist.cpp.ll
+; opencv/optimized/facemarkLBF.cpp.ll
+; opencv/optimized/introduction_to_pca.cpp.ll
+; opencv/optimized/lsd.cpp.ll
+; opencv/optimized/mathfuncs.cpp.ll
+; opencv/optimized/multiTracker.cpp.ll
+; opencv/optimized/multiTracker_dataset.cpp.ll
+; opencv/optimized/pyrlk_optical_flow.cpp.ll
+; opencv/optimized/quality.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/shapedescr.cpp.ll
+; opencv/optimized/tldDetector.cpp.ll
+; opencv/optimized/trackerCSRT.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; openjdk/optimized/DrawLine.ll
+; openjdk/optimized/MaskFill.ll
+; openjdk/optimized/ProcessPath.ll
+; openjdk/optimized/awt_Mlib.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; openjdk/optimized/sharedRuntimeTrig.ll
+; openspiel/optimized/Scheduler.cpp.ll
+; openspiel/optimized/colored_trails.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/RayTracer.cc.ll
+; php/optimized/timelib.ll
+; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/int.ll
+; postgres/optimized/rangetypes.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; ruby/optimized/date_core.ll
+; slurm/optimized/launch.ll
+; wireshark/optimized/lte_mac_statistics_dialog.cpp.ll
+; wireshark/optimized/lte_rlc_statistics_dialog.cpp.ll
+; wireshark/optimized/packet_diagram.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; wireshark/optimized/sequence_diagram.cpp.ll
+; wireshark/optimized/sequence_dialog.cpp.ll
+; wireshark/optimized/sparkline_delegate.cpp.ll
+; zxing/optimized/DMDetector.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; zxing/optimized/WhiteRectDetector.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(double %0, i32 %1) #0 {
+entry:
+  %2 = sitofp i32 %1 to double
+  %3 = fsub double %2, %0
+  ret double %3
+}
+
+attributes #0 = { nounwind }

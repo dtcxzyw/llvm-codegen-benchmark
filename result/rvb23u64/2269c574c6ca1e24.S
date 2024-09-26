@@ -1,8 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	fmv.w.x	fa5, zero
-	fadd.s	fa5, fa1, fa5
-	fli.s	fa4, 0.5
-	fneg.s	fa3, fa4
-	fmul.s	fa5, fa5, fa3
-	fnmsub.s	fa0, fa4, fa0, fa5
-	ret

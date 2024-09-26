@@ -1,0 +1,20 @@
+func0000000000000004:                   # @func0000000000000004
+	lui	a3, 244
+	addiw	a3, a3, 576
+	mul	a2, a2, a3
+	mul	a0, a0, a1
+	sltu	a0, a0, a2
+	ret
+func0000000000000008:                   # @func0000000000000008
+	li	a3, 100
+	mul	a2, a2, a3
+	mul	a0, a0, a1
+	sltu	a0, a2, a0
+	ret
+func00000000000000c8:                   # @func00000000000000c8
+	lui	a3, 1318
+	addiw	a3, a3, 1472
+	mul	a2, a2, a3
+	mul	a0, a0, a1
+	sltu	a0, a2, a0
+	ret

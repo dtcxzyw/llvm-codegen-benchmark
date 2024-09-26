@@ -1,6 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	fmv.d.x	fa5, zero
-	fsgnj.d	fa5, fa5, fa2
-	fadd.d	fa5, fa5, fa1
-	fadd.d	fa0, fa5, fa0
-	ret

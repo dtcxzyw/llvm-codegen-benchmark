@@ -12,11 +12,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/psqlscan.ll
 ; postgres/optimized/scan.ll
 ; raylib/optimized/rmodels.c.ll
+; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, ptr %1, i1 %2) #0 {
 entry:

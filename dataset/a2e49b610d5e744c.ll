@@ -5,11 +5,11 @@
 ; lief/optimized/MemoryStream.cpp.ll
 ; lief/optimized/SpanStream.cpp.ll
 ; lief/optimized/VectorStream.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; nix/optimized/derivation-goal.ll
-; proxygen/optimized/HQControlCodec.cpp.ll
-; proxygen/optimized/HQStreamCodec.cpp.ll
+; openjdk/optimized/systemDictionaryShared.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, ptr %1, i1 %2) #0 {
 entry:

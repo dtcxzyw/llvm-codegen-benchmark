@@ -1,15 +1,14 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
 ; linux/optimized/intel_dp.ll
+; llvm/optimized/Clang.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
-; openblas/optimized/dgemlq.c.ll
-; openblas/optimized/dgemqr.c.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; openjdk/optimized/loopnode.ll
+; openspiel/optimized/hearts.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

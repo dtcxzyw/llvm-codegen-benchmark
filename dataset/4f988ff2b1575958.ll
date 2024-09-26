@@ -1,0 +1,127 @@
+
+; 116 occurrences:
+; abc/optimized/cnfPost.c.ll
+; abc/optimized/giaEra.c.ll
+; clamav/optimized/filtering.c.ll
+; clamav/optimized/matcher-pcre.c.ll
+; cmake/optimized/cmCTestUpdateHandler.cxx.ll
+; cvc5/optimized/inst_strategy_e_matching.cpp.ll
+; darktable/optimized/introspection_highlights.c.ll
+; flac/optimized/stream_encoder.c.ll
+; folly/optimized/HugePages.cpp.ll
+; folly/optimized/JSONSchema.cpp.ll
+; folly/optimized/TestUtil.cpp.ll
+; folly/optimized/Uri.cpp.ll
+; freetype/optimized/psaux.c.ll
+; gromacs/optimized/update.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/ISel.cpp.ll
+; hwloc/optimized/lstopo-lstopo-draw.ll
+; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
+; icu/optimized/collationdatabuilder.ll
+; icu/optimized/decNumber.ll
+; icu/optimized/reldtfmt.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; jq/optimized/decNumber.ll
+; kcp/optimized/ikcp.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; libpng/optimized/png.c.ll
+; libquic/optimized/tasn_enc.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; linux/optimized/device_pm.ll
+; linux/optimized/filemap.ll
+; linux/optimized/hda_codec.ll
+; linux/optimized/hexdump.ll
+; linux/optimized/kbuf.ll
+; linux/optimized/maple_tree.ll
+; linux/optimized/nfs3xdr.ll
+; linux/optimized/shmem.ll
+; linux/optimized/swap_state.ll
+; linux/optimized/utbuffer.ll
+; linux/optimized/xarray.ll
+; llvm/optimized/Attributor.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/DWARFUnitIndex.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/MachineLICM.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
+; llvm/optimized/PPMacroExpansion.cpp.ll
+; llvm/optimized/ParseTentative.cpp.ll
+; llvm/optimized/PseudoProbe.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/TokenLexer.cpp.ll
+; llvm/optimized/UnwrappedLineFormatter.cpp.ll
+; llvm/optimized/X86CallingConv.cpp.ll
+; luajit/optimized/buildvm.ll
+; mitsuba3/optimized/func.cpp.ll
+; ncnn/optimized/gridsample_x86.cpp.ll
+; ncnn/optimized/gridsample_x86_avx.cpp.ll
+; ncnn/optimized/gridsample_x86_avx512.cpp.ll
+; ncnn/optimized/gridsample_x86_fma.cpp.ll
+; nori/optimized/layout.cpp.ll
+; ocio/optimized/GammaOpData.cpp.ll
+; openblas/optimized/dimatcopy.c.ll
+; openblas/optimized/dsytrd_sb2st.c.ll
+; openblas/optimized/lapacke_dgesdd_work.c.ll
+; opencv/optimized/ts.cpp.ll
+; openjdk/optimized/hb-ot-cff1-table.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/png.ll
+; openmpi/optimized/coll_base_topo.ll
+; openmpi/optimized/common_ompio_file_open.ll
+; openssl/optimized/libcrypto-lib-bn_exp.ll
+; openssl/optimized/libcrypto-lib-evp_fetch.ll
+; openssl/optimized/libcrypto-lib-rsa_pk1.ll
+; openssl/optimized/libcrypto-lib-tasn_enc.ll
+; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; openssl/optimized/libcrypto-shlib-evp_fetch.ll
+; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
+; openssl/optimized/libcrypto-shlib-tasn_enc.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
+; openusd/optimized/loopfilter.c.ll
+; php/optimized/decode.ll
+; php/optimized/ir_emit.ll
+; php/optimized/zend_execute.ll
+; postgres/optimized/heap.ll
+; postgres/optimized/print.ll
+; qemu/optimized/tcg.c.ll
+; qemu/optimized/util_unicode.c.ll
+; quantlib/optimized/cevrndcalculator.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/hestonprocess.ll
+; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quantlib/optimized/tcopulapolicy.ll
+; raylib/optimized/rtextures.c.ll
+; rocksdb/optimized/random_access_file_reader.cc.ll
+; ruby/optimized/ruby.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; softposit-rs/optimized/4kf6wfleft5henpt.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
+; verilator/optimized/V3Slice.cpp.ll
+; wireshark/optimized/packet-atm.c.ll
+; wireshark/optimized/packet-bat.c.ll
+; wireshark/optimized/packet-dcm.c.ll
+; wireshark/optimized/packet-mpeg-pes.c.ll
+; wireshark/optimized/packet-quic.c.ll
+; wireshark/optimized/packet-radius.c.ll
+; wireshark/optimized/packet-ssh.c.ll
+; wireshark/optimized/packet-tls.c.ll
+; wireshark/optimized/packet_list_model.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; wolfssl/optimized/suites.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = select i1 %3, i32 %0, i32 0
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

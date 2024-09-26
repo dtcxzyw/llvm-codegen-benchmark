@@ -1,7 +1,12 @@
 
-; 7 occurrences:
+; 12 occurrences:
+; clamav/optimized/htmlnorm.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; linux/optimized/kvmclock.ll
+; llvm/optimized/NeonEmitter.cpp.ll
+; llvm/optimized/PrintPreprocessedOutput.cpp.ll
+; opencv/optimized/gfluidimgproc.cpp.ll
+; openjdk/optimized/log_messages.ll
 ; postgres/optimized/informix.ll
 ; postgres/optimized/print.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll

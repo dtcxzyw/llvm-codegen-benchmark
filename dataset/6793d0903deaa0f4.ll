@@ -1,0 +1,125 @@
+
+; 114 occurrences:
+; bullet3/optimized/btBatchedConstraints.ll
+; bullet3/optimized/btGjkPairDetector.ll
+; bullet3/optimized/poly34.ll
+; darktable/optimized/introspection_liquify.c.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; eastl/optimized/Int128_t.cpp.ll
+; g2o/optimized/edge_project_stereo_xyz.cpp.ll
+; graphviz/optimized/gvrender_pango.c.ll
+; gromacs/optimized/bonded.cpp.ll
+; gromacs/optimized/convparm.cpp.ll
+; gromacs/optimized/energyoutput.cpp.ll
+; gromacs/optimized/expfit.cpp.ll
+; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
+; gromacs/optimized/gmx_current.cpp.ll
+; gromacs/optimized/gmx_dipoles.cpp.ll
+; gromacs/optimized/gmx_energy.cpp.ll
+; gromacs/optimized/gmx_sigeps.cpp.ll
+; gromacs/optimized/gmx_xpm2ps.cpp.ll
+; gromacs/optimized/idef.cpp.ll
+; gromacs/optimized/long_range_correction.cpp.ll
+; gromacs/optimized/pbcmethods.cpp.ll
+; gromacs/optimized/pdbio.cpp.ll
+; gromacs/optimized/pullutil.cpp.ll
+; gromacs/optimized/restcbt.cpp.ll
+; gromacs/optimized/shellfc.cpp.ll
+; gromacs/optimized/slarrex.cpp.ll
+; gromacs/optimized/slasd5.cpp.ll
+; gromacs/optimized/slasq4.cpp.ll
+; gromacs/optimized/slasv2.cpp.ll
+; gromacs/optimized/sstebz.cpp.ll
+; gromacs/optimized/topshake.cpp.ll
+; gromacs/optimized/tpi.cpp.ll
+; gromacs/optimized/trjcat.cpp.ll
+; gromacs/optimized/trxio.cpp.ll
+; grpc/optimized/rls.cc.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/paintbox.cpp.ll
+; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
+; minetest/optimized/camera.cpp.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; minetest/optimized/mapnode.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; nanosvg/optimized/nanosvg.ll
+; nori/optimized/nanovg.c.ll
+; oiio/optimized/formatspec.cpp.ll
+; openblas/optimized/dsytrd_sb2st.c.ll
+; opencv/optimized/HoughLines_Demo.cpp.ll
+; opencv/optimized/approx.cpp.ll
+; opencv/optimized/aruco_board.cpp.ll
+; opencv/optimized/aruco_detector.cpp.ll
+; opencv/optimized/binary_descriptor.cpp.ll
+; opencv/optimized/box_filter.dispatch.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
+; opencv/optimized/convhull.cpp.ll
+; opencv/optimized/corner.cpp.ll
+; opencv/optimized/degeneracy.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/detector.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/fundam.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; opencv/optimized/homography_solver.cpp.ll
+; opencv/optimized/houghlines.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/intersection.cpp.ll
+; opencv/optimized/introduction_to_pca.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; opencv/optimized/matrix_decomp.cpp.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
+; opencv/optimized/motion_stabilizing.cpp.ll
+; opencv/optimized/normal.cpp.ll
+; opencv/optimized/odometry.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
+; opencv/optimized/phasecorr.cpp.ll
+; opencv/optimized/pnp_solver.cpp.ll
+; opencv/optimized/ptsetreg.cpp.ll
+; opencv/optimized/quality.cpp.ll
+; opencv/optimized/regtree.cpp.ll
+; opencv/optimized/rotcalipers.cpp.ll
+; opencv/optimized/shapedescr.cpp.ll
+; opencv/optimized/sinusoidalpattern.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; openjdk/optimized/ProcessPath.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
+; openusd/optimized/matrix3f.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
+; openusd/optimized/quatf.cpp.ll
+; openusd/optimized/quath.cpp.ll
+; openusd/optimized/stencilTableFactory.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; postgres/optimized/selfuncs.ll
+; xgboost/optimized/updater_coordinate.cc.ll
+; xgboost/optimized/updater_shotgun.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(float %0) #0 {
+entry:
+  %1 = fpext float %0 to double
+  %2 = fneg double %1
+  ret double %2
+}
+
+attributes #0 = { nounwind }

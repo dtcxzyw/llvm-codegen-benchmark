@@ -1,0 +1,34 @@
+func0000000000000004:                   # @func0000000000000004
+	fmv.w.x	fa5, zero
+	flt.s	a1, fa5, fa0
+	li	a0, 4
+	bnez	a1, .LBB0_2
+	li	a0, 16
+.LBB0_2:                                # %entry
+	ret
+func0000000000000002:                   # @func0000000000000002
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa0, fa5
+	slli	a0, a0, 2
+	ret
+func0000000000000007:                   # @func0000000000000007
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa0, fa5
+	addi	a0, a0, -1
+	andi	a0, a0, 5
+	ret
+.LCPI3_0:
+	.word	0x4e6e6b28                      # float 1.0E+9
+func0000000000000008:                   # @func0000000000000008
+	lui	a0, %hi(.LCPI3_0)
+	flw	fa5, %lo(.LCPI3_0)(a0)
+	feq.s	a0, fa0, fa5
+	slli	a0, a0, 14
+	ret
+func0000000000000005:                   # @func0000000000000005
+	lui	a0, 264192
+	fmv.w.x	fa5, a0
+	fle.s	a0, fa0, fa5
+	xori	a0, a0, 1
+	addi	a0, a0, 5
+	ret

@@ -1,0 +1,22 @@
+func0000000000000011:                   # @func0000000000000011
+	add	a0, a0, a1
+	andi	a0, a0, 7
+	snez	a0, a0
+	slli	a0, a0, 12
+	ret
+func0000000000000034:                   # @func0000000000000034
+	add	a0, a0, a1
+	lui	a1, 16
+	addiw	a1, a1, -32
+	and	a0, a0, a1
+	sltiu	a0, a0, 96
+	li	a1, -100
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 2000
+	ret
+func0000000000000031:                   # @func0000000000000031
+	add	a0, a0, a1
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	ori	a0, a0, 1
+	ret

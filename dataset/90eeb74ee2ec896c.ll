@@ -1,0 +1,114 @@
+
+; 103 occurrences:
+; abseil-cpp/optimized/distribution_test_util.cc.ll
+; casadi/optimized/constant_mx.cpp.ll
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/mx_node.cpp.ll
+; casadi/optimized/sx_elem.cpp.ll
+; casadi/optimized/sx_function.cpp.ll
+; casadi/optimized/unary_mx.cpp.ll
+; darktable/optimized/DngOpcodes.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; darktable/optimized/introspection_temperature.c.ll
+; flac/optimized/encode.c.ll
+; glslang/optimized/Constant.cpp.ll
+; gromacs/optimized/colvar.cpp.ll
+; gromacs/optimized/colvarcomp.cpp.ll
+; gromacs/optimized/colvarcomp_rotations.cpp.ll
+; gromacs/optimized/colvarvalue.cpp.ll
+; gromacs/optimized/fixpoint.c.ll
+; gromacs/optimized/freeenergyparameters.cpp.ll
+; grpc/optimized/flow_control.cc.ll
+; grpc/optimized/periodic_update.cc.ll
+; grpc/optimized/timer.cc.ll
+; grpc/optimized/timer_generic.cc.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; jq/optimized/jv_aux.ll
+; jq/optimized/jv_print.ll
+; lightgbm/optimized/objective_function.cpp.ll
+; llvm/optimized/HeatUtils.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; msdfgen/optimized/equation-solver.cpp.ll
+; openblas/optimized/dbbcsd.c.ll
+; openblas/optimized/dbdsqr.c.ll
+; openblas/optimized/dbdsvdx.c.ll
+; opencv/optimized/ann_mlp.cpp.ll
+; opencv/optimized/boost.cpp.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; opencv/optimized/ccalib.cpp.ll
+; opencv/optimized/colored_kinfu.cpp.ll
+; opencv/optimized/compat_ptsetreg.cpp.ll
+; opencv/optimized/dynafu.cpp.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/fisheye.cpp.ll
+; opencv/optimized/gtrUtils.cpp.ll
+; opencv/optimized/kinfu.cpp.ll
+; opencv/optimized/large_kinfu.cpp.ll
+; opencv/optimized/levmarq.cpp.ll
+; opencv/optimized/linefit.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
+; opencv/optimized/omnidir.cpp.ll
+; opencv/optimized/ptsetreg.cpp.ll
+; opencv/optimized/undistort.dispatch.cpp.ll
+; openjdk/optimized/cmspcs.ll
+; openjdk/optimized/cmssamp.ll
+; openjdk/optimized/freetypeScaler.ll
+; openjdk/optimized/gcm.ll
+; openjdk/optimized/mlib_ImageAffineEdge.ll
+; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
+; openjdk/optimized/mlib_ImageAffine_BL_S32.ll
+; openjdk/optimized/mlib_ImageConvKernelConvert.ll
+; openjdk/optimized/mlib_ImageConvMxN_ext.ll
+; openjdk/optimized/mlib_ImageConv_32nw.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/capsuleMeshGenerator.cpp.ll
+; openusd/optimized/coneMeshGenerator.cpp.ll
+; openusd/optimized/cylinderMeshGenerator.cpp.ll
+; openusd/optimized/data.cpp.ll
+; openusd/optimized/evalUtils.cpp.ll
+; openusd/optimized/keyFrame.cpp.ll
+; openusd/optimized/lineSeg.cpp.ll
+; openusd/optimized/lineSeg2d.cpp.ll
+; openusd/optimized/matrix3d.cpp.ll
+; openusd/optimized/matrix3f.cpp.ll
+; openusd/optimized/matrix4d.cpp.ll
+; openusd/optimized/rotation.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/sphereMeshGenerator.cpp.ll
+; openusd/optimized/testTsThreadedCOW.cpp.ll
+; openusd/optimized/testTs_HardToReach.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/vec3d.cpp.ll
+; openusd/optimized/vec3f.cpp.ll
+; openusd/optimized/vec3h.cpp.ll
+; osqp/optimized/scaling.c.ll
+; postgres/optimized/nodeAgg.ll
+; proj/optimized/adams.cpp.ll
+; proj/optimized/generic_inverse.cpp.ll
+; quantlib/optimized/blackformula.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/conundrumpricer.ll
+; quantlib/optimized/gaussianlhplossmodel.ll
+; quantlib/optimized/lognormalcmsspreadpricer.ll
+; raylib/optimized/raudio.c.ll
+; redis/optimized/geohash.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; stb/optimized/stb_vorbis.c.ll
+; stockfish/optimized/search.ll
+; stockfish/optimized/timeman.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; wireshark/optimized/percent_bar_delegate.cpp.ll
+; wireshark/optimized/wireless_timeline.cpp.ll
+; xgboost/optimized/aft_obj.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000000(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = select i1 %1, double 1.000000e+00, double %2
+  %4 = select i1 %0, double 3.000000e-01, double %3
+  ret double %4
+}
+
+attributes #0 = { nounwind }

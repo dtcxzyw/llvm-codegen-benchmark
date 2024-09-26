@@ -1,0 +1,28 @@
+func00000000000001e8:                   # @func00000000000001e8
+	slli	a1, a1, 3
+	addi	a1, a1, 4
+	sub	a0, a0, a1
+	sltiu	a0, a0, 2
+	xori	a0, a0, 1
+	ret
+func00000000000000e4:                   # @func00000000000000e4
+	slli	a1, a1, 3
+	addi	a1, a1, 4
+	sub	a0, a0, a1
+	sltiu	a0, a0, 8
+	ret
+func00000000000000e8:                   # @func00000000000000e8
+	slli	a1, a1, 4
+	addi	a1, a1, 14
+	sub	a0, a0, a1
+	sltiu	a0, a0, 2
+	xori	a0, a0, 1
+	ret
+func0000000000000044:                   # @func0000000000000044
+	slli	a1, a1, 2
+	addi	a1, a1, 3
+	sub	a0, a0, a1
+	lui	a1, 1048575
+	addiw	a1, a1, -1
+	sltu	a0, a0, a1
+	ret

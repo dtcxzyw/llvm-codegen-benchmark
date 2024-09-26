@@ -1,0 +1,54 @@
+
+; 6 occurrences:
+; libwebp/optimized/picture_csp_enc.c.ll
+; libwebp/optimized/yuv.c.ll
+; ncnn/optimized/mat_pixel.cpp.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; openusd/optimized/reconintra.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %3, %0
+  %5 = ashr i32 %4, 6
+  %6 = tail call i32 @llvm.smax.i32(i32 %5, i32 0)
+  ret i32 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
+; 6 occurrences:
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add i32 %3, %0
+  %5 = ashr i32 %4, 20
+  %6 = tail call i32 @llvm.smax.i32(i32 %5, i32 0)
+  ret i32 %6
+}
+
+; 3 occurrences:
+; opencv/optimized/color_lab.cpp.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = add i32 %3, %0
+  %5 = ashr i32 %4, 12
+  %6 = call i32 @llvm.smax.i32(i32 %5, i32 0)
+  ret i32 %6
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

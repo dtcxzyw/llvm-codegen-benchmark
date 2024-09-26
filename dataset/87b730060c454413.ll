@@ -1,0 +1,134 @@
+
+; 56 occurrences:
+; abc/optimized/satSolver2.c.ll
+; cpython/optimized/_asynciomodule.ll
+; cpython/optimized/fileio.ll
+; crow/optimized/example_ws.cpp.ll
+; flac/optimized/stream_decoder.c.ll
+; git/optimized/archive.ll
+; git/optimized/checkout-index.ll
+; git/optimized/credential.ll
+; git/optimized/files-backend.ll
+; git/optimized/for-each-ref.ll
+; git/optimized/http-backend.ll
+; git/optimized/json-writer.ll
+; git/optimized/object-name.ll
+; git/optimized/transport.ll
+; git/optimized/tree-diff.ll
+; hdf5/optimized/H5Pocpl.c.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; libevent/optimized/bufferevent_ssl.c.ll
+; libwebp/optimized/analysis_enc.c.ll
+; libwebp/optimized/iterator_enc.c.ll
+; libwebp/optimized/quant_enc.c.ll
+; linux/optimized/8139too.ll
+; linux/optimized/dvo_ch7xxx.ll
+; linux/optimized/host.ll
+; linux/optimized/intel_sdvo.ll
+; linux/optimized/io_apic.ll
+; linux/optimized/n_tty.ll
+; linux/optimized/nfs4proc.ll
+; linux/optimized/rx.ll
+; linux/optimized/sock.ll
+; linux/optimized/tcp.ll
+; linux/optimized/tcp_output.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/PreprocessingRecord.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaLambda.cpp.ll
+; llvm/optimized/X86CallingConv.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; openssl/optimized/libssl-lib-quic_sstream.ll
+; openssl/optimized/libssl-shlib-quic_sstream.ll
+; protobuf/optimized/descriptor.cc.ll
+; qemu/optimized/hw_char_serial.c.ll
+; qemu/optimized/hw_usb_dev-serial.c.ll
+; qemu/optimized/hw_vfio_pci.c.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/bio.ll
+; ruby/optimized/enum.ll
+; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; wireshark/optimized/blf.c.ll
+; wireshark/optimized/packet-ixveriwave.c.ll
+; wireshark/optimized/packet-ppi.c.ll
+; wolfssl/optimized/ssl.c.ll
+; yoga/optimized/YGNode.cpp.ll
+; yoga/optimized/YGNodeStyle.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i8
+  %3 = shl i8 %2, 1
+  %4 = and i8 %3, 2
+  %5 = or disjoint i8 %4, %0
+  ret i8 %5
+}
+
+; 4 occurrences:
+; cpython/optimized/textio.ll
+; linux/optimized/sr.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
+; yalantinglibs/optimized/serialize_config.cpp.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001e(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i32 %1 to i8
+  %3 = shl nuw nsw i8 %2, 4
+  %4 = and i8 %3, 16
+  %5 = or i8 %4, %0
+  ret i8 %5
+}
+
+; 2 occurrences:
+; php/optimized/apprentice.ll
+; php/optimized/zend_jit_vm_helpers.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i8
+  %3 = shl i8 %2, 1
+  %4 = and i8 %3, 64
+  %5 = or i8 %4, %0
+  ret i8 %5
+}
+
+; 2 occurrences:
+; git/optimized/refspec.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001f(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i32 %1 to i8
+  %3 = shl nuw nsw i8 %2, 1
+  %4 = and i8 %3, 2
+  %5 = or disjoint i8 %4, %0
+  ret i8 %5
+}
+
+; 1 occurrences:
+; crow/optimized/example_ws.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000011(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw i32 %1 to i8
+  %3 = shl i8 %2, 4
+  %4 = and i8 %3, 48
+  %5 = or disjoint i8 %4, %0
+  ret i8 %5
+}
+
+; 1 occurrences:
+; llama.cpp/optimized/ggml-quants.c.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001c(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i32 %1 to i8
+  %3 = shl nuw i8 %2, 2
+  %4 = and i8 %3, -64
+  %5 = or i8 %4, %0
+  ret i8 %5
+}
+
+attributes #0 = { nounwind }

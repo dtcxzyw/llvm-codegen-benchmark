@@ -1,0 +1,123 @@
+
+; 112 occurrences:
+; annoy/optimized/annoymodule.ll
+; assimp/optimized/X3DExporter.cpp.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/btCompoundShape.ll
+; bullet3/optimized/btConvexTriangleMeshShape.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_denoiseprofile.c.ll
+; darktable/optimized/introspection_sigmoid.c.ll
+; darktable/optimized/introspection_toneequal.c.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; gromacs/optimized/anadih.cpp.ll
+; gromacs/optimized/autocorr.cpp.ll
+; gromacs/optimized/gausstransform.cpp.ll
+; gromacs/optimized/gmx_dyecoupl.cpp.ll
+; gromacs/optimized/gmx_nmr.cpp.ll
+; gromacs/optimized/hxprops.cpp.ll
+; gromacs/optimized/nbnxm_geometry.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; gromacs/optimized/pme_load_balancing.cpp.ll
+; gromacs/optimized/pull_rotation.cpp.ll
+; gromacs/optimized/sbdsqr.cpp.ll
+; gromacs/optimized/slae2.cpp.ll
+; gromacs/optimized/slaev2.cpp.ll
+; gromacs/optimized/slapy2.cpp.ll
+; gromacs/optimized/slas2.cpp.ll
+; gromacs/optimized/slasd4.cpp.ll
+; gromacs/optimized/slassq.cpp.ll
+; gromacs/optimized/slasv2.cpp.ll
+; gromacs/optimized/snrm2.cpp.ll
+; gromacs/optimized/surfacearea.cpp.ll
+; gromacs/optimized/vsite_parm.cpp.ll
+; libwebp/optimized/sharpyuv_gamma.c.ll
+; meshlab/optimized/coordinateframe.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/edit_manipulators.cpp.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/io_collada.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; minetest/optimized/light.cpp.ll
+; minetest/optimized/mapgen_carpathian.cpp.ll
+; mitsuba3/optimized/bsplinecurve.cpp.ll
+; mitsuba3/optimized/cylinder.cpp.ll
+; mitsuba3/optimized/dielectric.cpp.ll
+; mitsuba3/optimized/disk.cpp.ll
+; mitsuba3/optimized/envmap.cpp.ll
+; mitsuba3/optimized/hair.cpp.ll
+; mitsuba3/optimized/hg.cpp.ll
+; mitsuba3/optimized/linearcurve.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/measured_polarized.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/microfacet.cpp.ll
+; mitsuba3/optimized/plastic.cpp.ll
+; mitsuba3/optimized/pplastic.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
+; mitsuba3/optimized/principledthin.cpp.ll
+; mitsuba3/optimized/rectangle.cpp.ll
+; mitsuba3/optimized/roughconductor.cpp.ll
+; mitsuba3/optimized/roughdielectric.cpp.ll
+; mitsuba3/optimized/roughplastic.cpp.ll
+; mitsuba3/optimized/sphere.cpp.ll
+; mitsuba3/optimized/thindielectric.cpp.ll
+; nanosvg/optimized/nanosvg.ll
+; nori/optimized/common.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nori/optimized/perspective.cpp.ll
+; nori/optimized/rfilter.cpp.ll
+; nuklear/optimized/unity.c.ll
+; ocio/optimized/GradingToneOpCPU.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/filter.cpp.ll
+; openblas/optimized/ieeeck.c.ll
+; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
+; opencv/optimized/flann_search_dataset.cpp.ll
+; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
+; opencv/optimized/nonrigid_icp.cpp.ll
+; opencv/optimized/objects_associator.cpp.ll
+; opencv/optimized/slic.cpp.ll
+; opencv/optimized/stitching_detailed.cpp.ll
+; opencv/optimized/tvl1_optical_flow.cpp.ll
+; opencv/optimized/warpers.cpp.ll
+; openexr/optimized/ImfEnvmap.cpp.ll
+; ozz-animation/optimized/gltf2ozz.cc.ll
+; pbrt-v4/optimized/bssrdf.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/gui.cpp.ll
+; pbrt-v4/optimized/integrator.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/primitive.cpp.ll
+; pbrt-v4/optimized/scene.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
+; pbrt-v4/optimized/vecmath.cpp.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; xgboost/optimized/elementwise_metric.cc.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0, float %1) #0 {
+entry:
+  %2 = fdiv float %0, %1
+  %3 = fmul float %2, %2
+  ret float %3
+}
+
+attributes #0 = { nounwind }

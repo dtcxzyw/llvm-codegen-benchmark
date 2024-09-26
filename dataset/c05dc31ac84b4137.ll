@@ -1,4 +1,25 @@
 
+; 11 occurrences:
+; cmake/optimized/cmLocalGenerator.cxx.ll
+; linux/optimized/build_utility.ll
+; linux/optimized/linkmodes.ll
+; linux/optimized/virtio_net.ll
+; llvm/optimized/InstCombineAndOrXor.cpp.ll
+; openjdk/optimized/java_md.ll
+; postgres/optimized/pathkeys.ll
+; postgres/optimized/pg_isready.ll
+; protobuf/optimized/message_differencer.cc.ll
+; qemu/optimized/block_monitor_block-hmp-cmds.c.ll
+; slurm/optimized/extra_constraints.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, ptr %1) #0 {
+entry:
+  %2 = freeze ptr %1
+  %3 = icmp ne ptr %2, null
+  %4 = or i1 %3, %0
+  ret i1 %4
+}
+
 ; 64 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
@@ -14,12 +35,13 @@
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
-; ipopt/optimized/IpStdJInterface.ll
+; jsonnet/optimized/vm.cpp.ll
 ; linux/optimized/move_extent.ll
+; llvm/optimized/Archive.cpp.ll
+; llvm/optimized/Delinearization.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
 ; nix/optimized/nix-env.ll
-; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; php/optimized/phpdbg_bp.ll
+; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/DecodedVector.cpp.ll
@@ -58,7 +80,6 @@
 ; yosys/optimized/simplec.ll
 ; yosys/optimized/smt2.ll
 ; yosys/optimized/splice.ll
-; yosys/optimized/sta.ll
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_abcloop.ll
 ; yosys/optimized/test_cell.ll
@@ -69,27 +90,6 @@ define i1 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
-  ret i1 %4
-}
-
-; 11 occurrences:
-; cmake/optimized/cmLocalGenerator.cxx.ll
-; linux/optimized/build_utility.ll
-; linux/optimized/linkmodes.ll
-; linux/optimized/rtnetlink.ll
-; linux/optimized/virtio_net.ll
-; openssl/optimized/openssl-bin-cmp.ll
-; postgres/optimized/pathkeys.ll
-; postgres/optimized/pg_isready.ll
-; protobuf/optimized/message_differencer.cc.ll
-; qemu/optimized/block_monitor_block-hmp-cmds.c.ll
-; slurm/optimized/extra_constraints.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, ptr %1) #0 {
-entry:
-  %2 = freeze ptr %1
-  %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0
   ret i1 %4
 }

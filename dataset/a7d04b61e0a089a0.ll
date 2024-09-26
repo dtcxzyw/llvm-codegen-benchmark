@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; gromacs/optimized/domdec_specatomcomm.cpp.ll
+; hdf5/optimized/H5T.c.ll
 ; ipopt/optimized/IpTNLP.ll
 ; linux/optimized/printk_ringbuffer.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, ptr %2) #0 {
 entry:
@@ -12,11 +14,10 @@ entry:
   ret i1 %5
 }
 
-; 36 occurrences:
+; 58 occurrences:
 ; cmake/optimized/archive_blake2s_ref.c.ll
 ; cmake/optimized/archive_blake2sp_ref.c.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
-; cmake/optimized/filter_buffer_encoder.c.ll
 ; cmake/optimized/stream_buffer_encoder.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; cpython/optimized/blake2b_impl.ll
@@ -36,12 +37,35 @@ entry:
 ; lief/optimized/pk.c.ll
 ; linux/optimized/nsrepair.ll
 ; linux/optimized/xarray.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/BugReporterVisitors.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/NonNullParamChecker.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/SimplifyLibCalls.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; node/optimized/libnode.js_native_api_v8.ll
+; openjdk/optimized/castnode.ll
+; openjdk/optimized/memnode.ll
+; openjdk/optimized/zip_util.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-lib-params.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
 ; openssl/optimized/libcrypto-shlib-params.ll
+; php/optimized/main.ll
 ; php/optimized/zend_file_cache.ll
 ; qemu/optimized/ui_console.c.ll
 ; redis/optimized/extent_dss.ll

@@ -1,0 +1,94 @@
+
+; 54 occurrences:
+; clamav/optimized/list.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; freetype/optimized/pfr.c.ll
+; hwloc/optimized/topology-linux.ll
+; icu/optimized/collationkeys.ll
+; linux/optimized/e1000_hw.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/exit.ll
+; linux/optimized/forcedeth.ll
+; linux/optimized/gup.ll
+; linux/optimized/intel_dpll_mgr.ll
+; linux/optimized/mii.ll
+; linux/optimized/net.ll
+; linux/optimized/netdev.ll
+; linux/optimized/seq_clientmgr.ll
+; linux/optimized/slub.ll
+; linux/optimized/yenta_socket.ll
+; llvm/optimized/TextNodeDumper.cpp.ll
+; ncnn/optimized/concat_x86_avx.cpp.ll
+; ncnn/optimized/concat_x86_fma.cpp.ll
+; ncnn/optimized/convolution1d_x86_avx.cpp.ll
+; ncnn/optimized/convolution1d_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
+; ncnn/optimized/crop_x86_avx.cpp.ll
+; ncnn/optimized/crop_x86_avx512.cpp.ll
+; ncnn/optimized/crop_x86_fma.cpp.ll
+; ncnn/optimized/deconvolution_x86_avx.cpp.ll
+; ncnn/optimized/deconvolution_x86_fma.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
+; ncnn/optimized/gemm_x86_avx.cpp.ll
+; ncnn/optimized/gemm_x86_fma.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx.cpp.ll
+; ncnn/optimized/innerproduct_x86_f16c.cpp.ll
+; ncnn/optimized/innerproduct_x86_fma.cpp.ll
+; ncnn/optimized/reshape_x86_avx.cpp.ll
+; ncnn/optimized/reshape_x86_fma.cpp.ll
+; ncnn/optimized/slice_x86_avx.cpp.ll
+; ncnn/optimized/slice_x86_fma.cpp.ll
+; openmpi/optimized/mca_base_framework.ll
+; openmpi/optimized/pmix_mca_base_framework.ll
+; php/optimized/php_reflection.ll
+; php/optimized/zend_inference.ll
+; qemu/optimized/hw_char_serial.c.ll
+; qemu/optimized/hw_display_cirrus_vga.c.ll
+; qemu/optimized/hw_net_can_ctucan_core.c.ll
+; redis/optimized/net.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; wireshark/optimized/packet-packetbb.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 16
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 79, i32 69
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %5, i32 78, i32 %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; glslang/optimized/GlslangToSpv.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -7
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 174, i32 175
+  %5 = icmp ult i32 %0, 3
+  %6 = select i1 %5, i32 190, i32 %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/CGBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 16
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 636, i32 697
+  %4 = icmp eq i32 %0, 4
+  %5 = select i1 %4, i32 584, i32 %3
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

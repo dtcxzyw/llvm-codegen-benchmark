@@ -1,9 +1,0 @@
-func000000000000000f:                   # @func000000000000000f
-	slli	a2, a2, 8
-	or	a0, a0, a1
-	or	a0, a0, a2
-	fcvt.s.w	fa5, a0
-	lui	a0, 227328
-	fmv.w.x	fa4, a0
-	fmul.s	fa0, fa5, fa4
-	ret

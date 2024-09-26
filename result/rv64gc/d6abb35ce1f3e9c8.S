@@ -1,0 +1,26 @@
+func000000000000000a:                   # @func000000000000000a
+	srli	a1, a1, 2
+	lui	a2, 699051
+	addi	a2, a2, -1365
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srliw	a1, a1, 6
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	ret
+.LCPI1_0:
+	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
+func0000000000000002:                   # @func0000000000000002
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	mulh	a1, a1, a2
+	srli	a2, a1, 63
+	srli	a1, a1, 2
+	add	a1, a1, a2
+	srliw	a1, a1, 1
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	ret

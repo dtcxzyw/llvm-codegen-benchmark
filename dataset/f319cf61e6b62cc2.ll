@@ -1,12 +1,33 @@
 
-; 18 occurrences:
+; 39 occurrences:
 ; cvc5/optimized/theory_bags.cpp.ll
 ; cvc5/optimized/theory_strings.cpp.ll
+; gromacs/optimized/checkpoint.cpp.ll
+; gromacs/optimized/decidegpuusage.cpp.ll
+; gromacs/optimized/modularsimulator.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/CGCleanup.cpp.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/SemaSwift.cpp.ll
+; llvm/optimized/X86LowerAMXType.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; luau/optimized/main.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
+; ncnn/optimized/reduction.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
-; openblas/optimized/dggevx.c.ll
-; openmpi/optimized/nbc_iallgather.ll
+; opencv/optimized/matrix_wrap.cpp.ll
+; openjdk/optimized/c1_GraphBuilder.ll
+; openjdk/optimized/compilationPolicy.ll
+; openjdk/optimized/macroAssembler_x86.ll
+; proj/optimized/projsync.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; vcpkg/optimized/tools.cpp.ll
 ; wireshark/optimized/packet-ocp1.c.ll

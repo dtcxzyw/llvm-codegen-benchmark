@@ -1,0 +1,87 @@
+func0000000000000044:                   # @func0000000000000044
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	li	a0, 128
+	vmsltu.vx	v9, v10, a0
+	li	a0, 1024
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsltu.vx	v8, v8, a0
+	vmor.mm	v0, v8, v9
+	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vv	v9, v10, v12
+	li	a0, 256
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsltu.vx	v8, v8, a0
+	vmor.mm	v0, v8, v9
+	ret
+func000000000000001c:                   # @func000000000000001c
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vv	v9, v10, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsne.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret
+func000000000000004c:                   # @func000000000000004c
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	li	a0, 32
+	vmsltu.vx	v9, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsne.vi	v8, v8, 1
+	vmor.mm	v0, v8, v9
+	ret
+func00000000000000ac:                   # @func00000000000000ac
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	vmsgt.vi	v9, v10, -1
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsne.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret
+func00000000000000a1:                   # @func00000000000000a1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	vmsgt.vi	v9, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret
+func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	li	a0, 64
+	vmseq.vx	v9, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vi	v8, v8, 1
+	vmor.mm	v0, v8, v9
+	ret
+func0000000000000061:                   # @func0000000000000061
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	vmsle.vi	v9, v10, -1
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret
+func0000000000000081:                   # @func0000000000000081
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	lui	a0, 12207
+	addiw	a0, a0, 127
+	vmsgtu.vx	v9, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret
+func000000000000008c:                   # @func000000000000008c
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
+	lui	a0, 12207
+	addiw	a0, a0, 127
+	vmsgtu.vx	v9, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsne.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret

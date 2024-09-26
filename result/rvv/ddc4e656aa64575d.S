@@ -1,0 +1,26 @@
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.xu.v	v12, v12
+	lui	a0, 194560
+	fmv.w.x	fa5, a0
+	vfmul.vf	v12, v12, fa5
+	vfmadd.vv	v8, v12, v10
+	ret
+.LCPI1_0:
+	.word	0x3b808081                      # float 0.00392156886
+func0000000000000002:                   # @func0000000000000002
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.xu.v	v12, v12
+	vfmul.vf	v12, v12, fa5
+	vfmadd.vv	v8, v12, v10
+	ret
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.xu.v	v12, v12
+	lui	a0, 194560
+	fmv.w.x	fa5, a0
+	vfmul.vf	v12, v12, fa5
+	vfmadd.vv	v8, v12, v10
+	ret

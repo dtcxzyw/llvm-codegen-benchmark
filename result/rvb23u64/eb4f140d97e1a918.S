@@ -1,0 +1,40 @@
+func000000000000001e:                   # @func000000000000001e
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	sh3add.uw	a0, a2, a0
+	ret
+func000000000000001c:                   # @func000000000000001c
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	add.uw	a0, a2, a0
+	ret
+func0000000000000008:                   # @func0000000000000008
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	add.uw	a0, a2, a0
+	ret
+func0000000000000000:                   # @func0000000000000000
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	sh3add.uw	a0, a2, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	add	a0, a0, a2
+	ret
+func000000000000000a:                   # @func000000000000000a
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	add.uw	a0, a2, a0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	sh2add.uw	a0, a2, a0
+	ret
+func000000000000000e:                   # @func000000000000000e
+	zext.h	a2, a2
+	subw	a2, a2, a1
+	add	a0, a0, a2
+	ret

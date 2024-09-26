@@ -1,13 +1,22 @@
 
-; 13 occurrences:
+; 22 occurrences:
 ; git/optimized/fetch.ll
+; gromacs/optimized/gmx_omp_nthreads.cpp.ll
+; gromacs/optimized/tune_pme.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; linux/optimized/dm-io-rewind.ll
 ; linux/optimized/inet_connection_sock.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; luau/optimized/main.cpp.ll
+; mitsuba3/optimized/principled.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; openjdk/optimized/compilerDefinitions.ll
+; php/optimized/html.ll
+; proj/optimized/concatenatedoperation.cpp.ll
+; quantlib/optimized/bivariatenormaldistribution.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/packet-http.c.ll

@@ -1,23 +1,28 @@
 
-; 114 occurrences:
-; abc/optimized/cecSolve.c.ll
-; abc/optimized/giaCTas.c.ll
-; arrow/optimized/UriEscape.c.ll
+; 178 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
+; clamav/optimized/readdb.c.ll
+; clamav/optimized/secpassword.cpp.ll
 ; darktable/optimized/darkroom.c.ll
-; eastl/optimized/BenchmarkAlgorithm.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
-; eastl/optimized/TestFixedTupleVector.cpp.ll
-; eastl/optimized/TestFixedVector.cpp.ll
+; faiss/optimized/IndexIVF.cpp.ll
+; faiss/optimized/IndexPreTransform.cpp.ll
+; faiss/optimized/VectorTransform.cpp.ll
 ; flac/optimized/utils.c.ll
+; freetype/optimized/cff.c.ll
 ; git/optimized/diff.ll
-; git/optimized/imap-send.ll
+; git/optimized/hashmap.ll
 ; git/optimized/mailmap.ll
+; glslang/optimized/hlslGrammar.cpp.ll
+; graphviz/optimized/attr.c.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; graphviz/optimized/rank.c.ll
 ; graphviz/optimized/routespl.c.ll
+; graphviz/optimized/xdot.c.ll
+; gromacs/optimized/muParserBytecode.cpp.ll
+; hdf5/optimized/H5Dbtree.c.ll
+; hdf5/optimized/H5Fint.c.ll
 ; hermes/optimized/Utils.cpp.ll
 ; hyperscan/optimized/goughcompile_reg.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -29,9 +34,11 @@
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_infix.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; icu/optimized/locresdata.ll
 ; jemalloc/optimized/pages.ll
 ; jemalloc/optimized/pages.pic.ll
 ; jemalloc/optimized/pages.sym.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
 ; libevent/optimized/http.c.ll
 ; libzmq/optimized/mailbox.cpp.ll
 ; libzmq/optimized/mailbox_safe.cpp.ll
@@ -46,8 +53,53 @@
 ; linux/optimized/printk.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/scsiglue.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/Attributor.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CanonicalizeFreezeInLoops.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/DeclObjC.cpp.ll
+; llvm/optimized/ExpandMemCmp.cpp.ll
+; llvm/optimized/FlattenCFG.cpp.ll
+; llvm/optimized/InlineSpiller.cpp.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/LexicalScopes.cpp.ll
+; llvm/optimized/LiveIntervals.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MCDwarf.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/MemorySSAUpdater.cpp.ll
+; llvm/optimized/PPMacroExpansion.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
+; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/VectorUtils.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
+; llvm/optimized/X86AsmBackend.cpp.ll
+; luau/optimized/isocline.c.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/sched_mergeprioritized.c.ll
+; openjdk/optimized/ciInstanceKlass.ll
+; openjdk/optimized/compile.ll
+; openjdk/optimized/idealKit.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmtiEnvBase.ll
+; openjdk/optimized/os_posix.ll
+; openjdk/optimized/p11_keymgmt.ll
+; openjdk/optimized/referenceProcessor.ll
 ; openmpi/optimized/attr.ll
 ; openmpi/optimized/comm_ft_reliable_bcast.ll
 ; openmpi/optimized/pml_ob1_sendreq.ll
@@ -55,16 +107,24 @@
 ; openssl/optimized/libcrypto-lib-v3_asid.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_asid.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/materialNetwork2Interface.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
+; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_language_scanner.ll
-; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; redis/optimized/listpack.ll
 ; redis/optimized/pages.ll
 ; redis/optimized/pages.sym.ll
 ; redis/optimized/ziplist.ll
 ; ruby/optimized/eval.ll
 ; ruby/optimized/object.ll
+; ruby/optimized/objspace_dump.ll
+; ruby/optimized/string.ll
+; slurm/optimized/proc_req.ll
 ; sqlite/optimized/sqlite3.ll
+; verilator/optimized/V3Dead.cpp.ll
+; verilator/optimized/V3Hasher.cpp.ll
+; verilator/optimized/V3LinkDot.cpp.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; wireshark/optimized/util.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -75,6 +135,10 @@
 ; z3/optimized/demodulator_simplifier.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/dependency_converter.cpp.ll
+; z3/optimized/dl_lazy_table.cpp.ll
+; z3/optimized/dl_mk_explanations.cpp.ll
+; z3/optimized/dl_product_relation.cpp.ll
+; z3/optimized/dl_relation_manager.cpp.ll
 ; z3/optimized/eliminate_predicates.cpp.ll
 ; z3/optimized/euf_ac_plugin.cpp.ll
 ; z3/optimized/euf_completion.cpp.ll
@@ -123,9 +187,10 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/archive_rb.c.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
+; llvm/optimized/AssumptionCache.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; Function Attrs: nounwind
@@ -148,13 +213,17 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
-; arrow/optimized/UriEscape.c.ll
+; 11 occurrences:
 ; git/optimized/ref-filter.ll
 ; git/optimized/shortlog.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/trace_events.ll
+; openjdk/optimized/jvmtiTrace.ll
+; openjdk/optimized/perfMemory_posix.ll
+; postgres/optimized/snprintf.ll
+; postgres/optimized/snprintf_shlib.ll
+; postgres/optimized/snprintf_srv.ll
 ; slurm/optimized/update_job.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(ptr %0, ptr %1) #0 {
@@ -165,10 +234,12 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; linux/optimized/fair.ll
-; openmpi/optimized/nbc_iexscan.ll
-; openmpi/optimized/nbc_iscan.ll
+; llvm/optimized/CGExprConstant.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; openjdk/optimized/peephole_x86_64.ll
+; xgboost/optimized/fit_stump.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000182(ptr %0, ptr %1) #0 {
 entry:

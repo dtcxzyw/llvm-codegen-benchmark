@@ -1,13 +1,20 @@
 
-; 9 occurrences:
+; 16 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; bullet3/optimized/btOverlappingPairCache.ll
 ; bullet3/optimized/btSimpleBroadphase.ll
 ; cvc5/optimized/int_blaster.cpp.ll
+; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; openssl/optimized/libcrypto-lib-v3_akid.ll
-; openssl/optimized/libcrypto-shlib-v3_akid.ll
+; proj/optimized/coordinateoperationfactory.cpp.ll
+; xgboost/optimized/adaptive.cc.ll
+; xgboost/optimized/auc.cc.ll
+; xgboost/optimized/quantile_obj.cc.ll
+; xgboost/optimized/random.cc.ll
+; xgboost/optimized/rank_metric.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/stats.cc.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
@@ -17,8 +24,9 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
+; llvm/optimized/AssumptionCache.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:

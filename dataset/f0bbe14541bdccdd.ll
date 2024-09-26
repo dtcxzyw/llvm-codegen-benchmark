@@ -1,0 +1,21 @@
+
+; 4 occurrences:
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000000(float %0, i16 %1, float %2) #0 {
+entry:
+  %3 = fmul float %2, 6.553500e+04
+  %4 = uitofp i16 %1 to float
+  %5 = tail call float @llvm.fmuladd.f32(float %4, float %0, float %3)
+  %6 = fptoui float %5 to i16
+  ret i16 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fmuladd.f32(float, float, float) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

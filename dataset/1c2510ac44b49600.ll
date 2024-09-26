@@ -1,9 +1,13 @@
 
-; 5 occurrences:
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; 9 occurrences:
+; clamav/optimized/extract.cpp.ll
+; jsonnet/optimized/formatter.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
 ; openssl/optimized/openssl-bin-cms.ll
 ; postgres/optimized/pgoutput.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
+; xgboost/optimized/charconv.cc.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

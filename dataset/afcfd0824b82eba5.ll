@@ -1,0 +1,396 @@
+
+; 214 occurrences:
+; abc/optimized/AbcGlucose.cpp.ll
+; abc/optimized/AbcGlucose2.cpp.ll
+; abc/optimized/FxchMan.c.ll
+; abc/optimized/abcBm.c.ll
+; abc/optimized/abcDar.c.ll
+; abc/optimized/abcDetect.c.ll
+; abc/optimized/abcFx.c.ll
+; abc/optimized/abcQuant.c.ll
+; abc/optimized/abcStrash.c.ll
+; abc/optimized/acbTest.c.ll
+; abc/optimized/acecPo.c.ll
+; abc/optimized/acecTree.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cbaNtk.c.ll
+; abc/optimized/cecSatG2.c.ll
+; abc/optimized/cnfUtil.c.ll
+; abc/optimized/extraUtilDsd.c.ll
+; abc/optimized/extraUtilMacc.c.ll
+; abc/optimized/extraUtilMemory.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaExist.c.ll
+; abc/optimized/giaFanout.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaGig.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaIso2.c.ll
+; abc/optimized/giaMan.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/giaQbf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaShrink6.c.ll
+; abc/optimized/giaSim.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/giaSupps.c.ll
+; abc/optimized/giaUtil.c.ll
+; abc/optimized/ioReadPlaMo.c.ll
+; abc/optimized/ioWriteAiger.c.ll
+; abc/optimized/ioaWriteAig.c.ll
+; abc/optimized/llb4Cex.c.ll
+; abc/optimized/mem.c.ll
+; abc/optimized/mioParse.c.ll
+; abc/optimized/mioUtils.c.ll
+; abc/optimized/mpmDsd.c.ll
+; abc/optimized/mpmGates.c.ll
+; abc/optimized/mpmPre.c.ll
+; abc/optimized/saigDual.c.ll
+; abc/optimized/saigMiter.c.ll
+; abc/optimized/saigStrSim.c.ll
+; abc/optimized/sbdSat.c.ll
+; abc/optimized/sswIslands.c.ll
+; abc/optimized/sswPairs.c.ll
+; abc/optimized/wlcBlast.c.ll
+; abc/optimized/wlcGraft.c.ll
+; abc/optimized/wlcMem.c.ll
+; bullet3/optimized/MultiBodyTreeImpl.ll
+; bullet3/optimized/MultiBodyTreeInitCache.ll
+; bullet3/optimized/b3BoundSearchCL.ll
+; bullet3/optimized/b3BulletFile.ll
+; bullet3/optimized/b3ConvexHullComputer.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3ConvexUtility.ll
+; bullet3/optimized/b3CpuNarrowPhase.ll
+; bullet3/optimized/b3CpuRigidBodyPipeline.ll
+; bullet3/optimized/b3DNA.ll
+; bullet3/optimized/b3DynamicBvh.ll
+; bullet3/optimized/b3DynamicBvhBroadphase.ll
+; bullet3/optimized/b3File.ll
+; bullet3/optimized/b3FillCL.ll
+; bullet3/optimized/b3GeometryUtil.ll
+; bullet3/optimized/b3GpuGridBroadphase.ll
+; bullet3/optimized/b3GpuJacobiContactSolver.ll
+; bullet3/optimized/b3GpuNarrowPhase.ll
+; bullet3/optimized/b3GpuParallelLinearBvh.ll
+; bullet3/optimized/b3GpuParallelLinearBvhBroadphase.ll
+; bullet3/optimized/b3GpuPgsConstraintSolver.ll
+; bullet3/optimized/b3GpuPgsContactSolver.ll
+; bullet3/optimized/b3GpuRaycast.ll
+; bullet3/optimized/b3GpuRigidBodyPipeline.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; bullet3/optimized/b3LauncherCL.ll
+; bullet3/optimized/b3OptimizedBvh.ll
+; bullet3/optimized/b3OverlappingPairCache.ll
+; bullet3/optimized/b3PgsJacobiSolver.ll
+; bullet3/optimized/b3PrefixScanCL.ll
+; bullet3/optimized/b3PrefixScanFloat4CL.ll
+; bullet3/optimized/b3QuantizedBvh.ll
+; bullet3/optimized/b3RadixSort32CL.ll
+; bullet3/optimized/b3Solver.ll
+; bullet3/optimized/btBatchedConstraints.ll
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; bullet3/optimized/btBoxBoxCollisionAlgorithm.ll
+; bullet3/optimized/btCollisionDispatcher.ll
+; bullet3/optimized/btCollisionDispatcherMt.ll
+; bullet3/optimized/btCollisionWorld.ll
+; bullet3/optimized/btCollisionWorldImporter.ll
+; bullet3/optimized/btCompoundCollisionAlgorithm.ll
+; bullet3/optimized/btCompoundCompoundCollisionAlgorithm.ll
+; bullet3/optimized/btCompoundShape.ll
+; bullet3/optimized/btContactProcessing.ll
+; bullet3/optimized/btConvex2dConvex2dAlgorithm.ll
+; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
+; bullet3/optimized/btConvexConvexAlgorithm.ll
+; bullet3/optimized/btConvexHull.ll
+; bullet3/optimized/btConvexHullComputer.ll
+; bullet3/optimized/btConvexHullShape.ll
+; bullet3/optimized/btConvexPlaneCollisionAlgorithm.ll
+; bullet3/optimized/btConvexPolyhedron.ll
+; bullet3/optimized/btDbvt.ll
+; bullet3/optimized/btDbvtBroadphase.ll
+; bullet3/optimized/btDeformableBackwardEulerObjective.ll
+; bullet3/optimized/btDeformableBodySolver.ll
+; bullet3/optimized/btDeformableContactProjection.ll
+; bullet3/optimized/btDeformableMultiBodyConstraintSolver.ll
+; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btDiscreteDynamicsWorld.ll
+; bullet3/optimized/btDiscreteDynamicsWorldMt.ll
+; bullet3/optimized/btGImpactBvh.ll
+; bullet3/optimized/btGImpactCollisionAlgorithm.ll
+; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btGeometryUtil.ll
+; bullet3/optimized/btGhostObject.ll
+; bullet3/optimized/btHashedSimplePairCache.ll
+; bullet3/optimized/btInternalEdgeUtility.ll
+; bullet3/optimized/btLemkeAlgorithm.ll
+; bullet3/optimized/btMLCPSolver.ll
+; bullet3/optimized/btMultiBodyConstraintSolver.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btMultiBodyFixedConstraint.ll
+; bullet3/optimized/btMultiBodyGearConstraint.ll
+; bullet3/optimized/btMultiBodyJointLimitConstraint.ll
+; bullet3/optimized/btMultiBodyJointMotor.ll
+; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
+; bullet3/optimized/btMultiBodyPoint2Point.ll
+; bullet3/optimized/btMultiBodySliderConstraint.ll
+; bullet3/optimized/btMultiBodySphericalJointLimit.ll
+; bullet3/optimized/btMultiBodySphericalJointMotor.ll
+; bullet3/optimized/btOptimizedBvh.ll
+; bullet3/optimized/btOverlappingPairCache.ll
+; bullet3/optimized/btPolyhedralContactClipping.ll
+; bullet3/optimized/btPolyhedralConvexShape.ll
+; bullet3/optimized/btQuantizedBvh.ll
+; bullet3/optimized/btRaycastVehicle.ll
+; bullet3/optimized/btReducedDeformableBody.ll
+; bullet3/optimized/btReducedDeformableBodySolver.ll
+; bullet3/optimized/btReducedVector.ll
+; bullet3/optimized/btRigidBody.ll
+; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
+; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
+; bullet3/optimized/btSimulationIslandManager.ll
+; bullet3/optimized/btSimulationIslandManagerMt.ll
+; bullet3/optimized/btSoftBody.ll
+; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
+; bullet3/optimized/btSoftBodyHelpers.ll
+; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btSoftRigidDynamicsWorld.ll
+; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
+; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
+; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
+; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
+; bullet3/optimized/btTriangleBuffer.ll
+; bullet3/optimized/btTriangleMesh.ll
+; cmake/optimized/ProcessUNIX.c.ll
+; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
+; git/optimized/walker.ll
+; gromacs/optimized/gmx_bar.cpp.ll
+; gromacs/optimized/statistics.cpp.ll
+; icu/optimized/bytestriebuilder.ll
+; icu/optimized/collationdatawriter.ll
+; icu/optimized/dtfmtsym.ll
+; icu/optimized/edits.ll
+; icu/optimized/genmbcs.ll
+; icu/optimized/localeprioritylist.ll
+; icu/optimized/loclikelysubtags.ll
+; icu/optimized/measunit.ll
+; icu/optimized/measunit_extra.ll
+; icu/optimized/number_longnames.ll
+; icu/optimized/numparse_affixes.ll
+; icu/optimized/ucharstriebuilder.ll
+; icu/optimized/uloc_keytype.ll
+; icu/optimized/uloc_tag.ll
+; icu/optimized/units_complexconverter.ll
+; icu/optimized/units_converter.ll
+; icu/optimized/units_data.ll
+; icu/optimized/units_router.ll
+; libzmq/optimized/stream_connecter_base.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
+; memcached/optimized/memcached-slabs.ll
+; memcached/optimized/memcached_debug-slabs.ll
+; nanosvg/optimized/nanosvg.ll
+; nori/optimized/nanovg.c.ll
+; openblas/optimized/dgesvdq.c.ll
+; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; opencv/optimized/array.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; opencv/optimized/upcean_decoder.cpp.ll
+; openjdk/optimized/SDE.ll
+; openjdk/optimized/X11SurfaceData.ll
+; openmpi/optimized/if_posix.ll
+; openmpi/optimized/pif_posix.ll
+; recastnavigation/optimized/MeshLoaderObj.cpp.ll
+; redis/optimized/module.ll
+; slurm/optimized/container.ll
+; slurm/optimized/slurm_protocol_api.ll
+; stb/optimized/stb_dxt.c.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; wireshark/optimized/packet-osi.c.ll
+; xgboost/optimized/comm.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = select i1 %0, i32 8, i32 %2
+  ret i32 %3
+}
+
+; 96 occurrences:
+; abc/optimized/giaCof.c.ll
+; abc/optimized/huffman.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/saigTrans.c.ll
+; assimp/optimized/SceneCombiner.cpp.ll
+; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
+; c3c/optimized/sema_asm.c.ll
+; clamav/optimized/htmlnorm.c.ll
+; clamav/optimized/str.c.ll
+; cmake/optimized/huffman.c.ll
+; cpython/optimized/dtoa.ll
+; cpython/optimized/obmalloc.ll
+; cpython/optimized/optimizer.ll
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/custom_identifier.cpp.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/handle.cpp.ll
+; entt/optimized/helper.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/observer.cpp.ll
+; entt/optimized/organizer.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/runtime_view.cpp.ll
+; entt/optimized/sigh_mixin.cpp.ll
+; entt/optimized/signal_less.cpp.ll
+; entt/optimized/snapshot.cpp.ll
+; entt/optimized/sparse_set.cpp.ll
+; entt/optimized/storage.cpp.ll
+; entt/optimized/storage_entity.cpp.ll
+; entt/optimized/storage_no_instance.cpp.ll
+; entt/optimized/view.cpp.ll
+; flac/optimized/stream_decoder.c.ll
+; folly/optimized/SharedMutex.cpp.ll
+; git/optimized/archive-zip.ll
+; hermes/optimized/SmallPtrSet.cpp.ll
+; hermes/optimized/StringPrimitive.cpp.ll
+; hwloc/optimized/bitmap.ll
+; hwloc/optimized/topology-linux.ll
+; linux/optimized/8250_lpss.ll
+; linux/optimized/8250_mid.ll
+; linux/optimized/dm-table.ll
+; linux/optimized/fib_semantics.ll
+; linux/optimized/i9xx_wm.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/intel_backlight.ll
+; linux/optimized/intel_cdclk.ll
+; linux/optimized/r8169_main.ll
+; linux/optimized/vsprintf.ll
+; linux/optimized/vt.ll
+; llvm/optimized/AArch64BaseInfo.cpp.ll
+; llvm/optimized/DWARFAcceleratorTable.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
+; llvm/optimized/SmallPtrSet.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; lua/optimized/lcode.ll
+; luajit/optimized/minilua.ll
+; memcached/optimized/memcached-slabs.ll
+; memcached/optimized/memcached_debug-slabs.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openjdk/optimized/cmscgats.ll
+; openjdk/optimized/cmsnamed.ll
+; openjdk/optimized/invocationCounter.ll
+; openjdk/optimized/javaClasses.ll
+; openssl/optimized/dtlstest-bin-dtlstest.ll
+; postgres/optimized/arrayfuncs.ll
+; postgres/optimized/command.ll
+; postgres/optimized/execExprInterp.ll
+; postgres/optimized/fe-print.ll
+; postgres/optimized/libpq-events.ll
+; postgres/optimized/placeholder.ll
+; postgres/optimized/regcomp.ll
+; postgres/optimized/resowner.ll
+; postgres/optimized/varlena.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/lcode.ll
+; redis/optimized/quicklist.ll
+; rocksdb/optimized/lock_request.cc.ll
+; rocksdb/optimized/locktree.cc.ll
+; rocksdb/optimized/manager.cc.ll
+; rocksdb/optimized/txnid_set.cc.ll
+; rocksdb/optimized/wfg.cc.ll
+; ruby/optimized/ractor.ll
+; ruby/optimized/static_literals.ll
+; ruby/optimized/util.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = select i1 %0, i32 4, i32 %2
+  ret i32 %3
+}
+
+; 42 occurrences:
+; c3c/optimized/decltable.c.ll
+; c3c/optimized/symtab.c.ll
+; clamav/optimized/vba_extract.c.ll
+; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; folly/optimized/Singleton.cpp.ll
+; git/optimized/object.ll
+; gromacs/optimized/xtc2.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; icu/optimized/ushape.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; libevent/optimized/event.c.ll
+; libevent/optimized/evmap.c.ll
+; libevent/optimized/poll.c.ll
+; libwebp/optimized/near_lossless_enc.c.ll
+; linux/optimized/ebda.ll
+; linux/optimized/hda_codec.ll
+; linux/optimized/intel_ddi.ll
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; lua/optimized/ldo.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; luajit/optimized/lj_udata.ll
+; luajit/optimized/lj_udata_dyn.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/zmaxheap.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; postgres/optimized/varlena.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
+; qemu/optimized/hw_usb_dev-serial.c.ll
+; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
+; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
+; stb/optimized/stb_voxel_render.c.ll
+; wasmedge/optimized/inode-linux.cpp.ll
+; wireshark/optimized/packet-eap.c.ll
+; wireshark/optimized/packet-lbmpdm.c.ll
+; z3/optimized/smt_clause.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = select i1 %0, i32 24, i32 %2
+  ret i32 %3
+}
+
+; 6 occurrences:
+; abc/optimized/saigSimMv.c.ll
+; entt/optimized/registry.cpp.ll
+; libwebp/optimized/near_lossless_enc.c.ll
+; qemu/optimized/target_riscv_cpu.c.ll
+; slurm/optimized/preempt_qos.ll
+; z3/optimized/theory_str_regex.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 3
+  %3 = select i1 %0, i32 0, i32 %2
+  ret i32 %3
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,17 @@
+func0000000000000031:                   # @func0000000000000031
+	slli	a1, a1, 2
+	andi	a1, a1, 8
+	add	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	slli	a1, a1, 56
+	srai	a1, a1, 63
+	andi	a1, a1, -2
+	add	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	slli	a1, a1, 47
+	srai	a1, a1, 63
+	andi	a1, a1, 5
+	add	a0, a0, a1
+	ret

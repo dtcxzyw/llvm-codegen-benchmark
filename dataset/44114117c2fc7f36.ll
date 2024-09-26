@@ -1,0 +1,361 @@
+
+; 8 occurrences:
+; folly/optimized/CustomLogFormatter.cpp.ll
+; folly/optimized/ElfCache.cpp.ll
+; folly/optimized/NestedCommandLineApp.cpp.ll
+; folly/optimized/json.cpp.ll
+; linux/optimized/fair.ll
+; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
+; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
+; proxygen/optimized/HTTPMessage.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr i64 %2, 42
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = and i32 %4, 4193280
+  ret i32 %5
+}
+
+; 266 occurrences:
+; abc/optimized/absVta.c.ll
+; abc/optimized/giaTtopt.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; folly/optimized/HugePages.cpp.ll
+; folly/optimized/JSONSchema.cpp.ll
+; folly/optimized/TestUtil.cpp.ll
+; folly/optimized/Uri.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; lief/optimized/File.cpp.ll
+; linux/optimized/swiotlb.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64Subtarget.cpp.ll
+; llvm/optimized/AArch64TargetMachine.cpp.ll
+; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTUnit.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/AccelTable.cpp.ll
+; llvm/optimized/AnalysisDeclContext.cpp.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/Attributor.cpp.ll
+; llvm/optimized/BackendUtil.cpp.ll
+; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
+; llvm/optimized/BasicValueFactory.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/BitstreamRemarkSerializer.cpp.ll
+; llvm/optimized/BlockCounter.cpp.ll
+; llvm/optimized/BlockInCriticalSectionChecker.cpp.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
+; llvm/optimized/CGProfile.cpp.ll
+; llvm/optimized/COFFImportFile.cpp.ll
+; llvm/optimized/CSEInfo.cpp.ll
+; llvm/optimized/CStringChecker.cpp.ll
+; llvm/optimized/CheckObjCDealloc.cpp.ll
+; llvm/optimized/CodeGenAction.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/CommandLine.cpp.ll
+; llvm/optimized/CompilerInstance.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/ContainerModeling.cpp.ll
+; llvm/optimized/Context.cpp.ll
+; llvm/optimized/CoverageMappingReader.cpp.ll
+; llvm/optimized/CreateInvocationFromCommandLine.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; llvm/optimized/DFAPacketizer.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/DebugChecksumsSubsection.cpp.ll
+; llvm/optimized/DiagnosticRenderer.cpp.ll
+; llvm/optimized/Disasm.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/DwarfUnit.cpp.ll
+; llvm/optimized/DylibReader.cpp.ll
+; llvm/optimized/DylibVerifier.cpp.ll
+; llvm/optimized/DynamicAllocator.cpp.ll
+; llvm/optimized/DynamicExtent.cpp.ll
+; llvm/optimized/DynamicType.cpp.ll
+; llvm/optimized/DynamicTypePropagation.cpp.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/EdgeBundles.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
+; llvm/optimized/ExecutionDomainFix.cpp.ll
+; llvm/optimized/ExplodedGraph.cpp.ll
+; llvm/optimized/ExprEngine.cpp.ll
+; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
+; llvm/optimized/ExprInspectionChecker.cpp.ll
+; llvm/optimized/ExtractAPIConsumer.cpp.ll
+; llvm/optimized/FileManager.cpp.ll
+; llvm/optimized/FileSystemStatCache.cpp.ll
+; llvm/optimized/FixItRewriter.cpp.ll
+; llvm/optimized/FuchsiaHandleChecker.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/GVNSink.cpp.ll
+; llvm/optimized/GenericTaintChecker.cpp.ll
+; llvm/optimized/GlobalModuleIndex.cpp.ll
+; llvm/optimized/HeaderSearch.cpp.ll
+; llvm/optimized/IRObjectFile.cpp.ll
+; llvm/optimized/IROutliner.cpp.ll
+; llvm/optimized/IRSimilarityIdentifier.cpp.ll
+; llvm/optimized/IRSymtab.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/IdentifierTable.cpp.ll
+; llvm/optimized/IndirectCallPromotion.cpp.ll
+; llvm/optimized/InitLLVM.cpp.ll
+; llvm/optimized/InnerPointerChecker.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/InterfaceFile.cpp.ll
+; llvm/optimized/InvalidPtrChecker.cpp.ll
+; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
+; llvm/optimized/Iterator.cpp.ll
+; llvm/optimized/IteratorModeling.cpp.ll
+; llvm/optimized/LCSSA.cpp.ll
+; llvm/optimized/LICM.cpp.ll
+; llvm/optimized/LLVMContextImpl.cpp.ll
+; llvm/optimized/LTO.cpp.ll
+; llvm/optimized/LTOCodeGenerator.cpp.ll
+; llvm/optimized/LTOModule.cpp.ll
+; llvm/optimized/LazyCallGraph.cpp.ll
+; llvm/optimized/LazyRandomTypeCollection.cpp.ll
+; llvm/optimized/LegacyPassManager.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveIntervals.cpp.ll
+; llvm/optimized/LiveRegMatrix.cpp.ll
+; llvm/optimized/LiveStacks.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; llvm/optimized/LocalizationChecker.cpp.ll
+; llvm/optimized/LoopInfo.cpp.ll
+; llvm/optimized/LoopUnrolling.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; llvm/optimized/MCContext.cpp.ll
+; llvm/optimized/MCDwarf.cpp.ll
+; llvm/optimized/MIGChecker.cpp.ll
+; llvm/optimized/MPIChecker.cpp.ll
+; llvm/optimized/MSFBuilder.cpp.ll
+; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
+; llvm/optimized/MachineBlockPlacement.cpp.ll
+; llvm/optimized/MachineCSE.cpp.ll
+; llvm/optimized/MachineFunction.cpp.ll
+; llvm/optimized/MachineLoopInfo.cpp.ll
+; llvm/optimized/MachineOutliner.cpp.ll
+; llvm/optimized/MachineSSAUpdater.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/MemRegion.cpp.ll
+; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
+; llvm/optimized/MicrosoftMangle.cpp.ll
+; llvm/optimized/ModuleMap.cpp.ll
+; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
+; llvm/optimized/MoveChecker.cpp.ll
+; llvm/optimized/NSErrorChecker.cpp.ll
+; llvm/optimized/NativeSession.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
+; llvm/optimized/OMPIRBuilder.cpp.ll
+; llvm/optimized/ObjCContainersChecker.cpp.ll
+; llvm/optimized/ObjCMT.cpp.ll
+; llvm/optimized/ObjCSelfInitChecker.cpp.ll
+; llvm/optimized/ObjCSuperDeallocChecker.cpp.ll
+; llvm/optimized/OffloadBundler.cpp.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/ParsedAttr.cpp.ll
+; llvm/optimized/PassBuilder.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
+; llvm/optimized/PathDiagnostic.cpp.ll
+; llvm/optimized/PointerArithChecker.cpp.ll
+; llvm/optimized/Pragma.cpp.ll
+; llvm/optimized/PreprocessingRecord.cpp.ll
+; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/Program.cpp.ll
+; llvm/optimized/ProgramState.cpp.ll
+; llvm/optimized/PthreadLockChecker.cpp.ll
+; llvm/optimized/RDFGraph.cpp.ll
+; llvm/optimized/RangeConstraintManager.cpp.ll
+; llvm/optimized/RawCommentList.cpp.ll
+; llvm/optimized/Record.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/RecordsSlice.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
+; llvm/optimized/RemarkLinker.cpp.ll
+; llvm/optimized/RemarkSerializer.cpp.ll
+; llvm/optimized/ResourcePriorityQueue.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
+; llvm/optimized/SMTConstraintManager.cpp.ll
+; llvm/optimized/SSAUpdater.cpp.ll
+; llvm/optimized/SafepointIRVerifier.cpp.ll
+; llvm/optimized/SampleProfReader.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SelectionDAGISel.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/Signals.cpp.ll
+; llvm/optimized/SimpleStreamChecker.cpp.ll
+; llvm/optimized/SlotIndexes.cpp.ll
+; llvm/optimized/SmartPtrModeling.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
+; llvm/optimized/StackColoring.cpp.ll
+; llvm/optimized/StackSlotColoring.cpp.ll
+; llvm/optimized/StdVariantChecker.cpp.ll
+; llvm/optimized/StreamChecker.cpp.ll
+; llvm/optimized/SymbolRewriter.cpp.ll
+; llvm/optimized/Taint.cpp.ll
+; llvm/optimized/TapiUniversal.cpp.ll
+; llvm/optimized/TestAfterDivZeroChecker.cpp.ll
+; llvm/optimized/TextStub.cpp.ll
+; llvm/optimized/TextStubV5.cpp.ll
+; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
+; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
+; llvm/optimized/ThreadSafety.cpp.ll
+; llvm/optimized/TokenAnalyzer.cpp.ll
+; llvm/optimized/TrustNonnullChecker.cpp.ll
+; llvm/optimized/TypeTableCollection.cpp.ll
+; llvm/optimized/UninitializedObjectChecker.cpp.ll
+; llvm/optimized/UnwrappedLineFormatter.cpp.ll
+; llvm/optimized/VLIWMachineScheduler.cpp.ll
+; llvm/optimized/ValistChecker.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/VirtualCallChecker.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
+; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
+; llvm/optimized/X86TargetMachine.cpp.ll
+; llvm/optimized/YAMLParser.cpp.ll
+; llvm/optimized/YAMLRemarkParser.cpp.ll
+; llvm/optimized/YAMLRemarkSerializer.cpp.ll
+; llvm/optimized/YAMLTraits.cpp.ll
+; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; llvm/optimized/cc1gen_reproducer_main.cpp.ll
+; llvm/optimized/driver.cpp.ll
+; luajit/optimized/minilua.ll
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; luau/optimized/ltable.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; mold/optimized/arch-arm32.cc.ll
+; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
+; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
+; mold/optimized/arch-ppc64v2.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/relocatable.cc.ARM32.cc.ll
+; mold/optimized/relocatable.cc.I386.cc.ll
+; mold/optimized/relocatable.cc.LOONGARCH32.cc.ll
+; mold/optimized/relocatable.cc.M68K.cc.ll
+; mold/optimized/relocatable.cc.PPC32.cc.ll
+; mold/optimized/relocatable.cc.RV32BE.cc.ll
+; mold/optimized/relocatable.cc.RV32LE.cc.ll
+; mold/optimized/relocatable.cc.SH4.cc.ll
+; opencv/optimized/aff_trans.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
+; pocketpy/optimized/gc.cpp.ll
+; protobuf/optimized/generated_message_reflection.cc.ll
+; protobuf/optimized/parse_function_generator.cc.ll
+; redis/optimized/lgc.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
+; yosys/optimized/aiger.ll
+; yosys/optimized/equiv_struct.ll
+; yosys/optimized/pmux2shiftx.ll
+; yosys/optimized/smt2.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr i64 %2, 27
+  %4 = trunc i64 %3 to i32
+  %5 = and i32 %4, 33554400
+  ret i32 %5
+}
+
+; 1 occurrences:
+; mold/optimized/arch-sparc64.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr i64 %2, 32
+  %4 = trunc nuw i64 %3 to i32
+  %5 = and i32 %4, 1023
+  ret i32 %5
+}
+
+; 15 occurrences:
+; freetype/optimized/psaux.c.ll
+; gromacs/optimized/convertGmxToNblib.cpp.ll
+; imgui/optimized/imgui.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/GlobalISelEmitter.cpp.ll
+; opencv/optimized/persistence_xml.cpp.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; php/optimized/zend_gc.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; velox/optimized/LeadLag.cpp.ll
+; yosys/optimized/mem.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = trunc i64 %2 to i32
+  %4 = lshr i32 %3, 3
+  %5 = and i32 %4, 524287
+  ret i32 %5
+}
+
+; 1 occurrences:
+; abc/optimized/giaCof.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 %0, %1
+  %3 = lshr exact i64 %2, 2
+  %4 = trunc i64 %3 to i32
+  %5 = and i32 %4, 2147483647
+  ret i32 %5
+}
+
+; 2 occurrences:
+; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
+; lightgbm/optimized/serial_tree_learner.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 %0, %1
+  %3 = lshr i64 %2, 16
+  %4 = trunc i64 %3 to i32
+  %5 = and i32 %4, -65536
+  ret i32 %5
+}
+
+attributes #0 = { nounwind }

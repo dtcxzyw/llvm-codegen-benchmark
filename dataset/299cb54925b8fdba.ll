@@ -1,13 +1,21 @@
 
-; 10 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/b3OpenCLUtils.ll
+; freetype/optimized/ftbase.c.ll
 ; git/optimized/refs.ll
 ; linux/optimized/i915_gem_ttm_move.ll
 ; linux/optimized/nl80211.ll
+; llvm/optimized/Darwin.cpp.ll
+; llvm/optimized/MCExpr.cpp.ll
+; llvm/optimized/OpenBSD.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
 ; minetest/optimized/nodemetadata.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
+; openusd/optimized/expressionVariablesSource.cpp.ll
 ; php/optimized/zend_API.ll
-; php/optimized/zend_compile.ll
+; proj/optimized/topocentric.cpp.ll
 ; slurm/optimized/gres_select_filter.ll
 ; verilator/optimized/V3LinkDot.cpp.ll
 ; Function Attrs: nounwind
@@ -18,7 +26,10 @@ entry:
   ret i1 %2
 }
 
-; 29 occurrences:
+; 35 occurrences:
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/LoopDistribute.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/ChangeBackground.cc.ll
@@ -47,6 +58,9 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; postgres/optimized/user.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; z3/optimized/expr2polynomial.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, ptr %1) #0 {

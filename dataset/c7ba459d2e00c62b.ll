@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; arrow/optimized/expression.cc.ll
+; 4 occurrences:
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll

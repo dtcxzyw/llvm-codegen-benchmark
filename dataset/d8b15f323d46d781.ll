@@ -1,0 +1,96 @@
+
+; 36 occurrences:
+; mold/optimized/gdb-index.cc.ALPHA.cc.ll
+; mold/optimized/gdb-index.cc.ARM32.cc.ll
+; mold/optimized/gdb-index.cc.ARM64.cc.ll
+; mold/optimized/gdb-index.cc.I386.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH32.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH64.cc.ll
+; mold/optimized/gdb-index.cc.M68K.cc.ll
+; mold/optimized/gdb-index.cc.PPC32.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V1.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V2.cc.ll
+; mold/optimized/gdb-index.cc.RV32BE.cc.ll
+; mold/optimized/gdb-index.cc.RV32LE.cc.ll
+; mold/optimized/gdb-index.cc.RV64BE.cc.ll
+; mold/optimized/gdb-index.cc.RV64LE.cc.ll
+; mold/optimized/gdb-index.cc.S390X.cc.ll
+; mold/optimized/gdb-index.cc.SH4.cc.ll
+; mold/optimized/gdb-index.cc.SPARC64.cc.ll
+; mold/optimized/gdb-index.cc.X86_64.cc.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %1, 16
+  %3 = add nsw i64 %2, -1
+  %4 = and i64 %3, %0
+  ret i64 %4
+}
+
+; 38 occurrences:
+; actix-rs/optimized/36qa1hw006t0trtl.ll
+; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
+; coreutils-rs/optimized/6h79q3cnlscd1jd.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
+; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
+; nanobind/optimized/nb_func.cpp.ll
+; nanobind/optimized/nb_type.cpp.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/4t3y03rrak2rtjym.ll
+; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
+; oiio/optimized/imagecache.cpp.ll
+; openusd/optimized/identity.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/plugin.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
+; rust-analyzer-rs/optimized/1inhtflzeuuko7d8.ll
+; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
+; rust-analyzer-rs/optimized/2334ao9w0k9d7973.ll
+; rust-analyzer-rs/optimized/2fcy4m9e2fxieax4.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
+; rust-analyzer-rs/optimized/4dy7ijwwbie8y9pm.ll
+; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
+; rust-analyzer-rs/optimized/51m9a8c8z6eylshw.ll
+; rust-analyzer-rs/optimized/5tc27igfpd8lxn0.ll
+; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
+; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
+; typst-rs/optimized/31vebs4z0lpwpjgn.ll
+; typst-rs/optimized/3efk6odw6ecl29p.ll
+; typst-rs/optimized/3gfld5k3k43fgjtj.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; wasmtime-rs/optimized/1aeertcmltcg0pmp.ll
+; wasmtime-rs/optimized/3hwarn3zl2ncla2z.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv exact i64 %1, 24
+  %3 = add nsw i64 %2, -16
+  %4 = and i64 %3, %0
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

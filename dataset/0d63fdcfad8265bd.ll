@@ -1,0 +1,459 @@
+
+; 5 occurrences:
+; cpython/optimized/longobject.ll
+; ruby/optimized/bignum.ll
+; soc-simulator/optimized/verilated.ll
+; verilator/optimized/V3Number.cpp.ll
+; z3/optimized/mpn.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = add nuw i64 %2, %0
+  %4 = lshr i64 %3, 32
+  ret i64 %4
+}
+
+; 24 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
+; arrow/optimized/bignum.cc.ll
+; cmake/optimized/fse_compress.c.ll
+; cmake/optimized/zstd_compress_sequences.c.ll
+; cpython/optimized/longobject.ll
+; double_conversion/optimized/bignum.cc.ll
+; icu/optimized/double-conversion-bignum.ll
+; lief/optimized/poly1305.c.ll
+; linux/optimized/build_policy.ll
+; linux/optimized/extents.ll
+; linux/optimized/xprtsock.ll
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; openusd/optimized/bignum.cc.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; ruby/optimized/bignum.ll
+; soc-simulator/optimized/verilated.ll
+; spike/optimized/vmadc_vi.ll
+; spike/optimized/vmadc_vim.ll
+; verilator/optimized/V3Number.cpp.ll
+; zstd/optimized/fse_compress.c.ll
+; zstd/optimized/zstd_compress_sequences.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = add nuw nsw i64 %2, %0
+  %4 = lshr i64 %3, 32
+  ret i64 %4
+}
+
+; 304 occurrences:
+; actix-rs/optimized/1heyflno2zbhb99l.ll
+; assimp/optimized/zip.c.ll
+; brotli/optimized/metablock.c.ll
+; cmake/optimized/zstd_compress_sequences.c.ll
+; cpython/optimized/longobject.ll
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; fmt/optimized/format.cc.ll
+; fmt/optimized/gtest-extra.cc.ll
+; fmt/optimized/header-only-test.cc.ll
+; fmt/optimized/os.cc.ll
+; fmt/optimized/printf-test.cc.ll
+; fmt/optimized/std-test.cc.ll
+; fmt/optimized/unicode-test.cc.ll
+; fmt/optimized/util.cc.ll
+; fmt/optimized/xchar-test.cc.ll
+; folly/optimized/File.cpp.ll
+; hermes/optimized/zip.c.ll
+; libwebp/optimized/get_disto.c.ll
+; libwebp/optimized/ssim.c.ll
+; lief/optimized/ASN1Reader.cpp.ll
+; lief/optimized/AndroidIdent.cpp.ll
+; lief/optimized/BinaryParser.cpp.ll
+; lief/optimized/BuildToolVersion.cpp.ll
+; lief/optimized/Builder.cpp.ll
+; lief/optimized/ChainedFixup.cpp.ll
+; lief/optimized/CodeIntegrity.cpp.ll
+; lief/optimized/CodeView.cpp.ll
+; lief/optimized/CodeViewPDB.cpp.ll
+; lief/optimized/CoreAuxv.cpp.ll
+; lief/optimized/CoreFile.cpp.ll
+; lief/optimized/CorePrPsInfo.cpp.ll
+; lief/optimized/CorePrStatus.cpp.ll
+; lief/optimized/CoreSigInfo.cpp.ll
+; lief/optimized/Debug.cpp.ll
+; lief/optimized/DelayImport.cpp.ll
+; lief/optimized/DelayImportEntry.cpp.ll
+; lief/optimized/DyldChainedFixups.cpp.ll
+; lief/optimized/DyldInfo.cpp.ll
+; lief/optimized/DynamicEntryArray.cpp.ll
+; lief/optimized/DynamicEntryLibrary.cpp.ll
+; lief/optimized/DynamicEntryRpath.cpp.ll
+; lief/optimized/DynamicEntryRunPath.cpp.ll
+; lief/optimized/DynamicSharedObject.cpp.ll
+; lief/optimized/File.cpp.ll
+; lief/optimized/FileStream.cpp.ll
+; lief/optimized/GenericContent.cpp.ll
+; lief/optimized/LangCodeItem.cpp.ll
+; lief/optimized/LinkEdit.cpp.ll
+; lief/optimized/LoadConfiguration.cpp.ll
+; lief/optimized/LoadConfigurationV0.cpp.ll
+; lief/optimized/LoadConfigurationV1.cpp.ll
+; lief/optimized/LoadConfigurationV10.cpp.ll
+; lief/optimized/LoadConfigurationV11.cpp.ll
+; lief/optimized/LoadConfigurationV3.cpp.ll
+; lief/optimized/LoadConfigurationV4.cpp.ll
+; lief/optimized/LoadConfigurationV5.cpp.ll
+; lief/optimized/LoadConfigurationV6.cpp.ll
+; lief/optimized/LoadConfigurationV7.cpp.ll
+; lief/optimized/LoadConfigurationV8.cpp.ll
+; lief/optimized/LoadConfigurationV9.cpp.ll
+; lief/optimized/MemoryStream.cpp.ll
+; lief/optimized/Note.cpp.ll
+; lief/optimized/NoteAbi.cpp.ll
+; lief/optimized/NoteGnuProperty.cpp.ll
+; lief/optimized/PKCS9SigningTime.cpp.ll
+; lief/optimized/Pogo.cpp.ll
+; lief/optimized/PogoEntry.cpp.ll
+; lief/optimized/RelocationEntry.cpp.ll
+; lief/optimized/RelocationFixup.cpp.ll
+; lief/optimized/Repro.cpp.ll
+; lief/optimized/ResourceNode.cpp.ll
+; lief/optimized/ResourceStringFileInfo.cpp.ll
+; lief/optimized/ResourceVarFileInfo.cpp.ll
+; lief/optimized/ResourceVersion.cpp.ll
+; lief/optimized/ResourcesManager.cpp.ll
+; lief/optimized/ResourcesParser.cpp.ll
+; lief/optimized/RichHeader.cpp.ll
+; lief/optimized/Signature.cpp.ll
+; lief/optimized/SignatureParser.cpp.ll
+; lief/optimized/SignerInfo.cpp.ll
+; lief/optimized/SpanStream.cpp.ll
+; lief/optimized/SpcIndirectData.cpp.ll
+; lief/optimized/StackSize.cpp.ll
+; lief/optimized/TLS.cpp.ll
+; lief/optimized/TrieNode.cpp.ll
+; lief/optimized/Type.cpp.ll
+; lief/optimized/VectorStream.cpp.ll
+; lief/optimized/hash_stream.cpp.ll
+; lief/optimized/x509.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; linux/optimized/blk-map.ll
+; linux/optimized/datagram.ll
+; linux/optimized/i915_gem_mman.ll
+; linux/optimized/i915_gem_pages.ll
+; linux/optimized/i915_mm.ll
+; linux/optimized/intel_ggtt.ll
+; linux/optimized/intel_lrc.ll
+; linux/optimized/intel_renderstate.ll
+; linux/optimized/intel_uc_fw.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/libahci.ll
+; linux/optimized/map.ll
+; linux/optimized/md.ll
+; linux/optimized/pcmcia_resource.ll
+; linux/optimized/resize.ll
+; linux/optimized/scatterlist.ll
+; linux/optimized/scsi_lib.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/tg3.ll
+; linux/optimized/trans_virtio.ll
+; linux/optimized/utaddress.ll
+; linux/optimized/virtio_net.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/BitstreamReader.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
+; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; mold/optimized/arch-ppc32.cc.ll
+; oiio/optimized/argparse.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
+; oiio/optimized/bmpinput.cpp.ll
+; oiio/optimized/bmpoutput.cpp.ll
+; oiio/optimized/cineoninput.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; oiio/optimized/dpxoutput.cpp.ll
+; oiio/optimized/environment.cpp.ll
+; oiio/optimized/errorhandler.cpp.ll
+; oiio/optimized/exrinput.cpp.ll
+; oiio/optimized/exroutput.cpp.ll
+; oiio/optimized/filesystem.cpp.ll
+; oiio/optimized/fitsoutput.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; oiio/optimized/hdroutput.cpp.ll
+; oiio/optimized/icc.cpp.ll
+; oiio/optimized/icoinput.cpp.ll
+; oiio/optimized/icooutput.cpp.ll
+; oiio/optimized/iffinput.cpp.ll
+; oiio/optimized/iffoutput.cpp.ll
+; oiio/optimized/imagebuf.cpp.ll
+; oiio/optimized/imagebufalgo.cpp.ll
+; oiio/optimized/imagebufalgo_addsub.cpp.ll
+; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_compare.cpp.ll
+; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_deep.cpp.ll
+; oiio/optimized/imagebufalgo_draw.cpp.ll
+; oiio/optimized/imagebufalgo_mad.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
+; oiio/optimized/imagebufalgo_muldiv.cpp.ll
+; oiio/optimized/imagebufalgo_opencv.cpp.ll
+; oiio/optimized/imagebufalgo_orient.cpp.ll
+; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; oiio/optimized/imagecache.cpp.ll
+; oiio/optimized/imageinput.cpp.ll
+; oiio/optimized/imageio.cpp.ll
+; oiio/optimized/imageioplugin.cpp.ll
+; oiio/optimized/imageoutput.cpp.ll
+; oiio/optimized/jpeginput.cpp.ll
+; oiio/optimized/maketexture.cpp.ll
+; oiio/optimized/paramlist.cpp.ll
+; oiio/optimized/pnginput.cpp.ll
+; oiio/optimized/pngoutput.cpp.ll
+; oiio/optimized/pnmoutput.cpp.ll
+; oiio/optimized/printinfo.cpp.ll
+; oiio/optimized/psdinput.cpp.ll
+; oiio/optimized/rlainput.cpp.ll
+; oiio/optimized/sgiinput.cpp.ll
+; oiio/optimized/sgioutput.cpp.ll
+; oiio/optimized/softimageinput.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; oiio/optimized/targainput.cpp.ll
+; oiio/optimized/targaoutput.cpp.ll
+; oiio/optimized/termoutput.cpp.ll
+; oiio/optimized/texture3d.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; oiio/optimized/tiffinput.cpp.ll
+; oiio/optimized/tiffoutput.cpp.ll
+; oiio/optimized/typedesc.cpp.ll
+; oiio/optimized/zfile.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openmpi/optimized/sha256.ll
+; php/optimized/hash_xxhash.ll
+; portaudio/optimized/pa_linux_alsa.c.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
+; qemu/optimized/hw_timer_cadence_ttc.c.ll
+; redis/optimized/listpack.ll
+; redis/optimized/sha256.ll
+; rocksdb/optimized/xxhash.cc.ll
+; ruby/optimized/rmd160.ll
+; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; spdlog/optimized/spdlog.cpp.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageButton.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/MultiGraph.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/QoiImageSaver.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; wasmedge/optimized/alias.cpp.ll
+; wasmedge/optimized/aot_section.cpp.ll
+; wasmedge/optimized/canon.cpp.ll
+; wasmedge/optimized/canonical.cpp.ll
+; wasmedge/optimized/codegen.cpp.ll
+; wasmedge/optimized/compiler.cpp.ll
+; wasmedge/optimized/compilerTool.cpp.ll
+; wasmedge/optimized/component.cpp.ll
+; wasmedge/optimized/controlInstr.cpp.ll
+; wasmedge/optimized/description.cpp.ll
+; wasmedge/optimized/elem.cpp.ll
+; wasmedge/optimized/engine.cpp.ll
+; wasmedge/optimized/environ.cpp.ll
+; wasmedge/optimized/errinfo.cpp.ll
+; wasmedge/optimized/executor.cpp.ll
+; wasmedge/optimized/export.cpp.ll
+; wasmedge/optimized/expression.cpp.ll
+; wasmedge/optimized/formchecker.cpp.ll
+; wasmedge/optimized/global.cpp.ll
+; wasmedge/optimized/helper.cpp.ll
+; wasmedge/optimized/import.cpp.ll
+; wasmedge/optimized/import_export.cpp.ll
+; wasmedge/optimized/instance.cpp.ll
+; wasmedge/optimized/instruction.cpp.ll
+; wasmedge/optimized/jit.cpp.ll
+; wasmedge/optimized/loader.cpp.ll
+; wasmedge/optimized/memory.cpp.ll
+; wasmedge/optimized/memoryInstr.cpp.ll
+; wasmedge/optimized/module.cpp.ll
+; wasmedge/optimized/plugin.cpp.ll
+; wasmedge/optimized/proxy.cpp.ll
+; wasmedge/optimized/refInstr.cpp.ll
+; wasmedge/optimized/section.cpp.ll
+; wasmedge/optimized/segment.cpp.ll
+; wasmedge/optimized/serial_description.cpp.ll
+; wasmedge/optimized/serial_expression.cpp.ll
+; wasmedge/optimized/serial_instruction.cpp.ll
+; wasmedge/optimized/serial_module.cpp.ll
+; wasmedge/optimized/serial_section.cpp.ll
+; wasmedge/optimized/serial_segment.cpp.ll
+; wasmedge/optimized/serial_type.cpp.ll
+; wasmedge/optimized/shared_library.cpp.ll
+; wasmedge/optimized/sort.cpp.ll
+; wasmedge/optimized/start.cpp.ll
+; wasmedge/optimized/table.cpp.ll
+; wasmedge/optimized/tableInstr.cpp.ll
+; wasmedge/optimized/threadInstr.cpp.ll
+; wasmedge/optimized/type.cpp.ll
+; wasmedge/optimized/validator.cpp.ll
+; wasmedge/optimized/vm.cpp.ll
+; wasmedge/optimized/wasmedge.cpp.ll
+; wireshark/optimized/packet-nvme.c.ll
+; wireshark/optimized/pcapio.c.ll
+; zfp/optimized/decode1d.c.ll
+; zfp/optimized/decode1f.c.ll
+; zfp/optimized/decode1i.c.ll
+; zfp/optimized/decode1l.c.ll
+; zfp/optimized/decode2d.c.ll
+; zfp/optimized/decode2f.c.ll
+; zfp/optimized/decode2i.c.ll
+; zfp/optimized/decode2l.c.ll
+; zfp/optimized/decode3d.c.ll
+; zfp/optimized/decode3f.c.ll
+; zfp/optimized/decode3i.c.ll
+; zfp/optimized/decode3l.c.ll
+; zfp/optimized/decode4d.c.ll
+; zfp/optimized/decode4f.c.ll
+; zfp/optimized/decode4i.c.ll
+; zfp/optimized/decode4l.c.ll
+; zstd/optimized/zstd_compress_sequences.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = add i64 %2, %0
+  %4 = lshr i64 %3, 32
+  ret i64 %4
+}
+
+; 11 occurrences:
+; assimp/optimized/DXFLoader.cpp.ll
+; gromacs/optimized/lifetime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/arrayKlass.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/objArrayKlass.ll
+; openjdk/optimized/stringTable.ll
+; pocketpy/optimized/collections.cpp.ll
+; qemu/optimized/hw_ide_core.c.ll
+; verilator/optimized/V3FileLine.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nsw i64 %2, %0
+  %4 = lshr i64 %3, 16
+  ret i64 %4
+}
+
+; 12 occurrences:
+; brotli/optimized/compress_fragment.c.ll
+; clamav/optimized/pdfdecode.c.ll
+; cpython/optimized/longobject.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; hermes/optimized/Array.cpp.ll
+; hermes/optimized/JSLibInternal.cpp.ll
+; hermes/optimized/TypedArray.cpp.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/pagelist.ll
+; openjdk/optimized/c1_LinearScan.ll
+; openjdk/optimized/typeArrayKlass.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add i64 %2, %0
+  %4 = lshr i64 %3, 6
+  ret i64 %4
+}
+
+; 5 occurrences:
+; libjpeg-turbo/optimized/wrbmp.c.ll
+; linux/optimized/extents.ll
+; linux/optimized/percpu.ll
+; openjdk/optimized/stringTable.ll
+; stb/optimized/stb_connected_components.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nuw nsw i64 %2, %0
+  %4 = lshr i64 %3, 3
+  ret i64 %4
+}
+
+; 26 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; arrow/optimized/builder.cc.ll
+; arrow/optimized/vector_selection_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; git/optimized/read-cache.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hyperscan/optimized/rose_build_add.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_castle.cpp.ll
+; hyperscan/optimized/rose_build_compile.cpp.ll
+; hyperscan/optimized/rose_build_convert.cpp.ll
+; hyperscan/optimized/rose_build_dedupe.cpp.ll
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_matchers.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; linux/optimized/fast_commit.ll
+; linux/optimized/pagelist.ll
+; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/X86RegisterInfo.cpp.ll
+; redis/optimized/listpack.ll
+; verilator/optimized/V3Delayed.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = add nsw i64 %2, %0
+  %4 = lshr i64 %3, 6
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

@@ -1,0 +1,22 @@
+
+; 10 occurrences:
+; coreutils-rs/optimized/162a9hv49p91yl4q.ll
+; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
+; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
+; coreutils-rs/optimized/2ph6t6nh0hmjeejh.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; diesel-rs/optimized/2nqojkvzec127ieh.ll
+; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
+; ockam-rs/optimized/1411u8drt798uxi8.ll
+; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
+; rust-analyzer-rs/optimized/39qzrxn3p3f1jz7v.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ne i8 %1, 8
+  %3 = select i1 %2, i1 true, i1 %0
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

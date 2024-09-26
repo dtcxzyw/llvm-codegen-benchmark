@@ -1,0 +1,9 @@
+func0000000000000001:                   # @func0000000000000001
+	andi	a0, a0, -8
+	sub	a2, a0, a1
+	xor	a0, a0, a1
+	czero.eqz	a1, a2, a0
+	li	a2, 8
+	czero.nez	a0, a2, a0
+	or	a0, a0, a1
+	ret

@@ -1,0 +1,106 @@
+
+; 2 occurrences:
+; grpc/optimized/parser.cc.ll
+; ruby/optimized/pm_integer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 9
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 6 occurrences:
+; llvm/optimized/SemaAttr.cpp.ll
+; opencv/optimized/freak.cpp.ll
+; opencv/optimized/harris_lapace_detector.cpp.ll
+; openjdk/optimized/diagnosticFramework.ll
+; tomlplusplus/optimized/toml.cpp.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 2
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 25 occurrences:
+; quantlib/optimized/fdm2dblackscholesop.ll
+; quantlib/optimized/fdmbatesop.ll
+; quantlib/optimized/fdmblackscholesfwdop.ll
+; quantlib/optimized/fdmblackscholesop.ll
+; quantlib/optimized/fdmcevop.ll
+; quantlib/optimized/fdmcirop.ll
+; quantlib/optimized/fdmdupire1dop.ll
+; quantlib/optimized/fdmextendedornsteinuhlenbeckop.ll
+; quantlib/optimized/fdmextoujumpop.ll
+; quantlib/optimized/fdmg2op.ll
+; quantlib/optimized/fdmhestonfwdop.ll
+; quantlib/optimized/fdmhestonhullwhiteop.ll
+; quantlib/optimized/fdmhestonop.ll
+; quantlib/optimized/fdmhullwhiteop.ll
+; quantlib/optimized/fdmklugeextouop.ll
+; quantlib/optimized/fdmlocalvolfwdop.ll
+; quantlib/optimized/fdmornsteinuhlenbeckop.ll
+; quantlib/optimized/fdmsabrop.ll
+; quantlib/optimized/fdmsquarerootfwdop.ll
+; quantlib/optimized/fdmzabrop.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; quantlib/optimized/ninepointlinearop.ll
+; quantlib/optimized/nthorderderivativeop.ll
+; quantlib/optimized/sparseilupreconditioner.ll
+; quantlib/optimized/triplebandlinearop.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i64, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; quantlib/optimized/kahalesmilesection.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr double, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 16
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 8 occurrences:
+; clamav/optimized/pdf.c.ll
+; nuklear/optimized/unity.c.ll
+; oiio/optimized/thread.cpp.ll
+; opencv/optimized/bagofwords_classification.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; openexr/optimized/internal_huf.c.ll
+; openusd/optimized/openexr-c.c.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 1
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 4 occurrences:
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; zstd/optimized/zstd_v01.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr ptr, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

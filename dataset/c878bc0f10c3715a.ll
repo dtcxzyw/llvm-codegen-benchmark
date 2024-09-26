@@ -1,8 +1,13 @@
 
-; 7 occurrences:
+; 12 occurrences:
 ; git/optimized/diff-lib.ll
 ; icu/optimized/genrb.ll
 ; linux/optimized/phy-core.ll
+; llvm/optimized/BasicBlockUtils.cpp.ll
+; llvm/optimized/Function.cpp.ll
+; llvm/optimized/LLLexer.cpp.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/TailDuplicator.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll

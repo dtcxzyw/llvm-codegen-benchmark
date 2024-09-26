@@ -1,8 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	sext.w	a1, a1
-	lui	a2, 1
-	bltu	a2, a1, .LBB0_2
-	lui	a1, 1
-.LBB0_2:                                # %entry
-	add	a0, a0, a1
-	ret

@@ -1,0 +1,66 @@
+
+; 5 occurrences:
+; node/optimized/libnode.crypto_aes.ll
+; openssl/optimized/libcrypto-lib-bn_rand.ll
+; openssl/optimized/libcrypto-shlib-bn_rand.ll
+; postgres/optimized/heaptuple.ll
+; redis/optimized/hyperloglog.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 7
+  %2 = shl nuw nsw i32 510, %1
+  %3 = trunc i32 %2 to i8
+  %4 = xor i8 %3, -1
+  ret i8 %4
+}
+
+; 22 occurrences:
+; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/stream.c.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; llvm/optimized/TargetLibraryInfo.cpp.ll
+; luajit/optimized/lj_vmevent.ll
+; luajit/optimized/lj_vmevent_dyn.ll
+; postgres/optimized/arrayfuncs.ll
+; postgres/optimized/clog.ll
+; qemu/optimized/hw_pci_msix.c.ll
+; redis/optimized/cluster_legacy.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
+; wireshark/optimized/packet-dect.c.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000e(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 7
+  %2 = shl nuw nsw i32 1, %1
+  %3 = trunc nuw i32 %2 to i8
+  %4 = xor i8 %3, -1
+  ret i8 %4
+}
+
+; 4 occurrences:
+; arrow/optimized/light_array.cc.ll
+; postgres/optimized/clog.ll
+; postgres/optimized/visibilitymap.ll
+; wolfssl/optimized/rsa.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000005(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 6
+  %2 = shl nsw i32 -1, %1
+  %3 = trunc nsw i32 %2 to i8
+  %4 = xor i8 %3, -1
+  ret i8 %4
+}
+
+attributes #0 = { nounwind }

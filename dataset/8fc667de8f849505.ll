@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/quant_util.cpp.ll
+; openjdk/optimized/hb-ot-layout.ll
 ; redis/optimized/quicklist.ll
 ; z3/optimized/fm_tactic.cpp.ll
 ; Function Attrs: nounwind

@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; libquic/optimized/s3_srvr.c.ll
+; opencv/optimized/grfmt_exr.cpp.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
 ; serde-rs-json/optimized/mlftjs9t2bz2jrv.ll
 ; wireshark/optimized/packet-atalk.c.ll

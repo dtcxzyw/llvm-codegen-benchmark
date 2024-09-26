@@ -1,11 +1,19 @@
 
-; 36 occurrences:
+; 49 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cvc5/optimized/theory_arrays_rewriter.cpp.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
+; glslang/optimized/linkValidate.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; libevent/optimized/event.c.ll
+; llvm/optimized/CGExprConstant.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/VirtualCallChecker.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; luau/optimized/ConstraintSolver.cpp.ll
+; luau/optimized/Subtyping.cpp.ll
+; luau/optimized/ToString.cpp.ll
+; luau/optimized/TypeFamily.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -26,11 +34,16 @@
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; mold/optimized/perf.cc.ll
-; openblas/optimized/dgetsls.c.ll
+; opencv/optimized/softfloat.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
+; openusd/optimized/registry.cpp.ll
 ; postgres/optimized/planner.ll
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
+; xgboost/optimized/c_api.cc.ll
+; xgboost/optimized/coll_c_api.cc.ll
+; xgboost/optimized/comm_group.cc.ll
+; xgboost/optimized/tracker.cc.ll
 ; z3/optimized/recfun_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/spacer_antiunify.cpp.ll

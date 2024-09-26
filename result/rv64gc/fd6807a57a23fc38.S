@@ -1,0 +1,78 @@
+func000000000000000d:                   # @func000000000000000d
+	srli	a4, a2, 1
+	lui	a3, 349525
+	addiw	a3, a3, 1365
+	slli	a5, a3, 32
+	add	t0, a3, a5
+	lui	a5, 209715
+	addiw	a3, a5, 819
+	slli	a5, a3, 32
+	add	a5, a5, a3
+	lui	a3, 61681
+	addiw	a6, a3, -241
+	slli	a3, a6, 32
+	add	a6, a6, a3
+	lui	a3, 4112
+	addiw	a7, a3, 257
+	slli	a3, a7, 32
+	add	a7, a7, a3
+	bnez	a4, .LBB0_2
+	slli	a2, a2, 63
+	srli	a1, a1, 1
+	or	a1, a1, a2
+	srli	a2, a1, 1
+	or	a1, a1, a2
+	srli	a2, a1, 2
+	or	a1, a1, a2
+	srli	a2, a1, 4
+	or	a1, a1, a2
+	srli	a2, a1, 8
+	or	a1, a1, a2
+	srli	a2, a1, 16
+	or	a1, a1, a2
+	srli	a2, a1, 32
+	or	a1, a1, a2
+	not	a1, a1
+	srli	a2, a1, 1
+	and	a2, a2, t0
+	sub	a1, a1, a2
+	and	a2, a1, a5
+	srli	a1, a1, 2
+	and	a1, a1, a5
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	and	a1, a1, a6
+	mul	a1, a1, a7
+	srli	a1, a1, 56
+	addi	a1, a1, 64
+	subw	a0, a0, a1
+	ret
+.LBB0_2:
+	srli	a2, a2, 2
+	or	a2, a2, a4
+	srli	a1, a2, 2
+	or	a1, a1, a2
+	srli	a2, a1, 4
+	or	a1, a1, a2
+	srli	a2, a1, 8
+	or	a1, a1, a2
+	srli	a2, a1, 16
+	or	a1, a1, a2
+	srli	a2, a1, 32
+	or	a1, a1, a2
+	not	a1, a1
+	srli	a2, a1, 1
+	and	a2, a2, t0
+	sub	a1, a1, a2
+	and	a2, a1, a5
+	srli	a1, a1, 2
+	and	a1, a1, a5
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	and	a1, a1, a6
+	mul	a1, a1, a7
+	srli	a1, a1, 56
+	subw	a0, a0, a1
+	ret

@@ -1,0 +1,194 @@
+
+; 173 occurrences:
+; abc/optimized/giaUtil.c.ll
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; brotli/optimized/backward_references.c.ll
+; brotli/optimized/backward_references_hq.c.ll
+; brotli/optimized/decode.c.ll
+; brotli/optimized/encode.c.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/color-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; fmt/optimized/format-test.cc.ll
+; fmt/optimized/format.cc.ll
+; fmt/optimized/gtest-extra.cc.ll
+; fmt/optimized/header-only-test.cc.ll
+; fmt/optimized/os.cc.ll
+; fmt/optimized/ostream-test.cc.ll
+; fmt/optimized/printf-test.cc.ll
+; fmt/optimized/ranges-test.cc.ll
+; fmt/optimized/std-test.cc.ll
+; fmt/optimized/unicode-test.cc.ll
+; fmt/optimized/util.cc.ll
+; fmt/optimized/xchar-test.cc.ll
+; hermes/optimized/Interpreter.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; linux/optimized/alps.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/intel_overlay.ll
+; linux/optimized/mempolicy.ll
+; linux/optimized/oom_kill.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/shmem.ll
+; linux/optimized/slub.ll
+; linux/optimized/stream.ll
+; linux/optimized/vmscan.ll
+; luajit/optimized/lib_jit.ll
+; luajit/optimized/lib_jit_dyn.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; minetest/optimized/objdef.cpp.ll
+; oiio/optimized/ddsinput.cpp.ll
+; opencv/optimized/arithm.cpp.ll
+; opencv/optimized/array.cpp.ll
+; opencv/optimized/bagofwords_classification.cpp.ll
+; opencv/optimized/cap_v4l.cpp.ll
+; opencv/optimized/channels.cpp.ll
+; opencv/optimized/contours.cpp.ll
+; opencv/optimized/convhull.cpp.ll
+; opencv/optimized/copy.cpp.ll
+; opencv/optimized/cuda_gpu_mat.cpp.ll
+; opencv/optimized/cuda_gpu_mat_nd.cpp.ll
+; opencv/optimized/cuda_host_mem.cpp.ll
+; opencv/optimized/cv2.cpp.ll
+; opencv/optimized/cv2_convert.cpp.ll
+; opencv/optimized/cv2_numpy.cpp.ll
+; opencv/optimized/datastructs.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/deriv.cpp.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/gather_layer.cpp.ll
+; opencv/optimized/grfmt_pam.cpp.ll
+; opencv/optimized/grfmt_pxm.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/mathfuncs.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; opencv/optimized/matrix.cpp.ll
+; opencv/optimized/matrix_c.cpp.ll
+; opencv/optimized/matrix_operations.cpp.ll
+; opencv/optimized/matrix_sparse.cpp.ll
+; opencv/optimized/matrix_transform.cpp.ll
+; opencv/optimized/matrix_wrap.cpp.ll
+; opencv/optimized/merge.dispatch.cpp.ll
+; opencv/optimized/ocl_perf.cpp.ll
+; opencv/optimized/persistence.cpp.ll
+; opencv/optimized/persistence_types.cpp.ll
+; opencv/optimized/ptsetreg.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; opencv/optimized/rand.cpp.ll
+; opencv/optimized/resize.cpp.ll
+; opencv/optimized/rmat.cpp.ll
+; opencv/optimized/split.dispatch.cpp.ll
+; opencv/optimized/templmatch.cpp.ll
+; opencv/optimized/tf_graph_simplifier.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
+; opencv/optimized/thresh.cpp.ll
+; opencv/optimized/torch_importer.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; opencv/optimized/ts_perf.cpp.ll
+; opencv/optimized/umatrix.cpp.ll
+; opencv/optimized/undistort.dispatch.cpp.ll
+; openjdk/optimized/shenandoahFreeSet.ll
+; snappy/optimized/snappy.cc.ll
+; vcpkg/optimized/archives.cpp.ll
+; vcpkg/optimized/binarycaching.cpp.ll
+; vcpkg/optimized/binaryparagraph.cpp.ll
+; vcpkg/optimized/bundlesettings.cpp.ll
+; vcpkg/optimized/checks.cpp.ll
+; vcpkg/optimized/ci-baseline.cpp.ll
+; vcpkg/optimized/cmakevars.cpp.ll
+; vcpkg/optimized/cmd-parser.cpp.ll
+; vcpkg/optimized/cofffilereader.cpp.ll
+; vcpkg/optimized/commands.add-version.cpp.ll
+; vcpkg/optimized/commands.add.cpp.ll
+; vcpkg/optimized/commands.autocomplete.cpp.ll
+; vcpkg/optimized/commands.build.cpp.ll
+; vcpkg/optimized/commands.check-support.cpp.ll
+; vcpkg/optimized/commands.ci-clean.cpp.ll
+; vcpkg/optimized/commands.ci-verify-versions.cpp.ll
+; vcpkg/optimized/commands.ci.cpp.ll
+; vcpkg/optimized/commands.contact.cpp.ll
+; vcpkg/optimized/commands.create.cpp.ll
+; vcpkg/optimized/commands.depend-info.cpp.ll
+; vcpkg/optimized/commands.download.cpp.ll
+; vcpkg/optimized/commands.edit.cpp.ll
+; vcpkg/optimized/commands.env.cpp.ll
+; vcpkg/optimized/commands.export.cpp.ll
+; vcpkg/optimized/commands.find.cpp.ll
+; vcpkg/optimized/commands.format-manifest.cpp.ll
+; vcpkg/optimized/commands.generate-msbuild-props.cpp.ll
+; vcpkg/optimized/commands.help.cpp.ll
+; vcpkg/optimized/commands.init-registry.cpp.ll
+; vcpkg/optimized/commands.install.cpp.ll
+; vcpkg/optimized/commands.integrate.cpp.ll
+; vcpkg/optimized/commands.list.cpp.ll
+; vcpkg/optimized/commands.new.cpp.ll
+; vcpkg/optimized/commands.package-info.cpp.ll
+; vcpkg/optimized/commands.portsdiff.cpp.ll
+; vcpkg/optimized/commands.remove.cpp.ll
+; vcpkg/optimized/commands.set-installed.cpp.ll
+; vcpkg/optimized/commands.update-baseline.cpp.ll
+; vcpkg/optimized/commands.update.cpp.ll
+; vcpkg/optimized/commands.version.cpp.ll
+; vcpkg/optimized/commands.z-changelog.cpp.ll
+; vcpkg/optimized/commands.z-extract.cpp.ll
+; vcpkg/optimized/commands.z-generate-message-map.cpp.ll
+; vcpkg/optimized/configuration.cpp.ll
+; vcpkg/optimized/configure-environment.cpp.ll
+; vcpkg/optimized/dependencies.cpp.ll
+; vcpkg/optimized/downloads.cpp.ll
+; vcpkg/optimized/export.chocolatey.cpp.ll
+; vcpkg/optimized/export.ifw.cpp.ll
+; vcpkg/optimized/export.prefab.cpp.ll
+; vcpkg/optimized/files.cpp.ll
+; vcpkg/optimized/git.cpp.ll
+; vcpkg/optimized/hash.cpp.ll
+; vcpkg/optimized/input.cpp.ll
+; vcpkg/optimized/json.cpp.ll
+; vcpkg/optimized/message_sinks.cpp.ll
+; vcpkg/optimized/messages.cpp.ll
+; vcpkg/optimized/packagespec.cpp.ll
+; vcpkg/optimized/paragraphs.cpp.ll
+; vcpkg/optimized/parse.cpp.ll
+; vcpkg/optimized/platform-expression.cpp.ll
+; vcpkg/optimized/portfileprovider.cpp.ll
+; vcpkg/optimized/postbuildlint.cpp.ll
+; vcpkg/optimized/registries.cpp.ll
+; vcpkg/optimized/sourceparagraph.cpp.ll
+; vcpkg/optimized/spdx.cpp.ll
+; vcpkg/optimized/strings.cpp.ll
+; vcpkg/optimized/system.cpp.ll
+; vcpkg/optimized/system.process.cpp.ll
+; vcpkg/optimized/tools.cpp.ll
+; vcpkg/optimized/triplet.cpp.ll
+; vcpkg/optimized/vcpkgcmdarguments.cpp.ll
+; vcpkg/optimized/vcpkgpaths.cpp.ll
+; vcpkg/optimized/versiondeserializers.cpp.ll
+; vcpkg/optimized/versions.cpp.ll
+; yaml-cpp/optimized/emitterutils.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = lshr i32 27030, %0
+  %2 = and i32 %1, 1
+  ret i32 %2
+}
+
+; 1 occurrences:
+; brotli/optimized/backward_references.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = lshr exact i32 117264, %0
+  %2 = and i32 %1, 4
+  ret i32 %2
+}
+
+attributes #0 = { nounwind }

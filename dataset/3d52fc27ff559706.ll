@@ -1,9 +1,12 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; linux/optimized/tsc.ll
+; llvm/optimized/LoopUnrollPass.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
+; opencv/optimized/gfluidimgproc.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/informix.ll
 ; postgres/optimized/print.ll

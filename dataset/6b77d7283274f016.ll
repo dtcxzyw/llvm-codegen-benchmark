@@ -1,0 +1,16 @@
+
+; 5 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; git/optimized/notes.ll
+; linux/optimized/drm_dp_mst_topology.ll
+; lodepng/optimized/lodepng.cpp.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
+entry:
+  %2 = xor i8 %1, 4
+  %3 = lshr i8 %0, %2
+  ret i8 %3
+}
+
+attributes #0 = { nounwind }

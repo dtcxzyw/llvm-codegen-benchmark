@@ -1,0 +1,43 @@
+
+; 4 occurrences:
+; assimp/optimized/B3DImporter.cpp.ll
+; linux/optimized/eventpoll.ll
+; linux/optimized/inotify_user.ll
+; openjdk/optimized/psParallelCompact.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = udiv i64 %2, 40
+  %4 = shl i64 %3, 19
+  ret i64 %4
+}
+
+; 6 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
+; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
+; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
+; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw i64 %0, %1
+  %3 = udiv exact i64 %2, 568
+  %4 = shl nuw nsw i64 %3, 4
+  ret i64 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/goak_memory_adapters.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = udiv i64 %2, 3
+  %4 = shl nuw i64 %3, 1
+  ret i64 %4
+}
+
+attributes #0 = { nounwind }

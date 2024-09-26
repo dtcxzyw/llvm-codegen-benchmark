@@ -1,0 +1,97 @@
+
+; 3 occurrences:
+; opencv/optimized/prior_box_layer.cpp.ll
+; openjdk/optimized/vectornode.ll
+; pbrt-v4/optimized/image.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
+}
+
+; 6 occurrences:
+; draco/optimized/ply_reader.cc.ll
+; gromacs/optimized/mtop_util.cpp.ll
+; opencv/optimized/dpm_cascade.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
+; pbrt-v4/optimized/image.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp ugt i64 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; gromacs/optimized/domdec_specatomcomm.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000016(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp sgt i64 %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; opencv/optimized/dpm_cascade.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; openspiel/optimized/matrix_game.cc.ll
+; pbrt-v4/optimized/image.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp eq i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/stereosgbm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp slt i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/stereosgbm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = mul i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp sgt i64 %5, %0
+  ret i1 %6
+}
+
+attributes #0 = { nounwind }

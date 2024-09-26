@@ -1,0 +1,15 @@
+
+; 3 occurrences:
+; llvm/optimized/IVDescriptors.cpp.ll
+; php/optimized/zend_operators.ll
+; verilator/optimized/V3Expand.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = freeze i32 %3
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

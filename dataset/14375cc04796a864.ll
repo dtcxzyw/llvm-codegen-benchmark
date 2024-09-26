@@ -1,7 +1,13 @@
 
-; 6 occurrences:
+; 12 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; linux/optimized/libata-eh.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/EntryExitInstrumenter.cpp.ll
+; llvm/optimized/EscapeEnumerator.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; php/optimized/zend_language_scanner.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll

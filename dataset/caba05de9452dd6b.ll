@@ -1,7 +1,7 @@
 
 ; 3 occurrences:
+; openusd/optimized/stackTrace.cpp.ll
 ; ruby/optimized/addr2line.ll
-; verilator/optimized/V3LinkDot.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {

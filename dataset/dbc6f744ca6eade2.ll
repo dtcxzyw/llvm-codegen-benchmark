@@ -1,0 +1,171 @@
+
+; 41 occurrences:
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; casadi/optimized/getnonzeros.cpp.ll
+; casadi/optimized/mx.cpp.ll
+; casadi/optimized/mx_function.cpp.ll
+; casadi/optimized/mx_node.cpp.ll
+; casadi/optimized/sparsity.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
+; casadi/optimized/sx_function.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; faiss/optimized/PolysemousTraining.cpp.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
+; llvm/optimized/JSON.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_qhull.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; opencv/optimized/perf_optflowpyrlk.cpp.ll
+; rocksdb/optimized/trace_analyzer_tool.cc.ll
+; velox/optimized/InPredicate.cpp.ll
+; verilator/optimized/V3AstNodes.cpp.ll
+; verilator/optimized/V3Broken.cpp.ll
+; verilator/optimized/V3DfgOptimizer.cpp.ll
+; verilator/optimized/V3DfgPasses.cpp.ll
+; verilator/optimized/V3EmitCSyms.cpp.ll
+; verilator/optimized/V3ExecGraph.cpp.ll
+; verilator/optimized/V3MergeCond.cpp.ll
+; verilator/optimized/V3Sched.cpp.ll
+; verilator/optimized/V3SchedAcyclic.cpp.ll
+; verilator/optimized/V3SchedPartition.cpp.ll
+; verilator/optimized/V3SchedReplicate.cpp.ll
+; verilator/optimized/V3SchedTiming.cpp.ll
+; verilator/optimized/V3SchedVirtIface.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; verilator/optimized/V3TraceDecl.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; xgboost/optimized/updater_colmaker.cc.ll
+; yosys/optimized/eval.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000070(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 4
+  %3 = sub nuw nsw i64 %2, %0
+  %4 = shl i64 %3, 2
+  %5 = add i64 %4, -4
+  ret i64 %5
+}
+
+; 40 occurrences:
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; casadi/optimized/getnonzeros.cpp.ll
+; casadi/optimized/mx.cpp.ll
+; casadi/optimized/mx_function.cpp.ll
+; casadi/optimized/mx_node.cpp.ll
+; casadi/optimized/sparsity.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
+; casadi/optimized/sx_function.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; faiss/optimized/PolysemousTraining.cpp.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
+; llvm/optimized/JSON.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_qhull.cpp.ll
+; oiio/optimized/sysutil.cpp.ll
+; opencv/optimized/perf_optflowpyrlk.cpp.ll
+; rocksdb/optimized/trace_analyzer_tool.cc.ll
+; velox/optimized/InPredicate.cpp.ll
+; verilator/optimized/V3AstNodes.cpp.ll
+; verilator/optimized/V3Broken.cpp.ll
+; verilator/optimized/V3DfgOptimizer.cpp.ll
+; verilator/optimized/V3DfgPasses.cpp.ll
+; verilator/optimized/V3EmitCSyms.cpp.ll
+; verilator/optimized/V3ExecGraph.cpp.ll
+; verilator/optimized/V3MergeCond.cpp.ll
+; verilator/optimized/V3Sched.cpp.ll
+; verilator/optimized/V3SchedAcyclic.cpp.ll
+; verilator/optimized/V3SchedPartition.cpp.ll
+; verilator/optimized/V3SchedReplicate.cpp.ll
+; verilator/optimized/V3SchedTiming.cpp.ll
+; verilator/optimized/V3SchedVirtIface.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; verilator/optimized/V3TraceDecl.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; xgboost/optimized/updater_colmaker.cc.ll
+; yosys/optimized/eval.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 4
+  %3 = sub nuw nsw i64 %2, %0
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = add nsw i64 %4, -4
+  ret i64 %5
+}
+
+; 19 occurrences:
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; opencv/optimized/graph_cluster.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000005d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 3
+  %3 = sub nsw i64 %2, %0
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = add nsw i64 %4, -4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; yosys/optimized/memory_bram.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr i64 %1, 32
+  %3 = sub nuw nsw i64 %2, %0
+  %4 = shl i64 %3, 2
+  %5 = add i64 %4, -4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; yosys/optimized/memory_bram.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr i64 %1, 32
+  %3 = sub nuw nsw i64 %2, %0
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = add nsw i64 %4, -4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; eastl/optimized/TestString.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000060(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %0, 2
+  %3 = sub i64 %1, %2
+  %4 = and i64 %3, -4
+  %5 = add i64 %4, 4
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

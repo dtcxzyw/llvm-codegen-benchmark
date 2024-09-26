@@ -1,0 +1,210 @@
+
+; 132 occurrences:
+; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; arrow/optimized/message.cc.ll
+; clamav/optimized/list.cpp.ll
+; cvc5/optimized/miplib_trick.cpp.ll
+; glslang/optimized/Constant.cpp.ll
+; gromacs/optimized/domdec.cpp.ll
+; grpc/optimized/aes_gcm.cc.ll
+; hdf5/optimized/H5Ocopy.c.ll
+; imgui/optimized/imgui.cpp.ll
+; libquic/optimized/async_bio.cc.ll
+; lightgbm/optimized/gbdt.cpp.ll
+; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CGDecl.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/CommentLexer.cpp.ll
+; llvm/optimized/DWARFDebugFrame.cpp.ll
+; llvm/optimized/DylibVerifier.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MCStreamer.cpp.ll
+; llvm/optimized/MachineFrameInfo.cpp.ll
+; llvm/optimized/MemoryLocation.cpp.ll
+; llvm/optimized/ParseObjc.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/SanitizerArgs.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
+; mold/optimized/input-sections.cc.ALPHA.cc.ll
+; mold/optimized/input-sections.cc.ARM32.cc.ll
+; mold/optimized/input-sections.cc.ARM64.cc.ll
+; mold/optimized/input-sections.cc.I386.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-sections.cc.M68K.cc.ll
+; mold/optimized/input-sections.cc.PPC32.cc.ll
+; mold/optimized/input-sections.cc.PPC64V1.cc.ll
+; mold/optimized/input-sections.cc.PPC64V2.cc.ll
+; mold/optimized/input-sections.cc.RV32BE.cc.ll
+; mold/optimized/input-sections.cc.RV32LE.cc.ll
+; mold/optimized/input-sections.cc.RV64BE.cc.ll
+; mold/optimized/input-sections.cc.RV64LE.cc.ll
+; mold/optimized/input-sections.cc.S390X.cc.ll
+; mold/optimized/input-sections.cc.SH4.cc.ll
+; mold/optimized/input-sections.cc.SPARC64.cc.ll
+; mold/optimized/input-sections.cc.X86_64.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; node/optimized/libnode.node_buffer.ll
+; openjdk/optimized/archiveBuilder.ll
+; openjdk/optimized/bootstrapInfo.ll
+; openjdk/optimized/bytecodeTracer.ll
+; openjdk/optimized/cdsProtectionDomain.ll
+; openjdk/optimized/ciArray.ll
+; openjdk/optimized/ciEnv.ll
+; openjdk/optimized/ciObjArray.ll
+; openjdk/optimized/ciReplay.ll
+; openjdk/optimized/classLoader.ll
+; openjdk/optimized/constantPool.ll
+; openjdk/optimized/cpCache.ll
+; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/diagnosticCommand.ll
+; openjdk/optimized/foreignGlobals.ll
+; openjdk/optimized/foreignGlobals_x86_64.ll
+; openjdk/optimized/gcNotifier.ll
+; openjdk/optimized/heapDumper.ll
+; openjdk/optimized/heapShared.ll
+; openjdk/optimized/javaAssertions.ll
+; openjdk/optimized/javaClasses.ll
+; openjdk/optimized/jfrDcmds.ll
+; openjdk/optimized/jfrJavaLog.ll
+; openjdk/optimized/jfrJavaSupport.ll
+; openjdk/optimized/jni.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/jvmciCodeInstaller.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmciEnv.ll
+; openjdk/optimized/jvmtiEnvBase.ll
+; openjdk/optimized/lambdaFormInvokers.ll
+; openjdk/optimized/management.ll
+; openjdk/optimized/memMapPrinter_linux.ll
+; openjdk/optimized/method.ll
+; openjdk/optimized/methodHandles.ll
+; openjdk/optimized/modules.ll
+; openjdk/optimized/nativeEntryPoint.ll
+; openjdk/optimized/objArrayKlass.ll
+; openjdk/optimized/objArrayOop.ll
+; openjdk/optimized/parserTests.ll
+; openjdk/optimized/reflection.ll
+; openjdk/optimized/stackwalk.ll
+; openjdk/optimized/stringTable.ll
+; openjdk/optimized/systemDictionary.ll
+; openjdk/optimized/threadService.ll
+; openjdk/optimized/universe.ll
+; openjdk/optimized/unregisteredClasses.ll
+; openvdb/optimized/AttributeArrayString.cc.ll
+; openvdb/optimized/AttributeGroup.cc.ll
+; openvdb/optimized/points.cc.ll
+; php/optimized/zend_inference.ll
+; postgres/optimized/cluster.ll
+; postgres/optimized/crypt.ll
+; postgres/optimized/data.ll
+; postgres/optimized/extended_stats.ll
+; postgres/optimized/foreigncmds.ll
+; postgres/optimized/funcapi.ll
+; postgres/optimized/functions.ll
+; postgres/optimized/pg_proc.ll
+; postgres/optimized/rangetypes.ll
+; postgres/optimized/slotsync.ll
+; postgres/optimized/spgxlog.ll
+; postgres/optimized/tablecmds.ll
+; postgres/optimized/tidbitmap.ll
+; postgres/optimized/zic.ll
+; qemu/optimized/block_accounting.c.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; re2/optimized/dfa.cc.ll
+; rocksdb/optimized/file_prefetch_buffer.cc.ll
+; rocksdb/optimized/write_batch.cc.ll
+; ruby/optimized/strscan.ll
+; spike/optimized/triggers.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; velox/optimized/ArrayContains.cpp.ll
+; velox/optimized/ArrayPosition.cpp.ll
+; verilator/optimized/V3OrderParallel.cpp.ll
+; verilator/optimized/V3OrderSerial.cpp.ll
+; wireshark/optimized/display_filter_edit.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = select i1 %2, i64 0, i64 %0
+  ret i64 %3
+}
+
+; 58 occurrences:
+; coreutils-rs/optimized/28bc720kv1ca2ji3.ll
+; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
+; coreutils-rs/optimized/2pduk7piyqhwavir.ll
+; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
+; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
+; coreutils-rs/optimized/594a9u59es5pyenu.ll
+; coreutils-rs/optimized/czge978gjagq0cc.ll
+; coreutils-rs/optimized/icw7irkz6mu05a9.ll
+; delta-rs/optimized/11f8x98axanecwnw.ll
+; delta-rs/optimized/11w0at10aiwuq3yr.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/2n0ez5zuwgs53clg.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
+; gromacs/optimized/decidesimulationworkload.cpp.ll
+; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; image-rs/optimized/2s4mh02dvph60euq.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; image-rs/optimized/8143hfqbwzfmz2f.ll
+; image-rs/optimized/ptscn4jakoj4p9m.ll
+; llvm/optimized/ClangAttrEmitter.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
+; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
+; ockam-rs/optimized/14jhibpevwjs778a.ll
+; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
+; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
+; ockam-rs/optimized/8g2r22yshp3qi00.ll
+; openjdk/optimized/management.ll
+; rayon-rs/optimized/3ae21t8w8o4gsmqo.ll
+; ripgrep-rs/optimized/vfmkapehee5qzol.ll
+; rust-analyzer-rs/optimized/10pughc3av63hs2h.ll
+; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
+; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
+; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
+; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
+; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; rust-analyzer-rs/optimized/3lmu0tsslmelo8sk.ll
+; rust-analyzer-rs/optimized/434fzezlnnye3nix.ll
+; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
+; rust-analyzer-rs/optimized/53ntv1pfq7fnns7g.ll
+; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; rust-analyzer-rs/optimized/5cuaio8coq8lvmol.ll
+; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
+; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
+; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
+; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
+; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
+; tls-rs/optimized/z2cy5bf5cayilz9.ll
+; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
+; typst-rs/optimized/18cop7j4xops9f9h.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; wasmtime-rs/optimized/24jxjxhx40nukvhl.ll
+; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = select i1 %2, i64 0, i64 %0
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

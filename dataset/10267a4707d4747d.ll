@@ -1,23 +1,57 @@
 
-; 18 occurrences:
+; 32 occurrences:
+; cpython/optimized/typeobject.ll
+; icu/optimized/uts46.ll
+; llvm/optimized/ConstantFold.cpp.ll
+; llvm/optimized/CriticalAntiDepBreaker.cpp.ll
+; llvm/optimized/DeadStoreElimination.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
+; minetest/optimized/CGUIEnvironment.cpp.ll
+; openmpi/optimized/nbc_iallgather.ll
+; openmpi/optimized/nbc_iallgatherv.ll
+; openmpi/optimized/nbc_iallreduce.ll
+; openmpi/optimized/nbc_ialltoall.ll
+; openmpi/optimized/nbc_ialltoallv.ll
+; openmpi/optimized/nbc_ialltoallw.ll
+; openmpi/optimized/nbc_iexscan.ll
+; openmpi/optimized/nbc_igather.ll
+; openmpi/optimized/nbc_igatherv.ll
+; openmpi/optimized/nbc_ireduce.ll
+; openmpi/optimized/nbc_ireduce_scatter.ll
+; openmpi/optimized/nbc_ireduce_scatter_block.ll
+; openmpi/optimized/nbc_iscan.ll
+; openmpi/optimized/nbc_iscatter.ll
+; openmpi/optimized/nbc_iscatterv.ll
+; openssl/optimized/libcrypto-lib-cms_smime.ll
+; openssl/optimized/libcrypto-shlib-cms_smime.ll
+; php/optimized/zend_jit.ll
+; ruby/optimized/objspace_dump.ll
+; z3/optimized/cmd_context.cpp.ll
+; z3/optimized/qsat.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = icmp eq ptr %1, %0
+  %3 = icmp ne ptr %0, null
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 10 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
-; cpython/optimized/listobject.ll
 ; git/optimized/credential.ll
 ; icu/optimized/locid.ll
-; icu/optimized/ucnv.ll
 ; libevent/optimized/buffer.c.ll
-; luajit/optimized/lib_ffi.ll
-; luajit/optimized/lib_ffi_dyn.ll
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/pl_scanner.ll
 ; postgres/optimized/psqlscan.ll
 ; postgres/optimized/scan.ll
 ; ruby/optimized/cont.ll
-; ruby/optimized/prism.ll
 ; wireshark/optimized/blf.c.ll
-; wireshark/optimized/packet-ssh.c.ll
-; wireshark/optimized/packet-tls-utils.c.ll
-; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
 entry:
@@ -27,59 +61,26 @@ entry:
   ret i1 %4
 }
 
-; 93 occurrences:
+; 1 occurrences:
+; ruby/optimized/io_buffer.ll
+; Function Attrs: nounwind
+define i1 @func000000000000009c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = icmp uge ptr %1, %0
+  %3 = icmp ne ptr %0, null
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 63 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
-; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
-; hyperscan/optimized/asserts.cpp.ll
-; hyperscan/optimized/buildstate.cpp.ll
-; hyperscan/optimized/castlecompile.cpp.ll
-; hyperscan/optimized/dfa_min.cpp.ll
-; hyperscan/optimized/goughcompile.cpp.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
-; hyperscan/optimized/mcsheng_compile.cpp.ll
-; hyperscan/optimized/ng.cpp.ll
-; hyperscan/optimized/ng_asserts.cpp.ll
-; hyperscan/optimized/ng_builder.cpp.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
-; hyperscan/optimized/ng_cyclic_redundancy.cpp.ll
-; hyperscan/optimized/ng_edge_redundancy.cpp.ll
-; hyperscan/optimized/ng_equivalence.cpp.ll
-; hyperscan/optimized/ng_execute.cpp.ll
-; hyperscan/optimized/ng_extparam.cpp.ll
+; faiss/optimized/IndexIVFIndependentQuantizer.cpp.ll
+; git/optimized/mktree.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_fixed_width.cpp.ll
-; hyperscan/optimized/ng_fuzzy.cpp.ll
-; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_limex.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
-; hyperscan/optimized/ng_mcclellan.cpp.ll
-; hyperscan/optimized/ng_misc_opt.cpp.ll
-; hyperscan/optimized/ng_prefilter.cpp.ll
-; hyperscan/optimized/ng_prune.cpp.ll
-; hyperscan/optimized/ng_puff.cpp.ll
-; hyperscan/optimized/ng_redundancy.cpp.ll
-; hyperscan/optimized/ng_region.cpp.ll
-; hyperscan/optimized/ng_repeat.cpp.ll
-; hyperscan/optimized/ng_reports.cpp.ll
-; hyperscan/optimized/ng_small_literal_set.cpp.ll
-; hyperscan/optimized/ng_som.cpp.ll
-; hyperscan/optimized/ng_som_util.cpp.ll
-; hyperscan/optimized/ng_split.cpp.ll
-; hyperscan/optimized/ng_uncalc_components.cpp.ll
-; hyperscan/optimized/ng_utf8.cpp.ll
-; hyperscan/optimized/ng_util.cpp.ll
-; hyperscan/optimized/ng_vacuous.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rdfa_graph.cpp.ll
-; hyperscan/optimized/rdfa_merge.cpp.ll
 ; hyperscan/optimized/report_manager.cpp.ll
-; hyperscan/optimized/rose_build_add.cpp.ll
-; hyperscan/optimized/rose_build_add_mask.cpp.ll
-; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_dedupe.cpp.ll
@@ -93,9 +94,6 @@ entry:
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
-; hyperscan/optimized/shengcompile.cpp.ll
-; hyperscan/optimized/smallwrite_build.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
 ; jemalloc/optimized/extent_dss.ll
 ; jemalloc/optimized/extent_dss.pic.ll
 ; jemalloc/optimized/extent_dss.sym.ll
@@ -105,56 +103,59 @@ entry:
 ; linux/optimized/af_unix.ll
 ; linux/optimized/drm_atomic.ll
 ; linux/optimized/hugetlb.ll
+; linux/optimized/ipmr.ll
 ; linux/optimized/md.ll
 ; linux/optimized/memory-tiers.ll
 ; linux/optimized/memory.ll
+; linux/optimized/sta_info.ll
 ; llama.cpp/optimized/common.cpp.ll
-; oiio/optimized/exif.cpp.ll
-; oiio/optimized/thread.cpp.ll
-; openssl/optimized/libcrypto-lib-ec_mult.ll
-; openssl/optimized/libcrypto-shlib-ec_mult.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/DynamicTypePropagation.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/SemaAccess.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprMember.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; mitsuba3/optimized/class.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/linkResolver.ll
+; openjdk/optimized/memnode.ll
+; openjdk/optimized/objectMonitor.ll
+; openjdk/optimized/virtualspace.ll
 ; openvdb/optimized/Archive.cc.ll
 ; proxygen/optimized/HTTPMessageFilters.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; qemu/optimized/block.c.ll
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; wireshark/optimized/packet-sip.c.ll
+; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp ne ptr %1, %0
-  %3 = icmp ne ptr %0, null
+  %2 = icmp ne ptr %1, null
+  %3 = icmp ne ptr %0, %1
   %4 = and i1 %3, %2
   ret i1 %4
 }
 
-; 19 occurrences:
-; cpython/optimized/typeobject.ll
-; icu/optimized/uts46.ll
-; minetest/optimized/CGUIEnvironment.cpp.ll
-; openmpi/optimized/nbc_iallgather.ll
-; openmpi/optimized/nbc_iallgatherv.ll
-; openmpi/optimized/nbc_iallreduce.ll
-; openmpi/optimized/nbc_ialltoall.ll
-; openmpi/optimized/nbc_ialltoallv.ll
-; openmpi/optimized/nbc_ialltoallw.ll
-; openmpi/optimized/nbc_igather.ll
-; openmpi/optimized/nbc_igatherv.ll
-; openmpi/optimized/nbc_ireduce.ll
-; openmpi/optimized/nbc_ireduce_scatter.ll
-; openmpi/optimized/nbc_ireduce_scatter_block.ll
-; openmpi/optimized/nbc_iscatter.ll
-; openmpi/optimized/nbc_iscatterv.ll
-; openssl/optimized/libcrypto-lib-cms_smime.ll
-; openssl/optimized/libcrypto-shlib-cms_smime.ll
-; qemu/optimized/qom_object.c.ll
+; 5 occurrences:
+; jsonnet/optimized/rapidyaml.cpp.ll
+; openmpi/optimized/libmpi_c_profile_la-accumulate.ll
+; openmpi/optimized/libmpi_c_profile_la-get_accumulate.ll
+; openmpi/optimized/libmpi_c_profile_la-raccumulate.ll
+; openmpi/optimized/libmpi_c_profile_la-rget_accumulate.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
 entry:
-  %2 = icmp eq ptr %1, %0
-  %3 = icmp ne ptr %0, null
+  %2 = icmp ne ptr %1, null
+  %3 = icmp eq ptr %0, %1
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -167,20 +168,6 @@ define i1 @func00000000000000c8(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt ptr %0, %1
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 4 occurrences:
-; openmpi/optimized/libmpi_c_profile_la-accumulate.ll
-; openmpi/optimized/libmpi_c_profile_la-get_accumulate.ll
-; openmpi/optimized/libmpi_c_profile_la-raccumulate.ll
-; openmpi/optimized/libmpi_c_profile_la-rget_accumulate.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
-entry:
-  %2 = icmp ne ptr %1, null
-  %3 = icmp eq ptr %0, %1
   %4 = and i1 %3, %2
   ret i1 %4
 }

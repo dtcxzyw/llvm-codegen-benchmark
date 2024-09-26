@@ -1,36 +1,34 @@
 
-; 1 occurrences:
-; ruby/optimized/parse.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000090(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %2, %1
-  %4 = icmp ugt ptr %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 77 occurrences:
+; 143 occurrences:
+; abc/optimized/aigOper.c.ll
+; abc/optimized/cecSolve.c.ll
+; abc/optimized/cuddAddAbs.c.ll
+; abc/optimized/cuddAndAbs.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddClip.c.ll
-; abc/optimized/cuddSat.c.ll
+; abc/optimized/cuddMatMult.c.ll
+; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/cuddZddFuncs.c.ll
 ; abc/optimized/cuddZddSetop.c.ll
-; abc/optimized/darBalance.c.ll
-; abc/optimized/darLib.c.ll
 ; abc/optimized/extraBddMaxMin.c.ll
 ; abc/optimized/extraBddSet.c.ll
 ; abc/optimized/extraBddSymm.c.ll
-; abseil-cpp/optimized/container_test.cc.ll
-; arrow/optimized/codegen_internal.cc.ll
+; abc/optimized/extraBddTime.c.ll
+; abc/optimized/giaCTas.c.ll
+; annoy/optimized/annoymodule.ll
 ; arrow/optimized/key_value_metadata.cc.ll
-; box2d/optimized/b2_body.cpp.ll
 ; box2d/optimized/b2_fixture.cpp.ll
+; c3c/optimized/sema_expr.c.ll
+; c3c/optimized/types.c.ll
+; ceres/optimized/cgnr_solver.cc.ll
 ; cvc5/optimized/regexp_operation.cpp.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
+; g2o/optimized/hyper_graph.cpp.ll
+; gromacs/optimized/gen_ad.cpp.ll
 ; hermes/optimized/ASTBuilder.cpp.ll
+; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/CommonJS.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
@@ -41,6 +39,45 @@ entry:
 ; linux/optimized/checkpoint.ll
 ; linux/optimized/mpi-div.ll
 ; linux/optimized/scsi_sysfs.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; llvm/optimized/BasicBlockSections.cpp.ll
+; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/BranchRelaxation.cpp.ll
+; llvm/optimized/CSEMIRBuilder.cpp.ll
+; llvm/optimized/ControlHeightReduction.cpp.ll
+; llvm/optimized/DebugProgramInstruction.cpp.ll
+; llvm/optimized/Dominators.cpp.ll
+; llvm/optimized/FuncletLayout.cpp.ll
+; llvm/optimized/IVDescriptors.cpp.ll
+; llvm/optimized/IndVarSimplify.cpp.ll
+; llvm/optimized/InstCombineAndOrXor.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; llvm/optimized/InstCombineShifts.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LiveRangeShrink.cpp.ll
+; llvm/optimized/MIRCanonicalizerPass.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/MachineBlockPlacement.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/MachineLICM.cpp.ll
+; llvm/optimized/MachineScheduler.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/PostRASchedulerList.cpp.ll
+; llvm/optimized/RISCVISAInfo.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SimpleSValBuilder.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/Symbolize.cpp.ll
+; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/WindowScheduler.cpp.ll
+; llvm/optimized/X86WinFixupBufferSecurityCheck.cpp.ll
+; luau/optimized/TypeFamily.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -62,6 +99,28 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
+; opencv/optimized/attr_value.pb.cc.ll
+; opencv/optimized/function.pb.cc.ll
+; opencv/optimized/graph.pb.cc.ll
+; opencv/optimized/tldDetector.cpp.ll
+; opencv/optimized/trackerMedianFlow.cpp.ll
+; openjdk/optimized/addnode.ll
+; openjdk/optimized/c1_Canonicalizer.ll
+; openjdk/optimized/c1_RangeCheckElimination.ll
+; openjdk/optimized/castnode.ll
+; openjdk/optimized/cfgnode.ll
+; openjdk/optimized/ciTypeFlow.ll
+; openjdk/optimized/divnode.ll
+; openjdk/optimized/escape.ll
+; openjdk/optimized/intrinsicnode.ll
+; openjdk/optimized/jvmtiEventController.ll
+; openjdk/optimized/jvmtiThreadState.ll
+; openjdk/optimized/loopnode.ll
+; openjdk/optimized/mathexactnode.ll
+; openjdk/optimized/mulnode.ll
+; openjdk/optimized/shenandoahBarrierSetC2.ll
+; openjdk/optimized/subnode.ll
+; openusd/optimized/copyUtils.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
@@ -69,9 +128,7 @@ entry:
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
-; quickjs/optimized/libbf.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; rocksdb/optimized/range_buffer.cc.ll
 ; ruby/optimized/stringio.ll
 ; verilator/optimized/V3GraphAcyc.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
@@ -82,12 +139,10 @@ entry:
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; yosys/optimized/BigInteger.ll
 ; yosys/optimized/BigUnsigned.ll
-; z3/optimized/bool_rewriter.cpp.ll
 ; z3/optimized/euf_ackerman.cpp.ll
 ; z3/optimized/mbp_arrays.cpp.ll
-; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/spacer_qe_project.cpp.ll
-; z3/optimized/theory_str.cpp.ll
+; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
 entry:
@@ -97,7 +152,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/MachineScheduler.cpp.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
@@ -109,7 +165,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; vcpkg/optimized/commands.set-installed.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
@@ -118,6 +175,52 @@ define i1 @func0000000000000198(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %1
   %4 = icmp ne ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000132(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp uge ptr %2, %1
+  %4 = icmp uge ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/blk-map.ll
+; linux/optimized/hcd.ll
+; openjdk/optimized/mutableNUMASpace.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b0(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ule ptr %2, %1
+  %4 = icmp ugt ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/defNewGeneration.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000092(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %2, %1
+  %4 = icmp uge ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; flatbuffers/optimized/reflection.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000090(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %2, %1
+  %4 = icmp ugt ptr %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -145,36 +248,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; jemalloc/optimized/extent_dss.ll
-; jemalloc/optimized/extent_dss.pic.ll
-; jemalloc/optimized/extent_dss.sym.ll
-; redis/optimized/extent_dss.ll
-; redis/optimized/extent_dss.sym.ll
-; wireshark/optimized/tvbuff_lz77huff.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010a(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ugt ptr %2, %1
-  %4 = icmp ule ptr %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; linux/optimized/blk-map.ll
-; linux/optimized/hcd.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000b0(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ule ptr %2, %1
-  %4 = icmp ugt ptr %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; nix/optimized/daemon.ll
+; 3 occurrences:
+; llvm/optimized/ClangASTNodesEmitter.cpp.ll
+; llvm/optimized/RISCVISAInfo.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000038(ptr %0, ptr %1, ptr %2) #0 {
@@ -192,6 +268,28 @@ define i1 @func0000000000000110(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ugt ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000112(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ugt ptr %2, %1
+  %4 = icmp uge ptr %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b2(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ule ptr %2, %1
+  %4 = icmp uge ptr %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

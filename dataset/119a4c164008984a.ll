@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/unpack-trees.ll
 ; linux/optimized/asymmetric_type.ll
+; llvm/optimized/Darwin.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {

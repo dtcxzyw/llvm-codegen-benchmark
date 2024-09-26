@@ -1,12 +1,15 @@
 
-; 7 occurrences:
+; 10 occurrences:
 ; cmake/optimized/cmLocalGenerator.cxx.ll
-; cvc5/optimized/base_solver.cpp.ll
-; openssl/optimized/libcrypto-lib-v3_akid.ll
-; openssl/optimized/libcrypto-shlib-v3_akid.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/X86CodeGenPassBuilder.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; openjdk/optimized/dfa_x86.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; postgres/optimized/heapam.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; spike/optimized/csrs.ll
+; zxing/optimized/PDFBoundingBox.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

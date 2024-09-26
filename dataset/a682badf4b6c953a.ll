@@ -1,10 +1,15 @@
 
-; 8 occurrences:
+; 13 occurrences:
 ; abc/optimized/cuddZddLin.c.ll
 ; cmake/optimized/connect.c.ll
 ; curl/optimized/libcurl_la-connect.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openjdk/optimized/method.ll
+; openjdk/optimized/reg_split.ll
 ; openssl/optimized/libcrypto-lib-mac_lib.ll
 ; openssl/optimized/libcrypto-shlib-mac_lib.ll
+; proj/optimized/strerrno.cpp.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; slurm/optimized/numa.ll
 ; z3/optimized/special_relations_decl_plugin.cpp.ll

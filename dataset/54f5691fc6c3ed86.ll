@@ -1,0 +1,55 @@
+
+; 7 occurrences:
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; qdrant-rs/optimized/49gep1elv33vxlrq.ll
+; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
+; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, 9216
+  %3 = zext nneg i16 %2 to i32
+  %4 = or disjoint i32 %3, %0
+  ret i32 %4
+}
+
+; 4 occurrences:
+; linux/optimized/icl_dsi.ll
+; linux/optimized/intel_display.ll
+; llvm/optimized/LegacyLegalizerInfo.cpp.ll
+; node/optimized/simdutf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, 1
+  %3 = zext i16 %2 to i32
+  %4 = or disjoint i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; node/optimized/simdutf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, 9216
+  %3 = zext nneg i16 %2 to i32
+  %4 = or disjoint i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; node/optimized/simdutf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, 10240
+  %3 = zext i16 %2 to i32
+  %4 = or i32 %3, %0
+  ret i32 %4
+}
+
+attributes #0 = { nounwind }

@@ -1,13 +1,11 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btSoftBody.ll
 ; hermes/optimized/APFloat.cpp.ll
-; velox/optimized/BaseVector.cpp.ll
-; velox/optimized/Bridge.cpp.ll
-; velox/optimized/IsNull.cpp.ll
-; velox/optimized/Not.cpp.ll
-; velox/optimized/VectorSaver.cpp.ll
+; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

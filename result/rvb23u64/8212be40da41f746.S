@@ -1,0 +1,27 @@
+func0000000000000002:                   # @func0000000000000002
+	bset	a0, zero, a0
+	lui	a1, 262145
+	slli	a1, a1, 2
+	addi	a1, a1, -511
+	and	a0, a0, a1
+	ret
+func0000000000000003:                   # @func0000000000000003
+	bset	a0, zero, a0
+	lui	a1, 790527
+	slli.uw	a1, a1, 15
+	and	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	li	a1, -2
+	sll	a0, a1, a0
+	srliw	a0, a0, 4
+	slli	a0, a0, 4
+	ret
+.LCPI3_0:
+	.quad	-6302637592877692800            # 0xa888888088808880
+func0000000000000000:                   # @func0000000000000000
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
+	sll	a0, a1, a0
+	and	a0, a0, a1
+	ret

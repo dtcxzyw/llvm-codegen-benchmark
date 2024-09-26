@@ -1,7 +1,7 @@
 
 ; 4 occurrences:
 ; icu/optimized/alphaindex.ll
-; linux/optimized/intel_acpi.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; minetest/optimized/CIrrDeviceStub.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,9 @@
 
-; 4 occurrences:
+; 8 occurrences:
+; llvm/optimized/CGCleanup.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; openmpi/optimized/monitoring_test.ll
 ; postgres/optimized/trigger.ll

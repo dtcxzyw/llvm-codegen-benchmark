@@ -1,8 +1,11 @@
 
-; 7 occurrences:
+; 10 occurrences:
+; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
+; llvm/optimized/CGClass.cpp.ll
+; mitsuba3/optimized/dielectric.cpp.ll
 ; z3/optimized/int_gcd_test.cpp.ll
 ; z3/optimized/qe_arith_plugin.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll

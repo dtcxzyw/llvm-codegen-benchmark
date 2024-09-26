@@ -1,11 +1,13 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; linux/optimized/anycast.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/mcast.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
@@ -22,6 +24,20 @@ entry:
 define i1 @func000000000000008c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %1, %2
+  %4 = icmp ne ptr %0, null
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 4 occurrences:
+; llvm/optimized/DWARFContext.cpp.ll
+; llvm/optimized/DWARFDebugLine.cpp.ll
+; llvm/optimized/DWARFDebugMacro.cpp.ll
+; llvm/optimized/GlobalsModRef.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %1, %2
   %4 = icmp ne ptr %0, null
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5

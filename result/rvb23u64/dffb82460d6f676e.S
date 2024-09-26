@@ -1,0 +1,7 @@
+func0000000000000001:                   # @func0000000000000001
+	lui	a2, 15
+	and	a1, a1, a2
+	lui	a2, 4
+	xor	a1, a1, a2
+	czero.eqz	a0, a0, a1
+	ret

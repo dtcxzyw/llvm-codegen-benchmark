@@ -1,9 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	sub	a2, a2, a0
-	lui	a3, 1
-	add	a2, a2, a3
-	bltu	a2, a1, .LBB0_2
-	mv	a2, a1
-.LBB0_2:                                # %entry
-	add	a0, a0, a2
-	ret

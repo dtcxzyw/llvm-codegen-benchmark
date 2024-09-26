@@ -1,0 +1,6 @@
+func0000000000000000:                   # @func0000000000000000
+	add	a0, a0, a1
+	slli	a0, a0, 3
+	li	a1, 64
+	subw	a0, a1, a0
+	ret

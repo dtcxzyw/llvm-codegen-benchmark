@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; openjdk/optimized/gcm.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; spike/optimized/csrs.ll
 ; verilator/optimized/V3Assert.cpp.ll

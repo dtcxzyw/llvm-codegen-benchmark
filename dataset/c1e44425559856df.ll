@@ -1,0 +1,77 @@
+
+; 65 occurrences:
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
+; darktable/optimized/Cr2Decompressor.cpp.ll
+; darktable/optimized/Cr2sRawInterpolator.cpp.ll
+; darktable/optimized/DngOpcodes.cpp.ll
+; darktable/optimized/FujiDecompressor.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; darktable/optimized/KodakDecompressor.cpp.ll
+; darktable/optimized/LJpegDecompressor.cpp.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/PanasonicV7Decompressor.cpp.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_colorin.c.ll
+; darktable/optimized/introspection_colormapping.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_dither.c.ll
+; darktable/optimized/introspection_monochrome.c.ll
+; darktable/optimized/introspection_rawdenoise.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; darktable/optimized/introspection_vibrance.c.ll
+; darktable/optimized/pdf.c.ll
+; darktable/optimized/tethering.c.ll
+; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
+; freetype/optimized/ftsynth.c.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; hyperscan/optimized/engine_hyperscan.cpp.ll
+; hyperscan/optimized/order.cpp.ll
+; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
+; linux/optimized/ibs.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; minetest/optimized/mapnode.cpp.ll
+; minetest/optimized/png.cpp.ll
+; mitsuba3/optimized/rapass.cpp.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; openjdk/optimized/metaspace.ll
+; openjdk/optimized/synchronizer.ll
+; openssl/optimized/libcrypto-lib-cts128.ll
+; openssl/optimized/libcrypto-shlib-cts128.ll
+; openssl/optimized/libdefault-lib-blake2b_prov.ll
+; openssl/optimized/libdefault-lib-blake2s_prov.ll
+; openssl/optimized/libdefault-lib-cipher_cts.ll
+; openssl/optimized/modes_internal_test-bin-modes_internal_test.ll
+; redis/optimized/ltable.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 31
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i64 32, i64 %1
+  ret i64 %3
+}
+
+attributes #0 = { nounwind }

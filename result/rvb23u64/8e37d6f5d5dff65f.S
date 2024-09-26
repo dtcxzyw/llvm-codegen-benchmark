@@ -1,0 +1,69 @@
+func0000000000000003:                   # @func0000000000000003
+	sext.w	a2, a2
+	addi	a2, a2, -16
+	czero.eqz	a1, a1, a2
+	li	a3, 8
+	czero.nez	a2, a3, a2
+	or	a1, a1, a2
+	andi	a0, a0, -75
+	or	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	sext.w	a2, a2
+	slti	a2, a2, 0
+	czero.nez	a0, a0, a2
+	lui	a2, 1048560
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	sext.w	a2, a2
+	lui	a3, 524288
+	addiw	a4, a3, -1
+	xor	a2, a2, a4
+	snez	a2, a2
+	addi	a2, a2, -1
+	and	a1, a1, a3
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000010:                   # @func0000000000000010
+	sext.w	a2, a2
+	sltiu	a2, a2, 8
+	czero.eqz	a1, a1, a2
+	li	a3, 65
+	czero.nez	a2, a3, a2
+	or	a1, a1, a2
+	andi	a0, a0, -1858
+	or	a0, a0, a1
+	ret
+func0000000000000011:                   # @func0000000000000011
+	sext.w	a2, a2
+	lui	a3, 1048320
+	addiw	a3, a3, -1
+	sltu	a2, a3, a2
+	czero.nez	a1, a1, a2
+	slli	a0, a0, 44
+	srli	a0, a0, 44
+	or	a0, a0, a1
+	ret
+func0000000000000015:                   # @func0000000000000015
+	sext.w	a2, a2
+	lui	a3, 8
+	addiw	a3, a3, -641
+	slt	a2, a3, a2
+	czero.nez	a0, a0, a2
+	lui	a3, 129024
+	czero.eqz	a2, a3, a2
+	or	a0, a0, a2
+	slli	a1, a1, 41
+	srli	a1, a1, 41
+	or	a0, a0, a1
+	ret
+func0000000000000009:                   # @func0000000000000009
+	sext.w	a2, a2
+	sltiu	a2, a2, 13
+	czero.nez	a1, a1, a2
+	andi	a0, a0, 32
+	or	a0, a0, a1
+	ret

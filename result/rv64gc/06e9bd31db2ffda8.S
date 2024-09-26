@@ -1,0 +1,7 @@
+func000000000000006c:                   # @func000000000000006c
+	ori	a2, a2, 32
+	srl	a1, a1, a2
+	beqz	a1, .LBB0_2
+	li	a0, 1
+.LBB0_2:                                # %entry
+	ret

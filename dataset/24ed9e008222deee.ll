@@ -1,0 +1,22 @@
+
+; 5 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(float %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = uitofp i8 %2 to float
+  %4 = fdiv float 1.000000e+00, %3
+  %5 = sitofp i32 %1 to float
+  %6 = tail call float @llvm.fmuladd.f32(float %5, float %4, float %0)
+  ret float %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare float @llvm.fmuladd.f32(float, float, float) #1
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

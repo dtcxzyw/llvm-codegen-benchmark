@@ -1,7 +1,15 @@
 
-; 3 occurrences:
+; 11 occurrences:
+; c3c/optimized/llvm_codegen_stmt.c.ll
 ; cpython/optimized/dictobject.ll
+; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
+; llvm/optimized/SymbolGraphSerializer.cpp.ll
+; llvm/optimized/TargetLoweringObjectFile.cpp.ll
+; openspiel/optimized/spiel.cc.ll
+; php/optimized/phpdbg_utils.ll
 ; redis/optimized/redis-cli.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; verilator/optimized/V3Inline.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, ptr %1, i1 %2) #0 {

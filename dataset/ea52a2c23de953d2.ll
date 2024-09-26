@@ -1,0 +1,375 @@
+
+; 98 occurrences:
+; abc/optimized/cecSweep.c.ll
+; cpython/optimized/pyhash.ll
+; folly/optimized/json.cpp.ll
+; jemalloc/optimized/prof_data.ll
+; jemalloc/optimized/prof_data.pic.ll
+; jemalloc/optimized/prof_data.sym.ll
+; linux/optimized/generic.ll
+; linux/optimized/iface.ll
+; linux/optimized/intel_epb.ll
+; linux/optimized/lbr.ll
+; linux/optimized/maple_tree.ll
+; linux/optimized/mmconf-fam10h_64.ll
+; llvm/optimized/ABIInfoImpl.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTDiagnostic.cpp.ll
+; llvm/optimized/ASTStructuralEquivalence.cpp.ll
+; llvm/optimized/CGAtomic.cpp.ll
+; llvm/optimized/CGBlocks.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/CGCoroutine.cpp.ll
+; llvm/optimized/CGDecl.cpp.ll
+; llvm/optimized/CGDeclCXX.cpp.ll
+; llvm/optimized/CGException.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGExprAgg.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
+; llvm/optimized/CGExprComplex.cpp.ll
+; llvm/optimized/CGExprConstant.cpp.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/CGNonTrivialStruct.cpp.ll
+; llvm/optimized/CGObjC.cpp.ll
+; llvm/optimized/CGObjCRuntime.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
+; llvm/optimized/CGStmtOpenMP.cpp.ll
+; llvm/optimized/CodeGenFunction.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/CoreEngine.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DeclPrinter.cpp.ll
+; llvm/optimized/DeclarationFragments.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/ExprMutationAnalyzer.cpp.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MicrosoftMangle.cpp.ll
+; llvm/optimized/ObjCMT.cpp.ll
+; llvm/optimized/QualTypeNames.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
+; llvm/optimized/SemaCast.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprMember.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
+; llvm/optimized/SemaFixItUtils.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaObjC.cpp.ll
+; llvm/optimized/SemaObjCProperty.cpp.ll
+; llvm/optimized/SemaOpenCL.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaPPC.cpp.ll
+; llvm/optimized/SemaSwift.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/StatepointLowering.cpp.ll
+; llvm/optimized/StringChecker.cpp.ll
+; llvm/optimized/TypePrinter.cpp.ll
+; llvm/optimized/UninitializedValues.cpp.ll
+; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; postgres/optimized/gistproc.ll
+; qemu/optimized/hw_char_riscv_htif.c.ll
+; redis/optimized/geohash.ll
+; redis/optimized/prof_data.ll
+; redis/optimized/prof_data.sym.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/parser.ll
+; spike/optimized/csrs.ll
+; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %1, %2
+  %4 = and i64 %3, 1008
+  %5 = or i64 %4, %0
+  ret i64 %5
+}
+
+; 184 occurrences:
+; abc/optimized/AbcGlucose.cpp.ll
+; abc/optimized/AbcGlucose2.cpp.ll
+; abc/optimized/abcCollapse.c.ll
+; abc/optimized/abcDetect.c.ll
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/abcDress3.c.ll
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcFunc.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcHieCec.c.ll
+; abc/optimized/abcHieGia.c.ll
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/abcIf.c.ll
+; abc/optimized/abcIvy.c.ll
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/abcTim.c.ll
+; abc/optimized/abcUtil.c.ll
+; abc/optimized/absDup.c.ll
+; abc/optimized/absGlaOld.c.ll
+; abc/optimized/absOldCex.c.ll
+; abc/optimized/absOut.c.ll
+; abc/optimized/absRef.c.ll
+; abc/optimized/absRpm.c.ll
+; abc/optimized/absRpmOld.c.ll
+; abc/optimized/acbFunc.c.ll
+; abc/optimized/acbTest.c.ll
+; abc/optimized/acbUtil.c.ll
+; abc/optimized/acecCl.c.ll
+; abc/optimized/acecCo.c.ll
+; abc/optimized/acecCore.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/acecNorm.c.ll
+; abc/optimized/acecRe.c.ll
+; abc/optimized/aigObj.c.ll
+; abc/optimized/bacBlast.c.ll
+; abc/optimized/bmcBmcAnd.c.ll
+; abc/optimized/bmcBmcG.c.ll
+; abc/optimized/bmcBmcS.c.ll
+; abc/optimized/bmcBmci.c.ll
+; abc/optimized/bmcCexCare.c.ll
+; abc/optimized/bmcCexCut.c.ll
+; abc/optimized/bmcCexDepth.c.ll
+; abc/optimized/bmcCexMin2.c.ll
+; abc/optimized/bmcCexTools.c.ll
+; abc/optimized/bmcChain.c.ll
+; abc/optimized/bmcEco.c.ll
+; abc/optimized/bmcFault.c.ll
+; abc/optimized/bmcFx.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaxi.c.ll
+; abc/optimized/bmcUnroll.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cecChoice.c.ll
+; abc/optimized/cecCorr.c.ll
+; abc/optimized/cecSat.c.ll
+; abc/optimized/cecSatG.c.ll
+; abc/optimized/cecSatG2.c.ll
+; abc/optimized/cecSatG3.c.ll
+; abc/optimized/cecSweep.c.ll
+; abc/optimized/cecSynth.c.ll
+; abc/optimized/darLib.c.ll
+; abc/optimized/dauGia.c.ll
+; abc/optimized/dauNpn2.c.ll
+; abc/optimized/dauTree.c.ll
+; abc/optimized/extraUtilPath.c.ll
+; abc/optimized/giaAig.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/giaBalLut.c.ll
+; abc/optimized/giaBalMap.c.ll
+; abc/optimized/giaBidec.c.ll
+; abc/optimized/giaBound.c.ll
+; abc/optimized/giaCCof.c.ll
+; abc/optimized/giaCex.c.ll
+; abc/optimized/giaClp.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaEnable.c.ll
+; abc/optimized/giaEquiv.c.ll
+; abc/optimized/giaEsop.c.ll
+; abc/optimized/giaExist.c.ll
+; abc/optimized/giaFalse.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaFront.c.ll
+; abc/optimized/giaFx.c.ll
+; abc/optimized/giaGen.c.ll
+; abc/optimized/giaGig.c.ll
+; abc/optimized/giaHash.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/giaPat2.c.ll
+; abc/optimized/giaQbf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaResub2.c.ll
+; abc/optimized/giaRetime.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/giaScript.c.ll
+; abc/optimized/giaShrink.c.ll
+; abc/optimized/giaShrink6.c.ll
+; abc/optimized/giaSif.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/giaSupp.c.ll
+; abc/optimized/giaSweep.c.ll
+; abc/optimized/giaSweeper.c.ll
+; abc/optimized/giaTim.c.ll
+; abc/optimized/giaTis.c.ll
+; abc/optimized/giaTransduction.cpp.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/giaTtopt.cpp.ll
+; abc/optimized/giaUtil.c.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/ifDelay.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/kitHop.c.ll
+; abc/optimized/mpmAbc.c.ll
+; abc/optimized/saigMiter.c.ll
+; abc/optimized/satSolver2i.c.ll
+; abc/optimized/sbdCore.c.ll
+; abc/optimized/sscCore.c.ll
+; abc/optimized/utilBridge.c.ll
+; abc/optimized/wlcAbs.c.ll
+; abc/optimized/wlcBlast.c.ll
+; abc/optimized/wlnRead.c.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; linux/optimized/generic.ll
+; linux/optimized/io_apic.ll
+; linux/optimized/scsi_scan.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/DeclCXX.cpp.ll
+; llvm/optimized/DynamicTypeChecker.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/FrontendActions.cpp.ll
+; llvm/optimized/LangOptions.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/ObjectFilePCHContainerWriter.cpp.ll
+; llvm/optimized/ParseDeclCXX.cpp.ll
+; llvm/optimized/ParseStmt.cpp.ll
+; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/ReturnPointerRangeChecker.cpp.ll
+; llvm/optimized/SemaStmtAttr.cpp.ll
+; llvm/optimized/TemplateBase.cpp.ll
+; llvm/optimized/USRGeneration.cpp.ll
+; luau/optimized/isocline.c.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; openmpi/optimized/instance.ll
+; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_stream_map.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/geohash.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/hash.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0__Slow.ll
+; spike/optimized/shfli.ll
+; spike/optimized/triggers.ll
+; spike/optimized/unshfli.ll
+; wolfssl/optimized/internal.c.ll
+; yaml-cpp/optimized/stream.cpp.ll
+; z3/optimized/spacer_context.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = and i64 %3, -245761
+  %5 = or disjoint i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; verilator/optimized/V3SplitVar.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = and i64 %3, -16385
+  %5 = or i64 %4, %0
+  ret i64 %5
+}
+
+; 50 occurrences:
+; abc/optimized/bmcCexDepth.c.ll
+; abc/optimized/bmcCexTools.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaEra2.c.ll
+; abc/optimized/saigMiter.c.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; linux/optimized/acpi-cpufreq.ll
+; linux/optimized/apic.ll
+; linux/optimized/centaur.ll
+; linux/optimized/dump_pagetables.ll
+; linux/optimized/intel_pstate.ll
+; linux/optimized/mpih-div.ll
+; linux/optimized/pci.ll
+; linux/optimized/process.ll
+; linux/optimized/set_memory.ll
+; linux/optimized/setup-bus.ll
+; linux/optimized/therm_throt.ll
+; linux/optimized/via-rng.ll
+; linux/optimized/x86_pkg_temp_thermal.ll
+; linux/optimized/zhaoxin.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTDiagnostic.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/IdentifierTable.cpp.ll
+; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/LegalizeVectorTypes.cpp.ll
+; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
+; llvm/optimized/SampleProfileProbe.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprMember.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaPPC.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/samples.cpp.ll
+; postgres/optimized/gistproc.ll
+; redis/optimized/geohash.ll
+; spike/optimized/triggers.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %1, %2
+  %4 = and i64 %3, 16
+  %5 = or disjoint i64 %4, %0
+  ret i64 %5
+}
+
+attributes #0 = { nounwind }

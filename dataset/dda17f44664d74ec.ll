@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 113 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
@@ -60,21 +60,59 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; clamav/optimized/upx.c.ll
 ; entt/optimized/meta_container.cpp.ll
 ; entt/optimized/meta_context.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
 ; flac/optimized/operations_shorthand_picture.c.ll
+; hdf5/optimized/H5Gtraverse.c.ll
 ; icu/optimized/package.ll
 ; libevent/optimized/evutil.c.ll
 ; libquic/optimized/quic_packet_creator.cc.ll
 ; linux/optimized/tcp_input.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/ArchiveWriter.cpp.ll
+; llvm/optimized/BasicBlock.cpp.ll
+; llvm/optimized/Core.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/IVDescriptors.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/InstCombineVectorOps.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/InstructionSimplify.cpp.ll
+; llvm/optimized/LoopInterchange.cpp.ll
+; llvm/optimized/MarkupFilter.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/PHITransAddr.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
+; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
+; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; nuklear/optimized/unity.c.ll
+; opencv/optimized/solvepnp.cpp.ll
+; openjdk/optimized/graphKit.ll
+; openjdk/optimized/heap.ll
+; openjdk/optimized/psScavenge.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/stageSceneIndex.cpp.ll
+; openusd/optimized/testSdfHardToReach.cpp.ll
+; openusd/optimized/testUsdResolverChanged.cpp.ll
+; openusd/optimized/testUsdStageNotification.cpp.ll
 ; php/optimized/iconv.ll
 ; re2/optimized/dfa.cc.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; rocksdb/optimized/db_impl_open.cc.ll
+; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
-; yoga/optimized/CalculateLayout.cpp.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i1 %2) #0 {
 entry:

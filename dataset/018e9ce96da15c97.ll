@@ -1,0 +1,63 @@
+
+; 50 occurrences:
+; arrow/optimized/expression.cc.ll
+; assimp/optimized/3DSConverter.cpp.ll
+; assimp/optimized/ACLoader.cpp.ll
+; assimp/optimized/ASELoader.cpp.ll
+; assimp/optimized/B3DImporter.cpp.ll
+; assimp/optimized/ColladaLoader.cpp.ll
+; assimp/optimized/FBXConverter.cpp.ll
+; assimp/optimized/ObjFileImporter.cpp.ll
+; assimp/optimized/OgreStructs.cpp.ll
+; assimp/optimized/X3DGeoHelper.cpp.ll
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; grpc/optimized/tls_security_connector.cc.ll
+; mitsuba3/optimized/batch.cpp.ll
+; mitsuba3/optimized/regular.cpp.ll
+; mitsuba3/optimized/scene.cpp.ll
+; mitsuba3/optimized/tabphase.cpp.ll
+; opencv/optimized/cascadedetect.cpp.ll
+; opencv/optimized/planar_tracking.cpp.ll
+; quantlib/optimized/abcdcalibration.ll
+; quantlib/optimized/chebyshevinterpolation.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/fdklugeextouspreadengine.ll
+; quantlib/optimized/fdm1dimsolver.ll
+; quantlib/optimized/fdm2dimsolver.ll
+; quantlib/optimized/fdm3dimsolver.ll
+; quantlib/optimized/fdmbermudanstepcondition.ll
+; quantlib/optimized/fdminnervaluecalculator.ll
+; quantlib/optimized/fdmmesherintegral.ll
+; quantlib/optimized/fdmtimedepdirichletboundary.ll
+; quantlib/optimized/fdsimpleklugeextouvppengine.ll
+; quantlib/optimized/g2.ll
+; quantlib/optimized/garch.ll
+; quantlib/optimized/genericlsregression.ll
+; quantlib/optimized/gsr.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/longstaffschwartzmultipathpricer.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/mcpathbasketengine.ll
+; quantlib/optimized/methodoflinesscheme.ll
+; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
+; quantlib/optimized/normalclvmodel.ll
+; quantlib/optimized/parametricexercise.ll
+; quantlib/optimized/polynomialmathfunction.ll
+; quantlib/optimized/sabrinterpolatedsmilesection.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; quantlib/optimized/stochasticcollocationinvcdf.ll
+; quantlib/optimized/sviinterpolatedsmilesection.ll
+; quantlib/optimized/zabr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp ugt i64 %0, 2305843009213693951
+  %6 = select i1 %5, i64 -1, i64 %4
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

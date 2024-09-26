@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; llvm/optimized/SemaDecl.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
 ; verilator/optimized/V3Assert.cpp.ll

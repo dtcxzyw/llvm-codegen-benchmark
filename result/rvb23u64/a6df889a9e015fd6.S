@@ -1,0 +1,62 @@
+func0000000000000014:                   # @func0000000000000014
+	li	a2, -1024
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 1792
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+func000000000000001c:                   # @func000000000000001c
+	li	a2, 255
+	slli	a2, a2, 51
+	czero.eqz	a1, a2, a1
+	bseti	a2, zero, 51
+	add	a1, a1, a2
+	and	a0, a0, a1
+	snez	a0, a0
+	ret
+func0000000000000011:                   # @func0000000000000011
+	li	a2, 255
+	slli	a2, a2, 51
+	czero.eqz	a1, a2, a1
+	bseti	a2, zero, 51
+	add	a1, a1, a2
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000044:                   # @func0000000000000044
+	sltiu	a1, a1, 513
+	li	a2, -56
+	czero.nez	a1, a2, a1
+	addi	a1, a1, -8
+	and	a0, a0, a1
+	sltiu	a0, a0, 513
+	ret
+func0000000000000081:                   # @func0000000000000081
+	sltiu	a1, a1, 3
+	li	a2, 16
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 16
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000084:                   # @func0000000000000084
+	lui	a2, 128
+	sltu	a1, a2, a1
+	lui	a3, 1048480
+	czero.nez	a1, a3, a1
+	addiw	a2, a2, -1
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
+	ret
+func0000000000000088:                   # @func0000000000000088
+	lui	a2, 128
+	sltu	a1, a2, a1
+	lui	a2, 112
+	czero.nez	a1, a2, a1
+	lui	a2, 1048448
+	or	a1, a1, a2
+	and	a0, a0, a1
+	lui	a1, 560
+	sltu	a0, a1, a0
+	ret

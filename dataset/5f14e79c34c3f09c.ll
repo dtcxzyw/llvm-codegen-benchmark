@@ -1,0 +1,18 @@
+
+; 5 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000000(i16 %0, i32 %1) #0 {
+entry:
+  %2 = sitofp i32 %1 to float
+  %3 = fdiv float 1.000000e+00, %2
+  %4 = uitofp i16 %0 to float
+  %5 = fmul float %3, %4
+  ret float %5
+}
+
+attributes #0 = { nounwind }

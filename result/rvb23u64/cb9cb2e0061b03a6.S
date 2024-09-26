@@ -1,0 +1,85 @@
+func000000000000000b:                   # @func000000000000000b
+	slliw	a2, a2, 16
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000000:                   # @func0000000000000000
+	slliw	a2, a2, 24
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000002:                   # @func0000000000000002
+	slliw	a2, a2, 24
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000009:                   # @func0000000000000009
+	slliw	a2, a2, 16
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000003:                   # @func0000000000000003
+	slliw	a2, a2, 24
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000017:                   # @func0000000000000017
+	zext.h	a2, a2
+	slli	a2, a2, 13
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000001f:                   # @func000000000000001f
+	zext.h	a2, a2
+	slli	a2, a2, 13
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000001c:                   # @func000000000000001c
+	slliw	a2, a2, 19
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000001:                   # @func0000000000000001
+	slliw	a2, a2, 21
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000008:                   # @func0000000000000008
+	slliw	a2, a2, 16
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000001e:                   # @func000000000000001e
+	zext.h	a2, a2
+	slli	a2, a2, 8
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000018:                   # @func0000000000000018
+	slliw	a2, a2, 24
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000019:                   # @func0000000000000019
+	slliw	a2, a2, 24
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000000f:                   # @func000000000000000f
+	zext.h	a2, a2
+	slli	a2, a2, 8
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000000d:                   # @func000000000000000d
+	slliw	a2, a2, 16
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000006:                   # @func0000000000000006
+	zext.h	a2, a2
+	slli	a2, a2, 8
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret

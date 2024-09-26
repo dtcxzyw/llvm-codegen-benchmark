@@ -1,8 +1,29 @@
 
-; 4 occurrences:
+; 25 occurrences:
 ; cmake/optimized/testSystemTools.cxx.ll
+; gromacs/optimized/decidesimulationworkload.cpp.ll
+; gromacs/optimized/disre.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; llvm/optimized/Clang.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/NullabilityChecker.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; luau/optimized/TypeInfer.cpp.ll
+; openjdk/optimized/compilerDefinitions.ll
+; proj/optimized/coordinateoperationfactory.cpp.ll
+; quantlib/optimized/china.ll
+; quantlib/optimized/czechrepublic.ll
+; quantlib/optimized/italy.ll
+; quantlib/optimized/romania.ll
+; quantlib/optimized/saudiarabia.ll
+; quantlib/optimized/slovakia.ll
+; quantlib/optimized/unitedstates.ll
 ; redis/optimized/quicklist.ll
+; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
+; yoga/optimized/CalculateLayout.cpp.ll
+; yosys/optimized/qbfsat.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

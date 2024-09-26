@@ -1,0 +1,78 @@
+
+; 3 occurrences:
+; linux/optimized/mmap.ll
+; php/optimized/html.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 1, i64 -1
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i64 0, i64 %3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 12 occurrences:
+; cpython/optimized/unicodeobject.ll
+; eastl/optimized/EAString.cpp.ll
+; just-rs/optimized/53slus9exfz9w045.ll
+; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
+; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
+; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
+; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
+; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; typst-rs/optimized/1mrwywpkq81cby93.ll
+; typst-rs/optimized/481g0nj22rl2z9g.ll
+; typst-rs/optimized/4khbogid70pr8yfn.ll
+; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 -3, i64 -4
+  %4 = icmp ult i32 %1, 2048
+  %5 = select i1 %4, i64 -2, i64 %3
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 4 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; linux/optimized/aspm.ll
+; rust-analyzer-rs/optimized/1gmgjb2cqrqdy4oz.ll
+; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 3, i64 4
+  %4 = icmp ult i32 %1, 2048
+  %5 = select i1 %4, i64 2, i64 %3
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/slub.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 64, i64 68
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i64 0, i64 %3
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/Int128_t.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i64 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 -87, i64 -55
+  %4 = icmp ult i32 %1, 10
+  %5 = select i1 %4, i64 -48, i64 %3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+attributes #0 = { nounwind }

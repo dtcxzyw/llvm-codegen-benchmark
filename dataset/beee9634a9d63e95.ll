@@ -1,0 +1,83 @@
+
+%struct.XHCIInterrupter.2593270 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2593248], i32, i32 }
+%struct.XHCIEvent.2593248 = type { i32, i32, i64, i32, i32, i8, i8 }
+
+; 28 occurrences:
+; abc/optimized/blocksort.c.ll
+; abc/optimized/cmdHist.c.ll
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; cmake/optimized/blocksort.c.ll
+; cvc5/optimized/relevant_domain.cpp.ll
+; git/optimized/kwset.ll
+; git/optimized/pack-write.ll
+; hermes/optimized/MicrosoftDemangle.cpp.ll
+; icu/optimized/package.ll
+; icu/optimized/ucnvisci.ll
+; libjpeg-turbo/optimized/jchuff.c.ll
+; libquic/optimized/pem_lib.c.ll
+; llvm/optimized/RISCVInstPrinter.cpp.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; ocio/optimized/Lut3DOpCPU.cpp.ll
+; opencv/optimized/persistence_types.cpp.ll
+; openjdk/optimized/UnixOperatingSystem.ll
+; openjdk/optimized/childproc.ll
+; openjdk/optimized/freeBlocks.ll
+; openjdk/optimized/jchuff.ll
+; openspiel/optimized/connect_four.cc.ll
+; php/optimized/document.ll
+; php/optimized/php_xmlreader.ll
+; redis/optimized/redis-benchmark.ll
+; slurm/optimized/spank.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -68719476736
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr nusw [720 x i16], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -4294967296
+  %3 = ashr i64 %2, 32
+  %4 = getelementptr [16 x %struct.XHCIInterrupter.2593270], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 6 occurrences:
+; linux/optimized/algboss.ll
+; linux/optimized/dm-table.ll
+; linux/optimized/tg3.ll
+; postgres/optimized/bbstreamer_file.ll
+; postgres/optimized/extension.ll
+; postgres/optimized/partbounds.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967296
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr [16 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 3 occurrences:
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/mesh.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -4294967296
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr nusw [4 x i8], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+attributes #0 = { nounwind }
