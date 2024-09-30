@@ -1,8 +1,8 @@
 func0000000000000014:                   # @func0000000000000014
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a1, a1, 1
-	sh3add	a1, a1, a1
+	slli	a2, a1, 4
+	add	a1, a1, a2
 	sub	sp, sp, a1
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
@@ -32,16 +32,16 @@ func0000000000000014:                   # @func0000000000000014
 	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a0, a0, 1
-	sh3add	a0, a0, a0
+	slli	a1, a0, 4
+	add	a0, a0, a1
 	add	sp, sp, a0
 	addi	sp, sp, 16
 	ret
 func0000000000000012:                   # @func0000000000000012
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a1, a1, 1
-	sh3add	a1, a1, a1
+	slli	a2, a1, 4
+	add	a1, a1, a2
 	sub	sp, sp, a1
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
@@ -71,16 +71,16 @@ func0000000000000012:                   # @func0000000000000012
 	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a0, a0, 1
-	sh3add	a0, a0, a0
+	slli	a1, a0, 4
+	add	a0, a0, a1
 	add	sp, sp, a0
 	addi	sp, sp, 16
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a1, a1, 1
-	sh3add	a1, a1, a1
+	slli	a2, a1, 4
+	add	a1, a1, a2
 	sub	sp, sp, a1
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
@@ -110,16 +110,16 @@ func0000000000000004:                   # @func0000000000000004
 	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a0, a0, 1
-	sh3add	a0, a0, a0
+	slli	a1, a0, 4
+	add	a0, a0, a1
 	add	sp, sp, a0
 	addi	sp, sp, 16
 	ret
 func0000000000000002:                   # @func0000000000000002
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a1, a1, 1
-	sh3add	a1, a1, a1
+	slli	a2, a1, 4
+	add	a1, a1, a2
 	sub	sp, sp, a1
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
@@ -149,8 +149,8 @@ func0000000000000002:                   # @func0000000000000002
 	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a0, a0, 1
-	sh3add	a0, a0, a0
+	slli	a1, a0, 4
+	add	a0, a0, a1
 	add	sp, sp, a0
 	addi	sp, sp, 16
 	ret
