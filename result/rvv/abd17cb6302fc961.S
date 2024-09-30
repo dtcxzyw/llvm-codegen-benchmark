@@ -16,7 +16,7 @@ func00000000000000ed:                   # @func00000000000000ed
 	lui	a0, 718
 	addi	a0, a0, -1183
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmulhu.vx	v9, v9, a0
+	vmulh.vx	v9, v9, a0
 	vadd.vv	v8, v9, v8
 	ret
 func000000000000008d:                   # @func000000000000008d
