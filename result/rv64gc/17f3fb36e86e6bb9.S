@@ -30,6 +30,6 @@ func000000000000000e:                   # @func000000000000000e
 	lui	a2, %hi(.LCPI2_1)
 	ld	a2, %lo(.LCPI2_1)(a2)
 	xor	a0, a0, a1
-	mulh	a0, a0, a2
+	mulhu	a0, a0, a2
 	li	a1, 0
 	ret

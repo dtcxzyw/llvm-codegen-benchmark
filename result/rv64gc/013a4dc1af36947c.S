@@ -18,8 +18,7 @@ func000000000000000e:                   # @func000000000000000e
 	lui	a2, %hi(.LCPI1_1)
 	ld	a2, %lo(.LCPI1_1)(a2)
 	xor	a0, a0, a1
-	mulhu	a1, a0, a2
 	mul	a3, a0, a2
-	mulh	a0, a0, a2
-	xor	a0, a0, a3
+	mulhu	a1, a0, a2
+	xor	a0, a1, a3
 	ret
