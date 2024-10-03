@@ -11,8 +11,7 @@ func0000000000000018:                   # @func0000000000000018
 	li	a2, -1
 	bclri	a2, a2, 52
 	sltu	a1, a2, a1
-	bseti	a2, zero, 51
-	xor	a0, a0, a2
+	binvi	a0, a0, 51
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

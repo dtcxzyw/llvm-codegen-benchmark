@@ -118,8 +118,7 @@ func0000000000000411:                   # @func0000000000000411
 	addiw	a2, a2, 2047
 	sltu	a1, a2, a1
 	add	a0, a0, a1
-	bseti	a1, zero, 63
-	xor	a0, a0, a1
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	ret
 func0000000000000618:                   # @func0000000000000618

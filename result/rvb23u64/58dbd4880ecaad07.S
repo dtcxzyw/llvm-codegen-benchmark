@@ -3,8 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	slli	a0, a0, 49
 	srli	a0, a0, 49
-	lui	a1, 4
-	xor	a0, a0, a1
+	binvi	a0, a0, 14
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051

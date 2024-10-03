@@ -20,8 +20,7 @@ func000000000000006c:                   # @func000000000000006c
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a0, a0
-	lui	a1, 16
-	xor	a1, a1, a0
+	binvi	a1, a0, 16
 	snez	a1, a1
 	slti	a0, a0, 772
 	andn	a0, a1, a0

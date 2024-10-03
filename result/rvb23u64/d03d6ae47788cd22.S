@@ -25,8 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 6
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	bseti	a1, zero, 63
-	xor	a0, a0, a1
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	ret
 .LCPI3_0:

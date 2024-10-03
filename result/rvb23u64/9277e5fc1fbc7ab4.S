@@ -3,8 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	lui	a1, 1536
 	and	a0, a0, a1
-	lui	a1, 1024
-	xor	a0, a0, a1
+	binvi	a0, a0, 22
 	seqz	a0, a0
 	ret
 func0000000000000071:                   # @func0000000000000071

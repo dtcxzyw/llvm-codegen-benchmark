@@ -1,6 +1,5 @@
 func0000000000000011:                   # @func0000000000000011
-	lui	a2, 256
-	xor	a1, a1, a2
+	binvi	a1, a1, 20
 	seqz	a1, a1
 	slli	a1, a1, 20
 	or	a0, a0, a1

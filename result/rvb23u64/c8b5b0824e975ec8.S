@@ -6,8 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 func00000000000000d1:                   # @func00000000000000d1
 	slli	a1, a0, 1
 	addi	a1, a1, -1
-	bseti	a2, zero, 52
-	xor	a0, a0, a2
+	binvi	a0, a0, 52
 	li	a2, -1
 	srli	a2, a2, 10
 	czero.nez	a2, a2, a0

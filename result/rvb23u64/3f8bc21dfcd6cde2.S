@@ -30,8 +30,7 @@ func000000000000000a:                   # @func000000000000000a
 	li	a3, 17
 	slli	a3, a3, 10
 	and	a2, a2, a3
-	lui	a3, 4
-	xor	a2, a2, a3
+	binvi	a2, a2, 14
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

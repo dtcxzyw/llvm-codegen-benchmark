@@ -42,8 +42,7 @@ func0000000000000a28:                   # @func0000000000000a28
 	add	a1, a1, a2
 	srliw	a1, a1, 10
 	sltiu	a1, a1, 13
-	lui	a2, 16
-	xor	a0, a0, a2
+	binvi	a0, a0, 16
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

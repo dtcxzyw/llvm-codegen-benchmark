@@ -468,8 +468,7 @@ func0000000000000704:                   # @func0000000000000704
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
-	lui	a3, 4096
-	xor	a2, a2, a3
+	binvi	a2, a2, 24
 	seqz	a2, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -512,8 +511,7 @@ func0000000000000454:                   # @func0000000000000454
 	sext.w	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
-	lui	a3, 262144
-	xor	a1, a1, a3
+	binvi	a1, a1, 30
 	seqz	a1, a1
 	or	a1, a1, a2
 	slti	a0, a0, 0

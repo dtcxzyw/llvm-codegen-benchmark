@@ -1,6 +1,5 @@
 func0000000000000032:                   # @func0000000000000032
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

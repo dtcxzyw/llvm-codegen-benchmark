@@ -5,8 +5,7 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
-	lui	a2, 4
-	xor	a1, a1, a2
+	binvi	a1, a1, 14
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

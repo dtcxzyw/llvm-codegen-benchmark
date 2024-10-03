@@ -2,8 +2,7 @@ func0000000000000038:                   # @func0000000000000038
 	sext.w	a0, a0
 	lui	a2, 12
 	and	a1, a1, a2
-	lui	a2, 8
-	xor	a1, a1, a2
+	binvi	a1, a1, 15
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -51,8 +50,7 @@ func0000000000000082:                   # @func0000000000000082
 	sext.w	a0, a0
 	lui	a2, 4032
 	and	a1, a1, a2
-	lui	a2, 2048
-	xor	a1, a1, a2
+	binvi	a1, a1, 23
 	seqz	a1, a1
 	sltiu	a0, a0, 10
 	or	a0, a0, a1

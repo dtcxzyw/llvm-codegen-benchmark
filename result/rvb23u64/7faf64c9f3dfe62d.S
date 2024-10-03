@@ -1,15 +1,13 @@
 func0000000000000011:                   # @func0000000000000011
 	addiw	a2, a2, -2
-	bseti	a3, zero, 52
-	xor	a1, a1, a3
+	binvi	a1, a1, 52
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	addiw	a2, a2, 3
-	bseti	a3, zero, 41
-	xor	a1, a1, a3
+	binvi	a1, a1, 41
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

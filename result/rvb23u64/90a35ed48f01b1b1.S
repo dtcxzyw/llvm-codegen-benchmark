@@ -17,8 +17,7 @@ func0000000000000016:                   # @func0000000000000016
 	sext.w	a0, a0
 	lui	a2, 496
 	and	a1, a1, a2
-	lui	a2, 16
-	xor	a1, a1, a2
+	binvi	a1, a1, 16
 	snez	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

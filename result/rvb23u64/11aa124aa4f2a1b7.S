@@ -109,8 +109,7 @@ func00000000000000c6:                   # @func00000000000000c6
 func0000000000000018:                   # @func0000000000000018
 	lui	a2, 15
 	and	a1, a1, a2
-	lui	a2, 8
-	xor	a1, a1, a2
+	binvi	a1, a1, 15
 	seqz	a1, a1
 	srli	a0, a0, 33
 	snez	a0, a0

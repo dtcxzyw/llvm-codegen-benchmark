@@ -45,8 +45,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	lui	a2, 256
-	xor	a0, a0, a2
+	binvi	a0, a0, 20
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

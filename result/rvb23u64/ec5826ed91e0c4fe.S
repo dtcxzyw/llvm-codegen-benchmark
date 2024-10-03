@@ -46,8 +46,7 @@ func00000000000000ca:                   # @func00000000000000ca
 func0000000000000014:                   # @func0000000000000014
 	lui	a2, 15
 	and	a1, a1, a2
-	lui	a2, 8
-	xor	a1, a1, a2
+	binvi	a1, a1, 15
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

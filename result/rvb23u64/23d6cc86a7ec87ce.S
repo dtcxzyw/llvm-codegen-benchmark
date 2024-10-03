@@ -61,8 +61,7 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func000000000000002c:                   # @func000000000000002c
 	addi	a2, a2, 16
-	bseti	a3, zero, 63
-	xor	a1, a1, a3
+	binvi	a1, a1, 63
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

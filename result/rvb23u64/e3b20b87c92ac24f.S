@@ -19,8 +19,7 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000031:                   # @func0000000000000031
 	lui	a1, 4080
 	and	a0, a0, a1
-	lui	a1, 32
-	xor	a0, a0, a1
+	binvi	a0, a0, 17
 	lui	a1, 128
 	czero.nez	a0, a1, a0
 	ori	a0, a0, 1100

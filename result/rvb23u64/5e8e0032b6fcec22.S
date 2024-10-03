@@ -11,8 +11,7 @@ func0000000000000502:                   # @func0000000000000502
 func0000000000000582:                   # @func0000000000000582
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 16
-	xor	a2, a2, a1
+	binvi	a2, a1, 16
 	seqz	a2, a2
 	slti	a1, a1, 772
 	seqz	a0, a0
@@ -22,8 +21,7 @@ func0000000000000582:                   # @func0000000000000582
 func0000000000000598:                   # @func0000000000000598
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 16
-	xor	a2, a2, a1
+	binvi	a2, a1, 16
 	seqz	a2, a2
 	slti	a1, a1, 772
 	snez	a0, a0

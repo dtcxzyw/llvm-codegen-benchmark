@@ -18,8 +18,7 @@ func0000000000000187:                   # @func0000000000000187
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	seqz	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

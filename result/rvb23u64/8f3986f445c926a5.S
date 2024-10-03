@@ -1,6 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	bseti	a1, zero, 63
-	xor	a0, a0, a1
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	addi	a0, a0, -1
 	ret

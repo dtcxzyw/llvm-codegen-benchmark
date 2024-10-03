@@ -2,8 +2,7 @@ func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 254
 	or	a0, a0, a1
 	zext.h	a0, a0
-	lui	a1, 8
-	xor	a0, a0, a1
+	binvi	a0, a0, 15
 	seqz	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034

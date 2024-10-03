@@ -22,16 +22,14 @@ func0000000000000022:                   # @func0000000000000022
 func000000000000002c:                   # @func000000000000002c
 	addi	a2, a2, 2
 	slt	a0, a0, a2
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 func00000000000000c2:                   # @func00000000000000c2
 	addi	a2, a2, 7
 	slt	a1, a1, a2
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

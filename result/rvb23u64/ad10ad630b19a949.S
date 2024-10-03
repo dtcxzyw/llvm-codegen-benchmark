@@ -41,9 +41,8 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a3, 48
 	and	a2, a2, a3
 	snez	a2, a2
-	bseti	a3, zero, 63
-	xor	a1, a1, a3
+	binvi	a1, a1, 63
 	seqz	a1, a1
-	and	a1, a1, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret

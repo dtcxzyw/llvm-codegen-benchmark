@@ -10,8 +10,7 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a2, a2
-	lui	a3, 4
-	xor	a2, a2, a3
+	binvi	a2, a2, 14
 	seqz	a2, a2
 	slli	a2, a2, 18
 	andi	a0, a0, 512

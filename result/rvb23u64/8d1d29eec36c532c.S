@@ -15,8 +15,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	li	a2, 3
 	slli	a2, a2, 11
 	and	a1, a1, a2
-	lui	a2, 1
-	xor	a1, a1, a2
+	binvi	a1, a1, 12
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -25,8 +24,7 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	lui	a2, 65520
 	and	a1, a1, a2
-	lui	a2, 16
-	xor	a1, a1, a2
+	binvi	a1, a1, 16
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

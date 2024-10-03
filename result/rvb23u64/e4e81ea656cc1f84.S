@@ -33,8 +33,7 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000000c:                   # @func000000000000000c
 	zext.h	a0, a0
-	lui	a1, 8
-	xor	a0, a0, a1
+	binvi	a0, a0, 15
 	snez	a0, a0
 	ret
 func00000000000000c4:                   # @func00000000000000c4

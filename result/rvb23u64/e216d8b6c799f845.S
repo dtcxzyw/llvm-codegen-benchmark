@@ -15,8 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000005:                   # @func0000000000000005
 	lui	a3, 15
 	and	a2, a2, a3
-	lui	a3, 2
-	xor	a2, a2, a3
+	binvi	a2, a2, 13
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1

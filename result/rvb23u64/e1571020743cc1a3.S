@@ -8,8 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000030:                   # @func0000000000000030
 	srliw	a2, a2, 23
 	slli	a2, a2, 23
-	lui	a3, 16384
-	xor	a2, a2, a3
+	binvi	a2, a2, 26
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

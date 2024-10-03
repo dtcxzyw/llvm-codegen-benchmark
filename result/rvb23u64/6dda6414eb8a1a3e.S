@@ -25,8 +25,7 @@ func0000000000000011:                   # @func0000000000000011
 func00000000000000c1:                   # @func00000000000000c1
 	zext.h	a0, a0
 	snez	a1, a1
-	lui	a2, 4
-	xor	a0, a0, a2
+	binvi	a0, a0, 14
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

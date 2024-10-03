@@ -60,8 +60,7 @@ func0000000000001102:                   # @func0000000000001102
 	sltiu	a1, a1, 25
 	sltiu	a2, a0, 75
 	or	a1, a1, a2
-	lui	a2, 2
-	xor	a0, a0, a2
+	binvi	a0, a0, 13
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

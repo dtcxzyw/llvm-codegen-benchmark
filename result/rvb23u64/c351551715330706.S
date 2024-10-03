@@ -61,9 +61,9 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a3, 65536
-	addiw	a4, a3, 32
-	and	a2, a2, a4
-	xor	a2, a2, a3
+	addiw	a3, a3, 32
+	and	a2, a2, a3
+	binvi	a2, a2, 28
 	seqz	a2, a2
 	slt	a0, a1, a0
 	or	a0, a0, a2

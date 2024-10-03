@@ -1,7 +1,6 @@
 func0000000000000086:                   # @func0000000000000086
 	addi	a1, a1, 48
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
 	ret

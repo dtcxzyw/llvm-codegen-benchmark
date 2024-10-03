@@ -4,8 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

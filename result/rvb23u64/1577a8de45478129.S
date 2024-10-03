@@ -5,8 +5,7 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a1, a1, a0
 	slli	a0, a0, 12
 	srli	a0, a0, 12
-	bseti	a2, zero, 51
-	xor	a0, a0, a2
+	binvi	a0, a0, 51
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

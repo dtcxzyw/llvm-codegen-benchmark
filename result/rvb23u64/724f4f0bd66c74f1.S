@@ -10,8 +10,7 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a3, a3, 32
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	bseti	a3, zero, 48
-	xor	a2, a2, a3
+	binvi	a2, a2, 48
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

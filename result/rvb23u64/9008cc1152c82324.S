@@ -19,8 +19,7 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, 8
 	ret
 func0000000000000004:                   # @func0000000000000004
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

@@ -3,8 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a3, 16
 	addiw	a3, a3, -256
 	and	a2, a2, a3
-	lui	a3, 2
-	xor	a1, a1, a3
+	binvi	a1, a1, 13
 	czero.nez	a1, a2, a1
 	bclri	a0, a0, 29
 	or	a0, a0, a1

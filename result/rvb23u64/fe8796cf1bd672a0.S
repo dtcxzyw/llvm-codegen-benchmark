@@ -24,8 +24,7 @@ func0000000000000089:                   # @func0000000000000089
 	xori	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	czero.eqz	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

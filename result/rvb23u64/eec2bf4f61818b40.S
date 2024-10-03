@@ -20,8 +20,7 @@ func0000000000000038:                   # @func0000000000000038
 	and	a2, a2, a3
 	addi	a2, a2, -1536
 	seqz	a2, a2
-	lui	a3, 256
-	xor	a1, a1, a3
+	binvi	a1, a1, 20
 	snez	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2

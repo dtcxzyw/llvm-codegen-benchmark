@@ -146,8 +146,7 @@ func0000000000000184:                   # @func0000000000000184
 	ret
 func000000000000002d:                   # @func000000000000002d
 	sext.w	a2, a2
-	lui	a3, 16
-	xor	a2, a2, a3
+	binvi	a2, a2, 16
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

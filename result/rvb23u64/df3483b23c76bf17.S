@@ -39,8 +39,7 @@ func0000000000000198:                   # @func0000000000000198
 func0000000000000038:                   # @func0000000000000038
 	addi	a1, a1, -1
 	seqz	a1, a1
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

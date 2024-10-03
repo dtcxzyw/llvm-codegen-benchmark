@@ -7,8 +7,7 @@ func000000000000002c:                   # @func000000000000002c
 	addiw	a3, a3, 1024
 	xor	a2, a2, a3
 	seqz	a2, a2
-	lui	a3, 256
-	xor	a0, a0, a3
+	binvi	a0, a0, 20
 	snez	a0, a0
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -17,8 +16,7 @@ func000000000000018c:                   # @func000000000000018c
 	sext.w	a0, a0
 	lui	a3, 320
 	and	a2, a2, a3
-	lui	a3, 256
-	xor	a2, a2, a3
+	binvi	a2, a2, 20
 	snez	a2, a2
 	snez	a0, a0
 	or	a0, a0, a1

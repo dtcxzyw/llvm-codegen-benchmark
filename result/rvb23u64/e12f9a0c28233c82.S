@@ -5,8 +5,7 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func000000000000002c:                   # @func000000000000002c
 	andi	a1, a1, 1
-	bseti	a2, zero, 33
-	xor	a0, a0, a2
+	binvi	a0, a0, 33
 	seqz	a0, a0
 	sh2add	a0, a0, a1
 	ret

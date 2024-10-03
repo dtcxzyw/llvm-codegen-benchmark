@@ -8,8 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	srli	a0, a0, 32
 	czero.eqz	a0, a0, a1
 	lui	a2, 262144

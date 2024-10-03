@@ -136,8 +136,7 @@ func00000000000000a6:                   # @func00000000000000a6
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 262144
-	xor	a1, a1, a2
+	binvi	a1, a1, 30
 	seqz	a1, a1
 	slti	a0, a0, 0
 	andn	a0, a1, a0

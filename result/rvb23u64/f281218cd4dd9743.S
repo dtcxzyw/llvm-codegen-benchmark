@@ -6,8 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	li	a2, -63
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 108
-	lui	a2, 4
-	xor	a0, a0, a2
+	binvi	a0, a0, 14
 	czero.eqz	a1, a1, a0
 	li	a2, 100
 	czero.nez	a0, a2, a0

@@ -6,8 +6,7 @@ func0000000000000388:                   # @func0000000000000388
 	ret
 func000000000000011c:                   # @func000000000000011c
 	add	a1, a1, a2
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

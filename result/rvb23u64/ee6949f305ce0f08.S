@@ -298,8 +298,7 @@ func0000000000000081:                   # @func0000000000000081
 func000000000000006c:                   # @func000000000000006c
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 16
-	xor	a1, a1, a2
+	binvi	a1, a1, 16
 	snez	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1

@@ -17,8 +17,7 @@ func0000000000000031:                   # @func0000000000000031
 func0000000000000034:                   # @func0000000000000034
 	lui	a3, 7
 	and	a2, a2, a3
-	lui	a3, 2
-	xor	a2, a2, a3
+	binvi	a2, a2, 13
 	czero.nez	a1, a1, a2
 	sext.w	a1, a1
 	sltu	a0, a0, a1

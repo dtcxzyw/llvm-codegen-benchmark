@@ -41,8 +41,7 @@ func000000000000188c:                   # @func000000000000188c
 	srli	a1, a1, 62
 	sltiu	a1, a1, 3
 	or	a1, a1, a2
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

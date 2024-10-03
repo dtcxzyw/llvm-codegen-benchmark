@@ -7,8 +7,7 @@ func00000000000000cc:                   # @func00000000000000cc
 func000000000000001c:                   # @func000000000000001c
 	lui	a2, 768
 	and	a1, a1, a2
-	lui	a2, 256
-	xor	a1, a1, a2
+	binvi	a1, a1, 20
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

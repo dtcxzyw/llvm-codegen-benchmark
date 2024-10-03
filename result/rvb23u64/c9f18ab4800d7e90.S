@@ -20,16 +20,15 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	lui	a3, 4
-	xor	a3, a3, a2
+	binvi	a3, a2, 14
 	seqz	a3, a3
 	slliw	a3, a3, 31
 	lui	a4, 10
 	xor	a2, a2, a4
-	czero.eqz	a3, a3, a2
 	lui	a4, 8192
-	czero.nez	a2, a4, a2
-	or	a2, a2, a3
+	czero.nez	a4, a4, a2
+	czero.eqz	a2, a3, a2
+	or	a2, a2, a4
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

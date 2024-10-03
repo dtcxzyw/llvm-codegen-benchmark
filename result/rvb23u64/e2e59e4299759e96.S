@@ -8,8 +8,7 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
-	lui	a2, 16
-	xor	a2, a2, a1
+	binvi	a2, a1, 16
 	seqz	a2, a2
 	slti	a1, a1, 772
 	or	a0, a0, a1

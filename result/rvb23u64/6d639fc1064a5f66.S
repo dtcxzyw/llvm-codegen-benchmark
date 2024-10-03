@@ -25,8 +25,7 @@ func0000000000000022:                   # @func0000000000000022
 func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	sext.w	a2, a2
-	lui	a3, 16
-	xor	a2, a2, a3
+	binvi	a2, a2, 16
 	snez	a2, a2
 	slti	a1, a1, 0
 	xori	a1, a1, 1

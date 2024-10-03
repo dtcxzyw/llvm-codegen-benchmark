@@ -70,8 +70,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	neg	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
-	lui	a2, 1
-	xor	a0, a0, a2
+	binvi	a0, a0, 12
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

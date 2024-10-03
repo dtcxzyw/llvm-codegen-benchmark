@@ -12,8 +12,7 @@ func0000000000000063:                   # @func0000000000000063
 	add	a0, a0, a1
 	ret
 func0000000000000061:                   # @func0000000000000061
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	snez	a1, a1
 	add	a0, a0, a1
 	ret

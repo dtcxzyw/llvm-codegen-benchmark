@@ -9,8 +9,7 @@ func00000000000000c3:                   # @func00000000000000c3
 	add	a0, a0, a1
 	ret
 func00000000000000c7:                   # @func00000000000000c7
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	snez	a1, a1
 	srli	a0, a0, 3
 	lui	a2, 699051

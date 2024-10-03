@@ -10,8 +10,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a0, a0
 	srlw	a1, a1, a2
 	sltiu	a1, a1, 5
-	lui	a2, 64
-	xor	a0, a0, a2
+	binvi	a0, a0, 18
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

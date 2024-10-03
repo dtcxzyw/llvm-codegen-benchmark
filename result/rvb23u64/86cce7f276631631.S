@@ -14,8 +14,7 @@ func0000000000000082:                   # @func0000000000000082
 	srli	a2, a2, 62
 	sltiu	a2, a2, 3
 	and	a1, a1, a2
-	lui	a2, 8
-	xor	a0, a0, a2
+	binvi	a0, a0, 15
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

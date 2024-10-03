@@ -52,11 +52,10 @@ func0000000000002842:                   # @func0000000000002842
 	sext.w	a2, a2
 	sgtz	a2, a2
 	seqz	a1, a1
-	bseti	a3, zero, 32
-	xor	a0, a0, a3
+	binvi	a0, a0, 32
 	seqz	a0, a0
-	or	a1, a1, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func000000000000198c:                   # @func000000000000198c
 	sext.w	a2, a2

@@ -59,8 +59,7 @@ func000000000000002b:                   # @func000000000000002b
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
-	lui	a2, 262144
-	xor	a1, a1, a2
+	binvi	a1, a1, 30
 	czero.eqz	a0, a0, a1
 	negw	a0, a0
 	ret

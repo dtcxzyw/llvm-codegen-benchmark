@@ -22,10 +22,9 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 255
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	seqz	a2, a2
+	and	a0, a0, a2
 	sltiu	a1, a1, 2
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret

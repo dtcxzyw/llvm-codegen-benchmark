@@ -8,8 +8,7 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000011:                   # @func0000000000000011
 	neg	a1, a1
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	czero.eqz	a1, a1, a0
 	li	a2, 31
 	czero.nez	a0, a2, a0

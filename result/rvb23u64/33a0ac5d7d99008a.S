@@ -22,8 +22,7 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000141:                   # @func0000000000000141
 	addiw	a1, a1, -7
 	sltiu	a1, a1, -2
-	lui	a2, 16
-	xor	a0, a0, a2
+	binvi	a0, a0, 16
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

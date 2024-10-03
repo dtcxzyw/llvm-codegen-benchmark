@@ -13,8 +13,7 @@ func000000000000185a:                   # @func000000000000185a
 	xori	a0, a0, 1
 	ret
 func000000000000025a:                   # @func000000000000025a
-	bseti	a3, zero, 53
-	xor	a2, a2, a3
+	binvi	a2, a2, 53
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

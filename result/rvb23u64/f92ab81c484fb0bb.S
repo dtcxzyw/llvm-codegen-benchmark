@@ -14,10 +14,9 @@ func00000000000000c6:                   # @func00000000000000c6
 	xor	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	seqz	a1, a1
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

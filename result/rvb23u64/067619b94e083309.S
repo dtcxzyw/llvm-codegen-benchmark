@@ -7,8 +7,7 @@ func0000000000000022:                   # @func0000000000000022
 	addi	a0, a0, 514
 	ret
 func0000000000000038:                   # @func0000000000000038
-	lui	a2, 4096
-	xor	a1, a1, a2
+	binvi	a1, a1, 24
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

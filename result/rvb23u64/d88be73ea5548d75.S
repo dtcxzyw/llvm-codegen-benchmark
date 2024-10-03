@@ -51,8 +51,7 @@ func0000000000002190:                   # @func0000000000002190
 	or	a0, a0, a1
 	ret
 func0000000000003058:                   # @func0000000000003058
-	bseti	a3, zero, 50
-	xor	a1, a1, a3
+	binvi	a1, a1, 50
 	seqz	a1, a1
 	or	a0, a0, a2
 	sext.w	a0, a0
@@ -87,8 +86,7 @@ func0000000000003042:                   # @func0000000000003042
 	addi	a2, a2, -1
 	snez	a2, a2
 	seqz	a1, a1
-	lui	a3, 1024
-	xor	a0, a0, a3
+	binvi	a0, a0, 22
 	seqz	a0, a0
 	or	a1, a1, a2
 	or	a0, a0, a1

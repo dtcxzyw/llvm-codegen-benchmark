@@ -109,8 +109,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a0, a0
 	srliw	a1, a1, 30
 	seqz	a1, a1
-	lui	a2, 262144
-	xor	a0, a0, a2
+	binvi	a0, a0, 30
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

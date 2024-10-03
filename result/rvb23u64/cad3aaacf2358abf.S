@@ -2,8 +2,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a2, 3
 	slli	a2, a2, 11
 	and	a1, a1, a2
-	lui	a2, 1
-	xor	a1, a1, a2
+	binvi	a1, a1, 12
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

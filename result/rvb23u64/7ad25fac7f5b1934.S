@@ -73,10 +73,9 @@ func0000000000000218:                   # @func0000000000000218
 func0000000000000304:                   # @func0000000000000304
 	sext.w	a2, a2
 	snez	a2, a2
-	bseti	a3, zero, 50
-	xor	a1, a1, a3
+	binvi	a1, a1, 50
 	seqz	a1, a1
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000284:                   # @func0000000000000284

@@ -75,8 +75,7 @@ func000000000000009c:                   # @func000000000000009c
 func0000000000000091:                   # @func0000000000000091
 	lui	a3, 192
 	and	a2, a2, a3
-	lui	a3, 64
-	xor	a2, a2, a3
+	binvi	a2, a2, 18
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

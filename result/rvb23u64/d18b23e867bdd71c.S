@@ -3,8 +3,7 @@ func0000000000000038:                   # @func0000000000000038
 	lui	a2, 1044481
 	slli	a2, a2, 39
 	and	a1, a1, a2
-	bseti	a2, zero, 51
-	xor	a1, a1, a2
+	binvi	a1, a1, 51
 	seqz	a1, a1
 	li	a2, 2047
 	slli	a2, a2, 52

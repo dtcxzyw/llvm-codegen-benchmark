@@ -9,10 +9,9 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	sext.w	a2, a2
-	lui	a3, 4
-	xor	a2, a2, a3
+	binvi	a2, a2, 14
 	seqz	a2, a2
-	xor	a1, a1, a3
+	binvi	a1, a1, 14
 	seqz	a1, a1
 	xor	a1, a1, a2
 	and	a0, a0, a1

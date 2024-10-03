@@ -15,8 +15,7 @@ func0000000000000051:                   # @func0000000000000051
 	li	a2, 1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	bseti	a1, zero, 63
-	xor	a0, a0, a1
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8

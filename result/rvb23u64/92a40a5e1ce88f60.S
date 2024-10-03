@@ -105,8 +105,7 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	add	a1, a1, a2
-	lui	a2, 1
-	xor	a1, a1, a2
+	binvi	a1, a1, 12
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

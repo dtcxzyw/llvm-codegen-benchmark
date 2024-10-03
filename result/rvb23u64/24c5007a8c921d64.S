@@ -14,8 +14,7 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a2
 	ret
 func0000000000000081:                   # @func0000000000000081
-	bseti	a3, zero, 63
-	xor	a0, a0, a3
+	binvi	a0, a0, 63
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -62,8 +61,7 @@ func0000000000000031:                   # @func0000000000000031
 func00000000000000ac:                   # @func00000000000000ac
 	addi	a2, a2, 16
 	addi	a1, a1, 840
-	bseti	a3, zero, 63
-	xor	a0, a0, a3
+	binvi	a0, a0, 63
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

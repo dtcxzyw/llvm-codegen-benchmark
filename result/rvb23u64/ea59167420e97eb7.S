@@ -6,8 +6,7 @@ func000000000000018a:                   # @func000000000000018a
 	ret
 func000000000000002a:                   # @func000000000000002a
 	sext.w	a1, a1
-	lui	a2, 128
-	xor	a1, a1, a2
+	binvi	a1, a1, 19
 	seqz	a1, a1
 	sh3add	a1, a1, a1
 	sh3add	a0, a1, a0

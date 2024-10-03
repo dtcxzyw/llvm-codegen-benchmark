@@ -2,8 +2,7 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	lui	a2, 768
 	and	a1, a1, a2
-	lui	a2, 256
-	xor	a1, a1, a2
+	binvi	a1, a1, 20
 	seqz	a1, a1
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1

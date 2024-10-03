@@ -11,8 +11,7 @@ func0000000000000241:                   # @func0000000000000241
 	sltu	a0, a2, a0
 	srliw	a1, a1, 27
 	slli	a1, a1, 27
-	lui	a2, 65536
-	xor	a1, a1, a2
+	binvi	a1, a1, 28
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

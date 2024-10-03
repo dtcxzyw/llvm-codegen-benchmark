@@ -15,12 +15,12 @@ func00000000000000e1:                   # @func00000000000000e1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	lui	a2, 1
-	addiw	a3, a2, -1
-	add	a1, a1, a3
-	lui	a3, 1023
-	and	a1, a1, a3
+	addiw	a2, a2, -1
+	add	a1, a1, a2
+	lui	a2, 1023
+	and	a1, a1, a2
 	sub	a0, a0, a1
-	xor	a0, a0, a2
+	binvi	a0, a0, 12
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008

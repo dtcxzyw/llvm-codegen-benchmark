@@ -24,8 +24,7 @@ func0000000000000122:                   # @func0000000000000122
 func00000000000000e2:                   # @func00000000000000e2
 	slt	a1, a2, a1
 	xori	a1, a1, 1
-	lui	a2, 256
-	xor	a0, a0, a2
+	binvi	a0, a0, 20
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -110,8 +109,7 @@ func000000000000008a:                   # @func000000000000008a
 	or	a0, a0, a2
 	ret
 func0000000000000030:                   # @func0000000000000030
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2

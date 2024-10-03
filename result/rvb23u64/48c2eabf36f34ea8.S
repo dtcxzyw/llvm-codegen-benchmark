@@ -12,7 +12,6 @@ func0000000000000061:                   # @func0000000000000061
 	srlw	a0, a0, a2
 	slli	a0, a0, 50
 	srli	a0, a0, 50
-	lui	a1, 1
-	xor	a0, a0, a1
+	binvi	a0, a0, 12
 	seqz	a0, a0
 	ret

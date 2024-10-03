@@ -38,8 +38,7 @@ func0000000000000014:                   # @func0000000000000014
 	srli	a2, a2, 1
 	add	a1, a1, a2
 	sltiu	a1, a1, 2
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

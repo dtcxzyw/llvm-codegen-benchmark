@@ -66,8 +66,7 @@ func0000000000000054:                   # @func0000000000000054
 	lui	a3, 266240
 	addiw	a3, a3, -1
 	and	a0, a0, a3
-	lui	a3, 262144
-	xor	a0, a0, a3
+	binvi	a0, a0, 30
 	seqz	a0, a0
 	slti	a2, a2, 0
 	xori	a2, a2, 1

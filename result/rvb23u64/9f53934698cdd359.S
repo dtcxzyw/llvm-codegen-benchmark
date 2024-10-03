@@ -84,8 +84,7 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func000000000000000a:                   # @func000000000000000a
 	zext.h	a1, a1
-	lui	a2, 8
-	xor	a1, a1, a2
+	binvi	a1, a1, 15
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
