@@ -8,8 +8,7 @@ func00000000000000cc:                   # @func00000000000000cc
 func000000000000021c:                   # @func000000000000021c
 	not	a1, a1
 	bexti	a1, a1, 19
-	bseti	a2, zero, 33
-	xor	a0, a0, a2
+	binvi	a0, a0, 33
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

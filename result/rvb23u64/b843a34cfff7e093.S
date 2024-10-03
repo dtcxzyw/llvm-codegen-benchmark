@@ -11,7 +11,6 @@ func000000000000003c:                   # @func000000000000003c
 	lui	a1, 1048064
 	srli	a1, a1, 12
 	and	a0, a0, a1
-	bseti	a1, zero, 51
-	xor	a0, a0, a1
+	binvi	a0, a0, 51
 	snez	a0, a0
 	ret

@@ -28,8 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1
 	slli	a1, a1, 13
 	or	a1, a1, a2
-	bseti	a2, zero, 33
-	xor	a0, a0, a2
+	binvi	a0, a0, 33
 	seqz	a0, a0
 	slli	a0, a0, 14
 	or	a0, a0, a1

@@ -15,8 +15,7 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a2, a2
-	lui	a3, 16384
-	xor	a2, a2, a3
+	binvi	a2, a2, 26
 	seqz	a2, a2
 	and	a1, a1, a2
 	slli	a1, a1, 8

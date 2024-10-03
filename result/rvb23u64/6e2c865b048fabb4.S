@@ -3,7 +3,6 @@ func0000000000000111:                   # @func0000000000000111
 	snez	a1, a1
 	slli	a1, a1, 52
 	or	a0, a0, a1
-	bseti	a1, zero, 52
-	xor	a0, a0, a1
+	binvi	a0, a0, 52
 	seqz	a0, a0
 	ret

@@ -85,8 +85,7 @@ func00000000000000cc:                   # @func00000000000000cc
 func000000000000018c:                   # @func000000000000018c
 	sext.w	a0, a0
 	sext.w	a2, a2
-	lui	a3, 256
-	xor	a2, a2, a3
+	binvi	a2, a2, 20
 	snez	a2, a2
 	snez	a0, a0
 	or	a0, a0, a1

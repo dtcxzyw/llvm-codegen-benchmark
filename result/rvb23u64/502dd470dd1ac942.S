@@ -48,8 +48,7 @@ func0000000000000241:                   # @func0000000000000241
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	lui	a2, 16
-	xor	a0, a0, a2
+	binvi	a0, a0, 16
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

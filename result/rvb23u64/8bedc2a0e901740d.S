@@ -19,8 +19,7 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 3
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	czero.eqz	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011

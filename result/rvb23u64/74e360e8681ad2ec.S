@@ -36,8 +36,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	bexti	a2, a2, 2
 	and	a1, a1, a2
-	lui	a2, 16384
-	xor	a0, a0, a2
+	binvi	a0, a0, 26
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -11,8 +11,7 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
 	lui	a3, 15
 	and	a2, a2, a3
-	lui	a3, 4
-	xor	a2, a2, a3
+	binvi	a2, a2, 14
 	czero.eqz	a1, a1, a2
 	li	a3, 2
 	czero.nez	a2, a3, a2

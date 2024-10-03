@@ -1,8 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	bclri	a2, a2, 20
 	bclri	a2, a2, 21
-	lui	a3, 256
-	xor	a1, a1, a3
+	binvi	a1, a1, 20
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

@@ -1,8 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	lui	a3, 4
-	xor	a2, a2, a3
+	binvi	a2, a2, 14
 	seqz	a2, a2
 	slliw	a2, a2, 31
 	lui	a3, 8192

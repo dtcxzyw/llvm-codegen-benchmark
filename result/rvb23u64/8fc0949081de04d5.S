@@ -15,8 +15,7 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000011:                   # @func0000000000000011
 	fcvt.l.d	a1, fa0, rtz
 	add	a0, a0, a1
-	bseti	a1, zero, 63
-	xor	a0, a0, a1
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

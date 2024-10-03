@@ -22,8 +22,7 @@ func0000000000000111:                   # @func0000000000000111
 	sext.w	a0, a0
 	addi	a2, a0, -1
 	seqz	a2, a2
-	bseti	a3, zero, 60
-	xor	a1, a1, a3
+	binvi	a1, a1, 60
 	seqz	a1, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

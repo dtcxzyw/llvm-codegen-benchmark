@@ -8,8 +8,7 @@ func000000000000002c:                   # @func000000000000002c
 	li	a2, 255
 	slli	a2, a2, 32
 	and	a1, a1, a2
-	bseti	a2, zero, 33
-	xor	a1, a1, a2
+	binvi	a1, a1, 33
 	seqz	a1, a1
 	andi	a0, a0, 1
 	sh2add	a0, a1, a0

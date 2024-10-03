@@ -67,8 +67,7 @@ func0000000000000020:                   # @func0000000000000020
 func000000000000002d:                   # @func000000000000002d
 	lui	a3, 28
 	and	a2, a2, a3
-	lui	a3, 16
-	xor	a2, a2, a3
+	binvi	a2, a2, 16
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

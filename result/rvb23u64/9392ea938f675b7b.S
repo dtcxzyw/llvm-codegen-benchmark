@@ -168,8 +168,7 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sltu	a1, a2, a1
-	lui	a2, 64
-	xor	a0, a0, a2
+	binvi	a0, a0, 18
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

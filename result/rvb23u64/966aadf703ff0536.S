@@ -4,8 +4,7 @@ func0000000000000046:                   # @func0000000000000046
 	addi	a2, a2, -1
 	slli	a2, a2, 21
 	and	a0, a0, a2
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

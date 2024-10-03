@@ -19,8 +19,7 @@ func0000000000000023:                   # @func0000000000000023
 	ori	a0, a0, 8
 	ret
 func0000000000000002:                   # @func0000000000000002
-	bseti	a2, zero, 32
-	xor	a1, a1, a2
+	binvi	a1, a1, 32
 	seqz	a1, a1
 	slli	a1, a1, 13
 	or	a0, a0, a1

@@ -6,8 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a1, 3
 	slli	a1, a1, 11
 	and	a0, a0, a1
-	lui	a1, 1
-	xor	a0, a0, a1
+	binvi	a0, a0, 12
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

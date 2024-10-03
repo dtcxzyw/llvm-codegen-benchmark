@@ -34,8 +34,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 32
-	xor	a0, a0, a1
+	binvi	a0, a0, 17
 	seqz	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8

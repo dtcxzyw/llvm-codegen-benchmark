@@ -85,8 +85,7 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
 	lui	a3, 320
 	and	a2, a2, a3
-	lui	a3, 256
-	xor	a2, a2, a3
+	binvi	a2, a2, 20
 	seqz	a2, a2
 	slti	a1, a1, 150
 	andn	a1, a2, a1

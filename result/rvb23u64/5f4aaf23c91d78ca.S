@@ -1,7 +1,6 @@
 func0000000000000182:                   # @func0000000000000182
 	sext.w	a2, a2
-	lui	a3, 16
-	xor	a2, a2, a3
+	binvi	a2, a2, 16
 	snez	a2, a2
 	seqz	a1, a1
 	or	a0, a0, a1

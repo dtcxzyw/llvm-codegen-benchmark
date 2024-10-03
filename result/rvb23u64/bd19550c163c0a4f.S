@@ -6,8 +6,7 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 255
-	lui	a2, 512
-	xor	a1, a1, a2
+	binvi	a1, a1, 21
 	snez	a1, a1
 	addi	a0, a0, -2
 	seqz	a0, a0

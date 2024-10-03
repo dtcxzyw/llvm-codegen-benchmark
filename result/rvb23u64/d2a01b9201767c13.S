@@ -10,8 +10,7 @@ func0000000000000064:                   # @func0000000000000064
 	sltu	a0, a1, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	li	a3, 2
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2

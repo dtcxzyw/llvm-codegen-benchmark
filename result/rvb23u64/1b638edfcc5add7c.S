@@ -87,8 +87,7 @@ func0000000000000108:                   # @func0000000000000108
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a2, a2
-	lui	a3, 2
-	xor	a2, a2, a3
+	binvi	a2, a2, 13
 	czero.nez	a1, a1, a2
 	sext.w	a1, a1
 	sltu	a0, a0, a1

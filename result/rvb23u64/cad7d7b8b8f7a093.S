@@ -14,8 +14,7 @@ func000000000000001c:                   # @func000000000000001c
 	li	a2, 255
 	slli	a2, a2, 32
 	and	a1, a1, a2
-	bseti	a2, zero, 33
-	xor	a1, a1, a2
+	binvi	a1, a1, 33
 	seqz	a1, a1
 	slli	a1, a1, 2
 	or	a0, a0, a1

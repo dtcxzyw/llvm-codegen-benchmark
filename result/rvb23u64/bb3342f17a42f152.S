@@ -8,8 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 1
-	bseti	a2, zero, 33
-	xor	a0, a0, a2
+	binvi	a0, a0, 33
 	seqz	a0, a0
 	sh2add	a0, a0, a1
 	addi	a0, a0, 2

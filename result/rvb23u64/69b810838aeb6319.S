@@ -15,8 +15,7 @@ func000000000000002c:                   # @func000000000000002c
 	or	a0, a0, a2
 	lui	a2, 320
 	and	a1, a1, a2
-	lui	a2, 256
-	xor	a1, a1, a2
+	binvi	a1, a1, 20
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

@@ -54,8 +54,7 @@ func000000000000011a:                   # @func000000000000011a
 	subw	a1, a1, a2
 	slti	a1, a1, 128
 	xori	a1, a1, 1
-	lui	a2, 2
-	xor	a0, a0, a2
+	binvi	a0, a0, 13
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -1,8 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 1016
 	and	a0, a0, a1
-	lui	a1, 16
-	xor	a0, a0, a1
+	binvi	a0, a0, 16
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008

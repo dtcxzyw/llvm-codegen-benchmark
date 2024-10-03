@@ -15,8 +15,7 @@ func000000000000003c:                   # @func000000000000003c
 	li	a2, 3
 	slli	a2, a2, 51
 	and	a1, a1, a2
-	bseti	a2, zero, 51
-	xor	a1, a1, a2
+	binvi	a1, a1, 51
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

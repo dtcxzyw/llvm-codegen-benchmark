@@ -30,8 +30,7 @@ func00000000000000f1:                   # @func00000000000000f1
 func0000000000000061:                   # @func0000000000000061
 	slli.uw	a1, a1, 24
 	or	a0, a0, a1
-	lui	a1, 262144
-	xor	a0, a0, a1
+	binvi	a0, a0, 30
 	seqz	a0, a0
 	ret
 func000000000000005c:                   # @func000000000000005c

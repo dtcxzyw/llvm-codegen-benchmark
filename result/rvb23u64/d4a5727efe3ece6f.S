@@ -38,8 +38,7 @@ func0000000000000062:                   # @func0000000000000062
 	addw	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	bseti	a2, zero, 33
-	xor	a1, a1, a2
+	binvi	a1, a1, 33
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret

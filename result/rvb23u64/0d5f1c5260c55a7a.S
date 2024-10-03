@@ -73,8 +73,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	li	a2, 255
 	slli	a2, a2, 32
 	and	a1, a1, a2
-	bseti	a2, zero, 33
-	xor	a1, a1, a2
+	binvi	a1, a1, 33
 	snez	a1, a1
 	slti	a0, a0, 1
 	or	a0, a0, a1

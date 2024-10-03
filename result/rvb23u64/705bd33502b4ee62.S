@@ -28,8 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000c:                   # @func000000000000000c
 	srliw	a0, a0, 16
 	slli	a0, a0, 16
-	bseti	a1, zero, 31
-	xor	a0, a0, a1
+	binvi	a0, a0, 31
 	snez	a0, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

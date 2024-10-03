@@ -8,8 +8,7 @@ func0000000000000058:                   # @func0000000000000058
 func0000000000000302:                   # @func0000000000000302
 	lui	a3, 48
 	and	a2, a2, a3
-	lui	a3, 32
-	xor	a2, a2, a3
+	binvi	a2, a2, 17
 	snez	a2, a2
 	seqz	a0, a0
 	or	a0, a0, a1

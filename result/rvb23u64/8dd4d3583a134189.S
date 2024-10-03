@@ -15,8 +15,7 @@ func0000000000000398:                   # @func0000000000000398
 	or	a0, a0, a1
 	ret
 func0000000000001822:                   # @func0000000000001822
-	bseti	a3, zero, 51
-	xor	a2, a2, a3
+	binvi	a2, a2, 51
 	snez	a2, a2
 	li	a3, 2047
 	slli	a3, a3, 52

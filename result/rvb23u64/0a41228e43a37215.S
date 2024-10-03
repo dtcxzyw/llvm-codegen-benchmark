@@ -10,8 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
 	andi	a2, a2, 511
-	lui	a3, 4
-	xor	a1, a1, a3
+	binvi	a1, a1, 14
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2

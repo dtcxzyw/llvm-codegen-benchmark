@@ -24,8 +24,7 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
 	addi	a2, a2, -1
 	seqz	a2, a2
-	bseti	a3, zero, 60
-	xor	a1, a1, a3
+	binvi	a1, a1, 60
 	seqz	a1, a1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

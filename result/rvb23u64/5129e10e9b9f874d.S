@@ -40,8 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000001:                   # @func0000000000000001
 	sllw	a1, a1, a2
 	addw	a0, a0, a1
-	lui	a1, 4096
-	xor	a0, a0, a1
+	binvi	a0, a0, 24
 	seqz	a0, a0
 	ret
 func00000000000000d4:                   # @func00000000000000d4

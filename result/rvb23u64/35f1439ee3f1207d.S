@@ -76,8 +76,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a1, a1
-	lui	a2, 1
-	xor	a1, a1, a2
+	binvi	a1, a1, 12
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

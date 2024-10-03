@@ -26,8 +26,7 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000038:                   # @func0000000000000038
 	sext.w	a1, a1
 	sext.w	a2, a2
-	lui	a3, 4096
-	xor	a2, a2, a3
+	binvi	a2, a2, 24
 	seqz	a2, a2
 	snez	a1, a1
 	or	a1, a1, a2

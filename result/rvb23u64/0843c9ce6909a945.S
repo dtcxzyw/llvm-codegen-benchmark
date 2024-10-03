@@ -33,8 +33,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	li	a2, 2
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 1
-	lui	a3, 4
-	xor	a0, a0, a3
+	binvi	a0, a0, 14
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

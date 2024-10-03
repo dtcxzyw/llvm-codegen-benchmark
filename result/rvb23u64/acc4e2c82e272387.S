@@ -7,8 +7,7 @@ func000000000000022a:                   # @func000000000000022a
 	addi	a0, a0, 1
 	ret
 func000000000000006a:                   # @func000000000000006a
-	bseti	a3, zero, 63
-	xor	a2, a2, a3
+	binvi	a2, a2, 63
 	seqz	a2, a2
 	sh1add	a1, a1, a1
 	sh1add	a1, a1, a2

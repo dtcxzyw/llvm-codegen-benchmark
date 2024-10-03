@@ -26,8 +26,7 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, 3
 	ret
 func0000000000000007:                   # @func0000000000000007
-	bseti	a2, zero, 63
-	xor	a1, a1, a2
+	binvi	a1, a1, 63
 	seqz	a1, a1
 	sub	a0, a0, a1
 	addi	a0, a0, 4

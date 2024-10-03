@@ -122,8 +122,7 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
-	bseti	a2, zero, 32
-	xor	a0, a0, a2
+	binvi	a0, a0, 32
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

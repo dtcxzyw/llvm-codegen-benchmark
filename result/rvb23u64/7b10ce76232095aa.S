@@ -45,8 +45,7 @@ func0000000000000011:                   # @func0000000000000011
 func00000000000000c1:                   # @func00000000000000c1
 	lui	a2, 4080
 	and	a1, a1, a2
-	lui	a2, 16
-	xor	a1, a1, a2
+	binvi	a1, a1, 16
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

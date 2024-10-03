@@ -93,8 +93,7 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000031:                   # @func0000000000000031
 	addw	a1, a1, a2
-	lui	a2, 8
-	xor	a1, a1, a2
+	binvi	a1, a1, 15
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

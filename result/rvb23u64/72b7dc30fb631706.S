@@ -45,8 +45,7 @@ func000000000000004c:                   # @func000000000000004c
 func0000000000000051:                   # @func0000000000000051
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	bseti	a2, zero, 63
-	xor	a0, a0, a2
+	binvi	a0, a0, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

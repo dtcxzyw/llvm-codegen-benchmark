@@ -27,8 +27,7 @@ func0000000000000305:                   # @func0000000000000305
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
-	lui	a3, 32
-	xor	a1, a1, a3
+	binvi	a1, a1, 17
 	seqz	a1, a1
 	or	a1, a1, a2
 	slli	a1, a1, 20

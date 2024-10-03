@@ -25,8 +25,7 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000041:                   # @func0000000000000041
 	srliw	a2, a2, 27
 	slli	a2, a2, 27
-	lui	a3, 65536
-	xor	a2, a2, a3
+	binvi	a2, a2, 28
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

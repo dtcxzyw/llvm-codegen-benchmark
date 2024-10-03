@@ -103,8 +103,7 @@ func0000000000000081:                   # @func0000000000000081
 	zext.h	a0, a0
 	lui	a2, 28672
 	and	a1, a1, a2
-	lui	a2, 16384
-	xor	a1, a1, a2
+	binvi	a1, a1, 26
 	seqz	a1, a1
 	sltiu	a0, a0, 14
 	xori	a0, a0, 1
