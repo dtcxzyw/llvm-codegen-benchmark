@@ -14,16 +14,14 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000000e:                   # @func000000000000000e
 	sub	a1, a1, a2
 	srli	a1, a1, 4
-	li	a2, -2
-	add	a1, a1, a2
+	addi	a1, a1, -2
 	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sub	a1, a1, a2
 	srli	a1, a1, 1
-	li	a2, -2
-	add	a1, a1, a2
+	addi	a1, a1, -2
 	sh1add.uw	a0, a1, a0
 	ret
 func000000000000001c:                   # @func000000000000001c

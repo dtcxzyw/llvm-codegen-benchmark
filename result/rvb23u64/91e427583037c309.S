@@ -57,8 +57,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	srli	a0, a0, 63
 	ret
 func00000000000000fc:                   # @func00000000000000fc
-	li	a2, -48
-	add	a1, a1, a2
+	addi	a1, a1, -48
 	zext.w	a1, a1
 	or	a0, a0, a1
 	snez	a0, a0
@@ -86,8 +85,7 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	ret
 func000000000000007c:                   # @func000000000000007c
-	li	a2, -48
-	add	a1, a1, a2
+	addi	a1, a1, -48
 	zext.w	a1, a1
 	or	a0, a0, a1
 	snez	a0, a0
@@ -97,8 +95,7 @@ func000000000000007c:                   # @func000000000000007c
 func0000000000000048:                   # @func0000000000000048
 	lui	a2, %hi(.LCPI12_0)
 	ld	a2, %lo(.LCPI12_0)(a2)
-	li	a3, -48
-	add	a1, a1, a3
+	addi	a1, a1, -48
 	add.uw	a0, a1, a0
 	sltu	a0, a2, a0
 	ret

@@ -190,8 +190,7 @@ func0000000000000101:                   # @func0000000000000101
 func000000000000011a:                   # @func000000000000011a
 	srliw	a1, a1, 16
 	seqz	a1, a1
-	li	a2, -2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	sgtz	a0, a0
 	ret

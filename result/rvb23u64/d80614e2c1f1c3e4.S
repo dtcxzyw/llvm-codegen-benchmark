@@ -23,8 +23,7 @@ func000000000000003f:                   # @func000000000000003f
 	sh3add.uw	a0, a1, a0
 	ret
 func000000000000002f:                   # @func000000000000002f
-	li	a2, -48
-	add	a1, a1, a2
+	addi	a1, a1, -48
 	zext.w	a1, a1
 	sh3add.uw	a0, a0, a1
 	ret

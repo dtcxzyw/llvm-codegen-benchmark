@@ -1,6 +1,5 @@
 func0000000000000006:                   # @func0000000000000006
-	li	a2, -16
-	addw	a1, a1, a2
+	addiw	a1, a1, -16
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	ret

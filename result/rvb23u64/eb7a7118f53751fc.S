@@ -22,8 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 8
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a2, -2
-	add	a1, a1, a2
+	addi	a1, a1, -2
 	slli.uw	a1, a1, 2
 	sh2add	a1, a1, a1
 	add	a0, a0, a1

@@ -1,16 +1,14 @@
 func0000000000000013:                   # @func0000000000000013
 	srliw	a1, a1, 5
 	sltiu	a1, a1, 1125
-	li	a2, -2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	li	a2, -2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1

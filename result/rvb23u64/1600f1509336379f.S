@@ -18,8 +18,7 @@ func0000000000000002:                   # @func0000000000000002
 	rol	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a1, -16
-	add	a0, a0, a1
+	addi	a0, a0, -16
 	andi	a0, a0, -16
 	lui	a1, 32
 	addiw	a1, a1, -2

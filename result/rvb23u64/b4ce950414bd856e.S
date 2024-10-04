@@ -7,8 +7,7 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000038:                   # @func0000000000000038
 	zext.h	a1, a1
-	li	a2, -16
-	add	a1, a1, a2
+	addi	a1, a1, -16
 	zext.w	a1, a1
 	sltu	a0, a1, a0
 	ret

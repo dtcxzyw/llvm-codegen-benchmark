@@ -1,7 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	subw	a1, a1, a0
-	li	a0, -2
-	addw	a0, a0, a1
+	subw	a0, a1, a0
+	addiw	a0, a0, -2
 	ret
 func0000000000000009:                   # @func0000000000000009
 	subw	a1, a1, a0

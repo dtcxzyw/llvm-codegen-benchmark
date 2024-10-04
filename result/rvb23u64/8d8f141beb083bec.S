@@ -21,8 +21,7 @@ func00000000000001f4:                   # @func00000000000001f4
 	seqz	a0, a0
 	ret
 func00000000000003fc:                   # @func00000000000003fc
-	li	a2, -48
-	add	a1, a1, a2
+	addi	a1, a1, -48
 	zext.w	a1, a1
 	sh2add	a0, a0, a0
 	slli	a0, a0, 1
@@ -30,8 +29,7 @@ func00000000000003fc:                   # @func00000000000003fc
 	snez	a0, a0
 	ret
 func00000000000001fc:                   # @func00000000000001fc
-	li	a2, -48
-	add	a1, a1, a2
+	addi	a1, a1, -48
 	zext.w	a1, a1
 	sh2add	a0, a0, a0
 	slli	a0, a0, 1

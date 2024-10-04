@@ -1,7 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 1
-	li	a3, -4
-	add	a2, a2, a3
+	addi	a2, a2, -4
 	zext.w	a2, a2
 	czero.eqz	a1, a2, a1
 	sh1add	a1, a1, a1

@@ -23,8 +23,7 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, 8
 	ret
 func000000000000003a:                   # @func000000000000003a
-	li	a2, -5
-	add	a1, a1, a2
+	addi	a1, a1, -5
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 1
 	ret
@@ -41,8 +40,7 @@ func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 8
 	ret
 func000000000000003b:                   # @func000000000000003b
-	li	a2, -42
-	add	a1, a1, a2
+	addi	a1, a1, -42
 	slli.uw	a1, a1, 3
 	sh1add	a1, a1, a1
 	add	a0, a0, a1

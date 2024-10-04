@@ -4,8 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	sll	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	li	a2, -9
-	add	a1, a1, a2
+	addi	a1, a1, -9
 	zext.w	a0, a0
 	sll	a0, a0, a1
 	ret

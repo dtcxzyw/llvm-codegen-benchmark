@@ -29,8 +29,7 @@ func0000000000000040:                   # @func0000000000000040
 	addi	a0, a0, 72
 	ret
 func0000000000000060:                   # @func0000000000000060
-	li	a3, -2
-	add	a2, a2, a3
+	addi	a2, a2, -2
 	sh3add	a0, a0, a1
 	sh3add.uw	a0, a2, a0
 	addi	a0, a0, 144
