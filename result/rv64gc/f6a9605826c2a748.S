@@ -5,10 +5,10 @@ func0000000000000061:                   # @func0000000000000061
 	seqz	a0, a0
 	ret
 func00000000000000e1:                   # @func00000000000000e1
+	addi	a1, a1, -64
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -64
-	add	a1, a1, a2
 	addi	a2, a2, 63
 	and	a1, a1, a2
 	srl	a0, a0, a1
@@ -32,10 +32,10 @@ func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 1
 	ret
 func00000000000000ec:                   # @func00000000000000ec
+	addi	a1, a1, -65
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -65
-	add	a1, a1, a2
 	addi	a2, a2, 64
 	and	a1, a1, a2
 	srl	a0, a0, a1

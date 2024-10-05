@@ -33,8 +33,7 @@ func000000000000006a:                   # @func000000000000006a
 	addi	a0, a0, 8
 	ret
 func00000000000000e0:                   # @func00000000000000e0
-	li	a3, -3
-	add	a2, a2, a3
+	addi	a2, a2, -3
 	sh3add	a0, a1, a0
 	sh3add.uw	a0, a2, a0
 	addi	a0, a0, 8

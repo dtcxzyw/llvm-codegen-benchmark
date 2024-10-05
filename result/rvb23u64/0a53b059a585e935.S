@@ -27,8 +27,7 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	li	a1, -16
-	add	a0, a0, a1
+	addi	a0, a0, -16
 	zext.w	a0, a0
 	sltiu	a0, a0, 17
 	xori	a0, a0, 1

@@ -8,9 +8,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a1, a1
 	seqz	a1, a1
-	li	a2, -2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a1

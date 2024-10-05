@@ -10,9 +10,8 @@ func0000000000000012:                   # @func0000000000000012
 	andi	a2, a2, 255
 	addi	a2, a2, -195
 	seqz	a2, a2
-	li	a3, -2
-	add	a1, a1, a3
-	addw	a1, a1, a2
+	add	a1, a1, a2
+	addiw	a1, a1, -2
 	sh2add	a0, a1, a0
 	ret
 func0000000000000010:                   # @func0000000000000010

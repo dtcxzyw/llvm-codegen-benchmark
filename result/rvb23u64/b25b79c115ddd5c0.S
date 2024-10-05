@@ -235,9 +235,8 @@ func0000000000000106:                   # @func0000000000000106
 	sext.w	a0, a0
 	srliw	a2, a2, 16
 	seqz	a2, a2
-	li	a3, -2
-	add	a1, a1, a3
-	addw	a1, a1, a2
+	add	a1, a1, a2
+	addiw	a1, a1, -2
 	slt	a0, a1, a0
 	ret
 func00000000000002b6:                   # @func00000000000002b6

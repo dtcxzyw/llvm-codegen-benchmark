@@ -1,9 +1,9 @@
 func000000000000000e:                   # @func000000000000000e
 	andi	a0, a0, 255
+	addi	a0, a0, -184
 	li	a1, 1
 	slli	a2, a1, 32
 	addi	a2, a2, -184
-	add	a0, a0, a2
 	addi	a2, a2, 183
 	and	a0, a0, a2
 	sll	a0, a1, a0
@@ -15,10 +15,10 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 255
+	addi	a0, a0, -180
 	li	a1, 1
 	slli	a2, a1, 32
 	addi	a2, a2, -180
-	add	a0, a0, a2
 	addi	a2, a2, 179
 	and	a0, a0, a2
 	sll	a0, a1, a0

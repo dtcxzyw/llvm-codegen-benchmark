@@ -6,10 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
+	addi	a1, a1, -64
 	li	a2, 1
 	slli	a3, a2, 32
 	addi	a3, a3, -64
-	add	a1, a1, a3
 	addi	a3, a3, 63
 	and	a1, a1, a3
 	sll	a1, a2, a1
@@ -31,8 +31,7 @@ func0000000000000002:                   # @func0000000000000002
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a2, -16
-	add	a1, a1, a2
+	addi	a1, a1, -16
 	andi	a1, a1, -16
 	lui	a2, 32
 	addiw	a2, a2, -2

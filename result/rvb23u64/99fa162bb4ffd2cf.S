@@ -39,8 +39,7 @@ func0000000000000101:                   # @func0000000000000101
 	seqz	a0, a0
 	ret
 func00000000000000a1:                   # @func00000000000000a1
-	li	a3, -2
-	add	a2, a2, a3
+	addi	a2, a2, -2
 	slli.uw	a3, a2, 3
 	slli.uw	a2, a2, 6
 	sub	a2, a2, a3

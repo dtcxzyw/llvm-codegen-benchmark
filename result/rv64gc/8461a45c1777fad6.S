@@ -5,10 +5,10 @@ func0000000000000000:                   # @func0000000000000000
 	sll	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
+	addi	a1, a1, -9
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -9
-	add	a1, a1, a2
 	addi	a2, a2, 8
 	and	a1, a1, a2
 	slli	a0, a0, 32

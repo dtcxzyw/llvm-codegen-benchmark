@@ -1,8 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 24
 	srli	a0, a0, 36
-	li	a1, -5
-	add	a0, a0, a1
+	addi	a0, a0, -5
 	zext.w	a0, a0
 	ret
 func0000000000000005:                   # @func0000000000000005

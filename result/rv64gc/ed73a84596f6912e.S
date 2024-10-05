@@ -42,17 +42,15 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 255
 	seqz	a1, a1
-	li	a2, -2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 func0000000000000028:                   # @func0000000000000028
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	sgtz	a1, a1
-	li	a2, -2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 255

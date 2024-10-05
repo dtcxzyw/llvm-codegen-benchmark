@@ -1,6 +1,5 @@
 func000000000000000d:                   # @func000000000000000d
-	li	a1, -14
-	add	a0, a0, a1
+	addi	a0, a0, -14
 	li	a1, -1
 	sll	a0, a1, a0
 	ret
@@ -25,13 +24,11 @@ func000000000000000a:                   # @func000000000000000a
 	bset	a0, zero, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a1, -97
-	add	a0, a0, a1
+	addi	a0, a0, -97
 	bset	a0, zero, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	li	a1, -16
-	add	a0, a0, a1
+	addi	a0, a0, -16
 	andi	a0, a0, -16
 	lui	a1, 16
 	addiw	a1, a1, -1

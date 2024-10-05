@@ -8,8 +8,7 @@ func00000000000000e2:                   # @func00000000000000e2
 	sh3add	a0, a1, a0
 	ret
 func00000000000000ea:                   # @func00000000000000ea
-	li	a2, -5
-	add	a1, a1, a2
+	addi	a1, a1, -5
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 61
 	ret

@@ -1,8 +1,8 @@
 func00000000000000f1:                   # @func00000000000000f1
+	addi	a0, a0, -97
 	li	a1, 1
 	slli	a1, a1, 32
 	addi	a1, a1, -97
-	add	a0, a0, a1
 	addi	a1, a1, 96
 	and	a0, a0, a1
 	lui	a1, 10240
@@ -12,10 +12,10 @@ func00000000000000f1:                   # @func00000000000000f1
 	seqz	a0, a0
 	ret
 func00000000000000e1:                   # @func00000000000000e1
+	addi	a0, a0, -184
 	li	a1, 1
 	slli	a1, a1, 32
 	addi	a1, a1, -184
-	add	a0, a0, a1
 	addi	a1, a1, 183
 	and	a0, a0, a1
 	lui	a1, 86016
