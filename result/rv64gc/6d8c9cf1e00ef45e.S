@@ -66,10 +66,10 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000116:                   # @func0000000000000116
 	sext.w	a0, a0
-	addi	a2, a1, -1
-	and	a1, a1, a2
+	addiw	a2, a1, -1
+	xor	a1, a1, a2
 	sext.w	a1, a1
-	seqz	a1, a1
+	sltu	a1, a2, a1
 	slti	a0, a0, 64
 	and	a0, a0, a1
 	ret

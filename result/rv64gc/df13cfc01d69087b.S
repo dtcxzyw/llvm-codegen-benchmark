@@ -47,10 +47,11 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
-	addi	a1, a0, -1
-	and	a0, a0, a1
+	addiw	a1, a0, -1
+	xor	a0, a0, a1
 	sext.w	a0, a0
-	snez	a0, a0
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	addi	a1, a0, -1

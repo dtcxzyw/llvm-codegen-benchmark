@@ -18,7 +18,8 @@ func000000000000014c:                   # @func000000000000014c
 	ret
 func0000000000000116:                   # @func0000000000000116
 	cpopw	a1, a1
-	sltiu	a1, a1, 2
+	addi	a1, a1, -1
+	seqz	a1, a1
 	slti	a0, a0, 16
 	and	a0, a0, a1
 	ret
