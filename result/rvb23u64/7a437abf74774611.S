@@ -21,8 +21,7 @@ func0000000000000148:                   # @func0000000000000148
 func0000000000000118:                   # @func0000000000000118
 	sext.w	a0, a0
 	cpop	a1, a1
-	addi	a1, a1, -1
-	seqz	a1, a1
+	sltiu	a1, a1, 2
 	sltiu	a0, a0, 3
 	andn	a0, a1, a0
 	ret

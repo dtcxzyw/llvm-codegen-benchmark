@@ -12,6 +12,5 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000011:                   # @func0000000000000011
 	and	a0, a0, a1
 	cpopw	a0, a0
-	addi	a0, a0, -1
-	seqz	a0, a0
+	sltiu	a0, a0, 2
 	ret
