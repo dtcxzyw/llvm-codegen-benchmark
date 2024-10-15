@@ -23,10 +23,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000011:                   # @func0000000000000011
 	addi	a1, a0, -1
-	lui	a2, 16
-	addiw	a2, a2, -1
-	and	a3, a1, a2
-	xor	a0, a0, a1
-	and	a0, a0, a2
-	sltu	a0, a3, a0
+	and	a0, a0, a1
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	seqz	a0, a0
 	ret
