@@ -1,0 +1,6 @@
+func0000000000000008:                   # @func0000000000000008
+	addl	%esi, %edx
+	movzwl	%dx, %eax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq

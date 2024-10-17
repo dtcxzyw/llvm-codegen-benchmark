@@ -1,0 +1,10 @@
+func00000000000000b4:                   # @func00000000000000b4
+	subq	%rdx, %rsi
+	sarq	$3, %rsi
+	movabsq	$3353953467947191203, %rax      # imm = 0x2E8BA2E8BA2E8BA3
+	imulq	%rsi, %rax
+	decq	%rax
+	sarq	$3, %rdi
+	cmpq	%rax, %rdi
+	setb	%al
+	retq

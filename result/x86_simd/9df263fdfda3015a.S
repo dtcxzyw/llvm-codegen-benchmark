@@ -1,0 +1,113 @@
+func000000000000006a:                   # @func000000000000006a
+	vpslld	$8, %ymm0, %ymm1
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpsrld	$8, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	2141                            # 0x85d
+.LCPI1_1:
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func000000000000006f:                   # @func000000000000006f
+	vpmulld	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$16, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI1_1(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	8389                            # 0x20c5
+.LCPI2_1:
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000020:                   # @func0000000000000020
+	vpmulld	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$23, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI2_1(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	103                             # 0x67
+.LCPI3_1:
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000000:                   # @func0000000000000000
+	vpmulld	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$10, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI3_1(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	2897767785                      # 0xacb86d69
+.LCPI4_1:
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.byte	4                               # 0x4
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func000000000000000f:                   # @func000000000000000f
+	vpmulld	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$28, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI4_1(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,24 @@
+func0000000000000041:                   # @func0000000000000041
+	movl	%edi, %eax
+	shrq	$4, %rsi
+	testl	%esi, %esi
+	cmovel	%esi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	%edi, %eax
+	shrq	$12, %rsi
+	testl	%esi, %esi
+	cmovel	%esi, %eax
+	retq
+func000000000000004a:                   # @func000000000000004a
+	shrq	$4, %rsi
+	cmpl	$333333, %esi                   # imm = 0x51615
+	movl	$1000000, %eax                  # imm = 0xF4240
+	cmovll	%edi, %eax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	shrq	$32, %rsi
+	xorl	%eax, %eax
+	testl	%esi, %esi
+	cmovlel	%edi, %eax
+	retq

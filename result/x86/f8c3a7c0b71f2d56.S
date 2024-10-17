@@ -1,0 +1,7 @@
+func0000000000000001:                   # @func0000000000000001
+	shrq	%rdx
+	cmpq	%rdx, %rsi
+	cmovaq	%rsi, %rdx
+	cmpq	%rdi, %rdx
+	sete	%al
+	retq

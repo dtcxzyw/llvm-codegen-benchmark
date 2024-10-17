@@ -1,0 +1,24 @@
+.LCPI0_0:
+	.long	7                               # 0x7
+.LCPI0_1:
+	.long	1                               # 0x1
+func000000000000000e:                   # @func000000000000000e
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
+	vpsllvd	%ymm1, %ymm2, %ymm1
+	vpmovdb	%ymm1, %xmm1
+	vpand	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	7                               # 0x7
+.LCPI1_1:
+	.long	255                             # 0xff
+func000000000000000c:                   # @func000000000000000c
+	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
+	vpbroadcastd	.LCPI1_1(%rip), %ymm2   # ymm2 = [255,255,255,255,255,255,255,255]
+	vpsllvd	%ymm1, %ymm2, %ymm1
+	vpmovdb	%ymm1, %xmm1
+	vpand	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,4 @@
+func0000000000000010:                   # @func0000000000000010
+	shrxq	%rsi, %rdi, %rax
+	shrl	$8, %eax
+	retq

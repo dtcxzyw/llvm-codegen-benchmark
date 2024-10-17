@@ -1,0 +1,47 @@
+func0000000000000018:                   # @func0000000000000018
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setae	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func000000000000000e:                   # @func000000000000000e
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setp	%cl
+	setne	%al
+	orb	%cl, %al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+.LCPI2_0:
+	.quad	0x416312d000000000              # double 1.0E+7
+func0000000000000004:                   # @func0000000000000004
+	vmovsd	.LCPI2_0(%rip), %xmm1           # xmm1 = [1.0E+7,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000002:                   # @func0000000000000002
+	vucomisd	%xmm0, %xmm0
+	setp	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	seta	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+.LCPI5_0:
+	.quad	0x4034000000000000              # double 20
+func000000000000001a:                   # @func000000000000001a
+	vmovsd	.LCPI5_0(%rip), %xmm1           # xmm1 = [2.0E+1,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	setbe	%al
+	andb	%sil, %al
+	orb	%dil, %al
+	retq

@@ -1,0 +1,36 @@
+func000000000000004a:                   # @func000000000000004a
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpand	%ymm2, %ymm0, %ymm0
+	vpcmpgtd	%ymm3, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm0, %ymm0
+	vptestnmd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000041:                   # @func0000000000000041
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vptestnmd	%ymm2, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	15                              # 0xf
+func0000000000000048:                   # @func0000000000000048
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpand	%ymm2, %ymm0, %ymm0
+	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

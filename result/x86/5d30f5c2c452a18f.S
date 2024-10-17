@@ -1,0 +1,18 @@
+func0000000000000054:                   # @func0000000000000054
+	leaq	-1(%rdx,%rsi), %rax
+	cmpq	$4, %rax
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	leaq	-48(%rdx,%rsi), %rax
+	cmpq	$1025, %rax                     # imm = 0x401
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leaq	-48(%rdx,%rsi), %rax
+	shrq	$32, %rax
+	setne	%al
+	orb	%dil, %al
+	retq

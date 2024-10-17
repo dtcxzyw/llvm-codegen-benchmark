@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.quad	0xbef0000000000000              # double -1.52587890625E-5
+func0000000000000000:                   # @func0000000000000000
+	vaddsd	%xmm2, %xmm2, %xmm2
+	vsubsd	%xmm0, %xmm2, %xmm0
+	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
+	vaddsd	%xmm1, %xmm0, %xmm0
+	retq

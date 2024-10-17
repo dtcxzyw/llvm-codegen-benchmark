@@ -1,0 +1,94 @@
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	sete	%al
+	shll	$12, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	setne	%al
+	shll	$20, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	xorl	%eax, %eax
+	cmpl	$4, %edx
+	setae	%al
+	shll	$30, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	xorl	%eax, %eax
+	cmpl	$1114112, %edx                  # imm = 0x110000
+	setae	%al
+	shll	$8, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	movl	%edi, %eax
+	sarl	$31, %edx
+	andl	$2146959360, %edx               # imm = 0x7FF80000
+	orl	%esi, %eax
+	orl	%edx, %eax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	testl	%edx, %edx
+	movl	$2147482624, %eax               # imm = 0x7FFFFC00
+	cmovel	%edx, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func000000000000002b:                   # @func000000000000002b
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	setg	%al
+	orl	%esi, %edi
+	leal	(%rdi,%rax,4), %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
+	cmpl	$1073741824, %edx               # imm = 0x40000000
+	setb	%al
+	shll	$30, %eax
+	addl	$-1073741824, %eax              # imm = 0xC0000000
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	setne	%al
+	shll	$24, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	xorl	%eax, %eax
+	cmpl	$1, %edx
+	sete	%al
+	shll	$7, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	xorl	%eax, %eax
+	cmpl	$1501, %edx                     # imm = 0x5DD
+	setae	%al
+	shll	$5, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpl	$256, %edx                      # imm = 0x100
+	setge	%al
+	shll	$15, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq

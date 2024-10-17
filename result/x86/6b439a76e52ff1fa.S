@@ -1,0 +1,33 @@
+func0000000000000001:                   # @func0000000000000001
+	cmpq	$36, %rdi
+	setne	%al
+	addb	%al, %al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	shrq	$63, %rdi
+	leal	(%rdi,%rdi), %eax
+	addb	$43, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$2, %rdi
+	setae	%al
+	shlb	$2, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpq	$256, %rdi                      # imm = 0x100
+	setb	%al
+	shlb	$3, %al
+	addb	$-5, %al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	cmpq	$2147483647, %rdi               # imm = 0x7FFFFFFF
+	setg	%cl
+	movb	$12, %al
+	subb	%cl, %al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	testq	%rdi, %rdi
+	movl	$1, %ecx
+	movl	$7, %eax
+	cmovel	%ecx, %eax
+	retq

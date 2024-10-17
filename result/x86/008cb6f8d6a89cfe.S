@@ -1,0 +1,7 @@
+func000000000000000a:                   # @func000000000000000a
+	subq	%rsi, %rdi
+	sarq	$3, %rdi
+	decq	%rdi
+	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vdivsd	%xmm1, %xmm0, %xmm0
+	retq

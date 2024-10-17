@@ -1,0 +1,12 @@
+func0000000000000004:                   # @func0000000000000004
+	movq	%rdx, %rcx
+	shrq	$32, %rcx
+	testb	$1, %sil
+	cmovneq	%rdx, %rcx
+	notb	%sil
+	movzbl	%sil, %eax
+	andl	$1, %eax
+	shll	$5, %eax
+	cmpq	$65536, %rcx                    # imm = 0x10000
+	cmovael	%edi, %eax
+	retq

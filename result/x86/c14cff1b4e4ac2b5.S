@@ -1,0 +1,8 @@
+func0000000000000000:                   # @func0000000000000000
+	vcvttsd2si	%xmm0, %eax
+	orl	$1, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vcvttsd2si	%xmm0, %eax
+	orl	$256, %eax                      # imm = 0x100
+	retq

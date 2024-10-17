@@ -1,0 +1,22 @@
+func0000000000000010:                   # @func0000000000000010
+	addq	$-2, %rdx
+	cmpq	$7, %rdx
+	movl	$1, %eax
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	movabsq	$-2305843009213693952, %rax     # imm = 0xE000000000000000
+	leaq	1(%rdx,%rax), %rax
+	shrq	$61, %rax
+	cmpl	$7, %eax
+	movq	$-1, %rax
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpq	$1, %rdx
+	cmovneq	%rsi, %rax
+	addq	%rdi, %rax
+	retq

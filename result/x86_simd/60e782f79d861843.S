@@ -1,0 +1,15 @@
+.LCPI0_0:
+	.long	1664525                         # 0x19660d
+func0000000000000000:                   # @func0000000000000000
+	vpsrld	$30, %ymm1, %ymm2
+	vpxor	%ymm1, %ymm2, %ymm1
+	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpxor	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vpsrld	$22, %ymm1, %ymm2
+	vpxor	%ymm1, %ymm2, %ymm1
+	vpslld	$4, %ymm1, %ymm2
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpxor	%ymm0, %ymm1, %ymm0
+	retq

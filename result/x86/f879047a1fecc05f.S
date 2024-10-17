@@ -1,0 +1,10 @@
+func0000000000000014:                   # @func0000000000000014
+	blsrl	%esi, %eax
+	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	blsrl	%esi, %eax
+	sete	%al
+	andb	%dil, %al
+	retq

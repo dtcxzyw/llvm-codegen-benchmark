@@ -1,0 +1,101 @@
+func0000000000000047:                   # @func0000000000000047
+	vmaxsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setp	%cl
+	setne	%al
+	orb	%cl, %al
+	andb	%dil, %al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	vminsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setnp	%cl
+	sete	%al
+	andb	%cl, %al
+	andb	%dil, %al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	vmaxsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000042:                   # @func0000000000000042
+	vminsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	andb	%dil, %al
+	retq
+func000000000000004c:                   # @func000000000000004c
+	vmaxsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setae	%al
+	andb	%dil, %al
+	retq
+func000000000000004a:                   # @func000000000000004a
+	vminsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000022:                   # @func0000000000000022
+	vmaxsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	vminsd	%xmm1, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	setnp	%cl
+	sete	%al
+	andb	%cl, %al
+	andb	%dil, %al
+	retq
+.LCPI8_0:
+	.quad	0x3f571547652b82fe              # double 0.0014088818758681283
+func0000000000000025:                   # @func0000000000000025
+	vminsd	%xmm1, %xmm0, %xmm0
+	vmovsd	.LCPI8_0(%rip), %xmm1           # xmm1 = [1.4088818758681283E-3,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	setb	%al
+	andb	%dil, %al
+	retq
+.LCPI9_0:
+	.quad	0x3ff0000000000000              # double 1
+func00000000000000ca:                   # @func00000000000000ca
+	vcmplesd	%xmm0, %xmm1, %k1
+	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovsd	.LCPI9_0(%rip), %xmm0           # xmm0 = [1.0E+0,0.0E+0]
+	vucomisd	%xmm1, %xmm0
+	setae	%al
+	andb	%dil, %al
+	retq
+func00000000000000c7:                   # @func00000000000000c7
+	vcmplesd	%xmm0, %xmm1, %k1
+	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
+	vxorpd	%xmm0, %xmm0, %xmm0
+	vucomisd	%xmm0, %xmm1
+	setp	%cl
+	setne	%al
+	orb	%cl, %al
+	andb	%dil, %al
+	retq
+.LCPI11_0:
+	.quad	0x3ff0000000000000              # double 1
+func00000000000000c2:                   # @func00000000000000c2
+	vcmplesd	%xmm0, %xmm1, %k1
+	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovsd	.LCPI11_0(%rip), %xmm0          # xmm0 = [1.0E+0,0.0E+0]
+	vucomisd	%xmm1, %xmm0
+	seta	%al
+	andb	%dil, %al
+	retq

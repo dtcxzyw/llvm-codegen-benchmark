@@ -1,0 +1,55 @@
+func0000000000000010:                   # @func0000000000000010
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000000:                   # @func0000000000000000
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000000c:                   # @func000000000000000c
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000000d:                   # @func000000000000000d
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000000f:                   # @func000000000000000f
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000002:                   # @func0000000000000002
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000012:                   # @func0000000000000012
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000001d:                   # @func000000000000001d
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000000e:                   # @func000000000000000e
+	vpmovzxbq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,zero,zero,zero,zero,xmm2[1],zero,zero,zero,zero,zero,zero,zero,xmm2[2],zero,zero,zero,zero,zero,zero,zero,xmm2[3],zero,zero,zero,zero,zero,zero,zero
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq

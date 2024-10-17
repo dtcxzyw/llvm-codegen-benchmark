@@ -1,0 +1,10 @@
+func0000000000000006:                   # @func0000000000000006
+	vpsllw	$3, %ymm0, %ymm1
+	vpsubw	%ymm0, %ymm1, %ymm0
+	vpsrlw	$3, %ymm0, %ymm0
+	retq
+func0000000000000002:                   # @func0000000000000002
+	vpaddw	%ymm0, %ymm0, %ymm1
+	vpaddw	%ymm1, %ymm0, %ymm0
+	vpsrlw	$2, %ymm0, %ymm0
+	retq

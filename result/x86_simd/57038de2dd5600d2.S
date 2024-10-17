@@ -1,0 +1,8 @@
+func00000000000006ba:                   # @func00000000000006ba
+	vpcmpnltd	%ymm2, %ymm0, %k1
+	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpcmpgtd	%ymm1, %ymm0, %k1
+	korb	%k1, %k0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

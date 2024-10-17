@@ -1,0 +1,209 @@
+.LCPI0_0:
+	.byte	111                             # 0x6f
+	.byte	111                             # 0x6f
+	.byte	111                             # 0x6f
+	.byte	111                             # 0x6f
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI0_1:
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000084:                   # @func0000000000000084
+	vpmovqb	%ymm0, %xmm0
+	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
+	vpcmpltub	.LCPI0_1(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.byte	252                             # 0xfc
+	.byte	252                             # 0xfc
+	.byte	252                             # 0xfc
+	.byte	252                             # 0xfc
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI1_1:
+	.byte	253                             # 0xfd
+	.byte	253                             # 0xfd
+	.byte	253                             # 0xfd
+	.byte	253                             # 0xfd
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000004:                   # @func0000000000000004
+	vpmovqb	%ymm0, %xmm0
+	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm0
+	vpcmpltub	.LCPI1_1(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.byte	254                             # 0xfe
+	.byte	254                             # 0xfe
+	.byte	254                             # 0xfe
+	.byte	254                             # 0xfe
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_1:
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000014:                   # @func0000000000000014
+	vpmovqb	%ymm0, %xmm0
+	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
+	vpcmpltub	.LCPI2_1(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vpmovqb	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpcmpeqb	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.byte	5                               # 0x5
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000081:                   # @func0000000000000081
+	vpmovqb	%ymm0, %xmm0
+	vpcmpeqb	.LCPI4_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.byte	22                              # 0x16
+	.byte	22                              # 0x16
+	.byte	22                              # 0x16
+	.byte	22                              # 0x16
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func00000000000000d4:                   # @func00000000000000d4
+	vpmovqb	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm0, %xmm0
+	vpcmpltub	.LCPI5_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000000a:                   # @func000000000000000a
+	vpmovqb	%ymm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vpcmpgtb	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func00000000000000d1:                   # @func00000000000000d1
+	vpmovqb	%ymm0, %xmm0
+	vpcmpeqb	.LCPI7_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

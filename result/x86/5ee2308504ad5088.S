@@ -1,0 +1,27 @@
+func0000000000000021:                   # @func0000000000000021
+	subq	%rsi, %rdx
+	sarq	$3, %rdx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	mulxq	%rax, %rax, %rax
+	shrq	%rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	subq	%rsi, %rdx
+	sarq	$5, %rdx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	mulxq	%rax, %rax, %rax
+	shrq	%rax
+	cmpq	%rdi, %rax
+	seta	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	subq	%rsi, %rdx
+	sarq	$2, %rdx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	mulxq	%rax, %rax, %rax
+	shrq	%rax
+	cmpq	%rdi, %rax
+	seta	%al
+	retq

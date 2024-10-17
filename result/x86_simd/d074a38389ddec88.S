@@ -1,0 +1,100 @@
+func0000000000000006:                   # @func0000000000000006
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpmovqd	%ymm2, %xmm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vmovdqa32	%xmm2, %xmm1 {%k1}
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	24                              # 0x18
+func0000000000000004:                   # @func0000000000000004
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpmovqd	%ymm2, %xmm1
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [24,24,24,24]
+	vpcmpltud	%xmm0, %xmm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	7                               # 0x7
+func000000000000001a:                   # @func000000000000001a
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpmovqd	%ymm2, %xmm1
+	vpbroadcastd	.LCPI2_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [7,7,7,7]
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	4294939648                      # 0xffff9400
+func0000000000000038:                   # @func0000000000000038
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpmovqd	%ymm2, %xmm1
+	vpbroadcastd	.LCPI3_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4294939648,4294939648,4294939648,4294939648]
+	vpcmpnleud	%xmm0, %xmm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	knotw	%k0, %k1
+	vpmovqd	%ymm2, %xmm1 {%k1} {z}
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000031:                   # @func0000000000000031
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	knotw	%k0, %k1
+	vpmovqd	%ymm2, %xmm1 {%k1} {z}
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000021:                   # @func0000000000000021
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	knotw	%k0, %k1
+	vpmovqd	%ymm2, %xmm1 {%k1} {z}
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000036:                   # @func0000000000000036
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	knotw	%k0, %k1
+	vpmovqd	%ymm2, %xmm1 {%k1} {z}
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	vpmovqd	%ymm2, %xmm1
+	vpcmpnleud	%xmm0, %xmm1, %k1
+	kandnw	%k1, %k0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.long	256                             # 0x100
+func000000000000000a:                   # @func000000000000000a
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpmovqd	%ymm2, %xmm1
+	vpbroadcastd	.LCPI9_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [256,256,256,256]
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000003a:                   # @func000000000000003a
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	knotw	%k0, %k1
+	vpmovqd	%ymm2, %xmm1 {%k1} {z}
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,18 @@
+func0000000000000000:                   # @func0000000000000000
+	leaq	-48(%rsi), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	-16(%rsi), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	leaq	16(%rsi), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq

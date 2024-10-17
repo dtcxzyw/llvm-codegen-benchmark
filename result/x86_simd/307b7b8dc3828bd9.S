@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.long	15                              # 0xf
+func0000000000000008:                   # @func0000000000000008
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [15,15,15,15,15,15,15,15]
+	vpminsd	%ymm1, %ymm0, %ymm0
+	vpcmpnleud	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

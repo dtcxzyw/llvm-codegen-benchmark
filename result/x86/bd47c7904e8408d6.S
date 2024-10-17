@@ -1,0 +1,12 @@
+func000000000000001d:                   # @func000000000000001d
+	movl	%edx, %eax
+	shrl	$7, %eax
+	imulq	%rsi, %rax
+	subq	%rdi, %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	movl	%edx, %eax
+	shrl	$2, %eax
+	imulq	%rsi, %rax
+	subq	%rdi, %rax
+	retq

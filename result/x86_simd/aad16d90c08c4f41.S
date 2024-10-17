@@ -1,0 +1,23 @@
+.LCPI0_0:
+	.zero	16,8
+.LCPI0_1:
+	.byte	8                               # 0x8
+func0000000000000007:                   # @func0000000000000007
+	vpbroadcastb	.LCPI0_1(%rip), %xmm1   # xmm1 = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
+	vpsubb	%xmm0, %xmm1, %xmm0
+	vpmovzxbw	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero,xmm0[8],zero,xmm0[9],zero,xmm0[10],zero,xmm0[11],zero,xmm0[12],zero,xmm0[13],zero,xmm0[14],zero,xmm0[15],zero
+	retq
+func0000000000000003:                   # @func0000000000000003
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm0, %xmm1, %xmm0
+	vpmovzxbw	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero,xmm0[8],zero,xmm0[9],zero,xmm0[10],zero,xmm0[11],zero,xmm0[12],zero,xmm0[13],zero,xmm0[14],zero,xmm0[15],zero
+	retq
+.LCPI2_0:
+	.zero	16,7
+.LCPI2_1:
+	.byte	7                               # 0x7
+func0000000000000002:                   # @func0000000000000002
+	vpbroadcastb	.LCPI2_1(%rip), %xmm1   # xmm1 = [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
+	vpsubb	%xmm0, %xmm1, %xmm0
+	vpmovzxbw	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero,xmm0[8],zero,xmm0[9],zero,xmm0[10],zero,xmm0[11],zero,xmm0[12],zero,xmm0[13],zero,xmm0[14],zero,xmm0[15],zero
+	retq

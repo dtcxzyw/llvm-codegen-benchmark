@@ -1,0 +1,24 @@
+func0000000000000001:                   # @func0000000000000001
+	cmpq	$1, %rdx
+	sete	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	testq	%rdx, %rdx
+	setne	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$4097, %rdx                     # imm = 0x1001
+	setb	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	shrq	$32, %rdx
+	setne	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq

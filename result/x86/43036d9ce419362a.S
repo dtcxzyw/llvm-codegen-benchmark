@@ -1,0 +1,23 @@
+func0000000000000000:                   # @func0000000000000000
+	leaq	15(,%rdi,4), %rax
+	andq	$-8, %rax
+	leaq	(%rax,%rdi,2), %rax
+	retq
+func0000000000000055:                   # @func0000000000000055
+	leaq	14(,%rdi,8), %rax
+	andq	$-16, %rax
+	shlq	$4, %rdi
+	addq	%rdi, %rax
+	retq
+func0000000000000054:                   # @func0000000000000054
+	leaq	7(,%rdi,4), %rax
+	movabsq	$9223372036854775800, %rcx      # imm = 0x7FFFFFFFFFFFFFF8
+	andq	%rax, %rcx
+	leaq	(%rcx,%rdi,8), %rax
+	retq
+func00000000000000ff:                   # @func00000000000000ff
+	leaq	7(,%rdi,4), %rax
+	movabsq	$34359738360, %rcx              # imm = 0x7FFFFFFF8
+	andq	%rax, %rcx
+	leaq	(%rcx,%rdi,8), %rax
+	retq

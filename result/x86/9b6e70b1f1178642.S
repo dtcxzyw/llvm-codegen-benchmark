@@ -1,0 +1,26 @@
+func000000000000000a:                   # @func000000000000000a
+	incl	%edx
+	setns	%al
+	notb	%sil
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000016:                   # @func0000000000000016
+	cmpl	$1096, %edx                     # imm = 0x448
+	setl	%al
+	orb	%sil, %al
+	andb	%dil, %al
+	retq
+func000000000000001c:                   # @func000000000000001c
+	cmpl	$1, %edx
+	setne	%al
+	notb	%sil
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func000000000000001a:                   # @func000000000000001a
+	testl	%edx, %edx
+	setns	%al
+	orb	%sil, %al
+	andb	%dil, %al
+	retq

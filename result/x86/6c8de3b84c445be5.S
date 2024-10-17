@@ -1,0 +1,21 @@
+func0000000000000002:                   # @func0000000000000002
+	movl	%esi, %eax
+	andl	$-321, %eax                     # imm = 0xFEBF
+	orl	%edi, %eax
+	orl	$64, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%esi, %eax
+	andl	$16, %eax
+	orl	%edi, %eax
+	orl	$32, %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	andl	$7680, %esi                     # imm = 0x1E00
+	leal	8192(%rsi,%rdi), %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	orl	$64, %eax
+	retq

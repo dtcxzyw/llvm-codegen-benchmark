@@ -1,0 +1,32 @@
+.LCPI0_0:
+	.quad	0x3ffb333333333333              # double 1.7
+func0000000000000004:                   # @func0000000000000004
+	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
+	vcvttsd2usi	%xmm0, %rax
+	cmpq	%rdi, %rax
+	seta	%al
+	retq
+.LCPI1_0:
+	.quad	0x3fe6666666666666              # double 0.69999999999999996
+func0000000000000008:                   # @func0000000000000008
+	vmulsd	.LCPI1_0(%rip), %xmm0, %xmm0
+	vcvttsd2usi	%xmm0, %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+.LCPI2_0:
+	.quad	0x3fe4cccccccccccd              # double 0.65000000000000002
+func0000000000000009:                   # @func0000000000000009
+	vmulsd	.LCPI2_0(%rip), %xmm0, %xmm0
+	vcvttsd2usi	%xmm0, %rax
+	cmpq	%rdi, %rax
+	setbe	%al
+	retq
+.LCPI3_0:
+	.quad	0x404e000000000000              # double 60
+func0000000000000001:                   # @func0000000000000001
+	vmulsd	.LCPI3_0(%rip), %xmm0, %xmm0
+	vcvttsd2usi	%xmm0, %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq

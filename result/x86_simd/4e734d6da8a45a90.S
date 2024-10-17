@@ -1,0 +1,70 @@
+func000000000000000a:                   # @func000000000000000a
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	1                               # 0x1
+func0000000000000356:                   # @func0000000000000356
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000051:                   # @func0000000000000051
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpsubd	%xmm0, %xmm2, %xmm0
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000006:                   # @func0000000000000006
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	1                               # 0x1
+func000000000000030a:                   # @func000000000000030a
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpbroadcastd	.LCPI4_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func000000000000001a:                   # @func000000000000001a
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000016:                   # @func0000000000000016
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	3                               # 0x3
+func0000000000000104:                   # @func0000000000000104
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpcmpltud	.LCPI7_0(%rip){1to4}, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,20 @@
+func0000000000000010:                   # @func0000000000000010
+	cmpb	$17, %dl
+	setae	%al
+	notb	%sil
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000002:                   # @func0000000000000002
+	cmpb	$19, %dl
+	sete	%al
+	notb	%sil
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	%dl, %dl
+	setne	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq

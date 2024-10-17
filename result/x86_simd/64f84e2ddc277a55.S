@@ -1,0 +1,76 @@
+.LCPI0_0:
+	.long	7                               # 0x7
+.LCPI0_1:
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+	.short	9                               # 0x9
+func0000000000000748:                   # @func0000000000000748
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpgtd	%ymm1, %ymm2, %k0
+	vpcmpltuw	.LCPI0_1(%rip), %xmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	24                              # 0x18
+.LCPI1_1:
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+	.short	24                              # 0x18
+func00000000000006a2:                   # @func00000000000006a2
+	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpleud	%ymm1, %ymm2, %k0
+	vpcmpeqw	.LCPI1_1(%rip), %xmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	2                               # 0x2
+func0000000000000782:                   # @func0000000000000782
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpneqd	%ymm1, %ymm2, %k0
+	vptestnmw	%xmm0, %xmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	4294967293                      # 0xfffffffd
+.LCPI3_1:
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+	.short	65532                           # 0xfffc
+func000000000000036c:                   # @func000000000000036c
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpnltd	%ymm1, %ymm2, %k0
+	vpcmpltw	.LCPI3_1(%rip), %xmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000082:                   # @func0000000000000082
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vpcmpltud	%ymm1, %ymm2, %k0
+	vptestnmw	%xmm0, %xmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

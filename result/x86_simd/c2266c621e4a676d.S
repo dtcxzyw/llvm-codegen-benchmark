@@ -1,0 +1,20 @@
+func000000000000002c:                   # @func000000000000002c
+	vxorpd	%xmm3, %xmm3, %xmm3
+	vcmpltpd	%zmm3, %zmm1, %k0
+	vcmpltpd	%zmm3, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vptestmb	%xmm0, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000001c:                   # @func000000000000001c
+	vxorpd	%xmm3, %xmm3, %xmm3
+	vcmpunordpd	%zmm3, %zmm1, %k0
+	vcmpunordpd	%zmm3, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vptestmb	%xmm0, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

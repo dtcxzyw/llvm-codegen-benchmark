@@ -1,0 +1,13 @@
+func0000000000000018:                   # @func0000000000000018
+	vpmovqd	%ymm1, %xmm1
+	vpmulld	%xmm0, %xmm0, %xmm0
+	vpcmpnleud	%xmm1, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000001a:                   # @func000000000000001a
+	vpmovqd	%ymm1, %xmm1
+	vpmulld	%xmm0, %xmm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq

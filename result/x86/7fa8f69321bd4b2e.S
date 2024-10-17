@@ -1,0 +1,56 @@
+func0000000000000018:                   # @func0000000000000018
+	sarq	$63, %rdx
+	andl	%esi, %edx
+	leal	(%rdx,%rdi), %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	xorl	%eax, %eax
+	shrq	$37, %rdx
+	cmovnel	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	sarq	$63, %rdx
+	andl	%esi, %edx
+	leal	(%rdx,%rdi), %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	cmpq	$2048, %rdx                     # imm = 0x800
+	movl	$-2, %eax
+	cmovbl	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000021:                   # @func0000000000000021
+	xorl	%eax, %eax
+	cmpq	$20480, %rdx                    # imm = 0x5000
+	cmovael	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	sarq	$63, %rdx
+	andnl	%esi, %edx, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	sarq	$63, %rdx
+	andnl	%esi, %edx, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$1, %rdx
+	movl	$31, %eax
+	cmovel	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	xorl	%eax, %eax
+	cmpq	$2, %rdx
+	cmovel	%esi, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000031:                   # @func0000000000000031
+	xorl	%eax, %eax
+	testq	%rdx, %rdx
+	cmovnel	%esi, %eax
+	addl	%edi, %eax
+	retq

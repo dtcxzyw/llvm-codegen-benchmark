@@ -1,0 +1,4 @@
+func0000000000000001:                   # @func0000000000000001
+	andl	%esi, %edi
+	movzbl	%dil, %eax
+	retq

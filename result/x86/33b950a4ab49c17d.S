@@ -1,0 +1,208 @@
+func0000000000000022:                   # @func0000000000000022
+	testl	%edx, %edx
+	sete	%cl
+	andb	%sil, %cl
+	cmpl	$2064, %edi                     # imm = 0x810
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000182:                   # @func0000000000000182
+	testl	%edx, %edx
+	setne	%cl
+	andb	%sil, %cl
+	cmpl	$2064, %edi                     # imm = 0x810
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000190:                   # @func0000000000000190
+	cmpl	$5, %edx
+	setne	%cl
+	andb	%sil, %cl
+	cmpl	$16777216, %edi                 # imm = 0x1000000
+	setae	%al
+	orb	%cl, %al
+	retq
+func0000000000000038:                   # @func0000000000000038
+	testl	%edx, %edx
+	sete	%cl
+	andb	%sil, %cl
+	testl	%edi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
+func0000000000000158:                   # @func0000000000000158
+	cmpl	$2, %edx
+	setge	%cl
+	andb	%sil, %cl
+	testl	%edi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
+func0000000000000198:                   # @func0000000000000198
+	testl	%edx, %edx
+	setne	%cl
+	andb	%dil, %cl
+	testl	%esi, %esi
+	setne	%al
+	orb	%cl, %al
+	retq
+func0000000000000102:                   # @func0000000000000102
+	cmpl	$2, %edx
+	setae	%cl
+	andb	%sil, %cl
+	testl	%edi, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
+func00000000000000cc:                   # @func00000000000000cc
+	testl	%edx, %edx
+	setle	%cl
+	andb	%dil, %cl
+	testl	%esi, %esi
+	sets	%al
+	orb	%cl, %al
+	retq
+func000000000000018c:                   # @func000000000000018c
+	testl	%edx, %edx
+	setne	%cl
+	andb	%dil, %cl
+	testl	%esi, %esi
+	sets	%al
+	orb	%cl, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpl	$58, %edx
+	sete	%cl
+	andb	%sil, %cl
+	cmpl	$32, %edi
+	setae	%al
+	orb	%cl, %al
+	retq
+func0000000000000142:                   # @func0000000000000142
+	testl	%edx, %edx
+	setg	%cl
+	andb	%sil, %cl
+	cmpl	$4, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
+	testl	%edx, %edx
+	sete	%cl
+	andb	%dil, %cl
+	testl	%esi, %esi
+	setle	%al
+	orb	%cl, %al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	cmpl	$30288, %edx                    # imm = 0x7650
+	setb	%cl
+	andb	%sil, %cl
+	cmpl	$11172, %edi                    # imm = 0x2BA4
+	setb	%al
+	orb	%cl, %al
+	retq
+func0000000000000188:                   # @func0000000000000188
+	cmpl	$12351, %edx                    # imm = 0x303F
+	setne	%cl
+	andb	%sil, %cl
+	cmpl	$11172, %edi                    # imm = 0x2BA4
+	setb	%al
+	orb	%cl, %al
+	retq
+func000000000000014c:                   # @func000000000000014c
+	cmpl	$2, %edx
+	setge	%cl
+	andb	%dil, %cl
+	testl	%esi, %esi
+	setle	%al
+	orb	%cl, %al
+	retq
+func0000000000000082:                   # @func0000000000000082
+	cmpl	$16, %edx
+	setb	%cl
+	andb	%sil, %cl
+	cmpl	$1, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000098:                   # @func0000000000000098
+	cmpl	$-2, %edx
+	setb	%cl
+	andb	%dil, %cl
+	cmpl	$12, %esi
+	setne	%al
+	orb	%cl, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$1, %edx
+	sete	%cl
+	andb	%sil, %cl
+	cmpl	$6, %edi
+	setb	%al
+	orb	%cl, %al
+	retq
+func0000000000000194:                   # @func0000000000000194
+	testl	%edx, %edx
+	setne	%cl
+	andb	%sil, %cl
+	testl	%edi, %edi
+	setg	%al
+	orb	%cl, %al
+	retq
+func0000000000000148:                   # @func0000000000000148
+	cmpl	$1073741824, %edx               # imm = 0x40000000
+	setge	%cl
+	andb	%sil, %cl
+	cmpl	$1073741823, %edi               # imm = 0x3FFFFFFF
+	setb	%al
+	orb	%cl, %al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	cmpl	$2139095040, %edx               # imm = 0x7F800000
+	sete	%cl
+	andb	%dil, %cl
+	cmpl	$16, %esi
+	setge	%al
+	orb	%cl, %al
+	retq
+func00000000000000c2:                   # @func00000000000000c2
+	cmpl	$420, %edx                      # imm = 0x1A4
+	setl	%cl
+	andb	%sil, %cl
+	cmpl	$1, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000114:                   # @func0000000000000114
+	cmpl	$32, %edx
+	setae	%cl
+	andb	%sil, %cl
+	cmpl	$3, %edi
+	setge	%al
+	orb	%cl, %al
+	retq
+func0000000000000154:                   # @func0000000000000154
+	cmpl	$2, %edx
+	setge	%cl
+	andb	%sil, %cl
+	cmpl	$2, %edi
+	setge	%al
+	orb	%cl, %al
+	retq
+func000000000000008c:                   # @func000000000000008c
+	cmpl	$5, %edx
+	setb	%cl
+	andb	%sil, %cl
+	cmpl	$11, %edi
+	setl	%al
+	orb	%cl, %al
+	retq
+func0000000000000118:                   # @func0000000000000118
+	cmpl	$2, %edx
+	setae	%cl
+	andb	%dil, %cl
+	cmpl	$2, %esi
+	setne	%al
+	orb	%cl, %al
+	retq

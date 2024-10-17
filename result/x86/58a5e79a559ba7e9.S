@@ -1,0 +1,10 @@
+func0000000000000385:                   # @func0000000000000385
+	movl	$32, %eax
+	subl	%edx, %eax
+	cmpl	$2, %esi
+	movl	$1, %ecx
+	cmovael	%eax, %ecx
+	addl	%edi, %ecx
+	movl	$24, %eax
+	subl	%ecx, %eax
+	retq

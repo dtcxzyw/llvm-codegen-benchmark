@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.quad	0x4080000000000000              # double 512
+func0000000000000000:                   # @func0000000000000000
+	vcvtuqq2pd	%ymm1, %ymm1
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vbroadcastsd	.LCPI0_0(%rip), %ymm1   # ymm1 = [5.12E+2,5.12E+2,5.12E+2,5.12E+2]
+	vdivpd	%ymm0, %ymm1, %ymm0
+	retq

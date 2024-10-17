@@ -1,0 +1,6 @@
+func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
+	testb	$16, %dl
+	cmovnel	%esi, %eax
+	leal	-1(%rax,%rdi), %eax
+	retq

@@ -1,0 +1,26 @@
+func0000000000000018:                   # @func0000000000000018
+	addl	%edx, %edx
+	leal	(%rdx,%rdx,4), %eax
+	cmpl	%esi, %eax
+	setne	%al
+	orb	%dil, %al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	imull	$1000, %edx, %eax               # imm = 0x3E8
+	addl	%esi, %eax
+	sets	%al
+	orb	%dil, %al
+	retq
+func00000000000000b0:                   # @func00000000000000b0
+	leal	(%rdx,%rdx,2), %eax
+	addl	%esi, %eax
+	cmpl	$7, %eax
+	setae	%al
+	orb	%dil, %al
+	retq
+func00000000000000ac:                   # @func00000000000000ac
+	leal	(%rdx,%rdx,2), %eax
+	addl	%esi, %eax
+	sets	%al
+	orb	%dil, %al
+	retq

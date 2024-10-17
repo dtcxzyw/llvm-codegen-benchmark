@@ -1,0 +1,18 @@
+func000000000000000e:                   # @func000000000000000e
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpsubd	%ymm3, %ymm2, %ymm2
+	vcvtdq2ps	%ymm2, %ymm2
+	vfmadd213ps	%ymm1, %ymm2, %ymm0     # ymm0 = (ymm2 * ymm0) + ymm1
+	retq
+func0000000000000000:                   # @func0000000000000000
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vcvtudq2ps	%ymm2, %ymm2
+	vfmadd213ps	%ymm1, %ymm2, %ymm0     # ymm0 = (ymm2 * ymm0) + ymm1
+	retq
+func0000000000000006:                   # @func0000000000000006
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vcvtdq2ps	%ymm2, %ymm2
+	vfmadd213ps	%ymm1, %ymm2, %ymm0     # ymm0 = (ymm2 * ymm0) + ymm1
+	retq

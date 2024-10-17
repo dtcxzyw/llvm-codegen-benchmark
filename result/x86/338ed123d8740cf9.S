@@ -1,0 +1,12 @@
+func0000000000000005:                   # @func0000000000000005
+	subq	%rsi, %rdx
+	shrq	$12, %rdx
+	leaq	-1(%rdi,%rdx), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	subq	%rsi, %rdx
+	shrq	$2, %rdx
+	movl	$4294967232, %eax               # imm = 0xFFFFFFC0
+	addq	%rdi, %rax
+	addq	%rdx, %rax
+	retq

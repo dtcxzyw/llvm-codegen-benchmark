@@ -1,0 +1,42 @@
+func0000000000000036:                   # @func0000000000000036
+	leal	31(%rdx), %eax
+	testl	%edx, %edx
+	cmovnsl	%edx, %eax
+	sarl	$5, %eax
+	cltq
+	addq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	%edx, %eax
+	shrl	$31, %eax
+	addl	%edx, %eax
+	sarl	%eax
+	cltq
+	addq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	leal	31(%rdx), %eax
+	testl	%edx, %edx
+	cmovnsl	%edx, %eax
+	sarl	$5, %eax
+	cltq
+	addq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movslq	%edx, %rax
+	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	cltq
+	addq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	seta	%al
+	retq

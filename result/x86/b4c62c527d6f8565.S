@@ -1,0 +1,14 @@
+func0000000000000011:                   # @func0000000000000011
+	cmpl	$1025, %edi                     # imm = 0x401
+	movl	$8, %eax
+	movl	$2, %ecx
+	cmovael	%eax, %ecx
+	vcvtsi2sd	%ecx, %xmm0, %xmm0
+	retq
+func0000000000000003:                   # @func0000000000000003
+	xorl	%eax, %eax
+	testl	%edi, %edi
+	sete	%al
+	leal	1(%rax,%rax,8), %eax
+	vcvtsi2sd	%eax, %xmm0, %xmm0
+	retq

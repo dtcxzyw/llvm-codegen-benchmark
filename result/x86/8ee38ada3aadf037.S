@@ -1,0 +1,12 @@
+func0000000000000002:                   # @func0000000000000002
+	testb	$16, %dil
+	sete	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	shrb	$7, %al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	testb	$12, %dil
+	setne	%al
+	retq

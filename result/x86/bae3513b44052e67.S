@@ -1,0 +1,99 @@
+func0000000000000011:                   # @func0000000000000011
+	leal	86400(%rdi), %ecx
+	leal	-86400(%rdi), %eax
+	cmpl	%edx, %esi
+	cmovael	%ecx, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setle	%al
+	leal	-1(%rdi,%rax,2), %eax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setl	%al
+	leal	-1(%rdi,%rax,2), %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	leal	7(%rdi), %eax
+	cmpl	%edx, %esi
+	cmovlel	%edi, %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	sete	%al
+	leal	-9(%rdi,%rax,2), %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	sete	%al
+	leal	-9(%rdi,%rax,2), %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	seta	%al
+	shll	$7, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	leal	57(%rdi), %ecx
+	leal	144(%rdi), %eax
+	cmpl	%edx, %esi
+	cmovgel	%ecx, %eax
+	retq
+func000000000000002f:                   # @func000000000000002f
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setl	%al
+	leal	1(%rax,%rdi), %eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setl	%al
+	leal	1(%rax,%rdi), %eax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	cmpl	%edx, %esi
+	movl	$5, %eax
+	sbbl	$0, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	movl	%edi, %eax
+	cmpl	%esi, %edx
+	adcl	$1, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	cmpl	%edx, %esi
+	sbbl	$0, %edi
+	leal	4(%rdi), %eax
+	retq
+func000000000000002d:                   # @func000000000000002d
+	leal	29(%rdi), %ecx
+	leal	51(%rdi), %eax
+	cmpl	%edx, %esi
+	cmovgel	%ecx, %eax
+	retq
+func000000000000001d:                   # @func000000000000001d
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setg	%al
+	leal	-1(%rdi,%rax,2), %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	leal	255(%rdi), %eax
+	cmpl	%edx, %esi
+	cmovel	%edi, %eax
+	retq
+func0000000000000027:                   # @func0000000000000027
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setae	%al
+	leal	4(%rdi,%rax,2), %eax
+	retq

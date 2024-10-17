@@ -1,0 +1,41 @@
+func0000000000000008:                   # @func0000000000000008
+	negq	%rdx
+	cmpq	%rdi, %rdx
+	seta	%al
+	andb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	negq	%rdx
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovneq	%rdx, %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
+	movl	$5, %eax
+	movl	$5, %ecx
+	subq	%rdx, %rcx
+	testb	$1, %sil
+	cmoveq	%rax, %rcx
+	cmpq	%rdi, %rcx
+	seta	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	$15, %eax
+	subq	%rdx, %rax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmovneq	%rax, %rcx
+	cmpq	%rdi, %rcx
+	setb	%al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	movl	$1000000, %eax                  # imm = 0xF4240
+	subq	%rdx, %rax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmovneq	%rax, %rcx
+	cmpq	%rdi, %rcx
+	setb	%al
+	retq

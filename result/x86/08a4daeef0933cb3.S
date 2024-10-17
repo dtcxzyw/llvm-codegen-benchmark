@@ -1,0 +1,44 @@
+func0000000000000040:                   # @func0000000000000040
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000050:                   # @func0000000000000050
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000052:                   # @func0000000000000052
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq

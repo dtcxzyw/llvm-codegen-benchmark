@@ -1,0 +1,4 @@
+func0000000000000003:                   # @func0000000000000003
+	leal	(%rsi,%rdx,8), %eax
+	addq	%rdi, %rax
+	retq

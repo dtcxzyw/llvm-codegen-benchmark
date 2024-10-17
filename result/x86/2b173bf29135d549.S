@@ -1,0 +1,14 @@
+.LCPI0_0:
+	.long	0x41f00000                      # float 30
+func0000000000000000:                   # @func0000000000000000
+	vcvtusi2ss	%edi, %xmm0, %xmm0
+	vdivss	.LCPI0_0(%rip), %xmm0, %xmm0
+	vcvtss2sd	%xmm0, %xmm0, %xmm0
+	retq
+.LCPI1_0:
+	.long	0x447a0000                      # float 1000
+func0000000000000001:                   # @func0000000000000001
+	vcvtsi2ss	%edi, %xmm0, %xmm0
+	vdivss	.LCPI1_0(%rip), %xmm0, %xmm0
+	vcvtss2sd	%xmm0, %xmm0, %xmm0
+	retq

@@ -1,0 +1,13 @@
+.LCPI0_0:
+	.long	0x3f000000                      # float 0.5
+	.long	0x3f666666                      # float 0.899999976
+.LCPI0_1:
+	.long	0x3dcccccd                      # float 0.100000001
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	cmpl	$4, %esi
+	sete	%al
+	vmovss	.LCPI0_0(,%rax,4), %xmm0        # xmm0 = mem[0],zero,zero,zero
+	kmovd	%edi, %k1
+	vmovss	.LCPI0_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.00000001E-1,0.0E+0,0.0E+0,0.0E+0]
+	retq

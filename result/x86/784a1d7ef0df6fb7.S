@@ -1,0 +1,10 @@
+func000000000000001f:                   # @func000000000000001f
+	leal	3(%rsi), %ecx
+	movzbl	%dil, %eax
+	imull	%ecx, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leal	-1(%rsi), %eax
+	andl	$2147483647, %edi               # imm = 0x7FFFFFFF
+	imull	%edi, %eax
+	retq

@@ -1,0 +1,17 @@
+func000000000000001c:                   # @func000000000000001c
+	addl	$64768, %esi                    # imm = 0xFD00
+	movzwl	%si, %eax
+	leaq	3136(%rdi,%rax,4), %rax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	decl	%esi
+	andl	$31, %esi
+	leaq	1(%rsi,%rdi), %rax
+	retq
+func000000000000002e:                   # @func000000000000002e
+	incl	%esi
+	andl	$7, %esi
+	decl	%esi
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	(%rdi,%rax,8), %rax
+	retq

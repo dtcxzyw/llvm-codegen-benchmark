@@ -1,0 +1,20 @@
+func0000000000000005:                   # @func0000000000000005
+	andl	$7, %esi
+	leal	-1(%rsi,%rdi), %eax
+	andl	$-8, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$-8, %esi
+	leal	15(%rsi,%rdi), %eax
+	andl	$-16, %eax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	andl	$31, %esi
+	leal	65408(%rsi,%rdi), %eax
+	movzwl	%ax, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	andl	$4095, %esi                     # imm = 0xFFF
+	leal	4095(%rsi,%rdi), %eax
+	andl	$-4096, %eax                    # imm = 0xF000
+	retq

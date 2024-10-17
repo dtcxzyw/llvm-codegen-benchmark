@@ -1,0 +1,28 @@
+func0000000000000000:                   # @func0000000000000000
+	leaq	(%rdx,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func00000000000002aa:                   # @func00000000000002aa
+	leaq	(%rsi,%rsi), %rax
+	addq	%rdx, %rax
+	addq	%rsi, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	(%rdx,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func00000000000000aa:                   # @func00000000000000aa
+	leaq	(%rdx,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq

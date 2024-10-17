@@ -1,0 +1,6 @@
+func000000000000003e:                   # @func000000000000003e
+	movzbl	%dl, %eax
+	movl	%esi, %ecx
+	addq	%rax, %rcx
+	leaq	8(%rdi,%rcx,4), %rax
+	retq

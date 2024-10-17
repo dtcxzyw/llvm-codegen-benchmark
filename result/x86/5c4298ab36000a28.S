@@ -1,0 +1,18 @@
+func0000000000000000:                   # @func0000000000000000
+	movabsq	$8317987319222330741, %rcx      # imm = 0x736F6D6570736575
+	xorq	%rsi, %rcx
+	movabsq	$7237128888997146477, %rax      # imm = 0x646F72616E646F6D
+	xorq	%rdi, %rax
+	addq	%rax, %rcx
+	rorxq	$51, %rax, %rax
+	xorq	%rcx, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movabsq	$7237128888997146477, %rcx      # imm = 0x646F72616E646F6D
+	xorq	%rsi, %rcx
+	rorxq	$51, %rcx, %rdx
+	movabsq	$8317987319222330741, %rax      # imm = 0x736F6D6570736575
+	xorq	%rdi, %rax
+	addq	%rcx, %rax
+	xorq	%rdx, %rax
+	retq

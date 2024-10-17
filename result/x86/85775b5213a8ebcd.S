@@ -1,0 +1,8 @@
+func000000000000000c:                   # @func000000000000000c
+	orq	$1, %rdi
+	shlxq	%rsi, %rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	orq	$2, %rdi
+	shlxq	%rsi, %rdi, %rax
+	retq

@@ -1,0 +1,10 @@
+func0000000000000034:                   # @func0000000000000034
+	leal	87(%rsi), %eax
+	cmpw	$10, %si
+	cmovbl	%edi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	%esi, %eax
+	subw	$1, %ax
+	cmovbl	%edi, %eax
+	retq

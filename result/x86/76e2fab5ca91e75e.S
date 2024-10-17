@@ -1,0 +1,19 @@
+func000000000000000c:                   # @func000000000000000c
+	cmpw	$80, %dx
+	setne	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	cmpw	$2, %dx
+	sete	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movzwl	%dx, %eax
+	cmpl	$1024, %eax                     # imm = 0x400
+	setae	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq

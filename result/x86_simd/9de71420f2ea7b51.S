@@ -1,0 +1,18 @@
+.LCPI0_0:
+	.quad	255                             # 0xff
+.LCPI0_1:
+	.long	8388607                         # 0x7fffff
+func00000000000000c1:                   # @func00000000000000c1
+	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
+	vptestmd	.LCPI0_1(%rip){1to4}, %xmm1, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	1                               # 0x1
+func00000000000001c1:                   # @func00000000000001c1
+	vptestmd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
+	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

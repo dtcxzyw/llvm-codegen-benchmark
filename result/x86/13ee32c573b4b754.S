@@ -1,0 +1,33 @@
+func0000000000000011:                   # @func0000000000000011
+	andl	$188, %esi
+	xorl	%eax, %eax
+	cmpl	$128, %esi
+	movl	$6, %ecx
+	cmovnel	%ecx, %eax
+	cmpb	$-4, %dil
+	cmovnel	%ecx, %eax
+	retq
+func000000000000004c:                   # @func000000000000004c
+	cmpb	$2, %dil
+	setb	%al
+	andb	%sil, %al
+	movzbl	%al, %eax
+	orl	$-6, %eax
+	retq
+func000000000000008c:                   # @func000000000000008c
+	andl	$15, %esi
+	cmpl	$3, %esi
+	movl	$16, %eax
+	movl	$4, %ecx
+	cmovbl	%ecx, %eax
+	testb	%dil, %dil
+	cmovel	%ecx, %eax
+	retq
+func000000000000001c:                   # @func000000000000001c
+	xorl	%eax, %eax
+	cmpb	$48, %dil
+	movl	$10, %ecx
+	cmovnel	%ecx, %eax
+	testb	$16, %sil
+	cmovel	%ecx, %eax
+	retq

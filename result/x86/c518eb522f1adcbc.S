@@ -1,0 +1,18 @@
+func0000000000000000:                   # @func0000000000000000
+	leaq	(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	cmovaq	%rdi, %rax
+	decq	%rax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	leaq	(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	cmovaq	%rdi, %rax
+	decq	%rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	leaq	(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
+	cmovaq	%rdi, %rax
+	addq	$7, %rax
+	retq

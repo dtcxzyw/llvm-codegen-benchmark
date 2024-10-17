@@ -1,0 +1,8 @@
+func0000000000000038:                   # @func0000000000000038
+	shrxq	%rdx, %rsi, %rax
+	shrxq	%rdi, %rax, %rcx
+	btq	%rdi, %rax
+	adcq	$0, %rcx
+	cmpq	$16777216, %rcx                 # imm = 0x1000000
+	setae	%al
+	retq

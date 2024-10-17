@@ -1,0 +1,25 @@
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	cmpl	$-1, %edi
+	cmovnel	%edi, %eax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	testl	%edi, %edi
+	movl	$14, %eax
+	cmovnsl	%edi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movl	%edi, %eax
+	sarl	$31, %eax
+	andl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpl	$10, %edi
+	cmovbl	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	cmpl	$2, %edi
+	cmovael	%edi, %eax
+	retq

@@ -1,0 +1,7 @@
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	shrq	$16, %rax
+	cmpq	$65536, %rdi                    # imm = 0x10000
+	cmovbq	%rdi, %rax
+	shrq	$8, %rax
+	retq

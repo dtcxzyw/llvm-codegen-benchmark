@@ -1,0 +1,44 @@
+.LCPI0_0:
+	.long	163                             # 0xa3
+func0000000000000011:                   # @func0000000000000011
+	vpminsd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
+	vpmovsxdq	%xmm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
+	vpcmpeqq	%ymm1, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	25                              # 0x19
+func0000000000000016:                   # @func0000000000000016
+	vpminsd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
+	vpmovsxdq	%xmm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
+	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	128                             # 0x80
+func0000000000000031:                   # @func0000000000000031
+	vpminsd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
+	vpmovsxdq	%xmm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
+	vpcmpeqq	%ymm1, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	64                              # 0x40
+func0000000000000036:                   # @func0000000000000036
+	vpminsd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
+	vpmovsxdq	%xmm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
+	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

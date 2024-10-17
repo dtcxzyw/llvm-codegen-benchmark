@@ -1,0 +1,115 @@
+.LCPI0_0:
+	.byte	45                              # 0x2d
+	.byte	45                              # 0x2d
+	.byte	45                              # 0x2d
+	.byte	45                              # 0x2d
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000010:                   # @func0000000000000010
+	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k0
+	vpmovm2q	%k0, %ymm2
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm0
+	retq
+.LCPI1_0:
+	.byte	61                              # 0x3d
+	.byte	61                              # 0x3d
+	.byte	61                              # 0x3d
+	.byte	61                              # 0x3d
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000015:                   # @func0000000000000015
+	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k0
+	vpmovm2q	%k0, %ymm2
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm0
+	retq
+.LCPI2_0:
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000067:                   # @func0000000000000067
+	vpcmpltb	.LCPI2_0(%rip), %xmm2, %k0
+	vpmovm2q	%k0, %ymm2
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm0
+	retq
+.LCPI3_0:
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000065:                   # @func0000000000000065
+	vpcmpltb	.LCPI3_0(%rip), %xmm2, %k0
+	vpmovm2q	%k0, %ymm2
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm0
+	retq
+.LCPI4_0:
+	.byte	46                              # 0x2e
+	.byte	46                              # 0x2e
+	.byte	46                              # 0x2e
+	.byte	46                              # 0x2e
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000014:                   # @func0000000000000014
+	vpcmpeqb	.LCPI4_0(%rip), %xmm2, %k0
+	vpmovm2q	%k0, %ymm2
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm0, %ymm2, %ymm0
+	retq

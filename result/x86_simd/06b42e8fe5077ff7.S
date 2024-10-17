@@ -1,0 +1,18 @@
+func0000000000000014:                   # @func0000000000000014
+	vpaddd	%xmm2, %xmm2, %xmm2
+	vpmovsxdq	%xmm2, %ymm2
+	vpmullq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000015:                   # @func0000000000000015
+	vpaddd	%xmm2, %xmm2, %xmm2
+	vpmovsxdq	%xmm2, %ymm2
+	vpmullq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vpslld	$4, %xmm2, %xmm2
+	vpmovsxdq	%xmm2, %ymm2
+	vpmullq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq

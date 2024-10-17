@@ -1,0 +1,12 @@
+func000000000000000a:                   # @func000000000000000a
+	cmpq	%rdx, %rsi
+	cmovbq	%rsi, %rdx
+	leaq	(%rdi,%rsi), %rax
+	subq	%rdx, %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	cmpq	%rsi, %rdx
+	cmovaeq	%rsi, %rdx
+	leaq	(%rdi,%rsi), %rax
+	subq	%rdx, %rax
+	retq

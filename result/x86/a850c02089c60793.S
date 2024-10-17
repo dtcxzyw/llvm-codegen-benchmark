@@ -1,0 +1,15 @@
+func0000000000000003:                   # @func0000000000000003
+	movzwl	%si, %eax
+	addl	%edi, %eax
+	shlq	$2, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movzwl	%si, %eax
+	addl	%edi, %eax
+	shlq	$32, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movzwl	%si, %eax
+	addl	%edi, %eax
+	shlq	$3, %rax
+	retq

@@ -1,0 +1,18 @@
+func000000000000000a:                   # @func000000000000000a
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpsllq	$32, %ymm2, %ymm2
+	vpternlogq	$54, %ymm1, %ymm0, %ymm2 # ymm2 = ymm0 ^ (ymm2 | ymm1)
+	vprolq	$49, %ymm2, %ymm0
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpsllq	$32, %ymm2, %ymm2
+	vpternlogq	$54, %ymm1, %ymm0, %ymm2 # ymm2 = ymm0 ^ (ymm2 | ymm1)
+	vprolq	$16, %ymm2, %ymm0
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpsllq	$56, %ymm2, %ymm2
+	vpternlogq	$54, %ymm1, %ymm0, %ymm2 # ymm2 = ymm0 ^ (ymm2 | ymm1)
+	vprolq	$16, %ymm2, %ymm0
+	retq

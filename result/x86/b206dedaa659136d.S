@@ -1,0 +1,22 @@
+func0000000000000006:                   # @func0000000000000006
+	testq	%rdx, %rdx
+	movq	$-34, %rax
+	cmovnsq	%rdx, %rax
+	testb	$1, %dil
+	cmovneq	%rsi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movabsq	$4611686018427387899, %rax      # imm = 0x3FFFFFFFFFFFFFFB
+	cmpq	%rax, %rdx
+	movabsq	$-4611686018427387906, %rax     # imm = 0xBFFFFFFFFFFFFFFE
+	cmovbeq	%rdx, %rax
+	testb	$1, %dil
+	cmovneq	%rsi, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	testq	%rdx, %rdx
+	movl	$25, %eax
+	cmovleq	%rdx, %rax
+	testb	$1, %dil
+	cmovneq	%rsi, %rax
+	retq

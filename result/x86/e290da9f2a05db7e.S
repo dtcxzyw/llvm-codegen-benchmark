@@ -1,0 +1,38 @@
+func0000000000000003:                   # @func0000000000000003
+	incb	%dil
+	movzbl	%dil, %eax
+	shll	$3, %eax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	movzbl	%dil, %eax
+	leal	2(%rax,%rax), %eax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	movzbl	%dil, %eax
+	leal	2(%rax,%rax), %eax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	addb	$-48, %dil
+	movzbl	%dil, %eax
+	shll	$3, %eax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	addb	$64, %dil
+	movzbl	%dil, %eax
+	shll	$24, %eax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	addb	$-7, %dil
+	movzbl	%dil, %eax
+	shll	$3, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	addb	$-8, %dil
+	movzbl	%dil, %eax
+	shll	$24, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	addb	$-40, %dil
+	movzbl	%dil, %eax
+	shll	$23, %eax
+	retq

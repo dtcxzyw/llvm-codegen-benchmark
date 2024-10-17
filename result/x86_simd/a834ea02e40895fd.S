@@ -1,0 +1,10 @@
+.LCPI0_0:
+	.long	1233                            # 0x4d1
+.LCPI0_1:
+	.long	145494                          # 0x23856
+func0000000000000000:                   # @func0000000000000000
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	vpsrad	$12, %ymm0, %ymm0
+	retq

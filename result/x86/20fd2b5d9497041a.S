@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.long	0x3e63d838                      # float 0.222504497
+func0000000000000000:                   # @func0000000000000000
+	vmovss	.LCPI0_0(%rip), %xmm2           # xmm2 = [2.22504497E-1,0.0E+0,0.0E+0,0.0E+0]
+	vmulss	%xmm2, %xmm1, %xmm1
+	kmovd	%edi, %k1
+	vmovss	%xmm2, %xmm1, %xmm1 {%k1}
+	vaddss	%xmm0, %xmm1, %xmm0
+	retq

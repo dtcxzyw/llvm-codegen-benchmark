@@ -1,0 +1,52 @@
+func0000000000000061:                   # @func0000000000000061
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	setne	%al
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000059:                   # @func0000000000000059
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	setge	%al
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	sete	%al
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000039:                   # @func0000000000000039
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	setle	%al
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000040:                   # @func0000000000000040
+	cmpq	%rsi, %rdx
+	adcl	$0, %edi
+	movslq	%edi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	sete	%al
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000031:                   # @func0000000000000031
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	setl	%al
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000021:                   # @func0000000000000021
+	cmpq	%rdx, %rsi
+	adcl	$0, %edi
+	movslq	%edi, %rax
+	retq

@@ -1,0 +1,6 @@
+func0000000000000000:                   # @func0000000000000000
+	vprold	$10, %ymm2, %ymm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogd	$246, %ymm3, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 ^ ymm3)
+	retq

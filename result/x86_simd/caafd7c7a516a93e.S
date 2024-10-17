@@ -1,0 +1,16 @@
+.LCPI0_0:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+func0000000000000008:                   # @func0000000000000008
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpaddw	%xmm2, %xmm1, %xmm1
+	vpcmpltuw	.LCPI0_0(%rip), %xmm1, %k1
+	vmovdqu16	%xmm1, %xmm0 {%k1}
+	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
+	retq

@@ -1,0 +1,60 @@
+func0000000000000004:                   # @func0000000000000004
+	movl	%edi, %eax
+	cmpl	$-1, %edx
+	cmovnel	%esi, %eax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	movl	%edi, %eax
+	cmpl	$3, %edx
+	cmovgel	%esi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	movl	%edi, %eax
+	cmpl	$2, %edx
+	cmovael	%esi, %eax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	movl	%edi, %eax
+	cmpl	$8, %edx
+	cmovbl	%esi, %eax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	movl	%edi, %eax
+	testl	%edx, %edx
+	cmovel	%esi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	%edi, %eax
+	testl	%edx, %edx
+	cmovnel	%esi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	testl	%edx, %edx
+	cmovnsl	%esi, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movl	%edi, %eax
+	cmpl	$2, %edx
+	cmovll	%esi, %eax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	%edi, %eax
+	testl	%edx, %edx
+	cmovnel	%esi, %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movl	%edi, %eax
+	cmpl	$3, %edx
+	cmovnel	%esi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	movl	%edi, %eax
+	cmpl	$14348907, %edx                 # imm = 0xDAF26B
+	cmovael	%esi, %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	movl	%edi, %eax
+	cmpl	$31744, %edx                    # imm = 0x7C00
+	cmovbl	%esi, %eax
+	retq

@@ -1,0 +1,21 @@
+func0000000000000000:                   # @func0000000000000000
+	movzwl	%dx, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmovel	%eax, %ecx
+	leaq	(%rdi,%rcx,8), %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movzwl	%dx, %eax
+	testb	$1, %sil
+	movl	$1, %ecx
+	cmovel	%eax, %ecx
+	leaq	(%rdi,%rcx,4), %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movzwl	%dx, %eax
+	testb	$1, %sil
+	movl	$14, %ecx
+	cmovel	%eax, %ecx
+	leaq	(%rdi,%rcx,8), %rax
+	retq

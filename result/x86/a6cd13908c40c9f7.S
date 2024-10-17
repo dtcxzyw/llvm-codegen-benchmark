@@ -1,0 +1,96 @@
+func0000000000000001:                   # @func0000000000000001
+	subq	%rdx, %rsi
+	addq	%rsi, %rsi
+	cmpq	%rdi, %rsi
+	sete	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	subq	%rdx, %rsi
+	addq	%rsi, %rsi
+	cmpq	%rdi, %rsi
+	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	subq	%rdx, %rsi
+	addq	%rsi, %rsi
+	cmpq	%rdi, %rsi
+	seta	%al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	subq	%rdx, %rsi
+	shlq	$2, %rsi
+	cmpq	%rdi, %rsi
+	seta	%al
+	retq
+func0000000000000081:                   # @func0000000000000081
+	subq	%rdx, %rsi
+	shlq	$4, %rsi
+	cmpq	%rdi, %rsi
+	sete	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	setb	%al
+	retq
+func00000000000000d1:                   # @func00000000000000d1
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	sete	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	sete	%al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	subq	%rdx, %rsi
+	shlq	$28, %rsi
+	cmpq	%rdi, %rsi
+	setne	%al
+	retq
+func0000000000000009:                   # @func0000000000000009
+	subq	%rdx, %rsi
+	addq	%rsi, %rsi
+	cmpq	%rdi, %rsi
+	setae	%al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	setg	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	setl	%al
+	retq
+func000000000000001c:                   # @func000000000000001c
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	setne	%al
+	retq
+func0000000000000016:                   # @func0000000000000016
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	setl	%al
+	retq
+func0000000000000076:                   # @func0000000000000076
+	subq	%rdx, %rsi
+	shlq	$3, %rsi
+	cmpq	%rdi, %rsi
+	setl	%al
+	retq
+func0000000000000058:                   # @func0000000000000058
+	subq	%rdx, %rsi
+	addq	%rsi, %rsi
+	cmpq	%rdi, %rsi
+	seta	%al
+	retq

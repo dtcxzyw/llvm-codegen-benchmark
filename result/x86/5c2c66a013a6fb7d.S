@@ -1,0 +1,16 @@
+.LCPI0_0:
+	.quad	0x412e848000000000              # double 1.0E+6
+func0000000000000000:                   # @func0000000000000000
+	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
+	vcvttsd2si	%xmm0, %rcx
+	movabsq	$4835703278458516699, %rdx      # imm = 0x431BDE82D7B634DB
+	movq	%rcx, %rax
+	imulq	%rdx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$18, %rdx
+	addq	%rax, %rdx
+	imulq	$1000000, %rdx, %rax            # imm = 0xF4240
+	subq	%rax, %rcx
+	movq	%rcx, %rax
+	retq

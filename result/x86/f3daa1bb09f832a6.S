@@ -1,0 +1,15 @@
+func000000000000007a:                   # @func000000000000007a
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	leaq	228(%rdi,%rax,4), %rax
+	retq
+func000000000000004a:                   # @func000000000000004a
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	leaq	32(%rdi,%rax,8), %rax
+	retq
+func0000000000000070:                   # @func0000000000000070
+	movl	$2, %eax
+	shlxl	%esi, %eax, %eax
+	leaq	5960(%rdi,%rax), %rax
+	retq

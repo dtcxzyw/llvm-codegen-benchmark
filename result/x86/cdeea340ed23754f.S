@@ -1,0 +1,96 @@
+func000000000000001c:                   # @func000000000000001c
+	decb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	incb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	decb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	addb	$-6, %sil
+	movl	$-4, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	addb	$-5, %sil
+	movl	$4, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	addb	$-5, %sil
+	movl	$4, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	decb	%sil
+	movl	$-1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	addb	$-7, %sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	decb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	addb	$-6, %sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	decb	%sil
+	movl	$-1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	decb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	incb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	decb	%sil
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	incb	%sil
+	movl	$24, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	addb	$2, %sil
+	movl	$-1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq

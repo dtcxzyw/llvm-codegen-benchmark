@@ -1,0 +1,36 @@
+func0000000000000024:                   # @func0000000000000024
+	vmaxpd	%zmm5, %zmm3, %zmm3
+	vmaxpd	%zmm4, %zmm2, %zmm2
+	vcmpltpd	%zmm2, %zmm0, %k0
+	vcmpltpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000042:                   # @func0000000000000042
+	vminpd	%zmm5, %zmm3, %zmm3
+	vminpd	%zmm4, %zmm2, %zmm2
+	vcmpltpd	%zmm0, %zmm2, %k0
+	vcmpltpd	%zmm1, %zmm3, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000022:                   # @func0000000000000022
+	vminpd	%zmm5, %zmm3, %zmm3
+	vminpd	%zmm4, %zmm2, %zmm2
+	vcmpltpd	%zmm0, %zmm2, %k0
+	vcmpltpd	%zmm1, %zmm3, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000044:                   # @func0000000000000044
+	vmaxpd	%zmm5, %zmm3, %zmm3
+	vmaxpd	%zmm4, %zmm2, %zmm2
+	vcmpltpd	%zmm2, %zmm0, %k0
+	vcmpltpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,5 @@
+func0000000000000000:                   # @func0000000000000000
+	cmpl	%esi, %edi
+	cmoval	%edi, %esi
+	leal	(%rsi,%rdx), %eax
+	retq

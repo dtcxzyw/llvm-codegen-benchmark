@@ -1,0 +1,10 @@
+func0000000000000000:                   # @func0000000000000000
+	subl	%esi, %edi
+	incl	%edi
+	vcvtsi2sd	%edi, %xmm0, %xmm0
+	retq
+func00000000000000a0:                   # @func00000000000000a0
+	subl	%esi, %edi
+	incl	%edi
+	vcvtsi2sd	%edi, %xmm0, %xmm0
+	retq

@@ -1,0 +1,15 @@
+func0000000000000015:                   # @func0000000000000015
+	movslq	%edx, %rax
+	leaq	1(%rax,%rsi), %rax
+	imulq	%rdi, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movslq	%edx, %rax
+	leaq	-1(%rax,%rsi), %rax
+	imulq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movslq	%edx, %rax
+	leaq	1(%rax,%rsi), %rax
+	imulq	%rdi, %rax
+	retq

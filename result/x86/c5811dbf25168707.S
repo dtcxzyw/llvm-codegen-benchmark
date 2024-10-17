@@ -1,0 +1,46 @@
+func0000000000000008:                   # @func0000000000000008
+	leal	7(%rdx), %eax
+	testl	%edx, %edx
+	cmovnsl	%edx, %eax
+	sarl	$3, %eax
+	addl	%esi, %eax
+	cltq
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movslq	%edx, %rax
+	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	addl	%esi, %eax
+	cltq
+	cmpq	%rdi, %rax
+	seta	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movslq	%edx, %rax
+	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	addl	%esi, %eax
+	cltq
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movslq	%edx, %rax
+	imulq	$1717986919, %rax, %rax         # imm = 0x66666667
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	sarq	$33, %rax
+	addl	%ecx, %eax
+	addl	%esi, %eax
+	cltq
+	cmpq	%rdi, %rax
+	setg	%al
+	retq

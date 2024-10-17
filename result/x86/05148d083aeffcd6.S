@@ -1,0 +1,25 @@
+func0000000000000010:                   # @func0000000000000010
+	shrl	%edx
+	addl	%esi, %edx
+	leal	-1(%rdi,%rdx), %eax
+	retq
+func000000000000003c:                   # @func000000000000003c
+	shrl	%edx
+	addl	%esi, %edx
+	leal	1(%rdi,%rdx), %eax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	shrl	$5, %edx
+	addl	%esi, %edx
+	leal	1(%rdi,%rdx), %eax
+	retq
+func000000000000003d:                   # @func000000000000003d
+	shrl	$8, %edx
+	addl	%esi, %edx
+	leal	1(%rdi,%rdx), %eax
+	retq
+func0000000000000031:                   # @func0000000000000031
+	shrl	$2, %edx
+	addl	%esi, %edx
+	leal	1721423(%rdi,%rdx), %eax
+	retq

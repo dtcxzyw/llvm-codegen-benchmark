@@ -1,0 +1,20 @@
+.LCPI0_0:
+	.long	1                               # 0x1
+func0000000000000111:                   # @func0000000000000111
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
+	vpor	%ymm3, %ymm2, %ymm2
+	vpcmpeqd	%ymm3, %ymm0, %k1
+	vpcmpeqd	%ymm1, %ymm2, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	1                               # 0x1
+func00000000000001aa:                   # @func00000000000001aa
+	vpord	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

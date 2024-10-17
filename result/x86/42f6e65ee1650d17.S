@@ -1,0 +1,7 @@
+func0000000000000011:                   # @func0000000000000011
+	leaq	1(%rdi,%rdi), %rax
+	testb	$1, %sil
+	cmoveq	%rdx, %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq

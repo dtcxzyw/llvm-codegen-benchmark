@@ -1,0 +1,8 @@
+func0000000000000374:                   # @func0000000000000374
+	leaq	1(%rdi), %rax
+	shrxq	%rax, %rsi, %rax
+	tzcntq	%rax, %rax
+	leaq	1(%rax,%rdi), %rax
+	cmpq	$64, %rax
+	setb	%al
+	retq

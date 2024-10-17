@@ -1,0 +1,28 @@
+.LCPI0_0:
+	.long	1                               # 0x1
+func0000000000000004:                   # @func0000000000000004
+	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
+	vpsllvd	%xmm1, %xmm2, %xmm1
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	movl	%eax, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm0, %eax
+	cltd
+	idivl	%esi
+	vmovd	%eax, %xmm2
+	vpinsrd	$1, %ecx, %xmm2, %xmm2
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$2, %eax, %xmm2, %xmm2
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vpmovsxdq	%xmm0, %ymm0
+	retq

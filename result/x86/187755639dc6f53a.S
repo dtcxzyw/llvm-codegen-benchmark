@@ -1,0 +1,18 @@
+func0000000000000050:                   # @func0000000000000050
+	subl	%edx, %esi
+	addl	%esi, %esi
+	movslq	%esi, %rax
+	leaq	8(%rdi,%rax,4), %rax
+	retq
+func000000000000005a:                   # @func000000000000005a
+	subl	%edx, %esi
+	addl	%esi, %esi
+	movslq	%esi, %rax
+	leaq	4(%rdi,%rax,4), %rax
+	retq
+func0000000000000058:                   # @func0000000000000058
+	subl	%edx, %esi
+	addl	%esi, %esi
+	movslq	%esi, %rax
+	leaq	1(%rdi,%rax), %rax
+	retq

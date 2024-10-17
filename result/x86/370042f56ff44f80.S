@@ -1,0 +1,22 @@
+func00000000000000c4:                   # @func00000000000000c4
+	movl	%edx, %eax
+	leaq	(%rax,%rax,2), %rax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	seta	%al
+	retq
+func00000000000000e1:                   # @func00000000000000e1
+	movl	%edx, %eax
+	leaq	(%rax,%rax,2), %rax
+	shlq	$4, %rax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq
+func00000000000000c1:                   # @func00000000000000c1
+	movl	%edx, %eax
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rsi,%rax,8), %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq

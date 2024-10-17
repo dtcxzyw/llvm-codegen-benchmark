@@ -1,0 +1,104 @@
+func0000000000000000:                   # @func0000000000000000
+	vpmovqd	%ymm2, %xmm3
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	movl	%edx, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm2, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	vmovd	%edx, %xmm2
+	vpinsrd	$1, %ecx, %xmm2, %xmm2
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$2, %edx, %xmm2, %xmm2
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$3, %edx, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000000d:                   # @func000000000000000d
+	vpmovqd	%ymm2, %xmm3
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	movl	%edx, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm2, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	vmovd	%edx, %xmm2
+	vpinsrd	$1, %ecx, %xmm2, %xmm2
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$2, %edx, %xmm2, %xmm2
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$3, %edx, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpmovqd	%ymm2, %xmm3
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	movl	%edx, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm2, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	vmovd	%edx, %xmm2
+	vpinsrd	$1, %ecx, %xmm2, %xmm2
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$2, %edx, %xmm2, %xmm2
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$3, %edx, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000000f:                   # @func000000000000000f
+	vpmovqd	%ymm2, %xmm3
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	movl	%edx, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm2, %eax
+	xorl	%edx, %edx
+	divl	%esi
+	vmovd	%edx, %xmm2
+	vpinsrd	$1, %ecx, %xmm2, %xmm2
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$2, %edx, %xmm2, %xmm2
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm3, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	vpinsrd	$3, %edx, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,35 @@
+func0000000000000053:                   # @func0000000000000053
+	xorl	%eax, %eax
+	cmpl	$65, %edi
+	setl	%al
+	negl	%eax
+	orl	$-65, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	xorl	%eax, %eax
+	cmpl	$4, %edi
+	sbbl	%eax, %eax
+	orl	$-4, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000040:                   # @func0000000000000040
+	xorl	%eax, %eax
+	cmpl	$127, %edi
+	seta	%al
+	leal	3(%rax,%rdi), %eax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	xorl	%eax, %eax
+	testl	%edi, %edi
+	setg	%al
+	negl	%eax
+	orl	$5, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	xorl	%eax, %eax
+	cmpl	$254, %edi
+	setae	%al
+	leal	1(%rdi,%rax,4), %eax
+	retq

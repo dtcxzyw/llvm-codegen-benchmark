@@ -1,0 +1,20 @@
+func0000000000000031:                   # @func0000000000000031
+	movq	%rdx, %rcx
+	shrq	$32, %rcx
+	testb	$1, %sil
+	cmoveq	%rdx, %rcx
+	movq	%rcx, %rax
+	shrq	$16, %rax
+	testq	%rdi, %rdi
+	cmovneq	%rcx, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdx, %rcx
+	shrq	$32, %rcx
+	testb	$1, %sil
+	cmoveq	%rdx, %rcx
+	movq	%rcx, %rax
+	shrq	$16, %rax
+	cmpq	$65535, %rdi                    # imm = 0xFFFF
+	cmovneq	%rcx, %rax
+	retq

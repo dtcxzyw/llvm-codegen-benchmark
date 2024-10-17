@@ -1,0 +1,23 @@
+func0000000000000011:                   # @func0000000000000011
+	movslq	%edx, %rax
+	xorl	%edx, %edx
+	divq	%rsi
+	movq	%rdx, %rcx
+	movq	%rdi, %rax
+	xorl	%edx, %edx
+	divq	%rsi
+	cmpq	%rcx, %rdx
+	sete	%al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	shrq	$4, %rdx
+	movslq	%edx, %rax
+	xorl	%edx, %edx
+	divq	%rsi
+	movq	%rdx, %rcx
+	movq	%rdi, %rax
+	xorl	%edx, %edx
+	divq	%rsi
+	cmpq	%rcx, %rdx
+	sete	%al
+	retq

@@ -1,0 +1,8 @@
+func0000000000000011:                   # @func0000000000000011
+	testl	%edx, %edx
+	setne	%cl
+	testl	%esi, %esi
+	sete	%al
+	orb	%cl, %al
+	orb	%dil, %al
+	retq

@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.quad	65536                           # 0x10000
+func0000000000000092:                   # @func0000000000000092
+	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
+	vpslld	$16, %xmm0, %xmm0 {%k1}
+	vpslld	$8, %xmm0, %xmm0
+	vzeroupper
+	retq

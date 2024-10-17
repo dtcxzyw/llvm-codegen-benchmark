@@ -1,0 +1,46 @@
+.LCPI0_0:
+	.zero	16,2
+func0000000000000011:                   # @func0000000000000011
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k0
+	vptestnmb	%xmm2, %xmm2, %k1
+	knotw	%k0, %k0
+	korw	%k1, %k0, %k1
+	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI1_0:
+	.zero	16,31
+func00000000000000c8:                   # @func00000000000000c8
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k1
+	vptestmb	%xmm2, %xmm2, %k1 {%k1}
+	vpcmpnleub	.LCPI1_0(%rip), %xmm0, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI2_0:
+	.zero	16,32
+func00000000000000c4:                   # @func00000000000000c4
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k1
+	vptestmb	%xmm2, %xmm2, %k1 {%k1}
+	vpcmpltub	.LCPI2_0(%rip), %xmm0, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI3_0:
+	.zero	16,8
+func00000000000000c1:                   # @func00000000000000c1
+	vpsllw	$7, %xmm1, %xmm1
+	vpmovb2m	%xmm1, %k1
+	vpcmpeqb	.LCPI3_0(%rip), %xmm2, %k1 {%k1}
+	vptestmb	%xmm0, %xmm0, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq
+func00000000000000cc:                   # @func00000000000000cc
+	vpsllw	$7, %xmm1, %xmm1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vptestmb	%xmm0, %xmm0, %k1
+	vptestmb	%xmm2, %xmm2, %k1 {%k1}
+	vpcmpgtb	%xmm1, %xmm3, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	retq

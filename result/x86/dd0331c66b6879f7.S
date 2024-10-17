@@ -1,0 +1,30 @@
+func0000000000000011:                   # @func0000000000000011
+	orl	%edx, %esi
+	xorl	%eax, %eax
+	cmpl	$804389138, %esi                # imm = 0x2FF20112
+	sete	%al
+	leal	-9(%rax,%rax,8), %ecx
+	testb	$1, %dil
+	movl	$-7, %eax
+	cmovel	%ecx, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	orl	%edx, %esi
+	setne	%al
+	leal	22(,%rax,4), %ecx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	orl	%edx, %esi
+	xorl	%ecx, %ecx
+	cmpl	$1240, %esi                     # imm = 0x4D8
+	setge	%cl
+	shll	$10, %ecx
+	orl	$107, %ecx
+	testb	$1, %dil
+	movl	$32768, %eax                    # imm = 0x8000
+	cmovel	%ecx, %eax
+	retq

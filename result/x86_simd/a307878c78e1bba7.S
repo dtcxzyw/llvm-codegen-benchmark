@@ -1,0 +1,6 @@
+.LCPI0_0:
+	.quad	0x41cdcd6500000000              # double 1.0E+9
+func0000000000000000:                   # @func0000000000000000
+	vfmadd132pd	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 * mem) + ymm1
+	vcvttpd2uqq	%ymm0, %ymm0
+	retq

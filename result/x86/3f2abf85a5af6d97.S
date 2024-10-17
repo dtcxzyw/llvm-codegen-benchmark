@@ -1,0 +1,10 @@
+func0000000000000221:                   # @func0000000000000221
+	cmpl	$-1, %edx
+	sete	%al
+	cmpl	$-1, %esi
+	sete	%cl
+	orb	%al, %cl
+	cmpl	$-1, %edi
+	sete	%al
+	orb	%cl, %al
+	retq

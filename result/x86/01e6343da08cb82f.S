@@ -1,0 +1,24 @@
+func0000000000000001:                   # @func0000000000000001
+	andl	$31, %esi
+	cmpl	$7, %esi
+	movl	$4, %eax
+	cmoveq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%eax, %eax
+	testb	$32, %sil
+	cmoveq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movb	$63, %al
+	bzhiq	%rax, %rsi, %rcx
+	xorl	%eax, %eax
+	movabsq	$9223372032559808512, %rdx      # imm = 0x7FFFFFFF00000000
+	cmpq	%rdx, %rcx
+	cmovaq	%rdi, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	testb	$4, %sil
+	movl	$4, %eax
+	cmovneq	%rdi, %rax
+	retq

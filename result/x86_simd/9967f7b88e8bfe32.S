@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.long	32768                           # 0x8000
+func0000000000000000:                   # @func0000000000000000
+	vpmovqd	%ymm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
+	vzeroupper
+	retq

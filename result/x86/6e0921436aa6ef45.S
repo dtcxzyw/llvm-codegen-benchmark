@@ -1,0 +1,8 @@
+func0000000000000011:                   # @func0000000000000011
+	movl	%esi, %eax
+	shrl	$4, %eax
+	testl	$256, %esi                      # imm = 0x100
+	cmovnel	%edi, %eax
+	testl	%eax, %eax
+	sete	%al
+	retq

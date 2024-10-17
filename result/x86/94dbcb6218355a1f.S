@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.quad	0x8000000000000000              # double -0
+func0000000000000004:                   # @func0000000000000004
+	vxorpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm2
+	vxorpd	%xmm3, %xmm3, %xmm3
+	vcmpltsd	%xmm0, %xmm3, %k1
+	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
+	vaddsd	%xmm0, %xmm2, %xmm0
+	retq

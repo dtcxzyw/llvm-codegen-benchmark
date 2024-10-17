@@ -1,0 +1,123 @@
+func0000000000000004:                   # @func0000000000000004
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k0
+	knotw	%k0, %k1
+	kshiftrw	$8, %k1, %k2
+	vmovapd	%zmm4, %zmm2 {%k2} {z}
+	vmovapd	%zmm3, %zmm3 {%k1} {z}
+	vcmpltpd	%zmm0, %zmm3, %k0
+	vcmpltpd	%zmm1, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.quad	0x0010000000000000              # double 2.2250738585072014E-308
+func0000000000000002:                   # @func0000000000000002
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k1
+	kshiftrw	$8, %k1, %k2
+	vbroadcastsd	.LCPI1_0(%rip), %zmm2   # zmm2 = [2.2250738585072014E-308,2.2250738585072014E-308,2.2250738585072014E-308,2.2250738585072014E-308,2.2250738585072014E-308,2.2250738585072014E-308,2.2250738585072014E-308,2.2250738585072014E-308]
+	vmovapd	%zmm2, %zmm4 {%k2}
+	vmovapd	%zmm2, %zmm3 {%k1}
+	vcmpltpd	%zmm3, %zmm0, %k0
+	vcmpltpd	%zmm4, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000003:                   # @func0000000000000003
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k0
+	knotw	%k0, %k1
+	kshiftrw	$8, %k1, %k2
+	vmovapd	%zmm4, %zmm2 {%k2} {z}
+	vmovapd	%zmm3, %zmm3 {%k1} {z}
+	vcmpnlepd	%zmm0, %zmm3, %k0
+	vcmpnlepd	%zmm1, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.quad	0x3f66719f3601671a              # double 0.0027397260273972603
+func0000000000000005:                   # @func0000000000000005
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k1
+	kshiftrw	$8, %k1, %k2
+	vbroadcastsd	.LCPI3_0(%rip), %zmm2   # zmm2 = [2.7397260273972603E-3,2.7397260273972603E-3,2.7397260273972603E-3,2.7397260273972603E-3,2.7397260273972603E-3,2.7397260273972603E-3,2.7397260273972603E-3,2.7397260273972603E-3]
+	vmovapd	%zmm2, %zmm4 {%k2}
+	vmovapd	%zmm2, %zmm3 {%k1}
+	vcmpnlepd	%zmm3, %zmm0, %k0
+	vcmpnlepd	%zmm4, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k0
+	knotw	%k0, %k1
+	kshiftrw	$8, %k1, %k2
+	vmovapd	%zmm4, %zmm2 {%k2} {z}
+	vmovapd	%zmm3, %zmm3 {%k1} {z}
+	vcmpeqpd	%zmm0, %zmm3, %k0
+	vcmpeqpd	%zmm1, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.quad	0x7ff8000000000000              # double NaN
+func0000000000000007:                   # @func0000000000000007
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k1
+	kshiftrw	$8, %k1, %k2
+	vbroadcastsd	.LCPI5_0(%rip), %zmm2   # zmm2 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	vmovapd	%zmm2, %zmm4 {%k2}
+	vmovapd	%zmm2, %zmm3 {%k1}
+	vcmpneqpd	%zmm0, %zmm3, %k0
+	vcmpneqpd	%zmm1, %zmm4, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000000e:                   # @func000000000000000e
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k0
+	knotw	%k0, %k1
+	kshiftrw	$8, %k1, %k2
+	vmovapd	%zmm4, %zmm2 {%k2} {z}
+	vmovapd	%zmm3, %zmm3 {%k1} {z}
+	vcmpordpd	%zmm0, %zmm3, %k0
+	vcmpordpd	%zmm1, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000000c:                   # @func000000000000000c
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k0
+	knotw	%k0, %k1
+	kshiftrw	$8, %k1, %k2
+	vmovapd	%zmm4, %zmm2 {%k2} {z}
+	vmovapd	%zmm3, %zmm3 {%k1} {z}
+	vcmplepd	%zmm0, %zmm3, %k0
+	vcmplepd	%zmm1, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000000a:                   # @func000000000000000a
+	vpsllw	$7, %xmm2, %xmm2
+	vpmovb2m	%xmm2, %k0
+	knotw	%k0, %k1
+	kshiftrw	$8, %k1, %k2
+	vmovapd	%zmm4, %zmm2 {%k2} {z}
+	vmovapd	%zmm3, %zmm3 {%k1} {z}
+	vcmplepd	%zmm3, %zmm0, %k0
+	vcmplepd	%zmm2, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

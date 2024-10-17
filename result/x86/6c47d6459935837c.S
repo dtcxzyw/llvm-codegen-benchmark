@@ -1,0 +1,17 @@
+func0000000000000118:                   # @func0000000000000118
+	leal	4(%rdx,%rsi,8), %eax
+	cmpl	%edi, %eax
+	seta	%al
+	retq
+func00000000000001f1:                   # @func00000000000001f1
+	shll	$15, %edx
+	leal	1073741824(%rdx,%rsi), %eax
+	cmpl	%edi, %eax
+	sete	%al
+	retq
+func00000000000001d1:                   # @func00000000000001d1
+	shll	$15, %edx
+	leal	-1073741824(%rdx,%rsi), %eax
+	cmpl	%edi, %eax
+	sete	%al
+	retq

@@ -1,0 +1,18 @@
+func0000000000000011:                   # @func0000000000000011
+	notb	%sil
+	testl	%edi, %edi
+	setne	%al
+	cmpl	$20, %edi
+	sete	%cl
+	orb	%sil, %al
+	andb	%cl, %al
+	retq
+func0000000000000016:                   # @func0000000000000016
+	notb	%sil
+	testl	%edi, %edi
+	setne	%al
+	cmpl	$-1, %edi
+	setl	%cl
+	orb	%sil, %al
+	andb	%cl, %al
+	retq

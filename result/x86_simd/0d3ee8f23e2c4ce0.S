@@ -1,0 +1,18 @@
+.LCPI0_0:
+	.quad	4294967295                      # 0xffffffff
+func000000000000007b:                   # @func000000000000007b
+	vpxorq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	%ymm0, %ymm1, %ymm1
+	vpsrlq	$25, %ymm1, %ymm1
+	vpsllq	$16, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI1_0:
+	.quad	4294967295                      # 0xffffffff
+func000000000000005b:                   # @func000000000000005b
+	vpxorq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	%ymm0, %ymm1, %ymm1
+	vpsrlq	$21, %ymm1, %ymm1
+	vpsllq	$20, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq

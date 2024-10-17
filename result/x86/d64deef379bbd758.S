@@ -1,0 +1,16 @@
+func0000000000000004:                   # @func0000000000000004
+	testb	$1, %sil
+	leal	1048576(,%rdi,8), %eax
+	leal	12288(,%rdi,8), %ecx
+	cmovnel	%eax, %ecx
+	cmpl	$262144, %ecx                   # imm = 0x40000
+	setb	%al
+	retq
+func0000000000000056:                   # @func0000000000000056
+	notb	%dil
+	movzbl	%dil, %eax
+	andl	$1, %eax
+	shll	$2, %eax
+	leal	8(%rax,%rsi,4), %eax
+	shrl	$31, %eax
+	retq

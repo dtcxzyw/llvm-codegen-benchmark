@@ -1,0 +1,90 @@
+func0000000000000003:                   # @func0000000000000003
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vextracti128	$1, %ymm1, %xmm2
+	vpextrq	$1, %xmm2, %rcx
+	vextracti128	$1, %ymm0, %xmm3
+	vpextrq	$1, %xmm3, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm4
+	vmovq	%xmm2, %rcx
+	vmovq	%xmm3, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm1, %rcx
+	vpextrq	$1, %xmm0, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm3
+	vmovq	%xmm1, %rcx
+	vmovq	%xmm0, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	retq
+func0000000000000000:                   # @func0000000000000000
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vextracti128	$1, %ymm1, %xmm2
+	vpextrq	$1, %xmm2, %rcx
+	vextracti128	$1, %ymm0, %xmm3
+	vpextrq	$1, %xmm3, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm4
+	vmovq	%xmm2, %rcx
+	vmovq	%xmm3, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm1, %rcx
+	vpextrq	$1, %xmm0, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm3
+	vmovq	%xmm1, %rcx
+	vmovq	%xmm0, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vextracti128	$1, %ymm1, %xmm2
+	vpextrq	$1, %xmm2, %rcx
+	vextracti128	$1, %ymm0, %xmm3
+	vpextrq	$1, %xmm3, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm4
+	vmovq	%xmm2, %rcx
+	vmovq	%xmm3, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpextrq	$1, %xmm1, %rcx
+	vpextrq	$1, %xmm0, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm3
+	vmovq	%xmm1, %rcx
+	vmovq	%xmm0, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rdx, %xmm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	retq

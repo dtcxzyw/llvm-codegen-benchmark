@@ -1,0 +1,27 @@
+func000000000000002e:                   # @func000000000000002e
+	shll	$2, %edx
+	leal	(%rdx,%rdx,8), %eax
+	imulq	%rsi, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	leal	(%rdx,%rdx,2), %eax
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000003e:                   # @func000000000000003e
+	addl	%edx, %edx
+	leal	(%rdx,%rdx,2), %eax
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	leal	(%rdx,%rdx,2), %eax
+	imulq	%rsi, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
+func000000000000003c:                   # @func000000000000003c
+	leal	(%rdx,%rdx,2), %eax
+	imulq	%rsi, %rax
+	leaq	(%rdi,%rax,8), %rax
+	retq

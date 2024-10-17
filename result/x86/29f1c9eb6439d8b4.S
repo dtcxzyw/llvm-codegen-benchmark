@@ -1,0 +1,26 @@
+func000000000000001a:                   # @func000000000000001a
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	addq	%rsi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movslq	%edx, %rax
+	leaq	(%rdi,%rax,8), %rax
+	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	leaq	(%rax,%rsi,8), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	movslq	%edx, %rax
+	shlq	$13, %rax
+	andl	$8191, %esi                     # imm = 0x1FFF
+	addq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	shrq	$2, %rdx
+	movslq	%edx, %rax
+	leaq	(%rdi,%rax,8), %rax
+	movl	%esi, %ecx
+	leaq	(%rax,%rcx,8), %rax
+	retq

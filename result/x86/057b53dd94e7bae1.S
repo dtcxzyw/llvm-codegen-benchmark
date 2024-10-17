@@ -1,0 +1,14 @@
+func0000000000000004:                   # @func0000000000000004
+	decl	%esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	seta	%al
+	leaq	16(,%rax,8), %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	addl	$-56, %esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setg	%al
+	leaq	16(,%rax,8), %rax
+	retq

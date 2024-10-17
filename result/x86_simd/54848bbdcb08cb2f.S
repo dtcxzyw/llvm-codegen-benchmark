@@ -1,0 +1,5 @@
+.LCPI0_0:
+	.quad	-4734510112055689544            # 0xbe4ba423396cfeb8
+func0000000000000000:                   # @func0000000000000000
+	vpternlogq	$150, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 ^ ymm1 ^ mem
+	retq

@@ -1,0 +1,45 @@
+func0000000000000003:                   # @func0000000000000003
+	xorl	%eax, %eax
+	cmpl	$3145728, %edi                  # imm = 0x300000
+	cmovnel	%edi, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	testl	%edi, %edi
+	movl	$3145728, %eax                  # imm = 0x300000
+	cmovnel	%edi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	cmpl	$15, %edi
+	movl	$1, %eax
+	cmovbl	%edi, %eax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	cmpl	$2, %edi
+	cmovael	%edi, %eax
+	retq
+func000000000000000d:                   # @func000000000000000d
+	testl	%edi, %edi
+	movl	$100, %eax
+	cmovnsl	%edi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpl	$4, %edi
+	cmovael	%edi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	cmpl	$1114112, %edi                  # imm = 0x110000
+	movl	$65533, %eax                    # imm = 0xFFFD
+	cmovbl	%edi, %eax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	testl	%edi, %edi
+	movl	$6, %eax
+	cmovnsl	%edi, %eax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	cmpl	$15, %edi
+	movl	$4, %eax
+	cmovll	%edi, %eax
+	retq

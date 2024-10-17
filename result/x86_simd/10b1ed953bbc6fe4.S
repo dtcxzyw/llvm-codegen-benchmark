@@ -1,0 +1,180 @@
+func0000000000000000:                   # @func0000000000000000
+	vpmovdw	%ymm1, %xmm2
+	vpextrw	$1, %xmm0, %ecx
+	vpextrw	$1, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	movl	%edx, %ecx
+	vmovd	%xmm0, %esi
+	vmovd	%xmm1, %eax
+	xorl	%edx, %edx
+	divw	%si
+	vmovd	%edx, %xmm1
+	vpinsrw	$1, %ecx, %xmm1, %xmm1
+	vpextrw	$2, %xmm0, %ecx
+	vpextrw	$2, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$2, %edx, %xmm1, %xmm1
+	vpextrw	$3, %xmm0, %ecx
+	vpextrw	$3, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$3, %edx, %xmm1, %xmm1
+	vpextrw	$4, %xmm0, %ecx
+	vpextrw	$4, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$4, %edx, %xmm1, %xmm1
+	vpextrw	$5, %xmm0, %ecx
+	vpextrw	$5, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$5, %edx, %xmm1, %xmm1
+	vpextrw	$6, %xmm0, %ecx
+	vpextrw	$6, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$6, %edx, %xmm1, %xmm1
+	vpextrw	$7, %xmm0, %ecx
+	vpextrw	$7, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$7, %edx, %xmm1, %xmm0
+	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vpmovdw	%ymm1, %xmm2
+	vpextrw	$1, %xmm0, %ecx
+	vpextrw	$1, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	movl	%edx, %ecx
+	vmovd	%xmm0, %esi
+	vmovd	%xmm1, %eax
+	xorl	%edx, %edx
+	divw	%si
+	vmovd	%edx, %xmm1
+	vpinsrw	$1, %ecx, %xmm1, %xmm1
+	vpextrw	$2, %xmm0, %ecx
+	vpextrw	$2, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$2, %edx, %xmm1, %xmm1
+	vpextrw	$3, %xmm0, %ecx
+	vpextrw	$3, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$3, %edx, %xmm1, %xmm1
+	vpextrw	$4, %xmm0, %ecx
+	vpextrw	$4, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$4, %edx, %xmm1, %xmm1
+	vpextrw	$5, %xmm0, %ecx
+	vpextrw	$5, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$5, %edx, %xmm1, %xmm1
+	vpextrw	$6, %xmm0, %ecx
+	vpextrw	$6, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$6, %edx, %xmm1, %xmm1
+	vpextrw	$7, %xmm0, %ecx
+	vpextrw	$7, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$7, %edx, %xmm1, %xmm0
+	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vpmovdw	%ymm1, %xmm2
+	vpextrw	$1, %xmm0, %ecx
+	vpextrw	$1, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	movl	%edx, %ecx
+	vmovd	%xmm0, %esi
+	vmovd	%xmm1, %eax
+	xorl	%edx, %edx
+	divw	%si
+	vmovd	%edx, %xmm1
+	vpinsrw	$1, %ecx, %xmm1, %xmm1
+	vpextrw	$2, %xmm0, %ecx
+	vpextrw	$2, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$2, %edx, %xmm1, %xmm1
+	vpextrw	$3, %xmm0, %ecx
+	vpextrw	$3, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$3, %edx, %xmm1, %xmm1
+	vpextrw	$4, %xmm0, %ecx
+	vpextrw	$4, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$4, %edx, %xmm1, %xmm1
+	vpextrw	$5, %xmm0, %ecx
+	vpextrw	$5, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$5, %edx, %xmm1, %xmm1
+	vpextrw	$6, %xmm0, %ecx
+	vpextrw	$6, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$6, %edx, %xmm1, %xmm1
+	vpextrw	$7, %xmm0, %ecx
+	vpextrw	$7, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$7, %edx, %xmm1, %xmm0
+	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	retq
+func0000000000000007:                   # @func0000000000000007
+	vpmovdw	%ymm1, %xmm2
+	vpextrw	$1, %xmm0, %ecx
+	vpextrw	$1, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	movl	%edx, %ecx
+	vmovd	%xmm0, %esi
+	vmovd	%xmm1, %eax
+	xorl	%edx, %edx
+	divw	%si
+	vmovd	%edx, %xmm1
+	vpinsrw	$1, %ecx, %xmm1, %xmm1
+	vpextrw	$2, %xmm0, %ecx
+	vpextrw	$2, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$2, %edx, %xmm1, %xmm1
+	vpextrw	$3, %xmm0, %ecx
+	vpextrw	$3, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$3, %edx, %xmm1, %xmm1
+	vpextrw	$4, %xmm0, %ecx
+	vpextrw	$4, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$4, %edx, %xmm1, %xmm1
+	vpextrw	$5, %xmm0, %ecx
+	vpextrw	$5, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$5, %edx, %xmm1, %xmm1
+	vpextrw	$6, %xmm0, %ecx
+	vpextrw	$6, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$6, %edx, %xmm1, %xmm1
+	vpextrw	$7, %xmm0, %ecx
+	vpextrw	$7, %xmm2, %eax
+	xorl	%edx, %edx
+	divw	%cx
+	vpinsrw	$7, %edx, %xmm1, %xmm0
+	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	retq

@@ -1,0 +1,8 @@
+func00000000000000a1:                   # @func00000000000000a1
+	orl	$1, %edx
+	xorl	%ecx, %ecx
+	cmpl	$256, %edi                      # imm = 0x100
+	cmovbl	%edx, %ecx
+	shrxl	%esi, %edi, %eax
+	addl	%ecx, %eax
+	retq

@@ -1,0 +1,7 @@
+.LCPI0_0:
+	.long	0x400b9581                      # float 2.18099999
+func0000000000000000:                   # @func0000000000000000
+	vmulss	%xmm1, %xmm1, %xmm1
+	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
+	vaddss	%xmm0, %xmm1, %xmm0
+	retq

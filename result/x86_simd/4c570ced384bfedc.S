@@ -1,0 +1,20 @@
+func0000000000000026:                   # @func0000000000000026
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k0
+	vpsrlq	$32, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm0, %k1
+	kandnw	%k1, %k0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000004a:                   # @func000000000000004a
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k0
+	vpsrlq	$2, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm0
+	vpcmpgtd	%xmm0, %xmm1, %k1
+	kandnw	%k1, %k0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

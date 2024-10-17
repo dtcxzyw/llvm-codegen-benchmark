@@ -1,0 +1,13 @@
+func0000000000000004:                   # @func0000000000000004
+	shrxq	%rsi, %rdi, %rax
+	cmpl	$1000000000, %eax               # imm = 0x3B9ACA00
+	movl	$10, %eax
+	sbbl	$0, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	shrxq	%rsi, %rdi, %rax
+	xorl	%ecx, %ecx
+	cmpl	$10, %eax
+	setae	%cl
+	leal	1(%rcx,%rcx,8), %eax
+	retq

@@ -1,0 +1,16 @@
+.LCPI0_0:
+	.quad	4607182418800017408             # 0x3ff0000000000000
+func0000000000000004:                   # @func0000000000000004
+	vpmovzxdq	%ymm0, %zmm0            # zmm0 = ymm0[0],zero,ymm0[1],zero,ymm0[2],zero,ymm0[3],zero,ymm0[4],zero,ymm0[5],zero,ymm0[6],zero,ymm0[7],zero
+	vpsllq	$52, %zmm0, %zmm0
+	vpbroadcastq	.LCPI0_0(%rip), %zmm1   # zmm1 = [4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408]
+	vpsubq	%zmm0, %zmm1, %zmm0
+	retq
+.LCPI1_0:
+	.quad	4607182418800017408             # 0x3ff0000000000000
+func0000000000000007:                   # @func0000000000000007
+	vpmovzxdq	%ymm0, %zmm0            # zmm0 = ymm0[0],zero,ymm0[1],zero,ymm0[2],zero,ymm0[3],zero,ymm0[4],zero,ymm0[5],zero,ymm0[6],zero,ymm0[7],zero
+	vpsllq	$52, %zmm0, %zmm0
+	vpbroadcastq	.LCPI1_0(%rip), %zmm1   # zmm1 = [4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408,4607182418800017408]
+	vpsubq	%zmm0, %zmm1, %zmm0
+	retq

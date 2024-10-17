@@ -1,0 +1,12 @@
+.LCPI0_0:
+	.long	1                               # 0x1
+func00000000000001a6:                   # @func00000000000001a6
+	vpxord	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpsubd	%ymm2, %ymm3, %ymm3
+	vpcmpgtd	%ymm3, %ymm1, %k0
+	vpcmpgtd	%ymm0, %ymm2, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

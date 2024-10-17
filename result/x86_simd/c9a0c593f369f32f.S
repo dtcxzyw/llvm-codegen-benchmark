@@ -1,0 +1,14 @@
+.LCPI0_0:
+	.long	281475                          # 0x44b83
+func0000000000000002:                   # @func0000000000000002
+	vpsrld	$9, %xmm1, %xmm1
+	vpshufd	$245, %xmm1, %xmm2              # xmm2 = xmm1[1,1,3,3]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm3   # xmm3 = [281475,281475,281475,281475]
+	vpmuludq	%xmm3, %xmm2, %xmm2
+	vpmuludq	%xmm3, %xmm1, %xmm1
+	vpshufd	$245, %xmm1, %xmm1              # xmm1 = xmm1[1,1,3,3]
+	vpblendd	$10, %xmm2, %xmm1, %xmm1        # xmm1 = xmm1[0],xmm2[1],xmm1[2],xmm2[3]
+	vpsrld	$7, %xmm1, %xmm1
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq

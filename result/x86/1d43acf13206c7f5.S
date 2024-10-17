@@ -1,0 +1,20 @@
+func0000000000000003:                   # @func0000000000000003
+	notb	%dl
+	movzbl	%dl, %ecx
+	andl	$1, %ecx
+	shlq	$60, %rcx
+	movb	$60, %al
+	bzhiq	%rax, %rsi, %rax
+	orq	%rcx, %rax
+	orq	%rdi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	shll	$6, %eax
+	andl	$256, %esi                      # imm = 0x100
+	orq	%rsi, %rax
+	orq	%rdi, %rax
+	orq	$12, %rax
+	retq

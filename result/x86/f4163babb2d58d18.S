@@ -1,0 +1,58 @@
+func0000000000000007:                   # @func0000000000000007
+	testl	%edx, %edx
+	movl	$256, %eax                      # imm = 0x100
+	cmovnel	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	xorl	%eax, %eax
+	cmpl	$256, %edx                      # imm = 0x100
+	cmovbl	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movl	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	cmpl	$2, %edx
+	movl	$3, %eax
+	cmovnel	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmovnsl	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	xorl	%eax, %eax
+	cmpl	$3, %edx
+	cmovael	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	$8388607, %edx                  # imm = 0x7FFFFF
+	movl	$2147483392, %eax               # imm = 0x7FFFFF00
+	cmovll	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	testl	%edx, %edx
+	movl	$1024, %eax                     # imm = 0x400
+	cmovlel	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func000000000000002b:                   # @func000000000000002b
+	cmpl	$32768, %edx                    # imm = 0x8000
+	movl	$32767, %eax                    # imm = 0x7FFF
+	cmovll	%esi, %eax
+	orq	%rdi, %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmovnsl	%esi, %eax
+	orq	%rdi, %rax
+	retq

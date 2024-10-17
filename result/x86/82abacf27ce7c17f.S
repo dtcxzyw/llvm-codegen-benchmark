@@ -1,0 +1,18 @@
+func0000000000000044:                   # @func0000000000000044
+	cmpb	$45, %dl
+	sete	%cl
+	orb	%sil, %cl
+	cmpb	$46, %dl
+	sete	%al
+	andb	%dil, %al
+	orb	%cl, %al
+	retq
+func0000000000000304:                   # @func0000000000000304
+	cmpb	$35, %dl
+	setne	%cl
+	andb	%sil, %cl
+	cmpb	$10, %dl
+	sete	%al
+	orb	%dil, %al
+	orb	%cl, %al
+	retq

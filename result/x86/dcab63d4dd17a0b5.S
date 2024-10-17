@@ -1,0 +1,24 @@
+func000000000000000c:                   # @func000000000000000c
+	cmpl	%edx, %esi
+	setl	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	cmpl	%edx, %esi
+	sete	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpl	%edx, %esi
+	setb	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	cmpl	%edx, %esi
+	setle	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	retq

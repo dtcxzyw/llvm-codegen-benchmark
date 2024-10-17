@@ -1,0 +1,16 @@
+.LCPI0_0:
+	.quad	0x8000000000000000              # double -0
+func0000000000000002:                   # @func0000000000000002
+	vxorpd	.LCPI0_0(%rip){1to2}, %xmm2, %xmm2
+	vsubsd	%xmm1, %xmm0, %xmm0
+	vucomisd	%xmm0, %xmm2
+	seta	%al
+	retq
+.LCPI1_0:
+	.quad	0x8000000000000000              # double -0
+func000000000000000a:                   # @func000000000000000a
+	vxorpd	.LCPI1_0(%rip){1to2}, %xmm2, %xmm2
+	vsubsd	%xmm1, %xmm0, %xmm0
+	vucomisd	%xmm0, %xmm2
+	setae	%al
+	retq

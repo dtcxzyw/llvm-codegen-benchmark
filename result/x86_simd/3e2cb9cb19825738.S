@@ -1,0 +1,124 @@
+func0000000000000074:                   # @func0000000000000074
+	vcmpneqpd	%zmm2, %zmm0, %k0
+	vcmpneqpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpltpd	%zmm0, %zmm2, %k1
+	vcmpltpd	%zmm1, %zmm2, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000005e:                   # @func000000000000005e
+	vcmpnlepd	%zmm2, %zmm0, %k0
+	vcmpnlepd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpordpd	%zmm2, %zmm0, %k1
+	vcmpordpd	%zmm2, %zmm1, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000003d:                   # @func000000000000003d
+	vcmpnlepd	%zmm0, %zmm2, %k0
+	vcmpnlepd	%zmm1, %zmm3, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpnltpd	%zmm2, %zmm0, %k1
+	vcmpnltpd	%zmm2, %zmm1, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.quad	0x3e45798ee2308c3a              # double 1.0E-8
+func0000000000000044:                   # @func0000000000000044
+	vcmpltpd	%zmm0, %zmm2, %k0
+	vcmpltpd	%zmm1, %zmm3, %k1
+	kunpckbw	%k0, %k1, %k0
+	vbroadcastsd	.LCPI3_0(%rip), %zmm2   # zmm2 = [1.0E-8,1.0E-8,1.0E-8,1.0E-8,1.0E-8,1.0E-8,1.0E-8,1.0E-8]
+	vcmpltpd	%zmm0, %zmm2, %k1
+	vcmpltpd	%zmm1, %zmm2, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000024:                   # @func0000000000000024
+	vcmpltpd	%zmm2, %zmm0, %k0
+	vcmpltpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpltpd	%zmm0, %zmm2, %k1
+	vcmpltpd	%zmm1, %zmm2, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000087:                   # @func0000000000000087
+	vcmpeqpd	%zmm2, %zmm0, %k0
+	vcmpeqpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpneqpd	%zmm2, %zmm0, %k1
+	vcmpneqpd	%zmm2, %zmm1, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000084:                   # @func0000000000000084
+	vcmpeqpd	%zmm2, %zmm0, %k0
+	vcmpeqpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpltpd	%zmm0, %zmm2, %k1
+	vcmpltpd	%zmm1, %zmm2, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000002c:                   # @func000000000000002c
+	vcmpltpd	%zmm2, %zmm0, %k0
+	vcmpltpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmplepd	%zmm0, %zmm2, %k1
+	vcmplepd	%zmm1, %zmm2, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
+	.quad	0x3d06849b86a12b9b              # double 9.9999999999999999E-15
+func0000000000000022:                   # @func0000000000000022
+	vcmpltpd	%zmm2, %zmm0, %k0
+	vcmpltpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vbroadcastsd	.LCPI8_0(%rip), %zmm2   # zmm2 = [9.9999999999999999E-15,9.9999999999999999E-15,9.9999999999999999E-15,9.9999999999999999E-15,9.9999999999999999E-15,9.9999999999999999E-15,9.9999999999999999E-15,9.9999999999999999E-15]
+	vcmpltpd	%zmm2, %zmm0, %k1
+	vcmpltpd	%zmm2, %zmm1, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000008c:                   # @func000000000000008c
+	vcmpeqpd	%zmm2, %zmm0, %k0
+	vcmpeqpd	%zmm3, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmplepd	%zmm0, %zmm2, %k1
+	vcmplepd	%zmm1, %zmm2, %k2
+	kunpckbw	%k1, %k2, %k1
+	kandw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

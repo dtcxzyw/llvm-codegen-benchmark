@@ -1,0 +1,24 @@
+func0000000000000000:                   # @func0000000000000000
+	testb	$1, %sil
+	movl	$1, %eax
+	cmoveq	%rdx, %rax
+	imulq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	testb	$1, %sil
+	movl	$44, %eax
+	cmoveq	%rdx, %rax
+	imulq	%rdi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	testb	$1, %sil
+	movl	$1, %eax
+	cmoveq	%rdx, %rax
+	imulq	%rdi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	testb	$1, %sil
+	movl	$5, %eax
+	cmoveq	%rdx, %rax
+	imulq	%rdi, %rax
+	retq

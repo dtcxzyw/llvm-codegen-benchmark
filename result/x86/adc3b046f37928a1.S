@@ -1,0 +1,10 @@
+func0000000000000005:                   # @func0000000000000005
+	vcvtsi2sd	%edi, %xmm2, %xmm2
+	vaddsd	%xmm1, %xmm0, %xmm0
+	vdivsd	%xmm2, %xmm0, %xmm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vcvtsi2sd	%edi, %xmm2, %xmm2
+	vaddsd	%xmm1, %xmm0, %xmm0
+	vdivsd	%xmm2, %xmm0, %xmm0
+	retq

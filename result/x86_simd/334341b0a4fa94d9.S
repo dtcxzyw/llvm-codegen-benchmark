@@ -1,0 +1,15 @@
+func000000000000000a:                   # @func000000000000000a
+	vpslld	$24, %ymm2, %ymm2
+	vpsrld	$4, %ymm0, %ymm0
+	vpternlogd	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	retq
+func0000000000000002:                   # @func0000000000000002
+	vpslld	$16, %ymm2, %ymm2
+	vpsrld	$16, %ymm0, %ymm0
+	vpternlogd	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	retq
+func000000000000000e:                   # @func000000000000000e
+	vpslld	$8, %ymm2, %ymm2
+	vpsrld	$4, %ymm0, %ymm0
+	vpternlogd	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	retq

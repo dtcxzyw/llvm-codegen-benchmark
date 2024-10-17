@@ -1,0 +1,16 @@
+func0000000000000042:                   # @func0000000000000042
+	imull	$23593, %esi, %eax              # imm = 0x5C29
+	rorw	$2, %ax
+	movzwl	%ax, %eax
+	cmpl	$656, %eax                      # imm = 0x290
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000058:                   # @func0000000000000058
+	imull	$23593, %esi, %eax              # imm = 0x5C29
+	rorw	$2, %ax
+	movzwl	%ax, %eax
+	cmpl	$656, %eax                      # imm = 0x290
+	setae	%al
+	orb	%dil, %al
+	retq

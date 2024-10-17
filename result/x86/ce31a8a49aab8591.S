@@ -1,0 +1,10 @@
+func000000000000003b:                   # @func000000000000003b
+	sarq	$2, %rdi
+	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	imulq	%rdi, %rcx
+	movl	$8, %eax
+	subq	%rcx, %rax
+	cmpq	%rax, %rcx
+	cmovaq	%rcx, %rax
+	addq	%rcx, %rax
+	retq

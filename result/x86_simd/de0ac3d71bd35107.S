@@ -1,0 +1,36 @@
+func000000000000007f:                   # @func000000000000007f
+	vpslld	$8, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm0, %ymm0
+	retq
+func000000000000007c:                   # @func000000000000007c
+	vpslld	$8, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm0, %ymm0
+	retq
+func0000000000000050:                   # @func0000000000000050
+	vpslld	$16, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpslld	$2, %ymm0, %ymm0
+	retq
+func000000000000005c:                   # @func000000000000005c
+	vpslld	$16, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm0, %ymm0
+	retq
+func0000000000000075:                   # @func0000000000000075
+	vpslld	$8, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpslld	$2, %ymm0, %ymm0
+	retq
+func0000000000000070:                   # @func0000000000000070
+	vpslld	$8, %ymm2, %ymm2
+	vpor	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm0, %ymm0
+	retq

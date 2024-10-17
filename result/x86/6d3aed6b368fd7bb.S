@@ -1,0 +1,9 @@
+func0000000000000111:                   # @func0000000000000111
+	movabsq	$4503599627370496, %rax         # imm = 0x10000000000000
+	movq	%rdi, %rcx
+	orq	%rax, %rcx
+	testl	$2047, %esi                     # imm = 0x7FF
+	cmoveq	%rdi, %rcx
+	cmpq	%rax, %rcx
+	sete	%al
+	retq

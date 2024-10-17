@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.long	33                              # 0x21
+func0000000000000001:                   # @func0000000000000001
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [33,33,33,33,33,33,33,33]
+	vpand	%ymm1, %ymm0, %ymm0
+	vpcmpneqd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,24 @@
+func000000000000000a:                   # @func000000000000000a
+	addq	$8, %rdx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rdx, %rax
+	movslq	%esi, %rcx
+	leaq	(%rax,%rcx,8), %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	addq	$4, %rdx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rdx, %rax
+	movslq	%esi, %rcx
+	leaq	(%rax,%rcx,4), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leaq	5(%rdx), %rax
+	xorl	%ecx, %ecx
+	testb	$1, %dil
+	cmoveq	%rax, %rcx
+	movslq	%esi, %rax
+	addq	%rcx, %rax
+	retq

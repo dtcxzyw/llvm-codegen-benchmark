@@ -1,0 +1,11 @@
+.LCPI0_0:
+	.quad	16777216                        # 0x1000000
+.LCPI0_1:
+	.quad	128                             # 0x80
+func0000000000000182:                   # @func0000000000000182
+	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
+	vptestmd	%xmm0, %xmm0, %k1
+	korw	%k1, %k0, %k0
+	knotw	%k0, %k1
+	vpbroadcastq	.LCPI0_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [128,128,128,128]
+	retq

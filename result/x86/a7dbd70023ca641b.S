@@ -1,0 +1,7 @@
+func0000000000000005:                   # @func0000000000000005
+	subl	%edi, %esi
+	vcvtsi2ss	%esi, %xmm1, %xmm1
+	vmulss	%xmm0, %xmm1, %xmm0
+	vcvttss2si	%xmm0, %eax
+	addl	%edi, %eax
+	retq

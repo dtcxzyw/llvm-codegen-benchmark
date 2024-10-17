@@ -1,0 +1,28 @@
+func0000000000000061:                   # @func0000000000000061
+	movzwl	%dx, %eax
+	subl	%esi, %eax
+	incl	%edi
+	cmpl	%eax, %edi
+	sete	%al
+	retq
+func0000000000000071:                   # @func0000000000000071
+	movzwl	%dx, %eax
+	subl	%esi, %eax
+	incl	%edi
+	cmpl	%eax, %edi
+	sete	%al
+	retq
+func0000000000000058:                   # @func0000000000000058
+	movzwl	%dx, %eax
+	subl	%esi, %eax
+	decl	%edi
+	cmpl	%eax, %edi
+	seta	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	movzwl	%dx, %eax
+	subl	%esi, %eax
+	decl	%edi
+	cmpl	%eax, %edi
+	seta	%al
+	retq

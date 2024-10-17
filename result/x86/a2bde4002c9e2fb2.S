@@ -1,0 +1,9 @@
+func000000000000014c:                   # @func000000000000014c
+	andl	$7, %esi
+	decl	%esi
+	cmpl	$4, %esi
+	setb	%cl
+	testq	%rdi, %rdi
+	setne	%al
+	andb	%cl, %al
+	retq

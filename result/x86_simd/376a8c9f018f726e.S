@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.long	10                              # 0xa
+func0000000000000041:                   # @func0000000000000041
+	vpcmpltuq	%ymm2, %ymm1, %k1
+	vptestnmd	%xmm0, %xmm0, %k1 {%k1}
+	vpbroadcastd	.LCPI0_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [10,10,10,10]
+	vzeroupper
+	retq

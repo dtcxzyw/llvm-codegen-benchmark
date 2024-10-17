@@ -1,0 +1,19 @@
+func000000000000001a:                   # @func000000000000001a
+	shrl	$3, %esi
+	andl	$63, %esi
+	leaq	24(%rdi,%rsi), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	shrl	$3, %esi
+	andl	$508, %esi                      # imm = 0x1FC
+	leaq	22016(%rdi,%rsi), %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	shrl	$6, %esi
+	andl	$60, %esi
+	leaq	3016(%rdi,%rsi), %rax
+	retq
+func000000000000003a:                   # @func000000000000003a
+	shrl	$3, %esi
+	leaq	16(%rdi,%rsi,4), %rax
+	retq

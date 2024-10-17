@@ -1,0 +1,16 @@
+func0000000000000048:                   # @func0000000000000048
+	movl	%edi, %eax
+	negl	%eax
+	xorl	%edx, %edx
+	divl	%edi
+	cmpl	%esi, %edx
+	seta	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	%edi, %eax
+	negl	%eax
+	xorl	%edx, %edx
+	divl	%edi
+	cmpl	%esi, %edx
+	seta	%al
+	retq

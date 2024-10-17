@@ -1,0 +1,30 @@
+func0000000000000000:                   # @func0000000000000000
+	vcvttps2dq	%ymm2, %ymm2
+	vpmulld	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vcvttps2dq	%ymm2, %ymm2
+	vpmulld	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	vcvttps2dq	%ymm2, %ymm2
+	vpmulld	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000002:                   # @func0000000000000002
+	vcvttps2dq	%ymm2, %ymm2
+	vpmulld	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vcvttps2dq	%ymm2, %ymm2
+	vpmulld	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000007:                   # @func0000000000000007
+	vcvttps2dq	%ymm2, %ymm2
+	vpmulld	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq

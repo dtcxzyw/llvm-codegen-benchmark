@@ -1,0 +1,86 @@
+func000000000000004a:                   # @func000000000000004a
+	shrq	$3, %rdi
+	imull	$-1227133513, %edi, %eax        # imm = 0xB6DB6DB7
+	testl	%eax, %eax
+	setg	%al
+	retq
+func0000000000000046:                   # @func0000000000000046
+	shrq	$3, %rdi
+	imull	$-1227133513, %edi, %eax        # imm = 0xB6DB6DB7
+	shrl	$31, %eax
+	retq
+func0000000000000041:                   # @func0000000000000041
+	shrq	$3, %rdi
+	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
+	cmpl	$-1, %eax
+	sete	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	shrq	$3, %rdi
+	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
+	cmpl	$5, %eax
+	setb	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	leaq	3(%rdi), %rax
+	testq	%rdi, %rdi
+	cmovnsq	%rdi, %rax
+	shrq	$2, %rax
+	testl	%eax, %eax
+	setle	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	shrq	$2, %rdi
+	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
+	testl	$-2, %eax
+	setne	%al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movq	%rdi, %rax
+	movabsq	$5675921253449092805, %rcx      # imm = 0x4EC4EC4EC4EC4EC5
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	shrq	$3, %rdx
+	addl	%eax, %edx
+	testl	%edx, %edx
+	setg	%al
+	retq
+func000000000000004c:                   # @func000000000000004c
+	shrq	$4, %rdi
+	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
+	testl	%eax, %eax
+	setne	%al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
+	movabsq	$3074457345618258603, %rcx      # imm = 0x2AAAAAAAAAAAAAAB
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	shrq	%rdx
+	addl	%eax, %edx
+	sete	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movq	%rdi, %rax
+	movabsq	$7378697629483820647, %rcx      # imm = 0x6666666666666667
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	shrq	$4, %rdx
+	addl	%eax, %edx
+	cmpl	$17, %edx
+	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	movabsq	$1237940039285380275, %rcx      # imm = 0x112E0BE826D694B3
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	shrq	$26, %rdx
+	addl	%eax, %edx
+	cmpl	$86400, %edx                    # imm = 0x15180
+	setae	%al
+	retq

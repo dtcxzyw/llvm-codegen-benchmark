@@ -1,0 +1,30 @@
+func0000000000000008:                   # @func0000000000000008
+	movl	%edx, %eax
+	cmpq	%rsi, %rax
+	setb	%al
+	notb	%dil
+	andb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%edx, %eax
+	testb	$1, %dil
+	movl	$15, %ecx
+	cmoveq	%rsi, %rcx
+	cmpq	%rax, %rcx
+	setb	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%edx, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %dil
+	cmoveq	%rsi, %rcx
+	cmpq	%rax, %rcx
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edx, %eax
+	cmpq	%rsi, %rax
+	setb	%al
+	notb	%dil
+	andb	%dil, %al
+	retq

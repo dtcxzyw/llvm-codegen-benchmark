@@ -1,0 +1,25 @@
+func0000000000000000:                   # @func0000000000000000
+	andl	$1, %esi
+	leal	2(%rsi,%rdi), %eax
+	cltq
+	retq
+func0000000000000005:                   # @func0000000000000005
+	andl	$1, %esi
+	leal	1(%rsi,%rdi), %eax
+	cltq
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$1, %esi
+	leal	1(%rsi,%rdi), %eax
+	cltq
+	retq
+func000000000000000d:                   # @func000000000000000d
+	andl	$1, %esi
+	leal	-1(%rsi,%rdi), %eax
+	cltq
+	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$1, %esi
+	leal	24(%rsi,%rdi), %eax
+	cltq
+	retq

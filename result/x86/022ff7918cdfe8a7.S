@@ -1,0 +1,28 @@
+.LCPI0_0:
+	.quad	0x4024000000000000              # double 10
+.LCPI0_1:
+	.quad	0x412e848000000000              # double 1.0E+6
+func0000000000000042:                   # @func0000000000000042
+	vmulsd	%xmm1, %xmm0, %xmm0
+	vmaxsd	.LCPI0_0(%rip), %xmm0, %xmm0
+	vmovsd	.LCPI0_1(%rip), %xmm1           # xmm1 = [1.0E+6,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	retq
+.LCPI1_0:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000024:                   # @func0000000000000024
+	vmulsd	%xmm1, %xmm0, %xmm0
+	vminsd	.LCPI1_0(%rip), %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	seta	%al
+	retq
+func00000000000000e5:                   # @func00000000000000e5
+	vmulsd	%xmm1, %xmm0, %xmm0
+	vcmpordsd	%xmm0, %xmm0, %k1
+	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setb	%al
+	retq

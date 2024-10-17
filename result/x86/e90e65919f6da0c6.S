@@ -1,0 +1,9 @@
+func0000000000000005:                   # @func0000000000000005
+	imull	%esi, %edi
+	leaq	-250(%rdi), %rax
+	andq	$-32, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	imull	%esi, %edi
+	leal	1(%rdi), %eax
+	retq

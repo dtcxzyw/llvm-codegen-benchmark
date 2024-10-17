@@ -1,0 +1,16 @@
+func0000000000000011:                   # @func0000000000000011
+	shrxl	%edx, %esi, %ecx
+	xorl	%eax, %eax
+	cmpl	$1114112, %ecx                  # imm = 0x110000
+	setae	%al
+	shll	$8, %eax
+	orl	%edi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	shrxl	%edx, %esi, %ecx
+	xorl	%eax, %eax
+	cmpl	$256, %ecx                      # imm = 0x100
+	setae	%al
+	shll	$3, %eax
+	orl	%edi, %eax
+	retq

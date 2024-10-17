@@ -1,0 +1,26 @@
+.LCPI0_0:
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.byte	3                               # 0x3
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI0_1:
+	.zero	4,3
+func0000000000000000:                   # @func0000000000000000
+	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
+	vpsrlvd	%ymm0, %ymm1, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
+	vzeroupper
+	retq

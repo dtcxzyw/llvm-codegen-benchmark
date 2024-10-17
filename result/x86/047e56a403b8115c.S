@@ -1,0 +1,26 @@
+func0000000000000004:                   # @func0000000000000004
+	decq	%rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movabsq	$6364136223846793005, %rax      # imm = 0x5851F42D4C957F2D
+	addq	%rdi, %rax
+	cmpq	%rsi, %rax
+	sete	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	decq	%rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq

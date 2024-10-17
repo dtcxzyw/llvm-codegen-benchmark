@@ -1,0 +1,26 @@
+func0000000000000005:                   # @func0000000000000005
+	leaq	2(%rdx,%rdx), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leaq	2(%rdx,%rdx), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	44(,%rdx,8), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	shlq	$4, %rdx
+	leaq	16(%rdx), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	leaq	2(%rdx,%rdx), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq

@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.long	16383                           # 0x3fff
+.LCPI0_1:
+	.long	1320603883                      # 0x4eb6d0eb
+func0000000000000000:                   # @func0000000000000000
+	vpternlogd	$120, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 & mem)
+	vpmulld	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	retq

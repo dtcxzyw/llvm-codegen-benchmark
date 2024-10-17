@@ -1,0 +1,21 @@
+.LCPI0_0:
+	.quad	1152921504606846976             # 0x1000000000000000
+func0000000000000001:                   # @func0000000000000001
+	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
+	vpmovqd	%ymm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI1_0:
+	.quad	2305843009213693952             # 0x2000000000000000
+func0000000000000031:                   # @func0000000000000031
+	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
+	vpmovqd	%ymm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI2_0:
+	.quad	34359738368                     # 0x800000000
+func0000000000000021:                   # @func0000000000000021
+	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
+	vpmovqd	%ymm1, %xmm0 {%k1}
+	vzeroupper
+	retq

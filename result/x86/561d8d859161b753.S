@@ -1,0 +1,8 @@
+func0000000000000010:                   # @func0000000000000010
+	subq	%rsi, %rdi
+	leaq	16384(%rdi), %rax
+	retq
+func0000000000000035:                   # @func0000000000000035
+	subq	%rsi, %rdi
+	leaq	16778215(%rdi), %rax
+	retq

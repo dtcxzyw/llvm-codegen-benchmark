@@ -1,0 +1,12 @@
+func0000000000000044:                   # @func0000000000000044
+	subq	%rdi, %rsi
+	addq	$40, %rsi
+	shrq	$3, %rsi
+	imull	$-858993459, %esi, %eax         # imm = 0xCCCCCCCD
+	retq
+func0000000000000004:                   # @func0000000000000004
+	subq	%rdi, %rsi
+	addq	$-24, %rsi
+	shrq	$3, %rsi
+	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
+	retq

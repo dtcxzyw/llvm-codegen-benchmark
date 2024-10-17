@@ -1,0 +1,6 @@
+func0000000000000024:                   # @func0000000000000024
+	subq	%rsi, %rdx
+	leaq	65535(%rsi), %rax
+	cmpq	$70535, %rdx                    # imm = 0x11387
+	cmovbq	%rdi, %rax
+	retq

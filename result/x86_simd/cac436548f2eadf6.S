@@ -1,0 +1,22 @@
+func0000000000000071:                   # @func0000000000000071
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpsubq	%ymm3, %ymm0, %ymm0
+	vpcmpeqq	%ymm1, %ymm0, %k1
+	vptestnmq	%ymm2, %ymm2, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.quad	2                               # 0x2
+.LCPI1_1:
+	.quad	1                               # 0x1
+func00000000000002b1:                   # @func00000000000002b1
+	vpcmpgtq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
+	vpbroadcastq	.LCPI1_1(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	vmovdqa64	%ymm1, %ymm2 {%k1}
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpcmpeqq	%ymm2, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

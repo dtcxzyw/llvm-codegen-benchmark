@@ -1,0 +1,6 @@
+func0000000000000018:                   # @func0000000000000018
+	shll	$13, %edx
+	andl	$268427264, %edx                # imm = 0xFFFE000
+	shlxl	%esi, %edx, %eax
+	orl	%edi, %eax
+	retq

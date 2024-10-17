@@ -1,0 +1,8 @@
+.LCPI0_0:
+	.long	8388607                         # 0x7fffff
+func000000000000000f:                   # @func000000000000000f
+	vptestnmd	%xmm1, %xmm1, %k1
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm0 {%k1}
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpaddq	%ymm0, %ymm0, %ymm0
+	retq

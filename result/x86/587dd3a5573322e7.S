@@ -1,0 +1,15 @@
+func0000000000000002:                   # @func0000000000000002
+	cmpq	$1, %rdi
+	adcq	$0, %rdi
+	vcvtusi2sd	%rdi, %xmm0, %xmm0
+	retq
+func0000000000000000:                   # @func0000000000000000
+	cmpq	$1, %rdi
+	adcq	$0, %rdi
+	vcvtusi2sd	%rdi, %xmm0, %xmm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	cmpq	$1, %rdi
+	adcq	$0, %rdi
+	vcvtsi2sd	%rdi, %xmm0, %xmm0
+	retq

@@ -1,0 +1,17 @@
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpb	$120, %dil
+	movabsq	$38654705664, %rcx              # imm = 0x900000000
+	cmovneq	%rax, %rcx
+	cmpb	$109, %dil
+	movabsq	$34359738368, %rax              # imm = 0x800000000
+	cmovneq	%rcx, %rax
+	retq
+func0000000000000044:                   # @func0000000000000044
+	cmpb	$-16, %dil
+	movl	$4, %ecx
+	sbbq	$0, %rcx
+	cmpb	$-32, %dil
+	movl	$2, %eax
+	cmovaeq	%rcx, %rax
+	retq

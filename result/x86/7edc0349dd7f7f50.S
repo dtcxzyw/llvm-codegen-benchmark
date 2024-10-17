@@ -1,0 +1,25 @@
+func000000000000000a:                   # @func000000000000000a
+	leaq	(%rdx,%rdx,8), %rax
+	leaq	(%rsi,%rax,8), %rax
+	leaq	-72(%rdi,%rax), %rax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	leaq	(%rdx,%rdx,8), %rax
+	leaq	(%rsi,%rax,8), %rax
+	leaq	72(%rdi,%rax), %rax
+	retq
+func000000000000003a:                   # @func000000000000003a
+	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rsi,%rax,8), %rax
+	leaq	72(%rax,%rdi,4), %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	imulq	$120, %rdx, %rax
+	addq	%rsi, %rax
+	leaq	-120(%rax,%rdi,4), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	leaq	(%rsi,%rdx,4), %rax
+	imulq	$1040, %rdi, %rcx               # imm = 0x410
+	leaq	-4(%rcx,%rax), %rax
+	retq

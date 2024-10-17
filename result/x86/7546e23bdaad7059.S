@@ -1,0 +1,25 @@
+func0000000000000034:                   # @func0000000000000034
+	subl	%edi, %esi
+	leal	999(%rsi), %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	subl	%edi, %esi
+	leal	271(%rsi), %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	subl	%edi, %esi
+	leal	24(%rsi), %eax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	subl	%edi, %esi
+	leal	-10(%rsi), %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movl	%esi, %eax
+	xorl	$32768, %eax                    # imm = 0x8000
+	subl	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	notl	%edi
+	leal	(%rdi,%rsi), %eax
+	retq

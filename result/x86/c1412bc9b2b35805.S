@@ -1,0 +1,59 @@
+func0000000000000000:                   # @func0000000000000000
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	leaq	15(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	leaq	5(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000017:                   # @func0000000000000017
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000022:                   # @func0000000000000022
+	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	leaq	-1(%rsi,%rdi), %rax
+	negq	%rsi
+	andq	%rsi, %rax
+	retq

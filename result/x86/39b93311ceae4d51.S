@@ -1,0 +1,18 @@
+func0000000000000141:                   # @func0000000000000141
+	addq	$17, %rdx
+	cmpq	$28, %rdx
+	setb	%cl
+	cmpq	$1, %rsi
+	sete	%al
+	andb	%dil, %al
+	andb	%cl, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	addq	$-56, %rdx
+	cmpq	$1073741769, %rdx               # imm = 0x3FFFFFC9
+	setb	%cl
+	testq	%rsi, %rsi
+	sete	%al
+	andb	%dil, %al
+	andb	%cl, %al
+	retq

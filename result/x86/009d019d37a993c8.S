@@ -1,0 +1,54 @@
+func0000000000000008:                   # @func0000000000000008
+	orl	%edx, %esi
+	cmpb	$17, %dil
+	setb	%al
+	orb	%sil, %al
+	retq
+func0000000000000002:                   # @func0000000000000002
+	orl	%edx, %esi
+	cmpb	$95, %dil
+	sete	%al
+	orb	%sil, %al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	orl	%edx, %esi
+	testb	%dil, %dil
+	sets	%al
+	orb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	orl	%edx, %esi
+	cmpb	$22, %dil
+	setne	%al
+	orb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	testb	%dl, %dl
+	sete	%al
+	orl	%esi, %edi
+	orb	%dil, %al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	orl	%edx, %esi
+	cmpb	$2, %dil
+	setae	%al
+	orb	%sil, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpb	$3, %dl
+	setne	%al
+	orl	%esi, %edi
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	orl	%edx, %esi
+	testb	%dil, %dil
+	setns	%al
+	orb	%sil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	testb	%dl, %dl
+	setns	%al
+	orl	%esi, %edi
+	orb	%dil, %al
+	retq

@@ -1,0 +1,12 @@
+.LCPI0_0:
+	.long	7                               # 0x7
+.LCPI0_1:
+	.long	8                               # 0x8
+func000000000000003a:                   # @func000000000000003a
+	vpmovqd	%ymm1, %xmm1
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
+	vpbroadcastd	.LCPI0_1(%rip), %xmm2   # xmm2 = [8,8,8,8]
+	vpsubd	%xmm1, %xmm2, %xmm1
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq

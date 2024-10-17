@@ -1,0 +1,12 @@
+.LCPI0_0:
+	.quad	0xc000000000000000              # double -2
+func0000000000000000:                   # @func0000000000000000
+	vsubsd	%xmm2, %xmm1, %xmm1
+	vfmadd132sd	.LCPI0_0(%rip), %xmm1, %xmm0 # xmm0 = (xmm0 * mem) + xmm1
+	retq
+.LCPI1_0:
+	.quad	0xc076800000000000              # double -360
+func0000000000000001:                   # @func0000000000000001
+	vsubsd	%xmm2, %xmm1, %xmm1
+	vfmadd132sd	.LCPI1_0(%rip), %xmm1, %xmm0 # xmm0 = (xmm0 * mem) + xmm1
+	retq

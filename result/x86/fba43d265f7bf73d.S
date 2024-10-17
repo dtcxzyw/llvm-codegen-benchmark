@@ -1,0 +1,23 @@
+func0000000000000008:                   # @func0000000000000008
+	leal	(%rsi,%rdi), %eax
+	shrl	$8, %eax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	movzbl	%sil, %eax
+	addl	%edi, %eax
+	shrl	%eax
+	retq
+func0000000000000012:                   # @func0000000000000012
+	andl	$1, %esi
+	leaq	(%rsi,%rdi), %rax
+	shrq	$56, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	leal	(%rsi,%rdi), %eax
+	shrl	$8, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	andl	$1, %esi
+	leal	(%rdi,%rsi), %eax
+	shrl	$8, %eax
+	retq

@@ -1,0 +1,8 @@
+func000000000000000f:                   # @func000000000000000f
+	lzcntl	%esi, %eax
+	movl	$32, %ecx
+	subl	%eax, %ecx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	retq

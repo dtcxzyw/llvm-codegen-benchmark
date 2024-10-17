@@ -1,0 +1,27 @@
+func0000000000000008:                   # @func0000000000000008
+	cmpq	$9, %rsi
+	movl	$8, %eax
+	cmovaeq	%rsi, %rax
+	leaq	15(%rdi,%rax), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	cmpq	$65537, %rsi                    # imm = 0x10001
+	movl	$65536, %eax                    # imm = 0x10000
+	cmovaeq	%rsi, %rax
+	leaq	-1(%rdi,%rax), %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	cmpq	$1, %rsi
+	adcq	$0, %rsi
+	leaq	-1(%rdi,%rsi), %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$1, %rsi
+	adcq	$0, %rsi
+	leaq	3(%rdi,%rsi), %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$1, %rsi
+	adcq	$0, %rsi
+	leaq	-1(%rdi,%rsi), %rax
+	retq

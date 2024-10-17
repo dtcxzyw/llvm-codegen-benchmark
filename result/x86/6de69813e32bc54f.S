@@ -1,0 +1,16 @@
+func0000000000000016:                   # @func0000000000000016
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	setne	%al
+	leal	6(%rax,%rax), %eax
+	testb	%sil, %sil
+	cmovsl	%edi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	sete	%al
+	addl	%eax, %eax
+	testb	%sil, %sil
+	cmovel	%edi, %eax
+	retq

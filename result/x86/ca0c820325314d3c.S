@@ -1,0 +1,17 @@
+func000000000000000a:                   # @func000000000000000a
+	addl	$-5, %esi
+	leaq	-1(%rdi,%rsi), %rax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	addl	$-2, %esi
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	28(%rdi,%rax,4), %rax
+	retq
+func0000000000000070:                   # @func0000000000000070
+	movslq	%esi, %rax
+	leaq	25(%rdi,%rax), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	addl	$-2, %esi
+	leaq	8(%rdi,%rsi,4), %rax
+	retq

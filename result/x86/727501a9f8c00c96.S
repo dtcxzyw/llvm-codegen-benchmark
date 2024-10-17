@@ -1,0 +1,16 @@
+func00000000000001cc:                   # @func00000000000001cc
+	imulq	%rdx, %rsi
+	cmpq	%rdi, %rsi
+	setne	%cl
+	testq	%rdi, %rdi
+	setne	%al
+	andb	%cl, %al
+	retq
+func000000000000004c:                   # @func000000000000004c
+	imulq	%rdx, %rsi
+	cmpq	%rdi, %rsi
+	seta	%cl
+	testq	%rdi, %rdi
+	setne	%al
+	andb	%cl, %al
+	retq

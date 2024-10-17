@@ -1,0 +1,92 @@
+.LCPI0_0:
+	.long	1048320                         # 0xfff00
+.LCPI0_1:
+	.long	2816                            # 0xb00
+.LCPI0_2:
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+func000000000000001c:                   # @func000000000000001c
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k1
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
+	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1 {%k1}
+	vpcmpneqw	.LCPI0_2(%rip), %xmm0, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+	.short	629                             # 0x275
+.LCPI1_1:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+.LCPI1_2:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+func00000000000000cc:                   # @func00000000000000cc
+	vpsllw	$15, %xmm1, %xmm1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpneqw	.LCPI1_0(%rip), %xmm0, %k1
+	vptestmd	.LCPI1_2(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpgtw	%xmm1, %xmm3, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	3840                            # 0xf00
+.LCPI2_1:
+	.long	2048                            # 0x800
+func000000000000001a:                   # @func000000000000001a
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k1
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpcmpgtw	%xmm2, %xmm0, %k1 {%k1}
+	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

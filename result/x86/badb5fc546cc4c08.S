@@ -1,0 +1,32 @@
+func0000000000000016:                   # @func0000000000000016
+	testb	$1, %sil
+	movl	$1, %eax
+	cmovnel	%edx, %eax
+	imull	%edi, %eax
+	cmpl	$16, %eax
+	setl	%al
+	retq
+func000000000000001a:                   # @func000000000000001a
+	testb	$1, %sil
+	movl	$1, %eax
+	cmovnel	%edx, %eax
+	imull	%edi, %eax
+	cmpl	$2, %eax
+	setge	%al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	testb	$1, %sil
+	movl	$1, %eax
+	cmovnel	%edx, %eax
+	imull	%edi, %eax
+	testl	%eax, %eax
+	setg	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	testb	$1, %sil
+	movl	$65535, %eax                    # imm = 0xFFFF
+	cmovnel	%edx, %eax
+	imull	%edi, %eax
+	cmpl	$65535, %eax                    # imm = 0xFFFF
+	setb	%al
+	retq

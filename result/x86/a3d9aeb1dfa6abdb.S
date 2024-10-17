@@ -1,0 +1,7 @@
+func00000000000000f8:                   # @func00000000000000f8
+	movl	%esi, %eax
+	leaq	(%rax,%rax,4), %rax
+	leaq	16(,%rax,8), %rax
+	cmpq	%rdi, %rax
+	seta	%al
+	retq

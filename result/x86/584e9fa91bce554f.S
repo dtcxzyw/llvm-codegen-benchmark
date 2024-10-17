@@ -1,0 +1,14 @@
+func00000000000000cc:                   # @func00000000000000cc
+	xorl	%eax, %eax
+	cmpl	$-11, %edx
+	setl	%al
+	addl	%esi, %eax
+	notl	%eax
+	addl	%edi, %eax
+	retq
+func000000000000008c:                   # @func000000000000008c
+	cmpl	$-1000000, %edx                 # imm = 0xFFF0BDC0
+	adcl	$0, %esi
+	notl	%esi
+	leal	(%rsi,%rdi), %eax
+	retq

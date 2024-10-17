@@ -1,0 +1,14 @@
+func0000000000000201:                   # @func0000000000000201
+	xorl	%eax, %eax
+	cmpl	$100, %edx
+	sete	%al
+	addl	%edi, %eax
+	cmpl	%esi, %eax
+	sete	%al
+	retq
+func0000000000000231:                   # @func0000000000000231
+	cmpl	$1, %edx
+	adcl	$0, %edi
+	cmpl	%esi, %edi
+	sete	%al
+	retq

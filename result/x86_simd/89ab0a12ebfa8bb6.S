@@ -1,0 +1,74 @@
+.LCPI0_0:
+	.long	1024                            # 0x400
+func0000000000000001:                   # @func0000000000000001
+	vpxor	%ymm1, %ymm0, %ymm0
+	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000000a:                   # @func000000000000000a
+	vpsrad	$16, %ymm1, %ymm1
+	vpsrad	$16, %ymm0, %ymm0
+	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000003a:                   # @func000000000000003a
+	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000002a:                   # @func000000000000002a
+	vpsrad	$16, %ymm1, %ymm1
+	vpsrad	$16, %ymm0, %ymm0
+	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000036:                   # @func0000000000000036
+	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000031:                   # @func0000000000000031
+	vpcmpeqd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000006:                   # @func0000000000000006
+	vpsrad	$1, %ymm1, %ymm1
+	vpsrad	$1, %ymm0, %ymm0
+	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	1                               # 0x1
+func000000000000000c:                   # @func000000000000000c
+	vpxor	%ymm1, %ymm0, %ymm0
+	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000000b:                   # @func000000000000000b
+	vpsrad	$1, %ymm1, %ymm1
+	vpsrad	$1, %ymm0, %ymm0
+	vpcmpnltd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.long	65536                           # 0x10000
+func0000000000000021:                   # @func0000000000000021
+	vpxor	%ymm1, %ymm0, %ymm0
+	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000026:                   # @func0000000000000026
+	vpsrad	$16, %ymm1, %ymm1
+	vpsrad	$16, %ymm0, %ymm0
+	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

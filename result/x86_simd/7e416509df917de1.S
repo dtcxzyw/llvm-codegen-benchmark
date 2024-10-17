@@ -1,0 +1,35 @@
+.LCPI0_0:
+	.zero	16,15
+.LCPI0_1:
+	.zero	16,11
+.LCPI0_2:
+	.zero	16,32
+.LCPI0_3:
+	.zero	4,15
+func0000000000000038:                   # @func0000000000000038
+	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm1
+	vpcmpeqb	.LCPI0_1(%rip), %xmm1, %k0
+	vptestmb	.LCPI0_2(%rip), %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI1_0:
+	.zero	16,12
+.LCPI1_1:
+	.zero	16,3
+func0000000000000022:                   # @func0000000000000022
+	vptestnmb	.LCPI1_0(%rip), %xmm0, %k0
+	vptestnmb	.LCPI1_1(%rip), %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq
+.LCPI2_0:
+	.zero	16,8
+.LCPI2_1:
+	.zero	16,112
+func0000000000000182:                   # @func0000000000000182
+	vptestmb	.LCPI2_0(%rip), %xmm0, %k0
+	vptestnmb	.LCPI2_1(%rip), %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	retq

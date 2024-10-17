@@ -1,0 +1,110 @@
+.LCPI0_0:
+	.long	3                               # 0x3
+func0000000000000013:                   # @func0000000000000013
+	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
+	vpextrd	$1, %xmm0, %eax
+	vpextrd	$1, %xmm1, %ecx
+	cltd
+	idivl	%ecx
+	movl	%eax, %ecx
+	vmovd	%xmm0, %eax
+	vmovd	%xmm1, %esi
+	cltd
+	idivl	%esi
+	vmovd	%eax, %xmm2
+	vpinsrd	$1, %ecx, %xmm2, %xmm2
+	vpextrd	$2, %xmm0, %eax
+	vpextrd	$2, %xmm1, %ecx
+	cltd
+	idivl	%ecx
+	vpinsrd	$2, %eax, %xmm2, %xmm2
+	vpextrd	$3, %xmm0, %eax
+	vpextrd	$3, %xmm1, %ecx
+	cltd
+	idivl	%ecx
+	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+func0000000000000012:                   # @func0000000000000012
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	movl	%eax, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm0, %eax
+	cltd
+	idivl	%esi
+	vmovd	%eax, %xmm3
+	vpinsrd	$1, %ecx, %xmm3, %xmm3
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$2, %eax, %xmm3, %xmm3
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$3, %eax, %xmm3, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+func0000000000000011:                   # @func0000000000000011
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	movl	%eax, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm0, %eax
+	cltd
+	idivl	%esi
+	vmovd	%eax, %xmm3
+	vpinsrd	$1, %ecx, %xmm3, %xmm3
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$2, %eax, %xmm3, %xmm3
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$3, %eax, %xmm3, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+func0000000000000010:                   # @func0000000000000010
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
+	vpextrd	$1, %xmm1, %ecx
+	vpextrd	$1, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	movl	%eax, %ecx
+	vmovd	%xmm1, %esi
+	vmovd	%xmm0, %eax
+	cltd
+	idivl	%esi
+	vmovd	%eax, %xmm3
+	vpinsrd	$1, %ecx, %xmm3, %xmm3
+	vpextrd	$2, %xmm1, %ecx
+	vpextrd	$2, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$2, %eax, %xmm3, %xmm3
+	vpextrd	$3, %xmm1, %ecx
+	vpextrd	$3, %xmm0, %eax
+	cltd
+	idivl	%ecx
+	vpinsrd	$3, %eax, %xmm3, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq

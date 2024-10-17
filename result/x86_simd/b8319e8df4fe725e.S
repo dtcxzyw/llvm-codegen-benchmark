@@ -1,0 +1,40 @@
+.LCPI0_0:
+	.long	7                               # 0x7
+func000000000000001f:                   # @func000000000000001f
+	vpslld	$3, %ymm0, %ymm0
+	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpmovdb	%ymm0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	7                               # 0x7
+func000000000000001c:                   # @func000000000000001c
+	vpslld	$3, %ymm1, %ymm1
+	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	192                             # 0xc0
+func000000000000001e:                   # @func000000000000001e
+	vpslld	$3, %ymm1, %ymm1
+	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	7                               # 0x7
+func0000000000000004:                   # @func0000000000000004
+	vpslld	$3, %ymm1, %ymm1
+	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	1                               # 0x1
+func000000000000000c:                   # @func000000000000000c
+	vpaddd	%ymm1, %ymm1, %ymm1
+	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = ymm1 | (ymm0 & mem)
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq

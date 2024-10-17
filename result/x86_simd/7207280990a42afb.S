@@ -1,0 +1,18 @@
+.LCPI0_0:
+	.long	2047                            # 0x7ff
+.LCPI0_1:
+	.long	4294966221                      # 0xfffffbcd
+.LCPI0_2:
+	.long	4294967294                      # 0xfffffffe
+.LCPI0_3:
+	.long	2                               # 0x2
+func00000000000000dc:                   # @func00000000000000dc
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
+	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
+	vpbroadcastd	.LCPI0_3(%rip), %xmm1   # xmm1 = [2,2,2,2]
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq

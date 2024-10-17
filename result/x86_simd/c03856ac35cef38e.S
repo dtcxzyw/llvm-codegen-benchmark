@@ -1,0 +1,10 @@
+func000000000000000e:                   # @func000000000000000e
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k0
+	vpmovsxwd	%ymm2, %zmm0
+	vcvtdq2ps	%zmm0, %zmm0
+	vcmpneqps	%zmm1, %zmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,76 @@
+func000000000000001b:                   # @func000000000000001b
+	shrq	$2, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movq	%rsi, %rax
+	movabsq	$-4835703278458516699, %rcx     # imm = 0xBCE4217D2849CB25
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$18, %rdx
+	addq	%rax, %rdx
+	addq	%rdi, %rdx
+	imulq	$1000, %rdx, %rax               # imm = 0x3E8
+	retq
+func000000000000001a:                   # @func000000000000001a
+	shrq	$2, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	shrq	$2, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	shrq	$2, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	shrq	$3, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$3, %rax
+	leaq	(%rax,%rax,2), %rax
+	negq	%rax
+	retq
+func000000000000001c:                   # @func000000000000001c
+	shrq	$2, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	shrq	$2, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	shrq	$3, %rsi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	shlq	$3, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq

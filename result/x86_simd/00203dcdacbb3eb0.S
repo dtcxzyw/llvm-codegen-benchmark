@@ -1,0 +1,31 @@
+.LCPI0_0:
+	.long	63                              # 0x3f
+func0000000000000003:                   # @func0000000000000003
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	vpcmpneqd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
+	korw	%k1, %k0, %k1
+	vpmovzxdq	%xmm0, %ymm0 {%k1} {z}  # ymm0 {%k1} {z} = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI1_0:
+	.long	63                              # 0x3f
+func0000000000000002:                   # @func0000000000000002
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	vpcmpneqd	.LCPI1_0(%rip){1to4}, %xmm2, %k1
+	korw	%k1, %k0, %k1
+	vpmovzxdq	%xmm0, %ymm0 {%k1} {z}  # ymm0 {%k1} {z} = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI2_0:
+	.long	2147483649                      # 0x80000001
+.LCPI2_1:
+	.quad	2147483648                      # 0x80000000
+func000000000000000d:                   # @func000000000000000d
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k0
+	vpcmpgtd	.LCPI2_0(%rip){1to4}, %xmm2, %k1
+	korw	%k1, %k0, %k1
+	vpbroadcastq	.LCPI2_1(%rip), %ymm1   # ymm1 = [2147483648,2147483648,2147483648,2147483648]
+	vpmovzxdq	%xmm0, %ymm1 {%k1}      # ymm1 {%k1} = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vmovdqa	%ymm1, %ymm0
+	retq

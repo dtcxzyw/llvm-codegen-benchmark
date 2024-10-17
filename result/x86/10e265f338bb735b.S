@@ -1,0 +1,6 @@
+func000000000000000e:                   # @func000000000000000e
+	andb	$48, %dl
+	orb	%sil, %dl
+	movzbl	%dl, %eax
+	addq	%rdi, %rax
+	retq

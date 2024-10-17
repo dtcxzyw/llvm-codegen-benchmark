@@ -1,0 +1,49 @@
+.LCPI0_0:
+	.long	1                               # 0x1
+func0000000000000031:                   # @func0000000000000031
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpsrlq	$56, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm1 {%k1}
+	vpbroadcastd	.LCPI0_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000041:                   # @func0000000000000041
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpsrlq	$5, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	1                               # 0x1
+func0000000000000006:                   # @func0000000000000006
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpsrlq	$3, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm1 {%k1}
+	vpbroadcastd	.LCPI2_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000021:                   # @func0000000000000021
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpsrlq	$32, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000046:                   # @func0000000000000046
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpsrlq	$2, %ymm2, %ymm0
+	vpmovqd	%ymm0, %xmm1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq

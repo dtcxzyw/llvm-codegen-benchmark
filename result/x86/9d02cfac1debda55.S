@@ -1,0 +1,48 @@
+func0000000000000011:                   # @func0000000000000011
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$-2, %ecx
+	movl	$1073741824, %eax               # imm = 0x40000000
+	cmovnel	%ecx, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$65535, %ecx                    # imm = 0xFFFF
+	movl	$-32768, %eax                   # imm = 0x8000
+	cmovnel	%ecx, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leal	(%rdi,%rsi), %ecx
+	xorl	%eax, %eax
+	cmpl	$4194305, %ecx                  # imm = 0x400001
+	cmovbl	%ecx, %eax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$24, %ecx
+	movl	$101, %eax
+	cmovll	%ecx, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$127, %ecx
+	movl	$-1, %eax
+	cmovlel	%ecx, %eax
+	retq
+func0000000000000031:                   # @func0000000000000031
+	leal	(%rdi,%rsi), %ecx
+	xorl	%eax, %eax
+	cmpl	$1000000000, %ecx               # imm = 0x3B9ACA00
+	cmovnel	%ecx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	leal	(%rdi,%rsi), %ecx
+	cmpl	$8, %ecx
+	movl	$1, %eax
+	cmovbl	%ecx, %eax
+	retq
+func0000000000000016:                   # @func0000000000000016
+	leal	(%rdi,%rsi), %ecx
+	testl	%ecx, %ecx
+	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	cmovgl	%ecx, %eax
+	retq

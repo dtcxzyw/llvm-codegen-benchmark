@@ -1,0 +1,16 @@
+func0000000000000041:                   # @func0000000000000041
+	testl	$448, %edx                      # imm = 0x1C0
+	sete	%al
+	shrq	$32, %rsi
+	sete	%cl
+	andb	%dil, %al
+	andb	%cl, %al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	testl	$7168, %edx                     # imm = 0x1C00
+	sete	%cl
+	testq	%rsi, %rsi
+	sete	%al
+	andb	%dil, %al
+	andb	%cl, %al
+	retq

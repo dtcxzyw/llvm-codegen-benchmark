@@ -1,0 +1,10 @@
+func0000000000000000:                   # @func0000000000000000
+	addq	%rdx, %rsi
+	addq	%rdi, %rsi
+	vcvtusi2ss	%rsi, %xmm0, %xmm0
+	retq
+func000000000000000a:                   # @func000000000000000a
+	addq	%rdx, %rsi
+	addq	%rdi, %rsi
+	vcvtusi2ss	%rsi, %xmm0, %xmm0
+	retq

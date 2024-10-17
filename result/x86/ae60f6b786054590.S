@@ -1,0 +1,22 @@
+func0000000000000001:                   # @func0000000000000001
+	xorq	%rsi, %rdi
+	cmpq	$16, %rdi
+	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andq	$-8, %rsi
+	andq	$-4096, %rdi                    # imm = 0xF000
+	cmpq	%rdi, %rsi
+	seta	%al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	xorq	%rsi, %rdi
+	cmpq	$4, %rdi
+	setae	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andq	$-8, %rsi
+	andq	$-8, %rdi
+	cmpq	%rdi, %rsi
+	setb	%al
+	retq

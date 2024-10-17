@@ -1,0 +1,10 @@
+func000000000000000a:                   # @func000000000000000a
+	vcvttsd2si	%xmm0, %eax
+	cmpl	$17, %eax
+	movl	$16, %ecx
+	cmovgel	%eax, %ecx
+	cmpl	%esi, %ecx
+	cmovgel	%esi, %ecx
+	cmpl	%edi, %ecx
+	setl	%al
+	retq

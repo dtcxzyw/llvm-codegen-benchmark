@@ -1,0 +1,5 @@
+func0000000000000002:                   # @func0000000000000002
+	movl	%esi, %eax
+	andl	$1, %eax
+	leaq	48(%rdi), %rdx
+	retq

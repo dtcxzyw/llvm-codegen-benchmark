@@ -1,0 +1,93 @@
+.LCPI0_0:
+	.long	7                               # 0x7
+func000000000000000e:                   # @func000000000000000e
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [7,7,7,7,7,7,7,7]
+	vpand	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm2, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI1_0:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+.LCPI1_1:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+func0000000000000010:                   # @func0000000000000010
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpandd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI2_0:
+	.long	31                              # 0x1f
+.LCPI2_1:
+	.long	4294967289                      # 0xfffffff9
+func000000000000003d:                   # @func000000000000003d
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI3_0:
+	.long	4                               # 0x4
+func000000000000003f:                   # @func000000000000003f
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendw	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7],ymm1[8],ymm2[9],ymm1[10],ymm2[11],ymm1[12],ymm2[13],ymm1[14],ymm2[15]
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI4_0:
+	.long	4294967294                      # 0xfffffffe
+.LCPI4_1:
+	.long	2                               # 0x2
+func0000000000000000:                   # @func0000000000000000
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI5_0:
+	.long	504                             # 0x1f8
+.LCPI5_1:
+	.long	4294967294                      # 0xfffffffe
+func0000000000000035:                   # @func0000000000000035
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
+	retq

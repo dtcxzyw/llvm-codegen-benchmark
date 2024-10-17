@@ -1,0 +1,15 @@
+func000000000000000b:                   # @func000000000000000b
+	vpsllq	$3, %ymm1, %ymm1
+	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
+	vpsllvq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000001b:                   # @func000000000000001b
+	vpsllq	$3, %ymm1, %ymm1
+	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
+	vpsllvq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpsllq	$3, %ymm1, %ymm1
+	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
+	vpsllvq	%ymm1, %ymm0, %ymm0
+	retq

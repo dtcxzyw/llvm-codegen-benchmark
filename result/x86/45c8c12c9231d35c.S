@@ -1,0 +1,18 @@
+func0000000000000001:                   # @func0000000000000001
+	andl	%edx, %esi
+	andl	$1, %esi
+	cmpl	%edi, %esi
+	sete	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	%edx, %esi
+	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	cmpl	%edi, %esi
+	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andl	%edx, %esi
+	movzbl	%sil, %eax
+	cmpl	%edi, %eax
+	seta	%al
+	retq

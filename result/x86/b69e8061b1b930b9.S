@@ -1,0 +1,35 @@
+func0000000000000005:                   # @func0000000000000005
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq
+func000000000000000f:                   # @func000000000000000f
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq
+func0000000000000000:                   # @func0000000000000000
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq
+func0000000000000004:                   # @func0000000000000004
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq
+func000000000000000c:                   # @func000000000000000c
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq
+func000000000000000e:                   # @func000000000000000e
+	addl	%edx, %esi
+	addl	%edi, %esi
+	vcvtsi2sd	%esi, %xmm0, %xmm0
+	retq

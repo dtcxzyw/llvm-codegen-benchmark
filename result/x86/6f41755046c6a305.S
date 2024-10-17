@@ -1,0 +1,14 @@
+func0000000000000002:                   # @func0000000000000002
+	vcvtsi2ss	%edi, %xmm2, %xmm2
+	vfmadd213ss	%xmm1, %xmm0, %xmm2     # xmm2 = (xmm0 * xmm2) + xmm1
+	vxorps	%xmm0, %xmm0, %xmm0
+	vucomiss	%xmm2, %xmm0
+	seta	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vcvtsi2ss	%edi, %xmm2, %xmm2
+	vfmadd213ss	%xmm1, %xmm0, %xmm2     # xmm2 = (xmm0 * xmm2) + xmm1
+	vxorps	%xmm0, %xmm0, %xmm0
+	vucomiss	%xmm0, %xmm2
+	seta	%al
+	retq

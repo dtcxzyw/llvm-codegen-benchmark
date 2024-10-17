@@ -1,0 +1,64 @@
+.LCPI0_0:
+	.long	7                               # 0x7
+.LCPI0_1:
+	.long	8                               # 0x8
+func0000000000000003:                   # @func0000000000000003
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
+	vpbroadcastd	.LCPI0_1(%rip), %xmm1   # xmm1 = [8,8,8,8]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	2047                            # 0x7ff
+.LCPI1_1:
+	.long	107                             # 0x6b
+func000000000000000d:                   # @func000000000000000d
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
+	vpbroadcastd	.LCPI1_1(%rip), %xmm1   # xmm1 = [107,107,107,107]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	2047                            # 0x7ff
+.LCPI2_1:
+	.long	75                              # 0x4b
+func000000000000000f:                   # @func000000000000000f
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
+	vpbroadcastd	.LCPI2_1(%rip), %xmm1   # xmm1 = [75,75,75,75]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.long	1                               # 0x1
+.LCPI3_1:
+	.long	6                               # 0x6
+func000000000000000b:                   # @func000000000000000b
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
+	vpbroadcastd	.LCPI3_1(%rip), %xmm1   # xmm1 = [6,6,6,6]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	1                               # 0x1
+func0000000000000001:                   # @func0000000000000001
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.long	536870911                       # 0x1fffffff
+.LCPI5_1:
+	.long	352                             # 0x160
+func0000000000000009:                   # @func0000000000000009
+	vpmovqd	%ymm0, %xmm0
+	vpandd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
+	vpbroadcastd	.LCPI5_1(%rip), %xmm1   # xmm1 = [352,352,352,352]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

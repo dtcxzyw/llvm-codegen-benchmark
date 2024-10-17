@@ -1,0 +1,53 @@
+func0000000000000001:                   # @func0000000000000001
+	negq	%rdx
+	addq	%rsi, %rdi
+	testq	%rdx, %rdi
+	sete	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	negq	%rdx
+	addq	%rsi, %rdi
+	andq	%rdx, %rdi
+	cmpq	$-1073741824, %rdi              # imm = 0xC0000000
+	setae	%al
+	retq
+func0000000000000051:                   # @func0000000000000051
+	negq	%rdx
+	addq	%rsi, %rdi
+	testq	%rdx, %rdi
+	sete	%al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	negq	%rdx
+	addq	%rsi, %rdi
+	testq	%rdx, %rdi
+	setne	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
+	negq	%rdx
+	addq	%rsi, %rdi
+	andq	%rdx, %rdi
+	cmpq	$4097, %rdi                     # imm = 0x1001
+	setb	%al
+	retq
+func0000000000000054:                   # @func0000000000000054
+	negq	%rdx
+	addq	%rsi, %rdi
+	andq	%rdx, %rdi
+	cmpq	$4097, %rdi                     # imm = 0x1001
+	setb	%al
+	retq
+func0000000000000058:                   # @func0000000000000058
+	negq	%rdx
+	addq	%rsi, %rdi
+	andq	%rdx, %rdi
+	movabsq	$8070450532247928832, %rax      # imm = 0x7000000000000000
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
+func0000000000000021:                   # @func0000000000000021
+	negq	%rdx
+	addq	%rsi, %rdi
+	testq	%rdx, %rdi
+	sete	%al
+	retq

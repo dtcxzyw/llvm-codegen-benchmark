@@ -1,0 +1,12 @@
+func0000000000000004:                   # @func0000000000000004
+	addb	$-14, %sil
+	cmpb	$-4, %sil
+	setb	%al
+	xorb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	addb	$-15, %sil
+	cmpb	$-2, %sil
+	setb	%al
+	xorb	%dil, %al
+	retq

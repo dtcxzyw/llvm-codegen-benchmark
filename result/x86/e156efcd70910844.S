@@ -1,0 +1,36 @@
+func000000000000000d:                   # @func000000000000000d
+	movq	%rdi, %rax
+	testq	%rdx, %rdx
+	cmovnsq	%rsi, %rax
+	orq	$1, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movq	%rdi, %rax
+	testq	%rdx, %rdx
+	cmovneq	%rsi, %rax
+	orq	$1, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movq	%rdi, %rax
+	testq	%rdx, %rdx
+	cmovneq	%rsi, %rax
+	orq	$1, %rax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	movq	%rdi, %rax
+	cmpq	$256, %rdx                      # imm = 0x100
+	cmovbq	%rsi, %rax
+	orq	$4, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	shrq	$32, %rdx
+	cmovneq	%rsi, %rax
+	orq	$8192, %rax                     # imm = 0x2000
+	retq
+func0000000000000015:                   # @func0000000000000015
+	movq	%rdi, %rax
+	cmpq	$2, %rdx
+	cmovlq	%rsi, %rax
+	orq	$8, %rax
+	retq

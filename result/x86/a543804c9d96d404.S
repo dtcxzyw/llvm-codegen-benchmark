@@ -1,0 +1,6 @@
+func0000000000000021:                   # @func0000000000000021
+	leaq	-48(%rsi), %rax
+	testq	%rsi, %rsi
+	cmoveq	%rsi, %rax
+	movq	%rdi, %rdx
+	retq

@@ -1,0 +1,14 @@
+func0000000000000002:                   # @func0000000000000002
+	vcvtsi2ss	%esi, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vcvtsi2ss	%esi, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	setnp	%cl
+	sete	%al
+	andb	%cl, %al
+	andb	%dil, %al
+	retq

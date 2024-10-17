@@ -1,0 +1,84 @@
+func0000000000000020:                   # @func0000000000000020
+	vpsrlq	$32, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000021:                   # @func0000000000000021
+	vpsrlq	$32, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000045:                   # @func0000000000000045
+	vpsrlq	$8, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000040:                   # @func0000000000000040
+	vpsrlq	$3, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000000:                   # @func0000000000000000
+	vpsrlq	$3, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vpsrlq	$1, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vpsrlq	$3, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func000000000000000f:                   # @func000000000000000f
+	vpsrlq	$2, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000007:                   # @func0000000000000007
+	vpsrlq	$2, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000025:                   # @func0000000000000025
+	vpsrlq	$32, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000044:                   # @func0000000000000044
+	vpsrlq	$2, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000027:                   # @func0000000000000027
+	vpsrlq	$32, %ymm2, %ymm2
+	vpmovqd	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

@@ -1,0 +1,63 @@
+func0000000000000000:                   # @func0000000000000000
+	movl	$4, %eax
+	subq	%rdx, %rax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	$2, %eax
+	subq	%rdx, %rax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	$65536, %eax                    # imm = 0x10000
+	subq	%rdx, %rax
+	cmpq	%rsi, %rax
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	movl	$2097152, %eax                  # imm = 0x200000
+	subq	%rdx, %rax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000001c:                   # @func000000000000001c
+	movl	$1024, %eax                     # imm = 0x400
+	subq	%rdx, %rax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	$2048, %eax                     # imm = 0x800
+	subq	%rdx, %rax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	$2048, %eax                     # imm = 0x800
+	subq	%rdx, %rax
+	cmpq	%rsi, %rax
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movl	$8, %eax
+	subq	%rdx, %rax
+	cmpq	%rsi, %rax
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	$64, %eax
+	subq	%rdx, %rax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	addq	%rdi, %rax
+	retq

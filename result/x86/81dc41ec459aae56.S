@@ -1,0 +1,37 @@
+func0000000000000048:                   # @func0000000000000048
+	movq	%rdx, %rcx
+	movq	%rsi, %rdx
+	movabsq	$-7046029288634856825, %rax     # imm = 0x9E3779B185EBCA87
+	imulq	%rax, %rcx
+	mulxq	%rax, %rax, %rax
+	addq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000004f:                   # @func000000000000004f
+	movq	%rdx, %rcx
+	movq	%rsi, %rdx
+	movabsq	$-9002011107970261188, %rax     # imm = 0x83126E978D4FDF3C
+	imulq	%rax, %rcx
+	mulxq	%rax, %rax, %rax
+	addq	%rcx, %rax
+	shrq	$9, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000004a:                   # @func000000000000004a
+	movq	%rdx, %rcx
+	movq	%rsi, %rdx
+	movabsq	$-8446744073709551616, %rax     # imm = 0x8AC7230489E80000
+	imulq	%rax, %rcx
+	mulxq	%rax, %rax, %rax
+	addq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdx, %rcx
+	movq	%rsi, %rdx
+	movabsq	$1844674407370955161, %rax      # imm = 0x1999999999999999
+	imulq	%rax, %rcx
+	mulxq	%rax, %rax, %rax
+	addq	%rcx, %rax
+	addq	%rdi, %rax
+	retq

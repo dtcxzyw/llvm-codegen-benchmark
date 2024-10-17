@@ -1,0 +1,10 @@
+.LCPI0_0:
+	.long	1073741824                      # 0x40000000
+func00000000000003c4:                   # @func00000000000003c4
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpsubq	%ymm3, %ymm1, %ymm1
+	vpcmpltuq	%ymm0, %ymm1, %k1
+	vptestmd	.LCPI0_0(%rip){1to4}, %xmm2, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

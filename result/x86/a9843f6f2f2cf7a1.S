@@ -1,0 +1,28 @@
+func0000000000000000:                   # @func0000000000000000
+	cmpl	$3, %esi
+	movl	$2, %eax
+	cmovgel	%esi, %eax
+	cmpl	%eax, %edi
+	cmovll	%edi, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movl	%esi, %eax
+	sarl	$31, %eax
+	andnl	%esi, %eax, %eax
+	cmpl	%edi, %eax
+	cmovgel	%edi, %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	cmpl	$2, %esi
+	movl	$1, %eax
+	cmovgel	%esi, %eax
+	cmpl	%eax, %edi
+	cmovll	%edi, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	cmpl	$2, %esi
+	movl	$1, %eax
+	cmovgel	%esi, %eax
+	cmpl	%eax, %edi
+	cmovll	%edi, %eax
+	retq

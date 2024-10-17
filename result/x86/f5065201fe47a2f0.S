@@ -1,0 +1,4 @@
+func0000000000000000:                   # @func0000000000000000
+	shrq	$32, %rdi
+	setne	%al
+	retq

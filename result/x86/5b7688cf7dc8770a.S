@@ -1,0 +1,16 @@
+func000000000000000a:                   # @func000000000000000a
+	movabsq	$17179869176, %rax              # imm = 0x3FFFFFFF8
+	andq	%rdx, %rax
+	addq	%rdi, %rax
+	shrq	$6, %rsi
+	leaq	(%rax,%rsi,8), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movb	$40, %al
+	bzhiq	%rax, %rdx, %rax
+	shlq	$6, %rax
+	shrq	$6, %rsi
+	andq	$-64, %rsi
+	addq	%rsi, %rax
+	addq	%rdi, %rax
+	retq

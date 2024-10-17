@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.quad	0x40efffe000000000              # double 65535
+func0000000000000000:                   # @func0000000000000000
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vcvtdq2pd	%ymm2, %zmm0
+	vmulpd	%zmm1, %zmm0, %zmm0
+	vbroadcastsd	.LCPI0_0(%rip), %zmm0 {%k1} # zmm0 {%k1} = [6.5535E+4,6.5535E+4,6.5535E+4,6.5535E+4,6.5535E+4,6.5535E+4,6.5535E+4,6.5535E+4]
+	retq

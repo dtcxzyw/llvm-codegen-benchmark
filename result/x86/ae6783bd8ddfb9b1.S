@@ -1,0 +1,8 @@
+func0000000000000001:                   # @func0000000000000001
+	movl	%ecx, %eax
+	andl	$8388607, %eax                  # imm = 0x7FFFFF
+	xorl	%ecx, %ecx
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	cmovneq	%rcx, %rdx
+	retq

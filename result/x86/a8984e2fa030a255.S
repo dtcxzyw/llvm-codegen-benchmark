@@ -1,0 +1,14 @@
+func0000000000000014:                   # @func0000000000000014
+	shlxq	%rdx, %rsi, %rax
+	addq	$-10, %rdi
+	subq	%rdi, %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	shlxq	%rdx, %rsi, %rax
+	decq	%rdi
+	subq	%rdi, %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq

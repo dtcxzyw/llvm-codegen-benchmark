@@ -1,0 +1,11 @@
+func0000000000000047:                   # @func0000000000000047
+	xorl	%eax, %eax
+	cmpl	$3, %edi
+	setne	%al
+	xorl	%ecx, %ecx
+	cmpl	$3, %esi
+	setne	%cl
+	shll	$22, %ecx
+	shll	$22, %eax
+	addl	%ecx, %eax
+	retq

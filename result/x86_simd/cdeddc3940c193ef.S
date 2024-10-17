@@ -1,0 +1,23 @@
+func0000000000000001:                   # @func0000000000000001
+	vpslld	$28, %ymm1, %ymm1
+	vpsrad	$31, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	511                             # 0x1ff
+.LCPI1_1:
+	.long	132                             # 0x84
+func0000000000000008:                   # @func0000000000000008
+	vpsrld	$3, %ymm1, %ymm1
+	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpcmpnleud	.LCPI1_1(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

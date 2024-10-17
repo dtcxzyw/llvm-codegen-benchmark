@@ -1,0 +1,16 @@
+.LCPI0_0:
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+.LCPI0_1:
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+func0000000000000001:                   # @func0000000000000001
+	vpternlogd	$168, .LCPI0_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = mem & (xmm0 | xmm1)
+	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	retq

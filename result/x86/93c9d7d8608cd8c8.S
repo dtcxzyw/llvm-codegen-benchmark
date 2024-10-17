@@ -1,0 +1,41 @@
+func0000000000000004:                   # @func0000000000000004
+	movq	%rdi, %rax
+	movslq	%esi, %rcx
+	cqto
+	idivq	%rcx
+	cmpq	$131072, %rax                   # imm = 0x20000
+	setb	%al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
+	movslq	%esi, %rcx
+	cqto
+	idivq	%rcx
+	testq	%rax, %rax
+	sete	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	movslq	%esi, %rcx
+	cqto
+	idivq	%rcx
+	cmpq	$65537, %rax                    # imm = 0x10001
+	setae	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rdi, %rax
+	movslq	%esi, %rcx
+	cqto
+	idivq	%rcx
+	movl	$4294967295, %ecx               # imm = 0xFFFFFFFF
+	cmpq	%rcx, %rax
+	setl	%al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movq	%rdi, %rax
+	movslq	%esi, %rcx
+	cqto
+	idivq	%rcx
+	testq	%rax, %rax
+	setg	%al
+	retq

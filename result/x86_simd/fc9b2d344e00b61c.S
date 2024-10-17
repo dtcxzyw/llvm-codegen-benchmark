@@ -1,0 +1,17 @@
+func0000000000000000:                   # @func0000000000000000
+	vpandn	%ymm0, %ymm1, %ymm0
+	vpmovdw	%ymm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000002:                   # @func0000000000000002
+	vpandn	%ymm0, %ymm1, %ymm0
+	vpmovdw	%ymm0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.long	2                               # 0x2
+func0000000000000003:                   # @func0000000000000003
+	vpternlogd	$96, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 & (ymm1 ^ mem)
+	vpmovdw	%ymm0, %xmm0
+	vzeroupper
+	retq

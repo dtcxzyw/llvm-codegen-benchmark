@@ -1,0 +1,9 @@
+func0000000000000082:                   # @func0000000000000082
+	cmpq	$8193, %rdx                     # imm = 0x2001
+	setb	%cl
+	andb	%dil, %cl
+	andl	$-2, %esi
+	cmpl	$2, %esi
+	sete	%al
+	orb	%cl, %al
+	retq

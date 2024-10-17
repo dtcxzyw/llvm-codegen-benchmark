@@ -1,0 +1,20 @@
+func0000000000000001:                   # @func0000000000000001
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpsrad	$1, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000009:                   # @func0000000000000009
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpsrad	$1, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpsrad	$2, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+func0000000000000000:                   # @func0000000000000000
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpsrad	$16, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq

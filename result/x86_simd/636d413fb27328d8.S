@@ -1,0 +1,88 @@
+.LCPI0_0:
+	.zero	16,1
+func000000000000000e:                   # @func000000000000000e
+	vpmovqd	%ymm1, %xmm1
+	vpcmpnltd	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI1_0:
+	.zero	16,1
+func0000000000000010:                   # @func0000000000000010
+	vpmovqd	%ymm1, %xmm1
+	vpcmpltud	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI2_0:
+	.zero	16,1
+func0000000000000048:                   # @func0000000000000048
+	vpmovqd	%ymm1, %xmm1
+	vpcmpnleud	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI3_0:
+	.zero	16,1
+func0000000000000008:                   # @func0000000000000008
+	vpmovqd	%ymm1, %xmm1
+	vpcmpnleud	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI3_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI4_0:
+	.zero	16,1
+func0000000000000002:                   # @func0000000000000002
+	vpmovqd	%ymm1, %xmm1
+	vpcmpeqd	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI5_0:
+	.zero	16,1
+func0000000000000014:                   # @func0000000000000014
+	vpmovqd	%ymm1, %xmm1
+	vpcmpgtd	%xmm1, %xmm0, %k1
+	vmovdqu8	.LCPI5_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI6_0:
+	.zero	16,1
+func0000000000000078:                   # @func0000000000000078
+	vpmovqd	%ymm1, %xmm1
+	vpcmpneqd	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI6_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI7_0:
+	.zero	16,1
+func0000000000000018:                   # @func0000000000000018
+	vpmovqd	%ymm1, %xmm1
+	vpcmpneqd	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI7_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI8_0:
+	.zero	16,1
+func0000000000000016:                   # @func0000000000000016
+	vpmovqd	%ymm1, %xmm1
+	vpcmpled	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI8_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI9_0:
+	.zero	16,1
+func0000000000000072:                   # @func0000000000000072
+	vpmovqd	%ymm1, %xmm1
+	vpcmpleud	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI9_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI10_0:
+	.zero	16,1
+func0000000000000012:                   # @func0000000000000012
+	vpmovqd	%ymm1, %xmm1
+	vpcmpleud	%xmm0, %xmm1, %k1
+	vmovdqu8	.LCPI10_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq

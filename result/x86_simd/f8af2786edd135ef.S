@@ -1,0 +1,9 @@
+.LCPI0_0:
+	.long	1                               # 0x1
+func0000000000000017:                   # @func0000000000000017
+	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k0
+	vcmpneqpd	%zmm1, %zmm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

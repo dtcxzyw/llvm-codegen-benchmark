@@ -1,0 +1,36 @@
+func0000000000000000:                   # @func0000000000000000
+	andl	$-4, %esi
+	addl	$-4, %esi
+	leaq	4(%rdi,%rsi), %rax
+	retq
+func000000000000007a:                   # @func000000000000007a
+	andl	$2147483644, %esi               # imm = 0x7FFFFFFC
+	leaq	360960(%rdi,%rsi,4), %rax
+	retq
+func0000000000000072:                   # @func0000000000000072
+	andl	$2147483644, %esi               # imm = 0x7FFFFFFC
+	leaq	197120(%rdi,%rsi,4), %rax
+	retq
+func000000000000003a:                   # @func000000000000003a
+	movzwl	%si, %eax
+	leaq	40(%rdi,%rax,8), %rax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	movzwl	%si, %eax
+	addl	$-2, %eax
+	leaq	48(%rdi,%rax,8), %rax
+	retq
+func0000000000000078:                   # @func0000000000000078
+	andl	$127, %esi
+	leaq	89(%rdi,%rsi), %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	andl	$-32, %esi
+	addl	$1216, %esi                     # imm = 0x4C0
+	leaq	64(%rdi,%rsi), %rax
+	retq
+func0000000000000070:                   # @func0000000000000070
+	andl	$-16, %esi
+	movslq	%esi, %rax
+	leaq	64(%rdi,%rax), %rax
+	retq

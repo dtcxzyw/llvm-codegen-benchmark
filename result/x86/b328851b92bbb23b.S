@@ -1,0 +1,7 @@
+func0000000000000011:                   # @func0000000000000011
+	movl	%esi, %eax
+	testl	%edx, %edx
+	cmovnel	%edx, %eax
+	testl	%edi, %edi
+	cmovnel	%edi, %eax
+	retq

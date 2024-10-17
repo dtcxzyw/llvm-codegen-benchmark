@@ -1,0 +1,18 @@
+func000000000000003d:                   # @func000000000000003d
+	leal	41(%rdi,%rsi), %eax
+	andl	$262140, %eax                   # imm = 0x3FFFC
+	subl	%edi, %eax
+	subl	%esi, %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leal	4095(%rdi,%rsi), %eax
+	andl	$-4096, %eax                    # imm = 0xF000
+	subl	%edi, %eax
+	subl	%esi, %eax
+	retq
+func0000000000000015:                   # @func0000000000000015
+	leal	15(%rdi,%rsi), %eax
+	andl	$-16, %eax
+	subl	%edi, %eax
+	subl	%esi, %eax
+	retq

@@ -1,0 +1,16 @@
+func0000000000000054:                   # @func0000000000000054
+	movl	$1, %eax
+	shlxq	%rdx, %rax, %rcx
+	xorl	%eax, %eax
+	cmpl	$64, %esi
+	cmovlq	%rcx, %rax
+	orq	%rdi, %rax
+	retq
+func0000000000000050:                   # @func0000000000000050
+	movl	$1, %eax
+	shlxq	%rdx, %rax, %rcx
+	cmpl	$64, %esi
+	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+	cmovbq	%rcx, %rax
+	orq	%rdi, %rax
+	retq

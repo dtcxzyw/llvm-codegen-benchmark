@@ -1,0 +1,11 @@
+func0000000000000080:                   # @func0000000000000080
+	leaq	(%rdx,%rsi,8), %rax
+	subq	%rax, %rdi
+	leaq	-132992(,%rdi,8), %rax
+	retq
+func00000000000000a0:                   # @func00000000000000a0
+	addl	%edx, %esi
+	subl	%esi, %edi
+	leal	3(%rdi), %eax
+	shlq	$32, %rax
+	retq

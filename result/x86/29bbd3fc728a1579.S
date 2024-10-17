@@ -1,0 +1,7 @@
+func0000000000000000:                   # @func0000000000000000
+	xorq	%rdx, %rsi
+	movabsq	$1609587791953885689, %rax      # imm = 0x165667919E3779F9
+	imulq	%rsi, %rax
+	xorq	%rdi, %rax
+	negq	%rax
+	retq

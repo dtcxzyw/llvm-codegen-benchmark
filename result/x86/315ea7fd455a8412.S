@@ -1,0 +1,17 @@
+func0000000000000100:                   # @func0000000000000100
+	shlq	$3, %rdx
+	subq	%rdx, %rsi
+	leaq	64(%rsi,%rdi,8), %rax
+	retq
+func00000000000001aa:                   # @func00000000000001aa
+	subq	%rdx, %rsi
+	leaq	61(%rsi,%rdi,8), %rax
+	retq
+func00000000000000aa:                   # @func00000000000000aa
+	subq	%rdx, %rsi
+	leaq	-4(%rsi,%rdi), %rax
+	retq
+func00000000000001a8:                   # @func00000000000001a8
+	subq	%rdx, %rsi
+	leaq	-11(%rsi,%rdi), %rax
+	retq

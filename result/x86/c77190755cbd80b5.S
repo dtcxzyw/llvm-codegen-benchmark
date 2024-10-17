@@ -1,0 +1,15 @@
+func0000000000000002:                   # @func0000000000000002
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	vcvtusi2ss	%eax, %xmm0, %xmm0
+	retq
+func0000000000000003:                   # @func0000000000000003
+	andl	$3840, %esi                     # imm = 0xF00
+	orl	%edi, %esi
+	vcvtsi2ss	%esi, %xmm0, %xmm0
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movzwl	%si, %eax
+	orl	%edi, %eax
+	vcvtsi2ss	%eax, %xmm0, %xmm0
+	retq

@@ -1,0 +1,13 @@
+func00000000000000b8:                   # @func00000000000000b8
+	imulq	$-86400, %rdx, %rax             # imm = 0xFFFEAE80
+	addq	%rsi, %rax
+	setne	%al
+	orb	%dil, %al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	shlq	$2, %rdx
+	subq	%rdx, %rsi
+	cmpq	$32, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq

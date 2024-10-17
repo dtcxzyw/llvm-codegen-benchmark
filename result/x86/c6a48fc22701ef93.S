@@ -1,0 +1,12 @@
+func0000000000000000:                   # @func0000000000000000
+	shlq	$61, %rsi
+	xorq	%rdi, %rsi
+	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+	andq	%rsi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
+	shll	$5, %esi
+	xorl	%esi, %eax
+	andl	$63, %eax
+	retq

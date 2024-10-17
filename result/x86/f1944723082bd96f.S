@@ -1,0 +1,5 @@
+func0000000000000000:                   # @func0000000000000000
+	vmulsd	%xmm2, %xmm2, %xmm2
+	vfmadd231sd	%xmm1, %xmm1, %xmm2     # xmm2 = (xmm1 * xmm1) + xmm2
+	vfnmadd213sd	%xmm2, %xmm0, %xmm0     # xmm0 = -(xmm0 * xmm0) + xmm2
+	retq

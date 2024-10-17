@@ -1,0 +1,11 @@
+.LCPI0_0:
+	.quad	2147483647                      # 0x7fffffff
+func0000000000000008:                   # @func0000000000000008
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpmaxsq	%ymm0, %ymm2, %ymm1 {%k1}
+	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

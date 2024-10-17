@@ -1,0 +1,14 @@
+func0000000000000000:                   # @func0000000000000000
+	movl	%edx, %eax
+	orl	%esi, %eax
+	orl	$32768, %eax                    # imm = 0x8000
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movl	%edx, %eax
+	orl	%esi, %eax
+	orl	$-2147483648, %eax              # imm = 0x80000000
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq

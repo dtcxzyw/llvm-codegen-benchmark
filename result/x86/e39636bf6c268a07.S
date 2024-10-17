@@ -1,0 +1,6 @@
+.LCPI0_0:
+	.quad	0x4076800000000000              # double 360
+func0000000000000000:                   # @func0000000000000000
+	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
+	vsubsd	%xmm1, %xmm0, %xmm0
+	retq

@@ -1,0 +1,11 @@
+func000000000000001a:                   # @func000000000000001a
+	andl	$1, %esi
+	shll	$10, %esi
+	orl	$107, %esi
+	testb	$1, %dil
+	movl	$32768, %eax                    # imm = 0x8000
+	cmovel	%esi, %eax
+	vcvttss2si	%xmm0, %ecx
+	addl	%eax, %ecx
+	setns	%al
+	retq

@@ -1,0 +1,4 @@
+func0000000000000060:                   # @func0000000000000060
+	incq	%rdi
+	bzhiq	%rsi, %rdi, %rax
+	retq

@@ -1,0 +1,24 @@
+func000000000000000d:                   # @func000000000000000d
+	movq	%rsi, %rax
+	cmpq	%rdx, %rdi
+	cmovbq	%rdi, %rdx
+	cmpq	%rsi, %rdi
+	cmovbq	%rdi, %rax
+	subq	%rdx, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movq	%rsi, %rax
+	cmpq	%rdx, %rdi
+	cmovbq	%rdi, %rdx
+	cmpq	%rsi, %rdi
+	cmovbq	%rdi, %rax
+	subq	%rdx, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rsi, %rax
+	cmpq	%rdx, %rdi
+	cmovbq	%rdi, %rdx
+	cmpq	%rsi, %rdi
+	cmovbq	%rdi, %rax
+	subq	%rdx, %rax
+	retq

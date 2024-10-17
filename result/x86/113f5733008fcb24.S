@@ -1,0 +1,21 @@
+func0000000000000000:                   # @func0000000000000000
+	andl	$-2, %edx
+	leaq	(%rdx,%rsi), %rax
+	andq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movb	$44, %al
+	bzhiq	%rax, %rdx, %rax
+	addq	%rsi, %rax
+	andq	%rdi, %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	andq	%rdi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$-8, %edx
+	leaq	(%rdx,%rsi), %rax
+	andq	%rdi, %rax
+	retq

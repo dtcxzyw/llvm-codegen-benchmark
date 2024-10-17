@@ -1,0 +1,20 @@
+func000000000000000c:                   # @func000000000000000c
+	testl	%esi, %esi
+	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000001:                   # @func0000000000000001
+	testl	%esi, %esi
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$2, %esi
+	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	testl	%esi, %esi
+	setns	%al
+	andb	%dil, %al
+	retq

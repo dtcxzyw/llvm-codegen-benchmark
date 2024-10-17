@@ -1,0 +1,14 @@
+func0000000000000060:                   # @func0000000000000060
+	leal	-8(%rdx), %ecx
+	xorl	%eax, %eax
+	cmpw	$9, %si
+	cmovael	%ecx, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	leal	-48(%rdx), %ecx
+	cmpw	$10, %si
+	movl	$-1, %eax
+	cmovbl	%ecx, %eax
+	addl	%edi, %eax
+	retq

@@ -1,0 +1,30 @@
+func0000000000000008:                   # @func0000000000000008
+	cmpl	$57, %esi
+	movl	$8, %eax
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$64, %esi
+	movq	$-1, %rax
+	cmovbq	%rdi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	testl	%esi, %esi
+	movl	$1048576, %eax                  # imm = 0x100000
+	cmoveq	%rdi, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	xorl	%eax, %eax
+	cmpl	$215, %esi
+	cmovlq	%rdi, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
+	testl	%esi, %esi
+	cmovneq	%rdi, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	xorl	%eax, %eax
+	testl	%esi, %esi
+	cmovgq	%rdi, %rax
+	retq

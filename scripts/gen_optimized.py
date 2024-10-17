@@ -11,10 +11,14 @@ llc_exec = sys.argv[2]
 output_dir = sys.argv[3]
 variant = sys.argv[4]
 
+x86_features = "-mattr=+64bit,+adx,+aes,+avx,+avx2,+avx512bitalg,+avx512bw,+avx512cd,+avx512dq,+avx512f,+avx512ifma,+avx512vbmi,+avx512vbmi2,+avx512vl,+avx512vnni,+avx512vpopcntdq,+bmi,+bmi2,+clflushopt,+cmov,+crc32,+cx16,+cx8,+evex512,+f16c,+fma,+fsgsbase,+fxsr,+gfni,+invpcid,+lzcnt,+mmx,+movbe,+pclmul,+pku,+popcnt,+prfchw,+rdpid,+rdrnd,+rdseed,+sahf,+sha,+sse,+sse2,+sse3,+sse4.1,+sse4.2,+ssse3,+vaes,+vpclmulqdq,+x87,+xsave,+xsavec,+xsaveopt,+xsaves"
+
 variants = {
     'rv64gc': ['-mtriple=riscv64-linux-gnu', '-mattr=+m,+a,+f,+d,+c'],
     'rvb23u64': ['-mtriple=riscv64-linux-gnu', '-mattr=+m,+a,+f,+d,+c,+zicond,+zfa,+zcb,+zba,+zbb,+zbs'],
-    'rvv': ['-mtriple=riscv64-linux-gnu', '-mattr=+m,+a,+f,+d,+c,+zicond,+zfa,+zcb,+zba,+zbb,+zbs,+v,+zvbb']
+    'rvv': ['-mtriple=riscv64-linux-gnu', '-mattr=+m,+a,+f,+d,+c,+zicond,+zfa,+zcb,+zba,+zbb,+zbs,+v,+zvbb'],
+    'x86': ['-mtriple=x86_64-pc-linux-gnu', x86_features],
+    'x86_simd': ['-mtriple=x86_64-pc-linux-gnu', x86_features],
 }
 
 def run_llc(input_file):

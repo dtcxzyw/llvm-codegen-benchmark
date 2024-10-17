@@ -1,0 +1,12 @@
+func0000000000000038:                   # @func0000000000000038
+	movl	$5, %eax
+	subl	%esi, %eax
+	cmpw	%di, %ax
+	seta	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	$-2, %eax
+	subl	%esi, %eax
+	cmpw	%di, %ax
+	setb	%al
+	retq

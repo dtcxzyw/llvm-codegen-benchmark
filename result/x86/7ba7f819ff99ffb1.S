@@ -1,0 +1,5 @@
+func0000000000000001:                   # @func0000000000000001
+	orl	%edx, %esi
+	movzwl	%si, %eax
+	orl	%edi, %eax
+	retq

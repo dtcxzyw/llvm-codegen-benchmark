@@ -1,0 +1,18 @@
+func0000000000000000:                   # @func0000000000000000
+	xorl	%eax, %eax
+	testb	$1, %dl
+	cmovneq	%rsi, %rax
+	orq	%rdi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	testb	$1, %dl
+	cmovneq	%rsi, %rax
+	orq	%rdi, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	testb	$1, %dl
+	movabsq	$4294967296, %rax               # imm = 0x100000000
+	cmovneq	%rsi, %rax
+	orq	%rdi, %rax
+	retq

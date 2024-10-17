@@ -1,0 +1,14 @@
+func0000000000000005:                   # @func0000000000000005
+	movl	%edx, %eax
+	cmpl	%edx, %esi
+	cmovll	%esi, %eax
+	shlq	$32, %rax
+	orq	%rdi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movl	%edx, %eax
+	cmpl	%edx, %esi
+	cmovll	%esi, %eax
+	shlq	$32, %rax
+	orq	%rdi, %rax
+	retq

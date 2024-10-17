@@ -1,0 +1,6 @@
+func0000000000000022:                   # @func0000000000000022
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpcmpnleuq	%ymm0, %ymm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq

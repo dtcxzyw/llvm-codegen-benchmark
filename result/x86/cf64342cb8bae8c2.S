@@ -1,0 +1,18 @@
+func0000000000000004:                   # @func0000000000000004
+	leal	6(%rdi,%rsi), %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	leal	-94(%rdi,%rsi), %eax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	leal	63(%rdi,%rsi), %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	leal	10(%rdi,%rsi), %eax
+	retq
+func0000000000000040:                   # @func0000000000000040
+	leal	(%rdi,%rsi), %eax
+	retq
+func00000000000000ff:                   # @func00000000000000ff
+	leal	16(%rdi,%rsi), %eax
+	retq

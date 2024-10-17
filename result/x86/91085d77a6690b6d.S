@@ -1,0 +1,30 @@
+func00000000000006a4:                   # @func00000000000006a4
+	movl	%edx, %eax
+	leaq	-4(%rdi,%rax,4), %rax
+	leaq	(%rdi,%rsi,4), %rcx
+	cmpq	%rax, %rcx
+	setb	%al
+	retq
+func00000000000002a4:                   # @func00000000000002a4
+	movl	%edx, %eax
+	leaq	-1(%rdi,%rax), %rax
+	addq	%rdi, %rsi
+	cmpq	%rax, %rsi
+	setb	%al
+	retq
+func00000000000002a1:                   # @func00000000000002a1
+	movl	%edx, %eax
+	leaq	(%rax,%rax,2), %rax
+	leaq	24(%rdi,%rax,8), %rax
+	leaq	(%rsi,%rsi,2), %rcx
+	leaq	(%rdi,%rcx,8), %rcx
+	cmpq	%rax, %rcx
+	sete	%al
+	retq
+func00000000000006a8:                   # @func00000000000006a8
+	movl	%edx, %eax
+	leaq	-32(%rdi,%rax), %rax
+	addq	%rdi, %rsi
+	cmpq	%rax, %rsi
+	seta	%al
+	retq

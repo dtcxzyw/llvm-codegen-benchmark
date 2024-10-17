@@ -1,0 +1,14 @@
+func0000000000000022:                   # @func0000000000000022
+	vpcmpeqq	%ymm2, %ymm1, %k1
+	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vpsrld	$31, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000038:                   # @func0000000000000038
+	vpcmpeqq	%ymm2, %ymm1, %k1
+	vptestmq	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vpsrld	$31, %xmm0, %xmm0
+	vzeroupper
+	retq

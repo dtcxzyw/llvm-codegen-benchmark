@@ -1,0 +1,30 @@
+.LCPI0_0:
+	.quad	0x3fc999999999999a              # double 0.20000000000000001
+func0000000000000001:                   # @func0000000000000001
+	vcvtdq2pd	%ymm1, %zmm1
+	vmulpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm1
+	vcvttpd2dq	%zmm1, %ymm1
+	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.quad	0x3fe0000000000000              # double 0.5
+func0000000000000008:                   # @func0000000000000008
+	vcvtdq2pd	%ymm1, %zmm1
+	vmulpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
+	vcvttpd2dq	%zmm1, %ymm1
+	vpcmpltud	%ymm0, %ymm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI2_0:
+	.quad	0x3fb999999999999a              # double 0.10000000000000001
+func000000000000000a:                   # @func000000000000000a
+	vcvtdq2pd	%ymm1, %zmm1
+	vmulpd	.LCPI2_0(%rip){1to8}, %zmm1, %zmm1
+	vcvttpd2dq	%zmm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq

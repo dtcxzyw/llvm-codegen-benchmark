@@ -1,0 +1,15 @@
+.LCPI0_0:
+	.zero	16,26
+.LCPI0_1:
+	.zero	16,10
+.LCPI0_2:
+	.byte	26                              # 0x1a
+func0000000000000888:                   # @func0000000000000888
+	vpbroadcastb	.LCPI0_2(%rip), %xmm3   # xmm3 = [26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26]
+	vpcmpltub	%xmm3, %xmm2, %k0
+	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
+	korw	%k0, %k1, %k0
+	vpcmpltub	%xmm3, %xmm0, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2b	%k0, %xmm0
+	retq

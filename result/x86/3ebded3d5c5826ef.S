@@ -1,0 +1,36 @@
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
+	cmpq	$1024, %rsi                     # imm = 0x400
+	cmovbq	%rsi, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movq	%rdi, %rax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
+	cmpq	$-1, %rsi
+	cmoveq	%rsi, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
+	movq	%rsi, %rcx
+	negq	%rcx
+	cmovnoq	%rsi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movq	%rdi, %rax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
+	cmpq	$2, %rsi
+	cmovaeq	%rsi, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rdi, %rax
+	testb	$1, %dl
+	cmoveq	%rsi, %rax
+	testq	%rsi, %rsi
+	cmovnsq	%rsi, %rax
+	retq
