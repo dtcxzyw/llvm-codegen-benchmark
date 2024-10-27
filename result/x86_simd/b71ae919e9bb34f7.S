@@ -9,8 +9,6 @@ func0000000000000005:                   # @func0000000000000005
 .LCPI1_0:
 	.quad	4                               # 0x4
 func0000000000000015:                   # @func0000000000000015
-	vpsllq	$32, %ymm0, %ymm0
-	vpsraq	$32, %ymm0, %ymm0
 	vpsllq	$2, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq

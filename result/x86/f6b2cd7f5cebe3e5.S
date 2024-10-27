@@ -1,6 +1,5 @@
 func000000000000000d:                   # @func000000000000000d
-	movl	%edi, %eax
-	imulq	$274877907, %rax, %rax          # imm = 0x10624DD3
+	imulq	$274877907, %rdi, %rax          # imm = 0x10624DD3
 	shrq	$38, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -10,8 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$34, %rax
 	retq
 func0000000000000009:                   # @func0000000000000009
-	movl	%edi, %eax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rdi, %rax         # imm = 0x51EB851F
 	shrq	$37, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005

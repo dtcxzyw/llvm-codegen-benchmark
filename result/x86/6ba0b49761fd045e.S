@@ -1,6 +1,5 @@
 func0000000000000025:                   # @func0000000000000025
-	movswl	%dx, %eax
-	imull	$22983, %eax, %eax              # imm = 0x59C7
+	imull	$22983, %edx, %eax              # imm = 0x59C7
 	movl	%eax, %ecx
 	shrl	$31, %ecx
 	sarl	$23, %eax

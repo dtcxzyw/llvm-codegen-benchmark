@@ -10,8 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	setb	%al
 	retq
 func0000000000000034:                   # @func0000000000000034
-	movl	%edi, %eax
-	imulq	$1321528399, %rax, %rax         # imm = 0x4EC4EC4F
+	imulq	$1321528399, %rdi, %rax         # imm = 0x4EC4EC4F
 	shrq	$35, %rax
 	leal	(%rax,%rax,4), %ecx
 	leal	(%rcx,%rcx,4), %ecx

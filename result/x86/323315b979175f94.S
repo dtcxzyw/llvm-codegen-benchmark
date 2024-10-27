@@ -8,8 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	addl	%eax, %edx
 	imull	$3600, %edx, %eax               # imm = 0xE10
 	subl	%eax, %edi
-	movswl	%di, %eax
-	imull	$-30583, %eax, %eax             # imm = 0x8889
+	imull	$-30583, %edi, %eax             # imm = 0x8889
 	shrl	$16, %eax
 	addl	%edi, %eax
 	movzwl	%ax, %ecx

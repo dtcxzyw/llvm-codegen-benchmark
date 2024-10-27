@@ -6,12 +6,12 @@ func0000000000000002:                   # @func0000000000000002
 	mulh	a1, a0, a1
 	add	a1, a1, a0
 	srli	a2, a1, 63
-	srli	a1, a1, 25
+	srai	a1, a1, 25
 	add	a1, a1, a2
 	lui	a2, 14648
-	addi	a2, a2, 1792
+	addiw	a2, a2, 1792
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 67109
 	addiw	a1, a1, -557
 	mul	a0, a0, a1

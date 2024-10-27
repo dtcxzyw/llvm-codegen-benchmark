@@ -3,7 +3,7 @@
 func00000000000001e1:                   # @func00000000000001e1
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	zext.h	a0, a0
+	zext.w	a0, a0
 	lui	a1, 777976
 	addiw	a1, a1, -1057
 	lui	a2, %hi(.LCPI0_0)

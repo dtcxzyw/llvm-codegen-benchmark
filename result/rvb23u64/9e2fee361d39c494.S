@@ -1,7 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	sext.b	a1, a0
-	li	a2, -119
-	mul	a1, a1, a2
+	li	a1, -119
+	mul	a1, a1, a0
 	srli	a1, a1, 8
 	add	a0, a0, a1
 	bexti	a1, a0, 7

@@ -1,6 +1,5 @@
 func0000000000000016:                   # @func0000000000000016
-	movslq	%esi, %rax
-	leaq	-2(%rax,%rdi), %rax
+	leaq	-2(%rsi,%rdi), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movslq	%esi, %rax

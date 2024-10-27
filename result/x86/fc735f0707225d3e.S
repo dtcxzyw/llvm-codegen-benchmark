@@ -5,8 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	sarl	$6, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	movslq	%edi, %rax
-	imulq	$-1321528399, %rax, %rax        # imm = 0xB13B13B1
+	imulq	$-1321528399, %rdi, %rax        # imm = 0xB13B13B1
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$35, %rax
@@ -19,8 +18,7 @@ func0000000000000004:                   # @func0000000000000004
 	sarl	$6, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movslq	%edi, %rax
-	imulq	$2021161081, %rax, %rax         # imm = 0x78787879
+	imulq	$2021161081, %rdi, %rax         # imm = 0x78787879
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$35, %rax

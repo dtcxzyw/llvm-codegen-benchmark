@@ -3,7 +3,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	movl	%eax, %ecx
 	negl	%ecx
 	cmovsl	%eax, %ecx
-	movzbl	%cl, %eax
-	imull	$205, %eax, %eax
+	imull	$205, %ecx, %eax
+	movzwl	%ax, %eax
 	shrl	$11, %eax
 	retq

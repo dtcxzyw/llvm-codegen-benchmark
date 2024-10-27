@@ -2,10 +2,9 @@ func0000000000000003:                   # @func0000000000000003
 	movl	%edi, %eax
 	imulq	$1801439851, %rax, %rax         # imm = 0x6B5FCA6B
 	shrq	$54, %rax
-	movzbl	%al, %ecx
-	imull	$205, %ecx, %ecx
+	imull	$205, %eax, %ecx
 	shrl	$10, %ecx
-	andl	$-2, %ecx
+	andl	$62, %ecx
 	leal	(%rcx,%rcx,4), %ecx
 	subb	%cl, %al
 	retq

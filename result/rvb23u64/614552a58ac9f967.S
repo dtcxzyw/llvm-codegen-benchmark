@@ -16,10 +16,9 @@ func0000000000000001:                   # @func0000000000000001
 	sltu	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	zext.w	a1, a0
-	lui	a2, 322639
-	addiw	a2, a2, -945
-	mul	a1, a1, a2
+	lui	a1, 322639
+	addiw	a1, a1, -945
+	mul	a1, a1, a0
 	srli	a1, a1, 35
 	li	a2, 26
 	mul	a1, a1, a2

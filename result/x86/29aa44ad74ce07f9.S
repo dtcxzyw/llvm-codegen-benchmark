@@ -28,10 +28,9 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	%esi, %edi
-	movslq	%edi, %rax
-	imulq	$-1851608123, %rax, %rcx        # imm = 0x91A2B3C5
-	shrq	$32, %rcx
-	addl	%ecx, %eax
+	imulq	$-1851608123, %rdi, %rax        # imm = 0x91A2B3C5
+	shrq	$32, %rax
+	addl	%edi, %eax
 	movl	%eax, %ecx
 	shrl	$31, %ecx
 	sarl	$11, %eax

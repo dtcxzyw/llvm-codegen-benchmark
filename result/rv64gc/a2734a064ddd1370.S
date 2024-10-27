@@ -26,8 +26,7 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a1, a1, 1311
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
-	slli	a0, a0, 11
-	srli	a0, a0, 48
+	srli	a0, a0, 37
 	lui	a1, 838861
 	addiw	a1, a1, -819
 	slli	a2, a1, 32

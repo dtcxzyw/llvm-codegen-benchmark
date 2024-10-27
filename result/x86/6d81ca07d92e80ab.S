@@ -8,13 +8,11 @@ func0000000000000000:                   # @func0000000000000000
 	shrl	$6, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	movl	%edi, %eax
-	imulq	$274877907, %rax, %rax          # imm = 0x10624DD3
+	imulq	$274877907, %rdi, %rax          # imm = 0x10624DD3
 	shrq	$38, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movl	%edi, %eax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rdi, %rax         # imm = 0x51EB851F
 	shrq	$37, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

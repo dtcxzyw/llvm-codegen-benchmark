@@ -33,8 +33,7 @@ func000000000000002a:                   # @func000000000000002a
 	setg	%al
 	retq
 func0000000000000016:                   # @func0000000000000016
-	movswl	%di, %eax
-	imull	$5243, %eax, %eax               # imm = 0x147B
+	imull	$5243, %edi, %eax               # imm = 0x147B
 	movl	%eax, %ecx
 	shrl	$31, %ecx
 	sarl	$19, %eax

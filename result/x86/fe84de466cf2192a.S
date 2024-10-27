@@ -8,8 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$2, %ecx
 	leal	(%rcx,%rcx,4), %ecx
 	subl	%ecx, %eax
-	movsbl	%al, %ecx
-	imull	$103, %ecx, %ecx
+	imull	$103, %eax, %ecx
 	movzwl	%cx, %ecx
 	movswl	%cx, %edx
 	shrl	$15, %ecx

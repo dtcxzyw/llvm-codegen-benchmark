@@ -26,8 +26,7 @@ func0000000000000003:                   # @func0000000000000003
 	addb	$-95, %al
 	retq
 func000000000000004b:                   # @func000000000000004b
-	movzwl	%di, %eax
-	imull	$33157, %eax, %eax              # imm = 0x8185
+	imull	$33157, %edi, %eax              # imm = 0x8185
 	shrl	$23, %eax
 	addb	$-46, %al
 	retq

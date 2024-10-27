@@ -18,16 +18,14 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%edi, %eax
-	movzwl	%ax, %ecx
-	imull	$20165, %ecx, %ecx              # imm = 0x4EC5
+	imull	$20165, %edi, %ecx              # imm = 0x4EC5
 	shrl	$18, %ecx
 	leal	(%rcx,%rcx,2), %edx
 	leal	(%rcx,%rdx,4), %ecx
 	subl	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
-	movzwl	%di, %eax
-	imull	$32897, %eax, %eax              # imm = 0x8081
+	imull	$32897, %edi, %eax              # imm = 0x8081
 	shrl	$23, %eax
 	addl	%edi, %eax
 	retq

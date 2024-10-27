@@ -20,8 +20,7 @@ func0000000000000021:                   # @func0000000000000021
 	setb	%al
 	retq
 func0000000000000034:                   # @func0000000000000034
-	movzwl	%di, %eax
-	imull	$34953, %eax, %eax              # imm = 0x8889
+	imull	$34953, %edi, %eax              # imm = 0x8889
 	shrl	$21, %eax
 	imull	$60, %eax, %eax
 	subl	%eax, %edi
@@ -40,8 +39,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	retq
 func0000000000000038:                   # @func0000000000000038
-	movzwl	%di, %eax
-	imull	$11651, %eax, %eax              # imm = 0x2D83
+	imull	$11651, %edi, %eax              # imm = 0x2D83
 	shrl	$22, %eax
 	imull	$360, %eax, %eax                # imm = 0x168
 	subl	%eax, %edi
