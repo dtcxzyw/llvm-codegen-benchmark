@@ -15,12 +15,14 @@ func0000000000000002:                   # @func0000000000000002
 	vsrl.vi	v8, v10, 3, v0.t
 	ret
 func0000000000000006:                   # @func0000000000000006
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vi	v10, v10, 1
-	vsrl.vi	v8, v10, 1, v0.t
+	vaaddu.vx	v8, v10, a0, v0.t
 	ret
 func0000000000000004:                   # @func0000000000000004
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vi	v10, v10, 1
-	vsrl.vi	v8, v10, 1, v0.t
+	vaaddu.vx	v8, v10, a0, v0.t
 	ret

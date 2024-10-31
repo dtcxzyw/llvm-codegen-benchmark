@@ -20,9 +20,9 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000061:                   # @func0000000000000061
 	lui	a0, 16
 	addi	a0, a0, -14
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 1
+	vaaddu.vx	v10, v10, a0
 	lui	a0, 8
 	addi	a0, a0, -1
 	vand.vx	v10, v10, a0

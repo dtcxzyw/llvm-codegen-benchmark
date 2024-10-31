@@ -26,8 +26,9 @@ func000000000000002e:                   # @func000000000000002e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 2
 	vadd.vv	v8, v10, v8
-	vadd.vi	v8, v8, 1
-	vsrl.vi	v8, v8, 1
+	li	a0, 1
+	csrwi	vxrm, 2
+	vaaddu.vx	v8, v8, a0
 	ret
 func000000000000007e:                   # @func000000000000007e
 	vsetivli	zero, 8, e32, m2, ta, ma

@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsra.vi	v8, v8, 26
 	ret
 func0000000000000003:                   # @func0000000000000003
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	vsra.vi	v8, v8, 1
+	vaadd.vv	v8, v8, v10
 	ret

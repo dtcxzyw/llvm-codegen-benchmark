@@ -50,14 +50,14 @@ func0000000000000014:                   # @func0000000000000014
 .LCPI4_0:
 	.quad	3234497591006606311             # 0x2ce33e6c02ce33e7
 func000000000000001e:                   # @func000000000000001e
-	li	a0, 365
+	li	a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmul.vx	v8, v8, a0
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
-	li	a1, 24
-	vmacc.vx	v10, a1, v8
-	vsrl.vi	v8, v10, 1
+	li	a1, 365
+	csrwi	vxrm, 2
+	vaaddu.vx	v8, v8, a1
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 6
 	ret

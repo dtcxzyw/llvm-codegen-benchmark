@@ -86,14 +86,16 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vv	v0, v10, v8
 	ret
 func000000000000002a:                   # @func000000000000002a
+	li	a0, -1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v10, v10, -1
-	vsra.vi	v10, v10, 1
+	vaadd.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
 func0000000000000026:                   # @func0000000000000026
+	li	a0, -1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v10, v10, -1
-	vsra.vi	v10, v10, 1
+	vaadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret

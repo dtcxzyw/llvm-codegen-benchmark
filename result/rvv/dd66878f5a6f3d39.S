@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	vor.vi	v8, v8, 1
 	ret
 func000000000000000d:                   # @func000000000000000d
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 1
+	vaaddu.vv	v8, v8, v10
 	li	a0, 512
 	vor.vx	v8, v8, a0
 	ret

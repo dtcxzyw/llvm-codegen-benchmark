@@ -85,20 +85,22 @@ func0000000000000184:                   # @func0000000000000184
 	li	a0, 1
 	slli	a0, a0, 33
 	addi	a0, a0, -8
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
+	vaaddu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 1
+	vnsrl.wi	v9, v10, 0
 	vmsltu.vv	v0, v8, v9
 	ret
 func0000000000000188:                   # @func0000000000000188
 	li	a0, 1
 	slli	a0, a0, 33
 	addi	a0, a0, -8
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
+	vaaddu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 1
+	vnsrl.wi	v9, v10, 0
 	vmsltu.vv	v0, v9, v8
 	ret
 func0000000000000081:                   # @func0000000000000081

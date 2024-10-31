@@ -72,16 +72,18 @@ func000000000000000b:                   # @func000000000000000b
 	vmul.vx	v8, v8, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
-	vsrl.vi	v8, v8, 1
+	vaaddu.vx	v8, v8, a0
 	li	a0, 24
 	vmul.vx	v8, v8, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
-	vsrl.vi	v8, v8, 1
+	vaaddu.vx	v8, v8, a0
 	li	a0, 80
 	vmul.vx	v8, v8, a0
 	ret

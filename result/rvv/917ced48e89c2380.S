@@ -61,10 +61,12 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v8, v10, 4
 	ret
 func000000000000001e:                   # @func000000000000001e
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v8, 1
+	vaaddu.vx	v10, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v8, v10, 1
+	vnsrl.wi	v8, v10, 0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma

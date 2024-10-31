@@ -49,9 +49,10 @@ func0000000000000017:                   # @func0000000000000017
 	vwsll.vi	v8, v10, 5
 	ret
 func0000000000000027:                   # @func0000000000000027
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v8, v8, 1
-	vsrl.vi	v10, v8, 1
+	vaaddu.vx	v10, v8, a0
 	vwsll.vi	v8, v10, 4
 	ret
 func0000000000000006:                   # @func0000000000000006

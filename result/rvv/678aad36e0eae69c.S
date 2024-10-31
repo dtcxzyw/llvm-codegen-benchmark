@@ -13,9 +13,10 @@ func00000000000001d6:                   # @func00000000000001d6
 	vmslt.vv	v0, v10, v8
 	ret
 func0000000000000196:                   # @func0000000000000196
+	li	a0, 3
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 3
-	vsrl.vi	v12, v12, 1
+	vaaddu.vx	v12, v12, a0
 	vadd.vv	v10, v12, v10
 	vmslt.vv	v0, v10, v8
 	ret

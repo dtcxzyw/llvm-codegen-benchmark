@@ -38,10 +38,9 @@ func000000000000002b:                   # @func000000000000002b
 	vadd.vi	v8, v8, 1
 	ret
 func000000000000007b:                   # @func000000000000007b
+	csrwi	vxrm, 0
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v10, v8
-	vadd.vi	v8, v8, 1
-	vsrl.vi	v8, v8, 1
+	vaaddu.vv	v8, v10, v8
 	vadd.vi	v8, v8, 6
 	ret
 func000000000000002f:                   # @func000000000000002f

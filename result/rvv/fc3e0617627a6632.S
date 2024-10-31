@@ -41,7 +41,7 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000005:                   # @func0000000000000005
 	li	a0, -1
 	srli	a0, a0, 31
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
+	vaaddu.vx	v8, v8, a0
 	ret

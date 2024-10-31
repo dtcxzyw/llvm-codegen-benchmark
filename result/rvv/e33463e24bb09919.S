@@ -82,9 +82,10 @@ func0000000000000030:                   # @func0000000000000030
 	vadd.vv	v8, v8, v12
 	ret
 func0000000000000070:                   # @func0000000000000070
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 1
-	vsrl.vi	v12, v12, 1
+	vaaddu.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret

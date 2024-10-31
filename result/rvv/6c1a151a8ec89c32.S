@@ -28,9 +28,8 @@ func00000000000001e4:                   # @func00000000000001e4
 	vmsltu.vv	v0, v8, v10
 	ret
 func00000000000001e8:                   # @func00000000000001e8
+	csrwi	vxrm, 0
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v10, v12
-	vadd.vi	v10, v10, 1
-	vsrl.vi	v10, v10, 1
+	vaaddu.vv	v10, v10, v12
 	vmsltu.vv	v0, v10, v8
 	ret

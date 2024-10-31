@@ -1,7 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
+	li	a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
-	vsrl.vi	v8, v8, 1
+	vaaddu.vx	v8, v8, a0
 	li	a0, -1
 	srli	a0, a0, 4
 	vminu.vx	v8, v8, a0

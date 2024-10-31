@@ -7,9 +7,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, 1
 	addiw	a0, a0, -1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
+	vaaddu.vx	v8, v8, a0
 	lui	a0, 1048575
 	srli	a0, a0, 1
 	vand.vx	v8, v8, a0

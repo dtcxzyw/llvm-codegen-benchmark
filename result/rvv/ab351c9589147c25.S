@@ -30,9 +30,9 @@ func000000000000001f:                   # @func000000000000001f
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
-	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, -2
-	vsrl.vi	v8, v8, 1
+	csrwi	vxrm, 2
+	vaaddu.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e32, m2, ta, ma

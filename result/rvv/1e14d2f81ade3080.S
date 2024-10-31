@@ -27,16 +27,16 @@ func0000000000000084:                   # @func0000000000000084
 	vmsleu.vi	v0, v8, 7
 	ret
 func0000000000000196:                   # @func0000000000000196
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 1
+	vaaddu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	vmsle.vi	v0, v8, 15
 	ret
 func0000000000000194:                   # @func0000000000000194
+	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 1
+	vaaddu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	li	a0, 48
 	vmsltu.vx	v0, v8, a0

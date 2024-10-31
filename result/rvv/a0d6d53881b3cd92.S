@@ -41,9 +41,9 @@ func000000000000000a:                   # @func000000000000000a
 	vadd.vi	v8, v8, 1
 	ret
 func0000000000000019:                   # @func0000000000000019
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 1
+	vaaddu.vv	v8, v8, v10
 	vadd.vi	v8, v8, -1
 	ret
 func0000000000000009:                   # @func0000000000000009
@@ -61,8 +61,8 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000013:                   # @func0000000000000013
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 1
+	vaaddu.vv	v8, v8, v10
 	vadd.vi	v8, v8, 1
 	ret
