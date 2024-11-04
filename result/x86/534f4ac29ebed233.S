@@ -1,5 +1,4 @@
 func0000000000000007:                   # @func0000000000000007
 	movzbl	%sil, %eax
-	orl	%edi, %eax
-	addl	$-11, %eax
+	leal	-11(%rax,%rdi), %eax
 	retq

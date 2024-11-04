@@ -4,7 +4,6 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	$504, %esi                      # imm = 0x1F8
-	orl	$32, %edi
-	leal	(%rdi,%rsi), %eax
+	leal	32(%rsi,%rdi), %eax
 	andl	$504, %eax                      # imm = 0x1F8
 	retq

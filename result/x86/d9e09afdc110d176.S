@@ -1,10 +1,8 @@
 func0000000000000013:                   # @func0000000000000013
-	orl	%esi, %edi
-	leal	1(%rdi), %eax
+	leal	1(%rdi,%rsi), %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
-	orl	%esi, %edi
-	leal	1(%rdi), %eax
+	leal	1(%rdi,%rsi), %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
@@ -27,14 +25,11 @@ func0000000000000001:                   # @func0000000000000001
 	leal	-1(%rdi), %eax
 	retq
 func000000000000001b:                   # @func000000000000001b
-	orl	%esi, %edi
-	leal	4(%rdi), %eax
+	leal	4(%rdi,%rsi), %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
-	orl	%esi, %edi
-	leal	1(%rdi), %eax
+	leal	1(%rdi,%rsi), %eax
 	retq
 func0000000000000012:                   # @func0000000000000012
-	orl	%esi, %edi
-	leal	1(%rdi), %eax
+	leal	1(%rdi,%rsi), %eax
 	retq
