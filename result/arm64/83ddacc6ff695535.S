@@ -1,50 +1,110 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	x8, #13531                      // =0x34db
-	mov	x10, #40888                     // =0x9fb8
+	fmov	x9, d1
+	fmov	x11, d0
 	movk	x8, #55222, lsl #16
-	movk	x10, #12058, lsl #16
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
 	movk	x8, #56962, lsl #32
-	movk	x10, #9437, lsl #32
 	movk	x8, #17179, lsl #48
-	movk	x10, #262, lsl #48
-	smulh	x8, x0, x8
-	asr	x9, x8, #18
-	add	x8, x9, x8, lsr #63
-	mov	x9, #30933                      // =0x78d5
-	movk	x9, #9961, lsl #16
-	movk	x9, #2097, lsl #32
-	movk	x9, #7340, lsl #48
-	madd	x8, x8, x9, x10
-	mov	x9, #42991                      // =0xa7ef
-	movk	x9, #19398, lsl #16
-	movk	x9, #35127, lsl #32
-	movk	x9, #65, lsl #48
-	ror	x8, x8, #3
-	cmp	x8, x9
-	cset	w0, lo
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	asr	x13, x9, #18
+	smulh	x8, x12, x8
+	asr	x12, x11, #18
+	add	x9, x13, x9, lsr #63
+	mov	x13, #30933                     // =0x78d5
+	movk	x13, #9961, lsl #16
+	add	x11, x12, x11, lsr #63
+	asr	x12, x10, #18
+	movk	x13, #2097, lsl #32
+	movk	x13, #7340, lsl #48
+	add	x10, x12, x10, lsr #63
+	asr	x12, x8, #18
+	mul	x9, x9, x13
+	mul	x11, x11, x13
+	add	x8, x12, x8, lsr #63
+	mul	x10, x10, x13
+	fmov	d0, x9
+	mov	x9, #40888                      // =0x9fb8
+	mul	x8, x8, x13
+	movk	x9, #12058, lsl #16
+	fmov	d1, x11
+	movk	x9, #9437, lsl #32
+	movk	x9, #262, lsl #48
+	mov	v0.d[1], x10
+	dup	v2.2d, x9
+	mov	v1.d[1], x8
+	mov	x8, #42990                      // =0xa7ee
+	movk	x8, #19398, lsl #16
+	add	v0.2d, v0.2d, v2.2d
+	movk	x8, #35127, lsl #32
+	movk	x8, #65, lsl #48
+	add	v1.2d, v1.2d, v2.2d
+	shl	v2.2d, v0.2d, #61
+	shl	v3.2d, v1.2d, #61
+	usra	v2.2d, v0.2d, #3
+	dup	v0.2d, x8
+	usra	v3.2d, v1.2d, #3
+	cmhs	v1.2d, v0.2d, v2.2d
+	cmhs	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	mov	x8, #63439                      // =0xf7cf
+	fmov	x9, d0
+	fmov	x11, d1
 	movk	x8, #58195, lsl #16
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
 	movk	x8, #39845, lsl #32
 	movk	x8, #8388, lsl #48
-	smulh	x8, x0, x8
-	asr	x9, x8, #7
-	add	x8, x9, x8, lsr #63
-	mov	x9, #13531                      // =0x34db
-	movk	x9, #55222, lsl #16
-	movk	x9, #56962, lsl #32
-	movk	x9, #17179, lsl #48
-	smulh	x9, x8, x9
-	asr	x10, x9, #18
-	add	x9, x10, x9, lsr #63
-	mov	w10, #16960                     // =0x4240
-	movk	w10, #15, lsl #16
-	msub	x8, x9, x10, x8
-	lsr	x0, x8, #63
-                                        // kill: def $w0 killed $w0 killed $x0
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	asr	x13, x9, #7
+	smulh	x8, x12, x8
+	add	x9, x13, x9, lsr #63
+	mov	x13, #13531                     // =0x34db
+	asr	x12, x11, #7
+	movk	x13, #55222, lsl #16
+	movk	x13, #56962, lsl #32
+	add	x11, x12, x11, lsr #63
+	asr	x12, x10, #7
+	movk	x13, #17179, lsl #48
+	smulh	x14, x9, x13
+	asr	x15, x8, #7
+	add	x10, x12, x10, lsr #63
+	smulh	x16, x11, x13
+	add	x8, x15, x8, lsr #63
+	smulh	x12, x10, x13
+	asr	x15, x14, #18
+	smulh	x13, x8, x13
+	add	x14, x15, x14, lsr #63
+	mov	w15, #16960                     // =0x4240
+	asr	x17, x16, #18
+	movk	w15, #15, lsl #16
+	msub	x9, x14, x15, x9
+	asr	x14, x12, #18
+	add	x16, x17, x16, lsr #63
+	add	x12, x14, x12, lsr #63
+	asr	x14, x13, #18
+	msub	x11, x16, x15, x11
+	add	x13, x14, x13, lsr #63
+	msub	x10, x12, x15, x10
+	fmov	d0, x9
+	msub	x8, x13, x15, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
+	cmlt	v0.2d, v0.2d, #0
+	cmlt	v1.2d, v1.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

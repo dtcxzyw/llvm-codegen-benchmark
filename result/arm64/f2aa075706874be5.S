@@ -1,24 +1,36 @@
 func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
-	sub	w9, w0, #1
-	mov	w8, #1                          // =0x1
-	and	w9, w9, #0x7
-	lsl	w0, w8, w9
+	uzp1	v0.8h, v0.8h, v1.8h
+	movi	v2.2d, #0xffffffffffffffff
+	movi	v1.8b, #7
+	xtn	v0.8b, v0.8h
+	add	v0.8b, v0.8b, v2.8b
+	movi	v2.8b, #1
+	and	v0.8b, v0.8b, v1.8b
+	ushl	v0.8b, v2.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-	sub	w9, w0, #1
-	mov	w8, #510                        // =0x1fe
-	and	w9, w9, #0x7
-	lsl	w0, w8, w9
+	uzp1	v0.8h, v0.8h, v1.8h
+	movi	v2.2d, #0xffffffffffffffff
+	movi	v1.8b, #7
+	xtn	v0.8b, v0.8h
+	add	v0.8b, v0.8b, v2.8b
+	movi	v2.8b, #254
+	and	v0.8b, v0.8b, v1.8b
+	ushl	v0.8b, v2.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	sub	w9, w0, #1
-	mov	w8, #1                          // =0x1
-	and	w9, w9, #0x7
-	lsl	w0, w8, w9
+	uzp1	v0.8h, v0.8h, v1.8h
+	movi	v2.2d, #0xffffffffffffffff
+	movi	v1.8b, #7
+	xtn	v0.8b, v0.8h
+	add	v0.8b, v0.8b, v2.8b
+	movi	v2.8b, #1
+	and	v0.8b, v0.8b, v1.8b
+	ushl	v0.8b, v2.8b, v0.8b
 	ret
                                         // -- End function

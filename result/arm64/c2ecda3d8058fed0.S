@@ -1,28 +1,44 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	lsr	w8, w1, #24
-	and	w9, w0, #0xff
-	mul	w0, w9, w8
+	movi	v4.2d, #0x0000ff000000ff
+	ushr	v3.4s, v3.4s, #24
+	ushr	v2.4s, v2.4s, #24
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	lsr	w8, w1, #3
-	and	w9, w0, #0x7
-	mul	w0, w9, w8
+	movi	v4.4s, #7
+	ushr	v3.4s, v3.4s, #3
+	ushr	v2.4s, v2.4s, #3
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	lsr	w8, w0, #16
-	and	w9, w1, #0xffff
-	mul	w0, w8, w9
+	movi	v4.2d, #0x00ffff0000ffff
+	ushr	v1.4s, v1.4s, #16
+	ushr	v0.4s, v0.4s, #16
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsr	w8, w1, #11
-	and	w9, w0, #0xffff
-	mul	w0, w9, w8
+	movi	v4.2d, #0x00ffff0000ffff
+	ushr	v3.4s, v3.4s, #11
+	ushr	v2.4s, v2.4s, #11
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

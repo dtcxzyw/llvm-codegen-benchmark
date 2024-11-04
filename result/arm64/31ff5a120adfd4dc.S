@@ -1,23 +1,38 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	ubfx	w8, w1, #6, #21
-	add	x8, x8, x0
-	add	x0, x8, #256, lsl #12           // =1048576
+	movi	v3.4s, #31, msl #16
+	ushr	v2.4s, v2.4s, #6
+	mov	w8, #1048576                    // =0x100000
+	and	v2.16b, v2.16b, v3.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	dup	v2.2d, x8
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	lsr	w8, w1, #10
-	and	w8, w8, #0x2
-	add	x8, x8, x0
-	add	x0, x8, #3
+	movi	v3.4s, #2
+	ushr	v2.4s, v2.4s, #10
+	mov	w8, #3                          // =0x3
+	and	v2.16b, v2.16b, v3.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	dup	v2.2d, x8
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	lsr	w8, w1, #14
-	and	w8, w8, #0x3fffc
-	add	x8, x8, x0
-	add	x0, x8, #4
+	ushr	v2.4s, v2.4s, #14
+	mov	w8, #4                          // =0x4
+	bic	v2.4s, #3
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	dup	v2.2d, x8
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function

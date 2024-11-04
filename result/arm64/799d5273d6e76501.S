@@ -1,42 +1,56 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, w1, eq
+	cmeq	v5.4s, v3.4s, v5.4s
+	cmeq	v4.4s, v2.4s, v4.4s
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, w1, gt
+	cmgt	v5.4s, v3.4s, v5.4s
+	cmgt	v4.4s, v2.4s, v4.4s
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, w1, lt
+	cmgt	v5.4s, v5.4s, v3.4s
+	cmgt	v4.4s, v4.4s, v2.4s
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, w1, hi
+	cmhi	v5.4s, v3.4s, v5.4s
+	cmhi	v4.4s, v2.4s, v4.4s
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, w1, lo
+	cmhi	v5.4s, v5.4s, v3.4s
+	cmhi	v4.4s, v4.4s, v2.4s
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w1, w0, lo
+	cmhi	v5.4s, v5.4s, v3.4s
+	cmhi	v4.4s, v4.4s, v2.4s
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w1, w0, eq
+	cmeq	v5.4s, v3.4s, v5.4s
+	cmeq	v4.4s, v2.4s, v4.4s
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

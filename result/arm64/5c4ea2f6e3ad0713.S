@@ -1,13 +1,17 @@
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
 	mov	w8, #23593                      // =0x5c29
-	cmp	w0, #0
-	mul	w8, w1, w8
-	lsl	w9, w8, #14
-	bfxil	w9, w8, #2, #14
-	and	w8, w9, #0xffff
-	mov	w9, #656                        // =0x290
-	ccmp	w8, w9, #0, eq
-	cset	w0, lo
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	dup	v3.8h, w8
+	mov	w8, #655                        // =0x28f
+	uzp1	v0.8h, v0.8h, v1.8h
+	mul	v2.8h, v2.8h, v3.8h
+	shl	v3.8h, v2.8h, #14
+	usra	v3.8h, v2.8h, #2
+	dup	v2.8h, w8
+	cmhs	v1.8h, v2.8h, v3.8h
+	orn	v0.16b, v1.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

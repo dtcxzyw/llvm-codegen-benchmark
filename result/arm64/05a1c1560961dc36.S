@@ -1,24 +1,39 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-	lsl	x8, x8, x1
-	mvn	w8, w8
-	orr	x0, x0, x8, lsl #32
+	movi	v4.2d, #0xffffffffffffffff
+	ushl	v3.2d, v4.2d, v3.2d
+	ushl	v2.2d, v4.2d, v2.2d
+	mvn	v2.16b, v2.16b
+	mvn	v3.16b, v3.16b
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-	lsl	x8, x8, x1
-	mvn	x8, x8
-	orr	x0, x0, x8, lsl #1
+	movi	v4.2d, #0xffffffffffffffff
+	ushl	v3.2d, v4.2d, v3.2d
+	ushl	v2.2d, v4.2d, v2.2d
+	mvn	v2.16b, v2.16b
+	mvn	v3.16b, v3.16b
+	add	v3.2d, v3.2d, v3.2d
+	add	v2.2d, v2.2d, v2.2d
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-	lsl	x8, x8, x1
-	mvn	x8, x8
-	orr	x0, x0, x8, lsl #1
+	movi	v4.2d, #0xffffffffffffffff
+	ushl	v3.2d, v4.2d, v3.2d
+	ushl	v2.2d, v4.2d, v2.2d
+	mvn	v2.16b, v2.16b
+	mvn	v3.16b, v3.16b
+	add	v3.2d, v3.2d, v3.2d
+	add	v2.2d, v2.2d, v2.2d
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

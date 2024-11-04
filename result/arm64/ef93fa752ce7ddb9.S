@@ -1,8 +1,20 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w0, w0, lsr #31
-	asr	w8, w8, #1
-	scvtf	d1, w8
-	fadd	d0, d1, d0
+	usra	v4.4s, v4.4s, #31
+	usra	v5.4s, v5.4s, #31
+	sshr	v4.4s, v4.4s, #1
+	sshr	v5.4s, v5.4s, #1
+	sshll	v6.2d, v4.2s, #0
+	sshll	v7.2d, v5.2s, #0
+	sshll2	v5.2d, v5.4s, #0
+	sshll2	v4.2d, v4.4s, #0
+	scvtf	v6.2d, v6.2d
+	scvtf	v7.2d, v7.2d
+	scvtf	v5.2d, v5.2d
+	scvtf	v4.2d, v4.2d
+	fadd	v0.2d, v6.2d, v0.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fadd	v2.2d, v7.2d, v2.2d
+	fadd	v1.2d, v4.2d, v1.2d
 	ret
                                         // -- End function

@@ -2,21 +2,31 @@ func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #34953                      // =0x8889
 	movk	w8, #34952, lsl #16
-	smull	x8, w0, w8
-	lsr	x8, x8, #32
-	add	w8, w8, w0
-	asr	w9, w8, #5
-	add	w8, w9, w8, lsr #31
-	lsl	w9, w8, #6
-	sub	w0, w9, w8, lsl #2
+	dup	v2.4s, w8
+	smull2	v3.2d, v0.4s, v2.4s
+	smull	v4.2d, v0.2s, v2.2s
+	smull2	v5.2d, v1.4s, v2.4s
+	smull	v2.2d, v1.2s, v2.2s
+	uzp2	v3.4s, v4.4s, v3.4s
+	movi	v4.4s, #60
+	uzp2	v2.4s, v2.4s, v5.4s
+	add	v0.4s, v3.4s, v0.4s
+	add	v1.4s, v2.4s, v1.4s
+	sshr	v2.4s, v0.4s, #5
+	sshr	v3.4s, v1.4s, #5
+	usra	v2.4s, v0.4s, #31
+	usra	v3.4s, v1.4s, #31
+	mul	v0.4s, v2.4s, v4.4s
+	mul	v1.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	negs	w8, w0
-	and	w9, w0, #0x7
-	and	w8, w8, #0x7
-	csneg	w8, w9, w8, mi
-	sub	w0, w0, w8
+	cmlt	v2.4s, v0.4s, #0
+	cmlt	v3.4s, v1.4s, #0
+	usra	v0.4s, v2.4s, #29
+	usra	v1.4s, v3.4s, #29
+	bic	v0.4s, #7
+	bic	v1.4s, #7
 	ret
                                         // -- End function

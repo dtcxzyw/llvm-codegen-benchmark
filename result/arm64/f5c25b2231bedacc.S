@@ -1,8 +1,11 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ucvtf	d2, w0
-	fmadd	d0, d0, d1, d2
-	fmov	x0, d0
-                                        // kill: def $w0 killed $w0 killed $x0
+	ushll	v5.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fmla	v4.2d, v3.2d, v1.2d
+	fmla	v5.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v5.4s, v4.4s
 	ret
                                         // -- End function

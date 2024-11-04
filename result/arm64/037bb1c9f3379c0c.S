@@ -1,39 +1,68 @@
 func0000000000000075:                   // @func0000000000000075
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #8
-	sub	w8, w0, w8
-	sub	w0, w8, #13
+	shl	v4.4s, v4.4s, #8
+	shl	v5.4s, v5.4s, #8
+	orr	v3.16b, v5.16b, v3.16b
+	orr	v2.16b, v4.16b, v2.16b
+	mvni	v4.4s, #12
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000070:                   // @func0000000000000070
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #8
-	mov	w9, #62323                      // =0xf373
-	movk	w9, #15470, lsl #16
-	sub	w8, w0, w8
-	add	w0, w8, w9
+	shl	v4.4s, v4.4s, #8
+	shl	v5.4s, v5.4s, #8
+	mov	w8, #62323                      // =0xf373
+	movk	w8, #15470, lsl #16
+	orr	v3.16b, v5.16b, v3.16b
+	orr	v2.16b, v4.16b, v2.16b
+	dup	v4.4s, w8
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #8
-	mov	w9, #59110                      // =0xe6e6
-	movk	w9, #30941, lsl #16
-	sub	w8, w0, w8
-	add	w0, w8, w9
+	shl	v4.4s, v4.4s, #8
+	shl	v5.4s, v5.4s, #8
+	mov	w8, #59110                      // =0xe6e6
+	movk	w8, #30941, lsl #16
+	orr	v3.16b, v5.16b, v3.16b
+	orr	v2.16b, v4.16b, v2.16b
+	dup	v4.4s, w8
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000007d:                   // @func000000000000007d
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #8
-	sub	w8, w0, w8
-	add	w0, w8, #1
+	shl	v4.4s, v4.4s, #8
+	shl	v5.4s, v5.4s, #8
+	orr	v3.16b, v5.16b, v3.16b
+	orr	v2.16b, v4.16b, v2.16b
+	movi	v4.4s, #1
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #1
-	mvn	w8, w8
-	add	w0, w8, w0
+	add	v5.4s, v5.4s, v5.4s
+	add	v4.4s, v4.4s, v4.4s
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	mvn	v3.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

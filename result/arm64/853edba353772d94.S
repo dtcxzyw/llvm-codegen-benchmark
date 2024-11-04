@@ -1,49 +1,70 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #4433                       // =0x1151
-	add	w8, w8, w0
-	mul	w0, w8, w9
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	mov	w8, #4433                       // =0x1151
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	dup	v2.4s, w8
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #4433                       // =0x1151
-	add	w8, w8, w0
-	mul	w0, w8, w9
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	mov	w8, #4433                       // =0x1151
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	dup	v2.4s, w8
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #181                        // =0xb5
-	add	w8, w8, w0
-	mul	w0, w8, w9
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	movi	v4.4s, #181
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	mul	v0.4s, v0.4s, v4.4s
+	mul	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	add	w8, w8, w0
-	lsl	w9, w8, #5
-	sub	w0, w9, w8, lsl #1
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	movi	v4.4s, #30
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	mul	v0.4s, v0.4s, v4.4s
+	mul	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #20864                      // =0x5180
-	add	w8, w8, w0
-	movk	w9, #1, lsl #16
-	mul	w0, w8, w9
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	mov	w8, #20864                      // =0x5180
+	movk	w8, #1, lsl #16
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	dup	v2.4s, w8
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #-137                       // =0xffffff77
-	add	w8, w8, w0
-	mul	w0, w8, w9
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	mvni	v2.4s, #136
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

@@ -1,41 +1,50 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w8, w2, #0x18
-	orr	w9, w1, w0
-	orr	w8, w8, w9
-	orr	w0, w8, #0x2
+	movi	v3.16b, #24
+	movi	v4.16b, #2
+	orr	v0.16b, v1.16b, v0.16b
+	and	v1.16b, v2.16b, v3.16b
+	orr	v0.16b, v0.16b, v4.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	and	w8, w2, #0xfffffff8
-	orr	w9, w1, w0
-	orr	w8, w8, w9
-	orr	w0, w8, #0x1
+	movi	v3.16b, #248
+	movi	v4.16b, #1
+	orr	v0.16b, v1.16b, v0.16b
+	and	v1.16b, v2.16b, v3.16b
+	orr	v0.16b, v0.16b, v4.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #18                         // =0x12
-	orr	w9, w1, w0
-	and	w8, w2, w8
-	orr	w8, w8, w9
-	orr	w0, w8, #0x8
+	movi	v3.16b, #18
+	movi	v4.16b, #8
+	orr	v0.16b, v1.16b, v0.16b
+	and	v1.16b, v2.16b, v3.16b
+	orr	v0.16b, v0.16b, v4.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w2, #0x4
-	orr	w9, w1, w0
-	orr	w8, w8, w9
-	orr	w0, w8, #0x10
+	movi	v3.16b, #4
+	movi	v4.16b, #16
+	orr	v0.16b, v1.16b, v0.16b
+	and	v1.16b, v2.16b, v3.16b
+	orr	v0.16b, v0.16b, v4.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w2, #0x4
-	orr	w9, w1, w0
-	orr	w8, w8, w9
-	orr	w0, w8, #0x1
+	movi	v3.16b, #4
+	movi	v4.16b, #1
+	orr	v0.16b, v1.16b, v0.16b
+	and	v1.16b, v2.16b, v3.16b
+	orr	v0.16b, v0.16b, v4.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

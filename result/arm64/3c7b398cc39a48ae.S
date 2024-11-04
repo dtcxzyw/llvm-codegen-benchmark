@@ -1,35 +1,44 @@
 func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	ubfx	w8, w2, #14, #2
-	cmp	w8, #2
-	cset	w8, hi
-	cmp	w1, #11
-	cset	w9, hi
-	orr	w9, w0, w9
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	movi	v4.4s, #11
+	mvni	v5.8h, #64, lsl #8
+	cmhi	v3.8h, v3.8h, v5.8h
+	cmhi	v2.4s, v2.4s, v4.4s
+	cmhi	v1.4s, v1.4s, v4.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v2.8b, v3.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v0.8b, v2.8b
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func00000000000000cc:                   // @func00000000000000cc
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
-	cset	w8, ne
-	cmp	w1, #2
-	orr	w8, w0, w8
-	cset	w9, ne
-	orr	w8, w8, w9
-	and	w0, w8, #0x1
+	movi	v4.4s, #2
+	cmtst	v3.8h, v3.8h, v3.8h
+	cmeq	v2.4s, v2.4s, v4.4s
+	cmeq	v1.4s, v1.4s, v4.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v2.8b, v3.8h
+	mvn	v1.16b, v1.16b
+	orr	v0.8b, v0.8b, v2.8b
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func00000000000000c4:                   // @func00000000000000c4
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
-	cmp	w8, #2673
-	cset	w8, ne
-	cmn	w1, #80
-	cset	w9, lo
-	orr	w9, w0, w9
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	mov	w8, #2673                       // =0xa71
+	mvni	v5.4s, #79
+	dup	v4.8h, w8
+	cmhi	v2.4s, v5.4s, v2.4s
+	cmhi	v1.4s, v5.4s, v1.4s
+	cmeq	v3.8h, v3.8h, v4.8h
+	uzp1	v1.8h, v1.8h, v2.8h
+	mvn	v3.16b, v3.16b
+	xtn	v2.8b, v3.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v0.8b, v2.8b
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

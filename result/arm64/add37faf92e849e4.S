@@ -1,5 +1,9 @@
 func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	lsr	w0, w0, #8
+	xtn	v1.4h, v1.4s
+	xtn	v0.4h, v0.4s
+	ushr	v1.4h, v1.4h, #8
+	ushr	v0.4h, v0.4h, #8
+	uzp1	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

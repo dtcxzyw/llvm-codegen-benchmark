@@ -1,10 +1,15 @@
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	sxtb	w8, w2
-	mov	w9, #100                        // =0x64
-	madd	w8, w8, w9, w1
-	mov	w9, #-5328                      // =0xffffeb30
-	add	w9, w0, w9
-	add	w0, w8, w9
+	movi	v5.4h, #100
+	movi	v6.8h, #100
+	mov	w8, #-5328                      // =0xffffeb30
+	sshll	v4.8h, v4.8b, #0
+	dup	v7.4s, w8
+	smlal2	v3.4s, v4.8h, v6.8h
+	smlal	v2.4s, v4.4h, v5.4h
+	add	v1.4s, v1.4s, v7.4s
+	add	v0.4s, v0.4s, v7.4s
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

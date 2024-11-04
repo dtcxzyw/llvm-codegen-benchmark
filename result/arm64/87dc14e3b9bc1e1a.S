@@ -1,32 +1,60 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ubfiz	x8, x1, #3, #5
-	sub	x0, x0, x8
+	mov	w8, #248                        // =0xf8
+	shl	v2.2d, v2.2d, #3
+	shl	v3.2d, v3.2d, #3
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	x8, x1, #2
-	sub	x0, x0, x8, lsl #4
+	mov	x8, #-16                        // =0xfffffffffffffff0
+	shl	v2.2d, v2.2d, #2
+	shl	v3.2d, v3.2d, #2
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsl	x8, x1, #2
-	and	x8, x8, #0x30
-	sub	x0, x0, x8
+	mov	w8, #48                         // =0x30
+	shl	v2.2d, v2.2d, #2
+	shl	v3.2d, v3.2d, #2
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	lsr	x8, x1, #1
-	sub	x0, x0, x8, lsl #4
+	mov	x8, #-16                        // =0xfffffffffffffff0
+	shl	v2.2d, v2.2d, #3
+	shl	v3.2d, v3.2d, #3
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	lsl	x8, x1, #24
-	and	x8, x8, #0x80000000
-	sub	x0, x0, x8
+	movi	v4.4s, #128, lsl #24
+	shl	v2.2d, v2.2d, #24
+	shl	v3.2d, v3.2d, #24
+	fneg	v4.2d, v4.2d
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

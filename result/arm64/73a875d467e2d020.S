@@ -1,21 +1,38 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
+	movi	v3.4s, #1, lsl #24
 	mov	w8, #4                          // =0x4
-	tst	w1, #0x1000000
-	mov	w9, #7                          // =0x7
-	csel	x8, x9, x8, eq
-	cmp	x8, x0
-	cset	w0, hi
+	and	v2.16b, v2.16b, v3.16b
+	dup	v3.2d, x8
+	mov	w8, #7                          // =0x7
+	dup	v5.2d, x8
+	cmeq	v2.4s, v2.4s, #0
+	sshll2	v4.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
+	bsl	v2.16b, v5.16b, v3.16b
+	bit	v3.16b, v5.16b, v4.16b
+	cmhi	v1.2d, v3.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	and	w9, w1, #0xfffffffb
+	movi	v3.4s, #3
+	bic	v2.4s, #4
 	mov	w8, #8                          // =0x8
-	cmp	w9, #3
-	mov	w9, #6                          // =0x6
-	csel	x8, x9, x8, eq
-	cmp	x8, x0
-	cset	w0, eq
+	cmeq	v2.4s, v2.4s, v3.4s
+	dup	v3.2d, x8
+	mov	w8, #6                          // =0x6
+	dup	v5.2d, x8
+	sshll2	v4.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
+	bsl	v2.16b, v5.16b, v3.16b
+	bit	v3.16b, v5.16b, v4.16b
+	cmeq	v1.2d, v3.2d, v1.2d
+	cmeq	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

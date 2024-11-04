@@ -1,24 +1,33 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mov	w8, #199                        // =0xc7
-	and	w8, w2, w8
-	cmp	w8, #6
-	mov	w8, #-33                        // =0xffffffdf
-	csel	w8, w8, w1, eq
-	add	x0, x8, x0
+	movi	v4.4s, #199
+	movi	v5.4s, #6
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v3.4s, v3.4s, v5.4s
+	bic	v2.16b, v2.16b, v3.16b
+	bic	v3.4s, #32
+	orr	v2.16b, v3.16b, v2.16b
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	sbfx	w8, w2, #0, #1
-	and	w8, w8, w1
-	add	x0, x8, x0
+	movi	v4.4s, #1
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v3.4s, v3.4s, #0
+	bic	v2.16b, v2.16b, v3.16b
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	sbfx	w8, w2, #0, #1
-	and	w8, w8, w1
-	add	x0, x8, x0
+	movi	v4.4s, #1
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v3.4s, v3.4s, #0
+	bic	v2.16b, v2.16b, v3.16b
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function

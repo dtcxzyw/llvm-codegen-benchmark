@@ -1,34 +1,59 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	x8, x1, #0x7ffffffff000
-	sub	x8, x0, x8
-	lsl	x0, x8, #17
+	mov	x8, #140737488351232            // =0x7ffffffff000
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	shl	v0.2d, v0.2d, #17
+	shl	v1.2d, v1.2d, #17
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	x8, x1, #0xe
-	sub	x8, x0, x8
-	lsl	x0, x8, #3
+	mov	w8, #14                         // =0xe
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	shl	v0.2d, v0.2d, #3
+	shl	v1.2d, v1.2d, #3
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1fffffff
-	sub	w8, w0, w8
-	lsl	x0, x8, #32
+	mov	w8, #536870911                  // =0x1fffffff
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	shl	v0.2d, v0.2d, #32
+	shl	v1.2d, v1.2d, #32
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	x8, x0, w1, uxtw
-	lsl	x0, x8, #3
+	movi	v4.2d, #0x000000ffffffff
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	shl	v0.2d, v0.2d, #3
+	shl	v1.2d, v1.2d, #3
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	x8, x1, #0x1ffffffffffffffe
-	sub	x8, x0, x8
-	lsl	x0, x8, #3
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	shl	v0.2d, v0.2d, #3
+	shl	v1.2d, v1.2d, #3
 	ret
                                         // -- End function

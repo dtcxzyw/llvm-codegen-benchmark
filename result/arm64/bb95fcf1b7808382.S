@@ -1,54 +1,90 @@
 func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
-	lsl	x8, x1, #32
-                                        // kill: def $w0 killed $w0 def $x0
-	orr	x8, x8, x2, lsl #16
-	bfxil	x8, x0, #0, #16
-	mov	x0, x8
+	shl	v3.2d, v3.2d, #16
+	shl	v1.2d, v1.2d, #32
+	shl	v4.2d, v4.2d, #16
+	shl	v2.2d, v2.2d, #32
+	ushll	v0.4s, v0.4h, #0
+	orr	v3.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000073:                   // @func0000000000000073
 // %bb.0:                               // %entry
-	lsl	x8, x1, #32
-                                        // kill: def $w0 killed $w0 def $x0
-	orr	x8, x8, x2, lsl #16
-	bfxil	x8, x0, #0, #16
-	mov	x0, x8
+	shl	v3.2d, v3.2d, #16
+	shl	v1.2d, v1.2d, #32
+	shl	v4.2d, v4.2d, #16
+	shl	v2.2d, v2.2d, #32
+	ushll	v0.4s, v0.4h, #0
+	orr	v3.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000063:                   // @func0000000000000063
 // %bb.0:                               // %entry
-	lsl	x8, x1, #32
-                                        // kill: def $w0 killed $w0 def $x0
-	orr	x8, x8, x2, lsl #16
-	bfxil	x8, x0, #0, #16
-	mov	x0, x8
+	shl	v3.2d, v3.2d, #16
+	shl	v1.2d, v1.2d, #32
+	shl	v4.2d, v4.2d, #16
+	shl	v2.2d, v2.2d, #32
+	ushll	v0.4s, v0.4h, #0
+	orr	v3.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	lsl	x8, x1, #16
-                                        // kill: def $w0 killed $w0 def $x0
-	orr	x8, x8, x2, lsl #32
-	bfxil	x8, x0, #0, #16
-	mov	x0, x8
+	shl	v3.2d, v3.2d, #32
+	shl	v1.2d, v1.2d, #16
+	shl	v4.2d, v4.2d, #32
+	shl	v2.2d, v2.2d, #16
+	ushll	v0.4s, v0.4h, #0
+	orr	v3.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000005b:                   // @func000000000000005b
 // %bb.0:                               // %entry
-	lsl	x8, x1, #16
-                                        // kill: def $w0 killed $w0 def $x0
-	orr	x8, x8, x2, lsl #32
-	bfxil	x8, x0, #0, #16
-	mov	x0, x8
+	shl	v3.2d, v3.2d, #32
+	shl	v1.2d, v1.2d, #16
+	shl	v4.2d, v4.2d, #32
+	shl	v2.2d, v2.2d, #16
+	ushll	v0.4s, v0.4h, #0
+	orr	v3.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000007a:                   // @func000000000000007a
 // %bb.0:                               // %entry
-	lsl	x8, x1, #11
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x9, x0, #0xffff
-	orr	x8, x8, x2, lsl #27
-	orr	x0, x8, x9
+	shl	v3.2d, v3.2d, #27
+	shl	v1.2d, v1.2d, #11
+	shl	v4.2d, v4.2d, #27
+	shl	v2.2d, v2.2d, #11
+	ushll	v0.4s, v0.4h, #0
+	orr	v3.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function

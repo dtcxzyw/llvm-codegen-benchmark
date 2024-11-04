@@ -1,36 +1,66 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sub	w8, w1, #2
-	cmp	w8, #0
-	csinc	w0, w0, wzr, ge
+	mvni	v3.4s, #1
+	add	v1.4s, v1.4s, v3.4s
+	add	v2.4s, v2.4s, v3.4s
+	cmlt	v2.4s, v2.4s, #0
+	cmlt	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8b, #1
+	xtn	v1.8b, v1.8h
+	bit	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #-5355                      // =0xffffeb15
-	add	w8, w1, w8
-	cmp	w8, #2
-	csinc	w0, w0, wzr, hs
+	movi	v4.4s, #2
+	dup	v3.4s, w8
+	add	v1.4s, v1.4s, v3.4s
+	add	v2.4s, v2.4s, v3.4s
+	cmhi	v2.4s, v4.4s, v2.4s
+	cmhi	v1.4s, v4.4s, v1.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8b, #1
+	xtn	v1.8b, v1.8h
+	bit	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sub	w8, w1, #3
-	cmp	w8, #2
-	csinc	w0, w0, wzr, hs
+	mvni	v3.4s, #2
+	movi	v4.4s, #2
+	add	v1.4s, v1.4s, v3.4s
+	add	v2.4s, v2.4s, v3.4s
+	cmhi	v2.4s, v4.4s, v2.4s
+	cmhi	v1.4s, v4.4s, v1.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8b, #1
+	xtn	v1.8b, v1.8h
+	bit	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #-76                        // =0xffffffb4
-	cmn	w1, #121
-	csel	w0, w8, w0, eq
+	mvni	v3.4s, #120
+	cmeq	v2.4s, v2.4s, v3.4s
+	cmeq	v1.4s, v1.4s, v3.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8b, #180
+	xtn	v1.8b, v1.8h
+	bit	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w8, #1
-	csinc	w0, w0, wzr, le
+	movi	v3.4s, #1
+	add	v1.4s, v1.4s, v3.4s
+	add	v2.4s, v2.4s, v3.4s
+	cmgt	v2.4s, v2.4s, v3.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8b, #1
+	xtn	v1.8b, v1.8h
+	bit	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function

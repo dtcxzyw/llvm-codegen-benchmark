@@ -1,24 +1,32 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	mul	w0, w8, w0
+	mul	v3.4s, v3.4s, v1.4s
+	mul	v2.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	mul	w0, w8, w0
+	mul	v3.4s, v3.4s, v1.4s
+	mul	v2.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	mul	w0, w8, w0
+	mul	v3.4s, v3.4s, v1.4s
+	mul	v2.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	mul	w0, w8, w0
+	mul	v3.4s, v3.4s, v1.4s
+	mul	v2.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

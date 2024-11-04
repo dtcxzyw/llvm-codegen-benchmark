@@ -1,24 +1,30 @@
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	lsl	x8, x1, #1
-	sub	x8, x8, x0
-	lsr	x0, x8, #1
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v2.2d
+	add	v3.2d, v3.2d, v3.2d
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	shrn	v0.2s, v0.2d, #1
+	shrn2	v0.4s, v1.2d, #1
 	ret
                                         // -- End function
 func000000000000006c:                   // @func000000000000006c
 // %bb.0:                               // %entry
-	lsl	x8, x1, #2
-	sub	x8, x8, x0
-	lsr	x0, x8, #2
-                                        // kill: def $w0 killed $w0 killed $x0
+	shl	v2.2d, v2.2d, #2
+	shl	v3.2d, v3.2d, #2
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	shrn	v0.2s, v0.2d, #2
+	shrn2	v0.4s, v1.2d, #2
 	ret
                                         // -- End function
 func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	lsl	x8, x1, #2
-	sub	x8, x8, x0
-	lsr	x0, x8, #2
-                                        // kill: def $w0 killed $w0 killed $x0
+	shl	v2.2d, v2.2d, #2
+	shl	v3.2d, v3.2d, #2
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	shrn	v0.2s, v0.2d, #2
+	shrn2	v0.4s, v1.2d, #2
 	ret
                                         // -- End function

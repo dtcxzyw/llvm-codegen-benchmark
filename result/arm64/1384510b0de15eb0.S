@@ -1,41 +1,53 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	and	w9, w0, #0x7
-	sub	w0, w8, w9
+	movi	v2.4s, #7
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #8
+	and	v0.16b, v0.16b, v2.16b
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	mov	w8, #107                        // =0x6b
-	and	w9, w0, #0x7ff
-	sub	w0, w8, w9
+	movi	v2.4s, #7, msl #8
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #107
+	and	v0.16b, v0.16b, v2.16b
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #75                         // =0x4b
-	and	w9, w0, #0x7ff
-	sub	w0, w8, w9
+	movi	v2.4s, #7, msl #8
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #75
+	and	v0.16b, v0.16b, v2.16b
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
-	and	w9, w0, #0x1
-	sub	w0, w8, w9
+	movi	v2.4s, #1
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #6
+	and	v0.16b, v0.16b, v2.16b
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0x1
-	neg	w0, w8
+	movi	v2.4s, #1
+	uzp1	v0.4s, v0.4s, v1.4s
+	and	v0.16b, v0.16b, v2.16b
+	neg	v0.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
+	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #352                        // =0x160
-	and	w9, w0, #0x1fffffff
-	sub	w0, w8, w9
+	dup	v1.4s, w8
+	bic	v0.4s, #224, lsl #24
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

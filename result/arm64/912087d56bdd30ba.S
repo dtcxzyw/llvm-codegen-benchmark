@@ -1,21 +1,24 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	add	w8, w8, w2, uxth
-	sub	w0, w0, w8
+	uaddl	v4.4s, v2.4h, v3.4h
+	uaddl2	v2.4s, v2.8h, v3.8h
+	sub	v1.4s, v1.4s, v2.4s
+	sub	v0.4s, v0.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	add	w8, w8, w2, uxth
-	sub	w0, w0, w8
+	uaddl	v4.4s, v2.4h, v3.4h
+	uaddl2	v2.4s, v2.8h, v3.8h
+	sub	v1.4s, v1.4s, v2.4s
+	sub	v0.4s, v0.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	add	w8, w8, w2, uxth
-	sub	w0, w0, w8
+	uaddl	v4.4s, v2.4h, v3.4h
+	uaddl2	v2.4s, v2.8h, v3.8h
+	sub	v1.4s, v1.4s, v2.4s
+	sub	v0.4s, v0.4s, v4.4s
 	ret
                                         // -- End function

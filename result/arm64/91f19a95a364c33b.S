@@ -4,8 +4,11 @@ func0000000000000002:                   // @func0000000000000002
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	d1, #0000000000000000
-	tst	w0, #0x1
-	fcsel	d0, d0, d1, ne
+	shl	v2.2d, v2.2d, #63
+	shl	v3.2d, v3.2d, #63
+	cmlt	v2.2d, v2.2d, #0
+	cmlt	v3.2d, v3.2d, #0
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

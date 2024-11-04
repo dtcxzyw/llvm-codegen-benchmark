@@ -2,33 +2,67 @@ func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	mov	w8, #32897                      // =0x8081
 	movk	w8, #32896, lsl #16
-	umull	x8, w1, w8
-	lsr	x8, x8, #32
-	lsl	w8, w8, #1
-	and	w8, w8, #0xff00
-	orr	w0, w8, w0
+	dup	v4.4s, w8
+	umull2	v5.2d, v3.4s, v4.4s
+	umull	v3.2d, v3.2s, v4.2s
+	umull2	v6.2d, v2.4s, v4.4s
+	umull	v2.2d, v2.2s, v4.2s
+	movi	v4.2d, #0x00ff000000ff00
+	uzp2	v3.4s, v3.4s, v5.4s
+	uzp2	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v3.4s
+	add	v2.4s, v2.4s, v2.4s
+	bic	v3.4s, #254
+	bic	v2.4s, #254
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	mov	w8, #32769                      // =0x8001
-	movk	w8, #32768, lsl #16
-	umull	x8, w1, w8
-	lsr	x8, x8, #39
-	and	w8, w8, #0xff00
-	orr	w0, w8, w0
+	movi	v4.4s, #1
+	fneg	v4.8h, v4.8h
+	umull2	v5.2d, v3.4s, v4.4s
+	umull	v3.2d, v3.2s, v4.2s
+	umull2	v6.2d, v2.4s, v4.4s
+	umull	v2.2d, v2.2s, v4.2s
+	movi	v4.2d, #0x00ff000000ff00
+	uzp2	v3.4s, v3.4s, v5.4s
+	uzp2	v2.4s, v2.4s, v6.4s
+	ushr	v3.4s, v3.4s, #7
+	ushr	v2.4s, v2.4s, #7
+	bic	v3.4s, #255
+	bic	v2.4s, #255
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #18725                      // =0x4925
 	movk	w8, #9362, lsl #16
-	umull	x8, w1, w8
-	lsr	x8, x8, #32
-	sub	w9, w1, w8
-	add	w8, w8, w9, lsr #1
-	lsl	w8, w8, #14
-	and	w8, w8, #0x7fff0000
-	orr	w0, w8, w0
+	dup	v4.4s, w8
+	umull2	v5.2d, v3.4s, v4.4s
+	umull	v6.2d, v3.2s, v4.2s
+	umull2	v7.2d, v2.4s, v4.4s
+	umull	v4.2d, v2.2s, v4.2s
+	uzp2	v5.4s, v6.4s, v5.4s
+	uzp2	v4.4s, v4.4s, v7.4s
+	sub	v3.4s, v3.4s, v5.4s
+	sub	v2.4s, v2.4s, v4.4s
+	usra	v5.4s, v3.4s, #1
+	usra	v4.4s, v2.4s, #1
+	shl	v3.4s, v5.4s, #14
+	shl	v2.4s, v4.4s, #14
+	bic	v3.4s, #192, lsl #8
+	bic	v2.4s, #192, lsl #8
+	bic	v3.4s, #128, lsl #24
+	bic	v2.4s, #128, lsl #24
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function

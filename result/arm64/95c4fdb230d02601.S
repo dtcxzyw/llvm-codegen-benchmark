@@ -1,13 +1,16 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	rbit	w8, w0
-	clz	w0, w8
+	movi	v1.16b, #1
+	sub	v1.16b, v0.16b, v1.16b
+	bic	v0.16b, v1.16b, v0.16b
+	cnt	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	orr	w8, w0, #0x100
-	rbit	w8, w8
-	clz	w0, w8
+	movi	v1.16b, #1
+	sub	v1.16b, v0.16b, v1.16b
+	bic	v0.16b, v1.16b, v0.16b
+	cnt	v0.16b, v0.16b
 	ret
                                         // -- End function

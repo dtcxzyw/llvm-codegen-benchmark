@@ -1,26 +1,34 @@
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	fmov	s0, w1
-	fmov	s1, w0
-	cnt	v0.8b, v0.8b
-	cnt	v1.8b, v1.8b
-	uaddlv	h0, v0.8b
-	uaddlv	h1, v1.8b
-	fmov	w8, s0
-	fmov	w9, s1
-	add	w0, w9, w8
+	movi	v5.16b, #1
+	cnt	v6.16b, v3.16b
+	movi	v3.2d, #0000000000000000
+	movi	v4.2d, #0000000000000000
+	cnt	v2.16b, v2.16b
+	cnt	v1.16b, v1.16b
+	cnt	v0.16b, v0.16b
+	udot	v3.4s, v5.16b, v6.16b
+	udot	v4.4s, v5.16b, v2.16b
+	udot	v3.4s, v5.16b, v1.16b
+	udot	v4.4s, v5.16b, v0.16b
+	mov	v1.16b, v3.16b
+	mov	v0.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fmov	s0, w1
-	fmov	s1, w0
-	cnt	v0.8b, v0.8b
-	cnt	v1.8b, v1.8b
-	uaddlv	h0, v0.8b
-	uaddlv	h1, v1.8b
-	fmov	w8, s0
-	fmov	w9, s1
-	add	w0, w9, w8
+	movi	v5.16b, #1
+	cnt	v6.16b, v3.16b
+	movi	v3.2d, #0000000000000000
+	movi	v4.2d, #0000000000000000
+	cnt	v2.16b, v2.16b
+	cnt	v1.16b, v1.16b
+	cnt	v0.16b, v0.16b
+	udot	v3.4s, v5.16b, v6.16b
+	udot	v4.4s, v5.16b, v2.16b
+	udot	v3.4s, v5.16b, v1.16b
+	udot	v4.4s, v5.16b, v0.16b
+	mov	v1.16b, v3.16b
+	mov	v0.16b, v4.16b
 	ret
                                         // -- End function

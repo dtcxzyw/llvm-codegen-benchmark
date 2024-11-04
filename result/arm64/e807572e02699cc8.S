@@ -1,7 +1,21 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmul	s1, s1, s2
-	fadd	s0, s1, s0
-	fcvtzs	w0, s0
+	ldp	q17, q16, [sp, #32]
+	ldp	q18, q19, [sp]
+	fmul	v7.4s, v7.4s, v16.4s
+	fmul	v6.4s, v6.4s, v17.4s
+	fmul	v5.4s, v5.4s, v19.4s
+	fmul	v4.4s, v4.4s, v18.4s
+	fadd	v3.4s, v7.4s, v3.4s
+	fadd	v2.4s, v6.4s, v2.4s
+	fadd	v0.4s, v4.4s, v0.4s
+	fadd	v1.4s, v5.4s, v1.4s
+	fcvtzs	v3.4s, v3.4s
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v1.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	uzp1	v2.8h, v2.8h, v3.8h
+	uzp1	v0.8h, v0.8h, v1.8h
+	uzp1	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

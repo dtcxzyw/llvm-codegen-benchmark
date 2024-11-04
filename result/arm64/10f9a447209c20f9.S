@@ -1,15 +1,24 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w1, #0xfffffffe
-	sxtw	x8, w8
-	cmp	x8, x0
-	cset	w0, eq
+	bic	v2.4s, #1
+	sshll	v3.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
+	cmeq	v1.2d, v2.2d, v1.2d
+	cmeq	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w1, #0x7ffffffe
-	cmp	x8, x0
-	cset	w0, hi
+	mvni	v3.4s, #1
+	fneg	v3.4s, v3.4s
+	and	v2.16b, v2.16b, v3.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

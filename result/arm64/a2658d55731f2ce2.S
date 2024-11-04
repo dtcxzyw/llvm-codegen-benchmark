@@ -1,49 +1,56 @@
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, hi
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmhi	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, ls
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmhs	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmeq	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmeq	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmeq	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, lo
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmhi	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000036:                   // @func0000000000000036
 // %bb.0:                               // %entry
-	add	w8, w0, w2, uxth
-	cmp	w8, w1
-	cset	w0, lt
+	uzp1	v1.4s, v1.4s, v2.4s
+	uaddw	v0.4s, v0.4s, v3.4h
+	cmgt	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

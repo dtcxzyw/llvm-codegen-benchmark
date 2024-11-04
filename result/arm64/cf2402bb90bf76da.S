@@ -1,9 +1,21 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	w8, w0, w1
-	tst	w8, #0x1
-	mov	w8, #-2                         // =0xfffffffe
-	cinc	w8, w8, eq
-	add	w0, w8, w2
+	and	v0.8b, v0.8b, v1.8b
+	zip2	v1.8b, v0.8b, v0.8b
+	zip1	v0.8b, v0.8b, v0.8b
+	ushll	v1.4s, v1.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	shl	v1.4s, v1.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmlt	v1.4s, v1.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	mov	v4.16b, v1.16b
+	mov	v5.16b, v0.16b
+	bic	v4.4s, #1
+	bic	v5.4s, #1
+	orn	v1.16b, v4.16b, v1.16b
+	orn	v0.16b, v5.16b, v0.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

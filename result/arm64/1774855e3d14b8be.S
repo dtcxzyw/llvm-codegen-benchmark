@@ -1,30 +1,47 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	neg	w8, w2
-	lsl	x8, x1, x8
-	add	x0, x8, x0
+	neg	v4.4s, v4.4s
+	ushll2	v5.2d, v4.4s, #0
+	ushll	v4.2d, v4.2s, #0
+	ushl	v2.2d, v2.2d, v4.2d
+	ushl	v3.2d, v3.2d, v5.2d
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #-54                        // =0xffffffca
-	sub	w8, w8, w2
-	lsl	x8, x1, x8
-	add	x0, x8, x0
+	mvni	v5.4s, #53
+	sub	v4.4s, v5.4s, v4.4s
+	ushll2	v5.2d, v4.4s, #0
+	ushll	v4.2d, v4.2s, #0
+	ushl	v2.2d, v2.2d, v4.2d
+	ushl	v3.2d, v3.2d, v5.2d
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	mov	w8, #-53                        // =0xffffffcb
-	sub	w8, w8, w2
-	lsl	x8, x1, x8
-	add	x0, x8, x0
+	mvni	v5.4s, #52
+	sub	v4.4s, v5.4s, v4.4s
+	ushll2	v5.2d, v4.4s, #0
+	ushll	v4.2d, v4.2s, #0
+	ushl	v2.2d, v2.2d, v4.2d
+	ushl	v3.2d, v3.2d, v5.2d
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mvn	w8, w2
-	lsl	x8, x1, x8
-	add	x0, x8, x0
+	movi	v5.4s, #63
+	sub	v4.4s, v5.4s, v4.4s
+	ushll2	v5.2d, v4.4s, #0
+	ushll	v4.2d, v4.2s, #0
+	ushl	v2.2d, v2.2d, v4.2d
+	ushl	v3.2d, v3.2d, v5.2d
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function

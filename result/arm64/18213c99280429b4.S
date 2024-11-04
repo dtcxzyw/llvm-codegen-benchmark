@@ -1,57 +1,41 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	and	w9, w0, #0xff
-	cmp	w9, w8
-	csel	w8, w9, w8, hi
-	cmp	w8, #5
-	cset	w0, lo
+	movi	v2.16b, #5
+	umax	v0.16b, v0.16b, v1.16b
+	cmhi	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	and	w9, w0, #0xff
-	cmp	w9, w8
-	csel	w8, w9, w8, hi
-	cmp	w8, #39
-	cset	w0, hi
+	movi	v2.16b, #39
+	umax	v0.16b, v0.16b, v1.16b
+	cmhi	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	and	w9, w0, #0xff
-	cmp	w9, w8
-	csel	w8, w9, w8, hi
-	cmp	w8, #10
-	cset	w0, lo
+	movi	v2.16b, #10
+	umax	v0.16b, v0.16b, v1.16b
+	cmhi	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	and	w9, w0, #0xff
-	cmp	w9, w8
-	csel	w8, w9, w8, hi
-	cmp	w8, #15
-	cset	w0, eq
+	movi	v2.16b, #15
+	umax	v0.16b, v0.16b, v1.16b
+	cmeq	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	orr	w8, w0, w1
-	tst	w8, #0xff
-	cset	w0, eq
+	orr	v0.16b, v0.16b, v1.16b
+	cmeq	v0.16b, v0.16b, #0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	and	w9, w0, #0xff
-	cmp	w9, w8
-	csel	w8, w9, w8, hi
-	cmp	w8, #16
-	cset	w0, hi
+	movi	v2.16b, #16
+	umax	v0.16b, v0.16b, v1.16b
+	cmhi	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

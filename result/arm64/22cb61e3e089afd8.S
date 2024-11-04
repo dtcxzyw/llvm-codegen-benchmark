@@ -1,18 +1,22 @@
 func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	lsl	w8, w1, #2
-	lsl	w9, w0, #4
-	add	w8, w8, #8
-	add	w9, w9, #32
-	orr	w0, w9, w8
+	movi	v2.16b, #8
+	movi	v3.16b, #32
+	shl	v1.16b, v1.16b, #2
+	shl	v0.16b, v0.16b, #4
+	add	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v3.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsl	w8, w1, #2
-	lsl	w9, w0, #4
-	add	w8, w8, #8
-	add	w9, w9, #32
-	orr	w0, w9, w8
+	movi	v2.16b, #8
+	movi	v3.16b, #32
+	shl	v1.16b, v1.16b, #2
+	shl	v0.16b, v0.16b, #4
+	add	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v3.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

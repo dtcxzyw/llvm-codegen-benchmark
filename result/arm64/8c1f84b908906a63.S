@@ -1,15 +1,26 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmp	w2, #0
-	mov	w9, #4229                       // =0x1085
-	csel	w8, w0, w1, eq
-	movk	w9, #2114, lsl #16
-	umull	x9, w8, w9
-	lsr	x9, x9, #32
-	sub	w10, w8, w9
-	add	w9, w9, w10, lsr #1
-	lsr	w9, w9, #4
-	sub	w9, w9, w9, lsl #5
-	add	w0, w8, w9
+	cmeq	v4.4s, v4.4s, #0
+	cmeq	v5.4s, v5.4s, #0
+	mov	w8, #4229                       // =0x1085
+	movk	w8, #2114, lsl #16
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	dup	v2.4s, w8
+	umull2	v3.2d, v0.4s, v2.4s
+	umull	v4.2d, v0.2s, v2.2s
+	umull2	v5.2d, v1.4s, v2.4s
+	umull	v2.2d, v1.2s, v2.2s
+	uzp2	v3.4s, v4.4s, v3.4s
+	uzp2	v2.4s, v2.4s, v5.4s
+	sub	v4.4s, v0.4s, v3.4s
+	sub	v5.4s, v1.4s, v2.4s
+	usra	v3.4s, v4.4s, #1
+	movi	v4.4s, #31
+	usra	v2.4s, v5.4s, #1
+	ushr	v3.4s, v3.4s, #4
+	ushr	v2.4s, v2.4s, #4
+	mls	v0.4s, v3.4s, v4.4s
+	mls	v1.4s, v2.4s, v4.4s
 	ret
                                         // -- End function

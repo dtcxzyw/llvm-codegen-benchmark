@@ -1,29 +1,88 @@
 func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	asr	x8, x8, #2
-	mul	x8, x8, x0
-	lsr	x8, x8, #61
-	cmp	x8, #0
-	cset	w0, ne
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	sshr	v2.2d, v2.2d, #2
+	sshr	v3.2d, v3.2d, #2
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x11, v2.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
+	mul	x11, x14, x13
+	dup	v2.2d, x8
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
+	cmhi	v0.2d, v0.2d, v2.2d
+	cmhi	v1.2d, v1.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	asr	x8, x8, #3
-	mul	x8, x8, x0
-	cmp	x8, #0
-	cset	w0, eq
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	sshr	v2.2d, v2.2d, #3
+	sshr	v3.2d, v3.2d, #3
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x11, v2.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
+	cmeq	v0.2d, v0.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	asr	x8, x8, #3
-	mul	x8, x8, x0
-	lsr	x8, x8, #62
-	cmp	x8, #0
-	cset	w0, ne
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	sshr	v2.2d, v2.2d, #3
+	sshr	v3.2d, v3.2d, #3
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x11, v2.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mov	x8, #4611686018427387903        // =0x3fffffffffffffff
+	mul	x11, x14, x13
+	dup	v2.2d, x8
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
+	cmhi	v0.2d, v0.2d, v2.2d
+	cmhi	v1.2d, v1.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

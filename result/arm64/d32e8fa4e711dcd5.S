@@ -1,30 +1,46 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	x0, x1
-	mov	w8, #255                        // =0xff
-	csel	x9, x0, x1, lo
-	cmp	x9, #255
-	csel	x8, x9, x8, lo
-	sub	x0, x0, x8
+	cmhi	v4.2d, v3.2d, v1.2d
+	cmhi	v5.2d, v2.2d, v0.2d
+	bit	v3.16b, v1.16b, v4.16b
+	bit	v2.16b, v0.16b, v5.16b
+	movi	v4.2d, #0x000000000000ff
+	cmhi	v5.2d, v4.2d, v3.2d
+	cmhi	v6.2d, v4.2d, v2.2d
+	bif	v3.16b, v4.16b, v5.16b
+	bif	v2.16b, v4.16b, v6.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	x1, x0
-	mov	w8, #255                        // =0xff
-	csel	x9, x1, x0, lo
-	cmp	x9, #255
-	csel	x8, x9, x8, lo
-	sub	x0, x0, x8
+	cmhi	v4.2d, v1.2d, v3.2d
+	cmhi	v5.2d, v0.2d, v2.2d
+	bif	v3.16b, v1.16b, v4.16b
+	bif	v2.16b, v0.16b, v5.16b
+	movi	v4.2d, #0x000000000000ff
+	cmhi	v5.2d, v4.2d, v3.2d
+	cmhi	v6.2d, v4.2d, v2.2d
+	bif	v3.16b, v4.16b, v5.16b
+	bif	v2.16b, v4.16b, v6.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmp	x1, x0
-	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
-	csel	x9, x1, x0, lo
-	cmp	x9, x8
-	csel	x8, x9, x8, lo
-	sub	x0, x0, x8
+	movi	v4.2d, #0xffffffffffffffff
+	cmhi	v5.2d, v0.2d, v2.2d
+	cmhi	v6.2d, v1.2d, v3.2d
+	bif	v2.16b, v0.16b, v5.16b
+	bif	v3.16b, v1.16b, v6.16b
+	fneg	v4.2d, v4.2d
+	cmhi	v5.2d, v4.2d, v3.2d
+	cmhi	v6.2d, v4.2d, v2.2d
+	bif	v3.16b, v4.16b, v5.16b
+	bif	v2.16b, v4.16b, v6.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

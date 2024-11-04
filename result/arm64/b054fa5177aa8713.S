@@ -1,21 +1,27 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
+	uzp1	v0.8h, v0.8h, v1.8h
 	mov	w8, #417                        // =0x1a1
-	lsr	w0, w8, w0
+	dup	v1.8h, w8
+	neg	v0.8h, v0.8h
+	ushl	v0.8h, v1.8h, v0.8h
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
+	uzp1	v0.8h, v0.8h, v1.8h
 	mov	w8, #897                        // =0x381
-	lsr	w0, w8, w0
+	dup	v1.8h, w8
+	neg	v0.8h, v0.8h
+	ushl	v0.8h, v1.8h, v0.8h
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	mov	w8, #32900                      // =0x8084
-	lsr	w0, w8, w0
+	movi	v2.8h, #132
+	uzp1	v0.8h, v0.8h, v1.8h
+	fneg	v1.8h, v2.8h
+	neg	v0.8h, v0.8h
+	ushl	v0.8h, v1.8h, v0.8h
 	ret
                                         // -- End function

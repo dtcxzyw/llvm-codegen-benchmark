@@ -1,24 +1,38 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	lsl	x8, x1, #32
-	orr	x0, x0, x8, asr #17
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #17
+	ssra	v0.2d, v2.2d, #17
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sxtb	x8, w1
-	orr	x0, x8, x0
+	shl	v3.2d, v3.2d, #56
+	shl	v2.2d, v2.2d, #56
+	sshr	v3.2d, v3.2d, #56
+	sshr	v2.2d, v2.2d, #56
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsl	x8, x1, #32
-	orr	x0, x0, x8, asr #52
+	shl	v2.2d, v2.2d, #32
+	shl	v3.2d, v3.2d, #32
+	sshr	v3.2d, v3.2d, #52
+	sshr	v2.2d, v2.2d, #52
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	lsl	x8, x1, #48
-	orr	x0, x0, x8, asr #16
+	shl	v3.2d, v3.2d, #48
+	shl	v2.2d, v2.2d, #48
+	sshr	v3.2d, v3.2d, #16
+	ssra	v0.2d, v2.2d, #16
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

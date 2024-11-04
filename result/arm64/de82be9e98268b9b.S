@@ -1,40 +1,76 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	cmp	w8, #48
-	cset	w8, eq
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	csel	w0, w0, wzr, ne
+	movi	v4.8b, #48
+	cmeq	v3.8b, v3.8b, v4.8b
+	orr	v2.8b, v3.8b, v2.8b
+	zip1	v3.8b, v2.8b, v0.8b
+	zip2	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	and	v0.16b, v0.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	cmp	w8, #3
-	cset	w8, hi
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	mov	w8, #129                        // =0x81
-	csel	w0, w0, w8, ne
+	movi	v4.8b, #3
+	cmhi	v3.8b, v3.8b, v4.8b
+	movi	v4.4s, #129
+	orr	v2.8b, v3.8b, v2.8b
+	zip1	v3.8b, v2.8b, v0.8b
+	zip2	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	bif	v0.16b, v4.16b, v3.16b
+	bif	v1.16b, v4.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	tst	w2, #0xff
-	cset	w8, ne
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	csinc	w0, w0, wzr, ne
+	cmeq	v3.8b, v3.8b, #0
+	orn	v2.8b, v2.8b, v3.8b
+	zip1	v3.8b, v2.8b, v0.8b
+	zip2	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	and	v0.16b, v0.16b, v3.16b
+	mvn	v3.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v0.4s, v0.4s, v3.4s
+	sub	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	cmp	w8, #29
-	cset	w8, lo
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	csinc	w0, w0, wzr, ne
+	movi	v4.8b, #29
+	cmhi	v3.8b, v4.8b, v3.8b
+	orr	v2.8b, v3.8b, v2.8b
+	zip1	v3.8b, v2.8b, v0.8b
+	zip2	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	and	v0.16b, v0.16b, v3.16b
+	mvn	v3.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v0.4s, v0.4s, v3.4s
+	sub	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

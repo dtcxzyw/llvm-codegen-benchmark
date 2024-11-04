@@ -1,30 +1,42 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #205                        // =0xcd
-	and	w9, w0, #0xff
-	mul	w8, w9, w8
-	mov	w9, #10                         // =0xa
-	lsr	w8, w8, #11
-	msub	w0, w8, w9, w0
+	uzp1	v1.8h, v0.8h, v1.8h
+	movi	v2.8b, #205
+	xtn	v0.8b, v1.8h
+	bic	v1.8h, #255, lsl #8
+	xtn	v1.8b, v1.8h
+	umull	v1.8h, v1.8b, v2.8b
+	movi	v2.8b, #10
+	shrn	v1.8b, v1.8h, #8
+	ushr	v1.8b, v1.8b, #3
+	mls	v0.8b, v1.8b, v2.8b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #205                        // =0xcd
-	and	w9, w0, #0xff
-	mul	w8, w9, w8
-	mov	w9, #10                         // =0xa
-	lsr	w8, w8, #11
-	msub	w0, w8, w9, w0
+	uzp1	v1.8h, v0.8h, v1.8h
+	movi	v2.8b, #205
+	xtn	v0.8b, v1.8h
+	bic	v1.8h, #255, lsl #8
+	xtn	v1.8b, v1.8h
+	umull	v1.8h, v1.8b, v2.8b
+	movi	v2.8b, #10
+	shrn	v1.8b, v1.8h, #8
+	ushr	v1.8b, v1.8b, #3
+	mls	v0.8b, v1.8b, v2.8b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #171                        // =0xab
-	and	w9, w0, #0xff
-	mul	w8, w9, w8
-	lsr	w8, w8, #9
-	add	w8, w8, w8, lsl #1
-	sub	w0, w0, w8
+	uzp1	v1.8h, v0.8h, v1.8h
+	movi	v2.8b, #171
+	xtn	v0.8b, v1.8h
+	bic	v1.8h, #255, lsl #8
+	xtn	v1.8b, v1.8h
+	umull	v1.8h, v1.8b, v2.8b
+	movi	v2.8b, #3
+	shrn	v1.8b, v1.8h, #8
+	ushr	v1.8b, v1.8b, #1
+	mls	v0.8b, v1.8b, v2.8b
 	ret
                                         // -- End function

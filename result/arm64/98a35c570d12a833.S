@@ -1,24 +1,29 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	eor	x8, x1, x2
-	eor	x8, x8, x0
-	lsr	x0, x8, #8
-                                        // kill: def $w0 killed $w0 killed $x0
+	eor3	v0.16b, v2.16b, v4.16b, v0.16b
+	eor3	v1.16b, v3.16b, v5.16b, v1.16b
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	ushr	v1.2s, v1.2s, #8
+	ushr	v0.2s, v0.2s, #8
+	uzp1	v0.4h, v0.4h, v1.4h
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	eor	x8, x1, x2
-	eor	x8, x8, x0
-	lsr	x0, x8, #56
-                                        // kill: def $w0 killed $w0 killed $x0
+	eor3	v1.16b, v3.16b, v5.16b, v1.16b
+	eor3	v0.16b, v2.16b, v4.16b, v0.16b
+	uzp2	v0.4s, v0.4s, v1.4s
+	ushr	v0.4s, v0.4s, #24
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	eor	x8, x1, x2
-	eor	x8, x8, x0
-	lsr	x0, x8, #57
-                                        // kill: def $w0 killed $w0 killed $x0
+	eor3	v1.16b, v3.16b, v5.16b, v1.16b
+	eor3	v0.16b, v2.16b, v4.16b, v0.16b
+	uzp2	v0.4s, v0.4s, v1.4s
+	ushr	v0.4s, v0.4s, #25
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

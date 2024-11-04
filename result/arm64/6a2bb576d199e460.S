@@ -1,31 +1,61 @@
 func000000000000005e:                   // @func000000000000005e
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #6
-	add	w9, w1, #248
-	sub	w8, w8, #64
-	orr	w0, w8, w9
+	shl	v5.4s, v5.4s, #6
+	shl	v4.4s, v4.4s, #6
+	mvni	v6.4s, #63
+	add	v1.4s, v5.4s, v1.4s
+	movi	v5.4s, #248
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v1.4s, v6.4s
+	add	v0.4s, v0.4s, v6.4s
+	add	v3.4s, v3.4s, v5.4s
+	add	v2.4s, v2.4s, v5.4s
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
-	add	w8, w1, w2, lsl #6
-	mov	w9, #-8320                      // =0xffffdf80
-	add	w9, w0, w9
-	add	w0, w8, w9
+	shl	v5.4s, v5.4s, #6
+	shl	v4.4s, v4.4s, #6
+	mov	w8, #-8320                      // =0xffffdf80
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	dup	v2.4s, w8
+	add	v1.4s, v5.4s, v1.4s
+	add	v0.4s, v4.4s, v0.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000077:                   // @func0000000000000077
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #6
-	add	w8, w8, w1
-	sub	w0, w8, #226, lsl #12           // =925696
+	shl	v5.4s, v5.4s, #6
+	shl	v4.4s, v4.4s, #6
+	mov	w8, #57344                      // =0xe000
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	movk	w8, #65521, lsl #16
+	dup	v2.4s, w8
+	add	v1.4s, v5.4s, v1.4s
+	add	v0.4s, v4.4s, v0.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000007a:                   // @func000000000000007a
 // %bb.0:                               // %entry
-	add	w8, w1, w2, lsl #6
-	sub	w9, w0, #224, lsl #12           // =917504
-	sub	w8, w8, #2, lsl #12             // =8192
-	orr	w0, w9, w8
+	shl	v5.4s, v5.4s, #6
+	shl	v4.4s, v4.4s, #6
+	add	v3.4s, v5.4s, v3.4s
+	mvni	v5.4s, #31, msl #8
+	add	v2.4s, v4.4s, v2.4s
+	mvni	v4.4s, #13, msl #16
+	add	v3.4s, v3.4s, v5.4s
+	add	v2.4s, v2.4s, v5.4s
+	add	v1.4s, v1.4s, v4.4s
+	add	v0.4s, v0.4s, v4.4s
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

@@ -1,34 +1,58 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	cmp	x0, #0
-	csinc	x0, x8, x1, eq
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	dup	v4.2d, x8
+	orr	v3.16b, v3.16b, v4.16b
+	orr	v2.16b, v2.16b, v4.16b
+	bic	v2.16b, v2.16b, v0.16b
+	bic	v3.16b, v3.16b, v1.16b
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	x9, #12287                      // =0x2fff
 	mov	w8, #5                          // =0x5
-	movk	x9, #65528, lsl #16
-	orr	x8, x1, x8
-	movk	x9, #7999, lsl #32
-	cmp	x0, x9
-	mov	w9, #-59                        // =0xffffffc5
-	csel	x0, x9, x8, hi
+	dup	v4.2d, x8
+	mov	x8, #12287                      // =0x2fff
+	movk	x8, #65528, lsl #16
+	movk	x8, #7999, lsl #32
+	dup	v5.2d, x8
+	mov	w8, #-59                        // =0xffffffc5
+	orr	v3.16b, v3.16b, v4.16b
+	orr	v2.16b, v2.16b, v4.16b
+	dup	v4.2d, x8
+	cmhi	v1.2d, v1.2d, v5.2d
+	cmhi	v0.2d, v0.2d, v5.2d
+	bsl	v0.16b, v4.16b, v2.16b
+	bsl	v1.16b, v4.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #46079                      // =0xb3ff
-	cmp	x0, #0
-	orr	x9, x1, x8
-	csel	x0, x8, x9, eq
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	dup	v4.2d, x8
+	orr	v3.16b, v3.16b, v4.16b
+	orr	v2.16b, v2.16b, v4.16b
+	bsl	v0.16b, v4.16b, v2.16b
+	bsl	v1.16b, v4.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	orr	x8, x1, #0x8000000000000000
-	cmp	x0, #8
-	csel	x0, xzr, x8, lo
+	movi	v4.2d, #0000000000000000
+	mov	w8, #8                          // =0x8
+	dup	v5.2d, x8
+	fneg	v4.2d, v4.2d
+	cmhi	v1.2d, v5.2d, v1.2d
+	cmhi	v0.2d, v5.2d, v0.2d
+	orr	v3.16b, v3.16b, v4.16b
+	orr	v2.16b, v2.16b, v4.16b
+	bic	v0.16b, v2.16b, v0.16b
+	bic	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

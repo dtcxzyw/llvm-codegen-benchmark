@@ -1,49 +1,65 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	add	w8, w8, w8, lsl #2
-	lsl	w8, w8, #1
-	cmp	w8, w0
-	cset	w0, hi
+	movi	v4.4s, #10
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	mov	w8, #100                        // =0x64
-	cneg	w9, w1, mi
-	mul	w8, w9, w8
-	cmp	w8, w0
-	cset	w0, hi
+	movi	v4.4s, #100
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000076:                   // @func0000000000000076
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	add	w8, w8, w8, lsl #2
-	cmp	w8, w0
-	cset	w0, lt
+	movi	v4.4s, #5
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000007a:                   // @func000000000000007a
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	lsl	w9, w8, #8
-	sub	w8, w9, w8
-	cmp	w8, w0
-	cset	w0, gt
+	movi	v4.2d, #0x0000ff000000ff
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	cmgt	v1.4s, v3.4s, v1.4s
+	cmgt	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000078:                   // @func0000000000000078
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	lsl	w9, w8, #8
-	sub	w8, w9, w8
-	cmp	w8, w0
-	cset	w0, hi
+	movi	v4.2d, #0x0000ff000000ff
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

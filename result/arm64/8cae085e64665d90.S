@@ -1,32 +1,44 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #32                         // =0x20
-	sub	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, ge
+	movi	v4.4s, #32
+	sub	v2.4s, v4.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	cmge	v1.4s, v3.4s, v1.4s
+	cmge	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000091:                   // @func0000000000000091
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	sub	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, ge
+	movi	v4.4s, #16
+	sub	v2.4s, v4.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	cmge	v1.4s, v3.4s, v1.4s
+	cmge	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000009a:                   // @func000000000000009a
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	sub	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, lt
+	movi	v4.4s, #8
+	sub	v2.4s, v4.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	mov	w8, #4096                       // =0x1000
-	sub	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, ge
+	movi	v4.4s, #16, lsl #8
+	sub	v2.4s, v4.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	cmge	v1.4s, v3.4s, v1.4s
+	cmge	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

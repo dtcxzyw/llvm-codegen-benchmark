@@ -1,8 +1,15 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	bic	w9, w0, w0, asr #31
-	mov	w8, #6                          // =0x6
-	tst	w1, #0x40
-	csel	w0, w8, w9, eq
+	movi	v4.4s, #64
+	movi	v5.2d, #0000000000000000
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	smax	v1.4s, v1.4s, v5.4s
+	smax	v0.4s, v0.4s, v5.4s
+	movi	v4.4s, #6
+	cmeq	v3.4s, v3.4s, #0
+	cmeq	v2.4s, v2.4s, #0
+	bit	v0.16b, v4.16b, v2.16b
+	bit	v1.16b, v4.16b, v3.16b
 	ret
                                         // -- End function

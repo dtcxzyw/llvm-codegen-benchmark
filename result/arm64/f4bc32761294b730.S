@@ -1,33 +1,56 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	and	w9, w1, #0x1f
-	mov	w8, #60                         // =0x3c
-	cmp	w9, #24
-	csel	w8, wzr, w8, eq
-	cmp	w8, w0
-	cset	w0, lo
+	movi	v4.4s, #31
+	movi	v5.4s, #24
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	movi	v4.4s, #60
+	cmeq	v3.4s, v3.4s, v5.4s
+	cmeq	v2.4s, v2.4s, v5.4s
+	bic	v2.16b, v4.16b, v2.16b
+	bic	v3.16b, v4.16b, v3.16b
+	cmhi	v1.4s, v1.4s, v3.4s
+	cmhi	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	and	w9, w1, #0xfffffffe
+	movi	v4.4s, #4
 	mov	w8, #29294                      // =0x726e
-	cmp	w9, #4
-	mov	w9, #29294                      // =0x726e
+	bic	v2.4s, #1
+	bic	v3.4s, #1
 	movk	w8, #30315, lsl #16
-	movk	w9, #27493, lsl #16
-	csel	w8, w9, w8, eq
-	cmp	w8, w0
-	cset	w0, eq
+	dup	v5.4s, w8
+	mov	w8, #29294                      // =0x726e
+	movk	w8, #27493, lsl #16
+	cmeq	v3.4s, v3.4s, v4.4s
+	cmeq	v2.4s, v2.4s, v4.4s
+	dup	v4.4s, w8
+	bsl	v2.16b, v4.16b, v5.16b
+	bsl	v3.16b, v4.16b, v5.16b
+	cmeq	v1.4s, v3.4s, v1.4s
+	cmeq	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	w8, #34304                      // =0x8600
-	tst	w1, w8
-	mov	w8, #1                          // =0x1
-	cinc	w8, w8, ne
-	cmp	w8, w0
-	cset	w0, hi
+	movi	v4.4s, #134, lsl #8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	movi	v4.4s, #2
+	cmeq	v3.4s, v3.4s, #0
+	cmeq	v2.4s, v2.4s, #0
+	bic	v5.16b, v4.16b, v2.16b
+	bic	v4.16b, v4.16b, v3.16b
+	sub	v2.4s, v5.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

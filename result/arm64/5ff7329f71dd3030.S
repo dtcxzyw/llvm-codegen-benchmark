@@ -1,20 +1,26 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fcmp	s0, s1
-	mov	w8, #2                          // =0x2
-	csel	w0, w0, w8, lt
+	fcmge	v3.4s, v3.4s, v5.4s
+	fcmge	v2.4s, v2.4s, v4.4s
+	movi	v4.4s, #2
+	bit	v0.16b, v4.16b, v2.16b
+	bit	v1.16b, v4.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fcmp	s0, s1
-	mov	w8, #2                          // =0x2
-	csel	w0, w0, w8, mi
+	fcmgt	v3.4s, v5.4s, v3.4s
+	fcmgt	v2.4s, v4.4s, v2.4s
+	movi	v4.4s, #2
+	bif	v0.16b, v4.16b, v2.16b
+	bif	v1.16b, v4.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmp	s0, s1
-	csel	w0, w0, wzr, gt
+	fcmgt	v3.4s, v3.4s, v5.4s
+	fcmgt	v2.4s, v2.4s, v4.4s
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

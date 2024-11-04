@@ -1,12 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	orr	w0, w8, #0x1
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	fcvtzs	v4.2d, v1.2d
+	fcvtzs	v0.2d, v0.2d
+	uzp1	v1.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v4.4s
+	orr	v1.4s, #1
+	orr	v0.4s, #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	orr	w0, w8, #0x100
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	fcvtzs	v4.2d, v1.2d
+	fcvtzs	v0.2d, v0.2d
+	uzp1	v1.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v4.4s
+	orr	v1.4s, #1, lsl #8
+	orr	v0.4s, #1, lsl #8
 	ret
                                         // -- End function

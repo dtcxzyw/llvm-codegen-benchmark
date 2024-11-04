@@ -1,16 +1,20 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	and	w8, w2, #0xf8
-	orr	w9, w1, w0
-	orr	w8, w8, w9
-	and	w0, w8, #0xffff
+	movi	v3.8h, #248
+	orr	v0.16b, v1.16b, v0.16b
+	and	v2.16b, v2.16b, v3.16b
+	orr	v0.16b, v2.16b, v0.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w8, w2, #0x7
-	orr	w9, w1, w0
-	orr	w8, w8, w9
-	and	w0, w8, #0xffff
+	movi	v3.8h, #7
+	orr	v0.16b, v1.16b, v0.16b
+	and	v2.16b, v2.16b, v3.16b
+	orr	v0.16b, v2.16b, v0.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

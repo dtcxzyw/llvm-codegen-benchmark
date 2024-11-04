@@ -1,24 +1,38 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	add	x8, x1, w2, uxth
-	add	x8, x0, x8
-	sub	x0, x8, #1
+	movi	v5.2d, #0xffffffffffffffff
+	ushll	v4.4s, v4.4h, #0
+	uaddw2	v3.2d, v3.2d, v4.4s
+	uaddw	v2.2d, v2.2d, v4.2s
+	add	v1.2d, v1.2d, v5.2d
+	add	v0.2d, v0.2d, v5.2d
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	add	x8, x0, w2, uxth
-	add	x8, x1, x8
-	add	x0, x8, #46
+	mov	w8, #46                         // =0x2e
+	ushll	v4.4s, v4.4h, #0
+	dup	v5.2d, x8
+	uaddw2	v1.2d, v1.2d, v4.4s
+	uaddw	v0.2d, v0.2d, v4.2s
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v5.2d
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	add	x8, x0, w2, uxth
-	add	x8, x1, x8
-	add	x0, x8, #8
+	mov	w8, #8                          // =0x8
+	ushll	v4.4s, v4.4h, #0
+	dup	v5.2d, x8
+	uaddw2	v1.2d, v1.2d, v4.4s
+	uaddw	v0.2d, v0.2d, v4.2s
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v5.2d
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function

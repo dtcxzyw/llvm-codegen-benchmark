@@ -1,11 +1,15 @@
-.LCPI0_0:
-	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	scvtf	d1, x0
-	adrp	x8, .LCPI0_0
-	ldr	d2, [x8, :lo12:.LCPI0_0]
-	fmul	d1, d1, d2
-	fadd	d0, d1, d0
+	mov	x8, #60813                      // =0xed8d
+	scvtf	v2.2d, v2.2d
+	scvtf	v3.2d, v3.2d
+	movk	x8, #41141, lsl #16
+	movk	x8, #50935, lsl #32
+	movk	x8, #16048, lsl #48
+	dup	v4.2d, x8
+	fmul	v3.2d, v3.2d, v4.2d
+	fmul	v2.2d, v2.2d, v4.2d
+	fadd	v0.2d, v2.2d, v0.2d
+	fadd	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function

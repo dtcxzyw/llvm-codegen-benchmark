@@ -1,60 +1,62 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, ne
+	cmeq	v1.4s, v1.4s, v3.4s
+	cmeq	v0.4s, v0.4s, v2.4s
+	mvn	v1.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, lo
+	cmhi	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, hs
+	cmhs	v1.4s, v1.4s, v3.4s
+	cmhs	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, eq
+	cmeq	v1.4s, v1.4s, v3.4s
+	cmeq	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, lt
+	cmgt	v1.4s, v3.4s, v1.4s
+	cmgt	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, le
+	cmge	v1.4s, v3.4s, v1.4s
+	cmge	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, ls
+	cmhs	v1.4s, v3.4s, v1.4s
+	cmhs	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, ge
+	cmge	v1.4s, v1.4s, v3.4s
+	cmge	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, gt
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csetm	w0, hi
+	cmhi	v1.4s, v1.4s, v3.4s
+	cmhi	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function

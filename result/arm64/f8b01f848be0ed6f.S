@@ -1,17 +1,27 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	x8, x0, x1
-	sub	x8, x8, #1
-	lsr	x8, x8, #3
-	sub	x0, x8, #1
+	movi	v4.2d, #0xffffffffffffffff
+	add	v1.2d, v1.2d, v3.2d
+	add	v2.2d, v0.2d, v2.2d
+	movi	v0.2d, #0xffffffffffffffff
+	add	v1.2d, v1.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	usra	v4.2d, v1.2d, #3
+	usra	v0.2d, v2.2d, #3
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000069:                   // @func0000000000000069
 // %bb.0:                               // %entry
 	mov	x8, #-4398046511104             // =0xfffffc0000000000
-	add	x9, x0, x1
-	add	x8, x9, x8
-	lsr	x8, x8, #63
-	sub	x0, x8, #1
+	add	v2.2d, v0.2d, v2.2d
+	add	v3.2d, v1.2d, v3.2d
+	dup	v4.2d, x8
+	movi	v1.2d, #0xffffffffffffffff
+	movi	v0.2d, #0xffffffffffffffff
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	usra	v0.2d, v2.2d, #63
+	usra	v1.2d, v3.2d, #63
 	ret
                                         // -- End function

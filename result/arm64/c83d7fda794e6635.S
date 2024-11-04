@@ -1,9 +1,13 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	scvtf	s2, w0
-	fmov	s3, #1.00000000
-	fadd	s0, s0, s1
-	fdiv	s2, s3, s2
-	fmul	s0, s0, s2
+	scvtf	v5.4s, v5.4s
+	fmov	v6.4s, #1.00000000
+	scvtf	v4.4s, v4.4s
+	fadd	v1.4s, v1.4s, v3.4s
+	fadd	v0.4s, v0.4s, v2.4s
+	fdiv	v5.4s, v6.4s, v5.4s
+	fdiv	v4.4s, v6.4s, v4.4s
+	fmul	v1.4s, v1.4s, v5.4s
+	fmul	v0.4s, v0.4s, v4.4s
 	ret
                                         // -- End function

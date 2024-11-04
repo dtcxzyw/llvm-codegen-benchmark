@@ -1,39 +1,64 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #129                        // =0x81
-	tst	w2, #0x1
+	ushll	v2.4s, v2.4h, #0
+	mov	w8, #193                        // =0xc1
+	mov	w9, #129                        // =0x81
 	movk	w8, #26214, lsl #16
-	orr	w9, w8, #0x40
-	csel	w8, w8, w9, ne
-	cmp	w1, #0
-	csel	w0, w8, w0, eq
+	movk	w9, #26214, lsl #16
+	cmeq	v1.4s, v1.4s, #0
+	dup	v3.4s, w8
+	dup	v4.4s, w9
+	shl	v2.4s, v2.4s, #31
+	cmlt	v2.4s, v2.4s, #0
+	bsl	v2.16b, v4.16b, v3.16b
+	bit	v0.16b, v2.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #128                        // =0x80
-	mov	w9, #64                         // =0x40
-	csel	w8, w9, w8, ne
-	cmp	w1, #1025
-	csel	w0, w8, w0, lo
+	ushll	v2.4s, v2.4h, #0
+	movi	v3.4s, #128
+	mov	w8, #1025                       // =0x401
+	movi	v4.4s, #64
+	dup	v5.4s, w8
+	shl	v2.4s, v2.4s, #31
+	cmhi	v1.4s, v5.4s, v1.4s
+	cmlt	v2.4s, v2.4s, #0
+	bsl	v2.16b, v4.16b, v3.16b
+	bit	v0.16b, v2.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #8                          // =0x8
-	csinc	w8, w8, wzr, ne
-	cmp	w1, #100
-	csel	w0, w8, w0, gt
+	ushll	v2.4s, v2.4h, #0
+	movi	v3.4s, #8
+	movi	v4.4s, #100
+	shl	v2.4s, v2.4s, #31
+	cmgt	v1.4s, v1.4s, v4.4s
+	cmlt	v2.4s, v2.4s, #0
+	and	v3.16b, v2.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	sub	v2.4s, v3.4s, v2.4s
+	bit	v0.16b, v2.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #65535                      // =0xffff
-	csinv	w8, w8, wzr, ne
-	cmp	w1, #0
-	csel	w0, w8, w0, eq
+	ushll	v2.4s, v2.4h, #0
+	movi	v3.2d, #0x00ffff0000ffff
+	cmeq	v1.4s, v1.4s, #0
+	shl	v2.4s, v2.4s, #31
+	cmlt	v2.4s, v2.4s, #0
+	and	v3.16b, v2.16b, v3.16b
+	orn	v2.16b, v3.16b, v2.16b
+	bit	v0.16b, v2.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

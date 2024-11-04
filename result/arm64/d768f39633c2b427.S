@@ -1,16 +1,36 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	w9, w0, w8
-	eor	w8, w9, w8, ror #28
-	ror	w0, w8, #26
+	add	v3.4s, v3.4s, v5.4s
+	add	v2.4s, v2.4s, v4.4s
+	shl	v4.4s, v2.4s, #4
+	shl	v5.4s, v3.4s, #4
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	usra	v4.4s, v2.4s, #28
+	usra	v5.4s, v3.4s, #28
+	eor	v2.16b, v1.16b, v5.16b
+	eor	v3.16b, v0.16b, v4.16b
+	shl	v0.4s, v3.4s, #6
+	shl	v1.4s, v2.4s, #6
+	usra	v0.4s, v3.4s, #26
+	usra	v1.4s, v2.4s, #26
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	w9, w0, w8
-	eor	w8, w9, w8, ror #28
-	ror	w0, w8, #26
+	add	v3.4s, v3.4s, v5.4s
+	add	v2.4s, v2.4s, v4.4s
+	shl	v4.4s, v2.4s, #4
+	shl	v5.4s, v3.4s, #4
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	usra	v4.4s, v2.4s, #28
+	usra	v5.4s, v3.4s, #28
+	eor	v2.16b, v1.16b, v5.16b
+	eor	v3.16b, v0.16b, v4.16b
+	shl	v0.4s, v3.4s, #6
+	shl	v1.4s, v2.4s, #6
+	usra	v0.4s, v3.4s, #26
+	usra	v1.4s, v2.4s, #26
 	ret
                                         // -- End function

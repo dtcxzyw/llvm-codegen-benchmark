@@ -1,15 +1,24 @@
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	lsr	x8, x0, #25
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x9, x1, #0xffff
-	add	x0, x8, x9, lsl #16
+	ushll	v3.4s, v2.4h, #0
+	ushll	v2.2d, v3.2s, #16
+	ushll2	v3.2d, v3.4s, #16
+	usra	v3.2d, v1.2d, #25
+	usra	v2.2d, v0.2d, #25
+	mov	v0.16b, v2.16b
+	mov	v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	lsr	x8, x0, #1
-                                        // kill: def $w1 killed $w1 def $x1
-	add	x0, x8, x1, lsl #48
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	shl	v2.2d, v2.2d, #48
+	shl	v3.2d, v3.2d, #48
+	usra	v3.2d, v1.2d, #1
+	usra	v2.2d, v0.2d, #1
+	mov	v0.16b, v2.16b
+	mov	v1.16b, v3.16b
 	ret
                                         // -- End function

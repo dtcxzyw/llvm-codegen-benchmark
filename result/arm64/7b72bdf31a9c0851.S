@@ -1,22 +1,33 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	lsr	w8, w2, #6
-	orr	w9, w0, w1
-	orr	w0, w9, w8, lsl #7
+	uzp1	v2.8h, v2.8h, v3.8h
+	movi	v3.8b, #128
+	orr	v0.8b, v0.8b, v1.8b
+	xtn	v2.8b, v2.8h
+	add	v2.8b, v2.8b, v2.8b
+	and	v2.8b, v2.8b, v3.8b
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-	ubfiz	w8, w2, #4, #1
-	orr	w9, w0, w1
-	orr	w0, w9, w8
+	uzp1	v2.8h, v2.8h, v3.8h
+	movi	v3.8b, #16
+	orr	v0.8b, v0.8b, v1.8b
+	xtn	v2.8b, v2.8h
+	shl	v2.8b, v2.8b, #4
+	and	v2.8b, v2.8b, v3.8b
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsl	w8, w2, #1
-	orr	w9, w0, w1
-	and	w8, w8, #0x40
-	orr	w0, w9, w8
+	uzp1	v2.8h, v2.8h, v3.8h
+	movi	v3.8b, #64
+	orr	v0.8b, v0.8b, v1.8b
+	xtn	v2.8b, v2.8h
+	add	v2.8b, v2.8b, v2.8b
+	and	v2.8b, v2.8b, v3.8b
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function

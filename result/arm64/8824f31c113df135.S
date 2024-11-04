@@ -1,12 +1,48 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fabs	d1, d1
-	fadd	d0, d1, d0
+	ldp	q16, q17, [sp]
+	ldp	q18, q19, [sp, #32]
+	ldp	q20, q21, [sp, #64]
+	ldp	q22, q23, [sp, #96]
+	fabs	v17.2d, v17.2d
+	fabs	v16.2d, v16.2d
+	fabs	v19.2d, v19.2d
+	fabs	v18.2d, v18.2d
+	fabs	v20.2d, v20.2d
+	fabs	v21.2d, v21.2d
+	fabs	v23.2d, v23.2d
+	fabs	v22.2d, v22.2d
+	fadd	v1.2d, v17.2d, v1.2d
+	fadd	v0.2d, v16.2d, v0.2d
+	fadd	v2.2d, v18.2d, v2.2d
+	fadd	v3.2d, v19.2d, v3.2d
+	fadd	v4.2d, v20.2d, v4.2d
+	fadd	v5.2d, v21.2d, v5.2d
+	fadd	v6.2d, v22.2d, v6.2d
+	fadd	v7.2d, v23.2d, v7.2d
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fabs	d1, d1
-	fadd	d0, d1, d0
+	ldp	q16, q17, [sp]
+	ldp	q18, q19, [sp, #32]
+	ldp	q20, q21, [sp, #64]
+	ldp	q22, q23, [sp, #96]
+	fabs	v17.2d, v17.2d
+	fabs	v16.2d, v16.2d
+	fabs	v19.2d, v19.2d
+	fabs	v18.2d, v18.2d
+	fabs	v20.2d, v20.2d
+	fabs	v21.2d, v21.2d
+	fabs	v23.2d, v23.2d
+	fabs	v22.2d, v22.2d
+	fadd	v1.2d, v17.2d, v1.2d
+	fadd	v0.2d, v16.2d, v0.2d
+	fadd	v2.2d, v18.2d, v2.2d
+	fadd	v3.2d, v19.2d, v3.2d
+	fadd	v4.2d, v20.2d, v4.2d
+	fadd	v5.2d, v21.2d, v5.2d
+	fadd	v6.2d, v22.2d, v6.2d
+	fadd	v7.2d, v23.2d, v7.2d
 	ret
                                         // -- End function

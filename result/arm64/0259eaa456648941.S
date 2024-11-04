@@ -1,7 +1,29 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	d3, #-1.00000000
-	fdiv	d2, d3, d2
-	fmadd	d0, d1, d2, d0
+	fmov	v16.2d, #-1.00000000
+	ldp	q23, q22, [sp, #128]
+	ldp	q24, q17, [sp, #224]
+	ldp	q19, q18, [sp, #192]
+	ldp	q21, q20, [sp, #160]
+	fdiv	v22.2d, v16.2d, v22.2d
+	ldp	q27, q26, [sp, #64]
+	ldp	q29, q28, [sp, #32]
+	fdiv	v23.2d, v16.2d, v23.2d
+	fdiv	v17.2d, v16.2d, v17.2d
+	fdiv	v18.2d, v16.2d, v18.2d
+	fdiv	v19.2d, v16.2d, v19.2d
+	fmla	v5.2d, v18.2d, v26.2d
+	fdiv	v20.2d, v16.2d, v20.2d
+	fmla	v4.2d, v19.2d, v27.2d
+	fdiv	v21.2d, v16.2d, v21.2d
+	fmla	v3.2d, v20.2d, v28.2d
+	fdiv	v16.2d, v16.2d, v24.2d
+	ldp	q25, q24, [sp]
+	fmla	v0.2d, v23.2d, v25.2d
+	fmla	v1.2d, v22.2d, v24.2d
+	ldp	q23, q22, [sp, #96]
+	fmla	v2.2d, v21.2d, v29.2d
+	fmla	v7.2d, v17.2d, v22.2d
+	fmla	v6.2d, v16.2d, v23.2d
 	ret
                                         // -- End function

@@ -1,8 +1,41 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	d3, #1.00000000
-	fsub	d2, d3, d2
-	fmul	d1, d2, d1
-	fdiv	d0, d0, d1
+	fmov	v16.2d, #1.00000000
+	ldr	q17, [sp, #128]
+	ldp	q18, q19, [sp]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v18.2d
+	fdiv	v0.2d, v0.2d, v17.2d
+	ldr	q17, [sp, #144]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v19.2d
+	ldp	q18, q19, [sp, #32]
+	fdiv	v1.2d, v1.2d, v17.2d
+	ldr	q17, [sp, #160]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v18.2d
+	fdiv	v2.2d, v2.2d, v17.2d
+	ldr	q17, [sp, #176]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v19.2d
+	ldp	q18, q19, [sp, #64]
+	fdiv	v3.2d, v3.2d, v17.2d
+	ldr	q17, [sp, #192]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v18.2d
+	fdiv	v4.2d, v4.2d, v17.2d
+	ldr	q17, [sp, #208]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v19.2d
+	ldp	q18, q19, [sp, #96]
+	fdiv	v5.2d, v5.2d, v17.2d
+	ldr	q17, [sp, #224]
+	fsub	v17.2d, v16.2d, v17.2d
+	fmul	v17.2d, v17.2d, v18.2d
+	fdiv	v6.2d, v6.2d, v17.2d
+	ldr	q17, [sp, #240]
+	fsub	v16.2d, v16.2d, v17.2d
+	fmul	v16.2d, v16.2d, v19.2d
+	fdiv	v7.2d, v7.2d, v16.2d
 	ret
                                         // -- End function

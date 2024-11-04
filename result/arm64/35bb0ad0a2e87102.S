@@ -1,27 +1,42 @@
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	asr	x8, x0, #2
-	add	x9, x1, x2
-	sub	x9, x9, x8
-	cmp	x8, x9
-	csel	x0, x8, x9, hi
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	sshr	v0.2d, v0.2d, #2
+	sshr	v1.2d, v1.2d, #2
+	sub	v2.2d, v2.2d, v0.2d
+	sub	v3.2d, v3.2d, v1.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	asr	x8, x0, #4
-	add	x9, x1, x2
-	sub	x9, x9, x8
-	cmp	x8, x9
-	csel	x0, x8, x9, hi
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	sshr	v0.2d, v0.2d, #4
+	sshr	v1.2d, v1.2d, #4
+	sub	v2.2d, v2.2d, v0.2d
+	sub	v3.2d, v3.2d, v1.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	asr	x8, x0, #2
-	add	x9, x1, x2
-	sub	x9, x9, x8
-	cmp	x8, x9
-	csel	x0, x8, x9, hi
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	sshr	v0.2d, v0.2d, #2
+	sshr	v1.2d, v1.2d, #2
+	sub	v2.2d, v2.2d, v0.2d
+	sub	v3.2d, v3.2d, v1.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

@@ -1,22 +1,30 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
+	uzp1	v1.4s, v1.4s, v2.4s
 	mov	w8, #43691                      // =0xaaab
-	add	w9, w1, w0
-	mov	w10, #6                         // =0x6
 	movk	w8, #43690, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #34
-	msub	w0, w8, w10, w9
+	add	v0.4s, v1.4s, v0.4s
+	dup	v1.4s, w8
+	umull2	v2.2d, v0.4s, v1.4s
+	umull	v1.2d, v0.2s, v1.2s
+	uzp2	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #6
+	ushr	v1.4s, v1.4s, #2
+	mls	v0.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
+	uzp1	v1.4s, v1.4s, v2.4s
 	mov	w8, #43691                      // =0xaaab
-	add	w9, w1, w0
 	movk	w8, #43690, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #33
-	add	w8, w8, w8, lsl #1
-	sub	w0, w9, w8
+	add	v0.4s, v1.4s, v0.4s
+	dup	v1.4s, w8
+	umull2	v2.2d, v0.4s, v1.4s
+	umull	v1.2d, v0.2s, v1.2s
+	uzp2	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #3
+	ushr	v1.4s, v1.4s, #1
+	mls	v0.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

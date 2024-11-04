@@ -1,12 +1,20 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	scvtf	d0, x1
+	scvtf	v4.2d, v2.2d
+	scvtf	v5.2d, v3.2d
 	mov	w8, #2147483647                 // =0x7fffffff
-	fcvtzs	x9, d0
-	add	x9, x9, x1
-	cmp	x9, x0
-	csel	x9, x9, x0, lt
-	cmp	x9, x8
-	csel	x0, x9, x8, lt
+	fcvtzs	v5.2d, v5.2d
+	fcvtzs	v4.2d, v4.2d
+	add	v2.2d, v4.2d, v2.2d
+	add	v3.2d, v5.2d, v3.2d
+	cmgt	v4.2d, v1.2d, v3.2d
+	cmgt	v5.2d, v0.2d, v2.2d
+	bit	v1.16b, v3.16b, v4.16b
+	bit	v0.16b, v2.16b, v5.16b
+	dup	v2.2d, x8
+	cmgt	v3.2d, v2.2d, v0.2d
+	cmgt	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

@@ -1,55 +1,132 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	cmp	w1, #16, lsl #12                // =65536
-	mov	w8, #8                          // =0x8
-	cset	w9, lo
-	tst	w0, #0x1
-	lsl	w10, w9, #4
-	bfi	w8, w9, #4, #1
-	csel	w0, w8, w10, ne
+	movi	v3.4s, #1, lsl #16
+	zip1	v4.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #16
+	cmhi	v2.4s, v3.4s, v2.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	ushll	v3.4s, v4.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	and	v1.16b, v1.16b, v5.16b
+	shl	v3.4s, v3.4s, #31
+	and	v2.16b, v2.16b, v5.16b
+	shl	v0.4s, v0.4s, #31
+	mov	v5.16b, v1.16b
+	cmlt	v3.4s, v3.4s, #0
+	mov	v4.16b, v2.16b
+	cmlt	v6.4s, v0.4s, #0
+	orr	v5.4s, #8
+	mov	v0.16b, v3.16b
+	orr	v4.4s, #8
+	bsl	v0.16b, v5.16b, v1.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v4.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	mov	w8, #8                          // =0x8
-	cset	w9, eq
-	tst	w0, #0x1
-	lsl	w10, w9, #4
-	bfi	w8, w9, #4, #1
-	csel	w0, w8, w10, ne
+	zip1	v3.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	movi	v4.4s, #16
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v2.4s, v2.4s, #0
+	ushll	v3.4s, v3.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	and	v1.16b, v1.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	shl	v3.4s, v3.4s, #31
+	shl	v0.4s, v0.4s, #31
+	mov	v5.16b, v1.16b
+	mov	v4.16b, v2.16b
+	cmlt	v3.4s, v3.4s, #0
+	orr	v5.4s, #8
+	cmlt	v6.4s, v0.4s, #0
+	orr	v4.4s, #8
+	mov	v0.16b, v3.16b
+	bsl	v0.16b, v5.16b, v1.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v4.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
+	movi	v3.4s, #48
+	zip1	v4.8b, v0.8b, v0.8b
 	mov	w8, #280                        // =0x118
-	cmp	w1, #48
+	zip2	v0.8b, v0.8b, v0.8b
 	mov	w9, #408                        // =0x198
-	csel	w8, w9, w8, gt
-	tst	w0, #0x1
-	orr	w9, w8, #0x18000
-	csel	w0, w9, w8, ne
+	dup	v5.4s, w8
+	dup	v6.4s, w9
+	mov	w8, #98304                      // =0x18000
+	cmgt	v2.4s, v2.4s, v3.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	ushll	v3.4s, v4.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	dup	v4.4s, w8
+	shl	v3.4s, v3.4s, #31
+	bsl	v2.16b, v6.16b, v5.16b
+	bsl	v1.16b, v6.16b, v5.16b
+	shl	v0.4s, v0.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	orr	v5.16b, v2.16b, v4.16b
+	orr	v4.16b, v1.16b, v4.16b
+	cmlt	v6.4s, v0.4s, #0
+	mov	v0.16b, v3.16b
+	bsl	v0.16b, v4.16b, v1.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v5.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	tst	w1, #0xffff0000
-	mov	w8, #8                          // =0x8
-	cset	w9, ne
-	tst	w0, #0x1
-	lsl	w10, w9, #4
-	bfi	w8, w9, #4, #1
-	csel	w0, w8, w10, ne
+	movi	v3.2d, #0x00ffff0000ffff
+	zip1	v4.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #16
+	cmhi	v2.4s, v2.4s, v3.4s
+	cmhi	v1.4s, v1.4s, v3.4s
+	ushll	v3.4s, v4.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	and	v1.16b, v1.16b, v5.16b
+	shl	v3.4s, v3.4s, #31
+	and	v2.16b, v2.16b, v5.16b
+	shl	v0.4s, v0.4s, #31
+	mov	v5.16b, v1.16b
+	cmlt	v3.4s, v3.4s, #0
+	mov	v4.16b, v2.16b
+	cmlt	v6.4s, v0.4s, #0
+	orr	v5.4s, #8
+	mov	v0.16b, v3.16b
+	orr	v4.4s, #8
+	bsl	v0.16b, v5.16b, v1.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v4.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mov	w8, #14                         // =0xe
-	cmp	w1, #1
-	mov	w9, #9                          // =0x9
-	csel	w8, w8, wzr, gt
-	tst	w0, #0x1
-	orr	w9, w8, w9
-	csel	w0, w9, w8, ne
+	movi	v3.4s, #1
+	zip1	v4.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #14
+	cmgt	v2.4s, v2.4s, v3.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	ushll	v3.4s, v4.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	and	v1.16b, v1.16b, v5.16b
+	shl	v3.4s, v3.4s, #31
+	and	v2.16b, v2.16b, v5.16b
+	shl	v0.4s, v0.4s, #31
+	mov	v5.16b, v1.16b
+	cmlt	v3.4s, v3.4s, #0
+	mov	v4.16b, v2.16b
+	cmlt	v6.4s, v0.4s, #0
+	orr	v5.4s, #9
+	mov	v0.16b, v3.16b
+	orr	v4.4s, #9
+	bsl	v0.16b, v5.16b, v1.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v4.16b, v2.16b
 	ret
                                         // -- End function

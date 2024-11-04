@@ -1,21 +1,30 @@
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	bic	w8, w8, w8, asr #31
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	movi	v4.2d, #0000000000000000
+	sub	v2.4s, v3.4s, v2.4s
+	smax	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	bic	w8, w8, w8, asr #31
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	movi	v4.2d, #0000000000000000
+	sub	v2.4s, v3.4s, v2.4s
+	smax	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	bic	w8, w8, w8, asr #31
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	movi	v4.2d, #0000000000000000
+	sub	v2.4s, v3.4s, v2.4s
+	smax	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function

@@ -1,24 +1,46 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
-	movi	d3, #0000000000000000
-	fcmp	s1, s2
-	fcsel	s1, s2, s1, gt
-	tst	w0, #0x1
-	fcsel	s1, s3, s1, ne
-	fmul	s0, s1, s0
-	fcvtzs	w0, s0
+	zip1	v5.8b, v2.8b, v0.8b
+	zip2	v2.8b, v2.8b, v0.8b
+	fmov	v6.4s, #1.00000000
+	ushll	v5.4s, v5.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	fcmgt	v7.4s, v3.4s, v6.4s
+	fcmgt	v16.4s, v4.4s, v6.4s
+	shl	v5.4s, v5.4s, #31
+	shl	v2.4s, v2.4s, #31
+	bit	v3.16b, v6.16b, v7.16b
+	bit	v4.16b, v6.16b, v16.16b
+	cmge	v5.4s, v5.4s, #0
+	cmge	v2.4s, v2.4s, #0
+	and	v3.16b, v3.16b, v5.16b
+	and	v2.16b, v4.16b, v2.16b
+	fmul	v1.4s, v2.4s, v1.4s
+	fmul	v0.4s, v3.4s, v0.4s
+	fcvtzs	v0.4s, v0.4s
+	fcvtzs	v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	d2, #0000000000000000
-	fcmp	s1, #0.0
-	fcsel	s1, s2, s1, mi
-	fmov	s2, #1.00000000
-	tst	w0, #0x1
-	fcsel	s1, s2, s1, ne
-	fmul	s0, s1, s0
-	fcvtzs	w0, s0
+	zip1	v5.8b, v2.8b, v0.8b
+	zip2	v2.8b, v2.8b, v0.8b
+	fcmlt	v6.4s, v4.4s, #0.0
+	fcmlt	v7.4s, v3.4s, #0.0
+	ushll	v5.4s, v5.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	bic	v4.16b, v4.16b, v6.16b
+	fmov	v6.4s, #1.00000000
+	bic	v3.16b, v3.16b, v7.16b
+	shl	v5.4s, v5.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v5.4s, v5.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	bit	v3.16b, v6.16b, v5.16b
+	bsl	v2.16b, v6.16b, v4.16b
+	fmul	v1.4s, v2.4s, v1.4s
+	fmul	v0.4s, v3.4s, v0.4s
+	fcvtzs	v0.4s, v0.4s
+	fcvtzs	v1.4s, v1.4s
 	ret
                                         // -- End function

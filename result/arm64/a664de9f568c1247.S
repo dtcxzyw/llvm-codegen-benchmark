@@ -1,22 +1,36 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	cmp	x1, #4
 	mov	w8, #4                          // =0x4
-	mvn	x9, x2
-	csel	x8, x1, x8, lt
-	add	x8, x8, x9
-	cmp	x8, x0
-	cset	w0, gt
+	mvn	v5.16b, v5.16b
+	mvn	v4.16b, v4.16b
+	dup	v6.2d, x8
+	cmgt	v7.2d, v6.2d, v3.2d
+	cmgt	v16.2d, v6.2d, v2.2d
+	bif	v3.16b, v6.16b, v7.16b
+	bif	v2.16b, v6.16b, v16.16b
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	cmgt	v1.2d, v3.2d, v1.2d
+	cmgt	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmp	x1, #8
 	mov	w8, #8                          // =0x8
-	mvn	x9, x2
-	csel	x8, x1, x8, lt
-	add	x8, x8, x9
-	cmp	x8, x0
-	cset	w0, eq
+	mvn	v5.16b, v5.16b
+	mvn	v4.16b, v4.16b
+	dup	v6.2d, x8
+	cmgt	v7.2d, v6.2d, v3.2d
+	cmgt	v16.2d, v6.2d, v2.2d
+	bif	v3.16b, v6.16b, v7.16b
+	bif	v2.16b, v6.16b, v16.16b
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	cmeq	v1.2d, v3.2d, v1.2d
+	cmeq	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

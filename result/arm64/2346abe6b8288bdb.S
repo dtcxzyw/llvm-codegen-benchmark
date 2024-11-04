@@ -1,21 +1,36 @@
 func00000000000000b5:                   // @func00000000000000b5
 // %bb.0:                               // %entry
-	lsl	x8, x1, #4
-	add	x8, x8, x2, asr #5
-	add	x0, x8, x0, asr #5
+	shl	v2.2d, v2.2d, #4
+	shl	v3.2d, v3.2d, #4
+	ssra	v3.2d, v5.2d, #5
+	ssra	v2.2d, v4.2d, #5
+	ssra	v2.2d, v0.2d, #5
+	ssra	v3.2d, v1.2d, #5
+	mov	v0.16b, v2.16b
+	mov	v1.16b, v3.16b
 	ret
                                         // -- End function
 func00000000000000b0:                   // @func00000000000000b0
 // %bb.0:                               // %entry
-	lsl	x8, x1, #5
-	add	x8, x8, x2, asr #4
-	add	x0, x8, x0, asr #4
+	shl	v2.2d, v2.2d, #5
+	shl	v3.2d, v3.2d, #5
+	ssra	v3.2d, v5.2d, #4
+	ssra	v2.2d, v4.2d, #4
+	ssra	v2.2d, v0.2d, #4
+	ssra	v3.2d, v1.2d, #4
+	mov	v0.16b, v2.16b
+	mov	v1.16b, v3.16b
 	ret
                                         // -- End function
 func00000000000000ad:                   // @func00000000000000ad
 // %bb.0:                               // %entry
-	lsl	x8, x1, #7
-	add	x8, x8, x2, asr #2
-	add	x0, x8, x0, asr #2
+	shl	v2.2d, v2.2d, #7
+	shl	v3.2d, v3.2d, #7
+	ssra	v3.2d, v5.2d, #2
+	ssra	v2.2d, v4.2d, #2
+	ssra	v2.2d, v0.2d, #2
+	ssra	v3.2d, v1.2d, #2
+	mov	v0.16b, v2.16b
+	mov	v1.16b, v3.16b
 	ret
                                         // -- End function

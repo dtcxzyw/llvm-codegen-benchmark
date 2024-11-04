@@ -1,15 +1,17 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	tst	w0, #0x1
-	mov	w9, #7                          // =0x7
-	csel	w0, w9, w8, ne
+	shl	v0.16b, v0.16b, #7
+	movi	v3.16b, #7
+	add	v1.16b, v1.16b, v2.16b
+	cmlt	v0.16b, v0.16b, #0
+	bsl	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	tst	w0, #0x1
-	csinv	w0, w8, wzr, eq
+	shl	v0.16b, v0.16b, #7
+	add	v1.16b, v1.16b, v2.16b
+	cmlt	v0.16b, v0.16b, #0
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

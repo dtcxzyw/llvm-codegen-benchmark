@@ -1,16 +1,36 @@
 func00000000000000d1:                   // @func00000000000000d1
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsr #2
-	add	w8, w8, #1
-	tst	x8, #0x2
-	cset	w0, eq
+	ushr	v2.2d, v2.2d, #2
+	ushr	v3.2d, v3.2d, #2
+	mov	w8, #2                          // =0x2
+	dup	v4.2d, x8
+	mvn	v3.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func00000000000000f1:                   // @func00000000000000f1
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsr #16
-	add	w8, w8, #1
-	tst	x8, #0x7
-	cset	w0, eq
+	mov	w8, #1                          // =0x1
+	usra	v0.2d, v2.2d, #16
+	usra	v1.2d, v3.2d, #16
+	dup	v2.2d, x8
+	mov	w8, #7                          // =0x7
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

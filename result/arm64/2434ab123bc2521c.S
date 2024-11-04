@@ -1,28 +1,44 @@
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	mul	w8, w1, w2
-	cmp	w8, w0
-	cset	w0, ls
+	mul	v3.4s, v3.4s, v5.4s
+	mul	v2.4s, v2.4s, v4.4s
+	movi	v4.4s, #1
+	cmhs	v0.4s, v0.4s, v2.4s
+	cmhs	v1.4s, v1.4s, v3.4s
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mul	w8, w1, w2
-	cmp	w8, w0
-	cset	w0, ne
+	mul	v3.4s, v3.4s, v5.4s
+	mul	v2.4s, v2.4s, v4.4s
+	movi	v4.4s, #1
+	cmeq	v0.4s, v2.4s, v0.4s
+	cmeq	v1.4s, v3.4s, v1.4s
+	bic	v0.16b, v4.16b, v0.16b
+	bic	v1.16b, v4.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	mul	w8, w1, w2
-	cmp	w8, w0
-	cset	w0, lo
+	mul	v3.4s, v3.4s, v5.4s
+	mul	v2.4s, v2.4s, v4.4s
+	movi	v4.4s, #1
+	cmhi	v0.4s, v0.4s, v2.4s
+	cmhi	v1.4s, v1.4s, v3.4s
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mul	w8, w1, w2
-	cmp	w8, w0
-	cset	w0, hi
+	mul	v3.4s, v3.4s, v5.4s
+	mul	v2.4s, v2.4s, v4.4s
+	movi	v4.4s, #1
+	cmhi	v0.4s, v2.4s, v0.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function

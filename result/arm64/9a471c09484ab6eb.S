@@ -1,21 +1,66 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x1, #32
-	udiv	x0, x8, x0
+	shll2	v3.2d, v2.4s, #32
+	mov	x8, v1.d[1]
+	mov	x9, v3.d[1]
+	fmov	x10, d3
+	udiv	x8, x9, x8
+	fmov	x9, d1
+	shll	v1.2d, v2.2s, #32
+	fmov	x11, d1
+	mov	x12, v1.d[1]
+	udiv	x9, x10, x9
+	fmov	x10, d0
+	udiv	x10, x11, x10
+	mov	x11, v0.d[1]
+	fmov	d1, x9
+	mov	v1.d[1], x8
+	udiv	x11, x12, x11
+	fmov	d0, x10
+	mov	v0.d[1], x11
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #23, #32
-	udiv	x0, x8, x0
+	ushll2	v3.2d, v2.4s, #23
+	mov	x8, v1.d[1]
+	mov	x9, v3.d[1]
+	fmov	x10, d3
+	udiv	x8, x9, x8
+	fmov	x9, d1
+	ushll	v1.2d, v2.2s, #23
+	fmov	x11, d1
+	mov	x12, v1.d[1]
+	udiv	x9, x10, x9
+	fmov	x10, d0
+	udiv	x10, x11, x10
+	mov	x11, v0.d[1]
+	fmov	d1, x9
+	mov	v1.d[1], x8
+	udiv	x11, x12, x11
+	fmov	d0, x10
+	mov	v0.d[1], x11
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #30, #32
-	udiv	x0, x8, x0
+	ushll2	v3.2d, v2.4s, #30
+	mov	x8, v1.d[1]
+	mov	x9, v3.d[1]
+	fmov	x10, d3
+	udiv	x8, x9, x8
+	fmov	x9, d1
+	ushll	v1.2d, v2.2s, #30
+	fmov	x11, d1
+	mov	x12, v1.d[1]
+	udiv	x9, x10, x9
+	fmov	x10, d0
+	udiv	x10, x11, x10
+	mov	x11, v0.d[1]
+	fmov	d1, x9
+	mov	v1.d[1], x8
+	udiv	x11, x12, x11
+	fmov	d0, x10
+	mov	v0.d[1], x11
 	ret
                                         // -- End function

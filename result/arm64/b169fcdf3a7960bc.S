@@ -1,18 +1,34 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	fmov	s0, w8
-	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
-	fmov	w0, s0
+	movi	v2.2d, #0x000000000000ff
+	movi	v3.2d, #0000000000000000
+	movi	v4.2d, #0000000000000000
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	movi	v2.16b, #1
+	cnt	v1.16b, v1.16b
+	cnt	v0.16b, v0.16b
+	udot	v4.4s, v2.16b, v1.16b
+	udot	v3.4s, v2.16b, v0.16b
+	uaddlp	v0.2d, v4.4s
+	uaddlp	v1.2d, v3.4s
+	uzp1	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	fmov	s0, w8
-	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
-	fmov	w0, s0
+	movi	v2.2d, #0x000000000000ff
+	movi	v3.2d, #0000000000000000
+	movi	v4.2d, #0000000000000000
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	movi	v2.16b, #1
+	cnt	v1.16b, v1.16b
+	cnt	v0.16b, v0.16b
+	udot	v4.4s, v2.16b, v1.16b
+	udot	v3.4s, v2.16b, v0.16b
+	uaddlp	v0.2d, v4.4s
+	uaddlp	v1.2d, v3.4s
+	uzp1	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

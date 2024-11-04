@@ -1,31 +1,55 @@
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	add	w0, w8, w1, lsl #1
+	movi	v4.2d, #0000000000000000
+	add	v3.4s, v3.4s, v3.4s
+	add	v2.4s, v2.4s, v2.4s
+	smax	v1.4s, v1.4s, v4.4s
+	smax	v0.4s, v0.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	cmp	w0, #1
-	csinc	w8, w0, wzr, gt
-	add	w0, w8, w1, lsl #4
+	movi	v4.4s, #1
+	shl	v3.4s, v3.4s, #4
+	shl	v2.4s, v2.4s, #4
+	smax	v1.4s, v1.4s, v4.4s
+	smax	v0.4s, v0.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	bic	w8, w1, w1, asr #31
-	add	w0, w8, w0, lsl #16
+	movi	v4.2d, #0000000000000000
+	shl	v1.4s, v1.4s, #16
+	shl	v0.4s, v0.4s, #16
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	bic	w8, w1, w1, asr #31
-	add	w0, w8, w0, lsl #16
+	movi	v4.2d, #0000000000000000
+	shl	v1.4s, v1.4s, #16
+	shl	v0.4s, v0.4s, #16
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	add	w0, w8, w1, lsl #1
+	movi	v4.2d, #0000000000000000
+	add	v3.4s, v3.4s, v3.4s
+	add	v2.4s, v2.4s, v2.4s
+	smax	v1.4s, v1.4s, v4.4s
+	smax	v0.4s, v0.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

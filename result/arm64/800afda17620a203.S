@@ -1,29 +1,69 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
+	movi	v3.4h, #2
+	bic	v2.4h, #255, lsl #8
 	mov	w8, #2                          // =0x2
-	cmp	w9, #2
-	cinc	x8, x8, eq
-	cmp	x8, x0
-	cset	w0, hi
+	dup	v4.2d, x8
+	mov	w8, #3                          // =0x3
+	dup	v5.2d, x8
+	cmeq	v2.4h, v2.4h, v3.4h
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	shl	v3.2d, v3.2d, #56
+	shl	v2.2d, v2.2d, #56
+	sshr	v3.2d, v3.2d, #56
+	sshr	v2.2d, v2.2d, #56
+	bsl	v2.16b, v5.16b, v4.16b
+	bsl	v3.16b, v5.16b, v4.16b
+	cmhi	v1.2d, v3.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
+	bic	v2.4h, #255, lsl #8
 	mov	w8, #16                         // =0x10
-	tst	w1, #0xff
-	mov	w9, #8                          // =0x8
-	csel	x8, x9, x8, eq
-	cmp	x8, x0
-	cset	w0, eq
+	dup	v4.2d, x8
+	mov	w8, #8                          // =0x8
+	dup	v5.2d, x8
+	cmeq	v2.4h, v2.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	shl	v3.2d, v3.2d, #56
+	shl	v2.2d, v2.2d, #56
+	sshr	v3.2d, v3.2d, #56
+	sshr	v2.2d, v2.2d, #56
+	bsl	v2.16b, v5.16b, v4.16b
+	bsl	v3.16b, v5.16b, v4.16b
+	cmeq	v1.2d, v3.2d, v1.2d
+	cmeq	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	cmp	w8, #1
-	cset	w8, eq
-	cmp	x0, w8, uxtw #1
-	cset	w0, hi
+	movi	v3.4h, #1
+	bic	v2.4h, #255, lsl #8
+	mov	w8, #2                          // =0x2
+	dup	v4.2d, x8
+	cmeq	v2.4h, v2.4h, v3.4h
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	shl	v3.2d, v3.2d, #56
+	shl	v2.2d, v2.2d, #56
+	sshr	v3.2d, v3.2d, #56
+	sshr	v2.2d, v2.2d, #56
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmhi	v1.2d, v1.2d, v3.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

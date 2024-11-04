@@ -1,11 +1,12 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	negs	w8, w1
-	and	w9, w1, #0xf
-	and	w8, w8, #0xf
-	csneg	w8, w9, w8, mi
-	sub	w8, w1, w8
-	cmp	w8, w0
-	csel	w0, w8, w0, lt
+	cmlt	v4.4s, v3.4s, #0
+	cmlt	v5.4s, v2.4s, #0
+	usra	v3.4s, v4.4s, #28
+	usra	v2.4s, v5.4s, #28
+	bic	v3.4s, #15
+	bic	v2.4s, #15
+	smin	v0.4s, v2.4s, v0.4s
+	smin	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

@@ -1,15 +1,18 @@
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	add	w9, w2, #9
-	cmp	w8, #58
-	csel	w0, w0, w9, lo
+	movi	v3.16b, #9
+	movi	v4.16b, #58
+	add	v2.16b, v2.16b, v3.16b
+	cmhi	v1.16b, v4.16b, v1.16b
+	bif	v0.16b, v2.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	w8, w2, #29
-	tst	w1, #0xf8
-	csel	w0, w0, w8, eq
+	movi	v3.16b, #227
+	movi	v4.16b, #8
+	add	v2.16b, v2.16b, v3.16b
+	cmhi	v1.16b, v4.16b, v1.16b
+	bif	v0.16b, v2.16b, v1.16b
 	ret
                                         // -- End function

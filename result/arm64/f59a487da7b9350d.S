@@ -1,12 +1,22 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvn	w8, w0
-	orr	x0, x8, #0xffffffffffffff00
+	bic	v0.4h, #255, lsl #8
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	mvn	v1.16b, v0.16b
+	mvn	v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	eor	w8, w0, #0x3f
-	and	x0, x8, #0xff
+	movi	v1.4h, #63
+	movi	v2.2d, #0x000000000000ff
+	eor	v0.8b, v0.8b, v1.8b
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

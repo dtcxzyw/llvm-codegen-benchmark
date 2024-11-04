@@ -1,26 +1,51 @@
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	mov	w9, #34079                      // =0x851f
-	mov	w10, #400                       // =0x190
-	sub	w8, w8, w0, asr #13
-	movk	w9, #20971, lsl #16
-	umull	x8, w8, w9
-	mov	w9, #400                        // =0x190
-	lsr	x8, x8, #39
-	madd	w0, w8, w9, w10
+	movi	v2.4s, #1
+	sshr	v1.4s, v1.4s, #13
+	mov	w8, #34079                      // =0x851f
+	sshr	v0.4s, v0.4s, #13
+	movk	w8, #20971, lsl #16
+	dup	v3.4s, w8
+	mov	w8, #400                        // =0x190
+	sub	v1.4s, v2.4s, v1.4s
+	sub	v0.4s, v2.4s, v0.4s
+	umull2	v2.2d, v1.4s, v3.4s
+	umull	v1.2d, v1.2s, v3.2s
+	umull2	v4.2d, v0.4s, v3.4s
+	umull	v0.2d, v0.2s, v3.2s
+	uzp2	v2.4s, v1.4s, v2.4s
+	dup	v1.4s, w8
+	uzp2	v0.4s, v0.4s, v4.4s
+	ushr	v2.4s, v2.4s, #7
+	ushr	v3.4s, v0.4s, #7
+	mov	v0.16b, v1.16b
+	mla	v0.4s, v3.4s, v1.4s
+	mla	v1.4s, v2.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000002d:                   // @func000000000000002d
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	mov	w9, #34079                      // =0x851f
-	sub	w8, w8, w0, asr #13
-	movk	w9, #20971, lsl #16
-	umull	x8, w8, w9
-	mov	w9, #50511                      // =0xc54f
-	movk	w9, #65533, lsl #16
-	lsr	x8, x8, #39
-	madd	w0, w8, w9, w9
+	movi	v2.4s, #1
+	sshr	v0.4s, v0.4s, #13
+	mov	w8, #34079                      // =0x851f
+	sshr	v1.4s, v1.4s, #13
+	movk	w8, #20971, lsl #16
+	dup	v3.4s, w8
+	mov	w8, #50511                      // =0xc54f
+	movk	w8, #65533, lsl #16
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v2.4s, v1.4s
+	umull2	v2.2d, v0.4s, v3.4s
+	umull	v0.2d, v0.2s, v3.2s
+	umull2	v4.2d, v1.4s, v3.4s
+	umull	v1.2d, v1.2s, v3.2s
+	uzp2	v0.4s, v0.4s, v2.4s
+	uzp2	v2.4s, v1.4s, v4.4s
+	dup	v1.4s, w8
+	ushr	v3.4s, v0.4s, #7
+	mov	v0.16b, v1.16b
+	ushr	v2.4s, v2.4s, #7
+	mla	v0.4s, v3.4s, v1.4s
+	mla	v1.4s, v2.4s, v1.4s
 	ret
                                         // -- End function

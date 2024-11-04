@@ -1,22 +1,31 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	lsl	x8, x8, x0
-	add	x0, x8, w1, uxtw
+	dup	v3.2d, x8
+	ushl	v1.2d, v3.2d, v1.2d
+	ushl	v0.2d, v3.2d, v0.2d
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
 	mov	w8, #16960                      // =0x4240
 	movk	w8, #15, lsl #16
-	lsl	x8, x8, x0
-	add	x0, x8, w1, uxtw
+	dup	v3.2d, x8
+	ushl	v1.2d, v3.2d, v1.2d
+	ushl	v0.2d, v3.2d, v0.2d
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	mov	x8, #-240                       // =0xffffffffffffff10
-	lsl	x8, x8, x0
-	add	x0, x8, w1, uxtw
+	dup	v3.2d, x8
+	ushl	v1.2d, v3.2d, v1.2d
+	ushl	v0.2d, v3.2d, v0.2d
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
 	ret
                                         // -- End function

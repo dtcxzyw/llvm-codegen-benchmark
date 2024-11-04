@@ -1,18 +1,20 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sxth	w8, w1
-	ubfx	w8, w8, #28, #3
-	add	w8, w1, w8
-	sbfx	w8, w8, #3, #13
-	add	x0, x0, w8, sxtw
+	cmlt	v3.4h, v2.4h, #0
+	usra	v2.4h, v3.4h, #13
+	sshr	v2.4h, v2.4h, #3
+	sshll	v2.4s, v2.4h, #0
+	saddw2	v1.2d, v1.2d, v2.4s
+	saddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sxth	w8, w1
-	ubfx	w8, w8, #29, #2
-	add	w8, w1, w8
-	sbfx	w8, w8, #2, #14
-	add	x0, x0, w8, sxtw
+	cmlt	v3.4h, v2.4h, #0
+	usra	v2.4h, v3.4h, #14
+	sshr	v2.4h, v2.4h, #2
+	sshll	v2.4s, v2.4h, #0
+	saddw2	v1.2d, v1.2d, v2.4s
+	saddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function

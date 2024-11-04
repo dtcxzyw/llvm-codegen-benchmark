@@ -1,14 +1,18 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	s1, #0.50000000
-	fadd	s0, s0, s1
-	fcvtzs	w0, s0
+	movi	v1.4s, #63, lsl #24
+	fadd	v0.4s, v0.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	s1, #2.00000000
-	fadd	s0, s0, s1
-	fcvtzs	w0, s0
+	movi	v1.4s, #64, lsl #24
+	fadd	v0.4s, v0.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

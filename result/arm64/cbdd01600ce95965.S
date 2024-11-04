@@ -1,5 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w0, w0, w1, lsl #1
+	add	v1.16b, v1.16b, v1.16b
+	sub	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

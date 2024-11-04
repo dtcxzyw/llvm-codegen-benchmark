@@ -1,7 +1,15 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ubfx	w8, w2, #13, #1
-	add	w8, w8, w1
-	orr	w0, w0, w8, lsr #13
+	movi	v6.4s, #1
+	ushr	v4.4s, v4.4s, #13
+	ushr	v5.4s, v5.4s, #13
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v6.16b
+	add	v2.4s, v4.4s, v2.4s
+	add	v3.4s, v5.4s, v3.4s
+	ushr	v3.4s, v3.4s, #13
+	ushr	v2.4s, v2.4s, #13
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

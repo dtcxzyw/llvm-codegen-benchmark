@@ -1,9 +1,18 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	sub	w9, w0, #1
-	bic	w8, w8, w8, asr #31
-	cmp	w8, w9
-	csel	w0, w8, w9, lt
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	fcvtzs	v5.2d, v5.2d
+	fcvtzs	v4.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v3.4s, v4.4s, v5.4s
+	movi	v4.2d, #0000000000000000
+	movi	v5.2d, #0xffffffffffffffff
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v1.4s, v1.4s, v5.4s
+	add	v0.4s, v0.4s, v5.4s
+	smin	v0.4s, v2.4s, v0.4s
+	smin	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

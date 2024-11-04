@@ -1,42 +1,60 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	lsl	w8, w1, #16
-	orr	w8, w8, #0x2000000
-	orr	x0, x8, x0
+	shl	v2.4s, v2.4s, #16
+	orr	v2.4s, #2, lsl #24
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	orr	w8, w8, w1, lsl #2
-	orr	x0, x8, x0
+	shl	v2.4s, v2.4s, #2
+	orr	v2.4s, #2
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
-	orr	w8, w8, w1, lsl #3
-	orr	x0, x8, x0
+	shl	v2.4s, v2.4s, #3
+	orr	v2.4s, #4
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	orr	w8, w8, w1, lsl #1
-	orr	x0, x8, x0
+	add	v2.4s, v2.4s, v2.4s
+	orr	v2.4s, #1
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
-	orr	w8, w8, w1, lsl #3
-	orr	x0, x8, x0
+	shl	v2.4s, v2.4s, #3
+	orr	v2.4s, #4
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	orr	w8, w8, w1, lsl #1
-	orr	x0, x8, x0
+	add	v2.4s, v2.4s, v2.4s
+	orr	v2.4s, #1
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function

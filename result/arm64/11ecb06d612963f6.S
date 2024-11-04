@@ -1,8 +1,18 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	lsr	w8, w8, w1
-	ubfiz	w8, w8, #1, #1
-	orr	w0, w8, w0
+	ushll	v4.8h, v4.8b, #0
+	neg	v2.4s, v2.4s
+	neg	v3.4s, v3.4s
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	ushl	v2.4s, v4.4s, v2.4s
+	ushl	v3.4s, v5.4s, v3.4s
+	movi	v4.4s, #2
+	add	v3.4s, v3.4s, v3.4s
+	add	v2.4s, v2.4s, v2.4s
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function

@@ -1,21 +1,33 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	sub	w8, w8, #1
-	orr	x0, x0, x8, lsl #32
+	movi	v4.2d, #0xffffffffffffffff
+	add	v2.4s, v3.4s, v2.4s
+	add	v2.4s, v2.4s, v4.4s
+	shll	v3.2d, v2.2s, #32
+	shll2	v2.2d, v2.4s, #32
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	sub	w8, w8, #4
-	orr	x0, x0, x8, lsl #32
+	add	v2.4s, v3.4s, v2.4s
+	mvni	v3.4s, #3
+	add	v2.4s, v2.4s, v3.4s
+	shll	v3.2d, v2.2s, #32
+	shll2	v2.2d, v2.4s, #32
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	sub	w8, w8, #9
-	orr	x0, x0, x8, lsl #32
+	add	v2.4s, v3.4s, v2.4s
+	mvni	v3.4s, #8
+	add	v2.4s, v2.4s, v3.4s
+	shll	v3.2d, v2.2s, #32
+	shll2	v2.2d, v2.4s, #32
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function

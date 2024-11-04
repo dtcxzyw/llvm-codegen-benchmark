@@ -1,25 +1,75 @@
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
-                                        // kill: def $w2 killed $w2 def $x2
-	orr	x9, x1, x2, lsl #48
-	madd	x0, x0, x8, x9
+	fmov	x10, d1
+	fmov	x11, d0
+	mov	x8, v1.d[1]
+	mov	x9, v0.d[1]
+	ushll	v5.2d, v4.2s, #0
+	ushll2	v0.2d, v4.4s, #0
+	add	x10, x10, x10, lsl #1
+	add	x11, x11, x11, lsl #1
+	add	x8, x8, x8, lsl #1
+	shl	v1.2d, v5.2d, #48
+	shl	v0.2d, v0.2d, #48
+	lsl	x10, x10, #1
+	lsl	x11, x11, #1
+	add	x9, x9, x9, lsl #1
+	lsl	x8, x8, #1
+	fmov	d4, x10
+	fmov	d5, x11
+	lsl	x9, x9, #1
+	orr	v3.16b, v0.16b, v3.16b
+	orr	v0.16b, v1.16b, v2.16b
+	mov	v4.d[1], x8
+	mov	v5.d[1], x9
+	add	v0.2d, v5.2d, v0.2d
+	add	v1.2d, v4.2d, v3.2d
 	ret
                                         // -- End function
 func00000000000000f5:                   // @func00000000000000f5
 // %bb.0:                               // %entry
+	fmov	x9, d1
+	fmov	x11, d0
 	mov	x8, #-100                       // =0xffffffffffffff9c
-                                        // kill: def $w2 killed $w2 def $x2
-	orr	x9, x1, x2, lsl #32
-	madd	x0, x0, x8, x9
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	shll	v0.2d, v4.2s, #32
+	shll2	v1.2d, v4.4s, #32
+	mul	x9, x9, x8
+	orr	v0.16b, v0.16b, v2.16b
+	mul	x11, x11, x8
+	orr	v1.16b, v1.16b, v3.16b
+	mul	x10, x10, x8
+	fmov	d4, x9
+	mul	x8, x12, x8
+	fmov	d5, x11
+	mov	v4.d[1], x10
+	mov	v5.d[1], x8
+	add	v1.2d, v4.2d, v1.2d
+	add	v0.2d, v5.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	mov	w9, #13824                      // =0x3600
-	mov	w8, w2
-	movk	w9, #50277, lsl #16
-	orr	x8, x1, x8, lsl #30
-	madd	x0, x0, x9, x8
+	fmov	x9, d1
+	fmov	x11, d0
+	mov	w8, #13824                      // =0x3600
+	movk	w8, #50277, lsl #16
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	ushll	v0.2d, v4.2s, #30
+	ushll2	v1.2d, v4.4s, #30
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
+	mul	x10, x10, x8
+	fmov	d4, x9
+	mul	x8, x12, x8
+	fmov	d5, x11
+	mov	v4.d[1], x10
+	mov	v5.d[1], x8
+	add	v1.2d, v4.2d, v1.2d
+	add	v0.2d, v5.2d, v0.2d
 	ret
                                         // -- End function

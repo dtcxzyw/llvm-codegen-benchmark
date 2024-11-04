@@ -1,8 +1,16 @@
 func0000000000000047:                   // @func0000000000000047
 // %bb.0:                               // %entry
-	orr	w8, w0, #0x4
-	tst	x1, #0xf
-	csel	w8, w8, w0, eq
-	add	w0, w8, #2
+	mov	w8, #15                         // =0xf
+	dup	v3.2d, x8
+	and	v1.16b, v1.16b, v3.16b
+	and	v2.16b, v2.16b, v3.16b
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	mov	v2.16b, v0.16b
+	orr	v2.4s, #4
+	bit	v0.16b, v2.16b, v1.16b
+	movi	v1.4s, #2
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

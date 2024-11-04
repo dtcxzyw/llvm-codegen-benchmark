@@ -1,18 +1,18 @@
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xffff
-                                        // kill: def $w1 killed $w1 def $x1
-	sub	x8, x8, w1, uxth
-	add	x0, x8, #1
+	mov	w8, #1                          // =0x1
+	usubl	v1.4s, v0.4h, v1.4h
+	dup	v2.2d, x8
+	saddw	v0.2d, v2.2d, v1.2s
+	saddw2	v1.2d, v2.2d, v1.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xffff
-                                        // kill: def $w1 killed $w1 def $x1
-	sub	x8, x8, w1, uxth
-	add	x0, x8, #40
+	mov	w8, #40                         // =0x28
+	usubl	v1.4s, v0.4h, v1.4h
+	dup	v2.2d, x8
+	saddw	v0.2d, v2.2d, v1.2s
+	saddw2	v1.2d, v2.2d, v1.4s
 	ret
                                         // -- End function

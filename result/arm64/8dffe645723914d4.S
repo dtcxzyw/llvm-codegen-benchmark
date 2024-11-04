@@ -1,6 +1,10 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	x8, x0, x1
-	and	x0, x8, #0xfffffffffffffff8
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	bic	v1.16b, v1.16b, v3.16b
+	bic	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

@@ -1,34 +1,48 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #52, #11
-	mov	w9, #107                        // =0x6b
-	sub	w0, w9, w8
+	uzp2	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #107
+	ushr	v0.4s, v0.4s, #20
+	bic	v0.4s, #8, lsl #8
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #52, #11
-	mov	w9, #75                         // =0x4b
-	sub	w0, w9, w8
+	uzp2	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #75
+	ushr	v0.4s, v0.4s, #20
+	bic	v0.4s, #8, lsl #8
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	sbfx	x8, x0, #32, #1
-	add	w0, w8, #6
+	shl	v0.2d, v0.2d, #31
+	shl	v1.2d, v1.2d, #31
+	movi	v2.4s, #6
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #32, #29
-	mov	w9, #352                        // =0x160
-	sub	w0, w9, w8
+	uzp2	v0.4s, v0.4s, v1.4s
+	mov	w8, #352                        // =0x160
+	dup	v1.4s, w8
+	bic	v0.4s, #224, lsl #24
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #3, #6
-	mov	w9, #64                         // =0x40
-	sub	w0, w9, w8
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #63
+	movi	v2.4s, #64
+	ushr	v0.4s, v0.4s, #3
+	and	v0.16b, v0.16b, v1.16b
+	sub	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

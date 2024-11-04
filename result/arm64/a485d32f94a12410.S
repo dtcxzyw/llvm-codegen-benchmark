@@ -1,56 +1,114 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #28
-	mov	w9, #61167                      // =0xeeef
-	movk	w9, #61166, lsl #16
-	add	w8, w8, w1, lsl #20
-	add	w0, w8, w9
+	mov	w8, #61167                      // =0xeeef
+	shl	v5.4s, v5.4s, #28
+	shl	v4.4s, v4.4s, #28
+	movk	w8, #61166, lsl #16
+	shl	v3.4s, v3.4s, #20
+	shl	v2.4s, v2.4s, #20
+	dup	v6.4s, w8
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000375:                   // @func0000000000000375
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #12
-	mov	w9, #-4369                      // =0xffffeeef
-	add	w8, w8, w1, lsl #4
-	add	w0, w8, w9
+	mov	w8, #-4369                      // =0xffffeeef
+	shl	v5.4s, v5.4s, #12
+	shl	v4.4s, v4.4s, #12
+	dup	v6.4s, w8
+	shl	v3.4s, v3.4s, #4
+	shl	v2.4s, v2.4s, #4
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #3
-	add	w8, w8, w1, lsl #4
-	add	w0, w8, #224
+	movi	v6.4s, #224
+	shl	v4.4s, v4.4s, #3
+	shl	v5.4s, v5.4s, #3
+	shl	v3.4s, v3.4s, #4
+	shl	v2.4s, v2.4s, #4
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func00000000000003ff:                   // @func00000000000003ff
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #1
-	add	w8, w8, w1, lsl #1
-	add	w0, w8, #4
+	movi	v6.4s, #4
+	add	v4.4s, v4.4s, v4.4s
+	add	v5.4s, v5.4s, v5.4s
+	add	v3.4s, v3.4s, v3.4s
+	add	v2.4s, v2.4s, v2.4s
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000037d:                   // @func000000000000037d
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #16
-	add	w8, w8, w1, lsl #8
-	sub	w8, w8, #1790, lsl #12          // =7331840
-	sub	w0, w8, #4000
+	mov	w8, #4192                       // =0x1060
+	shl	v5.4s, v5.4s, #16
+	shl	v4.4s, v4.4s, #16
+	movk	w8, #65424, lsl #16
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	dup	v6.4s, w8
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000037f:                   // @func000000000000037f
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #16
-	add	w8, w8, w1, lsl #8
-	sub	w8, w8, #3067, lsl #12          // =12562432
-	sub	w0, w8, #3968
+	mov	w8, #16512                      // =0x4080
+	shl	v5.4s, v5.4s, #16
+	shl	v4.4s, v4.4s, #16
+	movk	w8, #65344, lsl #16
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	dup	v6.4s, w8
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000110:                   // @func0000000000000110
 // %bb.0:                               // %entry
-	add	w8, w0, w2, lsl #24
-	mov	w9, #31161                      // =0x79b9
-	movk	w9, #40503, lsl #16
-	add	w8, w8, w1, lsl #8
-	add	w0, w8, w9
+	mov	w8, #31161                      // =0x79b9
+	shl	v5.4s, v5.4s, #24
+	shl	v4.4s, v4.4s, #24
+	movk	w8, #40503, lsl #16
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	dup	v6.4s, w8
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v5.4s, v1.4s
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

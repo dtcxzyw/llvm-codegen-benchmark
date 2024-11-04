@@ -1,27 +1,87 @@
 func00000000000000c4:                   // @func00000000000000c4
 // %bb.0:                               // %entry
-	fcmp	d0, d1
-	scvtf	d2, w0
-	fcsel	d0, d0, d1, ge
-	fcmp	d0, d2
-	cset	w0, gt
+	ldp	q19, q16, [sp]
+	fcmge	v17.2d, v1.2d, v5.2d
+	fcmge	v18.2d, v0.2d, v4.2d
+	fcmge	v20.2d, v3.2d, v7.2d
+	fcmge	v21.2d, v2.2d, v6.2d
+	sshll2	v22.2d, v16.4s, #0
+	sshll	v23.2d, v19.2s, #0
+	sshll2	v19.2d, v19.4s, #0
+	sshll	v16.2d, v16.2s, #0
+	bif	v1.16b, v5.16b, v17.16b
+	bif	v0.16b, v4.16b, v18.16b
+	bif	v2.16b, v6.16b, v21.16b
+	bif	v3.16b, v7.16b, v20.16b
+	scvtf	v4.2d, v22.2d
+	scvtf	v5.2d, v23.2d
+	scvtf	v6.2d, v19.2d
+	scvtf	v7.2d, v16.2d
+	fcmgt	v3.2d, v3.2d, v4.2d
+	fcmgt	v1.2d, v1.2d, v6.2d
+	fcmgt	v0.2d, v0.2d, v5.2d
+	fcmgt	v2.2d, v2.2d, v7.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v2.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	fcmp	d0, d1
-	scvtf	d2, w0
-	fcsel	d0, d0, d1, gt
-	fcmp	d0, d2
-	cset	w0, gt
+	ldp	q19, q16, [sp]
+	fcmgt	v17.2d, v1.2d, v5.2d
+	fcmgt	v18.2d, v0.2d, v4.2d
+	fcmgt	v20.2d, v3.2d, v7.2d
+	fcmgt	v21.2d, v2.2d, v6.2d
+	sshll2	v22.2d, v16.4s, #0
+	sshll	v23.2d, v19.2s, #0
+	sshll2	v19.2d, v19.4s, #0
+	sshll	v16.2d, v16.2s, #0
+	bif	v1.16b, v5.16b, v17.16b
+	bif	v0.16b, v4.16b, v18.16b
+	bif	v2.16b, v6.16b, v21.16b
+	bif	v3.16b, v7.16b, v20.16b
+	scvtf	v4.2d, v22.2d
+	scvtf	v5.2d, v23.2d
+	scvtf	v6.2d, v19.2d
+	scvtf	v7.2d, v16.2d
+	fcmgt	v3.2d, v3.2d, v4.2d
+	fcmgt	v1.2d, v1.2d, v6.2d
+	fcmgt	v0.2d, v0.2d, v5.2d
+	fcmgt	v2.2d, v2.2d, v7.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v2.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	fcmp	d1, d0
-	scvtf	d2, w0
-	fcsel	d0, d0, d1, mi
-	fcmp	d0, d2
-	cset	w0, gt
+	ldp	q19, q16, [sp]
+	fcmgt	v17.2d, v1.2d, v5.2d
+	fcmgt	v18.2d, v0.2d, v4.2d
+	fcmgt	v20.2d, v3.2d, v7.2d
+	fcmgt	v21.2d, v2.2d, v6.2d
+	sshll2	v22.2d, v16.4s, #0
+	sshll	v23.2d, v19.2s, #0
+	sshll2	v19.2d, v19.4s, #0
+	sshll	v16.2d, v16.2s, #0
+	bif	v1.16b, v5.16b, v17.16b
+	bif	v0.16b, v4.16b, v18.16b
+	bif	v2.16b, v6.16b, v21.16b
+	bif	v3.16b, v7.16b, v20.16b
+	scvtf	v4.2d, v22.2d
+	scvtf	v5.2d, v23.2d
+	scvtf	v6.2d, v19.2d
+	scvtf	v7.2d, v16.2d
+	fcmgt	v3.2d, v3.2d, v4.2d
+	fcmgt	v1.2d, v1.2d, v6.2d
+	fcmgt	v0.2d, v0.2d, v5.2d
+	fcmgt	v2.2d, v2.2d, v7.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v2.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

@@ -1,14 +1,30 @@
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1
-	cmp	w8, w0, lsr #31
-	cset	w0, eq
+	movi	v3.8b, #1
+	ushr	v0.4s, v0.4s, #31
+	ushr	v1.4s, v1.4s, #31
+	and	v2.8b, v2.8b, v3.8b
+	ushll	v2.8h, v2.8b, #0
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	cmeq	v1.4s, v1.4s, v2.4s
+	cmeq	v0.4s, v0.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1
-	cmp	w8, w0, lsr #5
-	cset	w0, eq
+	movi	v3.8b, #1
+	ushr	v0.4s, v0.4s, #5
+	ushr	v1.4s, v1.4s, #5
+	and	v2.8b, v2.8b, v3.8b
+	ushll	v2.8h, v2.8b, #0
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	cmeq	v1.4s, v1.4s, v2.4s
+	cmeq	v0.4s, v0.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

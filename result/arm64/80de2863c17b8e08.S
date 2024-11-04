@@ -1,10 +1,35 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fadd	d0, d0, d1
+	ldp	q20, q16, [sp, #112]
 	mov	x8, #-4476578029606273024       // =0xc1e0000000000000
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w8, mi
-	bic	w0, w8, w0
+	ldp	q17, q24, [sp]
+	ldr	q21, [sp, #96]
+	ldp	q19, q18, [sp, #64]
+	ldp	q23, q22, [sp, #32]
+	fadd	v7.2d, v7.2d, v20.2d
+	fadd	v16.2d, v17.2d, v16.2d
+	fadd	v6.2d, v6.2d, v21.2d
+	fadd	v1.2d, v1.2d, v24.2d
+	fadd	v4.2d, v4.2d, v19.2d
+	fadd	v5.2d, v5.2d, v18.2d
+	dup	v17.2d, x8
+	fadd	v2.2d, v2.2d, v23.2d
+	fadd	v3.2d, v3.2d, v22.2d
+	fcmgt	v16.2d, v17.2d, v16.2d
+	fcmgt	v7.2d, v17.2d, v7.2d
+	fcmgt	v6.2d, v17.2d, v6.2d
+	fcmgt	v5.2d, v17.2d, v5.2d
+	fcmgt	v4.2d, v17.2d, v4.2d
+	fcmgt	v1.2d, v17.2d, v1.2d
+	fcmgt	v3.2d, v17.2d, v3.2d
+	fcmgt	v2.2d, v17.2d, v2.2d
+	uzp1	v7.4s, v7.4s, v16.4s
+	uzp1	v5.4s, v5.4s, v6.4s
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v1.4s, v1.4s, v2.4s
+	uzp1	v2.8h, v5.8h, v7.8h
+	uzp1	v1.8h, v1.8h, v3.8h
+	uzp1	v1.16b, v1.16b, v2.16b
+	bic	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

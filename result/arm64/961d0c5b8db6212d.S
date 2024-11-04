@@ -1,35 +1,37 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	ubfx	x0, x8, #60, #3
-                                        // kill: def $w0 killed $w0 killed $x0
+	uzp2	v0.4s, v0.4s, v1.4s
+	ushr	v0.4s, v0.4s, #28
+	bic	v0.4s, #8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	lsr	x8, x8, #32
-	and	w0, w8, #0x7ff00000
+	mvni	v2.4s, #15, msl #16
+	uzp2	v0.4s, v0.4s, v1.4s
+	fneg	v1.4s, v2.4s
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	ubfx	x0, x8, #32, #20
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v2.4s, #15, msl #16
+	uzp2	v0.4s, v0.4s, v1.4s
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	ubfx	x0, x8, #48, #7
-                                        // kill: def $w0 killed $w0 killed $x0
+	uzp2	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #127
+	ushr	v0.4s, v0.4s, #16
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	lsr	x8, x8, #31
-	and	w0, w8, #0xfffffffe
+	shrn	v0.2s, v0.2d, #31
+	shrn2	v0.4s, v1.2d, #31
+	bic	v0.4s, #1
 	ret
                                         // -- End function

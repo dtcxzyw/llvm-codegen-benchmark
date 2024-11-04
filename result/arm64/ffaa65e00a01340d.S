@@ -1,39 +1,68 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	eor	w8, w1, #0x3f
-	and	w9, w0, #0x3f
-	cmp	w9, w8
-	cset	w0, lo
+	movi	v4.4s, #63
+	eor	v2.16b, v2.16b, v4.16b
+	eor	v3.16b, v3.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmhi	v0.4s, v2.4s, v0.4s
+	cmhi	v1.4s, v3.4s, v1.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	eor	w8, w1, #0x3f
-	and	w9, w0, #0x3f
-	cmp	w9, w8
-	cset	w0, hi
+	movi	v4.4s, #63
+	eor	v2.16b, v2.16b, v4.16b
+	eor	v3.16b, v3.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmhi	v0.4s, v0.4s, v2.4s
+	cmhi	v1.4s, v1.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0x7
-	eor	w8, w8, w1
-	cmp	w8, #4
-	cset	w0, eq
+	movi	v4.4s, #7
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	movi	v4.4s, #4
+	eor	v0.16b, v0.16b, v2.16b
+	eor	v1.16b, v1.16b, v3.16b
+	cmeq	v1.4s, v1.4s, v4.4s
+	cmeq	v0.4s, v0.4s, v4.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w0, #0x7
-	eor	w8, w8, w1
-	cmp	w8, #4
-	cset	w0, ne
+	movi	v4.4s, #7
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	movi	v4.4s, #4
+	eor	v0.16b, v0.16b, v2.16b
+	eor	v1.16b, v1.16b, v3.16b
+	cmeq	v1.4s, v1.4s, v4.4s
+	cmeq	v0.4s, v0.4s, v4.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	mvn	v0.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	eor	w8, w1, #0xff
-	cmp	w8, w0, uxtb
-	cset	w0, hs
+	movi	v4.2d, #0x0000ff000000ff
+	eor	v2.16b, v2.16b, v4.16b
+	eor	v3.16b, v3.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmhs	v0.4s, v2.4s, v0.4s
+	cmhs	v1.4s, v3.4s, v1.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

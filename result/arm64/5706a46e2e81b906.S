@@ -1,15 +1,46 @@
-.LCPI0_0:
-	.xword	0x4012c8590b21642d              // double 4.6956521739130439
-.LCPI0_1:
-	.xword	0x3fd4fbcda3ac10c9              // double 0.32786885245901637
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	adrp	x9, .LCPI0_1
-	ldr	d3, [x8, :lo12:.LCPI0_0]
-	ldr	d4, [x9, :lo12:.LCPI0_1]
-	fmadd	d1, d1, d3, d2
-	fmul	d0, d0, d4
-	fdiv	d0, d0, d1
+	mov	x8, #25645                      // =0x642d
+	mov	x9, #4297                       // =0x10c9
+	movk	x8, #2849, lsl #16
+	movk	x9, #41900, lsl #16
+	movk	x8, #51289, lsl #32
+	movk	x9, #64461, lsl #32
+	movk	x8, #16402, lsl #48
+	movk	x9, #16340, lsl #48
+	dup	v16.2d, x8
+	dup	v17.2d, x9
+	ldp	q18, q21, [sp, #128]
+	ldp	q19, q20, [sp]
+	fmul	v0.2d, v0.2d, v17.2d
+	fmul	v1.2d, v1.2d, v17.2d
+	fmul	v2.2d, v2.2d, v17.2d
+	fmul	v3.2d, v3.2d, v17.2d
+	fmul	v4.2d, v4.2d, v17.2d
+	fmul	v5.2d, v5.2d, v17.2d
+	fmla	v18.2d, v16.2d, v19.2d
+	fmla	v21.2d, v16.2d, v20.2d
+	fmul	v6.2d, v6.2d, v17.2d
+	ldp	q19, q20, [sp, #32]
+	fmul	v7.2d, v7.2d, v17.2d
+	fdiv	v0.2d, v0.2d, v18.2d
+	fdiv	v1.2d, v1.2d, v21.2d
+	ldp	q18, q21, [sp, #160]
+	fmla	v18.2d, v16.2d, v19.2d
+	fmla	v21.2d, v16.2d, v20.2d
+	ldp	q19, q20, [sp, #64]
+	fdiv	v2.2d, v2.2d, v18.2d
+	fdiv	v3.2d, v3.2d, v21.2d
+	ldp	q18, q21, [sp, #192]
+	fmla	v18.2d, v16.2d, v19.2d
+	fmla	v21.2d, v16.2d, v20.2d
+	ldp	q19, q20, [sp, #96]
+	fdiv	v4.2d, v4.2d, v18.2d
+	fdiv	v5.2d, v5.2d, v21.2d
+	ldp	q18, q21, [sp, #224]
+	fmla	v18.2d, v16.2d, v19.2d
+	fmla	v21.2d, v16.2d, v20.2d
+	fdiv	v6.2d, v6.2d, v18.2d
+	fdiv	v7.2d, v7.2d, v21.2d
 	ret
                                         // -- End function

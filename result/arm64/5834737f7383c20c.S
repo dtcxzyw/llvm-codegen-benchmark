@@ -1,22 +1,30 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	w2, #17
-	mov	w8, #17                         // =0x11
-	sub	w9, w0, w1
-	csel	w8, w2, w8, lt
-	sub	w8, w2, w8
-	add	w8, w9, w8
-	lsr	w0, w8, #4
+	movi	v6.4s, #17
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	smin	v7.4s, v4.4s, v6.4s
+	smin	v6.4s, v5.4s, v6.4s
+	sub	v4.4s, v4.4s, v7.4s
+	sub	v5.4s, v5.4s, v6.4s
+	add	v1.4s, v1.4s, v5.4s
+	add	v0.4s, v0.4s, v4.4s
+	ushr	v0.4s, v0.4s, #4
+	ushr	v1.4s, v1.4s, #4
 	ret
                                         // -- End function
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	cmp	w2, #17
-	mov	w8, #17                         // =0x11
-	sub	w9, w0, w1
-	csel	w8, w2, w8, lt
-	sub	w8, w2, w8
-	add	w8, w9, w8
-	lsr	w0, w8, #4
+	movi	v6.4s, #17
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	smin	v7.4s, v4.4s, v6.4s
+	smin	v6.4s, v5.4s, v6.4s
+	sub	v4.4s, v4.4s, v7.4s
+	sub	v5.4s, v5.4s, v6.4s
+	add	v1.4s, v1.4s, v5.4s
+	add	v0.4s, v0.4s, v4.4s
+	ushr	v0.4s, v0.4s, #4
+	ushr	v1.4s, v1.4s, #4
 	ret
                                         // -- End function

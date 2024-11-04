@@ -1,6 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvtzs	x0, d0, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	fcvtzs	v1.2d, v1.2d, #32
+	fcvtzs	v0.2d, v0.2d, #32
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

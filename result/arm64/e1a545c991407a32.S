@@ -1,9 +1,9 @@
 func0000000000000356:                   // @func0000000000000356
 // %bb.0:                               // %entry
-	lsr	x8, x2, #63
-	sub	w9, w0, w1
-	add	w8, w9, w8
-	cmp	w8, #1
-	cset	w0, lt
+	uzp2	v2.4s, v2.4s, v3.4s
+	sub	v0.4s, v0.4s, v1.4s
+	usra	v0.4s, v2.4s, #31
+	cmle	v0.4s, v0.4s, #0
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

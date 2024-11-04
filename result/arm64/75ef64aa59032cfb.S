@@ -1,9 +1,11 @@
 func000000000000007a:                   // @func000000000000007a
 // %bb.0:                               // %entry
-	lsl	w8, w2, w1
-	mov	w9, #9                          // =0x9
-	sub	w9, w9, w0
-	and	w8, w8, #0x1ff
-	lsr	w0, w8, w9
+	uzp1	v2.4s, v2.4s, v3.4s
+	movi	v3.4s, #1, msl #8
+	movi	v4.4s, #9
+	ushl	v1.4s, v2.4s, v1.4s
+	sub	v0.4s, v0.4s, v4.4s
+	and	v1.16b, v1.16b, v3.16b
+	ushl	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

@@ -1,22 +1,38 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	rev	w8, w2
-	mov	w9, #31129                      // =0x7999
-	eor	w8, w8, w1
-	movk	w9, #23170, lsl #16
-	ror	w8, w8, #31
-	add	w9, w0, w9
-	add	w0, w8, w9
+	rev32	v4.16b, v4.16b
+	rev32	v5.16b, v5.16b
+	mov	w8, #31129                      // =0x7999
+	movk	w8, #23170, lsl #16
+	eor	v2.16b, v4.16b, v2.16b
+	eor	v3.16b, v5.16b, v3.16b
+	dup	v5.4s, w8
+	add	v4.4s, v2.4s, v2.4s
+	add	v6.4s, v3.4s, v3.4s
+	add	v0.4s, v0.4s, v5.4s
+	add	v1.4s, v1.4s, v5.4s
+	usra	v4.4s, v2.4s, #31
+	usra	v6.4s, v3.4s, #31
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v6.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	rev	w8, w2
-	mov	w9, #31129                      // =0x7999
-	eor	w8, w8, w1
-	movk	w9, #23170, lsl #16
-	ror	w8, w8, #31
-	add	w9, w0, w9
-	add	w0, w8, w9
+	rev32	v4.16b, v4.16b
+	rev32	v5.16b, v5.16b
+	mov	w8, #31129                      // =0x7999
+	movk	w8, #23170, lsl #16
+	eor	v2.16b, v4.16b, v2.16b
+	eor	v3.16b, v5.16b, v3.16b
+	dup	v5.4s, w8
+	add	v4.4s, v2.4s, v2.4s
+	add	v6.4s, v3.4s, v3.4s
+	add	v0.4s, v0.4s, v5.4s
+	add	v1.4s, v1.4s, v5.4s
+	usra	v4.4s, v2.4s, #31
+	usra	v6.4s, v3.4s, #31
+	add	v0.4s, v4.4s, v0.4s
+	add	v1.4s, v6.4s, v1.4s
 	ret
                                         // -- End function

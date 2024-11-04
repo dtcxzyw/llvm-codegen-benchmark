@@ -1,56 +1,78 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3f
-	add	w8, w8, #1
-	add	x0, x8, x0
+	movi	v3.4s, #63
+	movi	v4.4s, #1
+	and	v2.16b, v2.16b, v3.16b
+	add	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3ffffff0
-	add	w8, w8, #104
-	add	x0, x8, x0
+	mov	w8, #1073741808                 // =0x3ffffff0
+	movi	v4.4s, #104
+	dup	v3.4s, w8
+	and	v2.16b, v2.16b, v3.16b
+	add	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w1, #0xfffffff0
-	add	w8, w8, #69
-	add	x0, x8, x0
+	movi	v3.4s, #69
+	bic	v2.4s, #15
+	add	v2.4s, v2.4s, v3.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3
-	sub	w8, w8, #1
-	add	x0, x8, x0
+	movi	v3.4s, #3
+	movi	v4.2d, #0xffffffffffffffff
+	and	v2.16b, v2.16b, v3.16b
+	add	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1
-	add	w8, w8, #1
-	add	x0, x8, x0
+	movi	v3.4s, #1
+	and	v2.16b, v2.16b, v3.16b
+	add	v2.4s, v2.4s, v3.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3
-	sub	w8, w8, #1
-	add	x0, x8, x0
+	movi	v3.4s, #3
+	movi	v4.2d, #0xffffffffffffffff
+	and	v2.16b, v2.16b, v3.16b
+	add	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xfffffffc
-	add	w8, w8, #16
-	add	x0, x8, x0
+	movi	v3.4s, #16
+	bic	v2.4s, #3
+	add	v2.4s, v2.4s, v3.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	sub	w8, w8, #1
-	add	x0, x8, x0
+	movi	v3.2d, #0x0000ff000000ff
+	movi	v4.2d, #0xffffffffffffffff
+	and	v2.16b, v2.16b, v3.16b
+	add	v2.4s, v2.4s, v4.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function

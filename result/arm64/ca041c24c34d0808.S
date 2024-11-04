@@ -1,9 +1,11 @@
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
-	orr	w8, w1, w2
-	mov	w9, #14                         // =0xe
-	mov	w10, #14                        // =0xe
-	add	w8, w8, w0
-	madd	w0, w8, w9, w10
+	orr	v1.16b, v1.16b, v2.16b
+	movi	v2.4s, #14
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v0.4s, v1.4s
+	mul	v0.4s, v0.4s, v2.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

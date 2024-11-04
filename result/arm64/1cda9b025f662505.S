@@ -1,23 +1,37 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fadd	s0, s0, s1
-	fcvtzs	w8, s0
-	lsr	w0, w8, #31
+	fadd	v1.4s, v1.4s, v3.4s
+	fadd	v0.4s, v0.4s, v2.4s
+	fcvtzs	v1.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	cmlt	v1.4s, v1.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fadd	s0, s0, s1
-	fcvtzs	w8, s0
-	cmp	w8, #0
-	cset	w0, ne
+	fadd	v1.4s, v1.4s, v3.4s
+	fadd	v0.4s, v0.4s, v2.4s
+	fcvtzs	v1.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	mvn	v0.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fadd	s0, s0, s1
-	fcvtzs	w8, s0
-	mvn	w8, w8
-	lsr	w0, w8, #31
+	fadd	v1.4s, v1.4s, v3.4s
+	fadd	v0.4s, v0.4s, v2.4s
+	fcvtzs	v1.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	cmge	v1.4s, v1.4s, #0
+	cmge	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

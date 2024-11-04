@@ -1,27 +1,39 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	eor	w8, w1, w0
-	tst	w8, #0x8
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #8
+	xtn	v1.4h, v1.4s
+	eor	v0.8b, v1.8b, v0.8b
+	and	v0.8b, v0.8b, v2.8b
+	cmeq	v0.4h, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	eor	w8, w1, w0
-	tst	w8, #0x2
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #2
+	xtn	v1.4h, v1.4s
+	eor	v0.8b, v1.8b, v0.8b
+	and	v0.8b, v0.8b, v2.8b
+	cmeq	v0.4h, v0.4h, #0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	eor	w8, w1, w0
-	and	w0, w8, #0x1
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #1
+	xtn	v1.4h, v1.4s
+	eor	v0.8b, v1.8b, v0.8b
+	cmtst	v0.4h, v0.4h, v2.4h
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	eor	w8, w1, w0
-	tst	w8, #0x1
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #1
+	xtn	v1.4h, v1.4s
+	eor	v0.8b, v1.8b, v0.8b
+	and	v0.8b, v0.8b, v2.8b
+	cmeq	v0.4h, v0.4h, #0
 	ret
                                         // -- End function

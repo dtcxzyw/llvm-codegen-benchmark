@@ -1,37 +1,56 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	csel	w8, w0, wzr, eq
-	neg	w0, w8
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v3.4s, v3.4s, #0
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v2.16b
+	neg	v0.4s, v0.4s
+	neg	v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	csel	w8, w0, wzr, gt
-	neg	w0, w8
+	cmgt	v2.4s, v2.4s, #0
+	cmgt	v3.4s, v3.4s, #0
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v2.16b
+	neg	v0.4s, v0.4s
+	neg	v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	mov	w8, #-31506                     // =0xffff84ee
-	cmp	w1, w8
-	csel	w8, w0, wzr, lt
-	neg	w0, w8
+	dup	v4.4s, w8
+	cmgt	v2.4s, v4.4s, v2.4s
+	cmgt	v3.4s, v4.4s, v3.4s
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v2.16b
+	neg	v0.4s, v0.4s
+	neg	v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	cmp	w1, #56
-	sub	w8, w8, w0
-	csel	w0, w8, wzr, hi
+	movi	v4.4s, #56
+	movi	v5.4s, #8
+	cmhi	v3.4s, v3.4s, v4.4s
+	cmhi	v2.4s, v2.4s, v4.4s
+	sub	v1.4s, v5.4s, v1.4s
+	sub	v0.4s, v5.4s, v0.4s
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	csinc	w8, w0, wzr, lt
-	neg	w0, w8
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v2.16b
+	mvn	v3.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	sub	v1.4s, v3.4s, v1.4s
+	sub	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

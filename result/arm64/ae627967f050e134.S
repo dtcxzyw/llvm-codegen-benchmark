@@ -1,61 +1,159 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	x9, #37449                      // =0x9249
-	sub	x8, x1, x2
-	movk	x9, #18724, lsl #16
-	asr	x8, x8, #3
-	movk	x9, #9362, lsl #32
-	movk	x9, #37449, lsl #48
-	madd	x0, x8, x9, x0
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	mov	x8, #37449                      // =0x9249
+	movk	x8, #18724, lsl #16
+	movk	x8, #9362, lsl #32
+	sshr	v3.2d, v3.2d, #3
+	sshr	v2.2d, v2.2d, #3
+	movk	x8, #37449, lsl #48
+	fmov	x9, d3
+	fmov	x11, d2
+	mov	x10, v3.d[1]
+	mov	x12, v2.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d2, x9
+	mul	x8, x12, x8
+	fmov	d3, x11
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	add	v1.2d, v2.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	mov	x9, #3689348814741910323        // =0x3333333333333333
-	asr	x8, x8, #5
-	madd	x0, x8, x9, x0
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	mov	x8, #3689348814741910323        // =0x3333333333333333
+	sshr	v3.2d, v3.2d, #5
+	sshr	v2.2d, v2.2d, #5
+	fmov	x9, d3
+	fmov	x11, d2
+	mov	x10, v3.d[1]
+	mov	x12, v2.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d2, x9
+	mul	x8, x12, x8
+	fmov	d3, x11
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	add	v1.2d, v2.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	mov	x9, #3689348814741910323        // =0x3333333333333333
-	asr	x8, x8, #3
-	madd	x0, x8, x9, x0
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	mov	x8, #3689348814741910323        // =0x3333333333333333
+	sshr	v3.2d, v3.2d, #3
+	sshr	v2.2d, v2.2d, #3
+	fmov	x9, d3
+	fmov	x11, d2
+	mov	x10, v3.d[1]
+	mov	x12, v2.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d2, x9
+	mul	x8, x12, x8
+	fmov	d3, x11
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	add	v1.2d, v2.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	mov	x9, #6148914691236517205        // =0x5555555555555555
-	asr	x8, x8, #3
-	madd	x0, x8, x9, x0
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	mov	x8, #6148914691236517205        // =0x5555555555555555
+	sshr	v3.2d, v3.2d, #3
+	sshr	v2.2d, v2.2d, #3
+	fmov	x9, d3
+	fmov	x11, d2
+	mov	x10, v3.d[1]
+	mov	x12, v2.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d2, x9
+	mul	x8, x12, x8
+	fmov	d3, x11
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	add	v1.2d, v2.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
 	mov	x8, #52005                      // =0xcb25
-	sub	x9, x1, x2
 	movk	x8, #10313, lsl #16
 	movk	x8, #8573, lsl #32
+	fmov	x9, d3
+	fmov	x11, d2
 	movk	x8, #48356, lsl #48
-	smulh	x8, x9, x8
-	asr	x9, x8, #15
-	add	x8, x9, x8, lsr #63
-	add	x0, x8, x0
+	mov	x10, v3.d[1]
+	mov	x12, v2.d[1]
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	asr	x12, x9, #15
+	asr	x13, x11, #15
+	add	x9, x12, x9, lsr #63
+	add	x11, x13, x11, lsr #63
+	asr	x14, x10, #15
+	fmov	d2, x9
+	asr	x15, x8, #15
+	fmov	d3, x11
+	add	x10, x14, x10, lsr #63
+	add	x8, x15, x8, lsr #63
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	add	v1.2d, v2.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
 	mov	x8, #52005                      // =0xcb25
-	sub	x9, x1, x2
 	movk	x8, #10313, lsl #16
 	movk	x8, #8573, lsl #32
+	fmov	x9, d3
+	fmov	x11, d2
 	movk	x8, #48356, lsl #48
-	smulh	x8, x9, x8
-	asr	x9, x8, #18
-	add	x8, x9, x8, lsr #63
-	add	x0, x8, x0
+	mov	x10, v3.d[1]
+	mov	x12, v2.d[1]
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	asr	x12, x9, #18
+	asr	x13, x11, #18
+	add	x9, x12, x9, lsr #63
+	add	x11, x13, x11, lsr #63
+	asr	x14, x10, #18
+	fmov	d2, x9
+	asr	x15, x8, #18
+	fmov	d3, x11
+	add	x10, x14, x10, lsr #63
+	add	x8, x15, x8, lsr #63
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	add	v1.2d, v2.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
 	ret
                                         // -- End function

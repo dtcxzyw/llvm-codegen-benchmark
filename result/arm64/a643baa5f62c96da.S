@@ -1,12 +1,16 @@
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	sub	w8, w1, #2
-	madd	w0, w8, w2, w0
+	uzp1	v1.4s, v1.4s, v2.4s
+	mvni	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	mla	v0.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	madd	w0, w8, w2, w0
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.2d, #0xffffffffffffffff
+	add	v1.4s, v1.4s, v2.4s
+	mla	v0.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

@@ -1,35 +1,50 @@
 func0000000000000091:                   // @func0000000000000091
 // %bb.0:                               // %entry
-	cmp	x1, x2
-	cset	w8, hs
-	orr	x0, x8, x0, lsl #1
+	cmhs	v3.2d, v3.2d, v5.2d
+	cmhs	v2.2d, v2.2d, v4.2d
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	cmp	x1, x2
-	cset	w8, ls
-	orr	x0, x8, x0, lsl #32
+	cmhs	v3.2d, v5.2d, v3.2d
+	cmhs	v2.2d, v4.2d, v2.2d
+	shl	v1.2d, v1.2d, #32
+	shl	v0.2d, v0.2d, #32
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000085:                   // @func0000000000000085
 // %bb.0:                               // %entry
-	cmp	x1, x2
-	cset	w8, hi
-	orr	x0, x8, x0, lsl #32
+	cmhi	v3.2d, v3.2d, v5.2d
+	cmhi	v2.2d, v2.2d, v4.2d
+	shl	v1.2d, v1.2d, #32
+	shl	v0.2d, v0.2d, #32
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
-	cmp	x1, x2
-	cset	w8, ls
-	orr	x0, x8, x0, lsl #3
+	cmhs	v3.2d, v5.2d, v3.2d
+	cmhs	v2.2d, v4.2d, v2.2d
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmp	x1, x2
-	cset	w8, eq
-	orr	x0, x8, x0, lsl #3
+	cmeq	v3.2d, v3.2d, v5.2d
+	cmeq	v2.2d, v2.2d, v4.2d
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function

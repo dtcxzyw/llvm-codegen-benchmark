@@ -1,24 +1,32 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #2, #14
-	mov	w9, #5243                       // =0x147b
-	mul	w8, w8, w9
-	lsr	w0, w8, #17
+	uzp1	v0.4s, v0.4s, v1.4s
+	mov	w8, #5243                       // =0x147b
+	dup	v1.4h, w8
+	xtn	v0.4h, v0.4s
+	ushr	v0.4h, v0.4h, #2
+	umull	v0.4s, v0.4h, v1.4h
+	ushr	v0.4s, v0.4s, #17
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #2, #14
-	mov	w9, #5243                       // =0x147b
-	mul	w8, w8, w9
-	lsr	w0, w8, #17
+	uzp1	v0.4s, v0.4s, v1.4s
+	mov	w8, #5243                       // =0x147b
+	dup	v1.4h, w8
+	xtn	v0.4h, v0.4s
+	ushr	v0.4h, v0.4h, #2
+	umull	v0.4s, v0.4h, v1.4h
+	ushr	v0.4s, v0.4s, #17
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
+	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #43691                      // =0xaaab
-	and	w9, w0, #0xffff
-	mul	w8, w9, w8
-	lsr	w0, w8, #24
+	dup	v1.4h, w8
+	xtn	v0.4h, v0.4s
+	umull	v0.4s, v0.4h, v1.4h
+	ushr	v0.4s, v0.4s, #24
 	ret
                                         // -- End function

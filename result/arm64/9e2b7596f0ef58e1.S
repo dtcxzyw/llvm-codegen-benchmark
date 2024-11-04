@@ -1,24 +1,33 @@
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	mov	w9, w0
-	csel	w8, w1, w2, lo
-	orr	x0, x9, x8, lsl #32
+	umin	v1.4s, v1.4s, v2.4s
+	ushll	v3.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shll	v2.2d, v1.2s, #32
+	shll2	v1.2d, v1.4s, #32
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v2.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	mov	w9, w0
-	csel	w8, w1, w2, lo
-	orr	x0, x9, x8, lsl #32
+	umin	v1.4s, v1.4s, v2.4s
+	ushll	v3.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shll	v2.2d, v1.2s, #32
+	shll2	v1.2d, v1.4s, #32
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v2.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	mov	w9, w0
-	csel	w8, w1, w2, lo
-	orr	x0, x9, x8, lsl #32
+	umin	v1.4s, v1.4s, v2.4s
+	ushll	v3.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shll	v2.2d, v1.2s, #32
+	shll2	v1.2d, v1.4s, #32
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v2.16b, v3.16b
 	ret
                                         // -- End function

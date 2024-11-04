@@ -1,16 +1,88 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	cmp	w1, #2
-	cinc	w8, w8, eq
-	sdiv	w0, w0, w8
+	movi	v4.4s, #2
+	fmov	w8, s0
+	mov	w12, v0.s[3]
+	mov	w13, v1.s[1]
+	fmov	w14, s1
+	mov	w15, v1.s[2]
+	mov	w16, v1.s[3]
+	cmeq	v2.4s, v2.4s, v4.4s
+	cmeq	v3.4s, v3.4s, v4.4s
+	and	v5.16b, v2.16b, v4.16b
+	mvn	v2.16b, v2.16b
+	sub	v2.4s, v5.4s, v2.4s
+	fmov	w9, s2
+	mov	w10, v2.s[1]
+	mov	w11, v2.s[2]
+	sdiv	w8, w8, w9
+	mov	w9, v0.s[1]
+	sdiv	w9, w9, w10
+	mov	w10, v0.s[2]
+	and	v0.16b, v3.16b, v4.16b
+	sdiv	w10, w10, w11
+	mov	w11, v2.s[3]
+	mvn	v2.16b, v3.16b
+	sub	v0.4s, v0.4s, v2.4s
+	sdiv	w11, w12, w11
+	mov	w12, v0.s[1]
+	sdiv	w12, w13, w12
+	fmov	w13, s0
+	sdiv	w13, w14, w13
+	mov	w14, v0.s[2]
+	sdiv	w14, w15, w14
+	mov	w15, v0.s[3]
+	fmov	s0, w8
+	fmov	s1, w13
+	mov	v0.s[1], w9
+	mov	v1.s[1], w12
+	mov	v0.s[2], w10
+	sdiv	w8, w16, w15
+	mov	v1.s[2], w14
+	mov	v0.s[3], w11
+	mov	v1.s[3], w8
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
-	cmp	w1, #24
-	cinc	w8, w8, gt
-	sdiv	w0, w0, w8
+	movi	v4.4s, #24
+	movi	v5.4s, #6
+	movi	v6.4s, #7
+	fmov	w8, s0
+	mov	w12, v0.s[3]
+	mov	w13, v1.s[1]
+	fmov	w14, s1
+	mov	w15, v1.s[2]
+	mov	w16, v1.s[3]
+	cmgt	v2.4s, v2.4s, v4.4s
+	bsl	v2.16b, v6.16b, v5.16b
+	fmov	w9, s2
+	mov	w10, v2.s[1]
+	mov	w11, v2.s[2]
+	sdiv	w8, w8, w9
+	mov	w9, v0.s[1]
+	sdiv	w9, w9, w10
+	mov	w10, v0.s[2]
+	cmgt	v0.4s, v3.4s, v4.4s
+	bsl	v0.16b, v6.16b, v5.16b
+	sdiv	w10, w10, w11
+	mov	w11, v2.s[3]
+	sdiv	w11, w12, w11
+	mov	w12, v0.s[1]
+	sdiv	w12, w13, w12
+	fmov	w13, s0
+	sdiv	w13, w14, w13
+	mov	w14, v0.s[2]
+	sdiv	w14, w15, w14
+	mov	w15, v0.s[3]
+	fmov	s0, w8
+	fmov	s1, w13
+	mov	v0.s[1], w9
+	mov	v1.s[1], w12
+	mov	v0.s[2], w10
+	sdiv	w8, w16, w15
+	mov	v1.s[2], w14
+	mov	v0.s[3], w11
+	mov	v1.s[3], w8
 	ret
                                         // -- End function

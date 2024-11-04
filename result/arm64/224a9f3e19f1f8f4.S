@@ -1,8 +1,9 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	tst	w1, #0x2
-	cset	w8, eq
-	orn	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v2.16b, #2
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.16b, v1.16b, #0
+	and	v1.16b, v1.16b, v0.16b
+	orn	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

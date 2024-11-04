@@ -1,37 +1,60 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	mov	w9, #26                         // =0x1a
-	cmp	w8, #95
-	cset	w8, eq
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	mov	w8, #10                         // =0xa
-	csel	w8, w9, w8, ne
-	orr	w0, w8, w0
+	movi	v4.8b, #95
+	movi	v5.4s, #26
+	cmeq	v3.8b, v3.8b, v4.8b
+	movi	v4.4s, #10
+	orr	v2.8b, v3.8b, v2.8b
+	zip2	v3.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	bsl	v3.16b, v5.16b, v4.16b
+	bsl	v2.16b, v5.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	tst	w2, #0xff
-	mov	w9, #-2147483648                // =0x80000000
-	cset	w8, eq
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	mov	w8, #-1073741824                // =0xc0000000
-	csel	w8, w9, w8, ne
-	orr	w0, w8, w0
+	cmeq	v3.8b, v3.8b, #0
+	movi	v4.4s, #192, lsl #24
+	movi	v5.4s, #128, lsl #24
+	orr	v2.8b, v3.8b, v2.8b
+	zip2	v3.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	bsl	v3.16b, v5.16b, v4.16b
+	bsl	v2.16b, v5.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	sxtb	w8, w2
-	cmp	w8, #0
-	cset	w8, lt
-	orr	w8, w8, w1
-	tst	w8, #0x1
-	mov	w8, #2097152                    // =0x200000
-	csel	w8, w8, wzr, ne
-	orr	w0, w8, w0
+	cmlt	v3.8b, v3.8b, #0
+	movi	v4.4s, #32, lsl #16
+	orr	v2.8b, v3.8b, v2.8b
+	zip2	v3.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

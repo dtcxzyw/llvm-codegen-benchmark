@@ -1,10 +1,17 @@
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #1
-	bic	w8, w8, w8, asr #31
-	orr	w8, w8, w0
-	cmp	w8, #0
-	cset	w0, eq
+	mvn	v4.16b, v4.16b
+	mvn	v5.16b, v5.16b
+	movi	v6.2d, #0000000000000000
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	smax	v3.4s, v3.4s, v6.4s
+	smax	v2.4s, v2.4s, v6.4s
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

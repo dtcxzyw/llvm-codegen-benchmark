@@ -1,8 +1,22 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fcmp	s2, s0
-	fcsel	s2, s2, s0, mi
-	fsub	s1, s1, s2
-	fadd	s0, s1, s0
+	ldp	q16, q17, [sp]
+	ldp	q18, q19, [sp, #32]
+	fcmgt	v20.4s, v0.4s, v16.4s
+	fcmgt	v23.4s, v1.4s, v17.4s
+	fcmgt	v21.4s, v3.4s, v19.4s
+	fcmgt	v22.4s, v2.4s, v18.4s
+	bif	v16.16b, v0.16b, v20.16b
+	bif	v17.16b, v1.16b, v23.16b
+	bif	v18.16b, v2.16b, v22.16b
+	bif	v19.16b, v3.16b, v21.16b
+	fsub	v4.4s, v4.4s, v16.4s
+	fsub	v5.4s, v5.4s, v17.4s
+	fsub	v7.4s, v7.4s, v19.4s
+	fsub	v6.4s, v6.4s, v18.4s
+	fadd	v0.4s, v4.4s, v0.4s
+	fadd	v1.4s, v5.4s, v1.4s
+	fadd	v2.4s, v6.4s, v2.4s
+	fadd	v3.4s, v7.4s, v3.4s
 	ret
                                         // -- End function

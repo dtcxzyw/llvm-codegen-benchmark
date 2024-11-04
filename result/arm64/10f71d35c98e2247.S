@@ -1,13 +1,17 @@
-.LCPI0_0:
-	.xword	0x3feff7ced916872b              // double 0.99899999999999999
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	mov	x8, #3689348814741910323        // =0x3333333333333333
-	movk	x8, #16355, lsl #48
-	fmov	d2, x8
-	fmadd	d0, d0, d2, d1
-	fcvtzu	x0, d0
+	mov	x8, #34603                      // =0x872b
+	mov	x9, #3689348814741910323        // =0x3333333333333333
+	movk	x8, #55574, lsl #16
+	movk	x9, #16355, lsl #48
+	movk	x8, #63438, lsl #32
+	dup	v3.2d, x9
+	movk	x8, #16367, lsl #48
+	dup	v2.2d, x8
+	mov	v4.16b, v2.16b
+	fmla	v2.2d, v3.2d, v0.2d
+	fmla	v4.2d, v3.2d, v1.2d
+	fcvtzu	v0.2d, v2.2d
+	fcvtzu	v1.2d, v4.2d
 	ret
                                         // -- End function

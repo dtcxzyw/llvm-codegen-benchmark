@@ -1,14 +1,30 @@
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	asr	x8, x0, #2
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-                                        // kill: def $w1 killed $w1 def $x1
-	movk	x9, #43691
-	mul	x8, x8, x9
-	sxtw	x9, w1
-	sub	x9, x9, x8
-	cmp	x8, x9
-	csel	x9, x8, x9, hi
-	add	x0, x9, x8
+	sshr	v1.2d, v1.2d, #2
+	sshr	v0.2d, v0.2d, #2
+	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	movk	x8, #43691
+	sshll2	v3.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
+	fmov	x9, d1
+	fmov	x11, d0
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d1, x9
+	mul	x8, x12, x8
+	fmov	d0, x11
+	mov	v1.d[1], x10
+	mov	v0.d[1], x8
+	sub	v3.2d, v3.2d, v1.2d
+	sub	v2.2d, v2.2d, v0.2d
+	cmhi	v4.2d, v1.2d, v3.2d
+	cmhi	v5.2d, v0.2d, v2.2d
+	bit	v3.16b, v1.16b, v4.16b
+	bit	v2.16b, v0.16b, v5.16b
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function

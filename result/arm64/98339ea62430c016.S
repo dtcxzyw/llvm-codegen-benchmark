@@ -1,21 +1,22 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	add	x8, x8, #1
-	fmov	d0, x8
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	sub	x8, x8, #1
-	fmov	d0, x8
+	movi	v2.2d, #0xffffffffffffffff
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	sub	x8, x8, #1
-	fmov	d0, x8
+	movi	v2.2d, #0xffffffffffffffff
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

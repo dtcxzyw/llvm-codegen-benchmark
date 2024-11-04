@@ -1,14 +1,24 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
+	uzp1	v1.4s, v1.4s, v2.4s
 	mov	x8, #8589934592                 // =0x200000000
-	sub	w9, w0, w1
-	add	x0, x8, x9, lsl #32
+	dup	v3.2d, x8
+	sub	v0.4s, v0.4s, v1.4s
+	shll	v2.2d, v0.2s, #32
+	shll2	v0.2d, v0.4s, #32
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	sub	w8, w0, w1
-	ubfiz	x8, x8, #3, #32
-	add	x0, x8, #8
+	uzp1	v1.4s, v1.4s, v2.4s
+	mov	w8, #8                          // =0x8
+	dup	v3.2d, x8
+	sub	v0.4s, v0.4s, v1.4s
+	ushll	v2.2d, v0.2s, #3
+	ushll2	v0.2d, v0.4s, #3
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function

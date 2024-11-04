@@ -1,9 +1,45 @@
 func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
-	lsl	w8, w2, #3
-	add	w9, w8, w1
-	sub	w9, w9, #1
+	shl	v5.4s, v5.4s, #3
+	movi	v6.2d, #0xffffffffffffffff
+	shl	v4.4s, v4.4s, #3
+	add	v3.4s, v5.4s, v3.4s
+	mov	w8, v5.s[1]
+	mov	w11, v5.s[2]
+	add	v2.4s, v4.4s, v2.4s
+	mov	w12, v5.s[3]
+	mov	w13, v4.s[1]
+	fmov	w14, s4
+	mov	w15, v4.s[2]
+	mov	w16, v4.s[3]
+	add	v3.4s, v3.4s, v6.4s
+	add	v2.4s, v2.4s, v6.4s
+	mov	w9, v3.s[1]
+	fmov	w10, s3
 	udiv	w8, w9, w8
-	mul	w0, w8, w0
+	fmov	w9, s5
+	udiv	w9, w10, w9
+	mov	w10, v3.s[2]
+	udiv	w10, w10, w11
+	mov	w11, v3.s[3]
+	udiv	w11, w11, w12
+	mov	w12, v2.s[1]
+	udiv	w12, w12, w13
+	fmov	w13, s2
+	udiv	w13, w13, w14
+	mov	w14, v2.s[2]
+	udiv	w14, w14, w15
+	mov	w15, v2.s[3]
+	fmov	s2, w9
+	fmov	s3, w13
+	mov	v2.s[1], w8
+	mov	v3.s[1], w12
+	mov	v2.s[2], w10
+	udiv	w8, w15, w16
+	mov	v3.s[2], w14
+	mov	v2.s[3], w11
+	mul	v1.4s, v2.4s, v1.4s
+	mov	v3.s[3], w8
+	mul	v0.4s, v3.4s, v0.4s
 	ret
                                         // -- End function

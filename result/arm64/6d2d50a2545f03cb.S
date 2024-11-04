@@ -1,16 +1,36 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	lsl	x9, x2, #1
-	cmp	w8, #42
-	csel	x0, x9, x0, eq
+	movi	v5.4h, #42
+	bic	v2.4h, #255, lsl #8
+	add	v3.2d, v3.2d, v3.2d
+	add	v4.2d, v4.2d, v4.2d
+	cmeq	v2.4h, v2.4h, v5.4h
+	ushll	v2.4s, v2.4h, #0
+	ushll	v5.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	shl	v5.2d, v5.2d, #56
+	shl	v2.2d, v2.2d, #56
+	sshr	v5.2d, v5.2d, #56
+	sshr	v2.2d, v2.2d, #56
+	bit	v1.16b, v4.16b, v2.16b
+	bit	v0.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	lsl	x8, x2, #1
-	mov	w9, #255                        // =0xff
-	bics	wzr, w9, w1
-	csel	x0, x8, x0, eq
+	movi	d5, #0xff00ff00ff00ff
+	bic	v2.4h, #255, lsl #8
+	add	v3.2d, v3.2d, v3.2d
+	add	v4.2d, v4.2d, v4.2d
+	cmeq	v2.4h, v2.4h, v5.4h
+	ushll	v2.4s, v2.4h, #0
+	ushll	v5.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	shl	v5.2d, v5.2d, #56
+	shl	v2.2d, v2.2d, #56
+	sshr	v5.2d, v5.2d, #56
+	sshr	v2.2d, v2.2d, #56
+	bit	v1.16b, v4.16b, v2.16b
+	bit	v0.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

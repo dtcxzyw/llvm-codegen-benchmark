@@ -1,9 +1,16 @@
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	cmp	w1, #12
-	mov	w8, #11                         // =0xb
-	ccmp	w2, #12, #2, eq
-	csel	w8, w8, w1, lo
-	add	w0, w8, w0
+	movi	v6.4s, #12
+	cmeq	v7.4s, v3.4s, v6.4s
+	cmeq	v16.4s, v2.4s, v6.4s
+	cmhi	v5.4s, v6.4s, v5.4s
+	cmhi	v4.4s, v6.4s, v4.4s
+	movi	v6.4s, #11
+	and	v5.16b, v5.16b, v7.16b
+	and	v4.16b, v4.16b, v16.16b
+	bit	v3.16b, v6.16b, v5.16b
+	bit	v2.16b, v6.16b, v4.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

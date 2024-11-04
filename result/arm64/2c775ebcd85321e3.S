@@ -1,9 +1,15 @@
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
-	mov	w8, #56                         // =0x38
-	tst	w1, #0x800
-	and	w9, w0, #0xfe
-	ccmp	w9, w8, #4, ne
-	cset	w0, eq
+	movi	v3.8h, #8, lsl #8
+	movi	v4.16b, #56
+	and	v1.16b, v1.16b, v3.16b
+	and	v2.16b, v2.16b, v3.16b
+	movi	v3.16b, #254
+	cmeq	v2.8h, v2.8h, #0
+	cmeq	v1.8h, v1.8h, #0
+	and	v0.16b, v0.16b, v3.16b
+	uzp1	v1.16b, v1.16b, v2.16b
+	cmeq	v0.16b, v0.16b, v4.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

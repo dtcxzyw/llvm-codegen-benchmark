@@ -1,24 +1,40 @@
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	add	w9, w1, w2
-	cmp	w8, #42
-	csinv	w0, w9, wzr, ne
+	movi	v5.8b, #42
+	add	v3.4s, v1.4s, v3.4s
+	add	v1.4s, v2.4s, v4.4s
+	cmeq	v0.8b, v0.8b, v5.8b
+	sshll	v0.8h, v0.8b, #0
+	sshll	v2.4s, v0.4h, #0
+	sshll2	v0.4s, v0.8h, #0
+	orr	v1.16b, v1.16b, v0.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	tst	w0, #0xff
-	mov	w9, #3                          // =0x3
-	csel	w0, w9, w8, eq
+	cmeq	v0.8b, v0.8b, #0
+	movi	v5.4s, #3
+	add	v3.4s, v1.4s, v3.4s
+	add	v1.4s, v2.4s, v4.4s
+	sshll	v0.8h, v0.8b, #0
+	sshll	v2.4s, v0.4h, #0
+	sshll2	v0.4s, v0.8h, #0
+	bit	v1.16b, v5.16b, v0.16b
+	mov	v0.16b, v2.16b
+	bsl	v0.16b, v5.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mov	w8, #255                        // =0xff
-	add	w9, w1, w2
-	bics	wzr, w8, w0
-	csel	w0, wzr, w9, eq
+	movi	v5.2d, #0xffffffffffffffff
+	add	v3.4s, v1.4s, v3.4s
+	add	v1.4s, v2.4s, v4.4s
+	cmeq	v0.8b, v0.8b, v5.8b
+	sshll	v0.8h, v0.8b, #0
+	sshll	v2.4s, v0.4h, #0
+	sshll2	v0.4s, v0.8h, #0
+	bic	v1.16b, v1.16b, v0.16b
+	bic	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function

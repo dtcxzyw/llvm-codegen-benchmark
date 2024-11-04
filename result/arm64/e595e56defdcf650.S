@@ -1,7 +1,12 @@
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	lsr	w8, w1, w2
-	cmp	w8, #0
-	cinc	w0, w0, ne
+	neg	v4.4s, v4.4s
+	neg	v5.4s, v5.4s
+	ushl	v2.4s, v2.4s, v4.4s
+	ushl	v3.4s, v3.4s, v5.4s
+	cmtst	v3.4s, v3.4s, v3.4s
+	cmtst	v2.4s, v2.4s, v2.4s
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

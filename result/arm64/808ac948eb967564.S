@@ -1,36 +1,80 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	asr	x8, x2, #1
-	tst	w0, #0x1
-	csel	x8, x1, x8, ne
-	cmp	x8, #0
-	cset	w0, eq
+	ushll	v0.4s, v0.4h, #0
+	sshr	v4.2d, v4.2d, #1
+	sshr	v3.2d, v3.2d, #1
+	ushll	v5.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shl	v5.2d, v5.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v5.2d, v5.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bif	v1.16b, v3.16b, v5.16b
+	bsl	v0.16b, v2.16b, v4.16b
+	cmeq	v0.2d, v0.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	asr	x8, x2, #3
-	tst	w0, #0x1
-	csel	x8, x1, x8, ne
-	cmp	x8, #0
-	cset	w0, eq
+	ushll	v0.4s, v0.4h, #0
+	sshr	v4.2d, v4.2d, #3
+	sshr	v3.2d, v3.2d, #3
+	ushll	v5.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shl	v5.2d, v5.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v5.2d, v5.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bif	v1.16b, v3.16b, v5.16b
+	bsl	v0.16b, v2.16b, v4.16b
+	cmeq	v0.2d, v0.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	asr	x8, x2, #3
-	tst	w0, #0x1
-	csel	x8, x1, x8, ne
-	cmp	x8, #3
-	cset	w0, hi
+	ushll	v0.4s, v0.4h, #0
+	sshr	v4.2d, v4.2d, #3
+	mov	w8, #3                          // =0x3
+	sshr	v3.2d, v3.2d, #3
+	ushll	v5.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shl	v5.2d, v5.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v5.2d, v5.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bif	v1.16b, v3.16b, v5.16b
+	bsl	v0.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	cmhi	v0.2d, v0.2d, v2.2d
+	cmhi	v1.2d, v1.2d, v2.2d
+	uzp1	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	asr	x8, x2, #32
-	tst	w0, #0x1
-	csel	x8, x1, x8, ne
-	cmp	x8, #32
-	cset	w0, lo
+	ushll	v0.4s, v0.4h, #0
+	sshr	v4.2d, v4.2d, #32
+	mov	w8, #32                         // =0x20
+	sshr	v3.2d, v3.2d, #32
+	ushll	v5.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shl	v5.2d, v5.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v5.2d, v5.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bif	v1.16b, v3.16b, v5.16b
+	bsl	v0.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	cmhi	v0.2d, v2.2d, v0.2d
+	cmhi	v1.2d, v2.2d, v1.2d
+	uzp1	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

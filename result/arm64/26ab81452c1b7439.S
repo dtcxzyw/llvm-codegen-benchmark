@@ -1,8 +1,10 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	lsl	x8, x0, #32
-	fmov	d2, x8
-	fmul	d1, d2, d1
-	fadd	d0, d1, d0
+	shl	v4.2d, v4.2d, #32
+	shl	v5.2d, v5.2d, #32
+	fmul	v3.2d, v5.2d, v3.2d
+	fmul	v2.2d, v4.2d, v2.2d
+	fadd	v0.2d, v2.2d, v0.2d
+	fadd	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function

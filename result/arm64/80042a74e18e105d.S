@@ -1,15 +1,44 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w2, #16
-	and	w9, w1, #0xfffffff8
-	tst	w0, #0x1
-	csel	w0, w9, w8, ne
+	zip1	v6.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #16
+	bic	v1.4s, #7
+	bic	v2.4s, #7
+	ushll	v6.4s, v6.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	add	v4.4s, v4.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	shl	v6.4s, v6.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmlt	v5.4s, v6.4s, #0
+	cmlt	v6.4s, v0.4s, #0
+	mov	v0.16b, v5.16b
+	bsl	v0.16b, v1.16b, v3.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1
-	tst	w0, #0x1
-	csinc	w0, w8, w2, ne
+	zip1	v6.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #1
+	ushll	v6.4s, v6.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	add	v4.4s, v4.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	and	v1.16b, v1.16b, v5.16b
+	and	v2.16b, v2.16b, v5.16b
+	shl	v6.4s, v6.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmlt	v6.4s, v6.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	bic	v3.16b, v3.16b, v6.16b
+	and	v1.16b, v1.16b, v6.16b
+	bic	v4.16b, v4.16b, v0.16b
+	and	v2.16b, v2.16b, v0.16b
+	orr	v0.16b, v1.16b, v3.16b
+	orr	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

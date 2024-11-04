@@ -1,40 +1,55 @@
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	and	w9, w0, #0xffff
-	sub	w8, w8, w1
-	lsl	w0, w9, w8
+	movi	v3.4s, #16
+	sub	v4.4s, v3.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushll	v2.4s, v0.4h, #0
+	ushll2	v0.4s, v0.8h, #0
+	ushl	v1.4s, v0.4s, v1.4s
+	ushl	v0.4s, v2.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	mov	w8, #11                         // =0xb
-	and	w9, w0, #0xffff
-	sub	w8, w8, w1
-	lsl	w0, w9, w8
+	movi	v3.4s, #11
+	sub	v4.4s, v3.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushll	v2.4s, v0.4h, #0
+	ushll2	v0.4s, v0.8h, #0
+	ushl	v1.4s, v0.4s, v1.4s
+	ushl	v0.4s, v2.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	and	w9, w0, #0xffff
-	sub	w8, w8, w1
-	lsl	w0, w9, w8
+	movi	v3.4s, #8
+	sub	v4.4s, v3.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushll	v2.4s, v0.4h, #0
+	ushll2	v0.4s, v0.8h, #0
+	ushl	v1.4s, v0.4s, v1.4s
+	ushl	v0.4s, v2.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	and	w9, w0, #0xffff
-	sub	w8, w8, w1
-	lsl	w0, w9, w8
+	movi	v3.4s, #16
+	sub	v4.4s, v3.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushll	v2.4s, v0.4h, #0
+	ushll2	v0.4s, v0.8h, #0
+	ushl	v1.4s, v0.4s, v1.4s
+	ushl	v0.4s, v2.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #14                         // =0xe
-	and	w9, w0, #0xffff
-	sub	w8, w8, w1
-	lsl	w0, w9, w8
+	movi	v3.4s, #14
+	sub	v4.4s, v3.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushll	v2.4s, v0.4h, #0
+	ushll2	v0.4s, v0.8h, #0
+	ushl	v1.4s, v0.4s, v1.4s
+	ushl	v0.4s, v2.4s, v4.4s
 	ret
                                         // -- End function

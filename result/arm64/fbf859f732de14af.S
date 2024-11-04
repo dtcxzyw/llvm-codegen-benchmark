@@ -1,37 +1,58 @@
 func0000000000000105:                   // @func0000000000000105
 // %bb.0:                               // %entry
 	mov	x8, #3689348814741910323        // =0x3333333333333333
-	sub	x9, x1, x0
 	movk	x8, #819, lsl #48
-	cmp	x2, x8
-	csel	x8, x2, x8, lo
-	sub	x8, x8, x0
-	cmp	x8, x9
-	cset	w0, ls
+	dup	v6.2d, x8
+	cmhi	v7.2d, v6.2d, v4.2d
+	cmhi	v16.2d, v6.2d, v5.2d
+	bif	v4.16b, v6.16b, v7.16b
+	bif	v5.16b, v6.16b, v16.16b
+	sub	v4.2d, v4.2d, v0.2d
+	sub	v5.2d, v5.2d, v1.2d
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	cmhs	v0.2d, v0.2d, v4.2d
+	cmhs	v1.2d, v1.2d, v5.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
 	mov	x8, #45371                      // =0xb13b
-	sub	x9, x1, x0
 	movk	x8, #15123, lsl #16
 	movk	x8, #5041, lsl #32
 	movk	x8, #315, lsl #48
-	cmp	x2, x8
-	csel	x8, x2, x8, lo
-	sub	x8, x8, x0
-	cmp	x8, x9
-	cset	w0, hi
+	dup	v6.2d, x8
+	cmhi	v7.2d, v6.2d, v4.2d
+	cmhi	v16.2d, v6.2d, v5.2d
+	bif	v4.16b, v6.16b, v7.16b
+	bif	v5.16b, v6.16b, v16.16b
+	sub	v4.2d, v4.2d, v0.2d
+	sub	v5.2d, v5.2d, v1.2d
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	cmhi	v0.2d, v4.2d, v0.2d
+	cmhi	v1.2d, v5.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000138:                   // @func0000000000000138
 // %bb.0:                               // %entry
-	cmp	x2, #512, lsl #12               // =2097152
 	mov	w8, #2097152                    // =0x200000
-	sub	x9, x1, x0
-	csel	x8, x2, x8, lo
-	sub	x8, x8, x0
-	cmp	x8, x9
-	cset	w0, hi
+	dup	v6.2d, x8
+	cmhi	v7.2d, v6.2d, v4.2d
+	cmhi	v16.2d, v6.2d, v5.2d
+	bif	v4.16b, v6.16b, v7.16b
+	bif	v5.16b, v6.16b, v16.16b
+	sub	v4.2d, v4.2d, v0.2d
+	sub	v5.2d, v5.2d, v1.2d
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	cmhi	v0.2d, v4.2d, v0.2d
+	cmhi	v1.2d, v5.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

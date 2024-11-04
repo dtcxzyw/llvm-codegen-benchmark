@@ -1,8 +1,17 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csel	w8, w1, w2, ne
-	and	w8, w8, #0xfffffff3
-	orr	w0, w8, #0x8
+	ushll2	v5.8h, v0.16b, #0
+	ushll	v0.8h, v0.8b, #0
+	shl	v5.8h, v5.8h, #15
+	shl	v0.8h, v0.8h, #15
+	cmlt	v5.8h, v5.8h, #0
+	cmlt	v0.8h, v0.8h, #0
+	bif	v2.16b, v4.16b, v5.16b
+	bsl	v0.16b, v1.16b, v3.16b
+	bic	v2.8h, #12
+	bic	v0.8h, #12
+	orr	v2.8h, #8
+	orr	v0.8h, #8
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function

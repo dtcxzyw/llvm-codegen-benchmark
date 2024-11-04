@@ -1,23 +1,43 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	csinc	w8, w1, wzr, ne
-	mul	w0, w8, w0
+	movi	v6.4s, #1
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v6.16b
+	cmeq	v4.4s, v4.4s, #0
+	cmeq	v5.4s, v5.4s, #0
+	bic	v3.16b, v3.16b, v5.16b
+	bic	v2.16b, v2.16b, v4.16b
+	sub	v3.4s, v3.4s, v5.4s
+	sub	v2.4s, v2.4s, v4.4s
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w8, w2, #0x3
-	cmp	w8, #1
-	mov	w8, #2                          // =0x2
-	csel	w8, w8, w1, eq
-	mul	w0, w8, w0
+	movi	v6.4s, #3
+	movi	v7.4s, #1
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v6.16b
+	movi	v6.4s, #2
+	cmeq	v4.4s, v4.4s, v7.4s
+	cmeq	v5.4s, v5.4s, v7.4s
+	bit	v3.16b, v6.16b, v5.16b
+	bit	v2.16b, v6.16b, v4.16b
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	lsl	w8, w2, #26
-	and	w8, w1, w8, asr #31
-	mul	w0, w8, w0
+	movi	v6.4s, #32
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v6.16b
+	cmeq	v4.4s, v4.4s, #0
+	cmeq	v5.4s, v5.4s, #0
+	bic	v3.16b, v3.16b, v5.16b
+	bic	v2.16b, v2.16b, v4.16b
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

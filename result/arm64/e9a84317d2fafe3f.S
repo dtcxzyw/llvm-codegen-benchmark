@@ -1,13 +1,25 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #95                         // =0x5f
-	ubfiz	w9, w1, #2, #6
-	and	w8, w0, w8
-	orr	w0, w8, w9
+	shl	v2.8b, v2.8b, #2
+	movi	v3.4s, #95
+	ushll	v2.8h, v2.8b, #0
+	and	v0.16b, v0.16b, v3.16b
+	and	v1.16b, v1.16b, v3.16b
+	ushll	v4.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	orr	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	bfi	w0, w1, #1, #7
+	add	v2.8b, v2.8b, v2.8b
+	bic	v0.4s, #254
+	bic	v1.4s, #254
+	ushll	v2.8h, v2.8b, #0
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	orr	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v0.16b, v3.16b
 	ret
                                         // -- End function

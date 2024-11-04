@@ -1,62 +1,165 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	mov	x8, #50633                      // =0xc5c9
-	mov	w10, #-10000                    // =0xffffd8f0
+	fmov	x9, d2
+	fmov	x11, d3
 	movk	x8, #49780, lsl #16
+	mov	x10, v2.d[1]
+	mov	x12, v3.d[1]
 	movk	x8, #23290, lsl #32
 	movk	x8, #4986, lsl #48
-	smulh	x8, x1, x8
-	lsr	x9, x8, #63
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	lsr	x12, x9, #63
+	lsr	x9, x9, #11
+	lsr	x13, x11, #63
+	lsr	x11, x11, #11
+	add	w9, w9, w12
+	add	w11, w11, w13
+	lsr	x14, x10, #63
+	lsr	x10, x10, #11
+	fmov	d2, x9
+	fmov	d3, x11
+	lsr	x15, x8, #63
 	lsr	x8, x8, #11
-	add	w8, w8, w9
-	add	w9, w0, w10
-	add	w0, w8, w9
+	add	w10, w10, w14
+	add	w8, w8, w15
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	mov	w8, #-10000                     // =0xffffd8f0
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	dup	v1.4s, w8
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
 	mov	x8, #50633                      // =0xc5c9
+	fmov	x9, d2
+	fmov	x11, d3
 	movk	x8, #49780, lsl #16
+	mov	x10, v2.d[1]
+	mov	x12, v3.d[1]
 	movk	x8, #23290, lsl #32
 	movk	x8, #4986, lsl #48
-	smulh	x8, x1, x8
-	lsr	x9, x8, #63
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	lsr	x12, x9, #63
+	lsr	x9, x9, #11
+	lsr	x13, x11, #63
+	lsr	x11, x11, #11
+	add	w9, w9, w12
+	add	w11, w11, w13
+	lsr	x14, x10, #63
+	lsr	x10, x10, #11
+	fmov	d2, x9
+	fmov	d3, x11
+	lsr	x15, x8, #63
 	lsr	x8, x8, #11
-	add	w8, w8, w9
-	add	w8, w8, w0
-	sub	w0, w8, #1900
+	add	w10, w10, w14
+	add	w8, w8, w15
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	mov	w8, #-1900                      // =0xfffff894
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	dup	v1.4s, w8
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	lsr	x8, x1, #4
+	ushr	v2.2d, v2.2d, #4
+	ushr	v3.2d, v3.2d, #4
 	mov	w9, #28567                      // =0x6f97
 	movk	w9, #38649, lsl #16
-	madd	w8, w8, w9, w0
-	add	w0, w8, #1
+	fmov	x10, d2
+	fmov	x12, d3
+	mov	x8, v2.d[1]
+	mov	x11, v3.d[1]
+	mul	w10, w10, w9
+	mul	w12, w12, w9
+	mul	w8, w8, w9
+	mul	w9, w11, w9
+	fmov	d2, x10
+	fmov	d3, x12
+	mov	v2.d[1], x8
+	mov	v3.d[1], x9
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #1
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
 	mov	x8, #10583                      // =0x2957
-	add	w10, w0, #175, lsl #12          // =716800
+	fmov	x9, d2
+	fmov	x11, d3
 	movk	x8, #52817, lsl #16
+	mov	x10, v2.d[1]
+	mov	x12, v3.d[1]
 	movk	x8, #51360, lsl #32
 	movk	x8, #6213, lsl #48
-	smulh	x8, x1, x8
-	lsr	x9, x8, #63
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	lsr	x12, x9, #63
+	lsr	x9, x9, #13
+	lsr	x13, x11, #63
+	lsr	x11, x11, #13
+	add	w9, w9, w12
+	add	w11, w11, w13
+	lsr	x14, x10, #63
+	lsr	x10, x10, #13
+	fmov	d2, x9
+	fmov	d3, x11
+	lsr	x15, x8, #63
 	lsr	x8, x8, #13
-	add	w8, w8, w9
-	add	w9, w10, #2363
-	add	w0, w8, w9
+	add	w10, w10, w14
+	add	w8, w8, w15
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	mov	w8, #63803                      // =0xf93b
+	movk	w8, #10, lsl #16
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	dup	v1.4s, w8
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	lsr	x8, x1, #3
+	ushr	v2.2d, v2.2d, #3
+	ushr	v3.2d, v3.2d, #3
 	mov	w9, #43691                      // =0xaaab
 	movk	w9, #43690, lsl #16
-	madd	w8, w8, w9, w0
-	add	w0, w8, #1
+	fmov	x10, d2
+	fmov	x12, d3
+	mov	x8, v2.d[1]
+	mov	x11, v3.d[1]
+	mul	w10, w10, w9
+	mul	w12, w12, w9
+	mul	w8, w8, w9
+	mul	w9, w11, w9
+	fmov	d2, x10
+	fmov	d3, x12
+	mov	v2.d[1], x8
+	mov	v3.d[1], x9
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #1
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

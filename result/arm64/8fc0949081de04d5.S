@@ -1,49 +1,73 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	fcvtzs	x8, d0
-	add	x8, x8, x0
-	lsr	x0, x8, #63
-                                        // kill: def $w0 killed $w0 killed $x0
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	fcvtzs	x9, d0
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
 	mov	x8, #-1486618625                // =0xffffffffa763ffff
 	movk	x8, #46771, lsl #32
 	movk	x8, #3552, lsl #48
-	add	x9, x9, x0
-	cmp	x9, x8
-	cset	w0, hi
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	fcvtzs	x9, d0
-	mov	x8, #-9223372036854775808       // =0x8000000000000000
-	add	x9, x9, x0
-	cmp	x9, x8
-	cset	w0, eq
+	movi	v4.2d, #0000000000000000
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	fneg	v4.2d, v4.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	cmeq	v1.2d, v1.2d, v4.2d
+	cmeq	v0.2d, v0.2d, v4.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcvtzs	x9, d0
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
 	mov	x8, #24576                      // =0x6000
 	movk	x8, #7639, lsl #16
 	movk	x8, #20, lsl #32
-	add	x9, x9, x0
-	cmp	x9, x8
-	cset	w0, gt
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	dup	v2.2d, x8
+	cmgt	v1.2d, v1.2d, v2.2d
+	cmgt	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	fcvtzs	x9, d0
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
 	mov	w8, #16959                      // =0x423f
 	movk	w8, #15, lsl #16
-	add	x9, x9, x0
-	cmp	x9, x8
-	cset	w0, gt
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	dup	v2.2d, x8
+	cmgt	v1.2d, v1.2d, v2.2d
+	cmgt	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

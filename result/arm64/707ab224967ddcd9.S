@@ -1,66 +1,131 @@
 func0000000000000280:                   // @func0000000000000280
 // %bb.0:                               // %entry
-	mvn	w8, w2
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x9, x1, #0x1
-	lsr	w8, w8, #31
-	add	x9, x9, x0
-	add	x0, x9, x8
+	movi	v4.4h, #1
+	cmge	v3.4s, v3.4s, #0
+	mov	w8, #1                          // =0x1
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	and	v2.8b, v2.8b, v4.8b
+	dup	v4.2d, x8
+	ushll	v2.4s, v2.4h, #0
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v5.2d
 	ret
                                         // -- End function
 func000000000000028f:                   // @func000000000000028f
 // %bb.0:                               // %entry
 	mov	w8, #16959                      // =0x423f
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x9, x1, #0x1
+	movi	v5.4h, #1
 	movk	w8, #15, lsl #16
-	cmp	w2, w8
-	add	x8, x9, x0
-	cinc	x0, x8, gt
+	dup	v4.4s, w8
+	mov	w8, #1                          // =0x1
+	and	v2.8b, v2.8b, v5.8b
+	cmgt	v3.4s, v3.4s, v4.4s
+	dup	v4.2d, x8
+	ushll	v2.4s, v2.4h, #0
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v5.2d
 	ret
                                         // -- End function
 func0000000000000300:                   // @func0000000000000300
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0x1
-	cmp	w2, #0
-	add	x8, x8, x0
-	cinc	x0, x8, ne
+	movi	v4.4h, #1
+	cmtst	v3.4s, v3.4s, v3.4s
+	mov	w8, #1                          // =0x1
+	and	v2.8b, v2.8b, v4.8b
+	dup	v4.2d, x8
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v5.2d
 	ret
                                         // -- End function
 func0000000000000305:                   // @func0000000000000305
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0x1
-	cmp	w2, #0
-	add	x8, x8, x0
-	cinc	x0, x8, ne
+	movi	v4.4h, #1
+	cmtst	v3.4s, v3.4s, v3.4s
+	mov	w8, #1                          // =0x1
+	and	v2.8b, v2.8b, v4.8b
+	dup	v4.2d, x8
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v5.2d
 	ret
                                         // -- End function
 func000000000000030f:                   // @func000000000000030f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0x1
-	cmp	w2, #0
-	add	x8, x8, x0
-	cinc	x0, x8, ne
+	movi	v4.4h, #1
+	cmtst	v3.4s, v3.4s, v3.4s
+	mov	w8, #1                          // =0x1
+	and	v2.8b, v2.8b, v4.8b
+	dup	v4.2d, x8
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v5.2d
 	ret
                                         // -- End function
 func000000000000010f:                   // @func000000000000010f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0x1
-	cmp	w2, #2
-	add	x8, x8, x0
-	cinc	x0, x8, lo
+	movi	v4.4s, #2
+	movi	v5.4h, #1
+	mov	w8, #1                          // =0x1
+	cmhi	v3.4s, v4.4s, v3.4s
+	and	v2.8b, v2.8b, v5.8b
+	dup	v4.2d, x8
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	add	v0.2d, v0.2d, v5.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000200:                   // @func0000000000000200
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0x1
-	cmp	w2, #2047
-	add	x8, x8, x0
-	cinc	x0, x8, hi
+	movi	v4.4s, #7, msl #8
+	movi	v5.4h, #1
+	mov	w8, #1                          // =0x1
+	cmhi	v3.4s, v3.4s, v4.4s
+	and	v2.8b, v2.8b, v5.8b
+	dup	v4.2d, x8
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v5.16b, v5.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	uaddw	v0.2d, v0.2d, v2.2s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	add	v0.2d, v0.2d, v5.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

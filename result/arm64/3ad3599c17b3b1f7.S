@@ -2,47 +2,83 @@ func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #16585, lsl #16
-	fmov	s1, w8
+	dup	v4.4s, w8
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #16457, lsl #16
-	fmov	s2, w8
-	fadd	s1, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s1, s0, mi
+	dup	v5.4s, w8
+	fadd	v6.4s, v3.4s, v4.4s
+	fadd	v7.4s, v2.4s, v4.4s
+	fadd	v16.4s, v1.4s, v4.4s
+	fadd	v4.4s, v0.4s, v4.4s
+	fcmgt	v17.4s, v5.4s, v0.4s
+	fcmgt	v18.4s, v5.4s, v3.4s
+	fcmgt	v19.4s, v5.4s, v2.4s
+	fcmgt	v5.4s, v5.4s, v1.4s
+	bit	v0.16b, v4.16b, v17.16b
+	bit	v2.16b, v7.16b, v19.16b
+	bit	v3.16b, v6.16b, v18.16b
+	bit	v1.16b, v16.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #49353, lsl #16
-	fmov	s1, w8
+	dup	v4.4s, w8
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #16457, lsl #16
-	fmov	s2, w8
-	fadd	s1, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s1, s0, gt
+	dup	v5.4s, w8
+	fadd	v6.4s, v3.4s, v4.4s
+	fadd	v7.4s, v2.4s, v4.4s
+	fadd	v16.4s, v1.4s, v4.4s
+	fadd	v4.4s, v0.4s, v4.4s
+	fcmgt	v17.4s, v0.4s, v5.4s
+	fcmgt	v18.4s, v3.4s, v5.4s
+	fcmgt	v19.4s, v2.4s, v5.4s
+	fcmgt	v5.4s, v1.4s, v5.4s
+	bit	v0.16b, v4.16b, v17.16b
+	bit	v2.16b, v7.16b, v19.16b
+	bit	v3.16b, v6.16b, v18.16b
+	bit	v1.16b, v16.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #49353, lsl #16
-	fmov	s1, w8
+	dup	v4.4s, w8
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #16585, lsl #16
-	fmov	s2, w8
-	fadd	s1, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s1, s0, ge
+	dup	v5.4s, w8
+	fadd	v6.4s, v3.4s, v4.4s
+	fadd	v7.4s, v2.4s, v4.4s
+	fadd	v16.4s, v1.4s, v4.4s
+	fadd	v4.4s, v0.4s, v4.4s
+	fcmge	v17.4s, v0.4s, v5.4s
+	fcmge	v18.4s, v3.4s, v5.4s
+	fcmge	v19.4s, v2.4s, v5.4s
+	fcmge	v5.4s, v1.4s, v5.4s
+	bit	v0.16b, v4.16b, v17.16b
+	bit	v2.16b, v7.16b, v19.16b
+	bit	v3.16b, v6.16b, v18.16b
+	bit	v1.16b, v16.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	fmov	s1, #-0.50000000
-	fmov	s2, #0.50000000
-	fadd	s1, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s1, s0, pl
+	movi	v4.4s, #191, lsl #24
+	movi	v5.4s, #63, lsl #24
+	fadd	v6.4s, v3.4s, v4.4s
+	fadd	v7.4s, v2.4s, v4.4s
+	fadd	v16.4s, v1.4s, v4.4s
+	fadd	v4.4s, v0.4s, v4.4s
+	fcmgt	v17.4s, v5.4s, v0.4s
+	fcmgt	v18.4s, v5.4s, v3.4s
+	fcmgt	v19.4s, v5.4s, v2.4s
+	fcmgt	v5.4s, v5.4s, v1.4s
+	bif	v0.16b, v4.16b, v17.16b
+	bif	v3.16b, v6.16b, v18.16b
+	bif	v1.16b, v16.16b, v5.16b
+	bif	v2.16b, v7.16b, v19.16b
 	ret
                                         // -- End function

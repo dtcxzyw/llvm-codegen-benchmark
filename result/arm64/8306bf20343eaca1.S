@@ -1,25 +1,136 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	add	w8, w1, w1, lsl #3
-	and	w9, w0, #0xffff
-	ubfiz	w8, w8, #2, #14
-	udiv	w0, w8, w9
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8h, #36
+	umov	w9, v0.h[1]
+	umov	w10, v0.h[0]
+	umov	w11, v0.h[2]
+	umov	w12, v0.h[3]
+	umov	w13, v0.h[4]
+	umov	w14, v0.h[5]
+	mul	v2.8h, v1.8h, v2.8h
+	umov	w8, v2.h[1]
+	and	w8, w8, #0xfffc
+	udiv	w8, w8, w9
+	umov	w9, v2.h[0]
+	and	w9, w9, #0xfffc
+	udiv	w9, w9, w10
+	umov	w10, v2.h[2]
+	and	w10, w10, #0xfffc
+	udiv	w10, w10, w11
+	umov	w11, v2.h[3]
+	fmov	s1, w9
+	mov	v1.h[1], w8
+	and	w11, w11, #0xfffc
+	udiv	w11, w11, w12
+	umov	w12, v2.h[4]
+	mov	v1.h[2], w10
+	umov	w10, v0.h[6]
+	and	w12, w12, #0xfffc
+	udiv	w12, w12, w13
+	umov	w13, v2.h[5]
+	mov	v1.h[3], w11
+	umov	w11, v0.h[7]
+	and	w9, w13, #0xfffc
+	udiv	w8, w9, w14
+	umov	w9, v2.h[6]
+	mov	v1.h[4], w12
+	and	w9, w9, #0xfffc
+	udiv	w9, w9, w10
+	umov	w10, v2.h[7]
+	mov	v1.h[5], w8
+	and	w10, w10, #0xfffc
+	udiv	w8, w10, w11
+	mov	v1.h[6], w9
+	mov	v1.h[7], w8
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	lsl	w8, w1, #8
-	and	w9, w0, #0xffff
-	sub	w8, w8, w1
-	and	w8, w8, #0xffff
-	udiv	w0, w8, w9
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.2d, #0xff00ff00ff00ff
+	umov	w8, v0.h[1]
+	umov	w11, v0.h[2]
+	umov	w12, v0.h[3]
+	umov	w13, v0.h[4]
+	umov	w14, v0.h[5]
+	mul	v2.8h, v1.8h, v2.8h
+	umov	w9, v2.h[1]
+	umov	w10, v2.h[0]
+	udiv	w8, w9, w8
+	umov	w9, v0.h[0]
+	udiv	w9, w10, w9
+	umov	w10, v2.h[2]
+	udiv	w10, w10, w11
+	umov	w11, v2.h[3]
+	fmov	s1, w9
+	umov	w9, v2.h[6]
+	mov	v1.h[1], w8
+	udiv	w11, w11, w12
+	umov	w12, v2.h[4]
+	mov	v1.h[2], w10
+	umov	w10, v0.h[6]
+	udiv	w12, w12, w13
+	umov	w13, v2.h[5]
+	mov	v1.h[3], w11
+	umov	w11, v0.h[7]
+	udiv	w8, w13, w14
+	mov	v1.h[4], w12
+	udiv	w9, w9, w10
+	umov	w10, v2.h[7]
+	mov	v1.h[5], w8
+	udiv	w8, w10, w11
+	mov	v1.h[6], w9
+	mov	v1.h[7], w8
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	w8, w1, w1, lsl #2
-	and	w9, w0, #0xffff
-	ubfiz	w8, w8, #1, #15
-	udiv	w0, w8, w9
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8h, #10
+	umov	w9, v0.h[1]
+	umov	w10, v0.h[0]
+	umov	w11, v0.h[2]
+	umov	w12, v0.h[3]
+	umov	w13, v0.h[4]
+	umov	w14, v0.h[5]
+	mul	v2.8h, v1.8h, v2.8h
+	umov	w8, v2.h[1]
+	and	w8, w8, #0xfffe
+	udiv	w8, w8, w9
+	umov	w9, v2.h[0]
+	and	w9, w9, #0xfffe
+	udiv	w9, w9, w10
+	umov	w10, v2.h[2]
+	and	w10, w10, #0xfffe
+	udiv	w10, w10, w11
+	umov	w11, v2.h[3]
+	fmov	s1, w9
+	mov	v1.h[1], w8
+	and	w11, w11, #0xfffe
+	udiv	w11, w11, w12
+	umov	w12, v2.h[4]
+	mov	v1.h[2], w10
+	umov	w10, v0.h[6]
+	and	w12, w12, #0xfffe
+	udiv	w12, w12, w13
+	umov	w13, v2.h[5]
+	mov	v1.h[3], w11
+	umov	w11, v0.h[7]
+	and	w9, w13, #0xfffe
+	udiv	w8, w9, w14
+	umov	w9, v2.h[6]
+	mov	v1.h[4], w12
+	and	w9, w9, #0xfffe
+	udiv	w9, w9, w10
+	umov	w10, v2.h[7]
+	mov	v1.h[5], w8
+	and	w10, w10, #0xfffe
+	udiv	w8, w10, w11
+	mov	v1.h[6], w9
+	mov	v1.h[7], w8
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function

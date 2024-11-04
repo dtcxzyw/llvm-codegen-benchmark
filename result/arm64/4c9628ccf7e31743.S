@@ -1,8 +1,7 @@
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	sub	w8, w1, #3
-	and	w8, w8, #0xff
-	cmp	w8, w0, uxtb
-	cset	w0, eq
+	movi	v2.16b, #253
+	add	v1.16b, v1.16b, v2.16b
+	cmeq	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

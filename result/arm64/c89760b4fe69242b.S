@@ -1,19 +1,18 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsl	w8, w0, #16
-	clz	w0, w8
+	uzp1	v0.8h, v0.8h, v1.8h
+	clz	v0.8h, v0.8h
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w0, #0xffff
-	clz	w8, w8
-	sub	w0, w8, #16
+	uzp1	v0.8h, v0.8h, v1.8h
+	clz	v0.8h, v0.8h
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	lsl	w8, w0, #16
-	clz	w0, w8
+	uzp1	v0.8h, v0.8h, v1.8h
+	clz	v0.8h, v0.8h
 	ret
                                         // -- End function

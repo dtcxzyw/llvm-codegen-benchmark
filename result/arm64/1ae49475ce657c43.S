@@ -1,43 +1,65 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w9, w1, #0xffff
-	mov	w8, #17                         // =0x11
-	cmp	w9, #104
-	csel	w0, w8, w0, eq
+	movi	v3.8h, #104
+	cmeq	v2.8h, v2.8h, v3.8h
+	movi	v3.4s, #17
+	sshll	v4.4s, v2.4h, #0
+	sshll2	v2.4s, v2.8h, #0
+	bit	v1.16b, v3.16b, v2.16b
+	bit	v0.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sxth	w9, w1
-	mov	w8, #2                          // =0x2
-	cmp	w9, #2
-	csel	w0, w8, w0, lt
+	movi	v3.8h, #2
+	cmgt	v2.8h, v3.8h, v2.8h
+	movi	v3.4s, #2
+	sshll	v4.4s, v2.4h, #0
+	sshll2	v2.4s, v2.8h, #0
+	bit	v1.16b, v3.16b, v2.16b
+	bit	v0.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	tst	w1, #0xff00
-	csinc	w0, w0, wzr, eq
+	movi	v3.2d, #0xff00ff00ff00ff
+	cmhi	v2.8h, v2.8h, v3.8h
+	sshll	v3.4s, v2.4h, #0
+	sshll2	v4.4s, v2.8h, #0
+	bic	v1.16b, v1.16b, v4.16b
+	bic	v0.16b, v0.16b, v3.16b
+	ssubw2	v1.4s, v1.4s, v2.8h
+	ssubw	v0.4s, v0.4s, v2.4h
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	cmp	w8, #127
-	csinc	w0, w0, wzr, hs
+	movi	v3.8h, #127
+	cmhi	v2.8h, v3.8h, v2.8h
+	sshll	v3.4s, v2.4h, #0
+	sshll2	v4.4s, v2.8h, #0
+	bic	v1.16b, v1.16b, v4.16b
+	bic	v0.16b, v0.16b, v3.16b
+	ssubw2	v1.4s, v1.4s, v2.8h
+	ssubw	v0.4s, v0.4s, v2.4h
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	cmp	w8, #12
-	csel	w0, w0, wzr, eq
+	movi	v3.8h, #12
+	cmeq	v2.8h, v2.8h, v3.8h
+	sshll	v3.4s, v2.4h, #0
+	sshll2	v2.4s, v2.8h, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sxth	w8, w1
-	cmp	w8, #0
-	csel	w0, wzr, w0, ge
+	cmge	v2.8h, v2.8h, #0
+	sshll	v3.4s, v2.4h, #0
+	sshll2	v2.4s, v2.8h, #0
+	bic	v1.16b, v1.16b, v2.16b
+	bic	v0.16b, v0.16b, v3.16b
 	ret
                                         // -- End function

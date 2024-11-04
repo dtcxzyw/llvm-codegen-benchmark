@@ -1,19 +1,45 @@
 func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	csinc	x8, x1, xzr, eq
-	cmn	x8, x1
-	cset	w8, ne
-	orr	w8, w0, w8
-	and	w0, w8, #0x1
+	ushll	v3.4s, v3.4h, #0
+	ushll	v4.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v3.2d, v3.2d, #63
+	cmlt	v4.2d, v4.2d, #0
+	cmlt	v3.2d, v3.2d, #0
+	bic	v5.16b, v1.16b, v4.16b
+	bic	v6.16b, v2.16b, v3.16b
+	neg	v1.2d, v1.2d
+	neg	v2.2d, v2.2d
+	sub	v4.2d, v5.2d, v4.2d
+	sub	v3.2d, v6.2d, v3.2d
+	cmeq	v2.2d, v3.2d, v2.2d
+	cmeq	v1.2d, v4.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	mvn	v1.16b, v1.16b
+	xtn	v1.4h, v1.4s
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	csinc	x8, x1, xzr, eq
-	cmn	x8, x1
-	cset	w8, eq
-	bic	w0, w8, w0
+	ushll	v3.4s, v3.4h, #0
+	ushll	v4.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v3.2d, v3.2d, #63
+	cmlt	v4.2d, v4.2d, #0
+	cmlt	v3.2d, v3.2d, #0
+	bic	v5.16b, v1.16b, v4.16b
+	bic	v6.16b, v2.16b, v3.16b
+	neg	v1.2d, v1.2d
+	neg	v2.2d, v2.2d
+	sub	v4.2d, v5.2d, v4.2d
+	sub	v3.2d, v6.2d, v3.2d
+	cmeq	v2.2d, v3.2d, v2.2d
+	cmeq	v1.2d, v4.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	bic	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

@@ -1,47 +1,48 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w9, w0, #0xff
-	mov	w8, #76                         // =0x4c
-	cmp	w9, #109
-	mov	w9, #108                        // =0x6c
-	csel	w0, w9, w8, eq
+	movi	v1.16b, #109
+	movi	v2.16b, #76
+	movi	v3.16b, #108
+	cmeq	v0.16b, v0.16b, v1.16b
+	bsl	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
-	tst	w0, #0xff
-	csel	w0, w8, wzr, eq
+	movi	v1.16b, #7
+	cmeq	v0.16b, v0.16b, #0
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sxtb	w9, w0
-	mov	w8, #15                         // =0xf
-	cmp	w9, #0
-	mov	w9, #31                         // =0x1f
-	csel	w0, w9, w8, ge
+	movi	v1.16b, #15
+	movi	v2.16b, #31
+	cmge	v0.16b, v0.16b, #0
+	bsl	v0.16b, v2.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sbfx	w8, w0, #7, #1
-	and	w0, w8, #0xffffff87
+	movi	v1.16b, #135
+	cmlt	v0.16b, v0.16b, #0
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w9, w0, #0xff
-	mov	w8, #9                          // =0x9
-	cmp	w9, #9
-	csel	w0, w8, wzr, hi
+	movi	v1.16b, #9
+	cmhi	v0.16b, v0.16b, v1.16b
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w9, w0, #0xff
-	mov	w8, #1                          // =0x1
-	cmp	w9, #27
-	cinc	w0, w8, hi
+	movi	v1.16b, #27
+	movi	v2.16b, #2
+	cmhi	v0.16b, v0.16b, v1.16b
+	and	v1.16b, v0.16b, v2.16b
+	mvn	v0.16b, v0.16b
+	sub	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

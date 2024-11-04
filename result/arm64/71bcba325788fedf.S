@@ -1,11 +1,15 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	x8, #145685290680320            // =0x848000000000
-	scvtf	d2, x0
+	scvtf	v4.2d, v4.2d
+	scvtf	v5.2d, v5.2d
 	movk	x8, #16686, lsl #48
-	fmov	d3, x8
-	fdiv	d2, d2, d3
-	fadd	d1, d2, d1
-	fsub	d0, d0, d1
+	dup	v6.2d, x8
+	fdiv	v4.2d, v4.2d, v6.2d
+	fdiv	v5.2d, v5.2d, v6.2d
+	fadd	v2.2d, v4.2d, v2.2d
+	fsub	v0.2d, v0.2d, v2.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fsub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

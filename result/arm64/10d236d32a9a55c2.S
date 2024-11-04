@@ -1,10 +1,16 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ubfx	w8, w1, #20, #11
-	mov	w9, #107                        // =0x6b
-	sub	w8, w9, w8
-	mov	w9, #-1                         // =0xffffffff
-	lsl	w8, w9, w8
-	and	w0, w8, w0
+	ushr	v2.4s, v2.4s, #20
+	ushr	v3.4s, v3.4s, #20
+	movi	v4.4s, #107
+	movi	v5.2d, #0xffffffffffffffff
+	bic	v3.4s, #8, lsl #8
+	bic	v2.4s, #8, lsl #8
+	sub	v2.4s, v4.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	ushl	v3.4s, v5.4s, v3.4s
+	ushl	v2.4s, v5.4s, v2.4s
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

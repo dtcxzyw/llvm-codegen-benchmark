@@ -1,27 +1,65 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #1                          // =0x1
-	cinc	x8, x8, eq
-	add	x8, x8, x0
-	add	x0, x8, w1, uxtw
+	ushll	v3.4s, v3.4h, #0
+	mov	w8, #2                          // =0x2
+	dup	v5.2d, x8
+	ushll2	v4.2d, v3.4s, #0
+	ushll	v3.2d, v3.2s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v3.2d, v3.2d, #63
+	cmlt	v4.2d, v4.2d, #0
+	cmlt	v3.2d, v3.2d, #0
+	bic	v6.16b, v5.16b, v4.16b
+	bic	v5.16b, v5.16b, v3.16b
+	sub	v4.2d, v6.2d, v4.2d
+	sub	v3.2d, v5.2d, v3.2d
+	add	v0.2d, v3.2d, v0.2d
+	add	v1.2d, v4.2d, v1.2d
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	tst	w2, #0x1
+	ushll	v3.4s, v3.4h, #0
 	mov	w8, #9                          // =0x9
-	mov	w9, #12                         // =0xc
-	csel	x8, x9, x8, ne
-	add	x8, x8, x0
-	add	x0, x8, w1, uxtw
+	dup	v5.2d, x8
+	mov	w8, #12                         // =0xc
+	dup	v6.2d, x8
+	ushll2	v4.2d, v3.4s, #0
+	ushll	v3.2d, v3.2s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v3.2d, v3.2d, #63
+	cmlt	v4.2d, v4.2d, #0
+	cmlt	v3.2d, v3.2d, #0
+	bsl	v4.16b, v6.16b, v5.16b
+	bsl	v3.16b, v6.16b, v5.16b
+	add	v0.2d, v3.2d, v0.2d
+	add	v1.2d, v4.2d, v1.2d
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	add	x8, x0, #5
-	csinc	x8, x8, x0, ne
-	add	x0, x8, w1, uxtw
+	ushll	v3.4s, v3.4h, #0
+	mov	w8, #5                          // =0x5
+	dup	v5.2d, x8
+	ushll2	v4.2d, v3.4s, #0
+	ushll	v3.2d, v3.2s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v3.2d, v3.2d, #63
+	cmlt	v4.2d, v4.2d, #0
+	cmlt	v3.2d, v3.2d, #0
+	and	v6.16b, v4.16b, v5.16b
+	mvn	v4.16b, v4.16b
+	and	v5.16b, v3.16b, v5.16b
+	mvn	v3.16b, v3.16b
+	sub	v4.2d, v6.2d, v4.2d
+	sub	v3.2d, v5.2d, v3.2d
+	add	v1.2d, v4.2d, v1.2d
+	add	v0.2d, v3.2d, v0.2d
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function

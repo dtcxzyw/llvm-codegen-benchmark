@@ -1,12 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	eor	x8, x1, x2, ror #51
-	eor	x0, x0, x8, ror #47
+	shl	v6.2d, v4.2d, #13
+	shl	v7.2d, v5.2d, #13
+	usra	v6.2d, v4.2d, #51
+	usra	v7.2d, v5.2d, #51
+	xar	v3.2d, v7.2d, v3.2d, #47
+	xar	v2.2d, v6.2d, v2.2d, #47
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	eor	x8, x1, x2, ror #48
-	eor	x0, x0, x8, ror #43
+	shl	v6.2d, v4.2d, #16
+	shl	v7.2d, v5.2d, #16
+	usra	v6.2d, v4.2d, #48
+	usra	v7.2d, v5.2d, #48
+	xar	v3.2d, v7.2d, v3.2d, #43
+	xar	v2.2d, v6.2d, v2.2d, #43
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

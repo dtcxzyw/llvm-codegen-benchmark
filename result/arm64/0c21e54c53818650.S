@@ -1,56 +1,100 @@
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	w8, w0, #1
-	orr	x0, x8, x0, lsl #33
+	add	v0.4s, v0.4s, v0.4s
+	ushll	v1.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	fmov	x10, d0
+	fmov	x11, d1
+	mov	x8, v0.d[1]
+	mov	x9, v1.d[1]
+	lsr	x12, x10, #1
+	lsr	x13, x11, #1
+	lsr	x14, x8, #1
+	bfi	x10, x12, #33, #31
+	bfi	x11, x13, #33, #31
+	lsr	x15, x9, #1
+	bfi	x8, x14, #33, #31
+	fmov	d1, x10
+	fmov	d0, x11
+	bfi	x9, x15, #33, #31
+	mov	v1.d[1], x8
+	mov	v0.d[1], x9
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	w8, w0, #1
-	orr	x0, x8, x0, lsl #33
+	add	v0.4s, v0.4s, v0.4s
+	ushll	v1.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	fmov	x10, d0
+	fmov	x11, d1
+	mov	x8, v0.d[1]
+	mov	x9, v1.d[1]
+	lsr	x12, x10, #1
+	lsr	x13, x11, #1
+	lsr	x14, x8, #1
+	bfi	x10, x12, #33, #31
+	bfi	x11, x13, #33, #31
+	lsr	x15, x9, #1
+	bfi	x8, x14, #33, #31
+	fmov	d1, x10
+	fmov	d0, x11
+	bfi	x9, x15, #33, #31
+	mov	v1.d[1], x8
+	mov	v0.d[1], x9
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	lsl	w8, w0, #2
-	mov	w9, #36                         // =0x24
-	umull	x0, w8, w9
+	movi	v1.4s, #36
+	movi	v2.2s, #36
+	shl	v0.4s, v0.4s, #2
+	umull2	v1.2d, v0.4s, v1.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	lsl	w8, w0, #1
-	mov	w9, #24                         // =0x18
-	umull	x0, w8, w9
+	movi	v1.4s, #24
+	movi	v2.2s, #24
+	add	v0.4s, v0.4s, v0.4s
+	umull2	v1.2d, v0.4s, v1.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	lsl	w8, w0, #2
-	mov	w9, #24                         // =0x18
-	umull	x0, w8, w9
+	movi	v1.4s, #24
+	movi	v2.2s, #24
+	shl	v0.4s, v0.4s, #2
+	umull2	v1.2d, v0.4s, v1.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsl	w8, w0, #1
-	mov	x9, #0                          // =0x0
-	sub	x0, x9, w8, uxtw #3
+	add	v0.4s, v0.4s, v0.4s
+	ushll2	v1.2d, v0.4s, #3
+	ushll	v0.2d, v0.2s, #3
+	neg	v1.2d, v1.2d
+	neg	v0.2d, v0.2d
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	lsl	w8, w0, #1
-	mov	w9, #12                         // =0xc
-	umull	x0, w8, w9
+	movi	v1.4s, #12
+	movi	v2.2s, #12
+	add	v0.4s, v0.4s, v0.4s
+	umull2	v1.2d, v0.4s, v1.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	lsl	w8, w0, #1
-	mov	w9, #40                         // =0x28
-	umull	x0, w8, w9
+	movi	v1.4s, #40
+	movi	v2.2s, #40
+	add	v0.4s, v0.4s, v0.4s
+	umull2	v1.2d, v0.4s, v1.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function

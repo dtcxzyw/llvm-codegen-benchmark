@@ -1,22 +1,40 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	clz	w8, w0
-	eor	w8, w8, #0x1f
-	add	w0, w8, w8, lsl #3
+	movi	v2.4s, #31
+	clz	v0.4s, v0.4s
+	clz	v1.4s, v1.4s
+	eor	v1.16b, v1.16b, v2.16b
+	eor	v0.16b, v0.16b, v2.16b
+	movi	v2.4h, #9
+	xtn	v1.4h, v1.4s
+	xtn	v0.4h, v0.4s
+	umull	v0.4s, v0.4h, v2.4h
+	umull	v1.4s, v1.4h, v2.4h
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	clz	w8, w0
-	eor	w8, w8, #0x1f
-	add	w0, w8, w8, lsl #3
+	movi	v2.4s, #31
+	clz	v0.4s, v0.4s
+	clz	v1.4s, v1.4s
+	eor	v1.16b, v1.16b, v2.16b
+	eor	v0.16b, v0.16b, v2.16b
+	movi	v2.4h, #9
+	xtn	v1.4h, v1.4s
+	xtn	v0.4h, v0.4s
+	umull	v0.4s, v0.4h, v2.4h
+	umull	v1.4s, v1.4h, v2.4h
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	clz	w8, w0
-	eor	w8, w8, #0x1f
-	lsl	w9, w8, #1
-	sub	w0, w9, w8, lsl #5
+	movi	v2.4s, #31
+	clz	v0.4s, v0.4s
+	clz	v1.4s, v1.4s
+	eor	v1.16b, v1.16b, v2.16b
+	eor	v0.16b, v0.16b, v2.16b
+	mvni	v2.4s, #29
+	mul	v0.4s, v0.4s, v2.4s
+	mul	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

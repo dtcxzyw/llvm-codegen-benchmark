@@ -1,47 +1,70 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	lsr	x8, x1, #28
-	mov	w9, w0
-	and	x8, x8, #0x2
-	orr	x0, x8, x9, lsl #3
+	mov	w8, #2                          // =0x2
+	ushr	v2.2d, v2.2d, #28
+	ushr	v1.2d, v1.2d, #28
+	dup	v3.2d, x8
+	and	v2.16b, v2.16b, v3.16b
+	and	v1.16b, v1.16b, v3.16b
+	ushll2	v3.2d, v0.4s, #3
+	ushll	v0.2d, v0.2s, #3
+	orr	v0.16b, v0.16b, v1.16b
+	orr	v1.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ubfx	x8, x1, #1, #1
-                                        // kill: def $w0 killed $w0 def $x0
-	orr	x0, x8, x0, lsl #32
+	mov	w8, #1                          // =0x1
+	ushr	v2.2d, v2.2d, #1
+	ushr	v1.2d, v1.2d, #1
+	dup	v3.2d, x8
+	and	v2.16b, v2.16b, v3.16b
+	and	v1.16b, v1.16b, v3.16b
+	shll2	v3.2d, v0.4s, #32
+	shll	v0.2d, v0.2s, #32
+	orr	v0.16b, v0.16b, v1.16b
+	orr	v1.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x1, #32
-	bfxil	x8, x0, #3, #32
-	mov	x0, x8
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	ushr	v0.2d, v0.2d, #3
+	ushr	v1.2d, v1.2d, #3
+	sli	v0.2d, v3.2d, #32
+	sli	v1.2d, v2.2d, #32
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x1, #32
-	bfxil	x8, x0, #5, #32
-	mov	x0, x8
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	ushr	v0.2d, v0.2d, #5
+	ushr	v1.2d, v1.2d, #5
+	sli	v0.2d, v3.2d, #32
+	sli	v1.2d, v2.2d, #32
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	lsr	x8, x1, #2
-                                        // kill: def $w0 killed $w0 def $x0
-	bfi	x8, x0, #32, #32
-	mov	x0, x8
+	ushr	v3.2d, v1.2d, #2
+	ushr	v1.2d, v2.2d, #2
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	sli	v3.2d, v2.2d, #32
+	sli	v1.2d, v0.2d, #32
+	mov	v0.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	lsr	x8, x1, #11
-                                        // kill: def $w0 killed $w0 def $x0
-	bfi	x8, x0, #52, #12
-	mov	x0, x8
+	ushr	v3.2d, v1.2d, #11
+	ushr	v1.2d, v2.2d, #11
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	sli	v3.2d, v2.2d, #52
+	sli	v1.2d, v0.2d, #52
+	mov	v0.16b, v3.16b
 	ret
                                         // -- End function

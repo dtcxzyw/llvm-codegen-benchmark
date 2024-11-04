@@ -1,13 +1,19 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	x8, x0, #0xffffff
-	rev	x0, x8
+	movi	v2.2d, #0x00000000ffffff
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	rev64	v0.16b, v0.16b
+	rev64	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	x8, x0, #0xffffffff
-	and	x8, x8, #0xffffffffffffffcf
-	rev	x0, x8
+	mov	w8, #-49                        // =0xffffffcf
+	dup	v2.2d, x8
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	rev64	v0.16b, v0.16b
+	rev64	v1.16b, v1.16b
 	ret
                                         // -- End function

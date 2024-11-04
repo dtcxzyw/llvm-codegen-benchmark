@@ -1,14 +1,20 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	rev	w8, w1
-	rev	w9, w0
-	add	w0, w9, w8
+	rev32	v3.16b, v3.16b
+	rev32	v2.16b, v2.16b
+	rev32	v1.16b, v1.16b
+	rev32	v0.16b, v0.16b
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	rev	w8, w1
-	rev	w9, w0
-	add	w0, w9, w8
+	rev32	v3.16b, v3.16b
+	rev32	v2.16b, v2.16b
+	rev32	v1.16b, v1.16b
+	rev32	v0.16b, v0.16b
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function

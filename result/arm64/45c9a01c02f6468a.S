@@ -1,6 +1,8 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	add	w0, w0, #8
+	movi	v2.4s, #8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000002c:                   // @func000000000000002c
@@ -9,6 +11,8 @@ func000000000000002c:                   // @func000000000000002c
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	sub	w0, w0, #2
+	mvni	v2.4s, #1
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

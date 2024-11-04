@@ -1,19 +1,22 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	neg	w8, w1
-	add	w0, w0, w8, sxth
+	neg	v2.8h, v2.8h
+	saddw2	v1.4s, v1.4s, v2.8h
+	saddw	v0.4s, v0.4s, v2.4h
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	sub	w8, w8, w1
-	add	w0, w0, w8, sxth
+	movi	v3.8h, #2
+	sub	v2.8h, v3.8h, v2.8h
+	saddw2	v1.4s, v1.4s, v2.8h
+	saddw	v0.4s, v0.4s, v2.4h
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	neg	w8, w1
-	add	w0, w0, w8, sxth
+	neg	v2.8h, v2.8h
+	saddw2	v1.4s, v1.4s, v2.8h
+	saddw	v0.4s, v0.4s, v2.4h
 	ret
                                         // -- End function

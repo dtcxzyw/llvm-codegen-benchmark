@@ -1,10 +1,10 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	cmp	w0, #0
-	cneg	w9, w0, mi
-	cmp	w9, w8
-	csel	w0, w9, w8, lo
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	abs	v1.4s, v1.4s
+	abs	v0.4s, v0.4s
+	umin	v1.4s, v1.4s, v3.4s
+	umin	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function

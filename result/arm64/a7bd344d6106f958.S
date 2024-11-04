@@ -1,32 +1,36 @@
 func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	lsl	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, lt
+	movi	v3.4s, #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushl	v1.4s, v3.4s, v1.4s
+	cmgt	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func00000000000000c6:                   // @func00000000000000c6
 // %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
-	lsl	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, lt
+	movi	v3.4s, #4
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushl	v1.4s, v3.4s, v1.4s
+	cmgt	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	lsl	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, lo
+	movi	v3.4s, #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushl	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	lsl	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, lo
+	movi	v3.4s, #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushl	v1.4s, v3.4s, v1.4s
+	cmhi	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

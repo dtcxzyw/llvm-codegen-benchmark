@@ -1,36 +1,60 @@
 func00000000000000cf:                   // @func00000000000000cf
 // %bb.0:                               // %entry
-	add	x8, x0, x1, lsr #3
-	add	x9, x2, #256, lsl #12           // =1048576
-	add	x0, x8, x9, lsr #21
+	mov	w8, #1048576                    // =0x100000
+	usra	v1.2d, v3.2d, #3
+	usra	v0.2d, v2.2d, #3
+	dup	v6.2d, x8
+	add	v5.2d, v5.2d, v6.2d
+	add	v4.2d, v4.2d, v6.2d
+	usra	v0.2d, v4.2d, #21
+	usra	v1.2d, v5.2d, #21
 	ret
                                         // -- End function
 func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
-	mov	w8, #-2147483648                // =0x80000000
-	add	x9, x0, x1, lsr #32
-	add	x8, x2, x8
-	add	x0, x9, x8, lsr #32
+	movi	v6.4s, #128, lsl #24
+	usra	v1.2d, v3.2d, #32
+	usra	v0.2d, v2.2d, #32
+	fneg	v6.2d, v6.2d
+	add	v5.2d, v5.2d, v6.2d
+	add	v4.2d, v4.2d, v6.2d
+	usra	v0.2d, v4.2d, #32
+	usra	v1.2d, v5.2d, #32
 	ret
                                         // -- End function
 func00000000000000c0:                   // @func00000000000000c0
 // %bb.0:                               // %entry
-	add	x8, x0, x1, lsr #6
-	add	x9, x2, #73
-	add	x0, x8, x9, lsr #6
+	mov	w8, #73                         // =0x49
+	usra	v1.2d, v3.2d, #6
+	usra	v0.2d, v2.2d, #6
+	dup	v6.2d, x8
+	add	v5.2d, v5.2d, v6.2d
+	add	v4.2d, v4.2d, v6.2d
+	usra	v0.2d, v4.2d, #6
+	usra	v1.2d, v5.2d, #6
 	ret
                                         // -- End function
 func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
-	add	x8, x0, x2, lsr #44
-	add	x9, x1, #5
-	add	x0, x8, x9, lsr #44
+	mov	w8, #5                          // =0x5
+	usra	v1.2d, v5.2d, #44
+	usra	v0.2d, v4.2d, #44
+	dup	v6.2d, x8
+	add	v3.2d, v3.2d, v6.2d
+	add	v2.2d, v2.2d, v6.2d
+	usra	v0.2d, v2.2d, #44
+	usra	v1.2d, v3.2d, #44
 	ret
                                         // -- End function
 func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
-	add	x8, x0, x1, lsr #3
-	add	x9, x2, #63
-	add	x0, x8, x9, lsr #6
+	mov	w8, #63                         // =0x3f
+	usra	v1.2d, v3.2d, #3
+	usra	v0.2d, v2.2d, #3
+	dup	v6.2d, x8
+	add	v5.2d, v5.2d, v6.2d
+	add	v4.2d, v4.2d, v6.2d
+	usra	v0.2d, v4.2d, #6
+	usra	v1.2d, v5.2d, #6
 	ret
                                         // -- End function

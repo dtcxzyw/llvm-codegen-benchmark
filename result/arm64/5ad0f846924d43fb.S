@@ -1,28 +1,46 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #65279                      // =0xfeff
-	mov	w10, #32896                     // =0x8080
-	add	w8, w8, w0
-	movk	w9, #65278, lsl #16
-	movk	w10, #128, lsl #16
-	madd	w8, w8, w9, w10
-	mov	w9, #16843009                   // =0x1010101
-	cmp	w8, w9
-	cset	w0, lo
+	movi	v6.16b, #128
+	sub	v2.4s, v2.4s, v4.4s
+	mov	w8, #65279                      // =0xfeff
+	sub	v3.4s, v3.4s, v5.4s
+	movk	w8, #65278, lsl #16
+	add	v0.4s, v2.4s, v0.4s
+	dup	v2.4s, w8
+	mov	w8, #256                        // =0x100
+	fneg	v4.4s, v6.4s
+	add	v1.4s, v3.4s, v1.4s
+	movk	w8, #257, lsl #16
+	mov	v3.16b, v4.16b
+	mla	v4.4s, v0.4s, v2.4s
+	dup	v0.4s, w8
+	mla	v3.4s, v1.4s, v2.4s
+	cmhs	v1.4s, v0.4s, v3.4s
+	cmhs	v0.4s, v0.4s, v4.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	mov	w9, #43691                      // =0xaaab
-	mov	w10, #43690                     // =0xaaaa
-	add	w8, w8, w0
-	movk	w9, #43690, lsl #16
-	movk	w10, #10922, lsl #16
-	madd	w8, w8, w9, w10
-	mov	w9, #1431655765                 // =0x55555555
-	cmp	w8, w9
-	cset	w0, lo
+	movi	v6.16b, #170
+	sub	v2.4s, v2.4s, v4.4s
+	mov	w8, #43691                      // =0xaaab
+	sub	v3.4s, v3.4s, v5.4s
+	movk	w8, #43690, lsl #16
+	add	v0.4s, v2.4s, v0.4s
+	dup	v2.4s, w8
+	mov	w8, #21844                      // =0x5554
+	fneg	v4.4s, v6.4s
+	add	v1.4s, v3.4s, v1.4s
+	movk	w8, #21845, lsl #16
+	mov	v3.16b, v4.16b
+	mla	v4.4s, v0.4s, v2.4s
+	dup	v0.4s, w8
+	mla	v3.4s, v1.4s, v2.4s
+	cmhs	v1.4s, v0.4s, v3.4s
+	cmhs	v0.4s, v0.4s, v4.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

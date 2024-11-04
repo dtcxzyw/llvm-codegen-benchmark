@@ -1,18 +1,33 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	x2, #8
 	mov	w8, #8                          // =0x8
-	add	x9, x1, x0
-	csel	x8, x2, x8, gt
-	add	x8, x9, x8
-	sub	x0, x8, #1
+	movi	v17.2d, #0xffffffffffffffff
+	add	v1.2d, v3.2d, v1.2d
+	dup	v6.2d, x8
+	add	v0.2d, v2.2d, v0.2d
+	cmgt	v7.2d, v5.2d, v6.2d
+	cmgt	v16.2d, v4.2d, v6.2d
+	add	v0.2d, v0.2d, v17.2d
+	add	v1.2d, v1.2d, v17.2d
+	mov	v2.16b, v7.16b
+	mov	v3.16b, v16.16b
+	bsl	v2.16b, v5.16b, v6.16b
+	bsl	v3.16b, v4.16b, v6.16b
+	add	v0.2d, v0.2d, v3.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	bic	x8, x2, x2, asr #63
-	add	x9, x1, x0
-	add	x8, x9, x8
-	add	x0, x8, #1
+	cmgt	v6.2d, v4.2d, #0
+	cmgt	v7.2d, v5.2d, #0
+	and	v4.16b, v4.16b, v6.16b
+	and	v5.16b, v5.16b, v7.16b
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	mvn	v2.16b, v2.16b
+	mvn	v3.16b, v3.16b
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

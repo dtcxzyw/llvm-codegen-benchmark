@@ -1,16 +1,24 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	asr	x8, x0, #3
-	fmov	s1, #1.00000000
-	ucvtf	s0, x8
-	fdiv	s0, s1, s0
+	sshr	v0.2d, v0.2d, #3
+	sshr	v1.2d, v1.2d, #3
+	fmov	v2.4s, #1.00000000
+	ucvtf	v0.2d, v0.2d
+	ucvtf	v1.2d, v1.2d
+	fcvtn	v0.2s, v0.2d
+	fcvtn2	v0.4s, v1.2d
+	fdiv	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	asr	x8, x0, #4
-	fmov	s1, #4.00000000
-	ucvtf	s0, x8
-	fdiv	s0, s1, s0
+	sshr	v0.2d, v0.2d, #4
+	sshr	v1.2d, v1.2d, #4
+	fmov	v2.4s, #4.00000000
+	ucvtf	v0.2d, v0.2d
+	ucvtf	v1.2d, v1.2d
+	fcvtn	v0.2s, v0.2d
+	fcvtn2	v0.4s, v1.2d
+	fdiv	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

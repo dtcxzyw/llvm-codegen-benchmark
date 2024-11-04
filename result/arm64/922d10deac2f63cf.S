@@ -1,39 +1,70 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
-	mov	w8, #2139095040                 // =0x7f800000
-	fsub	s1, s2, s1
-	fmov	s2, w8
-	fcmp	s1, s2
-	fcsel	s0, s2, s0, eq
+	fmov	v16.4s, #1.00000000
+	mvni	v17.4s, #127, msl #16
+	fneg	v17.4s, v17.4s
+	fsub	v4.4s, v16.4s, v4.4s
+	fsub	v5.4s, v16.4s, v5.4s
+	fsub	v6.4s, v16.4s, v6.4s
+	fsub	v7.4s, v16.4s, v7.4s
+	fcmeq	v4.4s, v4.4s, v17.4s
+	fcmeq	v6.4s, v6.4s, v17.4s
+	fcmeq	v5.4s, v5.4s, v17.4s
+	fcmeq	v7.4s, v7.4s, v17.4s
+	bit	v0.16b, v17.16b, v4.16b
+	bit	v1.16b, v17.16b, v5.16b
+	bit	v2.16b, v17.16b, v6.16b
+	bit	v3.16b, v17.16b, v7.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
-	mov	w8, #-1                         // =0xffffffff
-	fcmp	s1, s2
-	fmov	s1, w8
-	fcsel	s0, s1, s0, hi
+	fmov	v16.4s, #1.00000000
+	fcmge	v4.4s, v16.4s, v4.4s
+	fcmge	v7.4s, v16.4s, v7.4s
+	fcmge	v6.4s, v16.4s, v6.4s
+	fcmge	v5.4s, v16.4s, v5.4s
+	orn	v0.16b, v0.16b, v4.16b
+	orn	v2.16b, v2.16b, v6.16b
+	orn	v3.16b, v3.16b, v7.16b
+	orn	v1.16b, v1.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	s2, #0.50000000
-	fsub	s1, s2, s1
-	fmov	s2, #1.00000000
-	fcmp	s1, s2
-	fcsel	s0, s2, s0, gt
+	movi	v16.4s, #63, lsl #24
+	fmov	v17.4s, #1.00000000
+	fsub	v4.4s, v16.4s, v4.4s
+	fsub	v5.4s, v16.4s, v5.4s
+	fsub	v6.4s, v16.4s, v6.4s
+	fsub	v7.4s, v16.4s, v7.4s
+	fcmgt	v4.4s, v4.4s, v17.4s
+	fcmgt	v6.4s, v6.4s, v17.4s
+	fcmgt	v5.4s, v5.4s, v17.4s
+	fcmgt	v7.4s, v7.4s, v17.4s
+	bit	v0.16b, v17.16b, v4.16b
+	bit	v1.16b, v17.16b, v5.16b
+	bit	v2.16b, v17.16b, v6.16b
+	bit	v3.16b, v17.16b, v7.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
+	fmov	v16.4s, #1.00000000
 	mov	w8, #46871                      // =0xb717
 	movk	w8, #14545, lsl #16
-	fsub	s1, s2, s1
-	fmov	s2, w8
-	fcmp	s1, s2
-	fcsel	s0, s2, s0, mi
+	fsub	v4.4s, v16.4s, v4.4s
+	fsub	v5.4s, v16.4s, v5.4s
+	fsub	v6.4s, v16.4s, v6.4s
+	fsub	v7.4s, v16.4s, v7.4s
+	dup	v16.4s, w8
+	fcmgt	v4.4s, v16.4s, v4.4s
+	fcmgt	v6.4s, v16.4s, v6.4s
+	fcmgt	v5.4s, v16.4s, v5.4s
+	fcmgt	v7.4s, v16.4s, v7.4s
+	bit	v0.16b, v16.16b, v4.16b
+	bit	v1.16b, v16.16b, v5.16b
+	bit	v2.16b, v16.16b, v6.16b
+	bit	v3.16b, v16.16b, v7.16b
 	ret
                                         // -- End function

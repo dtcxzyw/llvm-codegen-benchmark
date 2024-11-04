@@ -1,33 +1,64 @@
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	subs	w9, w1, #53
+	movi	v4.4s, #53
+	movi	v5.4s, #26
 	mov	w8, #19419                      // =0x4bdb
-	csel	w9, wzr, w9, lo
 	movk	w8, #12136, lsl #16
-	add	w9, w9, #26
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w10, w9, w8
-	add	w8, w8, w10, lsr #1
-	mov	w10, #27                        // =0x1b
-	lsr	w8, w8, #4
-	msub	w8, w8, w10, w9
-	sub	w8, w8, w9
-	add	w0, w8, w0
+	uqsub	v2.4s, v2.4s, v4.4s
+	uqsub	v3.4s, v3.4s, v4.4s
+	dup	v4.4s, w8
+	add	v2.4s, v2.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	umull2	v5.2d, v2.4s, v4.4s
+	umull	v6.2d, v2.2s, v4.2s
+	umull2	v7.2d, v3.4s, v4.4s
+	umull	v4.2d, v3.2s, v4.2s
+	mov	v16.16b, v3.16b
+	uzp2	v5.4s, v6.4s, v5.4s
+	uzp2	v4.4s, v4.4s, v7.4s
+	sub	v6.4s, v2.4s, v5.4s
+	sub	v7.4s, v3.4s, v4.4s
+	usra	v5.4s, v6.4s, #1
+	movi	v6.4s, #27
+	usra	v4.4s, v7.4s, #1
+	mov	v7.16b, v2.16b
+	ushr	v5.4s, v5.4s, #4
+	ushr	v4.4s, v4.4s, #4
+	mls	v7.4s, v5.4s, v6.4s
+	mls	v16.4s, v4.4s, v6.4s
+	sub	v2.4s, v7.4s, v2.4s
+	sub	v3.4s, v16.4s, v3.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	subs	w9, w1, #25
+	movi	v4.4s, #25
+	movi	v5.4s, #12
 	mov	w8, #60495                      // =0xec4f
-	mov	w10, #13                        // =0xd
-	csel	w9, wzr, w9, lo
 	movk	w8, #20164, lsl #16
-	add	w9, w9, #12
-	umull	x8, w9, w8
-	lsr	x8, x8, #34
-	msub	w8, w8, w10, w9
-	sub	w8, w8, w9
-	add	w0, w8, w0
+	uqsub	v2.4s, v2.4s, v4.4s
+	uqsub	v3.4s, v3.4s, v4.4s
+	dup	v4.4s, w8
+	add	v2.4s, v2.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	umull2	v5.2d, v2.4s, v4.4s
+	umull	v6.2d, v2.2s, v4.2s
+	umull2	v7.2d, v3.4s, v4.4s
+	umull	v4.2d, v3.2s, v4.2s
+	mov	v16.16b, v3.16b
+	uzp2	v5.4s, v6.4s, v5.4s
+	movi	v6.4s, #13
+	uzp2	v4.4s, v4.4s, v7.4s
+	mov	v7.16b, v2.16b
+	ushr	v5.4s, v5.4s, #2
+	ushr	v4.4s, v4.4s, #2
+	mls	v7.4s, v5.4s, v6.4s
+	mls	v16.4s, v4.4s, v6.4s
+	sub	v2.4s, v7.4s, v2.4s
+	sub	v3.4s, v16.4s, v3.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

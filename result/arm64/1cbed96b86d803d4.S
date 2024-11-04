@@ -1,48 +1,64 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	sub	w8, w0, #48
-	orr	w0, w8, w1, lsl #3
+	movi	v2.16b, #208
+	shl	v1.16b, v1.16b, #3
+	add	v0.16b, v0.16b, v2.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w0, #48
-	orr	w0, w8, w1, lsl #3
+	movi	v2.16b, #208
+	shl	v1.16b, v1.16b, #3
+	add	v0.16b, v0.16b, v2.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w1, w0, lsl #4
-	sub	w0, w8, #48
+	shl	v0.16b, v0.16b, #4
+	movi	v2.16b, #208
+	add	v0.16b, v1.16b, v0.16b
+	add	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #4
-	add	w0, w8, #8
+	shl	v1.16b, v1.16b, #4
+	movi	v2.16b, #8
+	add	v0.16b, v0.16b, v1.16b
+	add	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #3
-	sub	w0, w8, #48
+	shl	v1.16b, v1.16b, #3
+	movi	v2.16b, #208
+	add	v0.16b, v0.16b, v1.16b
+	add	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #3
-	sub	w0, w8, #48
+	shl	v1.16b, v1.16b, #3
+	movi	v2.16b, #208
+	add	v0.16b, v0.16b, v1.16b
+	add	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #4
-	sub	w0, w8, #65
+	shl	v1.16b, v1.16b, #4
+	movi	v2.16b, #191
+	add	v0.16b, v0.16b, v1.16b
+	add	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	w8, w1, #48
-	orr	w0, w8, w0, lsl #3
+	movi	v2.16b, #208
+	shl	v0.16b, v0.16b, #3
+	add	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

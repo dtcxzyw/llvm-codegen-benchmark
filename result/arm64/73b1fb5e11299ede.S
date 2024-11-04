@@ -1,16 +1,22 @@
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmp	x1, #2
-	cset	w8, eq
-	bic	w8, w8, w2
-	and	w0, w8, w0
+	mov	w8, #2                          // =0x2
+	dup	v4.2d, x8
+	cmeq	v2.2d, v2.2d, v4.2d
+	cmeq	v1.2d, v1.2d, v4.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	bic	v1.8b, v1.8b, v3.8b
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmp	x1, #0
-	cset	w8, eq
-	bic	w8, w8, w2
-	and	w0, w8, w0
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	bic	v1.8b, v1.8b, v3.8b
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

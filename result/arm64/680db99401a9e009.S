@@ -1,47 +1,57 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	x2, #0
-	cset	w8, eq
-	bic	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	bic	v1.8b, v2.8b, v1.8b
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	cmp	x2, #0
-	cset	w8, ne
-	bic	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	mvn	v2.16b, v2.16b
+	xtn	v2.4h, v2.4s
+	bic	v1.8b, v2.8b, v1.8b
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	lsr	x8, x2, #61
-	cmp	x8, #0
-	cset	w8, ne
-	bic	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
+	dup	v4.2d, x8
+	cmhi	v3.2d, v3.2d, v4.2d
+	cmhi	v2.2d, v2.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	bic	v1.8b, v2.8b, v1.8b
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	cmp	x2, #3
-	orr	w9, w1, w0
-	cset	w8, lo
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	mov	w8, #3                          // =0x3
+	orr	v0.8b, v1.8b, v0.8b
+	dup	v4.2d, x8
+	cmhi	v3.2d, v4.2d, v3.2d
+	cmhi	v2.2d, v4.2d, v2.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	mov	x8, #2305843009213693952        // =0x2000000000000000
-	cmp	x2, x8
-	cset	w8, lt
-	bic	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	dup	v4.2d, x8
+	cmgt	v3.2d, v4.2d, v3.2d
+	cmgt	v2.2d, v4.2d, v2.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	bic	v1.8b, v2.8b, v1.8b
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

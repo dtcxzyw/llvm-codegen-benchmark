@@ -1,13 +1,35 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ubfiz	x8, x0, #8, #8
-	mov	x9, #16913                      // =0x4211
-	movk	x9, #8456, lsl #16
-	add	x8, x8, x0, lsr #8
-	movk	x9, #4228, lsl #32
-	movk	x9, #2114, lsl #48
-	umulh	x9, x8, x9
-	sub	x9, x9, x9, lsl #5
-	add	x0, x8, x9
+	movi	v2.2d, #0x0000000000ff00
+	shl	v3.2d, v0.2d, #8
+	mov	x8, #16913                      // =0x4211
+	shl	v4.2d, v1.2d, #8
+	movk	x8, #8456, lsl #16
+	movk	x8, #4228, lsl #32
+	movk	x8, #2114, lsl #48
+	and	v3.16b, v3.16b, v2.16b
+	and	v2.16b, v4.16b, v2.16b
+	usra	v3.2d, v0.2d, #8
+	usra	v2.2d, v1.2d, #8
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v3.d[1]
+	mov	x13, v2.d[1]
+	umulh	x11, x9, x8
+	umulh	x14, x12, x8
+	umulh	x15, x10, x8
+	sub	x11, x11, x11, lsl #5
+	umulh	x8, x13, x8
+	sub	x14, x14, x14, lsl #5
+	add	x9, x9, x11
+	fmov	d0, x9
+	add	x11, x12, x14
+	sub	x15, x15, x15, lsl #5
+	fmov	d1, x11
+	sub	x8, x8, x8, lsl #5
+	add	x10, x10, x15
+	mov	v0.d[1], x10
+	add	x8, x13, x8
+	mov	v1.d[1], x8
 	ret
                                         // -- End function

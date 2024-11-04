@@ -1,32 +1,34 @@
 func0000000000000140:                   // @func0000000000000140
 // %bb.0:                               // %entry
-	sxtb	w9, w1
-	mov	w8, #96                         // =0x60
-	cmp	w9, #96
-	mov	w9, #9                          // =0x9
-	csel	w8, w9, w8, gt
-	add	w8, w8, w1
-	orr	w0, w0, w8, lsl #4
+	movi	v2.16b, #96
+	movi	v3.16b, #9
+	cmgt	v4.16b, v1.16b, v2.16b
+	bit	v2.16b, v3.16b, v4.16b
+	add	v1.16b, v2.16b, v1.16b
+	shl	v1.16b, v1.16b, #4
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000145:                   // @func0000000000000145
 // %bb.0:                               // %entry
-	sxtb	w9, w1
-	mov	w8, #-48                        // =0xffffffd0
-	cmp	w9, #64
-	mov	w9, #-55                        // =0xffffffc9
-	csel	w8, w9, w8, gt
-	add	w8, w8, w1
-	orr	w0, w0, w8, lsl #4
+	movi	v2.16b, #64
+	movi	v3.16b, #208
+	movi	v4.16b, #201
+	cmgt	v2.16b, v1.16b, v2.16b
+	bsl	v2.16b, v4.16b, v3.16b
+	add	v1.16b, v2.16b, v1.16b
+	shl	v1.16b, v1.16b, #4
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000080:                   // @func0000000000000080
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #9                          // =0x9
-	cmp	w9, #58
-	csel	w8, wzr, w8, lo
-	add	w8, w8, w1
-	orr	w0, w0, w8, lsl #4
+	movi	v2.16b, #58
+	movi	v3.16b, #9
+	cmhi	v2.16b, v2.16b, v1.16b
+	bic	v2.16b, v3.16b, v2.16b
+	add	v1.16b, v2.16b, v1.16b
+	shl	v1.16b, v1.16b, #4
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

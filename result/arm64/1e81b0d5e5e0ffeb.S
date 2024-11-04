@@ -1,15 +1,17 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	orr	w8, w0, w1, lsr #1
-	and	w0, w8, #0x1
+	movi	v2.16b, #2
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.16b, v1.16b, #0
+	orn	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	w8, w1, #0xe
-	cmp	w8, #6
-	cset	w8, eq
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v2.16b, #14
+	movi	v3.16b, #6
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

@@ -1,24 +1,34 @@
-.LCPI0_0:
-	.xword	0x3fe999999999999a              // double 0.80000000000000004
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	mov	w9, #16384                      // =0x4000
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fmul	d0, d0, d1
-	fcvtzu	x8, d0
-	cmp	x8, #4, lsl #12                 // =16384
-	csel	x0, x8, x9, hi
+	mov	x8, #-7378697629483820647       // =0x9999999999999999
+	movk	x8, #39322
+	movk	x8, #16361, lsl #48
+	dup	v2.2d, x8
+	mov	w8, #16384                      // =0x4000
+	fmul	v0.2d, v0.2d, v2.2d
+	fmul	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
+	fcvtzu	v1.2d, v1.2d
+	fcvtzu	v0.2d, v0.2d
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	x8, #4584664420663164928        // =0x3fa0000000000000
-	mov	w9, #2097152                    // =0x200000
-	fmov	d1, x8
-	fmul	d0, d0, d1
-	fcvtzu	x8, d0
-	cmp	x8, #512, lsl #12               // =2097152
-	csel	x0, x8, x9, hi
+	dup	v2.2d, x8
+	mov	w8, #2097152                    // =0x200000
+	fmul	v0.2d, v0.2d, v2.2d
+	fmul	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
+	fcvtzu	v1.2d, v1.2d
+	fcvtzu	v0.2d, v0.2d
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

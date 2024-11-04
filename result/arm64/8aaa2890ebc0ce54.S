@@ -1,15 +1,22 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
-	csel	w8, w0, w1, eq
-	add	w0, w8, #1
+	cmeq	v2.4h, v2.4h, #0
+	sshll	v2.4s, v2.4h, #0
+	bif	v0.16b, v1.16b, v2.16b
+	movi	v1.4s, #1
+	add	v0.4s, v0.4s, v1.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000033:                   // @func0000000000000033
 // %bb.0:                               // %entry
-	sxth	w8, w2
-	cmp	w8, #0
-	csel	w8, w0, w1, lt
-	sub	w0, w8, #1
+	cmlt	v2.4h, v2.4h, #0
+	sshll	v2.4s, v2.4h, #0
+	bif	v0.16b, v1.16b, v2.16b
+	movi	v1.2d, #0xffffffffffffffff
+	add	v0.4s, v0.4s, v1.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

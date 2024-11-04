@@ -1,35 +1,47 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	x2, #0
-	csel	w8, w1, wzr, eq
-	orr	w0, w8, w0
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	and	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmp	x2, #0
-	csel	w8, w1, wzr, eq
-	orr	w0, w8, w0
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	and	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	cmp	x2, #0
-	csel	w8, wzr, w1, eq
-	orr	w0, w8, w0
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	bic	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	cmp	x2, #1
-	csel	w8, w1, wzr, hi
-	orr	w0, w8, w0
+	mov	w8, #1                          // =0x1
+	dup	v4.2d, x8
+	cmhi	v3.2d, v3.2d, v4.2d
+	cmhi	v2.2d, v2.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	and	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	asr	x8, x2, #63
-	and	w8, w8, w1
-	orr	w0, w8, w0
+	cmlt	v3.2d, v3.2d, #0
+	cmlt	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	and	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

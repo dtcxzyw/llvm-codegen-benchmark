@@ -1,9 +1,17 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	rbit	w8, w1
-	clz	w8, w8
-	add	x8, x8, x0
-	mvn	x8, x8
-	lsl	x0, x8, #5
+	movi	v3.4h, #1
+	sub	v3.4h, v2.4h, v3.4h
+	bic	v2.8b, v3.8b, v2.8b
+	movi	v3.4h, #16
+	clz	v2.4h, v2.4h
+	sub	v2.4h, v3.4h, v2.4h
+	ushll	v2.4s, v2.4h, #0
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	shl	v1.2d, v1.2d, #5
+	shl	v0.2d, v0.2d, #5
 	ret
                                         // -- End function

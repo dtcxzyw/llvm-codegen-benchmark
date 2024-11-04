@@ -1,37 +1,60 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	lsl	w9, w1, #14
 	mov	w8, #8373                       // =0x20b5
-	orr	w8, w0, w8
-	sub	w9, w9, #96, lsl #12            // =393216
-	orr	w0, w9, w8
+	mvni	v4.4s, #5, msl #16
+	shl	v2.4s, v2.4s, #14
+	shl	v3.4s, v3.4s, #14
+	dup	v5.4s, w8
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	orr	v0.16b, v0.16b, v5.16b
+	orr	v1.16b, v1.16b, v5.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsl	w9, w1, #16
-	mov	w8, #69                         // =0x45
-	orr	w8, w0, w8
-	add	w9, w9, #32, lsl #12            // =131072
-	orr	w0, w9, w8
+	movi	v4.4s, #2, lsl #16
+	shl	v3.4s, v3.4s, #16
+	shl	v2.4s, v2.4s, #16
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v0.4s, #69
+	orr	v1.4s, #69
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	add	w9, w0, w1, lsl #21
+	shl	v3.4s, v3.4s, #21
+	shl	v2.4s, v2.4s, #21
 	mov	w8, #64536                      // =0xfc18
 	movk	w8, #255, lsl #16
-	sub	w9, w9, #2048, lsl #12          // =8388608
-	orr	w0, w9, w8
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
+	mvni	v2.4s, #127, msl #16
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	dup	v2.4s, w8
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	mov	w8, #34                         // =0x22
-	lsl	w9, w1, #14
+	movi	v4.4s, #64, lsl #8
+	shl	v2.4s, v2.4s, #14
 	movk	w8, #6400, lsl #16
-	add	w9, w9, #4, lsl #12             // =16384
-	orr	w8, w0, w8
-	orr	w0, w9, w8
+	shl	v3.4s, v3.4s, #14
+	dup	v5.4s, w8
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	orr	v0.16b, v0.16b, v5.16b
+	orr	v1.16b, v1.16b, v5.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

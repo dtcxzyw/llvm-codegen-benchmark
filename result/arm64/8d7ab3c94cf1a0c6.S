@@ -1,42 +1,58 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	w8, w2, #0x3ff00
-	orr	w9, w0, w1
-	sub	w8, w8, #48, lsl #12            // =196608
-	cmp	w8, #1024
-	cset	w8, eq
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	mov	w8, #261888                     // =0x3ff00
+	orr	v0.8b, v0.8b, v1.8b
+	dup	v4.4s, w8
+	mov	w8, #1024                       // =0x400
+	movk	w8, #3, lsl #16
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	dup	v4.4s, w8
+	cmeq	v3.4s, v3.4s, v4.4s
+	cmeq	v2.4s, v2.4s, v4.4s
+	uzp1	v2.8h, v2.8h, v3.8h
+	xtn	v2.8b, v2.8h
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	w8, #1310720                    // =0x140000
-	orr	w9, w0, w1
-	and	w8, w2, w8
-	cmp	w8, #256, lsl #12               // =1048576
-	cset	w8, ne
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	movi	v4.4s, #20, lsl #16
+	movi	v5.4s, #16, lsl #16
+	orr	v0.8b, v0.8b, v1.8b
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v3.4s, v3.4s, v5.4s
+	cmeq	v2.4s, v2.4s, v5.4s
+	uzp1	v2.8h, v2.8h, v3.8h
+	mvn	v2.16b, v2.16b
+	xtn	v2.8b, v2.8h
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	orr	w9, w0, w1
-	cmp	w8, #5
-	cset	w8, lo
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	movi	v4.2d, #0x0000ff000000ff
+	movi	v5.4s, #5
+	orr	v0.8b, v0.8b, v1.8b
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmhi	v3.4s, v5.4s, v3.4s
+	cmhi	v2.4s, v5.4s, v2.4s
+	uzp1	v2.8h, v2.8h, v3.8h
+	xtn	v2.8b, v2.8h
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w2, #0xfffffffc
-	orr	w9, w0, w1
-	cmp	w8, #1
-	cset	w8, lt
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	bic	v2.4s, #3
+	bic	v3.4s, #3
+	orr	v0.8b, v0.8b, v1.8b
+	cmle	v3.4s, v3.4s, #0
+	cmle	v2.4s, v2.4s, #0
+	uzp1	v2.8h, v2.8h, v3.8h
+	xtn	v2.8b, v2.8h
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function

@@ -1,36 +1,53 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #1
-	add	w0, w8, w2, lsl #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	add	v1.4s, v1.4s, v1.4s
+	add	v0.4s, v1.4s, v0.4s
+	shl	v2.4s, v2.4s, #2
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w0, w0, w8, lsl #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	add	v1.4s, v2.4s, v1.4s
+	add	v1.4s, v1.4s, v1.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #4
-	add	w0, w8, w2, lsl #14
+	uzp1	v2.4s, v2.4s, v3.4s
+	shl	v1.4s, v1.4s, #4
+	add	v0.4s, v1.4s, v0.4s
+	shl	v2.4s, v2.4s, #14
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #12
-	add	w0, w8, w2, lsl #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	shl	v1.4s, v1.4s, #12
+	add	v0.4s, v1.4s, v0.4s
+	shl	v2.4s, v2.4s, #2
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func00000000000003ff:                   // @func00000000000003ff
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #2
-	add	w0, w8, w2, lsl #3
+	uzp1	v2.4s, v2.4s, v3.4s
+	shl	v1.4s, v1.4s, #2
+	add	v0.4s, v1.4s, v0.4s
+	shl	v2.4s, v2.4s, #3
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func00000000000003f5:                   // @func00000000000003f5
 // %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #4
-	add	w0, w8, w2, lsl #3
+	uzp1	v2.4s, v2.4s, v3.4s
+	shl	v1.4s, v1.4s, #4
+	add	v0.4s, v1.4s, v0.4s
+	shl	v2.4s, v2.4s, #3
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function

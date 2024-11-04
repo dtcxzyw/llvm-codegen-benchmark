@@ -1,23 +1,32 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	scvtf	d1, x0
-	scvtf	d0, x8
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
 	mov	x8, #225833675390976            // =0xcd6500000000
+	scvtf	v1.2d, v1.2d
+	scvtf	v0.2d, v0.2d
 	movk	x8, #16845, lsl #48
-	fmov	d2, x8
-	fmadd	d0, d0, d2, d1
+	dup	v4.2d, x8
+	scvtf	v3.2d, v3.2d
+	scvtf	v2.2d, v2.2d
+	fmla	v0.2d, v4.2d, v2.2d
+	fmla	v1.2d, v4.2d, v3.2d
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	scvtf	d1, x0
-	scvtf	d0, x8
-	adrp	x8, .LCPI1_0
-	ldr	d2, [x8, :lo12:.LCPI1_0]
-	fmadd	d0, d0, d2, d1
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	mov	x8, #60813                      // =0xed8d
+	movk	x8, #41141, lsl #16
+	scvtf	v1.2d, v1.2d
+	scvtf	v0.2d, v0.2d
+	movk	x8, #50935, lsl #32
+	scvtf	v3.2d, v3.2d
+	scvtf	v2.2d, v2.2d
+	movk	x8, #16048, lsl #48
+	dup	v4.2d, x8
+	fmla	v0.2d, v4.2d, v2.2d
+	fmla	v1.2d, v4.2d, v3.2d
 	ret
                                         // -- End function

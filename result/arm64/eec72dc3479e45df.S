@@ -1,16 +1,112 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmp	d2, d1
-	fmov	d3, #2.00000000
-	fcsel	d1, d1, d2, mi
-	fmadd	d0, d0, d3, d1
+	stp	d15, d14, [sp, #-80]!           // 16-byte Folded Spill
+	ldp	q17, q16, [sp, #208]
+	stp	d11, d10, [sp, #32]             // 16-byte Folded Spill
+	ldp	q19, q18, [sp, #80]
+	stp	d9, d8, [sp, #48]               // 16-byte Folded Spill
+	stp	d13, d12, [sp, #16]             // 16-byte Folded Spill
+	ldp	q27, q26, [sp, #240]
+	str	x29, [sp, #64]                  // 8-byte Folded Spill
+	ldp	q29, q28, [sp, #112]
+	fcmgt	v30.2d, v19.2d, v17.2d
+	fcmgt	v31.2d, v18.2d, v16.2d
+	ldp	q23, q22, [sp, #304]
+	fcmgt	v10.2d, v29.2d, v27.2d
+	fcmgt	v11.2d, v28.2d, v26.2d
+	ldp	q21, q20, [sp, #272]
+	ldp	q25, q24, [sp, #144]
+	bit	v16.16b, v18.16b, v31.16b
+	ldp	q9, q8, [sp, #176]
+	bit	v17.16b, v19.16b, v30.16b
+	mov	v18.16b, v11.16b
+	mov	v19.16b, v10.16b
+	fmov	v30.2d, #2.00000000
+	fcmgt	v12.2d, v25.2d, v21.2d
+	fcmgt	v13.2d, v24.2d, v20.2d
+	fcmgt	v14.2d, v9.2d, v23.2d
+	fcmgt	v15.2d, v8.2d, v22.2d
+	bsl	v18.16b, v28.16b, v26.16b
+	bsl	v19.16b, v29.16b, v27.16b
+	fmla	v17.2d, v30.2d, v0.2d
+	fmla	v16.2d, v30.2d, v1.2d
+	bit	v20.16b, v24.16b, v13.16b
+	bit	v21.16b, v25.16b, v12.16b
+	bit	v22.16b, v8.16b, v15.16b
+	bit	v23.16b, v9.16b, v14.16b
+	fmla	v19.2d, v30.2d, v2.2d
+	fmla	v18.2d, v30.2d, v3.2d
+	ldp	d9, d8, [sp, #48]               // 16-byte Folded Reload
+	mov	v0.16b, v17.16b
+	fmla	v21.2d, v30.2d, v4.2d
+	fmla	v20.2d, v30.2d, v5.2d
+	mov	v1.16b, v16.16b
+	fmla	v23.2d, v30.2d, v6.2d
+	fmla	v22.2d, v30.2d, v7.2d
+	ldp	d11, d10, [sp, #32]             // 16-byte Folded Reload
+	mov	v2.16b, v19.16b
+	ldp	d13, d12, [sp, #16]             // 16-byte Folded Reload
+	mov	v3.16b, v18.16b
+	mov	v4.16b, v21.16b
+	mov	v5.16b, v20.16b
+	mov	v6.16b, v23.16b
+	mov	v7.16b, v22.16b
+	ldp	d15, d14, [sp], #80             // 16-byte Folded Reload
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	fcmp	d1, d2
-	fmov	d3, #0.25000000
-	fcsel	d1, d1, d2, ge
-	fmadd	d0, d0, d3, d1
+	stp	d15, d14, [sp, #-80]!           // 16-byte Folded Spill
+	ldp	q17, q16, [sp, #208]
+	stp	d11, d10, [sp, #32]             // 16-byte Folded Spill
+	ldp	q19, q18, [sp, #80]
+	stp	d9, d8, [sp, #48]               // 16-byte Folded Spill
+	stp	d13, d12, [sp, #16]             // 16-byte Folded Spill
+	ldp	q27, q26, [sp, #240]
+	str	x29, [sp, #64]                  // 8-byte Folded Spill
+	ldp	q29, q28, [sp, #112]
+	fcmge	v30.2d, v19.2d, v17.2d
+	fcmge	v31.2d, v18.2d, v16.2d
+	ldp	q23, q22, [sp, #304]
+	fcmge	v10.2d, v29.2d, v27.2d
+	fcmge	v11.2d, v28.2d, v26.2d
+	ldp	q21, q20, [sp, #272]
+	ldp	q25, q24, [sp, #144]
+	bit	v16.16b, v18.16b, v31.16b
+	ldp	q9, q8, [sp, #176]
+	bit	v17.16b, v19.16b, v30.16b
+	mov	v18.16b, v11.16b
+	mov	v19.16b, v10.16b
+	fmov	v30.2d, #0.25000000
+	fcmge	v12.2d, v25.2d, v21.2d
+	fcmge	v13.2d, v24.2d, v20.2d
+	fcmge	v14.2d, v9.2d, v23.2d
+	fcmge	v15.2d, v8.2d, v22.2d
+	bsl	v18.16b, v28.16b, v26.16b
+	bsl	v19.16b, v29.16b, v27.16b
+	fmla	v17.2d, v30.2d, v0.2d
+	fmla	v16.2d, v30.2d, v1.2d
+	bit	v20.16b, v24.16b, v13.16b
+	bit	v21.16b, v25.16b, v12.16b
+	bit	v22.16b, v8.16b, v15.16b
+	bit	v23.16b, v9.16b, v14.16b
+	fmla	v19.2d, v30.2d, v2.2d
+	fmla	v18.2d, v30.2d, v3.2d
+	ldp	d9, d8, [sp, #48]               // 16-byte Folded Reload
+	mov	v0.16b, v17.16b
+	fmla	v21.2d, v30.2d, v4.2d
+	fmla	v20.2d, v30.2d, v5.2d
+	mov	v1.16b, v16.16b
+	fmla	v23.2d, v30.2d, v6.2d
+	fmla	v22.2d, v30.2d, v7.2d
+	ldp	d11, d10, [sp, #32]             // 16-byte Folded Reload
+	mov	v2.16b, v19.16b
+	ldp	d13, d12, [sp, #16]             // 16-byte Folded Reload
+	mov	v3.16b, v18.16b
+	mov	v4.16b, v21.16b
+	mov	v5.16b, v20.16b
+	mov	v6.16b, v23.16b
+	mov	v7.16b, v22.16b
+	ldp	d15, d14, [sp], #80             // 16-byte Folded Reload
 	ret
                                         // -- End function

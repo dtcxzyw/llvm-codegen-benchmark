@@ -1,34 +1,67 @@
 func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	cmp	x0, x1
-	cset	w0, ne
+	cmeq	v1.2d, v1.2d, v3.2d
+	cmeq	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4h, #1
+	mvn	v0.16b, v0.16b
+	xtn	v0.4h, v0.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	sub	x8, x0, x1
-	cmn	x8, #1
-	cset	w0, ne
+	movi	v4.2d, #0xffffffffffffffff
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	cmeq	v1.2d, v1.2d, v4.2d
+	cmeq	v0.2d, v0.2d, v4.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4h, #1
+	mvn	v0.16b, v0.16b
+	xtn	v0.4h, v0.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	x8, x0, x1
-	cmp	x8, #8, lsl #12                 // =32768
-	cset	w0, lo
+	mov	w8, #32768                      // =0x8000
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4h, #1
+	xtn	v0.4h, v0.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	x8, x0, x1
-	cmp	x8, #16
-	cset	w0, eq
+	mov	w8, #16                         // =0x10
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	dup	v2.2d, x8
+	cmeq	v1.2d, v1.2d, v2.2d
+	cmeq	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4h, #1
+	xtn	v0.4h, v0.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	sub	x8, x0, x1
-	cmp	x8, #80
-	cset	w0, hi
+	mov	w8, #80                         // =0x50
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4h, #1
+	xtn	v0.4h, v0.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

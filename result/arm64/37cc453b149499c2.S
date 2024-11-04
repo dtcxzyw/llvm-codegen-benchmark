@@ -1,8 +1,7 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	tst	w2, #0xff
-	cset	w8, eq
-	bic	w8, w8, w1
-	and	w0, w8, w0
+	cmeq	v2.16b, v2.16b, #0
+	bic	v1.16b, v2.16b, v1.16b
+	and	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

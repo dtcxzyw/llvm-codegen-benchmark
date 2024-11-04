@@ -1,10 +1,19 @@
 func0000000000000104:                   // @func0000000000000104
 // %bb.0:                               // %entry
-	sub	x8, x2, #1
-	add	x9, x0, x1
-	subs	x8, x8, #2
-	csel	x8, xzr, x8, lo
-	cmp	x8, x9, lsl #1
-	cset	w0, hi
+	movi	v6.2d, #0xffffffffffffffff
+	mov	w8, #2                          // =0x2
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v1.2d
+	add	v5.2d, v5.2d, v6.2d
+	add	v4.2d, v4.2d, v6.2d
+	dup	v6.2d, x8
+	add	v0.2d, v0.2d, v0.2d
+	uqsub	v2.2d, v4.2d, v6.2d
+	uqsub	v3.2d, v5.2d, v6.2d
+	cmhi	v1.2d, v3.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

@@ -1,10 +1,15 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	orr	w9, w0, #0x1
-	mov	w8, #86                         // =0x56
-	clz	w9, w9
-	eor	w9, w9, #0x1f
-	mul	w8, w9, w8
-	lsr	w0, w8, #8
+	orr	v0.4s, #1
+	orr	v1.4s, #1
+	movi	v2.8b, #31
+	clz	v1.4s, v1.4s
+	clz	v0.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	movi	v1.8b, #86
+	xtn	v0.8b, v0.8h
+	eor	v0.8b, v0.8b, v2.8b
+	umull	v0.8h, v0.8b, v1.8b
+	shrn	v0.8b, v0.8h, #8
 	ret
                                         // -- End function

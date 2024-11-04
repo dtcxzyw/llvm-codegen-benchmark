@@ -1,28 +1,64 @@
-.LCPI0_0:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	and	w9, w0, #0x1
-	ldr	d2, [x8, :lo12:.LCPI0_0]
-	fmadd	d0, d0, d2, d1
-	fcvtzs	w8, d0
-	sub	w8, w8, w9
-	cmp	w8, #22
-	cset	w0, hi
+	mov	x8, #31227                      // =0x79fb
+	ldr	q17, [sp]
+	ushll	v0.8h, v0.8b, #0
+	movk	x8, #20639, lsl #16
+	movk	x8, #17427, lsl #32
+	movk	x8, #16339, lsl #48
+	dup	v16.2d, x8
+	fmla	v5.2d, v16.2d, v1.2d
+	fmla	v17.2d, v16.2d, v4.2d
+	fmla	v6.2d, v16.2d, v2.2d
+	fmla	v7.2d, v16.2d, v3.2d
+	fcvtzs	v1.2d, v17.2d
+	fcvtzs	v4.2d, v5.2d
+	ushll	v5.4s, v0.4h, #0
+	fcvtzs	v2.2d, v7.2d
+	fcvtzs	v3.2d, v6.2d
+	ushll2	v0.4s, v0.8h, #0
+	shl	v0.4s, v0.4s, #31
+	uzp1	v1.4s, v2.4s, v1.4s
+	uzp1	v2.4s, v4.4s, v3.4s
+	shl	v3.4s, v5.4s, #31
+	movi	v4.4s, #22
+	ssra	v2.4s, v3.4s, #31
+	ssra	v1.4s, v0.4s, #31
+	cmhi	v0.4s, v1.4s, v4.4s
+	cmhi	v1.4s, v2.4s, v4.4s
+	uzp1	v0.8h, v1.8h, v0.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI1_0
-	and	w9, w0, #0x1
-	ldr	d2, [x8, :lo12:.LCPI1_0]
-	fmadd	d0, d0, d2, d1
-	fcvtzs	w8, d0
-	sub	w8, w8, w9
-	cmp	w8, #22
-	cset	w0, hi
+	mov	x8, #31227                      // =0x79fb
+	ldr	q17, [sp]
+	ushll	v0.8h, v0.8b, #0
+	movk	x8, #20639, lsl #16
+	movk	x8, #17427, lsl #32
+	movk	x8, #16339, lsl #48
+	dup	v16.2d, x8
+	fmla	v5.2d, v16.2d, v1.2d
+	fmla	v17.2d, v16.2d, v4.2d
+	fmla	v6.2d, v16.2d, v2.2d
+	fmla	v7.2d, v16.2d, v3.2d
+	fcvtzs	v1.2d, v17.2d
+	fcvtzs	v4.2d, v5.2d
+	ushll	v5.4s, v0.4h, #0
+	fcvtzs	v2.2d, v7.2d
+	fcvtzs	v3.2d, v6.2d
+	ushll2	v0.4s, v0.8h, #0
+	shl	v0.4s, v0.4s, #31
+	uzp1	v1.4s, v2.4s, v1.4s
+	uzp1	v2.4s, v4.4s, v3.4s
+	shl	v3.4s, v5.4s, #31
+	movi	v4.4s, #22
+	ssra	v2.4s, v3.4s, #31
+	ssra	v1.4s, v0.4s, #31
+	cmhi	v0.4s, v1.4s, v4.4s
+	cmhi	v1.4s, v2.4s, v4.4s
+	uzp1	v0.8h, v1.8h, v0.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

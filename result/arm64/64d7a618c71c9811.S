@@ -1,9 +1,7 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	eor	w8, w1, #0x1
-	tst	w2, #0xff
-	cset	w9, ne
-	and	w8, w8, w0
-	and	w0, w9, w8
+	cmeq	v2.16b, v2.16b, #0
+	orr	v1.16b, v2.16b, v1.16b
+	bic	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

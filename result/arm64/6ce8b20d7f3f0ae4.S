@@ -1,21 +1,30 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x0, x1
-	lsr	x0, x8, #32
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	ushl	v0.2d, v0.2d, v2.2d
+	ushl	v1.2d, v1.2d, v3.2d
+	ushr	v1.2d, v1.2d, #32
+	ushr	v0.2d, v0.2d, #32
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x0, x1
-	lsr	x0, x8, #32
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	ushl	v0.2d, v0.2d, v2.2d
+	ushl	v1.2d, v1.2d, v3.2d
+	ushr	v1.2d, v1.2d, #32
+	ushr	v0.2d, v0.2d, #32
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x0, x1
-	lsr	x0, x8, #32
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	ushl	v0.2d, v0.2d, v2.2d
+	ushl	v1.2d, v1.2d, v3.2d
+	ushr	v1.2d, v1.2d, #32
+	ushr	v0.2d, v0.2d, #32
 	ret
                                         // -- End function

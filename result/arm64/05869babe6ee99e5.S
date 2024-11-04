@@ -1,20 +1,25 @@
-.LCPI0_0:
-	.xword	0x3fef5c28f5c28f5c              // double 0.97999999999999998
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ucvtf	d0, x0
-	adrp	x8, .LCPI0_0
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fmul	d0, d0, d1
+	mov	x8, #36700                      // =0x8f5c
+	ucvtf	v1.2d, v1.2d
+	ucvtf	v0.2d, v0.2d
+	movk	x8, #62914, lsl #16
+	movk	x8, #23592, lsl #32
+	movk	x8, #16367, lsl #48
+	dup	v2.2d, x8
+	fmul	v0.2d, v0.2d, v2.2d
+	fmul	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3fe921fb40000000              // double 0.78539812564849853
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ucvtf	d0, x0
-	adrp	x8, .LCPI1_0
-	ldr	d1, [x8, :lo12:.LCPI1_0]
-	fmul	d0, d0, d1
+	mov	x8, #1073741824                 // =0x40000000
+	ucvtf	v1.2d, v1.2d
+	ucvtf	v0.2d, v0.2d
+	movk	x8, #8699, lsl #32
+	movk	x8, #16361, lsl #48
+	dup	v2.2d, x8
+	fmul	v0.2d, v0.2d, v2.2d
+	fmul	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

@@ -1,33 +1,62 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, w2
-	cmp	x8, x1
-	cset	w8, lo
-	bic	w0, w8, w0
+	ushll	v4.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	cmhi	v2.2d, v2.2d, v3.2d
+	cmhi	v1.2d, v1.2d, v4.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	bic	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	tst	w0, #0x1
+	ushll	v0.4s, v0.4h, #0
 	mov	w8, #15                         // =0xf
-	csel	x8, x8, x1, ne
-	cmp	x8, w2, uxtw
-	cset	w0, lo
+	dup	v5.2d, x8
+	ushll	v4.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v4.2d, v4.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bit	v1.16b, v5.16b, v4.16b
+	bsl	v0.16b, v5.16b, v2.16b
+	ushll	v2.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	cmhi	v0.2d, v3.2d, v0.2d
+	cmhi	v1.2d, v2.2d, v1.2d
+	uzp1	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csel	x8, xzr, x1, ne
-	cmp	x8, w2, uxtw
-	cset	w0, lo
+	ushll	v0.4s, v0.4h, #0
+	ushll	v5.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	ushll	v4.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	shl	v4.2d, v4.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmge	v4.2d, v4.2d, #0
+	cmge	v0.2d, v0.2d, #0
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v2.16b, v0.16b
+	cmhi	v0.2d, v3.2d, v0.2d
+	cmhi	v1.2d, v5.2d, v1.2d
+	uzp1	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	w8, w2
-	cmp	x8, x1
-	cset	w8, lo
-	bic	w0, w8, w0
+	ushll	v4.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	cmhi	v2.2d, v2.2d, v3.2d
+	cmhi	v1.2d, v1.2d, v4.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	bic	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

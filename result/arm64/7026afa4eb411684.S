@@ -1,19 +1,29 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #6, #3
-	add	w0, w8, #97
+	shrn	v0.8b, v0.8h, #6
+	movi	v2.16b, #7
+	shrn2	v0.16b, v1.8h, #6
+	movi	v1.16b, #97
+	and	v0.16b, v0.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #10, #5
-	sub	w0, w8, #25
+	uzp2	v0.16b, v0.16b, v1.16b
+	movi	v1.16b, #31
+	movi	v2.16b, #231
+	ushr	v0.16b, v0.16b, #2
+	and	v0.16b, v0.16b, v1.16b
+	add	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	lsr	w8, w0, #8
-	and	w8, w8, #0xc
-	add	w0, w8, #4
+	movi	v2.16b, #12
+	uzp2	v0.16b, v0.16b, v1.16b
+	movi	v1.16b, #4
+	and	v0.16b, v0.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

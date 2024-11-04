@@ -1,24 +1,30 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	w9, w0, w1
-	mov	w8, #85                         // =0x55
-	and	w9, w9, #0xff
-	mul	w0, w9, w8
+	add	v0.8b, v0.8b, v1.8b
+	movi	v1.8h, #85
+	movi	v2.4h, #85
+	ushll	v0.8h, v0.8b, #0
+	umull2	v1.4s, v0.8h, v1.8h
+	umull	v0.4s, v0.4h, v2.4h
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	add	w9, w0, w1
+	add	v0.8b, v0.8b, v1.8b
 	mov	w8, #3600                       // =0xe10
-	and	w9, w9, #0xff
-	mul	w0, w9, w8
+	dup	v2.8h, w8
+	ushll	v0.8h, v0.8b, #0
+	umull2	v1.4s, v0.8h, v2.8h
+	umull	v0.4s, v0.4h, v2.4h
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	and	w9, w8, #0xff
-	lsl	w9, w9, #5
-	sub	w0, w9, w8, uxtb #2
+	add	v0.8b, v0.8b, v1.8b
+	movi	v1.8h, #28
+	movi	v2.4h, #28
+	ushll	v0.8h, v0.8b, #0
+	umull2	v1.4s, v0.8h, v1.8h
+	umull	v0.4s, v0.4h, v2.4h
 	ret
                                         // -- End function

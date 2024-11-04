@@ -1,11 +1,10 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mov	w8, #253                        // =0xfd
-	and	w9, w1, #0xff
-	and	w10, w0, #0xff
-	and	w8, w2, w8
-	cmp	w8, #36
-	ccmp	w10, w9, #0, eq
-	cset	w0, eq
+	movi	v3.16b, #253
+	movi	v4.16b, #36
+	cmeq	v0.16b, v0.16b, v1.16b
+	and	v2.16b, v2.16b, v3.16b
+	cmeq	v2.16b, v2.16b, v4.16b
+	and	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function

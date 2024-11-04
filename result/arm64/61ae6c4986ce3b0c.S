@@ -1,20 +1,46 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csinc	w0, wzr, w1, eq
+	ushll2	v3.8h, v0.16b, #0
+	ushll	v0.8h, v0.8b, #0
+	movi	v4.8h, #1
+	shl	v3.8h, v3.8h, #15
+	shl	v0.8h, v0.8h, #15
+	add	v5.8h, v1.8h, v4.8h
+	add	v1.8h, v2.8h, v4.8h
+	cmlt	v2.8h, v3.8h, #0
+	cmlt	v0.8h, v0.8h, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v5.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csinc	w0, wzr, w1, eq
+	ushll2	v3.8h, v0.16b, #0
+	ushll	v0.8h, v0.8b, #0
+	movi	v4.8h, #1
+	shl	v3.8h, v3.8h, #15
+	shl	v0.8h, v0.8h, #15
+	add	v5.8h, v1.8h, v4.8h
+	add	v1.8h, v2.8h, v4.8h
+	cmlt	v2.8h, v3.8h, #0
+	cmlt	v0.8h, v0.8h, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v5.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #3                          // =0x3
-	sub	w9, w1, #5
-	tst	w0, #0x1
-	csel	w0, w9, w8, ne
+	ushll2	v3.8h, v0.16b, #0
+	ushll	v0.8h, v0.8b, #0
+	mvni	v4.8h, #4
+	movi	v6.8h, #3
+	shl	v3.8h, v3.8h, #15
+	shl	v0.8h, v0.8h, #15
+	add	v5.8h, v1.8h, v4.8h
+	add	v1.8h, v2.8h, v4.8h
+	cmlt	v2.8h, v3.8h, #0
+	cmlt	v0.8h, v0.8h, #0
+	bif	v1.16b, v6.16b, v2.16b
+	bsl	v0.16b, v5.16b, v6.16b
 	ret
                                         // -- End function

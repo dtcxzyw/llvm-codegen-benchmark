@@ -1,19 +1,31 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	x8, x1, #0xc000000000000000
-	orr	x0, x8, x0, lsl #62
+	fmov	v4.2d, #-2.00000000
+	shl	v1.2d, v1.2d, #62
+	shl	v0.2d, v0.2d, #62
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	lsr	x8, x1, #1
-	orr	w8, w8, w0
-	lsl	x0, x8, #32
+	usra	v1.2d, v3.2d, #1
+	usra	v0.2d, v2.2d, #1
+	shl	v1.2d, v1.2d, #32
+	shl	v0.2d, v0.2d, #32
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	x8, x1, #0xfffffffffffffffe
-	orr	x0, x8, x0, lsl #1
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

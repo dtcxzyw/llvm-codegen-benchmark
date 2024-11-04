@@ -1,41 +1,55 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	w8, w1, #1042
-	lsr	w0, w0, w8
+	mov	w8, #-1042                      // =0xfffffbee
+	uzp1	v0.4s, v0.4s, v1.4s
+	dup	v3.4s, w8
+	sub	v1.4s, v3.4s, v2.4s
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	lsr	w0, w0, w8
+	uzp1	v0.4s, v0.4s, v1.4s
+	mvn	v1.16b, v2.16b
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	lsr	w0, w0, w8
+	movi	v3.4s, #1
+	uzp1	v0.4s, v0.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	lsr	w0, w0, w8
+	uzp1	v0.4s, v0.4s, v1.4s
+	mvn	v1.16b, v2.16b
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	w0, w0, w1
+	movi	v3.4s, #32
+	uzp1	v0.4s, v0.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	lsr	w0, w0, w8
+	movi	v3.4s, #1
+	uzp1	v0.4s, v0.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	sub	w8, w1, #6
-	lsr	w0, w0, w8
+	movi	v3.4s, #6
+	uzp1	v0.4s, v0.4s, v1.4s
+	sub	v1.4s, v3.4s, v2.4s
+	ushl	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

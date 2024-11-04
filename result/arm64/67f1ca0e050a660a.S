@@ -1,9 +1,11 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	mvn	w8, w2
-	csel	w9, w0, w1, gt
-	add	w8, w9, w8
-	add	x0, x8, #1
+	smax	v0.4s, v0.4s, v1.4s
+	mvn	v1.16b, v2.16b
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	add	v0.4s, v0.4s, v1.4s
+	uaddw2	v1.2d, v2.2d, v0.4s
+	uaddw	v0.2d, v2.2d, v0.2s
 	ret
                                         // -- End function

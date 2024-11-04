@@ -1,28 +1,62 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	x9, #7282                       // =0x1c72
-	lsr	x8, x0, #2
-	movk	x9, #29127, lsl #16
-	movk	x9, #50972, lsl #32
-	movk	x9, #7281, lsl #48
-	mul	x8, x8, x9
-	and	x0, x8, #0x1fffffffe
+	ushr	v1.2d, v1.2d, #2
+	ushr	v0.2d, v0.2d, #2
+	mov	x8, #7282                       // =0x1c72
+	movk	x8, #29127, lsl #16
+	movk	x8, #50972, lsl #32
+	fmov	x9, d1
+	fmov	x11, d0
+	movk	x8, #7281, lsl #48
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d1, x9
+	mul	x8, x12, x8
+	fmov	d0, x11
+	mov	v1.d[1], x10
+	mov	v0.d[1], x8
+	mov	x8, #8589934590                 // =0x1fffffffe
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	x8, x0, #2
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x9, #43696
-	mul	x8, x8, x9
-	and	x0, x8, #0xffffffff0
+	ushr	v1.2d, v1.2d, #2
+	ushr	v0.2d, v0.2d, #2
+	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	movk	x8, #43696
+	fmov	x9, d1
+	fmov	x11, d0
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d1, x9
+	mul	x8, x12, x8
+	fmov	d0, x11
+	mov	v1.d[1], x10
+	mov	v0.d[1], x8
+	mov	x8, #68719476720                // =0xffffffff0
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsr	x8, x0, #63
-	add	w8, w0, w8
-	lsl	x8, x8, #2
-	and	x0, x8, #0x3fffffff8
+	usra	v0.2d, v0.2d, #63
+	usra	v1.2d, v1.2d, #63
+	mov	x8, #17179869176                // =0x3fffffff8
+	dup	v2.2d, x8
+	shl	v1.2d, v1.2d, #2
+	shl	v0.2d, v0.2d, #2
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

@@ -1,21 +1,24 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x1
-	madd	w8, w8, w1, w0
-	sxtw	x0, w8
+	orr	v2.4s, #1
+	mla	v0.4s, v2.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x1
-	madd	w8, w8, w1, w0
-	sxtw	x0, w8
+	orr	v2.4s, #1
+	mla	v0.4s, v2.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x1
-	madd	w8, w8, w1, w0
-	sxtw	x0, w8
+	orr	v2.4s, #1
+	mla	v0.4s, v2.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

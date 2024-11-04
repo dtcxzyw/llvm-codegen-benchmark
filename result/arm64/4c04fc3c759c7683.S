@@ -1,21 +1,33 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	w8, w2, #71
-	and	w9, w1, w0
-	and	w0, w8, w9
+	movi	v6.4s, #71
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
+	add	v5.4s, v5.4s, v6.4s
+	add	v4.4s, v4.4s, v6.4s
+	and	v0.16b, v4.16b, v0.16b
+	and	v1.16b, v5.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w2, #185
-	and	w9, w1, w0
-	and	w0, w8, w9
+	movi	v6.4s, #185
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
+	add	v5.4s, v5.4s, v6.4s
+	add	v4.4s, v4.4s, v6.4s
+	and	v0.16b, v4.16b, v0.16b
+	and	v1.16b, v5.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w2, #1
-	and	w9, w1, w0
-	and	w0, w8, w9
+	movi	v6.2d, #0xffffffffffffffff
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
+	add	v5.4s, v5.4s, v6.4s
+	add	v4.4s, v4.4s, v6.4s
+	and	v0.16b, v4.16b, v0.16b
+	and	v1.16b, v5.16b, v1.16b
 	ret
                                         // -- End function

@@ -1,15 +1,42 @@
-.LCPI0_0:
-	.xword	0x3fe6e147ae147ae1              // double 0.71499999999999997
-.LCPI0_1:
-	.xword	0x3fc1eb851eb851ec              // double 0.14000000000000001
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	adrp	x9, .LCPI0_1
-	ldr	d2, [x8, :lo12:.LCPI0_0]
-	ldr	d3, [x9, :lo12:.LCPI0_1]
-	fadd	d1, d1, d2
-	fmul	d0, d0, d3
-	fadd	d0, d0, d1
+	mov	x8, #31457                      // =0x7ae1
+	ldp	q16, q17, [sp]
+	movk	x8, #44564, lsl #16
+	ldp	q19, q20, [sp, #96]
+	movk	x8, #57671, lsl #32
+	ldp	q21, q22, [sp, #64]
+	movk	x8, #16358, lsl #48
+	ldp	q23, q24, [sp, #32]
+	dup	v18.2d, x8
+	mov	x8, #20972                      // =0x51ec
+	movk	x8, #7864, lsl #16
+	movk	x8, #60293, lsl #32
+	movk	x8, #16321, lsl #48
+	fadd	v20.2d, v20.2d, v18.2d
+	fadd	v19.2d, v19.2d, v18.2d
+	dup	v25.2d, x8
+	fadd	v22.2d, v22.2d, v18.2d
+	fadd	v21.2d, v21.2d, v18.2d
+	fadd	v24.2d, v24.2d, v18.2d
+	fadd	v23.2d, v23.2d, v18.2d
+	fadd	v17.2d, v17.2d, v18.2d
+	fadd	v16.2d, v16.2d, v18.2d
+	fmul	v1.2d, v1.2d, v25.2d
+	fmul	v0.2d, v0.2d, v25.2d
+	fmul	v4.2d, v4.2d, v25.2d
+	fmul	v3.2d, v3.2d, v25.2d
+	fmul	v2.2d, v2.2d, v25.2d
+	fmul	v7.2d, v7.2d, v25.2d
+	fmul	v6.2d, v6.2d, v25.2d
+	fmul	v5.2d, v5.2d, v25.2d
+	fadd	v0.2d, v0.2d, v16.2d
+	fadd	v1.2d, v1.2d, v17.2d
+	fadd	v4.2d, v4.2d, v21.2d
+	fadd	v2.2d, v2.2d, v23.2d
+	fadd	v3.2d, v3.2d, v24.2d
+	fadd	v7.2d, v7.2d, v20.2d
+	fadd	v5.2d, v5.2d, v22.2d
+	fadd	v6.2d, v6.2d, v19.2d
 	ret
                                         // -- End function

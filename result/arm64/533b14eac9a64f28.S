@@ -1,24 +1,34 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	tst	w2, #0x1
-	mov	w9, #12                         // =0xc
-	csel	w8, w9, w8, ne
-	add	w8, w8, w1
-	sxtw	x8, w8
-	cmp	x8, x0
-	cset	w0, lo
+	ushll	v3.4s, v3.4h, #0
+	movi	v4.4s, #8
+	movi	v5.4s, #12
+	shl	v3.4s, v3.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	bsl	v3.16b, v5.16b, v4.16b
+	add	v2.4s, v3.4s, v2.4s
+	sshll	v3.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	tst	w2, #0x1
-	mov	w9, #32                         // =0x20
-	csel	w8, w9, w8, ne
-	add	w8, w8, w1
-	sxtw	x8, w8
-	cmp	x8, x0
-	cset	w0, lo
+	ushll	v3.4s, v3.4h, #0
+	movi	v4.4s, #16
+	movi	v5.4s, #32
+	shl	v3.4s, v3.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	bsl	v3.16b, v5.16b, v4.16b
+	add	v2.4s, v3.4s, v2.4s
+	sshll	v3.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

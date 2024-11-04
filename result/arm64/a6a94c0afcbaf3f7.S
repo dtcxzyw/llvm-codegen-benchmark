@@ -1,30 +1,61 @@
 func000000000000006f:                   // @func000000000000006f
 // %bb.0:                               // %entry
-	ubfiz	w8, w1, #18, #3
-	add	w8, w8, w0, lsl #12
-	sub	w0, w8, #128, lsl #12           // =524288
+	movi	v4.4s, #28, lsl #16
+	shl	v3.4s, v3.4s, #18
+	shl	v2.4s, v2.4s, #18
+	shl	v0.4s, v0.4s, #12
+	shl	v1.4s, v1.4s, #12
+	mvni	v5.4s, #7, msl #16
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	add	v0.4s, v0.4s, v5.4s
+	add	v1.4s, v1.4s, v5.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	lsl	w8, w1, #16
-	ubfiz	w9, w0, #8, #16
-	add	w8, w8, #16, lsl #12            // =65536
-	orr	w0, w9, w8
+	movi	v4.4s, #1, lsl #16
+	shl	v3.4s, v3.4s, #16
+	shl	v2.4s, v2.4s, #16
+	shl	v0.4s, v0.4s, #8
+	shl	v1.4s, v1.4s, #8
+	add	v3.4s, v3.4s, v4.4s
+	add	v2.4s, v2.4s, v4.4s
+	bic	v1.4s, #255, lsl #24
+	bic	v0.4s, #255, lsl #24
+	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsl	w8, w1, #16
-	ubfiz	w9, w0, #8, #16
-	add	w8, w8, #32, lsl #12            // =131072
-	orr	w0, w9, w8
+	movi	v4.4s, #2, lsl #16
+	shl	v3.4s, v3.4s, #16
+	shl	v2.4s, v2.4s, #16
+	shl	v0.4s, v0.4s, #8
+	shl	v1.4s, v1.4s, #8
+	add	v3.4s, v3.4s, v4.4s
+	add	v2.4s, v2.4s, v4.4s
+	bic	v1.4s, #255, lsl #24
+	bic	v0.4s, #255, lsl #24
+	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ubfiz	w8, w1, #16, #8
-	add	w8, w8, w0, lsl #13
-	add	w0, w8, #2, lsl #12             // =8192
+	movi	v4.4s, #32, lsl #8
+	shl	v2.4s, v2.4s, #16
+	shl	v3.4s, v3.4s, #16
+	shl	v0.4s, v0.4s, #13
+	shl	v1.4s, v1.4s, #13
+	bic	v2.4s, #255, lsl #24
+	bic	v3.4s, #255, lsl #24
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

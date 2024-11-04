@@ -1,33 +1,60 @@
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	lsr	x9, x0, #4
 	mov	w8, #5                          // =0x5
-	cmp	x9, #5
-	csel	x8, x9, x8, hi
-	mvn	x9, x9
-	add	x8, x8, x9
-	add	x0, x8, #3
+	ushr	v1.2d, v1.2d, #4
+	ushr	v0.2d, v0.2d, #4
+	dup	v2.2d, x8
+	mov	w8, #3                          // =0x3
+	dup	v7.2d, x8
+	mvn	v5.16b, v1.16b
+	mvn	v6.16b, v0.16b
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	add	v2.2d, v6.2d, v7.2d
+	add	v3.2d, v5.2d, v7.2d
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000039:                   // @func0000000000000039
 // %bb.0:                               // %entry
-	lsr	x9, x0, #1
 	mov	w8, #5                          // =0x5
-	cmp	x9, #5
-	csel	x8, x9, x8, hi
-	mvn	x9, x9
-	add	x8, x8, x9
-	add	x0, x8, #3
+	ushr	v1.2d, v1.2d, #1
+	ushr	v0.2d, v0.2d, #1
+	dup	v2.2d, x8
+	mov	w8, #3                          // =0x3
+	dup	v7.2d, x8
+	mvn	v5.16b, v1.16b
+	mvn	v6.16b, v0.16b
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	add	v2.2d, v6.2d, v7.2d
+	add	v3.2d, v5.2d, v7.2d
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	lsr	x9, x0, #6
 	mov	w8, #5                          // =0x5
-	cmp	x9, #5
-	mvn	x10, x9
-	csel	x8, x9, x8, hi
-	add	x8, x8, x10
-	add	x0, x8, #3
+	ushr	v1.2d, v1.2d, #6
+	ushr	v0.2d, v0.2d, #6
+	dup	v2.2d, x8
+	mov	w8, #3                          // =0x3
+	dup	v7.2d, x8
+	mvn	v5.16b, v0.16b
+	mvn	v6.16b, v1.16b
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	add	v2.2d, v5.2d, v7.2d
+	add	v3.2d, v6.2d, v7.2d
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

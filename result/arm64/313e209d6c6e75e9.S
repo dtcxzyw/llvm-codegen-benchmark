@@ -1,27 +1,69 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	x8, x2, x2, lsl #2
+	fmov	x10, d3
+	fmov	x11, d4
+	mov	x8, v3.d[1]
+	mov	x9, v4.d[1]
+	add	x10, x10, x10, lsl #2
+	add	x11, x11, x11, lsl #2
+	add	x8, x8, x8, lsl #2
+	lsl	x10, x10, #1
+	lsl	x11, x11, #1
+	add	x9, x9, x9, lsl #2
 	lsl	x8, x8, #1
-	cmp	x8, x1
-	cset	w8, lo
-	and	w0, w8, w0
+	fmov	d3, x10
+	fmov	d4, x11
+	lsl	x9, x9, #1
+	mov	v3.d[1], x8
+	mov	v4.d[1], x9
+	cmhi	v2.2d, v2.2d, v4.2d
+	cmhi	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
+	fmov	x9, d3
+	fmov	x11, d4
 	mov	w8, #50                         // =0x32
-	mul	x8, x2, x8
-	cmp	x8, x1
-	cset	w8, ls
-	and	w0, w8, w0
+	mov	x10, v3.d[1]
+	mov	x12, v4.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d3, x9
+	mul	x8, x12, x8
+	fmov	d4, x11
+	mov	v3.d[1], x10
+	mov	v4.d[1], x8
+	cmhs	v1.2d, v1.2d, v3.2d
+	cmhs	v2.2d, v2.2d, v4.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
+	fmov	x9, d3
+	fmov	x11, d4
 	mov	w8, #100                        // =0x64
-	mul	x8, x2, x8
-	cmp	x8, x1
-	cset	w8, hs
-	and	w0, w8, w0
+	mov	x10, v3.d[1]
+	mov	x12, v4.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d3, x9
+	mul	x8, x12, x8
+	fmov	d4, x11
+	mov	v3.d[1], x10
+	mov	v4.d[1], x8
+	cmhs	v1.2d, v3.2d, v1.2d
+	cmhs	v2.2d, v4.2d, v2.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

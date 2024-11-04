@@ -1,7 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	scvtf	d2, w0
-	fcvt	d1, s1
-	fmadd	d0, d1, d0, d2
+	sshll	v16.2d, v7.2s, #0
+	sshll	v17.2d, v6.2s, #0
+	sshll2	v18.2d, v6.4s, #0
+	sshll2	v19.2d, v7.4s, #0
+	scvtf	v6.2d, v16.2d
+	scvtf	v7.2d, v17.2d
+	scvtf	v16.2d, v18.2d
+	fcvtl	v17.2d, v4.2s
+	fcvtl2	v18.2d, v4.4s
+	scvtf	v4.2d, v19.2d
+	fcvtl	v19.2d, v5.2s
+	fcvtl2	v5.2d, v5.4s
+	fmla	v16.2d, v1.2d, v18.2d
+	fmla	v7.2d, v0.2d, v17.2d
+	fmla	v4.2d, v3.2d, v5.2d
+	fmla	v6.2d, v2.2d, v19.2d
+	mov	v0.16b, v7.16b
+	mov	v1.16b, v16.16b
+	mov	v2.16b, v6.16b
+	mov	v3.16b, v4.16b
 	ret
                                         // -- End function

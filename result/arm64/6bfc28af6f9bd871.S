@@ -1,20 +1,40 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mul	w8, w0, w1
-	lsr	w9, w2, #3
-	add	w0, w8, w9, uxtb
+	movi	v6.2d, #0x0000ff000000ff
+	ushr	v7.4s, v4.4s, #3
+	ushr	v4.4s, v5.4s, #3
+	and	v4.16b, v4.16b, v6.16b
+	and	v5.16b, v7.16b, v6.16b
+	mla	v5.4s, v0.4s, v2.4s
+	mla	v4.4s, v1.4s, v3.4s
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	lsr	w8, w2, #7
-	and	w8, w8, #0xfffe00
-	madd	w0, w0, w1, w8
+	mov	w8, #16776704                   // =0xfffe00
+	ushr	v6.4s, v4.4s, #7
+	ushr	v4.4s, v5.4s, #7
+	dup	v5.4s, w8
+	and	v4.16b, v4.16b, v5.16b
+	and	v5.16b, v6.16b, v5.16b
+	mla	v5.4s, v0.4s, v2.4s
+	mla	v4.4s, v1.4s, v3.4s
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ubfx	w8, w2, #4, #4
-	madd	w0, w0, w1, w8
+	movi	v6.4s, #15
+	ushr	v7.4s, v4.4s, #4
+	ushr	v4.4s, v5.4s, #4
+	and	v4.16b, v4.16b, v6.16b
+	and	v5.16b, v7.16b, v6.16b
+	mla	v5.4s, v0.4s, v2.4s
+	mla	v4.4s, v1.4s, v3.4s
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function

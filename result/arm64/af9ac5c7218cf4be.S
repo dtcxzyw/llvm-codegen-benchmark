@@ -1,15 +1,34 @@
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	mov	x9, #20165                      // =0x4ec5
-	sub	x8, x0, x1
-	movk	x9, #50412, lsl #16
-	lsr	x8, x8, #3
-	movk	x9, #60494, lsl #32
-	movk	x9, #20164, lsl #48
-	mul	x8, x8, x9
-	mov	w9, #3                          // =0x3
-	cmp	x8, #3
-	csel	x8, x8, x9, hi
-	add	x0, x8, #1
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	mov	x8, #20165                      // =0x4ec5
+	movk	x8, #50412, lsl #16
+	movk	x8, #60494, lsl #32
+	ushr	v0.2d, v0.2d, #3
+	ushr	v1.2d, v1.2d, #3
+	movk	x8, #20164, lsl #48
+	fmov	x9, d0
+	fmov	x11, d1
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d0, x9
+	mul	x8, x12, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
+	mov	w8, #3                          // =0x3
+	dup	v2.2d, x8
+	mov	w8, #1                          // =0x1
+	cmhi	v3.2d, v1.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	bif	v1.16b, v2.16b, v3.16b
+	bif	v0.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

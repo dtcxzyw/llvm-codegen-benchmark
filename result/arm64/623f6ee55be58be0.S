@@ -1,9 +1,15 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w1, #15
-	add	w9, w0, #15
-	and	w8, w8, #0xfffffff8
-	and	w9, w9, #0xfffffff8
-	add	w0, w9, w8
+	movi	v4.4s, #15
+	add	v3.4s, v3.4s, v4.4s
+	add	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	bic	v3.4s, #7
+	bic	v2.4s, #7
+	bic	v0.4s, #7
+	bic	v1.4s, #7
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

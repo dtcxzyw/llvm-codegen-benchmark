@@ -1,45 +1,85 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w0, mi
+	fcmlt	v0.4s, v0.4s, #0.0
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w0, gt
+	fcmgt	v0.4s, v0.4s, #0.0
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	mov	w8, #2139095040                 // =0x7f800000
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w8, eq
-	csinc	w0, w8, wzr, vc
+	mvni	v1.4s, #127, msl #16
+	mov	w8, #1                          // =0x1
+	fneg	v1.4s, v1.4s
+	fcmgt	v2.4s, v0.4s, v1.4s
+	fcmgt	v0.4s, v1.4s, v0.4s
+	orr	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	mvn	v0.16b, v0.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w0, eq
+	fcmeq	v0.4s, v0.4s, #0.0
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w0, lt
+	fcmge	v0.4s, v0.4s, #0.0
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	mvn	v0.16b, v0.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w0, le
+	fcmgt	v0.4s, v0.4s, #0.0
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	mvn	v0.16b, v0.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w0, ne
+	fcmeq	v0.4s, v0.4s, #0.0
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	mvn	v0.16b, v0.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

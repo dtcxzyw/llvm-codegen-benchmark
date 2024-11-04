@@ -1,77 +1,133 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #63                         // =0x3f
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #63
+	movi	v4.4s, #63
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #31                         // =0x1f
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #31
+	movi	v4.4s, #31
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #2048                       // =0x800
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #8, lsl #8
+	movi	v4.4s, #8, lsl #8
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #32767                      // =0x7fff
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #127, msl #8
+	movi	v4.4s, #127, msl #8
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #32768                      // =0x8000
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #128, lsl #8
+	movi	v4.4s, #128, lsl #8
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #16384                      // =0x4000
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #64, lsl #8
+	movi	v4.4s, #64, lsl #8
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #32769                      // =0x8001
-	madd	w0, w8, w0, w9
+	mov	w8, #32769                      // =0x8001
+	ushll2	v4.4s, v2.8h, #0
+	ushll	v5.4s, v2.4h, #0
+	dup	v3.4s, w8
+	mov	v2.16b, v3.16b
+	mla	v3.4s, v5.4s, v0.4s
+	mla	v2.4s, v4.4s, v1.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #3                          // =0x3
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #3
+	movi	v4.4s, #3
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #-1                         // =0xffffffff
-	madd	w0, w8, w0, w9
+	movi	v3.2d, #0xffffffffffffffff
+	movi	v4.2d, #0xffffffffffffffff
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #32                         // =0x20
-	madd	w0, w8, w0, w9
+	movi	v3.4s, #32
+	movi	v4.4s, #32
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	mov	w9, #-1                         // =0xffffffff
-	madd	w0, w8, w0, w9
+	movi	v3.2d, #0xffffffffffffffff
+	movi	v4.2d, #0xffffffffffffffff
+	ushll2	v5.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	mla	v4.4s, v5.4s, v1.4s
+	mla	v3.4s, v2.4s, v0.4s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function

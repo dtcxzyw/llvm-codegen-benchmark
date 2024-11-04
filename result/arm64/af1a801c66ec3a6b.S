@@ -1,21 +1,36 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	neg	w9, w8
-	and	w0, w9, w8, asr #31
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	neg	v2.4s, v1.4s
+	neg	v3.4s, v0.4s
+	cmlt	v0.4s, v0.4s, #0
+	cmlt	v1.4s, v1.4s, #0
+	and	v0.16b, v0.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	cmp	w8, #0
-	csneg	w0, wzr, w8, gt
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	cmgt	v2.4s, v1.4s, #0
+	cmgt	v3.4s, v0.4s, #0
+	neg	v1.4s, v1.4s
+	neg	v0.4s, v0.4s
+	bic	v1.16b, v1.16b, v2.16b
+	bic	v0.16b, v0.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000005a:                   // @func000000000000005a
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	neg	w9, w8
-	and	w0, w9, w8, asr #31
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	neg	v2.4s, v1.4s
+	neg	v3.4s, v0.4s
+	cmlt	v0.4s, v0.4s, #0
+	cmlt	v1.4s, v1.4s, #0
+	and	v0.16b, v0.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

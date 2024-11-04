@@ -1,12 +1,22 @@
 func000000000000006a:                   // @func000000000000006a
 // %bb.0:                               // %entry
-	fcmp	s1, #0.0
-	fmov	s1, #1.00000000
-	cset	w8, lt
-	fcmp	s0, s1
-	orr	w8, w8, w0
-	cset	w9, hi
-	orr	w8, w8, w9
-	and	w0, w8, #0x1
+	ldr	q16, [sp]
+	fmov	v17.4s, #1.00000000
+	fcmge	v7.4s, v7.4s, #0.0
+	fcmge	v6.4s, v6.4s, #0.0
+	fcmge	v5.4s, v5.4s, #0.0
+	fcmge	v16.4s, v16.4s, #0.0
+	fcmge	v4.4s, v17.4s, v4.4s
+	fcmge	v3.4s, v17.4s, v3.4s
+	fcmge	v2.4s, v17.4s, v2.4s
+	fcmge	v1.4s, v17.4s, v1.4s
+	uzp1	v5.8h, v5.8h, v6.8h
+	uzp1	v7.8h, v7.8h, v16.8h
+	uzp1	v3.8h, v3.8h, v4.8h
+	uzp1	v1.8h, v1.8h, v2.8h
+	uzp1	v2.16b, v5.16b, v7.16b
+	uzp1	v1.16b, v1.16b, v3.16b
+	orn	v0.16b, v0.16b, v2.16b
+	orn	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

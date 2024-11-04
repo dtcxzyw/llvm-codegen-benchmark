@@ -1,35 +1,40 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
-	madd	w8, w1, w8, w0
-	and	w0, w8, #0xffff
+	movi	v2.8h, #12
+	mla	v0.8h, v1.8h, v2.8h
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	mov	w8, #60                         // =0x3c
-	madd	w8, w1, w8, w0
-	and	w0, w8, #0xffff
+	movi	v2.8h, #60
+	mla	v0.8h, v1.8h, v2.8h
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #51                         // =0x33
-	madd	w8, w1, w8, w0
-	and	w0, w8, #0xffff
+	movi	v2.8h, #51
+	mla	v0.8h, v1.8h, v2.8h
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	add	w8, w1, w1, lsl #1
-	add	w8, w8, w0
-	and	w0, w8, #0xffff
+	movi	v2.8h, #3
+	mla	v0.8h, v1.8h, v2.8h
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mov	w8, #192                        // =0xc0
-	madd	w8, w1, w8, w0
-	and	w0, w8, #0xffff
+	movi	v2.8h, #192
+	mla	v0.8h, v1.8h, v2.8h
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

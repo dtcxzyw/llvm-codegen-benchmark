@@ -1,32 +1,30 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	and	w9, w1, #0xff
-	cmp	w8, #1
-	cset	w8, eq
-	cmp	w9, #90
-	cset	w9, eq
-	tst	w0, #0x1
-	csel	w0, w9, w8, ne
+	movi	v3.16b, #1
+	movi	v4.16b, #90
+	shl	v0.16b, v0.16b, #7
+	cmlt	v0.16b, v0.16b, #0
+	cmeq	v2.16b, v2.16b, v3.16b
+	cmeq	v1.16b, v1.16b, v4.16b
+	bsl	v0.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	and	w9, w1, #0xff
-	cmp	w8, #2
-	cset	w8, hi
-	cmp	w9, #8
-	cset	w9, hi
-	tst	w0, #0x1
-	csel	w0, w9, w8, ne
+	movi	v3.16b, #2
+	movi	v4.16b, #8
+	shl	v0.16b, v0.16b, #7
+	cmlt	v0.16b, v0.16b, #0
+	cmhi	v2.16b, v2.16b, v3.16b
+	cmhi	v1.16b, v1.16b, v4.16b
+	bsl	v0.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func00000000000000cc:                   // @func00000000000000cc
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csel	w8, w1, w2, ne
-	tst	w8, #0xff
-	cset	w0, ne
+	shl	v0.16b, v0.16b, #7
+	cmlt	v0.16b, v0.16b, #0
+	bsl	v0.16b, v1.16b, v2.16b
+	cmtst	v0.16b, v0.16b, v0.16b
 	ret
                                         // -- End function

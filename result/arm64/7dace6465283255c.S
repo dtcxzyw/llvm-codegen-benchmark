@@ -1,18 +1,18 @@
 func000000000000005a:                   // @func000000000000005a
 // %bb.0:                               // %entry
-	cmp	w1, w0
-	add	w8, w2, w0
-	csel	w9, w1, w0, lt
-	cmp	w8, w9
-	cset	w0, gt
+	uzp1	v2.4s, v2.4s, v3.4s
+	smin	v1.4s, v1.4s, v0.4s
+	add	v0.4s, v2.4s, v0.4s
+	cmgt	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	add	w8, w2, w0
-	csel	w9, w0, w1, lt
-	cmp	w8, w9
-	cset	w0, gt
+	uzp1	v2.4s, v2.4s, v3.4s
+	smin	v1.4s, v0.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	cmgt	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

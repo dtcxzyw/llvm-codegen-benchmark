@@ -1,14 +1,17 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csel	w8, w0, w1, hi
-	sub	x0, x8, #1
+	movi	v2.2d, #0xffffffffffffffff
+	umax	v0.4s, v0.4s, v1.4s
+	uaddw2	v1.2d, v2.2d, v0.4s
+	uaddw	v0.2d, v2.2d, v0.2s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csel	w8, w0, w1, hi
-	add	x0, x8, #1904
+	mov	w8, #1904                       // =0x770
+	umax	v1.4s, v0.4s, v1.4s
+	dup	v2.2d, x8
+	uaddw	v0.2d, v2.2d, v1.2s
+	uaddw2	v1.2d, v2.2d, v1.4s
 	ret
                                         // -- End function

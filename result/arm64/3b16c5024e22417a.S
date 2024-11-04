@@ -1,41 +1,60 @@
 func000000000000003a:                   // @func000000000000003a
 // %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
-	orr	w9, w0, w1
-	orr	w8, w2, w8
-	cmp	w9, w8
-	cset	w0, gt
+	orr	v4.4s, #10
+	orr	v5.4s, #10
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
+	cmgt	v0.4s, v0.4s, v4.4s
+	cmgt	v1.4s, v1.4s, v5.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x2
-	orr	w9, w0, w1
-	cmp	w9, w8
-	cset	w0, eq
+	orr	v4.4s, #2
+	orr	v5.4s, #2
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
+	cmeq	v0.4s, v0.4s, v4.4s
+	cmeq	v1.4s, v1.4s, v5.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x20000000
-	orr	w9, w0, w1
-	cmp	w9, w8
-	cset	w0, eq
+	orr	v4.4s, #32, lsl #24
+	orr	v5.4s, #32, lsl #24
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
+	cmeq	v0.4s, v0.4s, v4.4s
+	cmeq	v1.4s, v1.4s, v5.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x3
-	orr	w9, w0, w1
-	cmp	w9, w8
-	cset	w0, hi
+	orr	v4.4s, #3
+	orr	v5.4s, #3
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
+	cmhi	v0.4s, v0.4s, v4.4s
+	cmhi	v1.4s, v1.4s, v5.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	orr	w8, w2, #0x2
-	orr	w9, w0, w1
-	cmp	w9, w8
-	cset	w0, lo
+	orr	v4.4s, #2
+	orr	v5.4s, #2
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
+	cmhi	v0.4s, v4.4s, v0.4s
+	cmhi	v1.4s, v5.4s, v1.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

@@ -1,12 +1,26 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	d1, #0000000000000000
-	fabd	d0, d1, d0
+	movi	v16.2d, #0000000000000000
+	fabd	v0.2d, v16.2d, v0.2d
+	fabd	v1.2d, v16.2d, v1.2d
+	fabd	v2.2d, v16.2d, v2.2d
+	fabd	v3.2d, v16.2d, v3.2d
+	fabd	v4.2d, v16.2d, v4.2d
+	fabd	v5.2d, v16.2d, v5.2d
+	fabd	v6.2d, v16.2d, v6.2d
+	fabd	v7.2d, v16.2d, v7.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	d1, #1.00000000
-	fabd	d0, d1, d0
+	fmov	v16.2d, #1.00000000
+	fabd	v0.2d, v16.2d, v0.2d
+	fabd	v1.2d, v16.2d, v1.2d
+	fabd	v2.2d, v16.2d, v2.2d
+	fabd	v3.2d, v16.2d, v3.2d
+	fabd	v4.2d, v16.2d, v4.2d
+	fabd	v5.2d, v16.2d, v5.2d
+	fabd	v6.2d, v16.2d, v6.2d
+	fabd	v7.2d, v16.2d, v7.2d
 	ret
                                         // -- End function

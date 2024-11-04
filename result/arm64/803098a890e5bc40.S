@@ -1,35 +1,40 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w8, w0
-	csinc	w0, w0, w1, le
+	movi	v3.4s, #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	smax	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	cmp	w0, w8
-	csel	w0, w0, w8, gt
+	movi	v3.2d, #0xffffffffffffffff
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	smax	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w0, w8
-	csinc	w0, w0, w1, gt
+	movi	v3.4s, #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	smax	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	cmp	w8, w0
-	csel	w0, w8, w0, gt
+	movi	v3.2d, #0xffffffffffffffff
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	smax	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w0, w8
-	csinc	w0, w0, w1, gt
+	movi	v3.4s, #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	smax	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

@@ -1,30 +1,60 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	orr	x8, x0, x1, lsl #16
-	orr	x0, x8, x1, lsl #24
+	shl	v4.2d, v3.2d, #16
+	shl	v5.2d, v2.2d, #16
+	shl	v3.2d, v3.2d, #24
+	shl	v2.2d, v2.2d, #24
+	orr	v1.16b, v4.16b, v1.16b
+	orr	v0.16b, v5.16b, v0.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	orr	x8, x0, x1, lsl #8
-	orr	x0, x8, x1, lsl #24
+	shl	v4.2d, v3.2d, #8
+	shl	v5.2d, v2.2d, #8
+	shl	v3.2d, v3.2d, #24
+	shl	v2.2d, v2.2d, #24
+	orr	v1.16b, v4.16b, v1.16b
+	orr	v0.16b, v5.16b, v0.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-	orr	x8, x0, x1, lsl #31
-	orr	x0, x8, x1, lsl #32
+	shl	v4.2d, v3.2d, #31
+	shl	v5.2d, v2.2d, #31
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	orr	v1.16b, v4.16b, v1.16b
+	orr	v0.16b, v5.16b, v0.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
-	orr	x8, x0, x1, lsl #48
-	orr	x0, x8, x1, lsl #16
+	shl	v4.2d, v3.2d, #48
+	shl	v5.2d, v2.2d, #48
+	shl	v3.2d, v3.2d, #16
+	shl	v2.2d, v2.2d, #16
+	orr	v1.16b, v4.16b, v1.16b
+	orr	v0.16b, v5.16b, v0.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	orr	x8, x0, x1, lsl #32
-	orr	x0, x8, x1, lsl #48
+	shl	v4.2d, v3.2d, #32
+	shl	v5.2d, v2.2d, #32
+	shl	v3.2d, v3.2d, #48
+	shl	v2.2d, v2.2d, #48
+	orr	v1.16b, v4.16b, v1.16b
+	orr	v0.16b, v5.16b, v0.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

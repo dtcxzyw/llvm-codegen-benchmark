@@ -1,37 +1,70 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsr	w8, w1, #4
-	cmp	w0, #0
-	and	w8, w8, #0x100
-	csel	w0, w8, wzr, eq
+	ushr	v2.4s, v2.4s, #4
+	ushr	v3.4s, v3.4s, #4
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	movi	v4.4s, #1, lsl #8
+	and	v1.16b, v3.16b, v1.16b
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ubfx	w8, w1, #4, #3
-	cmp	w0, #17
-	csel	w0, w8, wzr, lo
+	movi	v4.4s, #17
+	movi	v5.4s, #7
+	ushr	v2.4s, v2.4s, #4
+	ushr	v3.4s, v3.4s, #4
+	cmhi	v1.4s, v4.4s, v1.4s
+	cmhi	v0.4s, v4.4s, v0.4s
+	and	v2.16b, v2.16b, v5.16b
+	and	v3.16b, v3.16b, v5.16b
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	ubfx	w9, w1, #3, #5
-	mov	w8, #9                          // =0x9
-	cmp	w0, #0
-	csel	w0, w9, w8, lt
+	ushr	v2.4s, v2.4s, #3
+	ushr	v3.4s, v3.4s, #3
+	cmlt	v1.4s, v1.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	movi	v4.4s, #9
+	movi	v5.4s, #31
+	and	v3.16b, v3.16b, v1.16b
+	and	v2.16b, v2.16b, v0.16b
+	bic	v0.16b, v4.16b, v0.16b
+	bic	v1.16b, v4.16b, v1.16b
+	and	v3.16b, v3.16b, v5.16b
+	and	v2.16b, v2.16b, v5.16b
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	ubfx	w8, w1, #5, #5
-	cmp	w0, #0
-	csel	w0, w8, wzr, gt
+	ushr	v2.4s, v2.4s, #5
+	ushr	v3.4s, v3.4s, #5
+	cmgt	v1.4s, v1.4s, #0
+	cmgt	v0.4s, v0.4s, #0
+	movi	v4.4s, #31
+	and	v1.16b, v3.16b, v1.16b
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ubfx	w8, w1, #11, #16
-	cmp	w0, #0
-	csel	w0, wzr, w8, eq
+	ushr	v3.4s, v3.4s, #11
+	ushr	v2.4s, v2.4s, #11
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	bic	v3.4s, #31, lsl #16
+	bic	v2.4s, #31, lsl #16
+	bic	v0.16b, v2.16b, v0.16b
+	bic	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

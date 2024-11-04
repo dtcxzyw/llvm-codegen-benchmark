@@ -1,18 +1,16 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x1, #0xff
-	and	x9, x0, #0xffff
-	umull	x0, w9, w8
+	bic	v1.4h, #255, lsl #8
+	umull	v0.4s, v0.4h, v1.4h
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x1, #0xff
-	and	x9, x0, #0xffff
-	umull	x0, w9, w8
+	bic	v1.4h, #255, lsl #8
+	umull	v0.4s, v0.4h, v1.4h
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

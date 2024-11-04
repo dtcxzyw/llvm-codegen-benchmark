@@ -1,29 +1,39 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #-67                        // =0xffffffbd
-	sub	w9, w1, #16
-	tst	w0, #0x1
-	csel	w0, w8, w9, ne
+	movi	v2.16b, #240
+	shl	v0.16b, v0.16b, #7
+	movi	v3.16b, #189
+	cmlt	v0.16b, v0.16b, #0
+	add	v1.16b, v1.16b, v2.16b
+	bsl	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w1, #16
-	tst	w0, #0x1
-	csel	w0, wzr, w8, ne
+	movi	v2.16b, #240
+	shl	v0.16b, v0.16b, #7
+	cmge	v0.16b, v0.16b, #0
+	add	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #48                         // =0x30
-	tst	w0, #0x1
-	csinc	w0, w8, w1, ne
+	movi	v2.16b, #1
+	shl	v0.16b, v0.16b, #7
+	movi	v3.16b, #48
+	cmlt	v0.16b, v0.16b, #0
+	add	v1.16b, v1.16b, v2.16b
+	bsl	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #-2                         // =0xfffffffe
-	tst	w0, #0x1
-	csinc	w0, w8, w1, ne
+	movi	v2.16b, #1
+	shl	v0.16b, v0.16b, #7
+	movi	v3.16b, #254
+	cmlt	v0.16b, v0.16b, #0
+	add	v1.16b, v1.16b, v2.16b
+	bsl	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

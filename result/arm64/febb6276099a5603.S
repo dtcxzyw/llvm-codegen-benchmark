@@ -1,9 +1,10 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w9, w0, #1
-	mov	w8, #4                          // =0x4
-	and	w10, w9, #0xffff
-	tst	w9, #0xfffc
-	csel	w0, w10, w8, eq
+	movi	v2.2d, #0xffffffffffffffff
+	movi	v3.8h, #4
+	add	v1.8h, v1.8h, v2.8h
+	add	v0.8h, v0.8h, v2.8h
+	umin	v0.8h, v0.8h, v3.8h
+	umin	v1.8h, v1.8h, v3.8h
 	ret
                                         // -- End function

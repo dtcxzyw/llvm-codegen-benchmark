@@ -1,13 +1,20 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	orr	x8, x1, x2
-	orn	x0, x0, x8
+	orr	v3.16b, v3.16b, v5.16b
+	orr	v2.16b, v2.16b, v4.16b
+	orn	v0.16b, v0.16b, v2.16b
+	orn	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	orr	x8, x1, x2
-	eor	x8, x8, #0x100
-	orr	x0, x8, x0
+	mov	w8, #256                        // =0x100
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	dup	v4.2d, x8
+	eor	v3.16b, v3.16b, v4.16b
+	eor	v2.16b, v2.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

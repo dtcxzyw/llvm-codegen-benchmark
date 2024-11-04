@@ -1,18 +1,26 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	d2, #0.50000000
-	ucvtf	d3, x0
-	fmul	d1, d1, d2
-	fdiv	d1, d1, d3
-	fadd	d0, d1, d0
+	fmov	v6.2d, #0.50000000
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fmul	v3.2d, v3.2d, v6.2d
+	fmul	v2.2d, v2.2d, v6.2d
+	fdiv	v3.2d, v3.2d, v5.2d
+	fdiv	v2.2d, v2.2d, v4.2d
+	fadd	v1.2d, v3.2d, v1.2d
+	fadd	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	d2, #0.50000000
-	ucvtf	d3, x0
-	fmul	d1, d1, d2
-	fdiv	d1, d1, d3
-	fadd	d0, d1, d0
+	fmov	v6.2d, #0.50000000
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fmul	v3.2d, v3.2d, v6.2d
+	fmul	v2.2d, v2.2d, v6.2d
+	fdiv	v3.2d, v3.2d, v5.2d
+	fdiv	v2.2d, v2.2d, v4.2d
+	fadd	v1.2d, v3.2d, v1.2d
+	fadd	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function

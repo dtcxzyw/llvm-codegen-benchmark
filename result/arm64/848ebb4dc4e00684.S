@@ -1,12 +1,12 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	rev	x8, x0
-	fmov	d0, x8
+	rev64	v0.16b, v0.16b
+	rev64	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	rev	x8, x0
-	fmov	d0, x8
+	rev64	v0.16b, v0.16b
+	rev64	v1.16b, v1.16b
 	ret
                                         // -- End function

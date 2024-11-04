@@ -1,30 +1,40 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	asr	w8, w1, #16
-	mul	w0, w8, w0
+	sshr	v3.4s, v3.4s, #16
+	sshr	v2.4s, v2.4s, #16
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	asr	w8, w1, #16
-	mul	w0, w8, w0
+	sshr	v3.4s, v3.4s, #16
+	sshr	v2.4s, v2.4s, #16
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	asr	w8, w1, #16
-	mul	w0, w8, w0
+	sshr	v3.4s, v3.4s, #16
+	sshr	v2.4s, v2.4s, #16
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	asr	w8, w1, #9
-	mul	w0, w8, w0
+	sshr	v3.4s, v3.4s, #9
+	sshr	v2.4s, v2.4s, #9
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	asr	w8, w1, #1
-	mul	w0, w8, w0
+	sshr	v3.4s, v3.4s, #1
+	sshr	v2.4s, v2.4s, #1
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

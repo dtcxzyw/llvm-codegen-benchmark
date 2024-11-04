@@ -1,30 +1,75 @@
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	mov	x9, #16463                      // =0x404f
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xff
-	movk	x9, #12176, lsl #16
-	orr	x8, x0, x8, lsl #8
-	movk	x9, #27195, lsl #32
-	movk	x9, #39649, lsl #48
-	mul	x0, x8, x9
+	bic	v2.4h, #255, lsl #8
+	mov	x8, #16463                      // =0x404f
+	movk	x8, #12176, lsl #16
+	movk	x8, #27195, lsl #32
+	ushll	v2.4s, v2.4h, #0
+	movk	x8, #39649, lsl #48
+	ushll2	v3.2d, v2.4s, #8
+	ushll	v2.2d, v2.2s, #8
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	fmov	x9, d1
+	fmov	x11, d0
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d1, x9
+	mul	x8, x12, x8
+	fmov	d0, x11
+	mov	v1.d[1], x10
+	mov	v0.d[1], x8
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xff
-	orr	x8, x0, x8, lsl #8
+	bic	v2.4h, #255, lsl #8
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #8
+	ushll	v2.2d, v2.2s, #8
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
+	fmov	x10, d1
+	fmov	x11, d0
+	mov	x8, v1.d[1]
+	mov	x9, v0.d[1]
+	add	x10, x10, x10, lsl #2
+	add	x11, x11, x11, lsl #2
 	add	x8, x8, x8, lsl #2
-	lsl	x0, x8, #2
+	lsl	x10, x10, #2
+	lsl	x11, x11, #2
+	add	x9, x9, x9, lsl #2
+	lsl	x8, x8, #2
+	fmov	d1, x10
+	fmov	d0, x11
+	lsl	x9, x9, #2
+	mov	v1.d[1], x8
+	mov	v0.d[1], x9
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xff
-	mov	x9, #281479271743489            // =0x1000100010001
-	orr	x8, x0, x8, lsl #8
-	mul	x0, x8, x9
+	bic	v2.4h, #255, lsl #8
+	mov	x8, #281479271743489            // =0x1000100010001
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #8
+	ushll	v2.2d, v2.2s, #8
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	fmov	x9, d1
+	fmov	x11, d0
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d1, x9
+	mul	x8, x12, x8
+	fmov	d0, x11
+	mov	v1.d[1], x10
+	mov	v0.d[1], x8
 	ret
                                         // -- End function

@@ -1,38 +1,56 @@
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	asr	w8, w2, #16
-	mov	w9, #42123                      // =0xa48b
-	mov	w10, #57818                     // =0xe1da
-	movk	w10, #581, lsl #16
-	madd	w9, w1, w9, w0
-	madd	w0, w8, w10, w9
+	mov	w8, #42123                      // =0xa48b
+	dup	v6.4s, w8
+	mov	w8, #57818                      // =0xe1da
+	movk	w8, #581, lsl #16
+	mla	v1.4s, v3.4s, v6.4s
+	mla	v0.4s, v2.4s, v6.4s
+	sshr	v2.4s, v4.4s, #16
+	sshr	v3.4s, v5.4s, #16
+	dup	v4.4s, w8
+	mla	v0.4s, v2.4s, v4.4s
+	mla	v1.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000150:                   // @func0000000000000150
 // %bb.0:                               // %entry
-	mov	w9, #57818                      // =0xe1da
-	asr	w8, w2, #16
-	mov	w10, #23                        // =0x17
-	movk	w9, #581, lsl #16
-	madd	w9, w1, w9, w0
-	madd	w0, w8, w10, w9
+	mov	w8, #57818                      // =0xe1da
+	movi	v7.4s, #23
+	movk	w8, #581, lsl #16
+	dup	v6.4s, w8
+	mla	v1.4s, v3.4s, v6.4s
+	mla	v0.4s, v2.4s, v6.4s
+	sshr	v2.4s, v4.4s, #16
+	sshr	v3.4s, v5.4s, #16
+	mla	v0.4s, v2.4s, v7.4s
+	mla	v1.4s, v3.4s, v7.4s
 	ret
                                         // -- End function
 func0000000000000110:                   // @func0000000000000110
 // %bb.0:                               // %entry
-	asr	w8, w2, #16
-	mov	w9, #1013                       // =0x3f5
-	mov	w10, #1619                      // =0x653
-	madd	w9, w1, w9, w0
-	madd	w0, w8, w10, w9
+	mov	w8, #1013                       // =0x3f5
+	dup	v6.4s, w8
+	mov	w8, #1619                       // =0x653
+	mla	v1.4s, v3.4s, v6.4s
+	mla	v0.4s, v2.4s, v6.4s
+	sshr	v2.4s, v4.4s, #16
+	sshr	v3.4s, v5.4s, #16
+	dup	v4.4s, w8
+	mla	v0.4s, v2.4s, v4.4s
+	mla	v1.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #-12289                     // =0xffffcfff
-	asr	w9, w1, #27
-	mov	w10, #-49156                    // =0xffff3ffc
-	madd	w8, w2, w8, w0
-	madd	w0, w9, w10, w8
+	mvni	v6.4s, #48, lsl #8
+	mov	w8, #-49156                     // =0xffff3ffc
+	sshr	v2.4s, v2.4s, #27
+	sshr	v3.4s, v3.4s, #27
+	mla	v1.4s, v5.4s, v6.4s
+	mla	v0.4s, v4.4s, v6.4s
+	dup	v4.4s, w8
+	mla	v0.4s, v2.4s, v4.4s
+	mla	v1.4s, v3.4s, v4.4s
 	ret
                                         // -- End function

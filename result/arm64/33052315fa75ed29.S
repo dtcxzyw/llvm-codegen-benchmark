@@ -1,21 +1,27 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsr	w8, w2, #2
-	tst	w1, #0x1
-	mov	w9, #7                          // =0x7
-	csel	w9, w9, wzr, ne
-	and	w8, w8, #0x4
-	orr	w9, w9, w0
-	orr	w0, w8, w9
+	movi	v3.16b, #4
+	shl	v1.16b, v1.16b, #7
+	ushr	v2.16b, v2.16b, #2
+	movi	v4.16b, #7
+	cmlt	v1.16b, v1.16b, #0
+	and	v2.16b, v2.16b, v3.16b
+	and	v1.16b, v1.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	tst	w1, #0x1
-	mov	w9, #4                          // =0x4
-	csel	w8, w9, w8, ne
-	bfxil	w8, w2, #2, #1
-	orr	w0, w8, w0
+	shl	v1.16b, v1.16b, #7
+	movi	v3.16b, #1
+	ushr	v2.16b, v2.16b, #2
+	movi	v4.16b, #2
+	movi	v5.16b, #4
+	cmlt	v1.16b, v1.16b, #0
+	and	v2.16b, v2.16b, v3.16b
+	bsl	v1.16b, v5.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

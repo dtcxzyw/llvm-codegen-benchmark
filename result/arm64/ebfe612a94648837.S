@@ -1,9 +1,29 @@
 func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
-	eor	x8, x0, #0x3f
+	mov	w8, #63                         // =0x3f
+	dup	v2.2d, x8
+	eor	v0.16b, v0.16b, v2.16b
+	eor	v1.16b, v1.16b, v2.16b
+	fmov	x10, d0
+	fmov	x11, d1
+	mov	x8, v0.d[1]
+	mov	x9, v1.d[1]
+	add	x10, x10, x10, lsl #3
+	add	x11, x11, x11, lsl #3
 	add	x8, x8, x8, lsl #3
-	add	x8, x8, #73
-	lsr	x8, x8, #6
-	add	x0, x8, #1
+	fmov	d0, x10
+	fmov	d2, x11
+	add	x9, x9, x9, lsl #3
+	mov	v0.d[1], x8
+	mov	w8, #73                         // =0x49
+	mov	v2.d[1], x9
+	dup	v3.2d, x8
+	mov	w8, #1                          // =0x1
+	dup	v1.2d, x8
+	add	v2.2d, v2.2d, v3.2d
+	add	v3.2d, v0.2d, v3.2d
+	mov	v0.16b, v1.16b
+	usra	v1.2d, v2.2d, #6
+	usra	v0.2d, v3.2d, #6
 	ret
                                         // -- End function

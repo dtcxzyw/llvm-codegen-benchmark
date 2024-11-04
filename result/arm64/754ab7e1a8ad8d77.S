@@ -1,26 +1,110 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmov	s1, #1.00000000
-	movi	d2, #0000000000000000
-	fcmp	s0, s1
-	cset	w8, gt
-	tst	w1, #0x1
-	fcsel	s1, s1, s2, ne
-	orr	w8, w8, w0
-	tst	w8, #0x1
-	fcsel	s0, s1, s0, ne
+	fmov	v6.4s, #1.00000000
+	fcmgt	v7.4s, v3.4s, v6.4s
+	fcmgt	v16.4s, v2.4s, v6.4s
+	fcmgt	v17.4s, v1.4s, v6.4s
+	fcmgt	v18.4s, v0.4s, v6.4s
+	uzp1	v7.8h, v16.8h, v7.8h
+	uzp1	v16.8h, v18.8h, v17.8h
+	zip2	v17.8b, v5.8b, v0.8b
+	uzp1	v7.16b, v16.16b, v7.16b
+	ext	v16.16b, v5.16b, v5.16b, #8
+	zip1	v5.8b, v5.8b, v0.8b
+	ushll	v17.4s, v17.4h, #0
+	orr	v4.16b, v7.16b, v4.16b
+	zip2	v7.8b, v16.8b, v0.8b
+	zip1	v16.8b, v16.8b, v0.8b
+	ushll	v5.4s, v5.4h, #0
+	shl	v17.4s, v17.4s, #31
+	ext	v18.16b, v4.16b, v4.16b, #8
+	zip1	v19.8b, v4.8b, v0.8b
+	zip2	v4.8b, v4.8b, v0.8b
+	ushll	v7.4s, v7.4h, #0
+	ushll	v16.4s, v16.4h, #0
+	shl	v5.4s, v5.4s, #31
+	cmlt	v17.4s, v17.4s, #0
+	zip1	v20.8b, v18.8b, v0.8b
+	zip2	v18.8b, v18.8b, v0.8b
+	shl	v7.4s, v7.4s, #31
+	shl	v16.4s, v16.4s, #31
+	ushll	v19.4s, v19.4h, #0
+	ushll	v4.4s, v4.4h, #0
+	cmlt	v5.4s, v5.4s, #0
+	and	v17.16b, v6.16b, v17.16b
+	cmlt	v7.4s, v7.4s, #0
+	ushll	v20.4s, v20.4h, #0
+	ushll	v18.4s, v18.4h, #0
+	cmlt	v16.4s, v16.4s, #0
+	shl	v19.4s, v19.4s, #31
+	shl	v4.4s, v4.4s, #31
+	and	v5.16b, v6.16b, v5.16b
+	and	v7.16b, v6.16b, v7.16b
+	shl	v20.4s, v20.4s, #31
+	shl	v18.4s, v18.4s, #31
+	and	v16.16b, v6.16b, v16.16b
+	cmlt	v6.4s, v19.4s, #0
+	cmlt	v4.4s, v4.4s, #0
+	cmlt	v19.4s, v20.4s, #0
+	cmlt	v18.4s, v18.4s, #0
+	bit	v0.16b, v5.16b, v6.16b
+	bit	v1.16b, v17.16b, v4.16b
+	bit	v2.16b, v16.16b, v19.16b
+	bit	v3.16b, v7.16b, v18.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	movi	d1, #0000000000000000
-	fmov	s2, #1.00000000
-	cset	w8, mi
-	tst	w1, #0x1
-	fcsel	s1, s1, s2, ne
-	orr	w8, w8, w0
-	tst	w8, #0x1
-	fcsel	s0, s1, s0, ne
+	fcmlt	v6.4s, v3.4s, #0.0
+	fcmlt	v7.4s, v2.4s, #0.0
+	fcmlt	v16.4s, v1.4s, #0.0
+	fcmlt	v17.4s, v0.4s, #0.0
+	fmov	v20.4s, #1.00000000
+	uzp1	v6.8h, v7.8h, v6.8h
+	uzp1	v7.8h, v17.8h, v16.8h
+	zip2	v16.8b, v5.8b, v0.8b
+	uzp1	v6.16b, v7.16b, v6.16b
+	ext	v7.16b, v5.16b, v5.16b, #8
+	zip1	v5.8b, v5.8b, v0.8b
+	ushll	v16.4s, v16.4h, #0
+	orr	v4.16b, v6.16b, v4.16b
+	zip2	v6.8b, v7.8b, v0.8b
+	zip1	v7.8b, v7.8b, v0.8b
+	ushll	v5.4s, v5.4h, #0
+	shl	v16.4s, v16.4s, #31
+	ext	v17.16b, v4.16b, v4.16b, #8
+	zip1	v18.8b, v4.8b, v0.8b
+	zip2	v4.8b, v4.8b, v0.8b
+	ushll	v6.4s, v6.4h, #0
+	ushll	v7.4s, v7.4h, #0
+	shl	v5.4s, v5.4s, #31
+	cmge	v16.4s, v16.4s, #0
+	zip1	v19.8b, v17.8b, v0.8b
+	zip2	v17.8b, v17.8b, v0.8b
+	shl	v6.4s, v6.4s, #31
+	shl	v7.4s, v7.4s, #31
+	ushll	v18.4s, v18.4h, #0
+	ushll	v4.4s, v4.4h, #0
+	cmge	v5.4s, v5.4s, #0
+	and	v16.16b, v20.16b, v16.16b
+	cmge	v6.4s, v6.4s, #0
+	ushll	v19.4s, v19.4h, #0
+	ushll	v17.4s, v17.4h, #0
+	cmge	v7.4s, v7.4s, #0
+	shl	v18.4s, v18.4s, #31
+	shl	v4.4s, v4.4s, #31
+	and	v5.16b, v20.16b, v5.16b
+	and	v6.16b, v20.16b, v6.16b
+	shl	v19.4s, v19.4s, #31
+	shl	v17.4s, v17.4s, #31
+	and	v7.16b, v20.16b, v7.16b
+	cmlt	v18.4s, v18.4s, #0
+	cmlt	v4.4s, v4.4s, #0
+	cmlt	v19.4s, v19.4s, #0
+	cmlt	v17.4s, v17.4s, #0
+	bit	v0.16b, v5.16b, v18.16b
+	bit	v1.16b, v16.16b, v4.16b
+	bit	v2.16b, v7.16b, v19.16b
+	bit	v3.16b, v6.16b, v17.16b
 	ret
                                         // -- End function

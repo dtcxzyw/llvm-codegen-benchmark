@@ -1,13 +1,22 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1
-	orr	w0, w8, w0, lsl #1
+	movi	v2.4h, #1
+	add	v0.4s, v0.4s, v0.4s
+	and	v1.8b, v1.8b, v2.8b
+	ushll	v1.4s, v1.4h, #0
+	orr	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	bfi	w1, w0, #1, #31
-	mov	x0, x1
+	movi	v2.4h, #1
+	add	v0.4s, v0.4s, v0.4s
+	and	v1.8b, v1.8b, v2.8b
+	ushll	v1.4s, v1.4h, #0
+	orr	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

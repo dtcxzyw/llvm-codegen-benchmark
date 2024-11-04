@@ -1,44 +1,49 @@
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #-55                        // =0xffffffc9
-	and	w10, w0, #0xff
-	cmp	w9, #6
-	mov	w9, #-87                        // =0xffffffa9
-	csel	w8, w9, w8, lo
-	cmp	w10, #10
-	mov	w9, #-48                        // =0xffffffd0
-	csel	w0, w9, w8, lo
+	movi	v2.16b, #6
+	movi	v3.16b, #201
+	movi	v4.16b, #169
+	cmhi	v1.16b, v2.16b, v1.16b
+	movi	v2.16b, #10
+	bsl	v1.16b, v4.16b, v3.16b
+	movi	v3.16b, #208
+	cmhi	v0.16b, v2.16b, v0.16b
+	bsl	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #3                          // =0x3
-	cmp	w9, #2
-	cset	w9, ne
-	tst	w0, #0xfe
-	lsl	w9, w9, #1
-	csel	w0, w8, w9, eq
+	movi	v2.16b, #2
+	movi	v3.16b, #3
+	cmeq	v1.16b, v1.16b, v2.16b
+	cmhi	v0.16b, v2.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	bic	v1.16b, v1.16b, v0.16b
+	and	v0.16b, v0.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #1                          // =0x1
-	and	w10, w0, #0xff
-	cmp	w9, #2
-	cinc	w8, w8, lo
-	cmp	w10, #5
-	csel	w0, wzr, w8, eq
+	movi	v2.16b, #2
+	movi	v3.16b, #5
+	cmhi	v1.16b, v2.16b, v1.16b
+	cmeq	v0.16b, v0.16b, v3.16b
+	and	v2.16b, v1.16b, v2.16b
+	mvn	v1.16b, v1.16b
+	sub	v1.16b, v2.16b, v1.16b
+	bic	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	tst	w1, #0xff
-	cinc	w8, w8, ne
-	tst	w0, #0xff
-	csinc	w0, w8, wzr, ne
+	movi	v2.16b, #3
+	movi	v3.16b, #2
+	cmeq	v1.16b, v1.16b, #0
+	cmeq	v0.16b, v0.16b, #0
+	bsl	v1.16b, v3.16b, v2.16b
+	bic	v1.16b, v1.16b, v0.16b
+	sub	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

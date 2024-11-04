@@ -1,7 +1,12 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	add	w8, w0, w1, uxtb
-	lsl	w8, w8, #6
-	sub	w0, w8, #2, lsl #12             // =8192
+	ushll	v2.8h, v2.8b, #0
+	uaddw2	v1.4s, v1.4s, v2.8h
+	uaddw	v0.4s, v0.4s, v2.4h
+	mvni	v2.4s, #31, msl #8
+	shl	v0.4s, v0.4s, #6
+	shl	v1.4s, v1.4s, #6
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function

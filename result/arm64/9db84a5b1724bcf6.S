@@ -1,32 +1,44 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	bic	w8, w2, w2, asr #31
-	cmp	w0, w1
-	csel	w9, w0, w1, lt
-	sub	w0, w9, w8
+	movi	v6.2d, #0000000000000000
+	smin	v1.4s, v1.4s, v3.4s
+	smin	v0.4s, v0.4s, v2.4s
+	smax	v5.4s, v5.4s, v6.4s
+	smax	v4.4s, v4.4s, v6.4s
+	sub	v0.4s, v0.4s, v4.4s
+	sub	v1.4s, v1.4s, v5.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	bic	w8, w2, w2, asr #31
-	cmp	w0, w1
-	csel	w9, w0, w1, lt
-	sub	w0, w9, w8
+	movi	v6.2d, #0000000000000000
+	smin	v1.4s, v1.4s, v3.4s
+	smin	v0.4s, v0.4s, v2.4s
+	smax	v5.4s, v5.4s, v6.4s
+	smax	v4.4s, v4.4s, v6.4s
+	sub	v0.4s, v0.4s, v4.4s
+	sub	v1.4s, v1.4s, v5.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	w8, w2, w2, asr #31
-	cmp	w0, w1
-	csel	w9, w0, w1, lt
-	sub	w0, w9, w8
+	movi	v6.2d, #0000000000000000
+	smin	v1.4s, v1.4s, v3.4s
+	smin	v0.4s, v0.4s, v2.4s
+	smax	v5.4s, v5.4s, v6.4s
+	smax	v4.4s, v4.4s, v6.4s
+	sub	v0.4s, v0.4s, v4.4s
+	sub	v1.4s, v1.4s, v5.4s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	bic	w8, w2, w2, asr #31
-	cmp	w0, w1
-	csel	w9, w0, w1, lt
-	sub	w0, w9, w8
+	movi	v6.2d, #0000000000000000
+	smin	v1.4s, v1.4s, v3.4s
+	smin	v0.4s, v0.4s, v2.4s
+	smax	v5.4s, v5.4s, v6.4s
+	smax	v4.4s, v4.4s, v6.4s
+	sub	v0.4s, v0.4s, v4.4s
+	sub	v1.4s, v1.4s, v5.4s
 	ret
                                         // -- End function

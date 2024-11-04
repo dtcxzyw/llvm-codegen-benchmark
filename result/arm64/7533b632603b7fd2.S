@@ -1,6 +1,8 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsl	w8, w1, w2
-	add	w0, w0, w8, asr #1
+	ushl	v3.4s, v3.4s, v5.4s
+	ushl	v2.4s, v2.4s, v4.4s
+	ssra	v0.4s, v2.4s, #1
+	ssra	v1.4s, v3.4s, #1
 	ret
                                         // -- End function

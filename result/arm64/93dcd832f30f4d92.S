@@ -1,33 +1,65 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsl	x8, x0, #1
-	and	x8, x8, #0x1fffffff8
-	cmp	x8, #1, lsl #12                 // =4096
-	cset	w0, ls
+	mov	x8, #8589934584                 // =0x1fffffff8
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	dup	v2.2d, x8
+	mov	w8, #4097                       // =0x1001
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	dup	v2.2d, x8
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	tst	x0, #0xfffffffc
-	cset	w0, eq
+	mov	w8, #-4                         // =0xfffffffc
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	tst	x0, #0x1
-	cset	w0, eq
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmp	w0, #0
-	cset	w0, eq
+	movi	v2.2d, #0x000000ffffffff
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	x8, x0, #0x3fffffffffffff
-	cmp	x8, #256, lsl #12               // =1048576
-	cset	w0, hi
+	mov	x8, #18014398509481983          // =0x3fffffffffffff
+	dup	v2.2d, x8
+	mov	w8, #1048576                    // =0x100000
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	dup	v2.2d, x8
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

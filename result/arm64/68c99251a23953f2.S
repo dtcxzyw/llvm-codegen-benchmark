@@ -1,29 +1,44 @@
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	cmp	x0, w1, uxth #1
-	cset	w0, eq
+	ushll	v2.4s, v2.4h, #0
+	ushll	v3.2d, v2.2s, #1
+	ushll2	v2.2d, v2.4s, #1
+	cmeq	v1.2d, v2.2d, v1.2d
+	cmeq	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	cmp	x0, w1, uxth #4
-	cset	w0, lo
+	ushll	v2.4s, v2.4h, #0
+	ushll	v3.2d, v2.2s, #4
+	ushll2	v2.2d, v2.4s, #4
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000039:                   // @func0000000000000039
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xffff
-	cmp	x0, x8, lsl #16
-	cset	w0, hs
+	ushll	v2.4s, v2.4h, #0
+	ushll	v3.2d, v2.2s, #16
+	ushll2	v2.2d, v2.4s, #16
+	cmhs	v1.2d, v1.2d, v2.2d
+	cmhs	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	cmp	x0, w1, uxth #1
-	cset	w0, hi
+	ushll	v2.4s, v2.4h, #0
+	ushll	v3.2d, v2.2s, #1
+	ushll2	v2.2d, v2.4s, #1
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

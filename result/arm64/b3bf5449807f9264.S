@@ -1,30 +1,66 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	and	w9, w0, #0x7
-	tst	w1, #0x1
-	sub	w8, w8, w9
-	csel	w8, wzr, w8, ne
-	add	w0, w8, w0
+	zip2	v3.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	movi	v4.4s, #7
+	movi	v5.4s, #8
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v6.16b, v0.16b, v4.16b
+	and	v4.16b, v1.16b, v4.16b
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	sub	v6.4s, v5.4s, v6.4s
+	sub	v4.4s, v5.4s, v4.4s
+	cmge	v3.4s, v3.4s, #0
+	cmge	v2.4s, v2.4s, #0
+	and	v3.16b, v4.16b, v3.16b
+	and	v2.16b, v6.16b, v2.16b
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	and	w9, w0, #0x7
-	tst	w1, #0x1
-	sub	w8, w8, w9
-	csel	w8, wzr, w8, ne
-	add	w0, w8, w0
+	zip2	v3.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	movi	v4.4s, #7
+	movi	v5.4s, #8
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v6.16b, v0.16b, v4.16b
+	and	v4.16b, v1.16b, v4.16b
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	sub	v6.4s, v5.4s, v6.4s
+	sub	v4.4s, v5.4s, v4.4s
+	cmge	v3.4s, v3.4s, #0
+	cmge	v2.4s, v2.4s, #0
+	and	v3.16b, v4.16b, v3.16b
+	and	v2.16b, v6.16b, v2.16b
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
-	and	w9, w0, #0x3
-	tst	w1, #0x1
-	sub	w8, w8, w9
-	csel	w8, wzr, w8, ne
-	add	w0, w8, w0
+	zip2	v3.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	movi	v4.4s, #3
+	movi	v5.4s, #4
+	ushll	v3.4s, v3.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	and	v6.16b, v0.16b, v4.16b
+	and	v4.16b, v1.16b, v4.16b
+	shl	v3.4s, v3.4s, #31
+	shl	v2.4s, v2.4s, #31
+	sub	v6.4s, v5.4s, v6.4s
+	sub	v4.4s, v5.4s, v4.4s
+	cmge	v3.4s, v3.4s, #0
+	cmge	v2.4s, v2.4s, #0
+	and	v3.16b, v4.16b, v3.16b
+	and	v2.16b, v6.16b, v2.16b
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

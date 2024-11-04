@@ -1,24 +1,24 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	cmp	w8, w0
-	csel	w8, w8, w0, gt
-	sbfiz	x0, x8, #2, #32
+	add	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v1.4s, v0.4s
+	sshll2	v1.2d, v0.4s, #2
+	sshll	v0.2d, v0.2s, #2
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	cmp	w0, w8
-	csel	w8, w0, w8, gt
-	sbfiz	x0, x8, #1, #32
+	add	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v0.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #1
+	sshll	v0.2d, v0.2s, #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	cmp	w0, w8
-	csel	w8, w0, w8, gt
-	sbfiz	x0, x8, #2, #32
+	add	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v0.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #2
+	sshll	v0.2d, v0.2s, #2
 	ret
                                         // -- End function

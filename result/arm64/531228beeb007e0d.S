@@ -1,7 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmadd	d0, d0, d1, d2
-	fmov	x0, d0
-                                        // kill: def $w0 killed $w0 killed $x0
+	fmla	v5.2d, v3.2d, v1.2d
+	fmla	v4.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v4.4s, v5.4s
 	ret
                                         // -- End function

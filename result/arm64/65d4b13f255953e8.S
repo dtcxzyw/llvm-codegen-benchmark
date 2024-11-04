@@ -1,16 +1,20 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	bic	w8, w8, w1
-	sub	w8, w0, w8
-	sxtw	x0, w8
+	mvn	v1.8b, v1.8b
+	ushll	v1.4s, v1.4h, #0
+	shl	v1.4s, v1.4s, #31
+	ssra	v0.4s, v1.4s, #31
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	bic	w8, w8, w1
-	sub	w8, w0, w8
-	sxtw	x0, w8
+	mvn	v1.8b, v1.8b
+	ushll	v1.4s, v1.4h, #0
+	shl	v1.4s, v1.4s, #31
+	ssra	v0.4s, v1.4s, #31
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

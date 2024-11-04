@@ -1,8 +1,11 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #48                         // =0x30
-	tst	w0, #0x1
-	bfxil	w8, w2, #0, #4
-	csel	w0, w8, w1, ne
+	movi	v3.16b, #15
+	movi	v4.16b, #48
+	shl	v0.16b, v0.16b, #7
+	cmlt	v0.16b, v0.16b, #0
+	and	v2.16b, v2.16b, v3.16b
+	orr	v2.16b, v2.16b, v4.16b
+	bsl	v0.16b, v2.16b, v1.16b
 	ret
                                         // -- End function

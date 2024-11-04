@@ -1,11 +1,20 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsr	w8, w0, #2
-	and	w0, w8, #0x30
+	movi	v1.8b, #48
+	ushr	v0.8b, v0.8b, #2
+	and	v0.8b, v0.8b, v1.8b
+	ushll	v0.8h, v0.8b, #0
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ubfx	w0, w0, #2, #3
+	movi	v1.8b, #7
+	ushr	v0.8b, v0.8b, #2
+	and	v0.8b, v0.8b, v1.8b
+	ushll	v0.8h, v0.8b, #0
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

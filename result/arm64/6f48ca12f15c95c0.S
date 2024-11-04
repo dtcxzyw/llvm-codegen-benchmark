@@ -1,18 +1,32 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	mov	w8, #8192                       // =0x2000
-	cmp	x0, #2, lsl #12                 // =8192
-	mov	w9, #1                          // =0x1
-	csel	x8, x0, x8, lo
-	orr	x0, x9, x8, lsl #1
+	dup	v2.2d, x8
+	mov	w8, #1                          // =0x1
+	cmhi	v3.2d, v2.2d, v0.2d
+	cmhi	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	mov	w8, #7                          // =0x7
-	cmp	x0, #7
-	mov	w9, #1                          // =0x1
-	csel	x8, x0, x8, lo
-	orr	x0, x9, x8, lsl #2
+	dup	v2.2d, x8
+	mov	w8, #1                          // =0x1
+	cmhi	v3.2d, v2.2d, v0.2d
+	cmhi	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	shl	v1.2d, v1.2d, #2
+	shl	v0.2d, v0.2d, #2
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

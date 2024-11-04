@@ -1,17 +1,41 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fabs	s1, s1
-	fcmp	s1, s0
-	fcsel	s0, s0, s1, mi
-	fadd	s0, s0, s0
+	fabs	v4.4s, v4.4s
+	fabs	v7.4s, v7.4s
+	fabs	v6.4s, v6.4s
+	fabs	v5.4s, v5.4s
+	fcmgt	v16.4s, v0.4s, v4.4s
+	fcmgt	v18.4s, v2.4s, v6.4s
+	fcmgt	v19.4s, v3.4s, v7.4s
+	fcmgt	v17.4s, v1.4s, v5.4s
+	bif	v0.16b, v4.16b, v16.16b
+	bif	v3.16b, v7.16b, v19.16b
+	bif	v2.16b, v6.16b, v18.16b
+	bif	v1.16b, v5.16b, v17.16b
+	fadd	v0.4s, v0.4s, v0.4s
+	fadd	v2.4s, v2.4s, v2.4s
+	fadd	v3.4s, v3.4s, v3.4s
+	fadd	v1.4s, v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	fabs	s1, s1
-	fmov	s2, #1.50000000
-	fcmp	s1, s0
-	fcsel	s0, s0, s1, mi
-	fmul	s0, s0, s2
+	fabs	v4.4s, v4.4s
+	fabs	v7.4s, v7.4s
+	fabs	v6.4s, v6.4s
+	fabs	v5.4s, v5.4s
+	fcmgt	v16.4s, v0.4s, v4.4s
+	fcmgt	v18.4s, v2.4s, v6.4s
+	fcmgt	v19.4s, v3.4s, v7.4s
+	fcmgt	v17.4s, v1.4s, v5.4s
+	bif	v0.16b, v4.16b, v16.16b
+	fmov	v4.4s, #1.50000000
+	bif	v3.16b, v7.16b, v19.16b
+	bif	v2.16b, v6.16b, v18.16b
+	bif	v1.16b, v5.16b, v17.16b
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v3.4s, v3.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fmul	v2.4s, v2.4s, v4.4s
 	ret
                                         // -- End function

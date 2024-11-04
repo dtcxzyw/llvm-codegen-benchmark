@@ -1,18 +1,20 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ubfx	w8, w2, #15, #1
-	cmp	w8, w1, uxth
-	cset	w8, eq
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	ushr	v3.8h, v3.8h, #15
+	ushr	v4.8h, v4.8h, #15
+	cmeq	v2.8h, v4.8h, v2.8h
+	cmeq	v1.8h, v3.8h, v1.8h
+	uzp1	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	ubfx	w8, w2, #8, #8
-	cmp	w8, w1, uxth
-	cset	w8, ne
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	ushr	v3.8h, v3.8h, #8
+	ushr	v4.8h, v4.8h, #8
+	cmeq	v2.8h, v4.8h, v2.8h
+	cmeq	v1.8h, v3.8h, v1.8h
+	uzp1	v1.16b, v1.16b, v2.16b
+	orn	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

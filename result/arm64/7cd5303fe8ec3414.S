@@ -1,24 +1,36 @@
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	subs	w8, w1, w2
-	csel	w0, w0, w8, lo
+	sub	v3.4s, v1.4s, v2.4s
+	cmhi	v1.4s, v2.4s, v1.4s
+	bif	v0.16b, v3.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	subs	w8, w2, w1
-	csel	w0, w0, w8, lo
+	sub	v3.4s, v2.4s, v1.4s
+	cmhi	v1.4s, v1.4s, v2.4s
+	bif	v0.16b, v3.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000071:                   // @func0000000000000071
 // %bb.0:                               // %entry
-	subs	w8, w2, w1
-	csel	w0, w0, w8, lo
+	sub	v3.4s, v2.4s, v1.4s
+	cmhi	v1.4s, v1.4s, v2.4s
+	bif	v0.16b, v3.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	subs	w8, w1, w2
-	csel	w0, w0, w8, lo
+	sub	v3.4s, v1.4s, v2.4s
+	cmhi	v1.4s, v2.4s, v1.4s
+	bif	v0.16b, v3.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

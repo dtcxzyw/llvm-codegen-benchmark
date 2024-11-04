@@ -1,16 +1,50 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	sub	x8, x0, x1
-	lsr	x0, x8, #2
-                                        // kill: def $w0 killed $w0 killed $x0
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	mov	w9, #43691                      // =0xaaab
+	movk	w9, #43690, lsl #16
+	ushr	v1.2d, v1.2d, #2
+	ushr	v0.2d, v0.2d, #2
+	fmov	x10, d1
+	fmov	x12, d0
+	mov	x8, v1.d[1]
+	mov	x11, v0.d[1]
+	mul	w10, w10, w9
+	mul	w12, w12, w9
+	mul	w8, w8, w9
+	mul	w9, w11, w9
+	fmov	d0, x10
+	fmov	d1, x12
+	mov	v0.d[1], x8
+	mov	v1.d[1], x9
+	uzp1	v0.4s, v1.4s, v0.4s
+	movi	v1.4s, #3
+	mul	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	sub	x8, x0, x1
-	mov	w9, #26215                      // =0x6667
-	lsr	x8, x8, #3
-	movk	w9, #26214, lsl #16
-	mul	w0, w8, w9
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	mov	w9, #52429                      // =0xcccd
+	movk	w9, #52428, lsl #16
+	ushr	v1.2d, v1.2d, #3
+	ushr	v0.2d, v0.2d, #3
+	fmov	x10, d1
+	fmov	x12, d0
+	mov	x8, v1.d[1]
+	mov	x11, v0.d[1]
+	mul	w10, w10, w9
+	mul	w12, w12, w9
+	mul	w8, w8, w9
+	mul	w9, w11, w9
+	fmov	d0, x10
+	fmov	d1, x12
+	mov	v0.d[1], x8
+	mov	v1.d[1], x9
+	uzp1	v0.4s, v1.4s, v0.4s
+	movi	v1.4s, #3
+	mul	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

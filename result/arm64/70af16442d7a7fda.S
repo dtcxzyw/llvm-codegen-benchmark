@@ -1,43 +1,64 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w0, #4
-	rev	w0, w8
+	movi	v2.4s, #4
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #32760                      // =0x7ff8
-	add	w8, w0, w8
-	rev	w0, w8
+	dup	v2.4s, w8
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	add	w8, w0, #4
-	rev	w0, w8
+	movi	v2.4s, #4
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	w8, w0, #1
-	rev	w0, w8
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	add	w8, w0, #8
-	rev	w0, w8
+	movi	v2.4s, #8
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	w8, w0, #1
-	rev	w0, w8
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	w8, w0, #4
-	rev	w0, w8
+	mvni	v2.4s, #3
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	rev32	v0.16b, v0.16b
+	rev32	v1.16b, v1.16b
 	ret
                                         // -- End function

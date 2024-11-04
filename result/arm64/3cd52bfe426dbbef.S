@@ -1,37 +1,63 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #13715                      // =0x3593
-	mov	w9, #27492                      // =0x6b64
+	movi	v5.4s, #5
 	movk	w8, #7047, lsl #16
-	movk	w9, #58964, lsl #16
-	mul	w8, w1, w8
-	eor	w8, w8, w0
-	ror	w8, w8, #19
-	add	w8, w8, w8, lsl #2
-	add	w0, w8, w9
+	dup	v4.4s, w8
+	mov	w8, #27492                      // =0x6b64
+	movk	w8, #58964, lsl #16
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	eor	v3.16b, v3.16b, v1.16b
+	eor	v0.16b, v2.16b, v0.16b
+	dup	v1.4s, w8
+	shl	v2.4s, v0.4s, #13
+	shl	v4.4s, v3.4s, #13
+	usra	v2.4s, v0.4s, #19
+	usra	v4.4s, v3.4s, #19
+	mov	v0.16b, v1.16b
+	mla	v0.4s, v2.4s, v5.4s
+	mla	v1.4s, v4.4s, v5.4s
 	ret
                                         // -- End function
 func0000000000000060:                   // @func0000000000000060
 // %bb.0:                               // %entry
-	add	w8, w1, w1, lsl #2
-	mov	w9, #27492                      // =0x6b64
-	movk	w9, #58964, lsl #16
-	eor	w8, w8, w0
-	ror	w8, w8, #19
-	add	w8, w8, w8, lsl #2
-	add	w0, w8, w9
+	movi	v4.4s, #5
+	mov	w8, #27492                      // =0x6b64
+	movk	w8, #58964, lsl #16
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	eor	v3.16b, v3.16b, v1.16b
+	eor	v0.16b, v2.16b, v0.16b
+	dup	v1.4s, w8
+	shl	v2.4s, v0.4s, #13
+	shl	v5.4s, v3.4s, #13
+	usra	v2.4s, v0.4s, #19
+	usra	v5.4s, v3.4s, #19
+	mov	v0.16b, v1.16b
+	mla	v0.4s, v2.4s, v4.4s
+	mla	v1.4s, v5.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	mov	w8, #13715                      // =0x3593
-	mov	w9, #27492                      // =0x6b64
+	movi	v5.4s, #5
 	movk	w8, #7047, lsl #16
-	movk	w9, #58964, lsl #16
-	mul	w8, w1, w8
-	eor	w8, w8, w0
-	ror	w8, w8, #19
-	add	w8, w8, w8, lsl #2
-	add	w0, w8, w9
+	dup	v4.4s, w8
+	mov	w8, #27492                      // =0x6b64
+	movk	w8, #58964, lsl #16
+	mul	v2.4s, v2.4s, v4.4s
+	mul	v3.4s, v3.4s, v4.4s
+	eor	v3.16b, v3.16b, v1.16b
+	eor	v0.16b, v2.16b, v0.16b
+	dup	v1.4s, w8
+	shl	v2.4s, v0.4s, #13
+	shl	v4.4s, v3.4s, #13
+	usra	v2.4s, v0.4s, #19
+	usra	v4.4s, v3.4s, #19
+	mov	v0.16b, v1.16b
+	mla	v0.4s, v2.4s, v5.4s
+	mla	v1.4s, v4.4s, v5.4s
 	ret
                                         // -- End function

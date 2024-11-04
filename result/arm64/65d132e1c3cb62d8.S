@@ -1,24 +1,36 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	cmp	w0, #1
-	csinc	w8, w0, wzr, gt
-	ubfiz	x8, x8, #2, #32
-	add	x0, x8, #15
+	movi	v1.4s, #1
+	mov	w8, #15                         // =0xf
+	dup	v3.2d, x8
+	smax	v0.4s, v0.4s, v1.4s
+	ushll	v2.2d, v0.2s, #2
+	ushll2	v0.2d, v0.4s, #2
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	ubfiz	x8, x8, #2, #32
-	add	x0, x8, #4
+	movi	v1.2d, #0000000000000000
+	mov	w8, #4                          // =0x4
+	dup	v3.2d, x8
+	smax	v0.4s, v0.4s, v1.4s
+	ushll	v2.2d, v0.2s, #2
+	ushll2	v0.2d, v0.4s, #2
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	cmp	w0, #16
-	csel	w8, w0, w8, gt
-	ubfiz	x8, x8, #3, #32
-	sub	x0, x8, #8
+	movi	v1.4s, #16
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	dup	v3.2d, x8
+	smax	v0.4s, v0.4s, v1.4s
+	ushll	v2.2d, v0.2s, #3
+	ushll2	v0.2d, v0.4s, #3
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function

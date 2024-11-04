@@ -1,24 +1,35 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff0000
-	mul	w0, w8, w0
+	movi	v4.2d, #0xff000000ff0000
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	mul	w0, w8, w0
+	movi	v4.2d, #0x0000ff000000ff
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff00ff
-	mul	w0, w8, w0
+	bic	v3.8h, #255, lsl #8
+	bic	v2.8h, #255, lsl #8
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	mul	w0, w8, w0
+	movi	v4.2d, #0x0000ff000000ff
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	mul	v0.4s, v2.4s, v0.4s
+	mul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

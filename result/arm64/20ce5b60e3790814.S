@@ -1,18 +1,23 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w1, w0
-	add	w9, w8, #32
-	add	w8, w8, #63
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
-	asr	w0, w8, #5
+	movi	v2.4s, #32
+	sub	v0.4s, v1.4s, v0.4s
+	add	v0.4s, v0.4s, v2.4s
+	cmlt	v1.4s, v0.4s, #0
+	usra	v0.4s, v1.4s, #27
+	sshr	v0.4s, v0.4s, #5
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w1, w0
-	add	w8, w8, #1
-	add	w8, w8, w8, lsr #31
-	asr	w0, w8, #1
+	movi	v2.4s, #1
+	sub	v0.4s, v1.4s, v0.4s
+	add	v0.4s, v0.4s, v2.4s
+	usra	v0.4s, v0.4s, #31
+	sshr	v0.4s, v0.4s, #1
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

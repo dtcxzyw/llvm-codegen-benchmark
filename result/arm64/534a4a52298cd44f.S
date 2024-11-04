@@ -1,28 +1,36 @@
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	lsr	w8, w1, w0
-	cmp	w8, #0
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	neg	v0.4s, v0.4s
+	ushl	v0.4s, v1.4s, v0.4s
+	cmeq	v0.4s, v0.4s, #0
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsr	w8, w1, w0
-	cmp	w8, #0
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	neg	v0.4s, v0.4s
+	ushl	v0.4s, v1.4s, v0.4s
+	cmeq	v0.4s, v0.4s, #0
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	lsr	w8, w1, w0
-	cmp	w8, #0
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	neg	v0.4s, v0.4s
+	ushl	v0.4s, v1.4s, v0.4s
+	cmeq	v0.4s, v0.4s, #0
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	lsr	w8, w1, w0
-	cmp	w8, #0
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	neg	v0.4s, v0.4s
+	ushl	v0.4s, v1.4s, v0.4s
+	cmeq	v0.4s, v0.4s, #0
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

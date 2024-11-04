@@ -1,9 +1,20 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	w8, w1, #0x300000
-	and	x9, x0, #0xffffffffffcfffff
-	cmp	w8, #256, lsl #12               // =1048576
-	cset	w8, eq
-	orr	x0, x9, x8, lsl #21
+	movi	v3.4s, #48, lsl #16
+	movi	v4.4s, #16, lsl #16
+	mov	w8, #2097152                    // =0x200000
+	and	v2.16b, v2.16b, v3.16b
+	dup	v3.2d, x8
+	mov	x8, #-3145729                   // =0xffffffffffcfffff
+	dup	v5.2d, x8
+	cmeq	v2.4s, v2.4s, v4.4s
+	and	v0.16b, v0.16b, v5.16b
+	and	v1.16b, v1.16b, v5.16b
+	sshll	v4.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
+	and	v4.16b, v4.16b, v3.16b
+	and	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function

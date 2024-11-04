@@ -1,16 +1,28 @@
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	and	x8, x8, #0x1fffff
-	add	x8, x8, x0, asr #21
-	asr	x0, x8, #21
+	mov	w8, #2097151                    // =0x1fffff
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	ssra	v3.2d, v1.2d, #21
+	ssra	v2.2d, v0.2d, #21
+	sshr	v0.2d, v2.2d, #21
+	sshr	v1.2d, v3.2d, #21
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	and	x8, x8, #0x1fffff
-	add	x8, x8, x0, asr #21
-	asr	x0, x8, #21
+	mov	w8, #2097151                    // =0x1fffff
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	ssra	v3.2d, v1.2d, #21
+	ssra	v2.2d, v0.2d, #21
+	sshr	v0.2d, v2.2d, #21
+	sshr	v1.2d, v3.2d, #21
 	ret
                                         // -- End function

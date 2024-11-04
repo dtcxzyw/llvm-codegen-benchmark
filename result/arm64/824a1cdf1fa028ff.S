@@ -1,40 +1,56 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	tst	w0, #0x1
-	sub	w8, w8, w1
-	csinc	w0, w8, wzr, eq
+	ushll	v0.4s, v0.4h, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #8
+	shl	v0.4s, v0.4s, #31
+	sub	v1.4s, v2.4s, v1.4s
+	cmlt	v0.4s, v0.4s, #0
+	bic	v1.16b, v1.16b, v0.16b
+	sub	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csel	w8, wzr, w1, ne
-	neg	w0, w8
+	ushll	v0.4s, v0.4h, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	shl	v0.4s, v0.4s, #31
+	cmge	v0.4s, v0.4s, #0
+	and	v0.16b, v1.16b, v0.16b
+	neg	v0.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	w8, #11                         // =0xb
-	tst	w0, #0x1
-	mov	w9, #4                          // =0x4
-	sub	w8, w8, w1
-	csel	w0, w9, w8, ne
+	ushll	v0.4s, v0.4h, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #11
+	movi	v3.4s, #4
+	shl	v0.4s, v0.4s, #31
+	sub	v1.4s, v2.4s, v1.4s
+	cmlt	v0.4s, v0.4s, #0
+	bsl	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	mov	w8, #32                         // =0x20
-	tst	w0, #0x1
-	sub	w9, w8, w1
-	csel	w0, w8, w9, ne
+	ushll	v0.4s, v0.4h, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #32
+	shl	v0.4s, v0.4s, #31
+	sub	v1.4s, v2.4s, v1.4s
+	cmlt	v0.4s, v0.4s, #0
+	bsl	v0.16b, v2.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #64                         // =0x40
-	tst	w0, #0x1
-	sub	w8, w8, w1
-	csel	w0, wzr, w8, ne
+	ushll	v0.4s, v0.4h, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #64
+	shl	v0.4s, v0.4s, #31
+	sub	v1.4s, v2.4s, v1.4s
+	cmge	v0.4s, v0.4s, #0
+	and	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

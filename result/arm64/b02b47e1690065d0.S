@@ -1,47 +1,53 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	w8, w0, #16
-	tst	w0, #0xf0
-	csel	w0, w8, w0, ne
+	movi	v1.16b, #15
+	movi	v2.16b, #240
+	cmhi	v1.16b, v0.16b, v1.16b
+	and	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	add	w9, w0, #9
-	cmp	w8, #57
-	csel	w0, w9, w0, hi
+	movi	v1.16b, #57
+	movi	v2.16b, #9
+	cmhi	v1.16b, v0.16b, v1.16b
+	and	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	add	w9, w0, #71
-	cmp	w8, #60
-	csel	w0, w9, w0, hi
+	movi	v1.16b, #60
+	movi	v2.16b, #71
+	cmhi	v1.16b, v0.16b, v1.16b
+	and	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	sxtb	w8, w0
-	add	w9, w0, #60
-	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	movi	v1.16b, #60
+	cmlt	v2.16b, v0.16b, #0
+	and	v1.16b, v2.16b, v1.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	sxtb	w8, w0
-	sub	w9, w0, #32
-	cmp	w8, #96
-	csel	w0, w9, w0, gt
+	movi	v1.16b, #96
+	movi	v2.16b, #224
+	cmgt	v1.16b, v0.16b, v1.16b
+	and	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	sub	w9, w0, #7
-	cmp	w8, #64
-	csel	w0, w9, w0, hi
+	movi	v1.16b, #64
+	movi	v2.16b, #249
+	cmhi	v1.16b, v0.16b, v1.16b
+	and	v1.16b, v1.16b, v2.16b
+	add	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

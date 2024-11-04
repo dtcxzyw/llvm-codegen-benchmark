@@ -1,18 +1,23 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w0, #0xffff
-                                        // kill: def $w1 killed $w1 def $x1
-	lsr	w8, w8, w1
-	cmp	w8, #2
-	cset	w0, lo
+	neg	v2.8h, v2.8h
+	neg	v3.8h, v3.8h
+	movi	v4.8h, #2
+	ushl	v0.8h, v0.8h, v2.8h
+	ushl	v1.8h, v1.8h, v3.8h
+	cmhi	v1.8h, v4.8h, v1.8h
+	cmhi	v0.8h, v4.8h, v0.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0xffff
-                                        // kill: def $w1 killed $w1 def $x1
-	lsr	w8, w8, w1
-	cmp	w8, #0
-	cset	w0, eq
+	neg	v2.8h, v2.8h
+	neg	v3.8h, v3.8h
+	ushl	v0.8h, v0.8h, v2.8h
+	ushl	v1.8h, v1.8h, v3.8h
+	cmeq	v1.8h, v1.8h, #0
+	cmeq	v0.8h, v0.8h, #0
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

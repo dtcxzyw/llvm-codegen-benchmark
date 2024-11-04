@@ -1,7 +1,18 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #3, #5
-	mov	w9, #-2130771968                // =0x80ff0000
-	lsr	x0, x9, x8
+	bic	v0.4h, #255, lsl #8
+	movi	v1.2d, #0x000000000000ff
+	mov	w8, #-2130771968                // =0x80ff0000
+	dup	v3.2d, x8
+	ushr	v0.4h, v0.4h, #3
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	and	v2.16b, v2.16b, v1.16b
+	and	v0.16b, v0.16b, v1.16b
+	neg	v0.2d, v0.2d
+	neg	v2.2d, v2.2d
+	ushl	v1.2d, v3.2d, v0.2d
+	ushl	v0.2d, v3.2d, v2.2d
 	ret
                                         // -- End function

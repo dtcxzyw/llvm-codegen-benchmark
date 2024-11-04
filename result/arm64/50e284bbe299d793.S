@@ -1,33 +1,87 @@
 func0000000000000065:                   // @func0000000000000065
 // %bb.0:                               // %entry
 	mov	x8, #18725                      // =0x4925
+	fmov	x9, d1
+	fmov	x12, d0
 	movk	x8, #9362, lsl #16
+	mov	x10, v1.d[1]
+	mov	x13, v0.d[1]
 	movk	x8, #37449, lsl #32
 	movk	x8, #18724, lsl #48
-	smulh	x8, x0, x8
-	asr	x9, x8, #1
-	add	x8, x9, x8, lsr #63
+	smulh	x11, x9, x8
+	smulh	x14, x12, x8
+	smulh	x15, x10, x8
+	asr	x16, x11, #1
+	smulh	x8, x13, x8
+	asr	x17, x14, #1
+	add	x11, x16, x11, lsr #63
+	add	x14, x17, x14, lsr #63
+	asr	x18, x15, #1
+	sub	x11, x11, x11, lsl #3
+	asr	x0, x8, #1
+	sub	x14, x14, x14, lsl #3
+	add	x15, x18, x15, lsr #63
+	add	x9, x9, x11
+	add	x8, x0, x8, lsr #63
+	add	x11, x12, x14
+	sub	x15, x15, x15, lsl #3
+	fmov	d0, x9
+	fmov	d1, x11
 	sub	x8, x8, x8, lsl #3
-	add	x8, x0, x8
-	asr	x9, x8, #63
-	and	w9, w9, #0x7
-	add	w0, w9, w8
+	add	x10, x10, x15
+	add	x8, x13, x8
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
+	mov	w8, #7                          // =0x7
+	dup	v2.2d, x8
+	cmlt	v4.2d, v0.2d, #0
+	cmlt	v3.2d, v1.2d, #0
+	and	v3.16b, v3.16b, v2.16b
+	and	v2.16b, v4.16b, v2.16b
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000067:                   // @func0000000000000067
 // %bb.0:                               // %entry
 	mov	x8, #10583                      // =0x2957
+	fmov	x9, d1
+	fmov	x12, d0
 	movk	x8, #52817, lsl #16
+	mov	x10, v1.d[1]
+	mov	x13, v0.d[1]
 	movk	x8, #51360, lsl #32
 	movk	x8, #6213, lsl #48
-	smulh	x8, x0, x8
-	asr	x9, x8, #13
-	add	x8, x9, x8, lsr #63
-	mov	w9, #20864                      // =0x5180
-	movk	w9, #1, lsl #16
-	msub	x8, x8, x9, x0
-	asr	x10, x8, #63
-	and	w9, w10, w9
-	add	w0, w9, w8
+	smulh	x11, x9, x8
+	smulh	x14, x12, x8
+	smulh	x15, x10, x8
+	asr	x16, x11, #13
+	smulh	x8, x13, x8
+	asr	x17, x14, #13
+	add	x11, x16, x11, lsr #63
+	mov	w16, #20864                     // =0x5180
+	movk	w16, #1, lsl #16
+	add	x14, x17, x14, lsr #63
+	msub	x9, x11, x16, x9
+	asr	x11, x15, #13
+	dup	v2.2d, x16
+	msub	x12, x14, x16, x12
+	asr	x14, x8, #13
+	add	x11, x11, x15, lsr #63
+	add	x8, x14, x8, lsr #63
+	msub	x10, x11, x16, x10
+	fmov	d0, x9
+	msub	x8, x8, x16, x13
+	fmov	d1, x12
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
+	cmlt	v4.2d, v0.2d, #0
+	cmlt	v3.2d, v1.2d, #0
+	and	v3.16b, v3.16b, v2.16b
+	and	v2.16b, v4.16b, v2.16b
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

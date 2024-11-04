@@ -1,16 +1,28 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	sxtw	x8, w8
-	cmp	x8, x0
-	csel	x0, x8, x0, lo
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	sxtw	x8, w8
-	cmp	x0, x8
-	csel	x0, x0, x8, lo
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	cmhi	v4.2d, v2.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

@@ -1,13 +1,15 @@
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	sub	w8, w2, #256, lsl #12           // =1048576
-	sub	w8, w8, #1
-	cmn	w8, #256, lsl #12               // =1048576
-	cset	w8, lo
-	cmp	x1, #0
-	cset	w9, eq
-	orr	w9, w9, w0
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	mvni	v4.4s, #16, lsl #16
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v2.4s, v3.4s, v4.4s
+	mvni	v3.4s, #15, msl #16
+	cmhi	v2.4s, v3.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	xtn	v2.4h, v2.4s
+	orr	v0.8b, v1.8b, v0.8b
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function

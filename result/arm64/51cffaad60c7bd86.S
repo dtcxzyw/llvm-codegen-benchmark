@@ -1,27 +1,34 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	x2, #255
-	cset	w8, eq
-	and	w8, w8, w0
-	orn	w8, w8, w1
-	and	w0, w8, #0x1
+	movi	v4.2d, #0x000000000000ff
+	cmeq	v3.2d, v3.2d, v4.2d
+	cmeq	v2.2d, v2.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	and	v0.8b, v2.8b, v0.8b
+	orn	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	cmp	x2, #0
-	cset	w8, ne
-	and	w8, w8, w0
-	orn	w8, w8, w1
-	and	w0, w8, #0x1
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	mvn	v2.16b, v2.16b
+	xtn	v2.4h, v2.4s
+	and	v0.8b, v2.8b, v0.8b
+	orn	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	cmp	x2, #5
-	cset	w8, hi
-	and	w8, w8, w0
-	orn	w8, w8, w1
-	and	w0, w8, #0x1
+	mov	w8, #5                          // =0x5
+	dup	v4.2d, x8
+	cmhi	v3.2d, v3.2d, v4.2d
+	cmhi	v2.2d, v2.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	and	v0.8b, v2.8b, v0.8b
+	orn	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

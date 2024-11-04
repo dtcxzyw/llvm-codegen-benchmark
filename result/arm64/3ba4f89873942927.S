@@ -1,10 +1,10 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sbfx	w0, w0, #7, #1
+	cmlt	v0.16b, v0.16b, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sbfx	w0, w0, #5, #3
+	sshr	v0.16b, v0.16b, #5
 	ret
                                         // -- End function

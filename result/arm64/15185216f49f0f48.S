@@ -1,7 +1,14 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	x8, x1, #2
-	cmp	x8, x0
-	csinv	x0, x0, xzr, hi
+	mov	w8, #2                          // =0x2
+	dup	v4.2d, x8
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	cmhi	v3.2d, v3.2d, v1.2d
+	cmhi	v2.2d, v2.2d, v0.2d
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v3.16b
+	orn	v0.16b, v0.16b, v2.16b
+	orn	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

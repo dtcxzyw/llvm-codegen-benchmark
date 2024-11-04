@@ -1,14 +1,98 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sdiv	w8, w1, w2
-	tst	w0, #0x1
-	cneg	w0, w8, ne
+	mov	w8, v3.s[1]
+	mov	w9, v1.s[1]
+	fmov	w10, s1
+	mov	w11, v1.s[2]
+	mov	w12, v2.s[1]
+	fmov	w13, s2
+	mov	w14, v2.s[2]
+	mov	w15, v2.s[3]
+	mov	w16, v1.s[3]
+	sdiv	w8, w9, w8
+	fmov	w9, s3
+	sdiv	w9, w10, w9
+	mov	w10, v3.s[2]
+	sdiv	w10, w11, w10
+	mov	w11, v4.s[1]
+	fmov	s2, w9
+	mov	v2.s[1], w8
+	sdiv	w11, w12, w11
+	fmov	w12, s4
+	mov	v2.s[2], w10
+	sdiv	w12, w13, w12
+	mov	w13, v4.s[2]
+	sdiv	w13, w14, w13
+	mov	w14, v4.s[3]
+	fmov	s1, w12
+	mov	v1.s[1], w11
+	sdiv	w14, w15, w14
+	mov	w15, v3.s[3]
+	zip1	v3.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	mov	v1.s[2], w13
+	ushll	v3.4s, v3.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	shl	v3.4s, v3.4s, #31
+	sdiv	w8, w16, w15
+	mov	v1.s[3], w14
+	shl	v0.4s, v0.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v6.4s, v0.4s, #0
+	neg	v4.4s, v1.4s
+	mov	v0.16b, v3.16b
+	bit	v1.16b, v4.16b, v6.16b
+	mov	v2.s[3], w8
+	neg	v5.4s, v2.4s
+	bsl	v0.16b, v5.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sdiv	w8, w1, w2
-	tst	w0, #0x1
-	cneg	w0, w8, ne
+	mov	w8, v3.s[1]
+	mov	w9, v1.s[1]
+	fmov	w10, s1
+	mov	w11, v1.s[2]
+	mov	w12, v2.s[1]
+	fmov	w13, s2
+	mov	w14, v2.s[2]
+	mov	w15, v2.s[3]
+	mov	w16, v1.s[3]
+	sdiv	w8, w9, w8
+	fmov	w9, s3
+	sdiv	w9, w10, w9
+	mov	w10, v3.s[2]
+	sdiv	w10, w11, w10
+	mov	w11, v4.s[1]
+	fmov	s2, w9
+	mov	v2.s[1], w8
+	sdiv	w11, w12, w11
+	fmov	w12, s4
+	mov	v2.s[2], w10
+	sdiv	w12, w13, w12
+	mov	w13, v4.s[2]
+	sdiv	w13, w14, w13
+	mov	w14, v4.s[3]
+	fmov	s1, w12
+	mov	v1.s[1], w11
+	sdiv	w14, w15, w14
+	mov	w15, v3.s[3]
+	zip1	v3.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	mov	v1.s[2], w13
+	ushll	v3.4s, v3.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	shl	v3.4s, v3.4s, #31
+	sdiv	w8, w16, w15
+	mov	v1.s[3], w14
+	shl	v0.4s, v0.4s, #31
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v6.4s, v0.4s, #0
+	neg	v4.4s, v1.4s
+	mov	v0.16b, v3.16b
+	bit	v1.16b, v4.16b, v6.16b
+	mov	v2.s[3], w8
+	neg	v5.4s, v2.4s
+	bsl	v0.16b, v5.16b, v2.16b
 	ret
                                         // -- End function

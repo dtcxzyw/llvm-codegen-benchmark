@@ -1,18 +1,30 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-                                        // kill: def $w2 killed $w2 def $x2
-	lsl	x8, x8, x2
-	bic	x8, x1, x8
-	add	x0, x8, x0
+	bic	v4.4h, #255, lsl #8
+	movi	v5.2d, #0xffffffffffffffff
+	ushll	v4.4s, v4.4h, #0
+	ushll	v6.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	ushl	v4.2d, v5.2d, v4.2d
+	ushl	v5.2d, v5.2d, v6.2d
+	bic	v2.16b, v2.16b, v5.16b
+	bic	v3.16b, v3.16b, v4.16b
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-                                        // kill: def $w2 killed $w2 def $x2
-	lsl	x8, x8, x2
-	bic	x8, x1, x8
-	add	x0, x8, x0
+	bic	v4.4h, #255, lsl #8
+	movi	v5.2d, #0xffffffffffffffff
+	ushll	v4.4s, v4.4h, #0
+	ushll	v6.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	ushl	v4.2d, v5.2d, v4.2d
+	ushl	v5.2d, v5.2d, v6.2d
+	bic	v2.16b, v2.16b, v5.16b
+	bic	v3.16b, v3.16b, v4.16b
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function

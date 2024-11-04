@@ -1,8 +1,32 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	ucvtf	s1, w8
-	fmul	s0, s1, s0
-	fcvtzs	w0, s0
+	ext	v5.16b, v4.16b, v4.16b, #8
+	zip2	v6.8b, v4.8b, v0.8b
+	zip1	v4.8b, v4.8b, v0.8b
+	zip2	v7.8b, v5.8b, v0.8b
+	zip1	v5.8b, v5.8b, v0.8b
+	bic	v6.4h, #255, lsl #8
+	bic	v4.4h, #255, lsl #8
+	ushll	v6.4s, v6.4h, #0
+	bic	v7.4h, #255, lsl #8
+	bic	v5.4h, #255, lsl #8
+	ushll	v4.4s, v4.4h, #0
+	ucvtf	v6.4s, v6.4s
+	ushll	v7.4s, v7.4h, #0
+	ushll	v5.4s, v5.4h, #0
+	ucvtf	v4.4s, v4.4s
+	ucvtf	v7.4s, v7.4s
+	ucvtf	v5.4s, v5.4s
+	fmul	v1.4s, v6.4s, v1.4s
+	fmul	v0.4s, v4.4s, v0.4s
+	fmul	v2.4s, v5.4s, v2.4s
+	fmul	v3.4s, v7.4s, v3.4s
+	fcvtzs	v1.4s, v1.4s
+	fcvtzs	v0.4s, v0.4s
+	fcvtzs	v3.4s, v3.4s
+	fcvtzs	v2.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	uzp1	v1.8h, v2.8h, v3.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

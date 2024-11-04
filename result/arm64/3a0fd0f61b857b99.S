@@ -1,28 +1,48 @@
 func0000000000000096:                   // @func0000000000000096
 // %bb.0:                               // %entry
-	add	w8, w0, w2
-	cmp	w1, #0
-	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	sub	w8, w8, #1
-	csel	w0, w8, w0, lt
+	add	v5.4s, v1.4s, v5.4s
+	add	v4.4s, v0.4s, v4.4s
+	movi	v6.2d, #0xffffffffffffffff
+	movi	v7.2d, #0xffffffffffffffff
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	usra	v5.4s, v5.4s, #31
+	usra	v4.4s, v4.4s, #31
+	ssra	v6.4s, v5.4s, #1
+	ssra	v7.4s, v4.4s, #1
+	bit	v0.16b, v7.16b, v2.16b
+	bit	v1.16b, v6.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	add	w8, w2, w0
-	cmp	w1, #0
-	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	csinc	w0, w0, w8, ge
+	add	v5.4s, v5.4s, v1.4s
+	add	v4.4s, v4.4s, v0.4s
+	movi	v6.4s, #1
+	movi	v7.4s, #1
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	usra	v5.4s, v5.4s, #31
+	usra	v4.4s, v4.4s, #31
+	ssra	v6.4s, v5.4s, #1
+	ssra	v7.4s, v4.4s, #1
+	bit	v0.16b, v7.16b, v2.16b
+	bit	v1.16b, v6.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000009a:                   // @func000000000000009a
 // %bb.0:                               // %entry
-	add	w8, w0, w2
-	cmp	w1, #0
-	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	csinc	w0, w0, w8, le
+	add	v5.4s, v1.4s, v5.4s
+	add	v4.4s, v0.4s, v4.4s
+	movi	v6.4s, #1
+	movi	v7.4s, #1
+	cmgt	v3.4s, v3.4s, #0
+	cmgt	v2.4s, v2.4s, #0
+	usra	v5.4s, v5.4s, #31
+	usra	v4.4s, v4.4s, #31
+	ssra	v6.4s, v5.4s, #1
+	ssra	v7.4s, v4.4s, #1
+	bit	v0.16b, v7.16b, v2.16b
+	bit	v1.16b, v6.16b, v3.16b
 	ret
                                         // -- End function

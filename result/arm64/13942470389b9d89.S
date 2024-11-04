@@ -1,32 +1,56 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sub	x8, x2, x1
-	add	x8, x8, #3
-	cmp	x8, x0
-	csel	x0, x8, x0, lt
+	mov	w8, #3                          // =0x3
+	sub	v3.2d, v5.2d, v3.2d
+	sub	v2.2d, v4.2d, v2.2d
+	dup	v6.2d, x8
+	add	v3.2d, v3.2d, v6.2d
+	add	v2.2d, v2.2d, v6.2d
+	cmgt	v4.2d, v0.2d, v2.2d
+	cmgt	v5.2d, v1.2d, v3.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	x8, x2, x1
-	add	x9, x8, #1
-	cmp	x9, x0
-	csinc	x0, x0, x8, ge
+	mov	w8, #1                          // =0x1
+	sub	v3.2d, v5.2d, v3.2d
+	sub	v2.2d, v4.2d, v2.2d
+	dup	v6.2d, x8
+	add	v3.2d, v3.2d, v6.2d
+	add	v2.2d, v2.2d, v6.2d
+	cmgt	v4.2d, v0.2d, v2.2d
+	cmgt	v5.2d, v1.2d, v3.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	x8, x2, x1
-	add	x9, x8, #1
-	cmp	x9, x0
-	csinc	x0, x0, x8, ge
+	mov	w8, #1                          // =0x1
+	sub	v3.2d, v5.2d, v3.2d
+	sub	v2.2d, v4.2d, v2.2d
+	dup	v6.2d, x8
+	add	v3.2d, v3.2d, v6.2d
+	add	v2.2d, v2.2d, v6.2d
+	cmgt	v4.2d, v0.2d, v2.2d
+	cmgt	v5.2d, v1.2d, v3.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	x8, x2, x1
-	add	x8, x8, #63
-	cmp	x0, x8
-	csel	x0, x0, x8, lt
+	mov	w8, #63                         // =0x3f
+	sub	v3.2d, v5.2d, v3.2d
+	sub	v2.2d, v4.2d, v2.2d
+	dup	v6.2d, x8
+	add	v3.2d, v3.2d, v6.2d
+	add	v2.2d, v2.2d, v6.2d
+	cmgt	v4.2d, v2.2d, v0.2d
+	cmgt	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

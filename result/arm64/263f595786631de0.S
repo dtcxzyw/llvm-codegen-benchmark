@@ -1,18 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	subs	x9, x0, x1
+	uqsub	v1.2d, v1.2d, v3.2d
+	uqsub	v0.2d, v0.2d, v2.2d
 	mov	w8, #26                         // =0x1a
-	csel	x9, xzr, x9, lo
-	cmp	x9, #26
-	csel	x0, x9, x8, lo
+	dup	v2.2d, x8
+	cmhi	v3.2d, v2.2d, v0.2d
+	cmhi	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	subs	x9, x0, x1
+	uqsub	v1.2d, v1.2d, v3.2d
+	uqsub	v0.2d, v0.2d, v2.2d
 	mov	w8, #256                        // =0x100
-	csel	x9, xzr, x9, lo
-	cmp	x9, #256
-	csel	x0, x9, x8, lo
+	dup	v2.2d, x8
+	cmhi	v3.2d, v2.2d, v0.2d
+	cmhi	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

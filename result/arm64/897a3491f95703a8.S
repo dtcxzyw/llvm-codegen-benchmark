@@ -1,36 +1,42 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	asr	w8, w0, #6
-	ubfiz	x0, x8, #3, #32
+	sshr	v0.4s, v0.4s, #6
+	ushll2	v1.2d, v0.4s, #3
+	ushll	v0.2d, v0.2s, #3
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	asr	w8, w0, #1
-	lsl	x0, x8, #32
+	sshr	v0.4s, v0.4s, #1
+	shll2	v1.2d, v0.4s, #32
+	shll	v0.2d, v0.2s, #32
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	asr	w8, w0, #1
-	lsl	x0, x8, #32
+	sshr	v0.4s, v0.4s, #1
+	shll2	v1.2d, v0.4s, #32
+	shll	v0.2d, v0.2s, #32
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	asr	w8, w0, #16
-	ubfiz	x0, x8, #24, #32
+	sshr	v0.4s, v0.4s, #16
+	ushll2	v1.2d, v0.4s, #24
+	ushll	v0.2d, v0.2s, #24
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	asr	w8, w0, #1
-	ubfiz	x0, x8, #4, #32
+	sshr	v0.4s, v0.4s, #1
+	ushll2	v1.2d, v0.4s, #4
+	ushll	v0.2d, v0.2s, #4
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	asr	w8, w0, #4
-	ubfiz	x0, x8, #4, #32
+	sshr	v0.4s, v0.4s, #4
+	ushll2	v1.2d, v0.4s, #4
+	ushll	v0.2d, v0.2s, #4
 	ret
                                         // -- End function

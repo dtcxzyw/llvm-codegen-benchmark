@@ -1,13 +1,30 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sxtw	x8, w0
-	bic	x0, x8, x8, asr #63
+	shl	v1.2d, v1.2d, #32
+	shl	v0.2d, v0.2d, #32
+	sshr	v1.2d, v1.2d, #32
+	sshr	v0.2d, v0.2d, #32
+	cmgt	v2.2d, v0.2d, #0
+	cmgt	v3.2d, v1.2d, #0
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sbfx	x8, x0, #4, #32
-	cmp	x8, #1
-	csinc	x0, x8, xzr, gt
+	shl	v0.2d, v0.2d, #28
+	shl	v1.2d, v1.2d, #28
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	sshr	v0.2d, v0.2d, #32
+	sshr	v1.2d, v1.2d, #32
+	cmgt	v3.2d, v0.2d, v2.2d
+	cmgt	v2.2d, v1.2d, v2.2d
+	and	v0.16b, v0.16b, v3.16b
+	mvn	v3.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v0.2d, v0.2d, v3.2d
+	sub	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

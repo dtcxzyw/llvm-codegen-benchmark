@@ -1,25 +1,30 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	subs	x9, x0, #1
-	sub	x8, x8, x0
-	csel	x0, x9, x8, pl
+	movi	v2.2d, #0xffffffffffffffff
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
+	abs	v0.2d, v0.2d
+	abs	v1.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmn	x0, #1
-	mvn	x8, x0
-	csinc	x0, x8, x0, mi
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
+	abs	v0.2d, v0.2d
+	abs	v1.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	x8, #-20864                     // =0xffffffffffffae80
-	add	x9, x0, #21, lsl #12            // =86016
-	movk	x8, #65534, lsl #16
-	adds	x9, x9, #384
-	sub	x8, x8, x0
-	csel	x0, x9, x8, pl
+	mov	w8, #20864                      // =0x5180
+	movk	w8, #1, lsl #16
+	dup	v2.2d, x8
+	add	v1.2d, v1.2d, v2.2d
+	add	v0.2d, v0.2d, v2.2d
+	abs	v0.2d, v0.2d
+	abs	v1.2d, v1.2d
 	ret
                                         // -- End function

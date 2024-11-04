@@ -1,38 +1,56 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	neg	w8, w1
-	bic	w8, w8, w8, asr #31
-	add	w0, w8, w0
+	movi	v4.2d, #0000000000000000
+	neg	v2.4s, v2.4s
+	neg	v3.4s, v3.4s
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	neg	w8, w1
-	bic	w8, w8, w8, asr #31
-	add	w0, w8, w0
+	movi	v4.2d, #0000000000000000
+	neg	v2.4s, v2.4s
+	neg	v3.4s, v3.4s
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	neg	w8, w1
-	bic	w8, w8, w8, asr #31
-	add	w0, w8, w0
+	movi	v4.2d, #0000000000000000
+	neg	v2.4s, v2.4s
+	neg	v3.4s, v3.4s
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	mov	w9, #2                          // =0x2
-	sub	w8, w8, w1
-	cmp	w8, #2
-	csel	w8, w8, w9, gt
-	add	w0, w8, w0
+	movi	v4.4s, #16
+	movi	v5.4s, #2
+	sub	v2.4s, v4.4s, v2.4s
+	sub	v3.4s, v4.4s, v3.4s
+	smax	v3.4s, v3.4s, v5.4s
+	smax	v2.4s, v2.4s, v5.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	neg	w8, w1
-	bic	w8, w8, w8, asr #31
-	add	w0, w8, w0
+	movi	v4.2d, #0000000000000000
+	neg	v2.4s, v2.4s
+	neg	v3.4s, v3.4s
+	smax	v3.4s, v3.4s, v4.4s
+	smax	v2.4s, v2.4s, v4.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

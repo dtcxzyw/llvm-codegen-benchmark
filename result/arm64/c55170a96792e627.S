@@ -1,17 +1,21 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	mov	w9, #16960                      // =0x4240
-	movk	w9, #15, lsl #16
-	umull	x0, w8, w9
+	movi	v1.2d, #0000000000000000
+	mov	w8, #16960                      // =0x4240
+	movk	w8, #15, lsl #16
+	dup	v2.4s, w8
+	smax	v0.4s, v0.4s, v1.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #50                         // =0x32
-	cmp	w0, #50
-	mov	w9, #24                         // =0x18
-	csel	w8, w0, w8, gt
-	umull	x0, w8, w9
+	movi	v1.4s, #50
+	movi	v2.2s, #24
+	smax	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #24
+	umull2	v1.2d, v0.4s, v1.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function

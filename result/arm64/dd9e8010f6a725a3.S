@@ -1,32 +1,47 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	lsl	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x2
+	movi	v4.4s, #1
+	ushl	v2.4s, v4.4s, v2.4s
+	ushl	v3.4s, v4.4s, v3.4s
+	movi	v4.4s, #2
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	lsl	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x30
+	movi	v4.4s, #1
+	ushl	v2.4s, v4.4s, v2.4s
+	ushl	v3.4s, v4.4s, v3.4s
+	movi	v4.4s, #48
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #-4                         // =0xfffffffc
-	lsl	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0x7ffffffc
+	mvni	v4.4s, #3
+	ushl	v2.4s, v4.4s, v2.4s
+	ushl	v3.4s, v4.4s, v3.4s
+	fneg	v4.4s, v4.4s
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #262144                     // =0x40000
-	lsl	w8, w8, w1
-	orr	w8, w8, w0
-	and	w0, w8, #0xffe3ffff
+	movi	v4.4s, #4, lsl #16
+	ushl	v2.4s, v4.4s, v2.4s
+	ushl	v3.4s, v4.4s, v3.4s
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	bic	v0.4s, #28, lsl #16
+	bic	v1.4s, #28, lsl #16
 	ret
                                         // -- End function

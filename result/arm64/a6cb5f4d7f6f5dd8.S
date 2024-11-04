@@ -1,8 +1,16 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	cmp	x1, #0
-	and	x8, x8, #0xfffffffffffff
-	csel	x0, x8, x0, eq
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	mov	x8, #4503599627370495           // =0xfffffffffffff
+	dup	v6.2d, x8
+	and	v5.16b, v5.16b, v3.16b
+	and	v4.16b, v4.16b, v2.16b
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
+	and	v2.16b, v4.16b, v6.16b
+	and	v3.16b, v5.16b, v6.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

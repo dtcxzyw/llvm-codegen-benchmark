@@ -1,9 +1,20 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	cmp	x0, #1
-	sub	x8, x1, x2
-	csinc	x9, x0, xzr, hi
-	cmp	x9, x8
-	cset	w0, lo
+	mov	w8, #1                          // =0x1
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	dup	v6.2d, x8
+	cmhi	v7.2d, v0.2d, v6.2d
+	cmhi	v6.2d, v1.2d, v6.2d
+	and	v0.16b, v0.16b, v7.16b
+	mvn	v7.16b, v7.16b
+	and	v1.16b, v1.16b, v6.16b
+	mvn	v6.16b, v6.16b
+	sub	v0.2d, v0.2d, v7.2d
+	sub	v1.2d, v1.2d, v6.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	cmhi	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

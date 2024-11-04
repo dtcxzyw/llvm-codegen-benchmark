@@ -1,34 +1,60 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xffff
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	x8, x8, #6
-	bfi	x8, x0, #22, #8
-	mov	x0, x8
+	bic	v0.4h, #255, lsl #8
+	ushll	v1.4s, v1.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v1.2s, #6
+	ushll2	v1.2d, v1.4s, #6
+	ushll	v3.2d, v0.2s, #22
+	ushll2	v0.2d, v0.4s, #22
+	orr	v1.16b, v0.16b, v1.16b
+	orr	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	x8, x8, #32
-	orr	x0, x8, x0, lsl #60
+	ushll	v0.4s, v0.4h, #0
+	ushll	v1.4s, v1.4h, #0
+	ushll2	v2.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shll	v3.2d, v1.2s, #32
+	shll2	v1.2d, v1.4s, #32
+	shl	v0.2d, v0.2d, #60
+	shl	v2.2d, v2.2d, #60
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v0.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	x8, x8, #40
-	orr	x0, x8, x0, lsl #56
+	ushll	v1.4s, v1.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v1.2s, #0
+	ushll2	v1.2d, v1.4s, #0
+	ushll2	v3.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shl	v2.2d, v2.2d, #40
+	shl	v1.2d, v1.2d, #40
+	shl	v3.2d, v3.2d, #56
+	shl	v0.2d, v0.2d, #56
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	lsl	x8, x1, #48
-	and	w9, w0, #0xff
-	orr	x0, x8, x9, lsl #40
+	bic	v0.4h, #255, lsl #8
+	ushll	v1.4s, v1.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v1.2s, #0
+	ushll2	v1.2d, v1.4s, #0
+	ushll2	v3.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shl	v2.2d, v2.2d, #48
+	shl	v1.2d, v1.2d, #48
+	shl	v0.2d, v0.2d, #40
+	shl	v3.2d, v3.2d, #40
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

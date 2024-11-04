@@ -1,15 +1,27 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	bfxil	x0, x1, #0, #32
+	movi	v4.2d, #0xffffffff00000000
 	mov	x8, #1099511627776              // =0x10000000000
-	add	x0, x0, x8
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v4.16b
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	x8, x1, #0x3ff
-	and	x9, x0, #0x3ff
-	add	x8, x9, x8
-	orr	x0, x8, #0x800
+	mov	w8, #1023                       // =0x3ff
+	dup	v4.2d, x8
+	mov	w8, #2048                       // =0x800
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	dup	v4.2d, x8
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
+	orr	v1.16b, v1.16b, v4.16b
+	orr	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function

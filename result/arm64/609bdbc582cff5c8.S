@@ -1,6 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	w8, s0
-	and	w0, w8, #0x80000000
+	movi	v2.4s, #128, lsl #24
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

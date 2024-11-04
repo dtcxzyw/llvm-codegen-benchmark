@@ -1,28 +1,62 @@
-.LCPI0_0:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	scvtf	d1, w1
-	adrp	x8, .LCPI0_0
-	ldr	d2, [x8, :lo12:.LCPI0_0]
-	fmadd	d0, d1, d2, d0
-	fcmp	d0, #0.0
-	cset	w8, mi
-	and	w0, w8, w0
+	sshll2	v7.2d, v6.4s, #0
+	sshll	v16.2d, v5.2s, #0
+	mov	x8, #31227                      // =0x79fb
+	sshll	v6.2d, v6.2s, #0
+	sshll2	v5.2d, v5.4s, #0
+	movk	x8, #20639, lsl #16
+	movk	x8, #17427, lsl #32
+	movk	x8, #16339, lsl #48
+	scvtf	v7.2d, v7.2d
+	scvtf	v16.2d, v16.2d
+	scvtf	v6.2d, v6.2d
+	scvtf	v5.2d, v5.2d
+	dup	v17.2d, x8
+	fmla	v1.2d, v17.2d, v16.2d
+	fmla	v4.2d, v17.2d, v7.2d
+	fmla	v2.2d, v17.2d, v5.2d
+	fmla	v3.2d, v17.2d, v6.2d
+	fcmlt	v4.2d, v4.2d, #0.0
+	fcmlt	v1.2d, v1.2d, #0.0
+	fcmlt	v3.2d, v3.2d, #0.0
+	fcmlt	v2.2d, v2.2d, #0.0
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v1.4s, v1.4s, v2.4s
+	uzp1	v1.8h, v1.8h, v3.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3e112e0be826d695              // double 1.0000000000000001E-9
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	scvtf	d1, w1
-	adrp	x8, .LCPI1_0
-	ldr	d2, [x8, :lo12:.LCPI1_0]
+	sshll2	v7.2d, v6.4s, #0
+	sshll	v16.2d, v5.2s, #0
+	mov	x8, #54933                      // =0xd695
+	sshll	v6.2d, v6.2s, #0
+	sshll2	v5.2d, v5.4s, #0
+	movk	x8, #59430, lsl #16
+	movk	x8, #11787, lsl #32
+	movk	x8, #15889, lsl #48
+	scvtf	v7.2d, v7.2d
+	scvtf	v16.2d, v16.2d
+	scvtf	v6.2d, v6.2d
+	scvtf	v5.2d, v5.2d
+	dup	v17.2d, x8
 	mov	x8, #-4548635623644200960       // =0xc0e0000000000000
-	fmadd	d0, d1, d2, d0
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w8, ge
-	and	w0, w8, w0
+	fmla	v1.2d, v17.2d, v16.2d
+	fmla	v4.2d, v17.2d, v7.2d
+	dup	v7.2d, x8
+	fmla	v2.2d, v17.2d, v5.2d
+	fmla	v3.2d, v17.2d, v6.2d
+	fcmge	v4.2d, v4.2d, v7.2d
+	fcmge	v1.2d, v1.2d, v7.2d
+	fcmge	v3.2d, v3.2d, v7.2d
+	fcmge	v2.2d, v2.2d, v7.2d
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v1.4s, v1.4s, v2.4s
+	uzp1	v1.8h, v1.8h, v3.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

@@ -1,17 +1,35 @@
-.LCPI0_0:
-	.xword	0xbddb7cdfd9d7bdbb              // double -1.0E-10
-.LCPI0_1:
-	.xword	0x3fd34413509f79ff              // double 0.3010299956639812
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	mov	w8, #-16318                     // =0xffffc042
-	sub	w9, w0, w1
-	add	w8, w9, w8
-	adrp	x9, .LCPI0_1
-	scvtf	d0, w8
-	adrp	x8, .LCPI0_0
-	ldr	d2, [x9, :lo12:.LCPI0_1]
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fmadd	d0, d0, d2, d1
+	sub	v0.4s, v0.4s, v2.4s
+	sub	v1.4s, v1.4s, v3.4s
+	dup	v2.4s, w8
+	mov	x8, #48571                      // =0xbdbb
+	movk	x8, #55767, lsl #16
+	movk	x8, #31967, lsl #32
+	add	v0.4s, v0.4s, v2.4s
+	movk	x8, #48603, lsl #48
+	add	v1.4s, v1.4s, v2.4s
+	dup	v2.2d, x8
+	mov	x8, #31231                      // =0x79ff
+	movk	x8, #20639, lsl #16
+	sshll	v3.2d, v0.2s, #0
+	sshll2	v0.2d, v0.4s, #0
+	movk	x8, #17427, lsl #32
+	sshll	v4.2d, v1.2s, #0
+	sshll2	v1.2d, v1.4s, #0
+	movk	x8, #16339, lsl #48
+	dup	v6.2d, x8
+	scvtf	v3.2d, v3.2d
+	scvtf	v5.2d, v0.2d
+	mov	v0.16b, v2.16b
+	scvtf	v4.2d, v4.2d
+	scvtf	v7.2d, v1.2d
+	mov	v1.16b, v2.16b
+	fmla	v0.2d, v6.2d, v3.2d
+	mov	v3.16b, v2.16b
+	fmla	v1.2d, v6.2d, v5.2d
+	fmla	v2.2d, v6.2d, v4.2d
+	fmla	v3.2d, v6.2d, v7.2d
 	ret
                                         // -- End function

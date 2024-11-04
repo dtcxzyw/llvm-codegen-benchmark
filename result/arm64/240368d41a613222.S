@@ -1,16 +1,31 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
 	mov	w8, #32983                      // =0x80d7
-	mov	w9, #153                        // =0x99
-	mov	w10, #2                         // =0x2
 	movk	w8, #54827, lsl #16
-	umull	x8, w0, w8
-	lsr	x8, x8, #39
-	madd	w8, w8, w9, w10
-	mov	w9, #52429                      // =0xcccd
-	movk	w9, #52428, lsl #16
-	umull	x8, w8, w9
-	lsr	x0, x8, #34
-                                        // kill: def $w0 killed $w0 killed $x0
+	dup	v2.4s, w8
+	mov	w8, #52429                      // =0xcccd
+	movk	w8, #52428, lsl #16
+	umull2	v3.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
+	umull2	v4.2d, v1.4s, v2.4s
+	umull	v1.2d, v1.2s, v2.2s
+	movi	v2.4s, #153
+	uzp2	v0.4s, v0.4s, v3.4s
+	movi	v3.4s, #2
+	uzp2	v1.4s, v1.4s, v4.4s
+	movi	v4.4s, #2
+	ushr	v0.4s, v0.4s, #7
+	ushr	v1.4s, v1.4s, #7
+	mla	v3.4s, v0.4s, v2.4s
+	dup	v0.4s, w8
+	mla	v4.4s, v1.4s, v2.4s
+	umull2	v1.2d, v3.4s, v0.4s
+	umull	v2.2d, v3.2s, v0.2s
+	umull2	v3.2d, v4.4s, v0.4s
+	umull	v0.2d, v4.2s, v0.2s
+	uzp2	v1.4s, v2.4s, v1.4s
+	uzp2	v2.4s, v0.4s, v3.4s
+	ushr	v0.4s, v1.4s, #2
+	ushr	v1.4s, v2.4s, #2
 	ret
                                         // -- End function

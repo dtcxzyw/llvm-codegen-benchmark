@@ -1,5 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sbfx	w0, w0, #0, #1
+	shl	v0.16b, v0.16b, #7
+	cmlt	v0.16b, v0.16b, #0
 	ret
                                         // -- End function

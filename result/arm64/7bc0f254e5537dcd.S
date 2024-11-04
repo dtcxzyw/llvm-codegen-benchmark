@@ -1,5 +1,8 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	eon	w0, w0, w1
+	eor	v1.16b, v1.16b, v3.16b
+	eor	v0.16b, v0.16b, v2.16b
+	mvn	v1.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function

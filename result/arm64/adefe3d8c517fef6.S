@@ -1,79 +1,131 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	add	w8, w0, #13
-	cmp	w0, #0
-	csel	w0, w8, w0, lt
+	movi	v2.4s, #13
+	cmlt	v3.4s, v1.4s, #0
+	cmlt	v4.4s, v0.4s, #0
+	and	v4.16b, v4.16b, v2.16b
+	and	v2.16b, v3.16b, v2.16b
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	lsr	w8, w0, #7
-	sub	w9, w0, #21, lsl #12            // =86016
-	sub	w9, w9, #384
-	cmp	w8, #674
-	csel	w0, w9, w0, hi
+	mov	w8, #20863                      // =0x517f
+	movk	w8, #1, lsl #16
+	dup	v2.4s, w8
+	mov	w8, #44672                      // =0xae80
+	movk	w8, #65534, lsl #16
+	dup	v3.4s, w8
+	cmhi	v4.4s, v1.4s, v2.4s
+	cmhi	v2.4s, v0.4s, v2.4s
+	and	v2.16b, v2.16b, v3.16b
+	and	v3.16b, v4.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000036:                   // @func0000000000000036
 // %bb.0:                               // %entry
-	add	w8, w0, #12
-	cmp	w0, #3
-	csel	w0, w8, w0, lt
+	movi	v2.4s, #3
+	movi	v3.4s, #12
+	cmgt	v4.4s, v2.4s, v1.4s
+	cmgt	v2.4s, v2.4s, v0.4s
+	and	v2.16b, v2.16b, v3.16b
+	and	v3.16b, v4.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	add	w8, w0, #12
-	cmp	w0, #3
-	csel	w0, w8, w0, lo
+	movi	v2.4s, #3
+	movi	v3.4s, #12
+	cmhi	v4.4s, v2.4s, v1.4s
+	cmhi	v2.4s, v2.4s, v0.4s
+	and	v2.16b, v2.16b, v3.16b
+	and	v3.16b, v4.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	subs	w8, w0, #12
-	csel	w0, w8, w0, gt
+	movi	v2.4s, #12
+	cmgt	v3.4s, v1.4s, v2.4s
+	cmgt	v2.4s, v0.4s, v2.4s
+	bic	v2.4s, #11
+	bic	v3.4s, #11
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	add	w8, w0, #162
-	cmp	w0, #254
-	csel	w0, w8, w0, hi
+	movi	v2.4s, #254
+	movi	v3.4s, #162
+	cmhi	v4.4s, v1.4s, v2.4s
+	cmhi	v2.4s, v0.4s, v2.4s
+	and	v2.16b, v2.16b, v3.16b
+	and	v3.16b, v4.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	w8, w0, #4
-	cmp	w0, #59
-	csel	w0, w8, w0, gt
+	movi	v2.4s, #59
+	movi	v3.4s, #4
+	cmgt	v4.4s, v1.4s, v2.4s
+	cmgt	v2.4s, v0.4s, v2.4s
+	and	v2.16b, v2.16b, v3.16b
+	and	v3.16b, v4.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func000000000000003a:                   // @func000000000000003a
 // %bb.0:                               // %entry
-	add	w8, w0, #32
-	cmp	w0, #0
-	csel	w0, w8, w0, gt
+	movi	v2.4s, #32
+	cmgt	v3.4s, v1.4s, #0
+	cmgt	v4.4s, v0.4s, #0
+	and	v4.16b, v4.16b, v2.16b
+	and	v2.16b, v3.16b, v2.16b
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	mov	w8, #-2147483647                // =0x80000001
-	cmp	w0, #0
-	add	w8, w0, w8
-	csel	w0, w8, w0, lt
+	movi	v2.4s, #1
+	cmlt	v3.4s, v1.4s, #0
+	cmlt	v4.4s, v0.4s, #0
+	fneg	v2.4s, v2.4s
+	and	v4.16b, v4.16b, v2.16b
+	and	v2.16b, v3.16b, v2.16b
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	w8, w0, #8
-	cmp	w0, #7
-	csel	w0, w8, w0, hi
+	movi	v2.4s, #7
+	cmhi	v3.4s, v1.4s, v2.4s
+	cmhi	v2.4s, v0.4s, v2.4s
+	bic	v2.4s, #7
+	bic	v3.4s, #7
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sub	w8, w0, #64
-	cmp	w0, #96
-	csel	w0, w8, w0, lo
+	movi	v2.4s, #96
+	cmhi	v3.4s, v2.4s, v1.4s
+	cmhi	v2.4s, v2.4s, v0.4s
+	bic	v2.4s, #63
+	bic	v3.4s, #63
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

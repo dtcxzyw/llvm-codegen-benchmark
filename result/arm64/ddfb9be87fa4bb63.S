@@ -1,11 +1,16 @@
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	clz	w8, w2
-	mov	w9, #32                         // =0x20
-	tst	w1, #0x1
-	sub	w8, w9, w8
-	csinc	w8, w8, wzr, ne
-	add	w8, w8, w0
-	sxtw	x0, w8
+	ushll	v1.4s, v1.4h, #0
+	clz	v2.4s, v2.4s
+	movi	v3.4s, #32
+	shl	v1.4s, v1.4s, #31
+	sub	v2.4s, v3.4s, v2.4s
+	cmlt	v1.4s, v1.4s, #0
+	and	v2.16b, v2.16b, v1.16b
+	mvn	v1.16b, v1.16b
+	sub	v1.4s, v2.4s, v1.4s
+	add	v0.4s, v1.4s, v0.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

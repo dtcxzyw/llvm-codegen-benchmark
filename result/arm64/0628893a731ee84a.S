@@ -1,16 +1,60 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	w8, w1, w0
-	scvtf	d2, w0
-	scvtf	d1, w8
-	fmadd	d0, d1, d0, d2
+	sub	v6.4s, v6.4s, v4.4s
+	sub	v7.4s, v7.4s, v5.4s
+	sshll	v16.2d, v5.2s, #0
+	sshll	v17.2d, v4.2s, #0
+	sshll2	v18.2d, v4.4s, #0
+	sshll2	v21.2d, v5.4s, #0
+	sshll	v19.2d, v6.2s, #0
+	sshll2	v20.2d, v6.4s, #0
+	sshll	v22.2d, v7.2s, #0
+	sshll2	v23.2d, v7.4s, #0
+	scvtf	v4.2d, v16.2d
+	scvtf	v5.2d, v17.2d
+	scvtf	v6.2d, v18.2d
+	scvtf	v7.2d, v21.2d
+	scvtf	v16.2d, v19.2d
+	scvtf	v17.2d, v20.2d
+	scvtf	v18.2d, v22.2d
+	scvtf	v19.2d, v23.2d
+	fmla	v6.2d, v1.2d, v17.2d
+	fmla	v5.2d, v0.2d, v16.2d
+	fmla	v7.2d, v3.2d, v19.2d
+	fmla	v4.2d, v2.2d, v18.2d
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v6.16b
+	mov	v2.16b, v4.16b
+	mov	v3.16b, v7.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w1, w0
-	scvtf	d2, w0
-	scvtf	d1, w8
-	fmadd	d0, d0, d1, d2
+	sub	v6.4s, v6.4s, v4.4s
+	sub	v7.4s, v7.4s, v5.4s
+	sshll	v16.2d, v5.2s, #0
+	sshll	v17.2d, v4.2s, #0
+	sshll2	v18.2d, v4.4s, #0
+	sshll2	v21.2d, v5.4s, #0
+	sshll	v19.2d, v6.2s, #0
+	sshll2	v20.2d, v6.4s, #0
+	sshll	v22.2d, v7.2s, #0
+	sshll2	v23.2d, v7.4s, #0
+	scvtf	v4.2d, v16.2d
+	scvtf	v5.2d, v17.2d
+	scvtf	v6.2d, v18.2d
+	scvtf	v7.2d, v21.2d
+	scvtf	v16.2d, v19.2d
+	scvtf	v17.2d, v20.2d
+	scvtf	v18.2d, v22.2d
+	scvtf	v19.2d, v23.2d
+	fmla	v6.2d, v17.2d, v1.2d
+	fmla	v5.2d, v16.2d, v0.2d
+	fmla	v7.2d, v19.2d, v3.2d
+	fmla	v4.2d, v18.2d, v2.2d
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v6.16b
+	mov	v2.16b, v4.16b
+	mov	v3.16b, v7.16b
 	ret
                                         // -- End function

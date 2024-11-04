@@ -1,30 +1,43 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmn	w0, #1
-	csel	w0, wzr, w0, eq
+	movi	v2.2d, #0xffffffffffffffff
+	cmeq	v3.4s, v1.4s, v2.4s
+	cmeq	v2.4s, v0.4s, v2.4s
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	mov	w8, #14                         // =0xe
-	cmp	w0, #0
-	csel	w0, w8, w0, lt
+	movi	v2.4s, #14
+	cmlt	v3.4s, v1.4s, #0
+	cmlt	v4.4s, v0.4s, #0
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v2.16b, v3.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	and	w0, w0, w0, asr #31
+	movi	v2.2d, #0000000000000000
+	smin	v0.4s, v0.4s, v2.4s
+	smin	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	cmp	w0, #9
-	csel	w0, wzr, w0, hi
+	movi	v2.4s, #9
+	cmhi	v3.4s, v1.4s, v2.4s
+	cmhi	v2.4s, v0.4s, v2.4s
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmp	w0, #2
-	csel	w0, wzr, w0, lo
+	movi	v2.4s, #2
+	cmhi	v3.4s, v2.4s, v1.4s
+	cmhi	v2.4s, v2.4s, v0.4s
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function

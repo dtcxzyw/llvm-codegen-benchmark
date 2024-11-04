@@ -1,34 +1,66 @@
 func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	add	w9, w2, #7
-	cmp	w8, #10
-	csel	w8, w9, w0, lo
-	add	w0, w8, #1
+	movi	v5.8b, #10
+	cmhi	v2.8b, v5.8b, v2.8b
+	movi	v5.4s, #7
+	sshll	v2.8h, v2.8b, #0
+	add	v4.4s, v4.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	sshll2	v5.4s, v2.8h, #0
+	sshll	v2.4s, v2.4h, #0
+	bit	v0.16b, v3.16b, v2.16b
+	bit	v1.16b, v4.16b, v5.16b
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	sub	w8, w2, #5
-	tst	w1, #0xff
-	csel	w8, w8, w0, eq
-	sub	w0, w8, #1
+	cmeq	v2.8b, v2.8b, #0
+	mvni	v5.4s, #4
+	sshll	v2.8h, v2.8b, #0
+	add	v4.4s, v4.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	sshll2	v5.4s, v2.8h, #0
+	sshll	v2.4s, v2.4h, #0
+	bit	v0.16b, v3.16b, v2.16b
+	bit	v1.16b, v4.16b, v5.16b
+	movi	v2.2d, #0xffffffffffffffff
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	w8, w2, #2
-	tst	w1, #0xff
-	csel	w8, w8, w0, eq
-	add	w0, w8, #1
+	cmeq	v2.8b, v2.8b, #0
+	movi	v5.4s, #2
+	sshll	v2.8h, v2.8b, #0
+	add	v4.4s, v4.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	sshll2	v5.4s, v2.8h, #0
+	sshll	v2.4s, v2.4h, #0
+	bit	v0.16b, v3.16b, v2.16b
+	bit	v1.16b, v4.16b, v5.16b
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func00000000000000c7:                   // @func00000000000000c7
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	add	w9, w2, #39
-	cmp	w8, #1
-	csel	w8, w9, w0, eq
-	add	w0, w8, #19
+	movi	v5.8b, #1
+	cmeq	v2.8b, v2.8b, v5.8b
+	movi	v5.4s, #39
+	sshll	v2.8h, v2.8b, #0
+	add	v4.4s, v4.4s, v5.4s
+	add	v3.4s, v3.4s, v5.4s
+	sshll2	v5.4s, v2.8h, #0
+	sshll	v2.4s, v2.4h, #0
+	bit	v0.16b, v3.16b, v2.16b
+	bit	v1.16b, v4.16b, v5.16b
+	movi	v2.4s, #19
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function

@@ -1,31 +1,61 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	lsr	w9, w0, #8
-	mov	w8, #505                        // =0x1f9
-	cmp	w1, #0
-	ccmp	w9, w8, #0, eq
-	cset	w0, eq
+	mov	w8, #63744                      // =0xf900
+	bic	v1.4s, #255
+	bic	v0.4s, #255
+	movk	w8, #1, lsl #16
+	cmeq	v3.4s, v3.4s, #0
+	cmeq	v2.4s, v2.4s, #0
+	dup	v4.4s, w8
+	uzp1	v2.8h, v2.8h, v3.8h
+	cmeq	v1.4s, v1.4s, v4.4s
+	cmeq	v0.4s, v0.4s, v4.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	and	v0.16b, v2.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
-	tst	w0, #0x40000000
-	ccmp	w1, #0, #8, eq
-	cset	w0, ge
+	movi	v4.4s, #64, lsl #24
+	cmge	v3.4s, v3.4s, #0
+	cmge	v2.4s, v2.4s, #0
+	uzp1	v2.8h, v2.8h, v3.8h
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	and	v0.16b, v2.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func00000000000000ac:                   // @func00000000000000ac
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #12, #1
-	cmp	w1, #0
-	csinc	w0, w8, wzr, ge
+	movi	v4.4s, #16, lsl #8
+	cmlt	v3.4s, v3.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	uzp1	v2.8h, v2.8h, v3.8h
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	orn	v0.16b, v2.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	and	w8, w0, #0x100
-	orr	w8, w1, w8
-	cmp	w8, #0
-	cset	w0, ne
+	movi	v4.4s, #1, lsl #8
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	mvn	v0.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

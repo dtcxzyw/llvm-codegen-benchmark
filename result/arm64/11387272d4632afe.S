@@ -1,19 +1,30 @@
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	and	x9, x0, #0x3ffffff
-	lsr	x8, x8, #25
-	and	x9, x9, #0xffffffffff7fffff
-	cmp	x8, #0
-	csel	x0, xzr, x9, ne
+	mov	w8, #33554431                   // =0x1ffffff
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	dup	v4.2d, x8
+	mov	w8, #58720255                   // =0x37fffff
+	cmhi	v2.2d, v2.2d, v4.2d
+	cmhi	v3.2d, v3.2d, v4.2d
+	bic	v1.16b, v1.16b, v3.16b
+	bic	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	mov	x9, #9223372036854775804        // =0x7ffffffffffffffc
-	and	x10, x0, #0x7ffffffffffffffc
-	cmp	x8, x9
-	csel	x0, xzr, x10, hi
+	mov	x8, #9223372036854775804        // =0x7ffffffffffffffc
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	dup	v4.2d, x8
+	cmhi	v2.2d, v2.2d, v4.2d
+	cmhi	v3.2d, v3.2d, v4.2d
+	bic	v1.16b, v1.16b, v3.16b
+	bic	v0.16b, v0.16b, v2.16b
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function

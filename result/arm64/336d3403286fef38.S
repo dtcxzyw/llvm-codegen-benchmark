@@ -1,48 +1,60 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x0, x8, lsr #32
-	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	ushr	v2.2d, v2.2d, #32
+	addhn	v0.2s, v2.2d, v0.2d
+	ushr	v2.2d, v3.2d, #32
+	addhn2	v0.4s, v2.2d, v1.2d
 	ret
                                         // -- End function
 func00000000000000db:                   // @func00000000000000db
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x0, x8, lsr #32
-	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	ushr	v2.2d, v2.2d, #32
+	addhn	v0.2s, v2.2d, v0.2d
+	ushr	v2.2d, v3.2d, #32
+	addhn2	v0.4s, v2.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000092:                   // @func0000000000000092
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x0, x8, lsr #32
-	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	ushr	v2.2d, v2.2d, #32
+	addhn	v0.2s, v2.2d, v0.2d
+	ushr	v2.2d, v3.2d, #32
+	addhn2	v0.4s, v2.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x0, x8, lsr #44
-	lsr	x0, x8, #8
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	usra	v0.2d, v2.2d, #44
+	usra	v1.2d, v3.2d, #44
+	shrn	v0.2s, v0.2d, #8
+	shrn2	v0.4s, v1.2d, #8
 	ret
                                         // -- End function
 func00000000000000d8:                   // @func00000000000000d8
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x0, x8, lsr #44
-	lsr	x0, x8, #8
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	usra	v0.2d, v2.2d, #44
+	usra	v1.2d, v3.2d, #44
+	shrn	v0.2s, v0.2d, #8
+	shrn2	v0.4s, v1.2d, #8
 	ret
                                         // -- End function
 func0000000000000082:                   // @func0000000000000082
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x0, x8, lsr #32
-	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	ushr	v2.2d, v2.2d, #32
+	addhn	v0.2s, v2.2d, v0.2d
+	ushr	v2.2d, v3.2d, #32
+	addhn2	v0.4s, v2.2d, v1.2d
 	ret
                                         // -- End function

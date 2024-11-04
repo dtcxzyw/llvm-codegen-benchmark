@@ -1,7 +1,10 @@
 func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
-	bic	w8, w1, w1, asr #31
-	add	w8, w8, #1
-	add	x0, x8, w0, uxtw
+	movi	v2.2d, #0000000000000000
+	smax	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #1
+	add	v2.4s, v1.4s, v2.4s
+	uaddl2	v1.2d, v2.4s, v0.4s
+	uaddl	v0.2d, v2.2s, v0.2s
 	ret
                                         // -- End function

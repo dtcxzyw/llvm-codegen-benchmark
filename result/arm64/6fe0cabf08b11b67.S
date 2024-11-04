@@ -1,18 +1,22 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	clz	w9, w0
-	mov	w8, #2                          // =0x2
-	eor	w9, w9, #0x1f
-	lsl	w8, w8, w9
-	ubfiz	x0, x8, #4, #32
+	movi	v1.4s, #31
+	clz	v0.4s, v0.4s
+	movi	v2.4s, #2
+	eor	v0.16b, v0.16b, v1.16b
+	ushl	v0.4s, v2.4s, v0.4s
+	ushll2	v1.2d, v0.4s, #4
+	ushll	v0.2d, v0.2s, #4
 	ret
                                         // -- End function
 func0000000000000033:                   // @func0000000000000033
 // %bb.0:                               // %entry
-	clz	w9, w0
-	mov	w8, #4                          // =0x4
-	eor	w9, w9, #0x1f
-	lsl	w8, w8, w9
-	ubfiz	x0, x8, #3, #32
+	movi	v1.4s, #31
+	clz	v0.4s, v0.4s
+	movi	v2.4s, #4
+	eor	v0.16b, v0.16b, v1.16b
+	ushl	v0.4s, v2.4s, v0.4s
+	ushll2	v1.2d, v0.4s, #3
+	ushll	v0.2d, v0.2s, #3
 	ret
                                         // -- End function

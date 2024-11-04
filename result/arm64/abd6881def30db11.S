@@ -1,18 +1,32 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csel	w0, w1, wzr, ne
+	uzp1	v1.4s, v1.4s, v2.4s
+	shl	v0.4h, v0.4h, #15
+	cmlt	v0.4h, v0.4h, #0
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csinv	w0, w1, wzr, ne
+	shl	v0.4h, v0.4h, #15
+	uzp1	v1.4s, v1.4s, v2.4s
+	cmlt	v0.4h, v0.4h, #0
+	xtn	v1.4h, v1.4s
+	mvn	v2.8b, v0.8b
+	and	v0.8b, v1.8b, v0.8b
+	bic	v2.4h, #255, lsl #8
+	orr	v0.8b, v0.8b, v2.8b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csinc	w0, w1, wzr, ne
+	uzp1	v1.4s, v1.4s, v2.4s
+	shl	v0.4h, v0.4h, #15
+	cmlt	v0.4h, v0.4h, #0
+	xtn	v1.4h, v1.4s
+	and	v1.8b, v1.8b, v0.8b
+	mvn	v0.8b, v0.8b
+	sub	v0.4h, v1.4h, v0.4h
 	ret
                                         // -- End function

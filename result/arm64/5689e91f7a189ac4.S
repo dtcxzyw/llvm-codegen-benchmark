@@ -1,14 +1,56 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	sdiv	w9, w0, w8
-	msub	w0, w9, w8, w0
+	movi	v2.4s, #1
+	mov	w8, v0.s[3]
+	mov	w11, v0.s[2]
+	fmov	w15, s0
+	mov	w18, v0.s[1]
+	add	v1.4s, v1.4s, v2.4s
+	mov	w9, v1.s[3]
+	mov	w12, v1.s[2]
+	fmov	w14, s1
+	mov	w17, v1.s[1]
+	sdiv	w16, w15, w14
+	sdiv	w10, w8, w9
+	sdiv	w13, w11, w12
+	msub	w8, w10, w9, w8
+	msub	w10, w16, w14, w15
+	fmov	s0, w10
+	sdiv	w0, w18, w17
+	msub	w9, w13, w12, w11
+	fmov	s1, w9
+	mov	v1.s[1], w8
+	msub	w11, w0, w17, w18
+	ushll	v1.2d, v1.2s, #0
+	mov	v0.s[1], w11
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w1, #2
-	sdiv	w9, w0, w8
-	msub	w0, w9, w8, w0
+	mvni	v2.4s, #1
+	mov	w8, v0.s[3]
+	mov	w11, v0.s[2]
+	fmov	w15, s0
+	mov	w18, v0.s[1]
+	add	v1.4s, v1.4s, v2.4s
+	mov	w9, v1.s[3]
+	mov	w12, v1.s[2]
+	fmov	w14, s1
+	mov	w17, v1.s[1]
+	sdiv	w16, w15, w14
+	sdiv	w10, w8, w9
+	sdiv	w13, w11, w12
+	msub	w8, w10, w9, w8
+	msub	w10, w16, w14, w15
+	fmov	s0, w10
+	sdiv	w0, w18, w17
+	msub	w9, w13, w12, w11
+	fmov	s1, w9
+	mov	v1.s[1], w8
+	msub	w11, w0, w17, w18
+	ushll	v1.2d, v1.2s, #0
+	mov	v0.s[1], w11
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

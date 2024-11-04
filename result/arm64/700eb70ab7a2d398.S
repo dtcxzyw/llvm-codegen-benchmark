@@ -1,7 +1,10 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	cmp	x0, #0
-	csneg	x0, x8, x0, ge
+	neg	v4.2d, v1.2d
+	neg	v5.2d, v0.2d
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bsl	v1.16b, v4.16b, v3.16b
+	bsl	v0.16b, v5.16b, v2.16b
 	ret
                                         // -- End function

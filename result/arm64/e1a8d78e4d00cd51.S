@@ -1,14 +1,18 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, uxtb
-	cmp	w8, #0
-	cneg	w0, w8, mi
+	movi	v4.2d, #0x0000ff000000ff
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sabd	v0.4s, v0.4s, v2.4s
+	sabd	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w8, w1, #0x7
-	subs	w8, w0, w8
-	cneg	w0, w8, mi
+	movi	v4.4s, #7
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	sabd	v0.4s, v0.4s, v2.4s
+	sabd	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function

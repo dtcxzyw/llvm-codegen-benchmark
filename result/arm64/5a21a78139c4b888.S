@@ -1,24 +1,96 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	udiv	w0, w0, w8
+	movi	v2.4s, #1
+	mov	w8, v0.s[3]
+	fmov	w11, s0
+	mov	w12, v0.s[1]
+	add	v1.4s, v1.4s, v2.4s
+	mov	w9, v1.s[3]
+	mov	w10, v1.s[2]
+	udiv	w8, w8, w9
+	mov	w9, v0.s[2]
+	udiv	w9, w9, w10
+	fmov	w10, s1
+	udiv	w10, w11, w10
+	mov	w11, v1.s[1]
+	fmov	s1, w9
+	mov	v1.s[1], w8
+	ushll	v1.2d, v1.2s, #0
+	udiv	w11, w12, w11
+	fmov	s0, w10
+	mov	v0.s[1], w11
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	udiv	w0, w0, w8
+	movi	v2.2d, #0xffffffffffffffff
+	mov	w8, v0.s[3]
+	fmov	w11, s0
+	mov	w12, v0.s[1]
+	add	v1.4s, v1.4s, v2.4s
+	mov	w9, v1.s[3]
+	mov	w10, v1.s[2]
+	udiv	w8, w8, w9
+	mov	w9, v0.s[2]
+	udiv	w9, w9, w10
+	fmov	w10, s1
+	udiv	w10, w11, w10
+	mov	w11, v1.s[1]
+	fmov	s1, w9
+	mov	v1.s[1], w8
+	ushll	v1.2d, v1.2s, #0
+	udiv	w11, w12, w11
+	fmov	s0, w10
+	mov	v0.s[1], w11
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	udiv	w0, w0, w8
+	movi	v2.2d, #0xffffffffffffffff
+	mov	w8, v0.s[3]
+	fmov	w11, s0
+	mov	w12, v0.s[1]
+	add	v1.4s, v1.4s, v2.4s
+	mov	w9, v1.s[3]
+	mov	w10, v1.s[2]
+	udiv	w8, w8, w9
+	mov	w9, v0.s[2]
+	udiv	w9, w9, w10
+	fmov	w10, s1
+	udiv	w10, w11, w10
+	mov	w11, v1.s[1]
+	fmov	s1, w9
+	mov	v1.s[1], w8
+	ushll	v1.2d, v1.2s, #0
+	udiv	w11, w12, w11
+	fmov	s0, w10
+	mov	v0.s[1], w11
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	udiv	w0, w0, w8
+	movi	v2.4s, #1
+	mov	w8, v0.s[3]
+	fmov	w11, s0
+	mov	w12, v0.s[1]
+	add	v1.4s, v1.4s, v2.4s
+	mov	w9, v1.s[3]
+	mov	w10, v1.s[2]
+	udiv	w8, w8, w9
+	mov	w9, v0.s[2]
+	udiv	w9, w9, w10
+	fmov	w10, s1
+	udiv	w10, w11, w10
+	mov	w11, v1.s[1]
+	fmov	s1, w9
+	mov	v1.s[1], w8
+	ushll	v1.2d, v1.2s, #0
+	udiv	w11, w12, w11
+	fmov	s0, w10
+	mov	v0.s[1], w11
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

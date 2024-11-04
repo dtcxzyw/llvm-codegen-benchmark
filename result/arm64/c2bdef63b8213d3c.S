@@ -1,39 +1,96 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsr	x9, x0, #16
+	movi	v2.2d, #0x0000ff000000ff
+	ushr	v0.2d, v0.2d, #16
 	mov	x8, #1                          // =0x1
+	ushr	v1.2d, v1.2d, #16
 	movk	x8, #10000, lsl #32
-	and	x9, x9, #0xff000000ff
-	mul	x0, x9, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	fmov	x9, d0
+	fmov	x11, d1
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d0, x9
+	mul	x8, x12, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #1, #21
-	mov	w9, #11283                      // =0x2c13
-	movk	w9, #10, lsl #16
-	umull	x0, w8, w9
+	mov	w8, #2097151                    // =0x1fffff
+	ushr	v0.2d, v0.2d, #1
+	ushr	v1.2d, v1.2d, #1
+	dup	v2.2d, x8
+	mov	w8, #11283                      // =0x2c13
+	movk	w8, #10, lsl #16
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2s, w8
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	umull	v0.2d, v0.2s, v2.2s
+	umull	v1.2d, v1.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #1, #21
+	mov	w8, #2097151                    // =0x1fffff
+	ushr	v0.2d, v0.2d, #1
+	ushr	v1.2d, v1.2d, #1
+	dup	v2.2d, x8
 	mov	x9, #-14765                     // =0xffffffffffffc653
 	movk	x9, #65520, lsl #16
-	smull	x0, w8, w9
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	fmov	x10, d0
+	fmov	x12, d1
+	mov	x8, v0.d[1]
+	mov	x11, v1.d[1]
+	smull	x10, w10, w9
+	smull	x12, w12, w9
+	smull	x8, w8, w9
+	smull	x9, w11, w9
+	fmov	d0, x10
+	fmov	d1, x12
+	mov	v0.d[1], x8
+	mov	v1.d[1], x9
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #3, #32
-	add	x8, x8, x8, lsl #8
-	lsl	x0, x8, #2
+	mov	w8, #1028                       // =0x404
+	shrn	v1.2s, v1.2d, #3
+	shrn	v0.2s, v0.2d, #3
+	dup	v2.2s, w8
+	umull	v0.2d, v0.2s, v2.2s
+	umull	v1.2d, v1.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ubfx	x8, x0, #32, #16
-	mov	x9, #281479271743489            // =0x1000100010001
-	mul	x0, x8, x9
+	movi	v2.2d, #0x0000000000ffff
+	ushr	v0.2d, v0.2d, #32
+	mov	x8, #281479271743489            // =0x1000100010001
+	ushr	v1.2d, v1.2d, #32
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	fmov	x9, d0
+	fmov	x11, d1
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d0, x9
+	mul	x8, x12, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
 	ret
                                         // -- End function

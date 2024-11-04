@@ -1,49 +1,58 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	sub	v1.4s, v2.4s, v1.4s
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000080:                   // @func0000000000000080
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	sub	v1.4s, v2.4s, v1.4s
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func00000000000000c0:                   // @func00000000000000c0
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	sub	v1.4s, v2.4s, v1.4s
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	sub	v1.4s, v2.4s, v1.4s
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	movi	v3.4s, #2
+	sub	v1.4s, v2.4s, v1.4s
+	add	v0.4s, v0.4s, v3.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	sub	v1.4s, v2.4s, v1.4s
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func00000000000000d5:                   // @func00000000000000d5
 // %bb.0:                               // %entry
-	sub	w8, w2, w1
-	add	w8, w8, w0
-	add	w0, w8, #27
+	uzp1	v2.4s, v2.4s, v3.4s
+	movi	v3.4s, #27
+	sub	v1.4s, v2.4s, v1.4s
+	add	v0.4s, v0.4s, v3.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

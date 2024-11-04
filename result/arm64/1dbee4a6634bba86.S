@@ -1,7 +1,10 @@
 func0000000000000365:                   // @func0000000000000365
 // %bb.0:                               // %entry
-	mul	w8, w0, w1
-	madd	w8, w8, w2, w8
-	lsl	w0, w8, #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	movi	v3.4s, #1
+	mul	v0.4s, v0.4s, v1.4s
+	add	v1.4s, v2.4s, v3.4s
+	mul	v0.4s, v0.4s, v1.4s
+	shl	v0.4s, v0.4s, #2
 	ret
                                         // -- End function

@@ -1,8 +1,32 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvt	s2, d2
-	fsub	s1, s1, s2
-	fmul	s1, s1, s1
-	fmadd	s0, s0, s0, s1
+	ldp	q16, q20, [sp]
+	ldp	q17, q21, [sp, #32]
+	ldp	q18, q22, [sp, #64]
+	ldp	q19, q23, [sp, #96]
+	fcvtn	v16.2s, v16.2d
+	fcvtn	v17.2s, v17.2d
+	fcvtn	v18.2s, v18.2d
+	fcvtn	v19.2s, v19.2d
+	fcvtn2	v16.4s, v20.2d
+	fcvtn2	v17.4s, v21.2d
+	fcvtn2	v18.4s, v22.2d
+	fcvtn2	v19.4s, v23.2d
+	fsub	v16.4s, v4.4s, v16.4s
+	fsub	v4.4s, v5.4s, v17.4s
+	fsub	v17.4s, v6.4s, v18.4s
+	fsub	v6.4s, v7.4s, v19.4s
+	fmul	v5.4s, v16.4s, v16.4s
+	fmul	v4.4s, v4.4s, v4.4s
+	fmul	v7.4s, v17.4s, v17.4s
+	fmul	v6.4s, v6.4s, v6.4s
+	fmla	v5.4s, v0.4s, v0.4s
+	fmla	v4.4s, v1.4s, v1.4s
+	fmla	v7.4s, v2.4s, v2.4s
+	fmla	v6.4s, v3.4s, v3.4s
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v4.16b
+	mov	v2.16b, v7.16b
+	mov	v3.16b, v6.16b
 	ret
                                         // -- End function

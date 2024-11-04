@@ -1,8 +1,8 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w0, w1
-	add	w9, w2, w1
-	sxth	w8, w8
-	add	w0, w8, w9, sxth
+	add	v2.8h, v2.8h, v1.8h
+	sub	v0.8h, v0.8h, v1.8h
+	saddl2	v1.4s, v0.8h, v2.8h
+	saddl	v0.4s, v0.4h, v2.4h
 	ret
                                         // -- End function

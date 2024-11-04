@@ -1,13 +1,22 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #49317                      // =0xc0a5
-	fneg	s1, s0
+	fneg	v5.4s, v3.4s
+	fneg	v6.4s, v2.4s
 	movk	w8, #49840, lsl #16
-	fmov	s2, w8
+	fneg	v7.4s, v1.4s
+	fneg	v16.4s, v0.4s
+	dup	v4.4s, w8
 	mov	w8, #49317                      // =0xc0a5
 	movk	w8, #17072, lsl #16
-	fcmp	s0, s2
-	fmov	s0, w8
-	fcsel	s0, s0, s1, mi
+	fcmgt	v3.4s, v4.4s, v3.4s
+	fcmgt	v0.4s, v4.4s, v0.4s
+	fcmgt	v2.4s, v4.4s, v2.4s
+	fcmgt	v1.4s, v4.4s, v1.4s
+	dup	v4.4s, w8
+	bsl	v0.16b, v4.16b, v16.16b
+	bsl	v2.16b, v4.16b, v6.16b
+	bsl	v3.16b, v4.16b, v5.16b
+	bsl	v1.16b, v4.16b, v7.16b
 	ret
                                         // -- End function

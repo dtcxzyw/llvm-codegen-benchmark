@@ -1,39 +1,45 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #443                        // =0x1bb
-	tst	w1, #0xffff
-	csel	w8, w8, w0, eq
-	and	w0, w8, #0xffff
+	cmeq	v1.8h, v1.8h, #0
+	dup	v2.8h, w8
+	bit	v0.16b, v2.16b, v1.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	and	w9, w1, #0xffff
-	mov	w8, #5                          // =0x5
-	cmp	w9, #10
-	csel	w8, w8, w0, lo
-	and	w0, w8, #0xffff
+	movi	v2.8h, #10
+	movi	v3.8h, #5
+	cmhi	v1.8h, v2.8h, v1.8h
+	bit	v0.16b, v3.16b, v1.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	tst	w1, #0xffff
-	csel	w8, wzr, w0, eq
-	and	w0, w8, #0xffff
+	cmeq	v1.8h, v1.8h, #0
+	bic	v0.16b, v0.16b, v1.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	sxth	w8, w1
-	and	w8, w0, w8, lsr #15
-	and	w0, w8, #0xffff
+	cmlt	v1.8h, v1.8h, #0
+	and	v0.16b, v1.16b, v0.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	cmp	w8, #1023
-	csel	w8, wzr, w0, lo
-	and	w0, w8, #0xffff
+	mvni	v2.8h, #252, lsl #8
+	cmhi	v1.8h, v2.8h, v1.8h
+	bic	v0.16b, v0.16b, v1.16b
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

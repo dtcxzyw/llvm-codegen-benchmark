@@ -1,26 +1,35 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #23593                      // =0x5c29
-	mul	w8, w1, w8
-	lsl	w9, w8, #12
-	bfxil	w9, w8, #4, #12
-	and	w8, w9, #0xffff
-	cmp	w8, #164
-	cset	w8, lo
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v5.8h, #163
+	dup	v3.8h, w8
+	mul	v2.8h, v2.8h, v3.8h
+	mul	v1.8h, v1.8h, v3.8h
+	shl	v3.8h, v2.8h, #12
+	shl	v4.8h, v1.8h, #12
+	usra	v3.8h, v2.8h, #4
+	usra	v4.8h, v1.8h, #4
+	cmhs	v1.8h, v5.8h, v3.8h
+	cmhs	v2.8h, v5.8h, v4.8h
+	uzp1	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	mov	w8, #23593                      // =0x5c29
-	mul	w8, w1, w8
-	lsl	w9, w8, #14
-	bfxil	w9, w8, #2, #14
-	and	w8, w9, #0xffff
-	cmp	w8, #655
-	cset	w8, hi
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	dup	v3.8h, w8
+	mov	w8, #655                        // =0x28f
+	mul	v2.8h, v2.8h, v3.8h
+	mul	v1.8h, v1.8h, v3.8h
+	shl	v3.8h, v2.8h, #14
+	shl	v4.8h, v1.8h, #14
+	usra	v3.8h, v2.8h, #2
+	dup	v2.8h, w8
+	usra	v4.8h, v1.8h, #2
+	cmhi	v1.8h, v3.8h, v2.8h
+	cmhi	v2.8h, v4.8h, v2.8h
+	uzp1	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

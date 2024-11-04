@@ -1,16 +1,18 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	s2, w0
-	fsub	s1, s2, s1
-	fmul	s1, s1, s1
-	fmadd	s0, s0, s0, s1
+	uzp1	v2.4s, v2.4s, v3.4s
+	fsub	v1.4s, v2.4s, v1.4s
+	fmul	v1.4s, v1.4s, v1.4s
+	fmla	v1.4s, v0.4s, v0.4s
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fmov	s2, w0
-	fsub	s1, s2, s1
-	fmul	s1, s1, s1
-	fmadd	s0, s0, s0, s1
+	uzp1	v2.4s, v2.4s, v3.4s
+	fsub	v1.4s, v2.4s, v1.4s
+	fmul	v1.4s, v1.4s, v1.4s
+	fmla	v1.4s, v0.4s, v0.4s
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function

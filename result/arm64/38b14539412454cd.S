@@ -1,41 +1,227 @@
 func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	udiv	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #0, #4, gt
-	cset	w0, gt
+	mov	w8, v4.s[1]
+	mov	w9, v2.s[1]
+	fmov	w10, s2
+	mov	w11, v2.s[2]
+	mov	w12, v3.s[1]
+	fmov	w13, s3
+	mov	w14, v3.s[2]
+	mov	w15, v3.s[3]
+	mov	w16, v2.s[3]
+	cmgt	v1.4s, v1.4s, #0
+	cmgt	v0.4s, v0.4s, #0
+	udiv	w8, w9, w8
+	fmov	w9, s4
+	uzp1	v0.8h, v0.8h, v1.8h
+	udiv	w9, w10, w9
+	mov	w10, v4.s[2]
+	udiv	w10, w11, w10
+	mov	w11, v5.s[1]
+	fmov	s3, w9
+	mov	v3.s[1], w8
+	udiv	w11, w12, w11
+	fmov	w12, s5
+	mov	v3.s[2], w10
+	udiv	w12, w13, w12
+	mov	w13, v5.s[2]
+	udiv	w13, w14, w13
+	mov	w14, v5.s[3]
+	fmov	s2, w12
+	mov	v2.s[1], w11
+	udiv	w14, w15, w14
+	mov	w15, v4.s[3]
+	mov	v2.s[2], w13
+	udiv	w8, w16, w15
+	mov	v2.s[3], w14
+	cmgt	v2.4s, v2.4s, #0
+	mov	v3.s[3], w8
+	cmgt	v3.4s, v3.4s, #0
+	uzp1	v2.8h, v3.8h, v2.8h
+	and	v0.16b, v0.16b, v2.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
-	udiv	w8, w1, w2
-	cmp	w8, #31
-	ccmp	w0, #6, #4, hi
-	cset	w0, gt
+	mov	w8, v4.s[1]
+	mov	w9, v2.s[1]
+	fmov	w10, s2
+	mov	w11, v2.s[2]
+	mov	w12, v3.s[1]
+	fmov	w13, s3
+	mov	w14, v3.s[2]
+	mov	w15, v3.s[3]
+	mov	w16, v2.s[3]
+	udiv	w8, w9, w8
+	fmov	w9, s4
+	udiv	w9, w10, w9
+	mov	w10, v4.s[2]
+	udiv	w10, w11, w10
+	mov	w11, v5.s[1]
+	fmov	s3, w9
+	mov	v3.s[1], w8
+	udiv	w11, w12, w11
+	fmov	w12, s5
+	mov	v3.s[2], w10
+	udiv	w12, w13, w12
+	mov	w13, v5.s[2]
+	udiv	w13, w14, w13
+	mov	w14, v5.s[3]
+	fmov	s2, w12
+	movi	v5.4s, #6
+	mov	v2.s[1], w11
+	cmgt	v1.4s, v1.4s, v5.4s
+	cmgt	v0.4s, v0.4s, v5.4s
+	udiv	w14, w15, w14
+	mov	w15, v4.s[3]
+	mov	v2.s[2], w13
+	movi	v4.4s, #31
+	uzp1	v0.8h, v0.8h, v1.8h
+	udiv	w8, w16, w15
+	mov	v2.s[3], w14
+	cmhi	v2.4s, v2.4s, v4.4s
+	mov	v3.s[3], w8
+	cmhi	v3.4s, v3.4s, v4.4s
+	uzp1	v2.8h, v3.8h, v2.8h
+	and	v0.16b, v2.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	udiv	w8, w1, w2
-	cmp	w0, #0
-	mov	w9, #32                         // =0x20
-	ccmp	w8, w9, #2, eq
-	cset	w0, lo
+	mov	w8, v4.s[1]
+	mov	w9, v2.s[1]
+	fmov	w10, s2
+	mov	w11, v2.s[2]
+	mov	w12, v3.s[1]
+	fmov	w13, s3
+	mov	w14, v3.s[2]
+	mov	w15, v3.s[3]
+	mov	w16, v2.s[3]
+	cmeq	v1.4s, v1.4s, #0
+	cmeq	v0.4s, v0.4s, #0
+	udiv	w8, w9, w8
+	fmov	w9, s4
+	uzp1	v0.8h, v0.8h, v1.8h
+	udiv	w9, w10, w9
+	mov	w10, v4.s[2]
+	udiv	w10, w11, w10
+	mov	w11, v5.s[1]
+	fmov	s3, w9
+	mov	v3.s[1], w8
+	udiv	w11, w12, w11
+	fmov	w12, s5
+	mov	v3.s[2], w10
+	udiv	w12, w13, w12
+	mov	w13, v5.s[2]
+	udiv	w13, w14, w13
+	mov	w14, v5.s[3]
+	fmov	s2, w12
+	mov	v2.s[1], w11
+	udiv	w14, w15, w14
+	mov	w15, v4.s[3]
+	mov	v2.s[2], w13
+	movi	v4.4s, #32
+	udiv	w8, w16, w15
+	mov	v2.s[3], w14
+	cmhi	v2.4s, v4.4s, v2.4s
+	mov	v3.s[3], w8
+	cmhi	v3.4s, v4.4s, v3.4s
+	uzp1	v2.8h, v3.8h, v2.8h
+	and	v0.16b, v0.16b, v2.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	udiv	w8, w1, w2
-	cmp	w0, #3
-	ccmp	w8, #6, #0, lo
-	cset	w0, hi
+	mov	w8, v4.s[1]
+	mov	w9, v2.s[1]
+	fmov	w10, s2
+	mov	w11, v2.s[2]
+	mov	w12, v3.s[1]
+	fmov	w13, s3
+	mov	w14, v3.s[2]
+	mov	w15, v3.s[3]
+	mov	w16, v2.s[3]
+	udiv	w8, w9, w8
+	fmov	w9, s4
+	udiv	w9, w10, w9
+	mov	w10, v4.s[2]
+	udiv	w10, w11, w10
+	mov	w11, v5.s[1]
+	fmov	s3, w9
+	mov	v3.s[1], w8
+	udiv	w11, w12, w11
+	fmov	w12, s5
+	mov	v3.s[2], w10
+	udiv	w12, w13, w12
+	mov	w13, v5.s[2]
+	udiv	w13, w14, w13
+	mov	w14, v5.s[3]
+	fmov	s2, w12
+	movi	v5.4s, #3
+	mov	v2.s[1], w11
+	cmhi	v1.4s, v5.4s, v1.4s
+	cmhi	v0.4s, v5.4s, v0.4s
+	udiv	w14, w15, w14
+	mov	w15, v4.s[3]
+	mov	v2.s[2], w13
+	movi	v4.4s, #6
+	uzp1	v0.8h, v0.8h, v1.8h
+	udiv	w8, w16, w15
+	mov	v2.s[3], w14
+	cmhi	v2.4s, v2.4s, v4.4s
+	mov	v3.s[3], w8
+	cmhi	v3.4s, v3.4s, v4.4s
+	uzp1	v2.8h, v3.8h, v2.8h
+	and	v0.16b, v0.16b, v2.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	udiv	w8, w1, w2
-	cmp	w8, #16, lsl #12                // =65536
-	ccmp	w0, #16, #2, lo
-	cset	w0, lo
+	mov	w8, v4.s[1]
+	mov	w9, v2.s[1]
+	fmov	w10, s2
+	mov	w11, v2.s[2]
+	mov	w12, v3.s[1]
+	fmov	w13, s3
+	mov	w14, v3.s[2]
+	mov	w15, v3.s[3]
+	mov	w16, v2.s[3]
+	udiv	w8, w9, w8
+	fmov	w9, s4
+	udiv	w9, w10, w9
+	mov	w10, v4.s[2]
+	udiv	w10, w11, w10
+	mov	w11, v5.s[1]
+	fmov	s3, w9
+	mov	v3.s[1], w8
+	udiv	w11, w12, w11
+	fmov	w12, s5
+	mov	v3.s[2], w10
+	udiv	w12, w13, w12
+	mov	w13, v5.s[2]
+	udiv	w13, w14, w13
+	mov	w14, v5.s[3]
+	fmov	s2, w12
+	movi	v5.4s, #16
+	mov	v2.s[1], w11
+	cmhi	v1.4s, v5.4s, v1.4s
+	cmhi	v0.4s, v5.4s, v0.4s
+	udiv	w14, w15, w14
+	mov	w15, v4.s[3]
+	mov	v2.s[2], w13
+	movi	v4.4s, #1, lsl #16
+	uzp1	v0.8h, v0.8h, v1.8h
+	udiv	w8, w16, w15
+	mov	v2.s[3], w14
+	cmhi	v2.4s, v4.4s, v2.4s
+	mov	v3.s[3], w8
+	cmhi	v3.4s, v4.4s, v3.4s
+	uzp1	v2.8h, v3.8h, v2.8h
+	and	v0.16b, v2.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

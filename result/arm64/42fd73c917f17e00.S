@@ -4,7 +4,9 @@ func0000000000000002:                   // @func0000000000000002
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	tst	w1, #0x1
-	csel	w0, w0, wzr, ne
+	uzp1	v1.4s, v1.4s, v2.4s
+	shl	v1.4s, v1.4s, #31
+	cmlt	v1.4s, v1.4s, #0
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

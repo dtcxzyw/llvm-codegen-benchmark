@@ -1,27 +1,47 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	and	w8, w1, #0xff
-	and	x9, x1, #0xff
-	cmp	w8, #30
-	csel	x0, x0, x9, hi
+	bic	v2.4h, #255, lsl #8
+	mov	w8, #30                         // =0x1e
+	dup	v4.2d, x8
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	cmhi	v5.2d, v2.2d, v4.2d
+	cmhi	v4.2d, v3.2d, v4.2d
+	bif	v1.16b, v3.16b, v4.16b
+	bif	v0.16b, v2.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtb	w8, w1
-	and	x9, x1, #0xff
-	cmp	w8, #0
-	csel	x0, x0, x9, lt
+	shl	v3.4h, v2.4h, #8
+	bic	v2.4h, #255, lsl #8
+	sshr	v3.4h, v3.4h, #8
+	ushll	v2.4s, v2.4h, #0
+	cmlt	v3.4h, v3.4h, #0
+	ushll	v5.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	ushll	v3.4s, v3.4h, #0
+	ushll	v4.2d, v3.2s, #0
+	ushll2	v3.2d, v3.4s, #0
+	shl	v4.2d, v4.2d, #56
+	shl	v3.2d, v3.2d, #56
+	sshr	v4.2d, v4.2d, #56
+	sshr	v3.2d, v3.2d, #56
+	bif	v1.16b, v2.16b, v3.16b
+	bif	v0.16b, v5.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #255                        // =0xff
-                                        // kill: def $w1 killed $w1 def $x1
-	and	x9, x1, #0xff
-	bics	wzr, w8, w1
-	csel	x0, x0, x9, eq
+	bic	v2.4h, #255, lsl #8
+	movi	v3.2d, #0x000000000000ff
+	ushll	v2.4s, v2.4h, #0
+	ushll2	v4.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	cmeq	v5.2d, v2.2d, v3.2d
+	cmeq	v3.2d, v4.2d, v3.2d
+	bif	v1.16b, v4.16b, v3.16b
+	bif	v0.16b, v2.16b, v5.16b
 	ret
                                         // -- End function

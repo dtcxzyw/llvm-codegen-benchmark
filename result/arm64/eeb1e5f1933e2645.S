@@ -1,7 +1,12 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fadd	d0, d0, d1
-	fcvtzs	w8, d0
-	orr	x0, x0, x8, lsl #32
+	fadd	v3.2d, v3.2d, v5.2d
+	fadd	v2.2d, v2.2d, v4.2d
+	fcvtzs	v2.2d, v2.2d
+	fcvtzs	v3.2d, v3.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

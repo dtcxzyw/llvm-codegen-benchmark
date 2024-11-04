@@ -1,7 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsl	w8, w0, #8
-	sub	w8, w8, w0
-	ucvtf	s0, w8
+	movi	v2.2d, #0x0000ff000000ff
+	mul	v1.4s, v1.4s, v2.4s
+	mul	v0.4s, v0.4s, v2.4s
+	ucvtf	v0.4s, v0.4s
+	ucvtf	v1.4s, v1.4s
 	ret
                                         // -- End function

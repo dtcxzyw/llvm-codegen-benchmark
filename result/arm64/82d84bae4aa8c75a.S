@@ -1,37 +1,55 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	mov	w8, #1120403456                 // =0x42c80000
-	scvtf	s2, w0
-	fmov	s1, w8
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	cset	w0, ne
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	dup	v4.4s, w8
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmeq	v1.4s, v1.4s, v3.4s
+	fcmeq	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	mvn	v0.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	s1, #0.50000000
-	scvtf	s2, w0
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	cset	w0, gt
+	movi	v4.4s, #63, lsl #24
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmgt	v1.4s, v1.4s, v3.4s
+	fcmgt	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	s1, #3.50000000
-	scvtf	s2, w0
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	cset	w0, mi
+	fmov	v4.4s, #3.50000000
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmgt	v1.4s, v3.4s, v1.4s
+	fcmgt	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fmov	s1, #0.50000000
-	scvtf	s2, w0
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	cset	w0, lt
+	movi	v4.4s, #63, lsl #24
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmge	v1.4s, v1.4s, v3.4s
+	fcmge	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	mvn	v0.16b, v0.16b
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

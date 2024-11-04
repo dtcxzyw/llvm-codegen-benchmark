@@ -1,142 +1,359 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, eq
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmeq	v0.4s, v16.4s, #0.0
+	fcmeq	v1.4s, v18.4s, #0.0
+	fcmeq	v2.4s, v19.4s, #0.0
+	fcmeq	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
+	ldp	q18, q16, [sp, #32]
 	mov	w8, #1120403456                 // =0x42c80000
-	fmadd	s0, s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, mi
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	dup	v0.4s, w8
+	fcmgt	v1.4s, v0.4s, v16.4s
+	fcmgt	v2.4s, v0.4s, v18.4s
+	fcmgt	v3.4s, v0.4s, v19.4s
+	fcmgt	v0.4s, v0.4s, v17.4s
+	uzp1	v1.8h, v2.8h, v1.8h
+	uzp1	v0.8h, v0.8h, v3.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fmov	s1, #4.00000000
-	fcmp	s0, s1
-	cset	w0, gt
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmov	v4.4s, #4.00000000
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmgt	v0.4s, v16.4s, v4.4s
+	fcmgt	v1.4s, v18.4s, v4.4s
+	fcmgt	v2.4s, v19.4s, v4.4s
+	fcmgt	v3.4s, v17.4s, v4.4s
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, gt
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmgt	v0.4s, v16.4s, #0.0
+	fcmgt	v1.4s, v18.4s, #0.0
+	fcmgt	v2.4s, v19.4s, #0.0
+	fcmgt	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fmov	s1, #7.00000000
-	fcmp	s0, s1
-	cset	w0, mi
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmov	v4.4s, #7.00000000
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmgt	v0.4s, v4.4s, v16.4s
+	fcmgt	v1.4s, v4.4s, v18.4s
+	fcmgt	v2.4s, v4.4s, v19.4s
+	fcmgt	v3.4s, v4.4s, v17.4s
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
+	ldp	q18, q16, [sp, #32]
 	mov	w8, #679477248                  // =0x28800000
-	fmadd	s0, s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, lt
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	dup	v0.4s, w8
+	fcmge	v1.4s, v16.4s, v0.4s
+	fcmge	v2.4s, v18.4s, v0.4s
+	fcmge	v3.4s, v19.4s, v0.4s
+	fcmge	v0.4s, v17.4s, v0.4s
+	uzp1	v1.8h, v2.8h, v1.8h
+	uzp1	v0.8h, v0.8h, v3.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, eq
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmeq	v0.4s, v16.4s, #0.0
+	fcmeq	v1.4s, v18.4s, #0.0
+	fcmeq	v2.4s, v19.4s, #0.0
+	fcmeq	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	movi	v1.2s, #52, lsl #24
-	fcmp	s0, s1
-	cset	w0, le
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	movi	v4.4s, #52, lsl #24
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmgt	v0.4s, v16.4s, v4.4s
+	fcmgt	v1.4s, v18.4s, v4.4s
+	fcmgt	v2.4s, v19.4s, v4.4s
+	fcmgt	v3.4s, v17.4s, v4.4s
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, ne
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmeq	v0.4s, v16.4s, #0.0
+	fcmeq	v1.4s, v18.4s, #0.0
+	fcmeq	v2.4s, v19.4s, #0.0
+	fcmeq	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
+	ldp	q18, q16, [sp, #32]
 	mov	w8, #679477248                  // =0x28800000
-	fmadd	s0, s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, hi
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	dup	v0.4s, w8
+	fcmge	v1.4s, v0.4s, v16.4s
+	fcmge	v2.4s, v0.4s, v18.4s
+	fcmge	v3.4s, v0.4s, v19.4s
+	fcmge	v0.4s, v0.4s, v17.4s
+	uzp1	v1.8h, v2.8h, v1.8h
+	uzp1	v0.8h, v0.8h, v3.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
+	ldp	q18, q16, [sp, #32]
 	mov	w8, #49045                      // =0xbf95
+	ldp	q17, q19, [sp]
 	movk	w8, #13270, lsl #16
-	fmadd	s0, s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, hi
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	dup	v0.4s, w8
+	fcmge	v1.4s, v0.4s, v16.4s
+	fcmge	v2.4s, v0.4s, v18.4s
+	fcmge	v3.4s, v0.4s, v19.4s
+	fcmge	v0.4s, v0.4s, v17.4s
+	uzp1	v1.8h, v2.8h, v1.8h
+	uzp1	v0.8h, v0.8h, v3.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, ne
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmeq	v0.4s, v16.4s, #0.0
+	fcmeq	v1.4s, v18.4s, #0.0
+	fcmeq	v2.4s, v19.4s, #0.0
+	fcmeq	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, eq
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmeq	v0.4s, v16.4s, #0.0
+	fcmeq	v1.4s, v18.4s, #0.0
+	fcmeq	v2.4s, v19.4s, #0.0
+	fcmeq	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, hi
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmle	v0.4s, v16.4s, #0.0
+	fcmle	v1.4s, v18.4s, #0.0
+	fcmle	v2.4s, v19.4s, #0.0
+	fcmle	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
+	ldp	q18, q16, [sp, #32]
 	mov	w8, #35651584                   // =0x2200000
-	fmadd	s0, s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, pl
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	dup	v0.4s, w8
+	fcmgt	v1.4s, v0.4s, v16.4s
+	fcmgt	v2.4s, v0.4s, v18.4s
+	fcmgt	v3.4s, v0.4s, v19.4s
+	fcmgt	v0.4s, v0.4s, v17.4s
+	uzp1	v1.8h, v2.8h, v1.8h
+	uzp1	v0.8h, v0.8h, v3.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fmadd	s1, s1, s1, s2
-	fmadd	s0, s0, s0, s1
-	fcmp	s0, #0.0
-	cset	w0, lt
+	ldp	q18, q16, [sp, #32]
+	ldp	q17, q19, [sp]
+	fmla	v16.4s, v7.4s, v7.4s
+	fmla	v18.4s, v6.4s, v6.4s
+	fmla	v17.4s, v4.4s, v4.4s
+	fmla	v19.4s, v5.4s, v5.4s
+	fmla	v16.4s, v3.4s, v3.4s
+	fmla	v18.4s, v2.4s, v2.4s
+	fmla	v17.4s, v0.4s, v0.4s
+	fmla	v19.4s, v1.4s, v1.4s
+	fcmge	v0.4s, v16.4s, #0.0
+	fcmge	v1.4s, v18.4s, #0.0
+	fcmge	v2.4s, v19.4s, #0.0
+	fcmge	v3.4s, v17.4s, #0.0
+	uzp1	v0.8h, v1.8h, v0.8h
+	uzp1	v1.8h, v3.8h, v2.8h
+	uzp1	v0.16b, v1.16b, v0.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function

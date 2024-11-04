@@ -1,33 +1,39 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sxth	w8, w0
-	mov	w9, #-30583                     // =0xffff8889
-	mul	w8, w8, w9
-	add	w8, w0, w8, lsr #16
-	sbfx	w9, w8, #5, #11
-	and	w8, w8, #0x8000
-	add	w8, w9, w8, lsr #15
-	mov	w9, #60                         // =0x3c
-	msub	w0, w8, w9, w0
+	mov	w8, #34953                      // =0x8889
+	uzp1	v0.8h, v0.8h, v1.8h
+	dup	v1.8h, w8
+	smull2	v2.4s, v0.8h, v1.8h
+	smull	v1.4s, v0.4h, v1.4h
+	uzp2	v1.8h, v1.8h, v2.8h
+	movi	v2.8h, #60
+	add	v1.8h, v1.8h, v0.8h
+	sshr	v1.8h, v1.8h, #5
+	usra	v1.8h, v1.8h, #15
+	mls	v0.8h, v1.8h, v2.8h
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sxth	w8, w0
-	mov	w9, #5243                       // =0x147b
-	mul	w8, w8, w9
-	asr	w9, w8, #17
-	add	w8, w9, w8, lsr #31
-	mov	w9, #25                         // =0x19
-	msub	w0, w8, w9, w0
+	mov	w8, #5243                       // =0x147b
+	uzp1	v0.8h, v0.8h, v1.8h
+	dup	v1.8h, w8
+	smull2	v2.4s, v0.8h, v1.8h
+	smull	v1.4s, v0.4h, v1.4h
+	uzp2	v1.8h, v1.8h, v2.8h
+	movi	v2.8h, #25
+	sshr	v1.8h, v1.8h, #1
+	usra	v1.8h, v1.8h, #15
+	mls	v0.8h, v1.8h, v2.8h
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sxth	w8, w0
-	ubfx	w8, w8, #28, #3
-	add	w8, w0, w8
-	and	w8, w8, #0xfffffff8
-	sub	w0, w0, w8
+	uzp1	v0.8h, v0.8h, v1.8h
+	cmlt	v1.8h, v0.8h, #0
+	mov	v2.16b, v0.16b
+	usra	v2.8h, v1.8h, #13
+	bic	v2.8h, #7
+	sub	v0.8h, v0.8h, v2.8h
 	ret
                                         // -- End function

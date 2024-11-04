@@ -1,20 +1,46 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
+	ushll	v6.2d, v5.2s, #0
+	ushll	v16.2d, v4.2s, #0
 	mov	x8, #225833675390976            // =0xcd6500000000
-	ucvtf	d1, w0
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
 	movk	x8, #16845, lsl #48
-	fmov	d2, x8
-	fdiv	d1, d1, d2
-	fadd	d0, d1, d0
+	dup	v7.2d, x8
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v16.2d, v16.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fdiv	v6.2d, v6.2d, v7.2d
+	fdiv	v16.2d, v16.2d, v7.2d
+	fadd	v2.2d, v6.2d, v2.2d
+	fdiv	v5.2d, v5.2d, v7.2d
+	fadd	v0.2d, v16.2d, v0.2d
+	fdiv	v4.2d, v4.2d, v7.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fadd	v1.2d, v4.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
+	ushll	v6.2d, v5.2s, #0
+	ushll	v16.2d, v4.2s, #0
 	mov	x8, #70368744177664             // =0x400000000000
-	ucvtf	d1, w0
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
 	movk	x8, #16527, lsl #48
-	fmov	d2, x8
-	fdiv	d1, d1, d2
-	fadd	d0, d1, d0
+	dup	v7.2d, x8
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v16.2d, v16.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fdiv	v6.2d, v6.2d, v7.2d
+	fdiv	v16.2d, v16.2d, v7.2d
+	fadd	v2.2d, v6.2d, v2.2d
+	fdiv	v5.2d, v5.2d, v7.2d
+	fadd	v0.2d, v16.2d, v0.2d
+	fdiv	v4.2d, v4.2d, v7.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fadd	v1.2d, v4.2d, v1.2d
 	ret
                                         // -- End function

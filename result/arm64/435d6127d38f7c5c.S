@@ -1,93 +1,316 @@
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	cmp	x8, #16
-	cset	w0, gt
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mov	w8, #16                         // =0x10
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	dup	v2.2d, x8
+	cmgt	v1.2d, v1.2d, v2.2d
+	sub	v0.2d, v3.2d, v0.2d
+	cmgt	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
-	cset	w0, ne
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v1.2d, v2.2d
+	sub	v0.2d, v3.2d, v0.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	lsr	x0, x8, #63
-                                        // kill: def $w0 killed $w0 killed $x0
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	cmlt	v1.2d, v1.2d, #0
+	sub	v0.2d, v3.2d, v0.2d
+	cmlt	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	cmp	x8, #128
-	cset	w0, lo
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mov	w8, #128                        // =0x80
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v2.2d, v1.2d
+	sub	v0.2d, v3.2d, v0.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mul	x8, x1, x2
-	cmp	x8, x0
-	cset	w0, eq
+	fmov	x8, d4
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x10, v4.d[1]
+	mov	x11, v2.d[1]
+	mov	x13, v5.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d5
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	cmeq	v0.2d, v2.2d, v0.2d
+	cmeq	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	mul	x8, x1, x2
-	cmp	x8, x0
-	cset	w0, lt
+	fmov	x8, d4
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x10, v4.d[1]
+	mov	x11, v2.d[1]
+	mov	x13, v5.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d5
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	cmgt	v0.2d, v0.2d, v2.2d
+	cmgt	v1.2d, v1.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000005a:                   // @func000000000000005a
 // %bb.0:                               // %entry
-	mul	x8, x1, x2
-	cmp	x8, x0
-	cset	w0, gt
+	fmov	x8, d4
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x10, v4.d[1]
+	mov	x11, v2.d[1]
+	mov	x13, v5.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d5
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	cmgt	v0.2d, v2.2d, v0.2d
+	cmgt	v1.2d, v3.2d, v1.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	cmp	x8, #1
-	cset	w0, eq
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mov	w8, #1                          // =0x1
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	dup	v2.2d, x8
+	cmeq	v1.2d, v1.2d, v2.2d
+	sub	v0.2d, v3.2d, v0.2d
+	cmeq	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000056:                   // @func0000000000000056
 // %bb.0:                               // %entry
-	mul	x8, x1, x2
-	cmp	x8, x0
-	cset	w0, lt
+	fmov	x8, d4
+	fmov	x9, d2
+	fmov	x12, d3
+	mov	x10, v4.d[1]
+	mov	x11, v2.d[1]
+	mov	x13, v5.d[1]
+	mov	x14, v3.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d5
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	cmgt	v0.2d, v0.2d, v2.2d
+	cmgt	v1.2d, v1.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	lsr	x8, x8, #63
-	eor	w0, w8, #0x1
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	cmge	v1.2d, v1.2d, #0
+	sub	v0.2d, v3.2d, v0.2d
+	cmge	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	cmp	x8, #1
-	cset	w0, eq
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mov	w8, #1                          // =0x1
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	dup	v2.2d, x8
+	cmeq	v1.2d, v1.2d, v2.2d
+	sub	v0.2d, v3.2d, v0.2d
+	cmeq	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000071:                   // @func0000000000000071
 // %bb.0:                               // %entry
-	neg	x8, x0
-	madd	x8, x1, x2, x8
-	cmp	x8, #1
-	cset	w0, eq
+	fmov	x8, d5
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x10, v5.d[1]
+	mov	x11, v3.d[1]
+	mov	x13, v4.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d4
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d2, x8
+	mov	w8, #1                          // =0x1
+	mul	x11, x14, x13
+	mov	v2.d[1], x10
+	fmov	d3, x9
+	mov	v3.d[1], x11
+	sub	v1.2d, v2.2d, v1.2d
+	dup	v2.2d, x8
+	cmeq	v1.2d, v1.2d, v2.2d
+	sub	v0.2d, v3.2d, v0.2d
+	cmeq	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

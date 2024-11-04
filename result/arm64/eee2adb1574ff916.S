@@ -1,23 +1,23 @@
 func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
-	tst	w1, #0xff
-	cset	w8, ne
-	orr	w0, w8, w0, lsl #1
+	cmtst	v1.16b, v1.16b, v1.16b
+	add	v0.16b, v0.16b, v0.16b
+	sub	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	cmp	w8, #49
-	cset	w8, eq
-	orr	w0, w8, w0, lsl #1
+	movi	v2.16b, #49
+	add	v0.16b, v0.16b, v0.16b
+	cmeq	v1.16b, v1.16b, v2.16b
+	sub	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	cmp	w8, #93
-	cset	w8, hi
-	orr	w0, w8, w0, lsl #1
+	movi	v2.16b, #93
+	add	v0.16b, v0.16b, v0.16b
+	cmhi	v1.16b, v1.16b, v2.16b
+	sub	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

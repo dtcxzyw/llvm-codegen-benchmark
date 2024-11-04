@@ -1,16 +1,36 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
-	tst	w0, #0x1
-	csel	w9, wzr, w1, ne
-	madd	w0, w2, w8, w9
+	zip2	v6.8b, v0.8b, v0.8b
+	zip1	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #6
+	ushll	v6.4s, v6.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	shl	v6.4s, v6.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmge	v6.4s, v6.4s, #0
+	cmge	v0.4s, v0.4s, #0
+	and	v2.16b, v2.16b, v6.16b
+	and	v0.16b, v1.16b, v0.16b
+	mla	v2.4s, v4.4s, v5.4s
+	mla	v0.4s, v3.4s, v5.4s
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	add	w8, w2, w2, lsl #1
-	tst	w0, #0x1
-	csel	w9, wzr, w1, ne
-	add	w0, w9, w8
+	zip2	v6.8b, v0.8b, v0.8b
+	zip1	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #3
+	ushll	v6.4s, v6.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	shl	v6.4s, v6.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmge	v6.4s, v6.4s, #0
+	cmge	v0.4s, v0.4s, #0
+	and	v2.16b, v2.16b, v6.16b
+	and	v0.16b, v1.16b, v0.16b
+	mla	v2.4s, v4.4s, v5.4s
+	mla	v0.4s, v3.4s, v5.4s
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function

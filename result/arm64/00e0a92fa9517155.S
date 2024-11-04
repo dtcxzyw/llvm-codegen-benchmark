@@ -1,18 +1,30 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	x9, x0, #1
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
 	mov	w8, #2                          // =0x2
-	cmp	x9, #2
-	csinc	x0, x8, x0, ls
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
+	cmhi	v3.2d, v1.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	bif	v1.16b, v2.16b, v3.16b
+	bif	v0.16b, v2.16b, v4.16b
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	x9, x0, #16
+	mov	w8, #16                         // =0x10
+	dup	v2.2d, x8
 	mov	w8, #32                         // =0x20
-	cmp	x9, #32
-	csel	x0, x9, x8, hi
-                                        // kill: def $w0 killed $w0 killed $x0
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
+	cmhi	v3.2d, v1.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	bif	v1.16b, v2.16b, v3.16b
+	bif	v0.16b, v2.16b, v4.16b
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

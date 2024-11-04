@@ -1,20 +1,39 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
+	cmeq	v1.4s, v1.4s, #0
 	mov	w8, #2                          // =0x2
-	cmp	w1, #0
-	sxtw	x9, w0
-	cinc	x8, x8, eq
-	lsl	x0, x9, x8
+	dup	v2.2d, x8
+	mov	w8, #3                          // =0x3
+	dup	v4.2d, x8
+	sshll2	v3.2d, v1.4s, #0
+	sshll	v1.2d, v1.2s, #0
+	mov	v5.16b, v1.16b
+	mov	v1.16b, v3.16b
+	bsl	v5.16b, v4.16b, v2.16b
+	bsl	v1.16b, v4.16b, v2.16b
+	sshll	v2.2d, v0.2s, #0
+	sshll2	v0.2d, v0.4s, #0
+	ushl	v1.2d, v0.2d, v1.2d
+	ushl	v0.2d, v2.2d, v5.2d
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
+	mvni	v2.4s, #1
 	mov	w8, #3                          // =0x3
-	cmn	w1, #2
-	sxtw	x9, w0
-	cinc	x8, x8, lo
-	lsl	x0, x9, x8
+	cmhi	v1.4s, v2.4s, v1.4s
+	dup	v2.2d, x8
+	mov	w8, #4                          // =0x4
+	dup	v4.2d, x8
+	sshll2	v3.2d, v1.4s, #0
+	sshll	v1.2d, v1.2s, #0
+	mov	v5.16b, v1.16b
+	mov	v1.16b, v3.16b
+	bsl	v5.16b, v4.16b, v2.16b
+	bsl	v1.16b, v4.16b, v2.16b
+	sshll	v2.2d, v0.2s, #0
+	sshll2	v0.2d, v0.4s, #0
+	ushl	v1.2d, v0.2d, v1.2d
+	ushl	v0.2d, v2.2d, v5.2d
 	ret
                                         // -- End function

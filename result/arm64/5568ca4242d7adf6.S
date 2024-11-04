@@ -1,43 +1,68 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #3
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	movi	v4.2d, #0x000000ffffffff
+	usra	v1.2d, v3.2d, #3
+	usra	v0.2d, v2.2d, #3
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #3
-	add	w8, w8, w0
-	and	x0, x8, #0x7fffffff
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	mov	w8, #2147483647                 // =0x7fffffff
+	usra	v1.2d, v3.2d, #3
+	usra	v0.2d, v2.2d, #3
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #2
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	movi	v4.2d, #0x000000ffffffff
+	usra	v1.2d, v3.2d, #2
+	usra	v0.2d, v2.2d, #2
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #3
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	movi	v4.2d, #0x000000ffffffff
+	usra	v1.2d, v3.2d, #3
+	usra	v0.2d, v2.2d, #3
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #4
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	movi	v4.2d, #0x000000ffffffff
+	usra	v1.2d, v3.2d, #4
+	usra	v0.2d, v2.2d, #4
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	sub	w8, w1, w2
-	add	w8, w0, w8, lsr #10
-	and	x0, x8, #0x3ff
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	mov	w8, #1023                       // =0x3ff
+	usra	v1.2d, v3.2d, #10
+	usra	v0.2d, v2.2d, #10
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

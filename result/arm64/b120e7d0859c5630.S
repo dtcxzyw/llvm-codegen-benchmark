@@ -1,18 +1,30 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	x8, x2, x2, asr #63
-	sub	x9, x0, x1
-	cmp	x9, x8
-	csel	x0, x9, x8, lt
+	cmgt	v6.2d, v5.2d, #0
+	cmgt	v7.2d, v4.2d, #0
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v7.16b
+	cmgt	v2.2d, v4.2d, v0.2d
+	cmgt	v3.2d, v5.2d, v1.2d
+	bif	v0.16b, v4.16b, v2.16b
+	bif	v1.16b, v5.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmp	x0, #4
 	mov	w8, #4                          // =0x4
-	sub	x9, x1, x2
-	csel	x8, x0, x8, gt
-	cmp	x8, x9
-	csel	x0, x8, x9, lt
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	dup	v6.2d, x8
+	cmgt	v7.2d, v1.2d, v6.2d
+	cmgt	v16.2d, v0.2d, v6.2d
+	bif	v1.16b, v6.16b, v7.16b
+	bif	v0.16b, v6.16b, v16.16b
+	cmgt	v4.2d, v2.2d, v0.2d
+	cmgt	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

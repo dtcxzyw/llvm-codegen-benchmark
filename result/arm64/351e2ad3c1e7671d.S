@@ -1,30 +1,45 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	tst	x2, #0x1
-	cset	w8, eq
-	orr	w8, w8, w1
-	and	w8, w8, w0
-	and	w0, w8, #0x1
+	mov	w8, #1                          // =0x1
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v3.2d, v3.2d, #0
+	cmeq	v2.2d, v2.2d, #0
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	orr	v1.8b, v2.8b, v1.8b
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	and	x8, x2, #0x7fffffff
-	mov	w9, #1073741824                 // =0x40000000
-	cmp	x8, x9
-	cset	w8, eq
-	orr	w8, w8, w1
-	and	w8, w8, w0
-	and	w0, w8, #0x1
+	mov	w8, #2147483647                 // =0x7fffffff
+	dup	v4.2d, x8
+	mov	w8, #1073741824                 // =0x40000000
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	dup	v4.2d, x8
+	cmeq	v3.2d, v3.2d, v4.2d
+	cmeq	v2.2d, v2.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	xtn	v2.4h, v2.4s
+	orr	v1.8b, v2.8b, v1.8b
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mvn	w8, w2
-	tst	x8, #0x3
-	cset	w8, ne
-	orr	w8, w8, w1
-	and	w8, w8, w0
-	and	w0, w8, #0x1
+	mov	w8, #3                          // =0x3
+	dup	v4.2d, x8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v3.2d, v3.2d, v4.2d
+	cmeq	v2.2d, v2.2d, v4.2d
+	uzp1	v2.4s, v2.4s, v3.4s
+	mvn	v2.16b, v2.16b
+	xtn	v2.4h, v2.4s
+	orr	v1.8b, v2.8b, v1.8b
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

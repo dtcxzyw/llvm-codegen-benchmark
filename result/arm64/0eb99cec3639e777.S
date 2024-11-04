@@ -1,8 +1,14 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	asr	x8, x1, #3
-	eor	x8, x8, #0xfffffffffffffff
-	cmp	x8, x0
-	cset	w0, lo
+	mov	x8, #1152921504606846975        // =0xfffffffffffffff
+	sshr	v3.2d, v3.2d, #3
+	sshr	v2.2d, v2.2d, #3
+	dup	v4.2d, x8
+	eor	v2.16b, v2.16b, v4.16b
+	eor	v3.16b, v3.16b, v4.16b
+	cmhi	v1.2d, v1.2d, v3.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

@@ -1,19 +1,27 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	orr	x8, x1, x2, lsl #32
-	eon	x0, x8, x0
+	shll	v5.2d, v4.2s, #32
+	shll2	v4.2d, v4.4s, #32
+	orr	v3.16b, v4.16b, v3.16b
+	orr	v2.16b, v5.16b, v2.16b
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
+	mvn	v1.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	x9, #36045                      // =0x8ccd
-                                        // kill: def $w2 killed $w2 def $x2
-	orr	x8, x1, x2, lsl #32
-	movk	x9, #60757, lsl #16
-	movk	x9, #45015, lsl #32
-	movk	x9, #65361, lsl #48
-	eor	x9, x0, x9
-	eor	x0, x8, x9
+	mov	x8, #36045                      // =0x8ccd
+	shll2	v5.2d, v4.4s, #32
+	shll	v4.2d, v4.2s, #32
+	movk	x8, #60757, lsl #16
+	movk	x8, #45015, lsl #32
+	movk	x8, #65361, lsl #48
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	dup	v4.2d, x8
+	eor3	v1.16b, v3.16b, v1.16b, v4.16b
+	eor3	v0.16b, v2.16b, v0.16b, v4.16b
 	ret
                                         // -- End function

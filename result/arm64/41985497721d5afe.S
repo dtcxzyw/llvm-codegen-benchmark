@@ -1,19 +1,44 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	w8, w2, #41
-	tst	w0, #0x1
-	mov	w9, #4                          // =0x4
-	csel	w9, w9, w1, ne
-	cmp	w8, #2
-	mov	w8, #2                          // =0x2
-	csel	w0, w8, w9, lo
+	zip2	v5.8b, v0.8b, v0.8b
+	zip1	v0.8b, v0.8b, v0.8b
+	mvni	v6.4s, #40
+	movi	v7.4s, #4
+	movi	v16.4s, #2
+	add	v3.4s, v3.4s, v6.4s
+	add	v4.4s, v4.4s, v6.4s
+	ushll	v5.4s, v5.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	cmhi	v3.4s, v16.4s, v3.4s
+	shl	v5.4s, v5.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmlt	v5.4s, v5.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	bit	v2.16b, v7.16b, v5.16b
+	bsl	v0.16b, v7.16b, v1.16b
+	cmhi	v1.4s, v16.4s, v4.4s
+	bit	v0.16b, v16.16b, v3.16b
+	bsl	v1.16b, v16.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	tst	w0, #0x1
-	csinc	w8, w1, wzr, eq
-	cmp	w2, #1
-	csel	w0, wzr, w8, eq
+	zip2	v6.8b, v0.8b, v0.8b
+	zip1	v0.8b, v0.8b, v0.8b
+	movi	v5.4s, #1
+	ushll	v6.4s, v6.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	cmeq	v4.4s, v4.4s, v5.4s
+	cmeq	v3.4s, v3.4s, v5.4s
+	shl	v6.4s, v6.4s, #31
+	shl	v0.4s, v0.4s, #31
+	cmlt	v6.4s, v6.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	bic	v2.16b, v2.16b, v6.16b
+	bic	v1.16b, v1.16b, v0.16b
+	sub	v2.4s, v2.4s, v6.4s
+	sub	v0.4s, v1.4s, v0.4s
+	bic	v0.16b, v0.16b, v3.16b
+	bic	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

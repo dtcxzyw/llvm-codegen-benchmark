@@ -1,12 +1,18 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	ucvtf	s0, w8
+	movi	v2.2d, #0000000000000000
+	smax	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v0.4s, v2.4s
+	ucvtf	v0.4s, v0.4s
+	ucvtf	v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	ucvtf	s0, w8
+	movi	v2.2d, #0000000000000000
+	smax	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v0.4s, v2.4s
+	ucvtf	v0.4s, v0.4s
+	ucvtf	v1.4s, v1.4s
 	ret
                                         // -- End function

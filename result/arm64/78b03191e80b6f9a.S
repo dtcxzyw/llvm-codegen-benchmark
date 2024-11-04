@@ -1,14 +1,18 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sxtw	x8, w0
-	sub	x0, x8, w1, uxtw
+	sshll	v3.2d, v0.2s, #0
+	sshll2	v0.2d, v0.4s, #0
+	usubw2	v2.2d, v0.2d, v1.4s
+	usubw	v0.2d, v3.2d, v1.2s
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sxtw	x8, w0
-	sub	x0, x8, w1, uxtw
+	sshll	v3.2d, v0.2s, #0
+	sshll2	v0.2d, v0.4s, #0
+	usubw2	v2.2d, v0.2d, v1.4s
+	usubw	v0.2d, v3.2d, v1.2s
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function

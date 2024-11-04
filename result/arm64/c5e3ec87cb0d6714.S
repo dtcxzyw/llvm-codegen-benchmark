@@ -1,20 +1,46 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	x8, #4751297606875873280        // =0x41f0000000000000
-	ucvtf	d2, w0
-	fmov	d1, x8
-	fmul	d0, d0, d1
-	fsub	d0, d0, d2
+	ushll	v6.2d, v5.2s, #0
+	ushll	v7.2d, v4.2s, #0
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
+	dup	v16.2d, x8
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v7.2d, v7.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fmul	v0.2d, v0.2d, v16.2d
+	fmul	v2.2d, v2.2d, v16.2d
+	fmul	v3.2d, v3.2d, v16.2d
+	fmul	v1.2d, v1.2d, v16.2d
+	fsub	v0.2d, v0.2d, v7.2d
+	fsub	v1.2d, v1.2d, v4.2d
+	fsub	v3.2d, v3.2d, v5.2d
+	fsub	v2.2d, v2.2d, v6.2d
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3fc999999999999a              // double 0.20000000000000001
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI1_0
-	ucvtf	d2, w0
-	ldr	d1, [x8, :lo12:.LCPI1_0]
-	fmul	d0, d0, d1
-	fsub	d0, d0, d2
+	mov	x8, #-7378697629483820647       // =0x9999999999999999
+	ushll	v6.2d, v5.2s, #0
+	ushll	v7.2d, v4.2s, #0
+	movk	x8, #39322
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
+	movk	x8, #16329, lsl #48
+	dup	v16.2d, x8
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v7.2d, v7.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fmul	v0.2d, v0.2d, v16.2d
+	fmul	v2.2d, v2.2d, v16.2d
+	fmul	v3.2d, v3.2d, v16.2d
+	fmul	v1.2d, v1.2d, v16.2d
+	fsub	v0.2d, v0.2d, v7.2d
+	fsub	v3.2d, v3.2d, v5.2d
+	fsub	v2.2d, v2.2d, v6.2d
+	fsub	v1.2d, v1.2d, v4.2d
 	ret
                                         // -- End function

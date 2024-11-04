@@ -2,23 +2,44 @@ func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #14269                      // =0x37bd
 	movk	w8, #13702, lsl #16
-	fmov	s2, w8
-	fmaxnm	s1, s1, s2
-	fdiv	s0, s0, s1
+	dup	v16.4s, w8
+	fmaxnm	v4.4s, v4.4s, v16.4s
+	fdiv	v0.4s, v0.4s, v4.4s
+	fmaxnm	v4.4s, v5.4s, v16.4s
+	fdiv	v1.4s, v1.4s, v4.4s
+	fmaxnm	v4.4s, v6.4s, v16.4s
+	fdiv	v2.4s, v2.4s, v4.4s
+	fmaxnm	v4.4s, v7.4s, v16.4s
+	fdiv	v3.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
-	fcmp	s1, #0.0
-	fcsel	s1, s1, s2, ne
-	fdiv	s0, s0, s1
+	fcmeq	v16.4s, v4.4s, #0.0
+	fmov	v17.4s, #1.00000000
+	bit	v4.16b, v17.16b, v16.16b
+	fdiv	v0.4s, v0.4s, v4.4s
+	fcmeq	v4.4s, v5.4s, #0.0
+	bsl	v4.16b, v17.16b, v5.16b
+	fdiv	v1.4s, v1.4s, v4.4s
+	fcmeq	v4.4s, v6.4s, #0.0
+	bsl	v4.16b, v17.16b, v6.16b
+	fdiv	v2.4s, v2.4s, v4.4s
+	fcmeq	v4.4s, v7.4s, #0.0
+	bsl	v4.16b, v17.16b, v7.16b
+	fdiv	v3.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
-	fmaxnm	s1, s1, s2
-	fdiv	s0, s0, s1
+	fmov	v16.4s, #1.00000000
+	fmaxnm	v4.4s, v4.4s, v16.4s
+	fdiv	v0.4s, v0.4s, v4.4s
+	fmaxnm	v4.4s, v5.4s, v16.4s
+	fdiv	v1.4s, v1.4s, v4.4s
+	fmaxnm	v4.4s, v6.4s, v16.4s
+	fdiv	v2.4s, v2.4s, v4.4s
+	fmaxnm	v4.4s, v7.4s, v16.4s
+	fdiv	v3.4s, v3.4s, v4.4s
 	ret
                                         // -- End function

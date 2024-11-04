@@ -1,49 +1,80 @@
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #3
-	sub	x8, x8, x0
-	add	x0, x8, #1
+	sshr	v4.2d, v4.2d, #3
+	sshr	v5.2d, v5.2d, #3
+	mvn	v5.16b, v5.16b
+	mvn	v4.16b, v4.16b
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000052:                   // @func0000000000000052
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #2
-	sub	x8, x8, x0
-	add	x0, x8, #1
+	sshr	v4.2d, v4.2d, #2
+	sshr	v5.2d, v5.2d, #2
+	mvn	v5.16b, v5.16b
+	mvn	v4.16b, v4.16b
+	sub	v3.2d, v3.2d, v5.2d
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000057:                   // @func0000000000000057
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #3
-	mvn	x9, x0
-	add	x0, x9, x8
+	ssra	v3.2d, v5.2d, #3
+	ssra	v2.2d, v4.2d, #3
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #3
-	sub	x8, x8, x0
-	add	x0, x8, #63
+	ssra	v3.2d, v5.2d, #3
+	ssra	v2.2d, v4.2d, #3
+	mov	w8, #63                         // =0x3f
+	dup	v4.2d, x8
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v0.2d, v4.2d
+	add	v1.2d, v1.2d, v4.2d
 	ret
                                         // -- End function
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #1
-	sub	x8, x8, x0
-	sub	x0, x8, #4
+	ssra	v3.2d, v5.2d, #1
+	ssra	v2.2d, v4.2d, #1
+	mov	x8, #-4                         // =0xfffffffffffffffc
+	dup	v4.2d, x8
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v0.2d, v4.2d
+	add	v1.2d, v1.2d, v4.2d
 	ret
                                         // -- End function
 func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #2
-	sub	x8, x8, x0
-	sub	x0, x8, #2
+	ssra	v3.2d, v5.2d, #2
+	ssra	v2.2d, v4.2d, #2
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	dup	v4.2d, x8
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v0.2d, v4.2d
+	add	v1.2d, v1.2d, v4.2d
 	ret
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #3
-	mvn	x9, x0
-	add	x0, x9, x8
+	ssra	v3.2d, v5.2d, #3
+	ssra	v2.2d, v4.2d, #3
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

@@ -1,42 +1,84 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
-	add	w8, w0, w1
-	sxtw	x0, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	add	v1.2s, v1.2s, v3.2s
+	add	v0.2s, v0.2s, v2.2s
+	sshll	v1.2d, v1.2s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

@@ -1,6 +1,27 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sdiv	x8, x0, x1
-	msub	w0, w8, w1, w0
+	mov	x8, v3.d[1]
+	mov	x9, v1.d[1]
+	fmov	x11, d3
+	fmov	x12, d1
+	fmov	x14, d2
+	fmov	x15, d0
+	mov	x17, v2.d[1]
+	mov	x18, v0.d[1]
+	movi	v2.2d, #0x000000ffffffff
+	sdiv	x10, x9, x8
+	sdiv	x13, x12, x11
+	msub	x8, x10, x8, x9
+	sdiv	x16, x15, x14
+	msub	x9, x13, x11, x12
+	fmov	d1, x9
+	mov	v1.d[1], x8
+	and	v1.16b, v1.16b, v2.16b
+	sdiv	x0, x18, x17
+	msub	x10, x16, x14, x15
+	fmov	d0, x10
+	msub	x11, x0, x17, x18
+	mov	v0.d[1], x11
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

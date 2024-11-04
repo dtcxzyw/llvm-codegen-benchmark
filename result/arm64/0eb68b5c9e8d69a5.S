@@ -1,18 +1,26 @@
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	lsl	x8, x8, x2
-	cmp	x8, x1
-	cset	w8, lo
-	and	w0, w0, w8
+	dup	v5.2d, x8
+	ushl	v3.2d, v5.2d, v3.2d
+	ushl	v4.2d, v5.2d, v4.2d
+	cmhi	v2.2d, v2.2d, v4.2d
+	cmhi	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	lsl	x8, x8, x2
-	cmp	x8, x1
-	cset	w8, lo
-	and	w0, w0, w8
+	dup	v5.2d, x8
+	ushl	v3.2d, v5.2d, v3.2d
+	ushl	v4.2d, v5.2d, v4.2d
+	cmhi	v2.2d, v2.2d, v4.2d
+	cmhi	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

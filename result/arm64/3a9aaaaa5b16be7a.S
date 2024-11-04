@@ -1,21 +1,57 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w0, #1
-	ucvtf	d1, w8
-	fadd	d0, d1, d0
+	movi	v6.4s, #1
+	add	v4.4s, v4.4s, v6.4s
+	add	v5.4s, v5.4s, v6.4s
+	ushll	v6.2d, v4.2s, #0
+	ushll	v7.2d, v5.2s, #0
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v7.2d, v7.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fadd	v0.2d, v6.2d, v0.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fadd	v2.2d, v7.2d, v2.2d
+	fadd	v1.2d, v4.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	sub	w8, w0, #48
-	ucvtf	d1, w8
-	fadd	d0, d1, d0
+	mvni	v6.4s, #47
+	add	v4.4s, v4.4s, v6.4s
+	add	v5.4s, v5.4s, v6.4s
+	ushll	v6.2d, v4.2s, #0
+	ushll	v7.2d, v5.2s, #0
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v7.2d, v7.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fadd	v0.2d, v6.2d, v0.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fadd	v2.2d, v7.2d, v2.2d
+	fadd	v1.2d, v4.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w0, #7
-	ucvtf	d1, w8
-	fadd	d0, d1, d0
+	mvni	v6.4s, #6
+	add	v4.4s, v4.4s, v6.4s
+	add	v5.4s, v5.4s, v6.4s
+	ushll	v6.2d, v4.2s, #0
+	ushll	v7.2d, v5.2s, #0
+	ushll2	v5.2d, v5.4s, #0
+	ushll2	v4.2d, v4.4s, #0
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v7.2d, v7.2d
+	ucvtf	v5.2d, v5.2d
+	ucvtf	v4.2d, v4.2d
+	fadd	v0.2d, v6.2d, v0.2d
+	fadd	v3.2d, v5.2d, v3.2d
+	fadd	v2.2d, v7.2d, v2.2d
+	fadd	v1.2d, v4.2d, v1.2d
 	ret
                                         // -- End function

@@ -1,16 +1,56 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	d1, #0000000000000000
-	fcmp	d0, #0.0
-	fcsel	d0, d1, d0, gt
-	fmul	d0, d0, d0
+	fcmgt	v16.2d, v0.2d, #0.0
+	fcmgt	v17.2d, v1.2d, #0.0
+	fcmgt	v18.2d, v2.2d, #0.0
+	fcmgt	v19.2d, v3.2d, #0.0
+	fcmgt	v20.2d, v4.2d, #0.0
+	fcmgt	v21.2d, v5.2d, #0.0
+	fcmgt	v22.2d, v6.2d, #0.0
+	fcmgt	v23.2d, v7.2d, #0.0
+	bic	v1.16b, v1.16b, v17.16b
+	bic	v0.16b, v0.16b, v16.16b
+	bic	v2.16b, v2.16b, v18.16b
+	bic	v4.16b, v4.16b, v20.16b
+	bic	v3.16b, v3.16b, v19.16b
+	bic	v5.16b, v5.16b, v21.16b
+	bic	v7.16b, v7.16b, v23.16b
+	bic	v6.16b, v6.16b, v22.16b
+	fmul	v0.2d, v0.2d, v0.2d
+	fmul	v1.2d, v1.2d, v1.2d
+	fmul	v2.2d, v2.2d, v2.2d
+	fmul	v3.2d, v3.2d, v3.2d
+	fmul	v4.2d, v4.2d, v4.2d
+	fmul	v5.2d, v5.2d, v5.2d
+	fmul	v6.2d, v6.2d, v6.2d
+	fmul	v7.2d, v7.2d, v7.2d
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	d1, #0000000000000000
-	fcmp	d0, #0.0
-	fcsel	d0, d1, d0, mi
-	fmul	d0, d0, d0
+	fcmlt	v16.2d, v0.2d, #0.0
+	fcmlt	v17.2d, v1.2d, #0.0
+	fcmlt	v18.2d, v2.2d, #0.0
+	fcmlt	v19.2d, v3.2d, #0.0
+	fcmlt	v20.2d, v4.2d, #0.0
+	fcmlt	v21.2d, v5.2d, #0.0
+	fcmlt	v22.2d, v6.2d, #0.0
+	fcmlt	v23.2d, v7.2d, #0.0
+	bic	v1.16b, v1.16b, v17.16b
+	bic	v0.16b, v0.16b, v16.16b
+	bic	v2.16b, v2.16b, v18.16b
+	bic	v4.16b, v4.16b, v20.16b
+	bic	v3.16b, v3.16b, v19.16b
+	bic	v5.16b, v5.16b, v21.16b
+	bic	v7.16b, v7.16b, v23.16b
+	bic	v6.16b, v6.16b, v22.16b
+	fmul	v0.2d, v0.2d, v0.2d
+	fmul	v1.2d, v1.2d, v1.2d
+	fmul	v2.2d, v2.2d, v2.2d
+	fmul	v3.2d, v3.2d, v3.2d
+	fmul	v4.2d, v4.2d, v4.2d
+	fmul	v5.2d, v5.2d, v5.2d
+	fmul	v6.2d, v6.2d, v6.2d
+	fmul	v7.2d, v7.2d, v7.2d
 	ret
                                         // -- End function

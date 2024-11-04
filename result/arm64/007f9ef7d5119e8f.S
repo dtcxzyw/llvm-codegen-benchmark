@@ -1,10 +1,14 @@
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	sub	w8, w2, #65
-	orr	w9, w1, w0
-	cmp	w8, #26
-	cset	w8, lo
-	orr	w8, w8, w9
-	and	w0, w8, #0x1
+	mvni	v4.4s, #64
+	movi	v5.4s, #26
+	orr	v0.8b, v1.8b, v0.8b
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	cmhi	v3.4s, v5.4s, v3.4s
+	cmhi	v2.4s, v5.4s, v2.4s
+	uzp1	v2.8h, v2.8h, v3.8h
+	xtn	v2.8b, v2.8h
+	orr	v0.8b, v2.8b, v0.8b
 	ret
                                         // -- End function

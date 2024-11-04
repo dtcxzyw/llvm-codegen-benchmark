@@ -1,30 +1,40 @@
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	lsl	w0, w8, #3
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
+	shl	v0.4s, v0.4s, #3
 	ret
                                         // -- End function
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	lsl	w0, w8, #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
+	shl	v0.4s, v0.4s, #2
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	lsl	w0, w8, #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
+	shl	v0.4s, v0.4s, #2
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	lsl	w0, w8, #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
+	add	v0.4s, v0.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mul	w8, w1, w0
-	lsl	w0, w8, #2
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
+	shl	v0.4s, v0.4s, #2
 	ret
                                         // -- End function

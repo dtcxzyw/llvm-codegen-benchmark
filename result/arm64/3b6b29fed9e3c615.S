@@ -1,22 +1,23 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	cmp	w8, #9
-	csinc	w0, w0, wzr, lo
+	movi	v1.16b, #9
+	cmhi	v1.16b, v1.16b, v0.16b
+	and	v0.16b, v0.16b, v1.16b
+	mvn	v1.16b, v1.16b
+	sub	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mov	w8, #32                         // =0x20
-	tst	w0, #0xff
-	csel	w0, w8, w0, eq
+	movi	v1.16b, #32
+	cmeq	v2.16b, v0.16b, #0
+	bit	v0.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sxtb	w9, w0
-	mov	w8, #63                         // =0x3f
-	cmp	w9, #0
-	csel	w0, w0, w8, ge
+	movi	v1.16b, #63
+	cmge	v2.16b, v0.16b, #0
+	bif	v0.16b, v1.16b, v2.16b
 	ret
                                         // -- End function

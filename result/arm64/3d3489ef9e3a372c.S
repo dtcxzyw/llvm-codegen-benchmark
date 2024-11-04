@@ -1,80 +1,260 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #1, #32
-	add	x8, x8, #2
-	mul	x0, x8, x0
+	mov	w8, #2                          // =0x2
+	ushll	v3.2d, v2.2s, #1
+	ushll2	v2.2d, v2.4s, #1
+	dup	v4.2d, x8
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #1, #32
-	add	x8, x8, #2
-	mul	x0, x8, x0
+	mov	w8, #2                          // =0x2
+	ushll	v3.2d, v2.2s, #1
+	ushll2	v2.2d, v2.4s, #1
+	dup	v4.2d, x8
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #1, #32
-	add	x8, x8, #2
-	mul	x0, x8, x0
+	mov	w8, #2                          // =0x2
+	ushll	v3.2d, v2.2s, #1
+	ushll2	v2.2d, v2.4s, #1
+	dup	v4.2d, x8
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func000000000000007c:                   // @func000000000000007c
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #2, #32
-	add	x8, x8, #4
-	mul	x0, x8, x0
+	mov	w8, #4                          // =0x4
+	ushll	v3.2d, v2.2s, #2
+	ushll2	v2.2d, v2.4s, #2
+	dup	v4.2d, x8
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func000000000000007d:                   // @func000000000000007d
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #1, #32
-	add	x8, x8, #2
-	mul	x0, x8, x0
+	mov	w8, #2                          // =0x2
+	ushll	v3.2d, v2.2s, #1
+	ushll2	v2.2d, v2.4s, #1
+	dup	v4.2d, x8
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func0000000000000076:                   // @func0000000000000076
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #2, #32
-	sub	x8, x8, #2
-	mul	x0, x8, x0
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	ushll2	v3.2d, v2.4s, #2
+	ushll	v2.2d, v2.2s, #2
+	dup	v4.2d, x8
+	fmov	x8, d1
+	mov	x10, v1.d[1]
+	mov	x13, v0.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d0
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d1, x8
+	mul	x11, x14, x13
+	mov	v1.d[1], x10
+	fmov	d0, x9
+	mov	v0.d[1], x11
 	ret
                                         // -- End function
 func0000000000000075:                   // @func0000000000000075
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #2, #32
-	sub	x8, x8, #2
-	mul	x0, x8, x0
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	ushll2	v3.2d, v2.4s, #2
+	ushll	v2.2d, v2.2s, #2
+	dup	v4.2d, x8
+	fmov	x8, d1
+	mov	x10, v1.d[1]
+	mov	x13, v0.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d0
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d1, x8
+	mul	x11, x14, x13
+	mov	v1.d[1], x10
+	fmov	d0, x9
+	mov	v0.d[1], x11
 	ret
                                         // -- End function
 func0000000000000077:                   // @func0000000000000077
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #2, #32
-	sub	x8, x8, #2
-	mul	x0, x8, x0
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	ushll2	v3.2d, v2.4s, #2
+	ushll	v2.2d, v2.2s, #2
+	dup	v4.2d, x8
+	fmov	x8, d1
+	mov	x10, v1.d[1]
+	mov	x13, v0.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d0
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d1, x8
+	mul	x11, x14, x13
+	mov	v1.d[1], x10
+	fmov	d0, x9
+	mov	v0.d[1], x11
 	ret
                                         // -- End function
 func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #2, #32
-	sub	x8, x8, #4
-	mul	x0, x8, x0
+	mov	x8, #-4                         // =0xfffffffffffffffc
+	ushll2	v3.2d, v2.4s, #2
+	ushll	v2.2d, v2.2s, #2
+	dup	v4.2d, x8
+	fmov	x8, d1
+	mov	x10, v1.d[1]
+	mov	x13, v0.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d0
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d1, x8
+	mul	x11, x14, x13
+	mov	v1.d[1], x10
+	fmov	d0, x9
+	mov	v0.d[1], x11
 	ret
                                         // -- End function
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #3, #32
-	add	x8, x8, #8
-	mul	x0, x8, x0
+	mov	w8, #8                          // =0x8
+	ushll	v3.2d, v2.2s, #3
+	ushll2	v2.2d, v2.4s, #3
+	dup	v4.2d, x8
+	fmov	x8, d0
+	mov	x10, v0.d[1]
+	mov	x13, v1.d[1]
+	add	v3.2d, v3.2d, v4.2d
+	add	v2.2d, v2.2d, v4.2d
+	fmov	x9, d3
+	fmov	x12, d2
+	mov	x11, v3.d[1]
+	mov	x14, v2.d[1]
+	mul	x8, x9, x8
+	fmov	x9, d1
+	mul	x10, x11, x10
+	mul	x9, x12, x9
+	fmov	d0, x8
+	mul	x11, x14, x13
+	mov	v0.d[1], x10
+	fmov	d1, x9
+	mov	v1.d[1], x11
 	ret
                                         // -- End function

@@ -1,8 +1,12 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	mov	w8, #32767                      // =0x7fff
-	and	x9, x0, #0xf
-	lsr	w0, w8, w9
+	movi	v2.8h, #15
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	mvni	v2.8h, #128, lsl #8
+	neg	v0.8h, v0.8h
+	neg	v1.8h, v1.8h
+	ushl	v0.8h, v2.8h, v0.8h
+	ushl	v1.8h, v2.8h, v1.8h
 	ret
                                         // -- End function

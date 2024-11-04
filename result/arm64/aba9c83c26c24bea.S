@@ -1,9 +1,10 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	mov	w8, #-1                         // =0xffffffff
-	csel	w9, w1, w2, hi
-	lsl	w8, w8, w9
-	bic	w0, w0, w8
+	umax	v1.4s, v1.4s, v2.4s
+	movi	v2.2d, #0xffffffffffffffff
+	ushl	v1.4s, v2.4s, v1.4s
+	bic	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

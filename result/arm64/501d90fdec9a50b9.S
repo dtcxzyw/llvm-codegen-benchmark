@@ -1,20 +1,26 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x8, w1
-	add	x9, x8, #1
-	cmp	x9, x0
-	csinc	x0, x0, x8, le
-                                        // kill: def $w0 killed $w0 killed $x0
+	mov	w8, #1                          // =0x1
+	dup	v3.2d, x8
+	saddw	v4.2d, v3.2d, v2.2s
+	saddw2	v2.2d, v3.2d, v2.4s
+	cmgt	v3.2d, v2.2d, v1.2d
+	cmgt	v5.2d, v4.2d, v0.2d
+	bit	v1.16b, v2.16b, v3.16b
+	bit	v0.16b, v4.16b, v5.16b
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x8, w1
-	add	x9, x8, #1
-	cmp	x9, x0
-	csinc	x0, x0, x8, le
-                                        // kill: def $w0 killed $w0 killed $x0
+	mov	w8, #1                          // =0x1
+	dup	v3.2d, x8
+	saddw	v4.2d, v3.2d, v2.2s
+	saddw2	v2.2d, v3.2d, v2.4s
+	cmgt	v3.2d, v2.2d, v1.2d
+	cmgt	v5.2d, v4.2d, v0.2d
+	bit	v1.16b, v2.16b, v3.16b
+	bit	v0.16b, v4.16b, v5.16b
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

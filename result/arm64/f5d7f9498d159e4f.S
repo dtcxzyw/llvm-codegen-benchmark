@@ -1,20 +1,27 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, sxth
-	lsl	x0, x8, #32
+	sshll	v2.4s, v2.4h, #0
+	usubw	v0.2d, v0.2d, v2.2s
+	usubw2	v1.2d, v1.2d, v2.4s
+	shl	v1.2d, v1.2d, #32
+	shl	v0.2d, v0.2d, #32
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sub	x8, x0, w1, sxth
-	lsl	x0, x8, #2
+	sshll	v2.4s, v2.4h, #0
+	ssubw	v0.2d, v0.2d, v2.2s
+	ssubw2	v1.2d, v1.2d, v2.4s
+	shl	v1.2d, v1.2d, #2
+	shl	v0.2d, v0.2d, #2
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sub	x8, x0, w1, sxth
-	lsl	x0, x8, #2
+	sshll	v2.4s, v2.4h, #0
+	ssubw	v0.2d, v0.2d, v2.2s
+	ssubw2	v1.2d, v1.2d, v2.4s
+	shl	v1.2d, v1.2d, #2
+	shl	v0.2d, v0.2d, #2
 	ret
                                         // -- End function

@@ -1,41 +1,64 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	mov	w8, #931135488                  // =0x37800000
-	scvtf	s2, w0, #16
-	fmov	s1, w8
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s0, s2, ls
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	dup	v4.4s, w8
+	fmul	v2.4s, v2.4s, v4.4s
+	fmul	v3.4s, v3.4s, v4.4s
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmge	v5.4s, v2.4s, v0.4s
+	fcmge	v4.4s, v3.4s, v1.4s
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	mov	w8, #931135488                  // =0x37800000
-	scvtf	s2, w0, #16
-	fmov	s1, w8
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s0, s2, ge
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	dup	v4.4s, w8
+	fmul	v2.4s, v2.4s, v4.4s
+	fmul	v3.4s, v3.4s, v4.4s
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmge	v5.4s, v0.4s, v2.4s
+	fcmge	v4.4s, v1.4s, v3.4s
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v1.2s, #48, lsl #24
-	scvtf	s2, w0, #31
-	fmul	s0, s0, s1
-	fcmp	s0, s2
-	fcsel	s0, s0, s2, mi
+	movi	v4.4s, #48, lsl #24
+	scvtf	v2.4s, v2.4s
+	scvtf	v3.4s, v3.4s
+	fmul	v2.4s, v2.4s, v4.4s
+	fmul	v3.4s, v3.4s, v4.4s
+	fmul	v0.4s, v0.4s, v4.4s
+	fmul	v1.4s, v1.4s, v4.4s
+	fcmgt	v5.4s, v2.4s, v0.4s
+	fcmgt	v4.4s, v3.4s, v1.4s
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v1.2s, #12, lsl #24
-	scvtf	s2, w0
+	movi	v4.4s, #12, lsl #24
+	scvtf	v2.4s, v2.4s
 	mov	w8, #899678208                  // =0x35a00000
-	fmov	s3, w8
-	fmul	s1, s2, s1
-	fmul	s0, s0, s3
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, gt
+	scvtf	v3.4s, v3.4s
+	dup	v5.4s, w8
+	fmul	v2.4s, v2.4s, v4.4s
+	fmul	v0.4s, v0.4s, v5.4s
+	fmul	v1.4s, v1.4s, v5.4s
+	fmul	v3.4s, v3.4s, v4.4s
+	fcmgt	v5.4s, v0.4s, v2.4s
+	fcmgt	v4.4s, v1.4s, v3.4s
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function

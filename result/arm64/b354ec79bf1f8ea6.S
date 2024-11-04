@@ -1,7 +1,17 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	tst	x1, #0xfffffffffffffffb
-	cset	w8, ne
-	bfi	w0, w8, #1, #1
+	mov	x8, #-5                         // =0xfffffffffffffffb
+	dup	v3.2d, x8
+	and	v1.16b, v1.16b, v3.16b
+	and	v2.16b, v2.16b, v3.16b
+	movi	v3.4h, #253
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	and	v0.8b, v0.8b, v3.8b
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #2
+	xtn	v1.4h, v1.4s
+	bic	v1.8b, v2.8b, v1.8b
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

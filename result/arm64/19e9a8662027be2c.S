@@ -1,16 +1,50 @@
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	orr	x8, x1, x2, lsl #32
-	udiv	x0, x8, x0
-                                        // kill: def $w0 killed $w0 killed $x0
+	shll2	v5.2d, v4.4s, #32
+	mov	x8, v1.d[1]
+	fmov	x10, d1
+	shll	v1.2d, v4.2s, #32
+	fmov	x11, d0
+	mov	x12, v0.d[1]
+	orr	v3.16b, v5.16b, v3.16b
+	orr	v1.16b, v1.16b, v2.16b
+	mov	x9, v3.d[1]
+	udiv	x8, x9, x8
+	fmov	x9, d3
+	udiv	x9, x9, x10
+	fmov	x10, d1
+	udiv	x10, x10, x11
+	mov	x11, v1.d[1]
+	fmov	d0, x9
+	mov	v0.d[1], x8
+	udiv	x11, x11, x12
+	fmov	d1, x10
+	mov	v1.d[1], x11
+	uzp1	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	orr	x8, x1, x2, lsl #32
-	udiv	x0, x8, x0
-                                        // kill: def $w0 killed $w0 killed $x0
+	shll2	v5.2d, v4.4s, #32
+	mov	x8, v1.d[1]
+	fmov	x10, d1
+	shll	v1.2d, v4.2s, #32
+	fmov	x11, d0
+	mov	x12, v0.d[1]
+	orr	v3.16b, v5.16b, v3.16b
+	orr	v1.16b, v1.16b, v2.16b
+	mov	x9, v3.d[1]
+	udiv	x8, x9, x8
+	fmov	x9, d3
+	udiv	x9, x9, x10
+	fmov	x10, d1
+	udiv	x10, x10, x11
+	mov	x11, v1.d[1]
+	fmov	d0, x9
+	mov	v0.d[1], x8
+	udiv	x11, x11, x12
+	fmov	d1, x10
+	mov	v1.d[1], x11
+	uzp1	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

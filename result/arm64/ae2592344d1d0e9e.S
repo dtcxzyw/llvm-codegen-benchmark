@@ -1,18 +1,26 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	mov	x9, #9223372036854775792        // =0x7ffffffffffffff0
-	cmp	x8, x9
-	cset	w8, hi
-	bic	w0, w8, w0
+	mov	x8, #9223372036854775792        // =0x7ffffffffffffff0
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v2.2d, v2.2d, v4.2d
+	dup	v3.2d, x8
+	cmhi	v2.2d, v2.2d, v3.2d
+	cmhi	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	bic	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	cmp	x8, #8
-	cset	w8, eq
-	orr	w8, w0, w8
-	and	w0, w8, #0x1
+	mov	w8, #8                          // =0x8
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v2.2d, v2.2d, v4.2d
+	dup	v3.2d, x8
+	cmeq	v2.2d, v2.2d, v3.2d
+	cmeq	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

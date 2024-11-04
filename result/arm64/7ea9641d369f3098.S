@@ -1,36 +1,82 @@
 func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
 	mov	x8, #63439                      // =0xf7cf
-	add	x9, x1, x2
 	movk	x8, #58195, lsl #16
 	movk	x8, #39845, lsl #32
+	fmov	x9, d2
+	fmov	x11, d3
 	movk	x8, #8388, lsl #48
-	smulh	x8, x9, x8
-	asr	x9, x8, #7
-	add	x8, x9, x8, lsr #63
-	cmp	x8, x0
-	cset	w0, lt
+	mov	x10, v2.d[1]
+	mov	x12, v3.d[1]
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	asr	x12, x9, #7
+	asr	x13, x11, #7
+	add	x9, x12, x9, lsr #63
+	add	x11, x13, x11, lsr #63
+	asr	x14, x10, #7
+	fmov	d2, x9
+	asr	x15, x8, #7
+	fmov	d3, x11
+	add	x10, x14, x10, lsr #63
+	add	x8, x15, x8, lsr #63
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	cmgt	v0.2d, v0.2d, v2.2d
+	cmgt	v1.2d, v1.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x8, x8, lsr #63
-	cmp	x0, x8, asr #1
-	cset	w0, lt
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	usra	v2.2d, v2.2d, #63
+	usra	v3.2d, v3.2d, #63
+	sshr	v2.2d, v2.2d, #1
+	sshr	v3.2d, v3.2d, #1
+	cmgt	v1.2d, v3.2d, v1.2d
+	cmgt	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
 	mov	x8, #13531                      // =0x34db
-	add	x9, x1, x2
 	movk	x8, #55222, lsl #16
 	movk	x8, #56962, lsl #32
+	fmov	x9, d2
+	fmov	x11, d3
 	movk	x8, #17179, lsl #48
-	smulh	x8, x9, x8
-	asr	x9, x8, #18
-	add	x8, x9, x8, lsr #63
-	cmp	x8, x0
-	cset	w0, lt
+	mov	x10, v2.d[1]
+	mov	x12, v3.d[1]
+	smulh	x9, x9, x8
+	smulh	x11, x11, x8
+	smulh	x10, x10, x8
+	smulh	x8, x12, x8
+	asr	x12, x9, #18
+	asr	x13, x11, #18
+	add	x9, x12, x9, lsr #63
+	add	x11, x13, x11, lsr #63
+	asr	x14, x10, #18
+	fmov	d2, x9
+	asr	x15, x8, #18
+	fmov	d3, x11
+	add	x10, x14, x10, lsr #63
+	add	x8, x15, x8, lsr #63
+	mov	v2.d[1], x10
+	mov	v3.d[1], x8
+	cmgt	v0.2d, v0.2d, v2.2d
+	cmgt	v1.2d, v1.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

@@ -1,19 +1,44 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	eor	x8, x2, #0x8000000000000000
-	tst	w1, #0x1
-	mov	w9, #5                          // =0x5
-	csel	x8, x8, x9, ne
-	cmp	x8, x0
-	cset	w0, eq
+	ushll	v2.4s, v2.4h, #0
+	movi	v5.2d, #0000000000000000
+	mov	w8, #5                          // =0x5
+	ushll	v6.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	fneg	v5.2d, v5.2d
+	shl	v6.2d, v6.2d, #63
+	shl	v2.2d, v2.2d, #63
+	eor	v4.16b, v4.16b, v5.16b
+	eor	v3.16b, v3.16b, v5.16b
+	dup	v5.2d, x8
+	cmlt	v6.2d, v6.2d, #0
+	cmlt	v2.2d, v2.2d, #0
+	bif	v3.16b, v5.16b, v6.16b
+	bsl	v2.16b, v4.16b, v5.16b
+	cmeq	v1.2d, v2.2d, v1.2d
+	cmeq	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	eor	x8, x2, #0x8000000000000000
-	tst	w1, #0x1
-	csel	x8, x8, xzr, ne
-	cmp	x8, x0
-	cset	w0, gt
+	ushll	v2.4s, v2.4h, #0
+	movi	v5.2d, #0000000000000000
+	ushll	v6.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	fneg	v5.2d, v5.2d
+	shl	v6.2d, v6.2d, #63
+	shl	v2.2d, v2.2d, #63
+	eor	v4.16b, v4.16b, v5.16b
+	eor	v3.16b, v3.16b, v5.16b
+	cmlt	v5.2d, v6.2d, #0
+	cmlt	v2.2d, v2.2d, #0
+	and	v3.16b, v3.16b, v5.16b
+	and	v2.16b, v4.16b, v2.16b
+	cmgt	v1.2d, v2.2d, v1.2d
+	cmgt	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

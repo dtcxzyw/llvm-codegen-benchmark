@@ -1,37 +1,68 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, sxtb
-	cmp	w8, #37
-	cset	w0, eq
+	sshll	v2.8h, v2.8b, #0
+	movi	v3.4s, #37
+	ssubw	v0.4s, v0.4s, v2.4h
+	ssubw2	v1.4s, v1.4s, v2.8h
+	cmeq	v1.4s, v1.4s, v3.4s
+	cmeq	v0.4s, v0.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, sxtb
-	cmp	w8, #4
-	cset	w0, eq
+	sshll	v2.8h, v2.8b, #0
+	movi	v3.4s, #4
+	ssubw	v0.4s, v0.4s, v2.4h
+	ssubw2	v1.4s, v1.4s, v2.8h
+	cmeq	v1.4s, v1.4s, v3.4s
+	cmeq	v0.4s, v0.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, sxtb
-	add	w8, w8, #2
-	cmp	w8, #3
-	cset	w0, lo
+	sshll	v2.8h, v2.8b, #0
+	movi	v3.4s, #2
+	ssubw2	v1.4s, v1.4s, v2.8h
+	ssubw	v0.4s, v0.4s, v2.4h
+	movi	v2.4s, #3
+	add	v0.4s, v0.4s, v3.4s
+	add	v1.4s, v1.4s, v3.4s
+	cmhi	v1.4s, v2.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, sxtb
-	sub	w8, w8, #2
-	lsr	w0, w8, #31
+	sshll	v2.8h, v2.8b, #0
+	ssubw2	v1.4s, v1.4s, v2.8h
+	ssubw	v0.4s, v0.4s, v2.4h
+	mvni	v2.4s, #1
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
+	cmlt	v1.4s, v1.4s, #0
+	cmlt	v0.4s, v0.4s, #0
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, sxtb
-	sub	w8, w8, #9
-	cmn	w8, #16
-	cset	w0, lo
+	sshll	v2.8h, v2.8b, #0
+	ssubw2	v1.4s, v1.4s, v2.8h
+	ssubw	v0.4s, v0.4s, v2.4h
+	mvni	v2.4s, #8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
+	mvni	v2.4s, #15
+	cmhi	v1.4s, v2.4s, v1.4s
+	cmhi	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

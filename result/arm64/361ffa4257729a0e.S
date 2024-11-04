@@ -1,24 +1,30 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w8, w0
-	csinc	w8, wzr, w1, eq
-	sxtw	x0, w8
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	cmeq	v0.4s, v1.4s, v0.4s
+	bic	v0.16b, v1.16b, v0.16b
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w8, w0
-	csinc	w8, wzr, w1, ge
-	sxtw	x0, w8
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	cmgt	v0.4s, v0.4s, v1.4s
+	and	v0.16b, v1.16b, v0.16b
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	cmp	w8, w0
-	csinc	w8, wzr, w1, eq
-	sxtw	x0, w8
+	movi	v2.4s, #1
+	add	v1.4s, v1.4s, v2.4s
+	cmeq	v0.4s, v1.4s, v0.4s
+	bic	v0.16b, v1.16b, v0.16b
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

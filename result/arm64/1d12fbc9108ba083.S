@@ -1,8 +1,19 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	tst	w0, #0x1
-	orr	x8, x8, #0x8000000000000000
-	csneg	x0, x8, x1, eq
+	ushll	v0.4s, v0.4h, #0
+	fabs	v4.2d, v4.2d
+	fabs	v3.2d, v3.2d
+	neg	v6.2d, v1.2d
+	neg	v1.2d, v2.2d
+	ushll2	v5.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	fneg	v3.2d, v3.2d
+	fneg	v4.2d, v4.2d
+	shl	v5.2d, v5.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v2.2d, v5.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bif	v1.16b, v4.16b, v2.16b
+	bsl	v0.16b, v6.16b, v3.16b
 	ret
                                         // -- End function

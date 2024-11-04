@@ -1,18 +1,24 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	sxtw	x8, w2
-	add	x8, x8, w1, sxtw
-	add	x8, x8, x0
-	add	x0, x8, #208
+	saddl2	v4.2d, v3.4s, v2.4s
+	saddl	v2.2d, v3.2s, v2.2s
+	mov	w8, #208                        // =0xd0
+	dup	v3.2d, x8
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v4.2d, v1.2d
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	sxtw	x8, w2
-	add	x8, x8, w1, sxtw
-	add	x8, x8, x0
-	add	x0, x8, #8
+	saddl2	v4.2d, v3.4s, v2.4s
+	saddl	v2.2d, v3.2s, v2.2s
+	mov	w8, #8                          // =0x8
+	dup	v3.2d, x8
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v4.2d, v1.2d
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v3.2d
 	ret
                                         // -- End function

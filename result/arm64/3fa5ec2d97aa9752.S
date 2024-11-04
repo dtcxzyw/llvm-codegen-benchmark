@@ -2,26 +2,28 @@ func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #14269                      // =0x37bd
 	movk	w8, #13702, lsl #16
-	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, mi
-	fmov	w0, s0
+	dup	v2.4s, w8
+	fcmgt	v3.4s, v2.4s, v1.4s
+	fcmgt	v4.4s, v2.4s, v0.4s
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v2.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	d1, #0000000000000000
-	fcmp	s0, #0.0
-	fcsel	s0, s1, s0, eq
-	fmov	w0, s0
+	fcmeq	v2.4s, v1.4s, #0.0
+	fcmeq	v3.4s, v0.4s, #0.0
+	bic	v0.16b, v0.16b, v3.16b
+	bic	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #2139095039                 // =0x7f7fffff
-	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
-	fmov	w0, s0
+	mvni	v2.4s, #128, lsl #16
+	fneg	v2.4s, v2.4s
+	fcmgt	v3.4s, v1.4s, v2.4s
+	fcmgt	v4.4s, v0.4s, v2.4s
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v2.16b, v3.16b
 	ret
                                         // -- End function

@@ -1,26 +1,40 @@
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x9, w1
-	asr	x10, x0, #2
+	sshll	v3.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
 	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
-	cmp	x10, x9
-	csel	x9, x10, x9, hi
-	add	x9, x9, x10
-	cmp	x9, x8
-	csel	x0, x9, x8, lo
+	sshr	v4.2d, v0.2d, #2
+	sshr	v5.2d, v1.2d, #2
+	cmhi	v6.2d, v5.2d, v2.2d
+	cmhi	v7.2d, v4.2d, v3.2d
+	bit	v2.16b, v5.16b, v6.16b
+	bit	v3.16b, v4.16b, v7.16b
+	ssra	v3.2d, v0.2d, #2
+	ssra	v2.2d, v1.2d, #2
+	dup	v0.2d, x8
+	cmhi	v1.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v3.2d
+	bsl	v1.16b, v2.16b, v0.16b
+	bit	v0.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x9, w1
-	asr	x10, x0, #2
+	sshll	v3.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
 	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
-	cmp	x10, x9
-	csel	x9, x10, x9, hi
-	add	x9, x9, x10
-	cmp	x9, x8
-	csel	x0, x9, x8, lo
+	sshr	v4.2d, v0.2d, #2
+	sshr	v5.2d, v1.2d, #2
+	cmhi	v6.2d, v5.2d, v2.2d
+	cmhi	v7.2d, v4.2d, v3.2d
+	bit	v2.16b, v5.16b, v6.16b
+	bit	v3.16b, v4.16b, v7.16b
+	ssra	v3.2d, v0.2d, #2
+	ssra	v2.2d, v1.2d, #2
+	dup	v0.2d, x8
+	cmhi	v1.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v3.2d
+	bsl	v1.16b, v2.16b, v0.16b
+	bit	v0.16b, v3.16b, v4.16b
 	ret
                                         // -- End function

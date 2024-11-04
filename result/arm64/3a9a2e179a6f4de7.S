@@ -1,12 +1,19 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsl	w8, w0, #8
-	and	w0, w8, #0xf000000
+	movi	v1.4s, #15, lsl #24
+	shl	v0.4s, v0.4s, #8
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	lsr	w8, w0, #15
-	and	w0, w8, #0x1fe
+	mov	w8, #510                        // =0x1fe
+	ushr	v0.4s, v0.4s, #15
+	dup	v1.4s, w8
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

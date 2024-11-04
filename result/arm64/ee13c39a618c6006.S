@@ -1,8 +1,15 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fmov	w9, s0
-	mov	w8, #3                          // =0x3
-	cmp	w9, #0
-	cinc	x0, x8, lt
+	cmge	v0.4s, v0.4s, #0
+	mov	w8, #4                          // =0x4
+	mov	w9, #3                          // =0x3
+	dup	v3.2d, x8
+	dup	v4.2d, x9
+	sshll	v2.2d, v0.2s, #0
+	sshll2	v0.2d, v0.4s, #0
+	mov	v1.16b, v0.16b
+	mov	v0.16b, v2.16b
+	bsl	v1.16b, v4.16b, v3.16b
+	bsl	v0.16b, v4.16b, v3.16b
 	ret
                                         // -- End function

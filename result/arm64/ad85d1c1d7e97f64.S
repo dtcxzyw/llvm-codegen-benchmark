@@ -1,49 +1,85 @@
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	sxtb	w8, w1
-	cmp	w8, w0, sxtb
-	cset	w0, gt
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #24
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmgt	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	sxtb	w8, w1
-	cmp	w8, w0, sxtb
-	cset	w0, ge
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #24
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmge	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	sxtb	w8, w1
-	cmp	w8, w0, sxtb
-	cset	w0, lt
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #24
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmgt	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	sxtb	w8, w1
-	cmp	w8, w0, sxtb
-	cset	w0, ne
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #24
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmeq	v0.4s, v1.4s, v0.4s
+	mvn	v0.16b, v0.16b
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	sxtb	w8, w1
-	cmp	w8, w0, sxtb
-	cset	w0, eq
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #24
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmeq	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	sxtb	w8, w1
-	cmp	w8, w0, sxtb
-	cset	w0, le
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #24
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmge	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sbfx	w8, w1, #4, #8
-	cmp	w8, w0, sxtb
-	cset	w0, gt
+	uzp1	v1.4s, v1.4s, v2.4s
+	ushll	v0.4s, v0.4h, #0
+	shl	v0.4s, v0.4s, #24
+	shl	v1.4s, v1.4s, #20
+	sshr	v0.4s, v0.4s, #24
+	sshr	v1.4s, v1.4s, #24
+	cmgt	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

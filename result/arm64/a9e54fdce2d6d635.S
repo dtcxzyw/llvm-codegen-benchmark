@@ -1,29 +1,62 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmp	w2, #0
+	cmeq	v3.4s, v3.4s, #0
 	mov	w8, #8                          // =0x8
-	mov	w9, #4                          // =0x4
-	csel	x8, x9, x8, eq
-	cmp	w1, #0
-	csel	x0, x8, x0, eq
+	cmeq	v2.4s, v2.4s, #0
+	dup	v4.2d, x8
+	mov	w8, #4                          // =0x4
+	dup	v6.2d, x8
+	sshll2	v5.2d, v3.4s, #0
+	sshll	v3.2d, v3.2s, #0
+	bsl	v3.16b, v6.16b, v4.16b
+	bit	v4.16b, v6.16b, v5.16b
+	sshll	v5.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
+	bit	v1.16b, v4.16b, v2.16b
+	bit	v0.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	cmp	w2, #3
+	movi	v4.4s, #3
+	mvni	v5.4s, #2
 	mov	w8, #3                          // =0x3
-	csel	x8, xzr, x8, lo
-	cmn	w1, #3
-	csel	x0, x8, x0, lo
+	dup	v6.2d, x8
+	cmhi	v2.4s, v5.4s, v2.4s
+	cmhi	v3.4s, v4.4s, v3.4s
+	sshll2	v4.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
+	ushll2	v5.2d, v3.4s, #0
+	ushll	v3.2d, v3.2s, #0
+	bic	v1.16b, v1.16b, v4.16b
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v5.16b, v4.16b, v5.16b
+	bic	v3.16b, v2.16b, v3.16b
+	and	v5.16b, v5.16b, v6.16b
+	and	v3.16b, v3.16b, v6.16b
+	orr	v1.16b, v5.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	cmp	w2, #0
+	mov	w8, #-32767                     // =0xffff8001
+	cmeq	v3.4s, v3.4s, #0
+	dup	v4.4s, w8
 	mov	w8, #1073709056                 // =0x3fff8000
-	mov	w9, #-32767                     // =0xffff8001
-	csel	x8, xzr, x8, eq
-	cmp	w1, w9
-	csel	x0, x8, x0, lo
+	dup	v6.2d, x8
+	cmhi	v2.4s, v4.4s, v2.4s
+	ushll2	v4.2d, v3.4s, #0
+	ushll	v3.2d, v3.2s, #0
+	sshll	v5.2d, v2.2s, #0
+	sshll2	v2.2d, v2.4s, #0
+	bic	v3.16b, v5.16b, v3.16b
+	bic	v4.16b, v2.16b, v4.16b
+	bic	v1.16b, v1.16b, v2.16b
+	bic	v0.16b, v0.16b, v5.16b
+	and	v2.16b, v4.16b, v6.16b
+	and	v3.16b, v3.16b, v6.16b
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function

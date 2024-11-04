@@ -1,26 +1,42 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	asr	x9, x0, #32
 	mov	w8, #23                         // =0x17
-	cmp	x9, #23
-	csel	x8, x9, x8, hi
-	add	x0, x8, #1
+	sshr	v0.2d, v0.2d, #32
+	sshr	v1.2d, v1.2d, #32
+	dup	v2.2d, x8
+	mov	w8, #1                          // =0x1
+	cmhi	v3.2d, v1.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	bif	v1.16b, v2.16b, v3.16b
+	bif	v0.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	asr	x9, x0, #3
 	mov	w8, #35                         // =0x23
-	cmp	x9, #35
-	csel	x8, x9, x8, hi
-	add	x0, x8, #10
+	sshr	v0.2d, v0.2d, #3
+	sshr	v1.2d, v1.2d, #3
+	dup	v2.2d, x8
+	mov	w8, #10                         // =0xa
+	cmhi	v3.2d, v1.2d, v2.2d
+	cmhi	v4.2d, v0.2d, v2.2d
+	bif	v1.16b, v2.16b, v3.16b
+	bif	v0.16b, v2.16b, v4.16b
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	asr	x8, x0, #5
-	cmp	x8, #1
-	csinc	x8, x8, xzr, hi
-	sub	x0, x8, #1
+	mov	w8, #1                          // =0x1
+	sshr	v1.2d, v1.2d, #5
+	sshr	v0.2d, v0.2d, #5
+	dup	v2.2d, x8
+	uqsub	v0.2d, v0.2d, v2.2d
+	uqsub	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

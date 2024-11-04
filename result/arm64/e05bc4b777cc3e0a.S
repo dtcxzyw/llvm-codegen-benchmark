@@ -1,22 +1,36 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	mov	w9, #43691                      // =0xaaab
-	add	w8, w8, w0
-	movk	w9, #10922, lsl #16
-	smull	x8, w8, w9
-	lsr	x9, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w9
-	add	w0, w8, #6
+	add	v3.4s, v3.4s, v5.4s
+	add	v2.4s, v2.4s, v4.4s
+	mov	w8, #43691                      // =0xaaab
+	movk	w8, #10922, lsl #16
+	dup	v4.4s, w8
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	smull2	v2.2d, v1.4s, v4.4s
+	smull	v1.2d, v1.2s, v4.2s
+	smull2	v3.2d, v0.4s, v4.4s
+	smull	v0.2d, v0.2s, v4.2s
+	uzp2	v1.4s, v1.4s, v2.4s
+	movi	v2.4s, #6
+	uzp2	v0.4s, v0.4s, v3.4s
+	usra	v1.4s, v1.4s, #31
+	usra	v0.4s, v0.4s, #31
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	add	w8, w8, w0
-	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	add	w0, w8, #1
+	add	v3.4s, v3.4s, v5.4s
+	add	v2.4s, v2.4s, v4.4s
+	add	v2.4s, v2.4s, v0.4s
+	add	v3.4s, v3.4s, v1.4s
+	movi	v1.4s, #1
+	movi	v0.4s, #1
+	usra	v3.4s, v3.4s, #31
+	usra	v2.4s, v2.4s, #31
+	ssra	v0.4s, v2.4s, #1
+	ssra	v1.4s, v3.4s, #1
 	ret
                                         // -- End function

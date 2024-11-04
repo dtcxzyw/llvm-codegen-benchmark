@@ -1,24 +1,32 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	eor	w8, w0, w1
-	eor	w0, w8, w2, lsl #8
+	shl	v5.4s, v5.4s, #8
+	shl	v4.4s, v4.4s, #8
+	eor3	v0.16b, v0.16b, v2.16b, v4.16b
+	eor3	v1.16b, v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	eor	w8, w0, w1
-	eor	w0, w8, w2, lsl #16
+	shl	v5.4s, v5.4s, #16
+	shl	v4.4s, v4.4s, #16
+	eor3	v0.16b, v0.16b, v2.16b, v4.16b
+	eor3	v1.16b, v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	eor	w8, w1, w2
-	eor	w0, w8, w0, lsl #8
+	shl	v1.4s, v1.4s, #8
+	shl	v0.4s, v0.4s, #8
+	eor3	v0.16b, v2.16b, v4.16b, v0.16b
+	eor3	v1.16b, v3.16b, v5.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	eor	w8, w0, w1
-	eor	w0, w8, w2, lsl #2
+	shl	v5.4s, v5.4s, #2
+	shl	v4.4s, v4.4s, #2
+	eor3	v0.16b, v0.16b, v2.16b, v4.16b
+	eor3	v1.16b, v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

@@ -1,27 +1,35 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	cmp	w8, #58
-	csetm	w0, eq
+	movi	v1.8b, #58
+	cmeq	v0.8b, v0.8b, v1.8b
+	sshll	v0.8h, v0.8b, #0
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	tst	w0, #0xff
-	csetm	w0, ne
+	cmtst	v0.8b, v0.8b, v0.8b
+	sshll	v0.8h, v0.8b, #0
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	cmp	w8, #4
-	csetm	w0, hi
+	movi	v1.8b, #4
+	cmhi	v0.8b, v0.8b, v1.8b
+	sshll	v0.8h, v0.8b, #0
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	cmp	w8, #3
-	csetm	w0, lo
+	movi	v1.8b, #3
+	cmhi	v0.8b, v1.8b, v0.8b
+	sshll	v0.8h, v0.8b, #0
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

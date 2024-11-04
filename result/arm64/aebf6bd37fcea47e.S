@@ -1,10 +1,17 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	and	w9, w1, #0x1
-	mov	w8, #32                         // =0x20
-	add	w9, w9, w0
-	add	w9, w9, #1
-	and	w9, w9, #0x1f
-	sub	w0, w8, w9
+	movi	v4.4s, #1
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	movi	v4.4s, #31
+	add	v0.4s, v2.4s, v0.4s
+	movi	v2.4s, #32
+	add	v1.4s, v3.4s, v1.4s
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v2.4s, v1.4s
 	ret
                                         // -- End function

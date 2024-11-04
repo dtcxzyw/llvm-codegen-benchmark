@@ -1,12 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
+	sshll2	v3.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
 	mov	x8, #1525                       // =0x5f5
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x9, w1
 	movk	x8, #31127, lsl #16
 	movk	x8, #55789, lsl #32
-	eor	x9, x9, x0
+	eor	v1.16b, v3.16b, v1.16b
+	eor	v0.16b, v2.16b, v0.16b
 	movk	x8, #25257, lsl #48
-	mul	x0, x9, x8
+	fmov	x9, d1
+	fmov	x11, d0
+	mov	x10, v1.d[1]
+	mov	x12, v0.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d1, x9
+	mul	x8, x12, x8
+	fmov	d0, x11
+	mov	v1.d[1], x10
+	mov	v0.d[1], x8
 	ret
                                         // -- End function

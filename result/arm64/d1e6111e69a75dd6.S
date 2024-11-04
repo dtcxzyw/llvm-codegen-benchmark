@@ -1,41 +1,66 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #1
-	cmp	w8, #0
-	csel	w0, wzr, w0, gt
+	mvn	v4.16b, v4.16b
+	mvn	v5.16b, v5.16b
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	cmgt	v3.4s, v3.4s, #0
+	cmgt	v2.4s, v2.4s, #0
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #1
-	cmp	w8, #3
-	mov	w8, #3                          // =0x3
-	csel	w0, w8, w0, lo
+	mvn	v4.16b, v4.16b
+	mvn	v5.16b, v5.16b
+	movi	v6.4s, #3
+	sub	v2.4s, v2.4s, v4.4s
+	sub	v3.4s, v3.4s, v5.4s
+	cmhi	v3.4s, v6.4s, v3.4s
+	cmhi	v2.4s, v6.4s, v2.4s
+	bit	v0.16b, v6.16b, v2.16b
+	bit	v1.16b, v6.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	w8, w2, #1
-	cmn	w8, w1
-	csel	w0, wzr, w0, eq
+	movi	v6.2d, #0xffffffffffffffff
+	neg	v2.4s, v2.4s
+	neg	v3.4s, v3.4s
+	add	v4.4s, v4.4s, v6.4s
+	add	v5.4s, v5.4s, v6.4s
+	cmeq	v3.4s, v5.4s, v3.4s
+	cmeq	v2.4s, v4.4s, v2.4s
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000056:                   // @func0000000000000056
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	sub	w8, w8, #25
-	cmp	w8, #0
-	csel	w0, wzr, w0, lt
+	add	v2.4s, v4.4s, v2.4s
+	add	v3.4s, v5.4s, v3.4s
+	mvni	v4.4s, #24
+	add	v3.4s, v3.4s, v4.4s
+	add	v2.4s, v2.4s, v4.4s
+	cmge	v2.4s, v2.4s, #0
+	cmge	v3.4s, v3.4s, #0
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000005a:                   // @func000000000000005a
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #6
-	cmp	w8, #1023
-	mov	w8, #2                          // =0x2
-	csel	w0, w8, w0, gt
+	movi	v6.4s, #6
+	add	v3.4s, v5.4s, v3.4s
+	add	v2.4s, v4.4s, v2.4s
+	movi	v4.4s, #3, msl #8
+	movi	v5.4s, #2
+	add	v2.4s, v2.4s, v6.4s
+	add	v3.4s, v3.4s, v6.4s
+	cmgt	v3.4s, v3.4s, v4.4s
+	cmgt	v2.4s, v2.4s, v4.4s
+	bit	v0.16b, v5.16b, v2.16b
+	bit	v1.16b, v5.16b, v3.16b
 	ret
                                         // -- End function

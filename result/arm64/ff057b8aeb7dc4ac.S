@@ -1,34 +1,55 @@
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	mov	w8, #-208                       // =0xffffff30
-	add	w9, w0, w1
-	madd	w8, w2, w8, w9
-	mov	w9, #26624                      // =0x6800
-	add	w0, w8, w9
+	mvni	v6.4s, #207
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	movi	v2.4s, #104, lsl #8
+	mla	v1.4s, v5.4s, v6.4s
+	mla	v0.4s, v4.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	add	w9, w0, w1
-	madd	w8, w2, w8, w9
-	add	w8, w8, #427, lsl #12           // =1748992
-	add	w0, w8, #3008
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	dup	v6.4s, w8
+	mov	w8, #48064                      // =0xbbc0
+	movk	w8, #26, lsl #16
+	dup	v2.4s, w8
+	mla	v1.4s, v5.4s, v6.4s
+	mla	v0.4s, v4.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	add	w9, w0, w1
-	madd	w8, w2, w8, w9
-	sub	w0, w8, #365
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	dup	v6.4s, w8
+	mov	w8, #-365                       // =0xfffffe93
+	dup	v2.4s, w8
+	mla	v1.4s, v5.4s, v6.4s
+	mla	v0.4s, v4.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000005d:                   // @func000000000000005d
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	add	w9, w0, w1
-	madd	w8, w2, w8, w9
-	sub	w0, w8, #365
+	add	v1.4s, v1.4s, v3.4s
+	add	v0.4s, v0.4s, v2.4s
+	dup	v6.4s, w8
+	mov	w8, #-365                       // =0xfffffe93
+	dup	v2.4s, w8
+	mla	v1.4s, v5.4s, v6.4s
+	mla	v0.4s, v4.4s, v6.4s
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

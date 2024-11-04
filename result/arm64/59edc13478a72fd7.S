@@ -1,21 +1,30 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #2
-	cmp	x0, x8
-	csel	x0, x0, x8, hi
+	ssra	v3.2d, v5.2d, #2
+	ssra	v2.2d, v4.2d, #2
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #3
-	cmp	x0, x8
-	csel	x0, x0, x8, hi
+	ssra	v3.2d, v5.2d, #3
+	ssra	v2.2d, v4.2d, #3
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	x8, x1, x2, asr #2
-	cmp	x0, x8
-	csel	x0, x0, x8, hi
+	ssra	v3.2d, v5.2d, #2
+	ssra	v2.2d, v4.2d, #2
+	cmhi	v4.2d, v0.2d, v2.2d
+	cmhi	v5.2d, v1.2d, v3.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

@@ -1,28 +1,48 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	add	x8, x1, x2, lsl #2
-	cmp	x0, x8
-	csel	x0, x0, x8, lt
+	shl	v4.2d, v4.2d, #2
+	shl	v5.2d, v5.2d, #2
+	add	v3.2d, v5.2d, v3.2d
+	add	v2.2d, v4.2d, v2.2d
+	cmgt	v4.2d, v2.2d, v0.2d
+	cmgt	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	x8, x1, x2, lsl #12
-	cmp	x8, x0
-	csel	x0, x8, x0, lt
+	shl	v4.2d, v4.2d, #12
+	shl	v5.2d, v5.2d, #12
+	add	v3.2d, v5.2d, v3.2d
+	add	v2.2d, v4.2d, v2.2d
+	cmgt	v4.2d, v0.2d, v2.2d
+	cmgt	v5.2d, v1.2d, v3.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	x8, x1, x2, lsl #1
-	cmp	x0, x8
-	csel	x0, x0, x8, lt
+	add	v4.2d, v4.2d, v4.2d
+	add	v5.2d, v5.2d, v5.2d
+	add	v3.2d, v5.2d, v3.2d
+	add	v2.2d, v4.2d, v2.2d
+	cmgt	v4.2d, v2.2d, v0.2d
+	cmgt	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	x8, x1, x2, lsl #5
-	cmp	x0, x8
-	csel	x0, x0, x8, lt
+	shl	v4.2d, v4.2d, #5
+	shl	v5.2d, v5.2d, #5
+	add	v3.2d, v5.2d, v3.2d
+	add	v2.2d, v4.2d, v2.2d
+	cmgt	v4.2d, v2.2d, v0.2d
+	cmgt	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

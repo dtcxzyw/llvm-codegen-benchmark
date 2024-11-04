@@ -1,7 +1,10 @@
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	cmp	x8, x0
-	cinc	x0, x0, hi
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	cmhi	v3.2d, v3.2d, v1.2d
+	cmhi	v2.2d, v2.2d, v0.2d
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

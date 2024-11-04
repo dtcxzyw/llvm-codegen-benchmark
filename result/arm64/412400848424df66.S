@@ -1,14 +1,40 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
+	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #1000                       // =0x3e8
-	and	w9, w0, #0xffff
-	udiv	w0, w8, w9
+	xtn	v0.4h, v0.4s
+	umov	w10, v0.h[0]
+	umov	w9, v0.h[1]
+	umov	w11, v0.h[2]
+	umov	w12, v0.h[3]
+	udiv	w10, w8, w10
+	udiv	w9, w8, w9
+	fmov	s0, w10
+	udiv	w11, w8, w11
+	mov	v0.h[1], w9
+	udiv	w8, w8, w12
+	mov	v0.h[2], w11
+	mov	v0.h[3], w8
+                                        // kill: def $d0 killed $d0 killed $q0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
+	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #1024                       // =0x400
-	and	w9, w0, #0xffff
-	udiv	w0, w8, w9
+	xtn	v0.4h, v0.4s
+	umov	w10, v0.h[0]
+	umov	w9, v0.h[1]
+	umov	w11, v0.h[2]
+	umov	w12, v0.h[3]
+	udiv	w10, w8, w10
+	udiv	w9, w8, w9
+	fmov	s0, w10
+	udiv	w11, w8, w11
+	mov	v0.h[1], w9
+	udiv	w8, w8, w12
+	mov	v0.h[2], w11
+	mov	v0.h[3], w8
+                                        // kill: def $d0 killed $d0 killed $q0
 	ret
                                         // -- End function

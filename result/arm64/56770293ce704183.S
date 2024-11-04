@@ -1,11 +1,16 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	negs	x8, x1
-	and	x9, x1, #0x3
-	and	x8, x8, #0x3
-	csneg	x8, x9, x8, mi
-	sub	x8, x1, x8
-	cmp	x8, x0
-	csel	x0, x8, x0, lt
+	cmlt	v4.2d, v3.2d, #0
+	cmlt	v5.2d, v2.2d, #0
+	mov	x8, #-4                         // =0xfffffffffffffffc
+	usra	v3.2d, v4.2d, #62
+	dup	v4.2d, x8
+	usra	v2.2d, v5.2d, #62
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	cmgt	v4.2d, v0.2d, v2.2d
+	cmgt	v5.2d, v1.2d, v3.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

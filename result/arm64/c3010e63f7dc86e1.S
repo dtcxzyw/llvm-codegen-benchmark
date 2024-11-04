@@ -1,28 +1,54 @@
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
 	mov	w8, #26464                      // =0x6760
-	fabs	s1, s1
+	ldr	q16, [sp]
+	fabs	v5.4s, v5.4s
 	movk	w8, #18583, lsl #16
-	fmov	s2, w8
-	fcmp	s1, s2
-	cset	w8, gt
-	fcmp	s0, s2
-	cset	w9, gt
-	orr	w9, w9, w0
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	fabs	v6.4s, v6.4s
+	fabs	v7.4s, v7.4s
+	dup	v17.4s, w8
+	fabs	v16.4s, v16.4s
+	fcmgt	v4.4s, v4.4s, v17.4s
+	fcmgt	v3.4s, v3.4s, v17.4s
+	fcmgt	v2.4s, v2.4s, v17.4s
+	fcmgt	v1.4s, v1.4s, v17.4s
+	fcmgt	v16.4s, v16.4s, v17.4s
+	fcmgt	v7.4s, v7.4s, v17.4s
+	fcmgt	v6.4s, v6.4s, v17.4s
+	fcmgt	v5.4s, v5.4s, v17.4s
+	uzp1	v3.8h, v3.8h, v4.8h
+	uzp1	v1.8h, v1.8h, v2.8h
+	uzp1	v2.8h, v7.8h, v16.8h
+	uzp1	v4.8h, v5.8h, v6.8h
+	uzp1	v1.16b, v1.16b, v3.16b
+	uzp1	v2.16b, v4.16b, v2.16b
+	orr	v0.16b, v1.16b, v0.16b
+	orr	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func00000000000000dd:                   // @func00000000000000dd
 // %bb.0:                               // %entry
-	fabs	s1, s1
-	movi	v2.2s, #52, lsl #24
-	fcmp	s1, s2
-	cset	w8, pl
-	fcmp	s0, s2
-	cset	w9, pl
-	orr	w9, w9, w0
-	orr	w8, w9, w8
-	and	w0, w8, #0x1
+	movi	v16.4s, #52, lsl #24
+	ldr	q17, [sp]
+	fabs	v5.4s, v5.4s
+	fabs	v6.4s, v6.4s
+	fabs	v7.4s, v7.4s
+	fabs	v17.4s, v17.4s
+	fcmgt	v4.4s, v16.4s, v4.4s
+	fcmgt	v3.4s, v16.4s, v3.4s
+	fcmgt	v2.4s, v16.4s, v2.4s
+	fcmgt	v1.4s, v16.4s, v1.4s
+	fcmgt	v7.4s, v16.4s, v7.4s
+	fcmgt	v6.4s, v16.4s, v6.4s
+	fcmgt	v17.4s, v16.4s, v17.4s
+	fcmgt	v5.4s, v16.4s, v5.4s
+	uzp1	v3.8h, v3.8h, v4.8h
+	uzp1	v1.8h, v1.8h, v2.8h
+	uzp1	v2.8h, v7.8h, v17.8h
+	uzp1	v4.8h, v5.8h, v6.8h
+	uzp1	v1.16b, v1.16b, v3.16b
+	uzp1	v2.16b, v4.16b, v2.16b
+	orn	v0.16b, v0.16b, v1.16b
+	orn	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

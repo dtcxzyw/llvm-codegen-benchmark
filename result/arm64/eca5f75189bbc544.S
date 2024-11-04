@@ -1,24 +1,34 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvn	w8, w1
-	lsl	w0, w8, w0
+	mvn	v3.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	eor	w8, w1, #0x1
-	lsl	w0, w8, w0
+	movi	v4.4s, #1
+	eor	v3.16b, v3.16b, v4.16b
+	eor	v2.16b, v2.16b, v4.16b
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	eor	w8, w1, #0x3
-	lsl	w0, w8, w0
+	movi	v4.4s, #3
+	eor	v3.16b, v3.16b, v4.16b
+	eor	v2.16b, v2.16b, v4.16b
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvn	w8, w1
-	lsl	w0, w8, w0
+	mvn	v3.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

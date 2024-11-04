@@ -1,24 +1,36 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w8, gt
-	orn	w8, w8, w0
-	and	w0, w8, #0x1
+	fcmgt	v3.4s, v3.4s, #0.0
+	fcmgt	v2.4s, v2.4s, #0.0
+	fcmgt	v1.4s, v1.4s, #0.0
+	fcmgt	v0.4s, v0.4s, #0.0
+	uzp1	v2.8h, v2.8h, v3.8h
+	uzp1	v0.8h, v0.8h, v1.8h
+	uzp1	v0.16b, v0.16b, v2.16b
+	orn	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w8, mi
-	orn	w8, w8, w0
-	and	w0, w8, #0x1
+	fcmlt	v3.4s, v3.4s, #0.0
+	fcmlt	v2.4s, v2.4s, #0.0
+	fcmlt	v1.4s, v1.4s, #0.0
+	fcmlt	v0.4s, v0.4s, #0.0
+	uzp1	v2.8h, v2.8h, v3.8h
+	uzp1	v0.8h, v0.8h, v1.8h
+	uzp1	v0.16b, v0.16b, v2.16b
+	orn	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	fcmp	s0, #0.0
-	cset	w8, eq
-	orn	w8, w8, w0
-	and	w0, w8, #0x1
+	fcmeq	v3.4s, v3.4s, #0.0
+	fcmeq	v2.4s, v2.4s, #0.0
+	fcmeq	v1.4s, v1.4s, #0.0
+	fcmeq	v0.4s, v0.4s, #0.0
+	uzp1	v2.8h, v2.8h, v3.8h
+	uzp1	v0.8h, v0.8h, v1.8h
+	uzp1	v0.16b, v0.16b, v2.16b
+	orn	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function

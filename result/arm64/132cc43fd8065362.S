@@ -1,8 +1,12 @@
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	lsl	x8, x1, x2
-	orr	w8, w8, w0
-	and	w0, w8, #0xfffffff
+	ushll2	v5.2d, v4.4s, #0
+	ushll	v4.2d, v4.2s, #0
+	ushl	v2.2d, v2.2d, v4.2d
+	ushl	v3.2d, v3.2d, v5.2d
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	uzp1	v0.4s, v0.4s, v1.4s
+	bic	v0.4s, #240, lsl #24
 	ret
                                         // -- End function

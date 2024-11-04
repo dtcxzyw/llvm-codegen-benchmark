@@ -1,28 +1,47 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3
-	lsl	w8, w0, w8
-	add	w0, w8, #16
+	movi	v4.4s, #3
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	movi	v4.4s, #16
+	ushl	v1.4s, v1.4s, v3.4s
+	ushl	v0.4s, v0.4s, v2.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3
-	lsl	w8, w0, w8
-	add	w0, w8, #7
+	movi	v4.4s, #3
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	movi	v4.4s, #7
+	ushl	v1.4s, v1.4s, v3.4s
+	ushl	v0.4s, v0.4s, v2.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1
-	lsl	w8, w0, w8
-	add	w0, w8, #1
+	movi	v4.4s, #1
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	ushl	v1.4s, v1.4s, v3.4s
+	ushl	v0.4s, v0.4s, v2.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	and	w8, w1, #0x7
-	lsl	w8, w0, w8
-	sub	w0, w8, #132
+	movi	v4.4s, #7
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	ushl	v1.4s, v1.4s, v3.4s
+	ushl	v0.4s, v0.4s, v2.4s
+	mvni	v2.4s, #131
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

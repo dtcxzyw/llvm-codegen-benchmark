@@ -1,10 +1,13 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcvtzs	w8, s1
-	fcvtzs	w9, s0
-	cmp	w9, w8
-	cset	w8, gt
-	orr	w8, w0, w8
-	and	w0, w8, #0x1
+	fcvtzs	v3.4s, v3.4s
+	fcvtzs	v4.4s, v4.4s
+	fcvtzs	v1.4s, v1.4s
+	fcvtzs	v2.4s, v2.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v2.4s, v2.4s, v4.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

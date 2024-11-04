@@ -1,9 +1,12 @@
 func00000000000000d5:                   // @func00000000000000d5
 // %bb.0:                               // %entry
-	mov	w8, #-27                        // =0xffffffe5
-	neg	w9, w0
-	madd	w8, w1, w8, w9
-	add	w8, w8, #292
-	sxtw	x0, w8
+	mvni	v2.4s, #26
+	neg	v0.4s, v0.4s
+	mov	w8, #292                        // =0x124
+	mla	v0.4s, v1.4s, v2.4s
+	dup	v1.4s, w8
+	add	v0.4s, v0.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

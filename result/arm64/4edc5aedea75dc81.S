@@ -1,49 +1,91 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	sub	w8, w1, #9
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	mvni	v3.4s, #8
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000003a:                   // @func000000000000003a
 // %bb.0:                               // %entry
-	add	w8, w1, #9
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v3.4s, #9
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	add	w8, w1, #48
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v3.4s, #48
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	add	w8, w1, #35
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v3.4s, #35
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v3.2d, #0xffffffffffffffff
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	w8, w1, #3
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v3.4s, #3
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	sub	w8, w1, #9
-	lsr	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
+	mvni	v3.4s, #8
+	add	v2.4s, v2.4s, v3.4s
+	movi	v3.2d, #0000000000000000
+	ushll	v4.2d, v2.2s, #0
+	usubw2	v2.2d, v3.2d, v2.4s
+	neg	v3.2d, v4.2d
+	ushl	v1.2d, v1.2d, v2.2d
+	ushl	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

@@ -1,15 +1,56 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sdiv	x8, x1, x2
-	msub	x8, x8, x2, x1
-	cmp	x8, #0
-	csel	x0, x0, xzr, gt
+	mov	x8, v4.d[1]
+	mov	x9, v2.d[1]
+	fmov	x11, d4
+	fmov	x12, d2
+	fmov	x14, d5
+	fmov	x15, d3
+	mov	x17, v5.d[1]
+	mov	x18, v3.d[1]
+	sdiv	x10, x9, x8
+	sdiv	x13, x12, x11
+	msub	x8, x10, x8, x9
+	sdiv	x16, x15, x14
+	msub	x9, x13, x11, x12
+	fmov	d2, x9
+	mov	v2.d[1], x8
+	cmgt	v2.2d, v2.2d, #0
+	and	v0.16b, v0.16b, v2.16b
+	sdiv	x0, x18, x17
+	msub	x10, x16, x14, x15
+	fmov	d3, x10
+	msub	x11, x0, x17, x18
+	mov	v3.d[1], x11
+	cmgt	v3.2d, v3.2d, #0
+	and	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sdiv	x8, x1, x2
-	msub	x8, x8, x2, x1
-	and	x0, x0, x8, asr #63
+	mov	x8, v5.d[1]
+	mov	x9, v3.d[1]
+	fmov	x11, d5
+	fmov	x12, d3
+	fmov	x14, d4
+	fmov	x15, d2
+	mov	x17, v4.d[1]
+	mov	x18, v2.d[1]
+	sdiv	x10, x9, x8
+	sdiv	x13, x12, x11
+	msub	x8, x10, x8, x9
+	sdiv	x16, x15, x14
+	msub	x9, x13, x11, x12
+	fmov	d2, x9
+	mov	v2.d[1], x8
+	cmlt	v2.2d, v2.2d, #0
+	and	v1.16b, v2.16b, v1.16b
+	sdiv	x0, x18, x17
+	msub	x10, x16, x14, x15
+	fmov	d3, x10
+	msub	x11, x0, x17, x18
+	mov	v3.d[1], x11
+	cmlt	v3.2d, v3.2d, #0
+	and	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function

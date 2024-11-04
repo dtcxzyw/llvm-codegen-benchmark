@@ -1,18 +1,23 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #-128                       // =0xffffff80
-	cmn	w0, #128
-	mov	w9, #27                         // =0x1b
-	csel	w8, w0, w8, gt
-	mov	w10, #63                        // =0x3f
-	madd	w0, w8, w9, w10
+	mvni	v2.4s, #127
+	movi	v4.4s, #27
+	smax	v3.4s, v0.4s, v2.4s
+	smax	v2.4s, v1.4s, v2.4s
+	movi	v1.4s, #63
+	movi	v0.4s, #63
+	mla	v1.4s, v2.4s, v4.4s
+	mla	v0.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	w8, w0, w0, asr #31
-	mov	w9, #20                         // =0x14
-	mov	w10, #20                        // =0x14
-	madd	w0, w8, w9, w10
+	movi	v2.2d, #0000000000000000
+	smax	v3.4s, v0.4s, v2.4s
+	smax	v2.4s, v1.4s, v2.4s
+	movi	v1.4s, #20
+	movi	v0.4s, #20
+	mla	v1.4s, v2.4s, v1.4s
+	mla	v0.4s, v3.4s, v0.4s
 	ret
                                         // -- End function

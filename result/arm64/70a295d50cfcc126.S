@@ -1,7 +1,43 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	clz	x8, x1
-	orr	w8, w8, w0
-	eor	w0, w8, #0x3f
+	ushr	v3.2d, v2.2d, #1
+	ushr	v4.2d, v1.2d, #1
+	movi	v5.2d, #0000000000000000
+	orr	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v4.16b
+	ushr	v3.2d, v2.2d, #2
+	ushr	v4.2d, v1.2d, #2
+	orr	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v4.16b
+	ushr	v3.2d, v2.2d, #4
+	ushr	v4.2d, v1.2d, #4
+	orr	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v4.16b
+	ushr	v3.2d, v2.2d, #8
+	ushr	v4.2d, v1.2d, #8
+	orr	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v4.16b
+	ushr	v3.2d, v2.2d, #16
+	ushr	v4.2d, v1.2d, #16
+	orr	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v4.16b
+	ushr	v3.2d, v2.2d, #32
+	ushr	v4.2d, v1.2d, #32
+	orr	v2.16b, v2.16b, v3.16b
+	orr	v1.16b, v1.16b, v4.16b
+	movi	v3.16b, #1
+	movi	v4.2d, #0000000000000000
+	mvn	v2.16b, v2.16b
+	mvn	v1.16b, v1.16b
+	cnt	v2.16b, v2.16b
+	cnt	v1.16b, v1.16b
+	udot	v5.4s, v3.16b, v2.16b
+	udot	v4.4s, v3.16b, v1.16b
+	uaddlp	v1.2d, v5.4s
+	uaddlp	v2.2d, v4.4s
+	uzp1	v1.4s, v2.4s, v1.4s
+	movi	v2.4s, #63
+	orr	v0.16b, v1.16b, v0.16b
+	eor	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

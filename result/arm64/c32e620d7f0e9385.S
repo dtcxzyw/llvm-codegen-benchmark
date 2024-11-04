@@ -1,31 +1,60 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	x0, x0, w8, sxtw
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	x0, x0, w8, sxtw
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	x0, x0, w8, sxtw
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	x0, x0, w8, sxtw
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v5.2d
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	add	x8, x1, x2
-	lsr	x8, x8, #16
-	sub	x0, x0, w8, sxtw
+	add	v3.2d, v3.2d, v5.2d
+	add	v2.2d, v2.2d, v4.2d
+	shl	v2.2d, v2.2d, #16
+	shl	v3.2d, v3.2d, #16
+	sshr	v3.2d, v3.2d, #32
+	sshr	v2.2d, v2.2d, #32
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
 	ret
                                         // -- End function

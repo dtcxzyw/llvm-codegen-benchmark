@@ -1,9 +1,17 @@
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	sub	w8, w1, #8
-	lsr	w8, w0, w8
-	and	w8, w8, #0xff
-	cmp	w8, #66
-	cset	w0, eq
+	movi	v4.4s, #8
+	sub	v3.4s, v4.4s, v3.4s
+	sub	v2.4s, v4.4s, v2.4s
+	movi	v4.2d, #0x0000ff000000ff
+	ushl	v1.4s, v1.4s, v3.4s
+	ushl	v0.4s, v0.4s, v2.4s
+	movi	v2.4s, #66
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	cmeq	v1.4s, v1.4s, v2.4s
+	cmeq	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

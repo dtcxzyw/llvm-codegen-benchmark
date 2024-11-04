@@ -1,32 +1,49 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
+	bic	v0.4h, #255, lsl #8
 	mov	x8, #68719411200                // =0xfffff0000
-                                        // kill: def $w0 killed $w0 def $x0
 	movk	x8, #65488
-	add	x0, x8, w0, uxtb #4
+	dup	v3.2d, x8
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v0.2s, #4
+	ushll2	v0.2d, v0.4s, #4
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xff
-	lsl	x8, x8, #5
-	sub	x0, x8, #64
+	bic	v0.4h, #255, lsl #8
+	mov	x8, #-64                        // =0xffffffffffffffc0
+	dup	v3.2d, x8
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v0.2s, #5
+	ushll2	v0.2d, v0.4s, #5
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xff
-	lsl	x8, x8, #6
-	add	x0, x8, #65
+	bic	v0.4h, #255, lsl #8
+	mov	w8, #65                         // =0x41
+	dup	v3.2d, x8
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v0.2s, #6
+	ushll2	v0.2d, v0.4s, #6
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xff
-	lsl	x8, x8, #7
-	sub	x0, x8, #128
+	bic	v0.4h, #255, lsl #8
+	mov	x8, #-128                       // =0xffffffffffffff80
+	dup	v3.2d, x8
+	ushll	v0.4s, v0.4h, #0
+	ushll	v2.2d, v0.2s, #7
+	ushll2	v0.2d, v0.4s, #7
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function

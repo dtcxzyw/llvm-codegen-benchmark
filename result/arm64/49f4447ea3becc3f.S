@@ -1,44 +1,63 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
+	movi	v2.2d, #0xffffffffffffffff
 	mov	w8, #26215                      // =0x6667
-	sub	w9, w0, #1
 	movk	w8, #26214, lsl #16
-	smull	x8, w9, w8
-	lsr	x9, x8, #63
-	asr	x8, x8, #34
-	add	w8, w8, w9
-	add	w8, w8, w8, lsl #2
-	lsl	w0, w8, #1
+	dup	v3.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
+	smull2	v2.2d, v0.4s, v3.4s
+	smull	v0.2d, v0.2s, v3.2s
+	smull2	v4.2d, v1.4s, v3.4s
+	smull	v1.2d, v1.2s, v3.2s
+	uzp2	v0.4s, v0.4s, v2.4s
+	uzp2	v1.4s, v1.4s, v4.4s
+	movi	v4.4s, #10
+	sshr	v2.4s, v0.4s, #2
+	sshr	v3.4s, v1.4s, #2
+	usra	v2.4s, v0.4s, #31
+	usra	v3.4s, v1.4s, #31
+	mul	v0.4s, v2.4s, v4.4s
+	mul	v1.4s, v3.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	w8, w0, #63
-	negs	w9, w8
-	and	w10, w8, #0x3f
-	and	w9, w9, #0x3f
-	csneg	w9, w10, w9, mi
-	sub	w0, w8, w9
+	movi	v2.4s, #63
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	cmlt	v2.4s, v0.4s, #0
+	cmlt	v3.4s, v1.4s, #0
+	usra	v0.4s, v2.4s, #26
+	usra	v1.4s, v3.4s, #26
+	bic	v0.4s, #63
+	bic	v1.4s, #63
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #7160                       // =0x1bf8
-	add	w8, w0, w8
-	negs	w9, w8
-	and	w10, w8, #0x7
-	and	w9, w9, #0x7
-	csneg	w9, w10, w9, mi
-	sub	w0, w8, w9
+	dup	v2.4s, w8
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	cmlt	v2.4s, v0.4s, #0
+	cmlt	v3.4s, v1.4s, #0
+	usra	v0.4s, v2.4s, #29
+	usra	v1.4s, v3.4s, #29
+	bic	v0.4s, #7
+	bic	v1.4s, #7
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	add	w8, w0, #39
-	negs	w9, w8
-	and	w10, w8, #0x7
-	and	w9, w9, #0x7
-	csneg	w9, w10, w9, mi
-	sub	w0, w8, w9
+	movi	v2.4s, #39
+	add	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v0.4s, v2.4s
+	cmlt	v2.4s, v0.4s, #0
+	cmlt	v3.4s, v1.4s, #0
+	usra	v0.4s, v2.4s, #29
+	usra	v1.4s, v3.4s, #29
+	bic	v0.4s, #7
+	bic	v1.4s, #7
 	ret
                                         // -- End function

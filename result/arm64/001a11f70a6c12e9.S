@@ -1,20 +1,27 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	add	w9, w0, #10
-	bic	w0, w8, w9
+	movi	v2.4s, #10
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #63
+	add	v0.4s, v0.4s, v2.4s
+	bic	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	add	w9, w0, #9
-	bic	w0, w8, w9
+	movi	v2.4s, #9
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #63
+	add	v0.4s, v0.4s, v2.4s
+	bic	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	neg	w8, w0
-	and	w0, w8, #0x3f
+	movi	v2.2d, #0xffffffffffffffff
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #63
+	add	v0.4s, v0.4s, v2.4s
+	bic	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

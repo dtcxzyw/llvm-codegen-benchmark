@@ -1,16 +1,25 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsr	w8, w2, #13
-	and	w8, w8, #0x300
-	orr	w8, w8, w1
-	eor	w0, w8, w0
+	movi	v6.4s, #3, lsl #8
+	ushr	v4.4s, v4.4s, #13
+	ushr	v5.4s, v5.4s, #13
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v6.16b
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsr	w8, w2, #8
-	and	w8, w8, #0xff00
-	orr	w8, w8, w1
-	eor	w0, w8, w0
+	ushr	v4.4s, v4.4s, #8
+	ushr	v5.4s, v5.4s, #8
+	bic	v5.8h, #255
+	bic	v4.8h, #255
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

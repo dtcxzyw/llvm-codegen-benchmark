@@ -1,16 +1,24 @@
 func00000000000000d8:                   // @func00000000000000d8
 // %bb.0:                               // %entry
-	lsl	x8, x1, #1
-	add	x8, x8, w2, sxtw
-	cmp	x8, x0
-	cset	w0, lo
+	add	v3.2d, v3.2d, v3.2d
+	add	v2.2d, v2.2d, v2.2d
+	saddw	v2.2d, v2.2d, v4.2s
+	saddw2	v3.2d, v3.2d, v4.4s
+	cmhi	v1.2d, v1.2d, v3.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	lsl	x8, x1, #32
-	add	x8, x8, w2, sxtw
-	cmp	x8, x0
-	cset	w0, hi
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	saddw	v2.2d, v2.2d, v4.2s
+	saddw2	v3.2d, v3.2d, v4.4s
+	cmhi	v1.2d, v3.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

@@ -1,38 +1,61 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
+	cmeq	v4.8h, v4.8h, #0
 	mov	w8, #65530                      // =0xfffa
-	csel	w8, w8, w1, eq
-	add	w0, w8, w0
+	dup	v6.4s, w8
+	sshll2	v5.4s, v4.8h, #0
+	sshll	v4.4s, v4.4h, #0
+	bit	v2.16b, v6.16b, v4.16b
+	bit	v3.16b, v6.16b, v5.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
-	csel	w8, wzr, w1, eq
-	add	w0, w8, w0
+	cmeq	v4.8h, v4.8h, #0
+	sshll2	v5.4s, v4.8h, #0
+	sshll	v4.4s, v4.4h, #0
+	bic	v2.16b, v2.16b, v4.16b
+	bic	v3.16b, v3.16b, v5.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
-	cmp	w8, #127
-	csinv	w8, w1, wzr, hs
-	add	w0, w8, w0
+	movi	v5.8h, #127
+	cmhi	v4.8h, v5.8h, v4.8h
+	sshll2	v5.4s, v4.8h, #0
+	sshll	v4.4s, v4.4h, #0
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
-	cmp	w8, #127
-	csinc	w8, w1, wzr, hs
-	add	w0, w8, w0
+	movi	v5.8h, #127
+	cmhi	v4.8h, v5.8h, v4.8h
+	sshll2	v5.4s, v4.8h, #0
+	sshll	v6.4s, v4.4h, #0
+	bic	v2.16b, v2.16b, v6.16b
+	bic	v3.16b, v3.16b, v5.16b
+	ssubw	v2.4s, v2.4s, v4.4h
+	ssubw2	v3.4s, v3.4s, v4.8h
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
-	csel	w8, wzr, w1, eq
-	add	w0, w8, w0
+	cmeq	v4.8h, v4.8h, #0
+	sshll2	v5.4s, v4.8h, #0
+	sshll	v4.4s, v4.4h, #0
+	bic	v2.16b, v2.16b, v4.16b
+	bic	v3.16b, v3.16b, v5.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

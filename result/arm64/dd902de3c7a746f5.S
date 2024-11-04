@@ -1,36 +1,70 @@
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
-	orr	x8, x1, x2, lsl #5
-	mov	w9, #33554432                   // =0x2000000
-	add	x9, x0, x9
-	add	x0, x8, x9
+	mov	w8, #33554432                   // =0x2000000
+	shl	v4.2d, v4.2d, #5
+	shl	v5.2d, v5.2d, #5
+	dup	v6.2d, x8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v0.2d, v0.2d, v6.2d
+	add	v1.2d, v1.2d, v6.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	orr	x8, x1, x2, lsl #32
-	add	x8, x8, x0
-	add	x0, x8, #8
+	mov	w8, #8                          // =0x8
+	shl	v4.2d, v4.2d, #32
+	shl	v5.2d, v5.2d, #32
+	dup	v6.2d, x8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v0.2d, v0.2d, v6.2d
+	add	v1.2d, v1.2d, v6.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000070:                   // @func0000000000000070
 // %bb.0:                               // %entry
-	orr	x8, x1, x2, lsl #8
-	add	x8, x8, x0
-	add	x0, x8, #8
+	mov	w8, #8                          // =0x8
+	shl	v4.2d, v4.2d, #8
+	shl	v5.2d, v5.2d, #8
+	dup	v6.2d, x8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v0.2d, v0.2d, v6.2d
+	add	v1.2d, v1.2d, v6.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	orr	x8, x1, x2, lsl #8
-	add	x8, x8, x0
-	sub	x0, x8, #24
+	mov	x8, #-24                        // =0xffffffffffffffe8
+	shl	v4.2d, v4.2d, #8
+	shl	v5.2d, v5.2d, #8
+	dup	v6.2d, x8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v0.2d, v0.2d, v6.2d
+	add	v1.2d, v1.2d, v6.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000072:                   // @func0000000000000072
 // %bb.0:                               // %entry
-	orr	x8, x1, x2, lsl #8
-	add	x8, x8, x0
-	add	x0, x8, #1
+	mov	w8, #1                          // =0x1
+	shl	v4.2d, v4.2d, #8
+	shl	v5.2d, v5.2d, #8
+	dup	v6.2d, x8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v0.2d, v0.2d, v6.2d
+	add	v1.2d, v1.2d, v6.2d
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function

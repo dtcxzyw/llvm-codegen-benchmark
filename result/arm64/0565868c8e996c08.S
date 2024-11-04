@@ -1,24 +1,36 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	add	w8, w2, #16
-	sxtw	x9, w8
-	cmp	x9, x1
-	csel	w0, w0, w8, gt
+	movi	v4.4s, #16
+	add	v3.4s, v3.4s, v4.4s
+	sshll	v4.2d, v3.2s, #0
+	sshll2	v5.2d, v3.4s, #0
+	cmgt	v2.2d, v5.2d, v2.2d
+	cmgt	v1.2d, v4.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	bif	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	add	w8, w2, #1
-	sxtw	x8, w8
-	cmp	x8, x1
-	csinc	w0, w0, w2, hi
+	movi	v4.4s, #1
+	add	v3.4s, v3.4s, v4.4s
+	sshll	v4.2d, v3.2s, #0
+	sshll2	v5.2d, v3.4s, #0
+	cmhi	v2.2d, v5.2d, v2.2d
+	cmhi	v1.2d, v4.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	bif	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	w8, w2, #16
-	sxtw	x9, w8
-	cmp	x9, x1
-	csel	w0, w0, w8, hi
+	movi	v4.4s, #16
+	add	v3.4s, v3.4s, v4.4s
+	sshll	v4.2d, v3.2s, #0
+	sshll2	v5.2d, v3.4s, #0
+	cmhi	v2.2d, v5.2d, v2.2d
+	cmhi	v1.2d, v4.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	bif	v0.16b, v3.16b, v1.16b
 	ret
                                         // -- End function

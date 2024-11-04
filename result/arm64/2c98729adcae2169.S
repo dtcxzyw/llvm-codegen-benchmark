@@ -1,16 +1,46 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	mvn	x8, x1
-	rbit	x8, x8
-	clz	x8, x8
-	add	w0, w8, w0
+	mov	w8, #1                          // =0x1
+	mvn	v3.16b, v2.16b
+	mvn	v5.16b, v1.16b
+	dup	v4.2d, x8
+	sub	v3.2d, v3.2d, v4.2d
+	sub	v4.2d, v5.2d, v4.2d
+	movi	v5.2d, #0000000000000000
+	and	v2.16b, v2.16b, v3.16b
+	and	v1.16b, v1.16b, v4.16b
+	movi	v3.16b, #1
+	movi	v4.2d, #0000000000000000
+	cnt	v2.16b, v2.16b
+	cnt	v1.16b, v1.16b
+	udot	v5.4s, v3.16b, v2.16b
+	udot	v4.4s, v3.16b, v1.16b
+	uaddlp	v1.2d, v5.4s
+	uaddlp	v2.2d, v4.4s
+	uzp1	v1.4s, v2.4s, v1.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mvn	x8, x1
-	rbit	x8, x8
-	clz	x8, x8
-	add	w0, w8, w0
+	mov	w8, #1                          // =0x1
+	mvn	v3.16b, v2.16b
+	mvn	v5.16b, v1.16b
+	dup	v4.2d, x8
+	sub	v3.2d, v3.2d, v4.2d
+	sub	v4.2d, v5.2d, v4.2d
+	movi	v5.2d, #0000000000000000
+	and	v2.16b, v2.16b, v3.16b
+	and	v1.16b, v1.16b, v4.16b
+	movi	v3.16b, #1
+	movi	v4.2d, #0000000000000000
+	cnt	v2.16b, v2.16b
+	cnt	v1.16b, v1.16b
+	udot	v5.4s, v3.16b, v2.16b
+	udot	v4.4s, v3.16b, v1.16b
+	uaddlp	v1.2d, v5.4s
+	uaddlp	v2.2d, v4.4s
+	uzp1	v1.4s, v2.4s, v1.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

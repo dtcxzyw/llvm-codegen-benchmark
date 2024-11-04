@@ -1,34 +1,66 @@
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
+	movi	v4.2d, #0xffffffffffffffff
 	mov	w8, #34953                      // =0x8889
-	sub	w9, w1, #1
 	movk	w8, #34952, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #34
-	and	w8, w8, #0x3ffffffe
-	add	w0, w8, w0
+	dup	v5.4s, w8
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	umull2	v4.2d, v2.4s, v5.4s
+	umull	v2.2d, v2.2s, v5.2s
+	umull2	v6.2d, v3.4s, v5.4s
+	umull	v3.2d, v3.2s, v5.2s
+	uzp2	v2.4s, v2.4s, v4.4s
+	uzp2	v3.4s, v3.4s, v6.4s
+	ushr	v2.4s, v2.4s, #2
+	ushr	v3.4s, v3.4s, #2
+	bic	v2.4s, #1
+	bic	v3.4s, #1
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
+	movi	v4.4s, #2
 	mov	w8, #43691                      // =0xaaab
-	add	w9, w1, #2
 	movk	w8, #43690, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	lsr	w8, w8, #1
-	add	w0, w0, w8, lsl #2
+	dup	v5.4s, w8
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	umull2	v4.2d, v2.4s, v5.4s
+	umull	v2.2d, v2.2s, v5.2s
+	umull2	v6.2d, v3.4s, v5.4s
+	umull	v3.2d, v3.2s, v5.2s
+	uzp2	v2.4s, v2.4s, v4.4s
+	uzp2	v3.4s, v3.4s, v6.4s
+	add	v2.4s, v2.4s, v2.4s
+	add	v3.4s, v3.4s, v3.4s
+	bic	v2.4s, #2
+	bic	v3.4s, #2
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #5119                       // =0x13ff
-	mov	w9, #52429                      // =0xcccd
-	add	w8, w1, w8
-	movk	w9, #52428, lsl #16
-	umull	x8, w8, w9
-	lsr	x8, x8, #40
-	and	w8, w8, #0xfffff0
-	add	w0, w8, w0
+	movi	v4.4s, #19, msl #8
+	mov	w8, #52429                      // =0xcccd
+	movk	w8, #52428, lsl #16
+	dup	v5.4s, w8
+	add	v2.4s, v2.4s, v4.4s
+	add	v3.4s, v3.4s, v4.4s
+	umull2	v4.2d, v2.4s, v5.4s
+	umull	v2.2d, v2.2s, v5.2s
+	umull2	v6.2d, v3.4s, v5.4s
+	umull	v3.2d, v3.2s, v5.2s
+	uzp2	v2.4s, v2.4s, v4.4s
+	uzp2	v3.4s, v3.4s, v6.4s
+	ushr	v2.4s, v2.4s, #8
+	ushr	v3.4s, v3.4s, #8
+	bic	v2.4s, #15
+	bic	v3.4s, #15
+	add	v0.4s, v2.4s, v0.4s
+	add	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

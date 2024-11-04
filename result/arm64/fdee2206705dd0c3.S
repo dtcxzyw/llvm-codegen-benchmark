@@ -1,19 +1,34 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mov	w8, #2097152                    // =0x200000
-	and	w9, w1, #0x300000
-	cmp	w0, #256, lsl #12               // =1048576
-	ccmp	w9, w8, #0, eq
-	csel	w0, wzr, w0, eq
+	movi	v4.4s, #48, lsl #16
+	movi	v5.4s, #32, lsl #16
+	movi	v6.4s, #16, lsl #16
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v4.4s, v0.4s, v6.4s
+	cmeq	v2.4s, v2.4s, v5.4s
+	cmeq	v3.4s, v3.4s, v5.4s
+	cmeq	v5.4s, v1.4s, v6.4s
+	and	v3.16b, v3.16b, v5.16b
+	and	v2.16b, v2.16b, v4.16b
+	bic	v0.16b, v0.16b, v2.16b
+	bic	v1.16b, v1.16b, v3.16b
 	ret
                                         // -- End function
 func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
-	cmp	w0, #1
-	and	w9, w1, #0x20
-	mov	w8, #8                          // =0x8
-	cset	w10, eq
-	tst	w10, w9, lsr #5
-	csel	w0, w8, w0, ne
+	movi	v4.4s, #32
+	movi	v5.4s, #1
+	movi	v6.4s, #8
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	cmeq	v4.4s, v0.4s, v5.4s
+	cmeq	v5.4s, v1.4s, v5.4s
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v3.4s, v3.4s, #0
+	bic	v3.16b, v5.16b, v3.16b
+	bic	v2.16b, v4.16b, v2.16b
+	bit	v0.16b, v6.16b, v2.16b
+	bit	v1.16b, v6.16b, v3.16b
 	ret
                                         // -- End function

@@ -1,32 +1,48 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #8, #8
-	lsl	w9, w8, #6
-	sub	w8, w9, w8
-	add	w0, w8, #126
+	movi	v4.8b, #63
+	movi	v2.8h, #126
+	movi	v3.8h, #126
+	shrn	v1.8b, v1.8h, #8
+	shrn	v0.8b, v0.8h, #8
+	umlal	v3.8h, v0.8b, v4.8b
+	umlal	v2.8h, v1.8b, v4.8b
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	ubfx	w8, w0, #8, #8
-	mov	w9, #223                        // =0xdf
-	mov	w10, #6144                      // =0x1800
-	madd	w0, w8, w9, w10
+	movi	v4.8b, #223
+	movi	v2.8h, #24, lsl #8
+	movi	v3.8h, #24, lsl #8
+	shrn	v1.8b, v1.8h, #8
+	shrn	v0.8b, v0.8h, #8
+	umlal	v3.8h, v0.8b, v4.8b
+	umlal	v2.8h, v1.8b, v4.8b
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	ubfx	w9, w0, #8, #8
-	mov	w8, #32640                      // =0x7f80
-	lsl	w10, w9, #7
-	sub	w9, w10, w9
-	add	w0, w9, w8
+	mvni	v2.8h, #127
+	movi	v3.8b, #127
+	shrn	v1.8b, v1.8h, #8
+	shrn	v4.8b, v0.8h, #8
+	fneg	v2.8h, v2.8h
+	mov	v0.16b, v2.16b
+	umlal	v2.8h, v1.8b, v3.8b
+	umlal	v0.8h, v4.8b, v3.8b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #1024                       // =0x400
-	and	w9, w0, #0xffffff00
-	sub	w0, w8, w9
+	movi	v2.8h, #4, lsl #8
+	bic	v1.8h, #255
+	bic	v0.8h, #255
+	sub	v0.8h, v2.8h, v0.8h
+	sub	v1.8h, v2.8h, v1.8h
 	ret
                                         // -- End function

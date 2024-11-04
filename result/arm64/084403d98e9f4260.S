@@ -1,21 +1,30 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	lsr	w0, w8, w0
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	neg	v0.4s, v0.4s
+	neg	v1.4s, v1.4s
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	lsr	w0, w8, w0
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	neg	v0.4s, v0.4s
+	neg	v1.4s, v1.4s
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	cneg	w8, w1, mi
-	lsr	w0, w8, w0
+	abs	v3.4s, v3.4s
+	abs	v2.4s, v2.4s
+	neg	v0.4s, v0.4s
+	neg	v1.4s, v1.4s
+	ushl	v0.4s, v2.4s, v0.4s
+	ushl	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

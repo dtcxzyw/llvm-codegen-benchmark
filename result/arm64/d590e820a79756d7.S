@@ -1,10 +1,29 @@
-.LCPI0_0:
-	.xword	0xbf1a36e2eb1c432d              // double -1.0E-4
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fdiv	d0, d1, d0
-	adrp	x8, .LCPI0_0
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fmul	d0, d0, d1
+	ldp	q16, q17, [sp, #96]
+	mov	x8, #17197                      // =0x432d
+	movk	x8, #60188, lsl #16
+	movk	x8, #14050, lsl #32
+	fdiv	v7.2d, v17.2d, v7.2d
+	movk	x8, #48922, lsl #48
+	fdiv	v6.2d, v16.2d, v6.2d
+	ldp	q16, q17, [sp, #64]
+	fdiv	v4.2d, v16.2d, v4.2d
+	ldp	q16, q18, [sp, #32]
+	fdiv	v3.2d, v18.2d, v3.2d
+	fdiv	v2.2d, v16.2d, v2.2d
+	ldp	q16, q18, [sp]
+	fdiv	v1.2d, v18.2d, v1.2d
+	fdiv	v0.2d, v16.2d, v0.2d
+	dup	v16.2d, x8
+	fmul	v1.2d, v1.2d, v16.2d
+	fmul	v2.2d, v2.2d, v16.2d
+	fmul	v3.2d, v3.2d, v16.2d
+	fmul	v4.2d, v4.2d, v16.2d
+	fmul	v6.2d, v6.2d, v16.2d
+	fmul	v7.2d, v7.2d, v16.2d
+	fdiv	v5.2d, v17.2d, v5.2d
+	fmul	v0.2d, v0.2d, v16.2d
+	fmul	v5.2d, v5.2d, v16.2d
 	ret
                                         // -- End function

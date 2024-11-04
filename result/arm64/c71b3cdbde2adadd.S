@@ -1,18 +1,20 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
+	uzp1	v1.4s, v1.4s, v2.4s
 	mov	w8, #4058                       // =0xfda
-	ucvtf	s1, w0
 	movk	w8, #16585, lsl #16
-	fmov	s2, w8
-	fmul	s1, s1, s2
-	fdiv	s0, s1, s0
+	dup	v2.4s, w8
+	ucvtf	v1.4s, v1.4s
+	fmul	v1.4s, v1.4s, v2.4s
+	fdiv	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ucvtf	s1, w0
-	fmov	s2, #4.00000000
-	fmul	s1, s1, s2
-	fdiv	s0, s1, s0
+	uzp1	v1.4s, v1.4s, v2.4s
+	fmov	v3.4s, #4.00000000
+	ucvtf	v1.4s, v1.4s
+	fmul	v1.4s, v1.4s, v3.4s
+	fdiv	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

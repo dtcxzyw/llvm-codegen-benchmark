@@ -1,8 +1,12 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvn	x8, x1
-	add	x8, x8, x0
-	add	x8, x8, x8, lsr #63
-	asr	x0, x8, #1
+	mvn	v2.16b, v2.16b
+	mvn	v3.16b, v3.16b
+	add	v1.2d, v3.2d, v1.2d
+	add	v0.2d, v2.2d, v0.2d
+	usra	v0.2d, v0.2d, #63
+	usra	v1.2d, v1.2d, #63
+	sshr	v0.2d, v0.2d, #1
+	sshr	v1.2d, v1.2d, #1
 	ret
                                         // -- End function

@@ -1,26 +1,43 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #1536                       // =0x600
-	bics	wzr, w8, w0
-	cset	w0, eq
+	movi	v2.8h, #6, lsl #8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.8h, v1.8h, v2.8h
+	cmeq	v0.8h, v0.8h, v2.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #384                        // =0x180
-	bics	wzr, w8, w0
-	cset	w0, ne
+	dup	v2.8h, w8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.8h, v1.8h, v2.8h
+	cmeq	v0.8h, v0.8h, v2.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ubfx	w0, w0, #2, #1
+	movi	v2.8h, #4
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.8h, v1.8h, #0
+	cmeq	v0.8h, v0.8h, #0
+	uzp1	v0.16b, v0.16b, v1.16b
+	mvn	v0.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
-	bics	wzr, w8, w0
-	cset	w0, eq
+	movi	v2.8h, #24
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v1.8h, v1.8h, v2.8h
+	cmeq	v0.8h, v0.8h, v2.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

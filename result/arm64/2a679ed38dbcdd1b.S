@@ -1,34 +1,56 @@
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #8
-	add	w8, w8, w0
-	lsl	w0, w8, #1
+	shl	v5.4s, v5.4s, #8
+	shl	v4.4s, v4.4s, #8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v0.4s, v0.4s, v0.4s
+	add	v1.4s, v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000070:                   // @func0000000000000070
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #8
-	add	w8, w8, w0
-	lsl	w0, w8, #1
+	shl	v5.4s, v5.4s, #8
+	shl	v4.4s, v4.4s, #8
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	add	v0.4s, v0.4s, v0.4s
+	add	v1.4s, v1.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #1
-	add	w8, w8, w0
-	lsl	w0, w8, #8
+	add	v5.4s, v5.4s, v5.4s
+	add	v4.4s, v4.4s, v4.4s
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	shl	v0.4s, v0.4s, #8
+	shl	v1.4s, v1.4s, #8
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	orr	w8, w1, w2, lsl #16
-	add	w8, w8, w0
-	lsl	w0, w8, #8
+	shl	v5.4s, v5.4s, #16
+	shl	v4.4s, v4.4s, #16
+	orr	v2.16b, v4.16b, v2.16b
+	orr	v3.16b, v5.16b, v3.16b
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	shl	v0.4s, v0.4s, #8
+	shl	v1.4s, v1.4s, #8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w1, w0
-	lsl	w0, w8, #12
+	add	v1.4s, v3.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	shl	v1.4s, v1.4s, #12
+	shl	v0.4s, v0.4s, #12
 	ret
                                         // -- End function

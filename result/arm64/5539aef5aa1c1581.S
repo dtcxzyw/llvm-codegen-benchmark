@@ -1,8 +1,15 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	tst	w2, w1
-	mov	w8, #4096                       // =0x1000
-	ccmp	w2, w8, #0, eq
-	csel	w0, w0, w1, lt
+	movi	v7.4s, #16, lsl #8
+	and	v6.16b, v4.16b, v2.16b
+	and	v16.16b, v5.16b, v3.16b
+	cmeq	v6.4s, v6.4s, #0
+	cmeq	v16.4s, v16.4s, #0
+	cmgt	v4.4s, v7.4s, v4.4s
+	cmgt	v5.4s, v7.4s, v5.4s
+	and	v5.16b, v5.16b, v16.16b
+	and	v4.16b, v4.16b, v6.16b
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

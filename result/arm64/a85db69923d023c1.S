@@ -1,6 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	csel	w0, w0, w1, lt
+	uzp1	v1.4s, v1.4s, v2.4s
+	smin	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

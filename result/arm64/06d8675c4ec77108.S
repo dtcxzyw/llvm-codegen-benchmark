@@ -1,20 +1,35 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvn	w8, w0
-	add	w8, w8, w1
-	and	x0, x8, #0xff
+	mvn	v1.16b, v1.16b
+	mvn	v0.16b, v0.16b
+	movi	v4.2d, #0x000000000000ff
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	w8, w1, w0
-	and	x0, x8, #0x3f
+	mov	w8, #63                         // =0x3f
+	sub	v1.2d, v3.2d, v1.2d
+	sub	v0.2d, v2.2d, v0.2d
+	dup	v2.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	and	v1.16b, v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	x8, x1, x0
-	and	x8, x8, #0xfffffffffffffff0
-	add	x0, x8, #640
+	mov	x8, #-16                        // =0xfffffffffffffff0
+	sub	v0.2d, v2.2d, v0.2d
+	sub	v1.2d, v3.2d, v1.2d
+	dup	v2.2d, x8
+	mov	w8, #640                        // =0x280
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

@@ -1,64 +1,104 @@
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	sub	w9, w0, #1
-	cmp	w9, w8
-	cset	w0, gt
+	movi	v4.2d, #0xffffffffffffffff
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	add	w9, w0, #1
-	cmp	w9, w8
-	cset	w0, eq
+	movi	v4.4s, #1
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmeq	v1.4s, v1.4s, v3.4s
+	cmeq	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	sub	w9, w0, #2
-	cmp	w9, w8
-	cset	w0, lt
+	mvni	v4.4s, #1
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmgt	v1.4s, v3.4s, v1.4s
+	cmgt	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000036:                   // @func0000000000000036
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	add	w9, w0, #1
-	cmp	w9, w8
-	cset	w0, lt
+	movi	v4.4s, #1
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmgt	v1.4s, v3.4s, v1.4s
+	cmgt	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	add	w9, w0, #1
-	cmp	w9, w8
-	cset	w0, eq
+	movi	v4.4s, #1
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmeq	v1.4s, v1.4s, v3.4s
+	cmeq	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000003a:                   // @func000000000000003a
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	add	w9, w0, #2
-	cmp	w9, w8
-	cset	w0, gt
+	movi	v4.4s, #2
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	add	w9, w0, #1
-	cmp	w9, w8
-	cset	w0, gt
+	movi	v4.4s, #1
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	fcvtzs	w8, s0
-	sub	w9, w0, #1
-	cmp	w9, w8
-	cset	w0, hi
+	movi	v4.2d, #0xffffffffffffffff
+	fcvtzs	v2.4s, v2.4s
+	fcvtzs	v3.4s, v3.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
+	cmhi	v1.4s, v1.4s, v3.4s
+	cmhi	v0.4s, v0.4s, v2.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

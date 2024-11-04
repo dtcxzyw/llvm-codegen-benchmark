@@ -1,42 +1,56 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, lo
+	cmhi	v1.4s, v2.4s, v1.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, hi
+	cmhi	v1.4s, v1.4s, v2.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, eq
+	cmeq	v1.4s, v1.4s, v2.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, eq
+	cmeq	v1.4s, v1.4s, v2.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, lt
+	cmgt	v1.4s, v2.4s, v1.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, gt
+	cmgt	v1.4s, v1.4s, v2.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	csel	w0, w0, wzr, hi
+	cmhi	v1.4s, v1.4s, v2.4s
+	and	v0.16b, v0.16b, v1.16b
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

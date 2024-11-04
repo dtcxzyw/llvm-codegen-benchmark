@@ -1,45 +1,76 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	cmp	w8, w1
-	cset	w8, le
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	fcvtzs	v4.2d, v4.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v6.2d, v6.2d
+	fcvtzs	v5.2d, v5.2d
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v4.4s, v5.4s, v6.4s
+	cmge	v1.4s, v1.4s, v3.4s
+	cmge	v2.4s, v2.4s, v4.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	cmp	w8, w1
-	cset	w8, gt
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	fcvtzs	v4.2d, v4.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v6.2d, v6.2d
+	fcvtzs	v5.2d, v5.2d
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v4.4s, v5.4s, v6.4s
+	cmgt	v1.4s, v3.4s, v1.4s
+	cmgt	v2.4s, v4.4s, v2.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	cmp	w8, w1
-	cset	w8, ge
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	fcvtzs	v4.2d, v4.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v6.2d, v6.2d
+	fcvtzs	v5.2d, v5.2d
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v4.4s, v5.4s, v6.4s
+	cmge	v1.4s, v3.4s, v1.4s
+	cmge	v2.4s, v4.4s, v2.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	cmp	w8, w1
-	cset	w8, lt
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	fcvtzs	v4.2d, v4.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v6.2d, v6.2d
+	fcvtzs	v5.2d, v5.2d
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v4.4s, v5.4s, v6.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v2.4s, v2.4s, v4.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	cmp	w8, w1
-	cset	w8, ne
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	fcvtzs	v4.2d, v4.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v6.2d, v6.2d
+	fcvtzs	v5.2d, v5.2d
+	uzp1	v3.4s, v3.4s, v4.4s
+	uzp1	v4.4s, v5.4s, v6.4s
+	cmeq	v1.4s, v3.4s, v1.4s
+	cmeq	v2.4s, v4.4s, v2.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	mvn	v1.16b, v1.16b
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

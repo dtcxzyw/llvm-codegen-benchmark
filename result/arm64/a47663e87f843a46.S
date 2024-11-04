@@ -1,6 +1,8 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	bfi	w1, w0, #4, #28
-	and	w0, w1, #0xff
+	sli	v1.8b, v0.8b, #4
+	ushll	v0.8h, v1.8b, #0
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

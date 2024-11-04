@@ -1,8 +1,15 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	movi	d0, #0000000000000000
-	fmov	d1, #1.00000000
-	cmp	x0, #0
-	fcsel	d0, d1, d0, ne
+	cmtst	v1.2d, v1.2d, v1.2d
+	cmtst	v0.2d, v0.2d, v0.2d
+	movi	v2.2s, #1
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	and	v0.8b, v0.8b, v2.8b
+	and	v1.8b, v1.8b, v2.8b
+	ushll	v0.2d, v0.2s, #0
+	ushll	v1.2d, v1.2s, #0
+	ucvtf	v0.2d, v0.2d
+	ucvtf	v1.2d, v1.2d
 	ret
                                         // -- End function

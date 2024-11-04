@@ -1,40 +1,68 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, w2
-	subs	x8, x8, x1
-	csel	x8, xzr, x8, lo
-	lsr	x8, x8, x0
-	cmp	x8, #0
-	cset	w0, eq
+	ushll	v5.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	neg	v0.2d, v0.2d
+	neg	v1.2d, v1.2d
+	uqsub	v3.2d, v4.2d, v3.2d
+	uqsub	v2.2d, v5.2d, v2.2d
+	ushl	v0.2d, v2.2d, v0.2d
+	ushl	v1.2d, v3.2d, v1.2d
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, w2
-	subs	x8, x8, x1
-	csel	x8, xzr, x8, lo
-	lsr	x8, x8, x0
-	cmp	x8, #4
-	cset	w0, lo
+	ushll	v5.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	mov	w8, #4                          // =0x4
+	neg	v0.2d, v0.2d
+	neg	v1.2d, v1.2d
+	uqsub	v3.2d, v4.2d, v3.2d
+	uqsub	v2.2d, v5.2d, v2.2d
+	ushl	v0.2d, v2.2d, v0.2d
+	ushl	v1.2d, v3.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	mov	w8, w2
-	subs	x8, x8, x1
-	csel	x8, xzr, x8, lo
-	lsr	x8, x8, x0
-	cmp	x8, #0
-	cset	w0, eq
+	ushll	v5.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	neg	v0.2d, v0.2d
+	neg	v1.2d, v1.2d
+	uqsub	v3.2d, v4.2d, v3.2d
+	uqsub	v2.2d, v5.2d, v2.2d
+	ushl	v0.2d, v2.2d, v0.2d
+	ushl	v1.2d, v3.2d, v1.2d
+	cmeq	v1.2d, v1.2d, #0
+	cmeq	v0.2d, v0.2d, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	mov	w8, w2
-	subs	x8, x8, x1
-	csel	x8, xzr, x8, lo
-	lsr	x8, x8, x0
-	cmp	x8, #64
-	cset	w0, lo
+	ushll	v5.2d, v4.2s, #0
+	ushll2	v4.2d, v4.4s, #0
+	mov	w8, #64                         // =0x40
+	neg	v0.2d, v0.2d
+	neg	v1.2d, v1.2d
+	uqsub	v3.2d, v4.2d, v3.2d
+	uqsub	v2.2d, v5.2d, v2.2d
+	ushl	v0.2d, v2.2d, v0.2d
+	ushl	v1.2d, v3.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

@@ -1,10 +1,14 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sbfx	w0, w0, #14, #2
+	sshr	v0.8h, v0.8h, #14
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sbfx	w0, w0, #1, #15
+	sshr	v0.8h, v0.8h, #1
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

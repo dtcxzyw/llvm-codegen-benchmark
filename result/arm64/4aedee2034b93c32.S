@@ -1,11 +1,40 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	and	x8, x2, #0x1
-	mov	w9, #2147483647                 // =0x7fffffff
-	lsl	w8, w1, w8
-	udiv	w8, w9, w8
-	cmp	w8, w0
-	cset	w0, lt
+	movi	v5.8b, #1
+	mov	w8, #2147483647                 // =0x7fffffff
+	and	v4.8b, v4.8b, v5.8b
+	ushll	v4.8h, v4.8b, #0
+	ushll	v5.4s, v4.4h, #0
+	ushl	v2.4s, v2.4s, v5.4s
+	fmov	w9, s2
+	mov	w10, v2.s[1]
+	mov	w11, v2.s[2]
+	mov	w12, v2.s[3]
+	ushll2	v2.4s, v4.8h, #0
+	udiv	w9, w8, w9
+	ushl	v2.4s, v3.4s, v2.4s
+	fmov	w14, s2
+	mov	w13, v2.s[1]
+	mov	w15, v2.s[2]
+	mov	w16, v2.s[3]
+	udiv	w14, w8, w14
+	fmov	s2, w9
+	udiv	w10, w8, w10
+	fmov	s3, w14
+	udiv	w13, w8, w13
+	mov	v2.s[1], w10
+	udiv	w11, w8, w11
+	mov	v3.s[1], w13
+	udiv	w15, w8, w15
+	mov	v2.s[2], w11
+	udiv	w12, w8, w12
+	mov	v3.s[2], w15
+	udiv	w8, w8, w16
+	mov	v2.s[3], w12
+	cmgt	v0.4s, v0.4s, v2.4s
+	mov	v3.s[3], w8
+	cmgt	v1.4s, v1.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

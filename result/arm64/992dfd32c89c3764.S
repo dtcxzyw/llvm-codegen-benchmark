@@ -1,16 +1,16 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	cmp	w0, #0
-	cneg	w8, w0, mi
-	cmp	w8, w1
-	cset	w0, lt
+	uzp1	v1.4s, v1.4s, v2.4s
+	abs	v0.4s, v0.4s
+	cmgt	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmp	w0, #0
-	cneg	w8, w0, mi
-	cmp	w8, w1
-	cset	w0, lt
+	uzp1	v1.4s, v1.4s, v2.4s
+	abs	v0.4s, v0.4s
+	cmgt	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

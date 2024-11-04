@@ -1,34 +1,65 @@
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	orr	w8, w8, w1, lsl #8
-	mul	w0, w8, w0
+	ushll	v4.8h, v4.8b, #0
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	orr	w8, w8, w1, lsl #8
-	mul	w0, w8, w0
+	ushll	v4.8h, v4.8b, #0
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	orr	w8, w8, w1, lsl #8
-	mul	w0, w8, w0
+	ushll	v4.8h, v4.8b, #0
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	bfi	w2, w1, #8, #24
-	mul	w0, w2, w0
+	ushll	v4.8h, v4.8b, #0
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	orr	w8, w8, w1, lsl #8
-	mul	w0, w8, w0
+	ushll	v4.8h, v4.8b, #0
+	shl	v3.4s, v3.4s, #8
+	shl	v2.4s, v2.4s, #8
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	orr	v2.16b, v2.16b, v4.16b
+	orr	v3.16b, v3.16b, v5.16b
+	mul	v1.4s, v3.4s, v1.4s
+	mul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

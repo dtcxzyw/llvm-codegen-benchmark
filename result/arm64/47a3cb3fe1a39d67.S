@@ -1,40 +1,56 @@
 func00000000000001ff:                   // @func00000000000001ff
 // %bb.0:                               // %entry
 	mov	w8, #3600                       // =0xe10
-	mov	w9, #60                         // =0x3c
-	madd	w8, w2, w8, w0
-	madd	w0, w1, w9, w8
+	dup	v3.4s, w8
+	mla	v0.4s, v2.4s, v3.4s
+	movi	v2.4s, #60
+	mla	v0.4s, v1.4s, v2.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func00000000000001e0:                   // @func00000000000001e0
 // %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
-	add	w9, w1, w1, lsl #1
-	madd	w8, w2, w8, w0
-	add	w0, w8, w9
+	movi	v3.4s, #10
+	mla	v0.4s, v2.4s, v3.4s
+	movi	v2.4s, #3
+	mla	v0.4s, v1.4s, v2.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	mov	w8, #10000                      // =0x2710
-	mov	w9, #100                        // =0x64
-	madd	w8, w2, w8, w0
-	madd	w0, w1, w9, w8
+	dup	v3.4s, w8
+	mla	v0.4s, v2.4s, v3.4s
+	movi	v2.4s, #100
+	mla	v0.4s, v1.4s, v2.4s
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
 	mov	w8, #-1600                      // =0xfffff9c0
-	mov	w9, #-40                        // =0xffffffd8
-	madd	w8, w2, w8, w1
-	madd	w0, w0, w9, w8
+	dup	v3.4s, w8
+	mla	v1.4s, v2.4s, v3.4s
+	mvni	v2.4s, #39
+	mla	v1.4s, v0.4s, v2.4s
+	ushll2	v2.2d, v1.4s, #0
+	ushll	v0.2d, v1.2s, #0
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #-10000                     // =0xffffd8f0
-	mov	w9, #-100                       // =0xffffff9c
-	madd	w8, w2, w8, w1
-	madd	w0, w0, w9, w8
+	dup	v3.4s, w8
+	mla	v1.4s, v2.4s, v3.4s
+	mvni	v2.4s, #99
+	mla	v1.4s, v0.4s, v2.4s
+	ushll2	v2.2d, v1.4s, #0
+	ushll	v0.2d, v1.2s, #0
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function

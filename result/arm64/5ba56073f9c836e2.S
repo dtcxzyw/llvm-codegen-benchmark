@@ -1,24 +1,40 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	lsl	x8, x0, #8
-	sub	x0, x8, x1, asr #3
+	sshr	v3.2d, v3.2d, #3
+	sshr	v2.2d, v2.2d, #3
+	shl	v1.2d, v1.2d, #8
+	shl	v0.2d, v0.2d, #8
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	lsl	x8, x0, #3
-	sub	x0, x8, x1, asr #29
+	sshr	v3.2d, v3.2d, #29
+	sshr	v2.2d, v2.2d, #29
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	lsl	x8, x0, #1
-	sub	x0, x8, x1, asr #2
+	sshr	v3.2d, v3.2d, #2
+	sshr	v2.2d, v2.2d, #2
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	lsl	x8, x0, #2
-	sub	x0, x8, x1, asr #2
+	sshr	v3.2d, v3.2d, #2
+	sshr	v2.2d, v2.2d, #2
+	shl	v1.2d, v1.2d, #2
+	shl	v0.2d, v0.2d, #2
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function

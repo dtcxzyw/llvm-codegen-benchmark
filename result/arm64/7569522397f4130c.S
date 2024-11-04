@@ -1,18 +1,21 @@
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w0, w0, w8, lsr #1
+	uzp1	v2.4s, v2.4s, v3.4s
+	add	v1.4s, v2.4s, v1.4s
+	usra	v0.4s, v1.4s, #1
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w0, w0, w8, lsr #31
+	uzp1	v2.4s, v2.4s, v3.4s
+	add	v1.4s, v2.4s, v1.4s
+	usra	v0.4s, v1.4s, #31
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w0, w0, w8, lsr #8
+	uzp1	v2.4s, v2.4s, v3.4s
+	add	v1.4s, v2.4s, v1.4s
+	usra	v0.4s, v1.4s, #8
 	ret
                                         // -- End function

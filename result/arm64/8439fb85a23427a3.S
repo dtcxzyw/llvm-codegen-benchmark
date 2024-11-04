@@ -1,9 +1,14 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	lsl	w8, w2, #4
-	cmp	w2, #0
-	orr	w9, w0, w1
-	csel	w8, wzr, w8, lt
-	orr	w0, w9, w8
+	shl	v6.4s, v5.4s, #4
+	cmge	v5.4s, v5.4s, #0
+	shl	v7.4s, v4.4s, #4
+	cmge	v4.4s, v4.4s, #0
+	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
+	and	v5.16b, v5.16b, v6.16b
+	and	v4.16b, v4.16b, v7.16b
+	orr	v1.16b, v1.16b, v5.16b
+	orr	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function

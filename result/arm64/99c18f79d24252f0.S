@@ -1,27 +1,40 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sbfiz	x8, x0, #3, #32
-	add	x0, x8, #40
+	mov	w8, #40                         // =0x28
+	sshll2	v1.2d, v0.4s, #3
+	sshll	v0.2d, v0.2s, #3
+	dup	v2.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sub	w8, w0, #1
-	sbfiz	x8, x8, #1, #32
-	add	x0, x8, #3
+	movi	v1.2d, #0xffffffffffffffff
+	mov	w8, #3                          // =0x3
+	dup	v3.2d, x8
+	add	v0.4s, v0.4s, v1.4s
+	sshll	v2.2d, v0.2s, #1
+	sshll2	v0.2d, v0.4s, #1
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sbfiz	x0, x0, #2, #32
+	sshll2	v1.2d, v0.4s, #2
+	sshll	v0.2d, v0.2s, #2
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	add	w8, w0, #1
-	sbfiz	x8, x8, #2, #32
-	sub	x0, x8, #4
+	movi	v1.4s, #1
+	mov	x8, #-4                         // =0xfffffffffffffffc
+	dup	v3.2d, x8
+	add	v0.4s, v0.4s, v1.4s
+	sshll	v2.2d, v0.2s, #2
+	sshll2	v0.2d, v0.4s, #2
+	add	v1.2d, v0.2d, v3.2d
+	add	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function

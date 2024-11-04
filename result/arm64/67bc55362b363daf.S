@@ -1,16 +1,36 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	and	w9, w0, w1
-	and	w9, w9, #0x1
-	sub	w0, w8, w9
+	and	v4.8b, v4.8b, v5.8b
+	fcvtzs	v1.2d, v1.2d
+	fcvtzs	v0.2d, v0.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	ushll	v4.8h, v4.8b, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.4s, v2.4s, v3.4s
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	shl	v2.4s, v4.4s, #31
+	shl	v3.4s, v5.4s, #31
+	ssra	v1.4s, v3.4s, #31
+	ssra	v0.4s, v2.4s, #31
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvtzs	w8, d0
-	and	w9, w0, w1
-	and	w9, w9, #0x1
-	sub	w0, w8, w9
+	and	v4.8b, v4.8b, v5.8b
+	fcvtzs	v1.2d, v1.2d
+	fcvtzs	v0.2d, v0.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	ushll	v4.8h, v4.8b, #0
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.4s, v2.4s, v3.4s
+	ushll2	v5.4s, v4.8h, #0
+	ushll	v4.4s, v4.4h, #0
+	shl	v2.4s, v4.4s, #31
+	shl	v3.4s, v5.4s, #31
+	ssra	v1.4s, v3.4s, #31
+	ssra	v0.4s, v2.4s, #31
 	ret
                                         // -- End function

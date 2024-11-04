@@ -1,40 +1,52 @@
 func0000000000000065:                   // @func0000000000000065
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	cset	w8, lt
-	sub	w8, w0, w8
-	add	w0, w8, #1
+	cmgt	v3.4s, v5.4s, v3.4s
+	cmgt	v2.4s, v4.4s, v2.4s
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	cset	w8, eq
-	sub	w8, w0, w8
-	add	w0, w8, #1
+	cmeq	v3.4s, v3.4s, v5.4s
+	cmeq	v2.4s, v2.4s, v4.4s
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000008d:                   // @func000000000000008d
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	cset	w8, hi
-	sub	w8, w0, w8
-	add	w0, w8, #1
+	cmhi	v3.4s, v3.4s, v5.4s
+	cmhi	v2.4s, v2.4s, v4.4s
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func00000000000000c8:                   // @func00000000000000c8
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	cset	w8, ne
-	sub	w8, w0, w8
-	add	w0, w8, #1
+	cmeq	v3.4s, v3.4s, v5.4s
+	cmeq	v2.4s, v2.4s, v4.4s
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	mvn	v3.16b, v3.16b
+	mvn	v2.16b, v2.16b
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function
 func00000000000000b0:                   // @func00000000000000b0
 // %bb.0:                               // %entry
-	cmp	w1, w2
-	cset	w8, ge
-	sub	w8, w0, w8
-	add	w0, w8, #1
+	cmge	v3.4s, v3.4s, v5.4s
+	cmge	v2.4s, v2.4s, v4.4s
+	mvn	v0.16b, v0.16b
+	mvn	v1.16b, v1.16b
+	sub	v0.4s, v2.4s, v0.4s
+	sub	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

@@ -1,26 +1,31 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsr	x8, x2, #2
-	add	w9, w1, w0
-	add	w8, w9, w8
-	add	w0, w8, #3
+	movi	v4.4s, #3
+	shrn	v2.2s, v2.2d, #2
+	add	v0.4s, v1.4s, v0.4s
+	shrn2	v2.4s, v3.2d, #2
+	add	v0.4s, v0.4s, v4.4s
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000080:                   // @func0000000000000080
 // %bb.0:                               // %entry
-	mov	w10, #48895                     // =0xbeff
-	lsr	x8, x2, #32
-	add	w9, w1, w0
-	movk	w10, #57005, lsl #16
-	add	w9, w9, w10
-	add	w0, w9, w8
+	uzp2	v2.4s, v2.4s, v3.4s
+	add	v0.4s, v1.4s, v0.4s
+	mov	w8, #48895                      // =0xbeff
+	movk	w8, #57005, lsl #16
+	dup	v1.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func00000000000000d5:                   // @func00000000000000d5
 // %bb.0:                               // %entry
-	lsr	x8, x2, #32
-	add	w9, w1, w0
-	add	w8, w9, w8
-	sub	w0, w8, #1900
+	uzp2	v2.4s, v2.4s, v3.4s
+	add	v0.4s, v1.4s, v0.4s
+	mov	w8, #-1900                      // =0xfffff894
+	dup	v1.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

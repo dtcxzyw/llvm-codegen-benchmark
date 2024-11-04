@@ -1,25 +1,36 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	x9, d0
 	mov	x8, #3458764513820540928        // =0x3000000000000000
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, eq
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	dup	v2.2d, x8
+	cmeq	v1.2d, v1.2d, v2.2d
+	cmeq	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	ubfx	x8, x8, #52, #11
-	cmp	x8, #0
-	cset	w0, eq
+	mov	x8, #4503599627370496           // =0x10000000000000
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v2.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fmov	x8, d0
-	ubfx	x8, x8, #52, #11
-	cmp	x8, #2046
-	cset	w0, hi
+	mov	x8, #9218868437227405311        // =0x7fefffffffffffff
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	dup	v2.2d, x8
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v2.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

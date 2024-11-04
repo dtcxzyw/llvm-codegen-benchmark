@@ -1,35 +1,60 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	mov	w8, #14                         // =0xe
-	and	w9, w0, #0x3f
-	sub	w8, w8, w9
-	mov	w9, #1                          // =0x1
-	lsl	x0, x9, x8
+	movi	v2.4s, #63
+	uzp1	v0.4s, v0.4s, v1.4s
+	mov	w8, #1                          // =0x1
+	movi	v1.4s, #14
+	dup	v3.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	sub	v0.4s, v1.4s, v0.4s
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	ushl	v1.2d, v3.2d, v0.2d
+	ushl	v0.2d, v3.2d, v2.2d
 	ret
                                         // -- End function
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
+	movi	v2.4s, #7, msl #8
+	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #1075                       // =0x433
-	and	w9, w0, #0x7ff
-	sub	w8, w8, w9
-	mov	w9, #1                          // =0x1
-	lsl	x0, x9, x8
+	dup	v1.4s, w8
+	mov	w8, #1                          // =0x1
+	dup	v3.2d, x8
+	and	v0.16b, v0.16b, v2.16b
+	sub	v0.4s, v1.4s, v0.4s
+	ushll	v2.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	ushl	v1.2d, v3.2d, v0.2d
+	ushl	v0.2d, v3.2d, v2.2d
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	and	w9, w0, #0x3f
-	mov	x8, #-1                         // =0xffffffffffffffff
-	neg	w9, w9
-	lsl	x0, x8, x9
+	movi	v2.4s, #63
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #64
+	and	v0.16b, v0.16b, v2.16b
+	movi	v2.2d, #0xffffffffffffffff
+	sub	v0.4s, v1.4s, v0.4s
+	ushll	v3.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	ushl	v1.2d, v2.2d, v0.2d
+	ushl	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function
 func000000000000007d:                   // @func000000000000007d
 // %bb.0:                               // %entry
+	movi	v2.4s, #7, msl #8
+	uzp1	v0.4s, v0.4s, v1.4s
 	mov	w8, #1075                       // =0x433
-	and	w9, w0, #0x7ff
-	sub	w8, w8, w9
-	mov	x9, #-1                         // =0xffffffffffffffff
-	lsl	x0, x9, x8
+	dup	v1.4s, w8
+	and	v0.16b, v0.16b, v2.16b
+	movi	v2.2d, #0xffffffffffffffff
+	sub	v0.4s, v1.4s, v0.4s
+	ushll	v3.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	ushl	v1.2d, v2.2d, v0.2d
+	ushl	v0.2d, v2.2d, v3.2d
 	ret
                                         // -- End function

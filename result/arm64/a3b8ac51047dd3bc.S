@@ -1,18 +1,24 @@
 func0000000000000059:                   // @func0000000000000059
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	sxtw	x8, w2
-	cmp	x8, x1
-	cinc	w8, w0, le
-	sxtw	x0, w8
+	sshll	v4.2d, v3.2s, #0
+	sshll2	v3.2d, v3.4s, #0
+	cmge	v2.2d, v2.2d, v3.2d
+	cmge	v1.2d, v1.2d, v4.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	sub	v0.4s, v0.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000039:                   // @func0000000000000039
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	sxtw	x8, w2
-	cmp	x8, x1
-	cinc	w8, w0, ge
-	sxtw	x0, w8
+	sshll	v4.2d, v3.2s, #0
+	sshll2	v3.2d, v3.4s, #0
+	cmge	v2.2d, v3.2d, v2.2d
+	cmge	v1.2d, v4.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	sub	v0.4s, v0.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

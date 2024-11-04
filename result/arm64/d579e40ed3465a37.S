@@ -1,29 +1,49 @@
-.LCPI0_0:
-	.xword	0x3fc999999999999a              // double 0.20000000000000001
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	mov	w9, #93                         // =0x5d
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fmul	d0, d0, d1
-	fcvtzs	w8, d0
-	bic	w8, w8, w8, asr #31
-	cmp	w8, #93
-	csel	w0, w8, w9, lt
+	mov	x8, #-7378697629483820647       // =0x9999999999999999
+	movk	x8, #39322
+	movk	x8, #16329, lsl #48
+	dup	v4.2d, x8
+	fmul	v1.2d, v1.2d, v4.2d
+	fmul	v2.2d, v2.2d, v4.2d
+	fmul	v3.2d, v3.2d, v4.2d
+	fmul	v0.2d, v0.2d, v4.2d
+	fcvtzs	v1.2d, v1.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	fcvtzs	v0.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.4s, v2.4s, v3.4s
+	movi	v2.2d, #0000000000000000
+	smax	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v0.4s, v2.4s
+	movi	v2.4s, #93
+	smin	v0.4s, v0.4s, v2.4s
+	smin	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3fe6147ae147ae14              // double 0.68999999999999995
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI1_0
-	mov	w9, #30                         // =0x1e
-	ldr	d1, [x8, :lo12:.LCPI1_0]
-	fmul	d0, d0, d1
-	fcvtzs	w8, d0
-	cmp	w8, #1
-	csinc	w8, w8, wzr, gt
-	cmp	w8, #30
-	csel	w0, w8, w9, lt
+	mov	x8, #44564                      // =0xae14
+	movk	x8, #57671, lsl #16
+	movk	x8, #5242, lsl #32
+	movk	x8, #16358, lsl #48
+	dup	v4.2d, x8
+	fmul	v1.2d, v1.2d, v4.2d
+	fmul	v2.2d, v2.2d, v4.2d
+	fmul	v3.2d, v3.2d, v4.2d
+	fmul	v0.2d, v0.2d, v4.2d
+	fcvtzs	v1.2d, v1.2d
+	fcvtzs	v3.2d, v3.2d
+	fcvtzs	v2.2d, v2.2d
+	fcvtzs	v0.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.4s, v2.4s, v3.4s
+	movi	v2.4s, #1
+	smax	v1.4s, v1.4s, v2.4s
+	smax	v0.4s, v0.4s, v2.4s
+	movi	v2.4s, #30
+	smin	v0.4s, v0.4s, v2.4s
+	smin	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

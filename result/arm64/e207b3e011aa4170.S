@@ -1,24 +1,22 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	lsr	x8, x2, #32
-	cmp	w1, w8
-	csel	w8, w1, w8, gt
-	add	w0, w8, w0
+	uzp2	v2.4s, v2.4s, v3.4s
+	smax	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	lsr	x8, x2, #8
-	cmp	w1, w8
-	csel	w8, w1, w8, gt
-	add	w0, w8, w0
+	shrn	v2.2s, v2.2d, #8
+	shrn2	v2.4s, v3.2d, #8
+	smax	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	lsr	x8, x2, #32
-	cmp	w1, w8
-	csel	w8, w1, w8, gt
-	add	w0, w8, w0
+	uzp2	v2.4s, v2.4s, v3.4s
+	smax	v1.4s, v1.4s, v2.4s
+	add	v0.4s, v1.4s, v0.4s
 	ret
                                         // -- End function

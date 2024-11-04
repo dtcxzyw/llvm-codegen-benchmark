@@ -1,50 +1,60 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	s0, w1
-	fcmp	s0, #0.0
-	cset	w8, mi
-	and	w0, w8, w0
+	fcmlt	v2.4s, v2.4s, #0.0
+	fcmlt	v1.4s, v1.4s, #0.0
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	fmov	s0, w1
-	fcmp	s0, s0
-	cset	w8, vc
-	and	w0, w8, w0
+	fcmeq	v2.4s, v2.4s, v2.4s
+	fcmeq	v1.4s, v1.4s, v1.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #1123942400                 // =0x42fe0000
-	fmov	s0, w1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w8, eq
-	and	w0, w8, w0
+	dup	v3.4s, w8
+	fcmeq	v2.4s, v2.4s, v3.4s
+	fcmeq	v1.4s, v1.4s, v3.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fmov	s0, #1.00000000
-	fmov	s1, w1
-	fcmp	s1, s0
-	cset	w8, ls
-	and	w0, w8, w0
+	fmov	v3.4s, #1.00000000
+	fcmge	v2.4s, v3.4s, v2.4s
+	fcmge	v1.4s, v3.4s, v1.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fmov	s0, w1
-	fcmp	s0, #0.0
-	cset	w8, ge
-	and	w0, w8, w0
+	fcmge	v2.4s, v2.4s, #0.0
+	fcmge	v1.4s, v1.4s, #0.0
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	tst	w1, #0x7fffffff
-	cset	w8, ne
-	and	w0, w8, w0
+	bic	v1.4s, #128, lsl #24
+	bic	v2.4s, #128, lsl #24
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	mvn	v1.16b, v1.16b
+	xtn	v1.8b, v1.8h
+	and	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

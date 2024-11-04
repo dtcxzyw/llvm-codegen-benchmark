@@ -1,10 +1,16 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	orr	w9, w0, w1
-	mov	w8, #4                          // =0x4
-	orr	w9, w9, w9, lsr #16
-	add	w10, w9, #1
-	cmp	w10, #4
-	csinc	w0, w8, w9, ls
+	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
+	movi	v4.4s, #1
+	ushr	v2.4s, v1.4s, #16
+	ushr	v3.4s, v0.4s, #16
+	orr	v0.16b, v3.16b, v0.16b
+	orr	v1.16b, v2.16b, v1.16b
+	movi	v2.4s, #4
+	add	v1.4s, v1.4s, v4.4s
+	add	v0.4s, v0.4s, v4.4s
+	umax	v0.4s, v0.4s, v2.4s
+	umax	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

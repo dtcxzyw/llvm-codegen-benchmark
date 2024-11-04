@@ -1,26 +1,59 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	s3, #1.00000000
+	fmov	v16.4s, #1.00000000
+	ldp	q17, q18, [sp]
+	ldp	q19, q20, [sp, #32]
 	mov	w8, #58632                      // =0xe508
-	movi	d4, #0000000000000000
 	movk	w8, #7740, lsl #16
-	fdiv	s2, s3, s2
-	fmov	s3, w8
-	fcmp	s1, s3
-	fcsel	s1, s2, s4, gt
-	fmul	s0, s1, s0
+	fdiv	v17.4s, v16.4s, v17.4s
+	fdiv	v18.4s, v16.4s, v18.4s
+	fdiv	v19.4s, v16.4s, v19.4s
+	fdiv	v16.4s, v16.4s, v20.4s
+	dup	v20.4s, w8
+	fcmgt	v4.4s, v4.4s, v20.4s
+	fcmgt	v5.4s, v5.4s, v20.4s
+	fcmgt	v6.4s, v6.4s, v20.4s
+	fcmgt	v7.4s, v7.4s, v20.4s
+	and	v4.16b, v17.16b, v4.16b
+	and	v6.16b, v19.16b, v6.16b
+	and	v5.16b, v18.16b, v5.16b
+	fmul	v0.4s, v4.4s, v0.4s
+	fmul	v1.4s, v5.4s, v1.4s
+	fmul	v2.4s, v6.4s, v2.4s
+	and	v7.16b, v16.16b, v7.16b
+	fmul	v3.4s, v7.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	fmov	s3, #1.00000000
-	mov	w8, #2139095040                 // =0x7f800000
-	movi	d4, #0000000000000000
-	fdiv	s2, s3, s2
-	fmov	s3, w8
-	fcmp	s1, s3
-	fcsel	s1, s2, s4, mi
-	fcsel	s1, s2, s1, gt
-	fmul	s0, s1, s0
+	fmov	v16.4s, #1.00000000
+	ldp	q17, q18, [sp]
+	ldp	q19, q21, [sp, #32]
+	mvni	v20.4s, #127, msl #16
+	fdiv	v17.4s, v16.4s, v17.4s
+	fneg	v20.4s, v20.4s
+	fcmgt	v22.4s, v5.4s, v20.4s
+	fcmgt	v5.4s, v20.4s, v5.4s
+	fcmgt	v23.4s, v6.4s, v20.4s
+	fcmgt	v6.4s, v20.4s, v6.4s
+	fcmgt	v24.4s, v7.4s, v20.4s
+	fcmgt	v7.4s, v20.4s, v7.4s
+	orr	v5.16b, v5.16b, v22.16b
+	orr	v6.16b, v6.16b, v23.16b
+	orr	v7.16b, v7.16b, v24.16b
+	fdiv	v18.4s, v16.4s, v18.4s
+	fdiv	v19.4s, v16.4s, v19.4s
+	and	v5.16b, v18.16b, v5.16b
+	fmul	v1.4s, v5.4s, v1.4s
+	fdiv	v16.4s, v16.4s, v21.4s
+	fcmgt	v21.4s, v4.4s, v20.4s
+	fcmgt	v4.4s, v20.4s, v4.4s
+	and	v6.16b, v19.16b, v6.16b
+	orr	v4.16b, v4.16b, v21.16b
+	fmul	v2.4s, v6.4s, v2.4s
+	and	v4.16b, v17.16b, v4.16b
+	fmul	v0.4s, v4.4s, v0.4s
+	and	v7.16b, v16.16b, v7.16b
+	fmul	v3.4s, v7.4s, v3.4s
 	ret
                                         // -- End function

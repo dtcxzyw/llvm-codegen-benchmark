@@ -1,8 +1,8 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	sxtw	x8, w1
-	subs	x8, x0, x8, lsl #10
-	csel	x0, xzr, x8, lo
+	sshll	v3.2d, v2.2s, #10
+	sshll2	v2.2d, v2.4s, #10
+	uqsub	v1.2d, v1.2d, v2.2d
+	uqsub	v0.2d, v0.2d, v3.2d
 	ret
                                         // -- End function

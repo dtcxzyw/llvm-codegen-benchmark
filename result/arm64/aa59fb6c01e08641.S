@@ -1,12 +1,30 @@
 func00000000000001da:                   // @func00000000000001da
 // %bb.0:                               // %entry
-	clz	w8, w2
-	mov	w9, #32                         // =0x20
-	tst	w1, #0x1
-	sub	w8, w9, w8
-	csinc	w8, w8, wzr, ne
-	add	w8, w8, w0
-	cmp	w8, #7
-	cset	w0, gt
+	zip2	v5.8b, v2.8b, v0.8b
+	zip1	v2.8b, v2.8b, v0.8b
+	movi	v6.4s, #32
+	clz	v4.4s, v4.4s
+	clz	v3.4s, v3.4s
+	ushll	v5.4s, v5.4h, #0
+	ushll	v2.4s, v2.4h, #0
+	sub	v4.4s, v6.4s, v4.4s
+	sub	v3.4s, v6.4s, v3.4s
+	shl	v5.4s, v5.4s, #31
+	shl	v2.4s, v2.4s, #31
+	cmlt	v5.4s, v5.4s, #0
+	cmlt	v2.4s, v2.4s, #0
+	and	v4.16b, v4.16b, v5.16b
+	mvn	v5.16b, v5.16b
+	and	v3.16b, v3.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v4.4s, v4.4s, v5.4s
+	sub	v2.4s, v3.4s, v2.4s
+	movi	v3.4s, #7
+	add	v1.4s, v4.4s, v1.4s
+	add	v0.4s, v2.4s, v0.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	cmgt	v0.4s, v0.4s, v3.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

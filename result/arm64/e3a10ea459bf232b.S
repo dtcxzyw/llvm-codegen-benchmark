@@ -1,18 +1,27 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	add	w8, w0, #4
-	and	w0, w8, #0xff
+	movi	v1.8h, #4
+	add	v0.8h, v0.8h, v1.8h
+	bic	v0.8h, #255, lsl #8
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w8, w0, #32
-	and	w0, w8, #0x3fff
+	movi	v1.8h, #32
+	add	v0.8h, v0.8h, v1.8h
+	bic	v0.8h, #192, lsl #8
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w0, #1
-	and	w0, w8, #0xfffe
+	movi	v1.8h, #1
+	add	v0.8h, v0.8h, v1.8h
+	bic	v0.8h, #1
+	ushll2	v1.4s, v0.8h, #0
+	ushll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

@@ -1,9 +1,11 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
-	cmp	w1, #7
-	csel	w8, w1, w8, lt
-	cmp	w0, #0
-	csel	w0, w8, w0, lt
+	movi	v4.4s, #7
+	cmlt	v5.4s, v0.4s, #0
+	smin	v3.4s, v3.4s, v4.4s
+	smin	v2.4s, v2.4s, v4.4s
+	cmlt	v4.4s, v1.4s, #0
+	bit	v0.16b, v2.16b, v5.16b
+	bit	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function

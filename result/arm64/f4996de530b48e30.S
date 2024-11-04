@@ -1,15 +1,21 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	w0, w1, w0, asr #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	ssra	v1.4s, v0.4s, #1
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	w0, w1, w0, asr #1
+	uzp1	v1.4s, v1.4s, v2.4s
+	ssra	v1.4s, v0.4s, #1
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w0, w1, w0, asr #31
+	uzp1	v1.4s, v1.4s, v2.4s
+	ssra	v1.4s, v0.4s, #31
+	mov	v0.16b, v1.16b
 	ret
                                         // -- End function

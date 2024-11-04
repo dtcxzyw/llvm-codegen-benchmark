@@ -1,13 +1,45 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmul	s2, s0, s0
+	fmul	v17.4s, v0.4s, v0.4s
+	fmov	v16.4s, #1.00000000
+	ldr	q18, [sp]
+	ext	v19.16b, v4.16b, v4.16b, #8
+	zip1	v20.8b, v4.8b, v0.8b
 	mov	w8, #1142292480                 // =0x44160000
-	tst	w0, #0x1
-	fmadd	s1, s1, s1, s2
-	fmov	s2, #1.00000000
-	fdiv	s1, s2, s1
-	fmov	s2, w8
-	fcsel	s1, s2, s1, ne
-	fmul	s0, s1, s0
+	zip2	v4.8b, v4.8b, v0.8b
+	fmla	v17.4s, v5.4s, v5.4s
+	ushll	v4.4s, v4.4h, #0
+	fdiv	v5.4s, v16.4s, v17.4s
+	fmul	v17.4s, v1.4s, v1.4s
+	shl	v4.4s, v4.4s, #31
+	fmla	v17.4s, v6.4s, v6.4s
+	cmlt	v4.4s, v4.4s, #0
+	fdiv	v6.4s, v16.4s, v17.4s
+	fmul	v17.4s, v2.4s, v2.4s
+	fmla	v17.4s, v7.4s, v7.4s
+	fdiv	v7.4s, v16.4s, v17.4s
+	fmul	v17.4s, v3.4s, v3.4s
+	fmla	v17.4s, v18.4s, v18.4s
+	zip2	v18.8b, v19.8b, v0.8b
+	zip1	v19.8b, v19.8b, v0.8b
+	ushll	v18.4s, v18.4h, #0
+	ushll	v19.4s, v19.4h, #0
+	fdiv	v16.4s, v16.4s, v17.4s
+	ushll	v17.4s, v20.4h, #0
+	dup	v20.4s, w8
+	shl	v18.4s, v18.4s, #31
+	shl	v19.4s, v19.4s, #31
+	shl	v17.4s, v17.4s, #31
+	bsl	v4.16b, v20.16b, v6.16b
+	cmlt	v18.4s, v18.4s, #0
+	cmlt	v19.4s, v19.4s, #0
+	cmlt	v17.4s, v17.4s, #0
+	bit	v7.16b, v20.16b, v19.16b
+	fmul	v1.4s, v4.4s, v1.4s
+	bit	v5.16b, v20.16b, v17.16b
+	fmul	v2.4s, v7.4s, v2.4s
+	bit	v16.16b, v20.16b, v18.16b
+	fmul	v0.4s, v5.4s, v0.4s
+	fmul	v3.4s, v16.4s, v3.4s
 	ret
                                         // -- End function

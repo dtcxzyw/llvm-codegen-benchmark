@@ -1,24 +1,42 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #15                         // =0xf
-	tst	w1, #0xff
-	csel	w8, w8, w0, eq
-	and	x0, x8, #0xff
+	bic	v1.4h, #255, lsl #8
+	movi	v2.4h, #15
+	cmeq	v1.4h, v1.4h, #0
+	bit	v0.8b, v2.8b, v1.8b
+	movi	v2.2d, #0x000000000000ff
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	tst	w1, #0xff
-	csel	w8, wzr, w0, eq
-	and	x0, x8, #0xff
+	bic	v1.4h, #255, lsl #8
+	movi	v2.2d, #0x000000000000ff
+	cmeq	v1.4h, v1.4h, #0
+	bic	v0.8b, v0.8b, v1.8b
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #64                         // =0x40
-	cmp	w9, #55
-	csel	w8, w8, w0, hi
-	and	x0, x8, #0xff
+	movi	v2.4h, #55
+	bic	v1.4h, #255, lsl #8
+	movi	v3.4h, #64
+	cmhi	v1.4h, v1.4h, v2.4h
+	movi	v2.2d, #0x000000000000ff
+	bit	v0.8b, v3.8b, v1.8b
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

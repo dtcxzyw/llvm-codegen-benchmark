@@ -1,34 +1,70 @@
 func0000000000000062:                   // @func0000000000000062
 // %bb.0:                               // %entry
-	and	w8, w2, #0xf
-	lsr	w8, w1, w8
-	tst	w8, #0x10
-	cset	w8, eq
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v5.4s, #15
+	movi	v6.4s, #16
+	and	v3.16b, v3.16b, v5.16b
+	and	v4.16b, v4.16b, v5.16b
+	ushl	v4.4s, v6.4s, v4.4s
+	ushl	v3.4s, v6.4s, v3.4s
+	and	v1.16b, v3.16b, v1.16b
+	and	v2.16b, v4.16b, v2.16b
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	lsr	w8, w1, w2
-	tst	w8, #0x1
-	cset	w8, eq
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v5.4s, #31
+	movi	v6.4s, #1
+	and	v3.16b, v3.16b, v5.16b
+	and	v4.16b, v4.16b, v5.16b
+	ushl	v4.4s, v6.4s, v4.4s
+	ushl	v3.4s, v6.4s, v3.4s
+	and	v1.16b, v3.16b, v1.16b
+	and	v2.16b, v4.16b, v2.16b
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	lsr	w8, w1, w2
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v5.4s, #31
+	movi	v6.4s, #1
+	and	v3.16b, v3.16b, v5.16b
+	and	v4.16b, v4.16b, v5.16b
+	ushl	v4.4s, v6.4s, v4.4s
+	ushl	v3.4s, v6.4s, v3.4s
+	and	v1.16b, v3.16b, v1.16b
+	and	v2.16b, v4.16b, v2.16b
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	mvn	v1.16b, v1.16b
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000078:                   // @func0000000000000078
 // %bb.0:                               // %entry
-	and	w8, w2, #0x7
-	lsr	w8, w1, w8
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
+	movi	v5.4s, #7
+	movi	v6.4s, #1
+	and	v3.16b, v3.16b, v5.16b
+	and	v4.16b, v4.16b, v5.16b
+	ushl	v4.4s, v6.4s, v4.4s
+	ushl	v3.4s, v6.4s, v3.4s
+	and	v1.16b, v3.16b, v1.16b
+	and	v2.16b, v4.16b, v2.16b
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	mvn	v1.16b, v1.16b
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function

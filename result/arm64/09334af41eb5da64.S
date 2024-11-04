@@ -1,28 +1,40 @@
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #1
-	add	w0, w0, w8
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	shrn	v2.2s, v2.2d, #1
+	shrn2	v2.4s, v3.2d, #1
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #2
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	shrn	v2.2s, v2.2d, #2
+	shrn2	v2.4s, v3.2d, #2
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #3
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	shrn	v2.2s, v2.2d, #3
+	shrn2	v2.4s, v3.2d, #3
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #2
-	add	w0, w8, w0
+	sub	v2.2d, v2.2d, v4.2d
+	sub	v3.2d, v3.2d, v5.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	shrn	v2.2s, v2.2d, #2
+	shrn2	v2.4s, v3.2d, #2
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

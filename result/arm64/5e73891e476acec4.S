@@ -1,16 +1,24 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	lsr	w8, w1, #4
-	orr	w8, w8, #0xe0
-	cmp	w8, w0
-	cset	w0, eq
+	ushr	v3.4s, v3.4s, #4
+	ushr	v2.4s, v2.4s, #4
+	orr	v2.4s, #224
+	orr	v3.4s, #224
+	cmeq	v1.4s, v3.4s, v1.4s
+	cmeq	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsr	w8, w1, #18
-	orr	w8, w8, #0xf0
-	cmp	w8, w0
-	cset	w0, eq
+	ushr	v3.4s, v3.4s, #18
+	ushr	v2.4s, v2.4s, #18
+	orr	v2.4s, #240
+	orr	v3.4s, #240
+	cmeq	v1.4s, v3.4s, v1.4s
+	cmeq	v0.4s, v2.4s, v0.4s
+	uzp1	v0.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

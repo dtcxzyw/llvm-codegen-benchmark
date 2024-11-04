@@ -4,8 +4,10 @@ func0000000000000000:                   // @func0000000000000000
 	movk	x8, #20638, lsl #16
 	movk	x8, #55239, lsl #32
 	movk	x8, #51529, lsl #48
-	eor	x8, x1, x8
-	ror	x8, x8, #20
-	add	x0, x8, x0
+	dup	v4.2d, x8
+	xar	v3.2d, v3.2d, v4.2d, #20
+	xar	v2.2d, v2.2d, v4.2d, #20
+	add	v0.2d, v2.2d, v0.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function

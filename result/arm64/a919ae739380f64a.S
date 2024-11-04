@@ -1,32 +1,28 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	and	w9, w1, #0xff
-	cmp	w8, w9
-	csel	w0, w8, w9, hi
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	umax	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	and	w9, w1, #0xff
-	cmp	w8, w9
-	csel	w0, w8, w9, hi
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	umax	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	and	w9, w1, #0xff
-	cmp	w9, w8
-	csel	w0, w9, w8, hi
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	umax	v0.8b, v1.8b, v0.8b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	and	w9, w1, #0xff
-	cmp	w8, w9
-	csel	w0, w8, w9, hi
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	umax	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

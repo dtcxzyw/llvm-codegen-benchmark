@@ -1,8 +1,12 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ucvtf	s1, w1
-	ucvtf	s2, w0
-	fsub	s1, s2, s1
-	fmul	s0, s1, s0
+	ucvtf	v4.4s, v4.4s
+	ucvtf	v5.4s, v5.4s
+	ucvtf	v2.4s, v2.4s
+	ucvtf	v3.4s, v3.4s
+	fsub	v2.4s, v2.4s, v4.4s
+	fsub	v3.4s, v3.4s, v5.4s
+	fmul	v0.4s, v2.4s, v0.4s
+	fmul	v1.4s, v3.4s, v1.4s
 	ret
                                         // -- End function

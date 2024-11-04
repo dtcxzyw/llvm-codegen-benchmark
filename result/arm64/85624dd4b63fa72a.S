@@ -1,21 +1,36 @@
 func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
-	add	x8, x0, x2, asr #3
-	add	x8, x8, x1, lsl #6
-	lsr	x0, x8, #1
+	ssra	v0.2d, v4.2d, #3
+	ssra	v1.2d, v5.2d, #3
+	shl	v2.2d, v2.2d, #6
+	shl	v3.2d, v3.2d, #6
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
+	ushr	v0.2d, v0.2d, #1
+	ushr	v1.2d, v1.2d, #1
 	ret
                                         // -- End function
 func00000000000000a0:                   // @func00000000000000a0
 // %bb.0:                               // %entry
-	add	x8, x0, x2, asr #4
-	add	x8, x8, x1, lsl #5
-	lsr	x0, x8, #1
+	ssra	v0.2d, v4.2d, #4
+	ssra	v1.2d, v5.2d, #4
+	shl	v2.2d, v2.2d, #5
+	shl	v3.2d, v3.2d, #5
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
+	ushr	v0.2d, v0.2d, #1
+	ushr	v1.2d, v1.2d, #1
 	ret
                                         // -- End function
 func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	add	x8, x0, x2, asr #2
-	add	x8, x8, x1, lsl #3
-	lsr	x0, x8, #6
+	ssra	v0.2d, v4.2d, #2
+	ssra	v1.2d, v5.2d, #2
+	shl	v2.2d, v2.2d, #3
+	shl	v3.2d, v3.2d, #3
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
+	ushr	v0.2d, v0.2d, #6
+	ushr	v1.2d, v1.2d, #6
 	ret
                                         // -- End function

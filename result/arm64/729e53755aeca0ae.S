@@ -1,24 +1,40 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	lsr	w8, w1, #8
-	orr	w0, w0, w8, lsl #24
+	ushr	v2.8h, v2.8h, #8
+	ushll2	v3.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v2.4s, v2.4s, #24
+	shl	v3.4s, v3.4s, #24
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff00
-	orr	w0, w0, w8, lsl #8
+	ushr	v2.8h, v2.8h, #8
+	shll	v3.4s, v2.4h, #16
+	shll2	v2.4s, v2.8h, #16
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	lsr	w8, w1, #15
-	orr	w0, w0, w8, lsl #31
+	ushr	v2.8h, v2.8h, #15
+	ushll2	v3.4s, v2.8h, #0
+	ushll	v2.4s, v2.4h, #0
+	shl	v2.4s, v2.4s, #31
+	shl	v3.4s, v3.4s, #31
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	and	w8, w1, #0xfffe
-	orr	w0, w0, w8, lsl #7
+	ushr	v2.8h, v2.8h, #1
+	ushll	v3.4s, v2.4h, #8
+	ushll2	v2.4s, v2.8h, #8
+	orr	v1.16b, v2.16b, v1.16b
+	orr	v0.16b, v3.16b, v0.16b
 	ret
                                         // -- End function

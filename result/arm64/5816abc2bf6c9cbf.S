@@ -1,62 +1,80 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w8, w0, #0xfffffff8
-	add	w0, w8, #16
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #16
+	bic	v0.4s, #7
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	lsl	w8, w0, #3
-	and	w8, w8, #0xffffffe0
-	sub	w0, w8, #1
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.2d, #0xffffffffffffffff
+	shl	v0.4s, v0.4s, #3
+	bic	v0.4s, #24
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	lsr	x9, x0, #32
+	movi	v2.2d, #0xff000000ff000000
+	uzp2	v0.4s, v0.4s, v1.4s
 	mov	w8, #31161                      // =0x79b9
 	movk	w8, #40503, lsl #16
-	and	w9, w9, #0xff000000
-	add	w0, w9, w8
+	dup	v1.4s, w8
+	and	v0.16b, v0.16b, v2.16b
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000004f:                   // @func000000000000004f
 // %bb.0:                               // %entry
-	lsr	x8, x0, #2
-	and	w8, w8, #0xfffffffc
-	add	w0, w8, #15
+	shrn	v0.2s, v0.2d, #2
+	shrn2	v0.4s, v1.2d, #2
+	movi	v1.4s, #15
+	bic	v0.4s, #3
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	and	w8, w0, #0xfffffff8
-	add	w0, w8, #12
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #12
+	bic	v0.4s, #7
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	lsr	x8, x0, #29
-	and	w8, w8, #0xfffffff8
-	sub	w0, w8, #8
+	shrn	v0.2s, v0.2d, #29
+	mvni	v2.4s, #7
+	shrn2	v0.4s, v1.2d, #29
+	bic	v0.4s, #7
+	add	v0.4s, v0.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
-	lsr	x8, x0, #31
-	and	w8, w8, #0xfffffffe
-	add	w0, w8, #5
+	shrn	v0.2s, v0.2d, #31
+	shrn2	v0.4s, v1.2d, #31
+	movi	v1.4s, #5
+	bic	v0.4s, #1
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	w8, w0, #0xfffffffe
-	add	w0, w8, #2
+	uzp1	v0.4s, v0.4s, v1.4s
+	movi	v1.4s, #2
+	bic	v0.4s, #1
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	lsr	x8, x0, #2
-	and	w8, w8, #0xfffffffe
-	sub	w0, w8, #1
+	shrn	v0.2s, v0.2d, #2
+	shrn2	v0.4s, v1.2d, #2
+	movi	v1.2d, #0xffffffffffffffff
+	bic	v0.4s, #1
+	add	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

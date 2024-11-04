@@ -1,63 +1,111 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #268435456                  // =0x10000000
-	cmp	x0, x8
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, hi
+	dup	v3.2d, x8
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #1023                       // =0x3ff
-	cmp	x0, #1023
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, lo
+	dup	v3.2d, x8
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	mov	w8, #16                         // =0x10
-	cmp	x0, #16
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, hi
+	dup	v3.2d, x8
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	mov	w8, #255                        // =0xff
-	cmp	x0, #255
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, lo
+	movi	v3.2d, #0x000000000000ff
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v2.2d, v1.2d
+	cmhi	v0.2d, v3.2d, v0.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
 	mov	w8, #32                         // =0x20
-	cmp	x0, #32
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, hi
+	dup	v3.2d, x8
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #2147483647                 // =0x7fffffff
-	cmp	x0, x8
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, eq
+	dup	v3.2d, x8
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmeq	v1.2d, v1.2d, v2.2d
+	cmeq	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
 	mov	w8, #257                        // =0x101
-	cmp	x0, #257
-	csel	x8, x0, x8, lo
-	cmp	x8, w1, uxtw
-	cset	w0, eq
+	dup	v3.2d, x8
+	cmhi	v4.2d, v3.2d, v0.2d
+	cmhi	v5.2d, v3.2d, v1.2d
+	bif	v0.16b, v3.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	cmeq	v1.2d, v1.2d, v2.2d
+	cmeq	v0.2d, v0.2d, v3.2d
+	uzp1	v0.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

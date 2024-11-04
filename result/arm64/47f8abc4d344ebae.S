@@ -1,29 +1,50 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	w8, w1, #0x7fffffff
-	and	x9, x0, #0xffffffffff0000ff
-	and	w8, w8, #0xff0001ff
-	orr	x0, x9, x8
+	mov	w8, #511                        // =0x1ff
+	movi	v4.2d, #0xffffffffff0000ff
+	movk	w8, #32512, lsl #16
+	dup	v3.4s, w8
+	and	v0.16b, v0.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v2.16b, v2.16b, v3.16b
+	ushll	v3.2d, v2.2s, #0
+	ushll2	v2.2d, v2.4s, #0
+	orr	v1.16b, v1.16b, v2.16b
+	orr	v0.16b, v0.16b, v3.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, w1
-	and	x9, x0, #0xffff80000001ffff
-	orr	x0, x9, x8
+	mov	x8, #-140737488224257           // =0xffff80000001ffff
+	ushll2	v4.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	dup	v3.2d, x8
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v1.16b, v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, w1
-	orr	x8, x8, x0
-	and	x0, x8, #0xffffffffffffffc0
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	mov	x8, #-64                        // =0xffffffffffffffc0
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
+	dup	v2.2d, x8
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, w1
-	orr	x8, x8, x0
-	and	x0, x8, #0xffffffffffffff00
+	ushll2	v3.2d, v2.4s, #0
+	ushll	v2.2d, v2.2s, #0
+	movi	v4.2d, #0xffffffffffffff00
+	orr	v0.16b, v2.16b, v0.16b
+	orr	v1.16b, v3.16b, v1.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
 	ret
                                         // -- End function

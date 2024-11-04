@@ -1,32 +1,48 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	lsl	x8, x0, #1
-	mov	w9, #10000                      // =0x2710
-	mov	w10, #15                        // =0xf
-	cmp	x8, x9
-	csel	x8, x8, x9, lt
-	lsr	x9, x8, #1
-	lsl	x8, x8, #3
-	bfi	x10, x9, #4, #60
-	add	x8, x8, #30
-	cmp	x10, #0
-	csel	x8, x8, x10, lt
-	asr	x0, x8, #4
+	mov	w8, #10000                      // =0x2710
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	dup	v2.2d, x8
+	mov	w8, #15                         // =0xf
+	cmgt	v3.2d, v2.2d, v0.2d
+	cmgt	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	cmlt	v2.2d, v0.2d, #0
+	cmlt	v3.2d, v1.2d, #0
+	usra	v0.2d, v2.2d, #60
+	dup	v2.2d, x8
+	usra	v1.2d, v3.2d, #60
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	sshr	v0.2d, v0.2d, #4
+	sshr	v1.2d, v1.2d, #4
 	ret
                                         // -- End function
 func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	lsl	x8, x0, #1
-	mov	w9, #10000                      // =0x2710
-	mov	w10, #15                        // =0xf
-	cmp	x8, x9
-	csel	x8, x8, x9, lt
-	lsr	x9, x8, #1
-	lsl	x8, x8, #3
-	bfi	x10, x9, #4, #60
-	add	x8, x8, #30
-	cmp	x10, #0
-	csel	x8, x8, x10, lt
-	asr	x0, x8, #4
+	mov	w8, #10000                      // =0x2710
+	add	v1.2d, v1.2d, v1.2d
+	add	v0.2d, v0.2d, v0.2d
+	dup	v2.2d, x8
+	mov	w8, #15                         // =0xf
+	cmgt	v3.2d, v2.2d, v0.2d
+	cmgt	v4.2d, v2.2d, v1.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	cmlt	v2.2d, v0.2d, #0
+	cmlt	v3.2d, v1.2d, #0
+	usra	v0.2d, v2.2d, #60
+	dup	v2.2d, x8
+	usra	v1.2d, v3.2d, #60
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	sshr	v0.2d, v0.2d, #4
+	sshr	v1.2d, v1.2d, #4
 	ret
                                         // -- End function

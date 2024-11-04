@@ -1,22 +1,32 @@
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	sxtw	x8, w2
-	sub	x9, x0, x1
-	sub	x8, x8, x9
-	cmp	x9, x8
-	csel	x8, x9, x8, hi
-	add	x0, x8, x9
+	sshll	v5.2d, v4.2s, #0
+	sshll2	v4.2d, v4.4s, #0
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v3.2d, v5.2d, v0.2d
+	sub	v2.2d, v4.2d, v1.2d
+	cmhi	v4.2d, v0.2d, v3.2d
+	cmhi	v5.2d, v1.2d, v2.2d
+	bit	v3.16b, v0.16b, v4.16b
+	bit	v2.16b, v1.16b, v5.16b
+	add	v0.2d, v3.2d, v0.2d
+	add	v1.2d, v2.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	sxtw	x8, w2
-	sub	x9, x0, x1
-	sub	x8, x8, x9
-	cmp	x9, x8
-	csel	x8, x9, x8, hi
-	add	x0, x8, x9
+	sshll	v5.2d, v4.2s, #0
+	sshll2	v4.2d, v4.4s, #0
+	sub	v0.2d, v0.2d, v2.2d
+	sub	v1.2d, v1.2d, v3.2d
+	sub	v3.2d, v5.2d, v0.2d
+	sub	v2.2d, v4.2d, v1.2d
+	cmhi	v4.2d, v0.2d, v3.2d
+	cmhi	v5.2d, v1.2d, v2.2d
+	bit	v3.16b, v0.16b, v4.16b
+	bit	v2.16b, v1.16b, v5.16b
+	add	v0.2d, v3.2d, v0.2d
+	add	v1.2d, v2.2d, v1.2d
 	ret
                                         // -- End function

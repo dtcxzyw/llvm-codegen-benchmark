@@ -1,24 +1,36 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ucvtf	s1, w1
-	ucvtf	s2, w0
-	fdiv	s1, s2, s1
-	fmul	s0, s1, s0
+	ucvtf	v5.4s, v5.4s
+	ucvtf	v3.4s, v3.4s
+	ucvtf	v4.4s, v4.4s
+	ucvtf	v2.4s, v2.4s
+	fdiv	v3.4s, v3.4s, v5.4s
+	fdiv	v2.4s, v2.4s, v4.4s
+	fmul	v1.4s, v3.4s, v1.4s
+	fmul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ucvtf	s1, w1
-	ucvtf	s2, w0
-	fdiv	s1, s2, s1
-	fmul	s0, s1, s0
+	ucvtf	v5.4s, v5.4s
+	ucvtf	v3.4s, v3.4s
+	ucvtf	v4.4s, v4.4s
+	ucvtf	v2.4s, v2.4s
+	fdiv	v3.4s, v3.4s, v5.4s
+	fdiv	v2.4s, v2.4s, v4.4s
+	fmul	v1.4s, v3.4s, v1.4s
+	fmul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ucvtf	s1, w1
-	ucvtf	s2, w0
-	fdiv	s1, s2, s1
-	fmul	s0, s1, s0
+	ucvtf	v5.4s, v5.4s
+	ucvtf	v3.4s, v3.4s
+	ucvtf	v4.4s, v4.4s
+	ucvtf	v2.4s, v2.4s
+	fdiv	v3.4s, v3.4s, v5.4s
+	fdiv	v2.4s, v2.4s, v4.4s
+	fmul	v1.4s, v3.4s, v1.4s
+	fmul	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function

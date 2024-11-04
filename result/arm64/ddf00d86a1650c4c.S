@@ -1,40 +1,61 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	x8, #-9223372036854775808       // =0x8000000000000000
-	cmp	x1, x8
-	cset	w8, eq
-	tst	w8, w0
-	mov	w8, #3                          // =0x3
-	csel	w0, wzr, w8, ne
+	movi	v3.2d, #0000000000000000
+	fneg	v3.2d, v3.2d
+	cmeq	v2.2d, v2.2d, v3.2d
+	cmeq	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
+	movi	v1.4h, #3
+	shl	v0.4h, v0.4h, #15
+	cmge	v0.4h, v0.4h, #0
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmp	x1, #0
-	mov	w8, #4                          // =0x4
-	cset	w9, ne
-	tst	w9, w0
-	cinc	w0, w8, ne
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #5
+	mvn	v1.16b, v1.16b
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
+	movi	v1.4h, #4
+	shl	v0.4h, v0.4h, #15
+	cmlt	v0.4h, v0.4h, #0
+	bsl	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	lsr	x9, x1, #32
-	mov	w8, #2                          // =0x2
-	cmp	x9, #0
-	cset	w9, ne
-	tst	w9, w0
-	cinc	w0, w8, ne
+	movi	v3.2d, #0x000000ffffffff
+	cmhi	v2.2d, v2.2d, v3.2d
+	cmhi	v1.2d, v1.2d, v3.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #3
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
+	movi	v1.4h, #2
+	shl	v0.4h, v0.4h, #15
+	cmlt	v0.4h, v0.4h, #0
+	bsl	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	x9, x1, #32
-	mov	w8, #8                          // =0x8
-	cmp	x9, #0
-	cset	w9, eq
-	tst	w9, w0
-	mov	w9, #4                          // =0x4
-	csel	w0, w9, w8, ne
+	mov	x8, #4294967296                 // =0x100000000
+	dup	v3.2d, x8
+	cmhi	v2.2d, v3.2d, v2.2d
+	cmhi	v1.2d, v3.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	movi	v2.4h, #4
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
+	movi	v1.4h, #8
+	shl	v0.4h, v0.4h, #15
+	cmlt	v0.4h, v0.4h, #0
+	bsl	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function

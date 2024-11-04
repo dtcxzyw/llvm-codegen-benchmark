@@ -1,16 +1,14 @@
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	mov	w9, w0
-	csel	w8, w0, w1, lo
-	sub	x0, x9, x8
+	umin	v2.4s, v0.4s, v1.4s
+	usubl2	v1.2d, v0.4s, v2.4s
+	usubl	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmp	w1, w0
-	mov	w9, w0
-	csel	w8, w1, w0, lo
-	sub	x0, x9, x8
+	umin	v2.4s, v1.4s, v0.4s
+	usubl2	v1.2d, v0.4s, v2.4s
+	usubl	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function

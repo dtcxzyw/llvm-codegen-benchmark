@@ -1,41 +1,55 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #-2                         // =0xfffffffe
-	add	w9, w0, w1
-	cinc	w8, w8, ne
-	add	w8, w9, w8
-	sxtw	x0, w8
+	ushll	v2.4s, v2.4h, #0
+	mvni	v3.4s, #1
+	add	v0.4s, v0.4s, v1.4s
+	shl	v2.4s, v2.4s, #31
+	cmlt	v2.4s, v2.4s, #0
+	orr	v2.16b, v2.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	tst	w0, #0x1
+	ushll	v0.4s, v0.4h, #0
 	mov	w8, #-360                       // =0xfffffe98
-	add	w9, w1, w2
-	csel	w8, wzr, w8, ne
-	add	w8, w8, w9
-	sxtw	x0, w8
+	add	v1.4s, v1.4s, v2.4s
+	dup	v3.4s, w8
+	shl	v0.4s, v0.4s, #31
+	cmge	v0.4s, v0.4s, #0
+	and	v0.16b, v0.16b, v3.16b
+	add	v0.4s, v0.4s, v1.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #-13                        // =0xfffffff3
-	mov	w9, #-5                         // =0xfffffffb
-	csel	w8, w9, w8, ne
-	add	w9, w0, w1
-	add	w8, w9, w8
-	sxtw	x0, w8
+	ushll	v2.4s, v2.4h, #0
+	add	v0.4s, v0.4s, v1.4s
+	shl	v2.4s, v2.4s, #31
+	cmlt	v2.4s, v2.4s, #0
+	mvn	v3.16b, v2.16b
+	bic	v2.4s, #4
+	bic	v3.4s, #12
+	orr	v2.16b, v2.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #2                          // =0x2
-	add	w9, w0, w1
-	csel	w8, w8, wzr, ne
-	add	w8, w9, w8
-	sxtw	x0, w8
+	ushll	v2.4s, v2.4h, #0
+	movi	v3.4s, #2
+	add	v0.4s, v0.4s, v1.4s
+	shl	v2.4s, v2.4s, #31
+	cmlt	v2.4s, v2.4s, #0
+	and	v2.16b, v2.16b, v3.16b
+	add	v0.4s, v0.4s, v2.4s
+	sshll2	v1.2d, v0.4s, #0
+	sshll	v0.2d, v0.2s, #0
 	ret
                                         // -- End function

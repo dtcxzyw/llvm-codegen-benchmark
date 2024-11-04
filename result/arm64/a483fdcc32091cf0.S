@@ -1,32 +1,35 @@
 func0000000000000221:                   // @func0000000000000221
 // %bb.0:                               // %entry
-	mov	w8, #253                        // =0xfd
-	and	w9, w0, #0xff
-	and	w8, w1, w8
-	cmp	w9, #195
-	ccmp	w8, #4, #0, eq
-	cset	w0, eq
+	movi	v2.16b, #253
+	movi	v3.16b, #4
+	movi	v4.16b, #195
+	and	v1.16b, v1.16b, v2.16b
+	cmeq	v0.16b, v0.16b, v4.16b
+	cmeq	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000222:                   // @func0000000000000222
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
-	mov	w8, #122                        // =0x7a
-	and	w10, w0, #0xff
-	cmp	w9, #51
-	ccmp	w9, w8, #4, ne
-	mov	w8, #110                        // =0x6e
-	ccmp	w10, w8, #0, eq
-	cset	w0, eq
+	movi	v2.16b, #122
+	movi	v3.16b, #51
+	movi	v4.16b, #110
+	cmeq	v2.16b, v1.16b, v2.16b
+	cmeq	v1.16b, v1.16b, v3.16b
+	cmeq	v0.16b, v0.16b, v4.16b
+	orr	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000230:                   // @func0000000000000230
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	and	w9, w0, #0xff
-	cmp	w8, #15
-	ccmp	w8, #23, #4, ne
-	ccmp	w9, #1, #0, eq
-	cset	w0, hi
+	movi	v2.16b, #23
+	movi	v3.16b, #15
+	movi	v4.16b, #1
+	cmeq	v2.16b, v1.16b, v2.16b
+	cmeq	v1.16b, v1.16b, v3.16b
+	cmhi	v0.16b, v0.16b, v4.16b
+	orr	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function

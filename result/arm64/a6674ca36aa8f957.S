@@ -1,28 +1,40 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	and	w8, w8, #0xffff
-	mul	w0, w8, w0
+	movi	v3.2d, #0xffffffffffffffff
+	add	v2.8h, v2.8h, v3.8h
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	mul	v1.4s, v2.4s, v1.4s
+	mul	v0.4s, v3.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	add	w8, w1, #4
-	and	w8, w8, #0xffff
-	mul	w0, w8, w0
+	movi	v3.8h, #4
+	add	v2.8h, v2.8h, v3.8h
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	mul	v1.4s, v2.4s, v1.4s
+	mul	v0.4s, v3.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	w8, w1, #7
-	and	w8, w8, #0xffff
-	mul	w0, w8, w0
+	mvni	v3.8h, #6
+	add	v2.8h, v2.8h, v3.8h
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	mul	v1.4s, v2.4s, v1.4s
+	mul	v0.4s, v3.4s, v0.4s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	add	w8, w1, #6
-	and	w8, w8, #0xffff
-	mul	w0, w8, w0
+	movi	v3.8h, #6
+	add	v2.8h, v2.8h, v3.8h
+	ushll	v3.4s, v2.4h, #0
+	ushll2	v2.4s, v2.8h, #0
+	mul	v1.4s, v2.4s, v1.4s
+	mul	v0.4s, v3.4s, v0.4s
 	ret
                                         // -- End function

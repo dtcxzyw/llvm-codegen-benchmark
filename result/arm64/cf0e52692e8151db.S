@@ -1,13 +1,37 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	x9, #23123                      // =0x5a53
-	lsr	x8, x1, #9
-	tst	w0, #0x1
-	movk	x9, #41115, lsl #16
-	movk	x9, #47151, lsl #32
-	movk	x9, #68, lsl #48
-	umulh	x8, x8, x9
+	fmov	x8, d2
+	fmov	x11, d1
+	mov	x10, #23123                     // =0x5a53
+	mov	x9, v2.d[1]
+	movk	x10, #41115, lsl #16
+	mov	x12, v1.d[1]
+	movk	x10, #47151, lsl #32
+	ushll	v0.4s, v0.4h, #0
+	lsr	x8, x8, #9
+	lsr	x11, x11, #9
+	movk	x10, #68, lsl #48
+	umulh	x8, x8, x10
+	lsr	x9, x9, #9
+	lsr	x12, x12, #9
+	ushll	v1.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	umulh	x11, x11, x10
+	umulh	x9, x9, x10
+	shl	v1.2d, v1.2d, #63
+	shl	v0.2d, v0.2d, #63
 	lsr	x8, x8, #11
-	csel	x0, x8, xzr, ne
+	umulh	x10, x12, x10
+	lsr	x11, x11, #11
+	fmov	d2, x8
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v4.2d, v0.2d, #0
+	fmov	d3, x11
+	lsr	x9, x9, #11
+	lsr	x10, x10, #11
+	mov	v2.d[1], x9
+	mov	v3.d[1], x10
+	and	v0.16b, v3.16b, v1.16b
+	and	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

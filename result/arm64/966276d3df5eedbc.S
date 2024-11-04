@@ -1,9 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	w0, w1
-	mov	w8, #16                         // =0x10
-	csel	w9, w0, w1, gt
-	cmp	w9, #16
-	csel	w0, w9, w8, lt
+	smax	v1.4s, v1.4s, v3.4s
+	smax	v0.4s, v0.4s, v2.4s
+	movi	v2.4s, #16
+	smin	v0.4s, v0.4s, v2.4s
+	smin	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

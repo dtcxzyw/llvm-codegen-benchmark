@@ -1,17 +1,36 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	w9, w0, w1
+	and	v0.8b, v0.8b, v1.8b
 	mov	w8, #216                        // =0xd8
-	tst	w9, #0x1
-	mov	w9, #152                        // =0x98
-	csel	x0, x9, x8, ne
+	dup	v2.2d, x8
+	mov	w8, #152                        // =0x98
+	dup	v3.2d, x8
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shl	v1.2d, v1.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bsl	v1.16b, v3.16b, v2.16b
+	bsl	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	w9, w0, w1
+	and	v0.8b, v0.8b, v1.8b
+	mov	w8, #5                          // =0x5
+	dup	v2.2d, x8
 	mov	w8, #4                          // =0x4
-	tst	w9, #0x1
-	cinc	x0, x8, eq
+	dup	v3.2d, x8
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shl	v1.2d, v1.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bsl	v1.16b, v3.16b, v2.16b
+	bsl	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function

@@ -1,32 +1,50 @@
 func00000000000000d8:                   // @func00000000000000d8
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-	mov	w9, #1                          // =0x1
-                                        // kill: def $w1 killed $w1 def $x1
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	x8, x8, x1
-	lsl	x9, x9, x0
-	add	x0, x9, x8
+	movi	v2.2d, #0xffffffffffffffff
+	mov	w8, #1                          // =0x1
+	ushll	v3.2d, v1.2s, #0
+	ushll2	v1.2d, v1.4s, #0
+	ushll	v4.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	dup	v5.2d, x8
+	ushl	v1.2d, v2.2d, v1.2d
+	ushl	v2.2d, v2.2d, v3.2d
+	ushl	v3.2d, v5.2d, v0.2d
+	ushl	v0.2d, v5.2d, v4.2d
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func00000000000000d0:                   // @func00000000000000d0
 // %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
-	mov	w9, #2                          // =0x2
-                                        // kill: def $w1 killed $w1 def $x1
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	x8, x8, x1
-	lsl	x9, x9, x0
-	add	x0, x9, x8
+	movi	v2.2d, #0xffffffffffffffff
+	mov	w8, #2                          // =0x2
+	ushll	v3.2d, v1.2s, #0
+	ushll2	v1.2d, v1.4s, #0
+	ushll	v4.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	dup	v5.2d, x8
+	ushl	v1.2d, v2.2d, v1.2d
+	ushl	v2.2d, v2.2d, v3.2d
+	ushl	v3.2d, v5.2d, v0.2d
+	ushl	v0.2d, v5.2d, v4.2d
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v3.2d, v1.2d
 	ret
                                         // -- End function
 func00000000000000e8:                   // @func00000000000000e8
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-                                        // kill: def $w1 killed $w1 def $x1
-                                        // kill: def $w0 killed $w0 def $x0
-	lsl	x9, x8, x1
-	lsl	x8, x8, x0
-	add	x0, x8, x9
+	ushll2	v2.2d, v1.4s, #0
+	ushll	v1.2d, v1.2s, #0
+	dup	v3.2d, x8
+	ushll	v4.2d, v0.2s, #0
+	ushll2	v0.2d, v0.4s, #0
+	ushl	v2.2d, v3.2d, v2.2d
+	ushl	v1.2d, v3.2d, v1.2d
+	ushl	v5.2d, v3.2d, v0.2d
+	ushl	v0.2d, v3.2d, v4.2d
+	add	v0.2d, v0.2d, v1.2d
+	add	v1.2d, v5.2d, v2.2d
 	ret
                                         // -- End function

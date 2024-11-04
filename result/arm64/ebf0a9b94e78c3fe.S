@@ -1,9 +1,13 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	and	x8, x1, x0
-                                        // kill: def $w2 killed $w2 def $x2
-	add	x8, x8, w2, uxth
-	and	x8, x8, x0
-	lsl	x0, x8, #3
+	ushll	v4.4s, v4.4h, #0
+	and	v2.16b, v2.16b, v0.16b
+	and	v3.16b, v3.16b, v1.16b
+	uaddw2	v3.2d, v3.2d, v4.4s
+	uaddw	v2.2d, v2.2d, v4.2s
+	and	v0.16b, v2.16b, v0.16b
+	and	v1.16b, v3.16b, v1.16b
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
 	ret
                                         // -- End function

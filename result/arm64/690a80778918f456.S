@@ -1,19 +1,30 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sbfx	x8, x1, #0, #31
-	add	x0, x8, x0, lsl #3
+	shl	v3.2d, v3.2d, #33
+	shl	v2.2d, v2.2d, #33
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	ssra	v1.2d, v3.2d, #33
+	ssra	v0.2d, v2.2d, #33
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	lsl	x8, x0, #3
-	add	x0, x8, w1, sxtw
+	shl	v3.2d, v3.2d, #32
+	shl	v2.2d, v2.2d, #32
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	ssra	v1.2d, v3.2d, #32
+	ssra	v0.2d, v2.2d, #32
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	lsl	x8, x1, #30
-	lsl	x9, x0, #3
-	add	x0, x9, x8, asr #29
+	shl	v3.2d, v3.2d, #30
+	shl	v2.2d, v2.2d, #30
+	shl	v1.2d, v1.2d, #3
+	shl	v0.2d, v0.2d, #3
+	ssra	v1.2d, v3.2d, #29
+	ssra	v0.2d, v2.2d, #29
 	ret
                                         // -- End function

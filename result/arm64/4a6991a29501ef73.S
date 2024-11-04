@@ -1,16 +1,21 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmp	w2, #0
-	csel	x8, x0, x1, eq
-	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	cmeq	v4.4s, v4.4s, #0
+	sshll	v5.2d, v4.2s, #0
+	sshll2	v4.2d, v4.4s, #0
+	bif	v1.16b, v3.16b, v4.16b
+	bif	v0.16b, v2.16b, v5.16b
+	uzp2	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
-	cmp	w2, #64
-	csel	x8, x0, x1, lo
-	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
+	movi	v5.4s, #64
+	cmhi	v4.4s, v5.4s, v4.4s
+	sshll	v5.2d, v4.2s, #0
+	sshll2	v4.2d, v4.4s, #0
+	bif	v1.16b, v3.16b, v4.16b
+	bif	v0.16b, v2.16b, v5.16b
+	uzp2	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

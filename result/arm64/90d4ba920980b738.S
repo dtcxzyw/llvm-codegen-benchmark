@@ -1,41 +1,56 @@
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	mov	w8, #2                          // =0x2
-	cset	w9, ne
-	orr	w9, w9, w0
-	tst	w9, #0x1
-	mov	w9, #6                          // =0x6
-	csel	w0, w9, w8, ne
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	movi	v2.8b, #6
+	mvn	v1.16b, v1.16b
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
+	movi	v1.8b, #2
+	shl	v0.8b, v0.8b, #7
+	cmlt	v0.8b, v0.8b, #0
+	bsl	v0.8b, v2.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	w1, #0
-	mov	w8, #-128                       // =0xffffff80
-	cset	w9, eq
-	orr	w9, w9, w0
-	tst	w9, #0x1
-	csel	w0, w8, wzr, ne
+	cmeq	v2.4s, v2.4s, #0
+	cmeq	v1.4s, v1.4s, #0
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
+	movi	v1.8b, #128
+	shl	v0.8b, v0.8b, #7
+	cmlt	v0.8b, v0.8b, #0
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	cmp	w1, #1
-	mov	w8, #4                          // =0x4
-	cset	w9, gt
-	orr	w9, w9, w0
-	tst	w9, #0x1
-	csel	w0, w8, wzr, ne
+	movi	v3.4s, #1
+	cmgt	v2.4s, v2.4s, v3.4s
+	cmgt	v1.4s, v1.4s, v3.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
+	movi	v1.8b, #4
+	shl	v0.8b, v0.8b, #7
+	cmlt	v0.8b, v0.8b, #0
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmp	w1, #2
-	mov	w8, #4                          // =0x4
-	cset	w9, lt
-	orr	w9, w9, w0
-	tst	w9, #0x1
-	csel	w0, w8, wzr, ne
+	movi	v3.4s, #2
+	cmgt	v2.4s, v3.4s, v2.4s
+	cmgt	v1.4s, v3.4s, v1.4s
+	uzp1	v1.8h, v1.8h, v2.8h
+	xtn	v1.8b, v1.8h
+	orr	v0.8b, v1.8b, v0.8b
+	movi	v1.8b, #4
+	shl	v0.8b, v0.8b, #7
+	cmlt	v0.8b, v0.8b, #0
+	and	v0.8b, v0.8b, v1.8b
 	ret
                                         // -- End function

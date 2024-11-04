@@ -1,11 +1,27 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvt	s0, d0
-	mov	w8, #8388608                    // =0x800000
-	tst	w0, #0x1
-	fmov	w9, s0
-	bfxil	w8, w9, #0, #23
-	and	w9, w9, #0x7fffff
-	csel	w0, w9, w8, ne
+	fcvtn	v3.2s, v3.2d
+	fcvtn	v1.2s, v1.2d
+	zip1	v5.8b, v0.8b, v0.8b
+	zip2	v0.8b, v0.8b, v0.8b
+	fcvtn2	v3.4s, v4.2d
+	movi	v4.4s, #127, msl #16
+	fcvtn2	v1.4s, v2.2d
+	ushll	v2.4s, v5.4h, #0
+	ushll	v0.4s, v0.4h, #0
+	and	v1.16b, v1.16b, v4.16b
+	shl	v2.4s, v2.4s, #31
+	and	v3.16b, v3.16b, v4.16b
+	shl	v0.4s, v0.4s, #31
+	mov	v5.16b, v1.16b
+	cmlt	v2.4s, v2.4s, #0
+	mov	v4.16b, v3.16b
+	cmlt	v6.4s, v0.4s, #0
+	orr	v5.4s, #128, lsl #16
+	mov	v0.16b, v2.16b
+	orr	v4.4s, #128, lsl #16
+	bsl	v0.16b, v1.16b, v5.16b
+	mov	v1.16b, v6.16b
+	bsl	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function

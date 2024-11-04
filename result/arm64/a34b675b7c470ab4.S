@@ -1,27 +1,48 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	x8, x0, #0xfffffffffffffff8
-	add	x0, x8, w1, uxtw
+	movi	v4.2d, #0x000000ffffffff
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	dup	v5.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	and	v1.16b, v1.16b, v5.16b
+	and	v0.16b, v0.16b, v5.16b
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	x8, x1, #0x1ffffffffffffff8
-	and	x9, x0, #0x1ffffffffffffff8
-	add	x0, x9, x8
+	mov	x8, #2305843009213693944        // =0x1ffffffffffffff8
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	and	x8, x1, #0xfffffffffffffff8
-	and	x9, x0, #0xfffffffffffffff8
-	add	x0, x9, x8
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	dup	v4.2d, x8
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	x8, x1, #0x5555555555555555
-	and	x9, x0, #0x5555555555555555
-	add	x0, x9, x8
+	movi	v4.16b, #85
+	and	v3.16b, v3.16b, v4.16b
+	and	v2.16b, v2.16b, v4.16b
+	and	v1.16b, v1.16b, v4.16b
+	and	v0.16b, v0.16b, v4.16b
+	add	v1.2d, v1.2d, v3.2d
+	add	v0.2d, v0.2d, v2.2d
 	ret
                                         // -- End function

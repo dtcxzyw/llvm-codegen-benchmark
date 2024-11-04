@@ -1,8 +1,21 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ucvtf	d1, w0
-	fmov	d2, #-1.50000000
-	fadd	d1, d1, d2
-	fdiv	d0, d1, d0
+	ushll2	v6.2d, v4.4s, #0
+	ushll	v4.2d, v4.2s, #0
+	fmov	v7.2d, #-1.50000000
+	ucvtf	v6.2d, v6.2d
+	ucvtf	v4.2d, v4.2d
+	fadd	v6.2d, v6.2d, v7.2d
+	fadd	v4.2d, v4.2d, v7.2d
+	fdiv	v1.2d, v6.2d, v1.2d
+	ushll2	v6.2d, v5.4s, #0
+	ucvtf	v6.2d, v6.2d
+	fadd	v6.2d, v6.2d, v7.2d
+	fdiv	v0.2d, v4.2d, v0.2d
+	ushll	v4.2d, v5.2s, #0
+	ucvtf	v4.2d, v4.2d
+	fadd	v4.2d, v4.2d, v7.2d
+	fdiv	v3.2d, v6.2d, v3.2d
+	fdiv	v2.2d, v4.2d, v2.2d
 	ret
                                         // -- End function

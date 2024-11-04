@@ -1,28 +1,37 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
+	mov	w8, #299                        // =0x12b
+	uzp1	v1.4s, v1.4s, v2.4s
+	dup	v2.4s, w8
 	mov	w8, #34079                      // =0x851f
-	add	w9, w1, #299
 	movk	w8, #20971, lsl #16
-	smull	x8, w9, w8
-	lsr	x9, x8, #63
-	asr	x8, x8, #39
-	add	w8, w8, w9
-	add	w0, w8, w0
+	add	v1.4s, v1.4s, v2.4s
+	dup	v2.4s, w8
+	smull2	v3.2d, v1.4s, v2.4s
+	smull	v1.2d, v1.2s, v2.2s
+	uzp2	v1.4s, v1.4s, v3.4s
+	sshr	v2.4s, v1.4s, #7
+	usra	v2.4s, v1.4s, #31
+	add	v0.4s, v2.4s, v0.4s
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	adds	w8, w1, #4
-	add	w9, w1, #7
-	csel	w8, w9, w8, lt
-	add	w0, w0, w8, asr #2
+	movi	v3.4s, #4
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	cmlt	v2.4s, v1.4s, #0
+	usra	v1.4s, v2.4s, #30
+	ssra	v0.4s, v1.4s, #2
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	adds	w8, w1, #4
-	add	w9, w1, #7
-	csel	w8, w9, w8, lt
-	add	w0, w0, w8, asr #2
+	movi	v3.4s, #4
+	uzp1	v1.4s, v1.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
+	cmlt	v2.4s, v1.4s, #0
+	usra	v1.4s, v2.4s, #30
+	ssra	v0.4s, v1.4s, #2
 	ret
                                         // -- End function

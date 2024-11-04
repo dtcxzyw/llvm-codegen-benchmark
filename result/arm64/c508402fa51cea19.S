@@ -1,29 +1,104 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	bfi	x2, x1, #32, #32
-	udiv	x8, x2, x0
-	msub	x0, x8, x0, x2
+	sli	v4.2d, v2.2d, #32
+	sli	v5.2d, v3.2d, #32
+	mov	x8, v0.d[1]
+	fmov	x12, d0
+	fmov	x15, d1
+	mov	x18, v1.d[1]
+	mov	x9, v4.d[1]
+	fmov	x11, d4
+	fmov	x14, d5
+	mov	x17, v5.d[1]
+	udiv	x13, x11, x12
+	udiv	x10, x9, x8
+	udiv	x16, x14, x15
+	msub	x8, x10, x8, x9
+	msub	x9, x13, x12, x11
+	fmov	d0, x9
+	mov	v0.d[1], x8
+	udiv	x0, x17, x18
+	msub	x10, x16, x15, x14
+	fmov	d1, x10
+	msub	x11, x0, x18, x17
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	w8, w2
-	orr	x8, x8, x1, lsl #32
-	udiv	x9, x8, x0
-	msub	x0, x9, x0, x8
+	sli	v4.2d, v2.2d, #32
+	sli	v5.2d, v3.2d, #32
+	mov	x8, v0.d[1]
+	fmov	x12, d0
+	fmov	x15, d1
+	mov	x18, v1.d[1]
+	mov	x9, v4.d[1]
+	fmov	x11, d4
+	fmov	x14, d5
+	mov	x17, v5.d[1]
+	udiv	x13, x11, x12
+	udiv	x10, x9, x8
+	udiv	x16, x14, x15
+	msub	x8, x10, x8, x9
+	msub	x9, x13, x12, x11
+	fmov	d0, x9
+	mov	v0.d[1], x8
+	udiv	x0, x17, x18
+	msub	x10, x16, x15, x14
+	fmov	d1, x10
+	msub	x11, x0, x18, x17
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	bfi	x2, x1, #32, #32
-	udiv	x8, x2, x0
-	msub	x0, x8, x0, x2
+	sli	v4.2d, v2.2d, #32
+	sli	v5.2d, v3.2d, #32
+	mov	x8, v0.d[1]
+	fmov	x12, d0
+	fmov	x15, d1
+	mov	x18, v1.d[1]
+	mov	x9, v4.d[1]
+	fmov	x11, d4
+	fmov	x14, d5
+	mov	x17, v5.d[1]
+	udiv	x13, x11, x12
+	udiv	x10, x9, x8
+	udiv	x16, x14, x15
+	msub	x8, x10, x8, x9
+	msub	x9, x13, x12, x11
+	fmov	d0, x9
+	mov	v0.d[1], x8
+	udiv	x0, x17, x18
+	msub	x10, x16, x15, x14
+	fmov	d1, x10
+	msub	x11, x0, x18, x17
+	mov	v1.d[1], x11
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	bfi	x2, x1, #8, #56
-	udiv	x8, x2, x0
-	msub	x0, x8, x0, x2
+	sli	v4.2d, v2.2d, #8
+	sli	v5.2d, v3.2d, #8
+	mov	x8, v0.d[1]
+	fmov	x12, d0
+	fmov	x15, d1
+	mov	x18, v1.d[1]
+	mov	x9, v4.d[1]
+	fmov	x11, d4
+	fmov	x14, d5
+	mov	x17, v5.d[1]
+	udiv	x13, x11, x12
+	udiv	x10, x9, x8
+	udiv	x16, x14, x15
+	msub	x8, x10, x8, x9
+	msub	x9, x13, x12, x11
+	fmov	d0, x9
+	mov	v0.d[1], x8
+	udiv	x0, x17, x18
+	msub	x10, x16, x15, x14
+	fmov	d1, x10
+	msub	x11, x0, x18, x17
+	mov	v1.d[1], x11
 	ret
                                         // -- End function

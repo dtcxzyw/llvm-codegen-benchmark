@@ -1,30 +1,75 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	x9, #62067                      // =0xf273
-	add	x8, x0, x1
-	movk	x9, #48792, lsl #16
-	eor	x8, x8, x8, lsr #47
-	movk	x9, #46703, lsl #32
-	movk	x9, #46226, lsl #48
-	mul	x0, x8, x9
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
+	mov	x8, #62067                      // =0xf273
+	movk	x8, #48792, lsl #16
+	movk	x8, #46703, lsl #32
+	ushr	v2.2d, v0.2d, #47
+	ushr	v3.2d, v1.2d, #47
+	movk	x8, #46226, lsl #48
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
+	fmov	x9, d0
+	fmov	x11, d1
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d0, x9
+	mul	x8, x12, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	x8, x0, x1
-	mov	w9, #265                        // =0x109
-	eor	x8, x8, x8, lsr #24
-	mul	x0, x8, x9
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
+	mov	w8, #265                        // =0x109
+	ushr	v2.2d, v0.2d, #24
+	ushr	v3.2d, v1.2d, #24
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
+	fmov	x9, d0
+	fmov	x11, d1
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d0, x9
+	mul	x8, x12, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	x9, #64915                      // =0xfd93
-	add	x8, x0, x1
-	movk	x9, #26201, lsl #16
-	eor	x8, x8, x8, lsr #32
-	movk	x9, #65208, lsl #32
-	movk	x9, #55016, lsl #48
-	mul	x0, x8, x9
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v3.2d
+	mov	x8, #64915                      // =0xfd93
+	movk	x8, #26201, lsl #16
+	movk	x8, #65208, lsl #32
+	ushr	v2.2d, v0.2d, #32
+	ushr	v3.2d, v1.2d, #32
+	movk	x8, #55016, lsl #48
+	eor	v0.16b, v2.16b, v0.16b
+	eor	v1.16b, v3.16b, v1.16b
+	fmov	x9, d0
+	fmov	x11, d1
+	mov	x10, v0.d[1]
+	mov	x12, v1.d[1]
+	mul	x9, x9, x8
+	mul	x11, x11, x8
+	mul	x10, x10, x8
+	fmov	d0, x9
+	mul	x8, x12, x8
+	fmov	d1, x11
+	mov	v0.d[1], x10
+	mov	v1.d[1], x8
 	ret
                                         // -- End function

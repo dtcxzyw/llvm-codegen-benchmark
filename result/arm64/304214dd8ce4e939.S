@@ -1,7 +1,23 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	d3, #0000000000000000
-	fsub	s1, s1, s2
-	fnmsub	s0, s0, s3, s1
+	ldp	q17, q16, [sp]
+	ldp	q19, q18, [sp, #32]
+	fsub	v17.4s, v4.4s, v17.4s
+	fsub	v4.4s, v5.4s, v16.4s
+	fsub	v16.4s, v6.4s, v19.4s
+	fsub	v6.4s, v7.4s, v18.4s
+	movi	v18.2d, #0000000000000000
+	fneg	v4.4s, v4.4s
+	fneg	v5.4s, v17.4s
+	fneg	v6.4s, v6.4s
+	fneg	v7.4s, v16.4s
+	fmla	v5.4s, v18.4s, v0.4s
+	fmla	v4.4s, v18.4s, v1.4s
+	fmla	v7.4s, v18.4s, v2.4s
+	fmla	v6.4s, v18.4s, v3.4s
+	mov	v0.16b, v5.16b
+	mov	v1.16b, v4.16b
+	mov	v2.16b, v7.16b
+	mov	v3.16b, v6.16b
 	ret
                                         // -- End function

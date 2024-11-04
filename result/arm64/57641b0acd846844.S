@@ -1,9 +1,18 @@
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	lsr	x8, x1, #16
-	cmp	x1, #16, lsl #12                // =65536
-	csel	x8, x1, x8, lo
-	cmp	x8, #256
-	csel	x0, x8, x0, lo
+	mov	w8, #65536                      // =0x10000
+	ushr	v5.2d, v3.2d, #16
+	ushr	v6.2d, v2.2d, #16
+	dup	v4.2d, x8
+	mov	w8, #256                        // =0x100
+	cmhi	v7.2d, v4.2d, v3.2d
+	cmhi	v4.2d, v4.2d, v2.2d
+	bif	v2.16b, v6.16b, v4.16b
+	bif	v3.16b, v5.16b, v7.16b
+	dup	v4.2d, x8
+	cmhi	v5.2d, v4.2d, v3.2d
+	cmhi	v4.2d, v4.2d, v2.2d
+	bit	v0.16b, v2.16b, v4.16b
+	bit	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

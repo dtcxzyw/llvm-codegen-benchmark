@@ -1,5 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sbfx	w0, w0, #5, #11
+	sshr	v0.8h, v0.8h, #5
+	sshll2	v1.4s, v0.8h, #0
+	sshll	v0.4s, v0.4h, #0
 	ret
                                         // -- End function

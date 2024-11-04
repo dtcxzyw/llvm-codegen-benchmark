@@ -1,17 +1,39 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #2139095039                 // =0x7f7fffff
-	fmov	s3, w8
-	fminnm	s2, s2, s3
-	fsub	s1, s2, s1
-	fmul	s0, s1, s0
+	mvni	v16.4s, #128, lsl #16
+	ldp	q17, q18, [sp]
+	ldp	q20, q19, [sp, #32]
+	fneg	v16.4s, v16.4s
+	fminnm	v17.4s, v17.4s, v16.4s
+	fminnm	v18.4s, v18.4s, v16.4s
+	fminnm	v20.4s, v20.4s, v16.4s
+	fminnm	v16.4s, v19.4s, v16.4s
+	fsub	v4.4s, v17.4s, v4.4s
+	fsub	v6.4s, v20.4s, v6.4s
+	fsub	v5.4s, v18.4s, v5.4s
+	fsub	v7.4s, v16.4s, v7.4s
+	fmul	v0.4s, v4.4s, v0.4s
+	fmul	v1.4s, v5.4s, v1.4s
+	fmul	v2.4s, v6.4s, v2.4s
+	fmul	v3.4s, v7.4s, v3.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	d3, #0000000000000000
-	fmaxnm	s2, s2, s3
-	fsub	s1, s2, s1
-	fmul	s0, s1, s0
+	movi	v16.2d, #0000000000000000
+	ldp	q17, q18, [sp]
+	ldp	q20, q19, [sp, #32]
+	fmaxnm	v17.4s, v17.4s, v16.4s
+	fmaxnm	v18.4s, v18.4s, v16.4s
+	fmaxnm	v20.4s, v20.4s, v16.4s
+	fmaxnm	v16.4s, v19.4s, v16.4s
+	fsub	v4.4s, v17.4s, v4.4s
+	fsub	v6.4s, v20.4s, v6.4s
+	fsub	v5.4s, v18.4s, v5.4s
+	fsub	v7.4s, v16.4s, v7.4s
+	fmul	v0.4s, v4.4s, v0.4s
+	fmul	v1.4s, v5.4s, v1.4s
+	fmul	v2.4s, v6.4s, v2.4s
+	fmul	v3.4s, v7.4s, v3.4s
 	ret
                                         // -- End function

@@ -1,60 +1,80 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	umull	x0, w0, w8
+	movi	v2.4s, #1
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	umull	x0, w0, w8
+	movi	v2.4s, #1
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	add	w8, w1, #2
-	umull	x0, w0, w8
+	movi	v2.4s, #2
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	add	w8, w1, #1
-	umull	x0, w8, w0
+	movi	v2.4s, #1
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v2.4s, v0.4s
+	umull	v0.2d, v2.2s, v0.2s
 	ret
                                         // -- End function
 func0000000000000037:                   // @func0000000000000037
 // %bb.0:                               // %entry
-	add	w8, w1, #16
-	umull	x0, w8, w0
+	movi	v2.4s, #16
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v2.4s, v0.4s
+	umull	v0.2d, v2.2s, v0.2s
 	ret
                                         // -- End function
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	add	w8, w1, #16
-	umull	x0, w0, w8
+	movi	v2.4s, #16
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	add	w8, w1, #24
-	umull	x0, w0, w8
+	movi	v2.4s, #24
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	sub	w8, w1, #2
-	umull	x0, w8, w0
+	mvni	v2.4s, #1
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v2.4s, v0.4s
+	umull	v0.2d, v2.2s, v0.2s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	add	w8, w1, #24
-	umull	x0, w8, w0
+	movi	v2.4s, #24
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v2.4s, v0.4s
+	umull	v0.2d, v2.2s, v0.2s
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	umull	x0, w0, w8
+	movi	v2.2d, #0xffffffffffffffff
+	add	v2.4s, v1.4s, v2.4s
+	umull2	v1.2d, v0.4s, v2.4s
+	umull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function

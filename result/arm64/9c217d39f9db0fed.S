@@ -1,22 +1,74 @@
-.LCPI0_0:
-	.xword	0x3ff921fb54442d18              // double 1.5707963267948966
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI0_0
-	ldr	d2, [x8, :lo12:.LCPI0_0]
-	fmul	d1, d1, d2
-	fabs	d1, d1
-	fadd	d0, d1, d0
+	mov	x8, #11544                      // =0x2d18
+	ldp	q18, q17, [sp, #64]
+	movk	x8, #21572, lsl #16
+	ldp	q20, q19, [sp]
+	movk	x8, #8699, lsl #32
+	ldp	q22, q21, [sp, #32]
+	movk	x8, #16377, lsl #48
+	ldp	q24, q23, [sp, #96]
+	dup	v16.2d, x8
+	fmul	v20.2d, v20.2d, v16.2d
+	fmul	v19.2d, v19.2d, v16.2d
+	fmul	v22.2d, v22.2d, v16.2d
+	fmul	v21.2d, v21.2d, v16.2d
+	fmul	v18.2d, v18.2d, v16.2d
+	fmul	v17.2d, v17.2d, v16.2d
+	fmul	v24.2d, v24.2d, v16.2d
+	fmul	v16.2d, v23.2d, v16.2d
+	fabs	v19.2d, v19.2d
+	fabs	v20.2d, v20.2d
+	fabs	v22.2d, v22.2d
+	fabs	v18.2d, v18.2d
+	fabs	v21.2d, v21.2d
+	fabs	v17.2d, v17.2d
+	fabs	v16.2d, v16.2d
+	fabs	v23.2d, v24.2d
+	fadd	v0.2d, v20.2d, v0.2d
+	fadd	v1.2d, v19.2d, v1.2d
+	fadd	v2.2d, v22.2d, v2.2d
+	fadd	v3.2d, v21.2d, v3.2d
+	fadd	v4.2d, v18.2d, v4.2d
+	fadd	v5.2d, v17.2d, v5.2d
+	fadd	v6.2d, v23.2d, v6.2d
+	fadd	v7.2d, v16.2d, v7.2d
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0x3f92f684bda12f68              // double 0.018518518518518517
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI1_0
-	ldr	d2, [x8, :lo12:.LCPI1_0]
-	fmul	d1, d1, d2
-	fabs	d1, d1
-	fadd	d0, d1, d0
+	mov	x8, #12136                      // =0x2f68
+	ldp	q18, q17, [sp, #64]
+	movk	x8, #48545, lsl #16
+	ldp	q20, q19, [sp]
+	movk	x8, #63108, lsl #32
+	ldp	q22, q21, [sp, #32]
+	movk	x8, #16274, lsl #48
+	ldp	q24, q23, [sp, #96]
+	dup	v16.2d, x8
+	fmul	v20.2d, v20.2d, v16.2d
+	fmul	v19.2d, v19.2d, v16.2d
+	fmul	v22.2d, v22.2d, v16.2d
+	fmul	v21.2d, v21.2d, v16.2d
+	fmul	v18.2d, v18.2d, v16.2d
+	fmul	v17.2d, v17.2d, v16.2d
+	fmul	v24.2d, v24.2d, v16.2d
+	fmul	v16.2d, v23.2d, v16.2d
+	fabs	v19.2d, v19.2d
+	fabs	v20.2d, v20.2d
+	fabs	v22.2d, v22.2d
+	fabs	v18.2d, v18.2d
+	fabs	v21.2d, v21.2d
+	fabs	v17.2d, v17.2d
+	fabs	v16.2d, v16.2d
+	fabs	v23.2d, v24.2d
+	fadd	v0.2d, v20.2d, v0.2d
+	fadd	v1.2d, v19.2d, v1.2d
+	fadd	v2.2d, v22.2d, v2.2d
+	fadd	v3.2d, v21.2d, v3.2d
+	fadd	v4.2d, v18.2d, v4.2d
+	fadd	v5.2d, v17.2d, v5.2d
+	fadd	v6.2d, v23.2d, v6.2d
+	fadd	v7.2d, v16.2d, v7.2d
 	ret
                                         // -- End function

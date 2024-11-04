@@ -1,18 +1,55 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ubfx	x9, x1, #13, #1
+	mov	w8, #8192                       // =0x2000
+	dup	v3.2d, x8
 	mov	w8, #3                          // =0x3
-	tst	w9, w0
-	csinc	x0, x8, xzr, ne
+	and	v1.16b, v1.16b, v3.16b
+	and	v2.16b, v2.16b, v3.16b
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	dup	v2.2d, x8
+	mvn	v1.16b, v1.16b
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shl	v1.2d, v1.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	and	v3.16b, v1.16b, v2.16b
+	mvn	v1.16b, v1.16b
+	and	v2.16b, v0.16b, v2.16b
+	mvn	v0.16b, v0.16b
+	sub	v1.2d, v3.2d, v1.2d
+	sub	v0.2d, v2.2d, v0.2d
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	tst	x1, #0x2
+	mov	w8, #2                          // =0x2
+	dup	v3.2d, x8
 	mov	w8, #15                         // =0xf
-	cset	w9, eq
-	tst	w9, w0
-	mov	w9, #5                          // =0x5
-	csel	x0, x9, x8, ne
+	and	v1.16b, v1.16b, v3.16b
+	and	v2.16b, v2.16b, v3.16b
+	cmeq	v2.2d, v2.2d, #0
+	cmeq	v1.2d, v1.2d, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	dup	v2.2d, x8
+	mov	w8, #5                          // =0x5
+	dup	v3.2d, x8
+	xtn	v1.4h, v1.4s
+	and	v0.8b, v1.8b, v0.8b
+	ushll	v0.4s, v0.4h, #0
+	ushll2	v1.2d, v0.4s, #0
+	ushll	v0.2d, v0.2s, #0
+	shl	v1.2d, v1.2d, #63
+	shl	v0.2d, v0.2d, #63
+	cmlt	v1.2d, v1.2d, #0
+	cmlt	v0.2d, v0.2d, #0
+	bsl	v1.16b, v3.16b, v2.16b
+	bsl	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function

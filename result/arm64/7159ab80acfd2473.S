@@ -1,43 +1,48 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sxth	w8, w0
-	cmp	w8, #20
-	orr	w8, w1, w2
-	cset	w9, gt
-	and	w0, w9, w8
+	movi	v4.8h, #20
+	cmgt	v1.8h, v1.8h, v4.8h
+	cmgt	v0.8h, v0.8h, v4.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	orr	v1.16b, v2.16b, v3.16b
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w0, #0xffff
-	cmp	w8, #1
-	orr	w8, w1, w2
-	cset	w9, ne
-	and	w0, w9, w8
+	movi	v4.8h, #1
+	cmeq	v1.8h, v1.8h, v4.8h
+	cmeq	v0.8h, v0.8h, v4.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	orr	v1.16b, v2.16b, v3.16b
+	bic	v0.16b, v1.16b, v0.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0xffff
-	cmp	w8, #3
-	orr	w8, w1, w2
-	cset	w9, eq
-	and	w0, w9, w8
+	movi	v4.8h, #3
+	cmeq	v1.8h, v1.8h, v4.8h
+	cmeq	v0.8h, v0.8h, v4.8h
+	uzp1	v0.16b, v0.16b, v1.16b
+	orr	v1.16b, v2.16b, v3.16b
+	and	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
-	orr	w9, w0, w1
-	cset	w8, eq
-	and	w0, w9, w8
+	cmeq	v3.8h, v3.8h, #0
+	cmeq	v2.8h, v2.8h, #0
+	orr	v0.16b, v0.16b, v1.16b
+	uzp1	v2.16b, v2.16b, v3.16b
+	and	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	tst	w2, #0xffff
-	orr	w9, w0, w1
-	cset	w8, ne
-	and	w0, w9, w8
+	cmeq	v3.8h, v3.8h, #0
+	cmeq	v2.8h, v2.8h, #0
+	orr	v0.16b, v0.16b, v1.16b
+	uzp1	v2.16b, v2.16b, v3.16b
+	bic	v0.16b, v0.16b, v2.16b
 	ret
                                         // -- End function

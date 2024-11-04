@@ -1,7 +1,11 @@
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	clz	w8, w0
-	sub	w8, w8, #8
-	lsl	w0, w0, w8
+	clz	v3.4s, v0.4s
+	clz	v4.4s, v1.4s
+	mvni	v2.4s, #7
+	add	v4.4s, v4.4s, v2.4s
+	add	v2.4s, v3.4s, v2.4s
+	ushl	v0.4s, v0.4s, v2.4s
+	ushl	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function

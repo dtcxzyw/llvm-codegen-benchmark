@@ -1,22 +1,32 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmul	s0, s0, s1
-	fmov	s2, #0.50000000
-	fmov	s1, #-0.50000000
-	fcmp	s0, #0.0
-	fcsel	s1, s1, s2, mi
-	fadd	s0, s0, s1
-	fcvtzs	w0, s0
+	fmul	v1.4s, v1.4s, v3.4s
+	fmul	v0.4s, v0.4s, v2.4s
+	movi	v4.4s, #63, lsl #24
+	movi	v5.4s, #191, lsl #24
+	fcmlt	v2.4s, v1.4s, #0.0
+	fcmlt	v3.4s, v0.4s, #0.0
+	bsl	v3.16b, v5.16b, v4.16b
+	bsl	v2.16b, v5.16b, v4.16b
+	fadd	v1.4s, v1.4s, v2.4s
+	fadd	v0.4s, v0.4s, v3.4s
+	fcvtzs	v0.4s, v0.4s
+	fcvtzs	v1.4s, v1.4s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fmul	s0, s0, s1
-	fmov	s2, #-0.50000000
-	fmov	s1, #0.50000000
-	fcmp	s0, #0.0
-	fcsel	s1, s1, s2, ge
-	fadd	s0, s1, s0
-	fcvtzs	w0, s0
+	fmul	v1.4s, v1.4s, v3.4s
+	fmul	v0.4s, v0.4s, v2.4s
+	movi	v4.4s, #191, lsl #24
+	movi	v5.4s, #63, lsl #24
+	fcmge	v2.4s, v1.4s, #0.0
+	fcmge	v3.4s, v0.4s, #0.0
+	bsl	v3.16b, v5.16b, v4.16b
+	bsl	v2.16b, v5.16b, v4.16b
+	fadd	v1.4s, v2.4s, v1.4s
+	fadd	v0.4s, v3.4s, v0.4s
+	fcvtzs	v0.4s, v0.4s
+	fcvtzs	v1.4s, v1.4s
 	ret
                                         // -- End function

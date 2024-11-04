@@ -1,14 +1,30 @@
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	lsl	x8, x2, #1
-	cmp	w1, #0
-	csinc	x0, x0, x8, ge
+	mov	w8, #1                          // =0x1
+	add	v4.2d, v4.2d, v4.2d
+	add	v3.2d, v3.2d, v3.2d
+	dup	v5.2d, x8
+	cmlt	v2.4s, v2.4s, #0
+	orr	v4.16b, v4.16b, v5.16b
+	orr	v3.16b, v3.16b, v5.16b
+	sshll2	v5.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
+	bit	v1.16b, v4.16b, v5.16b
+	bit	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	lsl	x8, x2, #1
-	cmp	w1, #0
-	csinc	x0, x0, x8, le
+	mov	w8, #1                          // =0x1
+	add	v4.2d, v4.2d, v4.2d
+	add	v3.2d, v3.2d, v3.2d
+	dup	v5.2d, x8
+	cmgt	v2.4s, v2.4s, #0
+	orr	v4.16b, v4.16b, v5.16b
+	orr	v3.16b, v3.16b, v5.16b
+	sshll2	v5.2d, v2.4s, #0
+	sshll	v2.2d, v2.2s, #0
+	bit	v1.16b, v4.16b, v5.16b
+	bit	v0.16b, v3.16b, v2.16b
 	ret
                                         // -- End function

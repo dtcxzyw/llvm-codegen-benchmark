@@ -1,35 +1,65 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sub	x8, x1, #64
-	cmp	x8, #0
-	csel	x0, x0, x8, lt
+	mov	x8, #-64                        // =0xffffffffffffffc0
+	dup	v4.2d, x8
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	cmlt	v4.2d, v3.2d, #0
+	cmlt	v5.2d, v2.2d, #0
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	sub	x8, x1, #5
-	cmp	x8, #3
-	csel	x0, x0, x8, hi
+	mov	x8, #-5                         // =0xfffffffffffffffb
+	dup	v4.2d, x8
+	mov	w8, #3                          // =0x3
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	dup	v4.2d, x8
+	cmhi	v5.2d, v3.2d, v4.2d
+	cmhi	v4.2d, v2.2d, v4.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	adds	x8, x1, #1
-	csel	x0, x0, x8, hs
+	mov	w8, #1                          // =0x1
+	dup	v4.2d, x8
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	cmeq	v4.2d, v3.2d, #0
+	cmeq	v5.2d, v2.2d, #0
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	add	x8, x1, #1
-	cmn	x8, #1
-	csinc	x0, x0, x1, eq
+	mov	w8, #1                          // =0x1
+	movi	v5.2d, #0xffffffffffffffff
+	dup	v4.2d, x8
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	cmeq	v4.2d, v3.2d, v5.2d
+	cmeq	v5.2d, v2.2d, v5.2d
+	bif	v0.16b, v2.16b, v5.16b
+	bif	v1.16b, v3.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
 	mov	w8, #16383                      // =0x3fff
-	add	x8, x1, x8
-	cmp	x8, #1
-	csel	x0, x0, x8, eq
+	dup	v4.2d, x8
+	mov	w8, #1                          // =0x1
+	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	dup	v4.2d, x8
+	cmeq	v5.2d, v3.2d, v4.2d
+	cmeq	v4.2d, v2.2d, v4.2d
+	bif	v0.16b, v2.16b, v4.16b
+	bif	v1.16b, v3.16b, v5.16b
 	ret
                                         // -- End function

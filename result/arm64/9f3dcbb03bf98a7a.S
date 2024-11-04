@@ -1,68 +1,99 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	mov	w8, #-100                       // =0xffffff9c
-	mov	w9, #12800                      // =0x3200
-	madd	w8, w1, w8, w0
-	add	w0, w8, w9
+	mvni	v4.4s, #99
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	movi	v2.4s, #50, lsl #8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	mov	w8, #510                        // =0x1fe
-	madd	w8, w1, w8, w0
-	add	w0, w8, #510
+	dup	v4.4s, w8
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	mov	w8, #94                         // =0x5e
-	mov	w9, #-15134                     // =0xffffc4e2
-	madd	w8, w1, w8, w0
-	add	w0, w8, w9
+	movi	v4.4s, #94
+	mov	w8, #-15134                     // =0xffffc4e2
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	dup	v2.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sub	w8, w1, w1, lsl #2
-	add	w8, w8, w0
-	add	w0, w8, #3
+	mvni	v4.4s, #2
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	movi	v2.4s, #3
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	madd	w8, w1, w8, w0
-	add	w8, w8, #427, lsl #12           // =1748992
-	add	w0, w8, #3008
+	dup	v4.4s, w8
+	mov	w8, #48064                      // =0xbbc0
+	movk	w8, #26, lsl #16
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	dup	v2.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
 	mov	w8, #400                        // =0x190
-	madd	w8, w1, w8, w0
-	add	w0, w8, #400
+	dup	v4.4s, w8
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	add	v0.4s, v0.4s, v4.4s
+	add	v1.4s, v1.4s, v4.4s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	w8, w1, w1, lsl #1
-	add	w8, w8, w0
-	sub	w0, w8, #3
+	movi	v4.4s, #3
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	mvni	v2.4s, #2
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #21                         // =0x15
-	madd	w8, w1, w8, w0
-	sub	w8, w8, #22, lsl #12            // =90112
-	sub	w0, w8, #1280
+	movi	v4.4s, #21
+	mov	w8, #39680                      // =0x9b00
+	movk	w8, #65534, lsl #16
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	dup	v2.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	mov	w8, #365                        // =0x16d
-	madd	w8, w1, w8, w0
-	add	w8, w8, #169, lsl #12           // =692224
-	add	w0, w8, #911
+	dup	v4.4s, w8
+	mov	w8, #37775                      // =0x938f
+	movk	w8, #10, lsl #16
+	mla	v1.4s, v3.4s, v4.4s
+	mla	v0.4s, v2.4s, v4.4s
+	dup	v2.4s, w8
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v2.4s
 	ret
                                         // -- End function

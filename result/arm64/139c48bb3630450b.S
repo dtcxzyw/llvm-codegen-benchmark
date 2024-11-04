@@ -1,26 +1,33 @@
 func0000000000000060:                   // @func0000000000000060
 // %bb.0:                               // %entry
-	tst	w1, #0xffff
-	cinc	w0, w0, ne
+	cmtst	v3.8h, v3.8h, v3.8h
+	cmtst	v2.8h, v2.8h, v2.8h
+	sub	v0.8h, v0.8h, v2.8h
+	sub	v1.8h, v1.8h, v3.8h
 	ret
                                         // -- End function
 func0000000000000063:                   // @func0000000000000063
 // %bb.0:                               // %entry
-	tst	w1, #0xffff
-	cinc	w0, w0, ne
+	cmtst	v3.8h, v3.8h, v3.8h
+	cmtst	v2.8h, v2.8h, v2.8h
+	sub	v0.8h, v0.8h, v2.8h
+	sub	v1.8h, v1.8h, v3.8h
 	ret
                                         // -- End function
 func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
-	mov	w8, #32768                      // =0x8000
-	bic	w8, w8, w1
-	add	w0, w0, w8, lsr #15
+	cmge	v3.8h, v3.8h, #0
+	cmge	v2.8h, v2.8h, #0
+	sub	v0.8h, v0.8h, v2.8h
+	sub	v1.8h, v1.8h, v3.8h
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	mov	w8, #65533                      // =0xfffd
-	cmp	w8, w1, uxth
-	cinc	w0, w0, lo
+	mvni	v4.8h, #2
+	cmhi	v3.8h, v3.8h, v4.8h
+	cmhi	v2.8h, v2.8h, v4.8h
+	sub	v0.8h, v0.8h, v2.8h
+	sub	v1.8h, v1.8h, v3.8h
 	ret
                                         // -- End function

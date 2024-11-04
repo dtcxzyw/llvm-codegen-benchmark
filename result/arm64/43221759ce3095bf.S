@@ -1,55 +1,108 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	mov	w8, #2097151                    // =0x1fffff
-	mov	w9, #2097152                    // =0x200000
-	add	x8, x0, x8
-	and	x8, x8, #0xfffffffe00000
-	cmp	x8, #512, lsl #12               // =2097152
-	csel	x0, x8, x9, hi
+	dup	v2.2d, x8
+	mov	x8, #4503599625273344           // =0xfffffffe00000
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
+	mov	w8, #2097152                    // =0x200000
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	x9, x0, #7
+	mov	w8, #7                          // =0x7
+	dup	v2.2d, x8
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
 	mov	w8, #32728                      // =0x7fd8
-	and	x9, x9, #0xfffffffffffffff8
-	cmp	x9, x8
-	csel	x0, x9, x8, hi
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #16777215                   // =0xffffff
-	mov	w9, #16777216                   // =0x1000000
-	add	x8, x0, x8
-	and	x8, x8, #0xffffffffff000000
-	cmp	x8, x9
-	csel	x0, x8, x9, hi
+	movi	v2.2d, #0x00000000ffffff
+	movi	v3.2d, #0xffffffffff000000
+	mov	w8, #16777216                   // =0x1000000
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
+	and	v1.16b, v1.16b, v3.16b
+	and	v0.16b, v0.16b, v3.16b
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	add	w8, w0, #1
-	and	x9, x8, #0x7fffffff
-	tst	x8, #0x7ffffffe
-	csinc	x0, x9, xzr, ne
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	mov	w8, #2147483647                 // =0x7fffffff
+	dup	v3.2d, x8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	and	v0.16b, v0.16b, v3.16b
+	and	v1.16b, v1.16b, v3.16b
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v2.2d, v1.2d, v2.2d
+	and	v0.16b, v0.16b, v3.16b
+	mvn	v3.16b, v3.16b
+	and	v1.16b, v1.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v0.2d, v0.2d, v3.2d
+	sub	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	add	x9, x0, #1
+	mov	w8, #1                          // =0x1
+	dup	v2.2d, x8
+	mov	x8, #2305843009213693950        // =0x1ffffffffffffffe
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
 	mov	w8, #2                          // =0x2
-	and	x9, x9, #0x1ffffffffffffffe
-	cmp	x9, #2
-	csel	x0, x9, x8, hi
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	x9, x0, #7
+	mov	w8, #7                          // =0x7
+	dup	v2.2d, x8
+	mov	x8, #-8                         // =0xfffffffffffffff8
+	add	v0.2d, v0.2d, v2.2d
+	add	v1.2d, v1.2d, v2.2d
+	dup	v2.2d, x8
 	mov	w8, #8016                       // =0x1f50
-	and	x9, x9, #0xfffffffffffffff8
-	cmp	x9, x8
-	csel	x0, x9, x8, hi
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2d, x8
+	cmhi	v3.2d, v0.2d, v2.2d
+	cmhi	v4.2d, v1.2d, v2.2d
+	bif	v0.16b, v2.16b, v3.16b
+	bif	v1.16b, v2.16b, v4.16b
 	ret
                                         // -- End function

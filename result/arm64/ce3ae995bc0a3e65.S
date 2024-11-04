@@ -1,30 +1,40 @@
 func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sxtw	x8, w0
-	cmp	x8, x1
-	csel	w8, w1, w0, hi
-	cmp	w8, #0
-	cset	w0, ne
+	sshll	v3.2d, v0.2s, #0
+	sshll2	v4.2d, v0.4s, #0
+	cmhi	v4.2d, v4.2d, v2.2d
+	cmhi	v3.2d, v3.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	uzp1	v3.4s, v3.4s, v4.4s
+	bit	v0.16b, v1.16b, v3.16b
+	cmtst	v0.4s, v0.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sxtw	x8, w0
-	cmp	x8, x1
-	csel	w8, w1, w0, hi
-	cmp	w8, #2
-	cset	w0, lt
+	sshll	v3.2d, v0.2s, #0
+	sshll2	v4.2d, v0.4s, #0
+	cmhi	v4.2d, v4.2d, v2.2d
+	cmhi	v3.2d, v3.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	uzp1	v3.4s, v3.4s, v4.4s
+	bit	v0.16b, v1.16b, v3.16b
+	movi	v1.4s, #2
+	cmgt	v0.4s, v1.4s, v0.4s
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function
 func000000000000004a:                   // @func000000000000004a
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	sxtw	x8, w0
-	cmp	x8, x1
-	csel	w8, w1, w0, hi
-	cmp	w8, #0
-	cset	w0, gt
+	sshll	v3.2d, v0.2s, #0
+	sshll2	v4.2d, v0.4s, #0
+	cmhi	v4.2d, v4.2d, v2.2d
+	cmhi	v3.2d, v3.2d, v1.2d
+	uzp1	v1.4s, v1.4s, v2.4s
+	uzp1	v3.4s, v3.4s, v4.4s
+	bit	v0.16b, v1.16b, v3.16b
+	cmgt	v0.4s, v0.4s, #0
+	xtn	v0.4h, v0.4s
 	ret
                                         // -- End function

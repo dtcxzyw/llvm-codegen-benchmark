@@ -1,36 +1,48 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mul	w8, w2, w1
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	mul	v2.4s, v3.4s, v2.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
-	mul	w8, w2, w1
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	mul	v2.4s, v3.4s, v2.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mul	w8, w2, w1
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	mul	v2.4s, v3.4s, v2.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	mul	w8, w2, w1
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	mul	v2.4s, v3.4s, v2.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	mul	w8, w2, w1
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	mul	v2.4s, v3.4s, v2.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	mul	w8, w2, w1
-	add	x0, x8, x0
+	uzp1	v3.4s, v3.4s, v4.4s
+	mul	v2.4s, v3.4s, v2.4s
+	uaddw2	v1.2d, v1.2d, v2.4s
+	uaddw	v0.2d, v0.2d, v2.2s
 	ret
                                         // -- End function

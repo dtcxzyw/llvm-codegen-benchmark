@@ -1,26 +1,43 @@
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	lsr	x8, x1, #32
-	mov	w9, #51847                      // =0xca87
-	lsr	x10, x0, #32
-	movk	w9, #34283, lsl #16
-	umaddl	x0, w8, w9, x10
+	mov	w8, #51847                      // =0xca87
+	shrn	v5.2s, v2.2d, #32
+	shrn	v2.2s, v3.2d, #32
+	movk	w8, #34283, lsl #16
+	dup	v4.2s, w8
+	umull	v2.2d, v2.2s, v4.2s
+	umull	v3.2d, v5.2s, v4.2s
+	usra	v3.2d, v0.2d, #32
+	usra	v2.2d, v1.2d, #32
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	lsr	x8, x1, #32
-	mov	w9, #60239                      // =0xeb4f
-	lsr	x10, x0, #32
-	movk	w9, #10196, lsl #16
-	umaddl	x0, w8, w9, x10
+	mov	w8, #60239                      // =0xeb4f
+	shrn	v5.2s, v2.2d, #32
+	shrn	v2.2s, v3.2d, #32
+	movk	w8, #10196, lsl #16
+	dup	v4.2s, w8
+	umull	v2.2d, v2.2s, v4.2s
+	umull	v3.2d, v5.2s, v4.2s
+	usra	v3.2d, v0.2d, #32
+	usra	v2.2d, v1.2d, #32
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	lsr	x8, x1, #32
-	mov	w9, #-100                       // =0xffffff9c
-	lsr	x10, x0, #32
-	umaddl	x0, w8, w9, x10
+	shrn	v4.2s, v2.2d, #32
+	shrn	v2.2s, v3.2d, #32
+	mvni	v3.2s, #99
+	umull	v2.2d, v2.2s, v3.2s
+	umull	v3.2d, v4.2s, v3.2s
+	usra	v3.2d, v0.2d, #32
+	usra	v2.2d, v1.2d, #32
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v2.16b
 	ret
                                         // -- End function

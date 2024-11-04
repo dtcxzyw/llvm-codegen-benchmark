@@ -1,13 +1,16 @@
 func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	orr	w9, w0, w1, lsl #8
+	shl	v2.4s, v2.4s, #8
+	shl	v3.4s, v3.4s, #8
 	mov	w8, #31711                      // =0x7bdf
-	movk	w8, #48623, lsl #16
-	and	w9, w9, #0xffff
-	mul	w8, w9, w8
-	mov	w9, #4229                       // =0x1085
-	movk	w9, #2114, lsl #16
-	cmp	w8, w9
-	cset	w0, lo
+	orr	v1.16b, v3.16b, v1.16b
+	orr	v0.16b, v2.16b, v0.16b
+	uzp1	v0.8h, v0.8h, v1.8h
+	dup	v1.8h, w8
+	mov	w8, #2114                       // =0x842
+	mul	v0.8h, v0.8h, v1.8h
+	dup	v1.8h, w8
+	cmhs	v0.8h, v1.8h, v0.8h
+	xtn	v0.8b, v0.8h
 	ret
                                         // -- End function

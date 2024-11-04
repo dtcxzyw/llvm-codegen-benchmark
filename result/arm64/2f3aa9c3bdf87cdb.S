@@ -1,13 +1,29 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	s2, #1.00000000
+	fmov	v16.4s, #1.00000000
 	mov	w8, #65280                      // =0xff00
-	and	w9, w0, #0xffff
+	ushll2	v19.4s, v0.8h, #0
 	movk	w8, #18303, lsl #16
-	fdiv	s0, s2, s0
-	fmov	s2, w8
-	fmul	s1, s1, s2
-	ucvtf	s2, w9
-	fmadd	s0, s2, s0, s1
+	ushll	v20.4s, v1.4h, #0
+	ushll2	v21.4s, v1.8h, #0
+	fdiv	v4.4s, v16.4s, v4.4s
+	fdiv	v17.4s, v16.4s, v2.4s
+	ldp	q2, q22, [sp]
+	fdiv	v18.4s, v16.4s, v3.4s
+	dup	v3.4s, w8
+	fmul	v2.4s, v2.4s, v3.4s
+	fmul	v1.4s, v7.4s, v3.4s
+	ucvtf	v7.4s, v19.4s
+	ucvtf	v19.4s, v21.4s
+	fdiv	v5.4s, v16.4s, v5.4s
+	ushll	v16.4s, v0.4h, #0
+	fmul	v0.4s, v6.4s, v3.4s
+	fmul	v3.4s, v22.4s, v3.4s
+	ucvtf	v6.4s, v16.4s
+	ucvtf	v16.4s, v20.4s
+	fmla	v1.4s, v18.4s, v7.4s
+	fmla	v0.4s, v17.4s, v6.4s
+	fmla	v2.4s, v4.4s, v16.4s
+	fmla	v3.4s, v5.4s, v19.4s
 	ret
                                         // -- End function

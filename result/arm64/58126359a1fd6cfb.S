@@ -1,16 +1,36 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmp	x0, #1
-	csinc	x8, x0, xzr, hi
-	ucvtf	d1, x8
-	fdiv	d0, d0, d1
+	mov	w8, #1                          // =0x1
+	dup	v4.2d, x8
+	cmhi	v5.2d, v2.2d, v4.2d
+	and	v2.16b, v2.16b, v5.16b
+	mvn	v5.16b, v5.16b
+	sub	v2.2d, v2.2d, v5.2d
+	ucvtf	v2.2d, v2.2d
+	fdiv	v0.2d, v0.2d, v2.2d
+	cmhi	v2.2d, v3.2d, v4.2d
+	and	v3.16b, v3.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v2.2d, v3.2d, v2.2d
+	ucvtf	v2.2d, v2.2d
+	fdiv	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	cmp	x0, #1
-	csinc	x8, x0, xzr, hi
-	ucvtf	d1, x8
-	fdiv	d0, d0, d1
+	mov	w8, #1                          // =0x1
+	dup	v4.2d, x8
+	cmhi	v5.2d, v2.2d, v4.2d
+	and	v2.16b, v2.16b, v5.16b
+	mvn	v5.16b, v5.16b
+	sub	v2.2d, v2.2d, v5.2d
+	ucvtf	v2.2d, v2.2d
+	fdiv	v0.2d, v0.2d, v2.2d
+	cmhi	v2.2d, v3.2d, v4.2d
+	and	v3.16b, v3.16b, v2.16b
+	mvn	v2.16b, v2.16b
+	sub	v2.2d, v3.2d, v2.2d
+	ucvtf	v2.2d, v2.2d
+	fdiv	v1.2d, v1.2d, v2.2d
 	ret
                                         // -- End function

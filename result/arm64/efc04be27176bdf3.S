@@ -1,32 +1,40 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	lsr	w8, w1, #1
-	add	w9, w8, #1
-	cmp	w0, w9
-	csinc	w0, w0, w8, lo
+	movi	v4.4s, #1
+	movi	v5.4s, #1
+	usra	v5.4s, v3.4s, #1
+	usra	v4.4s, v2.4s, #1
+	umin	v0.4s, v0.4s, v4.4s
+	umin	v1.4s, v1.4s, v5.4s
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	lsr	w8, w1, #3
-	add	w8, w8, #4
-	cmp	w0, w8
-	csel	w0, w0, w8, lo
+	movi	v4.4s, #4
+	movi	v5.4s, #4
+	usra	v5.4s, v3.4s, #3
+	usra	v4.4s, v2.4s, #3
+	umin	v0.4s, v0.4s, v4.4s
+	umin	v1.4s, v1.4s, v5.4s
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	lsr	w8, w1, #1
-	add	w9, w8, #1
-	cmp	w9, w0
-	csinc	w0, w0, w8, hs
+	movi	v4.4s, #1
+	movi	v5.4s, #1
+	usra	v5.4s, v3.4s, #1
+	usra	v4.4s, v2.4s, #1
+	umin	v0.4s, v4.4s, v0.4s
+	umin	v1.4s, v5.4s, v1.4s
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	lsr	w8, w1, #2
-	sub	w8, w8, #4
-	cmp	w8, w0
-	csel	w0, w8, w0, lo
+	mvni	v4.4s, #3
+	mvni	v5.4s, #3
+	usra	v5.4s, v3.4s, #2
+	usra	v4.4s, v2.4s, #2
+	umin	v0.4s, v4.4s, v0.4s
+	umin	v1.4s, v5.4s, v1.4s
 	ret
                                         // -- End function

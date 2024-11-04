@@ -1,10 +1,9 @@
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
-	add	w8, w2, #7
-	cmp	w2, #0
-	csel	w8, w8, w2, lt
-	add	w8, w0, w8, asr #3
-	cmp	w8, w1
-	csel	w0, w8, w1, lt
+	cmlt	v4.4s, v3.4s, #0
+	uzp1	v1.4s, v1.4s, v2.4s
+	usra	v3.4s, v4.4s, #29
+	ssra	v0.4s, v3.4s, #3
+	smin	v0.4s, v0.4s, v1.4s
 	ret
                                         // -- End function

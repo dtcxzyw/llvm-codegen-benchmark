@@ -1,82 +1,265 @@
-.LCPI0_0:
-	.xword	0x3ddb7cdfd9d7bdbb              // double 1.0E-10
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	fabs	d0, d0
-	fmov	d1, #-1.00000000
-	adrp	x8, .LCPI0_0
-	fadd	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fabs	d0, d0
-	fcmp	d0, d1
-	cset	w0, gt
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	mov	x8, #48571                      // =0xbdbb
+	fabs	v7.2d, v7.2d
+	fmov	v16.2d, #-1.00000000
+	movk	x8, #55767, lsl #16
+	fabs	v4.2d, v4.2d
+	fabs	v5.2d, v5.2d
+	movk	x8, #31967, lsl #32
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	movk	x8, #15835, lsl #48
+	fabs	v2.2d, v2.2d
+	fadd	v7.2d, v7.2d, v16.2d
+	fadd	v6.2d, v6.2d, v16.2d
+	fadd	v3.2d, v3.2d, v16.2d
+	fadd	v5.2d, v5.2d, v16.2d
+	fadd	v4.2d, v4.2d, v16.2d
+	fadd	v1.2d, v1.2d, v16.2d
+	fadd	v0.2d, v0.2d, v16.2d
+	fadd	v2.2d, v2.2d, v16.2d
+	dup	v16.2d, x8
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	fabs	v5.2d, v5.2d
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	fabs	v2.2d, v2.2d
+	fcmgt	v7.2d, v7.2d, v16.2d
+	fcmgt	v6.2d, v6.2d, v16.2d
+	fcmgt	v3.2d, v3.2d, v16.2d
+	fcmgt	v5.2d, v5.2d, v16.2d
+	fcmgt	v4.2d, v4.2d, v16.2d
+	fcmgt	v1.2d, v1.2d, v16.2d
+	fcmgt	v0.2d, v0.2d, v16.2d
+	fcmgt	v2.2d, v2.2d, v16.2d
+	uzp1	v6.4s, v6.4s, v7.4s
+	uzp1	v4.4s, v4.4s, v5.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v1.8h, v4.8h, v6.8h
+	uzp1	v0.8h, v0.8h, v2.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
-.LCPI1_0:
-	.xword	0xc01921fb54442d18              // double -6.2831853071795862
-.LCPI1_1:
-	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fabs	d0, d0
-	adrp	x8, .LCPI1_0
-	ldr	d1, [x8, :lo12:.LCPI1_0]
-	adrp	x8, .LCPI1_1
-	fadd	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI1_1]
-	fabs	d0, d0
-	fcmp	d0, d1
-	cset	w0, mi
+	mov	x8, #11544                      // =0x2d18
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	movk	x8, #21572, lsl #16
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	movk	x8, #8699, lsl #32
+	fabs	v5.2d, v5.2d
+	fabs	v0.2d, v0.2d
+	movk	x8, #49177, lsl #48
+	fabs	v1.2d, v1.2d
+	fabs	v2.2d, v2.2d
+	dup	v16.2d, x8
+	mov	x8, #60813                      // =0xed8d
+	movk	x8, #41141, lsl #16
+	movk	x8, #50935, lsl #32
+	fadd	v7.2d, v7.2d, v16.2d
+	fadd	v6.2d, v6.2d, v16.2d
+	fadd	v3.2d, v3.2d, v16.2d
+	fadd	v5.2d, v5.2d, v16.2d
+	fadd	v4.2d, v4.2d, v16.2d
+	fadd	v2.2d, v2.2d, v16.2d
+	fadd	v1.2d, v1.2d, v16.2d
+	fadd	v0.2d, v0.2d, v16.2d
+	movk	x8, #16048, lsl #48
+	dup	v16.2d, x8
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	fabs	v5.2d, v5.2d
+	fabs	v2.2d, v2.2d
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	fcmgt	v7.2d, v16.2d, v7.2d
+	fcmgt	v6.2d, v16.2d, v6.2d
+	fcmgt	v3.2d, v16.2d, v3.2d
+	fcmgt	v5.2d, v16.2d, v5.2d
+	fcmgt	v4.2d, v16.2d, v4.2d
+	fcmgt	v2.2d, v16.2d, v2.2d
+	fcmgt	v1.2d, v16.2d, v1.2d
+	fcmgt	v0.2d, v16.2d, v0.2d
+	uzp1	v6.4s, v6.4s, v7.4s
+	uzp1	v4.4s, v4.4s, v5.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.8h, v4.8h, v6.8h
+	uzp1	v0.8h, v0.8h, v2.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
-.LCPI2_0:
-	.xword	0xbff921fb54442d18              // double -1.5707963267948966
-.LCPI2_1:
-	.xword	0x3ddb7cdfd9d7bdbb              // double 1.0E-10
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fabs	d0, d0
-	adrp	x8, .LCPI2_0
-	ldr	d1, [x8, :lo12:.LCPI2_0]
-	adrp	x8, .LCPI2_1
-	fadd	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI2_1]
-	fabs	d0, d0
-	fcmp	d0, d1
-	cset	w0, hi
+	mov	x8, #11544                      // =0x2d18
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	movk	x8, #21572, lsl #16
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	movk	x8, #8699, lsl #32
+	fabs	v5.2d, v5.2d
+	fabs	v0.2d, v0.2d
+	movk	x8, #49145, lsl #48
+	fabs	v1.2d, v1.2d
+	fabs	v2.2d, v2.2d
+	dup	v16.2d, x8
+	mov	x8, #48571                      // =0xbdbb
+	movk	x8, #55767, lsl #16
+	movk	x8, #31967, lsl #32
+	fadd	v7.2d, v7.2d, v16.2d
+	fadd	v6.2d, v6.2d, v16.2d
+	fadd	v3.2d, v3.2d, v16.2d
+	fadd	v5.2d, v5.2d, v16.2d
+	fadd	v4.2d, v4.2d, v16.2d
+	fadd	v2.2d, v2.2d, v16.2d
+	fadd	v1.2d, v1.2d, v16.2d
+	fadd	v0.2d, v0.2d, v16.2d
+	movk	x8, #15835, lsl #48
+	dup	v16.2d, x8
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	fabs	v5.2d, v5.2d
+	fabs	v2.2d, v2.2d
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	fcmge	v7.2d, v16.2d, v7.2d
+	fcmge	v6.2d, v16.2d, v6.2d
+	fcmge	v3.2d, v16.2d, v3.2d
+	fcmge	v5.2d, v16.2d, v5.2d
+	fcmge	v4.2d, v16.2d, v4.2d
+	fcmge	v2.2d, v16.2d, v2.2d
+	fcmge	v1.2d, v16.2d, v1.2d
+	fcmge	v0.2d, v16.2d, v0.2d
+	uzp1	v6.4s, v6.4s, v7.4s
+	uzp1	v4.4s, v4.4s, v5.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.8h, v4.8h, v6.8h
+	uzp1	v0.8h, v0.8h, v2.8h
+	mvn	v1.16b, v1.16b
+	mvn	v0.16b, v0.16b
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
-.LCPI3_0:
-	.xword	0xbff921fb54442d18              // double -1.5707963267948966
-.LCPI3_1:
-	.xword	0x3ddb7cdfd9d7bdbb              // double 1.0E-10
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fabs	d0, d0
-	adrp	x8, .LCPI3_0
-	ldr	d1, [x8, :lo12:.LCPI3_0]
-	adrp	x8, .LCPI3_1
-	fadd	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI3_1]
-	fabs	d0, d0
-	fcmp	d0, d1
-	cset	w0, gt
+	mov	x8, #11544                      // =0x2d18
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	movk	x8, #21572, lsl #16
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	movk	x8, #8699, lsl #32
+	fabs	v5.2d, v5.2d
+	fabs	v0.2d, v0.2d
+	movk	x8, #49145, lsl #48
+	fabs	v1.2d, v1.2d
+	fabs	v2.2d, v2.2d
+	dup	v16.2d, x8
+	mov	x8, #48571                      // =0xbdbb
+	movk	x8, #55767, lsl #16
+	movk	x8, #31967, lsl #32
+	fadd	v7.2d, v7.2d, v16.2d
+	fadd	v6.2d, v6.2d, v16.2d
+	fadd	v3.2d, v3.2d, v16.2d
+	fadd	v5.2d, v5.2d, v16.2d
+	fadd	v4.2d, v4.2d, v16.2d
+	fadd	v2.2d, v2.2d, v16.2d
+	fadd	v1.2d, v1.2d, v16.2d
+	fadd	v0.2d, v0.2d, v16.2d
+	movk	x8, #15835, lsl #48
+	dup	v16.2d, x8
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	fabs	v5.2d, v5.2d
+	fabs	v2.2d, v2.2d
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	fcmgt	v7.2d, v7.2d, v16.2d
+	fcmgt	v6.2d, v6.2d, v16.2d
+	fcmgt	v3.2d, v3.2d, v16.2d
+	fcmgt	v5.2d, v5.2d, v16.2d
+	fcmgt	v4.2d, v4.2d, v16.2d
+	fcmgt	v2.2d, v2.2d, v16.2d
+	fcmgt	v1.2d, v1.2d, v16.2d
+	fcmgt	v0.2d, v0.2d, v16.2d
+	uzp1	v6.4s, v6.4s, v7.4s
+	uzp1	v4.4s, v4.4s, v5.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.8h, v4.8h, v6.8h
+	uzp1	v0.8h, v0.8h, v2.8h
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function
-.LCPI4_0:
-	.xword	0xbff921fb54442d18              // double -1.5707963267948966
-.LCPI4_1:
-	.xword	0x3ddb7cdfd9d7bdbb              // double 1.0E-10
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fabs	d0, d0
-	adrp	x8, .LCPI4_0
-	ldr	d1, [x8, :lo12:.LCPI4_0]
-	adrp	x8, .LCPI4_1
-	fadd	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI4_1]
-	fabs	d0, d0
-	fcmp	d0, d1
-	cset	w0, lt
+	mov	x8, #11544                      // =0x2d18
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	movk	x8, #21572, lsl #16
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	movk	x8, #8699, lsl #32
+	fabs	v5.2d, v5.2d
+	fabs	v0.2d, v0.2d
+	movk	x8, #49145, lsl #48
+	fabs	v1.2d, v1.2d
+	fabs	v2.2d, v2.2d
+	dup	v16.2d, x8
+	mov	x8, #48571                      // =0xbdbb
+	movk	x8, #55767, lsl #16
+	movk	x8, #31967, lsl #32
+	fadd	v7.2d, v7.2d, v16.2d
+	fadd	v6.2d, v6.2d, v16.2d
+	fadd	v3.2d, v3.2d, v16.2d
+	fadd	v5.2d, v5.2d, v16.2d
+	fadd	v4.2d, v4.2d, v16.2d
+	fadd	v2.2d, v2.2d, v16.2d
+	fadd	v1.2d, v1.2d, v16.2d
+	fadd	v0.2d, v0.2d, v16.2d
+	movk	x8, #15835, lsl #48
+	dup	v16.2d, x8
+	fabs	v3.2d, v3.2d
+	fabs	v6.2d, v6.2d
+	fabs	v7.2d, v7.2d
+	fabs	v4.2d, v4.2d
+	fabs	v5.2d, v5.2d
+	fabs	v2.2d, v2.2d
+	fabs	v0.2d, v0.2d
+	fabs	v1.2d, v1.2d
+	fcmge	v7.2d, v7.2d, v16.2d
+	fcmge	v6.2d, v6.2d, v16.2d
+	fcmge	v3.2d, v3.2d, v16.2d
+	fcmge	v5.2d, v5.2d, v16.2d
+	fcmge	v4.2d, v4.2d, v16.2d
+	fcmge	v2.2d, v2.2d, v16.2d
+	fcmge	v1.2d, v1.2d, v16.2d
+	fcmge	v0.2d, v0.2d, v16.2d
+	uzp1	v6.4s, v6.4s, v7.4s
+	uzp1	v4.4s, v4.4s, v5.4s
+	uzp1	v2.4s, v2.4s, v3.4s
+	uzp1	v0.4s, v0.4s, v1.4s
+	uzp1	v1.8h, v4.8h, v6.8h
+	uzp1	v0.8h, v0.8h, v2.8h
+	mvn	v1.16b, v1.16b
+	mvn	v0.16b, v0.16b
+	uzp1	v0.16b, v0.16b, v1.16b
 	ret
                                         // -- End function

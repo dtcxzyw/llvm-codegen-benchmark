@@ -1,8 +1,14 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	w8, w1, #0x1e00
-	and	w9, w0, #0xfffc0000
-	orr	w8, w9, w8
-	orr	w0, w8, #0x2000
+	movi	v4.4s, #30, lsl #8
+	mvni	v5.4s, #3, msl #16
+	and	v0.16b, v0.16b, v5.16b
+	and	v1.16b, v1.16b, v5.16b
+	and	v2.16b, v2.16b, v4.16b
+	and	v3.16b, v3.16b, v4.16b
+	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
+	orr	v0.4s, #32, lsl #8
+	orr	v1.4s, #32, lsl #8
 	ret
                                         // -- End function

@@ -1,9 +1,13 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	lsr	w8, w2, #1
-	and	w9, w1, #0x3
-	add	w9, w0, w9
-	add	w8, w8, w8, lsl #1
-	add	w0, w8, w9
+	movi	v6.4s, #3
+	ushr	v5.4s, v5.4s, #1
+	ushr	v4.4s, v4.4s, #1
+	mla	v1.4s, v5.4s, v6.4s
+	mla	v0.4s, v4.4s, v6.4s
+	and	v3.16b, v3.16b, v6.16b
+	and	v2.16b, v2.16b, v6.16b
+	add	v0.4s, v0.4s, v2.4s
+	add	v1.4s, v1.4s, v3.4s
 	ret
                                         // -- End function
