@@ -1,0 +1,16 @@
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	lsl	w8, w2, #26
+	and	w8, w1, w8, lsr #31
+	orr	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	mov	w8, #551550976                  // =0x20e00000
+	and	w9, w1, #0xff800
+	tst	w2, w8
+	csel	w8, wzr, w9, eq
+	orr	w0, w8, w0
+	ret
+                                        // -- End function

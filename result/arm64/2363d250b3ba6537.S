@@ -1,0 +1,24 @@
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	fmov	x8, d1
+	fmov	x9, d0
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	fmov	x8, d1
+	fmov	x9, d0
+	cmp	x9, x8
+	cset	w0, hi
+	ret
+                                        // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	fmov	x8, d1
+	fmov	x9, d0
+	cmp	x9, x8
+	cset	w0, ne
+	ret
+                                        // -- End function

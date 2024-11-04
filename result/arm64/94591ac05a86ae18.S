@@ -1,0 +1,21 @@
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	fneg	s1, s0
+	cmp	w0, #0
+	fcsel	s0, s1, s0, lt
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	fneg	s1, s0
+	cmp	w0, #0
+	fcsel	s0, s1, s0, eq
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	fneg	s1, s0
+	cmp	w0, #4
+	fcsel	s0, s1, s0, lo
+	ret
+                                        // -- End function

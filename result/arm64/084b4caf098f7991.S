@@ -1,0 +1,27 @@
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	and	w8, w2, #0x3fff
+	orr	w8, w8, w1
+	cmp	w8, #0
+	mov	w8, #8                          // =0x8
+	csel	w0, w8, w0, eq
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	and	w8, w2, #0x1c0000
+	orr	w8, w8, w1
+	lsr	w8, w8, #16
+	cmp	w8, #16
+	mov	w8, #65533                      // =0xfffd
+	csel	w0, w8, w0, hi
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	and	w8, w2, #0x80000
+	orr	w8, w8, w1
+	cmp	w8, #0
+	csinc	w0, w0, wzr, ne
+	ret
+                                        // -- End function

@@ -1,0 +1,46 @@
+func0000000000000034:                   // @func0000000000000034
+// %bb.0:                               // %entry
+	lsr	x8, x0, #31
+	cmp	x8, #0
+	csinv	w0, w0, wzr, eq
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	mov	w8, #2147483647                 // =0x7fffffff
+	cmp	x0, x8
+	mov	w8, #2147483646                 // =0x7ffffffe
+	csel	w0, w0, w8, lt
+	ret
+                                        // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	mov	w8, #-2                         // =0xfffffffe
+	cmp	x0, #0
+	csel	w0, w0, w8, ge
+	ret
+                                        // -- End function
+func0000000000000024:                   // @func0000000000000024
+// %bb.0:                               // %entry
+                                        // kill: def $w0 killed $w0 killed $x0
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	cmp	x0, #1
+	csel	w0, w0, wzr, hi
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	cmp	x0, #6
+	csel	w0, w0, wzr, lo
+	ret
+                                        // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	mov	w8, #-5                         // =0xfffffffb
+	cmp	x0, #0
+	csel	w0, w0, w8, lt
+	ret
+                                        // -- End function

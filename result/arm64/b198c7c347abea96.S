@@ -1,0 +1,134 @@
+func000000000000006e:                   // @func000000000000006e
+// %bb.0:                               // %entry
+	fcmp	d0, d0
+	ccmp	x0, #0, #0, vc
+	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000078:                   // @func0000000000000078
+// %bb.0:                               // %entry
+	mov	x8, #9218868437227405312        // =0x7ff0000000000000
+	fmov	d1, x8
+	fcmp	d0, d1
+	ccmp	x0, #1, #0, ne
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000000ac:                   // @func00000000000000ac
+// %bb.0:                               // %entry
+	mov	x8, #4503599627370496           // =0x10000000000000
+	fmov	d1, x8
+	fcmp	d0, d1
+	ccmp	x0, #0, #4, ls
+	cset	w0, ne
+	ret
+                                        // -- End function
+func000000000000008a:                   // @func000000000000008a
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #0, #8, eq
+	cset	w0, ge
+	ret
+                                        // -- End function
+func000000000000002c:                   // @func000000000000002c
+// %bb.0:                               // %entry
+	fmov	d1, #1.00000000
+	fcmp	d0, d1
+	ccmp	x0, #0, #4, mi
+	cset	w0, ne
+	ret
+                                        // -- End function
+.LCPI5_0:
+	.xword	0x3fc99999a0000000              // double 0.20000000298023224
+func0000000000000024:                   // @func0000000000000024
+// %bb.0:                               // %entry
+	adrp	x8, .LCPI5_0
+	mov	w9, #3125                       // =0xc35
+	ldr	d1, [x8, :lo12:.LCPI5_0]
+	lsr	x8, x0, #5
+	fcmp	d0, d1
+	ccmp	x8, x9, #2, mi
+	cset	w0, lo
+	ret
+                                        // -- End function
+.LCPI6_0:
+	.xword	0x3cd203afa0000000              // double 1.0000000036274937E-15
+func000000000000004a:                   // @func000000000000004a
+// %bb.0:                               // %entry
+	adrp	x8, .LCPI6_0
+	ldr	d1, [x8, :lo12:.LCPI6_0]
+	fcmp	d0, d1
+	ccmp	x0, #0, #4, gt
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000068:                   // @func0000000000000068
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #0, #0, eq
+	cset	w0, lt
+	ret
+                                        // -- End function
+func00000000000000a8:                   // @func00000000000000a8
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #0, #8, eq
+	cset	w0, ge
+	ret
+                                        // -- End function
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #20, #2, gt
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000000c4:                   // @func00000000000000c4
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #0, #4, gt
+	cset	w0, ne
+	ret
+                                        // -- End function
+func000000000000008c:                   // @func000000000000008c
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #0, #4, eq
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	fcmp	d0, d0
+	mov	x8, #-1970324836974592          // =0xfff9000000000000
+	ccmp	x0, x8, #2, vs
+	cset	w0, lo
+	ret
+                                        // -- End function
+func000000000000006c:                   // @func000000000000006c
+// %bb.0:                               // %entry
+	mov	x8, #9218868437227405312        // =0x7ff0000000000000
+	fmov	d1, x8
+	fcmp	d0, d1
+	cset	w8, mi
+	csinc	w8, w8, wzr, le
+	cmp	x0, #0
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	fcmp	d0, #0.0
+	ccmp	x0, #1, #0, mi
+	cset	w0, hi
+	ret
+                                        // -- End function
+func000000000000005c:                   // @func000000000000005c
+// %bb.0:                               // %entry
+	fmov	d1, #1.00000000
+	mov	w8, #9999                       // =0x270f
+	fcmp	d0, d1
+	ccmp	x0, x8, #4, hi
+	cset	w0, ne
+	ret
+                                        // -- End function

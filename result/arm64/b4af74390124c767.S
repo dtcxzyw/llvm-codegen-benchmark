@@ -1,0 +1,32 @@
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	add	x8, x1, x0
+	sub	x8, x8, #1
+	udiv	x8, x8, x0
+	mul	x0, x8, x0
+	ret
+                                        // -- End function
+func000000000000003f:                   // @func000000000000003f
+// %bb.0:                               // %entry
+	add	x8, x1, x0
+	add	x8, x8, #99
+	udiv	x8, x8, x0
+	mul	x0, x8, x0
+	ret
+                                        // -- End function
+func0000000000000010:                   // @func0000000000000010
+// %bb.0:                               // %entry
+	add	x8, x1, x0
+	sub	x8, x8, #1
+	udiv	x8, x8, x0
+	mul	x0, x8, x0
+	ret
+                                        // -- End function
+func0000000000000012:                   // @func0000000000000012
+// %bb.0:                               // %entry
+	add	x8, x1, x0
+	sub	x8, x8, #1
+	udiv	x8, x8, x0
+	mul	x0, x8, x0
+	ret
+                                        // -- End function

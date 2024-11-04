@@ -1,0 +1,64 @@
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	cmp	x8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	cmp	x8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func00000000000001c1:                   // @func00000000000001c1
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	cmp	x8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func00000000000001c8:                   // @func00000000000001c8
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	lsr	x8, x8, #32
+	cmp	x8, #0
+	cset	w0, ne
+	ret
+                                        // -- End function
+func00000000000001c6:                   // @func00000000000001c6
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	lsr	x0, x8, #63
+                                        // kill: def $w0 killed $w0 killed $x0
+	ret
+                                        // -- End function
+func00000000000001cc:                   // @func00000000000001cc
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	cmp	x8, #0
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	lsl	x8, x2, #3
+	lsl	x8, x1, x8
+	orr	x8, x8, x0
+	lsr	x0, x8, #63
+                                        // kill: def $w0 killed $w0 killed $x0
+	ret
+                                        // -- End function

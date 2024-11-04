@@ -1,0 +1,25 @@
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	add	x0, x0, x1, asr #29
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	add	x0, x0, x1, asr #29
+	ret
+                                        // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	asr	x8, x1, #32
+	mov	w9, #49216                      // =0xc040
+	movk	w9, #2, lsl #16
+	smaddl	x0, w8, w9, x0
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	asr	x8, x1, #32
+	mov	w9, #40                         // =0x28
+	smaddl	x0, w8, w9, x0
+	ret
+                                        // -- End function

@@ -1,0 +1,34 @@
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	fmadd	d0, d0, d1, d2
+	movi	d1, #0000000000000000
+	fmaxnm	d0, d0, d1
+	ret
+                                        // -- End function
+.LCPI1_0:
+	.xword	0x3e45798ee2308c3a              // double 1.0E-8
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	fmadd	d0, d0, d1, d2
+	adrp	x8, .LCPI1_0
+	ldr	d1, [x8, :lo12:.LCPI1_0]
+	fmaxnm	d0, d0, d1
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	mov	x8, #246290604621824            // =0xe00000000000
+	fmadd	d0, d0, d1, d2
+	movk	x8, #16495, lsl #48
+	fmov	d1, x8
+	fminnm	d0, d0, d1
+	ret
+                                        // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	fmadd	d0, d0, d1, d2
+	movi	d1, #0000000000000000
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, ls
+	ret
+                                        // -- End function

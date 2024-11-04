@@ -1,0 +1,64 @@
+func000000000000038c:                   // @func000000000000038c
+// %bb.0:                               // %entry
+	and	w8, w0, #0xffff
+	add	w9, w1, w2
+	orr	w8, w8, w9, lsr #16
+	cmp	w8, #0
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000114:                   // @func0000000000000114
+// %bb.0:                               // %entry
+	and	w8, w0, #0xffff
+	cmn	w1, w2
+	mov	w9, #65526                      // =0xfff6
+	ccmp	w9, w8, #2, ne
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000001cc:                   // @func00000000000001cc
+// %bb.0:                               // %entry
+	and	w8, w0, #0xffff
+	cmn	w1, w2
+	ccmp	w8, #23, #0, eq
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	and	w8, w0, #0xffff
+	cmn	w1, w2
+	ccmp	w8, #1, #4, ne
+	cset	w0, eq
+	ret
+                                        // -- End function
+func00000000000003cc:                   // @func00000000000003cc
+// %bb.0:                               // %entry
+	and	w8, w0, #0xffff
+	add	w9, w1, w2
+	cmp	w8, #17
+	mov	w8, #40                         // =0x28
+	ccmp	w9, w8, #0, eq
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000081:                   // @func0000000000000081
+// %bb.0:                               // %entry
+	mov	w8, #65534                      // =0xfffe
+	add	w9, w1, w2
+	cmp	w8, w0, uxth
+	mov	w8, #524288                     // =0x80000
+	ccmp	w9, w8, #2, ne
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000181:                   // @func0000000000000181
+// %bb.0:                               // %entry
+	mov	w8, #65407                      // =0xff7f
+	add	w9, w1, w2
+	cmp	w8, w0, uxth
+	mov	w8, #332                        // =0x14c
+	ccmp	w9, w8, #2, ne
+	cset	w0, hi
+	ret
+                                        // -- End function

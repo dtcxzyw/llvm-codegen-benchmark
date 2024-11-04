@@ -1,0 +1,14 @@
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	ucvtf	d0, w1
+	scvtf	d1, w0
+	fdiv	d0, d0, d1
+	ret
+                                        // -- End function
+func0000000000000005:                   // @func0000000000000005
+// %bb.0:                               // %entry
+	ucvtf	d0, w1
+	scvtf	d1, w0
+	fdiv	d0, d0, d1
+	ret
+                                        // -- End function

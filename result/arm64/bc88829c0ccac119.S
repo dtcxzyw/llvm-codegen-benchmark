@@ -1,0 +1,21 @@
+func000000000000004c:                   // @func000000000000004c
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	ccmp	x0, #0, #4, lo
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	ccmp	x0, #0, #4, lo
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	ccmp	x0, #0, #4, eq
+	cset	w0, eq
+	ret
+                                        // -- End function

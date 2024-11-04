@@ -1,0 +1,9 @@
+func0000000000000384:                   // @func0000000000000384
+// %bb.0:                               // %entry
+	sxtb	w8, w2
+	add	w9, w1, #48
+	cmp	w0, #10
+	ccmp	w9, w8, #0, lo
+	cset	w0, hi
+	ret
+                                        // -- End function

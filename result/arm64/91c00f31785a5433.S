@@ -1,0 +1,66 @@
+func0000000000000280:                   // @func0000000000000280
+// %bb.0:                               // %entry
+	mvn	w8, w2
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	lsr	w8, w8, #31
+	add	x9, x0, x9
+	add	x0, x8, x9
+	ret
+                                        // -- End function
+func000000000000028f:                   // @func000000000000028f
+// %bb.0:                               // %entry
+	mov	w8, #34463                      // =0x869f
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	movk	w8, #1, lsl #16
+	cmp	w2, w8
+	cinc	x8, x0, gt
+	add	x0, x8, x9
+	ret
+                                        // -- End function
+func0000000000000300:                   // @func0000000000000300
+// %bb.0:                               // %entry
+	cmp	w2, #0
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	cinc	x8, x0, ne
+	add	x0, x8, x9
+	ret
+                                        // -- End function
+func0000000000000305:                   // @func0000000000000305
+// %bb.0:                               // %entry
+	cmp	w2, #0
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	cinc	x8, x0, ne
+	add	x0, x8, x9
+	ret
+                                        // -- End function
+func000000000000030f:                   // @func000000000000030f
+// %bb.0:                               // %entry
+	cmp	w2, #0
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	cinc	x8, x0, ne
+	add	x0, x8, x9
+	ret
+                                        // -- End function
+func000000000000010f:                   // @func000000000000010f
+// %bb.0:                               // %entry
+	cmp	w2, #2
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	cinc	x8, x0, lo
+	add	x0, x8, x9
+	ret
+                                        // -- End function
+func0000000000000200:                   // @func0000000000000200
+// %bb.0:                               // %entry
+	cmp	w2, #127
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x9, x1, #0x1
+	cinc	x8, x0, hi
+	add	x0, x8, x9
+	ret
+                                        // -- End function

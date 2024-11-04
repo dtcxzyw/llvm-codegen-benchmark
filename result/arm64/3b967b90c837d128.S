@@ -1,0 +1,72 @@
+func00000000000000a4:                   // @func00000000000000a4
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w8, ge
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, hs
+	ret
+                                        // -- End function
+func00000000000000a6:                   // @func00000000000000a6
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w8, gt
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, ge
+	ret
+                                        // -- End function
+func0000000000000066:                   // @func0000000000000066
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w8, lt
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, ge
+	ret
+                                        // -- End function
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	cmn	w0, #1
+	cset	w8, ne
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, ne
+	ret
+                                        // -- End function
+func00000000000000c4:                   // @func00000000000000c4
+// %bb.0:                               // %entry
+	cmp	w0, #1
+	cset	w8, ne
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, hs
+	ret
+                                        // -- End function
+func00000000000000cc:                   // @func00000000000000cc
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w8, ne
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function
+func00000000000000aa:                   // @func00000000000000aa
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w8, ge
+	cmp	w0, w1
+	and	w8, w8, w2
+	csel	w0, wzr, w8, le
+	ret
+                                        // -- End function
+func0000000000000081:                   // @func0000000000000081
+// %bb.0:                               // %entry
+	cmp	w1, #1
+	cset	w8, hi
+	cmp	w1, w2
+	and	w8, w8, w0
+	csel	w0, wzr, w8, ne
+	ret
+                                        // -- End function

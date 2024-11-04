@@ -1,0 +1,139 @@
+func000000000000001a:                   // @func000000000000001a
+// %bb.0:                               // %entry
+	cmp	x0, x1, asr #1
+	cset	w0, le
+	ret
+                                        // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	cmp	x0, x1, asr #1
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	asr	x8, x1, #4
+	sub	x8, x8, x0
+	cmp	x8, #2
+	cset	w0, lo
+	ret
+                                        // -- End function
+func000000000000005a:                   // @func000000000000005a
+// %bb.0:                               // %entry
+	cmp	x0, x1, asr #32
+	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000071:                   // @func0000000000000071
+// %bb.0:                               // %entry
+	asr	x8, x1, #4
+	sub	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000058:                   // @func0000000000000058
+// %bb.0:                               // %entry
+	asr	x8, x1, #3
+	sub	x8, x8, x0
+	lsr	x8, x8, #61
+	cmp	x8, #0
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000051:                   // @func0000000000000051
+// %bb.0:                               // %entry
+	asr	x8, x1, #3
+	sub	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000054:                   // @func0000000000000054
+// %bb.0:                               // %entry
+	asr	x8, x1, #5
+	sub	x8, x8, x0
+	cmp	x8, #16
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000061:                   // @func0000000000000061
+// %bb.0:                               // %entry
+	asr	x8, x1, #32
+	sub	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000056:                   // @func0000000000000056
+// %bb.0:                               // %entry
+	asr	x8, x1, #48
+	sub	x8, x8, x0
+	cmn	x8, #8, lsl #12                 // =32768
+	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000048:                   // @func0000000000000048
+// %bb.0:                               // %entry
+	asr	x8, x1, #4
+	sub	x8, x8, x0
+	cmn	x8, #4
+	cset	w0, hi
+	ret
+                                        // -- End function
+func000000000000004a:                   // @func000000000000004a
+// %bb.0:                               // %entry
+	asr	x8, x1, #2
+	sub	x8, x8, x0
+	lsr	x8, x8, #63
+	eor	w0, w8, #0x1
+	ret
+                                        // -- End function
+func0000000000000031:                   // @func0000000000000031
+// %bb.0:                               // %entry
+	asr	x8, x1, #32
+	sub	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000074:                   // @func0000000000000074
+// %bb.0:                               // %entry
+	asr	x8, x1, #3
+	sub	x8, x8, x0
+	cmp	x8, #257
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+	asr	x8, x1, #5
+	sub	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000078:                   // @func0000000000000078
+// %bb.0:                               // %entry
+	asr	x8, x1, #4
+	sub	x8, x8, x0
+	lsr	x8, x8, #59
+	cmp	x8, #0
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000076:                   // @func0000000000000076
+// %bb.0:                               // %entry
+	cmp	x0, x1, asr #2
+	cset	w0, ge
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	asr	x8, x1, #2
+	sub	x8, x8, x0
+	lsr	x8, x8, #60
+	cmp	x8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function

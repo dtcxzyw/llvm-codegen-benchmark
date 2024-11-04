@@ -1,0 +1,17 @@
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	add	x8, x8, x8, lsl #30
+	lsr	x9, x8, #63
+	asr	x8, x8, #61
+	add	w8, w8, w9
+	add	w8, w8, w8, lsl #31
+	add	w8, w0, w8
+	scvtf	d0, w8
+	mov	x8, #281474972516352            // =0xffffffc00000
+	movk	x8, #16863, lsl #48
+	fmov	d1, x8
+	fdiv	d0, d0, d1
+	ret
+                                        // -- End function

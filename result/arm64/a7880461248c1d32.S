@@ -1,0 +1,19 @@
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	sub	w8, w1, w0
+	lsr	w8, w8, #2
+	tst	x8, #0x1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000005c:                   // @func000000000000005c
+// %bb.0:                               // %entry
+	sub	w8, w1, w0
+	mov	w9, #7085                       // =0x1bad
+	lsr	w8, w8, #3
+	movk	w9, #37196, lsl #16
+	mul	w8, w8, w9
+	tst	x8, #0x7
+	cset	w0, ne
+	ret
+                                        // -- End function

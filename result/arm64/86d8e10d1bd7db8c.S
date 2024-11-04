@@ -1,0 +1,39 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	sub	w8, w0, w1, lsl #2
+	sub	w8, w8, #4
+	cmp	w8, #0
+	cset	w0, gt
+	ret
+                                        // -- End function
+func000000000000015a:                   // @func000000000000015a
+// %bb.0:                               // %entry
+	sub	w8, w0, w1, lsl #6
+	add	w8, w8, #64
+	cmp	w8, #63
+	cset	w0, gt
+	ret
+                                        // -- End function
+func000000000000010a:                   // @func000000000000010a
+// %bb.0:                               // %entry
+	sub	w8, w0, w1, lsl #6
+	add	w8, w8, #64
+	cmp	w8, #63
+	cset	w0, gt
+	ret
+                                        // -- End function
+func000000000000005a:                   // @func000000000000005a
+// %bb.0:                               // %entry
+	sub	w8, w0, w1, lsl #3
+	add	w8, w8, #8
+	cmp	w8, #7
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000181:                   // @func0000000000000181
+// %bb.0:                               // %entry
+	sub	w8, w0, w1, lsl #6
+	cmp	w8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function

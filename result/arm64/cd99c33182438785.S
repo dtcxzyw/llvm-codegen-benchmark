@@ -1,0 +1,18 @@
+func0000000000000034:                   // @func0000000000000034
+// %bb.0:                               // %entry
+	add	w8, w2, #2
+	add	x9, x1, #1
+	cmp	x9, x8
+	cset	w8, lo
+	and	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000074:                   // @func0000000000000074
+// %bb.0:                               // %entry
+	sub	w8, w2, #5
+	add	x9, x1, #1
+	cmp	x9, x8
+	cset	w8, lo
+	and	w0, w8, w0
+	ret
+                                        // -- End function

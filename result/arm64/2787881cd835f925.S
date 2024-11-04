@@ -1,0 +1,30 @@
+func00000000000000cc:                   // @func00000000000000cc
+// %bb.0:                               // %entry
+	tst	w1, #0x3
+	cset	w8, ne
+	and	w0, w8, w0, lsr #15
+	ret
+                                        // -- End function
+func000000000000001c:                   // @func000000000000001c
+// %bb.0:                               // %entry
+	tst	w1, #0xf
+	lsr	x8, x0, #43
+	cset	w9, eq
+	and	w0, w8, w9
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	tst	x0, #0x7
+	cset	w8, eq
+	tst	w1, #0x1
+	csel	w0, wzr, w8, ne
+	ret
+                                        // -- End function
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	ubfx	w8, w1, #1, #1
+	cmp	w0, #0
+	csel	w0, wzr, w8, lt
+	ret
+                                        // -- End function

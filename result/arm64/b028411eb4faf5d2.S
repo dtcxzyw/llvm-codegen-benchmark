@@ -1,0 +1,14 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	cmp	w2, #0
+	csel	w8, wzr, w1, lt
+	eor	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	cmp	w2, #0
+	csel	w8, w1, wzr, eq
+	eor	w0, w8, w0
+	ret
+                                        // -- End function

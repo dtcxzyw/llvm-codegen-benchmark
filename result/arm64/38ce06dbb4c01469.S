@@ -1,0 +1,28 @@
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	and	x8, x1, #0x1
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x2
+	orr	x8, x8, x0
+	orr	x0, x8, x9
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	and	x8, x1, #0x780
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x40
+	orr	x8, x8, x0
+	orr	x0, x8, x9
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x40
+	mov	x9, #-6912                      // =0xffffffffffffe500
+	and	x9, x1, x9
+	orr	x8, x0, x8
+	orr	x0, x9, x8
+	ret
+                                        // -- End function

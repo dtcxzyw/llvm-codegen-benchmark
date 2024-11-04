@@ -1,0 +1,45 @@
+func0000000000000012:                   // @func0000000000000012
+// %bb.0:                               // %entry
+	mov	w8, w2
+	mul	x8, x8, x1
+	lsr	x8, x8, #32
+	add	x0, x0, x8, lsl #2
+	ret
+                                        // -- End function
+func0000000000000026:                   // @func0000000000000026
+// %bb.0:                               // %entry
+	mov	w8, w2
+	mul	x8, x8, x1
+	add	x0, x0, x8, lsr #3
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	mov	w8, w2
+	mul	x8, x8, x1
+	add	x0, x0, x8, lsr #3
+	ret
+                                        // -- End function
+func0000000000000010:                   // @func0000000000000010
+// %bb.0:                               // %entry
+	mov	w8, w2
+	mul	x8, x8, x1
+	lsr	x8, x8, #32
+	add	x0, x0, x8, lsl #3
+	ret
+                                        // -- End function
+func0000000000000038:                   // @func0000000000000038
+// %bb.0:                               // %entry
+	mov	w8, w2
+	mul	x8, x8, x1
+	lsr	x8, x8, #32
+	add	x0, x0, x8, lsl #3
+	ret
+                                        // -- End function
+func000000000000001e:                   // @func000000000000001e
+// %bb.0:                               // %entry
+	mov	w8, w2
+	mul	x8, x8, x1
+	add	x0, x0, x8, lsr #1
+	ret
+                                        // -- End function

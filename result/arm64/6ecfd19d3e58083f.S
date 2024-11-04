@@ -1,0 +1,47 @@
+func00000000000000cc:                   // @func00000000000000cc
+// %bb.0:                               // %entry
+	cmp	x2, #0
+	cset	w8, ne
+	cmp	w0, #32
+	and	w8, w8, w1
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	cmp	x2, #3
+	cset	w8, lo
+	cmp	w1, #5
+	and	w8, w8, w0
+	csel	w0, wzr, w8, hs
+	ret
+                                        // -- End function
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	cmp	x2, #0
+	cset	w8, ne
+	cmp	w0, #0
+	and	w8, w8, w1
+	csel	w0, wzr, w8, ne
+	ret
+                                        // -- End function
+func000000000000008c:                   // @func000000000000008c
+// %bb.0:                               // %entry
+	lsr	x8, x2, #32
+	mov	w9, #83886080                   // =0x5000000
+	cmp	x8, #0
+	cset	w8, ne
+	cmp	w0, w9
+	and	w8, w8, w1
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function
+func000000000000004c:                   // @func000000000000004c
+// %bb.0:                               // %entry
+	cmp	x2, #5
+	cset	w8, lo
+	cmp	w0, #1
+	and	w8, w8, w1
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function

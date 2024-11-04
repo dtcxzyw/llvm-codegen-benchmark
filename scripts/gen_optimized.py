@@ -19,6 +19,7 @@ variants = {
     'rvv': ['-mtriple=riscv64-linux-gnu', '-mattr=+m,+a,+f,+d,+c,+zicond,+zfa,+zcb,+zba,+zbb,+zbs,+v,+zvbb'],
     'x86': ['-mtriple=x86_64-pc-linux-gnu', x86_features],
     'x86_simd': ['-mtriple=x86_64-pc-linux-gnu', x86_features],
+    'arm64': ['-mtriple=aarch64-linux-gnu', '-mattr=+aes,+crc,+dotprod,+fp-armv8,+fp16fml,+fullfp16,+lse,+neon,+ras,+rcpc,+rdm,+sha2,+sha3,+v8.1a,+v8.2a,+v8.3a,+v8.4a,+v8.5a,+v8a,+zcm,+zcz']
 }
 
 def run_llc(input_file):

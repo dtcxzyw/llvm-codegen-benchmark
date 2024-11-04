@@ -1,0 +1,32 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	orr	x8, x2, x1
+	extr	x0, x8, x0, #56
+	lsr	x1, x8, #56
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	orr	x0, x1, x2, lsl #1
+	mov	x1, #0                          // =0x0
+	ret
+                                        // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	orr	x0, x1, x2, lsr #63
+	mov	x1, #0                          // =0x0
+	ret
+                                        // -- End function
+func000000000000001e:                   // @func000000000000001e
+// %bb.0:                               // %entry
+	orr	x8, x2, x1
+	extr	x0, x8, x0, #61
+	lsr	x1, x8, #61
+	ret
+                                        // -- End function
+func000000000000001a:                   // @func000000000000001a
+// %bb.0:                               // %entry
+	orr	x0, x1, x2, lsl #1
+	mov	x1, #0                          // =0x0
+	ret
+                                        // -- End function

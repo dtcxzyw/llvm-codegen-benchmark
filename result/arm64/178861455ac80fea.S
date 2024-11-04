@@ -1,0 +1,11 @@
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	mov	w8, #90                         // =0x5a
+	madd	w8, w1, w8, w0
+	asr	w9, w8, #6
+	bic	w8, w9, w8, asr #31
+	mov	w9, #255                        // =0xff
+	cmp	w8, #255
+	csel	w0, w8, w9, lt
+	ret
+                                        // -- End function

@@ -1,0 +1,44 @@
+func000000000000001d:                   // @func000000000000001d
+// %bb.0:                               // %entry
+	orr	w8, w1, w2, lsl #8
+	and	w8, w8, #0xffff
+	orr	w0, w8, w0
+	ret
+                                        // -- End function
+func000000000000001f:                   // @func000000000000001f
+// %bb.0:                               // %entry
+	ubfiz	w8, w2, #13, #13
+	and	w9, w1, #0xffff
+	orr	w9, w9, w0
+	orr	w0, w8, w9
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	ubfiz	w8, w2, #5, #5
+	and	w9, w1, #0xffff
+	orr	w9, w9, w0
+	orr	w0, w8, w9
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	and	w8, w1, #0xffff
+	bfi	w8, w2, #16, #2
+	orr	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000017:                   // @func0000000000000017
+// %bb.0:                               // %entry
+	and	w8, w1, #0xffff
+	bfi	w8, w2, #16, #13
+	orr	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000013:                   // @func0000000000000013
+// %bb.0:                               // %entry
+	and	w8, w1, #0xffff
+	bfi	w8, w2, #16, #3
+	orr	w0, w8, w0
+	ret
+                                        // -- End function

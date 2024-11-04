@@ -1,0 +1,8 @@
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	and	w8, w2, #0xff
+	orr	w8, w8, w1
+	cmp	w8, w0
+	csinc	w0, w0, wzr, hi
+	ret
+                                        // -- End function

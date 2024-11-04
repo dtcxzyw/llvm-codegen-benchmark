@@ -1,0 +1,44 @@
+func00000000000000cc:                   // @func00000000000000cc
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	ccmp	w1, #0, #4, ne
+	cset	w0, eq
+	ret
+                                        // -- End function
+func000000000000001c:                   // @func000000000000001c
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	ccmp	w1, #0, #0, ne
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	mov	w8, #64                         // =0x40
+	cmp	w0, #1
+	ccmp	w1, w8, #0, eq
+	cset	w0, ne
+	ret
+                                        // -- End function
+func000000000000004c:                   // @func000000000000004c
+// %bb.0:                               // %entry
+	cmp	w0, #16
+	ccmp	w1, #8, #2, ne
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	ccmp	w1, #0, #4, eq
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	mov	w8, #65536                      // =0x10000
+	cmp	w0, #0
+	ccmp	w1, w8, #0, lt
+	cset	w0, ne
+	ret
+                                        // -- End function

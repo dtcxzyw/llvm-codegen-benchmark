@@ -1,0 +1,54 @@
+func000000000000004c:                   // @func000000000000004c
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x0, x8, w2, uxtw
+	ret
+                                        // -- End function
+func000000000000003e:                   // @func000000000000003e
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x0, x8, w2, uxtw
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x0, x8, w2, uxtw #2
+	ret
+                                        // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x0, x8, w2, uxtw #2
+	ret
+                                        // -- End function
+func0000000000000042:                   // @func0000000000000042
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x0, x8, w2, uxtw #2
+	ret
+                                        // -- End function
+func000000000000007e:                   // @func000000000000007e
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #2
+	add	x0, x8, w2, uxtw #1
+	ret
+                                        // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #3
+	add	x0, x8, w2, uxtw
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #6
+	add	x0, x8, w2, uxtw #3
+	ret
+                                        // -- End function
+func0000000000000056:                   // @func0000000000000056
+// %bb.0:                               // %entry
+	add	x8, x0, x1, lsl #6
+	add	x0, x8, w2, uxtw #3
+	ret
+                                        // -- End function

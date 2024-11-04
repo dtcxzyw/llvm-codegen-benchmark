@@ -1,0 +1,14 @@
+func00000000000000c0:                   // @func00000000000000c0
+// %bb.0:                               // %entry
+	add	x8, x0, x2, asr #32
+	add	x8, x8, x1, asr #32
+	add	x0, x8, #4
+	ret
+                                        // -- End function
+func00000000000000c2:                   // @func00000000000000c2
+// %bb.0:                               // %entry
+	add	x8, x0, x2, asr #28
+	add	x8, x8, x1, asr #28
+	add	x0, x8, #12
+	ret
+                                        // -- End function

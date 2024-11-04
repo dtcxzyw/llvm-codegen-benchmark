@@ -1,0 +1,24 @@
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	cmp	x1, #0
+	csel	x0, xzr, x8, eq
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	cmp	x1, #7
+	csinc	x0, x8, xzr, hs
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+                                        // kill: def $w0 killed $w0 def $x0
+	sxtw	x8, w0
+	cmp	x1, #0
+	csel	x0, xzr, x8, lt
+	ret
+                                        // -- End function

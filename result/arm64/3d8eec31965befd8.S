@@ -1,0 +1,20 @@
+func0000000000000a44:                   // @func0000000000000a44
+// %bb.0:                               // %entry
+	lsl	w8, w0, #16
+	cmp	x0, #16, lsl #12                // =65536
+	csel	w8, w8, w0, lo
+	lsr	w8, w8, #24
+	cmp	w8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000e44:                   // @func0000000000000e44
+// %bb.0:                               // %entry
+	lsl	w8, w0, #16
+	cmp	x0, #16, lsl #12                // =65536
+	csel	w8, w8, w0, lo
+	lsr	w8, w8, #24
+	cmp	w8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function

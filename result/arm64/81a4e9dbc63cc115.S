@@ -1,0 +1,9 @@
+func00000000000000f4:                   // @func00000000000000f4
+// %bb.0:                               // %entry
+	sub	w8, w1, w2
+	and	w9, w0, #0xff
+	add	w8, w8, w2, lsl #8
+	and	w8, w8, #0xffff
+	udiv	w0, w8, w9
+	ret
+                                        // -- End function

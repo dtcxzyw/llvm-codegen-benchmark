@@ -1,0 +1,30 @@
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	fcmp	s0, #0.0
+	cset	w8, mi
+	orr	w8, w8, w1
+	tst	w8, #0x1
+	csel	w0, wzr, w0, ne
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	fcmp	s0, #0.0
+	cset	w8, gt
+	orr	w8, w8, w1
+	tst	w8, #0x1
+	mov	w8, #8                          // =0x8
+	csel	w0, w8, w0, ne
+	ret
+                                        // -- End function
+func0000000000000010:                   // @func0000000000000010
+// %bb.0:                               // %entry
+	mov	w8, #2139095040                 // =0x7f800000
+	fmov	s1, w8
+	fcmp	s0, s1
+	cset	w8, eq
+	orr	w8, w8, w1
+	tst	w8, #0x1
+	csinv	w0, w0, wzr, eq
+	ret
+                                        // -- End function

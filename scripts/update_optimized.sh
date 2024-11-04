@@ -4,7 +4,7 @@ mkdir -p llvm/llvm-build
 cd llvm/llvm-build
 cmake ../llvm-project/llvm -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -G Ninja \
     -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_INCLUDE_EXAMPLES=OFF -DLLVM_OPTIMIZED_TABLEGEN=ON \
-    -DLLVM_ENABLE_WARNINGS=OFF -DLLVM_APPEND_VC_REV=OFF -DLLVM_TARGETS_TO_BUILD="X86;RISCV;" \
+    -DLLVM_ENABLE_WARNINGS=OFF -DLLVM_APPEND_VC_REV=OFF -DLLVM_TARGETS_TO_BUILD="X86;RISCV;AArch64;" \
     -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
 cmake --build . -j -t llc
 cd ../..
@@ -21,6 +21,7 @@ scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result rvb23u64
 scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result rvv
 scripts/gen_optimized.py dataset llvm/llvm-build/bin/llc result x86
 scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result x86_simd
+scripts/gen_optimized.py build/output llvm/llvm-build/bin/llc result arm64
 
 ret=$?
 if [ $PRE_COMMIT_MODE -eq 0 ]

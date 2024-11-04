@@ -1,0 +1,33 @@
+func0000000000000038:                   // @func0000000000000038
+// %bb.0:                               // %entry
+	and	w8, w1, #0xff
+	and	w9, w0, #0xff
+	cmp	w8, #1
+	cset	w8, eq
+	cmp	w9, #1
+	cset	w9, ne
+	eor	w0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000198:                   // @func0000000000000198
+// %bb.0:                               // %entry
+	and	w8, w1, #0xff
+	and	w9, w0, #0xff
+	cmp	w8, #26
+	cset	w8, ne
+	cmp	w9, #26
+	cset	w9, ne
+	eor	w0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000022:                   // @func0000000000000022
+// %bb.0:                               // %entry
+	and	w8, w1, #0xff
+	and	w9, w0, #0xff
+	cmp	w8, #1
+	cset	w8, eq
+	cmp	w9, #1
+	cset	w9, eq
+	eor	w0, w9, w8
+	ret
+                                        // -- End function

@@ -1,0 +1,47 @@
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	mov	x8, #55081                      // =0xd729
+	add	x9, x0, x1
+	movk	x8, #17318, lsl #16
+	movk	x8, #25401, lsl #32
+	movk	x8, #36650, lsl #48
+	smulh	x8, x9, x8
+	add	x8, x8, x9
+	lsr	x9, x8, #63
+	lsr	x8, x8, #25
+	add	w8, w8, w9
+	lsl	x0, x8, #32
+	ret
+                                        // -- End function
+func0000000000000009:                   // @func0000000000000009
+// %bb.0:                               // %entry
+	adds	x8, x0, x1
+	add	x9, x8, #7
+	csel	x8, x9, x8, lt
+	asr	x8, x8, #3
+	lsl	x0, x8, #2
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	add	x8, x0, x1
+	add	x9, x8, #4095
+	cmp	x8, #0
+	csel	x8, x9, x8, lt
+	and	x0, x8, #0xfffffffffffff000
+	ret
+                                        // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	mov	x8, #10583                      // =0x2957
+	add	x9, x0, x1
+	movk	x8, #52817, lsl #16
+	movk	x8, #51360, lsl #32
+	movk	x8, #6213, lsl #48
+	smulh	x8, x9, x8
+	lsr	x9, x8, #63
+	lsr	x8, x8, #13
+	add	w8, w8, w9
+	lsl	x0, x8, #32
+	ret
+                                        // -- End function

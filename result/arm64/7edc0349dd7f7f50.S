@@ -1,0 +1,40 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	mov	w8, #72                         // =0x48
+	madd	x8, x2, x8, x1
+	add	x8, x8, x0
+	sub	x0, x8, #72
+	ret
+                                        // -- End function
+func000000000000002a:                   // @func000000000000002a
+// %bb.0:                               // %entry
+	mov	w8, #72                         // =0x48
+	madd	x8, x2, x8, x1
+	add	x8, x8, x0
+	add	x0, x8, #72
+	ret
+                                        // -- End function
+func000000000000003a:                   // @func000000000000003a
+// %bb.0:                               // %entry
+	mov	w8, #24                         // =0x18
+	madd	x8, x2, x8, x1
+	add	x8, x8, x0, lsl #2
+	add	x0, x8, #72
+	ret
+                                        // -- End function
+func000000000000001a:                   // @func000000000000001a
+// %bb.0:                               // %entry
+	mov	w8, #120                        // =0x78
+	madd	x8, x2, x8, x1
+	add	x8, x8, x0, lsl #2
+	sub	x0, x8, #120
+	ret
+                                        // -- End function
+func0000000000000010:                   // @func0000000000000010
+// %bb.0:                               // %entry
+	mov	w8, #1040                       // =0x410
+	add	x9, x1, x2, lsl #2
+	madd	x8, x0, x8, x9
+	sub	x0, x8, #4
+	ret
+                                        // -- End function

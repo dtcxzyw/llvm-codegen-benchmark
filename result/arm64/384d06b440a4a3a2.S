@@ -1,0 +1,10 @@
+func0000000000000071:                   // @func0000000000000071
+// %bb.0:                               // %entry
+	fmov	d1, #0.50000000
+	add	x9, x0, #1
+	fadd	d0, d0, d1
+	fcvtzs	w8, d0
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function

@@ -1,0 +1,85 @@
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mov	x9, #-4289                      // =0xffffffffffffef3f
+	movk	x9, #7, lsl #16
+	movk	x9, #57536, lsl #32
+	madd	x8, x8, x0, x9
+	mov	x9, #-12288                     // =0xffffffffffffd000
+	movk	x9, #7, lsl #16
+	movk	x9, #57536, lsl #32
+	cmp	x8, x9
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000058:                   // @func0000000000000058
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mov	x9, #-4289                      // =0xffffffffffffef3f
+	movk	x9, #7, lsl #16
+	movk	x9, #57536, lsl #32
+	madd	x8, x8, x0, x9
+	mov	x9, #-12288                     // =0xffffffffffffd000
+	movk	x9, #7, lsl #16
+	movk	x9, #57536, lsl #32
+	cmp	x8, x9
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000054:                   // @func0000000000000054
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mul	x8, x8, x0
+	cmp	x8, w8, sxtw
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mul	x8, x8, x0
+	cmp	x8, #4
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mov	x9, #-1                         // =0xffffffffffffffff
+	madd	x8, x8, x0, x9
+	cmp	x8, #28
+	cset	w0, lo
+	ret
+                                        // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mul	x8, x8, x0
+	cmn	x8, #16
+	cset	w0, ne
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mul	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000051:                   // @func0000000000000051
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	mul	x8, x8, x0
+	cmn	x8, #1
+	cset	w0, eq
+	ret
+                                        // -- End function

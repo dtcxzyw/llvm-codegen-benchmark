@@ -1,0 +1,5 @@
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	and	x0, x0, #0xffffffffffff0000
+	ret
+                                        // -- End function

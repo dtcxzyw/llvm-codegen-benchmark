@@ -1,0 +1,40 @@
+func0000000000000031:                   // @func0000000000000031
+// %bb.0:                               // %entry
+	mov	w8, #4                          // =0x4
+	cmp	x1, #4
+	add	x9, x0, #1
+	csel	x8, x1, x8, lt
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000071:                   // @func0000000000000071
+// %bb.0:                               // %entry
+	mov	w8, #4                          // =0x4
+	cmp	x1, #4
+	add	x9, x0, #1
+	csel	x8, x1, x8, lt
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	mov	w8, #4                          // =0x4
+	cmp	x1, #4
+	add	x9, x0, #1
+	csel	x8, x1, x8, lt
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000036:                   // @func0000000000000036
+// %bb.0:                               // %entry
+	mov	w8, #4                          // =0x4
+	cmp	x1, #4
+	add	x9, x0, #1
+	csel	x8, x1, x8, lt
+	cmp	x9, x8
+	cset	w0, lt
+	ret
+                                        // -- End function

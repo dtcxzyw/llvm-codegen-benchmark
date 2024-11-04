@@ -1,0 +1,9 @@
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	cmp	x2, #0
+	csinv	x8, x2, xzr, ne
+	add	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function

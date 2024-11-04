@@ -1,0 +1,40 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	mov	x8, #4372995238176751616        // =0x3cb0000000000000
+	tst	w0, #0x1
+	fmov	d2, x8
+	fmul	d1, d1, d2
+	fcsel	d1, d1, d2, ne
+	fcmp	d1, d0
+	cset	w0, ge
+	ret
+                                        // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	mov	x8, #7378697629483820646        // =0x6666666666666666
+	tst	w0, #0x1
+	movk	x8, #49154, lsl #48
+	fmov	d2, x8
+	mov	x8, #7378697629483820646        // =0x6666666666666666
+	movk	x8, #49170, lsl #48
+	fmul	d1, d1, d2
+	fmov	d2, x8
+	fcsel	d1, d1, d2, ne
+	fcmp	d1, d0
+	cset	w0, gt
+	ret
+                                        // -- End function
+.LCPI2_0:
+	.xword	0x3ff6a09e667f3bcd              // double 1.4142135623730951
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	adrp	x8, .LCPI2_0
+	tst	w0, #0x1
+	ldr	d2, [x8, :lo12:.LCPI2_0]
+	fmul	d1, d1, d2
+	movi	d2, #0000000000000000
+	fcsel	d1, d1, d2, ne
+	fcmp	d1, d0
+	cset	w0, hi
+	ret
+                                        // -- End function

@@ -1,0 +1,26 @@
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	lsl	x8, x2, #1
+	tst	w1, #0x1
+	mov	w9, #30                         // =0x1e
+	csel	x8, x9, x8, ne
+	mov	x9, #9223372036854775807        // =0x7fffffffffffffff
+	cmp	x8, x9
+	csel	x9, x8, x9, lo
+	cmp	x8, x0
+	csel	x0, x9, x0, hi
+	ret
+                                        // -- End function
+func0000000000000064:                   // @func0000000000000064
+// %bb.0:                               // %entry
+	lsl	x8, x2, #1
+	tst	w1, #0x1
+	mov	w9, #6                          // =0x6
+	csel	x8, x9, x8, ne
+	mov	x9, #1152921504606846975        // =0xfffffffffffffff
+	cmp	x8, x9
+	csel	x9, x8, x9, lo
+	cmp	x8, x0
+	csel	x0, x9, x0, hi
+	ret
+                                        // -- End function

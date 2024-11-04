@@ -1,0 +1,72 @@
+func0000000000000021:                   // @func0000000000000021
+// %bb.0:                               // %entry
+	add	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	sub	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	sub	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000081:                   // @func0000000000000081
+// %bb.0:                               // %entry
+	sub	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000024:                   // @func0000000000000024
+// %bb.0:                               // %entry
+	add	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	add	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func00000000000001c1:                   // @func00000000000001c1
+// %bb.0:                               // %entry
+	add	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, eq
+	ret
+                                        // -- End function
+func00000000000001c4:                   // @func00000000000001c4
+// %bb.0:                               // %entry
+	add	w8, w2, #1
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000000a4:                   // @func00000000000000a4
+// %bb.0:                               // %entry
+	sub	w8, w2, #48
+	mul	x8, x8, x1
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function

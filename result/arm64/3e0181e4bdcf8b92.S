@@ -1,0 +1,27 @@
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	mov	w8, w1
+	add	x8, x8, #63
+	eor	x8, x8, x0
+	cmp	x8, #64
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000000c4:                   // @func00000000000000c4
+// %bb.0:                               // %entry
+	mov	w8, w1
+	add	x8, x8, #63
+	lsr	x8, x8, #6
+	cmp	x8, x0, lsr #6
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	mov	w8, w1
+	sub	x8, x8, #2
+	lsr	x8, x8, #1
+	cmp	x8, x0, lsr #1
+	cset	w0, lo
+	ret
+                                        // -- End function
