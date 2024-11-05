@@ -30,7 +30,7 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a2, 6
 	addiw	a2, a2, 1639
 	mul	a1, a1, a2
-	srliw	a2, a1, 31
+	srli	a2, a1, 63
 	srli	a1, a1, 18
 	add	a1, a1, a2
 	li	a2, 10
@@ -46,7 +46,7 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a2, 6
 	addiw	a2, a2, 1639
 	mul	a1, a1, a2
-	srliw	a2, a1, 31
+	srli	a2, a1, 63
 	srli	a1, a1, 18
 	add	a1, a1, a2
 	li	a2, 10
@@ -63,7 +63,7 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a2, 6
 	addiw	a2, a2, 1639
 	mul	a1, a1, a2
-	srliw	a2, a1, 31
+	srli	a2, a1, 63
 	srli	a1, a1, 18
 	add	a1, a1, a2
 	li	a2, 10

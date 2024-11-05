@@ -6,101 +6,85 @@ func0000000000000009:                   // @func0000000000000009
 	movk	w8, #26214, lsl #16
 	add	v1.8h, v1.8h, v2.8h
 	add	v0.8h, v0.8h, v2.8h
-	smov	w10, v1.h[0]
-	smov	w12, v0.h[0]
-	smov	w9, v1.h[1]
-	smov	w11, v0.h[1]
+	smov	w9, v1.h[0]
+	smov	w10, v0.h[0]
+	smov	w11, v1.h[1]
+	smov	w12, v0.h[1]
 	smov	w13, v1.h[2]
 	smov	w14, v0.h[2]
-	smull	x10, w10, w8
-	smull	x12, w12, w8
-	smull	x9, w9, w8
-	smull	x11, w11, w8
-	lsr	x16, x10, #63
-	asr	x10, x10, #33
-	lsr	x18, x12, #63
-	asr	x12, x12, #33
-	smull	x13, w13, w8
-	lsr	x15, x9, #63
-	asr	x9, x9, #33
-	add	w10, w10, w16
-	add	w12, w12, w18
-	lsr	x17, x11, #63
-	asr	x11, x11, #33
-	fmov	s2, w10
-	fmov	s3, w12
-	add	w9, w9, w15
 	smov	w15, v1.h[3]
 	smov	w16, v0.h[3]
-	smull	x14, w14, w8
-	add	w11, w11, w17
-	asr	x12, x13, #33
-	smov	w10, v1.h[4]
-	mov	v2.h[1], w9
-	mov	v3.h[1], w11
-	lsr	x9, x13, #63
-	lsr	x13, x14, #63
-	asr	x14, x14, #33
-	smull	x11, w15, w8
-	smov	w15, v0.h[4]
-	add	w9, w12, w9
-	smull	x16, w16, w8
-	add	w13, w14, w13
-	smov	w12, v1.h[5]
-	mov	v2.h[2], w9
-	mov	v3.h[2], w13
+	smull	x9, w9, w8
 	smull	x10, w10, w8
-	lsr	x9, x11, #63
-	asr	x11, x11, #33
-	lsr	x13, x16, #63
-	asr	x14, x16, #33
-	smov	w16, v0.h[5]
-	smull	x15, w15, w8
-	add	w9, w11, w9
-	smov	w11, v1.h[6]
-	add	w13, w14, w13
-	mov	v2.h[3], w9
-	lsr	x9, x10, #63
-	mov	v3.h[3], w13
-	asr	x10, x10, #33
-	smull	x12, w12, w8
-	lsr	x13, x15, #63
-	asr	x14, x15, #33
-	smov	w15, v0.h[6]
-	smull	x16, w16, w8
-	add	w9, w10, w9
-	smov	w10, v1.h[7]
-	add	w13, w14, w13
-	mov	v2.h[4], w9
-	lsr	x9, x12, #63
-	asr	x12, x12, #33
-	mov	v3.h[4], w13
 	smull	x11, w11, w8
-	lsr	x13, x16, #63
-	asr	x14, x16, #33
-	smull	x15, w15, w8
-	add	w9, w12, w9
-	smov	w12, v0.h[7]
+	smull	x12, w12, w8
+	asr	x9, x9, #33
+	asr	x10, x10, #33
+	smull	x13, w13, w8
+	add	w9, w9, w9, lsr #31
+	asr	x11, x11, #33
+	smull	x14, w14, w8
+	add	w10, w10, w10, lsr #31
+	asr	x12, x12, #33
+	fmov	s2, w9
+	add	w11, w11, w11, lsr #31
+	fmov	s3, w10
+	add	w9, w12, w12, lsr #31
+	asr	x12, x13, #33
+	asr	x13, x14, #33
+	smov	w10, v1.h[4]
+	smull	x14, w16, w8
+	mov	v2.h[1], w11
+	smull	x11, w15, w8
+	add	w12, w12, w12, lsr #31
+	mov	v3.h[1], w9
+	smov	w9, v0.h[4]
+	add	w13, w13, w13, lsr #31
+	smov	w15, v1.h[5]
+	asr	x11, x11, #33
 	smull	x10, w10, w8
-	add	w13, w14, w13
-	mov	v2.h[5], w9
-	lsr	x9, x11, #63
-	mov	v3.h[5], w13
-	lsr	x11, x11, #33
-	lsr	x13, x15, #63
-	lsr	x14, x15, #33
+	mov	v2.h[2], w12
+	asr	x12, x14, #33
+	smov	w14, v1.h[6]
+	mov	v3.h[2], w13
+	smov	w13, v0.h[5]
+	smull	x9, w9, w8
+	add	w11, w11, w11, lsr #31
+	add	w12, w12, w12, lsr #31
+	asr	x10, x10, #33
+	mov	v2.h[3], w11
+	asr	x9, x9, #33
+	smull	x11, w15, w8
+	mov	v3.h[3], w12
+	smov	w12, v0.h[6]
+	smull	x13, w13, w8
+	add	w10, w10, w10, lsr #31
+	add	w9, w9, w9, lsr #31
+	smov	w15, v1.h[7]
 	movi	v1.8h, #1
-	smull	x8, w12, w8
-	add	w9, w11, w9
-	add	w11, w14, w13
+	mov	v2.h[4], w10
+	asr	x10, x11, #33
+	asr	x13, x13, #33
+	mov	v3.h[4], w9
+	smull	x11, w14, w8
+	smov	w9, v0.h[7]
+	smull	x12, w12, w8
+	add	w10, w10, w10, lsr #31
+	add	w13, w13, w13, lsr #31
+	mov	v2.h[5], w10
+	asr	x10, x11, #33
+	smull	x11, w15, w8
+	mov	v3.h[5], w13
+	asr	x12, x12, #33
+	smull	x8, w9, w8
+	add	w9, w10, w10, lsr #31
+	add	w10, w12, w12, lsr #31
 	mov	v2.h[6], w9
-	lsr	x9, x10, #63
-	mov	v3.h[6], w11
-	lsr	x10, x10, #33
-	lsr	x11, x8, #63
-	lsr	x8, x8, #33
-	add	w9, w10, w9
-	add	w8, w8, w11
+	asr	x9, x11, #33
+	asr	x8, x8, #33
+	mov	v3.h[6], w10
+	add	w9, w9, w9, lsr #31
+	add	w8, w8, w8, lsr #31
 	mov	v2.h[7], w9
 	mov	v3.h[7], w8
 	add	v0.8h, v3.8h, v1.8h

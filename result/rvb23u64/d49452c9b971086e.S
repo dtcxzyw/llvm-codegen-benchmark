@@ -28,7 +28,7 @@ func0000000000000005:                   # @func0000000000000005
 	sext.b	a1, a0
 	li	a2, 43
 	mul	a1, a1, a2
-	bexti	a2, a1, 15
+	srli	a2, a1, 63
 	srli	a1, a1, 8
 	add	a1, a1, a2
 	sh1add	a1, a1, a1

@@ -48,26 +48,22 @@ func0000000000000000:                   // @func0000000000000000
 	smov	w9, v0.h[0]
 	smov	w10, v0.h[1]
 	smov	w11, v0.h[2]
+	smov	w12, v0.h[3]
 	smull	x9, w9, w8
 	smull	x10, w10, w8
 	smull	x11, w11, w8
-	lsr	x12, x9, #63
 	asr	x9, x9, #33
-	lsr	x13, x10, #63
-	asr	x10, x10, #33
-	add	w9, w9, w12
-	smov	w12, v0.h[3]
-	fmov	s0, w9
-	add	w10, w10, w13
-	lsr	x9, x11, #63
-	mov	v0.h[1], w10
-	asr	x10, x11, #33
 	smull	x8, w12, w8
-	add	w9, w10, w9
-	mov	v0.h[2], w9
-	lsr	x9, x8, #63
+	asr	x10, x10, #33
+	add	w9, w9, w9, lsr #31
+	add	w10, w10, w10, lsr #31
 	asr	x8, x8, #33
-	add	w8, w8, w9
+	fmov	s0, w9
+	asr	x9, x11, #33
+	add	w8, w8, w8, lsr #31
+	add	w9, w9, w9, lsr #31
+	mov	v0.h[1], w10
+	mov	v0.h[2], w9
 	mov	v0.h[3], w8
                                         // kill: def $d0 killed $d0 killed $q0
 	ret

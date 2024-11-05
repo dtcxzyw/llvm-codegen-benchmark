@@ -30,9 +30,8 @@ func0000000000000005:                   # @func0000000000000005
 	srai	a1, a1, 56
 	li	a2, 43
 	mul	a1, a1, a2
-	srli	a2, a1, 8
-	slli	a1, a1, 48
-	srli	a1, a1, 63
+	srli	a2, a1, 63
+	srli	a1, a1, 8
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	slli	a1, a1, 1

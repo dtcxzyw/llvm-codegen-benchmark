@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a3, 6
 	addiw	a3, a3, 1639
 	mul	a2, a2, a3
-	srliw	a3, a2, 31
+	srli	a3, a2, 63
 	srai	a2, a2, 16
 	srli	a2, a2, 2
 	add	a2, a2, a3

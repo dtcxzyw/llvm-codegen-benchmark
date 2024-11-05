@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a1, 3
 	addiw	a1, a1, -1365
 	mul	a0, a0, a1
-	srliw	a1, a0, 31
+	srli	a1, a0, 63
 	srli	a0, a0, 18
 	add	a0, a0, a1
 	zext.h	a0, a0
