@@ -7,9 +7,8 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	8(%rdi,%rcx), %rax
 	retq
 func00000000000000d0:                   # @func00000000000000d0
-	movl	%esi, %eax
-	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
-	imulq	%rax, %rcx
-	shrq	$33, %rcx
-	leaq	-4(%rdi,%rcx,4), %rax
+	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
+	imulq	%rsi, %rax
+	shrq	$33, %rax
+	leaq	-4(%rdi,%rax,4), %rax
 	retq

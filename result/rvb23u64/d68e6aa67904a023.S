@@ -7,11 +7,10 @@ func000000000000000a:                   # @func000000000000000a
 	zext.w	a1, a1
 	mul	a0, a0, a1
 	srli	a0, a0, 47
-	slli	a1, a0, 48
-	lui	a2, 52429
-	slli	a2, a2, 4
-	mulhu	a1, a1, a2
-	srli	a1, a1, 19
+	lui	a1, 13
+	addi	a1, a1, -819
+	mul	a1, a1, a0
+	srliw	a1, a1, 19
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
 	sub	a0, a0, a1

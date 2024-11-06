@@ -1,10 +1,10 @@
 func000000000000005f:                   # @func000000000000005f
-	movl	%edx, %eax
+	movq	%rdx, %rax
 	movl	$2147975281, %ecx               # imm = 0x80078071
-	imulq	%rax, %rcx
+	imulq	%rdx, %rcx
 	shrq	$47, %rcx
-	imull	$65521, %ecx, %eax              # imm = 0xFFF1
-	subl	%eax, %edx
+	imull	$65521, %ecx, %ecx              # imm = 0xFFF1
+	subl	%ecx, %eax
 	subq	%rsi, %rdi
-	leaq	(%rdi,%rdx), %rax
+	addq	%rdi, %rax
 	retq

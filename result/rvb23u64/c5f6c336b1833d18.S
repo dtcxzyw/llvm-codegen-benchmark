@@ -13,11 +13,10 @@ func0000000000000003:                   # @func0000000000000003
 	sub	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b
-	slli	a0, a0, 32
 	lui	a1, 858993
 	addi	a1, a1, 1881
-	slli	a1, a1, 32
-	mulhu	a0, a0, a1
+	zext.w	a1, a1
+	mul	a0, a0, a1
 	srli	a1, a0, 45
 	srli	a0, a0, 47
 	slli	a0, a0, 50
@@ -30,11 +29,10 @@ func000000000000001b:                   # @func000000000000001b
 	sub	a0, a1, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
-	slli	a0, a0, 32
 	lui	a1, 858993
 	addi	a1, a1, 1881
-	slli	a1, a1, 32
-	mulhu	a0, a0, a1
+	zext.w	a1, a1
+	mul	a0, a0, a1
 	srli	a1, a0, 45
 	srli	a0, a0, 47
 	slli	a0, a0, 50

@@ -4,11 +4,11 @@ func00000000000000f4:                   # @func00000000000000f4
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
-	zext.h	a0, a0
-	mulhu	a1, a0, a2
+	zext.w	a1, a0
+	mulhu	a1, a1, a2
 	slli	a2, a1, 3
-	add	a0, a0, a1
-	sub	a0, a0, a2
+	sub	a1, a1, a2
+	add.uw	a0, a0, a1
 	sltiu	a0, a0, 6
 	ret
 .LCPI1_0:
@@ -21,7 +21,7 @@ func00000000000000e1:                   # @func00000000000000e1
 	lui	a3, %hi(.LCPI1_1)
 	ld	a3, %lo(.LCPI1_1)(a3)
 	add	a0, a0, a1
-	zext.h	a0, a0
+	zext.w	a0, a0
 	mul	a0, a0, a2
 	sltu	a0, a0, a3
 	ret

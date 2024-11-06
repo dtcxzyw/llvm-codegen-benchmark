@@ -18,8 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
-	movl	%esi, %eax
-	imulq	$1441151881, %rax, %rax         # imm = 0x55E63B89
+	imulq	$1441151881, %rsi, %rax         # imm = 0x55E63B89
 	shrq	$57, %rax
 	addl	%edi, %eax
 	retq

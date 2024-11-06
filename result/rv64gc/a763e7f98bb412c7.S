@@ -27,7 +27,6 @@ func0000000000000073:                   # @func0000000000000073
 	srli	a0, a0, 28
 	ret
 func000000000000007f:                   # @func000000000000007f
-	sext.w	a0, a0
 	slli	a0, a0, 2
 	addi	a0, a0, 4
 	ret
@@ -52,7 +51,6 @@ func0000000000000047:                   # @func0000000000000047
 	slli	a0, a0, 32
 	ret
 func000000000000006f:                   # @func000000000000006f
-	sext.w	a0, a0
 	slli	a0, a0, 3
 	addi	a0, a0, -456
 	ret

@@ -8,14 +8,14 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rax, %rdx
 	imulq	$86400, %rdx, %rax              # imm = 0x15180
 	subq	%rax, %rdi
-	movslq	%edi, %rax
-	imulq	$-2004318071, %rax, %rcx        # imm = 0x88888889
-	shrq	$32, %rcx
-	addl	%eax, %ecx
-	movl	%ecx, %edx
-	shrl	$31, %edx
-	sarl	$5, %ecx
-	addl	%edx, %ecx
-	imull	$60, %ecx, %ecx
-	subl	%ecx, %eax
+	imulq	$-2004318071, %rdi, %rax        # imm = 0x88888889
+	shrq	$32, %rax
+	addl	%edi, %eax
+	movl	%eax, %ecx
+	shrl	$31, %ecx
+	sarl	$5, %eax
+	addl	%ecx, %eax
+	imull	$60, %eax, %eax
+	subl	%eax, %edi
+	movl	%edi, %eax
 	retq

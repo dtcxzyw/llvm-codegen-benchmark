@@ -12,14 +12,14 @@ func0000000000000003:                   # @func0000000000000003
 	leal	1(%rdi,%rcx), %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	movl	%edi, %eax
+	movq	%rdi, %rax
 	movl	$3435973837, %ecx               # imm = 0xCCCCCCCD
-	imulq	%rax, %rcx
+	imulq	%rdi, %rcx
 	shrq	$35, %rcx
 	addl	%ecx, %ecx
-	leal	(%rcx,%rcx,4), %eax
-	subl	%eax, %edi
-	leal	1(%rdi), %eax
+	leal	(%rcx,%rcx,4), %ecx
+	subl	%ecx, %eax
+	incl	%eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%edi, %eax

@@ -4,13 +4,11 @@ func0000000000000003:                   # @func0000000000000003
 	shrq	$54, %rax
 	retq
 func0000000000000012:                   # @func0000000000000012
-	movl	%edi, %eax
-	imulq	$1125899907, %rax, %rax         # imm = 0x431BDE83
+	imulq	$1125899907, %rdi, %rax         # imm = 0x431BDE83
 	shrq	$50, %rax
 	retq
 func0000000000000013:                   # @func0000000000000013
-	movl	%edi, %eax
-	imulq	$1441151881, %rax, %rax         # imm = 0x55E63B89
+	imulq	$1441151881, %rdi, %rax         # imm = 0x55E63B89
 	shrq	$57, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

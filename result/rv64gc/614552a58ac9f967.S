@@ -18,11 +18,9 @@ func0000000000000001:                   # @func0000000000000001
 	sltu	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
-	slli	a1, a0, 32
-	lui	a2, 322639
-	addi	a2, a2, -945
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 322639
+	addiw	a1, a1, -945
+	mul	a1, a0, a1
 	srli	a1, a1, 35
 	li	a2, 26
 	mul	a1, a1, a2

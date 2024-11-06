@@ -5,12 +5,11 @@ func0000000000000002:                   # @func0000000000000002
 	addq	%rdi, %rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	shrq	$25, %rdx
-	addl	%eax, %edx
-	imull	$60000000, %edx, %eax           # imm = 0x3938700
-	subl	%eax, %edi
-	movslq	%edi, %rax
-	imulq	$274877907, %rax, %rax          # imm = 0x10624DD3
+	sarq	$25, %rdx
+	addq	%rax, %rdx
+	imulq	$60000000, %rdx, %rax           # imm = 0x3938700
+	subq	%rax, %rdi
+	imulq	$274877907, %rdi, %rax          # imm = 0x10624DD3
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$38, %rax

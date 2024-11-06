@@ -10,6 +10,6 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vi	v10, v8, 1
-	vwsll.vi	v8, v10, 12
+	vwsll.vi	v10, v8, 12
+	vmv2r.v	v8, v10
 	ret

@@ -14,8 +14,7 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	retq
 func0000000000000721:                   # @func0000000000000721
-	movl	%edx, %eax
-	leaq	8(%rsi,%rax,8), %rax
+	leaq	8(%rsi,%rdx,8), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq

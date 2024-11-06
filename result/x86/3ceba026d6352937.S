@@ -1,6 +1,6 @@
 func0000000000000027:                   # @func0000000000000027
-	movzbl	%dil, %eax
-	imull	$171, %eax, %eax
+	imull	$171, %edi, %eax
+	movzwl	%ax, %eax
 	shrl	$9, %eax
 	incb	%al
 	movzbl	%al, %eax
@@ -13,8 +13,8 @@ func0000000000000007:                   # @func0000000000000007
 	movzbl	%al, %eax
 	retq
 func0000000000000037:                   # @func0000000000000037
-	movzbl	%dil, %eax
-	imull	$205, %eax, %eax
+	imull	$205, %edi, %eax
+	movzwl	%ax, %eax
 	shrl	$11, %eax
 	addb	$48, %al
 	movzbl	%al, %eax

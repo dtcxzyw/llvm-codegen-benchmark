@@ -7,13 +7,11 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000004:                   # @func0000000000000004
 	subl	%esi, %edi
-	movzwl	%di, %eax
-	imull	$34953, %eax, %eax              # imm = 0x8889
+	imull	$34953, %edi, %eax              # imm = 0x8889
 	shrl	$21, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	subl	%esi, %edi
-	movzwl	%di, %eax
-	imull	$33157, %eax, %eax              # imm = 0x8185
+	imull	$33157, %edi, %eax              # imm = 0x8185
 	shrl	$23, %eax
 	retq

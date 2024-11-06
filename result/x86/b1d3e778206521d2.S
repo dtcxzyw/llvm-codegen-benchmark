@@ -13,19 +13,17 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000007:                   # @func0000000000000007
 	movq	%rdi, %rax
-	movl	%eax, %ecx
-	movl	$2863311531, %edx               # imm = 0xAAAAAAAB
-	imulq	%rcx, %rdx
-	shrq	$33, %rdx
-	leal	(%rdx,%rdx,2), %ecx
+	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
+	imulq	%rdi, %rcx
+	shrq	$33, %rcx
+	leal	(%rcx,%rcx,2), %ecx
 	subl	%ecx, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
-	movl	%eax, %ecx
-	movl	$2147975281, %edx               # imm = 0x80078071
-	imulq	%rcx, %rdx
-	shrq	$47, %rdx
-	imull	$65521, %edx, %ecx              # imm = 0xFFF1
+	movl	$2147975281, %ecx               # imm = 0x80078071
+	imulq	%rdi, %rcx
+	shrq	$47, %rcx
+	imull	$65521, %ecx, %ecx              # imm = 0xFFF1
 	subl	%ecx, %eax
 	retq

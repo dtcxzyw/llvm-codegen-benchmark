@@ -24,9 +24,8 @@ func0000000000000009:                   # @func0000000000000009
 	srli	a0, a0, 17
 	ret
 func000000000000000d:                   # @func000000000000000d
-	lui	a1, 34953
-	slli	a1, a1, 4
-	slli	a0, a0, 48
-	mulhu	a0, a0, a1
-	srli	a0, a0, 21
+	lui	a1, 9
+	addi	a1, a1, -1911
+	mul	a0, a0, a1
+	srliw	a0, a0, 21
 	ret

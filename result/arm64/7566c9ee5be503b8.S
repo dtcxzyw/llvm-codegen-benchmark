@@ -13,10 +13,9 @@ func0000000000000005:                   // @func0000000000000005
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	uzp1	v2.4s, v2.4s, v3.4s
-	movi	v3.4h, #129
-	xtn	v2.4h, v2.4s
-	fneg	v3.4h, v3.4h
-	umull	v2.4s, v2.4h, v3.4h
+	mov	w8, #32897                      // =0x8081
+	dup	v3.4s, w8
+	mul	v2.4s, v2.4s, v3.4s
 	ushr	v2.4s, v2.4s, #23
 	uaddw2	v1.2d, v1.2d, v2.4s
 	uaddw	v0.2d, v0.2d, v2.2s
@@ -26,9 +25,8 @@ func0000000000000037:                   // @func0000000000000037
 // %bb.0:                               // %entry
 	uzp1	v2.4s, v2.4s, v3.4s
 	mov	w8, #34953                      // =0x8889
-	dup	v3.4h, w8
-	xtn	v2.4h, v2.4s
-	umull	v2.4s, v2.4h, v3.4h
+	dup	v3.4s, w8
+	mul	v2.4s, v2.4s, v3.4s
 	ushr	v2.4s, v2.4s, #21
 	uaddw2	v1.2d, v1.2d, v2.4s
 	uaddw	v0.2d, v0.2d, v2.2s

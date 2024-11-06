@@ -9,9 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	subl	%ecx, %eax
 	retq
 func000000000000001b:                   # @func000000000000001b
-	movl	%edi, %ecx
 	movl	$3518437209, %eax               # imm = 0xD1B71759
-	imulq	%rcx, %rax
+	imulq	%rdi, %rax
 	shrq	$45, %rax
 	movzwl	%ax, %ecx
 	shrl	$2, %ecx
@@ -21,9 +20,8 @@ func000000000000001b:                   # @func000000000000001b
 	subl	%ecx, %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
-	movl	%edi, %ecx
 	movl	$3518437209, %eax               # imm = 0xD1B71759
-	imulq	%rcx, %rax
+	imulq	%rdi, %rax
 	shrq	$45, %rax
 	movzwl	%ax, %ecx
 	shrl	$2, %ecx

@@ -5,20 +5,18 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rdi, %rax
 	retq
 func0000000000000024:                   # @func0000000000000024
-	movzwl	%si, %eax
-	imull	$32897, %eax, %eax              # imm = 0x8081
+	imull	$32897, %esi, %eax              # imm = 0x8081
 	shrl	$23, %eax
 	addq	%rdi, %rax
 	retq
 func0000000000000037:                   # @func0000000000000037
-	movzwl	%si, %eax
-	imull	$34953, %eax, %eax              # imm = 0x8889
+	imull	$34953, %esi, %eax              # imm = 0x8889
 	shrl	$21, %eax
 	addq	%rdi, %rax
 	retq
 func0000000000000035:                   # @func0000000000000035
+	shrl	$4, %esi
 	movzwl	%si, %eax
-	shrl	$4, %eax
 	imull	$2622, %eax, %eax               # imm = 0xA3E
 	shrl	$16, %eax
 	addq	%rdi, %rax

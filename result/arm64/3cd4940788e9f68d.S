@@ -6,13 +6,11 @@ func0000000000000025:                   // @func0000000000000025
 	ushr	v0.8h, v0.8h, #2
 	umull2	v2.4s, v0.8h, v1.8h
 	umull	v0.4s, v0.4h, v1.4h
+	movi	v1.8h, #205
 	uzp2	v0.8h, v0.8h, v2.8h
-	movi	v2.8b, #205
-	ushr	v1.8h, v0.8h, #1
+	ushr	v2.8h, v0.8h, #1
 	shrn	v0.8b, v0.8h, #1
-	bic	v1.8h, #3, lsl #8
-	xtn	v1.8b, v1.8h
-	umull	v1.8h, v1.8b, v2.8b
+	mul	v1.8h, v2.8h, v1.8h
 	movi	v2.8b, #10
 	shrn	v1.8b, v1.8h, #8
 	ushr	v1.8b, v1.8b, #3

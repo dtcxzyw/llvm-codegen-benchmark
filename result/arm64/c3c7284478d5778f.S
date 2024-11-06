@@ -5,12 +5,10 @@ func0000000000000013:                   // @func0000000000000013
 	dup	v1.8h, w8
 	umull2	v2.4s, v0.8h, v1.8h
 	umull	v0.4s, v0.4h, v1.4h
-	movi	v1.8b, #205
+	movi	v1.8h, #205
 	uzp2	v0.8h, v0.8h, v2.8h
 	ushr	v0.8h, v0.8h, #1
-	bic	v0.8h, #3, lsl #8
-	xtn	v0.8b, v0.8h
-	umull	v0.8h, v0.8b, v1.8b
+	mul	v0.8h, v0.8h, v1.8h
 	movi	v1.8b, #48
 	shrn	v0.8b, v0.8h, #8
 	usra	v1.8b, v0.8b, #3

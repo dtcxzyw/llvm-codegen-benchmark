@@ -6,11 +6,10 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rdi, %rax
 	retq
 func0000000000000036:                   # @func0000000000000036
-	movl	%esi, %eax
-	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
-	imulq	%rax, %rcx
-	shrq	$33, %rcx
-	leaq	(%rdi,%rcx,4), %rax
+	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
+	imulq	%rsi, %rax
+	shrq	$33, %rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 func0000000000000016:                   # @func0000000000000016
 	movl	%esi, %eax
@@ -20,9 +19,8 @@ func0000000000000016:                   # @func0000000000000016
 	leaq	(%rdi,%rcx,4), %rax
 	retq
 func0000000000000034:                   # @func0000000000000034
-	movl	%esi, %eax
-	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
-	imulq	%rax, %rcx
-	shrq	$33, %rcx
-	leaq	(%rdi,%rcx,4), %rax
+	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
+	imulq	%rsi, %rax
+	shrq	$33, %rax
+	leaq	(%rdi,%rax,4), %rax
 	retq

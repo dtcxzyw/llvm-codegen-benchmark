@@ -6,8 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	addl	$8, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
-	movl	%edi, %eax
-	imulq	$1441151881, %rax, %rax         # imm = 0x55E63B89
+	imulq	$1441151881, %rdi, %rax         # imm = 0x55E63B89
 	shrq	$57, %rax
 	addl	$-10, %eax
 	retq
@@ -18,9 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	addl	$-306, %eax                     # imm = 0xFECE
 	retq
 func0000000000000013:                   # @func0000000000000013
-	movl	%edi, %ecx
 	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
-	imulq	%rcx, %rax
+	imulq	%rdi, %rax
 	shrq	$33, %rax
 	addl	$4095, %eax                     # imm = 0xFFF
 	retq

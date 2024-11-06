@@ -14,22 +14,21 @@ func0000000000000001:                   # @func0000000000000001
 	subw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slli	a1, a0, 32
-	lui	a2, 699051
-	addi	a2, a2, -1365
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 171
+	addiw	a1, a1, -1365
+	slli	a1, a1, 12
+	addi	a1, a1, -1365
+	mul	a1, a0, a1
 	srli	a1, a1, 33
 	slli	a2, a1, 1
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
-	slli	a1, a0, 32
-	lui	a2, 524408
-	addi	a2, a2, 113
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 65551
+	slli	a1, a1, 3
+	addi	a1, a1, 113
+	mul	a1, a0, a1
 	srli	a1, a1, 47
 	lui	a2, 16
 	addi	a2, a2, -15

@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	srai	a1, a1, 13
 	add	a1, a1, a2
 	lui	a2, 21
-	addi	a2, a2, 384
+	addiw	a2, a2, 384
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 559241
 	addiw	a1, a1, -1911
 	mul	a1, a0, a1

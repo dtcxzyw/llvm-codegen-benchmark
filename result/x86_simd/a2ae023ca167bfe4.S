@@ -16,23 +16,6 @@
 	.short	5243                            # 0x147b
 	.short	5243                            # 0x147b
 .LCPI0_1:
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-.LCPI0_2:
 	.short	205                             # 0xcd
 	.short	205                             # 0xcd
 	.short	205                             # 0xcd
@@ -49,24 +32,24 @@
 	.short	205                             # 0xcd
 	.short	205                             # 0xcd
 	.short	205                             # 0xcd
-.LCPI0_4:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
 .LCPI0_3:
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+	.short	10                              # 0xa
+.LCPI0_2:
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -83,14 +66,9 @@
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
 	.byte	8                               # 0x8
-.LCPI0_5:
+.LCPI0_4:
 	.zero	16,48
-.LCPI0_6:
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-.LCPI0_8:
-	.zero	4,48
-.LCPI0_7:
+.LCPI0_5:
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -99,20 +77,21 @@
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
 	.byte	8                               # 0x8
+.LCPI0_6:
+	.zero	4,48
 func0000000000000005:                   # @func0000000000000005
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0    # [5243,5243,5243,5243,5243,5243,5243,5243,5243,5243,5243,5243,5243,5243,5243,5243]
 	vpsrlw	$1, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm1
-	vpandd	.LCPI0_6(%rip){1to8}, %ymm0, %ymm0
-	vpmullw	.LCPI0_2(%rip), %ymm0, %ymm0    # [205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205]
+	vpmullw	.LCPI0_1(%rip), %ymm0, %ymm0    # [205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205]
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI0_7(%rip){1to2}, %xmm0, %xmm0
+	vgf2p8affineqb	$0, .LCPI0_5(%rip){1to2}, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero,xmm0[8],zero,xmm0[9],zero,xmm0[10],zero,xmm0[11],zero,xmm0[12],zero,xmm0[13],zero,xmm0[14],zero,xmm0[15],zero
-	vpmullw	.LCPI0_4(%rip), %ymm0, %ymm0    # [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
+	vpmullw	.LCPI0_3(%rip), %ymm0, %ymm0    # [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
 	vpmovwb	%ymm0, %xmm0
 	vpsubb	%xmm0, %xmm1, %xmm0
-	vpord	.LCPI0_8(%rip){1to4}, %xmm0, %xmm0
+	vpord	.LCPI0_6(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

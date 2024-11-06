@@ -11,8 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000005:                   # @func0000000000000005
 	leal	(%rdi,%rsi), %eax
-	movswl	%ax, %ecx
-	imull	$5243, %ecx, %ecx               # imm = 0x147B
+	imull	$5243, %eax, %ecx               # imm = 0x147B
 	movl	%ecx, %edx
 	shrl	$31, %edx
 	sarl	$19, %ecx

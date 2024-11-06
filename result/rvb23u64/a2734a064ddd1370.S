@@ -23,14 +23,13 @@ func0000000000000021:                   # @func0000000000000021
 	lui	a1, 335544
 	addiw	a1, a1, 1311
 	mul	a0, a0, a1
-	slli	a0, a0, 11
 	lui	a1, 838861
 	addiw	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	srli	a0, a0, 48
+	srli	a0, a0, 37
 	mul	a0, a0, a1
 	rori	a0, a0, 1
 	sltu	a0, a0, a2

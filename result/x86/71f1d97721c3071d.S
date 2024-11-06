@@ -1,8 +1,8 @@
 func000000000000003d:                   # @func000000000000003d
 	andl	$1, %esi
 	addl	%edi, %esi
-	movzbl	%sil, %eax
-	imull	$205, %eax, %eax
+	imull	$205, %esi, %eax
+	movzwl	%ax, %eax
 	shrl	$11, %eax
 	orb	$48, %al
 	retq

@@ -1,8 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
-	movzbl	%dil, %eax
-	imull	$205, %eax, %ecx
+	movl	%edi, %eax
+	imull	$205, %edi, %ecx
 	shrl	$10, %ecx
-	andl	$-2, %ecx
+	andl	$62, %ecx
 	leal	(%rcx,%rcx,4), %ecx
 	subb	%cl, %al
 	retq
@@ -15,8 +15,9 @@ func0000000000000000:                   # @func0000000000000000
 	subb	%cl, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movzbl	%dil, %eax
-	imull	$171, %eax, %ecx
+	movl	%edi, %eax
+	imull	$171, %edi, %ecx
+	movzwl	%cx, %ecx
 	shrl	$9, %ecx
 	leal	(%rcx,%rcx,2), %ecx
 	subb	%cl, %al

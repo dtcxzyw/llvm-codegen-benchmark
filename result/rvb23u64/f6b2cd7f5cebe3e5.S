@@ -1,5 +1,4 @@
 func000000000000000d:                   # @func000000000000000d
-	zext.w	a0, a0
 	lui	a1, 67109
 	addiw	a1, a1, -557
 	mul	a0, a0, a1
@@ -14,7 +13,6 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 34
 	ret
 func0000000000000009:                   # @func0000000000000009
-	zext.w	a0, a0
 	lui	a1, 335544
 	addiw	a1, a1, 1311
 	mul	a0, a0, a1

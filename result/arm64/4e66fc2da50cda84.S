@@ -8,14 +8,12 @@ func0000000000000002:                   // @func0000000000000002
 	smull	v1.2d, v0.2s, v1.2s
 	uzp2	v1.4s, v1.4s, v2.4s
 	add	v1.4s, v1.4s, v0.4s
-	ushr	v2.4s, v1.4s, #8
+	sshr	v2.4s, v1.4s, #8
 	usra	v2.4s, v1.4s, #31
 	dup	v1.4s, w8
 	mov	w8, #11651                      // =0x2d83
 	mls	v0.4s, v2.4s, v1.4s
 	dup	v1.4s, w8
-	shl	v0.4s, v0.4s, #16
-	sshr	v0.4s, v0.4s, #16
 	mul	v0.4s, v0.4s, v1.4s
 	sshr	v0.4s, v0.4s, #20
 	xtn	v0.4h, v0.4s

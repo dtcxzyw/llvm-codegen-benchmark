@@ -1,9 +1,9 @@
 func0000000000000069:                   // @func0000000000000069
 // %bb.0:                               // %entry
 	mov	w8, #9363                       // =0x2493
+	dup	v2.4s, w8
+	mul	v2.4s, v1.4s, v2.4s
 	xtn	v1.4h, v1.4s
-	dup	v2.4h, w8
-	umull	v2.4s, v1.4h, v2.4h
 	shrn	v2.4h, v2.4s, #16
 	sub	v3.4h, v1.4h, v2.4h
 	ushll	v3.4s, v3.4h, #0

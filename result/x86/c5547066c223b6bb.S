@@ -23,8 +23,7 @@ func0000000000000013:                   # @func0000000000000013
 	shrl	$20, %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
-	movzwl	%di, %eax
-	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	imull	$52429, %edi, %eax              # imm = 0xCCCD
 	shrl	$19, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

@@ -5,7 +5,6 @@ func0000000000000003:                   # @func0000000000000003
 	leaq	(%rax,%rdi,4), %rax
 	retq
 func0000000000000073:                   # @func0000000000000073
-	movl	%edi, %eax
-	shlq	$3, %rax
-	leaq	24(%rax,%rax,2), %rax
+	shlq	$3, %rdi
+	leaq	24(%rdi,%rdi,2), %rax
 	retq

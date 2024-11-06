@@ -8,9 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	movzbl	%dil, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	movzbl	%dil, %eax
-	leal	(%rax,%rax,8), %ecx
-	leal	(%rax,%rcx,4), %eax
+	leal	(%rdi,%rdi,8), %eax
+	leal	(%rdi,%rax,4), %eax
 	shrl	$8, %eax
 	movl	%edi, %ecx
 	subb	%al, %cl

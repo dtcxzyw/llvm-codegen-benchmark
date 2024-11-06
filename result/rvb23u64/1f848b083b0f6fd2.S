@@ -28,7 +28,6 @@ func000000000000004e:                   # @func000000000000004e
 	addi	a0, a0, -8
 	ret
 func000000000000007e:                   # @func000000000000007e
-	sext.w	a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 20
 	ret

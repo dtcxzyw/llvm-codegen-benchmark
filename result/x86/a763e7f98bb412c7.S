@@ -19,13 +19,11 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$32, %rax
 	retq
 func0000000000000073:                   # @func0000000000000073
-	movl	%edi, %eax
-	shlq	$4, %rax
-	addq	$16, %rax
+	shlq	$4, %rdi
+	leaq	16(%rdi), %rax
 	retq
 func000000000000007f:                   # @func000000000000007f
-	movl	%edi, %eax
-	leaq	4(,%rax,4), %rax
+	leaq	4(,%rdi,4), %rax
 	retq
 func000000000000005e:                   # @func000000000000005e
 	leal	1(%rdi), %eax

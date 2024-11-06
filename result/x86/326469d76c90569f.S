@@ -1,18 +1,18 @@
 func00000000000000f4:                   # @func00000000000000f4
-	movzwl	%di, %eax
-	imull	$9363, %eax, %eax               # imm = 0x2493
+	imull	$9363, %edi, %eax               # imm = 0x2493
 	shrl	$16, %eax
 	movl	%edi, %ecx
 	subl	%eax, %ecx
 	movzwl	%cx, %ecx
 	shrl	%ecx
 	addl	%eax, %ecx
-	shrl	$2, %ecx
-	leal	(,%rcx,8), %eax
-	subl	%eax, %ecx
-	leal	(%rdi,%rcx), %eax
+	movzwl	%cx, %eax
+	shrl	$2, %eax
+	leal	(,%rax,8), %ecx
+	subl	%ecx, %eax
+	leal	(%rdi,%rax), %ecx
 	xorl	%edx, %edx
-	cmpw	$6, %ax
-	leal	1(%rdi,%rcx), %eax
+	cmpw	$6, %cx
+	leal	1(%rdi,%rax), %eax
 	cmovael	%edx, %eax
 	retq

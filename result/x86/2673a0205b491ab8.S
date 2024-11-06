@@ -12,10 +12,9 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rdi, %rax
 	retq
 func0000000000000025:                   # @func0000000000000025
-	movslq	%edi, %rax
-	imulq	$-1851608123, %rax, %rcx        # imm = 0x91A2B3C5
-	shrq	$32, %rcx
-	addl	%ecx, %eax
+	imulq	$-1851608123, %rdi, %rax        # imm = 0x91A2B3C5
+	shrq	$32, %rax
+	addl	%edi, %eax
 	movl	%eax, %ecx
 	shrl	$31, %ecx
 	sarl	$11, %eax

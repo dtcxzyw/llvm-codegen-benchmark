@@ -8,7 +8,6 @@ func0000000000000000:                   # @func0000000000000000
 .LCPI1_0:
 	.long	0x3b808081                      # float 0.00392156886
 func0000000000000004:                   # @func0000000000000004
-	movzbl	%dil, %eax
-	vcvtsi2ss	%eax, %xmm0, %xmm0
+	vcvtsi2ss	%edi, %xmm0, %xmm0
 	vmulss	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq

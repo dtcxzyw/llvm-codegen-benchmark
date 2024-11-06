@@ -1,10 +1,10 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	mov	w8, #1107                       // =0x453
-	xtn	v0.4h, v0.4s
-	dup	v1.4h, w8
+	dup	v1.4s, w8
 	mov	w8, #1007                       // =0x3ef
-	umull	v1.4s, v0.4h, v1.4h
+	mul	v1.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	shrn	v1.4h, v1.4s, #16
 	sub	v2.4h, v0.4h, v1.4h
 	ushll	v2.4s, v2.4h, #0
@@ -21,10 +21,10 @@ func0000000000000005:                   // @func0000000000000005
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	mov	w8, #20165                      // =0x4ec5
-	xtn	v0.4h, v0.4s
 	movi	v2.4h, #13
-	dup	v1.4h, w8
-	umull	v1.4s, v0.4h, v1.4h
+	dup	v1.4s, w8
+	mul	v1.4s, v0.4s, v1.4s
+	xtn	v0.4h, v0.4s
 	ushr	v1.4s, v1.4s, #18
 	xtn	v1.4h, v1.4s
 	mls	v0.4h, v1.4h, v2.4h

@@ -12,14 +12,12 @@ func000000000000000f:                   // @func000000000000000f
 	uzp2	v2.4s, v2.4s, v5.4s
 	uzp2	v3.4s, v3.4s, v6.4s
 	usra	v0.4s, v2.4s, #7
-	movi	v2.8b, #205
-	usra	v1.4s, v3.4s, #7
-	uzp1	v1.8h, v0.8h, v1.8h
-	xtn	v0.8b, v1.8h
-	bic	v1.8h, #255, lsl #8
-	xtn	v1.8b, v1.8h
-	umull	v1.8h, v1.8b, v2.8b
 	movi	v2.8b, #10
+	usra	v1.4s, v3.4s, #7
+	uzp1	v0.8h, v0.8h, v1.8h
+	movi	v1.8h, #205
+	mul	v1.8h, v0.8h, v1.8h
+	xtn	v0.8b, v0.8h
 	shrn	v1.8b, v1.8h, #8
 	ushr	v1.8b, v1.8b, #3
 	mls	v0.8b, v1.8b, v2.8b

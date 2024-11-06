@@ -32,11 +32,11 @@ func0000000000000002:                   # @func0000000000000002
 	subw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	slli	a1, a0, 32
-	lui	a2, 717447
-	addi	a2, a2, -1077
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 175
+	addiw	a1, a1, 647
+	slli	a1, a1, 12
+	addi	a1, a1, -1077
+	mul	a1, a0, a1
 	srli	a1, a1, 32
 	subw	a2, a0, a1
 	srliw	a2, a2, 1

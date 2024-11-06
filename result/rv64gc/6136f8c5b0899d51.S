@@ -4,10 +4,9 @@ func0000000000000025:                   # @func0000000000000025
 	mv	a0, a1
 	ret
 .LBB0_2:
-	lui	a0, 52429
-	slli	a0, a0, 4
-	slli	a2, a2, 48
-	mulhu	a0, a2, a0
-	srli	a0, a0, 23
+	lui	a0, 13
+	addi	a0, a0, -819
+	mul	a0, a2, a0
+	srliw	a0, a0, 23
 	addi	a0, a0, -128
 	ret

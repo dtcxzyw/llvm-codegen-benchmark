@@ -3,11 +3,10 @@ func0000000000000025:                   // @func0000000000000025
 	uzp1	v3.4s, v3.4s, v4.4s
 	mov	w8, #52429                      // =0xcccd
 	ushll	v0.4s, v0.4h, #0
-	dup	v4.4h, w8
+	dup	v4.4s, w8
 	mov	x8, #-128                       // =0xffffffffffffff80
 	dup	v5.2d, x8
-	xtn	v3.4h, v3.4s
-	umull	v3.4s, v3.4h, v4.4h
+	mul	v3.4s, v3.4s, v4.4s
 	ushll2	v4.2d, v0.4s, #0
 	ushll	v0.2d, v0.2s, #0
 	shl	v4.2d, v4.2d, #63

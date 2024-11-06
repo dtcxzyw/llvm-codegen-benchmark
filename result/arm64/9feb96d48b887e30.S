@@ -34,12 +34,10 @@ func0000000000000002:                   // @func0000000000000002
 	mov	v0.d[1], x10
 	mov	v1.d[1], x8
 	mov	w8, #-30583                     // =0xffff8889
-	dup	v2.4s, w8
 	uzp1	v0.4s, v1.4s, v0.4s
-	shl	v1.4s, v0.4s, #16
+	dup	v1.4s, w8
+	mul	v1.4s, v0.4s, v1.4s
 	xtn	v0.4h, v0.4s
-	sshr	v1.4s, v1.4s, #16
-	mul	v1.4s, v1.4s, v2.4s
 	shrn	v1.4h, v1.4s, #16
 	add	v0.4h, v1.4h, v0.4h
 	sshr	v0.4h, v0.4h, #5

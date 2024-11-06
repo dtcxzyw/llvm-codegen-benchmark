@@ -94,9 +94,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmsleu.vv	v0, v8, v10
 	ret
 func000000000000002a:                   # @func000000000000002a
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v10, v10, 1
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, 1
 	vwaddu.vx	v12, v11, a0
@@ -104,9 +102,7 @@ func000000000000002a:                   # @func000000000000002a
 	vmslt.vv	v0, v12, v8
 	ret
 func0000000000000021:                   # @func0000000000000021
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v10, v10, 1
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, 13
 	vwaddu.vx	v12, v11, a0

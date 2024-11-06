@@ -4,9 +4,8 @@ func0000000000000004:                   // @func0000000000000004
 	sub	v0.2d, v0.2d, v2.2d
 	mov	w8, #52429                      // =0xcccd
 	uzp1	v0.4s, v0.4s, v1.4s
-	dup	v1.4h, w8
-	xtn	v0.4h, v0.4s
-	umull	v0.4s, v0.4h, v1.4h
+	dup	v1.4s, w8
+	mul	v0.4s, v0.4s, v1.4s
 	ushr	v0.4s, v0.4s, #23
 	xtn	v0.4h, v0.4s
 	ret

@@ -6,10 +6,9 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a1, a0, 63
 	srai	a0, a0, 40
 	add	a0, a0, a1
-	sext.h	a1, a0
-	lui	a2, 1048568
-	addi	a2, a2, 787
-	mul	a1, a1, a2
+	lui	a1, 1048568
+	addi	a1, a1, 787
+	mul	a1, a1, a0
 	srli	a1, a1, 16
 	add	a1, a1, a0
 	bexti	a2, a1, 15

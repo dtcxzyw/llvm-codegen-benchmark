@@ -3,8 +3,8 @@ func000000000000003d:                   # @func000000000000003d
 	imulq	$281475, %rsi, %rax             # imm = 0x44B83
 	shrq	$39, %rax
 	addl	%edi, %eax
-	movzbl	%al, %eax
 	imull	$205, %eax, %eax
+	movzwl	%ax, %eax
 	shrl	$11, %eax
 	orb	$48, %al
 	retq

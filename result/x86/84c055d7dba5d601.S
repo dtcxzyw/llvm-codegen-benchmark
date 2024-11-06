@@ -25,16 +25,15 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax
-	movl	%eax, %ecx
-	movl	$2938661835, %edx               # imm = 0xAF286BCB
-	imulq	%rcx, %rdx
-	shrq	$32, %rdx
-	movl	%eax, %ecx
-	subl	%edx, %ecx
-	shrl	%ecx
-	addl	%edx, %ecx
-	shrl	$4, %ecx
-	leal	(%rcx,%rcx,8), %edx
-	leal	(%rcx,%rdx,2), %ecx
+	movl	$2938661835, %ecx               # imm = 0xAF286BCB
+	imulq	%rdi, %rcx
+	shrq	$32, %rcx
+	movl	%eax, %edx
+	subl	%ecx, %edx
+	shrl	%edx
+	addl	%ecx, %edx
+	shrl	$4, %edx
+	leal	(%rdx,%rdx,8), %ecx
+	leal	(%rdx,%rcx,2), %ecx
 	subl	%ecx, %eax
 	retq

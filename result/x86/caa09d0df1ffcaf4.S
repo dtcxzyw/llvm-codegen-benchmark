@@ -25,8 +25,7 @@ func0000000000000010:                   # @func0000000000000010
 	subl	%edi, %eax
 	retq
 func0000000000000013:                   # @func0000000000000013
-	movl	%edi, %eax
-	imulq	$1441151881, %rax, %rax         # imm = 0x55E63B89
+	imulq	$1441151881, %rdi, %rax         # imm = 0x55E63B89
 	shrq	$57, %rax
 	imull	$103, %eax, %eax
 	retq

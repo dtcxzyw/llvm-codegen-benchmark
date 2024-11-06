@@ -1,10 +1,10 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	mov	w8, #9363                       // =0x2493
-	xtn	v1.4h, v1.4s
 	ushll	v0.4s, v0.4h, #0
-	dup	v2.4h, w8
-	umull	v2.4s, v1.4h, v2.4h
+	dup	v2.4s, w8
+	mul	v2.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
 	shrn	v2.4h, v2.4s, #16
 	sub	v3.4h, v1.4h, v2.4h
 	ushll	v3.4s, v3.4h, #0
